@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "The sum of the first $n$ terms of $\\displaystyle\\sum_{k=1}^{n}\\dfrac{1}{k(k+2)}$ is",
  "options": [
-  "$\\dfrac{n(3n+5)}{4(n+1)(n+2)}$",
+  "$\\dfrac{n(3n+5)}{4(n+1)}$",
   "$\\dfrac{n(3n+5)}{2(n+1)(n+2)}$",
   "$\\dfrac{n(3n+5)}{4(n+2)}$",
-  "$\\dfrac{n(3n+5)}{4(n+1)}$"
+  "$\\dfrac{n(3n+5)}{4(n+1)(n+2)}$"
  ],
- "answer": "A",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$\\dfrac{1}{k(k+2)}=\\dfrac12\\left(\\dfrac1k-\\dfrac1{k+2}\\right)$; $S_n=\\dfrac12\\left(1+\\dfrac12-\\dfrac1{n+1}-\\dfrac1{n+2}\\right)=\\dfrac{n(3n+5)}{4(n+1)(n+2)}$.\n\nIndependent check: Use \\(\\frac1{k(k+2)}=\\frac12(\\frac1k-\\frac1{k+2})\\). The sum telescopes to \\(\\frac{n(3n+5)}{4(n+1)(n+2)}\\).",
- "solution": "",
+ "solution": "Using partial fractions, $\\frac{1}{k(k+2)}=\\frac12\\bigl(\\frac1k-\\frac1{k+2}\\bigr)$, so the sum telescopes:\n$$S_n=\\frac12\\biggl(1+\\frac12-\\frac1{n+1}-\\frac1{n+2}\\biggr)=\\frac{n(3n+5)}{4(n+1)(n+2)}.$$",
  "locked": false,
  "difficulty": 2,
  "draft": {

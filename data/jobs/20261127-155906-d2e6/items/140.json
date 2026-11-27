@@ -25,11 +25,11 @@
  "stem": "In a survey of 72 people, everyone uses at least one of three apps. The numbers using A, B and C are 42, 38 and 35; the pairwise intersection sizes are 18, 16 and 15. How many use exactly two apps?",
  "options": [
   "$18$",
-  "$31$",
   "$43$",
+  "$31$",
   "$49$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$n(A\\cap B\\cap C)=72-(42+38+35)+(18+16+15)=6$. Exactly two $=(18+16+15)-3(6)=31$.\n\nIndependent check: By inclusion–exclusion, the triple intersection is 72 − 115 + 49 = 6. Exactly two = (18 + 16 + 15) − 3(6) = 31.",
- "solution": "",
+ "solution": "By inclusion–exclusion, the number using all three apps is\n$$n(A\\cap B\\cap C)=72-(42+38+35)+(18+16+15)=6.$$\nThe pairwise intersections count each person using all three three times, so exactly two apps are used by $(18+16+15)-3(6)=31$ people.",
  "locked": false,
  "difficulty": 2,
  "draft": {

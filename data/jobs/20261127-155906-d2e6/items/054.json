@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "Given $\\Lambda_m^\\circ(\\text{HCl})=426.0$, $\\Lambda_m^\\circ(\\text{NaCl})=126.4$ and $\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})=91.0$ $\\text{S cm}^2\\text{ mol}^{-1}$, find $\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})$.",
+ "stem": "Given $\\Lambda_m^\\circ(\\text{HCl})=426.0$, $\\Lambda_m^\\circ(\\text{Na}_2\\text{CO}_3)=238.8$ and $\\Lambda_m^\\circ(\\text{NaCl})=126.4$ $\\text{S cm}^2\\text{ mol}^{-1}$, find $\\Lambda_m^\\circ(\\text{H}_2\\text{CO}_3)$.",
  "options": [
-  "$299.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
-  "$390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
-  "$517.0\\ \\text{S cm}^2\\text{ mol}^{-1}$",
-  "$643.4\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+  "$412.0\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$1090.8\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$964.4\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$838.0\\ \\text{S cm}^2\\text{ mol}^{-1}$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,7 +37,7 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "By Kohlrausch’s law, Λ°m(CH₃COOH) = Λ°m(HCl) + Λ°m(CH₃COONa) − Λ°m(NaCl) = 426.0 + 91.0 − 126.4 = 390.6 S cm² mol⁻¹.",
+   "working": "By Kohlrausch’s law, Λ°ₘ(H₂CO₃) = 2Λ°ₘ(HCl) + Λ°ₘ(Na₂CO₃) − 2Λ°ₘ(NaCl) = 2(426.0) + 238.8 − 2(126.4) = 838.0 S cm² mol⁻¹.",
    "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -47,24 +47,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})=\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})-\\Lambda_m^\\circ(\\text{NaCl})$ $=426.0+91.0-126.4=390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$.\n\nIndependent check: By Kohlrausch’s law, Λ°m(CH₃COOH) = Λ°m(HCl) + Λ°m(CH₃COONa) − Λ°m(NaCl) = 426.0 + 91.0 − 126.4 = 390.6 S cm² mol⁻¹.",
- "solution": "",
+ "working": "$\\Lambda_m^\\circ(\\text{H}_2\\text{CO}_3)=2\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{Na}_2\\text{CO}_3)-2\\Lambda_m^\\circ(\\text{NaCl})$ \n$=2(426.0)+238.8-2(126.4)=838.0\\ \\text{S cm}^2\\text{ mol}^{-1}$\n\nIndependent check: By Kohlrausch’s law, Λ°ₘ(H₂CO₃) = 2Λ°ₘ(HCl) + Λ°ₘ(Na₂CO₃) − 2Λ°ₘ(NaCl) = 2(426.0) + 238.8 − 2(126.4) = 838.0 S cm² mol⁻¹.",
+ "solution": "By Kohlrausch’s law, $\\Lambda_m^\\circ(\\text{H}_2\\text{CO}_3)=2\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{Na}_2\\text{CO}_3)-2\\Lambda_m^\\circ(\\text{NaCl})$.\n$$\\Lambda_m^\\circ=2(426.0)+238.8-2(126.4)=838.0\\ \\text{S cm}^2\\text{ mol}^{-1}$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Given $\\Lambda_m^\\circ(\\text{HCl})=426.0$, $\\Lambda_m^\\circ(\\text{NaCl})=126.4$ and $\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})=91.0$ $\\text{S cm}^2\\text{ mol}^{-1}$, find $\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})$.",
+  "stem": "Given $\\Lambda_m^\\circ(\\text{HCl})=426.0$, $\\Lambda_m^\\circ(\\text{Na}_2\\text{CO}_3)=238.8$ and $\\Lambda_m^\\circ(\\text{NaCl})=126.4$ $\\text{S cm}^2\\text{ mol}^{-1}$, find $\\Lambda_m^\\circ(\\text{H}_2\\text{CO}_3)$.",
   "options": [
-   "$299.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
-   "$390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
-   "$517.0\\ \\text{S cm}^2\\text{ mol}^{-1}$",
-   "$643.4\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+   "$412.0\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$838.0\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$964.4\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$1090.8\\ \\text{S cm}^2\\text{ mol}^{-1}$"
   ],
   "option_smiles": null,
   "answer": "B",
   "figure": null,
   "difficulty_estimate": 1,
-  "working": "$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})=\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})-\\Lambda_m^\\circ(\\text{NaCl})$ $=426.0+91.0-126.4=390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$.",
-  "distractor_notes": "A: subtracts the sodium acetate value instead of adding it; C: adds all three conductivities; D: adds the sodium chloride value instead of subtracting it."
+  "working": "$\\Lambda_m^\\circ(\\text{H}_2\\text{CO}_3)=2\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{Na}_2\\text{CO}_3)-2\\Lambda_m^\\circ(\\text{NaCl})$ \n$=2(426.0)+238.8-2(126.4)=838.0\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "distractor_notes": "A: Omits the factor of 2 on $\\text{HCl}$. \nC: Subtracts $\\Lambda_m^\\circ(\\text{NaCl})$ only once. \nD: Does not subtract the contribution of $\\text{NaCl}$."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

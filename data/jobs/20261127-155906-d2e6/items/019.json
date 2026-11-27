@@ -25,11 +25,11 @@
  "stem": "A regular hexagonal wire loop and a circular wire loop are concentric and coplanar, with circumradius and radius respectively both $0.12$ m. Each carries $6$ A, in opposite senses. Find the magnitude of the net magnetic field at the centre. Take $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.",
  "options": [
   "$(2\\sqrt{3}+\\pi)\\times10^{-5}\\ \\text{T}$",
-  "$(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$",
+  "$(4\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$",
   "$(2\\pi-2\\sqrt{3})\\times10^{-5}\\ \\text{T}$",
-  "$(4\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$"
+  "$(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$B_n=\\dfrac{\\mu_0In}{2\\pi R}\\tan\\dfrac{\\pi}{n}$; $B_6=\\dfrac{\\mu_0I\\sqrt{3}}{\\pi R}$; $n\\tan(\\pi/n)\\to\\pi\\Rightarrow B_\\circ=\\dfrac{\\mu_0I}{2R}$; $|B_6-B_\\circ|=\\dfrac{\\mu_0I}{R}(\\dfrac{\\sqrt{3}}{\\pi}-\\dfrac12)=(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$.\n\nIndependent check: Hexagon field: \\(B_h=\\sqrt{3}\\mu_0 I/(\\pi R)=2\\sqrt{3}\\times10^{-5}\\,\\text{T}\\). Circle field: \\(B_c=\\mu_0 I/(2R)=\\pi\\times10^{-5}\\,\\text{T}\\). Opposite current senses give net magnitude \\(|B_h-B_c|=(2\\sqrt{3}-\\pi)\\times10^{-5}\\,\\text{T}\\).",
- "solution": "",
+ "solution": "For a regular $n$-sided loop of circumradius $R$, $B_n=\\dfrac{\\mu_0 I n}{2\\pi R}\\tan\\dfrac{\\pi}{n}$. Thus, for the hexagon and circle,\n$$B_h=2\\sqrt{3}\\times10^{-5}\\ \\text{T},\\qquad B_c=\\pi\\times10^{-5}\\ \\text{T}.$$\nTheir fields oppose, so $B_{\\rm net}=|B_h-B_c|=(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$.",
  "locked": false,
  "difficulty": 4,
  "draft": {

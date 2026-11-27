@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "For $x>0$, the general solution of $\\dfrac{dy}{dx}+\\dfrac{2x+1}{x(x+1)}y=\\dfrac{1}{x^2+1}$ is:",
  "options": [
-  "$\\dfrac{x+\\dfrac12\\ln(x^2+1)-\\tan^{-1}x+C}{x(x+1)}$",
   "$\\dfrac{x+\\dfrac12\\ln(x^2+1)+\\tan^{-1}x+C}{x(x+1)}$",
+  "$\\dfrac{x+\\dfrac12\\ln(x^2+1)-\\tan^{-1}x+C}{x(x+1)}$",
   "$\\dfrac{x+\\ln(x^2+1)-\\tan^{-1}x+C}{x(x+1)}$",
   "$\\dfrac{x+\\dfrac12\\ln(x^2+1)-\\tan^{-1}x+C}{x^2+1}$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$\\text{I.F.}=e^{\\int(1/x+1/(x+1))\\,dx}=x(x+1)$\n$\\dfrac{d}{dx}[x(x+1)y]=\\dfrac{x(x+1)}{x^2+1}=1+\\dfrac{x-1}{x^2+1}$\n$x(x+1)y=x+\\dfrac12\\ln(x^2+1)-\\tan^{-1}x+C$\n\nIndependent check: The integrating factor is x(x+1). Thus [x(x+1)y]' = (x²+x)/(x²+1), whose integral is x + ½ln(x²+1) − tan⁻¹x + C. Dividing by x(x+1) gives option A.",
- "solution": "",
+ "solution": "The integrating factor is $e^{\\int(1/x+1/(x+1))\\,dx}=x(x+1)$. Hence\n$$[x(x+1)y]'=\\frac{x(x+1)}{x^2+1}=1+\\frac{x-1}{x^2+1}.$$\nIntegrating and dividing by $x(x+1)$ gives $y=\\dfrac{x+\\frac12\\ln(x^2+1)-\\tan^{-1}x+C}{x(x+1)}$, option (B).",
  "locked": false,
  "difficulty": 3,
  "draft": {

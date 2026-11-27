@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "In a YDSE, coherent light gives individual slit intensities $4I_0$ and $I_0$. For $\\lambda=600\\ \\text{nm}$, $d=0.60\\ \\text{mm}$, $D=1.2\\ \\text{m}$ and $y=0.45\\ \\text{mm}$, find $I(y)/I_{\\max}$ using the small-angle approximation.",
  "options": [
-  "$\\dfrac{5-2\\sqrt{2}}{9}$",
-  "$\\dfrac{5+2\\sqrt{2}}{9}$",
   "$\\dfrac{5-\\sqrt{2}}{9}$",
+  "$\\dfrac{5+2\\sqrt{2}}{9}$",
+  "$\\dfrac{5-2\\sqrt{2}}{9}$",
   "$\\dfrac{2-\\sqrt{2}}{4}$"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$\\delta=dy/D=2.25\\times10^{-7}\\ \\text{m}=3\\lambda/8$; $\\phi=2\\pi\\delta/\\lambda=3\\pi/4$. $I=5I_0+4I_0\\cos\\phi=(5-2\\sqrt{2})I_0$; $I_{\\max}=(2\\sqrt{I_0}+\\sqrt{I_0})^2=9I_0$.\n\nIndependent check: The fringe spacing is \\(\\beta=\\lambda D/d=1.2\\,\\text{mm}\\), so the phase at \\(y=0.45\\,\\text{mm}\\) is \\(2\\pi y/\\beta=3\\pi/4\\). Thus \\(I/I_{\\max}=(5+4\\cos(3\\pi/4))/9=(5-2\\sqrt2)/9\\).",
- "solution": "",
+ "solution": "For two coherent slits, $I=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\phi$, with $\\phi=2\\pi dy/(\\lambda D)=3\\pi/4$.\n$$\\frac{I(y)}{I_{\\max}}=\\frac{4I_0+I_0+4I_0\\cos(3\\pi/4)}{(2\\sqrt{I_0}+\\sqrt{I_0})^2}=\\frac{5-2\\sqrt{2}}{9}$$",
  "locked": false,
  "difficulty": 4,
  "draft": {

@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "How many onto functions are there from a set of $7$ elements to a set of $4$ elements?",
+ "stem": "The number of onto functions from a set with $6$ elements to a set with $4$ elements is",
  "options": [
-  "$7636$",
-  "$8400$",
-  "$8404$",
-  "$16384$"
+  "$1,560$",
+  "$1,432$",
+  "$1,564$",
+  "$1,568$"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,7 +37,7 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "By inclusion–exclusion, the number of onto functions is $4^7-\\binom41 3^7+\\binom42 2^7-\\binom43 1^7=8400$.",
+   "working": "By inclusion–exclusion: 4^6 − 4(3^6) + 6(2^6) − 4(1^6) = 1,560.",
    "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -47,24 +47,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "$4^7-\\binom{4}{1}3^7+\\binom{4}{2}2^7-\\binom{4}{3}1^7=16384-8748+768-4=8400$.\n\nIndependent check: By inclusion–exclusion, the number of onto functions is $4^7-\\binom41 3^7+\\binom42 2^7-\\binom43 1^7=8400$.",
- "solution": "",
+ "working": "$N=4^6-\\binom41 3^6+\\binom42 2^6-\\binom43 1^6$\n$=4096-4(729)+6(64)-4=1560$\n\nIndependent check: By inclusion–exclusion: 4^6 − 4(3^6) + 6(2^6) − 4(1^6) = 1,560.",
+ "solution": "By inclusion–exclusion, subtract functions missing at least one codomain element:\n$$N=4^6-\\binom41 3^6+\\binom42 2^6-\\binom43 1^6=4096-2916+384-4=1560.$$",
  "locked": false,
- "difficulty": 3,
+ "difficulty": 2,
  "draft": {
-  "stem": "How many onto functions are there from a set of $7$ elements to a set of $4$ elements?",
+  "stem": "The number of onto functions from a set with $6$ elements to a set with $4$ elements is",
   "options": [
-   "$7636$",
-   "$8400$",
-   "$8404$",
-   "$16384$"
+   "$1,432$",
+   "$1,560$",
+   "$1,564$",
+   "$1,568$"
   ],
   "option_smiles": null,
   "answer": "B",
   "figure": null,
-  "difficulty_estimate": 4,
-  "working": "$4^7-\\binom{4}{1}3^7+\\binom{4}{2}2^7-\\binom{4}{3}1^7=16384-8748+768-4=8400$.",
-  "distractor_notes": "A: omits the inclusion-exclusion terms for two or more missing elements; C: omits the final subtraction; D: counts all functions, not only onto functions."
+  "difficulty_estimate": 3,
+  "working": "$N=4^6-\\binom41 3^6+\\binom42 2^6-\\binom43 1^6$\n$=4096-4(729)+6(64)-4=1560$",
+  "distractor_notes": "A: uses $4$ instead of $\\binom42=6$ for the pairwise term.\nC: omits the final inclusion–exclusion term.\nD: uses the wrong sign for the final term."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

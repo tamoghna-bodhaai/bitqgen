@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$f'(x)=e^xq(x),\\quad q(x)=x^2+(a+2)x+(a+2)$. $q(-2)=2-a\\ge0,\\quad q(2)=3a+10\\ge0$ imply $-\\dfrac{10}{3}\\le a\\le2$, where the vertex lies in $[-2,2]$. $q_{\\min}=a+2-\\dfrac{(a+2)^2}{4}\\ge0\\iff -2\\le a\\le2$. Thus $f'\\ge0$, with at most isolated zeros, so $f$ is strictly increasing.\n\nIndependent check: Let b=a+2. Then f'(x)=e^x(x^2+bx+b). Nonnegativity on [-2,2] requires b≥0 and b≤4; for 0≤b≤4 the quadratic is nonnegative throughout. Its zeros, if any, are isolated, so f is strictly increasing.",
- "solution": "",
+ "solution": "$f'(x)=e^xq(x)$, where $q(x)=x^2+(a+2)x+(a+2)$. Since $e^x>0$, it suffices that $q(x)\\ge0$ on $[-2,2]$; its minimum there is nonnegative exactly when $0\\le a+2\\le4$.\nThus $-2\\le a\\le2$. The derivative can vanish only at isolated points, so $f$ is strictly increasing throughout this interval.",
  "locked": false,
  "difficulty": 4,
  "draft": {

@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "Find the equation of the line through the intersection of $x+2y-4=0$ and $3x-y-5=0$, and the point $(-1,5)$.",
+ "stem": "The line through the intersection of $2x+y-3=0$ and $x-y-3=0$, perpendicular to $2x-3y+5=0$, is",
  "options": [
-  "$4x+3y-11=0$",
-  "$4x-3y-5=0$",
-  "$3x-4y-2=0$",
-  "$4x+3y-5=0$"
+  "$2x+3y-1=0$",
+  "$3x-2y-8=0$",
+  "$3x+2y-4=0$",
+  "$3x+2y+4=0$"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,7 +37,7 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "The two lines intersect at \u001b[?x=2,y=1\u001b[? (their intersection is \u001b[? (2,1)\u001b[?). Through this point and \u001b[?(-1,5)\u001b[? the slope is \u001b[? -4/3\u001b[?, giving \u001b[?4x+3y-11=0\u001b[?.",
+   "working": "The intersection is (2,-1). The given line has slope 2/3, so the perpendicular slope is -3/2. Through (2,-1), the line is 3x+2y-4=0.",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -47,24 +47,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Let $L_1=x+2y-4$, $L_2=3x-y-5$. The required line is $L_1+\\lambda L_2=0$; at $(-1,5)$, $5-13\\lambda=0$, so $\\lambda=\\dfrac{5}{13}$. Thus $13L_1+5L_2=0\\Rightarrow 4x+3y-11=0$.\n\nIndependent check: The two lines intersect at \u001b[?x=2,y=1\u001b[? (their intersection is \u001b[? (2,1)\u001b[?). Through this point and \u001b[?(-1,5)\u001b[? the slope is \u001b[? -4/3\u001b[?, giving \u001b[?4x+3y-11=0\u001b[?.",
- "solution": "",
+ "working": "$L_1=2x+y-3$, $L_2=x-y-3$ intersect at $(2,-1)$.\n$L_1+\\lambda L_2=0$ has slope $-\\dfrac{2+\\lambda}{1-\\lambda}$.\nThe given line has slope $\\dfrac{2}{3}$, so the required slope is $-\\dfrac{3}{2}$.\n$-\\dfrac{2+\\lambda}{1-\\lambda}=-\\dfrac{3}{2}\\Rightarrow\\lambda=-\\dfrac{1}{5}$.\n$5L_1-L_2=0\\Rightarrow 9x+6y-12=0\\Rightarrow 3x+2y-4=0$.\n\nIndependent check: The intersection is (2,-1). The given line has slope 2/3, so the perpendicular slope is -3/2. Through (2,-1), the line is 3x+2y-4=0.",
+ "solution": "Solving the two equations gives their intersection $(2,-1)$. The given line has slope $\\frac{2}{3}$, so the required perpendicular slope is $-\\frac{3}{2}$.\n$$y+1=-\\frac{3}{2}(x-2)\\quad\\Rightarrow\\quad 3x+2y-4=0$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Find the equation of the line through the intersection of $x+2y-4=0$ and $3x-y-5=0$, and the point $(-1,5)$.",
+  "stem": "The line through the intersection of $2x+y-3=0$ and $x-y-3=0$, perpendicular to $2x-3y+5=0$, is",
   "options": [
-   "$4x+3y-11=0$",
-   "$4x-3y-5=0$",
-   "$3x-4y-2=0$",
-   "$4x+3y-5=0$"
+   "$3x+2y-4=0$",
+   "$3x-2y-8=0$",
+   "$2x+3y-1=0$",
+   "$3x+2y+4=0$"
   ],
   "option_smiles": null,
   "answer": "A",
   "figure": null,
   "difficulty_estimate": 3,
-  "working": "Let $L_1=x+2y-4$, $L_2=3x-y-5$. The required line is $L_1+\\lambda L_2=0$; at $(-1,5)$, $5-13\\lambda=0$, so $\\lambda=\\dfrac{5}{13}$. Thus $13L_1+5L_2=0\\Rightarrow 4x+3y-11=0$.",
-  "distractor_notes": "B: slope sign error; C: uses the reciprocal slope with the wrong sign; D: keeps the correct direction but uses an incorrect intercept."
+  "working": "$L_1=2x+y-3$, $L_2=x-y-3$ intersect at $(2,-1)$.\n$L_1+\\lambda L_2=0$ has slope $-\\dfrac{2+\\lambda}{1-\\lambda}$.\nThe given line has slope $\\dfrac{2}{3}$, so the required slope is $-\\dfrac{3}{2}$.\n$-\\dfrac{2+\\lambda}{1-\\lambda}=-\\dfrac{3}{2}\\Rightarrow\\lambda=-\\dfrac{1}{5}$.\n$5L_1-L_2=0\\Rightarrow 9x+6y-12=0\\Rightarrow 3x+2y-4=0$.",
+  "distractor_notes": "B: sign error in the perpendicular slope. C: swaps the line coefficients. D: sign error in the constant term."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

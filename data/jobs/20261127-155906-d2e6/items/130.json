@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "For $x,y\\ge0$ and $x+y\\le1$, simplify $\\sin^{-1}x+\\sin^{-1}y$ to a single inverse sine.",
  "options": [
-  "$\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}+y\\sqrt{1-x^2}\\right)$",
   "$\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}-y\\sqrt{1-x^2}\\right)$",
+  "$\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}+y\\sqrt{1-x^2}\\right)$",
   "$\\sin^{-1}(x+y)$",
   "$\\sin^{-1}\\!\\left(xy+\\sqrt{1-x^2}\\sqrt{1-y^2}\\right)$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$A=\\sin^{-1}x,\\ B=\\sin^{-1}y;\\ \\cos(A+B)=\\sqrt{1-x^2}\\sqrt{1-y^2}-xy\\ge0;\\ \\sin(A+B)=x\\sqrt{1-y^2}+y\\sqrt{1-x^2};\\ A+B=\\sin^{-1}(\\sin(A+B))$.\n\nIndependent check: Let α = sin⁻¹x and β = sin⁻¹y. Since x + y ≤ 1, x² + y² ≤ 1, so α + β ≤ π/2. Thus sin⁻¹x + sin⁻¹y = sin⁻¹(sin(α + β)) = sin⁻¹(x√(1 − y²) + y√(1 − x²)).",
- "solution": "",
+ "solution": "Let $\\alpha=\\sin^{-1}x$ and $\\beta=\\sin^{-1}y$. Since $x+y\\le1$, we have $\\alpha+\\beta\\le\\frac{\\pi}{2}$, so $\\sin^{-1}(\\sin(\\alpha+\\beta))=\\alpha+\\beta$.\n$$\\sin(\\alpha+\\beta)=x\\sqrt{1-y^2}+y\\sqrt{1-x^2}$$\nHence the sum is $\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}+y\\sqrt{1-x^2}\\right)$.",
  "locked": false,
  "difficulty": 2,
  "draft": {

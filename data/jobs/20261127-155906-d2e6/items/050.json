@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "Two first-order reactions, $X$ and $Y$, have the $\\ln([C]/[C]_0)$ versus time plots shown in the figure. When $[Y]=[Y]_0/4$, what fraction of its initial concentration remains for $X$?",
  "options": [
-  "$\\dfrac{1}{64}$",
   "$\\dfrac{1}{16}$",
+  "$\\dfrac{1}{64}$",
   "$\\dfrac{1}{8}$",
   "$\\dfrac{1}{4}$"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": {
   "path": "figs/q050_stem_v0.png",
   "width_pct": 55,
@@ -52,7 +52,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$k_X=2/10=0.20\\ \\text{min}^{-1}$; $k_Y=1/10=0.10\\ \\text{min}^{-1}$; $[Y]/[Y]_0=1/4\\Rightarrow t=\\ln 4/0.10$; $[X]/[X]_0=e^{-0.20t}=e^{-2\\ln4}=1/16$.\n\nIndependent check: From the graph at 10 min, ln([Y]/[Y]₀) = −1 and ln([X]/[X]₀) = −2, so X’s decay rate is twice Y’s. Thus when Y/Y₀ = 1/4, X/X₀ = (1/4)² = 1/16.",
- "solution": "",
+ "solution": "For a first-order reaction, $\\ln([C]/[C]_0)=-kt$. From the graph, $k_X/k_Y=2$, so when $[Y]/[Y]_0=1/4$,\n$$\\frac{[X]}{[X]_0}=e^{-k_Xt}=\\left(e^{-k_Yt}\\right)^2=\\left(\\frac14\\right)^2=\\frac{1}{16}.$$",
  "locked": false,
  "difficulty": 2,
  "draft": {

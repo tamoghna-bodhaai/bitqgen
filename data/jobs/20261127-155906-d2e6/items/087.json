@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "Arrange the parts P, Q, R and S to form a meaningful sequence.\n\nMaya planted a seed in a pot.\n\nP: After a few days, it began to sprout.\nQ: In time, it grew into a young plant.\nR: She placed the pot near a sunny window.\nS: She watered it every morning.\n\nWhich is the correct sequence?",
+ "stem": "Arrange the parts P, Q, R and S to form a coherent paragraph.\n\nP: Neha checks her timetable for the next day's classes.\nQ: It tells her which books and notebooks she will need.\nR: She places those items in her schoolbag.\nS: The bag is ready beside the door, so she can leave promptly in the morning.\n\nWhich is the correct sequence?",
  "options": [
-  "R - S - P - Q",
-  "S - P - R - Q",
-  "P - R - S - Q",
-  "R - P - Q - S"
+  "P - R - Q - S",
+  "Q - P - R - S",
+  "P - Q - R - S",
+  "S - P - Q - R"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,36 +37,34 @@
   {
    "stage": "solver_verbal",
    "model": "openai/gpt-6-luna",
-   "working": "Place the pot near sunlight and water it before it sprouts; afterward, it grows into a young plant: R–S–P–Q.",
+   "working": "P introduces the timetable; Q explains what it indicates; R describes packing those items; S concludes with the ready bag.",
    "answer": "A",
-   "confidence": 0.91,
+   "confidence": 0.99,
    "multiple_correct": false,
-   "issues": [
-    "The timing of placing the pot in sunlight and watering it is not explicit, though A is the only option with both actions before sprouting."
-   ],
+   "issues": [],
    "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The pot is first placed by the window (R), then watered regularly (S). The seed sprouts (P) and later grows into a young plant (Q).\n\nIndependent check: Place the pot near sunlight and water it before it sprouts; afterward, it grows into a young plant: R–S–P–Q.",
- "solution": "",
+ "working": "“It” in Q refers to the timetable in P. “Those items” in R refers to the books and notebooks identified in Q. S describes the packed bag, so it follows R.\n\nIndependent check: P introduces the timetable; Q explains what it indicates; R describes packing those items; S concludes with the ready bag.",
+ "solution": "P introduces the timetable, which Q explains tells Neha what books and notebooks she needs. R describes packing those items, and S concludes with the ready bag.",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Arrange the parts P, Q, R and S to form a meaningful sequence.\n\nMaya planted a seed in a pot.\n\nP: After a few days, it began to sprout.\nQ: In time, it grew into a young plant.\nR: She placed the pot near a sunny window.\nS: She watered it every morning.\n\nWhich is the correct sequence?",
+  "stem": "Arrange the parts P, Q, R and S to form a coherent paragraph.\n\nP: Neha checks her timetable for the next day's classes.\nQ: It tells her which books and notebooks she will need.\nR: She places those items in her schoolbag.\nS: The bag is ready beside the door, so she can leave promptly in the morning.\n\nWhich is the correct sequence?",
   "options": [
-   "R - S - P - Q",
-   "S - P - R - Q",
-   "P - R - S - Q",
-   "R - P - Q - S"
+   "P - Q - R - S",
+   "Q - P - R - S",
+   "P - R - Q - S",
+   "S - P - Q - R"
   ],
   "option_smiles": null,
   "answer": "A",
   "figure": null,
   "difficulty_estimate": 1,
-  "working": "The pot is first placed by the window (R), then watered regularly (S). The seed sprouts (P) and later grows into a young plant (Q).",
-  "distractor_notes": "B: Places the pot after the seed sprouts. C: Has sprouting before the care steps. D: Puts later growth before regular watering."
+  "working": "“It” in Q refers to the timetable in P. “Those items” in R refers to the books and notebooks identified in Q. S describes the packed bag, so it follows R.",
+  "distractor_notes": "B: Uses “It” before the timetable is introduced. C: Uses “those items” before they are identified. D: Places the result before the actions that produce it."
  },
  "author_model": "openai/gpt-6-luna"
 }

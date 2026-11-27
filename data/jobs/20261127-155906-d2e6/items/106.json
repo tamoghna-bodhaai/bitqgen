@@ -25,11 +25,11 @@
  "stem": "Evaluate $\\displaystyle\\int_0^\\pi \\dfrac{x\\sin x}{1+\\cos^2 x}\\,dx$.",
  "options": [
   "$\\dfrac{\\pi^2}{8}$",
-  "$\\dfrac{\\pi^2}{4}$",
+  "$\\pi^2$",
   "$\\dfrac{\\pi^2}{2}$",
-  "$\\pi^2$"
+  "$\\dfrac{\\pi^2}{4}$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "Let $f(x)=\\dfrac{\\sin x}{1+\\cos^2x}$; then $f(\\pi-x)=f(x)$, so $\\int_0^\\pi xf(x)\\,dx=\\dfrac{\\pi}{2}\\int_0^\\pi f(x)\\,dx$. Also, $\\int_0^\\pi f(x)\\,dx=2\\int_0^{\\pi/2}\\dfrac{\\sin x}{1+\\cos^2x}\\,dx=2\\int_0^1\\dfrac{du}{1+u^2}=\\dfrac{\\pi}{2}$. Hence the required value is $\\dfrac{\\pi^2}{4}$.\n\nIndependent check: Let g(x)=sin x/(1+cos²x), which is symmetric about π/2. Thus ∫₀^π xg(x)dx=(π/2)∫₀^πg(x)dx. With u=cos x, the latter integral is ∫₋₁¹du/(1+u²)=π/2. Hence the value is π²/4.",
- "solution": "",
+ "solution": "Let $f(x)=\\dfrac{\\sin x}{1+\\cos^2 x}$. Since $f(\\pi-x)=f(x)$,\n$$\\int_0^\\pi xf(x)\\,dx=\\frac{\\pi}{2}\\int_0^\\pi f(x)\\,dx.$$\nUsing $u=\\cos x$, $\\displaystyle\\int_0^\\pi f(x)\\,dx=\\int_{-1}^1\\frac{du}{1+u^2}=\\frac{\\pi}{2}$. Hence the value is $\\boxed{\\dfrac{\\pi^2}{4}}$.",
  "locked": false,
  "difficulty": 2,
  "draft": {

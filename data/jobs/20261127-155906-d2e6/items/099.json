@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "Select the number pair that is related to the given pair in the same way:\n\n$24 : 36 :: 15 : ?$",
+ "stem": "Select the number pair related to the given pair in the same way: $18 : 81 :: 23 : ?$",
  "options": [
-  "25",
-  "30",
+  "64",
   "36",
-  "49"
+  "49",
+  "25"
  ],
- "answer": "C",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,34 +37,34 @@
   {
    "stage": "solver_verbal",
    "model": "openai/gpt-6-luna",
-   "working": "For 24, the sum of the digits is 2 + 4 = 6, and 6² = 36. For 15, (1 + 5)² = 36.",
-   "answer": "C",
-   "confidence": 0.78,
+   "working": "Add the digits and square the sum: (1+8)^2=81, so (2+3)^2=25.",
+   "answer": "A",
+   "confidence": 0.88,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
   }
  ],
- "attempts": 1,
+ "attempts": 2,
  "notes": [],
- "working": "For 24, $(2+4)^2=36$.\nThus $(1+5)^2=36$.\nThe other options are not the square of the digit sum.\n\nIndependent check: For 24, the sum of the digits is 2 + 4 = 6, and 6² = 36. For 15, (1 + 5)² = 36.",
- "solution": "",
+ "working": "$18\\to(1+8)^2=81$. Applying the same rule, $23\\to(2+3)^2=25$. The other options are not the square of the digit sum.\n\nIndependent check: Add the digits and square the sum: (1+8)^2=81, so (2+3)^2=25.",
+ "solution": "The rule is to square the sum of the digits: $(1+8)^2=81$.\n$$ (2+3)^2=25 $$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Select the number pair that is related to the given pair in the same way:\n\n$24 : 36 :: 15 : ?$",
+  "stem": "Select the number pair related to the given pair in the same way: $18 : 81 :: 23 : ?$",
   "options": [
    "25",
-   "30",
    "36",
-   "49"
+   "49",
+   "64"
   ],
   "option_smiles": null,
-  "answer": "C",
+  "answer": "A",
   "figure": null,
   "difficulty_estimate": 2,
-  "working": "For 24, $(2+4)^2=36$.\nThus $(1+5)^2=36$.\nThe other options are not the square of the digit sum.",
-  "distractor_notes": "A: uses the digit sum without squaring. B: applies an inconsistent operation. D: squares the digit difference instead."
+  "working": "$18\\to(1+8)^2=81$. Applying the same rule, $23\\to(2+3)^2=25$. The other options are not the square of the digit sum.",
+  "distractor_notes": "B: Uses an incorrect digit-sum result; C: Uses an incorrect digit-sum result; D: Uses an incorrect digit-sum result."
  },
  "author_model": "openai/gpt-6-luna"
 }

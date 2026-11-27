@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "A uniform spring of length $L$ and force constant $k$ is cut into pieces of lengths $L/3$ and $2L/3$. With the same mass attached, the pieces are connected first in series and then in parallel, with their other ends fixed. Find $T_{\\text{series}}/T_{\\text{parallel}}$.",
  "options": [
-  "$\\dfrac{3}{\\sqrt{2}}$",
   "$\\dfrac{\\sqrt{2}}{3}$",
+  "$\\dfrac{3}{\\sqrt{2}}$",
   "$\\dfrac{3}{2}$",
   "$\\dfrac{2}{3}$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$k_1=3k$, $k_2=3k/2$; $k_s=(1/k_1+1/k_2)^{-1}=k$, $k_p=k_1+k_2=9k/2$. $T_s/T_p=\\sqrt{k_p/k_s}=3/\\sqrt{2}$.\n\nIndependent check: For a uniform spring, stiffness is inversely proportional to length, so the pieces have constants 3k and 3k/2. Thus k_series = k and k_parallel = 9k/2. Since T = 2π√(m/k_eff), T_series/T_parallel = √(k_parallel/k_series) = 3/√2.",
- "solution": "",
+ "solution": "For a uniform spring, stiffness is inversely proportional to length, so $k_1=3k$ and $k_2=3k/2$.\n$$k_s=\\left(\\frac1{k_1}+\\frac1{k_2}\\right)^{-1}=k,\\qquad k_p=k_1+k_2=\\frac{9k}{2}$$\nSince $T=2\\pi\\sqrt{m/k_{\\text{eff}}}$, $\n\\frac{T_{\\text{series}}}{T_{\\text{parallel}}}=\\sqrt{\\frac{k_p}{k_s}}=\\boxed{\\frac{3}{\\sqrt2}}$.",
  "locked": false,
  "difficulty": 3,
  "draft": {

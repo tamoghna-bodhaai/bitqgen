@@ -25,11 +25,11 @@
  "stem": "For two binary inputs, let $+$ denote OR, juxtaposition denote AND, and an overbar denote NOT. A four-gate network is defined by $G_1=\\overline{AB}$, $G_2=\\overline{A+B}$, $G_3=\\overline{G_1G_1}$ and $Y=G_2+G_3$. Which standard gate is equivalent to the network?",
  "options": [
   "XOR",
-  "XNOR",
   "NAND",
+  "XNOR",
   "NOR"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$G_3=\\overline{G_1}=AB$; $Y=\\overline{A+B}+AB$. This is 1 for $AB=00$ or $11$, and 0 otherwise: XNOR.\n\nIndependent check: G₃ = ¬G₁ = AB, and G₂ = ¬(A+B) = ¬A¬B. Thus Y = AB + ¬A¬B, which is XNOR.",
- "solution": "",
+ "solution": "By De Morgan’s law, $G_3=\\overline{G_1}=AB$ and $G_2=\\overline{A}\\,\\overline{B}$.\n$$Y=AB+\\overline{A}\\,\\overline{B}$$\nThis is 1 when the inputs are equal, so the network is XNOR.",
  "locked": false,
  "difficulty": 3,
  "draft": {

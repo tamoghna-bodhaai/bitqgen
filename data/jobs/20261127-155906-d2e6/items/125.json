@@ -26,10 +26,10 @@
  "options": [
   "$\\dfrac{\\pi}{6}-\\dfrac{\\sqrt{3}}{2}$",
   "$\\dfrac{5\\pi}{6}-\\sqrt{3}$",
-  "$\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}$",
-  "$\\dfrac{\\pi}{3}+\\dfrac{\\sqrt{3}}{2}$"
+  "$\\dfrac{\\pi}{3}+\\dfrac{\\sqrt{3}}{2}$",
+  "$\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}$"
  ],
- "answer": "C",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$I=\\left[\\dfrac{x^2}{2}\\arctan x\\right]_0^{\\sqrt{3}}-\\dfrac12\\int_0^{\\sqrt{3}}\\dfrac{x^2}{1+x^2}\\,dx$; $I=\\dfrac{\\pi}{2}-\\dfrac12\\left(\\sqrt{3}-\\dfrac{\\pi}{3}\\right)=\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}$.\n\nIndependent check: Integration by parts gives \\(\\frac{x^2}{2}\\arctan x-\\frac12(x-\\arctan x)\\), evaluated from 0 to \\(\\sqrt3\\): \\(\\frac{2\\pi}{3}-\\frac{\\sqrt3}{2}\\).",
- "solution": "",
+ "solution": "Using integration by parts, take $u=\\arctan x$ and $dv=x\\,dx$:\n$$I=\\left[\\frac{x^2}{2}\\arctan x\\right]_0^{\\sqrt3}-\\frac12\\int_0^{\\sqrt3}\\frac{x^2}{1+x^2}\\,dx\n=\\frac{\\pi}{2}-\\frac12\\left(\\sqrt3-\\frac{\\pi}{3}\\right)\n=\\frac{2\\pi}{3}-\\frac{\\sqrt3}{2}.$$",
  "locked": false,
  "difficulty": 3,
  "draft": {

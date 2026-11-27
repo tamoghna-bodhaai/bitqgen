@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "For what value of $k$ do the lines $\\dfrac{x-1}{1}=\\dfrac{y+1}{2}=\\dfrac{z-2}{-1}$ and $\\dfrac{x-k}{2}=\\dfrac{y-1}{-1}=\\dfrac{z+1}{1}$ intersect?",
+ "stem": "If the lines $x=1+u,\\ y=-2+2u,\\ z=3+3u$ and $x=p+2v,\\ y=1-v,\\ z=-1+v$ intersect, then $p$ equals",
  "options": [
-  "$-8$",
+  "$0$",
   "$-6$",
-  "$6$",
-  "$8$"
+  "$2$",
+  "$6$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,7 +37,7 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "Parametrize the lines as (1+t, -1+2t, 2-t) and (k+2s, 1-s, -1+s). Matching y and z gives t=-1, s=4. Matching x then gives 0=k+8, so k=-8.",
+   "working": "Equating y and z coordinates gives 2u+v=3 and v=4+3u, so u=-1/5 and v=17/5. Equating x coordinates, 1+u=p+2v, gives p=-6.",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -47,24 +47,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "$u=(1,2,-1),\\ v=(2,-1,1),\\ B-A=(k-1,2,-3)$; $u\\times v=(1,-3,-5)$. $(B-A)\\cdot(u\\times v)=0\\Rightarrow(k-1)-6+15=0\\Rightarrow k=-8$. The direction vectors are not parallel, so the coplanar lines intersect.\n\nIndependent check: Parametrize the lines as (1+t, -1+2t, 2-t) and (k+2s, 1-s, -1+s). Matching y and z gives t=-1, s=4. Matching x then gives 0=k+8, so k=-8.",
- "solution": "",
+ "working": "$A=(1,-2,3),\\ B=(p,1,-1),\\ \\mathbf d_1=(1,2,3),\\ \\mathbf d_2=(2,-1,1)$. Since $(B-A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=0$ and $\\mathbf d_1\\times\\mathbf d_2=(5,5,-5)$, $5(p-1)+15+20=0\\Rightarrow p=-6$. The direction vectors are not parallel, so the coplanar lines intersect.\n\nIndependent check: Equating y and z coordinates gives 2u+v=3 and v=4+3u, so u=-1/5 and v=17/5. Equating x coordinates, 1+u=p+2v, gives p=-6.",
+ "solution": "For two non-parallel lines to intersect, they must be coplanar: $(B-A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=0$.\n$$\\mathbf d_1\\times\\mathbf d_2=(1,2,3)\\times(2,-1,1)=(5,5,-5)$$\nWith $B-A=(p-1,3,-4)$, $(p-1,3,-4)\\cdot(5,5,-5)=0$, giving $5(p-1)+15+20=0$.\nHence $p=-6$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "For what value of $k$ do the lines $\\dfrac{x-1}{1}=\\dfrac{y+1}{2}=\\dfrac{z-2}{-1}$ and $\\dfrac{x-k}{2}=\\dfrac{y-1}{-1}=\\dfrac{z+1}{1}$ intersect?",
+  "stem": "If the lines $x=1+u,\\ y=-2+2u,\\ z=3+3u$ and $x=p+2v,\\ y=1-v,\\ z=-1+v$ intersect, then $p$ equals",
   "options": [
-   "$-8$",
    "$-6$",
-   "$6$",
-   "$8$"
+   "$0$",
+   "$2$",
+   "$6$"
   ],
   "option_smiles": null,
   "answer": "A",
   "figure": null,
   "difficulty_estimate": 3,
-  "working": "$u=(1,2,-1),\\ v=(2,-1,1),\\ B-A=(k-1,2,-3)$; $u\\times v=(1,-3,-5)$. $(B-A)\\cdot(u\\times v)=0\\Rightarrow(k-1)-6+15=0\\Rightarrow k=-8$. The direction vectors are not parallel, so the coplanar lines intersect.",
-  "distractor_notes": "B: coordinate-subtraction error in $B-A$; C: sign error in the determinant condition; D: wrong sign of the parameter."
+  "working": "$A=(1,-2,3),\\ B=(p,1,-1),\\ \\mathbf d_1=(1,2,3),\\ \\mathbf d_2=(2,-1,1)$. Since $(B-A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=0$ and $\\mathbf d_1\\times\\mathbf d_2=(5,5,-5)$, $5(p-1)+15+20=0\\Rightarrow p=-6$. The direction vectors are not parallel, so the coplanar lines intersect.",
+  "distractor_notes": "B ($0$): omits the fixed-coordinate offset in the determinant; C ($2$): uses the wrong sign for the $z$-coordinate difference; D ($6$): sign error when solving the determinant equation."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "The curve $x^2+xy+y^2=7$ passes through $(1,2)$. What is the equation of its tangent at that point?",
  "options": [
-  "$4x+5y-14=0$",
-  "$4x-5y+6=0$",
   "$x+y-3=0$",
+  "$4x-5y+6=0$",
+  "$4x+5y-14=0$",
   "$5x+4y-13=0$"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "Differentiating, $2x+y+x\\dfrac{dy}{dx}+2y\\dfrac{dy}{dx}=0$. At $(1,2)$, $\\dfrac{dy}{dx}=-\\dfrac45$. Hence $y-2=-\\dfrac45(x-1)$, or $4x+5y-14=0$.\n\nIndependent check: At (1,2), the gradient is (2x+y, x+2y)=(4,5). Thus the tangent is 4(x−1)+5(y−2)=0, or 4x+5y−14=0.",
- "solution": "",
+ "solution": "For $F(x,y)=x^2+xy+y^2-7$, the tangent at $(1,2)$ is given by $F_x(x-1)+F_y(y-2)=0$. Since $(F_x,F_y)=(2x+y,x+2y)=(4,5)$ there,\n$$4(x-1)+5(y-2)=0\\implies 4x+5y-14=0.$$",
  "locked": false,
  "difficulty": 2,
  "draft": {

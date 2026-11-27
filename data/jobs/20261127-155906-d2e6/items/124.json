@@ -25,11 +25,11 @@
  "stem": "For what value of $\\lambda$ does the system $x+y+z=1,\\quad 2x-y+z=2,\\quad 3x+\\bigl(2+\\lambda(\\lambda-1)\\bigr)z=3+\\lambda$ have infinitely many solutions?",
  "options": [
   "$-1$",
-  "$0$",
   "$1$",
+  "$0$",
   "$2$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$\\Delta=-3\\lambda(\\lambda-1)$, so $\\lambda=0$ or $1$. At $\\lambda=0$, the third equation is the sum of the first two; hence $\\Delta_x=\\Delta_y=\\Delta_z=0$ and $\\operatorname{rank}(A)=2$. At $\\lambda=1$, $\\Delta_x=2\\ne0$. Thus only $\\lambda=0$ gives infinitely many solutions.\n\nIndependent check: Adding the first two equations gives 3x+2z=3. For infinitely many solutions, the third equation must match this dependent equation, requiring λ(λ−1)=0 and λ=0. Thus λ=0.",
- "solution": "",
+ "solution": "Adding the first two equations gives $3x+2z=3$. For infinitely many solutions, the third equation must be dependent on this equation, so its coefficients and constant must match:\n$$\\lambda(\\lambda-1)=0,\\qquad 3+\\lambda=3.$$\nThe second condition gives $\\lambda=0$, which also satisfies the first.",
  "locked": false,
  "difficulty": 3,
  "draft": {

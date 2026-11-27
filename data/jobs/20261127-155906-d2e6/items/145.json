@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "A random variable $X\\sim\\operatorname{Bin}(n,p)$ has mean $4$ and satisfies $P(X=3)=2P(X=2)$. Find $P(X=4)$.",
  "options": [
-  "$\\dfrac{1}{16}$",
-  "$\\dfrac{7}{32}$",
   "$\\dfrac{35}{128}$",
+  "$\\dfrac{7}{32}$",
+  "$\\dfrac{1}{16}$",
   "$\\dfrac{35}{64}$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$np=4,\\quad\\dfrac{P(X=3)}{P(X=2)}=\\dfrac{n-2}{3}\\dfrac{p}{1-p}=2.$ Substituting $p=\\dfrac{4}{n}$ gives $n=8$, $p=\\dfrac12$. $P(X=4)=\\binom84\\left(\\dfrac12\\right)^8=\\dfrac{35}{128}$.\n\nIndependent check: Since \\(np=4\\), the ratio \\(P(X=3)/P(X=2)=\\frac{n-2}{3}\\frac{p}{1-p}=2\\) gives \\((n-2)p=6(1-p)\\). Substituting \\(np=4\\) yields \\(p=\\tfrac12\\), so \\(n=8\\). Thus \\(P(X=4)=\\binom84(\\tfrac12)^8=\\tfrac{35}{128}\\).",
- "solution": "",
+ "solution": "For $X\\sim\\operatorname{Bin}(n,p)$, $np=4$ and $\\dfrac{P(X=3)}{P(X=2)}=\\dfrac{n-2}{3}\\dfrac{p}{1-p}=2$. Using $np=4$ gives $p=\\dfrac12$, hence $n=8$.\n$$P(X=4)=\\binom84\\left(\\frac12\\right)^8=\\frac{35}{128}.$$",
  "locked": false,
  "difficulty": 3,
  "draft": {

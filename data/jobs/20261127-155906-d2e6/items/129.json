@@ -48,7 +48,7 @@
  "attempts": 1,
  "notes": [],
  "working": "If $0$ is used: $\\binom{3}{2}(2\\cdot4!-2\\cdot3!)=108$. If $0$ is omitted: $2\\cdot4!=48$. Total $108+48=156$.\n\nIndependent check: Treat 2 and 3 as an oriented block. Choose the other 3 digits from {0,1,4,5}. If they include 0 (3 choices), there are 2·(4!−3!)=36 valid arrangements per choice; if not (1 choice), there are 2·4!=48. Total = 3·36+48=156.",
- "solution": "",
+ "solution": "If $0$ is used, choose the other two digits in $\\binom{3}{2}$ ways. Arranging the adjacent pair in either order, excluding arrangements with leading zero, gives $\\binom{3}{2}(2\\cdot4!-2\\cdot3!)=108$.\nIf $0$ is omitted, the pair acts as one block, so the count is $2\\cdot4!=48$.\n$$108+48=156$$",
  "locked": false,
  "difficulty": 3,
  "draft": {

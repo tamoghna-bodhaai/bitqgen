@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "Which pair of propositions is logically equivalent for all truth values of $p,q,r$?",
+ "stem": "Which pair of compound propositions is logically equivalent for every truth assignment to $p,q,r$?",
  "options": [
-  "$[\neg(p\\land q)]\\to r$ ; $(p\\land q)\\lor r$",
-  "$[\neg(p\\land q)]\\to r$ ; $(p\\to r)\\lor(q\\to r)$",
-  "$p\\to(q\\land r)$ ; $(p\\to q)\\lor(p\\to r)$",
-  "$(p\\lor q)\\to r$ ; $(p\\to r)\\lor(q\\to r)$"
+  "$(p\\vee q)\\Rightarrow r$ ; $(p\\Rightarrow r)\\vee(q\\Rightarrow r)$",
+  "$[\\sim(p\\wedge q)]\\Rightarrow r$ ; $(p\\Rightarrow r)\\vee(q\\Rightarrow r)$",
+  "$p\\Rightarrow(q\\wedge r)$ ; $(p\\Rightarrow q)\\vee(p\\Rightarrow r)$",
+  "$[\\sim(p\\wedge q)]\\Rightarrow r$ ; $\\sim\\big[(p\\Rightarrow\\sim q)\\wedge\\sim r\\big]$"
  ],
- "answer": "A",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,9 +37,9 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "In (A), ¬(p∧q)→r ≡ ¬¬(p∧q)∨r ≡ (p∧q)∨r, matching the second proposition. The other pairs are not equivalent.",
+   "working": "A: Both propositions simplify to (p∧q)∨r. B, C, and D are not equivalent pairs.",
    "answer": "A",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -47,24 +47,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "$[\\neg(p\\land q)]\\to r\\equiv\\neg\\neg(p\\land q)\\lor r\\equiv(p\\land q)\\lor r$.\n\nIndependent check: In (A), ¬(p∧q)→r ≡ ¬¬(p∧q)∨r ≡ (p∧q)∨r, matching the second proposition. The other pairs are not equivalent.",
- "solution": "",
+ "working": "$[\\sim(p\\wedge q)]\\Rightarrow r\\equiv(p\\wedge q)\\vee r$; $\\sim[(p\\Rightarrow\\sim q)\\wedge\\sim r]\\equiv\\sim[(\\sim p\\vee\\sim q)\\wedge\\sim r]\\equiv(p\\wedge q)\\vee r$\n\nIndependent check: A: Both propositions simplify to (p∧q)∨r. B, C, and D are not equivalent pairs.",
+ "solution": "Using $a\\Rightarrow b\\equiv\\sim a\\vee b$,\n$$[\\sim(p\\wedge q)]\\Rightarrow r\\equiv(p\\wedge q)\\vee r.$$\nAlso, $\\sim[(p\\Rightarrow\\sim q)\\wedge\\sim r]\\equiv\\sim[(\\sim p\\vee\\sim q)\\wedge\\sim r]\\equiv(p\\wedge q)\\vee r$; hence the pair in (D) is equivalent.",
  "locked": false,
  "difficulty": 3,
  "draft": {
-  "stem": "Which pair of propositions is logically equivalent for all truth values of $p,q,r$?",
+  "stem": "Which pair of compound propositions is logically equivalent for every truth assignment to $p,q,r$?",
   "options": [
-   "$[\neg(p\\land q)]\\to r$ ; $(p\\land q)\\lor r$",
-   "$[\neg(p\\land q)]\\to r$ ; $(p\\to r)\\lor(q\\to r)$",
-   "$p\\to(q\\land r)$ ; $(p\\to q)\\lor(p\\to r)$",
-   "$(p\\lor q)\\to r$ ; $(p\\to r)\\lor(q\\to r)$"
+   "$[\\sim(p\\wedge q)]\\Rightarrow r$ ; $\\sim\\big[(p\\Rightarrow\\sim q)\\wedge\\sim r\\big]$",
+   "$[\\sim(p\\wedge q)]\\Rightarrow r$ ; $(p\\Rightarrow r)\\vee(q\\Rightarrow r)$",
+   "$p\\Rightarrow(q\\wedge r)$ ; $(p\\Rightarrow q)\\vee(p\\Rightarrow r)$",
+   "$(p\\vee q)\\Rightarrow r$ ; $(p\\Rightarrow r)\\vee(q\\Rightarrow r)$"
   ],
   "option_smiles": null,
   "answer": "A",
   "figure": null,
   "difficulty_estimate": 4,
-  "working": "$[\\neg(p\\land q)]\\to r\\equiv\\neg\\neg(p\\land q)\\lor r\\equiv(p\\land q)\\lor r$.",
-  "distractor_notes": "B: distributes the implication over a disjunction incorrectly; C: replaces the required conjunction of implications by a disjunction; D: confuses $(p\\lor q)\\to r$ with separate implications."
+  "working": "$[\\sim(p\\wedge q)]\\Rightarrow r\\equiv(p\\wedge q)\\vee r$; $\\sim[(p\\Rightarrow\\sim q)\\wedge\\sim r]\\equiv\\sim[(\\sim p\\vee\\sim q)\\wedge\\sim r]\\equiv(p\\wedge q)\\vee r$",
+  "distractor_notes": "B: Confuses $\\sim(p\\wedge q)\\vee r$ with $(p\\wedge q)\\vee r$; C: Incorrectly distributes implication over a disjunction; D: Treats the implication from a disjunction as the disjunction of implications."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

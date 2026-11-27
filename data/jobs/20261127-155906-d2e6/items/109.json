@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "The range of $f(x)=\\dfrac{x}{x^2+1}$, for $x\\in\\mathbb{R}$, is",
+ "stem": "The range of $f(x)=\\dfrac{2x+1}{x^2+2}$, for $x\\in\\mathbb{R}$, is",
  "options": [
-  "$\\left[-\\dfrac{1}{2},\\dfrac{1}{2}\\right]$",
   "$[-1,1]$",
-  "$\\left[0,\\dfrac{1}{2}\\right]$",
-  "$\\left[-\\dfrac{1}{4},\\dfrac{1}{4}\\right]$"
+  "$\\left[-\\dfrac{1}{2},1\\right]$",
+  "$[0,1]$",
+  "$\\left[-\\dfrac{1}{2},\\dfrac{1}{2}\\right]$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,34 +37,34 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "Since x²+1 ≥ 2|x|, |f(x)| ≤ 1/2. Equality occurs at x = ±1, so the range is [−1/2, 1/2].",
-   "answer": "A",
+   "working": "Since x²+2>0, set y=f(x): yx²−2x+(2y−1)=0. Real x requires 1−2y²+y≥0, giving −1/2≤y≤1. Both endpoints are attained (at x=−2 and x=1).",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "$y=\\dfrac{x}{x^2+1}\\Rightarrow yx^2-x+y=0$.\\n$\\Delta=1-4y^2\\ge 0\\Rightarrow -\\dfrac12\\le y\\le\\dfrac12$.\n\nIndependent check: Since x²+1 ≥ 2|x|, |f(x)| ≤ 1/2. Equality occurs at x = ±1, so the range is [−1/2, 1/2].",
- "solution": "",
+ "working": "$y=\\dfrac{2x+1}{x^2+2}\\Rightarrow yx^2-2x+(2y-1)=0$. \n$\\Delta=4-4y(2y-1)\\ge0\\Rightarrow 2y^2-y-1\\le0$. \n$2y^2-y-1=(2y+1)(y-1)\\Rightarrow -\\dfrac12\\le y\\le1$.\n\nIndependent check: Since x²+2>0, set y=f(x): yx²−2x+(2y−1)=0. Real x requires 1−2y²+y≥0, giving −1/2≤y≤1. Both endpoints are attained (at x=−2 and x=1).",
+ "solution": "Let $y=\\dfrac{2x+1}{x^2+2}$. Then $yx^2-2x+(2y-1)=0$ must have a real root in $x$.\n$$\\Delta=4-4y(2y-1)\\ge0\\iff(2y+1)(y-1)\\le0$$\nHence $-\\dfrac12\\le y\\le1$; both endpoints are attained at $x=-2$ and $x=1$, respectively.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The range of $f(x)=\\dfrac{x}{x^2+1}$, for $x\\in\\mathbb{R}$, is",
+  "stem": "The range of $f(x)=\\dfrac{2x+1}{x^2+2}$, for $x\\in\\mathbb{R}$, is",
   "options": [
-   "$\\left[-\\dfrac{1}{2},\\dfrac{1}{2}\\right]$",
    "$[-1,1]$",
-   "$\\left[0,\\dfrac{1}{2}\\right]$",
-   "$\\left[-\\dfrac{1}{4},\\dfrac{1}{4}\\right]$"
+   "$\\left[-\\dfrac{1}{2},1\\right]$",
+   "$[0,1]$",
+   "$\\left[-\\dfrac{1}{2},\\dfrac{1}{2}\\right]$"
   ],
   "option_smiles": null,
-  "answer": "A",
+  "answer": "B",
   "figure": null,
   "difficulty_estimate": 2,
-  "working": "$y=\\dfrac{x}{x^2+1}\\Rightarrow yx^2-x+y=0$.\\n$\\Delta=1-4y^2\\ge 0\\Rightarrow -\\dfrac12\\le y\\le\\dfrac12$.",
-  "distractor_notes": "B: overestimates the range by using an incorrect bound. C: omits the negative values. D: introduces an erroneous factor of $2$ in the bound."
+  "working": "$y=\\dfrac{2x+1}{x^2+2}\\Rightarrow yx^2-2x+(2y-1)=0$. \n$\\Delta=4-4y(2y-1)\\ge0\\Rightarrow 2y^2-y-1\\le0$. \n$2y^2-y-1=(2y+1)(y-1)\\Rightarrow -\\dfrac12\\le y\\le1$.",
+  "distractor_notes": "A: uses incorrect bounds; C: overlooks negative values; D: incorrectly halves the upper endpoint."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

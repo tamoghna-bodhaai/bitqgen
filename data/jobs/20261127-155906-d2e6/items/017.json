@@ -22,14 +22,14 @@
   "bank_ref": null
  },
  "status": "ok",
- "stem": "An electron is accelerated from rest through a potential difference of $100$ V. Find its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_e=9.11\\times10^{-31}$ kg and $e=1.60\\times10^{-19}$ C.",
+ "stem": "An $\\alpha$ particle starts from rest and is accelerated through a potential difference of $100$ V. Calculate its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_\\alpha=6.64\\times10^{-27}$ kg and $e=1.60\\times10^{-19}$ C.",
  "options": [
-  "$8.7\\times10^{-11}$ m",
-  "$1.23\\times10^{-10}$ m",
-  "$2.46\\times10^{-10}$ m",
-  "$1.23\\times10^{-9}$ m"
+  "$1.02\\times10^{-12}$ m",
+  "$7.19\\times10^{-13}$ m",
+  "$1.44\\times10^{-12}$ m",
+  "$2.03\\times10^{-12}$ m"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -37,34 +37,34 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "The electron gains kinetic energy eV, so λ = h/√(2mₑeV) = 6.63×10⁻³⁴/√(2×9.11×10⁻³¹×1.60×10⁻¹⁷) ≈ 1.23×10⁻¹⁰ m.",
+   "working": "The alpha particle has charge 2e, so K = 2eV = 3.20×10^-17 J. Then λ = h/√(2mαK) = 1.02×10^-12 m.",
    "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "$\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(100)}}\\approx1.23\\times10^{-10}$ m.\n\nIndependent check: The electron gains kinetic energy eV, so λ = h/√(2mₑeV) = 6.63×10⁻³⁴/√(2×9.11×10⁻³¹×1.60×10⁻¹⁷) ≈ 1.23×10⁻¹⁰ m.",
- "solution": "",
+ "working": "$q=2e$\n$\\lambda=\\dfrac{h}{\\sqrt{2m_\\alpha qV}}$\n$=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(6.64\\times10^{-27})(3.20\\times10^{-19})(100)}}$\n$=1.02\\times10^{-12}$ m\n\nIndependent check: The alpha particle has charge 2e, so K = 2eV = 3.20×10^-17 J. Then λ = h/√(2mαK) = 1.02×10^-12 m.",
+ "solution": "For an $\\alpha$ particle, $q=2e$ and $K=qV$. Hence\n$$\\lambda=\\frac{h}{\\sqrt{2m_\\alpha qV}}=\\frac{6.63\\times10^{-34}}{\\sqrt{2(6.64\\times10^{-27})(3.20\\times10^{-19})(100)}}=1.02\\times10^{-12}\\text{ m}.$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "An electron is accelerated from rest through a potential difference of $100$ V. Find its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_e=9.11\\times10^{-31}$ kg and $e=1.60\\times10^{-19}$ C.",
+  "stem": "An $\\alpha$ particle starts from rest and is accelerated through a potential difference of $100$ V. Calculate its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_\\alpha=6.64\\times10^{-27}$ kg and $e=1.60\\times10^{-19}$ C.",
   "options": [
-   "$8.7\\times10^{-11}$ m",
-   "$1.23\\times10^{-10}$ m",
-   "$2.46\\times10^{-10}$ m",
-   "$1.23\\times10^{-9}$ m"
+   "$7.19\\times10^{-13}$ m",
+   "$1.02\\times10^{-12}$ m",
+   "$1.44\\times10^{-12}$ m",
+   "$2.03\\times10^{-12}$ m"
   ],
   "option_smiles": null,
   "answer": "B",
   "figure": null,
   "difficulty_estimate": 2,
-  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(100)}}\\approx1.23\\times10^{-10}$ m.",
-  "distractor_notes": "A: incorrectly includes an extra factor of $2$ in the momentum. C: doubles the wavelength. D: shifts the decimal by one place during unit conversion."
+  "working": "$q=2e$\n$\\lambda=\\dfrac{h}{\\sqrt{2m_\\alpha qV}}$\n$=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(6.64\\times10^{-27})(3.20\\times10^{-19})(100)}}$\n$=1.02\\times10^{-12}$ m",
+  "distractor_notes": "A: uses twice the correct charge, giving a wavelength smaller by $\\sqrt{2}$. C: uses charge $e$ instead of $2e$. D: uses approximately the proton mass instead of the alpha-particle mass."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

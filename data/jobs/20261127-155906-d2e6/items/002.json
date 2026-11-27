@@ -24,12 +24,12 @@
  "status": "ok",
  "stem": "For the cycle shown, the gas is monatomic and ideal. What are the net work done by the gas over the full cycle and the heat absorbed during $A\\to B$?",
  "options": [
-  "$\\left(100-200\\ln 2,\\ 250\\right)\\ \\text{J}$",
   "$\\left(100-200\\ln 2,\\ 150\\right)\\ \\text{J}$",
+  "$\\left(100-200\\ln 2,\\ 250\\right)\\ \\text{J}$",
   "$\\left(100+200\\ln 2,\\ 250\\right)\\ \\text{J}$",
   "$\\left(100-100\\ln 2,\\ 250\\right)\\ \\text{J}$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": {
   "path": "figs/q002_stem_v0.png",
   "width_pct": 60,
@@ -52,7 +52,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$W_{AB}=100(2-1)=100\\ \\text{J}$; $W_{BC}=P_BV_B\\ln(V_C/V_B)=200\\ln(1/2)=-200\\ln2\\ \\text{J}$; $W_{CA}=0$, so $W_{\\rm cycle}=100-200\\ln2\\ \\text{J}$. $\\Delta U_{AB}=\\frac32\\Delta(PV)=\\frac32(200-100)=150\\ \\text{J}$; $Q_{AB}=\\Delta U_{AB}+W_{AB}=250\\ \\text{J}$.\n\nIndependent check: On A→B, W = PΔV = 100 J and ΔU = (3/2)Δ(PV) = 150 J, so Q_AB = 250 J. On B→C, W = (PV)ln(V_C/V_B) = −200 ln 2 J; C→A has zero work. Thus W_cycle = 100 − 200 ln 2 J.",
- "solution": "",
+ "solution": "For a complete cycle, $W_{\\rm cycle}=W_{AB}+W_{BC}+W_{CA}$, with $W_{AB}=100(2-1)=100\\,\\text{J}$, $W_{BC}=200\\ln(1/2)=-200\\ln2\\,\\text{J}$, and $W_{CA}=0$.\n$$W_{\\rm cycle}=100-200\\ln2\\,\\text{J}$$\nFor a monatomic ideal gas, $\\Delta U_{AB}=\\frac32\\Delta(PV)=150\\,\\text{J}$, so $Q_{AB}=\\Delta U_{AB}+W_{AB}=250\\,\\text{J}$. Thus the result is $(100-200\\ln2,\\ 250)\\,\\text{J}$.",
  "locked": false,
  "difficulty": 4,
  "draft": {
