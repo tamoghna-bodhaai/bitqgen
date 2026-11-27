@@ -1,0 +1,75 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Rolling kinematics",
+  "archetype": "geometry of rolling",
+  "brief": "Diagram of a wheel rolling without slipping; relate speed of a marked point on the rim to translational speed, or find acceleration of the contact point.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:14",
+   "2026s2:19",
+   "2025s1:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "A wheel of radius $R$ rolls without slipping on a horizontal surface such that its centre moves with a constant speed $v$, as shown in the figure. At the instant shown, a point $P$ on the rim is at a height $\\dfrac{3R}{2}$ above the ground. The speed of point $P$ relative to the ground is",
+ "options": [
+  "$v$",
+  "$\\sqrt{2}v$",
+  "$\\sqrt{3}v$",
+  "$2v$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q025_stem_v0.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Rolling without slipping: ω = v/R, contact point is instantaneous axis. P at height 3R/2 has coordinates relative to contact point (√3R/2, 3R/2), so distance from contact = √(3R²/4 + 9R²/4) = √3 R. Speed = ω·√3R = √3 v. Confirmed by vector addition: v_P = (3v/2, −√3v/2), magnitude √3 v.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Method 1 (Instantaneous Centre of Rotation):\nIn rolling without slipping on a stationary horizontal surface, the point of contact $O$ with the ground is the instantaneous centre of zero velocity (ICR). The angular velocity of the wheel is:\n$$\\omega = \\dfrac{v}{R}$$\n\nThe speed of any point on the wheel is proportional to its distance from the contact point $O$:\n$$v_P = \\omega \\cdot d$$\nTaking the contact point $O$ as the origin $(0, 0)$, the circle is described by:\n$$x^2 + (y - R)^2 = R^2 \\implies x^2 + y^2 = 2Ry$$\nThe distance $d$ of point $P$ from the contact point $O$ is:\n$$d = \\sqrt{x^2 + y^2} = \\sqrt{2Ry}$$\nGiven $y = \\dfrac{3R}{2}$:\n$$d = \\sqrt{2R\\left(\\dfrac{3R}{2}\\right)} = \\sqrt{3}R$$\nTherefore, the speed of point $P$ is:\n$$v_P = \\omega \\cdot d = \\left(\\dfrac{v}{R}\\right)(\\sqrt{3}R) = \\sqrt{3}v$$\n\nMethod 2 (Vector Addition):\n$$\\vec{v}_P = \\vec{v}_C + \\vec{v}_{P/C}$$\nHere $|\\vec{v}_C| = v$ horizontally, and $|\\vec{v}_{P/C}| = \\omega R = v$ tangential to the rim.\nSince the vertical coordinate relative to the centre is $y' = \\dfrac{R}{2}$, the radius vector makes an angle of $30^\\circ$ with the horizontal ($\\sin 30^\\circ = 1/2$).\nThe tangent makes an angle of $60^\\circ$ with the horizontal velocity $\\vec{v}_C$. Using the law of cosines for vector addition:\n$$v_P = \\sqrt{v^2 + v^2 + 2v^2\\cos 60^\\circ} = \\sqrt{v^2 + v^2 + 2v^2\\left(\\dfrac{1}{2}\\right)} = \\sqrt{3}v$$\n\nIndependent check: Rolling without slipping: ω = v/R, contact point is instantaneous axis. P at height 3R/2 has coordinates relative to contact point (√3R/2, 3R/2), so distance from contact = √(3R²/4 + 9R²/4) = √3 R. Speed = ω·√3R = √3 v. Confirmed by vector addition: v_P = (3v/2, −√3v/2), magnitude √3 v.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wheel of radius $R$ rolls without slipping on a horizontal surface such that its centre moves with a constant speed $v$, as shown in the figure. At the instant shown, a point $P$ on the rim is at a height $\\dfrac{3R}{2}$ above the ground. The speed of point $P$ relative to the ground is",
+  "options": [
+   "$v$",
+   "$\\sqrt{2}v$",
+   "$\\sqrt{3}v$",
+   "$2v$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Method 1 (Instantaneous Centre of Rotation):\nIn rolling without slipping on a stationary horizontal surface, the point of contact $O$ with the ground is the instantaneous centre of zero velocity (ICR). The angular velocity of the wheel is:\n$$\\omega = \\dfrac{v}{R}$$\n\nThe speed of any point on the wheel is proportional to its distance from the contact point $O$:\n$$v_P = \\omega \\cdot d$$\nTaking the contact point $O$ as the origin $(0, 0)$, the circle is described by:\n$$x^2 + (y - R)^2 = R^2 \\implies x^2 + y^2 = 2Ry$$\nThe distance $d$ of point $P$ from the contact point $O$ is:\n$$d = \\sqrt{x^2 + y^2} = \\sqrt{2Ry}$$\nGiven $y = \\dfrac{3R}{2}$:\n$$d = \\sqrt{2R\\left(\\dfrac{3R}{2}\\right)} = \\sqrt{3}R$$\nTherefore, the speed of point $P$ is:\n$$v_P = \\omega \\cdot d = \\left(\\dfrac{v}{R}\\right)(\\sqrt{3}R) = \\sqrt{3}v$$\n\nMethod 2 (Vector Addition):\n$$\\vec{v}_P = \\vec{v}_C + \\vec{v}_{P/C}$$\nHere $|\\vec{v}_C| = v$ horizontally, and $|\\vec{v}_{P/C}| = \\omega R = v$ tangential to the rim.\nSince the vertical coordinate relative to the centre is $y' = \\dfrac{R}{2}$, the radius vector makes an angle of $30^\\circ$ with the horizontal ($\\sin 30^\\circ = 1/2$).\nThe tangent makes an angle of $60^\\circ$ with the horizontal velocity $\\vec{v}_C$. Using the law of cosines for vector addition:\n$$v_P = \\sqrt{v^2 + v^2 + 2v^2\\cos 60^\\circ} = \\sqrt{v^2 + v^2 + 2v^2\\left(\\dfrac{1}{2}\\right)} = \\sqrt{3}v$$",
+  "distractor_notes": "Option A ($v$): Corresponds to a sign error in vector addition, taking $\\cos(120^\\circ)$ instead of $\\cos(60^\\circ)$, giving $\\sqrt{v^2 + v^2 - v^2} = v$, or confusing the condition with $h = R/2$.\nOption B ($\\sqrt{2}v$): Corresponds to using the speed of a point at the horizontal level of the centre of mass ($h = R$), where rotational and translational velocity components are mutually perpendicular.\nOption D ($2v$): Corresponds to taking the speed of the topmost point on the wheel ($h = 2R$), where translational and rotational velocities are parallel.",
+  "figure": {
+   "kind": "diagram",
+   "description": "A circular wheel of radius $R$ is shown rolling on a horizontal ground line with hatching below. The center of the wheel is labeled $C$. A horizontal arrow pointing to the right from center $C$ is labeled with velocity $v$. A curved clockwise arrow near the top of the wheel indicates rolling without slipping. The lowest point of the wheel touches the ground line. A point $P$ is marked with a solid dot on the rim in the upper-right quadrant. A horizontal dashed line extends rightward from point $P$, and a vertical dimension line with arrows measures the vertical distance from the ground line up to this dashed line, labeled with the value $\\dfrac{3R}{2}$. A dashed vertical line from center $C$ down to the ground is labeled $R$.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3
+ }
+}

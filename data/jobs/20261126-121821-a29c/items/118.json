@@ -1,0 +1,68 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "subtopic": "Logical equivalence",
+  "archetype": "simplify and compare",
+  "brief": "Given compound statements built with ∧, ∨, negations, identify which option is logically equivalent to the given statement; simplify with De Morgan's laws.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:128",
+   "2024s1:97",
+   "2024s1:127"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which statement is logically equivalent to $\neg[p\\wedge(q\\vee r)]$?",
+ "options": [
+  "$\neg p\\vee(\neg q\\wedge\neg r)$",
+  "$\neg p\\wedge(\neg q\\vee\neg r)$",
+  "$p\\vee(\neg q\\wedge\neg r)$",
+  "$\neg p\\vee(\neg q\\vee\neg r)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By De Morgan’s laws, ¬[p ∧ (q ∨ r)] = ¬p ∨ (¬q ∧ ¬r), which is option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\neg[p\\wedge(q\\vee r)]\\equiv\\neg p\\vee\\neg(q\\vee r)\\equiv\\neg p\\vee(\\neg q\\wedge\\neg r)$.\n\nIndependent check: By De Morgan’s laws, ¬[p ∧ (q ∨ r)] = ¬p ∨ (¬q ∧ ¬r), which is option A.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which statement is logically equivalent to $\neg[p\\wedge(q\\vee r)]$?",
+  "options": [
+   "$\neg p\\vee(\neg q\\wedge\neg r)$",
+   "$\neg p\\wedge(\neg q\\vee\neg r)$",
+   "$p\\vee(\neg q\\wedge\neg r)$",
+   "$\neg p\\vee(\neg q\\vee\neg r)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\neg[p\\wedge(q\\vee r)]\\equiv\\neg p\\vee\\neg(q\\vee r)\\equiv\\neg p\\vee(\\neg q\\wedge\\neg r)$.",
+  "distractor_notes": "B: uses the wrong outer connective; C: omits the negation of $p$; D: uses the wrong connective after applying De Morgan's law."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

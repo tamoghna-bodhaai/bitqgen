@@ -1,0 +1,68 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Mirror formula, magnification",
+  "archetype": "two equations two unknowns",
+  "brief": "An object placed at a distance from a concave mirror produces an image with given magnification; ask for the focal length using mirror formula and magnification relation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:12",
+   "2026s2:18",
+   "2025s1:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A concave mirror produces a real image that is twice the size of the object. The distance between the object and its image is $30$ cm. The focal length of the mirror is:",
+ "options": [
+  "$10$ cm",
+  "$30$ cm",
+  "$20$ cm",
+  "$60$ cm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a real image twice the object size, the image distance is twice the object distance. Their separation is 30 cm, so the object and image distances are 30 cm and 60 cm. The mirror formula gives |f| = (30×60)/(30+60) = 20 cm.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Magnification $m = -2$ (real, inverted). Mirror formula: $m = -\\frac{v}{u} \\Rightarrow -\\frac{v}{u} = -2 \\Rightarrow v = 2u$. Let $u = -x$, then $v = -2x$. Distance between object and image $= |v| - |u| = 2x - x = x = 30\\,\\text{cm}$ $\\Rightarrow x = 30\\,\\text{cm}$. So $u = -30\\,\\text{cm}$, $v = -60\\,\\text{cm}$. Mirror formula: $\\frac{1}{f} = \\frac{1}{v} + \\frac{1}{u} = -\\frac{1}{60} - \\frac{1}{30} = -\\frac{1}{20}$ $\\Rightarrow f = -20\\,\\text{cm}$. Focal length $= 20\\,\\text{cm}$.\n\nIndependent check: For a real image twice the object size, the image distance is twice the object distance. Their separation is 30 cm, so the object and image distances are 30 cm and 60 cm. The mirror formula gives |f| = (30×60)/(30+60) = 20 cm.",
+ "solution": "For a real image, $m=-2=-v/u$, so $v=2u$. Since object and image lie on the same side of the mirror, their separation is $|v|-|u|=30$, giving $|u|=30$ cm and $|v|=60$ cm.\n$$\\frac{1}{|f|}=\\frac{1}{30}+\\frac{1}{60}=\\frac{1}{20}$$\nHence, the focal length is $20$ cm.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A concave mirror produces a real image that is twice the size of the object. The distance between the object and its image is $30$ cm. The focal length of the mirror is:",
+  "options": [
+   "$10$ cm",
+   "$20$ cm",
+   "$30$ cm",
+   "$60$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Magnification $m = -2$ (real, inverted). Mirror formula: $m = -\\frac{v}{u} \\Rightarrow -\\frac{v}{u} = -2 \\Rightarrow v = 2u$. Let $u = -x$, then $v = -2x$. Distance between object and image $= |v| - |u| = 2x - x = x = 30\\,\\text{cm}$ $\\Rightarrow x = 30\\,\\text{cm}$. So $u = -30\\,\\text{cm}$, $v = -60\\,\\text{cm}$. Mirror formula: $\\frac{1}{f} = \\frac{1}{v} + \\frac{1}{u} = -\\frac{1}{60} - \\frac{1}{30} = -\\frac{1}{20}$ $\\Rightarrow f = -20\\,\\text{cm}$. Focal length $= 20\\,\\text{cm}$.",
+  "distractor_notes": "A: Incorrect; may arise from assuming u = 30 cm and then taking f = u/3 (no valid reasoning) or incorrectly using distance as object distance and m = 2 with wrong formula. C: Incorrect; if distance is taken as object distance (u = 30) but with v = 30 (same size) or miscalculation. D: Incorrect; sign error in mirror formula (using u = +30, v = +60 gives f = +20? Actually that's B. Wait, sign error leading to f = 60 cm arises if one uses 1/f = 1/v - 1/u with u = 30, v = 60, or takes u positive, v negative etc.)"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

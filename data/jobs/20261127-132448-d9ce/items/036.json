@@ -1,0 +1,76 @@
+{
+ "qno": 36,
+ "section": "Physics",
+ "slot": {
+  "qno": 36,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Internal resistance of cells",
+  "archetype": "single-formula numerical",
+  "brief": "A cell of given emf connected across an external resistance delivers a terminal voltage; use V = ε − Ir to find internal resistance or current.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:30",
+   "2024s2:2",
+   "2023s1:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A cell of emf $12$ V is connected to a $5\\ \\text{Ω}$ resistor as shown in the figure. An ideal voltmeter reads $10$ V across the resistor. Find the cell’s internal resistance.",
+ "options": [
+  "$5\\ \\text{Ω}$",
+  "$2\\ \\text{Ω}$",
+  "$1\\ \\text{Ω}$",
+  "$10\\ \\text{Ω}$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q036_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The 5 Ω resistor carries I = 10/5 = 2 A. The internal voltage drop is 12 − 10 = 2 V, so r = 2/2 = 1 Ω.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I=V/R=10/5=2\\ \\text{A}$\n$V=\\varepsilon-Ir\\Rightarrow r=(12-10)/2=1\\ \\text{Ω}$\n\nIndependent check: The 5 Ω resistor carries I = 10/5 = 2 A. The internal voltage drop is 12 − 10 = 2 V, so r = 2/2 = 1 Ω.",
+ "solution": "The current through the resistor is $I=V/R=10/5=2\\,\\text{A}$. The internal voltage drop is $12-10=2\\,\\text{V}$, so $$r=\\frac{\\varepsilon-V}{I}=\\frac{2}{2}=1\\,\\Omega.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A cell of emf $12$ V is connected to a $5\\ \\text{Ω}$ resistor as shown in the figure. An ideal voltmeter reads $10$ V across the resistor. Find the cell’s internal resistance.",
+  "options": [
+   "$1\\ \\text{Ω}$",
+   "$2\\ \\text{Ω}$",
+   "$5\\ \\text{Ω}$",
+   "$10\\ \\text{Ω}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a closed series circuit containing a cell with emf labeled 12 V and an internal resistor labeled r, connected to an external resistor labeled 5 Ω. Show an ideal voltmeter connected in parallel across the external resistor, with its reading labeled 10 V. Mark the cell polarity and show conventional current leaving its positive terminal through the external resistor.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$I=V/R=10/5=2\\ \\text{A}$\n$V=\\varepsilon-Ir\\Rightarrow r=(12-10)/2=1\\ \\text{Ω}$",
+  "distractor_notes": "B: Uses the voltage drop across the resistor as the cell’s internal drop.\nC: Confuses external resistance with internal resistance.\nD: Uses $\\varepsilon/I$ instead of $(\\varepsilon-V)/I$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

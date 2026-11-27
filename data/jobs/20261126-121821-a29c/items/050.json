@@ -1,0 +1,77 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Basicity of amines",
+  "archetype": "odd-one-out / compare structures",
+  "brief": "Rank or pick the odd one out among given amines in aqueous basicity (aliphatic vs aniline vs ammonia type comparison); purely conceptual, no pKa values.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:34",
+   "2024s1:50",
+   "2026s2:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "Considering the electronic effects of the phenyl ring, which of the following compounds is the strongest base in an aqueous medium?",
+ "options": [
+  "Aniline",
+  "Benzylamine",
+  "$N$-Methylaniline",
+  "Diphenylamine"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": [
+  "figs/q050_optA_v0.png",
+  "figs/q050_optB_v0.png",
+  "figs/q050_optC_v0.png",
+  "figs/q050_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "In aniline, N-methylaniline and diphenylamine the N lone pair is delocalized into the ring(s), reducing basicity (diphenylamine worst, two rings). In benzylamine the CH2 spacer prevents conjugation, so the lone pair is fully available; pKa of conjugate acids: benzylammonium ≈ 9.3 vs anilinium ≈ 4.6, N-methylanilinium ≈ 4.85, diphenylammonium ≈ 0.8. Benzylamine is the strongest base in water.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In benzylamine ($\\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2$), the amino group ($-\\text{NH}_2$) is attached to an $sp^3$-hybridised carbon ($-\\text{CH}_2-$). Because of this intervening methylene group, the lone pair on the nitrogen atom cannot enter into resonance with the $\\pi$-system of the benzene ring. Benzylamine therefore acts as an aliphatic amine, retaining a localised lone pair available for protonation ($pK_b \\approx 4.70$).\\n\\nIn contrast, in aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$), $N$-methylaniline ($\\text{C}_6\\text{H}_5\\text{NHCH}_3$), and diphenylamine ($(\\text{C}_6\\text{H}_5)_2\\text{NH}$), the nitrogen atom is bonded directly to the $sp^2$-hybridised aromatic ring. The lone pair is delocalised into the ring by resonance, drastically decreasing basicity ($pK_b > 9$ for all three).\\n\\nHence, benzylamine is by far the strongest base among the given choices.\n\nIndependent check: In aniline, N-methylaniline and diphenylamine the N lone pair is delocalized into the ring(s), reducing basicity (diphenylamine worst, two rings). In benzylamine the CH2 spacer prevents conjugation, so the lone pair is fully available; pKa of conjugate acids: benzylammonium ≈ 9.3 vs anilinium ≈ 4.6, N-methylanilinium ≈ 4.85, diphenylammonium ≈ 0.8. Benzylamine is the strongest base in water.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Considering the electronic effects of the phenyl ring, which of the following compounds is the strongest base in an aqueous medium?",
+  "options": [
+   "Aniline",
+   "Benzylamine",
+   "$N$-Methylaniline",
+   "Diphenylamine"
+  ],
+  "option_smiles": [
+   "Nc1ccccc1",
+   "NCc1ccccc1",
+   "CNc1ccccc1",
+   "c1ccc(Nc2ccccc2)cc1"
+  ],
+  "answer": "B",
+  "working": "In benzylamine ($\\text{C}_6\\text{H}_5\\text{CH}_2\\text{NH}_2$), the amino group ($-\\text{NH}_2$) is attached to an $sp^3$-hybridised carbon ($-\\text{CH}_2-$). Because of this intervening methylene group, the lone pair on the nitrogen atom cannot enter into resonance with the $\\pi$-system of the benzene ring. Benzylamine therefore acts as an aliphatic amine, retaining a localised lone pair available for protonation ($pK_b \\approx 4.70$).\\n\\nIn contrast, in aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$), $N$-methylaniline ($\\text{C}_6\\text{H}_5\\text{NHCH}_3$), and diphenylamine ($(\\text{C}_6\\text{H}_5)_2\\text{NH}$), the nitrogen atom is bonded directly to the $sp^2$-hybridised aromatic ring. The lone pair is delocalised into the ring by resonance, drastically decreasing basicity ($pK_b > 9$ for all three).\\n\\nHence, benzylamine is by far the strongest base among the given choices.",
+  "distractor_notes": "Option A (Aniline): The nitrogen lone pair is delocalised over the benzene ring via resonance, making it much less basic than an aliphatic amine.\nOption C ($N$-Methylaniline): The $+I$ effect of the methyl group increases basicity relative to aniline, but the lone pair is still delocalised into the ring, leaving it far less basic than benzylamine.\nOption D (Diphenylamine): The lone pair is delocalised over two aromatic rings, making it the weakest base among the options.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

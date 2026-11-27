@@ -1,0 +1,68 @@
+{
+ "qno": 56,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 56,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Crystal field theory – high/low spin",
+  "archetype": "compare complexes",
+  "brief": "Compare two given complexes differing only in ligand field strength; predict high-spin vs low-spin and number of unpaired electrons.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:40",
+   "2026s1:50",
+   "2022:47"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the complexes $\\text{[CoF}_6\\text{]}^{3-}$ and $\\text{[Co(NH}_3\\text{)}_6\\text{]}^{3+}$. The spin states and the number of unpaired electrons in these complexes are, respectively:",
+ "options": [
+  "low‑spin, 0 and low‑spin, 0",
+  "low‑spin, 0 and high‑spin, 4",
+  "high‑spin, 4 and high‑spin, 4",
+  "high‑spin, 4 and low‑spin, 0"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Both complexes contain Co(III), which is d⁶. In octahedral [CoF₆]³⁻, weak-field F⁻ gives high-spin d⁶ with 4 unpaired electrons; in [Co(NH₃)₆]³⁺, Co(III) with NH₃ is low-spin, t₂g⁶, with 0 unpaired electrons.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Co³⁺ (d⁶). F⁻ is a weak field ligand → small Δ → high‑spin t₂g⁴ e_g² → 4 unpaired electrons.\nNH₃ is a strong field ligand → large Δ → low‑spin t₂g⁶ e_g⁰ → 0 unpaired electrons.\nThus [CoF₆]³⁻ is high‑spin with 4 unpaired; [Co(NH₃)₆]³⁺ is low‑spin with 0 unpaired.\n\nIndependent check: Both complexes contain Co(III), which is d⁶. In octahedral [CoF₆]³⁻, weak-field F⁻ gives high-spin d⁶ with 4 unpaired electrons; in [Co(NH₃)₆]³⁺, Co(III) with NH₃ is low-spin, t₂g⁶, with 0 unpaired electrons.",
+ "solution": "Both complexes contain Co$^{3+}$ ($d^6$) in an octahedral field. F$^-$ is a weak-field ligand, so $[\\mathrm{CoF_6}]^{3-}$ is high-spin: $t_{2g}^4e_g^2$, with 4 unpaired electrons.\nNH$_3$ gives a low-spin complex: $[\\mathrm{Co(NH_3)_6}]^{3+}$ has $t_{2g}^6e_g^0$, with 0 unpaired electrons.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Consider the complexes $\\text{[CoF}_6\\text{]}^{3-}$ and $\\text{[Co(NH}_3\\text{)}_6\\text{]}^{3+}$. The spin states and the number of unpaired electrons in these complexes are, respectively:",
+  "options": [
+   "high‑spin, 4 and low‑spin, 0",
+   "low‑spin, 0 and high‑spin, 4",
+   "high‑spin, 4 and high‑spin, 4",
+   "low‑spin, 0 and low‑spin, 0"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Co³⁺ (d⁶). F⁻ is a weak field ligand → small Δ → high‑spin t₂g⁴ e_g² → 4 unpaired electrons.\nNH₃ is a strong field ligand → large Δ → low‑spin t₂g⁶ e_g⁰ → 0 unpaired electrons.\nThus [CoF₆]³⁻ is high‑spin with 4 unpaired; [Co(NH₃)₆]³⁺ is low‑spin with 0 unpaired.",
+  "distractor_notes": "B – reverses the order. C – both high‑spin; D – both low‑spin."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

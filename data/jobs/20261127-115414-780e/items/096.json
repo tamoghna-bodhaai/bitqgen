@@ -1,0 +1,68 @@
+{
+ "qno": 96,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 96,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Trigonometric integrals",
+  "archetype": "integration technique",
+  "brief": "Definite integral of a rational function in sin/cos or a rational function requiring substitution and symmetry; moderate simplification.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:92",
+   "2021:130",
+   "2021:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of the definite integral from 0 to pi of x sin(x) divided by (1 + cos^2(x)) with respect to x is:",
+ "options": [
+  "pi/2",
+  "pi^2/4",
+  "pi^2/2",
+  "pi^2/8"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let f(x)=sin x/(1+cos²x), so f(π−x)=f(x). Hence 2I=π∫₀^π f(x)dx. With u=cos x, ∫₀^π f(x)dx=∫₋₁¹ du/(1+u²)=π/2. Thus I=π²/4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let I = integral from 0 to pi of x sin x/(1+cos^2 x) dx. Replace x by pi-x: I = integral from 0 to pi of (pi-x) sin x/(1+cos^2 x) dx. Adding gives 2I = pi * integral from 0 to pi of sin x/(1+cos^2 x) dx. Put cos x = t, so -sin x dx = dt. The remaining integral becomes integral from -1 to 1 of dt/(1+t^2) = pi/2. Thus 2I = pi*(pi/2), so I = pi^2/4.\n\nIndependent check: Let f(x)=sin x/(1+cos²x), so f(π−x)=f(x). Hence 2I=π∫₀^π f(x)dx. With u=cos x, ∫₀^π f(x)dx=∫₋₁¹ du/(1+u²)=π/2. Thus I=π²/4.",
+ "solution": "Let $I=\\int_0^\\pi \\frac{x\\sin x}{1+\\cos^2 x}\\,dx$. Replacing $x$ by $\\pi-x$ and adding, using symmetry of $\\frac{\\sin x}{1+\\cos^2 x}$, gives\n$$2I=\\pi\\int_0^\\pi \\frac{\\sin x}{1+\\cos^2 x}\\,dx=\\pi\\int_{-1}^{1}\\frac{du}{1+u^2}=\\frac{\\pi^2}{2},$$\nwhere $u=\\cos x$. Hence $I=\\boxed{\\frac{\\pi^2}{4}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The value of the definite integral from 0 to pi of x sin(x) divided by (1 + cos^2(x)) with respect to x is:",
+  "options": [
+   "pi/2",
+   "pi^2/4",
+   "pi^2/2",
+   "pi^2/8"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let I = integral from 0 to pi of x sin x/(1+cos^2 x) dx. Replace x by pi-x: I = integral from 0 to pi of (pi-x) sin x/(1+cos^2 x) dx. Adding gives 2I = pi * integral from 0 to pi of sin x/(1+cos^2 x) dx. Put cos x = t, so -sin x dx = dt. The remaining integral becomes integral from -1 to 1 of dt/(1+t^2) = pi/2. Thus 2I = pi*(pi/2), so I = pi^2/4.",
+  "distractor_notes": "A omits the factor x in the numerator; C forgets the factor 1/2 when adding the symmetry relation; D uses an incorrect factor from partial evaluation."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

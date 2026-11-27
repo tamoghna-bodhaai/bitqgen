@@ -1,0 +1,68 @@
+{
+ "qno": 97,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 97,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of functions",
+  "archetype": "discriminant method",
+  "brief": "Find the domain of a function involving a square root of a quadratic expression using sign analysis.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:103",
+   "2024s1:122",
+   "2026s2:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "The domain of $f(x)=\\sqrt{-2x^2+7x-3}$ is",
+ "options": [
+  "$(-\\infty,\\dfrac{1}{2}]\\cup[3,\\infty)$",
+  "$[\\dfrac{1}{2},3]$",
+  "$(\\dfrac{1}{2},3)$",
+  "$[-\\dfrac{1}{2},3]$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Solve −2x²+7x−3 ≥ 0. Its roots are 1/2 and 3, and the quadratic is nonnegative between them, inclusive.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$-2x^2+7x-3=0$ has roots $x=\\dfrac{1}{2},3$.\\\\\nSince the quadratic opens downward, $-2x^2+7x-3\\ge 0$ between and including the roots.\\\\\nDomain: $[\\dfrac{1}{2},3]$.\n\nIndependent check: Solve −2x²+7x−3 ≥ 0. Its roots are 1/2 and 3, and the quadratic is nonnegative between them, inclusive.",
+ "solution": "For the square root to be defined, $-2x^2+7x-3\\ge 0$. Its roots are $\\frac12$ and $3$, and the quadratic opens downward.\n$$-2x^2+7x-3\\ge 0\\quad\\text{for }\\frac12\\le x\\le 3$$\nHence the domain is $[\\frac12,3]$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The domain of $f(x)=\\sqrt{-2x^2+7x-3}$ is",
+  "options": [
+   "$(-\\infty,\\dfrac{1}{2}]\\cup[3,\\infty)$",
+   "$[\\dfrac{1}{2},3]$",
+   "$(\\dfrac{1}{2},3)$",
+   "$[-\\dfrac{1}{2},3]$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$-2x^2+7x-3=0$ has roots $x=\\dfrac{1}{2},3$.\\\\\nSince the quadratic opens downward, $-2x^2+7x-3\\ge 0$ between and including the roots.\\\\\nDomain: $[\\dfrac{1}{2},3]$.",
+  "distractor_notes": "A: Reverses the sign interval. C: Excludes the roots, although the square root is defined there. D: Makes a sign error when finding the smaller root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

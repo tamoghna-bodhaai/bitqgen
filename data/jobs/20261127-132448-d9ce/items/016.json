@@ -1,0 +1,68 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Torque as cross product",
+  "archetype": "vector cross product",
+  "brief": "A force applied at a point on a rigid body with given r and F vectors; compute torque as cross product and identify the component tending to rotate about a specified axis.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:21",
+   "2024s2:7",
+   "2021:5"
+  ]
+ },
+ "status": "ok",
+ "stem": "A force $\u0002mathbf{F}=(1\u0002mathbf{i}+3\u0002mathbf{j}+2\u0002mathbf{k})$ N acts at position $\u0002mathbf{r}=(2\u0002mathbf{i}-\u0002mathbf{j}+\u0002mathbf{k})$ m relative to the origin. Find the signed component of torque along the positive direction $\u0002hat{\u0002mathbf{n}}=(\u0002mathbf{i}+2\u0002mathbf{j}+2\u0002mathbf{k})/3$.",
+ "options": [
+  "$-1$ N m",
+  "$1$ N m",
+  "$3$ N m",
+  "$7$ N m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\boldsymbol\\tau=\\mathbf r\\times\\mathbf F=(-5,-3,7)\\) N·m. Then \\(\\boldsymbol\\tau\\cdot\\hat{\\mathbf n}=(-5-6+14)/3=1\\) N·m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\boldsymbol{\\tau}=\\mathbf r\\times\\mathbf F=(-5\\mathbf i-3\\mathbf j+7\\mathbf k)\\ \\text{N m}$\n$\\tau_n=\\boldsymbol{\\tau}\\cdot(\\mathbf i+2\\mathbf j+2\\mathbf k)/3=(-5-6+14)/3=1\\ \\text{N m}$\n\nIndependent check: \\(\\boldsymbol\\tau=\\mathbf r\\times\\mathbf F=(-5,-3,7)\\) N·m. Then \\(\\boldsymbol\\tau\\cdot\\hat{\\mathbf n}=(-5-6+14)/3=1\\) N·m.",
+ "solution": "The torque is $$\\boldsymbol{\\tau}=\\mathbf r\\times\\mathbf F=(-5\\mathbf i-3\\mathbf j+7\\mathbf k)\\,\\text{N m}$.\n$$$\\tau_n=\\boldsymbol{\\tau}\\cdot\\hat{\\mathbf n}=\\frac{-5-6+14}{3}=1\\,\\text{N$ m}$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A force $\u0002mathbf{F}=(1\u0002mathbf{i}+3\u0002mathbf{j}+2\u0002mathbf{k})$ N acts at position $\u0002mathbf{r}=(2\u0002mathbf{i}-\u0002mathbf{j}+\u0002mathbf{k})$ m relative to the origin. Find the signed component of torque along the positive direction $\u0002hat{\u0002mathbf{n}}=(\u0002mathbf{i}+2\u0002mathbf{j}+2\u0002mathbf{k})/3$.",
+  "options": [
+   "$-1$ N m",
+   "$1$ N m",
+   "$3$ N m",
+   "$7$ N m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\boldsymbol{\\tau}=\\mathbf r\\times\\mathbf F=(-5\\mathbf i-3\\mathbf j+7\\mathbf k)\\ \\text{N m}$\n$\\tau_n=\\boldsymbol{\\tau}\\cdot(\\mathbf i+2\\mathbf j+2\\mathbf k)/3=(-5-6+14)/3=1\\ \\text{N m}$",
+  "distractor_notes": "A: Reverses the sign of the projection.\nC: Takes the dot product without normalising the axis vector.\nD: Uses only the $k$-component of torque."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

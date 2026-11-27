@@ -1,0 +1,68 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Bayes' theorem",
+  "archetype": "parameter recovery",
+  "brief": "Bayes' theorem word problem: given prior probabilities and conditional probabilities, find the posterior probability of a cause.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:106",
+   "2026s1:114",
+   "2026s2:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "Machines $A,B,C$ are used with probabilities $\\frac12,\\frac13,\\frac16$. Two checks are conditionally independent given the machine; their pass probabilities are $(\\frac12,\\frac12)$ for $A$, $(\\frac23,\\frac34)$ for $B$, and $(\\frac34,p)$ for $C$. If both checks pass with probability $\\frac{17}{48}$, find the probability the item came from $C$, given both checks passed.",
+ "options": [
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{3}{10}$",
+  "$\\dfrac{3}{14}$",
+  "$\\dfrac{3}{17}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By total probability, \\(\\frac18+\\frac16+\\frac p8=\\frac{17}{48}\\), so \\(p=\\frac12\\). Thus \\(P(C\\mid\\text{both pass})=\\frac{(1/6)(3/4)(1/2)}{17/48}=\\frac3{17}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\frac12\\cdot\\frac14+\\frac13\\cdot\\frac12+\\frac16\\cdot\\frac34p=\\frac{17}{48}\\quad\\Rightarrow\\quad p=\\frac12$$\n$$P(C\\mid\\text{both pass})=\\frac{\\frac16\\cdot\\frac34\\cdot\\frac12}{\\frac{17}{48}}=\\frac{3}{17}$$\n\nIndependent check: By total probability, \\(\\frac18+\\frac16+\\frac p8=\\frac{17}{48}\\), so \\(p=\\frac12\\). Thus \\(P(C\\mid\\text{both pass})=\\frac{(1/6)(3/4)(1/2)}{17/48}=\\frac3{17}\\).",
+ "solution": "By conditional independence and total probability,\n$$\\frac12\\cdot\\frac14+\\frac13\\cdot\\frac12+\\frac16\\cdot\\frac34p=\\frac{17}{48},\\qquad p=\\frac12.$$\nHence, by Bayes’ theorem,\n$$P(C\\mid\\text{both pass})=\\frac{(1/6)(3/4)(1/2)}{17/48}=\\frac{3}{17}.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Machines $A,B,C$ are used with probabilities $\\frac12,\\frac13,\\frac16$. Two checks are conditionally independent given the machine; their pass probabilities are $(\\frac12,\\frac12)$ for $A$, $(\\frac23,\\frac34)$ for $B$, and $(\\frac34,p)$ for $C$. If both checks pass with probability $\\frac{17}{48}$, find the probability the item came from $C$, given both checks passed.",
+  "options": [
+   "$\\dfrac{1}{8}$",
+   "$\\dfrac{3}{17}$",
+   "$\\dfrac{3}{14}$",
+   "$\\dfrac{3}{10}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$$\\frac12\\cdot\\frac14+\\frac13\\cdot\\frac12+\\frac16\\cdot\\frac34p=\\frac{17}{48}\\quad\\Rightarrow\\quad p=\\frac12$$\n$$P(C\\mid\\text{both pass})=\\frac{\\frac16\\cdot\\frac34\\cdot\\frac12}{\\frac{17}{48}}=\\frac{3}{17}$$",
+  "distractor_notes": "A: Uses only the first pass probability for $C$ and omits normalization.\nC: Normalizes by the evidence contribution from $A$ and $B$ alone.\nD: Assumes $p=1$ instead of recovering it from the given marginal probability."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

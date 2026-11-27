@@ -1,0 +1,68 @@
+{
+ "qno": 95,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 95,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Line through intersection of lines",
+  "archetype": "two-equation solve",
+  "brief": "Find the equation of a line through the intersection of two given lines and passing through another point (family of lines).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:114",
+   "2025s2:115",
+   "2025s1:115"
+  ]
+ },
+ "status": "ok",
+ "stem": "The equation of the line through the intersection of $x+2y-8=0$ and $3x-y-3=0$, and through $(5,0)$, is",
+ "options": [
+  "$x+y-5=0$",
+  "$2x-y-1=0$",
+  "$x-y+1=0$",
+  "$3x+y-9=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Solving the two equations gives intersection (2,3). The line through (2,3) and (5,0) is x+y-5=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "From $3x-y-3=0$, $y=3x-3$.\nSubstitution gives $x+2(3x-3)-8=0$, hence $(x,y)=(2,3)$.\nThrough $(2,3)$ and $(5,0)$, the slope is $-1$.\n$y-3=-(x-2)\\Rightarrow x+y-5=0$.\n\nIndependent check: Solving the two equations gives intersection (2,3). The line through (2,3) and (5,0) is x+y-5=0.",
+ "solution": "Solving the two lines gives their intersection $(2,3)$. The slope through $(2,3)$ and $(5,0)$ is $-1$, so\n$$y-3=-(x-2)\\quad\\Rightarrow\\quad x+y-5=0.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the line through the intersection of $x+2y-8=0$ and $3x-y-3=0$, and through $(5,0)$, is",
+  "options": [
+   "$x+y-5=0$",
+   "$2x-y-1=0$",
+   "$x-y+1=0$",
+   "$3x+y-9=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "From $3x-y-3=0$, $y=3x-3$.\nSubstitution gives $x+2(3x-3)-8=0$, hence $(x,y)=(2,3)$.\nThrough $(2,3)$ and $(5,0)$, the slope is $-1$.\n$y-3=-(x-2)\\Rightarrow x+y-5=0$.",
+  "distractor_notes": "B uses an incorrect slope through the intersection; C uses slope $1$; D uses slope $-3$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

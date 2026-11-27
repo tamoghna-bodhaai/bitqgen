@@ -1,0 +1,67 @@
+{
+ "qno": 85,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 85,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations (counting)",
+  "archetype": "family counting",
+  "brief": "Describe a small family with siblings and cousins; ask how many males/females or how many members of a particular relation exist.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:83",
+   "2025s1:72",
+   "2026s2:76"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two brothers, Amit and Sumit, each have two daughters and one son. How many first cousins does Amit's son have?",
+ "options": [
+  "1",
+  "2",
+  "3",
+  "5"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "First cousins of Amit's son are the children of his parent's sibling, i.e., Sumit's children: 2 daughters + 1 son = 3.",
+   "answer": "C",
+   "confidence": 0.9,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Amit and Sumit are brothers.\n- Amit has $3$ children: $2$ daughters and $1$ son.\n- Sumit has $3$ children: $2$ daughters and $1$ son.\n\nA first cousin of Amit's son is a child of his parent's sibling (i.e., of Sumit).\nSumit's children consist of $2$ daughters and $1$ son, making a total of $2 + 1 = 3$ children.\n\nAmit's $2$ daughters are the sisters (siblings) of Amit's son, not his cousins.\nTherefore, Amit's son has exactly $3$ first cousins.\n\nIndependent check: First cousins of Amit's son are the children of his parent's sibling, i.e., Sumit's children: 2 daughters + 1 son = 3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Two brothers, Amit and Sumit, each have two daughters and one son. How many first cousins does Amit's son have?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "5"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Amit and Sumit are brothers.\n- Amit has $3$ children: $2$ daughters and $1$ son.\n- Sumit has $3$ children: $2$ daughters and $1$ son.\n\nA first cousin of Amit's son is a child of his parent's sibling (i.e., of Sumit).\nSumit's children consist of $2$ daughters and $1$ son, making a total of $2 + 1 = 3$ children.\n\nAmit's $2$ daughters are the sisters (siblings) of Amit's son, not his cousins.\nTherefore, Amit's son has exactly $3$ first cousins.",
+  "distractor_notes": "Option A (1) assumes only the male child of Sumit counts as a cousin.\nOption B (2) considers only the female children of Sumit, or confuses the two sisters with cousins.\nOption D (5) incorrectly adds the two sisters to the three cousins, counting all other children in that generation.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

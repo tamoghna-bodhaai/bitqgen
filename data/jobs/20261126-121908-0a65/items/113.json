@@ -1,0 +1,67 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of subsets",
+  "archetype": "distinct elements count",
+  "brief": "Count the number of relations / subsets possible from a set with n elements (total, symmetric, etc.).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:129",
+   "2024s1:121",
+   "2025s2:108"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A$ be a set with $4$ elements. The number of relations on $A$ that are reflexive but not symmetric is",
+ "options": [
+  "$64$",
+  "$3072$",
+  "$4032$",
+  "$4096$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Reflexive relations fix all 4 diagonal pairs, leaving 12 free pairs: 2^12 = 4096. Reflexive and symmetric relations choose freely among the 6 unordered off-diagonal pairs: 2^6 = 64. Reflexive but not symmetric = 4096 − 64 = 4032.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $|A| = n = 4$. The Cartesian product $A \\times A$ contains $n^2 = 16$ ordered pairs, comprising $n = 4$ diagonal pairs $(x, x)$ and $\\dfrac{n(n-1)}{2} = 6$ non-diagonal pairs of the form $\\{(x, y), (y, x)\\}$ with $x \\ne y$.\n\n1. For a relation to be reflexive, all $4$ diagonal elements must belong to the relation. For each of the $6$ non-diagonal pairs, there are $4$ choices (neither, both, only $(x, y)$, or only $(y, x)$).\nTotal reflexive relations = $1^4 \\times 4^6 = 2^{12} = 4096$.\n\n2. For a reflexive relation to be symmetric, each non-diagonal pair must either have both elements included or neither included ($2$ choices per pair).\nTotal reflexive and symmetric relations = $1^4 \\times 2^6 = 64$.\n\n3. The number of relations that are reflexive but not symmetric is:\n$$N = 4096 - 64 = 4032$$\n\nIndependent check: Reflexive relations fix all 4 diagonal pairs, leaving 12 free pairs: 2^12 = 4096. Reflexive and symmetric relations choose freely among the 6 unordered off-diagonal pairs: 2^6 = 64. Reflexive but not symmetric = 4096 − 64 = 4032.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A$ be a set with $4$ elements. The number of relations on $A$ that are reflexive but not symmetric is",
+  "options": [
+   "$64$",
+   "$3072$",
+   "$4032$",
+   "$4096$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Let $|A| = n = 4$. The Cartesian product $A \\times A$ contains $n^2 = 16$ ordered pairs, comprising $n = 4$ diagonal pairs $(x, x)$ and $\\dfrac{n(n-1)}{2} = 6$ non-diagonal pairs of the form $\\{(x, y), (y, x)\\}$ with $x \\ne y$.\n\n1. For a relation to be reflexive, all $4$ diagonal elements must belong to the relation. For each of the $6$ non-diagonal pairs, there are $4$ choices (neither, both, only $(x, y)$, or only $(y, x)$).\nTotal reflexive relations = $1^4 \\times 4^6 = 2^{12} = 4096$.\n\n2. For a reflexive relation to be symmetric, each non-diagonal pair must either have both elements included or neither included ($2$ choices per pair).\nTotal reflexive and symmetric relations = $1^4 \\times 2^6 = 64$.\n\n3. The number of relations that are reflexive but not symmetric is:\n$$N = 4096 - 64 = 4032$$",
+  "distractor_notes": "A: Counts only the relations that are both reflexive and symmetric ($2^{n(n-1)/2} = 64$).\nB: Computes $|R_{\\text{refl}}| - |R_{\\text{sym}}| = 2^{12} - 2^{10} = 4096 - 1024 = 3072$, incorrectly assuming all symmetric relations are reflexive.\nD: Total number of reflexive relations ($2^{12} = 4096$), forgetting to exclude symmetric ones.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

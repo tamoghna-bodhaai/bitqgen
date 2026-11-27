@@ -1,0 +1,68 @@
+{
+ "qno": 86,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 86,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Letter series",
+  "archetype": "missing letters in repeating pattern",
+  "brief": "Repeating block of letters (e.g., a cycle of 4-5 letters with gaps); fill the blank positions in the sequence.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:89",
+   "2026s2:87",
+   "2026s1:75"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which set of letters, inserted in order at the blanks, completes the repeating letter series?\n\nm _ o m n _ m _ o m _ o m n _",
+ "options": [
+  "nonn o",
+  "onno n",
+  "n o n o n",
+  "n o n n o"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The series repeats m, n, o. The blanks are n, o, n, n, o, matching option D.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The repeating block is **mno**: the series reads mno | mno | mno | mno | mno.\nThe blanks are therefore n, o, n, n, o, giving option D.\n\nIndependent check: The series repeats m, n, o. The blanks are n, o, n, n, o, matching option D.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which set of letters, inserted in order at the blanks, completes the repeating letter series?\n\nm _ o m n _ m _ o m _ o m n _",
+  "options": [
+   "nonn o",
+   "onno n",
+   "n o n o n",
+   "n o n n o"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "The repeating block is **mno**: the series reads mno | mno | mno | mno | mno.\nThe blanks are therefore n, o, n, n, o, giving option D.",
+  "distractor_notes": "A: changes the second and final missing letters. B: does not match the block at the first blank. C: places o at the fourth blank instead of n."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

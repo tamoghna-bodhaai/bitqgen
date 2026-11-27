@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Trig simplification",
+  "archetype": "simplify then integrate",
+  "brief": "Simplify a trigonometric integrand using identities (e.g. half-angle) and then integrate.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:130",
+   "2024s1:93",
+   "2026s2:126"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int \\frac{1-\\cos x}{\\sin x}\\,dx$.",
+ "options": [
+  "$-2\\ln\\left|\\cos\\dfrac{x}{2}\\right|+C$",
+  "$2\\ln\\left|\\cos\\dfrac{x}{2}\\right|+C$",
+  "$-\\ln|\\cos x|+C$",
+  "$2\\ln\\left|\\sin\\dfrac{x}{2}\\right|+C$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\frac{1-\\cos x}{\\sin x}=\\tan\\frac{x}{2}\\), and \\(\\int\\tan\\frac{x}{2}\\,dx=-2\\ln\\left|\\cos\\frac{x}{2}\\right|+C\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{1-\\cos x}{\\sin x}=\\tan\\dfrac{x}{2}$\n$\\displaystyle\\int\\tan\\dfrac{x}{2}\\,dx=-2\\ln\\left|\\cos\\dfrac{x}{2}\\right|+C$\n\nIndependent check: \\(\\frac{1-\\cos x}{\\sin x}=\\tan\\frac{x}{2}\\), and \\(\\int\\tan\\frac{x}{2}\\,dx=-2\\ln\\left|\\cos\\frac{x}{2}\\right|+C\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int \\frac{1-\\cos x}{\\sin x}\\,dx$.",
+  "options": [
+   "$-2\\ln\\left|\\cos\\dfrac{x}{2}\\right|+C$",
+   "$2\\ln\\left|\\cos\\dfrac{x}{2}\\right|+C$",
+   "$-\\ln|\\cos x|+C$",
+   "$2\\ln\\left|\\sin\\dfrac{x}{2}\\right|+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{1-\\cos x}{\\sin x}=\\tan\\dfrac{x}{2}$\n$\\displaystyle\\int\\tan\\dfrac{x}{2}\\,dx=-2\\ln\\left|\\cos\\dfrac{x}{2}\\right|+C$",
+  "distractor_notes": "B: Sign error in integrating the tangent.\nC: Uses the wrong half-angle factor.\nD: Uses the complementary half-angle logarithm."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

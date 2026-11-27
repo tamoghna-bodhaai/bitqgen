@@ -1,0 +1,68 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Dimensional analysis",
+  "archetype": "dimension computation",
+  "brief": "Dimensional analysis: given a physics equation involving a new/defined quantity (e.g. coefficient of viscosity, Planck-like constant), find the dimensional formula of the unknown constant by dimensional homogeneity of all terms.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:2",
+   "2024s2:25",
+   "2023s2:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A model for energy $E$ is written as $E=\\eta v r^2+K\\dfrac{\\eta^2}{\\rho}$, where $\\eta$ is dynamic viscosity, $v$ is speed, $r$ is length and $\\rho$ is mass density. What is the dimensional formula of $K$?",
+ "options": [
+  "$[\\text{M}\\text{L}]$",
+  "$[\\text{L}^2]$",
+  "$[\\text{L}]$",
+  "$[\\text{T}]$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since [η]=[M L⁻¹ T⁻¹] and [ρ]=[M L⁻³], [η²/ρ]=[M L T⁻²]. Thus [K]=[E]/[η²/ρ]=[L].",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\\eta]=[\\text{M}\\text{L}^{-1}\\text{T}^{-1}]$, $[v]=[\\text{L}\\text{T}^{-1}]$, $[r]=[\\text{L}]$. \n$[\\eta v r^2]=[\\text{M}\\text{L}^2\\text{T}^{-2}]=[E]$. \n$[\\eta^2/\\rho]=[\\text{M}\\text{L}\\text{T}^{-2}]$, hence $[K]=[E]/[\\eta^2/\\rho]=[\\text{L}]$.\n\nIndependent check: Since [η]=[M L⁻¹ T⁻¹] and [ρ]=[M L⁻³], [η²/ρ]=[M L T⁻²]. Thus [K]=[E]/[η²/ρ]=[L].",
+ "solution": "Since $[E]=[\\text{M}\\text{L}^2\\text{T}^{-2}]$ and $[\\eta]=[\\text{M}\\text{L}^{-1}\\text{T}^{-1}]$, $[\\rho]=[\\text{M}\\text{L}^{-3}]$,\n$$[K]=\\frac{[E]}{[\\eta]^2/[\\rho]}=\\frac{[\\text{M}\\text{L}^2\\text{T}^{-2}]}{[\\text{M}\\text{L}\\text{T}^{-2}]}=[\\text{L}].$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A model for energy $E$ is written as $E=\\eta v r^2+K\\dfrac{\\eta^2}{\\rho}$, where $\\eta$ is dynamic viscosity, $v$ is speed, $r$ is length and $\\rho$ is mass density. What is the dimensional formula of $K$?",
+  "options": [
+   "$[\\text{L}]$",
+   "$[\\text{L}^2]$",
+   "$[\\text{M}\\text{L}]$",
+   "$[\\text{T}]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$[\\eta]=[\\text{M}\\text{L}^{-1}\\text{T}^{-1}]$, $[v]=[\\text{L}\\text{T}^{-1}]$, $[r]=[\\text{L}]$. \n$[\\eta v r^2]=[\\text{M}\\text{L}^2\\text{T}^{-2}]=[E]$. \n$[\\eta^2/\\rho]=[\\text{M}\\text{L}\\text{T}^{-2}]$, hence $[K]=[E]/[\\eta^2/\\rho]=[\\text{L}]$.",
+  "distractor_notes": "B: loses one factor of length when matching the energy dimensions.\nC: fails to divide by the density dimensions correctly.\nD: confuses the time dimension in viscosity with the dimension required for $K$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

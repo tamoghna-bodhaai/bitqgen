@@ -1,0 +1,68 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Magnetic field due to finite wire / polygon loop",
+  "archetype": "superposition numerical",
+  "brief": "A square loop or regular polygon wire carrying current is placed near a finite straight wire; ask for the net magnetic field at the centre using superposition.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:8",
+   "2023s1:9",
+   "2026s1:2"
+  ]
+ },
+ "status": "ok",
+ "stem": "An equilateral triangular loop of side $1$ m carries a current of $5$ A. A straight wire of length $1$ m carrying a current of $5$ A is placed exactly along one side of the triangle, parallel to it, with current in the same direction as that side. The net magnetic field at the centroid of the triangle is (Take $\\mu_0 = 4\\pi \\times 10^{-7}$ T m A$^{-1}$).",
+ "options": [
+  "$3\\ \\mu$T",
+  "$6\\ \\mu$T",
+  "$9\\ \\mu$T",
+  "$12\\ \\mu$T"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For each side, the centroid is at distance d=√3/6 m. The finite-wire formula gives B=μ₀I/(4πd)(sin60°+sin60°)=3 μT. The triangle’s three side fields add to 9 μT; the extra wire carries current in the same direction as the overlapping side, adding another 3 μT. Total = 12 μT.",
+   "answer": "D",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Distance from centroid to each side $d = a/(2\\sqrt{3}) = 1/(2\\sqrt{3})$ m.\nFor one side of triangle, $\\sin\\alpha = \\frac{a/2}{\\sqrt{d^2+(a/2)^2}} = \\frac{1/2}{1/\\sqrt{3}} = \\frac{\\sqrt{3}}{2}$, so $B_\\text{side} = \\frac{\\mu_0 I}{4\\pi d}(\\sin\\alpha+\\sin\\alpha) = \\frac{3\\mu_0 I}{2\\pi a} = 3\\ \\mu$T.\nTriangle loop has 3 sides: $B_\\text{loop} = 9\\ \\mu$T.\nStraight wire along side gives identical contribution: $B_\\text{wire} = 3\\ \\mu$T.\nNet field $B = 9+3 = 12\\ \\mu$T.\n\nIndependent check: For each side, the centroid is at distance d=√3/6 m. The finite-wire formula gives B=μ₀I/(4πd)(sin60°+sin60°)=3 μT. The triangle’s three side fields add to 9 μT; the extra wire carries current in the same direction as the overlapping side, adding another 3 μT. Total = 12 μT.",
+ "solution": "The perpendicular distance from the centroid to each side is $d=\\frac{a}{2\\sqrt3}$. For a finite straight wire, $B=\\frac{\\mu_0 I}{4\\pi d}(\\sin60^\\circ+\\sin60^\\circ)=3\\,\\mu\\text{T}$. Thus the triangular loop produces $3\\times3=9\\,\\mu\\text{T}$, and the additional wire contributes $3\\,\\mu\\text{T}$ in the same direction. $$B_{\\text{net}}=9+3=12\\,\\mu\\text{T}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An equilateral triangular loop of side $1$ m carries a current of $5$ A. A straight wire of length $1$ m carrying a current of $5$ A is placed exactly along one side of the triangle, parallel to it, with current in the same direction as that side. The net magnetic field at the centroid of the triangle is (Take $\\mu_0 = 4\\pi \\times 10^{-7}$ T m A$^{-1}$).",
+  "options": [
+   "$3\\ \\mu$T",
+   "$6\\ \\mu$T",
+   "$9\\ \\mu$T",
+   "$12\\ \\mu$T"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Distance from centroid to each side $d = a/(2\\sqrt{3}) = 1/(2\\sqrt{3})$ m.\nFor one side of triangle, $\\sin\\alpha = \\frac{a/2}{\\sqrt{d^2+(a/2)^2}} = \\frac{1/2}{1/\\sqrt{3}} = \\frac{\\sqrt{3}}{2}$, so $B_\\text{side} = \\frac{\\mu_0 I}{4\\pi d}(\\sin\\alpha+\\sin\\alpha) = \\frac{3\\mu_0 I}{2\\pi a} = 3\\ \\mu$T.\nTriangle loop has 3 sides: $B_\\text{loop} = 9\\ \\mu$T.\nStraight wire along side gives identical contribution: $B_\\text{wire} = 3\\ \\mu$T.\nNet field $B = 9+3 = 12\\ \\mu$T.",
+  "distractor_notes": "9 µT comes from the triangular loop alone; 3 µT is the field of the straight wire alone; 6 µT arises from forgetting to add the straight wire's contribution or from using incorrect superposition."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,76 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Tests for carbonyls",
+  "archetype": "multi-select via codes",
+  "brief": "Given a di- or trisubstituted carbonyl compound (figure with structure), ask for all correct tests/reactions it will show — codes like (i) Tollens positive, (ii) Cannizzaro positive, (iii) iodoform positive, etc.",
+  "difficulty": 5,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:34",
+   "2022:38",
+   "2022:36"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the compound shown in the figure. Which of the following statements are correct?\n(i) It gives a positive Tollens test.\n(ii) It undergoes Cannizzaro reaction.\n(iii) It gives a positive iodoform test.\n(iv) It forms an oxime with hydroxylamine.",
+ "options": [
+  "(i), (ii), (iii) and (iv)",
+  "(i), (iii) and (iv)",
+  "(ii) and (iii) only",
+  "(i) and (ii) only"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q065_stem_v2.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The structure is CH₃COCHO (methylglyoxal). Its aldehyde group gives Tollens’ test and, having no α-hydrogen, undergoes Cannizzaro reaction. The CH₃CO– group gives the iodoform test, and its carbonyl groups form oximes with hydroxylamine. Thus all four statements are correct.",
+   "answer": "D",
+   "confidence": 0.94,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "(i) Tollens: aldehyde reduces Ag⁺ → positive. (ii) Cannizzaro: aldehyde has no α‑H (adjacent C is carbonyl, no H) → positive. (iii) Iodoform: CH₃CO– (methyl ketone) → positive. (iv) Oxime: both carbonyls react with NH₂OH → positive. Hence all four are correct.\n\nIndependent check: The structure is CH₃COCHO (methylglyoxal). Its aldehyde group gives Tollens’ test and, having no α-hydrogen, undergoes Cannizzaro reaction. The CH₃CO– group gives the iodoform test, and its carbonyl groups form oximes with hydroxylamine. Thus all four statements are correct.",
+ "solution": "For methylglyoxal, $\\text{CH}_3\\text{COCHO$, the aldehyde group gives Tollens’ test and, with no $\u0003alpha$-hydrogen, undergoes Cannizzaro reaction.\nThe $\\text{CH}_3\\text{CO}-$ group gives the iodoform test, and both carbonyl groups react with $\\text{NH}_2\\text{OH}$ to form oximes.\nHence all four statements are correct.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Consider the compound shown in the figure. Which of the following statements are correct?\n(i) It gives a positive Tollens test.\n(ii) It undergoes Cannizzaro reaction.\n(iii) It gives a positive iodoform test.\n(iv) It forms an oxime with hydroxylamine.",
+  "options": [
+   "(i) and (ii) only",
+   "(i), (iii) and (iv)",
+   "(ii) and (iii) only",
+   "(i), (ii), (iii) and (iv)"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": {
+   "kind": "chem",
+   "description": "Skeletal structure of pyruvaldehyde: CH3–C(=O)–CHO. The molecule has a methyl group bonded to a carbonyl carbon (C=O), which in turn is bonded to an aldehyde group (CHO). No hydrogen atoms are shown on carbon atoms bonded to oxygen.",
+   "smiles": "CC(=O)C=O"
+  },
+  "difficulty_estimate": 5,
+  "working": "(i) Tollens: aldehyde reduces Ag⁺ → positive. (ii) Cannizzaro: aldehyde has no α‑H (adjacent C is carbonyl, no H) → positive. (iii) Iodoform: CH₃CO– (methyl ketone) → positive. (iv) Oxime: both carbonyls react with NH₂OH → positive. Hence all four are correct.",
+  "distractor_notes": "Options (A) and (C) miss key tests; (B) incorrectly omits Cannizzaro because some students may think the aldehyde has an α‑hydrogen due to the adjacent methyl group, not realizing the α‑carbon is the carbonyl C with no H."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

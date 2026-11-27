@@ -1,0 +1,68 @@
+{
+ "qno": 40,
+ "section": "Physics",
+ "slot": {
+  "qno": 40,
+  "section": "Physics",
+  "chapter": "Capacitance",
+  "subtopic": "Charge sharing energy loss",
+  "archetype": "energy conservation",
+  "brief": "A capacitor charged to a given voltage is connected to an identical uncharged capacitor; find final common voltage and fraction of energy lost as heat in the connecting wires.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:18",
+   "2023s1:7",
+   "2022:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "A capacitor initially charged to voltage $V$ is connected to an identical uncharged capacitor. What are the final common voltage and the fraction of the initial energy lost as heat in the connecting wires?",
+ "options": [
+  "$V,\\ \\dfrac{1}{2}$",
+  "$\\dfrac{V}{2},\\ \\dfrac{1}{4}$",
+  "$\\dfrac{V}{2},\\ \\dfrac{1}{2}$",
+  "$2V,\\ 0$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Charge conservation gives CV=2CV_f, hence V_f=V/2. Initial energy is CV²/2; final energy is CV²/4, so the fraction lost is 1/2.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Charge conservation: $CV=2CV_f\\Rightarrow V_f=V/2$\n$U_i=\\dfrac12CV^2$; $U_f=\\dfrac12(2C)(V/2)^2=U_i/2$\nFraction lost $=(U_i-U_f)/U_i=1/2$\n\nIndependent check: Charge conservation gives CV=2CV_f, hence V_f=V/2. Initial energy is CV²/2; final energy is CV²/4, so the fraction lost is 1/2.",
+ "solution": "By charge conservation, $CV=2CV_f$, so $$V_f=\\frac{V}{2}.$$ The initial energy is $U_i=\\frac12CV^2$, while the final energy is $U_f=\\frac12(2C)(V/2)^2=U_i/2$. Hence the fraction lost as heat is $\\dfrac{U_i-U_f}{U_i}=\\dfrac12$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A capacitor initially charged to voltage $V$ is connected to an identical uncharged capacitor. What are the final common voltage and the fraction of the initial energy lost as heat in the connecting wires?",
+  "options": [
+   "$\\dfrac{V}{2},\\ \\dfrac{1}{2}$",
+   "$\\dfrac{V}{2},\\ \\dfrac{1}{4}$",
+   "$V,\\ \\dfrac{1}{2}$",
+   "$2V,\\ 0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Charge conservation: $CV=2CV_f\\Rightarrow V_f=V/2$\n$U_i=\\dfrac12CV^2$; $U_f=\\dfrac12(2C)(V/2)^2=U_i/2$\nFraction lost $=(U_i-U_f)/U_i=1/2$",
+  "distractor_notes": "B: Confuses the final energy ratio with the fraction of energy lost.\nC: Assumes the voltage remains unchanged after charge sharing.\nD: Adds capacitor voltages instead of conserving charge."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "single-formula numerical",
+  "brief": "Binomial distribution: find the probability of exactly/at least r successes, or recover the parameters given two probabilities.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:107",
+   "2022:128",
+   "2026s1:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "A binomial random variable $X$ satisfies $P(X=0)=\\dfrac{1}{16}$ and $P(X=1)=\\dfrac{1}{4}$. Find $P(X\\ge 2)$.",
+ "options": [
+  "$\\dfrac{11}{16}$",
+  "$\\dfrac{5}{16}$",
+  "$\\dfrac{3}{8}$",
+  "$\\dfrac{15}{16}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "P(X\\ge 2)=1-P(X=0)-P(X=1)=1-\\frac{1}{16}-\\frac{1}{4}=\\frac{11}{16}.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{P(X=1)}{P(X=0)}=\\dfrac{np}{1-p}=4$, and $(1-p)^n=\\dfrac{1}{16}$.\nThus $p=\\dfrac{4}{n+4}$ and $\\left(\\dfrac{n}{n+4}\\right)^n=\\dfrac{1}{16}$, giving $n=4$, $p=\\dfrac{1}{2}$.\n$P(X\\ge2)=1-P(X=0)-P(X=1)=1-\\dfrac{1}{16}-\\dfrac{1}{4}=\\dfrac{11}{16}$.\n\nIndependent check: P(X\\ge 2)=1-P(X=0)-P(X=1)=1-\\frac{1}{16}-\\frac{1}{4}=\\frac{11}{16}.",
+ "solution": "Since $X$ is integer-valued, $P(X\\ge2)=1-P(X=0)-P(X=1)$. Thus\n$$P(X\\ge2)=1-\\frac{1}{16}-\\frac{1}{4}=\\boxed{\\frac{11}{16}}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A binomial random variable $X$ satisfies $P(X=0)=\\dfrac{1}{16}$ and $P(X=1)=\\dfrac{1}{4}$. Find $P(X\\ge 2)$.",
+  "options": [
+   "$\\dfrac{3}{8}$",
+   "$\\dfrac{5}{16}$",
+   "$\\dfrac{11}{16}$",
+   "$\\dfrac{15}{16}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{P(X=1)}{P(X=0)}=\\dfrac{np}{1-p}=4$, and $(1-p)^n=\\dfrac{1}{16}$.\nThus $p=\\dfrac{4}{n+4}$ and $\\left(\\dfrac{n}{n+4}\\right)^n=\\dfrac{1}{16}$, giving $n=4$, $p=\\dfrac{1}{2}$.\n$P(X\\ge2)=1-P(X=0)-P(X=1)=1-\\dfrac{1}{16}-\\dfrac{1}{4}=\\dfrac{11}{16}$.",
+  "distractor_notes": "A: Gives the probability of exactly two successes.\nB: Gives the probability of more than two successes.\nD: Gives the probability of at least one success."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 71,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 71,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Diazonium salt reactions",
+  "archetype": "reagent sequence",
+  "brief": "Given a 3-step conversion from benzene to a substituted amine (e.g. nitration → reduction → diazotisation → substitution), ask which reagent sequence achieves it — 4 multi-reagent options.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:57",
+   "2025s2:50",
+   "2023s2:39"
+  ]
+ },
+ "status": "ok",
+ "stem": "The correct sequential order of the reagents for the conversion of benzene to 4-aminoazobenzene is:",
+ "options": [
+  "(i) HNO₃/H₂SO₄, (ii) Fe/HCl, (iii) NaNO₂/HCl then aniline/H⁺",
+  "(i) Fe/HCl, (ii) HNO₃/H₂SO₄, (iii) NaNO₂/HCl then aniline/H⁺",
+  "(i) HNO₃/H₂SO₄, (ii) NaNO₂/HCl, (iii) Fe/HCl then aniline/H⁺",
+  "(i) HNO₃/H₂SO₄, (ii) Fe/HCl, (iii) aniline/H⁺ then NaNO₂/HCl"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Nitrate benzene to nitrobenzene, reduce it to aniline, then diazotize and couple with aniline to form 4-aminoazobenzene.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Step 1: Nitration of benzene gives nitrobenzene. Step 2: Reduction of nitrobenzene yields aniline. Step 3: Aniline is diazotised with NaNO₂/HCl and then coupled with aniline in acidic medium to form 4-aminoazobenzene. The sequence in (A) follows this order; all other sequences either use reagents on wrong substrates (B, C) or reverse the coupling and diazotisation steps (D).\n\nIndependent check: Nitrate benzene to nitrobenzene, reduce it to aniline, then diazotize and couple with aniline to form 4-aminoazobenzene.",
+ "solution": "Nitration gives nitrobenzene, which is reduced to aniline:\n$$\\mathrm{C_6H_6 \\xrightarrow{HNO_3/H_2SO_4} C_6H_5NO_2 \\xrightarrow{Fe/HCl} C_6H_5NH_2}$$\nDiazotisation followed by coupling with aniline forms 4-aminoazobenzene; hence the sequence is (A).",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "The correct sequential order of the reagents for the conversion of benzene to 4-aminoazobenzene is:",
+  "options": [
+   "(i) HNO₃/H₂SO₄, (ii) Fe/HCl, (iii) NaNO₂/HCl then aniline/H⁺",
+   "(i) Fe/HCl, (ii) HNO₃/H₂SO₄, (iii) NaNO₂/HCl then aniline/H⁺",
+   "(i) HNO₃/H₂SO₄, (ii) NaNO₂/HCl, (iii) Fe/HCl then aniline/H⁺",
+   "(i) HNO₃/H₂SO₄, (ii) Fe/HCl, (iii) aniline/H⁺ then NaNO₂/HCl"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Step 1: Nitration of benzene gives nitrobenzene. Step 2: Reduction of nitrobenzene yields aniline. Step 3: Aniline is diazotised with NaNO₂/HCl and then coupled with aniline in acidic medium to form 4-aminoazobenzene. The sequence in (A) follows this order; all other sequences either use reagents on wrong substrates (B, C) or reverse the coupling and diazotisation steps (D).",
+  "distractor_notes": "B: Fe/HCl does not reduce benzene. C: Diazotisation of nitrobenzene is not possible. D: Coupling before diazotisation gives no azo compound."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

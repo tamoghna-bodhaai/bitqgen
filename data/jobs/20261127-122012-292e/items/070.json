@@ -1,0 +1,78 @@
+{
+ "qno": 70,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 70,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Leaving group ability",
+  "archetype": "odd-one-out reagent",
+  "brief": "Four reagents listed for a given substrate transformation — three accomplish it, one does not; identify the odd one out.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:40",
+   "2026s2:32",
+   "2021:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following 1-halopropanes reacts slowest with NaI in dry acetone via an SN2 mechanism?",
+ "options": [
+  "1-Bromopropane",
+  "1-Chloropropane",
+  "1-Fluoropropane",
+  "1-Iodopropane"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": [
+  "figs/q070_optA_v1.png",
+  "figs/q070_optB_v1.png",
+  "figs/q070_optD_v1.png",
+  "figs/q070_optC_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For SN2 reactions of primary alkyl halides, the rate increases with leaving-group ability: I⁻ > Br⁻ > Cl⁻ > F⁻. Thus 1-fluoropropane reacts slowest.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "In SN2 reactions, the rate depends on the leaving group ability. Good leaving groups are weak bases. Leaving group ability order: I⁻ > Br⁻ > Cl⁻ > F⁻. Fluoride is the poorest leaving group due to strong C–F bond and high basicity. Hence 1-fluoropropane undergoes SN2 slowest.\n\nIndependent check: For SN2 reactions of primary alkyl halides, the rate increases with leaving-group ability: I⁻ > Br⁻ > Cl⁻ > F⁻. Thus 1-fluoropropane reacts slowest.",
+ "solution": "In an $S_N2$ reaction, rate increases with leaving-group ability: $I^- > Br^- > Cl^- > F^-$. The C–F bond is strong, making $F^-$ the poorest leaving group; hence 1-fluoropropane reacts slowest.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following 1-halopropanes reacts slowest with NaI in dry acetone via an SN2 mechanism?",
+  "options": [
+   "1-Bromopropane",
+   "1-Chloropropane",
+   "1-Iodopropane",
+   "1-Fluoropropane"
+  ],
+  "option_smiles": [
+   "CCCBr",
+   "CCCCl",
+   "CCCI",
+   "CCCF"
+  ],
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "In SN2 reactions, the rate depends on the leaving group ability. Good leaving groups are weak bases. Leaving group ability order: I⁻ > Br⁻ > Cl⁻ > F⁻. Fluoride is the poorest leaving group due to strong C–F bond and high basicity. Hence 1-fluoropropane undergoes SN2 slowest.",
+  "distractor_notes": "Option A: Br is a better leaving group; student may confuse leaving group ability or inversion of order. Option B: Cl is better than F so faster; common mistake is thinking size trend is irrelevant. Option C: I is the best leaving group; student might misapply electronegativity to think F is better."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

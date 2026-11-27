@@ -1,0 +1,67 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Banking of roads",
+  "archetype": "single-formula",
+  "brief": "A car negotiates a banked curve with friction; find the range of safe speeds or maximum speed using tanθ-based formula.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:26",
+   "2023s1:27",
+   "2026s2:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "A car negotiates a circular turn of radius $10\\ \\text{m}$ on a road banked at an angle of $45^\\circ$. If the coefficient of static friction between the tyres and the road is $0.6$, the maximum safe speed of the car to avoid skidding outward is (take $g = 10\\ \\text{m s}^{-2}$):",
+ "options": [
+  "$5\\ \\text{m s}^{-1}$",
+  "$10\\ \\text{m s}^{-1}$",
+  "$15\\ \\text{m s}^{-1}$",
+  "$20\\ \\text{m s}^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "For maximum speed on a banked road with friction acting down the incline: v_max = sqrt(rg(tanθ+μ)/(1−μtanθ)) = sqrt(10·10·(1+0.6)/(1−0.6)) = sqrt(400) = 20 m/s.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The maximum safe speed $v_{\\max}$ on a banked road with friction is given by the formula:\n$$v_{\\max} = \\sqrt{R g \\left(\\dfrac{\\tan\\theta + \\mu}{1 - \\mu \\tan\\theta}\\right)}$$\n\nGiven data:\n- $R = 10\\ \\text{m}$\n- $g = 10\\ \\text{m s}^{-2}$\n- $\\theta = 45^\\circ \\implies \\tan 45^\\circ = 1$\n- $\\mu = 0.6$\n\nSubstitute the values into the formula:\n$$\\dfrac{\\tan\\theta + \\mu}{1 - \\mu \\tan\\theta} = \\dfrac{1 + 0.6}{1 - 0.6 \\times 1} = \\dfrac{1.6}{0.4} = 4$$\n\n$$v_{\\max} = \\sqrt{10 \\times 10 \\times 4} = \\sqrt{400} = 20\\ \\text{m s}^{-1}$$\n\nIndependent check: For maximum speed on a banked road with friction acting down the incline: v_max = sqrt(rg(tanθ+μ)/(1−μtanθ)) = sqrt(10·10·(1+0.6)/(1−0.6)) = sqrt(400) = 20 m/s.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A car negotiates a circular turn of radius $10\\ \\text{m}$ on a road banked at an angle of $45^\\circ$. If the coefficient of static friction between the tyres and the road is $0.6$, the maximum safe speed of the car to avoid skidding outward is (take $g = 10\\ \\text{m s}^{-2}$):",
+  "options": [
+   "$5\\ \\text{m s}^{-1}$",
+   "$10\\ \\text{m s}^{-1}$",
+   "$15\\ \\text{m s}^{-1}$",
+   "$20\\ \\text{m s}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "working": "The maximum safe speed $v_{\\max}$ on a banked road with friction is given by the formula:\n$$v_{\\max} = \\sqrt{R g \\left(\\dfrac{\\tan\\theta + \\mu}{1 - \\mu \\tan\\theta}\\right)}$$\n\nGiven data:\n- $R = 10\\ \\text{m}$\n- $g = 10\\ \\text{m s}^{-2}$\n- $\\theta = 45^\\circ \\implies \\tan 45^\\circ = 1$\n- $\\mu = 0.6$\n\nSubstitute the values into the formula:\n$$\\dfrac{\\tan\\theta + \\mu}{1 - \\mu \\tan\\theta} = \\dfrac{1 + 0.6}{1 - 0.6 \\times 1} = \\dfrac{1.6}{0.4} = 4$$\n\n$$v_{\\max} = \\sqrt{10 \\times 10 \\times 4} = \\sqrt{400} = 20\\ \\text{m s}^{-1}$$",
+  "distractor_notes": "$5\\ \\text{m s}^{-1}$: Minimum safe speed below which the car slides down the bank, $v_{\\min} = \\sqrt{Rg\\frac{\\tan\\theta - \\mu}{1 + \\mu\\tan\\theta}} = \\sqrt{100 \\times 0.25} = 5\\ \\text{m s}^{-1}$.\n$10\\ \\text{m s}^{-1}$: Optimum banking speed ignoring friction, $v_0 = \\sqrt{Rg\\tan\\theta} = \\sqrt{100 \\times 1} = 10\\ \\text{m s}^{-1}$.\n$15\\ \\text{m s}^{-1}$: Arithmetic mean of the minimum and maximum safe speeds, $\\frac{v_{\\min} + v_{\\max}}{2} = \\frac{5 + 20}{2} = 12.5 \\approx 15$, or $(v_0 + v_{\\max})/2 = 15\\ \\text{m s}^{-1}$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 79,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 79,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Group 15 hydrides",
+  "archetype": "statement evaluation",
+  "brief": "Four statements about NH3 vs other group-15 hydrides (boiling point anomaly, bond angle trend, thermal stability down the group, reducing character) — pick the incorrect one.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:76",
+   "2026s1:38",
+   "2024s2:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the following statements regarding Group 15 hydrides (NH$_3$, PH$_3$, AsH$_3$, SbH$_3$, BiH$_3$). Identify the incorrect statement.",
+ "options": [
+  "NH$_3$ has an exceptionally high boiling point compared to other Group 15 hydrides due to strong intermolecular hydrogen bonds.",
+  "The H–M–H bond angle decreases from NH$_3$ to SbH$_3$ because the bonding orbitals acquire increased p-character as the central atom becomes less electronegative.",
+  "The reducing character of the hydrides increases down the group, with BiH$_3$ being the strongest reducing agent.",
+  "Thermal stability of the hydrides increases from NH$_3$ to BiH$_3$ because M–H bond dissociation enthalpy increases down the group."
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "M–H bond strength decreases down Group 15, so hydride thermal stability decreases—not increases. Thus (C) is incorrect; the other statements are correct.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Thermal stability of Group 15 hydrides decreases from NH$_3$ to BiH$_3$ because the M–H bond strength decreases (bond dissociation enthalpy decreases). Hence statement (C) is incorrect. (A) is correct: NH$_3$ has strong H-bonds leading to a high boiling point. (B) is correct: bond angle decreases due to increased p-character of bonding orbitals (Drago's rule). (D) is correct: reducing character increases down the group.\n\nIndependent check: M–H bond strength decreases down Group 15, so hydride thermal stability decreases—not increases. Thus (C) is incorrect; the other statements are correct.",
+ "solution": "Thermal stability depends on the M–H bond strength. Down Group 15, M–H bond dissociation enthalpy decreases, so hydride thermal stability decreases from NH$_3$ to BiH$_3$; hence statement (D) is incorrect.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Consider the following statements regarding Group 15 hydrides (NH$_3$, PH$_3$, AsH$_3$, SbH$_3$, BiH$_3$). Identify the incorrect statement.",
+  "options": [
+   "NH$_3$ has an exceptionally high boiling point compared to other Group 15 hydrides due to strong intermolecular hydrogen bonds.",
+   "The H–M–H bond angle decreases from NH$_3$ to SbH$_3$ because the bonding orbitals acquire increased p-character as the central atom becomes less electronegative.",
+   "Thermal stability of the hydrides increases from NH$_3$ to BiH$_3$ because M–H bond dissociation enthalpy increases down the group.",
+   "The reducing character of the hydrides increases down the group, with BiH$_3$ being the strongest reducing agent."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Thermal stability of Group 15 hydrides decreases from NH$_3$ to BiH$_3$ because the M–H bond strength decreases (bond dissociation enthalpy decreases). Hence statement (C) is incorrect. (A) is correct: NH$_3$ has strong H-bonds leading to a high boiling point. (B) is correct: bond angle decreases due to increased p-character of bonding orbitals (Drago's rule). (D) is correct: reducing character increases down the group.",
+  "distractor_notes": "(A) is true; NH3 hydrogen bonding causes boiling point anomaly. (B) is true; bond angle decreases down the group due to increasing p-character (Drago's rule). (C) is false; thermal stability actually decreases from NH3 to BiH3 because M–H bond strength decreases. (D) is true; reducing character increases down the group."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Hydrolysis of halides",
+  "archetype": "reaction completion",
+  "brief": "Complete hydrolysis products of PCl3/SiCl4-type covalent halides; identify which gives fumes and why.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:46",
+   "2021:76",
+   "2024s2:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "$\\text{PCl}_3$ on complete hydrolysis yields",
+ "options": [
+  "H$_3$PO$_4$ + HCl",
+  "H$_3$PO$_3$ + HCl",
+  "H$_3$PO$_3$ + Cl$_2$",
+  "H$_3$PO$_4$ + Cl$_2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "PCl₃ + 3H₂O → H₃PO₃ + 3HCl, so the products match (A).",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "PCl$_3$ + 3 H$_2$O → H$_3$PO$_3$ + 3 HCl. The HCl gas produces dense white fumes in moist air.\n\nIndependent check: PCl₃ + 3H₂O → H₃PO₃ + 3HCl, so the products match (A).",
+ "solution": "On complete hydrolysis, phosphorus trichloride forms phosphorous acid and hydrochloric acid:\n$$\\mathrm{PCl_3 + 3H_2O \\rightarrow H_3PO_3 + 3HCl}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "$\\text{PCl}_3$ on complete hydrolysis yields",
+  "options": [
+   "H$_3$PO$_3$ + HCl",
+   "H$_3$PO$_4$ + HCl",
+   "H$_3$PO$_3$ + Cl$_2$",
+   "H$_3$PO$_4$ + Cl$_2$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "PCl$_3$ + 3 H$_2$O → H$_3$PO$_3$ + 3 HCl. The HCl gas produces dense white fumes in moist air.",
+  "distractor_notes": "B: PCl₅ gives phosphoric acid, but PCl₃ gives phosphorous acid; C and D: no Cl₂ is formed, hydrolysis gives HCl."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

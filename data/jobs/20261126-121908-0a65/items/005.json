@@ -1,0 +1,75 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Gauss's law, non-uniform charge density",
+  "archetype": "integration + Gauss law",
+  "brief": "Cylindrical/spherical charge distribution with charge density varying linearly with radius shown in figure; use Gauss's law to find field at a point inside the distribution.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:4",
+   "2023s1:8",
+   "2025s1:6"
+  ]
+ },
+ "status": "ok",
+ "stem": "A long, solid non-conducting cylinder of radius $R$ has a non-uniform volume charge density $\\rho = \\alpha r$, where $\\alpha$ is a positive constant and $r$ is the radial distance from its central axis, as shown in the figure. The magnitude of the electric field at a distance $r$ ($r < R$) from the axis is",
+ "options": [
+  "$\\dfrac{\\alpha r^2}{4\\varepsilon_0}$",
+  "$\\dfrac{\\alpha r^2}{3\\varepsilon_0}$",
+  "$\\dfrac{\\alpha r^2}{2\\varepsilon_0}$",
+  "$\\dfrac{2\\alpha r^2}{3\\varepsilon_0}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q005_stem_v0.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Gauss's law with coaxial cylinder of radius r, length L: Q_enc = ∫0^r (αr')(2πr'L)dr' = 2παL r³/3. E(2πrL) = Q_enc/ε0 ⇒ E = αr²/(3ε0). Verified numerically.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Consider a coaxial Gaussian cylinder of radius $r$ ($r < R$) and length $L$ inside the charged cylinder.\n\n1. By cylindrical symmetry, the electric field $\\vec{E}$ is directed radially outward perpendicular to the cylinder axis. The electric flux through the two flat end caps is zero. The flux through the curved surface is:\n$$\\Phi = E(r) \\cdot (2\\pi r L)$$\n\n2. The charge enclosed $q_{\\text{enc}}$ inside this Gaussian cylinder is found by integrating over thin cylindrical shells of radius $r'$, thickness $dr'$, and length $L$:\n$$dV = 2\\pi r' L\\, dr'$$\n$$dq = \\rho(r')\\, dV = (\\alpha r')(2\\pi r' L\\, dr') = 2\\pi \\alpha L r'^2\\, dr'$$\n$$q_{\\text{enc}} = \\int_0^r 2\\pi \\alpha L r'^2\\, dr' = 2\\pi \\alpha L \\left[\\dfrac{r'^3}{3}\\right]_0^r = \\dfrac{2\\pi \\alpha L r^3}{3}$$\n\n3. Applying Gauss's law:\n$$\\Phi = \\dfrac{q_{\\text{enc}}}{\\varepsilon_0}$$\n$$E(r) (2\\pi r L) = \\dfrac{2\\pi \\alpha L r^3}{3\\varepsilon_0}$$\n$$E(r) = \\dfrac{\\alpha r^2}{3\\varepsilon_0}$$\n\nIndependent check: Gauss's law with coaxial cylinder of radius r, length L: Q_enc = ∫0^r (αr')(2πr'L)dr' = 2παL r³/3. E(2πrL) = Q_enc/ε0 ⇒ E = αr²/(3ε0). Verified numerically.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A long, solid non-conducting cylinder of radius $R$ has a non-uniform volume charge density $\\rho = \\alpha r$, where $\\alpha$ is a positive constant and $r$ is the radial distance from its central axis, as shown in the figure. The magnitude of the electric field at a distance $r$ ($r < R$) from the axis is",
+  "options": [
+   "$\\dfrac{\\alpha r^2}{4\\varepsilon_0}$",
+   "$\\dfrac{\\alpha r^2}{3\\varepsilon_0}$",
+   "$\\dfrac{\\alpha r^2}{2\\varepsilon_0}$",
+   "$\\dfrac{2\\alpha r^2}{3\\varepsilon_0}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Consider a coaxial Gaussian cylinder of radius $r$ ($r < R$) and length $L$ inside the charged cylinder.\n\n1. By cylindrical symmetry, the electric field $\\vec{E}$ is directed radially outward perpendicular to the cylinder axis. The electric flux through the two flat end caps is zero. The flux through the curved surface is:\n$$\\Phi = E(r) \\cdot (2\\pi r L)$$\n\n2. The charge enclosed $q_{\\text{enc}}$ inside this Gaussian cylinder is found by integrating over thin cylindrical shells of radius $r'$, thickness $dr'$, and length $L$:\n$$dV = 2\\pi r' L\\, dr'$$\n$$dq = \\rho(r')\\, dV = (\\alpha r')(2\\pi r' L\\, dr') = 2\\pi \\alpha L r'^2\\, dr'$$\n$$q_{\\text{enc}} = \\int_0^r 2\\pi \\alpha L r'^2\\, dr' = 2\\pi \\alpha L \\left[\\dfrac{r'^3}{3}\\right]_0^r = \\dfrac{2\\pi \\alpha L r^3}{3}$$\n\n3. Applying Gauss's law:\n$$\\Phi = \\dfrac{q_{\\text{enc}}}{\\varepsilon_0}$$\n$$E(r) (2\\pi r L) = \\dfrac{2\\pi \\alpha L r^3}{3\\varepsilon_0}$$\n$$E(r) = \\dfrac{\\alpha r^2}{3\\varepsilon_0}$$",
+  "distractor_notes": "Option A encodes the mistake of applying spherical integration (where the volume element contains $r'^2$, leading to an integral of $r'^3$ and a factor of $1/4$). Option C encodes omitting the Jacobian factor $r'$ in the cylindrical volume element ($dV \\propto dr'$ rather than $r' dr'$), integrating to $r^2/2$. Option D encodes forgetting the factor of 2 in the cylinder's curved surface area (writing $\\pi r L$ instead of $2\\pi r L$).",
+  "figure": {
+   "kind": "diagram",
+   "description": "A 3D perspective diagram showing a horizontal solid cylinder of radius $R$. The central axis of symmetry is drawn as a horizontal dashed line through the center of the cylinder. Inside the solid cylinder, a coaxial dashed cylindrical Gaussian surface of radius $r$ and length $L$ is shown. A radial dimension arrow labeled $r$ points from the central axis to the curved surface of the inner cylinder where a point $P$ is marked. A dimension arrow labeled $R$ indicates the outer cylinder's radius. The label '$\\rho = \\alpha r$' is placed adjacent to the solid cylinder.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3
+ }
+}

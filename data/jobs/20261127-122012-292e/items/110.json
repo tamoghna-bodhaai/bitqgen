@@ -1,0 +1,68 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "use f(a+x) = f(a−x) symmetry (or King's property) on a definite integral to reduce it to a standard result",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:143",
+   "2023s2:117",
+   "2026s1:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate: integral from 0 to pi of (x sin x)/(1 + cos^2 x) dx",
+ "options": [
+  "pi^2/2",
+  "pi^2/6",
+  "pi^2/8",
+  "pi^2/4"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let g(x)=sin x/(1+cos²x), so g(π−x)=g(x). Thus 2I=π∫₀^πg(x)dx. With u=cos x, ∫₀^πg(x)dx=∫₋₁¹du/(1+u²)=π/2, giving I=π²/4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let I be the integral. Using the King property, 2I = pi times integral from 0 to pi of sin x/(1 + cos^2 x) dx. Substitute u = cos x. The inner integral is arctan 1 - arctan(-1) = pi/2. Hence 2I = pi * pi/2 = pi^2/2, so I = pi^2/4.\n\nIndependent check: Let g(x)=sin x/(1+cos²x), so g(π−x)=g(x). Thus 2I=π∫₀^πg(x)dx. With u=cos x, ∫₀^πg(x)dx=∫₋₁¹du/(1+u²)=π/2, giving I=π²/4.",
+ "solution": "Let $I=\\int_0^\\pi x\\,g(x)\\,dx$, where $g(x)=\\dfrac{\\sin x}{1+\\cos^2 x}$ and $g(\\pi-x)=g(x)$. Hence $2I=\\pi\\int_0^\\pi g(x)\\,dx$. \n$$\\int_0^\\pi g(x)\\,dx=\\int_{-1}^{1}\\frac{du}{1+u^2}=\\frac{\\pi}{2},\\qquad I=\\frac{\\pi^2}{4}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate: integral from 0 to pi of (x sin x)/(1 + cos^2 x) dx",
+  "options": [
+   "pi^2/2",
+   "pi^2/4",
+   "pi^2/8",
+   "pi^2/6"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let I be the integral. Using the King property, 2I = pi times integral from 0 to pi of sin x/(1 + cos^2 x) dx. Substitute u = cos x. The inner integral is arctan 1 - arctan(-1) = pi/2. Hence 2I = pi * pi/2 = pi^2/2, so I = pi^2/4.",
+  "distractor_notes": "A: forgot to divide by 2 after applying the symmetry property. C: introduced an extra factor of 1/2 while evaluating the arctangent integral. D: used an incorrect standard integral value."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

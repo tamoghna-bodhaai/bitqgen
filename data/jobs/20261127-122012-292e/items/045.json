@@ -1,0 +1,68 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment",
+  "archetype": "trend then count",
+  "brief": "Given three ions, ask which has the maximum number of unpaired electrons with a brief reason via electronic configuration.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:57",
+   "2026s1:48",
+   "2023s2:35"
+  ]
+ },
+ "status": "ok",
+ "stem": "Among the following ions, the one with the maximum number of unpaired electrons is:",
+ "options": [
+  "Ni$^{2+}$",
+  "Fe$^{2+}$",
+  "Co$^{2+}$",
+  "Mn$^{2+}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mn²⁺ is [Ar]3d⁵, with 5 unpaired electrons; Fe²⁺, Co²⁺, and Ni²⁺ have 4, 3, and 2, respectively.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Electronic configurations of the high-spin aquated ions: Mn$^{2+}$: [Ar]3d$^5$ → 5 unpaired electrons; Fe$^{2+}$: [Ar]3d$^6$ → 4 unpaired; Co$^{2+}$: [Ar]3d$^7$ → 3 unpaired; Ni$^{2+}$: [Ar]3d$^8$ → 2 unpaired. Hence Mn$^{2+}$ has the greatest number of unpaired electrons.\n\nIndependent check: Mn²⁺ is [Ar]3d⁵, with 5 unpaired electrons; Fe²⁺, Co²⁺, and Ni²⁺ have 4, 3, and 2, respectively.",
+ "solution": "For high-spin ions, remove the $4s$ electrons first: $\\mathrm{Mn^{2+}}=[\\mathrm{Ar}]3d^5$, with one electron in each of the five $d$ orbitals. It has $5$ unpaired electrons, more than $\\mathrm{Fe^{2+}}$ ($4$), $\\mathrm{Co^{2+}}$ ($3$), or $\\mathrm{Ni^{2+}}$ ($2$).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Among the following ions, the one with the maximum number of unpaired electrons is:",
+  "options": [
+   "Mn$^{2+}$",
+   "Fe$^{2+}$",
+   "Co$^{2+}$",
+   "Ni$^{2+}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Electronic configurations of the high-spin aquated ions: Mn$^{2+}$: [Ar]3d$^5$ → 5 unpaired electrons; Fe$^{2+}$: [Ar]3d$^6$ → 4 unpaired; Co$^{2+}$: [Ar]3d$^7$ → 3 unpaired; Ni$^{2+}$: [Ar]3d$^8$ → 2 unpaired. Hence Mn$^{2+}$ has the greatest number of unpaired electrons.",
+  "distractor_notes": "B: Fe$^{2+}$ has 4 unpaired; C: Co$^{2+}$ has 3 unpaired; D: Ni$^{2+}$ has 2 unpaired."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

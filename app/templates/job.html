@@ -1,0 +1,62 @@
+{% extends "base.html" %}{% set nav = "home" %}
+{% block title %}{{ job.config.title }} — bitQgen{% endblock %}
+{% block body %}
+<h1>{{ job.config.title }}</h1>
+<p class="sub">Job {{ job.id }} · {{ job.config.pattern_id }}{% if job.config.counts %} (custom){% endif %} · difficulty {{ job.config.difficulty }} · profile {{ job.config.profile or 'default' }} · seed {{ job.config.seed }}</p>
+<div class="card">
+  <div class="kv">
+    <div><b id="k-status"><span class="chip st-{{ job.status }}">{{ job.status }}</span></b><span>status</span></div>
+    <div><b id="k-stage">{{ job.stage }}</b><span>stage</span></div>
+    <div><b id="k-done">{{ job.progress.done }}/{{ job.progress.total }}</b><span>questions</span></div>
+    <div><b id="k-ok">{{ job.progress.ok }}</b><span>verified</span></div>
+    <div><b id="k-flag">{{ job.progress.flagged }}</b><span>flagged</span></div>
+    <div><b id="k-cost">${{ '%.2f' % (job.cost or 0) }}</b><span>spent</span></div>
+  </div>
+  <div class="bar"><div id="bar" style="width:{{ (100 * job.progress.done / job.progress.total) if job.progress.total else 0 }}%"></div></div>
+  <div class="toolbar" style="margin-top:14px">
+    <a class="btn" href="/jobs/{{ job.id }}/review">Review questions</a>
+    <a class="btn ghost" target="_blank" href="/jobs/{{ job.id }}/view/paper.html">Preview paper</a>
+    <a class="btn ghost" target="_blank" href="/jobs/{{ job.id }}/view/solutions.html">Preview solutions</a>
+    <span style="flex:1"></span>
+    {% if running %}<form method="post" action="/jobs/{{ job.id }}/cancel"><button class="danger">Cancel</button></form>
+    {% elif job.status in ('failed','cancelled') %}<form method="post" action="/jobs/{{ job.id }}/resume"><button>Resume</button></form>{% endif %}
+  </div>
+  {% if job.error %}<div class="flash">{{ job.error }}</div>{% endif %}
+</div>
+{% set base = "/jobs/" ~ job.id %}{% include "_export.html" %}
+<h2>Live log</h2>
+<div id="log"></div>
+<h2>Questions</h2>
+<table class="t">
+<tr><th>Q</th><th>Section</th><th>Topic</th><th>Diff.</th><th>Status</th><th>Attempts</th><th>Notes</th></tr>
+{% for i in items %}<tr>
+  <td><a href="/jobs/{{ job.id }}/review#q{{ i.qno }}">{{ i.qno }}</a></td><td>{{ i.section }}</td>
+  <td>{{ i.slot.chapter }}<div class="small muted">{{ i.slot.subtopic }}</div></td>
+  <td>{{ i.difficulty }}</td><td><span class="chip st-{{ i.status }}">{{ i.status }}</span></td>
+  <td>{{ i.attempts }}</td><td class="small muted">{{ (i.notes or [])|join('; ') }}</td></tr>{% endfor %}
+</table>
+<script>
+const log = document.getElementById("log");
+function esc(s){return s.replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));}
+const es = new EventSource("/jobs/{{ job.id }}/events");
+es.addEventListener("log", e => {
+  const ev = JSON.parse(e.data);
+  const d = document.createElement("div"); d.className = ev.level || "";
+  d.innerHTML = `<span class="s">[${ev.stage||""}]</span> ${ev.qno!==undefined?`<span class="q">Q${ev.qno}</span> `:""}${esc(ev.msg)}`;
+  log.appendChild(d); log.scrollTop = log.scrollHeight;
+});
+let last = "{{ job.status }}";
+es.addEventListener("state", e => {
+  const s = JSON.parse(e.data), p = s.progress || {};
+  document.getElementById("k-status").innerHTML = `<span class="chip st-${s.status}">${s.status}</span>`;
+  document.getElementById("k-stage").textContent = s.stage;
+  document.getElementById("k-done").textContent = `${p.done||0}/${p.total||0}`;
+  document.getElementById("k-ok").textContent = p.ok||0;
+  document.getElementById("k-flag").textContent = p.flagged||0;
+  document.getElementById("k-cost").textContent = "$" + (s.cost||0).toFixed(2);
+  document.getElementById("bar").style.width = (p.total ? 100*p.done/p.total : 0) + "%";
+  if (last !== s.status && ["done","failed","cancelled"].includes(s.status)) { es.close(); setTimeout(()=>location.reload(), 800); }
+  last = s.status;
+});
+</script>
+{% endblock %}

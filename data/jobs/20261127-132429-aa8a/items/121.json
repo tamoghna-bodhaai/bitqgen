@@ -1,0 +1,68 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Direction cosines",
+  "archetype": "formula application",
+  "brief": "Find the direction cosines of a line joining two points, then the angle it makes with an axis, or the distance of a point from an axis.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:101",
+   "2025s2:117",
+   "2026s2:108"
+  ]
+ },
+ "status": "ok",
+ "stem": "The directed line from $P=(1,-2,0)$ to $Q=(k,4,8)$ makes equal acute angles with the positive $x$- and $y$-axes. Find its cosine with the positive $z$-axis.",
+ "options": [
+  "$\\dfrac{3}{\\sqrt{34}}$",
+  "$\\dfrac{3}{\\sqrt{17}}$",
+  "$\\dfrac{4}{\\sqrt{34}}$",
+  "$\\dfrac{4}{\\sqrt{17}}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The direction vector is $(k-1,6,8)$. Equal acute angles with the positive $x$- and $y$-axes give $k-1=6$, so the vector is $(6,6,8)$. Its magnitude is $2\\sqrt{34}$, hence its cosine with the positive $z$-axis is $8/(2\\sqrt{34})=4/\\sqrt{34}$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\overrightarrow{PQ}=(k-1,6,8)$. Equal acute angles with the positive $x$- and $y$-axes give $k-1=6$, so $k=7$.\\n$|\\overrightarrow{PQ}|=\\sqrt{6^2+6^2+8^2}=2\\sqrt{34}$.\\n$\\cos\\gamma=\\dfrac{8}{2\\sqrt{34}}=\\dfrac{4}{\\sqrt{34}}$\n\nIndependent check: The direction vector is $(k-1,6,8)$. Equal acute angles with the positive $x$- and $y$-axes give $k-1=6$, so the vector is $(6,6,8)$. Its magnitude is $2\\sqrt{34}$, hence its cosine with the positive $z$-axis is $8/(2\\sqrt{34})=4/\\sqrt{34}$.",
+ "solution": "The direction vector is $\\overrightarrow{PQ}=(k-1,6,8)$. Equal acute angles with the positive $x$- and $y$-axes imply $k-1=6$, so $\\overrightarrow{PQ}=(6,6,8)$.\n$$|\\overrightarrow{PQ}|=\\sqrt{6^2+6^2+8^2}=2\\sqrt{34},\\qquad \\cos\\gamma=\\frac{8}{2\\sqrt{34}}=\\frac{4}{\\sqrt{34}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The directed line from $P=(1,-2,0)$ to $Q=(k,4,8)$ makes equal acute angles with the positive $x$- and $y$-axes. Find its cosine with the positive $z$-axis.",
+  "options": [
+   "$\\dfrac{3}{\\sqrt{34}}$",
+   "$\\dfrac{4}{\\sqrt{34}}$",
+   "$\\dfrac{3}{\\sqrt{17}}$",
+   "$\\dfrac{4}{\\sqrt{17}}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\overrightarrow{PQ}=(k-1,6,8)$. Equal acute angles with the positive $x$- and $y$-axes give $k-1=6$, so $k=7$.\\n$|\\overrightarrow{PQ}|=\\sqrt{6^2+6^2+8^2}=2\\sqrt{34}$.\\n$\\cos\\gamma=\\dfrac{8}{2\\sqrt{34}}=\\dfrac{4}{\\sqrt{34}}$",
+  "distractor_notes": "A: Uses the $x$- or $y$-direction cosine instead of the $z$-direction cosine.\\nC: Gives $\\sin\\gamma$ rather than $\\cos\\gamma$.\\nD: Omits one of the equal component squares when normalizing."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

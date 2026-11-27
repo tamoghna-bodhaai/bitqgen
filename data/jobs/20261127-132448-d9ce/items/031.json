@@ -1,0 +1,68 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Projectile trajectory equation",
+  "archetype": "two-equation kinematics",
+  "brief": "A projectile explodes or a ball thrown from a tower with given conditions; use two equations to find time of flight and range, with an intermediate point asked.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:28",
+   "2021:3",
+   "2025s2:1"
+  ]
+ },
+ "status": "ok",
+ "stem": "A ball is projected horizontally from a tower and lands $60$ m from its base after $3$ s. Taking $g=10$ m s$^{-2}$, how far horizontally has it travelled when it is $20$ m below its launch level?",
+ "options": [
+  "$20$ m",
+  "$40$ m",
+  "$30$ m",
+  "$60$ m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Horizontal speed = 60/3 = 20 m/s. A 20 m drop takes t = √(2×20/10) = 2 s, so horizontal distance = 20×2 = 40 m.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_x=\\dfrac{60}{3}=20$ m s$^{-1}$\\n$20=\\dfrac{1}{2}(10)t^2\\Rightarrow t=2$ s\\n$x=v_xt=20(2)=40$ m\n\nIndependent check: Horizontal speed = 60/3 = 20 m/s. A 20 m drop takes t = √(2×20/10) = 2 s, so horizontal distance = 20×2 = 40 m.",
+ "solution": "The horizontal speed is $v_x=\\dfrac{60}{3}=20\\,\\text{m s}^{-1}$. For a vertical drop of $20$ m, $$20=\\frac12(10)t^2\\Rightarrow t=2\\,\\text{s}.$$ Hence $x=v_xt=20(2)=40$ m.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A ball is projected horizontally from a tower and lands $60$ m from its base after $3$ s. Taking $g=10$ m s$^{-2}$, how far horizontally has it travelled when it is $20$ m below its launch level?",
+  "options": [
+   "$20$ m",
+   "$30$ m",
+   "$40$ m",
+   "$60$ m"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$v_x=\\dfrac{60}{3}=20$ m s$^{-1}$\\n$20=\\dfrac{1}{2}(10)t^2\\Rightarrow t=2$ s\\n$x=v_xt=20(2)=40$ m",
+  "distractor_notes": "A: uses the vertical displacement as the horizontal distance. B: uses half the total flight time. D: gives the full range rather than the distance at the specified point."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,26 @@
+{% extends "base.html" %}{% set nav = "syllabus" %}
+{% block body %}
+<h1>Syllabus &amp; weights</h1>
+<p class="sub">The planner draws topics per section in proportion to <code>weight</code>; set <code>enabled: false</code> to exclude one. {{ data._source }}</p>
+{% if msg %}<div class="flash">{{ msg }}</div>{% endif %}
+<div class="grid2" style="grid-template-columns: 1fr 1fr">
+<div class="card">
+{% for name, sec in data.sections.items() %}
+  <h2 {% if loop.first %}style="margin-top:0"{% endif %}>{{ name }}</h2>
+  <table class="t"><tr><th>Topic</th><th>Unit</th><th>Weight</th><th>Past Qs</th><th>Fig.</th></tr>
+  {% for t in sec.topics|sort(attribute='weight', reverse=True) %}<tr class="{{ '' if t.enabled else 'muted' }}">
+    <td>{{ t.name }}{% if t.generator %} <span class="chip">{{ t.generator }}</span>{% endif %}</td><td class="small muted">{{ t.unit }}</td>
+    <td>{{ '%.3f' % t.weight }}</td><td>{{ t.corpus_count }}</td><td>{{ (t.figure_rate*100)|round|int }}%</td></tr>{% endfor %}
+  </table>
+{% endfor %}
+</div>
+<div>
+<form class="card" method="post" action="/syllabus">
+  <label>config/syllabus.yaml</label>
+  <textarea class="code" name="text">{{ text }}</textarea>
+  <div class="toolbar"><button>Save</button></div>
+</form>
+<form method="post" action="/syllabus/rebuild" style="margin-top:10px"><button class="ghost">Rebuild from corpus (overwrites edits)</button></form>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Angular momentum of a particle",
+  "archetype": "vector cross product",
+  "brief": "Angular momentum of a particle about a point: given position and velocity (or momentum) vectors, compute L = r × p magnitude and direction using the cross product; keep it distinct from the other rotational slot (conservation question).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:36",
+   "2025s2:2",
+   "2024s2:29"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle has position vector $\\vec r=(3\\hat i+4\\hat j)$ m and momentum $\\vec p=2\\hat k$ kg m s$^{-1}$. Its angular momentum about the origin is",
+ "options": [
+  "$10\\hat k$ kg m$^2$ s$^{-1}$",
+  "$(-8\\hat i+6\\hat j)$ kg m$^2$ s$^{-1}$",
+  "$(6\\hat i-8\\hat j)$ kg m$^2$ s$^{-1}$",
+  "$(8\\hat i-6\\hat j)$ kg m$^2$ s$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\vec L=\\vec r\\times\\vec p=(3,4,0)\\times(0,0,2)=(8,-6,0)\\,\\mathrm{kg\\,m^2\\,s^{-1}}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec L=\\vec r\\times\\vec p=(3\\hat i+4\\hat j)\\times2\\hat k$\\\\\n$=6(-\\hat j)+8\\hat i=(8\\hat i-6\\hat j)$ kg m$^2$ s$^{-1}$\n\nIndependent check: \\(\\vec L=\\vec r\\times\\vec p=(3,4,0)\\times(0,0,2)=(8,-6,0)\\,\\mathrm{kg\\,m^2\\,s^{-1}}\\).",
+ "solution": "Angular momentum is $\u0000\\vec L=\\vec r\\times\\vec p$.\n$$\\vec L=(3\\hat i+4\\hat j)\\times2\\hat k=6(\\hat i\\times\\hat k)+8(\\hat j\\times\\hat k)=8\\hat i-6\\hat j\\ \\mathrm{kg\\,m^2\\,s^{-1}}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle has position vector $\\vec r=(3\\hat i+4\\hat j)$ m and momentum $\\vec p=2\\hat k$ kg m s$^{-1}$. Its angular momentum about the origin is",
+  "options": [
+   "$(8\\hat i-6\\hat j)$ kg m$^2$ s$^{-1}$",
+   "$(-8\\hat i+6\\hat j)$ kg m$^2$ s$^{-1}$",
+   "$(6\\hat i-8\\hat j)$ kg m$^2$ s$^{-1}$",
+   "$10\\hat k$ kg m$^2$ s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\vec L=\\vec r\\times\\vec p=(3\\hat i+4\\hat j)\\times2\\hat k$\\\\\n$=6(-\\hat j)+8\\hat i=(8\\hat i-6\\hat j)$ kg m$^2$ s$^{-1}$",
+  "distractor_notes": "B reverses the cross-product order; C swaps the component factors; D gives the magnitude in an incorrect direction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

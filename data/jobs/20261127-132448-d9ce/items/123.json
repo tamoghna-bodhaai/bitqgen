@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Properties of determinants",
+  "archetype": "direct computation",
+  "brief": "Evaluate a 3×3 determinant of small integers and/or use it to decide a matrix property (singular or not).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:105",
+   "2025s2:121",
+   "2024s1:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of $\\begin{vmatrix}1&2&0\\\\0&3&1\\\\2&1&1\\end{vmatrix}$ is",
+ "options": [
+  "$-6$",
+  "$2$",
+  "$4$",
+  "$6$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Determinant = 1(3−1) − 2(0−2) = 2 + 4 = 6.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\begin{vmatrix}1&2&0\\\\0&3&1\\\\2&1&1\\end{vmatrix}=1(3-1)-2(0-2)=2+4=6$.\n\nIndependent check: Determinant = 1(3−1) − 2(0−2) = 2 + 4 = 6.",
+ "solution": "Expanding along the first row,\n$$\\begin{vmatrix}1&2&0\\\\0&3&1\\\\2&1&1\\end{vmatrix}=1(3-1)-2(0-2)=2+4=6.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The value of $\\begin{vmatrix}1&2&0\\\\0&3&1\\\\2&1&1\\end{vmatrix}$ is",
+  "options": [
+   "$-6$",
+   "$2$",
+   "$4$",
+   "$6$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\begin{vmatrix}1&2&0\\\\0&3&1\\\\2&1&1\\end{vmatrix}=1(3-1)-2(0-2)=2+4=6$.",
+  "distractor_notes": "A: gets the sign wrong in the cofactor expansion. B: omits the second cofactor term. C: uses an incorrect minor for the first term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

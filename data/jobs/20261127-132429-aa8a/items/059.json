@@ -1,0 +1,76 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "R/S configuration in Fischer projection",
+  "archetype": "structure identification",
+  "brief": "Figure shows Fischer projections of similar molecules; assign R/S at each stereocentre and classify pairs as identical, enantiomers or diastereomers.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:41",
+   "2022:32",
+   "2024s2:53"
+  ]
+ },
+ "status": "ok",
+ "stem": "For Fischer projections I–III shown in the figure, select the correct configurations and pairwise relationships.",
+ "options": [
+  "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2R,3R)$; I–II and I–III are enantiomers, while II–III are identical.",
+  "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2R,3S)$; I–II are enantiomers, and I–III and II–III are diastereomers.",
+  "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2S,3R)$; I–II are enantiomers, and I–III and II–III are diastereomers.",
+  "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2S,3S)$; I–II and II–III are enantiomers, while I–III are identical."
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q059_stem_v1.png",
+  "width_pct": 60,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At C2, priorities are OH > CHO > lower chain > H; at C3, OH > upper chain > CH3 > H. In each Fischer projection, H is horizontal (toward), so the observed sense is inverted. This gives I (2S,3S), II (2R,3R), and III (2S,3R). I–II are enantiomers; the other pairs are diastereomers.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "At C2: OH > CHO > C3 chain > H; at C3: OH > C2 chain > CH3 > H.\nIn a Fischer projection, horizontal groups point towards the viewer; reverse the order when H is horizontal.\nI: $(2S,3S)$; II: $(2R,3R)$; III: $(2S,3R)$.\nI–II differ at both centres: enantiomers.\nI–III and II–III differ at one centre: diastereomers.\n\nIndependent check: At C2, priorities are OH > CHO > lower chain > H; at C3, OH > upper chain > CH3 > H. In each Fischer projection, H is horizontal (toward), so the observed sense is inverted. This gives I (2S,3S), II (2R,3R), and III (2S,3R). I–II are enantiomers; the other pairs are diastereomers.",
+ "solution": "At C2, priorities are $\\mathrm{OH>CHO>C3\\ chain>H}$; at C3, $\\mathrm{OH>C2\\ chain>CH_3>H}$. Since horizontal groups in a Fischer projection point towards the viewer, invert the observed order when H is horizontal.\nThus, I is $(2S,3S)$, II is $(2R,3R)$, and III is $(2S,3R)$.\nI–II differ at both stereocentres and are enantiomers; I–III and II–III differ at one centre and are diastereomers.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For Fischer projections I–III shown in the figure, select the correct configurations and pairwise relationships.",
+  "options": [
+   "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2S,3R)$; I–II are enantiomers, and I–III and II–III are diastereomers.",
+   "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2R,3S)$; I–II are enantiomers, and I–III and II–III are diastereomers.",
+   "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2R,3R)$; I–II and I–III are enantiomers, while II–III are identical.",
+   "I: $(2S,3S)$; II: $(2R,3R)$; III: $(2S,3S)$; I–II and II–III are enantiomers, while I–III are identical."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw three separate Fischer projections side by side, labeled I, II, and III. In each projection, draw a vertical carbon chain with CHO at the top, C2 at the first intersection, C3 at the second intersection, and CH3 at the bottom; use horizontal and vertical bonds at both intersections. Projection I: at both C2 and C3, put OH on the left and H on the right. Projection II: at both C2 and C3, put H on the left and OH on the right. Projection III: at C2, put OH on the left and H on the right; at C3, put H on the left and OH on the right. Keep all labels clear and do not add wedges or dashes.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "At C2: OH > CHO > C3 chain > H; at C3: OH > C2 chain > CH3 > H.\nIn a Fischer projection, horizontal groups point towards the viewer; reverse the order when H is horizontal.\nI: $(2S,3S)$; II: $(2R,3R)$; III: $(2S,3R)$.\nI–II differ at both centres: enantiomers.\nI–III and II–III differ at one centre: diastereomers.",
+  "distractor_notes": "B: swaps the configurations assigned to the two centres in III. C: assigns III the same configuration as II, then classifies those two as identical. D: assigns III the same configuration as I, then classifies those two as identical."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

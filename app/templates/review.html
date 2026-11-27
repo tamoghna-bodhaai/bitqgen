@@ -1,0 +1,47 @@
+{% extends "base.html" %}{% set nav = "home" %}
+{% block title %}Review — {{ job.config.title }}{% endblock %}
+{% block body %}
+<h1>Review: {{ job.config.title }}</h1>
+<p class="sub"><a href="/jobs/{{ job.id }}">← job</a> · {{ all_items|selectattr('status','equalto','ok')|list|length }}/{{ all_items|length }} verified ·
+  <a target="_blank" href="/jobs/{{ job.id }}/view/paper.html">2-column preview</a> ·
+  <a href="/jobs/{{ job.id }}#export">export PDF / DOCX</a></p>
+<div class="filters toolbar">
+  <span class="muted small">Section:</span>
+  <a href="?status={{ status }}" class="{{ 'on' if not section }}">All</a>
+  {% for s in sections %}<a href="?section={{ s|urlencode }}&status={{ status }}" class="{{ 'on' if s == section }}">{{ s }}</a>{% endfor %}
+  <span class="muted small" style="margin-left:14px">Status:</span>
+  <a href="?section={{ section|urlencode }}" class="{{ 'on' if not status }}">All</a>
+  <a href="?section={{ section|urlencode }}&status=flagged" class="{{ 'on' if status=='flagged' }}">Needs review</a>
+  <a href="?section={{ section|urlencode }}&status=ok" class="{{ 'on' if status=='ok' }}">Verified</a>
+</div>
+<div id="cards">{% for it in items %}{% include "_card.html" %}{% endfor %}</div>
+{% if not items %}<p class="muted">Nothing to show.</p>{% endif %}
+<script>
+const JOB = "{{ job.id }}";
+async function reloadCard(q){
+  const r = await fetch(`/jobs/${JOB}/q/${q}/card`); const html = await r.text();
+  const old = document.getElementById("q"+q); const tmp = document.createElement("div"); tmp.innerHTML = html;
+  const nu = tmp.firstElementChild; old.replaceWith(nu); renderMath(nu); return nu;
+}
+async function regen(q, btn){
+  const card = document.getElementById("q"+q);
+  const fd = new FormData(); fd.append("instruction", card.querySelector(".instr").value);
+  btn.disabled = true; btn.textContent = "Regenerating…";
+  await fetch(`/jobs/${JOB}/q/${q}/regenerate`, {method:"POST", body:fd});
+  const poll = setInterval(async () => {
+    const r = await fetch(`/jobs/${JOB}/q/${q}/card`); const html = await r.text();
+    if (!html.includes("st-regenerating")) { clearInterval(poll); reloadCard(q); }
+  }, 4000);
+}
+async function post(q, data){
+  const r = await fetch(`/jobs/${JOB}/q/${q}/edit`, {method:"POST", headers:{"Content-Type":"application/json"}, body:JSON.stringify(data)});
+  if (!r.ok) alert("Save failed: " + await r.text()); else reloadCard(q);
+}
+function saveEdit(q){
+  const c = document.getElementById("q"+q);
+  post(q, {stem:c.querySelector(".e-stem").value, options:[...c.querySelectorAll(".e-opt")].map(x=>x.value),
+           answer:c.querySelector(".e-ans").value, solution:c.querySelector(".e-sol").value});
+}
+function markOk(q){ post(q, {mark_ok:true}); }
+</script>
+{% endblock %}

@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Vector triple product",
+  "archetype": "expand box product",
+  "brief": "Vector triple product expression a × (b × c) with given simple vectors; use the standard expansion and compute the result vector.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:121",
+   "2026s1:120",
+   "2025s2:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "Given $\\vec a=2\\hat i-\\hat j+3\\hat k$, $\\vec b=\\hat i+2\\hat j-\\hat k$ and $\\vec c=3\\hat i+2\\hat k$, find $\\vec a\\times(\\vec b\\times\\vec c)$.",
+ "options": [
+  "$21\\hat i+24\\hat j+6\\hat k$",
+  "$21\\hat i+24\\hat j-6\\hat k$",
+  "$-21\\hat i-24\\hat j+6\\hat k$",
+  "$21\\hat i-24\\hat j-6\\hat k$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\vec b\\times\\vec c=(4,-5,-6)\\), so \\(\\vec a\\times(\\vec b\\times\\vec c)=(21,24,-6)\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b)$\n$\\vec a\\cdot\\vec c=12,\\quad \\vec a\\cdot\\vec b=-3$\n$=12(\\hat i+2\\hat j-\\hat k)+3(3\\hat i+2\\hat k)=21\\hat i+24\\hat j-6\\hat k$\n\nIndependent check: \\(\\vec b\\times\\vec c=(4,-5,-6)\\), so \\(\\vec a\\times(\\vec b\\times\\vec c)=(21,24,-6)\\).",
+ "solution": "Using $\n\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b),\n\\quad \\vec a\\cdot\\vec c=12,\\quad \\vec a\\cdot\\vec b=-3.$\n$$\\vec a\\times(\\vec b\\times\\vec c)=12(\\hat i+2\\hat j-\\hat k)+3(3\\hat i+2\\hat k)=21\\hat i+24\\hat j-6\\hat k.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Given $\\vec a=2\\hat i-\\hat j+3\\hat k$, $\\vec b=\\hat i+2\\hat j-\\hat k$ and $\\vec c=3\\hat i+2\\hat k$, find $\\vec a\\times(\\vec b\\times\\vec c)$.",
+  "options": [
+   "$21\\hat i+24\\hat j+6\\hat k$",
+   "$21\\hat i+24\\hat j-6\\hat k$",
+   "$-21\\hat i-24\\hat j+6\\hat k$",
+   "$21\\hat i-24\\hat j-6\\hat k$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b)$\n$\\vec a\\cdot\\vec c=12,\\quad \\vec a\\cdot\\vec b=-3$\n$=12(\\hat i+2\\hat j-\\hat k)+3(3\\hat i+2\\hat k)=21\\hat i+24\\hat j-6\\hat k$",
+  "distractor_notes": "A: Sign error in the $\\hat k$ component.\\nC: Reverses the order/sign of the vector triple product.\\nD: Sign error in the $\\hat j$ component."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

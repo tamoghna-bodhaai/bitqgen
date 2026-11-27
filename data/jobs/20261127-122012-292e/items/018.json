@@ -1,0 +1,64 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile trajectory equation",
+  "archetype": "compare-with-standard-form",
+  "brief": "Given a trajectory equation y = ax − bx², ask for the time of flight and horizontal range by comparing with the standard projectile form.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:11",
+   "2025s1:17",
+   "2023s2:4"
+  ]
+ },
+ "status": "failed",
+ "stem": "The trajectory of a projectile is given by $y = 4x - 5x^2$, where $x$ and $y$ are in metres. Taking $g = 10\\ \\text{m s}^{-2}$, the time of flight and the horizontal range are respectively:",
+ "options": [
+  "$0.8$ s, $1.6$ m",
+  "$0.4$ s, $0.4$ m",
+  "$0.8$ s, $0.8$ m",
+  "$1.6$ s, $0.8$ m"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Comparing $y = x\\tan\\theta - \\frac{g}{2u^2\\cos^2\\theta}x^2$ with $y = 4x - 5x^2$ gives $\\tan\\theta = 4$ and $\\frac{10}{2u^2\\cos^2\\theta}=5$, so $u^2\\cos^2\\theta = 1$, hence $u\\cos\\theta = 1$ m/s. Then $u\\sin\\theta = \\tan\\theta \\cdot u\\cos\\theta = 4$ m/s.\nTime of flight $T = \\frac{2u\\sin\\theta}{g} = \\frac{2 \\times 4}{10} = 0.8$ s.\nHorizontal range $R = u\\cos\\theta \\cdot T = 1 \\times 0.8 = 0.8$ m.",
+ "solution": "Compare $y=x\\tan\\theta-\\dfrac{g x^2}{2u^2\\cos^2\\theta}$ with $y=4x-5x^2$: $\\tan\\theta=4$ and $u\\cos\\theta=1\\,\\text{m s}^{-1}$, so $u\\sin\\theta=4\\,\\text{m s}^{-1}$. \n$$T=\\frac{2u\\sin\\theta}{g}=0.8\\,\\text{s},\\qquad R=(u\\cos\\theta)T=0.8\\,\\text{m}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The trajectory of a projectile is given by $y = 4x - 5x^2$, where $x$ and $y$ are in metres. Taking $g = 10\\ \\text{m s}^{-2}$, the time of flight and the horizontal range are respectively:",
+  "options": [
+   "$0.8$ s, $0.8$ m",
+   "$0.4$ s, $0.4$ m",
+   "$0.8$ s, $1.6$ m",
+   "$1.6$ s, $0.8$ m"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Comparing $y = x\\tan\\theta - \\frac{g}{2u^2\\cos^2\\theta}x^2$ with $y = 4x - 5x^2$ gives $\\tan\\theta = 4$ and $\\frac{10}{2u^2\\cos^2\\theta}=5$, so $u^2\\cos^2\\theta = 1$, hence $u\\cos\\theta = 1$ m/s. Then $u\\sin\\theta = \\tan\\theta \\cdot u\\cos\\theta = 4$ m/s.\nTime of flight $T = \\frac{2u\\sin\\theta}{g} = \\frac{2 \\times 4}{10} = 0.8$ s.\nHorizontal range $R = u\\cos\\theta \\cdot T = 1 \\times 0.8 = 0.8$ m.",
+  "distractor_notes": "B: uses half the correct value of u sin(θ) and incorrectly calculates T as u sin(θ)/g, giving 0.4 s and 0.4 m. C: correct T but doubles the range. D: doubles T but gives correct range."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

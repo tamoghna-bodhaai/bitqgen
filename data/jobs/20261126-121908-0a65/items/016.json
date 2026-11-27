@@ -1,0 +1,75 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Field lines in magnetic materials",
+  "archetype": "figure interpretation",
+  "brief": "Show field-line patterns around a bar of material in a uniform field; identify which diagram represents a paramagnet/diamagnet/ferromagnet and give reasoning.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:17",
+   "2025s2:1",
+   "2025s1:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "The magnetic field lines in the presence of two different materials, $X$ and $Y$, placed in a uniform magnetic field are shown in the figure. Which diagram represents a diamagnetic material, and what is the correct reason?",
+ "options": [
+  "Diagram (a), because it concentrates magnetic field lines as $\\mu_r > 1$",
+  "Diagram (a), because it expels magnetic field lines as $\\mu_r < 1$",
+  "Diagram (b), because it concentrates magnetic field lines as $\\mu_r > 1$",
+  "Diagram (b), because it expels magnetic field lines as $\\mu_r < 1$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q016_stem_v0.png",
+  "width_pct": 70,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Diamagnetic materials have μr < 1 and expel magnetic field lines. In diagram (a), lines bend away from sample X (no lines pass through it) — expulsion, so X is diamagnetic. In diagram (b), lines converge through Y — concentration (μr > 1), para/ferromagnetic. Hence option B.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a diamagnetic substance, the magnetic susceptibility is negative ($\\chi_m < 0$).\n\nThe relative magnetic permeability is:\n$$\\mu_r = 1 + \\chi_m < 1$$\n\nBecause $\\mu_r < 1$, the magnetic field inside the substance is weaker than the external applied field ($B = \\mu_r B_0 < B_0$), causing the magnetic field lines to be expelled (repelled) from the interior of the material.\n\nFrom the figure, diagram (a) clearly shows field lines bending outward and being expelled from material $X$, which is characteristic of a diamagnetic substance ($\\mu_r < 1$). \n\nDiagram (b) shows field lines being concentrated inside material $Y$, which corresponds to a paramagnetic substance ($\\mu_r > 1$).\n\nHence, Diagram (a) represents a diamagnetic material because it expels magnetic field lines as $\\mu_r < 1$.\n\nIndependent check: Diamagnetic materials have μr < 1 and expel magnetic field lines. In diagram (a), lines bend away from sample X (no lines pass through it) — expulsion, so X is diamagnetic. In diagram (b), lines converge through Y — concentration (μr > 1), para/ferromagnetic. Hence option B.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The magnetic field lines in the presence of two different materials, $X$ and $Y$, placed in a uniform magnetic field are shown in the figure. Which diagram represents a diamagnetic material, and what is the correct reason?",
+  "options": [
+   "Diagram (a), because it concentrates magnetic field lines as $\\mu_r > 1$",
+   "Diagram (a), because it expels magnetic field lines as $\\mu_r < 1$",
+   "Diagram (b), because it concentrates magnetic field lines as $\\mu_r > 1$",
+   "Diagram (b), because it expels magnetic field lines as $\\mu_r < 1$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "For a diamagnetic substance, the magnetic susceptibility is negative ($\\chi_m < 0$).\n\nThe relative magnetic permeability is:\n$$\\mu_r = 1 + \\chi_m < 1$$\n\nBecause $\\mu_r < 1$, the magnetic field inside the substance is weaker than the external applied field ($B = \\mu_r B_0 < B_0$), causing the magnetic field lines to be expelled (repelled) from the interior of the material.\n\nFrom the figure, diagram (a) clearly shows field lines bending outward and being expelled from material $X$, which is characteristic of a diamagnetic substance ($\\mu_r < 1$). \n\nDiagram (b) shows field lines being concentrated inside material $Y$, which corresponds to a paramagnetic substance ($\\mu_r > 1$).\n\nHence, Diagram (a) represents a diamagnetic material because it expels magnetic field lines as $\\mu_r < 1$.",
+  "distractor_notes": "A encodes the mistake of claiming diagram (a) concentrates field lines with relative permeability greater than unity.\nC encodes the error of correctly identifying diagram (b) as paramagnetic but confusing paramagnetism with diamagnetism.\nD encodes the mistake of misidentifying the field pattern in diagram (b) as field expulsion.",
+  "figure": {
+   "kind": "diagram",
+   "description": "Two sub-diagrams arranged side-by-side, labeled '(a)' on the left and '(b)' on the right.\nIn diagram (a): A horizontal rectangular block labeled 'X' is centered within a uniform magnetic field represented by horizontal lines with arrowheads pointing to the right. As the field lines approach block X, they bend outward away from the block, leaving the interior of X with visibly fewer field lines than the surrounding region.\nIn diagram (b): An identical horizontal rectangular block labeled 'Y' is placed in the same uniform magnetic field. As the field lines approach block Y, they bend gently inward towards the block and pass through it, so that the lines inside Y are closer together (higher density) than in the region outside.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1
+ }
+}

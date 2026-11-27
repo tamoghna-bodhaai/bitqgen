@@ -1,0 +1,80 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Adjoint determinant properties",
+  "archetype": "direct computation",
+  "brief": "Straightforward 3×3 (or 2×2) determinant evaluation, or adjoint relation |adj A| = |A|ⁿ⁻¹; one clean computation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:104",
+   "2024s2:107",
+   "2024s1:101"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $A$ is a $3 \\times 3$ matrix and $|A| = 3$, then $|\\operatorname{adj}(\\operatorname{adj} A)|$ is equal to:",
+ "options": [
+  "3",
+  "9",
+  "27",
+  "81"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": [
+  "figs/q128_optA_v1.png",
+  "figs/q128_optB_v1.png",
+  "figs/q128_optC_v1.png",
+  "figs/q128_optD_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a 3×3 matrix, |adj A| = |A|² = 9. Applying the same identity again gives |adj(adj A)| = 9² = 81.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The images labeled as options show chemical structures and do not match the numerical answer choices in the text."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "For an $n \\times n$ matrix, $|\\operatorname{adj} A| = |A|^{n-1}$. Here $n=3$, so $|\\operatorname{adj} A| = 3^{2} = 9$. Then $|\\operatorname{adj}(\\operatorname{adj} A)| = |\\operatorname{adj} A|^{3-1} = 9^{2} = 81$.\n\nIndependent check: For a 3×3 matrix, |adj A| = |A|² = 9. Applying the same identity again gives |adj(adj A)| = 9² = 81.",
+ "solution": "For an $n\\times n$ matrix, $|\\operatorname{adj} A|=|A|^{n-1}$. Thus, for $n=3$,\n$$|\\operatorname{adj}(\\operatorname{adj} A)|=|\\operatorname{adj} A|^2=(|A|^2)^2=3^4=81.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $A$ is a $3 \\times 3$ matrix and $|A| = 3$, then $|\\operatorname{adj}(\\operatorname{adj} A)|$ is equal to:",
+  "options": [
+   "3",
+   "9",
+   "27",
+   "81"
+  ],
+  "option_smiles": [
+   "O=C(O)c1ccccc1",
+   "O=C(O)c1ccccc1O",
+   "O=C(O)c1ccc(O)cc1",
+   "O=C(O)c1cc(O)ccc1"
+  ],
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For an $n \\times n$ matrix, $|\\operatorname{adj} A| = |A|^{n-1}$. Here $n=3$, so $|\\operatorname{adj} A| = 3^{2} = 9$. Then $|\\operatorname{adj}(\\operatorname{adj} A)| = |\\operatorname{adj} A|^{3-1} = 9^{2} = 81$.",
+  "distractor_notes": "no distractors needed"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

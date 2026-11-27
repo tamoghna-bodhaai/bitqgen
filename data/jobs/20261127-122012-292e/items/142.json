@@ -1,0 +1,64 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "evaluate a limit of the form (sin kx)/(sin ax) or (1−cos)/x² type using standard trigonometric limits",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:112",
+   "2021:140",
+   "2022:98"
+  ]
+ },
+ "status": "failed",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to 0}\\frac{1 - \\cos 4x}{x \\tan 2x}$.",
+ "options": [
+  "1",
+  "16",
+  "8",
+  "4"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Using $1 - \\cos 4x = 2\\sin^2 2x$ and $\\tan 2x = \\frac{\\sin 2x}{\\cos 2x}$, the limit becomes\n$\\lim_{x\\to 0} \\frac{2\\sin^2 2x}{x \\cdot \\frac{\\sin 2x}{\\cos 2x}} = \\lim_{x\\to 0} \\frac{2\\sin 2x \\cos 2x}{x} = \\lim_{x\\to 0} \\frac{\\sin 4x}{x} = 4\\lim_{x\\to 0} \\frac{\\sin 4x}{4x} = 4 \\cdot 1 = 4$.",
+ "solution": "Using $1-\\cos 4x=2\\sin^2 2x$ and $\\tan 2x=\\frac{\\sin 2x}{\\cos 2x}$,\n$$\\lim_{x\\to0}\\frac{1-\\cos4x}{x\\tan2x}=\\lim_{x\\to0}\\frac{\\sin4x}{x}=4\\lim_{x\\to0}\\frac{\\sin4x}{4x}=4.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to 0}\\frac{1 - \\cos 4x}{x \\tan 2x}$.",
+  "options": [
+   "1",
+   "4",
+   "8",
+   "16"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Using $1 - \\cos 4x = 2\\sin^2 2x$ and $\\tan 2x = \\frac{\\sin 2x}{\\cos 2x}$, the limit becomes\n$\\lim_{x\\to 0} \\frac{2\\sin^2 2x}{x \\cdot \\frac{\\sin 2x}{\\cos 2x}} = \\lim_{x\\to 0} \\frac{2\\sin 2x \\cos 2x}{x} = \\lim_{x\\to 0} \\frac{\\sin 4x}{x} = 4\\lim_{x\\to 0} \\frac{\\sin 4x}{4x} = 4 \\cdot 1 = 4$.",
+  "distractor_notes": "A: 1 (missing factor from sin4x/x). C: 8 (likely from treating denominator as x^2). D: 16 (doubled error)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

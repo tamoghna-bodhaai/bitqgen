@@ -1,0 +1,68 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Bohr energy for hydrogen-like ions",
+  "archetype": "ratio of two situations",
+  "brief": "Compare energy of an electron in a given orbit of a hydrogen-like ion with the corresponding orbit in hydrogen; ask for the ratio in terms of Z and n.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:60",
+   "2025s2:34",
+   "2021:66"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a hydrogen-like ion of nuclear charge $+Ze$, what is $E_n(\\text{ion})/E_n(\\text{H})$ for electrons in the same orbit $n$?",
+ "options": [
+  "$Z$",
+  "$Z^2$",
+  "$\\dfrac{Z^2}{n^2}$",
+  "$\\dfrac{n^2}{Z^2}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a hydrogen-like ion, E_n = -13.6 Z²/n² eV; for H, E_n = -13.6/n² eV. The ratio is Z².",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E_n(\\text{ion})=-13.6\\dfrac{Z^2}{n^2}\\ \\text{eV}$; $E_n(\\text{H})=-13.6\\dfrac{1}{n^2}\\ \\text{eV}$.\\n$\\dfrac{E_n(\\text{ion})}{E_n(\\text{H})}=Z^2$.\n\nIndependent check: For a hydrogen-like ion, E_n = -13.6 Z²/n² eV; for H, E_n = -13.6/n² eV. The ratio is Z².",
+ "solution": "For a hydrogen-like ion, $E_n=-13.6\\dfrac{Z^2}{n^2}\\,\\text{eV}$, while for hydrogen, $E_n=-13.6\\dfrac{1}{n^2}\\,\\text{eV}$.\n$$\\frac{E_n(\\text{ion})}{E_n(\\text{H})}=Z^2$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a hydrogen-like ion of nuclear charge $+Ze$, what is $E_n(\\text{ion})/E_n(\\text{H})$ for electrons in the same orbit $n$?",
+  "options": [
+   "$Z$",
+   "$Z^2$",
+   "$\\dfrac{Z^2}{n^2}$",
+   "$\\dfrac{n^2}{Z^2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$E_n(\\text{ion})=-13.6\\dfrac{Z^2}{n^2}\\ \\text{eV}$; $E_n(\\text{H})=-13.6\\dfrac{1}{n^2}\\ \\text{eV}$.\\n$\\dfrac{E_n(\\text{ion})}{E_n(\\text{H})}=Z^2$.",
+  "distractor_notes": "A: Uses a linear rather than squared dependence on nuclear charge.\nC: Retains the ion energy factor without dividing by the hydrogen energy.\nD: Takes the reciprocal dependence and introduces an orbit factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

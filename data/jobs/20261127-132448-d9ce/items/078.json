@@ -1,0 +1,68 @@
+{
+ "qno": 78,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 78,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Solubility product",
+  "archetype": "single-formula numerical",
+  "brief": "Given the solubility of a sparingly soluble salt of type AB2, compute Ksp including the common-ion-free stoichiometric exponents.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:33",
+   "2025s1:35",
+   "2023s2:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "A sparingly soluble salt $\\text{AB}_2$ dissociates as $\\text{AB}_2(s)\\rightleftharpoons\\text{A}^{2+}+2\\text{B}^-$. If its molar solubility in pure water is $1.0\\times10^{-2}\\ \\text{mol L}^{-1}$, what is its $K_{sp}$?",
+ "options": [
+  "$1.0\\times10^{-6}$",
+  "$2.0\\times10^{-6}$",
+  "$8.0\\times10^{-6}$",
+  "$4.0\\times10^{-6}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the molar solubility be s = 1.0×10⁻² M. Then [A²⁺] = s and [B⁻] = 2s, so Ksp = s(2s)² = 4s³ = 4.0×10⁻⁶.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\\text{A}^{2+}]=s,\\quad[\\text{B}^-]=2s$\n$K_{sp}=s(2s)^2=4s^3=4(1.0\\times10^{-2})^3=4.0\\times10^{-6}$\n\nIndependent check: Let the molar solubility be s = 1.0×10⁻² M. Then [A²⁺] = s and [B⁻] = 2s, so Ksp = s(2s)² = 4s³ = 4.0×10⁻⁶.",
+ "solution": "For molar solubility $s$, $[\\text{A}^{2+}]=s$ and $[\\text{B}^-]=2s$. Thus,\n$$K_{sp}=s(2s)^2=4s^3=4(1.0\\times10^{-2})^3=4.0\\times10^{-6}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A sparingly soluble salt $\\text{AB}_2$ dissociates as $\\text{AB}_2(s)\\rightleftharpoons\\text{A}^{2+}+2\\text{B}^-$. If its molar solubility in pure water is $1.0\\times10^{-2}\\ \\text{mol L}^{-1}$, what is its $K_{sp}$?",
+  "options": [
+   "$1.0\\times10^{-6}$",
+   "$2.0\\times10^{-6}$",
+   "$4.0\\times10^{-6}$",
+   "$8.0\\times10^{-6}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$[\\text{A}^{2+}]=s,\\quad[\\text{B}^-]=2s$\n$K_{sp}=s(2s)^2=4s^3=4(1.0\\times10^{-2})^3=4.0\\times10^{-6}$",
+  "distractor_notes": "A: uses $s^3$ and omits the stoichiometric concentration factor.\nB: includes a factor of $2$ instead of $4$.\nD: cubes $2s$ rather than using $s(2s)^2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

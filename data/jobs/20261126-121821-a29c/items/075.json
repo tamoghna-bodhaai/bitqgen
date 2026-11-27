@@ -1,0 +1,67 @@
+{
+ "qno": 75,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 75,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism",
+  "brief": "Two straightforward universal statements and four conclusions; test basic All/Some deduction with Venn logic.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:78",
+   "2026s1:81",
+   "2026s2:71"
+  ]
+ },
+ "status": "ok",
+ "stem": "Read the given statements and conclusions carefully. Assuming that the given statements are true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll shirts are garments.\nAll garments are fabrics.\n\n**Conclusions:**\nI. All fabrics are shirts.\nII. Some fabrics are garments.\nIII. All shirts are fabrics.\nIV. No shirt is a fabric.",
+ "options": [
+  "Only I and III follow",
+  "Only II and III follow",
+  "Only I, II and III follow",
+  "Only II and IV follow"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Shirts ⊆ Garments ⊆ Fabrics. III (All shirts are fabrics) follows by transitivity. II (Some fabrics are garments) follows by conversion of 'All garments are fabrics' under standard exam existential import (verified by set enumeration: with nonempty shirts, II and III hold in every model). I is an invalid converse; IV contradicts III. Hence only II and III follow.",
+   "answer": "B",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the set of shirts be $S$, garments be $G$, and fabrics be $F$.\n1. \"All shirts are garments\" implies $S \\subseteq G$.\n2. \"All garments are fabrics\" implies $G \\subseteq F$.\n\nCombining the two statements gives the nested relation $S \\subseteq G \\subseteq F$.\n\nEvaluating the conclusions:\n- Conclusion I: \"All fabrics are shirts\" means $F \\subseteq S$. From $S \\subseteq F$, we cannot deduce $F \\subseteq S$ (illicit conversion of a universal affirmative). Hence, I does not follow.\n- Conclusion II: \"Some fabrics are garments\" means $F \\cap G \\neq \\emptyset$. Since $G \\subseteq F$ and $G$ is non-empty, all garments are fabrics, which directly implies some fabrics are garments. Hence, II follows.\n- Conclusion III: \"All shirts are fabrics\" means $S \\subseteq F$. By transitivity of subsets ($S \\subseteq G$ and $G \\subseteq F$), $S \\subseteq F$ must hold. Hence, III follows.\n- Conclusion IV: \"No shirt is a fabric\" means $S \\cap F = \\emptyset$. Since $S \\subseteq F$, this directly contradicts the statements. Hence, IV does not follow.\n\nTherefore, only conclusions II and III follow.\n\nIndependent check: Shirts ⊆ Garments ⊆ Fabrics. III (All shirts are fabrics) follows by transitivity. II (Some fabrics are garments) follows by conversion of 'All garments are fabrics' under standard exam existential import (verified by set enumeration: with nonempty shirts, II and III hold in every model). I is an invalid converse; IV contradicts III. Hence only II and III follow.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Read the given statements and conclusions carefully. Assuming that the given statements are true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll shirts are garments.\nAll garments are fabrics.\n\n**Conclusions:**\nI. All fabrics are shirts.\nII. Some fabrics are garments.\nIII. All shirts are fabrics.\nIV. No shirt is a fabric.",
+  "options": [
+   "Only I and III follow",
+   "Only II and III follow",
+   "Only I, II and III follow",
+   "Only II and IV follow"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let the set of shirts be $S$, garments be $G$, and fabrics be $F$.\n1. \"All shirts are garments\" implies $S \\subseteq G$.\n2. \"All garments are fabrics\" implies $G \\subseteq F$.\n\nCombining the two statements gives the nested relation $S \\subseteq G \\subseteq F$.\n\nEvaluating the conclusions:\n- Conclusion I: \"All fabrics are shirts\" means $F \\subseteq S$. From $S \\subseteq F$, we cannot deduce $F \\subseteq S$ (illicit conversion of a universal affirmative). Hence, I does not follow.\n- Conclusion II: \"Some fabrics are garments\" means $F \\cap G \\neq \\emptyset$. Since $G \\subseteq F$ and $G$ is non-empty, all garments are fabrics, which directly implies some fabrics are garments. Hence, II follows.\n- Conclusion III: \"All shirts are fabrics\" means $S \\subseteq F$. By transitivity of subsets ($S \\subseteq G$ and $G \\subseteq F$), $S \\subseteq F$ must hold. Hence, III follows.\n- Conclusion IV: \"No shirt is a fabric\" means $S \\cap F = \\emptyset$. Since $S \\subseteq F$, this directly contradicts the statements. Hence, IV does not follow.\n\nTherefore, only conclusions II and III follow.",
+  "distractor_notes": "- Option A wrongly accepts Conclusion I, committing the fallacy of illicit conversion of an A-type proposition (assuming 'All A are B' implies 'All B are A').\n- Option C wrongly includes Conclusion I alongside II and III.\n- Option D incorrectly takes Conclusion IV to follow, which is a contradictory statement to the true deduction that all shirts are fabrics.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

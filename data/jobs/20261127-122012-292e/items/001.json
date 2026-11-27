@@ -1,0 +1,68 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Faraday's law",
+  "archetype": "flux change over time",
+  "brief": "A circular loop of changing radius in a uniform magnetic field; ask for the induced emf as a function of time via dΦ/dt (no figure needed).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:32",
+   "2024s2:9",
+   "2023s2:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A circular loop lies in a plane perpendicular to a uniform magnetic field of 0.2 T. The radius of the loop changes with time as r = (2 + 0.5*t) m. The magnitude of the induced emf in the loop as a function of time is",
+ "options": [
+  "0.05*pi*(t + 4) V",
+  "0.5*pi*(t + 4) V",
+  "0.2*pi*(t + 4) V",
+  "0.1*pi*(t + 4) V"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\mathcal{E}=B\\left|d(\\pi r^2)/dt\\right|=2\\pi B r\\,dr/dt=0.2\\pi(2+0.5t)=0.1\\pi(t+4)\\,\\text{V}.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "r = 2 + 0.5t, so dr/dt = 0.5 m/s. Phi = B*pi*r^2. e = dPhi/dt = B*2*pi*r*(dr/dt) = 0.2*2*pi*(2+0.5t)*0.5 = 0.1*pi*(t+4) V.\n\nIndependent check: \\(\\mathcal{E}=B\\left|d(\\pi r^2)/dt\\right|=2\\pi B r\\,dr/dt=0.2\\pi(2+0.5t)=0.1\\pi(t+4)\\,\\text{V}.",
+ "solution": "Magnetic flux is $\u0005Phi=B\\pi r^2$, so the induced emf magnitude is\n$$\\mathcal{E}=\\left|\\frac{d\\Phi}{dt}\\right|=2\\pi Br\\frac{dr}{dt}.$$\nSubstituting $B=0.2\\,\\text{T}$, $r=2+0.5t$ and $dr/dt=0.5\\,\\text{m s}^{-1}$ gives $\\mathcal{E}=0.1\\pi(t+4)\\,\\text{V}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A circular loop lies in a plane perpendicular to a uniform magnetic field of 0.2 T. The radius of the loop changes with time as r = (2 + 0.5*t) m. The magnitude of the induced emf in the loop as a function of time is",
+  "options": [
+   "0.05*pi*(t + 4) V",
+   "0.1*pi*(t + 4) V",
+   "0.2*pi*(t + 4) V",
+   "0.5*pi*(t + 4) V"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "r = 2 + 0.5t, so dr/dt = 0.5 m/s. Phi = B*pi*r^2. e = dPhi/dt = B*2*pi*r*(dr/dt) = 0.2*2*pi*(2+0.5t)*0.5 = 0.1*pi*(t+4) V.",
+  "distractor_notes": "A: omitted factor of 2 in dA/dt; C: omitted dr/dt; D: omitted the magnetic field B."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

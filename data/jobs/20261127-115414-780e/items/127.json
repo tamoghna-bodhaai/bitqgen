@@ -1,0 +1,64 @@
+{
+ "qno": 127,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 127,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "counting formula",
+  "brief": "Number of functions/one-one functions/onto functions from a small set A to B using nᵐ and inclusion considerations.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:112",
+   "2022:121",
+   "2025s1:107"
+  ]
+ },
+ "status": "failed",
+ "stem": "Let $A$ be a set with $5$ elements and $B$ a set with $4$ elements. The number of onto functions from $A$ to $B$ is",
+ "options": [
+  "120",
+  "240",
+  "625",
+  "1024"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Number of onto functions $f: A \\to B = \\sum_{k=0}^{4} (-1)^k \\binom{4}{k} (4-k)^5 = 4^5 - \\binom{4}{1}3^5 + \\binom{4}{2}2^5 - \\binom{4}{3}1^5 = 1024 - 4 \\times 243 + 6 \\times 32 - 4 = 1024 - 972 + 192 - 4 = 240$.",
+ "solution": "By inclusion–exclusion, the number of onto functions is\n$$4^5-\\binom41 3^5+\\binom42 2^5-\\binom43 1^5=1024-972+192-4=240.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A$ be a set with $5$ elements and $B$ a set with $4$ elements. The number of onto functions from $A$ to $B$ is",
+  "options": [
+   "120",
+   "240",
+   "625",
+   "1024"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Number of onto functions $f: A \\to B = \\sum_{k=0}^{4} (-1)^k \\binom{4}{k} (4-k)^5 = 4^5 - \\binom{4}{1}3^5 + \\binom{4}{2}2^5 - \\binom{4}{3}1^5 = 1024 - 4 \\times 243 + 6 \\times 32 - 4 = 1024 - 972 + 192 - 4 = 240$.",
+  "distractor_notes": "A: 5! for one-one onto (but |A|≠|B|); C: 5^4, number of functions from B to A; D: 4^5, total functions from A to B."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

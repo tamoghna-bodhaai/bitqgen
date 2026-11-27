@@ -1,0 +1,67 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Banking of roads",
+  "archetype": "single-formula numerical",
+  "brief": "Car on a banked curve with no friction; ask for the optimum speed given banking angle and radius, using tan θ = v²/(rg).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:26",
+   "2024s1:8",
+   "2025s2:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "A curved road of radius $120$ m is banked at an angle $\\theta$ such that $\\sin\\theta = 0.6$. What is the speed at which a car can take this curve safely without relying on friction? (Take $g = 10$ m s$^{-2}$.)",
+ "options": [
+  "$30$ km h$^{-1}$",
+  "$97$ km h$^{-1}$",
+  "$144$ km h$^{-1}$",
+  "$108$ km h$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "Given $\\sin\\theta = 0.6$, we have $\\tan\\theta = \\frac{0.6}{0.8} = 0.75$.\nThe optimum banking speed without friction is $v = \\sqrt{R g \\tan\\theta} = \\sqrt{120 \\times 10 \\times 0.75} = \\sqrt{900} = 30\\text{ m s}^{-1}$.\nConverting to $\\text{km h}^{-1}$: $v = 30 \\times \\frac{18}{5} = 108\\text{ km h}^{-1}$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "With no friction, the horizontal component of the normal reaction supplies the centripetal force, and the vertical component balances the weight:\n$$N\\sin\\theta = \\dfrac{mv^2}{r}, \\qquad N\\cos\\theta = mg \\;\\Rightarrow\\; \\tan\\theta = \\dfrac{v^2}{rg}.$$\nSince $\\sin\\theta = 0.6$, we have $\\cos\\theta = 0.8$ and $\\tan\\theta = \\dfrac{3}{4}$.\n$$v^2 = rg\\tan\\theta = 120 \\times 10 \\times \\dfrac{3}{4} = 900 \\;\\Rightarrow\\; v = 30\\ \\text{m s}^{-1}.$$\nConverting to km h$^{-1}$: $30 \\times \\dfrac{18}{5} = 108$ km h$^{-1}$.\n\nIndependent check: Given $\\sin\\theta = 0.6$, we have $\\tan\\theta = \\frac{0.6}{0.8} = 0.75$.\nThe optimum banking speed without friction is $v = \\sqrt{R g \\tan\\theta} = \\sqrt{120 \\times 10 \\times 0.75} = \\sqrt{900} = 30\\text{ m s}^{-1}$.\nConverting to $\\text{km h}^{-1}$: $v = 30 \\times \\frac{18}{5} = 108\\text{ km h}^{-1}$.",
+ "solution": "Without friction, $N\\sin\\theta = \\dfrac{mv^2}{r}$ and $N\\cos\\theta = mg$, so $\\tan\\theta = \\dfrac{v^2}{rg}$.\nGiven $\\sin\\theta = 0.6$, $\\cos\\theta = 0.8$ and $\\tan\\theta = \\dfrac{3}{4}$.\n$$v^2 = rg\\tan\\theta = 120\\times10\\times\\dfrac{3}{4} = 900 \\Rightarrow v = 30\\ \\text{m s}^{-1}$$\nConverting, $v = 30\\times\\dfrac{18}{5} = 108$ km h$^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A curved road of radius $120$ m is banked at an angle $\\theta$ such that $\\sin\\theta = 0.6$. What is the speed at which a car can take this curve safely without relying on friction? (Take $g = 10$ m s$^{-2}$.)",
+  "options": [
+   "$30$ km h$^{-1}$",
+   "$97$ km h$^{-1}$",
+   "$108$ km h$^{-1}$",
+   "$144$ km h$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "With no friction, the horizontal component of the normal reaction supplies the centripetal force, and the vertical component balances the weight:\n$$N\\sin\\theta = \\dfrac{mv^2}{r}, \\qquad N\\cos\\theta = mg \\;\\Rightarrow\\; \\tan\\theta = \\dfrac{v^2}{rg}.$$\nSince $\\sin\\theta = 0.6$, we have $\\cos\\theta = 0.8$ and $\\tan\\theta = \\dfrac{3}{4}$.\n$$v^2 = rg\\tan\\theta = 120 \\times 10 \\times \\dfrac{3}{4} = 900 \\;\\Rightarrow\\; v = 30\\ \\text{m s}^{-1}.$$\nConverting to km h$^{-1}$: $30 \\times \\dfrac{18}{5} = 108$ km h$^{-1}$.",
+  "distractor_notes": "A: correct value $30$ m s$^{-1}$ reported in km h$^{-1}$ without converting (unit slip).\nB: uses $\\sin\\theta$ instead of $\\tan\\theta$: $v^2 = 120 \\times 10 \\times 0.6 = 720$, so $v \\approx 26.8$ m s$^{-1} \\approx 97$ km h$^{-1}$.\nD: uses $\\cot\\theta = \\dfrac{4}{3}$ instead of $\\tan\\theta$ (components swapped): $v^2 = 1600$, so $v = 40$ m s$^{-1} = 144$ km h$^{-1}$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

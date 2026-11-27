@@ -1,0 +1,68 @@
+{
+ "qno": 38,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 38,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Empirical and molecular formula",
+  "archetype": "stoichiometry bookkeeping",
+  "brief": "Combustion of an organic compound containing C, H and O: from masses of CO2 and H2O collected, deduce percentage of oxygen and then the molecular formula using an independent molar-mass clue.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:35",
+   "2026s2:57",
+   "2022:52"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $0.90$ g sample of a compound containing carbon, hydrogen and oxygen gives $1.32$ g of $\\text{CO}_2$ and $0.54$ g of $\\text{H}_2\\text{O}$ on complete combustion. If its molar mass is $90$ g mol$^{-1}$, find its molecular formula. Use $\\text{C}=12$, $\\text{H}=1$ and $\\text{O}=16$.",
+ "options": [
+  "$\\text{CH}_2\\text{O}$",
+  "$\\text{C}_2\\text{H}_4\\text{O}_2$",
+  "$\\text{C}_3\\text{H}_6\\text{O}_3$",
+  "$\\text{C}_3\\text{H}_8\\text{O}_2$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "n(C) = 1.32/44 = 0.03 mol; n(H) = 2(0.54/18) = 0.06 mol. Oxygen mass = 0.90 − 0.36 − 0.06 = 0.48 g, so n(O) = 0.03 mol. The atom ratio is 1:2:1, giving empirical formula CH₂O (30 g mol⁻¹). The molar mass is 3 times this, so the molecular formula is C₃H₆O₃.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n_{\\text{C}}=\\dfrac{1.32}{44}=0.030\\,\\text{mol};\\quad n_{\\text{H}}=2\\left(\\dfrac{0.54}{18}\\right)=0.060\\,\\text{mol}$\n$m_{\\text{O}}=0.90-(0.030\\times12)-(0.060\\times1)=0.48\\,\\text{g};\\quad n_{\\text{O}}=\\dfrac{0.48}{16}=0.030\\,\\text{mol}$\n$\\text{C:H:O}=1:2:1\\Rightarrow\\text{empirical formula} = \\text{CH}_2\\text{O}$\n$\\dfrac{90}{30}=3\\Rightarrow\\text{molecular formula} = \\text{C}_3\\text{H}_6\\text{O}_3$\n\nIndependent check: n(C) = 1.32/44 = 0.03 mol; n(H) = 2(0.54/18) = 0.06 mol. Oxygen mass = 0.90 − 0.36 − 0.06 = 0.48 g, so n(O) = 0.03 mol. The atom ratio is 1:2:1, giving empirical formula CH₂O (30 g mol⁻¹). The molar mass is 3 times this, so the molecular formula is C₃H₆O₃.",
+ "solution": "From the combustion products, $n_C=1.32/44=0.030$ mol and $n_H=2(0.54/18)=0.060$ mol. The oxygen mass is $0.90-(0.030)(12)-(0.060)(1)=0.48$ g, so $n_O=0.48/16=0.030$ mol.\nThus the atom ratio is $C:H:O=1:2:1$, giving empirical formula $CH_2O$ with molar mass $30$ g mol$^{-1}$. Since $90/30=3$, the molecular formula is $C_3H_6O_3$. (C)",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A $0.90$ g sample of a compound containing carbon, hydrogen and oxygen gives $1.32$ g of $\\text{CO}_2$ and $0.54$ g of $\\text{H}_2\\text{O}$ on complete combustion. If its molar mass is $90$ g mol$^{-1}$, find its molecular formula. Use $\\text{C}=12$, $\\text{H}=1$ and $\\text{O}=16$.",
+  "options": [
+   "$\\text{CH}_2\\text{O}$",
+   "$\\text{C}_2\\text{H}_4\\text{O}_2$",
+   "$\\text{C}_3\\text{H}_6\\text{O}_3$",
+   "$\\text{C}_3\\text{H}_8\\text{O}_2$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$n_{\\text{C}}=\\dfrac{1.32}{44}=0.030\\,\\text{mol};\\quad n_{\\text{H}}=2\\left(\\dfrac{0.54}{18}\\right)=0.060\\,\\text{mol}$\n$m_{\\text{O}}=0.90-(0.030\\times12)-(0.060\\times1)=0.48\\,\\text{g};\\quad n_{\\text{O}}=\\dfrac{0.48}{16}=0.030\\,\\text{mol}$\n$\\text{C:H:O}=1:2:1\\Rightarrow\\text{empirical formula} = \\text{CH}_2\\text{O}$\n$\\dfrac{90}{30}=3\\Rightarrow\\text{molecular formula} = \\text{C}_3\\text{H}_6\\text{O}_3$",
+  "distractor_notes": "A: reports the empirical formula instead of the molecular formula.\nB: multiplies the empirical formula by two rather than three.\nD: gives an incorrect hydrogen-to-oxygen ratio from the combustion data."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

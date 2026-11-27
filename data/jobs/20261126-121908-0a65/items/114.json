@@ -1,0 +1,68 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "e^f (g + g') form",
+  "archetype": "recognise derivative pattern",
+  "brief": "Integrate an e^f(x)[f(x) + f'(x)] type integrand directly.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:99",
+   "2024s1:93",
+   "2025s2:128"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of $\\displaystyle\\int e^{\\sin x}(\\cos^2 x-\\sin x)\\,dx$ is",
+ "options": [
+  "$e^{\\sin x}\\cos x+C$",
+  "$e^{\\sin x}\\sin x+C$",
+  "$e^{\\sin x}+C$",
+  "$e^{\\sin x}\\cos^2 x+C$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\frac{d}{dx}(e^{\\sin x}\\cos x)=e^{\\sin x}(\\cos^2 x-\\sin x)\\), so the integral is option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{d}{dx}(e^{\\sin x}\\cos x)=e^{\\sin x}(\\cos^2x-\\sin x)$\n\nIndependent check: \\(\\frac{d}{dx}(e^{\\sin x}\\cos x)=e^{\\sin x}(\\cos^2 x-\\sin x)\\), so the integral is option A.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The value of $\\displaystyle\\int e^{\\sin x}(\\cos^2 x-\\sin x)\\,dx$ is",
+  "options": [
+   "$e^{\\sin x}\\cos x+C$",
+   "$e^{\\sin x}\\sin x+C$",
+   "$e^{\\sin x}+C$",
+   "$e^{\\sin x}\\cos^2 x+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{d}{dx}(e^{\\sin x}\\cos x)=e^{\\sin x}(\\cos^2x-\\sin x)$",
+  "distractor_notes": "B: Uses the wrong factor for the product rule.\nC: Omits the derivative of the inner function.\nD: Treats $\\cos^2x$ as the product-rule factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

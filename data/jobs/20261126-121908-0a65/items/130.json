@@ -1,0 +1,68 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "line equation",
+  "archetype": "slope relation",
+  "brief": "Find the equation of a line through a given point making a specified angle/slope relation with a given line.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:116",
+   "2025s2:115",
+   "2026s1:104"
+  ]
+ },
+ "status": "ok",
+ "stem": "The line $y=\\dfrac{x}{\\sqrt3}+1$ has inclination $\\theta$. Find the equation of the line through $(1,-2)$ whose inclination is $2\\theta$.",
+ "options": [
+  "$\\sqrt3x-y-\\sqrt3-2=0$",
+  "$\\sqrt3x-y-\\sqrt3+2=0$",
+  "$x-\\sqrt3y-1+2\\sqrt3=0$",
+  "$\\sqrt3x+y-\\sqrt3+2=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The given line has slope \\(1/\\sqrt3\\), so \\(\\theta=\\pi/6\\). Thus \\(2\\theta=\\pi/3\\), with slope \\(\\sqrt3\\). Through \\((1,-2)\\): \\(y+2=\\sqrt3(x-1)\\), which is option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Given line slope $=\\tan 30^\\circ=\\dfrac{1}{\\sqrt3}$, so $\\theta=30^\\circ$.\\nRequired slope $=\\tan(2\\theta)=\\tan 60^\\circ=\\sqrt3$.\\n$y+2=\\sqrt3(x-1)\\Rightarrow \\sqrt3x-y-\\sqrt3-2=0$.\n\nIndependent check: The given line has slope \\(1/\\sqrt3\\), so \\(\\theta=\\pi/6\\). Thus \\(2\\theta=\\pi/3\\), with slope \\(\\sqrt3\\). Through \\((1,-2)\\): \\(y+2=\\sqrt3(x-1)\\), which is option A.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The line $y=\\dfrac{x}{\\sqrt3}+1$ has inclination $\\theta$. Find the equation of the line through $(1,-2)$ whose inclination is $2\\theta$.",
+  "options": [
+   "$\\sqrt3x-y-\\sqrt3-2=0$",
+   "$\\sqrt3x-y-\\sqrt3+2=0$",
+   "$x-\\sqrt3y-1+2\\sqrt3=0$",
+   "$\\sqrt3x+y-\\sqrt3+2=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Given line slope $=\\tan 30^\\circ=\\dfrac{1}{\\sqrt3}$, so $\\theta=30^\\circ$.\\nRequired slope $=\\tan(2\\theta)=\\tan 60^\\circ=\\sqrt3$.\\n$y+2=\\sqrt3(x-1)\\Rightarrow \\sqrt3x-y-\\sqrt3-2=0$.",
+  "distractor_notes": "B: sign error in the point's $y$-coordinate.\\nC: uses the given line's slope instead of doubling its inclination.\\nD: uses the negative of the required slope."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

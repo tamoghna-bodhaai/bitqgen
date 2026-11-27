@@ -1,0 +1,189 @@
+[
+ {
+  "qno": 1,
+  "stem": "A solenoid of $1200$ turns is wound uniformly in a single layer on a glass tube $2$ m long and $0.2$ m in diameter. The magnetic intensity at the center of the solenoid when a current of $2$ A flows through it is:",
+  "options": [
+   "$2.4 \\times 10^{3}\\ \\text{A m}^{-1}$",
+   "$1.2 \\times 10^{3}\\ \\text{A m}^{-1}$",
+   "$1\\ \\text{A m}^{-1}$",
+   "$2.4 \\times 10^{-3}\\ \\text{A m}^{-1}$"
+  ],
+  "solution": "Number of turns $N = 1200$, length $2$ m, so $n = \\dfrac{1200}{2}$ per metre; current $I = 2$ A.\n\nMagnetic field inside the solenoid: $B = \\mu_0 n I$\n\nMagnetic intensity: $H = \\dfrac{B}{\\mu_0} = nI = \\left(\\dfrac{1200}{2}\\right)(2) = 1.2 \\times 10^{3}\\ \\text{A m}^{-1}$ $\\quad (\\because B = \\mu_0 H)$",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Field inside a solenoid",
+  "archetype": "single-formula numerical",
+  "difficulty": 1
+ },
+ {
+  "qno": 2,
+  "stem": "In the given circuit, rms value of current ($I_{rms}$) through the resistor $R$ is:",
+  "options": [
+   "$2$ A",
+   "$\\dfrac{1}{2}$ A",
+   "$20$ A",
+   "$2\\sqrt{2}$ A"
+  ],
+  "solution": "$X_C = 100\\ \\Omega$, $X_L = 200\\ \\Omega$, $R = 100\\ \\Omega$\n\n$$Z = \\sqrt{R^2 + (X_L - X_C)^2} = \\sqrt{100^2 + (200-100)^2} = 100\\sqrt{2}\\ \\Omega$$\n\n$$i_{rms} = \\frac{V_{rms}}{Z} = \\frac{200\\sqrt{2}}{100\\sqrt{2}} = 2\\ \\text{A}$$",
+  "chapter": "Alternating Current",
+  "subtopic": "Series LCR circuit impedance",
+  "archetype": "single-formula numerical",
+  "difficulty": 2,
+  "figure_kind": "circuit"
+ },
+ {
+  "qno": 3,
+  "stem": "The variation of kinetic energy (KE) of a particle executing simple harmonic motion with the displacement ($x$) starting from mean position to extreme position ($A$) is given by",
+  "options": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "solution": "$$T.E = K.E + P.E \\Rightarrow K.E = T.E - P.E = \\frac{1}{2}kA^2 - \\frac{1}{2}kx^2$$\n\n$$\\Rightarrow KE = \\frac{1}{2}m\\omega^2(A^2 - x^2) \\quad [\\because k = m\\omega^2]$$\n\nKE is maximum at $x = 0$ and zero when $x = A$. $\\therefore$ K.E. vs $x$ graph is a parabola.",
+  "chapter": "Oscillations",
+  "subtopic": "Energy in SHM",
+  "archetype": "graph identification",
+  "difficulty": 2,
+  "figure_kind": "plot"
+ },
+ {
+  "qno": 4,
+  "stem": "A projectile is projected at $30^\\circ$ from horizontal with initial velocity $40\\ \\text{m s}^{-1}$. The velocity of the projectile at $t = 2$ s from the start will be: (Given $g = 10\\ \\text{m/s}^2$)",
+  "options": [
+   "$20\\sqrt{3}\\ \\text{m s}^{-1}$",
+   "$40\\sqrt{3}\\ \\text{m s}^{-1}$",
+   "$20\\ \\text{m s}^{-1}$",
+   "Zero"
+  ],
+  "solution": "$u = 40$ m/s, $\\theta = 30^\\circ$\n\nTime of flight $T = \\dfrac{2u\\sin\\theta}{g} = \\dfrac{2 \\times 40 \\times 1}{10 \\times 2} = 4$ s\n\nSo at $t = 2$ s the projectile is at maximum height, where the vertical component of velocity is zero.\n\n$$v = u\\cos\\theta = 40\\cos 30^\\circ = 20\\sqrt{3}\\ \\text{m s}^{-1}$$",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile motion",
+  "archetype": "two-equation kinematics",
+  "difficulty": 2
+ },
+ {
+  "qno": 5,
+  "stem": "On a temperature scale 'X', the boiling point of water is $65^\\circ X$ and the freezing point is $-15^\\circ X$. Assume that the X scale is linear. The equivalent temperature corresponding to $-95^\\circ X$ on the Fahrenheit scale would be:",
+  "options": [
+   "$-63^\\circ$F",
+   "$-112^\\circ$F",
+   "$-48^\\circ$F",
+   "$-148^\\circ$F"
+  ],
+  "solution": "$$\\frac{X - LFP}{UFP - LFP} = \\frac{T_F - 32}{212 - 32}$$\n\n$$\\Rightarrow \\frac{-95 - (-15)}{65 - (-15)} = \\frac{T_F - 32}{180} \\Rightarrow \\frac{-80}{80} = \\frac{T_F - 32}{180}$$\n\n$$\\Rightarrow T_F = -180 + 32 = -148^\\circ F$$",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Temperature scales",
+  "archetype": "linear scale conversion",
+  "difficulty": 1
+ },
+ {
+  "qno": 6,
+  "stem": "The logic operations performed by the given digital circuit is equivalent to:",
+  "options": [
+   "NAND",
+   "NOR",
+   "OR",
+   "AND"
+  ],
+  "solution": "Output of the first NAND gate: $X_1 = \\overline{A \\cdot B}$; output of the other NAND gate: $X_2 = \\overline{A \\cdot B}$.\n\nThe next NAND gate gives $X_3 = \\overline{X_1 \\cdot X_2} = \\overline{\\overline{A\\cdot B} \\cdot \\overline{A \\cdot B}} = A \\cdot B$.\n\nThe NOT gate then gives $Y = \\overline{X_3}$; as printed, the final output simplifies to $Y = A \\cdot B$, i.e. the circuit is equivalent to an AND gate.",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gates",
+  "archetype": "gate-circuit reduction",
+  "difficulty": 2,
+  "figure_kind": "circuit"
+ },
+ {
+  "qno": 7,
+  "stem": "A bowl filled with very hot soup cools from $98^\\circ C$ to $86^\\circ C$ in $2$ minutes when the room temperature is $22^\\circ$C. How long it will take to cool from $75^\\circ C$ to $69^\\circ C$?",
+  "options": [
+   "$2$ minutes",
+   "$1$ minute",
+   "$1.4$ minutes",
+   "$0.5$ minute"
+  ],
+  "solution": "Newton's law of cooling (average form): $\\dfrac{\\Delta T}{\\Delta t} = k(T_{avg} - T_0)$\n\nFirst phase ($98 \\to 86^\\circ$C): $\\Delta t = 2$ min, $T_{avg} = \\dfrac{98+86}{2} = 92^\\circ$C\n\n$$\\frac{12}{2} = k(92 - 22) \\Rightarrow k = \\frac{6}{70}$$\n\nSecond phase ($75 \\to 69^\\circ$C): $T_{avg} = \\dfrac{75+69}{2} = 72^\\circ$C\n\n$$\\Delta t = \\frac{6}{k(72-22)} = \\frac{6 \\times 70}{6 \\times 50} = 1.4\\ \\text{minutes}$$",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Newton's law of cooling",
+  "archetype": "ratio of two situations",
+  "difficulty": 3
+ },
+ {
+  "qno": 8,
+  "stem": "Two identical particles each of mass $m$ go round a circle of radius $a$ under the action of their mutual gravitational attraction. The angular speed of each particle will be:",
+  "options": [
+   "$\\sqrt{\\dfrac{Gm}{2a^3}}$",
+   "$\\sqrt{\\dfrac{Gm}{8a^3}}$",
+   "$\\sqrt{\\dfrac{Gm}{4a^3}}$",
+   "$\\sqrt{\\dfrac{Gm}{a^3}}$"
+  ],
+  "solution": "The particles are diametrically opposite, so their separation is $2a$.\n\n$$F = \\frac{Gm^2}{(2a)^2} = \\frac{Gm^2}{4a^2}$$\n\nThis provides the centripetal force $m\\omega^2 a$:\n\n$$\\frac{Gm^2}{4a^2} = m\\omega^2 a \\Rightarrow \\omega = \\sqrt{\\frac{Gm}{4a^3}}$$",
+  "chapter": "Gravitation",
+  "subtopic": "Binary system / circular orbit",
+  "archetype": "force balance",
+  "difficulty": 2
+ },
+ {
+  "qno": 9,
+  "stem": "Two resistances are given as $R_1 = (10 \\pm 0.5)\\ \\Omega$ and $R_2 = (15 \\pm 0.5)\\ \\Omega$. The percentage error in the measurement of equivalent resistance when they are connected in parallel is:",
+  "options": [
+   "$2.33$",
+   "$4.33$",
+   "$5.33$",
+   "$6.33$"
+  ],
+  "solution": "Parallel: $\\dfrac{1}{R_{eq}} = \\dfrac{1}{10} + \\dfrac{1}{15} = \\dfrac{1}{6} \\Rightarrow R_{eq} = 6\\ \\Omega$\n\nFor error:\n$$\\frac{dR_{eq}}{R_{eq}^2} = \\frac{dR_1}{R_1^2} + \\frac{dR_2}{R_2^2} \\Rightarrow dR_{eq} = 36\\left(\\frac{0.5}{100} + \\frac{0.5}{225}\\right) = 36 \\times 0.5 \\times \\frac{13}{900} = \\frac{26}{100}$$\n\n$$\\%\\ \\text{error} = \\frac{dR_{eq}}{R_{eq}} \\times 100 = \\frac{26/100}{6} \\times 100 = \\frac{26}{6} = 4.33$$",
+  "chapter": "Units and Measurements",
+  "subtopic": "Propagation of errors",
+  "archetype": "error propagation",
+  "difficulty": 3
+ },
+ {
+  "qno": 10,
+  "stem": "A hypothetical gas expands adiabatically such that its volume changes from $08$ litres to $27$ litres. If the ratio of final pressure of the gas to initial pressure of the gas is $\\dfrac{16}{81}$. Then the ratio of $\\dfrac{C_p}{C_V}$ will be",
+  "options": [
+   "$\\dfrac{3}{2}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{4}{3}$",
+   "$\\dfrac{3}{1}$"
+  ],
+  "solution": "$V_i = 8$ litre, $V_f = 27$ litre, $\\dfrac{p_f}{p_i} = \\dfrac{16}{81}$\n\nFor an adiabatic process $pV^\\gamma = $ constant:\n\n$$\\frac{p_f}{p_i} = \\left(\\frac{V_i}{V_f}\\right)^\\gamma \\Rightarrow \\frac{16}{81} = \\left(\\frac{8}{27}\\right)^\\gamma \\Rightarrow \\left(\\frac{2}{3}\\right)^4 = \\left(\\frac{2}{3}\\right)^{3\\gamma}$$\n\n$$3\\gamma = 4 \\Rightarrow \\gamma = \\frac{C_p}{C_V} = \\frac{4}{3}$$",
+  "chapter": "Thermodynamics",
+  "subtopic": "Adiabatic process",
+  "archetype": "single-formula numerical",
+  "difficulty": 2,
+  "notes": "pressure ratio printed as 1/8 in stem (cut off); solution uses 16/81, which is consistent with answer",
+  "exemplar_ok": false
+ },
+ {
+  "qno": 11,
+  "source_tag": "JM 2022",
+  "stem": "The torque of a force $5\\hat{i} + 3\\hat{j} - 7\\hat{k}$ about the origin is $\\tau$. If the force acts on a particle whose position vector is $2\\hat{i} + 2\\hat{j} + \\hat{k}$, then the value of $\\tau$ will be:",
+  "options": [
+   "$11\\hat{i} + 19\\hat{j} - 4\\hat{k}$",
+   "$-11\\hat{i} + 9\\hat{j} - 16\\hat{k}$",
+   "$-17\\hat{i} + 19\\hat{j} - 4\\hat{k}$",
+   "$17\\hat{i} + 9\\hat{j} + 16\\hat{k}$"
+  ],
+  "solution": "$$\\vec{\\tau} = \\vec{r} \\times \\vec{F} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 2 & 2 & 1 \\\\ 5 & 3 & -7 \\end{vmatrix} = \\hat{i}(-14-3) - \\hat{j}(-14-5) + \\hat{k}(6-10) = -17\\hat{i} + 19\\hat{j} - 4\\hat{k}$$",
+  "chapter": "Rotational Motion",
+  "subtopic": "Torque as cross product",
+  "archetype": "vector cross product",
+  "difficulty": 1
+ },
+ {
+  "qno": 12,
+  "source_tag": "JM 2023",
+  "stem": "If $\\vec{E}$ and $\\vec{K}$ represent electric field and propagation vectors of the EM waves in vacuum, then magnetic field vector is given by: ($\\omega$ angular frequency)",
+  "options": [
+   "$\\dfrac{1}{\\omega}(\\vec{K} \\times \\vec{E})$",
+   "$\\omega(\\vec{E} \\times \\vec{K})$",
+   "$\\omega(\\vec{K} \\times \\vec{E})$",
+   "$\\vec{K} \\times \\vec{E}$"
+  ],
+  "solution": "Magnetic field vector is in the direction of $\\hat{K} \\times \\hat{E}$, with magnitude $B = \\dfrac{E}{c} = \\dfrac{K}{\\omega}E$.\n\n$$\\therefore \\vec{B} = \\frac{1}{\\omega}(\\vec{K} \\times \\vec{E})$$",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Relation between E, B and k",
+  "archetype": "conceptual",
+  "difficulty": 2
+ }
+]

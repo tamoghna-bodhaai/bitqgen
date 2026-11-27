@@ -1,0 +1,68 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus and conjugate",
+  "archetype": "1/z = z̄/|z|²",
+  "brief": "Given a complex number in x+iy form, compute |z| and z̄, then evaluate an expression like z·z̄ or z/z̄ as a+ib.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:134",
+   "2026s2:94",
+   "2026s2:95"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $z=-2+3i$, evaluate $\\dfrac{1}{z}+\\dfrac{z}{\\bar z}$ in the form $a+ib$.",
+ "options": [
+  "$\\dfrac{-7-9i}{13}$",
+  "$\\dfrac{-7+15i}{13}$",
+  "$\\dfrac{-5-12i}{13}$",
+  "$\\dfrac{-7-15i}{13}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(1/z=(-2-3i)/13\\) and \\(z/\\bar z=(-5-12i)/13\\). Their sum is \\((-7-15i)/13\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\bar z=-2-3i,\\quad |z|^2=13,\\quad \\dfrac1z=\\dfrac{-2-3i}{13}$.<br>$\\dfrac{z}{\\bar z}=\\dfrac{(-2+3i)^2}{13}=\\dfrac{-5-12i}{13}$.<br>$\\dfrac1z+\\dfrac{z}{\\bar z}=\\dfrac{-7-15i}{13}$.\n\nIndependent check: \\(1/z=(-2-3i)/13\\) and \\(z/\\bar z=(-5-12i)/13\\). Their sum is \\((-7-15i)/13\\).",
+ "solution": "Since $|z|^2=13$ and $\\bar z=-2-3i$,\n$$\\frac1z=\\frac{-2-3i}{13},\\qquad \\frac{z}{\\bar z}=\\frac{(-2+3i)^2}{13}=\\frac{-5-12i}{13}.$$\nHence $\\displaystyle \\frac1z+\\frac{z}{\\bar z}=\\frac{-7-15i}{13}$. ∎",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $z=-2+3i$, evaluate $\\dfrac{1}{z}+\\dfrac{z}{\\bar z}$ in the form $a+ib$.",
+  "options": [
+   "$\\dfrac{-7-15i}{13}$",
+   "$\\dfrac{-7+15i}{13}$",
+   "$\\dfrac{-5-12i}{13}$",
+   "$\\dfrac{-7-9i}{13}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\bar z=-2-3i,\\quad |z|^2=13,\\quad \\dfrac1z=\\dfrac{-2-3i}{13}$.<br>$\\dfrac{z}{\\bar z}=\\dfrac{(-2+3i)^2}{13}=\\dfrac{-5-12i}{13}$.<br>$\\dfrac1z+\\dfrac{z}{\\bar z}=\\dfrac{-7-15i}{13}$.",
+  "distractor_notes": "B: Reverses the sign of the imaginary part.\nC: Evaluates only $z/\\bar z$ and omits $1/z$.\nD: Uses the wrong sign for the imaginary part of $1/z$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

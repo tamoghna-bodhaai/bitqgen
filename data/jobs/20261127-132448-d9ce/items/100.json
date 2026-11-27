@@ -1,0 +1,68 @@
+{
+ "qno": 100,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 100,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "multi-component series",
+  "brief": "Alpha-numeric series combining letter shifts and number patterns across terms; find the next term.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:73",
+   "2026s2:86",
+   "2022:90"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the next term in the series: **A4, C7, F11, J16, ____**",
+ "options": [
+  "O21",
+  "N22",
+  "O22",
+  "P23"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Letter positions increase by +2, +3, +4, then +5: J → O. Numbers increase by +3, +4, +5, then +6: 16 → 22.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Letters advance by +2, +3, +4, then +5: J → O. Numbers advance by +3, +4, +5, then +6: 16 → 22. Next term: O22.\n\nIndependent check: Letter positions increase by +2, +3, +4, then +5: J → O. Numbers increase by +3, +4, +5, then +6: 16 → 22.",
+ "solution": "Letters advance by $+2,+3,+4$, then $+5$: $J\\to O$. Numbers advance by $+3,+4,+5$, then $+6$: $16+6=22$. Hence, the next term is $O22$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the next term in the series: **A4, C7, F11, J16, ____**",
+  "options": [
+   "O22",
+   "N22",
+   "O21",
+   "P23"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Letters advance by +2, +3, +4, then +5: J → O. Numbers advance by +3, +4, +5, then +6: 16 → 22. Next term: O22.",
+  "distractor_notes": "B: letter advances by only 4 places. C: number increases by only 5. D: letter advances by 6 places and the number increment is incorrect."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

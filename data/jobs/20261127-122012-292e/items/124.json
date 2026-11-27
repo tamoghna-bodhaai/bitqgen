@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus with conjugates",
+  "archetype": "algebraic simplification",
+  "brief": "compute |z| or 1/z-type expressions combining conjugates, e.g. simplify z·z̄ and (1/z) rewritten via conjugate over modulus squared",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:119",
+   "2026s1:95",
+   "2025s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "If a complex number \\(z\\) satisfies \\(z + |z| = 2 + 8i\\), then \\(|z|\\) equals",
+ "options": [
+  "8",
+  "17",
+  "15",
+  "13"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let z=x+iy and r=|z|. Comparing imaginary parts gives y=8; real parts give x=2-r. Then r²=x²+64=(2-r)²+64, so r=17.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Let \\(z = re^{i\\theta}\\) so \\(|z|=r\\). Then \\(z+|z| = r(\\cos\\theta+1 + i\\sin\\theta) = 2+8i\\).\nEquate imaginary: \\(r\\sin\\theta = 8\\).\nEquate real: \\(r(\\cos\\theta+1) = 2 \\Rightarrow r\\cos\\theta = 2-r\\).\nSquare and add: \\((r\\sin\\theta)^2 + (r\\cos\\theta)^2 = 8^2 + (2-r)^2\\).\nLeft side is \\(r^2\\). Thus \\(r^2 = 64 + 4 - 4r + r^2\\).\nSimplifying, \\(68 - 4r = 0 \\Rightarrow r = 17\\).\nHence \\(|z| = 17\\).\n\nIndependent check: Let z=x+iy and r=|z|. Comparing imaginary parts gives y=8; real parts give x=2-r. Then r²=x²+64=(2-r)²+64, so r=17.",
+ "solution": "Let $z=x+iy$ and $r=|z|$. Equating real and imaginary parts gives $x=2-r$ and $y=8$.\n$$r^2=x^2+y^2=(2-r)^2+64$$\nHence $4r=68$, so $|z|=r=17$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If a complex number \\(z\\) satisfies \\(z + |z| = 2 + 8i\\), then \\(|z|\\) equals",
+  "options": [
+   "8",
+   "13",
+   "15",
+   "17"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let \\(z = re^{i\\theta}\\) so \\(|z|=r\\). Then \\(z+|z| = r(\\cos\\theta+1 + i\\sin\\theta) = 2+8i\\).\nEquate imaginary: \\(r\\sin\\theta = 8\\).\nEquate real: \\(r(\\cos\\theta+1) = 2 \\Rightarrow r\\cos\\theta = 2-r\\).\nSquare and add: \\((r\\sin\\theta)^2 + (r\\cos\\theta)^2 = 8^2 + (2-r)^2\\).\nLeft side is \\(r^2\\). Thus \\(r^2 = 64 + 4 - 4r + r^2\\).\nSimplifying, \\(68 - 4r = 0 \\Rightarrow r = 17\\).\nHence \\(|z| = 17\\).",
+  "distractor_notes": "8 comes from the imaginary part; 13 and 15 come from common Pythagorean triples (5-12-13, 8-15-17) misapplied to the equation."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

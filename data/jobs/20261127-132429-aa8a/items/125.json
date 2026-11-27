@@ -1,0 +1,68 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "complete-the-square",
+  "brief": "Identify the centre and radius of a circle by completing the square in its general equation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:149",
+   "2026s2:113",
+   "2026s2:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "The centre and radius of the circle $x^2+y^2-6x+4y-12=0$ are respectively:",
+ "options": [
+  "$(3,-2),\n4$",
+  "$(-3,2),\n5$",
+  "$(3,-2),\n5$",
+  "$(-3,-2),\n5$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Completing squares gives $(x-3)^2+(y+2)^2=25$, so the centre is $(3,-2)$ and the radius is $5$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(x-3)^2+(y+2)^2=25$\\nCentre $(3,-2)$; radius $5$.\n\nIndependent check: Completing squares gives $(x-3)^2+(y+2)^2=25$, so the centre is $(3,-2)$ and the radius is $5$.",
+ "solution": "Completing squares:\n$$x^2+y^2-6x+4y-12=0\\Rightarrow (x-3)^2+(y+2)^2=25.$$\nComparing with $(x-h)^2+(y-k)^2=r^2$, the centre is $(3,-2)$ and radius is $5$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The centre and radius of the circle $x^2+y^2-6x+4y-12=0$ are respectively:",
+  "options": [
+   "$(3,-2),\n5$",
+   "$(-3,2),\n5$",
+   "$(3,-2),\n4$",
+   "$(-3,-2),\n5$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$(x-3)^2+(y+2)^2=25$\\nCentre $(3,-2)$; radius $5$.",
+  "distractor_notes": "B: Reverses the signs of both centre coordinates. C: Takes the square root of the constant incorrectly. D: Gets the sign of the $y$-coordinate wrong."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

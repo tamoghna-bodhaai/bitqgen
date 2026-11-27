@@ -1,0 +1,68 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Scalar triple product",
+  "archetype": "standard identity",
+  "brief": "Direct scalar triple product of three given simple vectors; ask the numeric value or whether they are coplanar.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:94",
+   "2024s2:123",
+   "2026s2:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $\\vec a=\\hat i+\\hat j$, $\\vec b=\\hat j+\\hat k$ and $\\vec c=\\hat i+\\hat k$, find $[\\vec a,\\vec b,\\vec c]$.",
+ "options": [
+  "$-2$",
+  "$0$",
+  "$2$",
+  "$1$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The scalar triple product is the determinant of the component matrix: [a,b,c] = det[[1,1,0],[0,1,1],[1,0,1]] = 2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\\vec a,\\vec b,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)$\\\\\n$(\\hat j+\\hat k)\\times(\\hat i+\\hat k)=\\hat i+\\hat j-\\hat k$\\\\\n$(\\hat i+\\hat j)\\cdot(\\hat i+\\hat j-\\hat k)=2$\n\nIndependent check: The scalar triple product is the determinant of the component matrix: [a,b,c] = det[[1,1,0],[0,1,1],[1,0,1]] = 2.",
+ "solution": "The scalar triple product is $[\\vec a,\\vec b,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)$.\n$$\\vec b\\times\\vec c=(\\hat j+\\hat k)\\times(\\hat i+\\hat k)=\\hat i+\\hat j-\\hat k$$\nThus $[\\vec a,\\vec b,\\vec c]=(\\hat i+\\hat j)\\cdot(\\hat i+\\hat j-\\hat k)=2$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For $\\vec a=\\hat i+\\hat j$, $\\vec b=\\hat j+\\hat k$ and $\\vec c=\\hat i+\\hat k$, find $[\\vec a,\\vec b,\\vec c]$.",
+  "options": [
+   "$-2$",
+   "$0$",
+   "$2$",
+   "$1$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$[\\vec a,\\vec b,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)$\\\\\n$(\\hat j+\\hat k)\\times(\\hat i+\\hat k)=\\hat i+\\hat j-\\hat k$\\\\\n$(\\hat i+\\hat j)\\cdot(\\hat i+\\hat j-\\hat k)=2$",
+  "distractor_notes": "A: reverses the order of two vectors; B: incorrectly treats the vectors as coplanar; D: omits one of the two nonzero dot-product terms."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

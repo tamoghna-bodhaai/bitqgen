@@ -1,0 +1,68 @@
+{
+ "qno": 72,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 72,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Standard cell EMF",
+  "archetype": "conceptual",
+  "brief": "Given the cell notation of a spontaneous cell at 298 K, ask which is the cathode / direction of electron flow / sign of ΔG — conceptual reasoning about E°cell without heavy computation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:43",
+   "2025s1:55",
+   "2025s1:51"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the spontaneous cell Zn | Zn2+ (1.0 M) || Pb2+ (1.0 M) | Pb at 298 K (Given: E°(Zn2+/Zn) = -0.76 V, E°(Pb2+/Pb) = -0.13 V), which statement is correct?",
+ "options": [
+  "Pb electrode acts as the anode",
+  "The cell reaction has ΔG < 0",
+  "Electrons flow from Pb to Zn in the external circuit",
+  "E°cell = -0.63 V"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "E°cell = E°(Pb²⁺/Pb) − E°(Zn²⁺/Zn) = −0.13 − (−0.76) = +0.63 V. Thus ΔG = −nFE°cell < 0, so (C) is correct.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Higher reduction potential electrode is cathode: Pb. Zn is anode. E°cell = E°cathode - E°anode = -0.13 - (-0.76) = +0.63 V. Since E°cell > 0, ΔG = -nFE°cell < 0. Electrons flow externally from Zn to Pb.\n\nIndependent check: E°cell = E°(Pb²⁺/Pb) − E°(Zn²⁺/Zn) = −0.13 − (−0.76) = +0.63 V. Thus ΔG = −nFE°cell < 0, so (C) is correct.",
+ "solution": "The higher reduction potential electrode, Pb, is the cathode; Zn is the anode.\n$$E^\\fell = -0.13 - (-0.76) = +0.63\\,\\text{V}$$\nSince $\\Delta G = -nFE^\\fell$, we have $\\Delta G < 0$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the spontaneous cell Zn | Zn2+ (1.0 M) || Pb2+ (1.0 M) | Pb at 298 K (Given: E°(Zn2+/Zn) = -0.76 V, E°(Pb2+/Pb) = -0.13 V), which statement is correct?",
+  "options": [
+   "Pb electrode acts as the anode",
+   "Electrons flow from Pb to Zn in the external circuit",
+   "The cell reaction has ΔG < 0",
+   "E°cell = -0.63 V"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Higher reduction potential electrode is cathode: Pb. Zn is anode. E°cell = E°cathode - E°anode = -0.13 - (-0.76) = +0.63 V. Since E°cell > 0, ΔG = -nFE°cell < 0. Electrons flow externally from Zn to Pb.",
+  "distractor_notes": "A: misidentifies cathode as anode; B: reverses electron flow direction; D: gives negative of the correct cell potential."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

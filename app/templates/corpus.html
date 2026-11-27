@@ -1,0 +1,13 @@
+{% extends "base.html" %}{% set nav = "corpus" %}
+{% block body %}
+<h1>Corpus</h1>
+<p class="sub">Past BITSAT papers extracted from <code>bitsat/</code>, the source of syllabus weights, style profiles and author exemplars.</p>
+<div class="card"><table class="t">
+<tr><th>Paper</th><th>Questions</th><th>With figures</th><th>Flagged in source</th><th>View</th></tr>
+{% for p in corpus %}<tr><td><b>{{ p.id }}</b></td>
+  {% if p.pending %}<td colspan="3" class="muted">not extracted yet ({{ p.pages }} column images ready)</td><td></td>
+  {% else %}<td>{{ p.n }}</td><td>{{ p.figs }}</td><td>{{ p.flagged }}</td>
+  <td><a target="_blank" href="/corpus/{{ p.id }}/view/paper.html">paper</a> · <a target="_blank" href="/corpus/{{ p.id }}/view/solutions.html">with solutions</a>
+    · <a href="/corpus/{{ p.id }}/export?content=solutions&fmt=pdf">PDF</a> · <a href="/corpus/{{ p.id }}/export?content=solutions&fmt=docx">DOCX</a></td>{% endif %}</tr>{% endfor %}
+</table></div>
+{% endblock %}

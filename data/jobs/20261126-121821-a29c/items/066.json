@@ -1,0 +1,67 @@
+{
+ "qno": 66,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 66,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement",
+  "archetype": "para jumble (first sentence)",
+  "brief": "Four-sentence jumble about a general topic; pick the correct opening sentence that introduces the subject without pronoun/connector dependencies.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:69",
+   "2025s2:70",
+   "2026s2:69"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following sentences should be the opening sentence of a coherent paragraph formed by them?",
+ "options": [
+  "Consequently, any significant disruption to marine currents can lead to catastrophic shifts in global weather patterns.",
+  "Oceans play a fundamental role in regulating the Earth's climate by absorbing vast amounts of solar radiation.",
+  "They distribute this stored heat across the globe through deep-water and surface ocean currents.",
+  "This continuous circulation prevents extreme temperature variations between equatorial and polar regions."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "B introduces the topic (oceans absorb solar radiation) with no backward references. C's 'They' and 'this stored heat' refer to B; D's 'This continuous circulation' refers to C's currents; A's 'Consequently' concludes from D. Order: B-C-D-A, so opening sentence is B.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "An opening sentence must introduce the primary subject and central theme independently, without relying on backward-referencing pronouns, demonstratives, or transition markers. The sentence in option B introduces the subject 'Oceans' and their primary function of absorbing solar radiation without any prerequisite context. Following this opening, option C elaborates using the pronoun 'They' and the reference 'this stored heat'. Next, option D refers to the currents with 'This continuous circulation'. Finally, option A concludes with the transitional cause-and-effect marker 'Consequently'. Thus, the coherent logical sequence is B -> C -> D -> A, making B the only correct opening sentence.\n\nIndependent check: B introduces the topic (oceans absorb solar radiation) with no backward references. C's 'They' and 'this stored heat' refer to B; D's 'This continuous circulation' refers to C's currents; A's 'Consequently' concludes from D. Order: B-C-D-A, so opening sentence is B.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following sentences should be the opening sentence of a coherent paragraph formed by them?",
+  "options": [
+   "Consequently, any significant disruption to marine currents can lead to catastrophic shifts in global weather patterns.",
+   "Oceans play a fundamental role in regulating the Earth's climate by absorbing vast amounts of solar radiation.",
+   "They distribute this stored heat across the globe through deep-water and surface ocean currents.",
+   "This continuous circulation prevents extreme temperature variations between equatorial and polar regions."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "An opening sentence must introduce the primary subject and central theme independently, without relying on backward-referencing pronouns, demonstratives, or transition markers. The sentence in option B introduces the subject 'Oceans' and their primary function of absorbing solar radiation without any prerequisite context. Following this opening, option C elaborates using the pronoun 'They' and the reference 'this stored heat'. Next, option D refers to the currents with 'This continuous circulation'. Finally, option A concludes with the transitional cause-and-effect marker 'Consequently'. Thus, the coherent logical sequence is B -> C -> D -> A, making B the only correct opening sentence.",
+  "distractor_notes": "Option A is incorrect because it opens with the conjunctive adverb 'Consequently', which denotes a conclusion or consequence of an earlier statement.\nOption C is incorrect because it uses the personal pronoun 'They' and the demonstrative phrase 'this stored heat', requiring a preceding noun phrase to establish reference.\nOption D is incorrect because 'This continuous circulation' is a demonstrative reference that depends on the prior mention of ocean currents.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between parabolas",
+  "archetype": "standard area",
+  "brief": "Find the area enclosed between two parabolas by locating intersection points and integrating the difference.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:128",
+   "2025s2:102",
+   "2024s1:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "The area enclosed by the parabolas $y=x^2$ and $y=2x$ is",
+ "options": [
+  "$\\dfrac{2}{3}$",
+  "$\\dfrac{4}{3}$",
+  "$2$",
+  "$\\dfrac{8}{3}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The curves intersect at x=0 and x=2. The enclosed area is ∫₀²(2x−x²)dx = 4/3.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2=2x\\Rightarrow x=0,2$.\n$A=\\displaystyle\\int_0^2(2x-x^2)\\,dx=\\left[x^2-\\dfrac{x^3}{3}\\right]_0^2=\\dfrac{4}{3}$.\n\nIndependent check: The curves intersect at x=0 and x=2. The enclosed area is ∫₀²(2x−x²)dx = 4/3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The area enclosed by the parabolas $y=x^2$ and $y=2x$ is",
+  "options": [
+   "$\\dfrac{2}{3}$",
+   "$\\dfrac{4}{3}$",
+   "$2$",
+   "$\\dfrac{8}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$x^2=2x\\Rightarrow x=0,2$.\n$A=\\displaystyle\\int_0^2(2x-x^2)\\,dx=\\left[x^2-\\dfrac{x^3}{3}\\right]_0^2=\\dfrac{4}{3}$.",
+  "distractor_notes": "A: loses a factor of $2$ in evaluating the integral. C: uses the intersection interval's width as the area. D: doubles the area unnecessarily."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

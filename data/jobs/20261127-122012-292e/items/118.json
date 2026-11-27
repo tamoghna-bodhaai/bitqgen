@@ -1,0 +1,68 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Mean deviation about median (grouped)",
+  "archetype": "table computation",
+  "brief": "for a small grouped dataset, compute mean deviation about the median through a step-by-step table",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:113",
+   "2024s2:110",
+   "2026s2:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "The mean deviation about the median for the following grouped data is:\nClass interval: 0-10, 10-20, 20-30, 30-40, 40-50\nFrequency: 3, 5, 8, 3, 1",
+ "options": [
+  "9.0",
+  "8.6",
+  "8.5",
+  "11.25"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "N=20; median=20+((10-8)/8)×10=22.5. Using class marks, mean deviation=(3×17.5+5×7.5+8×2.5+3×12.5+1×22.5)/20=8.5.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "N = 20, N/2 = 10\nCumulative frequencies: 3, 8, 16, 19, 20\nMedian class: 20-30\nM = 20 + ((10 - 8)/8) * 10 = 22.5\nClass marks: 5, 15, 25, 35, 45\n|x - M|: 17.5, 7.5, 2.5, 12.5, 22.5\nSum f|x - M| = 3*17.5 + 5*7.5 + 8*2.5 + 3*12.5 + 1*22.5 = 170\nMean deviation = 170/20 = 8.5\n\nIndependent check: N=20; median=20+((10-8)/8)×10=22.5. Using class marks, mean deviation=(3×17.5+5×7.5+8×2.5+3×12.5+1×22.5)/20=8.5.",
+ "solution": "The median is $M=20+\\frac{10-8}{8}\\times10=22.5$. Using class marks $x_i=5,15,25,35,45$,\n$$\\text{Mean deviation about }M=\\frac{\\sum f_i|x_i-M|}{20}=\\frac{170}{20}=8.5.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The mean deviation about the median for the following grouped data is:\nClass interval: 0-10, 10-20, 20-30, 30-40, 40-50\nFrequency: 3, 5, 8, 3, 1",
+  "options": [
+   "8.5",
+   "8.6",
+   "9.0",
+   "11.25"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "N = 20, N/2 = 10\nCumulative frequencies: 3, 8, 16, 19, 20\nMedian class: 20-30\nM = 20 + ((10 - 8)/8) * 10 = 22.5\nClass marks: 5, 15, 25, 35, 45\n|x - M|: 17.5, 7.5, 2.5, 12.5, 22.5\nSum f|x - M| = 3*17.5 + 5*7.5 + 8*2.5 + 3*12.5 + 1*22.5 = 170\nMean deviation = 170/20 = 8.5",
+  "distractor_notes": "8.6: used deviation about the mean instead of the median. 9.0: took 20 as the median. 11.25: took 15 as the median."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

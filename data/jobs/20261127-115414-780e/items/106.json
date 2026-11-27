@@ -1,0 +1,68 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "complete-the-square",
+  "brief": "Reduce a general second-degree equation in x, y to standard form and identify the conic with its centre/focus; easy completing of squares.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:129",
+   "2026s2:113",
+   "2022:106"
+  ]
+ },
+ "status": "ok",
+ "stem": "The radius of the circle represented by the equation $x^2 + y^2 - 4x + 6y - 3 = 0$ is",
+ "options": [
+  "2",
+  "8",
+  "4",
+  "16"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Completing squares gives $(x-2)^2+(y+3)^2=16$, so the radius is $4$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Complete the square: $(x^2 - 4x) + (y^2 + 6y) = 3$. Then $(x-2)^2 - 4 + (y+3)^2 - 9 = 3$, giving $(x-2)^2 + (y+3)^2 = 16$. Hence radius $= \\sqrt{16} = 4$.\n\nIndependent check: Completing squares gives $(x-2)^2+(y+3)^2=16$, so the radius is $4$.",
+ "solution": "Completing the squares,\n$$(x-2)^2+(y+3)^2=16.$$\nComparing with $(x-h)^2+(y-k)^2=r^2$, the radius is $r=\\sqrt{16}=4$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The radius of the circle represented by the equation $x^2 + y^2 - 4x + 6y - 3 = 0$ is",
+  "options": [
+   "2",
+   "4",
+   "8",
+   "16"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Complete the square: $(x^2 - 4x) + (y^2 + 6y) = 3$. Then $(x-2)^2 - 4 + (y+3)^2 - 9 = 3$, giving $(x-2)^2 + (y+3)^2 = 16$. Hence radius $= \\sqrt{16} = 4$.",
+  "distractor_notes": "A (2) from halving a coefficient; C (8) from using diameter; D (16) from forgetting the square root."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

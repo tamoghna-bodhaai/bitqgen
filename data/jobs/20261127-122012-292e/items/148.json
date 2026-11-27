@@ -1,0 +1,68 @@
+{
+ "qno": 148,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 148,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Symmetric matrices",
+  "archetype": "conceptual",
+  "brief": "statement-based MCQ on symmetric/skew matrices: which of the given expressions (e.g. A+Aᵀ, AAᵀ, A−Aᵀ) is always symmetric or skew-symmetric",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:99",
+   "2024s1:101",
+   "2026s1:116"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $A$ is any square matrix, then which of the following matrices is always symmetric?",
+ "options": [
+  "$A - A^T$",
+  "$A A^T A$",
+  "$A A^T + A^T A$",
+  "$A^2 - A^T$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For (B), \\((AA^T+A^TA)^T=AA^T+A^TA\\), so it is always symmetric. The other options are not always symmetric.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "For any square matrix $A$, we have:\n- $(A - A^T)^T = A^T - A = -(A - A^T)$, so it is skew-symmetric.\n- $(A A^T)^T = A A^T$ and $(A^T A)^T = A^T A$, both are symmetric; the sum of symmetric matrices is symmetric, so $A A^T + A^T A$ is always symmetric.\n- $A A^T A$ is not symmetric in general (e.g., $A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$ gives $A A^T A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$).\n- $A^2 - A^T$ need not be symmetric (same $A$ gives $A^2 - A^T = \\begin{pmatrix} 0 & 0 \\\\ -1 & 0 \\end{pmatrix}$).\nHence only option (B) is always symmetric.\n\nIndependent check: For (B), \\((AA^T+A^TA)^T=AA^T+A^TA\\), so it is always symmetric. The other options are not always symmetric.",
+ "solution": "Using $(XY)^T=Y^T X^T$, we get\n$$\n(AA^T+A^TA)^T=AA^T+A^TA.\n$$\nHence $AA^T+A^TA$ is always symmetric, which is option (C).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $A$ is any square matrix, then which of the following matrices is always symmetric?",
+  "options": [
+   "$A - A^T$",
+   "$A A^T + A^T A$",
+   "$A A^T A$",
+   "$A^2 - A^T$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For any square matrix $A$, we have:\n- $(A - A^T)^T = A^T - A = -(A - A^T)$, so it is skew-symmetric.\n- $(A A^T)^T = A A^T$ and $(A^T A)^T = A^T A$, both are symmetric; the sum of symmetric matrices is symmetric, so $A A^T + A^T A$ is always symmetric.\n- $A A^T A$ is not symmetric in general (e.g., $A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$ gives $A A^T A = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$).\n- $A^2 - A^T$ need not be symmetric (same $A$ gives $A^2 - A^T = \\begin{pmatrix} 0 & 0 \\\\ -1 & 0 \\end{pmatrix}$).\nHence only option (B) is always symmetric.",
+  "distractor_notes": "Option A is skew-symmetric, a common confusion. Option C and D are chosen because students sometimes assume any product involving A and its transpose is symmetric, but products of three matrices need not be symmetric."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

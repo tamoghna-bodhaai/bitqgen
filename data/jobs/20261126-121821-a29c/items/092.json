@@ -1,0 +1,67 @@
+{
+ "qno": 92,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 92,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Skew-symmetric matrices counting",
+  "archetype": "structural counting",
+  "brief": "Count the number of possible skew-symmetric 3×3 matrices with entries from a small given set; use the zero diagonal constraint.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:105",
+   "2024s1:101",
+   "2026s2:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "The number of $3 \\times 3$ skew-symmetric matrices with entries from the set $\\{-1, 0, 1, 2\\}$ is",
+ "options": [
+  "$8$",
+  "$27$",
+  "$64$",
+  "$81$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Skew-symmetry forces diagonal entries = 0 (0 ∈ S). The three upper-triangular entries a12, a13, a23 determine the matrix; their negatives must also lie in {-1,0,1,2}. Since -2 ∉ S, each upper entry must be from {-1,0,1}: 3 choices each. Total 3^3 = 27 (verified by enumeration).",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $A = [a_{ij}]_{3 \\times 3}$ be a skew-symmetric matrix. By definition, $A^T = -A$, which implies:\n1. For the diagonal entries: $a_{ii} = -a_{ii} \\implies a_{ii} = 0$ for $i \\in \\{1, 2, 3\\}$. Since $0 \\in \\{-1, 0, 1, 2\\}$, each diagonal entry must be $0$ (exactly $1$ choice each).\n2. For the off-diagonal entries: $a_{ji} = -a_{ij}$ for all $i \\neq j$.\nBoth $a_{ij}$ and $-a_{ij}$ must belong to the given set $S = \\{-1, 0, 1, 2\\}$:\n- If $a_{ij} = -1$, then $-a_{ij} = 1 \\in S$ (valid).\n- If $a_{ij} = 0$, then $-a_{ij} = 0 \\in S$ (valid).\n- If $a_{ij} = 1$, then $-a_{ij} = -1 \\in S$ (valid).\n- If $a_{ij} = 2$, then $-a_{ij} = -2 \\notin S$ (invalid).\n\nThus, each of the three independent entries $a_{12}, a_{13}, a_{23}$ can be chosen in $3$ ways from $\\{-1, 0, 1\\}$. Once these are chosen, the entries $a_{21}, a_{31}, a_{32}$ are uniquely determined.\n\nTotal number of such matrices = $3^3 = 27$.\n\nIndependent check: Skew-symmetry forces diagonal entries = 0 (0 ∈ S). The three upper-triangular entries a12, a13, a23 determine the matrix; their negatives must also lie in {-1,0,1,2}. Since -2 ∉ S, each upper entry must be from {-1,0,1}: 3 choices each. Total 3^3 = 27 (verified by enumeration).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The number of $3 \\times 3$ skew-symmetric matrices with entries from the set $\\{-1, 0, 1, 2\\}$ is",
+  "options": [
+   "$8$",
+   "$27$",
+   "$64$",
+   "$81$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let $A = [a_{ij}]_{3 \\times 3}$ be a skew-symmetric matrix. By definition, $A^T = -A$, which implies:\n1. For the diagonal entries: $a_{ii} = -a_{ii} \\implies a_{ii} = 0$ for $i \\in \\{1, 2, 3\\}$. Since $0 \\in \\{-1, 0, 1, 2\\}$, each diagonal entry must be $0$ (exactly $1$ choice each).\n2. For the off-diagonal entries: $a_{ji} = -a_{ij}$ for all $i \\neq j$.\nBoth $a_{ij}$ and $-a_{ij}$ must belong to the given set $S = \\{-1, 0, 1, 2\\}$:\n- If $a_{ij} = -1$, then $-a_{ij} = 1 \\in S$ (valid).\n- If $a_{ij} = 0$, then $-a_{ij} = 0 \\in S$ (valid).\n- If $a_{ij} = 1$, then $-a_{ij} = -1 \\in S$ (valid).\n- If $a_{ij} = 2$, then $-a_{ij} = -2 \\notin S$ (invalid).\n\nThus, each of the three independent entries $a_{12}, a_{13}, a_{23}$ can be chosen in $3$ ways from $\\{-1, 0, 1\\}$. Once these are chosen, the entries $a_{21}, a_{31}, a_{32}$ are uniquely determined.\n\nTotal number of such matrices = $3^3 = 27$.",
+  "distractor_notes": "$8$: assumes off-diagonal entries cannot be $0$, allowing only $\\{-1, 1\\}$, giving $2^3 = 8$.\n$64$: overlooks that $-2 \\notin S$ and assumes all $4$ elements can be used for the three independent entries ($4^3 = 64$).\n$81$: mistakenly assumes there are $4$ independent positions with $3$ choices each ($3^4 = 81$).",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

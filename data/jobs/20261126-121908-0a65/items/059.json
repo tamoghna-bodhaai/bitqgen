@@ -1,0 +1,67 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Dipole moment",
+  "archetype": "conceptual",
+  "brief": "Ask which of several triatomic/polyatomic species is non-polar despite polar bonds due to symmetric geometry (dipole moment zero).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:34",
+   "2024s1:35",
+   "2026s2:50"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following molecules contains polar bonds but has a net dipole moment of zero due to its symmetrical geometry?",
+ "options": [
+  "$\\text{SF}_4$",
+  "$\\text{XeF}_4$",
+  "$\\text{NF}_3$",
+  "$\\text{ClF}_3$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "All four have polar bonds (F more electronegative). VSEPR: SF4 (4bp+1lp) seesaw → polar; XeF4 (4bp+2lp) square planar with lone pairs trans → bond dipoles cancel, μ=0; NF3 (3bp+1lp) trigonal pyramidal → polar; ClF3 (3bp+2lp) T-shaped → polar. Only XeF4 is symmetric with zero net dipole.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "A molecule has zero net dipole moment ($\\mu = 0$) if the vector sum of all individual bond dipoles and lone pair moments cancels out symmetrically.\\n\\n1. For $\\text{XeF}_4$:\\n- Central atom $\\text{Xe}$ has $8$ valence electrons.\\n- Forms $4$ single bonds with $\\text{F}$ and has $2$ lone pairs.\\n- Steric number $= 4 + 2 = 6$ ($sp^3d^2$ hybridisation).\\n- Geometry of electron pairs is octahedral, and molecular shape is square planar with the two lone pairs occupying axial positions ($180^\\circ$ apart) to minimize repulsion.\\n- In the square plane, the four polar $\\text{Xe}-\\text{F}$ bond dipoles cancel out in opposite pairs ($180^\\circ$ apart):\\n$$\\vec{\\mu}_{\\text{net}} = 0$$\\n\\n2. For the other species:\\n- $\\text{SF}_4$: Steric number $= 4 + 1 = 5$ ($sp^3d$), see-saw shape; bond dipoles do not cancel ($\\mu \\neq 0$).\\n- $\\text{NF}_3$: Steric number $= 3 + 1 = 4$ ($sp^3$), trigonal pyramidal shape; asymmetric ($\\mu \\approx 0.24\\ \\text{D} \\neq 0$).\\n- $\\text{ClF}_3$: Steric number $= 3 + 2 = 5$ ($sp^3d$), T-shaped; asymmetric ($\\mu \\neq 0$).\\n\\nTherefore, $\\text{XeF}_4$ is non-polar despite containing polar bonds.\n\nIndependent check: All four have polar bonds (F more electronegative). VSEPR: SF4 (4bp+1lp) seesaw → polar; XeF4 (4bp+2lp) square planar with lone pairs trans → bond dipoles cancel, μ=0; NF3 (3bp+1lp) trigonal pyramidal → polar; ClF3 (3bp+2lp) T-shaped → polar. Only XeF4 is symmetric with zero net dipole.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following molecules contains polar bonds but has a net dipole moment of zero due to its symmetrical geometry?",
+  "options": [
+   "$\\text{SF}_4$",
+   "$\\text{XeF}_4$",
+   "$\\text{NF}_3$",
+   "$\\text{ClF}_3$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "A molecule has zero net dipole moment ($\\mu = 0$) if the vector sum of all individual bond dipoles and lone pair moments cancels out symmetrically.\\n\\n1. For $\\text{XeF}_4$:\\n- Central atom $\\text{Xe}$ has $8$ valence electrons.\\n- Forms $4$ single bonds with $\\text{F}$ and has $2$ lone pairs.\\n- Steric number $= 4 + 2 = 6$ ($sp^3d^2$ hybridisation).\\n- Geometry of electron pairs is octahedral, and molecular shape is square planar with the two lone pairs occupying axial positions ($180^\\circ$ apart) to minimize repulsion.\\n- In the square plane, the four polar $\\text{Xe}-\\text{F}$ bond dipoles cancel out in opposite pairs ($180^\\circ$ apart):\\n$$\\vec{\\mu}_{\\text{net}} = 0$$\\n\\n2. For the other species:\\n- $\\text{SF}_4$: Steric number $= 4 + 1 = 5$ ($sp^3d$), see-saw shape; bond dipoles do not cancel ($\\mu \\neq 0$).\\n- $\\text{NF}_3$: Steric number $= 3 + 1 = 4$ ($sp^3$), trigonal pyramidal shape; asymmetric ($\\mu \\approx 0.24\\ \\text{D} \\neq 0$).\\n- $\\text{ClF}_3$: Steric number $= 3 + 2 = 5$ ($sp^3d$), T-shaped; asymmetric ($\\mu \\neq 0$).\\n\\nTherefore, $\\text{XeF}_4$ is non-polar despite containing polar bonds.",
+  "distractor_notes": "Distractor A: SF4 is mistakenly assumed to be a regular tetrahedral geometry (overlooking the equatorial lone pair), which would give zero dipole moment.\nDistractor C: NF3 is confused with BF3; although its lone pair partially opposes the N-F bond moments, it is pyramidal and possesses a non-zero dipole moment.\nDistractor D: ClF3 is incorrectly assumed to have a symmetrical planar shape like trigonal planar, ignoring the two lone pairs that cause a T-shaped asymmetric structure.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

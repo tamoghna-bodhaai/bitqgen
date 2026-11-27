@@ -1,0 +1,64 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Increasing and decreasing functions",
+  "archetype": "sign of derivative",
+  "brief": "Find intervals where a polynomial or rational function is increasing/decreasing by solving f′(x) > 0; requires factorisation of the derivative.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:115",
+   "2023s2:93",
+   "2021:117"
+  ]
+ },
+ "status": "failed",
+ "stem": "The function $f(x) = \\dfrac{x^2 + 2x + 5}{x + 1}$ is strictly increasing on the interval(s)",
+ "options": [
+  "$(-3, -1) \\cup (-1, 1)$",
+  "$(-\\infty, -3) \\cup (1, \\infty)$",
+  "$(-3, 1)$",
+  "$(-\\infty, -3) \\cup (-1, 1)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "By quotient rule,\n$f'(x) = \\dfrac{(2x+2)(x+1) - (x^2+2x+5)\\cdot 1}{(x+1)^2} = \\dfrac{x^2+2x-3}{(x+1)^2} = \\dfrac{(x+3)(x-1)}{(x+1)^2}$.\nSince denominator is positive for $x \\neq -1$, sign of $f'(x)$ is sign of $(x+3)(x-1)$.\n$f'(x) > 0$ when $(x+3)(x-1) > 0$, i.e., $x < -3$ or $x > 1$.\nThus $f$ is strictly increasing on $(-\\infty, -3) \\cup (1, \\infty)$.",
+ "solution": "$$f'(x)=\\frac{(2x+2)(x+1)-(x^2+2x+5)}{(x+1)^2}=\\frac{(x+3)(x-1)}{(x+1)^2}.$$\nSince $(x+1)^2>0$ for $x\\ne -1$, $f'(x)>0$ when $x<-3$ or $x>1$.\nHence, $f$ is strictly increasing on $(-\\infty,-3)\\cup(1,\\infty)$.}",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The function $f(x) = \\dfrac{x^2 + 2x + 5}{x + 1}$ is strictly increasing on the interval(s)",
+  "options": [
+   "$(-3, -1) \\cup (-1, 1)$",
+   "$(-\\infty, -3) \\cup (1, \\infty)$",
+   "$(-3, 1)$",
+   "$(-\\infty, -3) \\cup (-1, 1)$"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "By quotient rule,\n$f'(x) = \\dfrac{(2x+2)(x+1) - (x^2+2x+5)\\cdot 1}{(x+1)^2} = \\dfrac{x^2+2x-3}{(x+1)^2} = \\dfrac{(x+3)(x-1)}{(x+1)^2}$.\nSince denominator is positive for $x \\neq -1$, sign of $f'(x)$ is sign of $(x+3)(x-1)$.\n$f'(x) > 0$ when $(x+3)(x-1) > 0$, i.e., $x < -3$ or $x > 1$.\nThus $f$ is strictly increasing on $(-\\infty, -3) \\cup (1, \\infty)$.",
+  "distractor_notes": "A: sign error, takes interval where f'(x) < 0 and excludes -1. C: forgets domain and ignores squared denominator, taking (x+3)(x-1) < 0. D: mixes one correct branch with wrong branch including -1."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,42 @@
+<form id="export" class="card export" onsubmit="return doExport(event, this)" data-base="{{ base }}">
+  <h2 style="margin-top:0">Export</h2>
+  <div class="row">
+    <div><label>Content</label>
+      <select name="content">
+        <option value="paper">Question paper</option>
+        <option value="solutions">Paper with solutions</option>
+        <option value="key">Answer key only</option>
+      </select></div>
+    <div><label>Format</label>
+      <select name="fmt"><option value="pdf">PDF</option><option value="docx">Word (DOCX)</option><option value="html">HTML (offline .zip)</option></select></div>
+  </div>
+  <label>Sections</label>
+  <div class="secs">{% for s in sections %}<label class="check"><input type="checkbox" name="sec" value="{{ s }}" checked> {{ s }}</label>{% endfor %}</div>
+  <label class="check"><input type="checkbox" name="instructions" checked> Instructions box</label>
+  <label class="check"><input type="checkbox" name="answer_key" checked> Answer key at the end (question paper)</label>
+  <div class="toolbar" style="margin-top:12px">
+    <button type="submit">Download</button>
+    <a class="btn ghost" href="{{ base }}/export/all.zip">Download everything (.zip)</a>
+    <span class="muted small exp-status"></span>
+  </div>
+  <p class="small muted" style="margin:6px 0 0">The PDF uses the same 2-column layout as the preview. In the DOCX, equations stay editable as native Word math.</p>
+</form>
+<script>
+async function doExport(ev, f){
+  ev.preventDefault();
+  const secs = [...f.querySelectorAll("input[name=sec]")];
+  const chosen = secs.filter(x=>x.checked).map(x=>x.value);
+  if (!chosen.length) { alert("Pick at least one section"); return false; }
+  const q = new URLSearchParams({content:f.content.value, fmt:f.fmt.value,
+    sections: chosen.length === secs.length ? "" : chosen.join("|"),
+    instructions: f.instructions.checked ? "1" : "0", answer_key: f.answer_key.checked ? "1" : "0"});
+  const st = f.querySelector(".exp-status"); st.textContent = "Rendering…";
+  const r = await fetch(f.dataset.base + "/export?" + q);
+  if (!r.ok) { st.textContent = "Failed: " + await r.text(); return false; }
+  const blob = await r.blob();
+  const name = (r.headers.get("content-disposition")||"").match(/filename\*?=(?:UTF-8'')?"?([^";]+)/)?.[1] || "export";
+  const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = decodeURIComponent(name); a.click();
+  st.textContent = "Downloaded " + decodeURIComponent(name);
+  return false;
+}
+</script>

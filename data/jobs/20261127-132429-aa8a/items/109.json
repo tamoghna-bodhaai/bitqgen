@@ -1,0 +1,68 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetric area",
+  "brief": "Use symmetry about the axis and the property ∫₀ᵃ f(x)dx with f(a−x) to evaluate a nontrivial definite integral without full antiderivatives.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:143",
+   "2026s1:130",
+   "2024s1:93"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/2}\\dfrac{\\sin^4 x+2\\sin^2x\\cos^2x}{\\sin^4x+\\cos^4x+4\\sin^2x\\cos^2x}\\,dx$.",
+ "options": [
+  "$\\dfrac{\\pi}{8}$",
+  "$\\dfrac{\\pi}{4}$",
+  "$\\dfrac{3\\pi}{8}$",
+  "$\\dfrac{\\pi}{2}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let f(x) be the integrand. Then f(x)+f(π/2−x)=1, since the two numerators sum to the denominator. Hence 2I=π/2 and I=π/4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $f(x)$ be the integrand. Then $f\\left(\\dfrac{\\pi}{2}-x\\right)$ has numerator $\\cos^4x+2\\sin^2x\\cos^2x$.\\n$f(x)+f\\left(\\dfrac{\\pi}{2}-x\\right)=1$.\\nBy reflection, $\\int_0^{\\pi/2} f\\left(\\dfrac{\\pi}{2}-x\\right)dx=I$.\\n$2I=\\dfrac{\\pi}{2}\\Rightarrow I=\\dfrac{\\pi}{4}$.\n\nIndependent check: Let f(x) be the integrand. Then f(x)+f(π/2−x)=1, since the two numerators sum to the denominator. Hence 2I=π/2 and I=π/4.",
+ "solution": "Let $f(x)$ denote the integrand. Under $x\\mapsto \\frac{\\pi}{2}-x$, its numerator becomes $\\cos^4x+2\\sin^2x\\cos^2x$; the two numerators sum to the denominator, so $f(x)+f\\left(\\frac{\\pi}{2}-x\\right)=1$.\nBy reflection, both integrals equal $I$, hence $$2I=\\int_0^{\\pi/2}1\\,dx=\\frac{\\pi}{2}\\quad\\Rightarrow\\quad I=\\frac{\\pi}{4}.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/2}\\dfrac{\\sin^4 x+2\\sin^2x\\cos^2x}{\\sin^4x+\\cos^4x+4\\sin^2x\\cos^2x}\\,dx$.",
+  "options": [
+   "$\\dfrac{\\pi}{8}$",
+   "$\\dfrac{\\pi}{4}$",
+   "$\\dfrac{3\\pi}{8}$",
+   "$\\dfrac{\\pi}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Let $f(x)$ be the integrand. Then $f\\left(\\dfrac{\\pi}{2}-x\\right)$ has numerator $\\cos^4x+2\\sin^2x\\cos^2x$.\\n$f(x)+f\\left(\\dfrac{\\pi}{2}-x\\right)=1$.\\nBy reflection, $\\int_0^{\\pi/2} f\\left(\\dfrac{\\pi}{2}-x\\right)dx=I$.\\n$2I=\\dfrac{\\pi}{2}\\Rightarrow I=\\dfrac{\\pi}{4}$.",
+  "distractor_notes": "A: divides the interval length by an extra factor of $2$.\\nC: uses an incorrect reflected numerator when adding the integrands.\\nD: takes the value of $2I$ as the value of $I$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

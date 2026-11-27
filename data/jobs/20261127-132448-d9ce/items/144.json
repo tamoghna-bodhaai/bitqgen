@@ -1,0 +1,68 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Approximations using differentials",
+  "archetype": "differential error",
+  "brief": "Use differentials to approximate the value of √(near a perfect square) or a similar function at a nearby point.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:105",
+   "2025s2:98",
+   "2021:144"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using differentials, the approximate value of $\\sqrt{25.4}$ is",
+ "options": [
+  "$5.04$",
+  "$4.96$",
+  "$5.08$",
+  "$5.40$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For f(x)=√x, linearize at x=25: √25.4 ≈ 5 + 0.4/(2·5) = 5.04.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(x)=\\sqrt{x},\\quad f'(x)=\\dfrac{1}{2\\sqrt{x}}$\\\\\nAt $x=25$, $f(25)=5$ and $f'(25)=\\dfrac{1}{10}$.\\\\\n$\\sqrt{25.4}\\approx 5+\\dfrac{1}{10}(0.4)=5.04$\n\nIndependent check: For f(x)=√x, linearize at x=25: √25.4 ≈ 5 + 0.4/(2·5) = 5.04.",
+ "solution": "For $f(x)=\\sqrt{x}$, $f'(x)=\\dfrac{1}{2\\sqrt{x}}$. Linearizing at $x=25$ gives\n$$\\sqrt{25.4}\\approx 5+\\frac{1}{10}(0.4)=5.04.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using differentials, the approximate value of $\\sqrt{25.4}$ is",
+  "options": [
+   "$4.96$",
+   "$5.04$",
+   "$5.08$",
+   "$5.40$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$f(x)=\\sqrt{x},\\quad f'(x)=\\dfrac{1}{2\\sqrt{x}}$\\\\\nAt $x=25$, $f(25)=5$ and $f'(25)=\\dfrac{1}{10}$.\\\\\n$\\sqrt{25.4}\\approx 5+\\dfrac{1}{10}(0.4)=5.04$",
+  "distractor_notes": "A: uses a negative change in $x$. C: forgets the factor of $2$ in the derivative. D: adds $0.4$ directly to $5$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

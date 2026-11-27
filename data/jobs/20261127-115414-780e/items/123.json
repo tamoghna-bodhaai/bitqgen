@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Double angle formulae",
+  "archetype": "identity verification",
+  "brief": "Prove/verify a compound-angle or double-angle identity numerically: given sin/cos of one angle, evaluate a double-angle or half-angle expression.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:92",
+   "2024s1:108",
+   "2021:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\sin\\theta = \\dfrac{8}{17}$ and $\\theta$ is an acute angle, then $\\cos 2\\theta$ equals",
+ "options": [
+  "$\\dfrac{161}{289}$",
+  "$\\dfrac{240}{289}$",
+  "$\\dfrac{128}{289}$",
+  "$\\dfrac{225}{289}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\cos 2\\theta=1-2\\sin^2\\theta=1-2(64/289)=161/289\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Since $\\theta$ is acute, $\\cos\\theta>0$.\n$\\cos\\theta = \\sqrt{1-\\sin^2\\theta} = \\sqrt{1-\\frac{64}{289}} = \\frac{15}{17}$.\n$\\cos 2\\theta = 1 - 2\\sin^2\\theta = 1 - 2\\cdot\\frac{64}{289} = \\frac{161}{289}$.\n\nIndependent check: \\(\\cos 2\\theta=1-2\\sin^2\\theta=1-2(64/289)=161/289\\).",
+ "solution": "Using the double-angle identity,\n$$\\cos 2\\theta=1-2\\sin^2\\theta=1-2\\left(\\frac{8}{17}\\right)^2=\\frac{161}{289}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $\\sin\\theta = \\dfrac{8}{17}$ and $\\theta$ is an acute angle, then $\\cos 2\\theta$ equals",
+  "options": [
+   "$\\dfrac{240}{289}$",
+   "$\\dfrac{161}{289}$",
+   "$\\dfrac{128}{289}$",
+   "$\\dfrac{225}{289}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Since $\\theta$ is acute, $\\cos\\theta>0$.\n$\\cos\\theta = \\sqrt{1-\\sin^2\\theta} = \\sqrt{1-\\frac{64}{289}} = \\frac{15}{17}$.\n$\\cos 2\\theta = 1 - 2\\sin^2\\theta = 1 - 2\\cdot\\frac{64}{289} = \\frac{161}{289}$.",
+  "distractor_notes": "A → sin 2θ; C → 2 sin²θ; D → cos²θ"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

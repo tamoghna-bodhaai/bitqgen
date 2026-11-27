@@ -1,0 +1,80 @@
+{
+ "qno": 33,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 33,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Carbanion stability and aromaticity",
+  "archetype": "stability ordering",
+  "brief": "Ask to rank given carbocations by stability, including one benzylic, one allylic, one vinyl-type case.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:45",
+   "2024s1:41",
+   "2022:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "The correct stability order of the following carbocations is\n\nI. $\\text{C}_6\\text{H}_5\\text{CH}_2^+$\nII. $\\text{CH}_2=\\text{CH}-\\text{CH}_2^+$\nIII. $\\text{CH}_2=\\text{CH}^+$\nIV. $\\text{C}_5\\text{H}_5^+$ (cyclopentadienyl cation)",
+ "options": [
+  "I > III > II > IV",
+  "I > II > IV > III",
+  "II > I > III > IV",
+  "I > II > III > IV"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": [
+  "figs/q033_optD_v0.png",
+  "figs/q033_optB_v0.png",
+  "figs/q033_optC_v0.png",
+  "figs/q033_optA_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I is benzylic and strongly resonance-stabilized; II is allylic and resonance-stabilized. III lacks comparable resonance stabilization, while IV is a 4π antiaromatic cation and is least stable. Thus I > II > III > IV.",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [
+    "The illustration labeled Option (B) appears to place the double bond adjacent to the cation, unlike the written allyl cation II."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I – benzylic: resonance stabilized by phenyl ring (most stable).\nII – allylic: resonance stabilized.\nIII – vinyl: no resonance, highly unstable.\nIV – cyclopentadienyl cation: anti‑aromatic (4π e⁻), extremely unstable.\nStability: I > II > III > IV.\n\nIndependent check: I is benzylic and strongly resonance-stabilized; II is allylic and resonance-stabilized. III lacks comparable resonance stabilization, while IV is a 4π antiaromatic cation and is least stable. Thus I > II > III > IV.",
+ "solution": "Benzylic and allylic carbocations are resonance-stabilized; the benzylic ion has greater stabilization. The vinyl cation is highly unstable, while the cyclopentadienyl cation is antiaromatic with $4\\pi$ electrons.\n$$\\text{I} > \\text{II} > \\text{III} > \\text{IV}$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The correct stability order of the following carbocations is\n\nI. $\\text{C}_6\\text{H}_5\\text{CH}_2^+$\nII. $\\text{CH}_2=\\text{CH}-\\text{CH}_2^+$\nIII. $\\text{CH}_2=\\text{CH}^+$\nIV. $\\text{C}_5\\text{H}_5^+$ (cyclopentadienyl cation)",
+  "options": [
+   "I > II > III > IV",
+   "I > II > IV > III",
+   "II > I > III > IV",
+   "I > III > II > IV"
+  ],
+  "option_smiles": [
+   "[C+]c1ccccc1",
+   "[C+]=CC",
+   "[C+]=C",
+   "c1ccc[cH+]1"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "I – benzylic: resonance stabilized by phenyl ring (most stable).\nII – allylic: resonance stabilized.\nIII – vinyl: no resonance, highly unstable.\nIV – cyclopentadienyl cation: anti‑aromatic (4π e⁻), extremely unstable.\nStability: I > II > III > IV.",
+  "distractor_notes": "A – correct order; B – swaps vinyl and antiaromatic (incorrectly assuming vinyl is the least stable); C – places allyl above benzyl (underestimating benzylic resonance); D – places vinyl above allyl and antic aromatics above allyl."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

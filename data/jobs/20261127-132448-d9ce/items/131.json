@@ -1,0 +1,68 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "sum-to-product",
+  "brief": "Solve an equation like sin θ = cos θ or a simple compound-angle equation and give the general solution.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:92",
+   "2021:125",
+   "2025s2:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\sin 3\\theta=\\cos\\theta$ is",
+ "options": [
+  "$\\theta=\\dfrac{\\pi}{8}+n\\pi$ or $\\theta=\\dfrac{\\pi}{4}+n\\pi$, $n\\in\\mathbb Z$.",
+  "$\\theta=\\dfrac{\\pi}{8}+\\dfrac{n\\pi}{2}$ or $\\theta=\\dfrac{\\pi}{4}+n\\pi$, $n\\in\\mathbb Z$.",
+  "$\\theta=\\dfrac{\\pi}{8}+\\dfrac{n\\pi}{2}$, $n\\in\\mathbb Z$.",
+  "$\\theta=\\dfrac{\\pi}{4}+\\dfrac{n\\pi}{2}$ or $\\theta=\\dfrac{\\pi}{8}+n\\pi$, $n\\in\\mathbb Z$."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Write cosθ = sin(π/2−θ). Then sin3θ = sin(π/2−θ) gives 3θ = π/2−θ+2nπ or 3θ = π−(π/2−θ)+2nπ. Thus θ = π/8+nπ/2 or θ = π/4+nπ.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\cos\\theta=\\sin\\left(\\dfrac{\\pi}{2}-\\theta\\right)$.\\n$3\\theta=\\dfrac{\\pi}{2}-\\theta+2n\\pi\\Rightarrow\\theta=\\dfrac{\\pi}{8}+\\dfrac{n\\pi}{2}$.\\n$3\\theta=\\pi-\\left(\\dfrac{\\pi}{2}-\\theta\\right)+2n\\pi\\Rightarrow\\theta=\\dfrac{\\pi}{4}+n\\pi$.\n\nIndependent check: Write cosθ = sin(π/2−θ). Then sin3θ = sin(π/2−θ) gives 3θ = π/2−θ+2nπ or 3θ = π−(π/2−θ)+2nπ. Thus θ = π/8+nπ/2 or θ = π/4+nπ.",
+ "solution": "Using $\\sin x=\\sin y$ iff $x=y+2n\\pi$ or $x=\\pi-y+2n\\pi$:\n$$3\\theta=\\frac{\\pi}{2}-\\theta+2n\\pi\\quad\\text{or}\\quad 3\\theta=\\pi-\\left(\\frac{\\pi}{2}-\\theta\\right)+2n\\pi.\n$$\nHence $\\theta=\\frac{\\pi}{8}+\\frac{n\\pi}{2}$ or $\\theta=\\frac{\\pi}{4}+n\\pi$, where $n\\in\\mathbb Z$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of $\\sin 3\\theta=\\cos\\theta$ is",
+  "options": [
+   "$\\theta=\\dfrac{\\pi}{8}+\\dfrac{n\\pi}{2}$ or $\\theta=\\dfrac{\\pi}{4}+n\\pi$, $n\\in\\mathbb Z$.",
+   "$\\theta=\\dfrac{\\pi}{8}+n\\pi$ or $\\theta=\\dfrac{\\pi}{4}+n\\pi$, $n\\in\\mathbb Z$.",
+   "$\\theta=\\dfrac{\\pi}{8}+\\dfrac{n\\pi}{2}$, $n\\in\\mathbb Z$.",
+   "$\\theta=\\dfrac{\\pi}{4}+\\dfrac{n\\pi}{2}$ or $\\theta=\\dfrac{\\pi}{8}+n\\pi$, $n\\in\\mathbb Z$."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\cos\\theta=\\sin\\left(\\dfrac{\\pi}{2}-\\theta\\right)$.\\n$3\\theta=\\dfrac{\\pi}{2}-\\theta+2n\\pi\\Rightarrow\\theta=\\dfrac{\\pi}{8}+\\dfrac{n\\pi}{2}$.\\n$3\\theta=\\pi-\\left(\\dfrac{\\pi}{2}-\\theta\\right)+2n\\pi\\Rightarrow\\theta=\\dfrac{\\pi}{4}+n\\pi$.",
+  "distractor_notes": "B: Uses an incorrect period for the first family.\\nC: Omits the second sine-equality family.\\nD: Gives incorrect periods and shifts for the two families."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

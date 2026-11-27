@@ -1,0 +1,67 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "LCR phase angle",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:8",
+   "2025s2:3",
+   "2024s1:29"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a series $LCR$ circuit, the resistance is $40\\ \\Omega$, the inductive reactance is $25\\ \\Omega$, and the capacitive reactance is $65\\ \\Omega$. The alternating current:",
+ "options": [
+  "lags the applied voltage by $45^\\circ$",
+  "leads the applied voltage by $45^\\circ$",
+  "leads the applied voltage by $90^\\circ$",
+  "is in phase with the applied voltage"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "tan φ = (X_L − X_C)/R = (25 − 65)/40 = −1, so φ = −45°. Circuit is net capacitive, hence the current leads the applied voltage by 45°.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a series $LCR$ circuit, the phase angle $\\phi$ of the voltage relative to the current is given by:\n$$\\tan \\phi = \\dfrac{X_L - X_C}{R}$$\n\nGiven:\n- $R = 40\\ \\Omega$\n- $X_L = 25\\ \\Omega$\n- $X_C = 65\\ \\Omega$\n\nSubstituting the values:\n$$\\tan \\phi = \\dfrac{25 - 65}{40} = \\dfrac{-40}{40} = -1$$\n$$\\implies \\phi = -45^\\circ$$\n\nThe negative phase angle indicates that the applied voltage lags the current by $45^\\circ$, or equivalently, the alternating current leads the applied voltage by $45^\\circ$.\n\nIndependent check: tan φ = (X_L − X_C)/R = (25 − 65)/40 = −1, so φ = −45°. Circuit is net capacitive, hence the current leads the applied voltage by 45°.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a series $LCR$ circuit, the resistance is $40\\ \\Omega$, the inductive reactance is $25\\ \\Omega$, and the capacitive reactance is $65\\ \\Omega$. The alternating current:",
+  "options": [
+   "lags the applied voltage by $45^\\circ$",
+   "leads the applied voltage by $45^\\circ$",
+   "leads the applied voltage by $90^\\circ$",
+   "is in phase with the applied voltage"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "For a series $LCR$ circuit, the phase angle $\\phi$ of the voltage relative to the current is given by:\n$$\\tan \\phi = \\dfrac{X_L - X_C}{R}$$\n\nGiven:\n- $R = 40\\ \\Omega$\n- $X_L = 25\\ \\Omega$\n- $X_C = 65\\ \\Omega$\n\nSubstituting the values:\n$$\\tan \\phi = \\dfrac{25 - 65}{40} = \\dfrac{-40}{40} = -1$$\n$$\\implies \\phi = -45^\\circ$$\n\nThe negative phase angle indicates that the applied voltage lags the current by $45^\\circ$, or equivalently, the alternating current leads the applied voltage by $45^\\circ$.",
+  "distractor_notes": "Option A encodes a sign error (confusing leading and lagging phase relationships).\nOption C neglects the resistance $R$ entirely, assuming a purely capacitive circuit where current leads by $90^\\circ$.\nOption D mistakenly assumes resonance ($X_L = X_C$), where current and voltage would be in phase.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

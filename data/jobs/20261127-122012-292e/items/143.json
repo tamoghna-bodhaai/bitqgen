@@ -1,0 +1,68 @@
+{
+ "qno": 143,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 143,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Complementary counting",
+  "archetype": "complement counting",
+  "brief": "count arrangements/selections with at least one condition satisfied using total minus the complementary count",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:128",
+   "2021:147",
+   "2024s1:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many different arrangements of the letters of the word DELHI have at least one vowel in an odd position?",
+ "options": [
+  "108",
+  "96",
+  "84",
+  "120"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total arrangements = 5! = 120. If neither vowel is in an odd position, E and I occupy the two even positions in 2! ways, and the consonants fill the remaining positions in 3! ways: 12. Thus 120 − 12 = 108.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Total arrangements of the 5 distinct letters = 5! = 120.\nComplement: no vowel (E, I) in an odd position (positions 1, 3, 5). Since there are only 2 even positions (2, 4) and 2 vowels, both vowels must occupy the even positions. Number of ways = 2! (arrangements of vowels) × 3! (arrangements of consonants D, L, H in odd positions) = 2 × 6 = 12.\nArrangements with at least one vowel in an odd position = 120 – 12 = 108.\n\nIndependent check: Total arrangements = 5! = 120. If neither vowel is in an odd position, E and I occupy the two even positions in 2! ways, and the consonants fill the remaining positions in 3! ways: 12. Thus 120 − 12 = 108.",
+ "solution": "There are $5!$ total arrangements. The complement has neither vowel in an odd position, so $E$ and $I$ must occupy positions $2$ and $4$.\n$$5!-(2!)(3!)=120-12=108$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many different arrangements of the letters of the word DELHI have at least one vowel in an odd position?",
+  "options": [
+   "108",
+   "96",
+   "84",
+   "120"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Total arrangements of the 5 distinct letters = 5! = 120.\nComplement: no vowel (E, I) in an odd position (positions 1, 3, 5). Since there are only 2 even positions (2, 4) and 2 vowels, both vowels must occupy the even positions. Number of ways = 2! (arrangements of vowels) × 3! (arrangements of consonants D, L, H in odd positions) = 2 × 6 = 12.\nArrangements with at least one vowel in an odd position = 120 – 12 = 108.",
+  "distractor_notes": "A: 108 (correct, total minus complement); B: 96 comes from miscalculating arrangements with no vowel in odd position as 24; C: 84 comes from forgetting to subtract complement; D: 120 is the total number of arrangements."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

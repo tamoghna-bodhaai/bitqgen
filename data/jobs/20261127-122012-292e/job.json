@@ -1,0 +1,108 @@
+{
+ "id": "20261127-122012-292e",
+ "config": {
+  "title": "bitsat practise 4",
+  "subtitle": "150",
+  "pattern_id": "bitsat_150",
+  "counts": null,
+  "profile": "balanced",
+  "difficulty": "harder",
+  "seed": 809735,
+  "workers": 24,
+  "batch_size": 4,
+  "max_revisions": 2,
+  "run_critic": true,
+  "check_figures": true,
+  "export": true,
+  "add_to_bank": true
+ },
+ "status": "done",
+ "stage": "done",
+ "created": 1795762212.2989368,
+ "progress": {
+  "total": 150,
+  "done": 150,
+  "ok": 127,
+  "flagged": 23
+ },
+ "cost": 2.7059,
+ "started": 1795762212.2993927,
+ "cost_by_stage": {
+  "planner": {
+   "calls": 5,
+   "cost": 0.02485,
+   "prompt_tokens": 14293,
+   "completion_tokens": 10601,
+   "truncated": 0
+  },
+  "author_verbal": {
+   "calls": 33,
+   "cost": 0.06668,
+   "prompt_tokens": 41853,
+   "completion_tokens": 85585,
+   "truncated": 1,
+   "batch_questions": 14,
+   "batch_missing": 5,
+   "length_retries": 1
+  },
+  "solver_verbal": {
+   "calls": 21,
+   "cost": 0.0033,
+   "prompt_tokens": 10346,
+   "completion_tokens": 4551,
+   "truncated": 0
+  },
+  "author_pcm": {
+   "calls": 162,
+   "cost": 2.14391,
+   "prompt_tokens": 333659,
+   "completion_tokens": 766822,
+   "truncated": 0,
+   "batch_questions": 123,
+   "batch_missing": 0
+  },
+  "tiebreaker": {
+   "calls": 13,
+   "cost": 0.03214,
+   "prompt_tokens": 11283,
+   "completion_tokens": 2602,
+   "truncated": 0
+  },
+  "solver": {
+   "calls": 118,
+   "cost": 0.06755,
+   "prompt_tokens": 385622,
+   "completion_tokens": 86535,
+   "truncated": 0
+  },
+  "figure_coder": {
+   "calls": 10,
+   "cost": 0.14919,
+   "prompt_tokens": 16744,
+   "completion_tokens": 11570,
+   "truncated": 0
+  },
+  "figure_checker": {
+   "calls": 10,
+   "cost": 0.00209,
+   "prompt_tokens": 7178,
+   "completion_tokens": 2893,
+   "truncated": 1
+  },
+  "critic": {
+   "calls": 5,
+   "cost": 0.2013,
+   "prompt_tokens": 18834,
+   "completion_tokens": 41215,
+   "truncated": 0
+  },
+  "solution_writer": {
+   "calls": 146,
+   "cost": 0.015,
+   "prompt_tokens": 73150,
+   "completion_tokens": 15361,
+   "truncated": 0
+  }
+ },
+ "finished": 1795763645.3616803
+}

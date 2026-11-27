@@ -1,0 +1,68 @@
+{
+ "qno": 39,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 39,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Protective colloids",
+  "archetype": "statement evaluation",
+  "brief": "Evaluate statements on gold number, protective action of lyophilic sols, and Hardy–Schulze rule for coagulation; pick the incorrect one.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:60",
+   "2025s2:35",
+   "2023s2:46"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the incorrect statement about protective colloids and coagulation.",
+ "options": [
+  "A larger gold number indicates greater protective action.",
+  "The gold number is the mass in milligrams of a protective colloid needed to protect 10 mL of a gold sol against coagulation by 1 mL of 10% NaCl solution.",
+  "Lyophilic sols can protect lyophobic sols by forming a protective layer around their particles.",
+  "By the Hardy–Schulze rule, coagulating power increases with the valency of the oppositely charged ion."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A, C, and D are correct. A smaller gold number means greater protective action, so B is incorrect.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Gold number $\n\n\\propto$ inverse of protective power.\nSmaller gold number $\n\n\\Rightarrow$ greater protective action.\nHence statement B is incorrect.\n\nIndependent check: A, C, and D are correct. A smaller gold number means greater protective action, so B is incorrect.",
+ "solution": "Gold number is inversely proportional to protective power: a smaller gold number means greater protective action. Hence statement (A), which claims the opposite, is incorrect.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Select the incorrect statement about protective colloids and coagulation.",
+  "options": [
+   "The gold number is the mass in milligrams of a protective colloid needed to protect 10 mL of a gold sol against coagulation by 1 mL of 10% NaCl solution.",
+   "A larger gold number indicates greater protective action.",
+   "Lyophilic sols can protect lyophobic sols by forming a protective layer around their particles.",
+   "By the Hardy–Schulze rule, coagulating power increases with the valency of the oppositely charged ion."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Gold number $\n\n\\propto$ inverse of protective power.\nSmaller gold number $\n\n\\Rightarrow$ greater protective action.\nHence statement B is incorrect.",
+  "distractor_notes": "A is the definition of gold number; it is not incorrect.\nC describes protective action by lyophilic sols; it is not incorrect.\nD states the Hardy–Schulze rule; it is not incorrect."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

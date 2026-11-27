@@ -1,0 +1,75 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Null point of two charges",
+  "archetype": "force balance",
+  "brief": "Diagram of two point charges of opposite sign fixed a distance apart on a line; find where along the line the net electric field is zero (outside the pair, nearer the smaller charge).",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:6",
+   "2025s1:6",
+   "2025s2:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two point charges, $q_A = +9\\ \\mu\\text{C}$ and $q_B = -4\\ \\mu\\text{C}$, are fixed at points A and B, $10$ cm apart, as shown in the figure. At which point on the line AB is the net electric field zero?",
+ "options": [
+  "$4$ cm from B, between A and B",
+  "$8$ cm from B, on the side of B away from A",
+  "$20$ cm from B, on the side of B away from A",
+  "$20$ cm from A, on the side of A away from B"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q003_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "The charges have opposite signs, so the net electric field can only be zero outside the segment AB, closer to the charge of smaller magnitude (point B). Let the distance from B along the line away from A be d. For the electric fields to cancel: k*|q_A| / (10 + d)^2 = k*|q_B| / d^2 => 9 / (10 + d)^2 = 4 / d^2. Taking the square root gives 3 / (10 + d) = 2 / d => 3d = 20 + 2d => d = 20 cm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The charges have opposite signs. Between A and B their fields point the same way, so the null point must lie outside the pair. It must be on the side of the smaller-magnitude charge, which is B.\n\nLet the null point be a distance $x$ beyond B. Then\n$$\\frac{k(9)}{(10+x)^2}=\\frac{k(4)}{x^2}$$\n$$\\Rightarrow \\frac{3}{10+x}=\\frac{2}{x}$$\n$$\\Rightarrow 3x = 20 + 2x$$\n$$\\Rightarrow x = 20\\ \\text{cm}.$$\n\nSo the field is zero $20$ cm from B, on the side of B away from A. This point is $30$ cm from A.\n\nCheck: $9/30^2 = 0.01$ and $4/20^2 = 0.01$, so the two field magnitudes are equal. ✓\n\nIndependent check: The charges have opposite signs, so the net electric field can only be zero outside the segment AB, closer to the charge of smaller magnitude (point B). Let the distance from B along the line away from A be d. For the electric fields to cancel: k*|q_A| / (10 + d)^2 = k*|q_B| / d^2 => 9 / (10 + d)^2 = 4 / d^2. Taking the square root gives 3 / (10 + d) = 2 / d => 3d = 20 + 2d => d = 20 cm.",
+ "solution": "For opposite charges, fields between A and B point the same way, so the null point lies outside AB, on the side of the smaller charge (B). Let it be $x$ cm beyond B.\n$$\\frac{k(9)}{(10+x)^2}=\\frac{k(4)}{x^2}\\Rightarrow \\frac{3}{10+x}=\\frac{2}{x}$$\n$$3x=20+2x\\Rightarrow x=20\\ \\text{cm}$$\nSo E = 0 at 20 cm from B on the side away from A (30 cm from A). Check: $9/30^2=4/20^2=0.01$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two point charges, $q_A = +9\\ \\mu\\text{C}$ and $q_B = -4\\ \\mu\\text{C}$, are fixed at points A and B, $10$ cm apart, as shown in the figure. At which point on the line AB is the net electric field zero?",
+  "options": [
+   "$4$ cm from B, between A and B",
+   "$8$ cm from B, on the side of B away from A",
+   "$20$ cm from B, on the side of B away from A",
+   "$20$ cm from A, on the side of A away from B"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The charges have opposite signs. Between A and B their fields point the same way, so the null point must lie outside the pair. It must be on the side of the smaller-magnitude charge, which is B.\n\nLet the null point be a distance $x$ beyond B. Then\n$$\\frac{k(9)}{(10+x)^2}=\\frac{k(4)}{x^2}$$\n$$\\Rightarrow \\frac{3}{10+x}=\\frac{2}{x}$$\n$$\\Rightarrow 3x = 20 + 2x$$\n$$\\Rightarrow x = 20\\ \\text{cm}.$$\n\nSo the field is zero $20$ cm from B, on the side of B away from A. This point is $30$ cm from A.\n\nCheck: $9/30^2 = 0.01$ and $4/20^2 = 0.01$, so the two field magnitudes are equal. ✓",
+  "distractor_notes": "A: Treats the charges as like charges and solves $3/(10-x)=2/x$ between them, giving $x=4$ cm from B.\nB: Equates the charge ratio linearly instead of taking square roots: $9x=4(10+x)$ gives $x=8$ cm.\nD: Gets the correct magnitude of 20 cm but places the point beyond the larger charge, near A.",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a horizontal straight line extending well beyond both ends of the segment AB. On it mark point A on the left with a small filled circle labelled 'A' and '$+9\\ \\mu$C'. Mark point B to the right of A with a small filled circle labelled 'B' and '$-4\\ \\mu$C'. Put a dimension arrow between A and B labelled '10 cm'. Add no other points or markings.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2
+ }
+}

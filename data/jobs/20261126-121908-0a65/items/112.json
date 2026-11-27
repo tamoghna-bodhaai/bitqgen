@@ -1,0 +1,67 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Variable separable",
+  "archetype": "separate and solve",
+  "brief": "Solve a variable separable DE of the form dy/dx = f(x)g(y) and apply an initial condition to find the constant.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:97",
+   "2026s2:128",
+   "2026s1:127"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $y(x)$ be the solution of the differential equation $\\dfrac{dy}{dx} = \\dfrac{x e^x}{y}$ with $y(0) = 2$. Then $y(1)$ is equal to",
+ "options": [
+  "$\\sqrt{3}$",
+  "$2$",
+  "$\\sqrt{5}$",
+  "$\\sqrt{6}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Separate: y dy = x e^x dx → y²/2 = (x−1)e^x + C. y(0)=2 gives 2 = −1 + C → C=3. At x=1: y²/2 = 3 → y = √6 (positive branch). Numerical RK4 confirms y(1) ≈ 2.44949 = √6.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Separating the variables in the given differential equation:\n$$y\\,dy = x e^x\\,dx$$\n\nIntegrating both sides:\n$$\\int y\\,dy = \\int x e^x\\,dx$$\n$$\\dfrac{y^2}{2} = (x - 1)e^x + C$$\n\nApplying the initial condition $y(0) = 2$:\n$$\\dfrac{2^2}{2} = (0 - 1)e^0 + C \\implies 2 = -1 + C \\implies C = 3$$\n\nSo the particular solution is:\n$$\\dfrac{y^2}{2} = (x - 1)e^x + 3$$\n\nSubstitute $x = 1$:\n$$\\dfrac{y^2(1)}{2} = (1 - 1)e^1 + 3 = 3 \\implies y^2(1) = 6$$\n\nSince $y(0) = 2 > 0$ and $y(x) \\neq 0$ for the derivative to exist, $y(x)$ remains positive. Hence, $y(1) = \\sqrt{6}$.\n\nIndependent check: Separate: y dy = x e^x dx → y²/2 = (x−1)e^x + C. y(0)=2 gives 2 = −1 + C → C=3. At x=1: y²/2 = 3 → y = √6 (positive branch). Numerical RK4 confirms y(1) ≈ 2.44949 = √6.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $y(x)$ be the solution of the differential equation $\\dfrac{dy}{dx} = \\dfrac{x e^x}{y}$ with $y(0) = 2$. Then $y(1)$ is equal to",
+  "options": [
+   "$\\sqrt{3}$",
+   "$2$",
+   "$\\sqrt{5}$",
+   "$\\sqrt{6}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "working": "Separating the variables in the given differential equation:\n$$y\\,dy = x e^x\\,dx$$\n\nIntegrating both sides:\n$$\\int y\\,dy = \\int x e^x\\,dx$$\n$$\\dfrac{y^2}{2} = (x - 1)e^x + C$$\n\nApplying the initial condition $y(0) = 2$:\n$$\\dfrac{2^2}{2} = (0 - 1)e^0 + C \\implies 2 = -1 + C \\implies C = 3$$\n\nSo the particular solution is:\n$$\\dfrac{y^2}{2} = (x - 1)e^x + 3$$\n\nSubstitute $x = 1$:\n$$\\dfrac{y^2(1)}{2} = (1 - 1)e^1 + 3 = 3 \\implies y^2(1) = 6$$\n\nSince $y(0) = 2 > 0$ and $y(x) \\neq 0$ for the derivative to exist, $y(x)$ remains positive. Hence, $y(1) = \\sqrt{6}$.",
+  "distractor_notes": "$\\sqrt{3}$: Forgets to multiply by 2 after reaching $\\dfrac{y^2}{2} = 3$, concluding $y = \\sqrt{3}$.\n$2$: Erroneously assumes $(x-1)e^x = 0$ at $x = 0$, giving $\\dfrac{2^2}{2} = C \\implies C = 2$, so $y^2 = 4 \\implies y = 2$.\n$\\sqrt{5}$: Integrates $y\\,dy$ as $y^2$ (missing the factor of $\\dfrac{1}{2}$), yielding $4 = -1 + C \\implies C = 5$, and thus $y = \\sqrt{5}$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Symmetric functions of roots",
+  "archetype": "symmetric functions",
+  "brief": "For a quadratic with given roots, evaluate a symmetric expression like 1/α + 1/β or α²β + αβ² using Vieta's relations.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:124",
+   "2025s1:123",
+   "2025s2:111"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\alpha,\\beta$ are the roots of $3x^2-7x+2=0$, find $\\alpha^2\\beta+\\alpha\\beta^2$.",
+ "options": [
+  "$-\\dfrac{14}{9}$",
+  "$\\dfrac{7}{9}$",
+  "$\\dfrac{14}{9}$",
+  "$\\dfrac{49}{9}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using Vieta’s formulas, \\(\\alpha+\\beta=\\frac73\\) and \\(\\alpha\\beta=\\frac23\\). Thus \\(\\alpha^2\\beta+\\alpha\\beta^2=\\alpha\\beta(\\alpha+\\beta)=\\frac{14}{9}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\alpha+\\beta=\\dfrac73$, $\\alpha\\beta=\\dfrac23$; $\\alpha^2\\beta+\\alpha\\beta^2=\\alpha\\beta(\\alpha+\\beta)=\\dfrac23\\cdot\\dfrac73=\\dfrac{14}{9}$.\n\nIndependent check: Using Vieta’s formulas, \\(\\alpha+\\beta=\\frac73\\) and \\(\\alpha\\beta=\\frac23\\). Thus \\(\\alpha^2\\beta+\\alpha\\beta^2=\\alpha\\beta(\\alpha+\\beta)=\\frac{14}{9}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $\\alpha,\\beta$ are the roots of $3x^2-7x+2=0$, find $\\alpha^2\\beta+\\alpha\\beta^2$.",
+  "options": [
+   "$-\\dfrac{14}{9}$",
+   "$\\dfrac{7}{9}$",
+   "$\\dfrac{14}{9}$",
+   "$\\dfrac{49}{9}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\alpha+\\beta=\\dfrac73$, $\\alpha\\beta=\\dfrac23$; $\\alpha^2\\beta+\\alpha\\beta^2=\\alpha\\beta(\\alpha+\\beta)=\\dfrac23\\cdot\\dfrac73=\\dfrac{14}{9}$.",
+  "distractor_notes": "A: sign error; B: loses a factor of $2$; D: squares the sum instead of multiplying by the product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

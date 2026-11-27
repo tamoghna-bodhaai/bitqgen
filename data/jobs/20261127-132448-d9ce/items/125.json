@@ -1,0 +1,68 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "single-formula numerical",
+  "brief": "Binomial situation: given n and p (as fractions), compute mean and/or variance of the distribution; single-formula numerical.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:91",
+   "2025s2:127",
+   "2023s2:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "A random variable $X$ has a binomial distribution with $18$ trials and success probability $\\dfrac{5}{9}$. Its mean and variance, respectively, are",
+ "options": [
+  "$\\left(10,\\dfrac{40}{9}\\right)$",
+  "$\\left(10,\\dfrac{50}{9}\\right)$",
+  "$\\left(\\dfrac{40}{9},10\\right)$",
+  "$\\left(8,\\dfrac{40}{9}\\right)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a binomial variable, mean = np = 18(5/9) = 10 and variance = np(1-p) = 18(5/9)(4/9) = 40/9.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$p=\\dfrac{5}{9},\\quad q=1-p=\\dfrac{4}{9}$\n$\\mathbb E[X]=np=18\\cdot\\dfrac{5}{9}=10$\n$\\operatorname{Var}(X)=npq=18\\cdot\\dfrac{5}{9}\\cdot\\dfrac{4}{9}=\\dfrac{40}{9}$\n\nIndependent check: For a binomial variable, mean = np = 18(5/9) = 10 and variance = np(1-p) = 18(5/9)(4/9) = 40/9.",
+ "solution": "For a binomial distribution, $\\text{mean}=np$ and $\\text{variance}=npq$, where $q=1-p=\\frac49$.\n$$\\text{Mean}=18\\frac59=10,\\qquad \\text{Variance}=18\\frac59\\frac49=\\frac{40}{9}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A random variable $X$ has a binomial distribution with $18$ trials and success probability $\\dfrac{5}{9}$. Its mean and variance, respectively, are",
+  "options": [
+   "$\\left(10,\\dfrac{40}{9}\\right)$",
+   "$\\left(10,\\dfrac{50}{9}\\right)$",
+   "$\\left(\\dfrac{40}{9},10\\right)$",
+   "$\\left(8,\\dfrac{40}{9}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$p=\\dfrac{5}{9},\\quad q=1-p=\\dfrac{4}{9}$\n$\\mathbb E[X]=np=18\\cdot\\dfrac{5}{9}=10$\n$\\operatorname{Var}(X)=npq=18\\cdot\\dfrac{5}{9}\\cdot\\dfrac{4}{9}=\\dfrac{40}{9}$",
+  "distractor_notes": "B: Uses $np^2$ instead of $npq$ for the variance.\\nC: Gives the variance and mean in the reverse order.\\nD: Uses $nq$ instead of $np$ for the mean."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

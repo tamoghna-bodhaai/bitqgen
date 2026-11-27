@@ -1,0 +1,68 @@
+{
+ "qno": 95,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 95,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Forming numbers with restrictions",
+  "archetype": "case-wise counting",
+  "brief": "Count 4-digit numbers with distinct digits formed from a given digit set satisfying a parity/divisibility-style restriction; split into cases.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:121",
+   "2026s2:96",
+   "2025s2:92"
+  ]
+ },
+ "status": "ok",
+ "stem": "The number of four digit numbers with distinct digits formed from the digits 0, 1, 2, 3, 4, 5 which are divisible by 4 is:",
+ "options": [
+  "60",
+  "84",
+  "72",
+  "96"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Valid distinct-digit endings divisible by 4 are 04, 12, 20, 24, 32, 40, 52. Each of the 3 endings containing 0 gives 12 choices for the first two digits; each of the other 4 gives 9. Total: 3×12 + 4×9 = 72.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Divisible by 4 means the last two digits form a multiple of 4. Valid last-two-digit pairs are 04, 12, 20, 24, 32, 40, 52. For 04, 20, 40: thousands has 4 choices, hundreds then 3, so 4*3 = 12 each. For 12, 24, 32, 52: thousands has 3 nonzero choices, hundreds then 3, so 3*3 = 9 each. Total = 3*12 + 4*9 = 72.\n\nIndependent check: Valid distinct-digit endings divisible by 4 are 04, 12, 20, 24, 32, 40, 52. Each of the 3 endings containing 0 gives 12 choices for the first two digits; each of the other 4 gives 9. Total: 3×12 + 4×9 = 72.",
+ "solution": "A number is divisible by $4$ if its last two digits form a multiple of $4$. The valid distinct-digit endings are $04,12,20,24,32,40,52$.\nFor each of $04,20,40$, the first two digits can be chosen in $4\\times3=12$ ways; for each of the other four endings, they can be chosen in $3\\times3=9$ ways.\n$$3(12)+4(9)=72$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The number of four digit numbers with distinct digits formed from the digits 0, 1, 2, 3, 4, 5 which are divisible by 4 is:",
+  "options": [
+   "60",
+   "72",
+   "84",
+   "96"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Divisible by 4 means the last two digits form a multiple of 4. Valid last-two-digit pairs are 04, 12, 20, 24, 32, 40, 52. For 04, 20, 40: thousands has 4 choices, hundreds then 3, so 4*3 = 12 each. For 12, 24, 32, 52: thousands has 3 nonzero choices, hundreds then 3, so 3*3 = 9 each. Total = 3*12 + 4*9 = 72.",
+  "distractor_notes": "A misses one valid last-two-digit pair or overrestricts zero; C assigns 12 choices to all 7 pairs; D includes extra invalid cases or allows leading zero errors."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

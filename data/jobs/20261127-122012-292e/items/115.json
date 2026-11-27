@@ -1,0 +1,68 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Consistency of linear systems",
+  "archetype": "Δ = 0 and Δx = 0",
+  "brief": "determine k so that a non-homogeneous 3×3 system has infinitely many solutions by enforcing Δ = 0 with a consistent numerator determinant",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:108",
+   "2022:101",
+   "2024s2:109"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the system of equations $x + k y + z = 2$, $k x + y + z = -1$, $x + y + k z = -1$ has infinitely many solutions, then $k$ equals",
+ "options": [
+  "1",
+  "-2",
+  "-1",
+  "2"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The coefficient determinant is $-(k-1)^2(k+2)$, so singularity requires $k=1$ or $k=-2$. At $k=1$, the equations have identical left sides but different right sides, so they are inconsistent. At $k=-2$, the right sides sum to zero, matching the dependence among the rows; the system is consistent and singular, hence has infinitely many solutions.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Coefficient determinant: $\\Delta = \\begin{vmatrix}1 & k & 1\\\\ k & 1 & 1\\\\ 1 & 1 & k\\end{vmatrix} = -(k-1)^2(k+2)$.\n\n$\\Delta = 0 \\Rightarrow k = 1$ or $k = -2$.\n\nFor $k = 1$, the system becomes $x+y+z = 2,\\; x+y+z = -1,\\; x+y+z = -1$, which is inconsistent.\n\nFor $k = -2$, the equations are $x-2y+z = 2$, $-2x+y+z = -1$, $x+y-2z = -1$. Adding them gives $0 = 0$. The coefficient matrix has rank $2$ (e.g., the first two rows have minor $\\begin{vmatrix}1 & -2\\\\ -2 & 1\\end{vmatrix} = -3 \\neq 0$) and the augmented matrix also has rank $2$ because the sum of the rows yields consistency. Hence infinitely many solutions exist only for $k = -2$.\n\nIndependent check: The coefficient determinant is $-(k-1)^2(k+2)$, so singularity requires $k=1$ or $k=-2$. At $k=1$, the equations have identical left sides but different right sides, so they are inconsistent. At $k=-2$, the right sides sum to zero, matching the dependence among the rows; the system is consistent and singular, hence has infinitely many solutions.",
+ "solution": "Infinitely many solutions require the coefficient determinant to vanish:\n$$\\Delta=-(k-1)^2(k+2)=0 \\quad\\Rightarrow\\quad k=1\\text{ or }-2.$$\nFor $k=1$, the equations are inconsistent. For $k=-2$, their sum is $0=0$, and the coefficient matrix has rank $2<3$, so the system has infinitely many solutions. Hence $k=-2$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the system of equations $x + k y + z = 2$, $k x + y + z = -1$, $x + y + k z = -1$ has infinitely many solutions, then $k$ equals",
+  "options": [
+   "1",
+   "-1",
+   "-2",
+   "2"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Coefficient determinant: $\\Delta = \\begin{vmatrix}1 & k & 1\\\\ k & 1 & 1\\\\ 1 & 1 & k\\end{vmatrix} = -(k-1)^2(k+2)$.\n\n$\\Delta = 0 \\Rightarrow k = 1$ or $k = -2$.\n\nFor $k = 1$, the system becomes $x+y+z = 2,\\; x+y+z = -1,\\; x+y+z = -1$, which is inconsistent.\n\nFor $k = -2$, the equations are $x-2y+z = 2$, $-2x+y+z = -1$, $x+y-2z = -1$. Adding them gives $0 = 0$. The coefficient matrix has rank $2$ (e.g., the first two rows have minor $\\begin{vmatrix}1 & -2\\\\ -2 & 1\\end{vmatrix} = -3 \\neq 0$) and the augmented matrix also has rank $2$ because the sum of the rows yields consistency. Hence infinitely many solutions exist only for $k = -2$.",
+  "distractor_notes": "A=1 is the other root of the determinantal equation but leads to inconsistent equations; B=-1 and D=2 come from common sign errors in evaluating the determinant or misreading the sum condition."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 67,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 67,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Carbanion stability",
+  "archetype": "ordering",
+  "brief": "Arrange given carbanions/radicals by stability with a stated reason (resonance, inductive effects).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:31",
+   "2025s2:43",
+   "2025s1:46"
+  ]
+ },
+ "status": "ok",
+ "stem": "Considering resonance and inductive effects, what is the correct order of decreasing stability of the following carbanions: $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), $\\text{CH}_3\\text{CH}_2^-$ (II), $(\\text{CH}_3)_2\\text{CH}^-$ (III), and $(\\text{CH}_3)_3\\text{C}^-$ (IV)?",
+ "options": [
+  "$\\text{I} > \\text{II} > \\text{III} > \\text{IV}$",
+  "$\\text{I} > \\text{IV} > \\text{III} > \\text{II}$",
+  "$\\text{IV} > \\text{III} > \\text{II} > \\text{I}$",
+  "$\\text{II} > \\text{III} > \\text{IV} > \\text{I}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Benzyl carbanion (I) is resonance-stabilized by delocalization into the phenyl ring, so it is most stable. Alkyl groups exert +I effect, intensifying the negative charge and destabilizing carbanions; more alkyl groups means less stability. Thus among II (1 alkyl), III (2 alkyls), IV (3 alkyls): II > III > IV. Overall: I > II > III > IV.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Resonance stabilization: In the benzyl carbanion, $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), the negative charge is delocalized over the ortho and para positions of the benzene ring through resonance (4 resonating structures). Delocalization significantly disperses the negative charge, making (I) the most stable carbanion among those given.\\n2. Inductive effect: In alkyl carbanions, alkyl groups exhibit an electron-donating inductive effect ($+I$). This $+I$ effect increases electron density on the already negatively charged carbon atom, thereby destabilizing the carbanion.\\n- Ethyl carbanion, $\\text{CH}_3\\text{CH}_2^-$ (II), has one $+I$ alkyl group ($1^\\circ$).\\n- Isopropyl carbanion, $(\\text{CH}_3)_2\\text{CH}^-$ (III), has two $+I$ alkyl groups ($2^\\circ$).\\n- $\\text{tert}$-Butyl carbanion, $(\\text{CH}_3)_3\\text{C}^-$ (IV), has three $+I$ alkyl groups ($3^\\circ$).\\nThus, among alkyl carbanions, stability decreases as the number of electron-donating alkyl groups increases: $1^\\circ > 2^\\circ > 3^\\circ$, giving $\\text{II} > \\text{III} > \\text{IV}$.\\nCombining these effects gives the overall decreasing order of stability: $\\text{I} > \\text{II} > \\text{III} > \\text{IV}$.\n\nIndependent check: Benzyl carbanion (I) is resonance-stabilized by delocalization into the phenyl ring, so it is most stable. Alkyl groups exert +I effect, intensifying the negative charge and destabilizing carbanions; more alkyl groups means less stability. Thus among II (1 alkyl), III (2 alkyls), IV (3 alkyls): II > III > IV. Overall: I > II > III > IV.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Considering resonance and inductive effects, what is the correct order of decreasing stability of the following carbanions: $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), $\\text{CH}_3\\text{CH}_2^-$ (II), $(\\text{CH}_3)_2\\text{CH}^-$ (III), and $(\\text{CH}_3)_3\\text{C}^-$ (IV)?",
+  "options": [
+   "$\\text{I} > \\text{II} > \\text{III} > \\text{IV}$",
+   "$\\text{I} > \\text{IV} > \\text{III} > \\text{II}$",
+   "$\\text{IV} > \\text{III} > \\text{II} > \\text{I}$",
+   "$\\text{II} > \\text{III} > \\text{IV} > \\text{I}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "1. Resonance stabilization: In the benzyl carbanion, $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), the negative charge is delocalized over the ortho and para positions of the benzene ring through resonance (4 resonating structures). Delocalization significantly disperses the negative charge, making (I) the most stable carbanion among those given.\\n2. Inductive effect: In alkyl carbanions, alkyl groups exhibit an electron-donating inductive effect ($+I$). This $+I$ effect increases electron density on the already negatively charged carbon atom, thereby destabilizing the carbanion.\\n- Ethyl carbanion, $\\text{CH}_3\\text{CH}_2^-$ (II), has one $+I$ alkyl group ($1^\\circ$).\\n- Isopropyl carbanion, $(\\text{CH}_3)_2\\text{CH}^-$ (III), has two $+I$ alkyl groups ($2^\\circ$).\\n- $\\text{tert}$-Butyl carbanion, $(\\text{CH}_3)_3\\text{C}^-$ (IV), has three $+I$ alkyl groups ($3^\\circ$).\\nThus, among alkyl carbanions, stability decreases as the number of electron-donating alkyl groups increases: $1^\\circ > 2^\\circ > 3^\\circ$, giving $\\text{II} > \\text{III} > \\text{IV}$.\\nCombining these effects gives the overall decreasing order of stability: $\\text{I} > \\text{II} > \\text{III} > \\text{IV}$.",
+  "distractor_notes": "Option B comes from correctly identifying the resonance stabilization of the benzyl carbanion but mistakenly applying the carbocation stability order (3° > 2° > 1°) to the alkyl carbanions.\\nOption C comes from completely inverting the carbanion stability order by treating carbanions like carbocations or free radicals (3° > 2° > 1° > benzyl).\\nOption D comes from correctly ordering the alkyl carbanions by the +I destabilizing effect but failing to recognize that resonance strongly stabilizes the benzyl carbanion.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

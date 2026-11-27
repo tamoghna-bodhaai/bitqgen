@@ -1,0 +1,68 @@
+{
+ "qno": 90,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 90,
+  "section": "Logical Reasoning",
+  "chapter": "Classification (odd one out)",
+  "subtopic": "Classification",
+  "archetype": "odd pair out",
+  "brief": "Four letter/number pairs where three share a hidden rule (e.g., same positional difference or reversal); pick the pair that breaks it.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:73",
+   "2026s2:88",
+   "2025s1:85"
+  ]
+ },
+ "status": "ok",
+ "stem": "Three of the following four letter-number pairs follow the same rule. Choose the pair that does not fit.",
+ "options": [
+  "BDF : 4",
+  "CEG : 5",
+  "HJL : 10",
+  "MOP : 12"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "In A–C, the letters are equally spaced and the number is the position of the middle letter (4, 5, 10). MOP is not equally spaced, and O is 15, not 12.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In the first three pairs, the number is the alphabetical position of the first letter plus 2: B (2) → 4, C (3) → 5, H (8) → 10. For M (13), the corresponding number should be 15, not 12. A–C follow the rule; D does not.\n\nIndependent check: In A–C, the letters are equally spaced and the number is the position of the middle letter (4, 5, 10). MOP is not equally spaced, and O is 15, not 12.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Three of the following four letter-number pairs follow the same rule. Choose the pair that does not fit.",
+  "options": [
+   "BDF : 4",
+   "CEG : 5",
+   "HJL : 10",
+   "MOP : 12"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "In the first three pairs, the number is the alphabetical position of the first letter plus 2: B (2) → 4, C (3) → 5, H (8) → 10. For M (13), the corresponding number should be 15, not 12. A–C follow the rule; D does not.",
+  "distractor_notes": "A: Follows the first-letter position plus 2 rule. B: Follows the first-letter position plus 2 rule. C: Follows the first-letter position plus 2 rule."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

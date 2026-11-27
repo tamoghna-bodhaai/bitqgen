@@ -1,0 +1,68 @@
+{
+ "qno": 93,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 93,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Gerund after preposition",
+  "archetype": "spot the error",
+  "brief": "Sentence divided into three parts (a), (b), (c); the verb immediately after a preposition is wrongly in base form instead of gerund; other parts are error-free.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:90",
+   "2025s1:63",
+   "2026s1:70"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the part of the sentence which contains an error.\n\n(a) The manager apologised / (b) for delay the delivery / (c) of the consignment / (d) No error",
+ "options": [
+  "The manager apologised",
+  "of the consignment",
+  "for delay the delivery",
+  "No error"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“For delay the delivery” is ungrammatical; it should be “for delaying the delivery” or “for the delay in delivery.”",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "After the preposition 'for', a verb must be in the gerund form: 'apologised for delaying the delivery'.\nPart (b) has the base verb 'delay', which cannot follow a preposition.\nParts (a) and (c) are grammatically sound; hence 'No error' is wrong.\n\nIndependent check: “For delay the delivery” is ungrammatical; it should be “for delaying the delivery” or “for the delay in delivery.”",
+ "solution": "After the preposition “for,” use a gerund: “apologised for delaying the delivery.” Thus, “for delay the delivery” is incorrect.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the part of the sentence which contains an error.\n\n(a) The manager apologised / (b) for delay the delivery / (c) of the consignment / (d) No error",
+  "options": [
+   "The manager apologised",
+   "for delay the delivery",
+   "of the consignment",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "After the preposition 'for', a verb must be in the gerund form: 'apologised for delaying the delivery'.\nPart (b) has the base verb 'delay', which cannot follow a preposition.\nParts (a) and (c) are grammatically sound; hence 'No error' is wrong.",
+  "distractor_notes": "A is a complete, correct subject-verb unit; C is a correct prepositional phrase; D wrongly assumes the sentence is flawless."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

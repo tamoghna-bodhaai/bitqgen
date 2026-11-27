@@ -1,0 +1,67 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Perfectly inelastic collision",
+  "archetype": "momentum conservation",
+  "brief": "Perfectly inelastic collision of two bodies; find common velocity and KE loss",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:1",
+   "2024s1:4",
+   "2025s1:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "A body of mass $2\\ \\text{kg}$ moving with a velocity of $6\\ \\text{m s}^{-1}$ collides head-on with a stationary body of mass $4\\ \\text{kg}$. If the two bodies stick together after the collision, their common velocity and the loss in kinetic energy during the collision are, respectively,",
+ "options": [
+  "$2\\ \\text{m s}^{-1},\\ 12\\ \\text{J}$",
+  "$2\\ \\text{m s}^{-1},\\ 24\\ \\text{J}$",
+  "$3\\ \\text{m s}^{-1},\\ 12\\ \\text{J}$",
+  "$3\\ \\text{m s}^{-1},\\ 24\\ \\text{J}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Momentum conservation: v = (2·6)/(2+4) = 2 m/s. KE_i = ½·2·6² = 36 J; KE_f = ½·6·2² = 12 J; loss = 24 J.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $m_1 = 2\\ \\text{kg}$, $u_1 = 6\\ \\text{m s}^{-1}$, $m_2 = 4\\ \\text{kg}$, and $u_2 = 0$.\n\n1. Conservation of linear momentum:\n$$m_1 u_1 + m_2 u_2 = (m_1 + m_2) v$$\n$$(2)(6) + (4)(0) = (2 + 4) v \\implies 12 = 6v \\implies v = 2\\ \\text{m s}^{-1}$$\n\n2. Initial kinetic energy:\n$$K_i = \\dfrac{1}{2} m_1 u_1^2 = \\dfrac{1}{2} \\times 2 \\times 6^2 = 36\\ \\text{J}$$\n\n3. Final kinetic energy:\n$$K_f = \\dfrac{1}{2} (m_1 + m_2) v^2 = \\dfrac{1}{2} \\times 6 \\times 2^2 = 12\\ \\text{J}$$\n\n4. Loss in kinetic energy:\n$$\\Delta K = K_i - K_f = 36\\ \\text{J} - 12\\ \\text{J} = 24\\ \\text{J}$$\n\nAlternatively, using the formula for loss in kinetic energy in a completely inelastic collision with a stationary target:\n$$\\Delta K = \\dfrac{1}{2} \\left(\\dfrac{m_1 m_2}{m_1 + m_2}\\right) u_1^2 = \\dfrac{1}{2} \\left(\\dfrac{2 \\times 4}{2 + 4}\\right) (6)^2 = \\dfrac{1}{2} \\times \\dfrac{4}{3} \\times 36 = 24\\ \\text{J}$$\n\nThus, the common velocity is $2\\ \\text{m s}^{-1}$ and the loss in kinetic energy is $24\\ \\text{J}$.\n\nIndependent check: Momentum conservation: v = (2·6)/(2+4) = 2 m/s. KE_i = ½·2·6² = 36 J; KE_f = ½·6·2² = 12 J; loss = 24 J.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A body of mass $2\\ \\text{kg}$ moving with a velocity of $6\\ \\text{m s}^{-1}$ collides head-on with a stationary body of mass $4\\ \\text{kg}$. If the two bodies stick together after the collision, their common velocity and the loss in kinetic energy during the collision are, respectively,",
+  "options": [
+   "$2\\ \\text{m s}^{-1},\\ 12\\ \\text{J}$",
+   "$2\\ \\text{m s}^{-1},\\ 24\\ \\text{J}$",
+   "$3\\ \\text{m s}^{-1},\\ 12\\ \\text{J}$",
+   "$3\\ \\text{m s}^{-1},\\ 24\\ \\text{J}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let $m_1 = 2\\ \\text{kg}$, $u_1 = 6\\ \\text{m s}^{-1}$, $m_2 = 4\\ \\text{kg}$, and $u_2 = 0$.\n\n1. Conservation of linear momentum:\n$$m_1 u_1 + m_2 u_2 = (m_1 + m_2) v$$\n$$(2)(6) + (4)(0) = (2 + 4) v \\implies 12 = 6v \\implies v = 2\\ \\text{m s}^{-1}$$\n\n2. Initial kinetic energy:\n$$K_i = \\dfrac{1}{2} m_1 u_1^2 = \\dfrac{1}{2} \\times 2 \\times 6^2 = 36\\ \\text{J}$$\n\n3. Final kinetic energy:\n$$K_f = \\dfrac{1}{2} (m_1 + m_2) v^2 = \\dfrac{1}{2} \\times 6 \\times 2^2 = 12\\ \\text{J}$$\n\n4. Loss in kinetic energy:\n$$\\Delta K = K_i - K_f = 36\\ \\text{J} - 12\\ \\text{J} = 24\\ \\text{J}$$\n\nAlternatively, using the formula for loss in kinetic energy in a completely inelastic collision with a stationary target:\n$$\\Delta K = \\dfrac{1}{2} \\left(\\dfrac{m_1 m_2}{m_1 + m_2}\\right) u_1^2 = \\dfrac{1}{2} \\left(\\dfrac{2 \\times 4}{2 + 4}\\right) (6)^2 = \\dfrac{1}{2} \\times \\dfrac{4}{3} \\times 36 = 24\\ \\text{J}$$\n\nThus, the common velocity is $2\\ \\text{m s}^{-1}$ and the loss in kinetic energy is $24\\ \\text{J}$.",
+  "distractor_notes": "Option A encodes finding the common velocity correctly, but mistakenly identifying the remaining final kinetic energy (12 J) as the energy lost.\nOption C encodes two errors: dividing by the stationary mass m_2 instead of the total mass (v = 12/4 = 3 m/s) and reporting the final kinetic energy (12 J).\nOption D encodes using the correct formula for kinetic energy loss (24 J), but making the common mistake in velocity of dividing by m_2 rather than (m_1 + m_2).",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,76 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Capacitance",
+  "subtopic": "Equivalent capacitance of network",
+  "archetype": "circuit analysis",
+  "brief": "Circuit diagram of a capacitor network with a battery; ask for the charge on a specific capacitor after series-parallel reduction.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:21",
+   "2021:34",
+   "2026s1:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the circuit shown in the figure, four capacitors C1 = 6 uF, C2 = 3 uF, C3 = 4 uF and C4 = 3 uF are connected to a 12 V battery. The charge on capacitor C1 is",
+ "options": [
+  "8 uC",
+  "4 uC",
+  "16 uC",
+  "24 uC"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q006_stem_v1.png",
+  "width_pct": 75,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "C₁ and C₂ in series have equivalent capacitance 2 μF; in parallel with C₃, the network is 6 μF. This is in series with C₄, giving total capacitance 2 μF and series charge 24 μC. The parallel network has 4 V across it, so the C₁–C₂ branch carries charge (2 μF)(4 V) = 8 μC.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "C1 and C2 are in series: C12 = (6*3)/(6+3) = 2 uF. C12 in parallel with C3 gives Cp = 2 + 4 = 6 uF. Cp in series with C4 gives Ceq = (6*3)/(6+3) = 2 uF. Total charge Q = Ceq*V = 2*12 = 24 uC. This charge passes through C4, so voltage across C4 = Q/C4 = 24/3 = 8 V. Voltage across the parallel group = 12 - 8 = 4 V. Charge on the C1-C2 series branch = C12*4 = 2*4 = 8 uC. Since C1 and C2 are in series, C1 carries 8 uC.\n\nIndependent check: C₁ and C₂ in series have equivalent capacitance 2 μF; in parallel with C₃, the network is 6 μF. This is in series with C₄, giving total capacitance 2 μF and series charge 24 μC. The parallel network has 4 V across it, so the C₁–C₂ branch carries charge (2 μF)(4 V) = 8 μC.",
+ "solution": "$C_1$ and $C_2$ in series give $C_{12}=\\frac{6\\times3}{6+3}=2\\,\\mu\\text{F}$; in parallel with $C_3$, this gives $C_p=6\\,\\mu\\text{F}$. In series with $C_4$, $C_{\\rm eq}=2\\,\\mu\\text{F}$, so the total charge is $Q=2\\times12=24\\,\\mu\\text{C}$.\nThe voltage across $C_4$ is $24/3=8\\,\\text{V}$, leaving $4\\,\\text{V}$ across the parallel network. Thus the charge in the $C_1$–$C_2$ series branch is $Q_{12}=2\\times4=8\\,\\mu\\text{C}$; hence $C_1$ carries $8\\,\\mu\\text{C}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown in the figure, four capacitors C1 = 6 uF, C2 = 3 uF, C3 = 4 uF and C4 = 3 uF are connected to a 12 V battery. The charge on capacitor C1 is",
+  "options": [
+   "4 uC",
+   "8 uC",
+   "16 uC",
+   "24 uC"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Circuit diagram: a 12 V battery with positive terminal on the left and negative terminal on the right. From the positive terminal, capacitor C4 labeled 3 uF connects to node X. At node X the circuit splits into two branches to node Y. In the upper branch, capacitor C1 labeled 6 uF connects from X to an intermediate node Z, then capacitor C2 labeled 3 uF connects from Z to Y. In the lower branch, capacitor C3 labeled 4 uF connects directly from X to Y. From node Y, a wire connects to the negative terminal of the battery. Label the battery as 12 V and label all capacitors C1, C2, C3, C4 with their values.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "C1 and C2 are in series: C12 = (6*3)/(6+3) = 2 uF. C12 in parallel with C3 gives Cp = 2 + 4 = 6 uF. Cp in series with C4 gives Ceq = (6*3)/(6+3) = 2 uF. Total charge Q = Ceq*V = 2*12 = 24 uC. This charge passes through C4, so voltage across C4 = Q/C4 = 24/3 = 8 V. Voltage across the parallel group = 12 - 8 = 4 V. Charge on the C1-C2 series branch = C12*4 = 2*4 = 8 uC. Since C1 and C2 are in series, C1 carries 8 uC.",
+  "distractor_notes": "A (4 uC): from incorrectly reducing the C1-C2 series branch or using the wrong fraction of the branch voltage. C (16 uC): charge on C3, not on C1. D (24 uC): total charge supplied by the battery, not the charge on C1."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 100,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 100,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "brief": "Reflect a given point in a given line using the foot-of-perpendicular midpoint idea; ask for the image coordinates.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:115",
+   "2025s1:116",
+   "2026s1:105"
+  ]
+ },
+ "status": "ok",
+ "stem": "The image of the point $(6, 1)$ in the straight line $2x - 3y + 4 = 0$ is",
+ "options": [
+  "$(4, 4)$",
+  "$(2, 7)$",
+  "$(-2, 3)$",
+  "$(10, -5)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Reflection formula: d = (2·6 − 3·1 + 4)/(2² + 3²) = 13/13 = 1. Image = (6 − 2·2·1, 1 − 2·(−3)·1) = (2, 7). Verified midpoint (4,4) lies on the line.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the image of the point $P(x_1, y_1) = (6, 1)$ in the line $ax + by + c = 2x - 3y + 4 = 0$ be $Q(x, y)$.\\n\\nUsing the reflection formula:\\n$$\\dfrac{x - x_1}{a} = \\dfrac{y - y_1}{b} = -2\\dfrac{ax_1 + by_1 + c}{a^2 + b^2}$$\\n\\nHere, $a = 2$, $b = -3$, and $c = 4$. Evaluating the expression:\\n$$ax_1 + by_1 + c = 2(6) - 3(1) + 4 = 12 - 3 + 4 = 13$$\\n$$a^2 + b^2 = 2^2 + (-3)^2 = 4 + 9 = 13$$\\n\\nThus,\\n$$\\dfrac{x - 6}{2} = \\dfrac{y - 1}{-3} = -2\\left(\\dfrac{13}{13}\\right) = -2$$\\n\\nSolving for $x$ and $y$:\\n$$x - 6 = 2(-2) = -4 \\implies x = 2$$\\n$$y - 1 = -3(-2) = 6 \\implies y = 7$$\\n\\nHence, the coordinates of the image are $(2, 7)$.\n\nIndependent check: Reflection formula: d = (2·6 − 3·1 + 4)/(2² + 3²) = 13/13 = 1. Image = (6 − 2·2·1, 1 − 2·(−3)·1) = (2, 7). Verified midpoint (4,4) lies on the line.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The image of the point $(6, 1)$ in the straight line $2x - 3y + 4 = 0$ is",
+  "options": [
+   "$(4, 4)$",
+   "$(2, 7)$",
+   "$(-2, 3)$",
+   "$(10, -5)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let the image of the point $P(x_1, y_1) = (6, 1)$ in the line $ax + by + c = 2x - 3y + 4 = 0$ be $Q(x, y)$.\\n\\nUsing the reflection formula:\\n$$\\dfrac{x - x_1}{a} = \\dfrac{y - y_1}{b} = -2\\dfrac{ax_1 + by_1 + c}{a^2 + b^2}$$\\n\\nHere, $a = 2$, $b = -3$, and $c = 4$. Evaluating the expression:\\n$$ax_1 + by_1 + c = 2(6) - 3(1) + 4 = 12 - 3 + 4 = 13$$\\n$$a^2 + b^2 = 2^2 + (-3)^2 = 4 + 9 = 13$$\\n\\nThus,\\n$$\\dfrac{x - 6}{2} = \\dfrac{y - 1}{-3} = -2\\left(\\dfrac{13}{13}\\right) = -2$$\\n\\nSolving for $x$ and $y$:\\n$$x - 6 = 2(-2) = -4 \\implies x = 2$$\\n$$y - 1 = -3(-2) = 6 \\implies y = 7$$\\n\\nHence, the coordinates of the image are $(2, 7)$.",
+  "distractor_notes": "$(4, 4)$ is the foot of the perpendicular, obtained by omitting the factor of 2 in the numerator.\n$(-2, 3)$ arises from mistakenly computing $M - P$ instead of $2M - P$ after finding the foot $M(4, 4)$.\n$(10, -5)$ arises from forgetting the negative sign in the reflection formula.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

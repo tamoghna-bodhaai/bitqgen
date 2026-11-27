@@ -1,0 +1,76 @@
+{
+ "qno": 48,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 48,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Nitrosation of phenols",
+  "archetype": "reaction product",
+  "brief": "Figure showing phenol treated with dilute HNO3 vs concentrated HNO3 — ask for the product(s) and a comparison of mononitration vs picric acid formation.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:34",
+   "2024s1:48",
+   "2024s2:51"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the reactions shown in the figure, phenol is treated separately with dilute HNO3 and concentrated HNO3. The products X and Z respectively are:",
+ "options": [
+  "X = o-nitrophenol only; Z = 2,4,6-trinitrophenol (picric acid)",
+  "X = m-nitrophenol; Z = 2,4-dinitrophenol",
+  "X = 2,4,6-trinitrophenol (picric acid); Z = o-nitrophenol + p-nitrophenol",
+  "X = o-nitrophenol + p-nitrophenol; Z = 2,4,6-trinitrophenol (picric acid)"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q048_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The –OH group activates the ring and directs substitution to ortho and para positions. Dilute HNO₃ gives o- and p-nitrophenol; concentrated HNO₃ gives 2,4,6-trinitrophenol (picric acid).",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Phenol has an OH group that strongly activates the ring. Dilute HNO3 causes electrophilic mononitration at ortho and para positions, giving o- and p-nitrophenol. Concentrated HNO3 with H2SO4 causes trinitration at the two ortho positions and the para position, forming 2,4,6-trinitrophenol (picric acid).\n\nIndependent check: The –OH group activates the ring and directs substitution to ortho and para positions. Dilute HNO₃ gives o- and p-nitrophenol; concentrated HNO₃ gives 2,4,6-trinitrophenol (picric acid).",
+ "solution": "The –OH group activates the benzene ring and directs electrophilic substitution to the ortho and para positions. Dilute $HNO_3$ gives o- and p-nitrophenol, while concentrated $HNO_3$ gives 2,4,6-trinitrophenol (picric acid); hence (D).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the reactions shown in the figure, phenol is treated separately with dilute HNO3 and concentrated HNO3. The products X and Z respectively are:",
+  "options": [
+   "X = o-nitrophenol + p-nitrophenol; Z = 2,4,6-trinitrophenol (picric acid)",
+   "X = m-nitrophenol; Z = 2,4-dinitrophenol",
+   "X = 2,4,6-trinitrophenol (picric acid); Z = o-nitrophenol + p-nitrophenol",
+   "X = o-nitrophenol only; Z = 2,4,6-trinitrophenol (picric acid)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "A reaction scheme with phenol drawn as a benzene ring bearing an OH group. Two reaction arrows point from the same phenol molecule. The upper arrow is labelled 'dil. HNO3' and ends at a blank box labelled X. The lower arrow is labelled 'conc. HNO3 / H2SO4' and ends at a blank box labelled Z. No product structures are drawn.",
+   "smiles": "Oc1ccccc1"
+  },
+  "difficulty_estimate": 2,
+  "working": "Phenol has an OH group that strongly activates the ring. Dilute HNO3 causes electrophilic mononitration at ortho and para positions, giving o- and p-nitrophenol. Concentrated HNO3 with H2SO4 causes trinitration at the two ortho positions and the para position, forming 2,4,6-trinitrophenol (picric acid).",
+  "distractor_notes": "B: meta direction and only dinitration with concentrated acid; C: reverses the two product types; D: omits para-nitrophenol from mononitration."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

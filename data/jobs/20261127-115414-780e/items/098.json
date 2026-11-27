@@ -1,0 +1,68 @@
+{
+ "qno": 98,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 98,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Conditional probability",
+  "archetype": "conditional probability",
+  "brief": "Given a two-way/percentage breakdown, compute a conditional probability of one event given the other; direct formula with the joint probability.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:98",
+   "2021:138",
+   "2026s1:114"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a factory, $70\\%$ of the workers are skilled and the rest are unskilled. Among skilled workers, $20\\%$ are women; among unskilled workers, $40\\%$ are women. If a randomly chosen worker is found to be a woman, the probability that she is skilled is:",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{6}{13}$",
+  "$\\dfrac{7}{13}$",
+  "$\\dfrac{7}{10}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "P(\\text{skilled and woman})=0.7(0.2)=0.14; P(\\text{woman})=0.14+0.3(0.4)=0.26. Thus P(\\text{skilled}\\mid\\text{woman})=0.14/0.26=7/13.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let total workers = 100. Skilled = 70, Unskilled = 30.\nWomen skilled = 0.20 × 70 = 14, Women unskilled = 0.40 × 30 = 12.\nTotal women = 14 + 12 = 26.\nRequired probability = 14/26 = 7/13.\n\nIndependent check: P(\\text{skilled and woman})=0.7(0.2)=0.14; P(\\text{woman})=0.14+0.3(0.4)=0.26. Thus P(\\text{skilled}\\mid\\text{woman})=0.14/0.26=7/13.",
+ "solution": "Let the total number of workers be $100$. Then skilled women $=70(0.20)=14$, and unskilled women $=30(0.40)=12$.\n$$P(\\text{skilled}\\mid\\text{woman})=\\frac{14}{14+12}=\\boxed{\\frac{7}{13}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a factory, $70\\%$ of the workers are skilled and the rest are unskilled. Among skilled workers, $20\\%$ are women; among unskilled workers, $40\\%$ are women. If a randomly chosen worker is found to be a woman, the probability that she is skilled is:",
+  "options": [
+   "$\\dfrac{7}{13}$",
+   "$\\dfrac{6}{13}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{7}{10}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let total workers = 100. Skilled = 70, Unskilled = 30.\nWomen skilled = 0.20 × 70 = 14, Women unskilled = 0.40 × 30 = 12.\nTotal women = 14 + 12 = 26.\nRequired probability = 14/26 = 7/13.",
+  "distractor_notes": "Option B: probability that a woman is unskilled; Option C: equal probability guess; Option D: probability that a worker is skilled (ignoring gender)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

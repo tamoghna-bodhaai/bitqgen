@@ -1,0 +1,76 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "LCR impedance at resonance",
+  "archetype": "formula recall",
+  "brief": "Series LCR at resonance (circuit given): state resonance condition and compute rms current, or identify power factor and phase relation between V and I at resonance.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:37",
+   "2024s2:12",
+   "2022:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "A series LCR circuit is connected to a $120$ V rms AC source and operates at resonance, as shown in the figure. If the resistance is $40\\ \\Omega$, what is the rms current?",
+ "options": [
+  "$3$ A",
+  "$1.5$ A",
+  "$4$ A",
+  "$6$ A"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q023_stem_v0.png",
+  "width_pct": 65,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At resonance, the inductive and capacitive reactances cancel, so the impedance is just R = 40 Ω. Thus I_rms = 120 V / 40 Ω = 3 A.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At resonance, $Z=R=40\\ \\Omega$.\n$I_{\\rm rms}=\\dfrac{V_{\\rm rms}}{Z}=\\dfrac{120}{40}=3$ A.\n\nIndependent check: At resonance, the inductive and capacitive reactances cancel, so the impedance is just R = 40 Ω. Thus I_rms = 120 V / 40 Ω = 3 A.",
+ "solution": "At resonance, the inductive and capacitive reactances cancel, so $Z=R=40\\,\\Omega$.\n$$I_{\\rm rms}=\\frac{V_{\\rm rms}}{Z}=\\frac{120}{40}=3\\,\\text{A}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A series LCR circuit is connected to a $120$ V rms AC source and operates at resonance, as shown in the figure. If the resistance is $40\\ \\Omega$, what is the rms current?",
+  "options": [
+   "$1.5$ A",
+   "$3$ A",
+   "$4$ A",
+   "$6$ A"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a single closed series loop containing, in order, an AC source labeled '$120$ V rms', a resistor labeled '$40\\ \\Omega$', an inductor labeled '$L$', and a capacitor labeled '$C$'. Label the circuit 'at resonance'. Use standard circuit symbols and show connecting wires.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "At resonance, $Z=R=40\\ \\Omega$.\n$I_{\\rm rms}=\\dfrac{V_{\\rm rms}}{Z}=\\dfrac{120}{40}=3$ A.",
+  "distractor_notes": "A: Doubles the impedance; C: Uses an incorrect impedance; D: Confuses peak and rms voltage."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

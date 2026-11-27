@@ -1,0 +1,67 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength vs KE",
+  "archetype": "proportionality-scaling",
+  "brief": "de Broglie wavelength comparison of electron and proton at same KE, or accelerated through same potential",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:6",
+   "2024s1:15",
+   "2026s1:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron of mass $m_e$ and a proton of mass $m_p$ are accelerated from rest through the same potential difference. The ratio of the de Broglie wavelength of the electron to that of the proton, $\\dfrac{\\lambda_e}{\\lambda_p}$, is:",
+ "options": [
+  "$\\sqrt{\\dfrac{m_p}{m_e}}$",
+  "$\\sqrt{\\dfrac{m_e}{m_p}}$",
+  "$\\dfrac{m_p}{m_e}$",
+  "$\\dfrac{m_e}{m_p}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Accelerated through same V with same charge magnitude e: kinetic energy qV equal, momentum p = sqrt(2mqV). de Broglie λ = h/p ∝ 1/sqrt(m). Thus λ_e/λ_p = sqrt(m_p/m_e) ≈ 42.85.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "When a particle of charge $q$ is accelerated from rest through a potential difference $V$, the kinetic energy gained is:\n$$K = qV$$\nBoth the electron and the proton carry the same magnitude of electric charge, $|q| = e$, so both acquire the same kinetic energy:\n$$K_e = K_p = eV$$\nThe de Broglie wavelength $\\lambda$ associated with a particle of mass $m$ and kinetic energy $K$ is:\n$$\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2mK}} = \\dfrac{h}{\\sqrt{2mqV}}$$\nSince $h$, $e$, and $V$ are identical for both particles:\n$$\\lambda \\propto \\dfrac{1}{\\sqrt{m}}$$\nTherefore, the ratio of their wavelengths is:\n$$\\dfrac{\\lambda_e}{\\lambda_p} = \\sqrt{\\dfrac{m_p}{m_e}}$$\n\nIndependent check: Accelerated through same V with same charge magnitude e: kinetic energy qV equal, momentum p = sqrt(2mqV). de Broglie λ = h/p ∝ 1/sqrt(m). Thus λ_e/λ_p = sqrt(m_p/m_e) ≈ 42.85.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An electron of mass $m_e$ and a proton of mass $m_p$ are accelerated from rest through the same potential difference. The ratio of the de Broglie wavelength of the electron to that of the proton, $\\dfrac{\\lambda_e}{\\lambda_p}$, is:",
+  "options": [
+   "$\\sqrt{\\dfrac{m_p}{m_e}}$",
+   "$\\sqrt{\\dfrac{m_e}{m_p}}$",
+   "$\\dfrac{m_p}{m_e}$",
+   "$\\dfrac{m_e}{m_p}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "When a particle of charge $q$ is accelerated from rest through a potential difference $V$, the kinetic energy gained is:\n$$K = qV$$\nBoth the electron and the proton carry the same magnitude of electric charge, $|q| = e$, so both acquire the same kinetic energy:\n$$K_e = K_p = eV$$\nThe de Broglie wavelength $\\lambda$ associated with a particle of mass $m$ and kinetic energy $K$ is:\n$$\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2mK}} = \\dfrac{h}{\\sqrt{2mqV}}$$\nSince $h$, $e$, and $V$ are identical for both particles:\n$$\\lambda \\propto \\dfrac{1}{\\sqrt{m}}$$\nTherefore, the ratio of their wavelengths is:\n$$\\dfrac{\\lambda_e}{\\lambda_p} = \\sqrt{\\dfrac{m_p}{m_e}}$$",
+  "distractor_notes": "Option B is obtained by inverting the ratio (calculating $\\lambda_p/\\lambda_e$) or mistakenly assuming $\\lambda \\propto \\sqrt{m}$.\nOption C is obtained by forgetting the square root in the relation between momentum and kinetic energy ($p \\propto m$ instead of $p = \\sqrt{2mK}$).\nOption D is obtained by both forgetting the square root and inverting the proportionality (assuming $\\lambda \\propto m$).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

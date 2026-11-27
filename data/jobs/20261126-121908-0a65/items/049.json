@@ -1,0 +1,67 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Solubility product",
+  "archetype": "Ksp expression",
+  "brief": "Write the correct Ksp expression (with powers) for a sparingly soluble salt; test also solubility in common-ion solution.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:35",
+   "2026s1:37",
+   "2026s2:49"
+  ]
+ },
+ "status": "ok",
+ "stem": "The solubility product of $\\text{CaF}_2$ is $3.2 \\times 10^{-11}$. The molar solubility of $\\text{CaF}_2$ in a $0.1\\ \\text{M}\\ \\text{NaF}$ aqueous solution is:",
+ "options": [
+  "$3.2 \\times 10^{-10}\\ \\text{M}$",
+  "$8.0 \\times 10^{-10}\\ \\text{M}$",
+  "$3.2 \\times 10^{-9}\\ \\text{M}$",
+  "$2.0 \\times 10^{-4}\\ \\text{M}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "CaF2 ⇌ Ca²⁺ + 2F⁻; Ksp = s[F⁻]². Common ion: [F⁻] ≈ 0.1 M (2s negligible). s = Ksp/(0.1)² = 3.2×10⁻¹¹/10⁻² = 3.2×10⁻⁹ M.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The dissolution equilibrium for $\\text{CaF}_2$ is:\n$$\\text{CaF}_2(s) \\rightleftharpoons \\text{Ca}^{2+}(aq) + 2\\text{F}^-(aq)$$\n\nIn a $0.1\\ \\text{M}\\ \\text{NaF}$ solution, $\\text{NaF}$ completely dissociates:\n$$\\text{NaF}(aq) \\to \\text{Na}^+(aq) + \\text{F}^-(aq)$$\n\nLet the molar solubility of $\\text{CaF}_2$ in this solution be $s$. At equilibrium:\n$$[\\text{Ca}^{2+}] = s$$\n$$[\\text{F}^-] = 0.1 + 2s \\approx 0.1\\ \\text{M}\\quad (\\text{since } s \\ll 0.1)$$\n\nThe solubility product expression is:\n$$K_{sp} = [\\text{Ca}^{2+}][\\text{F}^-]^2$$\n$$3.2 \\times 10^{-11} = s \\times (0.1)^2 = s \\times 10^{-2}$$\n$$s = \\dfrac{3.2 \\times 10^{-11}}{10^{-2}} = 3.2 \\times 10^{-9}\\ \\text{M}$$\n\nIndependent check: CaF2 ⇌ Ca²⁺ + 2F⁻; Ksp = s[F⁻]². Common ion: [F⁻] ≈ 0.1 M (2s negligible). s = Ksp/(0.1)² = 3.2×10⁻¹¹/10⁻² = 3.2×10⁻⁹ M.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The solubility product of $\\text{CaF}_2$ is $3.2 \\times 10^{-11}$. The molar solubility of $\\text{CaF}_2$ in a $0.1\\ \\text{M}\\ \\text{NaF}$ aqueous solution is:",
+  "options": [
+   "$3.2 \\times 10^{-10}\\ \\text{M}$",
+   "$8.0 \\times 10^{-10}\\ \\text{M}$",
+   "$3.2 \\times 10^{-9}\\ \\text{M}$",
+   "$2.0 \\times 10^{-4}\\ \\text{M}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The dissolution equilibrium for $\\text{CaF}_2$ is:\n$$\\text{CaF}_2(s) \\rightleftharpoons \\text{Ca}^{2+}(aq) + 2\\text{F}^-(aq)$$\n\nIn a $0.1\\ \\text{M}\\ \\text{NaF}$ solution, $\\text{NaF}$ completely dissociates:\n$$\\text{NaF}(aq) \\to \\text{Na}^+(aq) + \\text{F}^-(aq)$$\n\nLet the molar solubility of $\\text{CaF}_2$ in this solution be $s$. At equilibrium:\n$$[\\text{Ca}^{2+}] = s$$\n$$[\\text{F}^-] = 0.1 + 2s \\approx 0.1\\ \\text{M}\\quad (\\text{since } s \\ll 0.1)$$\n\nThe solubility product expression is:\n$$K_{sp} = [\\text{Ca}^{2+}][\\text{F}^-]^2$$\n$$3.2 \\times 10^{-11} = s \\times (0.1)^2 = s \\times 10^{-2}$$\n$$s = \\dfrac{3.2 \\times 10^{-11}}{10^{-2}} = 3.2 \\times 10^{-9}\\ \\text{M}$$",
+  "distractor_notes": "$3.2 \\times 10^{-10}\\ \\text{M}$: Forgot the power of 2 on $[\\text{F}^-]$ in the $K_{sp}$ expression, writing $K_{sp} = [\\text{Ca}^{2+}][\\text{F}^-]$.\n$8.0 \\times 10^{-10}\\ \\text{M}$: Incorrectly multiplied the common-ion concentration by the stoichiometric factor 2, taking $[\\text{F}^-] = 2 \\times 0.1 = 0.2\\ \\text{M}$.\n$2.0 \\times 10^{-4}\\ \\text{M}$: Ignored the common-ion effect and solved for solubility in pure water ($K_{sp} = 4s^3$).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 141,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 141,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Powers of i",
+  "archetype": "computation",
+  "brief": "Evaluate a small power of a complex number given in a + ib form by direct multiplication.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:95",
+   "2025s1:125",
+   "2025s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $(1+2i)^3$.",
+ "options": [
+  "$-11+2i$",
+  "$-11-2i$",
+  "$11-2i$",
+  "$-3+4i$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "$(1+2i)^2=-3+4i$, so $(1+2i)^3=(-3+4i)(1+2i)=-11-2i$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(1+2i)^2=-3+4i$; $(1+2i)^3=(-3+4i)(1+2i)=-11-2i$.\n\nIndependent check: $(1+2i)^2=-3+4i$, so $(1+2i)^3=(-3+4i)(1+2i)=-11-2i$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate $(1+2i)^3$.",
+  "options": [
+   "$-11+2i$",
+   "$-11-2i$",
+   "$11-2i$",
+   "$-3+4i$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$(1+2i)^2=-3+4i$; $(1+2i)^3=(-3+4i)(1+2i)=-11-2i$.",
+  "distractor_notes": "A: sign error in the imaginary part; C: sign error in the real part; D: stops after squaring."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

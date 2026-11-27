@@ -1,0 +1,68 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE intensity to position",
+  "archetype": "phase difference to intensity",
+  "brief": "Given path difference (or position on screen with d, D), convert to phase difference and find I/I_max at that point.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:26",
+   "2026s2:30",
+   "2023s1:5"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a Young's double slit experiment, the slits are $0.6$ mm apart and the screen is $1.2$ m away. The wavelength of light used is $600$ nm. The intensity at a point $0.3$ mm from the central bright fringe, in terms of the maximum intensity $I_0$, is",
+ "options": [
+  "$I_0$",
+  "$\\frac{I_0}{4}$",
+  "$\\frac{I_0}{2}$",
+  "Zero"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fringe width: β = λD/d = (600×10⁻⁹)(1.2)/(0.6×10⁻³) = 1.2 mm. At y = 0.3 mm = β/4, I/I₀ = cos²(πy/β) = cos²(π/4) = 1/2.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Path difference $\\Delta x = \\dfrac{yd}{D} = \\dfrac{0.3 \\times 10^{-3} \\times 0.6 \\times 10^{-3}}{1.2} = 1.5 \\times 10^{-7}$ m $= 150$ nm $= \\dfrac{\\lambda}{4}$. Phase difference $\\delta = \\dfrac{2\\pi}{\\lambda} \\Delta x = \\dfrac{\\pi}{2}$. Intensity $I = I_0 \\cos^2 \\dfrac{\\delta}{2} = I_0 \\cos^2 \\dfrac{\\pi}{4} = \\dfrac{I_0}{2}$.\n\nIndependent check: Fringe width: β = λD/d = (600×10⁻⁹)(1.2)/(0.6×10⁻³) = 1.2 mm. At y = 0.3 mm = β/4, I/I₀ = cos²(πy/β) = cos²(π/4) = 1/2.",
+ "solution": "The path difference is $\\Delta x=\\dfrac{yd}{D}=\\dfrac{(0.3\\times10^{-3})(0.6\\times10^{-3})}{1.2}=150\\,\\text{nm}=\\dfrac{\\lambda}{4}$, so the phase difference is $\\delta=\\dfrac{\\pi}{2}$.\\n$$I=I_0\\cos^2\\left(\\dfrac{\\delta}{2}\\right)=I_0\\cos^2\\left(\\dfrac{\\pi}{4}\\right)=\\dfrac{I_0}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a Young's double slit experiment, the slits are $0.6$ mm apart and the screen is $1.2$ m away. The wavelength of light used is $600$ nm. The intensity at a point $0.3$ mm from the central bright fringe, in terms of the maximum intensity $I_0$, is",
+  "options": [
+   "$I_0$",
+   "$\\frac{I_0}{2}$",
+   "$\\frac{I_0}{4}$",
+   "Zero"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Path difference $\\Delta x = \\dfrac{yd}{D} = \\dfrac{0.3 \\times 10^{-3} \\times 0.6 \\times 10^{-3}}{1.2} = 1.5 \\times 10^{-7}$ m $= 150$ nm $= \\dfrac{\\lambda}{4}$. Phase difference $\\delta = \\dfrac{2\\pi}{\\lambda} \\Delta x = \\dfrac{\\pi}{2}$. Intensity $I = I_0 \\cos^2 \\dfrac{\\delta}{2} = I_0 \\cos^2 \\dfrac{\\pi}{4} = \\dfrac{I_0}{2}$.",
+  "distractor_notes": "A: $I_0$ if one assumes the point is at maximum. C: $I_0/4$ if one uses $\\cos(\\pi/4)$ directly without dividing by 2 in intensity formula. D: Zero if one mistakenly thinks path difference of $\\lambda/4$ gives a minima."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

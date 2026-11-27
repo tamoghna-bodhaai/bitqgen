@@ -1,0 +1,68 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Breaking stress",
+  "archetype": "conceptual (distractor-heavy)",
+  "brief": "Hard conceptual MCQ on elastic behaviour: compare stress-strain curves / breaking stress vs elastic limit of two wires of different lengths and cross-sections, identifying which statements about Young's modulus, elongation and breaking load hold true.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:19",
+   "2024s2:24",
+   "2025s2:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two wires $P$ and $Q$ have lengths $L$ and $2L$ and cross-sectional areas $A$ and $3A$. Their Young's moduli are $2Y$ and $Y$, elastic-limit stresses are $2\\sigma_0$ and $\\sigma_0$, and breaking stresses are $3\\sigma_0$ and $2\\sigma_0$, respectively. Which statements are true? I. $Y_P=2Y_Q$. II. At the same load $F=\\sigma_0 A$, $\\Delta\\ell_P=\\dfrac{3}{4}\\Delta\\ell_Q$. III. The breaking load of $Q$ is twice that of $P$. IV. The maximum elastic extension of $P$ is twice that of $Q$.",
+ "options": [
+  "I and IV only",
+  "I, II and III",
+  "II and IV only",
+  "I, II, III and IV"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I: The moduli are given as 2Y and Y, so true. II: Using \u001b[?] \u001b[?] the extension ratio is \u001b[?]; evaluating gives 3/4, true. III: Breaking loads are 3σ₀A for P and 6σ₀A for Q, so true. IV: Maximum elastic extensions are σ₀L/Y for P and 2σ₀L/Y for Q, so false.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta\\ell=\\dfrac{FL}{AY}$ gives $\\dfrac{\\Delta\\ell_P}{\\Delta\\ell_Q}=\\dfrac{1/(2Y)}{2/(3Y)}=\\dfrac{3}{4}$. \n$F_{b,P}=3\\sigma_0 A$; $F_{b,Q}=2\\sigma_0(3A)=6\\sigma_0 A$. \n$\\Delta\\ell_{\\mathrm{el},P}=\\dfrac{2\\sigma_0}{2Y}L=\\dfrac{\\sigma_0L}{Y}$; $\\Delta\\ell_{\\mathrm{el},Q}=\\dfrac{\\sigma_0}{Y}(2L)=\\dfrac{2\\sigma_0L}{Y}$.\n\nIndependent check: I: The moduli are given as 2Y and Y, so true. II: Using \u001b[?] \u001b[?] the extension ratio is \u001b[?]; evaluating gives 3/4, true. III: Breaking loads are 3σ₀A for P and 6σ₀A for Q, so true. IV: Maximum elastic extensions are σ₀L/Y for P and 2σ₀L/Y for Q, so false.",
+ "solution": "I is true since $Y_P=2Y_Q$. Using $\\Delta\\ell=\\dfrac{FL}{AY}$ at $F=\\sigma_0A$, $\\dfrac{\\Delta\\ell_P}{\\Delta\\ell_Q}=\\dfrac{1/(2Y)}{2/(3Y)}=\\dfrac34$, so II is true.\\\\\n$F_{b,P}=3\\sigma_0A$ and $F_{b,Q}=2\\sigma_0(3A)=6\\sigma_0A$, so III is true. The elastic extensions are $\\Delta\\ell_{e,P}=\\dfrac{\\sigma_0L}{Y}$ and $\\Delta\\ell_{e,Q}=\\dfrac{2\\sigma_0L}{Y}$; IV is false. Hence, (B).",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Two wires $P$ and $Q$ have lengths $L$ and $2L$ and cross-sectional areas $A$ and $3A$. Their Young's moduli are $2Y$ and $Y$, elastic-limit stresses are $2\\sigma_0$ and $\\sigma_0$, and breaking stresses are $3\\sigma_0$ and $2\\sigma_0$, respectively. Which statements are true? I. $Y_P=2Y_Q$. II. At the same load $F=\\sigma_0 A$, $\\Delta\\ell_P=\\dfrac{3}{4}\\Delta\\ell_Q$. III. The breaking load of $Q$ is twice that of $P$. IV. The maximum elastic extension of $P$ is twice that of $Q$.",
+  "options": [
+   "I, II and III",
+   "I and IV only",
+   "II and IV only",
+   "I, II, III and IV"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\Delta\\ell=\\dfrac{FL}{AY}$ gives $\\dfrac{\\Delta\\ell_P}{\\Delta\\ell_Q}=\\dfrac{1/(2Y)}{2/(3Y)}=\\dfrac{3}{4}$. \n$F_{b,P}=3\\sigma_0 A$; $F_{b,Q}=2\\sigma_0(3A)=6\\sigma_0 A$. \n$\\Delta\\ell_{\\mathrm{el},P}=\\dfrac{2\\sigma_0}{2Y}L=\\dfrac{\\sigma_0L}{Y}$; $\\Delta\\ell_{\\mathrm{el},Q}=\\dfrac{\\sigma_0}{Y}(2L)=\\dfrac{2\\sigma_0L}{Y}$.",
+  "distractor_notes": "B: confuses elastic-limit extension with the given breaking-stress data and misses the load comparison.\nC: neglects the different Young's moduli or cross-sectional areas when comparing the wires.\nD: overlooks that $Q$, not $P$, has the greater maximum elastic extension."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

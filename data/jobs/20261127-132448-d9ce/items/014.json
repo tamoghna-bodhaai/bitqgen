@@ -1,0 +1,76 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Circular motion with friction",
+  "archetype": "energy conservation",
+  "brief": "A pendulum bob released from horizontal; find speed and tension in the string at the lowest point using circular-dynamics equations.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:19",
+   "2026s1:4",
+   "2021:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $0.40$ kg pendulum bob is released from rest with its string horizontal, as shown in the figure. For a string length of $1.25$ m and $g=10$ m s$^{-2}$, what are the bob's speed and the string tension at the lowest point?",
+ "options": [
+  "$4$ m s$^{-1}$ and $8$ N",
+  "$5$ m s$^{-1}$ and $8$ N",
+  "$5$ m s$^{-1}$ and $12$ N",
+  "$5$ m s$^{-1}$ and $4$ N"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q014_stem_v0.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The bob drops by 1.25 m, so energy conservation gives v = √(2gL) = 5 m s⁻¹. At the bottom, T − mg = mv²/L, hence T = 4 + 8 = 12 N.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Vertical drop to the lowest point: $h=L=1.25$ m.\n$v=\\sqrt{2gh}=\\sqrt{2(10)(1.25)}=5\\ \\text{m s}^{-1}$\n$T-mg=\\dfrac{mv^2}{L}$\n$T=0.40(10)+\\dfrac{0.40(25)}{1.25}=12\\ \\text{N}$\n\nIndependent check: The bob drops by 1.25 m, so energy conservation gives v = √(2gL) = 5 m s⁻¹. At the bottom, T − mg = mv²/L, hence T = 4 + 8 = 12 N.",
+ "solution": "The vertical drop is $h=L=1.25\\,\\text{m}$. By conservation of energy, $$v=\\sqrt{2gh}=\\sqrt{2(10)(1.25)}=5\\,\\text{m s}^{-1}.$$ At the lowest point, $T-mg=mv^2/L$, so $T=0.40(10)+0.40(25)/1.25=12\\,\\text{N}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $0.40$ kg pendulum bob is released from rest with its string horizontal, as shown in the figure. For a string length of $1.25$ m and $g=10$ m s$^{-2}$, what are the bob's speed and the string tension at the lowest point?",
+  "options": [
+   "$4$ m s$^{-1}$ and $8$ N",
+   "$5$ m s$^{-1}$ and $8$ N",
+   "$5$ m s$^{-1}$ and $12$ N",
+   "$5$ m s$^{-1}$ and $4$ N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a pendulum pivot O. Show a string of length 1.25 m extending horizontally to the right from O, with a bob at its end labelled 'released from rest'. Show the circular path of the bob and its lowest position directly below O, with a second, lighter-outline bob there. Add a downward arrow labelled g. Do not include any speed or tension values.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "Vertical drop to the lowest point: $h=L=1.25$ m.\n$v=\\sqrt{2gh}=\\sqrt{2(10)(1.25)}=5\\ \\text{m s}^{-1}$\n$T-mg=\\dfrac{mv^2}{L}$\n$T=0.40(10)+\\dfrac{0.40(25)}{1.25}=12\\ \\text{N}$",
+  "distractor_notes": "A: uses an incorrect speed and tension. B: omits the weight term in the radial force equation. D: subtracts the weight from the required centripetal force."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

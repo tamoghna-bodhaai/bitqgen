@@ -1,0 +1,70 @@
+{
+ "qno": 86,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 86,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Word formation",
+  "archetype": "letter availability",
+  "brief": "From the letters of a given word (each letter used as many times as it appears), determine which of the given words can or cannot be formed.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:74",
+   "2026s2:78",
+   "2022:84"
+  ]
+ },
+ "status": "ok",
+ "stem": "From the letters of the word CALENDAR, which of the following words can be formed, each letter being used only as many times as it appears in CALENDAR?",
+ "options": [
+  "(A) CANCEL",
+  "(B) DANCER",
+  "(C) LEADER",
+  "(D) ARRANGE"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "CALENDAR has A twice; C, L, E, N, D, R once each. DANCER uses only available letters. The other choices require an extra C, an extra E, or unavailable G and extra R.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "Each option label is duplicated (for example, “(A) (A)”)."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "CALENDAR has A twice and C, L, E, N, D, R once each. DANCER = D,A,N,C,E,R, all available. CANCEL needs two C's (only one), LEADER needs two E's (only one), ARRANGE needs G (absent) and two R's.\n\nIndependent check: CALENDAR has A twice; C, L, E, N, D, R once each. DANCER uses only available letters. The other choices require an extra C, an extra E, or unavailable G and extra R.",
+ "solution": "CALENDAR contains $A$ twice and $C,L,E,N,D,R$ once each. DANCER uses only these available letters, whereas the other choices require an extra letter or an unavailable letter.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "From the letters of the word CALENDAR, which of the following words can be formed, each letter being used only as many times as it appears in CALENDAR?",
+  "options": [
+   "(A) CANCEL",
+   "(B) DANCER",
+   "(C) LEADER",
+   "(D) ARRANGE"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "CALENDAR has A twice and C, L, E, N, D, R once each. DANCER = D,A,N,C,E,R, all available. CANCEL needs two C's (only one), LEADER needs two E's (only one), ARRANGE needs G (absent) and two R's.",
+  "distractor_notes": "(A) needs C twice, (C) needs E twice, (D) needs G and R twice."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

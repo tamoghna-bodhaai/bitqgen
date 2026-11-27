@@ -1,0 +1,80 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Freundlich adsorption isotherm",
+  "archetype": "statement evaluation",
+  "brief": "Four statements about adsorption (freundlich isotherm exponent range, physisorption vs chemisorption at low/high temperature, and why adsorption is exothermic) — pick the incorrect one.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:60",
+   "2024s1:59",
+   "2023s2:46"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following statements about adsorption is incorrect?",
+ "options": [
+  "Physisorption becomes more pronounced with rise in temperature.",
+  "The value of $1/n$ in the Freundlich adsorption isotherm normally lies between 0 and 1.",
+  "Chemisorption is favoured at high temperature.",
+  "Adsorption is generally exothermic because it involves a decrease in surface energy."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q052_optB_v2.png",
+  "figs/q052_optA_v2.png",
+  "figs/q052_optC_v2.png",
+  "figs/q052_optD_v2.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Physisorption is generally favored at lower temperatures, so it becomes less pronounced as temperature rises. The other listed statements are generally correct.",
+   "answer": "B",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [
+    "The option images show molecular formulas (CH₄, H₂O, NH₃, HCl), not the statements listed in the question."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "A: Correct; Freundlich isotherm $x/m = k p^{1/n}$ has $1/n$ in (0,1).\nB: Incorrect; Physisorption is exothermic, so it decreases with increasing temperature.\nC: Correct; Chemisorption is often activated and favoured at high temperature.\nD: Correct; Adsorption is exothermic as residual surface forces are satisfied and surface energy decreases.\n\nIndependent check: Physisorption is generally favored at lower temperatures, so it becomes less pronounced as temperature rises. The other listed statements are generally correct.",
+ "solution": "Physisorption is generally exothermic, so increasing temperature shifts the equilibrium toward desorption and reduces adsorption.\nChemisorption may be favoured at higher temperature because it often has an activation energy; the Freundlich exponent normally satisfies $0<1/n<1$.\nThus the incorrect statement is (A).",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following statements about adsorption is incorrect?",
+  "options": [
+   "The value of $1/n$ in the Freundlich adsorption isotherm normally lies between 0 and 1.",
+   "Physisorption becomes more pronounced with rise in temperature.",
+   "Chemisorption is favoured at high temperature.",
+   "Adsorption is generally exothermic because it involves a decrease in surface energy."
+  ],
+  "option_smiles": [
+   "C",
+   "O",
+   "N",
+   "Cl"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "A: Correct; Freundlich isotherm $x/m = k p^{1/n}$ has $1/n$ in (0,1).\nB: Incorrect; Physisorption is exothermic, so it decreases with increasing temperature.\nC: Correct; Chemisorption is often activated and favoured at high temperature.\nD: Correct; Adsorption is exothermic as residual surface forces are satisfied and surface energy decreases.",
+  "distractor_notes": "A is correct (standard Freundlich range); C is correct (chemisorption requires activation energy, favoured at high T); D is correct (adsorption exothermic due to surface energy decrease). The common mistake that physisorption increases with temperature confuses adsorption with desorption or overlooks its exothermic nature."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

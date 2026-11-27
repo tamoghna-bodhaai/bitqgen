@@ -1,0 +1,68 @@
+{
+ "qno": 101,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 101,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Sum and product of roots",
+  "archetype": "conceptual",
+  "brief": "Given a relation between roots (e.g., one root is k times the other), find a parameter using sum and product of roots.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:124",
+   "2021:146",
+   "2025s1:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the roots of the equation $x^2 - 6x + k = 0$ are in the ratio $1:2$, then the value of $k$ is:",
+ "options": [
+  "$8$",
+  "$6$",
+  "$4$",
+  "$10$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the roots be r and 2r. Their sum is 6, so 3r = 6 and r = 2. Their product is k = 2·4 = 8?",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the roots be α and 2α.\nSum = α + 2α = 3α = 6 ⇒ α = 2.\nRoots are 2 and 4.\nProduct = 2 · 4 = 8. Hence k = 8.\n\nIndependent check: Let the roots be r and 2r. Their sum is 6, so 3r = 6 and r = 2. Their product is k = 2·4 = 8?",
+ "solution": "Let the roots be $r$ and $2r$. Using the sum of roots, $r+2r=6$, so $r=2$.\nTheir product is $k=r(2r)=2\\cdot4=8$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the roots of the equation $x^2 - 6x + k = 0$ are in the ratio $1:2$, then the value of $k$ is:",
+  "options": [
+   "$8$",
+   "$6$",
+   "$4$",
+   "$10$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Let the roots be α and 2α.\nSum = α + 2α = 3α = 6 ⇒ α = 2.\nRoots are 2 and 4.\nProduct = 2 · 4 = 8. Hence k = 8.",
+  "distractor_notes": "Option B: sum of roots (6); Option C: one root (4); Option D: sum plus product?"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

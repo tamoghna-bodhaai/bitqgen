@@ -1,0 +1,68 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Williamson synthesis",
+  "archetype": "reagent selection",
+  "brief": "Give a target ether and ask which alkyl halide + alkoxide combination is correct, including one option that fails due to elimination with a secondary/tertiary halide.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:45",
+   "2025s1:43",
+   "2023s2:34"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which pair is most suitable for preparing ethoxycyclopentane by Williamson synthesis?",
+ "options": [
+  "Bromocyclopentane and sodium ethoxide",
+  "Bromocyclopentane and sodium methoxide",
+  "Bromoethane and sodium cyclopentoxide",
+  "Bromoethane and sodium ethoxide"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use the primary alkyl halide in the SN2 step: sodium cyclopentoxide reacts with bromoethane to form ethoxycyclopentane.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_5\\text{H}_9\\text{O}^-+\\text{C}_2\\text{H}_5\\text{Br}\\rightarrow\\text{C}_5\\text{H}_9\\text{OC}_2\\text{H}_5+\\text{Br}^-$\nPrimary bromoethane undergoes $S_\\text{N}2$ substitution with cyclopentoxide.\n\nIndependent check: Use the primary alkyl halide in the SN2 step: sodium cyclopentoxide reacts with bromoethane to form ethoxycyclopentane.",
+ "solution": "Williamson synthesis proceeds by an $S_\\text{N}2$ reaction, so use the primary alkyl halide, bromoethane.\n$$\\mathrm{C_5H_9O^- + C_2H_5Br \\longrightarrow C_5H_9OC_2H_5 + Br^-}$$\nThus, sodium cyclopentoxide and bromoethane form ethoxycyclopentane.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which pair is most suitable for preparing ethoxycyclopentane by Williamson synthesis?",
+  "options": [
+   "Bromocyclopentane and sodium ethoxide",
+   "Bromoethane and sodium cyclopentoxide",
+   "Bromocyclopentane and sodium methoxide",
+   "Bromoethane and sodium ethoxide"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{C}_5\\text{H}_9\\text{O}^-+\\text{C}_2\\text{H}_5\\text{Br}\\rightarrow\\text{C}_5\\text{H}_9\\text{OC}_2\\text{H}_5+\\text{Br}^-$\nPrimary bromoethane undergoes $S_\\text{N}2$ substitution with cyclopentoxide.",
+  "distractor_notes": "A uses a secondary halide, favouring elimination; C forms methoxycyclopentane and uses a secondary halide; D forms diethyl ether."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

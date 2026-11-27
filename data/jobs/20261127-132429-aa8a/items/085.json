@@ -1,0 +1,68 @@
+{
+ "qno": 85,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 85,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Word formation",
+  "archetype": "letter availability",
+  "brief": "Give a medium-length word and four options; ask which option word can be formed using only the letters of the given word, each letter used at most as many times as it appears.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:87",
+   "2025s1:84",
+   "2026s1:77"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following words can be formed from the letters of **NOTEBOOKS**, using each letter no more often than it occurs in the given word?",
+ "options": [
+  "BONNET",
+  "STOOP",
+  "BOOKS",
+  "TOOT"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "NOTEBOOKS contains B, K, S once each and O three times, so BOOKS can be formed. The other options require a missing P or a repeated N or T.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "NOTEBOOKS has O twice; N, T, E, B, K and S once each.\nBOOKS uses available letters.\nSTOOP needs three Os; BONNET needs two Ns; TOOT needs two Ts.\n\nIndependent check: NOTEBOOKS contains B, K, S once each and O three times, so BOOKS can be formed. The other options require a missing P or a repeated N or T.",
+ "solution": "NOTEBOOKS contains $B$, $K$, and $S$ once each, and has at least one $O$.\nThus $BOOKS$ can be formed using the available letters.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following words can be formed from the letters of **NOTEBOOKS**, using each letter no more often than it occurs in the given word?",
+  "options": [
+   "BOOKS",
+   "STOOP",
+   "BONNET",
+   "TOOT"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "NOTEBOOKS has O twice; N, T, E, B, K and S once each.\nBOOKS uses available letters.\nSTOOP needs three Os; BONNET needs two Ns; TOOT needs two Ts.",
+  "distractor_notes": "B: Uses three Os, but only two are available. C: Uses two Ns, but only one is available. D: Uses two Ts, but only one is available."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

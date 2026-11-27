@@ -1,0 +1,68 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Electron gain enthalpy",
+  "archetype": "find incorrect order",
+  "brief": "Four orders of electron gain enthalpy (including Cl vs F and S vs O anomalies) are given; pick the incorrect one.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:55",
+   "2022:48",
+   "2026s2:52"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using $X>Y$ to mean that $X$ has a more negative electron gain enthalpy than $Y$, which order is incorrect?",
+ "options": [
+  "$\\text{Cl}>\\text{F}>\\text{Br}>\\text{I}$",
+  "$\\text{F}>\\text{Cl}>\\text{Br}>\\text{I}$",
+  "$\\text{S}>\\text{Se}>\\text{Te}>\\text{O}$",
+  "$\\text{Cl}>\\text{Br}>\\text{I}>\\text{O}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "More-negative electron gain enthalpy: Cl > F > Br > I and S > Se > Te > O. Thus (A), (B), and (D) are correct; (C) incorrectly places F above Cl.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "More negative electron gain enthalpy: $\\text{Cl}>\\text{F}$, $\\text{S}>\\text{Se}>\\text{Te}>\\text{O}$, and $\\text{Cl}>\\text{Br}>\\text{I}>\\text{O}$. Hence the order with $\\text{F}>\\text{Cl}$ is incorrect.\n\nIndependent check: More-negative electron gain enthalpy: Cl > F > Br > I and S > Se > Te > O. Thus (A), (B), and (D) are correct; (C) incorrectly places F above Cl.",
+ "solution": "Electron gain enthalpy is more negative for Cl than F because F’s compact $2p$ shell increases electron–electron repulsion. The order is $\\text{Cl}>\\text{F}>\\text{Br}>\\text{I}$; hence the order placing F above Cl is incorrect.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using $X>Y$ to mean that $X$ has a more negative electron gain enthalpy than $Y$, which order is incorrect?",
+  "options": [
+   "$\\text{Cl}>\\text{F}>\\text{Br}>\\text{I}$",
+   "$\\text{S}>\\text{Se}>\\text{Te}>\\text{O}$",
+   "$\\text{F}>\\text{Cl}>\\text{Br}>\\text{I}$",
+   "$\\text{Cl}>\\text{Br}>\\text{I}>\\text{O}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "More negative electron gain enthalpy: $\\text{Cl}>\\text{F}$, $\\text{S}>\\text{Se}>\\text{Te}>\\text{O}$, and $\\text{Cl}>\\text{Br}>\\text{I}>\\text{O}$. Hence the order with $\\text{F}>\\text{Cl}$ is incorrect.",
+  "distractor_notes": "A: correct; chlorine has more negative electron gain enthalpy than fluorine. B: correct order for these chalcogens. D: correct relative order of the listed elements."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

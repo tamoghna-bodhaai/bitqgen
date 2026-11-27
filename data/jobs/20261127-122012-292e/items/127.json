@@ -1,0 +1,68 @@
+{
+ "qno": 127,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 127,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "brief": "find the image of a given point in a given line using the perpendicular-foot/reflection formula",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:111",
+   "2025s1:116",
+   "2025s2:95"
+  ]
+ },
+ "status": "ok",
+ "stem": "The image of the point (2, 3) in the line x + y + 1 = 0 is",
+ "options": [
+  "(-1, 0)",
+  "(-3, -4)",
+  "(-4, -3)",
+  "(-4, 3)"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the line x+y+1=0, reflect (2,3) using (x',y')=(x,y)-2(6/2)(1,1)=(-4,-3).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For the line x + y + 1 = 0, a = b = 1. The value at (2,3) is 2 + 3 + 1 = 6. Image = (2 - 2*1*6/(1^2+1^2), 3 - 2*1*6/(1^2+1^2)) = (2 - 6, 3 - 6) = (-4, -3).\n\nIndependent check: For the line x+y+1=0, reflect (2,3) using (x',y')=(x,y)-2(6/2)(1,1)=(-4,-3).",
+ "solution": "For reflection across $ax+by+c=0$, $(x',y')=(x,y)-\\dfrac{2(ax+by+c)}{a^2+b^2}(a,b)$. Here, $ax+by+c=2+3+1=6$ and $(a,b)=(1,1)$.\n$$ (x',y')=(2,3)-\\frac{2(6)}{2}(1,1)=(-4,-3). $$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The image of the point (2, 3) in the line x + y + 1 = 0 is",
+  "options": [
+   "(-4, -3)",
+   "(-3, -4)",
+   "(-1, 0)",
+   "(-4, 3)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For the line x + y + 1 = 0, a = b = 1. The value at (2,3) is 2 + 3 + 1 = 6. Image = (2 - 2*1*6/(1^2+1^2), 3 - 2*1*6/(1^2+1^2)) = (2 - 6, 3 - 6) = (-4, -3).",
+  "distractor_notes": "B swaps the x and y coordinates; C omits factor 2 and gives the foot of the perpendicular; D changes only the x-coordinate."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

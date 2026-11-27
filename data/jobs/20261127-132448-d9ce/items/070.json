@@ -1,0 +1,68 @@
+{
+ "qno": 70,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 70,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Basicity of amines",
+  "archetype": "compare-and-rank",
+  "brief": "Order a primary aliphatic amine, a secondary amine, an aryl amine and ammonia by basic strength in aqueous solution; include steric and solvation effects.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:57",
+   "2023s2:39",
+   "2026s2:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "In aqueous solution, which is the decreasing order of basic strength, taking solvation and resonance into account?",
+ "options": [
+  "$(\\text{CH}_3)_2\\text{NH}>\\text{CH}_3\\text{NH}_2>\\text{C}_6\\text{H}_5\\text{NH}_2>\\text{NH}_3$",
+  "$\\text{CH}_3\\text{NH}_2>(\\text{CH}_3)_2\\text{NH}>\\text{NH}_3>\\text{C}_6\\text{H}_5\\text{NH}_2$",
+  "$(\\text{CH}_3)_2\\text{NH}>\\text{CH}_3\\text{NH}_2>\\text{NH}_3>\\text{C}_6\\text{H}_5\\text{NH}_2$",
+  "$\\text{C}_6\\text{H}_5\\text{NH}_2>\\text{NH}_3>\\text{CH}_3\\text{NH}_2>(\\text{CH}_3)_2\\text{NH}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In water, methyl groups increase basicity by their electron-donating effect; dimethylamine is slightly more basic than methylamine. Aniline is weakest because resonance delocalizes the nitrogen lone pair. Thus the order is (CH₃)₂NH > CH₃NH₂ > NH₃ > C₆H₅NH₂.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In water: secondary alkyl amine $>$ primary alkyl amine $>$ $\\text{NH}_3$.\nAlkyl groups increase electron density at N; aqueous solvation favors the secondary amine over the primary amine.\nIn aniline, the lone pair is delocalized into the ring, so it is less basic than $\\text{NH}_3$.\n\nIndependent check: In water, methyl groups increase basicity by their electron-donating effect; dimethylamine is slightly more basic than methylamine. Aniline is weakest because resonance delocalizes the nitrogen lone pair. Thus the order is (CH₃)₂NH > CH₃NH₂ > NH₃ > C₆H₅NH₂.",
+ "solution": "Alkyl groups donate electron density to nitrogen; in water, solvation gives $(\\text{CH}_3)_2\\text{NH}>\\text{CH}_3\\text{NH}_2>\\text{NH}_3$. In aniline, resonance delocalizes the lone pair, making it less available for protonation.\n$$ (\\text{CH}_3)_2\\text{NH}>\\text{CH}_3\\text{NH}_2>\\text{NH}_3>\\text{C}_6\\text{H}_5\\text{NH}_2 $$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "In aqueous solution, which is the decreasing order of basic strength, taking solvation and resonance into account?",
+  "options": [
+   "$(\\text{CH}_3)_2\\text{NH}>\\text{CH}_3\\text{NH}_2>\\text{NH}_3>\\text{C}_6\\text{H}_5\\text{NH}_2$",
+   "$\\text{CH}_3\\text{NH}_2>(\\text{CH}_3)_2\\text{NH}>\\text{NH}_3>\\text{C}_6\\text{H}_5\\text{NH}_2$",
+   "$(\\text{CH}_3)_2\\text{NH}>\\text{CH}_3\\text{NH}_2>\\text{C}_6\\text{H}_5\\text{NH}_2>\\text{NH}_3$",
+   "$\\text{C}_6\\text{H}_5\\text{NH}_2>\\text{NH}_3>\\text{CH}_3\\text{NH}_2>(\\text{CH}_3)_2\\text{NH}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "In water: secondary alkyl amine $>$ primary alkyl amine $>$ $\\text{NH}_3$.\nAlkyl groups increase electron density at N; aqueous solvation favors the secondary amine over the primary amine.\nIn aniline, the lone pair is delocalized into the ring, so it is less basic than $\\text{NH}_3$.",
+  "distractor_notes": "B: reverses the aqueous basicity order of the secondary and primary amines.\nC: places aniline above ammonia despite lone-pair delocalization.\nD: reverses the overall trend, including the effect of resonance in aniline."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

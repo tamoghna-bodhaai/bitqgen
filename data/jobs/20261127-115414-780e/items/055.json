@@ -1,0 +1,78 @@
+{
+ "qno": 55,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 55,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Electrophilic substitution / directive influence",
+  "archetype": "reaction outcome",
+  "brief": "Figure shows a substituted benzene with side chain; ask product of KMnO4 oxidation of side chain (regardless of chain length).",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:54",
+   "2023s2:42",
+   "2022:41"
+  ]
+ },
+ "status": "ok",
+ "stem": "The compound shown in the figure is heated with hot alkaline KMnO4. The main organic product formed is",
+ "options": [
+  "Benzoic acid",
+  "Benzaldehyde",
+  "Phenylacetic acid",
+  "Benzyl alcohol"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q055_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The figure shows n-propylbenzene. Hot permanganate oxidizes an alkylbenzene side chain with a benzylic hydrogen to a carboxyl group, giving benzoic acid after acid workup.",
+   "answer": "A",
+   "confidence": 0.94,
+   "multiple_correct": false,
+   "issues": [
+    "Acid workup is not stated; in the specified alkaline medium the product is benzoate, which would give benzoic acid upon acidification."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Hot alkaline KMnO4 oxidizes an alkyl side chain bearing benzylic hydrogen completely to a carboxyl group. The propyl group -CH2CH2CH3 is converted to -COOH, regardless of chain length. Product: benzoic acid.\n\nIndependent check: The figure shows n-propylbenzene. Hot permanganate oxidizes an alkylbenzene side chain with a benzylic hydrogen to a carboxyl group, giving benzoic acid after acid workup.",
+ "solution": "Hot alkaline $KMnO_4$ oxidizes an alkylbenzene side chain containing a benzylic hydrogen completely to a carboxyl group, regardless of its length.\n$$C_6H_5CH_2CH_2CH_3 \\xrightarrow{hot\\ alkaline\\ KMnO_4} C_6H_5COOH$$\nThe product is benzoic acid.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The compound shown in the figure is heated with hot alkaline KMnO4. The main organic product formed is",
+  "options": [
+   "Benzoic acid",
+   "Benzaldehyde",
+   "Phenylacetic acid",
+   "Benzyl alcohol"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "A benzene ring with a straight propyl group -CH2CH2CH3 attached at one ring carbon. The structure is labelled n-propylbenzene.",
+   "smiles": "CCCc1ccccc1"
+  },
+  "difficulty_estimate": 2,
+  "working": "Hot alkaline KMnO4 oxidizes an alkyl side chain bearing benzylic hydrogen completely to a carboxyl group. The propyl group -CH2CH2CH3 is converted to -COOH, regardless of chain length. Product: benzoic acid.",
+  "distractor_notes": "B is the product of mild oxidation; C assumes only the terminal methyl group is oxidized to COOH; D is a reduction product, not an oxidation product."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

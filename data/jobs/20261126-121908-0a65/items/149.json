@@ -1,0 +1,68 @@
+{
+ "qno": 149,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 149,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Venn diagram counting",
+  "archetype": "inclusion-exclusion",
+  "brief": "Count elements in exactly one of two/three overlapping sets using a Venn-diagram style inclusion-exclusion computation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:108",
+   "2024s1:122",
+   "2026s2:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "Given $|A|=30$, $|B|=28$, $|C|=24$, $|A\\cap B|=10$, $|A\\cap C|=8$, $|B\\cap C|=9$ and $|A\\cap B\\cap C|=4$, how many elements belong to exactly one set?",
+ "options": [
+  "$28$",
+  "$32$",
+  "$40$",
+  "$59$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Exactly one = (30−10−8+4) + (28−10−9+4) + (24−8−9+4) = 16+13+11 = 40.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Exactly one $=|A|+|B|+|C|-2\\bigl(|A\\cap B|+|A\\cap C|+|B\\cap C|\\bigr)+3|A\\cap B\\cap C|$\n$=30+28+24-2(10+8+9)+3(4)=40$.\n\nIndependent check: Exactly one = (30−10−8+4) + (28−10−9+4) + (24−8−9+4) = 16+13+11 = 40.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Given $|A|=30$, $|B|=28$, $|C|=24$, $|A\\cap B|=10$, $|A\\cap C|=8$, $|B\\cap C|=9$ and $|A\\cap B\\cap C|=4$, how many elements belong to exactly one set?",
+  "options": [
+   "$28$",
+   "$32$",
+   "$40$",
+   "$59$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Exactly one $=|A|+|B|+|C|-2\\bigl(|A\\cap B|+|A\\cap C|+|B\\cap C|\\bigr)+3|A\\cap B\\cap C|$\n$=30+28+24-2(10+8+9)+3(4)=40$.",
+  "distractor_notes": "A: omits the correction for the triple intersection. B: adds the triple intersection only once. D: uses the union formula instead of counting elements in exactly one set."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

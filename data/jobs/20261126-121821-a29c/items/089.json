@@ -1,0 +1,67 @@
+{
+ "qno": 89,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 89,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism with possibility",
+  "brief": "Statements mixing All and Some with negatives; conclusions include possibility cases ('...being a possibility is true'), two of which look close.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:72",
+   "2025s2:77",
+   "2026s1:81"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the question below, statements are given followed by two conclusions numbered I and II. Read the statements and decide which of the given conclusions logically follows.\n\n**Statements:**\nAll rivers are oceans.\nSome oceans are streams.\nNo stream is a pond.\n\n**Conclusions:**\nI. All rivers being ponds is a possibility.\nII. All oceans being ponds is a possibility.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "R⊆O, some O are S, S∩P=∅. I: rivers need not overlap the ocean-stream part, so a model with all rivers as ponds exists (verified by exhaustive set enumeration) → I possible, follows. II: some oceans are streams and no stream is a pond, so those oceans cannot be ponds → all oceans being ponds is impossible, II fails.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the sets of rivers, oceans, streams, and ponds be denoted by $R, O, S,$ and $P$ respectively.\n\n1. From the statements:\n- $R \\subseteq O$\n- $O \\cap S \\neq \\emptyset$\n- $S \\cap P = \\emptyset$\n\n2. Evaluating Conclusion I (\"All rivers being ponds is a possibility\"):\nWe test if $R \\subseteq P$ is consistent with the statements. \nSince $S \\cap P = \\emptyset$, any element in $P$ cannot be in $S$. For $R \\subseteq P$ to hold, we need $R \\cap S = \\emptyset$. \nBecause $R$ is merely a subset of $O$, and the statements only require some part of $O$ to overlap with $S$, $R$ can be completely contained in the region of $O$ that does not overlap with $S$. Thus, it is fully possible that $R \\subseteq P$. Hence, Conclusion I follows.\n\n3. Evaluating Conclusion II (\"All oceans being ponds is a possibility\"):\nWe test if $O \\subseteq P$ is possible.\nFrom the second statement, there exists some $x \\in O \\cap S$. If $O \\subseteq P$, then that element $x$ must also belong to $P$, which implies $x \\in S \\cap P$. However, the third statement explicitly gives $S \\cap P = \\emptyset$. Thus, $O \\subseteq P$ leads to a contradiction and is impossible. Hence, Conclusion II does not follow.\n\nTherefore, only Conclusion I follows.\n\nIndependent check: R⊆O, some O are S, S∩P=∅. I: rivers need not overlap the ocean-stream part, so a model with all rivers as ponds exists (verified by exhaustive set enumeration) → I possible, follows. II: some oceans are streams and no stream is a pond, so those oceans cannot be ponds → all oceans being ponds is impossible, II fails.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the question below, statements are given followed by two conclusions numbered I and II. Read the statements and decide which of the given conclusions logically follows.\n\n**Statements:**\nAll rivers are oceans.\nSome oceans are streams.\nNo stream is a pond.\n\n**Conclusions:**\nI. All rivers being ponds is a possibility.\nII. All oceans being ponds is a possibility.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "Let the sets of rivers, oceans, streams, and ponds be denoted by $R, O, S,$ and $P$ respectively.\n\n1. From the statements:\n- $R \\subseteq O$\n- $O \\cap S \\neq \\emptyset$\n- $S \\cap P = \\emptyset$\n\n2. Evaluating Conclusion I (\"All rivers being ponds is a possibility\"):\nWe test if $R \\subseteq P$ is consistent with the statements. \nSince $S \\cap P = \\emptyset$, any element in $P$ cannot be in $S$. For $R \\subseteq P$ to hold, we need $R \\cap S = \\emptyset$. \nBecause $R$ is merely a subset of $O$, and the statements only require some part of $O$ to overlap with $S$, $R$ can be completely contained in the region of $O$ that does not overlap with $S$. Thus, it is fully possible that $R \\subseteq P$. Hence, Conclusion I follows.\n\n3. Evaluating Conclusion II (\"All oceans being ponds is a possibility\"):\nWe test if $O \\subseteq P$ is possible.\nFrom the second statement, there exists some $x \\in O \\cap S$. If $O \\subseteq P$, then that element $x$ must also belong to $P$, which implies $x \\in S \\cap P$. However, the third statement explicitly gives $S \\cap P = \\emptyset$. Thus, $O \\subseteq P$ leads to a contradiction and is impossible. Hence, Conclusion II does not follow.\n\nTherefore, only Conclusion I follows.",
+  "distractor_notes": "Only II follows: Fails to see that the part of oceans overlapping with streams can never be ponds, making all oceans being ponds impossible.\nBoth I and II follow: Incorrectly assumes that any possibility statement is valid if there is no direct negative statement between oceans and ponds.\nNeither I nor II follows: Mistakenly treats the possibility in Conclusion I as an absolute conclusion, or assumes that rivers cannot be ponds because rivers are inside oceans.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

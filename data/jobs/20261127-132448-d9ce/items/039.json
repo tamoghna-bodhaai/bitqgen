@@ -1,0 +1,68 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Cell combinations",
+  "archetype": "proportionality-scaling",
+  "brief": "Two cells of different emfs and internal resistances in parallel across a resistor; find equivalent emf of the combination and current through the external resistor.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:23",
+   "2025s2:24",
+   "2026s2:1"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two cells of emf $2$ V and $6$ V, with internal resistances $2\\ \\text{Ω}$ and $6\\ \\text{Ω}$ respectively, are connected in parallel with like terminals joined across a $1.5\\ \\text{Ω}$ resistor. Find the equivalent emf and the current through the resistor.",
+ "options": [
+  "$4\\ \\text{V},\\ 2\\ \\text{A}$",
+  "$4\\ \\text{V},\\ 1\\ \\text{A}$",
+  "$3\\ \\text{V},\\ 2\\ \\text{A}$",
+  "$3\\ \\text{V},\\ 1\\ \\text{A}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For like terminals joined, the equivalent emf is (2/2 + 6/6)/(1/2 + 1/6) = 3 V. The equivalent internal resistance is 2 parallel 6 = 1.5 ohm, so the resistor current is 3/(1.5 + 1.5) = 1 A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\varepsilon_{\\text{eq}}=\\dfrac{2/2+6/6}{1/2+1/6}=3\\ \\text{V}$\n$r_{\\text{eq}}=2\\parallel6=1.5\\ \\text{Ω}$\n$I=\\dfrac{3}{1.5+1.5}=1\\ \\text{A}$\n\nIndependent check: For like terminals joined, the equivalent emf is (2/2 + 6/6)/(1/2 + 1/6) = 3 V. The equivalent internal resistance is 2 parallel 6 = 1.5 ohm, so the resistor current is 3/(1.5 + 1.5) = 1 A.",
+ "solution": "For cells in parallel with like terminals, $\\varepsilon_{\\text{eq}}=\\dfrac{E_1/r_1+E_2/r_2}{1/r_1+1/r_2}=\\dfrac{2/2+6/6}{1/2+1/6}=3\\,\\text{V}$.  \nThe equivalent internal resistance is $r_{\\text{eq}}=2\\parallel6=1.5\\,\\Omega$.  \n$$I=\\frac{\\varepsilon_{\\text{eq}}}{r_{\\text{eq}}+R}=\\frac{3}{1.5+1.5}=1\\,\\text{A}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two cells of emf $2$ V and $6$ V, with internal resistances $2\\ \\text{Ω}$ and $6\\ \\text{Ω}$ respectively, are connected in parallel with like terminals joined across a $1.5\\ \\text{Ω}$ resistor. Find the equivalent emf and the current through the resistor.",
+  "options": [
+   "$3\\ \\text{V},\\ 1\\ \\text{A}$",
+   "$4\\ \\text{V},\\ 1\\ \\text{A}$",
+   "$3\\ \\text{V},\\ 2\\ \\text{A}$",
+   "$4\\ \\text{V},\\ 2\\ \\text{A}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\varepsilon_{\\text{eq}}=\\dfrac{2/2+6/6}{1/2+1/6}=3\\ \\text{V}$\n$r_{\\text{eq}}=2\\parallel6=1.5\\ \\text{Ω}$\n$I=\\dfrac{3}{1.5+1.5}=1\\ \\text{A}$",
+  "distractor_notes": "B: Takes the arithmetic mean of the cell emfs.\nC: Omits the equivalent internal resistance when finding current.\nD: Uses an incorrect equivalent emf and also omits the internal resistance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

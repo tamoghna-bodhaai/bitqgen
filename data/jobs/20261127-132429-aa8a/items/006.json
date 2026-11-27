@@ -1,0 +1,68 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "Interference – mirror images as coherent sources",
+  "archetype": "path difference geometry",
+  "brief": "Mirror images as coherent sources: point source near a mirror acting as a double-slit geometry; find fringe width or phase difference at a point using path-difference geometry.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:26",
+   "2024s1:20",
+   "2023s1:5"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a Lloyd's mirror arrangement, a point source is at height $0.5$ mm above a plane mirror and a screen is $2$ m away. For light of wavelength $500$ nm, what is the separation of adjacent bright fringes?",
+ "options": [
+  "$0.5$ mm",
+  "$4.0$ mm",
+  "$2.0$ mm",
+  "$1.0$ mm"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The virtual source is 2h = 1.0 mm from the real source, so the fringe spacing is β = λD/(2h) = (500×10⁻⁹ m)(2 m)/(1.0×10⁻³ m) = 1.0 mm. The phase reversal shifts the fringe pattern but does not change its spacing.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Image-source separation: $d=2h=1.0\\times10^{-3}$ m\n$\\beta=\\dfrac{\\lambda D}{d}=\\dfrac{(500\\times10^{-9})(2)}{1.0\\times10^{-3}}=1.0\\times10^{-3}$ m $=1.0$ mm\n\nIndependent check: The virtual source is 2h = 1.0 mm from the real source, so the fringe spacing is β = λD/(2h) = (500×10⁻⁹ m)(2 m)/(1.0×10⁻³ m) = 1.0 mm. The phase reversal shifts the fringe pattern but does not change its spacing.",
+ "solution": "In Lloyd’s mirror, the image-source separation is $d=2h=1.0\\times10^{-3}\\,\\text{m}$. The fringe spacing is\n$$\\beta=\\frac{\\lambda D}{d}=\\frac{(500\\times10^{-9})(2)}{1.0\\times10^{-3}}=1.0\\times10^{-3}\\,\\text{m}=1.0\\,\\text{mm}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a Lloyd's mirror arrangement, a point source is at height $0.5$ mm above a plane mirror and a screen is $2$ m away. For light of wavelength $500$ nm, what is the separation of adjacent bright fringes?",
+  "options": [
+   "$0.5$ mm",
+   "$1.0$ mm",
+   "$2.0$ mm",
+   "$4.0$ mm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Image-source separation: $d=2h=1.0\\times10^{-3}$ m\n$\\beta=\\dfrac{\\lambda D}{d}=\\dfrac{(500\\times10^{-9})(2)}{1.0\\times10^{-3}}=1.0\\times10^{-3}$ m $=1.0$ mm",
+  "distractor_notes": "A: Uses $h$ instead of $2h$ in the source separation; C: Doubles the correct fringe width; D: Uses $h$ in place of the image-source separation and adds another factor of two."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,64 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Perpendicular distance from point to line",
+  "archetype": "foot of perpendicular",
+  "brief": "find coordinates of the foot of the perpendicular from a point to a line in 3-space using vector projection",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:115",
+   "2023s2:123",
+   "2025s2:124"
+  ]
+ },
+ "status": "failed",
+ "stem": "The foot of the perpendicular from the point $(3,3,3)$ to the line $\\dfrac{x-1}{2} = \\dfrac{y-2}{3} = \\dfrac{z-3}{6}$ is",
+ "options": [
+  "$(3, 5, 9)$",
+  "$\\left(\\dfrac{9}{7}, \\dfrac{17}{7}, \\dfrac{27}{7}\\right)$",
+  "$\\left(\\dfrac{5}{7}, \\dfrac{11}{7}, \\dfrac{15}{7}\\right)$",
+  "$\\left(\\dfrac{7}{9}, \\dfrac{7}{17}, \\dfrac{7}{27}\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Let A = (1,2,3) be a point on the line, d = (2,3,6).\nAP = (3-1, 3-2, 3-3) = (2,1,0).\nAP·d = 2*2 + 1*3 + 0*6 = 7.\n|d|^2 = 4+9+36 = 49.\nParameter t = (AP·d)/|d|^2 = 7/49 = 1/7.\nFoot H = A + t d = (1,2,3) + (1/7)(2,3,6) = (9/7, 17/7, 27/7).",
+ "solution": "A point on the line is $A=(1,2,3)$, with direction vector $\u0000d=(2,3,6)$. For $P=(3,3,3)$, the foot is $H=A+t\u0000d$, where $t=\\dfrac{(P-A)\\cdot\\u0000d}{|\\u0000d|^2}=\\dfrac{7}{49}=\\dfrac17$. Thus $H=(1,2,3)+\\dfrac17(2,3,6)=\\left(\\dfrac97,\\dfrac{17}7,\\dfrac{27}7\\right)$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The foot of the perpendicular from the point $(3,3,3)$ to the line $\\dfrac{x-1}{2} = \\dfrac{y-2}{3} = \\dfrac{z-3}{6}$ is",
+  "options": [
+   "$\\left(\\dfrac{9}{7}, \\dfrac{17}{7}, \\dfrac{27}{7}\\right)$",
+   "$(3, 5, 9)$",
+   "$\\left(\\dfrac{5}{7}, \\dfrac{11}{7}, \\dfrac{15}{7}\\right)$",
+   "$\\left(\\dfrac{7}{9}, \\dfrac{7}{17}, \\dfrac{7}{27}\\right)$"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let A = (1,2,3) be a point on the line, d = (2,3,6).\nAP = (3-1, 3-2, 3-3) = (2,1,0).\nAP·d = 2*2 + 1*3 + 0*6 = 7.\n|d|^2 = 4+9+36 = 49.\nParameter t = (AP·d)/|d|^2 = 7/49 = 1/7.\nFoot H = A + t d = (1,2,3) + (1/7)(2,3,6) = (9/7, 17/7, 27/7).",
+  "distractor_notes": "B: used parameter t = (AP·d)/|d| instead of |d|^2 (i.e., divided by 7). C: sign error, subtracted the projection instead of adding. D: reciprocated coordinates of correct foot."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

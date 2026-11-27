@@ -1,0 +1,68 @@
+{
+ "qno": 103,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 103,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Properties of determinants",
+  "archetype": "split-and-factor",
+  "brief": "Evaluate a determinant whose entries are expressions by splitting rows into sums and factoring out common factors.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:117",
+   "2022:101",
+   "2026s2:122"
+  ]
+ },
+ "status": "ok",
+ "stem": "If a, b, c are distinct real numbers, then the value of det [[a, b, c], [a^2, b^2, c^2], [b+c, c+a, a+b]] is",
+ "options": [
+  "(a+b+c)(b-c)(c-a)",
+  "(a+b+c)(a-b)(b-c)(c-a)",
+  "(a-b)(b-c)(c-a)",
+  "0"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Add row 1 to row 3, giving \u001b[?](a+b+c)(1,1,1)\u001b[?]. Factoring out \u001b[?]a+b+c\u001b[?], the determinant is \u001b[?](a+b+c)(a-b)(b-c)(c-a)\u001b[?].",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Add the first row to the third row: R3 -> R3 + R1. Then det = det [[a, b, c], [a^2, b^2, c^2], [a+b+c, a+b+c, a+b+c]]. Factor a+b+c from the third row: det = (a+b+c) det [[a, b, c], [a^2, b^2, c^2], [1, 1, 1]]. Reorder rows to get the Vandermonde form det [[1, 1, 1], [a, b, c], [a^2, b^2, c^2]] = (b-a)(c-a)(c-b) = (a-b)(b-c)(c-a). Hence the determinant is (a+b+c)(a-b)(b-c)(c-a), option A.\n\nIndependent check: Add row 1 to row 3, giving \u001b[?](a+b+c)(1,1,1)\u001b[?]. Factoring out \u001b[?]a+b+c\u001b[?], the determinant is \u001b[?](a+b+c)(a-b)(b-c)(c-a)\u001b[?].",
+ "solution": "Apply $R_3\\to R_3+R_1$ and factor out $a+b+c$ from the third row:\n$$D=(a+b+c)\\begin{vmatrix}a&b&c\\\\a^2&b^2&c^2\\\\1&1&1\\end{vmatrix}.\n$$Reordering the rows to Vandermonde form gives $(b-a)(c-a)(c-b)=(a-b)(b-c)(c-a)$. Hence $D=(a+b+c)(a-b)(b-c)(c-a)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If a, b, c are distinct real numbers, then the value of det [[a, b, c], [a^2, b^2, c^2], [b+c, c+a, a+b]] is",
+  "options": [
+   "(a+b+c)(a-b)(b-c)(c-a)",
+   "(a+b+c)(b-c)(c-a)",
+   "(a-b)(b-c)(c-a)",
+   "0"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Add the first row to the third row: R3 -> R3 + R1. Then det = det [[a, b, c], [a^2, b^2, c^2], [a+b+c, a+b+c, a+b+c]]. Factor a+b+c from the third row: det = (a+b+c) det [[a, b, c], [a^2, b^2, c^2], [1, 1, 1]]. Reorder rows to get the Vandermonde form det [[1, 1, 1], [a, b, c], [a^2, b^2, c^2]] = (b-a)(c-a)(c-b) = (a-b)(b-c)(c-a). Hence the determinant is (a+b+c)(a-b)(b-c)(c-a), option A.",
+  "distractor_notes": "B omits the factor (a-b) from the Vandermonde expansion; C drops the common factor (a+b+c) after adding the first row to the third row; D assumes the determinant is zero, likely treating the added row as linearly dependent."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Xenon fluorides",
+  "archetype": "fact recall",
+  "brief": "Ask which noble-gas fluoride does not exist / correct compositions of XeF2, XeF4, XeF6.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:47",
+   "2026s2:53",
+   "2026s1:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "Xenon forms several stable binary fluorides by direct reaction with elemental fluorine. Which of the following fluorides of xenon does not exist?",
+ "options": [
+  "$\\text{XeF}_2$",
+  "$\\text{XeF}_4$",
+  "$\\text{XeF}_5$",
+  "$\\text{XeF}_6$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Known stable xenon binary fluorides are XeF2, XeF4, XeF6 (even-electron species). XeF5 would have 43 valence electrons (odd, radical) and does not exist as a stable neutral binary fluoride; only ions like XeF5+ / XeF5- are known.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The valence shell electronic configuration of ground-state xenon is $5s^2 5p^6$. All eight valence electrons are fully paired.\n\nTo form covalent bonds with fluorine atoms, electrons must be promoted from filled $5p$ (or $5s$) orbitals into vacant $5d$ orbitals. Each promoted electron generates two unpaired electrons. Consequently, xenon can only have an even number of unpaired electrons:\n- Unpairing of 1 electron gives 2 unpaired electrons $\\rightarrow$ oxidation state $+2$, yielding $\\text{XeF}_2$.\n- Unpairing of 2 electrons gives 4 unpaired electrons $\\rightarrow$ oxidation state $+4$, yielding $\\text{XeF}_4$.\n- Unpairing of 3 electrons gives 6 unpaired electrons $\\rightarrow$ oxidation state $+6$, yielding $\\text{XeF}_6$.\n\nTherefore, xenon forms only the three stable binary fluorides $\\text{XeF}_2$, $\\text{XeF}_4$, and $\\text{XeF}_6$. The neutral compound $\\text{XeF}_5$ would require an odd oxidation state of $+5$ with an unpaired electron, and does not exist as a stable binary fluoride.\n\nIndependent check: Known stable xenon binary fluorides are XeF2, XeF4, XeF6 (even-electron species). XeF5 would have 43 valence electrons (odd, radical) and does not exist as a stable neutral binary fluoride; only ions like XeF5+ / XeF5- are known.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Xenon forms several stable binary fluorides by direct reaction with elemental fluorine. Which of the following fluorides of xenon does not exist?",
+  "options": [
+   "$\\text{XeF}_2$",
+   "$\\text{XeF}_4$",
+   "$\\text{XeF}_5$",
+   "$\\text{XeF}_6$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The valence shell electronic configuration of ground-state xenon is $5s^2 5p^6$. All eight valence electrons are fully paired.\n\nTo form covalent bonds with fluorine atoms, electrons must be promoted from filled $5p$ (or $5s$) orbitals into vacant $5d$ orbitals. Each promoted electron generates two unpaired electrons. Consequently, xenon can only have an even number of unpaired electrons:\n- Unpairing of 1 electron gives 2 unpaired electrons $\\rightarrow$ oxidation state $+2$, yielding $\\text{XeF}_2$.\n- Unpairing of 2 electrons gives 4 unpaired electrons $\\rightarrow$ oxidation state $+4$, yielding $\\text{XeF}_4$.\n- Unpairing of 3 electrons gives 6 unpaired electrons $\\rightarrow$ oxidation state $+6$, yielding $\\text{XeF}_6$.\n\nTherefore, xenon forms only the three stable binary fluorides $\\text{XeF}_2$, $\\text{XeF}_4$, and $\\text{XeF}_6$. The neutral compound $\\text{XeF}_5$ would require an odd oxidation state of $+5$ with an unpaired electron, and does not exist as a stable binary fluoride.",
+  "distractor_notes": "Option A: $\\text{XeF}_2$ is an existing, stable linear molecule prepared by heating Xe and $\\text{F}_2$ in a $2:1$ ratio at $673\\text{ K}$ and $1\\text{ bar}$.\nOption B: $\\text{XeF}_4$ is an existing, stable square planar molecule prepared by heating Xe and $\\text{F}_2$ in a $1:5$ ratio at $873\\text{ K}$ and $7\\text{ bar}$.\nOption D: $\\text{XeF}_6$ is an existing, stable distorted octahedral molecule prepared by heating Xe and $\\text{F}_2$ in a $1:20$ ratio at $573\\text{ K}$ and $60\\text{--}70\\text{ bar}$; students often incorrectly assume it is sterically hindered and cannot exist.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

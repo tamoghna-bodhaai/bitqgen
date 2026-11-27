@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by parts",
+  "archetype": "integration technique",
+  "brief": "Indefinite integral of a product requiring integration by parts (log × polynomial or inverse-trig form); identify u and dv correctly.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:119",
+   "2024s2:121",
+   "2021:130"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate: the indefinite integral of x^3 ln(x) with respect to x is",
+ "options": [
+  "(1/16)x^4 ln(x) - (1/4)x^4 + C",
+  "(1/4)x^4 ln(x) + (1/16)x^4 + C",
+  "(1/4)x^4 ln(x) - (1/16)x^4 + C",
+  "(1/4)x^4 ln(x) - (1/8)x^4 + C"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By integration by parts, ∫x³ ln(x) dx = (x⁴/4)ln(x) − ∫x³/4 dx = (x⁴/4)ln(x) − x⁴/16 + C.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let u = ln(x) and dv = x^3 dx. Then du = (1/x) dx and v = (1/4)x^4. Integration by parts gives integral u dv = u v - integral v du = (1/4)x^4 ln(x) - integral (1/4)x^3 dx = (1/4)x^4 ln(x) - (1/16)x^4 + C.\n\nIndependent check: By integration by parts, ∫x³ ln(x) dx = (x⁴/4)ln(x) − ∫x³/4 dx = (x⁴/4)ln(x) − x⁴/16 + C.",
+ "solution": "Using integration by parts, take $u=\\ln x$ and $dv=x^3\\,dx$, so $du=\\frac{dx}{x}$ and $v=\\frac{x^4}{4}$.\n$$\\int x^3\\ln x\\,dx=\\frac{x^4}{4}\\ln x-\\frac14\\int x^3\\,dx=\\frac{x^4}{4}\\ln x-\\frac{x^4}{16}+C.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate: the indefinite integral of x^3 ln(x) with respect to x is",
+  "options": [
+   "(1/4)x^4 ln(x) - (1/16)x^4 + C",
+   "(1/4)x^4 ln(x) + (1/16)x^4 + C",
+   "(1/16)x^4 ln(x) - (1/4)x^4 + C",
+   "(1/4)x^4 ln(x) - (1/8)x^4 + C"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let u = ln(x) and dv = x^3 dx. Then du = (1/x) dx and v = (1/4)x^4. Integration by parts gives integral u dv = u v - integral v du = (1/4)x^4 ln(x) - integral (1/4)x^3 dx = (1/4)x^4 ln(x) - (1/16)x^4 + C.",
+  "distractor_notes": "B: sign error on the polynomial integral; C: swapped the 1/4 and 1/16 coefficients; D: divided the x^4 term by 2 instead of 4 after the second integration."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

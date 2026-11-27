@@ -1,0 +1,68 @@
+{
+ "qno": 78,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 78,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Diborane reactions",
+  "archetype": "reaction completion",
+  "brief": "Complete the reaction: diborane with water / with LiH / with HCl — pick the products of a given diborane reaction.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:36",
+   "2025s1:32",
+   "2022:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "Diborane undergoes complete hydrolysis:\nB2H6 + 6 H2O -> ?\nWhich option gives the correct products?",
+ "options": [
+  "2 H3BO3 + 3 H2O2",
+  "2 B2O3 + 6 H2",
+  "2 H3BO3 + 6 H2",
+  "2 H3BO3 + 3 O2"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Complete hydrolysis forms boric acid and hydrogen: B₂H₆ + 6H₂O → 2H₃BO₃ + 6H₂. This is balanced.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "B2H6 + 6 H2O -> 2 H3BO3 + 6 H2. Water cleaves the electron-deficient B-H-B bridges, giving boric acid and dihydrogen.\n\nIndependent check: Complete hydrolysis forms boric acid and hydrogen: B₂H₆ + 6H₂O → 2H₃BO₃ + 6H₂. This is balanced.",
+ "solution": "On complete hydrolysis, diborane forms boric acid and hydrogen.\n$$\\mathrm{B_2H_6 + 6H_2O \\rightarrow 2H_3BO_3 + 6H_2}$$\nThe equation is balanced.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Diborane undergoes complete hydrolysis:\nB2H6 + 6 H2O -> ?\nWhich option gives the correct products?",
+  "options": [
+   "2 H3BO3 + 6 H2",
+   "2 B2O3 + 6 H2",
+   "2 H3BO3 + 3 H2O2",
+   "2 H3BO3 + 3 O2"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "B2H6 + 6 H2O -> 2 H3BO3 + 6 H2. Water cleaves the electron-deficient B-H-B bridges, giving boric acid and dihydrogen.",
+  "distractor_notes": "B ignores that hydrolysis gives boric acid, not boron oxide; C wrongly forms H2O2; D wrongly forms O2 and uses an incorrect H2 coefficient."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

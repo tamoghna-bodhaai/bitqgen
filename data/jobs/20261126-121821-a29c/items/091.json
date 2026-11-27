@@ -1,0 +1,67 @@
+{
+ "qno": 91,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 91,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limit",
+  "archetype": "0/0 rationalise",
+  "brief": "Direct (1 − cos x)/x²-type standard trig limit at 0 using known standard limits; ask the value.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:110",
+   "2024s1:95",
+   "2025s1:103"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of $\\displaystyle\\lim_{x \\to 0} \\frac{1 - \\cos(8x)}{x \\tan(2x)}$ is equal to",
+ "options": [
+  "$4$",
+  "$8$",
+  "$16$",
+  "$32$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "1 - cos(8x) ≈ (8x)²/2 = 32x² and x·tan(2x) ≈ 2x² as x→0, so limit = 32/2 = 16. Numerical check confirms ≈16.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "We rewrite the limit by dividing both the numerator and the denominator by $x^2$: $$\\lim_{x \\to 0} \\frac{1 - \\cos(8x)}{x \\tan(2x)} = \\lim_{x \\to 0} \\frac{\\dfrac{1 - \\cos(8x)}{x^2}}{\\dfrac{\\tan(2x)}{x}}$$ Using the standard limits $\\displaystyle\\lim_{u \\to 0} \\frac{1 - \\cos u}{u^2} = \\frac{1}{2}$ and $\\displaystyle\\lim_{u \\to 0} \\frac{\\tan u}{u} = 1$: $$\\lim_{x \\to 0} \\frac{1 - \\cos(8x)}{x^2} = \\lim_{x \\to 0} \\left[ \\frac{1 - \\cos(8x)}{(8x)^2} \\cdot 8^2 \\right] = \\frac{1}{2} \\cdot 64 = 32$$ $$\\lim_{x \\to 0} \\frac{\\tan(2x)}{x} = \\lim_{x \\to 0} \\left[ \\frac{\\tan(2x)}{2x} \\cdot 2 \\right] = 1 \\cdot 2 = 2$$ Therefore, the limit is: $$\\frac{32}{2} = 16$$\n\nIndependent check: 1 - cos(8x) ≈ (8x)²/2 = 32x² and x·tan(2x) ≈ 2x² as x→0, so limit = 32/2 = 16. Numerical check confirms ≈16.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The value of $\\displaystyle\\lim_{x \\to 0} \\frac{1 - \\cos(8x)}{x \\tan(2x)}$ is equal to",
+  "options": [
+   "$4$",
+   "$8$",
+   "$16$",
+   "$32$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "We rewrite the limit by dividing both the numerator and the denominator by $x^2$: $$\\lim_{x \\to 0} \\frac{1 - \\cos(8x)}{x \\tan(2x)} = \\lim_{x \\to 0} \\frac{\\dfrac{1 - \\cos(8x)}{x^2}}{\\dfrac{\\tan(2x)}{x}}$$ Using the standard limits $\\displaystyle\\lim_{u \\to 0} \\frac{1 - \\cos u}{u^2} = \\frac{1}{2}$ and $\\displaystyle\\lim_{u \\to 0} \\frac{\\tan u}{u} = 1$: $$\\lim_{x \\to 0} \\frac{1 - \\cos(8x)}{x^2} = \\lim_{x \\to 0} \\left[ \\frac{1 - \\cos(8x)}{(8x)^2} \\cdot 8^2 \\right] = \\frac{1}{2} \\cdot 64 = 32$$ $$\\lim_{x \\to 0} \\frac{\\tan(2x)}{x} = \\lim_{x \\to 0} \\left[ \\frac{\\tan(2x)}{2x} \\cdot 2 \\right] = 1 \\cdot 2 = 2$$ Therefore, the limit is: $$\\frac{32}{2} = 16$$",
+  "distractor_notes": "Option A ($4$): Obtained by forgetting to square the coefficient $4$ inside the half-angle formula, taking $1 - \\cos(8x) = 2\\sin^2(4x) \\approx 2(4x^2) = 8x^2$, giving $\\frac{8}{2} = 4$.\nOption B ($8$): Obtained by missing the factor of $2$ in the half-angle identity $1 - \\cos(8x) = 2\\sin^2(4x)$, which gives $\\frac{16}{2} = 8$.\nOption D ($32$): Obtained by omitting the factor of $\\frac{1}{2}$ in the standard limit $\\lim_{u\\to 0} \\frac{1 - \\cos u}{u^2} = \\frac{1}{2}$, yielding $\\frac{64}{2} = 32$ (or by omitting the factor of $2$ from $\\tan(2x)$).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

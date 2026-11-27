@@ -1,0 +1,68 @@
+{
+ "qno": 66,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 66,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Reducing strength from E°",
+  "archetype": "data comparison",
+  "brief": "Given E° values of M(n+1)+/Mn+ couples, arrange metals in order of reducing strength.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:55",
+   "2026s1:43",
+   "2026s1:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "At $298\\ \\text{K}$, the standard reduction potentials are given below. Arrange the ions in decreasing order of reducing strength.\n\n$$\\begin{aligned}\n\\text{Cr}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Cr}^{2+}(aq) && E^\\circ=-0.41\\ \\text{V}\\\\\n\\text{Ti}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Ti}^{2+}(aq) && E^\\circ=-0.37\\ \\text{V}\\\\\n\\text{Fe}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Fe}^{2+}(aq) && E^\\circ=+0.77\\ \\text{V}\\\\\n\\text{Co}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Co}^{2+}(aq) && E^\\circ=+1.82\\ \\text{V}\n\\end{aligned}$$",
+ "options": [
+  "$\\text{Cr}^{2+} > \\text{Ti}^{2+} > \\text{Fe}^{2+} > \\text{Co}^{2+}$",
+  "$\\text{Co}^{2+} > \\text{Fe}^{2+} > \\text{Ti}^{2+} > \\text{Cr}^{2+}$",
+  "$\\text{Ti}^{2+} > \\text{Cr}^{2+} > \\text{Fe}^{2+} > \\text{Co}^{2+}$",
+  "$\\text{Cr}^{2+} > \\text{Ti}^{2+} > \\text{Co}^{2+} > \\text{Fe}^{2+}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "More negative E°(M³⁺/M²⁺) means M²⁺ is more readily oxidized and is the stronger reducing agent. Thus Cr²⁺ > Ti²⁺ > Fe²⁺ > Co²⁺.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $\\text{M}^{3+}+e^-\\to\\text{M}^{2+}$, lower $E^\\circ$ means $\\text{M}^{2+}$ is the stronger reducing agent.\n$$-0.41<-0.37<+0.77<+1.82$$\n$$\\text{Cr}^{2+}>\\text{Ti}^{2+}>\\text{Fe}^{2+}>\\text{Co}^{2+}$$\n\nIndependent check: More negative E°(M³⁺/M²⁺) means M²⁺ is more readily oxidized and is the stronger reducing agent. Thus Cr²⁺ > Ti²⁺ > Fe²⁺ > Co²⁺.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "At $298\\ \\text{K}$, the standard reduction potentials are given below. Arrange the ions in decreasing order of reducing strength.\n\n$$\\begin{aligned}\n\\text{Cr}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Cr}^{2+}(aq) && E^\\circ=-0.41\\ \\text{V}\\\\\n\\text{Ti}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Ti}^{2+}(aq) && E^\\circ=-0.37\\ \\text{V}\\\\\n\\text{Fe}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Fe}^{2+}(aq) && E^\\circ=+0.77\\ \\text{V}\\\\\n\\text{Co}^{3+}(aq)+e^-&\\rightleftharpoons\\text{Co}^{2+}(aq) && E^\\circ=+1.82\\ \\text{V}\n\\end{aligned}$$",
+  "options": [
+   "$\\text{Cr}^{2+} > \\text{Ti}^{2+} > \\text{Fe}^{2+} > \\text{Co}^{2+}$",
+   "$\\text{Co}^{2+} > \\text{Fe}^{2+} > \\text{Ti}^{2+} > \\text{Cr}^{2+}$",
+   "$\\text{Ti}^{2+} > \\text{Cr}^{2+} > \\text{Fe}^{2+} > \\text{Co}^{2+}$",
+   "$\\text{Cr}^{2+} > \\text{Ti}^{2+} > \\text{Co}^{2+} > \\text{Fe}^{2+}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For $\\text{M}^{3+}+e^-\\to\\text{M}^{2+}$, lower $E^\\circ$ means $\\text{M}^{2+}$ is the stronger reducing agent.\n$$-0.41<-0.37<+0.77<+1.82$$\n$$\\text{Cr}^{2+}>\\text{Ti}^{2+}>\\text{Fe}^{2+}>\\text{Co}^{2+}$$",
+  "distractor_notes": "B: reverses the relationship between reduction potential and reducing strength. C: swaps the two closest potentials. D: swaps the order of the two weaker reducing agents."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

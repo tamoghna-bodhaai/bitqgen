@@ -1,0 +1,68 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Tangents and normals",
+  "archetype": "implicit derivative",
+  "brief": "find the equation of tangent and normal to an implicitly defined curve (e.g. x²+xy+y² = c) at a given point via implicit differentiation",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:93",
+   "2023s2:115",
+   "2024s2:97"
+  ]
+ },
+ "status": "ok",
+ "stem": "The equation of the tangent to the curve $x^2 + xy + y^2 = 13$ at the point $(1,3)$ is",
+ "options": [
+  "$5x + 7y = 26$",
+  "$5x + 7y = 14$",
+  "$7x - 5y = -8$",
+  "$5x - 7y = 16$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At (1,3), the gradient of x² + xy + y² is (5,7). Thus the tangent is 5(x−1) + 7(y−3) = 0, or 5x + 7y = 26.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Implicit differentiation: $2x + y + x\\frac{dy}{dx} + 2y\\frac{dy}{dx}=0 \\Rightarrow \\frac{dy}{dx} = -\\frac{2x+y}{x+2y}$. At $(1,3)$, slope $m = -\\frac{5}{7}$. Tangent: $y-3 = -\\frac{5}{7}(x-1) \\Rightarrow 5x+7y=26$.\n\nIndependent check: At (1,3), the gradient of x² + xy + y² is (5,7). Thus the tangent is 5(x−1) + 7(y−3) = 0, or 5x + 7y = 26.",
+ "solution": "Implicit differentiation gives $\\dfrac{dy}{dx}=-\\dfrac{2x+y}{x+2y}$, so at $(1,3)$ the slope is $-\\dfrac57$. Hence\n$$y-3=-\\frac57(x-1)\\quad\\Longrightarrow\\quad 5x+7y=26.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the tangent to the curve $x^2 + xy + y^2 = 13$ at the point $(1,3)$ is",
+  "options": [
+   "$5x + 7y = 26$",
+   "$5x + 7y = 14$",
+   "$7x - 5y = -8$",
+   "$5x - 7y = 16$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Implicit differentiation: $2x + y + x\\frac{dy}{dx} + 2y\\frac{dy}{dx}=0 \\Rightarrow \\frac{dy}{dx} = -\\frac{2x+y}{x+2y}$. At $(1,3)$, slope $m = -\\frac{5}{7}$. Tangent: $y-3 = -\\frac{5}{7}(x-1) \\Rightarrow 5x+7y=26$.",
+  "distractor_notes": "B wrong constant, C is the normal equation, D sign error in slope/constant."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

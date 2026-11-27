@@ -1,0 +1,67 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Field of parallel wires",
+  "archetype": "superposition numerical",
+  "brief": "Two parallel wires with given currents; find net field at a point midway or at a specified location",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:9",
+   "2026s1:2",
+   "2026s2:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two long, straight parallel wires separated by $20\\text{ cm}$ carry currents of $4\\text{ A}$ and $6\\text{ A}$ in opposite directions. The magnitude of the net magnetic field at a point midway between the wires is",
+ "options": [
+  "$2\\ \\mu\\text{T}$",
+  "$4\\ \\mu\\text{T}$",
+  "$10\\ \\mu\\text{T}$",
+  "$20\\ \\mu\\text{T}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "At the midpoint, r = 0.10 m from each wire. With opposite currents, both fields point the same way at the midpoint, so they add: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The distance of the midpoint from each wire is $r = \\dfrac{20\\text{ cm}}{2} = 10\\text{ cm} = 0.1\\text{ m}$.\n\nSince the currents flow in opposite directions, by the right-hand thumb rule, the magnetic fields produced by both wires at the midpoint point in the same direction and add up:\n$$B_{\\text{net}} = B_1 + B_2 = \\dfrac{\\mu_0 I_1}{2\\pi r} + \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{\\mu_0}{2\\pi r}(I_1 + I_2)$$\n\nSubstitute the given values:\n$$B_{\\text{net}} = \\dfrac{2 \\times 10^{-7}}{0.1} \\times (4 + 6) = 2 \\times 10^{-6} \\times 10 = 2 \\times 10^{-5}\\text{ T} = 20\\ \\mu\\text{T}$$\n\nIndependent check: At the midpoint, r = 0.10 m from each wire. With opposite currents, both fields point the same way at the midpoint, so they add: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two long, straight parallel wires separated by $20\\text{ cm}$ carry currents of $4\\text{ A}$ and $6\\text{ A}$ in opposite directions. The magnitude of the net magnetic field at a point midway between the wires is",
+  "options": [
+   "$2\\ \\mu\\text{T}$",
+   "$4\\ \\mu\\text{T}$",
+   "$10\\ \\mu\\text{T}$",
+   "$20\\ \\mu\\text{T}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "working": "The distance of the midpoint from each wire is $r = \\dfrac{20\\text{ cm}}{2} = 10\\text{ cm} = 0.1\\text{ m}$.\n\nSince the currents flow in opposite directions, by the right-hand thumb rule, the magnetic fields produced by both wires at the midpoint point in the same direction and add up:\n$$B_{\\text{net}} = B_1 + B_2 = \\dfrac{\\mu_0 I_1}{2\\pi r} + \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{\\mu_0}{2\\pi r}(I_1 + I_2)$$\n\nSubstitute the given values:\n$$B_{\\text{net}} = \\dfrac{2 \\times 10^{-7}}{0.1} \\times (4 + 6) = 2 \\times 10^{-6} \\times 10 = 2 \\times 10^{-5}\\text{ T} = 20\\ \\mu\\text{T}$$",
+  "distractor_notes": "Option A corresponds to subtracting the fields and mistakenly using the total separation d = 20 cm instead of r = 10 cm.\nOption B corresponds to assuming the currents are in the same direction, subtracting the fields: (6 - 4) * 2 uT = 4 uT.\nOption C corresponds to correctly adding the fields but using the total distance d = 20 cm instead of the distance to the midpoint r = 10 cm.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

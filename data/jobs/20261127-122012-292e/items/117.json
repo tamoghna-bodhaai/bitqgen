@@ -1,0 +1,68 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Cross product and angle between vectors",
+  "archetype": "cross product then angle",
+  "brief": "compute the cross product of two given vectors, then use it to find the sine of the angle between them (or the area of the triangle they span)",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:123",
+   "2026s1:120",
+   "2025s2:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "The area of the triangle whose two adjacent sides are represented by the vectors a = 2i - j + k and b = i + j - 2k is",
+ "options": [
+  "sqrt(35)/6",
+  "sqrt(35)/4",
+  "sqrt(35)",
+  "sqrt(35)/2"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The area is \\(\\frac12|\\mathbf a\\times\\mathbf b|\\). Here \\(\\mathbf a\\times\\mathbf b=(1,5,3)\\), so the area is \\(\\sqrt{35}/2\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "a cross b = i + 5j + 3k. Its magnitude is sqrt(1^2 + 5^2 + 3^2) = sqrt(35). Area of the triangle = (1/2) * magnitude = sqrt(35)/2.\n\nIndependent check: The area is \\(\\frac12|\\mathbf a\\times\\mathbf b|\\). Here \\(\\mathbf a\\times\\mathbf b=(1,5,3)\\), so the area is \\(\\sqrt{35}/2\\).",
+ "solution": "The area of the triangle is $\\frac12|\\mathbf a\\times\\mathbf b|$.\\n$$\\mathbf a\\times\\mathbf b=\\mathbf i+5\\mathbf j+3\\mathbf k,\\qquad |\\mathbf a\\times\\mathbf b|=\\sqrt{1+25+9}=\\sqrt{35}$$\\nHence, the area is $\\boxed{\\frac{\\sqrt{35}}{2}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The area of the triangle whose two adjacent sides are represented by the vectors a = 2i - j + k and b = i + j - 2k is",
+  "options": [
+   "sqrt(35)/6",
+   "sqrt(35)/4",
+   "sqrt(35)/2",
+   "sqrt(35)"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "a cross b = i + 5j + 3k. Its magnitude is sqrt(1^2 + 5^2 + 3^2) = sqrt(35). Area of the triangle = (1/2) * magnitude = sqrt(35)/2.",
+  "distractor_notes": "A gives the sine of the angle between the vectors; B applies an extra factor 1/2; D gives the parallelogram area, not the triangle area."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 97,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 97,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Conjugate properties",
+  "archetype": "algebraic simplification",
+  "brief": "Simplify (1/z̄) or an expression like (1−z)/(1−z̄) using conjugate properties to get a clean form involving modulus.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:100",
+   "2021:120",
+   "2024s2:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $|z| = 1$ and $z \\neq 1$, then $\\dfrac{1-z}{1-\\bar{z}}$ is equal to",
+ "options": [
+  "$-z$",
+  "$-\\bar{z}$",
+  "$z$",
+  "$\\dfrac{1}{z}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since |z|=1, \\bar z=1/z. Thus (1-z)/(1-\\bar z)=(1-z)/((z-1)/z)=-z. The denominator is nonzero because z≠1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Given $|z| = 1$, $\\bar{z} = \\dfrac{1}{z}$. Then $\\dfrac{1-z}{1-\\bar{z}} = \\dfrac{1-z}{1 - \\frac{1}{z}} = \\dfrac{1-z}{\\frac{z-1}{z}} = -z$ (provided $z \\neq 1$).\n\nIndependent check: Since |z|=1, \\bar z=1/z. Thus (1-z)/(1-\\bar z)=(1-z)/((z-1)/z)=-z. The denominator is nonzero because z≠1.",
+ "solution": "Since $|z|=1$, $\\bar z=\\dfrac{1}{z}$. Hence\n$$\\frac{1-z}{1-\\bar z}=\\frac{1-z}{1-\\frac{1}{z}}=\\frac{1-z}{\\frac{z-1}{z}}=-z,$$\nwhere $z\\ne 1$ ensures the denominator is nonzero.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $|z| = 1$ and $z \\neq 1$, then $\\dfrac{1-z}{1-\\bar{z}}$ is equal to",
+  "options": [
+   "$-z$",
+   "$-\\bar{z}$",
+   "$z$",
+   "$\\dfrac{1}{z}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Given $|z| = 1$, $\\bar{z} = \\dfrac{1}{z}$. Then $\\dfrac{1-z}{1-\\bar{z}} = \\dfrac{1-z}{1 - \\frac{1}{z}} = \\dfrac{1-z}{\\frac{z-1}{z}} = -z$ (provided $z \\neq 1$).",
+  "distractor_notes": "Common errors: Mistaking conjugate property, leading to $-\\bar{z}$ (B), forgetting the sign (C: $z$), or taking reciprocal (D: $1/z$)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

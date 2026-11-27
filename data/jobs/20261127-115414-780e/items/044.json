@@ -1,0 +1,68 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Variation of conductivity with concentration",
+  "archetype": "conceptual",
+  "brief": "Ask how specific conductance behaves on dilution and why molar conductivity increases; statement/option based.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:51",
+   "2023s2:49",
+   "2023s2:56"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which statement is correct for an aqueous solution of a strong electrolyte on dilution?",
+ "options": [
+  "Specific conductance decreases and molar conductivity increases",
+  "Specific conductance decreases and molar conductivity decreases",
+  "Specific conductance increases and molar conductivity decreases",
+  "Specific conductance increases and molar conductivity increases"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "On dilution, ions per unit volume decrease, so specific conductance decreases; molar conductivity increases as ionic interactions lessen.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Dilution decreases the number of ions per unit volume, so specific conductance decreases. Molar conductivity increases because the ions move more freely due to reduced interionic attractions.\n\nIndependent check: On dilution, ions per unit volume decrease, so specific conductance decreases; molar conductivity increases as ionic interactions lessen.",
+ "solution": "Specific conductance depends on the number of ions per unit volume, which decreases on dilution; hence it decreases.\\nMolar conductivity increases because reduced interionic attractions allow the ions to move more freely.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which statement is correct for an aqueous solution of a strong electrolyte on dilution?",
+  "options": [
+   "Specific conductance increases and molar conductivity decreases",
+   "Specific conductance decreases and molar conductivity decreases",
+   "Specific conductance decreases and molar conductivity increases",
+   "Specific conductance increases and molar conductivity increases"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Dilution decreases the number of ions per unit volume, so specific conductance decreases. Molar conductivity increases because the ions move more freely due to reduced interionic attractions.",
+  "distractor_notes": "A swaps the two trends; B assumes molar conductivity also decreases; D assumes specific conductance also increases."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

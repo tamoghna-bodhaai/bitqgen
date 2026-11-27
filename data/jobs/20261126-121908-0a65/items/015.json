@@ -1,0 +1,67 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Average induced emf",
+  "archetype": "flux change over time",
+  "brief": "A loop moved into or out of a uniform magnetic field region in a given time; compute average induced emf from rate of change of flux.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:14",
+   "2026s2:12",
+   "2026s2:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A square loop of side $20\\ \\text{cm}$ is placed perpendicular to a uniform magnetic field of $0.5\\ \\text{T}$. If the loop is pulled completely out of the magnetic field in $0.1\\ \\text{s}$, the magnitude of the average induced emf in the loop is:",
+ "options": [
+  "$0.02\\ \\text{V}$",
+  "$0.1\\ \\text{V}$",
+  "$0.2\\ \\text{V}$",
+  "$0.4\\ \\text{V}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Area = 0.2² = 0.04 m²; initial flux Φ = BA = 0.5 × 0.04 = 0.02 Wb; final flux = 0. Average emf = ΔΦ/Δt = 0.02/0.1 = 0.2 V.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The initial magnetic flux linked with the square loop is:\n$$\\Phi_i = B A = B a^2$$\nGiven $a = 20\\ \\text{cm} = 0.2\\ \\text{m}$ and $B = 0.5\\ \\text{T}$:\n$$\\Phi_i = 0.5\\times (0.2)^2 = 0.5 \\times 0.04 = 0.02\\ \\text{Wb}$$\nWhen the loop is removed completely from the magnetic field, the final flux is $\\Phi_f = 0$.\n\nThe change in flux is:\n$$|\\Delta \\Phi| = |\\Phi_f - \\Phi_i| = 0.02\\ \\text{Wb}$$\n\nAccording to Faraday's law of electromagnetic induction, the magnitude of the average induced electromotive force is:\n$$\\varepsilon_{\\text{avg}} = \\dfrac{|\\Delta \\Phi|}{\\Delta t} = \\dfrac{0.02\\ \\text{Wb}}{0.1\\ \\text{s}} = 0.2\\ \\text{V}$$\n\nIndependent check: Area = 0.2² = 0.04 m²; initial flux Φ = BA = 0.5 × 0.04 = 0.02 Wb; final flux = 0. Average emf = ΔΦ/Δt = 0.02/0.1 = 0.2 V.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A square loop of side $20\\ \\text{cm}$ is placed perpendicular to a uniform magnetic field of $0.5\\ \\text{T}$. If the loop is pulled completely out of the magnetic field in $0.1\\ \\text{s}$, the magnitude of the average induced emf in the loop is:",
+  "options": [
+   "$0.02\\ \\text{V}$",
+   "$0.1\\ \\text{V}$",
+   "$0.2\\ \\text{V}$",
+   "$0.4\\ \\text{V}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The initial magnetic flux linked with the square loop is:\n$$\\Phi_i = B A = B a^2$$\nGiven $a = 20\\ \\text{cm} = 0.2\\ \\text{m}$ and $B = 0.5\\ \\text{T}$:\n$$\\Phi_i = 0.5\\times (0.2)^2 = 0.5 \\times 0.04 = 0.02\\ \\text{Wb}$$\nWhen the loop is removed completely from the magnetic field, the final flux is $\\Phi_f = 0$.\n\nThe change in flux is:\n$$|\\Delta \\Phi| = |\\Phi_f - \\Phi_i| = 0.02\\ \\text{Wb}$$\n\nAccording to Faraday's law of electromagnetic induction, the magnitude of the average induced electromotive force is:\n$$\\varepsilon_{\\text{avg}} = \\dfrac{|\\Delta \\Phi|}{\\Delta t} = \\dfrac{0.02\\ \\text{Wb}}{0.1\\ \\text{s}} = 0.2\\ \\text{V}$$",
+  "distractor_notes": "Option A ($0.02\\ \\text{V}$) is obtained if the student identifies the change in flux $\\Delta \\Phi = 0.02\\ \\text{Wb}$ but forgets to divide by the time interval $\\Delta t = 0.1\\ \\text{s}$.\\nOption B ($0.1\\ \\text{V}$) arises from an erroneous extra factor of $1/2$ (e.g., mistakenly using a triangle formula or $\\frac{1}{2}BA$).\\nOption D ($0.4\\ \\text{V}$) arises from omitting the field strength $B = 0.5\\ \\text{T}$ (effectively using $B = 1\\ \\text{T}$), computing $A / \\Delta t = 0.04 / 0.1 = 0.4\\ \\text{V}$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

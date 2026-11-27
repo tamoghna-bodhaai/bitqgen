@@ -1,0 +1,68 @@
+{
+ "qno": 104,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 104,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Word formation",
+  "archetype": "letter availability",
+  "brief": "Given a long word, ask how many meaningful words of N or more letters can be formed (or whether specific words can be formed) using its letters without repetition.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:84",
+   "2022:71",
+   "2025s2:82"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using each letter of **INTERCHANGEABLE** at most once, how many of the following words of nine or more letters can be formed?\n\n**Words:** breathing, charitable, celebrate, reachable, chandelier, horizontal, enlighten, integral, changeable, triangle",
+ "options": [
+  "4",
+  "5",
+  "7",
+  "6"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "INTERCHANGEABLE has E×3, A×2, N×2, and one each of I,T,R,C,H,G,B,L. The listed words meeting the length requirement and fitting these counts are breathing, charitable, celebrate, reachable, enlighten, and changeable: 6 total.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Formable and at least 9 letters: breathing, charitable, celebrate, reachable, enlighten, changeable — 6.\nChandelier needs d; horizontal needs o and z.\nIntegral and triangle each have fewer than 9 letters.\n\nIndependent check: INTERCHANGEABLE has E×3, A×2, N×2, and one each of I,T,R,C,H,G,B,L. The listed words meeting the length requirement and fitting these counts are breathing, charitable, celebrate, reachable, enlighten, and changeable: 6 total.",
+ "solution": "The available letters are $E^3, A^2, N^2$ and one each of $I,T,R,C,H,G,B,L$. Of the listed words with at least 9 letters, breathing, charitable, celebrate, reachable, enlighten and changeable can be formed. Chandelier needs $D$, while horizontal needs unavailable letters; integral and triangle have fewer than 9 letters. Hence the count is $6$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Using each letter of **INTERCHANGEABLE** at most once, how many of the following words of nine or more letters can be formed?\n\n**Words:** breathing, charitable, celebrate, reachable, chandelier, horizontal, enlighten, integral, changeable, triangle",
+  "options": [
+   "4",
+   "5",
+   "6",
+   "7"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Formable and at least 9 letters: breathing, charitable, celebrate, reachable, enlighten, changeable — 6.\nChandelier needs d; horizontal needs o and z.\nIntegral and triangle each have fewer than 9 letters.",
+  "distractor_notes": "4 — excludes two formable words.\n5 — excludes one formable word.\n7 — counts one ineligible word."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

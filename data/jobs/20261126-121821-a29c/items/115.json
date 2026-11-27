@@ -1,0 +1,68 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Formation of DE",
+  "archetype": "eliminate constants",
+  "brief": "Given a family of curves y = ax² + bx (two arbitrary constants), differentiate twice and eliminate a, b to form the differential equation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:92",
+   "2026s1:126",
+   "2026s2:128"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $a$ and $b$ are arbitrary constants, the differential equation for the family $y=ax^2+bx$ is",
+ "options": [
+  "$x^2\\dfrac{d^2y}{dx^2}-2x\\dfrac{dy}{dx}+2y=0$",
+  "$x^2\\dfrac{d^2y}{dx^2}-2x\\dfrac{dy}{dx}+y=0$",
+  "$x^2\\dfrac{d^2y}{dx^2}-x\\dfrac{dy}{dx}+2y=0$",
+  "$x^2\\dfrac{d^2y}{dx^2}+2x\\dfrac{dy}{dx}-2y=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Differentiate: y'=2ax+b and y''=2a. Substitution gives x²y''−2xy'+2y=0, so option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y'=2ax+b,\\quad y''=2a$.\\n$x^2y''-2xy'+2y=2ax^2-2x(2ax+b)+2(ax^2+bx)=0$.\n\nIndependent check: Differentiate: y'=2ax+b and y''=2a. Substitution gives x²y''−2xy'+2y=0, so option A.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $a$ and $b$ are arbitrary constants, the differential equation for the family $y=ax^2+bx$ is",
+  "options": [
+   "$x^2\\dfrac{d^2y}{dx^2}-2x\\dfrac{dy}{dx}+2y=0$",
+   "$x^2\\dfrac{d^2y}{dx^2}-2x\\dfrac{dy}{dx}+y=0$",
+   "$x^2\\dfrac{d^2y}{dx^2}-x\\dfrac{dy}{dx}+2y=0$",
+   "$x^2\\dfrac{d^2y}{dx^2}+2x\\dfrac{dy}{dx}-2y=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$y'=2ax+b,\\quad y''=2a$.\\n$x^2y''-2xy'+2y=2ax^2-2x(2ax+b)+2(ax^2+bx)=0$.",
+  "distractor_notes": "B: wrong coefficient of $y$; C: wrong coefficient of $xy'$; D: sign error in the $xy'$ term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 96,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 96,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Exponential limits",
+  "archetype": "standard limit",
+  "brief": "Evaluate a limit of the form (1 + kx)^(a/x) or (f(x))^g(x) reducing to e.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:100",
+   "2024s1:95",
+   "2024s1:106"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle \\lim_{x\\to0}(1+2x)^{\\dfrac{3}{x}}(1-x)^{\\dfrac{2}{x}}$.",
+ "options": [
+  "$1$",
+  "$e^8$",
+  "$e^6$",
+  "$e^4$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Taking logarithms, the exponent is \\(\\frac{3}{x}\\ln(1+2x)+\\frac{2}{x}\\ln(1-x)\\to 6-2=4\\). Thus the limit is \\(e^4\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\ln L=\\lim_{x\\to0}\\left[\\dfrac{3}{x}\\ln(1+2x)+\\dfrac{2}{x}\\ln(1-x)\\right]=6-2=4,\\quad L=e^4.$\n\nIndependent check: Taking logarithms, the exponent is \\(\\frac{3}{x}\\ln(1+2x)+\\frac{2}{x}\\ln(1-x)\\to 6-2=4\\). Thus the limit is \\(e^4\\).",
+ "solution": "Let $L$ denote the limit. Taking logarithms and using $\\lim_{x\\to0}\\frac{\\ln(1+ax)}{x}=a$,\n$$\\ln L=3\\cdot2+2\\cdot(-1)=4.$$\nHence $L=e^4$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle \\lim_{x\\to0}(1+2x)^{\\dfrac{3}{x}}(1-x)^{\\dfrac{2}{x}}$.",
+  "options": [
+   "$1$",
+   "$e^4$",
+   "$e^6$",
+   "$e^8$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\ln L=\\lim_{x\\to0}\\left[\\dfrac{3}{x}\\ln(1+2x)+\\dfrac{2}{x}\\ln(1-x)\\right]=6-2=4,\\quad L=e^4.$",
+  "distractor_notes": "A: omits the coefficient $3$ in the first exponent, making the contributions cancel.\\nC: ignores the second factor.\\nD: uses the wrong sign for $\\ln(1-x)\\sim -x$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Composite evaluation",
+  "archetype": "triangle method",
+  "brief": "Evaluate tan⁻¹(something like 1/2) + tan⁻¹(1/3)-style compositions or sin(tan⁻¹ x) using the right-triangle method.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:106",
+   "2025s2:120",
+   "2024s1:103"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\tan^{-1}\\dfrac12+\\tan^{-1}\\dfrac13$.",
+ "options": [
+  "$\\dfrac{\\pi}{6}$",
+  "$\\dfrac{\\pi}{4}$",
+  "$\\dfrac{\\pi}{3}$",
+  "$\\dfrac{3\\pi}{4}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the tangent addition formula, the sum has tangent \\(\\frac{\\frac12+\\frac13}{1-\\frac16}=1\\). Both angles are positive and their sum is in \\((0,\\pi/2)\\), so the sum is \\(\\pi/4\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\tan(A+B)=\\dfrac{\\frac12+\\frac13}{1-\\frac16}=1$. Since $A,B>0$ and $A+B<\\dfrac\\pi2$, $A+B=\\dfrac\\pi4$.\n\nIndependent check: Using the tangent addition formula, the sum has tangent \\(\\frac{\\frac12+\\frac13}{1-\\frac16}=1\\). Both angles are positive and their sum is in \\((0,\\pi/2)\\), so the sum is \\(\\pi/4\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\tan^{-1}\\dfrac12+\\tan^{-1}\\dfrac13$.",
+  "options": [
+   "$\\dfrac{\\pi}{6}$",
+   "$\\dfrac{\\pi}{4}$",
+   "$\\dfrac{\\pi}{3}$",
+   "$\\dfrac{3\\pi}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\tan(A+B)=\\dfrac{\\frac12+\\frac13}{1-\\frac16}=1$. Since $A,B>0$ and $A+B<\\dfrac\\pi2$, $A+B=\\dfrac\\pi4$.",
+  "distractor_notes": "A: incorrect tangent addition; C: incorrect tangent addition; D: ignores that the sum of the two principal angles is less than $\\dfrac\\pi2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

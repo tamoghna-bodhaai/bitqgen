@@ -1,0 +1,80 @@
+{
+ "qno": 96,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 96,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter analogy",
+  "archetype": "letter shift analogy",
+  "brief": "letter pair analogy where each letter shifts by a fixed positional value; ask for the analogous pair among options, with a mixed-letters distractor",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:78",
+   "2023s2:78",
+   "2024s1:90"
+  ]
+ },
+ "status": "ok",
+ "stem": "Complete the analogy in the same manner: BK : GP :: NI : ?",
+ "options": [
+  "(A) NS",
+  "(B) SN",
+  "(C) SS",
+  "(D) CN"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": [
+  "figs/q096_optA_v2.png",
+  "figs/q096_optB_v2.png",
+  "figs/q096_optC_v2.png",
+  "figs/q096_optD_v2.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "B→G and K→P are both shifts of +5. Applying the same shifts: N→S and I→N, giving SN.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The option images appear unrelated to the letter analogy; options A and B show identical diagrams, despite having different text answers."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Rule: each letter advances 5 places. BK -> GP: B(2)+5=G(7), K(11)+5=P(16). Apply to NI: N(14)+5=S(19), I(9)+5=N(14) => SN. (A) NS reverses the order. (C) SS changes I to S (+10). (D) CN changes N to C (no +5).\n\nIndependent check: B→G and K→P are both shifts of +5. Applying the same shifts: N→S and I→N, giving SN.",
+ "solution": "Each letter advances $5$ places in the alphabet: $B\\to G$ and $K\\to P$. Thus, $N\\to S$ and $I\\to N$, giving $\\boxed{SN}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Complete the analogy in the same manner: BK : GP :: NI : ?",
+  "options": [
+   "(A) NS",
+   "(B) SN",
+   "(C) SS",
+   "(D) CN"
+  ],
+  "option_smiles": [
+   "NS",
+   "SN",
+   "SS",
+   "CN"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Rule: each letter advances 5 places. BK -> GP: B(2)+5=G(7), K(11)+5=P(16). Apply to NI: N(14)+5=S(19), I(9)+5=N(14) => SN. (A) NS reverses the order. (C) SS changes I to S (+10). (D) CN changes N to C (no +5).",
+  "distractor_notes": "(A) NS reverses the correct order. (C) SS keeps the first shift (N→S) but changes I to S, a shift of +10 instead of +5. (D) CN changes N to C, which is not a +5 shift."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

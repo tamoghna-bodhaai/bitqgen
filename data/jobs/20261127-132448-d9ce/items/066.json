@@ -1,0 +1,68 @@
+{
+ "qno": 66,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 66,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor",
+  "archetype": "compare i",
+  "brief": "Rank the van 't Hoff factors of a sugar solution and two electrolytes of different stoichiometry (e.g. 1:1 vs 2:1 salts) in water; test the i = number of ions idea.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:57",
+   "2024s1:53",
+   "2023s2:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "In dilute water, assuming complete dissociation of the electrolytes, what is the increasing order of van ’t Hoff factors for glucose, $\\text{NaCl}$ and $\\text{CaCl}_2$?",
+ "options": [
+  "$\\text{NaCl}<\\ $glucose $<\\ \\text{CaCl}_2$",
+  "glucose $<\\ \\text{NaCl}<\\ \\text{CaCl}_2$",
+  "$\\text{CaCl}_2<\\ \\text{NaCl}<\\ $glucose",
+  "glucose $<\\ \\text{CaCl}_2<\\ \\text{NaCl}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Glucose does not dissociate (i = 1); NaCl gives 2 ions (i = 2); CaCl₂ gives 3 ions (i = 3).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Glucose: $i=1$; $\\text{NaCl}\\rightarrow 2$ ions, so $i=2$; $\\text{CaCl}_2\\rightarrow 3$ ions, so $i=3$.\n\nIndependent check: Glucose does not dissociate (i = 1); NaCl gives 2 ions (i = 2); CaCl₂ gives 3 ions (i = 3).",
+ "solution": "For complete dissociation, the van ’t Hoff factor equals the number of particles formed per formula unit. Glucose: $i=1$; NaCl: $i=2$; CaCl$_2$: $i=3$. Hence, $\\text{glucose}<\\text{NaCl}<\\text{CaCl}_2$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In dilute water, assuming complete dissociation of the electrolytes, what is the increasing order of van ’t Hoff factors for glucose, $\\text{NaCl}$ and $\\text{CaCl}_2$?",
+  "options": [
+   "glucose $<\\ \\text{NaCl}<\\ \\text{CaCl}_2$",
+   "$\\text{NaCl}<\\ $glucose $<\\ \\text{CaCl}_2$",
+   "$\\text{CaCl}_2<\\ \\text{NaCl}<\\ $glucose",
+   "glucose $<\\ \\text{CaCl}_2<\\ \\text{NaCl}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Glucose: $i=1$; $\\text{NaCl}\\rightarrow 2$ ions, so $i=2$; $\\text{CaCl}_2\\rightarrow 3$ ions, so $i=3$.",
+  "distractor_notes": "B and C place the non-electrolyte or the three-ion electrolyte incorrectly in the ranking.\nD reverses the order of the two electrolytes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

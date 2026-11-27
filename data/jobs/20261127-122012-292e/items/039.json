@@ -1,0 +1,76 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gate combinations",
+  "archetype": "truth-table",
+  "brief": "Circuit diagram showing a combination of logic gates (e.g., NAND gates); ask for the output logic expression or complete truth table for all inputs.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:25",
+   "2023s1:12",
+   "2024s1:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "The logic circuit shown in the figure consists of two NAND gates. The first NAND gate has inputs A and B; its output is fed to both inputs of the second NAND gate. The output Y of the circuit is equivalent to which logic gate?",
+ "options": [
+  "OR",
+  "AND",
+  "NAND",
+  "XOR"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q039_stem_v0.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "First output is X = ¬(A ∧ B). The second NAND receives X on both inputs, so Y = ¬(X ∧ X) = ¬X = A ∧ B.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Output of first NAND gate = $\\overline{A \\cdot B}$. This signal is fed to both inputs of the second NAND gate, which acts as a NOT gate: $Y = \\overline{\\overline{A \\cdot B} \\cdot \\overline{A \\cdot B}} = A \\cdot B$. Therefore the overall circuit behaves as an AND gate.\n\nIndependent check: First output is X = ¬(A ∧ B). The second NAND receives X on both inputs, so Y = ¬(X ∧ X) = ¬X = A ∧ B.",
+ "solution": "The first NAND output is $X=\\overline{A\\cdot B}$. Since the second NAND receives $X$ at both inputs,\n$$Y=\\overline{X\\cdot X}=\\overline{X}=A\\cdot B.$$\nHence, the circuit is equivalent to an AND gate.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The logic circuit shown in the figure consists of two NAND gates. The first NAND gate has inputs A and B; its output is fed to both inputs of the second NAND gate. The output Y of the circuit is equivalent to which logic gate?",
+  "options": [
+   "AND",
+   "OR",
+   "NAND",
+   "XOR"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "circuit",
+   "description": "A logic circuit with two NAND gates. The first NAND gate has two inputs labeled A and B. The output of the first NAND gate is connected to both inputs of the second NAND gate. The second NAND gate's output is labeled Y.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "Output of first NAND gate = $\\overline{A \\cdot B}$. This signal is fed to both inputs of the second NAND gate, which acts as a NOT gate: $Y = \\overline{\\overline{A \\cdot B} \\cdot \\overline{A \\cdot B}} = A \\cdot B$. Therefore the overall circuit behaves as an AND gate.",
+  "distractor_notes": "Distractor B (OR): if NAND followed by inverter gave OR, not true. Distractor C (NAND): would be output of first gate only. Distractor D (XOR): complex gate not achieved with this circuit."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

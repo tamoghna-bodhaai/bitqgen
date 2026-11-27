@@ -1,0 +1,68 @@
+{
+ "qno": 36,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 36,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Colour of transition metal ions",
+  "archetype": "multi-select via codes",
+  "brief": "From a list of aqueous ions (including d^0 and d^10 cases), pick which are colourless, coded as 1/2/3/4 combinations.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:43",
+   "2021:73",
+   "2026s1:49"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the aqueous ions: (1) $\\text{Sc}^{3+}$, (2) $\\text{Y}^{3+}$, (3) $\\text{Zn}^{2+}$ and (4) $\\text{Cu}^{2+}$. Which set contains all and only the colourless ions?",
+ "options": [
+  "1 and 2 only",
+  "1, 2 and 3 only",
+  "2, 3 and 4 only",
+  "1, 2, 3 and 4"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Sc³⁺ (d⁰), Y³⁺ (d⁰), and Zn²⁺ (d¹⁰) are colourless; Cu²⁺ (d⁹) is coloured in aqueous solution.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Sc}^{3+}$ and $\\text{Y}^{3+}$ are $d^0$; $\\text{Zn}^{2+}$ is $d^{10}$. These ions lack $d$–$d$ transitions and are colourless. $\\text{Cu}^{2+}$ is $d^9$ and coloured.\n\nIndependent check: Sc³⁺ (d⁰), Y³⁺ (d⁰), and Zn²⁺ (d¹⁰) are colourless; Cu²⁺ (d⁹) is coloured in aqueous solution.",
+ "solution": "Ions with $d^0$ or $d^{10}$ configurations lack $d$–$d$ transitions and are colourless.\n$\\text{Sc}^{3+}:d^0,\\text{ Y}^{3+}:d^0,\\text{ Zn}^{2+}:d^{10};\\text{ Cu}^{2+}:d^9$ is coloured.\nHence the colourless ions are 1, 2 and 3 only.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Consider the aqueous ions: (1) $\\text{Sc}^{3+}$, (2) $\\text{Y}^{3+}$, (3) $\\text{Zn}^{2+}$ and (4) $\\text{Cu}^{2+}$. Which set contains all and only the colourless ions?",
+  "options": [
+   "1 and 2 only",
+   "1, 2 and 3 only",
+   "2, 3 and 4 only",
+   "1, 2, 3 and 4"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{Sc}^{3+}$ and $\\text{Y}^{3+}$ are $d^0$; $\\text{Zn}^{2+}$ is $d^{10}$. These ions lack $d$–$d$ transitions and are colourless. $\\text{Cu}^{2+}$ is $d^9$ and coloured.",
+  "distractor_notes": "A: Excludes the colourless $d^{10}$ ion $\\text{Zn}^{2+}$. C: Includes coloured $\\text{Cu}^{2+}$ and excludes $\\text{Sc}^{3+}$. D: Includes coloured $\\text{Cu}^{2+}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

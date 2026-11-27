@@ -1,0 +1,68 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Bohr energy for hydrogen-like ions",
+  "archetype": "ratio of two situations",
+  "brief": "Compare radius or energy of the nth orbit of a hydrogen-like ion with that of hydrogen in the corresponding orbit, scaling with Z.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:60",
+   "2024s1:36",
+   "2021:66"
+  ]
+ },
+ "status": "ok",
+ "stem": "Compare the radius of the third Bohr orbit of $\\text{He}^+$ with that of hydrogen in the same orbit. What is the ratio $r_{\\text{He}^+}/r_{\\text{H}}$?",
+ "options": [
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{1}{2}$",
+  "$2$",
+  "$4$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a hydrogen-like ion, the Bohr radius in orbit n is proportional to n²/Z. In the same orbit, helium has Z=2 and hydrogen has Z=1, so the ratio is 1/2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a hydrogen-like ion, $r_n\\propto \\dfrac{n^2}{Z}$.\nAt the same $n$, $\\dfrac{r_{\\text{He}^+}}{r_{\\text{H}}}=\\dfrac{Z_{\\text{H}}}{Z_{\\text{He}^+}}=\\dfrac{1}{2}$.\n\nIndependent check: For a hydrogen-like ion, the Bohr radius in orbit n is proportional to n²/Z. In the same orbit, helium has Z=2 and hydrogen has Z=1, so the ratio is 1/2.",
+ "solution": "For a hydrogen-like ion, $r_n\\propto \\dfrac{n^2}{Z}$. At the same $n=3$, hydrogen has $Z=1$ and $\\text{He}^+$ has $Z=2$:\n$$\\frac{r_{\\text{He}^+}}{r_{\\text{H}}}=\\frac{1}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Compare the radius of the third Bohr orbit of $\\text{He}^+$ with that of hydrogen in the same orbit. What is the ratio $r_{\\text{He}^+}/r_{\\text{H}}$?",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{2}$",
+   "$2$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For a hydrogen-like ion, $r_n\\propto \\dfrac{n^2}{Z}$.\nAt the same $n$, $\\dfrac{r_{\\text{He}^+}}{r_{\\text{H}}}=\\dfrac{Z_{\\text{H}}}{Z_{\\text{He}^+}}=\\dfrac{1}{2}$.",
+  "distractor_notes": "A: uses the energy scaling with $Z^2$; C: takes the reciprocal; D: uses the reciprocal squared scaling."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

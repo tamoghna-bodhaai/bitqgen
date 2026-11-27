@@ -1,0 +1,68 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Forming numbers with restrictions",
+  "archetype": "case-wise counting",
+  "brief": "Form 4-digit numbers from given digits satisfying a divisibility or repetition restriction, counting case by case.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:92",
+   "2026s1:97",
+   "2025s2:113"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many four-digit numbers can be formed from $0,1,2,3,5$ without repetition that are divisible by $5$?",
+ "options": [
+  "$18$",
+  "$24$",
+  "$42$",
+  "$48$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "If the last digit is 0: 4×3×2=24. If it is 5: 3×3×2=18. Total = 42.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Last digit $0$: $4\\cdot3\\cdot2=24$. Last digit $5$: $3\\cdot3\\cdot2=18$. Total $=24+18=42$.\n\nIndependent check: If the last digit is 0: 4×3×2=24. If it is 5: 3×3×2=18. Total = 42.",
+ "solution": "A number divisible by $5$ must end in $0$ or $5$.\nIf the last digit is $0$, the remaining three places can be filled in $4\\cdot3\\cdot2=24$ ways; if it is $5$, the first digit has $3$ choices, followed by $3\\cdot2$ choices.\n$$24+3\\cdot3\\cdot2=24+18=42$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many four-digit numbers can be formed from $0,1,2,3,5$ without repetition that are divisible by $5$?",
+  "options": [
+   "$18$",
+   "$24$",
+   "$42$",
+   "$48$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Last digit $0$: $4\\cdot3\\cdot2=24$. Last digit $5$: $3\\cdot3\\cdot2=18$. Total $=24+18=42$.",
+  "distractor_notes": "A: counts only numbers ending in $5$. B: counts only numbers ending in $0$. D: allows $0$ in the first position when counting both cases."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

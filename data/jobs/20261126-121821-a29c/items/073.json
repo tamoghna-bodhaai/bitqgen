@@ -1,0 +1,67 @@
+{
+ "qno": 73,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 73,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Dictionary order",
+  "archetype": "alphabetical ordering",
+  "brief": "Arrange four simple words in dictionary order; words chosen so only the 2nd or 3rd letter breaks ties.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:82",
+   "2026s1:77",
+   "2026s2:74"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the given words in the order in which they appear in an English dictionary.\n\n1. Trick\n2. Trace\n3. Trust\n4. Trend",
+ "options": [
+  "2, 1, 4, 3",
+  "2, 4, 1, 3",
+  "4, 2, 1, 3",
+  "2, 4, 3, 1"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "All words share 'Tr'; order by third letter: a (Trace), e (Trend), i (Trick), u (Trust) → 2, 4, 1, 3.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "All four words share the first two letters, 'TR'. We therefore compare their third letters:\n- In Trace (2), the third letter is 'a'.\n- In Trend (4), the third letter is 'e'.\n- In Trick (1), the third letter is 'i'.\n- In Trust (3), the third letter is 'u'.\n\nArranging the third letters in alphabetical order gives: 'a' < 'e' < 'i' < 'u'.\n\nThus, the correct dictionary order is:\n2. Trace $\\rightarrow$ 4. Trend $\\rightarrow$ 1. Trick $\\rightarrow$ 3. Trust, which corresponds to the sequence 2, 4, 1, 3.\n\nIndependent check: All words share 'Tr'; order by third letter: a (Trace), e (Trend), i (Trick), u (Trust) → 2, 4, 1, 3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Arrange the given words in the order in which they appear in an English dictionary.\n\n1. Trick\n2. Trace\n3. Trust\n4. Trend",
+  "options": [
+   "2, 1, 4, 3",
+   "2, 4, 1, 3",
+   "4, 2, 1, 3",
+   "2, 4, 3, 1"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "All four words share the first two letters, 'TR'. We therefore compare their third letters:\n- In Trace (2), the third letter is 'a'.\n- In Trend (4), the third letter is 'e'.\n- In Trick (1), the third letter is 'i'.\n- In Trust (3), the third letter is 'u'.\n\nArranging the third letters in alphabetical order gives: 'a' < 'e' < 'i' < 'u'.\n\nThus, the correct dictionary order is:\n2. Trace $\\rightarrow$ 4. Trend $\\rightarrow$ 1. Trick $\\rightarrow$ 3. Trust, which corresponds to the sequence 2, 4, 1, 3.",
+  "distractor_notes": "Option A (2, 1, 4, 3) incorrectly places 'i' before 'e'.\nOption C (4, 2, 1, 3) incorrectly puts 'e' before 'a'.\nOption D (2, 4, 3, 1) reverses the positions of 'i' and 'u'.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

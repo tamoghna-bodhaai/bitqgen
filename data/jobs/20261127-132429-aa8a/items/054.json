@@ -1,0 +1,68 @@
+{
+ "qno": 54,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 54,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "IUPAC nomenclature of complexes",
+  "archetype": "fact recall",
+  "brief": "A complex with two different ligands and counter-ions is described; pick its fully correct IUPAC name with ligands in alphabetical order.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:42",
+   "2024s2:48",
+   "2025s2:53"
+  ]
+ },
+ "status": "ok",
+ "stem": "The name of $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$ is",
+ "options": [
+  "pentaamminechloridocobalt(III) chloride",
+  "chloridopentaamminecobalt(III) chloride",
+  "pentaamminechloridocobalt(II) chloride",
+  "pentaamminechloridocobalt(III) dichloride"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The two outer Cl⁻ ions make the complex cation 2+. Since NH₃ is neutral and coordinated Cl is −1, Co is +3. Ligand names are ordered alphabetically: ammine before chlorido.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Complex charge $=+2$; hence $x-1=+2$, so cobalt is in oxidation state $+3$.\\nLigands in alphabetical order: ammine, chlorido.\\nThe two outer-sphere chloride ions are named collectively as chloride.\n\nIndependent check: The two outer Cl⁻ ions make the complex cation 2+. Since NH₃ is neutral and coordinated Cl is −1, Co is +3. Ligand names are ordered alphabetically: ammine before chlorido.",
+ "solution": "The complex ion has charge $+2$. If the oxidation state of Co is $x$, then $x-1=+2$, so $x=+3$.\nThe ligands are named alphabetically as ammine and chlorido; the counter-ion is chloride.\nHence, the name is pentaamminechloridocobalt(III) chloride.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The name of $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$ is",
+  "options": [
+   "pentaamminechloridocobalt(III) chloride",
+   "chloridopentaamminecobalt(III) chloride",
+   "pentaamminechloridocobalt(II) chloride",
+   "pentaamminechloridocobalt(III) dichloride"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Complex charge $=+2$; hence $x-1=+2$, so cobalt is in oxidation state $+3$.\\nLigands in alphabetical order: ammine, chlorido.\\nThe two outer-sphere chloride ions are named collectively as chloride.",
+  "distractor_notes": "B: places ligands out of alphabetical order.\\nC: assigns the wrong oxidation state to cobalt.\\nD: incorrectly prefixes the counter-ion name with a numerical prefix."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

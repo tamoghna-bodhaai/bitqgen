@@ -1,0 +1,67 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Molarity and neutralisation",
+  "archetype": "stoichiometry bookkeeping",
+  "brief": "Give volumes and molarities of an acid and a base (with clear stoichiometry like HCl vs NaOH) and ask for the volume of one needed for complete neutralisation of the other.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:55",
+   "2026s1:35",
+   "2026s2:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "What volume of $0.15\\ \\text{M}\\ \\text{NaOH}$ solution is required to completely neutralise $60\\ \\text{mL}$ of $0.10\\ \\text{M}\\ \\text{HCl}$ solution?",
+ "options": [
+  "$20\\ \\text{mL}$",
+  "$40\\ \\text{mL}$",
+  "$60\\ \\text{mL}$",
+  "$90\\ \\text{mL}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "HCl + NaOH → NaCl + H2O (1:1). Moles HCl = 0.060 L × 0.10 M = 0.006 mol. V(NaOH) = 0.006/0.15 = 0.040 L = 40 mL.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The balanced chemical equation for the neutralisation reaction is:\n$$\\text{HCl} + \\text{NaOH} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\n\nThe stoichiometric ratio of $\\text{HCl}$ to $\\text{NaOH}$ is $1 : 1$.\n\nCalculate the millimoles of $\\text{HCl}$ present:\n$$\\text{Millimoles of } \\text{HCl} = M_1 \\times V_1 = 0.10\\ \\text{M} \\times 60\\ \\text{mL} = 6.0\\ \\text{mmol}$$\n\nFor complete neutralisation, the millimoles of $\\text{NaOH}$ must equal the millimoles of $\\text{HCl}$:\n$$M_2 \\times V_2 = 6.0\\ \\text{mmol}$$\n$$0.15\\ \\text{M} \\times V_2 = 6.0\\ \\text{mmol}$$\n$$V_2 = \\dfrac{6.0}{0.15} = 40\\ \\text{mL}$$\n\nIndependent check: HCl + NaOH → NaCl + H2O (1:1). Moles HCl = 0.060 L × 0.10 M = 0.006 mol. V(NaOH) = 0.006/0.15 = 0.040 L = 40 mL.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "What volume of $0.15\\ \\text{M}\\ \\text{NaOH}$ solution is required to completely neutralise $60\\ \\text{mL}$ of $0.10\\ \\text{M}\\ \\text{HCl}$ solution?",
+  "options": [
+   "$20\\ \\text{mL}$",
+   "$40\\ \\text{mL}$",
+   "$60\\ \\text{mL}$",
+   "$90\\ \\text{mL}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "The balanced chemical equation for the neutralisation reaction is:\n$$\\text{HCl} + \\text{NaOH} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\n\nThe stoichiometric ratio of $\\text{HCl}$ to $\\text{NaOH}$ is $1 : 1$.\n\nCalculate the millimoles of $\\text{HCl}$ present:\n$$\\text{Millimoles of } \\text{HCl} = M_1 \\times V_1 = 0.10\\ \\text{M} \\times 60\\ \\text{mL} = 6.0\\ \\text{mmol}$$\n\nFor complete neutralisation, the millimoles of $\\text{NaOH}$ must equal the millimoles of $\\text{HCl}$:\n$$M_2 \\times V_2 = 6.0\\ \\text{mmol}$$\n$$0.15\\ \\text{M} \\times V_2 = 6.0\\ \\text{mmol}$$\n$$V_2 = \\dfrac{6.0}{0.15} = 40\\ \\text{mL}$$",
+  "distractor_notes": "A: Erroneously applies a factor of 2 by assuming a dibasic acid/base stoichiometry (calculating $40 / 2 = 20\\ \\text{mL}$).\nC: Neglects the molarity difference and assumes equal volumes ($60\\ \\text{mL}$).\nD: Inverts the concentration ratio, computing $\\dfrac{60 \\times 0.15}{0.10} = 90\\ \\text{mL}$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

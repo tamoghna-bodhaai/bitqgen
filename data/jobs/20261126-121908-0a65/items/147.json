@@ -1,0 +1,68 @@
+{
+ "qno": 147,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 147,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Foot of perpendicular",
+  "archetype": "multi-step 3D",
+  "brief": "Find the foot of the perpendicular from a point to a plane/line and then the perpendicular distance.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:93",
+   "2025s2:106",
+   "2026s1:128"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the foot of the perpendicular from $P=(1,2,0)$ to the plane $2x-y+2z=3$ and the perpendicular distance.",
+ "options": [
+  "$H=(\\dfrac53,\\dfrac53,\\dfrac23),\\ d=1$",
+  "$H=(\\dfrac13,\\dfrac73,-\\dfrac23),\\ d=1$",
+  "$H=(\\dfrac53,\\dfrac53,\\dfrac23),\\ d=3$",
+  "$H=(7,-1,6),\\ d=3$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The plane normal is n=(2,-1,2), with |n|²=9. Since n·P−3=−3, the foot is H=P−[(n·P−3)/|n|²]n=(5/3,5/3,2/3), and the distance is |−3|/3=1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$F(P)=2(1)-2+0-3=-3$, $\\|\\vec n\\|^2=9$; $H=P-\\dfrac{F(P)}{9}(2,-1,2)=(\\dfrac53,\\dfrac53,\\dfrac23)$; $PH=\\dfrac{|F(P)|}{\\|\\vec n\\|}=1$.\n\nIndependent check: The plane normal is n=(2,-1,2), with |n|²=9. Since n·P−3=−3, the foot is H=P−[(n·P−3)/|n|²]n=(5/3,5/3,2/3), and the distance is |−3|/3=1.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the foot of the perpendicular from $P=(1,2,0)$ to the plane $2x-y+2z=3$ and the perpendicular distance.",
+  "options": [
+   "$H=(\\dfrac53,\\dfrac53,\\dfrac23),\\ d=1$",
+   "$H=(\\dfrac13,\\dfrac73,-\\dfrac23),\\ d=1$",
+   "$H=(\\dfrac53,\\dfrac53,\\dfrac23),\\ d=3$",
+   "$H=(7,-1,6),\\ d=3$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$F(P)=2(1)-2+0-3=-3$, $\\|\\vec n\\|^2=9$; $H=P-\\dfrac{F(P)}{9}(2,-1,2)=(\\dfrac53,\\dfrac53,\\dfrac23)$; $PH=\\dfrac{|F(P)|}{\\|\\vec n\\|}=1$.",
+  "distractor_notes": "B: uses the wrong sign for the projection; C: omits normalization in the distance; D: omits the factor $\\|\\vec n\\|^2$ in the foot calculation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,76 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Crystal field splitting",
+  "archetype": "electron configuration comparison",
+  "brief": "Provide the figure of d-orbital splitting (octahedral) with electron occupancy for a given metal ion; ask to match it with the correct complex from options and state high/low spin and magnetic character.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:74",
+   "2021:78",
+   "2024s2:50"
+  ]
+ },
+ "status": "ok",
+ "stem": "The octahedral splitting shown in the figure corresponds to which complex and its spin and magnetic character?",
+ "options": [
+  "$[\\text{FeF}_6]^{4-}$ — high-spin, paramagnetic",
+  "$[\\text{Fe(CN)}_6]^{4-}$ — low-spin, diamagnetic",
+  "$[\\text{Cr(H}_2\\text{O)}_6]^{3+}$ — paramagnetic, three unpaired electrons",
+  "$[\\text{Ni(H}_2\\text{O)}_6]^{2+}$ — paramagnetic, two unpaired electrons"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q047_stem_v0.png",
+  "width_pct": 45,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The diagram shows a low-spin d⁶ configuration: t₂g⁶e_g⁰, with all electrons paired. Fe²⁺ in [Fe(CN)₆]⁴⁻ is d⁶; CN⁻ is a strong-field ligand, so the complex is low-spin and diamagnetic.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Six $d$ electrons occupy the lower $t_{2g}$ orbitals: $t_{2g}^{6}e_g^{0}$.\\nFor $\\text{Fe}^{2+}$, $d^6$; $\\text{CN}^-$ gives low-spin $t_{2g}^{6}e_g^{0}$, with zero unpaired electrons.\n\nIndependent check: The diagram shows a low-spin d⁶ configuration: t₂g⁶e_g⁰, with all electrons paired. Fe²⁺ in [Fe(CN)₆]⁴⁻ is d⁶; CN⁻ is a strong-field ligand, so the complex is low-spin and diamagnetic.",
+ "solution": "In $[\\text{Fe(CN)}_6]^{4-}$, iron is in the $+2$ oxidation state, giving a $d^6$ configuration. Since $\\text{CN}^-$ is a strong-field ligand, the electrons pair in the lower $t_{2g}$ orbitals:\n$$t_{2g}^{6}e_g^{0}$$\nAll electrons are paired, so the complex is low-spin and diamagnetic.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The octahedral splitting shown in the figure corresponds to which complex and its spin and magnetic character?",
+  "options": [
+   "$[\\text{Fe(CN)}_6]^{4-}$ — low-spin, diamagnetic",
+   "$[\\text{FeF}_6]^{4-}$ — high-spin, paramagnetic",
+   "$[\\text{Cr(H}_2\\text{O)}_6]^{3+}$ — paramagnetic, three unpaired electrons",
+   "$[\\text{Ni(H}_2\\text{O)}_6]^{2+}$ — paramagnetic, two unpaired electrons"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw an octahedral crystal-field splitting diagram. Include a vertical energy axis with an upward arrow labelled E. Show a lower horizontal level labelled t2g with three separate orbital boxes; put one upward and one downward arrow in each box. Show an upper horizontal level labelled eg with two separate empty orbital boxes. Do not include a complex formula or labels for spin or magnetic character.",
+   "smiles": null
+  },
+  "difficulty_estimate": 4,
+  "working": "Six $d$ electrons occupy the lower $t_{2g}$ orbitals: $t_{2g}^{6}e_g^{0}$.\\nFor $\\text{Fe}^{2+}$, $d^6$; $\\text{CN}^-$ gives low-spin $t_{2g}^{6}e_g^{0}$, with zero unpaired electrons.",
+  "distractor_notes": "B: $\\text{F}^-$ gives high-spin $\\text{Fe}^{2+}$, not the shown occupancy.\nC: $\\text{Cr}^{3+}$ is $d^3$, not $d^6$.\nD: $\\text{Ni}^{2+}$ is $d^8$ and occupies the upper $e_g$ level."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

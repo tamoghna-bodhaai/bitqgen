@@ -1,0 +1,67 @@
+{
+ "qno": 105,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 105,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Locus of centre",
+  "archetype": "midpoint substitution",
+  "brief": "Circle of fixed radius whose centre moves while remaining tangent to both a line and a circle (or two fixed lines); find the locus of the centre.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:112",
+   "2024s1:114",
+   "2026s1:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "A variable circle touches the $x$-axis and also touches the circle $x^2 + (y - 3)^2 = 1$ externally. The locus of the centre of the variable circle is",
+ "options": [
+  "$x^2 = 4(y - 1)$",
+  "$x^2 = 8(y - 1)$",
+  "$y^2 = 4(x - 1)$",
+  "$y^2 = 8(x - 1)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Let centre (h,k); touching x-axis gives radius |k|. External tangency to centre (0,3), radius 1: √(h²+(k−3)²)=|k|+1. For k>0: h²+k²−6k+9=k²+2k+1 ⇒ h²=8(k−1), i.e. x²=8(y−1). For k<0: h²=4k−8<0, impossible. Numerical check confirms points on x²=8(y−1) satisfy distance = r+1; option A fails.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the centre of the variable circle be $(h, k)$ and its radius be $r$.\nSince the circle touches the $x$-axis and lies in the upper half-plane (as the given circle lies entirely above the $x$-axis with centre $(0, 3)$ and radius $1$), its radius is $r = k$.\n\nThe given circle has centre $C_1(0, 3)$ and radius $R = 1$.\nSince the two circles touch externally, the distance between their centres is equal to the sum of their radii:\n$$\\sqrt{(h - 0)^2 + (k - 3)^2} = r + R = k + 1$$\n\nSquaring both sides:\n$$h^2 + (k - 3)^2 = (k + 1)^2$$\n$$h^2 + k^2 - 6k + 9 = k^2 + 2k + 1$$\n$$h^2 = 8k - 8 = 8(k - 1)$$\n\nReplacing $(h, k)$ with $(x, y)$, the locus of the centre is:\n$$x^2 = 8(y - 1)$$\n\nIndependent check: Let centre (h,k); touching x-axis gives radius |k|. External tangency to centre (0,3), radius 1: √(h²+(k−3)²)=|k|+1. For k>0: h²+k²−6k+9=k²+2k+1 ⇒ h²=8(k−1), i.e. x²=8(y−1). For k<0: h²=4k−8<0, impossible. Numerical check confirms points on x²=8(y−1) satisfy distance = r+1; option A fails.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A variable circle touches the $x$-axis and also touches the circle $x^2 + (y - 3)^2 = 1$ externally. The locus of the centre of the variable circle is",
+  "options": [
+   "$x^2 = 4(y - 1)$",
+   "$x^2 = 8(y - 1)$",
+   "$y^2 = 4(x - 1)$",
+   "$y^2 = 8(x - 1)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let the centre of the variable circle be $(h, k)$ and its radius be $r$.\nSince the circle touches the $x$-axis and lies in the upper half-plane (as the given circle lies entirely above the $x$-axis with centre $(0, 3)$ and radius $1$), its radius is $r = k$.\n\nThe given circle has centre $C_1(0, 3)$ and radius $R = 1$.\nSince the two circles touch externally, the distance between their centres is equal to the sum of their radii:\n$$\\sqrt{(h - 0)^2 + (k - 3)^2} = r + R = k + 1$$\n\nSquaring both sides:\n$$h^2 + (k - 3)^2 = (k + 1)^2$$\n$$h^2 + k^2 - 6k + 9 = k^2 + 2k + 1$$\n$$h^2 = 8k - 8 = 8(k - 1)$$\n\nReplacing $(h, k)$ with $(x, y)$, the locus of the centre is:\n$$x^2 = 8(y - 1)$$",
+  "distractor_notes": "A: Arises from writing $(k+1)^2 - (k-3)^2$ with a missing factor of 2 in the cross-terms, giving $4(y-1)$.\nC: Arises from both confusing the roles of $x$ and $y$ and making the algebra slip leading to a coefficient of 4.\nD: Arises from swapping the coordinate axes (treating tangency to the $y$-axis instead of the $x$-axis).",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,78 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Cleavage of ethers with HI",
+  "archetype": "mechanism-based product",
+  "brief": "Predict the products when an unsymmetrical ether reacts with excess HI, highlighting the SN1 vs SN2 pathway depending on the alkyl groups.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:32",
+   "2026s1:59",
+   "2024s2:41"
+  ]
+ },
+ "status": "ok",
+ "stem": "When tert-butyl methyl ether is heated with excess HI, what are the major organic products?",
+ "options": [
+  "tert-Butyl iodide and methanol",
+  "tert-Butyl alcohol and methyl iodide",
+  "tert-Butyl iodide and methyl iodide",
+  "tert-Butyl alcohol and methanol"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": [
+  "figs/q047_optA_v0.png",
+  "figs/q047_optB_v0.png",
+  "figs/q047_optC_v0.png",
+  "figs/q047_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "HI cleaves the ether at the tertiary carbon to form tert-butyl iodide and methanol. Excess HI converts methanol to methyl iodide, so the products are tert-butyl iodide and methyl iodide.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Protonated ether cleaves at the tertiary carbon by $\\text{S}_\\text{N}1$: tert-butyl iodide + methanol.\\nExcess HI converts methanol to methyl iodide.\\nMajor organic products: tert-butyl iodide and methyl iodide.\n\nIndependent check: HI cleaves the ether at the tertiary carbon to form tert-butyl iodide and methanol. Excess HI converts methanol to methyl iodide, so the products are tert-butyl iodide and methyl iodide.",
+ "solution": "The protonated ether cleaves at the tertiary carbon by an $\\mathrm{S_N1}$ pathway, forming tert-butyl iodide and methanol. Excess HI converts the methanol into methyl iodide:\n$$\\text{tert-butyl methyl ether} + 2\\mathrm{HI} \\longrightarrow \\text{tert-butyl iodide} + \\text{methyl iodide} + \\mathrm{H_2O}$$\nThus, the major organic products are tert-butyl iodide and methyl iodide.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "When tert-butyl methyl ether is heated with excess HI, what are the major organic products?",
+  "options": [
+   "tert-Butyl iodide and methanol",
+   "tert-Butyl alcohol and methyl iodide",
+   "tert-Butyl iodide and methyl iodide",
+   "tert-Butyl alcohol and methanol"
+  ],
+  "option_smiles": [
+   "CC(C)(C)I.CO",
+   "CC(C)(C)O.CI",
+   "CC(C)(C)I.CI",
+   "CC(C)(C)O.CO"
+  ],
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Protonated ether cleaves at the tertiary carbon by $\\text{S}_\\text{N}1$: tert-butyl iodide + methanol.\\nExcess HI converts methanol to methyl iodide.\\nMajor organic products: tert-butyl iodide and methyl iodide.",
+  "distractor_notes": "A: stops after the initial ether cleavage and omits reaction of methanol with excess HI. B: assigns cleavage to the methyl side and leaves tert-butanol. D: gives alcohols rather than the iodides formed with excess HI."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

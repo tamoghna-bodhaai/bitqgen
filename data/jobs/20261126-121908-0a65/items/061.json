@@ -1,0 +1,67 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Oxidation states",
+  "archetype": "electronic configuration",
+  "brief": "Give electronic configuration of a transition metal ion (e.g. Cr2+, Mn2+) and its oxidation state/d-orbital occupancy.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:43",
+   "2025s2:48",
+   "2024s1:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "The electronic configuration of a divalent ion of a $3d$ transition metal is $[\\text{Ar}]\\,3d^4$. The atomic number of the metal and the number of unpaired electrons in its ground-state neutral atom are, respectively:",
+ "options": [
+  "$24$ and $4$",
+  "$24$ and $5$",
+  "$24$ and $6$",
+  "$25$ and $5$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "M²⁺ = [Ar]3d⁴ has 22 electrons, so neutral atom Z = 24 (Cr). Ground-state Cr is [Ar]3d⁵4s¹ (half-filled d stability), giving 5 + 1 = 6 unpaired electrons.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "1. The divalent cation $M^{2+}$ has the electronic configuration $[\\text{Ar}]\\,3d^4$.\n2. The number of electrons in $[\\text{Ar}]\\,3d^4$ is $18 + 4 = 22$.\n3. Since the cation carries a $+2$ charge, the neutral atom $M$ has $22 + 2 = 24$ electrons. Thus, the atomic number of the metal is $Z = 24$ (Chromium, $\\text{Cr}$).\n4. Due to the extra stability of a half-filled $d$-subshell, the ground-state electronic configuration of neutral $\\text{Cr}$ ($Z = 24$) is $[\\text{Ar}]\\,3d^5 4s^1$.\n5. The number of unpaired electrons in neutral $\\text{Cr}$ is $5$ (from the singly occupied $3d$ orbitals) $+ 1$ (from the singly occupied $4s$ orbital) $= 6$.\n\nTherefore, the atomic number is $24$ and the number of unpaired electrons is $6$.\n\nIndependent check: M²⁺ = [Ar]3d⁴ has 22 electrons, so neutral atom Z = 24 (Cr). Ground-state Cr is [Ar]3d⁵4s¹ (half-filled d stability), giving 5 + 1 = 6 unpaired electrons.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The electronic configuration of a divalent ion of a $3d$ transition metal is $[\\text{Ar}]\\,3d^4$. The atomic number of the metal and the number of unpaired electrons in its ground-state neutral atom are, respectively:",
+  "options": [
+   "$24$ and $4$",
+   "$24$ and $5$",
+   "$24$ and $6$",
+   "$25$ and $5$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "1. The divalent cation $M^{2+}$ has the electronic configuration $[\\text{Ar}]\\,3d^4$.\n2. The number of electrons in $[\\text{Ar}]\\,3d^4$ is $18 + 4 = 22$.\n3. Since the cation carries a $+2$ charge, the neutral atom $M$ has $22 + 2 = 24$ electrons. Thus, the atomic number of the metal is $Z = 24$ (Chromium, $\\text{Cr}$).\n4. Due to the extra stability of a half-filled $d$-subshell, the ground-state electronic configuration of neutral $\\text{Cr}$ ($Z = 24$) is $[\\text{Ar}]\\,3d^5 4s^1$.\n5. The number of unpaired electrons in neutral $\\text{Cr}$ is $5$ (from the singly occupied $3d$ orbitals) $+ 1$ (from the singly occupied $4s$ orbital) $= 6$.\n\nTherefore, the atomic number is $24$ and the number of unpaired electrons is $6$.",
+  "distractor_notes": "- $24$ and $4$: Assumes the standard Aufbau configuration $[\\text{Ar}]\\,3d^4 4s^2$ for Chromium, forgetting the anomalous half-filled $3d^5 4s^1$ configuration.\n- $24$ and $5$: Recognizes the $[\\text{Ar}]\\,3d^5 4s^1$ configuration but counts only the unpaired $d$-electrons, overlooking the unpaired electron in the $4s$ subshell.\n- $25$ and $5$: Confuses the divalent ion with a trivalent ion (e.g., $\\text{Mn}^{3+}$, which is also $3d^4$), leading to $Z = 25$ (Manganese, $[\\text{Ar}]\\,3d^5 4s^2$) with $5$ unpaired electrons.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

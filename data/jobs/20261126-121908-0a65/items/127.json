@@ -1,0 +1,68 @@
+{
+ "qno": 127,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 127,
+  "section": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "subtopic": "Logical equivalence",
+  "archetype": "simplify and compare",
+  "brief": "Given a compound statement involving ∧, ∨, negations, select the logically equivalent simplified form.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:97",
+   "2024s1:127",
+   "2024s1:128"
+  ]
+ },
+ "status": "ok",
+ "stem": "The proposition $¬[(p∧¬q)∨(¬p∧r)]∧(p∨¬q)$ is logically equivalent to",
+ "options": [
+  "$(p∧q)∨(¬p∧¬q∧¬r)$",
+  "$(p∧q)∨(¬p∧¬q∧r)$",
+  "$(p∧¬q)∨(¬p∧q∧¬r)$",
+  "$(p∨q)∧(¬p∨¬r)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For p=1, the proposition reduces to q; for p=0, it reduces to ¬q∧¬r. Thus it is (p∧q)∨(¬p∧¬q∧¬r).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$¬[(p∧¬q)∨(¬p∧r)]∧(p∨¬q)=[(¬p∨q)∧(p∨¬r)]∧(p∨¬q)$. For $p=1$: $q$; for $p=0$: $¬q∧¬r$.\n\nIndependent check: For p=1, the proposition reduces to q; for p=0, it reduces to ¬q∧¬r. Thus it is (p∧q)∨(¬p∧¬q∧¬r).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The proposition $¬[(p∧¬q)∨(¬p∧r)]∧(p∨¬q)$ is logically equivalent to",
+  "options": [
+   "$(p∧q)∨(¬p∧¬q∧¬r)$",
+   "$(p∧q)∨(¬p∧¬q∧r)$",
+   "$(p∧¬q)∨(¬p∧q∧¬r)$",
+   "$(p∨q)∧(¬p∨¬r)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$¬[(p∧¬q)∨(¬p∧r)]∧(p∨¬q)=[(¬p∨q)∧(p∨¬r)]∧(p∨¬q)$. For $p=1$: $q$; for $p=0$: $¬q∧¬r$.",
+  "distractor_notes": "B: loses the negation on $r$; C: interchanges $q$ and $¬q$ in the cases; D: applies an incorrect De Morgan transformation and drops the final conjunct."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

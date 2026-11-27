@@ -1,0 +1,68 @@
+{
+ "qno": 48,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 48,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "IUPAC nomenclature",
+  "archetype": "nomenclature",
+  "brief": "Select the correct IUPAC name of a branched haloalkene with correct numbering and substituent order.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:45",
+   "2026s1:41",
+   "2021:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "Choose the correct IUPAC name for $\\text{CH}_3\\text{C(Br)=C(CH}_3\\text{)CH}_2\\text{CH}_3$.",
+ "options": [
+  "2-bromo-3-methylpent-3-ene",
+  "4-bromo-3-methylpent-2-ene",
+  "3-bromo-2-methylpent-2-ene",
+  "2-bromo-3-methylpent-2-ene"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The longest chain containing the double bond has five carbons. Numbering from the left gives the double bond at C2, with bromo at C2 and methyl at C3. Substituents are listed alphabetically.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The longest chain containing the double bond has five carbons.\nNumber to give the double bond the lowest locant: pent-2-ene.\nSubstituents are bromo at C-2 and methyl at C-3.\nName: 2-bromo-3-methylpent-2-ene.\n\nIndependent check: The longest chain containing the double bond has five carbons. Numbering from the left gives the double bond at C2, with bromo at C2 and methyl at C3. Substituents are listed alphabetically.",
+ "solution": "The longest chain containing the double bond has five carbons; number it to give the double bond the lowest locant, 2.\nThe substituents are bromo at C-2 and methyl at C-3; list them alphabetically.\nThus, the name is $\\text{2-bromo-3-methylpent-2-ene}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Choose the correct IUPAC name for $\\text{CH}_3\\text{C(Br)=C(CH}_3\\text{)CH}_2\\text{CH}_3$.",
+  "options": [
+   "2-bromo-3-methylpent-2-ene",
+   "4-bromo-3-methylpent-2-ene",
+   "3-bromo-2-methylpent-2-ene",
+   "2-bromo-3-methylpent-3-ene"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "The longest chain containing the double bond has five carbons.\nNumber to give the double bond the lowest locant: pent-2-ene.\nSubstituents are bromo at C-2 and methyl at C-3.\nName: 2-bromo-3-methylpent-2-ene.",
+  "distractor_notes": "B: numbers substituents inconsistently with the double bond; C: swaps substituent positions; D: gives the double bond the higher locant."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

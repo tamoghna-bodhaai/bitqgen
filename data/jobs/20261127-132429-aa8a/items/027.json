@@ -1,0 +1,68 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio of approach/recede frequencies",
+  "brief": "Doppler effect: a source and observer moving relative to each other (both approach, or one recedes); compute the apparent frequency heard, or ratio of approach to recede frequencies.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:20",
+   "2023s2:27",
+   "2024s1:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "A stationary observer hears a source of frequency $500$ Hz as it moves first towards and then away from the observer at $34$ m s$^{-1}$. If the speed of sound is $340$ m s$^{-1}$, the ratio of the two heard frequencies (approaching to receding) is",
+ "options": [
+  "$\\dfrac{9}{11}$",
+  "$\\dfrac{9}{10}$",
+  "$\\dfrac{10}{9}$",
+  "$\\dfrac{11}{9}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a moving source, the approaching and receding frequencies are proportional to \\(v/(v-v_s)\\) and \\(v/(v+v_s)\\). Their ratio is \\((340+34)/(340-34)=11/9\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{f_{\\rm app}}{f_{\\rm rec}}=\\dfrac{v+v_s}{v-v_s}=\\dfrac{340+34}{340-34}$\\\\\n$=\\dfrac{374}{306}=\\dfrac{11}{9}$\n\nIndependent check: For a moving source, the approaching and receding frequencies are proportional to \\(v/(v-v_s)\\) and \\(v/(v+v_s)\\). Their ratio is \\((340+34)/(340-34)=11/9\\).",
+ "solution": "For a moving source, $f_{\\rm app}=f\\dfrac{v}{v-v_s}$ and $f_{\\rm rec}=f\\dfrac{v}{v+v_s}$. Hence,\n$$\\frac{f_{\\rm app}}{f_{\\rm rec}}=\\frac{v+v_s}{v-v_s}=\\frac{340+34}{340-34}=\\frac{11}{9}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A stationary observer hears a source of frequency $500$ Hz as it moves first towards and then away from the observer at $34$ m s$^{-1}$. If the speed of sound is $340$ m s$^{-1}$, the ratio of the two heard frequencies (approaching to receding) is",
+  "options": [
+   "$\\dfrac{9}{11}$",
+   "$\\dfrac{11}{9}$",
+   "$\\dfrac{10}{9}$",
+   "$\\dfrac{9}{10}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{f_{\\rm app}}{f_{\\rm rec}}=\\dfrac{v+v_s}{v-v_s}=\\dfrac{340+34}{340-34}$\\\\\n$=\\dfrac{374}{306}=\\dfrac{11}{9}$",
+  "distractor_notes": "A inverts the ratio; C and D use an incorrect speed adjustment in the Doppler formula."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

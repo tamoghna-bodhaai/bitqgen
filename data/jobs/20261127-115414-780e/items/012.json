@@ -1,0 +1,76 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Zener diode as voltage regulator",
+  "archetype": "circuit current split",
+  "brief": "Zener regulator circuit with source, series resistor, Zener voltage and load; find current through Zener and through load, and dissipated Zener power; include circuit diagram.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:20",
+   "2025s2:23",
+   "2024s2:22"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the Zener regulator circuit shown in the figure, Vs = 24 V, Rs = 600 ohm, Vz = 9 V, and RL = 450 ohm. The current through the Zener diode, the current through the load resistor, and the power dissipated in the Zener diode are, respectively:",
+ "options": [
+  "20 mA, 5 mA, 45 mW",
+  "5 mA, 20 mA, 45 mW",
+  "25 mA, 20 mA, 225 mW",
+  "5 mA, 20 mA, 180 mW"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q012_stem_v2.png",
+  "width_pct": 65,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Assuming the Zener regulates at 9 V: the series current is (24−9)/600 = 25 mA. The load current is 9/450 = 20 mA, so the Zener current is 5 mA and its power is 9 × 5 mA = 45 mW.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "I_L = Vz / RL = 9 / 450 = 0.020 A = 20 mA. I_s = (Vs - Vz) / Rs = (24 - 9) / 600 = 15 / 600 = 0.025 A = 25 mA. I_z = I_s - I_L = 25 - 20 = 5 mA. P_z = Vz * I_z = 9 * 0.005 = 0.045 W = 45 mW.\n\nIndependent check: Assuming the Zener regulates at 9 V: the series current is (24−9)/600 = 25 mA. The load current is 9/450 = 20 mA, so the Zener current is 5 mA and its power is 9 × 5 mA = 45 mW.",
+ "solution": "With the Zener regulating, the load voltage is $V_z=9\\,\\text{V}$.\n$$I_L=\\frac{V_z}{R_L}=\\frac{9}{450}=20\\,\\text{mA},\\qquad I_s=\\frac{V_s-V_z}{R_s}=\\frac{24-9}{600}=25\\,\\text{mA}$$\nThus $I_z=I_s-I_L=5\\,\\text{mA}$ and $P_z=V_zI_z=9(0.005)=45\\,\\text{mW}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the Zener regulator circuit shown in the figure, Vs = 24 V, Rs = 600 ohm, Vz = 9 V, and RL = 450 ohm. The current through the Zener diode, the current through the load resistor, and the power dissipated in the Zener diode are, respectively:",
+  "options": [
+   "5 mA, 20 mA, 45 mW",
+   "20 mA, 5 mA, 45 mW",
+   "25 mA, 20 mA, 225 mW",
+   "5 mA, 20 mA, 180 mW"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a DC voltage source Vs with positive terminal at top and negative terminal at bottom. From the positive terminal, connect a series resistor Rs horizontally to the right to a junction node A. Label this resistor Rs = 600 ohm. From node A, draw a Zener diode vertically downward back to the bottom rail, with its cathode at node A and anode at the bottom rail; label it Vz = 9 V. Also from node A, draw a load resistor RL vertically downward to the bottom rail to the right of the Zener diode; label it RL = 450 ohm. Label the source Vs = 24 V.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "I_L = Vz / RL = 9 / 450 = 0.020 A = 20 mA. I_s = (Vs - Vz) / Rs = (24 - 9) / 600 = 15 / 600 = 0.025 A = 25 mA. I_z = I_s - I_L = 25 - 20 = 5 mA. P_z = Vz * I_z = 9 * 0.005 = 0.045 W = 45 mW.",
+  "distractor_notes": "B: I_z and I_L are interchanged. C: total source current is mistaken for Zener current and P is calculated with that current. D: load current is used instead of Zener current to calculate Zener power."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Field from potential",
+  "archetype": "vector reasoning",
+  "brief": "Field from potential: a given potential function V(x,y) or potential along a line; differentiate to get the field and evaluate the vector direction at a specified point.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:8",
+   "2021:1",
+   "2024s1:6"
+  ]
+ },
+ "status": "ok",
+ "stem": "The potential is $V(x,y)=(x^2+2xy)\\ \\text{V m}^{-2}$, where $x$ and $y$ are in metres. What is the electric field at $(1\\ \\text{m},1\\ \\text{m})$?",
+ "options": [
+  "$(-4\\hat{\\mathbf{i}}-2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$",
+  "$(4\\hat{\\mathbf{i}}+2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$",
+  "$(-2\\hat{\\mathbf{i}}-4\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$",
+  "$(4\\hat{\\mathbf{i}}-2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\mathbf E=-\\nabla V\\). At \\((1,1)\\), \\(\\partial V/\\partial x=4\\,\\text{V m}^{-1}\\) and \\(\\partial V/\\partial y=2\\,\\text{V m}^{-1}\\), so \\(\\mathbf E=(-4\\hat{\\mathbf i}-2\\hat{\\mathbf j})\\,\\text{V m}^{-1}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec E=-\\nabla V$\n$E_x=-\\dfrac{\\partial V}{\\partial x}=-(2x+2y),\\quad E_y=-\\dfrac{\\partial V}{\\partial y}=-2x$\nAt $x=y=1\\ \\text{m}$: $\\vec E=(-4\\hat{\\mathbf{i}}-2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$.\n\nIndependent check: \\(\\mathbf E=-\\nabla V\\). At \\((1,1)\\), \\(\\partial V/\\partial x=4\\,\\text{V m}^{-1}\\) and \\(\\partial V/\\partial y=2\\,\\text{V m}^{-1}\\), so \\(\\mathbf E=(-4\\hat{\\mathbf i}-2\\hat{\\mathbf j})\\,\\text{V m}^{-1}\\).",
+ "solution": "The electric field is the negative gradient of the potential:\n$$\\vec E=-\\nabla V=-(2x+2y)\\hat{\\mathbf i}-2x\\hat{\\mathbf j}.\n$$\nAt $(x,y)=(1,1)$, $\\vec E=(-4\\hat{\\mathbf i}-2\\hat{\\mathbf j})\\,\\text{V m}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The potential is $V(x,y)=(x^2+2xy)\\ \\text{V m}^{-2}$, where $x$ and $y$ are in metres. What is the electric field at $(1\\ \\text{m},1\\ \\text{m})$?",
+  "options": [
+   "$(-4\\hat{\\mathbf{i}}-2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$",
+   "$(4\\hat{\\mathbf{i}}+2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$",
+   "$(-2\\hat{\\mathbf{i}}-4\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$",
+   "$(4\\hat{\\mathbf{i}}-2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\vec E=-\\nabla V$\n$E_x=-\\dfrac{\\partial V}{\\partial x}=-(2x+2y),\\quad E_y=-\\dfrac{\\partial V}{\\partial y}=-2x$\nAt $x=y=1\\ \\text{m}$: $\\vec E=(-4\\hat{\\mathbf{i}}-2\\hat{\\mathbf{j}})\\ \\text{V m}^{-1}$.",
+  "distractor_notes": "B: omits the negative sign in $\\vec E=-\\nabla V$. C: interchanges the two field components. D: uses the wrong sign for the $x$ component."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

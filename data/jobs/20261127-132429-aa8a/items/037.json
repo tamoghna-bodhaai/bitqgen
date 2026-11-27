@@ -1,0 +1,68 @@
+{
+ "qno": 37,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 37,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Hybridisation and bond angle",
+  "archetype": "ordering",
+  "brief": "Arrange four species (with varying lone pairs and multiple bonds, e.g. water, ammonia, carbonyl-type, amide-type) in order of decreasing bond angle with justification from VSEPR.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:37",
+   "2024s2:33",
+   "2021:69"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using VSEPR theory, arrange the indicated bond angles in decreasing order: $\\text{CO}_2$ ($\\angle\\text{OCO}$), $\\text{H}_2\\text{CO}$ ($\\angle\\text{OCH}$), $\\text{NH}_3$ ($\\angle\\text{HNH}$) and $\\text{H}_2\\text{O}$ ($\\angle\\text{HOH}$).",
+ "options": [
+  "$\\text{CO}_2 > \\text{NH}_3 > \\text{H}_2\\text{CO} > \\text{H}_2\\text{O}$",
+  "$\\text{CO}_2 > \\text{H}_2\\text{CO} > \\text{NH}_3 > \\text{H}_2\\text{O}$",
+  "$\\text{H}_2\\text{CO} > \\text{CO}_2 > \\text{NH}_3 > \\text{H}_2\\text{O}$",
+  "$\\text{CO}_2 > \\text{H}_2\\text{CO} > \\text{H}_2\\text{O} > \\text{NH}_3$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "CO₂ is linear (180°); H₂CO is trigonal planar with ∠OCH about 122°; NH₃ is about 107°; H₂O is about 104.5°. Thus CO₂ > H₂CO > NH₃ > H₂O.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{CO}_2:180^\\circ;\\quad \\angle\\text{OCH in H}_2\\text{CO}\\approx122^\\circ$\n$\\angle\\text{HNH in NH}_3\\approx107^\\circ;\\quad \\angle\\text{HOH in H}_2\\text{O}\\approx104.5^\\circ$\n$180^\\circ>122^\\circ>107^\\circ>104.5^\\circ$\n\nIndependent check: CO₂ is linear (180°); H₂CO is trigonal planar with ∠OCH about 122°; NH₃ is about 107°; H₂O is about 104.5°. Thus CO₂ > H₂CO > NH₃ > H₂O.",
+ "solution": "By VSEPR, $\\text{CO}_2$ is linear, while $\\text{H}_2\\text{CO}$ is trigonal planar; lone-pair repulsion reduces the bond angles in $\\text{NH}_3$ and $\\text{H}_2\\text{O}$.\n$$180^\\\\circ > 122^\\\\text{ (approximately)} > 107^\\\\text{ (approximately)} > 104.5^\\\\text{ (approximately)}$$\nThus, $\\text{CO}_2 > \\text{H}_2\\text{CO} > \\text{NH}_3 > \\text{H}_2\\text{O}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using VSEPR theory, arrange the indicated bond angles in decreasing order: $\\text{CO}_2$ ($\\angle\\text{OCO}$), $\\text{H}_2\\text{CO}$ ($\\angle\\text{OCH}$), $\\text{NH}_3$ ($\\angle\\text{HNH}$) and $\\text{H}_2\\text{O}$ ($\\angle\\text{HOH}$).",
+  "options": [
+   "$\\text{CO}_2 > \\text{H}_2\\text{CO} > \\text{NH}_3 > \\text{H}_2\\text{O}$",
+   "$\\text{CO}_2 > \\text{NH}_3 > \\text{H}_2\\text{CO} > \\text{H}_2\\text{O}$",
+   "$\\text{H}_2\\text{CO} > \\text{CO}_2 > \\text{NH}_3 > \\text{H}_2\\text{O}$",
+   "$\\text{CO}_2 > \\text{H}_2\\text{CO} > \\text{H}_2\\text{O} > \\text{NH}_3$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{CO}_2:180^\\circ;\\quad \\angle\\text{OCH in H}_2\\text{CO}\\approx122^\\circ$\n$\\angle\\text{HNH in NH}_3\\approx107^\\circ;\\quad \\angle\\text{HOH in H}_2\\text{O}\\approx104.5^\\circ$\n$180^\\circ>122^\\circ>107^\\circ>104.5^\\circ$",
+  "distractor_notes": "B: places the smaller pyramidal ammonia angle above the carbonyl angle.\nC: places a trigonal-planar angle above the linear carbon dioxide angle.\nD: reverses the ammonia and water angles, ignoring the greater lone-pair contraction in water."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

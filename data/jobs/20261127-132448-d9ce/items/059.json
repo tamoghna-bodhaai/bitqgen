@@ -1,0 +1,68 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Gibbs energy and equilibrium constant",
+  "archetype": "single-formula numerical",
+  "brief": "Given a standard cell potential, compute ΔG° and the equilibrium constant of the cell reaction using ΔG° = −nFE° = −RT ln K.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:79",
+   "2025s1:51",
+   "2022:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a cell with $n=2$, $E^\\circ=0.1773$ V at $298$ K, find $(\\Delta G^\\circ,K)$. Take $F=96500$ C mol$^{-1}$ and $R=8.314$ J mol$^{-1}$ K$^{-1}$.",
+ "options": [
+  "$-34.2$ kJ mol$^{-1}$; $1.0\\times10^6$",
+  "$+34.2$ kJ mol$^{-1}$; $1.0\\times10^6$",
+  "$-17.1$ kJ mol$^{-1}$; $1.0\\times10^3$",
+  "$-34.2$ kJ mol$^{-1}$; $1.0\\times10^{-6}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "ΔG° = −nFE° = −2(96500)(0.1773) = −34.2 kJ mol⁻¹. ln K = nFE°/(RT) = 13.81, so K ≈ 1.0 × 10⁶.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.1773)=-34.2$ kJ mol$^{-1}$.\\n$\\ln K=\\dfrac{nFE^\\circ}{RT}=13.81$; $K\\approx9.95\\times10^5\\approx1.0\\times10^6$.\n\nIndependent check: ΔG° = −nFE° = −2(96500)(0.1773) = −34.2 kJ mol⁻¹. ln K = nFE°/(RT) = 13.81, so K ≈ 1.0 × 10⁶.",
+ "solution": "For a cell, $\u00024\\Delta G^\\circ=-nFE^\\circ$ and $\\ln K=\\dfrac{nFE^\\circ}{RT}$. \n$$\\Delta G^\\circ=-2(96500)(0.1773)=-34.2\\ \\text{kJ mol}^{-1},\\qquad \\ln K=\\frac{2(96500)(0.1773)}{(8.314)(298)}=13.81$$\nThus $K=e^{13.81}\\approx1.0\\times10^6$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a cell with $n=2$, $E^\\circ=0.1773$ V at $298$ K, find $(\\Delta G^\\circ,K)$. Take $F=96500$ C mol$^{-1}$ and $R=8.314$ J mol$^{-1}$ K$^{-1}$.",
+  "options": [
+   "$-34.2$ kJ mol$^{-1}$; $1.0\\times10^6$",
+   "$+34.2$ kJ mol$^{-1}$; $1.0\\times10^6$",
+   "$-17.1$ kJ mol$^{-1}$; $1.0\\times10^3$",
+   "$-34.2$ kJ mol$^{-1}$; $1.0\\times10^{-6}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.1773)=-34.2$ kJ mol$^{-1}$.\\n$\\ln K=\\dfrac{nFE^\\circ}{RT}=13.81$; $K\\approx9.95\\times10^5\\approx1.0\\times10^6$.",
+  "distractor_notes": "B: reverses the sign of $\\Delta G^\\circ$; C: omits the factor $n=2$; D: takes the reciprocal of $K$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

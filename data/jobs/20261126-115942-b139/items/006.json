@@ -1,0 +1,77 @@
+{
+ "qno": 6,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 6,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Stereoisomerism with R/S in Fischer projection",
+  "archetype": "CIP assignment",
+  "brief": "Provide a Fischer projection of a compound with two stereocentres and substituents shown in the figure; ask how many stereoisomers are possible and/or which combination of R/S designations corresponds to the enantiomer pair.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:46",
+   "2026s1:41",
+   "2025s2:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "The Fischer projection of 2-bromo-3-hydroxybutanoic acid is shown in the figure. Reading from top to bottom, it is: $\\text{COOH}$ (top); C2: Br (left), H (right); C3: H (left), OH (right); $\\text{CH}_3$ (bottom). How many stereoisomers are possible for this compound, and what is the configuration of the **enantiomer** of the isomer shown?",
+ "options": [
+  "$4$; $(2S,3R)$",
+  "$4$; $(2R,3S)$",
+  "$3$; $(2R,3S)$",
+  "$4$; $(2S,3S)$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q006_stem_v1.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "1. Two non-identical stereocenters (C2 and C3) give 2^2 = 4 stereoisomers.\n2. For C2 in the described Fischer projection:\n   - Priorities: -Br (1) > -COOH (2) > -CH(OH)CH3 (3) > -H (4).\n   - Left: Br (1), Top: COOH (2), Bottom: C3 (3), Right: H (4).\n   - 1 -> 2 -> 3 is clockwise; with H horizontal, configuration is (2S).\n3. For C3:\n   - Priorities: -OH (1) > -CH(Br)COOH (2) > -CH3 (3) > -H (4).\n   - Right: OH (1), Top: C2 (2), Bottom: CH3 (3), Left: H (4).\n   - 1 -> 2 -> 3 is counter-clockwise; with H horizontal, configuration is (3R).\n4. Configuration of the isomer shown is (2S, 3R); thus, its enantiomer is (2R, 3S).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "The figure shows a zigzag/skeletal formula instead of a Fischer projection, though the text provides the full Fischer projection description explicitly."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "**C2.** Its substituents are Br (left), H (right), COOH (top) and C3 (bottom).\n\nPriorities: Br > COOH (O,O,O) > CH(OH)CH$_3$ (O,C,H) > H.\n\nThe path 1→2→3 goes left → top → bottom (9 → 12 → 6 o'clock). This is clockwise. H is on a horizontal bond, so the result is reversed. **C2 = S.**\n\n**C3.** Its substituents are H (left), OH (right), C2 (top) and CH$_3$ (bottom).\n\nPriorities: OH > CH(Br)COOH (Br,C,H) > CH$_3$ > H.\n\nThe path goes right → top → bottom (3 → 12 → 6 o'clock). This is anticlockwise. H is horizontal, so the result is reversed. **C3 = R.**\n\nThe isomer shown is therefore $(2S,3R)$.\n\n**Number of stereoisomers.** C2 and C3 carry different substituent sets, so no meso form is possible. The number of stereoisomers is $2^2 = 4$.\n\n**Enantiomer.** Both centres are inverted, giving $(2R,3S)$.\n\nAnswer: $4$; $(2R,3S)$.\n\nIndependent check: 1. Two non-identical stereocenters (C2 and C3) give 2^2 = 4 stereoisomers.\n2. For C2 in the described Fischer projection:\n   - Priorities: -Br (1) > -COOH (2) > -CH(OH)CH3 (3) > -H (4).\n   - Left: Br (1), Top: COOH (2), Bottom: C3 (3), Right: H (4).\n   - 1 -> 2 -> 3 is clockwise; with H horizontal, configuration is (2S).\n3. For C3:\n   - Priorities: -OH (1) > -CH(Br)COOH (2) > -CH3 (3) > -H (4).\n   - Right: OH (1), Top: C2 (2), Bottom: CH3 (3), Left: H (4).\n   - 1 -> 2 -> 3 is counter-clockwise; with H horizontal, configuration is (3R).\n4. Configuration of the isomer shown is (2S, 3R); thus, its enantiomer is (2R, 3S).",
+ "solution": "Two different stereocentres (C2, C3) and no symmetry, so no meso form: $2^2=4$ stereoisomers.\nC2: priorities Br > COOH > CH(OH)CH$_3$ > H. Br (left) → COOH (top) → C3 (bottom) is clockwise; H is on a horizontal bond, so the result is reversed: $2S$.\nC3: priorities OH > CH(Br)COOH > CH$_3$ > H. OH (right) → C2 (top) → CH$_3$ (bottom) is anticlockwise; H is horizontal, so reverse: $3R$. The isomer shown is $(2S,3R)$.\nThe enantiomer inverts both centres: $(2R,3S)$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The Fischer projection of 2-bromo-3-hydroxybutanoic acid is shown in the figure. Reading from top to bottom, it is: $\\text{COOH}$ (top); C2: Br (left), H (right); C3: H (left), OH (right); $\\text{CH}_3$ (bottom). How many stereoisomers are possible for this compound, and what is the configuration of the **enantiomer** of the isomer shown?",
+  "options": [
+   "$4$; $(2R,3S)$",
+   "$4$; $(2S,3R)$",
+   "$3$; $(2R,3S)$",
+   "$4$; $(2S,3S)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "**C2.** Its substituents are Br (left), H (right), COOH (top) and C3 (bottom).\n\nPriorities: Br > COOH (O,O,O) > CH(OH)CH$_3$ (O,C,H) > H.\n\nThe path 1→2→3 goes left → top → bottom (9 → 12 → 6 o'clock). This is clockwise. H is on a horizontal bond, so the result is reversed. **C2 = S.**\n\n**C3.** Its substituents are H (left), OH (right), C2 (top) and CH$_3$ (bottom).\n\nPriorities: OH > CH(Br)COOH (Br,C,H) > CH$_3$ > H.\n\nThe path goes right → top → bottom (3 → 12 → 6 o'clock). This is anticlockwise. H is horizontal, so the result is reversed. **C3 = R.**\n\nThe isomer shown is therefore $(2S,3R)$.\n\n**Number of stereoisomers.** C2 and C3 carry different substituent sets, so no meso form is possible. The number of stereoisomers is $2^2 = 4$.\n\n**Enantiomer.** Both centres are inverted, giving $(2R,3S)$.\n\nAnswer: $4$; $(2R,3S)$.",
+  "distractor_notes": "B: gives the configuration of the isomer shown, not its enantiomer (or forgets that a horizontal H reverses the result at both centres).\nC: wrongly assumes a meso form exists (as in tartaric acid), giving 3 stereoisomers.\nD: inverts only one centre, which gives a diastereomer, not the enantiomer.",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a Fischer projection (vertical carbon chain with two horizontal crossbars, no wedges). Top group: COOH. First cross (C2): Br on the left horizontal bond, H on the right horizontal bond. Second cross directly below (C3): H on the left horizontal bond, OH on the right horizontal bond. Bottom group: CH3. Label the crossing points C2 and C3. Do not write any R/S labels.",
+   "smiles": "OC(=O)[C@@H](Br)[C@H](O)C"
+  },
+  "difficulty_estimate": 4
+ }
+}

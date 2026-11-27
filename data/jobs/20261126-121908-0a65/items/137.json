@@ -1,0 +1,68 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Independence",
+  "archetype": "statement evaluation",
+  "brief": "Test which of several statements about independence/mutual exclusivity of events is true for described dice/card experiments.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:114",
+   "2026s2:115",
+   "2025s2:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two fair dice are thrown. Let $E$ be the event that their sum is $8$, $F$ that the first die is even, and $G$ that the second die is even. Which statement is true?",
+ "options": [
+  "$E$ and $F$ are independent.",
+  "$E$ and $G$ are mutually exclusive.",
+  "$F$ and $G$ are independent.",
+  "$F$ and $G$ are mutually exclusive."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "There are 9 outcomes where both dice are even, so P(F∩G)=9/36=1/4=P(F)P(G). Thus F and G are independent. The other statements are false.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(E)=\\dfrac{5}{36}$ and $P(F)=P(G)=\\dfrac12$.\\n$P(E\\cap F)=P(E\\cap G)=\\dfrac{3}{36}\\ne\\dfrac{5}{72}$.\\n$P(F\\cap G)=\\dfrac{9}{36}=P(F)P(G)>0$.\n\nIndependent check: There are 9 outcomes where both dice are even, so P(F∩G)=9/36=1/4=P(F)P(G). Thus F and G are independent. The other statements are false.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two fair dice are thrown. Let $E$ be the event that their sum is $8$, $F$ that the first die is even, and $G$ that the second die is even. Which statement is true?",
+  "options": [
+   "$E$ and $F$ are independent.",
+   "$E$ and $G$ are mutually exclusive.",
+   "$F$ and $G$ are independent.",
+   "$F$ and $G$ are mutually exclusive."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$P(E)=\\dfrac{5}{36}$ and $P(F)=P(G)=\\dfrac12$.\\n$P(E\\cap F)=P(E\\cap G)=\\dfrac{3}{36}\\ne\\dfrac{5}{72}$.\\n$P(F\\cap G)=\\dfrac{9}{36}=P(F)P(G)>0$.",
+  "distractor_notes": "A: treats $\\dfrac{3}{36}$ as equal to $P(E)P(F)$.\\nB: overlooks outcomes where the sum is $8$ and the second die is even.\\nD: overlooks outcomes where both dice are even."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

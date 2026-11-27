@@ -1,0 +1,64 @@
+{
+ "qno": 33,
+ "section": "Physics",
+ "slot": {
+  "qno": 33,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Newton's second law (vector)",
+  "archetype": "equation-solving symbolic",
+  "brief": "A block on a rough horizontal surface is pulled by a force inclined at an angle to the horizontal; ask for the acceleration or the minimum force to just move it (symbolic/numeric).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:16",
+   "2021:4",
+   "2025s2:11"
+  ]
+ },
+ "status": "failed",
+ "stem": "A block of mass 5 kg lies on a rough horizontal surface with coefficient of friction 0.5. A force of 50 N is applied at an angle of 37 degrees above the horizontal. The acceleration of the block is: (Take g = 10 m/s^2, sin 37 degrees = 0.6, cos 37 degrees = 0.8)",
+ "options": [
+  "3 m/s^2",
+  "5 m/s^2",
+  "7 m/s^2",
+  "6 m/s^2"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "N = mg - F sin theta = 5*10 - 50*0.6 = 50 - 30 = 20 N. f = mu N = 0.5*20 = 10 N. Net force = F cos theta - f = 50*0.8 - 10 = 40 - 10 = 30 N. Acceleration a = net force / mass = 30/5 = 6 m/s^2.",
+ "solution": "The normal reaction is $N=mg-F\\sin37^\\circ=50-30=20\\,\\text{N}$, so friction is $f=\\mu N=10\\,\\text{N}$.\\n$$a=\\frac{F\\cos37^\\circ-f}{m}=\\frac{40-10}{5}=6\\,\\text{m/s}^2.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A block of mass 5 kg lies on a rough horizontal surface with coefficient of friction 0.5. A force of 50 N is applied at an angle of 37 degrees above the horizontal. The acceleration of the block is: (Take g = 10 m/s^2, sin 37 degrees = 0.6, cos 37 degrees = 0.8)",
+  "options": [
+   "3 m/s^2",
+   "5 m/s^2",
+   "6 m/s^2",
+   "7 m/s^2"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "N = mg - F sin theta = 5*10 - 50*0.6 = 50 - 30 = 20 N. f = mu N = 0.5*20 = 10 N. Net force = F cos theta - f = 50*0.8 - 10 = 40 - 10 = 30 N. Acceleration a = net force / mass = 30/5 = 6 m/s^2.",
+  "distractor_notes": "A (3 m/s^2): ignores the vertical force component, using N = mg = 50 N and friction 25 N. B (5 m/s^2): swaps sin 37 and cos 37 in the force components. D (7 m/s^2): uses N = mg - F cos theta instead of mg - F sin theta."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

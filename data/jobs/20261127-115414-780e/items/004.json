@@ -1,0 +1,68 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Angular momentum of a particle",
+  "archetype": "vector cross product",
+  "brief": "Particle with given position and velocity vectors; compute angular momentum about the origin via L = r × p.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:14",
+   "2021:40",
+   "2021:39"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle of mass $2$ kg has position vector $\\vec{r} = (\\hat{i} + 2\\hat{j})$ m and velocity $\\vec{v} = (3\\hat{i} - 4\\hat{j})$ m s$^{-1}$. The angular momentum of the particle about the origin is:",
+ "options": [
+  "$10\\hat{k}$ kg m$^2$ s$^{-1}$",
+  "$-10\\hat{k}$ kg m$^2$ s$^{-1}$",
+  "$-20\\hat{k}$ kg m$^2$ s$^{-1}$",
+  "$20\\hat{k}$ kg m$^2$ s$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\vec L=\\vec r\\times m\\vec v\\), so \\(L_z=1(-8)-2(6)=-20\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "$\\vec{p} = m\\vec{v} = 2(3\\hat{i} - 4\\hat{j}) = 6\\hat{i} - 8\\hat{j}$ kg m s$^{-1}$.\n$\\vec{L} = \\vec{r} \\times \\vec{p} = (\\hat{i} + 2\\hat{j})\\times(6\\hat{i} - 8\\hat{j}) = \\hat{i}\\times(-8\\hat{j}) + 2\\hat{j}\\times 6\\hat{i} = -8\\hat{k} -12\\hat{k} = -20\\hat{k}$ kg m$^2$ s$^{-1}$.\n\nIndependent check: \\(\\vec L=\\vec r\\times m\\vec v\\), so \\(L_z=1(-8)-2(6)=-20\\).",
+ "solution": "Angular momentum is $\\vec L=\\vec r\\times m\\vec v$, with $m\\vec v=6\\hat i-8\\hat j$.\\n$$\\vec L=(\\hat i+2\\hat j)\\times(6\\hat i-8\\hat j)=(-8-12)\\hat k=-20\\hat k\\ \\text{kg m}^2\\text{s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle of mass $2$ kg has position vector $\\vec{r} = (\\hat{i} + 2\\hat{j})$ m and velocity $\\vec{v} = (3\\hat{i} - 4\\hat{j})$ m s$^{-1}$. The angular momentum of the particle about the origin is:",
+  "options": [
+   "$-20\\hat{k}$ kg m$^2$ s$^{-1}$",
+   "$-10\\hat{k}$ kg m$^2$ s$^{-1}$",
+   "$10\\hat{k}$ kg m$^2$ s$^{-1}$",
+   "$20\\hat{k}$ kg m$^2$ s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\vec{p} = m\\vec{v} = 2(3\\hat{i} - 4\\hat{j}) = 6\\hat{i} - 8\\hat{j}$ kg m s$^{-1}$.\n$\\vec{L} = \\vec{r} \\times \\vec{p} = (\\hat{i} + 2\\hat{j})\\times(6\\hat{i} - 8\\hat{j}) = \\hat{i}\\times(-8\\hat{j}) + 2\\hat{j}\\times 6\\hat{i} = -8\\hat{k} -12\\hat{k} = -20\\hat{k}$ kg m$^2$ s$^{-1}$.",
+  "distractor_notes": "B: forgetting mass (using v instead of p)\nC: forgetting mass + sign error\nD: sign error"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

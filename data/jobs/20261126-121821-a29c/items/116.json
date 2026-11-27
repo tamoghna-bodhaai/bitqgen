@@ -1,0 +1,68 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Effect of scaling on variance",
+  "archetype": "property",
+  "brief": "Given the variance of a data set, find the variance after each observation is multiplied by a constant and shifted; test the invariance under shifting.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:107",
+   "2025s1:109",
+   "2025s2:119"
+  ]
+ },
+ "status": "ok",
+ "stem": "The variance of a data set is $7$. What is the variance if each observation is multiplied by $3$ and then increased by $5$?",
+ "options": [
+  "$21$",
+  "$26$",
+  "$63$",
+  "$189$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For Y = 3X + 5, Var(Y) = 3² Var(X) = 9 × 7 = 63.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $Y=3X+5$, $\\operatorname{Var}(Y)=3^2\\operatorname{Var}(X)$.\\n$\\operatorname{Var}(Y)=9\\times 7=63$.\n\nIndependent check: For Y = 3X + 5, Var(Y) = 3² Var(X) = 9 × 7 = 63.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The variance of a data set is $7$. What is the variance if each observation is multiplied by $3$ and then increased by $5$?",
+  "options": [
+   "$21$",
+   "$26$",
+   "$63$",
+   "$189$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For $Y=3X+5$, $\\operatorname{Var}(Y)=3^2\\operatorname{Var}(X)$.\\n$\\operatorname{Var}(Y)=9\\times 7=63$.",
+  "distractor_notes": "A: uses the scale factor instead of its square; B: incorrectly adds the shift to the scaled variance; D: applies an extra factor of $3$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

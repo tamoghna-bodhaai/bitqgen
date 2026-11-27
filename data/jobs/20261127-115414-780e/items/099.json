@@ -1,0 +1,68 @@
+{
+ "qno": 99,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 99,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Ellipse – eccentricity",
+  "archetype": "single-formula numerical",
+  "brief": "Given an ellipse relation or endpoints of axes, find its eccentricity using a² = b²(1−e²).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:96",
+   "2026s2:110",
+   "2025s1:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the distance between the foci of an ellipse is equal to the length of its minor axis, then its eccentricity is:",
+ "options": [
+  "$\\dfrac{\\sqrt{2}}{3}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{\\sqrt{3}}{2}$",
+  "$\\dfrac{1}{\\sqrt{2}}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the semi-axes be a, b and the focal distance from the centre be c. The given condition gives 2c = 2b, so c = b. Since a² = b² + c², the eccentricity e = c/a = 1/√2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let major axis = 2a, minor axis = 2b, distance between foci = 2c.\nGiven 2c = 2b ⇒ c = b.\nFor ellipse, c² = a² − b² = a² − c² ⇒ 2c² = a².\nEccentricity e = c/a ⇒ e² = c²/a² = 1/2 ⇒ e = 1/√2.\n\nIndependent check: Let the semi-axes be a, b and the focal distance from the centre be c. The given condition gives 2c = 2b, so c = b. Since a² = b² + c², the eccentricity e = c/a = 1/√2.",
+ "solution": "Let the semi-axes be $a,b$ and the focal distance be $c$. The condition gives $2c=2b$, so $c=b$.\nFor an ellipse, $a^2=b^2+c^2=2c^2$, hence\n$$e^2=\\frac{c^2}{a^2}=\\frac12 \\quad\\Rightarrow\\quad e=\\frac{1}{\\sqrt2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the distance between the foci of an ellipse is equal to the length of its minor axis, then its eccentricity is:",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{2}}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{\\sqrt{3}}{2}$",
+   "$\\dfrac{\\sqrt{2}}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let major axis = 2a, minor axis = 2b, distance between foci = 2c.\nGiven 2c = 2b ⇒ c = b.\nFor ellipse, c² = a² − b² = a² − c² ⇒ 2c² = a².\nEccentricity e = c/a ⇒ e² = c²/a² = 1/2 ⇒ e = 1/√2.",
+  "distractor_notes": "Option B: eccentricity when a=2b; Option C: eccentricity when a=2c; Option D: a common wrong reciprocal."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

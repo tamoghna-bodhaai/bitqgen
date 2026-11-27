@@ -1,0 +1,68 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Direction cosines",
+  "archetype": "formula",
+  "brief": "Line through a point has given direction ratios; compute its direction cosines (with l²+m²+n²=1) or the angle with an axis.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:94",
+   "2026s1:118",
+   "2021:136"
+  ]
+ },
+ "status": "ok",
+ "stem": "The direction cosines of a line whose direction ratios are $3$, $4$, $12$ are",
+ "options": [
+  "$\\left(\\dfrac{3}{13},\\ -\\dfrac{4}{13},\\ \\dfrac{12}{13}\\right)$",
+  "$\\left(\\dfrac{3}{13},\\ \\dfrac{4}{13},\\ \\dfrac{12}{13}\\right)$",
+  "$\\left(\\dfrac{4}{13},\\ \\dfrac{3}{13},\\ \\dfrac{12}{13}\\right)$",
+  "$\\left(\\dfrac{3}{5},\\ \\dfrac{4}{5},\\ \\dfrac{12}{5}\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Normalize the direction ratios: \\(\\sqrt{3^2+4^2+12^2}=13\\). Thus the direction cosines are \\((3/13,4/13,12/13)\\).",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Magnitude: $\\sqrt{3^2+4^2+12^2} = \\sqrt{9+16+144} = \\sqrt{169} = 13$.\nDirection cosines: $\\left(\\dfrac{3}{13}, \\dfrac{4}{13}, \\dfrac{12}{13}\\right)$.\n\nIndependent check: Normalize the direction ratios: \\(\\sqrt{3^2+4^2+12^2}=13\\). Thus the direction cosines are \\((3/13,4/13,12/13)\\).",
+ "solution": "For direction ratios $(a,b,c)$, the direction cosines are $(a,b,c)/\\sqrt{a^2+b^2+c^2}$. Here, $\\sqrt{3^2+4^2+12^2}=13$, so the direction cosines are $\\left(\\dfrac{3}{13},\\dfrac{4}{13},\\dfrac{12}{13}\\right)$. (B)",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The direction cosines of a line whose direction ratios are $3$, $4$, $12$ are",
+  "options": [
+   "$\\left(\\dfrac{3}{13},\\ \\dfrac{4}{13},\\ \\dfrac{12}{13}\\right)$",
+   "$\\left(\\dfrac{3}{13},\\ -\\dfrac{4}{13},\\ \\dfrac{12}{13}\\right)$",
+   "$\\left(\\dfrac{4}{13},\\ \\dfrac{3}{13},\\ \\dfrac{12}{13}\\right)$",
+   "$\\left(\\dfrac{3}{5},\\ \\dfrac{4}{5},\\ \\dfrac{12}{5}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Magnitude: $\\sqrt{3^2+4^2+12^2} = \\sqrt{9+16+144} = \\sqrt{169} = 13$.\nDirection cosines: $\\left(\\dfrac{3}{13}, \\dfrac{4}{13}, \\dfrac{12}{13}\\right)$.",
+  "distractor_notes": "B: sign error on the y-component; C: swapped x and y numerators; D: wrong denominator (computed from first two only)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

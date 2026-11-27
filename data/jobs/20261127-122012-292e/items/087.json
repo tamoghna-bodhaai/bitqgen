@@ -1,0 +1,82 @@
+{
+ "qno": 87,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 87,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS)",
+  "archetype": "para jumble (fixed ends)",
+  "brief": "Five-sentence jumble where the first and last sentences are given; the middle three must be ordered using pronoun/connector references.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:65",
+   "2023s2:64",
+   "2021:93"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the following item, the first sentence (1) and the last sentence (6) are given. The three sentences in between are labelled P, Q and R. Rearrange them to form a coherent paragraph and choose the correct sequence.\n\n**1.** The villagers of Kadampara had long complained that the narrow wooden bridge over the stream was unsafe.\n\n**P.** Last monsoon, a portion of it gave way and two children were injured.\n\n**Q.** Following that accident, the panchayat passed a resolution demanding a concrete bridge in its place.\n\n**R.** The district collector has now sanctioned funds for the construction of such a bridge.\n\n**6.** Work is expected to begin after the harvest season.\n\nWhich one of the following is the correct sequence?",
+ "options": [
+  "(A) P - Q - R",
+  "(B) Q - P - R",
+  "(C) P - R - Q",
+  "(D) R - Q - P"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The bridge failure (P) precedes the panchayat resolution (Q), which is followed by the collector sanctioning funds (R).",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "Option labels are redundantly duplicated, but the intended sequence is unambiguous."
+   ],
+   "difficulty": 1
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "z-ai/glm-5.3",
+   "working": "Sentence 1 introduces the unsafe bridge complaints. P describes the accident ('Last monsoon...'), the direct consequence of the unsafe bridge. Q begins with 'Following that accident', so it must come after P. R's 'has now sanctioned funds' follows the panchayat's resolution in Q. Sentence 6 (work begins) naturally follows R. Chain: 1-P-Q-R-6.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [
+  "revision failed; kept previous version"
+ ],
+ "working": "P's 'it' refers back to the bridge in sentence 1 and reports the mishap that answers the villagers' complaint, so P follows 1. Q's 'Following that accident' can only refer to P's collapse, so Q follows P. R's 'such a bridge' points to the concrete bridge demanded in Q, so R precedes 6. (B) opens with 'Following that accident' before any accident; (C) and (D) use 'such a bridge' before a concrete bridge is proposed, and (D) also ends with the collapse.\n\nIndependent check: Sentence 1 introduces the unsafe bridge complaints. P describes the accident ('Last monsoon...'), the direct consequence of the unsafe bridge. Q begins with 'Following that accident', so it must come after P. R's 'has now sanctioned funds' follows the panchayat's resolution in Q. Sentence 6 (work begins) naturally follows R. Chain: 1-P-Q-R-6.",
+ "solution": "P follows sentence 1 by describing the bridge accident. Q’s “Following that accident” refers to P, and R’s “such a bridge” refers to the concrete bridge proposed in Q.\n$$1-P-Q-R-6$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the following item, the first sentence (1) and the last sentence (6) are given. The three sentences in between are labelled P, Q and R. Rearrange them to form a coherent paragraph and choose the correct sequence.\n\n**1.** The villagers of Kadampara had long complained that the narrow wooden bridge over the stream was unsafe.\n\n**P.** Last monsoon, a portion of it gave way and two children were injured.\n\n**Q.** Following that accident, the panchayat passed a resolution demanding a concrete bridge in its place.\n\n**R.** The district collector has now sanctioned funds for the construction of such a bridge.\n\n**6.** Work is expected to begin after the harvest season.\n\nWhich one of the following is the correct sequence?",
+  "options": [
+   "(A) P - Q - R",
+   "(B) Q - P - R",
+   "(C) P - R - Q",
+   "(D) R - Q - P"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "P's 'it' refers back to the bridge in sentence 1 and reports the mishap that answers the villagers' complaint, so P follows 1. Q's 'Following that accident' can only refer to P's collapse, so Q follows P. R's 'such a bridge' points to the concrete bridge demanded in Q, so R precedes 6. (B) opens with 'Following that accident' before any accident; (C) and (D) use 'such a bridge' before a concrete bridge is proposed, and (D) also ends with the collapse.",
+  "distractor_notes": "B places Q's 'Following the accident' before any accident is mentioned; C and D put R's 'such a bridge' before a concrete bridge has been demanded, and D ends with the collapse, which cannot precede the sanction."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

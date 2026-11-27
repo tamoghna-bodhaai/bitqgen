@@ -1,0 +1,64 @@
+{
+ "qno": 102,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 102,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter shift code",
+  "brief": "letter-shift code: a word is coded by shifting each letter by a constant value or reversing position; apply the same rule to decode/coding a new word",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:78",
+   "2025s1:71",
+   "2023s2:86"
+  ]
+ },
+ "status": "failed",
+ "stem": "In a certain code language, **TIGER** is written as **WLJHU**. How will **HORSE** be written in that language?",
+ "options": [
+  "(A) KRUVH",
+  "(B) KRVUH",
+  "(C) KSVUH",
+  "(D) KRUWH"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Rule: each letter moves 3 steps forward in the alphabet (T->W, I->L, G->J, E->H, R->U). Applying +3 to HORSE: H->K, O->R, S->V, E->H, R->U, giving KRUVH. B swaps the last two letters, C shifts O->S instead of O->R, and D shifts E->W instead of E->H, so none of them follows the constant +3 rule.",
+ "solution": "Each letter is shifted 3 places forward in the alphabet: $H\\to K$, $O\\to R$, $R\\to U$, $S\\to V$, $E\\to H$. Thus, $\\text{HORSE}\\to\\text{KRUHV}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a certain code language, **TIGER** is written as **WLJHU**. How will **HORSE** be written in that language?",
+  "options": [
+   "(A) KRUVH",
+   "(B) KRVUH",
+   "(C) KSVUH",
+   "(D) KRUWH"
+  ],
+  "option_smiles": [
+   "KRUVH",
+   "KRVUH",
+   "KSVUH",
+   "KRUWH"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Rule: each letter moves 3 steps forward in the alphabet (T->W, I->L, G->J, E->H, R->U). Applying +3 to HORSE: H->K, O->R, S->V, E->H, R->U, giving KRUVH. B swaps the last two letters, C shifts O->S instead of O->R, and D shifts E->W instead of E->H, so none of them follows the constant +3 rule.",
+  "distractor_notes": "B: last two letters interchanged; C: second letter shifted by +4; D: fourth letter shifted by +18 instead of +3."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

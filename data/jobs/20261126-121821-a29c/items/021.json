@@ -1,0 +1,67 @@
+{
+ "qno": 21,
+ "section": "Physics",
+ "slot": {
+  "qno": 21,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Pendulum with varying g",
+  "archetype": "proportionality-scaling",
+  "brief": "Simple pendulum moved to a place where g changes; find % change in period or new frequency",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:13",
+   "2024s1:30",
+   "2023s1:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A simple pendulum is taken from the Earth's surface to an altitude where the acceleration due to gravity decreases by $36\\%$. The percentage increase in its time period of oscillation is:",
+ "options": [
+  "$18\\%$",
+  "$20\\%$",
+  "$25\\%$",
+  "$36\\%$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "T ∝ 1/√g. New g' = 0.64g, so T'/T = 1/√0.64 = 1/0.8 = 1.25, a 25% increase.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The time period of a simple pendulum is given by:\n$$T = 2\\pi \\sqrt{\\dfrac{L}{g}} \\implies T \\propto \\dfrac{1}{\\sqrt{g}}$$\n\nWhen the acceleration due to gravity decreases by $36\\%$, the new value $g'$ is:\n$$g' = g - 0.36 g = 0.64 g$$\n\nThe new time period $T'$ becomes:\n$$T' = \\dfrac{T}{\\sqrt{0.64}} = \\dfrac{T}{0.8} = 1.25 T$$\n\nThe percentage increase in the time period is:\n$$\\dfrac{\\Delta T}{T} \\times 100\\% = \\dfrac{T' - T}{T} \\times 100\\% = (1.25 - 1) \\times 100\\% = 25\\%$$\n\nIndependent check: T ∝ 1/√g. New g' = 0.64g, so T'/T = 1/√0.64 = 1/0.8 = 1.25, a 25% increase.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A simple pendulum is taken from the Earth's surface to an altitude where the acceleration due to gravity decreases by $36\\%$. The percentage increase in its time period of oscillation is:",
+  "options": [
+   "$18\\%$",
+   "$20\\%$",
+   "$25\\%$",
+   "$36\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The time period of a simple pendulum is given by:\n$$T = 2\\pi \\sqrt{\\dfrac{L}{g}} \\implies T \\propto \\dfrac{1}{\\sqrt{g}}$$\n\nWhen the acceleration due to gravity decreases by $36\\%$, the new value $g'$ is:\n$$g' = g - 0.36 g = 0.64 g$$\n\nThe new time period $T'$ becomes:\n$$T' = \\dfrac{T}{\\sqrt{0.64}} = \\dfrac{T}{0.8} = 1.25 T$$\n\nThe percentage increase in the time period is:\n$$\\dfrac{\\Delta T}{T} \\times 100\\% = \\dfrac{T' - T}{T} \\times 100\\% = (1.25 - 1) \\times 100\\% = 25\\%$$",
+  "distractor_notes": "Option A ($18\\%$): Obtains from mistakenly applying the small-change differential approximation $\\Delta T / T \\approx \\frac{1}{2}|\\Delta g / g| = \\frac{1}{2}(36\\%)$, which is invalid for large changes.\nOption B ($20\\%$): Obtains from assuming $T \\propto \\sqrt{g}$, yielding $T' = \\sqrt{0.64}T = 0.8T$ and thus a $20\\%$ change.\nOption D ($36\\%$): Obtains from assuming a direct 1:1 proportional change without taking the inverse square root.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

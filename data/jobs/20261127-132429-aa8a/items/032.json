@@ -1,0 +1,68 @@
+{
+ "qno": 32,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 32,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Kp and degree of dissociation",
+  "archetype": "ICE table",
+  "brief": "Gaseous AB-type dissociation set up as an ICE table; from total equilibrium pressure find degree of dissociation and then Kp.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:35",
+   "2024s2:58",
+   "2025s2:56"
+  ]
+ },
+ "status": "ok",
+ "stem": "Initially, a vessel contains only $\\text{AB(g)}$ at $0.8$ atm. At constant temperature and volume, it dissociates as $\\text{AB(g)} \\rightleftharpoons \\text{A(g)}+\\text{B(g)}$. If the total equilibrium pressure is $1.2$ atm, what is $K_p$?",
+ "options": [
+  "$0.4$ atm",
+  "$0.2$ atm",
+  "$0.6$ atm",
+  "$0.8$ atm"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At constant temperature and volume, let the pressure change from dissociation be x. Then total pressure is 0.8 + x = 1.2, so x = 0.4 atm. Thus p_AB = p_A = p_B = 0.4 atm, and K_p = p_A p_B/p_AB = 0.4 atm.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P_{\\text{tot}}=P_0(1+\\alpha)\\Rightarrow\\alpha=\\dfrac{1.2}{0.8}-1=0.5$\n$p_{\\text{AB}}=0.8(1-0.5)=0.4\\,\\text{atm};\\quad p_{\\text{A}}=p_{\\text{B}}=0.8(0.5)=0.4\\,\\text{atm}$\n$K_p=\\dfrac{p_{\\text{A}}p_{\\text{B}}}{p_{\\text{AB}}}=\\dfrac{0.4\\times0.4}{0.4}=0.4\\,\\text{atm}$\n\nIndependent check: At constant temperature and volume, let the pressure change from dissociation be x. Then total pressure is 0.8 + x = 1.2, so x = 0.4 atm. Thus p_AB = p_A = p_B = 0.4 atm, and K_p = p_A p_B/p_AB = 0.4 atm.",
+ "solution": "For degree of dissociation $\\alpha$, $P_{\\text{tot}}=P_0(1+\\alpha)$, so $\\alpha=\\frac{1.2}{0.8}-1=0.5$. Thus $p_{\\text{AB}}=0.4$ atm and $p_{\\text{A}}=p_{\\text{B}}=0.4$ atm.\n$$K_p=\\frac{p_{\\text{A}}p_{\\text{B}}}{p_{\\text{AB}}}=\\frac{0.4\\times0.4}{0.4}=0.4\\text{ atm}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Initially, a vessel contains only $\\text{AB(g)}$ at $0.8$ atm. At constant temperature and volume, it dissociates as $\\text{AB(g)} \\rightleftharpoons \\text{A(g)}+\\text{B(g)}$. If the total equilibrium pressure is $1.2$ atm, what is $K_p$?",
+  "options": [
+   "$0.2$ atm",
+   "$0.4$ atm",
+   "$0.6$ atm",
+   "$0.8$ atm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$P_{\\text{tot}}=P_0(1+\\alpha)\\Rightarrow\\alpha=\\dfrac{1.2}{0.8}-1=0.5$\n$p_{\\text{AB}}=0.8(1-0.5)=0.4\\,\\text{atm};\\quad p_{\\text{A}}=p_{\\text{B}}=0.8(0.5)=0.4\\,\\text{atm}$\n$K_p=\\dfrac{p_{\\text{A}}p_{\\text{B}}}{p_{\\text{AB}}}=\\dfrac{0.4\\times0.4}{0.4}=0.4\\,\\text{atm}$",
+  "distractor_notes": "A: uses an incorrect dissociation fraction or omits a pressure factor.\nC: confuses the equilibrium partial pressure with $K_p$.\nD: uses the initial pressure in place of the equilibrium expression."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

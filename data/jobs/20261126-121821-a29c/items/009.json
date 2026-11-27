@@ -1,0 +1,76 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Field lines in magnetic materials",
+  "archetype": "figure interpretation",
+  "brief": "Magnetization vs field diagram for dia/para/ferromagnetic material; identify type from curve or susceptibility sign",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:1",
+   "2025s1:28",
+   "2023s1:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a material in a weak applied field, the magnetization $M$ varies with field intensity $H$ as shown in the figure. Which class best describes the material?",
+ "options": [
+  "Diamagnetic",
+  "Paramagnetic",
+  "Ferromagnetic",
+  "Non-magnetic"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q009_stem_v0.png",
+  "width_pct": 45,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The graph has a negative slope, so the magnetic susceptibility χ = M/H is negative. This describes a diamagnetic material.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\chi = M/H$ is the slope of the $M$–$H$ graph.\nThe graph has negative slope, so $\\chi < 0$.\nA negative magnetic susceptibility is characteristic of a diamagnetic material.\n\nIndependent check: The graph has a negative slope, so the magnetic susceptibility χ = M/H is negative. This describes a diamagnetic material.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a material in a weak applied field, the magnetization $M$ varies with field intensity $H$ as shown in the figure. Which class best describes the material?",
+  "options": [
+   "Diamagnetic",
+   "Paramagnetic",
+   "Ferromagnetic",
+   "Non-magnetic"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a Cartesian graph with vertical axis labelled M and positive direction upward, and horizontal axis labelled H and positive direction to the right. Draw a straight line through the origin with negative slope, extending into the second and fourth quadrants. Do not add numerical scales or any material labels.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$\\chi = M/H$ is the slope of the $M$–$H$ graph.\nThe graph has negative slope, so $\\chi < 0$.\nA negative magnetic susceptibility is characteristic of a diamagnetic material.",
+  "distractor_notes": "B: assumes positive susceptibility; C: overlooks the negative linear slope; D: treats the slope as zero."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

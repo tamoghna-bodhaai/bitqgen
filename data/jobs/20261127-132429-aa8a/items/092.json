@@ -1,0 +1,68 @@
+{
+ "qno": 92,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 92,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "total minus invalid",
+  "brief": "Count arrangements of words where certain letters are never adjacent (complementary counting).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:147",
+   "2026s2:96",
+   "2026s1:97"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many distinct arrangements of the letters of COMPUTER have the letters C and O not adjacent?",
+ "options": [
+  "$40320$",
+  "$30240$",
+  "$10080$",
+  "$35280$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "All 8 letters are distinct. Total arrangements: 8! = 40320. With C and O adjacent: 2 × 7! = 10080. Thus nonadjacent: 40320 − 10080 = 30240.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "All letters are distinct: $8!=40320$.\nWith C and O adjacent: $2\\cdot7!=10080$.\nRequired count $=8!-2\\cdot7!=30240$.\n\nIndependent check: All 8 letters are distinct. Total arrangements: 8! = 40320. With C and O adjacent: 2 × 7! = 10080. Thus nonadjacent: 40320 − 10080 = 30240.",
+ "solution": "All 8 letters are distinct, so total arrangements are $8!$. Treating C and O as one block gives $2\\cdot7!$ arrangements with them adjacent.\n$$8!-2\\cdot7!=40320-10080=30240$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many distinct arrangements of the letters of COMPUTER have the letters C and O not adjacent?",
+  "options": [
+   "$30240$",
+   "$40320$",
+   "$10080$",
+   "$35280$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "All letters are distinct: $8!=40320$.\nWith C and O adjacent: $2\\cdot7!=10080$.\nRequired count $=8!-2\\cdot7!=30240$.",
+  "distractor_notes": "B ignores the restriction; C counts only arrangements with C and O adjacent; D subtracts only one ordering of the adjacent pair."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

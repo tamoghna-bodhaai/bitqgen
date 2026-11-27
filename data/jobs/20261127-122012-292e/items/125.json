@@ -1,0 +1,68 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle – tangency condition",
+  "archetype": "tangency condition",
+  "brief": "condition for a line to be tangent to a circle: substitute the line into the circle and set discriminant to zero to find the unknown parameter",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:111",
+   "2025s1:112",
+   "2026s2:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the line $3x + 4y = k$ is a tangent to the circle $x^2 + y^2 - 6x + 2y + 6 = 0$, then the value(s) of $k$ is/are",
+ "options": [
+  "$10, -10$",
+  "$5, -15$",
+  "$15, -5$",
+  "$8, -12$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The circle has centre (3, -1) and radius 2. Tangency requires |3(3)+4(-1)-k|/5 = 2, so |5-k| = 10 and k = 15 or -5.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Circle: $x^2+y^2-6x+2y+6=0$ gives centre $(3,-1)$, radius $r=\\sqrt{3^{2}+(-1)^{2}-6}=2$.\nDistance from centre to line $3x+4y-k=0$ equals radius:\n$\\frac{|3\\cdot3+4\\cdot(-1)-k|}{\\sqrt{3^{2}+4^{2}}}=2 \\Rightarrow \\frac{|5-k|}{5}=2$.\n$|5-k|=10 \\Rightarrow 5-k=\\pm10 \\Rightarrow k=-5$ or $k=15$.\n\nIndependent check: The circle has centre (3, -1) and radius 2. Tangency requires |3(3)+4(-1)-k|/5 = 2, so |5-k| = 10 and k = 15 or -5.",
+ "solution": "The circle has centre $(3,-1)$ and radius $r=\\sqrt{3^2+(-1)^2-6}=2$. For tangency, the distance from the centre to $3x+4y-k=0$ must equal $r$:\n$$\\frac{|3(3)+4(-1)-k|}{\\sqrt{3^2+4^2}}=2\\;\\Rightarrow\\;|5-k|=10.$$\nHence $k=15$ or $k=-5$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the line $3x + 4y = k$ is a tangent to the circle $x^2 + y^2 - 6x + 2y + 6 = 0$, then the value(s) of $k$ is/are",
+  "options": [
+   "$15, -5$",
+   "$5, -15$",
+   "$10, -10$",
+   "$8, -12$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Circle: $x^2+y^2-6x+2y+6=0$ gives centre $(3,-1)$, radius $r=\\sqrt{3^{2}+(-1)^{2}-6}=2$.\nDistance from centre to line $3x+4y-k=0$ equals radius:\n$\\frac{|3\\cdot3+4\\cdot(-1)-k|}{\\sqrt{3^{2}+4^{2}}}=2 \\Rightarrow \\frac{|5-k|}{5}=2$.\n$|5-k|=10 \\Rightarrow 5-k=\\pm10 \\Rightarrow k=-5$ or $k=15$.",
+  "distractor_notes": "B: incorrect sign handling in absolute equation (e.g., 5-k=10 and k-5=10). C: using radius=5 or misapplying formula. D: algebraic slip in solving |5-k|=10."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

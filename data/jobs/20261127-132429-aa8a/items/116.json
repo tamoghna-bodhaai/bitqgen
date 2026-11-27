@@ -1,0 +1,68 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power bookkeeping",
+  "brief": "For a matrix A satisfying a given quadratic matrix equation, express Aⁿ as a linear combination of A and I using repeated bookkeeping.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:102",
+   "2025s1:105",
+   "2025s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A$ be a square matrix satisfying $A^2-5A+6I=0$. Then $A^5$ is",
+ "options": [
+  "$211A-211I$",
+  "$211A+390I$",
+  "$275A-486I$",
+  "$211A-390I$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From A² = 5A − 6I, reduce powers: A³ = 19A − 30I, A⁴ = 65A − 114I, and A⁵ = 211A − 390I.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$A^2=5A-6I$$\n$$A^3=19A-30I,\\quad A^4=65A-114I$$\n$$A^5=65A^2-114A=211A-390I$$\n\nIndependent check: From A² = 5A − 6I, reduce powers: A³ = 19A − 30I, A⁴ = 65A − 114I, and A⁵ = 211A − 390I.",
+ "solution": "From $A^2-5A+6I=0$, $A^2=5A-6I$. Thus $A^3=19A-30I$ and $A^4=65A-114I$.\n$$A^5=65A^2-114A=65(5A-6I)-114A=211A-390I$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A$ be a square matrix satisfying $A^2-5A+6I=0$. Then $A^5$ is",
+  "options": [
+   "$211A-390I$",
+   "$211A+390I$",
+   "$275A-486I$",
+   "$211A-211I$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$$A^2=5A-6I$$\n$$A^3=19A-30I,\\quad A^4=65A-114I$$\n$$A^5=65A^2-114A=211A-390I$$",
+  "distractor_notes": "B: Sign error on the constant-matrix term.\nC: Uses $3^5+2^5$ instead of $3^5-2^5$ and omits a weighted term.\nD: Uses $2^5-3^5$ as the constant coefficient, omitting the interpolation weights."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

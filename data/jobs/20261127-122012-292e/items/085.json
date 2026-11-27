@@ -1,0 +1,68 @@
+{
+ "qno": 85,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 85,
+  "section": "English Proficiency",
+  "chapter": "Sentence Completion (vocabulary)",
+  "subtopic": "Verbal analogy",
+  "archetype": "word analogy",
+  "brief": "Simple two-word analogy pair (e.g., 'Doctor : Hospital') with four analogous pairs; all four options should be recognisable noun-profession/place relations.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:69",
+   "2025s1:64",
+   "2024s1:67"
+  ]
+ },
+ "status": "ok",
+ "stem": "Choose the pair that best expresses the relationship similar to that in the given pair.\n\nNURSE : HOSPITAL ::",
+ "options": [
+  "(A) Teacher : School",
+  "(B) Chef : Recipe",
+  "(C) Farmer : Harvest",
+  "(D) Doctor : Patient"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "A nurse works in a hospital; similarly, a teacher works in a school.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "A nurse works in a hospital — a worker-to-workplace relation. 'Teacher : School' shows the same relation. B links a worker to a thing used, C to the crop/product, and D to the person served, so none of them matches.\n\nIndependent check: A nurse works in a hospital; similarly, a teacher works in a school.",
+ "solution": "A nurse works in a hospital; similarly, a teacher works in a school. Both pairs express a worker-to-workplace relationship.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Choose the pair that best expresses the relationship similar to that in the given pair.\n\nNURSE : HOSPITAL ::",
+  "options": [
+   "(A) Teacher : School",
+   "(B) Chef : Recipe",
+   "(C) Farmer : Harvest",
+   "(D) Doctor : Patient"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "A nurse works in a hospital — a worker-to-workplace relation. 'Teacher : School' shows the same relation. B links a worker to a thing used, C to the crop/product, and D to the person served, so none of them matches.",
+  "distractor_notes": "B is worker to tool/method, C worker to produce, D worker to the person attended to; only A is worker to place of work."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "LCR phase angle",
+  "archetype": "phasor angle",
+  "brief": "Series LCR circuit with given component values and source frequency; compute the phase angle between current and voltage and state whether the circuit is inductive or capacitive.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:29",
+   "2026s2:8",
+   "2025s2:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a series $LCR$ circuit, $R = 100\\ \\Omega$, $L = 0.2\\text{ H}$, and $C = 10\\ \\mu\\text{F}$ are connected to an AC source of angular frequency $\\omega = 1000\\text{ rad s}^{-1}$. The phase angle between the voltage and the current, and the nature of the circuit are:",
+ "options": [
+  "$45^\\circ$, capacitive",
+  "$45^\\circ$, inductive",
+  "$60^\\circ$, capacitive",
+  "$60^\\circ$, inductive"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "X_L = ωL = 1000×0.2 = 200 Ω; X_C = 1/(ωC) = 1/(1000×10⁻⁵) = 100 Ω. Net reactance X_L − X_C = +100 Ω (inductive). tan φ = 100/R = 100/100 = 1 ⇒ φ = 45°, voltage leads current (inductive).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Calculate inductive reactance:\n$$X_L = \\omega L = 1000 \\times 0.2 = 200\\ \\Omega$$\n\n2. Calculate capacitive reactance:\n$$X_C = \\dfrac{1}{\\omega C} = \\dfrac{1}{1000 \\times 10 \\times 10^{-6}} = \\dfrac{1}{10^{-2}} = 100\\ \\Omega$$\n\n3. Determine the nature of the circuit:\nSince $X_L > X_C$ ($200\\ \\Omega > 100\\ \\Omega$), inductive reactance dominates, so the circuit is inductive (voltage leads current).\n\n4. Calculate the phase angle $\\phi$:\n$$\\tan\\phi = \\dfrac{X_L - X_C}{R} = \\dfrac{200 - 100}{100} = \\dfrac{100}{100} = 1$$\n$$\\implies \\phi = 45^\\circ$$\n\nThus, the phase angle is $45^\\circ$ and the circuit is inductive.\n\nIndependent check: X_L = ωL = 1000×0.2 = 200 Ω; X_C = 1/(ωC) = 1/(1000×10⁻⁵) = 100 Ω. Net reactance X_L − X_C = +100 Ω (inductive). tan φ = 100/R = 100/100 = 1 ⇒ φ = 45°, voltage leads current (inductive).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a series $LCR$ circuit, $R = 100\\ \\Omega$, $L = 0.2\\text{ H}$, and $C = 10\\ \\mu\\text{F}$ are connected to an AC source of angular frequency $\\omega = 1000\\text{ rad s}^{-1}$. The phase angle between the voltage and the current, and the nature of the circuit are:",
+  "options": [
+   "$45^\\circ$, capacitive",
+   "$45^\\circ$, inductive",
+   "$60^\\circ$, capacitive",
+   "$60^\\circ$, inductive"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. Calculate inductive reactance:\n$$X_L = \\omega L = 1000 \\times 0.2 = 200\\ \\Omega$$\n\n2. Calculate capacitive reactance:\n$$X_C = \\dfrac{1}{\\omega C} = \\dfrac{1}{1000 \\times 10 \\times 10^{-6}} = \\dfrac{1}{10^{-2}} = 100\\ \\Omega$$\n\n3. Determine the nature of the circuit:\nSince $X_L > X_C$ ($200\\ \\Omega > 100\\ \\Omega$), inductive reactance dominates, so the circuit is inductive (voltage leads current).\n\n4. Calculate the phase angle $\\phi$:\n$$\\tan\\phi = \\dfrac{X_L - X_C}{R} = \\dfrac{200 - 100}{100} = \\dfrac{100}{100} = 1$$\n$$\\implies \\phi = 45^\\circ$$\n\nThus, the phase angle is $45^\\circ$ and the circuit is inductive.",
+  "distractor_notes": "Option A: Finds the correct angle ($45^\\circ$) but confuses which reactance dominates, mistakenly labeling the circuit capacitive.\nOption C: Obtains impedance by simple scalar addition $Z = R + (X_L - X_C) = 200\\ \\Omega$, finds $\\cos\\phi = R/Z = 1/2 \\implies \\phi = 60^\\circ$, and also mislabels the circuit as capacitive.\nOption D: Uses scalar addition of resistance and reactance ($Z = R + X_L - X_C = 200\\ \\Omega$) instead of phasor addition, giving $\\cos\\phi = R/Z = 1/2 \\implies \\phi = 60^\\circ$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

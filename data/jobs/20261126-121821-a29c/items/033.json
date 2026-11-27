@@ -1,0 +1,67 @@
+{
+ "qno": 33,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 33,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Colour of transition metal ions",
+  "archetype": "fact recall",
+  "brief": "Ask which of the given aqueous ions (e.g. Sc3+, Ti3+, Cu+, Zn2+, V3+) is colourless and why, or which listed ion shows a stated colour.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:48",
+   "2025s2:48",
+   "2026s2:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "Transition metal ions generally exhibit colour in aqueous solution due to $d\\text{--}d$ transitions. Which of the following ions is colourless?",
+ "options": [
+  "$\\text{Ti}^{3+}$",
+  "$\\text{V}^{3+}$",
+  "$\\text{Sc}^{3+}$",
+  "$\\text{Cu}^{2+}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "d-electron counts: Ti3+ = d1, V3+ = d2, Sc3+ = d0, Cu2+ = d9. Colour from d–d transitions requires partially filled d orbitals; Sc3+ has empty d (d0), so no d–d transition and it is colourless.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The colour of transition metal ions in aqueous solution arises from $d\\text{--}d$ transitions, where an electron is promoted from a lower-energy $d$-orbital to a higher-energy $d$-orbital (e.g., $t_{2g} \\to e_g$ in octahedral hydrated complexes) upon absorption of light in the visible spectrum.\n\nFor $d\\text{--}d$ transitions to be possible, the metal ion must possess a partially filled $d$-subshell ($3d^1$ to $3d^9$). Ions with an empty $d$-subshell ($3d^0$) or a completely filled $d$-subshell ($3d^{10}$) cannot undergo $d\\text{--}d$ transitions and are therefore colourless.\n\nLet us determine the electronic configurations of the given ions:\n1. $\\text{Ti}^{3+}$ ($Z = 22$): $\\text{Ti} = [\\text{Ar}]\\,3d^2 4s^2 \\implies \\text{Ti}^{3+} = [\\text{Ar}]\\,3d^1$. It has one $d$-electron ($t_{2g}^1 e_g^0$) and exhibits a purple/violet colour.\n2. $\\text{V}^{3+}$ ($Z = 23$): $\\text{V} = [\\text{Ar}]\\,3d^3 4s^2 \\implies \\text{V}^{3+} = [\\text{Ar}]\\,3d^2$. It has two $d$-electrons and exhibits a green colour.\n3. $\\text{Sc}^{3+}$ ($Z = 21$): $\\text{Sc} = [\\text{Ar}]\\,3d^1 4s^2 \\implies \\text{Sc}^{3+} = [\\text{Ar}]\\,3d^0$. It has an empty $d$-subshell; with no $d$-electrons available for transitions, $\\text{Sc}^{3+}$ is colourless.\n4. $\\text{Cu}^{2+}$ ($Z = 29$): $\\text{Cu} = [\\text{Ar}]\\,3d^{10} 4s^1 \\implies \\text{Cu}^{2+} = [\\text{Ar}]\\,3d^9$. It has a partially filled $d$-subshell and exhibits a blue colour.\n\nTherefore, $\\text{Sc}^{3+}$ is colourless.\n\nIndependent check: d-electron counts: Ti3+ = d1, V3+ = d2, Sc3+ = d0, Cu2+ = d9. Colour from d–d transitions requires partially filled d orbitals; Sc3+ has empty d (d0), so no d–d transition and it is colourless.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Transition metal ions generally exhibit colour in aqueous solution due to $d\\text{--}d$ transitions. Which of the following ions is colourless?",
+  "options": [
+   "$\\text{Ti}^{3+}$",
+   "$\\text{V}^{3+}$",
+   "$\\text{Sc}^{3+}$",
+   "$\\text{Cu}^{2+}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The colour of transition metal ions in aqueous solution arises from $d\\text{--}d$ transitions, where an electron is promoted from a lower-energy $d$-orbital to a higher-energy $d$-orbital (e.g., $t_{2g} \\to e_g$ in octahedral hydrated complexes) upon absorption of light in the visible spectrum.\n\nFor $d\\text{--}d$ transitions to be possible, the metal ion must possess a partially filled $d$-subshell ($3d^1$ to $3d^9$). Ions with an empty $d$-subshell ($3d^0$) or a completely filled $d$-subshell ($3d^{10}$) cannot undergo $d\\text{--}d$ transitions and are therefore colourless.\n\nLet us determine the electronic configurations of the given ions:\n1. $\\text{Ti}^{3+}$ ($Z = 22$): $\\text{Ti} = [\\text{Ar}]\\,3d^2 4s^2 \\implies \\text{Ti}^{3+} = [\\text{Ar}]\\,3d^1$. It has one $d$-electron ($t_{2g}^1 e_g^0$) and exhibits a purple/violet colour.\n2. $\\text{V}^{3+}$ ($Z = 23$): $\\text{V} = [\\text{Ar}]\\,3d^3 4s^2 \\implies \\text{V}^{3+} = [\\text{Ar}]\\,3d^2$. It has two $d$-electrons and exhibits a green colour.\n3. $\\text{Sc}^{3+}$ ($Z = 21$): $\\text{Sc} = [\\text{Ar}]\\,3d^1 4s^2 \\implies \\text{Sc}^{3+} = [\\text{Ar}]\\,3d^0$. It has an empty $d$-subshell; with no $d$-electrons available for transitions, $\\text{Sc}^{3+}$ is colourless.\n4. $\\text{Cu}^{2+}$ ($Z = 29$): $\\text{Cu} = [\\text{Ar}]\\,3d^{10} 4s^1 \\implies \\text{Cu}^{2+} = [\\text{Ar}]\\,3d^9$. It has a partially filled $d$-subshell and exhibits a blue colour.\n\nTherefore, $\\text{Sc}^{3+}$ is colourless.",
+  "distractor_notes": "Option A: Mistaking $\\text{Ti}^{3+}$ ($3d^1$, purple) for $\\text{Ti}^{4+}$ ($3d^0$, colourless), or incorrectly assuming a single $d$-electron cannot undergo excitation.\nOption B: Incorrectly removing electrons from $3d$ before $4s$ to arrive at an erroneous $3d^0$ configuration.\nOption D: Confusing copper(II) ($\\text{Cu}^{2+}$, $3d^9$, blue) with copper(I) ($\\text{Cu}^+$, $3d^{10}$, colourless).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

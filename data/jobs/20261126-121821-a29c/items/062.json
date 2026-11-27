@@ -1,0 +1,68 @@
+{
+ "qno": 62,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 62,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "Sentence where the subject is separated from its verb by an intervening phrase; error is the verb's number agreement.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:70",
+   "2026s1:69",
+   "2026s1:68"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the sentence below, find the part that contains an error in subject–verb agreement.\n**(A)** The collection of rare manuscripts\n**(B)** in the university library\n**(C)** are being catalogued\n**(D)** by a team of trained archivists.",
+ "options": [
+  "The collection of rare manuscripts",
+  "in the university library",
+  "are being catalogued",
+  "by a team of trained archivists."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Collection” is singular, so “are being catalogued” should be “is being catalogued.”",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The subject is the singular noun “collection”; “of rare manuscripts” and “in the university library” are intervening modifiers. The verb should be “is being catalogued,” not “are being catalogued.”\n\nIndependent check: “Collection” is singular, so “are being catalogued” should be “is being catalogued.”",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the sentence below, find the part that contains an error in subject–verb agreement.\n**(A)** The collection of rare manuscripts\n**(B)** in the university library\n**(C)** are being catalogued\n**(D)** by a team of trained archivists.",
+  "options": [
+   "The collection of rare manuscripts",
+   "in the university library",
+   "are being catalogued",
+   "by a team of trained archivists."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The subject is the singular noun “collection”; “of rare manuscripts” and “in the university library” are intervening modifiers. The verb should be “is being catalogued,” not “are being catalogued.”",
+  "distractor_notes": "A: The subject phrase is grammatically correct. B: This modifying phrase is correct. C: Plural “are” incorrectly agrees with the nearby plural noun “manuscripts.” D: This agent phrase is correct."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

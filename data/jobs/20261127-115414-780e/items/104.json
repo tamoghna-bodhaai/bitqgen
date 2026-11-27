@@ -1,0 +1,82 @@
+{
+ "qno": 104,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 104,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "Area between a parabola/line and a line, or two curves; set up integrals with limits from intersection points.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:125",
+   "2022:95",
+   "2021:118"
+  ]
+ },
+ "status": "flagged",
+ "stem": "The area bounded by the curves $y = |x^2 - 1|$ and $y = 1$ is",
+ "options": [
+  "$\\frac{8}{3}(\\sqrt{2} + 1)$",
+  "$\\frac{4}{3}(\\sqrt{2} - 1)$",
+  "$\\frac{8}{3}(\\sqrt{2} - 1)$",
+  "$\\frac{4}{3}(\\sqrt{2} + 1)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Intersections satisfy |x²−1|=1, giving x=−√2, 0, √2 and two equal bounded regions. One region has area ∫₀¹x²dx + ∫₁^√2(2−x²)dx = 4/3(√2−1). Total area is twice this, matching A.",
+   "answer": "A",
+   "confidence": 0.92,
+   "multiple_correct": true,
+   "issues": [
+    "There are two bounded regions: their combined area is option A, whereas either individual region has area option B. The wording does not explicitly say whether to sum both regions."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "z-ai/glm-5.3",
+   "working": "Intersections where |x²−1| = 1: x = 0 and x = ±√2. For |x| ≤ 1, |x²−1| = 1 − x², bounded strip has height x², area = 2∫₀¹ x² dx = 2/3. For 1 ≤ |x| ≤ √2, |x²−1| = x² − 1 < 1, so height = 1 − (x²−1) = 2 − x², area = 2∫₁^√2 (2 − x²) dx = 2[2x − x³/3]₁^√2 = (8√2 − 10)/3. Total = (2 + 8√2 − 10)/3 = (8/3)(√2 − 1) ≈ 1.1046, which is option A (verified numerically).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 2,
+ "notes": [
+  "unverified: solvers disagreed with the key after all revisions — review manually"
+ ],
+ "working": "Intersection: $|x^2-1| = 1 \\implies x = 0,\\ \\pm\\sqrt{2}$.\nThe region is symmetric about the $y$-axis.\nArea $= 2\\left[ \\int_0^1 \\bigl(1 - (1-x^2)\\bigr) dx + \\int_1^{\\sqrt{2}} \\bigl(1 - (x^2-1)\\bigr) dx \\right]$\n$= 2\\left[ \\int_0^1 x^2\\,dx + \\int_1^{\\sqrt{2}} (2-x^2)\\,dx \\right]$\n$= 2\\left[ \\frac13 + \\left(2\\sqrt{2} - \\frac{2\\sqrt{2}}{3} - 2 + \\frac13\\right) \\right]$\n$= 2\\left[ \\frac13 + \\frac{4\\sqrt{2}-5}{3} \\right] = 2\\cdot\\frac{4\\sqrt{2}-4}{3} = \\frac{8}{3}(\\sqrt{2}-1)$.",
+ "solution": "The curves intersect at $x=0,\\\\pm\\sqrt{2}$, and the bounded region is symmetric about the $y$-axis.\n$$A=2\\left[\\int_0^1 x^2\\,dx+\\int_1^{\\sqrt{2}}(2-x^2)\\,dx\\right]\n=\\frac{8}{3}(\\sqrt{2}-1).$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The area bounded by the curves $y = |x^2 - 1|$ and $y = 1$ is",
+  "options": [
+   "$\\frac{8}{3}(\\sqrt{2} - 1)$",
+   "$\\frac{4}{3}(\\sqrt{2} - 1)$",
+   "$\\frac{8}{3}(\\sqrt{2} + 1)$",
+   "$\\frac{4}{3}(\\sqrt{2} + 1)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Intersection: $|x^2-1| = 1 \\implies x = 0,\\ \\pm\\sqrt{2}$.\nThe region is symmetric about the $y$-axis.\nArea $= 2\\left[ \\int_0^1 \\bigl(1 - (1-x^2)\\bigr) dx + \\int_1^{\\sqrt{2}} \\bigl(1 - (x^2-1)\\bigr) dx \\right]$\n$= 2\\left[ \\int_0^1 x^2\\,dx + \\int_1^{\\sqrt{2}} (2-x^2)\\,dx \\right]$\n$= 2\\left[ \\frac13 + \\left(2\\sqrt{2} - \\frac{2\\sqrt{2}}{3} - 2 + \\frac13\\right) \\right]$\n$= 2\\left[ \\frac13 + \\frac{4\\sqrt{2}-5}{3} \\right] = 2\\cdot\\frac{4\\sqrt{2}-4}{3} = \\frac{8}{3}(\\sqrt{2}-1)$.",
+  "distractor_notes": "A: correct. B: missing factor of 2 (forgot symmetry or wrong coefficient). C: sign error in integration (2 - x^2 integrated incorrectly or handling absolute value). D: both mistakes (missing factor of 2 and sign error)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

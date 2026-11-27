@@ -1,0 +1,76 @@
+{
+ "qno": 32,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 32,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Cleavage of ethers with HI",
+  "archetype": "mechanism-based product",
+  "brief": "Figure shows an unsymmetrical ether; ask which alcohol/alkyl iodide forms when cleaved by excess hot HI, and why the cleavage site is chosen.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:59",
+   "2024s1:48",
+   "2024s2:41"
+  ]
+ },
+ "status": "ok",
+ "stem": "The ether shown in the figure is heated with excess hot HI. The major carbon-containing products are",
+ "options": [
+  "tert-Butyl alcohol and methyl iodide",
+  "tert-Butyl iodide and methyl iodide",
+  "tert-Butyl iodide and methyl alcohol",
+  "tert-Butyl alcohol and methyl alcohol"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q032_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "HI protonates the ether; cleavage at the tertiary carbon gives tert-butyl iodide and methanol. Excess hot HI converts methanol to methyl iodide, so both carbon-containing products are iodides.",
+   "answer": "C",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The compound is methyl tert-butyl ether, (CH3)3C-O-CH3. With hot HI, protonated ether cleavage occurs by SN1 at the tertiary centre because the (CH3)3C+ carbocation is stable. This forms tert-butyl iodide and methanol. Excess HI then converts methanol to methyl iodide, CH3OH + HI to CH3I + H2O. Final products are tert-butyl iodide and methyl iodide.\n\nIndependent check: HI protonates the ether; cleavage at the tertiary carbon gives tert-butyl iodide and methanol. Excess hot HI converts methanol to methyl iodide, so both carbon-containing products are iodides.",
+ "solution": "HI protonates the ether; cleavage occurs at the tertiary carbon by the $S_N1$ pathway, forming tert-butyl iodide and methanol.\n$$\\mathrm{(CH_3)_3C-O-CH_3 + HI \\rightarrow (CH_3)_3C-I + CH_3OH}$$\nWith excess hot HI, $\\mathrm{CH_3OH + HI \\rightarrow CH_3I + H_2O}$; hence the products are tert-butyl iodide and methyl iodide.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The ether shown in the figure is heated with excess hot HI. The major carbon-containing products are",
+  "options": [
+   "tert-Butyl alcohol and methyl iodide",
+   "tert-Butyl iodide and methyl alcohol",
+   "tert-Butyl iodide and methyl iodide",
+   "tert-Butyl alcohol and methyl alcohol"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a central oxygen atom. On its left, show a single bond to a methyl group, CH3. On its right, show a single bond to a central carbon atom that is itself bonded to three methyl groups, CH3, forming a tert-butyl group. No other atoms or labels.",
+   "smiles": "COC(C)(C)C"
+  },
+  "difficulty_estimate": 2,
+  "working": "The compound is methyl tert-butyl ether, (CH3)3C-O-CH3. With hot HI, protonated ether cleavage occurs by SN1 at the tertiary centre because the (CH3)3C+ carbocation is stable. This forms tert-butyl iodide and methanol. Excess HI then converts methanol to methyl iodide, CH3OH + HI to CH3I + H2O. Final products are tert-butyl iodide and methyl iodide.",
+  "distractor_notes": "A: stops after the first cleavage but puts iodine on the methyl side. B: gives the correct first cleavage products but ignores excess HI. D: no C-O bond is cleaved to an alkyl iodide."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

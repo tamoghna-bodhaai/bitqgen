@@ -1,0 +1,78 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Organometallics",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:32",
+   "2024s1:49",
+   "2024s2:40"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following organometallic compounds strictly obeys the 18-electron rule?",
+ "options": [
+  "Ferrocene",
+  "Cobaltocene",
+  "Nickelocene",
+  "Chromocene"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q057_optA_v2.png",
+  "figs/q057_optB_v2.png",
+  "figs/q057_optC_v2.png",
+  "figs/q057_optD_v2.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Each η⁵-C₅H₅⁻ ligand donates 6 electrons. Ferrocene has Fe²⁺ (d⁶), giving 6 + 2(6) = 18 electrons. The others have 19 (cobaltocene), 20 (nickelocene), and 16 (chromocene).",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "All four are metallocenes of general formula M(η5-C5H5)2. The cyclopentadienyl ligand (C5H5⁻) is a 6-electron donor. The metals are in the +2 oxidation state with dn configuration: Fe(II) d6, Co(II) d7, Ni(II) d8, Cr(II) d4.\nTotal valence electron count = group electrons (dn) + 2×6.\nA (ferrocene): 6 + 12 = 18e (strictly obeying the rule).\nB (cobaltocene): 7 + 12 = 19e.\nC (nickelocene): 8 + 12 = 20e.\nD (chromocene): 4 + 12 = 16e.\nThus only ferrocene has an 18-electron configuration.\n\nIndependent check: Each η⁵-C₅H₅⁻ ligand donates 6 electrons. Ferrocene has Fe²⁺ (d⁶), giving 6 + 2(6) = 18 electrons. The others have 19 (cobaltocene), 20 (nickelocene), and 16 (chromocene).",
+ "solution": "Each $\u0007eta^5$-$C_5H_5^-$ ligand donates $6$ electrons; in ferrocene, $Fe^{2+}$ is $d^6$.\n$$6+2(6)=18\\text{ electrons}$$\nHence ferrocene obeys the 18-electron rule.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following organometallic compounds strictly obeys the 18-electron rule?",
+  "options": [
+   "Ferrocene",
+   "Cobaltocene",
+   "Nickelocene",
+   "Chromocene"
+  ],
+  "option_smiles": [
+   "[Fe+2].c1[cH-]ccc1.c1[cH-]ccc1",
+   "[Co+2].c1[cH-]ccc1.c1[cH-]ccc1",
+   "[Ni+2].c1[cH-]ccc1.c1[cH-]ccc1",
+   "[Cr+2].c1[cH-]ccc1.c1[cH-]ccc1"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "All four are metallocenes of general formula M(η5-C5H5)2. The cyclopentadienyl ligand (C5H5⁻) is a 6-electron donor. The metals are in the +2 oxidation state with dn configuration: Fe(II) d6, Co(II) d7, Ni(II) d8, Cr(II) d4.\nTotal valence electron count = group electrons (dn) + 2×6.\nA (ferrocene): 6 + 12 = 18e (strictly obeying the rule).\nB (cobaltocene): 7 + 12 = 19e.\nC (nickelocene): 8 + 12 = 20e.\nD (chromocene): 4 + 12 = 16e.\nThus only ferrocene has an 18-electron configuration.",
+  "distractor_notes": "B: Cobaltocene has 19 valence electrons (Co2+ d7 + 2×6e from Cp– = 19e).\nC: Nickelocene has 20 valence electrons (Ni2+ d8 + 2×6e = 20e).\nD: Chromocene has 16 valence electrons (Cr2+ d4 + 2×6e = 16e).\nOnly ferrocene (A) achieves the stable 18‑electron configuration (Fe2+ d6 + 2×6e = 18e)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

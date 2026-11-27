@@ -1,0 +1,68 @@
+{
+ "qno": 82,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 82,
+  "section": "Logical Reasoning",
+  "chapter": "Seating / Ranking Puzzle",
+  "subtopic": "Ranking and ordering",
+  "archetype": "ordering",
+  "brief": "Simple ranking of 5-6 people by height or weight with direct comparison statements; determine who is tallest / middle of the order.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:81",
+   "2024s2:82",
+   "2024s2:83"
+  ]
+ },
+ "status": "ok",
+ "stem": "Among five friends Aman, Bhavna, Chirag, Deepa and Esha, Aman is taller than Bhavna but shorter than Chirag. Deepa is shorter than Bhavna. Esha is taller than Chirag. Who is the tallest?",
+ "options": [
+  "Aman",
+  "Esha",
+  "Chirag",
+  "Bhavna"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Esha > Chirag > Aman > Bhavna > Deepa, so Esha is tallest.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Chain them: Aman is taller than Bhavna (Aman > Bhavna) but shorter than Chirag (Chirag > Aman); Deepa is shorter than Bhavna (Bhavna > Deepa); Esha is taller than Chirag (Esha > Chirag).\nSo Esha > Chirag > Aman > Bhavna > Deepa, which makes Esha the tallest.\nAman and Chirag both fall below Esha, so options A and C fail; Bhavna is near the bottom, so option B fails; only option D stands at the top.\n\nIndependent check: Esha > Chirag > Aman > Bhavna > Deepa, so Esha is tallest.",
+ "solution": "The height order is $\\text{Esha} > \\text{Chirag} > \\text{Aman} > \\text{Bhavna} > \\text{Deepa}$. Hence, Esha is the tallest.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Among five friends Aman, Bhavna, Chirag, Deepa and Esha, Aman is taller than Bhavna but shorter than Chirag. Deepa is shorter than Bhavna. Esha is taller than Chirag. Who is the tallest?",
+  "options": [
+   "Aman",
+   "Bhavna",
+   "Chirag",
+   "Esha"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Chain them: Aman is taller than Bhavna (Aman > Bhavna) but shorter than Chirag (Chirag > Aman); Deepa is shorter than Bhavna (Bhavna > Deepa); Esha is taller than Chirag (Esha > Chirag).\nSo Esha > Chirag > Aman > Bhavna > Deepa, which makes Esha the tallest.\nAman and Chirag both fall below Esha, so options A and C fail; Bhavna is near the bottom, so option B fails; only option D stands at the top.",
+  "distractor_notes": "Aman and Chirag are the strong pull — Aman is taller than Bhavna and Chirag is taller than Aman, so a careless reader may stop at Chirag and miss that Esha is stated to be taller than Chirag. Bhavna is a plain reversal trap (she is only taller than Deepa)."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

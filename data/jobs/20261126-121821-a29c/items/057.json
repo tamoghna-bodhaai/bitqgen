@@ -1,0 +1,67 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Stereochemistry of SN1/SN2",
+  "archetype": "conceptual",
+  "brief": "Ask about inversion/retention and racemisation for a chiral substrate under SN1 vs SN2 conditions, or which substrate/conditions lead to racemisation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:35",
+   "2025s1:60",
+   "2026s2:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "Optically pure $(S)$-3-bromo-3-methylhexane is subjected to hydrolysis in aqueous acetone. The substitution product obtained is:",
+ "options": [
+  "optically active due to complete inversion",
+  "optically active due to complete retention",
+  "optically inactive due to racemisation",
+  "optically inactive due to the formation of a meso compound"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "C3 bears Br, CH3, C2H5, C3H7 — a tertiary stereocenter. Hydrolysis in aqueous acetone (weak nucleophile, ionizing solvent) proceeds by SN1 via a planar tertiary carbocation; water attacks both faces equally, giving racemic 3-methylhexan-3-ol. The product has one stereocenter with four different groups, so it cannot be meso.",
+   "answer": "C",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "1. Identify the substrate structure: 3-bromo-3-methylhexane has four different groups attached to carbon-3 ($-\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_2\\text{CH}_3$, and $-\\text{Br}$), making it a chiral tertiary alkyl halide.\n2. Determine the mechanism: Because the substrate is tertiary and the nucleophile/solvent is weakly nucleophilic and polar protic (water in aqueous acetone), the reaction proceeds exclusively via the $\\text{S}_\\text{N}1$ pathway.\n3. Stereochemical outcome: The rate-determining step involves the loss of $\\text{Br}^-$ to generate an achiral, planar $sp^2$-hybridised tertiary carbocation: $$\\text{CH}_3\\text{CH}_2\\text{C}^+(\\text{CH}_3)\\text{CH}_2\\text{CH}_2\\text{CH}_3$$\nNucleophilic attack of $\\text{H}_2\\text{O}$ occurs with equal probability from either the top or bottom face of this planar intermediate. Deprotonation then yields an equimolar (50:50) mixture of $(R)$- and $(S)$-3-methylhexan-3-ol.\n4. Optical activity: This 1:1 enantiomeric pair forms a racemic mixture, which is optically inactive by external compensation (racemisation).\n\nIndependent check: C3 bears Br, CH3, C2H5, C3H7 — a tertiary stereocenter. Hydrolysis in aqueous acetone (weak nucleophile, ionizing solvent) proceeds by SN1 via a planar tertiary carbocation; water attacks both faces equally, giving racemic 3-methylhexan-3-ol. The product has one stereocenter with four different groups, so it cannot be meso.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Optically pure $(S)$-3-bromo-3-methylhexane is subjected to hydrolysis in aqueous acetone. The substitution product obtained is:",
+  "options": [
+   "optically active due to complete inversion",
+   "optically active due to complete retention",
+   "optically inactive due to racemisation",
+   "optically inactive due to the formation of a meso compound"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "1. Identify the substrate structure: 3-bromo-3-methylhexane has four different groups attached to carbon-3 ($-\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_2\\text{CH}_3$, and $-\\text{Br}$), making it a chiral tertiary alkyl halide.\n2. Determine the mechanism: Because the substrate is tertiary and the nucleophile/solvent is weakly nucleophilic and polar protic (water in aqueous acetone), the reaction proceeds exclusively via the $\\text{S}_\\text{N}1$ pathway.\n3. Stereochemical outcome: The rate-determining step involves the loss of $\\text{Br}^-$ to generate an achiral, planar $sp^2$-hybridised tertiary carbocation: $$\\text{CH}_3\\text{CH}_2\\text{C}^+(\\text{CH}_3)\\text{CH}_2\\text{CH}_2\\text{CH}_3$$\nNucleophilic attack of $\\text{H}_2\\text{O}$ occurs with equal probability from either the top or bottom face of this planar intermediate. Deprotonation then yields an equimolar (50:50) mixture of $(R)$- and $(S)$-3-methylhexan-3-ol.\n4. Optical activity: This 1:1 enantiomeric pair forms a racemic mixture, which is optically inactive by external compensation (racemisation).",
+  "distractor_notes": "Option A assumes an SN2 mechanism with Walden inversion, failing to recognize that tertiary halides do not undergo SN2 substitution due to steric hindrance.\nOption B assumes retention of configuration (such as in an SNi pathway), which does not occur under standard aqueous solvolysis.\nOption D incorrectly attributes the optical inactivity to internal compensation (a meso compound), which is impossible because the product contains only one stereocenter.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

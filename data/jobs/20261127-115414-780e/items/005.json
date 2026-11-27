@@ -1,0 +1,68 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Faraday's law",
+  "archetype": "differentiate-and-substitute",
+  "brief": "Flux given as a polynomial in t; find induced emf at a specific instant by differentiating.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:9",
+   "2022:30",
+   "2025s2:21"
+  ]
+ },
+ "status": "ok",
+ "stem": "The magnetic flux linked with a coil varies with time as $\\phi = (10t^2 - 30t + 40)$ Wb, where $t$ is in seconds. The induced emf in the coil at $t = 2$ s is",
+ "options": [
+  "10 V",
+  "-10 V",
+  "-30 V",
+  "20 V"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Faraday’s law, ε = −dφ/dt = −(20t − 30). At t = 2 s, ε = −10 V.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$e = -\\dfrac{d\\phi}{dt} = -(20t - 30)$. At $t = 2$ s, $e = -(20 \\times 2 - 30) = -(40 - 30) = -10$ V.\n\nIndependent check: By Faraday’s law, ε = −dφ/dt = −(20t − 30). At t = 2 s, ε = −10 V.",
+ "solution": "By Faraday’s law, $e=-\\dfrac{d\\phi}{dt}$. Thus,\n$$e=-(20t-30)\\big|_{t=2}=-(40-30)=-10\\text{ V}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The magnetic flux linked with a coil varies with time as $\\phi = (10t^2 - 30t + 40)$ Wb, where $t$ is in seconds. The induced emf in the coil at $t = 2$ s is",
+  "options": [
+   "10 V",
+   "-10 V",
+   "-30 V",
+   "20 V"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$e = -\\dfrac{d\\phi}{dt} = -(20t - 30)$. At $t = 2$ s, $e = -(20 \\times 2 - 30) = -(40 - 30) = -10$ V.",
+  "distractor_notes": "Option A is the induced emf without the negative sign (20 V? Actually derivative gives 10 V positive, so A: 10 V if you take e = dphi/dt). Option C: -30 V could come from substituting t=2 into 10t^2 - 30t giving 40-60= -20, not -30; maybe error. Option D: 20 V could be from evaluating dphi/dt at t=2 incorrectly as 20*2 = 40 then minus 30? No. But they are plausible."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

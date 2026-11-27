@@ -1,0 +1,68 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Wheatstone bridge",
+  "archetype": "circuit analysis",
+  "brief": "A network of identical resistors forming a balanced Wheatstone bridge; simplify by symmetry, find equivalent resistance and current through the galvanometer arm (zero in balanced case).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:7",
+   "2024s2:17",
+   "2025s2:20"
+  ]
+ },
+ "status": "ok",
+ "stem": "Four identical $6\\ \\text{Ω}$ resistors form the arms of a Wheatstone bridge, with a $3\\ \\text{Ω}$ galvanometer across the middle. A $12$ V source is connected across opposite vertices of the bridge. Find the equivalent resistance and galvanometer current.",
+ "options": [
+  "$6\\ \\text{Ω},\\ 0\\ \\text{A}$",
+  "$12\\ \\text{Ω},\\ 0\\ \\text{A}$",
+  "$6\\ \\text{Ω},\\ 1\\ \\text{A}$",
+  "$3\\ \\text{Ω},\\ 0\\ \\text{A}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The bridge is balanced by symmetry, so the galvanometer current is 0 A. Each side path has 6 + 6 = 12 Ω; the two paths are in parallel, giving 6 Ω.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Balanced bridge: $I_G=0$\n$R_{\\text{eq}}=(6+6)\\parallel(6+6)=12\\parallel12=6\\ \\text{Ω}$\n\nIndependent check: The bridge is balanced by symmetry, so the galvanometer current is 0 A. Each side path has 6 + 6 = 12 Ω; the two paths are in parallel, giving 6 Ω.",
+ "solution": "By symmetry, the Wheatstone bridge is balanced, so $I_G=0$. Each branch has resistance $6+6=12\\,\\Omega$, and the two branches are in parallel:\n$$R_{\\text{eq}}=12\\parallel12=6\\,\\Omega.$$\nThus, $R_{\\text{eq}}=6\\,\\Omega$ and $I_G=0\\,\\text{A}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Four identical $6\\ \\text{Ω}$ resistors form the arms of a Wheatstone bridge, with a $3\\ \\text{Ω}$ galvanometer across the middle. A $12$ V source is connected across opposite vertices of the bridge. Find the equivalent resistance and galvanometer current.",
+  "options": [
+   "$6\\ \\text{Ω},\\ 0\\ \\text{A}$",
+   "$12\\ \\text{Ω},\\ 0\\ \\text{A}$",
+   "$6\\ \\text{Ω},\\ 1\\ \\text{A}$",
+   "$3\\ \\text{Ω},\\ 0\\ \\text{A}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Balanced bridge: $I_G=0$\n$R_{\\text{eq}}=(6+6)\\parallel(6+6)=12\\parallel12=6\\ \\text{Ω}$",
+  "distractor_notes": "B: Adds the two branch resistances without taking their parallel combination.\nC: Assumes a nonzero galvanometer current despite the balanced bridge.\nD: Treats the four arms as a simple parallel combination."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

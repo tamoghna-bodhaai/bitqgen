@@ -1,0 +1,68 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola equation",
+  "archetype": "construct-equation",
+  "brief": "given focus and directrix (or vertex plus axis) of a parabola, construct its equation in standard form",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:111",
+   "2026s2:112",
+   "2026s1:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "The equation of the parabola with focus $(1,0)$ and directrix $x+y=2$ is",
+ "options": [
+  "$x^2 - 2xy + y^2 - 4y + 2 = 0$",
+  "$x^2 + 2xy + y^2 - 4y - 2 = 0$",
+  "$x^2 - 2xy + y^2 + 4y - 2 = 0$",
+  "$x^2 - 2xy + y^2 + 4y + 2 = 0$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set squared distances equal: (x−1)²+y²=(x+y−2)²/2. Expanding and simplifying gives x²−2xy+y²+4y−2=0, option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Distance to focus $= \\sqrt{(x-1)^2+y^2}$, distance to directrix $\\frac{|x+y-2|}{\\sqrt{2}}$. Squaring: $(x-1)^2+y^2 = \\frac{(x+y-2)^2}{2}$. Multiply by $2$: $2x^2-4x+2+2y^2 = x^2+y^2+2xy-4x-4y+4$. Simplify to $x^2-2xy+y^2+4y-2=0$.\n\nIndependent check: Set squared distances equal: (x−1)²+y²=(x+y−2)²/2. Expanding and simplifying gives x²−2xy+y²+4y−2=0, option A.",
+ "solution": "A point $(x,y)$ on the parabola is equidistant from the focus and directrix:\n$$\\sqrt{(x-1)^2+y^2}=\\frac{|x+y-2|}{\\sqrt2}.$$\nSquaring and simplifying, $(x-1)^2+y^2=\\frac{(x+y-2)^2}{2}\\Rightarrow x^2-2xy+y^2+4y-2=0$, which is (C).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the parabola with focus $(1,0)$ and directrix $x+y=2$ is",
+  "options": [
+   "$x^2 - 2xy + y^2 + 4y - 2 = 0$",
+   "$x^2 + 2xy + y^2 - 4y - 2 = 0$",
+   "$x^2 - 2xy + y^2 - 4y + 2 = 0$",
+   "$x^2 - 2xy + y^2 + 4y + 2 = 0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Distance to focus $= \\sqrt{(x-1)^2+y^2}$, distance to directrix $\\frac{|x+y-2|}{\\sqrt{2}}$. Squaring: $(x-1)^2+y^2 = \\frac{(x+y-2)^2}{2}$. Multiply by $2$: $2x^2-4x+2+2y^2 = x^2+y^2+2xy-4x-4y+4$. Simplify to $x^2-2xy+y^2+4y-2=0$.",
+  "distractor_notes": "B sign of 2xy and 4y flipped; C constant +2 and -4y; D constant +2."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

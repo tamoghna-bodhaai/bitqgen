@@ -1,0 +1,68 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power bookkeeping",
+  "brief": "For a 2×2 or 3×3 matrix A satisfying a relation like A² = I or A² = A + I, compute A⁵ or A⁶ as a linear combination of A and I.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:101",
+   "2023s2:109",
+   "2026s1:117"
+  ]
+ },
+ "status": "ok",
+ "stem": "If a square matrix $A$ satisfies $A^2=3A-2I$, where $I$ is the identity matrix, then $A^6$ equals",
+ "options": [
+  "$63A-62I$",
+  "$31A-30I$",
+  "$63A-60I$",
+  "$93A-62I$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the recurrence from A² = 3A − 2I: A³ = 7A − 6I, A⁴ = 15A − 14I, A⁵ = 31A − 30I, and A⁶ = 63A − 62I.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A^3=7A-6I$\n$A^4=15A-14I$\n$A^5=31A-30I$\n$A^6=31(3A-2I)-30A=63A-62I$\n\nIndependent check: Using the recurrence from A² = 3A − 2I: A³ = 7A − 6I, A⁴ = 15A − 14I, A⁵ = 31A − 30I, and A⁶ = 63A − 62I.",
+ "solution": "$A^2=3A-2I$; multiplying successively by $A$ gives $A^5=31A-30I$.\n$$A^6=31A^2-30AI=31(3A-2I)-30A=63A-62I$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If a square matrix $A$ satisfies $A^2=3A-2I$, where $I$ is the identity matrix, then $A^6$ equals",
+  "options": [
+   "$63A-62I$",
+   "$31A-30I$",
+   "$63A-60I$",
+   "$93A-62I$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$A^3=7A-6I$\n$A^4=15A-14I$\n$A^5=31A-30I$\n$A^6=31(3A-2I)-30A=63A-62I$",
+  "distractor_notes": "B: Stops at $A^5$ instead of finding $A^6$.\nC: Multiplies the identity coefficient incorrectly.\nD: Omits the $-30A$ contribution when reducing $A^6$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

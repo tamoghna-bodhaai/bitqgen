@@ -1,0 +1,68 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Velocity from position function",
+  "archetype": "differentiate components",
+  "brief": "Position vector given as function of time; differentiate to get velocity/acceleration at an instant",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:15",
+   "2025s1:14",
+   "2026s1:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "The position vector of a particle is $r(t)=(t^2+3t)i+(2t^2-t)j$ m, where $t$ is in seconds. What is its velocity at $t=2$ s?",
+ "options": [
+  "$(7i+7j)\\ \\mathrm{m\\,s^{-1}}$",
+  "$(7i+8j)\\ \\mathrm{m\\,s^{-1}}$",
+  "$(4i+7j)\\ \\mathrm{m\\,s^{-1}}$",
+  "$(4i+8j)\\ \\mathrm{m\\,s^{-1}}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Differentiate each component: v(t)=(2t+3)i+(4t-1)j. At t=2, v=7i+7j m·s⁻¹.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$v_x=\\dfrac{d}{dt}(t^2+3t)=2t+3$, $v_y=\\dfrac{d}{dt}(2t^2-t)=4t-1$; at $t=2$ s, $\\vec v=(7i+7j)\\ \\mathrm{m\\,s^{-1}}$.\n\nIndependent check: Differentiate each component: v(t)=(2t+3)i+(4t-1)j. At t=2, v=7i+7j m·s⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The position vector of a particle is $r(t)=(t^2+3t)i+(2t^2-t)j$ m, where $t$ is in seconds. What is its velocity at $t=2$ s?",
+  "options": [
+   "$(7i+7j)\\ \\mathrm{m\\,s^{-1}}$",
+   "$(7i+8j)\\ \\mathrm{m\\,s^{-1}}$",
+   "$(4i+7j)\\ \\mathrm{m\\,s^{-1}}$",
+   "$(4i+8j)\\ \\mathrm{m\\,s^{-1}}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$v_x=\\dfrac{d}{dt}(t^2+3t)=2t+3$, $v_y=\\dfrac{d}{dt}(2t^2-t)=4t-1$; at $t=2$ s, $\\vec v=(7i+7j)\\ \\mathrm{m\\,s^{-1}}$.",
+  "distractor_notes": "B: omits the derivative of the linear term in the $j$ component; C: omits the derivative of the linear term in the $i$ component; D: omits both linear-term derivatives."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

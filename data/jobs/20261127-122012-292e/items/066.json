@@ -1,0 +1,68 @@
+{
+ "qno": 66,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 66,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment of lanthanide ions",
+  "archetype": "unpaired electron count",
+  "brief": "Given the electronic configuration of a lanthanide/transition ion, compute its spin-only magnetic moment using √(n(n+2)) BM.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:37",
+   "2024s1:55",
+   "2026s1:49"
+  ]
+ },
+ "status": "ok",
+ "stem": "The spin-only magnetic moment (in BM) of Nd$^{3+}$ (atomic number 60) is closest to:",
+ "options": [
+  "2.83",
+  "3.87",
+  "4.90",
+  "5.92"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Nd³⁺ has configuration [Xe]4f³, with 3 unpaired electrons. The spin-only moment is √[n(n+2)] = √15 ≈ 3.87 BM.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Nd$^{3+}$ has electronic configuration [Xe]4f$^3$. Number of unpaired electrons, $n = 3$. Spin-only magnetic moment $\\mu = \\sqrt{n(n+2)} = \\sqrt{3 \\times 5} = \\sqrt{15} \\approx 3.87$ BM.\n\nIndependent check: Nd³⁺ has configuration [Xe]4f³, with 3 unpaired electrons. The spin-only moment is √[n(n+2)] = √15 ≈ 3.87 BM.",
+ "solution": "Nd$^{3+}$ has configuration $[\\mathrm{Xe}]4f^3$, giving $n=3$ unpaired electrons. The spin-only magnetic moment is\n$$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(3+2)}=\\sqrt{15}\\approx 3.87\\ \\text{BM}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The spin-only magnetic moment (in BM) of Nd$^{3+}$ (atomic number 60) is closest to:",
+  "options": [
+   "2.83",
+   "3.87",
+   "4.90",
+   "5.92"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Nd$^{3+}$ has electronic configuration [Xe]4f$^3$. Number of unpaired electrons, $n = 3$. Spin-only magnetic moment $\\mu = \\sqrt{n(n+2)} = \\sqrt{3 \\times 5} = \\sqrt{15} \\approx 3.87$ BM.",
+  "distractor_notes": "Other options correspond to n = 2 (2.83), n = 4 (4.90) and n = 5 (5.92), common errors from miscounting unpaired electrons or using wrong configuration."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

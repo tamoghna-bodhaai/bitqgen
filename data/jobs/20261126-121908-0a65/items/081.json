@@ -1,0 +1,67 @@
+{
+ "qno": 81,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 81,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "Sentence with a compound subject joined by 'as well as' or a collective noun where the verb is misused; student must spot the agreement error in one part.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:61",
+   "2026s2:67",
+   "2026s1:69"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find out the part of the sentence which contains a grammatical error:\n\nThe lead architect, as well as several senior engineers, were present at the construction site to supervise the foundation work.",
+ "options": [
+  "The lead architect, as well as",
+  "several senior engineers, were present",
+  "at the construction site to supervise",
+  "the foundation work."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "With 'as well as', the verb agrees with the first subject: 'The lead architect' (singular) requires 'was present', not 'were present'. The incorrect verb appears in segment (B).",
+   "answer": "B",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "When two nouns are connected by prepositional or additive phrases such as 'as well as', 'together with', 'along with', or 'in addition to', the grammatical number of the subject is determined entirely by the primary (first) noun. Here, the primary subject is 'The lead architect', which is singular. Therefore, the verb must also be singular ('was present' instead of the plural 'were present'). The error lies in the second segment.\n\nIndependent check: With 'as well as', the verb agrees with the first subject: 'The lead architect' (singular) requires 'was present', not 'were present'. The incorrect verb appears in segment (B).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find out the part of the sentence which contains a grammatical error:\n\nThe lead architect, as well as several senior engineers, were present at the construction site to supervise the foundation work.",
+  "options": [
+   "The lead architect, as well as",
+   "several senior engineers, were present",
+   "at the construction site to supervise",
+   "the foundation work."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "When two nouns are connected by prepositional or additive phrases such as 'as well as', 'together with', 'along with', or 'in addition to', the grammatical number of the subject is determined entirely by the primary (first) noun. Here, the primary subject is 'The lead architect', which is singular. Therefore, the verb must also be singular ('was present' instead of the plural 'were present'). The error lies in the second segment.",
+  "distractor_notes": "Option A contains the singular subject and the connecting phrase, which is grammatically sound.\nOption C contains the prepositional phrase of location and an infinitive of purpose, both used correctly.\nOption D is the direct object phrase functioning correctly as the complement of the verb 'supervise'.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

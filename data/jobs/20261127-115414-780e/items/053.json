@@ -1,0 +1,68 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Stability of dienes / aromaticity",
+  "archetype": "stability ordering",
+  "brief": "Ask to rank given alkenes by heat of hydrogenation (most stable = least exothermic).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:53",
+   "2023s2:45",
+   "2021:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the following alkenes in increasing order of stability: (I) ethene, (II) propene, (III) trans-but-2-ene, (IV) 2,3-dimethylbut-2-ene.",
+ "options": [
+  "IV < III < II < I",
+  "I < III < II < IV",
+  "I < II < III < IV",
+  "II < I < IV < III"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alkene stability generally increases with alkyl substitution: ethene < propene < trans-but-2-ene < 2,3-dimethylbut-2-ene.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Alkene stability increases with the number of alkyl substituents on the double-bond carbons and with trans geometry. Ethene has 0 substituents, propene has 1, trans-but-2-ene has 2 and is trans, 2,3-dimethylbut-2-ene has 4. Thus the order is I < II < III < IV.\n\nIndependent check: Alkene stability generally increases with alkyl substitution: ethene < propene < trans-but-2-ene < 2,3-dimethylbut-2-ene.",
+ "solution": "Alkene stability increases with alkyl substitution; trans geometry further stabilizes the alkene. The number of alkyl substituents increases from ethene (0) to propene (1), trans-but-2-ene (2), and 2,3-dimethylbut-2-ene (4): $$\\boxed{\\mathrm{I<II<III<IV}}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Arrange the following alkenes in increasing order of stability: (I) ethene, (II) propene, (III) trans-but-2-ene, (IV) 2,3-dimethylbut-2-ene.",
+  "options": [
+   "I < II < III < IV",
+   "I < III < II < IV",
+   "IV < III < II < I",
+   "II < I < IV < III"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Alkene stability increases with the number of alkyl substituents on the double-bond carbons and with trans geometry. Ethene has 0 substituents, propene has 1, trans-but-2-ene has 2 and is trans, 2,3-dimethylbut-2-ene has 4. Thus the order is I < II < III < IV.",
+  "distractor_notes": "B ignores the trans geometry effect; C reverses the order; D misorders ethene and propene and puts the tetrasubstituted alkene last."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

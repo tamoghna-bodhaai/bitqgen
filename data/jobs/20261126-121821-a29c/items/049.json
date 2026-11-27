@@ -1,0 +1,67 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Carbohydrate tests",
+  "archetype": "test identification",
+  "brief": "Give a described observation (e.g. violet colour with iodine, red Cu2O with Tollens'/Fehling's, or osazone formation) and ask which sugar/disaccharide test it corresponds to.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:56",
+   "2025s2:49",
+   "2024s1:37"
+  ]
+ },
+ "status": "ok",
+ "stem": "Heating an aqueous carbohydrate solution with copper(II) acetate in dilute acetic acid produces a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$. This observation corresponds to:",
+ "options": [
+  "Barfoed's test",
+  "Benedict's test",
+  "Fehling's test",
+  "Seliwanoff's test"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Copper(II) acetate in dilute acetic acid is Barfoed's reagent (weakly acidic medium); monosaccharides reduce it to red Cu2O within ~2-3 minutes, distinguishing them from disaccharides. Benedict's uses citrate/carbonate, Fehling's uses tartrate/NaOH (both alkaline), Seliwanoff's uses resorcinol/HCl and gives a red solution, not Cu2O.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Barfoed's reagent consists of copper(II) acetate, $\\text{Cu}(\\text{CH}_3\\text{COO})_2$, in dilute acetic acid (a weakly acidic medium).\n2. In an acidic medium, only reducing monosaccharides are strong enough reducing agents to reduce $\\text{Cu}^{2+}$ to cuprous oxide within a short time ($1\\text{--}2\\ \\text{minutes}$):\n$$\\text{RCHO} + 2\\text{Cu}^{2+} + 2\\text{H}_2\\text{O} \\longrightarrow \\text{RCOOH} + \\text{Cu}_2\\text{O}\\downarrow + 4\\text{H}^+$$\nThe formation of a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$ is diagnostic of Barfoed's test (used to distinguish reducing monosaccharides from reducing disaccharides, which react much more slowly).\n3. Benedict's and Fehling's tests both use alkaline media (with citrate and tartrate, respectively), while Seliwanoff's test uses resorcinol in dilute $\\text{HCl}$ to give a cherry-red colour with ketoses.\n\nIndependent check: Copper(II) acetate in dilute acetic acid is Barfoed's reagent (weakly acidic medium); monosaccharides reduce it to red Cu2O within ~2-3 minutes, distinguishing them from disaccharides. Benedict's uses citrate/carbonate, Fehling's uses tartrate/NaOH (both alkaline), Seliwanoff's uses resorcinol/HCl and gives a red solution, not Cu2O.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Heating an aqueous carbohydrate solution with copper(II) acetate in dilute acetic acid produces a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$. This observation corresponds to:",
+  "options": [
+   "Barfoed's test",
+   "Benedict's test",
+   "Fehling's test",
+   "Seliwanoff's test"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "1. Barfoed's reagent consists of copper(II) acetate, $\\text{Cu}(\\text{CH}_3\\text{COO})_2$, in dilute acetic acid (a weakly acidic medium).\n2. In an acidic medium, only reducing monosaccharides are strong enough reducing agents to reduce $\\text{Cu}^{2+}$ to cuprous oxide within a short time ($1\\text{--}2\\ \\text{minutes}$):\n$$\\text{RCHO} + 2\\text{Cu}^{2+} + 2\\text{H}_2\\text{O} \\longrightarrow \\text{RCOOH} + \\text{Cu}_2\\text{O}\\downarrow + 4\\text{H}^+$$\nThe formation of a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$ is diagnostic of Barfoed's test (used to distinguish reducing monosaccharides from reducing disaccharides, which react much more slowly).\n3. Benedict's and Fehling's tests both use alkaline media (with citrate and tartrate, respectively), while Seliwanoff's test uses resorcinol in dilute $\\text{HCl}$ to give a cherry-red colour with ketoses.",
+  "distractor_notes": "Benedict's test: Confuses Barfoed's reagent with Benedict's reagent, which uses copper(II) sulfate in an alkaline solution containing sodium citrate and sodium carbonate.\nFehling's test: Confuses the weakly acidic copper(II) acetate medium with Fehling's strongly alkaline medium containing sodium potassium tartrate (Rochelle salt).\nSeliwanoff's test: Recalls the red colour observation but confuses a red precipitation of $\\text{Cu}_2\\text{O}$ with the cherry-red condensation product of resorcinol and hydroxymethylfurfural.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

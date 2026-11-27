@@ -1,0 +1,68 @@
+{
+ "qno": 72,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 72,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter analogy",
+  "archetype": "positional value analogy",
+  "brief": "Letter pair analogy where letters shift by a fixed positional distance (e.g., AB : ED type); student must find the pair following the same pattern.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:86",
+   "2026s1:71",
+   "2026s2:73"
+  ]
+ },
+ "status": "ok",
+ "stem": "CANDLE : FDQGOH :: MARKET : ?",
+ "options": [
+  "QDUNHW",
+  "PDUQHW",
+  "PDUNIW",
+  "PDUNHW"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Each letter shifts forward by 3: MARKET → PDUNHW.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "CANDLE → FDQGOH: every letter moves +3 (C→F, A→D, N→Q, D→G, L→O, E→H).\nApply +3 to MARKET: M→P, A→D, R→U, K→N, E→H, T→W ⇒ PDUNHW.\nB: K→Q is +6. C: E→I is +4. D: M→Q is +4. Only A shifts all six letters by +3.\n\nIndependent check: Each letter shifts forward by 3: MARKET → PDUNHW.",
+ "solution": "Each letter is shifted forward by 3 places in the alphabet: $M\\to P,\\ A\\to D,\\ R\\to U,\\ K\\to N,\\ E\\to H,\\ T\\to W$. Hence, $\\text{MARKET}\\to\\text{PDUNHW}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "CANDLE : FDQGOH :: MARKET : ?",
+  "options": [
+   "PDUNHW",
+   "PDUQHW",
+   "PDUNIW",
+   "QDUNHW"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "CANDLE → FDQGOH: every letter moves +3 (C→F, A→D, N→Q, D→G, L→O, E→H).\nApply +3 to MARKET: M→P, A→D, R→U, K→N, E→H, T→W ⇒ PDUNHW.\nB: K→Q is +6. C: E→I is +4. D: M→Q is +4. Only A shifts all six letters by +3.",
+  "distractor_notes": "B: K shifted +6 instead of +3. C: E shifted +4 instead of +3. D: M shifted +4 instead of +3. Only A applies a uniform +3 shift to every letter."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 54,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 54,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "IUPAC nomenclature of complexes",
+  "archetype": "naming",
+  "brief": "Give a formula of a simple coordination compound (e.g. ammine/aqua/chloro complex with a cation or anionic complex) and ask for its correct IUPAC name among four close options.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:51",
+   "2024s1:42",
+   "2026s2:56"
+  ]
+ },
+ "status": "ok",
+ "stem": "According to the IUPAC nomenclature rules, the correct name of the coordination compound $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$ is",
+ "options": [
+  "Dichloridotetraamminechromium(III) chloride",
+  "Tetraamminedichloridochromium(III) chloride",
+  "Tetraamminedichloridochromate(III) chloride",
+  "Tetraamminedichloridochromium(II) chloride"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Outer Cl⁻ gives complex charge +1; with 4 neutral NH₃ and 2 Cl⁻ inside, Cr = +3. Ligands named alphabetically: ammine before chlorido → tetraamminedichloridochromium(III) chloride. Cationic complex uses 'chromium', not 'chromate'; option A violates alphabetical order, D has wrong oxidation state.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "1. **Determine the oxidation state of the central metal ($\\text{Cr}$):**\nLet the oxidation state of chromium be $x$.\n- Ammine ($\\text{NH}_3$) is a neutral ligand: charge $= 0$.\n- Chlorido ($\\text{Cl}^-$) is a uninegative ligand: charge $= -1$.\n- The counter ion is chloride ($\\text{Cl}^-$): charge $= -1$.\n\nSetting up the charge neutrality equation:\n$$x + 4(0) + 2(-1) + (-1) = 0$$\n$$x - 3 = 0 \\implies x = +3$$\nSo the oxidation state of chromium is $+3$, written as $(\\text{III})$.\n\n2. **Identify the type of complex ion:**\nThe complex cation is $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]^+$. Since the coordination entity is cationic, the central metal retains its elemental name, \"chromium\" (not \"chromate\").\n\n3. **Alphabetical order of ligands:**\nThe ligands present are ammine and chlorido. Alphabetically, \"ammine\" precedes \"chlorido\" (prefixes such as 'tetra' and 'di' are ignored in alphabetical ordering).\nTherefore, the ligands are written as \"tetraamminedichlorido\".\n\n4. **Counter ion:**\nThe anion outside the coordination sphere is named \"chloride\".\n\nCombining these gives: **Tetraamminedichloridochromium(III) chloride**.\n\nIndependent check: Outer Cl⁻ gives complex charge +1; with 4 neutral NH₃ and 2 Cl⁻ inside, Cr = +3. Ligands named alphabetically: ammine before chlorido → tetraamminedichloridochromium(III) chloride. Cationic complex uses 'chromium', not 'chromate'; option A violates alphabetical order, D has wrong oxidation state.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "According to the IUPAC nomenclature rules, the correct name of the coordination compound $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$ is",
+  "options": [
+   "Dichloridotetraamminechromium(III) chloride",
+   "Tetraamminedichloridochromium(III) chloride",
+   "Tetraamminedichloridochromate(III) chloride",
+   "Tetraamminedichloridochromium(II) chloride"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. **Determine the oxidation state of the central metal ($\\text{Cr}$):**\nLet the oxidation state of chromium be $x$.\n- Ammine ($\\text{NH}_3$) is a neutral ligand: charge $= 0$.\n- Chlorido ($\\text{Cl}^-$) is a uninegative ligand: charge $= -1$.\n- The counter ion is chloride ($\\text{Cl}^-$): charge $= -1$.\n\nSetting up the charge neutrality equation:\n$$x + 4(0) + 2(-1) + (-1) = 0$$\n$$x - 3 = 0 \\implies x = +3$$\nSo the oxidation state of chromium is $+3$, written as $(\\text{III})$.\n\n2. **Identify the type of complex ion:**\nThe complex cation is $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]^+$. Since the coordination entity is cationic, the central metal retains its elemental name, \"chromium\" (not \"chromate\").\n\n3. **Alphabetical order of ligands:**\nThe ligands present are ammine and chlorido. Alphabetically, \"ammine\" precedes \"chlorido\" (prefixes such as 'tetra' and 'di' are ignored in alphabetical ordering).\nTherefore, the ligands are written as \"tetraamminedichlorido\".\n\n4. **Counter ion:**\nThe anion outside the coordination sphere is named \"chloride\".\n\nCombining these gives: **Tetraamminedichloridochromium(III) chloride**.",
+  "distractor_notes": "Option A encodes an alphabetical ordering error, placing 'dichlorido' before 'ammine'.\nOption C encodes the mistake of applying the suffix '-ate' to the metal in a cationic complex entity.\nOption D encodes an incorrect oxidation state calculation (+2 instead of +3), typically caused by neglecting the outer-sphere chloride ion.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

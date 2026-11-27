@@ -1,0 +1,68 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Young's modulus and elongation",
+  "archetype": "two-condition linear",
+  "brief": "A wire of given length and area is loaded within elastic limit; using Young's modulus relation, ask for elongation or breaking load, possibly with two loading conditions to solve.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:13",
+   "2023s1:14",
+   "2024s2:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A metal wire of cross-sectional area 1.0 mm^2 is loaded within its elastic limit. When a load of 8 N is attached, its length is 1.632 m; when the load is 18 N, its length is 1.672 m. A second wire of the same material has natural length 2.0 m and cross-sectional area 1.0 mm^2. The elongation of the second wire under a load of 40 N is:",
+ "options": [
+  "0.20 m",
+  "0.10 m",
+  "0.30 m",
+  "0.40 m"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The length changes by 0.040 m for a 10 N load increase, so the extension per unit load is 0.004 m/N. The first wire’s natural length is 1.632 − 8(0.004) = 1.600 m. For the same material and area, extension is proportional to length and load; hence the second wire’s extension is 0.004 × (2.0/1.6) × 40 = 0.20 m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "For the first wire, let k = AY/L0, so L = L0 + F/k.\n1.632 = L0 + 8/k\n1.672 = L0 + 18/k\nSubtract: 0.040 = 10/k so k = 250 N/m.\nThen L0 = 1.632 - 8/250 = 1.600 m.\nY = k L0 / A = 250 * 1.600 / (1.0 * 10^-6) = 4.0 * 10^8 N/m^2.\nFor the second wire, elongation = F L / (A Y) = 40 * 2.0 / (1.0 * 10^-6 * 4.0 * 10^8) = 0.20 m.\n\nIndependent check: The length changes by 0.040 m for a 10 N load increase, so the extension per unit load is 0.004 m/N. The first wire’s natural length is 1.632 − 8(0.004) = 1.600 m. For the same material and area, extension is proportional to length and load; hence the second wire’s extension is 0.004 × (2.0/1.6) × 40 = 0.20 m.",
+ "solution": "For the first wire, $\\Delta L/\\Delta F=0.040/10=0.004\\,\\text{m N}^{-1}$, so its natural length is $1.632-8(0.004)=1.60\\,\\text{m}$. Since $\\Delta L=FL/(AY)$ for the same material and area, the second wire’s elongation is $$\\Delta L=0.004\\times\\frac{2.0}{1.60}\\times40=0.20\\,\\text{m}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A metal wire of cross-sectional area 1.0 mm^2 is loaded within its elastic limit. When a load of 8 N is attached, its length is 1.632 m; when the load is 18 N, its length is 1.672 m. A second wire of the same material has natural length 2.0 m and cross-sectional area 1.0 mm^2. The elongation of the second wire under a load of 40 N is:",
+  "options": [
+   "0.10 m",
+   "0.20 m",
+   "0.30 m",
+   "0.40 m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "For the first wire, let k = AY/L0, so L = L0 + F/k.\n1.632 = L0 + 8/k\n1.672 = L0 + 18/k\nSubtract: 0.040 = 10/k so k = 250 N/m.\nThen L0 = 1.632 - 8/250 = 1.600 m.\nY = k L0 / A = 250 * 1.600 / (1.0 * 10^-6) = 4.0 * 10^8 N/m^2.\nFor the second wire, elongation = F L / (A Y) = 40 * 2.0 / (1.0 * 10^-6 * 4.0 * 10^8) = 0.20 m.",
+  "distractor_notes": "A uses half the applied load on the second wire (20 N instead of 40 N). C uses 1.5 times the applied load on the second wire (60 N instead of 40 N). D uses half the cross-sectional area of the second wire (0.50 mm^2 instead of 1.0 mm^2)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

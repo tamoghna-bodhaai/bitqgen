@@ -1,0 +1,67 @@
+{
+ "qno": 70,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 70,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Basicity of amines",
+  "archetype": "statement evaluation",
+  "brief": "Evaluate statements on aliphatic vs aromatic amine basicity in gas/aqueous phases and pick correct ones.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:38",
+   "2025s1:34",
+   "2026s1:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the following statements regarding the basicity of amines:\n\nI. In the gas phase, the basic strength of alkylamines decreases in the order: $3^\\circ > 2^\\circ > 1^\\circ > \\text{NH}_3$.\nII. In aqueous solution, trimethylamine is a stronger base than dimethylamine.\nIII. Aniline is less basic than aliphatic amines because the lone pair on nitrogen is delocalised over the benzene ring.\n\nWhich of the above statements are correct?",
+ "options": [
+  "I and II only",
+  "I and III only",
+  "II and III only",
+  "I, II and III"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "I: In gas phase only +I effect operates (no solvation), so 3° > 2° > 1° > NH3 — correct. II: In water, solvation/H-bonding of the ammonium ion and steric effects reverse part of the inductive trend; for methylamines pKb: (CH3)2NH 3.27 < CH3NH2 3.38 < (CH3)3N 4.22, so dimethylamine is stronger than trimethylamine — II is false. III: Aniline's lone pair is delocalised into the ring, lowering basicity vs aliphatic amines — correct. Hence I and III only.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Statement I is correct: In the gas phase, there are no solvation or steric effects. Basicity depends solely on the electron-donating inductive effect ($+I$) of the alkyl groups, which stabilizes the conjugate acid ($R_3\\text{NH}^+$). Hence, the order is $3^\\circ > 2^\\circ > 1^\\circ > \\text{NH}_3$.\n\nStatement II is incorrect: In aqueous solution, basicity is governed by an interplay of inductive effect, hydration enthalpy (solvation of the conjugate ammonium cation), and steric hindrance. For methyl-substituted amines, the order in aqueous medium is: $$(\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3$$ Thus, dimethylamine is a stronger base than trimethylamine.\n\nStatement III is correct: In aromatic amines such as aniline, the unshared pair of electrons on the nitrogen atom is in conjugation with the aromatic $\\pi$-system and is delocalised into the ring through resonance (represented by five contributing canonical structures). This decreases the electron density on nitrogen, making aniline significantly less basic than aliphatic amines.\n\nTherefore, statements I and III are correct.\n\nIndependent check: I: In gas phase only +I effect operates (no solvation), so 3° > 2° > 1° > NH3 — correct. II: In water, solvation/H-bonding of the ammonium ion and steric effects reverse part of the inductive trend; for methylamines pKb: (CH3)2NH 3.27 < CH3NH2 3.38 < (CH3)3N 4.22, so dimethylamine is stronger than trimethylamine — II is false. III: Aniline's lone pair is delocalised into the ring, lowering basicity vs aliphatic amines — correct. Hence I and III only.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Consider the following statements regarding the basicity of amines:\n\nI. In the gas phase, the basic strength of alkylamines decreases in the order: $3^\\circ > 2^\\circ > 1^\\circ > \\text{NH}_3$.\nII. In aqueous solution, trimethylamine is a stronger base than dimethylamine.\nIII. Aniline is less basic than aliphatic amines because the lone pair on nitrogen is delocalised over the benzene ring.\n\nWhich of the above statements are correct?",
+  "options": [
+   "I and II only",
+   "I and III only",
+   "II and III only",
+   "I, II and III"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Statement I is correct: In the gas phase, there are no solvation or steric effects. Basicity depends solely on the electron-donating inductive effect ($+I$) of the alkyl groups, which stabilizes the conjugate acid ($R_3\\text{NH}^+$). Hence, the order is $3^\\circ > 2^\\circ > 1^\\circ > \\text{NH}_3$.\n\nStatement II is incorrect: In aqueous solution, basicity is governed by an interplay of inductive effect, hydration enthalpy (solvation of the conjugate ammonium cation), and steric hindrance. For methyl-substituted amines, the order in aqueous medium is: $$(\\text{CH}_3)_2\\text{NH} > \\text{CH}_3\\text{NH}_2 > (\\text{CH}_3)_3\\text{N} > \\text{NH}_3$$ Thus, dimethylamine is a stronger base than trimethylamine.\n\nStatement III is correct: In aromatic amines such as aniline, the unshared pair of electrons on the nitrogen atom is in conjugation with the aromatic $\\pi$-system and is delocalised into the ring through resonance (represented by five contributing canonical structures). This decreases the electron density on nitrogen, making aniline significantly less basic than aliphatic amines.\n\nTherefore, statements I and III are correct.",
+  "distractor_notes": "Option A assumes the gas-phase $+I$ trend also determines basicity in aqueous medium, mistakenly concluding that $3^\\circ > 2^\\circ$ in water.\nOption C incorrectly rejects Statement I by confusing gas-phase behavior with aqueous anomalies, while accepting Statement II.\nOption D overlooks the adverse effects of steric hindrance and diminished hydration in aqueous $(CH_3)_3N$, incorrectly assuming all three statements are true.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

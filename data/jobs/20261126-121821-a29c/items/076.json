@@ -1,0 +1,67 @@
+{
+ "qno": 76,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 76,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "common-word elimination",
+  "brief": "Three words coded in different code strings; identify codes of common words by comparing letters across messages.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:84",
+   "2024s1:75",
+   "2026s2:75"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a certain code language, 'ti po re' means 'read good books', 're ma sil' means 'books are great', and 'ti sil lu' means 'read great stories'. What is the code for 'good'?",
+ "options": [
+  "ti",
+  "re",
+  "po",
+  "sil"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Comparing sentences 1 & 2: common code 're' = 'books'. Sentences 1 & 3: common 'ti' = 'read'. Sentences 2 & 3: 'sil' = 'great'. In 'ti po re' = 'read good books', remaining 'po' must mean 'good'.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Comparing 'ti po re' ('read good books') and 're ma sil' ('books are great'):\n   - The word 'books' is common to both sentences.\n   - The code word 're' is common to both code strings.\n   - Therefore, 're' = 'books'.\n\n2. Comparing 'ti po re' ('read good books') and 'ti sil lu' ('read great stories'):\n   - The word 'read' is common to both sentences.\n   - The code word 'ti' is common to both code strings.\n   - Therefore, 'ti' = 'read'.\n\n3. In the first statement ('ti po re' = 'read good books'), since 'ti' = 'read' and 're' = 'books', the remaining code word 'po' must correspond to 'good'.\n\nHence, the correct code for 'good' is 'po'.\n\nIndependent check: Comparing sentences 1 & 2: common code 're' = 'books'. Sentences 1 & 3: common 'ti' = 'read'. Sentences 2 & 3: 'sil' = 'great'. In 'ti po re' = 'read good books', remaining 'po' must mean 'good'.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a certain code language, 'ti po re' means 'read good books', 're ma sil' means 'books are great', and 'ti sil lu' means 'read great stories'. What is the code for 'good'?",
+  "options": [
+   "ti",
+   "re",
+   "po",
+   "sil"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "1. Comparing 'ti po re' ('read good books') and 're ma sil' ('books are great'):\n   - The word 'books' is common to both sentences.\n   - The code word 're' is common to both code strings.\n   - Therefore, 're' = 'books'.\n\n2. Comparing 'ti po re' ('read good books') and 'ti sil lu' ('read great stories'):\n   - The word 'read' is common to both sentences.\n   - The code word 'ti' is common to both code strings.\n   - Therefore, 'ti' = 'read'.\n\n3. In the first statement ('ti po re' = 'read good books'), since 'ti' = 'read' and 're' = 'books', the remaining code word 'po' must correspond to 'good'.\n\nHence, the correct code for 'good' is 'po'.",
+  "distractor_notes": "Option A ('ti') is the code for 'read'.\nOption B ('re') is the code for 'books'.\nOption D ('sil') is the code for 'great' (common to the second and third statements).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

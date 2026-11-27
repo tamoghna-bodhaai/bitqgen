@@ -1,0 +1,68 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Aromaticity (Hückel's rule)",
+  "archetype": "fact recall",
+  "brief": "Which of the listed isomers are not resonating / which species is aromatic by Hückel's rule — e.g. rank or pick the aromatic one among cyclopentadienyl anion, cycloheptatrienyl cation, etc.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:53",
+   "2026s2:45",
+   "2023s2:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following is anti-aromatic?",
+ "options": [
+  "Cyclobutadiene",
+  "Cyclopentadienyl anion",
+  "Benzene",
+  "Naphthalene"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cyclobutadiene has 4 π electrons in a cyclic conjugated system, so it is antiaromatic (4n, n=1).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Hückel rule: aromatic if (4n+2) π electrons in planar, cyclic, fully conjugated system; anti-aromatic if 4n π electrons in such a system. Cyclobutadiene has 4 π electrons (n=1) and is a planar cyclic conjugated system, so it is anti-aromatic. Benzene (6 π e⁻), cyclopentadienyl anion (6 π e⁻), and naphthalene (10 π e⁻) are all aromatic (4n+2). Hence, option C is correct.\n\nIndependent check: Cyclobutadiene has 4 π electrons in a cyclic conjugated system, so it is antiaromatic (4n, n=1).",
+ "solution": "A planar, cyclic, fully conjugated system with $4n$ π electrons is anti-aromatic. Cyclobutadiene has $4$ π electrons ($n=1$), so it is anti-aromatic.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following is anti-aromatic?",
+  "options": [
+   "Benzene",
+   "Cyclopentadienyl anion",
+   "Cyclobutadiene",
+   "Naphthalene"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Hückel rule: aromatic if (4n+2) π electrons in planar, cyclic, fully conjugated system; anti-aromatic if 4n π electrons in such a system. Cyclobutadiene has 4 π electrons (n=1) and is a planar cyclic conjugated system, so it is anti-aromatic. Benzene (6 π e⁻), cyclopentadienyl anion (6 π e⁻), and naphthalene (10 π e⁻) are all aromatic (4n+2). Hence, option C is correct.",
+  "distractor_notes": "A: Benzene is aromatic (6π e⁻, 4n+2, n=1). B: Cyclopentadienyl anion is aromatic (6π e⁻, 4n+2, n=1). C: Cyclobutadiene is anti-aromatic (4π e⁻, 4n, planar cyclic conjugated). D: Naphthalene is aromatic (10π e⁻, 4n+2, n=2). All are plausible; common mistake is confusing anti-aromatic with non-aromatic or overlooking planarity."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

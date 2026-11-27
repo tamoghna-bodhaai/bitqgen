@@ -1,0 +1,68 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching",
+  "archetype": "proportionality-scaling",
+  "brief": "Find the percentage change in resistance of a wire when both length and radius change by given percentages, keeping volume or not constant as appropriate.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:3",
+   "2026s1:11",
+   "2024s1:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "The length and radius of a wire are each increased by $44\\%$ and $20\\%$, respectively, while its resistivity remains unchanged. What is the percentage change in its resistance?",
+ "options": [
+  "$0\\%$",
+  "$-20\\%$",
+  "$20\\%$",
+  "$44\\%$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since R = ρL/(πr²), the scale factor is 1.44/(1.20)² = 1. Resistance is unchanged.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$R\\propto\\dfrac{L}{r^2}$\\n$\\dfrac{R_2}{R_1}=\\dfrac{1.44}{(1.20)^2}=1$\\nPercentage change $=0\\%$\n\nIndependent check: Since R = ρL/(πr²), the scale factor is 1.44/(1.20)² = 1. Resistance is unchanged.",
+ "solution": "For a wire, $R=\\dfrac{\\rho L}{\\pi r^2}$, so with unchanged resistivity, $R\\propto L/r^2$.\n$$\\frac{R_2}{R_1}=\\frac{1.44}{(1.20)^2}=1$$\nHence the percentage change in resistance is $0\\%$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The length and radius of a wire are each increased by $44\\%$ and $20\\%$, respectively, while its resistivity remains unchanged. What is the percentage change in its resistance?",
+  "options": [
+   "$-20\\%$",
+   "$0\\%$",
+   "$20\\%$",
+   "$44\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$R\\propto\\dfrac{L}{r^2}$\\n$\\dfrac{R_2}{R_1}=\\dfrac{1.44}{(1.20)^2}=1$\\nPercentage change $=0\\%$",
+  "distractor_notes": "A: treats the radius increase as a direct resistance decrease. C: uses radius rather than radius squared in the scaling. D: accounts for the length change but ignores the radius change."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

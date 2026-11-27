@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Partial fractions",
+  "archetype": "cover-up method",
+  "brief": "integrate a proper rational function using partial fractions (distinct linear factors) via the cover-up technique",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:143",
+   "2023s2:92",
+   "2025s2:128"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate the integral of dx / (x^2 + x - 6).",
+ "options": [
+  "(1/5) ln |(x + 3)/(x - 2)| + C",
+  "(1/5) ln |(x - 2)/(x + 3)| + C",
+  "ln |(x - 2)/(x + 3)| + C",
+  "(1/5) ln |(x - 2)(x + 3)| + C"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor x²+x−6=(x−2)(x+3). Partial fractions give 1/(x²+x−6)=(1/5)[1/(x−2)−1/(x+3)], whose integral is (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Factor denominator: x^2 + x - 6 = (x - 2)(x + 3). Partial fractions give 1/[(x - 2)(x + 3)] = 1/[5(x - 2)] - 1/[5(x + 3)]. Integration gives (1/5) ln|x - 2| - (1/5) ln|x + 3| + C = (1/5) ln|(x - 2)/(x + 3)| + C.\n\nIndependent check: Factor x²+x−6=(x−2)(x+3). Partial fractions give 1/(x²+x−6)=(1/5)[1/(x−2)−1/(x+3)], whose integral is (A).",
+ "solution": "Factor the denominator and use partial fractions:\n$$\\frac{1}{(x-2)(x+3)}=\\frac{1}{5}\\left(\\frac{1}{x-2}-\\frac{1}{x+3}\\right).$$\nHence, the integral is $\\frac{1}{5}\\ln|x-2|-\\frac{1}{5}\\ln|x+3|+C=\\frac{1}{5}\\ln\\left|\\frac{x-2}{x+3}\\right|+C$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate the integral of dx / (x^2 + x - 6).",
+  "options": [
+   "(1/5) ln |(x - 2)/(x + 3)| + C",
+   "(1/5) ln |(x + 3)/(x - 2)| + C",
+   "ln |(x - 2)/(x + 3)| + C",
+   "(1/5) ln |(x - 2)(x + 3)| + C"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Factor denominator: x^2 + x - 6 = (x - 2)(x + 3). Partial fractions give 1/[(x - 2)(x + 3)] = 1/[5(x - 2)] - 1/[5(x + 3)]. Integration gives (1/5) ln|x - 2| - (1/5) ln|x + 3| + C = (1/5) ln|(x - 2)/(x + 3)| + C.",
+  "distractor_notes": "B: inverts the ratio inside the logarithm; C: omits the 1/5 factor; D: uses product instead of quotient inside the logarithm."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

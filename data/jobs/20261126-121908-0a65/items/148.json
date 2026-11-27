@@ -1,0 +1,68 @@
+{
+ "qno": 148,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 148,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Maxima",
+  "archetype": "first derivative test",
+  "brief": "Find the local maxima/minima of a function by critical-point analysis with a sign chart of f'(x).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:104",
+   "2024s1:130",
+   "2026s1:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "A differentiable function $f$ satisfies $f'(x)=\\dfrac{(x-1)^2(x+2)(x-3)}{x^2+1}$. The ordered pair $(x_{\\max},x_{\\min})$ is",
+ "options": [
+  "$(-2,3)$",
+  "$(1,3)$",
+  "$(-2,1)$",
+  "$(3,-2)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since x²+1>0, f′ is positive for x<−2, negative on (−2,1) and (1,3), and positive for x>3. Thus x=−2 is a local maximum, x=1 is not an extremum, and x=3 is a local minimum.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2+1>0$ and $(x-1)^2\\ge 0$, so the sign of $f'(x)$ is that of $(x+2)(x-3)$.\n$f'(x)>0$ on $(-\\infty,-2)$ and $(3,\\infty)$; $f'(x)<0$ on $(-2,1)$ and $(1,3)$.\nAt $x=-2$, $f'$ changes $+\\to-$: local maximum.\nAt $x=1$, $f'$ does not change sign: no extremum.\nAt $x=3$, $f'$ changes $-\\to+$: local minimum.\n\nIndependent check: Since x²+1>0, f′ is positive for x<−2, negative on (−2,1) and (1,3), and positive for x>3. Thus x=−2 is a local maximum, x=1 is not an extremum, and x=3 is a local minimum.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A differentiable function $f$ satisfies $f'(x)=\\dfrac{(x-1)^2(x+2)(x-3)}{x^2+1}$. The ordered pair $(x_{\\max},x_{\\min})$ is",
+  "options": [
+   "$(-2,3)$",
+   "$(1,3)$",
+   "$(-2,1)$",
+   "$(3,-2)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$x^2+1>0$ and $(x-1)^2\\ge 0$, so the sign of $f'(x)$ is that of $(x+2)(x-3)$.\n$f'(x)>0$ on $(-\\infty,-2)$ and $(3,\\infty)$; $f'(x)<0$ on $(-2,1)$ and $(1,3)$.\nAt $x=-2$, $f'$ changes $+\\to-$: local maximum.\nAt $x=1$, $f'$ does not change sign: no extremum.\nAt $x=3$, $f'$ changes $-\\to+$: local minimum.",
+  "distractor_notes": "B: treats the stationary point at $x=1$ as a local maximum.\nC: treats the stationary point at $x=1$ as a local minimum.\nD: reverses the maximum and minimum."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

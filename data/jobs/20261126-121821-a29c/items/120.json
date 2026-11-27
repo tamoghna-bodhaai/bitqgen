@@ -1,0 +1,68 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Point of inflexion",
+  "archetype": "second derivative sign change",
+  "brief": "For a cubic, find the point of inflexion by setting f″(x) = 0 and verifying the sign change of f″.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:125",
+   "2026s2:129",
+   "2024s1:130"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $f(x)=2x^3-3x^2-12x+5$, the point of inflexion, where $f''$ changes sign, is",
+ "options": [
+  "$\\left(\\dfrac12,-\\dfrac32\\right)$",
+  "$\\left(\\dfrac12,\\dfrac32\\right)$",
+  "$\\left(-\\dfrac12,10\\right)$",
+  "$(-1,12)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "f''(x)=12x-6, which changes sign at x=1/2. Then f(1/2)=-3/2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f''(x)=12x-6=0\\Rightarrow x=\\dfrac12$; $f''$ changes from negative to positive there.\n$f\\left(\\dfrac12\\right)=-\\dfrac32$.\n\nIndependent check: f''(x)=12x-6, which changes sign at x=1/2. Then f(1/2)=-3/2.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $f(x)=2x^3-3x^2-12x+5$, the point of inflexion, where $f''$ changes sign, is",
+  "options": [
+   "$\\left(\\dfrac12,-\\dfrac32\\right)$",
+   "$\\left(\\dfrac12,\\dfrac32\\right)$",
+   "$\\left(-\\dfrac12,10\\right)$",
+   "$(-1,12)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$f''(x)=12x-6=0\\Rightarrow x=\\dfrac12$; $f''$ changes from negative to positive there.\n$f\\left(\\dfrac12\\right)=-\\dfrac32$.",
+  "distractor_notes": "B: sign error when evaluating $f(\\frac12)$. C: sign error solving $f''(x)=0$. D: uses a stationary point instead of an inflexion point."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

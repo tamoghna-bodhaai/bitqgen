@@ -1,0 +1,68 @@
+{
+ "qno": 139,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 139,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Symmetric functions of roots",
+  "archetype": "symmetric functions",
+  "brief": "Form a quadratic equation whose roots are a symmetric function (e.g. α²+β² or 1/α + 1/β) of a given equation's roots.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:110",
+   "2025s2:91",
+   "2025s1:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-5x+3=0$, the quadratic equation whose roots are $\\alpha^2$ and $\\beta^2$ is",
+ "options": [
+  "$x^2-19x+9=0$",
+  "$x^2-10x+9=0$",
+  "$x^2-19x+3=0$",
+  "$x^2-7x+9=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using Vieta’s formulas, α+β=5 and αβ=3. Thus α²+β²=(α+β)²−2αβ=19 and α²β²=9, giving x²−19x+9=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\alpha+\\beta=5$, $\\alpha\\beta=3$; $\\alpha^2+\\beta^2=25-6=19$, $\\alpha^2\\beta^2=9$. Equation: $x^2-19x+9=0$.\n\nIndependent check: Using Vieta’s formulas, α+β=5 and αβ=3. Thus α²+β²=(α+β)²−2αβ=19 and α²β²=9, giving x²−19x+9=0.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-5x+3=0$, the quadratic equation whose roots are $\\alpha^2$ and $\\beta^2$ is",
+  "options": [
+   "$x^2-19x+9=0$",
+   "$x^2-10x+9=0$",
+   "$x^2-19x+3=0$",
+   "$x^2-7x+9=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\alpha+\\beta=5$, $\\alpha\\beta=3$; $\\alpha^2+\\beta^2=25-6=19$, $\\alpha^2\\beta^2=9$. Equation: $x^2-19x+9=0$.",
+  "distractor_notes": "B: uses $(\\alpha+\\beta)^2$ instead of $\\alpha^2+\\beta^2$. C: leaves the product of the roots unchanged. D: incorrectly uses $\\alpha^2+\\beta^2=7$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

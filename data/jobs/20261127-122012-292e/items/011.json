@@ -1,0 +1,68 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read-off parameters",
+  "brief": "Given the equation of a progressive wave y = A sin(kx − ωt), ask the student to read off amplitude, frequency, wavelength and wave speed.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:4",
+   "2026s1:14",
+   "2023s2:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "The equation of a progressive wave is y = 0.05 sin(4 pi t - 2 pi x), where x and y are in metres and t is in seconds. Which option gives the amplitude, frequency, wavelength and wave speed of the wave?",
+ "options": [
+  "0.05 m, 1 Hz, 2 m, 2 m/s",
+  "0.05 m, 2 Hz, 1 m, 2 m/s",
+  "0.10 m, 2 Hz, 1 m, 4 m/s",
+  "0.05 m, 2 Hz, 2 m, 4 m/s"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Compare with y=A sin(ωt−kx): A=0.05 m, f=ω/(2π)=2 Hz, λ=2π/k=1 m, and v=fλ=2 m/s.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Compare y = A sin(omega t - kx). A = 0.05 m, omega = 4 pi rad/s, so f = omega/(2 pi) = 2 Hz. k = 2 pi m^-1, so lambda = 2 pi/k = 1 m. v = omega/k = 4 pi/(2 pi) = 2 m/s.\n\nIndependent check: Compare with y=A sin(ωt−kx): A=0.05 m, f=ω/(2π)=2 Hz, λ=2π/k=1 m, and v=fλ=2 m/s.",
+ "solution": "Comparing with $y=A\\sin(\\omega t-kx)$, we get $A=0.05\\,\\text{m}$, $\\omega=4\\pi\\,\\text{rad s}^{-1}$ and $k=2\\pi\\,\\text{m}^{-1}$.\\n$$f=\\frac{\\omega}{2\\pi}=2\\,\\text{Hz},\\qquad \\lambda=\\frac{2\\pi}{k}=1\\,\\text{m},\\qquad v=f\\lambda=2\\,\\text{m s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The equation of a progressive wave is y = 0.05 sin(4 pi t - 2 pi x), where x and y are in metres and t is in seconds. Which option gives the amplitude, frequency, wavelength and wave speed of the wave?",
+  "options": [
+   "0.05 m, 2 Hz, 1 m, 2 m/s",
+   "0.05 m, 1 Hz, 2 m, 2 m/s",
+   "0.10 m, 2 Hz, 1 m, 4 m/s",
+   "0.05 m, 2 Hz, 2 m, 4 m/s"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Compare y = A sin(omega t - kx). A = 0.05 m, omega = 4 pi rad/s, so f = omega/(2 pi) = 2 Hz. k = 2 pi m^-1, so lambda = 2 pi/k = 1 m. v = omega/k = 4 pi/(2 pi) = 2 m/s.",
+  "distractor_notes": "B: swaps frequency and wavelength; C: doubles amplitude and speed; D: uses k as wavelength and v = f lambda with incorrect values."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

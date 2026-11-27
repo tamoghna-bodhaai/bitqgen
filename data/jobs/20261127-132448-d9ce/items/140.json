@@ -1,0 +1,68 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Composite evaluation",
+  "archetype": "triangle method",
+  "brief": "Composite evaluation: sin⁻¹/cos⁻¹ of a value leading to a triangle-based simplification, e.g. tan(sin⁻¹(x)) style; give answer in exact form.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:120",
+   "2025s1:106",
+   "2026s1:115"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\tan\\left(\\sin^{-1}\\dfrac35+\\cos^{-1}\\dfrac5{13}\\right)$.",
+ "options": [
+  "$-\\dfrac{16}{63}$",
+  "$-\\dfrac{63}{16}$",
+  "$\\dfrac{63}{16}$",
+  "$-\\dfrac{63}{4}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let A=sin⁻¹(3/5), B=cos⁻¹(5/13). Then tan A=3/4 and tan B=12/5. Thus tan(A+B)=(3/4+12/5)/(1−(3/4)(12/5))=−63/16.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $\\alpha=\\sin^{-1}\\dfrac35$, $\\beta=\\cos^{-1}\\dfrac5{13}$. Then $\\tan\\alpha=\\dfrac34$, $\\tan\\beta=\\dfrac{12}{5}$.\\n$\\tan(\\alpha+\\beta)=\\dfrac{\\frac34+\\frac{12}{5}}{1-\\frac34\\cdot\\frac{12}{5}}=-\\dfrac{63}{16}$.\n\nIndependent check: Let A=sin⁻¹(3/5), B=cos⁻¹(5/13). Then tan A=3/4 and tan B=12/5. Thus tan(A+B)=(3/4+12/5)/(1−(3/4)(12/5))=−63/16.",
+ "solution": "Let $\\alpha=\\sin^{-1}\\frac35$ and $\\beta=\\cos^{-1}\\frac5{13}$. Then $\\tan\\alpha=\\frac34$ and $\\tan\\beta=\\frac{12}{5}$.\n$$\\tan(\\alpha+\\beta)=\\frac{\\frac34+\\frac{12}{5}}{1-\\frac34\\cdot\\frac{12}{5}}=-\\frac{63}{16}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\tan\\left(\\sin^{-1}\\dfrac35+\\cos^{-1}\\dfrac5{13}\\right)$.",
+  "options": [
+   "$-\\dfrac{63}{16}$",
+   "$-\\dfrac{16}{63}$",
+   "$\\dfrac{63}{16}$",
+   "$-\\dfrac{63}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $\\alpha=\\sin^{-1}\\dfrac35$, $\\beta=\\cos^{-1}\\dfrac5{13}$. Then $\\tan\\alpha=\\dfrac34$, $\\tan\\beta=\\dfrac{12}{5}$.\\n$\\tan(\\alpha+\\beta)=\\dfrac{\\frac34+\\frac{12}{5}}{1-\\frac34\\cdot\\frac{12}{5}}=-\\dfrac{63}{16}$.",
+  "distractor_notes": "B: Takes the reciprocal of the result.\nC: Misses the negative sign from the tangent-addition denominator.\nD: Makes an arithmetic error in the denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

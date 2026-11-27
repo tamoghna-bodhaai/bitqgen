@@ -1,0 +1,68 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Forming numbers with restrictions",
+  "archetype": "case-wise counting",
+  "brief": "Form 4-digit numbers from given digits with a divisibility or ordering restriction; case-wise counting with small digit set.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:104",
+   "2025s1:120",
+   "2025s1:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many four-digit numbers divisible by $5$ can be formed from the digits $\\{0,1,2,3,4,5\\}$ without repetition?",
+ "options": [
+  "$96$",
+  "$120$",
+  "$108$",
+  "$144$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Last digit 0: 5 choices for the first digit and 4×3 for the middle digits, giving 60. Last digit 5: 4 choices for the first digit and 4×3 for the middle digits, giving 48. Total = 108.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Last digit $0$: $5\\cdot{}^4P_2=60$.\nLast digit $5$: $4\\cdot{}^4P_2=48$.\nTotal $=60+48=108$.\n\nIndependent check: Last digit 0: 5 choices for the first digit and 4×3 for the middle digits, giving 60. Last digit 5: 4 choices for the first digit and 4×3 for the middle digits, giving 48. Total = 108.",
+ "solution": "A number divisible by $5$ must end in $0$ or $5$.  \nLast digit $0$: $5\\cdot{}^4P_2=60$; last digit $5$: $4\\cdot{}^4P_2=48$.  \n$$60+48=108$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many four-digit numbers divisible by $5$ can be formed from the digits $\\{0,1,2,3,4,5\\}$ without repetition?",
+  "options": [
+   "$96$",
+   "$108$",
+   "$120$",
+   "$144$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Last digit $0$: $5\\cdot{}^4P_2=60$.\nLast digit $5$: $4\\cdot{}^4P_2=48$.\nTotal $=60+48=108$.",
+  "distractor_notes": "A: Omits one valid leading-digit choice when the last digit is $5$.\\nC: Overcounts arrangements by allowing an invalid leading zero.\\nD: Overcounts choices for the first digit in both cases."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

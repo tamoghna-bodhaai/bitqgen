@@ -1,0 +1,94 @@
+{
+ "qno": 105,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 105,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism",
+  "brief": "two statements followed by conclusions; pick the conclusion that definitely follows (no possibility-type conclusions)",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:83",
+   "2026s1:82",
+   "2024s1:78"
+  ]
+ },
+ "status": "ok",
+ "stem": "Read the given statements and conclusions carefully. Assuming the information given in the statements to be true, even if it appears at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.\n\n**Statements:**\n1. All sparrows are birds.\n2. Some birds are migratory.\n\n**Conclusions:**\nI. Some sparrows are migratory.\nII. Some birds are sparrows.\n\n(A) Only conclusion I follows.\n(B) Only conclusion II follows.\n(C) Both conclusions I and II follow.\n(D) Neither conclusion I nor II follows.",
+ "options": [
+  "Only conclusion I follows.",
+  "Only conclusion II follows.",
+  "Both conclusions I and II follow.",
+  "Neither conclusion I nor II follows."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": [
+  "figs/q105_optA_v2.png",
+  "figs/q105_optB_v2.png",
+  "figs/q105_optC_v2.png",
+  "figs/q105_optD_v2.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The migratory birds need not be sparrows, so I does not follow. “All sparrows are birds” does not establish that any sparrows exist, so II does not follow either.",
+   "answer": "D",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [
+    "The option images depict chemical structures rather than the stated conclusions/options. The verbal options are duplicated."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "anthropic/claude-sonnet-5.5",
+   "working": "Statement 1: All sparrows are birds. Statement 2: Some birds are migratory. Conclusion I (Some sparrows are migratory) does not follow, because the migratory birds may not include any sparrows. Conclusion II (Some birds are sparrows) follows by conversion of 'All S are B', which gives 'Some B are S'. This assumes sparrows exist, and that is the standard assumption. So only II follows, which is option B. The attached images (CH4, a line, propane, butane) are unrelated to the question and look like leftover artifacts. The options are also listed twice.",
+   "answer": "B",
+   "confidence": 0.93,
+   "multiple_correct": false,
+   "issues": [
+    "The options are duplicated in the question text.",
+    "Four unrelated chemical structure images (CH4, a line, propane, butane) are attached as Options (A)-(D). They have nothing to do with the logic question and appear to be stray artifacts.",
+    "Conclusion II depends on the usual assumption that the class 'sparrows' is non-empty."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Statement 1 is universal affirmative: All sparrows are birds. Its converse by limitation gives 'Some birds are sparrows', so conclusion II follows. The migratory birds in statement 2 may lie entirely outside the sparrow set, so conclusion I is not definite. Hence only II follows.\n\nIndependent check: Statement 1: All sparrows are birds. Statement 2: Some birds are migratory. Conclusion I (Some sparrows are migratory) does not follow, because the migratory birds may not include any sparrows. Conclusion II (Some birds are sparrows) follows by conversion of 'All S are B', which gives 'Some B are S'. This assumes sparrows exist, and that is the standard assumption. So only II follows, which is option B. The attached images (CH4, a line, propane, butane) are unrelated to the question and look like leftover artifacts. The options are also listed twice.",
+ "solution": "From “All sparrows are birds,” conversion by limitation gives “Some birds are sparrows”; hence conclusion II follows. The migratory birds may lie outside the sparrow group, so conclusion I does not follow. Thus, only conclusion II follows.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Read the given statements and conclusions carefully. Assuming the information given in the statements to be true, even if it appears at variance with commonly known facts, decide which of the given conclusions logically follow(s) from the statements.\n\n**Statements:**\n1. All sparrows are birds.\n2. Some birds are migratory.\n\n**Conclusions:**\nI. Some sparrows are migratory.\nII. Some birds are sparrows.\n\n(A) Only conclusion I follows.\n(B) Only conclusion II follows.\n(C) Both conclusions I and II follow.\n(D) Neither conclusion I nor II follows.",
+  "options": [
+   "Only conclusion I follows.",
+   "Only conclusion II follows.",
+   "Both conclusions I and II follow.",
+   "Neither conclusion I nor II follows."
+  ],
+  "option_smiles": [
+   "C",
+   "CC",
+   "CCC",
+   "CCCC"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Statement 1 is universal affirmative: All sparrows are birds. Its converse by limitation gives 'Some birds are sparrows', so conclusion II follows. The migratory birds in statement 2 may lie entirely outside the sparrow set, so conclusion I is not definite. Hence only II follows.",
+  "distractor_notes": "I is possible but not definite; 'Both' fails because I fails; 'Neither' fails because II follows."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

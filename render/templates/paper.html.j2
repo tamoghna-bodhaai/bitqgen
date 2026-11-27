@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ paper.title }}</title>
+<link rel="stylesheet" href="{{ static }}/katex/katex.min.css">
+<script defer src="{{ static }}/katex/katex.min.js"></script>
+<script defer src="{{ static }}/katex/auto-render.min.js"></script>
+<style>
+  @page { size: A4; margin: 14mm 11mm 16mm 11mm; }
+  :root { --rule: #222; --accent: #1a1a1a; --muted: #555; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #fff; color: #111; }
+  body { font-family: "Times New Roman", "Liberation Serif", "Nimbus Roman", Times, serif;
+         font-size: 10.6pt; line-height: 1.38; }
+  .sheet { max-width: 190mm; margin: 0 auto; }
+  header.title { text-align: center; border-bottom: 1.2px solid var(--rule);
+                 padding: 2mm 0 2.4mm; margin-bottom: 3mm; }
+  header.title h1 { font-size: 14.5pt; margin: 0; font-weight: 700; letter-spacing: .2px; }
+  header.title .sub { font-size: 9.5pt; color: var(--muted); margin-top: 1mm; }
+  .instructions { font-size: 9.2pt; border: 1px solid #999; padding: 2mm 3mm; margin-bottom: 3mm; }
+  .instructions ol { margin: 1mm 0 0 4mm; padding: 0; }
+  .cols { column-count: 2; column-gap: 7mm; column-rule: 0.8px solid #444; }
+  .q { break-inside: avoid; display: grid; grid-template-columns: 7.5mm minmax(0, 1fr);
+       margin: 0 0 3.6mm; }
+  .q.long { break-inside: auto; }
+  .qno { font-weight: 700; }
+  .stem p { margin: 0 0 1mm; text-align: justify; hyphens: auto; }
+  .src { white-space: nowrap; }
+  table.qt { border-collapse: collapse; margin: 1mm 0 1.4mm; font-size: .95em; width: 100%; }
+  table.qt td, table.qt th { border: 1px solid #555; padding: .5mm 1.2mm; text-align: left; vertical-align: top; }
+  table.qt th { font-weight: 700; }
+  .fig { text-align: center; margin: 1.5mm 0; }
+  .fig img { max-width: 100%; }
+  .opts { display: grid; gap: .8mm 3mm; margin-top: 1.2mm; }
+  .opts.c4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .opts.c2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .opts.c1 { grid-template-columns: 1fr; }
+  .opt { display: flex; gap: 1.4mm; align-items: baseline; }
+  .opt p { margin: 0; }
+  .opt.figopt { align-items: flex-start; }
+  .opt .fig { margin: 0; flex: 1; text-align: left; }
+  .opt .figtxt { flex: 1; min-width: 0; }
+  .opt .figtxt p { font-size: .92em; margin-top: .4mm; }
+  .opt img { break-inside: avoid; }
+  .ans { margin-top: 1.6mm; }
+  .ans b { font-weight: 700; }
+  .sol { margin-top: .8mm; }
+  .sol p { margin: 0 0 .9mm; }
+  .katex { font-size: 1.04em; }
+  .katex-display { margin: .6em 0; overflow-x: auto; overflow-y: hidden; max-width: 100%; }
+  .body { min-width: 0; overflow-wrap: break-word; }
+  .opt > span { white-space: nowrap; flex-shrink: 0; }
+  .opt .katex, .nobr { white-space: nowrap; }
+  .section-break { column-span: all; break-before: page; height: 0; }
+  h2.key { font-size: 12pt; text-align: center; margin: 2mm 0 2mm; column-span: all; }
+  table.key { width: 100%; border-collapse: collapse; font-size: 9.5pt; margin-bottom: 4mm; }
+  table.key td { border: 1px solid #888; padding: .8mm 1.2mm; text-align: center; }
+  table.key td.n { font-weight: 700; background: #f2f2f2; }
+  @media screen { body { background: #eceae4; padding: 8mm 0; }
+                  .sheet { background: #fff; padding: 12mm 11mm; box-shadow: 0 1px 6px rgba(0,0,0,.15); } }
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header class="title">
+    <h1>{{ paper.title }}</h1>
+    {% if paper.subtitle %}<div class="sub">{{ paper.subtitle }}</div>{% endif %}
+  </header>
+
+  {% if show_instructions and pattern %}
+  <div class="instructions">
+    <b>Instructions:</b> Duration {{ pattern.duration_min }} minutes &middot; {{ questions|length }} questions &middot;
+    +{{ pattern.marks_correct }} for each correct answer, {{ pattern.marks_wrong }} for each wrong answer.
+    <ol>
+      {% for name, a, b in sections %}<li>{{ name }}: Q{{ a }}&ndash;{{ b }}</li>{% endfor %}
+    </ol>
+  </div>
+  {% endif %}
+
+  {% if mode != 'key' %}
+  <main class="cols">
+  {% for q in questions %}
+    <div class="q{% if q._long %} long{% endif %}" id="q{{ q.qno }}">
+      <div class="qno">{{ q.qno }}.</div>
+      <div class="body">
+        <div class="stem">{{ q._stem | safe }}</div>
+        {% if q.figure %}<div class="fig"><img src="{{ q.figure.path }}" style="width:{{ q.figure.width_pct }}%" alt=""></div>{% endif %}
+        <div class="opts c{{ q._cols }}">
+          {% for o in q._opts %}
+          <div class="opt{% if o.figure %} figopt{% endif %}"><span>({{ o.letter }})</span>
+            {% if o.figure and o.html %}<div class="figtxt"><div class="fig"><img src="{{ o.figure.path }}" style="width:{{ o.fig_w }}%" alt=""></div>{{ o.html | safe }}</div>
+            {% else %}{% if o.figure %}<div class="fig"><img src="{{ o.figure.path }}" style="width:{{ o.fig_w }}%" alt=""></div>{% endif %}
+            {% if o.html %}{{ o.html | safe }}{% endif %}{% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        {% if mode == 'solutions' %}
+          <div class="ans"><b>Correct Option:</b> {{ q.answer }}</div>
+          <div class="sol"><b>Solution:</b> {{ q._sol | safe }}
+            {% if q.solution_figure %}<div class="fig"><img src="{{ q.solution_figure.path }}" style="width:{{ q.solution_figure.width_pct }}%" alt=""></div>{% endif %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  {% endfor %}
+  </main>
+  {% endif %}
+
+  {% if mode == 'key' or show_key %}
+  {% if mode != 'key' %}<div style="break-before: page"></div>{% endif %}
+  <h2 class="key">Answer Key</h2>
+  <table class="key">
+    {% for row in key_rows %}
+    <tr>{% for q in row %}<td class="n">{{ q.qno }}</td><td>{{ q.answer }}</td>{% endfor %}</tr>
+    {% endfor %}
+  </table>
+  {% endif %}
+</div>
+<script>
+  window.__mathDone = false;
+  document.addEventListener("DOMContentLoaded", function () {
+    renderMathInElement(document.body, {
+      delimiters: [{left: "$$", right: "$$", display: true}, {left: "$", right: "$", display: false}],
+      throwOnError: false
+    });
+    // shrink display equations wider than their column instead of clipping them
+    document.querySelectorAll(".katex-display").forEach(function (d) {
+      var k = d.firstElementChild, w = d.clientWidth;
+      if (k && w && k.scrollWidth > w) d.style.fontSize = Math.max(0.6, w / k.scrollWidth * 0.98) + "em";
+    });
+    // option grids: drop to fewer columns when any option is wider than its cell
+    document.querySelectorAll(".opts").forEach(function (g) {
+      var order = ["c4", "c2", "c1"];
+      for (var i = order.indexOf(g.classList[1]); i >= 0 && i < 2; i++) {
+        var over = Array.from(g.children).some(function (o) {
+          var r = o.getBoundingClientRect().right + 1;
+          return Array.from(o.querySelectorAll(".katex, p, img")).some(function (e) {
+            return e.getBoundingClientRect().right > r;
+          });
+        });
+        if (!over) break;
+        g.classList.replace(order[i], order[i + 1]);
+      }
+    });
+    var imgs = Array.from(document.images);
+    Promise.all(imgs.map(function (i) { return i.complete ? 1 : new Promise(function (r) { i.onload = i.onerror = r; }); }))
+      .then(function () { window.__mathDone = true; });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Excess pressure in soap bubble",
+  "archetype": "ratio computation",
+  "brief": "Excess pressure in soap bubbles: two soap bubbles of different radii in contact or compared; use 4T/r (or 2T/r distinction between a bubble and a drop) to find a ratio of excess pressures.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:2",
+   "2023s2:30",
+   "2023s1:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two soap bubbles have radii $2$ mm and $3$ mm. What is the ratio of the excess pressure in the smaller bubble to that in the larger bubble?",
+ "options": [
+  "$\\dfrac{2}{3}$",
+  "$1$",
+  "$\\dfrac{3}{2}$",
+  "$\\dfrac{4}{3}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a soap bubble, excess pressure is $4T/r$. Thus the ratio is $(4T/2)/(4T/3)=3/2$.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a soap bubble, $\\Delta P=\\dfrac{4T}{r}$.\n$\\dfrac{\\Delta P_{2\\,\\text{mm}}}{\\Delta P_{3\\,\\text{mm}}}=\\dfrac{3}{2}$\n\nIndependent check: For a soap bubble, excess pressure is $4T/r$. Thus the ratio is $(4T/2)/(4T/3)=3/2$.",
+ "solution": "For a soap bubble, the excess pressure is $\\Delta P=\\dfrac{4T}{r}$. Hence,\n$$\\frac{\\Delta P_{2\\,\\text{mm}}}{\\Delta P_{3\\,\\text{mm}}}=\\frac{4T/2}{4T/3}=\\boxed{\\dfrac{3}{2}}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Two soap bubbles have radii $2$ mm and $3$ mm. What is the ratio of the excess pressure in the smaller bubble to that in the larger bubble?",
+  "options": [
+   "$\\dfrac{2}{3}$",
+   "$1$",
+   "$\\dfrac{4}{3}$",
+   "$\\dfrac{3}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For a soap bubble, $\\Delta P=\\dfrac{4T}{r}$.\n$\\dfrac{\\Delta P_{2\\,\\text{mm}}}{\\Delta P_{3\\,\\text{mm}}}=\\dfrac{3}{2}$",
+  "distractor_notes": "A: takes the reciprocal ratio. B: assumes equal radii give equal excess pressures. C: incorrectly applies the liquid-drop factor rather than the soap-bubble relation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

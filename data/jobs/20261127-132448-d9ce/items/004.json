@@ -1,0 +1,68 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Motion under gravity",
+  "archetype": "two-equation kinematics",
+  "brief": "A body starts from rest with constant acceleration; use v-u relation plus displacement relation to find distance in a particular second or velocity at a marked point.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:26",
+   "2023s2:5",
+   "2026s1:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "A body starts from rest and moves with constant acceleration $2$ m s$^{-2}$. What distance does it travel during the fourth second?",
+ "options": [
+  "$7$ m",
+  "$6$ m",
+  "$4$ m",
+  "$8$ m"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Distance in the fourth second: s_4-s_3 = \\frac{a}{2}(2\\cdot4-1)=7\\text{ m}.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$s(t)=\\dfrac{1}{2}at^2=t^2$.\\nDistance during the fourth second: $s(4)-s(3)=16-9=7$ m.\n\nIndependent check: Distance in the fourth second: s_4-s_3 = \\frac{a}{2}(2\\cdot4-1)=7\\text{ m}.",
+ "solution": "For motion from rest with constant acceleration, $s(t)=\\frac{1}{2}at^2$. Thus, the distance during the fourth second is\n$$s(4)-s(3)=\\frac{1}{2}(2)(4^2-3^2)=7\\text{ m}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A body starts from rest and moves with constant acceleration $2$ m s$^{-2}$. What distance does it travel during the fourth second?",
+  "options": [
+   "$4$ m",
+   "$6$ m",
+   "$7$ m",
+   "$8$ m"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$s(t)=\\dfrac{1}{2}at^2=t^2$.\\nDistance during the fourth second: $s(4)-s(3)=16-9=7$ m.",
+  "distractor_notes": "A: Uses half the acceleration times the second number. B: Uses $a(n-1)$ for the distance in the $n$th second. D: Uses $an$ for the distance in the $n$th second."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

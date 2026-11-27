@@ -1,0 +1,68 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power formula",
+  "brief": "For a matrix of the form I + A with A² = A (or nilpotent A), derive a closed form for (I + A)^n and evaluate a specific power using the pattern.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:105",
+   "2026s2:123",
+   "2026s2:122"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A=\\begin{bmatrix}1&2\\\\0&0\\end{bmatrix}$. Then $(I+A)^5$ is",
+ "options": [
+  "$\\begin{bmatrix}32&62\\\\0&1\\end{bmatrix}$",
+  "$\\begin{bmatrix}6&10\\\\0&1\\end{bmatrix}$",
+  "$\\begin{bmatrix}33&64\\\\0&1\\end{bmatrix}$",
+  "$\\begin{bmatrix}32&31\\\\0&1\\end{bmatrix}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I+A=\\begin{bmatrix}2&2\\\\0&1\\end{bmatrix}. Its fifth power has diagonal entries 2^5 and 1, and upper-right entry 2(1+2+4+8+16)=62.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A^2=A\\Rightarrow (I+A)^n=I+\\displaystyle\\sum_{k=1}^{n}\\binom nk A=I+(2^n-1)A$.\nFor $n=5$: $(I+A)^5=I+31A=\\begin{bmatrix}32&62\\\\0&1\\end{bmatrix}$.\n\nIndependent check: I+A=\\begin{bmatrix}2&2\\\\0&1\\end{bmatrix}. Its fifth power has diagonal entries 2^5 and 1, and upper-right entry 2(1+2+4+8+16)=62.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A=\\begin{bmatrix}1&2\\\\0&0\\end{bmatrix}$. Then $(I+A)^5$ is",
+  "options": [
+   "$\\begin{bmatrix}32&62\\\\0&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}6&10\\\\0&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}33&64\\\\0&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}32&31\\\\0&1\\end{bmatrix}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$A^2=A\\Rightarrow (I+A)^n=I+\\displaystyle\\sum_{k=1}^{n}\\binom nk A=I+(2^n-1)A$.\nFor $n=5$: $(I+A)^5=I+31A=\\begin{bmatrix}32&62\\\\0&1\\end{bmatrix}$.",
+  "distractor_notes": "B: uses $I+nA$ instead of the binomial coefficient sum. C: uses $2^nA$ rather than $(2^n-1)A$. D: omits the factor $2$ in the off-diagonal entry of $A$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,76 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Forward-biased diode in circuit",
+  "archetype": "circuit current split",
+  "brief": "Forward-biased diode in a DC circuit: silicon diode in series/parallel with resistors (circuit diagram given); use the 0.7 V drop to find branch currents and voltage across a resistor.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:25",
+   "2023s1:12",
+   "2022:7"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the circuit shown, the silicon diode is forward biased and has a voltage drop of $0.7$ V. Find the currents in the resistor-only branch and the diode branch, respectively, and the voltage across the resistor in the diode branch.",
+ "options": [
+  "$5.0$ mA, $5.0$ mA, $5.0$ V",
+  "$4.3$ mA, $5.0$ mA, $5.0$ V",
+  "$5.0$ mA, $4.3$ mA, $4.3$ V",
+  "$5.0$ mA, $4.3$ mA, $5.0$ V"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q010_stem_v0.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The resistor-only branch has 5 V across 1.0 kΩ, so its current is 5.0 mA. In the diode branch, the resistor has 5.0 − 0.7 = 4.3 V across it, giving 4.3 mA.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I_1=\\dfrac{5.0}{1.0\\times10^3}=5.0$ mA\n$V_R=5.0-0.7=4.3$ V\n$I_2=\\dfrac{4.3}{1.0\\times10^3}=4.3$ mA\n\nIndependent check: The resistor-only branch has 5 V across 1.0 kΩ, so its current is 5.0 mA. In the diode branch, the resistor has 5.0 − 0.7 = 4.3 V across it, giving 4.3 mA.",
+ "solution": "The resistor-only branch has $5.0\\,\\text{V}$ across its $1.0\\,\\text{k}\\Omega$ resistor, so $I_1=5.0/1000=5.0\\,\\text{mA}$. In the diode branch, $V_R=5.0-0.7=4.3\\,\\text{V}$, giving $I_2=4.3/1000=4.3\\,\\text{mA}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown, the silicon diode is forward biased and has a voltage drop of $0.7$ V. Find the currents in the resistor-only branch and the diode branch, respectively, and the voltage across the resistor in the diode branch.",
+  "options": [
+   "$5.0$ mA, $5.0$ mA, $5.0$ V",
+   "$5.0$ mA, $4.3$ mA, $4.3$ V",
+   "$4.3$ mA, $5.0$ mA, $5.0$ V",
+   "$5.0$ mA, $4.3$ mA, $5.0$ V"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw two horizontal rails connected across an ideal 5.0 V DC source at the left, with the upper rail connected to the positive terminal and the lower rail to the negative terminal. Connect two vertical branches between the rails: the left branch contains a single 1.0 kΩ resistor; the right branch contains, from top to bottom, a silicon diode and a 1.0 kΩ resistor in series. Orient the diode with its anode toward the upper rail and its cathode bar toward the lower rail. Label both resistor values and the source voltage.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$I_1=\\dfrac{5.0}{1.0\\times10^3}=5.0$ mA\n$V_R=5.0-0.7=4.3$ V\n$I_2=\\dfrac{4.3}{1.0\\times10^3}=4.3$ mA",
+  "distractor_notes": "A: ignores the diode drop and treats both branches as having the full supply voltage. C: interchanges the two branch currents. D: uses the supply voltage instead of subtracting the diode drop for the series resistor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

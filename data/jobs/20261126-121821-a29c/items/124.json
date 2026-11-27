@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Bayes' theorem",
+  "archetype": "statement evaluation",
+  "brief": "Two-factory / urn partition problem: given total probabilities of a defect, use Bayes' theorem to find the posterior probability of the source; ask for the exact posterior value at level 4 difficulty.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:125",
+   "2025s1:92",
+   "2025s1:91"
+  ]
+ },
+ "status": "ok",
+ "stem": "Factories $A$ and $B$ produce all items. If $P(D\\mid A)=\\dfrac16$, $P(D\\mid B)=\\dfrac14$ and the total probability of a defect $D$ is $\\dfrac15$, find $P(B\\mid D)$.",
+ "options": [
+  "$\\dfrac14$",
+  "$\\dfrac25$",
+  "$\\dfrac12$",
+  "$\\dfrac35$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let $p=P(B)$. Then $\\frac15=\\frac{1-p}{6}+\\frac p4$, giving $p=\\frac25$. Thus $P(B\\mid D)=\\frac{(1/4)(2/5)}{1/5}=\\frac12$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $p=P(A)$. Then $\\dfrac{p}{6}+\\dfrac{1-p}{4}=\\dfrac15\\Rightarrow p=\\dfrac35$.\n$P(B\\mid D)=\\dfrac{(\\frac25)(\\frac14)}{\\frac15}=\\dfrac12$.\n\nIndependent check: Let $p=P(B)$. Then $\\frac15=\\frac{1-p}{6}+\\frac p4$, giving $p=\\frac25$. Thus $P(B\\mid D)=\\frac{(1/4)(2/5)}{1/5}=\\frac12$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Factories $A$ and $B$ produce all items. If $P(D\\mid A)=\\dfrac16$, $P(D\\mid B)=\\dfrac14$ and the total probability of a defect $D$ is $\\dfrac15$, find $P(B\\mid D)$.",
+  "options": [
+   "$\\dfrac14$",
+   "$\\dfrac25$",
+   "$\\dfrac12$",
+   "$\\dfrac35$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Let $p=P(A)$. Then $\\dfrac{p}{6}+\\dfrac{1-p}{4}=\\dfrac15\\Rightarrow p=\\dfrac35$.\n$P(B\\mid D)=\\dfrac{(\\frac25)(\\frac14)}{\\frac15}=\\dfrac12$.",
+  "distractor_notes": "A: uses $P(D\\mid B)$ as the posterior. B: gives the production share of $B$ only. D: gives the production share of $A$ rather than the posterior."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

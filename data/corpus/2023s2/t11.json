@@ -1,0 +1,156 @@
+[
+ {
+  "qno": 121,
+  "stem": "If $f(x) = \\begin{cases} x^2 - 1, & 0 < x < 2 \\\\ 2x + 3, & 2 \\le x < 3 \\end{cases}$, then the quadratic equation whose roots are $\\lim_{x \\to 2^-} f(x)$ and $\\lim_{x \\to 2^+} f(x)$ is",
+  "options": [
+   "$x^2 - 6x + 9 = 0$",
+   "$x^2 - 7x + 8 = 0$",
+   "$x^2 - 14x + 49 = 0$",
+   "$x^2 - 10x + 21 = 0$"
+  ],
+  "solution": "$$\\lim_{x \\to 2^-} f(x) = \\lim_{h \\to 0}[(2 - h)^2 - 1] = \\lim_{h \\to 0}[h^2 - 4h + 3] = 3$$\n\n$$\\lim_{x \\to 2^+} f(x) = \\lim_{h \\to 0}[2(2 + h) + 3] = 7$$\n\nQuadratic with roots $3$ and $7$: $x^2 - (3 + 7)x + 3 \\times 7 = 0 \\Rightarrow x^2 - 10x + 21 = 0$",
+  "chapter": "Limits and Continuity",
+  "subtopic": "One-sided limits",
+  "archetype": "piecewise limits",
+  "difficulty": 2
+ },
+ {
+  "qno": 122,
+  "stem": "If the straight lines $\\dfrac{x - 1}{k} = \\dfrac{y - 2}{2} = \\dfrac{z - 3}{3}$ and $\\dfrac{x - 2}{3} = \\dfrac{y - 3}{k} = \\dfrac{z - 1}{2}$ intersect at a point, then the integer $k$ is equal to",
+  "options": [
+   "$-5$",
+   "$5$",
+   "$2$",
+   "$-2$"
+  ],
+  "solution": "For intersecting lines the shortest distance is zero: $(\\vec{a}_2 - \\vec{a}_1)\\cdot(\\vec{b}_1 \\times \\vec{b}_2) = 0$\n\n$\\vec{a}_1 = \\hat{i} + 2\\hat{j} + 3\\hat{k}$, $\\vec{b}_1 = k\\hat{i} + 2\\hat{j} + 3\\hat{k}$, $\\vec{a}_2 = 2\\hat{i} + 3\\hat{j} + \\hat{k}$, $\\vec{b}_2 = 3\\hat{i} + k\\hat{j} + 2\\hat{k}$\n\n$$\\begin{vmatrix} 1 & 1 & -2 \\\\ k & 2 & 3 \\\\ 3 & k & 2 \\end{vmatrix} = 0 \\Rightarrow 1(4 - 3k) - 1(2k - 9) - 2(k^2 - 6) = 0$$\n\n$$\\Rightarrow -2k^2 - 5k + 25 = 0 \\Rightarrow k = -5 \\text{ or } \\frac{5}{2}$$\n\nInteger $k = -5$.",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Condition for intersecting lines",
+  "archetype": "coplanarity determinant",
+  "difficulty": 3
+ },
+ {
+  "qno": 123,
+  "stem": "If the co-ordinates of the point in which the line joining the points $(3, 5, -7)$ and $(-2, 1, 8)$ is intersected by the plane $yz$ is $\\left[a, \\dfrac{13}{b}, c\\right]$, then $(a + b - c) =$",
+  "options": [
+   "$2$",
+   "$3$",
+   "$4$",
+   "$5$"
+  ],
+  "solution": "The $yz$-plane ($x = 0$) divides the join in the ratio $-\\left(\\dfrac{3}{-2}\\right) = \\dfrac{3}{2}$.\n\n$$\\left[\\frac{6 - 6}{5}, \\frac{10 + 3}{5}, \\frac{-14 + 24}{5}\\right] = \\left(0, \\frac{13}{5}, 2\\right)$$\n\n$\\therefore a + b - c = 0 + 5 - 2 = 3$",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Section formula",
+  "archetype": "section ratio",
+  "difficulty": 2
+ },
+ {
+  "qno": 124,
+  "stem": "The slope of the tangent to the curve $x = 3t^2 + 1$, $y = t^3 - 1$ at $x = 1$ is:",
+  "options": [
+   "$\\dfrac{1}{2}$",
+   "$0$",
+   "$-2$",
+   "$\\infty$"
+  ],
+  "solution": "$\\dfrac{dx}{dt} = 6t$, $\\dfrac{dy}{dt} = 3t^2$\n\n$$\\frac{dy}{dx} = 3t^2 \\times \\frac{1}{6t} = \\frac{t}{2}$$\n\nWhen $x = 1$: $1 = 3t^2 + 1 \\Rightarrow t = 0 \\Rightarrow \\dfrac{dy}{dx} = 0$\n\nHence, slope of the tangent $= 0$",
+  "chapter": "Differential Calculus",
+  "subtopic": "Tangent slope, parametric curves",
+  "archetype": "parametric derivative",
+  "difficulty": 1
+ },
+ {
+  "qno": 125,
+  "stem": "A vector perpendicular to the plane containing the vectors $\\hat{i} - 2\\hat{j} - \\hat{k}$ and $3\\hat{i} - 2\\hat{j} - \\hat{k}$ is inclined to the vector $\\hat{i} + \\hat{j} + \\hat{k}$ at an angle",
+  "options": [
+   "$\\tan^{-1}\\sqrt{14}$",
+   "$\\text{cosec}^{-1}\\sqrt{14}$",
+   "$\\tan^{-1}\\sqrt{15}$",
+   "None of these"
+  ],
+  "solution": "$$(\\hat{i} - 2\\hat{j} - \\hat{k}) \\times (3\\hat{i} - 2\\hat{j} - \\hat{k}) = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ 1 & -2 & -1 \\\\ 3 & -2 & -1 \\end{vmatrix} = -2\\hat{j} + 4\\hat{k}$$\n\nUnit vector $\\hat{a} = \\dfrac{-2\\hat{j} + 4\\hat{k}}{2\\sqrt{5}}$\n\nAngle with $\\vec{r} = \\hat{i} + \\hat{j} + \\hat{k}$:\n\n$$\\cos^{-1}\\frac{\\vec{r}\\cdot\\hat{a}}{|\\vec{r}||\\hat{a}|} = \\cos^{-1}\\frac{1}{\\sqrt{15}} = \\tan^{-1}\\sqrt{14}$$",
+  "chapter": "Vector Algebra",
+  "subtopic": "Cross product and angle between vectors",
+  "archetype": "cross product then angle",
+  "difficulty": 2,
+  "notes": "option B printed as 'csen^-1 sqrt14' (garbled); read as cosec^-1",
+  "exemplar_ok": false
+ },
+ {
+  "qno": 126,
+  "stem": "Minimum value of $Z = 3x + 5y$ subject to constraints $x + y \\ge 2$, $x + 3y \\ge 3$, $x, y \\ge 0$",
+  "options": [
+   "$6$",
+   "$7$",
+   "$8$",
+   "$9$"
+  ],
+  "solution": "Corner points of the (unbounded) feasible region: $(3, 0)$, $\\left(\\dfrac{3}{2}, \\dfrac{1}{2}\\right)$, $(0, 2)$, giving $Z = 9, 7, 10$.\n\n$Z$ is minimum $= 7$ at $\\left(\\dfrac{3}{2}, \\dfrac{1}{2}\\right)$ (and $3x + 5y < 7$ has no common point with the region).",
+  "chapter": "Linear Inequalities",
+  "subtopic": "Linear programming",
+  "archetype": "corner point method",
+  "difficulty": 2
+ },
+ {
+  "qno": 127,
+  "stem": "The roots of the given equation $(p - q)x^2 + (q - r)x + (r - p) = 0$ are:",
+  "options": [
+   "$\\dfrac{p - q}{r - p}, 1$",
+   "$\\dfrac{q - r}{p - q}, 1$",
+   "$\\dfrac{r - p}{p - q}, 1$",
+   "None of these"
+  ],
+  "solution": "$$x = \\frac{(r - q) \\pm \\sqrt{(q - r)^2 - 4(r - p)(p - q)}}{2(p - q)} = \\frac{(r - q) \\pm (q + r - 2p)}{2(p - q)} = \\frac{r - p}{p - q}, 1$$",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Roots of a quadratic",
+  "archetype": "quadratic formula",
+  "difficulty": 2
+ },
+ {
+  "qno": 128,
+  "stem": "How many different nine digit numbers can be formed from the number $223355888$ by rearranging its digits so that the odd digits occupy even positions",
+  "options": [
+   "$16$",
+   "$36$",
+   "$60$",
+   "$100$"
+  ],
+  "solution": "There are $4$ odd digits $(3, 3, 5, 5)$ and $5$ even digits $(2, 2, 8, 8, 8)$, and $4$ even positions.\n\nWays to place odd digits in even places $= \\dfrac{4!}{2!2!}$; ways to place even digits in odd places $= \\dfrac{5!}{2!3!}$\n\nTotal $= \\dfrac{4!}{2!2!} \\times \\dfrac{5!}{2!3!} = 6 \\times 10 = 60$",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with repetition and restrictions",
+  "archetype": "restricted arrangement",
+  "difficulty": 2
+ },
+ {
+  "qno": 129,
+  "source_tag": "JM 2022",
+  "stem": "The negation of the Boolean expression $((\\sim q) \\wedge p) \\Rightarrow ((\\sim p) \\vee q)$ is logically equivalent to",
+  "options": [
+   "$p \\Rightarrow q$",
+   "$q \\Rightarrow p$",
+   "$\\sim(p \\Rightarrow q)$",
+   "$\\sim(q \\Rightarrow p)$"
+  ],
+  "solution": "$\\sim p \\vee q \\equiv p \\rightarrow q$ and $\\sim q \\wedge p \\equiv \\sim(p \\rightarrow q)$.\n\nSo the expression is $\\sim(p \\rightarrow q) \\rightarrow (p \\rightarrow q)$, whose negation is $\\sim(p \\rightarrow q) \\wedge \\sim(p \\rightarrow q)$, i.e. $\\sim(p \\rightarrow q)$.",
+  "chapter": "Mathematical Reasoning",
+  "subtopic": "Negation of compound statements",
+  "archetype": "logical equivalence",
+  "difficulty": 2
+ },
+ {
+  "qno": 130,
+  "stem": "General solution of $\\tan 5\\theta = \\cot 2\\theta$ is (where $n \\in I$):-",
+  "options": [
+   "$\\theta = \\dfrac{n\\pi}{7} + \\dfrac{\\pi}{14}$",
+   "$\\theta = \\dfrac{n\\pi}{7} + \\dfrac{\\pi}{5}$",
+   "$\\theta = \\dfrac{n\\pi}{7} + \\dfrac{\\pi}{2}$",
+   "$\\theta = \\dfrac{n\\pi}{7} + \\dfrac{\\pi}{3}$"
+  ],
+  "solution": "$$\\tan 5\\theta = \\cot 2\\theta = \\tan\\left(\\frac{\\pi}{2} - 2\\theta\\right) \\Rightarrow 5\\theta = n\\pi + \\frac{\\pi}{2} - 2\\theta$$\n\n$$\\Rightarrow 7\\theta = n\\pi + \\frac{\\pi}{2} \\Rightarrow \\theta = \\frac{n\\pi}{7} + \\frac{\\pi}{14}$$",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "general solution",
+  "difficulty": 2,
+  "notes": "solution completed by transcriber"
+ }
+]

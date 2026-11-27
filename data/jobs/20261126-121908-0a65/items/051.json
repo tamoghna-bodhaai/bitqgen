@@ -1,0 +1,85 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Directive influence in EAS",
+  "archetype": "reaction product (structures)",
+  "brief": "Provide an aromatic ring with substituent(s) in a figure; ask major product of EAS directing the incoming group to correct position.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:45",
+   "2025s2:33",
+   "2025s1:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the electrophilic aromatic substitution reaction shown in the figure, identify the major monobromo derivative $\\text{P}$ formed.",
+ "options": [
+  "1-bromo-2,4-dimethylbenzene",
+  "2-bromo-1,3-dimethylbenzene",
+  "1-bromo-3,5-dimethylbenzene",
+  "1-(bromomethyl)-3-methylbenzene"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q051_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q051_optA_v0.png",
+  "figs/q051_optB_v0.png",
+  "figs/q051_optC_v0.png",
+  "figs/q051_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Substrate is m-xylene (1,3-dimethylbenzene). Both CH3 groups are o/p-directors. Position 4 (≡6) is ortho to one CH3 and para to the other, strongly activated and unhindered; position 2 is also doubly activated but lies between the two methyls (steric hindrance), and position 5 is meta to both. Major product: 4-bromo-1,3-dimethylbenzene = 1-bromo-2,4-dimethylbenzene, matching figure (A). (B) is the sterically disfavored 2-isomer; (C) would need meta substitution; (D) is benzylic (radical) bromination, not EAS.",
+   "answer": "A",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. In 1,3-dimethylbenzene ($m$-xylene), both methyl groups ($-\\text{CH}_3$) are activating and $o,p$-directing via $+I$ and hyperconjugative electron donation.\n\n2. Directive influence at the different ring carbons:\n- Carbon-4 (and the equivalent C-6) is *ortho* to one methyl group and *para* to the other. The directive effects of both substituents reinforce each other here, and the position is sterically accessible.\n- Carbon-2 is *ortho* to both methyl groups. Although electronically activated, it is flanked by two adjacent methyl groups, creating severe steric hindrance to the incoming electrophile ($\\text{Br}^+$).\n- Carbon-5 is *meta* to both methyl groups and is not activated.\n\n3. The reaction conditions ($\\text{Br}_2 / \\text{FeBr}_3$) generate the electrophile $\\text{Br}^+$ for ring substitution rather than side-chain free-radical bromination.\n\n4. Therefore, substitution occurs preferentially at C-4, yielding 1-bromo-2,4-dimethylbenzene (4-bromo-1,3-dimethylbenzene) as the major product $\\text{P}$.\n\nIndependent check: Substrate is m-xylene (1,3-dimethylbenzene). Both CH3 groups are o/p-directors. Position 4 (≡6) is ortho to one CH3 and para to the other, strongly activated and unhindered; position 2 is also doubly activated but lies between the two methyls (steric hindrance), and position 5 is meta to both. Major product: 4-bromo-1,3-dimethylbenzene = 1-bromo-2,4-dimethylbenzene, matching figure (A). (B) is the sterically disfavored 2-isomer; (C) would need meta substitution; (D) is benzylic (radical) bromination, not EAS.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the electrophilic aromatic substitution reaction shown in the figure, identify the major monobromo derivative $\\text{P}$ formed.",
+  "options": [
+   "1-bromo-2,4-dimethylbenzene",
+   "2-bromo-1,3-dimethylbenzene",
+   "1-bromo-3,5-dimethylbenzene",
+   "1-(bromomethyl)-3-methylbenzene"
+  ],
+  "option_smiles": [
+   "Cc1ccc(Br)c(C)c1",
+   "Cc1c(Br)c(C)ccc1",
+   "Cc1cc(Br)cc(C)c1",
+   "Cc1cccc(CBr)c1"
+  ],
+  "answer": "A",
+  "working": "1. In 1,3-dimethylbenzene ($m$-xylene), both methyl groups ($-\\text{CH}_3$) are activating and $o,p$-directing via $+I$ and hyperconjugative electron donation.\n\n2. Directive influence at the different ring carbons:\n- Carbon-4 (and the equivalent C-6) is *ortho* to one methyl group and *para* to the other. The directive effects of both substituents reinforce each other here, and the position is sterically accessible.\n- Carbon-2 is *ortho* to both methyl groups. Although electronically activated, it is flanked by two adjacent methyl groups, creating severe steric hindrance to the incoming electrophile ($\\text{Br}^+$).\n- Carbon-5 is *meta* to both methyl groups and is not activated.\n\n3. The reaction conditions ($\\text{Br}_2 / \\text{FeBr}_3$) generate the electrophile $\\text{Br}^+$ for ring substitution rather than side-chain free-radical bromination.\n\n4. Therefore, substitution occurs preferentially at C-4, yielding 1-bromo-2,4-dimethylbenzene (4-bromo-1,3-dimethylbenzene) as the major product $\\text{P}$.",
+  "distractor_notes": "B: Overlooks steric hindrance between the two methyl groups at the C-2 position.\nC: Incorrectly treats methyl groups as meta-directing substituents.\nD: Confuses electrophilic ring bromination with free-radical benzylic bromination (which requires light or high heat).",
+  "figure": {
+   "kind": "chem",
+   "description": "A reaction scheme showing 1,3-dimethylbenzene (m-xylene) on the left. A reaction arrow points to the right with 'Br2 / FeBr3' above the arrow and 'Major product' below the arrow. To the right of the arrow is the label 'P'.",
+   "smiles": "Cc1cccc(C)c1"
+  },
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "Definite integral over [−a, a] of an even/odd mix, or one needing a substitution t = f(x) that flips limits; combine symmetry with a standard result.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:96",
+   "2026s2:100",
+   "2021:106"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate the definite integral from -pi/2 to pi/2 of (x sin x + cos x)/(1 + e^x) dx.",
+ "options": [
+  "0",
+  "1",
+  "pi/2",
+  "2"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The numerator is even, and \\(\\frac1{1+e^x}+\\frac1{1+e^{-x}}=1\\). Thus the integral is \\(\\int_0^{\\pi/2}(x\\sin x+\\cos x)\\,dx=[-x\\cos x+2\\sin x]_0^{\\pi/2}=2\\).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let f(x) = (x sin x + cos x)/(1 + e^x).\nUsing integral from -a to a of f(x) dx = integral from 0 to a of [f(x) + f(-x)] dx,\nf(-x) = e^x (x sin x + cos x)/(1 + e^x).\nSo f(x) + f(-x) = x sin x + cos x.\nIntegrate from 0 to pi/2:\nintegral of x sin x dx = [sin x - x cos x]_0^(pi/2) = 1,\nintegral of cos x dx = [sin x]_0^(pi/2) = 1.\nTotal = 1 + 1 = 2.\n\nIndependent check: The numerator is even, and \\(\\frac1{1+e^x}+\\frac1{1+e^{-x}}=1\\). Thus the integral is \\(\\int_0^{\\pi/2}(x\\sin x+\\cos x)\\,dx=[-x\\cos x+2\\sin x]_0^{\\pi/2}=2\\).",
+ "solution": "Let $g(x)=x\\sin x+\\cos x$, which is even. Since $\\frac{1}{1+e^x}+\\frac{1}{1+e^{-x}}=1$,\n$$\\int_{-\\pi/2}^{\\pi/2}\\frac{g(x)}{1+e^x}\\,dx=\\int_0^{\\pi/2}g(x)\\,dx=\\big[-x\\cos x+2\\sin x\\big]_0^{\\pi/2}=2.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate the definite integral from -pi/2 to pi/2 of (x sin x + cos x)/(1 + e^x) dx.",
+  "options": [
+   "0",
+   "1",
+   "pi/2",
+   "2"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let f(x) = (x sin x + cos x)/(1 + e^x).\nUsing integral from -a to a of f(x) dx = integral from 0 to a of [f(x) + f(-x)] dx,\nf(-x) = e^x (x sin x + cos x)/(1 + e^x).\nSo f(x) + f(-x) = x sin x + cos x.\nIntegrate from 0 to pi/2:\nintegral of x sin x dx = [sin x - x cos x]_0^(pi/2) = 1,\nintegral of cos x dx = [sin x]_0^(pi/2) = 1.\nTotal = 1 + 1 = 2.",
+  "distractor_notes": "0 comes from wrongly treating f(x) as odd; 1 comes from evaluating only the x sin x part and missing the cos x part; pi/2 comes from integrating cos x over the whole interval without replacing the denominator."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

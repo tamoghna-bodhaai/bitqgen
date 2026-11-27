@@ -1,0 +1,68 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Locus (arc of circle)",
+  "archetype": "1/z = z̄/|z|²",
+  "brief": "Given a relation like z + 1/z or |z − a| = |z − b|, find the locus (circle/line) it describes.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:94",
+   "2025s1:125",
+   "2026s2:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $z=x+iy$ with real $x,y$ and $z≠0$, the real part of $z^{-1}$ is $0.25$. Which locus does $z$ describe?",
+ "options": [
+  "$(x-2)^2+y^2=4,\\ z≠0$",
+  "$(x+2)^2+y^2=4,\\ z≠0$",
+  "$(x-2)^2+y^2=16,\\ z≠0$",
+  "$(x-0.5)^2+y^2=0.25,\\ z≠0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\operatorname{Re}(z^{-1})=x/(x^2+y^2)=1/4\\), so \\((x-2)^2+y^2=4\\), with \\(z\\ne0\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$z^{-1}=(x-iy)(x^2+y^2)^{-1}$, so $x=0.25(x^2+y^2)$; hence $(x-2)^2+y^2=4$, excluding $z=0$.\n\nIndependent check: \\(\\operatorname{Re}(z^{-1})=x/(x^2+y^2)=1/4\\), so \\((x-2)^2+y^2=4\\), with \\(z\\ne0\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $z=x+iy$ with real $x,y$ and $z≠0$, the real part of $z^{-1}$ is $0.25$. Which locus does $z$ describe?",
+  "options": [
+   "$(x-2)^2+y^2=4,\\ z≠0$",
+   "$(x+2)^2+y^2=4,\\ z≠0$",
+   "$(x-2)^2+y^2=16,\\ z≠0$",
+   "$(x-0.5)^2+y^2=0.25,\\ z≠0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$z^{-1}=(x-iy)(x^2+y^2)^{-1}$, so $x=0.25(x^2+y^2)$; hence $(x-2)^2+y^2=4$, excluding $z=0$.",
+  "distractor_notes": "B: reverses the sign of the centre; C: uses 4 as the radius rather than the radius squared; D: misuses the given $0.25$ when completing the square."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

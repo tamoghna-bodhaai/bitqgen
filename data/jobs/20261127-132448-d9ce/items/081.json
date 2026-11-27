@@ -1,0 +1,68 @@
+{
+ "qno": 81,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 81,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error (no error)",
+  "brief": "Four-part sentence with a subtle subject-verb agreement error (collective noun / distance-quantity subject); one option must be 'No error'.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:67",
+   "2021:85",
+   "2021:92"
+  ]
+ },
+ "status": "ok",
+ "stem": "Identify the part containing a subject–verb agreement error. Choose “No error” if the sentence is correct.\n\n**I.** A distance of nearly six kilometres **II.** separate the village **III.** from the nearest railway station, **IV.** making daily travel difficult.",
+ "options": [
+  "Part I",
+  "No error",
+  "Part III",
+  "Part II"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“A distance” is singular, so the verb should be “separates.” The error is in Part II.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The subject is the singular quantity “A distance,” not “kilometres”; the verb should be “separates.” Parts I, III and IV are correct.\n\nIndependent check: “A distance” is singular, so the verb should be “separates.” The error is in Part II.",
+ "solution": "The subject is the singular quantity “A distance,” so the verb should be “separates,” not “separate.” The error is in Part II.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Identify the part containing a subject–verb agreement error. Choose “No error” if the sentence is correct.\n\n**I.** A distance of nearly six kilometres **II.** separate the village **III.** from the nearest railway station, **IV.** making daily travel difficult.",
+  "options": [
+   "Part I",
+   "Part II",
+   "Part III",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The subject is the singular quantity “A distance,” not “kilometres”; the verb should be “separates.” Parts I, III and IV are correct.",
+  "distractor_notes": "A: The singular subject is correctly introduced. C: The prepositional phrase is correct. D: There is an agreement error in Part II."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

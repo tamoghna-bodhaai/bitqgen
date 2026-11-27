@@ -1,0 +1,68 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Term independent of x",
+  "archetype": "general term",
+  "brief": "Find the term independent of x (or coefficient of x^k) in the expansion of a binomial with positive integral power; standard general-term matching.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:115",
+   "2026s2:103",
+   "2021:114"
+  ]
+ },
+ "status": "ok",
+ "stem": "The term independent of $x$ in the expansion of $\\left(x-\\dfrac{2}{x^2}\\right)^9$ is",
+ "options": [
+  "$672$",
+  "$-84$",
+  "$84$",
+  "$-672$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The general term has power of x equal to 9−3k. Setting this to 0 gives k=3; the coefficient is C(9,3)(−2)^3=−672.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T_{r+1}=\\binom{9}{r}x^{9-r}(-2)^r x^{-2r}=\\binom{9}{r}(-2)^r x^{9-3r}$.\\n$9-3r=0\\Rightarrow r=3$.\\nCoefficient $=\\binom{9}{3}(-2)^3=-672$.\n\nIndependent check: The general term has power of x equal to 9−3k. Setting this to 0 gives k=3; the coefficient is C(9,3)(−2)^3=−672.",
+ "solution": "The general term is $T_{r+1} = \\binom{9}{r}(-2)^r x^{9-3r}$. For the term independent of $x$, set $9-3r=0$, giving $r=3$.\n$$\\binom{9}{3}(-2)^3 = -672$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The term independent of $x$ in the expansion of $\\left(x-\\dfrac{2}{x^2}\\right)^9$ is",
+  "options": [
+   "$-672$",
+   "$-84$",
+   "$84$",
+   "$672$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$T_{r+1}=\\binom{9}{r}x^{9-r}(-2)^r x^{-2r}=\\binom{9}{r}(-2)^r x^{9-3r}$.\\n$9-3r=0\\Rightarrow r=3$.\\nCoefficient $=\\binom{9}{3}(-2)^3=-672$.",
+  "distractor_notes": "B: Omits the factor $2^3$.\\nC: Omits $2^3$ and loses the negative sign.\\nD: Makes a sign error."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

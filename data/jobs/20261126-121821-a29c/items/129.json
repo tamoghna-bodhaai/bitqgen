@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Rate of change",
+  "archetype": "related rates",
+  "brief": "Simple related-rates problem, e.g. rate of increase of a circle's area given the rate of radius increase; differentiate A = πr².",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:124",
+   "2026s1:123",
+   "2024s1:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "The radius of a sphere is increasing at $2$ cm min$^{-1}$. At the instant when its radius is $3$ cm, how fast is its volume increasing?",
+ "options": [
+  "$18\\pi$ cm$^3$ min$^{-1}$",
+  "$24\\pi$ cm$^3$ min$^{-1}$",
+  "$36\\pi$ cm$^3$ min$^{-1}$",
+  "$72\\pi$ cm$^3$ min$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "$V=\\frac{4}{3}\\pi r^3$, so $\\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}=4\\pi(3)^2(2)=72\\pi\\ \\text{cm}^3\\text{min}^{-1}$.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$V=\\dfrac{4}{3}\\pi r^3$\\n$\\dfrac{dV}{dt}=4\\pi r^2\\dfrac{dr}{dt}=4\\pi(3)^2(2)=72\\pi$ cm$^3$ min$^{-1}$.\n\nIndependent check: $V=\\frac{4}{3}\\pi r^3$, so $\\frac{dV}{dt}=4\\pi r^2\\frac{dr}{dt}=4\\pi(3)^2(2)=72\\pi\\ \\text{cm}^3\\text{min}^{-1}$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The radius of a sphere is increasing at $2$ cm min$^{-1}$. At the instant when its radius is $3$ cm, how fast is its volume increasing?",
+  "options": [
+   "$18\\pi$ cm$^3$ min$^{-1}$",
+   "$24\\pi$ cm$^3$ min$^{-1}$",
+   "$36\\pi$ cm$^3$ min$^{-1}$",
+   "$72\\pi$ cm$^3$ min$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$V=\\dfrac{4}{3}\\pi r^3$\\n$\\dfrac{dV}{dt}=4\\pi r^2\\dfrac{dr}{dt}=4\\pi(3)^2(2)=72\\pi$ cm$^3$ min$^{-1}$.",
+  "distractor_notes": "A: uses an incorrect volume-rate factor; B: omits the squared radius; C: omits the radius growth rate."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

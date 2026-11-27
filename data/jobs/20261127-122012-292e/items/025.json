@@ -1,0 +1,70 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Lift problems",
+  "archetype": "free-body equations",
+  "brief": "A man in an accelerating lift with a weighing scale; ask for the scale reading given the lift's acceleration (pseudo-force framing).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:24",
+   "2025s2:16",
+   "2026s2:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "A man of mass $50$ kg stands on a weighing scale inside a lift accelerating upward at $2$ m s$^{-2}$. The reading of the scale (in kg wt) is (Take $g = 10$ m s$^{-2}$).",
+ "options": [
+  "40 kg",
+  "48 kg",
+  "60 kg",
+  "50 kg"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Normal force = m(g+a) = 50(10+2) = 600 N. In kg wt, the reading is 600/10 = 60 kg wt.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "Options label the readings as kg rather than kg wt; the numerical answer is unchanged."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Apparent weight $N = m(g+a) = 50 \\times (10+2) = 600\\ \\text{N}$.\nScale reading in kg wt $= N/g = 600/10 = 60$ kg.\n\nIndependent check: Normal force = m(g+a) = 50(10+2) = 600 N. In kg wt, the reading is 600/10 = 60 kg wt.",
+ "solution": "For upward acceleration, the scale’s normal force is $N=m(g+a)$.\n$$N=50(10+2)=600\\,\\text{N},\\qquad \\text{reading in kg wt}=\\frac{N}{g}=\\frac{600}{10}=60\\,\\text{kg wt}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A man of mass $50$ kg stands on a weighing scale inside a lift accelerating upward at $2$ m s$^{-2}$. The reading of the scale (in kg wt) is (Take $g = 10$ m s$^{-2}$).",
+  "options": [
+   "40 kg",
+   "48 kg",
+   "60 kg",
+   "50 kg"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Apparent weight $N = m(g+a) = 50 \\times (10+2) = 600\\ \\text{N}$.\nScale reading in kg wt $= N/g = 600/10 = 60$ kg.",
+  "distractor_notes": "A: used m(g-a) (downward acceleration); B: subtracted acceleration directly from mass (50-2); C: correct; D: ignored acceleration (apparent weight = actual weight)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

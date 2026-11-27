@@ -1,0 +1,68 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Collinear vectors",
+  "archetype": "vector computation",
+  "brief": "Given position vectors of points, check collinearity or find a unit vector along a line/median; direct computation from formulas.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:123",
+   "2022:93",
+   "2021:109"
+  ]
+ },
+ "status": "ok",
+ "stem": "The position vectors of two points A and B are a = 2i + 3j - 4k and b = 4i + 6j + p k. If a and b are collinear, then the value of p is",
+ "options": [
+  "-8",
+  "-4",
+  "4",
+  "8"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For collinear vectors, b = λa. Comparing the i-components gives λ = 2; hence p = 2(-4) = -8.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Collinear vectors satisfy b = lambda a. Comparing i and j coefficients: 4 = 2 lambda and 6 = 3 lambda, so lambda = 2. Then p = lambda(-4) = -8.\n\nIndependent check: For collinear vectors, b = λa. Comparing the i-components gives λ = 2; hence p = 2(-4) = -8.",
+ "solution": "For collinear vectors, $\u001bb=\u001blambda\u001ba$. Comparing the $i$-components gives $4=2\u001blambda$, so $\u001blambda=2$.\nThus $p=2(-4)=-8$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The position vectors of two points A and B are a = 2i + 3j - 4k and b = 4i + 6j + p k. If a and b are collinear, then the value of p is",
+  "options": [
+   "-8",
+   "-4",
+   "4",
+   "8"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Collinear vectors satisfy b = lambda a. Comparing i and j coefficients: 4 = 2 lambda and 6 = 3 lambda, so lambda = 2. Then p = lambda(-4) = -8.",
+  "distractor_notes": "B: forgot to multiply the k coefficient by lambda; C: sign error on the k coefficient; D: sign error and also neglected the factor 2 in the k component."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

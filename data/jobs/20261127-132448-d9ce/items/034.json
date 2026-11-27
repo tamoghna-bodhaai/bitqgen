@@ -1,0 +1,68 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Resistance on stretching a wire",
+  "archetype": "resistance scaling",
+  "brief": "A uniform wire is stretched to double (or n-times) its length; find new resistance and heat produced when connected to the same source.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:18",
+   "2026s2:22",
+   "2026s2:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "A uniform wire is stretched to twice its original length without change in volume. It is connected to the same voltage source for the same time. What is the ratio of the heat produced after stretching to that produced before stretching?",
+ "options": [
+  "$4$",
+  "$\\dfrac{1}{2}$",
+  "$2$",
+  "$\\dfrac{1}{4}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With volume constant, doubling the length halves the area, so resistance becomes four times larger. At fixed voltage and time, heat is proportional to 1/R; ratio = 1/4.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A_1L_1=A_2L_2$, with $L_2=2L_1\\Rightarrow A_2=\\dfrac{A_1}{2}$\\n$\\dfrac{R_2}{R_1}=\\dfrac{L_2}{L_1}\\dfrac{A_1}{A_2}=4$\\nAt fixed voltage and time, $H=\\dfrac{V^2t}{R}$\\n$\\dfrac{H_2}{H_1}=\\dfrac{R_1}{R_2}=\\dfrac{1}{4}$\n\nIndependent check: With volume constant, doubling the length halves the area, so resistance becomes four times larger. At fixed voltage and time, heat is proportional to 1/R; ratio = 1/4.",
+ "solution": "With volume constant, $A_1L_1=A_2L_2$; hence $L_2=2L_1$ gives $A_2=A_1/2$. Thus, $\\dfrac{R_2}{R_1}=\\dfrac{L_2}{L_1}\\dfrac{A_1}{A_2}=4$.\nAt fixed voltage and time, $H=\\dfrac{V^2t}{R}$, so $\\dfrac{H_2}{H_1}=\\dfrac{R_1}{R_2}=\\boxed{\\dfrac14}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A uniform wire is stretched to twice its original length without change in volume. It is connected to the same voltage source for the same time. What is the ratio of the heat produced after stretching to that produced before stretching?",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{2}$",
+   "$2$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A_1L_1=A_2L_2$, with $L_2=2L_1\\Rightarrow A_2=\\dfrac{A_1}{2}$\\n$\\dfrac{R_2}{R_1}=\\dfrac{L_2}{L_1}\\dfrac{A_1}{A_2}=4$\\nAt fixed voltage and time, $H=\\dfrac{V^2t}{R}$\\n$\\dfrac{H_2}{H_1}=\\dfrac{R_1}{R_2}=\\dfrac{1}{4}$",
+  "distractor_notes": "B: uses the length factor but omits the area change. C: uses the resistance factor as the heat factor. D: gives the resistance ratio instead of its reciprocal."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

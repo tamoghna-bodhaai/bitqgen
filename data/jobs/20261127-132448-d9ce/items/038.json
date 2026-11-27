@@ -1,0 +1,68 @@
+{
+ "qno": 38,
+ "section": "Physics",
+ "slot": {
+  "qno": 38,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Joule heating",
+  "archetype": "circuit analysis",
+  "brief": "Three resistors in parallel (or series-parallel mix) across a battery; find current in each branch and total power dissipated.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:27",
+   "2026s2:5",
+   "2024s1:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $2\\ \\Omega$ resistor is in series with a parallel combination of $6\\ \\Omega$ and $3\\ \\Omega$ resistors, across an ideal $12\\ \\text{V}$ battery. What are the currents through the $2\\ \\Omega$, $6\\ \\Omega$ and $3\\ \\Omega$ resistors, respectively, and the total power dissipated?",
+ "options": [
+  "$(3,2,1)\\ \\text{A};\\ 36\\ \\text{W}$",
+  "$(3,1,2)\\ \\text{A};\\ 36\\ \\text{W}$",
+  "$(3,\\dfrac{3}{2},\\dfrac{3}{2})\\ \\text{A};\\ 36\\ \\text{W}$",
+  "$(3,1,2)\\ \\text{A};\\ 18\\ \\text{W}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The parallel equivalent is (6×3)/(6+3)=2 Ω, so total resistance is 4 Ω and total current is 12/4=3 A. The parallel branch has 6 V across it, giving currents 1 A through 6 Ω and 2 A through 3 Ω. Total power is 12×3=36 W.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$R_{\\parallel}=\\dfrac{6\\times3}{6+3}=2\\ \\Omega$, so $R_{\\text{total}}=4\\ \\Omega$.\\nSeries current: $I=\\dfrac{12}{4}=3\\ \\text{A}$.\\nVoltage across the parallel pair: $12-(3)(2)=6\\ \\text{V}$.\\nBranch currents: $I_{6\\Omega}=1\\ \\text{A}$, $I_{3\\Omega}=2\\ \\text{A}$.\\n$P_{\\text{total}}=VI=36\\ \\text{W}$.\n\nIndependent check: The parallel equivalent is (6×3)/(6+3)=2 Ω, so total resistance is 4 Ω and total current is 12/4=3 A. The parallel branch has 6 V across it, giving currents 1 A through 6 Ω and 2 A through 3 Ω. Total power is 12×3=36 W.",
+ "solution": "$R_{\\parallel}=\\dfrac{6\\times3}{6+3}=2\\,\\Omega$, hence $R_{\\text{total}}=4\\,\\Omega$ and $I=\\dfrac{12}{4}=3\\,\\text{A}$.\\\\\nThe parallel pair has $V=12-(3)(2)=6\\,\\text{V}$, so $I_{6\\Omega}=1\\,\\text{A}$ and $I_{3\\Omega}=2\\,\\text{A}$.\\\\\n$P_{\\text{total}}=VI=12\\times3=36\\,\\text{W}$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A $2\\ \\Omega$ resistor is in series with a parallel combination of $6\\ \\Omega$ and $3\\ \\Omega$ resistors, across an ideal $12\\ \\text{V}$ battery. What are the currents through the $2\\ \\Omega$, $6\\ \\Omega$ and $3\\ \\Omega$ resistors, respectively, and the total power dissipated?",
+  "options": [
+   "$(3,2,1)\\ \\text{A};\\ 36\\ \\text{W}$",
+   "$(3,\\dfrac{3}{2},\\dfrac{3}{2})\\ \\text{A};\\ 36\\ \\text{W}$",
+   "$(3,1,2)\\ \\text{A};\\ 36\\ \\text{W}$",
+   "$(3,1,2)\\ \\text{A};\\ 18\\ \\text{W}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$R_{\\parallel}=\\dfrac{6\\times3}{6+3}=2\\ \\Omega$, so $R_{\\text{total}}=4\\ \\Omega$.\\nSeries current: $I=\\dfrac{12}{4}=3\\ \\text{A}$.\\nVoltage across the parallel pair: $12-(3)(2)=6\\ \\text{V}$.\\nBranch currents: $I_{6\\Omega}=1\\ \\text{A}$, $I_{3\\Omega}=2\\ \\text{A}$.\\n$P_{\\text{total}}=VI=36\\ \\text{W}$.",
+  "distractor_notes": "A: Interchanges the currents in the $6\\ \\Omega$ and $3\\ \\Omega$ branches.\\nB: Assumes equal current division in the parallel branches.\\nD: Uses the power dissipated by the series resistor as the total power."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

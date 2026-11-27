@@ -1,0 +1,68 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle: chord of contact, pole-polar",
+  "archetype": "intersect and compare",
+  "brief": "Find the chord of contact of tangents drawn from an external point to a circle, then use it to compute a length or prove a pole-polar property at level 4 difficulty.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:113",
+   "2026s1:111",
+   "2026s2:111"
+  ]
+ },
+ "status": "ok",
+ "stem": "Tangents from $P=(16,-4)$ touch the circle $x^2+y^2-6x+8y=0$ at $A$ and $B$. Find the perimeter of triangle $PAB$.",
+ "options": [
+  "$\\dfrac{312}{13}$",
+  "$\\dfrac{372}{13}$",
+  "$\\dfrac{432}{13}$",
+  "$\\dfrac{552}{13}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The circle has center \u0000C=(3,-4)\u0000 and radius 5; \u0000PC=13\u0000. Hence \u0000PA=PB=\u0000\u0000\\sqrt{13^2-5^2}=12\u0000. The contact chord is at distance \u000025/13\u0000 from the center, so \u0000AB=2\\sqrt{5^2-(25/13)^2}=120/13\u0000. Perimeter \u0000=24+120/13=432/13\u0000.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Circle centre $(3,-4)$, radius $5$; $PC=13$, so $PA=PB=\\sqrt{13^2-5^2}=12$. Chord of contact: $13(x-3)=25$, so $x=\\dfrac{64}{13}$. Thus $AB=2\\sqrt{25-\\left(\\dfrac{25}{13}\\right)^2}=\\dfrac{120}{13}$; perimeter $=24+\\dfrac{120}{13}=\\dfrac{432}{13}$.\n\nIndependent check: The circle has center \u0000C=(3,-4)\u0000 and radius 5; \u0000PC=13\u0000. Hence \u0000PA=PB=\u0000\u0000\\sqrt{13^2-5^2}=12\u0000. The contact chord is at distance \u000025/13\u0000 from the center, so \u0000AB=2\\sqrt{5^2-(25/13)^2}=120/13\u0000. Perimeter \u0000=24+120/13=432/13\u0000.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Tangents from $P=(16,-4)$ touch the circle $x^2+y^2-6x+8y=0$ at $A$ and $B$. Find the perimeter of triangle $PAB$.",
+  "options": [
+   "$\\dfrac{312}{13}$",
+   "$\\dfrac{372}{13}$",
+   "$\\dfrac{432}{13}$",
+   "$\\dfrac{552}{13}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Circle centre $(3,-4)$, radius $5$; $PC=13$, so $PA=PB=\\sqrt{13^2-5^2}=12$. Chord of contact: $13(x-3)=25$, so $x=\\dfrac{64}{13}$. Thus $AB=2\\sqrt{25-\\left(\\dfrac{25}{13}\\right)^2}=\\dfrac{120}{13}$; perimeter $=24+\\dfrac{120}{13}=\\dfrac{432}{13}$.",
+  "distractor_notes": "A: omits the chord length; B: adds only half the chord length; D: adds twice the chord length."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

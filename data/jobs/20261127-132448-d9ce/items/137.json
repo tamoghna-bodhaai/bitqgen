@@ -1,0 +1,68 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Symmetric matrices",
+  "archetype": "conceptual",
+  "brief": "Statement-correctness question on symmetric/skew matrices and transpose rules (e.g. AB = (BA)ᵀ iff…); pick the true statement among four.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:108",
+   "2026s1:121",
+   "2024s1:101"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A$ and $B$ be real square matrices of the same order. Which statement is always true?",
+ "options": [
+  "If $A$ and $B$ are symmetric, then $AB$ is symmetric.",
+  "If $A$ and $B$ are symmetric, then $(AB)^T=BA$.",
+  "If $A$ and $B$ are skew-symmetric, then $AB$ is skew-symmetric.",
+  "For every square matrix $A$, $A-A^T$ is symmetric."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For symmetric A and B, (AB)^T = B^T A^T = BA, so (C) is always true. Also, A − A^T is skew-symmetric, not generally symmetric.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A^T=A,\\ B^T=B\\Rightarrow (AB)^T=B^TA^T=BA$\n\nIndependent check: For symmetric A and B, (AB)^T = B^T A^T = BA, so (C) is always true. Also, A − A^T is skew-symmetric, not generally symmetric.",
+ "solution": "Using $(AB)^T=B^TA^T$ and symmetry, $A^T=A$ and $B^T=B$.\n$$ (AB)^T=B^TA^T=BA $$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A$ and $B$ be real square matrices of the same order. Which statement is always true?",
+  "options": [
+   "If $A$ and $B$ are symmetric, then $AB$ is symmetric.",
+   "If $A$ and $B$ are skew-symmetric, then $AB$ is skew-symmetric.",
+   "If $A$ and $B$ are symmetric, then $(AB)^T=BA$.",
+   "For every square matrix $A$, $A-A^T$ is symmetric."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$A^T=A,\\ B^T=B\\Rightarrow (AB)^T=B^TA^T=BA$",
+  "distractor_notes": "A: The product of symmetric matrices need not be symmetric unless they commute.\nB: The product of skew-symmetric matrices need not be skew-symmetric.\nD: $A-A^T$ is skew-symmetric, not necessarily symmetric."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

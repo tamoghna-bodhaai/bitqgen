@@ -1,0 +1,189 @@
+[
+ {
+  "qno": 109,
+  "stem": "Four distinct points $(2k, 3k)$, $(1, 0)$, $(0, 1)$ and $(0, 0)$ lie on a circle for",
+  "options": [
+   "only one value of $k$",
+   "$0 < k < 1$",
+   "$k < 0$",
+   "all integral values of $k$"
+  ],
+  "solution": "The equation of the circle through $(1,0)$, $(0,1)$ and $(0,0)$ is $x^2 + y^2 - x - y = 0$. It passes through $(2k, 3k)$:\n\n$4k^2 + 9k^2 - 2k - 3k = 0 \\Rightarrow 13k^2 - 5k = 0 \\Rightarrow k(13k-5) = 0 \\Rightarrow k = 0$ or $k = \\dfrac{5}{13}$\n\nBut $k \\neq 0$ ($\\because$ all the four points are distinct)\n\n$\\therefore k = \\dfrac{5}{13}$",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "concyclic condition",
+  "difficulty": 2
+ },
+ {
+  "qno": 110,
+  "stem": "The equation of straight line through the intersection of the lines $x - 2y = 1$ and $x + 3y = 2$ and parallel to $3x + 4y = 0$ is",
+  "options": [
+   "$3x + 4y + 5 = 0$",
+   "$3x + 4y - 10 = 0$",
+   "$3x + 4y - 5 = 0$",
+   "$3x + 4y + 6 = 0$"
+  ],
+  "solution": "Since the line is parallel to $3x + 4y = 0$, $m = -\\dfrac{3}{4}$, so $y = -\\dfrac{3}{4}x + c$ ...(i)\n\nSolving $x - 2y = 1$ and $x + 3y = 2$: subtracting, $-5y = -1 \\Rightarrow y = \\dfrac{1}{5}$, and $x = 1 + \\dfrac{2}{5} = \\dfrac{7}{5}$.\n\nPutting $\\left(\\dfrac{7}{5}, \\dfrac{1}{5}\\right)$ in (i): $\\dfrac{1}{5} = -\\dfrac{3}{4}\\times\\dfrac{7}{5} + c \\Rightarrow c = \\dfrac{1}{5} + \\dfrac{21}{20} = \\dfrac{25}{20} = \\dfrac{5}{4}$\n\nHence $y = -\\dfrac{3}{4}x + \\dfrac{5}{4}$, or $3x + 4y - 5 = 0$",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Line through intersection of lines",
+  "archetype": "construct-equation",
+  "difficulty": 2
+ },
+ {
+  "qno": 111,
+  "stem": "The length of the perpendicular from the origin to a line is $7$ and line makes an angle of $150^\\circ$ with the positive direction of y-axis then the equation of the line is",
+  "options": [
+   "$4x + 5y = 7$",
+   "$-x + 3y = 2$",
+   "$\\sqrt{3}x - y = 10\\sqrt{2}$",
+   "$\\sqrt{3}x + y = 14$"
+  ],
+  "solution": "Here $p = 7$ and $\\alpha = 30^\\circ$ (angle of the perpendicular with the x-axis).\n\n$\\therefore$ Equation of the required line is $x\\cos30^\\circ + y\\sin30^\\circ = 7$\n\nor $\\dfrac{\\sqrt{3}}{2}x + \\dfrac{1}{2}y = 7$ or $\\sqrt{3}x + y = 14$",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Normal form of a line",
+  "archetype": "construct-equation",
+  "difficulty": 2,
+  "figure_kind": "diagram"
+ },
+ {
+  "qno": 112,
+  "stem": "Let $a_1, a_2, a_3, \\ldots$ be a G.P. such that $a_1 < 0$, $a_1 + a_2 = 4$ and $a_3 + a_4 = 16$. If $\\sum_{i=1}^{9} a_i = 4\\lambda$, then $\\lambda$ is equal to:",
+  "options": [
+   "$-513$",
+   "$-171$",
+   "$171$",
+   "$\\dfrac{511}{3}$"
+  ],
+  "solution": "$a_1 + a_1 r = 4$ ...(i), $a_1r^2 + a_1r^3 = 16$ ...(ii)\n\nFrom (i), $a_1 = \\dfrac{4}{1+r}$; substituting in (ii): $4r^2(1+r) = 16(1+r) \\Rightarrow r^2 = 4 \\Rightarrow r = \\pm2$\n\n$r = 2 \\Rightarrow a_1 = \\dfrac{4}{3}$ (rejected, as $a_1 < 0$); $r = -2 \\Rightarrow a_1(1-2) = 4 \\Rightarrow a_1 = -4$\n\n$$\\sum_{i=1}^{9} a_i = \\dfrac{a_1(r^9-1)}{r-1} = \\dfrac{(-4)((-2)^9-1)}{-2-1} = \\dfrac{4}{3}(-513) = 4\\lambda \\Rightarrow \\lambda = -171$$",
+  "chapter": "Sequences and Series",
+  "subtopic": "Sum of G.P.",
+  "archetype": "solve-for-ratio",
+  "difficulty": 3
+ },
+ {
+  "qno": 113,
+  "stem": "The sum $\\dfrac{3}{1^2} + \\dfrac{5}{1^2+2^2} + \\dfrac{7}{1^2+2^2+3^2} + \\ldots$ upto $11$ terms is:",
+  "options": [
+   "$\\dfrac{7}{2}$",
+   "$\\dfrac{11}{4}$",
+   "$\\dfrac{11}{2}$",
+   "$\\dfrac{60}{11}$"
+  ],
+  "solution": "$n$th term $T_n = \\dfrac{2n+1}{\\frac{n(n+1)(2n+1)}{6}} = \\dfrac{6}{n(n+1)} = 6\\left[\\dfrac{1}{n} - \\dfrac{1}{n+1}\\right]$\n\n$\\therefore S_n = 6\\left(1 - \\dfrac{1}{n+1}\\right) = \\dfrac{6n}{n+1}$\n\nSo, $S_{11} = \\dfrac{6\\times11}{12} = \\dfrac{11}{2}$",
+  "chapter": "Sequences and Series",
+  "subtopic": "Telescoping series",
+  "archetype": "general-term telescoping",
+  "difficulty": 3
+ },
+ {
+  "qno": 114,
+  "stem": "The number of zero terms in the expansion of $(1 + 3\\sqrt{2}x)^9 + (1 - 3\\sqrt{2}x)^9$ is",
+  "options": [
+   "$2$",
+   "$3$",
+   "$4$",
+   "$5$"
+  ],
+  "solution": "Given expression $= 2\\left[1 + {}^9C_2(3\\sqrt{2}x)^2 + {}^9C_4(3\\sqrt{2}x)^4 + {}^9C_6(3\\sqrt{2}x)^6 + {}^9C_8(3\\sqrt{2}x)^8\\right]$\n\n$\\therefore$ the number of non-zero terms is $5$.",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Number of terms in expansion",
+  "archetype": "odd-even term cancellation",
+  "difficulty": 2,
+  "notes": "Stem says 'zero terms' but solution/key count non-zero terms (5).",
+  "exemplar_ok": false
+ },
+ {
+  "qno": 115,
+  "stem": "The numbers of ways in which the letters of the word 'VOWEL' can be arranged so that the letters O, E occupy only even places is",
+  "options": [
+   "$12$",
+   "$24$",
+   "$18$",
+   "$36$"
+  ],
+  "solution": "There are 2 even places (2nd and 4th). O and E can be arranged in them in ${}^2P_2 = 2$ ways.\n\nRemaining letters can be arranged in $3! = 6$ ways.\n\nRequired number of words $= 2\\times6 = 12$",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "restricted arrangement",
+  "difficulty": 2
+ },
+ {
+  "qno": 116,
+  "stem": "The set of real $x$ satisfying the inequality $\\dfrac{5-2x}{3} \\leq \\dfrac{x}{6} - 5$ is $[a, \\infty)$. The value of 'a' is",
+  "options": [
+   "$2$",
+   "$4$",
+   "$6$",
+   "$8$"
+  ],
+  "solution": "$\\dfrac{5-2x}{3} \\leq \\dfrac{x-30}{6} \\Rightarrow 10 - 4x \\leq x - 30 \\Rightarrow 40 \\leq 5x \\Rightarrow x \\geq 8 \\Rightarrow x \\in [8, \\infty)$",
+  "chapter": "Linear Inequalities",
+  "subtopic": "Solving linear inequalities",
+  "archetype": "algebraic manipulation",
+  "difficulty": 1
+ },
+ {
+  "qno": 117,
+  "stem": "Product of real roots of the equation $t^2x^2 + |x| + 9 = 0$",
+  "options": [
+   "is always positive",
+   "is always negative",
+   "does not exist",
+   "None of these"
+  ],
+  "solution": "Product of real roots $= \\dfrac{9}{t^2} > 0,\\ \\forall t \\in \\mathbb{R}$\n\n$\\therefore$ Product of real roots is always positive.",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Product of roots",
+  "archetype": "conceptual",
+  "difficulty": 2,
+  "notes": "As printed; strictly, the equation has no real roots since all terms are non-negative with 9 > 0.",
+  "exemplar_ok": false
+ },
+ {
+  "qno": 118,
+  "stem": "The amplitude of $\\sin\\dfrac{\\pi}{5} + i\\left(1 - \\cos\\dfrac{\\pi}{5}\\right)$ is",
+  "options": [
+   "$\\dfrac{\\pi}{5}$",
+   "$\\dfrac{2\\pi}{5}$",
+   "$\\dfrac{\\pi}{10}$",
+   "$\\dfrac{\\pi}{15}$"
+  ],
+  "solution": "$\\sin\\dfrac{\\pi}{5} + i\\left(1 - \\cos\\dfrac{\\pi}{5}\\right) = 2\\sin\\dfrac{\\pi}{10}\\cos\\dfrac{\\pi}{10} + 2i\\sin^2\\dfrac{\\pi}{10} = 2\\sin\\dfrac{\\pi}{10}\\left(\\cos\\dfrac{\\pi}{10} + i\\sin\\dfrac{\\pi}{10}\\right)$\n\nFor amplitude, $\\tan\\theta = \\tan\\dfrac{\\pi}{10} \\Rightarrow \\theta = \\dfrac{\\pi}{10}$",
+  "chapter": "Complex Numbers",
+  "subtopic": "Argument of a complex number",
+  "archetype": "half-angle simplification",
+  "difficulty": 2
+ },
+ {
+  "qno": 119,
+  "stem": "The domain of $f(x) = \\sqrt{\\cos(\\sin x)} + \\sqrt{\\log_x\\{x\\}}$; $\\{\\cdot\\}$ denote the fractional part, is",
+  "options": [
+   "$[1, \\pi)$",
+   "$(0, 2\\pi) - [1, \\pi)$",
+   "$\\left(0, \\dfrac{\\pi}{2}\\right) - \\{1\\}$",
+   "$(0, 1)$"
+  ],
+  "solution": "(i) $\\cos(\\sin x) \\geq 0$ for all $x \\in \\mathbb{R}$ (since $\\sin x \\in [-1, 1]$)\n\n(ii) $\\{x\\} > 0 \\Rightarrow x \\notin$ integers\n\n(iii) base $x > 0$, (iv) $x \\neq 1$\n\n(v) $\\log_x\\{x\\} \\geq 0$: since $0 < \\{x\\} < 1$, this needs $0 < x < 1$ (then $\\{x\\} = x$ and $\\log_x x = 1 \\geq 0$)\n\n$\\Rightarrow x \\in (0, 1)$",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of functions",
+  "archetype": "domain intersection",
+  "difficulty": 3
+ },
+ {
+  "qno": 120,
+  "stem": "The value of the function $f(x) = \\dfrac{x^2 - 3x + 2}{x^2 + x - 6}$ lies in the interval",
+  "options": [
+   "$(-\\infty, \\infty) - \\left\\{\\dfrac{1}{5}, 1\\right\\}$",
+   "$(-\\infty, \\infty)$",
+   "$(-\\infty, \\infty) - \\{1\\}$",
+   "None of these"
+  ],
+  "solution": "$f(x)$ is defined if $x^2 + x - 6 \\neq 0$, i.e. $x \\neq -3, 2$.\n\nLet $y = \\dfrac{x^2-3x+2}{x^2+x-6} \\Rightarrow x^2(y-1) + x(y+3) - (6y+2) = 0$\n\nFor $x$ to be real, $(y+3)^2 + 4(y-1)(6y+2) \\geq 0 \\Rightarrow 25y^2 - 10y + 1 \\geq 0$, i.e. $(5y-1)^2 \\geq 0$\n\nWhich is true for all real $y$. Range of $f = (-\\infty, \\infty)$",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Range of rational functions",
+  "archetype": "discriminant method",
+  "difficulty": 3,
+  "notes": "Printed answer ignores excluded values (y = 1/5 at x = 2 and y = 1); key (B) retained.",
+  "exemplar_ok": false
+ }
+]

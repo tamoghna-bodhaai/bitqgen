@@ -1,0 +1,68 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "s-Block Elements",
+  "subtopic": "Diagonal relationship of Li and Mg",
+  "archetype": "property matching",
+  "brief": "Ask which property is shared by Li and Mg but not by Li and other alkali metals (e.g. nitride formation / carbonate decomposition); match the diagonal-pair property.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:35",
+   "2023s2:43",
+   "2025s2:46"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which property is shared by lithium and magnesium but not by the other alkali metals?",
+ "options": [
+  "Their carbonates are thermally stable toward oxide formation.",
+  "They form stable superoxides on reaction with oxygen.",
+  "They react directly with nitrogen to form nitrides.",
+  "Their hydroxides are highly soluble in water."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Lithium and magnesium both react directly with nitrogen to form nitrides (Li₃N and Mg₃N₂); the other alkali metals do not. The remaining options do not describe both elements.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$6\\text{Li}+\\text{N}_2\\rightarrow2\\text{Li}_3\\text{N}$\n$3\\text{Mg}+\\text{N}_2\\rightarrow\\text{Mg}_3\\text{N}_2$\nAmong alkali metals, lithium is the one that directly forms a nitride with nitrogen.\n\nIndependent check: Lithium and magnesium both react directly with nitrogen to form nitrides (Li₃N and Mg₃N₂); the other alkali metals do not. The remaining options do not describe both elements.",
+ "solution": "Lithium and magnesium react directly with nitrogen to form nitrides:\n$$6\\text{Li}+\\text{N}_2\\rightarrow2\\text{Li}_3\\text{N},\\qquad 3\\text{Mg}+\\text{N}_2\\rightarrow\\text{Mg}_3\\text{N}_2$$\nAmong the alkali metals, only lithium shows this property.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which property is shared by lithium and magnesium but not by the other alkali metals?",
+  "options": [
+   "They react directly with nitrogen to form nitrides.",
+   "They form stable superoxides on reaction with oxygen.",
+   "Their carbonates are thermally stable toward oxide formation.",
+   "Their hydroxides are highly soluble in water."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$6\\text{Li}+\\text{N}_2\\rightarrow2\\text{Li}_3\\text{N}$\n$3\\text{Mg}+\\text{N}_2\\rightarrow\\text{Mg}_3\\text{N}_2$\nAmong alkali metals, lithium is the one that directly forms a nitride with nitrogen.",
+  "distractor_notes": "B: lithium mainly forms oxide, not stable superoxide; magnesium forms oxide.\nC: lithium and magnesium carbonates decompose on heating.\nD: magnesium hydroxide is sparingly soluble in water."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

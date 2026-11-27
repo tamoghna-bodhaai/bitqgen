@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Differentiability of piecewise function",
+  "archetype": "check corners",
+  "brief": "Examine differentiability of a piecewise function at the junction point by comparing one-sided derivatives.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:99",
+   "2024s1:100",
+   "2025s2:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $f(x)=\\begin{cases}x^2+1,&x<2\\\\3x-1,&x\\ge 2\\end{cases}$. Which statement about $f$ at $x=2$ is correct?",
+ "options": [
+  "Differentiable, with $f'(2)=3$",
+  "Differentiable, with $f'(2)=4$",
+  "Not differentiable; $(f'_-(2),f'_+(2))=(4,3)$",
+  "Not differentiable; $(f'_-(2),f'_+(2))=(3,4)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At x=2, both pieces give 5, so f is continuous. The one-sided derivatives are f'_-(2)=4 and f'_+(2)=3, so f is not differentiable.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(2^-)=5=f(2^+)$. $f'_-(2)=2(2)=4$, $f'_+(2)=3$. Since $4\\ne3$, $f$ is not differentiable at $2$.\n\nIndependent check: At x=2, both pieces give 5, so f is continuous. The one-sided derivatives are f'_-(2)=4 and f'_+(2)=3, so f is not differentiable.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $f(x)=\\begin{cases}x^2+1,&x<2\\\\3x-1,&x\\ge 2\\end{cases}$. Which statement about $f$ at $x=2$ is correct?",
+  "options": [
+   "Differentiable, with $f'(2)=3$",
+   "Differentiable, with $f'(2)=4$",
+   "Not differentiable; $(f'_-(2),f'_+(2))=(4,3)$",
+   "Not differentiable; $(f'_-(2),f'_+(2))=(3,4)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$f(2^-)=5=f(2^+)$. $f'_-(2)=2(2)=4$, $f'_+(2)=3$. Since $4\\ne3$, $f$ is not differentiable at $2$.",
+  "distractor_notes": "A: uses only the right-hand derivative. B: uses only the left-hand derivative. D: reverses the left- and right-hand derivatives."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

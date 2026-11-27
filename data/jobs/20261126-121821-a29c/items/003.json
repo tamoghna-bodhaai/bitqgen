@@ -1,0 +1,68 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Null point of two charges",
+  "archetype": "force balance",
+  "brief": "Two point charges fixed, find null point position where field is zero",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:15",
+   "2025s2:19",
+   "2025s1:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "Charges $+16q$ and $-q$ are fixed on the $x$-axis at $x=-6$ cm and $x=18$ cm, respectively. The coordinate of the point where the electric field is zero is",
+ "options": [
+  "$8$ cm",
+  "$20$ cm",
+  "$26$ cm",
+  "$32$ cm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Between the charges, both fields point right, so they cannot cancel. To the right of both, set \\(16/(x+6)^2=1/(x-18)^2\\), giving \\(4/(x+6)=1/(x-18)\\) and \\(x=26\\,\\text{cm}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x>18$ cm, so the fields oppose.\n$$\\dfrac{16}{(x+6)^2}=\\dfrac{1}{(x-18)^2}$$\n$$\\dfrac{4}{x+6}=\\dfrac{1}{x-18}\\Rightarrow 4x-72=x+6\\Rightarrow x=26\\text{ cm}$$\n\nIndependent check: Between the charges, both fields point right, so they cannot cancel. To the right of both, set \\(16/(x+6)^2=1/(x-18)^2\\), giving \\(4/(x+6)=1/(x-18)\\) and \\(x=26\\,\\text{cm}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Charges $+16q$ and $-q$ are fixed on the $x$-axis at $x=-6$ cm and $x=18$ cm, respectively. The coordinate of the point where the electric field is zero is",
+  "options": [
+   "$8$ cm",
+   "$20$ cm",
+   "$26$ cm",
+   "$32$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$x>18$ cm, so the fields oppose.\n$$\\dfrac{16}{(x+6)^2}=\\dfrac{1}{(x-18)^2}$$\n$$\\dfrac{4}{x+6}=\\dfrac{1}{x-18}\\Rightarrow 4x-72=x+6\\Rightarrow x=26\\text{ cm}$$",
+  "distractor_notes": "A: Gives the distance beyond the $-q$ charge rather than the coordinate. B and D: Arithmetic errors when solving the field-balance equation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

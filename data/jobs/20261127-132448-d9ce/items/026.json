@@ -1,0 +1,68 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "YDSE intensity",
+  "archetype": "phase difference to intensity",
+  "brief": "YDSE with a thin mica sheet covering one slit; find new fringe position/intensity change from the added optical path.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:30",
+   "2023s2:15",
+   "2023s2:1"
+  ]
+ },
+ "status": "ok",
+ "stem": "A proton passes undeflected through crossed fields $E=1.6\\times10^{4}\\ \\text{V m}^{-1}$ and $B_1=0.08\\ \\text{T}$, both perpendicular to its velocity. It then enters a uniform field $B_2=0.10\\ \\text{T}$ at $60^\\circ$ to its velocity. Find its displacement magnitude after half a revolution. Take $m_p=1.6\\times10^{-27}\\ \\text{kg}$ and $e=1.6\\times10^{-19}\\ \\text{C}$.",
+ "options": [
+  "$\\pi\\ \\text{cm}$",
+  "$2\\sqrt{3}\\ \\text{cm}$",
+  "$2\\pi\\ \\text{cm}$",
+  "$\\sqrt{\\pi^2+12}\\ \\text{cm}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The selector gives v=E/B₁=2.0×10⁵ m/s. In B₂, v∥=v/2 and v⊥=√3v/2; the half-period is πmₚ/(eB₂)=π×10⁻⁷ s. The parallel displacement is π cm, while the perpendicular displacement is the orbit diameter, 2√3 cm. The total displacement is √(π²+12) cm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v=E/B_1=2.0\\times10^5\\ \\text{m s}^{-1}$.\n$\\omega=eB_2/m_p=1.0\\times10^7\\ \\text{s}^{-1}$; half-period $\\Delta t=\\pi/\\omega$.\n$d_{\\parallel}=v\\cos60^\\circ\\,\\Delta t=\\pi\\ \\text{cm}$.\n$r=v\\sin60^\\circ/\\omega=\\sqrt{3}\\ \\text{cm}$, so $d_{\\perp}=2r=2\\sqrt{3}\\ \\text{cm}$.\n$d=\\sqrt{d_{\\parallel}^2+d_{\\perp}^2}=\\sqrt{\\pi^2+12}\\ \\text{cm}$.\n\nIndependent check: The selector gives v=E/B₁=2.0×10⁵ m/s. In B₂, v∥=v/2 and v⊥=√3v/2; the half-period is πmₚ/(eB₂)=π×10⁻⁷ s. The parallel displacement is π cm, while the perpendicular displacement is the orbit diameter, 2√3 cm. The total displacement is √(π²+12) cm.",
+ "solution": "For undeflected motion, $v=E/B_1=2.0\\times10^5\\ \\text{m s}^{-1}$. In $B_2$, the half-period is $\\Delta t=\\pi m_p/(eB_2)=\\pi\\times10^{-7}\\ \\text{s}$; hence $d_{\\parallel}=v\\cos60^\\circ\\,\\Delta t=\\pi\\ \\text{cm}$. The perpendicular displacement is the orbit diameter, $d_{\\perp}=2v\\sin60^\\circ/\\omega=2\\sqrt3\\ \\text{cm}$, where $\\omega=eB_2/m_p$. Therefore, $d=\\sqrt{d_{\\parallel}^2+d_{\\perp}^2}=\\sqrt{\\pi^2+12}\\ \\text{cm}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A proton passes undeflected through crossed fields $E=1.6\\times10^{4}\\ \\text{V m}^{-1}$ and $B_1=0.08\\ \\text{T}$, both perpendicular to its velocity. It then enters a uniform field $B_2=0.10\\ \\text{T}$ at $60^\\circ$ to its velocity. Find its displacement magnitude after half a revolution. Take $m_p=1.6\\times10^{-27}\\ \\text{kg}$ and $e=1.6\\times10^{-19}\\ \\text{C}$.",
+  "options": [
+   "$\\pi\\ \\text{cm}$",
+   "$2\\sqrt{3}\\ \\text{cm}$",
+   "$\\sqrt{\\pi^2+12}\\ \\text{cm}$",
+   "$2\\pi\\ \\text{cm}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$v=E/B_1=2.0\\times10^5\\ \\text{m s}^{-1}$.\n$\\omega=eB_2/m_p=1.0\\times10^7\\ \\text{s}^{-1}$; half-period $\\Delta t=\\pi/\\omega$.\n$d_{\\parallel}=v\\cos60^\\circ\\,\\Delta t=\\pi\\ \\text{cm}$.\n$r=v\\sin60^\\circ/\\omega=\\sqrt{3}\\ \\text{cm}$, so $d_{\\perp}=2r=2\\sqrt{3}\\ \\text{cm}$.\n$d=\\sqrt{d_{\\parallel}^2+d_{\\perp}^2}=\\sqrt{\\pi^2+12}\\ \\text{cm}$.",
+  "distractor_notes": "A: uses only the displacement parallel to the field.\nB: uses only the diameter of the circular motion.\nD: uses the full-period parallel displacement instead of the half-period displacement."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

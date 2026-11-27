@@ -1,0 +1,76 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation",
+  "archetype": "read-off parameters",
+  "brief": "Give a snapshot graph (y vs x at t=0) of a sinusoidal wave; ask to read amplitude, wavelength and then frequency/wave speed from the standard wave equation matched to the diagram.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:20",
+   "2023s2:27",
+   "2026s1:16"
+  ]
+ },
+ "status": "ok",
+ "stem": "A sinusoidal wave travelling along the positive x-direction is shown at t = 0 in the figure. The wave speed is 24 m s^-1. The frequency of the wave is:",
+ "options": [
+  "0.25 Hz",
+  "6 Hz",
+  "4 Hz",
+  "144 Hz"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q001_stem_v0.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The graph shows one complete wavelength over 6 m, so \\(\\lambda=6\\,\\text{m}\\). Thus \\(f=v/\\lambda=24/6=4\\,\\text{Hz}\\).",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "From the figure, one complete cycle runs from x = 0 to x = 6 m, so the wavelength is lambda = 6 m.\nGiven wave speed v = 24 m s^-1.\nFrequency f = v / lambda = 24 / 6 = 4 Hz.\nThus the correct option is B.\n\nIndependent check: The graph shows one complete wavelength over 6 m, so \\(\\lambda=6\\,\\text{m}\\). Thus \\(f=v/\\lambda=24/6=4\\,\\text{Hz}\\).",
+ "solution": "From the figure, one complete cycle spans $\\lambda=6\\,\\text{m}$. Using $v=f\\lambda$, $$f=\\frac{v}{\\lambda}=\\frac{24}{6}=4\\,\\text{Hz}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A sinusoidal wave travelling along the positive x-direction is shown at t = 0 in the figure. The wave speed is 24 m s^-1. The frequency of the wave is:",
+  "options": [
+   "0.25 Hz",
+   "4 Hz",
+   "6 Hz",
+   "144 Hz"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw Cartesian axes. Horizontal axis labelled 'x (m)' with marked ticks at 0, 1.5, 3, 4.5, and 6; vertical axis labelled 'y (m)' with ticks at -2, 0, and 2. Draw one smooth sinusoidal wave through these points: starting at (0,0) with a positive slope, rising to a crest at (1.5,2), descending through (3,0), reaching a trough at (4.5,-2), then rising to cross the horizontal axis at (6,0). Place an arrow on the positive end of the x-axis pointing right.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "From the figure, one complete cycle runs from x = 0 to x = 6 m, so the wavelength is lambda = 6 m.\nGiven wave speed v = 24 m s^-1.\nFrequency f = v / lambda = 24 / 6 = 4 Hz.\nThus the correct option is B.",
+  "distractor_notes": "A: computed lambda/v instead of v/lambda; C: read the wavelength value directly as the frequency; D: computed v*lambda."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

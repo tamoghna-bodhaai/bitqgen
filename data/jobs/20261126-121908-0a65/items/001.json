@@ -1,0 +1,76 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE fringe position",
+  "archetype": "geometry + interference",
+  "brief": "YDSE diagram with labelled slit separation and screen distance; locate a point with given path difference and ask the fringe order/position at that point.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:17",
+   "2026s2:6",
+   "2024s1:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a YDSE using light of wavelength $500$ nm, point $P$ is located as shown in the figure. Which fringe is formed at $P$? Use the small-angle approximation.",
+ "options": [
+  "The first dark fringe",
+  "The second dark fringe",
+  "The second bright fringe",
+  "The third bright fringe"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q001_stem_v0.png",
+  "width_pct": 75,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Path difference: Δ ≈ dy/D = (0.60×10⁻³)(2.5×10⁻³)/2.0 = 0.75×10⁻⁶ m = 1.5λ. This is the second dark fringe.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\Delta \\simeq \\dfrac{dy}{D}=\\dfrac{(0.60\\times10^{-3})(2.5\\times10^{-3})}{2.0}=7.5\\times10^{-7}\\ \\text{m}=1.5\\lambda$$\n$$\\Delta=(n+\\tfrac12)\\lambda,\\quad n=1\\;\\Rightarrow\\;\\text{second dark fringe}$$\n\nIndependent check: Path difference: Δ ≈ dy/D = (0.60×10⁻³)(2.5×10⁻³)/2.0 = 0.75×10⁻⁶ m = 1.5λ. This is the second dark fringe.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a YDSE using light of wavelength $500$ nm, point $P$ is located as shown in the figure. Which fringe is formed at $P$? Use the small-angle approximation.",
+  "options": [
+   "The first dark fringe",
+   "The second dark fringe",
+   "The second bright fringe",
+   "The third bright fringe"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw two narrow vertical slits S1 and S2 on the left, separated vertically by d = 0.60 mm. Draw a vertical screen to their right, with the screen distance from the midpoint between the slits labelled D = 2.0 m. Mark O on the screen on the horizontal line through the slit midpoint. Mark P on the screen 2.5 mm above O and label OP = y. Show the horizontal central axis from the slit midpoint to O.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$$\\Delta \\simeq \\dfrac{dy}{D}=\\dfrac{(0.60\\times10^{-3})(2.5\\times10^{-3})}{2.0}=7.5\\times10^{-7}\\ \\text{m}=1.5\\lambda$$\n$$\\Delta=(n+\\tfrac12)\\lambda,\\quad n=1\\;\\Rightarrow\\;\\text{second dark fringe}$$",
+  "distractor_notes": "A: treats $1.5\\lambda$ as the first dark fringe. C: treats a half-integer path difference as constructive interference. D: mistakes $1.5\\lambda$ for $3\\lambda$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

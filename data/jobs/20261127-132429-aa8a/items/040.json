@@ -1,0 +1,68 @@
+{
+ "qno": 40,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 40,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment",
+  "archetype": "electron-configuration numerical",
+  "brief": "For a given 3d-series ion, write the d-electron configuration, count unpaired electrons and compute the spin-only magnetic moment.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:57",
+   "2026s2:43",
+   "2026s2:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a gaseous high-spin $\\text{Fe}^{2+}$ ion, which row gives its $3d$ configuration, number of unpaired electrons and spin-only magnetic moment?",
+ "options": [
+  "$3d^7$; $3$; $3.87\\ \\text{BM}$",
+  "$3d^6$; $2$; $2.83\\ \\text{BM}$",
+  "$3d^5$; $5$; $5.92\\ \\text{BM}$",
+  "$3d^6$; $4$; $4.90\\ \\text{BM}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fe²⁺ has a 3d⁶ configuration. High-spin d⁶ has 4 unpaired electrons, so μ = √[4(4 + 2)] = √24 ≈ 4.90 BM.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Fe}^{2+}: [\\text{Ar}]3d^6$.\nHigh-spin $3d^6$ has $n=4$ unpaired electrons.\n$\\mu_{\\text{so}}=\\sqrt{n(n+2)}=\\sqrt{4(6)}=\\sqrt{24}=4.90\\ \\text{BM}$.\n\nIndependent check: Fe²⁺ has a 3d⁶ configuration. High-spin d⁶ has 4 unpaired electrons, so μ = √[4(4 + 2)] = √24 ≈ 4.90 BM.",
+ "solution": "$\\text{Fe}^{2+}$ has configuration $[\\text{Ar}]3d^6$. In the high-spin state, $3d^6$ has $n=4$ unpaired electrons.\n$$\\mu_{\\mathrm{so}}=\\sqrt{n(n+2)}=\\sqrt{4(6)}=\\sqrt{24}=4.90\\ \\text{BM}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a gaseous high-spin $\\text{Fe}^{2+}$ ion, which row gives its $3d$ configuration, number of unpaired electrons and spin-only magnetic moment?",
+  "options": [
+   "$3d^6$; $4$; $4.90\\ \\text{BM}$",
+   "$3d^6$; $2$; $2.83\\ \\text{BM}$",
+   "$3d^5$; $5$; $5.92\\ \\text{BM}$",
+   "$3d^7$; $3$; $3.87\\ \\text{BM}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{Fe}^{2+}: [\\text{Ar}]3d^6$.\nHigh-spin $3d^6$ has $n=4$ unpaired electrons.\n$\\mu_{\\text{so}}=\\sqrt{n(n+2)}=\\sqrt{4(6)}=\\sqrt{24}=4.90\\ \\text{BM}$.",
+  "distractor_notes": "B: Counts the ion as low-spin and pairs two additional electrons.\\nC: Removes a $3d$ electron instead of the two $4s$ electrons.\\nD: Adds an electron to the $3d$ subshell instead of removing two $4s$ electrons."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

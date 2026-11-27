@@ -1,0 +1,68 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Arithmetic progression",
+  "archetype": "sum to n terms",
+  "brief": "Given sum of a few terms of an AP, compute a specific later term; keep numbers small.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:139",
+   "2024s2:127",
+   "2025s2:93"
+  ]
+ },
+ "status": "ok",
+ "stem": "The sums of the first $5$ and first $8$ terms of an arithmetic progression are $35$ and $80$, respectively. Find its $10$th term.",
+ "options": [
+  "$21$",
+  "$19$",
+  "$17$",
+  "$23$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From S₅=35, a+2d=7. From S₈=80, 2a+7d=20. Solving gives a=3, d=2, so t₁₀=a+9d=21.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$5a+10d=35\\Rightarrow a+2d=7$; $8a+28d=80\\Rightarrow 2a+7d=20$\n$d=2,\\ a=3$\n$a_{10}=a+9d=3+18=21$\n\nIndependent check: From S₅=35, a+2d=7. From S₈=80, 2a+7d=20. Solving gives a=3, d=2, so t₁₀=a+9d=21.",
+ "solution": "Using $S_n=\\frac n2[2a+(n-1)d]$, the given sums give\n$$a+2d=7,\\qquad 2a+7d=20.$$\nSolving, $a=3$ and $d=2$; hence $t_{10}=a+9d=3+18=21$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sums of the first $5$ and first $8$ terms of an arithmetic progression are $35$ and $80$, respectively. Find its $10$th term.",
+  "options": [
+   "$17$",
+   "$19$",
+   "$21$",
+   "$23$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$5a+10d=35\\Rightarrow a+2d=7$; $8a+28d=80\\Rightarrow 2a+7d=20$\n$d=2,\\ a=3$\n$a_{10}=a+9d=3+18=21$",
+  "distractor_notes": "A: underestimates the common difference or term index.\nB: uses an incorrect term index.\nD: overestimates the common difference or term index."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

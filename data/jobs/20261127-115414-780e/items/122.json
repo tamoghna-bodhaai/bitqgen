@@ -1,0 +1,68 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Approximations using differentials",
+  "archetype": "differential error",
+  "brief": "Use dy ≈ f′(x)dx to estimate the error or percentage error in a computed quantity (e.g., side/cube/sphere).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:121",
+   "2024s1:130",
+   "2024s1:99"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the radius of a circular disc is measured as 7 cm with an error of 0.2 cm, then the approximate error in its area is",
+ "options": [
+  "2.8 pi cm^2",
+  "1.4 pi cm^2",
+  "0.28 pi cm^2",
+  "4.2 pi cm^2"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using dA ≈ 2πr·dr = 2π(7)(0.2) = 2.8π cm².",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Area A = pi r^2, so dA = 2*pi*r*dr. With r = 7 cm and dr = 0.2 cm, dA = 2*pi*7*0.2 = 2.8 pi cm^2.\n\nIndependent check: Using dA ≈ 2πr·dr = 2π(7)(0.2) = 2.8π cm².",
+ "solution": "For $A=\\pi r^2$, the approximate error is $dA=2\\pi r\\,dr$. Substituting $r=7$ cm and $dr=0.2$ cm,\n$$dA=2\\pi(7)(0.2)=2.8\\pi\\text{ cm}^2.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the radius of a circular disc is measured as 7 cm with an error of 0.2 cm, then the approximate error in its area is",
+  "options": [
+   "0.28 pi cm^2",
+   "1.4 pi cm^2",
+   "2.8 pi cm^2",
+   "4.2 pi cm^2"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Area A = pi r^2, so dA = 2*pi*r*dr. With r = 7 cm and dr = 0.2 cm, dA = 2*pi*7*0.2 = 2.8 pi cm^2.",
+  "distractor_notes": "A: used dr = 0.02 cm instead of 0.2 cm; B: forgot the factor 2 in dA = 2*pi*r*dr; D: used an incorrect error dr = 0.3 cm."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Escape vs orbital speed",
+  "archetype": "single-formula",
+  "brief": "For a planet, given escape speed, ask for the orbital speed of a satellite close to its surface (or vice versa) using the fixed ratio between them.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:20",
+   "2026s2:28",
+   "2026s1:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "The escape speed from the surface of a spherical planet is $14.14\\text{ km s}^{-1}$. The orbital speed of a satellite revolving in a circular orbit close to the surface of this planet is approximately:",
+ "options": [
+  "$7.07\\text{ km s}^{-1}$",
+  "$10.0\\text{ km s}^{-1}$",
+  "$20.0\\text{ km s}^{-1}$",
+  "$28.28\\text{ km s}^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "v_esc = √(2GM/R) and near-surface orbital speed v_o = √(GM/R), so v_o = v_esc/√2 = 14.14/1.414 ≈ 10.0 km/s.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The escape speed from the surface of a planet of mass $M$ and radius $R$ is given by:\n$$v_e = \\sqrt{\\dfrac{2GM}{R}}$$\nThe orbital speed of a satellite in a circular orbit close to the surface is:\n$$v_o = \\sqrt{\\dfrac{GM}{R}}$$\nTherefore, the two speeds are related by:\n$$v_e = \\sqrt{2}\\,v_o \\implies v_o = \\dfrac{v_e}{\\sqrt{2}}$$\nSubstituting $v_e = 14.14\\text{ km s}^{-1}$ and $\\sqrt{2} \\approx 1.414$:\n$$v_o = \\dfrac{14.14}{1.414} = 10.0\\text{ km s}^{-1}$$\n\nIndependent check: v_esc = √(2GM/R) and near-surface orbital speed v_o = √(GM/R), so v_o = v_esc/√2 = 14.14/1.414 ≈ 10.0 km/s.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The escape speed from the surface of a spherical planet is $14.14\\text{ km s}^{-1}$. The orbital speed of a satellite revolving in a circular orbit close to the surface of this planet is approximately:",
+  "options": [
+   "$7.07\\text{ km s}^{-1}$",
+   "$10.0\\text{ km s}^{-1}$",
+   "$20.0\\text{ km s}^{-1}$",
+   "$28.28\\text{ km s}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "The escape speed from the surface of a planet of mass $M$ and radius $R$ is given by:\n$$v_e = \\sqrt{\\dfrac{2GM}{R}}$$\nThe orbital speed of a satellite in a circular orbit close to the surface is:\n$$v_o = \\sqrt{\\dfrac{GM}{R}}$$\nTherefore, the two speeds are related by:\n$$v_e = \\sqrt{2}\\,v_o \\implies v_o = \\dfrac{v_e}{\\sqrt{2}}$$\nSubstituting $v_e = 14.14\\text{ km s}^{-1}$ and $\\sqrt{2} \\approx 1.414$:\n$$v_o = \\dfrac{14.14}{1.414} = 10.0\\text{ km s}^{-1}$$",
+  "distractor_notes": "Option A corresponds to dividing by 2 instead of $\\sqrt{2}$ ($14.14 / 2 = 7.07$).\nOption C corresponds to mistakenly multiplying by $\\sqrt{2}$ instead of dividing ($14.14 \\times \\sqrt{2} \\approx 20.0$).\nOption D corresponds to multiplying by 2 ($14.14 \\times 2 = 28.28$).",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

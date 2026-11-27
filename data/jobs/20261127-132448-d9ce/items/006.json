@@ -1,0 +1,68 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Projectile motion",
+  "archetype": "equation-solving numeric",
+  "brief": "Projectile given range and maximum height; solve the two trajectory equations to find launch speed and angle of projection.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:30",
+   "2022:30",
+   "2024s2:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A projectile is launched from level ground and lands at the same level. Its range is $60$ m and its maximum height is $20$ m. Taking $g=10$ m s$^{-2}$, its launch speed and angle of projection are",
+ "options": [
+  "$25$ m s$^{-1}$, $36.9^\\circ$",
+  "$20$ m s$^{-1}$, $53.1^\\circ$",
+  "$25$ m s$^{-1}$, $53.1^\\circ$",
+  "$30$ m s$^{-1}$, $48.2^\\circ$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From H = u_y²/(2g), u_y = 20 m s⁻¹. Flight time = 2u_y/g = 4 s, so u_x = 60/4 = 15 m s⁻¹. Thus speed = 25 m s⁻¹ and angle = tan⁻¹(20/15) ≈ 53.1°.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$H=\\dfrac{u_y^2}{2g}\\Rightarrow u_y=20$ m s$^{-1}$.\n$T=\\dfrac{2u_y}{g}=4$ s; hence $u_x=\\dfrac{R}{T}=15$ m s$^{-1}$.\n$u=\\sqrt{u_x^2+u_y^2}=25$ m s$^{-1}$; $\\theta=\\tan^{-1}\\!\\left(\\dfrac{20}{15}\\right)=53.1^\\circ$.\n\nIndependent check: From H = u_y²/(2g), u_y = 20 m s⁻¹. Flight time = 2u_y/g = 4 s, so u_x = 60/4 = 15 m s⁻¹. Thus speed = 25 m s⁻¹ and angle = tan⁻¹(20/15) ≈ 53.1°.",
+ "solution": "From $H=\\dfrac{u_y^2}{2g}$, $u_y=\\sqrt{2gH}=20\\,\\text{m s}^{-1}$. Thus $T=\\dfrac{2u_y}{g}=4\\,\\text{s}$ and $u_x=\\dfrac{R}{T}=15\\,\\text{m s}^{-1}$.\\\\\n$$u=\\sqrt{u_x^2+u_y^2}=25\\,\\text{m s}^{-1},\\qquad \\theta=\\tan^{-1}\\!\\left(\\frac{u_y}{u_x}\\right)=53.1^\\circ.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A projectile is launched from level ground and lands at the same level. Its range is $60$ m and its maximum height is $20$ m. Taking $g=10$ m s$^{-2}$, its launch speed and angle of projection are",
+  "options": [
+   "$25$ m s$^{-1}$, $53.1^\\circ$",
+   "$20$ m s$^{-1}$, $53.1^\\circ$",
+   "$25$ m s$^{-1}$, $36.9^\\circ$",
+   "$30$ m s$^{-1}$, $48.2^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$H=\\dfrac{u_y^2}{2g}\\Rightarrow u_y=20$ m s$^{-1}$.\n$T=\\dfrac{2u_y}{g}=4$ s; hence $u_x=\\dfrac{R}{T}=15$ m s$^{-1}$.\n$u=\\sqrt{u_x^2+u_y^2}=25$ m s$^{-1}$; $\\theta=\\tan^{-1}\\!\\left(\\dfrac{20}{15}\\right)=53.1^\\circ$.",
+  "distractor_notes": "B: Uses the vertical component as the launch speed.\nC: Takes the complementary angle, measured from the vertical.\nD: Incorrectly combines the range and height to find speed and angle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

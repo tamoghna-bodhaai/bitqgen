@@ -1,0 +1,76 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Cell combinations",
+  "archetype": "circuit analysis",
+  "brief": "Cell combinations (circuit diagram): cells with emf and internal resistance connected in series/parallel across an external load; find current and terminal voltage, comparing with the equivalent-cell approach.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:11",
+   "2025s1:4",
+   "2026s2:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the circuit shown, find the current through the $4\\ \\text{Ω}$ load and the terminal voltage across the cell combination.",
+ "options": [
+  "$0.75\\ \\text{A},\\ 3\\ \\text{V}$",
+  "$1.0\\ \\text{A},\\ 4\\ \\text{V}$",
+  "$1.5\\ \\text{A},\\ 6\\ \\text{V}$",
+  "$1.2\\ \\text{A},\\ 4.8\\ \\text{V}$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q017_stem_v0.png",
+  "width_pct": 55,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The two identical 6 V cells with 2 Ω internal resistance are in parallel, giving an equivalent emf of 6 V and internal resistance of 1 Ω. Thus the load current is $6/(4+1)=1.2$ A, and the terminal voltage is $1.2\\times4=4.8$ V.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For identical cells in parallel: $\\mathcal{E}_{\\text{eq}}=6\\ \\text{V}$, $r_{\\text{eq}}=2\\parallel2=1\\ \\text{Ω}$\n$I=\\dfrac{6}{4+1}=1.2\\ \\text{A}$\n$V_{\\text{terminal}}=IR=(1.2)(4)=4.8\\ \\text{V}$\n\nIndependent check: The two identical 6 V cells with 2 Ω internal resistance are in parallel, giving an equivalent emf of 6 V and internal resistance of 1 Ω. Thus the load current is $6/(4+1)=1.2$ A, and the terminal voltage is $1.2\\times4=4.8$ V.",
+ "solution": "For identical cells in parallel, $\u00024mathcal{E}_{\\text{eq}}=6\\,\\text{V}$ and $r_{\\text{eq}}=2\\parallel2=1\\,\\Omega$.\n$$I=\\frac{6}{4+1}=1.2\\,\\text{A},\\qquad V_{\\text{terminal}}=IR=(1.2)(4)=4.8\\,\\text{V}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown, find the current through the $4\\ \\text{Ω}$ load and the terminal voltage across the cell combination.",
+  "options": [
+   "$0.75\\ \\text{A},\\ 3\\ \\text{V}$",
+   "$1.0\\ \\text{A},\\ 4\\ \\text{V}$",
+   "$1.2\\ \\text{A},\\ 4.8\\ \\text{V}$",
+   "$1.5\\ \\text{A},\\ 6\\ \\text{V}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw two horizontal common rails, upper and lower. Connect three branches between the rails: the left branch contains a cell of emf 6 V in series with an internal resistor of 2 Ω; the middle branch contains an identical 6 V cell in series with an internal resistor of 2 Ω; the right branch contains an external resistor labelled 4 Ω. In both cell branches, show the positive cell terminal toward the upper rail and the negative terminal toward the lower rail. Label each branch component clearly. Use conventional cell symbols and resistor symbols.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "For identical cells in parallel: $\\mathcal{E}_{\\text{eq}}=6\\ \\text{V}$, $r_{\\text{eq}}=2\\parallel2=1\\ \\text{Ω}$\n$I=\\dfrac{6}{4+1}=1.2\\ \\text{A}$\n$V_{\\text{terminal}}=IR=(1.2)(4)=4.8\\ \\text{V}$",
+  "distractor_notes": "A: combines the internal resistances incorrectly as $4\\ \\text{Ω}$. B: treats the parallel internal resistance as $2\\ \\text{Ω}$. D: ignores the internal resistance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "Definite integral of odd function over symmetric interval, or even-function split; require recognition step plus a standard result.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:119",
+   "2024s2:121",
+   "2021:130"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of $\\displaystyle\\int_{-1}^{1}\\left(x^3+\\dfrac{1}{1+x^2}\\right)\\,dx$ is",
+ "options": [
+  "$0$",
+  "$\\dfrac{\\pi}{2}$",
+  "$\\dfrac{\\pi}{4}$",
+  "$\\pi$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The odd term $x^3$ integrates to $0$ on $[-1,1]$. The remaining integral is $[\\arctan x]_{-1}^{1}=\\pi/2$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^3$ is odd, so its integral over $[-1,1]$ is $0$.\\n$\\displaystyle\\int_{-1}^{1}\\frac{dx}{1+x^2}=2\\int_0^1\\frac{dx}{1+x^2}=2[\\arctan x]_0^1=\\frac{\\pi}{2}$.\n\nIndependent check: The odd term $x^3$ integrates to $0$ on $[-1,1]$. The remaining integral is $[\\arctan x]_{-1}^{1}=\\pi/2$.",
+ "solution": "Since $x^3$ is odd, $[?]$ its integral over $[-1,1]$ is zero. Also,\n$$\\int_{-1}^{1}\\frac{dx}{1+x^2}=[\\arctan x]_{-1}^{1}=\\frac{\\pi}{4}-\\left(-\\frac{\\pi}{4}\\right)=\\frac{\\pi}{2}.$$\nHence the value is $\\dfrac{\\pi}{2}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The value of $\\displaystyle\\int_{-1}^{1}\\left(x^3+\\dfrac{1}{1+x^2}\\right)\\,dx$ is",
+  "options": [
+   "$0$",
+   "$\\dfrac{\\pi}{4}$",
+   "$\\dfrac{\\pi}{2}$",
+   "$\\pi$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$x^3$ is odd, so its integral over $[-1,1]$ is $0$.\\n$\\displaystyle\\int_{-1}^{1}\\frac{dx}{1+x^2}=2\\int_0^1\\frac{dx}{1+x^2}=2[\\arctan x]_0^1=\\frac{\\pi}{2}$.",
+  "distractor_notes": "A: Treats the entire integrand as odd.\\nB: Uses only the integral over $[0,1]$, omitting the symmetry factor.\\nD: Uses an incorrect value for $\\arctan 1$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

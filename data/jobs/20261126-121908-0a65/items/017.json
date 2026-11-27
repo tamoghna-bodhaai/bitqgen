@@ -1,0 +1,67 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Dimensional analysis of field expressions",
+  "archetype": "dimension computation",
+  "brief": "Given the expression for electric/gravitational field at a distance, check its dimensional consistency and deduce the correct option by dimensional analysis.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:2",
+   "2024s1:1",
+   "2025s2:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "The gravitational field intensity at a distance $r$ from a source is given by $E = \\dfrac{A r}{(r^2 + B)^{3/2}}$, where $A$ and $B$ are constants. The dimensional formula of $A$ is:",
+ "options": [
+  "$[\\text{M}^0\\text{L}^2\\text{T}^{-2}]$",
+  "$[\\text{M}^0\\text{L}^3\\text{T}^{-2}]$",
+  "$[\\text{M}\\text{L}^3\\text{T}^{-2}]$",
+  "$[\\text{M}^{-1}\\text{L}^3\\text{T}^{-2}]$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "[E] = LT⁻² (field = acceleration). Since B adds to r², [B] = L², so denominator has dimension L³. Then [A] = [E]·L³/[r] = LT⁻²·L³/L = M⁰L³T⁻².",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "According to the principle of homogeneity, terms added together must have the same dimensions. Since $B$ is added to $r^2$ in the denominator: $[B] = [r^2] = [\\text{L}^2]$. Therefore, the denominator has dimensions: $[(r^2 + B)^{3/2}] = ([\\text{L}^2])^{3/2} = [\\text{L}^3]$. Gravitational field intensity $E$ is force per unit mass: $[E] = \\dfrac{[\\text{Force}]}{[\\text{Mass}]} = \\dfrac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{M}]} = [\\text{M}^0\\text{L}\\text{T}^{-2}]$. From the given equation: $[E] = \\dfrac{[A][r]}{[(r^2 + B)^{3/2}]} \\implies [\\text{L}\\text{T}^{-2}] = \\dfrac{[A][\\text{L}]}{[\\text{L}^3]} = \\dfrac{[A]}{[\\text{L}^2]}$. Solving for $[A]$ gives: $[A] = [\\text{L}\\text{T}^{-2}][\\text{L}^2] = [\\text{M}^0\\text{L}^3\\text{T}^{-2}]$.\n\nIndependent check: [E] = LT⁻² (field = acceleration). Since B adds to r², [B] = L², so denominator has dimension L³. Then [A] = [E]·L³/[r] = LT⁻²·L³/L = M⁰L³T⁻².",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The gravitational field intensity at a distance $r$ from a source is given by $E = \\dfrac{A r}{(r^2 + B)^{3/2}}$, where $A$ and $B$ are constants. The dimensional formula of $A$ is:",
+  "options": [
+   "$[\\text{M}^0\\text{L}^2\\text{T}^{-2}]$",
+   "$[\\text{M}^0\\text{L}^3\\text{T}^{-2}]$",
+   "$[\\text{M}\\text{L}^3\\text{T}^{-2}]$",
+   "$[\\text{M}^{-1}\\text{L}^3\\text{T}^{-2}]$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "According to the principle of homogeneity, terms added together must have the same dimensions. Since $B$ is added to $r^2$ in the denominator: $[B] = [r^2] = [\\text{L}^2]$. Therefore, the denominator has dimensions: $[(r^2 + B)^{3/2}] = ([\\text{L}^2])^{3/2} = [\\text{L}^3]$. Gravitational field intensity $E$ is force per unit mass: $[E] = \\dfrac{[\\text{Force}]}{[\\text{Mass}]} = \\dfrac{[\\text{M}\\text{L}\\text{T}^{-2}]}{[\\text{M}]} = [\\text{M}^0\\text{L}\\text{T}^{-2}]$. From the given equation: $[E] = \\dfrac{[A][r]}{[(r^2 + B)^{3/2}]} \\implies [\\text{L}\\text{T}^{-2}] = \\dfrac{[A][\\text{L}]}{[\\text{L}^3]} = \\dfrac{[A]}{[\\text{L}^2]}$. Solving for $[A]$ gives: $[A] = [\\text{L}\\text{T}^{-2}][\\text{L}^2] = [\\text{M}^0\\text{L}^3\\text{T}^{-2}]$.",
+  "distractor_notes": "A: Forgets the power of 3/2 and treats the denominator as having dimension [L^2], yielding [M^0 L^2 T^-2]. C: Confuses gravitational field intensity with gravitational force ([M L T^-2]), introducing an extra factor of mass to give [M L^3 T^-2]. D: Assumes constant A is identical to the universal gravitational constant G, forgetting the mass factor (since A = GM), which yields [M^-1 L^3 T^-2].",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

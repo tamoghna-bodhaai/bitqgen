@@ -1,0 +1,67 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Wheatstone bridge",
+  "archetype": "symbolic condition",
+  "brief": "Wheatstone bridge with one unknown resistance; use balance condition to find it, or find equivalent resistance of unbalanced bridge",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:12",
+   "2024s1:9",
+   "2026s2:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a Wheatstone bridge network, the four arms $AB$, $BC$, $CD$, and $DA$ have resistances $P$, $Q$, $S$, and $R$, respectively. A galvanometer is connected between $B$ and $D$, and a battery across $A$ and $C$. When an unknown resistor of resistance $X$ is connected in parallel with arm $CD$, the bridge balances. If $X$ is instead disconnected from $CD$ and connected in series with arm $DA$, the bridge is again balanced. The value of $X$ must be",
+ "options": [
+  "$\\sqrt{RS}$",
+  "$\\dfrac{RS}{R+S}$",
+  "$\\dfrac{R+S}{2}$",
+  "$\\dfrac{S^2}{R}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Balance requires P/Q = R_arm/S_arm. With X parallel to CD (S): P/Q = R(S+X)/(SX). With X in series with DA (R): P/Q = (R+X)/S. Equating: R(S+X)/X = R+X ⇒ RS = X² ⇒ X = √(RS). Numeric check (R=3, S=12, X=6) gives both ratios 0.75.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The Wheatstone bridge has arms $AB = P$, $BC = Q$, $DA = R$, and $CD = S$.\n\nIn the first case, when resistor $X$ is connected in parallel with arm $CD$, the effective resistance of arm $CD$ becomes:\n$$S' = \\dfrac{S X}{S + X}$$\nThe balance condition gives:\n$$\\dfrac{P}{Q} = \\dfrac{R}{S'} = \\dfrac{R(S + X)}{S X} \\quad \\text{--- (1)}$$\n\nIn the second case, when $X$ is connected in series with arm $DA$, the effective resistance of arm $DA$ becomes:\n$$R' = R + X$$\nwhile arm $CD$ has its original resistance $S$. The bridge is again balanced, so:\n$$\\dfrac{P}{Q} = \\dfrac{R'}{S} = \\dfrac{R + X}{S} \\quad \\text{--- (2)}$$\n\nEquating (1) and (2):\n$$\\dfrac{R(S + X)}{S X} = \\dfrac{R + X}{S}$$\n\nMultiplying both sides by $S$:\n$$\\dfrac{R(S + X)}{X} = R + X$$\n$$\\dfrac{RS}{X} + R = R + X$$\n$$\\dfrac{RS}{X} = X \\implies X^2 = RS \\implies X = \\sqrt{RS}$$\n\nIndependent check: Balance requires P/Q = R_arm/S_arm. With X parallel to CD (S): P/Q = R(S+X)/(SX). With X in series with DA (R): P/Q = (R+X)/S. Equating: R(S+X)/X = R+X ⇒ RS = X² ⇒ X = √(RS). Numeric check (R=3, S=12, X=6) gives both ratios 0.75.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "In a Wheatstone bridge network, the four arms $AB$, $BC$, $CD$, and $DA$ have resistances $P$, $Q$, $S$, and $R$, respectively. A galvanometer is connected between $B$ and $D$, and a battery across $A$ and $C$. When an unknown resistor of resistance $X$ is connected in parallel with arm $CD$, the bridge balances. If $X$ is instead disconnected from $CD$ and connected in series with arm $DA$, the bridge is again balanced. The value of $X$ must be",
+  "options": [
+   "$\\sqrt{RS}$",
+   "$\\dfrac{RS}{R+S}$",
+   "$\\dfrac{R+S}{2}$",
+   "$\\dfrac{S^2}{R}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "The Wheatstone bridge has arms $AB = P$, $BC = Q$, $DA = R$, and $CD = S$.\n\nIn the first case, when resistor $X$ is connected in parallel with arm $CD$, the effective resistance of arm $CD$ becomes:\n$$S' = \\dfrac{S X}{S + X}$$\nThe balance condition gives:\n$$\\dfrac{P}{Q} = \\dfrac{R}{S'} = \\dfrac{R(S + X)}{S X} \\quad \\text{--- (1)}$$\n\nIn the second case, when $X$ is connected in series with arm $DA$, the effective resistance of arm $DA$ becomes:\n$$R' = R + X$$\nwhile arm $CD$ has its original resistance $S$. The bridge is again balanced, so:\n$$\\dfrac{P}{Q} = \\dfrac{R'}{S} = \\dfrac{R + X}{S} \\quad \\text{--- (2)}$$\n\nEquating (1) and (2):\n$$\\dfrac{R(S + X)}{S X} = \\dfrac{R + X}{S}$$\n\nMultiplying both sides by $S$:\n$$\\dfrac{R(S + X)}{X} = R + X$$\n$$\\dfrac{RS}{X} + R = R + X$$\n$$\\dfrac{RS}{X} = X \\implies X^2 = RS \\implies X = \\sqrt{RS}$$",
+  "distractor_notes": "B encodes confusing the geometric mean with the parallel combination formula (harmonic-type form).\nC encodes assuming the arithmetic mean of the two arm resistances.\nD encodes an algebraic error when equating the balance conditions (cancelling terms improperly to get $X = S^2/R$).",
+  "figure": null,
+  "difficulty_estimate": 4
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Direction cosines",
+  "archetype": "sum of cos² = 1",
+  "brief": "Given direction cosines/ratios of a line, use l²+m²+n²=1 to find an unknown component or the angle with an axis.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:126",
+   "2025s1:93",
+   "2026s2:108"
+  ]
+ },
+ "status": "ok",
+ "stem": "A line has direction cosines $l=\\dfrac{1}{3}$ and $m=\\dfrac{2}{3}$. If its third direction cosine $n$ is positive, find $n$.",
+ "options": [
+  "$\\dfrac{1}{3}$",
+  "$\\dfrac{\\sqrt{5}}{3}$",
+  "$\\dfrac{2}{3}$",
+  "$1$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Direction cosines satisfy l² + m² + n² = 1. Thus n² = 1 − 1/9 − 4/9 = 4/9; since n is positive, n = 2/3.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$l^2+m^2+n^2=1$; $n^2=1-\\dfrac{1}{9}-\\dfrac{4}{9}=\\dfrac{4}{9}$. Since $n>0$, $n=\\dfrac{2}{3}$.\n\nIndependent check: Direction cosines satisfy l² + m² + n² = 1. Thus n² = 1 − 1/9 − 4/9 = 4/9; since n is positive, n = 2/3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A line has direction cosines $l=\\dfrac{1}{3}$ and $m=\\dfrac{2}{3}$. If its third direction cosine $n$ is positive, find $n$.",
+  "options": [
+   "$\\dfrac{1}{3}$",
+   "$\\dfrac{\\sqrt{5}}{3}$",
+   "$\\dfrac{2}{3}$",
+   "$1$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$l^2+m^2+n^2=1$; $n^2=1-\\dfrac{1}{9}-\\dfrac{4}{9}=\\dfrac{4}{9}$. Since $n>0$, $n=\\dfrac{2}{3}$.",
+  "distractor_notes": "A: uses an incorrect remainder; B: adds rather than subtracts the known squares; D: assumes a direction cosine equals one."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

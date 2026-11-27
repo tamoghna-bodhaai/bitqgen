@@ -1,0 +1,68 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Cross product and angle between vectors",
+  "archetype": "standard identity",
+  "brief": "Use |a×b|² + (a·b)² = |a|²|b|² or dot/cross relation to find an unknown dot product given magnitudes and the cross product magnitude.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:119",
+   "2024s2:94",
+   "2026s1:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $\\vec{a}$ and $\\vec{b}$ be two vectors such that $|\\vec{a}| = 2$, $|\\vec{b}| = 3$ and $|\\vec{a} \\times \\vec{b}| = \\sqrt{11}$. Then $|\\vec{a} \\cdot \\vec{b}|$ is equal to",
+ "options": [
+  "$\\sqrt{11}$",
+  "5",
+  "6",
+  "25"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use $|\\vec a|^2|\\vec b|^2=|\\vec a\\cdot\\vec b|^2+|\\vec a\\times\\vec b|^2$. Hence $36=|\\vec a\\cdot\\vec b|^2+11$, giving $|\\vec a\\cdot\\vec b|=5$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "$|\\vec{a}\\times\\vec{b}|^2 + (\\vec{a}\\cdot\\vec{b})^2 = |\\vec{a}|^2|\\vec{b}|^2$.\n$(\\sqrt{11})^2 + (\\vec{a}\\cdot\\vec{b})^2 = 2^2 \\cdot 3^2$\n$\\Rightarrow 11 + (\\vec{a}\\cdot\\vec{b})^2 = 36$\n$\\Rightarrow (\\vec{a}\\cdot\\vec{b})^2 = 25$\n$\\Rightarrow |\\vec{a}\\cdot\\vec{b}| = 5$.\n\nIndependent check: Use $|\\vec a|^2|\\vec b|^2=|\\vec a\\cdot\\vec b|^2+|\\vec a\\times\\vec b|^2$. Hence $36=|\\vec a\\cdot\\vec b|^2+11$, giving $|\\vec a\\cdot\\vec b|=5$.",
+ "solution": "Use $|\u0005vec a|^2|\u0005vec b|^2=|\u0005vec a\\cdot\u0005vec b|^2+|\u0005vec a\\times\u0005vec b|^2$.\n$$36=|\u0005vec a\\cdot\u0005vec b|^2+11\\quad\\Rightarrow\\quad |\\u0005vec a\\cdot\\u0005vec b|=5$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $\\vec{a}$ and $\\vec{b}$ be two vectors such that $|\\vec{a}| = 2$, $|\\vec{b}| = 3$ and $|\\vec{a} \\times \\vec{b}| = \\sqrt{11}$. Then $|\\vec{a} \\cdot \\vec{b}|$ is equal to",
+  "options": [
+   "$\\sqrt{11}$",
+   "5",
+   "6",
+   "25"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$|\\vec{a}\\times\\vec{b}|^2 + (\\vec{a}\\cdot\\vec{b})^2 = |\\vec{a}|^2|\\vec{b}|^2$.\n$(\\sqrt{11})^2 + (\\vec{a}\\cdot\\vec{b})^2 = 2^2 \\cdot 3^2$\n$\\Rightarrow 11 + (\\vec{a}\\cdot\\vec{b})^2 = 36$\n$\\Rightarrow (\\vec{a}\\cdot\\vec{b})^2 = 25$\n$\\Rightarrow |\\vec{a}\\cdot\\vec{b}| = 5$.",
+  "distractor_notes": "A: confuses the dot product magnitude with the given cross product magnitude √11. C: incorrectly takes the dot product as the product of magnitudes (2×3=6), ignoring the cross product. D: squares the correct value, possibly forgetting the square root in the last step."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

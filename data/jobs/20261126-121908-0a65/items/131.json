@@ -1,0 +1,68 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Telescoping product",
+  "archetype": "factorise and telescope",
+  "brief": "Evaluate a limit of a telescoping product or a rational function after factorisation and cancellation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:113",
+   "2025s2:96",
+   "2025s2:99"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to 1}\\frac{x^4-1}{x^3-1}$.",
+ "options": [
+  "$\\frac{4}{3}$",
+  "$\\frac{3}{4}$",
+  "$1$",
+  "$4$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor x^4−1=(x−1)(x+1)(x²+1) and x³−1=(x−1)(x²+x+1). Cancel x−1 and substitute x=1 to get 4/3.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{x^4-1}{x^3-1}=\\dfrac{(x-1)(x+1)(x^2+1)}{(x-1)(x^2+x+1)}$\n$\\displaystyle\\lim_{x\\to1}\\frac{(x+1)(x^2+1)}{x^2+x+1}=\\frac43$\n\nIndependent check: Factor x^4−1=(x−1)(x+1)(x²+1) and x³−1=(x−1)(x²+x+1). Cancel x−1 and substitute x=1 to get 4/3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to 1}\\frac{x^4-1}{x^3-1}$.",
+  "options": [
+   "$\\frac{4}{3}$",
+   "$\\frac{3}{4}$",
+   "$1$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{x^4-1}{x^3-1}=\\dfrac{(x-1)(x+1)(x^2+1)}{(x-1)(x^2+x+1)}$\n$\\displaystyle\\lim_{x\\to1}\\frac{(x+1)(x^2+1)}{x^2+x+1}=\\frac43$",
+  "distractor_notes": "B: Takes the reciprocal of the limiting ratio.\nC: Cancels factors but substitutes incorrectly.\nD: Evaluates the numerator's derivative but omits the denominator's."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

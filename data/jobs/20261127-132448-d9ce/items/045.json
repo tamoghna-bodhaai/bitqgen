@@ -1,0 +1,68 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Electron gain enthalpy",
+  "archetype": "find incorrect order",
+  "brief": "Show several orderings of elements by electron gain enthalpy (including Cl vs F and positive values for noble gases); identify the incorrect one.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:52",
+   "2023s2:54",
+   "2022:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using signed (algebraic) electron gain enthalpy values, which ordering is incorrect?",
+ "options": [
+  "$\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$",
+  "$\\text{S} < \\text{Se} < \\text{Te} < \\text{O}$",
+  "$\\text{Xe} < \\text{Ar} < \\text{Ne}$",
+  "$\\text{Cl} < \\text{F} < \\text{Br} < \\text{I}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Signed electron gain enthalpies are approximately Cl −349, F −328, Br −325, I −295 kJ mol⁻¹, so the ascending order is Cl < F < Br < I. Thus (A) is correct and (D) is incorrect. (B) and (C) also follow the ascending signed values.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Cl}(-349) < \\text{F}(-328) < \\text{Br}(-324) < \\text{I}(-295)$ kJ mol$^{-1}$.\n$\\text{S}(-200) < \\text{Se}(-195) < \\text{Te}(-190) < \\text{O}(-141)$ kJ mol$^{-1}$.\nFor noble gases, $\\text{Xe}(+77) < \\text{Ar}(+96) < \\text{Ne}(+116)$ kJ mol$^{-1}$.\nThus, only D gives an incorrect order.\n\nIndependent check: Signed electron gain enthalpies are approximately Cl −349, F −328, Br −325, I −295 kJ mol⁻¹, so the ascending order is Cl < F < Br < I. Thus (A) is correct and (D) is incorrect. (B) and (C) also follow the ascending signed values.",
+ "solution": "For signed electron gain enthalpies, more negative values are smaller. Since $\\text{Cl}(-349)<\\text{F}(-328)<\\text{Br}(-325)<\\text{I}(-295)$ kJ mol$^{-1}$, the ascending order is $\\text{Cl}<\\text{F}<\\text{Br}<\\text{I}$. Hence (A), which places F before Cl, is the incorrect ordering.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using signed (algebraic) electron gain enthalpy values, which ordering is incorrect?",
+  "options": [
+   "$\\text{Cl} < \\text{F} < \\text{Br} < \\text{I}$",
+   "$\\text{S} < \\text{Se} < \\text{Te} < \\text{O}$",
+   "$\\text{Xe} < \\text{Ar} < \\text{Ne}$",
+   "$\\text{F} < \\text{Cl} < \\text{Br} < \\text{I}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{Cl}(-349) < \\text{F}(-328) < \\text{Br}(-324) < \\text{I}(-295)$ kJ mol$^{-1}$.\n$\\text{S}(-200) < \\text{Se}(-195) < \\text{Te}(-190) < \\text{O}(-141)$ kJ mol$^{-1}$.\nFor noble gases, $\\text{Xe}(+77) < \\text{Ar}(+96) < \\text{Ne}(+116)$ kJ mol$^{-1}$.\nThus, only D gives an incorrect order.",
+  "distractor_notes": "A, B and C give correct increasing signed values. D incorrectly places F before Cl."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 71,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 71,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "SN1 reactivity and carbocation stability",
+  "archetype": "stability ordering",
+  "brief": "Rank given haloalkanes by SN1 rate, driven by carbocation stability (including a resonance-stabilised arylmethyl case).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:55",
+   "2025s1:60",
+   "2021:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the same polar protic solvent, arrange these haloalkanes in increasing order of their $\\text{S}_\\text{N}1$ reaction rates: chloroethane, 2-chloropropane and benzyl chloride.",
+ "options": [
+  "Chloroethane $<$ 2-chloropropane $<$ benzyl chloride",
+  "Chloroethane $<$ benzyl chloride $<$ 2-chloropropane",
+  "Benzyl chloride $<$ chloroethane $<$ 2-chloropropane",
+  "2-chloropropane $<$ chloroethane $<$ benzyl chloride"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "SN1 rate follows carbocation stability: primary ethyl < secondary isopropyl < resonance-stabilized benzyl. Thus chloroethane < 2-chloropropane < benzyl chloride.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{S}_\\text{N}1$ rate increases with carbocation stability.\nEthyl cation $<$ isopropyl cation; the benzyl cation is resonance-stabilised.\nThus: chloroethane $<$ 2-chloropropane $<$ benzyl chloride.\n\nIndependent check: SN1 rate follows carbocation stability: primary ethyl < secondary isopropyl < resonance-stabilized benzyl. Thus chloroethane < 2-chloropropane < benzyl chloride.",
+ "solution": "The $\\text{S}_\\text{N}1$ rate increases with the stability of the carbocation formed in the rate-determining step.\n$$\\text{ethyl}^+ < \\text{isopropyl}^+ < \\text{benzyl}^+$$\nThe benzyl carbocation is resonance-stabilized; hence, chloroethane $<$ 2-chloropropane $<$ benzyl chloride.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the same polar protic solvent, arrange these haloalkanes in increasing order of their $\\text{S}_\\text{N}1$ reaction rates: chloroethane, 2-chloropropane and benzyl chloride.",
+  "options": [
+   "Benzyl chloride $<$ chloroethane $<$ 2-chloropropane",
+   "Chloroethane $<$ benzyl chloride $<$ 2-chloropropane",
+   "Chloroethane $<$ 2-chloropropane $<$ benzyl chloride",
+   "2-chloropropane $<$ chloroethane $<$ benzyl chloride"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{S}_\\text{N}1$ rate increases with carbocation stability.\nEthyl cation $<$ isopropyl cation; the benzyl cation is resonance-stabilised.\nThus: chloroethane $<$ 2-chloropropane $<$ benzyl chloride.",
+  "distractor_notes": "A: reverses the resonance-stabilised benzyl case and the alkyl halides. B: places benzyl chloride below the secondary halide. D: reverses the primary and secondary alkyl halides."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

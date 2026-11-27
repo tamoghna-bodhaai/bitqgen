@@ -1,0 +1,67 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order half-life",
+  "archetype": "count half-lives",
+  "brief": "Given initial and remaining concentration of a first-order reaction, count half-lives to find total time.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:48",
+   "2025s2:44",
+   "2024s1:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a first-order reaction with a half-life of $25\\ \\text{min}$, the time required for the reactant concentration to decrease from $0.64\\ \\text{mol L}^{-1}$ to $0.08\\ \\text{mol L}^{-1}$ is",
+ "options": [
+  "$50\\ \\text{min}$",
+  "$75\\ \\text{min}$",
+  "$100\\ \\text{min}$",
+  "$200\\ \\text{min}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "0.64 → 0.08 is a factor of 8 = 2^3, i.e., 3 half-lives. t = 3 × 25 = 75 min (verified via t = (t½/ln2)·ln(8) = 75).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a first-order reaction, the remaining concentration $[A]_t$ after $n$ half-lives is given by:\n$$[A]_t = [A]_0 \\left(\\dfrac{1}{2}\\right)^n$$\n\nSubstitute the given values:\n$$\\dfrac{[A]_t}{[A]_0} = \\dfrac{0.08\\ \\text{mol L}^{-1}}{0.64\\ \\text{mol L}^{-1}} = \\dfrac{1}{8} = \\left(\\dfrac{1}{2}\\right)^3$$\n\nTherefore, the number of half-lives elapsed is $n = 3$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 3 \\times 25\\ \\text{min} = 75\\ \\text{min}$$\n\nIndependent check: 0.64 → 0.08 is a factor of 8 = 2^3, i.e., 3 half-lives. t = 3 × 25 = 75 min (verified via t = (t½/ln2)·ln(8) = 75).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For a first-order reaction with a half-life of $25\\ \\text{min}$, the time required for the reactant concentration to decrease from $0.64\\ \\text{mol L}^{-1}$ to $0.08\\ \\text{mol L}^{-1}$ is",
+  "options": [
+   "$50\\ \\text{min}$",
+   "$75\\ \\text{min}$",
+   "$100\\ \\text{min}$",
+   "$200\\ \\text{min}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "For a first-order reaction, the remaining concentration $[A]_t$ after $n$ half-lives is given by:\n$$[A]_t = [A]_0 \\left(\\dfrac{1}{2}\\right)^n$$\n\nSubstitute the given values:\n$$\\dfrac{[A]_t}{[A]_0} = \\dfrac{0.08\\ \\text{mol L}^{-1}}{0.64\\ \\text{mol L}^{-1}} = \\dfrac{1}{8} = \\left(\\dfrac{1}{2}\\right)^3$$\n\nTherefore, the number of half-lives elapsed is $n = 3$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 3 \\times 25\\ \\text{min} = 75\\ \\text{min}$$",
+  "distractor_notes": "A: Corresponds to under-counting the number of half-lives as $n = 2$ ($2 \\times 25 = 50\\ \\text{min}$).\nC: Corresponds to over-counting the number of half-lives as $n = 4$ ($4 \\times 25 = 100\\ \\text{min}$).\nD: Corresponds to taking the ratio of initial to final concentration ($0.64/0.08 = 8$) directly as the number of half-lives ($8 \\times 25 = 200\\ \\text{min}$).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

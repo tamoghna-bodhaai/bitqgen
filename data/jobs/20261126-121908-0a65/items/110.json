@@ -1,0 +1,67 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Range of a sin + b cos",
+  "archetype": "amplitude bound",
+  "brief": "Find the maximum and minimum of a cos θ + b sin θ and hence solve a given equation has no solution / find range.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:93",
+   "2024s1:108",
+   "2025s2:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the equation $3\\sin\\theta + 4\\cos\\theta = 2\\lambda^2 - 5\\lambda - 2$ has a real solution for $\\theta$, then the set of all possible values of $\\lambda$ is",
+ "options": [
+  "$[-1, 1] \\cup \\left[\\dfrac{3}{2}, \\dfrac{7}{2}\\right]$",
+  "$\\left[-1, \\dfrac{7}{2}\\right]$",
+  "$\\left[1, \\dfrac{3}{2}\\right]$",
+  "$\\left[-\\dfrac{7}{2}, -1\\right] \\cup \\left[1, \\dfrac{3}{2}\\right]$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "3sinθ+4cosθ has range [-5,5], so need -5 ≤ 2λ²-5λ-2 ≤ 5. Upper: 2λ²-5λ-7 ≤ 0 → (2λ-7)(λ+1) ≤ 0 → λ ∈ [-1, 7/2]. Lower: 2λ²-5λ+3 ≥ 0 → (2λ-3)(λ-1) ≥ 0 → λ ≤ 1 or λ ≥ 3/2. Intersection: [-1,1] ∪ [3/2, 7/2], matching option A; endpoints verified numerically.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For any real $\\theta$, the expression $a\\sin\\theta + b\\cos\\theta$ satisfies:\n$$-\\sqrt{a^2+b^2} \\le a\\sin\\theta + b\\cos\\theta \\le \\sqrt{a^2+b^2}$$\nHere, $a = 3$ and $b = 4$, so:\n$$-\\sqrt{3^2+4^2} \\le 3\\sin\\theta + 4\\cos\\theta \\le \\sqrt{3^2+4^2} \\implies -5 \\le 3\\sin\\theta + 4\\cos\\theta \\le 5$$\nTherefore, the given equation has a real solution if and only if:\n$$-5 \\le 2\\lambda^2 - 5\\lambda - 2 \\le 5$$\n\nSolving the upper bound inequality:\n$$2\\lambda^2 - 5\\lambda - 2 \\le 5 \\implies 2\\lambda^2 - 5\\lambda - 7 \\le 0$$\n$$(2\\lambda - 7)(\\lambda + 1) \\le 0 \\implies -1 \\le \\lambda \\le \\dfrac{7}{2} \\quad \\text{--- (1)}$$\n\nSolving the lower bound inequality:\n$$2\\lambda^2 - 5\\lambda - 2 \\ge -5 \\implies 2\\lambda^2 - 5\\lambda + 3 \\ge 0$$\n$$(2\\lambda - 3)(\\lambda - 1) \\ge 0 \\implies \\lambda \\le 1 \\quad\\text{or}\\quad \\lambda \\ge \\dfrac{3}{2} \\quad \\text{--- (2)}$$\n\nTaking the intersection of (1) and (2):\n$$\\lambda \\in [-1, 1] \\cup \\left[\\dfrac{3}{2}, \\dfrac{7}{2}\\right]$$\n\nIndependent check: 3sinθ+4cosθ has range [-5,5], so need -5 ≤ 2λ²-5λ-2 ≤ 5. Upper: 2λ²-5λ-7 ≤ 0 → (2λ-7)(λ+1) ≤ 0 → λ ∈ [-1, 7/2]. Lower: 2λ²-5λ+3 ≥ 0 → (2λ-3)(λ-1) ≥ 0 → λ ≤ 1 or λ ≥ 3/2. Intersection: [-1,1] ∪ [3/2, 7/2], matching option A; endpoints verified numerically.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the equation $3\\sin\\theta + 4\\cos\\theta = 2\\lambda^2 - 5\\lambda - 2$ has a real solution for $\\theta$, then the set of all possible values of $\\lambda$ is",
+  "options": [
+   "$[-1, 1] \\cup \\left[\\dfrac{3}{2}, \\dfrac{7}{2}\\right]$",
+   "$\\left[-1, \\dfrac{7}{2}\\right]$",
+   "$\\left[1, \\dfrac{3}{2}\\right]$",
+   "$\\left[-\\dfrac{7}{2}, -1\\right] \\cup \\left[1, \\dfrac{3}{2}\\right]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "For any real $\\theta$, the expression $a\\sin\\theta + b\\cos\\theta$ satisfies:\n$$-\\sqrt{a^2+b^2} \\le a\\sin\\theta + b\\cos\\theta \\le \\sqrt{a^2+b^2}$$\nHere, $a = 3$ and $b = 4$, so:\n$$-\\sqrt{3^2+4^2} \\le 3\\sin\\theta + 4\\cos\\theta \\le \\sqrt{3^2+4^2} \\implies -5 \\le 3\\sin\\theta + 4\\cos\\theta \\le 5$$\nTherefore, the given equation has a real solution if and only if:\n$$-5 \\le 2\\lambda^2 - 5\\lambda - 2 \\le 5$$\n\nSolving the upper bound inequality:\n$$2\\lambda^2 - 5\\lambda - 2 \\le 5 \\implies 2\\lambda^2 - 5\\lambda - 7 \\le 0$$\n$$(2\\lambda - 7)(\\lambda + 1) \\le 0 \\implies -1 \\le \\lambda \\le \\dfrac{7}{2} \\quad \\text{--- (1)}$$\n\nSolving the lower bound inequality:\n$$2\\lambda^2 - 5\\lambda - 2 \\ge -5 \\implies 2\\lambda^2 - 5\\lambda + 3 \\ge 0$$\n$$(2\\lambda - 3)(\\lambda - 1) \\ge 0 \\implies \\lambda \\le 1 \\quad\\text{or}\\quad \\lambda \\ge \\dfrac{3}{2} \\quad \\text{--- (2)}$$\n\nTaking the intersection of (1) and (2):\n$$\\lambda \\in [-1, 1] \\cup \\left[\\dfrac{3}{2}, \\dfrac{7}{2}\\right]$$",
+  "distractor_notes": "Option B corresponds to only enforcing the upper bound ($\\le 5$) and neglecting the lower bound ($\\ge -5$).\nOption C corresponds to reversing the lower bound inequality to $2\\lambda^2 - 5\\lambda - 2 \\le -5$, yielding $[1, 3/2]$.\nOption D corresponds to a sign error when factoring $2\\lambda^2 - 5\\lambda - 7 \\le 0$ as $(2\\lambda + 7)(\\lambda - 1) \\le 0$.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

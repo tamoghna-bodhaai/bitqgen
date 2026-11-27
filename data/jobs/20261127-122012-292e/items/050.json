@@ -1,0 +1,68 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Molar conductivity",
+  "archetype": "conceptual",
+  "brief": "For a strong electrolyte vs weak electrolyte in water, ask to identify the correct molar-conductivity trend statement — conceptual MCQ with the dissociation explanation embedded.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:52",
+   "2026s2:59",
+   "2022:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which statement correctly describes the change in molar conductivity (Lambda_m) when aqueous solutions of a strong electrolyte and a weak electrolyte are diluted?",
+ "options": [
+  "Strong electrolyte: increases slowly; weak electrolyte: increases sharply at low concentration",
+  "Strong electrolyte: decreases slowly; weak electrolyte: increases sharply at low concentration",
+  "Strong electrolyte: increases slowly; weak electrolyte: decreases because ion association increases",
+  "Both increase steeply and by the same extent because dilution always increases ion mobility"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "On dilution, strong electrolytes show a gradual increase in molar conductivity as interionic interactions lessen; weak electrolytes increase sharply as ionization rises.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Strong electrolytes are fully dissociated; dilution mainly reduces interionic attractions, so Lambda_m rises gradually toward Lambda_m^0. Weak electrolytes are partly dissociated; dilution increases the degree of dissociation, alpha = Lambda_m / Lambda_m^0, so Lambda_m rises sharply near infinite dilution.\n\nIndependent check: On dilution, strong electrolytes show a gradual increase in molar conductivity as interionic interactions lessen; weak electrolytes increase sharply as ionization rises.",
+ "solution": "Strong electrolytes are nearly fully dissociated; dilution reduces interionic attractions, so $\u00024\\Lambda_m\u00024$ increases gradually toward $\u00024\\Lambda_m^0\u00024$. For a weak electrolyte, dilution increases its degree of dissociation, with $\u00024\\alpha=\\Lambda_m/\\Lambda_m^0\u00024$, causing a sharp rise in $\u00024\\Lambda_m\u00024$ at low concentration.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which statement correctly describes the change in molar conductivity (Lambda_m) when aqueous solutions of a strong electrolyte and a weak electrolyte are diluted?",
+  "options": [
+   "Strong electrolyte: increases slowly; weak electrolyte: increases sharply at low concentration",
+   "Strong electrolyte: decreases slowly; weak electrolyte: increases sharply at low concentration",
+   "Strong electrolyte: increases slowly; weak electrolyte: decreases because ion association increases",
+   "Both increase steeply and by the same extent because dilution always increases ion mobility"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Strong electrolytes are fully dissociated; dilution mainly reduces interionic attractions, so Lambda_m rises gradually toward Lambda_m^0. Weak electrolytes are partly dissociated; dilution increases the degree of dissociation, alpha = Lambda_m / Lambda_m^0, so Lambda_m rises sharply near infinite dilution.",
+  "distractor_notes": "B: molar conductivity of a strong electrolyte does not decrease on dilution; C: weak electrolyte molar conductivity increases rather than decreases; D: the extent of increase differs and the mechanism is not simply increased ion mobility."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

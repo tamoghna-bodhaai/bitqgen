@@ -1,0 +1,67 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Point of inflexion",
+  "archetype": "second derivative sign change",
+  "brief": "For a cubic, find the point of inflexion by setting f''(x) = 0 and check sign change.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:129",
+   "2026s2:124",
+   "2025s2:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "The curve $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$ has a point of inflexion at $x = 1$, where its concavity changes from upwards to downwards. The value of $a$ is:",
+ "options": [
+  "$-2$",
+  "$-1$",
+  "$1$",
+  "$2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "y'' = 6(a²−2)x − 6a. Inflection at x=1: a²−a−2=0 ⇒ a=2 or a=−1. Up→down concavity requires y'' decreasing in x, i.e. 6(a²−2)<0 ⇒ a²<2, which holds only for a=−1 (y''=6(1−x)). a=2 gives down→up, rejected.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Given $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$.\n\nDifferentiating with respect to $x$:\n$$y' = 3(a^2 - 2)x^2 - 6ax + 4$$\n$$y'' = 6(a^2 - 2)x - 6a$$\n\nAt the point of inflexion $x = 1$, $y'' = 0$:\n$$6(a^2 - 2)(1) - 6a = 0 \\implies a^2 - a - 2 = 0$$\n$$(a - 2)(a + 1) = 0 \\implies a = 2 \\text{ or } a = -1$$\n\nNow we check the sign change of $y''$ around $x = 1$:\n$$y'' = 6(a^2 - 2)x - 6a = 6(a^2 - 2)(x - 1) \\quad \\text{(since } a^2 - 2 = a\\text{)}$$\n\nFor the concavity to change from upwards to downwards as $x$ increases through $1$:\n- For $x < 1$, we must have $y'' > 0$ (concave upwards).\n- For $x > 1$, we must have $y'' < 0$ (concave downwards).\n\nSince $(x - 1) < 0$ when $x < 1$, we require:\n$$6(a^2 - 2) < 0 \\implies a^2 - 2 < 0$$\n\nTesting the two candidate values:\n- For $a = 2$: $a^2 - 2 = 4 - 2 = 2 > 0$ (concavity changes from downwards to upwards, incorrect).\n- For $a = -1$: $a^2 - 2 = 1 - 2 = -1 < 0$ (concavity changes from upwards to downwards, correct).\n\nThus, $a = -1$.\n\nIndependent check: y'' = 6(a²−2)x − 6a. Inflection at x=1: a²−a−2=0 ⇒ a=2 or a=−1. Up→down concavity requires y'' decreasing in x, i.e. 6(a²−2)<0 ⇒ a²<2, which holds only for a=−1 (y''=6(1−x)). a=2 gives down→up, rejected.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The curve $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$ has a point of inflexion at $x = 1$, where its concavity changes from upwards to downwards. The value of $a$ is:",
+  "options": [
+   "$-2$",
+   "$-1$",
+   "$1$",
+   "$2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Given $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$.\n\nDifferentiating with respect to $x$:\n$$y' = 3(a^2 - 2)x^2 - 6ax + 4$$\n$$y'' = 6(a^2 - 2)x - 6a$$\n\nAt the point of inflexion $x = 1$, $y'' = 0$:\n$$6(a^2 - 2)(1) - 6a = 0 \\implies a^2 - a - 2 = 0$$\n$$(a - 2)(a + 1) = 0 \\implies a = 2 \\text{ or } a = -1$$\n\nNow we check the sign change of $y''$ around $x = 1$:\n$$y'' = 6(a^2 - 2)x - 6a = 6(a^2 - 2)(x - 1) \\quad \\text{(since } a^2 - 2 = a\\text{)}$$\n\nFor the concavity to change from upwards to downwards as $x$ increases through $1$:\n- For $x < 1$, we must have $y'' > 0$ (concave upwards).\n- For $x > 1$, we must have $y'' < 0$ (concave downwards).\n\nSince $(x - 1) < 0$ when $x < 1$, we require:\n$$6(a^2 - 2) < 0 \\implies a^2 - 2 < 0$$\n\nTesting the two candidate values:\n- For $a = 2$: $a^2 - 2 = 4 - 2 = 2 > 0$ (concavity changes from downwards to upwards, incorrect).\n- For $a = -1$: $a^2 - 2 = 1 - 2 = -1 < 0$ (concavity changes from upwards to downwards, correct).\n\nThus, $a = -1$.",
+  "distractor_notes": "- Option A ($-2$): Obtained from a sign error when computing $y''$, leading to $a^2 + a - 2 = 0$, and selecting the root $a = -2$.\n- Option B ($-1$): Correct answer.\n- Option C ($1$): Obtained from the same sign error ($a^2 + a - 2 = 0$) and then applying the condition $a^2 - 2 < 0$.\n- Option D ($2$): The other root of $y''(1) = 0$, which corresponds to concavity changing from downwards to upwards rather than upwards to downwards.",
+  "figure": null,
+  "difficulty_estimate": 4
+ }
+}

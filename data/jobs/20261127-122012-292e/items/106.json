@@ -1,0 +1,68 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Shortest distance between skew lines",
+  "archetype": "formula",
+  "brief": "shortest distance between two given skew lines; test coplanarity first, then apply the distance formula",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:106",
+   "2025s1:94",
+   "2026s1:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the lines r = t(i + 2j + 2k) and r = i + s(2i + j - 2k), where t and s are real, the shortest distance between them is",
+ "options": [
+  "0",
+  "1/3",
+  "1",
+  "2/3"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let a=(1,2,2), b=(2,1,-2), and p=(1,0,0). The distance is |p·(a×b)|/|a×b| = 6/9 = 2/3.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "b1 x b2 = -6i + 6j - 3k; a2 - a1 = i; scalar triple product = -6; magnitude of cross product = sqrt(36 + 36 + 9) = 9; shortest distance = 6/9 = 2/3.\n\nIndependent check: Let a=(1,2,2), b=(2,1,-2), and p=(1,0,0). The distance is |p·(a×b)|/|a×b| = 6/9 = 2/3.",
+ "solution": "For two non-parallel lines, $d=\\dfrac{|(\\mathbf a_2-\\mathbf a_1)\\cdot(\\mathbf b_1\\times\\mathbf b_2)|}{|\\mathbf b_1\\times\\mathbf b_2|}$. Here $\\mathbf b_1=(1,2,2)$, $\\mathbf b_2=(2,1,-2)$ and $\\mathbf a_2-\\mathbf a_1=(1,0,0)$.\n$$d=\\frac{|(1,0,0)\\cdot(-6,6,-3)|}{\\sqrt{36+36+9}}=\\frac{6}{9}=\\frac23.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For the lines r = t(i + 2j + 2k) and r = i + s(2i + j - 2k), where t and s are real, the shortest distance between them is",
+  "options": [
+   "0",
+   "1/3",
+   "2/3",
+   "1"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "b1 x b2 = -6i + 6j - 3k; a2 - a1 = i; scalar triple product = -6; magnitude of cross product = sqrt(36 + 36 + 9) = 9; shortest distance = 6/9 = 2/3.",
+  "distractor_notes": "A: assumes the lines intersect. B: uses denominator 18 instead of 9. D: uses numerator or denominator incorrectly to get 1."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

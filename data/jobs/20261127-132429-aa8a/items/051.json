@@ -1,0 +1,76 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Williamson synthesis",
+  "archetype": "reagent selection",
+  "brief": "Figure shows an alcohol and a target ether; choose the best halide–alkoxide combination and conditions for a high-yield Williamson synthesis.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:59",
+   "2025s1:45",
+   "2025s2:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the conversion shown in the figure, which reagent pair and conditions are best for a high-yield Williamson synthesis?",
+ "options": [
+  "$\\text{CH}_3\\text{Br}$ and sodium ethoxide in dry acetone",
+  "tert-Butyl bromide and sodium methoxide in dry acetone",
+  "$\\text{CH}_3\\text{Br}$ and sodium tert-butoxide in dry acetone",
+  "Ethyl bromide and sodium tert-butoxide in dry acetone"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q051_stem_v0.png",
+  "width_pct": 95,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The product is methyl tert-butyl ether. Williamson synthesis forms it by SN2 attack of tert-butoxide on methyl bromide; tertiary halides favor elimination instead.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The target ether has a tert-butyl group and a methyl group bonded to oxygen.\nUse the bulky tert-butoxide as the alkoxide and methyl bromide as the primary halide.\n$\\text{(CH}_3\\text{)}_3\\text{CO}^- + \\text{CH}_3\\text{Br}\\rightarrow \\text{(CH}_3\\text{)}_3\\text{COCH}_3$\n\nIndependent check: The product is methyl tert-butyl ether. Williamson synthesis forms it by SN2 attack of tert-butoxide on methyl bromide; tertiary halides favor elimination instead.",
+ "solution": "Williamson synthesis proceeds by an $S_N2$ reaction; methyl bromide is ideal, while tert-butoxide supplies the bulky alkoxide.\n$$\\text{(CH}_3\\text{)}_3\\text{CO}^- + \\text{CH}_3\\text{Br} \\longrightarrow \\text{(CH}_3\\text{)}_3\\text{COCH}_3$$\nThus, methyl tert-butyl ether is obtained in high yield using methyl bromide and sodium tert-butoxide in dry acetone.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the conversion shown in the figure, which reagent pair and conditions are best for a high-yield Williamson synthesis?",
+  "options": [
+   "$\\text{CH}_3\\text{Br}$ and sodium tert-butoxide in dry acetone",
+   "tert-Butyl bromide and sodium methoxide in dry acetone",
+   "$\\text{CH}_3\\text{Br}$ and sodium ethoxide in dry acetone",
+   "Ethyl bromide and sodium tert-butoxide in dry acetone"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a reaction scheme with the skeletal structure of 2-methylpropan-2-ol on the left and the skeletal structure of 2-methoxy-2-methylpropane on the right, separated by a horizontal arrow. Label each structure with its compound name. Include no reagents or conditions.",
+   "smiles": "CC(C)(C)O>>COC(C)(C)C"
+  },
+  "difficulty_estimate": 1,
+  "working": "The target ether has a tert-butyl group and a methyl group bonded to oxygen.\nUse the bulky tert-butoxide as the alkoxide and methyl bromide as the primary halide.\n$\\text{(CH}_3\\text{)}_3\\text{CO}^- + \\text{CH}_3\\text{Br}\\rightarrow \\text{(CH}_3\\text{)}_3\\text{COCH}_3$",
+  "distractor_notes": "B: a tertiary halide favors elimination; C: forms methyl ethyl ether; D: forms ethyl tert-butyl ether rather than the target."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

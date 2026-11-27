@@ -1,0 +1,67 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Chain rule via limit definition",
+  "archetype": "derivative as limit",
+  "brief": "Evaluate a first-principles limit for a composite function or a simple chain-rule derivative at a point.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:122",
+   "2026s2:124",
+   "2026s1:124"
+  ]
+ },
+ "status": "ok",
+ "stem": "If a differentiable function $f$ satisfies $f(0) = 5$ and $f'(0) = 4$, then $\\lim_{x \\to 0} \\dfrac{f(\\sin 2x) - 5}{x}$ is equal to",
+ "options": [
+  "$2$",
+  "$4$",
+  "$8$",
+  "$10$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Write (f(sin2x)−5)/x = [(f(sin2x)−f(0))/sin2x]·(sin2x/x). As x→0, sin2x→0 so the first factor → f'(0)=4, and sin2x/x → 2. Limit = 4·2 = 8. Numerical check with a sample f confirms ≈8.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "We are given $f(0) = 5$ and $f'(0) = 4$.\n\nThe limit can be rewritten using the definition of the derivative and standard limits:\n$$\\lim_{x \\to 0} \\dfrac{f(\\sin 2x) - 5}{x} = \\lim_{x \\to 0} \\left[ \\dfrac{f(\\sin 2x) - f(0)}{\\sin 2x} \\cdot \\dfrac{\\sin 2x}{2x} \\cdot 2 \\right]$$\n\nAs $x \\to 0$, we have $\\sin 2x \\to 0$. Therefore:\n$$\\lim_{x \\to 0} \\dfrac{f(\\sin 2x) - f(0)}{\\sin 2x} = f'(0)$$\n$$\\lim_{x \\to 0} \\dfrac{\\sin 2x}{2x} = 1$$\n\nThus, the limit evaluates to:\n$$f'(0) \\cdot 1 \\cdot 2 = 4 \\cdot 2 = 8$$\n\nAlternatively, applying L'Hôpital's Rule (as it is a $\\frac{0}{0}$ indeterminate form):\n$$\\lim_{x \\to 0} \\dfrac{f'(\\sin 2x) \\cdot 2\\cos 2x}{1} = f'(0) \\cdot 2\\cos 0 = 4 \\cdot 2 = 8.$$\n\nIndependent check: Write (f(sin2x)−5)/x = [(f(sin2x)−f(0))/sin2x]·(sin2x/x). As x→0, sin2x→0 so the first factor → f'(0)=4, and sin2x/x → 2. Limit = 4·2 = 8. Numerical check with a sample f confirms ≈8.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If a differentiable function $f$ satisfies $f(0) = 5$ and $f'(0) = 4$, then $\\lim_{x \\to 0} \\dfrac{f(\\sin 2x) - 5}{x}$ is equal to",
+  "options": [
+   "$2$",
+   "$4$",
+   "$8$",
+   "$10$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "We are given $f(0) = 5$ and $f'(0) = 4$.\n\nThe limit can be rewritten using the definition of the derivative and standard limits:\n$$\\lim_{x \\to 0} \\dfrac{f(\\sin 2x) - 5}{x} = \\lim_{x \\to 0} \\left[ \\dfrac{f(\\sin 2x) - f(0)}{\\sin 2x} \\cdot \\dfrac{\\sin 2x}{2x} \\cdot 2 \\right]$$\n\nAs $x \\to 0$, we have $\\sin 2x \\to 0$. Therefore:\n$$\\lim_{x \\to 0} \\dfrac{f(\\sin 2x) - f(0)}{\\sin 2x} = f'(0)$$\n$$\\lim_{x \\to 0} \\dfrac{\\sin 2x}{2x} = 1$$\n\nThus, the limit evaluates to:\n$$f'(0) \\cdot 1 \\cdot 2 = 4 \\cdot 2 = 8$$\n\nAlternatively, applying L'Hôpital's Rule (as it is a $\\frac{0}{0}$ indeterminate form):\n$$\\lim_{x \\to 0} \\dfrac{f'(\\sin 2x) \\cdot 2\\cos 2x}{1} = f'(0) \\cdot 2\\cos 0 = 4 \\cdot 2 = 8.$$",
+  "distractor_notes": "Option A encodes dividing by the inner derivative $2$ instead of multiplying ($4/2 = 2$, confusing differentiation with integration).\nOption B encodes forgetting the chain rule derivative of $\\sin 2x$, giving $f'(0) = 4$.\nOption D encodes using the function value $f(0) = 5$ instead of the derivative $f'(0) = 4$, giving $5 \\times 2 = 10$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

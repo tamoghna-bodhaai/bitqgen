@@ -1,0 +1,68 @@
+{
+ "qno": 94,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 94,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Cross product and angle between vectors",
+  "archetype": "cross product then angle",
+  "brief": "Use the cross product of two vectors to find the sine of the angle between them, given their dot product.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:120",
+   "2025s1:95",
+   "2024s2:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $\\vec a=\\hat i+2\\hat j+2\\hat k$ and $\\vec b=2\\hat i+\\hat j+2\\hat k$, given that $\\vec a\\cdot\\vec b=8$, the sine of the angle between them is",
+ "options": [
+  "$\\dfrac{\\sqrt{17}}{18}$",
+  "$\\dfrac{8}{9}$",
+  "$\\dfrac{\\sqrt{17}}{6}$",
+  "$\\dfrac{\\sqrt{17}}{9}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "|a|=|b|=3 and a·b=8, so cos θ=8/9. Thus sin θ=√(1−64/81)=√17/9.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec a\\times\\vec b=2\\hat i+2\\hat j-3\\hat k$, so $|\\vec a\\times\\vec b|=\\sqrt{17}$.\n$|\\vec a|=|\\vec b|=3$.\n$\\sin\\theta=\\dfrac{|\\vec a\\times\\vec b|}{|\\vec a||\\vec b|}=\\dfrac{\\sqrt{17}}{9}$.\n\nIndependent check: |a|=|b|=3 and a·b=8, so cos θ=8/9. Thus sin θ=√(1−64/81)=√17/9.",
+ "solution": "Using $\\sin\\theta=\\dfrac{|\\vec a\\times\\vec b|}{|\\vec a||\\vec b|}$, with $|\\vec a|=|\\vec b|=3$ and $|\\vec a\\times\\vec b|=\\sqrt{17}$,\n$$\\sin\\theta=\\frac{\\sqrt{17}}{3\\cdot3}=\\frac{\\sqrt{17}}{9}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $\\vec a=\\hat i+2\\hat j+2\\hat k$ and $\\vec b=2\\hat i+\\hat j+2\\hat k$, given that $\\vec a\\cdot\\vec b=8$, the sine of the angle between them is",
+  "options": [
+   "$\\dfrac{\\sqrt{17}}{9}$",
+   "$\\dfrac{8}{9}$",
+   "$\\dfrac{\\sqrt{17}}{6}$",
+   "$\\dfrac{\\sqrt{17}}{18}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\vec a\\times\\vec b=2\\hat i+2\\hat j-3\\hat k$, so $|\\vec a\\times\\vec b|=\\sqrt{17}$.\n$|\\vec a|=|\\vec b|=3$.\n$\\sin\\theta=\\dfrac{|\\vec a\\times\\vec b|}{|\\vec a||\\vec b|}=\\dfrac{\\sqrt{17}}{9}$.",
+  "distractor_notes": "B gives the cosine from the dot product; C divides by the sum of the magnitudes; D introduces an extra factor of $2$ in the denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

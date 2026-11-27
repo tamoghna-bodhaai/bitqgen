@@ -1,0 +1,68 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle – tangency condition",
+  "archetype": "tangency condition",
+  "brief": "Line with unknown slope parameter touches a given circle; use distance from centre = radius to find the parameter (or equation of tangent from a point).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:111",
+   "2022:109",
+   "2023s2:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "The line $y=mx+5$, with $m>0$, touches the circle $x^2+y^2=9$. The value of $m$ is",
+ "options": [
+  "$\\dfrac{4}{3}$",
+  "$-\\dfrac{3}{4}$",
+  "$\\dfrac{3}{4}$",
+  "$-\\dfrac{4}{3}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Tangency requires the distance from the origin to the line mx-y+5=0 to equal 3: 5/√(m²+1)=3. Hence m²=16/9; since m>0, m=4/3.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$mx-y+5=0$. Tangency requires $\\dfrac{5}{\\sqrt{m^2+1}}=3$. \n$m^2+1=\\dfrac{25}{9}\\Rightarrow m^2=\\dfrac{16}{9}$. Since $m>0$, $m=\\dfrac43$.\n\nIndependent check: Tangency requires the distance from the origin to the line mx-y+5=0 to equal 3: 5/√(m²+1)=3. Hence m²=16/9; since m>0, m=4/3.",
+ "solution": "The distance from the origin to the tangent line $mx-y+5=0$ must equal the circle’s radius, $3$.\n$$\\frac{5}{\\sqrt{m^2+1}}=3 \\implies m^2=\\frac{16}{9}.$$\nSince $m>0$, $m=\\frac{4}{3}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The line $y=mx+5$, with $m>0$, touches the circle $x^2+y^2=9$. The value of $m$ is",
+  "options": [
+   "$-\\dfrac{4}{3}$",
+   "$-\\dfrac{3}{4}$",
+   "$\\dfrac{3}{4}$",
+   "$\\dfrac{4}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$mx-y+5=0$. Tangency requires $\\dfrac{5}{\\sqrt{m^2+1}}=3$. \n$m^2+1=\\dfrac{25}{9}\\Rightarrow m^2=\\dfrac{16}{9}$. Since $m>0$, $m=\\dfrac43$.",
+  "distractor_notes": "A: takes the negative root despite $m>0$. B: reciprocates the magnitude of the slope. C: uses the reciprocal magnitude and the positive sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

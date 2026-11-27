@@ -1,0 +1,28 @@
+[project]
+name = "bitqgen"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "anthropic>=2.14.0",
+    "fastapi>=0.165.0",
+    "jinja2>=3.1.6",
+    "matplotlib>=3.11.2",
+    "openai>=3.59.0",
+    "playwright>=1.65.2",
+    "pydantic>=2.14.4",
+    "pymupdf>=2.2",
+    "pypandoc-binary>=1.17",
+    "python-docx>=1.2.0",
+    "python-dotenv>=1.2.4",
+    "python-multipart>=0.0.34",
+    "pyyaml>=6.0.4",
+    "rdkit>=2026.9.2",
+    "schemdraw>=0.23",
+    "sse-starlette>=3.7.1",
+    "uvicorn[standard]>=0.54.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.2.0",
+]

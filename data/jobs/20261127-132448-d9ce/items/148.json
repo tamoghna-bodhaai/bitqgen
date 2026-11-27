@@ -1,0 +1,68 @@
+{
+ "qno": 148,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 148,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "brief": "Find the image of a given point in a given line using the reflection formula; identify the correct image coordinates.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:114",
+   "2025s1:115",
+   "2026s2:104"
+  ]
+ },
+ "status": "ok",
+ "stem": "The image of the point $(2,1)$ in the line $3x+4y-5=0$ is",
+ "options": [
+  "$\\left(\\dfrac{7}{5},\\dfrac{1}{5}\\right)$",
+  "$\\left(-\\dfrac{4}{5},\\dfrac{3}{5}\\right)$",
+  "$\\left(\\dfrac{4}{5},-\\dfrac{3}{5}\\right)$",
+  "$\\left(\\dfrac{4}{5},\\dfrac{3}{5}\\right)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Reflection across ax+by+c=0: subtract 2(ax+by+c)(a,b)/(a²+b²). Thus (2,1)−(2·5/25)(3,4)=(4/5,−3/5).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$L=3(2)+4(1)-5=5,\\quad a^2+b^2=25$\\n$(x',y')=(x,y)-\\dfrac{2L}{a^2+b^2}(a,b)$\\n$(x',y')=(2,1)-\\dfrac{2(5)}{25}(3,4)=\\left(\\dfrac45,-\\dfrac35\\right)$\n\nIndependent check: Reflection across ax+by+c=0: subtract 2(ax+by+c)(a,b)/(a²+b²). Thus (2,1)−(2·5/25)(3,4)=(4/5,−3/5).",
+ "solution": "For reflection across $ax+by+c=0$, $(x',y')=(x,y)-\\dfrac{2(ax+by+c)}{a^2+b^2}(a,b)$. Here $L=3(2)+4(1)-5=5$ and $a^2+b^2=25$.\n$$ (x',y')=(2,1)-\\frac{10}{25}(3,4)=\\left(\\frac45,-\\frac35\\right). $$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The image of the point $(2,1)$ in the line $3x+4y-5=0$ is",
+  "options": [
+   "$\\left(\\dfrac{4}{5},-\\dfrac{3}{5}\\right)$",
+   "$\\left(-\\dfrac{4}{5},\\dfrac{3}{5}\\right)$",
+   "$\\left(\\dfrac{7}{5},\\dfrac{1}{5}\\right)$",
+   "$\\left(\\dfrac{4}{5},\\dfrac{3}{5}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$L=3(2)+4(1)-5=5,\\quad a^2+b^2=25$\\n$(x',y')=(x,y)-\\dfrac{2L}{a^2+b^2}(a,b)$\\n$(x',y')=(2,1)-\\dfrac{2(5)}{25}(3,4)=\\left(\\dfrac45,-\\dfrac35\\right)$",
+  "distractor_notes": "B: reverses the reflection displacement; C: gives the foot of the perpendicular, not the image; D: sign error in the reflected $y$-coordinate."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Stability of alkenes / heat of hydrogenation",
+  "archetype": "ordering",
+  "brief": "Rank four simple alkenes (varying substitution) in order of stability; expect justification via hyperconjugation and heat of hydrogenation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:55",
+   "2022:41",
+   "2026s1:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which sequence gives the alkenes in decreasing order of stability?",
+ "options": [
+  "Ethene $>$ propene $>$ 2-methylpropene $>$ 2-methyl-2-butene",
+  "2-methylpropene $>$ 2-methyl-2-butene $>$ propene $>$ ethene",
+  "2-methyl-2-butene $>$ 2-methylpropene $>$ propene $>$ ethene",
+  "2-methyl-2-butene $>$ propene $>$ ethene $>$ 2-methylpropene"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alkene stability generally increases with the number of alkyl groups attached to the C=C: 2-methyl-2-butene (trisubstituted) > 2-methylpropene (disubstituted) > propene (monosubstituted) > ethene (unsubstituted).",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Alkene stability increases with the number of alkyl substituents on the double bond (greater hyperconjugative stabilisation).\\nTri-substituted $>$ di-substituted $>$ mono-substituted $>$ unsubstituted.\\nHeat of hydrogenation magnitude follows the reverse order.\n\nIndependent check: Alkene stability generally increases with the number of alkyl groups attached to the C=C: 2-methyl-2-butene (trisubstituted) > 2-methylpropene (disubstituted) > propene (monosubstituted) > ethene (unsubstituted).",
+ "solution": "Alkene stability increases with the number of alkyl groups attached to the double bond due to greater hyperconjugative stabilisation:\n$$\\text{trisubstituted} > \\text{disubstituted} > \\text{monosubstituted} > \\text{unsubstituted}$$\nHence, $\\text{2-methyl-2-butene} > \\text{2-methylpropene} > \\text{propene} > \\text{ethene}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which sequence gives the alkenes in decreasing order of stability?",
+  "options": [
+   "Ethene $>$ propene $>$ 2-methylpropene $>$ 2-methyl-2-butene",
+   "2-methyl-2-butene $>$ 2-methylpropene $>$ propene $>$ ethene",
+   "2-methylpropene $>$ 2-methyl-2-butene $>$ propene $>$ ethene",
+   "2-methyl-2-butene $>$ propene $>$ ethene $>$ 2-methylpropene"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Alkene stability increases with the number of alkyl substituents on the double bond (greater hyperconjugative stabilisation).\\nTri-substituted $>$ di-substituted $>$ mono-substituted $>$ unsubstituted.\\nHeat of hydrogenation magnitude follows the reverse order.",
+  "distractor_notes": "A: reverses the stability trend.\\nC: places the di-substituted alkene above the tri-substituted one incorrectly.\\nD: misorders the mono- and unsubstituted alkenes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

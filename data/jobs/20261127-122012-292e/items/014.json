@@ -1,0 +1,68 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio of approach/recede frequencies",
+  "brief": "A source and observer moving toward each other on a straight line; ask for the ratio of the apparent frequencies in approach and recede cases.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:26",
+   "2023s2:27",
+   "2024s1:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "A source of sound and an observer are moving toward each other along the same straight line, each with a speed of 20 m/s. If the speed of sound in still air is 340 m/s, the ratio of the apparent frequency heard by the observer when they approach each other to that when they recede from each other is",
+ "options": [
+  "64/81",
+  "81/64",
+  "9/8",
+  "8/9"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Approaching: fₐ/f = (340 + 20)/(340 − 20) = 9/8. Receding: fᵣ/f = (340 − 20)/(340 + 20) = 8/9. Thus fₐ/fᵣ = 81/64.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Approach case (both moving towards each other):\n$$f_{\\text{app}} = f \\frac{v + v_o}{v - v_s} = f \\frac{340 + 20}{340 - 20} = f \\frac{360}{320} = \\frac{9}{8}f$$\n\nRecede case (both moving away from each other):\n$$f_{\\text{rec}} = f \\frac{v - v_o}{v + v_s} = f \\frac{340 - 20}{340 + 20} = f \\frac{320}{360} = \\frac{8}{9}f$$\n\nRatio:\n$$\\frac{f_{\\text{app}}}{f_{\\text{rec}}} = \\frac{9/8}{8/9} = \\frac{81}{64}$$\n\nIndependent check: Approaching: fₐ/f = (340 + 20)/(340 − 20) = 9/8. Receding: fᵣ/f = (340 − 20)/(340 + 20) = 8/9. Thus fₐ/fᵣ = 81/64.",
+ "solution": "For Doppler effect, $f'=f\\dfrac{v\\pm v_o}{v\\mp v_s}$, with signs chosen for approach or recession.\n$$\\frac{f_{\\text{app}}}{f_{\\text{rec}}}=\\frac{(340+20)/(340-20)}{(340-20)/(340+20)}=\\left(\\frac{360}{320}\\right)^2=\\frac{81}{64}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A source of sound and an observer are moving toward each other along the same straight line, each with a speed of 20 m/s. If the speed of sound in still air is 340 m/s, the ratio of the apparent frequency heard by the observer when they approach each other to that when they recede from each other is",
+  "options": [
+   "81/64",
+   "64/81",
+   "9/8",
+   "8/9"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Approach case (both moving towards each other):\n$$f_{\\text{app}} = f \\frac{v + v_o}{v - v_s} = f \\frac{340 + 20}{340 - 20} = f \\frac{360}{320} = \\frac{9}{8}f$$\n\nRecede case (both moving away from each other):\n$$f_{\\text{rec}} = f \\frac{v - v_o}{v + v_s} = f \\frac{340 - 20}{340 + 20} = f \\frac{320}{360} = \\frac{8}{9}f$$\n\nRatio:\n$$\\frac{f_{\\text{app}}}{f_{\\text{rec}}} = \\frac{9/8}{8/9} = \\frac{81}{64}$$",
+  "distractor_notes": "Option B is the reciprocal (recede/approach), C is the linear ratio without squaring, D is the reciprocal of C."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

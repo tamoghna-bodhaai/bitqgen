@@ -1,0 +1,68 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Coulomb's law",
+  "archetype": "proportionality-scaling",
+  "brief": "Coulomb-force analogy question: two protons repel with a given force; ask for force at a new separation or force between alpha particles at the same separation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:18",
+   "2021:27",
+   "2024s1:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two protons separated by a distance $r$ repel with a force of $3.0\\times10^{-8}$ N. What is the repulsive force between two $\\alpha$ particles separated by the same distance?",
+ "options": [
+  "$3.0\\times10^{-8}$ N",
+  "$6.0\\times10^{-8}$ N",
+  "$1.2\\times10^{-7}$ N",
+  "$2.4\\times10^{-7}$ N"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Coulomb’s law, force scales with the product of the charges. Each alpha particle has charge +2e, so the force is 4 times as large: 4(3.0×10⁻⁸ N) = 1.2×10⁻⁷ N.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$F\\propto q_1q_2$ at fixed separation.\\nEach alpha particle has charge $2e$, so $F_{\\alpha\\alpha}=\\dfrac{(2e)(2e)}{e^2}F_{pp}=4(3.0\\times10^{-8})=1.2\\times10^{-7}$ N.\n\nIndependent check: By Coulomb’s law, force scales with the product of the charges. Each alpha particle has charge +2e, so the force is 4 times as large: 4(3.0×10⁻⁸ N) = 1.2×10⁻⁷ N.",
+ "solution": "By Coulomb’s law, at fixed separation $F\\propto q_1q_2$. Each $\\alpha$ particle has charge $+2e$, so\n$$F_{\\alpha\\alpha}=4F_{pp}=4(3.0\\times10^{-8})=1.2\\times10^{-7}\\,\\text{N}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two protons separated by a distance $r$ repel with a force of $3.0\\times10^{-8}$ N. What is the repulsive force between two $\\alpha$ particles separated by the same distance?",
+  "options": [
+   "$3.0\\times10^{-8}$ N",
+   "$6.0\\times10^{-8}$ N",
+   "$1.2\\times10^{-7}$ N",
+   "$2.4\\times10^{-7}$ N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$F\\propto q_1q_2$ at fixed separation.\\nEach alpha particle has charge $2e$, so $F_{\\alpha\\alpha}=\\dfrac{(2e)(2e)}{e^2}F_{pp}=4(3.0\\times10^{-8})=1.2\\times10^{-7}$ N.",
+  "distractor_notes": "A: Assumes the force is unchanged. B: Scales for only one doubled charge. D: Applies an extra factor of $2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

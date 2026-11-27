@@ -1,0 +1,67 @@
+{
+ "qno": 79,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 79,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Diazonium synthesis planning",
+  "archetype": "reverse synthesis",
+  "brief": "Identify reagents to convert aniline to a target (e.g. benzene via diazonium, or iodobenzene) in correct order.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:57",
+   "2025s1:57",
+   "2025s2:50"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following represents the correct sequence of reagents required to convert aniline into benzene?",
+ "options": [
+  "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$",
+  "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{Cu}_2\\text{Cl}_2 / \\text{HCl}$",
+  "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_2\\text{O},\\ \\text{warm}$",
+  "(i) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$; (ii) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Aniline + NaNO2/HCl at 273–278 K gives benzenediazonium chloride (diazotization). H3PO2/H2O reduces the diazonium group, replacing N2+ by H to give benzene. Option B (Cu2Cl2/HCl, Sandmeyer) gives chlorobenzene; C (warm H2O) gives phenol; D has the reagents in the wrong order.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The conversion of aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$) to benzene ($\\text{C}_6\\text{H}_6$) occurs in two steps:\n\n1. **Diazotisation:**\n$$\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{NaNO}_2 + 2\\text{HCl} \\xrightarrow{273\\text{--}278\\text{ K}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{NaCl} + 2\\text{H}_2\\text{O}$$\n\n2. **Deamination (Reduction):**\nHypophosphorous acid (phosphinic acid, $\\text{H}_3\\text{PO}_2$) acts as a mild reducing agent that replaces the diazonium group with hydrogen:\n$$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{H}_3\\text{PO}_2 + \\text{H}_2\\text{O} \\xrightarrow{} \\text{C}_6\\text{H}_6 + \\text{N}_2 + \\text{H}_3\\text{PO}_3 + \\text{HCl}$$\n\nTherefore, the correct sequence is (i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$, followed by (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$.\n\nIndependent check: Aniline + NaNO2/HCl at 273–278 K gives benzenediazonium chloride (diazotization). H3PO2/H2O reduces the diazonium group, replacing N2+ by H to give benzene. Option B (Cu2Cl2/HCl, Sandmeyer) gives chlorobenzene; C (warm H2O) gives phenol; D has the reagents in the wrong order.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following represents the correct sequence of reagents required to convert aniline into benzene?",
+  "options": [
+   "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$",
+   "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{Cu}_2\\text{Cl}_2 / \\text{HCl}$",
+   "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_2\\text{O},\\ \\text{warm}$",
+   "(i) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$; (ii) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "The conversion of aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$) to benzene ($\\text{C}_6\\text{H}_6$) occurs in two steps:\n\n1. **Diazotisation:**\n$$\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{NaNO}_2 + 2\\text{HCl} \\xrightarrow{273\\text{--}278\\text{ K}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{NaCl} + 2\\text{H}_2\\text{O}$$\n\n2. **Deamination (Reduction):**\nHypophosphorous acid (phosphinic acid, $\\text{H}_3\\text{PO}_2$) acts as a mild reducing agent that replaces the diazonium group with hydrogen:\n$$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{H}_3\\text{PO}_2 + \\text{H}_2\\text{O} \\xrightarrow{} \\text{C}_6\\text{H}_6 + \\text{N}_2 + \\text{H}_3\\text{PO}_3 + \\text{HCl}$$\n\nTherefore, the correct sequence is (i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$, followed by (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$.",
+  "distractor_notes": "Option B: Yields chlorobenzene via the Sandmeyer reaction instead of benzene.\nOption C: Yields phenol by hydrolysis of the diazonium salt upon warming with water.\nOption D: Reverses the sequence; $\\text{H}_3\\text{PO}_2$ cannot reduce aniline directly to benzene without forming the diazonium intermediate first.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

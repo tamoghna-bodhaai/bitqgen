@@ -1,0 +1,76 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Angular momentum of a particle",
+  "archetype": "vector cross product",
+  "brief": "Diagram of a particle at a point with position and velocity vectors marked; ask for the angular momentum of the particle about the origin using r × mv.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:14",
+   "2023s2:11",
+   "2024s2:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle of mass 2 kg is at a point P with position vector r = 3i + 2j + k m from the origin O and has velocity v = i - j + 2k m/s, as shown in the figure. The angular momentum of the particle about O is",
+ "options": [
+  "10i + 10j - 10k kg m^2/s",
+  "5i - 5j - 5k kg m^2/s",
+  "10i - 10j - 10k kg m^2/s",
+  "10i - 10j + 10k kg m^2/s"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q005_stem_v0.png",
+  "width_pct": 75,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\mathbf L=\\mathbf r\\times m\\mathbf v=2[(2\\cdot2-1\\cdot(-1))\\hat i+(1\\cdot1-3\\cdot2)\\hat j+(3\\cdot(-1)-2\\cdot1)\\hat k]=10\\hat i-10\\hat j-10\\hat k\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "p = m*v = 2*(i - j + 2k) = 2i - 2j + 4k kg m/s. L = r x p = i*(2*4 - 1*(-2)) - j*(3*4 - 1*2) + k*(3*(-2) - 2*2) = 10i - 10j - 10k kg m^2/s.\n\nIndependent check: \\(\\mathbf L=\\mathbf r\\times m\\mathbf v=2[(2\\cdot2-1\\cdot(-1))\\hat i+(1\\cdot1-3\\cdot2)\\hat j+(3\\cdot(-1)-2\\cdot1)\\hat k]=10\\hat i-10\\hat j-10\\hat k\\).",
+ "solution": "Angular momentum is $\u001b[0m\\mathbf L=\\mathbf r\\times\\mathbf p$, where $\\mathbf p=m\\mathbf v=2\\hat i-2\\hat j+4\\hat k$.\n$$\\mathbf L=(3\\hat i+2\\hat j+\\hat k)\\times(2\\hat i-2\\hat j+4\\hat k)=10\\hat i-10\\hat j-10\\hat k\\;\\text{kg m}^2\\!\\!/\\text{s}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle of mass 2 kg is at a point P with position vector r = 3i + 2j + k m from the origin O and has velocity v = i - j + 2k m/s, as shown in the figure. The angular momentum of the particle about O is",
+  "options": [
+   "10i - 10j - 10k kg m^2/s",
+   "5i - 5j - 5k kg m^2/s",
+   "10i + 10j - 10k kg m^2/s",
+   "10i - 10j + 10k kg m^2/s"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "A Cartesian coordinate system with origin O and mutually perpendicular x, y and z axes. A point P is drawn at coordinates (3, 2, 1) and labelled P. Draw a solid arrow from O to P labelled r = 3i + 2j + k m. From point P, draw a separate arrow labelled v = i - j + 2k m/s. Write m = 2 kg next to point P. Do not show any angular momentum vector or answer.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "p = m*v = 2*(i - j + 2k) = 2i - 2j + 4k kg m/s. L = r x p = i*(2*4 - 1*(-2)) - j*(3*4 - 1*2) + k*(3*(-2) - 2*2) = 10i - 10j - 10k kg m^2/s.",
+  "distractor_notes": "B: forgot to multiply velocity by mass; C: sign error in the j component; D: sign error in the k component."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

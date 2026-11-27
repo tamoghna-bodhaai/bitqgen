@@ -1,0 +1,68 @@
+{
+ "qno": 141,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 141,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Argument of a complex number",
+  "archetype": "computation",
+  "brief": "find the argument (and quadrant) of a given complex number, possibly after multiplying by a conjugate or simplifying a product",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:119",
+   "2021:134",
+   "2022:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "The principal argument of the complex number $\\dfrac{(1+i)^2}{1-i\\sqrt{3}}$ is",
+ "options": [
+  "$\\dfrac{\\pi}{6}$",
+  "$\\dfrac{5\\pi}{6}$",
+  "$\\dfrac{2\\pi}{3}$",
+  "$\\dfrac{\\pi}{3}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\((1+i)^2=2i\\), with argument \\(\\pi/2\\). The denominator has argument \\(-\\pi/3\\), so the quotient's principal argument is \\(\\pi/2-(-\\pi/3)=5\\pi/6\\).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(1+i)^2 = 2i$ so argument $\\pi/2$. $1-i\\sqrt{3}=2e^{-i\\pi/3}$, argument $-\\pi/3$. Division subtracts arguments: $\\frac{\\pi}{2} - \\left(-\\frac{\\pi}{3}\\right) = \\frac{5\\pi}{6}$.\n\nIndependent check: \\((1+i)^2=2i\\), with argument \\(\\pi/2\\). The denominator has argument \\(-\\pi/3\\), so the quotient's principal argument is \\(\\pi/2-(-\\pi/3)=5\\pi/6\\).",
+ "solution": "Using $\\text{Arg}(z_1/z_2)=\\text{Arg}(z_1)-\\text{Arg}(z_2)$, we have $(1+i)^2=2i$ with argument $\\frac{\\pi}{2}$, and $1-i\\sqrt{3}$ with argument $-\\frac{\\pi}{3}$.\n$$\\text{Arg}\u001b[0m\\left(\\frac{(1+i)^2}{1-i\\sqrt{3}}\\right)=\\frac{\\pi}{2}-\\left(-\\frac{\\pi}{3}\\right)=\\frac{5\\pi}{6}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The principal argument of the complex number $\\dfrac{(1+i)^2}{1-i\\sqrt{3}}$ is",
+  "options": [
+   "$\\dfrac{\\pi}{6}$",
+   "$\\dfrac{\\pi}{3}$",
+   "$\\dfrac{2\\pi}{3}$",
+   "$\\dfrac{5\\pi}{6}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$(1+i)^2 = 2i$ so argument $\\pi/2$. $1-i\\sqrt{3}=2e^{-i\\pi/3}$, argument $-\\pi/3$. Division subtracts arguments: $\\frac{\\pi}{2} - \\left(-\\frac{\\pi}{3}\\right) = \\frac{5\\pi}{6}$.",
+  "distractor_notes": "A if denominator arg taken as $\\pi/3$ (sign mistake), B if numerator arg omitted, C intermediate step without summing."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

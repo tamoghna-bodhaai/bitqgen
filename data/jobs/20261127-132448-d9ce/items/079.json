@@ -1,0 +1,68 @@
+{
+ "qno": 79,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 79,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Colour of transition metal ions",
+  "archetype": "fact recall",
+  "brief": "Ask which transition metal ion is colourless in aqueous solution and why (d0 or d10 configuration), with coloured d-partly-filled ions as distractors.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:57",
+   "2023s2:35",
+   "2025s2:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which aqueous ion is colourless because its electronic configuration permits no $d$–$d$ transition?",
+ "options": [
+  "$\\text{Sc}^{3+}$, $3d^0$",
+  "$\\text{Ti}^{3+}$, $3d^1$",
+  "$\\text{V}^{3+}$, $3d^2$",
+  "$\\text{Cu}^{2+}$, $3d^9$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Sc³⁺ has a 3d⁰ configuration, so it has no d electrons and cannot undergo a d–d transition. The other ions have partially filled d orbitals.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Sc}^{3+}: [\\text{Ar}]3d^0$; no $d$ electrons, so no $d$–$d$ transition is possible.\n$\\text{Ti}^{3+}$, $\\text{V}^{3+}$ and $\\text{Cu}^{2+}$ have partially filled $d$ subshells and can undergo $d$–$d$ transitions.\n\nIndependent check: Sc³⁺ has a 3d⁰ configuration, so it has no d electrons and cannot undergo a d–d transition. The other ions have partially filled d orbitals.",
+ "solution": "A $d$–$d$ transition requires electrons in partially filled $d$ orbitals. For $\\text{Sc}^{3+}$, the configuration is $[\\text{Ar}]3d^0$, so no $d$–$d$ transition is possible. Thus, $\\text{Sc}^{3+}$ is colourless.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which aqueous ion is colourless because its electronic configuration permits no $d$–$d$ transition?",
+  "options": [
+   "$\\text{Sc}^{3+}$, $3d^0$",
+   "$\\text{Ti}^{3+}$, $3d^1$",
+   "$\\text{V}^{3+}$, $3d^2$",
+   "$\\text{Cu}^{2+}$, $3d^9$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{Sc}^{3+}: [\\text{Ar}]3d^0$; no $d$ electrons, so no $d$–$d$ transition is possible.\n$\\text{Ti}^{3+}$, $\\text{V}^{3+}$ and $\\text{Cu}^{2+}$ have partially filled $d$ subshells and can undergo $d$–$d$ transitions.",
+  "distractor_notes": "B: overlooks that a $d^1$ ion can undergo a $d$–$d$ transition.\nC: overlooks that a $d^2$ ion can undergo a $d$–$d$ transition.\nD: overlooks that a $d^9$ ion can undergo a $d$–$d$ transition."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

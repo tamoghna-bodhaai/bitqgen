@@ -1,0 +1,78 @@
+{
+ "qno": 67,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 67,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "IUPAC nomenclature",
+  "archetype": "nomenclature",
+  "brief": "Given a structure described in text (e.g. a substituted cycloalkene or a chain with halogen and OH), pick its correct IUPAC name — standard nomenclature with one correct and three near-miss options.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:45",
+   "2026s1:41",
+   "2026s2:31"
+  ]
+ },
+ "status": "ok",
+ "stem": "The IUPAC name of the compound CH2=C(CH3)-CHBr-CH2OH is:",
+ "options": [
+  "3-bromo-2-methylbut-3-en-1-ol",
+  "2-bromo-3-methylbut-3-en-1-ol",
+  "2-bromo-3-methylbut-1-en-4-ol",
+  "4-bromo-3-methylbut-2-en-1-ol"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": [
+  "figs/q067_optB_v1.png",
+  "figs/q067_optA_v1.png",
+  "figs/q067_optC_v1.png",
+  "figs/q067_optD_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Number from the OH end: the parent is but-3-en-1-ol, with bromo at C2 and methyl at C3.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Principal functional group is OH, so suffix is -ol. Number the longest chain from the OH end: C1=OH, C2=Br, C3=methyl, C4=CH2, with double bond between C3 and C4. Name: 2-bromo-3-methylbut-3-en-1-ol.\n\nIndependent check: Number from the OH end: the parent is but-3-en-1-ol, with bromo at C2 and methyl at C3.",
+ "solution": "The $-OH$ group gets the lowest locant, so number the chain from the $CH_2OH$ end. The parent chain is but-3-en-1-ol, with bromo at C2 and methyl at C3: $\\boxed{2\\text{-bromo-}3\\text{-methylbut-3-en-1-ol}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The IUPAC name of the compound CH2=C(CH3)-CHBr-CH2OH is:",
+  "options": [
+   "2-bromo-3-methylbut-3-en-1-ol",
+   "3-bromo-2-methylbut-3-en-1-ol",
+   "2-bromo-3-methylbut-1-en-4-ol",
+   "4-bromo-3-methylbut-2-en-1-ol"
+  ],
+  "option_smiles": [
+   "OCC(Br)C(C)=C",
+   "OCC(C)C(Br)=C",
+   "C=C(Br)C(C)CO",
+   "OCC=C(C)CBr"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Principal functional group is OH, so suffix is -ol. Number the longest chain from the OH end: C1=OH, C2=Br, C3=methyl, C4=CH2, with double bond between C3 and C4. Name: 2-bromo-3-methylbut-3-en-1-ol.",
+  "distractor_notes": "B: Br and methyl are placed on the wrong carbons due to numbering from the double bond; C: numbering starts from the alkene end, giving OH at C4 and incorrect substituent locants; D: double bond and Br positions are shifted."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

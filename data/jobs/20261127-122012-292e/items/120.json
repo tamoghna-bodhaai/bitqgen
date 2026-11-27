@@ -1,0 +1,64 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Vector triple product",
+  "archetype": "standard identity",
+  "brief": "verify/compute a vector triple product expression like a×(b×c) or (a×b)×c, possibly testing whether a given identity holds",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:109",
+   "2026s2:121",
+   "2022:93"
+  ]
+ },
+ "status": "failed",
+ "stem": "If vectors $a$, $b$, $c$ satisfy $a + b + c = 0$ with $|a| = 3$, $|b| = 4$ and $|c| = 5$, then $|a \\times (b \\times c)|$ equals",
+ "options": [
+  "12",
+  "48",
+  "36",
+  "60"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Since $c = -(a + b)$, squaring gives $|c|^2 = |a|^2 + |b|^2 + 2(a \\cdot b)$, so $25 = 9 + 16 + 2(a \\cdot b) \\implies a \\cdot b = 0$.\nAlso $b \\times c = b \\times (-a - b) = -b \\times a - b \\times b = a \\times b$.\nThen $a \\times (b \\times c) = a \\times (a \\times b) = (a \\cdot b)a - |a|^2 b = -9b$.\nHence $|a \\times (b \\times c)| = 9|b| = 36$.",
+ "solution": "Since $c=-(a+b)$, $25=|a|^2+|b|^2+2(a\\cdot b)=9+16+2(a\\cdot b)$, so $a\\cdot b=0$.\nAlso, $b\\times c=b\\times(-a-b)=a\\times b$. Using $a\\times(a\\times b)=(a\\cdot b)a-|a|^2b$,\n$$|a\\times(b\\times c)|=|-9b|=9|b|=36.$$",
+ "locked": false,
+ "difficulty": 5,
+ "draft": {
+  "stem": "If vectors $a$, $b$, $c$ satisfy $a + b + c = 0$ with $|a| = 3$, $|b| = 4$ and $|c| = 5$, then $|a \\times (b \\times c)|$ equals",
+  "options": [
+   "12",
+   "36",
+   "48",
+   "60"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Since $c = -(a + b)$, squaring gives $|c|^2 = |a|^2 + |b|^2 + 2(a \\cdot b)$, so $25 = 9 + 16 + 2(a \\cdot b) \\implies a \\cdot b = 0$.\nAlso $b \\times c = b \\times (-a - b) = -b \\times a - b \\times b = a \\times b$.\nThen $a \\times (b \\times c) = a \\times (a \\times b) = (a \\cdot b)a - |a|^2 b = -9b$.\nHence $|a \\times (b \\times c)| = 9|b| = 36$.",
+  "distractor_notes": "Distractor A (12) comes from forgetting to square |a| or multiplying incorrectly (e.g., |a|×|b| = 3×4=12). Distractor C (48) could arise from computing |b|×|c|? Distractor D (60) from |a|×|c|?"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

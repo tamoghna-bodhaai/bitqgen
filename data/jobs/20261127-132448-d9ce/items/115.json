@@ -1,0 +1,68 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Condition for intersecting lines",
+  "archetype": "determinant condition",
+  "brief": "Two lines in space given in symmetric form; use the determinant/coplanarity test to check whether they intersect.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:117",
+   "2026s2:119",
+   "2023s2:101"
+  ]
+ },
+ "status": "ok",
+ "stem": "The lines $\\dfrac{x-1}{1}=\\dfrac{y+2}{2}=\\dfrac{z}{1}$ and $\\dfrac{x-3}{2}=\\dfrac{y}{1}=\\dfrac{z-1}{-1}$ are",
+ "options": [
+  "skew",
+  "intersecting",
+  "parallel",
+  "coincident"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Direction vectors are (1,2,1) and (2,1,-1), so the lines are not parallel. Equating coordinates gives inconsistent equations, so they do not intersect; hence they are skew.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mathbf d_1=(1,2,1),\\quad \\mathbf d_2=(2,1,-1),\\quad \\mathbf B-\\mathbf A=(2,2,1)$.<br>$(\\mathbf B-\\mathbf A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=(2,2,1)\\cdot(-3,3,-3)=-3\\ne0$.<br>$\\mathbf d_1\\times\\mathbf d_2\\ne\\mathbf0$; the lines are nonparallel and noncoplanar, hence skew.\n\nIndependent check: Direction vectors are (1,2,1) and (2,1,-1), so the lines are not parallel. Equating coordinates gives inconsistent equations, so they do not intersect; hence they are skew.",
+ "solution": "The direction vectors are $\u000024\\mathbf d_1=(1,2,1),\\quad \\mathbf d_2=(2,1,-1)\u000024$, which are not parallel. Taking points $A=(1,-2,0)$ and $B=(3,0,1)$ on the lines,\n$$\n(\\mathbf B-\\mathbf A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=(2,2,1)\\cdot(-3,3,-3)=-3\\ne0.\n$$\nThus the lines are noncoplanar and nonparallel, so they are skew.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The lines $\\dfrac{x-1}{1}=\\dfrac{y+2}{2}=\\dfrac{z}{1}$ and $\\dfrac{x-3}{2}=\\dfrac{y}{1}=\\dfrac{z-1}{-1}$ are",
+  "options": [
+   "intersecting",
+   "skew",
+   "parallel",
+   "coincident"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\mathbf d_1=(1,2,1),\\quad \\mathbf d_2=(2,1,-1),\\quad \\mathbf B-\\mathbf A=(2,2,1)$.<br>$(\\mathbf B-\\mathbf A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=(2,2,1)\\cdot(-3,3,-3)=-3\\ne0$.<br>$\\mathbf d_1\\times\\mathbf d_2\\ne\\mathbf0$; the lines are nonparallel and noncoplanar, hence skew.",
+  "distractor_notes": "A: Treats the coplanarity test as sufficient for intersection without checking it.\nC: Mistakes nonparallel direction vectors for parallel lines.\nD: Mistakes nonparallel lines for coincident lines."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

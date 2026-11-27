@@ -1,0 +1,68 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Set operations and cardinality",
+  "archetype": "standard identity",
+  "brief": "compute cardinalities of A∪B, A∩B etc. from given |A|, |B|, |A∩B| using inclusion–exclusion",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:114",
+   "2024s1:129",
+   "2025s1:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "If A and B are two finite sets with n(A) = 24, n(B) = 18 and n(A intersection B) = 10, then n(A union B) is equal to",
+ "options": [
+  "22",
+  "52",
+  "42",
+  "32"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "n(A ∪ B) = n(A) + n(B) − n(A ∩ B) = 24 + 18 − 10 = 32.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "n(A union B) = n(A) + n(B) - n(A intersection B) = 24 + 18 - 10 = 32.\n\nIndependent check: n(A ∪ B) = n(A) + n(B) − n(A ∩ B) = 24 + 18 − 10 = 32.",
+ "solution": "Using the inclusion-exclusion formula, $$n(A\\cup B)=n(A)+n(B)-n(A\\cap B)=24+18-10=32.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "If A and B are two finite sets with n(A) = 24, n(B) = 18 and n(A intersection B) = 10, then n(A union B) is equal to",
+  "options": [
+   "22",
+   "32",
+   "42",
+   "52"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "n(A union B) = n(A) + n(B) - n(A intersection B) = 24 + 18 - 10 = 32.",
+  "distractor_notes": "22 is from subtracting twice the intersection; 42 is from forgetting to subtract the intersection; 52 is from adding the intersection instead of subtracting it."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

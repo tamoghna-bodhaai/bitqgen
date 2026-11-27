@@ -1,0 +1,68 @@
+{
+ "qno": 73,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 73,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "IUPAC nomenclature of complexes",
+  "archetype": "fact recall",
+  "brief": "Give a straightforward octahedral complex formula and ask for its correct IUPAC name, with ligand-alphabetical-order distractors.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:74",
+   "2024s2:40",
+   "2024s1:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "What is the correct IUPAC name of the octahedral complex $[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$?",
+ "options": [
+  "dichloridotetraamminecobalt(III) chloride",
+  "tetraamminedichloridocobalt(III) chloride",
+  "tetraamminedichloridocobalt(II) chloride",
+  "tetraamminedichloridocobalt(III) dichloride"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The complex ion has charge +1 because of the outer Cl⁻. With neutral NH₃ and two Cl⁻ ligands, cobalt is +3. Ligands are named alphabetically: ammine before chlorido.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Complex charge $=+1$; hence $x-2=+1$, so Co is in oxidation state $+3$.\\nLigands are named alphabetically: ammine before chlorido.\\nName: tetraamminedichloridocobalt(III) chloride.\n\nIndependent check: The complex ion has charge +1 because of the outer Cl⁻. With neutral NH₃ and two Cl⁻ ligands, cobalt is +3. Ligands are named alphabetically: ammine before chlorido.",
+ "solution": "The complex ion has charge $+1$; with neutral $\\text{NH}_3$ and two $\\text{Cl}^-$ ligands, $x-2=+1$, so cobalt is in the $+3$ oxidation state.\nLigands are named alphabetically: ammine before chlorido. Hence the name is tetraamminedichloridocobalt(III) chloride.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "What is the correct IUPAC name of the octahedral complex $[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$?",
+  "options": [
+   "dichloridotetraamminecobalt(III) chloride",
+   "tetraamminedichloridocobalt(III) chloride",
+   "tetraamminedichloridocobalt(II) chloride",
+   "tetraamminedichloridocobalt(III) dichloride"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Complex charge $=+1$; hence $x-2=+1$, so Co is in oxidation state $+3$.\\nLigands are named alphabetically: ammine before chlorido.\\nName: tetraamminedichloridocobalt(III) chloride.",
+  "distractor_notes": "A reverses the alphabetical order of the ligand names; C assigns the wrong oxidation state; D gives the wrong number of counterions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Earth's magnetism – dip",
+  "archetype": "single-formula numerical",
+  "brief": "At a place, the angle of dip and the horizontal component of Earth's field are given; ask for the vertical component or total field strength.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:12",
+   "2023s1:17",
+   "2025s1:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "At a certain place, the horizontal component of Earth's magnetic field is 3.0 x 10^-5 T and the angle of dip is 60 degrees. The vertical component of the field at that place is",
+ "options": [
+  "1.7 x 10^-5 T",
+  "3.0 x 10^-5 T",
+  "6.0 x 10^-5 T",
+  "5.2 x 10^-5 T"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(B_V=B_H\\tan 60^\\circ=3.0\\times10^{-5}\\sqrt{3}\\approx5.2\\times10^{-5}\\,\\text{T}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "V = H tan delta = 3.0 x 10^-5 tan 60 = 3.0 x 10^-5 x 1.732 = 5.196 x 10^-5 T, approximately 5.2 x 10^-5 T.\n\nIndependent check: \\(B_V=B_H\\tan 60^\\circ=3.0\\times10^{-5}\\sqrt{3}\\approx5.2\\times10^{-5}\\,\\text{T}\\).",
+ "solution": "The vertical component is related to the horizontal component by $B_V=B_H\\tan\\delta$.\n$$B_V=3.0\\times10^{-5}\\tan60^\\circ=3.0\\sqrt{3}\\times10^{-5}\\approx5.2\\times10^{-5}\\,\\text{T}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At a certain place, the horizontal component of Earth's magnetic field is 3.0 x 10^-5 T and the angle of dip is 60 degrees. The vertical component of the field at that place is",
+  "options": [
+   "1.7 x 10^-5 T",
+   "3.0 x 10^-5 T",
+   "5.2 x 10^-5 T",
+   "6.0 x 10^-5 T"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "V = H tan delta = 3.0 x 10^-5 tan 60 = 3.0 x 10^-5 x 1.732 = 5.196 x 10^-5 T, approximately 5.2 x 10^-5 T.",
+  "distractor_notes": "A: uses H cot delta; B: gives horizontal component instead of vertical; D: gives total field H/cos delta."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

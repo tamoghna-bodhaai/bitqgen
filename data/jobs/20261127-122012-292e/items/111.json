@@ -1,0 +1,68 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Term independent of x",
+  "archetype": "general term exponent matching",
+  "brief": "find the term independent of x in a single binomial expansion by setting the exponent of x in the general term to zero",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:114",
+   "2024s1:117",
+   "2025s2:130"
+  ]
+ },
+ "status": "ok",
+ "stem": "The term independent of x in the expansion of (x^2 + 1/(2x))^9 is",
+ "options": [
+  "21/32",
+  "21/16",
+  "21/8",
+  "84"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "General term: \\(\\binom{9}{k}2^{-k}x^{18-3k}\\). The constant term requires \\(k=6\\), giving \\(\\binom{9}{6}/2^6=84/64=21/16\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "General term T_(r+1) = C(9,r) (x^2)^(9-r) (1/(2x))^r = C(9,r) 2^(-r) x^(18 - 3r). Set 18 - 3r = 0 to get r = 6. Coefficient = C(9,6) * 2^(-6) = 84/64 = 21/16.\n\nIndependent check: General term: \\(\\binom{9}{k}2^{-k}x^{18-3k}\\). The constant term requires \\(k=6\\), giving \\(\\binom{9}{6}/2^6=84/64=21/16\\).",
+ "solution": "The general term is $T_{r+1}=\\binom{9}{r}2^{-r}x^{18-3r}$. For the term independent of $x$, set $18-3r=0$, so $r=6$.\n$$\\binom{9}{6}2^{-6}=\\frac{84}{64}=\\frac{21}{16}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The term independent of x in the expansion of (x^2 + 1/(2x))^9 is",
+  "options": [
+   "21/32",
+   "21/16",
+   "21/8",
+   "84"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "General term T_(r+1) = C(9,r) (x^2)^(9-r) (1/(2x))^r = C(9,r) 2^(-r) x^(18 - 3r). Set 18 - 3r = 0 to get r = 6. Coefficient = C(9,6) * 2^(-6) = 84/64 = 21/16.",
+  "distractor_notes": "A: arithmetic slip in exponent or coefficient; C: used 1/8 instead of 1/64, i.e. forgot one factor of 2; D: forgot the factor (1/2)^6 entirely and gave C(9,6)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

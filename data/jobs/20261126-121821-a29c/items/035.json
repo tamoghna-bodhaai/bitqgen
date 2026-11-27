@@ -1,0 +1,67 @@
+{
+ "qno": 35,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 35,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Xenon fluorides",
+  "archetype": "statement evaluation",
+  "brief": "Present 3–4 statements on structures/hybridisation/hydrolysis of XeF2, XeF4, XeF6 (and their hydrolysis products) and ask how many are correct; make one statement subtly wrong on hydrolysis.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:58",
+   "2026s2:53",
+   "2025s1:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the following statements regarding xenon fluorides and their hydrolysis products:\n\nI. The central xenon atom in $\\text{XeF}_2$ and $\\text{XeF}_4$ exhibits $sp^3d$ and $sp^3d^2$ hybridisation, respectively, resulting in linear and square planar molecular shapes.\nII. In the gaseous state, $\\text{XeF}_6$ possesses a distorted octahedral geometry with six bond pairs and one lone pair of electrons on xenon.\nIII. Partial hydrolysis of $\\text{XeF}_6$ can yield $\\text{XeOF}_4$ (square pyramidal) or $\\text{XeO}_2\\text{F}_2$ (see-saw) without any change in the oxidation state of xenon.\nIV. Complete hydrolysis of both $\\text{XeF}_4$ and $\\text{XeF}_6$ yields $\\text{XeO}_3$ accompanied by the liberation of $\\text{O}_2$ gas.\n\nHow many of the above statements are correct?",
+ "options": [
+  "1",
+  "2",
+  "3",
+  "4"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "I: XeF2 = sp3d, linear; XeF4 = sp3d2, square planar — correct. II: gaseous XeF6 has 6 bp + 1 lp, distorted octahedral — correct (NCERT). III: XeF6 + H2O → XeOF4 (square pyramidal); XeF6 + 2H2O → XeO2F2 (5 domains, 1 lp → see-saw); Xe stays +6 in all (XeOF4: 2+4=+6; XeO2F2: 4+2=+6; XeO3: +6) — correct. IV: XeF6 + 3H2O → XeO3 + 6HF gives NO O2; XeF4 hydrolysis is disproportionation: 6XeF4 + 12H2O → 4Xe + 2XeO3 + 24HF + 3O2 (atom and electron balance verified), so it does not simply yield XeO3 — incorrect. Three statements correct.",
+   "answer": "C",
+   "confidence": 0.92,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Let us evaluate each statement:\n\n1. **Statement I is correct.** \n- In $\\text{XeF}_2$, Xe has 2 bond pairs and 3 lone pairs (steric number = $5$). The hybridisation is $sp^3d$, and the lone pairs occupy equatorial positions, giving a linear shape.\n- In $\\text{XeF}_4$, Xe has 4 bond pairs and 2 lone pairs (steric number = $6$). The hybridisation is $sp^3d^2$, and the lone pairs occupy trans-axial positions, giving a square planar shape.\n\n2. **Statement II is correct.** \nIn $\\text{XeF}_6$, Xe has 6 bond pairs and 1 lone pair (total 7 electron pairs). In the gas phase, this lone pair distorts the octahedral arrangement, yielding a distorted octahedral geometry.\n\n3. **Statement III is correct.** \nPartial hydrolysis of $\\text{XeF}_6$ proceeds as:\n$$\\text{XeF}_6 + \\text{H}_2\\text{O} \\rightarrow \\text{XeOF}_4 + 2\\text{HF}$$\n$$\\text{XeF}_6 + 2\\text{H}_2\\text{O} \\rightarrow \\text{XeO}_2\\text{F}_2 + 4\\text{HF}$$\nIn both reactions, xenon remains in the $+6$ oxidation state (non-redox). $\\text{XeOF}_4$ has 5 $\\sigma$-bonds and 1 lone pair ($sp^3d^2$, square pyramidal), while $\\text{XeO}_2\\text{F}_2$ has 4 $\\sigma$-bonds and 1 lone pair ($sp^3d$, see-saw).\n\n4. **Statement IV is incorrect.** \n- The complete hydrolysis of $\\text{XeF}_4$ is a disproportionation redox reaction that liberates $\\text{O}_2$ gas:\n$$6\\text{XeF}_4 + 12\\text{H}_2\\text{O} \\rightarrow 4\\text{Xe} + 2\\text{XeO}_3 + 24\\text{HF} + 3\\text{O}_2$$\n- However, complete hydrolysis of $\\text{XeF}_6$ is a non-redox reaction that does **not** liberate $\\text{O}_2$:\n$$\\text{XeF}_6 + 3\\text{H}_2\\text{O} \\rightarrow \\text{XeO}_3 + 6\\text{HF}$$\nHence, $\\text{O}_2$ is liberated only in the case of $\\text{XeF}_4$.\n\nStatements I, II, and III are correct, so exactly 3 statements are correct.\n\nIndependent check: I: XeF2 = sp3d, linear; XeF4 = sp3d2, square planar — correct. II: gaseous XeF6 has 6 bp + 1 lp, distorted octahedral — correct (NCERT). III: XeF6 + H2O → XeOF4 (square pyramidal); XeF6 + 2H2O → XeO2F2 (5 domains, 1 lp → see-saw); Xe stays +6 in all (XeOF4: 2+4=+6; XeO2F2: 4+2=+6; XeO3: +6) — correct. IV: XeF6 + 3H2O → XeO3 + 6HF gives NO O2; XeF4 hydrolysis is disproportionation: 6XeF4 + 12H2O → 4Xe + 2XeO3 + 24HF + 3O2 (atom and electron balance verified), so it does not simply yield XeO3 — incorrect. Three statements correct.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Consider the following statements regarding xenon fluorides and their hydrolysis products:\n\nI. The central xenon atom in $\\text{XeF}_2$ and $\\text{XeF}_4$ exhibits $sp^3d$ and $sp^3d^2$ hybridisation, respectively, resulting in linear and square planar molecular shapes.\nII. In the gaseous state, $\\text{XeF}_6$ possesses a distorted octahedral geometry with six bond pairs and one lone pair of electrons on xenon.\nIII. Partial hydrolysis of $\\text{XeF}_6$ can yield $\\text{XeOF}_4$ (square pyramidal) or $\\text{XeO}_2\\text{F}_2$ (see-saw) without any change in the oxidation state of xenon.\nIV. Complete hydrolysis of both $\\text{XeF}_4$ and $\\text{XeF}_6$ yields $\\text{XeO}_3$ accompanied by the liberation of $\\text{O}_2$ gas.\n\nHow many of the above statements are correct?",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Let us evaluate each statement:\n\n1. **Statement I is correct.** \n- In $\\text{XeF}_2$, Xe has 2 bond pairs and 3 lone pairs (steric number = $5$). The hybridisation is $sp^3d$, and the lone pairs occupy equatorial positions, giving a linear shape.\n- In $\\text{XeF}_4$, Xe has 4 bond pairs and 2 lone pairs (steric number = $6$). The hybridisation is $sp^3d^2$, and the lone pairs occupy trans-axial positions, giving a square planar shape.\n\n2. **Statement II is correct.** \nIn $\\text{XeF}_6$, Xe has 6 bond pairs and 1 lone pair (total 7 electron pairs). In the gas phase, this lone pair distorts the octahedral arrangement, yielding a distorted octahedral geometry.\n\n3. **Statement III is correct.** \nPartial hydrolysis of $\\text{XeF}_6$ proceeds as:\n$$\\text{XeF}_6 + \\text{H}_2\\text{O} \\rightarrow \\text{XeOF}_4 + 2\\text{HF}$$\n$$\\text{XeF}_6 + 2\\text{H}_2\\text{O} \\rightarrow \\text{XeO}_2\\text{F}_2 + 4\\text{HF}$$\nIn both reactions, xenon remains in the $+6$ oxidation state (non-redox). $\\text{XeOF}_4$ has 5 $\\sigma$-bonds and 1 lone pair ($sp^3d^2$, square pyramidal), while $\\text{XeO}_2\\text{F}_2$ has 4 $\\sigma$-bonds and 1 lone pair ($sp^3d$, see-saw).\n\n4. **Statement IV is incorrect.** \n- The complete hydrolysis of $\\text{XeF}_4$ is a disproportionation redox reaction that liberates $\\text{O}_2$ gas:\n$$6\\text{XeF}_4 + 12\\text{H}_2\\text{O} \\rightarrow 4\\text{Xe} + 2\\text{XeO}_3 + 24\\text{HF} + 3\\text{O}_2$$\n- However, complete hydrolysis of $\\text{XeF}_6$ is a non-redox reaction that does **not** liberate $\\text{O}_2$:\n$$\\text{XeF}_6 + 3\\text{H}_2\\text{O} \\rightarrow \\text{XeO}_3 + 6\\text{HF}$$\nHence, $\\text{O}_2$ is liberated only in the case of $\\text{XeF}_4$.\n\nStatements I, II, and III are correct, so exactly 3 statements are correct.",
+  "distractor_notes": "Option A (1): Arises if the student mistakenly considers only Statement I correct, believing $\\text{XeF}_6$ is regular octahedral and that partial hydrolysis involves redox changes.\nOption B (2): Arises if the student wrongly thinks $\\text{XeF}_6$ has a regular octahedral shape (marking II false) or doubts the geometry of $\\text{XeO}_2\\text{F}_2$ (marking III false).\nOption D (4): Common trap; arises if the student falsely generalizes that all xenon fluorides evolve $\\text{O}_2$ gas upon hydrolysis, overlooking that $\\text{XeF}_6$ hydrolysis is strictly non-redox and does not yield $\\text{O}_2$.",
+  "figure": null,
+  "difficulty_estimate": 5
+ }
+}

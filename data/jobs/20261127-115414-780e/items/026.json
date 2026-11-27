@@ -1,0 +1,68 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile trajectory equation",
+  "archetype": "compare-with-standard-form",
+  "brief": "Given y = αx − βx², compare with the standard parabolic trajectory to extract u, θ and range.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:7",
+   "2021:31",
+   "2026s1:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "The trajectory of a projectile is given by y = 3x - 4x^2, where x and y are in metre. The horizontal range of the projectile is",
+ "options": [
+  "1.33 m",
+  "0.75 m",
+  "3 m",
+  "4 m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set y=0: x(3−4x)=0. The nonzero root gives the horizontal range, x=3/4=0.75 m.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Compare with standard form y = x tan(theta) - [g/(2u^2 cos^2 theta)]x^2. Coefficient of x gives tan(theta) = 3. Coefficient of x^2 gives g/(2u^2 cos^2 theta) = 4. Horizontal range R = u^2 sin(2 theta)/g = tan(theta) / [g/(2u^2 cos^2 theta)] = 3/4 = 0.75 m.\n\nIndependent check: Set y=0: x(3−4x)=0. The nonzero root gives the horizontal range, x=3/4=0.75 m.",
+ "solution": "At the landing point, $y=0$:\n$$x(3-4x)=0 \\implies x=0,\\;\\frac{3}{4}.$$\nThe nonzero root gives the horizontal range, so $R=0.75\\,\\text{m}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The trajectory of a projectile is given by y = 3x - 4x^2, where x and y are in metre. The horizontal range of the projectile is",
+  "options": [
+   "0.75 m",
+   "1.33 m",
+   "3 m",
+   "4 m"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Compare with standard form y = x tan(theta) - [g/(2u^2 cos^2 theta)]x^2. Coefficient of x gives tan(theta) = 3. Coefficient of x^2 gives g/(2u^2 cos^2 theta) = 4. Horizontal range R = u^2 sin(2 theta)/g = tan(theta) / [g/(2u^2 cos^2 theta)] = 3/4 = 0.75 m.",
+  "distractor_notes": "B: takes reciprocal 4/3 instead of 3/4; C: picks the coefficient of x; D: picks the coefficient of x^2."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

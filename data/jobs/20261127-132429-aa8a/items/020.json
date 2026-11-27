@@ -1,0 +1,68 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Area under v-t graph",
+  "archetype": "graph interpretation",
+  "brief": "Area under v-t graph: a piecewise-linear or triangular v–t curve described numerically; read off acceleration from slope and displacement from area, including a retarding segment.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:7",
+   "2023s2:4",
+   "2022:21"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle’s velocity increases uniformly from $2$ m s$^{-1}$ to $10$ m s$^{-1}$ during the first $4$ s, then decreases uniformly to zero during the next $4$ s. What are its acceleration in the first interval and its total displacement?",
+ "options": [
+  "$2$ m s$^{-2}$, $40$ m",
+  "$2$ m s$^{-2}$, $44$ m",
+  "$4$ m s$^{-2}$, $44$ m",
+  "$2$ m s$^{-2}$, $24$ m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "First interval: a = (10 − 2)/4 = 2 m s⁻². Total displacement = [(2 + 10)/2]·4 + [(10 + 0)/2]·4 = 24 + 20 = 44 m.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=\\dfrac{10-2}{4}=2$ m s$^{-2}$\n$\\Delta x=\\dfrac{2+10}{2}(4)+\\dfrac{10+0}{2}(4)=24+20=44$ m\n\nIndependent check: First interval: a = (10 − 2)/4 = 2 m s⁻². Total displacement = [(2 + 10)/2]·4 + [(10 + 0)/2]·4 = 24 + 20 = 44 m.",
+ "solution": "For uniform acceleration, $a=\\dfrac{v-u}{t}$; hence $a=\\dfrac{10-2}{4}=2\\ \\text{m s}^{-2}$.\n$$\\Delta x=\\frac{2+10}{2}(4)+\\frac{10+0}{2}(4)=24+20=44\\ \\text{m}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle’s velocity increases uniformly from $2$ m s$^{-1}$ to $10$ m s$^{-1}$ during the first $4$ s, then decreases uniformly to zero during the next $4$ s. What are its acceleration in the first interval and its total displacement?",
+  "options": [
+   "$2$ m s$^{-2}$, $44$ m",
+   "$2$ m s$^{-2}$, $40$ m",
+   "$4$ m s$^{-2}$, $44$ m",
+   "$2$ m s$^{-2}$, $24$ m"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$a=\\dfrac{10-2}{4}=2$ m s$^{-2}$\n$\\Delta x=\\dfrac{2+10}{2}(4)+\\dfrac{10+0}{2}(4)=24+20=44$ m",
+  "distractor_notes": "B: Omits the initial-velocity contribution in the first area; C: Uses the velocity change as acceleration without dividing by time; D: Counts only the first interval."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

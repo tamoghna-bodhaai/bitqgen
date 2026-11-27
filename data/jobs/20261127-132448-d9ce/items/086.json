@@ -1,0 +1,68 @@
+{
+ "qno": 86,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 86,
+  "section": "English Proficiency",
+  "chapter": "Active and Passive Voice",
+  "subtopic": "Active and passive voice - complex sentences",
+  "archetype": "voice change",
+  "brief": "Convert a sentence with two clauses and mixed tenses (one passive clause in past perfect) into active voice; watch tricky verb forms and pronoun shifts.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:70",
+   "2024s2:65",
+   "2024s1:63"
+  ]
+ },
+ "status": "ok",
+ "stem": "Change into active voice: The committee was informed by the secretary that the revised schedule had been approved by the chair before the delegates arrived.",
+ "options": [
+  "The chair informed the secretary that the committee had approved the revised schedule before the delegates arrived.",
+  "The secretary had informed the committee that the chair approved the revised schedule before the delegates arrived.",
+  "The secretary informed the committee that the chair had approved the revised schedule before the delegates arrived.",
+  "The secretary informed the committee that the chair has approved the revised schedule before the delegates arrived."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Change the main clause to active: “The secretary informed the committee.” Change the subordinate clause to active: “the chair had approved the revised schedule.”",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "“Was informed” → “informed”; “had been approved” → “had approved.” The simple past in “arrived” remains unchanged.\n\nIndependent check: Change the main clause to active: “The secretary informed the committee.” Change the subordinate clause to active: “the chair had approved the revised schedule.”",
+ "solution": "The passive “was informed by the secretary” becomes the active “the secretary informed.” In the subordinate clause, “had been approved by the chair” becomes “the chair had approved”; “arrived” remains unchanged. Thus, the sentence matches option (C).",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Change into active voice: The committee was informed by the secretary that the revised schedule had been approved by the chair before the delegates arrived.",
+  "options": [
+   "The secretary informed the committee that the chair had approved the revised schedule before the delegates arrived.",
+   "The secretary had informed the committee that the chair approved the revised schedule before the delegates arrived.",
+   "The chair informed the secretary that the committee had approved the revised schedule before the delegates arrived.",
+   "The secretary informed the committee that the chair has approved the revised schedule before the delegates arrived."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "“Was informed” → “informed”; “had been approved” → “had approved.” The simple past in “arrived” remains unchanged.",
+  "distractor_notes": "B: Alters the main-clause tense and the past-perfect clause. C: Reverses the agents. D: Changes past perfect to present perfect."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

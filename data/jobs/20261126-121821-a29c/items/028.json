@@ -1,0 +1,67 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Variation of g with height",
+  "archetype": "proportionality-scaling",
+  "brief": "Variation of g with height/depth; compare g at altitude vs surface, or find height where g drops by given fraction",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:28",
+   "2026s2:1",
+   "2024s1:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "At what height $h$ above the Earth's surface does the acceleration due to gravity decrease by $36\\%$ of its value at the surface? ($R$ is the radius of the Earth)",
+ "options": [
+  "$0.18 R$",
+  "$0.20 R$",
+  "$0.25 R$",
+  "$0.36 R$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "g' = g[R/(R+h)]² = 0.64g ⇒ R/(R+h) = 0.8 ⇒ R+h = 1.25R ⇒ h = 0.25R.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The acceleration due to gravity at height $h$ above the Earth's surface is given by the exact formula:\n$$g' = g \\left(\\dfrac{R}{R+h}\\right)^2$$\n\nSince the acceleration decreases by $36\\%$, the value at height $h$ is:\n$$g' = g - 0.36g = 0.64g$$\n\nBecause the change in $g$ is large ($36\\% > 5\\%$), the binomial approximation $g' \\approx g(1 - 2h/R)$ cannot be used.\n\nEquating the exact expression to $0.64g$:\n$$g \\left(\\dfrac{R}{R+h}\\right)^2 = 0.64g$$\n$$\\left(\\dfrac{R}{R+h}\\right)^2 = 0.64$$\n\nTaking the square root on both sides:\n$$\\dfrac{R}{R+h} = 0.8 = \\dfrac{4}{5}$$\n$$5R = 4(R+h) = 4R + 4h$$\n$$4h = R \\implies h = \\dfrac{R}{4} = 0.25 R$$\n\nIndependent check: g' = g[R/(R+h)]² = 0.64g ⇒ R/(R+h) = 0.8 ⇒ R+h = 1.25R ⇒ h = 0.25R.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At what height $h$ above the Earth's surface does the acceleration due to gravity decrease by $36\\%$ of its value at the surface? ($R$ is the radius of the Earth)",
+  "options": [
+   "$0.18 R$",
+   "$0.20 R$",
+   "$0.25 R$",
+   "$0.36 R$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The acceleration due to gravity at height $h$ above the Earth's surface is given by the exact formula:\n$$g' = g \\left(\\dfrac{R}{R+h}\\right)^2$$\n\nSince the acceleration decreases by $36\\%$, the value at height $h$ is:\n$$g' = g - 0.36g = 0.64g$$\n\nBecause the change in $g$ is large ($36\\% > 5\\%$), the binomial approximation $g' \\approx g(1 - 2h/R)$ cannot be used.\n\nEquating the exact expression to $0.64g$:\n$$g \\left(\\dfrac{R}{R+h}\\right)^2 = 0.64g$$\n$$\\left(\\dfrac{R}{R+h}\\right)^2 = 0.64$$\n\nTaking the square root on both sides:\n$$\\dfrac{R}{R+h} = 0.8 = \\dfrac{4}{5}$$\n$$5R = 4(R+h) = 4R + 4h$$\n$$4h = R \\implies h = \\dfrac{R}{4} = 0.25 R$$",
+  "distractor_notes": "A: Uses the linear approximation $\\Delta g/g \\approx 2h/R$, which gives $2h/R = 0.36 \\implies h = 0.18 R$.\nB: Solves for $R/(R+h) = 0.8$ correctly, but makes the algebraic slip $h/R = 1 - 0.8 = 0.20$.\nD: Uses $\\Delta g/g \\approx h/R$, either confusing the height variation with depth variation or forgetting the factor of 2 in the binomial expansion.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

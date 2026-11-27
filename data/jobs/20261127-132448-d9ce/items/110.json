@@ -1,0 +1,68 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Increasing and decreasing functions",
+  "archetype": "sign of derivative",
+  "brief": "Find the interval in which a polynomial (factored form) is strictly increasing; test derivative sign.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:97",
+   "2022:105",
+   "2026s2:124"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $f(x)=(x-2)(x+1)^2$, in which interval is $f$ strictly increasing?",
+ "options": [
+  "$(-2,0)$",
+  "$(2,4)$",
+  "$(0,2)$",
+  "$(-1,1)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "f'(x)=3(x+1)(x-1), which is positive for x>1. Only (2,4) lies entirely in an interval where f is increasing.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f'(x)=(x+1)(x+1+2x-4)=3(x+1)(x-1)$\n$f'(x)>0$ for $x<-1$ or $x>1$; $f'(x)<0$ for $-1<x<1$\nAmong the listed intervals, only $(2,4)$ lies wholly in an increasing region.\n\nIndependent check: f'(x)=3(x+1)(x-1), which is positive for x>1. Only (2,4) lies entirely in an interval where f is increasing.",
+ "solution": "$$f'(x)=3(x+1)(x-1).$$\nThus $f'(x)>0$ for $x>1$, so $f$ is strictly increasing on $(2,4)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $f(x)=(x-2)(x+1)^2$, in which interval is $f$ strictly increasing?",
+  "options": [
+   "$(-2,0)$",
+   "$(-1,1)$",
+   "$(0,2)$",
+   "$(2,4)$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$f'(x)=(x+1)(x+1+2x-4)=3(x+1)(x-1)$\n$f'(x)>0$ for $x<-1$ or $x>1$; $f'(x)<0$ for $-1<x<1$\nAmong the listed intervals, only $(2,4)$ lies wholly in an increasing region.",
+  "distractor_notes": "A: crosses a critical point, so the derivative changes sign.\nB: lies in a decreasing region.\nC: crosses a critical point, so the derivative changes sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

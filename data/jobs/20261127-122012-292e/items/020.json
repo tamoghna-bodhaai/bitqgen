@@ -1,0 +1,68 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Newton's law of cooling",
+  "archetype": "multi-step numeric",
+  "brief": "A hot body cools in a room; given cooling data over one interval, ask for its temperature after another equal interval using Newton's law of cooling.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:7",
+   "2021:18",
+   "2026s1:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "A body cools from 80 °C to 50 °C in 4 minutes in a room maintained at 20 °C. Assuming Newton's law of cooling, its temperature after another 4 minutes will be:",
+ "options": [
+  "20 °C",
+  "35 °C",
+  "40 °C",
+  "45 °C"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Newton’s law, excess temperature decays exponentially. It falls from 80−20=60°C to 50−20=30°C in 4 minutes, so in the next 4 minutes it halves again to 15°C. Thus the body reaches 20+15=35°C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "First interval: (80 - 50)/4 = k((80 + 50)/2 - 20) => 7.5 = k*45, k = 1/6 per min. Second interval: (50 - T)/4 = (1/6)((50 + T)/2 - 20). Solving gives T = 35 °C.\n\nIndependent check: By Newton’s law, excess temperature decays exponentially. It falls from 80−20=60°C to 50−20=30°C in 4 minutes, so in the next 4 minutes it halves again to 15°C. Thus the body reaches 20+15=35°C.",
+ "solution": "By Newton’s law of cooling, the excess temperature above the room temperature decays exponentially. In 4 minutes it falls from $80-20=60^\\circ\\mathrm C$ to $50-20=30^\\circ\\mathrm C$, i.e. it halves; after another 4 minutes it halves again to $15^\\circ\\mathrm C$.\n$$T=20+15=35^\\circ\\mathrm C$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A body cools from 80 °C to 50 °C in 4 minutes in a room maintained at 20 °C. Assuming Newton's law of cooling, its temperature after another 4 minutes will be:",
+  "options": [
+   "20 °C",
+   "35 °C",
+   "40 °C",
+   "45 °C"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "First interval: (80 - 50)/4 = k((80 + 50)/2 - 20) => 7.5 = k*45, k = 1/6 per min. Second interval: (50 - T)/4 = (1/6)((50 + T)/2 - 20). Solving gives T = 35 °C.",
+  "distractor_notes": "A: assumed same 30 degree drop; C: used half of initial excess incorrectly; D: misapplied Newton's law factor"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 143,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 143,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Symmetric functions of roots",
+  "archetype": "use root equation",
+  "brief": "Given a relation between roots (or one root given), find the value of k or another root using the root equation plus Vieta's relations.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:97",
+   "2025s2:111",
+   "2024s1:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "The roots $\\alpha,\\beta$ of $x^2-kx+4=0$ satisfy $\\alpha^2+\\beta^2=17$. If $k>0$, find $k$.",
+ "options": [
+  "$3$",
+  "$5$",
+  "$\\sqrt{17}$",
+  "$4$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using Vieta’s formulas, \\(\\alpha+\\beta=k\\) and \\(\\alpha\\beta=4\\). Thus \\(\\alpha^2+\\beta^2=k^2-2(4)=17\\), so \\(k^2=25\\). Since \\(k>0\\), \\(k=5\\).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\alpha+\\beta=k$, $\\alpha\\beta=4$.\\n$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta=k^2-8=17$.\\n$k^2=25$; since $k>0$, $k=5$.\n\nIndependent check: Using Vieta’s formulas, \\(\\alpha+\\beta=k\\) and \\(\\alpha\\beta=4\\). Thus \\(\\alpha^2+\\beta^2=k^2-2(4)=17\\), so \\(k^2=25\\). Since \\(k>0\\), \\(k=5\\).",
+ "solution": "$\\alpha+\\beta=k$ and $\\alpha\\beta=4$ by Vieta’s formulas. Hence\n$$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta=k^2-8=17.$$\nThus $k^2=25$; since $k>0$, $k=5$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The roots $\\alpha,\\beta$ of $x^2-kx+4=0$ satisfy $\\alpha^2+\\beta^2=17$. If $k>0$, find $k$.",
+  "options": [
+   "$3$",
+   "$4$",
+   "$\\sqrt{17}$",
+   "$5$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\alpha+\\beta=k$, $\\alpha\\beta=4$.\\n$\\alpha^2+\\beta^2=(\\alpha+\\beta)^2-2\\alpha\\beta=k^2-8=17$.\\n$k^2=25$; since $k>0$, $k=5$.",
+  "distractor_notes": "A: Makes an arithmetic error when solving for $k^2$.\nB: Confuses the product of the roots with their sum.\nC: Omits the $2\\alpha\\beta$ term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

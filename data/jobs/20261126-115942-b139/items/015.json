@@ -1,0 +1,67 @@
+{
+ "qno": 15,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 15,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of subsets",
+  "archetype": "distinct elements count",
+  "brief": "Give a set defined via a condition (e.g. number of elements with specified subset count or a set built from divisors) and ask how many elements it has or how many subsets; single-step counting.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:122",
+   "2024s1:112",
+   "2026s2:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A = \\{x \\in \\mathbb{N} : x \\text{ is a divisor of } 36\\}$. The number of subsets of $A$ is",
+ "options": [
+  "$512$",
+  "$511$",
+  "$256$",
+  "$1024$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "36 = 2^2 * 3^2, so the number of positive divisors is (2+1)(2+1) = 9. Thus |A| = 9. The number of subsets of A is 2^9 = 512.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Write $36 = 2^2 \\cdot 3^2$. The number of positive divisors is $(2+1)(2+1) = 9$.\n\nSo $A = \\{1, 2, 3, 4, 6, 9, 12, 18, 36\\}$ and $n(A) = 9$.\n\nThe number of subsets is $2^{n(A)} = 2^9 = 512$.\n\nIndependent check: 36 = 2^2 * 3^2, so the number of positive divisors is (2+1)(2+1) = 9. Thus |A| = 9. The number of subsets of A is 2^9 = 512.",
+ "solution": "$36 = 2^2\\cdot 3^2$, so the number of positive divisors is $(2+1)(2+1)=9$.\n$A=\\{1,2,3,4,6,9,12,18,36\\}$, so $n(A)=9$.\nNumber of subsets $=2^{n(A)}=2^9=512$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Let $A = \\{x \\in \\mathbb{N} : x \\text{ is a divisor of } 36\\}$. The number of subsets of $A$ is",
+  "options": [
+   "$256$",
+   "$511$",
+   "$512$",
+   "$1024$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Write $36 = 2^2 \\cdot 3^2$. The number of positive divisors is $(2+1)(2+1) = 9$.\n\nSo $A = \\{1, 2, 3, 4, 6, 9, 12, 18, 36\\}$ and $n(A) = 9$.\n\nThe number of subsets is $2^{n(A)} = 2^9 = 512$.",
+  "distractor_notes": "$256$: counts only $8$ divisors by leaving out $1$ or $36$, giving $2^8$.\n$511$: counts only the non-empty (or proper) subsets, $2^9 - 1$.\n$1024$: miscounts the divisors as $10$, giving $2^{10}$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Inverse of a function",
+  "archetype": "property check",
+  "brief": "Given two explicit functions as sets of pairs or formulas, decide which statements about f∘g, g∘f or injectivity/surjectivity are true.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:121",
+   "2024s2:111",
+   "2023s2:114"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $f:\\mathbb R\\to[1,\\infty)$ and $g:[1,\\infty)\\to\\mathbb R$ be defined by $f(x)=x^2+1$ and $g(x)=\\sqrt{x-1}$. Which statement is true?",
+ "options": [
+  "$(g\\circ f)(x)=x$ for every $x\\in\\mathbb R$.",
+  "$(f\\circ g)(x)=x$ for every $x\\in[1,\\infty)$.",
+  "$f$ is one-to-one on $\\mathbb R$.",
+  "$g$ maps onto $\\mathbb R$. "
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For x≥1, (f∘g)(x)=(√(x−1))²+1=x. Also (g∘f)(x)=|x|, f is not one-to-one, and g has range [0,∞).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(f\\circ g)(x)=(\\sqrt{x-1})^2+1=x$ for $x\\ge1$.\\n$(g\\circ f)(x)=\\sqrt{x^2}=|x|$.\\n$f$ is not injective; $g$ has range $[0,\\infty)$.\n\nIndependent check: For x≥1, (f∘g)(x)=(√(x−1))²+1=x. Also (g∘f)(x)=|x|, f is not one-to-one, and g has range [0,∞).",
+ "solution": "For $x\\in[1,\\infty)$,\n$$\n(f\\circ g)(x)=\\left(\\sqrt{x-1}\\right)^2+1=x.\n$$\nThus the stated identity holds for every $x$ in the domain.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $f:\\mathbb R\\to[1,\\infty)$ and $g:[1,\\infty)\\to\\mathbb R$ be defined by $f(x)=x^2+1$ and $g(x)=\\sqrt{x-1}$. Which statement is true?",
+  "options": [
+   "$(f\\circ g)(x)=x$ for every $x\\in[1,\\infty)$.",
+   "$(g\\circ f)(x)=x$ for every $x\\in\\mathbb R$.",
+   "$f$ is one-to-one on $\\mathbb R$.",
+   "$g$ maps onto $\\mathbb R$. "
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$(f\\circ g)(x)=(\\sqrt{x-1})^2+1=x$ for $x\\ge1$.\\n$(g\\circ f)(x)=\\sqrt{x^2}=|x|$.\\n$f$ is not injective; $g$ has range $[0,\\infty)$.",
+  "distractor_notes": "B: Assumes $|x|=x$ for all real $x$.\\nC: Overlooks $f(x)=f(-x)$.\\nD: Confuses the range $[0,\\infty)$ with the codomain $\\mathbb R$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

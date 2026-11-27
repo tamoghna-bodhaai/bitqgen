@@ -1,0 +1,68 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "Set up and compute the area bounded by a parabola/line pair or two curves with a simple intersection.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:96",
+   "2021:106",
+   "2026s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the area enclosed by the parabola $y=4x-x^2$ and the line $y=2x$.",
+ "options": [
+  "$\\dfrac{2}{3}$ square units",
+  "$2$ square units",
+  "$\\dfrac{4}{3}$ square units",
+  "$\\dfrac{8}{3}$ square units"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Intersections: 4x − x² = 2x gives x = 0, 2. The area is ∫₀²(2x − x²) dx = 4/3.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$4x-x^2=2x\\Rightarrow x=0,2$.\\n$\\text{Area}=\\displaystyle\\int_0^2\\big[(4x-x^2)-2x\\big]dx=\\left[x^2-\\dfrac{x^3}{3}\\right]_0^2=\\dfrac{4}{3}$.\n\nIndependent check: Intersections: 4x − x² = 2x gives x = 0, 2. The area is ∫₀²(2x − x²) dx = 4/3.",
+ "solution": "The curves intersect where $4x-x^2=2x$, giving $x=0,2$. Between these points, the parabola lies above the line.\n$$\\text{Area}=\\int_0^2\\big[(4x-x^2)-2x\\big]dx=\\left[x^2-\\frac{x^3}{3}\\right]_0^2=\\frac{4}{3}\\text{ square units}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the area enclosed by the parabola $y=4x-x^2$ and the line $y=2x$.",
+  "options": [
+   "$\\dfrac{2}{3}$ square units",
+   "$\\dfrac{4}{3}$ square units",
+   "$2$ square units",
+   "$\\dfrac{8}{3}$ square units"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$4x-x^2=2x\\Rightarrow x=0,2$.\\n$\\text{Area}=\\displaystyle\\int_0^2\\big[(4x-x^2)-2x\\big]dx=\\left[x^2-\\dfrac{x^3}{3}\\right]_0^2=\\dfrac{4}{3}$.",
+  "distractor_notes": "A: underestimates the integral by a factor of $2$.\\nC: treats the average vertical gap as $1$ over the interval.\\nD: integrates the parabola alone and omits the line."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

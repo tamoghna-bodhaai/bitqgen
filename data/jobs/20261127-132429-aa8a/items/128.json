@@ -1,0 +1,68 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of a function",
+  "archetype": "property check",
+  "brief": "Classify a given relation (reflexive/symmetric/transitive/equivalence) on a small set and, if it is an equivalence, count equivalence classes.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:114",
+   "2026s1:102",
+   "2026s2:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A=\\{0,1,2,3,4\\}$ and define $R$ on $A$ by $xRy$ iff $x^2\\equiv y^2\\pmod 5$. Which statement is correct?",
+ "options": [
+  "$R$ is an equivalence relation with $3$ equivalence classes.",
+  "$R$ is reflexive and symmetric, but not transitive.",
+  "$R$ is symmetric and transitive, but not reflexive.",
+  "$R$ is reflexive and transitive, but not symmetric."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since congruence modulo 5 is an equivalence relation, equality of the squares modulo 5 makes R reflexive, symmetric, and transitive. The classes are {0}, {1,4}, and {2,3}.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2\\bmod 5$ has values $0$ for $x=0$, $1$ for $x=1,4$, and $4$ for $x=2,3$.\nThus $R$ is equality of these residues, so it is reflexive, symmetric and transitive.\nIts classes are $\\{0\\}$, $\\{1,4\\}$ and $\\{2,3\\}$: $3$ classes.\n\nIndependent check: Since congruence modulo 5 is an equivalence relation, equality of the squares modulo 5 makes R reflexive, symmetric, and transitive. The classes are {0}, {1,4}, and {2,3}.",
+ "solution": "The values of $x^2\\pmod 5$ are $0$ for $x=0$, $1$ for $x=1,4$, and $4$ for $x=2,3$. Hence $R$ is equality of these residues, so it is reflexive, symmetric, and transitive.\nIts equivalence classes are $\\{0\\}$, $\\{1,4\\}$, and $\\{2,3\\}$; therefore, there are $3$ classes.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A=\\{0,1,2,3,4\\}$ and define $R$ on $A$ by $xRy$ iff $x^2\\equiv y^2\\pmod 5$. Which statement is correct?",
+  "options": [
+   "$R$ is reflexive and symmetric, but not transitive.",
+   "$R$ is an equivalence relation with $3$ equivalence classes.",
+   "$R$ is symmetric and transitive, but not reflexive.",
+   "$R$ is reflexive and transitive, but not symmetric."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$x^2\\bmod 5$ has values $0$ for $x=0$, $1$ for $x=1,4$, and $4$ for $x=2,3$.\nThus $R$ is equality of these residues, so it is reflexive, symmetric and transitive.\nIts classes are $\\{0\\}$, $\\{1,4\\}$ and $\\{2,3\\}$: $3$ classes.",
+  "distractor_notes": "A: Incorrectly denies transitivity of equality of residues.\nC: Incorrectly denies reflexivity.\nD: Incorrectly denies symmetry."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

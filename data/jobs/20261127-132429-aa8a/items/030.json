@@ -1,0 +1,76 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Circular motion with friction",
+  "archetype": "force resolution",
+  "brief": "Circular motion with friction: a car on a level or banked curve (diagram shows forces); resolve forces along radial and vertical directions to find maximum speed without slipping, or minimum coefficient of friction.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:8",
+   "2021:4",
+   "2025s1:29"
+  ]
+ },
+ "status": "ok",
+ "stem": "A car moves on a level circular road of radius $40$ m. The coefficient of friction between the tyres and road is $0.50$. As shown in the figure, what is the maximum speed without slipping? Take $g = 10$ m s$^{-2}$.",
+ "options": [
+  "$10$ m s$^{-1}$",
+  "$20$ m s$^{-1}$",
+  "$10\\sqrt{2}$ m s$^{-1}$",
+  "$20\\sqrt{2}$ m s$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q030_stem_v0.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "On a level road, friction supplies centripetal force: μmg = mv²/r. Thus v = √(μgr) = √(0.50 × 10 × 40) = 10√2 m s⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At the limiting speed, $f=\\mu N$ and $N=mg$.\n$\\dfrac{mv^2}{r}=f=\\mu mg$\n$v=\\sqrt{\\mu rg}=\\sqrt{0.50(40)(10)}=10\\sqrt{2}$ m s$^{-1}$\n\nIndependent check: On a level road, friction supplies centripetal force: μmg = mv²/r. Thus v = √(μgr) = √(0.50 × 10 × 40) = 10√2 m s⁻¹.",
+ "solution": "On a level road, friction provides the centripetal force; at the limiting speed, $f=\\mu mg$.\n$$\\frac{mv^2}{r}=\\mu mg \\quad\\Rightarrow\\quad v=\\sqrt{\\mu rg}=\\sqrt{0.50\\times40\\times10}=10\\sqrt{2}\\ \\text{m s}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A car moves on a level circular road of radius $40$ m. The coefficient of friction between the tyres and road is $0.50$. As shown in the figure, what is the maximum speed without slipping? Take $g = 10$ m s$^{-2}$.",
+  "options": [
+   "$10$ m s$^{-1}$",
+   "$10\\sqrt{2}$ m s$^{-1}$",
+   "$20$ m s$^{-1}$",
+   "$20\\sqrt{2}$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a free-body diagram of a car on a level horizontal road. Mark the car at the right of a point labelled O, with a horizontal radius line from O to the car labelled $r=40$ m. From the car, draw the normal force $N$ vertically upward, the weight $mg$ vertically downward, and friction $f$ horizontally left toward O. Label the coefficient of friction between the tyres and road as $\\mu=0.50$.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "At the limiting speed, $f=\\mu N$ and $N=mg$.\n$\\dfrac{mv^2}{r}=f=\\mu mg$\n$v=\\sqrt{\\mu rg}=\\sqrt{0.50(40)(10)}=10\\sqrt{2}$ m s$^{-1}$",
+  "distractor_notes": "A: Omits the square root in the speed relation. C: Uses $v=\\sqrt{rg}$ and omits friction's coefficient. D: Uses $v=\\sqrt{2rg}$, effectively doubling the centripetal force."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

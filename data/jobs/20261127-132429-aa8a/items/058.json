@@ -1,0 +1,86 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Electrophilic substitution / directive influence",
+  "archetype": "predict-product",
+  "brief": "Figure shows a disubstituted benzene with one activating and one deactivating group; predict the major mononitration product considering the stronger director.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:59",
+   "2025s1:54",
+   "2023s2:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "On mononitration with concentrated $\\text{HNO}_3/\\text{H}_2\\text{SO}_4$ of the compound as shown in the figure, which product is favoured?",
+ "options": [
+  "2-methyl-3-nitrobenzaldehyde",
+  "2-methyl-5-nitrobenzaldehyde",
+  "2-methyl-4-nitrobenzaldehyde",
+  "2-methyl-6-nitrobenzaldehyde"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q058_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q058_optA_v0.png",
+  "figs/q058_optC_v0.png",
+  "figs/q058_optB_v0.png",
+  "figs/q058_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "CHO directs nitration meta; methyl directs ortho/para. Both favor positions 3 and 5. Position 5 is less sterically hindered than position 3, so the favoured product is 2-methyl-5-nitrobenzaldehyde.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The methyl group directs to C3 and C5; the aldehyde group directs meta to itself, also to C3 and C5.\nC5 is para to methyl, whereas C3 is ortho to methyl.\nThe less hindered para product is favoured: 2-methyl-5-nitrobenzaldehyde.\n\nIndependent check: CHO directs nitration meta; methyl directs ortho/para. Both favor positions 3 and 5. Position 5 is less sterically hindered than position 3, so the favoured product is 2-methyl-5-nitrobenzaldehyde.",
+ "solution": "The $-CHO$ group directs nitration meta, while $-CH_3$ directs ortho/para; both groups therefore favour substitution at C3 and C5. C5 is para to methyl and less sterically hindered than C3, which is ortho to methyl. Hence the favoured product is 2-methyl-5-nitrobenzaldehyde.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "On mononitration with concentrated $\\text{HNO}_3/\\text{H}_2\\text{SO}_4$ of the compound as shown in the figure, which product is favoured?",
+  "options": [
+   "2-methyl-3-nitrobenzaldehyde",
+   "2-methyl-4-nitrobenzaldehyde",
+   "2-methyl-5-nitrobenzaldehyde",
+   "2-methyl-6-nitrobenzaldehyde"
+  ],
+  "option_smiles": [
+   "O=Cc1c(C)c([N+](=O)[O-])ccc1",
+   "O=Cc1c(C)cc([N+](=O)[O-])cc1",
+   "O=Cc1c(C)ccc([N+](=O)[O-])c1",
+   "O=Cc1c(C)cccc1[N+](=O)[O-]"
+  ],
+  "answer": "C",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a benzene hexagon with an aldehyde group (–CHO) at vertex 1 and a methyl group (–CH3) at the adjacent vertex 2. Show a reaction arrow pointing right from the substrate, with concentrated HNO3 and concentrated H2SO4 above the arrow. Leave the product side blank.",
+   "smiles": "O=Cc1c(C)cccc1"
+  },
+  "difficulty_estimate": 3,
+  "working": "The methyl group directs to C3 and C5; the aldehyde group directs meta to itself, also to C3 and C5.\nC5 is para to methyl, whereas C3 is ortho to methyl.\nThe less hindered para product is favoured: 2-methyl-5-nitrobenzaldehyde.",
+  "distractor_notes": "A: Selects the ortho-to-methyl site rather than the less hindered para site.\\nB: Places nitro para to the deactivating aldehyde group.\\nD: Selects a site ortho to the deactivating aldehyde and meta to methyl."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

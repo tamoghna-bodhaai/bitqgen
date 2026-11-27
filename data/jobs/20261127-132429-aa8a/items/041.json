@@ -1,0 +1,68 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Ozonolysis",
+  "archetype": "predict-product",
+  "brief": "Identify the carbonyl fragments obtained on reductive ozonolysis of a substituted alkene.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:54",
+   "2024s2:56",
+   "2023s2:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "Reductive ozonolysis of 3-methylpent-2-ene with $\n\n\\text{O}_3$, followed by $\n\n\\text{Zn}/\\text{H}_2\\text{O}$, gives which pair of products?",
+ "options": [
+  "Ethanal and butanal",
+  "Methanal and pentan-2-one",
+  "Propanal and propanone",
+  "Ethanal and butan-2-one"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cleavage of the C2=C3 bond gives ethanal from the carbon bearing H and butan-2-one from the carbon bonded to methyl and ethyl groups.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\n\n\\text{CH}_3\\text{CH=C(CH}_3\\text{)CH}_2\\text{CH}_3$\n$\n\n\\xrightarrow[\\text{Zn}/\\text{H}_2\\text{O}]{\\text{O}_3}$ cleavage at $\n\n\\text{C=C}$\n$\n\n\\longrightarrow \\text{CH}_3\\text{CHO} + \\text{CH}_3\\text{COCH}_2\\text{CH}_3$\nProducts: ethanal and butan-2-one.\n\nIndependent check: Cleavage of the C2=C3 bond gives ethanal from the carbon bearing H and butan-2-one from the carbon bonded to methyl and ethyl groups.",
+ "solution": "Reductive ozonolysis cleaves the $\\mathrm{C=C}$ bond, converting each alkene carbon into a carbonyl carbon.\n$$\\mathrm{CH_3CH=C(CH_3)CH_2CH_3 \\xrightarrow[Zn/H_2O]{O_3} CH_3CHO + CH_3COCH_2CH_3}$$\nThe products are ethanal and butan-2-one.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Reductive ozonolysis of 3-methylpent-2-ene with $\n\n\\text{O}_3$, followed by $\n\n\\text{Zn}/\\text{H}_2\\text{O}$, gives which pair of products?",
+  "options": [
+   "Ethanal and butan-2-one",
+   "Methanal and pentan-2-one",
+   "Propanal and propanone",
+   "Ethanal and butanal"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\n\n\\text{CH}_3\\text{CH=C(CH}_3\\text{)CH}_2\\text{CH}_3$\n$\n\n\\xrightarrow[\\text{Zn}/\\text{H}_2\\text{O}]{\\text{O}_3}$ cleavage at $\n\n\\text{C=C}$\n$\n\n\\longrightarrow \\text{CH}_3\\text{CHO} + \\text{CH}_3\\text{COCH}_2\\text{CH}_3$\nProducts: ethanal and butan-2-one.",
+  "distractor_notes": "B incorrectly assigns methanal to an alkene carbon that bears a methyl group.\nC incorrectly divides the five-carbon alkene into two three-carbon fragments.\nD treats the substituted alkene carbon as forming an aldehyde rather than a ketone."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

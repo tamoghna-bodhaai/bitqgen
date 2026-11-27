@@ -1,0 +1,85 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Ester + Grignard (2 eq.)",
+  "archetype": "reaction product (structures)",
+  "brief": "Draw an ester structure (figure), treat with two equivalents of a Grignard reagent followed by acid workup, and ask which tertiary alcohol forms (distractors from single-addition products).",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:58",
+   "2025s1:36",
+   "2025s1:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "When the ester, as shown in the figure, is treated with two equivalents of $\\text{CH}_3\\text{MgBr}$ followed by dilute $\\text{H}_3\\text{O}^+$, the major product is:",
+ "options": [
+  "1-Phenylethan-1-one",
+  "2-Phenylpropan-2-ol",
+  "1-Phenylethan-1-ol",
+  "2-Phenylbutan-2-ol"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q053_stem_v0.png",
+  "width_pct": 45,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q053_optA_v0.png",
+  "figs/q053_optB_v0.png",
+  "figs/q053_optC_v0.png",
+  "figs/q053_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Figure shows methyl benzoate, PhC(=O)OCH3. First CH3MgBr addition expels OCH3 to give acetophenone; second equivalent adds to the ketone giving PhC(CH3)2O−; dilute H3O+ workup yields PhC(CH3)2OH = 2-phenylpropan-2-ol. Option B structure (Ph–C(CH3)2–OH) matches exactly.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The reaction proceeds in two successive additions of the Grignard reagent to the ester:\\n\\n1. First equivalent of $\\text{CH}_3\\text{MgBr}$:\\nNucleophilic addition of the methyl group to the carbonyl carbon of methyl benzoate yields a tetrahedral alkoxide intermediate:$$\\text{C}_6\\text{H}_5-\\text{COOCH}_3 + \\text{CH}_3\\text{MgBr} \\longrightarrow \\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{OCH}_3)(\\text{CH}_3)$$Elimination of the methoxide leaving group ($\\text{CH}_3\\text{O}^-$) gives acetophenone (1-phenylethan-1-one):$$\\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{OCH}_3)(\\text{CH}_3) \\longrightarrow \\text{C}_6\\text{H}_5-\\text{CO}-\\text{CH}_3 + \\text{CH}_3\\text{OMgBr}$$\\n2. Second equivalent of $\\text{CH}_3\\text{MgBr}$:\\nBecause ketones are more electrophilic than esters, acetophenone immediately reacts with the second equivalent of $\\text{CH}_3\\text{MgBr}$ to give a magnesium tertiary alkoxide:$$\\text{C}_6\\text{H}_5-\\text{CO}-\\text{CH}_3 + \\text{CH}_3\\text{MgBr} \\longrightarrow \\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{CH}_3)_2$$\\n3. Acidic workup ($\\text{H}_3\\text{O}^+$):\\nProtonation of the alkoxide yields 2-phenylpropan-2-ol, a tertiary alcohol:$$\\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{CH}_3)_2 \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{C}_6\\text{H}_5-\\text{C}(\\text{OH})(\\text{CH}_3)_2$$Thus, the correct product is 2-phenylpropan-2-ol (Option B).\n\nIndependent check: Figure shows methyl benzoate, PhC(=O)OCH3. First CH3MgBr addition expels OCH3 to give acetophenone; second equivalent adds to the ketone giving PhC(CH3)2O−; dilute H3O+ workup yields PhC(CH3)2OH = 2-phenylpropan-2-ol. Option B structure (Ph–C(CH3)2–OH) matches exactly.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "When the ester, as shown in the figure, is treated with two equivalents of $\\text{CH}_3\\text{MgBr}$ followed by dilute $\\text{H}_3\\text{O}^+$, the major product is:",
+  "options": [
+   "1-Phenylethan-1-one",
+   "2-Phenylpropan-2-ol",
+   "1-Phenylethan-1-ol",
+   "2-Phenylbutan-2-ol"
+  ],
+  "option_smiles": [
+   "CC(=O)c1ccccc1",
+   "CC(C)(O)c1ccccc1",
+   "CC(O)c1ccccc1",
+   "CCC(C)(O)c1ccccc1"
+  ],
+  "answer": "B",
+  "working": "The reaction proceeds in two successive additions of the Grignard reagent to the ester:\\n\\n1. First equivalent of $\\text{CH}_3\\text{MgBr}$:\\nNucleophilic addition of the methyl group to the carbonyl carbon of methyl benzoate yields a tetrahedral alkoxide intermediate:$$\\text{C}_6\\text{H}_5-\\text{COOCH}_3 + \\text{CH}_3\\text{MgBr} \\longrightarrow \\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{OCH}_3)(\\text{CH}_3)$$Elimination of the methoxide leaving group ($\\text{CH}_3\\text{O}^-$) gives acetophenone (1-phenylethan-1-one):$$\\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{OCH}_3)(\\text{CH}_3) \\longrightarrow \\text{C}_6\\text{H}_5-\\text{CO}-\\text{CH}_3 + \\text{CH}_3\\text{OMgBr}$$\\n2. Second equivalent of $\\text{CH}_3\\text{MgBr}$:\\nBecause ketones are more electrophilic than esters, acetophenone immediately reacts with the second equivalent of $\\text{CH}_3\\text{MgBr}$ to give a magnesium tertiary alkoxide:$$\\text{C}_6\\text{H}_5-\\text{CO}-\\text{CH}_3 + \\text{CH}_3\\text{MgBr} \\longrightarrow \\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{CH}_3)_2$$\\n3. Acidic workup ($\\text{H}_3\\text{O}^+$):\\nProtonation of the alkoxide yields 2-phenylpropan-2-ol, a tertiary alcohol:$$\\text{C}_6\\text{H}_5-\\text{C}(\\text{O}^-\\text{MgBr}^+)(\\text{CH}_3)_2 \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{C}_6\\text{H}_5-\\text{C}(\\text{OH})(\\text{CH}_3)_2$$Thus, the correct product is 2-phenylpropan-2-ol (Option B).",
+  "distractor_notes": "Option A (1-Phenylethan-1-one): Mistake of stopping after a single addition followed by methoxide elimination, ignoring the second equivalent of Grignard reagent.\nOption C (1-Phenylethan-1-ol): Mistake of treating the ester as an aldehyde, assuming a single nucleophilic addition directly affords a secondary alcohol.\nOption D (2-Phenylbutan-2-ol): Mistake of assuming an ethyl group was transferred or adding an extra carbon into the alkyl chain.",
+  "figure": {
+   "kind": "chem",
+   "description": "Skeletal chemical structure of methyl benzoate: a benzene ring is oriented on the left, connected at its rightmost vertex by a single horizontal bond to a carbonyl carbon. From this carbonyl carbon, a double bond extends upward to an oxygen atom, and a single bond extends downward and to the right to an oxygen atom labeled 'O'. That oxygen atom is connected via a single bond extending upward and to the right to a methyl group labeled 'CH3'.",
+   "smiles": "COC(=O)c1ccccc1"
+  },
+  "difficulty_estimate": 1
+ }
+}

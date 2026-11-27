@@ -1,0 +1,67 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Oblique collision, restitution",
+  "archetype": "component analysis",
+  "brief": "A ball strikes a smooth surface obliquely and rebounds; use momentum components along and normal to the wall with a given coefficient of restitution to find rebound speed and angle.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:7",
+   "2024s1:4",
+   "2026s2:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "A small ball strikes a smooth vertical wall with a speed of $20\\text{ m s}^{-1}$ at an angle of $30^\\circ$ to the normal. If the coefficient of restitution is $e = \\dfrac{1}{\\sqrt{3}}$, the speed of the ball and its angle of rebound with the normal are, respectively:",
+ "options": [
+  "$10\\sqrt{2}\\text{ m s}^{-1},\\ 30^\\circ$",
+  "$10\\sqrt{2}\\text{ m s}^{-1},\\ 45^\\circ$",
+  "$20\\text{ m s}^{-1},\\ 30^\\circ$",
+  "$20\\text{ m s}^{-1},\\ 45^\\circ$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Normal component = 20cos30° = 10√3 m/s; after impact = e·10√3 = 10 m/s. Tangential component unchanged (smooth wall) = 20sin30° = 10 m/s. Rebound speed = √(10²+10²) = 10√2 m/s; angle with normal = arctan(10/10) = 45°.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Resolve the velocity before impact into components parallel and perpendicular to the wall:\n$$\\text{Parallel (tangential): } u_\\parallel = u \\sin 30^\\circ = 20 \\times \\dfrac{1}{2} = 10\\text{ m s}^{-1}$$\n$$\\text{Perpendicular (normal): } u_\\perp = u \\cos 30^\\circ = 20 \\times \\dfrac{\\sqrt{3}}{2} = 10\\sqrt{3}\\text{ m s}^{-1}$$\n\n2. Since the wall is smooth, there is no impulse parallel to the wall, so the tangential component remains unchanged:\n$$v_\\parallel = u_\\parallel = 10\\text{ m s}^{-1}$$\n\n3. The normal component is reduced by the coefficient of restitution $e$:\n$$v_\\perp = e u_\\perp = \\dfrac{1}{\\sqrt{3}} \\times 10\\sqrt{3} = 10\\text{ m s}^{-1}$$\n\n4. Rebound speed:\n$$v = \\sqrt{v_\\parallel^2 + v_\\perp^2} = \\sqrt{10^2 + 10^2} = 10\\sqrt{2}\\text{ m s}^{-1}$$\n\n5. Angle with the normal ($\\theta'$):\n$$\\tan\\theta' = \\dfrac{v_\\parallel}{v_\\perp} = \\dfrac{10}{10} = 1 \\implies \\theta' = 45^\\circ$$\n\nThus, the speed is $10\\sqrt{2}\\text{ m s}^{-1}$ and the angle is $45^\\circ$.\n\nIndependent check: Normal component = 20cos30° = 10√3 m/s; after impact = e·10√3 = 10 m/s. Tangential component unchanged (smooth wall) = 20sin30° = 10 m/s. Rebound speed = √(10²+10²) = 10√2 m/s; angle with normal = arctan(10/10) = 45°.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A small ball strikes a smooth vertical wall with a speed of $20\\text{ m s}^{-1}$ at an angle of $30^\\circ$ to the normal. If the coefficient of restitution is $e = \\dfrac{1}{\\sqrt{3}}$, the speed of the ball and its angle of rebound with the normal are, respectively:",
+  "options": [
+   "$10\\sqrt{2}\\text{ m s}^{-1},\\ 30^\\circ$",
+   "$10\\sqrt{2}\\text{ m s}^{-1},\\ 45^\\circ$",
+   "$20\\text{ m s}^{-1},\\ 30^\\circ$",
+   "$20\\text{ m s}^{-1},\\ 45^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. Resolve the velocity before impact into components parallel and perpendicular to the wall:\n$$\\text{Parallel (tangential): } u_\\parallel = u \\sin 30^\\circ = 20 \\times \\dfrac{1}{2} = 10\\text{ m s}^{-1}$$\n$$\\text{Perpendicular (normal): } u_\\perp = u \\cos 30^\\circ = 20 \\times \\dfrac{\\sqrt{3}}{2} = 10\\sqrt{3}\\text{ m s}^{-1}$$\n\n2. Since the wall is smooth, there is no impulse parallel to the wall, so the tangential component remains unchanged:\n$$v_\\parallel = u_\\parallel = 10\\text{ m s}^{-1}$$\n\n3. The normal component is reduced by the coefficient of restitution $e$:\n$$v_\\perp = e u_\\perp = \\dfrac{1}{\\sqrt{3}} \\times 10\\sqrt{3} = 10\\text{ m s}^{-1}$$\n\n4. Rebound speed:\n$$v = \\sqrt{v_\\parallel^2 + v_\\perp^2} = \\sqrt{10^2 + 10^2} = 10\\sqrt{2}\\text{ m s}^{-1}$$\n\n5. Angle with the normal ($\\theta'$):\n$$\\tan\\theta' = \\dfrac{v_\\parallel}{v_\\perp} = \\dfrac{10}{10} = 1 \\implies \\theta' = 45^\\circ$$\n\nThus, the speed is $10\\sqrt{2}\\text{ m s}^{-1}$ and the angle is $45^\\circ$.",
+  "distractor_notes": "Option A: Correctly calculates the rebound speed but incorrectly assumes the law of reflection holds (angle of rebound equals angle of incidence, 30°).\nOption C: Treats the collision as perfectly elastic (e = 1), keeping the initial speed of 20 m/s and angle of 30° unchanged.\nOption D: Correctly determines the rebound angle of 45° but neglects kinetic energy loss, retaining the initial speed of 20 m/s.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,80 @@
+{
+ "qno": 71,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 71,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism with either-or",
+  "brief": "Two statements with overlapping middle term; give four conclusions including one either-or pair and a possibility conclusion; ask which conclusions definitely follow.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:85",
+   "2023s2:83",
+   "2026s1:81"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statements:**\n\nAll pens are tools.\n\nSome tools are books.\n\nAll books are papers.\n\n**Conclusions:**\n\nI. Some pens are books.\n\nII. Some papers are tools.\n\nIII. All books are tools.\n\nIV. No pen is book.\n\nWhich of the conclusions follow?",
+ "options": [
+  "Only II follows",
+  "Only III follows",
+  "Only I and II follow",
+  "Only II follows and either I or IV follows"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": [
+  "figs/q071_optA_v1.png",
+  "figs/q071_optD_v1.png",
+  "figs/q071_optC_v1.png",
+  "figs/q071_optB_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "II follows: some tools are books, and all books are papers, so some papers are tools. I and IV are contradictory alternatives, so one of them must hold, but neither follows individually. III does not follow.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The option images show chemical structures unrelated to the reasoning question and do not match the text options."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Some tools are books and all books are papers, so some tools are papers, i.e. some papers are tools: II follows. I and IV are contradictory (some pens are books vs no pen is book); neither is forced, so either I or IV follows. III is not forced. Hence only II plus either I or IV follows.\n\nIndependent check: II follows: some tools are books, and all books are papers, so some papers are tools. I and IV are contradictory alternatives, so one of them must hold, but neither follows individually. III does not follow.",
+ "solution": "Some tools are books, and all books are papers; hence some papers are tools, so II follows.\nI and IV are contradictory alternatives: neither follows individually, but either I or IV must hold.\nIII does not follow; therefore, only II follows and either I or IV follows.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statements:**\n\nAll pens are tools.\n\nSome tools are books.\n\nAll books are papers.\n\n**Conclusions:**\n\nI. Some pens are books.\n\nII. Some papers are tools.\n\nIII. All books are tools.\n\nIV. No pen is book.\n\nWhich of the conclusions follow?",
+  "options": [
+   "Only II follows",
+   "Only II follows and either I or IV follows",
+   "Only I and II follow",
+   "Only III follows"
+  ],
+  "option_smiles": [
+   "CCO",
+   "CCN",
+   "CCC",
+   "CCCl"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Some tools are books and all books are papers, so some tools are papers, i.e. some papers are tools: II follows. I and IV are contradictory (some pens are books vs no pen is book); neither is forced, so either I or IV follows. III is not forced. Hence only II plus either I or IV follows.",
+  "distractor_notes": "A misses the either-or pair. C wrongly treats I as definite. D wrongly treats III as definite."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

@@ -1,0 +1,64 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Quality factor of series LCR",
+  "archetype": "single-formula symbolic",
+  "brief": "Series LCR at resonance: express Q in terms of R, L, C and compute it, then relate to sharpness/bandwidth symbolically.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:37",
+   "2024s2:12",
+   "2025s2:3"
+  ]
+ },
+ "status": "failed",
+ "stem": "For a series LCR circuit, the resonant frequency is $f_0 = \\dfrac{1}{2\\pi\\sqrt{LC}}$ and the quality factor is $Q = \\dfrac{1}{R}\\sqrt{\\dfrac{L}{C}}$. The bandwidth $\\Delta f$ of the resonance curve is:",
+ "options": [
+  "$\\dfrac{1}{2\\pi RC}$",
+  "$\\dfrac{R}{\\pi L}$",
+  "$\\dfrac{L}{2\\pi R}$",
+  "$\\dfrac{R}{2\\pi L}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Angular bandwidth $\\Delta\\omega = \\dfrac{\\omega_0}{Q} = \\dfrac{2\\pi f_0}{Q} = \\dfrac{2\\pi\\left(\\frac{1}{2\\pi\\sqrt{LC}}\\right)}{\\frac{1}{R}\\sqrt{\\frac{L}{C}}} = \\dfrac{R}{L}$. Then $\\Delta f = \\dfrac{\\Delta\\omega}{2\\pi} = \\dfrac{R}{2\\pi L}$.",
+ "solution": "For a series LCR circuit, $\u0007Delta\\omega=\\omega_0/Q$. Hence\n$$\\Delta f=\\frac{\\Delta\\omega}{2\\pi}=\\frac{f_0}{Q}=\\frac{\\frac{1}{2\\pi\\sqrt{LC}}}{\\frac{1}{R}\\sqrt{L/C}}=\\frac{R}{2\\pi L}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For a series LCR circuit, the resonant frequency is $f_0 = \\dfrac{1}{2\\pi\\sqrt{LC}}$ and the quality factor is $Q = \\dfrac{1}{R}\\sqrt{\\dfrac{L}{C}}$. The bandwidth $\\Delta f$ of the resonance curve is:",
+  "options": [
+   "$\\dfrac{R}{2\\pi L}$",
+   "$\\dfrac{R}{\\pi L}$",
+   "$\\dfrac{L}{2\\pi R}$",
+   "$\\dfrac{1}{2\\pi RC}$"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Angular bandwidth $\\Delta\\omega = \\dfrac{\\omega_0}{Q} = \\dfrac{2\\pi f_0}{Q} = \\dfrac{2\\pi\\left(\\frac{1}{2\\pi\\sqrt{LC}}\\right)}{\\frac{1}{R}\\sqrt{\\frac{L}{C}}} = \\dfrac{R}{L}$. Then $\\Delta f = \\dfrac{\\Delta\\omega}{2\\pi} = \\dfrac{R}{2\\pi L}$.",
+  "distractor_notes": "Option B misses the factor 2 from converting angular bandwidth to frequency. Option C inverts the dependence on R and L. Option D incorrectly involves C and omits L."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

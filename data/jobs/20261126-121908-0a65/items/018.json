@@ -1,0 +1,67 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Lens in a medium",
+  "archetype": "lens-maker ratio",
+  "brief": "A lens of known glass placed in a liquid of given refractive index; find the new focal length or determine whether it acts as a converging or diverging lens.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:24",
+   "2025s2:20",
+   "2023s1:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "A thin converging lens of focal length $10\\text{ cm}$ (refractive index $\\mu_1 = 1.5$) and a thin diverging lens of focal length $20\\text{ cm}$ (refractive index $\\mu_2 = 1.6$) are placed in contact coaxially in air. When the combination is completely immersed in water of refractive index $\\dfrac{4}{3}$, it behaves as a:",
+ "options": [
+  "converging lens of focal length $80\\text{ cm}$",
+  "diverging lens of focal length $80\\text{ cm}$",
+  "converging lens of focal length $120\\text{ cm}$",
+  "diverging lens of focal length $120\\text{ cm}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Lensmaker: P = (μ_rel − 1)K. In air: K1 = (1/10)/0.5 = 0.2 cm⁻¹, K2 = (−1/20)/0.6 = −1/12 cm⁻¹. In water: μ1/μw = 9/8 → P1 = (1/8)(0.2) = 1/40; μ2/μw = 6/5 → P2 = (1/5)(−1/12) = −1/60. Total P = 1/40 − 1/60 = 1/120 cm⁻¹ → f = +120 cm, converging.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Using the lens-maker formula in a medium of refractive index $\\mu_{\\text{m}}$:\n$$\\dfrac{f_{\\text{m}}}{f_{\\text{air}}} = \\dfrac{\\mu - 1}{\\dfrac{\\mu}{\\mu_{\\text{m}}} - 1}$$\n\nFor the converging lens ($\\mu_1 = 1.5$, $f_{1,\\text{air}} = +10\\text{ cm}$):\n$$\\dfrac{f_{1,\\text{w}}}{10} = \\dfrac{1.5 - 1}{\\dfrac{1.5}{4/3} - 1} = \\dfrac{0.5}{\\dfrac{9}{8} - 1} = \\dfrac{0.5}{1/8} = 4$$\n$$f_{1,\\text{w}} = 4 \\times (+10) = +40\\text{ cm}$$\n\nFor the diverging lens ($\\mu_2 = 1.6$, $f_{2,\\text{air}} = -20\\text{ cm}$):\n$$\\dfrac{f_{2,\\text{w}}}{-20} = \\dfrac{1.6 - 1}{\\dfrac{1.6}{4/3} - 1} = \\dfrac{0.6}{1.2 - 1} = \\dfrac{0.6}{0.2} = 3$$\n$$f_{2,\\text{w}} = 3 \\times (-20) = -60\\text{ cm}$$\n\nFor the thin combination in water:\n$$\\dfrac{1}{F} = \\dfrac{1}{f_{1,\\text{w}}} + \\dfrac{1}{f_{2,\\text{w}}} = \\dfrac{1}{40} - \\dfrac{1}{60} = \\dfrac{3 - 2}{120} = +\\dfrac{1}{120}\\text{ cm}^{-1}$$\n$$F = +120\\text{ cm}$$\n\nSince $F > 0$, the combination behaves as a converging lens of focal length $120\\text{ cm}$.\n\nIndependent check: Lensmaker: P = (μ_rel − 1)K. In air: K1 = (1/10)/0.5 = 0.2 cm⁻¹, K2 = (−1/20)/0.6 = −1/12 cm⁻¹. In water: μ1/μw = 9/8 → P1 = (1/8)(0.2) = 1/40; μ2/μw = 6/5 → P2 = (1/5)(−1/12) = −1/60. Total P = 1/40 − 1/60 = 1/120 cm⁻¹ → f = +120 cm, converging.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A thin converging lens of focal length $10\\text{ cm}$ (refractive index $\\mu_1 = 1.5$) and a thin diverging lens of focal length $20\\text{ cm}$ (refractive index $\\mu_2 = 1.6$) are placed in contact coaxially in air. When the combination is completely immersed in water of refractive index $\\dfrac{4}{3}$, it behaves as a:",
+  "options": [
+   "converging lens of focal length $80\\text{ cm}$",
+   "diverging lens of focal length $80\\text{ cm}$",
+   "converging lens of focal length $120\\text{ cm}$",
+   "diverging lens of focal length $120\\text{ cm}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Using the lens-maker formula in a medium of refractive index $\\mu_{\\text{m}}$:\n$$\\dfrac{f_{\\text{m}}}{f_{\\text{air}}} = \\dfrac{\\mu - 1}{\\dfrac{\\mu}{\\mu_{\\text{m}}} - 1}$$\n\nFor the converging lens ($\\mu_1 = 1.5$, $f_{1,\\text{air}} = +10\\text{ cm}$):\n$$\\dfrac{f_{1,\\text{w}}}{10} = \\dfrac{1.5 - 1}{\\dfrac{1.5}{4/3} - 1} = \\dfrac{0.5}{\\dfrac{9}{8} - 1} = \\dfrac{0.5}{1/8} = 4$$\n$$f_{1,\\text{w}} = 4 \\times (+10) = +40\\text{ cm}$$\n\nFor the diverging lens ($\\mu_2 = 1.6$, $f_{2,\\text{air}} = -20\\text{ cm}$):\n$$\\dfrac{f_{2,\\text{w}}}{-20} = \\dfrac{1.6 - 1}{\\dfrac{1.6}{4/3} - 1} = \\dfrac{0.6}{1.2 - 1} = \\dfrac{0.6}{0.2} = 3$$\n$$f_{2,\\text{w}} = 3 \\times (-20) = -60\\text{ cm}$$\n\nFor the thin combination in water:\n$$\\dfrac{1}{F} = \\dfrac{1}{f_{1,\\text{w}}} + \\dfrac{1}{f_{2,\\text{w}}} = \\dfrac{1}{40} - \\dfrac{1}{60} = \\dfrac{3 - 2}{120} = +\\dfrac{1}{120}\\text{ cm}^{-1}$$\n$$F = +120\\text{ cm}$$\n\nSince $F > 0$, the combination behaves as a converging lens of focal length $120\\text{ cm}$.",
+  "distractor_notes": "Option A comes from assuming both lenses scale by the rote factor of 4 (applicable only when $\\mu = 1.5$), giving $F = 4 \\times 20\\text{ cm} = 80\\text{ cm}$.\nOption B combines the rote factor of 4 with a sign error regarding the resulting nature.\nOption D comes from finding the correct magnitude ($120\\text{ cm}$) but making a sign mistake in $\\frac{1}{F} = \\frac{1}{f_1} + \\frac{1}{f_2}$, concluding it is diverging.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

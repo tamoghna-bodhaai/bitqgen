@@ -1,0 +1,92 @@
+{
+ "qno": 78,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 78,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding (word substitution)",
+  "archetype": "common-word elimination",
+  "brief": "Sentences coded word-by-word; identify the code of a word by comparing two coded sentences that share exactly one common word.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:102",
+   "2026s1:72",
+   "2023s2:86"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a certain code language, 'mango is very sweet' is written as 'C N O S' and 'sweet fruit tastes good' is written as 'N P F Cl'. What is the code for 'sweet'?",
+ "options": [
+  "N",
+  "C",
+  "O",
+  "S"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q078_optB_v1.png",
+  "figs/q078_optA_v1.png",
+  "figs/q078_optC_v1.png",
+  "figs/q078_optD_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Sweet” appears in both statements; the shared code is N. This corresponds to option (B) in the text.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The option images show chemical formulas (CH₄, NH₃, H₂O, H₂S) rather than the text options (C, N, O, S), so they contradict the stated choices."
+   ],
+   "difficulty": 1
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "anthropic/claude-sonnet-5.5",
+   "working": "The common word in both sentences is 'sweet'. The common code in 'C N O S' and 'N P F Cl' is N. So 'sweet' = N. The option images show CH4, NH3, H2O and H2S. Option (B) is NH3, which contains N, so it matches the text option B = N. The answer is B.",
+   "answer": "B",
+   "confidence": 0.9,
+   "multiple_correct": false,
+   "issues": [
+    "The options are shown as molecular-formula images (CH4, NH3, H2O, H2S) instead of the letters C, N, O, S. This is a mismatch with the text, but the mapping is still clear: (B) NH3 is the nitrogen option."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The two sentences have only one common word: 'sweet'. Their codes have only one common symbol: 'N'. Therefore 'sweet' = 'N'. The other symbols C, O, S occur only in the first coded sentence, so they cannot be 'sweet'.\n\nIndependent check: The common word in both sentences is 'sweet'. The common code in 'C N O S' and 'N P F Cl' is N. So 'sweet' = N. The option images show CH4, NH3, H2O and H2S. Option (B) is NH3, which contains N, so it matches the text option B = N. The answer is B.",
+ "solution": "The common word in both sentences is ‘sweet’, and the only common code symbol is $N$. Hence, sweet is coded as $N$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a certain code language, 'mango is very sweet' is written as 'C N O S' and 'sweet fruit tastes good' is written as 'N P F Cl'. What is the code for 'sweet'?",
+  "options": [
+   "C",
+   "N",
+   "O",
+   "S"
+  ],
+  "option_smiles": [
+   "C",
+   "N",
+   "O",
+   "S"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The two sentences have only one common word: 'sweet'. Their codes have only one common symbol: 'N'. Therefore 'sweet' = 'N'. The other symbols C, O, S occur only in the first coded sentence, so they cannot be 'sweet'.",
+  "distractor_notes": "C, O, and S appear only in the first coded sentence, so none of them can be the code for 'sweet', which must be common to both sentences."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

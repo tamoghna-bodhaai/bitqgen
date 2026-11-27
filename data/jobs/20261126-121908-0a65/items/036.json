@@ -1,0 +1,80 @@
+{
+ "qno": 36,
+ "section": "Physics",
+ "slot": {
+  "qno": 36,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gate combinations",
+  "archetype": "circuit truth table",
+  "brief": "Circuit diagram of two-input gates (NAND/NOR/...) combined; determine the Boolean output for given inputs and name the equivalent gate.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:24",
+   "2024s1:27",
+   "2026s1:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the logic circuit shown in the figure, two inputs $A$ and $B$ are connected to a combination of gates to yield an output $Y$. This circuit is equivalent to a single:",
+ "options": [
+  "OR gate",
+  "AND gate",
+  "NAND gate",
+  "NOR gate"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q036_stem_v2.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Intended circuit: NOR(A,B) and NAND(A,B) feed a final NOR. Y = [(A+B)' + (AB)']' = (A+B)·(AB) = AB. Truth-table check confirms Y = A AND B for all inputs.",
+   "answer": "B",
+   "confidence": 0.85,
+   "multiple_correct": false,
+   "issues": [
+    "Figure is incomplete: outputs of the first-stage NOR and NAND gates are not drawn connected to the inputs of the final NOR gate.",
+    "Inputs A and B are not labeled; only one input line is shared via the junction dots, and the second input of each first-stage gate is a dangling unlabeled wire, so the wiring must be inferred."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [
+  "figure check: Input labels A and B are missing; the left-side terminal dots are unlabeled.; Output label Y is missing.; The second (lower) input of the upper NOR gate and the second (lower) input of the NAND gate are drawn as short floating stubs with no wire or connection.; The inputs of the third NOR gate are drawn as short floating stubs; they are not wired to the outputs of the upper NOR gate and the NAND gate, so the circuit is not a closed connection and the outputs of the first two gates go nowhere."
+ ],
+ "working": "Let the two inputs be $A$ and $B$.\n\n1. The upper gate is a two-input NOR gate. Its output $P$ is given by:\n$$P = \\overline{A + B}$$\n\n2. The lower gate is a two-input NAND gate. Its output $Q$ is given by:\n$$Q = \\overline{A \\cdot B}$$\n\n3. The final gate is a two-input NOR gate with inputs $P$ and $Q$. The final output $Y$ is:\n$$Y = \\overline{P + Q} = \\overline{\\overline{A + B} + \\overline{A \\cdot B}}$$\n\nApplying De Morgan's theorem ($\\overline{X + Z} = \\bar{X} \\cdot \\bar{Z}$):\n$$Y = \\overline{\\overline{A + B}} \\cdot \\overline{\\overline{A \\cdot B}} = (A + B) \\cdot (A \\cdot B)$$\n\nExpanding the Boolean product:\n$$Y = A \\cdot (A \\cdot B) + B \\cdot (A \\cdot B) = A \\cdot B + A \\cdot B = A \\cdot B$$\n\nAlternatively, testing the input combinations via a truth table:\n- For $A = 0, B = 0$: $P = 1, Q = 1 \\implies Y = \\overline{1 + 1} = 0$\n- For $A = 0, B = 1$: $P = 0, Q = 1 \\implies Y = \\overline{0 + 1} = 0$\n- For $A = 1, B = 0$: $P = 0, Q = 1 \\implies Y = \\overline{0 + 1} = 0$\n- For $A = 1, B = 1$: $P = 0, Q = 0 \\implies Y = \\overline{0 + 0} = 1$\n\nThe output $Y = 1$ only when both $A = 1$ and $B = 1$. Therefore, the circuit functions as an AND gate.\n\nIndependent check: Intended circuit: NOR(A,B) and NAND(A,B) feed a final NOR. Y = [(A+B)' + (AB)']' = (A+B)·(AB) = AB. Truth-table check confirms Y = A AND B for all inputs.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the logic circuit shown in the figure, two inputs $A$ and $B$ are connected to a combination of gates to yield an output $Y$. This circuit is equivalent to a single:",
+  "options": [
+   "OR gate",
+   "AND gate",
+   "NAND gate",
+   "NOR gate"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let the two inputs be $A$ and $B$.\n\n1. The upper gate is a two-input NOR gate. Its output $P$ is given by:\n$$P = \\overline{A + B}$$\n\n2. The lower gate is a two-input NAND gate. Its output $Q$ is given by:\n$$Q = \\overline{A \\cdot B}$$\n\n3. The final gate is a two-input NOR gate with inputs $P$ and $Q$. The final output $Y$ is:\n$$Y = \\overline{P + Q} = \\overline{\\overline{A + B} + \\overline{A \\cdot B}}$$\n\nApplying De Morgan's theorem ($\\overline{X + Z} = \\bar{X} \\cdot \\bar{Z}$):\n$$Y = \\overline{\\overline{A + B}} \\cdot \\overline{\\overline{A \\cdot B}} = (A + B) \\cdot (A \\cdot B)$$\n\nExpanding the Boolean product:\n$$Y = A \\cdot (A \\cdot B) + B \\cdot (A \\cdot B) = A \\cdot B + A \\cdot B = A \\cdot B$$\n\nAlternatively, testing the input combinations via a truth table:\n- For $A = 0, B = 0$: $P = 1, Q = 1 \\implies Y = \\overline{1 + 1} = 0$\n- For $A = 0, B = 1$: $P = 0, Q = 1 \\implies Y = \\overline{0 + 1} = 0$\n- For $A = 1, B = 0$: $P = 0, Q = 1 \\implies Y = \\overline{0 + 1} = 0$\n- For $A = 1, B = 1$: $P = 0, Q = 0 \\implies Y = \\overline{0 + 0} = 1$\n\nThe output $Y = 1$ only when both $A = 1$ and $B = 1$. Therefore, the circuit functions as an AND gate.",
+  "distractor_notes": "Option A (OR gate): Results from erroneously simplifying $(A + B)(AB)$ as $A + B$ instead of $AB$.\nOption C (NAND gate): Results from omitting the output inversion bubble of the final NOR gate, evaluating $P + Q = \\overline{A+B} + \\overline{AB} = \\overline{AB}$.\nOption D (NOR gate): Results from incorrectly applying De Morgan's theorem as $\\overline{P + Q} = P \\cdot Q = \\overline{A+B} \\cdot \\overline{AB} = \\overline{A+B}$.",
+  "figure": {
+   "kind": "circuit",
+   "description": "A logic circuit diagram with two input terminals labeled A and B on the left, and one output terminal labeled Y on the right. Input A branches into two lines: one enters the upper input of a two-input NOR gate (positioned in the upper branch), and the other enters the upper input of a two-input NAND gate (positioned in the lower branch directly below the NOR gate). Input B also branches into two lines: one enters the lower input of the upper NOR gate, and the other enters the lower input of the lower NAND gate. The output of the upper NOR gate and the output of the lower NAND gate feed into the two inputs of a third logic gate, which is a two-input NOR gate. The output terminal of this third NOR gate is labeled Y. All gates are drawn with standard IEEE/ANSI logic symbols with inversion bubbles at their output tips.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3
+ }
+}

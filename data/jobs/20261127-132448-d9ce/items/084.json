@@ -1,0 +1,68 @@
+{
+ "qno": 84,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 84,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Para jumble - identifying opening sentence",
+  "archetype": "para jumble (first sentence)",
+  "brief": "5-sentence coherent paragraph on a general topic with one sentence clearly the opener; identify which sentence comes first.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:64",
+   "2023s2:65",
+   "2022:69"
+  ]
+ },
+ "status": "ok",
+ "stem": "Read the five sentences and identify the one that should open the paragraph.\n\nA. For decades, urban planners treated stormwater as a nuisance to be channelled rapidly out of streets.\nB. That approach, however, often transferred flood risk to neighbourhoods downstream.\nC. In response, some cities are redesigning parks and pavements to absorb rainfall where it falls.\nD. These “sponge city” measures include permeable surfaces, wetlands, and planted roofs.\nE. Their benefits extend beyond flood control, since they can also cool streets and improve urban habitats.",
+ "options": [
+  "D",
+  "B",
+  "C",
+  "A"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "A introduces the topic; B–E depend on the approach or measures it describes.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "A introduces the topic. B refers back to “that approach”; C signals a response; D and E depend on previously introduced measures.\n\nIndependent check: A introduces the topic; B–E depend on the approach or measures it describes.",
+ "solution": "Sentence A introduces the topic by describing the traditional approach to stormwater. B refers back to “that approach,” while C–E depend on the response and measures introduced later; hence A should open the paragraph.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Read the five sentences and identify the one that should open the paragraph.\n\nA. For decades, urban planners treated stormwater as a nuisance to be channelled rapidly out of streets.\nB. That approach, however, often transferred flood risk to neighbourhoods downstream.\nC. In response, some cities are redesigning parks and pavements to absorb rainfall where it falls.\nD. These “sponge city” measures include permeable surfaces, wetlands, and planted roofs.\nE. Their benefits extend beyond flood control, since they can also cool streets and improve urban habitats.",
+  "options": [
+   "A",
+   "B",
+   "C",
+   "D"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "A introduces the topic. B refers back to “that approach”; C signals a response; D and E depend on previously introduced measures.",
+  "distractor_notes": "B: “That approach” needs a prior referent. C: “In response” refers to the earlier problem. D: “These measures” needs an antecedent."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

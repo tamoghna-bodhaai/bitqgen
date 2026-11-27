@@ -1,0 +1,68 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "YDSE intensity",
+  "archetype": "phase difference to intensity",
+  "brief": "Thin-film style path difference: two coherent sources with phase difference given directly; find intensity at the point as a fraction of maximum.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:3",
+   "2025s2:26",
+   "2025s2:12"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a Young’s double-slit experiment, the two slits contribute intensities $9I_0$ and $4I_0$ at a point where their phase difference is $\\frac{2\\pi}{3}$. The intensity there as a fraction of the maximum possible intensity for these waves is",
+ "options": [
+  "$\\frac{1}{25}$",
+  "$\\frac{19}{25}$",
+  "$\\frac{13}{25}$",
+  "$\\frac{7}{25}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The amplitudes are proportional to 3 and 2. Thus the intensity is (9+4+2·3·2 cos(2π/3))I₀ = 7I₀. The maximum is (3+2)²I₀ = 25I₀, so the fraction is 7/25.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\delta=9I_0+4I_0+12I_0\\cos\\frac{2\\pi}{3}=7I_0$\n$I_{\\max}=(\\sqrt{9I_0}+\\sqrt{4I_0})^2=25I_0$\n$\\dfrac{I}{I_{\\max}}=\\dfrac{7}{25}$\n\nIndependent check: The amplitudes are proportional to 3 and 2. Thus the intensity is (9+4+2·3·2 cos(2π/3))I₀ = 7I₀. The maximum is (3+2)²I₀ = 25I₀, so the fraction is 7/25.",
+ "solution": "The resultant intensity is $I=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\delta$.\n$$I=9I_0+4I_0+12I_0\\cos\\frac{2\\pi}{3}=7I_0$$\nThe maximum intensity is $I_{\\max}=(\\sqrt{9I_0}+\\sqrt{4I_0})^2=25I_0$.\nHence, $\\dfrac{I}{I_{\\max}}=\\boxed{\\dfrac{7}{25}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a Young’s double-slit experiment, the two slits contribute intensities $9I_0$ and $4I_0$ at a point where their phase difference is $\\frac{2\\pi}{3}$. The intensity there as a fraction of the maximum possible intensity for these waves is",
+  "options": [
+   "$\\frac{1}{25}$",
+   "$\\frac{7}{25}$",
+   "$\\frac{13}{25}$",
+   "$\\frac{19}{25}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$I=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\delta=9I_0+4I_0+12I_0\\cos\\frac{2\\pi}{3}=7I_0$\n$I_{\\max}=(\\sqrt{9I_0}+\\sqrt{4I_0})^2=25I_0$\n$\\dfrac{I}{I_{\\max}}=\\dfrac{7}{25}$",
+  "distractor_notes": "A: Assumes complete destructive interference, giving the minimum intensity. C: Omits the interference term. D: Uses a positive cosine as if the phase difference were $\\frac{\\pi}{3}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

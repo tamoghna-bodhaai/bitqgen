@@ -1,0 +1,68 @@
+{
+ "qno": 132,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 132,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power bookkeeping",
+  "brief": "For a matrix A satisfying a simple relation, compute Aⁿ or a linear combination of powers using the given relation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:104",
+   "2024s1:101",
+   "2025s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "If a square matrix $A$ satisfies $A^2=2A+I$, where $I$ is the identity matrix, then $A^3$ is equal to",
+ "options": [
+  "$2A+I$",
+  "$4A+2I$",
+  "$5A+I$",
+  "$5A+2I$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I$\n\nIndependent check: A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If a square matrix $A$ satisfies $A^2=2A+I$, where $I$ is the identity matrix, then $A^3$ is equal to",
+  "options": [
+   "$2A+I$",
+   "$4A+2I$",
+   "$5A+I$",
+   "$5A+2I$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I$",
+  "distractor_notes": "A: repeats the given expression for $A^2$. B: uses an incorrect coefficient when substituting for $A^2$. C: omits the extra $I$ term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

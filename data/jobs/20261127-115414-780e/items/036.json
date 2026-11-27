@@ -1,0 +1,68 @@
+{
+ "qno": 36,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 36,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Ionisation and lattice enthalpy",
+  "archetype": "ordering",
+  "brief": "Rank given elements by first ionisation enthalpy, exploiting the half-filled/filled orbital anomaly.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:55",
+   "2022:48",
+   "2023s2:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which one of the following represents the correct increasing order of first ionisation enthalpy of the elements N, O, F and Ne?",
+ "options": [
+  "O < F < N < Ne",
+  "N < O < F < Ne",
+  "O < N < F < Ne",
+  "F < O < N < Ne"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "O has lower first ionisation enthalpy than N because N has a half-filled 2p subshell. Across the period, values then increase: O < N < F < Ne.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "First ionisation enthalpy values: N = 1402 kJ mol^-1, O = 1314 kJ mol^-1, F = 1681 kJ mol^-1, Ne = 2080 kJ mol^-1. Oxygen has lower ionisation enthalpy than nitrogen because nitrogen has a stable half-filled 2p3 configuration and oxygen has electron-electron repulsion in the paired 2p orbital. Hence the correct increasing order is O < N < F < Ne.\n\nIndependent check: O has lower first ionisation enthalpy than N because N has a half-filled 2p subshell. Across the period, values then increase: O < N < F < Ne.",
+ "solution": "Across the period, first ionisation enthalpy generally increases. Nitrogen has a stable half-filled $2p^3$ subshell, so oxygen’s paired-electron repulsion makes its ionisation enthalpy lower.\n$$\\mathrm{O<N<F<Ne}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which one of the following represents the correct increasing order of first ionisation enthalpy of the elements N, O, F and Ne?",
+  "options": [
+   "O < N < F < Ne",
+   "N < O < F < Ne",
+   "O < F < N < Ne",
+   "F < O < N < Ne"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "First ionisation enthalpy values: N = 1402 kJ mol^-1, O = 1314 kJ mol^-1, F = 1681 kJ mol^-1, Ne = 2080 kJ mol^-1. Oxygen has lower ionisation enthalpy than nitrogen because nitrogen has a stable half-filled 2p3 configuration and oxygen has electron-electron repulsion in the paired 2p orbital. Hence the correct increasing order is O < N < F < Ne.",
+  "distractor_notes": "B ignores the half-filled stability of N and places O after N; C places F lower than N in the sequence; D reverses the period trend by placing F before O and N."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

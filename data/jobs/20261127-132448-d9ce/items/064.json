@@ -1,0 +1,86 @@
+{
+ "qno": 64,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 64,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Cannizzaro reaction",
+  "archetype": "reaction product (structures)",
+  "brief": "Figure shows an aromatic aldehyde lacking alpha-hydrogen treated with concentrated alkali; ask for the alcohol and acid products formed.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:58",
+   "2023s2:33",
+   "2022:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "The aromatic aldehyde shown undergoes Cannizzaro reaction with concentrated alkali. After acidic work-up, which product pair is formed?",
+ "options": [
+  "4-fluorobenzyl alcohol + 4-fluorobenzyl alcohol",
+  "4-fluorobenzoic acid + 4-fluorobenzaldehyde",
+  "4-fluorobenzyl alcohol + 4-fluorobenzoic acid",
+  "3-fluorobenzyl alcohol + 3-fluorobenzoic acid"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q064_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q064_optA_v0.png",
+  "figs/q064_optB_v0.png",
+  "figs/q064_optC_v0.png",
+  "figs/q064_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The substrate is 4-fluorobenzaldehyde, which undergoes Cannizzaro disproportionation. Acidic work-up gives 4-fluorobenzyl alcohol and 4-fluorobenzoic acid.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Cannizzaro disproportionation: $2\\,\\text{ArCHO}+\\text{OH}^-\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOO}^-$.\\nAcidic work-up converts $\\text{ArCOO}^-$ to $\\text{ArCOOH}$; the para-F substituent is retained.\n\nIndependent check: The substrate is 4-fluorobenzaldehyde, which undergoes Cannizzaro disproportionation. Acidic work-up gives 4-fluorobenzyl alcohol and 4-fluorobenzoic acid.",
+ "solution": "Cannizzaro reaction disproportionates the aldehyde: $$2\\,\\text{ArCHO}+\\text{OH}^-\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOO}^-.$$ Acidic work-up converts the carboxylate to the acid; the para-fluoro substituent is retained. Thus the products are 4-fluorobenzyl alcohol and 4-fluorobenzoic acid.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The aromatic aldehyde shown undergoes Cannizzaro reaction with concentrated alkali. After acidic work-up, which product pair is formed?",
+  "options": [
+   "4-fluorobenzyl alcohol + 4-fluorobenzyl alcohol",
+   "4-fluorobenzoic acid + 4-fluorobenzaldehyde",
+   "4-fluorobenzyl alcohol + 4-fluorobenzoic acid",
+   "3-fluorobenzyl alcohol + 3-fluorobenzoic acid"
+  ],
+  "option_smiles": [
+   "OCc1ccc(F)cc1.OCc1ccc(F)cc1",
+   "O=C(O)c1ccc(F)cc1.O=Cc1ccc(F)cc1",
+   "OCc1ccc(F)cc1.O=C(O)c1ccc(F)cc1",
+   "OCc1cccc(F)c1.O=C(O)c1cccc(F)c1"
+  ],
+  "answer": "C",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a benzene ring with a CHO group at carbon 1 and an F atom para to it at carbon 4. Draw a reaction arrow to the right labelled “concentrated aq. NaOH; then H₃O⁺ work-up”; leave the product side blank.",
+   "smiles": "O=Cc1ccc(F)cc1"
+  },
+  "difficulty_estimate": 3,
+  "working": "Cannizzaro disproportionation: $2\\,\\text{ArCHO}+\\text{OH}^-\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOO}^-$.\\nAcidic work-up converts $\\text{ArCOO}^-$ to $\\text{ArCOOH}$; the para-F substituent is retained.",
+  "distractor_notes": "A: reduces both aldehyde molecules; B: gives oxidation without the complementary reduction product; D: changes the substituent position."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

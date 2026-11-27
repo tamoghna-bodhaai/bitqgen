@@ -1,0 +1,67 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Binding energy",
+  "archetype": "BE bookkeeping",
+  "brief": "A nucleus undergoes alpha decay; compute energy released using given binding energies of parent, daughter and alpha, then find kinetic energy of the alpha particle.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:24",
+   "2026s1:27",
+   "2025s2:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "A stationary nucleus $^{220}\\text{X}$ undergoes $\\alpha$-decay into $^{216}\\text{Y}$. The total binding energies of $^{220}\\text{X}$, $^{216}\\text{Y}$, and the $\\alpha$-particle are $1700.0\\text{ MeV}$, $1677.2\\text{ MeV}$, and $28.3\\text{ MeV}$, respectively. The kinetic energy of the emitted $\\alpha$-particle is",
+ "options": [
+  "$0.1\\text{ MeV}$",
+  "$5.3\\text{ MeV}$",
+  "$5.4\\text{ MeV}$",
+  "$5.5\\text{ MeV}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Q = BE(Y) + BE(α) − BE(X) = 1677.2 + 28.3 − 1700.0 = 5.5 MeV. Momentum conservation splits Q inversely with masses: KE_α = Q·(216/220) = 5.4 MeV (recoil takes 0.1 MeV).",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The nuclear disintegration reaction is:\n$${}^{220}\\text{X} \\to {}^{216}\\text{Y} + {}^4_2\\text{He}$$\n\nThe total energy released ($Q$-value) in terms of binding energy (BE) is:\n$$Q = \\text{BE}({}^{216}\\text{Y}) + \\text{BE}(\\alpha) - \\text{BE}({}^{220}\\text{X})$$\n$$Q = 1677.2\\text{ MeV} + 28.3\\text{ MeV} - 1700.0\\text{ MeV} = 5.5\\text{ MeV}$$\n\nSince the parent nucleus is initially at rest, by conservation of linear momentum:\n$$p_\\alpha = p_Y = p$$\n\nThe kinetic energy of each fragment is $K = \\dfrac{p^2}{2m}$. Therefore:\n$$Q = K_\\alpha + K_Y = K_\\alpha \\left(1 + \\dfrac{m_\\alpha}{m_Y}\\right) = K_\\alpha \\left(\\dfrac{m_Y + m_\\alpha}{m_Y}\\right)$$\n\nUsing masses proportional to mass numbers ($m_Y \\approx 216\\text{ u}$, $m_\\alpha \\approx 4\\text{ u}$):\n$$K_\\alpha = \\left(\\dfrac{A - 4}{A}\\right) Q = \\left(\\dfrac{216}{220}\\right) \\times 5.5\\text{ MeV} = \\dfrac{54}{55} \\times 5.5\\text{ MeV} = 5.4\\text{ MeV}$$\n\nIndependent check: Q = BE(Y) + BE(α) − BE(X) = 1677.2 + 28.3 − 1700.0 = 5.5 MeV. Momentum conservation splits Q inversely with masses: KE_α = Q·(216/220) = 5.4 MeV (recoil takes 0.1 MeV).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A stationary nucleus $^{220}\\text{X}$ undergoes $\\alpha$-decay into $^{216}\\text{Y}$. The total binding energies of $^{220}\\text{X}$, $^{216}\\text{Y}$, and the $\\alpha$-particle are $1700.0\\text{ MeV}$, $1677.2\\text{ MeV}$, and $28.3\\text{ MeV}$, respectively. The kinetic energy of the emitted $\\alpha$-particle is",
+  "options": [
+   "$0.1\\text{ MeV}$",
+   "$5.3\\text{ MeV}$",
+   "$5.4\\text{ MeV}$",
+   "$5.5\\text{ MeV}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The nuclear disintegration reaction is:\n$${}^{220}\\text{X} \\to {}^{216}\\text{Y} + {}^4_2\\text{He}$$\n\nThe total energy released ($Q$-value) in terms of binding energy (BE) is:\n$$Q = \\text{BE}({}^{216}\\text{Y}) + \\text{BE}(\\alpha) - \\text{BE}({}^{220}\\text{X})$$\n$$Q = 1677.2\\text{ MeV} + 28.3\\text{ MeV} - 1700.0\\text{ MeV} = 5.5\\text{ MeV}$$\n\nSince the parent nucleus is initially at rest, by conservation of linear momentum:\n$$p_\\alpha = p_Y = p$$\n\nThe kinetic energy of each fragment is $K = \\dfrac{p^2}{2m}$. Therefore:\n$$Q = K_\\alpha + K_Y = K_\\alpha \\left(1 + \\dfrac{m_\\alpha}{m_Y}\\right) = K_\\alpha \\left(\\dfrac{m_Y + m_\\alpha}{m_Y}\\right)$$\n\nUsing masses proportional to mass numbers ($m_Y \\approx 216\\text{ u}$, $m_\\alpha \\approx 4\\text{ u}$):\n$$K_\\alpha = \\left(\\dfrac{A - 4}{A}\\right) Q = \\left(\\dfrac{216}{220}\\right) \\times 5.5\\text{ MeV} = \\dfrac{54}{55} \\times 5.5\\text{ MeV} = 5.4\\text{ MeV}$$",
+  "distractor_notes": "A: Uses $K_\\alpha = \\dfrac{m_\\alpha}{m_Y + m_\\alpha} Q = \\dfrac{4}{220} \\times 5.5 = 0.1\\text{ MeV}$, which is the kinetic energy of the recoiling daughter nucleus.\nB: Uses the elastic collision factor $\\dfrac{m_Y - m_\\alpha}{m_Y + m_\\alpha} Q = \\dfrac{212}{220} \\times 5.5 = 5.3\\text{ MeV}$.\nD: Ignores the recoil of the daughter nucleus and assumes the $\\alpha$-particle carries all the decay energy ($K_\\alpha = Q = 5.5\\text{ MeV}$).",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

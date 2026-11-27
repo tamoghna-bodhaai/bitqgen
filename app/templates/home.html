@@ -1,0 +1,52 @@
+{% extends "base.html" %}{% set nav = "home" %}
+{% block body %}
+<h1>Generate a paper</h1>
+<p class="sub">Planner → Authors → Figures → Solver/Tiebreaker → Critic → Solutions → 2-column PDF/DOCX.</p>
+<div class="grid2">
+<form class="card" method="post" action="/jobs">
+  <label>Title</label><input type="text" name="title" value="BITSAT Practice Paper">
+  <label>Subtitle</label><input type="text" name="subtitle" placeholder="e.g. Mock Test 3">
+  <label>Pattern</label>
+  <select name="pattern_id">{% for p in patterns %}<option value="{{ p.id }}">{{ p.title }}</option>{% endfor %}</select>
+  <div class="row">
+    <div><label>Difficulty</label>
+      <select name="difficulty">
+        <option value="easier">Easier than past papers</option>
+        <option value="match" selected>Match past papers</option>
+        <option value="harder">Harder</option>
+        <option value="much_harder">Much harder</option>
+      </select></div>
+    <div><label>Model profile</label>
+      <select name="profile">{% for p in profiles %}<option value="{{ p }}" {{ 'selected' if p==active }}>{{ p }}</option>{% endfor %}</select></div>
+  </div>
+  <div class="row">
+    <div><label>Seed (optional)</label><input type="text" name="seed" placeholder="random"></div>
+  </div>
+  <label>Custom section counts (optional)</label>
+  <input type="text" name="custom_counts" placeholder="Physics=3,Chemistry=3,Mathematics=3">
+  <label class="check"><input type="checkbox" name="run_critic" value="1" checked> Critic review + regeneration round</label>
+  <label class="check"><input type="checkbox" name="check_figures" value="1" checked> Vision-check generated figures</label>
+  <div style="margin-top:16px"><button type="submit">Start generation</button></div>
+  <p class="small muted" style="margin-top:10px">A full 130-question paper on the <b>balanced</b> profile costs roughly $15–22 in OpenRouter credits and takes 15–30 min.</p>
+</form>
+<div>
+  <div class="card">
+    <h2 style="margin-top:0">Recent jobs</h2>
+    {% if jobs %}
+    <table class="t"><tr><th>Job</th><th>Title</th><th>Status</th><th>Progress</th><th>Cost</th></tr>
+    {% for j in jobs %}<tr>
+      <td><a href="/jobs/{{ j.id }}">{{ j.id }}</a></td><td>{{ j.config.title }}</td>
+      <td><span class="chip st-{{ j.status }}">{{ j.status }}</span></td>
+      <td>{{ j.progress.done }}/{{ j.progress.total }} <span class="muted small">({{ j.progress.ok }} ✓)</span></td>
+      <td>${{ '%.2f' % (j.cost or 0) }}</td></tr>{% endfor %}
+    </table>
+    {% else %}<p class="muted">No jobs yet.</p>{% endif %}
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h2 style="margin-top:0">Corpus</h2>
+    <p class="small muted">{{ corpus|selectattr('n')|sum(attribute='n') }} past questions from {{ corpus|selectattr('n')|list|length }} papers are used for style, syllabus weights and exemplars.</p>
+    <a href="/corpus">Browse corpus →</a>
+  </div>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+{
+ "qno": 127,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 127,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Trigonometric integrals",
+  "archetype": "substitution integral",
+  "brief": "Definite integral reduced by a trigonometric/half-angle substitution (e.g. sin x or tan(x/2) substitution) leading to a log or standard value.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:118",
+   "2026s1:125",
+   "2021:142"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin x+\\cos x}$.",
+ "options": [
+  "$\\dfrac{1}{2}\\ln 2$",
+  "$\\ln 3$",
+  "$\\ln 2$",
+  "$\\dfrac{\\pi}{4}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With t = tan(x/2), the integral becomes ∫₀¹ dt/(1+t) = ln 2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Set $t=\\tan\\dfrac{x}{2}$; then $dx=\\dfrac{2\\,dt}{1+t^2}$, $\\sin x=\\dfrac{2t}{1+t^2}$, $\\cos x=\\dfrac{1-t^2}{1+t^2}$.\nLimits: $t=0$ to $1$.\n$\\displaystyle\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin x+\\cos x}=\\int_0^1\\dfrac{dt}{1+t}=\\ln 2$\n\nIndependent check: With t = tan(x/2), the integral becomes ∫₀¹ dt/(1+t) = ln 2.",
+ "solution": "Set $t=\\tan\\dfrac{x}{2}$, so $dx=\\dfrac{2\\,dt}{1+t^2}$, $\\sin x=\\dfrac{2t}{1+t^2}$, and $\\cos x=\\dfrac{1-t^2}{1+t^2}$. The limits become $t=0$ to $1$.\n$$\\int_0^{\\pi/2}\\frac{dx}{1+\\sin x+\\cos x}=\\int_0^1\\frac{dt}{1+t}=\\ln 2.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin x+\\cos x}$.",
+  "options": [
+   "$\\ln 2$",
+   "$\\ln 3$",
+   "$\\dfrac{1}{2}\\ln 2$",
+   "$\\dfrac{\\pi}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Set $t=\\tan\\dfrac{x}{2}$; then $dx=\\dfrac{2\\,dt}{1+t^2}$, $\\sin x=\\dfrac{2t}{1+t^2}$, $\\cos x=\\dfrac{1-t^2}{1+t^2}$.\nLimits: $t=0$ to $1$.\n$\\displaystyle\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin x+\\cos x}=\\int_0^1\\dfrac{dt}{1+t}=\\ln 2$",
+  "distractor_notes": "B: Uses an incorrect transformed upper limit or endpoint value.\\nC: Loses a factor of $2$ in the half-angle substitution.\\nD: Treats the integrand as having a constant average value."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

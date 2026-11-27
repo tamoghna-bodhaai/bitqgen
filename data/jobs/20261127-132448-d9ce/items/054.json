@@ -1,0 +1,68 @@
+{
+ "qno": 54,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 54,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "R/S configuration in Fischer projection",
+  "archetype": "conceptual",
+  "brief": "Present a Fischer projection of a molecule with two stereocentres and ask how many R/S configurations and stereoisomers result; test the Fischer-to-R/S rule.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:44",
+   "2025s2:43",
+   "2026s1:41"
+  ]
+ },
+ "status": "ok",
+ "stem": "The following Fischer projection represents 2,3-dibromobutane. What are the configurations at C2 and C3, respectively, and how many stereoisomers does the compound have?\n$$\\begin{array}{ccc} & \\text{CH}_3 & \\\\ & | & \\\\ \\text{Br} & {-}\\text{C}{-} & \\text{H} \\\\ & | & \\\\ \\text{H} & {-}\\text{C}{-} & \\text{Br} \\\\ & | & \\\\ & \\text{CH}_3 & \\end{array}$$",
+ "options": [
+  "$(2R,3R); 3$",
+  "$(2R,3S); 3$",
+  "$(2S,3S); 2$",
+  "$(2S,3R); 4$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At C2, priorities are Br > C3 > CH3 > H; with H on a horizontal bond, reverse the direction to get R. At C3, priorities are Br > C2 > CH3 > H; likewise, reverse to get R. The two equivalent ends give three stereoisomers: RR, SS, and the meso form.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "C2 priorities: $\\text{Br}>\\text{C3}>\\text{CH}_3>\\text{H}$; lowest priority is horizontal, so invert: $R$.\nC3 priorities: $\\text{Br}>\\text{C2}>\\text{CH}_3>\\text{H}$; lowest priority is horizontal, so invert: $R$.\nThe $RR/SS$ pair and one $RS$ meso form give $3$ stereoisomers.\n\nIndependent check: At C2, priorities are Br > C3 > CH3 > H; with H on a horizontal bond, reverse the direction to get R. At C3, priorities are Br > C2 > CH3 > H; likewise, reverse to get R. The two equivalent ends give three stereoisomers: RR, SS, and the meso form.",
+ "solution": "At both C2 and C3, the priorities are $\\mathrm{Br>C>CH_3>H}$. Since the lowest-priority group H lies on a horizontal bond in each Fischer projection, reverse the observed order: both centers are $R$. The stereoisomers are the $RR/SS$ pair and one $RS$ meso form, giving $3$ in total.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The following Fischer projection represents 2,3-dibromobutane. What are the configurations at C2 and C3, respectively, and how many stereoisomers does the compound have?\n$$\\begin{array}{ccc} & \\text{CH}_3 & \\\\ & | & \\\\ \\text{Br} & {-}\\text{C}{-} & \\text{H} \\\\ & | & \\\\ \\text{H} & {-}\\text{C}{-} & \\text{Br} \\\\ & | & \\\\ & \\text{CH}_3 & \\end{array}$$",
+  "options": [
+   "$(2R,3R); 3$",
+   "$(2R,3S); 3$",
+   "$(2S,3S); 2$",
+   "$(2S,3R); 4$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "C2 priorities: $\\text{Br}>\\text{C3}>\\text{CH}_3>\\text{H}$; lowest priority is horizontal, so invert: $R$.\nC3 priorities: $\\text{Br}>\\text{C2}>\\text{CH}_3>\\text{H}$; lowest priority is horizontal, so invert: $R$.\nThe $RR/SS$ pair and one $RS$ meso form give $3$ stereoisomers.",
+  "distractor_notes": "B misassigns one centre; C misassigns both centres and gives the wrong count; D misreads both centres and fails to account for the meso form."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

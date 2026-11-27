@@ -1,0 +1,67 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Reimer–Tiemann reaction",
+  "archetype": "intermediate identification",
+  "brief": "Phenol + CHCl3/NaOH followed by hydrolysis: identify the product and the reaction name (Reimer–Tiemann).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:40",
+   "2025s1:43",
+   "2026s1:52"
+  ]
+ },
+ "status": "ok",
+ "stem": "Phenol on treatment with $\\text{CHCl}_3$ and aqueous $\\text{NaOH}$ followed by acidification yields a compound $X$. Identify $X$ and the name of the reaction.",
+ "options": [
+  "Salicylic acid, Kolbe's reaction",
+  "Salicylaldehyde, Reimer–Tiemann reaction",
+  "Salicylic acid, Reimer–Tiemann reaction",
+  "Salicylaldehyde, Kolbe's reaction"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "CHCl3 + aq NaOH generates dichlorocarbene (:CCl2), which attacks phenoxide at the ortho position; hydrolysis of the -CHCl2 intermediate and acidification gives o-hydroxybenzaldehyde (salicylaldehyde). This is the Reimer–Tiemann reaction. Kolbe's reaction (CO2/NaOH) would give salicylic acid instead.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "When phenol is treated with chloroform ($\\text{CHCl}_3$) in the presence of aqueous sodium hydroxide ($\\text{NaOH}$), the electrophilic intermediate dichlorocarbene ($:\\!\\text{CCl}_2$) attacks the phenoxide ring preferentially at the *ortho*-position:\n$$\\text{C}_6\\text{H}_5\\text{OH} \\xrightarrow{\\text{CHCl}_3\\,/\\,\\text{NaOH}} o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHCl}_2$$\nAlkaline hydrolysis of the dichloromethyl intermediate converts it to the aldehyde group:\n$$o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHCl}_2 \\xrightarrow{\\text{NaOH}} o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHO}$$\nSubsequent acidification yields salicylaldehyde (2-hydroxybenzaldehyde):\n$$o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHO} \\xrightarrow{\\text{H}^+} o\\text{-}\\text{HO}-\\text{C}_6\\text{H}_4-\\text{CHO} \\text{ (salicylaldehyde)}$$\nThis transformation is called the Reimer–Tiemann reaction.\n\nIndependent check: CHCl3 + aq NaOH generates dichlorocarbene (:CCl2), which attacks phenoxide at the ortho position; hydrolysis of the -CHCl2 intermediate and acidification gives o-hydroxybenzaldehyde (salicylaldehyde). This is the Reimer–Tiemann reaction. Kolbe's reaction (CO2/NaOH) would give salicylic acid instead.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Phenol on treatment with $\\text{CHCl}_3$ and aqueous $\\text{NaOH}$ followed by acidification yields a compound $X$. Identify $X$ and the name of the reaction.",
+  "options": [
+   "Salicylic acid, Kolbe's reaction",
+   "Salicylaldehyde, Reimer–Tiemann reaction",
+   "Salicylic acid, Reimer–Tiemann reaction",
+   "Salicylaldehyde, Kolbe's reaction"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "When phenol is treated with chloroform ($\\text{CHCl}_3$) in the presence of aqueous sodium hydroxide ($\\text{NaOH}$), the electrophilic intermediate dichlorocarbene ($:\\!\\text{CCl}_2$) attacks the phenoxide ring preferentially at the *ortho*-position:\n$$\\text{C}_6\\text{H}_5\\text{OH} \\xrightarrow{\\text{CHCl}_3\\,/\\,\\text{NaOH}} o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHCl}_2$$\nAlkaline hydrolysis of the dichloromethyl intermediate converts it to the aldehyde group:\n$$o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHCl}_2 \\xrightarrow{\\text{NaOH}} o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHO}$$\nSubsequent acidification yields salicylaldehyde (2-hydroxybenzaldehyde):\n$$o\\text{-}\\text{NaO}-\\text{C}_6\\text{H}_4-\\text{CHO} \\xrightarrow{\\text{H}^+} o\\text{-}\\text{HO}-\\text{C}_6\\text{H}_4-\\text{CHO} \\text{ (salicylaldehyde)}$$\nThis transformation is called the Reimer–Tiemann reaction.",
+  "distractor_notes": "Option A confuses the reagents ($\\text{CHCl}_3/\\text{NaOH}$) with Kolbe's reaction ($\\text{CO}_2/\\text{NaOH}$), which produces salicylic acid.\nOption C correctly identifies the reaction name as Reimer–Tiemann, but names salicylic acid (which is obtained if $\\text{CCl}_4$ is used instead of $\\text{CHCl}_3$).\nOption D correctly identifies the product as salicylaldehyde, but misnames the reaction as Kolbe's reaction.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

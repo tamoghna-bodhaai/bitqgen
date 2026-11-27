@@ -1,0 +1,68 @@
+{
+ "qno": 89,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 89,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "relation chain",
+  "brief": "Pointing-type question: a person says 'he is the son of my grandfather's only son/daughter' style single-step chain; ask how the pointed person is related to the speaker, using a short two-link chain.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2022:86",
+   "2026s1:80"
+  ]
+ },
+ "status": "ok",
+ "stem": "A woman points to a boy and says, “He is the son of my paternal grandfather’s only son, who is my father.” How is the boy related to her?",
+ "options": [
+  "Brother",
+  "Son",
+  "Nephew",
+  "Cousin"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Her paternal grandfather’s only son is her father. The boy is her father’s son, so he is her brother.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Her paternal grandfather’s only son is her father. The boy is her father’s son, so he is her brother.\nB: He is not her child; C: no sibling’s parent is stated; D: the paternal line is specified.\n\nIndependent check: Her paternal grandfather’s only son is her father. The boy is her father’s son, so he is her brother.",
+ "solution": "Her paternal grandfather’s only son is her father. The boy is her father’s son, so he is her brother.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A woman points to a boy and says, “He is the son of my paternal grandfather’s only son, who is my father.” How is the boy related to her?",
+  "options": [
+   "Brother",
+   "Son",
+   "Nephew",
+   "Cousin"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Her paternal grandfather’s only son is her father. The boy is her father’s son, so he is her brother.\nB: He is not her child; C: no sibling’s parent is stated; D: the paternal line is specified.",
+  "distractor_notes": "B: Mistakes the boy for her own son. C: Assumes he is her sibling’s child. D: Treats the specified paternal line as an unspecified branch."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

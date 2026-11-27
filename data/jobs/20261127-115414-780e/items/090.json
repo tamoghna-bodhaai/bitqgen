@@ -1,0 +1,70 @@
+{
+ "qno": 90,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 90,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Letter series",
+  "archetype": "find wrong term",
+  "brief": "Number series following a clear pattern (e.g., squares or alternating operations) with one incorrect term placed; identify the wrong term.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:73",
+   "2026s1:75",
+   "2025s2:83"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the wrong term in the series: 3, 8, 15, 24, 34, 48, 63",
+ "options": [
+  "(A) 8",
+  "(B) 24",
+  "(C) 34",
+  "(D) 48"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The terms follow n² − 1: 3, 8, 15, 24, 35, 48, 63. Thus 34 is the wrong term.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "Option labels are duplicated in the formatting."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The terms are 2^2-1, 3^2-1, 4^2-1, ... , 8^2-1, i.e. 3, 8, 15, 24, 35, 48, 63. So 34 must be 35; the others all fit.\n\nIndependent check: The terms follow n² − 1: 3, 8, 15, 24, 35, 48, 63. Thus 34 is the wrong term.",
+ "solution": "The terms follow $n^2-1$ for $n=2,3,\\ldots,8$:\n$$3,\\ 8,\\ 15,\\ 24,\\ 35,\\ 48,\\ 63.$$\nHence $34$ should be $35$; the wrong term is (C).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the wrong term in the series: 3, 8, 15, 24, 34, 48, 63",
+  "options": [
+   "(A) 8",
+   "(B) 24",
+   "(C) 34",
+   "(D) 48"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The terms are 2^2-1, 3^2-1, 4^2-1, ... , 8^2-1, i.e. 3, 8, 15, 24, 35, 48, 63. So 34 must be 35; the others all fit.",
+  "distractor_notes": "(A) 8 = 3^2-1, (B) 24 = 5^2-1 and (D) 48 = 7^2-1 all fit the pattern."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

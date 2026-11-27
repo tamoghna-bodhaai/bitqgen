@@ -1,0 +1,68 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Motion under gravity",
+  "archetype": "two-equation kinematics",
+  "brief": "Ball thrown vertically upward from a height; ask for time to reach ground using two kinematic equations (no figure).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:14",
+   "2023s2:25",
+   "2024s1:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "A ball is thrown vertically upward with a speed of 10 m/s from the roof of a building 75 m above the ground. The time taken by the ball to strike the ground is (Take g = 10 m/s^2).",
+ "options": [
+  "3 s",
+  "5 s",
+  "4 s",
+  "6 s"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set ground level as y=0: 75 + 10t - 5t² = 0. The positive root is t = 5 s.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Take upward as positive. u = +10 m/s, a = -10 m/s^2, s = -75 m.\ns = ut + (1/2)at^2\n-75 = 10t - 5t^2\nt^2 - 2t - 15 = 0\n(t - 5)(t + 3) = 0\nPositive root: t = 5 s.\nAlternative check: t_up = u/g = 1 s; h_up = u^2/(2g) = 5 m; total height = 80 m; t_down = sqrt(2*80/10) = 4 s; total = 5 s.\n\nIndependent check: Set ground level as y=0: 75 + 10t - 5t² = 0. The positive root is t = 5 s.",
+ "solution": "Taking upward as positive, use $s=ut+\\frac12at^2$ with $s=-75\\,\\text{m}$, $u=10\\,\\text{m/s}$ and $a=-10\\,\\text{m/s}^2$:\n$$-75=10t-5t^2\\quad\\Rightarrow\\quad (t-5)(t+3)=0.$$\nThe positive time is $t=5\\,\\text{s}$.!",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A ball is thrown vertically upward with a speed of 10 m/s from the roof of a building 75 m above the ground. The time taken by the ball to strike the ground is (Take g = 10 m/s^2).",
+  "options": [
+   "3 s",
+   "4 s",
+   "5 s",
+   "6 s"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Take upward as positive. u = +10 m/s, a = -10 m/s^2, s = -75 m.\ns = ut + (1/2)at^2\n-75 = 10t - 5t^2\nt^2 - 2t - 15 = 0\n(t - 5)(t + 3) = 0\nPositive root: t = 5 s.\nAlternative check: t_up = u/g = 1 s; h_up = u^2/(2g) = 5 m; total height = 80 m; t_down = sqrt(2*80/10) = 4 s; total = 5 s.",
+  "distractor_notes": "3 s: solves with +75 instead of -75 in displacement equation; 4 s: uses only the falling time from the highest point; 6 s: adds return time to roof and approximate free-fall time from roof."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

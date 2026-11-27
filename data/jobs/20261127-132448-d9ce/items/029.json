@@ -1,0 +1,68 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Atwood machine",
+  "archetype": "energy conservation",
+  "brief": "Two blocks connected by a light string over a smooth pulley (Atwood); write free-body equations and find acceleration and tension, then use kinematics for velocity after a given drop.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:33",
+   "2024s2:25",
+   "2025s2:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two blocks of masses $2$ kg and $3$ kg are connected by a light string over a smooth pulley and released from rest. How fast is the $3$ kg block moving after descending $2$ m? Take $g=10$ m s$^{-2}$.",
+ "options": [
+  "$2$ m s$^{-1}$",
+  "$4$ m s$^{-1}$",
+  "$2\\sqrt{2}$ m s$^{-1}$",
+  "$4\\sqrt{2}$ m s$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The acceleration is \\(a=\\frac{3-2}{3+2}g=2\\,\\text{m s}^{-2}\\). From rest, \\(v^2=2as=2(2)(2)=8\\), so \\(v=2\\sqrt{2}\\,\\text{m s}^{-1}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=\\dfrac{(3-2)g}{3+2}=2$ m s$^{-2}$.\\\\\n$3g-T=3a\\Rightarrow T=24$ N.\\\\\n$v^2=2as=2(2)(2)=8\\Rightarrow v=2\\sqrt{2}$ m s$^{-1}$.\n\nIndependent check: The acceleration is \\(a=\\frac{3-2}{3+2}g=2\\,\\text{m s}^{-2}\\). From rest, \\(v^2=2as=2(2)(2)=8\\), so \\(v=2\\sqrt{2}\\,\\text{m s}^{-1}\\).",
+ "solution": "For an Atwood machine, $a=\\dfrac{(3-2)g}{3+2}=2\\,\\text{m s}^{-2}$. From rest, after descending $s=2\\,\\text{m}$,\n$$v^2=2as=2(2)(2)=8 \\quad\\Rightarrow\\quad v=2\\sqrt{2}\\,\\text{m s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two blocks of masses $2$ kg and $3$ kg are connected by a light string over a smooth pulley and released from rest. How fast is the $3$ kg block moving after descending $2$ m? Take $g=10$ m s$^{-2}$.",
+  "options": [
+   "$2$ m s$^{-1}$",
+   "$2\\sqrt{2}$ m s$^{-1}$",
+   "$4$ m s$^{-1}$",
+   "$4\\sqrt{2}$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$a=\\dfrac{(3-2)g}{3+2}=2$ m s$^{-2}$.\\\\\n$3g-T=3a\\Rightarrow T=24$ N.\\\\\n$v^2=2as=2(2)(2)=8\\Rightarrow v=2\\sqrt{2}$ m s$^{-1}$.",
+  "distractor_notes": "A: omits a factor of $2$ in the kinematic relation. C: uses the acceleration as the final speed after the descent. D: uses the full gravitational acceleration instead of the Atwood acceleration."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

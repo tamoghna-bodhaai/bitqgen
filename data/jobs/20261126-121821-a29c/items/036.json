@@ -1,0 +1,76 @@
+{
+ "qno": 36,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 36,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Photoelectric effect",
+  "archetype": "graph interpretation",
+  "brief": "Give stopping potential vs frequency graphs for two metals (figure) and ask for the comparison of work functions or the value of h from the slope; simple plug-in after reading the graph.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:34",
+   "2025s1:39",
+   "2025s2:34"
+  ]
+ },
+ "status": "ok",
+ "stem": "The stopping-potential versus frequency graphs for two metals are shown. Which comparison of their work functions is correct?",
+ "options": [
+  "$\\text{A} < \\text{B}$",
+  "$\\text{A} = \\text{B}$",
+  "$\\text{A} > \\text{B}$",
+  "The comparison cannot be determined"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q036_stem_v0.png",
+  "width_pct": 55,
+  "kind": "plot"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From the graph, the threshold frequencies are \\(\\nu_{0,A}=4\\times10^{14}\\,\\text{Hz}\\) and \\(\\nu_{0,B}=6\\times10^{14}\\,\\text{Hz}\\). Since work function \\(\\phi=h\\nu_0\\), \\(\\phi_A<\\phi_B\\).",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{A}=h\\nu_{0,\\text{A}}$, $\\text{B}=h\\nu_{0,\\text{B}}$; $h>0$.\\n$\\nu_{0,\\text{A}}=4\\times10^{14}$ Hz $<\\nu_{0,\\text{B}}=6\\times10^{14}$ Hz.\\n$\\therefore \\text{A}<\\text{B}$\n\nIndependent check: From the graph, the threshold frequencies are \\(\\nu_{0,A}=4\\times10^{14}\\,\\text{Hz}\\) and \\(\\nu_{0,B}=6\\times10^{14}\\,\\text{Hz}\\). Since work function \\(\\phi=h\\nu_0\\), \\(\\phi_A<\\phi_B\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The stopping-potential versus frequency graphs for two metals are shown. Which comparison of their work functions is correct?",
+  "options": [
+   "$\\text{A} < \\text{B}$",
+   "$\\text{A} = \\text{B}$",
+   "$\\text{A} > \\text{B}$",
+   "The comparison cannot be determined"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "plot",
+   "description": "Draw Cartesian axes with horizontal axis labelled frequency, $\\nu$ ($10^{14}$ Hz), and vertical axis labelled stopping potential, $V_s$ (V). Draw two straight, parallel rising lines in the first quadrant. Label the upper-left line segment A and the lower-right line segment B. Line A crosses the frequency axis at $4$ and passes through $(6, 0.8)$; line B crosses at $6$ and passes through $(8, 0.8)$.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$\\text{A}=h\\nu_{0,\\text{A}}$, $\\text{B}=h\\nu_{0,\\text{B}}$; $h>0$.\\n$\\nu_{0,\\text{A}}=4\\times10^{14}$ Hz $<\\nu_{0,\\text{B}}=6\\times10^{14}$ Hz.\\n$\\therefore \\text{A}<\\text{B}$",
+  "distractor_notes": "B: assumes equal work functions despite different threshold frequencies. C: reverses the threshold-frequency comparison. D: overlooks that the frequency-axis intercept gives the threshold frequency."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

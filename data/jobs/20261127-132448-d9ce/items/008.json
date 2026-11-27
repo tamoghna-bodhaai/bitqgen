@@ -1,0 +1,68 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Relative velocity in one dimension",
+  "archetype": "proportionality-scaling",
+  "brief": "A man walks in rain falling vertically; find how umbrella angle changes when he runs faster, using relative-velocity vector construction.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:4",
+   "2025s2:8",
+   "2026s2:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "Rain falls vertically at $6$ m s$^{-1}$. A man walks horizontally at $2$ m s$^{-1}$ and holds his umbrella tilted at angle $\\theta$ to the vertical. If he doubles his speed without changing the rain, by what factor does $\\tan\\theta$ change?",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$1$",
+  "$4$",
+  "$2$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The umbrella aligns with the rain’s velocity relative to the man, so \\(\\tan\\theta=v/6\\). Doubling the man’s speed doubles \\(\\tan\\theta\\); the factor is 2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\tan\\theta=\\dfrac{v_{\\text{man}}}{v_{\\text{rain}}}$.\nWith $v_{\\text{man}}$ doubled and $v_{\\text{rain}}$ unchanged, $\\tan\\theta$ doubles.\n\nIndependent check: The umbrella aligns with the rain’s velocity relative to the man, so \\(\\tan\\theta=v/6\\). Doubling the man’s speed doubles \\(\\tan\\theta\\); the factor is 2.",
+ "solution": "The umbrella aligns with the rain’s velocity relative to the man, so $\\tan\\theta=\\dfrac{v_{\\text{man}}}{v_{\\text{rain}}}$. Since the rain speed is unchanged, doubling the man’s speed doubles $\\tan\\theta$.\n$$\\text{Factor change}=2$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Rain falls vertically at $6$ m s$^{-1}$. A man walks horizontally at $2$ m s$^{-1}$ and holds his umbrella tilted at angle $\\theta$ to the vertical. If he doubles his speed without changing the rain, by what factor does $\\tan\\theta$ change?",
+  "options": [
+   "$\\dfrac{1}{2}$",
+   "$1$",
+   "$2$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\tan\\theta=\\dfrac{v_{\\text{man}}}{v_{\\text{rain}}}$.\nWith $v_{\\text{man}}$ doubled and $v_{\\text{rain}}$ unchanged, $\\tan\\theta$ doubles.",
+  "distractor_notes": "A: Uses the reciprocal velocity ratio.\nB: Assumes the umbrella angle is unchanged.\nD: Squares the speed-scaling factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

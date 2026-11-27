@@ -1,0 +1,67 @@
+{
+ "qno": 98,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 98,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations (counting)",
+  "archetype": "family counting",
+  "brief": "Short family statement about a couple with sons/daughters and grandchildren; ask how many total members or how many males — must deduce gender from given clues.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2026s2:76",
+   "2026s2:90"
+  ]
+ },
+ "status": "ok",
+ "stem": "A family consists of a grandfather, grandmother, their two married sons, and one unmarried daughter. Each married son has two sons and one daughter. How many male members are there in the family?",
+ "options": [
+  "5",
+  "6",
+  "7",
+  "8"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Males: grandfather (1) + two sons (2) + grandsons (2 sons × 2 sons each = 4) = 7. Grandmother, daughter, granddaughters (and daughters-in-law, if counted) are female.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The male members of the family are:\n1. The grandfather $= 1$\n2. The two married sons $= 2$\n3. The sons of the two married sons $= 2 \\times 2 = 4$\n\nTotal number of male members $= 1 + 2 + 4 = 7$.\n\n(Note: The female members are the grandmother (1), the wives of the two sons (2), the unmarried daughter (1), and the daughters of the two sons ($2 \\times 1 = 2$), giving 6 females and 13 total members.)\n\nIndependent check: Males: grandfather (1) + two sons (2) + grandsons (2 sons × 2 sons each = 4) = 7. Grandmother, daughter, granddaughters (and daughters-in-law, if counted) are female.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A family consists of a grandfather, grandmother, their two married sons, and one unmarried daughter. Each married son has two sons and one daughter. How many male members are there in the family?",
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The male members of the family are:\n1. The grandfather $= 1$\n2. The two married sons $= 2$\n3. The sons of the two married sons $= 2 \\times 2 = 4$\n\nTotal number of male members $= 1 + 2 + 4 = 7$.\n\n(Note: The female members are the grandmother (1), the wives of the two sons (2), the unmarried daughter (1), and the daughters of the two sons ($2 \\times 1 = 2$), giving 6 females and 13 total members.)",
+  "distractor_notes": "Option A (5) ignores the two married sons or miscalculates the grandsons as only 2.\nOption B (6) is the count of female members in the family ($1 + 2 + 1 + 2 = 6$).\nOption D (8) mistakenly counts an extra male member or assumes the unmarried daughter has a partner.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

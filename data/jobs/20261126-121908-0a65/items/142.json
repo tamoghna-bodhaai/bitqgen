@@ -1,0 +1,68 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Odd/even, monotonicity",
+  "archetype": "check symmetry and derivative",
+  "brief": "Determine whether a given function is odd/even and whether it is strictly monotonic on a stated interval.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:108",
+   "2025s2:109",
+   "2026s1:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $f(x)=x^3-3x$, which statement about its symmetry and monotonicity on $[-1,1]$ is correct?",
+ "options": [
+  "It is odd and strictly increasing.",
+  "It is even and strictly decreasing.",
+  "It is odd and strictly decreasing.",
+  "It is neither odd nor even, and is not monotonic."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since f(-x)=-f(x), f is odd. Its derivative f'(x)=3(x^2-1) is negative for -1<x<1, so f is strictly decreasing on [-1,1].",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(-x)=-f(x)$; $f'(x)=3(x^2-1)\\le0$ on $[-1,1]$, with $f'<0$ on $(-1,1)$, hence $f$ is strictly decreasing.\n\nIndependent check: Since f(-x)=-f(x), f is odd. Its derivative f'(x)=3(x^2-1) is negative for -1<x<1, so f is strictly decreasing on [-1,1].",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $f(x)=x^3-3x$, which statement about its symmetry and monotonicity on $[-1,1]$ is correct?",
+  "options": [
+   "It is odd and strictly increasing.",
+   "It is even and strictly decreasing.",
+   "It is odd and strictly decreasing.",
+   "It is neither odd nor even, and is not monotonic."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$f(-x)=-f(x)$; $f'(x)=3(x^2-1)\\le0$ on $[-1,1]$, with $f'<0$ on $(-1,1)$, hence $f$ is strictly decreasing.",
+  "distractor_notes": "A: reverses the monotonicity; B: misidentifies the symmetry; D: overlooks both the odd symmetry and monotonicity."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "AM–GM relation",
+  "archetype": "property check",
+  "brief": "For two positive numbers with given AM and GM, verify/find related AP–GP properties (e.g. recover the numbers).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:109",
+   "2025s1:117",
+   "2025s2:93"
+  ]
+ },
+ "status": "ok",
+ "stem": "The arithmetic mean and geometric mean of two positive numbers are $5$ and $4$, respectively. The numbers are",
+ "options": [
+  "$1$ and $9$",
+  "$2$ and $8$",
+  "$4$ and $6$",
+  "$3$ and $7$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The sum is 2×5 = 10 and the product is 4² = 16. The numbers are roots of x² − 10x + 16 = 0, namely 2 and 8.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a+b=10$, $ab=16$; hence $t^2-10t+16=0=(t-2)(t-8)$, so the numbers are $2,8$.\n\nIndependent check: The sum is 2×5 = 10 and the product is 4² = 16. The numbers are roots of x² − 10x + 16 = 0, namely 2 and 8.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The arithmetic mean and geometric mean of two positive numbers are $5$ and $4$, respectively. The numbers are",
+  "options": [
+   "$1$ and $9$",
+   "$2$ and $8$",
+   "$4$ and $6$",
+   "$3$ and $7$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$a+b=10$, $ab=16$; hence $t^2-10t+16=0=(t-2)(t-8)$, so the numbers are $2,8$.",
+  "distractor_notes": "A: has the required sum but the wrong product. C: has the required sum but the wrong product. D: has the required sum but the wrong product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

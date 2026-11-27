@@ -1,0 +1,80 @@
+{
+ "qno": 62,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 62,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Empirical/molecular formula",
+  "archetype": "mole-concept numerical",
+  "brief": "Simple percentage composition → empirical formula problem: given % of C, H and O (or just two elements + oxygen by difference), ask the empirical formula or the simplest whole-number ratio.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:35",
+   "2022:52",
+   "2026s2:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "An organic compound contains $54.5\\%$ carbon, $9.1\\%$ hydrogen and the rest oxygen. Its empirical formula is:",
+ "options": [
+  "C$_2$H$_4$O",
+  "C$_4$H$_8$O",
+  "C$_4$H$_8$O$_2$",
+  "C$_5$H$_{10}$O"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q062_optA_v0.png",
+  "figs/q062_optB_v0.png",
+  "figs/q062_optC_v0.png",
+  "figs/q062_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Assume 100 g: C = 54.5/12, H = 9.1/1, O = 36.4/16 mol. Dividing by the smallest gives the ratio 2:4:1, so the empirical formula is C₂H₄O.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The images for options A and C conflict with their listed formulas: A depicts propanal (C₃H₆O), and C depicts a ketone with formula C₄H₈O, not C₄H₈O₂."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Assume $100~\\text{g}$: $54.5~\\text{g C} \\Rightarrow 54.5/12 = 4.542\\ \\text{mol}$; $9.1~\\text{g H} \\Rightarrow 9.1/1 = 9.1\\ \\text{mol}$; Oxygen $=100-54.5-9.1=36.4\\ \\text{g} \\Rightarrow 36.4/16=2.275\\ \\text{mol}$. Divide by $2.275$: C = $2.0$, H = $4.0$, O = $1.0$. Empirical formula $\\text{C}_2\\text{H}_4\\text{O}$.\n\nIndependent check: Assume 100 g: C = 54.5/12, H = 9.1/1, O = 36.4/16 mol. Dividing by the smallest gives the ratio 2:4:1, so the empirical formula is C₂H₄O.",
+ "solution": "Assume $100\\,\\text{g}$ of the compound. The mole amounts are $n_C=54.5/12$, $n_H=9.1/1$, and $n_O=36.4/16$.\\n$$n_C:n_H:n_O=2.275:4.55:1.1375=2:4:1$$\\nHence the empirical formula is $\\mathrm{C_2H_4O}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An organic compound contains $54.5\\%$ carbon, $9.1\\%$ hydrogen and the rest oxygen. Its empirical formula is:",
+  "options": [
+   "C$_2$H$_4$O",
+   "C$_4$H$_8$O",
+   "C$_4$H$_8$O$_2$",
+   "C$_5$H$_{10}$O"
+  ],
+  "option_smiles": [
+   "C(C=O)C",
+   "CCCC=O",
+   "CC(=O)CC",
+   "CC(=O)CCC"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Assume $100~\\text{g}$: $54.5~\\text{g C} \\Rightarrow 54.5/12 = 4.542\\ \\text{mol}$; $9.1~\\text{g H} \\Rightarrow 9.1/1 = 9.1\\ \\text{mol}$; Oxygen $=100-54.5-9.1=36.4\\ \\text{g} \\Rightarrow 36.4/16=2.275\\ \\text{mol}$. Divide by $2.275$: C = $2.0$, H = $4.0$, O = $1.0$. Empirical formula $\\text{C}_2\\text{H}_4\\text{O}$.",
+  "distractor_notes": "Errors: dividing by wrong atomic masses, incorrect normalisation (e.g. C/H/O ratios 4:6:1.5 → scaled incorrectly), or missing oxygen content. Options are plausible empirical formulas."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

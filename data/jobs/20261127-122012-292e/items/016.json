@@ -1,0 +1,90 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Work in cyclic process (P–V diagram)",
+  "archetype": "area of P–V cycle",
+  "brief": "P–V diagram of a cyclic process (rectangle/triangle in P–V plane); ask for the net work done per cycle as the enclosed area.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:12",
+   "2022:16",
+   "2026s1:8"
+  ]
+ },
+ "status": "ok",
+ "stem": "An ideal gas undergoes the cyclic process shown in the P-V diagram. The process consists of two isobaric and two isochoric steps. The net work done by the gas per cycle is (Take 1 atm = 10^5 Pa, 1 L = 10^-3 m^3):",
+ "options": [
+  "1200 J",
+  "900 J",
+  "600 J",
+  "2400 J"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q016_stem_v2.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The cycle is counterclockwise, so net work done by the gas is minus the enclosed area: \\(W=(2-5)(7-3)\\,\\text{atm·L}=-12\\times10^5\\times10^{-3}=-1200\\,\\text{J}\\).",
+   "answer": "NONE",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The net work done by the gas is −1200 J, but no option gives this signed value; option C gives only its magnitude."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "anthropic/claude-sonnet-5.5",
+   "working": "Rectangle: ΔV = 4 L = 4e-3 m^3, ΔP = 3 atm = 3e5 Pa, area = 1200 J. Direction A→B→C→D is counterclockwise (expansion at low P, compression at high P), so the work done by the gas is actually −1200 J. The magnitude matches option C.",
+   "answer": "C",
+   "confidence": 0.8,
+   "multiple_correct": false,
+   "issues": [
+    "The arrows show a counterclockwise cycle, so the net work done by the gas is −1200 J. Option C lists +1200 J, so the question is sloppy about sign and only the magnitude matches."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Work per cycle equals the area enclosed by the P-V loop. Area = (7 - 3) L * (5 - 2) atm = 4 L * 3 atm = 12 L atm. Since 1 L atm = 10^-3 m^3 * 10^5 Pa = 100 J, work = 12 * 100 = 1200 J. Correct option is C.\n\nIndependent check: Rectangle: ΔV = 4 L = 4e-3 m^3, ΔP = 3 atm = 3e5 Pa, area = 1200 J. Direction A→B→C→D is counterclockwise (expansion at low P, compression at high P), so the work done by the gas is actually −1200 J. The magnitude matches option C.",
+ "solution": "Net work per cycle equals the area enclosed by the $P$–$V$ loop:\n$$W=(7-3)(5-2)=12\\ \\text{L·atm}$$\nUsing $1\\ \\text{L·atm}=100\\ \\text{J}$, the enclosed work is $12\\times100=1200\\ \\text{J}$. Note: if the stated counterclockwise direction is intended, work done by the gas is $-1200\\ \\text{J}$; the listed answer gives its magnitude.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An ideal gas undergoes the cyclic process shown in the P-V diagram. The process consists of two isobaric and two isochoric steps. The net work done by the gas per cycle is (Take 1 atm = 10^5 Pa, 1 L = 10^-3 m^3):",
+  "options": [
+   "600 J",
+   "900 J",
+   "1200 J",
+   "2400 J"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "P-V diagram with pressure P on vertical axis labelled in atm from 0 to 6 and volume V on horizontal axis labelled in litres from 0 to 8. Draw a rectangle with corners A(3 L, 2 atm), B(7 L, 2 atm), C(7 L, 5 atm), D(3 L, 5 atm). Arrows show the clockwise path A to B to C to D to A. Label the corners A, B, C, D and mark 3 L, 7 L on the volume axis and 2 atm, 5 atm on the pressure axis.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "Work per cycle equals the area enclosed by the P-V loop. Area = (7 - 3) L * (5 - 2) atm = 4 L * 3 atm = 12 L atm. Since 1 L atm = 10^-3 m^3 * 10^5 Pa = 100 J, work = 12 * 100 = 1200 J. Correct option is C.",
+  "distractor_notes": "A: used half the rectangle area, 600 J. B: took volume difference as 3 L instead of 4 L, giving 9 L atm = 900 J. D: doubled the correct work, 2400 J."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

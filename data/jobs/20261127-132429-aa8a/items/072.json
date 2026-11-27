@@ -1,0 +1,68 @@
+{
+ "qno": 72,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 72,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-shift code",
+  "brief": "A word is coded by shifting each letter a fixed number of positions forward; provide the coded form of one word and ask for the code of a second word at moderate difficulty.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:80",
+   "2024s1:84",
+   "2023s2:86"
+  ]
+ },
+ "status": "ok",
+ "stem": "If each letter is replaced by the letter two places after it in the alphabet, MANGO is coded as **OCPIQ**. How will RIVER be coded by the same rule?",
+ "options": [
+  "SJWFS",
+  "TKWGT",
+  "TKXGT",
+  "TKXGU"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Shift each letter forward by 2: R→T, I→K, V→X, E→G, R→T, giving TKXGT.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Shift every letter forward by 2: R→T, I→K, V→X, E→G, R→T. Hence RIVER → TKXGT.\n\nIndependent check: Shift each letter forward by 2: R→T, I→K, V→X, E→G, R→T, giving TKXGT.",
+ "solution": "Shift each letter forward by 2 places: $R\\to T,\\ I\\to K,\\ V\\to X,\\ E\\to G,\\ R\\to T$. Thus, RIVER is coded as $\\boxed{\\text{TKXGT}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If each letter is replaced by the letter two places after it in the alphabet, MANGO is coded as **OCPIQ**. How will RIVER be coded by the same rule?",
+  "options": [
+   "TKXGT",
+   "TKWGT",
+   "SJWFS",
+   "TKXGU"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Shift every letter forward by 2: R→T, I→K, V→X, E→G, R→T. Hence RIVER → TKXGT.",
+  "distractor_notes": "B: Shifts V by only one place. C: Shifts letters backward. D: Shifts the final R by three places."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

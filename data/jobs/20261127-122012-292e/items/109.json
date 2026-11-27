@@ -1,0 +1,68 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Properties of determinants",
+  "archetype": "split-and-factor",
+  "brief": "evaluate a determinant whose rows share terms, using row operations to pull out a common factor and split into simpler determinants",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:100",
+   "2026s1:117",
+   "2022:101"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of the determinant |1+a 1 1| |1 1+b 1| |1 1 1+c| is",
+ "options": [
+  "abc + ab + bc + ca",
+  "abc + a + b + c",
+  "abc",
+  "(a+1)(b+1)(c+1)"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Expanding the determinant gives (1+a)(b+c+bc)-c-b=ab+bc+ca+abc.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "After R2 -> R2 - R1 and R3 -> R3 - R1, the determinant has rows (1+a,1,1), (-a,b,0), (-a,0,c). Expanding along the third row gives -a(0 - b) + c((1+a)b - (-a)) = ab + c(a + b + ab) = abc + ab + bc + ca.\n\nIndependent check: Expanding the determinant gives (1+a)(b+c+bc)-c-b=ab+bc+ca+abc.",
+ "solution": "Apply $R_2\\to R_2-R_1$ and $R_3\\to R_3-R_1$; the determinant becomes\n$$\\begin{vmatrix}1+a&1&1\\\\-a&b&0\\\\-a&0&c\\end{vmatrix}=(1+a)bc+ac+ab=abc+ab+bc+ca.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The value of the determinant |1+a 1 1| |1 1+b 1| |1 1 1+c| is",
+  "options": [
+   "abc + ab + bc + ca",
+   "abc + a + b + c",
+   "abc",
+   "(a+1)(b+1)(c+1)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "After R2 -> R2 - R1 and R3 -> R3 - R1, the determinant has rows (1+a,1,1), (-a,b,0), (-a,0,c). Expanding along the third row gives -a(0 - b) + c((1+a)b - (-a)) = ab + c(a + b + ab) = abc + ab + bc + ca.",
+  "distractor_notes": "B: includes only abc and single-letter terms, missing cross terms. C: keeps only the product of the diagonal entries. D: treats the determinant as the product of the diagonal entries."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

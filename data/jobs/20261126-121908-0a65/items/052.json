@@ -1,0 +1,67 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Elimination products",
+  "archetype": "match the column",
+  "brief": "Match haloalkane substrates with correct elimination/substitution product or reagent behaviour (e.g. Saytzeff vs Hofmann product).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:35",
+   "2026s2:32",
+   "2026s2:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "Match the reactions in Column-I with their corresponding major elimination products in Column-II.\n\n| | Column-I | | Column-II |\n|---|---|---|---|\n| (A) | $\\text{CH}_3\\text{CH}_2\\text{CH}(\\text{Br})\\text{CH}_3 + \\text{alc. KOH} \\xrightarrow{\\Delta}$ | (p) | 2-Methylbut-2-ene |\n| (B) | $(\\text{CH}_3)_2\\text{C}(\\text{Br})\\text{CH}_2\\text{CH}_3 + \\text{C}_2\\text{H}_5\\text{ONa} \\xrightarrow{\\Delta}$ | (q) | 2-Methylbut-1-ene |\n| (C) | $(\\text{CH}_3)_2\\text{C}(\\text{Br})\\text{CH}_2\\text{CH}_3 + t\\text{-BuO}^-\\text{K}^+ \\xrightarrow{\\Delta}$ | (r) | But-2-ene |\n| (D) | $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{Br} + \\text{alc. KOH} \\xrightarrow{\\Delta}$ | (s) | But-1-ene |",
+ "options": [
+  "A-(r), B-(p), C-(q), D-(s)",
+  "A-(r), B-(q), C-(p), D-(s)",
+  "A-(s), B-(p), C-(q), D-(r)",
+  "A-(s), B-(q), C-(p), D-(r)"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "A: 2-bromobutane + alc. KOH (small base) gives Zaitsev product but-2-ene (r). B: 2-bromo-2-methylbutane + EtONa (small base) gives Zaitsev trisubstituted 2-methylbut-2-ene (p). C: same substrate with bulky t-BuOK gives Hofmann product 2-methylbut-1-ene (q). D: 1-bromobutane has only one β-carbon, giving but-1-ene (s). Matching A-r, B-p, C-q, D-s = option (A).",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Reaction (A): 2-Bromobutane undergoes dehydrohalogenation with alcoholic $\\text{KOH}$ via an $\\text{E}2$ mechanism. Following Saytzeff's rule, the more stable, more substituted alkene, but-2-ene, is formed as the major product. Hence, (A) $\\rightarrow$ (r).\n\n2. Reaction (B): 2-Bromo-2-methylbutane reacts with a small, unhindered base ($\\text{C}_2\\text{H}_5\\text{ONa}$). The base preferentially abstracts a proton from the more substituted $\\beta$-carbon (C3), giving the more substituted Saytzeff alkene, 2-methylbut-2-ene, as the major product. Hence, (B) $\\rightarrow$ (p).\n\n3. Reaction (C): 2-Bromo-2-methylbutane reacts with a bulky base, potassium *tert*-butoxide ($t\\text{-BuO}^-\\text{K}^+$). Due to steric hindrance, the base abstracts the more accessible $\\beta$-proton from the less hindered terminal methyl group (C1), yielding the less substituted Hofmann alkene, 2-methylbut-1-ene, as the major product. Hence, (C) $\\rightarrow$ (q).\n\n4. Reaction (D): 1-Bromobutane has only one type of $\\beta$-hydrogen (at C2), so elimination can only yield but-1-ene. Hence, (D) $\\rightarrow$ (s).\n\nCombining these results gives A-(r), B-(p), C-(q), D-(s).\n\nIndependent check: A: 2-bromobutane + alc. KOH (small base) gives Zaitsev product but-2-ene (r). B: 2-bromo-2-methylbutane + EtONa (small base) gives Zaitsev trisubstituted 2-methylbut-2-ene (p). C: same substrate with bulky t-BuOK gives Hofmann product 2-methylbut-1-ene (q). D: 1-bromobutane has only one β-carbon, giving but-1-ene (s). Matching A-r, B-p, C-q, D-s = option (A).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Match the reactions in Column-I with their corresponding major elimination products in Column-II.\n\n| | Column-I | | Column-II |\n|---|---|---|---|\n| (A) | $\\text{CH}_3\\text{CH}_2\\text{CH}(\\text{Br})\\text{CH}_3 + \\text{alc. KOH} \\xrightarrow{\\Delta}$ | (p) | 2-Methylbut-2-ene |\n| (B) | $(\\text{CH}_3)_2\\text{C}(\\text{Br})\\text{CH}_2\\text{CH}_3 + \\text{C}_2\\text{H}_5\\text{ONa} \\xrightarrow{\\Delta}$ | (q) | 2-Methylbut-1-ene |\n| (C) | $(\\text{CH}_3)_2\\text{C}(\\text{Br})\\text{CH}_2\\text{CH}_3 + t\\text{-BuO}^-\\text{K}^+ \\xrightarrow{\\Delta}$ | (r) | But-2-ene |\n| (D) | $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{Br} + \\text{alc. KOH} \\xrightarrow{\\Delta}$ | (s) | But-1-ene |",
+  "options": [
+   "A-(r), B-(p), C-(q), D-(s)",
+   "A-(r), B-(q), C-(p), D-(s)",
+   "A-(s), B-(p), C-(q), D-(r)",
+   "A-(s), B-(q), C-(p), D-(r)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "1. Reaction (A): 2-Bromobutane undergoes dehydrohalogenation with alcoholic $\\text{KOH}$ via an $\\text{E}2$ mechanism. Following Saytzeff's rule, the more stable, more substituted alkene, but-2-ene, is formed as the major product. Hence, (A) $\\rightarrow$ (r).\n\n2. Reaction (B): 2-Bromo-2-methylbutane reacts with a small, unhindered base ($\\text{C}_2\\text{H}_5\\text{ONa}$). The base preferentially abstracts a proton from the more substituted $\\beta$-carbon (C3), giving the more substituted Saytzeff alkene, 2-methylbut-2-ene, as the major product. Hence, (B) $\\rightarrow$ (p).\n\n3. Reaction (C): 2-Bromo-2-methylbutane reacts with a bulky base, potassium *tert*-butoxide ($t\\text{-BuO}^-\\text{K}^+$). Due to steric hindrance, the base abstracts the more accessible $\\beta$-proton from the less hindered terminal methyl group (C1), yielding the less substituted Hofmann alkene, 2-methylbut-1-ene, as the major product. Hence, (C) $\\rightarrow$ (q).\n\n4. Reaction (D): 1-Bromobutane has only one type of $\\beta$-hydrogen (at C2), so elimination can only yield but-1-ene. Hence, (D) $\\rightarrow$ (s).\n\nCombining these results gives A-(r), B-(p), C-(q), D-(s).",
+  "distractor_notes": "Option B: Reverses the selectivity between the unhindered base (ethoxide) and the bulky base (tert-butoxide) for 2-bromo-2-methylbutane.\nOption C: Confuses the regiochemical outcomes of 2-bromobutane and 1-bromobutane, predicting terminal elimination for the secondary halide.\nOption D: Combines both errors, inverting both Saytzeff/Hofmann selectivity for the tertiary halide and the products of 1-bromobutane and 2-bromobutane.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

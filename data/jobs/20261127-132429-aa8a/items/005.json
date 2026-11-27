@@ -1,0 +1,68 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Conservation of angular momentum",
+  "archetype": "conservation law",
+  "brief": "A man walks on the rim of a freely spinning stationary platform (disc); use conservation of angular momentum to find final angular velocity ratio from moments of inertia.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:25",
+   "2025s1:11",
+   "2023s2:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "A man walks on the rim of a freely rotating platform, initially at rest. If the moments of inertia of the platform and the man about the axis are $8\\ \\text{kg m}^2$ and $2\\ \\text{kg m}^2$, respectively, what is $\\dfrac{\\omega_{\\rm man}}{\\omega_{\\rm platform}}$ after he starts walking?",
+ "options": [
+  "$-2$",
+  "$-4$",
+  "$-\\dfrac{1}{4}$",
+  "$4$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With no external torque, angular momentum remains zero: $2\\omega_{\\rm man}+8\\omega_{\\rm platform}=0$, so $\\omega_{\\rm man}/\\omega_{\\rm platform}=-4$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$L_{\\rm initial}=0$; hence $I_{\\rm man}\\omega_{\\rm man}+I_{\\rm platform}\\omega_{\\rm platform}=0$\n$\\dfrac{\\omega_{\\rm man}}{\\omega_{\\rm platform}}=-\\dfrac{I_{\\rm platform}}{I_{\\rm man}}=-\\dfrac{8}{2}=-4$\n\nIndependent check: With no external torque, angular momentum remains zero: $2\\omega_{\\rm man}+8\\omega_{\\rm platform}=0$, so $\\omega_{\\rm man}/\\omega_{\\rm platform}=-4$.",
+ "solution": "With no external torque, angular momentum is conserved and initially zero:\n$$I_{\\rm man}\\omega_{\\rm man}+I_{\\rm platform}\\omega_{\\rm platform}=0.$$\nThus $\\dfrac{\\omega_{\\rm man}}{\\omega_{\\rm platform}}=-\\dfrac{8}{2}=-4$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A man walks on the rim of a freely rotating platform, initially at rest. If the moments of inertia of the platform and the man about the axis are $8\\ \\text{kg m}^2$ and $2\\ \\text{kg m}^2$, respectively, what is $\\dfrac{\\omega_{\\rm man}}{\\omega_{\\rm platform}}$ after he starts walking?",
+  "options": [
+   "$-4$",
+   "$-2$",
+   "$-\\dfrac{1}{4}$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$L_{\\rm initial}=0$; hence $I_{\\rm man}\\omega_{\\rm man}+I_{\\rm platform}\\omega_{\\rm platform}=0$\n$\\dfrac{\\omega_{\\rm man}}{\\omega_{\\rm platform}}=-\\dfrac{I_{\\rm platform}}{I_{\\rm man}}=-\\dfrac{8}{2}=-4$",
+  "distractor_notes": "B: Incorrect ratio of moments; C: Reciprocal ratio with a negative sign; D: Omits the opposite directions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

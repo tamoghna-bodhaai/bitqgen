@@ -1,0 +1,68 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Geometry of complex numbers",
+  "archetype": "geometry of complex numbers",
+  "brief": "Given z subject to a modulus condition like |z - z₁| = |z - z₂| or |z| = r, identify the locus/interpretation (perpendicular bisector/circle) and answer a numeric or conceptual MCQ.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:100",
+   "2024s1:119",
+   "2022:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $|z-(1+2i)|=|z-(-3+4i)|$ and $|z|=5$, then the product of the possible values of $z$ is",
+ "options": [
+  "$20+15i$",
+  "$-15+20i$",
+  "$-15-20i$",
+  "$15-20i$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The equidistance condition gives the line y=2x+5. Intersecting with x²+y²=25 gives z=5i and z=-4-3i; their product is 15-20i.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$z=x+iy\\Rightarrow |z-(1+2i)|^2=|z-(-3+4i)|^2\\Rightarrow y=2x+5$\n$x^2+y^2=25\\Rightarrow 5x(x+4)=0\\Rightarrow z\\in\\{5i,-4-3i\\}$\n$(5i)(-4-3i)=15-20i$\n\nIndependent check: The equidistance condition gives the line y=2x+5. Intersecting with x²+y²=25 gives z=5i and z=-4-3i; their product is 15-20i.",
+ "solution": "Let $z=x+iy$. The equidistance condition gives the perpendicular bisector $y=2x+5$. Using $|z|=5$:\n$$x^2+(2x+5)^2=25\\Rightarrow 5x(x+4)=0,$$\nso $z=5i$ or $z=-4-3i$. Their product is $(5i)(-4-3i)=15-20i$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "If $|z-(1+2i)|=|z-(-3+4i)|$ and $|z|=5$, then the product of the possible values of $z$ is",
+  "options": [
+   "$15-20i$",
+   "$-15+20i$",
+   "$-15-20i$",
+   "$20+15i$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$z=x+iy\\Rightarrow |z-(1+2i)|^2=|z-(-3+4i)|^2\\Rightarrow y=2x+5$\n$x^2+y^2=25\\Rightarrow 5x(x+4)=0\\Rightarrow z\\in\\{5i,-4-3i\\}$\n$(5i)(-4-3i)=15-20i$",
+  "distractor_notes": "B: Negates the correct product.\nC: Makes a sign error in the real part.\nD: Interchanges the real and imaginary parts."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

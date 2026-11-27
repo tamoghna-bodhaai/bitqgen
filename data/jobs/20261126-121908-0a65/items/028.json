@@ -1,0 +1,67 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Breaking stress",
+  "archetype": "two-condition linear",
+  "brief": "A wire stretched by known amount with a hanging mass; use Y = stress/strain to find elongation or the maximum load for a given breaking stress.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:13",
+   "2024s1:22",
+   "2023s1:14"
+  ]
+ },
+ "status": "ok",
+ "stem": "A wire of length $2\\ \\text{m}$ stretches by $1\\ \\text{mm}$ when a mass of $5\\ \\text{kg}$ is suspended from it. The Young's modulus and breaking stress of the wire are $2 \\times 10^{11}\\ \\text{N m}^{-2}$ and $4 \\times 10^8\\ \\text{N m}^{-2}$, respectively. The maximum mass that can be suspended from the wire without breaking it is (take $g = 10\\ \\text{m s}^{-2}$)",
+ "options": [
+  "$10\\ \\text{kg}$",
+  "$15\\ \\text{kg}$",
+  "$20\\ \\text{kg}$",
+  "$25\\ \\text{kg}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Area from stretch data: A = FL/(YΔL) = (50×2)/(2×10¹¹×10⁻³) = 5×10⁻⁷ m². Breaking force = σA = 4×10⁸×5×10⁻⁷ = 200 N ⇒ M = 200/10 = 20 kg.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Step 1: Calculate the longitudinal strain under the initial load:\n$$\\varepsilon = \\dfrac{\\Delta L}{L} = \\dfrac{1 \\times 10^{-3}\\ \\text{m}}{2\\ \\text{m}} = 5 \\times 10^{-4}$$\n\nStep 2: Calculate the tensile stress $\\sigma_1$ produced by the mass $m_1 = 5\\ \\text{kg}$:\n$$\\sigma_1 = Y \\varepsilon = (2 \\times 10^{11}\\ \\text{N m}^{-2}) \\times (5 \\times 10^{-4}) = 1.0 \\times 10^8\\ \\text{N m}^{-2}$$\n\nStep 3: Relate stress to the suspended mass. Since stress is directly proportional to the applied load ($\\sigma = \\dfrac{m g}{A}$):\n$$\\dfrac{M_{\\max}}{m_1} = \\dfrac{\\sigma_{\\text{break}}}{\\sigma_1}$$\n$$M_{\\max} = 5\\ \\text{kg} \\times \\dfrac{4 \\times 10^8\\ \\text{N m}^{-2}}{1.0 \\times 10^8\\ \\text{N m}^{-2}} = 5 \\times 4 = 20\\ \\text{kg}$$\n\nIndependent check: Area from stretch data: A = FL/(YΔL) = (50×2)/(2×10¹¹×10⁻³) = 5×10⁻⁷ m². Breaking force = σA = 4×10⁸×5×10⁻⁷ = 200 N ⇒ M = 200/10 = 20 kg.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wire of length $2\\ \\text{m}$ stretches by $1\\ \\text{mm}$ when a mass of $5\\ \\text{kg}$ is suspended from it. The Young's modulus and breaking stress of the wire are $2 \\times 10^{11}\\ \\text{N m}^{-2}$ and $4 \\times 10^8\\ \\text{N m}^{-2}$, respectively. The maximum mass that can be suspended from the wire without breaking it is (take $g = 10\\ \\text{m s}^{-2}$)",
+  "options": [
+   "$10\\ \\text{kg}$",
+   "$15\\ \\text{kg}$",
+   "$20\\ \\text{kg}$",
+   "$25\\ \\text{kg}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Step 1: Calculate the longitudinal strain under the initial load:\n$$\\varepsilon = \\dfrac{\\Delta L}{L} = \\dfrac{1 \\times 10^{-3}\\ \\text{m}}{2\\ \\text{m}} = 5 \\times 10^{-4}$$\n\nStep 2: Calculate the tensile stress $\\sigma_1$ produced by the mass $m_1 = 5\\ \\text{kg}$:\n$$\\sigma_1 = Y \\varepsilon = (2 \\times 10^{11}\\ \\text{N m}^{-2}) \\times (5 \\times 10^{-4}) = 1.0 \\times 10^8\\ \\text{N m}^{-2}$$\n\nStep 3: Relate stress to the suspended mass. Since stress is directly proportional to the applied load ($\\sigma = \\dfrac{m g}{A}$):\n$$\\dfrac{M_{\\max}}{m_1} = \\dfrac{\\sigma_{\\text{break}}}{\\sigma_1}$$\n$$M_{\\max} = 5\\ \\text{kg} \\times \\dfrac{4 \\times 10^8\\ \\text{N m}^{-2}}{1.0 \\times 10^8\\ \\text{N m}^{-2}} = 5 \\times 4 = 20\\ \\text{kg}$$",
+  "distractor_notes": "Option A encodes forgetting the original length $L = 2\\ \\text{m}$ when computing strain (taking strain as $\\Delta L = 10^{-3}$), which doubles $\\sigma_1$ to $2 \\times 10^8\\ \\text{N m}^{-2}$ and yields $M = 10\\ \\text{kg}$. Option B encodes computing the additional mass that can be added ($20 - 5 = 15\\ \\text{kg}$) instead of the total maximum mass. Option D encodes misinterpreting the calculated $20\\ \\text{kg}$ as the additional mass and adding it to the initial $5\\ \\text{kg}$ to get $25\\ \\text{kg}$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

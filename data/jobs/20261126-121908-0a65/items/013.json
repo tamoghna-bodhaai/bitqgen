@@ -1,0 +1,67 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Energy in SHM",
+  "archetype": "proportionality-scaling",
+  "brief": "A mass on a spring in SHM; ask at what displacement the kinetic energy equals the potential energy (each half of total energy).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:13",
+   "2025s2:29",
+   "2024s1:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "A mass attached to a spring executes simple harmonic motion with amplitude $A$. At what displacement from the mean position is its kinetic energy equal to its potential energy?",
+ "options": [
+  "$\\dfrac{A}{4}$",
+  "$\\dfrac{A}{2}$",
+  "$\\dfrac{A}{\\sqrt{2}}$",
+  "$\\dfrac{\\sqrt{3}A}{2}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Set KE = PE: (1/2)k(A² − x²) = (1/2)kx² ⇒ A² = 2x² ⇒ x = A/√2 ≈ 0.707A. Numerical check confirms KE = PE = kA²/4 at this x.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The total mechanical energy in simple harmonic motion is given by $$E = \\dfrac{1}{2}kA^2$$ The potential energy at displacement $x$ is $$U = \\dfrac{1}{2}kx^2$$ When the kinetic energy equals the potential energy, each must equal half of the total energy: $$U = \\dfrac{1}{2}E$$ Substituting the expressions: $$\\dfrac{1}{2}kx^2 = \\dfrac{1}{2}\\left(\\dfrac{1}{2}kA^2\\right) = \\dfrac{1}{4}kA^2$$ $$x^2 = \\dfrac{A^2}{2} \\implies x = \\dfrac{A}{\\sqrt{2}}$$\n\nIndependent check: Set KE = PE: (1/2)k(A² − x²) = (1/2)kx² ⇒ A² = 2x² ⇒ x = A/√2 ≈ 0.707A. Numerical check confirms KE = PE = kA²/4 at this x.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A mass attached to a spring executes simple harmonic motion with amplitude $A$. At what displacement from the mean position is its kinetic energy equal to its potential energy?",
+  "options": [
+   "$\\dfrac{A}{4}$",
+   "$\\dfrac{A}{2}$",
+   "$\\dfrac{A}{\\sqrt{2}}$",
+   "$\\dfrac{\\sqrt{3}A}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The total mechanical energy in simple harmonic motion is given by $$E = \\dfrac{1}{2}kA^2$$ The potential energy at displacement $x$ is $$U = \\dfrac{1}{2}kx^2$$ When the kinetic energy equals the potential energy, each must equal half of the total energy: $$U = \\dfrac{1}{2}E$$ Substituting the expressions: $$\\dfrac{1}{2}kx^2 = \\dfrac{1}{2}\\left(\\dfrac{1}{2}kA^2\\right) = \\dfrac{1}{4}kA^2$$ $$x^2 = \\dfrac{A^2}{2} \\implies x = \\dfrac{A}{\\sqrt{2}}$$",
+  "distractor_notes": "A: Arises from mistakenly squaring the factor of $1/2$ (giving $A/4$).\nB: Arises from assuming linear proportionality between energy and displacement (at $x = A/2$, $U = E/4$, not $E/2$).\nD: Corresponds to the position where potential energy is three times the kinetic energy ($x = \\frac{\\sqrt{3}}{2}A$).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

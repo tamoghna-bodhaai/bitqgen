@@ -1,0 +1,78 @@
+{
+ "qno": 73,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 73,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "Deviation from Raoult's law",
+  "archetype": "conceptual",
+  "brief": "Ask which of the given mixtures will show positive/negative deviation from Raoult's law, or what the vapour composition will be above a given liquid mixture — conceptual with a numeric percentage or a qualitative pick.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:46",
+   "2023s2:32",
+   "2024s2:31"
+  ]
+ },
+ "status": "ok",
+ "stem": "Among the following liquid pairs, which one shows negative deviation from Raoult’s law?",
+ "options": [
+  "Benzene and toluene",
+  "Ethanol and cyclohexane",
+  "n-Hexane and n-heptane",
+  "Phenol and aniline"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": [
+  "figs/q073_optA_v2.png",
+  "figs/q073_optB_v2.png",
+  "figs/q073_optD_v2.png",
+  "figs/q073_optC_v2.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Phenol and aniline form stronger intermolecular hydrogen-bonding interactions with each other, giving a negative deviation from Raoult’s law. The other pairs are ideal or show positive deviation.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Negative deviation occurs when A–B intermolecular forces are stronger than A–A and B–B, lowering vapour pressure. Phenol and aniline form strong intermolecular hydrogen bonds (O–H···N and N–H···O) → negative deviation. Benzene–toluene and n-hexane–n-heptane have similar interactions → nearly ideal. Ethanol–cyclohexane: ethanol’s H-bonds are broken, only weak London forces between unlike molecules → positive deviation.\n\nIndependent check: Phenol and aniline form stronger intermolecular hydrogen-bonding interactions with each other, giving a negative deviation from Raoult’s law. The other pairs are ideal or show positive deviation.",
+ "solution": "Negative deviation occurs when unlike-molecule attractions are stronger than like-molecule attractions, lowering vapour pressure. Phenol and aniline form strong intermolecular hydrogen bonds, such as $\\mathrm{O-H\\cdots N}$ and $\\mathrm{N-H\\cdots O}$, so their mixture shows negative deviation from Raoult’s law.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Among the following liquid pairs, which one shows negative deviation from Raoult’s law?",
+  "options": [
+   "Benzene and toluene",
+   "Ethanol and cyclohexane",
+   "Phenol and aniline",
+   "n-Hexane and n-heptane"
+  ],
+  "option_smiles": [
+   "c1ccccc1.Cc1ccccc1",
+   "C1CCCCC1.CCO",
+   "Oc1ccccc1.Nc1ccccc1",
+   "CCCCCC.CCCCCCC"
+  ],
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Negative deviation occurs when A–B intermolecular forces are stronger than A–A and B–B, lowering vapour pressure. Phenol and aniline form strong intermolecular hydrogen bonds (O–H···N and N–H···O) → negative deviation. Benzene–toluene and n-hexane–n-heptane have similar interactions → nearly ideal. Ethanol–cyclohexane: ethanol’s H-bonds are broken, only weak London forces between unlike molecules → positive deviation.",
+  "distractor_notes": "A and D are typical examples of nearly ideal solutions (similar intermolecular forces). B shows positive deviation because ethanol’s hydrogen bonds are broken and only weak London forces exist between ethanol and cyclohexane."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

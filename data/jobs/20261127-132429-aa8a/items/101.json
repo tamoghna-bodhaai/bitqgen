@@ -1,0 +1,68 @@
+{
+ "qno": 101,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 101,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Approximations using differentials",
+  "archetype": "differential error",
+  "brief": "Use differentials to estimate the approximate value of a root of a number or a function at a nearby point.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:115",
+   "2023s2:93",
+   "2023s2:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using differentials, the approximate value of $\\sqrt{101}$ is",
+ "options": [
+  "$10.005$",
+  "$10.1$",
+  "$10.05$",
+  "$10.5$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let y=√x. Near x=100, dy≈dx/(2√100)=1/20, so √101≈10+0.05=10.05.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $f(x)=\\sqrt{x}$ at $x=100$, $f(100)=10$, $f'(100)=\\dfrac{1}{20}$.\\n$\\sqrt{101}\\approx 10+\\dfrac{1}{20}=10.05$.\n\nIndependent check: Let y=√x. Near x=100, dy≈dx/(2√100)=1/20, so √101≈10+0.05=10.05.",
+ "solution": "For $f(x)=\\sqrt{x}$, use $dy\\approx f'(x)\\,dx$ near $x=100$, where $f(100)=10$ and $f'(100)=\\dfrac{1}{20}$.\n$$\\sqrt{101}\\approx 10+\\dfrac{1}{20}(1)=10.05$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using differentials, the approximate value of $\\sqrt{101}$ is",
+  "options": [
+   "$10.005$",
+   "$10.05$",
+   "$10.1$",
+   "$10.5$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For $f(x)=\\sqrt{x}$ at $x=100$, $f(100)=10$, $f'(100)=\\dfrac{1}{20}$.\\n$\\sqrt{101}\\approx 10+\\dfrac{1}{20}=10.05$.",
+  "distractor_notes": "A: Uses an extra factor of $10$ in the differential.\\nC: Doubles the differential.\\nD: Uses an incorrect change in the input."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

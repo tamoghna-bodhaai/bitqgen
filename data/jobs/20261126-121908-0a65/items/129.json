@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Conditional probability, independence",
+  "archetype": "conditional from table",
+  "brief": "From a 2×2 probability table, compute a conditional probability and check independence of two events.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:92",
+   "2025s2:127",
+   "2025s1:91"
+  ]
+ },
+ "status": "ok",
+ "stem": "The joint probabilities of events $A$ and $B$ are given below. Find $P(A\\mid B)$ and determine whether $A$ and $B$ are independent. $$\\begin{array}{c|cc} & B & B' \\\\ \\hline A & \\frac{1}{5} & \\frac{1}{5} \\\\ A' & \\frac{1}{10} & \\frac{1}{2} \\end{array}$$",
+ "options": [
+  "$\\frac{2}{3}$; dependent",
+  "$\\frac{2}{3}$; independent",
+  "$\\frac{1}{3}$; dependent",
+  "$\\frac{1}{2}$; dependent"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "P(B)=\\frac15+\\frac1{10}=\\frac3{10}, so P(A\\mid B)=\\frac{1/5}{3/10}=\\frac23. Also P(A)=\\frac25, and P(A)P(B)=\\frac3{25}\\ne P(A\\cap B)=\\frac15; hence dependent.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(B)=\\frac15+\\frac1{10}=\\frac3{10}$\n$P(A\\mid B)=\\dfrac{1/5}{3/10}=\\frac23$\n$P(A)=\\frac25,\\quad P(A)P(B)=\\frac{3}{25}\\ne P(A\\cap B)=\\frac15$\n\nIndependent check: P(B)=\\frac15+\\frac1{10}=\\frac3{10}, so P(A\\mid B)=\\frac{1/5}{3/10}=\\frac23. Also P(A)=\\frac25, and P(A)P(B)=\\frac3{25}\\ne P(A\\cap B)=\\frac15; hence dependent.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The joint probabilities of events $A$ and $B$ are given below. Find $P(A\\mid B)$ and determine whether $A$ and $B$ are independent. $$\\begin{array}{c|cc} & B & B' \\\\ \\hline A & \\frac{1}{5} & \\frac{1}{5} \\\\ A' & \\frac{1}{10} & \\frac{1}{2} \\end{array}$$",
+  "options": [
+   "$\\frac{2}{3}$; dependent",
+   "$\\frac{2}{3}$; independent",
+   "$\\frac{1}{3}$; dependent",
+   "$\\frac{1}{2}$; dependent"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$P(B)=\\frac15+\\frac1{10}=\\frac3{10}$\n$P(A\\mid B)=\\dfrac{1/5}{3/10}=\\frac23$\n$P(A)=\\frac25,\\quad P(A)P(B)=\\frac{3}{25}\\ne P(A\\cap B)=\\frac15$",
+  "distractor_notes": "B: Gets the conditional probability right but assumes independence.\nC: Uses the complement of the conditional probability.\nD: Divides the joint probability by the total probability."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

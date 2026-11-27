@@ -1,0 +1,67 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Lift problems",
+  "archetype": "single-formula",
+  "brief": "A person standing on a lift accelerating upward/downward; ask the apparent weight as a multiple of true weight using N = m(g ± a).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:11",
+   "2025s2:4",
+   "2025s1:29"
+  ]
+ },
+ "status": "ok",
+ "stem": "A person stands on a weighing scale inside an elevator that is accelerating downwards with an acceleration of $0.2g$. The ratio of the apparent weight to the true weight of the person is:",
+ "options": [
+  "$0.2$",
+  "$0.8$",
+  "$1.0$",
+  "$1.2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Apparent weight N = m(g − a) = m(g − 0.2g) = 0.8mg. Ratio N/(mg) = 0.8.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The true weight of the person is $W = mg$.\nWhen the elevator accelerates downwards with an acceleration $a$, the normal reaction force (apparent weight $W'$) exerted on the person by the weighing scale is given by:\n$$mg - N = ma \\implies N = m(g - a)$$\nGiven $a = 0.2g$:\n$$W' = N = m(g - 0.2g) = 0.8mg$$\nThe ratio of the apparent weight to the true weight is:\n$$\\dfrac{W'}{W} = \\dfrac{0.8mg}{mg} = 0.8$$\n\nIndependent check: Apparent weight N = m(g − a) = m(g − 0.2g) = 0.8mg. Ratio N/(mg) = 0.8.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A person stands on a weighing scale inside an elevator that is accelerating downwards with an acceleration of $0.2g$. The ratio of the apparent weight to the true weight of the person is:",
+  "options": [
+   "$0.2$",
+   "$0.8$",
+   "$1.0$",
+   "$1.2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "The true weight of the person is $W = mg$.\nWhen the elevator accelerates downwards with an acceleration $a$, the normal reaction force (apparent weight $W'$) exerted on the person by the weighing scale is given by:\n$$mg - N = ma \\implies N = m(g - a)$$\nGiven $a = 0.2g$:\n$$W' = N = m(g - 0.2g) = 0.8mg$$\nThe ratio of the apparent weight to the true weight is:\n$$\\dfrac{W'}{W} = \\dfrac{0.8mg}{mg} = 0.8$$",
+  "distractor_notes": "- $0.2$: Assumes apparent weight is given directly by the inertial force term $N = ma$.\n- $1.0$: Neglects the acceleration of the elevator, assuming apparent weight equals true weight.\n- $1.2$: Sign error; computes $N = m(g + a)$ as if the elevator were accelerating upwards.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

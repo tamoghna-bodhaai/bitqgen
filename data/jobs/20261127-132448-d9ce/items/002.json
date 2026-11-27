@@ -1,0 +1,68 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Motion under gravity",
+  "archetype": "two-equation kinematics",
+  "brief": "A car decelerating uniformly covers the last half of a distance in a given time; find total time or initial velocity using two kinematic equations.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:7",
+   "2022:20",
+   "2026s1:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "A car decelerates uniformly to rest after travelling $80$ m. If it covers the last $40$ m in $4$ s, what is its total stopping time?",
+ "options": [
+  "$4$ s",
+  "$4\\sqrt{2}$ s",
+  "$8$ s",
+  "$8\\sqrt{2}$ s"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In the last 4 s, the average speed is 2a, so 40 = 8a and a = 5 m/s². From 80 = ½aT², T = 4√2 s.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For the last $40$ m, ending at rest: $40=\\dfrac{1}{2}a(4)^2\\Rightarrow a=5$ m s$^{-2}$.\\nFor the full journey, $80=\\dfrac{1}{2}aT^2$.\\n$T=\\sqrt{\\dfrac{160}{5}}=4\\sqrt{2}$ s.\n\nIndependent check: In the last 4 s, the average speed is 2a, so 40 = 8a and a = 5 m/s². From 80 = ½aT², T = 4√2 s.",
+ "solution": "For the last $4$ s, the car comes to rest, so $40=\\frac12 a(4)^2$, giving $a=5\\,\\text{m s}^{-2}$$.\\nFor$ the full stopping distance, $80=\\frac12 aT^2$, hence $T=\\sqrt{\\frac{160}{5}}=4\\sqrt2\\,\\text{s}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A car decelerates uniformly to rest after travelling $80$ m. If it covers the last $40$ m in $4$ s, what is its total stopping time?",
+  "options": [
+   "$4$ s",
+   "$4\\sqrt{2}$ s",
+   "$8$ s",
+   "$8\\sqrt{2}$ s"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For the last $40$ m, ending at rest: $40=\\dfrac{1}{2}a(4)^2\\Rightarrow a=5$ m s$^{-2}$.\\nFor the full journey, $80=\\dfrac{1}{2}aT^2$.\\n$T=\\sqrt{\\dfrac{160}{5}}=4\\sqrt{2}$ s.",
+  "distractor_notes": "A: Uses the final-segment time as the total time. C: Omits the factor of $\\sqrt{2}$ when relating the times. D: Doubles the correct total time."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "General term",
+  "archetype": "general term",
+  "brief": "Use the general term of (a + bx)ⁿ to find the coefficient of a specific power of x, or the term independent of x.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:115",
+   "2026s2:103",
+   "2021:114"
+  ]
+ },
+ "status": "ok",
+ "stem": "The coefficient of $x^3$ in the expansion of $(1+2x)^6$ is",
+ "options": [
+  "$40$",
+  "$160$",
+  "$120$",
+  "$80$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The coefficient of x^3 is \\(\\binom{6}{3}2^3=20\\cdot8=160\\).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T_{r+1}=\\binom{6}{r}(2x)^r$. For $x^3$, $r=3$: coefficient $=\\binom{6}{3}2^3=160$.\n\nIndependent check: The coefficient of x^3 is \\(\\binom{6}{3}2^3=20\\cdot8=160\\).",
+ "solution": "By the binomial theorem, the $x^3$ term corresponds to $r=3$:\n$$\\binom{6}{3}(2x)^3=160x^3.$$\nHence, the coefficient is $160$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The coefficient of $x^3$ in the expansion of $(1+2x)^6$ is",
+  "options": [
+   "$40$",
+   "$80$",
+   "$120$",
+   "$160$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$T_{r+1}=\\binom{6}{r}(2x)^r$. For $x^3$, $r=3$: coefficient $=\\binom{6}{3}2^3=160$.",
+  "distractor_notes": "A: uses $2$ instead of $2^3$. B: uses $2^2$ instead of $2^3$. C: uses $\\binom{6}{2}$ instead of $\\binom{6}{3}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

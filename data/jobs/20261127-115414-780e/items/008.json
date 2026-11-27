@@ -1,0 +1,68 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Calorimetry with phase change",
+  "archetype": "multi-step numeric",
+  "brief": "Ice at 0°C mixed with water at higher temperature; track latent heat plus sensible heat exchange to find final temperature or unmelted ice mass.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:11",
+   "2022:17",
+   "2024s1:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "40 g of ice at 0 deg C is mixed with 120 g of water at 20 deg C in an insulated container. Take specific heat of water = 1 cal g^-1 deg C^-1 and latent heat of fusion of ice = 80 cal g^-1. The mass of ice that remains when thermal equilibrium is reached is:",
+ "options": [
+  "10 g",
+  "0 g",
+  "30 g",
+  "40 g"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Water cools to 0°C, releasing 120 × 20 = 2400 cal. This melts 2400/80 = 30 g of ice, leaving 40 − 30 = 10 g.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Heat released by water cooling to 0 deg C = 120 * 1 * 20 = 2400 cal. Heat required to melt all 40 g ice = 40 * 80 = 3200 cal. Since 2400 cal < 3200 cal, final temperature is 0 deg C and some ice remains. Mass of ice melted = 2400 / 80 = 30 g. Mass remaining = 40 - 30 = 10 g. Thus option B.\n\nIndependent check: Water cools to 0°C, releasing 120 × 20 = 2400 cal. This melts 2400/80 = 30 g of ice, leaving 40 − 30 = 10 g.",
+ "solution": "Heat released by water cooling to $0^\\circ\\mathrm C$ is $Q=120(1)(20)=2400\\,\\mathrm{cal}$, less than the $3200\\,\\mathrm{cal}$ needed to melt all the ice.\n$$m_{\\text{melted}}=\\frac{2400}{80}=30\\,\\mathrm g,\\qquad m_{\\text{remaining}}=40-30=10\\,\\mathrm g$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "40 g of ice at 0 deg C is mixed with 120 g of water at 20 deg C in an insulated container. Take specific heat of water = 1 cal g^-1 deg C^-1 and latent heat of fusion of ice = 80 cal g^-1. The mass of ice that remains when thermal equilibrium is reached is:",
+  "options": [
+   "0 g",
+   "10 g",
+   "30 g",
+   "40 g"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Heat released by water cooling to 0 deg C = 120 * 1 * 20 = 2400 cal. Heat required to melt all 40 g ice = 40 * 80 = 3200 cal. Since 2400 cal < 3200 cal, final temperature is 0 deg C and some ice remains. Mass of ice melted = 2400 / 80 = 30 g. Mass remaining = 40 - 30 = 10 g. Thus option B.",
+  "distractor_notes": "A: assumes the water supplies enough heat to melt all the ice. C: gives the mass of ice melted rather than the mass remaining. D: assumes no ice melts; only the water cools to 0 deg C."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

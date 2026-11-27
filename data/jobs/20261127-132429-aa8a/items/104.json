@@ -1,0 +1,68 @@
+{
+ "qno": 104,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 104,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus with conjugates",
+  "archetype": "algebraic simplification",
+  "brief": "Use z·z̄ = |z|² to simplify an expression involving conjugates and quotients into a real or simple form.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:100",
+   "2026s2:95",
+   "2021:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $z+\\bar z=4$ and $z\\bar z=5$, find $\\dfrac{z^2+\\bar z^2}{z\\bar z}$.",
+ "options": [
+  "$\\dfrac{16}{5}$",
+  "$\\dfrac{2}{5}$",
+  "$\\dfrac{6}{5}$",
+  "$\\dfrac{5}{6}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use (z+bar z)^2 - 2z bar z = z^2 + bar z^2, giving 16 - 10 = 6. Divide by z bar z = 5 to get 6/5.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$z^2+\\bar z^2=(z+\\bar z)^2-2z\\bar z=16-10=6$\n$\\therefore\\ \\dfrac{z^2+\\bar z^2}{z\\bar z}=\\dfrac65$.\n\nIndependent check: Use (z+bar z)^2 - 2z bar z = z^2 + bar z^2, giving 16 - 10 = 6. Divide by z bar z = 5 to get 6/5.",
+ "solution": "$z^2+\\bar z^2=(z+\\bar z)^2-2z\\bar z=4^2-2(5)=6$.\\\\\nHence, $\\displaystyle \\frac{z^2+\\bar z^2}{z\\bar z}=\\frac{6}{5}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $z+\\bar z=4$ and $z\\bar z=5$, find $\\dfrac{z^2+\\bar z^2}{z\\bar z}$.",
+  "options": [
+   "$\\dfrac{16}{5}$",
+   "$\\dfrac{6}{5}$",
+   "$\\dfrac{2}{5}$",
+   "$\\dfrac{5}{6}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$z^2+\\bar z^2=(z+\\bar z)^2-2z\\bar z=16-10=6$\n$\\therefore\\ \\dfrac{z^2+\\bar z^2}{z\\bar z}=\\dfrac65$.",
+  "distractor_notes": "A: Uses $(z+\\bar z)^2$ without subtracting $2z\\bar z$.\nC: Subtracts $2z\\bar z$ but omits the squared sum.\nD: Takes the reciprocal of the required ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

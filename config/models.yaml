@@ -1,0 +1,150 @@
+# OpenRouter model configuration per agent stage.
+# Model IDs/prices checked against https://openrouter.ai/api/v1/models on 2026-11-26.
+# Prices are USD per 1M tokens (input / output). Re-check before large runs.
+#
+# Solver test (evals/solver_bakeoff.py, 2026s1, 98 P/C/M Qs blind vs PDF key, 2026-11-26):
+#   gemini-3.8-flash 96/98 ($0.44) | qwen4-max 96/98 ($0.24) | glm-5.3 86/93 text-only ($0.17)
+#   deepseek-v4-pro 84/93 text-only, 24 JSON-format failures ($1.60) -> not used as a solver
+#
+# Rule: the Solver/Verifier must be a different model family from the Author,
+# so the two don't share blind spots. The Critic should differ from the Author too.
+#
+# Per-stage keys map onto the OpenRouter chat-completions request:
+#   model, models (fallback list), reasoning.effort, max_tokens,
+#   response_format (json_schema when `schema` is set), tools (when `tools` is set).
+
+provider: openrouter
+base_url: https://openrouter.ai/api/v1
+api_key_env: OPENROUTER_API_KEY
+active_profile: balanced
+
+profiles:
+
+  # 2026-11-27 (v4): GPT-6 Luna Pro writes P/C/M, GPT-6 Luna writes English/LR,
+  # Luna Pro solves P/C/M, Luna solves English/LR (same family as authors, by decision 2026-11-27),
+  # Qwen4 Max tiebreaker, GLM figure check.
+  # (v3 had DeepSeek authors; dropped after option_smiles junk caused ~85 redrafts/paper.)
+  # Gemini-author run measured ~$5.50 per ~107 questions (~$7/paper). v3 estimate $2.50-4, not yet measured.
+  # Luna Pro is NOT in the solver bake-off yet -- run evals/solver_bakeoff.py before relying on it.
+  balanced:
+    planner:            # 1 call per paper: blueprint of 130 slots (structured JSON)
+      model: z-ai/glm-5.3                        # $0.07 / $1.40
+      fallbacks: [qwen/qwen4-max]
+      reasoning: medium
+      max_tokens: 32000
+      schema: Blueprint
+
+    author_pcm:         # Physics / Chemistry / Maths question writing (quality-critical)
+      model: openai/gpt-6-luna-pro               # $0.10 / $0.50 (was deepseek-v4-pro: filled option_smiles junk -> redrafts)
+      fallbacks: [google/gemini-3.8-flash]
+      reasoning: high
+      reasoning_easy: medium                     # used when the slot (or whole batch) is difficulty <= 2
+      max_tokens: 16000                          # single question; a cut-off reply is salvaged or retried once
+      batch_max_tokens: 40000                    # one call writing up to `batch_size` questions
+      schema: DraftQuestion
+      cache_prefix: true                         # style guide + exemplars per section
+
+    author_verbal:      # English Proficiency + verbal Logical Reasoning
+      model: openai/gpt-6-luna                   # $0.10 / $0.50
+      fallbacks: [google/gemini-3.8-flash]
+      reasoning: medium
+      reasoning_easy: low
+      max_tokens: 8000
+      batch_max_tokens: 20000
+      schema: DraftQuestion
+
+    author_lr_figure:   # non-verbal LR: picks generator + params (generator computes the answer)
+      model: openai/gpt-6-luna                   # $0.10 / $0.50; generator computes the answer
+      fallbacks: [deepseek/deepseek-v4.1-flash]
+      reasoning: low
+      max_tokens: 4000
+      schema: LRSpec
+
+    solver:             # P/C/M: solves blind (no key); gets a local python/sympy tool for numerics
+      model: openai/gpt-6-luna-pro               # $0.10 / $0.50, image input; same family as author (user's call)
+      fallbacks: [qwen/qwen4-max]
+      reasoning: high
+      max_tokens: 24000
+      tools: [python_exec]
+      schema: SolverVerdict
+
+
+    solver_verbal:      # English / Logical Reasoning solver (authors are Luna/OpenAI, so a different family)
+      model: openai/gpt-6-luna                   # $0.10 / $0.50, image input; same family as author (user's call)
+      fallbacks: [qwen/qwen4-max]
+      reasoning: medium
+      max_tokens: 16000
+      tools: [python_exec]
+      schema: SolverVerdict
+
+    tiebreaker:         # only when solver and author disagree after 1 retry (~5–10% of items)
+      model: qwen/qwen4-max                      # $1.42 / $4.27, third family (author OpenAI, solver GLM)
+      fallbacks: [anthropic/claude-sonnet-5.5]
+      reasoning: high
+      max_tokens: 24000
+      tools: [python_exec]
+      schema: SolverVerdict
+
+    figure_coder:       # writes matplotlib / schemdraw / RDKit / TikZ code from a FigureSpec
+      model: anthropic/claude-sonnet-5.5
+      fallbacks: [z-ai/glm-5.3]
+      reasoning: medium
+      max_tokens: 8000
+
+    figure_checker:     # vision: rendered PNG + question text -> matches? leaks answer?
+      model: z-ai/glm-5.3-flash                  # $0.15 / $0.50, image input (plain glm-5.3 is text-only)
+      fallbacks: [qwen/qwen3.8-omni-flash]
+      reasoning: low
+      max_tokens: 2000
+      schema: FigureVerdict
+
+    solution_writer:    # eSaral-style worked solution from the verified working (separate from figure_coder)
+      model: openai/gpt-6-luna                   # $0.10 / $0.50; rewrites already-verified working
+      fallbacks: [anthropic/claude-sonnet-5.5]
+      reasoning: low
+      max_tokens: 6000
+
+    critic:             # whole-paper review: difficulty calibration, ambiguity, language QA
+      model: qwen/qwen4-max                      # $1.42 / $4.27
+      fallbacks: [z-ai/glm-5.3]
+      reasoning: high
+      max_tokens: 32000
+      schema: CriticReport
+
+    transcriber:        # uploaded past papers: page-column image -> questions (ingest/transcribe.py)
+      model: google/gemini-3.8-flash             # vision; ~$0.30-1 per paper
+      fallbacks: [qwen/qwen3.8-omni-flash]
+      reasoning: low
+      max_tokens: 16000
+      schema: TranscriptionBatch
+
+    utility:            # cheap per-item jobs: format lint, LaTeX repair, tagging, dedupe triage
+      model: anthropic/claude-haiku-5.5          # $0.10 / $0.50
+      fallbacks: [deepseek/deepseek-v4.1-flash-1017]
+      reasoning: low
+      max_tokens: 4000
+
+  # Higher accuracy for papers that ship to students; ~ $25–35 per paper (estimate)
+  quality:
+    inherit: balanced
+    overrides:
+      author_verbal: {model: anthropic/claude-opus-5.5}
+      solver:        {model: qwen/qwen4-max, reasoning: high}
+      tiebreaker:    {model: z-ai/glm-5.3}
+      critic:        {model: anthropic/claude-sonnet-5.5}
+
+  # Drafts / pipeline testing; ~ $3–6 per paper (estimate). Expect more solver rejections.
+  budget:
+    inherit: balanced
+    overrides:
+      planner:         {model: deepseek/deepseek-v4.1-flash-1017}
+      author_pcm:      {model: deepseek/deepseek-v4-pro-0813, fallbacks: [qwen/qwen4-max]}
+      author_verbal:   {model: qwen/qwen4-max}
+      author_lr_figure: {model: deepseek/deepseek-v4.1-flash-1017}
+      solver:          {model: google/gemini-3.8-flash, reasoning: medium}
+      tiebreaker:      {model: z-ai/glm-5.3}
+      figure_coder:    {model: deepseek/deepseek-v4.1-flash-1017}
+      figure_checker:  {model: qwen/qwen3.8-omni-flash}
+      solution_writer: {model: deepseek/deepseek-v4.1-flash-1017}
+      critic:          {model: qwen/qwen4-max}
+      utility:         {model: deepseek/deepseek-v4.1-flash-1017}

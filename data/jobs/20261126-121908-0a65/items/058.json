@@ -1,0 +1,67 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Leaving group ability",
+  "archetype": "ordering",
+  "brief": "Order given alkyl halides by SN2 reactivity / leaving group ability and identify correct sequence.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:40",
+   "2026s2:42",
+   "2026s2:35"
+  ]
+ },
+ "status": "ok",
+ "stem": "The correct decreasing order of reactivity of alkyl halides towards an $\\text{S}_\\text{N}2$ reaction for a given alkyl group $R$ is:",
+ "options": [
+  "$R\\text{F} > R\\text{Cl} > R\\text{Br} > R\\text{I}$",
+  "$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$",
+  "$R\\text{Br} > R\\text{Cl} > R\\text{I} > R\\text{F}$",
+  "$R\\text{I} > R\\text{Cl} > R\\text{Br} > R\\text{F}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "SN2 rate depends on leaving-group ability, which follows C–X bond strength: C–I (213) < C–Br (285) < C–Cl (327) < C–F (485 kJ/mol). Weakest bond / best leaving group reacts fastest, so RI > RBr > RCl > RF.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In an $\\text{S}_\\text{N}2$ reaction, the rate depends critically on the ability of the halide ion to depart (leaving group ability) as well as the carbon–halogen ($\\text{C}-\\text{X}$) bond strength.\\n\\n1. Leaving group ability is inversely related to basicity. Since the conjugate acid strength is $\\text{HI} > \\text{HBr} > \\text{HCl} > \\text{HF}$, the halide basicity order is $\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^-$. The weaker the base, the better it serves as a leaving group. Hence, leaving group ability follows $\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$.\\n\\n2. The $\\text{C}-\\text{X}$ bond dissociation enthalpy decreases in the order: $\\text{C}-\\text{F} > \\text{C}-\\text{Cl} > \\text{C}-\\text{Br} > \\text{C}-\\text{I}$. Thus, the $\\text{C}-\\text{I}$ bond is the weakest and easiest to break.\\n\\nBoth factors make the reactivity order for a given alkyl group:\\n$$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$$\n\nIndependent check: SN2 rate depends on leaving-group ability, which follows C–X bond strength: C–I (213) < C–Br (285) < C–Cl (327) < C–F (485 kJ/mol). Weakest bond / best leaving group reacts fastest, so RI > RBr > RCl > RF.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The correct decreasing order of reactivity of alkyl halides towards an $\\text{S}_\\text{N}2$ reaction for a given alkyl group $R$ is:",
+  "options": [
+   "$R\\text{F} > R\\text{Cl} > R\\text{Br} > R\\text{I}$",
+   "$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$",
+   "$R\\text{Br} > R\\text{Cl} > R\\text{I} > R\\text{F}$",
+   "$R\\text{I} > R\\text{Cl} > R\\text{Br} > R\\text{F}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "In an $\\text{S}_\\text{N}2$ reaction, the rate depends critically on the ability of the halide ion to depart (leaving group ability) as well as the carbon–halogen ($\\text{C}-\\text{X}$) bond strength.\\n\\n1. Leaving group ability is inversely related to basicity. Since the conjugate acid strength is $\\text{HI} > \\text{HBr} > \\text{HCl} > \\text{HF}$, the halide basicity order is $\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^-$. The weaker the base, the better it serves as a leaving group. Hence, leaving group ability follows $\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$.\\n\\n2. The $\\text{C}-\\text{X}$ bond dissociation enthalpy decreases in the order: $\\text{C}-\\text{F} > \\text{C}-\\text{Cl} > \\text{C}-\\text{Br} > \\text{C}-\\text{I}$. Thus, the $\\text{C}-\\text{I}$ bond is the weakest and easiest to break.\\n\\nBoth factors make the reactivity order for a given alkyl group:\\n$$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$$",
+  "distractor_notes": "Option A reverses the sequence by mistakenly assuming reactivity follows electronegativity or bond polarity of the C-X bond.\nOption C incorrectly ranks bromide higher than iodide.\nOption D incorrectly transposes chloride and bromide, violating the periodic trend in leaving group ability.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

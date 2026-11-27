@@ -1,0 +1,68 @@
+{
+ "qno": 64,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 64,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "A short sentence split into parts (A/B/C/D) with a clear subject-verb agreement error; students identify the erroneous part.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:91",
+   "2022:67",
+   "2023s2:67"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the following sentence, identify the part that contains a grammatical error.\n\nNeither of the two candidates **(1)** / were present **(2)** / at the interview **(3)** / yesterday. **(4)**",
+ "options": [
+  "Part 1",
+  "Part 2",
+  "Part 3",
+  "Part 4"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Neither” is singular here, so the verb should be “was,” not “were.” The error is in Part 2.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Subject is 'Neither', which is always singular; the phrase 'of the two candidates' is only a prepositional modifier and cannot make it plural. Hence the verb must be singular: 'was present'. Part 2 wrongly uses 'were present' → error in Part 2 (B). Parts 1, 3 and 4 are error-free, so A, C and D are wrong.\n\nIndependent check: “Neither” is singular here, so the verb should be “was,” not “were.” The error is in Part 2.",
+ "solution": "“Neither” is singular, and “of the two candidates” does not change the subject’s number. The verb should be “was present,” not “were present”; hence the error is in Part 2.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In the following sentence, identify the part that contains a grammatical error.\n\nNeither of the two candidates **(1)** / were present **(2)** / at the interview **(3)** / yesterday. **(4)**",
+  "options": [
+   "Part 1",
+   "Part 2",
+   "Part 3",
+   "Part 4"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Subject is 'Neither', which is always singular; the phrase 'of the two candidates' is only a prepositional modifier and cannot make it plural. Hence the verb must be singular: 'was present'. Part 2 wrongly uses 'were present' → error in Part 2 (B). Parts 1, 3 and 4 are error-free, so A, C and D are wrong.",
+  "distractor_notes": "A: 'Neither of the two candidates' is a correct singular subject. C: 'at the interview' is a correct prepositional phrase. D: 'yesterday' correctly marks past time for the past-tense verb."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

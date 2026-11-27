@@ -1,0 +1,76 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Redox Reactions",
+  "subtopic": "Oxidation numbers",
+  "archetype": "compute and compare",
+  "brief": "Given a compound formula, ask the student to compute the oxidation state of a specific element in it and then compare it with a second compound — a figure showing the structural formula of both compounds for reference.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:54",
+   "2022:42",
+   "2021:49"
+  ]
+ },
+ "status": "ok",
+ "stem": "The structures of H2SO3 and H2S2O8 are labelled I and II in the figure. The O-O linkage in II is a peroxide linkage. The oxidation number of sulfur in II exceeds that in I by:",
+ "options": [
+  "1",
+  "2",
+  "3",
+  "4"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q041_stem_v0.png",
+  "width_pct": 45,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In I, S + 2(+1) + 3(−2) = 0, so S = +4. In II, the two peroxide O atoms are −1 and the other six O atoms are −2: 2S + 2(+1) + 2(−1) + 6(−2) = 0, so S = +6. Difference = 2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For H2SO3: 2(+1) + x + 3(-2) = 0, so x = +4. For H2S2O8: 2(+1) + 2x + 6(-2) + 2(-1) = 0, so 2 + 2x - 12 - 2 = 0 and x = +6. Difference = 6 - 4 = 2.\n\nIndependent check: In I, S + 2(+1) + 3(−2) = 0, so S = +4. In II, the two peroxide O atoms are −1 and the other six O atoms are −2: 2S + 2(+1) + 2(−1) + 6(−2) = 0, so S = +6. Difference = 2.",
+ "solution": "In $\\mathrm{H_2SO_3}$, $2(+1)+x+3(-2)=0$, giving $x=+4$. In $\\mathrm{H_2S_2O_8}$, the peroxide oxygens are $-1$ and the other oxygens are $-2$:\n$$2(+1)+2x+2(-1)+6(-2)=0 \\quad\\Rightarrow\\quad x=+6.$$\nHence, the increase in sulfur’s oxidation number is $6-4=2$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The structures of H2SO3 and H2S2O8 are labelled I and II in the figure. The O-O linkage in II is a peroxide linkage. The oxidation number of sulfur in II exceeds that in I by:",
+  "options": [
+   "1",
+   "2",
+   "3",
+   "4"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw two separate structural formulae side by side, labelled I and II. I is sulfurous acid H2SO3: a sulfur atom double-bonded to one oxygen atom and single-bonded to two OH groups. II is peroxodisulfuric acid H2S2O8: two sulfur atoms, each double-bonded to two oxygen atoms and single-bonded to one OH group; the two sulfur atoms are connected through an O-O single bond. Label the central O-O bond in structure II as a peroxide linkage.",
+   "smiles": "OS(=O)O.OS(=O)(=O)OOS(=O)(=O)O"
+  },
+  "difficulty_estimate": 4,
+  "working": "For H2SO3: 2(+1) + x + 3(-2) = 0, so x = +4. For H2S2O8: 2(+1) + 2x + 6(-2) + 2(-1) = 0, so 2 + 2x - 12 - 2 = 0 and x = +6. Difference = 6 - 4 = 2.",
+  "distractor_notes": "1 from missing one peroxide oxygen; 3 from treating all oxygen atoms as -2 in H2S2O8; 4 from comparing an incorrect +8 state for sulfur in H2S2O8 with +4 in H2SO3."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

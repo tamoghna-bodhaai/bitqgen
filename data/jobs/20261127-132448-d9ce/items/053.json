@@ -1,0 +1,68 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "States of Matter",
+  "subtopic": "Graham's law of effusion",
+  "archetype": "ratio equation",
+  "brief": "Two gases effuse through the same pinhole in the same time; set up the Graham's law ratio and find the unknown molar mass.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:48",
+   "2024s2:59",
+   "2025s2:39"
+  ]
+ },
+ "status": "ok",
+ "stem": "Under the same conditions, gases $X$ and $Y$ effuse through the same pinhole in equal times in volume ratio $3:2$. If $M_Y = 36$ g mol$^{-1}$, find $M_X$.",
+ "options": [
+  "$12$ g mol$^{-1}$",
+  "$16$ g mol$^{-1}$",
+  "$24$ g mol$^{-1}$",
+  "$81$ g mol$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Graham’s law, V_X/V_Y=√(M_Y/M_X). Thus 3/2=√(36/M_X), giving M_X=16 g mol⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\dfrac{r_X}{r_Y}=\\dfrac{3}{2}=\\sqrt{\\dfrac{M_Y}{M_X}}$ \n$M_X=36\\left(\\dfrac{2}{3}\\right)^2=16\\ \\text{g mol}^{-1}$\n\nIndependent check: By Graham’s law, V_X/V_Y=√(M_Y/M_X). Thus 3/2=√(36/M_X), giving M_X=16 g mol⁻¹.",
+ "solution": "By Graham’s law, the volume ratio in equal times is $\\dfrac{V_X}{V_Y}=\\sqrt{\\dfrac{M_Y}{M_X}}$.\\\\\n$$\\dfrac{3}{2}=\\sqrt{\\dfrac{36}{M_X}}\\quad\\Rightarrow\\quad M_X=36\\left(\\dfrac{2}{3}\\right)^2=16\\ \\text{g mol}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Under the same conditions, gases $X$ and $Y$ effuse through the same pinhole in equal times in volume ratio $3:2$. If $M_Y = 36$ g mol$^{-1}$, find $M_X$.",
+  "options": [
+   "$12$ g mol$^{-1}$",
+   "$16$ g mol$^{-1}$",
+   "$24$ g mol$^{-1}$",
+   "$81$ g mol$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{r_X}{r_Y}=\\dfrac{3}{2}=\\sqrt{\\dfrac{M_Y}{M_X}}$ \n$M_X=36\\left(\\dfrac{2}{3}\\right)^2=16\\ \\text{g mol}^{-1}$",
+  "distractor_notes": "A: incorrect proportionality between rate and molar mass; C: fails to square the rate ratio; D: uses the reciprocal rate ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Symmetric functions of roots",
+  "archetype": "use root equation",
+  "brief": "given a quadratic with roots α, β, evaluate a non-trivial symmetric expression (e.g. α³+β³ or α²β+αβ² type) using Vieta's relations without solving",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:111",
+   "2021:146",
+   "2024s2:105"
+  ]
+ },
+ "status": "ok",
+ "stem": "If alpha and beta are the roots of x^2 - 3x + 1 = 0, then (alpha^3)/beta + (beta^3)/alpha equals",
+ "options": [
+  "45",
+  "47",
+  "49",
+  "51"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since αβ = 1, the expression is α⁴ + β⁴. Using α + β = 3 and αβ = 1: α² + β² = 7, so α⁴ + β⁴ = 7² − 2 = 47.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "From Vieta, alpha + beta = 3 and alpha beta = 1. The given expression is (alpha^4 + beta^4)/(alpha beta). First alpha^2 + beta^2 = (alpha+beta)^2 - 2 alpha beta = 9 - 2 = 7. Then alpha^4 + beta^4 = (alpha^2 + beta^2)^2 - 2 (alpha beta)^2 = 49 - 2 = 47. Since alpha beta = 1, the value is 47.\n\nIndependent check: Since αβ = 1, the expression is α⁴ + β⁴. Using α + β = 3 and αβ = 1: α² + β² = 7, so α⁴ + β⁴ = 7² − 2 = 47.",
+ "solution": "By Vieta’s formulas, $\\alpha+\\beta=3$ and $\\alpha\\beta=1$. Thus\n$$\\frac{\\alpha^3}{\\beta}+\\frac{\\beta^3}{\\alpha}=\\frac{\\alpha^4+\\beta^4}{\\alpha\\beta}=\\alpha^4+\\beta^4.$$\nNow $\\alpha^2+\\beta^2=3^2-2(1)=7$, so $\\alpha^4+\\beta^4=7^2-2(1)^2=47$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "If alpha and beta are the roots of x^2 - 3x + 1 = 0, then (alpha^3)/beta + (beta^3)/alpha equals",
+  "options": [
+   "47",
+   "45",
+   "49",
+   "51"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "From Vieta, alpha + beta = 3 and alpha beta = 1. The given expression is (alpha^4 + beta^4)/(alpha beta). First alpha^2 + beta^2 = (alpha+beta)^2 - 2 alpha beta = 9 - 2 = 7. Then alpha^4 + beta^4 = (alpha^2 + beta^2)^2 - 2 (alpha beta)^2 = 49 - 2 = 47. Since alpha beta = 1, the value is 47.",
+  "distractor_notes": "B: subtracted 4 instead of 2 in the last step; C: forgot to subtract 2(alpha beta)^2 from 49; D: added 2(alpha beta)^2 instead of subtracting."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

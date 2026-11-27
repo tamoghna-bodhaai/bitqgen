@@ -1,0 +1,75 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Aromaticity (Hückel's rule)",
+  "archetype": "multi-select via codes",
+  "brief": "Draw four cyclic species in the figure (e.g. cyclopentadienyl anion, tropylium cation, cyclooctatetraene) and ask which are aromatic, with answer as a code of correct options.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:54",
+   "2026s1:53",
+   "2026s1:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "Among the cyclic species (I)–(IV) shown in the figure, which are aromatic according to Hückel's rule?",
+ "options": [
+  "(I) and (II) only",
+  "(I), (II), and (III)",
+  "(II) and (IV) only",
+  "(I) and (III) only"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q060_stem_v0.png",
+  "width_pct": 80,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "I: cyclopentadienyl anion, 6 π e⁻ (4n+2, n=1), planar → aromatic. II: tropylium cation, 6 π e⁻ → aromatic. III: cyclooctatetraene, 8 π e⁻ (4n), non-planar tub → not aromatic. IV: cyclobutadiene, 4 π e⁻ → antiaromatic. Only I and II are aromatic.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "According to Hückel's rule, a monocyclic, planar, completely conjugated system is aromatic if it contains $(4n + 2)\\ \\pi$ electrons, where $n$ is a non-negative integer ($n = 0, 1, 2, \\dots$).\n\n1. **Species (I) — Cyclopentadienyl anion ($[\\text{C}_5\\text{H}_5]^-$):**\n   - Cyclic, planar, and fully conjugated (all 5 ring carbons are $\\text{sp}^2$ hybridized).\n   - Total $\\pi$ electrons = $2 \\times 2$ (from two double bonds) $+ 2$ (from the lone pair on the anionic carbon) = $6\\ \\pi$ electrons.\n   - $4n + 2 = 6 \\implies n = 1$. Thus, it is **aromatic**.\n\n2. **Species (II) — Tropylium cation ($[\\text{C}_7\\text{H}_7]^+$):**\n   - Cyclic, planar, and fully conjugated (all 7 ring carbons are $\\text{sp}^2$ hybridized, with the carbocation providing an empty p-orbital).\n   - Total $\\pi$ electrons = $3 \\times 2 = 6\\ \\pi$ electrons.\n   - $4n + 2 = 6 \\implies n = 1$. Thus, it is **aromatic**.\n\n3. **Species (III) — Cyclooctatetraene (COT, $\\text{C}_8\\text{H}_8$):**\n   - Possesses $8\\ \\pi$ electrons ($4n$, where $n = 2$).\n   - To avoid antiaromatic instability, it adopts a non-planar tub-shaped conformation and is **non-aromatic**.\n\n4. **Species (IV) — Cyclobutadiene ($\\text{C}_4\\text{H}_4$):**\n   - Cyclic, planar, fully conjugated with $4\\ \\pi$ electrons ($4n$, where $n = 1$).\n   - It is **antiaromatic**.\n\nTherefore, only (I) and (II) are aromatic.\n\nIndependent check: I: cyclopentadienyl anion, 6 π e⁻ (4n+2, n=1), planar → aromatic. II: tropylium cation, 6 π e⁻ → aromatic. III: cyclooctatetraene, 8 π e⁻ (4n), non-planar tub → not aromatic. IV: cyclobutadiene, 4 π e⁻ → antiaromatic. Only I and II are aromatic.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Among the cyclic species (I)–(IV) shown in the figure, which are aromatic according to Hückel's rule?",
+  "options": [
+   "(I) and (II) only",
+   "(I), (II), and (III)",
+   "(II) and (IV) only",
+   "(I) and (III) only"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "According to Hückel's rule, a monocyclic, planar, completely conjugated system is aromatic if it contains $(4n + 2)\\ \\pi$ electrons, where $n$ is a non-negative integer ($n = 0, 1, 2, \\dots$).\n\n1. **Species (I) — Cyclopentadienyl anion ($[\\text{C}_5\\text{H}_5]^-$):**\n   - Cyclic, planar, and fully conjugated (all 5 ring carbons are $\\text{sp}^2$ hybridized).\n   - Total $\\pi$ electrons = $2 \\times 2$ (from two double bonds) $+ 2$ (from the lone pair on the anionic carbon) = $6\\ \\pi$ electrons.\n   - $4n + 2 = 6 \\implies n = 1$. Thus, it is **aromatic**.\n\n2. **Species (II) — Tropylium cation ($[\\text{C}_7\\text{H}_7]^+$):**\n   - Cyclic, planar, and fully conjugated (all 7 ring carbons are $\\text{sp}^2$ hybridized, with the carbocation providing an empty p-orbital).\n   - Total $\\pi$ electrons = $3 \\times 2 = 6\\ \\pi$ electrons.\n   - $4n + 2 = 6 \\implies n = 1$. Thus, it is **aromatic**.\n\n3. **Species (III) — Cyclooctatetraene (COT, $\\text{C}_8\\text{H}_8$):**\n   - Possesses $8\\ \\pi$ electrons ($4n$, where $n = 2$).\n   - To avoid antiaromatic instability, it adopts a non-planar tub-shaped conformation and is **non-aromatic**.\n\n4. **Species (IV) — Cyclobutadiene ($\\text{C}_4\\text{H}_4$):**\n   - Cyclic, planar, fully conjugated with $4\\ \\pi$ electrons ($4n$, where $n = 1$).\n   - It is **antiaromatic**.\n\nTherefore, only (I) and (II) are aromatic.",
+  "distractor_notes": "Option B encodes the mistake of counting cyclooctatetraene (III) as aromatic by confusing conjugated polyenes with aromatic systems or ignoring the tub conformation.\nOption C encodes missing the cyclopentadienyl anion (I) due to miscounting the anionic lone pair, and wrongly including cyclobutadiene (IV).\nOption D encodes wrongly classifying cyclooctatetraene (III) as aromatic while missing the tropylium cation (II).",
+  "figure": {
+   "kind": "chem",
+   "description": "Four cyclic chemical structures labeled (I), (II), (III), and (IV) arranged horizontally from left to right:\n- (I): A regular five-membered ring (cyclopentadienyl) with two alternating double bonds and a negative formal charge inside the ring.\n- (II): A regular seven-membered ring (tropylium) with three alternating double bonds and a positive formal charge inside the ring.\n- (III): An eight-membered ring (cyclooctatetraene) shown as an octagon with four alternating double bonds.\n- (IV): A four-membered square ring (cyclobutadiene) with two opposite double bonds.",
+   "smiles": "[c-]1cccc1.[cH+]1cccccc1.C1=CC=CC=CC=C1.C1=CC=C1"
+  },
+  "difficulty_estimate": 1
+ }
+}

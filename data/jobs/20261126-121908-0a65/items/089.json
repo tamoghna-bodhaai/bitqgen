@@ -1,0 +1,67 @@
+{
+ "qno": 89,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 89,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Tense consistency",
+  "archetype": "spot the error (no error)",
+  "brief": "Sentence mixing past narrative with an incorrectly shifted tense in one part; include 'no error' as a valid option, but make one clause tense-inconsistent so it is the answer.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:63",
+   "2026s2:68",
+   "2025s1:62"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the part of the sentence that contains an error. If there is no error, choose 'No error'.\n\nThe manager reviewed the quarterly report, identified several financial discrepancies, and brings them to the director's notice.",
+ "options": [
+  "The manager reviewed the quarterly report,",
+  "identified several financial discrepancies,",
+  "and brings them to the director's notice.",
+  "No error"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "The sentence lists three parallel actions in past tense: 'reviewed', 'identified', and should be 'brought', but part (C) uses present tense 'brings', breaking parallelism/tense consistency. Error is in part C.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The sentence establishes a past narrative through the parallel past-tense verbs 'reviewed' and 'identified'. In a compound predicate where actions occur in the same past timeframe, tense consistency must be maintained. Therefore, the third coordinated verb 'brings' (present tense) is incorrect and should be in the simple past tense, 'brought'. Hence, part (C) contains the grammatical error.\n\nIndependent check: The sentence lists three parallel actions in past tense: 'reviewed', 'identified', and should be 'brought', but part (C) uses present tense 'brings', breaking parallelism/tense consistency. Error is in part C.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the part of the sentence that contains an error. If there is no error, choose 'No error'.\n\nThe manager reviewed the quarterly report, identified several financial discrepancies, and brings them to the director's notice.",
+  "options": [
+   "The manager reviewed the quarterly report,",
+   "identified several financial discrepancies,",
+   "and brings them to the director's notice.",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The sentence establishes a past narrative through the parallel past-tense verbs 'reviewed' and 'identified'. In a compound predicate where actions occur in the same past timeframe, tense consistency must be maintained. Therefore, the third coordinated verb 'brings' (present tense) is incorrect and should be in the simple past tense, 'brought'. Hence, part (C) contains the grammatical error.",
+  "distractor_notes": "Option A is correct in grammar and establishes the past-tense framework of the narrative.\nOption B maintains tense consistency with 'identified' and correctly uses the adverb 'several'.\nOption D is incorrect because the sentence violates parallel tense consistency across coordinated verbs.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "sum-to-product",
+  "brief": "Solve a trigonometric equation of the form a cos x + b sin x = c or a sum-to-product type and write the general solution.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:107",
+   "2026s2:93",
+   "2026s1:92"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution, for real $x$, of $\\cos 3x+\\cos x=\\sin 2x$ is:",
+ "options": [
+  "$x=\\dfrac{\\pi}{2}+k\\pi$, or $x=\\dfrac{\\pi}{6}+2k\\pi$, or $x=\\dfrac{5\\pi}{6}+2k\\pi$, where $k\\in\\mathbb Z$",
+  "$x=\\dfrac{\\pi}{2}+k\\pi$, or $x=\\dfrac{\\pi}{6}+2k\\pi$, where $k\\in\\mathbb Z$",
+  "$x=\\dfrac{\\pi}{2}+2k\\pi$, or $x=\\dfrac{\\pi}{6}+2k\\pi$, or $x=\\dfrac{5\\pi}{6}+2k\\pi$, where $k\\in\\mathbb Z$",
+  "$x=\\dfrac{\\pi}{2}+k\\pi$, or $x=\\dfrac{\\pi}{6}+k\\pi$, or $x=\\dfrac{5\\pi}{6}+k\\pi$, where $k\\in\\mathbb Z$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use cos 3x + cos x = 2 cos 2x cos x. Then cos x(cos 2x − sin x) = 0. Thus cos x = 0, or with sin x = t, 1 − 2t² = t, giving t = 1/2 or −1. These yield exactly the solutions in (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\cos 3x+\\cos x=2\\cos 2x\\cos x$, so $2\\cos x(\\cos 2x-\\sin x)=0$.\\n$\\cos x=0\\Rightarrow x=\\dfrac{\\pi}{2}+k\\pi$.\\n$\\cos 2x=\\sin x\\Rightarrow 1-2\\sin^2x=\\sin x\\Rightarrow (2\\sin x-1)(\\sin x+1)=0$.\\n$\\sin x=\\dfrac12\\Rightarrow x=\\dfrac{\\pi}{6}+2k\\pi$ or $\\dfrac{5\\pi}{6}+2k\\pi$; $\\sin x=-1$ is already included.\n\nIndependent check: Use cos 3x + cos x = 2 cos 2x cos x. Then cos x(cos 2x − sin x) = 0. Thus cos x = 0, or with sin x = t, 1 − 2t² = t, giving t = 1/2 or −1. These yield exactly the solutions in (A).",
+ "solution": "Using $\\\\cos 3x+\\\\cos x=2\\\\cos 2x\\\\cos x$, the equation becomes\n$$2\\\\cos x(\\\\cos 2x-\\\\sin x)=0.$$\nThus $\\\\cos x=0$ gives $x=\\\\frac{\\\\pi}{2}+k\\\\pi$. Otherwise, $1-2\\\\sin^2x=\\\\sin x$, so $\\\\sin x=\\\\frac12$ or $-1$; these give $x=\\\\frac{\\\\pi}{6}+2k\\\\pi$, $\\\\frac{5\\\\pi}{6}+2k\\\\pi$, with $\\\\sin x=-1$ already included above.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The general solution, for real $x$, of $\\cos 3x+\\cos x=\\sin 2x$ is:",
+  "options": [
+   "$x=\\dfrac{\\pi}{2}+k\\pi$, or $x=\\dfrac{\\pi}{6}+2k\\pi$, or $x=\\dfrac{5\\pi}{6}+2k\\pi$, where $k\\in\\mathbb Z$",
+   "$x=\\dfrac{\\pi}{2}+k\\pi$, or $x=\\dfrac{\\pi}{6}+2k\\pi$, where $k\\in\\mathbb Z$",
+   "$x=\\dfrac{\\pi}{2}+2k\\pi$, or $x=\\dfrac{\\pi}{6}+2k\\pi$, or $x=\\dfrac{5\\pi}{6}+2k\\pi$, where $k\\in\\mathbb Z$",
+   "$x=\\dfrac{\\pi}{2}+k\\pi$, or $x=\\dfrac{\\pi}{6}+k\\pi$, or $x=\\dfrac{5\\pi}{6}+k\\pi$, where $k\\in\\mathbb Z$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\cos 3x+\\cos x=2\\cos 2x\\cos x$, so $2\\cos x(\\cos 2x-\\sin x)=0$.\\n$\\cos x=0\\Rightarrow x=\\dfrac{\\pi}{2}+k\\pi$.\\n$\\cos 2x=\\sin x\\Rightarrow 1-2\\sin^2x=\\sin x\\Rightarrow (2\\sin x-1)(\\sin x+1)=0$.\\n$\\sin x=\\dfrac12\\Rightarrow x=\\dfrac{\\pi}{6}+2k\\pi$ or $\\dfrac{5\\pi}{6}+2k\\pi$; $\\sin x=-1$ is already included.",
+  "distractor_notes": "B: omits the roots from $\\sin x=\\dfrac12$ in the second quadrant.\\nC: omits the $\\cos x=0$ roots with odd multiples of $\\dfrac{\\pi}{2}$.\\nD: gives period $\\pi$ to roots that have period $2\\pi$, adding extraneous solutions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

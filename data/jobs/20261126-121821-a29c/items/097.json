@@ -1,0 +1,70 @@
+{
+ "qno": 97,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 97,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Invertibility interval",
+  "archetype": "simplify then monotonic interval",
+  "brief": "For a quadratic or cubic restricted to an interval, decide the largest interval on which it is bijective/invertible using monotonicity.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:121",
+   "2025s1:128",
+   "2026s1:108"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $f(x)=\\dfrac{x^3-4x^2+x+6}{x-2}$ on $D=[-4,6]\\setminus\\{2\\}$, which is the longest interval in $D$ on which $f$ is one-to-one?",
+ "options": [
+  "$[-4,0]$",
+  "$[1,2)$",
+  "$[2,6]$",
+  "$[-4,1]$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor the numerator: f(x)=x^2-2x-3 for x≠2. This quadratic is strictly decreasing on [-4,1], giving an interval of length 5. The right-hand domain component has length 4, so [-4,1] is longest.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "Option (C), [2,6], includes x=2, which is excluded from the stated domain."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(x)=x^2-2x-3$ for $x\\ne2$; $f'(x)=2(x-1)$. Decreasing on $[-4,1]$ (length $5$); increasing on $[1,2)$ (length $1$) and $[2,6]$ (length $4$).\n\nIndependent check: Factor the numerator: f(x)=x^2-2x-3 for x≠2. This quadratic is strictly decreasing on [-4,1], giving an interval of length 5. The right-hand domain component has length 4, so [-4,1] is longest.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For $f(x)=\\dfrac{x^3-4x^2+x+6}{x-2}$ on $D=[-4,6]\\setminus\\{2\\}$, which is the longest interval in $D$ on which $f$ is one-to-one?",
+  "options": [
+   "$[-4,0]$",
+   "$[1,2)$",
+   "$[2,6]$",
+   "$[-4,1]$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$f(x)=x^2-2x-3$ for $x\\ne2$; $f'(x)=2(x-1)$. Decreasing on $[-4,1]$ (length $5$); increasing on $[1,2)$ (length $1$) and $[2,6]$ (length $4$).",
+  "distractor_notes": "A: truncates the decreasing interval; B: selects only the short increasing branch before the hole; C: selects the shorter increasing branch after the hole."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Complementary counting",
+  "archetype": "complement counting",
+  "brief": "Count selections/arrangements where at least one condition holds, using total minus the complementary cases.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:97",
+   "2025s2:113",
+   "2026s1:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "From a collection of $7$ mathematics books and $5$ physics books, a student chooses $4$ books. The number of ways in which at least one physics book is chosen is",
+ "options": [
+  "$425$",
+  "$460$",
+  "$495$",
+  "$35$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At least one physics book: \\(\\binom{12}{4}-\\binom{7}{4}=495-35=460\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Total ways $= \\binom{12}{4} = 495$. No physics book $= \\binom{7}{4} = 35$. Required ways $= 495 - 35 = 460$.\n\nIndependent check: At least one physics book: \\(\\binom{12}{4}-\\binom{7}{4}=495-35=460\\).",
+ "solution": "Total selections are $\\binom{12}{4}$; selections with no physics books are $\\binom{7}{4}$.\n$$\\binom{12}{4}-\\binom{7}{4}=495-35=460$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "From a collection of $7$ mathematics books and $5$ physics books, a student chooses $4$ books. The number of ways in which at least one physics book is chosen is",
+  "options": [
+   "$460$",
+   "$425$",
+   "$495$",
+   "$35$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Total ways $= \\binom{12}{4} = 495$. No physics book $= \\binom{7}{4} = 35$. Required ways $= 495 - 35 = 460$.",
+  "distractor_notes": "B: off by subtracting C(6,4) instead of C(7,4); C: total ways; D: complementary case (no physics book)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Cardinality of union",
+  "archetype": "conceptual",
+  "brief": "Given |f(x)| and g(x) counts for two sets, find the cardinality of the union or of a difference using Venn-style reasoning with three sets.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:112",
+   "2026s2:109",
+   "2024s2:99"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let finite sets $A,B,C$ satisfy $|A|=34$, $|B|=33$, $|C|=33$, $|A\\cup B|=59$, $|B\\cup C|=60$, $|C\\cup A|=61$ and $|A\\cap B\\cap C|=4$. Find $|(A\\cup B)\\setminus C|$.",
+ "options": [
+  "$47$",
+  "$59$",
+  "$53$",
+  "$51$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "|A∩B|=34+33−59=8 and |A∩C|=|B∩C|=6. Thus |(A∪B)∩C|=6+6−4=8, so |(A∪B)\\C|=59−8=51.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|A\\cap B|=34+33-59=8$; $|B\\cap C|=33+33-60=6$; $|C\\cap A|=33+34-61=6$.\\n$|C\\cap(A\\cup B)|=6+6-4=8$.\\n$|(A\\cup B)\\setminus C|=59-8=51$.\n\nIndependent check: |A∩B|=34+33−59=8 and |A∩C|=|B∩C|=6. Thus |(A∪B)∩C|=6+6−4=8, so |(A∪B)\\C|=59−8=51.",
+ "solution": "$|A\\cap B|=34+33-59=8$ and $|A\\cap C|=|B\\cap C|=6$. Thus $|(A\\cup B)\\cap C|=6+6-4=8$, so $$|(A\\cup B)\\setminus C|=59-8=51.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Let finite sets $A,B,C$ satisfy $|A|=34$, $|B|=33$, $|C|=33$, $|A\\cup B|=59$, $|B\\cup C|=60$, $|C\\cup A|=61$ and $|A\\cap B\\cap C|=4$. Find $|(A\\cup B)\\setminus C|$.",
+  "options": [
+   "$47$",
+   "$51$",
+   "$53$",
+   "$59$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$|A\\cap B|=34+33-59=8$; $|B\\cap C|=33+33-60=6$; $|C\\cap A|=33+34-61=6$.\\n$|C\\cap(A\\cup B)|=6+6-4=8$.\\n$|(A\\cup B)\\setminus C|=59-8=51$.",
+  "distractor_notes": "A: subtracts both overlaps with $C$ but does not restore the triple intersection.\\nC: subtracts only one overlap with $C$.\\nD: does not remove elements lying in $C$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

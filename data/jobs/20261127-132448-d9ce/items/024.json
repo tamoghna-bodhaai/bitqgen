@@ -1,0 +1,68 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio comparison",
+  "brief": "A train moves toward then away from a stationary observer sounding a whistle; compare apparent frequencies for approach and recession using the Doppler formula.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:10",
+   "2022:18",
+   "2026s1:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "A train moving toward and then away from a stationary observer sounds a whistle of frequency $f$. If the train's speed is $20$ m s$^{-1}$ and the speed of sound is $340$ m s$^{-1}$, what is the ratio of the apparent frequency on approach to that on recession?",
+ "options": [
+  "$\\dfrac{8}{9}$",
+  "$\\dfrac{9}{8}$",
+  "$\\dfrac{17}{16}$",
+  "$\\dfrac{16}{9}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a moving source and stationary observer, the approach frequency is $f_a=f\\,340/(340-20)=17f/16$; the recession frequency is $f_r=f\\,340/(340+20)=17f/18$. Thus $f_a/f_r=9/8$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f_{\\text{app}}=f\\dfrac{v}{v-v_s}$ on approach; $f_{\\text{rec}}=f\\dfrac{v}{v+v_s}$ on recession.\n$\\dfrac{f_{\\text{app}}}{f_{\\text{rec}}}=\\dfrac{340+20}{340-20}=\\dfrac{360}{320}=\\dfrac{9}{8}$\n\nIndependent check: For a moving source and stationary observer, the approach frequency is $f_a=f\\,340/(340-20)=17f/16$; the recession frequency is $f_r=f\\,340/(340+20)=17f/18$. Thus $f_a/f_r=9/8$.",
+ "solution": "For a moving source and stationary observer, $f_a=f\\dfrac{v}{v-v_s}$ and $f_r=f\\dfrac{v}{v+v_s}$. Thus\n$$\\frac{f_a}{f_r}=\\frac{v+v_s}{v-v_s}=\\frac{340+20}{340-20}=\\frac{9}{8}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A train moving toward and then away from a stationary observer sounds a whistle of frequency $f$. If the train's speed is $20$ m s$^{-1}$ and the speed of sound is $340$ m s$^{-1}$, what is the ratio of the apparent frequency on approach to that on recession?",
+  "options": [
+   "$\\dfrac{8}{9}$",
+   "$\\dfrac{17}{16}$",
+   "$\\dfrac{9}{8}$",
+   "$\\dfrac{16}{9}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$f_{\\text{app}}=f\\dfrac{v}{v-v_s}$ on approach; $f_{\\text{rec}}=f\\dfrac{v}{v+v_s}$ on recession.\n$\\dfrac{f_{\\text{app}}}{f_{\\text{rec}}}=\\dfrac{340+20}{340-20}=\\dfrac{360}{320}=\\dfrac{9}{8}$",
+  "distractor_notes": "A: Reverses the approach-to-recession ratio. B: Uses the train speed in only one Doppler denominator. D: Uses the observer-motion form of the Doppler formula."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

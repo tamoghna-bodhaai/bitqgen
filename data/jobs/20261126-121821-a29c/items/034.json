@@ -1,0 +1,104 @@
+{
+ "qno": 34,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 34,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Reaction sequence",
+  "archetype": "reaction product (structures)",
+  "brief": "Show a two-step sequence from phenol or anisole (structures drawn in the figure) through a named intermediate and ask for the final product structure; keep steps to standard textbook reagents.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:52",
+   "2026s1:59",
+   "2024s1:48"
+  ]
+ },
+ "status": "flagged",
+ "stem": "Identify the final product $X$ in the two-step sequence shown in the figure.",
+ "options": [
+  "Methoxybenzene",
+  "Ethoxybenzene",
+  "Phenylmethanol",
+  "Diphenyl ether"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q034_stem_v2.png",
+  "width_pct": 88,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q034_optA_v2.png",
+  "figs/q034_optB_v2.png",
+  "figs/q034_optC_v2.png",
+  "figs/q034_optD_v2.png"
+ ],
+ "option_width": 45,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The figure shows only phenol forming sodium phenoxide. No second step or reagent is shown, so the final product cannot be identified; different subsequent reagents could give different listed products.",
+   "answer": "NONE",
+   "confidence": 0.99,
+   "multiple_correct": true,
+   "issues": [
+    "The claimed two-step sequence is incomplete: only phenol-to-sodium-phenoxide is shown. The second step and its reagent are missing, so the final product is undetermined."
+   ],
+   "difficulty": 1
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "The figure shows only step 1: phenol → sodium phenoxide (PhO⁻ Na⁺), i.e., deprotonation by NaOH/Na. A Williamson ether synthesis needs a second step, PhO⁻ + R–X → PhOR, but the figure contains no second arrow and no alkyl halide. With CH3X the product is methoxybenzene (A); with C2H5X it is ethoxybenzene (B). Diphenyl ether (D) cannot form via SN2 on an aryl halide, and benzyl alcohol (C) is unrelated. Since the alkylating agent is missing, the product cannot be uniquely determined.",
+   "answer": "NONE",
+   "confidence": 0.65,
+   "multiple_correct": true,
+   "issues": [
+    "The question claims a two-step sequence, but the figure shows only one step (phenol → sodium phenoxide); the second step and its reagent (the alkyl halide) are missing.",
+    "Without the alkyl halide, both (A) methoxybenzene (if CH3X) and (B) ethoxybenzene (if C2H5X) are defensible, so no unique correct option exists.",
+    "The first arrow also omits the base (NaOH or Na) needed to form the phenoxide."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [
+  "unverified: solvers disagreed with the key after all revisions — review manually"
+ ],
+ "working": "$\\text{C}_6\\text{H}_5\\text{OH} + \\text{NaOH} \\rightarrow \\text{C}_6\\text{H}_5\\text{ONa} + \\text{H}_2\\text{O}$\n$\\text{C}_6\\text{H}_5\\text{ONa} + \\text{CH}_3\\text{I} \\rightarrow \\text{C}_6\\text{H}_5\\text{OCH}_3 + \\text{NaI}$",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Identify the final product $X$ in the two-step sequence shown in the figure.",
+  "options": [
+   "Methoxybenzene",
+   "Ethoxybenzene",
+   "Phenylmethanol",
+   "Diphenyl ether"
+  ],
+  "option_smiles": [
+   "COc1ccccc1",
+   "CCOc1ccccc1",
+   "OCc1ccccc1",
+   "c1ccccc1Oc1ccccc1"
+  ],
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a horizontal reaction sequence from left to right. At the left, draw the skeletal structure of phenol (a benzene ring with an –OH group). Draw an arrow to the right labelled above with NaOH (aq). At the centre, draw the phenoxide ion as a benzene ring bonded to O⁻, with Na⁺ nearby; label below it “sodium phenoxide”. Draw a second arrow to the right labelled above with CH₃I. At the right end, place “X” as a blank product label; do not draw a product structure.",
+   "smiles": "Oc1ccccc1>>[Na+].[O-]c1ccccc1"
+  },
+  "difficulty_estimate": 1,
+  "working": "$\\text{C}_6\\text{H}_5\\text{OH} + \\text{NaOH} \\rightarrow \\text{C}_6\\text{H}_5\\text{ONa} + \\text{H}_2\\text{O}$\n$\\text{C}_6\\text{H}_5\\text{ONa} + \\text{CH}_3\\text{I} \\rightarrow \\text{C}_6\\text{H}_5\\text{OCH}_3 + \\text{NaI}$",
+  "distractor_notes": "B: Uses an ethyl group instead of the methyl group from CH₃I.\nC: Places the methyl group on the ring carbon rather than on oxygen.\nD: Assumes coupling with another phenyl group instead of methylation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

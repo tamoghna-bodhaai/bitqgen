@@ -1,0 +1,68 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Perpendicular distance from point to line",
+  "archetype": "foot of perpendicular",
+  "brief": "Find the coordinates of the foot of the perpendicular from a given point to a line given in symmetric form.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:115",
+   "2026s1:128",
+   "2025s2:117"
+  ]
+ },
+ "status": "ok",
+ "stem": "The foot of the perpendicular from $P(4,0,1)$ to the line $\\dfrac{x-1}{2}=\\dfrac{y+1}{1}=\\dfrac{z-2}{-2}$ is",
+ "options": [
+  "$(7,2,-4)$",
+  "$(3,0,0)$",
+  "$(1,-1,2)$",
+  "$\\left(\\dfrac{19}{9},-\\dfrac{4}{9},\\dfrac{28}{9}\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the line be A+tv, with A=(1,-1,2) and v=(2,1,-2). Then t=((P-A)·v)/|v|²=9/9=1, so the foot is A+v=(3,0,0).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $Q=(1+2t,-1+t,2-2t)$ and $\\mathbf d=(2,1,-2)$.\\n$(Q-P)\\cdot\\mathbf d=0\\Rightarrow 9t-9=0\\Rightarrow t=1$.\\nHence $Q=(3,0,0)$.\n\nIndependent check: Let the line be A+tv, with A=(1,-1,2) and v=(2,1,-2). Then t=((P-A)·v)/|v|²=9/9=1, so the foot is A+v=(3,0,0).",
+ "solution": "Let $Q=(1+2t,-1+t,2-2t)$ be the foot. Since $PQ$ is perpendicular to the line's direction $(2,1,-2)$,\n$$(Q-P)\\cdot(2,1,-2)=0\\Rightarrow 9t-9=0\\Rightarrow t=1.$$Hence $Q=(3,0,0)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The foot of the perpendicular from $P(4,0,1)$ to the line $\\dfrac{x-1}{2}=\\dfrac{y+1}{1}=\\dfrac{z-2}{-2}$ is",
+  "options": [
+   "$(7,2,-4)$",
+   "$(1,-1,2)$",
+   "$(3,0,0)$",
+   "$\\left(\\dfrac{19}{9},-\\dfrac{4}{9},\\dfrac{28}{9}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $Q=(1+2t,-1+t,2-2t)$ and $\\mathbf d=(2,1,-2)$.\\n$(Q-P)\\cdot\\mathbf d=0\\Rightarrow 9t-9=0\\Rightarrow t=1$.\\nHence $Q=(3,0,0)$.",
+  "distractor_notes": "A: Divides the dot product by $|\\mathbf d|$ instead of $|\\mathbf d|^2$.\\nB: Reports the point used to parameterize the line.\\nD: Uses the wrong sign for the $z$-component of the line direction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

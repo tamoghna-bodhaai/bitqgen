@@ -1,0 +1,67 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Average speed",
+  "archetype": "conceptual comparison",
+  "brief": "Average speed question: a body covers two equal distances at speeds v1 and v2; compare its average speed with the arithmetic mean of the speeds.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:14",
+   "2024s1:7",
+   "2025s1:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle travels the first half of a total distance with a constant speed $v_1$ and the second half with a constant speed $v_2$, where $v_1 \\neq v_2$. If $v$ is its average speed for the whole journey, which of the following relations is correct?",
+ "options": [
+  "$v < \\dfrac{v_1 + v_2}{2}$",
+  "$v = \\dfrac{v_1 + v_2}{2}$",
+  "$v > \\dfrac{v_1 + v_2}{2}$",
+  "$v = \\sqrt{v_1 v_2}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "For equal half-distances d each: total time = d/v1 + d/v2, so v = 2d/(d/v1+d/v2) = 2v1v2/(v1+v2), the harmonic mean. For v1≠v2, HM < GM < AM, so v < (v1+v2)/2 (option A) and v ≠ √(v1v2). Numeric check v1=1, v2=3: v=1.5 < AM=2, GM≈1.732.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the total distance be $2d$. The time taken to cover the first half is $t_1 = \\dfrac{d}{v_1}$, and for the second half is $t_2 = \\dfrac{d}{v_2}$.\n\nThe average speed is given by:\n$$v = \\dfrac{\\text{Total distance}}{\\text{Total time}} = \\dfrac{2d}{\\dfrac{d}{v_1} + \\dfrac{d}{v_2}} = \\dfrac{2v_1v_2}{v_1 + v_2}$$\n\nComparing $v$ with the arithmetic mean $v_{\\text{am}} = \\dfrac{v_1 + v_2}{2}$:\n$$v_{\\text{am}} - v = \\dfrac{v_1 + v_2}{2} - \\dfrac{2v_1v_2}{v_1 + v_2} = \\dfrac{(v_1 + v_2)^2 - 4v_1v_2}{2(v_1 + v_2)} = \\dfrac{(v_1 - v_2)^2}{2(v_1 + v_2)}$$\n\nSince $v_1 \\neq v_2$, $(v_1 - v_2)^2 > 0$ and $2(v_1 + v_2) > 0$. Thus,\n$$v_{\\text{am}} - v > 0 \\implies v < \\dfrac{v_1 + v_2}{2}$$\n\n(Physically, the body spends more time travelling at the lower speed, so the time-averaged speed is weighted closer to the smaller value, making it strictly less than the arithmetic mean.)\n\nIndependent check: For equal half-distances d each: total time = d/v1 + d/v2, so v = 2d/(d/v1+d/v2) = 2v1v2/(v1+v2), the harmonic mean. For v1≠v2, HM < GM < AM, so v < (v1+v2)/2 (option A) and v ≠ √(v1v2). Numeric check v1=1, v2=3: v=1.5 < AM=2, GM≈1.732.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle travels the first half of a total distance with a constant speed $v_1$ and the second half with a constant speed $v_2$, where $v_1 \\neq v_2$. If $v$ is its average speed for the whole journey, which of the following relations is correct?",
+  "options": [
+   "$v < \\dfrac{v_1 + v_2}{2}$",
+   "$v = \\dfrac{v_1 + v_2}{2}$",
+   "$v > \\dfrac{v_1 + v_2}{2}$",
+   "$v = \\sqrt{v_1 v_2}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "Let the total distance be $2d$. The time taken to cover the first half is $t_1 = \\dfrac{d}{v_1}$, and for the second half is $t_2 = \\dfrac{d}{v_2}$.\n\nThe average speed is given by:\n$$v = \\dfrac{\\text{Total distance}}{\\text{Total time}} = \\dfrac{2d}{\\dfrac{d}{v_1} + \\dfrac{d}{v_2}} = \\dfrac{2v_1v_2}{v_1 + v_2}$$\n\nComparing $v$ with the arithmetic mean $v_{\\text{am}} = \\dfrac{v_1 + v_2}{2}$:\n$$v_{\\text{am}} - v = \\dfrac{v_1 + v_2}{2} - \\dfrac{2v_1v_2}{v_1 + v_2} = \\dfrac{(v_1 + v_2)^2 - 4v_1v_2}{2(v_1 + v_2)} = \\dfrac{(v_1 - v_2)^2}{2(v_1 + v_2)}$$\n\nSince $v_1 \\neq v_2$, $(v_1 - v_2)^2 > 0$ and $2(v_1 + v_2) > 0$. Thus,\n$$v_{\\text{am}} - v > 0 \\implies v < \\dfrac{v_1 + v_2}{2}$$\n\n(Physically, the body spends more time travelling at the lower speed, so the time-averaged speed is weighted closer to the smaller value, making it strictly less than the arithmetic mean.)",
+  "distractor_notes": "Option B comes from the naive misconception that average speed is always the simple arithmetic mean of the two speeds, ignoring that the time intervals are unequal.\nOption C comes from reversing the inequality or confusing the direction of the AM-HM inequality.\nOption D comes from assuming the average speed over equal distances is given by the geometric mean.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

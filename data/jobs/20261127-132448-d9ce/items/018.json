@@ -1,0 +1,68 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Thermal conduction",
+  "archetype": "ratio of two situations",
+  "brief": "Two rods of same material but different lengths and radii conduct heat between the same temperatures; compare thermal resistances or heat currents.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:15",
+   "2022:16",
+   "2026s1:5"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two cylindrical rods of the same material connect the same pair of temperatures. Rod A has length $L$ and radius $r$, while rod B has length $2L$ and radius $2r$. What is the ratio of their heat currents, $H_B/H_A$?",
+ "options": [
+  "$2$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{4}$",
+  "$4$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Heat current is proportional to cross-sectional area divided by length. Thus, H_B/H_A = (4A/2L)/(A/L) = 2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$H=\\dfrac{k\\pi r^2\\Delta T}{L}$\n$\\dfrac{H_B}{H_A}=\\dfrac{(2r)^2/(2L)}{r^2/L}=2$\n\nIndependent check: Heat current is proportional to cross-sectional area divided by length. Thus, H_B/H_A = (4A/2L)/(A/L) = 2.",
+ "solution": "For heat conduction, $H=\\dfrac{kA\\Delta T}{L}$, so for the same material and temperature difference, $H\\propto \\dfrac{r^2}{L}$.\\\\\n$$\\dfrac{H_B}{H_A}=\\dfrac{(2r)^2/(2L)}{r^2/L}=2$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two cylindrical rods of the same material connect the same pair of temperatures. Rod A has length $L$ and radius $r$, while rod B has length $2L$ and radius $2r$. What is the ratio of their heat currents, $H_B/H_A$?",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{2}$",
+   "$2$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$H=\\dfrac{k\\pi r^2\\Delta T}{L}$\n$\\dfrac{H_B}{H_A}=\\dfrac{(2r)^2/(2L)}{r^2/L}=2$",
+  "distractor_notes": "A: Uses the length ratio but mishandles the area ratio. B: Uses radius rather than cross-sectional area. D: Accounts for area but ignores the doubled length."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

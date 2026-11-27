@@ -1,0 +1,68 @@
+{
+ "qno": 138,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 138,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Combined mean and SD",
+  "archetype": "sum manipulation",
+  "brief": "given two groups' sizes, means and variances, compute the combined mean and combined variance using the standard formulas",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:106",
+   "2024s1:113",
+   "2024s1:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two groups of 5 observations each have means 50 and 56. The variance of each group is 16. The standard deviation of all 10 observations taken together is",
+ "options": [
+  "5",
+  "4",
+  "6",
+  "7"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The combined mean is 53. Each group contributes within-group squared deviations of 5 × 16 = 80, and between-group squared deviations of 5 × 3² = 45. Thus the combined variance is (80 + 45 + 80 + 45)/10 = 25, so the standard deviation is 5.",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Combined mean = (5*50 + 5*56)/(5+5) = 53. Deviations of group means from combined mean are -3 and 3. Combined variance = [5*(16 + 9) + 5*(16 + 9)]/10 = 25. Combined standard deviation = sqrt(25) = 5.\n\nIndependent check: The combined mean is 53. Each group contributes within-group squared deviations of 5 × 16 = 80, and between-group squared deviations of 5 × 3² = 45. Thus the combined variance is (80 + 45 + 80 + 45)/10 = 25, so the standard deviation is 5.",
+ "solution": "The combined mean is $\\bar{x}=\\frac{5(50)+5(56)}{10}=53$. Using the within- and between-group variances,\n$$\\sigma^2=16+\\frac{5(50-53)^2+5(56-53)^2}{10}=25.$$\nHence, the combined standard deviation is $\\sigma=\\sqrt{25}=5$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Two groups of 5 observations each have means 50 and 56. The variance of each group is 16. The standard deviation of all 10 observations taken together is",
+  "options": [
+   "5",
+   "4",
+   "6",
+   "7"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Combined mean = (5*50 + 5*56)/(5+5) = 53. Deviations of group means from combined mean are -3 and 3. Combined variance = [5*(16 + 9) + 5*(16 + 9)]/10 = 25. Combined standard deviation = sqrt(25) = 5.",
+  "distractor_notes": "B: ignores between-group variance and gives sqrt(16); C: uses the difference between group means 56 - 50; D: adds that difference to the within-group standard deviation."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

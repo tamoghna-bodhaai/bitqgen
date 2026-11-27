@@ -1,0 +1,76 @@
+{
+ "qno": 21,
+ "section": "Physics",
+ "slot": {
+  "qno": 21,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Radioactive decay, half-life",
+  "archetype": "half-life counting",
+  "brief": "Sample activity measured at two instants; deduce half-life from the ratio and predict activity at a later time.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:4",
+   "2024s1:8",
+   "2026s2:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "The activity measurements for a radioactive sample are shown in the figure. Assuming exponential decay, choose the pair $(T_{1/2},A_{11})$, where $T_{1/2}$ is the half-life and $A_{11}$ is the activity at $t=11$ h.",
+ "options": [
+  "$(2\\ \\text{h},100\\ \\text{Bq})$",
+  "$(3\\ \\text{h},50\\ \\text{Bq})$",
+  "$(3\\ \\text{h},100\\ \\text{Bq})$",
+  "$(6\\ \\text{h},100\\ \\text{Bq})$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q021_stem_v0.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From 800 Bq at 2 h to 200 Bq at 8 h is a factor of 1/4 over 6 h, i.e. two half-lives; thus T₁/₂ = 3 h. Three hours after 8 h, the activity is 100 Bq.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{A_8}{A_2}=\\left(\\dfrac12\\right)^{(8-2)/T_{1/2}}=\\dfrac14\\Rightarrow T_{1/2}=3\\ \\text{h}$\n$A_{11}=200\\left(\\dfrac12\\right)^{(11-8)/3}=100\\ \\text{Bq}$\n\nIndependent check: From 800 Bq at 2 h to 200 Bq at 8 h is a factor of 1/4 over 6 h, i.e. two half-lives; thus T₁/₂ = 3 h. Three hours after 8 h, the activity is 100 Bq.",
+ "solution": "For exponential decay, $A(t)=A_0(1/2)^{t/T_{1/2}}$. From $A_2=800\\,\\text{Bq}$ and $A_8=200\\,\\text{Bq}$,\n$$\\frac{A_8}{A_2}=\\left(\\frac12\\right)^{6/T_{1/2}}=\\frac14\\;\\Rightarrow\\;T_{1/2}=3\\,\\text{h}.$$\nThus $A_{11}=200(1/2)^{3/3}=100\\,\\text{Bq}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The activity measurements for a radioactive sample are shown in the figure. Assuming exponential decay, choose the pair $(T_{1/2},A_{11})$, where $T_{1/2}$ is the half-life and $A_{11}$ is the activity at $t=11$ h.",
+  "options": [
+   "$(2\\ \\text{h},100\\ \\text{Bq})$",
+   "$(3\\ \\text{h},50\\ \\text{Bq})$",
+   "$(3\\ \\text{h},100\\ \\text{Bq})$",
+   "$(6\\ \\text{h},100\\ \\text{Bq})$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a horizontal time line with an arrow pointing right and three marked instants: t = 2 h, t = 8 h, and t = 11 h. Label the activity above the t = 2 h mark as 800 Bq and above the t = 8 h mark as 200 Bq. Leave the t = 11 h mark without an activity label.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{A_8}{A_2}=\\left(\\dfrac12\\right)^{(8-2)/T_{1/2}}=\\dfrac14\\Rightarrow T_{1/2}=3\\ \\text{h}$\n$A_{11}=200\\left(\\dfrac12\\right)^{(11-8)/3}=100\\ \\text{Bq}$",
+  "distractor_notes": "A: Infers the half-life incorrectly from the activity ratio.\nB: Applies two half-lives instead of one between 8 h and 11 h.\nD: Treats a quarter of the activity as one half-life."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

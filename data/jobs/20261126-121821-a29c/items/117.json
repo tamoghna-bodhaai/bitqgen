@@ -1,0 +1,68 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Range of a sin + b cos",
+  "archetype": "amplitude bound",
+  "brief": "Find the range of a sin θ + b cos θ + c and decide which value in the options lies outside it.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:127",
+   "2025s2:107",
+   "2026s1:92"
+  ]
+ },
+ "status": "ok",
+ "stem": "For real $\\theta$, which value is not in the range of $3\\sin\\theta+4\\cos\\theta+1$?",
+ "options": [
+  "$-4$",
+  "$0$",
+  "$6$",
+  "$7$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The sinusoidal part has amplitude $\\sqrt{3^2+4^2}=5$, so the full range is $[1-5,1+5]=[-4,6]$. Thus $7$ is not in the range.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$3\\sin\\theta+4\\cos\\theta\\in[-\\sqrt{3^2+4^2},\\sqrt{3^2+4^2}]=[-5,5]$; hence the range is $[-4,6]$.\n\nIndependent check: The sinusoidal part has amplitude $\\sqrt{3^2+4^2}=5$, so the full range is $[1-5,1+5]=[-4,6]$. Thus $7$ is not in the range.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For real $\\theta$, which value is not in the range of $3\\sin\\theta+4\\cos\\theta+1$?",
+  "options": [
+   "$-4$",
+   "$0$",
+   "$6$",
+   "$7$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$3\\sin\\theta+4\\cos\\theta\\in[-\\sqrt{3^2+4^2},\\sqrt{3^2+4^2}]=[-5,5]$; hence the range is $[-4,6]$.",
+  "distractor_notes": "A: falsely excludes the lower endpoint; B: an interior value is mistaken as outside; C: falsely excludes the upper endpoint."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

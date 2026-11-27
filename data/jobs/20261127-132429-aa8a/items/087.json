@@ -1,0 +1,68 @@
+{
+ "qno": 87,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 87,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding (letter-digit substitution)",
+  "archetype": "letter-digit substitution",
+  "brief": "Simple direct letter coding: show a word written as a group of number codes and ask for the code of another word using the same letter-number mapping, kept easy with a short word.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:80",
+   "2024s1:74",
+   "2022:75"
+  ]
+ },
+ "status": "ok",
+ "stem": "If **LAMP** is coded as **12-1-13-16**, what is the code for **MAP**?",
+ "options": [
+  "13-1-15",
+  "12-1-16",
+  "13-12-16",
+  "13-1-16"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Use each letter’s position in the alphabet: M=13, A=1, P=16.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each letter is replaced by its position in the alphabet: M=13, A=1, P=16. Hence MAP = 13-1-16.\n\nIndependent check: Use each letter’s position in the alphabet: M=13, A=1, P=16.",
+ "solution": "Each letter is coded by its position in the alphabet: $M=13$, $A=1$, and $P=16$. Hence, MAP is coded as $13-1-16$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "If **LAMP** is coded as **12-1-13-16**, what is the code for **MAP**?",
+  "options": [
+   "13-1-16",
+   "12-1-16",
+   "13-12-16",
+   "13-1-15"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Each letter is replaced by its position in the alphabet: M=13, A=1, P=16. Hence MAP = 13-1-16.",
+  "distractor_notes": "B: Uses L's code for M. C: Reverses the codes for M and A. D: Uses O's code for P."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

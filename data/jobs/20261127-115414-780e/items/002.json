@@ -1,0 +1,64 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching a wire",
+  "archetype": "volume-constant scaling",
+  "brief": "Wire stretched to a given multiple of original length (volume constant); find ratio of new to original resistance, then compare power dissipated at same voltage across both.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:4",
+   "2023s1:16",
+   "2026s1:11"
+  ]
+ },
+ "status": "failed",
+ "stem": "A wire of resistance $2\\ \\Omega$ is stretched to three times its original length, keeping its volume constant. It is then connected across a $6$ V battery. The power dissipated in the wire is:",
+ "options": [
+  "$18\\ \\text{W}$",
+  "$6\\ \\text{W}$",
+  "$12\\ \\text{W}$",
+  "$2\\ \\text{W}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Volume constant: $A' \\ell' = A \\ell$, with $\\ell' = 3\\ell$, so $A' = A/3$. New resistance $R' = \\dfrac{\\rho \\ell'}{A'} = \\dfrac{\\rho (3\\ell)}{A/3} = 9\\,\\dfrac{\\rho \\ell}{A} = 9R = 18\\ \\Omega$. Power $P = \\dfrac{V^2}{R'} = \\dfrac{6^2}{18} = \\dfrac{36}{18} = 2\\ \\text{W}$.",
+ "solution": "With volume constant, $A'\\ell'=A\\ell$ and $\\ell'=3\\ell$, so $A'=A/3$. Thus, $R'=\\rho\\ell'/A'=9R=18\\,\\Omega$.\n$$P=\\frac{V^2}{R'}=\\frac{6^2}{18}=2\\,\\text{W}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wire of resistance $2\\ \\Omega$ is stretched to three times its original length, keeping its volume constant. It is then connected across a $6$ V battery. The power dissipated in the wire is:",
+  "options": [
+   "$2\\ \\text{W}$",
+   "$6\\ \\text{W}$",
+   "$12\\ \\text{W}$",
+   "$18\\ \\text{W}$"
+  ],
+  "option_smiles": [
+   "null",
+   "null",
+   "null",
+   "null"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Volume constant: $A' \\ell' = A \\ell$, with $\\ell' = 3\\ell$, so $A' = A/3$. New resistance $R' = \\dfrac{\\rho \\ell'}{A'} = \\dfrac{\\rho (3\\ell)}{A/3} = 9\\,\\dfrac{\\rho \\ell}{A} = 9R = 18\\ \\Omega$. Power $P = \\dfrac{V^2}{R'} = \\dfrac{6^2}{18} = \\dfrac{36}{18} = 2\\ \\text{W}$.",
+  "distractor_notes": "B comes from using R ∝ L instead of R ∝ L^2 (new resistance 6 Ω); D is the power in the original unstretched wire; C may arise from a sign error in the exponent."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

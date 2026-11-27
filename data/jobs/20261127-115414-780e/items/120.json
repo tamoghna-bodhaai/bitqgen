@@ -1,0 +1,68 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous DE (x = vy)",
+  "archetype": "separate and solve",
+  "brief": "Solve a homogeneous differential equation dy/dx = f(y/x) using the substitution y = vx, then find the particular solution through a given point.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:103",
+   "2021:113",
+   "2025s2:104"
+  ]
+ },
+ "status": "ok",
+ "stem": "The equation of the curve passing through the point $(1, 1)$ and satisfying the differential equation $\\dfrac{dy}{dx} = \\dfrac{2x^2 + y^2}{2xy}$ is",
+ "options": [
+  "$2x^2 + y^2 = x$",
+  "$x^2 - 2y^2 = x$",
+  "$2x^2 - y^2 = x$",
+  "$x^2 - y^2 = 2x$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set y=vx. Then v+x\\,dv/dx=(2+v^2)/(2v), so separation gives 2v\\,dv/(2-v^2)=dx/x. Integrating yields 2x^2-y^2=Cx; using (1,1), C=1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Put $y = vx$; $\\frac{dy}{dx} = v + x\\frac{dv}{dx} = \\frac{2+v^2}{2v}$\n$x\\frac{dv}{dx} = \\frac{2 - v^2}{2v}$\nSeparate: $\\frac{2v}{2-v^2}dv = \\frac{dx}{x}$\nIntegrate: $-\\ln|2-v^2| = \\ln|x| + C \\Rightarrow 2 - v^2 = \\frac{k}{x}$\n$2 - \\frac{y^2}{x^2} = \\frac{k}{x} \\Rightarrow 2x^2 - y^2 = kx$\nPasses through $(1,1)$: $2(1)-1 = k \\Rightarrow k = 1$\nHence $2x^2 - y^2 = x$.\n\nIndependent check: Set y=vx. Then v+x\\,dv/dx=(2+v^2)/(2v), so separation gives 2v\\,dv/(2-v^2)=dx/x. Integrating yields 2x^2-y^2=Cx; using (1,1), C=1.",
+ "solution": "Put $y=vx$, so $\\dfrac{dy}{dx}=v+x\\dfrac{dv}{dx}$; hence $\\dfrac{2v}{2-v^2}\\,dv=\\dfrac{dx}{x}$. Integrating gives $2x^2-y^2=Cx$.\nUsing $(1,1)$: $2-1=C$, so $C=1$. Thus $\\boxed{2x^2-y^2=x}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the curve passing through the point $(1, 1)$ and satisfying the differential equation $\\dfrac{dy}{dx} = \\dfrac{2x^2 + y^2}{2xy}$ is",
+  "options": [
+   "$2x^2 - y^2 = x$",
+   "$x^2 - 2y^2 = x$",
+   "$2x^2 + y^2 = x$",
+   "$x^2 - y^2 = 2x$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Put $y = vx$; $\\frac{dy}{dx} = v + x\\frac{dv}{dx} = \\frac{2+v^2}{2v}$\n$x\\frac{dv}{dx} = \\frac{2 - v^2}{2v}$\nSeparate: $\\frac{2v}{2-v^2}dv = \\frac{dx}{x}$\nIntegrate: $-\\ln|2-v^2| = \\ln|x| + C \\Rightarrow 2 - v^2 = \\frac{k}{x}$\n$2 - \\frac{y^2}{x^2} = \\frac{k}{x} \\Rightarrow 2x^2 - y^2 = kx$\nPasses through $(1,1)$: $2(1)-1 = k \\Rightarrow k = 1$\nHence $2x^2 - y^2 = x$.",
+  "distractor_notes": "Option B: forgot factor of 2 or mis‑substituted (x² – 2y² = x would come from y = vx with 1 – 2v²). Option C: sign error in separation (2 + v² instead of 2 – v²). Option D: incorrectly matched constant (would give 2x² – y² = 2x, so x² – y² = 2x is a different curve)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

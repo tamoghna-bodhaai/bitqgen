@@ -1,0 +1,68 @@
+{
+ "qno": 38,
+ "section": "Physics",
+ "slot": {
+  "qno": 38,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Phase and time",
+  "archetype": "phase-based reasoning",
+  "brief": "In a series LCR circuit at a given frequency, ask for the phase difference between current and voltage, or state whether current leads or lags (easy direct reasoning).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:37",
+   "2023s2:2",
+   "2025s2:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a series LCR circuit, $R = 20\\ \\Omega$, $L = 0.2\\ \\text{H}$ and $C = 5\\ \\mu\\text{F}$. The circuit is driven by an AC source of angular frequency $1000\\ \\text{rad s}^{-1}$. Which of the following is true regarding the phase relationship between the current and the applied voltage?",
+ "options": [
+  "Current leads voltage by $90^\\circ$",
+  "Current lags voltage by $90^\\circ$",
+  "Current is zero",
+  "Current is in phase with voltage"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "X_L=\\omega L=200\\,\\Omega and X_C=1/(\\omega C)=200\\,\\Omega. At resonance, current and applied voltage are in phase.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$X_L = \\omega L = 1000 \\times 0.2 = 200\\ \\Omega$, $X_C = \\frac{1}{\\omega C} = \\frac{1}{1000 \\times 5 \\times 10^{-6}} = 200\\ \\Omega$. Since $X_L = X_C$, the circuit is at resonance. Therefore the net reactance is zero, the impedance is purely resistive, and the current is in phase with the voltage.\n\nIndependent check: X_L=\\omega L=200\\,\\Omega and X_C=1/(\\omega C)=200\\,\\Omega. At resonance, current and applied voltage are in phase.",
+ "solution": "In a series LCR circuit, $X_L=\\omega L=1000(0.2)=200\\,\\Omega$ and $X_C=\\frac{1}{\\omega C}=\\frac{1}{1000(5\\times10^{-6})}=200\\,\\Omega$.\\\\\nSince $X_L=X_C$, the circuit is at resonance; its impedance is purely resistive, so current and applied voltage are in phase.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a series LCR circuit, $R = 20\\ \\Omega$, $L = 0.2\\ \\text{H}$ and $C = 5\\ \\mu\\text{F}$. The circuit is driven by an AC source of angular frequency $1000\\ \\text{rad s}^{-1}$. Which of the following is true regarding the phase relationship between the current and the applied voltage?",
+  "options": [
+   "Current leads voltage by $90^\\circ$",
+   "Current lags voltage by $90^\\circ$",
+   "Current is in phase with voltage",
+   "Current is zero"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$X_L = \\omega L = 1000 \\times 0.2 = 200\\ \\Omega$, $X_C = \\frac{1}{\\omega C} = \\frac{1}{1000 \\times 5 \\times 10^{-6}} = 200\\ \\Omega$. Since $X_L = X_C$, the circuit is at resonance. Therefore the net reactance is zero, the impedance is purely resistive, and the current is in phase with the voltage.",
+  "distractor_notes": "Distractor A (leads): would be true if X_C > X_L. Distractor B (lags): would be true if X_L > X_C. Distractor D (zero): only if circuit is open. At resonance X_L = X_C, current is in phase with voltage."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

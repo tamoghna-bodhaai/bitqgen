@@ -1,0 +1,68 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Radiation pressure / momentum of EM waves",
+  "archetype": "momentum change",
+  "brief": "EM wave of given intensity striking a surface (perfectly reflecting or absorbing); find radiation pressure/force via I/c or 2I/c.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:6",
+   "2024s2:10",
+   "2025s2:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A plane electromagnetic wave of intensity 300 W m^-2 falls normally on a perfectly reflecting surface of area 2.0 m^2. The force exerted on the surface is (take c = 3 x 10^8 m s^-1)",
+ "options": [
+  "1.0 x 10^-6 N",
+  "2.0 x 10^-6 N",
+  "4.0 x 10^-6 N",
+  "8.0 x 10^-6 N"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a perfectly reflecting surface, radiation pressure is \\(2I/c\\). Thus \\(F=(2I/c)A=2(300)(2.0)/(3\\times10^8)=4.0\\times10^{-6}\\,\\text{N}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "For a perfect reflector, radiation pressure p = 2I/c. Force F = pA = 2IA/c = 2 * 300 * 2.0 / (3 x 10^8) = 1200 / (3 x 10^8) = 4.0 x 10^-6 N.\n\nIndependent check: For a perfectly reflecting surface, radiation pressure is \\(2I/c\\). Thus \\(F=(2I/c)A=2(300)(2.0)/(3\\times10^8)=4.0\\times10^{-6}\\,\\text{N}\\).",
+ "solution": "For a perfectly reflecting surface, radiation pressure is $p=\\dfrac{2I}{c}$. Hence,\n$$F=pA=\\dfrac{2IA}{c}=\\dfrac{2(300)(2.0)}{3\\times10^8}=4.0\\times10^{-6}\\,\\text{N}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A plane electromagnetic wave of intensity 300 W m^-2 falls normally on a perfectly reflecting surface of area 2.0 m^2. The force exerted on the surface is (take c = 3 x 10^8 m s^-1)",
+  "options": [
+   "1.0 x 10^-6 N",
+   "2.0 x 10^-6 N",
+   "4.0 x 10^-6 N",
+   "8.0 x 10^-6 N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For a perfect reflector, radiation pressure p = 2I/c. Force F = pA = 2IA/c = 2 * 300 * 2.0 / (3 x 10^8) = 1200 / (3 x 10^8) = 4.0 x 10^-6 N.",
+  "distractor_notes": "A: used I/c only, which is pressure, not the force on the given area; B: treated the surface as a perfect absorber and used IA/c; C: correct, uses F = 2IA/c; D: applied the reflection factor twice or used 4I."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "rms speed vs molar mass",
+  "archetype": "proportionality-scaling",
+  "brief": "rms speed scaling with molar mass at same temperature; compare two gases",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:14",
+   "2024s1:28",
+   "2026s1:1"
+  ]
+ },
+ "status": "ok",
+ "stem": "At the same temperature, the rms speed of methane molecules is $500$ m s$^{-1}$. Given molar masses of methane and helium as $16$ g mol$^{-1}$ and $4$ g mol$^{-1}$, respectively, the rms speed of helium molecules is:",
+ "options": [
+  "$250$ m s$^{-1}$",
+  "$500$ m s$^{-1}$",
+  "$1000$ m s$^{-1}$",
+  "$2000$ m s$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At the same temperature, rms speed varies as the inverse square root of molar mass: v(He) = 500√(16/4) = 1000 m s⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_{\\text{rms}} \\propto \\dfrac{1}{\\sqrt{M}}$ at fixed $T$\n$\\dfrac{v_{\\text{He}}}{v_{\\text{CH}_4}} = \\sqrt{\\dfrac{16}{4}} = 2$\n$v_{\\text{He}} = 2(500) = 1000$ m s$^{-1}$\n\nIndependent check: At the same temperature, rms speed varies as the inverse square root of molar mass: v(He) = 500√(16/4) = 1000 m s⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "At the same temperature, the rms speed of methane molecules is $500$ m s$^{-1}$. Given molar masses of methane and helium as $16$ g mol$^{-1}$ and $4$ g mol$^{-1}$, respectively, the rms speed of helium molecules is:",
+  "options": [
+   "$250$ m s$^{-1}$",
+   "$500$ m s$^{-1}$",
+   "$1000$ m s$^{-1}$",
+   "$2000$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$v_{\\text{rms}} \\propto \\dfrac{1}{\\sqrt{M}}$ at fixed $T$\n$\\dfrac{v_{\\text{He}}}{v_{\\text{CH}_4}} = \\sqrt{\\dfrac{16}{4}} = 2$\n$v_{\\text{He}} = 2(500) = 1000$ m s$^{-1}$",
+  "distractor_notes": "A: uses the molar-mass ratio in the wrong direction and takes its square root. B: assumes equal rms speeds. D: multiplies the given speed by the molar-mass ratio instead of its square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

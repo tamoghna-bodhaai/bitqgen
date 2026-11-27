@@ -1,0 +1,68 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Prism combination (dispersion without deviation)",
+  "archetype": "two-step formula",
+  "brief": "Light passing through two thin prisms in contact for zero net deviation; ask for the required relation between angles and refractive indices (dispersion without deviation).",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:7",
+   "2024s1:18",
+   "2023s1:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two thin prisms of refracting angles A1 and A2 are kept in contact with their bases on opposite sides. The refractive indices of the two prisms for yellow light are 1.5 and 1.7 respectively. If the combination produces no deviation for the yellow ray, the ratio A1/A2 is",
+ "options": [
+  "15/17",
+  "5/7",
+  "17/15",
+  "7/5"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For thin prisms with opposite bases, zero net deviation requires (1.5−1)A₁=(1.7−1)A₂. Thus A₁/A₂=0.7/0.5=7/5.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Net deviation is zero: (1.5 - 1)A1 - (1.7 - 1)A2 = 0. So 0.5 A1 = 0.7 A2, giving A1/A2 = 0.7/0.5 = 7/5.\n\nIndependent check: For thin prisms with opposite bases, zero net deviation requires (1.5−1)A₁=(1.7−1)A₂. Thus A₁/A₂=0.7/0.5=7/5.",
+ "solution": "For thin prisms with bases on opposite sides, zero net deviation requires $(\\mu_1-1)A_1=(\\mu_2-1)A_2$.\n$$\\frac{A_1}{A_2}=\\frac{1.7-1}{1.5-1}=\\frac{0.7}{0.5}=\\frac{7}{5}$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Two thin prisms of refracting angles A1 and A2 are kept in contact with their bases on opposite sides. The refractive indices of the two prisms for yellow light are 1.5 and 1.7 respectively. If the combination produces no deviation for the yellow ray, the ratio A1/A2 is",
+  "options": [
+   "7/5",
+   "5/7",
+   "17/15",
+   "15/17"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Net deviation is zero: (1.5 - 1)A1 - (1.7 - 1)A2 = 0. So 0.5 A1 = 0.7 A2, giving A1/A2 = 0.7/0.5 = 7/5.",
+  "distractor_notes": "5/7 reverses the required angle ratio; 17/15 uses the refractive index ratio instead of (n - 1); 15/17 reverses that refractive index ratio."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 150,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 150,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Implicit differentiation",
+  "archetype": "implicit derivative",
+  "brief": "For a curve given implicitly (e.g. xy = k or x² + xy + y² = c), find dy/dx at a given point or the slope of the tangent there.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:122",
+   "2023s2:93",
+   "2024s1:130"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the curve $x^2+xy+y^2=7$, find the slope of the tangent at $(1,2)$.",
+ "options": [
+  "$-\\dfrac{4}{5}$",
+  "$\\dfrac{4}{5}$",
+  "$-\\dfrac{5}{4}$",
+  "$-\\dfrac{3}{5}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Implicitly differentiating gives \\((x+2y)\\frac{dy}{dx}=-(2x+y)\\). At \\((1,2)\\), the slope is \\(-4/5\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$2x+y+x\\dfrac{dy}{dx}+2y\\dfrac{dy}{dx}=0$\\n$\\dfrac{dy}{dx}=-\\dfrac{2x+y}{x+2y}$\\nAt $(1,2)$: $\\dfrac{dy}{dx}=-\\dfrac{4}{5}$\n\nIndependent check: Implicitly differentiating gives \\((x+2y)\\frac{dy}{dx}=-(2x+y)\\). At \\((1,2)\\), the slope is \\(-4/5\\).",
+ "solution": "Implicitly differentiating $x^2+xy+y^2=7$ gives\n$$2x+y+(x+2y)\\frac{dy}{dx}=0,\\qquad \\frac{dy}{dx}=-\\frac{2x+y}{x+2y}.$$\nAt $(1,2)$, the slope is $-\\dfrac{2+2}{1+4}=-\\dfrac45$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the curve $x^2+xy+y^2=7$, find the slope of the tangent at $(1,2)$.",
+  "options": [
+   "$-\\dfrac{4}{5}$",
+   "$\\dfrac{4}{5}$",
+   "$-\\dfrac{5}{4}$",
+   "$-\\dfrac{3}{5}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$2x+y+x\\dfrac{dy}{dx}+2y\\dfrac{dy}{dx}=0$\\n$\\dfrac{dy}{dx}=-\\dfrac{2x+y}{x+2y}$\\nAt $(1,2)$: $\\dfrac{dy}{dx}=-\\dfrac{4}{5}$",
+  "distractor_notes": "B: sign error when isolating $\\dfrac{dy}{dx}$; C: takes the reciprocal of the slope; D: omits the $y$ term in the numerator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

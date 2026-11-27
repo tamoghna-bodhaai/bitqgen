@@ -1,0 +1,68 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Coulomb's law",
+  "archetype": "vector-sum equilibrium",
+  "brief": "Three point charges fixed at corners of an equilateral triangle; find the force on one charge by vector-adding Coulomb contributions from the other two.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:1",
+   "2025s2:20",
+   "2024s2:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "Three identical positive charges of $2.0\\ \\mu\\text{C}$ are fixed at the vertices of an equilateral triangle of side $0.30$ m. Taking $k=9.0\\times10^9\\ \\text{N m}^2\\text{C}^{-2}$, find the magnitude of the net force on one charge.",
+ "options": [
+  "$0.40$ N",
+  "$0.40\\sqrt{2}$ N",
+  "$0.80$ N",
+  "$0.40\\sqrt{3}$ N"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Each pairwise force is $F=kq^2/a^2=0.40\\,\\text{N}$. The two forces meet at $60^\\circ$, so the resultant is $F\\sqrt{3}=0.40\\sqrt{3}\\,\\text{N}$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$F=\\dfrac{kq^2}{a^2}=\\dfrac{(9.0\\times10^9)(2.0\\times10^{-6})^2}{(0.30)^2}=0.40\\ \\text{N}$\nThe two force vectors have angle $60^\\circ$.\n$F_{\\text{net}}=\\sqrt{F^2+F^2+2F^2\\cos60^\\circ}=\\sqrt{3}F=0.40\\sqrt{3}\\ \\text{N}$\n\nIndependent check: Each pairwise force is $F=kq^2/a^2=0.40\\,\\text{N}$. The two forces meet at $60^\\circ$, so the resultant is $F\\sqrt{3}=0.40\\sqrt{3}\\,\\text{N}$.",
+ "solution": "Each of the other charges exerts a force $F=\\dfrac{kq^2}{a^2}=\\dfrac{(9.0\\times10^9)(2.0\\times10^{-6})^2}{(0.30)^2}=0.40\\,\\text{N}$. The two forces are separated by $60^\\circ$, so\n$$F_{\\text{net}}=\\sqrt{F^2+F^2+2F^2\\cos60^\\circ}=\\sqrt{3}F=0.40\\sqrt{3}\\,\\text{N}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Three identical positive charges of $2.0\\ \\mu\\text{C}$ are fixed at the vertices of an equilateral triangle of side $0.30$ m. Taking $k=9.0\\times10^9\\ \\text{N m}^2\\text{C}^{-2}$, find the magnitude of the net force on one charge.",
+  "options": [
+   "$0.40$ N",
+   "$0.40\\sqrt{2}$ N",
+   "$0.40\\sqrt{3}$ N",
+   "$0.80$ N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$F=\\dfrac{kq^2}{a^2}=\\dfrac{(9.0\\times10^9)(2.0\\times10^{-6})^2}{(0.30)^2}=0.40\\ \\text{N}$\nThe two force vectors have angle $60^\\circ$.\n$F_{\\text{net}}=\\sqrt{F^2+F^2+2F^2\\cos60^\\circ}=\\sqrt{3}F=0.40\\sqrt{3}\\ \\text{N}$",
+  "distractor_notes": "A: uses the magnitude of only one force. B: uses a $90^\\circ$ angle between the forces. D: adds the two force magnitudes directly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

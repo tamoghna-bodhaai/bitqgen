@@ -1,0 +1,68 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Chemistry in Everyday Life",
+  "subtopic": "Drugs: tranquilizers and hypnotics",
+  "archetype": "fact recall",
+  "brief": "Ask which of the listed compounds is used as a tranquilizer/hypnotic; include barbiturate and analgesic look-alikes as distractors.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:46",
+   "2024s1:56",
+   "2021:47"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which compound is used as a tranquilizer, rather than as a barbiturate hypnotic or an analgesic?",
+ "options": [
+  "Ibuprofen",
+  "Phenobarbital",
+  "Aspirin",
+  "Diazepam"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Diazepam is used as a tranquilizer; phenobarbital is a barbiturate, while aspirin and ibuprofen are analgesics.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Diazepam is a benzodiazepine tranquilizer.\\nPhenobarbital is a barbiturate; aspirin and ibuprofen are analgesics.\n\nIndependent check: Diazepam is used as a tranquilizer; phenobarbital is a barbiturate, while aspirin and ibuprofen are analgesics.",
+ "solution": "Diazepam is a benzodiazepine used as a tranquilizer. Phenobarbital is a barbiturate, while aspirin and ibuprofen are analgesics.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which compound is used as a tranquilizer, rather than as a barbiturate hypnotic or an analgesic?",
+  "options": [
+   "Diazepam",
+   "Phenobarbital",
+   "Aspirin",
+   "Ibuprofen"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Diazepam is a benzodiazepine tranquilizer.\\nPhenobarbital is a barbiturate; aspirin and ibuprofen are analgesics.",
+  "distractor_notes": "B: identifies a barbiturate hypnotic, not the requested tranquilizer.\\nC: identifies an analgesic.\\nD: identifies an analgesic."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

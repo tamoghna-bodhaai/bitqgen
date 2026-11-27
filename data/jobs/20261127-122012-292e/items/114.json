@@ -1,0 +1,68 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by substitution",
+  "archetype": "substitution integral",
+  "brief": "evaluate an indefinite integral that reduces cleanly with a substitution such as t = tan x or t = √(linear)",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:117",
+   "2024s2:92",
+   "2024s2:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "The integral of sec^2 x / sqrt(1 + tan x) dx is equal to",
+ "options": [
+  "2 sqrt(1 + tan x) + C",
+  "sqrt(1 + tan x) + C",
+  "2 sqrt(tan x) + C",
+  "(1/2) sqrt(1 + tan x) + C"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let u = 1 + tan x, so du = sec²x dx. Then ∫u⁻¹ᐟ² du = 2√u + C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let u = 1 + tan x, so du = sec^2 x dx. Integral = integral of u^(-1/2) du = 2 u^(1/2) + C = 2 sqrt(1 + tan x) + C.\n\nIndependent check: Let u = 1 + tan x, so du = sec²x dx. Then ∫u⁻¹ᐟ² du = 2√u + C.",
+ "solution": "Let $u=1+\\tan x$, so $du=\\sec^2 x\\,dx$.\n$$\\int \\frac{\\sec^2 x}{\\sqrt{1+\\tan x}}\\,dx=\\int u^{-1/2}\\,du=2\\sqrt{u}+C=2\\sqrt{1+\\tan x}+C.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The integral of sec^2 x / sqrt(1 + tan x) dx is equal to",
+  "options": [
+   "sqrt(1 + tan x) + C",
+   "2 sqrt(1 + tan x) + C",
+   "2 sqrt(tan x) + C",
+   "(1/2) sqrt(1 + tan x) + C"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let u = 1 + tan x, so du = sec^2 x dx. Integral = integral of u^(-1/2) du = 2 u^(1/2) + C = 2 sqrt(1 + tan x) + C.",
+  "distractor_notes": "A misses factor 2; C omits the added 1 in the radicand; D uses the reciprocal factor 1/2 instead of 2."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

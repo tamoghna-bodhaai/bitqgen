@@ -1,0 +1,67 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Lorentz force direction",
+  "archetype": "conceptual",
+  "brief": "A charged particle enters a magnetic field at some angle; identify the direction of magnetic force and whether the speed changes, using right-hand rule.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:2",
+   "2023s1:9",
+   "2026s2:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A proton enters a uniform magnetic field directed vertically downwards with a horizontal velocity directed towards the east. The magnetic force acting on the proton is directed towards the:",
+ "options": [
+  "north, and its speed remains constant",
+  "north, and its speed increases",
+  "south, and its speed remains constant",
+  "south, and its speed decreases"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Take east = x̂, north = ŷ, up = ẑ. F = qv×B = q(v x̂)×(−B ẑ) = qvB ŷ → north (verified numerically). Magnetic force is perpendicular to velocity, does no work, so speed stays constant.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Let the horizontal east direction be along $+\\hat{i}$, north along $+\\hat{j}$, and vertically upward along $+\\hat{k}$.\n\nThe velocity of the proton is:\n$$\\vec{v} = v\\,\\hat{i}$$\n\nThe magnetic field is directed vertically downwards:\n$$\\vec{B} = -B\\,\\hat{k}$$\n\nThe magnetic Lorentz force on a charge $q = +e$ is:\n$$\\vec{F} = q(\\vec{v} \\times \\vec{B}) = e\\left(v\\,\\hat{i} \\times (-B\\,\\hat{k})\\right) = -e v B (-\\hat{j}) = e v B\\,\\hat{j}$$\n\n$+\\hat{j}$ corresponds to the north direction.\n\nSince the magnetic force is always perpendicular to the velocity ($\\vec{F} \\perp \\vec{v}$), the power delivered by the magnetic force is:\n$$P = \\vec{F} \\cdot \\vec{v} = 0$$\n\nBecause the work done is zero, the kinetic energy does not change, meaning the speed of the proton remains constant.\n\nIndependent check: Take east = x̂, north = ŷ, up = ẑ. F = qv×B = q(v x̂)×(−B ẑ) = qvB ŷ → north (verified numerically). Magnetic force is perpendicular to velocity, does no work, so speed stays constant.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A proton enters a uniform magnetic field directed vertically downwards with a horizontal velocity directed towards the east. The magnetic force acting on the proton is directed towards the:",
+  "options": [
+   "north, and its speed remains constant",
+   "north, and its speed increases",
+   "south, and its speed remains constant",
+   "south, and its speed decreases"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "Let the horizontal east direction be along $+\\hat{i}$, north along $+\\hat{j}$, and vertically upward along $+\\hat{k}$.\n\nThe velocity of the proton is:\n$$\\vec{v} = v\\,\\hat{i}$$\n\nThe magnetic field is directed vertically downwards:\n$$\\vec{B} = -B\\,\\hat{k}$$\n\nThe magnetic Lorentz force on a charge $q = +e$ is:\n$$\\vec{F} = q(\\vec{v} \\times \\vec{B}) = e\\left(v\\,\\hat{i} \\times (-B\\,\\hat{k})\\right) = -e v B (-\\hat{j}) = e v B\\,\\hat{j}$$\n\n$+\\hat{j}$ corresponds to the north direction.\n\nSince the magnetic force is always perpendicular to the velocity ($\\vec{F} \\perp \\vec{v}$), the power delivered by the magnetic force is:\n$$P = \\vec{F} \\cdot \\vec{v} = 0$$\n\nBecause the work done is zero, the kinetic energy does not change, meaning the speed of the proton remains constant.",
+  "distractor_notes": "Option B arises from confusing magnetic force with electric force, incorrectly assuming that a force in the direction of motion or sideways does work to increase speed.\nOption C arises from evaluating the cross product in reverse ($\\vec{B} \\times \\vec{v}$) or mistakenly treating the proton as having a negative charge.\nOption D combines the direction reversal error with the mistaken assumption that the force opposes motion and reduces speed.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

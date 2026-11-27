@@ -1,0 +1,67 @@
+{
+ "qno": 84,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 84,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-number shift",
+  "brief": "A word is coded by shifting each letter by a position-based pattern (e.g., +1, +2, +3...); apply the same rule to a new word.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:88",
+   "2024s1:75",
+   "2026s2:75"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a certain code language, if **BRAIN** is coded as **CTDMS**, how will **LIGHT** be coded in that language?",
+ "options": [
+  "MKJLY",
+  "MKILY",
+  "MLJLY",
+  "NKJLZ"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "BRAIN→CTDMS uses shifts +1,+2,+3,+4,+5 by position. Applying to LIGHT: L+1=M, I+2=K, G+3=J, H+4=L, T+5=Y → MKJLY, which is option (A). Verified by code.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Analyze the letter shift between BRAIN and CTDMS:\n- B (position 2) + 1 = C (position 3)\n- R (position 18) + 2 = T (position 20)\n- A (position 1) + 3 = D (position 4)\n- I (position 9) + 4 = M (position 13)\n- N (position 14) + 5 = S (position 19)\n\nThe pattern is a successive position shift of +1, +2, +3, +4, +5.\n\nApplying the same rule to LIGHT:\n- L (12) + 1 = 13 -> M\n- I (9) + 2 = 11 -> K\n- G (7) + 3 = 10 -> J\n- H (8) + 4 = 12 -> L\n- T (20) + 5 = 25 -> Y\n\nThus, LIGHT is coded as MKJLY.\n\nIndependent check: BRAIN→CTDMS uses shifts +1,+2,+3,+4,+5 by position. Applying to LIGHT: L+1=M, I+2=K, G+3=J, H+4=L, T+5=Y → MKJLY, which is option (A). Verified by code.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a certain code language, if **BRAIN** is coded as **CTDMS**, how will **LIGHT** be coded in that language?",
+  "options": [
+   "MKJLY",
+   "MKILY",
+   "MLJLY",
+   "NKJLZ"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "Analyze the letter shift between BRAIN and CTDMS:\n- B (position 2) + 1 = C (position 3)\n- R (position 18) + 2 = T (position 20)\n- A (position 1) + 3 = D (position 4)\n- I (position 9) + 4 = M (position 13)\n- N (position 14) + 5 = S (position 19)\n\nThe pattern is a successive position shift of +1, +2, +3, +4, +5.\n\nApplying the same rule to LIGHT:\n- L (12) + 1 = 13 -> M\n- I (9) + 2 = 11 -> K\n- G (7) + 3 = 10 -> J\n- H (8) + 4 = 12 -> L\n- T (20) + 5 = 25 -> Y\n\nThus, LIGHT is coded as MKJLY.",
+  "distractor_notes": "MKILY mistakenly applies a +2 shift to G instead of +3 (giving I instead of J).\nMLJLY mistakenly applies a +3 shift to I instead of +2 (giving L instead of K).\nNKJLZ mistakenly applies a shift starting from +2 (L+2 = N) rather than +1.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

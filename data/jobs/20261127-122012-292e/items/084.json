@@ -1,0 +1,70 @@
+{
+ "qno": 84,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 84,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error (no error)",
+  "brief": "Complex sentence layering subject-verb agreement, tense and a preposition; the subtle trap should be in agreement/idiom usage, with 'No error' as a genuine plausible option.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:66",
+   "2022:67",
+   "2021:91"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Identify the part that contains an error. If there is no error, choose (D).**\n\n(A) The rapid growth of the city's suburbs,\n(B) together with rising housing demand,\n(C) have forced the authorities to revise the plan.\n(D) No error",
+ "options": [
+  "(A) The rapid growth of the city's suburbs,",
+  "(B) together with rising housing demand,",
+  "(C) have forced the authorities to revise the plan.",
+  "(D) No error"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The subject is singular: “growth.” The phrase “together with rising housing demand” does not change the subject’s number, so “have” should be “has.”",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "The question and options are duplicated."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Subject is 'growth' (singular); 'together with rising housing demand' is parenthetical and does not change it, so 'have forced' should be 'has forced'. Parts A and B are correct, and D is wrong because an error exists.\n\nIndependent check: The subject is singular: “growth.” The phrase “together with rising housing demand” does not change the subject’s number, so “have” should be “has.”",
+ "solution": "The subject is the singular noun $growth$; the intervening phrase “together with rising housing demand” does not affect subject–verb agreement. Thus, “have forced” should be “has forced.”",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "**Identify the part that contains an error. If there is no error, choose (D).**\n\n(A) The rapid growth of the city's suburbs,\n(B) together with rising housing demand,\n(C) have forced the authorities to revise the plan.\n(D) No error",
+  "options": [
+   "(A) The rapid growth of the city's suburbs,",
+   "(B) together with rising housing demand,",
+   "(C) have forced the authorities to revise the plan.",
+   "(D) No error"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Subject is 'growth' (singular); 'together with rising housing demand' is parenthetical and does not change it, so 'have forced' should be 'has forced'. Parts A and B are correct, and D is wrong because an error exists.",
+  "distractor_notes": "A and B are grammatically fine. D is the tempting 'No error' choice if the intervening phrase is mistaken for the subject."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

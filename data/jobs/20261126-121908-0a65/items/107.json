@@ -1,0 +1,68 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Consecutive coefficients",
+  "archetype": "ratio of coefficients",
+  "brief": "In a binomial expansion, find r so that two consecutive binomial coefficients are equal (n even/odd cases).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:103",
+   "2025s1:119",
+   "2026s1:103"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $(1+x)^n$, the coefficients of $x^r$ and $x^{r+1}$ are equal. Which condition must hold?",
+ "options": [
+  "$n$ is odd and $r=\\dfrac{n-1}{2}$",
+  "$n$ is even and $r=\\dfrac{n}{2}$",
+  "$n$ is odd and $r=\\dfrac{n+1}{2}$",
+  "For every $n$, $r=\\dfrac{n}{2}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set \\(\\binom nr=\\binom n{r+1}\\). Then \\(n-r=r+1\\), so \\(r=(n-1)/2\\), which is an integer when \\(n\\) is odd.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{C(n,r+1)}{C(n,r)}=\\dfrac{n-r}{r+1}=1 \\Rightarrow r=\\dfrac{n-1}{2}$. For $r$ to be an integer, $n$ must be odd.\n\nIndependent check: Set \\(\\binom nr=\\binom n{r+1}\\). Then \\(n-r=r+1\\), so \\(r=(n-1)/2\\), which is an integer when \\(n\\) is odd.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $(1+x)^n$, the coefficients of $x^r$ and $x^{r+1}$ are equal. Which condition must hold?",
+  "options": [
+   "$n$ is odd and $r=\\dfrac{n-1}{2}$",
+   "$n$ is even and $r=\\dfrac{n}{2}$",
+   "$n$ is odd and $r=\\dfrac{n+1}{2}$",
+   "For every $n$, $r=\\dfrac{n}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{C(n,r+1)}{C(n,r)}=\\dfrac{n-r}{r+1}=1 \\Rightarrow r=\\dfrac{n-1}{2}$. For $r$ to be an integer, $n$ must be odd.",
+  "distractor_notes": "B: assumes the central index for even $n$ gives adjacent equal coefficients. C: uses the adjacent index on the other side. D: overlooks that $r$ must be an integer and does not satisfy the ratio in general."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

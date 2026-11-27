@@ -1,0 +1,68 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "First law; path independence of internal energy",
+  "archetype": "conceptual",
+  "brief": "First law; path independence of internal energy: state which quantities (ΔU, Q, W) depend only on initial/final states across two different paths between the same states.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:6",
+   "2026s2:27",
+   "2026s1:5"
+  ]
+ },
+ "status": "ok",
+ "stem": "A gas is taken between the same two equilibrium states by two different paths. Which statement about the changes in internal energy $\\Delta U$, heat $Q$ and work $W$ is correct?",
+ "options": [
+  "$\\Delta U$ is the same for both paths, but $Q$ and $W$ may differ.",
+  "$Q$ is the same for both paths, but $\\Delta U$ and $W$ may differ.",
+  "$W$ is the same for both paths, but $\\Delta U$ and $Q$ may differ.",
+  "$\\Delta U$, $Q$ and $W$ are all the same for both paths."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Internal energy is a state function, so its change is the same between the two equilibrium states. Heat and work are path-dependent and may differ.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta U$ depends only on the initial and final states.\n$Q=\\Delta U+W$; $W$ depends on the path.\nHence $Q$ may also differ between paths.\n\nIndependent check: Internal energy is a state function, so its change is the same between the two equilibrium states. Heat and work are path-dependent and may differ.",
+ "solution": "Internal energy is a state function, so its change depends only on the initial and final states:\n$$\\Delta U_1=\\Delta U_2.$$\nFrom the first law, $Q=\\Delta U+W$; since work depends on the path, $W$ and hence $Q$ may differ.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A gas is taken between the same two equilibrium states by two different paths. Which statement about the changes in internal energy $\\Delta U$, heat $Q$ and work $W$ is correct?",
+  "options": [
+   "$\\Delta U$ is the same for both paths, but $Q$ and $W$ may differ.",
+   "$Q$ is the same for both paths, but $\\Delta U$ and $W$ may differ.",
+   "$W$ is the same for both paths, but $\\Delta U$ and $Q$ may differ.",
+   "$\\Delta U$, $Q$ and $W$ are all the same for both paths."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\Delta U$ depends only on the initial and final states.\n$Q=\\Delta U+W$; $W$ depends on the path.\nHence $Q$ may also differ between paths.",
+  "distractor_notes": "B: Treats heat as a state function. C: Treats work as a state function. D: Treats heat and work as state functions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

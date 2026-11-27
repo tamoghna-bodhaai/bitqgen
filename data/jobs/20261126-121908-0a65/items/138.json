@@ -1,0 +1,68 @@
+{
+ "qno": 138,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 138,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain with rational expression",
+  "archetype": "sign chart",
+  "brief": "Find the domain of a function with a rational/square-root expression using a sign chart.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:122",
+   "2026s2:109",
+   "2024s1:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "The domain of $f(x)=\\sqrt{\\dfrac{(x-1)(x-4)}{x+2}}$ is",
+ "options": [
+  "$(-\\infty,-2)\\cup[1,4]$",
+  "$(-2,1]\\cup[4,\\infty)$",
+  "$(-2,1)\\cup(4,\\infty)$",
+  "$(-\\infty,-2)\\cup(1,4)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Require the radicand to be nonnegative and exclude x = -2. A sign chart gives (-2, 1] ∪ [4, ∞), including the zeros at x = 1 and x = 4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{(x-1)(x-4)}{x+2}\\ge0$: signs on $(-\\infty,-2),(-2,1),(1,4),(4,\\infty)$ are $-,+,-,+$; include zeros $1,4$, exclude pole $-2$.\n\nIndependent check: Require the radicand to be nonnegative and exclude x = -2. A sign chart gives (-2, 1] ∪ [4, ∞), including the zeros at x = 1 and x = 4.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The domain of $f(x)=\\sqrt{\\dfrac{(x-1)(x-4)}{x+2}}$ is",
+  "options": [
+   "$(-\\infty,-2)\\cup[1,4]$",
+   "$(-2,1]\\cup[4,\\infty)$",
+   "$(-2,1)\\cup(4,\\infty)$",
+   "$(-\\infty,-2)\\cup(1,4)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{(x-1)(x-4)}{x+2}\\ge0$: signs on $(-\\infty,-2),(-2,1),(1,4),(4,\\infty)$ are $-,+,-,+$; include zeros $1,4$, exclude pole $-2$.",
+  "distractor_notes": "A: reverses the sign intervals; C: omits valid zero endpoints; D: reverses the sign intervals and omits the zeros."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Threshold frequency",
+  "archetype": "conceptual (distractor-heavy)",
+  "brief": "Photoemission from a metal: statements about threshold frequency, stopping potential and current — identify which quantity depends on intensity vs frequency.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:18",
+   "2024s1:15",
+   "2023s1:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "Monochromatic light of frequency $\\nu$ $(\\nu > \\nu_0)$ is incident on a metal having threshold frequency $\\nu_0$. If the intensity of the light is doubled at constant frequency, which of the following quantities is doubled?",
+ "options": [
+  "Threshold frequency",
+  "Stopping potential",
+  "Saturation photocurrent",
+  "Maximum kinetic energy of photoelectrons"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "At fixed frequency, doubling intensity doubles the photon flux, hence doubles the number of emitted photoelectrons per second and the saturation photocurrent. Threshold frequency is a material constant; Kmax = h(ν − ν0) and stopping potential V0 = h(ν − ν0)/e depend only on frequency, so they are unchanged.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "According to Einstein's photoelectric equation:\n$$K_{\\max} = h\\nu - h\\nu_0 = eV_0$$\nSince the frequency $\\nu$ is unchanged:\n1. The threshold frequency $\\nu_0$ is a characteristic property of the metal surface and does not depend on the incident light.\n2. The maximum kinetic energy $K_{\\max}$ and the stopping potential $V_0$ depend only on the incident frequency $\\nu$ and the work function $\\Phi_0 = h\\nu_0$, so both remain unchanged.\n3. The intensity of light is given by $I = n h\\nu$, where $n$ is the number of incident photons per unit area per unit time. Doubling the intensity at constant frequency doubles the photon flux $n$. Consequently, the number of photoelectrons emitted per second doubles, so the saturation photocurrent is doubled.\n\nIndependent check: At fixed frequency, doubling intensity doubles the photon flux, hence doubles the number of emitted photoelectrons per second and the saturation photocurrent. Threshold frequency is a material constant; Kmax = h(ν − ν0) and stopping potential V0 = h(ν − ν0)/e depend only on frequency, so they are unchanged.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Monochromatic light of frequency $\\nu$ $(\\nu > \\nu_0)$ is incident on a metal having threshold frequency $\\nu_0$. If the intensity of the light is doubled at constant frequency, which of the following quantities is doubled?",
+  "options": [
+   "Threshold frequency",
+   "Stopping potential",
+   "Saturation photocurrent",
+   "Maximum kinetic energy of photoelectrons"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "According to Einstein's photoelectric equation:\n$$K_{\\max} = h\\nu - h\\nu_0 = eV_0$$\nSince the frequency $\\nu$ is unchanged:\n1. The threshold frequency $\\nu_0$ is a characteristic property of the metal surface and does not depend on the incident light.\n2. The maximum kinetic energy $K_{\\max}$ and the stopping potential $V_0$ depend only on the incident frequency $\\nu$ and the work function $\\Phi_0 = h\\nu_0$, so both remain unchanged.\n3. The intensity of light is given by $I = n h\\nu$, where $n$ is the number of incident photons per unit area per unit time. Doubling the intensity at constant frequency doubles the photon flux $n$. Consequently, the number of photoelectrons emitted per second doubles, so the saturation photocurrent is doubled.",
+  "distractor_notes": "Option A: Confuses an intrinsic material property (work function / threshold frequency) with radiation parameters.\nOption B: Based on the classical wave theory misconception that higher intensity provides more energy to each electron, requiring a higher stopping potential.\nOption D: Classical wave theory error; maximum kinetic energy depends strictly on the photon frequency $\\nu$, not on the intensity.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

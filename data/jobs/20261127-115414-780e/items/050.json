@@ -1,0 +1,68 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Bond enthalpy",
+  "archetype": "Hess's law bond-energy calc",
+  "brief": "Compute ΔH of a gaseous reaction using given bond enthalpies; moderate bookkeeping of bonds broken/formed.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:51",
+   "2026s2:60",
+   "2023s2:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using the bond enthalpy data below, calculate $\\Delta H$ for the reaction:\n$$2\\text{H}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{H}_2\\text{O}(g)$$\n\\begin{align*}\nE(\\text{H--H}) &= 436\\ \\text{kJ mol}^{-1}\\\\\nE(\\text{O=O}) &= 498\\ \\text{kJ mol}^{-1}\\\\\nE(\\text{O--H}) &= 463\\ \\text{kJ mol}^{-1}\n\\end{align*}",
+ "options": [
+  "$+8\\ \\text{kJ}$",
+  "$+482\\ \\text{kJ}$",
+  "$-241\\ \\text{kJ}$",
+  "$-482\\ \\text{kJ}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Bonds broken: 2(436) + 498 = 1370 kJ. Bonds formed: 4(463) = 1852 kJ. Thus ΔH = 1370 − 1852 = −482 kJ.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Bonds broken: 2 H–H + 1 O=O → energy required = 2×436 + 498 = 1370 kJ.\nBonds formed: 4 O–H (2 H₂O) → energy released = 4×463 = 1852 kJ.\nΔH = (energy of bonds broken) − (energy of bonds formed) = 1370 − 1852 = −482 kJ.\n\nIndependent check: Bonds broken: 2(436) + 498 = 1370 kJ. Bonds formed: 4(463) = 1852 kJ. Thus ΔH = 1370 − 1852 = −482 kJ.",
+ "solution": "Bond enthalpy method: $\\Delta H=\\sum E(\\text{bonds broken})-\\sum E(\\text{bonds formed})$.\n$$\\Delta H=[2(436)+498]-[4(463)]=1370-1852=-482\\ \\text{kJ}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using the bond enthalpy data below, calculate $\\Delta H$ for the reaction:\n$$2\\text{H}_2(g) + \\text{O}_2(g) \\rightarrow 2\\text{H}_2\\text{O}(g)$$\n\\begin{align*}\nE(\\text{H--H}) &= 436\\ \\text{kJ mol}^{-1}\\\\\nE(\\text{O=O}) &= 498\\ \\text{kJ mol}^{-1}\\\\\nE(\\text{O--H}) &= 463\\ \\text{kJ mol}^{-1}\n\\end{align*}",
+  "options": [
+   "$-482\\ \\text{kJ}$",
+   "$+482\\ \\text{kJ}$",
+   "$-241\\ \\text{kJ}$",
+   "$+8\\ \\text{kJ}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Bonds broken: 2 H–H + 1 O=O → energy required = 2×436 + 498 = 1370 kJ.\nBonds formed: 4 O–H (2 H₂O) → energy released = 4×463 = 1852 kJ.\nΔH = (energy of bonds broken) − (energy of bonds formed) = 1370 − 1852 = −482 kJ.",
+  "distractor_notes": "B – sign error (ΔH calculated as 1852−1370). C – correct per mole of water (divides by 2 but the reaction is for 2 H₂O). D – incorrect stoichiometry: treated as 1 H₂ + 1 O₂ → 1 H₂O giving +8 kJ."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

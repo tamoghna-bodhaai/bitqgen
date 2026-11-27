@@ -1,0 +1,68 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Gravitational potential energy",
+  "archetype": "energy conservation",
+  "brief": "A satellite's orbit radius is changed from r1 to r2; ask for the work done using the change in total orbital energy (−GMm/2r).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:19",
+   "2026s2:28",
+   "2023s2:8"
+  ]
+ },
+ "status": "ok",
+ "stem": "A satellite of mass $100\\ \\text{kg}$ is in a circular orbit of radius $2R$ around the Earth. It is shifted to a circular orbit of radius $4R$. The work done by the external agent is:\n(Take $g = 10\\ \\text{m s}^{-2}$, $R = 6400\\ \\text{km}$)",
+ "options": [
+  "$2.0 \\times 10^8\\ \\text{J}$",
+  "$4.0 \\times 10^8\\ \\text{J}$",
+  "$1.6 \\times 10^9\\ \\text{J}$",
+  "$8.0 \\times 10^8\\ \\text{J}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a circular orbit, total energy is $E=-GMm/(2r)$. Thus $\\Delta E=GMm/(8R)=mgR/8=8.0\\times10^8\\,\\text{J}$, using $GM=gR^2$.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Total energy $E = -\\frac{GMm}{2r} = -\\frac{gR^2 m}{2r}$.\nInitial $r_1 = 2R$: $E_1 = -\\frac{gR^2 m}{4R} = -\\frac{gRm}{4}$.\nFinal $r_2 = 4R$: $E_2 = -\\frac{gR^2 m}{8R} = -\\frac{gRm}{8}$.\nWork $W = E_2 - E_1 = -\\frac{gRm}{8} + \\frac{gRm}{4} = \\frac{gRm}{8}$.\n$W = \\frac{10 \\times 6.4 \\times 10^6 \\times 100}{8} = 8.0 \\times 10^8\\ \\text{J}$.\n\nIndependent check: For a circular orbit, total energy is $E=-GMm/(2r)$. Thus $\\Delta E=GMm/(8R)=mgR/8=8.0\\times10^8\\,\\text{J}$, using $GM=gR^2$.",
+ "solution": "For a circular orbit, the total energy is $E=-\\dfrac{GMm}{2r}$, with $GM=gR^2$. Thus, for the shift from $2R$ to $4R$,\n$$W=\\Delta E=\\frac{GMm}{8R}=\\frac{mgR}{8}=\\frac{100\\times10\\times6.4\\times10^6}{8}=8.0\\times10^8\\,\\text{J}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A satellite of mass $100\\ \\text{kg}$ is in a circular orbit of radius $2R$ around the Earth. It is shifted to a circular orbit of radius $4R$. The work done by the external agent is:\n(Take $g = 10\\ \\text{m s}^{-2}$, $R = 6400\\ \\text{km}$)",
+  "options": [
+   "$2.0 \\times 10^8\\ \\text{J}$",
+   "$4.0 \\times 10^8\\ \\text{J}$",
+   "$8.0 \\times 10^8\\ \\text{J}$",
+   "$1.6 \\times 10^9\\ \\text{J}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Total energy $E = -\\frac{GMm}{2r} = -\\frac{gR^2 m}{2r}$.\nInitial $r_1 = 2R$: $E_1 = -\\frac{gR^2 m}{4R} = -\\frac{gRm}{4}$.\nFinal $r_2 = 4R$: $E_2 = -\\frac{gR^2 m}{8R} = -\\frac{gRm}{8}$.\nWork $W = E_2 - E_1 = -\\frac{gRm}{8} + \\frac{gRm}{4} = \\frac{gRm}{8}$.\n$W = \\frac{10 \\times 6.4 \\times 10^6 \\times 100}{8} = 8.0 \\times 10^8\\ \\text{J}$.",
+  "distractor_notes": "A: sign error or half factor. B: uses r = 3R or other miscalculation. D: considers only change in potential energy (ΔU) rather than total energy."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

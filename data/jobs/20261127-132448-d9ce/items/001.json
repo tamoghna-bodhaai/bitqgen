@@ -1,0 +1,68 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Torque as cross product",
+  "archetype": "two-equation kinematics",
+  "brief": "Two balls thrown vertically from the same point one after another meet at a common height; find the time interval between throws or the meeting height.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:14",
+   "2024s2:29",
+   "2025s2:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "A ball is thrown vertically upward at $15\\ \\text{m s}^{-1}$. One second later, another is thrown upward from the same point at $25\\ \\text{m s}^{-1}$. If $g=10\\ \\text{m s}^{-2}$, at what height do they meet?",
+ "options": [
+  "$6.25$ m",
+  "$22.5$ m",
+  "$12.5$ m",
+  "$11.25$ m"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let t be the time (s) after the first throw. Equating heights, 15t−5t² = 25(t−1)−5(t−1)² gives t=1.5 s. Their height is 15(1.5)−5(1.5)² = 11.25 m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $t$ be measured from the first throw: $y_1=15t-5t^2$, $y_2=25(t-1)-5(t-1)^2$.\n$y_1=y_2\\Rightarrow t=1.5$ s.\n$y=15(1.5)-5(1.5)^2=11.25$ m.\n\nIndependent check: Let t be the time (s) after the first throw. Equating heights, 15t−5t² = 25(t−1)−5(t−1)² gives t=1.5 s. Their height is 15(1.5)−5(1.5)² = 11.25 m.",
+ "solution": "Taking $t$ from the first throw, the heights are $y_1=15t-5t^2$ and $y_2=25(t-1)-5(t-1)^2$.\n$$y_1=y_2\\Rightarrow t=1.5\\text{ s},\\qquad y=15(1.5)-5(1.5)^2=11.25\\text{ m}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A ball is thrown vertically upward at $15\\ \\text{m s}^{-1}$. One second later, another is thrown upward from the same point at $25\\ \\text{m s}^{-1}$. If $g=10\\ \\text{m s}^{-2}$, at what height do they meet?",
+  "options": [
+   "$6.25$ m",
+   "$11.25$ m",
+   "$12.5$ m",
+   "$22.5$ m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $t$ be measured from the first throw: $y_1=15t-5t^2$, $y_2=25(t-1)-5(t-1)^2$.\n$y_1=y_2\\Rightarrow t=1.5$ s.\n$y=15(1.5)-5(1.5)^2=11.25$ m.",
+  "distractor_notes": "A: uses the second ball's flight time for the first ball's height.\nC: neglects gravity during the second ball's flight.\nD: neglects gravity for the first ball."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

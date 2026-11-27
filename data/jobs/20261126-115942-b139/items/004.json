@@ -1,0 +1,67 @@
+{
+ "qno": 4,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 4,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Mole concept and percentage composition",
+  "archetype": "stoichiometry bookkeeping",
+  "brief": "Give the mass of a compound produced from a given mass of a reactant with excess of the other reactant (simple mass-to-mass stoichiometry using molar masses).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:35",
+   "2026s2:55",
+   "2026s2:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "$5.4$ g of aluminium is heated in excess chlorine gas: $$2\\text{Al} + 3\\text{Cl}_2 \\rightarrow 2\\text{AlCl}_3$$ What mass of $\\text{AlCl}_3$ is formed? (Atomic masses: Al $= 27$, Cl $= 35.5$)",
+ "options": [
+  "$26.7$ g",
+  "$21.3$ g",
+  "$13.35$ g",
+  "$53.4$ g"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "Moles of Al = 5.4 g / 27 g/mol = 0.2 mol.\nFrom stoichiometry, 2 mol of Al yields 2 mol of AlCl3, so moles of AlCl3 = 0.2 mol.\nMolar mass of AlCl3 = 27 + 3 * 35.5 = 133.5 g/mol.\nMass of AlCl3 = 0.2 mol * 133.5 g/mol = 26.7 g.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Moles of Al $= \\dfrac{5.4}{27} = 0.2$ mol.\nFrom $2\\text{Al} : 2\\text{AlCl}_3$, moles of $\\text{AlCl}_3 = 0.2$ mol.\nMolar mass of $\\text{AlCl}_3 = 27 + 3(35.5) = 133.5$ g mol$^{-1}$.\nMass of $\\text{AlCl}_3 = 0.2 \\times 133.5 = 26.7$ g.\n\nIndependent check: Moles of Al = 5.4 g / 27 g/mol = 0.2 mol.\nFrom stoichiometry, 2 mol of Al yields 2 mol of AlCl3, so moles of AlCl3 = 0.2 mol.\nMolar mass of AlCl3 = 27 + 3 * 35.5 = 133.5 g/mol.\nMass of AlCl3 = 0.2 mol * 133.5 g/mol = 26.7 g.",
+ "solution": "Al is limiting since Cl$_2$ is in excess. $n_{\\text{Al}} = \\dfrac{5.4}{27} = 0.2$ mol.\nFrom $2\\text{Al} \\rightarrow 2\\text{AlCl}_3$, $n_{\\text{AlCl}_3} = 0.2$ mol.\n$M(\\text{AlCl}_3) = 27 + 3(35.5) = 133.5$ g/mol.\n$$m = 0.2 \\times 133.5 = 26.7\\ \\text{g}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "$5.4$ g of aluminium is heated in excess chlorine gas: $$2\\text{Al} + 3\\text{Cl}_2 \\rightarrow 2\\text{AlCl}_3$$ What mass of $\\text{AlCl}_3$ is formed? (Atomic masses: Al $= 27$, Cl $= 35.5$)",
+  "options": [
+   "$13.35$ g",
+   "$21.3$ g",
+   "$26.7$ g",
+   "$53.4$ g"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Moles of Al $= \\dfrac{5.4}{27} = 0.2$ mol.\nFrom $2\\text{Al} : 2\\text{AlCl}_3$, moles of $\\text{AlCl}_3 = 0.2$ mol.\nMolar mass of $\\text{AlCl}_3 = 27 + 3(35.5) = 133.5$ g mol$^{-1}$.\nMass of $\\text{AlCl}_3 = 0.2 \\times 133.5 = 26.7$ g.",
+  "distractor_notes": "A ($13.35$ g): wrong mole ratio. The student takes 1 mol of $\\text{AlCl}_3$ per 2 mol of Al and halves the moles.\nB ($21.3$ g): partial answer. This is the mass of $\\text{Cl}_2$ consumed ($0.3 \\times 71$), not the mass of product.\nD ($53.4$ g): the student uses the dimer $\\text{Al}_2\\text{Cl}_6$ molar mass ($267$) with $0.2$ mol, which doubles the answer.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

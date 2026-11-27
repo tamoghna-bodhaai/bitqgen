@@ -1,0 +1,78 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Xenon fluorides – structure",
+  "archetype": "VSEPR counting",
+  "brief": "Give XeF2, XeF4, XeF6 and ask which are square planar / which have lone pairs on the central atom — count lone pairs via VSEPR and match to shapes.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:41",
+   "2022:55",
+   "2021:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following xenon compounds has the largest number of lone pairs on the central xenon atom?",
+ "options": [
+  "XeO3",
+  "XeF4",
+  "XeF6",
+  "XeF2"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": [
+  "figs/q058_optD_v1.png",
+  "figs/q058_optB_v1.png",
+  "figs/q058_optC_v1.png",
+  "figs/q058_optA_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "XeF₂ has 3 lone pairs on Xe; XeF₄ has 2; XeF₆ and XeO₃ each have 1. Thus XeF₂ has the most.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Xe has 8 valence electrons.\nXeF2: 2 bond pairs + 3 lone pairs = 5 pairs, so 3 lone pairs.\nXeF4: 4 bond pairs + 2 lone pairs = 6 pairs, so 2 lone pairs.\nXeF6: 6 bond pairs + 1 lone pair = 7 pairs, so 1 lone pair.\nXeO3: 3 bond pairs + 1 lone pair = 4 pairs, so 1 lone pair.\nThus XeF2 has the maximum of 3 lone pairs.\n\nIndependent check: XeF₂ has 3 lone pairs on Xe; XeF₄ has 2; XeF₆ and XeO₃ each have 1. Thus XeF₂ has the most.",
+ "solution": "The number of lone pairs on Xe is determined from its valence shell and the bonding regions around it.\nIn XeF₂, Xe has 2 bond pairs and 3 lone pairs; in XeF₄, XeF₆ and XeO₃, it has 2, 1 and 1 lone pairs, respectively.\nHence XeF₂ has the largest number of lone pairs: $3$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following xenon compounds has the largest number of lone pairs on the central xenon atom?",
+  "options": [
+   "XeF2",
+   "XeF4",
+   "XeF6",
+   "XeO3"
+  ],
+  "option_smiles": [
+   "F[Xe]F",
+   "F[Xe](F)(F)F",
+   "F[Xe](F)(F)(F)(F)F",
+   "O=[Xe](=O)=O"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Xe has 8 valence electrons.\nXeF2: 2 bond pairs + 3 lone pairs = 5 pairs, so 3 lone pairs.\nXeF4: 4 bond pairs + 2 lone pairs = 6 pairs, so 2 lone pairs.\nXeF6: 6 bond pairs + 1 lone pair = 7 pairs, so 1 lone pair.\nXeO3: 3 bond pairs + 1 lone pair = 4 pairs, so 1 lone pair.\nThus XeF2 has the maximum of 3 lone pairs.",
+  "distractor_notes": "B: XeF4 has 2 lone pairs, not the maximum. C: XeF6 has only 1 lone pair. D: XeO3 has only 1 lone pair, same as XeF6; neither is the maximum."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

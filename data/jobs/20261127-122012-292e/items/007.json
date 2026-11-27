@@ -1,0 +1,76 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Spring combinations",
+  "archetype": "equivalent spring constant",
+  "brief": "Diagram of two springs connected to a mass (series/parallel arrangement); ask for the time period of SHM using the equivalent spring constant.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:29",
+   "2021:6",
+   "2023s2:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "A block of mass m rests on a smooth horizontal surface. Two identical massless springs, each of force constant k, are connected in series between the block and a fixed wall, as shown in the figure. If the block is displaced slightly along the length of the springs and released, the time period of oscillation is",
+ "options": [
+  "2 pi sqrt(m/(2k))",
+  "2 pi sqrt(4m/k)",
+  "2 pi sqrt(m/k)",
+  "2 pi sqrt(2m/k)"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q007_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For two identical springs in series, 1/k_eff = 1/k + 1/k, so k_eff = k/2. Thus T = 2π√(m/k_eff) = 2π√(2m/k).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For two identical springs in series: 1/k_eq = 1/k + 1/k = 2/k, so k_eq = k/2. T = 2 pi sqrt(m/k_eq) = 2 pi sqrt(2m/k).\n\nIndependent check: For two identical springs in series, 1/k_eff = 1/k + 1/k, so k_eff = k/2. Thus T = 2π√(m/k_eff) = 2π√(2m/k).",
+ "solution": "For two identical springs in series, $\u001b[0m\\dfrac{1}{k_{\\text{eq}}}=\\dfrac{1}{k}+\\dfrac{1}{k}$, so $k_{\\text{eq}}=\\dfrac{k}{2}$.\n$$T=2\\pi\\sqrt{\\frac{m}{k_{\\text{eq}}}}=2\\pi\\sqrt{\\frac{2m}{k}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A block of mass m rests on a smooth horizontal surface. Two identical massless springs, each of force constant k, are connected in series between the block and a fixed wall, as shown in the figure. If the block is displaced slightly along the length of the springs and released, the time period of oscillation is",
+  "options": [
+   "2 pi sqrt(m/(2k))",
+   "2 pi sqrt(2m/k)",
+   "2 pi sqrt(m/k)",
+   "2 pi sqrt(4m/k)"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a horizontal smooth surface. On the left, draw a fixed vertical wall. On the right, draw a rectangular block labelled m. Between the wall and the block, draw two coil springs connected end to end in series; label each spring k. Draw a small horizontal arrow pointing right from the right side of the block labelled x to indicate displacement along the springs.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "For two identical springs in series: 1/k_eq = 1/k + 1/k = 2/k, so k_eq = k/2. T = 2 pi sqrt(m/k_eq) = 2 pi sqrt(2m/k).",
+  "distractor_notes": "A: uses parallel equivalent k_eq=2k; C: uses one spring only; D: uses incorrect series equivalent k/4."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

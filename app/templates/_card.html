@@ -1,0 +1,33 @@
+<div class="qcard {{ it.status }}" id="q{{ it.qno }}" data-qno="{{ it.qno }}">
+  <div class="qhead">
+    <b>Q{{ it.qno }}</b><span class="chip">{{ it.section }}</span><span>{{ it.slot.chapter }}{% if it.slot.subtopic %} · {{ it.slot.subtopic }}{% endif %}</span>
+    <span class="chip">difficulty {{ it.difficulty }}</span>
+    <span class="chip st-{{ it.status }}">{{ it.status }}</span>
+    {% if it.slot.lr_generator %}<span class="chip">generator: {{ it.slot.lr_generator }}</span>{% endif %}
+  </div>
+  <div class="qbody">
+    {{ it.stem|md|safe }}
+    {% if it.figure %}<div style="text-align:center"><img src="/jobs/{{ job.id }}/files/{{ it.figure.path }}" style="width:{{ [it.figure.width_pct * 4, 520]|min }}px"></div>{% endif %}
+    <div class="qopts">
+    {% for o in it.options %}{% set L = LETTERS[loop.index0] %}
+      <div class="o {{ 'key' if L == it.answer }}"><span>({{ L }})</span>
+        <div>{% if it.option_figs %}<img src="/jobs/{{ job.id }}/files/{{ it.option_figs[loop.index0] }}" style="width:110px">{% endif %}{{ o|md|safe }}</div></div>
+    {% endfor %}
+    </div>
+    <div class="qsol"><b>Correct Option: {{ it.answer }}</b><br>{{ (it.solution or '')|md|safe }}</div>
+  </div>
+  {% if it.notes %}<div class="notes">⚠ {{ it.notes|join(' · ') }}</div>{% endif %}
+  {% if it.verdicts %}<div class="verdicts">Solvers: {% for v in it.verdicts %}{{ v.stage }} ({{ (v.model or '').split('/')[-1] }}) → <b>{{ v.answer or 'error' }}</b>{% if v.issues %} [{{ v.issues|join('; ') }}]{% endif %}{{ ' · ' if not loop.last }}{% endfor %}</div>{% endif %}
+  <div class="toolbar" style="margin:10px 0 0">
+    <input type="text" class="instr" placeholder="Optional instruction, e.g. 'make it numerical', 'harder'" style="max-width:420px">
+    <button class="ghost" onclick="regen({{ it.qno }}, this)">Regenerate</button>
+    {% if it.status != 'ok' %}<button class="ghost" onclick="markOk({{ it.qno }})">Mark OK</button>{% endif %}
+  </div>
+  <details class="edit"><summary>Edit text</summary>
+    <label>Stem</label><textarea class="e-stem" rows="5">{{ it.stem }}</textarea>
+    {% for o in it.options %}<label>Option {{ LETTERS[loop.index0] }}</label><input type="text" class="e-opt" value="{{ o }}">{% endfor %}
+    <label>Answer</label><select class="e-ans">{% for L in LETTERS %}<option {{ 'selected' if L == it.answer }}>{{ L }}</option>{% endfor %}</select>
+    <label>Solution</label><textarea class="e-sol" rows="4">{{ it.solution }}</textarea>
+    <div style="margin-top:8px"><button onclick="saveEdit({{ it.qno }})">Save</button></div>
+  </details>
+</div>

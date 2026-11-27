@@ -1,0 +1,68 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Classical probability",
+  "archetype": "direct computation",
+  "brief": "classical probability of a simple event (dice, cards, balls) by counting favourable over total outcomes",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:91",
+   "2024s2:93",
+   "2024s2:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "A bag contains 4 red and 6 blue balls. Two balls are drawn at random without replacement. The probability that both balls drawn are red is",
+ "options": [
+  "4/25",
+  "2/15",
+  "1/15",
+  "8/15"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "P(2 red) = (4/10)(3/9) = 2/15.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Total ways = C(10,2) = 45. Favourable ways = C(4,2) = 6. Probability = 6/45 = 2/15.\n\nIndependent check: P(2 red) = (4/10)(3/9) = 2/15.",
+ "solution": "The probability that both balls are red is\n$$P=\\frac{\\binom{4}{2}}{\\binom{10}{2}}=\\frac{6}{45}=\\frac{2}{15}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A bag contains 4 red and 6 blue balls. Two balls are drawn at random without replacement. The probability that both balls drawn are red is",
+  "options": [
+   "2/15",
+   "4/25",
+   "1/15",
+   "8/15"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Total ways = C(10,2) = 45. Favourable ways = C(4,2) = 6. Probability = 6/45 = 2/15.",
+  "distractor_notes": "B: assumes draws are independent with replacement; C: halves the number of favourable pairs; D: probability of drawing one red and one blue."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

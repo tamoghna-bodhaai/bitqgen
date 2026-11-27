@@ -1,0 +1,68 @@
+{
+ "qno": 92,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 92,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Distance between parallel lines",
+  "archetype": "single-formula numerical",
+  "brief": "Find the perpendicular distance between two parallel lines given in general form; single formula application.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:114",
+   "2025s2:115",
+   "2024s1:116"
+  ]
+ },
+ "status": "ok",
+ "stem": "The distance between the parallel lines $3x+4y+5=0$ and $3x+4y+15=0$ is",
+ "options": [
+  "$2$",
+  "$10$",
+  "$5$",
+  "$1$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For parallel lines, distance = |15−5|/√(3²+4²) = 10/5 = 2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Distance between parallel lines $ax+by+c_1=0$ and $ax+by+c_2=0$ is $\\dfrac{|c_1 - c_2|}{\\sqrt{a^2 + b^2}}$. Here $a = 3$, $b = 4$, $c_1 = 5$, $c_2 = 15$. Distance $= \\dfrac{|5-15|}{\\sqrt{3^2+4^2}} = \\dfrac{10}{5} = 2$.\n\nIndependent check: For parallel lines, distance = |15−5|/√(3²+4²) = 10/5 = 2.",
+ "solution": "For parallel lines $ax+by+c_1=0$ and $ax+by+c_2=0$, distance is $\\dfrac{|c_1-c_2|}{\\sqrt{a^2+b^2}}$.\\n$$d=\\frac{|5-15|}{\\sqrt{3^2+4^2}}=\\frac{10}{5}=2$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The distance between the parallel lines $3x+4y+5=0$ and $3x+4y+15=0$ is",
+  "options": [
+   "$2$",
+   "$10$",
+   "$5$",
+   "$1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Distance between parallel lines $ax+by+c_1=0$ and $ax+by+c_2=0$ is $\\dfrac{|c_1 - c_2|}{\\sqrt{a^2 + b^2}}$. Here $a = 3$, $b = 4$, $c_1 = 5$, $c_2 = 15$. Distance $= \\dfrac{|5-15|}{\\sqrt{3^2+4^2}} = \\dfrac{10}{5} = 2$.",
+  "distractor_notes": "Common errors: Forgetting the denominator (option B: 10), mixing up c1 and c2 (option C: 5), or taking the difference of coefficients directly (option D: 1)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

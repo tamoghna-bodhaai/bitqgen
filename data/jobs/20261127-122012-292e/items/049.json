@@ -1,0 +1,68 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Stability of alkenes / heat of hydrogenation",
+  "archetype": "compare-and-rank",
+  "brief": "Given three alkenes (or their heats of hydrogenation), ask which is most/least stable — a typical ranking MCQ with reasoning via substitution.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:55",
+   "2026s1:45",
+   "2024s2:56"
+  ]
+ },
+ "status": "ok",
+ "stem": "The standard heats of hydrogenation of three isomeric alkenes are: but-1-ene = -126.8 kJ mol^-1, cis-but-2-ene = -119.7 kJ mol^-1, trans-but-2-ene = -112.6 kJ mol^-1. Their order of increasing stability is:",
+ "options": [
+  "but-1-ene < cis-but-2-ene < trans-but-2-ene",
+  "trans-but-2-ene < cis-but-2-ene < but-1-ene",
+  "cis-but-2-ene < trans-but-2-ene < but-1-ene",
+  "but-1-ene < trans-but-2-ene < cis-but-2-ene"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "All three hydrogenate to butane. A more exothermic hydrogenation indicates a less stable alkene, so stability increases: but-1-ene < cis-but-2-ene < trans-but-2-ene.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "A more stable alkene has a less exothermic, i.e. less negative, heat of hydrogenation. Therefore the order of increasing stability is but-1-ene (-126.8) < cis-but-2-ene (-119.7) < trans-but-2-ene (-112.6). Disubstituted alkenes are more stable than monosubstituted alkenes, and trans has less steric strain than cis.\n\nIndependent check: All three hydrogenate to butane. A more exothermic hydrogenation indicates a less stable alkene, so stability increases: but-1-ene < cis-but-2-ene < trans-but-2-ene.",
+ "solution": "A more stable alkene has a less exothermic (less negative) heat of hydrogenation.\nComparing the values, $-126.8 < -119.7 < -112.6\\ \\text{kJ mol}^{-1}$, so stability increases as the heat becomes less negative.\nThus, $\\text{but-1-ene} < \\text{cis-but-2-ene} < \\text{trans-but-2-ene}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The standard heats of hydrogenation of three isomeric alkenes are: but-1-ene = -126.8 kJ mol^-1, cis-but-2-ene = -119.7 kJ mol^-1, trans-but-2-ene = -112.6 kJ mol^-1. Their order of increasing stability is:",
+  "options": [
+   "but-1-ene < cis-but-2-ene < trans-but-2-ene",
+   "trans-but-2-ene < cis-but-2-ene < but-1-ene",
+   "cis-but-2-ene < trans-but-2-ene < but-1-ene",
+   "but-1-ene < trans-but-2-ene < cis-but-2-ene"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "A more stable alkene has a less exothermic, i.e. less negative, heat of hydrogenation. Therefore the order of increasing stability is but-1-ene (-126.8) < cis-but-2-ene (-119.7) < trans-but-2-ene (-112.6). Disubstituted alkenes are more stable than monosubstituted alkenes, and trans has less steric strain than cis.",
+  "distractor_notes": "B: order reversed; C: swaps cis and trans and puts but-1-ene last; D: swaps cis and trans only."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

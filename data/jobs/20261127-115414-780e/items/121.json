@@ -1,0 +1,68 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Line through intersection of lines",
+  "archetype": "family of lines",
+  "brief": "Equation of a line through the intersection point of two given lines with an additional condition (slope/parallel/perpendicular to a given line) using the family L1 + λL2 = 0.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:111",
+   "2026s1:105",
+   "2025s2:114"
+  ]
+ },
+ "status": "ok",
+ "stem": "The equation of the line passing through the intersection of the lines $x - 2y + 1 = 0$ and $3x + y - 4 = 0$ and perpendicular to the line $2x + 3y - 5 = 0$ is",
+ "options": [
+  "$3x - 2y + 1 = 0$",
+  "$2x + 3y - 5 = 0$",
+  "$x - 2y + 1 = 0$",
+  "$3x - 2y - 1 = 0$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The two lines intersect at (1,1). The given line has slope −2/3, so a perpendicular line has slope 3/2. Through (1,1), it is 3x − 2y − 1 = 0.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Intersection point: solve $x-2y+1=0$ and $3x+y-4=0$. From $3x+y=4$, $y=4-3x$. Substitute into first: $x-2(4-3x)+1=0 \\Rightarrow 7x-7=0 \\Rightarrow x=1$, $y=1$. Point is $(1,1)$. Slope of $2x+3y-5=0$ is $-2/3$, so perpendicular slope is $3/2$. Equation: $y-1=\\frac{3}{2}(x-1) \\Rightarrow 3x-2y-1=0$.\n\nIndependent check: The two lines intersect at (1,1). The given line has slope −2/3, so a perpendicular line has slope 3/2. Through (1,1), it is 3x − 2y − 1 = 0.",
+ "solution": "Solving $x-2y+1=0$ and $3x+y-4=0$ gives their intersection $(1,1)$. The line $2x+3y-5=0$ has slope $-\\frac{2}{3}$, so the perpendicular slope is $\\frac{3}{2}$.\n$$y-1=\\frac{3}{2}(x-1)\\;\\Longrightarrow\\;3x-2y-1=0$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the line passing through the intersection of the lines $x - 2y + 1 = 0$ and $3x + y - 4 = 0$ and perpendicular to the line $2x + 3y - 5 = 0$ is",
+  "options": [
+   "$3x - 2y + 1 = 0$",
+   "$2x + 3y - 5 = 0$",
+   "$x - 2y + 1 = 0$",
+   "$3x - 2y - 1 = 0$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Intersection point: solve $x-2y+1=0$ and $3x+y-4=0$. From $3x+y=4$, $y=4-3x$. Substitute into first: $x-2(4-3x)+1=0 \\Rightarrow 7x-7=0 \\Rightarrow x=1$, $y=1$. Point is $(1,1)$. Slope of $2x+3y-5=0$ is $-2/3$, so perpendicular slope is $3/2$. Equation: $y-1=\\frac{3}{2}(x-1) \\Rightarrow 3x-2y-1=0$.",
+  "distractor_notes": "A: sign error on constant when writing perpendicular line; B: mistake of parallel instead of perpendicular; C: picks one of the original intersecting lines as answer"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

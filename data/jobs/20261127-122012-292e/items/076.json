@@ -1,0 +1,68 @@
+{
+ "qno": 76,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 76,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Carbanion stability and aromaticity",
+  "archetype": "match the column",
+  "brief": "Column I has 4 organic reactions/species, Column II has mechanisms/stability ranks/products — ask for the correct matching set.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:45",
+   "2024s2:53",
+   "2022:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "Match the species in Column I with their classification in Column II.\n\nColumn I:\nP. Cyclopentadienyl anion\nQ. Cyclopentadienyl cation\nR. Cyclopropenyl cation\nS. Cyclopropenyl radical\n\nColumn II:\n1. Aromatic (6 pi electrons)\n2. Anti-aromatic (4 pi electrons)\n3. Aromatic (2 pi electrons)\n4. Non-aromatic (3 pi electrons)\n\nChoose the correct matching set.",
+ "options": [
+  "P-1, Q-2, R-3, S-4",
+  "P-2, Q-1, R-4, S-3",
+  "P-1, Q-2, R-4, S-3",
+  "P-3, Q-4, R-1, S-2"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "P has 6 π electrons and is aromatic; Q has 4 and is anti-aromatic; R has 2 and is aromatic; S has 3 and is non-aromatic. Hence P-1, Q-2, R-3, S-4.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Cyclopentadienyl anion has 6 pi electrons (4n+2, n=1) and is aromatic. Cyclopentadienyl cation has 4 pi electrons and is anti-aromatic. Cyclopropenyl cation has 2 pi electrons (4n+2, n=0) and is aromatic. Cyclopropenyl radical has 3 pi electrons and is non-aromatic. Hence P-1, Q-2, R-3, S-4.\n\nIndependent check: P has 6 π electrons and is aromatic; Q has 4 and is anti-aromatic; R has 2 and is aromatic; S has 3 and is non-aromatic. Hence P-1, Q-2, R-3, S-4.",
+ "solution": "By Hückel’s rule, a planar cyclic conjugated system is aromatic with $4n+2$ π electrons and anti-aromatic with $4n$ π electrons.\nCyclopentadienyl anion has $6$ π electrons (aromatic), while the cation has $4$ (anti-aromatic).\nCyclopropenyl cation has $2$ π electrons (aromatic); the radical has $3$ π electrons and is non-aromatic.\nHence, $P$–1, $Q$–2, $R$–3, $S$–4.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Match the species in Column I with their classification in Column II.\n\nColumn I:\nP. Cyclopentadienyl anion\nQ. Cyclopentadienyl cation\nR. Cyclopropenyl cation\nS. Cyclopropenyl radical\n\nColumn II:\n1. Aromatic (6 pi electrons)\n2. Anti-aromatic (4 pi electrons)\n3. Aromatic (2 pi electrons)\n4. Non-aromatic (3 pi electrons)\n\nChoose the correct matching set.",
+  "options": [
+   "P-1, Q-2, R-3, S-4",
+   "P-2, Q-1, R-4, S-3",
+   "P-1, Q-2, R-4, S-3",
+   "P-3, Q-4, R-1, S-2"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Cyclopentadienyl anion has 6 pi electrons (4n+2, n=1) and is aromatic. Cyclopentadienyl cation has 4 pi electrons and is anti-aromatic. Cyclopropenyl cation has 2 pi electrons (4n+2, n=0) and is aromatic. Cyclopropenyl radical has 3 pi electrons and is non-aromatic. Hence P-1, Q-2, R-3, S-4.",
+  "distractor_notes": "B swaps cyclopentadienyl and cyclopropenyl cation classifications; C mislabels cyclopropenyl cation as 4 pi antiaromatic; D reverses all and treats cyclopropenyl radical as aromatic."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

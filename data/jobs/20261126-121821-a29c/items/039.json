@@ -1,0 +1,85 @@
+{
+ "qno": 39,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 39,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Ozonolysis",
+  "archetype": "reaction product (structures)",
+  "brief": "Draw the structure of a substituted cycloalkene or alkene (figure) and ask for the carbonyl fragment(s) obtained after ozonolysis with reductive workup.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:45",
+   "2026s1:53",
+   "2025s1:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "The alkene, as shown in the figure, undergoes ozonolysis followed by reductive workup with $\\text{Zn}/\\text{H}_2\\text{O}$. The major product formed is:",
+ "options": [
+  "heptanedial",
+  "6-oxoheptanal",
+  "heptane-2,6-dione",
+  "6-oxoheptanoic acid"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q039_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q039_optA_v0.png",
+  "figs/q039_optB_v0.png",
+  "figs/q039_optC_v0.png",
+  "figs/q039_optD_v0.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Figure shows 1-methylcyclohexene. Ozonolysis with Zn/H2O (reductive) cleaves C1=C2 without further oxidation: the fully substituted carbon (bearing CH3) gives a methyl ketone, the CH carbon gives an aldehyde. Ring opening yields CH3-CO-(CH2)4-CHO, a 7-carbon keto-aldehyde = 6-oxoheptanal, matching option B's structure. (A) would require unsubstituted cycloheptene; (C) requires 1,2-dimethylcyclopentene; (D) is the oxidative-workup product.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. The starting material is 1-methylcyclohexene.\n2. In ozonolysis, the carbon-carbon double bond ($\\text{C}=\\text{C}$) is cleaved.\n3. Under reductive conditions ($\\text{Zn}/\\text{H}_2\\text{O}$), the cleavage proceeds without oxidation of aldehydes to carboxylic acids:\n   - Carbon C1 has a methyl substituent and a ring carbon (disubstituted alkene carbon, no hydrogen attached). Upon cleavage, it forms a ketone carbonyl: $-\\text{C}(=\\text{O})-\\text{CH}_3$.\n   - Carbon C2 has one ring carbon and one hydrogen atom (monosubstituted alkene carbon). Upon cleavage, it forms an aldehyde carbonyl: $-\\text{CH}=\\text{O}$.\n4. Opening the six-membered ring gives an acyclic 7-carbon chain:\n$$\\text{O}=\\text{CH}-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{C}(=\\text{O})-\\text{CH}_3$$\n5. Numbering from the principal functional group (aldehyde carbon as C1):\n- C1: $-\\text{CHO}$\n- C2 to C5: four $-\\text{CH}_2-$ groups\n- C6: $-\\text{C}(=\\text{O})-$\n- C7: $-\\text{CH}_3$\n\nThe IUPAC name of the product is 6-oxoheptanal.\n\nIndependent check: Figure shows 1-methylcyclohexene. Ozonolysis with Zn/H2O (reductive) cleaves C1=C2 without further oxidation: the fully substituted carbon (bearing CH3) gives a methyl ketone, the CH carbon gives an aldehyde. Ring opening yields CH3-CO-(CH2)4-CHO, a 7-carbon keto-aldehyde = 6-oxoheptanal, matching option B's structure. (A) would require unsubstituted cycloheptene; (C) requires 1,2-dimethylcyclopentene; (D) is the oxidative-workup product.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The alkene, as shown in the figure, undergoes ozonolysis followed by reductive workup with $\\text{Zn}/\\text{H}_2\\text{O}$. The major product formed is:",
+  "options": [
+   "heptanedial",
+   "6-oxoheptanal",
+   "heptane-2,6-dione",
+   "6-oxoheptanoic acid"
+  ],
+  "option_smiles": [
+   "O=CCCCCCC=O",
+   "O=CCCCCC(=O)C",
+   "CC(=O)CCCC(=O)C",
+   "CC(=O)CCCCC(=O)O"
+  ],
+  "answer": "B",
+  "working": "1. The starting material is 1-methylcyclohexene.\n2. In ozonolysis, the carbon-carbon double bond ($\\text{C}=\\text{C}$) is cleaved.\n3. Under reductive conditions ($\\text{Zn}/\\text{H}_2\\text{O}$), the cleavage proceeds without oxidation of aldehydes to carboxylic acids:\n   - Carbon C1 has a methyl substituent and a ring carbon (disubstituted alkene carbon, no hydrogen attached). Upon cleavage, it forms a ketone carbonyl: $-\\text{C}(=\\text{O})-\\text{CH}_3$.\n   - Carbon C2 has one ring carbon and one hydrogen atom (monosubstituted alkene carbon). Upon cleavage, it forms an aldehyde carbonyl: $-\\text{CH}=\\text{O}$.\n4. Opening the six-membered ring gives an acyclic 7-carbon chain:\n$$\\text{O}=\\text{CH}-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{CH}_2-\\text{C}(=\\text{O})-\\text{CH}_3$$\n5. Numbering from the principal functional group (aldehyde carbon as C1):\n- C1: $-\\text{CHO}$\n- C2 to C5: four $-\\text{CH}_2-$ groups\n- C6: $-\\text{C}(=\\text{O})-$\n- C7: $-\\text{CH}_3$\n\nThe IUPAC name of the product is 6-oxoheptanal.",
+  "distractor_notes": "Option A (heptanedial): Arises if the methyl substituent at C1 is overlooked, assuming both alkene carbons yield aldehydes (as with unsubstituted cyclohexene).\nOption C (heptane-2,6-dione): Arises if both ends of the cleaved double bond are mistakenly assumed to become ketones.\nOption D (6-oxoheptanoic acid): Arises from assuming oxidative workup (e.g. with $\\text{H}_2\\text{O}_2$) instead of reductive workup, which would oxidize the aldehyde to a carboxylic acid.",
+  "figure": {
+   "kind": "chem",
+   "description": "A skeletal structure of 1-methylcyclohexene: a six-membered ring (cyclohexene) oriented with a double bond between carbon-1 and carbon-2, and an exocyclic single bond from carbon-1 to a methyl group (labeled CH3). No other substituents or charges are present.",
+   "smiles": "CC1=CCCCC1"
+  },
+  "difficulty_estimate": 1
+ }
+}

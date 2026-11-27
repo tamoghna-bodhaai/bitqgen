@@ -1,0 +1,68 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Energy level transitions",
+  "archetype": "excitation level counting",
+  "brief": "An electron in a hydrogen-like atom/species absorbs a photon of given energy; ask which excited state it reaches and what transitions are possible on de-excitation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:27",
+   "2024s1:21",
+   "2022:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "A hydrogen atom in its ground state absorbs a photon of energy 12.75 eV and the electron jumps to a higher energy level. Taking the ground state energy of hydrogen as -13.6 eV, the number of spectral lines possible when the electron subsequently returns to the ground state is",
+ "options": [
+  "6",
+  "4",
+  "3",
+  "10"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The absorbed photon raises the energy to −13.6 + 12.75 = −0.85 eV, which corresponds to n = 4. The possible transitions among levels 1–4 give 4(4−1)/2 = 6 spectral lines.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Final energy = -13.6 + 12.75 = -0.85 eV. Since E_n = -13.6/n^2, n^2 = 13.6/0.85 = 16, so n = 4. Number of emission lines = n(n-1)/2 = 4*3/2 = 6.\n\nIndependent check: The absorbed photon raises the energy to −13.6 + 12.75 = −0.85 eV, which corresponds to n = 4. The possible transitions among levels 1–4 give 4(4−1)/2 = 6 spectral lines.",
+ "solution": "The excited-state energy is $E=-13.6+12.75=-0.85\\,\\text{eV}$. Using $E_n=-13.6/n^2$, we get $n=4$.\nThe number of possible spectral lines is $\\dfrac{n(n-1)}{2}=\\dfrac{4\\times3}{2}=6$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A hydrogen atom in its ground state absorbs a photon of energy 12.75 eV and the electron jumps to a higher energy level. Taking the ground state energy of hydrogen as -13.6 eV, the number of spectral lines possible when the electron subsequently returns to the ground state is",
+  "options": [
+   "3",
+   "4",
+   "6",
+   "10"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Final energy = -13.6 + 12.75 = -0.85 eV. Since E_n = -13.6/n^2, n^2 = 13.6/0.85 = 16, so n = 4. Number of emission lines = n(n-1)/2 = 4*3/2 = 6.",
+  "distractor_notes": "3 is n - 1; 4 is the excited level number; 10 is n(n+1)/2."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

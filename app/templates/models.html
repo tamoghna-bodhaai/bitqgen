@@ -1,0 +1,11 @@
+{% extends "base.html" %}{% set nav = "models" %}
+{% block body %}
+<h1>Models per stage</h1>
+<p class="sub">OpenRouter, from <code>config/models.yaml</code> (edit the file to change). The active default profile is <b>{{ active }}</b>; each job can choose its own.</p>
+{% for name, stages in profiles.items() %}
+<div class="card" style="margin-bottom:16px"><h2 style="margin-top:0">{{ name }}{% if name == active %} <span class="chip st-ok">default</span>{% endif %}</h2>
+<table class="t"><tr><th>Stage</th><th>Model</th><th>Fallbacks</th><th>Reasoning</th><th>Tools</th></tr>
+{% for st, c in stages.items() %}<tr><td>{{ st }}</td><td><code>{{ c.model }}</code></td><td class="small">{{ (c.fallbacks or [])|join(', ') }}</td><td>{{ c.reasoning or '' }}</td><td>{{ (c.tools or [])|join(', ') }}</td></tr>{% endfor %}
+</table></div>
+{% endfor %}
+{% endblock %}

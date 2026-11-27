@@ -1,0 +1,68 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous DE",
+  "archetype": "substitution y = vx",
+  "brief": "Solve a homogeneous dy/dx = f(y/x) by substituting y = vx; separate variables and integrate to get the general solution.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:104",
+   "2024s1:92",
+   "2025s1:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of the differential equation $\\frac{dy}{dx}=1+\\frac{y^2}{x^2}$ is",
+ "options": [
+  "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{\\sqrt{3}}{2}\\ln|x|=C$",
+  "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{2}{\\sqrt{3}}\\ln|x|=C$",
+  "$\\tan^{-1}\\frac{2y+x}{\\sqrt{3}x}-\\frac{\\sqrt{3}}{2}\\ln|x|=C$",
+  "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}+\\frac{\\sqrt{3}}{2}\\ln|x|=C$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set v=y/x, so y'=v+xv'. Then dv/(v²−v+1)=dx/x, yielding (2/√3) arctan((2v−1)/√3)=ln|x|+C. Rearranging gives option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Set $y=vx$, so $\\frac{dy}{dx}=v+x\\frac{dv}{dx}$.\n$x\\frac{dv}{dx}=v^2-v+1$.\n$\\frac{dv}{(v-\\frac12)^2+\\frac34}=\\frac{dx}{x}$.\n$\\frac{2}{sqrt{3}}\\tan^{-1}\\frac{2v-1}{sqrt{3}}=ln|x|+C$.\nSubstitute $v=\\frac{y}{x}$ and rearrange to obtain option A.\n\nIndependent check: Set v=y/x, so y'=v+xv'. Then dv/(v²−v+1)=dx/x, yielding (2/√3) arctan((2v−1)/√3)=ln|x|+C. Rearranging gives option A.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of the differential equation $\\frac{dy}{dx}=1+\\frac{y^2}{x^2}$ is",
+  "options": [
+   "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{\\sqrt{3}}{2}\\ln|x|=C$",
+   "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{2}{\\sqrt{3}}\\ln|x|=C$",
+   "$\\tan^{-1}\\frac{2y+x}{\\sqrt{3}x}-\\frac{\\sqrt{3}}{2}\\ln|x|=C$",
+   "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}+\\frac{\\sqrt{3}}{2}\\ln|x|=C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Set $y=vx$, so $\\frac{dy}{dx}=v+x\\frac{dv}{dx}$.\n$x\\frac{dv}{dx}=v^2-v+1$.\n$\\frac{dv}{(v-\\frac12)^2+\\frac34}=\\frac{dx}{x}$.\n$\\frac{2}{sqrt{3}}\\tan^{-1}\\frac{2v-1}{sqrt{3}}=ln|x|+C$.\nSubstitute $v=\\frac{y}{x}$ and rearrange to obtain option A.",
+  "distractor_notes": "B: uses the wrong coefficient after integrating the completed-square denominator.\nC: uses the wrong sign when forming $2v-1$.\nD: uses the wrong sign when rearranging the logarithmic term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

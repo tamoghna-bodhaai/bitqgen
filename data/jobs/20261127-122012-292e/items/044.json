@@ -1,0 +1,70 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Preparation of ethers",
+  "archetype": "reagent selection",
+  "brief": "Pick the correct reagent from 4 options to convert a phenol to an aryl ether / to cleave a given aryl alkyl ether under controlled conditions.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:51",
+   "2025s1:43",
+   "2025s1:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "The most suitable reagent combination for converting phenol to ethyl phenyl ether is:",
+ "options": [
+  "C$_2$H$_5$OH and concentrated H$_2$SO$_4$",
+  "C$_2$H$_5$Br and excess NaOH(aq)",
+  "C$_2$H$_5$ONa and bromobenzene",
+  "C$_2$H$_5$Cl and anhydrous AlCl$_3$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "NaOH converts phenol to phenoxide, which reacts with primary ethyl bromide by S_N2 to form ethyl phenyl ether (Williamson synthesis).",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [
+    "Aqueous excess NaOH can compete with phenoxide by hydrolyzing ethyl bromide, so the conditions are not ideal; the intended ether-forming option is still A."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Phenol reacts with NaOH to give sodium phenoxide, which undergoes Williamson ether synthesis with ethyl bromide (SN2) to form ethyl phenyl ether. Option (B) is used for symmetrical ethers from alcohols; (C) fails because aryl halides do not undergo SN2 without activation; (D) leads to Friedel-Crafts alkylation of the ring, producing ethyl substituted phenols, not an ether.\n\nIndependent check: NaOH converts phenol to phenoxide, which reacts with primary ethyl bromide by S_N2 to form ethyl phenyl ether (Williamson synthesis).",
+ "solution": "NaOH converts phenol into sodium phenoxide, which reacts with primary ethyl bromide via $S_N2$ (Williamson ether synthesis):\n$$\\mathrm{C_6H_5OH + NaOH \\to C_6H_5ONa + H_2O,\\quad C_6H_5ONa + C_2H_5Br \\to C_6H_5OC_2H_5 + NaBr}$$\nThus ethyl phenyl ether is formed using $\\mathrm{C_2H_5Br}$ and excess $\\mathrm{NaOH(aq)}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The most suitable reagent combination for converting phenol to ethyl phenyl ether is:",
+  "options": [
+   "C$_2$H$_5$Br and excess NaOH(aq)",
+   "C$_2$H$_5$OH and concentrated H$_2$SO$_4$",
+   "C$_2$H$_5$ONa and bromobenzene",
+   "C$_2$H$_5$Cl and anhydrous AlCl$_3$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Phenol reacts with NaOH to give sodium phenoxide, which undergoes Williamson ether synthesis with ethyl bromide (SN2) to form ethyl phenyl ether. Option (B) is used for symmetrical ethers from alcohols; (C) fails because aryl halides do not undergo SN2 without activation; (D) leads to Friedel-Crafts alkylation of the ring, producing ethyl substituted phenols, not an ether.",
+  "distractor_notes": "B: would give diethyl ether from ethanol but not from phenol; C: bromobenzene is unreactive to SN2; D: Friedel-Crafts alkylation gives ring-alkylated phenols, not an ether."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "E2 elimination",
+  "archetype": "reaction product",
+  "brief": "Dehydrohalogenation of a given alkyl halide with alc. KOH; ask major Saytzeff vs Hofmann product.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:55",
+   "2026s1:40",
+   "2021:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "The major product formed when 2-bromo-3-methylbutane is heated with alcoholic KOH is:",
+ "options": [
+  "2-methylbut-2-ene",
+  "3-methylbut-1-ene",
+  "2-methylbut-1-ene",
+  "pent-2-ene"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alcoholic KOH promotes β-elimination. Removing a β-hydrogen from C3 forms the more substituted alkene, 2-methylbut-2-ene, which is the major product by Zaitsev’s rule.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "E2 elimination with alc. KOH follows Saytzeff rule. Substrate has β-hydrogens at C-1 (primary) and C-3 (tertiary). Elimination from C-3 gives the more substituted alkene, 2-methylbut-2-ene, as the major product.\n\nIndependent check: Alcoholic KOH promotes β-elimination. Removing a β-hydrogen from C3 forms the more substituted alkene, 2-methylbut-2-ene, which is the major product by Zaitsev’s rule.",
+ "solution": "Alcoholic KOH promotes E2 elimination; by Saytzeff’s rule, the more substituted alkene is the major product.\n$$\\text{2-bromo-3-methylbutane} \\xrightarrow[-\\mathrm{HBr}]{\\text{alc. KOH}} \\text{2-methylbut-2-ene}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The major product formed when 2-bromo-3-methylbutane is heated with alcoholic KOH is:",
+  "options": [
+   "3-methylbut-1-ene",
+   "2-methylbut-2-ene",
+   "2-methylbut-1-ene",
+   "pent-2-ene"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "E2 elimination with alc. KOH follows Saytzeff rule. Substrate has β-hydrogens at C-1 (primary) and C-3 (tertiary). Elimination from C-3 gives the more substituted alkene, 2-methylbut-2-ene, as the major product.",
+  "distractor_notes": "A: Hofmann product (less substituted alkene) if student ignores Saytzeff rule; C: isomer with different position of double bond and methyl group from misidentification of beta-hydrogens; D: alkene with no branching, from imagining a different substrate."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

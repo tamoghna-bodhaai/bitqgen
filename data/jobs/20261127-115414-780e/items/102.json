@@ -1,0 +1,68 @@
+{
+ "qno": 102,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 102,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Symmetric matrices",
+  "archetype": "conceptual",
+  "brief": "A 3×3 matrix is given as symmetric/skew-symmetric mix: test which statements about A, Aᵀ and their combination are true; no heavy computation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:105",
+   "2026s1:117",
+   "2026s1:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A = \\begin{bmatrix} 0 & 2 & -3 \\\\ -2 & 0 & 5 \\\\ 3 & -5 & 0 \\end{bmatrix}$. Which of the following is true?",
+ "options": [
+  "$A$ is symmetric",
+  "$A^2$ is skew-symmetric",
+  "$A - A^T = O$",
+  "$A + A^T = O$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The diagonal entries are zero and each off-diagonal pair is opposite, so A^T = -A. Therefore A + A^T = O.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Observe that $A^T = \\begin{bmatrix} 0 & -2 & 3 \\\\ 2 & 0 & -5 \\\\ -3 & 5 & 0 \\end{bmatrix} = -A$.\nThus $A$ is skew-symmetric.\n$A + A^T = A + (-A) = O$, so (B) is true.\n$A - A^T = A - (-A) = 2A \\neq O$, so (C) is false.\n$A^2$: $(A^2)^T = (A^T)^2 = (-A)^2 = A^2$, so $A^2$ is symmetric, not skew-symmetric; (D) false.\n\nIndependent check: The diagonal entries are zero and each off-diagonal pair is opposite, so A^T = -A. Therefore A + A^T = O.",
+ "solution": "$$A^T=\\begin{bmatrix}0&-2&3\\\\2&0&-5\\\\-3&5&0\\end{bmatrix}=-A.\\]\nHence, $A$ is skew-symmetric and $A+A^T=A-A=O$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A = \\begin{bmatrix} 0 & 2 & -3 \\\\ -2 & 0 & 5 \\\\ 3 & -5 & 0 \\end{bmatrix}$. Which of the following is true?",
+  "options": [
+   "$A$ is symmetric",
+   "$A + A^T = O$",
+   "$A - A^T = O$",
+   "$A^2$ is skew-symmetric"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Observe that $A^T = \\begin{bmatrix} 0 & -2 & 3 \\\\ 2 & 0 & -5 \\\\ -3 & 5 & 0 \\end{bmatrix} = -A$.\nThus $A$ is skew-symmetric.\n$A + A^T = A + (-A) = O$, so (B) is true.\n$A - A^T = A - (-A) = 2A \\neq O$, so (C) is false.\n$A^2$: $(A^2)^T = (A^T)^2 = (-A)^2 = A^2$, so $A^2$ is symmetric, not skew-symmetric; (D) false.",
+  "distractor_notes": "Option A: symmetric property misapplied; Option C: would imply A is symmetric; Option D: A² is actually symmetric, not skew-symmetric."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

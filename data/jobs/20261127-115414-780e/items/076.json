@@ -1,0 +1,68 @@
+{
+ "qno": 76,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 76,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-shift code",
+  "brief": "A word is coded by shifting each letter a specific number of positions; apply the same rule to a new word to get the code.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:88",
+   "2026s1:78",
+   "2024s2:71"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a certain code, TREE is written as VTGG. How is LEAF written in that code?",
+ "options": [
+  "NGDH",
+  "NGCI",
+  "MGCH",
+  "NGCH"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Each letter shifts forward by 2: L→N, E→G, A→C, F→H.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Each letter is shifted +2: T→V, R→T, E→G, E→G gives VTGG. Applying the same rule to LEAF: L→N, E→G, A→C, F→H, giving NGCH. The other options change one letter (NGCI, MGCH, NGDH), so only A fits.\n\nIndependent check: Each letter shifts forward by 2: L→N, E→G, A→C, F→H.",
+ "solution": "Each letter is shifted forward by 2 places: $T\\to V$, $R\\to T$, $E\\to G$. Applying the same rule, $L\\to N$, $E\\to G$, $A\\to C$, $F\\to H$, so LEAF is coded as NGCH.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a certain code, TREE is written as VTGG. How is LEAF written in that code?",
+  "options": [
+   "NGCH",
+   "NGCI",
+   "MGCH",
+   "NGDH"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Each letter is shifted +2: T→V, R→T, E→G, E→G gives VTGG. Applying the same rule to LEAF: L→N, E→G, A→C, F→H, giving NGCH. The other options change one letter (NGCI, MGCH, NGDH), so only A fits.",
+  "distractor_notes": "B: last letter H→I (+3), C: first letter L→M (+1), D: third letter C→D (+1)."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

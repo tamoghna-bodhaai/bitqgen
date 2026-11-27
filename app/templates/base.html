@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}bitQgen studio{% endblock %}</title>
+<link rel="stylesheet" href="/ui/app.css">
+<link rel="stylesheet" href="/static/katex/katex.min.css">
+<script defer src="/static/katex/katex.min.js"></script>
+<script defer src="/static/katex/auto-render.min.js"></script>
+<script>
+function renderMath(el){ if(window.renderMathInElement) renderMathInElement(el||document.body,{delimiters:[
+  {left:"$$",right:"$$",display:true},{left:"$",right:"$",display:false}],throwOnError:false}); }
+document.addEventListener("DOMContentLoaded",()=>setTimeout(()=>renderMath(),50));
+</script>
+</head><body>
+<header class="top">
+  <a class="brand" href="/">bit<span>Q</span>gen studio</a>
+  <nav>
+    <a href="/" class="{{ 'on' if nav=='home' }}">Generate</a>
+    <a href="/corpus" class="{{ 'on' if nav=='corpus' }}">Corpus</a>
+    <a href="/syllabus" class="{{ 'on' if nav=='syllabus' }}">Syllabus</a>
+    <a href="/models" class="{{ 'on' if nav=='models' }}">Models</a>
+  </nav>
+</header>
+<main>{% block body %}{% endblock %}</main>
+</body></html>

@@ -1,0 +1,68 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Linear combination",
+  "archetype": "solve linear system",
+  "brief": "Express one vector as a linear combination of the other two by equating components; solve the resulting simultaneous equations for the scalars.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:119",
+   "2026s2:120",
+   "2025s2:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\vec a=\\hat i+2\\hat j$, $\\vec b=3\\hat i-\\hat j$ and $\\vec c=7\\hat i$, then the scalars $m,n$ satisfying $\\vec c=m\\vec a+n\\vec b$ are",
+ "options": [
+  "$(1,2)$",
+  "$(2,1)$",
+  "$(1,\\dfrac{4}{3})$",
+  "$(\\dfrac{7}{2},0)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Equating components gives m+3n=7 and 2m−n=0. Thus n=2m, so m=1 and n=2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$m+3n=7,\\quad 2m-n=0$.\nThus $n=2m$, so $7m=7$ and $(m,n)=(1,2)$.\n\nIndependent check: Equating components gives m+3n=7 and 2m−n=0. Thus n=2m, so m=1 and n=2.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $\\vec a=\\hat i+2\\hat j$, $\\vec b=3\\hat i-\\hat j$ and $\\vec c=7\\hat i$, then the scalars $m,n$ satisfying $\\vec c=m\\vec a+n\\vec b$ are",
+  "options": [
+   "$(1,2)$",
+   "$(2,1)$",
+   "$(1,\\dfrac{4}{3})$",
+   "$(\\dfrac{7}{2},0)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$m+3n=7,\\quad 2m-n=0$.\nThus $n=2m$, so $7m=7$ and $(m,n)=(1,2)$.",
+  "distractor_notes": "B: interchanges the two coefficients. C: makes an incorrect substitution when solving the component equations. D: uses only the $\\hat i$ component and ignores the $\\hat j$ component."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

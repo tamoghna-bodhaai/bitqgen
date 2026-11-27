@@ -1,0 +1,68 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Binary system / circular orbit",
+  "archetype": "energy conservation",
+  "brief": "Binary/circular orbit: a satellite or two-body system in circular orbit; use energy conservation to relate total energy, kinetic energy and potential energy of an orbiting mass, or compute escape-speed change from a stated orbit radius.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:17",
+   "2025s1:2",
+   "2023s2:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two identical stars, each of mass $m$, revolve in circular orbits about their common centre of mass. If their separation is $d$, what is the total mechanical energy of the system?",
+ "options": [
+  "$-\\dfrac{Gm^2}{2d}$",
+  "$-\\dfrac{Gm^2}{4d}$",
+  "$-\\dfrac{Gm^2}{d}$",
+  "$+\\dfrac{Gm^2}{2d}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For each star, equating gravitational force to centripetal force gives \\(v^2=Gm/(2d)\\). Therefore \\(K_{\\rm total}=mv^2=Gm^2/(2d)\\), while \\(U=-Gm^2/d\\). Thus \\(E=K+U=-Gm^2/(2d)\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each star orbits at radius $d/2$: $\\dfrac{Gm^2}{d^2}=\\dfrac{mv^2}{d/2}$, so $v^2=\\dfrac{Gm}{2d}$.\n$K_{\\rm total}=2\\left(\\dfrac12mv^2\\right)=\\dfrac{Gm^2}{2d}$\n$U=-\\dfrac{Gm^2}{d}$\n$E=K_{\\rm total}+U=-\\dfrac{Gm^2}{2d}$\n\nIndependent check: For each star, equating gravitational force to centripetal force gives \\(v^2=Gm/(2d)\\). Therefore \\(K_{\\rm total}=mv^2=Gm^2/(2d)\\), while \\(U=-Gm^2/d\\). Thus \\(E=K+U=-Gm^2/(2d)\\).",
+ "solution": "Each star orbits at radius $d/2$, so equating gravitational and centripetal forces gives\n$$\\frac{Gm^2}{d^2}=\\frac{mv^2}{d/2}\\quad\\Rightarrow\\quad v^2=\\frac{Gm}{2d}.$$\nThus $K_{\\rm total}=mv^2=\\frac{Gm^2}{2d}$ and $U=-\\frac{Gm^2}{d}$, hence $E=K+U=-\\frac{Gm^2}{2d}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two identical stars, each of mass $m$, revolve in circular orbits about their common centre of mass. If their separation is $d$, what is the total mechanical energy of the system?",
+  "options": [
+   "$-\\dfrac{Gm^2}{4d}$",
+   "$-\\dfrac{Gm^2}{2d}$",
+   "$-\\dfrac{Gm^2}{d}$",
+   "$+\\dfrac{Gm^2}{2d}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Each star orbits at radius $d/2$: $\\dfrac{Gm^2}{d^2}=\\dfrac{mv^2}{d/2}$, so $v^2=\\dfrac{Gm}{2d}$.\n$K_{\\rm total}=2\\left(\\dfrac12mv^2\\right)=\\dfrac{Gm^2}{2d}$\n$U=-\\dfrac{Gm^2}{d}$\n$E=K_{\\rm total}+U=-\\dfrac{Gm^2}{2d}$",
+  "distractor_notes": "A: undercounts the total kinetic energy by a factor of two. C: uses the gravitational potential energy alone. D: gives the total energy the wrong sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

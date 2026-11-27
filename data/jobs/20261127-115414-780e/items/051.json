@@ -1,0 +1,68 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order half-life",
+  "archetype": "graph interpretation",
+  "brief": "Graph of [A] vs t or concentration ratio; ask how many half-lives elapsed for a given concentration drop (first order).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:39",
+   "2024s2:32",
+   "2021:71"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a first‑order reaction, the concentration of the reactant decreases from $0.8\\ \\text{M}$ to $0.1\\ \\text{M}$. The number of half‑lives that have elapsed is",
+ "options": [
+  "2",
+  "4",
+  "3",
+  "5"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The concentration changes by a factor of 0.1/0.8 = 1/8 = (1/2)^3, so 3 half-lives have elapsed.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Fraction remaining = 0.1/0.8 = 1/8 = (1/2)³. Therefore 3 half‑lives have passed.\n\nIndependent check: The concentration changes by a factor of 0.1/0.8 = 1/8 = (1/2)^3, so 3 half-lives have elapsed.",
+ "solution": "After $n$ half-lives, the fraction remaining is $(1/2)^n$.\n$$\\frac{0.1}{0.8}=\\frac18=\\left(\\frac12\\right)^3$$\nHence, $3$ half-lives have elapsed.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For a first‑order reaction, the concentration of the reactant decreases from $0.8\\ \\text{M}$ to $0.1\\ \\text{M}$. The number of half‑lives that have elapsed is",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "5"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Fraction remaining = 0.1/0.8 = 1/8 = (1/2)³. Therefore 3 half‑lives have passed.",
+  "distractor_notes": "2 would correspond to a factor of 4; 4 to factor 16; 5 to factor 32."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

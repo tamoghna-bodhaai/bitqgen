@@ -1,0 +1,68 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Radioactive decay, half-life",
+  "archetype": "half-life counting",
+  "brief": "Fraction/mass remaining after n half-lives; count half-lives from given total time",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:25",
+   "2026s2:5",
+   "2025s1:8"
+  ]
+ },
+ "status": "ok",
+ "stem": "A radioactive nuclide has a half-life of $5$ h. What fraction of its initial nuclei remains undecayed after $15$ h?",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{1}{16}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "15 h is 3 half-lives, so the remaining fraction is $(1/2)^3=1/8$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n = \\dfrac{15\\ \\text{h}}{5\\ \\text{h}} = 3$\n$\\dfrac{N}{N_0} = \\left(\\dfrac{1}{2}\\right)^n = \\dfrac{1}{8}$\n\nIndependent check: 15 h is 3 half-lives, so the remaining fraction is $(1/2)^3=1/8$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A radioactive nuclide has a half-life of $5$ h. What fraction of its initial nuclei remains undecayed after $15$ h?",
+  "options": [
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{8}$",
+   "$\\dfrac{1}{16}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$n = \\dfrac{15\\ \\text{h}}{5\\ \\text{h}} = 3$\n$\\dfrac{N}{N_0} = \\left(\\dfrac{1}{2}\\right)^n = \\dfrac{1}{8}$",
+  "distractor_notes": "A: counts only one half-life. B: counts only two half-lives. D: counts one extra half-life."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

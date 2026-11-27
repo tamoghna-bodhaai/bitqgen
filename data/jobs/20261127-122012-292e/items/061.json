@@ -1,0 +1,68 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Electronegativity trends",
+  "archetype": "find incorrect order",
+  "brief": "Four given orders (e.g. ionisation enthalpy, electron gain enthalpy, atomic radius, electronegativity) — pick the one that is INCORRECT for the specified set of elements.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:55",
+   "2023s2:54",
+   "2022:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following electronegativity orders is incorrect?",
+ "options": [
+  "F > O > N > C",
+  "Cl > S > P > Si",
+  "N > P > As > Sb",
+  "I > Br > Cl > F"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Electronegativity decreases down a group. The halogen order is F > Cl > Br > I, so option (C) is incorrect.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Electronegativity increases across a period from left to right and decreases down a group. A: F (4.0) > O (3.5) > N (3.0) > C (2.5), correct. B: Cl (3.0) > S (2.5) > P (2.1) > Si (1.8), correct. C: For halogens, the actual order is F (4.0) > Cl (3.0) > Br (2.8) > I (2.5), so I > Br > Cl > F is reversed and incorrect. D: N (3.0) > P (2.1) > As (2.0) > Sb (1.9), correct.\n\nIndependent check: Electronegativity decreases down a group. The halogen order is F > Cl > Br > I, so option (C) is incorrect.",
+ "solution": "Electronegativity decreases down a group. For halogens, the order is $\\mathrm{F>Cl>Br>I}$; hence the reverse order $\\mathrm{I>Br>Cl>F}$ is incorrect.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following electronegativity orders is incorrect?",
+  "options": [
+   "F > O > N > C",
+   "Cl > S > P > Si",
+   "I > Br > Cl > F",
+   "N > P > As > Sb"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Electronegativity increases across a period from left to right and decreases down a group. A: F (4.0) > O (3.5) > N (3.0) > C (2.5), correct. B: Cl (3.0) > S (2.5) > P (2.1) > Si (1.8), correct. C: For halogens, the actual order is F (4.0) > Cl (3.0) > Br (2.8) > I (2.5), so I > Br > Cl > F is reversed and incorrect. D: N (3.0) > P (2.1) > As (2.0) > Sb (1.9), correct.",
+  "distractor_notes": "A: encodes the correct period 2 trend; selected only by misreading the word incorrect.\nB: encodes the correct period 3 trend; selected only by misreading the word incorrect.\nD: encodes the correct group 15 trend; selected only by misreading the word incorrect."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Capacitance",
+  "subtopic": "Charge sharing energy loss",
+  "archetype": "before/after energy",
+  "brief": "Charged capacitor connected to an uncharged one; compute common potential and heat lost in the process.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:16",
+   "2022:10",
+   "2023s1:7"
+  ]
+ },
+ "status": "ok",
+ "stem": "A 5 muF capacitor is charged to 100 V and is then connected across an uncharged 20 muF capacitor. The heat generated in the connecting wires is",
+ "options": [
+  "4 mJ",
+  "5 mJ",
+  "20 mJ",
+  "25 mJ"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Initial energy = ½(5 μF)(100 V)² = 25 mJ. Charge is conserved, so the final voltage is 20 V; final energy = ½(25 μF)(20 V)² = 5 mJ. Heat generated = 25 − 5 = 20 mJ.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Initial energy Ui = 1/2 * C1 * V^2 = 1/2 * 5 * 10^-6 * 100^2 = 25 mJ.\nCommon potential Vc = C1 * V / (C1 + C2) = (5 * 10^-6 * 100) / (25 * 10^-6) = 20 V.\nFinal energy Uf = 1/2 * (C1 + C2) * Vc^2 = 1/2 * 25 * 10^-6 * 20^2 = 5 mJ.\nHeat lost = Ui - Uf = 25 - 5 = 20 mJ.\n\nIndependent check: Initial energy = ½(5 μF)(100 V)² = 25 mJ. Charge is conserved, so the final voltage is 20 V; final energy = ½(25 μF)(20 V)² = 5 mJ. Heat generated = 25 − 5 = 20 mJ.",
+ "solution": "Charge is conserved, so the common potential is $V_f=\\dfrac{C_1V}{C_1+C_2}=\\dfrac{5\\times100}{25}=20\\,\\text{V}$.\n$$Q_{\\text{heat}}=\\frac12 C_1V^2-\\frac12(C_1+C_2)V_f^2=25-5=20\\,\\text{mJ}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A 5 muF capacitor is charged to 100 V and is then connected across an uncharged 20 muF capacitor. The heat generated in the connecting wires is",
+  "options": [
+   "4 mJ",
+   "5 mJ",
+   "20 mJ",
+   "25 mJ"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Initial energy Ui = 1/2 * C1 * V^2 = 1/2 * 5 * 10^-6 * 100^2 = 25 mJ.\nCommon potential Vc = C1 * V / (C1 + C2) = (5 * 10^-6 * 100) / (25 * 10^-6) = 20 V.\nFinal energy Uf = 1/2 * (C1 + C2) * Vc^2 = 1/2 * 25 * 10^-6 * 20^2 = 5 mJ.\nHeat lost = Ui - Uf = 25 - 5 = 20 mJ.",
+  "distractor_notes": "4 mJ: final energy stored in the 20 muF capacitor alone; 5 mJ: total final stored energy; 25 mJ: initial stored energy."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

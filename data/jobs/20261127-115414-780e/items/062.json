@@ -1,0 +1,80 @@
+{
+ "qno": 62,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 62,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS)",
+  "archetype": "para jumble (first sentence)",
+  "brief": "Four jumbled sentences on a simple descriptive topic; the first sentence is fixed in place and students arrange the remaining three (PQR-style).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:70",
+   "2026s2:69",
+   "2026s2:61"
+  ]
+ },
+ "status": "ok",
+ "stem": "**The sentence given below is the first sentence of a paragraph. Arrange the sentences P, Q and R to form a coherent paragraph.**\n\n1. A well-tended garden offers quiet pleasure through every part of the year.\n\nP. In spring its beds fill with bright blossoms that draw bees and butterflies in large numbers.\n\nQ. By midsummer those colours have given way to deeper greens and sturdy shrubs.\n\nR. Even in winter the bare branches and evergreen hedges lend the garden a calm outline.\n\nWhich of the following arrangements is correct?",
+ "options": [
+  "PRQ",
+  "PQR",
+  "QPR",
+  "RQP"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": [
+  "figs/q062_optB_v1.png",
+  "figs/q062_optA_v1.png",
+  "figs/q062_optC_v1.png",
+  "figs/q062_optD_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The sentences follow the seasonal progression: spring (P), midsummer (Q), then winter (R), giving PQR.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The option images show chemical structures and are unrelated to the paragraph-ordering question; they conflict with the textual options."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Seasonal chain: P (spring blossoms) -> Q (midsummer, 'those colours' refers back to P's blossoms) -> R (winter closes the year). So PQR. QPR fails because 'those colours' has no antecedent. PRQ puts winter before midsummer, and RQP begins at winter then jumps back to spring; both break the seasonal order.\n\nIndependent check: The sentences follow the seasonal progression: spring (P), midsummer (Q), then winter (R), giving PQR.",
+ "solution": "The sentences follow the seasonal progression: spring in P, midsummer in Q, and winter in R. Also, “those colours” in Q refers to the blossoms in P; hence the order is PQR.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**The sentence given below is the first sentence of a paragraph. Arrange the sentences P, Q and R to form a coherent paragraph.**\n\n1. A well-tended garden offers quiet pleasure through every part of the year.\n\nP. In spring its beds fill with bright blossoms that draw bees and butterflies in large numbers.\n\nQ. By midsummer those colours have given way to deeper greens and sturdy shrubs.\n\nR. Even in winter the bare branches and evergreen hedges lend the garden a calm outline.\n\nWhich of the following arrangements is correct?",
+  "options": [
+   "PQR",
+   "PRQ",
+   "QPR",
+   "RQP"
+  ],
+  "option_smiles": [
+   "C",
+   "CC",
+   "CCC",
+   "CCO"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Seasonal chain: P (spring blossoms) -> Q (midsummer, 'those colours' refers back to P's blossoms) -> R (winter closes the year). So PQR. QPR fails because 'those colours' has no antecedent. PRQ puts winter before midsummer, and RQP begins at winter then jumps back to spring; both break the seasonal order.",
+  "distractor_notes": "B, C and D each place a sentence before the one its linking word or season requires, so only PQR reads coherently."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

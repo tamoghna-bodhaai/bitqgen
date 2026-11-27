@@ -1,0 +1,68 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Dimensional analysis",
+  "archetype": "dimension computation",
+  "brief": "Given a relation involving an unknown quantity, deduce the dimensional formula of the unknown (e.g. from a force or energy equation).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:2",
+   "2023s2:9",
+   "2023s2:21"
+  ]
+ },
+ "status": "ok",
+ "stem": "The velocity $v$ of a particle moving along a straight line is given by $v = A t + B x$, where $x$ is displacement and $t$ is time. The dimensional formula of $\\dfrac{A}{B}$ is:",
+ "options": [
+  "$[\\text{L} \\text{T}^{-2}]$",
+  "$[\\text{L}]$",
+  "$[\\text{L} \\text{T}^{-1}]$",
+  "$[\\text{T}^{-1}]$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From [At]=[v], [A]=LT⁻². From [Bx]=[v], [B]=T⁻¹. Thus [A/B]=LT⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[v] = \\text{LT}^{-1}$.\n\nFrom $At$: $[A][\\text{T}] = [\\text{LT}^{-1}] \\Rightarrow [A] = \\text{LT}^{-2}$.\n\nFrom $Bx$: $[B][\\text{L}] = [\\text{LT}^{-1}] \\Rightarrow [B] = \\text{T}^{-1}$.\n\n$\\left[\\dfrac{A}{B}\\right] = \\dfrac{\\text{LT}^{-2}}{\\text{T}^{-1}} = \\text{LT}^{-1}$.\n\nIndependent check: From [At]=[v], [A]=LT⁻². From [Bx]=[v], [B]=T⁻¹. Thus [A/B]=LT⁻¹.",
+ "solution": "Since $[v]=\\text{L T}^{-1}$, dimensional homogeneity gives $[A]\\text{T}=[v]$ and $[B]\\text{L}=[v]$. Thus $[A]=\\text{L T}^{-2}$ and $[B]=\\text{T}^{-1}$, so $$\\left[\\frac{A}{B}\\right]=\\text{L T}^{-1}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The velocity $v$ of a particle moving along a straight line is given by $v = A t + B x$, where $x$ is displacement and $t$ is time. The dimensional formula of $\\dfrac{A}{B}$ is:",
+  "options": [
+   "$[\\text{L} \\text{T}^{-2}]$",
+   "$[\\text{L} \\text{T}^{-1}]$",
+   "$[\\text{L}]$",
+   "$[\\text{T}^{-1}]$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$[v] = \\text{LT}^{-1}$.\n\nFrom $At$: $[A][\\text{T}] = [\\text{LT}^{-1}] \\Rightarrow [A] = \\text{LT}^{-2}$.\n\nFrom $Bx$: $[B][\\text{L}] = [\\text{LT}^{-1}] \\Rightarrow [B] = \\text{T}^{-1}$.\n\n$\\left[\\dfrac{A}{B}\\right] = \\dfrac{\\text{LT}^{-2}}{\\text{T}^{-1}} = \\text{LT}^{-1}$.",
+  "distractor_notes": "(A) dimension of A; (C) dimension of length only; (D) dimension of B"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

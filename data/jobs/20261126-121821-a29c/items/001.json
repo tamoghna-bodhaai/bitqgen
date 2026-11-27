@@ -1,0 +1,75 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Zener diode",
+  "archetype": "circuit reduction",
+  "brief": "Zener diode in series with a resistor across a DC supply; circuit diagram given; find current through/load voltage or power dissipated in the Zener",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:24",
+   "2024s1:27",
+   "2025s2:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "A Zener diode with a breakdown voltage of $6\\text{ V}$ is connected in series with a $300\\ \\Omega$ resistor across a $15\\text{ V}$ DC source, as shown in the figure. The current flowing through the Zener diode is:",
+ "options": [
+  "$20\\text{ mA}$",
+  "$30\\text{ mA}$",
+  "$50\\text{ mA}$",
+  "$70\\text{ mA}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q001_stem_v0.png",
+  "width_pct": 55,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Zener is reverse-biased and in breakdown, so it holds 6 V. Voltage across R = 15 − 6 = 9 V. Series current I = 9/300 = 0.03 A = 30 mA, which is also the Zener current since there is no load branch.",
+   "answer": "B",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Since the applied DC supply voltage ($V = 15\\text{ V}$) is greater than the breakdown voltage ($V_Z = 6\\text{ V}$), the Zener diode operates in the reverse breakdown region.\\n\\nThe potential difference across the series resistor $R$ is:\\n$$V_R = V - V_Z = 15\\text{ V} - 6\\text{ V} = 9\\text{ V}$$\\n\\nSince the circuit is a single series loop, the current through the Zener diode equals the current through the resistor:\\n$$I_Z = \\dfrac{V_R}{R} = \\dfrac{9\\text{ V}}{300\\ \\Omega} = 0.03\\text{ A} = 30\\text{ mA}$$\n\nIndependent check: Zener is reverse-biased and in breakdown, so it holds 6 V. Voltage across R = 15 − 6 = 9 V. Series current I = 9/300 = 0.03 A = 30 mA, which is also the Zener current since there is no load branch.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A Zener diode with a breakdown voltage of $6\\text{ V}$ is connected in series with a $300\\ \\Omega$ resistor across a $15\\text{ V}$ DC source, as shown in the figure. The current flowing through the Zener diode is:",
+  "options": [
+   "$20\\text{ mA}$",
+   "$30\\text{ mA}$",
+   "$50\\text{ mA}$",
+   "$70\\text{ mA}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Since the applied DC supply voltage ($V = 15\\text{ V}$) is greater than the breakdown voltage ($V_Z = 6\\text{ V}$), the Zener diode operates in the reverse breakdown region.\\n\\nThe potential difference across the series resistor $R$ is:\\n$$V_R = V - V_Z = 15\\text{ V} - 6\\text{ V} = 9\\text{ V}$$\\n\\nSince the circuit is a single series loop, the current through the Zener diode equals the current through the resistor:\\n$$I_Z = \\dfrac{V_R}{R} = \\dfrac{9\\text{ V}}{300\\ \\Omega} = 0.03\\text{ A} = 30\\text{ mA}$$",
+  "distractor_notes": "$20\\text{ mA}$ comes from mistakenly taking the voltage across the resistor to be $V_Z$ ($6/300 = 20\\text{ mA}$).\\n$50\\text{ mA}$ comes from neglecting the Zener voltage drop altogether ($15/300 = 50\\text{ mA}$).\\n$70\\text{ mA}$ comes from a sign error, adding $V_Z$ to the supply voltage ($(15 + 6)/300 = 70\\text{ mA}$).",
+  "figure": {
+   "kind": "circuit",
+   "description": "A single rectangular loop circuit. On the left vertical branch is a DC voltage source labeled '$15\\text{ V}$' with the positive terminal (long line) on top and negative terminal (short line) at the bottom. On the top horizontal branch is a resistor labeled '$R = 300\\ \\Omega$'. On the right vertical branch is a Zener diode connected in reverse bias: the cathode (horizontal line with bent ends forming a Z shape) is at the top connected to the top branch, and the triangular anode points downward, connected to the bottom branch. The diode is labeled '$V_Z = 6\\text{ V}$'. The bottom branch is a continuous straight wire completing the loop.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1
+ }
+}

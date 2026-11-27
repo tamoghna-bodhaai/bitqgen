@@ -1,0 +1,67 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor",
+  "archetype": "colligative to structure",
+  "brief": "Given molality and observed vs theoretical freezing point depression, compute van 't Hoff factor and infer association/dissociation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:41",
+   "2024s1:46",
+   "2026s1:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $0.10\\ \\text{m}$ solution of a solute in benzene shows a freezing point depression of $0.256\\ \\text{K}$. Given $K_\\text{f} = 5.12\\ \\text{K kg mol}^{-1}$ for benzene, the van 't Hoff factor ($i$) and the state of the solute in the solution are:",
+ "options": [
+  "$i = 0.50$, complete dissociation into two ions",
+  "$i = 0.50$, complete dimerization",
+  "$i = 2.00$, complete dimerization",
+  "$i = 2.00$, complete dissociation into two ions"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "i = ΔTf/(Kf·m) = 0.256/(5.12×0.10) = 0.50. i < 1 indicates association; complete dimerization gives i = 1/2 = 0.50, consistent.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Calculate the theoretical (normal) freezing point depression assuming no association or dissociation:\n$$\\Delta T_{\\text{f, theoretical}} = K_\\text{f} \\cdot m = 5.12\\ \\text{K kg mol}^{-1} \\times 0.10\\ \\text{mol kg}^{-1} = 0.512\\ \\text{K}$$\n\n2. Compute the van 't Hoff factor ($i$):\n$$i = \\dfrac{\\Delta T_{\\text{f, observed}}}{\\Delta T_{\\text{f, theoretical}}} = \\dfrac{0.256\\ \\text{K}}{0.512\\ \\text{K}} = 0.50$$\n\n3. Infer the state of the solute:\nSince $i < 1$, the solute undergoes association. For complete dimerization ($2\\text{A} \\rightarrow \\text{A}_2$):\n$$i = 1 - \\alpha\\left(1 - \\dfrac{1}{n}\\right) = 1 - 1\\left(1 - \\dfrac{1}{2}\\right) = 0.50$$\nThus, the solute undergoes complete dimerization.\n\nIndependent check: i = ΔTf/(Kf·m) = 0.256/(5.12×0.10) = 0.50. i < 1 indicates association; complete dimerization gives i = 1/2 = 0.50, consistent.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $0.10\\ \\text{m}$ solution of a solute in benzene shows a freezing point depression of $0.256\\ \\text{K}$. Given $K_\\text{f} = 5.12\\ \\text{K kg mol}^{-1}$ for benzene, the van 't Hoff factor ($i$) and the state of the solute in the solution are:",
+  "options": [
+   "$i = 0.50$, complete dissociation into two ions",
+   "$i = 0.50$, complete dimerization",
+   "$i = 2.00$, complete dimerization",
+   "$i = 2.00$, complete dissociation into two ions"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. Calculate the theoretical (normal) freezing point depression assuming no association or dissociation:\n$$\\Delta T_{\\text{f, theoretical}} = K_\\text{f} \\cdot m = 5.12\\ \\text{K kg mol}^{-1} \\times 0.10\\ \\text{mol kg}^{-1} = 0.512\\ \\text{K}$$\n\n2. Compute the van 't Hoff factor ($i$):\n$$i = \\dfrac{\\Delta T_{\\text{f, observed}}}{\\Delta T_{\\text{f, theoretical}}} = \\dfrac{0.256\\ \\text{K}}{0.512\\ \\text{K}} = 0.50$$\n\n3. Infer the state of the solute:\nSince $i < 1$, the solute undergoes association. For complete dimerization ($2\\text{A} \\rightarrow \\text{A}_2$):\n$$i = 1 - \\alpha\\left(1 - \\dfrac{1}{n}\\right) = 1 - 1\\left(1 - \\dfrac{1}{2}\\right) = 0.50$$\nThus, the solute undergoes complete dimerization.",
+  "distractor_notes": "A: Computes $i = 0.50$ correctly, but confuses association with dissociation.\nC: Takes the reciprocal ratio $i = \\Delta T_\\text{theoretical} / \\Delta T_\\text{observed} = 2.00$, and mistakenly thinks a factor of 2 indicates dimerization.\nD: Takes the reciprocal ratio $i = \\Delta T_\\text{theoretical} / \\Delta T_\\text{observed} = 2.00$, and associates $i > 1$ with dissociation into two ions.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

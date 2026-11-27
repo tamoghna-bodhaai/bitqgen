@@ -1,0 +1,68 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Pair of straight lines",
+  "archetype": "construct-equation",
+  "brief": "Find the joint equation of the two lines through origin that are perpendicular to the two lines given by a combined second-degree equation; ask which reduced pair matches.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:114",
+   "2026s1:104",
+   "2025s1:115"
+  ]
+ },
+ "status": "ok",
+ "stem": "The two lines through the origin, each perpendicular to one of the lines represented by $5x^2+4xy-y^2-13x+5y-6=0$, have joint equation",
+ "options": [
+  "$5x^2+4xy-y^2=0$",
+  "$5y^2+4xy-x^2=0$",
+  "$y^2+4xy-5x^2=0$",
+  "$5y^2-4xy-x^2=0$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The quadratic part factors as (5x-y)(x+y), giving slopes 5 and -1. Their perpendicular slopes are -1/5 and 1, so the joint equation is (5y+x)(y-x)=0, or 5y²-4xy-x²=0.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Q_2=5x^2+4xy-y^2$; $Q_2(1,m)=5+4m-m^2=0\\Rightarrow m=5,-1$.<br>$m_\\perp=-1/m\\Rightarrow -\\dfrac15,1$.<br>$(5y+x)(y-x)=0\\Rightarrow 5y^2-4xy-x^2=0$.\n\nIndependent check: The quadratic part factors as (5x-y)(x+y), giving slopes 5 and -1. Their perpendicular slopes are -1/5 and 1, so the joint equation is (5y+x)(y-x)=0, or 5y²-4xy-x²=0.",
+ "solution": "The slopes of the lines represented by the quadratic part satisfy $5+4m-m^2=0$, giving $m=5,-1$. Their perpendicular slopes are $-1/5,1$, so the joint equation is\n$$\\left(y+\\frac{x}{5}\\right)(y-x)=0\\quad\\Rightarrow\\quad 5y^2-4xy-x^2=0.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "The two lines through the origin, each perpendicular to one of the lines represented by $5x^2+4xy-y^2-13x+5y-6=0$, have joint equation",
+  "options": [
+   "$5x^2+4xy-y^2=0$",
+   "$5y^2+4xy-x^2=0$",
+   "$y^2+4xy-5x^2=0$",
+   "$5y^2-4xy-x^2=0$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$Q_2=5x^2+4xy-y^2$; $Q_2(1,m)=5+4m-m^2=0\\Rightarrow m=5,-1$.<br>$m_\\perp=-1/m\\Rightarrow -\\dfrac15,1$.<br>$(5y+x)(y-x)=0\\Rightarrow 5y^2-4xy-x^2=0$.",
+  "distractor_notes": "A: Uses the original line directions instead of their perpendiculars.\nB: Takes reciprocal slopes but omits the negative sign.\nC: Negates the original slopes but forgets to take reciprocals."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

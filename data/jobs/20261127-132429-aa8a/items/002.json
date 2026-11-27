@@ -1,0 +1,76 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Massive rope",
+  "archetype": "free-body equations",
+  "brief": "Massive rope (or Atwood variant) over a frictionless pulley in the diagram; write equations for both bodies and solve for acceleration or tension symbolically, with a light connecting segment.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:16",
+   "2021:4",
+   "2025s2:4"
+  ]
+ },
+ "status": "ok",
+ "stem": "A block of mass $m$ on a smooth table is connected by a light string over a frictionless pulley to a uniform hanging rope of mass $2m$, as shown. The tension in the string is (take acceleration due to gravity as $g$).",
+ "options": [
+  "$\\dfrac{2mg}{3}$",
+  "$\\dfrac{mg}{3}$",
+  "$mg$",
+  "$\\dfrac{4mg}{3}$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q002_stem_v2.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the block, T = ma. For the hanging rope, 2mg - T = 2ma. Solving gives a = 2g/3 and T = 2mg/3.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "$T=ma$\n$2mg-T=2ma$\n$2mg=3ma\\Rightarrow a=\\dfrac{2g}{3}$\n$T=ma=\\dfrac{2mg}{3}$\n\nIndependent check: For the block, T = ma. For the hanging rope, 2mg - T = 2ma. Solving gives a = 2g/3 and T = 2mg/3.",
+ "solution": "For the block, $T=ma$. For the hanging rope, $2mg-T=2ma$; hence $2mg=3ma$ and $a=\\dfrac{2g}{3}$. Therefore, $T=ma=\\boxed{\\dfrac{2mg}{3}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A block of mass $m$ on a smooth table is connected by a light string over a frictionless pulley to a uniform hanging rope of mass $2m$, as shown. The tension in the string is (take acceleration due to gravity as $g$).",
+  "options": [
+   "$\\dfrac{mg}{3}$",
+   "$\\dfrac{2mg}{3}$",
+   "$mg$",
+   "$\\dfrac{4mg}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a horizontal smooth table with a block resting on its left portion, labelled $m$. At the table's right edge, draw a fixed frictionless pulley. Draw a light string from the block's right face horizontally to the pulley, over its top, then vertically downward; connect its lower end to the top of a straight uniform hanging rope labelled $2m$. The rope hangs freely beside the table. Label the connecting string “light string” and the pulley “frictionless”.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$T=ma$\n$2mg-T=2ma$\n$2mg=3ma\\Rightarrow a=\\dfrac{2g}{3}$\n$T=ma=\\dfrac{2mg}{3}$",
+  "distractor_notes": "A: Uses one-third of the rope’s weight as the string tension. C: Sets the tension equal to the block’s weight. D: Adds the rope’s weight and the block’s weight as the driving force."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

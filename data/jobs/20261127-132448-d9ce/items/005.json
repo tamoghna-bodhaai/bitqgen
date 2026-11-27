@@ -1,0 +1,70 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "de Broglie wavelength of accelerated particles",
+  "archetype": "ratio comparison",
+  "brief": "Compare de Broglie wavelengths of an electron and a proton accelerated through the same potential difference.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:16",
+   "2023s1:29",
+   "2024s1:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron and a proton, initially at rest, each gain the same kinetic energy in an accelerator. If $m_p/m_e=1840$, what is the ratio of the proton’s de Broglie wavelength to the electron’s?",
+ "options": [
+  "$1/1840$",
+  "$1/\\sqrt{1840}$",
+  "$\\sqrt{1840}$",
+  "$1840$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For equal kinetic energy in the nonrelativistic regime, p = √(2mK) and λ = h/p. Hence λₚ/λₑ = √(mₑ/mₚ) = 1/√1840.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [
+    "The nonrelativistic assumption is unstated; at relativistic kinetic energies the wavelength ratio depends on the energy."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mK}}$ for kinetic energy $K$.\\\\\n$\\dfrac{\\lambda_p}{\\lambda_e}=\\sqrt{\\dfrac{m_eK_e}{m_pK_p}}=\\sqrt{\\dfrac{m_e}{m_p}}=\\dfrac{1}{\\sqrt{1840}}$.\n\nIndependent check: For equal kinetic energy in the nonrelativistic regime, p = √(2mK) and λ = h/p. Hence λₚ/λₑ = √(mₑ/mₚ) = 1/√1840.",
+ "solution": "For a particle with kinetic energy $K$, $\u00024\\lambda=\\dfrac{h}{\\sqrt{2mK}}$.\nSince $K_p=K_e$,\n$$\\dfrac{\\lambda_p}{\\lambda_e}=\\sqrt{\\dfrac{m_e}{m_p}}=\\dfrac{1}{\\sqrt{1840}}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An electron and a proton, initially at rest, each gain the same kinetic energy in an accelerator. If $m_p/m_e=1840$, what is the ratio of the proton’s de Broglie wavelength to the electron’s?",
+  "options": [
+   "$1/1840$",
+   "$1/\\sqrt{1840}$",
+   "$\\sqrt{1840}$",
+   "$1840$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mK}}$ for kinetic energy $K$.\\\\\n$\\dfrac{\\lambda_p}{\\lambda_e}=\\sqrt{\\dfrac{m_eK_e}{m_pK_p}}=\\sqrt{\\dfrac{m_e}{m_p}}=\\dfrac{1}{\\sqrt{1840}}$.",
+  "distractor_notes": "A: uses the mass ratio directly. C: takes the reciprocal ratio. D: uses the reciprocal mass ratio directly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

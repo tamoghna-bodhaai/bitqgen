@@ -1,0 +1,68 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Conservation of mechanical energy",
+  "archetype": "energy conservation",
+  "brief": "A block slides from rest down a curved frictionless track onto a rough horizontal stretch; use energy conservation plus work-energy theorem to find where it stops.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:15",
+   "2021:7",
+   "2025s1:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "A block starts from rest and descends through a vertical height of $5$ m along a frictionless curved track. It then crosses a horizontal rough stretch whose first $4$ m has coefficient of friction $0.25$, followed by a portion with coefficient $0.5$. Taking $g=10\\ \\text{m s}^{-2}$, how far from the start of the rough stretch does it stop?",
+ "options": [
+  "$12$ m",
+  "$10$ m",
+  "$8$ m",
+  "$20$ m"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The block reaches the rough stretch with 50 J/kg of kinetic energy. The first 4 m dissipates 0.25×10×4 = 10 J/kg, leaving 40 J/kg. At μ = 0.5, friction dissipates 5 J/kg per metre, so it travels 8 m further. Total distance = 12 m.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Energy per unit mass at entry: $gh=50$ J kg$^{-1}$.\nWork per unit mass over first $4$ m: $0.25(10)(4)=10$ J kg$^{-1}$.\nRemaining energy: $40$ J kg$^{-1}$; distance in second portion $=40/[0.5(10)]=8$ m.\nTotal distance $=4+8=12$ m.\n\nIndependent check: The block reaches the rough stretch with 50 J/kg of kinetic energy. The first 4 m dissipates 0.25×10×4 = 10 J/kg, leaving 40 J/kg. At μ = 0.5, friction dissipates 5 J/kg per metre, so it travels 8 m further. Total distance = 12 m.",
+ "solution": "By conservation of energy, the kinetic energy per unit mass at the rough stretch is $gh=10(5)=50\\,\\text{J kg}^{-1}$. The first $4$ m dissipates $\\mu g d=0.25(10)(4)=10\\,\\text{J kg}^{-1}$, leaving $40\\,\\text{J kg}^{-1}$.\n$$d_2=\\frac{40}{0.5(10)}=8\\,\\text{m},\\qquad d=4+8=12\\,\\text{m}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A block starts from rest and descends through a vertical height of $5$ m along a frictionless curved track. It then crosses a horizontal rough stretch whose first $4$ m has coefficient of friction $0.25$, followed by a portion with coefficient $0.5$. Taking $g=10\\ \\text{m s}^{-2}$, how far from the start of the rough stretch does it stop?",
+  "options": [
+   "$8$ m",
+   "$10$ m",
+   "$12$ m",
+   "$20$ m"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Energy per unit mass at entry: $gh=50$ J kg$^{-1}$.\nWork per unit mass over first $4$ m: $0.25(10)(4)=10$ J kg$^{-1}$.\nRemaining energy: $40$ J kg$^{-1}$; distance in second portion $=40/[0.5(10)]=8$ m.\nTotal distance $=4+8=12$ m.",
+  "distractor_notes": "A: reports only the distance in the second portion.\nB: uses $\\mu=0.5$ over the entire rough stretch.\nD: uses $\\mu=0.25$ over the entire rough stretch."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 146,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 146,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Consistency of linear systems",
+  "archetype": "Δ = 0 and Δx = 0",
+  "brief": "Find the value of a parameter making a 3-variable linear system consistent with infinitely many solutions (determinant conditions).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:104",
+   "2024s1:101",
+   "2026s1:116"
+  ]
+ },
+ "status": "ok",
+ "stem": "For what value of $\\lambda$ does the system $x+y+z=3$, $2x-y+z=2$, $3x+\\lambda z=5$ have infinitely many solutions?",
+ "options": [
+  "$1$",
+  "$2$",
+  "$3$",
+  "$5$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From the first two equations, x=2y-1 and z=4-3y. The third becomes (6-3λ)y=4(2-λ), which holds for every y when λ=2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The third equation must be the sum of the first two for consistency when the coefficient matrix is singular.\nAdding the first two equations gives $3x+2z=5$.\nHence $\\lambda=2$; the first two equations are independent, so the system has infinitely many solutions.\n\nIndependent check: From the first two equations, x=2y-1 and z=4-3y. The third becomes (6-3λ)y=4(2-λ), which holds for every y when λ=2.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For what value of $\\lambda$ does the system $x+y+z=3$, $2x-y+z=2$, $3x+\\lambda z=5$ have infinitely many solutions?",
+  "options": [
+   "$1$",
+   "$2$",
+   "$3$",
+   "$5$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The third equation must be the sum of the first two for consistency when the coefficient matrix is singular.\nAdding the first two equations gives $3x+2z=5$.\nHence $\\lambda=2$; the first two equations are independent, so the system has infinitely many solutions.",
+  "distractor_notes": "A: does not match the coefficient of $z$ in the sum. C: incorrectly adds an extra $z$ coefficient. D: confuses the right-hand side with the parameter."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE intensity to position",
+  "archetype": "intensity to path difference",
+  "brief": "Find point on screen where path difference is λ/4; compute resulting intensity relative to Imax",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:20",
+   "2026s2:30",
+   "2024s1:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a Young's double-slit experiment, the screen is $1.6$ m from slits separated by $0.40$ mm, and the wavelength is $400$ nm. The amplitudes reaching the screen are in the ratio $1:2$. At the point where the path difference is $\\dfrac{\\lambda}{4}$, find its distance from the central maximum and its intensity relative to $I_{\\max}$.",
+ "options": [
+  "$0.40\\ \\text{mm},\\ \\dfrac{5}{9}$",
+  "$0.40\\ \\text{mm},\\ \\dfrac{1}{2}$",
+  "$0.80\\ \\text{mm},\\ \\dfrac{5}{9}$",
+  "$0.40\\ \\text{mm},\\ 1$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The fringe position is y = D(λ/4)/d = 0.40 mm. At phase difference π/2, I ∝ 1² + 2² = 5, while I_max ∝ (1 + 2)² = 9; hence I/I_max = 5/9.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\beta=\\dfrac{\\lambda D}{d}=1.6\\ \\text{mm}$; hence $y=\\dfrac{\\beta}{4}=0.40\\ \\text{mm}$. At phase difference $\\dfrac{\\pi}{2}$, $\\dfrac{I}{I_{\\max}}=\\dfrac{a^2+(2a)^2}{(a+2a)^2}=\\dfrac{5}{9}$.\n\nIndependent check: The fringe position is y = D(λ/4)/d = 0.40 mm. At phase difference π/2, I ∝ 1² + 2² = 5, while I_max ∝ (1 + 2)² = 9; hence I/I_max = 5/9.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a Young's double-slit experiment, the screen is $1.6$ m from slits separated by $0.40$ mm, and the wavelength is $400$ nm. The amplitudes reaching the screen are in the ratio $1:2$. At the point where the path difference is $\\dfrac{\\lambda}{4}$, find its distance from the central maximum and its intensity relative to $I_{\\max}$.",
+  "options": [
+   "$0.40\\ \\text{mm},\\ \\dfrac{5}{9}$",
+   "$0.40\\ \\text{mm},\\ \\dfrac{1}{2}$",
+   "$0.80\\ \\text{mm},\\ \\dfrac{5}{9}$",
+   "$0.40\\ \\text{mm},\\ 1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\beta=\\dfrac{\\lambda D}{d}=1.6\\ \\text{mm}$; hence $y=\\dfrac{\\beta}{4}=0.40\\ \\text{mm}$. At phase difference $\\dfrac{\\pi}{2}$, $\\dfrac{I}{I_{\\max}}=\\dfrac{a^2+(2a)^2}{(a+2a)^2}=\\dfrac{5}{9}$.",
+  "distractor_notes": "B: applies the equal-amplitude result despite the stated amplitude ratio. C: uses $\\dfrac{\\beta}{2}$ instead of $\\dfrac{\\beta}{4}$ for the position. D: omits the interference term when calculating the central maximum."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

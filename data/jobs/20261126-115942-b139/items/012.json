@@ -1,0 +1,67 @@
+{
+ "qno": 12,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 12,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter analogy",
+  "archetype": "letter shift analogy",
+  "brief": "Pair like 'CAT : FDW', where each letter shifts by a constant; give a new word and ask for the analogous coded word using the same shift.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:73",
+   "2025s1:86",
+   "2026s1:71"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a certain code, PLAN is written as MOXQ. In the same code, how will SHIP be written?",
+ "options": [
+  "QKGS",
+  "PKFR",
+  "PKFS",
+  "PJFS"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "PLAN to MOXQ follows the pattern: P(-3)->M, L(+3)->O, A(-3)->X, N(+3)->Q. Applying this alternating -3, +3 shift to SHIP gives: S(-3)->P, H(+3)->K, I(-3)->F, P(+3)->S, resulting in PKFS.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Compare PLAN with MOXQ letter by letter: P→M is −3, L→O is +3, A→X is −3, N→Q is +3. So the rule is that letters in odd positions shift back by 3 and letters in even positions shift forward by 3. Apply to SHIP: S(−3)=P, H(+3)=K, I(−3)=F, P(+3)=S. So SHIP is coded as PKFS, which is option A. Option B ends in R (P+2), C uses −2/+3/−2/+3 inconsistently (Q, K, G, S), D has J (H+2). Only A follows the alternating ±3 rule.\n\nIndependent check: PLAN to MOXQ follows the pattern: P(-3)->M, L(+3)->O, A(-3)->X, N(+3)->Q. Applying this alternating -3, +3 shift to SHIP gives: S(-3)->P, H(+3)->K, I(-3)->F, P(+3)->S, resulting in PKFS.",
+ "solution": "Compare PLAN with MOXQ: P→M (−3), L→O (+3), A→X (−3), N→Q (+3). Letters alternate between a shift of −3 and +3.\n$$S(-3)=P,\\; H(+3)=K,\\; I(-3)=F,\\; P(+3)=S$$\nSo SHIP is coded as PKFS, which is option (C).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a certain code, PLAN is written as MOXQ. In the same code, how will SHIP be written?",
+  "options": [
+   "PKFS",
+   "PKFR",
+   "QKGS",
+   "PJFS"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "Compare PLAN with MOXQ letter by letter: P→M is −3, L→O is +3, A→X is −3, N→Q is +3. So the rule is that letters in odd positions shift back by 3 and letters in even positions shift forward by 3. Apply to SHIP: S(−3)=P, H(+3)=K, I(−3)=F, P(+3)=S. So SHIP is coded as PKFS, which is option A. Option B ends in R (P+2), C uses −2/+3/−2/+3 inconsistently (Q, K, G, S), D has J (H+2). Only A follows the alternating ±3 rule.",
+  "distractor_notes": "B: last letter shifted +2 instead of +3. C: first and third letters shifted −2 instead of −3. D: second letter shifted +2 instead of +3.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

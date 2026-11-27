@@ -1,0 +1,80 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Energy in SHM",
+  "archetype": "phasor timing",
+  "brief": "A particle in SHM passes two marked positions with given speeds; set up energy conservation to find amplitude and then time between positions via phase.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:2",
+   "2024s2:26",
+   "2022:2"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle in SHM with angular frequency $4\\ \\text{rad s}^{-1}$ passes $x=0$ with speed $20\\ \\text{cm s}^{-1}$ and then passes $x=2.5$ cm with speed $10\\sqrt{3}\\ \\text{cm s}^{-1}$, moving in the positive $x$ direction. What is the time between these passages?",
+ "options": [
+  "$\\dfrac{\\pi}{24}$ s",
+  "$\\dfrac{\\pi}{48}$ s",
+  "$\\dfrac{\\pi}{12}$ s",
+  "$\\dfrac{\\pi}{6}$ s"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The speed at x=0 is maximum, so A = 20/4 = 5 cm. If the x=0 passage is in the positive direction, the phase change to x=2.5 cm moving positively is π/6, giving t = π/24 s (B). If the x=0 passage is in the negative direction, the next positive-direction passage at x=2.5 cm is 7π/24 s, which is not listed.",
+   "answer": "NONE",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [
+    "The direction of motion at the x=0 passage is unspecified. The two possibilities give different elapsed times, and one is not among the options."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "At x=0, v_max=20 cm/s ⇒ A=v_max/ω=5 cm. Check: at x=2.5, v=ω√(A²−x²)=4√(18.75)=10√3 cm/s ✓. Starting at x=0 moving +x: x=A sin(ωt); x=A/2 ⇒ ωt=π/6 ⇒ t=π/24 s.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At $x=0$: $\\frac12m(20)^2=\\frac12m\\omega^2A^2\\Rightarrow A=5$ cm.\nWrite $x=A\\sin\\phi$ for motion in the positive direction: $\\phi_1=0$, $\\sin\\phi_2=2.5/5=1/2\\Rightarrow\\phi_2=\\pi/6$.\n$\\Delta t=\\Delta\\phi/\\omega=\\pi/24$ s.\n\nIndependent check: At x=0, v_max=20 cm/s ⇒ A=v_max/ω=5 cm. Check: at x=2.5, v=ω√(A²−x²)=4√(18.75)=10√3 cm/s ✓. Starting at x=0 moving +x: x=A sin(ωt); x=A/2 ⇒ ωt=π/6 ⇒ t=π/24 s.",
+ "solution": "At $x=0$, the speed is maximum, so $A=v_{\\rm max}/\\omega=20/4=5$ cm. Taking $x=A\\sin(\\omega t)$ for motion in the positive direction, at $x=2.5$ cm we have $\\sin(\\omega t)=2.5/5=1/2$, hence $\\omega t=\\pi/6$. Thus $\\displaystyle t=\\frac{\\pi/6}{4}=\\frac{\\pi}{24}\\text{ s}$.\"}",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle in SHM with angular frequency $4\\ \\text{rad s}^{-1}$ passes $x=0$ with speed $20\\ \\text{cm s}^{-1}$ and then passes $x=2.5$ cm with speed $10\\sqrt{3}\\ \\text{cm s}^{-1}$, moving in the positive $x$ direction. What is the time between these passages?",
+  "options": [
+   "$\\dfrac{\\pi}{48}$ s",
+   "$\\dfrac{\\pi}{24}$ s",
+   "$\\dfrac{\\pi}{12}$ s",
+   "$\\dfrac{\\pi}{6}$ s"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "At $x=0$: $\\frac12m(20)^2=\\frac12m\\omega^2A^2\\Rightarrow A=5$ cm.\nWrite $x=A\\sin\\phi$ for motion in the positive direction: $\\phi_1=0$, $\\sin\\phi_2=2.5/5=1/2\\Rightarrow\\phi_2=\\pi/6$.\n$\\Delta t=\\Delta\\phi/\\omega=\\pi/24$ s.",
+  "distractor_notes": "A: uses half the phase difference.\nC: uses an angular frequency half the given value.\nD: treats the phase difference as the time interval."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

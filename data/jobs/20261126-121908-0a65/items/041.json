@@ -1,0 +1,67 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Tests for carbonyls",
+  "archetype": "fact recall",
+  "brief": "Identify which carbonyl compound gives a positive Tollens' test but negative iodoform/Fehling distinction among simple options.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:58",
+   "2025s1:36",
+   "2026s2:34"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following carbonyl compounds gives a positive Tollens' test but does not reduce Fehling's solution?",
+ "options": [
+  "Acetaldehyde",
+  "Acetone",
+  "Benzaldehyde",
+  "Propanal"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Tollens' reagent oxidizes all aldehydes (aliphatic and aromatic) to give a silver mirror. Fehling's solution is reduced only by aliphatic aldehydes; aromatic aldehydes like benzaldehyde do not reduce it. Acetaldehyde and propanal reduce both; acetone (ketone) reduces neither. Hence benzaldehyde: Tollens' positive, Fehling's negative.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Tollens' test: Tollens' reagent ($[\\text{Ag}(\\text{NH}_3)_2]^+$) is reduced to metallic silver by both aliphatic and aromatic aldehydes:\n$$\\text{R-CHO} + 2[\\text{Ag}(\\text{NH}_3)_2]^+ + 3\\text{OH}^- \\rightarrow \\text{R-COO}^- + 2\\text{Ag}\\downarrow + 4\\text{NH}_3 + 2\\text{H}_2\\text{O}$$\nBenzaldehyde (an aromatic aldehyde) gives a positive Tollens' test (silver mirror).\n\n2. Fehling's test: Fehling's solution (alkaline $\\text{Cu}^{2+}$ tartrate complex) is a milder oxidising agent than Tollens' reagent. It oxidises aliphatic aldehydes to carboxylate ions with the formation of a red precipitate of $\\text{Cu}_2\\text{O}$, but it cannot oxidise aromatic aldehydes such as benzaldehyde due to resonance stabilisation of the carbonyl group with the benzene ring.\n\n3. Evaluating the options:\n- Acetaldehyde (aliphatic aldehyde): reduces both Tollens' and Fehling's reagents.\n- Acetone (ketone): does not reduce either Tollens' or Fehling's reagent.\n- Benzaldehyde (aromatic aldehyde): reduces Tollens' reagent, but does not reduce Fehling's solution.\n- Propanal (aliphatic aldehyde): reduces both Tollens' and Fehling's reagents.\n\nTherefore, benzaldehyde is the correct compound.\n\nIndependent check: Tollens' reagent oxidizes all aldehydes (aliphatic and aromatic) to give a silver mirror. Fehling's solution is reduced only by aliphatic aldehydes; aromatic aldehydes like benzaldehyde do not reduce it. Acetaldehyde and propanal reduce both; acetone (ketone) reduces neither. Hence benzaldehyde: Tollens' positive, Fehling's negative.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following carbonyl compounds gives a positive Tollens' test but does not reduce Fehling's solution?",
+  "options": [
+   "Acetaldehyde",
+   "Acetone",
+   "Benzaldehyde",
+   "Propanal"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "1. Tollens' test: Tollens' reagent ($[\\text{Ag}(\\text{NH}_3)_2]^+$) is reduced to metallic silver by both aliphatic and aromatic aldehydes:\n$$\\text{R-CHO} + 2[\\text{Ag}(\\text{NH}_3)_2]^+ + 3\\text{OH}^- \\rightarrow \\text{R-COO}^- + 2\\text{Ag}\\downarrow + 4\\text{NH}_3 + 2\\text{H}_2\\text{O}$$\nBenzaldehyde (an aromatic aldehyde) gives a positive Tollens' test (silver mirror).\n\n2. Fehling's test: Fehling's solution (alkaline $\\text{Cu}^{2+}$ tartrate complex) is a milder oxidising agent than Tollens' reagent. It oxidises aliphatic aldehydes to carboxylate ions with the formation of a red precipitate of $\\text{Cu}_2\\text{O}$, but it cannot oxidise aromatic aldehydes such as benzaldehyde due to resonance stabilisation of the carbonyl group with the benzene ring.\n\n3. Evaluating the options:\n- Acetaldehyde (aliphatic aldehyde): reduces both Tollens' and Fehling's reagents.\n- Acetone (ketone): does not reduce either Tollens' or Fehling's reagent.\n- Benzaldehyde (aromatic aldehyde): reduces Tollens' reagent, but does not reduce Fehling's solution.\n- Propanal (aliphatic aldehyde): reduces both Tollens' and Fehling's reagents.\n\nTherefore, benzaldehyde is the correct compound.",
+  "distractor_notes": "Acetaldehyde: Mistakenly thought to be the only common aldehyde tested, but as an aliphatic aldehyde it readily reduces Fehling's solution.\nAcetone: Confused because it does not reduce Fehling's solution, but being a ketone, it also gives a negative Tollens' test.\nPropanal: An aliphatic aldehyde that reduces both Tollens' reagent and Fehling's solution.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

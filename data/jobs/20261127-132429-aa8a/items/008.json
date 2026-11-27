@@ -1,0 +1,68 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Half-life",
+  "archetype": "half-life counting",
+  "brief": "Radioactive decay: given fraction of a sample remaining after a given time, determine the half-life; or given half-life determine number of half-lives in a stated activity-drop period.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:4",
+   "2025s1:8",
+   "2024s2:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "A radioactive sample has $\\dfrac{1}{8}$ of its original nuclei remaining after $18$ hours. What is its half-life?",
+ "options": [
+  "$6$ h",
+  "$4$ h",
+  "$3$ h",
+  "$9$ h"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since 1/8 = (1/2)^3, 18 hours is 3 half-lives. Thus the half-life is 18/3 = 6 h.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{N}{N_0}=\\left(\\dfrac{1}{2}\\right)^n=\\dfrac{1}{8}=\\left(\\dfrac{1}{2}\\right)^3$\n$n=3$; $T_{1/2}=\\dfrac{18}{3}=6$ h\n\nIndependent check: Since 1/8 = (1/2)^3, 18 hours is 3 half-lives. Thus the half-life is 18/3 = 6 h.",
+ "solution": "The remaining fraction after $n$ half-lives is $\\left(\\frac12\\right)^n$. Since $\\frac18=\\left(\\frac12\\right)^3$, 18 hours is 3 half-lives. $$T_{1/2}=\\frac{18}{3}=6\\text{ h}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A radioactive sample has $\\dfrac{1}{8}$ of its original nuclei remaining after $18$ hours. What is its half-life?",
+  "options": [
+   "$3$ h",
+   "$4$ h",
+   "$6$ h",
+   "$9$ h"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{N}{N_0}=\\left(\\dfrac{1}{2}\\right)^n=\\dfrac{1}{8}=\\left(\\dfrac{1}{2}\\right)^3$\n$n=3$; $T_{1/2}=\\dfrac{18}{3}=6$ h",
+  "distractor_notes": "A: Divides the duration by six; B: Counts the exponent incorrectly; D: Divides by two instead of the number of half-lives."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

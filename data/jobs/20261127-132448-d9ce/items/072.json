@@ -1,0 +1,68 @@
+{
+ "qno": 72,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 72,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Anomalous behaviour of nitrogen",
+  "archetype": "multi-select via codes",
+  "brief": "Set of statements on why nitrogen differs from heavier group-15 elements (no d-orbitals, small size, N2 triple bond, lack of catenation); ask which combination of statements is valid.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:63",
+   "2024s2:36",
+   "2021:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the following statements about the anomalous behaviour of nitrogen:\nI. Nitrogen does not form pentahalides because its valence shell has no vacant $d$ orbitals.\nII. Its small size permits effective $p\\pi$–$p\\pi$ overlap and favors multiple bonding.\nIII. Nitrogen cannot show positive oxidation states in compounds because it is more electronegative than most elements.\nIV. The strong triple bond in $\\text{N}_2$ contributes to the existence of elemental nitrogen mainly as diatomic molecules.\nV. The $\\text{N}-\\text{N}$ single bond is weaker than the $\\text{P}-\\text{P}$ bond due to greater lone-pair repulsion, so nitrogen shows less catenation.\nWhich combination of statements is valid?",
+ "options": [
+  "I, II and IV only",
+  "I, III and IV only",
+  "II, III, IV and V only",
+  "I, II, IV and V only"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I, II, IV and V are valid in the standard BITSAT treatment. III is false: nitrogen has positive oxidation states in compounds such as NO₂ and N₂O₅.",
+   "answer": "C",
+   "confidence": 0.91,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I, II, IV and V are valid.\nIII is false: nitrogen can have positive oxidation states in compounds with more electronegative elements such as oxygen and fluorine.\n\nIndependent check: I, II, IV and V are valid in the standard BITSAT treatment. III is false: nitrogen has positive oxidation states in compounds such as NO₂ and N₂O₅.",
+ "solution": "Nitrogen lacks vacant $d$ orbitals and cannot expand its octet to form pentahalides (I). Its small size favors effective $p\\pi$–$p\\pi$ overlap and multiple bonding (II); the strong $\\text{N}\\equiv\\text{N}$ bond makes elemental nitrogen predominantly diatomic (IV). Greater lone-pair repulsion weakens the $\\text{N}-\\text{N}$ single bond relative to $\\text{P}-\\text{P}$, reducing catenation (V). Nitrogen can show positive oxidation states, so III is false; hence (D).",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Consider the following statements about the anomalous behaviour of nitrogen:\nI. Nitrogen does not form pentahalides because its valence shell has no vacant $d$ orbitals.\nII. Its small size permits effective $p\\pi$–$p\\pi$ overlap and favors multiple bonding.\nIII. Nitrogen cannot show positive oxidation states in compounds because it is more electronegative than most elements.\nIV. The strong triple bond in $\\text{N}_2$ contributes to the existence of elemental nitrogen mainly as diatomic molecules.\nV. The $\\text{N}-\\text{N}$ single bond is weaker than the $\\text{P}-\\text{P}$ bond due to greater lone-pair repulsion, so nitrogen shows less catenation.\nWhich combination of statements is valid?",
+  "options": [
+   "I, II and IV only",
+   "I, III and IV only",
+   "I, II, IV and V only",
+   "II, III, IV and V only"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "I, II, IV and V are valid.\nIII is false: nitrogen can have positive oxidation states in compounds with more electronegative elements such as oxygen and fluorine.",
+  "distractor_notes": "A: omits the valid explanation for nitrogen's lower catenation.\nB: includes III and omits the valid multiple-bonding statement.\nD: includes III and omits the valid statement about the absence of vacant valence-shell $d$ orbitals."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

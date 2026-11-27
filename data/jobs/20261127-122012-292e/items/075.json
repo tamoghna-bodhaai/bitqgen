@@ -1,0 +1,68 @@
+{
+ "qno": 75,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 75,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Solubility product",
+  "archetype": "Ksp expression",
+  "brief": "For a sparingly soluble salt, given Ksp and molar solubility, ask for the solubility in g/L or in a common-ion medium — moderate numeric with ICE-table style reasoning.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:37",
+   "2025s2:41",
+   "2024s1:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "The solubility product of calcium fluoride, CaF2, is 4.0 x 10^-11 at 298 K. Calculate the molar solubility (in mol L^-1) of CaF2 in 0.10 M NaF solution.",
+ "options": [
+  "4.0 x 10^-10 mol L^-1",
+  "2.0 x 10^-9 mol L^-1",
+  "4.0 x 10^-9 mol L^-1",
+  "2.0 x 10^-4 mol L^-1"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the solubility be s. Then Ksp = s(0.10 + 2s)^2; since s is very small, s ≈ (4.0 × 10⁻¹¹)/(0.10)² = 4.0 × 10⁻⁹ mol L⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Ksp = [Ca2+][F^-]^2. Let s = molar solubility. [Ca2+] = s, [F^-] = 0.10 + 2s, and 2s << 0.10, so [F^-] = 0.10 M. 4.0 x 10^-11 = s(0.10)^2 = 0.010s. s = 4.0 x 10^-9 mol L^-1.\n\nIndependent check: Let the solubility be s. Then Ksp = s(0.10 + 2s)^2; since s is very small, s ≈ (4.0 × 10⁻¹¹)/(0.10)² = 4.0 × 10⁻⁹ mol L⁻¹.",
+ "solution": "For $\\mathrm{CaF_2(s)\\rightleftharpoons Ca^{2+}+2F^-}$, $K_{sp}=[\\mathrm{Ca^{2+}}][\\mathrm{F^-}]^2$. Let the solubility be $s$; since $2s\\ll 0.10$, $[\\mathrm{F^-}]\\approx0.10\\,\\mathrm{M}$.\n$$4.0\\times10^{-11}=s(0.10)^2\\quad\\Rightarrow\\quad s=4.0\\times10^{-9}\\ \\mathrm{mol\\,L^{-1}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The solubility product of calcium fluoride, CaF2, is 4.0 x 10^-11 at 298 K. Calculate the molar solubility (in mol L^-1) of CaF2 in 0.10 M NaF solution.",
+  "options": [
+   "4.0 x 10^-10 mol L^-1",
+   "2.0 x 10^-9 mol L^-1",
+   "4.0 x 10^-9 mol L^-1",
+   "2.0 x 10^-4 mol L^-1"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Ksp = [Ca2+][F^-]^2. Let s = molar solubility. [Ca2+] = s, [F^-] = 0.10 + 2s, and 2s << 0.10, so [F^-] = 0.10 M. 4.0 x 10^-11 = s(0.10)^2 = 0.010s. s = 4.0 x 10^-9 mol L^-1.",
+  "distractor_notes": "A: forgot to square the common-ion concentration and used Ksp = s(0.10). B: included an extra stoichiometric factor of 2 in the Ksp expression. D: ignored the common ion and solved for the pure-water solubility."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

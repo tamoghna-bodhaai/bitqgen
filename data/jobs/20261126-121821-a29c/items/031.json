@@ -1,0 +1,67 @@
+{
+ "qno": 31,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 31,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "VSEPR geometry",
+  "archetype": "odd-one-out",
+  "brief": "Give four small molecules/ions with their shapes and ask which one has a shape different from the rest (e.g. three bent, one linear or vice versa); pure VSEPR recall, no numbers.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:35",
+   "2026s2:50",
+   "2025s2:47"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following species has a molecular shape different from the other three?",
+ "options": [
+  "$\\text{CO}_2$",
+  "$\\text{I}_3^-$",
+  "$\\text{SO}_2$",
+  "$\\text{XeF}_2$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "CO2: 2 bond domains, 0 lone pairs → linear. I3−: 5 domains, 3 lone pairs (equatorial) → linear. XeF2: 5 domains, 3 lone pairs → linear. SO2: 3 domains, 1 lone pair → bent (~119°). Only SO2 differs.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "According to VSEPR theory, the molecular shape is determined by the number of bond pairs (bp) and lone pairs (lp) around the central atom:\n\n1. $\\text{CO}_2$:\nCentral $\\text{C}$ atom has $4$ valence electrons and forms two double bonds with two $\\text{O}$ atoms.\n$$\\text{Steric number} = 2\\text{ bp} + 0\\text{ lp} = 2$$\nShape: **Linear** (bond angle $= 180^\\circ$).\n\n2. $\\text{I}_3^-$:\nCentral $\\text{I}$ atom has $7 + 1 = 8$ valence electrons, forming two single bonds with terminal $\\text{I}$ atoms and retaining $3$ lone pairs.\n$$\\text{Steric number} = 2\\text{ bp} + 3\\text{ lp} = 5$$\nThe $3$ lone pairs occupy equatorial positions of the trigonal bipyramid to minimize repulsion.\nShape: **Linear** (bond angle $= 180^\\circ$).\n\n3. $\\text{XeF}_2$:\nCentral $\\text{Xe}$ atom has $8$ valence electrons, forming two single bonds with two $\\text{F}$ atoms and retaining $3$ lone pairs.\n$$\\text{Steric number} = 2\\text{ bp} + 3\\text{ lp} = 5$$\nThe $3$ lone pairs occupy equatorial positions.\nShape: **Linear** (bond angle $= 180^\\circ$).\n\n4. $\\text{SO}_2$:\nCentral $\\text{S}$ atom has $6$ valence electrons, forming two bonding domains with two $\\text{O}$ atoms and retaining $1$ lone pair.\n$$\\text{Steric number} = 2\\text{ bp} + 1\\text{ lp} = 3$$\nShape: **Bent** (angular, bond angle $\\approx 119^\\circ$).\n\nThus, $\\text{SO}_2$ is bent, whereas the other three species are linear.\n\nIndependent check: CO2: 2 bond domains, 0 lone pairs → linear. I3−: 5 domains, 3 lone pairs (equatorial) → linear. XeF2: 5 domains, 3 lone pairs → linear. SO2: 3 domains, 1 lone pair → bent (~119°). Only SO2 differs.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following species has a molecular shape different from the other three?",
+  "options": [
+   "$\\text{CO}_2$",
+   "$\\text{I}_3^-$",
+   "$\\text{SO}_2$",
+   "$\\text{XeF}_2$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "According to VSEPR theory, the molecular shape is determined by the number of bond pairs (bp) and lone pairs (lp) around the central atom:\n\n1. $\\text{CO}_2$:\nCentral $\\text{C}$ atom has $4$ valence electrons and forms two double bonds with two $\\text{O}$ atoms.\n$$\\text{Steric number} = 2\\text{ bp} + 0\\text{ lp} = 2$$\nShape: **Linear** (bond angle $= 180^\\circ$).\n\n2. $\\text{I}_3^-$:\nCentral $\\text{I}$ atom has $7 + 1 = 8$ valence electrons, forming two single bonds with terminal $\\text{I}$ atoms and retaining $3$ lone pairs.\n$$\\text{Steric number} = 2\\text{ bp} + 3\\text{ lp} = 5$$\nThe $3$ lone pairs occupy equatorial positions of the trigonal bipyramid to minimize repulsion.\nShape: **Linear** (bond angle $= 180^\\circ$).\n\n3. $\\text{XeF}_2$:\nCentral $\\text{Xe}$ atom has $8$ valence electrons, forming two single bonds with two $\\text{F}$ atoms and retaining $3$ lone pairs.\n$$\\text{Steric number} = 2\\text{ bp} + 3\\text{ lp} = 5$$\nThe $3$ lone pairs occupy equatorial positions.\nShape: **Linear** (bond angle $= 180^\\circ$).\n\n4. $\\text{SO}_2$:\nCentral $\\text{S}$ atom has $6$ valence electrons, forming two bonding domains with two $\\text{O}$ atoms and retaining $1$ lone pair.\n$$\\text{Steric number} = 2\\text{ bp} + 1\\text{ lp} = 3$$\nShape: **Bent** (angular, bond angle $\\approx 119^\\circ$).\n\nThus, $\\text{SO}_2$ is bent, whereas the other three species are linear.",
+  "distractor_notes": "Option A: Mistakenly assumed to be the odd one out because it is the only species with zero lone pairs on the central atom, confusing shape with electron-pair geometry.\nOption B: Mistakenly assumed to be bent by confusing the triiodide anion with $\\text{I}_3^+$ (which has 2 bp + 2 lp and is bent).\nOption D: Mistakenly assumed to be non-linear by forgetting that the three lone pairs in $sp^3d$ hybridisation occupy the equatorial plane, keeping the axial bonds linear.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

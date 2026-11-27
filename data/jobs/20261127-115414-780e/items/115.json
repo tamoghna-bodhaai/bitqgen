@@ -1,0 +1,68 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Effect of scaling on variance",
+  "archetype": "property",
+  "brief": "Given a small data set with a known mean/SD, find the new variance when each observation is transformed (shift/scale).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:107",
+   "2026s2:106",
+   "2024s2:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "The sum of squares of deviations of 8 observations from 15 is 200 and their mean is 18. Every observation is multiplied by 2 and then reduced by 10. The variance of the new observations is",
+ "options": [
+  "64",
+  "32",
+  "16",
+  "128"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Original variance = [200 − 8(18 − 15)²]/8 = 16. Multiplying observations by 2 and subtracting 10 gives variance 2² × 16 = 64.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Let original variance be \\(\\sigma^2\\). Using \\(\\sum (x_i - A)^2 = n\\sigma^2 + n(\\bar{x} - A)^2\\) with \\(n=8\\), \\(A=15\\), \\(\\bar{x}=18\\), and sum = 200:\n\\(200 = 8\\sigma^2 + 8(18-15)^2 = 8\\sigma^2 + 72\\)\n\\(8\\sigma^2 = 128 \\Rightarrow \\sigma^2 = 16\\).\nTransformation: \\(y_i = 2x_i - 10\\).\nNew variance = \\(2^2 \\cdot \\sigma^2 = 4 \\cdot 16 = 64\\).\n\nIndependent check: Original variance = [200 − 8(18 − 15)²]/8 = 16. Multiplying observations by 2 and subtracting 10 gives variance 2² × 16 = 64.",
+ "solution": "Using $\\sum (x_i-A)^2=n\\sigma^2+n(\\bar{x}-A)^2$, we get\n$$200=8\\sigma^2+8(18-15)^2\\implies \\sigma^2=16.$$\nFor $y_i=2x_i-10$, variance scales by $2^2$; hence $\\operatorname{Var}(y)=4(16)=64$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum of squares of deviations of 8 observations from 15 is 200 and their mean is 18. Every observation is multiplied by 2 and then reduced by 10. The variance of the new observations is",
+  "options": [
+   "16",
+   "32",
+   "64",
+   "128"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let original variance be \\(\\sigma^2\\). Using \\(\\sum (x_i - A)^2 = n\\sigma^2 + n(\\bar{x} - A)^2\\) with \\(n=8\\), \\(A=15\\), \\(\\bar{x}=18\\), and sum = 200:\n\\(200 = 8\\sigma^2 + 8(18-15)^2 = 8\\sigma^2 + 72\\)\n\\(8\\sigma^2 = 128 \\Rightarrow \\sigma^2 = 16\\).\nTransformation: \\(y_i = 2x_i - 10\\).\nNew variance = \\(2^2 \\cdot \\sigma^2 = 4 \\cdot 16 = 64\\).",
+  "distractor_notes": "Original variance (A), variance scaled by factor 2 instead of 4 (B), and 8 times original variance (D) are common mistakes."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

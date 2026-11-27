@@ -1,0 +1,76 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Perfectly inelastic collision",
+  "archetype": "momentum conservation",
+  "brief": "A bullet embeds in a block hanging on a string; combine perfectly-inelastic collision momentum conservation with subsequent pendulum rise to find bullet speed.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:24",
+   "2021:4",
+   "2022:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A bullet of mass $0.25$ kg embeds in a stationary block of mass $0.75$ kg hanging from a string. The combined body rises by $0.8$ m after impact, as shown in the figure. Find the bullet's speed just before impact. Take $g=10$ m s$^{-2}$.",
+ "options": [
+  "$4$ m s$^{-1}$",
+  "$8$ m s$^{-1}$",
+  "$12$ m s$^{-1}$",
+  "$16$ m s$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q020_stem_v0.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "After impact, energy conservation gives the combined speed: v = √(2gh) = 4 m/s. Momentum during impact: 0.25u = (0.25 + 0.75) × 4, so u = 16 m/s.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$V=\\sqrt{2gh}=\\sqrt{2(10)(0.8)}=4\\ \\text{m s}^{-1}$\n$0.25u=(0.25+0.75)(4)\\Rightarrow u=16\\ \\text{m s}^{-1}$\n\nIndependent check: After impact, energy conservation gives the combined speed: v = √(2gh) = 4 m/s. Momentum during impact: 0.25u = (0.25 + 0.75) × 4, so u = 16 m/s.",
+ "solution": "After impact, conservation of mechanical energy gives the combined speed:\n$$v=\\sqrt{2gh}=\\sqrt{2(10)(0.8)}=4\\ \\text{m s}^{-1}.$$\nConservation of momentum during impact: $0.25u=(0.25+0.75)v$, hence $u=16\\ \\text{m s}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A bullet of mass $0.25$ kg embeds in a stationary block of mass $0.75$ kg hanging from a string. The combined body rises by $0.8$ m after impact, as shown in the figure. Find the bullet's speed just before impact. Take $g=10$ m s$^{-2}$.",
+  "options": [
+   "$4$ m s$^{-1}$",
+   "$8$ m s$^{-1}$",
+   "$12$ m s$^{-1}$",
+   "$16$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a fixed pivot above a block initially hanging vertically at rest from a string. Show a bullet approaching the block horizontally from the left, with its direction arrow pointing right. Label the bullet mass 0.25 kg and block mass 0.75 kg. Show the bullet embedded in the block after impact and the combined body at a raised position on the right-hand side of a curved swing path. Mark the vertical rise of the combined body's centre of mass from its initial position as 0.8 m.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$V=\\sqrt{2gh}=\\sqrt{2(10)(0.8)}=4\\ \\text{m s}^{-1}$\n$0.25u=(0.25+0.75)(4)\\Rightarrow u=16\\ \\text{m s}^{-1}$",
+  "distractor_notes": "A: Reports the post-collision speed as the bullet's initial speed.\nB: Assumes kinetic energy is conserved during the inelastic collision.\nC: Omits the bullet's mass from the combined mass after impact."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

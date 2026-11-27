@@ -1,0 +1,68 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola equation",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of a parabola (or its focus/directrix/latus rectum) from given vertex and axis information.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:149",
+   "2024s1:107",
+   "2026s1:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "A parabola has vertex $(1,2)$, axis parallel to the $x$-axis, and passes through $(5,6)$. Its equation is:",
+ "options": [
+  "$(y-2)^2=4(x-1)$",
+  "$(y-2)^2=4(x+1)$",
+  "$(x-1)^2=4(y-2)$",
+  "$(y-2)^2=x-1$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a horizontal-axis parabola, (y−2)² = 4p(x−1). Substituting (5,6) gives 16 = 16p, so p = 1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(y-2)^2=4a(x-1)$.\\n$(6-2)^2=4a(5-1)\\Rightarrow16=16a\\Rightarrow a=1$.\\n$(y-2)^2=4(x-1)$\n\nIndependent check: For a horizontal-axis parabola, (y−2)² = 4p(x−1). Substituting (5,6) gives 16 = 16p, so p = 1.",
+ "solution": "For a parabola with vertex $(h,k)$ and axis parallel to the $x$-axis, $(y-k)^2=4p(x-h)$. Substituting $(h,k)=(1,2)$ and the point $(5,6)$:\n$$16=4p(4)\\Rightarrow p=1.$$\nHence, $(y-2)^2=4(x-1)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A parabola has vertex $(1,2)$, axis parallel to the $x$-axis, and passes through $(5,6)$. Its equation is:",
+  "options": [
+   "$(y-2)^2=4(x-1)$",
+   "$(y-2)^2=4(x+1)$",
+   "$(x-1)^2=4(y-2)$",
+   "$(y-2)^2=x-1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$(y-2)^2=4a(x-1)$.\\n$(6-2)^2=4a(5-1)\\Rightarrow16=16a\\Rightarrow a=1$.\\n$(y-2)^2=4(x-1)$",
+  "distractor_notes": "B: Uses the wrong sign for the vertex's $x$-coordinate.\\nC: Takes the axis parallel to the $y$-axis.\\nD: Omits the factor $4$ in the standard form."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

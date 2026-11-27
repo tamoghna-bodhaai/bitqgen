@@ -1,0 +1,68 @@
+{
+ "qno": 103,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 103,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "counting formula",
+  "brief": "Use inclusion–exclusion to count the number of onto/surjective functions from one finite set to another.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:122",
+   "2024s1:120",
+   "2026s1:108"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many onto functions are there from a set with $4$ elements to a set with $3$ elements?",
+ "options": [
+  "$36$",
+  "$33$",
+  "$24$",
+  "$81$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By inclusion–exclusion, the number of onto functions is 3^4 - 3(2^4) + 3(1^4) = 36.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "By inclusion–exclusion: $3^4-\\binom{3}{1}2^4+\\binom{3}{2}1^4$\\n$=81-48+3=36$.\n\nIndependent check: By inclusion–exclusion, the number of onto functions is 3^4 - 3(2^4) + 3(1^4) = 36.",
+ "solution": "By inclusion–exclusion, subtract functions that omit at least one element of the codomain:\n$$3^4-\\binom31 2^4+\\binom32 1^4=81-48+3=36.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many onto functions are there from a set with $4$ elements to a set with $3$ elements?",
+  "options": [
+   "$24$",
+   "$33$",
+   "$36$",
+   "$81$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "By inclusion–exclusion: $3^4-\\binom{3}{1}2^4+\\binom{3}{2}1^4$\\n$=81-48+3=36$.",
+  "distractor_notes": "A: Counts arrangements of three selected domain elements instead.\\nB: Omits the final inclusion–exclusion correction.\\nD: Counts all functions, not just onto functions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

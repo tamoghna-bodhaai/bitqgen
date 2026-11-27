@@ -1,0 +1,81 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Hydrolysis of halides",
+  "archetype": "reaction products",
+  "brief": "Give hydrolysis products of covalent halides such as NCl3 and PCl3/PCl5 and ask why they differ; combine the correct product sets and reasoning in one option set.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:36",
+   "2022:46",
+   "2024s2:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "On complete hydrolysis, which option gives the products of $\\text{NCl}_3$, $\\text{PCl}_3$ and $\\text{PCl}_5$, respectively, with the correct explanation of their difference?",
+ "options": [
+  "$\\text{NH}_3+3\\text{HOCl};\\ \\text{H}_3\\text{PO}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_4+5\\text{HCl}$. The $\\text{N–Cl}$ bond is polarised towards N, unlike the $\\text{P–Cl}$ bond; phosphorus forms $\\text{P–O}$ bonds on hydrolysis.",
+  "$\\text{NH}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_4+5\\text{HCl}$. All three compounds simply give HCl on hydrolysis.",
+  "$\\text{NH}_3+3\\text{HOCl};\\ \\text{H}_3\\text{PO}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_4+5\\text{HCl}$. Nitrogen expands its octet during hydrolysis, whereas phosphorus does not.",
+  "$\\text{NH}_3+3\\text{HOCl};\\ \\text{H}_3\\text{PO}_4+3\\text{HCl};\\ \\text{H}_3\\text{PO}_3+5\\text{HCl}$. The phosphorus oxidation states decrease during hydrolysis."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The hydrolysis products are NH3 + 3HOCl; H3PO3 + 3HCl; and H3PO4 + 5HCl, so only A and C have the correct products. On the standard Pauling scale, Cl is more electronegative than N, contrary to A’s polarity claim; C’s octet explanation is also false.",
+   "answer": "NONE",
+   "confidence": 0.86,
+   "multiple_correct": false,
+   "issues": [
+    "A’s claim that the N–Cl bond is polarized toward N is contrary to standard Pauling electronegativities (Cl 3.16, N 3.04); the claim can depend on the electronegativity scale, which is unspecified.",
+    "C incorrectly says nitrogen expands its octet during hydrolysis. No option gives both correct products and an unambiguous correct explanation."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "NCl3 + 3H2O -> NH3 + 3HOCl (N is the negative end of N–Cl, so N gets H and Cl gets OH). PCl3 + 3H2O -> H3PO3 + 3HCl and PCl5 + 4H2O -> H3PO4 + 5HCl (P is the positive end, so P forms P–OH bonds, Cl leaves as HCl). All equations balance. Option A has correct products and correct rationale. B has wrong NCl3 products; C has correct products but a false explanation (N cannot expand its octet); D swaps the phosphorus acids and claims reduction, but hydrolysis is not redox.",
+   "answer": "A",
+   "confidence": 0.95,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{NCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{NH}_3+3\\text{HOCl}$\n$\\text{PCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_3+3\\text{HCl}$\n$\\text{PCl}_5+4\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+5\\text{HCl}$\n$\\text{N}^{\\delta-}\\! -\\!\\text{Cl}^{\\delta+};\\quad \\text{P}^{\\delta+}\\! -\\!\\text{Cl}^{\\delta-}$\n\nIndependent check: NCl3 + 3H2O -> NH3 + 3HOCl (N is the negative end of N–Cl, so N gets H and Cl gets OH). PCl3 + 3H2O -> H3PO3 + 3HCl and PCl5 + 4H2O -> H3PO4 + 5HCl (P is the positive end, so P forms P–OH bonds, Cl leaves as HCl). All equations balance. Option A has correct products and correct rationale. B has wrong NCl3 products; C has correct products but a false explanation (N cannot expand its octet); D swaps the phosphorus acids and claims reduction, but hydrolysis is not redox.",
+ "solution": "In $\\text{NCl}_3$, N is $\\text{N}^{\u00024-}$, so hydrolysis gives $\\text{NH}_3$ and $\\text{HOCl}$; in phosphorus chlorides, P is $\\text{P}^{\u00024+}$ and forms P–O bonds.\n$$\n\\text{NCl}_3+3\\text{H}_2\\text{O}\\to\\text{NH}_3+3\\text{HOCl};\\quad \\text{PCl}_3+3\\text{H}_2\\text{O}\\to\\text{H}_3\\text{PO}_3+3\\text{HCl};\\quad \\text{PCl}_5+4\\text{H}_2\\text{O}\\to\\text{H}_3\\text{PO}_4+5\\text{HCl}.\n$$\nThus the products and bond-polarity explanation match (A).",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "On complete hydrolysis, which option gives the products of $\\text{NCl}_3$, $\\text{PCl}_3$ and $\\text{PCl}_5$, respectively, with the correct explanation of their difference?",
+  "options": [
+   "$\\text{NH}_3+3\\text{HOCl};\\ \\text{H}_3\\text{PO}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_4+5\\text{HCl}$. The $\\text{N–Cl}$ bond is polarised towards N, unlike the $\\text{P–Cl}$ bond; phosphorus forms $\\text{P–O}$ bonds on hydrolysis.",
+   "$\\text{NH}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_4+5\\text{HCl}$. All three compounds simply give HCl on hydrolysis.",
+   "$\\text{NH}_3+3\\text{HOCl};\\ \\text{H}_3\\text{PO}_3+3\\text{HCl};\\ \\text{H}_3\\text{PO}_4+5\\text{HCl}$. Nitrogen expands its octet during hydrolysis, whereas phosphorus does not.",
+   "$\\text{NH}_3+3\\text{HOCl};\\ \\text{H}_3\\text{PO}_4+3\\text{HCl};\\ \\text{H}_3\\text{PO}_3+5\\text{HCl}$. The phosphorus oxidation states decrease during hydrolysis."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\text{NCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{NH}_3+3\\text{HOCl}$\n$\\text{PCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_3+3\\text{HCl}$\n$\\text{PCl}_5+4\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+5\\text{HCl}$\n$\\text{N}^{\\delta-}\\! -\\!\\text{Cl}^{\\delta+};\\quad \\text{P}^{\\delta+}\\! -\\!\\text{Cl}^{\\delta-}$",
+  "distractor_notes": "B assumes the chlorine in $\\text{NCl}_3$ forms HCl. C gives the correct products but incorrectly claims nitrogen expands its octet. D interchanges the phosphorus oxyacids and gives an incorrect oxidation-state explanation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

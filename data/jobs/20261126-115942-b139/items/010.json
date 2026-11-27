@@ -1,0 +1,67 @@
+{
+ "qno": 10,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 10,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-number shift",
+  "brief": "A word is coded by shifting each letter by a fixed number of positions forward/backward; give a new word and ask for its code, easy single-step shift.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:72",
+   "2025s1:88",
+   "2025s1:71"
+  ]
+ },
+ "status": "ok",
+ "stem": "If **PLANT** is coded as **RNCPV** in a certain code, then how will **BRAIN** be coded in that code?",
+ "options": [
+  "DSCKP",
+  "DTCKP",
+  "CTBKP",
+  "DTCJP"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "Each letter is shifted forward by 2 positions: P->R, L->N, A->C, N->P, T->V. Applying this +2 shift to BRAIN: B->D, R->T, A->C, I->K, N->P, giving DTCKP.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each letter is shifted 2 positions forward in the alphabet: P→R, L→N, A→C, N→P, T→V, which gives RNCPV.\n\nApplying the same rule to BRAIN: B→D, R→T, A→C, I→K, N→P, so the code is DTCKP.\n\nOption B has S in place of T, so R was shifted by only 1. Option C shifts B and A by only 1, so it is inconsistent. Option D has J in place of K, so I was shifted by only 1. Only option A follows the +2 rule for all letters.\n\nIndependent check: Each letter is shifted forward by 2 positions: P->R, L->N, A->C, N->P, T->V. Applying this +2 shift to BRAIN: B->D, R->T, A->C, I->K, N->P, giving DTCKP.",
+ "solution": "Each letter is shifted $+2$ in the alphabet: P→R, L→N, A→C, N→P, T→V, giving RNCPV.\n\nApplying the same rule to BRAIN: B→D, R→T, A→C, I→K, N→P.\n\n$$\\text{BRAIN}\\to\\text{DTCKP}$$\n\nThis matches (B).",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "If **PLANT** is coded as **RNCPV** in a certain code, then how will **BRAIN** be coded in that code?",
+  "options": [
+   "DTCKP",
+   "DSCKP",
+   "CTBKP",
+   "DTCJP"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "Each letter is shifted 2 positions forward in the alphabet: P→R, L→N, A→C, N→P, T→V, which gives RNCPV.\n\nApplying the same rule to BRAIN: B→D, R→T, A→C, I→K, N→P, so the code is DTCKP.\n\nOption B has S in place of T, so R was shifted by only 1. Option C shifts B and A by only 1, so it is inconsistent. Option D has J in place of K, so I was shifted by only 1. Only option A follows the +2 rule for all letters.",
+  "distractor_notes": "B: R shifted by +1 instead of +2 (gives S). C: first and third letters shifted by +1 (C, B) instead of +2. D: I shifted by +1 (J) instead of +2.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

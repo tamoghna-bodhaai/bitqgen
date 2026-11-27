@@ -1,0 +1,68 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Preparation of ethers",
+  "archetype": "multi-step conversion",
+  "brief": "Convert a phenol to anisole-like ether in 2–3 steps; identify correct reagent sequence (NaOH, CH3I/Williamson, etc.).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:59",
+   "2026s2:36",
+   "2025s2:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "The correct sequence of reagents for converting phenol to anisole is:",
+ "options": [
+  "NaOH, then CH₃OH",
+  "CH₃I, then NaOH",
+  "NaOH, then CH₃I",
+  "Na, then CH₃OH"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "NaOH deprotonates phenol to form phenoxide; phenoxide reacts with CH₃I to form anisole by O-methylation.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Phenol is deprotonated by NaOH to form the reactive phenoxide ion; subsequent SN2 reaction with methyl iodide (CH₃I) gives anisole (Williamson ether synthesis).\n\nIndependent check: NaOH deprotonates phenol to form phenoxide; phenoxide reacts with CH₃I to form anisole by O-methylation.",
+ "solution": "NaOH deprotonates phenol to form phenoxide, which undergoes $S_N2$ O-methylation with methyl iodide.\n$$\\mathrm{C_6H_5OH \\xrightarrow{NaOH} C_6H_5O^- \\xrightarrow{CH_3I} C_6H_5OCH_3}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The correct sequence of reagents for converting phenol to anisole is:",
+  "options": [
+   "NaOH, then CH₃I",
+   "CH₃I, then NaOH",
+   "NaOH, then CH₃OH",
+   "Na, then CH₃OH"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Phenol is deprotonated by NaOH to form the reactive phenoxide ion; subsequent SN2 reaction with methyl iodide (CH₃I) gives anisole (Williamson ether synthesis).",
+  "distractor_notes": "B – wrong order (no base to generate phenoxide first). C – CH₃OH does not alkylate phenoxide. D – Na gives phenoxide but CH₃OH cannot methylate it."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

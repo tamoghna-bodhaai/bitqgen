@@ -1,0 +1,67 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "rms speed vs molar mass",
+  "archetype": "proportionality-scaling",
+  "brief": "Compare rms speeds of two gases at possibly different temperatures; find the ratio using v_rms ∝ √(T/M) with mole data given.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:3",
+   "2025s2:7",
+   "2026s1:1"
+  ]
+ },
+ "status": "ok",
+ "stem": "A vessel contains $1\\text{ mol}$ of helium gas at $300\\text{ K}$, and another vessel contains $4\\text{ mol}$ of oxygen gas at $600\\text{ K}$. Taking the molar masses of helium and oxygen to be $4\\text{ g mol}^{-1}$ and $32\\text{ g mol}^{-1}$ respectively, the ratio of the rms speed of helium atoms to that of oxygen molecules is:",
+ "options": [
+  "$1 : 2$",
+  "$1 : 1$",
+  "$2 : 1$",
+  "$4 : 1$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "v_rms = sqrt(3RT/M); mole counts irrelevant. Ratio = sqrt((T_He/M_He)/(T_O2/M_O2)) = sqrt((300/4)/(600/32)) = sqrt(75/18.75) = sqrt(4) = 2, i.e. 2:1.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The root-mean-square speed of molecules of an ideal gas is given by:\n$$v_{\\text{rms}} = \\sqrt{\\dfrac{3RT}{M}}$$\nNotice that $v_{\\text{rms}}$ depends only on the absolute temperature $T$ and the molar mass $M$, and is independent of the number of moles $n$.\n\nTaking the ratio of the rms speed of helium to that of oxygen:\n$$\\dfrac{v_{\\text{rms, He}}}{v_{\\text{rms, }\\text{O}_2}} = \\sqrt{\\dfrac{T_{\\text{He}}}{T_{\\text{O}_2}} \\times \\dfrac{M_{\\text{O}_2}}{M_{\\text{He}}}}$$\n\nSubstitute the given values:\n$$\\dfrac{v_{\\text{rms, He}}}{v_{\\text{rms, }\\text{O}_2}} = \\sqrt{\\dfrac{300\\text{ K}}{600\\text{ K}} \\times \\dfrac{32\\text{ g mol}^{-1}}{4\\text{ g mol}^{-1}}} = \\sqrt{\\dfrac{1}{2} \\times 8} = \\sqrt{4} = 2$$\n\nThus, the ratio is $2 : 1$.\n\nIndependent check: v_rms = sqrt(3RT/M); mole counts irrelevant. Ratio = sqrt((T_He/M_He)/(T_O2/M_O2)) = sqrt((300/4)/(600/32)) = sqrt(75/18.75) = sqrt(4) = 2, i.e. 2:1.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A vessel contains $1\\text{ mol}$ of helium gas at $300\\text{ K}$, and another vessel contains $4\\text{ mol}$ of oxygen gas at $600\\text{ K}$. Taking the molar masses of helium and oxygen to be $4\\text{ g mol}^{-1}$ and $32\\text{ g mol}^{-1}$ respectively, the ratio of the rms speed of helium atoms to that of oxygen molecules is:",
+  "options": [
+   "$1 : 2$",
+   "$1 : 1$",
+   "$2 : 1$",
+   "$4 : 1$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The root-mean-square speed of molecules of an ideal gas is given by:\n$$v_{\\text{rms}} = \\sqrt{\\dfrac{3RT}{M}}$$\nNotice that $v_{\\text{rms}}$ depends only on the absolute temperature $T$ and the molar mass $M$, and is independent of the number of moles $n$.\n\nTaking the ratio of the rms speed of helium to that of oxygen:\n$$\\dfrac{v_{\\text{rms, He}}}{v_{\\text{rms, }\\text{O}_2}} = \\sqrt{\\dfrac{T_{\\text{He}}}{T_{\\text{O}_2}} \\times \\dfrac{M_{\\text{O}_2}}{M_{\\text{He}}}}$$\n\nSubstitute the given values:\n$$\\dfrac{v_{\\text{rms, He}}}{v_{\\text{rms, }\\text{O}_2}} = \\sqrt{\\dfrac{300\\text{ K}}{600\\text{ K}} \\times \\dfrac{32\\text{ g mol}^{-1}}{4\\text{ g mol}^{-1}}} = \\sqrt{\\dfrac{1}{2} \\times 8} = \\sqrt{4} = 2$$\n\nThus, the ratio is $2 : 1$.",
+  "distractor_notes": "$1 : 2$ comes from inverting the ratio (calculating oxygen to helium instead of helium to oxygen).\n$1 : 1$ comes from incorrectly including the number of moles as $v_{\\text{rms}} \\propto \\sqrt{nT/M}$, yielding $\\sqrt{(1 \\times 300 \\times 32)/(4 \\times 600 \\times 4)} = 1$.\n$4 : 1$ comes from confusing molar mass $M$ with total mass $m = nM$, using $v_{\\text{rms}} \\propto \\sqrt{T/(nM)}$, yielding $\\sqrt{(300 \\times 4 \\times 32)/(600 \\times 1 \\times 4)} = \\sqrt{16} = 4$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

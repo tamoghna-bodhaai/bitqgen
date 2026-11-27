@@ -1,0 +1,146 @@
+[
+ {
+  "qno": 122,
+  "stem": "The height of the cylinder of maximum volume that can be inscribed in a sphere of radius $a$ is",
+  "options": [
+   "$\\frac{a}{\\sqrt3}$",
+   "$\\frac{2a}{\\sqrt3}$",
+   "$\\frac32a$",
+   "None"
+  ],
+  "solution": "$r^2 + \\dfrac{h^2}{4} = a^2$. $V = \\pi\\left(a^2h - \\dfrac{h^3}{4}\\right)$, $\\dfrac{dV}{dh} = \\pi\\left(a^2 - \\dfrac34h^2\\right) = 0 \\Rightarrow h = \\dfrac{2a}{\\sqrt3}$ (maximum since $V'' < 0$).",
+  "chapter": "Differential Calculus",
+  "subtopic": "Maxima/minima (geometry)",
+  "archetype": "optimisation with constraint",
+  "difficulty": 2,
+  "figure_kind": "diagram"
+ },
+ {
+  "qno": 123,
+  "stem": "If $\\vec a = \\hat i + 2\\hat j + 3\\hat k$, $\\vec b = 2\\hat i + 3\\hat j + \\hat k$, $\\vec c = 3\\hat i + \\hat j + 2\\hat k$ and $\\alpha\\vec a + \\beta\\vec b + \\gamma\\vec c = -3(\\hat i - \\hat k)$, then the ordered triplet $(\\alpha, \\beta, \\gamma)$ is",
+  "options": [
+   "$(2, -1, -1)$",
+   "$(-2, 1, 1)$",
+   "$(-2, -1, 1)$",
+   "$(2, 1, -1)$"
+  ],
+  "solution": "$\\alpha + 2\\beta + 3\\gamma = -3$, $2\\alpha + 3\\beta + \\gamma = 0$, $3\\alpha + \\beta + 2\\gamma = 3$ give $\\alpha = 2, \\beta = -1, \\gamma = -1$.",
+  "chapter": "Vector Algebra",
+  "subtopic": "Linear combination",
+  "archetype": "solve linear system",
+  "difficulty": 1
+ },
+ {
+  "qno": 124,
+  "stem": "The plane $x + 3y + 13 = 0$ passes through the line of intersection of the planes $2x - 8y + 4z = p$ and $3x - 5y + 4z + 10 = 0$. If the plane is perpendicular to the plane $3x - y - 2z - 4 = 0$, then the value of $p$ is equal to",
+  "options": [
+   "$2$",
+   "$5$",
+   "$9$",
+   "$3$"
+  ],
+  "solution": "$(2 + 3\\lambda)x + (-8 - 5\\lambda)y + (4 + 4\\lambda)z - p + 10\\lambda = 0$. Comparing with $x + 3y + 13 = 0$: $\\lambda = -1$, which gives $p = 3$.",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Family of planes",
+  "archetype": "compare coefficients",
+  "difficulty": 2
+ },
+ {
+  "qno": 125,
+  "stem": "If $A$ and $B$ are two independent events and $P(C) = 0$, then A, B, C are :",
+  "options": [
+   "independent",
+   "dependent",
+   "not pairwise independent",
+   "none of the above"
+  ],
+  "solution": "All intersections with C have probability 0 = the product of probabilities, so A, B, C are pairwise and mutually independent.",
+  "chapter": "Probability",
+  "subtopic": "Independence",
+  "archetype": "conceptual",
+  "difficulty": 2,
+  "notes": "'P(C) = 0' truncated in source stem; restored from the solution.",
+  "exemplar_ok": false
+ },
+ {
+  "qno": 126,
+  "stem": "A circle touches both the $y$-axis and the line $x + y = 0$. Then the locus of its center is",
+  "options": [
+   "$y = \\sqrt2x$",
+   "$x = \\sqrt2y$",
+   "$y^2 - x^2 = 2xy$",
+   "$x^2 - y^2 = 2xy$"
+  ],
+  "solution": "With centre $(h, k)$: $\\left|\\dfrac{h + k}{\\sqrt2}\\right| = |h|$, giving the locus $x^2 - y^2 = 2xy$.",
+  "chapter": "Conic Sections",
+  "subtopic": "Locus of centre",
+  "archetype": "equal distances",
+  "difficulty": 2,
+  "figure_kind": "diagram",
+  "notes": "Line truncated in source ('x + y ='); x + y = 0 assumed.",
+  "exemplar_ok": false
+ },
+ {
+  "qno": 127,
+  "source_tag": "JM 2022",
+  "stem": "Let A and B be two events such that $P(B \\mid A) = \\frac25$, $P(A \\mid B) = \\frac17$ and $P(A \\cap B) = \\frac19$. Consider (S1) $P(A' \\cup B) = \\frac56$, (S2) $P(A' \\cap B') = \\frac{1}{18}$. Then",
+  "options": [
+   "Both (S1) and (S2) are true",
+   "Both (S1) and (S2) are false",
+   "Only (S1) is true",
+   "Only (S2) is true"
+  ],
+  "solution": "$P(B) = \\frac79$, $P(A) = \\frac{5}{18}$. $P(A' \\cup B) = 1 - P(A) + P(A \\cap B) = \\frac56$; $P(A' \\cap B') = 1 - P(A) - P(B) + P(A \\cap B) = \\frac{1}{18}$. Both true.",
+  "chapter": "Probability",
+  "subtopic": "Conditional probability",
+  "archetype": "two-statement evaluation",
+  "difficulty": 2
+ },
+ {
+  "qno": 128,
+  "source_tag": "JM 2022",
+  "stem": "The integral $\\displaystyle\\int_0^{\\frac{\\pi}{2}}\\frac{1}{3 + 2\\sin x + \\cos x}\\,dx$ is equal to:",
+  "options": [
+   "$\\tan^{-1}(2)$",
+   "$\\tan^{-1}(2) - \\frac{\\pi}{4}$",
+   "$\\frac12\\tan^{-1}(2) - \\frac{\\pi}{8}$",
+   "$\\frac12$"
+  ],
+  "solution": "Put $\\tan\\frac x2 = t$: $I = \\displaystyle\\int_0^1\\frac{dt}{(t+1)^2 + 1} = \\tan^{-1}2 - \\frac{\\pi}{4}$",
+  "chapter": "Integral Calculus",
+  "subtopic": "Weierstrass substitution",
+  "archetype": "t = tan(x/2)",
+  "difficulty": 3
+ },
+ {
+  "qno": 129,
+  "source_tag": "JM 2021",
+  "stem": "The number of $\\theta \\in (0, 4\\pi)$ for which the system of linear equations\n\n$3(\\sin3\\theta)x - y + z = 2$\n$3(\\cos2\\theta)x + 4y + 3z = 3$\n$6x + 7y + 7z = 9$\n\nhas no solution is :",
+  "options": [
+   "$6$",
+   "$7$",
+   "$8$",
+   "$9$"
+  ],
+  "solution": "$D = 0 \\Rightarrow 21\\sin3\\theta + 42\\cos2\\theta - 42 = 0 \\Rightarrow \\sin3\\theta + 2\\cos2\\theta - 2 = 0$, which has 7 solutions in $(0, 4\\pi)$.",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Inconsistent systems",
+  "archetype": "D = 0 then trig count",
+  "difficulty": 4
+ },
+ {
+  "qno": 130,
+  "stem": "The smallest natural number n, such that the coefficient of $x$ in the expansion of $\\left(x^2 + \\frac{1}{x^3}\\right)^n$ is ${}^nC_{23}$, is :",
+  "options": [
+   "$35$",
+   "$38$",
+   "$23$",
+   "$58$"
+  ],
+  "solution": "General term exponent $2n - 5r = 1 \\Rightarrow 2n = 5r + 1$. With $r = 15$ (or $n - r = 23$): $n = 38$.",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Specific term",
+  "archetype": "general term exponent",
+  "difficulty": 3
+ }
+]

@@ -1,0 +1,68 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Energy level transitions",
+  "archetype": "excitation level counting",
+  "brief": "Hydrogen atom in n = 4 (or given) state; count distinct emission lines possible and find shortest-wavelength transition.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:19",
+   "2022:23",
+   "2024s2:15"
+  ]
+ },
+ "status": "ok",
+ "stem": "A hydrogen atom is excited to the $n=4$ state. The number of distinct emission spectral lines possible when it returns to the ground state, and the transition that corresponds to the photon of shortest wavelength among them, are respectively:",
+ "options": [
+  "$4$ and $4 \\to 3$",
+  "$6$ and $4 \\to 3$",
+  "$4$ and $4 \\to 1$",
+  "$6$ and $4 \\to 1$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Distinct transitions among levels 1–4: 4×3/2 = 6. The largest energy drop, and hence shortest wavelength, is 4→1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Number of emission lines $= \\dfrac{n(n-1)}{2} = \\dfrac{4 \\times 3}{2} = 6$.\n\nShortest wavelength corresponds to the largest energy difference, i.e., transition from $n=4$ directly to $n=1$.\n\nIndependent check: Distinct transitions among levels 1–4: 4×3/2 = 6. The largest energy drop, and hence shortest wavelength, is 4→1.",
+ "solution": "For an atom excited to level $n$, the number of distinct emission lines is $\\frac{n(n-1)}{2}$.\n$$N=\\frac{4(4-1)}{2}=6$$\nThe shortest wavelength corresponds to the largest energy difference, which occurs in the transition $4\\to1$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A hydrogen atom is excited to the $n=4$ state. The number of distinct emission spectral lines possible when it returns to the ground state, and the transition that corresponds to the photon of shortest wavelength among them, are respectively:",
+  "options": [
+   "$6$ and $4 \\to 1$",
+   "$6$ and $4 \\to 3$",
+   "$4$ and $4 \\to 1$",
+   "$4$ and $4 \\to 3$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Number of emission lines $= \\dfrac{n(n-1)}{2} = \\dfrac{4 \\times 3}{2} = 6$.\n\nShortest wavelength corresponds to the largest energy difference, i.e., transition from $n=4$ directly to $n=1$.",
+  "distractor_notes": "4 lines: forgetting cascade transitions; 4→3: smallest energy, not shortest wavelength"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

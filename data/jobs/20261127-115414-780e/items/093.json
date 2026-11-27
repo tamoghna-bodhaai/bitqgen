@@ -1,0 +1,68 @@
+{
+ "qno": 93,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 93,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus of product",
+  "archetype": "modulus property",
+  "brief": "Use |z1z2| = |z1||z2| and conjugate properties to evaluate a modulus expression involving products of complex numbers given in x+iy form.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:125",
+   "2026s1:94",
+   "2026s2:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "If z1 = 3 + 4i and z2 = 5 + 12i, then the value of |(z1^2 * conj(z2))/(2 + i)^2| is:",
+ "options": [
+  "13",
+  "130",
+  "65",
+  "325"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using |ab/c|=|a||b|/|c|: |z₁|=5, |z₂|=13, and |2+i|²=5. Thus the value is (5²·13)/5=65.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Use |w1 w2| = |w1||w2| and |conj(z2)| = |z2|. |z1| = sqrt(3^2 + 4^2) = 5, |z2| = sqrt(5^2 + 12^2) = 13, |2+i| = sqrt(5). Value = |z1|^2 * |z2| / |2+i|^2 = 25*13/5 = 65.\n\nIndependent check: Using |ab/c|=|a||b|/|c|: |z₁|=5, |z₂|=13, and |2+i|²=5. Thus the value is (5²·13)/5=65.",
+ "solution": "Using $|zw|=|z||w|$ and $|\\overline{z_2}|=|z_2|$, we have $|z_1|=5$, $|z_2|=13$, and $|2+i|^2=5$.\n$$\\left|\\frac{z_1^2\\overline{z_2}}{(2+i)^2}\\right|=\\frac{|z_1|^2|z_2|}{|2+i|^2}=\\frac{25\\cdot13}{5}=65.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If z1 = 3 + 4i and z2 = 5 + 12i, then the value of |(z1^2 * conj(z2))/(2 + i)^2| is:",
+  "options": [
+   "13",
+   "65",
+   "130",
+   "325"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Use |w1 w2| = |w1||w2| and |conj(z2)| = |z2|. |z1| = sqrt(3^2 + 4^2) = 5, |z2| = sqrt(5^2 + 12^2) = 13, |2+i| = sqrt(5). Value = |z1|^2 * |z2| / |2+i|^2 = 25*13/5 = 65.",
+  "distractor_notes": "A uses only |z2|; C doubles the correct value; D omits the denominator factor |2+i|^2."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

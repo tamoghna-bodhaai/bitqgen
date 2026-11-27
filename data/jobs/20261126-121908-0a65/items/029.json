@@ -1,0 +1,67 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Field of parallel wires",
+  "archetype": "superposition numerical",
+  "brief": "Two long parallel wires carrying given currents; find magnetic field (magnitude and direction) at a point on a line between or outside them.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:24",
+   "2024s1:13",
+   "2026s2:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two long, straight parallel wires separated by a distance of $20\\ \\text{cm}$ carry currents of $4\\ \\text{A}$ and $6\\ \\text{A}$ in opposite directions. The magnitude of the net magnetic field at the midpoint between the two wires is:",
+ "options": [
+  "$4\\ \\mu\\text{T}$",
+  "$10\\ \\mu\\text{T}$",
+  "$20\\ \\mu\\text{T}$",
+  "$40\\ \\mu\\text{T}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "At midpoint r = 0.1 m from each wire. Opposite currents make the two fields add at the midpoint: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The magnetic field at a distance $r$ from a long straight wire carrying current $I$ is given by:\n$$B = \\dfrac{\\mu_0 I}{2\\pi r}$$\n\nThe midpoint lies at a distance:\n$$r = \\dfrac{d}{2} = \\dfrac{20\\ \\text{cm}}{2} = 10\\ \\text{cm} = 0.1\\ \\text{m}$$\n\nCalculating the magnitude of the field from each wire:\n$$B_1 = \\dfrac{\\mu_0 I_1}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(4\\ \\text{A})}{0.1\\ \\text{m}} = 8\\times 10^{-6}\\ \\text{T} = 8\\ \\mu\\text{T}$$\n$$B_2 = \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(6\\ \\text{A})}{0.1\\ \\text{m}} = 12\\times 10^{-6}\\ \\text{T} = 12\\ \\mu\\text{T}$$\n\nBy the right-hand grip rule, because the currents flow in opposite directions, their magnetic field vectors at any point between the wires point in the same direction (perpendicular to the plane of the wires).\n\nTherefore, the net field magnitude is the sum of the two fields:\n$$B_{\\text{net}} = B_1 + B_2 = 8\\ \\mu\\text{T} + 12\\ \\mu\\text{T} = 20\\ \\mu\\text{T}$$\n\nIndependent check: At midpoint r = 0.1 m from each wire. Opposite currents make the two fields add at the midpoint: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two long, straight parallel wires separated by a distance of $20\\ \\text{cm}$ carry currents of $4\\ \\text{A}$ and $6\\ \\text{A}$ in opposite directions. The magnitude of the net magnetic field at the midpoint between the two wires is:",
+  "options": [
+   "$4\\ \\mu\\text{T}$",
+   "$10\\ \\mu\\text{T}$",
+   "$20\\ \\mu\\text{T}$",
+   "$40\\ \\mu\\text{T}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The magnetic field at a distance $r$ from a long straight wire carrying current $I$ is given by:\n$$B = \\dfrac{\\mu_0 I}{2\\pi r}$$\n\nThe midpoint lies at a distance:\n$$r = \\dfrac{d}{2} = \\dfrac{20\\ \\text{cm}}{2} = 10\\ \\text{cm} = 0.1\\ \\text{m}$$\n\nCalculating the magnitude of the field from each wire:\n$$B_1 = \\dfrac{\\mu_0 I_1}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(4\\ \\text{A})}{0.1\\ \\text{m}} = 8\\times 10^{-6}\\ \\text{T} = 8\\ \\mu\\text{T}$$\n$$B_2 = \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(6\\ \\text{A})}{0.1\\ \\text{m}} = 12\\times 10^{-6}\\ \\text{T} = 12\\ \\mu\\text{T}$$\n\nBy the right-hand grip rule, because the currents flow in opposite directions, their magnetic field vectors at any point between the wires point in the same direction (perpendicular to the plane of the wires).\n\nTherefore, the net field magnitude is the sum of the two fields:\n$$B_{\\text{net}} = B_1 + B_2 = 8\\ \\mu\\text{T} + 12\\ \\mu\\text{T} = 20\\ \\mu\\text{T}$$",
+  "distractor_notes": "Option A ($4\\ \\mu\\text{T}$): Subtraction mistake ($12 - 8$), assuming opposite currents produce canceling fields at the center.\nOption B ($10\\ \\mu\\text{T}$): Used the total separation $d = 20\\ \\text{cm}$ instead of the midpoint distance $r = 10\\ \\text{cm}$.\nOption D ($40\\ \\mu\\text{T}$): Missed the factor of 2 in the denominator of the straight-wire field formula ($B = \\mu_0 I / (\\pi r)$).",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

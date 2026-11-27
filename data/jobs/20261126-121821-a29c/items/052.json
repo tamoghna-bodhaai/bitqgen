@@ -1,0 +1,67 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Nernst equation",
+  "archetype": "Nernst computation",
+  "brief": "For a simple one-electron or two-electron half-cell (e.g. metal ion concentration given at 298 K), compute the electrode potential using the Nernst equation; straightforward plug-in.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:42",
+   "2026s1:43",
+   "2026s2:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "What is the reduction potential of a copper electrode dipped in a $0.01\\ \\text{M}\\ \\text{Cu}^{2+}$ solution at $298\\ \\text{K}$? (Given: $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\ \\text{V}$ and $\\dfrac{2.303RT}{F} = 0.059\\ \\text{V}$)",
+ "options": [
+  "$-0.281\\ \\text{V}$",
+  "$+0.222\\ \\text{V}$",
+  "$+0.281\\ \\text{V}$",
+  "$+0.399\\ \\text{V}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Nernst: E = E° + (0.059/n) log[Cu²⁺] with n = 2. log(0.01) = −2, so E = 0.34 + (0.059/2)(−2) = 0.34 − 0.059 = +0.281 V.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The half-cell reduction reaction is:\n$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$\n\nHere, the number of electrons transferred is $n = 2$.\n\nApplying the Nernst equation at $298\\ \\text{K}$:\n$$E = E^\\circ - \\dfrac{0.059}{n}\\log_{10}\\left(\\dfrac{1}{[\\text{Cu}^{2+}]}\\right)$$\n\nSubstitute the given values:\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}\\left(\\dfrac{1}{0.01}\\right)$$\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}(10^2)$$\n$$E = 0.34 - \\dfrac{0.059}{2} \\times 2$$\n$$E = 0.34 - 0.059 = +0.281\\ \\text{V}$$\n\nIndependent check: Nernst: E = E° + (0.059/n) log[Cu²⁺] with n = 2. log(0.01) = −2, so E = 0.34 + (0.059/2)(−2) = 0.34 − 0.059 = +0.281 V.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "What is the reduction potential of a copper electrode dipped in a $0.01\\ \\text{M}\\ \\text{Cu}^{2+}$ solution at $298\\ \\text{K}$? (Given: $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\ \\text{V}$ and $\\dfrac{2.303RT}{F} = 0.059\\ \\text{V}$)",
+  "options": [
+   "$-0.281\\ \\text{V}$",
+   "$+0.222\\ \\text{V}$",
+   "$+0.281\\ \\text{V}$",
+   "$+0.399\\ \\text{V}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The half-cell reduction reaction is:\n$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$\n\nHere, the number of electrons transferred is $n = 2$.\n\nApplying the Nernst equation at $298\\ \\text{K}$:\n$$E = E^\\circ - \\dfrac{0.059}{n}\\log_{10}\\left(\\dfrac{1}{[\\text{Cu}^{2+}]}\\right)$$\n\nSubstitute the given values:\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}\\left(\\dfrac{1}{0.01}\\right)$$\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}(10^2)$$\n$$E = 0.34 - \\dfrac{0.059}{2} \\times 2$$\n$$E = 0.34 - 0.059 = +0.281\\ \\text{V}$$",
+  "distractor_notes": "Option A encodes calculating the oxidation potential ($E_{\\text{ox}} = -E_{\\text{red}} = -0.281\\ \\text{V}$) instead of the reduction potential.\nOption B encodes forgetting that $n = 2$ and dividing by $n = 1$, yielding $0.34 - 0.118 = +0.222\\ \\text{V}$.\nOption D encodes a sign error in the Nernst equation (adding the logarithmic term instead of subtracting: $0.34 + 0.059 = +0.399\\ \\text{V}$).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

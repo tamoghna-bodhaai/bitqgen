@@ -1,0 +1,68 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by parts",
+  "archetype": "integration technique",
+  "brief": "Integral that needs one application of integration by parts (log or inverse-trig times algebraic); ask the antiderivative.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:96",
+   "2026s2:126",
+   "2026s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "An antiderivative of $\\displaystyle\\int x\\ln x\\,dx$ is",
+ "options": [
+  "$\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{4}+C$",
+  "$\\dfrac{x^2}{2}\\ln x+\\dfrac{x^2}{4}+C$",
+  "$x^2\\ln x-\\dfrac{x^2}{2}+C$",
+  "$\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{2}+C$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By parts, ∫ x ln x dx = (x²/2) ln x − ∫ x/2 dx = (x²/2) ln x − x²/4 + C.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=\\ln x,\\quad dv=x\\,dx$; hence $du=\\dfrac{dx}{x},\\quad v=\\dfrac{x^2}{2}$. \n$\\displaystyle\\int x\\ln x\\,dx=\\dfrac{x^2}{2}\\ln x-\\dfrac12\\int x\\,dx=\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{4}+C$.\n\nIndependent check: By parts, ∫ x ln x dx = (x²/2) ln x − ∫ x/2 dx = (x²/2) ln x − x²/4 + C.",
+ "solution": "Using integration by parts, take $u=\\ln x$ and $dv=x\\,dx$, so $du=\\frac{dx}{x}$ and $v=\\frac{x^2}{2}$.\\\\\n$$\\int x\\ln x\\,dx=\\frac{x^2}{2}\\ln x-\\frac12\\int x\\,dx=\\frac{x^2}{2}\\ln x-\\frac{x^2}{4}+C.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An antiderivative of $\\displaystyle\\int x\\ln x\\,dx$ is",
+  "options": [
+   "$\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{4}+C$",
+   "$\\dfrac{x^2}{2}\\ln x+\\dfrac{x^2}{4}+C$",
+   "$x^2\\ln x-\\dfrac{x^2}{2}+C$",
+   "$\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{2}+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$u=\\ln x,\\quad dv=x\\,dx$; hence $du=\\dfrac{dx}{x},\\quad v=\\dfrac{x^2}{2}$. \n$\\displaystyle\\int x\\ln x\\,dx=\\dfrac{x^2}{2}\\ln x-\\dfrac12\\int x\\,dx=\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{4}+C$.",
+  "distractor_notes": "B: uses the wrong sign for the integration-by-parts term. C: misses the factor of $\\dfrac12$ in $v$. D: evaluates the remaining integral with an incorrect factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Internal resistance of cells",
+  "archetype": "circuit analysis",
+  "brief": "A cell of given emf and internal resistance connected across an external resistor; ask for terminal voltage or power dissipated (no figure).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:26",
+   "2021:19",
+   "2026s1:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "A cell of emf 12 V and internal resistance 2 ohm is connected across an external resistor of 4 ohm. The power dissipated in the external resistor is",
+ "options": [
+  "8 W",
+  "16 W",
+  "24 W",
+  "36 W"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total resistance = 4 + 2 = 6 Ω, so current = 12/6 = 2 A. External-resistor power = I²R = 2² × 4 = 16 W.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Circuit current I = emf/(external resistance + internal resistance) = 12/(4+2) = 2 A. Power dissipated in the external resistor = I^2*R = (2)^2*4 = 16 W.\n\nIndependent check: Total resistance = 4 + 2 = 6 Ω, so current = 12/6 = 2 A. External-resistor power = I²R = 2² × 4 = 16 W.",
+ "solution": "The circuit current is $I=\\dfrac{\\mathcal{E}}{R+r}=\\dfrac{12}{4+2}=2\\,\\text{A}$.\\n$$P=I^2R=(2)^2\\times4=16\\,\\text{W}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A cell of emf 12 V and internal resistance 2 ohm is connected across an external resistor of 4 ohm. The power dissipated in the external resistor is",
+  "options": [
+   "8 W",
+   "16 W",
+   "24 W",
+   "36 W"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Circuit current I = emf/(external resistance + internal resistance) = 12/(4+2) = 2 A. Power dissipated in the external resistor = I^2*R = (2)^2*4 = 16 W.",
+  "distractor_notes": "A: calculates power dissipated in the internal resistance; C: calculates total power supplied by the cell; D: uses the full emf across the external resistor."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

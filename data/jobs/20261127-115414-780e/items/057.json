@@ -1,0 +1,76 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Diazonium salt reactions",
+  "archetype": "reagent sequence",
+  "brief": "Figure shows a sequence starting from aniline → diazonium → product; fill in intermediate reagents needed for a given conversion.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:57",
+   "2025s1:34",
+   "2024s1:50"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the reaction sequence shown in the figure, aniline is first converted to benzenediazonium chloride. Identify the reagent X used in step II to obtain phenol as product P.",
+ "options": [
+  "KI",
+  "CuCN/KCN",
+  "H3PO2",
+  "H2O, warm"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q057_stem_v0.png",
+  "width_pct": 85,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Warm water hydrolyzes benzenediazonium chloride to phenol, so X is H₂O, warm.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Aryldiazonium salts react with warm water to form phenols via hydrolysis, with nitrogen gas as the leaving group. Thus X = H2O, warm.\n\nIndependent check: Warm water hydrolyzes benzenediazonium chloride to phenol, so X is H₂O, warm.",
+ "solution": "Aryldiazonium salts undergo hydrolysis with warm water, replacing the diazonium group by $-OH$ and releasing $N_2$.\n$$\\mathrm{C_6H_5N_2^+Cl^- + H_2O \\xrightarrow{warm} C_6H_5OH + N_2 + HCl}$$\nHence, $X = \\mathrm{H_2O}$, warm.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In the reaction sequence shown in the figure, aniline is first converted to benzenediazonium chloride. Identify the reagent X used in step II to obtain phenol as product P.",
+  "options": [
+   "H2O, warm",
+   "CuCN/KCN",
+   "H3PO2",
+   "KI"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "A reaction scheme with three steps. First arrow from aniline (C6H5NH2) labelled NaNO2 + HCl, 0-5 deg C points to benzenediazonium chloride (C6H5N2+ Cl-). Second arrow from the diazonium salt labelled X points to phenol (C6H5OH), which is product P.",
+   "smiles": "Nc1ccccc1>>N#[N+]c1ccccc1.[Cl-]>>Oc1ccccc1"
+  },
+  "difficulty_estimate": 1,
+  "working": "Aryldiazonium salts react with warm water to form phenols via hydrolysis, with nitrogen gas as the leaving group. Thus X = H2O, warm.",
+  "distractor_notes": "B gives benzonitrile via Sandmeyer reaction; C gives benzene by dediazoniation; D gives iodobenzene."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

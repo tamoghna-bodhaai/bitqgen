@@ -1,0 +1,68 @@
+{
+ "qno": 48,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 48,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Kp and degree of dissociation",
+  "archetype": "ICE table",
+  "brief": "Reversible gas-phase dissociation at known total equilibrium pressure; set up ICE table and compute degree of dissociation then Kp.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:41",
+   "2022:40",
+   "2025s1:33"
+  ]
+ },
+ "status": "ok",
+ "stem": "Pure $\\text{N}_2\\text{O}_4(g)$ at $1.00$ bar reaches a total equilibrium pressure of $1.50$ bar at constant temperature and volume. Find $(\\alpha,K_p)$ for $\\text{N}_2\\text{O}_4(g)\\rightleftharpoons2\\text{NO}_2(g)$.",
+ "options": [
+  "$(0.50,\\ 2.00\\ \\text{bar})$",
+  "$(0.25,\\ 0.33\\ \\text{bar})$",
+  "$(0.50,\\ 1.00\\ \\text{bar})$",
+  "$(0.50,\\ 0.50\\ \\text{bar})$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At constant temperature and volume, total pressure is proportional to total moles: 1.50 = 1.00(1 + α), so α = 0.50. The equilibrium partial pressures are p(NO₂) = 1.00 bar and p(N₂O₄) = 0.50 bar. Thus Kₚ = p(NO₂)²/p(N₂O₄) = 2.00 bar.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let initial amount be $n_0$; ICE change is $-\\alpha n_0,+2\\alpha n_0$.\\n$P_{\\text{eq}}=P_0(1+\\alpha)\\Rightarrow\\alpha=1.50/1.00-1=0.50$.\\n$p_{\\text{N}_2\\text{O}_4}=P_0(1-\\alpha)=0.50$ bar; $p_{\\text{NO}_2}=2P_0\\alpha=1.00$ bar.\\n$K_p=\\dfrac{p_{\\text{NO}_2}^2}{p_{\\text{N}_2\\text{O}_4}}=2.00$ bar.\n\nIndependent check: At constant temperature and volume, total pressure is proportional to total moles: 1.50 = 1.00(1 + α), so α = 0.50. The equilibrium partial pressures are p(NO₂) = 1.00 bar and p(N₂O₄) = 0.50 bar. Thus Kₚ = p(NO₂)²/p(N₂O₄) = 2.00 bar.",
+ "solution": "At constant $T,V$, pressure is proportional to total moles; hence $P_{\\rm eq}=P_0(1+\\alpha)$, giving $\\alpha=1.50/1.00-1=0.50$$.\\nThe$ equilibrium partial pressures are $p_{\\mathrm{NO_2}}=2P_0\\alpha=1.00$ bar and $p_{\\mathrm{N_2O_4}}=P_0(1-\\alpha)=0.50$ bar.\n$$K_p=\\frac{p_{\\mathrm{NO_2}}^2}{p_{\\mathrm{N_2O_4}}}=\\frac{(1.00)^2}{0.50}=2.00\\ \\text{bar}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Pure $\\text{N}_2\\text{O}_4(g)$ at $1.00$ bar reaches a total equilibrium pressure of $1.50$ bar at constant temperature and volume. Find $(\\alpha,K_p)$ for $\\text{N}_2\\text{O}_4(g)\\rightleftharpoons2\\text{NO}_2(g)$.",
+  "options": [
+   "$(0.25,\\ 0.33\\ \\text{bar})$",
+   "$(0.50,\\ 2.00\\ \\text{bar})$",
+   "$(0.50,\\ 1.00\\ \\text{bar})$",
+   "$(0.50,\\ 0.50\\ \\text{bar})$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let initial amount be $n_0$; ICE change is $-\\alpha n_0,+2\\alpha n_0$.\\n$P_{\\text{eq}}=P_0(1+\\alpha)\\Rightarrow\\alpha=1.50/1.00-1=0.50$.\\n$p_{\\text{N}_2\\text{O}_4}=P_0(1-\\alpha)=0.50$ bar; $p_{\\text{NO}_2}=2P_0\\alpha=1.00$ bar.\\n$K_p=\\dfrac{p_{\\text{NO}_2}^2}{p_{\\text{N}_2\\text{O}_4}}=2.00$ bar.",
+  "distractor_notes": "A: Uses an incorrect total-pressure relation for the dissociation stoichiometry.\nC: Omits the square on the product partial pressure.\nD: Omits the stoichiometric factor of $2$ when calculating $p_{\\text{NO}_2}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

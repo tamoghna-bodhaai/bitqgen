@@ -1,0 +1,67 @@
+{
+ "qno": 43,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 43,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Solubility product",
+  "archetype": "Ksp expression",
+  "brief": "For a sparingly soluble salt of a given dissolution equation (e.g. with 2:1 stoichiometry), relate solubility s to Ksp, then compute either s from Ksp or Ksp from s; also compare solubilities of two salts with same/different stoichiometry.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:41",
+   "2025s2:56",
+   "2024s1:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "The solubility products of two sparingly soluble salts, $\\text{MX}$ and $\\text{NY}_2$, are $4.0 \\times 10^{-10}$ and $3.2 \\times 10^{-11}$, respectively, at $298\\ \\text{K}$. The ratio of the molar solubility of $\\text{NY}_2$ to that of $\\text{MX}$ in water is:",
+ "options": [
+  "0.08",
+  "0.1",
+  "10",
+  "20"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "MX: Ksp=s², s=√(4.0×10⁻¹⁰)=2×10⁻⁵ M. NY₂: Ksp=4s³=3.2×10⁻¹¹ → s³=8×10⁻¹² → s=2×10⁻⁴ M. Ratio s(NY₂)/s(MX)=2×10⁻⁴/2×10⁻⁵=10.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For the salt $\\text{MX}$:\n$$\\text{MX}(s) \\rightleftharpoons \\text{M}^+(aq) + \\text{X}^-(aq)$$\nIf the molar solubility is $s_1$, then:\n$$K_{\\text{sp}}(\\text{MX}) = [\\text{M}^+][\\text{X}^-] = s_1^2$$\n$$s_1 = \\sqrt{4.0 \\times 10^{-10}} = 2.0 \\times 10^{-5}\\ \\text{mol L}^{-1}$$\n\nFor the salt $\\text{NY}_2$:\n$$\\text{NY}_2(s) \\rightleftharpoons \\text{N}^{2+}(aq) + 2\\text{Y}^-(aq)$$\nIf the molar solubility is $s_2$, then:\n$$[\\text{N}^{2+}] = s_2, \\quad [\\text{Y}^-] = 2s_2$$\n$$K_{\\text{sp}}(\\text{NY}_2) = [\\text{N}^{2+}][\\text{Y}^-]^2 = s_2(2s_2)^2 = 4s_2^3$$\n$$s_2 = \\left(\\dfrac{3.2 \\times 10^{-11}}{4}\\right)^{1/3} = \\left(8.0 \\times 10^{-12}\\right)^{1/3} = 2.0 \\times 10^{-4}\\ \\text{mol L}^{-1}$$\n\nThe ratio of the solubility of $\\text{NY}_2$ to that of $\\text{MX}$ is:\n$$\\dfrac{s(\\text{NY}_2)}{s(\\text{MX})} = \\dfrac{2.0 \\times 10^{-4}}{2.0 \\times 10^{-5}} = 10$$\n\nIndependent check: MX: Ksp=s², s=√(4.0×10⁻¹⁰)=2×10⁻⁵ M. NY₂: Ksp=4s³=3.2×10⁻¹¹ → s³=8×10⁻¹² → s=2×10⁻⁴ M. Ratio s(NY₂)/s(MX)=2×10⁻⁴/2×10⁻⁵=10.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The solubility products of two sparingly soluble salts, $\\text{MX}$ and $\\text{NY}_2$, are $4.0 \\times 10^{-10}$ and $3.2 \\times 10^{-11}$, respectively, at $298\\ \\text{K}$. The ratio of the molar solubility of $\\text{NY}_2$ to that of $\\text{MX}$ in water is:",
+  "options": [
+   "0.08",
+   "0.1",
+   "10",
+   "20"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "For the salt $\\text{MX}$:\n$$\\text{MX}(s) \\rightleftharpoons \\text{M}^+(aq) + \\text{X}^-(aq)$$\nIf the molar solubility is $s_1$, then:\n$$K_{\\text{sp}}(\\text{MX}) = [\\text{M}^+][\\text{X}^-] = s_1^2$$\n$$s_1 = \\sqrt{4.0 \\times 10^{-10}} = 2.0 \\times 10^{-5}\\ \\text{mol L}^{-1}$$\n\nFor the salt $\\text{NY}_2$:\n$$\\text{NY}_2(s) \\rightleftharpoons \\text{N}^{2+}(aq) + 2\\text{Y}^-(aq)$$\nIf the molar solubility is $s_2$, then:\n$$[\\text{N}^{2+}] = s_2, \\quad [\\text{Y}^-] = 2s_2$$\n$$K_{\\text{sp}}(\\text{NY}_2) = [\\text{N}^{2+}][\\text{Y}^-]^2 = s_2(2s_2)^2 = 4s_2^3$$\n$$s_2 = \\left(\\dfrac{3.2 \\times 10^{-11}}{4}\\right)^{1/3} = \\left(8.0 \\times 10^{-12}\\right)^{1/3} = 2.0 \\times 10^{-4}\\ \\text{mol L}^{-1}$$\n\nThe ratio of the solubility of $\\text{NY}_2$ to that of $\\text{MX}$ is:\n$$\\dfrac{s(\\text{NY}_2)}{s(\\text{MX})} = \\dfrac{2.0 \\times 10^{-4}}{2.0 \\times 10^{-5}} = 10$$",
+  "distractor_notes": "Option A (0.08): Directly calculates the ratio of solubility products $K_{\\text{sp}}(\\text{NY}_2)/K_{\\text{sp}}(\\text{MX}) = (3.2 \\times 10^{-11})/(4.0 \\times 10^{-10}) = 0.08$, erroneously equating solubility ratio to $K_{\\text{sp}}$ ratio.\nOption B (0.1): Inverts the requested ratio, computing $s(\\text{MX})/s(\\text{NY}_2) = (2.0 \\times 10^{-5})/(2.0 \\times 10^{-4}) = 0.1$.\nOption D (20): Uses the concentration of the anion $[\\text{Y}^-] = 2s_2 = 4.0 \\times 10^{-4}\\ \\text{mol L}^{-1}$ instead of the molar solubility of $\\text{NY}_2$, leading to $(4.0 \\times 10^{-4})/(2.0 \\times 10^{-5}) = 20$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

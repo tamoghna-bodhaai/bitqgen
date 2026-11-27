@@ -1,0 +1,70 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Linear first-order ODE",
+  "archetype": "integrate",
+  "brief": "Directly solve a simple separable first-order DE of the form dy/dx = f(x)g(y) with standard integral on each side; find the general solution.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:128",
+   "2024s2:95",
+   "2021:113"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of $\u0000\\dfrac{dy}{dx}=2x(1+y^2)$ is",
+ "options": [
+  "$y=\\tan\\left(\\dfrac{x^2}{2}+C\\right)$",
+  "$y=\\tan(2x^2+C)$",
+  "$y=\\tan(x+C)$",
+  "$y=\\tan(x^2+C)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Separate variables: \\(\\frac{dy}{1+y^2}=2x\\,dx\\), so \\(\\arctan y=x^2+C\\), hence \\(y=\\tan(x^2+C)\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "A stray null character appears before the equation; it does not affect the intended meaning."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{dy}{1+y^2}=2x\\,dx$\\\\\n$\\tan^{-1}y=x^2+C$\\\\\n$y=\\tan(x^2+C)$\n\nIndependent check: Separate variables: \\(\\frac{dy}{1+y^2}=2x\\,dx\\), so \\(\\arctan y=x^2+C\\), hence \\(y=\\tan(x^2+C)\\).",
+ "solution": "Separate variables and integrate:\n$$\\frac{dy}{1+y^2}=2x\\,dx \\quad\\Rightarrow\\quad \\tan^{-1}y=x^2+C.\n$$\nHence, $y=\\tan(x^2+C)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of $\u0000\\dfrac{dy}{dx}=2x(1+y^2)$ is",
+  "options": [
+   "$y=\\tan(x^2+C)$",
+   "$y=\\tan(2x^2+C)$",
+   "$y=\\tan(x+C)$",
+   "$y=\\tan\\left(\\dfrac{x^2}{2}+C\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{dy}{1+y^2}=2x\\,dx$\\\\\n$\\tan^{-1}y=x^2+C$\\\\\n$y=\\tan(x^2+C)$",
+  "distractor_notes": "B: extra factor of $2$ after integration. C: omits the factor $x$ in the integral. D: loses a factor of $2$ in integrating $2x$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

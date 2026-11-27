@@ -1,0 +1,68 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Sum and product of roots",
+  "archetype": "factorisation",
+  "brief": "Use Vieta's relations (sum/product of roots) of one quadratic to construct another quadratic whose roots are transformed (e.g., reciprocal or doubled roots).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:123",
+   "2021:146",
+   "2023s2:97"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-5x+6=0$, the quadratic equation whose roots are $2\\alpha$ and $2\\beta$ is:",
+ "options": [
+  "$x^2-5x+24=0$",
+  "$x^2-10x+24=0$",
+  "$x^2-10x+6=0$",
+  "$x^2-10x+12=0$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The original roots have sum 5 and product 6. Doubling both gives sum 10 and product 24, so the equation is x² − 10x + 24 = 0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\alpha+\\beta=5$, $\\alpha\\beta=6$.\\n$2\\alpha+2\\beta=10$, $(2\\alpha)(2\\beta)=24$.\\nRequired equation: $x^2-10x+24=0$.\n\nIndependent check: The original roots have sum 5 and product 6. Doubling both gives sum 10 and product 24, so the equation is x² − 10x + 24 = 0.",
+ "solution": "By Vieta’s formulas, $\\alpha+\\beta=5$ and $\\alpha\\beta=6$. Hence the new roots have sum $2\\alpha+2\\beta=10$ and product $(2\\alpha)(2\\beta)=24$.\n$$x^2-10x+24=0$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-5x+6=0$, the quadratic equation whose roots are $2\\alpha$ and $2\\beta$ is:",
+  "options": [
+   "$x^2-10x+24=0$",
+   "$x^2-5x+24=0$",
+   "$x^2-10x+6=0$",
+   "$x^2-10x+12=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\alpha+\\beta=5$, $\\alpha\\beta=6$.\\n$2\\alpha+2\\beta=10$, $(2\\alpha)(2\\beta)=24$.\\nRequired equation: $x^2-10x+24=0$.",
+  "distractor_notes": "B: Leaves the sum of the roots unchanged. C: Leaves the product of the roots unchanged. D: Doubles the product instead of multiplying it by $4$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

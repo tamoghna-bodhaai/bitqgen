@@ -1,0 +1,68 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "compute the area between a curve (parabola/line) and the x-axis or between two curves by direct integration of given intersection limits",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:126",
+   "2024s1:93",
+   "2025s1:99"
+  ]
+ },
+ "status": "ok",
+ "stem": "The area bounded by the parabola y = x^2 and the line y = 4 is",
+ "options": [
+  "32/3",
+  "16/3",
+  "8/3",
+  "64/3"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Intersections: x² = 4, so x = ±2. Area = ∫₋₂²(4 − x²) dx = 32/3.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Intersection points: x^2 = 4 gives x = -2, 2. Area = int from -2 to 2 of (4 - x^2) dx = [4x - x^3/3] from -2 to 2 = 32/3.\n\nIndependent check: Intersections: x² = 4, so x = ±2. Area = ∫₋₂²(4 − x²) dx = 32/3.",
+ "solution": "The curves intersect where $x^2=4$, giving $x=\\pm2$. The bounded area is\n$$\\int_{-2}^{2}(4-x^2)\\,dx=\\left[4x-\\frac{x^3}{3}\\right]_{-2}^{2}=\\frac{32}{3}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The area bounded by the parabola y = x^2 and the line y = 4 is",
+  "options": [
+   "8/3",
+   "16/3",
+   "32/3",
+   "64/3"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Intersection points: x^2 = 4 gives x = -2, 2. Area = int from -2 to 2 of (4 - x^2) dx = [4x - x^3/3] from -2 to 2 = 32/3.",
+  "distractor_notes": "A: integrates y = x^2 only over 0 to 2; B: area over [0,2] of top minus bottom; D: doubles the correct area."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

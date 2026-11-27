@@ -1,0 +1,68 @@
+{
+ "qno": 82,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 82,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism with possibility",
+  "brief": "Statements with one negative or particular statement (Some A are not B type); conclusions include one definite deduction and one 'possibility' conclusion; ask which conclusions follow.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:86",
+   "2023s2:83",
+   "2024s1:78"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll limes are citrus fruits.\nSome fruits are not citrus fruits.\n\n**Conclusions:**\nI. Some fruits are not limes.\nII. Some citrus fruits may be limes.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Since all limes are citrus, the stated non-citrus fruits are not limes, so I follows. The statements do not rule out some citrus fruits being limes, so II is possible and follows.",
+   "answer": "C",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The fruits that are not citrus cannot be limes, so I follows. Limes can be included within citrus fruits without contradiction, so II is possible.\n\nIndependent check: Since all limes are citrus, the stated non-citrus fruits are not limes, so I follows. The statements do not rule out some citrus fruits being limes, so II is possible and follows.",
+ "solution": "Since all limes are citrus fruits, any fruit that is not a citrus fruit cannot be a lime; hence some fruits are not limes. The statements also allow some citrus fruits to be limes, so both conclusions follow.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statements:**\nAll limes are citrus fruits.\nSome fruits are not citrus fruits.\n\n**Conclusions:**\nI. Some fruits are not limes.\nII. Some citrus fruits may be limes.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The fruits that are not citrus cannot be limes, so I follows. Limes can be included within citrus fruits without contradiction, so II is possible.",
+  "distractor_notes": "A: Misses the compatible possibility in II. B: Misses the definite deduction in I. D: Rejects both a definite deduction and a compatible possibility."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

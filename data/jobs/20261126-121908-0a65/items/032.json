@@ -1,0 +1,67 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength vs KE",
+  "archetype": "proportionality-scaling",
+  "brief": "Electron accelerated through a potential difference; find how its de Broglie wavelength changes when the accelerating voltage is changed by a factor.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:27",
+   "2026s2:2",
+   "2023s1:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron is accelerated from rest through a potential difference $V$, having a de Broglie wavelength $\\lambda$. If the accelerating potential is increased to $4V$, its new de Broglie wavelength is",
+ "options": [
+  "$\\dfrac{\\lambda}{4}$",
+  "$\\dfrac{\\lambda}{2}$",
+  "$2\\lambda$",
+  "$4\\lambda$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "λ = h/√(2meV), so λ ∝ 1/√V. Increasing V to 4V gives λ' = λ/√4 = λ/2 (numeric check: ratio = 0.5). Non-relativistic assumption is standard for such problems.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The de Broglie wavelength $\\lambda$ of a charged particle accelerated from rest through a potential difference $V$ is given by:\n$$\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2m q V}}$$\nFor an electron, $h$, $m$, and $q$ are constant, which gives the proportionality:\n$$\\lambda \\propto \\dfrac{1}{\\sqrt{V}}$$\nWhen the potential difference is increased from $V$ to $4V$, the new wavelength $\\lambda'$ is:\n$$\\lambda' = \\lambda \\sqrt{\\dfrac{V}{4V}} = \\dfrac{\\lambda}{2}$$\n\nIndependent check: λ = h/√(2meV), so λ ∝ 1/√V. Increasing V to 4V gives λ' = λ/√4 = λ/2 (numeric check: ratio = 0.5). Non-relativistic assumption is standard for such problems.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An electron is accelerated from rest through a potential difference $V$, having a de Broglie wavelength $\\lambda$. If the accelerating potential is increased to $4V$, its new de Broglie wavelength is",
+  "options": [
+   "$\\dfrac{\\lambda}{4}$",
+   "$\\dfrac{\\lambda}{2}$",
+   "$2\\lambda$",
+   "$4\\lambda$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "The de Broglie wavelength $\\lambda$ of a charged particle accelerated from rest through a potential difference $V$ is given by:\n$$\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2m q V}}$$\nFor an electron, $h$, $m$, and $q$ are constant, which gives the proportionality:\n$$\\lambda \\propto \\dfrac{1}{\\sqrt{V}}$$\nWhen the potential difference is increased from $V$ to $4V$, the new wavelength $\\lambda'$ is:\n$$\\lambda' = \\lambda \\sqrt{\\dfrac{V}{4V}} = \\dfrac{\\lambda}{2}$$",
+  "distractor_notes": "$\\dfrac{\\lambda}{4}$: Forgot the square root in the kinetic energy-momentum relation, assuming $\\lambda \\propto \\dfrac{1}{V}$.\n$2\\lambda$: Inverted the proportionality, assuming $\\lambda \\propto \\sqrt{V}$.\n$4\\lambda$: Inverted the proportionality and missed the square root, assuming $\\lambda \\propto V$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

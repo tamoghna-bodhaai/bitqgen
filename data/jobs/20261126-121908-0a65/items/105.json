@@ -1,0 +1,68 @@
+{
+ "qno": 105,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 105,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-digit pattern",
+  "brief": "A word is coded digit-by-digit using a hidden rule (e.g., number of letters between the letter and its alphabet-mirror, or position-based formula); apply the deduced rule to a new word of same length — hard, multi-step deduction required.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:72",
+   "2024s1:75",
+   "2025s1:71"
+  ]
+ },
+ "status": "ok",
+ "stem": "If **GARDEN** is coded as **313991**, how will **PLANET** be coded by the same letter-and-position rule?",
+ "options": [
+  "382894",
+  "854918",
+  "145981",
+  "279773"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Use reverse alphabet positions (A=26, …, Z=1), add each letter’s position in the word, then reduce to one digit by summing digits. PLANET gives 12, 17, 29, 17, 27, 13 → 3, 8, 2, 8, 9, 4.",
+   "answer": "A",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For letter position $i$ with alphabet position $p$, use the mirror position $27-p$, add $i$, then repeatedly sum digits to one digit.\nGARDEN gives $3,1,3,9,9,1$, confirming the rule.\nPLANET gives $12,17,29,17,27,13$; digit sums reduce to $3,8,2,8,9,4$.\nB uses the original alphabet positions; C subtracts the position index; D takes only the units digit.\n\nIndependent check: Use reverse alphabet positions (A=26, …, Z=1), add each letter’s position in the word, then reduce to one digit by summing digits. PLANET gives 12, 17, 29, 17, 27, 13 → 3, 8, 2, 8, 9, 4.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "If **GARDEN** is coded as **313991**, how will **PLANET** be coded by the same letter-and-position rule?",
+  "options": [
+   "382894",
+   "854918",
+   "145981",
+   "279773"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "For letter position $i$ with alphabet position $p$, use the mirror position $27-p$, add $i$, then repeatedly sum digits to one digit.\nGARDEN gives $3,1,3,9,9,1$, confirming the rule.\nPLANET gives $12,17,29,17,27,13$; digit sums reduce to $3,8,2,8,9,4$.\nB uses the original alphabet positions; C subtracts the position index; D takes only the units digit.",
+  "distractor_notes": "B: Uses the original alphabet position instead of its mirror.\nC: Subtracts the index from the mirror position rather than adding it.\nD: Takes the units digit instead of repeatedly summing digits."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Lift problems",
+  "archetype": "single-formula numerical",
+  "brief": "A spring balance or lift problem: find normal reaction reading when the lift accelerates up/down with given acceleration.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:17",
+   "2025s1:12",
+   "2023s1:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "A person of mass $60\\ \\text{kg}$ stands on a spring balance in a lift accelerating downward at $2\\ \\text{m s}^{-2}$. Taking $g=10\\ \\text{m s}^{-2}$, what does the balance read?",
+ "options": [
+  "$480\\ \\text{N}$",
+  "$600\\ \\text{N}$",
+  "$720\\ \\text{N}$",
+  "$120\\ \\text{N}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For downward acceleration, the balance reads the normal force: N = m(g − a) = 60(10 − 2) = 480 N.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For downward acceleration, $N=m(g-a)$.\\n$N=60(10-2)=480\\ \\text{N}$.\n\nIndependent check: For downward acceleration, the balance reads the normal force: N = m(g − a) = 60(10 − 2) = 480 N.",
+ "solution": "For downward acceleration, the balance reads the normal force $N=m(g-a)$.\n$$N=60(10-2)=480\\ \\text{N}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A person of mass $60\\ \\text{kg}$ stands on a spring balance in a lift accelerating downward at $2\\ \\text{m s}^{-2}$. Taking $g=10\\ \\text{m s}^{-2}$, what does the balance read?",
+  "options": [
+   "$480\\ \\text{N}$",
+   "$600\\ \\text{N}$",
+   "$720\\ \\text{N}$",
+   "$120\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "For downward acceleration, $N=m(g-a)$.\\n$N=60(10-2)=480\\ \\text{N}$.",
+  "distractor_notes": "B: Uses the reading at rest.\\nC: Applies the upward-acceleration formula.\\nD: Calculates $ma$ instead of the normal reaction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

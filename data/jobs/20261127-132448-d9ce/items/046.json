@@ -1,0 +1,68 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "Hydrogen",
+  "subtopic": "Stability of hydrides",
+  "archetype": "comparison",
+  "brief": "Compare ionic, covalent and interstitial hydrides via multiple statements (reducing nature, thermal stability, reaction with water); ask which set is correct, touching H2O2 stability as distractor.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:47",
+   "2022:45",
+   "2024s1:33"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the following statements about hydrides:\nI. Ionic hydrides react with water to liberate $\\text{H}_2$, with $\\text{H}^-$ acting as a reducing agent.\nII. For group 16 covalent hydrides, thermal stability decreases and reducing character increases down the group.\nIII. Interstitial hydrides are generally non-stoichiometric and retain metallic conductivity.\nIV. $\\text{H}_2\\text{O}_2$ is thermally more stable than $\\text{H}_2\\text{O}$.\nWhich statements are correct?",
+ "options": [
+  "I and II only",
+  "I and IV only",
+  "I, II and III only",
+  "II, III and IV only"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I–III are correct: ionic hydrides release H₂ as H⁻ is oxidized; group 16 hydride stability decreases and reducing character increases down the group; interstitial hydrides are generally non-stoichiometric and retain metallic conductivity. IV is false because H₂O₂ is less thermally stable than H₂O.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I, II, III: true.\\nIV: false; $\\text{H}_2\\text{O}_2$ is less thermally stable than $\\text{H}_2\\text{O}$.\n\nIndependent check: I–III are correct: ionic hydrides release H₂ as H⁻ is oxidized; group 16 hydride stability decreases and reducing character increases down the group; interstitial hydrides are generally non-stoichiometric and retain metallic conductivity. IV is false because H₂O₂ is less thermally stable than H₂O.",
+ "solution": "In ionic hydrides, $\\mathrm{H^-}$ is oxidised by water, liberating $\\mathrm{H_2}$; hence I is true. Down group 16, hydride thermal stability decreases while reducing character increases, and interstitial hydrides are generally non-stoichiometric and retain metallic conductivity; II and III are true. $\\mathrm{H_2O_2}$ is less thermally stable than $\\mathrm{H_2O}$, so IV is false. Thus, I, II and III only.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Consider the following statements about hydrides:\nI. Ionic hydrides react with water to liberate $\\text{H}_2$, with $\\text{H}^-$ acting as a reducing agent.\nII. For group 16 covalent hydrides, thermal stability decreases and reducing character increases down the group.\nIII. Interstitial hydrides are generally non-stoichiometric and retain metallic conductivity.\nIV. $\\text{H}_2\\text{O}_2$ is thermally more stable than $\\text{H}_2\\text{O}$.\nWhich statements are correct?",
+  "options": [
+   "I and II only",
+   "I, II and III only",
+   "I and IV only",
+   "II, III and IV only"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "I, II, III: true.\\nIV: false; $\\text{H}_2\\text{O}_2$ is less thermally stable than $\\text{H}_2\\text{O}$.",
+  "distractor_notes": "A: Omits the correct properties of interstitial hydrides in III.\nC: Includes false IV and omits II and III.\nD: Includes false IV and omits I."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

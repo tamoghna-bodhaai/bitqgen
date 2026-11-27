@@ -1,0 +1,68 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Relative velocity in one dimension",
+  "archetype": "equation-solving numeric",
+  "brief": "A boat crossing a river with given still-water speed and river speed; find heading to reach the opposite point and the time of crossing by solving velocity-vector components.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:7",
+   "2023s2:6",
+   "2025s2:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "A boat moves at $5$ m s$^{-1}$ in still water while a river flows at $3$ m s$^{-1}$. To reach the point directly opposite across a $120$ m wide river, find its heading upstream from the perpendicular to the bank and its crossing time.",
+ "options": [
+  "$36.9^\\circ,\\ 30$ s",
+  "$30.0^\\circ,\\ 40$ s",
+  "$53.1^\\circ,\\ 30$ s",
+  "$36.9^\\circ,\\ 24$ s"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cancel the river current: 5 sin θ = 3, so θ = 36.9° upstream. Across-river speed = 5 cos θ = 4 m/s, giving time = 120/4 = 30 s.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$5\\sin\\theta=3\\Rightarrow\\theta=36.9^\\circ$; across-river speed $=5\\cos\\theta=4$ m s$^{-1}$.\\\\\n$t=120/4=30$ s.\n\nIndependent check: Cancel the river current: 5 sin θ = 3, so θ = 36.9° upstream. Across-river speed = 5 cos θ = 4 m/s, giving time = 120/4 = 30 s.",
+ "solution": "For the boat to land directly opposite, its upstream velocity component must cancel the river flow: $5\\sin\\theta=3$, so $\\theta=36.9^\\circ$. The across-river speed is $5\\cos\\theta=4\\,\\text{m s}^{-1}$, hence $$t=\\frac{120}{4}=30\\,\\text{s}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A boat moves at $5$ m s$^{-1}$ in still water while a river flows at $3$ m s$^{-1}$. To reach the point directly opposite across a $120$ m wide river, find its heading upstream from the perpendicular to the bank and its crossing time.",
+  "options": [
+   "$30.0^\\circ,\\ 40$ s",
+   "$36.9^\\circ,\\ 30$ s",
+   "$53.1^\\circ,\\ 30$ s",
+   "$36.9^\\circ,\\ 24$ s"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$5\\sin\\theta=3\\Rightarrow\\theta=36.9^\\circ$; across-river speed $=5\\cos\\theta=4$ m s$^{-1}$.\\\\\n$t=120/4=30$ s.",
+  "distractor_notes": "A: uses an incorrect heading and crossing time. C: measures the complementary angle from the bank. D: uses the boat's full speed as its across-river speed."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

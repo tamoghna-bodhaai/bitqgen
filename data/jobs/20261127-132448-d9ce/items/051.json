@@ -1,0 +1,70 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Xenon fluorides – structure",
+  "archetype": "VSEPR counting",
+  "brief": "Ask for the shape and hybridisation of a xenon fluoride/oxide species (e.g. square planar XeF4-type) using lone pair counting.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:68",
+   "2026s1:47",
+   "2026s2:53"
+  ]
+ },
+ "status": "ok",
+ "stem": "What are the shape and hybridisation of $\u0005text{XeF}_4$?",
+ "options": [
+  "Tetrahedral, $sp^3$",
+  "Trigonal bipyramidal, $sp^3d$",
+  "Square planar, $sp^3d^2$",
+  "Octahedral, $sp^3d^2$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Xe has 4 bonding pairs and 2 lone pairs, giving an octahedral electron-pair arrangement and a square-planar shape; the stated hybridisation is sp³d².",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "The XeF₄ notation contains a stray control character before “text”; the intended formula is clear."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Xe has $4$ bond pairs and $2$ lone pairs.\\nSteric number $= 4+2=6$; electron-pair geometry is octahedral.\\nThe two lone pairs occupy opposite positions, giving square planar shape; hybridisation $sp^3d^2$.\n\nIndependent check: Xe has 4 bonding pairs and 2 lone pairs, giving an octahedral electron-pair arrangement and a square-planar shape; the stated hybridisation is sp³d².",
+ "solution": "Xe has $4$ bond pairs and $2$ lone pairs, so its steric number is $6$.\n$$\\text{Hybridisation}=sp^3d^2$$\nThe electron-pair geometry is octahedral; with lone pairs opposite each other, the molecular shape is square planar.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "What are the shape and hybridisation of $\u0005text{XeF}_4$?",
+  "options": [
+   "Tetrahedral, $sp^3$",
+   "Trigonal bipyramidal, $sp^3d$",
+   "Square planar, $sp^3d^2$",
+   "Octahedral, $sp^3d^2$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Xe has $4$ bond pairs and $2$ lone pairs.\\nSteric number $= 4+2=6$; electron-pair geometry is octahedral.\\nThe two lone pairs occupy opposite positions, giving square planar shape; hybridisation $sp^3d^2$.",
+  "distractor_notes": "A: counts only four electron domains.\\nB: treats the species as having five electron domains.\\nD: gives the electron-pair geometry rather than the molecular shape."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

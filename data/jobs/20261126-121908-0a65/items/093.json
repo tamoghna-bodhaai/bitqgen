@@ -1,0 +1,67 @@
+{
+ "qno": 93,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 93,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement",
+  "archetype": "para jumble (fixed ends)",
+  "brief": "Five jumbled sentences where the first and last are given as fixed; student must order the three middle sentences correctly from four options, on a topic like a scientific process or daily habit.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:69",
+   "2025s2:70",
+   "2026s2:69"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the question below, the first and fifth sentences are fixed as 1 and 5. The three middle sentences are labeled P, Q, and R. Choose the option that gives the most logical order.\n\n**1.** When a dry seed absorbs water from the soil, the process of germination begins.\n**P.** This moisture softens the tough protective seed coat and activates dormant enzymes within.\n**Q.** As these enzymes break down stored food reserves, the embryo gains the energy needed to grow.\n**R.** Soon, the primary root breaks through the softened coat to anchor the emerging plant.\n**5.** In this manner, the dormant seed successfully transitions into a self-sustaining seedling.",
+ "options": [
+  "Q - P - R",
+  "P - Q - R",
+  "P - R - Q",
+  "R - P - Q"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Sentence 1 introduces water absorption; P follows with 'This moisture' softening the coat and activating enzymes; Q follows with 'these enzymes' releasing energy; R then has the root breaking through the 'softened coat'; sentence 5 concludes. Order P-Q-R.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. **Sentence 1 to P**: Sentence 1 mentions that a dry seed 'absorbs water from the soil'. Sentence P immediately follows with the demonstrative phrase 'This moisture', explaining its direct effects (softening the coat and activating enzymes).\n2. **Sentence P to Q**: Sentence P introduces 'dormant enzymes within'. Sentence Q directly connects to this with 'As these enzymes break down stored food reserves, the embryo gains the energy needed to grow'. Therefore, P must precede Q.\n3. **Sentence Q to R**: The energy generated through cellular respiration and growth in Q enables the physical emergence described in R ('Soon, the primary root breaks through the softened coat...').\n4. **Sentence R to 5**: Once the root anchors the plant (R), sentence 5 provides a fitting conclusion describing the overall transition into a self-sustaining seedling.\n\nThus, the only logical sequence is **P - Q - R**.\n\nIndependent check: Sentence 1 introduces water absorption; P follows with 'This moisture' softening the coat and activating enzymes; Q follows with 'these enzymes' releasing energy; R then has the root breaking through the 'softened coat'; sentence 5 concludes. Order P-Q-R.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the question below, the first and fifth sentences are fixed as 1 and 5. The three middle sentences are labeled P, Q, and R. Choose the option that gives the most logical order.\n\n**1.** When a dry seed absorbs water from the soil, the process of germination begins.\n**P.** This moisture softens the tough protective seed coat and activates dormant enzymes within.\n**Q.** As these enzymes break down stored food reserves, the embryo gains the energy needed to grow.\n**R.** Soon, the primary root breaks through the softened coat to anchor the emerging plant.\n**5.** In this manner, the dormant seed successfully transitions into a self-sustaining seedling.",
+  "options": [
+   "Q - P - R",
+   "P - Q - R",
+   "P - R - Q",
+   "R - P - Q"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. **Sentence 1 to P**: Sentence 1 mentions that a dry seed 'absorbs water from the soil'. Sentence P immediately follows with the demonstrative phrase 'This moisture', explaining its direct effects (softening the coat and activating enzymes).\n2. **Sentence P to Q**: Sentence P introduces 'dormant enzymes within'. Sentence Q directly connects to this with 'As these enzymes break down stored food reserves, the embryo gains the energy needed to grow'. Therefore, P must precede Q.\n3. **Sentence Q to R**: The energy generated through cellular respiration and growth in Q enables the physical emergence described in R ('Soon, the primary root breaks through the softened coat...').\n4. **Sentence R to 5**: Once the root anchors the plant (R), sentence 5 provides a fitting conclusion describing the overall transition into a self-sustaining seedling.\n\nThus, the only logical sequence is **P - Q - R**.",
+  "distractor_notes": "Q - P - R: Incorrect because Q uses 'these enzymes' without an antecedent; the enzymes are introduced only in P.\nP - R - Q: Incorrect because the embryo's energy production (Q) must precede the physical expansion and rupture of the seed coat by the primary root (R).\nR - P - Q: Incorrect because R mentions 'the softened coat' before P introduces how the moisture softens the coat, and P must immediately follow sentence 1 due to the reference 'This moisture'.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

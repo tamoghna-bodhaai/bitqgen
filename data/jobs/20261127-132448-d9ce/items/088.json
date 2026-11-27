@@ -1,0 +1,68 @@
+{
+ "qno": 88,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 88,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Tense consistency",
+  "archetype": "sentence improvement",
+  "brief": "Sentence with a tense inconsistency across clauses (e.g. present perfect paired wrongly with simple past time adverb); pick the corrected version.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:91",
+   "2023s2:67",
+   "2021:85"
+  ]
+ },
+ "status": "ok",
+ "stem": "Choose the sentence that best corrects the tense error: The research team has published its findings last month after reviewing the archived records.",
+ "options": [
+  "The research team had published its findings last month after reviewing the archived records.",
+  "The research team has published its findings last month after reviewing the archived records.",
+  "The research team published its findings last month after reviewing the archived records.",
+  "The research team publishes its findings last month after reviewing the archived records."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Last month” specifies a completed time, so the simple past “published” is appropriate.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "“Last month” specifies a completed past time, so use simple past: “published.”\n\nIndependent check: “Last month” specifies a completed time, so the simple past “published” is appropriate.",
+ "solution": "“Last month” specifies a completed time in the past, so use the simple past tense: “published.”",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Choose the sentence that best corrects the tense error: The research team has published its findings last month after reviewing the archived records.",
+  "options": [
+   "The research team published its findings last month after reviewing the archived records.",
+   "The research team has published its findings last month after reviewing the archived records.",
+   "The research team had published its findings last month after reviewing the archived records.",
+   "The research team publishes its findings last month after reviewing the archived records."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "“Last month” specifies a completed past time, so use simple past: “published.”",
+  "distractor_notes": "B: Present perfect is incompatible with “last month.” C: Past perfect needs another past reference point. D: Simple present conflicts with the past-time adverb."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

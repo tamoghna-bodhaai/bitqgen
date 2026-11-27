@@ -1,0 +1,68 @@
+{
+ "qno": 77,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 77,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Crystal field theory – high/low spin",
+  "archetype": "identify-property",
+  "brief": "Given a complex ion (with ligands listed), determine its hybridisation/geometry/spin state using CFT — figure-free but with structural formula of the complex in the question.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:78",
+   "2023s2:58",
+   "2026s2:56"
+  ]
+ },
+ "status": "ok",
+ "stem": "The spin-only magnetic moment of [Co(NH3)6]2+ is closest to",
+ "options": [
+  "1.73 BM",
+  "3.87 BM",
+  "2.83 BM",
+  "4.90 BM"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Co²⁺ is d⁷; [Co(NH₃)₆]²⁺ is high-spin with 3 unpaired electrons. μ = √[3(3+2)] = √15 ≈ 3.87 BM.",
+   "answer": "C",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Co2+ is 3d7. NH3 is a strong-field ligand for many M3+ ions, but for Co2+ the pairing energy is greater than the crystal field splitting, so the complex remains high spin. Configuration: t2g5 eg2, giving 3 unpaired electrons. Spin-only magnetic moment = sqrt(3 * (3 + 2)) = sqrt(15) = 3.87 BM. Hence option C.\n\nIndependent check: Co²⁺ is d⁷; [Co(NH₃)₆]²⁺ is high-spin with 3 unpaired electrons. μ = √[3(3+2)] = √15 ≈ 3.87 BM.",
+ "solution": "Co$^{2+}$ is $3d^7$; in this octahedral complex it is high-spin, with $3$ unpaired electrons.\n$$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(3+2)}=\\sqrt{15}\\approx 3.87\\text{ BM}$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "The spin-only magnetic moment of [Co(NH3)6]2+ is closest to",
+  "options": [
+   "1.73 BM",
+   "2.83 BM",
+   "3.87 BM",
+   "4.90 BM"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Co2+ is 3d7. NH3 is a strong-field ligand for many M3+ ions, but for Co2+ the pairing energy is greater than the crystal field splitting, so the complex remains high spin. Configuration: t2g5 eg2, giving 3 unpaired electrons. Spin-only magnetic moment = sqrt(3 * (3 + 2)) = sqrt(15) = 3.87 BM. Hence option C.",
+  "distractor_notes": "A: assumes NH3 forces a low-spin d7 configuration with one unpaired electron (sqrt(3) = 1.73 BM). B: uses two unpaired electrons (sqrt(8) = 2.83 BM). D: uses four unpaired electrons, e.g. a high-spin d6 configuration (sqrt(24) = 4.90 BM)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

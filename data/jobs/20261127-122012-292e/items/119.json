@@ -1,0 +1,64 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "One-sided limits",
+  "archetype": "match one-sided limits",
+  "brief": "a piecewise function with an unknown constant at a joint; find k by equating left and right limits for continuity/differentiability",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:103",
+   "2024s1:100",
+   "2025s2:96"
+  ]
+ },
+ "status": "failed",
+ "stem": "If f(x) = { [sqrt(1 + 4kx) - sqrt(1 - 4kx)]/x + 1 for x < 0; 3k + 3 for x = 0; [ln(1 + 3kx)]/x + 3 for x > 0 } is continuous at x = 0, then k =",
+ "options": [
+  "2",
+  "1",
+  "0",
+  "3"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Left-hand limit L = lim x->0- { [sqrt(1 + 4kx) - sqrt(1 - 4kx)]/x + 1 }. Rationalizing gives ratio 8kx/[x(sqrt(1 + 4kx) + sqrt(1 - 4kx))], whose limit is 4k; hence L = 4k + 1. Right-hand limit R = lim x->0+ { ln(1 + 3kx)/x + 3 } = 3k + 3. For continuity, L = f(0) = R, so 4k + 1 = 3k + 3, giving k = 2.",
+ "solution": "For continuity at $x=0$, the one-sided limits must equal $f(0)=3k+3$.\n$$\\lim_{x\\to0^-}f(x)=4k+1,\\qquad \\lim_{x\\to0^+}f(x)=3k+3$$\nEquating gives $4k+1=3k+3$, hence $k=2$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "If f(x) = { [sqrt(1 + 4kx) - sqrt(1 - 4kx)]/x + 1 for x < 0; 3k + 3 for x = 0; [ln(1 + 3kx)]/x + 3 for x > 0 } is continuous at x = 0, then k =",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Left-hand limit L = lim x->0- { [sqrt(1 + 4kx) - sqrt(1 - 4kx)]/x + 1 }. Rationalizing gives ratio 8kx/[x(sqrt(1 + 4kx) + sqrt(1 - 4kx))], whose limit is 4k; hence L = 4k + 1. Right-hand limit R = lim x->0+ { ln(1 + 3kx)/x + 3 } = 3k + 3. For continuity, L = f(0) = R, so 4k + 1 = 3k + 3, giving k = 2.",
+  "distractor_notes": "A: equates only the variable parts 4k and 3k, giving k = 0.\nB: treats the right-hand constant as 2 instead of 3, solving 4k + 1 = 3k + 2.\nD: treats the right-hand constant as 4 instead of 3, solving 4k + 1 = 3k + 4."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 94,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 94,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Locus from argument",
+  "archetype": "locus derivation",
+  "brief": "Find the locus of z satisfying arg((z − α)/(z − β)) = π/2; derive the circle with α, β as endpoints of a diameter.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:100",
+   "2026s1:95",
+   "2026s2:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $z$ satisfies $\\arg\\left(\\dfrac{z - 4 - 3i}{z + 2 + 5i}\\right) = \\dfrac{\\pi}{2}$, then $z$ satisfies",
+ "options": [
+  "$|z - 1 + i| = 5$",
+  "$|z - 1 - i| = 5$",
+  "$|z - 3 - 4i| = 5$",
+  "$|z - 1 + i| = 10$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "arg((z-A)/(z-B)) = π/2 with A = 4+3i, B = -2-5i means z lies on the circle with AB as diameter (the arc giving +π/2). Center = midpoint (A+B)/2 = 1 - i; radius = |A-B|/2 = |6+8i|/2 = 5. So |z - (1 - i)| = |z - 1 + i| = 5, verified numerically (phase = +π/2 on the appropriate arc). Option A.",
+   "answer": "A",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The given equation is $\\arg\\left(\\dfrac{z - \\alpha}{z - \\beta}\\right) = \\dfrac{\\pi}{2}$, where $\\alpha = 4 + 3i$ and $\\beta = -2 - 5i$.\n\nGeometrically, this represents a semicircle having the line segment joining $\\alpha$ and $\\beta$ as its diameter.\n\nThe center $z_0$ of the circle is the midpoint of $\\alpha$ and $\\beta$:\n$$z_0 = \\dfrac{\\alpha + \\beta}{2} = \\dfrac{(4 + 3i) + (-2 - 5i)}{2} = \\dfrac{2 - 2i}{2} = 1 - i$$\n\nThe radius $R$ of the circle is half the distance between $\\alpha$ and $\\beta$:\n$$R = \\dfrac{|\\alpha - \\beta|}{2} = \\dfrac{|(4 + 3i) - (-2 - 5i)|}{2} = \\dfrac{|6 + 8i|}{2} = \\dfrac{\\sqrt{6^2 + 8^2}}{2} = \\dfrac{10}{2} = 5$$\n\nThus, any point $z$ on this locus lies on the circle:\n$$|z - z_0| = R \\implies |z - (1 - i)| = 5 \\implies |z - 1 + i| = 5$$\n\nIndependent check: arg((z-A)/(z-B)) = π/2 with A = 4+3i, B = -2-5i means z lies on the circle with AB as diameter (the arc giving +π/2). Center = midpoint (A+B)/2 = 1 - i; radius = |A-B|/2 = |6+8i|/2 = 5. So |z - (1 - i)| = |z - 1 + i| = 5, verified numerically (phase = +π/2 on the appropriate arc). Option A.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $z$ satisfies $\\arg\\left(\\dfrac{z - 4 - 3i}{z + 2 + 5i}\\right) = \\dfrac{\\pi}{2}$, then $z$ satisfies",
+  "options": [
+   "$|z - 1 + i| = 5$",
+   "$|z - 1 - i| = 5$",
+   "$|z - 3 - 4i| = 5$",
+   "$|z - 1 + i| = 10$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "The given equation is $\\arg\\left(\\dfrac{z - \\alpha}{z - \\beta}\\right) = \\dfrac{\\pi}{2}$, where $\\alpha = 4 + 3i$ and $\\beta = -2 - 5i$.\n\nGeometrically, this represents a semicircle having the line segment joining $\\alpha$ and $\\beta$ as its diameter.\n\nThe center $z_0$ of the circle is the midpoint of $\\alpha$ and $\\beta$:\n$$z_0 = \\dfrac{\\alpha + \\beta}{2} = \\dfrac{(4 + 3i) + (-2 - 5i)}{2} = \\dfrac{2 - 2i}{2} = 1 - i$$\n\nThe radius $R$ of the circle is half the distance between $\\alpha$ and $\\beta$:\n$$R = \\dfrac{|\\alpha - \\beta|}{2} = \\dfrac{|(4 + 3i) - (-2 - 5i)|}{2} = \\dfrac{|6 + 8i|}{2} = \\dfrac{\\sqrt{6^2 + 8^2}}{2} = \\dfrac{10}{2} = 5$$\n\nThus, any point $z$ on this locus lies on the circle:\n$$|z - z_0| = R \\implies |z - (1 - i)| = 5 \\implies |z - 1 + i| = 5$$",
+  "distractor_notes": "Option B encodes a sign error when expanding $|z - z_0|$, writing $|z - 1 - i| = 5$ instead of $|z - (1 - i)| = 5$.\nOption C encodes confusing the midpoint with the half-difference, calculating the center as $\\frac{\\alpha - \\beta}{2} = 3 + 4i$.\nOption D encodes forgetting to divide the diameter $|\\alpha - \\beta| = 10$ by $2$, thus using the diameter in place of the radius.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

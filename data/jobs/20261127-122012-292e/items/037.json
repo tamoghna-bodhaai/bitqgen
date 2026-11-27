@@ -1,0 +1,68 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Conservation of angular momentum",
+  "archetype": "conservation law",
+  "brief": "A person standing on a freely rotating platform folds their arms (moment of inertia changes); ask for the new angular velocity using angular momentum conservation (no figure).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:20",
+   "2024s2:29",
+   "2021:40"
+  ]
+ },
+ "status": "ok",
+ "stem": "A girl stands at the centre of a horizontal turntable that is free to rotate about a frictionless vertical axle. With her arms spread out, the combined moment of inertia of the girl and turntable about the axle is 10 kg m^2 and the turntable turns at 4 rad s^-1. She folds her arms, reducing the combined moment of inertia to 5 kg m^2. The new angular speed of the turntable is",
+ "options": [
+  "8 rad s^-1",
+  "4 rad s^-1",
+  "2 rad s^-1",
+  "16 rad s^-1"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Angular momentum is conserved: 10 × 4 = 5ω, so ω = 8 rad s⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Angular momentum is conserved: I1*w1 = I2*w2.\nw2 = (I1/I2)*w1 = (10/5)*4 = 8 rad s^-1.\n\nIndependent check: Angular momentum is conserved: 10 × 4 = 5ω, so ω = 8 rad s⁻¹.",
+ "solution": "With no external torque about the axle, angular momentum is conserved:\n$$I_1\\omega_1=I_2\\omega_2$$\nThus, $\\omega_2=\\dfrac{10\\times4}{5}=8\\ \\text{rad s}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A girl stands at the centre of a horizontal turntable that is free to rotate about a frictionless vertical axle. With her arms spread out, the combined moment of inertia of the girl and turntable about the axle is 10 kg m^2 and the turntable turns at 4 rad s^-1. She folds her arms, reducing the combined moment of inertia to 5 kg m^2. The new angular speed of the turntable is",
+  "options": [
+   "2 rad s^-1",
+   "4 rad s^-1",
+   "8 rad s^-1",
+   "16 rad s^-1"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Angular momentum is conserved: I1*w1 = I2*w2.\nw2 = (I1/I2)*w1 = (10/5)*4 = 8 rad s^-1.",
+  "distractor_notes": "A uses the reciprocal inertia ratio (5/10) instead of (10/5). B neglects the change in moment of inertia. D uses the square of the inertia ratio (10/5)^2."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

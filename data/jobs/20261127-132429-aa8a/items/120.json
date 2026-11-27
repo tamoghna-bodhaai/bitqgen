@@ -1,0 +1,68 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Conversion between inverse functions",
+  "archetype": "triangle method",
+  "brief": "Convert a composite like sin⁻¹(x) expressed via tan⁻¹ into a single inverse trig value using the triangle method.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:116",
+   "2023s2:100",
+   "2025s2:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\sin^{-1}\\left(\\dfrac{3}{5}\\right)+\\tan^{-1}\\left(\\dfrac{1}{7}\\right)$.",
+ "options": [
+  "$\\tan^{-1}\\left(\\dfrac{1}{2}\\right)$",
+  "$\\tan^{-1}(1)$",
+  "$\\tan^{-1}\\left(\\dfrac{25}{28}\\right)$",
+  "$\\tan^{-1}\\left(\\dfrac{31}{17}\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let α = sin⁻¹(3/5), so tan α = 3/4. Then tan(α + tan⁻¹(1/7)) = ((3/4) + (1/7))/(1 − 3/28) = 1. The sum is in the principal range, so it equals tan⁻¹(1).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $A=\\sin^{-1}(3/5)=\\tan^{-1}(3/4)$, using a $3$-$4$-$5$ triangle.\\n$\\tan(A+\\tan^{-1}(1/7))=\\dfrac{3/4+1/7}{1-(3/4)(1/7)}=1$.\\nBoth angles are positive and their sum is less than $\\pi/2$.\\n$A+\\tan^{-1}(1/7)=\\tan^{-1}(1)=\\dfrac{\\pi}{4}$\n\nIndependent check: Let α = sin⁻¹(3/5), so tan α = 3/4. Then tan(α + tan⁻¹(1/7)) = ((3/4) + (1/7))/(1 − 3/28) = 1. The sum is in the principal range, so it equals tan⁻¹(1).",
+ "solution": "Let $A=\\tan^{-1}(3/4)$, since $\\tan(\\\\sin^{-1}(3/5))=3/4$. Then\n$$\\tan\\left(A+\\tan^{-1}(1/7)\\right)=\\frac{3/4+1/7}{1-(3/4)(1/7)}=1.$$\nBoth angles are positive and their sum is less than $\\pi/2$, so the result is $\\tan^{-1}(1)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\sin^{-1}\\left(\\dfrac{3}{5}\\right)+\\tan^{-1}\\left(\\dfrac{1}{7}\\right)$.",
+  "options": [
+   "$\\tan^{-1}\\left(\\dfrac{1}{2}\\right)$",
+   "$\\tan^{-1}\\left(\\dfrac{25}{28}\\right)$",
+   "$\\tan^{-1}(1)$",
+   "$\\tan^{-1}\\left(\\dfrac{31}{17}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $A=\\sin^{-1}(3/5)=\\tan^{-1}(3/4)$, using a $3$-$4$-$5$ triangle.\\n$\\tan(A+\\tan^{-1}(1/7))=\\dfrac{3/4+1/7}{1-(3/4)(1/7)}=1$.\\nBoth angles are positive and their sum is less than $\\pi/2$.\\n$A+\\tan^{-1}(1/7)=\\tan^{-1}(1)=\\dfrac{\\pi}{4}$",
+  "distractor_notes": "A: Adds the inverse tangent arguments directly.\\nB: Uses the numerator of the tangent addition formula but omits its denominator.\\nD: Reverses the opposite and adjacent sides when converting the inverse sine."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

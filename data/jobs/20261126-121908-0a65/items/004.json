@@ -1,0 +1,68 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Floating in two liquids",
+  "archetype": "buoyancy balance",
+  "brief": "A solid floats with given fractions of volume immersed in two immiscible liquids layered in a beaker; find the density of the solid.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:15",
+   "2024s1:11",
+   "2025s2:15"
+  ]
+ },
+ "status": "ok",
+ "stem": "A solid floats across two immiscible liquid layers, with $50\\%$ of its volume in the lower liquid and $25\\%$ in the upper liquid. If their densities are $1200$ kg m$^{-3}$ and $800$ kg m$^{-3}$ respectively, find the solid's density.",
+ "options": [
+  "$600$ kg m$^{-3}$",
+  "$800$ kg m$^{-3}$",
+  "$900$ kg m$^{-3}$",
+  "$1200$ kg m$^{-3}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Floating equilibrium gives ρsolid = 0.50(1200) + 0.25(800) = 800 kg m⁻³.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\rho_s Vg=(0.50V)(1200)g+(0.25V)(800)g$$\n$$\\rho_s=600+200=800\\ \\text{kg m}^{-3}$$\n\nIndependent check: Floating equilibrium gives ρsolid = 0.50(1200) + 0.25(800) = 800 kg m⁻³.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A solid floats across two immiscible liquid layers, with $50\\%$ of its volume in the lower liquid and $25\\%$ in the upper liquid. If their densities are $1200$ kg m$^{-3}$ and $800$ kg m$^{-3}$ respectively, find the solid's density.",
+  "options": [
+   "$600$ kg m$^{-3}$",
+   "$800$ kg m$^{-3}$",
+   "$900$ kg m$^{-3}$",
+   "$1200$ kg m$^{-3}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$\\rho_s Vg=(0.50V)(1200)g+(0.25V)(800)g$$\n$$\\rho_s=600+200=800\\ \\text{kg m}^{-3}$$",
+  "distractor_notes": "A: omits the buoyant force from the upper liquid. C: treats all of the immersed volume as being in the lower liquid. D: assumes the solid is fully immersed in the lower liquid."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,64 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Solid State",
+  "subtopic": "Voids in fcc",
+  "archetype": "void counting",
+  "brief": "Ask number of octahedral/tetrahedral voids per atom in fcc, or the formula of a compound from void occupancy.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:41",
+   "2023s2:51",
+   "2022:59"
+  ]
+ },
+ "status": "failed",
+ "stem": "A compound is formed by elements A and B, where anions B form a ccp lattice and cations A occupy one-fourth of the tetrahedral voids. The formula of the compound is:",
+ "options": [
+  "AB",
+  "AB$_2$",
+  "A$_2$B",
+  "A$_3$B$_2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "In a ccp (fcc) unit cell, number of B atoms = 4. Number of tetrahedral voids = 8. Cations A occupy (1/4)*8 = 2 voids. Ratio A : B = 2 : 4 = 1 : 2. Therefore, formula is AB$_2$.",
+ "solution": "A ccp unit cell contains $4$ B anions and $8$ tetrahedral voids.\\n$$N_A=\\frac{1}{4}(8)=2,\\qquad A:B=2:4=1:2$$\\nHence, the formula is $\\mathrm{AB_2}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A compound is formed by elements A and B, where anions B form a ccp lattice and cations A occupy one-fourth of the tetrahedral voids. The formula of the compound is:",
+  "options": [
+   "AB",
+   "A$_2$B",
+   "AB$_2$",
+   "A$_3$B$_2$"
+  ],
+  "option_smiles": [
+   "A",
+   "A",
+   "A",
+   "A"
+  ],
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "In a ccp (fcc) unit cell, number of B atoms = 4. Number of tetrahedral voids = 8. Cations A occupy (1/4)*8 = 2 voids. Ratio A : B = 2 : 4 = 1 : 2. Therefore, formula is AB$_2$.",
+  "distractor_notes": "A: forgetting that tetrahedral voids are twice the number of atoms, so treating as 4 voids, 1/4 of 4 = 1, giving AB; B: inverting the ratio; D: incorrectly using octahedral voids (4) and taking 1/4 of that = 1, then assuming 1:2 gives A3B2."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

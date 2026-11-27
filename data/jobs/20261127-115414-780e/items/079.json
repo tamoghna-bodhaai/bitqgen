@@ -1,0 +1,68 @@
+{
+ "qno": 79,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 79,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "relation chain",
+  "brief": "A conversation-style statement ('pointing to a photo, he said his mother's brother...') asking how the person is related to the one pointing; require a two-step chain.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2023s2:89",
+   "2024s2:88"
+  ]
+ },
+ "status": "ok",
+ "stem": "Pointing to a photograph, Anil said, 'She is the daughter of my mother's brother.' How is the girl in the photograph related to Anil?",
+ "options": [
+  "Aunt",
+  "Sister",
+  "Niece",
+  "Cousin"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Anil’s mother’s brother is his maternal uncle; his uncle’s daughter is his cousin.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Anil's mother's brother is Anil's maternal uncle. The uncle's daughter is Anil's cousin. Aunt is the uncle's wife or mother's sister; niece is a brother's daughter; sister is a sibling. Thus only Cousin fits.\n\nIndependent check: Anil’s mother’s brother is his maternal uncle; his uncle’s daughter is his cousin.",
+ "solution": "Anil’s mother’s brother is his maternal uncle. His uncle’s daughter is therefore his cousin.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Pointing to a photograph, Anil said, 'She is the daughter of my mother's brother.' How is the girl in the photograph related to Anil?",
+  "options": [
+   "Aunt",
+   "Cousin",
+   "Niece",
+   "Sister"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Anil's mother's brother is Anil's maternal uncle. The uncle's daughter is Anil's cousin. Aunt is the uncle's wife or mother's sister; niece is a brother's daughter; sister is a sibling. Thus only Cousin fits.",
+  "distractor_notes": "Aunt: would be the uncle's wife, not his daughter. Niece: reverse relation. Sister: would require same parents."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Floating in two liquids",
+  "archetype": "buoyancy balance",
+  "brief": "Solid floats at interface between two liquids with given fraction immersed; compare densities or find density of body",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:15",
+   "2023s1:10",
+   "2026s1:15"
+  ]
+ },
+ "status": "ok",
+ "stem": "A uniform solid block floats at the interface of two immiscible liquids of densities $\\rho_1$ and $\\rho_2$ ($\\rho_1 < \\rho_2$) with half of its volume in the upper liquid and half in the lower liquid. When the upper liquid is replaced by another immiscible liquid of density $2\\rho_1$, the block floats with $\\dfrac{3}{4}$ of its volume in the upper liquid. The ratio $\\dfrac{\\rho_2}{\\rho_1}$ is:",
+ "options": [
+  "2",
+  "3",
+  "4",
+  "6"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Buoyancy: block density ρb = (ρ1+ρ2)/2 from half-half flotation. After replacement: ρb = 2ρ1(3/4) + ρ2(1/4) = 1.5ρ1 + 0.25ρ2. Equating: 0.5ρ1+0.5ρ2 = 1.5ρ1+0.25ρ2 → ρ2 = 4ρ1. Check: ρb = 2.5ρ1 lies between 2ρ1 and 4ρ1, so interface flotation is consistent.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $V$ be the volume and $\\rho_b$ be the density of the block.\n\nIn the first equilibrium state:\n$$V\\rho_b g = \\left(\\dfrac{V}{2}\\right)\\rho_1 g + \\left(\\dfrac{V}{2}\\right)\\rho_2 g$$\n$$\\rho_b = \\dfrac{1}{2}\\rho_1 + \\dfrac{1}{2}\\rho_2 \\quad \\text{--- (1)}$$\n\nIn the second equilibrium state, the upper liquid has density $2\\rho_1$, and $\\dfrac{3}{4}$ of the volume is in the upper liquid (hence $\\dfrac{1}{4}$ remains in the lower liquid of density $\\rho_2$):\n$$V\\rho_b g = \\left(\\dfrac{3}{4}V\\right)(2\\rho_1) g + \\left(\\dfrac{1}{4}V\\right)\\rho_2 g$$\n$$\\rho_b = \\dfrac{3}{2}\\rho_1 + \\dfrac{1}{4}\\rho_2 \\quad \\text{--- (2)}$$\n\nEquating (1) and (2):\n$$\\dfrac{1}{2}\\rho_1 + \\dfrac{1}{2}\\rho_2 = \\dfrac{3}{2}\\rho_1 + \\dfrac{1}{4}\\rho_2$$\n$$\\left(\\dfrac{1}{2} - \\dfrac{1}{4}\\right)\\rho_2 = \\left(\\dfrac{3}{2} - \\dfrac{1}{2}\\right)\\rho_1$$\n$$\\dfrac{1}{4}\\rho_2 = \\rho_1$$\n$$\\dfrac{\\rho_2}{\\rho_1} = 4$$\n\nIndependent check: Buoyancy: block density ρb = (ρ1+ρ2)/2 from half-half flotation. After replacement: ρb = 2ρ1(3/4) + ρ2(1/4) = 1.5ρ1 + 0.25ρ2. Equating: 0.5ρ1+0.5ρ2 = 1.5ρ1+0.25ρ2 → ρ2 = 4ρ1. Check: ρb = 2.5ρ1 lies between 2ρ1 and 4ρ1, so interface flotation is consistent.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A uniform solid block floats at the interface of two immiscible liquids of densities $\\rho_1$ and $\\rho_2$ ($\\rho_1 < \\rho_2$) with half of its volume in the upper liquid and half in the lower liquid. When the upper liquid is replaced by another immiscible liquid of density $2\\rho_1$, the block floats with $\\dfrac{3}{4}$ of its volume in the upper liquid. The ratio $\\dfrac{\\rho_2}{\\rho_1}$ is:",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "6"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Let $V$ be the volume and $\\rho_b$ be the density of the block.\n\nIn the first equilibrium state:\n$$V\\rho_b g = \\left(\\dfrac{V}{2}\\right)\\rho_1 g + \\left(\\dfrac{V}{2}\\right)\\rho_2 g$$\n$$\\rho_b = \\dfrac{1}{2}\\rho_1 + \\dfrac{1}{2}\\rho_2 \\quad \\text{--- (1)}$$\n\nIn the second equilibrium state, the upper liquid has density $2\\rho_1$, and $\\dfrac{3}{4}$ of the volume is in the upper liquid (hence $\\dfrac{1}{4}$ remains in the lower liquid of density $\\rho_2$):\n$$V\\rho_b g = \\left(\\dfrac{3}{4}V\\right)(2\\rho_1) g + \\left(\\dfrac{1}{4}V\\right)\\rho_2 g$$\n$$\\rho_b = \\dfrac{3}{2}\\rho_1 + \\dfrac{1}{4}\\rho_2 \\quad \\text{--- (2)}$$\n\nEquating (1) and (2):\n$$\\dfrac{1}{2}\\rho_1 + \\dfrac{1}{2}\\rho_2 = \\dfrac{3}{2}\\rho_1 + \\dfrac{1}{4}\\rho_2$$\n$$\\left(\\dfrac{1}{2} - \\dfrac{1}{4}\\right)\\rho_2 = \\left(\\dfrac{3}{2} - \\dfrac{1}{2}\\right)\\rho_1$$\n$$\\dfrac{1}{4}\\rho_2 = \\rho_1$$\n$$\\dfrac{\\rho_2}{\\rho_1} = 4$$",
+  "distractor_notes": "Option A (2): Omits the lower liquid's buoyant force in the second case, writing $\\frac{1}{2}\\rho_1 + \\frac{1}{2}\\rho_2 = \\frac{3}{2}\\rho_1 \\implies \\rho_2/\\rho_1 = 2$.\nOption B (3): Arithmetic slip in combining the coefficients of $\\rho_1$, taking $\\frac{3}{4} \\times 2 - \\frac{1}{2} = \\frac{3}{4}$ instead of $1$, leading to $\\frac{1}{4}\\rho_2 = \\frac{3}{4}\\rho_1 \\implies \\rho_2/\\rho_1 = 3$.\nOption D (6): Omits the upper liquid's contribution in the initial case, setting $\\frac{1}{2}\\rho_2 = \\frac{3}{2}\\rho_1 + \\frac{1}{4}\\rho_2 \\implies \\frac{1}{4}\\rho_2 = \\frac{3}{2}\\rho_1 \\implies \\rho_2/\\rho_1 = 6$.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

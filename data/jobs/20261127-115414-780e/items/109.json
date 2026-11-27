@@ -1,0 +1,68 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "Evaluate a limit of the form (1−cos kx)/x² or sin(ax)/sin(bx) using standard trigonometric limits.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:95",
+   "2026s1:113",
+   "2024s2:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "The vertex of a parabola is $(2, -1)$ and its focus is $(2, 3)$. The equation of the parabola is",
+ "options": [
+  "$(x-2)^2 = 16(y+1)$",
+  "$(x-2)^2 = 8(y+1)$",
+  "$(y+1)^2 = 8(x-2)$",
+  "$(y+1)^2 = 16(x-2)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a vertical parabola, the focus is (h, k+p). Here p=3-(-1)=4, so (x-2)^2=4p(y+1)=16(y+1).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Vertex $(h,k) = (2,-1)$, focus $(h, k+p) = (2,3)$. So $p = 3 - (-1) = 4$. Axis is vertical, parabola opens upward. Equation: $(x-h)^2 = 4p(y-k) \\Rightarrow (x-2)^2 = 16(y+1)$.\n\nIndependent check: For a vertical parabola, the focus is (h, k+p). Here p=3-(-1)=4, so (x-2)^2=4p(y+1)=16(y+1).",
+ "solution": "For a vertical parabola, $(x-h)^2=4p(y-k)$, where the focus is $(h,k+p)$. Here $p=3-(-1)=4$.\n$$ (x-2)^2=4(4)(y+1)=16(y+1). $$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The vertex of a parabola is $(2, -1)$ and its focus is $(2, 3)$. The equation of the parabola is",
+  "options": [
+   "$(x-2)^2 = 8(y+1)$",
+   "$(x-2)^2 = 16(y+1)$",
+   "$(y+1)^2 = 8(x-2)$",
+   "$(y+1)^2 = 16(x-2)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Vertex $(h,k) = (2,-1)$, focus $(h, k+p) = (2,3)$. So $p = 3 - (-1) = 4$. Axis is vertical, parabola opens upward. Equation: $(x-h)^2 = 4p(y-k) \\Rightarrow (x-2)^2 = 16(y+1)$.",
+  "distractor_notes": "A: forgot factor 2; C: used 4p as 8 from p=2 (incorrect p); D: forgot square on LHS or confused with horizontal parabola."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

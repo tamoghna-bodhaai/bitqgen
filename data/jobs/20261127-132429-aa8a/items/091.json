@@ -1,0 +1,68 @@
+{
+ "qno": 91,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 91,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "construct-equation",
+  "brief": "Find the image of a point in a given line and construct the equation of the line joining the point to its image.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:108",
+   "2025s2:114",
+   "2022:111"
+  ]
+ },
+ "status": "ok",
+ "stem": "The image of $P(2,-1)$ in the line $3x+4y+23=0$ and the equation of the line joining $P$ to its image are, respectively,",
+ "options": [
+  "$(-4,-9)$; $4x-3y-11=0$",
+  "$(8,7)$; $4x-3y-11=0$",
+  "$(-4,-9)$; $3x+4y+23=0$",
+  "$(-4,-9)$; $3x+4y-2=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For P(2,-1), the line expression is 25 and the normal has squared length 25. Reflection gives P'=P-2(3,4)=(-4,-9). The line through P and P' is 4x-3y-11=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f=3(2)+4(-1)+23=25$, $3^2+4^2=25$.\n$P'=P-\\dfrac{2f}{25}(3,4)=(-4,-9)$.\nThe joining line is perpendicular to the mirror line, so its normal is $(4,-3)$.\n$4(x-2)-3(y+1)=0\\Rightarrow 4x-3y-11=0$.\n\nIndependent check: For P(2,-1), the line expression is 25 and the normal has squared length 25. Reflection gives P'=P-2(3,4)=(-4,-9). The line through P and P' is 4x-3y-11=0.",
+ "solution": "For reflection across $ax+by+c=0$, $P'=P-\\dfrac{2f}{a^2+b^2}(a,b)$, where $f=3(2)+4(-1)+23=25$.\n$$P'=(2,-1)-2(3,4)=(-4,-9).$$\nThe joining line is perpendicular to the mirror line, so it has normal $(4,-3)$ and passes through $(2,-1)$: $4(x-2)-3(y+1)=0$, or $4x-3y-11=0$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The image of $P(2,-1)$ in the line $3x+4y+23=0$ and the equation of the line joining $P$ to its image are, respectively,",
+  "options": [
+   "$(-4,-9)$; $4x-3y-11=0$",
+   "$(8,7)$; $4x-3y-11=0$",
+   "$(-4,-9)$; $3x+4y+23=0$",
+   "$(-4,-9)$; $3x+4y-2=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$f=3(2)+4(-1)+23=25$, $3^2+4^2=25$.\n$P'=P-\\dfrac{2f}{25}(3,4)=(-4,-9)$.\nThe joining line is perpendicular to the mirror line, so its normal is $(4,-3)$.\n$4(x-2)-3(y+1)=0\\Rightarrow 4x-3y-11=0$.",
+  "distractor_notes": "B uses the opposite sign for the reflection displacement; C gives the mirror line itself; D uses a line parallel to the mirror instead of perpendicular to it."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

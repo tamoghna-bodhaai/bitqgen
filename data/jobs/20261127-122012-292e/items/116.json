@@ -1,0 +1,68 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Linear DE integrating factor",
+  "archetype": "integrating factor",
+  "brief": "solve a first-order linear ODE dy/dx + P(x)y = Q(x) after identifying and applying the integrating factor",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:103",
+   "2021:113",
+   "2026s1:126"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of the differential equation $\\dfrac{dy}{dx} + y \\sec^2 x = \\tan x \\sec^2 x$ is",
+ "options": [
+  "$y = \\tan x - 1 + Ce^{-\\tan x}$",
+  "$y = \\tan x + 1 + Ce^{-\\tan x}$",
+  "$y = \\tan x - 1 + Ce^{\\tan x}$",
+  "$y = \\cot x - 1 + Ce^{-\\cot x}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Integrating factor: e^{∫sec²x dx}=e^{tan x}. Then (ye^{tan x})'=tan x sec²x e^{tan x}; integrating gives ye^{tan x}=e^{tan x}(tan x−1)+C, hence y=tan x−1+Ce^{−tan x}.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Linear in $y$: $P(x)=\\sec^2 x$, $Q(x)=\\tan x \\sec^2 x$.  \nI.F. $= e^{\\int \\sec^2 x\\,dx} = e^{\\tan x}$.  \nMultiply: $\\frac{d}{dx}\\bigl(y e^{\\tan x}\\bigr) = \\tan x\\,\\sec^2 x\\, e^{\\tan x}$.  \nLet $u=\\tan x$, $du = \\sec^2 x\\,dx$: $\\int u e^u\\,du = (u-1)e^u + C$.  \nHence $y e^{\\tan x} = (\\tan x - 1)e^{\\tan x} + C \\;\\Rightarrow\\; y = \\tan x - 1 + Ce^{-\\tan x}$.\n\nIndependent check: Integrating factor: e^{∫sec²x dx}=e^{tan x}. Then (ye^{tan x})'=tan x sec²x e^{tan x}; integrating gives ye^{tan x}=e^{tan x}(tan x−1)+C, hence y=tan x−1+Ce^{−tan x}.",
+ "solution": "For the linear equation, the integrating factor is $e^{\\int \\sec^2 x\\,dx}=e^{\\tan x}$. Thus\n$$\\frac{d}{dx}\\bigl(ye^{\\tan x}\\bigr)=\\tan x\\sec^2x\\,e^{\\tan x}.$$\nLet $u=\\tan x$; integrating gives $ye^{\\tan x}=(u-1)e^u+C$, hence $y=\\tan x-1+Ce^{-\\tan x}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of the differential equation $\\dfrac{dy}{dx} + y \\sec^2 x = \\tan x \\sec^2 x$ is",
+  "options": [
+   "$y = \\tan x + 1 + Ce^{-\\tan x}$",
+   "$y = \\tan x - 1 + Ce^{-\\tan x}$",
+   "$y = \\tan x - 1 + Ce^{\\tan x}$",
+   "$y = \\cot x - 1 + Ce^{-\\cot x}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Linear in $y$: $P(x)=\\sec^2 x$, $Q(x)=\\tan x \\sec^2 x$.  \nI.F. $= e^{\\int \\sec^2 x\\,dx} = e^{\\tan x}$.  \nMultiply: $\\frac{d}{dx}\\bigl(y e^{\\tan x}\\bigr) = \\tan x\\,\\sec^2 x\\, e^{\\tan x}$.  \nLet $u=\\tan x$, $du = \\sec^2 x\\,dx$: $\\int u e^u\\,du = (u-1)e^u + C$.  \nHence $y e^{\\tan x} = (\\tan x - 1)e^{\\tan x} + C \\;\\Rightarrow\\; y = \\tan x - 1 + Ce^{-\\tan x}$.",
+  "distractor_notes": "A: sign error in the integration-by-parts step (took u+1 instead of u-1). C: sign error plus forgot to divide the particular solution by the integrating factor (kept e^{tan x} instead of e^{-tan x}). D: misidentified P(x) as cot x sec^2 x, leading to I.F. = e^{-cot x}."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

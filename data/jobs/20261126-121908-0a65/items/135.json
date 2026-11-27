@@ -1,0 +1,68 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle position conditions",
+  "archetype": "property recall",
+  "brief": "State/use basic ellipse or circle properties (e.g. eccentricity, foci of a standard conic) via direct recall.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:111",
+   "2025s1:112",
+   "2024s1:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "The line $3x+4y=25$ with respect to the circle $x^2+y^2=25$ is",
+ "options": [
+  "a tangent",
+  "a secant",
+  "disjoint from the circle",
+  "a diameter"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The distance from the origin to the line is $25/\\sqrt{3^2+4^2}=5$, equal to the circle’s radius, so the line is tangent.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Distance from $(0,0)$ to the line $=\\dfrac{25}{\\sqrt{3^2+4^2}}=5=r$; hence the line is tangent.\n\nIndependent check: The distance from the origin to the line is $25/\\sqrt{3^2+4^2}=5$, equal to the circle’s radius, so the line is tangent.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The line $3x+4y=25$ with respect to the circle $x^2+y^2=25$ is",
+  "options": [
+   "a tangent",
+   "a secant",
+   "disjoint from the circle",
+   "a diameter"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Distance from $(0,0)$ to the line $=\\dfrac{25}{\\sqrt{3^2+4^2}}=5=r$; hence the line is tangent.",
+  "distractor_notes": "B: treats a line whose distance is less than the radius as a tangent. C: treats a line whose distance equals the radius as external. D: confuses tangency with passing through the centre."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

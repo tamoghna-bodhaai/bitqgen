@@ -1,0 +1,68 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Telescoping series",
+  "archetype": "general-term telescoping",
+  "brief": "Sum of a series whose nth term is of the form 1/(n(n+k)); telescope to get a closed form in n.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:148",
+   "2025s1:118",
+   "2021:139"
+  ]
+ },
+ "status": "ok",
+ "stem": "The sum $\\displaystyle\\sum_{r=1}^{n}\\dfrac{1}{r(r+2)}$, for a positive integer $n$, is",
+ "options": [
+  "$\\dfrac{n(3n+5)}{4(n+1)^2}$",
+  "$\\dfrac{n(3n+5)}{2(n+1)(n+2)}$",
+  "$\\dfrac{n(3n+5)}{4(n+1)(n+2)}$",
+  "$\\dfrac{n(3n+1)}{4(n+1)(n+2)}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use \\(\\frac1{r(r+2)}=\\frac12(\\frac1r-\\frac1{r+2})\\). The sum telescopes to \\(\\frac34-\\frac1{2(n+1)}-\\frac1{2(n+2)}=\\frac{n(3n+5)}{4(n+1)(n+2)}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{1}{r(r+2)}=\\dfrac12\\left(\\dfrac1r-\\dfrac1{r+2}\\right)$.\\n$S_n=\\dfrac12\\left(1+\\dfrac12-\\dfrac1{n+1}-\\dfrac1{n+2}\\right)$.\\n$S_n=\\dfrac{n(3n+5)}{4(n+1)(n+2)}$.\n\nIndependent check: Use \\(\\frac1{r(r+2)}=\\frac12(\\frac1r-\\frac1{r+2})\\). The sum telescopes to \\(\\frac34-\\frac1{2(n+1)}-\\frac1{2(n+2)}=\\frac{n(3n+5)}{4(n+1)(n+2)}\\).",
+ "solution": "Using partial fractions,\n$$\\frac{1}{r(r+2)}=\\frac12\\left(\\frac1r-\\frac1{r+2}\\right).$$\nThe sum telescopes: $S_n=\\frac12\\left(1+\\frac12-\\frac1{n+1}-\\frac1{n+2}\\right)=\\boxed{\\frac{n(3n+5)}{4(n+1)(n+2)}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum $\\displaystyle\\sum_{r=1}^{n}\\dfrac{1}{r(r+2)}$, for a positive integer $n$, is",
+  "options": [
+   "$\\dfrac{n(3n+5)}{4(n+1)(n+2)}$",
+   "$\\dfrac{n(3n+5)}{2(n+1)(n+2)}$",
+   "$\\dfrac{n(3n+5)}{4(n+1)^2}$",
+   "$\\dfrac{n(3n+1)}{4(n+1)(n+2)}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{1}{r(r+2)}=\\dfrac12\\left(\\dfrac1r-\\dfrac1{r+2}\\right)$.\\n$S_n=\\dfrac12\\left(1+\\dfrac12-\\dfrac1{n+1}-\\dfrac1{n+2}\\right)$.\\n$S_n=\\dfrac{n(3n+5)}{4(n+1)(n+2)}$.",
+  "distractor_notes": "B: Omits the factor $\\dfrac12$ in the partial fraction decomposition.\\nC: Shifts the final telescoping denominator by one.\\nD: Makes an error when combining the endpoint terms."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

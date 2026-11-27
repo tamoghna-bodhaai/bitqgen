@@ -1,0 +1,68 @@
+{
+ "qno": 132,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 132,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "total minus invalid",
+  "brief": "Arrangement of letters of a word with two specific people/letters never adjacent; total arrangements minus the fused-block count.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:147",
+   "2025s2:113",
+   "2025s1:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many arrangements of the letters of TRAIL have T and L nonadjacent?",
+ "options": [
+  "$48$",
+  "$96$",
+  "$72$",
+  "$120$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total arrangements: 5! = 120. With T and L adjacent: 2 × 4! = 48. Nonadjacent: 120 − 48 = 72.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Total arrangements $=5!=120$.\\nAdjacent arrangements: treat T and L as a block, giving $2\\times4!=48$.\\nRequired number $=120-48=72$.\n\nIndependent check: Total arrangements: 5! = 120. With T and L adjacent: 2 × 4! = 48. Nonadjacent: 120 − 48 = 72.",
+ "solution": "Total arrangements of the five distinct letters are $5!$. If T and L are adjacent, treat them as one block; the block can be ordered in $2$ ways:\n$$5!-2\\cdot4!=120-48=72.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many arrangements of the letters of TRAIL have T and L nonadjacent?",
+  "options": [
+   "$48$",
+   "$72$",
+   "$96$",
+   "$120$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Total arrangements $=5!=120$.\\nAdjacent arrangements: treat T and L as a block, giving $2\\times4!=48$.\\nRequired number $=120-48=72$.",
+  "distractor_notes": "A: Counts only the adjacent arrangements.\\nC: Subtracts one block order instead of both.\\nD: Does not exclude adjacent arrangements."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

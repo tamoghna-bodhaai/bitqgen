@@ -1,0 +1,68 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Continuity of piecewise function",
+  "archetype": "match one-sided limits",
+  "brief": "Piecewise function with parameter k: find k and possibly another constant so the function is continuous at the joining point.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:106",
+   "2025s1:110",
+   "2021:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the function $f(x) = \\begin{cases} \\dfrac{\\tan 2x}{x}, & x \\neq 0 \\\\ k, & x = 0 \\end{cases}$ is continuous at $x = 0$, then the value of $k$ is",
+ "options": [
+  "0",
+  "1",
+  "2",
+  "3"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For continuity at 0, k = limₓ→₀ tan(2x)/x = 2·limᵤ→₀ tan(u)/u = 2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "For continuity at $x = 0$, $\\displaystyle\\lim_{x\\to 0} f(x) = f(0) = k$. Evaluate the limit: $\\displaystyle\\lim_{x\\to 0} \\frac{\\tan 2x}{x} = \\lim_{x\\to 0} 2 \\cdot \\frac{\\tan 2x}{2x} = 2 \\cdot 1 = 2$. Hence $k = 2$.\n\nIndependent check: For continuity at 0, k = limₓ→₀ tan(2x)/x = 2·limᵤ→₀ tan(u)/u = 2.",
+ "solution": "Continuity at $x=0$ requires $k=\\displaystyle\\lim_{x\\to0}\\frac{\\tan 2x}{x}$.\\n$$k=2\\lim_{x\\to0}\\frac{\\tan 2x}{2x}=2\\cdot1=2.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "If the function $f(x) = \\begin{cases} \\dfrac{\\tan 2x}{x}, & x \\neq 0 \\\\ k, & x = 0 \\end{cases}$ is continuous at $x = 0$, then the value of $k$ is",
+  "options": [
+   "0",
+   "1",
+   "2",
+   "3"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For continuity at $x = 0$, $\\displaystyle\\lim_{x\\to 0} f(x) = f(0) = k$. Evaluate the limit: $\\displaystyle\\lim_{x\\to 0} \\frac{\\tan 2x}{x} = \\lim_{x\\to 0} 2 \\cdot \\frac{\\tan 2x}{2x} = 2 \\cdot 1 = 2$. Hence $k = 2$.",
+  "distractor_notes": "A (0): setting k = 0 directly from x=0 in the expression before taking limit; B (1): forgetting the factor 2 from tan(2x); D (3): possibly confusing with derivative of tan(2x) or using limit of (tan x)/x incorrectly"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,64 @@
+{
+ "qno": 64,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 64,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "First and second law relations",
+  "archetype": "single-formula numerical",
+  "brief": "Given ΔH° and ΔS° for a reaction, compute ΔG° and the equilibrium temperature at which it becomes spontaneous — numeric via ΔG = ΔH - TΔS.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:47",
+   "2026s2:60",
+   "2026s1:36"
+  ]
+ },
+ "status": "failed",
+ "stem": "For a reaction, $\\Delta H^\\circ = 40\\ \\text{kJ mol}^{-1}$ and $\\Delta S^\\circ = 200\\ \\text{J K}^{-1}\\ \\text{mol}^{-1}$. The value of $\\Delta G^\\circ$ at $27^\\circ\\text{C}$ and the temperature condition for the reaction to be spontaneous are, respectively:",
+ "options": [
+  "$20\\ \\text{kJ mol}^{-1}$, $T < 200\\ \\text{K}$",
+  "$-20\\ \\text{kJ mol}^{-1}$, $T < 200\\ \\text{K}$",
+  "$20\\ \\text{kJ mol}^{-1}$, $T > 200\\ \\text{K}$",
+  "$-20\\ \\text{kJ mol}^{-1}$, $T > 200\\ \\text{K}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "$T = 27^\\circ\\text{C} = 300\\ \\text{K}$.  \n$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ = 40\\times10^3\\ \\text{J} - (300\\ \\text{K})(200\\ \\text{J K}^{-1}) = 40\\,000 - 60\\,000 = -20\\,000\\ \\text{J} = -20\\ \\text{kJ mol}^{-1}$.  \nAt equilibrium $\\Delta G^\\circ = 0$: $T = \\Delta H^\\circ/\\Delta S^\\circ = 40\\,000/200 = 200\\ \\text{K}$.  \nSince $\\Delta H^\\circ > 0$ and $\\Delta S^\\circ > 0$, the reaction is spontaneous ($\\Delta G^\\circ < 0$) when $T > 200\\ \\text{K}$. Hence option (A).",
+ "solution": "At $27^\\circ\\text{C}=300\\,\\text{K}$, $\\Delta G^\\circ=\\Delta H^\\circ-T\\Delta S^\\circ=40-(300)(0.200)=-20\\,\\text{kJ mol}^{-1}$. The threshold temperature is $T=\\Delta H^\\circ/\\Delta S^\\circ=40{,}000/200=200\\,\\text{K}$; since $\\Delta H^\\circ,\\Delta S^\\circ>0$, the reaction is spontaneous for $T>200\\,\\text{K}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a reaction, $\\Delta H^\\circ = 40\\ \\text{kJ mol}^{-1}$ and $\\Delta S^\\circ = 200\\ \\text{J K}^{-1}\\ \\text{mol}^{-1}$. The value of $\\Delta G^\\circ$ at $27^\\circ\\text{C}$ and the temperature condition for the reaction to be spontaneous are, respectively:",
+  "options": [
+   "$-20\\ \\text{kJ mol}^{-1}$, $T > 200\\ \\text{K}$",
+   "$-20\\ \\text{kJ mol}^{-1}$, $T < 200\\ \\text{K}$",
+   "$20\\ \\text{kJ mol}^{-1}$, $T > 200\\ \\text{K}$",
+   "$20\\ \\text{kJ mol}^{-1}$, $T < 200\\ \\text{K}$"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$T = 27^\\circ\\text{C} = 300\\ \\text{K}$.  \n$\\Delta G^\\circ = \\Delta H^\\circ - T\\Delta S^\\circ = 40\\times10^3\\ \\text{J} - (300\\ \\text{K})(200\\ \\text{J K}^{-1}) = 40\\,000 - 60\\,000 = -20\\,000\\ \\text{J} = -20\\ \\text{kJ mol}^{-1}$.  \nAt equilibrium $\\Delta G^\\circ = 0$: $T = \\Delta H^\\circ/\\Delta S^\\circ = 40\\,000/200 = 200\\ \\text{K}$.  \nSince $\\Delta H^\\circ > 0$ and $\\Delta S^\\circ > 0$, the reaction is spontaneous ($\\Delta G^\\circ < 0$) when $T > 200\\ \\text{K}$. Hence option (A).",
+  "distractor_notes": "B reverses inequality; C flips sign of ΔG; D flips both sign and inequality — typical sign/order errors"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

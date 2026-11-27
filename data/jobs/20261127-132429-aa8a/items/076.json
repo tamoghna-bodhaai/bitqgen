@@ -1,0 +1,68 @@
+{
+ "qno": 76,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 76,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter-number analogy",
+  "archetype": "positional rearrangement analogy",
+  "brief": "First pair maps a word/letter set to a numeric code using letter positional values combined with rearrangement of letters; candidate must decode the hidden two-step rule and apply it to a new word at highest difficulty.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:78",
+   "2022:82",
+   "2023s2:78"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a letter-number code, CLOUD is written as 21151243. By the same rule, how is TRACE written?",
+ "options": [
+  "2018531",
+  "1351820",
+  "2018351",
+  "2018135"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "CLOUD has letter positions 3, 12, 15, 21, 4; arranging them in descending order gives 21, 15, 12, 4, 3. TRACE gives 20, 18, 1, 3, 5, which in descending order is 20, 18, 5, 3, 1 = 2018531.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Arrange the letters in reverse alphabetical order, then replace each by its A1Z26 value: CLOUD → UOLDC → 21|15|12|4|3. TRACE → TRECA → 20|18|5|3|1 = 2018531.\n\nIndependent check: CLOUD has letter positions 3, 12, 15, 21, 4; arranging them in descending order gives 21, 15, 12, 4, 3. TRACE gives 20, 18, 1, 3, 5, which in descending order is 20, 18, 5, 3, 1 = 2018531.",
+ "solution": "Arrange the letters in descending alphabetical order and write their A1Z26 values consecutively.\n$$\\text{TRACE} \\to \\text{TRECA} \\to 20|18|5|3|1 = 2018531$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "In a letter-number code, CLOUD is written as 21151243. By the same rule, how is TRACE written?",
+  "options": [
+   "2018531",
+   "1351820",
+   "2018351",
+   "2018135"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Arrange the letters in reverse alphabetical order, then replace each by its A1Z26 value: CLOUD → UOLDC → 21|15|12|4|3. TRACE → TRECA → 20|18|5|3|1 = 2018531.",
+  "distractor_notes": "B uses alphabetical rather than reverse alphabetical order; C misorders the values for E and C; D keeps TRACE in its original order."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

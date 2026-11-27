@@ -1,0 +1,68 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Maxima and minima",
+  "archetype": "minimise expression",
+  "brief": "find absolute maximum/minimum of a function on an interval or of a parameterised expression via derivative tests and endpoint values",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:116",
+   "2022:125",
+   "2026s2:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "The absolute maximum value of the function $f(x) = |x^2-4x+3| + |x-2|$ on the interval $[0,4]$ is",
+ "options": [
+  "$1$",
+  "$\\dfrac{5}{4}$",
+  "$6$",
+  "$5$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let t=|x-2|, so 0≤t≤2 and f=|t²−1|+t. For 1≤t≤2 this increases, reaching 5 at t=2. For 0≤t≤1 its maximum is 5/4, so the absolute maximum is 5.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Break points at $x=1,2,3$.\nOn $[0,1]$: $f(x)=x^2-5x+5$, decreasing, max $f(0)=5$.\nOn $[1,2]$: $f(x)=-x^2+3x-1$, critical point $x=3/2$, $f(3/2)=5/4$.\nOn $[2,3]$: $f(x)=-x^2+5x-5$, critical point $x=5/2$, $f(5/2)=5/4$.\nOn $[3,4]$: $f(x)=x^2-3x+1$, increasing, max $f(4)=5$.\nAbsolute maximum is $5$.\n\nIndependent check: Let t=|x-2|, so 0≤t≤2 and f=|t²−1|+t. For 1≤t≤2 this increases, reaching 5 at t=2. For 0≤t≤1 its maximum is 5/4, so the absolute maximum is 5.",
+ "solution": "The break points are $x=1,2,3$. On $[0,1]$, $f(x)=x^2-5x+5$ is decreasing, so its maximum is $f(0)=5$; on $[3,4]$, $f(x)=x^2-3x+1$ is increasing, so its maximum is $f(4)=5$.\nOn $[1,2]$ and $[2,3]$, the maxima are both $\\frac54$. Hence the absolute maximum on $[0,4]$ is $\\boxed{5}$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The absolute maximum value of the function $f(x) = |x^2-4x+3| + |x-2|$ on the interval $[0,4]$ is",
+  "options": [
+   "$1$",
+   "$\\dfrac{5}{4}$",
+   "$5$",
+   "$6$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Break points at $x=1,2,3$.\nOn $[0,1]$: $f(x)=x^2-5x+5$, decreasing, max $f(0)=5$.\nOn $[1,2]$: $f(x)=-x^2+3x-1$, critical point $x=3/2$, $f(3/2)=5/4$.\nOn $[2,3]$: $f(x)=-x^2+5x-5$, critical point $x=5/2$, $f(5/2)=5/4$.\nOn $[3,4]$: $f(x)=x^2-3x+1$, increasing, max $f(4)=5$.\nAbsolute maximum is $5$.",
+  "distractor_notes": "Option A (1) is the minimum value; Option B (5/4) is the local maximum on the middle two intervals; Option D (6) would come from incorrectly adding 1 to 5 or misreading the function."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

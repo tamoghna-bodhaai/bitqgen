@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Definite integrals – Weierstrass substitution",
+  "archetype": "integration technique",
+  "brief": "evaluate a definite rational/trig integral with the Weierstrass substitution t = tan(x/2), changing limits accordingly",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:92",
+   "2023s2:117",
+   "2021:119"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of $\\displaystyle\\int_{0}^{\\pi} \\frac{dx}{2 + \\sin x}$ is",
+ "options": [
+  "$\\dfrac{\\pi}{3\\sqrt{3}}$",
+  "$\\dfrac{\\pi}{2\\sqrt{3}}$",
+  "$\\dfrac{\\pi}{\\sqrt{3}}$",
+  "$\\dfrac{2\\pi}{3\\sqrt{3}}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With t = tan(x/2), the integral becomes ∫₀∞ dt/(t²+t+1) = (2/√3)[arctan((2t+1)/√3)]₀∞ = 2π/(3√3).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Using $\\int_0^\\pi f(\\sin x)dx = 2\\int_0^{\\pi/2} f(\\sin x)dx$, we get $I = 2\\int_0^{\\pi/2} \\frac{dx}{2+\\sin x}$.\nSubstitute $t = \\tan\\frac{x}{2}$: $x=0 \\Rightarrow t=0$, $x=\\frac{\\pi}{2} \\Rightarrow t=1$, $dx = \\frac{2}{1+t^2}dt$, $\\sin x = \\frac{2t}{1+t^2}$.\nThen $2+\\sin x = 2 + \\frac{2t}{1+t^2} = \\frac{2(t^2+t+1)}{1+t^2}$.\nThe integrand becomes $\\frac{1}{2+\\sin x}dx = \\frac{1}{\\frac{2(t^2+t+1)}{1+t^2}} \\cdot \\frac{2}{1+t^2}dt = \\frac{1}{t^2+t+1}dt$.\nSo $I = 2\\int_0^1 \\frac{dt}{t^2+t+1} = 2\\int_0^1 \\frac{dt}{(t+\\frac12)^2 + \\frac34}$.\n$= 2 \\cdot \\frac{2}{\\sqrt{3}}\\left[\\tan^{-1}\\!\\left(\\frac{2t+1}{\\sqrt{3}}\\right)\\right]_0^1 = \\frac{4}{\\sqrt{3}}\\left(\\frac{\\pi}{3} - \\frac{\\pi}{6}\\right) = \\frac{4}{\\sqrt{3}} \\cdot \\frac{\\pi}{6} = \\frac{2\\pi}{3\\sqrt{3}}$.\n\nIndependent check: With t = tan(x/2), the integral becomes ∫₀∞ dt/(t²+t+1) = (2/√3)[arctan((2t+1)/√3)]₀∞ = 2π/(3√3).",
+ "solution": "Using symmetry, $I=2\\int_0^{\\pi/2}\\frac{dx}{2+\\sin x}$. Let $t=\\tan\\frac{x}{2}$; then $dx=\\frac{2\\,dt}{1+t^2}$ and $\\sin x=\\frac{2t}{1+t^2}$, with limits $0$ and $1$.\n$$I=2\\int_0^1\\frac{dt}{t^2+t+1}=\\frac{4}{\\sqrt3}\\left[\\tan^{-1}\\!\\left(\\frac{2t+1}{\\sqrt3}\\right)\\right]_0^1=\\frac{2\\pi}{3\\sqrt3}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The value of $\\displaystyle\\int_{0}^{\\pi} \\frac{dx}{2 + \\sin x}$ is",
+  "options": [
+   "$\\dfrac{\\pi}{3\\sqrt{3}}$",
+   "$\\dfrac{\\pi}{2\\sqrt{3}}$",
+   "$\\dfrac{2\\pi}{3\\sqrt{3}}$",
+   "$\\dfrac{\\pi}{\\sqrt{3}}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Using $\\int_0^\\pi f(\\sin x)dx = 2\\int_0^{\\pi/2} f(\\sin x)dx$, we get $I = 2\\int_0^{\\pi/2} \\frac{dx}{2+\\sin x}$.\nSubstitute $t = \\tan\\frac{x}{2}$: $x=0 \\Rightarrow t=0$, $x=\\frac{\\pi}{2} \\Rightarrow t=1$, $dx = \\frac{2}{1+t^2}dt$, $\\sin x = \\frac{2t}{1+t^2}$.\nThen $2+\\sin x = 2 + \\frac{2t}{1+t^2} = \\frac{2(t^2+t+1)}{1+t^2}$.\nThe integrand becomes $\\frac{1}{2+\\sin x}dx = \\frac{1}{\\frac{2(t^2+t+1)}{1+t^2}} \\cdot \\frac{2}{1+t^2}dt = \\frac{1}{t^2+t+1}dt$.\nSo $I = 2\\int_0^1 \\frac{dt}{t^2+t+1} = 2\\int_0^1 \\frac{dt}{(t+\\frac12)^2 + \\frac34}$.\n$= 2 \\cdot \\frac{2}{\\sqrt{3}}\\left[\\tan^{-1}\\!\\left(\\frac{2t+1}{\\sqrt{3}}\\right)\\right]_0^1 = \\frac{4}{\\sqrt{3}}\\left(\\frac{\\pi}{3} - \\frac{\\pi}{6}\\right) = \\frac{4}{\\sqrt{3}} \\cdot \\frac{\\pi}{6} = \\frac{2\\pi}{3\\sqrt{3}}$.",
+  "distractor_notes": "A: forgot to double the integral (took limits 0 to π/2 directly, or forgot the symmetry property); B: arithmetic slip in the arctan evaluation; D: likely incorrectly used the property to get 4 times the half-range integral or mishandled the factor"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

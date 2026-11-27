@@ -1,0 +1,67 @@
+{
+ "qno": 100,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 100,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism with possibility",
+  "brief": "Two statements with a gap in the middle term; test which conclusion definitely follows and which is only a possibility — select correct option combination.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:77",
+   "2024s1:78",
+   "2026s1:82"
+  ]
+ },
+ "status": "ok",
+ "stem": "Read the given statements and conclusions carefully and select which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll artists are painters.\nSome painters are sculptors.\n\n**Conclusions:**\nI. Some artists are sculptors.\nII. Some sculptors being artists is a possibility.",
+ "options": [
+  "Only conclusion I follows",
+  "Only conclusion II follows",
+  "Both conclusions I and II follow",
+  "Neither conclusion I nor II follows"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "All artists ⊆ painters; some painters are sculptors. The sculptor-painters need not include any artist, so I ('Some artists are sculptors') is not definite. But nothing forbids overlap: a model with artists inside the painter-sculptor overlap satisfies both statements, so II (possibility) holds. Exhaustive set-model check confirms: I not necessary, II possible.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $A$ represent the set of artists, $P$ represent the set of painters, and $S$ represent the set of sculptors.\n1. Statement 1 gives $A \\subseteq P$.\n2. Statement 2 gives $P \\cap S \\neq \\emptyset$.\n\nThe middle term 'painters' is the predicate of a universal affirmative proposition in statement 1 (undistributed) and the subject of a particular affirmative proposition in statement 2 (undistributed). Because the middle term is undistributed, no definite relation can be established between $A$ and $S$.\n- Conclusion I states definitely that $A \\cap S \\neq \\emptyset$. However, $S$ may overlap with $P$ entirely outside of $A$, meaning $A \\cap S = \\emptyset$ is possible. Since it is not true in all valid Venn diagrams, Conclusion I does not definitely follow.\n- Conclusion II states that an overlap between $S$ and $A$ is a possibility ($A \\cap S \\neq \\emptyset$ is possible). Since neither statement contains a negative restriction forbidding an overlap between $A$ and $S$, a diagram where $A \\cap S \\neq \\emptyset$ is fully consistent with all premises. Thus, Conclusion II logically follows.\n\nHence, only conclusion II follows.\n\nIndependent check: All artists ⊆ painters; some painters are sculptors. The sculptor-painters need not include any artist, so I ('Some artists are sculptors') is not definite. But nothing forbids overlap: a model with artists inside the painter-sculptor overlap satisfies both statements, so II (possibility) holds. Exhaustive set-model check confirms: I not necessary, II possible.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Read the given statements and conclusions carefully and select which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll artists are painters.\nSome painters are sculptors.\n\n**Conclusions:**\nI. Some artists are sculptors.\nII. Some sculptors being artists is a possibility.",
+  "options": [
+   "Only conclusion I follows",
+   "Only conclusion II follows",
+   "Both conclusions I and II follow",
+   "Neither conclusion I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let $A$ represent the set of artists, $P$ represent the set of painters, and $S$ represent the set of sculptors.\n1. Statement 1 gives $A \\subseteq P$.\n2. Statement 2 gives $P \\cap S \\neq \\emptyset$.\n\nThe middle term 'painters' is the predicate of a universal affirmative proposition in statement 1 (undistributed) and the subject of a particular affirmative proposition in statement 2 (undistributed). Because the middle term is undistributed, no definite relation can be established between $A$ and $S$.\n- Conclusion I states definitely that $A \\cap S \\neq \\emptyset$. However, $S$ may overlap with $P$ entirely outside of $A$, meaning $A \\cap S = \\emptyset$ is possible. Since it is not true in all valid Venn diagrams, Conclusion I does not definitely follow.\n- Conclusion II states that an overlap between $S$ and $A$ is a possibility ($A \\cap S \\neq \\emptyset$ is possible). Since neither statement contains a negative restriction forbidding an overlap between $A$ and $S$, a diagram where $A \\cap S \\neq \\emptyset$ is fully consistent with all premises. Thus, Conclusion II logically follows.\n\nHence, only conclusion II follows.",
+  "distractor_notes": "Only conclusion I follows: Encodes the undistributed middle fallacy by assuming that an indirect overlap implies a definite overlap.\nBoth conclusions I and II follow: Encodes the mistake of treating a valid possibility as proof that the definite statement in I is also true.\nNeither conclusion I nor II follows: Encodes the error of rejecting a possibility conclusion even when the Venn diagram allows it without contradiction.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

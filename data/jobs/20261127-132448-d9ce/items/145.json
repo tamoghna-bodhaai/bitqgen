@@ -1,0 +1,68 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Effect of scaling on variance",
+  "archetype": "property",
+  "brief": "Effect of adding a constant (or scaling) on mean and variance of a data set; ask the new mean and SD.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:110",
+   "2022:124",
+   "2026s2:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "A data set has mean $4$ and standard deviation $2$. If each observation $x$ is replaced by $3x+1$, the new mean and standard deviation are",
+ "options": [
+  "$(13,2)$",
+  "$(15,6)$",
+  "$(13,7)$",
+  "$(13,6)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "New mean = 3(4)+1 = 13; new standard deviation = |3|(2) = 6.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mu_{3x+1}=3\\mu_x+1=3(4)+1=13$\\n$\\sigma_{3x+1}=|3|\\sigma_x=3(2)=6$\n\nIndependent check: New mean = 3(4)+1 = 13; new standard deviation = |3|(2) = 6.",
+ "solution": "For a linear transformation $y=ax+b$, the mean becomes $a\\mu+b$ and the standard deviation becomes $|a|\\sigma$. Thus, $$\\mu_y=3(4)+1=13,\\qquad \\sigma_y=|3|(2)=6.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A data set has mean $4$ and standard deviation $2$. If each observation $x$ is replaced by $3x+1$, the new mean and standard deviation are",
+  "options": [
+   "$(13,6)$",
+   "$(15,6)$",
+   "$(13,7)$",
+   "$(13,2)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\mu_{3x+1}=3\\mu_x+1=3(4)+1=13$\\n$\\sigma_{3x+1}=|3|\\sigma_x=3(2)=6$",
+  "distractor_notes": "B: applies the shift before scaling the mean; C: adds the constant to the standard deviation; D: omits the scaling of the standard deviation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

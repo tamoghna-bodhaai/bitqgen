@@ -1,0 +1,68 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Average speed",
+  "archetype": "two-equation kinematics",
+  "brief": "Two-stage motion or average speed with equal distances at two speeds; set up simultaneous equations",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:9",
+   "2025s1:14",
+   "2024s1:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "A vehicle covers two equal distances. Its speed over the first distance is $30$ km h$^{-1}$ and its average speed over the whole journey is $24$ km h$^{-1}$. Find its speed over the second distance.",
+ "options": [
+  "$18$ km h$^{-1}$",
+  "$20$ km h$^{-1}$",
+  "$24$ km h$^{-1}$",
+  "$30$ km h$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For equal distances, the average speed is the harmonic mean: 24 = 2/(1/30 + 1/v). Solving gives v = 20 km h⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{d}{30}+\\dfrac{d}{v}=\\dfrac{2d}{24}$\n$\\dfrac{1}{30}+\\dfrac{1}{v}=\\dfrac{1}{12}$\n$\\dfrac{1}{v}=\\dfrac{1}{20}$\n$v=20$ km h$^{-1}$\n\nIndependent check: For equal distances, the average speed is the harmonic mean: 24 = 2/(1/30 + 1/v). Solving gives v = 20 km h⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A vehicle covers two equal distances. Its speed over the first distance is $30$ km h$^{-1}$ and its average speed over the whole journey is $24$ km h$^{-1}$. Find its speed over the second distance.",
+  "options": [
+   "$18$ km h$^{-1}$",
+   "$20$ km h$^{-1}$",
+   "$24$ km h$^{-1}$",
+   "$30$ km h$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{d}{30}+\\dfrac{d}{v}=\\dfrac{2d}{24}$\n$\\dfrac{1}{30}+\\dfrac{1}{v}=\\dfrac{1}{12}$\n$\\dfrac{1}{v}=\\dfrac{1}{20}$\n$v=20$ km h$^{-1}$",
+  "distractor_notes": "A: Uses the arithmetic mean relation for the two speeds. C: Confuses the overall average speed with the second speed. D: Assumes the second distance is also covered at the first speed."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

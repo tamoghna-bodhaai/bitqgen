@@ -1,0 +1,67 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor and complexes",
+  "archetype": "colligative to structure",
+  "brief": "Give the observed molar mass of a complex salt in solution (or its measured boiling point elevation) and ask to deduce the dissociation/association and hence the number of ions or the formula of the complex.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:46",
+   "2026s2:41",
+   "2026s1:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $0.10\\ \\text{m}$ aqueous solution of $\\text{CoCl}_3\\cdot n\\text{NH}_3$ boils at $100.156^\\circ\\text{C}$. Assuming complete ionization, the formula of the complex is ($K_b\\text{ for water} = 0.52\\ \\text{K kg mol}^{-1}$):",
+ "options": [
+  "$[\\text{Co}(\\text{NH}_3)_3\\text{Cl}_3]$",
+  "$[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$",
+  "$[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$",
+  "$[\\text{Co}(\\text{NH}_3)_6]\\text{Cl}_3$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "ΔTb = 100.156 − 100 = 0.156 K. i = ΔTb/(Kb·m) = 0.156/(0.52×0.10) = 3. Complete ionization must give 3 ions per formula unit: [Co(NH3)5Cl]Cl2 → [Co(NH3)5Cl]²⁺ + 2Cl⁻ (3 ions). A gives 1, B gives 2, D gives 4.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "1. Calculate the boiling point elevation:\n$$\\Delta T_b = T_b - T_b^\\circ = 100.156^\\circ\\text{C} - 100.000^\\circ\\text{C} = 0.156\\ \\text{K}$$\n\n2. Use the relation $\\Delta T_b = i \\cdot K_b \\cdot m$ to determine the van 't Hoff factor $i$:\n$$0.156 = i \\times 0.52 \\times 0.10$$\n$$0.156 = i \\times 0.052 \\implies i = \\dfrac{0.156}{0.052} = 3$$\n\n3. Relate $i$ to the dissociation of the complex:\nFor $100\\%$ ionization, $i$ equals the total number of ions produced per formula unit.\n- $[\\text{Co}(\\text{NH}_3)_3\\text{Cl}_3]$ is a non-electrolyte ($i = 1$).\n- $[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl} \\rightarrow [\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+ + \\text{Cl}^-$ ($2$ ions, $i = 2$).\n- $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2 \\rightarrow [\\text{Co}(\\text{NH}_3)_5\\text{Cl}]^{2+} + 2\\text{Cl}^-$ ($3$ ions, $i = 3$).\n- $[\\text{Co}(\\text{NH}_3)_6]\\text{Cl}_3 \\rightarrow [\\text{Co}(\\text{NH}_3)_6]^{3+} + 3\\text{Cl}^-$ ($4$ ions, $i = 4$).\n\nTherefore, the complex is $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$.\n\nIndependent check: ΔTb = 100.156 − 100 = 0.156 K. i = ΔTb/(Kb·m) = 0.156/(0.52×0.10) = 3. Complete ionization must give 3 ions per formula unit: [Co(NH3)5Cl]Cl2 → [Co(NH3)5Cl]²⁺ + 2Cl⁻ (3 ions). A gives 1, B gives 2, D gives 4.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $0.10\\ \\text{m}$ aqueous solution of $\\text{CoCl}_3\\cdot n\\text{NH}_3$ boils at $100.156^\\circ\\text{C}$. Assuming complete ionization, the formula of the complex is ($K_b\\text{ for water} = 0.52\\ \\text{K kg mol}^{-1}$):",
+  "options": [
+   "$[\\text{Co}(\\text{NH}_3)_3\\text{Cl}_3]$",
+   "$[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$",
+   "$[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$",
+   "$[\\text{Co}(\\text{NH}_3)_6]\\text{Cl}_3$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "1. Calculate the boiling point elevation:\n$$\\Delta T_b = T_b - T_b^\\circ = 100.156^\\circ\\text{C} - 100.000^\\circ\\text{C} = 0.156\\ \\text{K}$$\n\n2. Use the relation $\\Delta T_b = i \\cdot K_b \\cdot m$ to determine the van 't Hoff factor $i$:\n$$0.156 = i \\times 0.52 \\times 0.10$$\n$$0.156 = i \\times 0.052 \\implies i = \\dfrac{0.156}{0.052} = 3$$\n\n3. Relate $i$ to the dissociation of the complex:\nFor $100\\%$ ionization, $i$ equals the total number of ions produced per formula unit.\n- $[\\text{Co}(\\text{NH}_3)_3\\text{Cl}_3]$ is a non-electrolyte ($i = 1$).\n- $[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl} \\rightarrow [\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+ + \\text{Cl}^-$ ($2$ ions, $i = 2$).\n- $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2 \\rightarrow [\\text{Co}(\\text{NH}_3)_5\\text{Cl}]^{2+} + 2\\text{Cl}^-$ ($3$ ions, $i = 3$).\n- $[\\text{Co}(\\text{NH}_3)_6]\\text{Cl}_3 \\rightarrow [\\text{Co}(\\text{NH}_3)_6]^{3+} + 3\\text{Cl}^-$ ($4$ ions, $i = 4$).\n\nTherefore, the complex is $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$.",
+  "distractor_notes": "Option A encodes neglecting the van 't Hoff factor entirely (taking $i = 1$, non-electrolyte).\nOption B encodes an arithmetic slip in evaluating $i = \\Delta T_b / (K_b m)$ to give $i = 2$.\nOption D encodes the common misconception of confusing the total number of ions ($i = 3$) with the number of ionizable chloride counter-ions outside the coordination sphere.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Derivatives of inverse trig functions",
+  "archetype": "simplify then differentiate",
+  "brief": "Find the derivative of an inverse trig expression combined with a log or rational function; simplify before differentiating.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:122",
+   "2026s1:123",
+   "2025s2:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "If y = arctan((sqrt(1 + x^2) - 1)/x) for x not equal to 0, then dy/dx equals",
+ "options": [
+  "-1/(2(1 + x^2))",
+  "1/(1 + x^2)",
+  "x/(2(1 + x^2))",
+  "1/(2(1 + x^2))"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let s = √(1 + x²). Then (s − 1)/x = x/(s + 1), whose derivative is 1/[s(s + 1)]. Also, 1 + (x/(s + 1))² = 2s/(s + 1). Thus dy/dx = 1/[2s²] = 1/[2(1 + x²)].",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Let x = tan theta with theta in (-pi/2, pi/2), theta not 0. Then sqrt(1 + x^2) = sec theta. So (sqrt(1+x^2)-1)/x = (sec theta - 1)/tan theta = (1 - cos theta)/sin theta = tan(theta/2). Hence y = theta/2 = (1/2) arctan x. Differentiating, dy/dx = 1/(2(1+x^2)).\n\nIndependent check: Let s = √(1 + x²). Then (s − 1)/x = x/(s + 1), whose derivative is 1/[s(s + 1)]. Also, 1 + (x/(s + 1))² = 2s/(s + 1). Thus dy/dx = 1/[2s²] = 1/[2(1 + x²)].",
+ "solution": "Let $x=\\tan\\theta$, where $\\theta\\in(-\\pi/2,\\pi/2)$. Then\n$$\\frac{\\sqrt{1+x^2}-1}{x}=\\frac{\\sec\\theta-1}{\\tan\\theta}=\\tan\\frac{\\theta}{2},$$\nso $y=\\theta/2=\\frac12\\arctan x$. Hence $\\displaystyle \\frac{dy}{dx}=\\frac{1}{2(1+x^2)}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If y = arctan((sqrt(1 + x^2) - 1)/x) for x not equal to 0, then dy/dx equals",
+  "options": [
+   "1/(2(1 + x^2))",
+   "1/(1 + x^2)",
+   "x/(2(1 + x^2))",
+   "-1/(2(1 + x^2))"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let x = tan theta with theta in (-pi/2, pi/2), theta not 0. Then sqrt(1 + x^2) = sec theta. So (sqrt(1+x^2)-1)/x = (sec theta - 1)/tan theta = (1 - cos theta)/sin theta = tan(theta/2). Hence y = theta/2 = (1/2) arctan x. Differentiating, dy/dx = 1/(2(1+x^2)).",
+  "distractor_notes": "B: omits the factor 1/2. C: misses the 1/x simplification. D: sign error from simplifying the half-angle expression."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

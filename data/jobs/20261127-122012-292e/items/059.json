@@ -1,0 +1,64 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Delta n_g in combustion",
+  "archetype": "stoichiometric counting",
+  "brief": "Given a balanced combustion equation of a liquid hydrocarbon, compute Δn_g (gaseous moles products minus reactants) and then apply ΔH = ΔU + Δn_g RT for the numeric answer.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:60",
+   "2025s2:38",
+   "2023s2:57"
+  ]
+ },
+ "status": "failed",
+ "stem": "For the combustion of liquid toluene at 298 K:\nC7H8(l) + 9O2(g) -> 7CO2(g) + 4H2O(l)\nThe value of delta H - delta U (in kJ mol^-1) is closest to (take R = 8.314 J K^-1 mol^-1):",
+ "options": [
+  "2.48",
+  "-2.48",
+  "-4.96",
+  "4.96"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Gaseous products: 7 mol CO2; gaseous reactants: 9 mol O2. delta n_g = 7 - 9 = -2. delta H = delta U + delta n_g R T, so delta H - delta U = delta n_g R T = -2 * 8.314 * 298 = -4955.144 J mol^-1 = -4.96 kJ mol^-1.",
+ "solution": "For gaseous species, $\\Delta H-\\Delta U=\\Delta n_gRT$, where $\\Delta n_g=7-9=-2$.\n$$\\Delta H-\\Delta U=(-2)(8.314)(298)=-4955\\text{ J mol}^{-1}\\approx -4.96\\text{ kJ mol}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the combustion of liquid toluene at 298 K:\nC7H8(l) + 9O2(g) -> 7CO2(g) + 4H2O(l)\nThe value of delta H - delta U (in kJ mol^-1) is closest to (take R = 8.314 J K^-1 mol^-1):",
+  "options": [
+   "-4.96",
+   "-2.48",
+   "2.48",
+   "4.96"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Gaseous products: 7 mol CO2; gaseous reactants: 9 mol O2. delta n_g = 7 - 9 = -2. delta H = delta U + delta n_g R T, so delta H - delta U = delta n_g R T = -2 * 8.314 * 298 = -4955.144 J mol^-1 = -4.96 kJ mol^-1.",
+  "distractor_notes": "-2.48: uses delta n_g = -1 (miscounts gaseous moles); 2.48: correct magnitude but positive sign; 4.96: sign reversed, treating delta H - delta U as positive."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

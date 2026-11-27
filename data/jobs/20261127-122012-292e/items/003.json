@@ -1,0 +1,68 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching a wire",
+  "archetype": "proportionality-scaling",
+  "brief": "A wire is stretched so its length increases by a given fraction at constant volume; ask for the new resistance in terms of the original.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:3",
+   "2025s1:4",
+   "2023s2:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "A wire of resistance 50 ohm is stretched uniformly so that its length increases by 20%. Assuming that the volume of the wire remains constant, the new resistance of the wire is",
+ "options": [
+  "72 ohm",
+  "70 ohm",
+  "60 ohm",
+  "86.4 ohm"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With constant volume, area becomes A/1.2. Thus R′/R = (1.2L/A′)/(L/A) = 1.2² = 1.44, so R′ = 50 × 1.44 = 72 Ω.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "New length L' = 1.2L. By constant volume, A' = A/1.2. R' = rho*L'/A' = rho*(1.2L)/(A/1.2) = 1.44*(rho*L/A) = 1.44*50 = 72 ohm.\n\nIndependent check: With constant volume, area becomes A/1.2. Thus R′/R = (1.2L/A′)/(L/A) = 1.2² = 1.44, so R′ = 50 × 1.44 = 72 Ω.",
+ "solution": "For constant volume, $A'L'=AL$, so $A'=A/1.2$. Using $R=\\rho L/A$,\n$$R'=\\rho\\frac{1.2L}{A/1.2}=1.44R=1.44\\times 50=72\\,\\Omega.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wire of resistance 50 ohm is stretched uniformly so that its length increases by 20%. Assuming that the volume of the wire remains constant, the new resistance of the wire is",
+  "options": [
+   "60 ohm",
+   "70 ohm",
+   "72 ohm",
+   "86.4 ohm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "New length L' = 1.2L. By constant volume, A' = A/1.2. R' = rho*L'/A' = rho*(1.2L)/(A/1.2) = 1.44*(rho*L/A) = 1.44*50 = 72 ohm.",
+  "distractor_notes": "A: only scales resistance by the length factor; B: intermediate guess; D: uses (1.2)^3 = 1.728 instead of 1.44."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

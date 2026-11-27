@@ -1,0 +1,68 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of a circle through three given points, or of a circle with given centre and passing through a point; complete-the-square optional.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:111",
+   "2025s1:112",
+   "2026s2:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "The equation of the circle through $(2,0)$, $(0,2)$ and $(0,0)$ is",
+ "options": [
+  "$x^2+y^2-2x-2y=0$",
+  "$x^2+y^2-2x+2y=0$",
+  "$x^2+y^2+2x+2y=0$",
+  "$x^2+y^2+2x-2y=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a circle through (0,0), the constant term is 0. Substituting (2,0) gives the x coefficient −2; substituting (0,2) gives the y coefficient −2. Thus the equation is x²+y²−2x−2y=0.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Write the circle as $x^2+y^2+Dx+Ey+F=0$. \n$(0,0)\\Rightarrow F=0$; $(2,0)\\Rightarrow D=-2$; $(0,2)\\Rightarrow E=-2$. \nThus $x^2+y^2-2x-2y=0$.\n\nIndependent check: For a circle through (0,0), the constant term is 0. Substituting (2,0) gives the x coefficient −2; substituting (0,2) gives the y coefficient −2. Thus the equation is x²+y²−2x−2y=0.",
+ "solution": "Write the circle as $x^2+y^2+Dx+Ey+F=0$. Since it passes through $(0,0)$, $F=0$; substituting $(2,0)$ and $(0,2)$ gives $D=-2$ and $E=-2$.\n$$x^2+y^2-2x-2y=0$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The equation of the circle through $(2,0)$, $(0,2)$ and $(0,0)$ is",
+  "options": [
+   "$x^2+y^2+2x+2y=0$",
+   "$x^2+y^2-2x+2y=0$",
+   "$x^2+y^2-2x-2y=0$",
+   "$x^2+y^2+2x-2y=0$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Write the circle as $x^2+y^2+Dx+Ey+F=0$. \n$(0,0)\\Rightarrow F=0$; $(2,0)\\Rightarrow D=-2$; $(0,2)\\Rightarrow E=-2$. \nThus $x^2+y^2-2x-2y=0$.",
+  "distractor_notes": "A: gives both linear coefficients the wrong sign. B: gives the coefficient of $y$ the wrong sign. D: gives the coefficient of $x$ the wrong sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

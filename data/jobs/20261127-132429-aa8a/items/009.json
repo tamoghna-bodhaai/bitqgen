@@ -1,0 +1,68 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Capacitance",
+  "subtopic": "Charge sharing energy loss",
+  "archetype": "before/after energy",
+  "brief": "Charge sharing: two capacitors at different voltages connected in parallel; compute common voltage and energy lost as heat, comparing initial and final stored energies.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:7",
+   "2026s2:21",
+   "2025s2:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $2\\ \\mu$F capacitor at $6$ V and a $4\\ \\mu$F capacitor at $3$ V are connected in parallel with like terminals together. How much energy is lost during charge sharing?",
+ "options": [
+  "$3\\ \\mu$J",
+  "$12\\ \\mu$J",
+  "$9\\ \\mu$J",
+  "$6\\ \\mu$J"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Initial charge: 2×6 + 4×3 = 24 μC. Final voltage = 24/6 = 4 V. Initial energy = 54 μJ; final energy = 48 μJ, so 6 μJ is lost.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$V_f=\\dfrac{C_1V_1+C_2V_2}{C_1+C_2}=\\dfrac{2(6)+4(3)}{6}=4$ V\n$U_i=\\dfrac12[2(6^2)+4(3^2)]=54\\ \\mu$J\n$U_f=\\dfrac12(6)(4^2)=48\\ \\mu$J\n$\\Delta U=U_i-U_f=6\\ \\mu$J\n\nIndependent check: Initial charge: 2×6 + 4×3 = 24 μC. Final voltage = 24/6 = 4 V. Initial energy = 54 μJ; final energy = 48 μJ, so 6 μJ is lost.",
+ "solution": "Charge is conserved, so the common final voltage is\n$$V_f=\\frac{C_1V_1+C_2V_2}{C_1+C_2}=\\frac{2(6)+4(3)}{6}=4\\text{ V}.$$\nThe energy lost is $U_i-U_f=\\frac12[2(6^2)+4(3^2)]-\\frac12(6)(4^2)=54-48=6\\,\\mu\\text{J}$.The final result is $6\\,\\mu\\text{J}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $2\\ \\mu$F capacitor at $6$ V and a $4\\ \\mu$F capacitor at $3$ V are connected in parallel with like terminals together. How much energy is lost during charge sharing?",
+  "options": [
+   "$3\\ \\mu$J",
+   "$6\\ \\mu$J",
+   "$9\\ \\mu$J",
+   "$12\\ \\mu$J"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$V_f=\\dfrac{C_1V_1+C_2V_2}{C_1+C_2}=\\dfrac{2(6)+4(3)}{6}=4$ V\n$U_i=\\dfrac12[2(6^2)+4(3^2)]=54\\ \\mu$J\n$U_f=\\dfrac12(6)(4^2)=48\\ \\mu$J\n$\\Delta U=U_i-U_f=6\\ \\mu$J",
+  "distractor_notes": "A: Uses an incorrect final voltage; C: Confuses the initial energy with the energy lost; D: Uses an incorrect final stored energy."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

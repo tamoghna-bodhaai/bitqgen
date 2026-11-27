@@ -1,0 +1,68 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength of accelerated charges",
+  "archetype": "ratio of two situations",
+  "brief": "de Broglie wavelength of accelerated charges: an electron and a proton (or same particle through two different potentials); compare de Broglie wavelengths using the ratio for equal KE vs equal momentum.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:14",
+   "2021:17",
+   "2022:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron and a proton have equal kinetic energies. If their de Broglie wavelengths are $\\lambda_e$ and $\\lambda_p$, respectively, what is $\\dfrac{\\lambda_e}{\\lambda_p}$?",
+ "options": [
+  "$\\sqrt{\\dfrac{m_e}{m_p}}$",
+  "$\\dfrac{m_p}{m_e}$",
+  "$\\sqrt{\\dfrac{m_p}{m_e}}$",
+  "$\\dfrac{m_e}{m_p}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For equal kinetic energy, p = √(2mK) and λ = h/p. Therefore λₑ/λₚ = √(mₚ/mₑ).",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mK}}$\n$\\dfrac{\\lambda_e}{\\lambda_p}=\\sqrt{\\dfrac{m_pK_p}{m_eK_e}}=\\sqrt{\\dfrac{m_p}{m_e}}$\n\nIndependent check: For equal kinetic energy, p = √(2mK) and λ = h/p. Therefore λₑ/λₚ = √(mₚ/mₑ).",
+ "solution": "For a particle with kinetic energy $K$, the de Broglie wavelength is $\\lambda=\\dfrac{h}{\\sqrt{2mK}}$. Since $K_e=K_p$,\n$$\\frac{\\lambda_e}{\\lambda_p}=\\sqrt{\\frac{m_pK_p}{m_eK_e}}=\\sqrt{\\frac{m_p}{m_e}}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An electron and a proton have equal kinetic energies. If their de Broglie wavelengths are $\\lambda_e$ and $\\lambda_p$, respectively, what is $\\dfrac{\\lambda_e}{\\lambda_p}$?",
+  "options": [
+   "$\\sqrt{\\dfrac{m_e}{m_p}}$",
+   "$\\dfrac{m_p}{m_e}$",
+   "$\\sqrt{\\dfrac{m_p}{m_e}}$",
+   "$\\dfrac{m_e}{m_p}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mK}}$\n$\\dfrac{\\lambda_e}{\\lambda_p}=\\sqrt{\\dfrac{m_pK_p}{m_eK_e}}=\\sqrt{\\dfrac{m_p}{m_e}}$",
+  "distractor_notes": "A: Takes the reciprocal mass ratio; B: Uses the mass ratio without taking its square root; D: Uses the reciprocal mass ratio without taking its square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

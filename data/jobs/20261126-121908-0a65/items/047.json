@@ -1,0 +1,67 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "Zero order kinetics",
+  "archetype": "single-step numerical",
+  "brief": "Given rate constant of a zero-order reaction, find concentration remaining after a stated time (or time to reach zero).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:46",
+   "2025s1:48",
+   "2025s2:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a zero-order reaction $\\text{A} \\rightarrow \\text{products}$, the rate constant is $4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$. If the initial concentration of $\\text{A}$ is $0.60\\ \\text{mol L}^{-1}$, the concentration of $\\text{A}$ remaining after $50\\ \\text{s}$ is",
+ "options": [
+  "$0.20\\ \\text{mol L}^{-1}$",
+  "$0.30\\ \\text{mol L}^{-1}$",
+  "$0.40\\ \\text{mol L}^{-1}$",
+  "$0.80\\ \\text{mol L}^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Zero-order integrated law: [A] = [A]0 − kt = 0.60 − (4.0×10⁻³)(50) = 0.60 − 0.20 = 0.40 mol L⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a zero-order reaction:\n$$[\\text{A}]_t = [\\text{A}]_0 - kt$$\nGiven:\n$$[\\text{A}]_0 = 0.60\\ \\text{mol L}^{-1}$$\n$$k = 4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$$\n$$t = 50\\ \\text{s}$$\n\nSubstitute the given values:\n$$[\\text{A}]_t = 0.60 - (4.0 \\times 10^{-3} \\times 50) = 0.60 - 0.20 = 0.40\\ \\text{mol L}^{-1}$$\n\nIndependent check: Zero-order integrated law: [A] = [A]0 − kt = 0.60 − (4.0×10⁻³)(50) = 0.60 − 0.20 = 0.40 mol L⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For a zero-order reaction $\\text{A} \\rightarrow \\text{products}$, the rate constant is $4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$. If the initial concentration of $\\text{A}$ is $0.60\\ \\text{mol L}^{-1}$, the concentration of $\\text{A}$ remaining after $50\\ \\text{s}$ is",
+  "options": [
+   "$0.20\\ \\text{mol L}^{-1}$",
+   "$0.30\\ \\text{mol L}^{-1}$",
+   "$0.40\\ \\text{mol L}^{-1}$",
+   "$0.80\\ \\text{mol L}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "For a zero-order reaction:\n$$[\\text{A}]_t = [\\text{A}]_0 - kt$$\nGiven:\n$$[\\text{A}]_0 = 0.60\\ \\text{mol L}^{-1}$$\n$$k = 4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$$\n$$t = 50\\ \\text{s}$$\n\nSubstitute the given values:\n$$[\\text{A}]_t = 0.60 - (4.0 \\times 10^{-3} \\times 50) = 0.60 - 0.20 = 0.40\\ \\text{mol L}^{-1}$$",
+  "distractor_notes": "Option A calculates the amount consumed ($kt = 0.20\\ \\text{mol L}^{-1}$) instead of the concentration remaining.\nOption B assumes $50\\ \\text{s}$ corresponds to one half-life and halves the initial concentration ($[\\text{A}]_0 / 2 = 0.30\\ \\text{mol L}^{-1}$).\nOption D makes a sign error by adding the reacted amount to the initial concentration ($[\\text{A}]_0 + kt = 0.80\\ \\text{mol L}^{-1}$).",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

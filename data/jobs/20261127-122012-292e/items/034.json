@@ -1,0 +1,68 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Radiation pressure / momentum of EM waves",
+  "archetype": "momentum change",
+  "brief": "Light of given intensity/area falls on a surface (absorbing/reflecting); ask for the radiation pressure or force using momentum flux of EM waves.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:9",
+   "2021:12",
+   "2026s1:6"
+  ]
+ },
+ "status": "ok",
+ "stem": "A plane electromagnetic wave of intensity $3.0$ kW m$^{-2}$ is incident on a plane surface of area $40$ cm$^2$ at an angle of $45^\\circ$ with the normal. The surface reflects $50\\%$ of the incident radiation and absorbs the rest. The average radiation force exerted on the surface along the normal is (take $c = 3.0 \\times 10^8$ m s$^{-1}$):",
+ "options": [
+  "$1.0 \\times 10^{-8}$ N",
+  "$2.0 \\times 10^{-8}$ N",
+  "$3.0 \\times 10^{-8}$ N",
+  "$6.0 \\times 10^{-8}$ N"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Incident power is \\(IA\\cos45^\\circ\\). The normal momentum transfer per incident energy is \\(\\cos45^\\circ(0.5+2\\times0.5)/c\\). Thus \\(F=1.5IA\\cos^2 45^\\circ/c=3.0\\times10^{-8}\\,\\text{N}\\).",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "For a partially reflecting surface at angle $\\theta$, normal force $F = (1+R)\\frac{I A \\cos^2\\theta}{c}$, where $R$ is reflectivity.\nGiven $R=0.5$, $I=3.0\\times10^3$ W m$^{-2}$, $A=40$ cm$^2 = 4.0\\times10^{-3}$ m$^2$, $\\theta=45^\\circ$, $\\cos^2\\theta=1/2$.\n$I A \\cos^2\\theta = 3.0\\times10^3 \\times 4.0\\times10^{-3} \\times \\frac12 = 6.0$.\n$1+R = 1.5$.\n$F = 1.5 \\times 6.0 / (3.0\\times10^8) = 9.0 / (3.0\\times10^8) = 3.0\\times10^{-8}$ N.\n\nIndependent check: Incident power is \\(IA\\cos45^\\circ\\). The normal momentum transfer per incident energy is \\(\\cos45^\\circ(0.5+2\\times0.5)/c\\). Thus \\(F=1.5IA\\cos^2 45^\\circ/c=3.0\\times10^{-8}\\,\\text{N}\\).",
+ "solution": "For reflectivity $R$, the normal radiation force is $F=(1+R)IA\\cos^2\\theta/c$.\n$$F=\\frac{(1+0.5)(3.0\\times10^3)(4.0\\times10^{-3})\\cos^2 45^\\circ}{3.0\\times10^8}=3.0\\times10^{-8}\\,\\text{N}$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A plane electromagnetic wave of intensity $3.0$ kW m$^{-2}$ is incident on a plane surface of area $40$ cm$^2$ at an angle of $45^\\circ$ with the normal. The surface reflects $50\\%$ of the incident radiation and absorbs the rest. The average radiation force exerted on the surface along the normal is (take $c = 3.0 \\times 10^8$ m s$^{-1}$):",
+  "options": [
+   "$1.0 \\times 10^{-8}$ N",
+   "$2.0 \\times 10^{-8}$ N",
+   "$3.0 \\times 10^{-8}$ N",
+   "$6.0 \\times 10^{-8}$ N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "For a partially reflecting surface at angle $\\theta$, normal force $F = (1+R)\\frac{I A \\cos^2\\theta}{c}$, where $R$ is reflectivity.\nGiven $R=0.5$, $I=3.0\\times10^3$ W m$^{-2}$, $A=40$ cm$^2 = 4.0\\times10^{-3}$ m$^2$, $\\theta=45^\\circ$, $\\cos^2\\theta=1/2$.\n$I A \\cos^2\\theta = 3.0\\times10^3 \\times 4.0\\times10^{-3} \\times \\frac12 = 6.0$.\n$1+R = 1.5$.\n$F = 1.5 \\times 6.0 / (3.0\\times10^8) = 9.0 / (3.0\\times10^8) = 3.0\\times10^{-8}$ N.",
+  "distractor_notes": "A: using momentum of absorbed part only and reflectivity factor wrongly (R instead of 1+R); B: treating surface as perfectly absorbing only; C: correct; D: missing cos^2 factor, using I A instead of I A cos^2θ."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

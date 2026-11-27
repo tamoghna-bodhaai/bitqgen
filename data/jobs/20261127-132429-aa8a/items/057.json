@@ -1,0 +1,68 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Kohlrausch's law",
+  "archetype": "linear combination",
+  "brief": "Given limiting molar conductivities of a strong electrolyte pair, assemble the limiting molar conductivity of a weak acid (or base) by addition and subtraction of the values.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:52",
+   "2022:43",
+   "2026s1:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "At the same temperature, $\\Lambda_m^\\circ$ for $\\text{HCl}$, $\\text{CH}_3\\text{COONa}$ and $\\text{NaCl}$ are $426.0$, $91.0$ and $126.4\\ \\text{S cm}^2\\text{ mol}^{-1}$, respectively. What is $\\Lambda_m^\\circ$ for $\\text{CH}_3\\text{COOH}$?",
+ "options": [
+  "$390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$299.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$461.4\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$517.0\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Kohlrausch’s law, Λ°(CH₃COOH) = Λ°(HCl) + Λ°(CH₃COONa) − Λ°(NaCl) = 426.0 + 91.0 − 126.4 = 390.6 S cm² mol⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "By Kohlrausch's law, $\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})=\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})-\\Lambda_m^\\circ(\\text{NaCl})$.\\n$=426.0+91.0-126.4=390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$.\n\nIndependent check: By Kohlrausch’s law, Λ°(CH₃COOH) = Λ°(HCl) + Λ°(CH₃COONa) − Λ°(NaCl) = 426.0 + 91.0 − 126.4 = 390.6 S cm² mol⁻¹.",
+ "solution": "By Kohlrausch’s law, $\\Lambda_m^\\circ(\\mathrm{CH_3COOH})=\\Lambda_m^\\circ(\\mathrm{HCl})+\\Lambda_m^\\circ(\\mathrm{CH_3COONa})-\\Lambda_m^\\circ(\\mathrm{NaCl})$.\n$$\\Lambda_m^\\circ=426.0+91.0-126.4=390.6\\ \\mathrm{S\\ cm^2\\ mol^{-1}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At the same temperature, $\\Lambda_m^\\circ$ for $\\text{HCl}$, $\\text{CH}_3\\text{COONa}$ and $\\text{NaCl}$ are $426.0$, $91.0$ and $126.4\\ \\text{S cm}^2\\text{ mol}^{-1}$, respectively. What is $\\Lambda_m^\\circ$ for $\\text{CH}_3\\text{COOH}$?",
+  "options": [
+   "$299.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$461.4\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$517.0\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "By Kohlrausch's law, $\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})=\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})-\\Lambda_m^\\circ(\\text{NaCl})$.\\n$=426.0+91.0-126.4=390.6\\ \\text{S cm}^2\\text{ mol}^{-1}$.",
+  "distractor_notes": "A: omits the contribution from sodium acetate.\\nC: uses an incorrect sign in the ionic-conductivity combination.\\nD: adds all three given values instead of subtracting the sodium ion contribution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

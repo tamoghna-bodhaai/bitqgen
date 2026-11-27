@@ -1,0 +1,68 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Collinearity",
+  "archetype": "proportional components",
+  "brief": "Find the value(s) of a parameter making two vectors collinear, then use it for a dot/cross product computation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:96",
+   "2026s2:121",
+   "2026s2:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "The vectors $\\vec a=\\lambda\\hat i+2\\hat j-4\\hat k$ and $\\vec b=3\\hat i+\\hat j-2\\hat k$ are collinear. Find $\\vec a\\cdot\\vec b$.",
+ "options": [
+  "$12$",
+  "$16$",
+  "$28$",
+  "$36$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Collinearity gives \\(\\vec a=2\\vec b\\) from the second components; the third components agree, so \\(\\lambda=6\\). Thus \\(\\vec a\\cdot\\vec b=2(3^2+1^2+(-2)^2)=28\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Collinearity: $\\dfrac{\\lambda}{3}=\\dfrac{2}{1}=\\dfrac{-4}{-2}=2\\Rightarrow\\lambda=6$; $\\vec a\\cdot\\vec b=6(3)+2(1)+(-4)(-2)=28$.\n\nIndependent check: Collinearity gives \\(\\vec a=2\\vec b\\) from the second components; the third components agree, so \\(\\lambda=6\\). Thus \\(\\vec a\\cdot\\vec b=2(3^2+1^2+(-2)^2)=28\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The vectors $\\vec a=\\lambda\\hat i+2\\hat j-4\\hat k$ and $\\vec b=3\\hat i+\\hat j-2\\hat k$ are collinear. Find $\\vec a\\cdot\\vec b$.",
+  "options": [
+   "$12$",
+   "$16$",
+   "$28$",
+   "$36$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Collinearity: $\\dfrac{\\lambda}{3}=\\dfrac{2}{1}=\\dfrac{-4}{-2}=2\\Rightarrow\\lambda=6$; $\\vec a\\cdot\\vec b=6(3)+2(1)+(-4)(-2)=28$.",
+  "distractor_notes": "A: uses an incorrect sign for the $k$-component product; B: omits the factor $3$ in the first product; D: adds a component product incorrectly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

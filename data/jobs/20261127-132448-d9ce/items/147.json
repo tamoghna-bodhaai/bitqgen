@@ -1,0 +1,68 @@
+{
+ "qno": 147,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 147,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Partial fractions",
+  "archetype": "cover-up method",
+  "brief": "Rational function with a quadratic denominator; resolve into partial fractions (repeated linear factor) and integrate.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:93",
+   "2021:143",
+   "2026s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int \\dfrac{x+3}{x^2+2x+1}\\,dx$.",
+ "options": [
+  "$\\ln|x+1|-\\dfrac{1}{x+1}+C$",
+  "$\\ln|x+1|+\\dfrac{2}{x+1}+C$",
+  "$2\\ln|x+1|-\\dfrac{2}{x+1}+C$",
+  "$\\ln|x+1|-\\dfrac{2}{x+1}+C$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Rewrite the integrand as $\\frac{1}{x+1}+\\frac{2}{(x+1)^2}$. Integrating gives $\\ln|x+1|-\\frac{2}{x+1}+C$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2+2x+1=(x+1)^2$\\n$\\dfrac{x+3}{(x+1)^2}=\\dfrac{1}{x+1}+\\dfrac{2}{(x+1)^2}$\\n$\\displaystyle\\int=\\ln|x+1|-\\dfrac{2}{x+1}+C$\n\nIndependent check: Rewrite the integrand as $\\frac{1}{x+1}+\\frac{2}{(x+1)^2}$. Integrating gives $\\ln|x+1|-\\frac{2}{x+1}+C$.",
+ "solution": "Factor the denominator and split the integrand:\n$$\\frac{x+3}{x^2+2x+1}=\\frac{1}{x+1}+\\frac{2}{(x+1)^2}.$$\nHence, $\\displaystyle\\int \\frac{x+3}{x^2+2x+1}\\,dx=\\ln|x+1|-\\frac{2}{x+1}+C$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int \\dfrac{x+3}{x^2+2x+1}\\,dx$.",
+  "options": [
+   "$\\ln|x+1|-\\dfrac{2}{x+1}+C$",
+   "$\\ln|x+1|+\\dfrac{2}{x+1}+C$",
+   "$2\\ln|x+1|-\\dfrac{2}{x+1}+C$",
+   "$\\ln|x+1|-\\dfrac{1}{x+1}+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$x^2+2x+1=(x+1)^2$\\n$\\dfrac{x+3}{(x+1)^2}=\\dfrac{1}{x+1}+\\dfrac{2}{(x+1)^2}$\\n$\\displaystyle\\int=\\ln|x+1|-\\dfrac{2}{x+1}+C$",
+  "distractor_notes": "B: sign error when integrating $(x+1)^{-2}$; C: uses an incorrect coefficient for the logarithmic term; D: misses the coefficient $2$ in the reciprocal term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

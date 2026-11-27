@@ -1,0 +1,70 @@
+{
+ "qno": 82,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 82,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement",
+  "archetype": "jumbled parts ordering",
+  "brief": "Four/five-sentence paragraph on a familiar topic (travel or science) with one clear opening sentence and a chronological/logical chain; ask for correct order.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:95",
+   "2025s2:70",
+   "2026s2:61"
+  ]
+ },
+ "status": "ok",
+ "stem": "The first and the last parts of the passage are numbered 1 and 6. The rest of the passage is split into four parts named P, Q, R and S, which are not in their proper order. Choose the correct combination.\n\n**1.** The journey to the remote hill village began before sunrise.\n**P.** By midday the narrow road had given way to a stony track, and the bus could go no further.\n**Q.** We set off from the plains with a single bag each and a guide who knew the route well.\n**R.** The last two kilometres had to be covered on foot, along a path that skirted a waterfall.\n**S.** As evening fell, the lights of the village appeared below us, and we forgot our tiredness.\n**6.** It was past midnight when we finally slept, convinced that no journey had ever been worth more.\n\nWhich of the following is the correct sequence?",
+ "options": [
+  "(A) QPRS",
+  "(B) QPSR",
+  "(C) PQRS",
+  "(D) PSRQ"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Q introduces departure, P advances to midday, R describes the walk, and S brings them to the village by evening. The sequence is QPRS.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "Option labels are duplicated (for example, “(A) (A) QPRS”), but the sequences remain identifiable."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Q opens the actual journey (setting off from the plains), P marks midday, R covers the final stretch on foot, S gives the evening arrival; 6 then reports sleeping past midnight. P cannot follow 1 directly, as no departure is mentioned; B, C and D all place the on-foot stretch or the evening arrival before the journey has properly started.\n\nIndependent check: Q introduces departure, P advances to midday, R describes the walk, and S brings them to the village by evening. The sequence is QPRS.",
+ "solution": "Q introduces the departure from the plains; P advances the journey to midday, when the bus can go no further. R describes the final stretch on foot, and S brings them to the village by evening.\nThus, the sequence is QPRS.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The first and the last parts of the passage are numbered 1 and 6. The rest of the passage is split into four parts named P, Q, R and S, which are not in their proper order. Choose the correct combination.\n\n**1.** The journey to the remote hill village began before sunrise.\n**P.** By midday the narrow road had given way to a stony track, and the bus could go no further.\n**Q.** We set off from the plains with a single bag each and a guide who knew the route well.\n**R.** The last two kilometres had to be covered on foot, along a path that skirted a waterfall.\n**S.** As evening fell, the lights of the village appeared below us, and we forgot our tiredness.\n**6.** It was past midnight when we finally slept, convinced that no journey had ever been worth more.\n\nWhich of the following is the correct sequence?",
+  "options": [
+   "(A) QPRS",
+   "(B) QPSR",
+   "(C) PQRS",
+   "(D) PSRQ"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Q opens the actual journey (setting off from the plains), P marks midday, R covers the final stretch on foot, S gives the evening arrival; 6 then reports sleeping past midnight. P cannot follow 1 directly, as no departure is mentioned; B, C and D all place the on-foot stretch or the evening arrival before the journey has properly started.",
+  "distractor_notes": "B and D put R after S, i.e. walking on foot after already sighting the village; C begins with the midday road before any start of the journey."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

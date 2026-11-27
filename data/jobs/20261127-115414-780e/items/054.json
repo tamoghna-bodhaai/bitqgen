@@ -1,0 +1,68 @@
+{
+ "qno": 54,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 54,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment",
+  "archetype": "unpaired electron count",
+  "brief": "Given ion (e.g., Mn2+ or a 3d ion), count unpaired electrons; simple electronic configuration application.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:44",
+   "2025s2:48",
+   "2026s1:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "The number of unpaired electrons in Fe3+ ion (Z = 26) in its ground state is",
+ "options": [
+  "3",
+  "5",
+  "4",
+  "6"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fe: [Ar]3d⁶4s²; removing three electrons gives Fe³⁺: [Ar]3d⁵. Hund’s rule gives five unpaired electrons.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Fe: [Ar] 3d6 4s2. Fe3+ loses the two 4s electrons and one 3d electron, giving [Ar] 3d5. By Hund's rule all five 3d electrons are unpaired.\n\nIndependent check: Fe: [Ar]3d⁶4s²; removing three electrons gives Fe³⁺: [Ar]3d⁵. Hund’s rule gives five unpaired electrons.",
+ "solution": "Fe has configuration $[\\mathrm{Ar}]\\,3d^6 4s^2$. Removing two $4s$ electrons and one $3d$ electron gives Fe$^{3+}: [\\mathrm{Ar}]\\,3d^5$.\nBy Hund’s rule, the five $3d$ electrons occupy separate orbitals, so the number of unpaired electrons is $5$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The number of unpaired electrons in Fe3+ ion (Z = 26) in its ground state is",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Fe: [Ar] 3d6 4s2. Fe3+ loses the two 4s electrons and one 3d electron, giving [Ar] 3d5. By Hund's rule all five 3d electrons are unpaired.",
+  "distractor_notes": "3 assumes only three electrons are removed; 4 arises from the neutral Fe d6 configuration; 6 arises if no d electron is lost from the neutral atom."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

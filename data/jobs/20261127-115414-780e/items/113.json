@@ -1,0 +1,64 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Identities of inverse trig functions",
+  "archetype": "identity simplification",
+  "brief": "Simplify a nested expression like tan⁻¹x + tan⁻¹y or cot⁻¹ of a fraction using principal-value identities, being careful with branch.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:120",
+   "2025s1:106",
+   "2023s2:100"
+  ]
+ },
+ "status": "failed",
+ "stem": "If \\(\\dfrac{\\pi}{2} < x < \\pi\\), then the value of \\(\\cot^{-1}\\left(\\dfrac{\\sqrt{1+\\sin x} + \\sqrt{1-\\sin x}}{\\sqrt{1+\\sin x} - \\sqrt{1-\\sin x}}\\right)\\) is",
+ "options": [
+  "\\dfrac{x}{2}",
+  "\\dfrac{\\pi + x}{2}",
+  "\\dfrac{\\pi - x}{2}",
+  "\\pi - x"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Let \\(\\theta = x/2\\). For \\(x \\in (\\pi/2, \\pi)\\), \\(\\theta \\in (\\pi/4, \\pi/2)\\).\nThen \\(\\sqrt{1+\\sin x} = \\sin\\theta + \\cos\\theta\\), \\(\\sqrt{1-\\sin x} = \\sin\\theta - \\cos\\theta\\).\nThe fraction becomes \\(\\frac{2\\sin\\theta}{2\\cos\\theta} = \\tan\\theta = \\tan\\frac{x}{2}\\).\nExpression = \\(\\cot^{-1}(\\tan\\frac{x}{2}) = \\frac{\\pi}{2} - \\tan^{-1}(\\tan\\frac{x}{2})\\).\nSince \\(x/2 \\in (0, \\pi/2)\\), \\(\\tan^{-1}(\\tan\\frac{x}{2}) = \\frac{x}{2}\\).\nHence value = \\(\\frac{\\pi}{2} - \\frac{x}{2} = \\frac{\\pi - x}{2}\\).",
+ "solution": "Let $\\theta=\\dfrac{x}{2}$, so $\\dfrac{\\pi}{4}<\\theta<\\dfrac{\\pi}{2}$. Then $\\sqrt{1+\\sin x}=\\sin\\theta+\\cos\\theta$ and $\\sqrt{1-\\sin x}=\\sin\\theta-\\cos\\theta$, so the fraction simplifies to $\\tan\\theta$.\\n$$\\cot^{-1}\\!\\left(\\tan\\frac{x}{2}\\right)=\\frac{\\pi}{2}-\\frac{x}{2}=\\frac{\\pi-x}{2}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "If \\(\\dfrac{\\pi}{2} < x < \\pi\\), then the value of \\(\\cot^{-1}\\left(\\dfrac{\\sqrt{1+\\sin x} + \\sqrt{1-\\sin x}}{\\sqrt{1+\\sin x} - \\sqrt{1-\\sin x}}\\right)\\) is",
+  "options": [
+   "\\dfrac{x}{2}",
+   "\\dfrac{\\pi + x}{2}",
+   "\\dfrac{\\pi - x}{2}",
+   "\\pi - x"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let \\(\\theta = x/2\\). For \\(x \\in (\\pi/2, \\pi)\\), \\(\\theta \\in (\\pi/4, \\pi/2)\\).\nThen \\(\\sqrt{1+\\sin x} = \\sin\\theta + \\cos\\theta\\), \\(\\sqrt{1-\\sin x} = \\sin\\theta - \\cos\\theta\\).\nThe fraction becomes \\(\\frac{2\\sin\\theta}{2\\cos\\theta} = \\tan\\theta = \\tan\\frac{x}{2}\\).\nExpression = \\(\\cot^{-1}(\\tan\\frac{x}{2}) = \\frac{\\pi}{2} - \\tan^{-1}(\\tan\\frac{x}{2})\\).\nSince \\(x/2 \\in (0, \\pi/2)\\), \\(\\tan^{-1}(\\tan\\frac{x}{2}) = \\frac{x}{2}\\).\nHence value = \\(\\frac{\\pi}{2} - \\frac{x}{2} = \\frac{\\pi - x}{2}\\).",
+  "distractor_notes": "A: student incorrectly simplifies the fraction to cot(x/2) or forgets to adjust principal value; B: sign error in final identity; D: mistakes the cot⁻¹(tan) conversion."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

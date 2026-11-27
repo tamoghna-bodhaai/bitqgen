@@ -1,0 +1,68 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Neutron separation energy",
+  "archetype": "mass-defect computation",
+  "brief": "Given masses of parent nucleus and daughter nucleus + neutron, compute separation energy in MeV; multi-step mass-defect handling.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:24",
+   "2024s2:18",
+   "2025s2:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "The atomic mass of Ca-41 is 40.9623 u and that of Ca-40 is 39.9626 u. Given that the mass of a neutron is 1.0087 u and 1 u = 931.5 MeV, the neutron separation energy of Ca-41 is:",
+ "options": [
+  "4.19 MeV",
+  "7.45 MeV",
+  "9.31 MeV",
+  "8.38 MeV"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Neutron separation energy: \u001b[M(^{40}\\mathrm{Ca})+m_n-M(^{41}\\mathrm{Ca})\u001b]c^2=(39.9626+1.0087-40.9623)\\times931.5=8.38\\,\\mathrm{MeV}.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Delta m = (mass of Ca-40 + mass of neutron) - mass of Ca-41. Delta m = (39.9626 + 1.0087) - 40.9623 = 0.0090 u. Separation energy = Delta m * 931.5 MeV/u = 0.0090 * 931.5 = 8.3835 MeV, or about 8.38 MeV.\n\nIndependent check: Neutron separation energy: \u001b[M(^{40}\\mathrm{Ca})+m_n-M(^{41}\\mathrm{Ca})\u001b]c^2=(39.9626+1.0087-40.9623)\\times931.5=8.38\\,\\mathrm{MeV}.",
+ "solution": "The neutron separation energy is $S_n=[M(^{40}\\mathrm{Ca})+m_n-M(^{41}\\mathrm{Ca})]c^2$.\n$$S_n=(39.9626+1.0087-40.9623)\\times 931.5=0.0090\\times931.5\\approx 8.38\\,\\mathrm{MeV}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The atomic mass of Ca-41 is 40.9623 u and that of Ca-40 is 39.9626 u. Given that the mass of a neutron is 1.0087 u and 1 u = 931.5 MeV, the neutron separation energy of Ca-41 is:",
+  "options": [
+   "4.19 MeV",
+   "7.45 MeV",
+   "8.38 MeV",
+   "9.31 MeV"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Delta m = (mass of Ca-40 + mass of neutron) - mass of Ca-41. Delta m = (39.9626 + 1.0087) - 40.9623 = 0.0090 u. Separation energy = Delta m * 931.5 MeV/u = 0.0090 * 931.5 = 8.3835 MeV, or about 8.38 MeV.",
+  "distractor_notes": "A: halves the correct energy. B: uses a mass defect of 0.0080 u instead of 0.0090 u. D: uses a mass defect of 0.0100 u instead of 0.0090 u."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

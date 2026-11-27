@@ -1,0 +1,67 @@
+{
+ "qno": 40,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 40,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Spin-only magnetic moment",
+  "archetype": "configuration + formula",
+  "brief": "Give a transition metal ion (e.g. Mn2+ or Cr3+ or Fe3+), ask for its d-electron configuration, count of unpaired electrons, and the spin-only moment in BM using √(n(n+2)).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:48",
+   "2024s1:55",
+   "2025s2:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a free $\\text{Mn}^{3+}$ ion ($Z = 25$), the $d$-electron configuration, the number of unpaired electrons, and the spin-only magnetic moment are, respectively:",
+ "options": [
+  "$3d^2$, $2$, $2.83\\ \\text{BM}$",
+  "$3d^4$, $4$, $4.47\\ \\text{BM}$",
+  "$3d^4$, $4$, $4.90\\ \\text{BM}$",
+  "$3d^5$, $5$, $5.92\\ \\text{BM}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Mn (Z=25): [Ar]3d^5 4s^2. Mn3+ removes 4s^2 and one 3d electron → 3d^4. Free ion follows Hund's rule: 4 unpaired electrons. Spin-only μ = √(n(n+2)) = √24 ≈ 4.90 BM. Option B's 4.47 BM (=√20) is inconsistent with n=4.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. Electronic configuration of neutral $\\text{Mn}$ ($Z = 25$):\n$$\\text{Mn}: [\\text{Ar}]\\, 3d^5 4s^2$$\n\n2. When $\\text{Mn}^{3+}$ is formed, electrons are removed first from the outermost $4s$ orbital, and then from the $3d$ orbital:\n$$\\text{Mn}^{3+}: [\\text{Ar}]\\, 3d^4$$\nThus, the $d$-electron configuration is $3d^4$.\n\n3. According to Hund's rule, the 4 electrons occupy 4 separate $d$-orbitals singly with parallel spins:\n$$n = 4\\text{ unpaired electrons}$$\n\n4. The spin-only magnetic moment ($\\mu_{\\text{s}}$) is given by:\n$$\\mu_{\\text{s}} = \\sqrt{n(n + 2)}\\ \\text{BM} = \\sqrt{4(4 + 2)}\\ \\text{BM} = \\sqrt{24}\\ \\text{BM} \\approx 4.90\\ \\text{BM}$$\n\nIndependent check: Mn (Z=25): [Ar]3d^5 4s^2. Mn3+ removes 4s^2 and one 3d electron → 3d^4. Free ion follows Hund's rule: 4 unpaired electrons. Spin-only μ = √(n(n+2)) = √24 ≈ 4.90 BM. Option B's 4.47 BM (=√20) is inconsistent with n=4.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a free $\\text{Mn}^{3+}$ ion ($Z = 25$), the $d$-electron configuration, the number of unpaired electrons, and the spin-only magnetic moment are, respectively:",
+  "options": [
+   "$3d^2$, $2$, $2.83\\ \\text{BM}$",
+   "$3d^4$, $4$, $4.47\\ \\text{BM}$",
+   "$3d^4$, $4$, $4.90\\ \\text{BM}$",
+   "$3d^5$, $5$, $5.92\\ \\text{BM}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "1. Electronic configuration of neutral $\\text{Mn}$ ($Z = 25$):\n$$\\text{Mn}: [\\text{Ar}]\\, 3d^5 4s^2$$\n\n2. When $\\text{Mn}^{3+}$ is formed, electrons are removed first from the outermost $4s$ orbital, and then from the $3d$ orbital:\n$$\\text{Mn}^{3+}: [\\text{Ar}]\\, 3d^4$$\nThus, the $d$-electron configuration is $3d^4$.\n\n3. According to Hund's rule, the 4 electrons occupy 4 separate $d$-orbitals singly with parallel spins:\n$$n = 4\\text{ unpaired electrons}$$\n\n4. The spin-only magnetic moment ($\\mu_{\\text{s}}$) is given by:\n$$\\mu_{\\text{s}} = \\sqrt{n(n + 2)}\\ \\text{BM} = \\sqrt{4(4 + 2)}\\ \\text{BM} = \\sqrt{24}\\ \\text{BM} \\approx 4.90\\ \\text{BM}$$",
+  "distractor_notes": "Option A assumes electrons are removed from the 3d subshell before 4s, yielding 3d^2 with n = 2 and μ = 2.83 BM.\nOption B correctly identifies n = 4, but incorrectly applies the formula √(n(n+1)) instead of √(n(n+2)), yielding 4.47 BM.\nOption D mistakes Mn3+ for the more common Mn2+ ion, giving a 3d^5 configuration with n = 5 and μ = 5.92 BM.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

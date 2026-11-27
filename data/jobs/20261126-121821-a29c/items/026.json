@@ -1,0 +1,67 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Dimensional analysis",
+  "archetype": "unit deduction",
+  "brief": "Express a physical quantity (e.g., from an unfamiliar named formula) in base units and identify its dimensional formula",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:2",
+   "2024s1:1",
+   "2025s2:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "The Hall coefficient of a material is defined as $R_H = \\dfrac{E}{jB}$, where $E$ is the induced electric field, $j$ is the current density, and $B$ is the magnetic field. The dimensional formula of $R_H$ is:",
+ "options": [
+  "$[M^0 L^2 T^{-1} A^{-1}]$",
+  "$[M^0 L^3 T^{-1} A^{-1}]$",
+  "$[M^0 L^3 T A^{-1}]$",
+  "$[M^0 L^{-3} T A]$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "[E]=MLT^-3A^-1, [j]=L^-2A, [B]=MT^-2A^-1. R_H = E/(jB) gives exponents (1-1, 1+2, -3+2, -1-1+1) = M^0 L^3 T^-1 A^-1, verified by exponent arithmetic.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "We find the dimensional formula of each quantity in base units:\n1. Electric field: $E = \\dfrac{F}{q} \\implies [E] = \\dfrac{[MLT^{-2}]}{[AT]} = [MLT^{-3}A^{-1}]$\n2. Current density: $j = \\dfrac{I}{\\text{Area}} \\implies [j] = \\dfrac{[A]}{[L^2]} = [L^{-2}A]$\n3. Magnetic field: From $F = I L B$, we have $B = \\dfrac{F}{IL} \\implies [B] = \\dfrac{[MLT^{-2}]}{[A][L]} = [MT^{-2}A^{-1}]$\n\nNow, substituting these into the given expression:\n$$[jB] = [L^{-2}A][MT^{-2}A^{-1}] = [ML^{-2}T^{-2}]$$\n$$[R_H] = \\dfrac{[E]}{[jB]} = \\dfrac{[MLT^{-3}A^{-1}]}{[ML^{-2}T^{-2}]} = [M^0 L^{1-(-2)} T^{-3-(-2)} A^{-1}] = [M^0 L^3 T^{-1} A^{-1}]$$\n\n(Alternatively, using $R_H = \\dfrac{1}{ne}$, where $n$ is charge carrier density $[L^{-3}]$ and $e$ is charge $[AT]$, $[R_H] = \\dfrac{1}{[L^{-3}][AT]} = [M^0 L^3 T^{-1} A^{-1}]$.)\n\nIndependent check: [E]=MLT^-3A^-1, [j]=L^-2A, [B]=MT^-2A^-1. R_H = E/(jB) gives exponents (1-1, 1+2, -3+2, -1-1+1) = M^0 L^3 T^-1 A^-1, verified by exponent arithmetic.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The Hall coefficient of a material is defined as $R_H = \\dfrac{E}{jB}$, where $E$ is the induced electric field, $j$ is the current density, and $B$ is the magnetic field. The dimensional formula of $R_H$ is:",
+  "options": [
+   "$[M^0 L^2 T^{-1} A^{-1}]$",
+   "$[M^0 L^3 T^{-1} A^{-1}]$",
+   "$[M^0 L^3 T A^{-1}]$",
+   "$[M^0 L^{-3} T A]$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "We find the dimensional formula of each quantity in base units:\n1. Electric field: $E = \\dfrac{F}{q} \\implies [E] = \\dfrac{[MLT^{-2}]}{[AT]} = [MLT^{-3}A^{-1}]$\n2. Current density: $j = \\dfrac{I}{\\text{Area}} \\implies [j] = \\dfrac{[A]}{[L^2]} = [L^{-2}A]$\n3. Magnetic field: From $F = I L B$, we have $B = \\dfrac{F}{IL} \\implies [B] = \\dfrac{[MLT^{-2}]}{[A][L]} = [MT^{-2}A^{-1}]$\n\nNow, substituting these into the given expression:\n$$[jB] = [L^{-2}A][MT^{-2}A^{-1}] = [ML^{-2}T^{-2}]$$\n$$[R_H] = \\dfrac{[E]}{[jB]} = \\dfrac{[MLT^{-3}A^{-1}]}{[ML^{-2}T^{-2}]} = [M^0 L^{1-(-2)} T^{-3-(-2)} A^{-1}] = [M^0 L^3 T^{-1} A^{-1}]$$\n\n(Alternatively, using $R_H = \\dfrac{1}{ne}$, where $n$ is charge carrier density $[L^{-3}]$ and $e$ is charge $[AT]$, $[R_H] = \\dfrac{1}{[L^{-3}][AT]} = [M^0 L^3 T^{-1} A^{-1}]$.)",
+  "distractor_notes": "A: Arises from forgetting the length factor in magnetic field, using $B = F/I = [MLT^{-2}A^{-1}]$, which yields $[M^0 L^2 T^{-1} A^{-1}]$.\nC: Arises from a sign error when evaluating the time exponent: $-3 - (-2) = -1$, mistakenly calculated as $+1$.\nD: Arises from computing the reciprocal quantity $\\dfrac{jB}{E} = ne$, which has dimensions $[M^0 L^{-3} T A]$.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

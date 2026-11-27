@@ -1,0 +1,68 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Area under v-t graph",
+  "archetype": "graph interpretation",
+  "brief": "Velocity–time graph of a body made of straight-line segments; find total displacement as area under v-t graph and identify where speed is maximum.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:28",
+   "2024s1:17",
+   "2024s2:21"
+  ]
+ },
+ "status": "ok",
+ "stem": "A body's velocity varies linearly between the points $(t,v)=(0,0),(2,6),(5,6),(7,-2)$, with $t$ in seconds and $v$ in m s$^{-1}$. What are its displacement from $0$ to $7$ s and its maximum speed?",
+ "options": [
+  "$20$ m, $6$ m s$^{-1}$",
+  "$28$ m, $6$ m s$^{-1}$",
+  "$28$ m, $8$ m s$^{-1}$",
+  "$32$ m, $6$ m s$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Displacement is the sum of trapezoid areas: 6 + 18 + 4 = 28 m. The largest magnitude of velocity is 6 m s⁻¹.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Displacement $=\\frac12(2)(6)+(3)(6)+\\frac{6+(-2)}{2}(2)=6+18+4=28$ m.\\\\\nMaximum speed $=\\max|v|=6$ m s$^{-1}$.\n\nIndependent check: Displacement is the sum of trapezoid areas: 6 + 18 + 4 = 28 m. The largest magnitude of velocity is 6 m s⁻¹.",
+ "solution": "Displacement is the signed area under the velocity–time graph:\n$$\\Delta x=\\frac12(2)(6)+(3)(6)+\\frac{6+(-2)}{2}(2)=6+18+4=28\\text{ m}.$$\nThe maximum speed is the greatest magnitude of velocity, $\\max|v|=6\\text{ m s}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A body's velocity varies linearly between the points $(t,v)=(0,0),(2,6),(5,6),(7,-2)$, with $t$ in seconds and $v$ in m s$^{-1}$. What are its displacement from $0$ to $7$ s and its maximum speed?",
+  "options": [
+   "$28$ m, $6$ m s$^{-1}$",
+   "$20$ m, $6$ m s$^{-1}$",
+   "$28$ m, $8$ m s$^{-1}$",
+   "$32$ m, $6$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Displacement $=\\frac12(2)(6)+(3)(6)+\\frac{6+(-2)}{2}(2)=6+18+4=28$ m.\\\\\nMaximum speed $=\\max|v|=6$ m s$^{-1}$.",
+  "distractor_notes": "B: treats the final segment's area as negative without accounting for the sign change. C: mistakes the final velocity magnitude for the maximum speed. D: uses the trapezium area on the final segment without its signed average velocity."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

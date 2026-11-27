@@ -1,0 +1,68 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Vitamins",
+  "archetype": "statement evaluation",
+  "brief": "Multi-statement item on water-soluble vs fat-soluble vitamins, deficiency diseases and whether specific vitamins are synthesised in the body; pick the correct combination.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:49",
+   "2024s1:37",
+   "2023s2:60"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider these statements about vitamins:\nI. Vitamins B and C are water-soluble; A, D, E and K are fat-soluble.\nII. Deficiency of vitamin B$_1$ causes beriberi, while vitamin C deficiency causes scurvy.\nIII. Human skin can synthesise vitamin D$_3$ on exposure to ultraviolet radiation.\nIV. Human cells synthesise vitamin B$_{12}$ in amounts sufficient to eliminate the need for dietary intake.\nWhich statements are correct?",
+ "options": [
+  "I and II only",
+  "I, III and IV only",
+  "II, III and IV only",
+  "I, II and III only"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I, II, and III are correct. IV is false: humans do not synthesize enough vitamin B₁₂ and need it from the diet.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I, II, III: true.\\nIV: false; humans require dietary vitamin B$_{12}$; it is made by microorganisms.\n\nIndependent check: I, II, and III are correct. IV is false: humans do not synthesize enough vitamin B₁₂ and need it from the diet.",
+ "solution": "Vitamins B and C are water-soluble, while A, D, E and K are fat-soluble. Deficiencies of B$_1$ and C cause beriberi and scurvy, respectively.\nSkin synthesises vitamin D$_3$ on exposure to UV radiation, but humans rely on dietary vitamin B$_{12}$, which is made by microorganisms.\nHence, statements I, II and III are correct.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Consider these statements about vitamins:\nI. Vitamins B and C are water-soluble; A, D, E and K are fat-soluble.\nII. Deficiency of vitamin B$_1$ causes beriberi, while vitamin C deficiency causes scurvy.\nIII. Human skin can synthesise vitamin D$_3$ on exposure to ultraviolet radiation.\nIV. Human cells synthesise vitamin B$_{12}$ in amounts sufficient to eliminate the need for dietary intake.\nWhich statements are correct?",
+  "options": [
+   "I and II only",
+   "I, II and III only",
+   "II, III and IV only",
+   "I, III and IV only"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "I, II, III: true.\\nIV: false; humans require dietary vitamin B$_{12}$; it is made by microorganisms.",
+  "distractor_notes": "A: Omits the correct statement about vitamin D synthesis.\nC: Includes false IV and omits I.\nD: Includes false IV and omits II."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

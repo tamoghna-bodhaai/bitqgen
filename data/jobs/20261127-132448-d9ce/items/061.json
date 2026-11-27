@@ -1,0 +1,68 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "IUPAC nomenclature",
+  "archetype": "nomenclature",
+  "brief": "Provide the structure of a branched compound with a functional group and multiple identical substituents; ask for the correct IUPAC name including lowest-locant rules.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:44",
+   "2025s1:44",
+   "2025s2:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "What is the correct IUPAC name of $\\text{CH}_3-\\text{CH(OH)}-\\text{CH}_2-\\text{C}(\\text{CH}_3)_2-\\text{CH}_3$?",
+ "options": [
+  "2,2-dimethylpentan-4-ol",
+  "4,4-dimethylpentan-2-ol",
+  "4,4-dimethylpentan-3-ol",
+  "2-ethyl-4-methylbutan-1-ol"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The longest chain containing the OH group has five carbons. Numbering from the end nearest the OH gives it position 2, with methyl groups at 4,4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Longest chain containing $-\\text{OH}$: five carbons.\nNumber from the end nearer $-\\text{OH}$: $\\text{OH}$ at C-2.\nTwo methyl substituents are at C-4.\nName: 4,4-dimethylpentan-2-ol.\n\nIndependent check: The longest chain containing the OH group has five carbons. Numbering from the end nearest the OH gives it position 2, with methyl groups at 4,4.",
+ "solution": "The longest chain containing the $-\\text{OH}$ group has five carbons. Number from the end nearest the $-\\text{OH}$ group: it is at C-2, and the two methyl groups are at C-4.\n$$\\boxed{\\text{4,4-dimethylpentan-2-ol}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "What is the correct IUPAC name of $\\text{CH}_3-\\text{CH(OH)}-\\text{CH}_2-\\text{C}(\\text{CH}_3)_2-\\text{CH}_3$?",
+  "options": [
+   "2,2-dimethylpentan-4-ol",
+   "4,4-dimethylpentan-2-ol",
+   "4,4-dimethylpentan-3-ol",
+   "2-ethyl-4-methylbutan-1-ol"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Longest chain containing $-\\text{OH}$: five carbons.\nNumber from the end nearer $-\\text{OH}$: $\\text{OH}$ at C-2.\nTwo methyl substituents are at C-4.\nName: 4,4-dimethylpentan-2-ol.",
+  "distractor_notes": "Reverses the numbering despite the hydroxyl group; assigns the hydroxyl group the wrong locant; chooses a shorter parent chain."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

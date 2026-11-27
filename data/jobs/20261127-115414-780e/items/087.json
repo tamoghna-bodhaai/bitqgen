@@ -1,0 +1,70 @@
+{
+ "qno": 87,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 87,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "family-tree",
+  "brief": "Family tree with three generations involving a grandfather, his sons/daughters and grandchildren; from a relational statement figure out how X is related to Y (e.g., 'father's sister's son' type chain).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:88",
+   "2022:86",
+   "2025s2:84"
+  ]
+ },
+ "status": "ok",
+ "stem": "Pointing to a man, Priya said, \"He is the husband of the daughter of my father's only daughter.\" How is the man related to Priya?",
+ "options": [
+  "(A) Son",
+  "(B) Brother",
+  "(C) Son-in-law",
+  "(D) Nephew"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Priya is her father's only daughter. The daughter of that daughter is Priya's daughter, whose husband is Priya's son-in-law.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "Option labels are duplicated, e.g. “(A) (A)”. This does not affect the answer."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Priya's father's only daughter is Priya herself; her daughter is Priya's daughter; the daughter's husband is therefore Priya's son-in-law. He is not her son, brother or nephew, so only (C) fits.\n\nIndependent check: Priya is her father's only daughter. The daughter of that daughter is Priya's daughter, whose husband is Priya's son-in-law.",
+ "solution": "Priya’s father’s only daughter is Priya herself. The daughter of Priya is her daughter, and her daughter’s husband is Priya’s son-in-law. Thus, the man is her son-in-law.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Pointing to a man, Priya said, \"He is the husband of the daughter of my father's only daughter.\" How is the man related to Priya?",
+  "options": [
+   "(A) Son",
+   "(B) Brother",
+   "(C) Son-in-law",
+   "(D) Nephew"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Priya's father's only daughter is Priya herself; her daughter is Priya's daughter; the daughter's husband is therefore Priya's son-in-law. He is not her son, brother or nephew, so only (C) fits.",
+  "distractor_notes": "(A) Son is a generation trap, (B) Brother and (D) Nephew belong to the wrong branches."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

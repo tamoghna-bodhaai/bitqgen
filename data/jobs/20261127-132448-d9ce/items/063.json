@@ -1,0 +1,86 @@
+{
+ "qno": 63,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 63,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Elimination, addition, substitution sequence",
+  "archetype": "reaction sequence product",
+  "brief": "Figure shows a haloalkane substrate; sequence: alcoholic KOH (E2), then HBr addition (Markovnikov), then aqueous KOH substitution; ask for the final product structure.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:40",
+   "2023s2:37",
+   "2022:58"
+  ]
+ },
+ "status": "ok",
+ "stem": "Following E2 elimination with alcoholic $\\text{KOH}$ ($\\Delta$), HBr addition, and aqueous $\\text{KOH}$ substitution, what is the final product from the haloalkane shown in the figure?",
+ "options": [
+  "2-methylpropan-1-ol",
+  "2-methylpropene",
+  "2-bromo-2-methylpropane",
+  "2-methylpropan-2-ol"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q063_stem_v1.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q063_optA_v1.png",
+  "figs/q063_optB_v1.png",
+  "figs/q063_optD_v1.png",
+  "figs/q063_optC_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The haloalkane is 1-bromo-2-methylpropane. E2 elimination gives 2-methylpropene; HBr addition gives 2-bromo-2-methylpropane, and aqueous KOH substitution gives 2-methylpropan-2-ol.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$$(\\text{CH}_3)_2\\text{CHCH}_2\\text{Br}\\xrightarrow{\\text{alc. KOH},\\ \\Delta}(\\text{CH}_3)_2\\text{C{=}CH}_2$$\n$$\\xrightarrow{\\text{HBr}}(\\text{CH}_3)_3\\text{CBr}\\xrightarrow{\\text{aq. KOH}}(\\text{CH}_3)_3\\text{COH}$$\n\nIndependent check: The haloalkane is 1-bromo-2-methylpropane. E2 elimination gives 2-methylpropene; HBr addition gives 2-bromo-2-methylpropane, and aqueous KOH substitution gives 2-methylpropan-2-ol.",
+ "solution": "Alcoholic KOH and heat cause E2 elimination; HBr then adds to the alkene in Markovnikov fashion, followed by substitution with aqueous KOH.\n$$ (CH_3)_2CHCH_2Br \\xrightarrow{\\text{alc. KOH},\\ \\Delta} (CH_3)_2C{=}CH_2 \\xrightarrow{HBr} (CH_3)_3CBr \\xrightarrow{\\text{aq. KOH}} (CH_3)_3COH $$\nThe final product is 2-methylpropan-2-ol.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Following E2 elimination with alcoholic $\\text{KOH}$ ($\\Delta$), HBr addition, and aqueous $\\text{KOH}$ substitution, what is the final product from the haloalkane shown in the figure?",
+  "options": [
+   "2-methylpropan-1-ol",
+   "2-methylpropene",
+   "2-methylpropan-2-ol",
+   "2-bromo-2-methylpropane"
+  ],
+  "option_smiles": [
+   "CC(C)CO",
+   "C=C(C)C",
+   "CC(C)(C)O",
+   "CC(C)(C)Br"
+  ],
+  "answer": "C",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw the skeletal structure of 1-bromo-2-methylpropane: a central CH bonded to two CH3 groups (one to the left and one up-right) and a CH2Br group to the right. Show Br at the end of that group. Include no arrows, reagents, or other structures.",
+   "smiles": "CC(C)CBr"
+  },
+  "difficulty_estimate": 3,
+  "working": "$$(\\text{CH}_3)_2\\text{CHCH}_2\\text{Br}\\xrightarrow{\\text{alc. KOH},\\ \\Delta}(\\text{CH}_3)_2\\text{C{=}CH}_2$$\n$$\\xrightarrow{\\text{HBr}}(\\text{CH}_3)_3\\text{CBr}\\xrightarrow{\\text{aq. KOH}}(\\text{CH}_3)_3\\text{COH}$$",
+  "distractor_notes": "A: Incorrect anti-Markovnikov orientation in the HBr addition. B: Stops at the alkene formed in the first step. D: Stops after HBr addition and omits the final substitution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

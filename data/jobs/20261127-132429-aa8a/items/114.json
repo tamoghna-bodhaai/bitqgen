@@ -1,0 +1,68 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Trigonometric equations",
+  "archetype": "general solution",
+  "brief": "Solve a trigonometric equation involving multiple angles (e.g., tan 2x = cot 3x) and select the number of solutions in an interval or list the general solution.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:130",
+   "2021:125",
+   "2021:111"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many solutions does $\\tan 3x=\\cot 2x$ have in $0<x<2\\pi$?",
+ "options": [
+  "$6$",
+  "$8$",
+  "$9$",
+  "$10$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since \\(\\cot 2x=\\tan(\\frac{\\pi}{2}-2x)\\), equality gives \\(x=\\frac{\\pi}{10}+\\frac{k\\pi}{5}\\). The interval allows \\(k=0,\\ldots,9\\), but \\(k=2,7\\) make both sides undefined. Thus there are 8 solutions.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$3x=\\frac{\\pi}{2}-2x+k\\pi\\quad\\Rightarrow\\quad x=\\frac{\\pi}{10}+\\frac{k\\pi}{5}$$\n$$0<x<2\\pi\\Rightarrow k=0,1,\\ldots,9$$\n$$\\tan 3x\\text{ or }\\cot 2x\\text{ is undefined when }k\\equiv2\\pmod5$$\n$$10-2=8$$\n\nIndependent check: Since \\(\\cot 2x=\\tan(\\frac{\\pi}{2}-2x)\\), equality gives \\(x=\\frac{\\pi}{10}+\\frac{k\\pi}{5}\\). The interval allows \\(k=0,\\ldots,9\\), but \\(k=2,7\\) make both sides undefined. Thus there are 8 solutions.",
+ "solution": "Since $\\\\cot 2x=\\\\tan(\\\\frac{\\\\pi}{2}-2x)$, equality of tangents gives\n$$3x=\\\\frac{\\\\pi}{2}-2x+k\\\\pi \\\\quad\\\\Rightarrow\\\\quad x=\\\\frac{\\\\pi}{10}+\\\\frac{k\\\\pi}{5}.$$\nThe interval $0<x<2\\\\pi$ gives $k=0,1,\\\\ldots,9$. For $k=2,7$, both sides are undefined; hence the number of solutions is $10-2=8$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many solutions does $\\tan 3x=\\cot 2x$ have in $0<x<2\\pi$?",
+  "options": [
+   "$6$",
+   "$8$",
+   "$9$",
+   "$10$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$$3x=\\frac{\\pi}{2}-2x+k\\pi\\quad\\Rightarrow\\quad x=\\frac{\\pi}{10}+\\frac{k\\pi}{5}$$\n$$0<x<2\\pi\\Rightarrow k=0,1,\\ldots,9$$\n$$\\tan 3x\\text{ or }\\cot 2x\\text{ is undefined when }k\\equiv2\\pmod5$$\n$$10-2=8$$",
+  "distractor_notes": "A: Excludes too many candidate values at the undefined points.\nC: Excludes only one of the two invalid candidates in the interval.\nD: Counts every value from the tangent identity without checking the original domains."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

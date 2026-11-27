@@ -1,0 +1,68 @@
+{
+ "qno": 98,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 98,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Mean deviation (ungrouped)",
+  "archetype": "direct computation",
+  "brief": "Given a small frequency/univariate table, compute the mean deviation about the median.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:107",
+   "2023s2:91",
+   "2025s1:109"
+  ]
+ },
+ "status": "ok",
+ "stem": "The table gives a data set with frequencies. Find its mean deviation about the median. $$\\begin{array}{c|cccc}x_i&1&3&5&8\\\\f_i&2&3&2&2\\end{array}$$",
+ "options": [
+  "$\\dfrac{9}{4}$",
+  "$\\dfrac{19}{9}$",
+  "$2$",
+  "$18$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "There are 9 observations, so the median is 3. The mean deviation is \\(\\frac{2|1-3|+3|3-3|+2|5-3|+2|8-3|}{9}=\\frac{18}{9}=2\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$N=9,\\quad m=3$\\n$\\text{MD}=\\dfrac{2|1-3|+3|3-3|+2|5-3|+2|8-3|}{9}=\\dfrac{18}{9}=2.$\n\nIndependent check: There are 9 observations, so the median is 3. The mean deviation is \\(\\frac{2|1-3|+3|3-3|+2|5-3|+2|8-3|}{9}=\\frac{18}{9}=2\\).",
+ "solution": "The total frequency is $N=9$, so the median is $m=3$. Hence,\n$$\\text{Mean deviation about median}=\\frac{\\sum f_i|x_i-m|}{N}=\\frac{2|1-3|+3|3-3|+2|5-3|+2|8-3|}{9}=2.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The table gives a data set with frequencies. Find its mean deviation about the median. $$\\begin{array}{c|cccc}x_i&1&3&5&8\\\\f_i&2&3&2&2\\end{array}$$",
+  "options": [
+   "$2$",
+   "$\\dfrac{19}{9}$",
+   "$\\dfrac{9}{4}$",
+   "$18$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$N=9,\\quad m=3$\\n$\\text{MD}=\\dfrac{2|1-3|+3|3-3|+2|5-3|+2|8-3|}{9}=\\dfrac{18}{9}=2.$",
+  "distractor_notes": "B: treats the distinct data values as unweighted when finding the median.\\nC: divides by $N-1$ instead of $N$.\\nD: omits division by the total frequency."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

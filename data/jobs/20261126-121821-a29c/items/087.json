@@ -1,0 +1,67 @@
+{
+ "qno": 87,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 87,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter-number analogy",
+  "archetype": "positional value analogy",
+  "brief": "Pair like 'ACE : 135 :: BD? : ?' style — map letters to positional values and find the matching number group; include a twist in the second mapping rule.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:73",
+   "2026s1:71",
+   "2025s1:86"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the related number from the given alternatives:\n\n**FACE** : **21262422** :: **CALM** : **?**",
+ "options": [
+  "23251413",
+  "24261514",
+  "14152624",
+  "311213"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Code each letter by its reverse-alphabet position (27 − position): F=21, A=26, C=24, E=22 → 21262422. For CALM: C=24, A=26, L=15, M=14 → 24261514.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "1. Analyze the relation in the first pair, **FACE : 21262422**:\n- Alphabetical positions from the beginning ($A=1, B=2, \\dots, Z=26$):\n  - $\\text{F} = 6$\n  - $\\text{A} = 1$\n  - $\\text{C} = 3$\n  - $\\text{E} = 5$\n- Twist in the mapping rule: Each letter is mapped to its reverse alphabetical position ($27 - \\text{position}$):\n  - $\\text{F} \\to 27 - 6 = 21$\n  - $\\text{A} \\to 27 - 1 = 26$\n  - $\\text{C} \\to 27 - 3 = 24$\n  - $\\text{E} \\to 27 - 5 = 22$\n- Concatenating these values yields $21262422$.\n\n2. Apply the identical rule to **CALM**:\n- Alphabetical positions:\n  - $\\text{C} = 3 \\implies 27 - 3 = 24$\n  - $\\text{A} = 1 \\implies 27 - 1 = 26$\n  - $\\text{L} = 12 \\implies 27 - 12 = 15$\n  - $\\text{M} = 13 \\implies 27 - 13 = 14$\n- Concatenating the numbers gives $24261514$.\n\nTherefore, the correct option is B.\n\nIndependent check: Code each letter by its reverse-alphabet position (27 − position): F=21, A=26, C=24, E=22 → 21262422. For CALM: C=24, A=26, L=15, M=14 → 24261514.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Select the related number from the given alternatives:\n\n**FACE** : **21262422** :: **CALM** : **?**",
+  "options": [
+   "23251413",
+   "24261514",
+   "14152624",
+   "311213"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. Analyze the relation in the first pair, **FACE : 21262422**:\n- Alphabetical positions from the beginning ($A=1, B=2, \\dots, Z=26$):\n  - $\\text{F} = 6$\n  - $\\text{A} = 1$\n  - $\\text{C} = 3$\n  - $\\text{E} = 5$\n- Twist in the mapping rule: Each letter is mapped to its reverse alphabetical position ($27 - \\text{position}$):\n  - $\\text{F} \\to 27 - 6 = 21$\n  - $\\text{A} \\to 27 - 1 = 26$\n  - $\\text{C} \\to 27 - 3 = 24$\n  - $\\text{E} \\to 27 - 5 = 22$\n- Concatenating these values yields $21262422$.\n\n2. Apply the identical rule to **CALM**:\n- Alphabetical positions:\n  - $\\text{C} = 3 \\implies 27 - 3 = 24$\n  - $\\text{A} = 1 \\implies 27 - 1 = 26$\n  - $\\text{L} = 12 \\implies 27 - 12 = 15$\n  - $\\text{M} = 13 \\implies 27 - 13 = 14$\n- Concatenating the numbers gives $24261514$.\n\nTherefore, the correct option is B.",
+  "distractor_notes": "A: Subtracts letter positions from 26 instead of 27 (a common error when confusing total letters with the reverse-rank formula $27 - n$).\nC: Correctly uses reverse positions but writes them in reversed letter order (from right to left: M, L, A, C).\nD: Uses direct forward positional values ($C=3, A=1, L=12, M=13$), ignoring the reverse-rank transformation.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

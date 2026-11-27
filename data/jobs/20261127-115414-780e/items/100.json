@@ -1,0 +1,68 @@
+{
+ "qno": 100,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 100,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Linear DE integrating factor",
+  "archetype": "integrating factor",
+  "brief": "Solve a first-order linear ODE dy/dx + P(x)y = Q(x) with an integrating factor; identify P, multiply, integrate.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:113",
+   "2023s2:103",
+   "2022:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of the differential equation dy/dx + y tan x = sin 2x is:",
+ "options": [
+  "y = C cos x + 2 sin^2 x",
+  "y = C cos x - 2 cos^2 x",
+  "y = C sec x - 2 cos x",
+  "y = C sin x - 2 sin^2 x"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The integrating factor is sec x. Thus (y sec x)' = sec x sin 2x = 2 sin x, so y sec x = -2 cos x + C, giving y = C cos x - 2 cos² x.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Here P(x) = tan x, so the integrating factor is exp(integral of tan x dx) = sec x. Multiplying gives (d/dx)(y sec x) = sin(2x) sec x = 2 sin x. Integrating, y sec x = -2 cos x + C. Hence y = C cos x - 2 cos^2 x.\n\nIndependent check: The integrating factor is sec x. Thus (y sec x)' = sec x sin 2x = 2 sin x, so y sec x = -2 cos x + C, giving y = C cos x - 2 cos² x.",
+ "solution": "The integrating factor is $e^{\\int \\tan x\\,dx}=\\sec x$. Hence\n$$\\frac{d}{dx}(y\\sec x)=\\sec x\\sin 2x=2\\sin x.$$\nIntegrating gives $y\\sec x=-2\\cos x+C$, so $\\boxed{y=C\\cos x-2\\cos^2 x}$. (B)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of the differential equation dy/dx + y tan x = sin 2x is:",
+  "options": [
+   "y = C cos x - 2 cos^2 x",
+   "y = C cos x + 2 sin^2 x",
+   "y = C sec x - 2 cos x",
+   "y = C sin x - 2 sin^2 x"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Here P(x) = tan x, so the integrating factor is exp(integral of tan x dx) = sec x. Multiplying gives (d/dx)(y sec x) = sin(2x) sec x = 2 sin x. Integrating, y sec x = -2 cos x + C. Hence y = C cos x - 2 cos^2 x.",
+  "distractor_notes": "B has a wrong particular part from an identity/sign error; C uses the reciprocal of the integrating factor; D uses sin x instead of sec x as integrating factor."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Helical motion in magnetic field",
+  "archetype": "single-formula numerical",
+  "brief": "A charged particle enters a uniform magnetic field at an oblique angle; ask to show/identify that the path is a helix and find its pitch or radius (easy direct formula).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:30",
+   "2022:6",
+   "2024s1:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "A charged particle with specific charge q/m = 10^8 C kg^-1 moves with velocity 6 x 10^6 m s^-1 and enters a uniform magnetic field of 0.3 T at an angle of 30 degrees with the field. The radius of the helical path traced by the particle is",
+ "options": [
+  "5 cm",
+  "10 cm",
+  "17.3 cm",
+  "20 cm"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The perpendicular speed is v⊥ = 6×10⁶ sin 30° = 3×10⁶ m s⁻¹. Thus r = v⊥/[(q/m)B] = 3×10⁶/(10⁸×0.3) = 0.10 m = 10 cm.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Helical radius r = v sin(theta) / ((q/m) B). Here v sin(30 degrees) = 6 x 10^6 * 0.5 = 3 x 10^6 m s^-1 and (q/m) B = 10^8 * 0.3 = 3 x 10^7. So r = (3 x 10^6)/(3 x 10^7) = 0.1 m = 10 cm. Correct option is B.\n\nIndependent check: The perpendicular speed is v⊥ = 6×10⁶ sin 30° = 3×10⁶ m s⁻¹. Thus r = v⊥/[(q/m)B] = 3×10⁶/(10⁸×0.3) = 0.10 m = 10 cm.",
+ "solution": "The helical radius is determined by the velocity component perpendicular to the field:\n$$r=\\frac{v\\sin\\theta}{(q/m)B}=\\frac{6\\times10^6\\sin30^\\circ}{10^8\\times0.3}=0.10\\,\\text{m}=10\\,\\text{cm}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A charged particle with specific charge q/m = 10^8 C kg^-1 moves with velocity 6 x 10^6 m s^-1 and enters a uniform magnetic field of 0.3 T at an angle of 30 degrees with the field. The radius of the helical path traced by the particle is",
+  "options": [
+   "5 cm",
+   "10 cm",
+   "17.3 cm",
+   "20 cm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Helical radius r = v sin(theta) / ((q/m) B). Here v sin(30 degrees) = 6 x 10^6 * 0.5 = 3 x 10^6 m s^-1 and (q/m) B = 10^8 * 0.3 = 3 x 10^7. So r = (3 x 10^6)/(3 x 10^7) = 0.1 m = 10 cm. Correct option is B.",
+  "distractor_notes": "5 cm: uses sin^2(30 degrees) instead of sin(30 degrees); 17.3 cm: uses cos(30 degrees) instead of sin(30 degrees); 20 cm: uses the full speed without taking the perpendicular component."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

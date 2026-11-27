@@ -1,0 +1,68 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Partial fractions",
+  "archetype": "simplify then integrate",
+  "brief": "Decompose a proper rational function (distinct linear factors) into partial fractions and integrate each term.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:99",
+   "2025s2:102",
+   "2026s1:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^1 \\frac{3x+5}{(x+1)(x+2)}\\,dx$.",
+ "options": [
+  "$\\ln\\dfrac{3}{2}$",
+  "$\\ln 3$",
+  "$\\ln 6$",
+  "$\\ln 12$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Partial fractions: (3x+5)/((x+1)(x+2)) = 2/(x+1) + 1/(x+2). Integrating from 0 to 1 gives [2 ln(x+1) + ln(x+2)]_0^1 = ln 6.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{3x+5}{(x+1)(x+2)}=\\dfrac{2}{x+1}+\\dfrac{1}{x+2}$.\\n$\\int_0^1\\left(\\dfrac{2}{x+1}+\\dfrac{1}{x+2}\\right)dx=2\\ln 2+\\ln\\dfrac{3}{2}=\\ln 6$.\n\nIndependent check: Partial fractions: (3x+5)/((x+1)(x+2)) = 2/(x+1) + 1/(x+2). Integrating from 0 to 1 gives [2 ln(x+1) + ln(x+2)]_0^1 = ln 6.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^1 \\frac{3x+5}{(x+1)(x+2)}\\,dx$.",
+  "options": [
+   "$\\ln\\dfrac{3}{2}$",
+   "$\\ln 3$",
+   "$\\ln 6$",
+   "$\\ln 12$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{3x+5}{(x+1)(x+2)}=\\dfrac{2}{x+1}+\\dfrac{1}{x+2}$.\\n$\\int_0^1\\left(\\dfrac{2}{x+1}+\\dfrac{1}{x+2}\\right)dx=2\\ln 2+\\ln\\dfrac{3}{2}=\\ln 6$.",
+  "distractor_notes": "A: keeps only the second logarithmic contribution; B: drops the coefficient $2$; D: incorrectly adds the logarithms without accounting for their coefficients."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

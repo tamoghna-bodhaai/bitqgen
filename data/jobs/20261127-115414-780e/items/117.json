@@ -1,0 +1,68 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Inverse of a function",
+  "archetype": "property check",
+  "brief": "Determine whether a given piecewise-defined or rational function is one-one/onto, or check reflexivity/symmetry/transitivity of a relation on a small set.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:119",
+   "2024s1:121",
+   "2026s2:91"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let f: R - {1} -> R be defined by f(x) = (2x + 1)/(x - 1). Then f is",
+ "options": [
+  "one-one and onto",
+  "one-one but not onto",
+  "onto but not one-one",
+  "neither one-one nor onto"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "If f(a)=f(b), cross-multiplication gives 3a=3b, so f is one-one. The value 2 is never attained, so f is not onto ℝ.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "For y in R, y = (2x + 1)/(x - 1) gives y(x - 1) = 2x + 1, so x(y - 2) = y + 1. Thus x = (y + 1)/(y - 2), which exists for every y except y = 2. Hence the range is R - {2}, so f is not onto. Also f'(x) = -3/(x - 1)^2 < 0 for all x in the domain, so f is strictly decreasing and therefore one-one.\n\nIndependent check: If f(a)=f(b), cross-multiplication gives 3a=3b, so f is one-one. The value 2 is never attained, so f is not onto ℝ.",
+ "solution": "If $f(a)=f(b)$, then cross-multiplication gives $3a=3b$, so $a=b$ and $f$ is one-one. For $y=f(x)$, $x=\\dfrac{y+1}{y-2}$, which is undefined at $y=2$; hence the range is $\\mathbb{R}\\setminus\\{2\\}$ and $f$ is not onto.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let f: R - {1} -> R be defined by f(x) = (2x + 1)/(x - 1). Then f is",
+  "options": [
+   "one-one and onto",
+   "one-one but not onto",
+   "onto but not one-one",
+   "neither one-one nor onto"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For y in R, y = (2x + 1)/(x - 1) gives y(x - 1) = 2x + 1, so x(y - 2) = y + 1. Thus x = (y + 1)/(y - 2), which exists for every y except y = 2. Hence the range is R - {2}, so f is not onto. Also f'(x) = -3/(x - 1)^2 < 0 for all x in the domain, so f is strictly decreasing and therefore one-one.",
+  "distractor_notes": "A: assumes the range is all real numbers and misses that 2 has no preimage. C: incorrectly thinks the rational form makes it not one-one. D: sign or range error in solving for the preimage."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 127,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 127,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Definite integrals – Weierstrass substitution",
+  "archetype": "symmetry + standard integral",
+  "brief": "Definite integral of a rational/trigonometric function where a substitution (t = tan x or x → 1/x) or symmetry simplifies it dramatically.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:92",
+   "2025s1:130",
+   "2026s1:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle I=\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin^2x\\cos^2x}$.",
+ "options": [
+  "$\\dfrac{\\pi}{2\\sqrt{5}}$",
+  "$\\dfrac{\\pi}{\\sqrt{3}}$",
+  "$\\dfrac{\\pi}{\\sqrt{5}}$",
+  "$\\dfrac{2\\pi}{\\sqrt{5}}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let t=tan x. Then I=∫₀∞ (1+t²)/(t⁴+3t²+1) dt. Set u=t−1/t, so du=(1+t²)dt/t² and t⁴+3t²+1=t²(u²+5). Thus I=∫₋∞∞ du/(u²+5)=π/√5.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$t=\\tan x:\\quad I=\\displaystyle\\int_0^\\infty\\dfrac{1+t^2}{t^4+3t^2+1}\\,dt$.\nLet $J=\\displaystyle\\int_0^\\infty\\dfrac{dt}{t^4+3t^2+1}$. The substitution $t\\mapsto1/t$ gives $\\displaystyle\\int_0^\\infty\\dfrac{t^2\\,dt}{t^4+3t^2+1}=J$, so $I=2J$.\nWith $u=t-1/t$, $du=\\dfrac{1+t^2}{t^2}dt$ and $t^4+3t^2+1=t^2(u^2+5)$.\n$I=\\displaystyle\\int_{-\\infty}^{\\infty}\\dfrac{du}{u^2+5}=\\dfrac{\\pi}{\\sqrt{5}}$.\n\nIndependent check: Let t=tan x. Then I=∫₀∞ (1+t²)/(t⁴+3t²+1) dt. Set u=t−1/t, so du=(1+t²)dt/t² and t⁴+3t²+1=t²(u²+5). Thus I=∫₋∞∞ du/(u²+5)=π/√5.",
+ "solution": "Let $t=\\tan x$; then $I=\\displaystyle\\int_0^\\infty\\frac{1+t^2}{t^4+3t^2+1}\\,dt$. Set $u=t-\\frac1t$, so $du=\\frac{1+t^2}{t^2}\\,dt$ and $t^4+3t^2+1=t^2(u^2+5)$. Thus\n$$I=\\int_{-\\infty}^{\\infty}\\frac{du}{u^2+5}=\\frac{\\pi}{\\sqrt5}.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle I=\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin^2x\\cos^2x}$.",
+  "options": [
+   "$\\dfrac{\\pi}{2\\sqrt{5}}$",
+   "$\\dfrac{\\pi}{\\sqrt{5}}$",
+   "$\\dfrac{\\pi}{\\sqrt{3}}$",
+   "$\\dfrac{2\\pi}{\\sqrt{5}}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$t=\\tan x:\\quad I=\\displaystyle\\int_0^\\infty\\dfrac{1+t^2}{t^4+3t^2+1}\\,dt$.\nLet $J=\\displaystyle\\int_0^\\infty\\dfrac{dt}{t^4+3t^2+1}$. The substitution $t\\mapsto1/t$ gives $\\displaystyle\\int_0^\\infty\\dfrac{t^2\\,dt}{t^4+3t^2+1}=J$, so $I=2J$.\nWith $u=t-1/t$, $du=\\dfrac{1+t^2}{t^2}dt$ and $t^4+3t^2+1=t^2(u^2+5)$.\n$I=\\displaystyle\\int_{-\\infty}^{\\infty}\\dfrac{du}{u^2+5}=\\dfrac{\\pi}{\\sqrt{5}}$.",
+  "distractor_notes": "A: Misses the factor of two from the reciprocal symmetry.\nC: Uses an incorrect quadratic coefficient after the substitution.\nD: Introduces an extra factor of two in the final integral."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

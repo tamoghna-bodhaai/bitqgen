@@ -1,0 +1,68 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Continuity of piecewise functions",
+  "archetype": "piecewise check",
+  "brief": "Determine k so that a piecewise function is continuous, then check differentiability at the joining point.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:100",
+   "2021:107",
+   "2026s2:114"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $f(x)=\\begin{cases}\\dfrac{e^{kx}-1}{x},&x<0,\\\\1+2x,&x\\geq 0.\\end{cases}$ Choose $k$ so that $f$ is continuous at $0$, then determine its differentiability there.",
+ "options": [
+  "No value of $k$ makes $f$ continuous",
+  "$k=1$; differentiable",
+  "$k=2$; continuous but not differentiable",
+  "$k=1$; continuous but not differentiable"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "As x→0−, (e^{kx}−1)/x→k, so continuity requires k=1. Then the left derivative is 1/2, while the right derivative is 2; hence f is not differentiable at 0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(0)=1$; $\\displaystyle\\lim_{x\\to0^-}\\frac{e^{kx}-1}{x}=k$, so continuity requires $k=1$.\nFor $k=1$, $f'_-(0)=\\displaystyle\\lim_{h\\to0^-}\\frac{(e^h-1)/h-1}{h}=\\frac12$.\n$f'_+(0)=2$; hence $f$ is not differentiable at $0$.\n\nIndependent check: As x→0−, (e^{kx}−1)/x→k, so continuity requires k=1. Then the left derivative is 1/2, while the right derivative is 2; hence f is not differentiable at 0.",
+ "solution": "For continuity at $0$, $\\displaystyle\\lim_{x\\to0^-}\\frac{e^{kx}-1}{x}=k=f(0)=1$, so $k=1$.\n$$f'_-(0)=\\lim_{h\\to0^-}\\frac{(e^h-1)/h-1}{h}=\\frac12,\\qquad f'_+(0)=2.$$$\\nSince$ the one-sided derivatives are unequal, $f$ is continuous but not differentiable at $0$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Let $f(x)=\\begin{cases}\\dfrac{e^{kx}-1}{x},&x<0,\\\\1+2x,&x\\geq 0.\\end{cases}$ Choose $k$ so that $f$ is continuous at $0$, then determine its differentiability there.",
+  "options": [
+   "$k=1$; continuous but not differentiable",
+   "$k=1$; differentiable",
+   "$k=2$; continuous but not differentiable",
+   "No value of $k$ makes $f$ continuous"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$f(0)=1$; $\\displaystyle\\lim_{x\\to0^-}\\frac{e^{kx}-1}{x}=k$, so continuity requires $k=1$.\nFor $k=1$, $f'_-(0)=\\displaystyle\\lim_{h\\to0^-}\\frac{(e^h-1)/h-1}{h}=\\frac12$.\n$f'_+(0)=2$; hence $f$ is not differentiable at $0$.",
+  "distractor_notes": "B: Assumes continuity guarantees matching one-sided derivatives.\nC: Sets $k$ equal to the right-hand derivative instead of the left-hand limit.\nD: Overlooks that the left-hand limit can be matched by choosing $k=1$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

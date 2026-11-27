@@ -1,0 +1,67 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain with rational expression",
+  "archetype": "sign chart",
+  "brief": "Find the domain of a function combining a square root with a rational expression; use a sign chart and interval union.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:108",
+   "2025s2:109",
+   "2024s1:122"
+  ]
+ },
+ "status": "ok",
+ "stem": "The domain of the function $f(x) = \\sqrt{\\dfrac{3 - x}{x^2 - 2x - 8}}$ is",
+ "options": [
+  "$(-2, 3] \\cup (4, \\infty)$",
+  "$(-\\infty, -2) \\cup [3, 4)$",
+  "$(-\\infty, -2] \\cup [3, 4]$",
+  "$(-\\infty, -2) \\cup (3, 4)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Need (3-x)/((x-4)(x+2)) ≥ 0 with x ≠ -2, 4. Sign chart: positive for x < -2; negative on (-2,3); zero at x=3 (allowed); positive on (3,4); negative for x > 4. Numeric check confirms domain (-∞,-2) ∪ [3,4).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $f(x)$ to be defined over real numbers, the radicand must be non-negative and the denominator must be non-zero: $\\dfrac{3 - x}{x^2 - 2x - 8} \\ge 0$ with $x^2 - 2x - 8 \\neq 0$. Factoring the quadratic denominator gives $(x - 4)(x + 2) \\neq 0$, so $x \\neq -2$ and $x \\neq 4$. Multiply the numerator by $-1$ and reverse the inequality: $\\dfrac{x - 3}{(x - 4)(x + 2)} \\le 0$. The critical points are $-2$, $3$, and $4$. Testing the signs across the intervals: for $x \\in (-\\infty, -2)$, the ratio is negative; for $x \\in (-2, 3)$, the ratio is positive; for $x \\in [3, 4)$, the ratio is non-positive; for $x \\in (4, \\infty)$, the ratio is positive. Since the denominator cannot be zero, the endpoints $x = -2$ and $x = 4$ must be excluded, whereas $x = 3$ gives $0$ and is included. Thus, the domain is $(-\\infty, -2) \\cup [3, 4)$.\n\nIndependent check: Need (3-x)/((x-4)(x+2)) ≥ 0 with x ≠ -2, 4. Sign chart: positive for x < -2; negative on (-2,3); zero at x=3 (allowed); positive on (3,4); negative for x > 4. Numeric check confirms domain (-∞,-2) ∪ [3,4).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The domain of the function $f(x) = \\sqrt{\\dfrac{3 - x}{x^2 - 2x - 8}}$ is",
+  "options": [
+   "$(-2, 3] \\cup (4, \\infty)$",
+   "$(-\\infty, -2) \\cup [3, 4)$",
+   "$(-\\infty, -2] \\cup [3, 4]$",
+   "$(-\\infty, -2) \\cup (3, 4)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "For $f(x)$ to be defined over real numbers, the radicand must be non-negative and the denominator must be non-zero: $\\dfrac{3 - x}{x^2 - 2x - 8} \\ge 0$ with $x^2 - 2x - 8 \\neq 0$. Factoring the quadratic denominator gives $(x - 4)(x + 2) \\neq 0$, so $x \\neq -2$ and $x \\neq 4$. Multiply the numerator by $-1$ and reverse the inequality: $\\dfrac{x - 3}{(x - 4)(x + 2)} \\le 0$. The critical points are $-2$, $3$, and $4$. Testing the signs across the intervals: for $x \\in (-\\infty, -2)$, the ratio is negative; for $x \\in (-2, 3)$, the ratio is positive; for $x \\in [3, 4)$, the ratio is non-positive; for $x \\in (4, \\infty)$, the ratio is positive. Since the denominator cannot be zero, the endpoints $x = -2$ and $x = 4$ must be excluded, whereas $x = 3$ gives $0$ and is included. Thus, the domain is $(-\\infty, -2) \\cup [3, 4)$.",
+  "distractor_notes": "Option A comes from failing to reverse the inequality sign when rewriting $(3 - x)$ as $-(x - 3)$. Option C comes from incorrectly including the denominator's zeros in the domain. Option D comes from excluding $x = 3$, forgetting that the square root of zero is defined.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous DE",
+  "archetype": "y = vx substitution",
+  "brief": "Solve dy/dx = f(y/x) type homogeneous DE with a simple rational f; general solution with a log.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:92",
+   "2026s1:126",
+   "2022:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\dfrac{dy}{dx}=1+\\dfrac{y}{x}$, for $x\\ne0$, is",
+ "options": [
+  "$y=x(C-\\ln|x|)$",
+  "$y=Cx+\\ln|x|$",
+  "$y=C+x\\ln|x|$",
+  "$y=x(\\ln|x|+C)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Rewrite as y' - y/x = 1. Then (y/x)' = 1/x, so y/x = ln|x| + C and y = x(ln|x| + C).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y=vx\\Rightarrow \\dfrac{dy}{dx}=v+x\\dfrac{dv}{dx}$\\\\\n$v+x\\dfrac{dv}{dx}=1+v\\Rightarrow \\dfrac{dv}{dx}=\\dfrac{1}{x}$\\\\\n$v=\\ln|x|+C\\Rightarrow y=x(\\ln|x|+C)$\n\nIndependent check: Rewrite as y' - y/x = 1. Then (y/x)' = 1/x, so y/x = ln|x| + C and y = x(ln|x| + C).",
+ "solution": "Put $y=vx$, so $\\dfrac{dy}{dx}=v+x\\dfrac{dv}{dx}$. Then $v+x\\dfrac{dv}{dx}=1+v$, giving $\\dfrac{dv}{dx}=\\dfrac1x$.\n$$v=\\ln|x|+C\\quad\\Rightarrow\\quad y=x(\\ln|x|+C).$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of $\\dfrac{dy}{dx}=1+\\dfrac{y}{x}$, for $x\\ne0$, is",
+  "options": [
+   "$y=x(C-\\ln|x|)$",
+   "$y=Cx+\\ln|x|$",
+   "$y=C+x\\ln|x|$",
+   "$y=x(\\ln|x|+C)$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$y=vx\\Rightarrow \\dfrac{dy}{dx}=v+x\\dfrac{dv}{dx}$\\\\\n$v+x\\dfrac{dv}{dx}=1+v\\Rightarrow \\dfrac{dv}{dx}=\\dfrac{1}{x}$\\\\\n$v=\\ln|x|+C\\Rightarrow y=x(\\ln|x|+C)$",
+  "distractor_notes": "A: uses the wrong sign when integrating; B: omits the factor $x$ multiplying the logarithm; C: treats the integration constant as an additive constant in $y$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "general solution",
+  "brief": "Find the general solution of a simple trigonometric equation like sin x = cos 2x or tan 2x = cot x; state the full family of solutions.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:130",
+   "2025s1:126",
+   "2025s1:127"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\tan 2x = \\cot x$ is (where $n \\in I$):",
+ "options": [
+  "$x = \\dfrac{n\\pi}{6} + \\dfrac{\\pi}{3}$",
+  "$x = \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{3}$",
+  "$x = \\dfrac{n\\pi}{3} + \\dfrac{\\pi}{3}$",
+  "$x = \\dfrac{n\\pi}{3} + \\dfrac{\\pi}{6}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use cot x = tan(π/2 − x). Then 2x = π/2 − x + nπ, so x = π/6 + nπ/3.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The notation n ∈ I is not defined; it is presumably intended to mean n is an integer."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\tan 2x = \\cot x = \\tan\\left(\\frac{\\pi}{2} - x\\right)$\n$\\Rightarrow 2x = n\\pi + \\frac{\\pi}{2} - x$\n$\\Rightarrow 3x = n\\pi + \\frac{\\pi}{2}$\n$\\Rightarrow x = \\frac{n\\pi}{3} + \\frac{\\pi}{6}$\nCheck domain: $\\cos 2x \\neq 0$, $\\sin x \\neq 0$; the solution family never makes these zero, so it is the full valid set.\n\nIndependent check: Use cot x = tan(π/2 − x). Then 2x = π/2 − x + nπ, so x = π/6 + nπ/3.",
+ "solution": "$\\cot x=\\tan\\left(\\frac{\\pi}{2}-x\\right)$ and $\\tan A=\\tan B$ implies $A=B+n\\pi$. Thus, $$2x=\\frac{\\pi}{2}-x+n\\pi\\quad\\Rightarrow\\quad x=\\frac{n\\pi}{3}+\\frac{\\pi}{6},\\; n\\in\\mathbb Z.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The general solution of $\\tan 2x = \\cot x$ is (where $n \\in I$):",
+  "options": [
+   "$x = \\dfrac{n\\pi}{3} + \\dfrac{\\pi}{6}$",
+   "$x = \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{3}$",
+   "$x = \\dfrac{n\\pi}{3} + \\dfrac{\\pi}{3}$",
+   "$x = \\dfrac{n\\pi}{6} + \\dfrac{\\pi}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\tan 2x = \\cot x = \\tan\\left(\\frac{\\pi}{2} - x\\right)$\n$\\Rightarrow 2x = n\\pi + \\frac{\\pi}{2} - x$\n$\\Rightarrow 3x = n\\pi + \\frac{\\pi}{2}$\n$\\Rightarrow x = \\frac{n\\pi}{3} + \\frac{\\pi}{6}$\nCheck domain: $\\cos 2x \\neq 0$, $\\sin x \\neq 0$; the solution family never makes these zero, so it is the full valid set.",
+  "distractor_notes": "Common mistakes: (B) solving 2x = nπ + π/2 + x, forgetting the minus sign. (C) misplacing the coefficient of x after moving terms. (D) incorrectly dividing the coefficient of n when solving for x."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 69,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 69,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Molecular geometry",
+  "archetype": "structure identification",
+  "brief": "Ask for the molecular geometry of two-three species with lone pairs (e.g. ammonia-like and water-like); identify correct shapes from options.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:50",
+   "2025s2:47",
+   "2024s2:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "The molecular geometries of $\\text{ClF}_3$ and $\\text{SF}_4$, respectively, are",
+ "options": [
+  "trigonal planar and tetrahedral",
+  "T-shaped and seesaw",
+  "trigonal pyramidal and square planar",
+  "linear and seesaw"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "VSEPR: ClF₃ has 3 bonds and 2 lone pairs (T-shaped); SF₄ has 4 bonds and 1 lone pair (seesaw).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{ClF}_3$: AX$_3$E, T-shaped.\n$\\text{SF}_4$: AX$_4$E, seesaw.\n\nIndependent check: VSEPR: ClF₃ has 3 bonds and 2 lone pairs (T-shaped); SF₄ has 4 bonds and 1 lone pair (seesaw).",
+ "solution": "By VSEPR theory, $\\text{ClF}_3$ has 3 bond pairs and 2 lone pairs (AX$_3$E$_2$), giving a T-shaped geometry. $\\text{SF}_4$ has 4 bond pairs and 1 lone pair (AX$_4$E), giving a seesaw geometry.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The molecular geometries of $\\text{ClF}_3$ and $\\text{SF}_4$, respectively, are",
+  "options": [
+   "T-shaped and seesaw",
+   "trigonal planar and tetrahedral",
+   "trigonal pyramidal and square planar",
+   "linear and seesaw"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{ClF}_3$: AX$_3$E, T-shaped.\n$\\text{SF}_4$: AX$_4$E, seesaw.",
+  "distractor_notes": "B ignores the lone pairs on the central atoms.\nC assigns geometries inconsistent with the number of bonded atoms and lone pairs.\nD incorrectly treats $\\text{ClF}_3$ as linear."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

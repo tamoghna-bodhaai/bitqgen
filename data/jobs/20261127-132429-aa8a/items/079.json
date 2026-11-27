@@ -1,0 +1,68 @@
+{
+ "qno": 79,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 79,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "venn-deduction",
+  "brief": "Two straightforward universal/affirmative statements (All A are B, All B are C) with two conclusions; ask which conclusions definitely follow, keeping it at beginner level with no negatives or possibilities.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:82",
+   "2024s2:86",
+   "2022:83"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll cedars are trees.\nAll trees are plants.\n\n**Conclusions:**\nI. All cedars are plants.\nII. All plants are cedars.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Cedars ⊆ trees and trees ⊆ plants, so cedars ⊆ plants. The statements do not imply plants ⊆ cedars.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Cedars ⊆ trees ⊆ plants, so conclusion I follows. The inclusion need not reverse; conclusion II does not follow.\n\nIndependent check: Cedars ⊆ trees and trees ⊆ plants, so cedars ⊆ plants. The statements do not imply plants ⊆ cedars.",
+ "solution": "Since cedars are trees and trees are plants, cedars are plants; hence conclusion I follows. The inclusion cannot be reversed, so conclusion II does not follow.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "**Statements:**\nAll cedars are trees.\nAll trees are plants.\n\n**Conclusions:**\nI. All cedars are plants.\nII. All plants are cedars.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Cedars ⊆ trees ⊆ plants, so conclusion I follows. The inclusion need not reverse; conclusion II does not follow.",
+  "distractor_notes": "B: Reverses the inclusion chain. C: Assumes plants must be cedars. D: Misses the direct transitive inclusion."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

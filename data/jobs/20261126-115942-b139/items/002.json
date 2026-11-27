@@ -1,0 +1,67 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Force between parallel currents",
+  "archetype": "proportionality-scaling",
+  "brief": "Two long parallel wires carrying currents in the same direction; ask how the attractive force per unit length changes when one current and the separation are both altered.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:9",
+   "2026s1:2",
+   "2025s1:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two long straight parallel wires carrying currents in the same direction attract each other with a force of $6\\times10^{-5}$ N per metre length. The current in one wire is doubled and the separation between the wires is made three times. The new force per unit length is",
+ "options": [
+  "$1.33\\times10^{-5}$ N m$^{-1}$",
+  "$4\\times10^{-5}$ N m$^{-1}$",
+  "$9\\times10^{-5}$ N m$^{-1}$",
+  "$3.6\\times10^{-4}$ N m$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "The force per unit length is given by F/L = (μ₀ I₁ I₂) / (2π d). Here, I₁ is doubled and d is tripled, so the force per unit length becomes (2/3) of the initial value. Thus, (F/L)' = (2/3) * (6 × 10⁻⁵ N m⁻¹) = 4 × 10⁻⁵ N m⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The force per unit length between the wires is $\\dfrac{F}{L}=\\dfrac{\\mu_0 I_1 I_2}{2\\pi d}$, so $\\dfrac{F}{L}\\propto \\dfrac{I_1 I_2}{d}$.\n\nWith $I_1\\to 2I_1$ and $d\\to 3d$:\n$$\\frac{F'}{F}=\\frac{2}{3}$$\n$$F'=\\frac{2}{3}\\times 6\\times10^{-5}=4\\times10^{-5}\\ \\text{N m}^{-1}$$\n\nIndependent check: The force per unit length is given by F/L = (μ₀ I₁ I₂) / (2π d). Here, I₁ is doubled and d is tripled, so the force per unit length becomes (2/3) of the initial value. Thus, (F/L)' = (2/3) * (6 × 10⁻⁵ N m⁻¹) = 4 × 10⁻⁵ N m⁻¹.",
+ "solution": "Force per unit length between parallel currents: $$\\frac{F}{L}=\\frac{\\mu_0 I_1 I_2}{2\\pi d}\\propto\\frac{I_1 I_2}{d}$$\nWith $I_1\\to 2I_1$ and $d\\to 3d$: $$\\frac{F'}{F}=\\frac{2}{3}$$\n$$F'=\\frac{2}{3}\\times 6\\times10^{-5}=4\\times10^{-5}\\ \\text{N m}^{-1}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Two long straight parallel wires carrying currents in the same direction attract each other with a force of $6\\times10^{-5}$ N per metre length. The current in one wire is doubled and the separation between the wires is made three times. The new force per unit length is",
+  "options": [
+   "$1.33\\times10^{-5}$ N m$^{-1}$",
+   "$4\\times10^{-5}$ N m$^{-1}$",
+   "$9\\times10^{-5}$ N m$^{-1}$",
+   "$3.6\\times10^{-4}$ N m$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "The force per unit length between the wires is $\\dfrac{F}{L}=\\dfrac{\\mu_0 I_1 I_2}{2\\pi d}$, so $\\dfrac{F}{L}\\propto \\dfrac{I_1 I_2}{d}$.\n\nWith $I_1\\to 2I_1$ and $d\\to 3d$:\n$$\\frac{F'}{F}=\\frac{2}{3}$$\n$$F'=\\frac{2}{3}\\times 6\\times10^{-5}=4\\times10^{-5}\\ \\text{N m}^{-1}$$",
+  "distractor_notes": "A: takes the force as $\\propto 1/d^2$, giving $F\\times\\dfrac{2}{9}=1.33\\times10^{-5}$ N m$^{-1}$.\nC: uses the reciprocal ratio $\\dfrac{3}{2}$, giving $9\\times10^{-5}$ N m$^{-1}$.\nD: takes the force as $\\propto d$, giving $F\\times 6=3.6\\times10^{-4}$ N m$^{-1}$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

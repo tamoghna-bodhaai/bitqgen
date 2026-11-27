@@ -1,0 +1,68 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Gravitational potential energy",
+  "archetype": "energy conservation",
+  "brief": "Projectile launched upward; find escape-speed fraction or speed at a given height using energy conservation with GMm/r form.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:5",
+   "2023s1:23",
+   "2021:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle is projected vertically upward from the surface of the Earth with a speed equal to half of the escape speed. The maximum height attained by the particle above the Earth's surface is (radius of the Earth = R)",
+ "options": [
+  "R/4",
+  "2R/3",
+  "R/2",
+  "R/3"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By energy conservation, \\(\\frac{v_0^2}{2}-\\frac{GM}{R}=-\\frac{GM}{r_{\\max}}\\), where \\(v_0=\\frac12\\sqrt{2GM/R}\\). Thus \\(r_{\\max}=4R/3\\), so the height is \\(R/3\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Escape speed v_e = sqrt(2GM/R). Initial speed u = v_e/2 = sqrt(GM/(2R)). By energy conservation: (1/2)mu^2 - GMm/R = -GMm/(R+h). Substitute u^2 = GM/(2R): GMm/(4R) - GMm/R = -GMm/(R+h). This gives -3/(4R) = -1/(R+h), so R+h = 4R/3 and h = R/3.\n\nIndependent check: By energy conservation, \\(\\frac{v_0^2}{2}-\\frac{GM}{R}=-\\frac{GM}{r_{\\max}}\\), where \\(v_0=\\frac12\\sqrt{2GM/R}\\). Thus \\(r_{\\max}=4R/3\\), so the height is \\(R/3\\).",
+ "solution": "Using conservation of mechanical energy, with $v_e=\\sqrt{2GM/R}$ and $u=v_e/2$:\n$$\\frac12mu^2-\\frac{GMm}{R}=-\\frac{GMm}{R+h},\\qquad u^2=\\frac{GM}{2R}$$\nThus $R+h=4R/3$, giving $h=R/3$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle is projected vertically upward from the surface of the Earth with a speed equal to half of the escape speed. The maximum height attained by the particle above the Earth's surface is (radius of the Earth = R)",
+  "options": [
+   "R/4",
+   "R/3",
+   "R/2",
+   "2R/3"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Escape speed v_e = sqrt(2GM/R). Initial speed u = v_e/2 = sqrt(GM/(2R)). By energy conservation: (1/2)mu^2 - GMm/R = -GMm/(R+h). Substitute u^2 = GM/(2R): GMm/(4R) - GMm/R = -GMm/(R+h). This gives -3/(4R) = -1/(R+h), so R+h = 4R/3 and h = R/3.",
+  "distractor_notes": "R/4: error in initial kinetic energy calculation; R/2: error in energy conservation or forgetting the total mechanical energy includes both kinetic and initial potential terms; 2R/3: sign error while simplifying the energy equation."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

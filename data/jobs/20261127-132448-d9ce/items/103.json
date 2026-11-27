@@ -1,0 +1,68 @@
+{
+ "qno": 103,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 103,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "relation chain",
+  "brief": "Pointing-introduction style chain ('He is the son of my grandfather's only son'); determine the exact relationship between speaker and person.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:84",
+   "2026s2:76",
+   "2026s1:80"
+  ]
+ },
+ "status": "ok",
+ "stem": "Pointing to a boy, Nita said, “He is the son of my father’s only son.” How is the boy related to Nita?",
+ "options": [
+  "Nephew",
+  "Brother",
+  "Cousin",
+  "Uncle"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Nita’s father’s only son is her brother; his son is her nephew.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Nita’s father’s only son is her brother. The boy is her brother’s son, hence her nephew. A is the boy’s father; C and D do not fit the stated relation.\n\nIndependent check: Nita’s father’s only son is her brother; his son is her nephew.",
+ "solution": "Nita’s father’s only son is her brother. The boy is her brother’s son, so he is Nita’s nephew.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Pointing to a boy, Nita said, “He is the son of my father’s only son.” How is the boy related to Nita?",
+  "options": [
+   "Brother",
+   "Nephew",
+   "Cousin",
+   "Uncle"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Nita’s father’s only son is her brother. The boy is her brother’s son, hence her nephew. A is the boy’s father; C and D do not fit the stated relation.",
+  "distractor_notes": "A: Confuses the boy with his father. C: Assumes a different parentage. D: Reverses the generation."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

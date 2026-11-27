@@ -1,0 +1,68 @@
+{
+ "qno": 97,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 97,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism with possibility",
+  "brief": "Two/three statements about doctors, artists and painters; ask which conclusions definitely/sossibly follow, including a possibility statement.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:77",
+   "2026s2:72",
+   "2024s1:78"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nSome doctors are artists.\nAll painters are artists.\n\n**Conclusions:**\nI. Some doctors are artists.\nII. Some doctors being painters is a possibility.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "I restates the given statement, so it follows. Nothing rules out doctors also being painters; that overlap is compatible with all painters being artists, so II is possible.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I repeats the first statement, so it follows. Painters are artists, and the statements do not exclude doctors from being painters; the groups can overlap. Thus II is possible too.\n\nIndependent check: I restates the given statement, so it follows. Nothing rules out doctors also being painters; that overlap is compatible with all painters being artists, so II is possible.",
+ "solution": "Conclusion I restates the first statement, so it follows. Since all painters are artists and no statement excludes doctors from being painters, some doctors being painters is possible; hence II also follows.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statements:**\nSome doctors are artists.\nAll painters are artists.\n\n**Conclusions:**\nI. Some doctors are artists.\nII. Some doctors being painters is a possibility.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "I repeats the first statement, so it follows. Painters are artists, and the statements do not exclude doctors from being painters; the groups can overlap. Thus II is possible too.",
+  "distractor_notes": "A: overlooks the permitted doctor–painter overlap. B: overlooks the directly stated existence of doctor-artists. D: overlooks both the stated fact and the permitted overlap."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

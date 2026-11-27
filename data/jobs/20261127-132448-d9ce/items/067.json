@@ -1,0 +1,68 @@
+{
+ "qno": 67,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 67,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Bond enthalpy",
+  "archetype": "Hess's law bond-energy calc",
+  "brief": "Given average bond enthalpies of all bonds broken and formed, compute the enthalpy of reaction for a simple gas-phase reaction.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:51",
+   "2026s1:36",
+   "2026s2:60"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $\\text{H}_2(g)+\\text{Cl}_2(g)\\rightarrow 2\\text{HCl}(g)$, the mean bond enthalpies are H–H $436$, Cl–Cl $243$ and H–Cl $431\\ \\text{kJ mol}^{-1}$. Find $\\Delta H$.",
+ "options": [
+  "$-183\\ \\text{kJ mol}^{-1}$",
+  "$-426\\ \\text{kJ mol}^{-1}$",
+  "$+183\\ \\text{kJ mol}^{-1}$",
+  "$+248\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Bonds broken: 436 + 243 = 679 kJ mol⁻¹. Bonds formed: 2(431) = 862 kJ mol⁻¹. Thus ΔH = 679 − 862 = −183 kJ mol⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta H=\\sum D(\\text{broken})-\\sum D(\\text{formed})$\n$=(436+243)-2(431)=-183\\ \\text{kJ mol}^{-1}$\n\nIndependent check: Bonds broken: 436 + 243 = 679 kJ mol⁻¹. Bonds formed: 2(431) = 862 kJ mol⁻¹. Thus ΔH = 679 − 862 = −183 kJ mol⁻¹.",
+ "solution": "Using $\u000024H=\\sum D(\\text{bonds broken})-\\sum D(\\text{bonds formed})$,\n$$\\Delta H=(436+243)-2(431)=-183\\ \\text{kJ mol}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $\\text{H}_2(g)+\\text{Cl}_2(g)\\rightarrow 2\\text{HCl}(g)$, the mean bond enthalpies are H–H $436$, Cl–Cl $243$ and H–Cl $431\\ \\text{kJ mol}^{-1}$. Find $\\Delta H$.",
+  "options": [
+   "$-426\\ \\text{kJ mol}^{-1}$",
+   "$-183\\ \\text{kJ mol}^{-1}$",
+   "$+183\\ \\text{kJ mol}^{-1}$",
+   "$+248\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\Delta H=\\sum D(\\text{broken})-\\sum D(\\text{formed})$\n$=(436+243)-2(431)=-183\\ \\text{kJ mol}^{-1}$",
+  "distractor_notes": "A omits the Cl–Cl bond among bonds broken.\nC reverses the sign of the enthalpy change.\nD counts formation of only one H–Cl bond."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

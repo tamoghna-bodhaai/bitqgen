@@ -1,0 +1,68 @@
+{
+ "qno": 40,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 40,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Manipulating K",
+  "archetype": "reverse and scale",
+  "brief": "Given K for a reaction, ask K for the reversed reaction and/or multiplied stoichiometry; pure manipulation, no numbers.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:54",
+   "2025s2:56",
+   "2022:40"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the reaction N2(g) + 3 H2(g) <=> 2 NH3(g), the equilibrium constant is K. The equilibrium constant for the reaction NH3(g) <=> 1/2 N2(g) + 3/2 H2(g) is",
+ "options": [
+  "sqrt(K)",
+  "1/sqrt(K)",
+  "1/K",
+  "K^2"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The target reaction is the reverse of the given reaction, scaled by 1/2. Reversing gives 1/K; scaling by 1/2 gives (1/K)^(1/2) = 1/√K.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Original reaction: K = [NH3]^2 / ([N2][H2]^3). Reversing gives K_rev = 1/K = [N2][H2]^3 / [NH3]^2. Dividing coefficients by 2 gives K_target = (K_rev)^(1/2) = (1/K)^(1/2) = 1/sqrt(K).\n\nIndependent check: The target reaction is the reverse of the given reaction, scaled by 1/2. Reversing gives 1/K; scaling by 1/2 gives (1/K)^(1/2) = 1/√K.",
+ "solution": "Reversing a reaction changes its equilibrium constant to $1/K$, and multiplying all coefficients by $1/2$ raises it to the power $1/2$.\n$$K_{\\text{target}}=\\left(\\frac{1}{K}\\right)^{1/2}=\\frac{1}{\\sqrt K}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the reaction N2(g) + 3 H2(g) <=> 2 NH3(g), the equilibrium constant is K. The equilibrium constant for the reaction NH3(g) <=> 1/2 N2(g) + 3/2 H2(g) is",
+  "options": [
+   "sqrt(K)",
+   "1/sqrt(K)",
+   "1/K",
+   "K^2"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Original reaction: K = [NH3]^2 / ([N2][H2]^3). Reversing gives K_rev = 1/K = [N2][H2]^3 / [NH3]^2. Dividing coefficients by 2 gives K_target = (K_rev)^(1/2) = (1/K)^(1/2) = 1/sqrt(K).",
+  "distractor_notes": "sqrt(K): applied the half factor but forgot to reverse the reaction; 1/K: reversed the reaction but forgot to halve the coefficients; K^2: treated the half reaction as if coefficients were doubled, without reversing."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

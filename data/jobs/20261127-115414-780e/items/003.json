@@ -1,0 +1,68 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gates",
+  "archetype": "truth-table",
+  "brief": "Two gate circuit (e.g. NAND with inputs tied); build truth table and identify the equivalent single gate.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:28",
+   "2024s1:25",
+   "2024s2:22"
+  ]
+ },
+ "status": "ok",
+ "stem": "A logic circuit consists of an AND gate and a NOR gate. Inputs A and B are fed to the AND gate. The output of the AND gate is connected to both inputs of the NOR gate. The final output Y is equivalent to which single gate?",
+ "options": [
+  "NAND",
+  "OR",
+  "AND",
+  "NOR"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let X = A AND B. The NOR gate receives X on both inputs, so Y = NOT(X OR X) = NOT(A AND B), which is NAND.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "First AND: Y1 = A AND B. Second NOR with tied inputs: Y = NOT(Y1 OR Y1) = NOT Y1 = NOT(A AND B) = A NAND B.\n\nIndependent check: Let X = A AND B. The NOR gate receives X on both inputs, so Y = NOT(X OR X) = NOT(A AND B), which is NAND.",
+ "solution": "The AND gate gives $X=A\\cdot B$. A NOR gate with both inputs tied to $X$ gives\n$$Y=\\overline{X+X}=\\overline{A\\cdot B}.$$\nThus, the equivalent gate is NAND.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A logic circuit consists of an AND gate and a NOR gate. Inputs A and B are fed to the AND gate. The output of the AND gate is connected to both inputs of the NOR gate. The final output Y is equivalent to which single gate?",
+  "options": [
+   "AND",
+   "OR",
+   "NAND",
+   "NOR"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "First AND: Y1 = A AND B. Second NOR with tied inputs: Y = NOT(Y1 OR Y1) = NOT Y1 = NOT(A AND B) = A NAND B.",
+  "distractor_notes": "A: Forgetting NOT of Y1 (OR instead of NOR). B: Misapplying De Morgan and thinking Y1=A+B. D: Output of AND directly to NOR tied inputs gives Y=not Y1, which is NAND, not NOR."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

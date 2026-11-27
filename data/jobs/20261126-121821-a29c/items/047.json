@@ -1,0 +1,78 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "R/S configuration in Fischer projection",
+  "archetype": "CIP assignment",
+  "brief": "Show a Fischer projection of a molecule with four different groups (figure) and ask for the R/S configuration at the stereocentre, with one distractor being a 180° rotation of the projection.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:55",
+   "2025s2:57",
+   "2025s2:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "The absolute configuration of the stereocentre in the given molecule and that obtained after rotating its Fischer projection by $180^\\circ$ in the plane of the paper are, respectively:",
+ "options": [
+  "$(R)$ and $(R)$",
+  "$(R)$ and $(S)$",
+  "$(S)$ and $(R)$",
+  "$(S)$ and $(S)$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q047_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Molecule is 2-chloropropanoic acid: stereocentre bears Cl, COOH, CH3 (unlabelled bold wedge = methyl, toward viewer) and implicit H (away from viewer). Priorities Cl > COOH > CH3 > H. With H pointing back, Cl (lower right) → COOH (left) → CH3 (upper right) traces clockwise ⇒ R. Rotating a Fischer projection by 180° in the plane of the paper is an allowed operation that preserves configuration ⇒ still R. Hence (R) and (R).",
+   "answer": "A",
+   "confidence": 0.9,
+   "multiple_correct": false,
+   "issues": [
+    "The figure is a wedge–dash (flying-wedge) structure, not a Fischer projection, while the question speaks of 'its Fischer projection' — the student must first convert it; wording is slightly loose but does not change the answer.",
+    "The bold wedge terminates without a label (implicit CH3) and the fourth substituent H is implicit; readable only via standard skeletal conventions."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. **Assign priorities using Cahn-Ingold-Prelog (CIP) rules** based on atomic numbers attached to the stereocentre:\n- $-\\text{Cl}$ (atomic number $17$) $\\rightarrow$ Priority 1\n- $-\\text{COOH}$ (carbon bonded to $(\\text{O}, \\text{O}, \\text{O})$) $\\rightarrow$ Priority 2\n- $-\\text{CH}_3$ (carbon bonded to $(\\text{H}, \\text{H}, \\text{H})$) $\\rightarrow$ Priority 3\n- $-\\text{H}$ (atomic number $1$) $\\rightarrow$ Priority 4\n\nPriority sequence: $-\\text{Cl} > -\\text{COOH} > -\\text{CH}_3 > -\\text{H}$ ($1 > 2 > 3 > 4$).\n\n2. **Determine configuration of the given projection**:\n- Priority 1 ($-\\text{Cl}$) is on the right.\n- Priority 2 ($-\\text{COOH}$) is at the top.\n- Priority 3 ($-\\text{CH}_3$) is at the bottom.\n- Tracing $1 \\rightarrow 2 \\rightarrow 3$ gives an anticlockwise (counter-clockwise) path.\n- The lowest priority group, $-\\text{H}$ (Priority 4), lies on a horizontal bond. According to the Fischer projection rule, an apparent anticlockwise path reverses to give the $(R)$ configuration.\n\n3. **Effect of $180^\\circ$ in-plane rotation**:\n- Rotating a Fischer projection by $180^\\circ$ in the plane of the paper is equivalent to two pairwise interchanges (top $\\leftrightarrow$ bottom and left $\\leftrightarrow$ right).\n- An even number of interchanges preserves the absolute configuration.\n- Thus, the rotated projection remains $(R)$.\n\nBoth configurations are $(R)$ and $(R)$.\n\nIndependent check: Molecule is 2-chloropropanoic acid: stereocentre bears Cl, COOH, CH3 (unlabelled bold wedge = methyl, toward viewer) and implicit H (away from viewer). Priorities Cl > COOH > CH3 > H. With H pointing back, Cl (lower right) → COOH (left) → CH3 (upper right) traces clockwise ⇒ R. Rotating a Fischer projection by 180° in the plane of the paper is an allowed operation that preserves configuration ⇒ still R. Hence (R) and (R).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The absolute configuration of the stereocentre in the given molecule and that obtained after rotating its Fischer projection by $180^\\circ$ in the plane of the paper are, respectively:",
+  "options": [
+   "$(R)$ and $(R)$",
+   "$(R)$ and $(S)$",
+   "$(S)$ and $(R)$",
+   "$(S)$ and $(S)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "1. **Assign priorities using Cahn-Ingold-Prelog (CIP) rules** based on atomic numbers attached to the stereocentre:\n- $-\\text{Cl}$ (atomic number $17$) $\\rightarrow$ Priority 1\n- $-\\text{COOH}$ (carbon bonded to $(\\text{O}, \\text{O}, \\text{O})$) $\\rightarrow$ Priority 2\n- $-\\text{CH}_3$ (carbon bonded to $(\\text{H}, \\text{H}, \\text{H})$) $\\rightarrow$ Priority 3\n- $-\\text{H}$ (atomic number $1$) $\\rightarrow$ Priority 4\n\nPriority sequence: $-\\text{Cl} > -\\text{COOH} > -\\text{CH}_3 > -\\text{H}$ ($1 > 2 > 3 > 4$).\n\n2. **Determine configuration of the given projection**:\n- Priority 1 ($-\\text{Cl}$) is on the right.\n- Priority 2 ($-\\text{COOH}$) is at the top.\n- Priority 3 ($-\\text{CH}_3$) is at the bottom.\n- Tracing $1 \\rightarrow 2 \\rightarrow 3$ gives an anticlockwise (counter-clockwise) path.\n- The lowest priority group, $-\\text{H}$ (Priority 4), lies on a horizontal bond. According to the Fischer projection rule, an apparent anticlockwise path reverses to give the $(R)$ configuration.\n\n3. **Effect of $180^\\circ$ in-plane rotation**:\n- Rotating a Fischer projection by $180^\\circ$ in the plane of the paper is equivalent to two pairwise interchanges (top $\\leftrightarrow$ bottom and left $\\leftrightarrow$ right).\n- An even number of interchanges preserves the absolute configuration.\n- Thus, the rotated projection remains $(R)$.\n\nBoth configurations are $(R)$ and $(R)$.",
+  "distractor_notes": "B: Encodes the misconception that a 180° in-plane rotation inverts the stereocentre to (S).\nC: Encodes two errors: failing to invert the horizontal-H rule on the original projection (giving S) and then assuming a 180° rotation flips it to R.\nD: Encodes forgetting to reverse the apparent direction when the lowest-priority group (H) is on a horizontal bond, reading anticlockwise as S directly.",
+  "figure": {
+   "kind": "chem",
+   "description": "A standard Fischer projection of a chiral molecule with a central cross representing the stereocentre. The four substituents attached to the central carbon are: top vertical position is -COOH, bottom vertical position is -CH3, left horizontal position is -H, and right horizontal position is -Cl.",
+   "smiles": "C[C@@H](Cl)C(=O)O"
+  },
+  "difficulty_estimate": 1
+ }
+}

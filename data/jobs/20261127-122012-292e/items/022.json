@@ -1,0 +1,68 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Calorimetry with phase change",
+  "archetype": "ratio of two situations",
+  "brief": "Ice at 0°C is mixed with water/steam; ask for the final equilibrium temperature accounting for latent heat (calorimetry with phase change).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:11",
+   "2021:18",
+   "2024s1:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "50 g of ice at 0 deg C is mixed with 10 g of steam at 100 deg C in a thermally insulated container. Taking specific heat of water as 1 cal g^-1 deg C^-1, latent heat of fusion of ice as 80 cal g^-1 and latent heat of vaporisation of water as 540 cal g^-1, the final equilibrium temperature of the mixture is",
+ "options": [
+  "40 deg C",
+  "0 deg C",
+  "80 deg C",
+  "100 deg C"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Steam releases 5400 cal on condensation. Heat balance: 5400 + 10(100 − T) = 50×80 + 50T, giving T = 40°C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Heat lost by steam: 10*540 + 10*1*(100 - T). Heat gained by ice: 50*80 + 50*1*T. Equate: 6400 - 10T = 4000 + 50T, so 60T = 2400 and T = 40 deg C.\n\nIndependent check: Steam releases 5400 cal on condensation. Heat balance: 5400 + 10(100 − T) = 50×80 + 50T, giving T = 40°C.",
+ "solution": "Heat lost by steam = heat gained by ice:\n$$10(540)+10(100-T)=50(80)+50T$$\nThus, $6400-10T=4000+50T$, giving $T=40^\\circ\\mathrm{C}$. The steam fully condenses, so this is the final equilibrium temperature.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "50 g of ice at 0 deg C is mixed with 10 g of steam at 100 deg C in a thermally insulated container. Taking specific heat of water as 1 cal g^-1 deg C^-1, latent heat of fusion of ice as 80 cal g^-1 and latent heat of vaporisation of water as 540 cal g^-1, the final equilibrium temperature of the mixture is",
+  "options": [
+   "0 deg C",
+   "40 deg C",
+   "80 deg C",
+   "100 deg C"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Heat lost by steam: 10*540 + 10*1*(100 - T). Heat gained by ice: 50*80 + 50*1*T. Equate: 6400 - 10T = 4000 + 50T, so 60T = 2400 and T = 40 deg C.",
+  "distractor_notes": "0 deg C assumes only partial melting of ice; 80 deg C forgets the cooling of condensed steam; 100 deg C accounts only for latent heats without sensible heat."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

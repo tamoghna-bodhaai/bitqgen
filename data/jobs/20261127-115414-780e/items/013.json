@@ -1,0 +1,68 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "rms speed vs molar mass",
+  "archetype": "proportionality-scaling",
+  "brief": "Compare rms speeds of two gases (e.g. H₂ vs O₂) at same temperature using v ∝ 1/√M; pick the ratio.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:3",
+   "2026s2:14",
+   "2021:38"
+  ]
+ },
+ "status": "ok",
+ "stem": "At the same temperature, the ratio of the rms speed of hydrogen ($\\text{H}_2$) to that of oxygen ($\\text{O}_2$) is:",
+ "options": [
+  "$4$",
+  "$16$",
+  "$2$",
+  "$8$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At the same temperature, rms speed is proportional to the inverse square root of molar mass. The ratio is √(32/2) = 4.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_\\text{rms} \\propto \\dfrac{1}{\\sqrt{M}}$.\n\n$M(\\text{H}_2) = 2$, $M(\\text{O}_2) = 32$.\n\n$\\dfrac{v_{\\text{H}_2}}{v_{\\text{O}_2}} = \\sqrt{\\dfrac{M_{\\text{O}_2}}{M_{\\text{H}_2}}} = \\sqrt{\\dfrac{32}{2}} = \\sqrt{16} = 4$.\n\nIndependent check: At the same temperature, rms speed is proportional to the inverse square root of molar mass. The ratio is √(32/2) = 4.",
+ "solution": "At the same temperature, $v_{\\rm rms}\\propto 1/\\sqrt{M}$. Hence, using $M_{\\text{H}_2}=2$ and $M_{\\text{O}_2}=32$,\n$$\\frac{v_{\\text{H}_2}}{v_{\\text{O}_2}}=\\sqrt{\\frac{32}{2}}=4.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "At the same temperature, the ratio of the rms speed of hydrogen ($\\text{H}_2$) to that of oxygen ($\\text{O}_2$) is:",
+  "options": [
+   "$4$",
+   "$16$",
+   "$2$",
+   "$8$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$v_\\text{rms} \\propto \\dfrac{1}{\\sqrt{M}}$.\n\n$M(\\text{H}_2) = 2$, $M(\\text{O}_2) = 32$.\n\n$\\dfrac{v_{\\text{H}_2}}{v_{\\text{O}_2}} = \\sqrt{\\dfrac{M_{\\text{O}_2}}{M_{\\text{H}_2}}} = \\sqrt{\\dfrac{32}{2}} = \\sqrt{16} = 4$.",
+  "distractor_notes": "16: using mass ratio instead of sqrt; 2: forgetting square root; 8: sqrt of 64 maybe"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

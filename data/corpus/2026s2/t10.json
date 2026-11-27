@@ -1,0 +1,158 @@
+[
+ {
+  "qno": 121,
+  "stem": "$\\vec a, \\vec b, \\vec c$ are the position vectors of three points A, B, C respectively. If $\\angle ABC = \\frac{\\pi}{2}$, $\\vec{AB} = \\hat i + 4\\hat j + (4 - \\lambda)\\hat k$, $\\vec{AC} = (\\lambda - 1)\\hat i + 6\\hat j + (2 - \\lambda)\\hat k$, then $\\lambda =$",
+  "options": [
+   "$0$",
+   "$-\\frac13$",
+   "$-\\frac34$",
+   "$\\frac23$"
+  ],
+  "solution": "$\\vec{BC} = \\vec{AC} - \\vec{AB} = (\\lambda - 2)\\hat i + 2\\hat j - 2\\hat k$. $\\vec{AB}\\cdot\\vec{BC} = 0$:\n\n$(\\lambda - 2) + 8 - 2(4 - \\lambda) = 0 \\Rightarrow 3\\lambda = 2 \\Rightarrow \\lambda = \\dfrac23$",
+  "chapter": "Vector Algebra",
+  "subtopic": "Perpendicularity",
+  "archetype": "dot product = 0",
+  "difficulty": 2
+ },
+ {
+  "qno": 122,
+  "stem": "$\\begin{vmatrix} -a^2 & ab & ac \\\\ ab & -b^2 & bc \\\\ ac & bc & -c^2 \\end{vmatrix} =$",
+  "options": [
+   "$a^2b^2c^2$",
+   "$2a^2b^2c^2$",
+   "$3a^2b^2c^2$",
+   "$4a^2b^2c^2$"
+  ],
+  "solution": "Taking $a, b, c$ out of rows and columns: $(abc)^2\\begin{vmatrix} -1 & 1 & 1 \\\\ 1 & -1 & 1 \\\\ 1 & 1 & -1 \\end{vmatrix} = (abc)^2[0 + 2 + 2] = 4a^2b^2c^2$",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Determinant properties",
+  "archetype": "factor out and evaluate",
+  "difficulty": 2
+ },
+ {
+  "qno": 123,
+  "stem": "If $A = \\begin{bmatrix} 2 & -3 & 1 \\\\ -3 & 1 & -2 \\\\ 1 & -2 & 3 \\end{bmatrix}$, then $\\text{Adj}(A) =$",
+  "options": [
+   "$\\begin{bmatrix} 1 & -7 & 5 \\\\ -7 & 5 & -1 \\\\ 5 & -1 & 7 \\end{bmatrix}$",
+   "$\\begin{bmatrix} 1 & 7 & -5 \\\\ 7 & 5 & 1 \\\\ -5 & 1 & 7 \\end{bmatrix}$",
+   "$\\begin{bmatrix} -1 & 7 & 5 \\\\ 7 & 5 & 1 \\\\ 5 & 1 & -7 \\end{bmatrix}$",
+   "$\\begin{bmatrix} -1 & 7 & -5 \\\\ 7 & -5 & 1 \\\\ -5 & 1 & -7 \\end{bmatrix}$"
+  ],
+  "solution": "Computing cofactors: $\\text{Adj}(A) = \\begin{bmatrix} -1 & 7 & 5 \\\\ 7 & 5 & 1 \\\\ 5 & 1 & -7 \\end{bmatrix}$",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Adjoint",
+  "archetype": "cofactor computation",
+  "difficulty": 2
+ },
+ {
+  "qno": 124,
+  "stem": "If a metallic circular plate of radius 50 cm is heated so that its radius increases at the rate of 1 mm per hour, then the rate at which the area of the plate increases (in cm$^2$/hour) is",
+  "options": [
+   "$5\\pi$",
+   "$10\\pi$",
+   "$100\\pi$",
+   "$50\\pi$"
+  ],
+  "solution": "$\\dfrac{dA}{dt} = 2\\pi r\\dfrac{dr}{dt} = 2\\pi\\cdot50\\cdot\\dfrac{1}{10} = 10\\pi$ cm$^2$/hour",
+  "chapter": "Differential Calculus",
+  "subtopic": "Rate of change",
+  "archetype": "related rates",
+  "difficulty": 1
+ },
+ {
+  "qno": 125,
+  "stem": "If $f(x) = x^3 + bx^2 + cx + d$ and $0 < b^2 < c$, then in $(-\\infty, \\infty)$,",
+  "options": [
+   "$f(x)$ is a strictly increasing function",
+   "$f(x)$ has local maxima",
+   "$f(x)$ is a strictly decreasing function",
+   "$f(x)$ is bounded"
+  ],
+  "solution": "$f'(x) = 3x^2 + 2bx + c$, discriminant $= 4(b^2 - 3c) < 0$, so $f'(x) > 0$ for all $x$: strictly increasing.",
+  "chapter": "Differential Calculus",
+  "subtopic": "Monotonicity",
+  "archetype": "discriminant of derivative",
+  "difficulty": 2
+ },
+ {
+  "qno": 126,
+  "stem": "The area bounded by curves $(x - 1)^2 + y^2 = 1$ and $x^2 + y^2 = 1$ is",
+  "options": [
+   "$\\left(\\frac{2\\pi}{3} - \\frac{\\sqrt3}{2}\\right)$",
+   "$\\frac{2\\pi}{3}$",
+   "$\\frac{\\sqrt3}{2}$",
+   "$\\frac{2\\pi}{3} + \\frac{\\sqrt3}{2}$"
+  ],
+  "solution": "The circles meet at $\\left(\\frac12, \\pm\\frac{\\sqrt3}{2}\\right)$.\n\n$$A = 2\\left[\\int_0^{1/2}\\sqrt{1 - (x-1)^2}\\,dx + \\int_{1/2}^1\\sqrt{1 - x^2}\\,dx\\right] = \\frac{2\\pi}{3} - \\frac{\\sqrt3}{2}$$",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between circles",
+  "archetype": "symmetric area",
+  "difficulty": 3,
+  "figure_kind": "plot"
+ },
+ {
+  "qno": 127,
+  "stem": "The differential equation corresponding to the family of curves $y = ae^{2x} + bx^2$, where $a$ and $b$ are parameters, is $(x - x^2)\\dfrac{d^2y}{dx^2} + y(2 - 4x) = \\_\\_\\_\\_$",
+  "options": [
+   "$(1 - 2x^2)\\frac{dy}{dx}$",
+   "$(2 - 4x^2)\\frac{dy}{dx}$",
+   "$(1 - 2x)\\frac{dy}{dx}$",
+   "$(2 - 4x)\\frac{dy}{dx}$"
+  ],
+  "solution": "$y' = 2ae^{2x} + 2bx$, $y'' - 2y' = 2b(1 - 2x)$, $2y - y' = 2bx(x - 1)$.\n\nDividing: $(x^2 - x)(y'' - 2y') = (1 - 2x)(2y - y')$, which simplifies to\n\n$(x - x^2)y'' + y(2 - 4x) = (1 - 2x^2)\\dfrac{dy}{dx}$",
+  "chapter": "Differential Equations",
+  "subtopic": "Formation of DE",
+  "archetype": "eliminate constants",
+  "difficulty": 4,
+  "notes": "Source stem is garbled; restored as a fill-in consistent with the options and solution.",
+  "exemplar_ok": false
+ },
+ {
+  "qno": 128,
+  "stem": "The general solution of the differential equation $(2xy + y^2)\\,dy = (x^2 - y^2)\\,dx$ is",
+  "options": [
+   "$x^3 - 3x^2y - y^3 = c$",
+   "$x^3 - 3x^2y + y^3 = c$",
+   "$x^3 - 3xy^2 + y^3 = c$",
+   "$x^3 - 3xy^2 - y^3 = c$"
+  ],
+  "solution": "Homogeneous; put $y = vx$: $\\dfrac{(2v + v^2)\\,dv}{1 - 3v^2 - v^3} = \\dfrac{dx}{x}$\n\n$-\\frac13\\ln(1 - 3v^2 - v^3) = \\ln x + C \\Rightarrow x^3 - 3xy^2 - y^3 = C$",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous DE",
+  "archetype": "substitution y = vx",
+  "difficulty": 3
+ },
+ {
+  "qno": 129,
+  "source_tag": "JM 2022",
+  "stem": "The sum of the absolute minimum and the absolute maximum values of the function $f(x) = |3x - x^2 + 2| - x$ in the interval $[-1, 2]$ is:",
+  "options": [
+   "$\\frac{\\sqrt{17}+3}{2}$",
+   "$\\frac{\\sqrt{17}+5}{2}$",
+   "$5$",
+   "$\\frac{9-\\sqrt{17}}{2}$"
+  ],
+  "solution": "$f(x) = x^2 - 4x - 2$ on $\\left(-1, \\frac{3-\\sqrt{17}}{2}\\right)$ and $-x^2 + 2x + 2$ on $\\left(\\frac{3-\\sqrt{17}}{2}, 2\\right)$.\n\n$f(-1) = 3$, $f(1) = 3$, $f(2) = 2$, $f\\left(\\frac{3-\\sqrt{17}}{2}\\right) = \\frac{\\sqrt{17}-3}{2}$.\n\nSum $= \\dfrac{\\sqrt{17}-3}{2} + 3 = \\dfrac{\\sqrt{17}+3}{2}$",
+  "chapter": "Differential Calculus",
+  "subtopic": "Absolute extrema with modulus",
+  "archetype": "piecewise extrema",
+  "difficulty": 4
+ },
+ {
+  "qno": 130,
+  "source_tag": "[2019 : 11 Jan Shift 1]",
+  "stem": "The area (in sq. units) of the region bounded by the curve $x^2 = 4y$ and the straight line $x = 4y - 2$ :-",
+  "options": [
+   "$\\frac54$",
+   "$\\frac98$",
+   "$\\frac34$",
+   "$\\frac78$"
+  ],
+  "solution": "$x^2 = x + 2 \\Rightarrow x = 2, -1$. $$\\int_{-1}^{2}\\left(\\frac{x+2}{4} - \\frac{x^2}{4}\\right)dx = \\frac98$$",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curve and line",
+  "archetype": "standard area",
+  "difficulty": 2,
+  "figure_kind": "plot"
+ }
+]

@@ -1,0 +1,67 @@
+{
+ "qno": 96,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 96,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Selection with constraint",
+  "archetype": "case-wise counting",
+  "brief": "Select a committee of a given size from men and women with a minimum/maximum gender constraint; count cases by composition.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:118",
+   "2026s2:96",
+   "2026s1:97"
+  ]
+ },
+ "status": "ok",
+ "stem": "A committee of $6$ members is to be formed from $7$ men and $5$ women. In how many ways can the committee be formed if it must contain at least $2$ men and at least $2$ women?",
+ "options": [
+  "$700$",
+  "$805$",
+  "$812$",
+  "$910$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Cases (men, women): (2,4): C(7,2)C(5,4)=105; (3,3): C(7,3)C(5,3)=350; (4,2): C(7,4)C(5,2)=350. Total = 105+350+350 = 805.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Let $M$ be the number of men and $W$ be the number of women in the committee.\nTotal members required = $6$.\nGiven constraints: $M \\ge 2$ and $W \\ge 2$.\nSince $M + W = 6$ and there are $7$ men and $5$ women available, the possible compositions $(M, W)$ are:\n\n1. $4$ men and $2$ women:\n$$\\text{Ways} = \\binom{7}{4} \\times \\binom{5}{2} = 35 \\times 10 = 350$$\n\n2. $3$ men and $3$ women:\n$$\\text{Ways} = \\binom{7}{3} \\times \\binom{5}{3} = 35 \\times 10 = 350$$\n\n3. $2$ men and $4$ women:\n$$\\text{Ways} = \\binom{7}{2} \\times \\binom{5}{4} = 21 \\times 5 = 105$$\n\nSumming all valid cases:\n$$\\text{Total ways} = 350 + 350 + 105 = 805$$\n\nAlternatively, by complementary counting:\nTotal ways to choose $6$ people from $12$ without restriction is $\\binom{12}{6} = 924$.\nInvalid cases:\n- $W = 0$ ($6$ men, $0$ women): $\\binom{7}{6}\\binom{5}{0} = 7$\n- $W = 1$ ($5$ men, $1$ woman): $\\binom{7}{5}\\binom{5}{1} = 21 \\times 5 = 105$\n- $M = 1$ ($1$ man, $5$ women): $\\binom{7}{1}\\binom{5}{5} = 7 \\times 1 = 7$\n- $M = 0$ ($0$ men, $6$ women): $0$ (only $5$ women available)\n$$\\text{Total valid ways} = 924 - (7 + 105 + 7) = 924 - 119 = 805$$\n\nIndependent check: Cases (men, women): (2,4): C(7,2)C(5,4)=105; (3,3): C(7,3)C(5,3)=350; (4,2): C(7,4)C(5,2)=350. Total = 105+350+350 = 805.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A committee of $6$ members is to be formed from $7$ men and $5$ women. In how many ways can the committee be formed if it must contain at least $2$ men and at least $2$ women?",
+  "options": [
+   "$700$",
+   "$805$",
+   "$812$",
+   "$910$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Let $M$ be the number of men and $W$ be the number of women in the committee.\nTotal members required = $6$.\nGiven constraints: $M \\ge 2$ and $W \\ge 2$.\nSince $M + W = 6$ and there are $7$ men and $5$ women available, the possible compositions $(M, W)$ are:\n\n1. $4$ men and $2$ women:\n$$\\text{Ways} = \\binom{7}{4} \\times \\binom{5}{2} = 35 \\times 10 = 350$$\n\n2. $3$ men and $3$ women:\n$$\\text{Ways} = \\binom{7}{3} \\times \\binom{5}{3} = 35 \\times 10 = 350$$\n\n3. $2$ men and $4$ women:\n$$\\text{Ways} = \\binom{7}{2} \\times \\binom{5}{4} = 21 \\times 5 = 105$$\n\nSumming all valid cases:\n$$\\text{Total ways} = 350 + 350 + 105 = 805$$\n\nAlternatively, by complementary counting:\nTotal ways to choose $6$ people from $12$ without restriction is $\\binom{12}{6} = 924$.\nInvalid cases:\n- $W = 0$ ($6$ men, $0$ women): $\\binom{7}{6}\\binom{5}{0} = 7$\n- $W = 1$ ($5$ men, $1$ woman): $\\binom{7}{5}\\binom{5}{1} = 21 \\times 5 = 105$\n- $M = 1$ ($1$ man, $5$ women): $\\binom{7}{1}\\binom{5}{5} = 7 \\times 1 = 7$\n- $M = 0$ ($0$ men, $6$ women): $0$ (only $5$ women available)\n$$\\text{Total valid ways} = 924 - (7 + 105 + 7) = 924 - 119 = 805$$",
+  "distractor_notes": "$700$: Misses the $(2\\text{ men}, 4\\text{ women})$ case, assuming men cannot be fewer than women ($350 + 350 = 700$).\n$812$: Uses complementary counting ($924$) but only subtracts cases with fewer than $2$ women ($7 + 105 = 112$), forgetting to subtract the case of $1$ man and $5$ women ($7$ ways).\n$910$: Mistakenly includes the case of $5$ men and $1$ woman ($105$ ways), applying \"at least $1$ woman\" instead of \"at least $2$ women\" ($805 + 105 = 910$).",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Helical motion in magnetic field",
+  "archetype": "ratio comparison",
+  "brief": "Helical motion: a charged particle enters at an angle to a uniform magnetic field; compute radius of the helix and time period of revolution, and compare with the perpendicular-entry case.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:15",
+   "2023s2:1",
+   "2023s1:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A charged particle enters a uniform magnetic field at $30^\\circ$ to the field with speed $v$. Compared with entry at the same speed perpendicular to the field, what are the ratios of its helical radius and revolution period?",
+ "options": [
+  "$1,\\ 1$",
+  "$1,\\ \\dfrac{1}{2}$",
+  "$\\dfrac{1}{2},\\ \\dfrac{1}{2}$",
+  "$\\dfrac{1}{2},\\ 1$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The perpendicular speed is v sin 30° = v/2, so the helical-radius ratio is 1/2. The cyclotron period 2πm/(|q|B) is unchanged, giving a period ratio of 1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$r=\\dfrac{mv\\sin\\theta}{|q|B},\\quad T=\\dfrac{2\\pi m}{|q|B}$\n$\\dfrac{r_{30^\\circ}}{r_{90^\\circ}}=\\sin30^\\circ=\\dfrac12$\n$\\dfrac{T_{30^\\circ}}{T_{90^\\circ}}=1$\n\nIndependent check: The perpendicular speed is v sin 30° = v/2, so the helical-radius ratio is 1/2. The cyclotron period 2πm/(|q|B) is unchanged, giving a period ratio of 1.",
+ "solution": "The helical radius depends on the perpendicular speed, while the cyclotron period is independent of speed:\n$$r=\\frac{mv\\sin\\theta}{|q|B},\\qquad T=\\frac{2\\pi m}{|q|B}$$\nThus, $\\dfrac{r_{30^\\circ}}{r_{90^\\circ}}=\\sin30^\\circ=\\dfrac12$ and $\\dfrac{T_{30^\\circ}}{T_{90^\\circ}}=1$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A charged particle enters a uniform magnetic field at $30^\\circ$ to the field with speed $v$. Compared with entry at the same speed perpendicular to the field, what are the ratios of its helical radius and revolution period?",
+  "options": [
+   "$\\dfrac{1}{2},\\ 1$",
+   "$1,\\ \\dfrac{1}{2}$",
+   "$\\dfrac{1}{2},\\ \\dfrac{1}{2}$",
+   "$1,\\ 1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$r=\\dfrac{mv\\sin\\theta}{|q|B},\\quad T=\\dfrac{2\\pi m}{|q|B}$\n$\\dfrac{r_{30^\\circ}}{r_{90^\\circ}}=\\sin30^\\circ=\\dfrac12$\n$\\dfrac{T_{30^\\circ}}{T_{90^\\circ}}=1$",
+  "distractor_notes": "B: uses the wrong angular dependence for the radius and period. C: incorrectly makes the period depend on the entry angle. D: assumes the helical radius equals the perpendicular-entry radius."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

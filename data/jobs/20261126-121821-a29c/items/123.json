@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Classical probability with union",
+  "archetype": "set algebra computation",
+  "brief": "Draw one card/ball from a well-defined set; compute P(A ∪ B) from given individual and joint probabilities using the addition rule.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:98",
+   "2025s1:108",
+   "2025s2:127"
+  ]
+ },
+ "status": "ok",
+ "stem": "A card is drawn from a standard deck. Let $A$ be the event that it is red and $B$ the event that it is a king. Given $P(A)=\\dfrac{1}{2}$, $P(B)=\\dfrac{1}{13}$ and $P(A\\cap B)=\\dfrac{1}{26}$, find $P(A\\cup B)$.",
+ "options": [
+  "$\\dfrac{7}{13}$",
+  "$\\dfrac{15}{26}$",
+  "$\\dfrac{1}{13}$",
+  "$\\dfrac{1}{2}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By inclusion–exclusion, P(A∪B)=1/2+1/13−1/26=7/13.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$\n$=\\dfrac{1}{2}+\\dfrac{1}{13}-\\dfrac{1}{26}=\\dfrac{7}{13}$.\n\nIndependent check: By inclusion–exclusion, P(A∪B)=1/2+1/13−1/26=7/13.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A card is drawn from a standard deck. Let $A$ be the event that it is red and $B$ the event that it is a king. Given $P(A)=\\dfrac{1}{2}$, $P(B)=\\dfrac{1}{13}$ and $P(A\\cap B)=\\dfrac{1}{26}$, find $P(A\\cup B)$.",
+  "options": [
+   "$\\dfrac{7}{13}$",
+   "$\\dfrac{15}{26}$",
+   "$\\dfrac{1}{13}$",
+   "$\\dfrac{1}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$P(A\\cup B)=P(A)+P(B)-P(A\\cap B)$\n$=\\dfrac{1}{2}+\\dfrac{1}{13}-\\dfrac{1}{26}=\\dfrac{7}{13}$.",
+  "distractor_notes": "B: adds the individual probabilities without subtracting the intersection. C: reports only the probability of a king. D: reports only the probability of a red card."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

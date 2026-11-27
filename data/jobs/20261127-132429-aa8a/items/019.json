@@ -1,0 +1,68 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gate combinations",
+  "archetype": "gate-circuit reduction",
+  "brief": "Hard logic-gate circuit: a multi-gate combination (e.g. NANDs feeding an output gate) described or as a Boolean expression; reduce to identify the equivalent single gate and evaluate output for a truth-table row, with a diagram of gates.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:22",
+   "2023s2:6",
+   "2026s2:16"
+  ]
+ },
+ "status": "ok",
+ "stem": "A NAND-gate network is defined by $X_1=\\overline{A\\cdot B}$, $X_2=\\overline{A\\cdot X_1}$, $X_3=\\overline{B\\cdot X_1}$ and $Y=\\overline{X_2\\cdot X_3}$. Which single gate is equivalent to the network, and what is $Y$ when $A=1$ and $B=1$?",
+ "options": [
+  "XOR gate; $Y=0$",
+  "XNOR gate; $Y=1$",
+  "OR gate; $Y=1$",
+  "AND gate; $Y=1$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The four-NAND network implements XOR. For A=B=1, X1=0, X2=1, X3=1, so Y=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$X_1=\\overline{AB}$; the NAND network gives $Y=A\\oplus B$. \nFor $A=B=1$, $Y=1\\oplus1=0$.\n\nIndependent check: The four-NAND network implements XOR. For A=B=1, X1=0, X2=1, X3=1, so Y=0.",
+ "solution": "Using the NAND definitions, $X_1=\\overline{AB}$, $X_2=\\overline{A X_1}$ and $X_3=\\overline{B X_1}$; the final NAND gives $Y=A\\oplus B$$.\\nFor$ $A=B=1$, $X_1=0$, $X_2=X_3=1$, hence $Y=\\overline{1\\cdot1}=0$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A NAND-gate network is defined by $X_1=\\overline{A\\cdot B}$, $X_2=\\overline{A\\cdot X_1}$, $X_3=\\overline{B\\cdot X_1}$ and $Y=\\overline{X_2\\cdot X_3}$. Which single gate is equivalent to the network, and what is $Y$ when $A=1$ and $B=1$?",
+  "options": [
+   "XOR gate; $Y=0$",
+   "XNOR gate; $Y=1$",
+   "OR gate; $Y=1$",
+   "AND gate; $Y=1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$X_1=\\overline{AB}$; the NAND network gives $Y=A\\oplus B$. \nFor $A=B=1$, $Y=1\\oplus1=0$.",
+  "distractor_notes": "B: mistakes the XOR output for its complement.\nC: reduces the network to an OR gate without preserving the intermediate NAND operations.\nD: treats the final output as the direct conjunction of the inputs."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

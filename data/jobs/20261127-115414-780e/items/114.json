@@ -1,0 +1,64 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "direct computation",
+  "brief": "Binomial-style: probability of exactly k successes in n trials, or a two-step probability tree; compute directly with care.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:118",
+   "2025s2:127",
+   "2026s1:114"
+  ]
+ },
+ "status": "failed",
+ "stem": "For a binomial distribution, the mean is 4 and the variance is 2. The probability of exactly 3 successes is",
+ "options": [
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{7}{64}$",
+  "$\\dfrac{35}{128}$",
+  "$\\dfrac{7}{32}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Let n and p be the parameters. Mean = np = 4, variance = np(1-p) = 2. Divide: 1-p = 2/4 = 1/2, so p = 1/2, n = 4/(1/2) = 8. Then P(X=3) = C(8,3) · (1/2)^3 · (1/2)^5 = 56 · (1/2)^8 = 56/256 = 7/32.",
+ "solution": "For a binomial distribution, $\\text{mean}=np=4$ and $\\text{variance}=np(1-p)=2$, giving $p=\\frac12$ and $n=8$.\n$$P(X=3)=\\binom{8}{3}\\left(\\frac12\\right)^3\\left(\\frac12\\right)^5=\\frac{56}{256}=\\frac{7}{32}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For a binomial distribution, the mean is 4 and the variance is 2. The probability of exactly 3 successes is",
+  "options": [
+   "$\\dfrac{7}{32}$",
+   "$\\dfrac{7}{64}$",
+   "$\\dfrac{35}{128}$",
+   "$\\dfrac{1}{8}$"
+  ],
+  "option_smiles": [
+   ".",
+   ".",
+   ".",
+   "."
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let n and p be the parameters. Mean = np = 4, variance = np(1-p) = 2. Divide: 1-p = 2/4 = 1/2, so p = 1/2, n = 4/(1/2) = 8. Then P(X=3) = C(8,3) · (1/2)^3 · (1/2)^5 = 56 · (1/2)^8 = 56/256 = 7/32.",
+  "distractor_notes": "Option B (7/64) corresponds to P(X=2); option C (35/128) to P(X=4); option D (1/8) from an incorrect setup (e.g. using n=4)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

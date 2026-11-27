@@ -1,0 +1,68 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Conservation of mechanical energy",
+  "archetype": "energy conservation",
+  "brief": "A block released from rest on a smooth track slides down and compresses a spring; ask for maximum compression using energy conservation (no figure).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:7",
+   "2022:3",
+   "2026s2:29"
+  ]
+ },
+ "status": "ok",
+ "stem": "A block of mass 1 kg is released from rest at a height 2 m on a smooth curved track. It slides down onto a horizontal smooth surface and compresses a spring of force constant 160 N/m. Taking g = 10 m/s^2, the maximum compression produced in the spring is",
+ "options": [
+  "0.50 m",
+  "0.25 m",
+  "0.75 m",
+  "1.00 m"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By energy conservation, mgh = ½kx². Thus 1×10×2 = ½×160×x², giving x = 0.50 m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "mgh = (1/2) k x_max^2. 1 x 10 x 2 = 0.5 x 160 x x^2. 20 = 80 x^2, so x^2 = 0.25 and x_max = 0.50 m.\n\nIndependent check: By energy conservation, mgh = ½kx². Thus 1×10×2 = ½×160×x², giving x = 0.50 m.",
+ "solution": "By conservation of mechanical energy, the block’s gravitational potential energy is stored in the spring at maximum compression:\n$$mgh=\\frac12kx^2$$\n$$1\\times10\\times2=\\frac12(160)x^2\\quad\\Rightarrow\\quad x=0.50\\,\\text{m}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A block of mass 1 kg is released from rest at a height 2 m on a smooth curved track. It slides down onto a horizontal smooth surface and compresses a spring of force constant 160 N/m. Taking g = 10 m/s^2, the maximum compression produced in the spring is",
+  "options": [
+   "0.25 m",
+   "0.50 m",
+   "0.75 m",
+   "1.00 m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "mgh = (1/2) k x_max^2. 1 x 10 x 2 = 0.5 x 160 x x^2. 20 = 80 x^2, so x^2 = 0.25 and x_max = 0.50 m.",
+  "distractor_notes": "A: uses k x^2 without the factor 1/2; C: uses mgh = kx; D: plausible arithmetic error from using half the height or mixing up factors."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Angular momentum about a point",
+  "archetype": "r × p geometry",
+  "brief": "A particle moving in a straight line at constant velocity; find angular momentum about a point off its path and show/verify whether it stays constant.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:14",
+   "2025s1:3",
+   "2025s2:2"
+  ]
+ },
+ "status": "ok",
+ "stem": "A particle of mass $2\\ \\text{kg}$ is at $(2\\hat{\\mathbf i}+\\hat{\\mathbf j})\\ \\text{m}$ at $t=0$ and moves with constant velocity $(3\\hat{\\mathbf i}+4\\hat{\\mathbf j})\\ \\text{m s}^{-1}$. Which expression gives its angular momentum about the origin at time $t$ (in seconds)?",
+ "options": [
+  "$10\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$",
+  "$-10\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$",
+  "$(10+24t)\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$",
+  "$5\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\mathbf L=\\mathbf r\\times m\\mathbf v\\), with \\(\\mathbf r=(2+3t)\\hat{\\mathbf i}+(1+4t)\\hat{\\mathbf j}\\) and \\(m\\mathbf v=6\\hat{\\mathbf i}+8\\hat{\\mathbf j}\\). Thus \\(L_z=(2+3t)8-(1+4t)6=10\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec r(t)=[(2+3t)\\hat{\\mathbf i}+(1+4t)\\hat{\\mathbf j}]\\,\\text{m}$; $\\vec p=(6\\hat{\\mathbf i}+8\\hat{\\mathbf j})\\,\\text{kg m s}^{-1}$; $\\vec L=\\vec r\\times\\vec p=[8(2+3t)-6(1+4t)]\\hat{\\mathbf k}=10\\hat{\\mathbf k}\\,\\text{kg m}^2\\text{s}^{-1}$, independent of $t$.\n\nIndependent check: \\(\\mathbf L=\\mathbf r\\times m\\mathbf v\\), with \\(\\mathbf r=(2+3t)\\hat{\\mathbf i}+(1+4t)\\hat{\\mathbf j}\\) and \\(m\\mathbf v=6\\hat{\\mathbf i}+8\\hat{\\mathbf j}\\). Thus \\(L_z=(2+3t)8-(1+4t)6=10\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle of mass $2\\ \\text{kg}$ is at $(2\\hat{\\mathbf i}+\\hat{\\mathbf j})\\ \\text{m}$ at $t=0$ and moves with constant velocity $(3\\hat{\\mathbf i}+4\\hat{\\mathbf j})\\ \\text{m s}^{-1}$. Which expression gives its angular momentum about the origin at time $t$ (in seconds)?",
+  "options": [
+   "$10\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$",
+   "$-10\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$",
+   "$(10+24t)\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$",
+   "$5\\hat{\\mathbf k}\\ \\text{kg m}^2\\text{s}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\vec r(t)=[(2+3t)\\hat{\\mathbf i}+(1+4t)\\hat{\\mathbf j}]\\,\\text{m}$; $\\vec p=(6\\hat{\\mathbf i}+8\\hat{\\mathbf j})\\,\\text{kg m s}^{-1}$; $\\vec L=\\vec r\\times\\vec p=[8(2+3t)-6(1+4t)]\\hat{\\mathbf k}=10\\hat{\\mathbf k}\\,\\text{kg m}^2\\text{s}^{-1}$, independent of $t$.",
+  "distractor_notes": "B: reverses the cross-product sign; C: fails to cancel the time-dependent terms; D: omits the particle's mass."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

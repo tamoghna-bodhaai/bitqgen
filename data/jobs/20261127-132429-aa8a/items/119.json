@@ -1,0 +1,68 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous DE",
+  "archetype": "separate and solve",
+  "brief": "Solve a homogeneous differential equation dy/dx = f(y/x) using the substitution y = vx.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:97",
+   "2025s2:104",
+   "2026s1:126"
+  ]
+ },
+ "status": "ok",
+ "stem": "Solve $\\dfrac{dy}{dx}=1+\\dfrac{y}{x}$, where $x\\ne0$.",
+ "options": [
+  "$y=\\ln|x|+C$",
+  "$y=x(C-\\ln|x|)$",
+  "$y=Cx+\\ln|x|$",
+  "$y=x(\\ln|x|+C)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Rewrite as \\(y'-\\frac{y}{x}=1\\). Then \\(\\left(\\frac{y}{x}\\right)'=\\frac1x\\), so \\(y=x(\\ln|x|+C)\\).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Set $y=vx$: $v+x\\dfrac{dv}{dx}=1+v$. Thus $\\dfrac{dv}{dx}=\\dfrac1x$, so $v=\\ln|x|+C$. Hence $y=x(\\ln|x|+C)$.\n\nIndependent check: Rewrite as \\(y'-\\frac{y}{x}=1\\). Then \\(\\left(\\frac{y}{x}\\right)'=\\frac1x\\), so \\(y=x(\\ln|x|+C)\\).",
+ "solution": "Set $y=vx$. Then $v+x\\dfrac{dv}{dx}=1+v$, giving $\\dfrac{dv}{dx}=\\dfrac1x$.\n$$v=\\ln|x|+C \\quad\\Longrightarrow\\quad y=x(\\ln|x|+C).$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Solve $\\dfrac{dy}{dx}=1+\\dfrac{y}{x}$, where $x\\ne0$.",
+  "options": [
+   "$y=\\ln|x|+C$",
+   "$y=x(C-\\ln|x|)$",
+   "$y=Cx+\\ln|x|$",
+   "$y=x(\\ln|x|+C)$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Set $y=vx$: $v+x\\dfrac{dv}{dx}=1+v$. Thus $\\dfrac{dv}{dx}=\\dfrac1x$, so $v=\\ln|x|+C$. Hence $y=x(\\ln|x|+C)$.",
+  "distractor_notes": "A: omits the factor $x$ when returning from $v=y/x$. B: uses the wrong sign when integrating. C: fails to multiply the logarithmic term by $x$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

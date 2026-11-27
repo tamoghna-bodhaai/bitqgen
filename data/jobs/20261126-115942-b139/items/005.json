@@ -1,0 +1,66 @@
+{
+ "qno": 5,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 5,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Atomic/ionic radii trends",
+  "archetype": "two-statement evaluation",
+  "brief": "Two statements comparing ionic/atomic sizes (e.g., isoelectronic species, cation vs parent atom) and ask which are correct; answers use periodic trends, no calculations.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:52",
+   "2025s2:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statement I:** In the isoelectronic series $\\text{S}^{2-}$, $\\text{Cl}^-$, $\\text{K}^+$, $\\text{Ca}^{2+}$, the ionic radius decreases steadily from $\\text{S}^{2-}$ to $\\text{Ca}^{2+}$.\n\n**Statement II:** The atomic radius of Ga is greater than that of Al because Ga lies below Al in group 13.",
+ "options": [
+  "Both Statement I and Statement II are correct.",
+  "Both Statement I and Statement II are incorrect.",
+  "Statement I is correct but Statement II is incorrect.",
+  "Statement II is correct but Statement I is incorrect."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "1. Statement I: For isoelectronic species (S2-, Cl-, K+, Ca2+ with 18 electrons each), as the nuclear charge Z increases (16 to 20), effective nuclear charge increases, leading to a steady decrease in ionic radius (184 pm > 181 pm > 138 pm > 100 pm). Thus, Statement I is correct.\n2. Statement II: Due to poor shielding by the intervening 3d-electrons (d-block contraction), the atomic radius of Ga (135 pm) is actually smaller than that of Al (143 pm). Thus, Statement II is incorrect.\n3. Therefore, Statement I is correct and Statement II is incorrect, corresponding to option (C).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Statement I: All four species have 18 electrons. The nuclear charge rises along the series: S ($Z=16$), Cl ($17$), K ($19$), Ca ($20$). A larger nuclear charge pulls the same electron cloud in more strongly, so the radius decreases.\n\n$$r(\\text{S}^{2-}) > r(\\text{Cl}^-) > r(\\text{K}^+) > r(\\text{Ca}^{2+})$$\n\nStatement I is correct.\n\nStatement II: Ga follows the ten 3d elements. The 3d electrons shield the nucleus poorly, so the effective nuclear charge felt by the outer electrons of Ga is high. As a result, Ga ($\\approx 135$ pm) is slightly smaller than Al ($\\approx 143$ pm). This is an exception to the usual down-the-group increase. Statement II is incorrect.\n\nHence Statement I is correct and Statement II is incorrect, which is option (C).\n\nIndependent check: 1. Statement I: For isoelectronic species (S2-, Cl-, K+, Ca2+ with 18 electrons each), as the nuclear charge Z increases (16 to 20), effective nuclear charge increases, leading to a steady decrease in ionic radius (184 pm > 181 pm > 138 pm > 100 pm). Thus, Statement I is correct.\n2. Statement II: Due to poor shielding by the intervening 3d-electrons (d-block contraction), the atomic radius of Ga (135 pm) is actually smaller than that of Al (143 pm). Thus, Statement II is incorrect.\n3. Therefore, Statement I is correct and Statement II is incorrect, corresponding to option (C).",
+ "solution": "Statement I: All four ions have 18 electrons, while nuclear charge rises: $Z = 16, 17, 19, 20$. A greater $Z$ pulls the same electron cloud in more strongly, so $$r(\\text{S}^{2-})>r(\\text{Cl}^-)>r(\\text{K}^+)>r(\\text{Ca}^{2+})$$ Statement I is correct.\nStatement II: Ga comes after the ten 3d elements. The 3d electrons shield the nucleus poorly, so the effective nuclear charge on Ga's outer electrons is high. Hence Ga ($\\approx 135$ pm) is slightly smaller than Al ($\\approx 143$ pm), so Statement II is incorrect.\nTherefore Statement I is correct and Statement II is incorrect, which is (C).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statement I:** In the isoelectronic series $\\text{S}^{2-}$, $\\text{Cl}^-$, $\\text{K}^+$, $\\text{Ca}^{2+}$, the ionic radius decreases steadily from $\\text{S}^{2-}$ to $\\text{Ca}^{2+}$.\n\n**Statement II:** The atomic radius of Ga is greater than that of Al because Ga lies below Al in group 13.",
+  "options": [
+   "Both Statement I and Statement II are correct.",
+   "Both Statement I and Statement II are incorrect.",
+   "Statement I is correct but Statement II is incorrect.",
+   "Statement II is correct but Statement I is incorrect."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Statement I: All four species have 18 electrons. The nuclear charge rises along the series: S ($Z=16$), Cl ($17$), K ($19$), Ca ($20$). A larger nuclear charge pulls the same electron cloud in more strongly, so the radius decreases.\n\n$$r(\\text{S}^{2-}) > r(\\text{Cl}^-) > r(\\text{K}^+) > r(\\text{Ca}^{2+})$$\n\nStatement I is correct.\n\nStatement II: Ga follows the ten 3d elements. The 3d electrons shield the nucleus poorly, so the effective nuclear charge felt by the outer electrons of Ga is high. As a result, Ga ($\\approx 135$ pm) is slightly smaller than Al ($\\approx 143$ pm). This is an exception to the usual down-the-group increase. Statement II is incorrect.\n\nHence Statement I is correct and Statement II is incorrect, which is option (C).",
+  "distractor_notes": "A: applies the general 'radius increases down a group' trend to Ga and ignores the poor shielding by 3d electrons.\nB: wrongly believes that isoelectronic ions have nearly equal radii, or reverses the effect of nuclear charge, and also knows the Ga anomaly.\nD: reverses the isoelectronic trend, thinking more protons give a larger ion, and also falls for the Ga/Al trap.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

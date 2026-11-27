@@ -1,0 +1,68 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength of accelerated charges",
+  "archetype": "ratio comparison",
+  "brief": "An electron and a proton (or alpha particle) accelerated through the same potential difference; ask for the ratio of their de Broglie wavelengths.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:2",
+   "2025s1:12",
+   "2025s2:6"
+  ]
+ },
+ "status": "ok",
+ "stem": "A deuteron and an alpha particle are accelerated from rest through the same potential difference. The ratio of the de Broglie wavelength of the deuteron to that of the alpha particle (lambda_d : lambda_alpha) is:",
+ "options": [
+  "2 : 1",
+  "1 : 2",
+  "sqrt(2) : 1",
+  "1 : sqrt(2)"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For particles accelerated from rest, \\(\\lambda=h/\\sqrt{2mqV}\\). Thus \\(\\lambda_d/\\lambda_\\alpha=\\sqrt{(m_\\alpha q_\\alpha)/(m_d q_d)}=\\sqrt{(4u\\cdot2e)/(2u\\cdot e)}=2\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "lambda = h / sqrt(2 m q V). For same V, lambda is proportional to 1/sqrt(m q). Deuteron: m = 2mp, q = e. Alpha: m = 4mp, q = 2e. lambda_d / lambda_alpha = sqrt( (4mp * 2e) / (2mp * e) ) = sqrt(4) = 2. Thus lambda_d : lambda_alpha = 2 : 1.\n\nIndependent check: For particles accelerated from rest, \\(\\lambda=h/\\sqrt{2mqV}\\). Thus \\(\\lambda_d/\\lambda_\\alpha=\\sqrt{(m_\\alpha q_\\alpha)/(m_d q_d)}=\\sqrt{(4u\\cdot2e)/(2u\\cdot e)}=2\\).",
+ "solution": "For a particle accelerated through potential difference $V$, $\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$.\n$$\\frac{\\lambda_d}{\\lambda_\\alpha}=\\sqrt{\\frac{m_\\alpha q_\\alpha}{m_d q_d}}=\\sqrt{\\frac{(4m_p)(2e)}{(2m_p)(e)}}=2$$\nHence, $\\lambda_d:\\lambda_\\alpha=2:1$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A deuteron and an alpha particle are accelerated from rest through the same potential difference. The ratio of the de Broglie wavelength of the deuteron to that of the alpha particle (lambda_d : lambda_alpha) is:",
+  "options": [
+   "1 : 2",
+   "2 : 1",
+   "sqrt(2) : 1",
+   "1 : sqrt(2)"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "lambda = h / sqrt(2 m q V). For same V, lambda is proportional to 1/sqrt(m q). Deuteron: m = 2mp, q = e. Alpha: m = 4mp, q = 2e. lambda_d / lambda_alpha = sqrt( (4mp * 2e) / (2mp * e) ) = sqrt(4) = 2. Thus lambda_d : lambda_alpha = 2 : 1.",
+  "distractor_notes": "A: takes reciprocal of correct ratio. C: considers only mass ratio (sqrt(2)). D: reciprocal of C or another incomplete ratio."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 21,
+ "section": "Physics",
+ "slot": {
+  "qno": 21,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength vs KE",
+  "archetype": "ratio of two situations",
+  "brief": "Same accelerating potential applied to electron vs proton (or two KEs); compare de Broglie wavelengths via λ ∝ 1/√(mK).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:14",
+   "2024s1:2",
+   "2023s1:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron and a proton are accelerated from rest through the same potential difference. If lambda_e and lambda_p are their de Broglie wavelengths, then the ratio lambda_p/lambda_e is:",
+ "options": [
+  "m_p/m_e",
+  "sqrt(m_p/m_e)",
+  "m_e/m_p",
+  "sqrt(m_e/m_p)"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For nonrelativistic acceleration through potential difference V, p=√(2meV), so λ=h/p and λp/λe=√(me/mp).",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "lambda = h / sqrt(2 m q V). For same q and V, lambda is proportional to 1/sqrt(m). Therefore lambda_p/lambda_e = sqrt(m_e/m_p).\n\nIndependent check: For nonrelativistic acceleration through potential difference V, p=√(2meV), so λ=h/p and λp/λe=√(me/mp).",
+ "solution": "For a particle accelerated through potential difference $V$, $\u0000$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An electron and a proton are accelerated from rest through the same potential difference. If lambda_e and lambda_p are their de Broglie wavelengths, then the ratio lambda_p/lambda_e is:",
+  "options": [
+   "sqrt(m_e/m_p)",
+   "sqrt(m_p/m_e)",
+   "m_e/m_p",
+   "m_p/m_e"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "lambda = h / sqrt(2 m q V). For same q and V, lambda is proportional to 1/sqrt(m). Therefore lambda_p/lambda_e = sqrt(m_e/m_p).",
+  "distractor_notes": "B: reciprocal ratio; C: forgot square root; D: reciprocal and forgot square root."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

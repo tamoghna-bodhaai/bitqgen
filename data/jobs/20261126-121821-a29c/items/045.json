@@ -1,0 +1,67 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Williamson synthesis",
+  "archetype": "conceptual / compare structures",
+  "brief": "Ask why aryl/vinyl halides fail in Williamson synthesis, or which of the given haloalkane + alkoxide pairs gives ether cleanly vs elimination; test the conceptual condition.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:52",
+   "2025s1:40",
+   "2024s1:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following combinations of a halo-compound and an alkoxide cleanly yields an ether as the major product via Williamson synthesis?",
+ "options": [
+  "$(\\text{CH}_3)_3\\text{CBr} + \\text{CH}_3\\text{ONa}$",
+  "$\\text{C}_6\\text{H}_5\\text{Br} + \\text{CH}_3\\text{CH}_2\\text{ONa}$",
+  "$(\\text{CH}_3)_3\\text{CONa} + \\text{CH}_3\\text{I}$",
+  "$\\text{CH}_2{=}\\text{CHBr} + \\text{CH}_3\\text{ONa}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Williamson synthesis needs SN2 at an unhindered sp3 carbon. (A) 3° t-BuBr with CH3O⁻ gives E2 elimination (isobutene) as major product. (B) Aryl bromide and (D) vinyl bromide are inert to SN2 (sp2 C–X, partial double-bond character). (C) CH3I is a methyl halide; even bulky t-BuO⁻ attacks it by SN2 (no β-H on CH3I, so elimination impossible), cleanly giving methyl tert-butyl ether.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Williamson ether synthesis involves an $\\text{S}_\\text{N}2$ displacement of a halide ion by an alkoxide/phenoxide nucleophile:\n$$\\text{R-O}^- + \\text{R}'-\\text{X} \\rightarrow \\text{R-O-R}' + \\text{X}^-$$\n\n1. In $(\\text{CH}_3)_3\\text{CONa} + \\text{CH}_3\\text{I}$:\n   The substrate is a methyl halide ($\\text{CH}_3\\text{I}$), which lacks $\\beta$-hydrogens. Consequently, $\\text{E}2$ elimination is structurally impossible. Even though tert-butoxide is a bulky and strongly basic alkoxide, substitution proceeds smoothly via $\\text{S}_\\text{N}2$ to yield tert-butyl methyl ether as the major product:\n   $$(\\text{CH}_3)_3\\text{C-O}^- + \\text{CH}_3\\text{I} \\rightarrow (\\text{CH}_3)_3\\text{C-O-CH}_3 + \\text{I}^-$$\n\n2. In $(\\text{CH}_3)_3\\text{CBr} + \\text{CH}_3\\text{ONa}$:\n   The substrate is a tertiary halide ($3^\\circ$). Alkoxides are strong bases, so $\\text{E}2$ elimination completely outcompetes substitution, yielding 2-methylpropene (isobutylene) exclusively:\n   $$(\\text{CH}_3)_3\\text{C-Br} + \\text{CH}_3\\text{O}^- \\rightarrow \\text{CH}_2{=}\\text{C}(\\text{CH}_3)_2 + \\text{CH}_3\\text{OH} + \\text{Br}^-$$\n\n3. In $\\text{C}_6\\text{H}_5\\text{Br} + \\text{CH}_3\\text{CH}_2\\text{ONa}$:\n   Bromobenzene is an aryl halide. The lone pairs of the bromine atom are delocalized into the aromatic ring by resonance, imparting partial double-bond character to the $\\text{C-Br}$ bond. Furthermore, backside $\\text{S}_\\text{N}2$ attack is geometrically blocked by the benzene ring. Hence, no reaction takes place under standard conditions.\n\n4. In $\\text{CH}_2{=}\\text{CHBr} + \\text{CH}_3\\text{ONa}$:\n   Vinyl bromide is a vinyl halide. Similar to aryl halides, resonance gives the $\\text{C-Br}$ bond partial double-bond character and the $sp^2$-hybridized carbon resists $\\text{S}_\\text{N}2$ substitution.\n\nTherefore, only combination (C) cleanly yields the ether as the major product.\n\nIndependent check: Williamson synthesis needs SN2 at an unhindered sp3 carbon. (A) 3° t-BuBr with CH3O⁻ gives E2 elimination (isobutene) as major product. (B) Aryl bromide and (D) vinyl bromide are inert to SN2 (sp2 C–X, partial double-bond character). (C) CH3I is a methyl halide; even bulky t-BuO⁻ attacks it by SN2 (no β-H on CH3I, so elimination impossible), cleanly giving methyl tert-butyl ether.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following combinations of a halo-compound and an alkoxide cleanly yields an ether as the major product via Williamson synthesis?",
+  "options": [
+   "$(\\text{CH}_3)_3\\text{CBr} + \\text{CH}_3\\text{ONa}$",
+   "$\\text{C}_6\\text{H}_5\\text{Br} + \\text{CH}_3\\text{CH}_2\\text{ONa}$",
+   "$(\\text{CH}_3)_3\\text{CONa} + \\text{CH}_3\\text{I}$",
+   "$\\text{CH}_2{=}\\text{CHBr} + \\text{CH}_3\\text{ONa}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Williamson ether synthesis involves an $\\text{S}_\\text{N}2$ displacement of a halide ion by an alkoxide/phenoxide nucleophile:\n$$\\text{R-O}^- + \\text{R}'-\\text{X} \\rightarrow \\text{R-O-R}' + \\text{X}^-$$\n\n1. In $(\\text{CH}_3)_3\\text{CONa} + \\text{CH}_3\\text{I}$:\n   The substrate is a methyl halide ($\\text{CH}_3\\text{I}$), which lacks $\\beta$-hydrogens. Consequently, $\\text{E}2$ elimination is structurally impossible. Even though tert-butoxide is a bulky and strongly basic alkoxide, substitution proceeds smoothly via $\\text{S}_\\text{N}2$ to yield tert-butyl methyl ether as the major product:\n   $$(\\text{CH}_3)_3\\text{C-O}^- + \\text{CH}_3\\text{I} \\rightarrow (\\text{CH}_3)_3\\text{C-O-CH}_3 + \\text{I}^-$$\n\n2. In $(\\text{CH}_3)_3\\text{CBr} + \\text{CH}_3\\text{ONa}$:\n   The substrate is a tertiary halide ($3^\\circ$). Alkoxides are strong bases, so $\\text{E}2$ elimination completely outcompetes substitution, yielding 2-methylpropene (isobutylene) exclusively:\n   $$(\\text{CH}_3)_3\\text{C-Br} + \\text{CH}_3\\text{O}^- \\rightarrow \\text{CH}_2{=}\\text{C}(\\text{CH}_3)_2 + \\text{CH}_3\\text{OH} + \\text{Br}^-$$\n\n3. In $\\text{C}_6\\text{H}_5\\text{Br} + \\text{CH}_3\\text{CH}_2\\text{ONa}$:\n   Bromobenzene is an aryl halide. The lone pairs of the bromine atom are delocalized into the aromatic ring by resonance, imparting partial double-bond character to the $\\text{C-Br}$ bond. Furthermore, backside $\\text{S}_\\text{N}2$ attack is geometrically blocked by the benzene ring. Hence, no reaction takes place under standard conditions.\n\n4. In $\\text{CH}_2{=}\\text{CHBr} + \\text{CH}_3\\text{ONa}$:\n   Vinyl bromide is a vinyl halide. Similar to aryl halides, resonance gives the $\\text{C-Br}$ bond partial double-bond character and the $sp^2$-hybridized carbon resists $\\text{S}_\\text{N}2$ substitution.\n\nTherefore, only combination (C) cleanly yields the ether as the major product.",
+  "distractor_notes": "A: Mistakenly assumes tertiary halides undergo Williamson substitution, overlooking that strong alkoxide bases cause exclusive E2 elimination to 2-methylpropene.\nB: Confuses the role of the aryl moiety; phenoxide can serve as the nucleophile, but aryl halides cannot act as the substrate due to resonance (partial double-bond character).\nD: Overlooks that vinyl halides, like aryl halides, resist SN2 substitution due to resonance stabilization and sp2 hybridization.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

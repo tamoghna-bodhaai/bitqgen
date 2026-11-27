@@ -1,0 +1,68 @@
+{
+ "qno": 91,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 91,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "PQRS sentence rearrangement",
+  "archetype": "jumbled parts ordering",
+  "brief": "Short 4-part sentence (P, Q, R, S) that must be rearranged into a grammatical whole; options give order combinations.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:70",
+   "2021:93",
+   "2026s2:61"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange P, Q, R and S to complete the sentence meaningfully.\n\nThe curator displayed the painting\n\nP. only after\nQ. a laboratory test showed\nR. that its pigment would not fade\nS. when exposed to sunlight.",
+ "options": [
+  "PQRS",
+  "PRQS",
+  "QPRS",
+  "PSRQ"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "P→Q→R→S gives: “The curator displayed the painting only after a laboratory test showed that its pigment would not fade when exposed to sunlight.”",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "P begins the required “only after” clause; Q supplies its subject and verb; R is the test’s “that” clause; S completes “would not fade when exposed to sunlight.” Only PQRS preserves these grammatical links.\n\nIndependent check: P→Q→R→S gives: “The curator displayed the painting only after a laboratory test showed that its pigment would not fade when exposed to sunlight.”",
+ "solution": "P begins the time clause, followed by Q’s subject and verb; R completes the test’s “that” clause, and S completes “would not fade.” The sequence is PQRS.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange P, Q, R and S to complete the sentence meaningfully.\n\nThe curator displayed the painting\n\nP. only after\nQ. a laboratory test showed\nR. that its pigment would not fade\nS. when exposed to sunlight.",
+  "options": [
+   "PQRS",
+   "PRQS",
+   "QPRS",
+   "PSRQ"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "P begins the required “only after” clause; Q supplies its subject and verb; R is the test’s “that” clause; S completes “would not fade when exposed to sunlight.” Only PQRS preserves these grammatical links.",
+  "distractor_notes": "B: places the “that” clause before the test’s verb. C: starts with Q, which cannot grammatically continue the opening. D: puts S before the clause it modifies and disrupts the test clause."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

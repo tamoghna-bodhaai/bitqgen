@@ -1,0 +1,68 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment",
+  "archetype": "electron-configuration numerical",
+  "brief": "Give the electronic configuration of a lanthanide/transition ion in its ground state; count unpaired electrons and compute the spin-only or effective magnetic moment.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:44",
+   "2026s1:49",
+   "2022:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "For gaseous $\\text{Cr}^{2+}$ ($Z=24$), choose its ground-state configuration, number of unpaired electrons and spin-only moment. Use $\\mu=\\sqrt{n(n+2)}$.",
+ "options": [
+  "$[\\text{Ar}]\\,3d^4$; 2 unpaired electrons; $2.83\\ \\text{BM}$",
+  "$[\\text{Ar}]\\,3d^3$; 3 unpaired electrons; $3.87\\ \\text{BM}$",
+  "$[\\text{Ar}]\\,3d^5$; 5 unpaired electrons; $5.92\\ \\text{BM}$",
+  "$[\\text{Ar}]\\,3d^4$; 4 unpaired electrons; $4.90\\ \\text{BM}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cr is [Ar] 3d⁵ 4s¹. Removing two electrons (4s first) gives Cr²⁺: [Ar] 3d⁴. In the gaseous ground state, the four d electrons are unpaired, so μ = √(4×6) = 4.90 BM.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Cr}=[\\text{Ar}]\\,3d^5 4s^1$\n$\\text{Cr}^{2+}=[\\text{Ar}]\\,3d^4$ (remove $4s$ first)\n$n=4$ (Hund's rule)\n$\\mu=\\sqrt{4(4+2)}=\\sqrt{24}=4.90\\ \\text{BM}$\n\nIndependent check: Cr is [Ar] 3d⁵ 4s¹. Removing two electrons (4s first) gives Cr²⁺: [Ar] 3d⁴. In the gaseous ground state, the four d electrons are unpaired, so μ = √(4×6) = 4.90 BM.",
+ "solution": "Neutral Cr is $[\\mathrm{Ar}]\\,3d^5 4s^1$; removing the $4s$ electron first gives $\\mathrm{Cr}^{2+}=[\\mathrm{Ar}]\\,3d^4$. By Hund’s rule, $n=4$ unpaired electrons, so $$\\mu=\\sqrt{n(n+2)}=\\sqrt{4(6)}=4.90\\ \\mathrm{BM}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For gaseous $\\text{Cr}^{2+}$ ($Z=24$), choose its ground-state configuration, number of unpaired electrons and spin-only moment. Use $\\mu=\\sqrt{n(n+2)}$.",
+  "options": [
+   "$[\\text{Ar}]\\,3d^4$; 2 unpaired electrons; $2.83\\ \\text{BM}$",
+   "$[\\text{Ar}]\\,3d^3$; 3 unpaired electrons; $3.87\\ \\text{BM}$",
+   "$[\\text{Ar}]\\,3d^4$; 4 unpaired electrons; $4.90\\ \\text{BM}$",
+   "$[\\text{Ar}]\\,3d^5$; 5 unpaired electrons; $5.92\\ \\text{BM}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\text{Cr}=[\\text{Ar}]\\,3d^5 4s^1$\n$\\text{Cr}^{2+}=[\\text{Ar}]\\,3d^4$ (remove $4s$ first)\n$n=4$ (Hund's rule)\n$\\mu=\\sqrt{4(4+2)}=\\sqrt{24}=4.90\\ \\text{BM}$",
+  "distractor_notes": "A: pairs electrons in the degenerate $3d$ orbitals instead of applying Hund's rule. B: uses a $3d^3$ count. D: counts five $3d$ electrons, effectively failing to remove one electron to form $\\text{Cr}^{2+}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

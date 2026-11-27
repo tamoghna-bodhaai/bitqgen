@@ -1,0 +1,68 @@
+{
+ "qno": 48,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 48,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Cannizzaro reaction",
+  "archetype": "name reaction identification",
+  "brief": "Give a named-reaction description (Cannizzaro) and ask the products from a given aldehyde lacking α-H; identify major/minor products.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:58",
+   "2022:36",
+   "2025s1:36"
+  ]
+ },
+ "status": "ok",
+ "stem": "The Cannizzaro reaction between formaldehyde and 2,2-dimethylpropanal in the presence of conc. NaOH produces",
+ "options": [
+  "sodium formate and 2,2-dimethylpropanoic acid",
+  "sodium formate and neopentyl alcohol",
+  "methanol and sodium 2,2-dimethylpropanoate",
+  "methanol and neopentyl alcohol"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Formaldehyde is oxidized to sodium formate while 2,2-dimethylpropanal is reduced to neopentyl alcohol in the crossed Cannizzaro reaction.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Both aldehydes lack α‑H. In a cross Cannizzaro reaction, formaldehyde is always oxidized to formate (HCOO⁻), while the other aldehyde is reduced to the corresponding alcohol. Here 2,2‑dimethylpropanal is reduced to neopentyl alcohol. Hence the products are sodium formate and neopentyl alcohol.\n\nIndependent check: Formaldehyde is oxidized to sodium formate while 2,2-dimethylpropanal is reduced to neopentyl alcohol in the crossed Cannizzaro reaction.",
+ "solution": "Both aldehydes lack an $\u0003alpha$-hydrogen, so they undergo crossed Cannizzaro reaction. Formaldehyde is oxidized to formate, while 2,2-dimethylpropanal is reduced to neopentyl alcohol:\n$$\\mathrm{HCHO + (CH_3)_3CCHO + NaOH \\rightarrow HCOONa + (CH_3)_3CCH_2OH}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The Cannizzaro reaction between formaldehyde and 2,2-dimethylpropanal in the presence of conc. NaOH produces",
+  "options": [
+   "sodium formate and neopentyl alcohol",
+   "sodium formate and 2,2-dimethylpropanoic acid",
+   "methanol and sodium 2,2-dimethylpropanoate",
+   "methanol and neopentyl alcohol"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Both aldehydes lack α‑H. In a cross Cannizzaro reaction, formaldehyde is always oxidized to formate (HCOO⁻), while the other aldehyde is reduced to the corresponding alcohol. Here 2,2‑dimethylpropanal is reduced to neopentyl alcohol. Hence the products are sodium formate and neopentyl alcohol.",
+  "distractor_notes": "B: wrong oxidation product for the second aldehyde; C: formaldehyde would be reduced (methanol) instead of oxidized; D: both products are reduced forms, ignoring oxidation of formaldehyde."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

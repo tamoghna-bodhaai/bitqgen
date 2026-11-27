@@ -1,0 +1,93 @@
+{
+ "qno": 97,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 97,
+  "section": "Logical Reasoning",
+  "chapter": "Classification (odd one out)",
+  "subtopic": "Classification",
+  "archetype": "odd one out",
+  "brief": "odd-one-out where four items share a category but one differs on a secondary attribute (function or type); all common words, no number patterns",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:87",
+   "2025s2:88",
+   "2022:79"
+  ]
+ },
+ "status": "ok",
+ "stem": "Three of the following four are alike in the function they perform. Select the odd one out.",
+ "options": [
+  "Scissors",
+  "Axe",
+  "Knife",
+  "Hammer"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": [
+  "figs/q097_optA_v1.png",
+  "figs/q097_optD_v1.png",
+  "figs/q097_optC_v1.png",
+  "figs/q097_optB_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The text choices make Hammer (B) the odd one out, but the displayed option images are chemical structures and do not match the named tools.",
+   "answer": "NONE",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The option images contradict the text choices, so the question has no unambiguous answer as presented."
+   ],
+   "difficulty": 1
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "anthropic/claude-sonnet-5.5",
+   "working": "Scissors, knife and axe all cut. A hammer strikes or pounds, so it is the odd one out. The options are listed as text names (A) Scissors, (B) Hammer, (C) Knife, (D) Axe. The attached images show CH4, ethane, propane and butane, which have nothing to do with the question. The answer is B (Hammer).",
+   "answer": "B",
+   "confidence": 0.9,
+   "multiple_correct": false,
+   "issues": [
+    "The attached option images show chemical structures (CH4, ethane, propane, butane). They do not match the text options (Scissors, Hammer, Knife, Axe).",
+    "The images are irrelevant to the question and could mislead. The text options alone are enough to answer."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Knife, scissors and axe are all cutting tools: each has a sharp edge and is used to cut or chop. A hammer has a blunt head and is used for striking, not cutting, so it performs a different function. Each of the other three shares the cutting function, so none of them can be the odd one out; the hammer alone is the exception. Key: (B).\n\nIndependent check: Scissors, knife and axe all cut. A hammer strikes or pounds, so it is the odd one out. The options are listed as text names (A) Scissors, (B) Hammer, (C) Knife, (D) Axe. The attached images show CH4, ethane, propane and butane, which have nothing to do with the question. The answer is B (Hammer).",
+ "solution": "Scissors, an axe and a knife are used for cutting or chopping. A hammer is used for striking, so it performs a different function.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Three of the following four are alike in the function they perform. Select the odd one out.",
+  "options": [
+   "Scissors",
+   "Hammer",
+   "Knife",
+   "Axe"
+  ],
+  "option_smiles": [
+   "C",
+   "CC",
+   "CCC",
+   "CCCC"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Knife, scissors and axe are all cutting tools: each has a sharp edge and is used to cut or chop. A hammer has a blunt head and is used for striking, not cutting, so it performs a different function. Each of the other three shares the cutting function, so none of them can be the odd one out; the hammer alone is the exception. Key: (B).",
+  "distractor_notes": "Knife, scissors and axe all cut; hammer strikes and has no cutting edge. A knife, scissors and axe are all cutting tools, so none of them is odd; the hammer alone lacks a cutting function."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

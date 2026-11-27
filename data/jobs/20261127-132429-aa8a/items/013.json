@@ -1,0 +1,68 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Energy in SHM",
+  "archetype": "energy equation",
+  "brief": "Energy in SHM: a horizontal or vertical spring–mass oscillator; find displacement from the mean where kinetic energy equals potential energy, or compute amplitude from a given speed at a given displacement.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:27",
+   "2025s2:29",
+   "2023s2:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "A horizontal spring–mass oscillator has amplitude $8$ cm. At what distance from the mean position are its kinetic and potential energies equal?",
+ "options": [
+  "$2\\sqrt{2}$ cm",
+  "$4\\sqrt{2}$ cm",
+  "$4$ cm",
+  "$8$ cm"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For SHM, K = U when x² = A²/2, so |x| = A/√2 = 8/√2 = 4√2 cm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$U=\\dfrac12kx^2$, $E=\\dfrac12kA^2$.\n$K=U\\Rightarrow U=\\dfrac{E}{2}\\Rightarrow x^2=\\dfrac{A^2}{2}$\n$|x|=\\dfrac{8}{\\sqrt{2}}=4\\sqrt{2}$ cm\n\nIndependent check: For SHM, K = U when x² = A²/2, so |x| = A/√2 = 8/√2 = 4√2 cm.",
+ "solution": "For SHM, $U=\\frac12kx^2$ and $E=\\frac12kA^2$. When $K=U$, each equals $E/2$, so $x^2=A^2/2$.\n$$|x|=\\frac{A}{\\sqrt2}=\\frac{8}{\\sqrt2}=4\\sqrt2\\text{ cm}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A horizontal spring–mass oscillator has amplitude $8$ cm. At what distance from the mean position are its kinetic and potential energies equal?",
+  "options": [
+   "$2\\sqrt{2}$ cm",
+   "$4$ cm",
+   "$4\\sqrt{2}$ cm",
+   "$8$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$U=\\dfrac12kx^2$, $E=\\dfrac12kA^2$.\n$K=U\\Rightarrow U=\\dfrac{E}{2}\\Rightarrow x^2=\\dfrac{A^2}{2}$\n$|x|=\\dfrac{8}{\\sqrt{2}}=4\\sqrt{2}$ cm",
+  "distractor_notes": "A: uses one-quarter of the total energy for the potential energy. B: takes half the amplitude. D: confuses the equal-energy position with the turning point."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

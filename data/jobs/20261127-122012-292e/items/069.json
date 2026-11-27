@@ -1,0 +1,68 @@
+{
+ "qno": 69,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 69,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Lattice enthalpy",
+  "archetype": "property comparison",
+  "brief": "Which compound has the highest/lowest lattice enthalpy from a set of ionic compounds (e.g. NaF vs NaCl vs KCl etc.) — ordering-style comparison MCQ.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:50",
+   "2021:72",
+   "2021:53"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following ionic compounds has the highest lattice enthalpy?",
+ "options": [
+  "NaF",
+  "CaO",
+  "NaCl",
+  "MgO"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Lattice enthalpy magnitude increases with ionic charge product and decreases with ion separation. MgO and CaO have charge product 4; Mg²⁺ is smaller than Ca²⁺, so MgO has the highest lattice enthalpy.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Lattice enthalpy increases with the product of ionic charges and decreases with interionic distance. MgO and CaO have +2/-2 ions, giving a higher charge product than NaF and NaCl, which have +1/-1 ions. Between MgO and CaO, Mg2+ is smaller than Ca2+ while both contain O2-, so MgO has a shorter interionic distance and higher lattice enthalpy. Therefore MgO has the highest lattice enthalpy.\n\nIndependent check: Lattice enthalpy magnitude increases with ionic charge product and decreases with ion separation. MgO and CaO have charge product 4; Mg²⁺ is smaller than Ca²⁺, so MgO has the highest lattice enthalpy.",
+ "solution": "Lattice enthalpy increases with the product of ionic charges and decreases with interionic distance. MgO and CaO have the largest charge product, $|(+2)(-2)|=4$; since $\\mathrm{Mg^{2+}}$ is smaller than $\\mathrm{Ca^{2+}}$, MgO has the shorter interionic distance and the highest lattice enthalpy.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following ionic compounds has the highest lattice enthalpy?",
+  "options": [
+   "NaF",
+   "MgO",
+   "NaCl",
+   "CaO"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Lattice enthalpy increases with the product of ionic charges and decreases with interionic distance. MgO and CaO have +2/-2 ions, giving a higher charge product than NaF and NaCl, which have +1/-1 ions. Between MgO and CaO, Mg2+ is smaller than Ca2+ while both contain O2-, so MgO has a shorter interionic distance and higher lattice enthalpy. Therefore MgO has the highest lattice enthalpy.",
+  "distractor_notes": "A: considers small F- but ignores the higher +2/-2 charge product of MgO. C: compares only alkali halides and misses the doubly charged oxide. D: recognises the +2/-2 combination but ignores that Mg2+ is smaller than Ca2+."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

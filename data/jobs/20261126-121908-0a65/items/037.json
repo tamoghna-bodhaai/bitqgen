@@ -1,0 +1,75 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Voltmeter loading",
+  "archetype": "graph interpretation",
+  "brief": "Circuit of a cell with a resistor across which a voltmeter of given resistance is connected; find the voltmeter reading and the error caused by its finite resistance.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:26",
+   "2026s1:21",
+   "2026s2:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the circuit shown in the figure, a voltmeter of resistance $60\\ \\Omega$ is connected across a $15\\ \\Omega$ resistor. The cell has an emf of $30\\ \\text{V}$ and an internal resistance of $3\\ \\Omega$. The reading of the voltmeter and the absolute error caused by its finite resistance are, respectively:",
+ "options": [
+  "$20\\ \\text{V}$ and $5\\ \\text{V}$",
+  "$24\\ \\text{V}$ and $1\\ \\text{V}$",
+  "$24\\ \\text{V}$ and $6\\ \\text{V}$",
+  "$25\\ \\text{V}$ and $0\\ \\text{V}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q037_stem_v0.png",
+  "width_pct": 75,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "With voltmeter: 15||60 = 12 Ω; total = 12+3 = 15 Ω; reading = 30×12/15 = 24 V. Ideal (no voltmeter): V = 30×15/18 = 25 V. Absolute error = 25−24 = 1 V.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. True potential difference across $R = 15\\ \\Omega$ without the voltmeter:\nThe current in the unloaded circuit is:\n$$I_0 = \\dfrac{E}{R + r} = \\dfrac{30}{15 + 3} = \\dfrac{5}{3}\\ \\text{A}$$\nThe true potential difference is:\n$$V_0 = I_0 R = \\left(\\dfrac{5}{3}\\right) \\times 15 = 25\\ \\text{V}$$\n\n2. Potential difference with the voltmeter connected:\nThe parallel equivalent resistance of the resistor and the voltmeter is:\n$$R_p = \\dfrac{R \\cdot R_V}{R + R_V} = \\dfrac{15 \\times 60}{15 + 60} = \\dfrac{900}{75} = 12\\ \\Omega$$\nThe total equivalent resistance of the circuit becomes:\n$$R_{\\text{eq}} = R_p + r = 12 + 3 = 15\\ \\Omega$$\nThe current drawn from the cell is:\n$$I = \\dfrac{E}{R_{\\text{eq}}} = \\dfrac{30}{15} = 2\\ \\text{A}$$\nThe voltmeter reading is the potential difference across $R_p$:\n$$V = I R_p = 2 \\times 12 = 24\\ \\text{V}$$\n\n3. Absolute error in measurement:\n$$\\Delta V = |V_0 - V| = |25 - 24| = 1\\ \\text{V}$$\n\nThus, the reading is $24\\ \\text{V}$ and the error is $1\\ \\text{V}$.\n\nIndependent check: With voltmeter: 15||60 = 12 Ω; total = 12+3 = 15 Ω; reading = 30×12/15 = 24 V. Ideal (no voltmeter): V = 30×15/18 = 25 V. Absolute error = 25−24 = 1 V.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown in the figure, a voltmeter of resistance $60\\ \\Omega$ is connected across a $15\\ \\Omega$ resistor. The cell has an emf of $30\\ \\text{V}$ and an internal resistance of $3\\ \\Omega$. The reading of the voltmeter and the absolute error caused by its finite resistance are, respectively:",
+  "options": [
+   "$20\\ \\text{V}$ and $5\\ \\text{V}$",
+   "$24\\ \\text{V}$ and $1\\ \\text{V}$",
+   "$24\\ \\text{V}$ and $6\\ \\text{V}$",
+   "$25\\ \\text{V}$ and $0\\ \\text{V}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. True potential difference across $R = 15\\ \\Omega$ without the voltmeter:\nThe current in the unloaded circuit is:\n$$I_0 = \\dfrac{E}{R + r} = \\dfrac{30}{15 + 3} = \\dfrac{5}{3}\\ \\text{A}$$\nThe true potential difference is:\n$$V_0 = I_0 R = \\left(\\dfrac{5}{3}\\right) \\times 15 = 25\\ \\text{V}$$\n\n2. Potential difference with the voltmeter connected:\nThe parallel equivalent resistance of the resistor and the voltmeter is:\n$$R_p = \\dfrac{R \\cdot R_V}{R + R_V} = \\dfrac{15 \\times 60}{15 + 60} = \\dfrac{900}{75} = 12\\ \\Omega$$\nThe total equivalent resistance of the circuit becomes:\n$$R_{\\text{eq}} = R_p + r = 12 + 3 = 15\\ \\Omega$$\nThe current drawn from the cell is:\n$$I = \\dfrac{E}{R_{\\text{eq}}} = \\dfrac{30}{15} = 2\\ \\text{A}$$\nThe voltmeter reading is the potential difference across $R_p$:\n$$V = I R_p = 2 \\times 12 = 24\\ \\text{V}$$\n\n3. Absolute error in measurement:\n$$\\Delta V = |V_0 - V| = |25 - 24| = 1\\ \\text{V}$$\n\nThus, the reading is $24\\ \\text{V}$ and the error is $1\\ \\text{V}$.",
+  "distractor_notes": "Option A assumes that the total circuit current remains unchanged at $5/3\\ \\text{A}$ after connecting the voltmeter, yielding $V = (5/3) \\times 12 = 20\\ \\text{V}$ and an error of $25 - 20 = 5\\ \\text{V}$.\nOption C correctly finds the voltmeter reading of $24\\ \\text{V}$ but computes the error relative to the cell's EMF ($30 - 24 = 6\\ \\text{V}$) rather than the true resistor potential difference.\nOption D assumes an ideal voltmeter ($R_V \\to \\infty$), resulting in the unloaded reading of $25\\ \\text{V}$ and zero error.",
+  "figure": {
+   "kind": "circuit",
+   "description": "A rectangular single-loop circuit diagram with one parallel branch. The top horizontal segment contains a DC cell labeled '30 V' (positive terminal on the left indicated by a longer vertical line, negative on the right) in series with a resistor labeled 'r = 3 \\Omega'. The right vertical branch contains a resistor labeled 'R = 15 \\Omega'. Connected across this 15 \\Omega resistor between two junction nodes above and below it is an outer parallel branch containing a voltmeter represented as a circle with the letter 'V' inside, labeled 'R_V = 60 \\Omega'. The bottom horizontal wire connects the lower junction back to the cell's negative terminal.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1
+ }
+}

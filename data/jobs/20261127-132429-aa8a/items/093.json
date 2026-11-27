@@ -1,0 +1,68 @@
+{
+ "qno": 93,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 93,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle – tangency condition",
+  "archetype": "tangency condition",
+  "brief": "Find the condition on the radius/centre so that a circle is tangent to both coordinate axes or a given line.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:129",
+   "2023s2:94",
+   "2023s2:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "A circle has centre $(p,9-p)$, where $0<p<9$. If it is tangent to both coordinate axes, what is its radius?",
+ "options": [
+  "$4$",
+  "$5$",
+  "$4.5$",
+  "$9$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Tangency to both axes requires the radius to equal both positive coordinates: $p=9-p$. Thus $p=4.5$ and the radius is $4.5$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Tangency to the axes gives $r=p=9-p$.\\n$2p=9\\Rightarrow r=4.5$.\n\nIndependent check: Tangency to both axes requires the radius to equal both positive coordinates: $p=9-p$. Thus $p=4.5$ and the radius is $4.5$.",
+ "solution": "Tangency to both coordinate axes gives $r=p=9-p$.\n$$2p=9\\Rightarrow p=4.5,\\qquad r=4.5.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A circle has centre $(p,9-p)$, where $0<p<9$. If it is tangent to both coordinate axes, what is its radius?",
+  "options": [
+   "$4$",
+   "$4.5$",
+   "$5$",
+   "$9$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Tangency to the axes gives $r=p=9-p$.\\n$2p=9\\Rightarrow r=4.5$.",
+  "distractor_notes": "A: Uses half the coordinate sum incorrectly.\\nC: Rounds the radius to the nearest integer.\\nD: Uses the sum of the coordinates as the radius."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

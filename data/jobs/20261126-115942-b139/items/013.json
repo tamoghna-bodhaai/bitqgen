@@ -1,0 +1,67 @@
+{
+ "qno": 13,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 13,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "e^f (g + g') form",
+  "archetype": "recognise derivative pattern",
+  "brief": "Give an integral of the form ∫e^x(f(x)+f'(x))dx plus a constant trap, asking which option equals it; difficulty via a non-obvious f requiring simplification first.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:99",
+   "2026s2:126",
+   "2026s1:99"
+  ]
+ },
+ "status": "ok",
+ "stem": "$\\displaystyle\\int e^{x}\\left(\\dfrac{2-\\sin 2x}{1-\\cos 2x}\\right)dx$ is equal to (where $C$ is an arbitrary constant)",
+ "options": [
+  "$e^{x}\\cot x + C$",
+  "$-\\dfrac{1}{2}e^{x}\\cot x + C$",
+  "$-e^{x}\\cot x + C$",
+  "$-e^{x}\\cot 2x + C$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "Rewrite the integrand:\n(2 - sin 2x) / (1 - cos 2x) = (2 - 2 sin x cos x) / (2 sin^2 x) = csc^2 x - cot x.\nRecognize the standard form e^x [f(x) + f'(x)] where f(x) = -cot x and f'(x) = csc^2 x.\nThus, the integral is e^x f(x) + C = -e^x cot x + C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Simplify the integrand using $1-\\cos 2x = 2\\sin^2 x$ and $\\sin 2x = 2\\sin x\\cos x$:\n$$\\frac{2-\\sin 2x}{1-\\cos 2x}=\\frac{2-2\\sin x\\cos x}{2\\sin^2 x}=\\csc^2 x-\\cot x.$$\nTake $f(x)=-\\cot x$. Then $f'(x)=\\csc^2 x$, so the integrand is $e^x\\,(f+f')$.\n\nUsing $\\int e^x\\,(f+f')\\,dx=e^x f(x)+C$:\n$$\\int e^{x}(\\csc^2x-\\cot x)\\,dx=-e^{x}\\cot x+C.$$\n\nCheck by differentiating: $\\dfrac{d}{dx}\\left(-e^x\\cot x\\right)=-e^x\\cot x+e^x\\csc^2 x$. This matches the integrand.\n\nIndependent check: Rewrite the integrand:\n(2 - sin 2x) / (1 - cos 2x) = (2 - 2 sin x cos x) / (2 sin^2 x) = csc^2 x - cot x.\nRecognize the standard form e^x [f(x) + f'(x)] where f(x) = -cot x and f'(x) = csc^2 x.\nThus, the integral is e^x f(x) + C = -e^x cot x + C.",
+ "solution": "Use $1-\\cos 2x=2\\sin^2x$ and $\\sin 2x=2\\sin x\\cos x$:\n$$\\frac{2-\\sin 2x}{1-\\cos 2x}=\\frac{2-2\\sin x\\cos x}{2\\sin^2x}=\\csc^2x-\\cot x.$$\nLet $f(x)=-\\cot x$, so $f'(x)=\\csc^2x$ and the integrand is $e^x\\,[f(x)+f'(x)]$.\n$$\\int e^x\\,[f(x)+f'(x)]\\,dx=e^xf(x)+C=-e^x\\cot x+C.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "$\\displaystyle\\int e^{x}\\left(\\dfrac{2-\\sin 2x}{1-\\cos 2x}\\right)dx$ is equal to (where $C$ is an arbitrary constant)",
+  "options": [
+   "$e^{x}\\cot x + C$",
+   "$-e^{x}\\cot x + C$",
+   "$-\\dfrac{1}{2}e^{x}\\cot x + C$",
+   "$-e^{x}\\cot 2x + C$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Simplify the integrand using $1-\\cos 2x = 2\\sin^2 x$ and $\\sin 2x = 2\\sin x\\cos x$:\n$$\\frac{2-\\sin 2x}{1-\\cos 2x}=\\frac{2-2\\sin x\\cos x}{2\\sin^2 x}=\\csc^2 x-\\cot x.$$\nTake $f(x)=-\\cot x$. Then $f'(x)=\\csc^2 x$, so the integrand is $e^x\\,(f+f')$.\n\nUsing $\\int e^x\\,(f+f')\\,dx=e^x f(x)+C$:\n$$\\int e^{x}(\\csc^2x-\\cot x)\\,dx=-e^{x}\\cot x+C.$$\n\nCheck by differentiating: $\\dfrac{d}{dx}\\left(-e^x\\cot x\\right)=-e^x\\cot x+e^x\\csc^2 x$. This matches the integrand.",
+  "distractor_notes": "A: takes $f=\\cot x$, missing the sign (the derivative of $\\cot x$ is $-\\csc^2 x$).\nC: does not cancel the common factor 2 between numerator and denominator, leaving a stray factor $\\tfrac12$.\nD: keeps the double angle and writes $\\cot 2x$ without converting to single-angle form.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Magnetic flux",
+  "archetype": "flux change over time",
+  "brief": "Magnetic flux through a stationary loop changes linearly with time (uniform field growing/shrinking); compute average induced emf and current through a resistance over a time interval.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:14",
+   "2024s2:9",
+   "2023s2:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "The magnetic flux through a single-turn stationary loop decreases uniformly from $12$ mWb to zero in $4$ s. If the loop resistance is $3\\ \\Omega$, what is the induced current?",
+ "options": [
+  "$0.25$ mA",
+  "$3$ mA",
+  "$1$ mA",
+  "$4$ mA"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Induced emf = |ΔΦ|/Δt = 12 mWb / 4 s = 3 mV. Current = 3 mV / 3 Ω = 1 mA.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|\\mathcal{E}|=\\dfrac{|\\Delta\\Phi|}{\\Delta t}=\\dfrac{12\\times10^{-3}}{4}=3\\times10^{-3}$ V\n$I=|\\mathcal{E}|/R=\\dfrac{3\\times10^{-3}}{3}=1\\times10^{-3}$ A $=1$ mA\n\nIndependent check: Induced emf = |ΔΦ|/Δt = 12 mWb / 4 s = 3 mV. Current = 3 mV / 3 Ω = 1 mA.",
+ "solution": "For a single-turn loop, $|\\mathcal{E}|=|\\Delta\\Phi|/\\Delta t$.\n$$|\\mathcal{E}|=\\frac{12\\times10^{-3}}{4}=3\\times10^{-3}\\,\\text{V},\\qquad I=\\frac{|\\mathcal{E}|}{R}=\\frac{3\\times10^{-3}}{3}=1\\times10^{-3}\\,\\text{A}=1\\,\\text{mA}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The magnetic flux through a single-turn stationary loop decreases uniformly from $12$ mWb to zero in $4$ s. If the loop resistance is $3\\ \\Omega$, what is the induced current?",
+  "options": [
+   "$0.25$ mA",
+   "$1$ mA",
+   "$3$ mA",
+   "$4$ mA"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$|\\mathcal{E}|=\\dfrac{|\\Delta\\Phi|}{\\Delta t}=\\dfrac{12\\times10^{-3}}{4}=3\\times10^{-3}$ V\n$I=|\\mathcal{E}|/R=\\dfrac{3\\times10^{-3}}{3}=1\\times10^{-3}$ A $=1$ mA",
+  "distractor_notes": "A: Uses an incorrect flux-change rate. C: Gives the emf's numerical value as the current. D: Omits division by the resistance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

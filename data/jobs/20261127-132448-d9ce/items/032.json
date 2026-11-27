@@ -1,0 +1,68 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Spring energy",
+  "archetype": "ratio of two situations",
+  "brief": "A spring-block system stretched differently in two trials; compare maximum speeds or energies delivered using energy conservation.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:24",
+   "2022:19",
+   "2023s1:14"
+  ]
+ },
+ "status": "ok",
+ "stem": "In two frictionless trials, a block of mass $m$ is released from rest with a spring of constant $k$ stretched by $2x$. In the other trial, a block of mass $2m$ is released from rest with a spring of constant $4k$ stretched by $x$. Find $v_1/v_2$, the ratio of their maximum speeds.",
+ "options": [
+  "$\\dfrac{1}{\\sqrt{2}}$",
+  "$1$",
+  "$2$",
+  "$\\sqrt{2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Energy conservation gives maximum speed as amplitude times angular frequency: v_max = A√(k/m). Hence v₁ = 2x√(k/m), while v₂ = x√(4k/(2m)); therefore v₁/v₂ = √2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Energy conservation gives $v_{\\max}=\\Delta x\\sqrt{\\dfrac{k}{m}}$.\\n$v_1=2x\\sqrt{\\dfrac{k}{m}}$.\\n$v_2=x\\sqrt{\\dfrac{4k}{2m}}=x\\sqrt{\\dfrac{2k}{m}}$.\\n$\\dfrac{v_1}{v_2}=\\sqrt{2}$.\n\nIndependent check: Energy conservation gives maximum speed as amplitude times angular frequency: v_max = A√(k/m). Hence v₁ = 2x√(k/m), while v₂ = x√(4k/(2m)); therefore v₁/v₂ = √2.",
+ "solution": "By energy conservation, the maximum speed is $v_{\\\\rm max}=A\\sqrt{\\dfrac{k}{m}}$. Thus $v_1=2x\\sqrt{\\dfrac{k}{m}}$ and $v_2=x\\sqrt{\\dfrac{4k}{2m}}$. Hence $\\dfrac{v_1}{v_2}=\\sqrt{2}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In two frictionless trials, a block of mass $m$ is released from rest with a spring of constant $k$ stretched by $2x$. In the other trial, a block of mass $2m$ is released from rest with a spring of constant $4k$ stretched by $x$. Find $v_1/v_2$, the ratio of their maximum speeds.",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{2}}$",
+   "$1$",
+   "$\\sqrt{2}$",
+   "$2$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Energy conservation gives $v_{\\max}=\\Delta x\\sqrt{\\dfrac{k}{m}}$.\\n$v_1=2x\\sqrt{\\dfrac{k}{m}}$.\\n$v_2=x\\sqrt{\\dfrac{4k}{2m}}=x\\sqrt{\\dfrac{2k}{m}}$.\\n$\\dfrac{v_1}{v_2}=\\sqrt{2}$.",
+  "distractor_notes": "A: Takes the reciprocal of the speed ratio.\\nB: Omits the change in spring constant or mass.\\nD: Compares extensions alone and ignores the mass and spring-constant changes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Newton's second law (vector)",
+  "archetype": "system then part",
+  "brief": "Blocks in contact or connected by string on frictionless surface; find acceleration then contact/tension force",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:7",
+   "2024s1:8",
+   "2023s1:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two blocks of masses $4\\ \\text{kg}$ and $6\\ \\text{kg}$ are in contact on a frictionless horizontal surface. A horizontal force of $20\\ \\text{N}$ is applied to the $4\\ \\text{kg}$ block towards the $6\\ \\text{kg}$ block. The magnitude of the contact force between the two blocks is:",
+ "options": [
+  "$8\\ \\text{N}$",
+  "$10\\ \\text{N}$",
+  "$12\\ \\text{N}$",
+  "$20\\ \\text{N}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "a = F/(m1+m2) = 20/10 = 2 m/s². Contact force = m2·a = 6×2 = 12 N (check: 20 − 4×2 = 12 N).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Step 1: Treat both blocks as a single system to find their common acceleration.\n$$a = \\dfrac{F}{m_1 + m_2} = \\dfrac{20\\ \\text{N}}{4\\ \\text{kg} + 6\\ \\text{kg}} = \\dfrac{20}{10} = 2\\ \\text{m s}^{-2}$$\n\nStep 2: Isolate the $6\\ \\text{kg}$ block. The only horizontal force acting on it is the normal contact force $N$ exerted by the $4\\ \\text{kg}$ block.\n$$N = m_2 a = 6\\ \\text{kg} \\times 2\\ \\text{m s}^{-2} = 12\\ \\text{N}$$\n\nThus, the contact force between the blocks is $12\\ \\text{N}$.\n\nIndependent check: a = F/(m1+m2) = 20/10 = 2 m/s². Contact force = m2·a = 6×2 = 12 N (check: 20 − 4×2 = 12 N).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Two blocks of masses $4\\ \\text{kg}$ and $6\\ \\text{kg}$ are in contact on a frictionless horizontal surface. A horizontal force of $20\\ \\text{N}$ is applied to the $4\\ \\text{kg}$ block towards the $6\\ \\text{kg}$ block. The magnitude of the contact force between the two blocks is:",
+  "options": [
+   "$8\\ \\text{N}$",
+   "$10\\ \\text{N}$",
+   "$12\\ \\text{N}$",
+   "$20\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Step 1: Treat both blocks as a single system to find their common acceleration.\n$$a = \\dfrac{F}{m_1 + m_2} = \\dfrac{20\\ \\text{N}}{4\\ \\text{kg} + 6\\ \\text{kg}} = \\dfrac{20}{10} = 2\\ \\text{m s}^{-2}$$\n\nStep 2: Isolate the $6\\ \\text{kg}$ block. The only horizontal force acting on it is the normal contact force $N$ exerted by the $4\\ \\text{kg}$ block.\n$$N = m_2 a = 6\\ \\text{kg} \\times 2\\ \\text{m s}^{-2} = 12\\ \\text{N}$$\n\nThus, the contact force between the blocks is $12\\ \\text{N}$.",
+  "distractor_notes": "$8\\ \\text{N}$ comes from calculating $m_1 a = 4 \\times 2\\ \\text{N}$, which would be the contact force if the force were applied to the $6\\ \\text{kg}$ block instead.\n$10\\ \\text{N}$ comes from naively assuming the force splits equally between the two blocks ($F/2$).\n$20\\ \\text{N}$ comes from assuming the entire external force is transmitted across the contact interface.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

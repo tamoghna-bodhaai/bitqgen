@@ -1,0 +1,68 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Excess pressure in soap bubble",
+  "archetype": "ratio computation",
+  "brief": "Compare excess pressure inside two soap bubbles of different radii, or work done to blow a bubble using surface energy.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:10",
+   "2021:35",
+   "2024s1:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two soap bubbles of radii 2 mm and 4 mm are made from the same soap solution. The ratio of excess pressure inside the smaller bubble to that inside the larger bubble is:",
+ "options": [
+  "1:2",
+  "1:1",
+  "2:1",
+  "4:1"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a soap bubble, excess pressure is ΔP = 4T/r. With the same solution, ΔP_small/ΔP_large = 4/2 = 2, so the ratio is 2:1.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Excess pressure inside a soap bubble = 4T/R. Ratio = (4T/2) / (4T/4) = 2:1.\n\nIndependent check: For a soap bubble, excess pressure is ΔP = 4T/r. With the same solution, ΔP_small/ΔP_large = 4/2 = 2, so the ratio is 2:1.",
+ "solution": "For a soap bubble, excess pressure is $\\Delta P=\\dfrac{4T}{r}$.\n$$\\frac{\\Delta P_{\\text{small}}}{\\Delta P_{\\text{large}}}=\\frac{4T/(2\\,\\text{mm})}{4T/(4\\,\\text{mm})}=2:1$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Two soap bubbles of radii 2 mm and 4 mm are made from the same soap solution. The ratio of excess pressure inside the smaller bubble to that inside the larger bubble is:",
+  "options": [
+   "1:2",
+   "1:1",
+   "2:1",
+   "4:1"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Excess pressure inside a soap bubble = 4T/R. Ratio = (4T/2) / (4T/4) = 2:1.",
+  "distractor_notes": "A: reciprocal ratio; B: assumed excess pressure is same; D: used square of radius ratio."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

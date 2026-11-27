@@ -1,0 +1,68 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order half-life",
+  "archetype": "equation-solving numeric",
+  "brief": "For a first-order reaction, find the time for a stated fraction of reactant to decompose, or the fraction left after a given number of half-lives.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:39",
+   "2024s2:32",
+   "2024s2:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "A first-order reaction has a half-life of $20$ min. How long does it take for $\\dfrac{7}{8}$ of the reactant to decompose?",
+ "options": [
+  "$20$ min",
+  "$40$ min",
+  "$80$ min",
+  "$60$ min"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A remaining fraction of 1/8 equals (1/2)^3, so 3 half-lives are needed: 3 × 20 = 60 min.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Fraction remaining $=1-\\dfrac{7}{8}=\\dfrac{1}{8}=\\left(\\dfrac{1}{2}\\right)^3$.\nThus, $3$ half-lives elapse.\n$t=3(20\\ \\text{min})=60\\ \\text{min}$.\n\nIndependent check: A remaining fraction of 1/8 equals (1/2)^3, so 3 half-lives are needed: 3 × 20 = 60 min.",
+ "solution": "The fraction remaining is $1-\\frac{7}{8}=\\frac{1}{8}=\\left(\\frac{1}{2}\\right)^3$, so $3$ half-lives elapse.\n$$t=3(20\\,\\text{min})=60\\,\\text{min}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A first-order reaction has a half-life of $20$ min. How long does it take for $\\dfrac{7}{8}$ of the reactant to decompose?",
+  "options": [
+   "$20$ min",
+   "$40$ min",
+   "$60$ min",
+   "$80$ min"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Fraction remaining $=1-\\dfrac{7}{8}=\\dfrac{1}{8}=\\left(\\dfrac{1}{2}\\right)^3$.\nThus, $3$ half-lives elapse.\n$t=3(20\\ \\text{min})=60\\ \\text{min}$.",
+  "distractor_notes": "A: counts one half-life; B: counts two half-lives; D: counts four half-lives."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

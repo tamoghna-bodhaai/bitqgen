@@ -1,0 +1,68 @@
+{
+ "qno": 77,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 77,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "venn-deduction",
+  "brief": "Three statements involving 'some', 'all' and 'no' with a tricky middle term; ask which of the given conclusions logically follows, testing valid venn placements.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:86",
+   "2025s2:77",
+   "2024s2:85"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll sparrows are birds.\nSome birds are parrots.\nNo parrot is a penguin.\n\n**Conclusions:**\nI. Some birds are not penguins.\nII. Some sparrows are parrots.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Some birds are parrots, and no parrot is a penguin; therefore, some birds are not penguins (I). The statements do not establish that any sparrows are parrots (II).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "All sparrows ⊆ birds; some birds are parrots; parrots ∩ penguins = ∅. The birds that are parrots are not penguins, so some birds are certainly not penguins (I follows). Sparrows and parrots are both inside birds but with no stated overlap, so 'some sparrows are parrots' is not definite (II fails).\n\nIndependent check: Some birds are parrots, and no parrot is a penguin; therefore, some birds are not penguins (I). The statements do not establish that any sparrows are parrots (II).",
+ "solution": "Some birds are parrots, and no parrot is a penguin; hence some birds are not penguins, so conclusion I follows. The statements do not establish any overlap between sparrows and parrots, so II does not follow.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statements:**\nAll sparrows are birds.\nSome birds are parrots.\nNo parrot is a penguin.\n\n**Conclusions:**\nI. Some birds are not penguins.\nII. Some sparrows are parrots.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "All sparrows ⊆ birds; some birds are parrots; parrots ∩ penguins = ∅. The birds that are parrots are not penguins, so some birds are certainly not penguins (I follows). Sparrows and parrots are both inside birds but with no stated overlap, so 'some sparrows are parrots' is not definite (II fails).",
+  "distractor_notes": "B fails because 'some birds are parrots' gives no link between sparrows and parrots. C fails because II is indefinite. D fails because I is a valid particular negative."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Triangle classification",
+  "archetype": "magnitudes comparison",
+  "brief": "Given position vectors of triangle vertices, compute side lengths via dot/magnitude and classify the triangle (right/isoceles).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:120",
+   "2026s2:121",
+   "2026s2:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "The position vectors of $A$, $B$ and $C$ are $(1,2,0)$, $(4,2,0)$ and $(1,6,0)$, respectively. The triangle $ABC$ is",
+ "options": [
+  "right-angled at $A$",
+  "right-angled at $B$",
+  "right-angled at $C$",
+  "isosceles"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\overrightarrow{AB}=(3,0,0)\\) and \\(\\overrightarrow{AC}=(0,4,0)\\), so \\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=0\\). Thus the triangle is right-angled at A. The side lengths are 3, 4, and 5, so it is not isosceles.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$AB=|(3,0,0)|=3$, $AC=|(0,4,0)|=4$, $BC=|(-3,4,0)|=5$.\\n$AB^2+AC^2=3^2+4^2=5^2=BC^2$; hence the right angle is at $A$.\n\nIndependent check: \\(\\overrightarrow{AB}=(3,0,0)\\) and \\(\\overrightarrow{AC}=(0,4,0)\\), so \\(\\overrightarrow{AB}\\cdot\\overrightarrow{AC}=0\\). Thus the triangle is right-angled at A. The side lengths are 3, 4, and 5, so it is not isosceles.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The position vectors of $A$, $B$ and $C$ are $(1,2,0)$, $(4,2,0)$ and $(1,6,0)$, respectively. The triangle $ABC$ is",
+  "options": [
+   "right-angled at $A$",
+   "right-angled at $B$",
+   "right-angled at $C$",
+   "isosceles"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$AB=|(3,0,0)|=3$, $AC=|(0,4,0)|=4$, $BC=|(-3,4,0)|=5$.\\n$AB^2+AC^2=3^2+4^2=5^2=BC^2$; hence the right angle is at $A$.",
+  "distractor_notes": "B: assigns the right angle to the wrong vertex; C: assigns the right angle to the wrong vertex; D: mistakes unequal side lengths for an isosceles triangle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

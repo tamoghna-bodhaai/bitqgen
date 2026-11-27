@@ -1,0 +1,67 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order half-life",
+  "archetype": "count half-lives",
+  "brief": "Numerical where a fixed half-life must be used to find the time for a sample to fall from an initial to a final mass/activity — count the number of half-lives and multiply.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:44",
+   "2025s1:48",
+   "2026s2:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "A first-order reaction has a half-life of $15\\ \\text{min}$. The time required for the mass of the reactant to decrease from $64\\ \\text{g}$ to $2\\ \\text{g}$ is:",
+ "options": [
+  "$45\\ \\text{min}$",
+  "$60\\ \\text{min}$",
+  "$75\\ \\text{min}$",
+  "$90\\ \\text{min}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "64 g → 2 g is a factor of 32 = 2^5, i.e. 5 half-lives. For first order, t = 5 × 15 min = 75 min.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a first-order process, the amount of reactant remaining after $n$ half-lives is given by:\n$$\\dfrac{m_t}{m_0} = \\left(\\dfrac{1}{2}\\right)^n$$\n\nGiven $m_0 = 64\\ \\text{g}$ and $m_t = 2\\ \\text{g}$:\n$$\\dfrac{2}{64} = \\dfrac{1}{32} = \\left(\\dfrac{1}{2}\\right)^5$$\n\nTherefore, the number of half-lives is $n = 5$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 5 \\times 15\\ \\text{min} = 75\\ \\text{min}$$\n\nIndependent check: 64 g → 2 g is a factor of 32 = 2^5, i.e. 5 half-lives. For first order, t = 5 × 15 min = 75 min.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A first-order reaction has a half-life of $15\\ \\text{min}$. The time required for the mass of the reactant to decrease from $64\\ \\text{g}$ to $2\\ \\text{g}$ is:",
+  "options": [
+   "$45\\ \\text{min}$",
+   "$60\\ \\text{min}$",
+   "$75\\ \\text{min}$",
+   "$90\\ \\text{min}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "For a first-order process, the amount of reactant remaining after $n$ half-lives is given by:\n$$\\dfrac{m_t}{m_0} = \\left(\\dfrac{1}{2}\\right)^n$$\n\nGiven $m_0 = 64\\ \\text{g}$ and $m_t = 2\\ \\text{g}$:\n$$\\dfrac{2}{64} = \\dfrac{1}{32} = \\left(\\dfrac{1}{2}\\right)^5$$\n\nTherefore, the number of half-lives is $n = 5$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 5 \\times 15\\ \\text{min} = 75\\ \\text{min}$$",
+  "distractor_notes": "Option A ($45\\ \\text{min}$) corresponds to $n = 3$ half-lives, resulting from incorrectly associating the reduction factor with $2^3$ or stopping at $8\\ \\text{g}$.\nOption B ($60\\ \\text{min}$) corresponds to $n = 4$ half-lives, an off-by-one error where the decay is stopped at $4\\ \\text{g}$.\nOption D ($90\\ \\text{min}$) corresponds to $n = 6$ half-lives, an off-by-one error where an extra half-life is counted (reducing down to $1\\ \\text{g}$).",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

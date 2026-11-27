@@ -1,0 +1,68 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Energy level transitions",
+  "archetype": "ratio computation",
+  "brief": "Energy level transitions in hydrogen-like atom: find the wavelength or energy ratio of photons emitted in a stated transition series, or compute the shortest wavelength of a spectral series.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:25",
+   "2023s1:19",
+   "2026s2:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a hydrogen atom, photons are emitted in transitions $n=4\\to2$ and $n=3\\to2$. What is the ratio of their wavelengths, $\\lambda_{42}/\\lambda_{32}$?",
+ "options": [
+  "$\\dfrac{27}{20}$",
+  "$\\dfrac{20}{27}$",
+  "$\\dfrac{16}{9}$",
+  "$\\dfrac{9}{16}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a transition to n=2, ΔE ∝ 1/4 − 1/n² and λ ∝ 1/ΔE. Therefore λ₄₂/λ₃₂ = (5/36)/(3/16) = 20/27.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta E_{42}\\propto\\dfrac14-\\dfrac1{16}=\\dfrac3{16}$; $\\Delta E_{32}\\propto\\dfrac14-\\dfrac1{9}=\\dfrac5{36}$\\\\\n$\\dfrac{\\lambda_{42}}{\\lambda_{32}}=\\dfrac{\\Delta E_{32}}{\\Delta E_{42}}=\\dfrac{5/36}{3/16}=\\dfrac{20}{27}$\n\nIndependent check: For a transition to n=2, ΔE ∝ 1/4 − 1/n² and λ ∝ 1/ΔE. Therefore λ₄₂/λ₃₂ = (5/36)/(3/16) = 20/27.",
+ "solution": "For hydrogen, $\u0007Delta E\\propto \\frac{1}{n_f^2}-\\frac{1}{n_i^2}$ and $\\lambda\\propto 1/\\Delta E$.\n$$\\frac{\\lambda_{42}}{\\lambda_{32}}=\\frac{\\Delta E_{32}}{\\Delta E_{42}}=\\frac{\\frac14-\\frac19}{\\frac14-\\frac1{16}}=\\frac{5/36}{3/16}=\\frac{20}{27}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a hydrogen atom, photons are emitted in transitions $n=4\\to2$ and $n=3\\to2$. What is the ratio of their wavelengths, $\\lambda_{42}/\\lambda_{32}$?",
+  "options": [
+   "$\\dfrac{27}{20}$",
+   "$\\dfrac{20}{27}$",
+   "$\\dfrac{16}{9}$",
+   "$\\dfrac{9}{16}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\Delta E_{42}\\propto\\dfrac14-\\dfrac1{16}=\\dfrac3{16}$; $\\Delta E_{32}\\propto\\dfrac14-\\dfrac1{9}=\\dfrac5{36}$\\\\\n$\\dfrac{\\lambda_{42}}{\\lambda_{32}}=\\dfrac{\\Delta E_{32}}{\\Delta E_{42}}=\\dfrac{5/36}{3/16}=\\dfrac{20}{27}$",
+  "distractor_notes": "A takes the reciprocal; C and D use incorrect energy differences or invert the wavelength-energy relation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

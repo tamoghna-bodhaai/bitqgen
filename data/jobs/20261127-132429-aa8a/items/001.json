@@ -1,0 +1,68 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Calorimetry with phase change",
+  "archetype": "ratio of two situations",
+  "brief": "Calorimetry with phase change: ice at 0°C added to warm water; find final temperature or mass of ice melted using latent heat and specific heat, comparing the heat lost and gained.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:7",
+   "2022:17",
+   "2026s2:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "In separate trials, excess ice at $0^\\circ\\text{C}$ is added to $100$ g of water at $40^\\circ\\text{C}$ and $150$ g of water at $20^\\circ\\text{C}$. What is the ratio of the masses of ice melted? Take $c_{\\text{water}}=1$ cal g$^{-1}\\,{}^\\circ\\text{C}^{-1}$ and $L_f=80$ cal g$^{-1}$.",
+ "options": [
+  "$1:2$",
+  "$3:4$",
+  "$3:2$",
+  "$4:3$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Ice melted = heat released by water ÷ L_f. The two trials melt 100×40/80 = 50 g and 150×20/80 = 37.5 g, respectively; ratio = 4:3.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Q_1=100(1)(40)=4000$ cal, $Q_2=150(1)(20)=3000$ cal\n$m_1=Q_1/L_f=50$ g, $m_2=Q_2/L_f=37.5$ g\n$m_1:m_2=50:37.5=4:3$\n\nIndependent check: Ice melted = heat released by water ÷ L_f. The two trials melt 100×40/80 = 50 g and 150×20/80 = 37.5 g, respectively; ratio = 4:3.",
+ "solution": "Heat released by the water melts the ice: $Q=mc_{\\text{water}}\\Delta T=m_{\\text{ice}}L_f$.\n$$m_1=\\frac{100\\times1\\times40}{80}=50\\text{ g},\\qquad m_2=\\frac{150\\times1\\times20}{80}=37.5\\text{ g}$$\nThus, $m_1:m_2=50:37.5=4:3$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In separate trials, excess ice at $0^\\circ\\text{C}$ is added to $100$ g of water at $40^\\circ\\text{C}$ and $150$ g of water at $20^\\circ\\text{C}$. What is the ratio of the masses of ice melted? Take $c_{\\text{water}}=1$ cal g$^{-1}\\,{}^\\circ\\text{C}^{-1}$ and $L_f=80$ cal g$^{-1}$.",
+  "options": [
+   "$1:2$",
+   "$3:4$",
+   "$4:3$",
+   "$3:2$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$Q_1=100(1)(40)=4000$ cal, $Q_2=150(1)(20)=3000$ cal\n$m_1=Q_1/L_f=50$ g, $m_2=Q_2/L_f=37.5$ g\n$m_1:m_2=50:37.5=4:3$",
+  "distractor_notes": "A: Incorrect comparison of the heat supplied. B: Reverses or miscalculates the ratio. D: Uses the water masses but neglects their temperature differences."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

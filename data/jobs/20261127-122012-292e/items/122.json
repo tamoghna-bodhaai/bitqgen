@@ -1,0 +1,64 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "general solution",
+  "brief": "find the complete general solution of a trigonometric equation reducible to a single function via factorisation or double-angle formulae",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:107",
+   "2021:125",
+   "2026s2:92"
+  ]
+ },
+ "status": "failed",
+ "stem": "The general solution of \\(\\cos x + \\cos 3x = \\cos 2x\\) is",
+ "options": [
+  "$x = \\frac{(2n+1)\\pi}{4}$ or $x = n\\pi \\pm \\frac{\\pi}{3}$, $n \\in \\mathbb{Z}$",
+  "$x = \\frac{(2n+1)\\pi}{4}$ or $x = 2n\\pi \\pm \\frac{\\pi}{3}$, $n \\in \\mathbb{Z}$",
+  "$x = \\frac{n\\pi}{2}$ or $x = 2n\\pi \\pm \\frac{\\pi}{3}$, $n \\in \\mathbb{Z}$",
+  "$x = \\frac{n\\pi}{2}$ or $x = n\\pi \\pm \\frac{\\pi}{6}$, $n \\in \\mathbb{Z}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Using sum-to-product: \\(\\cos x + \\cos 3x = 2\\cos 2x \\cos x\\).\nThe equation becomes \\(2\\cos 2x \\cos x = \\cos 2x\\).\nRearrange: \\(\\cos 2x(2\\cos x - 1) = 0\\).\nHence \\(\\cos 2x = 0\\) or \\(\\cos x = \\frac12\\).\n\\(\\cos 2x = 0 \\Rightarrow 2x = \\frac{(2n+1)\\pi}{2} \\Rightarrow x = \\frac{(2n+1)\\pi}{4}\\).\n\\(\\cos x = \\frac12 \\Rightarrow x = 2n\\pi \\pm \\frac{\\pi}{3}\\).",
+ "solution": "Using $\n\\cos x+\\cos 3x=2\\cos 2x\\cos x$, the equation becomes\n$$\\cos 2x(2\\cos x-1)=0.\\]\nThus $\\cos 2x=0$ gives $x=\\frac{(2n+1)\\pi}{4}$, while $\\cos x=\\frac12$ gives $x=2n\\pi\\pm\\frac{\\pi}{3}$, $n\\in\\mathbb Z$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The general solution of \\(\\cos x + \\cos 3x = \\cos 2x\\) is",
+  "options": [
+   "$x = \\frac{(2n+1)\\pi}{4}$ or $x = 2n\\pi \\pm \\frac{\\pi}{3}$, $n \\in \\mathbb{Z}$",
+   "$x = \\frac{(2n+1)\\pi}{4}$ or $x = n\\pi \\pm \\frac{\\pi}{3}$, $n \\in \\mathbb{Z}$",
+   "$x = \\frac{n\\pi}{2}$ or $x = 2n\\pi \\pm \\frac{\\pi}{3}$, $n \\in \\mathbb{Z}$",
+   "$x = \\frac{n\\pi}{2}$ or $x = n\\pi \\pm \\frac{\\pi}{6}$, $n \\in \\mathbb{Z}$"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Using sum-to-product: \\(\\cos x + \\cos 3x = 2\\cos 2x \\cos x\\).\nThe equation becomes \\(2\\cos 2x \\cos x = \\cos 2x\\).\nRearrange: \\(\\cos 2x(2\\cos x - 1) = 0\\).\nHence \\(\\cos 2x = 0\\) or \\(\\cos x = \\frac12\\).\n\\(\\cos 2x = 0 \\Rightarrow 2x = \\frac{(2n+1)\\pi}{2} \\Rightarrow x = \\frac{(2n+1)\\pi}{4}\\).\n\\(\\cos x = \\frac12 \\Rightarrow x = 2n\\pi \\pm \\frac{\\pi}{3}\\).",
+  "distractor_notes": "B: mixes cosine general solution with sine period; C: solves cos(2x)=0 incorrectly as x=nπ/2; D: compounds both errors with an additional wrong angle"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Skew-symmetric matrices counting",
+  "archetype": "structural counting",
+  "brief": "Count skew-symmetric matrices of a given order with entries from a set, or find trace properties of such matrices.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:121",
+   "2024s1:101",
+   "2025s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many $4\\times4$ skew-symmetric matrices with entries from $\\{-1,0,1\\}$ have exactly four nonzero entries?",
+ "options": [
+  "$15$",
+  "$60$",
+  "$135$",
+  "$729$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A skew-symmetric matrix has six independent off-diagonal entries; each nonzero one contributes two nonzero matrix entries. Choose 2 of the 6 and assign each either sign: \\(\\binom{6}{2}2^2=60\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Diagonal entries are zero; the six entries above the diagonal determine the matrix.\\nExactly four nonzero entries in the full matrix means two of these six are nonzero.\\n$\\binom{6}{2}\\cdot2^2=60$.\n\nIndependent check: A skew-symmetric matrix has six independent off-diagonal entries; each nonzero one contributes two nonzero matrix entries. Choose 2 of the 6 and assign each either sign: \\(\\binom{6}{2}2^2=60\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "How many $4\\times4$ skew-symmetric matrices with entries from $\\{-1,0,1\\}$ have exactly four nonzero entries?",
+  "options": [
+   "$15$",
+   "$60$",
+   "$135$",
+   "$729$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Diagonal entries are zero; the six entries above the diagonal determine the matrix.\\nExactly four nonzero entries in the full matrix means two of these six are nonzero.\\n$\\binom{6}{2}\\cdot2^2=60$.",
+  "distractor_notes": "A: chooses the two positions but ignores their sign choices.\\nC: allows three values, including zero, at each selected position.\\nD: counts all matrices without imposing the nonzero-entry condition."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

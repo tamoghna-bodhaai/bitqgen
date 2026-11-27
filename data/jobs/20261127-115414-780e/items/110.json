@@ -1,0 +1,68 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola equation",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of the parabola with a given vertex and axis, or a circle passing through points; write the standard equation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:106",
+   "2026s2:112",
+   "2025s1:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "A parabola has vertex at (1, 2), its axis is parallel to the x-axis, and it passes through (5, 6). The equation of the parabola is:",
+ "options": [
+  "(y - 2)^2 = 4(x - 1)",
+  "(y - 2)^2 = 2(x - 1)",
+  "(y - 2)^2 = 8(x - 1)",
+  "(x - 1)^2 = 4(y - 2)"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a horizontal-axis parabola, \\((y-2)^2=4a(x-1)\\). Substituting \\((5,6)\\) gives \\(16=16a\\), so \\(a=1\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a parabola with vertex (h, k) and axis parallel to the x-axis, the equation is (y - k)^2 = 4p(x - h). Here h = 1, k = 2. Substituting the point (5, 6): (6 - 2)^2 = 4p(5 - 1), so 16 = 16p and p = 1. Hence the equation is (y - 2)^2 = 4(x - 1).\n\nIndependent check: For a horizontal-axis parabola, \\((y-2)^2=4a(x-1)\\). Substituting \\((5,6)\\) gives \\(16=16a\\), so \\(a=1\\).",
+ "solution": "For a parabola with vertex $(h,k)$ and axis parallel to the $x$-axis, $(y-k)^2=4p(x-h)$. Substituting the vertex $(1,2)$ and point $(5,6)$:\n$$ (6-2)^2=4p(5-1) \\implies 16=16p \\implies p=1. $$\nHence, $(y-2)^2=4(x-1)$. ⟦",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A parabola has vertex at (1, 2), its axis is parallel to the x-axis, and it passes through (5, 6). The equation of the parabola is:",
+  "options": [
+   "(y - 2)^2 = 4(x - 1)",
+   "(y - 2)^2 = 2(x - 1)",
+   "(y - 2)^2 = 8(x - 1)",
+   "(x - 1)^2 = 4(y - 2)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For a parabola with vertex (h, k) and axis parallel to the x-axis, the equation is (y - k)^2 = 4p(x - h). Here h = 1, k = 2. Substituting the point (5, 6): (6 - 2)^2 = 4p(5 - 1), so 16 = 16p and p = 1. Hence the equation is (y - 2)^2 = 4(x - 1).",
+  "distractor_notes": "B uses 2 as the coefficient instead of 4; C uses 8 as the coefficient from misreading the point difference; D uses the vertical-axis form of the parabola."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

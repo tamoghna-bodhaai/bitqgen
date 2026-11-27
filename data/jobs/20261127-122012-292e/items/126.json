@@ -1,0 +1,68 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Forming numbers with restrictions",
+  "archetype": "case-wise counting",
+  "brief": "count 4-digit numbers formed from given digits satisfying a divisibility (e.g. by 5) or position restriction, splitting into disjoint cases",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:92",
+   "2021:147",
+   "2026s2:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "The number of 4-digit numbers divisible by 3 that can be formed using the digits 0, 1, 2, 3, 4, 5 without repeating any digit is",
+ "options": [
+  "96",
+  "84",
+  "108",
+  "120"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Group digits by residues mod 3: {0,3}, {1,4}, {2,5}. Valid selections have residue counts (0,2,2) or (2,1,1), giving 1 and 4 selections. The first yields 24 arrangements; each of the other four contains 0 and yields 24−6=18. Total = 24+4×18=96.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "The sum of all digits is 15, which is divisible by 3. For a 4-digit number formed from this set to be divisible by 3, the sum of its digits must be divisible by 3, so the sum of the two unused digits must also be a multiple of 3. The unordered pairs with sum a multiple of 3 are (0,3), (1,2), (1,5), (2,4), (4,5).\n\nCase 1: Unused {0,3} → remaining digits {1,2,4,5} (no 0). Total arrangements = 4! = 24.\nCase 2: Unused {1,2} → remaining {0,3,4,5}. Total 4! = 24, subtract those beginning with 0 (3! = 6) → 18.\nCase 3: Unused {1,5} → remaining {0,2,3,4} → 18.\nCase 4: Unused {2,4} → remaining {0,1,3,5} → 18.\nCase 5: Unused {4,5} → remaining {0,1,2,3} → 18.\nTotal = 24 + 18 + 18 + 18 + 18 = 96.\n\nIndependent check: Group digits by residues mod 3: {0,3}, {1,4}, {2,5}. Valid selections have residue counts (0,2,2) or (2,1,1), giving 1 and 4 selections. The first yields 24 arrangements; each of the other four contains 0 and yields 24−6=18. Total = 24+4×18=96.",
+ "solution": "Since the sum of all six digits is $15$, the four chosen digits sum to a multiple of $3$ exactly when the two unused digits do. The possible unused pairs are $(0,3),(1,2),(1,5),(2,4),(4,5)$. \nFor $(0,3)$, the remaining digits have $4!=24$ arrangements; for each other pair, the remaining digits include $0$, giving $4!-3!=18$ valid arrangements.\n$$24+4(18)=96$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The number of 4-digit numbers divisible by 3 that can be formed using the digits 0, 1, 2, 3, 4, 5 without repeating any digit is",
+  "options": [
+   "84",
+   "96",
+   "108",
+   "120"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "The sum of all digits is 15, which is divisible by 3. For a 4-digit number formed from this set to be divisible by 3, the sum of its digits must be divisible by 3, so the sum of the two unused digits must also be a multiple of 3. The unordered pairs with sum a multiple of 3 are (0,3), (1,2), (1,5), (2,4), (4,5).\n\nCase 1: Unused {0,3} → remaining digits {1,2,4,5} (no 0). Total arrangements = 4! = 24.\nCase 2: Unused {1,2} → remaining {0,3,4,5}. Total 4! = 24, subtract those beginning with 0 (3! = 6) → 18.\nCase 3: Unused {1,5} → remaining {0,2,3,4} → 18.\nCase 4: Unused {2,4} → remaining {0,1,3,5} → 18.\nCase 5: Unused {4,5} → remaining {0,1,2,3} → 18.\nTotal = 24 + 18 + 18 + 18 + 18 = 96.",
+  "distractor_notes": "A (84): possibly missed the 12 extra numbers from the all-nonzero-digit case; C (108): double counted a case or used 4! for all cases without adjusting for zero; D (120): total 4-digit numbers using these digits without the divisibility condition."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 146,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 146,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Range of rational functions",
+  "archetype": "discriminant method",
+  "brief": "find the range of a rational function y = f(x) by converting to a quadratic in x and imposing discriminant ≥ 0",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:121",
+   "2023s2:112",
+   "2024s1:122"
+  ]
+ },
+ "status": "ok",
+ "stem": "The range of the function f(x) = (x + 1)/(x^2 + x + 1), x in R, is",
+ "options": [
+  "[-1, 1/3]",
+  "[-1, 1]",
+  "(-infinity, -1/3] union [1, infinity)",
+  "[-1/3, 1]"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The denominator is always positive. Differentiating gives f'(x) = -x(x+2)/(x²+x+1)², so the extrema occur at x = -2 and x = 0. Their values are -1/3 and 1, respectively; hence the range is [-1/3, 1].",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Let y = (x + 1)/(x^2 + x + 1). Multiply out: y*x^2 + y*x + y = x + 1, so y*x^2 + (y - 1)*x + (y - 1) = 0. For real x, discriminant >= 0: (y - 1)^2 - 4*y*(y - 1) >= 0, which is -3*y^2 + 2*y + 1 >= 0. Hence 3*y^2 - 2*y - 1 <= 0. The roots of 3*y^2 - 2*y - 1 = 0 are y = 1 and y = -1/3. Thus the range is [-1/3, 1].\n\nIndependent check: The denominator is always positive. Differentiating gives f'(x) = -x(x+2)/(x²+x+1)², so the extrema occur at x = -2 and x = 0. Their values are -1/3 and 1, respectively; hence the range is [-1/3, 1].",
+ "solution": "Let $y=\\dfrac{x+1}{x^2+x+1}$. For real $x$, the resulting quadratic $yx^2+(y-1)x+(y-1)=0$ must have non-negative discriminant:\n$$-3y^2+2y+1\\ge 0 \\iff 3y^2-2y-1\\le 0.$$\nIts roots are $-\\dfrac13$ and $1$, so the range is $\\boxed{[-\\dfrac13,1]}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The range of the function f(x) = (x + 1)/(x^2 + x + 1), x in R, is",
+  "options": [
+   "[-1, 1/3]",
+   "[-1/3, 1]",
+   "(-infinity, -1/3] union [1, infinity)",
+   "[-1, 1]"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let y = (x + 1)/(x^2 + x + 1). Multiply out: y*x^2 + y*x + y = x + 1, so y*x^2 + (y - 1)*x + (y - 1) = 0. For real x, discriminant >= 0: (y - 1)^2 - 4*y*(y - 1) >= 0, which is -3*y^2 + 2*y + 1 >= 0. Hence 3*y^2 - 2*y - 1 <= 0. The roots of 3*y^2 - 2*y - 1 = 0 are y = 1 and y = -1/3. Thus the range is [-1/3, 1].",
+  "distractor_notes": "A: reverses the endpoint order or an arithmetic slip in roots; C: selects the complement, i.e. discriminant <= 0; D: misses the third-factor coefficient and uses -1 as lower bound."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

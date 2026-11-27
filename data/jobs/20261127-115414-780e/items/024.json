@@ -1,0 +1,68 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Distance in nth second",
+  "archetype": "single-equation kinematics",
+  "brief": "Body under uniform acceleration from rest; distance in the nth second given, find total distance or acceleration.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:14",
+   "2026s1:3",
+   "2024s2:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "A body starts from rest and moves with uniform acceleration. The distance travelled by it during the 7th second is 13 m. The distance travelled by it in the first 7 seconds is:",
+ "options": [
+  "49 m",
+  "26 m",
+  "13 m",
+  "91 m"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For uniform acceleration, distance in the 7th second is \\(u+\\frac a2(2\\cdot7-1)=\\frac{13a}{2}=13\\), so \\(a=2\\,\\text{m/s}^2\\). Distance in the first 7 seconds is \\(\\frac12a(7^2)=49\\,\\text{m}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Distance in nth second from rest = a(2n - 1)/2. For n = 7: 13 = a(13)/2, so a = 2 m/s^2. Total in 7 s = (1/2) a t^2 = (1/2)(2)(7^2) = 49 m.\n\nIndependent check: For uniform acceleration, distance in the 7th second is \\(u+\\frac a2(2\\cdot7-1)=\\frac{13a}{2}=13\\), so \\(a=2\\,\\text{m/s}^2\\). Distance in the first 7 seconds is \\(\\frac12a(7^2)=49\\,\\text{m}\\).",
+ "solution": "Distance travelled in the $n$th second from rest is $s_n=\\frac{a}{2}(2n-1)$. Thus, $13=\\frac{13a}{2}$, giving $a=2\\,\\text{m/s}^2$. $$s_7=\\frac12at^2=\\frac12(2)(7^2)=49\\,\\text{m}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A body starts from rest and moves with uniform acceleration. The distance travelled by it during the 7th second is 13 m. The distance travelled by it in the first 7 seconds is:",
+  "options": [
+   "13 m",
+   "26 m",
+   "49 m",
+   "91 m"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Distance in nth second from rest = a(2n - 1)/2. For n = 7: 13 = a(13)/2, so a = 2 m/s^2. Total in 7 s = (1/2) a t^2 = (1/2)(2)(7^2) = 49 m.",
+  "distractor_notes": "A: only distance in 7th second; B: doubled the 7th-second distance; D: multiplied 7th-second distance by 7."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

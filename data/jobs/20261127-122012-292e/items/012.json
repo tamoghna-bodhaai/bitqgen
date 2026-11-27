@@ -1,0 +1,72 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE fringe width",
+  "archetype": "path difference geometry",
+  "brief": "YDSE diagram with slits and screen geometry; ask for the number of fringes visible in a region or the fringe width from given slit-screen distance.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:10",
+   "2026s1:17",
+   "2024s1:20"
+  ]
+ },
+ "status": "failed",
+ "stem": "In the Young's double slit experiment shown in the figure, a point source S of wavelength 400 nm is placed at a perpendicular distance h = 0.80 mm above the horizontal axis, at a distance L = 0.80 m from the slit plane. The two slits S1 and S2 are separated by d = 0.40 mm. The screen is parallel to the slit plane at a distance D = 1.6 m. The screen extends from y = -8.0 mm to y = +8.0 mm about the point O where the axis meets the screen. How many bright fringes are observed on the screen?",
+ "options": [
+  "11",
+  "10",
+  "9",
+  "12"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q012_stem_v2.png",
+  "width_pct": 70,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "Initial path difference at the slits: Delta0 = d * h / L = (0.40e-3)(0.80e-3)/(0.80) = 4.0e-7 m = 1 lambda. Fringe width: beta = lambda D / d = (400e-9)(1.6)/(0.40e-3) = 1.6e-3 m = 1.6 mm. Central fringe shift: y0 = -h D / L = -(0.80e-3)(1.6)/(0.80) = -1.6e-3 m = -1.6 mm. Bright fringe positions: y_m = y0 + m beta = -1.6 + 1.6 m mm. Endpoints: -8.0 <= -1.6 + 1.6m <= 8.0 gives -4 <= m <= 6. Count = 6 - (-4) + 1 = 11.",
+ "solution": "The fringe width is $\\beta=\\dfrac{\\lambda D}{d}=1.6\\,\\text{mm}$, and the central fringe is shifted by $y_0=-\\dfrac{hD}{L}=-1.6\\,\\text{mm}$.\n$$y_m=y_0+m\\beta=-1.6+1.6m\\quad(\\text{mm})$$\nRequiring $-8\\le y_m\\le 8$ gives $-4\\le m\\le6$, so the number of bright fringes is $6-(-4)+1=11$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "In the Young's double slit experiment shown in the figure, a point source S of wavelength 400 nm is placed at a perpendicular distance h = 0.80 mm above the horizontal axis, at a distance L = 0.80 m from the slit plane. The two slits S1 and S2 are separated by d = 0.40 mm. The screen is parallel to the slit plane at a distance D = 1.6 m. The screen extends from y = -8.0 mm to y = +8.0 mm about the point O where the axis meets the screen. How many bright fringes are observed on the screen?",
+  "options": [
+   "9",
+   "10",
+   "11",
+   "12"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a horizontal optical axis from left to right. At the left, mark a point source S located 0.80 mm vertically above the axis; label the perpendicular distance h = 0.80 mm. To the right of S, draw a vertical slit plane at a distance L = 0.80 m from S. In that plane, mark two small slits S1 and S2 separated vertically by d = 0.40 mm, symmetric about the axis; label S1 upper and S2 lower. To the right, draw a vertical screen parallel to the slit plane at D = 1.6 m from the slit plane. Mark the point O on the screen where the axis meets it. Indicate the screen's vertical useful region from y = -8.0 mm to y = +8.0 mm about O with arrows or limits; label these coordinates. Do not draw any fringe pattern or intensity curve.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "Initial path difference at the slits: Delta0 = d * h / L = (0.40e-3)(0.80e-3)/(0.80) = 4.0e-7 m = 1 lambda. Fringe width: beta = lambda D / d = (400e-9)(1.6)/(0.40e-3) = 1.6e-3 m = 1.6 mm. Central fringe shift: y0 = -h D / L = -(0.80e-3)(1.6)/(0.80) = -1.6e-3 m = -1.6 mm. Bright fringe positions: y_m = y0 + m beta = -1.6 + 1.6 m mm. Endpoints: -8.0 <= -1.6 + 1.6m <= 8.0 gives -4 <= m <= 6. Count = 6 - (-4) + 1 = 11.",
+  "distractor_notes": "A 9: counts only fringes strictly inside the two ends, m = -3 to 5. B 10: drops one of the two endpoint fringes. D 12: includes an extra fringe by taking m up to 7 or rounding the region width upward."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

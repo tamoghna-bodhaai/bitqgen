@@ -1,0 +1,67 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Temperature scales",
+  "archetype": "conversion",
+  "brief": "A thermometer reads a temperature on one scale; convert it to another scale and pick the correct numerical value.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:11",
+   "2024s1:26",
+   "2026s1:10"
+  ]
+ },
+ "status": "ok",
+ "stem": "A thermometer immersed in a water bath records a temperature of $45^\\circ\\text{C}$. What is the corresponding reading on the Fahrenheit scale?",
+ "options": [
+  "$49^\\circ\\text{F}$",
+  "$57^\\circ\\text{F}$",
+  "$81^\\circ\\text{F}$",
+  "$113^\\circ\\text{F}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "F = (9/5)C + 32 = (9/5)(45) + 32 = 81 + 32 = 113°F.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The relationship between the Celsius scale ($T_C$) and the Fahrenheit scale ($T_F$) is given by:\n$$T_F = \\dfrac{9}{5}T_C + 32$$\n\nSubstitute $T_C = 45^\\circ\\text{C}$:\n$$T_F = \\left(\\dfrac{9}{5} \\times 45\\right) + 32 = 81 + 32 = 113^\\circ\\text{F}$$\n\nIndependent check: F = (9/5)C + 32 = (9/5)(45) + 32 = 81 + 32 = 113°F.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A thermometer immersed in a water bath records a temperature of $45^\\circ\\text{C}$. What is the corresponding reading on the Fahrenheit scale?",
+  "options": [
+   "$49^\\circ\\text{F}$",
+   "$57^\\circ\\text{F}$",
+   "$81^\\circ\\text{F}$",
+   "$113^\\circ\\text{F}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "working": "The relationship between the Celsius scale ($T_C$) and the Fahrenheit scale ($T_F$) is given by:\n$$T_F = \\dfrac{9}{5}T_C + 32$$\n\nSubstitute $T_C = 45^\\circ\\text{C}$:\n$$T_F = \\left(\\dfrac{9}{5} \\times 45\\right) + 32 = 81 + 32 = 113^\\circ\\text{F}$$",
+  "distractor_notes": "$49^\\circ\\text{F}$: sign error on the constant offset, calculating $\\frac{9}{5}T_C - 32 = 81 - 32$.\n$57^\\circ\\text{F}$: inverted conversion ratio, using $\\frac{5}{9}T_C + 32 = 25 + 32$.\n$81^\\circ\\text{F}$: omitted the additive offset $+32$, calculating only $\\frac{9}{5}T_C = 81$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

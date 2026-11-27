@@ -1,0 +1,68 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Equilibrium of rigid body",
+  "archetype": "torque balance",
+  "brief": "Rigid rod or ladder in equilibrium; find torque about a chosen point to get an unknown force",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:3",
+   "2025s2:18",
+   "2023s1:21"
+  ]
+ },
+ "status": "ok",
+ "stem": "A uniform horizontal rod of length $4$ m and mass $8$ kg is hinged at one end and held by a vertical string at the other. A $12$ kg load hangs $3$ m from the hinge. Find the string tension. Take $g = 10$ m s$^{-2}$.",
+ "options": [
+  "$90$ N",
+  "$100$ N",
+  "$130$ N",
+  "$170$ N"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Taking moments about the hinge: 4T = 80(2) + 120(3), so T = 130 N.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$4T = (8 \\times 10)(2) + (12 \\times 10)(3)$\n$4T = 520$\n$T = 130$ N\n\nIndependent check: Taking moments about the hinge: 4T = 80(2) + 120(3), so T = 130 N.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A uniform horizontal rod of length $4$ m and mass $8$ kg is hinged at one end and held by a vertical string at the other. A $12$ kg load hangs $3$ m from the hinge. Find the string tension. Take $g = 10$ m s$^{-2}$.",
+  "options": [
+   "$90$ N",
+   "$100$ N",
+   "$130$ N",
+   "$170$ N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$4T = (8 \\times 10)(2) + (12 \\times 10)(3)$\n$4T = 520$\n$T = 130$ N",
+  "distractor_notes": "A: Ignores the rod's weight.\nB: Places the load at the rod's midpoint.\nD: Places the rod's weight at its far end."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

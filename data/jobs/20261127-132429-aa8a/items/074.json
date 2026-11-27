@@ -1,0 +1,68 @@
+{
+ "qno": 74,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 74,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Number analogy",
+  "archetype": "analogy",
+  "brief": "Pair of numbers related by a simple operation (e.g. square/cube, digit sum, or multiply-and-add constant); give one pair and a single number, ask for the analogous partner.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:88",
+   "2022:81",
+   "2025s2:81"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the number related to the third number in the same way as the second number is related to the first: $18 : 9 :: 26 : ?$",
+ "options": [
+  "8",
+  "6",
+  "12",
+  "4"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "18 → 1+8=9; therefore 26 → 2+6=8.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Add the digits of each number: $1+8=9$, so $2+6=8$. The other options do not equal the digit sum of 26.\n\nIndependent check: 18 → 1+8=9; therefore 26 → 2+6=8.",
+ "solution": "Add the digits of each number: $1+8=9$, so apply the same rule to $26$.\n$$2+6=8$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Select the number related to the third number in the same way as the second number is related to the first: $18 : 9 :: 26 : ?$",
+  "options": [
+   "8",
+   "6",
+   "12",
+   "4"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Add the digits of each number: $1+8=9$, so $2+6=8$. The other options do not equal the digit sum of 26.",
+  "distractor_notes": "B: Uses the difference of the digits. C: Doubles the digit sum. D: Uses the difference of the digits in reverse order."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

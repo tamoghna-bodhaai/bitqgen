@@ -1,0 +1,68 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Moment of inertia of point masses",
+  "archetype": "sum of mr^2",
+  "brief": "Point masses at corners of a square/light rod; find moment of inertia about a given axis through the system.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:10",
+   "2021:36",
+   "2025s2:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "Four point masses, each of mass $1$ kg, are fixed at the four corners of a square of side $1$ m. The moment of inertia of the system about an axis passing through one of the corners and perpendicular to the plane of the square is:",
+ "options": [
+  "$2$ kg m$^{2}$",
+  "$8$ kg m$^{2}$",
+  "$6$ kg m$^{2}$",
+  "$4$ kg m$^{2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The masses are at distances 0, 1, 1, and √2 m from the axis. Thus I = 1(0² + 1² + 1² + (√2)²) = 4 kg·m².",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Distances of masses from the chosen corner: $0$, $1$ m, $1$ m, $\\sqrt{1^2+1^2} = \\sqrt{2}$ m.\n\n$I = 1(0)^2 + 1(1)^2 + 1(1)^2 + 1(\\sqrt{2})^2 = 0 + 1 + 1 + 2 = 4$ kg m$^2$.\n\nIndependent check: The masses are at distances 0, 1, 1, and √2 m from the axis. Thus I = 1(0² + 1² + 1² + (√2)²) = 4 kg·m².",
+ "solution": "Using $I=\\sum m_i r_i^2$, the masses are at distances $0,1,1,\\sqrt{2}$ m from the axis.\n$$I=1\\bigl(0^2+1^2+1^2+(\\sqrt{2})^2\\bigr)=4\\;\\text{kg m}^2.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Four point masses, each of mass $1$ kg, are fixed at the four corners of a square of side $1$ m. The moment of inertia of the system about an axis passing through one of the corners and perpendicular to the plane of the square is:",
+  "options": [
+   "$2$ kg m$^{2}$",
+   "$4$ kg m$^{2}$",
+   "$6$ kg m$^{2}$",
+   "$8$ kg m$^{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Distances of masses from the chosen corner: $0$, $1$ m, $1$ m, $\\sqrt{1^2+1^2} = \\sqrt{2}$ m.\n\n$I = 1(0)^2 + 1(1)^2 + 1(1)^2 + 1(\\sqrt{2})^2 = 0 + 1 + 1 + 2 = 4$ kg m$^2$.",
+  "distractor_notes": "2: omitting the opposite corner contribution; 6: using 1+1+4?; 8: using diagonal distance for all masses"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 97,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 97,
+  "section": "Logical Reasoning",
+  "chapter": "Classification (odd one out)",
+  "subtopic": "Classification",
+  "archetype": "odd pair out",
+  "brief": "Give four number pairs (or letter pairs) sharing a common relation (e.g., square, positional difference); one pair breaks that relation — identify the odd pair.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:74",
+   "2026s1:73",
+   "2026s2:88"
+  ]
+ },
+ "status": "ok",
+ "stem": "Four number pairs are given below, out of which three are alike in a certain way and one is different. Select the odd pair.",
+ "options": [
+  "7 : 56",
+  "11 : 132",
+  "13 : 156",
+  "17 : 306"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Pattern: second = n(n+1). 7×8=56 ✓, 11×12=132 ✓, 17×18=306 ✓; but 13×14=182≠156 (156=13×12=n(n−1)), so (C) breaks the rule.",
+   "answer": "C",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Let the pair of numbers be represented as $x : y$.\n\nExamine the relation between $x$ and $y$ in each option:\n- Option A ($7 : 56$): $y = 7^2 + 7 = 49 + 7 = 56$, or $y = 7 \\times (7 + 1) = 7 \\times 8 = 56$.\n- Option B ($11 : 132$): $y = 11^2 + 11 = 121 + 11 = 132$, or $y = 11 \\times (11 + 1) = 11 \\times 12 = 132$.\n- Option D ($17 : 306$): $y = 17^2 + 17 = 289 + 17 = 306$, or $y = 17 \\times (17 + 1) = 17 \\times 18 = 306$.\n\nIn options A, B, and D, the second number is given by $y = x^2 + x = x(x + 1)$, which also means that $y - x = x^2$.\n\nIn Option C ($13 : 156$):\n$13^2 + 13 = 169 + 13 = 182 \\neq 156$.\nInstead, $156 = 13^2 - 13 = 13 \\times (13 - 1) = 13 \\times 12$.\n\nThus, the pair $13 : 156$ violates the common rule followed by the other three pairs.\n\nIndependent check: Pattern: second = n(n+1). 7×8=56 ✓, 11×12=132 ✓, 17×18=306 ✓; but 13×14=182≠156 (156=13×12=n(n−1)), so (C) breaks the rule.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Four number pairs are given below, out of which three are alike in a certain way and one is different. Select the odd pair.",
+  "options": [
+   "7 : 56",
+   "11 : 132",
+   "13 : 156",
+   "17 : 306"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Let the pair of numbers be represented as $x : y$.\n\nExamine the relation between $x$ and $y$ in each option:\n- Option A ($7 : 56$): $y = 7^2 + 7 = 49 + 7 = 56$, or $y = 7 \\times (7 + 1) = 7 \\times 8 = 56$.\n- Option B ($11 : 132$): $y = 11^2 + 11 = 121 + 11 = 132$, or $y = 11 \\times (11 + 1) = 11 \\times 12 = 132$.\n- Option D ($17 : 306$): $y = 17^2 + 17 = 289 + 17 = 306$, or $y = 17 \\times (17 + 1) = 17 \\times 18 = 306$.\n\nIn options A, B, and D, the second number is given by $y = x^2 + x = x(x + 1)$, which also means that $y - x = x^2$.\n\nIn Option C ($13 : 156$):\n$13^2 + 13 = 169 + 13 = 182 \\neq 156$.\nInstead, $156 = 13^2 - 13 = 13 \\times (13 - 1) = 13 \\times 12$.\n\nThus, the pair $13 : 156$ violates the common rule followed by the other three pairs.",
+  "distractor_notes": "Option A follows the pattern $x : x(x + 1)$ since $7 \\times 8 = 56$.\nOption B follows the pattern $x : x(x + 1)$ since $11 \\times 12 = 132$.\nOption D follows the pattern $x : x(x + 1)$ since $17 \\times 18 = 306$.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

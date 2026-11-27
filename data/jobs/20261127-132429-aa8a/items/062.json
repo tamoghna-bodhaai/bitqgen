@@ -1,0 +1,68 @@
+{
+ "qno": 62,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 62,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS)",
+  "archetype": "para jumble (5 sentences, find the first sentence)",
+  "brief": "Four sentence options given for the opening of a short paragraph on a general topic; pick the most coherent opener.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:64",
+   "2023s2:65",
+   "2022:70"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the following sentences into a coherent paragraph. Which sentence should come first?\n\nP. As a result, many households now grow herbs and vegetables in containers.\nQ. Urban gardening has become a practical way to bring greenery into crowded neighbourhoods.\nR. Even a small balcony can provide enough room for a few pots.\nS. These plants can also make fresh ingredients readily available.\nT. With regular watering and sunlight, they are easy to maintain.",
+ "options": [
+  "Q",
+  "P",
+  "R",
+  "S"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Q introduces the topic; the other sentences depend on ideas or references introduced later.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Q introduces the topic. R gives a specific example; T’s “they” refers to the pots/plants, followed by P’s “As a result” and S’s “These plants”. Q is the only broad introductory sentence.\n\nIndependent check: Q introduces the topic; the other sentences depend on ideas or references introduced later.",
+ "solution": "Q introduces the broad topic of urban gardening, while the other sentences provide examples or refer back to plants and pots introduced later.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange the following sentences into a coherent paragraph. Which sentence should come first?\n\nP. As a result, many households now grow herbs and vegetables in containers.\nQ. Urban gardening has become a practical way to bring greenery into crowded neighbourhoods.\nR. Even a small balcony can provide enough room for a few pots.\nS. These plants can also make fresh ingredients readily available.\nT. With regular watering and sunlight, they are easy to maintain.",
+  "options": [
+   "P",
+   "Q",
+   "R",
+   "S"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Q introduces the topic. R gives a specific example; T’s “they” refers to the pots/plants, followed by P’s “As a result” and S’s “These plants”. Q is the only broad introductory sentence.",
+  "distractor_notes": "P: “As a result” requires an earlier cause.\nR: “Even” makes it a supporting example, not an introduction.\nS: “These plants” requires an earlier reference."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 48,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 48,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Bond enthalpy",
+  "archetype": "combine equations",
+  "brief": "Use bond enthalpies of reactants and products to compute ΔH of a combustion/formation reaction via Hess-type addition.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:43",
+   "2025s2:51",
+   "2026s1:36"
+  ]
+ },
+ "status": "ok",
+ "stem": "Given the following thermochemical data:\n$$\\begin{aligned}\n\\Delta_{\\text{sub}}H^\\circ[\\text{C}(s)] &= 715\\ \\text{kJ mol}^{-1} \\\\\n\\text{B.E.}(\\text{H}-\\text{H}) &= 436\\ \\text{kJ mol}^{-1} \\\\\n\\text{B.E.}(\\text{C}-\\text{H}) &= 414\\ \\text{kJ mol}^{-1} \\\\\n\\text{B.E.}(\\text{C}\\equiv\\text{C}) &= 828\\ \\text{kJ mol}^{-1}\n\\end{aligned}$$\nThe standard enthalpy of formation ($\\Delta_f H^\\circ$) of ethyne, $\\text{C}_2\\text{H}_2(g)$, is:",
+ "options": [
+  "$-505\\ \\text{kJ mol}^{-1}$",
+  "$-210\\ \\text{kJ mol}^{-1}$",
+  "$+210\\ \\text{kJ mol}^{-1}$",
+  "$+624\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Formation: 2C(s) + H2(g) → C2H2(g). ΔfH = 2·ΔsubH(C) + BE(H–H) − [BE(C≡C) + 2·BE(C–H)] = 1430 + 436 − (828 + 828) = +210 kJ/mol.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The standard reaction for the formation of ethyne from its elements in their standard states is:\n$$2\\text{C}(s) + \\text{H}_2(g) \\rightarrow \\text{C}_2\\text{H}_2(g)$$\n\nUsing a Hess's Law cycle, $\\Delta_f H^\\circ$ is given by the enthalpy required to atomize the reactants minus the bond enthalpies of the bonds formed in the product:\n$$\\Delta_f H^\\circ = \\sum \\Delta H_{\\text{atom}}(\\text{reactants}) - \\sum \\text{B.E.}(\\text{products})$$\n\n1. Enthalpy required to atomize reactants:\n- Sublimation of $2\\text{C}(s)$: $2 \\times \\Delta_{\\text{sub}}H^\\circ[\\text{C}(s)] = 2 \\times 715 = 1430\\ \\text{kJ mol}^{-1}$\n- Dissociation of $1\\text{H}_2(g)$: $1 \\times \\text{B.E.}(\\text{H}-\\text{H}) = 436\\ \\text{kJ mol}^{-1}$\n$$\\text{Total for reactants} = 1430 + 436 = 1866\\ \\text{kJ mol}^{-1}$$\n\n2. Enthalpy released upon forming bonds in $\\text{C}_2\\text{H}_2(g)$ (structure is $\\text{H}-\\text{C}\\equiv\\text{C}-\\text{H}$):\n- $1 \\times (\\text{C}\\equiv\\text{C})$ bond: $828\\ \\text{kJ mol}^{-1}$\n- $2 \\times (\\text{C}-\\text{H})$ bonds: $2 \\times 414 = 828\\ \\text{kJ mol}^{-1}$\n$$\\text{Total for products} = 828 + 828 = 1656\\ \\text{kJ mol}^{-1}$$\n\n3. Enthalpy of formation:\n$$\\Delta_f H^\\circ = 1866 - 1656 = +210\\ \\text{kJ mol}^{-1}$$\n\nIndependent check: Formation: 2C(s) + H2(g) → C2H2(g). ΔfH = 2·ΔsubH(C) + BE(H–H) − [BE(C≡C) + 2·BE(C–H)] = 1430 + 436 − (828 + 828) = +210 kJ/mol.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Given the following thermochemical data:\n$$\\begin{aligned}\n\\Delta_{\\text{sub}}H^\\circ[\\text{C}(s)] &= 715\\ \\text{kJ mol}^{-1} \\\\\n\\text{B.E.}(\\text{H}-\\text{H}) &= 436\\ \\text{kJ mol}^{-1} \\\\\n\\text{B.E.}(\\text{C}-\\text{H}) &= 414\\ \\text{kJ mol}^{-1} \\\\\n\\text{B.E.}(\\text{C}\\equiv\\text{C}) &= 828\\ \\text{kJ mol}^{-1}\n\\end{aligned}$$\nThe standard enthalpy of formation ($\\Delta_f H^\\circ$) of ethyne, $\\text{C}_2\\text{H}_2(g)$, is:",
+  "options": [
+   "$-505\\ \\text{kJ mol}^{-1}$",
+   "$-210\\ \\text{kJ mol}^{-1}$",
+   "$+210\\ \\text{kJ mol}^{-1}$",
+   "$+624\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The standard reaction for the formation of ethyne from its elements in their standard states is:\n$$2\\text{C}(s) + \\text{H}_2(g) \\rightarrow \\text{C}_2\\text{H}_2(g)$$\n\nUsing a Hess's Law cycle, $\\Delta_f H^\\circ$ is given by the enthalpy required to atomize the reactants minus the bond enthalpies of the bonds formed in the product:\n$$\\Delta_f H^\\circ = \\sum \\Delta H_{\\text{atom}}(\\text{reactants}) - \\sum \\text{B.E.}(\\text{products})$$\n\n1. Enthalpy required to atomize reactants:\n- Sublimation of $2\\text{C}(s)$: $2 \\times \\Delta_{\\text{sub}}H^\\circ[\\text{C}(s)] = 2 \\times 715 = 1430\\ \\text{kJ mol}^{-1}$\n- Dissociation of $1\\text{H}_2(g)$: $1 \\times \\text{B.E.}(\\text{H}-\\text{H}) = 436\\ \\text{kJ mol}^{-1}$\n$$\\text{Total for reactants} = 1430 + 436 = 1866\\ \\text{kJ mol}^{-1}$$\n\n2. Enthalpy released upon forming bonds in $\\text{C}_2\\text{H}_2(g)$ (structure is $\\text{H}-\\text{C}\\equiv\\text{C}-\\text{H}$):\n- $1 \\times (\\text{C}\\equiv\\text{C})$ bond: $828\\ \\text{kJ mol}^{-1}$\n- $2 \\times (\\text{C}-\\text{H})$ bonds: $2 \\times 414 = 828\\ \\text{kJ mol}^{-1}$\n$$\\text{Total for products} = 828 + 828 = 1656\\ \\text{kJ mol}^{-1}$$\n\n3. Enthalpy of formation:\n$$\\Delta_f H^\\circ = 1866 - 1656 = +210\\ \\text{kJ mol}^{-1}$$",
+  "distractor_notes": "Option A encodes failing to multiply the sublimation enthalpy of carbon by 2: $(715 + 436) - 1656 = -505\\ \\text{kJ mol}^{-1}$.\nOption B encodes a sign error from applying $\\Delta H = \\sum \\text{B.E.}(\\text{products}) - \\sum \\text{B.E.}(\\text{reactants})$.\nOption D encodes counting only one $\\text{C}-\\text{H}$ bond in ethyne: $1866 - (828 + 414) = +624\\ \\text{kJ mol}^{-1}$.",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

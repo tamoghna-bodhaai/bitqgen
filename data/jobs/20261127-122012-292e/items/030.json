@@ -1,0 +1,72 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Gauss's law and symmetry",
+  "archetype": "vector reasoning",
+  "brief": "Diagram of a system of charges or a non-uniform charge distribution (e.g., charged sphere, shell, or cavity); ask for field at a point using Gauss's law with symmetry arguments.",
+  "difficulty": 5,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:8",
+   "2021:9",
+   "2026s2:15"
+  ]
+ },
+ "status": "failed",
+ "stem": "An infinitely long non-conducting cylinder of radius $R$ has a uniform volume charge density $\\rho$. A cylindrical cavity of radius $R/3$ is made with its axis parallel to the axis of the cylinder and at a distance $R/2$ from it, as shown in the figure. The point $P$ lies on the boundary of the cavity such that the line joining the cavity axis to $P$ is perpendicular to the line joining the axis of the cylinder to the cavity axis. The magnitude and direction of the electric field at $P$ is:",
+ "options": [
+  "$\\dfrac{\\rho R}{4\\varepsilon_0}$, directed perpendicular to the line joining the axes",
+  "$\\dfrac{\\rho R}{4\\varepsilon_0}$, directed from the cylinder axis towards the cavity axis",
+  "$\\dfrac{\\rho R}{6\\varepsilon_0}$, directed from the cylinder axis towards the cavity axis",
+  "$\\dfrac{\\rho R}{3\\varepsilon_0}$, directed from the cylinder axis towards the cavity axis"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q030_stem_v1.png",
+  "width_pct": 45,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "By superposition, \\(\\vec{E}_{\\text{net}} = \\vec{E}_{\\text{full cylinder}} - \\vec{E}_{\\text{removed cylinder}}\\). Inside a uniformly charged infinite cylinder, \\(\\vec{E} = \\frac{\\rho}{2\\varepsilon_0}\\vec{r}\\), where \\(\\vec{r}\\) is the radial vector from its axis. Let the cavity axis be at displacement \\(\\vec{d}\\) from the cylinder axis (magnitude \\(d = R/2\\)). For a point \\(P\\) inside the cavity with position vector \\(\\vec{r}_{P}\\) relative to the cavity axis, \\(\\vec{E}_{\\text{full}} = \\frac{\\rho}{2\\varepsilon_0}(\\vec{d}+\\vec{r}_{P})\\) and \\(\\vec{E}_{\\text{removed}} = \\frac{\\rho}{2\\varepsilon_0}\\vec{r}_{P}\\). Hence \\(\\vec{E}_{\\text{net}} = \\frac{\\rho}{2\\varepsilon_0}\\vec{d}\\). The magnitude is \\(\\frac{\\rho d}{2\\varepsilon_0} = \\frac{\\rho (R/2)}{2\\varepsilon_0} = \\frac{\\rho R}{4\\varepsilon_0}\\), directed from the cylinder axis to the cavity axis.",
+ "solution": "By superposition, treat the cavity as a cylinder of charge density $-\\rho$. For a uniformly charged infinite cylinder, $\\vec E=\\dfrac{\\rho}{2\\varepsilon_0}\\vec r$, so at $P$ the field is\n$$\\vec E_{\\text{net}}=\\frac{\\rho}{2\\varepsilon_0}(\\vec d+\\vec r_P)-\\frac{\\rho}{2\\varepsilon_0}\\vec r_P=\\frac{\\rho}{2\\varepsilon_0}\\vec d.$$\nWith $d=R/2$, the magnitude is $\\dfrac{\\rho R}{4\\varepsilon_0}$, directed from the cylinder axis towards the cavity axis.",
+ "locked": false,
+ "difficulty": 5,
+ "draft": {
+  "stem": "An infinitely long non-conducting cylinder of radius $R$ has a uniform volume charge density $\\rho$. A cylindrical cavity of radius $R/3$ is made with its axis parallel to the axis of the cylinder and at a distance $R/2$ from it, as shown in the figure. The point $P$ lies on the boundary of the cavity such that the line joining the cavity axis to $P$ is perpendicular to the line joining the axis of the cylinder to the cavity axis. The magnitude and direction of the electric field at $P$ is:",
+  "options": [
+   "$\\dfrac{\\rho R}{4\\varepsilon_0}$, directed from the cylinder axis towards the cavity axis",
+   "$\\dfrac{\\rho R}{4\\varepsilon_0}$, directed perpendicular to the line joining the axes",
+   "$\\dfrac{\\rho R}{6\\varepsilon_0}$, directed from the cylinder axis towards the cavity axis",
+   "$\\dfrac{\\rho R}{3\\varepsilon_0}$, directed from the cylinder axis towards the cavity axis"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Cross‑sectional view of an infinitely long cylinder. The outer circle has radius R and centre O. A smaller circle of radius R/3 is drawn inside, with centre C at a horizontal distance R/2 from O; the small circle represents the cylindrical cavity. Point P is marked on the circumference of the small circle such that line CP is perpendicular to line OC (e.g., CP is drawn vertically upward from C). Labels O, C, P are shown. The distance OC is labelled R/2 and the radius CP is labelled R/3.",
+   "smiles": "An infinitely long non-conducting cylinder of radius $R$ has a uniform volume charge density $\\rho$. A cylindrical cavity of radius $R/3$ is made with its axis parallel to the axis of the cylinder and at a distance $R/2$ from it, as shown in the figure. The point $P$ lies on the boundary of the cavity such that the line joining the cavity axis to $P$ is perpendicular to the line joining the axis of the cylinder to the cavity axis. The magnitude and direction of the electric field at $P$ is:"
+  },
+  "difficulty_estimate": 5,
+  "working": "By superposition, \\(\\vec{E}_{\\text{net}} = \\vec{E}_{\\text{full cylinder}} - \\vec{E}_{\\text{removed cylinder}}\\). Inside a uniformly charged infinite cylinder, \\(\\vec{E} = \\frac{\\rho}{2\\varepsilon_0}\\vec{r}\\), where \\(\\vec{r}\\) is the radial vector from its axis. Let the cavity axis be at displacement \\(\\vec{d}\\) from the cylinder axis (magnitude \\(d = R/2\\)). For a point \\(P\\) inside the cavity with position vector \\(\\vec{r}_{P}\\) relative to the cavity axis, \\(\\vec{E}_{\\text{full}} = \\frac{\\rho}{2\\varepsilon_0}(\\vec{d}+\\vec{r}_{P})\\) and \\(\\vec{E}_{\\text{removed}} = \\frac{\\rho}{2\\varepsilon_0}\\vec{r}_{P}\\). Hence \\(\\vec{E}_{\\text{net}} = \\frac{\\rho}{2\\varepsilon_0}\\vec{d}\\). The magnitude is \\(\\frac{\\rho d}{2\\varepsilon_0} = \\frac{\\rho (R/2)}{2\\varepsilon_0} = \\frac{\\rho R}{4\\varepsilon_0}\\), directed from the cylinder axis to the cavity axis.",
+  "distractor_notes": "B: student thinks field is perpendicular; C: uses sphere formula (denominator 6ε0); D: forgets to subtract the removed cylinder’s field."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

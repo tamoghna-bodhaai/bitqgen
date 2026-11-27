@@ -1,0 +1,68 @@
+{
+ "qno": 33,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 33,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Standard cell EMF",
+  "archetype": "linear combination",
+  "brief": "Given standard potentials of two couples involving a common metal, compute E° of the cell formed by combining them.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:79",
+   "2026s2:40",
+   "2025s2:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "The standard reduction potentials are $E^\\circ_{\\text{Fe}^{3+}/\\text{Fe}^{2+}}=+0.77$ V and $E^\\circ_{\\text{Fe}^{2+}/\\text{Fe}}=-0.44$ V. What is the standard EMF when these half-cells are combined?",
+ "options": [
+  "$0.33$ V",
+  "$0.77$ V",
+  "$1.65$ V",
+  "$1.21$ V"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The Fe³⁺/Fe²⁺ half-cell is the cathode and Fe/Fe²⁺ is the anode. E°cell = 0.77 − (−0.44) = 1.21 V.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Cathode: $\\text{Fe}^{3+}+e^-\\rightarrow\\text{Fe}^{2+}$; anode: $\\text{Fe}\\rightarrow\\text{Fe}^{2+}+2e^-$. \n$E^\\circ_{\\text{cell}}=E^\\circ_{\\text{cathode}}-E^\\circ_{\\text{anode, reduction}}$\n$=0.77-(-0.44)=1.21\\ \\text{V}$.\n\nIndependent check: The Fe³⁺/Fe²⁺ half-cell is the cathode and Fe/Fe²⁺ is the anode. E°cell = 0.77 − (−0.44) = 1.21 V.",
+ "solution": "The Fe$^{3+}$/Fe$^{2+}$ half-cell is the cathode, and Fe/Fe$^{2+}$ is the anode.\n$$E^\\firc_{\\text{cell}}=E^\\firc_{\\text{cathode}}-E^\\firc_{\\text{anode, reduction}}=0.77-(-0.44)=1.21\\text{ V}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The standard reduction potentials are $E^\\circ_{\\text{Fe}^{3+}/\\text{Fe}^{2+}}=+0.77$ V and $E^\\circ_{\\text{Fe}^{2+}/\\text{Fe}}=-0.44$ V. What is the standard EMF when these half-cells are combined?",
+  "options": [
+   "$0.33$ V",
+   "$0.77$ V",
+   "$1.21$ V",
+   "$1.65$ V"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Cathode: $\\text{Fe}^{3+}+e^-\\rightarrow\\text{Fe}^{2+}$; anode: $\\text{Fe}\\rightarrow\\text{Fe}^{2+}+2e^-$. \n$E^\\circ_{\\text{cell}}=E^\\circ_{\\text{cathode}}-E^\\circ_{\\text{anode, reduction}}$\n$=0.77-(-0.44)=1.21\\ \\text{V}$.",
+  "distractor_notes": "A: Treats the iron oxidation potential as $+0.44$ V. B: Uses only the cathode potential. D: Adds the potentials without changing the sign of the anode reduction potential."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

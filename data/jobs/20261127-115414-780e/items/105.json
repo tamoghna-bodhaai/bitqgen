@@ -1,0 +1,64 @@
+{
+ "qno": 105,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 105,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of functions",
+  "archetype": "domain intersection",
+  "brief": "Find the domain of a composite or quotient function by intersecting positivity/non-negativity conditions under a square root or log.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:103",
+   "2025s2:108",
+   "2025s2:109"
+  ]
+ },
+ "status": "failed",
+ "stem": "The domain of the function $f(x) = \\sqrt{\\log_{\\frac12}(x+1)} + \\dfrac{1}{\\sqrt{x^2 - 5x + 6}}$ is",
+ "options": [
+  "$(-1, 0]$",
+  "$[-1, 0]$",
+  "$(-1, 2) \\cup (3, \\infty)$",
+  "$[0, 2)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [],
+ "attempts": 3,
+ "notes": [
+  "no usable draft produced"
+ ],
+ "working": "For $\\sqrt{\\log_{1/2}(x+1)}$: need $x+1>0$ and $\\log_{1/2}(x+1)\\ge 0$. Since base $<1$, $\\log_{1/2}(x+1)\\ge 0 \\Rightarrow 0<x+1\\le 1 \\Rightarrow -1<x\\le 0$. For $\\frac{1}{\\sqrt{x^2-5x+6}}$: need $x^2-5x+6>0 \\Rightarrow (x-2)(x-3)>0 \\Rightarrow x<2$ or $x>3$. Intersection: $(-1,0] \\cap ((-\\infty,2)\\cup (3,\\infty)) = (-1,0]$.",
+ "solution": "For $\u0005sqrt{\\log_{1/2}(x+1)}$, require $x+1>0$ and $\\log_{1/2}(x+1)\\ge0$, giving $-1<x\\le0$.\nFor $\\dfrac1{\\sqrt{x^2-5x+6}}$, require $(x-2)(x-3)>0$, so $x<2$ or $x>3$.\nIntersecting these conditions gives $\\boxed{(-1,0]}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The domain of the function $f(x) = \\sqrt{\\log_{\\frac12}(x+1)} + \\dfrac{1}{\\sqrt{x^2 - 5x + 6}}$ is",
+  "options": [
+   "$(-1, 0]$",
+   "$[-1, 0]$",
+   "$(-1, 2) \\cup (3, \\infty)$",
+   "$[0, 2)$"
+  ],
+  "option_smiles": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For $\\sqrt{\\log_{1/2}(x+1)}$: need $x+1>0$ and $\\log_{1/2}(x+1)\\ge 0$. Since base $<1$, $\\log_{1/2}(x+1)\\ge 0 \\Rightarrow 0<x+1\\le 1 \\Rightarrow -1<x\\le 0$. For $\\frac{1}{\\sqrt{x^2-5x+6}}$: need $x^2-5x+6>0 \\Rightarrow (x-2)(x-3)>0 \\Rightarrow x<2$ or $x>3$. Intersection: $(-1,0] \\cap ((-\\infty,2)\\cup (3,\\infty)) = (-1,0]$.",
+  "distractor_notes": "Option B adds -1 (fails x+1 > 0). Option C misses the log non‑negativity restriction. Option D mishandles the base < 1 inequality and truncates the denominator region."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

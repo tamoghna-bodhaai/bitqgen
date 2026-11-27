@@ -1,0 +1,68 @@
+{
+ "qno": 61,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 61,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "Sentence split into parts (a/b/c/d) with a subject-verb agreement error (collective noun / distance-expression treated as singular); one option 'No error'.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:67",
+   "2021:91",
+   "2026s1:70"
+  ]
+ },
+ "status": "ok",
+ "stem": "Identify the part that contains an error, if any.\n\n(a) The fleet of research vessels\n(b) are expected to reach the harbour\n(c) before the onset of the monsoon,\n(d) according to the latest forecast.",
+ "options": [
+  "(a)",
+  "(b)",
+  "(c)",
+  "No error"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Fleet” is a singular collective noun, so the verb should be “is,” not “are.”",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The subject is the singular collective noun “fleet”; it requires “is expected,” not “are expected.” The error is in (b). Parts (a) and (c) contain no agreement error; the sentence is not error-free.\n\nIndependent check: “Fleet” is a singular collective noun, so the verb should be “is,” not “are.”",
+ "solution": "“Fleet” is a singular collective noun and takes the singular verb “is.” Therefore, “are expected” should be “is expected,” so the error is in (b).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Identify the part that contains an error, if any.\n\n(a) The fleet of research vessels\n(b) are expected to reach the harbour\n(c) before the onset of the monsoon,\n(d) according to the latest forecast.",
+  "options": [
+   "(a)",
+   "(b)",
+   "(c)",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The subject is the singular collective noun “fleet”; it requires “is expected,” not “are expected.” The error is in (b). Parts (a) and (c) contain no agreement error; the sentence is not error-free.",
+  "distractor_notes": "A: The singular collective noun is correctly formed in (a). C: The time phrase in (c) does not create an agreement error. D: Incorrect because “are expected” disagrees with the singular subject “fleet”."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

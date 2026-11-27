@@ -1,0 +1,70 @@
+{
+ "qno": 66,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 66,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Gerund after preposition",
+  "archetype": "spot the error (no error)",
+  "brief": "A grammatically correct sentence testing prepositions/gerund usage, split into parts; correct answer is 'No error'.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:62",
+   "2021:91",
+   "2022:67"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the part of the sentence which contains an error.",
+ "options": [
+  "(A) She is quite good at",
+  "(B) solving tricky problems",
+  "(C) even under pressure.",
+  "(D) No error"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The sentence is grammatically correct: “good at” is followed by the gerund “solving.”",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "Option labels are duplicated in the prompt, but the choices remain identifiable."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The preposition 'at' in 'good at' must be followed by a gerund, and 'solving' is the correct gerund form; the phrase 'even under pressure' is an adverbial modifier of 'solving' and sits correctly. Parts (A), (B) and (C) are all grammatically sound, so no part contains an error; (D) is the key. The other options fail only because they are correct as written, not because they break any rule.\n\nIndependent check: The sentence is grammatically correct: “good at” is followed by the gerund “solving.”",
+ "solution": "“Good at” is correctly followed by the gerund “solving,” and “even under pressure” appropriately modifies the action. No part contains an error.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Find the part of the sentence which contains an error.",
+  "options": [
+   "(A) She is quite good at",
+   "(B) solving tricky problems",
+   "(C) even under pressure.",
+   "(D) No error"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "The preposition 'at' in 'good at' must be followed by a gerund, and 'solving' is the correct gerund form; the phrase 'even under pressure' is an adverbial modifier of 'solving' and sits correctly. Parts (A), (B) and (C) are all grammatically sound, so no part contains an error; (D) is the key. The other options fail only because they are correct as written, not because they break any rule.",
+  "distractor_notes": "A, B, C are each grammatically acceptable: preposition + gerund in A–B, and a correct adverbial phrase in C. A test-taker choosing them would be spotting an error where none exists."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

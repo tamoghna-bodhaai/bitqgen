@@ -1,0 +1,86 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Williamiam synthesis",
+  "archetype": "mechanism-based product",
+  "brief": "A figure showing a Williamson synthesis setup — given R-X and R'-ONa, ask the student to pick the correct ether product and explain why the reverse pairing (halide from the hindered group) fails.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:60",
+   "2024s1:48",
+   "2025s1:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the Williamson synthesis shown in the figure, the major product is:",
+ "options": [
+  "Diethyl ether",
+  "Ethyl tert-butyl ether",
+  "Di-tert-butyl ether",
+  "Methyl ethyl ether"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q060_stem_v1.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q060_optB_v1.png",
+  "figs/q060_optA_v1.png",
+  "figs/q060_optC_v1.png",
+  "figs/q060_optD_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The reactants are sodium tert-butoxide and bromoethane. In Williamson ether synthesis, tert-butoxide displaces bromide from the primary ethyl halide to give ethyl tert-butyl ether.",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Williamson ether synthesis proceeds via SN2. Ethyl bromide is a primary alkyl halide, which is good for SN2. Sodium tert-butoxide, although hindered, still acts as a nucleophile with the unhindered primary halide; the SN2 transition state is accessible, leading to ethyl tert-butyl ether. The alternative pairing (t-BuBr + EtONa) would largely undergo E2 elimination because tert-butyl halide is too hindered for SN2, so di-tert-butyl ether is not formed. Diethyl ether requires ethyl bromide and sodium ethoxide, which are not present. Methyl ethyl ether requires a methyl halide or methoxide, not present.\n\nIndependent check: The reactants are sodium tert-butoxide and bromoethane. In Williamson ether synthesis, tert-butoxide displaces bromide from the primary ethyl halide to give ethyl tert-butyl ether.",
+ "solution": "Williamson ether synthesis proceeds by $S_N2$ substitution. Bromoethane is a primary halide, so tert-butoxide displaces bromide to form the ether:\n$$\\mathrm{(CH_3)_3CONa + C_2H_5Br \\rightarrow (CH_3)_3COC_2H_5 + NaBr}$$\nThe major product is ethyl tert-butyl ether.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the Williamson synthesis shown in the figure, the major product is:",
+  "options": [
+   "Ethyl tert-butyl ether",
+   "Diethyl ether",
+   "Di-tert-butyl ether",
+   "Methyl ethyl ether"
+  ],
+  "option_smiles": [
+   "CCOC(C)(C)C",
+   "CCOCC",
+   "CC(C)(C)OC(C)(C)C",
+   "CCOC"
+  ],
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "A reaction scheme for a Williamson ether synthesis. Left side: two reactant molecules are shown – sodium tert-butoxide (with formula (CH₃)₃C‒O⁻Na⁺) and ethyl bromide (CH₃CH₂Br). A horizontal reaction arrow points right, and above the arrow is written 'Williamson synthesis'. The right side shows a question mark (?), indicating the unknown major organic product. No other text.",
+   "smiles": "[Na+].[O-]C(C)(C)C.CCBr"
+  },
+  "difficulty_estimate": 3,
+  "working": "Williamson ether synthesis proceeds via SN2. Ethyl bromide is a primary alkyl halide, which is good for SN2. Sodium tert-butoxide, although hindered, still acts as a nucleophile with the unhindered primary halide; the SN2 transition state is accessible, leading to ethyl tert-butyl ether. The alternative pairing (t-BuBr + EtONa) would largely undergo E2 elimination because tert-butyl halide is too hindered for SN2, so di-tert-butyl ether is not formed. Diethyl ether requires ethyl bromide and sodium ethoxide, which are not present. Methyl ethyl ether requires a methyl halide or methoxide, not present.",
+  "distractor_notes": "B (Diethyl ether): could be mistaken from self-coupling or wrong pairing; C (Di-tert-butyl ether): from a wrong pairing that fails due to elimination; D (Methyl ethyl ether): from an incorrect alkoxide choice not matching the given reagents."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

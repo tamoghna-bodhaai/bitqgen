@@ -1,0 +1,68 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "Thermal conduction",
+  "archetype": "ratio of two situations",
+  "brief": "Two identical rods joined end-to-end vs side-by-side between the same baths; compare heat current and equivalent thermal resistance in the two arrangements.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:18",
+   "2022:5",
+   "2025s2:7"
+  ]
+ },
+ "status": "ok",
+ "stem": "An object is placed $30$ cm in front of a convex lens of focal length $15$ cm. The image distance from the lens is",
+ "options": [
+  "$10$ cm",
+  "$30$ cm",
+  "$15$ cm",
+  "$60$ cm"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using 1/f = 1/v − 1/u with f = 15 cm and u = −30 cm gives v = 30 cm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{1}{f}=\\dfrac{1}{v}-\\dfrac{1}{u}$, with $f=15$ cm and $u=-30$ cm\n$\\dfrac{1}{v}=\\dfrac{1}{15}-\\dfrac{1}{30}=\\dfrac{1}{30}$\n$v=30$ cm\n\nIndependent check: Using 1/f = 1/v − 1/u with f = 15 cm and u = −30 cm gives v = 30 cm.",
+ "solution": "Using the lens formula, $\\dfrac{1}{f}=\\dfrac{1}{v}-\\dfrac{1}{u}$, with $f=15$ cm and $u=-30$ cm:\n$$\\frac{1}{v}=\\frac{1}{15}-\\frac{1}{30}=\\frac{1}{30}$$\nHence, $v=30$ cm.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An object is placed $30$ cm in front of a convex lens of focal length $15$ cm. The image distance from the lens is",
+  "options": [
+   "$10$ cm",
+   "$15$ cm",
+   "$30$ cm",
+   "$60$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{1}{f}=\\dfrac{1}{v}-\\dfrac{1}{u}$, with $f=15$ cm and $u=-30$ cm\n$\\dfrac{1}{v}=\\dfrac{1}{15}-\\dfrac{1}{30}=\\dfrac{1}{30}$\n$v=30$ cm",
+  "distractor_notes": "A: Incorrect lens-equation substitution; B: reports the focal length; D: arithmetic error in the lens equation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

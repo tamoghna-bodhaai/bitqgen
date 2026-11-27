@@ -1,0 +1,68 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Field from potential",
+  "archetype": "differentiate potential",
+  "brief": "Potential given as V(x) or V = a/r² + b/r; find electric field via E = −dV/dr and evaluate at a point.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:6",
+   "2022:14",
+   "2025s1:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "The electric potential along the $x$-axis is given by $V(x) = \\dfrac{10}{x^2} + \\dfrac{6}{x}$ volt, where $x$ is in metres. The magnitude of the electric field at $x = 2$ m is",
+ "options": [
+  "2 V/m",
+  "6 V/m",
+  "4 V/m",
+  "8 V/m"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "E_x = -dV/dx = 20/x^3 + 6/x^2. At x = 2 m, E_x = 2.5 + 1.5 = 4 V/m; magnitude is 4 V/m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "E = -dV/dx = -(-20/x^3 - 6/x^2) = 20/x^3 + 6/x^2. At x=2 m: E = 20/8 + 6/4 = 2.5 + 1.5 = 4 V/m.\n\nIndependent check: E_x = -dV/dx = 20/x^3 + 6/x^2. At x = 2 m, E_x = 2.5 + 1.5 = 4 V/m; magnitude is 4 V/m.",
+ "solution": "The electric field is $E_x=-\\dfrac{dV}{dx}$.\n$$E_x=-\\left(-\\frac{20}{x^3}-\\frac{6}{x^2}\\right)=\\frac{20}{x^3}+\\frac{6}{x^2}$$\nAt $x=2\\,\\text{m}$, $|E_x|=\\dfrac{20}{8}+\\dfrac{6}{4}=4\\,\\text{V/m}$. The answer is (C).",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The electric potential along the $x$-axis is given by $V(x) = \\dfrac{10}{x^2} + \\dfrac{6}{x}$ volt, where $x$ is in metres. The magnitude of the electric field at $x = 2$ m is",
+  "options": [
+   "2 V/m",
+   "4 V/m",
+   "6 V/m",
+   "8 V/m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "E = -dV/dx = -(-20/x^3 - 6/x^2) = 20/x^3 + 6/x^2. At x=2 m: E = 20/8 + 6/4 = 2.5 + 1.5 = 4 V/m.",
+  "distractor_notes": "A: forgot the contribution from the 6/x term; C: double the 10/x^2 term; D: added exponents incorrectly"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

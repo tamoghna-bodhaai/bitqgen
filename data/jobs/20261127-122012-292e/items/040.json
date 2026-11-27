@@ -1,0 +1,68 @@
+{
+ "qno": 40,
+ "section": "Physics",
+ "slot": {
+  "qno": 40,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Photoelectric equation",
+  "archetype": "single-formula numerical",
+  "brief": "A metal of given work function is illuminated with light of a given wavelength; ask whether emission occurs and if so, find the stopping potential via the photoelectric equation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:14",
+   "2021:17",
+   "2025s1:12"
+  ]
+ },
+ "status": "ok",
+ "stem": "Light of wavelength $400\\ \\text{nm}$ falls on a metal surface having work function $2.0\\ \\text{eV}$. Take $hc = 1240\\ \\text{eV nm}$ and $e = 1.6 \\times 10^{-19}\\ \\text{C}$. The stopping potential is",
+ "options": [
+  "$0.9\\ \\text{V}$",
+  "$2.0\\ \\text{V}$",
+  "$1.1\\ \\text{V}$",
+  "$3.1\\ \\text{V}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Photon energy = 1240/400 = 3.1 eV. Thus K_max = 3.1 − 2.0 = 1.1 eV, so the stopping potential is 1.1 V.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Photon energy $E = \\frac{hc}{\\lambda} = \\frac{1240}{400} = 3.1\\ \\text{eV}$. Maximum kinetic energy $K_{\\text{max}} = E - \\phi = 3.1 - 2.0 = 1.1\\ \\text{eV}$. Stopping potential $V_0 = \\frac{K_{\\text{max}}}{e} = 1.1\\ \\text{V}$.\n\nIndependent check: Photon energy = 1240/400 = 3.1 eV. Thus K_max = 3.1 − 2.0 = 1.1 eV, so the stopping potential is 1.1 V.",
+ "solution": "Photon energy is $E=\\dfrac{hc}{\\lambda}=\\dfrac{1240}{400}=3.1\\,\\text{eV}$. By Einstein’s photoelectric equation,\n$$K_{\\max}=E-\\phi=3.1-2.0=1.1\\,\\text{eV}.$$\nSince $K_{\\max}=eV_0$, the stopping potential is $V_0=1.1\\,\\text{V}$. Delimiter",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Light of wavelength $400\\ \\text{nm}$ falls on a metal surface having work function $2.0\\ \\text{eV}$. Take $hc = 1240\\ \\text{eV nm}$ and $e = 1.6 \\times 10^{-19}\\ \\text{C}$. The stopping potential is",
+  "options": [
+   "$0.9\\ \\text{V}$",
+   "$1.1\\ \\text{V}$",
+   "$2.0\\ \\text{V}$",
+   "$3.1\\ \\text{V}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Photon energy $E = \\frac{hc}{\\lambda} = \\frac{1240}{400} = 3.1\\ \\text{eV}$. Maximum kinetic energy $K_{\\text{max}} = E - \\phi = 3.1 - 2.0 = 1.1\\ \\text{eV}$. Stopping potential $V_0 = \\frac{K_{\\text{max}}}{e} = 1.1\\ \\text{V}$.",
+  "distractor_notes": "Distractor A (0.9 V): miscalculation of KE. Distractor C (2.0 V): uses only work function. Distractor D (3.1 V): uses photon energy without subtracting work function."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 11,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 11,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism",
+  "brief": "Two straightforward universal statements (e.g., all A are B, all B are C) followed by two conclusions; ask which conclusions logically follow, with clearly valid/invalid options.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:82",
+   "2026s1:81",
+   "2024s1:77"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll pens are books.\nAll books are tables.\n\n**Conclusions:**\nI. All pens are tables.\nII. All tables are books.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "google/gemini-3.8-flash",
+   "working": "Let P = pens, B = books, T = tables. Statements: P ⊆ B and B ⊆ T. By transitivity, P ⊆ T, so Conclusion I ('All pens are tables') holds. B ⊆ T does not necessarily imply T ⊆ B, so Conclusion II does not follow. Therefore, only Conclusion I follows.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "All pens are books, and all books are tables. Chaining the two statements gives: all pens are tables. So I follows. For II, the statement 'All books are tables' cannot be reversed: tables may include items that are not books. Pens ⊂ books ⊂ tables is a valid diagram in which tables is the larger circle, so II does not follow. Only I follows.\n\nIndependent check: Let P = pens, B = books, T = tables. Statements: P ⊆ B and B ⊆ T. By transitivity, P ⊆ T, so Conclusion I ('All pens are tables') holds. B ⊆ T does not necessarily imply T ⊆ B, so Conclusion II does not follow. Therefore, only Conclusion I follows.",
+ "solution": "Let P = pens, B = books, T = tables. The statements give $P \\subseteq B$ and $B \\subseteq T$.\n$$P \\subseteq B \\subseteq T \\Rightarrow P \\subseteq T$$\nSo I follows (All-All-All syllogism).\nII is the converse of 'All books are tables', and a universal affirmative cannot be reversed. Tables can be a larger set than books, so II does not follow. Only I follows, which is (A).",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "**Statements:**\nAll pens are books.\nAll books are tables.\n\n**Conclusions:**\nI. All pens are tables.\nII. All tables are books.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "All pens are books, and all books are tables. Chaining the two statements gives: all pens are tables. So I follows. For II, the statement 'All books are tables' cannot be reversed: tables may include items that are not books. Pens ⊂ books ⊂ tables is a valid diagram in which tables is the larger circle, so II does not follow. Only I follows.",
+  "distractor_notes": "B: swaps the conclusions, treating the reversal of a universal affirmative as valid. C: assumes the universal statement can be reversed. D: misses the valid transitive chain from pens to tables.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 143,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 143,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Selection with constraint",
+  "archetype": "total minus none",
+  "brief": "Count selections of at least one object from distinct types using complementary counting (2ⁿ − 1 style).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:96",
+   "2026s2:96",
+   "2024s1:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "A box may contain any nonempty selection of 5 distinct fruit types, with at most one of each. How many selections are possible?",
+ "options": [
+  "$15$",
+  "$30$",
+  "$31$",
+  "$32$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Each of 5 fruit types can be included or excluded, giving 2^5 selections. Excluding the empty selection leaves 2^5 - 1 = 31.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Total subsets: $2^5=32$. Excluding the empty selection gives $2^5-1=31$.\n\nIndependent check: Each of 5 fruit types can be included or excluded, giving 2^5 selections. Excluding the empty selection leaves 2^5 - 1 = 31.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A box may contain any nonempty selection of 5 distinct fruit types, with at most one of each. How many selections are possible?",
+  "options": [
+   "$15$",
+   "$30$",
+   "$31$",
+   "$32$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Total subsets: $2^5=32$. Excluding the empty selection gives $2^5-1=31$.",
+  "distractor_notes": "A: counts only selections of a restricted size; B: subtracts two instead of one; D: includes the empty selection."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

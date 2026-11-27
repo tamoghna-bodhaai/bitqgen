@@ -1,0 +1,68 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Approximations using differentials",
+  "archetype": "differential error",
+  "brief": "use differentials to approximate the value of a function (e.g. a root or a power) at a nearby point",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:104",
+   "2023s2:110",
+   "2023s2:93"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using differentials, the approximate value of sqrt(25.2) is",
+ "options": [
+  "5.20",
+  "5.04",
+  "5.10",
+  "5.02"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let y=√x. At x=25, dy≈dx/(2√25)=0.2/10=0.02, so √25.2≈5.02.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let y = sqrt(x), take x = 25 and change in x = 0.2. dy = (1/(2 sqrt(x))) * change in x = 0.2/(2*5) = 0.02. Approximate value = 5 + 0.02 = 5.02.\n\nIndependent check: Let y=√x. At x=25, dy≈dx/(2√25)=0.2/10=0.02, so √25.2≈5.02.",
+ "solution": "Let $y=\\sqrt{x}$ and take $x=25$, $dx=0.2$. Then $dy\\approx\\dfrac{dx}{2\\sqrt{x}}=\\dfrac{0.2}{10}=0.02$. Hence $\\sqrt{25.2}\\approx 5+0.02=5.02$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using differentials, the approximate value of sqrt(25.2) is",
+  "options": [
+   "5.02",
+   "5.04",
+   "5.10",
+   "5.20"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let y = sqrt(x), take x = 25 and change in x = 0.2. dy = (1/(2 sqrt(x))) * change in x = 0.2/(2*5) = 0.02. Approximate value = 5 + 0.02 = 5.02.",
+  "distractor_notes": "B uses the derivative 1/sqrt(x); C uses derivative 1/2; D adds the change in x directly to the value."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

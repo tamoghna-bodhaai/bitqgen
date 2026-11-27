@@ -1,0 +1,68 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Telescope magnification",
+  "archetype": "two-step formula",
+  "brief": "A telescope with objective and eyepiece of given focal lengths separated by a fixed distance; compute magnifying power and ask the condition for final image at infinity.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:22",
+   "2023s1:28",
+   "2025s2:20"
+  ]
+ },
+ "status": "ok",
+ "stem": "An astronomical telescope has objective and eyepiece focal lengths $120$ cm and $6$ cm. In normal adjustment, what is the tube length and the magnitude of its angular magnification?",
+ "options": [
+  "$126$ cm; $20$",
+  "$114$ cm; $20$",
+  "$126$ cm; $\\dfrac{1}{20}$",
+  "$120$ cm; $20$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In normal adjustment, tube length = 120 + 6 = 126 cm; angular magnification magnitude = 120/6 = 20.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$L=f_o+f_e=120+6=126\\ \\text{cm}$$\n$$|M|=\\dfrac{f_o}{f_e}=\\dfrac{120}{6}=20$$\n\nIndependent check: In normal adjustment, tube length = 120 + 6 = 126 cm; angular magnification magnitude = 120/6 = 20.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An astronomical telescope has objective and eyepiece focal lengths $120$ cm and $6$ cm. In normal adjustment, what is the tube length and the magnitude of its angular magnification?",
+  "options": [
+   "$126$ cm; $20$",
+   "$114$ cm; $20$",
+   "$126$ cm; $\\dfrac{1}{20}$",
+   "$120$ cm; $20$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$L=f_o+f_e=120+6=126\\ \\text{cm}$$\n$$|M|=\\dfrac{f_o}{f_e}=\\dfrac{120}{6}=20$$",
+  "distractor_notes": "B: subtracts the focal lengths for the normal-adjustment tube length. C: uses the reciprocal focal-length ratio. D: omits the eyepiece focal length from the tube length."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

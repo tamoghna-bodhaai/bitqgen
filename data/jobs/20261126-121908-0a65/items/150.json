@@ -1,0 +1,68 @@
+{
+ "qno": 150,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 150,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "King's property",
+  "archetype": "symmetric area",
+  "brief": "Use King's property ∫₀ᵃ f(x)dx = ∫₀ᵃ f(a−x)dx to evaluate an integral by adding the two forms.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:130",
+   "2026s2:100",
+   "2025s1:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^\\pi x\\sin^2 x\\,dx$.",
+ "options": [
+  "$\\dfrac{\\pi^2}{8}$",
+  "$\\dfrac{\\pi^2}{4}$",
+  "$\\dfrac{\\pi^2}{2}$",
+  "$\\pi^2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since \\(\\sin^2 x\\) is symmetric about \\(\\pi/2\\), the integral equals \\(\\frac{\\pi}{2}\\int_0^\\pi \\sin^2 x\\,dx=\\frac{\\pi^2}{4}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $I=\\int_0^\\pi x\\sin^2x\\,dx$. By King's property, $I=\\int_0^\\pi(\\pi-x)\\sin^2x\\,dx$.\n$2I=\\pi\\int_0^\\pi\\sin^2x\\,dx=\\dfrac{\\pi^2}{2}$.\n$I=\\dfrac{\\pi^2}{4}$.\n\nIndependent check: Since \\(\\sin^2 x\\) is symmetric about \\(\\pi/2\\), the integral equals \\(\\frac{\\pi}{2}\\int_0^\\pi \\sin^2 x\\,dx=\\frac{\\pi^2}{4}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^\\pi x\\sin^2 x\\,dx$.",
+  "options": [
+   "$\\dfrac{\\pi^2}{8}$",
+   "$\\dfrac{\\pi^2}{4}$",
+   "$\\dfrac{\\pi^2}{2}$",
+   "$\\pi^2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let $I=\\int_0^\\pi x\\sin^2x\\,dx$. By King's property, $I=\\int_0^\\pi(\\pi-x)\\sin^2x\\,dx$.\n$2I=\\pi\\int_0^\\pi\\sin^2x\\,dx=\\dfrac{\\pi^2}{2}$.\n$I=\\dfrac{\\pi^2}{4}$.",
+  "distractor_notes": "A: halves the result twice. C: uses the sum of the two integrals as the answer. D: treats the integral of $\\sin^2x$ as $\\pi$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

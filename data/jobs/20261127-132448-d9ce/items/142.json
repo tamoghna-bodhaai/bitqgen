@@ -1,0 +1,68 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Trigonometric identities",
+  "archetype": "formula recall",
+  "brief": "Evaluate a given sin/cos of a sum/difference using compound-angle formulae; ask for the numeric value among options.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:111",
+   "2026s2:92",
+   "2025s2:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of $\\sin 75^\\circ$ is",
+ "options": [
+  "$\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$",
+  "$\\dfrac{\\sqrt{6}-\\sqrt{2}}{4}$",
+  "$\\dfrac{\\sqrt{6}+\\sqrt{2}}{2}$",
+  "$\\dfrac{\\sqrt{6}-\\sqrt{2}}{2}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(\\sin(45^\\circ+30^\\circ)=\\sin45^\\circ\\cos30^\\circ+\\cos45^\\circ\\sin30^\\circ\\), we get \\(\\frac{\\sqrt6+\\sqrt2}{4}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sin75^\\circ=\\sin(45^\\circ+30^\\circ)$\\\\\n$=\\sin45^\\circ\\cos30^\\circ+\\cos45^\\circ\\sin30^\\circ$\\\\\n$=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$\n\nIndependent check: Using \\(\\sin(45^\\circ+30^\\circ)=\\sin45^\\circ\\cos30^\\circ+\\cos45^\\circ\\sin30^\\circ\\), we get \\(\\frac{\\sqrt6+\\sqrt2}{4}\\).",
+ "solution": "Using $\\sin(A+B)=\\sin A\\cos B+\\cos A\\sin B$,\n$$\\sin75^\\circ=\\sin45^\\circ\\cos30^\\circ+\\cos45^\\circ\\sin30^\\circ=\\frac{\\sqrt6+\\sqrt2}{4}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The value of $\\sin 75^\\circ$ is",
+  "options": [
+   "$\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$",
+   "$\\dfrac{\\sqrt{6}-\\sqrt{2}}{4}$",
+   "$\\dfrac{\\sqrt{6}+\\sqrt{2}}{2}$",
+   "$\\dfrac{\\sqrt{6}-\\sqrt{2}}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\sin75^\\circ=\\sin(45^\\circ+30^\\circ)$\\\\\n$=\\sin45^\\circ\\cos30^\\circ+\\cos45^\\circ\\sin30^\\circ$\\\\\n$=\\dfrac{\\sqrt{6}+\\sqrt{2}}{4}$",
+  "distractor_notes": "B: uses the difference-angle formula. C: misses a factor of $2$ in the denominator. D: uses the difference-angle formula and misses the denominator factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

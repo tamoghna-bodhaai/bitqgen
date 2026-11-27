@@ -1,0 +1,67 @@
+{
+ "qno": 86,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 86,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Verb + preposition misuse",
+  "archetype": "sentence improvement",
+  "brief": "Sentence using a wrong verb-preposition pair (e.g. 'comprises of', 'married with'); pick the option that correctly improves it.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:62",
+   "2025s1:63",
+   "2026s1:70"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the option that correctly improves the bold part of the sentence.\n\nThe new advisory committee **comprises of six members** from different academic backgrounds.",
+ "options": [
+  "comprises with six members",
+  "comprises six members",
+  "is comprising of six members",
+  "No improvement"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "'Comprise' means 'consist of' and takes a direct object without 'of'. So 'comprises of six members' is wrong; correct form is 'comprises six members' (B). 'Comprises with' and 'is comprising of' are both ungrammatical.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The verb 'comprise' means 'to consist of' or 'to be made up of'. In the active voice, 'comprise' is a transitive verb and takes a direct object without any intervening preposition (i.e., 'The whole comprises the parts'). Therefore, using the preposition 'of' after active 'comprises' is an error. Replacing 'comprises of six members' with 'comprises six members' makes the sentence grammatically correct.\n\nIndependent check: 'Comprise' means 'consist of' and takes a direct object without 'of'. So 'comprises of six members' is wrong; correct form is 'comprises six members' (B). 'Comprises with' and 'is comprising of' are both ungrammatical.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Select the option that correctly improves the bold part of the sentence.\n\nThe new advisory committee **comprises of six members** from different academic backgrounds.",
+  "options": [
+   "comprises with six members",
+   "comprises six members",
+   "is comprising of six members",
+   "No improvement"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "The verb 'comprise' means 'to consist of' or 'to be made up of'. In the active voice, 'comprise' is a transitive verb and takes a direct object without any intervening preposition (i.e., 'The whole comprises the parts'). Therefore, using the preposition 'of' after active 'comprises' is an error. Replacing 'comprises of six members' with 'comprises six members' makes the sentence grammatically correct.",
+  "distractor_notes": "A: Uses an incorrect preposition 'with' after the transitive verb 'comprises'.\nC: Incorrectly uses the present continuous tense for a state/composition and retains the erroneous preposition 'of'.\nD: Fails to correct the ungrammatical use of 'of' following 'comprises'.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

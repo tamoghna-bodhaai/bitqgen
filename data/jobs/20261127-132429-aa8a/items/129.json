@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Adjoint determinant properties",
+  "archetype": "conceptual",
+  "brief": "Given a 3×3 matrix relationship between A, adj A and |A|, recover the missing determinant value, possibly with a diagonal or simple structured matrix.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:129",
+   "2025s2:121",
+   "2022:101"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $A$ is a nonsingular $3\\times3$ matrix and $\\operatorname{adj}A=2A$, then $|A|$ is:",
+ "options": [
+  "$4$",
+  "$-8$",
+  "$16$",
+  "$8$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let d=|A|. For a nonsingular 3×3 matrix, |adj A|=d². Taking determinants of adj A=2A gives d²=8d; since d≠0, d=8.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $|A|=d\\ne0$. Then $|\\operatorname{adj}A|=d^2=|2A|=8d$.\\nHence $d=8$.\n\nIndependent check: Let d=|A|. For a nonsingular 3×3 matrix, |adj A|=d². Taking determinants of adj A=2A gives d²=8d; since d≠0, d=8.",
+ "solution": "For a nonsingular $3\\times3$ matrix, $|\\operatorname{adj}A|=|A|^2$. Let $|A|=d\\ne0$; taking determinants of $\\operatorname{adj}A=2A$ gives\n$$d^2=|2A|=2^3d=8d.$$\nHence $d=8$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $A$ is a nonsingular $3\\times3$ matrix and $\\operatorname{adj}A=2A$, then $|A|$ is:",
+  "options": [
+   "$4$",
+   "$8$",
+   "$16$",
+   "$-8$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let $|A|=d\\ne0$. Then $|\\operatorname{adj}A|=d^2=|2A|=8d$.\\nHence $d=8$.",
+  "distractor_notes": "A: Uses the $2\\times2$ adjugate determinant power. C: Applies the scalar factor to the determinant incorrectly. D: Introduces an unsupported negative sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

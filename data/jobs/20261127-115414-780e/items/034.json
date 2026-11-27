@@ -1,0 +1,68 @@
+{
+ "qno": 34,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 34,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor",
+  "archetype": "colligative to structure",
+  "brief": "Equal molality of two given solutes; compare boiling point elevation considering dissociation/association (van 't Hoff factor).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:32",
+   "2026s1:44",
+   "2024s1:46"
+  ]
+ },
+ "status": "ok",
+ "stem": "Equal molal aqueous solutions of sodium chloride and glucose are heated under the same external pressure. Which solution has the higher boiling point?",
+ "options": [
+  "Sodium chloride solution",
+  "Glucose solution",
+  "Both have the same boiling point",
+  "Cannot be predicted without molality"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At equal molality, ΔT_b = iK_bm. NaCl dissociates into ions, so its van’t Hoff factor is greater than glucose’s (approximately 1), giving a greater boiling-point elevation.",
+   "answer": "A",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Boiling point elevation is delta Tb = i * Kb * m. NaCl dissociates into Na+ and Cl-, so i is about 2. Glucose is a non-electrolyte, so i = 1. Equal molality and same Kb give twice the elevation for NaCl, so the sodium chloride solution boils higher.\n\nIndependent check: At equal molality, ΔT_b = iK_bm. NaCl dissociates into ions, so its van’t Hoff factor is greater than glucose’s (approximately 1), giving a greater boiling-point elevation.",
+ "solution": "Boiling-point elevation is $\u0000Delta T_b=iK_bm$. NaCl dissociates into two ions, so $i\\approx2$, whereas glucose is a non-electrolyte with $i=1$.\n$$\\Delta T_b(\\mathrm{NaCl})>\\Delta T_b(\\mathrm{glucose})$$\nThus, the sodium chloride solution has the higher boiling point.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Equal molal aqueous solutions of sodium chloride and glucose are heated under the same external pressure. Which solution has the higher boiling point?",
+  "options": [
+   "Sodium chloride solution",
+   "Glucose solution",
+   "Both have the same boiling point",
+   "Cannot be predicted without molality"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Boiling point elevation is delta Tb = i * Kb * m. NaCl dissociates into Na+ and Cl-, so i is about 2. Glucose is a non-electrolyte, so i = 1. Equal molality and same Kb give twice the elevation for NaCl, so the sodium chloride solution boils higher.",
+  "distractor_notes": "B: assumes glucose gives i = 2. C: assumes equal molality alone determines the boiling point. D: equal molality and known van't Hoff factors make prediction possible."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,67 @@
+{
+ "qno": 56,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 56,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "ΔG° = −nFE°",
+  "archetype": "single-step numerical",
+  "brief": "Give E°cell (and n) for a reaction and compute ΔG°; alternatively use ΔG° = −nFE° = −RT ln K to find the equilibrium constant sign or magnitude for the given cell.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:59",
+   "2025s2:52",
+   "2025s1:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the cell reaction:\n$$\\text{Cd}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Cd}^{2+}(aq) + 2\\text{Ag}(s)$$\nthe standard cell potential is $E^\\circ_\\text{cell} = +1.20\\ \\text{V}$ at $298\\ \\text{K}$. The standard Gibbs energy change ($\\Delta G^\\circ$) for the reaction is:\n(Take $1\\ \\text{F} = 96500\\ \\text{C mol}^{-1}$)",
+ "options": [
+  "$-231.6\\ \\text{kJ mol}^{-1}$",
+  "$-115.8\\ \\text{kJ mol}^{-1}$",
+  "$+115.8\\ \\text{kJ mol}^{-1}$",
+  "$+231.6\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "n = 2 electrons (Cd → Cd²⁺). ΔG° = −nFE°cell = −2 × 96500 × 1.20 = −231600 J mol⁻¹ = −231.6 kJ mol⁻¹.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The two half-reactions are:\nAnode (oxidation): $\\text{Cd}(s) \\rightarrow \\text{Cd}^{2+}(aq) + 2e^-$\nCathode (reduction): $2\\text{Ag}^+(aq) + 2e^- \\rightarrow 2\\text{Ag}(s)$\n\nThus, the number of moles of electrons transferred in the balanced cell reaction is $n = 2$.\n\nThe relation between standard Gibbs energy change and standard cell potential is:\n$$\\Delta G^\\circ = -nFE^\\circ_\\text{cell}$$\n\nSubstitute the given values:\n$$\\Delta G^\\circ = -2 \\times 96500\\ \\text{C mol}^{-1} \\times 1.20\\ \\text{V}$$\n$$\\Delta G^\\circ = -231600\\ \\text{J mol}^{-1} = -231.6\\ \\text{kJ mol}^{-1}$$\n\nIndependent check: n = 2 electrons (Cd → Cd²⁺). ΔG° = −nFE°cell = −2 × 96500 × 1.20 = −231600 J mol⁻¹ = −231.6 kJ mol⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the cell reaction:\n$$\\text{Cd}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Cd}^{2+}(aq) + 2\\text{Ag}(s)$$\nthe standard cell potential is $E^\\circ_\\text{cell} = +1.20\\ \\text{V}$ at $298\\ \\text{K}$. The standard Gibbs energy change ($\\Delta G^\\circ$) for the reaction is:\n(Take $1\\ \\text{F} = 96500\\ \\text{C mol}^{-1}$)",
+  "options": [
+   "$-231.6\\ \\text{kJ mol}^{-1}$",
+   "$-115.8\\ \\text{kJ mol}^{-1}$",
+   "$+115.8\\ \\text{kJ mol}^{-1}$",
+   "$+231.6\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "The two half-reactions are:\nAnode (oxidation): $\\text{Cd}(s) \\rightarrow \\text{Cd}^{2+}(aq) + 2e^-$\nCathode (reduction): $2\\text{Ag}^+(aq) + 2e^- \\rightarrow 2\\text{Ag}(s)$\n\nThus, the number of moles of electrons transferred in the balanced cell reaction is $n = 2$.\n\nThe relation between standard Gibbs energy change and standard cell potential is:\n$$\\Delta G^\\circ = -nFE^\\circ_\\text{cell}$$\n\nSubstitute the given values:\n$$\\Delta G^\\circ = -2 \\times 96500\\ \\text{C mol}^{-1} \\times 1.20\\ \\text{V}$$\n$$\\Delta G^\\circ = -231600\\ \\text{J mol}^{-1} = -231.6\\ \\text{kJ mol}^{-1}$$",
+  "distractor_notes": "Option B encodes using $n = 1$ instead of $n = 2$ by looking only at the charge of $\\text{Ag}^+$.\nOption C encodes using $n = 1$ along with a sign error (omitting the minus sign in $\\Delta G^\\circ = -nFE^\\circ$).\nOption D encodes a sign error by forgetting the negative sign in the formula $\\Delta G^\\circ = -nFE^\\circ$.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

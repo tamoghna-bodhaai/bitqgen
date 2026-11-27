@@ -1,0 +1,67 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Young's modulus",
+  "archetype": "two-condition linear",
+  "brief": "Wire stretched by two loads; find new length/elongation using Y = stress/strain, watch area change",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:13",
+   "2024s1:22",
+   "2026s1:22"
+  ]
+ },
+ "status": "ok",
+ "stem": "A vertical wire of Young's modulus $Y$ is fixed to a rigid ceiling at its upper end. It consists of two segments of equal length $L$: an upper segment of radius $2r$ and a lower segment of radius $r$. A load of mass $2M$ is attached at the junction between the two segments, and a load of mass $M$ is attached at the lower end. Neglecting the mass of the wire, the total elongation of the wire is",
+ "options": [
+  "$\\dfrac{3MgL}{2\\pi r^2 Y}$",
+  "$\\dfrac{7MgL}{4\\pi r^2 Y}$",
+  "$\\dfrac{2MgL}{\\pi r^2 Y}$",
+  "$\\dfrac{5MgL}{2\\pi r^2 Y}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Upper segment carries tension (2M+M)g = 3Mg over area π(2r)² = 4πr²: ΔL₁ = 3MgL/(4πr²Y). Lower segment carries Mg over area πr²: ΔL₂ = MgL/(πr²Y). Total = (3/4 + 1)MgL/(πr²Y) = 7MgL/(4πr²Y).",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "1. Upper segment:\n- Cross-sectional area: $A_1 = \\pi (2r)^2 = 4\\pi r^2$.\n- The upper segment supports both the load at the junction ($2M$) and the load at the lower end ($M$), so the tension is:\n  $$T_1 = (2M + M)g = 3Mg$$\n- Elongation of the upper segment:\n  $$\\Delta L_1 = \\dfrac{T_1 L}{A_1 Y} = \\dfrac{3MgL}{4\\pi r^2 Y}$$\n\n2. Lower segment:\n- Cross-sectional area: $A_2 = \\pi r^2$.\n- The lower segment supports only the lower load ($M$), so the tension is:\n  $$T_2 = Mg$$\n- Elongation of the lower segment:\n  $$\\Delta L_2 = \\dfrac{T_2 L}{A_2 Y} = \\dfrac{MgL}{\\pi r^2 Y}$$\n\n3. Total elongation:\n  $$\\Delta L = \\Delta L_1 + \\Delta L_2 = \\dfrac{3MgL}{4\\pi r^2 Y} + \\dfrac{4MgL}{4\\pi r^2 Y} = \\dfrac{7MgL}{4\\pi r^2 Y}$$\n\nIndependent check: Upper segment carries tension (2M+M)g = 3Mg over area π(2r)² = 4πr²: ΔL₁ = 3MgL/(4πr²Y). Lower segment carries Mg over area πr²: ΔL₂ = MgL/(πr²Y). Total = (3/4 + 1)MgL/(πr²Y) = 7MgL/(4πr²Y).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A vertical wire of Young's modulus $Y$ is fixed to a rigid ceiling at its upper end. It consists of two segments of equal length $L$: an upper segment of radius $2r$ and a lower segment of radius $r$. A load of mass $2M$ is attached at the junction between the two segments, and a load of mass $M$ is attached at the lower end. Neglecting the mass of the wire, the total elongation of the wire is",
+  "options": [
+   "$\\dfrac{3MgL}{2\\pi r^2 Y}$",
+   "$\\dfrac{7MgL}{4\\pi r^2 Y}$",
+   "$\\dfrac{2MgL}{\\pi r^2 Y}$",
+   "$\\dfrac{5MgL}{2\\pi r^2 Y}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. Upper segment:\n- Cross-sectional area: $A_1 = \\pi (2r)^2 = 4\\pi r^2$.\n- The upper segment supports both the load at the junction ($2M$) and the load at the lower end ($M$), so the tension is:\n  $$T_1 = (2M + M)g = 3Mg$$\n- Elongation of the upper segment:\n  $$\\Delta L_1 = \\dfrac{T_1 L}{A_1 Y} = \\dfrac{3MgL}{4\\pi r^2 Y}$$\n\n2. Lower segment:\n- Cross-sectional area: $A_2 = \\pi r^2$.\n- The lower segment supports only the lower load ($M$), so the tension is:\n  $$T_2 = Mg$$\n- Elongation of the lower segment:\n  $$\\Delta L_2 = \\dfrac{T_2 L}{A_2 Y} = \\dfrac{MgL}{\\pi r^2 Y}$$\n\n3. Total elongation:\n  $$\\Delta L = \\Delta L_1 + \\Delta L_2 = \\dfrac{3MgL}{4\\pi r^2 Y} + \\dfrac{4MgL}{4\\pi r^2 Y} = \\dfrac{7MgL}{4\\pi r^2 Y}$$",
+  "distractor_notes": "Option A assumes the upper segment supports only the mass at the junction ($T_1 = 2Mg$), giving $\\Delta L = (1/2 + 1)MgL/(\\pi r^2 Y) = 3MgL/(2\\pi r^2 Y)$.\\nOption C makes two errors: assumes $T_1 = 2Mg$ and forgets to square the radius factor ($A_1 = 2\\pi r^2$), giving $\\Delta L = (1 + 1)MgL/(\\pi r^2 Y) = 2MgL/(\\pi r^2 Y)$.\\nOption D forgets to square the radius of the upper segment ($A_1 = 2\\pi r^2$ instead of $4\\pi r^2$), giving $\\Delta L = (3/2 + 1)MgL/(\\pi r^2 Y) = 5MgL/(2\\pi r^2 Y)$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

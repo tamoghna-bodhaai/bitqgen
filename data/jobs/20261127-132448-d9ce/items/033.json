@@ -1,0 +1,78 @@
+{
+ "qno": 33,
+ "section": "Physics",
+ "slot": {
+  "qno": 33,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Newton's second law (vector)",
+  "archetype": "differentiate then F = ma",
+  "brief": "A particle moves with a given position/velocity time function; compute the force as function of time and identify where the force changes direction.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:20",
+   "2024s1:27",
+   "2024s2:22"
+  ]
+ },
+ "status": "ok",
+ "stem": "A bead of mass $3$ kg moves along the horizontal wire segment shown in the figure, with position $x=\\left(\\dfrac{t^3}{3}-2t^2+3t\\right)$ m for $t\\geq 0$. Which statement gives its force and when the force reverses direction?",
+ "options": [
+  "$F=(6t-12)$ N; reversal at $t=1$ s",
+  "$F=(6t-12)$ N; reversal at $t=2$ s",
+  "$F=(3t-6)$ N; reversal at $t=2$ s",
+  "$F=(6t+12)$ N; no reversal for $t\\geq0$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q033_stem_v0.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From x=t³/3−2t²+3t, a=d²x/dt²=2t−4. Thus F=ma=3(2t−4)=6t−12 N, which changes sign at t=2 s.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "The figure shows an electrical circuit, not a bead on a horizontal wire segment; it is unrelated to the stated motion."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v=\\dfrac{dx}{dt}=t^2-4t+3$ m s$^{-1}$\\n$a=\\dfrac{dv}{dt}=2t-4$ m s$^{-2}$\\n$F=ma=3(2t-4)=6t-12$ N\\n$F=0$ at $t=2$ s; its sign changes there.\n\nIndependent check: From x=t³/3−2t²+3t, a=d²x/dt²=2t−4. Thus F=ma=3(2t−4)=6t−12 N, which changes sign at t=2 s.",
+ "solution": "$a=\\dfrac{d^2x}{dt^2}=2t-4\\ \\text{m s}^{-2}$, so $F=ma=3(2t-4)=6t-12\\ \\text{N}$.\\\\\n$F=0$ at $t=2\\ \\text{s}$, and its sign changes there; hence the force reverses direction at $t=2\\ \\text{s}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A bead of mass $3$ kg moves along the horizontal wire segment shown in the figure, with position $x=\\left(\\dfrac{t^3}{3}-2t^2+3t\\right)$ m for $t\\geq 0$. Which statement gives its force and when the force reverses direction?",
+  "options": [
+   "$F=(6t-12)$ N; reversal at $t=2$ s",
+   "$F=(6t-12)$ N; reversal at $t=1$ s",
+   "$F=(3t-6)$ N; reversal at $t=2$ s",
+   "$F=(6t+12)$ N; no reversal for $t\\geq0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a simple closed rectangular circuit. Place a cell on the left vertical side, marked with + and − terminals, and a resistor labelled R on the top horizontal side. On the bottom horizontal wire, show a small bead labelled P. Draw a horizontal x-axis arrow along this bottom wire pointing to the right. No numerical values are needed.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$v=\\dfrac{dx}{dt}=t^2-4t+3$ m s$^{-1}$\\n$a=\\dfrac{dv}{dt}=2t-4$ m s$^{-2}$\\n$F=ma=3(2t-4)=6t-12$ N\\n$F=0$ at $t=2$ s; its sign changes there.",
+  "distractor_notes": "B: confuses a zero of velocity with the force reversal time. C: misses the factor of $2$ when differentiating the velocity. D: uses the wrong sign for the acceleration's constant term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

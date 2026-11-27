@@ -1,0 +1,68 @@
+{
+ "qno": 74,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 74,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Bond order and bond length (resonance)",
+  "archetype": "ordering",
+  "brief": "Rank bond order/bond length of a given bond (e.g. C–O or N–O) across a molecule and its resonance-related ions; ask for the correct increasing bond-length order.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:35",
+   "2025s1:38",
+   "2024s2:33"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which is the increasing order of average N–O bond lengths in $\\text{NO}_2^+$, $\\text{NO}_2^-$ and $\\text{NO}_3^-$?",
+ "options": [
+  "$\\text{NO}_2^- < \\text{NO}_2^+ < \\text{NO}_3^-$",
+  "$\\text{NO}_3^- < \\text{NO}_2^- < \\text{NO}_2^+$",
+  "$\\text{NO}_2^+ < \\text{NO}_2^- < \\text{NO}_3^-$",
+  "$\\text{NO}_2^+ < \\text{NO}_3^- < \\text{NO}_2^-$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Resonance gives average N–O bond orders of 2 in NO₂⁺, 1.5 in NO₂⁻, and 4/3 in NO₃⁻. Lower bond order corresponds to greater bond length, so the increasing order is NO₂⁺ < NO₂⁻ < NO₃⁻.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Average N–O bond orders: $\\text{NO}_2^+=2$; $\\text{NO}_2^-=1.5$; $\\text{NO}_3^-=\\dfrac{4}{3}$.\\nBond length decreases as bond order increases.\\nThus: $\\text{NO}_2^+ < \\text{NO}_2^- < \\text{NO}_3^-$.\n\nIndependent check: Resonance gives average N–O bond orders of 2 in NO₂⁺, 1.5 in NO₂⁻, and 4/3 in NO₃⁻. Lower bond order corresponds to greater bond length, so the increasing order is NO₂⁺ < NO₂⁻ < NO₃⁻.",
+ "solution": "Resonance gives average N–O bond orders of $2$, $1.5$, and $\\frac{4}{3}$ in $\\text{NO}_2^+$, $\\text{NO}_2^-$, and $\\text{NO}_3^-$, respectively. Since bond length decreases as bond order increases,\n$$\\text{NO}_2^+ < \\text{NO}_2^- < \\text{NO}_3^-$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which is the increasing order of average N–O bond lengths in $\\text{NO}_2^+$, $\\text{NO}_2^-$ and $\\text{NO}_3^-$?",
+  "options": [
+   "$\\text{NO}_2^+ < \\text{NO}_2^- < \\text{NO}_3^-$",
+   "$\\text{NO}_3^- < \\text{NO}_2^- < \\text{NO}_2^+$",
+   "$\\text{NO}_2^- < \\text{NO}_2^+ < \\text{NO}_3^-$",
+   "$\\text{NO}_2^+ < \\text{NO}_3^- < \\text{NO}_2^-$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Average N–O bond orders: $\\text{NO}_2^+=2$; $\\text{NO}_2^-=1.5$; $\\text{NO}_3^-=\\dfrac{4}{3}$.\\nBond length decreases as bond order increases.\\nThus: $\\text{NO}_2^+ < \\text{NO}_2^- < \\text{NO}_3^-$.",
+  "distractor_notes": "B reverses the bond-order trend; C places the nitrite bond shorter than the nitronium bond; D interchanges the nitrite and nitrate lengths."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

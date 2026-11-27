@@ -1,0 +1,395 @@
+{
+ "title": "Mini test",
+ "pattern_id": "bitsat_130",
+ "questions": [
+  {
+   "qno": 1,
+   "section": "Physics",
+   "stem": "A curved road of radius $120$ m is banked at an angle $\\theta$ such that $\\sin\\theta = 0.6$. What is the speed at which a car can take this curve safely without relying on friction? (Take $g = 10$ m s$^{-2}$.)",
+   "options": [
+    {
+     "text": "$30$ km h$^{-1}$"
+    },
+    {
+     "text": "$97$ km h$^{-1}$"
+    },
+    {
+     "text": "$144$ km h$^{-1}$"
+    },
+    {
+     "text": "$108$ km h$^{-1}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Without friction, $N\\sin\\theta = \\dfrac{mv^2}{r}$ and $N\\cos\\theta = mg$, so $\\tan\\theta = \\dfrac{v^2}{rg}$.\nGiven $\\sin\\theta = 0.6$, $\\cos\\theta = 0.8$ and $\\tan\\theta = \\dfrac{3}{4}$.\n$$v^2 = rg\\tan\\theta = 120\\times10\\times\\dfrac{3}{4} = 900 \\Rightarrow v = 30\\ \\text{m s}^{-1}$$\nConverting, $v = 30\\times\\dfrac{18}{5} = 108$ km h$^{-1}$.",
+   "chapter": "Laws of Motion",
+   "subtopic": "Banking of roads",
+   "archetype": "single-formula numerical",
+   "difficulty": 2
+  },
+  {
+   "qno": 2,
+   "section": "Physics",
+   "stem": "Two long straight parallel wires carrying currents in the same direction attract each other with a force of $6\\times10^{-5}$ N per metre length. The current in one wire is doubled and the separation between the wires is made three times. The new force per unit length is",
+   "options": [
+    {
+     "text": "$1.33\\times10^{-5}$ N m$^{-1}$"
+    },
+    {
+     "text": "$4\\times10^{-5}$ N m$^{-1}$"
+    },
+    {
+     "text": "$9\\times10^{-5}$ N m$^{-1}$"
+    },
+    {
+     "text": "$3.6\\times10^{-4}$ N m$^{-1}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "Force per unit length between parallel currents: $$\\frac{F}{L}=\\frac{\\mu_0 I_1 I_2}{2\\pi d}\\propto\\frac{I_1 I_2}{d}$$\nWith $I_1\\to 2I_1$ and $d\\to 3d$: $$\\frac{F'}{F}=\\frac{2}{3}$$\n$$F'=\\frac{2}{3}\\times 6\\times10^{-5}=4\\times10^{-5}\\ \\text{N m}^{-1}$$",
+   "chapter": "Moving Charges and Magnetism",
+   "subtopic": "Force between parallel currents",
+   "archetype": "proportionality-scaling",
+   "difficulty": 1
+  },
+  {
+   "qno": 3,
+   "section": "Physics",
+   "stem": "Two point charges, $q_A = +9\\ \\mu\\text{C}$ and $q_B = -4\\ \\mu\\text{C}$, are fixed at points A and B, $10$ cm apart, as shown in the figure. At which point on the line AB is the net electric field zero?",
+   "figure": {
+    "kind": "diagram",
+    "path": "figs/q003_stem_v0.png",
+    "width_pct": 60
+   },
+   "options": [
+    {
+     "text": "$4$ cm from B, between A and B"
+    },
+    {
+     "text": "$8$ cm from B, on the side of B away from A"
+    },
+    {
+     "text": "$20$ cm from B, on the side of B away from A"
+    },
+    {
+     "text": "$20$ cm from A, on the side of A away from B"
+    }
+   ],
+   "answer": "C",
+   "solution": "For opposite charges, fields between A and B point the same way, so the null point lies outside AB, on the side of the smaller charge (B). Let it be $x$ cm beyond B.\n$$\\frac{k(9)}{(10+x)^2}=\\frac{k(4)}{x^2}\\Rightarrow \\frac{3}{10+x}=\\frac{2}{x}$$\n$$3x=20+2x\\Rightarrow x=20\\ \\text{cm}$$\nSo E = 0 at 20 cm from B on the side away from A (30 cm from A). Check: $9/30^2=4/20^2=0.01$.",
+   "chapter": "Electrostatics",
+   "subtopic": "Null point of two charges",
+   "archetype": "force balance",
+   "difficulty": 2,
+   "figure_kind": "diagram"
+  },
+  {
+   "qno": 4,
+   "section": "Chemistry",
+   "stem": "$5.4$ g of aluminium is heated in excess chlorine gas: $$2\\text{Al} + 3\\text{Cl}_2 \\rightarrow 2\\text{AlCl}_3$$ What mass of $\\text{AlCl}_3$ is formed? (Atomic masses: Al $= 27$, Cl $= 35.5$)",
+   "options": [
+    {
+     "text": "$26.7$ g"
+    },
+    {
+     "text": "$21.3$ g"
+    },
+    {
+     "text": "$13.35$ g"
+    },
+    {
+     "text": "$53.4$ g"
+    }
+   ],
+   "answer": "A",
+   "solution": "Al is limiting since Cl$_2$ is in excess. $n_{\\text{Al}} = \\dfrac{5.4}{27} = 0.2$ mol.\nFrom $2\\text{Al} \\rightarrow 2\\text{AlCl}_3$, $n_{\\text{AlCl}_3} = 0.2$ mol.\n$M(\\text{AlCl}_3) = 27 + 3(35.5) = 133.5$ g/mol.\n$$m = 0.2 \\times 133.5 = 26.7\\ \\text{g}$$",
+   "chapter": "Some Basic Concepts of Chemistry",
+   "subtopic": "Mole concept and percentage composition",
+   "archetype": "stoichiometry bookkeeping",
+   "difficulty": 1
+  },
+  {
+   "qno": 5,
+   "section": "Chemistry",
+   "stem": "**Statement I:** In the isoelectronic series $\\text{S}^{2-}$, $\\text{Cl}^-$, $\\text{K}^+$, $\\text{Ca}^{2+}$, the ionic radius decreases steadily from $\\text{S}^{2-}$ to $\\text{Ca}^{2+}$.\n\n**Statement II:** The atomic radius of Ga is greater than that of Al because Ga lies below Al in group 13.",
+   "options": [
+    {
+     "text": "Both Statement I and Statement II are correct."
+    },
+    {
+     "text": "Both Statement I and Statement II are incorrect."
+    },
+    {
+     "text": "Statement I is correct but Statement II is incorrect."
+    },
+    {
+     "text": "Statement II is correct but Statement I is incorrect."
+    }
+   ],
+   "answer": "C",
+   "solution": "Statement I: All four ions have 18 electrons, while nuclear charge rises: $Z = 16, 17, 19, 20$. A greater $Z$ pulls the same electron cloud in more strongly, so $$r(\\text{S}^{2-})>r(\\text{Cl}^-)>r(\\text{K}^+)>r(\\text{Ca}^{2+})$$ Statement I is correct.\nStatement II: Ga comes after the ten 3d elements. The 3d electrons shield the nucleus poorly, so the effective nuclear charge on Ga's outer electrons is high. Hence Ga ($\\approx 135$ pm) is slightly smaller than Al ($\\approx 143$ pm), so Statement II is incorrect.\nTherefore Statement I is correct and Statement II is incorrect, which is (C).",
+   "chapter": "Classification of Elements and Periodicity",
+   "subtopic": "Atomic/ionic radii trends",
+   "archetype": "two-statement evaluation",
+   "difficulty": 2
+  },
+  {
+   "qno": 6,
+   "section": "Chemistry",
+   "stem": "The Fischer projection of 2-bromo-3-hydroxybutanoic acid is shown in the figure. Reading from top to bottom, it is: $\\text{COOH}$ (top); C2: Br (left), H (right); C3: H (left), OH (right); $\\text{CH}_3$ (bottom). How many stereoisomers are possible for this compound, and what is the configuration of the **enantiomer** of the isomer shown?",
+   "figure": {
+    "kind": "chem",
+    "path": "figs/q006_stem_v1.png",
+    "width_pct": 32
+   },
+   "options": [
+    {
+     "text": "$4$; $(2S,3R)$"
+    },
+    {
+     "text": "$4$; $(2R,3S)$"
+    },
+    {
+     "text": "$3$; $(2R,3S)$"
+    },
+    {
+     "text": "$4$; $(2S,3S)$"
+    }
+   ],
+   "answer": "B",
+   "solution": "Two different stereocentres (C2, C3) and no symmetry, so no meso form: $2^2=4$ stereoisomers.\nC2: priorities Br > COOH > CH(OH)CH$_3$ > H. Br (left) → COOH (top) → C3 (bottom) is clockwise; H is on a horizontal bond, so the result is reversed: $2S$.\nC3: priorities OH > CH(Br)COOH > CH$_3$ > H. OH (right) → C2 (top) → CH$_3$ (bottom) is anticlockwise; H is horizontal, so reverse: $3R$. The isomer shown is $(2S,3R)$.\nThe enantiomer inverts both centres: $(2R,3S)$.",
+   "chapter": "Organic Chemistry – Basic Principles",
+   "subtopic": "Stereoisomerism with R/S in Fischer projection",
+   "archetype": "CIP assignment",
+   "difficulty": 3,
+   "figure_kind": "chem"
+  },
+  {
+   "qno": 7,
+   "section": "English Proficiency",
+   "stem": "Choose the most effective word from the given options to fill in the blank and to make the sentence meaningfully complete.\n\nThe minister's speech was full of grand promises, but its **\\_\\_\\_\\_** became obvious when no funds were allotted in the budget.",
+   "options": [
+    {
+     "text": "sincerity"
+    },
+    {
+     "text": "hollowness"
+    },
+    {
+     "text": "brevity"
+    },
+    {
+     "text": "eloquence"
+    }
+   ],
+   "answer": "B",
+   "solution": "The contrast marked by 'but' shows the grand promises were not backed by action. When no funds were allotted, the speech's lack of real substance was exposed. 'Hollowness' means emptiness or lack of substance, so it fits. 'Sincerity' and 'eloquence' are positive qualities that clash with the contrast, and 'brevity' (shortness) is not revealed by a missing budget allocation.",
+   "chapter": "Sentence Completion (vocabulary)",
+   "subtopic": "Sentence completion (single blank, contextual vocabulary)",
+   "archetype": "fill in the blank (vocab)",
+   "difficulty": 2
+  },
+  {
+   "qno": 8,
+   "section": "English Proficiency",
+   "stem": "Read the following passage carefully and answer the questions that follow.\n\nEarly maps were rarely intended as neutral records of the land. Medieval European mapmakers, for instance, often placed Jerusalem at the centre of the world, not because they were ignorant of geography, but because the map expressed a religious conception of order. Distances and coastlines were secondary to the message that the chart was meant to convey. In this sense, a map was closer to an argument than to a photograph.\n\nWith the rise of navigation and long-distance trade, the demand for accuracy grew. Sailors who relied on faulty charts risked shipwreck, and merchants who misjudged routes lost money. Instruments such as the compass and the quadrant, along with systematic surveying, allowed cartographers to measure positions with increasing precision. Maps gradually became tools for practical decision-making rather than symbols of belief.\n\nYet greater precision did not make maps entirely objective. Every map must omit some features in order to highlight others, and the choice of what to include reflects the priorities of its maker. A road map ignores the geology beneath it; a political map ignores the mountains that divide a nation's people. Even the choice of projection, which flattens a curved surface onto paper, inevitably distorts either area, shape, or distance. Modern maps are therefore best understood as selective representations, useful precisely because they simplify, but never free from the purposes that shaped them.\n\nWhich of the following best expresses the main idea of the passage?",
+   "options": [
+    {
+     "text": "Maps have shifted from symbolic to practical uses, yet remain selective representations shaped by purpose."
+    },
+    {
+     "text": "Medieval mapmakers lacked geographical knowledge and therefore produced unreliable charts for travellers."
+    },
+    {
+     "text": "Modern surveying instruments have made maps completely objective and free from the maker's priorities."
+    },
+    {
+     "text": "Map projections are the chief reason that maps fail to serve the needs of merchants and sailors."
+    }
+   ],
+   "answer": "A",
+   "solution": "The passage moves in three steps: early maps expressed belief (Jerusalem at the centre), later maps became practical tools for navigation and trade, and even precise modern maps remain 'selective representations' shaped by their makers' purposes. Only (A) covers this whole arc. (B) contradicts 'not because they were ignorant of geography'. (C) contradicts 'did not make maps entirely objective'. (D) inflates a minor point about projection.",
+   "chapter": "Reading Comprehension",
+   "subtopic": "Detail",
+   "archetype": "",
+   "difficulty": 2,
+   "passage_id": "rc1"
+  },
+  {
+   "qno": 9,
+   "section": "English Proficiency",
+   "stem": "The author compares a medieval map to 'an argument' rather than 'a photograph' in order to suggest that such a map",
+   "options": [
+    {
+     "text": "was drawn mainly to persuade sailors to adopt particular trade routes"
+    },
+    {
+     "text": "was less valuable than later maps because it relied on written explanations"
+    },
+    {
+     "text": "was designed to communicate a view of the world rather than to record it faithfully"
+    },
+    {
+     "text": "was produced by mapmakers who intentionally falsified distances for profit"
+    }
+   ],
+   "answer": "C",
+   "solution": "A photograph records appearances faithfully, whereas an argument puts forward a viewpoint. The passage says the Jerusalem-centred map 'expressed a religious conception of order' and that distances and coastlines were secondary to 'the message that the chart was meant to convey'. So the map was meant to communicate a view of the world, not to record it accurately, which is option (C). The passage says nothing about persuading sailors, relying on written explanations, or falsifying distances for profit, so (A), (B) and (D) are unsupported.",
+   "chapter": "Reading Comprehension",
+   "subtopic": "Inference",
+   "archetype": "",
+   "difficulty": 2,
+   "passage_id": "rc1"
+  },
+  {
+   "qno": 10,
+   "section": "Logical Reasoning",
+   "stem": "If **PLANT** is coded as **RNCPV** in a certain code, then how will **BRAIN** be coded in that code?",
+   "options": [
+    {
+     "text": "DSCKP"
+    },
+    {
+     "text": "DTCKP"
+    },
+    {
+     "text": "CTBKP"
+    },
+    {
+     "text": "DTCJP"
+    }
+   ],
+   "answer": "B",
+   "solution": "Each letter is shifted $+2$ in the alphabet: P→R, L→N, A→C, N→P, T→V, giving RNCPV.\n\nApplying the same rule to BRAIN: B→D, R→T, A→C, I→K, N→P.\n\n$$\\text{BRAIN}\\to\\text{DTCKP}$$\n\nThis matches (B).",
+   "chapter": "Coding-Decoding",
+   "subtopic": "Coding-decoding",
+   "archetype": "letter-number shift",
+   "difficulty": 1
+  },
+  {
+   "qno": 11,
+   "section": "Logical Reasoning",
+   "stem": "**Statements:**\nAll pens are books.\nAll books are tables.\n\n**Conclusions:**\nI. All pens are tables.\nII. All tables are books.",
+   "options": [
+    {
+     "text": "Only I follows"
+    },
+    {
+     "text": "Only II follows"
+    },
+    {
+     "text": "Both I and II follow"
+    },
+    {
+     "text": "Neither I nor II follows"
+    }
+   ],
+   "answer": "A",
+   "solution": "Let P = pens, B = books, T = tables. The statements give $P \\subseteq B$ and $B \\subseteq T$.\n$$P \\subseteq B \\subseteq T \\Rightarrow P \\subseteq T$$\nSo I follows (All-All-All syllogism).\nII is the converse of 'All books are tables', and a universal affirmative cannot be reversed. Tables can be a larger set than books, so II does not follow. Only I follows, which is (A).",
+   "chapter": "Syllogism",
+   "subtopic": "Syllogism",
+   "archetype": "syllogism",
+   "difficulty": 1
+  },
+  {
+   "qno": 12,
+   "section": "Logical Reasoning",
+   "stem": "In a certain code, PLAN is written as MOXQ. In the same code, how will SHIP be written?",
+   "options": [
+    {
+     "text": "QKGS"
+    },
+    {
+     "text": "PKFR"
+    },
+    {
+     "text": "PKFS"
+    },
+    {
+     "text": "PJFS"
+    }
+   ],
+   "answer": "C",
+   "solution": "Compare PLAN with MOXQ: P→M (−3), L→O (+3), A→X (−3), N→Q (+3). Letters alternate between a shift of −3 and +3.\n$$S(-3)=P,\\; H(+3)=K,\\; I(-3)=F,\\; P(+3)=S$$\nSo SHIP is coded as PKFS, which is option (C).",
+   "chapter": "Analogy",
+   "subtopic": "Letter analogy",
+   "archetype": "letter shift analogy",
+   "difficulty": 2
+  },
+  {
+   "qno": 13,
+   "section": "Mathematics",
+   "stem": "$\\displaystyle\\int e^{x}\\left(\\dfrac{2-\\sin 2x}{1-\\cos 2x}\\right)dx$ is equal to (where $C$ is an arbitrary constant)",
+   "options": [
+    {
+     "text": "$e^{x}\\cot x + C$"
+    },
+    {
+     "text": "$-\\dfrac{1}{2}e^{x}\\cot x + C$"
+    },
+    {
+     "text": "$-e^{x}\\cot x + C$"
+    },
+    {
+     "text": "$-e^{x}\\cot 2x + C$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Use $1-\\cos 2x=2\\sin^2x$ and $\\sin 2x=2\\sin x\\cos x$:\n$$\\frac{2-\\sin 2x}{1-\\cos 2x}=\\frac{2-2\\sin x\\cos x}{2\\sin^2x}=\\csc^2x-\\cot x.$$\nLet $f(x)=-\\cot x$, so $f'(x)=\\csc^2x$ and the integrand is $e^x\\,[f(x)+f'(x)]$.\n$$\\int e^x\\,[f(x)+f'(x)]\\,dx=e^xf(x)+C=-e^x\\cot x+C.$$",
+   "chapter": "Integral Calculus",
+   "subtopic": "e^f (g + g') form",
+   "archetype": "recognise derivative pattern",
+   "difficulty": 2
+  },
+  {
+   "qno": 14,
+   "section": "Mathematics",
+   "stem": "If a focal chord of the parabola $y^2 = 12x$ is divided by the focus into segments of lengths $l_1$ and $l_2$, then $\\dfrac{1}{l_1} + \\dfrac{1}{l_2}$ equals",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{12}$"
+    },
+    {
+     "text": "$\\dfrac{1}{3}$"
+    },
+    {
+     "text": "$\\dfrac{1}{6}$"
+    },
+    {
+     "text": "$\\dfrac{2}{3}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For $y^2=4ax$, the focal chord has ends $(at^2,2at)$ and $(a/t^2,-2a/t)$, and the focal distance of a point is $x+a$.\n$$l_1=a(1+t^2),\\quad l_2=a\\left(1+\\tfrac{1}{t^2}\\right)=\\frac{a(1+t^2)}{t^2}$$\n$$\\frac1{l_1}+\\frac1{l_2}=\\frac{1+t^2}{a(1+t^2)}=\\frac1a$$\nHere $4a=12$, so $a=3$ and the sum is $\\dfrac13$.",
+   "chapter": "Conic Sections",
+   "subtopic": "Parabola focal chord properties",
+   "archetype": "property recall",
+   "difficulty": 1
+  },
+  {
+   "qno": 15,
+   "section": "Mathematics",
+   "stem": "Let $A = \\{x \\in \\mathbb{N} : x \\text{ is a divisor of } 36\\}$. The number of subsets of $A$ is",
+   "options": [
+    {
+     "text": "$512$"
+    },
+    {
+     "text": "$511$"
+    },
+    {
+     "text": "$256$"
+    },
+    {
+     "text": "$1024$"
+    }
+   ],
+   "answer": "A",
+   "solution": "$36 = 2^2\\cdot 3^2$, so the number of positive divisors is $(2+1)(2+1)=9$.\n$A=\\{1,2,3,4,6,9,12,18,36\\}$, so $n(A)=9$.\nNumber of subsets $=2^{n(A)}=2^9=512$.",
+   "chapter": "Sets, Relations and Functions",
+   "subtopic": "Number of subsets",
+   "archetype": "distinct elements count",
+   "difficulty": 1
+  }
+ ]
+}

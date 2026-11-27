@@ -1,0 +1,68 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE intensity",
+  "archetype": "phase difference to intensity",
+  "brief": "Two identical speakers (or coherent sources) with given path difference at a point; decide constructive/destructive interference and compute resultant intensity ratio.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:10",
+   "2022:26",
+   "2024s1:20"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two identical coherent sources produce waves of wavelength $\\lambda$. At a point where their path difference is $\\dfrac{\\lambda}{4}$, what is the resultant intensity relative to the intensity produced by either source alone?",
+ "options": [
+  "$0$",
+  "$1$",
+  "$2$",
+  "$4$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The phase difference is $2\\pi(\\lambda/4)/\\lambda=\\pi/2$. Thus $I_R=I+I+2I\\cos(\\pi/2)=2I$, twice the intensity from either source.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\phi=\\dfrac{2\\pi}{\\lambda}\\,\\dfrac{\\lambda}{4}=\\dfrac{\\pi}{2}$.\n$\\dfrac{I}{I_0}=4\\cos^2\\left(\\dfrac{\\phi}{2}\\right)=4\\cos^2\\left(\\dfrac{\\pi}{4}\\right)=2$.\n\nIndependent check: The phase difference is $2\\pi(\\lambda/4)/\\lambda=\\pi/2$. Thus $I_R=I+I+2I\\cos(\\pi/2)=2I$, twice the intensity from either source.",
+ "solution": "The phase difference is $[?]$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two identical coherent sources produce waves of wavelength $\\lambda$. At a point where their path difference is $\\dfrac{\\lambda}{4}$, what is the resultant intensity relative to the intensity produced by either source alone?",
+  "options": [
+   "$0$",
+   "$1$",
+   "$2$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\phi=\\dfrac{2\\pi}{\\lambda}\\,\\dfrac{\\lambda}{4}=\\dfrac{\\pi}{2}$.\n$\\dfrac{I}{I_0}=4\\cos^2\\left(\\dfrac{\\phi}{2}\\right)=4\\cos^2\\left(\\dfrac{\\pi}{4}\\right)=2$.",
+  "distractor_notes": "A: Treats a quarter-wavelength path difference as destructive interference.\nB: Uses the intensity of one source without interference.\nD: Assumes the sources interfere constructively."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

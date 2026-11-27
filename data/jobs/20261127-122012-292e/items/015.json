@@ -1,0 +1,68 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE intensity",
+  "archetype": "phase difference to intensity",
+  "brief": "Two waves superpose with a given phase difference and intensities; ask for the resultant intensity at a point (no figure needed).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:26",
+   "2021:10",
+   "2026s1:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two coherent light waves of intensities 9I and 4I meet at a point with a phase difference of 120 degrees. The resultant intensity at that point is:",
+ "options": [
+  "1I",
+  "13I",
+  "7I",
+  "19I"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Resultant intensity = 9I + 4I + 2√(9I·4I) cos 120° = 13I − 6I = 7I.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "I_res = I1 + I2 + 2 sqrt(I1 I2) cos phi\nI_res = 9I + 4I + 2 sqrt(9I * 4I) cos 120\nI_res = 13I + 12I * (-0.5)\nI_res = 13I - 6I = 7I\n\nIndependent check: Resultant intensity = 9I + 4I + 2√(9I·4I) cos 120° = 13I − 6I = 7I.",
+ "solution": "For two coherent waves, $I_{\\text{res}}=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\phi$.  \n$$I_{\\text{res}}=9I+4I+2\\sqrt{(9I)(4I)}\\cos120^\\circ=13I-6I=7I.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two coherent light waves of intensities 9I and 4I meet at a point with a phase difference of 120 degrees. The resultant intensity at that point is:",
+  "options": [
+   "1I",
+   "7I",
+   "13I",
+   "19I"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "I_res = I1 + I2 + 2 sqrt(I1 I2) cos phi\nI_res = 9I + 4I + 2 sqrt(9I * 4I) cos 120\nI_res = 13I + 12I * (-0.5)\nI_res = 13I - 6I = 7I",
+  "distractor_notes": "1I: uses amplitude difference squared, (3 - 2)^2 I; 13I: adds only individual intensities and omits the interference term; 19I: sign error using cos 60 = +0.5 instead of cos 120 = -0.5."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

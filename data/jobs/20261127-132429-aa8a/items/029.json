@@ -1,0 +1,68 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile motion",
+  "archetype": "two-equation kinematics",
+  "brief": "Projectile motion: ball thrown at an angle or dropped from a moving platform; combine the two perpendicular kinematic equations to find time of flight and range (or landing position), with simple given numbers.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:15",
+   "2026s1:3",
+   "2024s2:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "A ball is projected from level ground with speed $25$ m s$^{-1}$ at an angle of $37^\\circ$ to the horizontal. Take $g = 10$ m s$^{-2}$, $\\sin 37^\\circ = 0.6$ and $\\cos 37^\\circ = 0.8$. What is its horizontal range?",
+ "options": [
+  "$60$ m",
+  "$45$ m",
+  "$30$ m",
+  "$75$ m"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Range = u² sin(2θ)/g = 25² × (2 × 0.6 × 0.8)/10 = 60 m.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u_x=25(0.8)=20$ m s$^{-1}$, $u_y=25(0.6)=15$ m s$^{-1}$\n$0=u_y t-\\dfrac{1}{2}gt^2\\Rightarrow t=\\dfrac{2u_y}{g}=3$ s\n$R=u_x t=20(3)=60$ m\n\nIndependent check: Range = u² sin(2θ)/g = 25² × (2 × 0.6 × 0.8)/10 = 60 m.",
+ "solution": "Resolve the initial velocity: $u_x=25(0.8)=20\\,\\text{m s}^{-1}$ and $u_y=25(0.6)=15\\,\\text{m s}^{-1}$. The time of flight is $t=\\dfrac{2u_y}{g}=3\\,\\text{s}$.\\\\\n$$R=u_x t=20(3)=60\\,\\text{m}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A ball is projected from level ground with speed $25$ m s$^{-1}$ at an angle of $37^\\circ$ to the horizontal. Take $g = 10$ m s$^{-2}$, $\\sin 37^\\circ = 0.6$ and $\\cos 37^\\circ = 0.8$. What is its horizontal range?",
+  "options": [
+   "$30$ m",
+   "$45$ m",
+   "$60$ m",
+   "$75$ m"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$u_x=25(0.8)=20$ m s$^{-1}$, $u_y=25(0.6)=15$ m s$^{-1}$\n$0=u_y t-\\dfrac{1}{2}gt^2\\Rightarrow t=\\dfrac{2u_y}{g}=3$ s\n$R=u_x t=20(3)=60$ m",
+  "distractor_notes": "A: Uses an incorrect flight time. B: Uses an incorrect horizontal speed or time. D: Overestimates the horizontal displacement."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

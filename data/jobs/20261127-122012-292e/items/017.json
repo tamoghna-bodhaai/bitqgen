@@ -1,0 +1,68 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Floating in two liquids",
+  "archetype": "buoyancy balance",
+  "brief": "A solid floats at the interface of two immiscible liquids with different densities; ask for the fraction of volume in each liquid using buoyancy balance.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:15",
+   "2023s2:30",
+   "2021:35"
+  ]
+ },
+ "status": "ok",
+ "stem": "A solid block of density 900 kg m^-3 floats at rest at the interface between oil of density 800 kg m^-3 above and water of density 1000 kg m^-3 below. The fraction of the block's volume immersed in water is",
+ "options": [
+  "1/4",
+  "4/5",
+  "3/4",
+  "1/2"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At equilibrium, 900 = 1000x + 800(1-x), where x is the fraction immersed in water. Thus x = 1/2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let x be the fraction in water. Weight = 900 V g. Buoyancy = 800(1-x)V g + 1000xV g. Equating and dividing by Vg gives 900 = 800 + 200x, so x = 1/2.\n\nIndependent check: At equilibrium, 900 = 1000x + 800(1-x), where x is the fraction immersed in water. Thus x = 1/2.",
+ "solution": "Let $x$ be the fraction of the block immersed in water. At equilibrium, weight equals buoyant force:\n$$900Vg=1000xVg+800(1-x)Vg$$\nThus, $900=800+200x$, giving $x=\\frac12$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A solid block of density 900 kg m^-3 floats at rest at the interface between oil of density 800 kg m^-3 above and water of density 1000 kg m^-3 below. The fraction of the block's volume immersed in water is",
+  "options": [
+   "1/4",
+   "1/2",
+   "3/4",
+   "4/5"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Let x be the fraction in water. Weight = 900 V g. Buoyancy = 800(1-x)V g + 1000xV g. Equating and dividing by Vg gives 900 = 800 + 200x, so x = 1/2.",
+  "distractor_notes": "1/4 comes from halving the correct fraction; 3/4 comes from taking the fraction in the upper liquid incorrectly; 4/5 is the ratio of liquid densities."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "ΔH = ΔU + ΔngRT",
+  "archetype": "stoichiometric counting",
+  "brief": "Write the balanced combustion equation of a gaseous fuel, count Δng, and convert the given ΔH to ΔU (or vice versa) using ΔngRT.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:60",
+   "2022:33",
+   "2023s2:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "For complete combustion of $1$ mol of propane, with water formed as a liquid, find $\\\\Delta U$ at $300$ K if $\\Delta H=-2200$ kJ mol$^{-1}$. Take $R=8.0$ J mol$^{-1}$ K$^{-1}$.",
+ "options": [
+  "$-2207.2$ kJ mol$^{-1}$",
+  "$-2202.4$ kJ mol$^{-1}$",
+  "$-2195.2$ kJ mol$^{-1}$",
+  "$-2192.8$ kJ mol$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O(l), so Δn_gas = 3 − 6 = −3. Using ΔH = ΔU + Δn_gasRT, ΔU = −2200 − (−3)(8)(300)/1000 = −2192.8 kJ mol⁻¹.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_3\\text{H}_8(g)+5\\text{O}_2(g)\\rightarrow3\\text{CO}_2(g)+4\\text{H}_2\\text{O}(l)$\n$\\Delta n_g=3-6=-3$\n$RT=(8.0)(300)=2400$ J mol$^{-1}=2.4$ kJ mol$^{-1}$\n$\\Delta H=\\Delta U+\\Delta n_gRT$\n$\\Delta U=-2200-(-3)(2.4)=-2192.8$ kJ mol$^{-1}$\n\nIndependent check: C₃H₈ + 5O₂ → 3CO₂ + 4H₂O(l), so Δn_gas = 3 − 6 = −3. Using ΔH = ΔU + Δn_gasRT, ΔU = −2200 − (−3)(8)(300)/1000 = −2192.8 kJ mol⁻¹.",
+ "solution": "For the combustion reaction, $[?][?]$; hence $[?][?]$.\nUsing $[?][?]$ and $[?][?]$,\n$$\\Delta U=\\Delta H-\\Delta n_gRT=-2200-(-3)(2.4)=-2192.8\\ \\text{kJ mol}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For complete combustion of $1$ mol of propane, with water formed as a liquid, find $\\\\Delta U$ at $300$ K if $\\Delta H=-2200$ kJ mol$^{-1}$. Take $R=8.0$ J mol$^{-1}$ K$^{-1}$.",
+  "options": [
+   "$-2207.2$ kJ mol$^{-1}$",
+   "$-2202.4$ kJ mol$^{-1}$",
+   "$-2195.2$ kJ mol$^{-1}$",
+   "$-2192.8$ kJ mol$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{C}_3\\text{H}_8(g)+5\\text{O}_2(g)\\rightarrow3\\text{CO}_2(g)+4\\text{H}_2\\text{O}(l)$\n$\\Delta n_g=3-6=-3$\n$RT=(8.0)(300)=2400$ J mol$^{-1}=2.4$ kJ mol$^{-1}$\n$\\Delta H=\\Delta U+\\Delta n_gRT$\n$\\Delta U=-2200-(-3)(2.4)=-2192.8$ kJ mol$^{-1}$",
+  "distractor_notes": "A: reverses the sign when rearranging the relation. B: miscounts $\\Delta n_g$ as $-1$. C: overlooks one mole of gaseous $\\text{O}_2$ when counting $\\Delta n_g$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

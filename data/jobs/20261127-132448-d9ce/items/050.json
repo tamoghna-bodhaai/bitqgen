@@ -1,0 +1,68 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order half-life",
+  "archetype": "equation-solving numeric",
+  "brief": "First-order decomposition with known rate constant; compute fraction remaining after a given number of half-lives or time to reach a stated percentage completion.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:44",
+   "2025s2:44",
+   "2025s1:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "A first-order decomposition has rate constant $0.231\\ \\text{min}^{-1}$. How long does it take for $87.5\\%$ of the reactant to decompose?",
+ "options": [
+  "$3.0$ min",
+  "$6.0$ min",
+  "$12.0$ min",
+  "$9.0$ min"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a first-order reaction, the fraction remaining is 12.5%, so t = ln(8)/0.231 ≈ 9.0 min.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Fraction remaining $=1-0.875=0.125=\\dfrac18$.\\n$kt=\\ln\\dfrac{[A]_0}{[A]_t}=\\ln 8$.\\n$t=\\dfrac{\\ln 8}{0.231}=9.0$ min.\n\nIndependent check: For a first-order reaction, the fraction remaining is 12.5%, so t = ln(8)/0.231 ≈ 9.0 min.",
+ "solution": "For a first-order reaction, $kt=\\ln\\left(\\dfrac{[A]_0}{[A]_t}\\right)$. The fraction remaining is $1-0.875=0.125=\\dfrac18$.\n$$t=\\frac{\\ln 8}{0.231}=9.0\\ \\text{min}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A first-order decomposition has rate constant $0.231\\ \\text{min}^{-1}$. How long does it take for $87.5\\%$ of the reactant to decompose?",
+  "options": [
+   "$3.0$ min",
+   "$6.0$ min",
+   "$9.0$ min",
+   "$12.0$ min"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Fraction remaining $=1-0.875=0.125=\\dfrac18$.\\n$kt=\\ln\\dfrac{[A]_0}{[A]_t}=\\ln 8$.\\n$t=\\dfrac{\\ln 8}{0.231}=9.0$ min.",
+  "distractor_notes": "A: Uses one half-life instead of three.\nB: Uses two half-lives, corresponding to $75\\%$ decomposition.\nD: Uses four half-lives rather than the three needed for $87.5\\%$ decomposition."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

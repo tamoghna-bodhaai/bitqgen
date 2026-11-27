@@ -1,0 +1,125 @@
+[
+ {
+  "qno": 116,
+  "stem": "The distance from the origin to the image of $(1, 1)$ with respect to the line $x + y + 5 = 0$ is",
+  "options": [
+   "$7\\sqrt2$",
+   "$3\\sqrt2$",
+   "$6\\sqrt2$",
+   "$4\\sqrt2$"
+  ],
+  "solution": "$\\dfrac{x-1}{1} = \\dfrac{y-1}{1} = \\dfrac{-2(1 + 1 + 5)}{2} = -7$, so the image is $(-6, -6)$. Distance $= \\sqrt{72} = 6\\sqrt2$",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "difficulty": 1
+ },
+ {
+  "qno": 117,
+  "stem": "If the $17^{th}$ and the $18^{th}$ terms in the expansion of $(2 + a)^{50}$ are equal, then the coefficient of $x^{35}$ in the expansion of $(a + x)^{-2}$ is",
+  "options": [
+   "$-35$",
+   "$3$",
+   "$36$",
+   "$-36$"
+  ],
+  "solution": "$T_{17} = T_{18} \\Rightarrow a = \\dfrac{^{50}C_{16}}{^{50}C_{17}}\\times2 = 1$. In $(1 + x)^{-2}$ the coefficient of $x^{35}$ is $(-1)^{35}\\cdot36 = -36$",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Equal terms; negative index",
+  "archetype": "two-stage binomial",
+  "difficulty": 3
+ },
+ {
+  "qno": 118,
+  "stem": "The number of arrangements of all digits of 12345 such that at least 3 digits will not come in its position is",
+  "options": [
+   "$89$",
+   "$109$",
+   "$78$",
+   "$57$"
+  ],
+  "solution": "Sum of derangements of exactly 3, 4, 5 digits: ${}^5C_3\\cdot2 + {}^5C_4\\cdot9 + 44 = 20 + 45 + 44 = 109$",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Derangements",
+  "archetype": "derangement sum",
+  "difficulty": 3
+ },
+ {
+  "qno": 119,
+  "stem": "If $|z_1| = 2$, $|z_2| = 3$, $|z_3| = 4$ and $|2z_1 + 3z_2 + 4z_3| = 4$ then absolute value of $8z_2z_3 + 27z_3z_1 + 64z_1z_2$ equals",
+  "options": [
+   "$24$",
+   "$48$",
+   "$72$",
+   "$96$"
+  ],
+  "solution": "$|8z_2z_3 + 27z_3z_1 + 64z_1z_2| = |z_1z_2z_3|\\left|\\dfrac{8}{z_1} + \\dfrac{27}{z_2} + \\dfrac{64}{z_3}\\right| = 24|2\\bar z_1 + 3\\bar z_2 + 4\\bar z_3| = 24\\times4 = 96$",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus with conjugates",
+  "archetype": "1/z = z̄/|z|²",
+  "difficulty": 4
+ },
+ {
+  "qno": 120,
+  "stem": "The domain of the real valued function $f(x) = \\sqrt{\\dfrac{2x^2 - 7x + 5}{3x^2 - 5x - 2}}$ is",
+  "options": [
+   "$\\left(-\\infty, -\\frac13\\right) \\cup [1, 2) \\cup \\left[\\frac52, \\infty\\right)$",
+   "$(-\\infty, 1) \\cup (2, \\infty)$",
+   "$\\left(-\\frac13, \\frac52\\right]$",
+   "$\\left(-\\infty, -\\frac13\\right] \\cup \\left[\\frac52, \\infty\\right)$"
+  ],
+  "solution": "$\\dfrac{(x-1)(2x-5)}{(x-2)(3x+1)} \\ge 0$, excluding $x = 2, -\\frac13$: $\\left(-\\infty, -\\frac13\\right) \\cup [1, 2) \\cup \\left[\\frac52, \\infty\\right)$",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain with rational expression",
+  "archetype": "sign chart",
+  "difficulty": 2
+ },
+ {
+  "qno": 121,
+  "stem": "If a function $f : \\mathbb{R} - \\{l\\} \\rightarrow \\mathbb{R} - \\{m\\}$ defined by $f(x) = \\dfrac{x+3}{x-2}$ is a bijection, then $3l + 2m =$",
+  "options": [
+   "$10$",
+   "$12$",
+   "$8$",
+   "$14$"
+  ],
+  "solution": "$l = 2$; $x = \\dfrac{2y + 3}{y - 1}$ so $y \\ne 1$, $m = 1$. $3l + 2m = 8$",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Bijection, domain/codomain",
+  "archetype": "invert to find excluded value",
+  "difficulty": 1
+ },
+ {
+  "qno": 122,
+  "stem": "$f(x) = \\sin x + \\cos x$, $g(x) = x^2 - 1$, then $g(f(x))$ is invertible if",
+  "options": [
+   "$-\\frac{\\pi}{4} \\le x \\le \\frac{\\pi}{4}$",
+   "$-\\frac{\\pi}{2} \\le x \\le 0$",
+   "$-\\frac{\\pi}{2} \\le x \\le \\pi$",
+   "$0 \\le x \\le \\frac{\\pi}{2}$"
+  ],
+  "solution": "$g(f(x)) = \\sin2x$, which is monotonic on $\\left[-\\frac{\\pi}{4}, \\frac{\\pi}{4}\\right]$.",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Invertibility interval",
+  "archetype": "simplify then monotonic interval",
+  "difficulty": 2,
+  "figure_kind": "plot"
+ },
+ {
+  "qno": 123,
+  "stem": "$\\displaystyle\\lim_{n\\to\\infty}\\prod_{r=3}^{n}\\frac{r^3 - 8}{r^3 + 8}$ equals to",
+  "options": [
+   "$\\frac27$",
+   "$\\frac37$",
+   "$\\frac47$",
+   "$\\frac67$"
+  ],
+  "solution": "",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Telescoping product",
+  "archetype": "factorise and telescope",
+  "difficulty": 4,
+  "notes": "Duplicate of Q106 in the same source paper.",
+  "exemplar_ok": false
+ }
+]

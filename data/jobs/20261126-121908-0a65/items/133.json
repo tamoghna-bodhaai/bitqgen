@@ -1,0 +1,68 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Straight lines",
+  "archetype": "multi-step lines",
+  "brief": "Find the locus/equation of a line satisfying two distance conditions (e.g. equidistant points, fixed distance from origin).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:114",
+   "2025s1:115",
+   "2026s2:104"
+  ]
+ },
+ "status": "ok",
+ "stem": "A line parallel to $3x+4y=0$ is at distance $2$ from the origin and has equal perpendicular distances from $(0,0)$ and $(4,2)$. Find its equation.",
+ "options": [
+  "$3x+4y-10=0$",
+  "$3x+4y+10=0$",
+  "$3x+4y-20=0$",
+  "$4x-3y-10=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A parallel line has form 3x+4y=c. Its distance from the origin gives |c|/5=2, so c=±10. Equal distances from (0,0) and (4,2) require |20−c|=|c|; among these values, only c=10 works.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Write the line as $3x+4y+c=0$.\\n$\\dfrac{|c|}{5}=2\\Rightarrow c=\\pm10$.\\nEqual distances from $(0,0)$ and $(4,2)$ give $|c|=|20+c|\\Rightarrow c=-10$.\\nHence $3x+4y-10=0$.\n\nIndependent check: A parallel line has form 3x+4y=c. Its distance from the origin gives |c|/5=2, so c=±10. Equal distances from (0,0) and (4,2) require |20−c|=|c|; among these values, only c=10 works.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A line parallel to $3x+4y=0$ is at distance $2$ from the origin and has equal perpendicular distances from $(0,0)$ and $(4,2)$. Find its equation.",
+  "options": [
+   "$3x+4y-10=0$",
+   "$3x+4y+10=0$",
+   "$3x+4y-20=0$",
+   "$4x-3y-10=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Write the line as $3x+4y+c=0$.\\n$\\dfrac{|c|}{5}=2\\Rightarrow c=\\pm10$.\\nEqual distances from $(0,0)$ and $(4,2)$ give $|c|=|20+c|\\Rightarrow c=-10$.\\nHence $3x+4y-10=0$.",
+  "distractor_notes": "B: satisfies the origin-distance condition but not equal distances from the points.\\nC: confuses the distance condition with the required constant term.\\nD: uses a perpendicular direction instead of a parallel one."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

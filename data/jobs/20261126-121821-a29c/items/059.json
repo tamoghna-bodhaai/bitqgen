@@ -1,0 +1,67 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Hydrogen spectrum series",
+  "archetype": "proportionality-scaling",
+  "brief": "Using the Rydberg relation, ask for the ratio or value of wavelength/energy for a transition in Lyman or Balmer, e.g. compare the n=2→1 and n=3→2 lines via 1/λ scaling; harder reasoning, so make the algebra slightly involved.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:51",
+   "2026s2:58",
+   "2024s1:36"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the wavelength of the first line of the Lyman series in the hydrogen atom spectrum is $\\lambda$, the difference between the longest and shortest wavelengths of the Balmer series is",
+ "options": [
+  "$\\dfrac{7}{5}\\lambda$",
+  "$\\dfrac{8}{5}\\lambda$",
+  "$\\dfrac{12}{5}\\lambda$",
+  "$\\dfrac{16}{5}\\lambda$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Lyman first line: 1/λ = R(1−1/4) = 3R/4 ⇒ λ = 4/(3R). Balmer longest (3→2): λ_L = 36/(5R); shortest (∞→2): λ_S = 4/R. Difference = 16/(5R) = (16/5)(3λ/4) = 12λ/5.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "According to the Rydberg formula for hydrogen ($Z = 1$):\n$$\\dfrac{1}{\\lambda} = R_\\text{H} \\left(\\dfrac{1}{n_1^2} - \\dfrac{1}{n_2^2}\\right)$$\n\n1. For the first line of the Lyman series ($n_1 = 1$, $n_2 = 2$):\n$$\\dfrac{1}{\\lambda} = R_\\text{H}\\left(1 - \\dfrac{1}{4}\\right) = \\dfrac{3}{4}R_\\text{H} \\implies \\dfrac{1}{R_\\text{H}} = \\dfrac{3}{4}\\lambda$$\n\n2. For the Balmer series ($n_1 = 2$):\n- The longest wavelength ($\\lambda_{\\max}$) corresponds to the transition with minimum energy ($n_2 = 3$):\n$$\\dfrac{1}{\\lambda_{\\max}} = R_\\text{H}\\left(\\dfrac{1}{4} - \\dfrac{1}{9}\\right) = \\dfrac{5}{36}R_\\text{H} \\implies \\lambda_{\\max} = \\dfrac{36}{5R_\\text{H}}$$\n\n- The shortest wavelength ($\\lambda_{\\min}$) corresponds to the series limit ($n_2 = \\infty$):\n$$\\dfrac{1}{\\lambda_{\\min}} = R_\\text{H}\\left(\\dfrac{1}{4} - 0\\right) = \\dfrac{R_\\text{H}}{4} \\implies \\lambda_{\\min} = \\dfrac{4}{R_\\text{H}}$$\n\n3. The difference in wavelength is:\n$$\\Delta \\lambda = \\lambda_{\\max} - \\lambda_{\\min} = \\left(\\dfrac{36}{5} - 4\\right)\\dfrac{1}{R_\\text{H}} = \\dfrac{16}{5R_\\text{H}}$$\n\nSubstitute $\\dfrac{1}{R_\\text{H}} = \\dfrac{3}{4}\\lambda$:\n$$\\Delta \\lambda = \\dfrac{16}{5} \\times \\left(\\dfrac{3}{4}\\lambda\\right) = \\dfrac{12}{5}\\lambda$$\n\nIndependent check: Lyman first line: 1/λ = R(1−1/4) = 3R/4 ⇒ λ = 4/(3R). Balmer longest (3→2): λ_L = 36/(5R); shortest (∞→2): λ_S = 4/R. Difference = 16/(5R) = (16/5)(3λ/4) = 12λ/5.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the wavelength of the first line of the Lyman series in the hydrogen atom spectrum is $\\lambda$, the difference between the longest and shortest wavelengths of the Balmer series is",
+  "options": [
+   "$\\dfrac{7}{5}\\lambda$",
+   "$\\dfrac{8}{5}\\lambda$",
+   "$\\dfrac{12}{5}\\lambda$",
+   "$\\dfrac{16}{5}\\lambda$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "According to the Rydberg formula for hydrogen ($Z = 1$):\n$$\\dfrac{1}{\\lambda} = R_\\text{H} \\left(\\dfrac{1}{n_1^2} - \\dfrac{1}{n_2^2}\\right)$$\n\n1. For the first line of the Lyman series ($n_1 = 1$, $n_2 = 2$):\n$$\\dfrac{1}{\\lambda} = R_\\text{H}\\left(1 - \\dfrac{1}{4}\\right) = \\dfrac{3}{4}R_\\text{H} \\implies \\dfrac{1}{R_\\text{H}} = \\dfrac{3}{4}\\lambda$$\n\n2. For the Balmer series ($n_1 = 2$):\n- The longest wavelength ($\\lambda_{\\max}$) corresponds to the transition with minimum energy ($n_2 = 3$):\n$$\\dfrac{1}{\\lambda_{\\max}} = R_\\text{H}\\left(\\dfrac{1}{4} - \\dfrac{1}{9}\\right) = \\dfrac{5}{36}R_\\text{H} \\implies \\lambda_{\\max} = \\dfrac{36}{5R_\\text{H}}$$\n\n- The shortest wavelength ($\\lambda_{\\min}$) corresponds to the series limit ($n_2 = \\infty$):\n$$\\dfrac{1}{\\lambda_{\\min}} = R_\\text{H}\\left(\\dfrac{1}{4} - 0\\right) = \\dfrac{R_\\text{H}}{4} \\implies \\lambda_{\\min} = \\dfrac{4}{R_\\text{H}}$$\n\n3. The difference in wavelength is:\n$$\\Delta \\lambda = \\lambda_{\\max} - \\lambda_{\\min} = \\left(\\dfrac{36}{5} - 4\\right)\\dfrac{1}{R_\\text{H}} = \\dfrac{16}{5R_\\text{H}}$$\n\nSubstitute $\\dfrac{1}{R_\\text{H}} = \\dfrac{3}{4}\\lambda$:\n$$\\Delta \\lambda = \\dfrac{16}{5} \\times \\left(\\dfrac{3}{4}\\lambda\\right) = \\dfrac{12}{5}\\lambda$$",
+  "distractor_notes": "$\\dfrac{7}{5}\\lambda$: Mistakenly considers the shortest wavelength of Balmer as the second line ($n = 4 \\rightarrow 2$) rather than the series limit ($n = \\infty \\rightarrow 2$), giving $\\left(\\dfrac{36}{5} - \\dfrac{16}{3}\\right)\\dfrac{3\\lambda}{4} = \\dfrac{7}{5}\\lambda$.\n$\\dfrac{8}{5}\\lambda$: Forgets to square the principal quantum numbers in the Lyman transition, using $\\dfrac{1}{\\lambda} = R_\\text{H}(1 - 1/2) = \\dfrac{R_\\text{H}}{2} \\implies \\dfrac{1}{R_\\text{H}} = \\dfrac{\\lambda}{2}$, giving $\\dfrac{16}{5} \\times \\dfrac{\\lambda}{2} = \\dfrac{8}{5}\\lambda$.\n$\\dfrac{16}{5}\\lambda$: Forgets the factor of $3/4$ from the first Lyman line relation (effectively assuming $\\lambda$ is the Lyman series limit where $R_\\text{H} = 1/\\lambda$).",
+  "figure": null,
+  "difficulty_estimate": 3
+ }
+}

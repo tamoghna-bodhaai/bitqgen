@@ -1,0 +1,68 @@
+{
+ "qno": 31,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 31,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Crystal field theory – high/low spin",
+  "archetype": "statement evaluation",
+  "brief": "Give three statements comparing d^4/d^6 octahedral complexes in weak vs strong field (spin state, unpaired electrons, spin-only moment) and ask which combination is correct.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:48",
+   "2026s1:50",
+   "2021:78"
+  ]
+ },
+ "status": "ok",
+ "stem": "For octahedral $d^4$ and $d^6$ complexes, consider the following statements. I. In a weak field, both are high spin with four unpaired electrons and equal spin-only moments. II. In a strong field, both are low spin with two unpaired electrons. III. For $d^4$, changing from weak to strong field reduces the number of unpaired electrons from four to two. Which statements are correct?",
+ "options": [
+  "I only",
+  "II only",
+  "II and III only",
+  "I and III only"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Weak-field d⁴: t₂g³e_g¹ and d⁶: t₂g⁴e_g²; each has 4 unpaired electrons, so I is true. Strong-field d⁴ is t₂g⁴ with 2 unpaired, while d⁶ is t₂g⁶ with 0, so II is false and III is true.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$d^4_{\\text{weak}}: t_{2g}^3e_g^1,\\ n=4;\\quad d^6_{\\text{weak}}: t_{2g}^4e_g^2,\\ n=4$\n$\\mu_{\\text{so}}=\\sqrt{n(n+2)}=\\sqrt{24}\\,\\text{BM}$\n$d^4_{\\text{strong}}: t_{2g}^4,\\ n=2,\\ \\mu_{\\text{so}}=\\sqrt{8}\\,\\text{BM}$\n$d^6_{\\text{strong}}: t_{2g}^6,\\ n=0$\n\nIndependent check: Weak-field d⁴: t₂g³e_g¹ and d⁶: t₂g⁴e_g²; each has 4 unpaired electrons, so I is true. Strong-field d⁴ is t₂g⁴ with 2 unpaired, while d⁶ is t₂g⁶ with 0, so II is false and III is true.",
+ "solution": "In a weak field, $d^4:t_{2g}^3e_g^1$ and $d^6:t_{2g}^4e_g^2$ each have $4$ unpaired electrons, so their spin-only moments are equal: $\\mu=\\sqrt{4(4+2)}=\\sqrt{24}\\,\\text{BM}$.\nIn a strong field, $d^4:t_{2g}^4$ has $2$ unpaired electrons, whereas $d^6:t_{2g}^6$ has none; hence II is false and III is true.\nTherefore, statements I and III are correct.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For octahedral $d^4$ and $d^6$ complexes, consider the following statements. I. In a weak field, both are high spin with four unpaired electrons and equal spin-only moments. II. In a strong field, both are low spin with two unpaired electrons. III. For $d^4$, changing from weak to strong field reduces the number of unpaired electrons from four to two. Which statements are correct?",
+  "options": [
+   "I only",
+   "II only",
+   "I and III only",
+   "II and III only"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$d^4_{\\text{weak}}: t_{2g}^3e_g^1,\\ n=4;\\quad d^6_{\\text{weak}}: t_{2g}^4e_g^2,\\ n=4$\n$\\mu_{\\text{so}}=\\sqrt{n(n+2)}=\\sqrt{24}\\,\\text{BM}$\n$d^4_{\\text{strong}}: t_{2g}^4,\\ n=2,\\ \\mu_{\\text{so}}=\\sqrt{8}\\,\\text{BM}$\n$d^6_{\\text{strong}}: t_{2g}^6,\\ n=0$",
+  "distractor_notes": "A: overlooks the correct change in spin state for strong-field $d^4$.\nB: treats strong-field $d^6$ as having two unpaired electrons.\nD: accepts the incorrect unpaired-electron count for strong-field $d^6$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 21,
+ "section": "Physics",
+ "slot": {
+  "qno": 21,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Field from potential",
+  "archetype": "differentiate potential",
+  "brief": "A potential function V(x, y) is given; ask for the electric field components by differentiating V, then the magnitude at a point.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:4",
+   "2023s2:19",
+   "2024s1:6"
+  ]
+ },
+ "status": "ok",
+ "stem": "The electric potential in a region is V = 3x^2 + 4y^2 volts, where x and y are in metres. The magnitude of the electric field at the point (1 m, 1 m) is:",
+ "options": [
+  "5 V/m",
+  "20 V/m",
+  "14 V/m",
+  "10 V/m"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\mathbf E=-\\nabla V=(-6x,-8y)\\); at \\((1,1)\\), \\(|\\mathbf E|=\\sqrt{6^2+8^2}=10\\,\\text{V/m}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "E_x = -dV/dx = -6x, E_y = -dV/dy = -8y. At (1, 1): E = (-6, -8) V/m. Magnitude = sqrt(6^2 + 8^2) = 10 V/m.\n\nIndependent check: \\(\\mathbf E=-\\nabla V=(-6x,-8y)\\); at \\((1,1)\\), \\(|\\mathbf E|=\\sqrt{6^2+8^2}=10\\,\\text{V/m}\\).",
+ "solution": "The electric field is $\\mathbf E=-\\nabla V=(-6x,-8y)$. At $(1,1)$,\n$$|\\mathbf E|=\\sqrt{(-6)^2+(-8)^2}=10\\,\\text{V/m}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The electric potential in a region is V = 3x^2 + 4y^2 volts, where x and y are in metres. The magnitude of the electric field at the point (1 m, 1 m) is:",
+  "options": [
+   "5 V/m",
+   "10 V/m",
+   "14 V/m",
+   "20 V/m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "E_x = -dV/dx = -6x, E_y = -dV/dy = -8y. At (1, 1): E = (-6, -8) V/m. Magnitude = sqrt(6^2 + 8^2) = 10 V/m.",
+  "distractor_notes": "A: used only a component instead of magnitude; C: added components as 6 + 8; D: doubled the correct magnitude"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

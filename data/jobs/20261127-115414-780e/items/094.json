@@ -1,0 +1,68 @@
+{
+ "qno": 94,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 94,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Arithmetic progression",
+  "archetype": "sum to n terms",
+  "brief": "Given two terms of an AP, find the sum of the first n terms; light simultaneous solving.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:118",
+   "2022:112",
+   "2024s1:109"
+  ]
+ },
+ "status": "ok",
+ "stem": "If the 5th term of an arithmetic progression is 17 and the 12th term is 38, then the sum of the first 20 terms is",
+ "options": [
+  "$870$",
+  "$770$",
+  "$570$",
+  "$670$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From a+4d=17 and a+11d=38, d=3 and a=5. Thus S₂₀=10(2a+19d)=670.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $a$ be first term, $d$ common difference. $a+4d = 17$, $a+11d = 38$. Subtracting: $7d = 21 \\Rightarrow d = 3$. Then $a = 17 - 4(3) = 5$. Sum $S_{20} = \\dfrac{20}{2}[2a + 19d] = 10[10 + 57] = 670$.\n\nIndependent check: From a+4d=17 and a+11d=38, d=3 and a=5. Thus S₂₀=10(2a+19d)=670.",
+ "solution": "For an AP, $T_n=a+(n-1)d$. From $a+4d=17$ and $a+11d=38$, we get $d=3$ and $a=5$.\n$$S_{20}=\\frac{20}{2}[2a+19d]=10[10+57]=670$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If the 5th term of an arithmetic progression is 17 and the 12th term is 38, then the sum of the first 20 terms is",
+  "options": [
+   "$670$",
+   "$770$",
+   "$570$",
+   "$870$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Let $a$ be first term, $d$ common difference. $a+4d = 17$, $a+11d = 38$. Subtracting: $7d = 21 \\Rightarrow d = 3$. Then $a = 17 - 4(3) = 5$. Sum $S_{20} = \\dfrac{20}{2}[2a + 19d] = 10[10 + 57] = 670$.",
+  "distractor_notes": "Common errors: Miscalculating common difference (option B: 770 from d=4?), misapplying sum formula (option C: 570, option D: 870)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Ellipse – eccentricity",
+  "archetype": "single-formula numerical",
+  "brief": "Given eccentricity and a focus (or a vertex and focus), write the equation of an ellipse in standard form; pick gentle numbers.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:130",
+   "2022:108",
+   "2023s2:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "An ellipse centred at the origin has its major axis along the $x$-axis, eccentricity $\\dfrac{3}{5}$ and focus $(3,0)$. Its equation is",
+ "options": [
+  "$\\dfrac{x^2}{16}+\\dfrac{y^2}{25}=1$",
+  "$\\dfrac{x^2}{9}+\\dfrac{y^2}{16}=1$",
+  "$\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$",
+  "$\\dfrac{x^2}{25}+\\dfrac{y^2}{9}=1$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an ellipse, e=c/a. Thus a=3/(3/5)=5, and b²=a²(1−e²)=16. Its equation is x²/25+y²/16=1.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$c=3,\\quad e=\\dfrac{c}{a}=\\dfrac{3}{5}\\Rightarrow a=5$\\\\\n$b^2=a^2-c^2=25-9=16$\\\\\n$\\therefore\\ \\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$\n\nIndependent check: For an ellipse, e=c/a. Thus a=3/(3/5)=5, and b²=a²(1−e²)=16. Its equation is x²/25+y²/16=1.",
+ "solution": "For an ellipse, $e=\\dfrac{c}{a}$. With $c=3$ and $e=\\dfrac35$, we get $a=5$.\n$$b^2=a^2-c^2=25-9=16$$\nHence the equation is $\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An ellipse centred at the origin has its major axis along the $x$-axis, eccentricity $\\dfrac{3}{5}$ and focus $(3,0)$. Its equation is",
+  "options": [
+   "$\\dfrac{x^2}{16}+\\dfrac{y^2}{25}=1$",
+   "$\\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$",
+   "$\\dfrac{x^2}{9}+\\dfrac{y^2}{16}=1$",
+   "$\\dfrac{x^2}{25}+\\dfrac{y^2}{9}=1$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$c=3,\\quad e=\\dfrac{c}{a}=\\dfrac{3}{5}\\Rightarrow a=5$\\\\\n$b^2=a^2-c^2=25-9=16$\\\\\n$\\therefore\\ \\dfrac{x^2}{25}+\\dfrac{y^2}{16}=1$",
+  "distractor_notes": "A: swaps the major and minor axes; C: uses $c^2$ as the major-axis denominator; D: uses $c$ instead of $b$ for the semi-minor axis."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

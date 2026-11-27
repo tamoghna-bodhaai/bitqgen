@@ -1,0 +1,68 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Bohr energy for hydrogen-like ions",
+  "archetype": "proportionality-scaling",
+  "brief": "Energy of a hydrogen-like species at a given n — ask to find the orbit/series transition producing a given ratio of energies (use the fact E ∝ Z^2/n^2).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:34",
+   "2021:66",
+   "2026s2:58"
+  ]
+ },
+ "status": "ok",
+ "stem": "The energy of an electron in the nth orbit of a hydrogen-like ion is proportional to Z^2/n^2. If the energy of an electron in the fourth orbit of He+ equals that in the nth orbit of Li2+, the value of n is:",
+ "options": [
+  "2",
+  "3",
+  "6",
+  "4"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For He⁺, Z²/n² = 2²/4² = 1/4. For Li²⁺, 3²/n² = 1/4, so n² = 36 and n = 6.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For He+, Z = 2 and n = 4: energy is proportional to 2^2/4^2 = 4/16 = 1/4. For Li2+, Z = 3: require 3^2/n^2 = 1/4. Thus 9/n^2 = 1/4, so n^2 = 36 and n = 6.\n\nIndependent check: For He⁺, Z²/n² = 2²/4² = 1/4. For Li²⁺, 3²/n² = 1/4, so n² = 36 and n = 6.",
+ "solution": "For a hydrogen-like ion, $E\\propto Z^2/n^2$. Equating the energies gives\n$$\\frac{2^2}{4^2}=\\frac{3^2}{n^2}\\quad\\Rightarrow\\quad n^2=36,\\; n=6.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The energy of an electron in the nth orbit of a hydrogen-like ion is proportional to Z^2/n^2. If the energy of an electron in the fourth orbit of He+ equals that in the nth orbit of Li2+, the value of n is:",
+  "options": [
+   "2",
+   "3",
+   "4",
+   "6"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "For He+, Z = 2 and n = 4: energy is proportional to 2^2/4^2 = 4/16 = 1/4. For Li2+, Z = 3: require 3^2/n^2 = 1/4. Thus 9/n^2 = 1/4, so n^2 = 36 and n = 6.",
+  "distractor_notes": "A from taking n directly proportional to Z. B from using the ratio of atomic numbers without squaring. C from keeping n unchanged and ignoring the change in nuclear charge."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

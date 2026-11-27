@@ -1,0 +1,68 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Increasing and decreasing functions",
+  "archetype": "sign of derivative",
+  "brief": "decide intervals where a simple polynomial/rational function is increasing or decreasing by testing the sign of f′(x)",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:102",
+   "2024s2:91",
+   "2022:125"
+  ]
+ },
+ "status": "ok",
+ "stem": "The interval in which f(x) = x^3 - 3x + 4 is decreasing is",
+ "options": [
+  "(-inf, -1)",
+  "(-1, 1)",
+  "(1, inf)",
+  "(-inf, inf)"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "f'(x)=3x^2-3=3(x-1)(x+1), which is negative for -1<x<1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "f'(x) = 3x^2 - 3 = 3(x - 1)(x + 1). f'(x) < 0 when (x - 1)(x + 1) < 0, i.e. -1 < x < 1. Hence f is decreasing on (-1, 1).\n\nIndependent check: f'(x)=3x^2-3=3(x-1)(x+1), which is negative for -1<x<1.",
+ "solution": "A function is decreasing where $f'(x)<0$. Here,\n$$f'(x)=3x^2-3=3(x-1)(x+1)<0$$\nfor $-1<x<1$. Hence, $f$ is decreasing on $(-1,1)$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The interval in which f(x) = x^3 - 3x + 4 is decreasing is",
+  "options": [
+   "(-1, 1)",
+   "(-inf, -1)",
+   "(1, inf)",
+   "(-inf, inf)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "f'(x) = 3x^2 - 3 = 3(x - 1)(x + 1). f'(x) < 0 when (x - 1)(x + 1) < 0, i.e. -1 < x < 1. Hence f is decreasing on (-1, 1).",
+  "distractor_notes": "B: sign table reversed, treating f' positive interval as decreasing; C: selected only one part of the correct sign analysis; D: ignored the sign of the derivative."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Arithmetico-geometric series",
+  "archetype": "AGP sum",
+  "brief": "sum the first n terms of an arithmetico-geometric series using the shift-and-subtract (difference) method",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:106",
+   "2024s2:127",
+   "2023s2:113"
+  ]
+ },
+ "status": "ok",
+ "stem": "The sum to n terms of the series 1 + 4/3 + 7/9 + 10/27 + ... is",
+ "options": [
+  "15/4 - (6n + 5)/(2 * 3^(n-1))",
+  "15/4 - (6n - 5)/(4 * 3^(n-1))",
+  "15/4 - (6n + 5)/(4 * 3^(n-1))",
+  "9/4 - (6n + 5)/(4 * 3^(n-1))"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The kth term is (3k−2)/3^(k−1). Summing gives Sₙ = 15/4 − (6n+5)/(4·3^(n−1)).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let S = 1 + 4/3 + 7/9 + ... + (3n-2)/3^(n-1). Then (1/3)S = 1/3 + 4/9 + ... + (3n-5)/3^(n-1) + (3n-2)/3^n. Subtract: (2/3)S = 1 + 3(1/3 + 1/9 + ... + 1/3^(n-1)) - (3n-2)/3^n. The GP sum is (1/2)(1 - 1/3^(n-1)). So (2/3)S = 5/2 - 3/(2*3^(n-1)) - (3n-2)/3^n = 5/2 - (6n+5)/(2*3^n). Multiply by 3/2: S = 15/4 - (6n+5)/(4*3^(n-1)).\n\nIndependent check: The kth term is (3k−2)/3^(k−1). Summing gives Sₙ = 15/4 − (6n+5)/(4·3^(n−1)).",
+ "solution": "Let $S_n=1+\\frac43+\\frac79+\\cdots+\\frac{3n-2}{3^{n-1}}$. Subtracting $\\frac13S_n$ from $S_n$ and summing the resulting geometric series gives\n$$\\frac23S_n=\\frac52-\\frac{6n+5}{2\\cdot3^n}.\n$$\nHence $\\displaystyle S_n=\\frac{15}{4}-\\frac{6n+5}{4\\cdot3^{n-1}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum to n terms of the series 1 + 4/3 + 7/9 + 10/27 + ... is",
+  "options": [
+   "15/4 - (6n + 5)/(4 * 3^(n-1))",
+   "15/4 - (6n - 5)/(4 * 3^(n-1))",
+   "15/4 - (6n + 5)/(2 * 3^(n-1))",
+   "9/4 - (6n + 5)/(4 * 3^(n-1))"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let S = 1 + 4/3 + 7/9 + ... + (3n-2)/3^(n-1). Then (1/3)S = 1/3 + 4/9 + ... + (3n-5)/3^(n-1) + (3n-2)/3^n. Subtract: (2/3)S = 1 + 3(1/3 + 1/9 + ... + 1/3^(n-1)) - (3n-2)/3^n. The GP sum is (1/2)(1 - 1/3^(n-1)). So (2/3)S = 5/2 - 3/(2*3^(n-1)) - (3n-2)/3^n = 5/2 - (6n+5)/(2*3^n). Multiply by 3/2: S = 15/4 - (6n+5)/(4*3^(n-1)).",
+  "distractor_notes": "B: sign error in the last term; C: factor error in denominator when multiplying by 3/2; D: wrong constant from partial sum."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

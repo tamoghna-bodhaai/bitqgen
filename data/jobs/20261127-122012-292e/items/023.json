@@ -1,0 +1,68 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Propagation of errors",
+  "archetype": "error propagation",
+  "brief": "The period of a pendulum is measured with given percentage errors in length and time; ask for the percentage error in g using the pendulum formula.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:4",
+   "2023s2:21",
+   "2021:33"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a simple pendulum experiment, the length of the pendulum is measured with an error of 2% and the time period with an error of 1%. The percentage error in the value of acceleration due to gravity g calculated from the formula T = 2 pi sqrt(L/g) is:",
+ "options": [
+  "2%",
+  "3%",
+  "4%",
+  "6%"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From g = 4π²L/T², the percentage error is 2% + 2(1%) = 4%.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "g = 4 pi^2 L / T^2, so percentage error in g = percentage error in L + 2 * percentage error in T = 2% + 2 * 1% = 4%.\n\nIndependent check: From g = 4π²L/T², the percentage error is 2% + 2(1%) = 4%.",
+ "solution": "From $T=2\\pi\\sqrt{L/g}$, $g=4\\pi^2L/T^2$. Hence the percentage error is $\\frac{\\Delta g}{g}\\times100\\%=2\\%+2(1\\%)=4\\%$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a simple pendulum experiment, the length of the pendulum is measured with an error of 2% and the time period with an error of 1%. The percentage error in the value of acceleration due to gravity g calculated from the formula T = 2 pi sqrt(L/g) is:",
+  "options": [
+   "2%",
+   "3%",
+   "4%",
+   "6%"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "g = 4 pi^2 L / T^2, so percentage error in g = percentage error in L + 2 * percentage error in T = 2% + 2 * 1% = 4%.",
+  "distractor_notes": "A: ignored time period error; B: added errors without factor 2; D: multiplied the whole sum by 2"
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

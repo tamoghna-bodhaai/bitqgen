@@ -1,0 +1,68 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "e^f (g + g') form",
+  "archetype": "recognise derivative pattern",
+  "brief": "Evaluate ∫eˣ(f(x) + f′(x)) dx over a definite interval by recognising it equals eˣf(x).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:100",
+   "2026s1:100",
+   "2026s1:101"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^1 e^x(x^2+2x+1)\\,dx$.",
+ "options": [
+  "$2e-1$",
+  "$e-1$",
+  "$2e+1$",
+  "$e+1$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "An antiderivative is $e^x(x^2+1)$, since its derivative is $e^x(x^2+2x+1)$. Thus the integral is $2e-1$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2+2x+1=f(x)+f'(x)$, where $f(x)=x^2+1$.\\n$\\int e^x(f+f')\\,dx=e^xf(x)$.\\n$[e^x(x^2+1)]_0^1=2e-1$.\n\nIndependent check: An antiderivative is $e^x(x^2+1)$, since its derivative is $e^x(x^2+2x+1)$. Thus the integral is $2e-1$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^1 e^x(x^2+2x+1)\\,dx$.",
+  "options": [
+   "$2e-1$",
+   "$e-1$",
+   "$2e+1$",
+   "$e+1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$x^2+2x+1=f(x)+f'(x)$, where $f(x)=x^2+1$.\\n$\\int e^x(f+f')\\,dx=e^xf(x)$.\\n$[e^x(x^2+1)]_0^1=2e-1$.",
+  "distractor_notes": "B: omits the endpoint factor $2$; C: sign error at the lower limit; D: incorrect endpoint evaluation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

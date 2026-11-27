@@ -1,0 +1,68 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus with conjugates",
+  "archetype": "simplify then power",
+  "brief": "Compute an expression of the form (z + z̄)/|z|² or similar, then raise to a power using De Moivre; ask for the real part or modulus.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:95",
+   "2025s1:125",
+   "2026s1:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $z=1+\\sqrt{3}i$, find the real part of $\\left(\\dfrac{z^2}{|z|^2}\\right)^5$.",
+ "options": [
+  "$-1$",
+  "$-\\dfrac{1}{2}$",
+  "$0$",
+  "$\\dfrac{1}{2}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "|z|=2 and arg(z)=π/3, so z²/|z|²=e^{2πi/3}. Its fifth power has real part cos(10π/3)=−1/2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|z|=2$, $\\arg z=\\dfrac{\\pi}{3}$; hence $\\dfrac{z^2}{|z|^2}=e^{2\\pi i/3}$. $\\Re\\left(e^{10\\pi i/3}\\right)=\\cos\\dfrac{4\\pi}{3}=-\\dfrac{1}{2}$.\n\nIndependent check: |z|=2 and arg(z)=π/3, so z²/|z|²=e^{2πi/3}. Its fifth power has real part cos(10π/3)=−1/2.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $z=1+\\sqrt{3}i$, find the real part of $\\left(\\dfrac{z^2}{|z|^2}\\right)^5$.",
+  "options": [
+   "$-1$",
+   "$-\\dfrac{1}{2}$",
+   "$0$",
+   "$\\dfrac{1}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$|z|=2$, $\\arg z=\\dfrac{\\pi}{3}$; hence $\\dfrac{z^2}{|z|^2}=e^{2\\pi i/3}$. $\\Re\\left(e^{10\\pi i/3}\\right)=\\cos\\dfrac{4\\pi}{3}=-\\dfrac{1}{2}$.",
+  "distractor_notes": "A: uses an incorrect reduced angle; C: takes the imaginary part; D: uses the wrong sign for the cosine."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

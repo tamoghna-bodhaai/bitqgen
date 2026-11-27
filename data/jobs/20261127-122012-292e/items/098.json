@@ -1,0 +1,68 @@
+{
+ "qno": 98,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 98,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "relation chain",
+  "brief": "pointing-style relation chain: a person points to a photo or describes a chain of relations; ask how the target person is related to the speaker",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2024s2:88",
+   "2024s1:83"
+  ]
+ },
+ "status": "ok",
+ "stem": "Pointing to a woman, Rahul said, \"She is the daughter of the only son of my father's mother.\" How is the woman related to Rahul?",
+ "options": [
+  "Aunt",
+  "Daughter",
+  "Sister",
+  "Niece"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "My father's mother is my paternal grandmother. Her only son is my father, and his daughter is my sister.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The only son of Rahul's father's mother is Rahul's father. The woman is the daughter of Rahul's father, hence Rahul's sister. Daughter would make her Rahul's child; aunt would be father's sister; niece would be brother's daughter. None of those fits.\n\nIndependent check: My father's mother is my paternal grandmother. Her only son is my father, and his daughter is my sister.",
+ "solution": "Rahul’s father’s mother is his paternal grandmother, whose only son is Rahul’s father. Hence, the woman is Rahul’s father’s daughter, i.e. Rahul’s sister.",
+ "locked": false,
+ "difficulty": 0,
+ "draft": {
+  "stem": "Pointing to a woman, Rahul said, \"She is the daughter of the only son of my father's mother.\" How is the woman related to Rahul?",
+  "options": [
+   "Sister",
+   "Daughter",
+   "Aunt",
+   "Niece"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 0,
+  "working": "The only son of Rahul's father's mother is Rahul's father. The woman is the daughter of Rahul's father, hence Rahul's sister. Daughter would make her Rahul's child; aunt would be father's sister; niece would be brother's daughter. None of those fits.",
+  "distractor_notes": "Each distractor is a different immediate relation that would require a different chain: Daughter requires the woman to be Rahul's child (so the only son would be Rahul), Aunt requires her to be the sister of Rahul's father, and Niece requires her to be the daughter of Rahul's sibling. Only Sister fits the given chain."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

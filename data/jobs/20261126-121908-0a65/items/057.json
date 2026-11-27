@@ -1,0 +1,66 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Ionisation and lattice enthalpy",
+  "archetype": "find incorrect order",
+  "brief": "Evaluate two statements on ionisation enthalpy trends across a period and down a group; pick the correct combination.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:55",
+   "2026s2:52"
+  ]
+ },
+ "status": "ok",
+ "stem": "Given below are two statements regarding periodic trends in first ionisation enthalpy ($\\Delta_i H_1$):\n\nStatement I: Across the second period, the first ionisation enthalpy of boron is greater than that of beryllium.\n\nStatement II: Down a group, the first ionisation enthalpy generally decreases with an increase in atomic radius.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+ "options": [
+  "Both Statement I and Statement II are correct",
+  "Both Statement I and Statement II are incorrect",
+  "Statement I is correct, but Statement II is incorrect",
+  "Statement I is incorrect, but Statement II is correct"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "IE1(B) ≈ 801 kJ/mol < IE1(Be) ≈ 899 kJ/mol because Be has a stable filled 2s² subshell while B loses a higher-energy 2p electron; hence Statement I is false. Down a group, atomic radius increases and IE1 generally decreases, so Statement II is true.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "1. **Evaluation of Statement I:**\nThe ground-state electronic configurations are:\n$$\\text{Be}\\ (Z = 4): 1s^2 2s^2$$\n$$\\text{B}\\ (Z = 5): 1s^2 2s^2 2p^1$$\nIn beryllium, the outermost electron resides in a completely filled, penetrating $2s$ subshell. In boron, the electron to be removed is in a $2p$ subshell, which is at a higher energy level and is shielded from the nuclear charge by the inner $1s^2$ and $2s^2$ electrons. As a result, less energy is required to remove the $2p$ electron of boron than the $2s$ electron of beryllium:\n$$\\Delta_i H_1(\\text{Be}) = 899\\ \\text{kJ mol}^{-1} > \\Delta_i H_1(\\text{B}) = 801\\ \\text{kJ mol}^{-1}$$\nThus, the first ionisation enthalpy of boron is less than that of beryllium. Statement I is incorrect.\n\n2. **Evaluation of Statement II:**\nDown a group, each successive element possesses an additional electron shell, leading to an increase in atomic radius. The increased distance of the valence electrons from the nucleus, combined with enhanced shielding by core electrons, outweighs the increase in nuclear charge. Consequently, the valence electrons are held less tightly, and the first ionisation enthalpy generally decreases. Statement II is correct.\n\nTherefore, Statement I is incorrect, but Statement II is correct.\n\nIndependent check: IE1(B) ≈ 801 kJ/mol < IE1(Be) ≈ 899 kJ/mol because Be has a stable filled 2s² subshell while B loses a higher-energy 2p electron; hence Statement I is false. Down a group, atomic radius increases and IE1 generally decreases, so Statement II is true.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Given below are two statements regarding periodic trends in first ionisation enthalpy ($\\Delta_i H_1$):\n\nStatement I: Across the second period, the first ionisation enthalpy of boron is greater than that of beryllium.\n\nStatement II: Down a group, the first ionisation enthalpy generally decreases with an increase in atomic radius.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+  "options": [
+   "Both Statement I and Statement II are correct",
+   "Both Statement I and Statement II are incorrect",
+   "Statement I is correct, but Statement II is incorrect",
+   "Statement I is incorrect, but Statement II is correct"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "working": "1. **Evaluation of Statement I:**\nThe ground-state electronic configurations are:\n$$\\text{Be}\\ (Z = 4): 1s^2 2s^2$$\n$$\\text{B}\\ (Z = 5): 1s^2 2s^2 2p^1$$\nIn beryllium, the outermost electron resides in a completely filled, penetrating $2s$ subshell. In boron, the electron to be removed is in a $2p$ subshell, which is at a higher energy level and is shielded from the nuclear charge by the inner $1s^2$ and $2s^2$ electrons. As a result, less energy is required to remove the $2p$ electron of boron than the $2s$ electron of beryllium:\n$$\\Delta_i H_1(\\text{Be}) = 899\\ \\text{kJ mol}^{-1} > \\Delta_i H_1(\\text{B}) = 801\\ \\text{kJ mol}^{-1}$$\nThus, the first ionisation enthalpy of boron is less than that of beryllium. Statement I is incorrect.\n\n2. **Evaluation of Statement II:**\nDown a group, each successive element possesses an additional electron shell, leading to an increase in atomic radius. The increased distance of the valence electrons from the nucleus, combined with enhanced shielding by core electrons, outweighs the increase in nuclear charge. Consequently, the valence electrons are held less tightly, and the first ionisation enthalpy generally decreases. Statement II is correct.\n\nTherefore, Statement I is incorrect, but Statement II is correct.",
+  "distractor_notes": "Option A: Mistakenly applies the general left-to-right period trend without considering the subshell stability and shielding anomaly between Be ($2s^2$) and B ($2p^1$).\nOption B: Incorrectly assumes the group trend is also false, confusing the influence of increasing nuclear charge with effective nuclear attraction.\nOption C: Commits both errors: assumes the general period trend holds strictly (believing B > Be) and assumes ionisation enthalpy increases down a group due to increasing nuclear charge.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

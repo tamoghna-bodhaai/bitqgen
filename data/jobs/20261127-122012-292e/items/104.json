@@ -1,0 +1,80 @@
+{
+ "qno": 104,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 104,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "find wrong term",
+  "brief": "alpha-numeric or mixed series with two interleaved components (letters following one rule, numbers another) where one term is wrong; identify the incorrect term",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:86",
+   "2026s1:76",
+   "2022:73"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Find the wrong term in the series:**\nA5D, C9G, F15K, J23P, O32V, U45C",
+ "options": [
+  "C9G",
+  "J23P",
+  "U45C",
+  "O32V"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": [
+  "figs/q104_optA_v1.png",
+  "figs/q104_optB_v1.png",
+  "figs/q104_optD_v1.png",
+  "figs/q104_optC_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Letters follow +2,+3,+4,+5,+6 and +3,+4,+5,+6,+7. The numbers should increase by +4,+6,+8,+10,+12, making the fifth number 33 rather than 32.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The option images appear unrelated to the text series and answer choices."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "First letters move +2, +3, +4, +5, +6: A, C, F, J, O, U. Last letters move +3, +4, +5, +6, +7: D, G, K, P, V, C. Numbers should move +4, +6, +8, +10, +12: 5, 9, 15, 23, 33, 45. So O32V is wrong; it should be O33V. C9G, J23P and U45C all fit the pattern.\n\nIndependent check: Letters follow +2,+3,+4,+5,+6 and +3,+4,+5,+6,+7. The numbers should increase by +4,+6,+8,+10,+12, making the fifth number 33 rather than 32.",
+ "solution": "First letters increase by $+2,+3,+4,+5,+6$ and last letters by $+3,+4,+5,+6,+7$. The numbers should increase by $+4,+6,+8,+10,+12$:\n$$5,9,15,23,33,45$$\nThus $O32V$ is incorrect; it should be $O33V$. (D)",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "**Find the wrong term in the series:**\nA5D, C9G, F15K, J23P, O32V, U45C",
+  "options": [
+   "C9G",
+   "J23P",
+   "O32V",
+   "U45C"
+  ],
+  "option_smiles": [
+   "C",
+   "CC",
+   "CCC",
+   "CCCC"
+  ],
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "First letters move +2, +3, +4, +5, +6: A, C, F, J, O, U. Last letters move +3, +4, +5, +6, +7: D, G, K, P, V, C. Numbers should move +4, +6, +8, +10, +12: 5, 9, 15, 23, 33, 45. So O32V is wrong; it should be O33V. C9G, J23P and U45C all fit the pattern.",
+  "distractor_notes": "C9G, J23P and U45C each satisfy all three interleaved progressions; only O32V breaks the number progression."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Prism combination (dispersion without deviation)",
+  "archetype": "two equations two unknowns",
+  "brief": "Prism / mirror combination: two thin prisms in contact giving deviation without dispersion; use ω and net deviation conditions, or solve two equations in two unknowns for the prism angles.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:13",
+   "2024s2:17",
+   "2024s1:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two thin prisms are placed in opposite orientations. Their refractive indices are $1.5$ and $1.6$, and their dispersive powers are $0.04$ and $0.06$, respectively. If the first prism has angle $6^\\circ$, the combination produces no dispersion. Find the second prism's angle and the net mean deviation.",
+ "options": [
+  "$\\left(5^\\circ,\\ 0^\\circ\\right)$",
+  "$\\left(\\dfrac{10}{3}^\\circ,\\ 1^\\circ\\right)$",
+  "$\\left(\\dfrac{10}{3}^\\circ,\\ 5^\\circ\\right)$",
+  "$\\left(\\dfrac{5}{3}^\\circ,\\ 1^\\circ\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "No dispersion requires 0.04(1.5−1)(6°)=0.06(1.6−1)A₂, giving A₂=10/3°. The opposing mean deviations are 3° and 2°, so the net is 1°.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "No dispersion: $0.04(1.5-1)(6^\\circ)=0.06(1.6-1)A_2$\\\\\n$A_2=\\dfrac{10}{3}^\\circ$\\\\\n$\\delta_1=(1.5-1)(6^\\circ)=3^\\circ$; $\\delta_2=(1.6-1)\\dfrac{10}{3}^\\circ=2^\\circ$\\\\\n$\\delta_{\\rm net}=\\delta_1-\\delta_2=1^\\circ$\n\nIndependent check: No dispersion requires 0.04(1.5−1)(6°)=0.06(1.6−1)A₂, giving A₂=10/3°. The opposing mean deviations are 3° and 2°, so the net is 1°.",
+ "solution": "For no dispersion, the dispersive deviations must cancel: $\\omega_1(\\mu_1-1)A_1=\\omega_2(\\mu_2-1)A_2$, giving $A_2=\\dfrac{0.04(0.5)(6^\\circ)}{0.06(0.6)}=\\dfrac{10}{3}^\\circ$$.\\nThe$ mean deviations oppose: $\\delta_{\\rm net}=(1.5-1)(6^\\circ)-(1.6-1)\\left(\\dfrac{10}{3}^\\circ\\right)=3^\\circ-2^\\circ=1^\\circ$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two thin prisms are placed in opposite orientations. Their refractive indices are $1.5$ and $1.6$, and their dispersive powers are $0.04$ and $0.06$, respectively. If the first prism has angle $6^\\circ$, the combination produces no dispersion. Find the second prism's angle and the net mean deviation.",
+  "options": [
+   "$\\left(\\dfrac{10}{3}^\\circ,\\ 1^\\circ\\right)$",
+   "$\\left(5^\\circ,\\ 0^\\circ\\right)$",
+   "$\\left(\\dfrac{10}{3}^\\circ,\\ 5^\\circ\\right)$",
+   "$\\left(\\dfrac{5}{3}^\\circ,\\ 1^\\circ\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "No dispersion: $0.04(1.5-1)(6^\\circ)=0.06(1.6-1)A_2$\\\\\n$A_2=\\dfrac{10}{3}^\\circ$\\\\\n$\\delta_1=(1.5-1)(6^\\circ)=3^\\circ$; $\\delta_2=(1.6-1)\\dfrac{10}{3}^\\circ=2^\\circ$\\\\\n$\\delta_{\\rm net}=\\delta_1-\\delta_2=1^\\circ$",
+  "distractor_notes": "B confuses zero dispersion with zero mean deviation; C adds rather than subtracts the deviations; D misapplies the no-dispersion condition."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

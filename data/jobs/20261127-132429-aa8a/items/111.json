@@ -1,0 +1,68 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Dot product, magnitudes",
+  "archetype": "vector computation",
+  "brief": "Find the work done / projection of one vector on another using dot product with given magnitudes and angle.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:93",
+   "2025s1:95",
+   "2025s2:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "Vectors of magnitudes $8$ and $5$ make an angle of $60^\\\\circ$. What is the scalar projection of the first vector on the second?",
+ "options": [
+  "$4$",
+  "$2.5$",
+  "$8$",
+  "$20$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Scalar projection = |a| cos 60° = 8 × 0.5 = 4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Scalar projection $=|\\vec a|\\cos\\theta=8\\cos60^\\circ=4$.\n\nIndependent check: Scalar projection = |a| cos 60° = 8 × 0.5 = 4.",
+ "solution": "The scalar projection of the first vector on the second is $|\\vec a|\\cos\\theta$.\n$$8\\cos60^\\circ=8\\left(\\frac12\\right)=4$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Vectors of magnitudes $8$ and $5$ make an angle of $60^\\\\circ$. What is the scalar projection of the first vector on the second?",
+  "options": [
+   "$2.5$",
+   "$4$",
+   "$8$",
+   "$20$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Scalar projection $=|\\vec a|\\cos\\theta=8\\cos60^\\circ=4$.",
+  "distractor_notes": "A: uses the second vector's magnitude for the projection. C: omits the cosine factor. D: calculates the dot product instead of the scalar projection."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

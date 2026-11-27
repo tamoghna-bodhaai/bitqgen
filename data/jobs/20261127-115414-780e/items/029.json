@@ -1,0 +1,68 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Circular motion with friction",
+  "archetype": "free-body equations",
+  "brief": "Car on a level circular track; find minimum coefficient of friction for a given speed and radius, or maximum speed without skidding.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:16",
+   "2026s1:26",
+   "2025s2:4"
+  ]
+ },
+ "status": "ok",
+ "stem": "A car of mass 1200 kg moves on a level circular track of radius 45 m at a constant speed of 54 km h^{-1}. The minimum coefficient of static friction required to prevent skidding is (Take g = 10 m s^{-2})",
+ "options": [
+  "0.50",
+  "0.25",
+  "1.00",
+  "2.00"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Convert 54 km h⁻¹ to 15 m s⁻¹. For circular motion, μₛmg ≥ mv²/r, so μₛ,min = 15²/(45×10) = 0.50.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "v = 54 * (5/18) = 15 m s^{-1}. For a level circular track, static friction provides the centripetal force: μmg = mv^2/r. Hence μ = v^2/(rg) = 15^2/(45 * 10) = 225/450 = 0.50.\n\nIndependent check: Convert 54 km h⁻¹ to 15 m s⁻¹. For circular motion, μₛmg ≥ mv²/r, so μₛ,min = 15²/(45×10) = 0.50.",
+ "solution": "Convert the speed: $v=54\\times\\frac{5}{18}=15\\,\\text{m s}^{-1}$. Static friction provides the centripetal force:\n$$\\mu_s mg=\\frac{mv^2}{r}\\quad\\Rightarrow\\quad \\mu_{s,\\min}=\\frac{15^2}{45\\times10}=0.50.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A car of mass 1200 kg moves on a level circular track of radius 45 m at a constant speed of 54 km h^{-1}. The minimum coefficient of static friction required to prevent skidding is (Take g = 10 m s^{-2})",
+  "options": [
+   "0.25",
+   "0.50",
+   "1.00",
+   "2.00"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "v = 54 * (5/18) = 15 m s^{-1}. For a level circular track, static friction provides the centripetal force: μmg = mv^2/r. Hence μ = v^2/(rg) = 15^2/(45 * 10) = 225/450 = 0.50.",
+  "distractor_notes": "0.25: using kinetic energy formula (v^2/(2rg)). 1.00: mistaking radius for diameter (using r=22.5 m). 2.00: inverting the fraction (rg/v^2)."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

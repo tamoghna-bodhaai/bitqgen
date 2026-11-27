@@ -1,0 +1,68 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Equilibrium of concurrent forces",
+  "archetype": "force resolution",
+  "brief": "Three non-parallel forces in equilibrium; resolve components to find unknown force magnitude/angle.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:27",
+   "2025s2:11",
+   "2022:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A point object is in equilibrium under three coplanar concurrent forces. Two of the forces are 4 N along the positive x-axis and 4 N at 60 degrees with the positive x-axis. The magnitude of the third force is",
+ "options": [
+  "4 sqrt 3 N",
+  "4 N",
+  "8 N",
+  "8 sqrt 3 N"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The two forces sum to (6, 2√3) N, so their resultant has magnitude √(36 + 12) = 4√3 N. The third force must have the same magnitude to balance it.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Resolve the second force: F2 = (4 cos 60 deg, 4 sin 60 deg) = (2, 2 sqrt 3).\nFirst force F1 = (4, 0).\nResultant of the two known forces = (4 + 2, 0 + 2 sqrt 3) = (6, 2 sqrt 3).\nMagnitude = sqrt(6^2 + (2 sqrt 3)^2) = sqrt(36 + 12) = sqrt 48 = 4 sqrt 3 N.\nFor equilibrium, the third force must balance this resultant, so its magnitude is also 4 sqrt 3 N.\n\nIndependent check: The two forces sum to (6, 2√3) N, so their resultant has magnitude √(36 + 12) = 4√3 N. The third force must have the same magnitude to balance it.",
+ "solution": "The resultant of the two known forces is $\\vec R=(4+4\\cos60^\\circ,\\,4\\sin60^\\circ)=(6,2\\sqrt3)\\,\\text{N}$. \n$$|\\vec R|=\\sqrt{6^2+(2\\sqrt3)^2}=4\\sqrt3\\,\\text{N}$$\nFor equilibrium, the third force must be equal and opposite to this resultant; its magnitude is $4\\sqrt3\\,\\text{N}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A point object is in equilibrium under three coplanar concurrent forces. Two of the forces are 4 N along the positive x-axis and 4 N at 60 degrees with the positive x-axis. The magnitude of the third force is",
+  "options": [
+   "4 N",
+   "4 sqrt 3 N",
+   "8 N",
+   "8 sqrt 3 N"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Resolve the second force: F2 = (4 cos 60 deg, 4 sin 60 deg) = (2, 2 sqrt 3).\nFirst force F1 = (4, 0).\nResultant of the two known forces = (4 + 2, 0 + 2 sqrt 3) = (6, 2 sqrt 3).\nMagnitude = sqrt(6^2 + (2 sqrt 3)^2) = sqrt(36 + 12) = sqrt 48 = 4 sqrt 3 N.\nFor equilibrium, the third force must balance this resultant, so its magnitude is also 4 sqrt 3 N.",
+  "distractor_notes": "A: takes the third force equal to one given force and ignores the other vector. C: adds the two given force magnitudes directly. D: doubles the correct resultant or misapplies the force combination."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

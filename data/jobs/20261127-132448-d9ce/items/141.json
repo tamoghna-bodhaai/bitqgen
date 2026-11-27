@@ -1,0 +1,68 @@
+{
+ "qno": 141,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 141,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Continuity of piecewise functions",
+  "archetype": "match one-sided limits",
+  "brief": "Piecewise function with a parameter; find the parameter so that the function is continuous (and check differentiability if 5/5); match one-sided limits at the joint.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:100",
+   "2025s1:103",
+   "2024s1:95"
+  ]
+ },
+ "status": "ok",
+ "stem": "Given $a>0$, find $a+b$ if $f(x)=\\begin{cases}\\dfrac{e^{2ax}-1}{x},&x<0,\\\\ ax^2+b,&0\\le x<1,\\\\ b^2-1,&x\\ge1\\end{cases}$ is continuous at both $x=0$ and $x=1$.",
+ "options": [
+  "$-\\dfrac34$",
+  "$1$",
+  "$2$",
+  "$3$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At x=0, continuity gives b=\\lim_{x\\to0^-}(e^{2ax}-1)/x=2a. At x=1, continuity gives a+b=b^2-1. Substituting b=2a yields 4a^2-3a-1=0, so a=1 (since a>0), b=2, and a+b=3.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At $x=0$: $2a=b$.\\nAt $x=1$: $a+b=b^2-1$.\\nThus $3a=4a^2-1$, so $(a-1)(4a+1)=0$.\\nSince $a>0$, $a=1$, $b=2$, and $a+b=3$.\n\nIndependent check: At x=0, continuity gives b=\\lim_{x\\to0^-}(e^{2ax}-1)/x=2a. At x=1, continuity gives a+b=b^2-1. Substituting b=2a yields 4a^2-3a-1=0, so a=1 (since a>0), b=2, and a+b=3.",
+ "solution": "At $x=0$, continuity gives $b=\\lim_{x\\to0^-}\\frac{e^{2ax}-1}{x}=2a$. At $x=1$, it gives $a+b=b^2-1$.\nSubstituting $b=2a$:\n$$4a^2-3a-1=(a-1)(4a+1)=0.$$\nSince $a>0$, $a=1$, so $b=2$ and $a+b=3$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Given $a>0$, find $a+b$ if $f(x)=\\begin{cases}\\dfrac{e^{2ax}-1}{x},&x<0,\\\\ ax^2+b,&0\\le x<1,\\\\ b^2-1,&x\\ge1\\end{cases}$ is continuous at both $x=0$ and $x=1$.",
+  "options": [
+   "$-\\dfrac34$",
+   "$1$",
+   "$2$",
+   "$3$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "At $x=0$: $2a=b$.\\nAt $x=1$: $a+b=b^2-1$.\\nThus $3a=4a^2-1$, so $(a-1)(4a+1)=0$.\\nSince $a>0$, $a=1$, $b=2$, and $a+b=3$.",
+  "distractor_notes": "A: Uses the inadmissible root $a=-\\dfrac14$ despite $a>0$.\nB: Reports $a$ rather than $a+b$.\nC: Reports $b$ rather than $a+b$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

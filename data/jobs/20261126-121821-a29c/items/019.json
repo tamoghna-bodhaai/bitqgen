@@ -1,0 +1,75 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Static friction on incline",
+  "archetype": "two-condition equilibrium",
+  "brief": "Block on incline with applied force shown in diagram; find range of force for equilibrium given friction coefficient",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:16",
+   "2025s1:29",
+   "2023s1:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "A block of mass $4\\ \\text{kg}$ rests on a rough inclined plane of inclination $37^\\circ$. An external force $F$ is applied parallel to the incline, directed up the slope, as shown in the figure. If the coefficient of static friction between the block and the incline is $\\mu_s = 0.25$, the range of $F$ for which the block remains in equilibrium is:\n(Take $g = 10\\ \\text{m s}^{-2}$, $\\sin 37^\\circ = 0.6$, $\\cos 37^\\circ = 0.8$)",
+ "options": [
+  "$14\\ \\text{N} \\le F \\le 34\\ \\text{N}$",
+  "$16\\ \\text{N} \\le F \\le 32\\ \\text{N}$",
+  "$24\\ \\text{N} \\le F \\le 32\\ \\text{N}$",
+  "$26\\ \\text{N} \\le F \\le 38\\ \\text{N}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q019_stem_v1.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Gravity component along incline: mg sin37° = 4·10·0.6 = 24 N. Normal force N = mg cos37° = 32 N, so max static friction f = 0.25·32 = 8 N. Equilibrium requires |F − 24| ≤ 8, giving 16 N ≤ F ≤ 32 N.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "1. Normal force acting on the block:\n$$N = mg\\cos 37^\\circ = 4 \\times 10 \\times 0.8 = 32\\ \\text{N}$$\n\n2. Maximum static friction force:\n$$f_s^{\\max} = \\mu_s N = 0.25 \\times 32 = 8\\ \\text{N}$$\n\n3. Component of gravity directed down the incline:\n$$W_\\parallel = mg\\sin 37^\\circ = 4 \\times 10 \\times 0.6 = 24\\ \\text{N}$$\n\n4. For equilibrium, two limiting cases exist:\n- Lower limit ($F_{\\min}$): The block tends to slide down, so static friction acts upwards along the incline:\n$$F_{\\min} + f_s^{\\max} = mg\\sin 37^\\circ \\implies F_{\\min} = 24 - 8 = 16\\ \\text{N}$$\n\n- Upper limit ($F_{\\max}$): The block tends to slide up, so static friction acts downwards along the incline:\n$$F_{\\max} = mg\\sin 37^\\circ + f_s^{\\max} \\implies F_{\\max} = 24 + 8 = 32\\ \\text{N}$$\n\nThus, the range of force for equilibrium is:\n$$16\\ \\text{N} \\le F \\le 32\\ \\text{N}$$\n\nIndependent check: Gravity component along incline: mg sin37° = 4·10·0.6 = 24 N. Normal force N = mg cos37° = 32 N, so max static friction f = 0.25·32 = 8 N. Equilibrium requires |F − 24| ≤ 8, giving 16 N ≤ F ≤ 32 N.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A block of mass $4\\ \\text{kg}$ rests on a rough inclined plane of inclination $37^\\circ$. An external force $F$ is applied parallel to the incline, directed up the slope, as shown in the figure. If the coefficient of static friction between the block and the incline is $\\mu_s = 0.25$, the range of $F$ for which the block remains in equilibrium is:\n(Take $g = 10\\ \\text{m s}^{-2}$, $\\sin 37^\\circ = 0.6$, $\\cos 37^\\circ = 0.8$)",
+  "options": [
+   "$14\\ \\text{N} \\le F \\le 34\\ \\text{N}$",
+   "$16\\ \\text{N} \\le F \\le 32\\ \\text{N}$",
+   "$24\\ \\text{N} \\le F \\le 32\\ \\text{N}$",
+   "$26\\ \\text{N} \\le F \\le 38\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "1. Normal force acting on the block:\n$$N = mg\\cos 37^\\circ = 4 \\times 10 \\times 0.8 = 32\\ \\text{N}$$\n\n2. Maximum static friction force:\n$$f_s^{\\max} = \\mu_s N = 0.25 \\times 32 = 8\\ \\text{N}$$\n\n3. Component of gravity directed down the incline:\n$$W_\\parallel = mg\\sin 37^\\circ = 4 \\times 10 \\times 0.6 = 24\\ \\text{N}$$\n\n4. For equilibrium, two limiting cases exist:\n- Lower limit ($F_{\\min}$): The block tends to slide down, so static friction acts upwards along the incline:\n$$F_{\\min} + f_s^{\\max} = mg\\sin 37^\\circ \\implies F_{\\min} = 24 - 8 = 16\\ \\text{N}$$\n\n- Upper limit ($F_{\\max}$): The block tends to slide up, so static friction acts downwards along the incline:\n$$F_{\\max} = mg\\sin 37^\\circ + f_s^{\\max} \\implies F_{\\max} = 24 + 8 = 32\\ \\text{N}$$\n\nThus, the range of force for equilibrium is:\n$$16\\ \\text{N} \\le F \\le 32\\ \\text{N}$$",
+  "distractor_notes": "Option A: Assumes $N = mg = 40\\ \\text{N}$, yielding $f_s^{\\max} = 10\\ \\text{N}$ and the range $14\\ \\text{N} \\le F \\le 34\\ \\text{N}$.\nOption C: Neglects static friction when preventing downward sliding, setting $F_{\\min} = mg\\sin 37^\\circ = 24\\ \\text{N}$.\nOption D: Inadvertently swaps sine and cosine, taking $W_\\parallel = 32\\ \\text{N}$ and $N = 24\\ \\text{N}$, yielding $f_s^{\\max} = 6\\ \\text{N}$ and $26\\ \\text{N} \\le F \\le 38\\ \\text{N}$.",
+  "figure": {
+   "kind": "diagram",
+   "description": "A right-angled triangular wedge rests on a horizontal surface. The hypotenuse forms an inclined plane rising from left to right at an angle of 37 degrees to the horizontal. A rectangular block labeled with mass 4 kg is positioned on the inclined face. An arrow labeled 'F' originates from the block and points upwards along and parallel to the inclined surface.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2
+ }
+}

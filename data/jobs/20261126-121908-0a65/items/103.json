@@ -1,0 +1,67 @@
+{
+ "qno": 103,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 103,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter-number analogy",
+  "archetype": "positional value analogy",
+  "brief": "Letter pair analogy based on positional values (e.g., opposite letters or constant positional difference); apply the same rule to find the missing pair.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:86",
+   "2026s2:73",
+   "2026s1:71"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the related letters from the given alternatives to complete the analogy:\n\n**COLD : XLOW :: MAKE : ?**",
+ "options": [
+  "NZPV",
+  "OZPV",
+  "NZPU",
+  "MZQW"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "COLD→XLOW is the Atbash (opposite-letter) mapping A↔Z, B↔Y, ... (letter positions sum to 27). Applying to MAKE: M→N, A→Z, K→P, E→V gives NZPV.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each letter in the first term is replaced by its opposite letter in the English alphabet (the letter whose positional value from the end equals that from the beginning, such that the sum of their positional values is 27):\n- $\\text{C } (3) \\rightarrow 27 - 3 = 24 \\text{ (X)}$\n- $\\text{O } (15) \\rightarrow 27 - 15 = 12 \\text{ (L)}$\n- $\\text{L } (12) \\rightarrow 27 - 12 = 15 \\text{ (O)}$\n- $\\text{D } (4) \\rightarrow 27 - 4 = 23 \\text{ (W)}$\n\nApplying the same rule to **MAKE**:\n- $\\text{M } (13) \\rightarrow 27 - 13 = 14 \\text{ (N)}$\n- $\\text{A } (1) \\rightarrow 27 - 1 = 26 \\text{ (Z)}$\n- $\\text{K } (11) \\rightarrow 27 - 11 = 16 \\text{ (P)}$\n- $\\text{E } (5) \\rightarrow 27 - 5 = 22 \\text{ (V)}$\n\nThus, the missing term is **NZPV**.\n\nIndependent check: COLD→XLOW is the Atbash (opposite-letter) mapping A↔Z, B↔Y, ... (letter positions sum to 27). Applying to MAKE: M→N, A→Z, K→P, E→V gives NZPV.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Select the related letters from the given alternatives to complete the analogy:\n\n**COLD : XLOW :: MAKE : ?**",
+  "options": [
+   "NZPV",
+   "OZPV",
+   "NZPU",
+   "MZQW"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "working": "Each letter in the first term is replaced by its opposite letter in the English alphabet (the letter whose positional value from the end equals that from the beginning, such that the sum of their positional values is 27):\n- $\\text{C } (3) \\rightarrow 27 - 3 = 24 \\text{ (X)}$\n- $\\text{O } (15) \\rightarrow 27 - 15 = 12 \\text{ (L)}$\n- $\\text{L } (12) \\rightarrow 27 - 12 = 15 \\text{ (O)}$\n- $\\text{D } (4) \\rightarrow 27 - 4 = 23 \\text{ (W)}$\n\nApplying the same rule to **MAKE**:\n- $\\text{M } (13) \\rightarrow 27 - 13 = 14 \\text{ (N)}$\n- $\\text{A } (1) \\rightarrow 27 - 1 = 26 \\text{ (Z)}$\n- $\\text{K } (11) \\rightarrow 27 - 11 = 16 \\text{ (P)}$\n- $\\text{E } (5) \\rightarrow 27 - 5 = 22 \\text{ (V)}$\n\nThus, the missing term is **NZPV**.",
+  "distractor_notes": "OZPV encodes a calculation mistake in the first letter ($27 - 13 = 15 \\rightarrow \\text{O}$).\nNZPU encodes a calculation mistake in the fourth letter ($27 - 5 = 21 \\rightarrow \\text{U}$ instead of $22 \\rightarrow \\text{V}$).\nMZQW encodes leaving the first letter unchanged and using incorrect opposite pairings for the remaining letters.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

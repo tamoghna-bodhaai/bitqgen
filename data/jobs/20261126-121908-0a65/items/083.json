@@ -1,0 +1,67 @@
+{
+ "qno": 83,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 83,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Gerund after preposition",
+  "archetype": "spot the error",
+  "brief": "Sentence where the preposition is followed by an infinitive/base verb instead of the gerund; student spots that part.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:62",
+   "2026s2:68",
+   "2025s2:66"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the part of the sentence which contains an error.\n\nThe security guard prevented / the stranger from enter / the research laboratory without / an official permit.",
+ "options": [
+  "The security guard prevented",
+  "the stranger from enter",
+  "the research laboratory without",
+  "an official permit."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "The verb 'prevent' takes the pattern 'prevent someone from + gerund'. Part B says 'from enter', which must be 'from entering'. Parts A, C, D are grammatically correct.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In English grammar, a preposition must be followed by a noun, pronoun, or gerund (the '-ing' form of a verb). In the second part, the preposition 'from' is incorrectly followed by the base form of the verb 'enter'. The correct construction requires the gerund 'entering' ('prevented the stranger from entering'). Hence, the error lies in part B.\n\nIndependent check: The verb 'prevent' takes the pattern 'prevent someone from + gerund'. Part B says 'from enter', which must be 'from entering'. Parts A, C, D are grammatically correct.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the part of the sentence which contains an error.\n\nThe security guard prevented / the stranger from enter / the research laboratory without / an official permit.",
+  "options": [
+   "The security guard prevented",
+   "the stranger from enter",
+   "the research laboratory without",
+   "an official permit."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "In English grammar, a preposition must be followed by a noun, pronoun, or gerund (the '-ing' form of a verb). In the second part, the preposition 'from' is incorrectly followed by the base form of the verb 'enter'. The correct construction requires the gerund 'entering' ('prevented the stranger from entering'). Hence, the error lies in part B.",
+  "distractor_notes": "A: Incorrect; 'The security guard prevented' is a grammatically correct subject and finite past tense verb clause.\nC: Incorrect; 'the research laboratory without' correctly provides the direct object of entering and introduces the subsequent condition with the preposition 'without'.\nD: Incorrect; 'an official permit.' is a well-formed noun phrase acting as the object of the preposition 'without'.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

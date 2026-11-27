@@ -1,0 +1,68 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Kinetic energy and momentum relation",
+  "archetype": "single-formula numeric",
+  "brief": "Given momentum and mass (or KE), use KE = p²/2m to find the other quantity in one step.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:22",
+   "2024s1:4",
+   "2025s1:7"
+  ]
+ },
+ "status": "ok",
+ "stem": "The kinetic energy of a body of mass 4 kg is 18 J. The magnitude of its momentum is",
+ "options": [
+  "12 kg m/s",
+  "6 kg m/s",
+  "3 kg m/s",
+  "24 kg m/s"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using p² = 2mK, p = √(2 × 4 × 18) = 12 kg·m/s.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "KE = p^2/(2m)\np = sqrt(2mKE)\np = sqrt(2 * 4 * 18)\np = sqrt(144)\np = 12 kg m/s\nAnswer: C\n\nIndependent check: Using p² = 2mK, p = √(2 × 4 × 18) = 12 kg·m/s.",
+ "solution": "$K=\\dfrac{p^2}{2m}$, so $p=\\sqrt{2mK}$. $$p=\\sqrt{2\\times4\\times18}=12\\ \\text{kg m/s}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The kinetic energy of a body of mass 4 kg is 18 J. The magnitude of its momentum is",
+  "options": [
+   "3 kg m/s",
+   "6 kg m/s",
+   "12 kg m/s",
+   "24 kg m/s"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "KE = p^2/(2m)\np = sqrt(2mKE)\np = sqrt(2 * 4 * 18)\np = sqrt(144)\np = 12 kg m/s\nAnswer: C",
+  "distractor_notes": "A: computed v = sqrt(2KE/m) and reported that speed as the momentum.\nB: used p = sqrt(2KE), forgetting the mass.\nD: used p = m sqrt(2KE), forgetting to divide by the mass inside the square root."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

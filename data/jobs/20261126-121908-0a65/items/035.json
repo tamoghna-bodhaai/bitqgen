@@ -1,0 +1,68 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Wheatstone bridge",
+  "archetype": "symbolic condition",
+  "brief": "A Wheatstone bridge with one unknown resistance; use the balanced-bridge condition to find that resistance from the other three arms.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:11",
+   "2026s2:13",
+   "2023s1:16"
+  ]
+ },
+ "status": "ok",
+ "stem": "A Wheatstone bridge is balanced. Its upper-left, lower-left and upper-right arms are $a=3\\ \\Omega$, $b=6\\ \\Omega$ and $c=9\\ \\Omega$ respectively; the lower-right arm is $x$. Find $x$.",
+ "options": [
+  "$4.5\\ \\Omega$",
+  "$18\\ \\Omega$",
+  "$2\\ \\Omega$",
+  "$54\\ \\Omega$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a balanced bridge, a/b = c/x. Thus x = bc/a = (6×9)/3 = 18 Ω.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\dfrac{a}{b}=\\dfrac{c}{x}$$\n$$x=\\dfrac{bc}{a}=\\dfrac{(6)(9)}{3}=18\\ \\Omega$$\n\nIndependent check: For a balanced bridge, a/b = c/x. Thus x = bc/a = (6×9)/3 = 18 Ω.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A Wheatstone bridge is balanced. Its upper-left, lower-left and upper-right arms are $a=3\\ \\Omega$, $b=6\\ \\Omega$ and $c=9\\ \\Omega$ respectively; the lower-right arm is $x$. Find $x$.",
+  "options": [
+   "$4.5\\ \\Omega$",
+   "$18\\ \\Omega$",
+   "$2\\ \\Omega$",
+   "$54\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$\\dfrac{a}{b}=\\dfrac{c}{x}$$\n$$x=\\dfrac{bc}{a}=\\dfrac{(6)(9)}{3}=18\\ \\Omega$$",
+  "distractor_notes": "A: uses $x=ac/b$. C: uses $x=ab/c$. D: multiplies all three known resistances instead of applying the balance ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

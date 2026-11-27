@@ -1,0 +1,67 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Quantum numbers",
+  "archetype": "configuration to quantum numbers",
+  "brief": "Given a set of quantum numbers (n, l, m, s), decide whether it is allowed for an electron; identify the invalid one.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:34",
+   "2025s1:39",
+   "2026s2:51"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following sets of quantum numbers $(n, l, m, s)$ is not permissible for an electron in an atom?",
+ "options": [
+  "$3, 2, -2, +\\dfrac{1}{2}$",
+  "$4, 0, 0, -\\dfrac{1}{2}$",
+  "$3, 1, -2, +\\dfrac{1}{2}$",
+  "$2, 1, +1, -\\dfrac{1}{2}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Rules: l = 0..n-1, m = -l..+l, s = ±1/2. (C) has l=1 but m=-2, which lies outside [-1, +1], so it is not permissible. A, B, D all satisfy the rules (verified numerically).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The rules governing the allowed values of quantum numbers are:\n1. Principal quantum number: $n = 1, 2, 3, \\dots$\n2. Azimuthal quantum number: $l = 0, 1, 2, \\dots, (n - 1)$\n3. Magnetic quantum number: $m = -l, \\dots, 0, \\dots, +l$ (i.e., $|m| \\le l$)\n4. Spin quantum number: $s = \\pm \\dfrac{1}{2}$\n\nEvaluating the options:\n- For $3, 2, -2, +\\dfrac{1}{2}$: $n = 3 \\implies l \\in \\{0, 1, 2\\}$. For $l = 2$, $m \\in \\{-2, -1, 0, +1, +2\\}$, and $s = +\\dfrac{1}{2}$. This is permissible ($3d$ orbital).\n- For $4, 0, 0, -\\dfrac{1}{2}$: $n = 4 \\implies l = 0$ is valid, which gives $m = 0$, and $s = -\\dfrac{1}{2}$. This is permissible ($4s$ orbital).\n- For $3, 1, -2, +\\dfrac{1}{2}$: Here $l = 1$. The allowed values of $m$ are $-1, 0, +1$. The given value $m = -2$ violates $|m| \\le l$. Thus, this set is not permissible.\n- For $2, 1, +1, -\\dfrac{1}{2}$: $n = 2 \\implies l = 1$ is valid, giving $m \\in \\{-1, 0, +1\\}$, and $s = -\\dfrac{1}{2}$. This is permissible ($2p$ orbital).\n\nTherefore, the set in option C is not permissible.\n\nIndependent check: Rules: l = 0..n-1, m = -l..+l, s = ±1/2. (C) has l=1 but m=-2, which lies outside [-1, +1], so it is not permissible. A, B, D all satisfy the rules (verified numerically).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following sets of quantum numbers $(n, l, m, s)$ is not permissible for an electron in an atom?",
+  "options": [
+   "$3, 2, -2, +\\dfrac{1}{2}$",
+   "$4, 0, 0, -\\dfrac{1}{2}$",
+   "$3, 1, -2, +\\dfrac{1}{2}$",
+   "$2, 1, +1, -\\dfrac{1}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "The rules governing the allowed values of quantum numbers are:\n1. Principal quantum number: $n = 1, 2, 3, \\dots$\n2. Azimuthal quantum number: $l = 0, 1, 2, \\dots, (n - 1)$\n3. Magnetic quantum number: $m = -l, \\dots, 0, \\dots, +l$ (i.e., $|m| \\le l$)\n4. Spin quantum number: $s = \\pm \\dfrac{1}{2}$\n\nEvaluating the options:\n- For $3, 2, -2, +\\dfrac{1}{2}$: $n = 3 \\implies l \\in \\{0, 1, 2\\}$. For $l = 2$, $m \\in \\{-2, -1, 0, +1, +2\\}$, and $s = +\\dfrac{1}{2}$. This is permissible ($3d$ orbital).\n- For $4, 0, 0, -\\dfrac{1}{2}$: $n = 4 \\implies l = 0$ is valid, which gives $m = 0$, and $s = -\\dfrac{1}{2}$. This is permissible ($4s$ orbital).\n- For $3, 1, -2, +\\dfrac{1}{2}$: Here $l = 1$. The allowed values of $m$ are $-1, 0, +1$. The given value $m = -2$ violates $|m| \\le l$. Thus, this set is not permissible.\n- For $2, 1, +1, -\\dfrac{1}{2}$: $n = 2 \\implies l = 1$ is valid, giving $m \\in \\{-1, 0, +1\\}$, and $s = -\\dfrac{1}{2}$. This is permissible ($2p$ orbital).\n\nTherefore, the set in option C is not permissible.",
+  "distractor_notes": "Option A: A student mistakenly considers $m = -2$ invalid because of the negative sign, forgetting that $m$ ranges from $-l$ to $+l$.\nOption B: A student wrongly assumes $l = 0$ and $m = 0$ represents an unallowed or empty state, forgetting that $l = 0$ defines an $s$-orbital.\nOption D: A student misremembers that $m = +1$ requires $l > 1$, falsely eliminating a standard $2p$ electron.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

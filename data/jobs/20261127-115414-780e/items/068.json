@@ -1,0 +1,80 @@
+{
+ "qno": 68,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 68,
+  "section": "English Proficiency",
+  "chapter": "Active and Passive Voice",
+  "subtopic": "Active and passive voice",
+  "archetype": "voice conversion",
+  "brief": "Give an active voice sentence in simple past or present perfect tense; ask students to choose the correct passive form from four options.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:63",
+   "2024s2:64",
+   "2024s2:65"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the option that correctly expresses the given sentence in the passive voice: The committee has rejected the new proposal.",
+ "options": [
+  "The new proposal has been rejected by the committee.",
+  "The new proposal has rejected by the committee.",
+  "The new proposal was rejected by the committee.",
+  "The new proposal is being rejected by the committee."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q068_optB_v1.png",
+  "figs/q068_optA_v1.png",
+  "figs/q068_optC_v1.png",
+  "figs/q068_optD_v1.png"
+ ],
+ "option_width": 22,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Present perfect passive uses “has been” + past participle: “The new proposal has been rejected by the committee.”",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "The images labeled A–D show chemical structures and are unrelated to the grammar question."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Active 'has rejected' (present perfect) becomes passive 'has been rejected' (has + been + past participle); the object 'the new proposal' becomes the subject and the doer is retained after 'by'. A omits 'been', C changes the tense to simple past, and D changes it to present continuous. Only B preserves both the tense and the meaning.\n\nIndependent check: Present perfect passive uses “has been” + past participle: “The new proposal has been rejected by the committee.”",
+ "solution": "Present perfect passive is formed with $has/have + been +$ past participle. The object becomes the subject: “The new proposal has been rejected by the committee.”",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Select the option that correctly expresses the given sentence in the passive voice: The committee has rejected the new proposal.",
+  "options": [
+   "The new proposal has rejected by the committee.",
+   "The new proposal has been rejected by the committee.",
+   "The new proposal was rejected by the committee.",
+   "The new proposal is being rejected by the committee."
+  ],
+  "option_smiles": [
+   "CCO",
+   "CCN",
+   "CC(=O)O",
+   "c1ccccc1"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Active 'has rejected' (present perfect) becomes passive 'has been rejected' (has + been + past participle); the object 'the new proposal' becomes the subject and the doer is retained after 'by'. A omits 'been', C changes the tense to simple past, and D changes it to present continuous. Only B preserves both the tense and the meaning.",
+  "distractor_notes": "A drops 'been' in the present perfect passive; C changes the tense to simple past; D changes it to present continuous passive while the active sentence is present perfect."
+ },
+ "author_model": "deepseek/deepseek-v4.1-flash"
+}

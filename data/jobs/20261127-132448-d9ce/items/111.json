@@ -1,0 +1,70 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by substitution",
+  "archetype": "substitution integral",
+  "brief": "Indefinite integral of the form f(sin x + cos x) cos x that resolves by a simple substitution; give integrand as combination of sin and cos.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:121",
+   "2021:119",
+   "2024s2:92"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\u0000displaystyle\\int (\\sin x+\\cos x)^4(\\cos x-\\sin x)\\,dx$.",
+ "options": [
+  "$-\\dfrac{(\\sin x+\\cos x)^5}{5}+C$",
+  "$\\dfrac{(\\sin x+\\cos x)^5}{5}+C$",
+  "$\\dfrac{(\\sin x+\\cos x)^4}{4}+C$",
+  "$(\\sin x+\\cos x)^5+C$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let u = sin x + cos x, so du = (cos x − sin x) dx. Then ∫u⁴ du = u⁵/5 + C.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [
+    "A stray control character appears before “displaystyle”; the intended integral is still clear."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=\\sin x+\\cos x,\\quad du=(\\cos x-\\sin x)\\,dx$\\\\\n$\\displaystyle\\int u^4\\,du=\\dfrac{u^5}{5}+C=\\dfrac{(\\sin x+\\cos x)^5}{5}+C$\n\nIndependent check: Let u = sin x + cos x, so du = (cos x − sin x) dx. Then ∫u⁴ du = u⁵/5 + C.",
+ "solution": "Let $u=\\\\sin x+\\\\cos x$, so $du=(\\\\cos x-\\\\sin x)\\\\,dx$. Then\n$$\\\\int u^4\\,du=\\\\frac{u^5}{5}+C=\\\\frac{(\\\\sin x+\\\\cos x)^5}{5}+C.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\u0000displaystyle\\int (\\sin x+\\cos x)^4(\\cos x-\\sin x)\\,dx$.",
+  "options": [
+   "$\\dfrac{(\\sin x+\\cos x)^5}{5}+C$",
+   "$-\\dfrac{(\\sin x+\\cos x)^5}{5}+C$",
+   "$\\dfrac{(\\sin x+\\cos x)^4}{4}+C$",
+   "$(\\sin x+\\cos x)^5+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$u=\\sin x+\\cos x,\\quad du=(\\cos x-\\sin x)\\,dx$\\\\\n$\\displaystyle\\int u^4\\,du=\\dfrac{u^5}{5}+C=\\dfrac{(\\sin x+\\cos x)^5}{5}+C$",
+  "distractor_notes": "B: sign error in the substitution; C: integrates the fourth power with the wrong power rule; D: omits the factor $\\dfrac{1}{5}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

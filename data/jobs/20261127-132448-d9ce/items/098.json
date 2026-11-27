@@ -1,0 +1,68 @@
+{
+ "qno": 98,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 98,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-number code",
+  "brief": "Given how a word is coded using letters mapped to numbers based on a discoverable rule, find the code for a new word.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:102",
+   "2024s2:80",
+   "2026s1:72"
+  ]
+ },
+ "status": "ok",
+ "stem": "If each letter is coded by its position in the alphabet, so that **FAN** is coded as **6-1-14**, how is **MAP** coded?",
+ "options": [
+  "14-1-16",
+  "12-1-15",
+  "13-2-16",
+  "13-1-16"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "M = 13, A = 1, and P = 16, so MAP is coded as 13-1-16.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Use alphabet positions: M = 13, A = 1, P = 16. Hence MAP is coded 13-1-16.\n\nIndependent check: M = 13, A = 1, and P = 16, so MAP is coded as 13-1-16.",
+ "solution": "Each letter is coded by its position in the alphabet: $M=13$, $A=1$, and $P=16$. Hence, MAP is coded as $13$-$1$-$16$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "If each letter is coded by its position in the alphabet, so that **FAN** is coded as **6-1-14**, how is **MAP** coded?",
+  "options": [
+   "13-1-16",
+   "12-1-15",
+   "13-2-16",
+   "14-1-16"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Use alphabet positions: M = 13, A = 1, P = 16. Hence MAP is coded 13-1-16.",
+  "distractor_notes": "B: uses the preceding alphabet position for each letter. C: assigns A the value 2. D: assigns M the value 14."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

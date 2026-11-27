@@ -1,0 +1,68 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "de Broglie wavelength of electron",
+  "archetype": "ratio of two situations",
+  "brief": "Ratio of de Broglie wavelengths of two particles (e.g. an alpha particle and a proton) accelerated through the same potential difference — numerical answer using λ ∝ 1/√(mq).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:53",
+   "2026s1:34",
+   "2023s2:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "An alpha particle and a proton are accelerated from rest through the same potential difference. Taking the mass of an alpha particle as four times that of a proton and its charge as twice that of a proton, the ratio of the de Broglie wavelength of the alpha particle to that of the proton is:",
+ "options": [
+  "1/4",
+  "1/2",
+  "1/sqrt(2)",
+  "1/(2 * sqrt(2))"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For acceleration from rest, λ = h/√(2mqV). Thus λₐ/λₚ = √[(mₚe)/(4mₚ·2e)] = 1/(2√2).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "lambda = h / sqrt(2 m q V). Therefore lambda_alpha / lambda_p = sqrt(m_p q_p / (m_alpha q_alpha)) = sqrt(1 / (4 * 2)) = sqrt(1/8) = 1/(2 sqrt(2)).\n\nIndependent check: For acceleration from rest, λ = h/√(2mqV). Thus λₐ/λₚ = √[(mₚe)/(4mₚ·2e)] = 1/(2√2).",
+ "solution": "For a particle accelerated from rest through potential difference $V$, $\u00024\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$.\n$$\\frac{\\lambda_\\alpha}{\\lambda_p}=\\sqrt{\\frac{m_pq_p}{m_\\alpha q_\\alpha}}=\\sqrt{\\frac{1}{4\\times2}}=\\frac{1}{2\\sqrt2}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An alpha particle and a proton are accelerated from rest through the same potential difference. Taking the mass of an alpha particle as four times that of a proton and its charge as twice that of a proton, the ratio of the de Broglie wavelength of the alpha particle to that of the proton is:",
+  "options": [
+   "1/(2 * sqrt(2))",
+   "1/2",
+   "1/sqrt(2)",
+   "1/4"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "lambda = h / sqrt(2 m q V). Therefore lambda_alpha / lambda_p = sqrt(m_p q_p / (m_alpha q_alpha)) = sqrt(1 / (4 * 2)) = sqrt(1/8) = 1/(2 sqrt(2)).",
+  "distractor_notes": "B from assuming both particles gain the same kinetic energy. C from ignoring the charge ratio and using only the mass ratio. D from using the inverse product mq instead of the square root."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

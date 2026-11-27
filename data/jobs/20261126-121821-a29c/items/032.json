@@ -1,0 +1,66 @@
+{
+ "qno": 32,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 32,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Ionisation enthalpy",
+  "archetype": "find incorrect order",
+  "brief": "List four ordering statements about first ionisation enthalpies across a period or down a group (including a Be/B or N/O type anomaly) and ask which statement is wrong.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:52",
+   "2025s2:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following orders of first ionisation enthalpy ($\\Delta_i H_1$) is incorrect?",
+ "options": [
+  "$\\text{B} < \\text{Be} < \\text{C} < \\text{N}$",
+  "$\\text{Al} < \\text{Mg} < \\text{Si} < \\text{P}$",
+  "$\\text{C} < \\text{N} < \\text{O} < \\text{F}$",
+  "$\\text{I} < \\text{Br} < \\text{Cl} < \\text{F}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "IE1 (kJ/mol): B 801 < Be 900 < C 1086 < N 1402 (A ok); Al 578 < Mg 738 < Si 786 < P 1012 (B ok); I 1008 < Br 1140 < Cl 1251 < F 1681 (D ok). But N (1402, half-filled 2p3) > O (1314), so C < N < O < F fails.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Across a period, first ionisation enthalpy generally increases with increasing nuclear charge and decreasing atomic radius, but with exceptions at fully filled and half-filled subshells:\n1. Nitrogen ($1s^2 2s^2 2p^3$) has an extra-stable half-filled $2p$ subshell, whereas oxygen ($1s^2 2s^2 2p^4$) experiences inter-electronic repulsion in the doubly occupied $2p$ orbital. Consequently, $\\Delta_i H_1(\\text{N}) = 1402\\text{ kJ mol}^{-1}$ is greater than $\\Delta_i H_1(\\text{O}) = 1314\\text{ kJ mol}^{-1}$.\nThus, the correct increasing order of $\\Delta_i H_1$ is $\\text{C} < \\text{O} < \\text{N} < \\text{F}$, making the order $\\text{C} < \\text{N} < \\text{O} < \\text{F}$ incorrect.\n\n2. For the other options:\n- $\\text{B} (801\\text{ kJ mol}^{-1}) < \\text{Be} (899\\text{ kJ mol}^{-1}) < \\text{C} (1086\\text{ kJ mol}^{-1}) < \\text{N} (1402\\text{ kJ mol}^{-1})$ is correct because $\\text{Be}$ ($2s^2$) has a fully filled subshell and higher penetration than $\\text{B}$ ($2s^2 2p^1$).\n- $\\text{Al} (577\\text{ kJ mol}^{-1}) < \\text{Mg} (737\\text{ kJ mol}^{-1}) < \\text{Si} (786\\text{ kJ mol}^{-1}) < \\text{P} (1012\\text{ kJ mol}^{-1})$ is correct because $\\text{Mg}$ ($3s^2$) has a fully filled subshell.\n- $\\text{I} (1008\\text{ kJ mol}^{-1}) < \\text{Br} (1142\\text{ kJ mol}^{-1}) < \\text{Cl} (1251\\text{ kJ mol}^{-1}) < \\text{F} (1681\\text{ kJ mol}^{-1})$ is correct as ionisation enthalpy decreases down Group 17.\n\nIndependent check: IE1 (kJ/mol): B 801 < Be 900 < C 1086 < N 1402 (A ok); Al 578 < Mg 738 < Si 786 < P 1012 (B ok); I 1008 < Br 1140 < Cl 1251 < F 1681 (D ok). But N (1402, half-filled 2p3) > O (1314), so C < N < O < F fails.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following orders of first ionisation enthalpy ($\\Delta_i H_1$) is incorrect?",
+  "options": [
+   "$\\text{B} < \\text{Be} < \\text{C} < \\text{N}$",
+   "$\\text{Al} < \\text{Mg} < \\text{Si} < \\text{P}$",
+   "$\\text{C} < \\text{N} < \\text{O} < \\text{F}$",
+   "$\\text{I} < \\text{Br} < \\text{Cl} < \\text{F}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Across a period, first ionisation enthalpy generally increases with increasing nuclear charge and decreasing atomic radius, but with exceptions at fully filled and half-filled subshells:\n1. Nitrogen ($1s^2 2s^2 2p^3$) has an extra-stable half-filled $2p$ subshell, whereas oxygen ($1s^2 2s^2 2p^4$) experiences inter-electronic repulsion in the doubly occupied $2p$ orbital. Consequently, $\\Delta_i H_1(\\text{N}) = 1402\\text{ kJ mol}^{-1}$ is greater than $\\Delta_i H_1(\\text{O}) = 1314\\text{ kJ mol}^{-1}$.\nThus, the correct increasing order of $\\Delta_i H_1$ is $\\text{C} < \\text{O} < \\text{N} < \\text{F}$, making the order $\\text{C} < \\text{N} < \\text{O} < \\text{F}$ incorrect.\n\n2. For the other options:\n- $\\text{B} (801\\text{ kJ mol}^{-1}) < \\text{Be} (899\\text{ kJ mol}^{-1}) < \\text{C} (1086\\text{ kJ mol}^{-1}) < \\text{N} (1402\\text{ kJ mol}^{-1})$ is correct because $\\text{Be}$ ($2s^2$) has a fully filled subshell and higher penetration than $\\text{B}$ ($2s^2 2p^1$).\n- $\\text{Al} (577\\text{ kJ mol}^{-1}) < \\text{Mg} (737\\text{ kJ mol}^{-1}) < \\text{Si} (786\\text{ kJ mol}^{-1}) < \\text{P} (1012\\text{ kJ mol}^{-1})$ is correct because $\\text{Mg}$ ($3s^2$) has a fully filled subshell.\n- $\\text{I} (1008\\text{ kJ mol}^{-1}) < \\text{Br} (1142\\text{ kJ mol}^{-1}) < \\text{Cl} (1251\\text{ kJ mol}^{-1}) < \\text{F} (1681\\text{ kJ mol}^{-1})$ is correct as ionisation enthalpy decreases down Group 17.",
+  "distractor_notes": "A: Trap for students who forget the Be/B anomaly and assume first ionisation enthalpy strictly increases with atomic number without exception.\nB: Trap for students who forget the Mg/Al anomaly (fully filled $3s^2$ subshell in Mg gives it a higher $\\Delta_i H_1$ than Al).\nD: Trap for students who incorrectly assume ionisation enthalpy increases down a group due to the increase in total nuclear charge.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 35,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 35,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Hybridisation and bond angle",
+  "archetype": "property comparison",
+  "brief": "Ask which of a set of given species has the highest/l lowest bond angle, with brief VSEPR reasoning.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:37",
+   "2026s1:31",
+   "2024s2:33"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which of the following molecules has the greatest bond angle?",
+ "options": [
+  "H2O",
+  "NH3",
+  "BF3",
+  "CH4"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Bond angles: H₂O ≈ 104.5°, NH₃ ≈ 107°, CH₄ ≈ 109.5°, BF₃ = 120°. Thus BF₃ has the greatest bond angle.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "According to VSEPR, BF3 is trigonal planar with bond angle 120 degrees. CH4 is tetrahedral with 109.5 degrees. NH3 has one lone pair, reducing the angle to about 107 degrees. H2O has two lone pairs, reducing the angle to about 104.5 degrees. Therefore BF3 has the greatest bond angle.\n\nIndependent check: Bond angles: H₂O ≈ 104.5°, NH₃ ≈ 107°, CH₄ ≈ 109.5°, BF₃ = 120°. Thus BF₃ has the greatest bond angle.",
+ "solution": "By VSEPR theory, $\\mathrm{BF_3}$ is trigonal planar with a bond angle of $120^\\circ$. This exceeds the angles in $\\mathrm{CH_4}$ ($109.5^\\circ$), $\\mathrm{NH_3}$ ($\\approx 107^\\circ$), and $\\mathrm{H_2O}$ ($\\approx 104.5^\\circ$).",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following molecules has the greatest bond angle?",
+  "options": [
+   "H2O",
+   "NH3",
+   "CH4",
+   "BF3"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "According to VSEPR, BF3 is trigonal planar with bond angle 120 degrees. CH4 is tetrahedral with 109.5 degrees. NH3 has one lone pair, reducing the angle to about 107 degrees. H2O has two lone pairs, reducing the angle to about 104.5 degrees. Therefore BF3 has the greatest bond angle.",
+  "distractor_notes": "A: chooses the molecule with the most lone pairs. B: chooses the molecule with one lone pair. C: tetrahedral angle is large but still less than trigonal planar."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

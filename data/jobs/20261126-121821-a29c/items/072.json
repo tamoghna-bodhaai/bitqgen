@@ -1,0 +1,67 @@
+{
+ "qno": 72,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 72,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "multi-component series",
+  "brief": "Mixed letter-number series where letters shift by a fixed step and numbers follow their own rule; ask for the next term.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:86",
+   "2026s1:76",
+   "2025s1:89"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the next term in the alphanumeric series given below:\n\nD7W, G12T, J19Q, M28N, ?",
+ "options": [
+  "O39K",
+  "P37K",
+  "P39K",
+  "P39L"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "First letters D,G,J,M increase by 3 → P. Numbers 7,12,19,28 have gaps 5,7,9 → next gap 11 → 39. Last letters W,T,Q,N decrease by 3 → K. Next term: P39K.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Break each term into its three components:\n\n1. **First letter:**\n$\\text{D (4)} \\xrightarrow{+3} \\text{G (7)} \\xrightarrow{+3} \\text{J (10)} \\xrightarrow{+3} \\text{M (13)} \\xrightarrow{+3} \\text{P (16)}$\n\n2. **Middle number:**\n$7 \\xrightarrow{+5} 12 \\xrightarrow{+7} 19 \\xrightarrow{+9} 28 \\xrightarrow{+11} 39$\n(The difference increases by $2$ at each step: $+5, +7, +9, +11$.)\n\n3. **Second letter:**\n$\\text{W (23)} \\xrightarrow{-3} \\text{T (20)} \\xrightarrow{-3} \\text{Q (17)} \\xrightarrow{-3} \\text{N (14)} \\xrightarrow{-3} \\text{K (11)}$\n\nCombining the three results gives **P39K**.\n\nIndependent check: First letters D,G,J,M increase by 3 → P. Numbers 7,12,19,28 have gaps 5,7,9 → next gap 11 → 39. Last letters W,T,Q,N decrease by 3 → K. Next term: P39K.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the next term in the alphanumeric series given below:\n\nD7W, G12T, J19Q, M28N, ?",
+  "options": [
+   "O39K",
+   "P37K",
+   "P39K",
+   "P39L"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "Break each term into its three components:\n\n1. **First letter:**\n$\\text{D (4)} \\xrightarrow{+3} \\text{G (7)} \\xrightarrow{+3} \\text{J (10)} \\xrightarrow{+3} \\text{M (13)} \\xrightarrow{+3} \\text{P (16)}$\n\n2. **Middle number:**\n$7 \\xrightarrow{+5} 12 \\xrightarrow{+7} 19 \\xrightarrow{+9} 28 \\xrightarrow{+11} 39$\n(The difference increases by $2$ at each step: $+5, +7, +9, +11$.)\n\n3. **Second letter:**\n$\\text{W (23)} \\xrightarrow{-3} \\text{T (20)} \\xrightarrow{-3} \\text{Q (17)} \\xrightarrow{-3} \\text{N (14)} \\xrightarrow{-3} \\text{K (11)}$\n\nCombining the three results gives **P39K**.",
+  "distractor_notes": "O39K: Shifts the first letter by $+2$ from M instead of $+3$.\nP37K: Adds $9$ instead of $11$ to the number ($28 + 9 = 37$).\nP39L: Shifts the last letter by $-2$ from N instead of $-3$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}

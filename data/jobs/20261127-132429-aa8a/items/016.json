@@ -1,0 +1,68 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Radiation pressure / momentum of EM waves",
+  "archetype": "conceptual",
+  "brief": "Radiation pressure / momentum of EM waves: conceptual MCQ on how radiation pressure and momentum density change when a wave is fully absorbed vs fully reflected by a surface.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:10",
+   "2023s1:25",
+   "2023s2:12"
+  ]
+ },
+ "status": "ok",
+ "stem": "The same normally incident electromagnetic wave is fully absorbed by one surface and fully reflected by another. What are the ratios (radiation pressure on the reflecting surface / pressure on the absorbing surface; incident-wave momentum density in the two setups)?",
+ "options": [
+  "$1,\\ 2$",
+  "$2,\\ 1$",
+  "$2,\\ 2$",
+  "$\\dfrac{1}{2},\\ 1$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the same incident intensity I, P_abs = I/c and P_refl = 2I/c. The incident momentum density is I/c² in both setups, so the ratio is 1.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$p_{\\text{abs}}=\\dfrac{I}{c},\\quad p_{\\text{refl}}=\\dfrac{2I}{c}$\n$\\dfrac{p_{\\text{refl}}}{p_{\\text{abs}}}=2$\n$u_{\\text{momentum}}=\\dfrac{I}{c^2}$ for the incident wave in either setup; ratio $=1$.\n\nIndependent check: For the same incident intensity I, P_abs = I/c and P_refl = 2I/c. The incident momentum density is I/c² in both setups, so the ratio is 1.",
+ "solution": "For intensity $I$, radiation pressure is $I/c$ on an absorbing surface and $2I/c$ on a reflecting surface.\n$$\\frac{p_{\\text{refl}}}{p_{\\text{abs}}}=2$$\nThe incident-wave momentum density is $I/c^2$ in both setups, so its ratio is $1$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The same normally incident electromagnetic wave is fully absorbed by one surface and fully reflected by another. What are the ratios (radiation pressure on the reflecting surface / pressure on the absorbing surface; incident-wave momentum density in the two setups)?",
+  "options": [
+   "$2,\\ 1$",
+   "$1,\\ 2$",
+   "$2,\\ 2$",
+   "$\\dfrac{1}{2},\\ 1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$p_{\\text{abs}}=\\dfrac{I}{c},\\quad p_{\\text{refl}}=\\dfrac{2I}{c}$\n$\\dfrac{p_{\\text{refl}}}{p_{\\text{abs}}}=2$\n$u_{\\text{momentum}}=\\dfrac{I}{c^2}$ for the incident wave in either setup; ratio $=1$.",
+  "distractor_notes": "B: interchanges the pressure and momentum-density comparisons. C: incorrectly doubles the incident-wave momentum density for reflection. D: uses the wrong pressure ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

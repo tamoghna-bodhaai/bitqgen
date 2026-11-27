@@ -1,0 +1,68 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Breaking stress",
+  "archetype": "single-formula numerical",
+  "brief": "Find minimum radius of a wire to support a given load without exceeding breaking stress; one-step stress = F/A.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:22",
+   "2022:19",
+   "2021:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "The breaking stress of a steel wire is $1.0 \\times 10^{9}$ N m$^{-2}$. The minimum radius of the wire required to support a load of $3140$ N without breaking is (Take $\\pi = 3.14$)",
+ "options": [
+  "0.5 mm",
+  "3.14 mm",
+  "2.0 mm",
+  "1.0 mm"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A = F/σ = 3140/(1.0 × 10⁹) = 3.14 × 10⁻⁶ m². Thus r = √(A/π) = 1.0 × 10⁻³ m = 1.0 mm.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Stress $= \\dfrac{F}{A} \\Rightarrow A = \\dfrac{F}{\\text{breaking stress}} = \\dfrac{3140}{1.0\\times 10^{9}} = 3.14 \\times 10^{-6}$ m$^2$. For a wire, $A = \\pi r^2$, so $r = \\sqrt{\\dfrac{A}{\\pi}} = \\sqrt{\\dfrac{3.14 \\times 10^{-6}}{3.14}} = 10^{-3}$ m $= 1.0$ mm.\n\nIndependent check: A = F/σ = 3140/(1.0 × 10⁹) = 3.14 × 10⁻⁶ m². Thus r = √(A/π) = 1.0 × 10⁻³ m = 1.0 mm.",
+ "solution": "Breaking stress, $\\sigma=F/A$, so the minimum cross-sectional area is\n$$A=\\frac{3140}{1.0\\times10^9}=3.14\\times10^{-6}\\text{ m}^2.$$\nFor a circular wire, $A=\\pi r^2$, hence $r=\\sqrt{A/\\pi}=10^{-3}\\text{ m}=1.0\\text{ mm}$. (D)",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The breaking stress of a steel wire is $1.0 \\times 10^{9}$ N m$^{-2}$. The minimum radius of the wire required to support a load of $3140$ N without breaking is (Take $\\pi = 3.14$)",
+  "options": [
+   "0.5 mm",
+   "1.0 mm",
+   "2.0 mm",
+   "3.14 mm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Stress $= \\dfrac{F}{A} \\Rightarrow A = \\dfrac{F}{\\text{breaking stress}} = \\dfrac{3140}{1.0\\times 10^{9}} = 3.14 \\times 10^{-6}$ m$^2$. For a wire, $A = \\pi r^2$, so $r = \\sqrt{\\dfrac{A}{\\pi}} = \\sqrt{\\dfrac{3.14 \\times 10^{-6}}{3.14}} = 10^{-3}$ m $= 1.0$ mm.",
+  "distractor_notes": "A: 0.5 mm could be half the radius from a miscalculation. C: 2.0 mm might come from forgetting to take the square root. D: 3.14 mm might come from taking area as radius."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "Indeterminate sin-over-linear form; evaluate using the standard limit sin θ/θ after a small factoring step.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:98",
+   "2021:107",
+   "2024s1:106"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin 5x-\\sin 2x}{2x+\\sin 3x}$.",
+ "options": [
+  "$\\dfrac35$",
+  "$1$",
+  "$\\dfrac75$",
+  "$\\dfrac53$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using sin(kx) ~ kx as x→0, the numerator is ~3x and the denominator is ~5x, so the limit is 3/5.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin 5x-\\sin 2x}{2x+\\sin 3x}=\\dfrac{5-2}{2+3}=\\dfrac35$.\n\nIndependent check: Using sin(kx) ~ kx as x→0, the numerator is ~3x and the denominator is ~5x, so the limit is 3/5.",
+ "solution": "Using $\\sin(kx)\\sim kx$ as $x\\to0$, \n$$\\lim_{x\\to0}\\frac{\\sin5x-\\sin2x}{2x+\\sin3x}=\\frac{5-2}{2+3}=\\frac35.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin 5x-\\sin 2x}{2x+\\sin 3x}$.",
+  "options": [
+   "$\\dfrac35$",
+   "$1$",
+   "$\\dfrac75$",
+   "$\\dfrac53$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin 5x-\\sin 2x}{2x+\\sin 3x}=\\dfrac{5-2}{2+3}=\\dfrac35$.",
+  "distractor_notes": "B: Omits the $2x$ term in the denominator's limiting coefficient.\nC: Adds, rather than subtracts, the numerator's coefficients.\nD: Takes the reciprocal of the limit."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

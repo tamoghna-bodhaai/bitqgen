@@ -1,0 +1,76 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Hydrogen spectrum",
+  "archetype": "diagram identification",
+  "brief": "Show an energy-level diagram of the hydrogen atom with several downward transitions marked; identify which arrow belongs to the Balmer/Lyman series and rank the emitted wavelengths.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:36",
+   "2026s1:34",
+   "2021:66"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the downward transitions marked as shown in the figure, which statement about the series and emitted wavelengths is correct?",
+ "options": [
+  "A and D are Balmer; B and C are Lyman; $\\lambda_D>\\lambda_A>\\lambda_B>\\lambda_C$.",
+  "A and D are Balmer; B and C are Lyman; $\\lambda_A>\\lambda_D>\\lambda_B>\\lambda_C$.",
+  "A and B are Balmer; C and D are Lyman; $\\lambda_D>\\lambda_A>\\lambda_B>\\lambda_C$.",
+  "A and D are Balmer; B and C are Lyman; $\\lambda_D>\\lambda_A>\\lambda_C>\\lambda_B$."
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q057_stem_v0.png",
+  "width_pct": 45,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From the figure: A is 4→2, D is 3→2, B is 3→1, and C is 4→1. Using ΔE/R_H = 1/n_f² − 1/n_i² gives ΔE_D < ΔE_A < ΔE_B < ΔE_C, so λ_D > λ_A > λ_B > λ_C.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Transitions ending at $n=1$ are Lyman; those ending at $n=2$ are Balmer.\\n$\\Delta E\\propto\\dfrac{1}{n_f^2}-\\dfrac{1}{n_i^2}$ and $\\lambda\\propto\\dfrac{1}{\\Delta E}$.\\nFor D, A, B, C the energy gaps increase in that order.\\nTherefore $\\lambda_D>\\lambda_A>\\lambda_B>\\lambda_C$.\n\nIndependent check: From the figure: A is 4→2, D is 3→2, B is 3→1, and C is 4→1. Using ΔE/R_H = 1/n_f² − 1/n_i² gives ΔE_D < ΔE_A < ΔE_B < ΔE_C, so λ_D > λ_A > λ_B > λ_C.",
+ "solution": "Transitions ending at $n=1$ belong to the Lyman series, while those ending at $n=2$ belong to the Balmer series. Thus, A and D are Balmer, and B and C are Lyman.\n$$\\Delta E\\propto \\frac{1}{n_f^2}-\\frac{1}{n_i^2},\\qquad \\lambda\\propto\\frac{1}{\\Delta E}$$\nThe energy gaps increase in the order $D,A,B,C$, so the wavelengths decrease in that order: $\\lambda_D>\\lambda_A>\\lambda_B>\\lambda_C$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the downward transitions marked as shown in the figure, which statement about the series and emitted wavelengths is correct?",
+  "options": [
+   "A and D are Balmer; B and C are Lyman; $\\lambda_D>\\lambda_A>\\lambda_B>\\lambda_C$.",
+   "A and D are Balmer; B and C are Lyman; $\\lambda_A>\\lambda_D>\\lambda_B>\\lambda_C$.",
+   "A and B are Balmer; C and D are Lyman; $\\lambda_D>\\lambda_A>\\lambda_B>\\lambda_C$.",
+   "A and D are Balmer; B and C are Lyman; $\\lambda_D>\\lambda_A>\\lambda_C>\\lambda_B$."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw four horizontal hydrogen energy levels, ordered vertically from bottom to top as $n=1$, $n=2$, $n=3$, and $n=4$. Draw four downward arrows, separated horizontally so each is distinct: A starts at $n=4$ and ends at $n=2$; B starts at $n=3$ and ends at $n=1$; C starts at $n=4$ and ends at $n=1$; D starts at $n=3$ and ends at $n=2$. Put each letter beside its arrow. Show arrowheads at the lower, final levels. Include no other transitions or series labels.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "Transitions ending at $n=1$ are Lyman; those ending at $n=2$ are Balmer.\\n$\\Delta E\\propto\\dfrac{1}{n_f^2}-\\dfrac{1}{n_i^2}$ and $\\lambda\\propto\\dfrac{1}{\\Delta E}$.\\nFor D, A, B, C the energy gaps increase in that order.\\nTherefore $\\lambda_D>\\lambda_A>\\lambda_B>\\lambda_C$.",
+  "distractor_notes": "B: Reverses the wavelength order of the two Balmer transitions.\nC: Classifies transitions by their initial rather than final level.\nD: Reverses the wavelength order of the two Lyman transitions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

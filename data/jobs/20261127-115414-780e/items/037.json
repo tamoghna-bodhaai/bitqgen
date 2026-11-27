@@ -1,0 +1,68 @@
+{
+ "qno": 37,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 37,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Reducing sugars",
+  "archetype": "statement evaluation",
+  "brief": "Two statements about reducing/non-reducing sugars and glycosidic linkage; decide if each is true and whether the second explains the first.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:52",
+   "2021:54",
+   "2026s2:37"
+  ]
+ },
+ "status": "ok",
+ "stem": "Statement I: Sucrose is a non-reducing sugar. Statement II: The glycosidic linkage in sucrose is formed between the anomeric carbon atoms of alpha-D-glucose and beta-D-fructose. Choose the correct option.",
+ "options": [
+  "Both Statement I and Statement II are true, and Statement II is the correct explanation of Statement I.",
+  "Both Statement I and Statement II are true, but Statement II is not the correct explanation of Statement I.",
+  "Statement I is true, Statement II is false.",
+  "Statement I is false, Statement II is true."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Sucrose links the anomeric C1 of α-D-glucose to the anomeric C2 of β-D-fructose. With both anomeric carbons engaged, neither can open to a free carbonyl form, so sucrose is non-reducing. Statement II correctly explains Statement I.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Sucrose has a glycosidic bond between C1 of alpha-D-glucopyranose and C2 of beta-D-fructofuranose, both of which are anomeric carbons. This locks both reducing ends, so no free aldehyde or ketone group can open; hence sucrose is non-reducing. Therefore Statement II correctly explains Statement I.\n\nIndependent check: Sucrose links the anomeric C1 of α-D-glucose to the anomeric C2 of β-D-fructose. With both anomeric carbons engaged, neither can open to a free carbonyl form, so sucrose is non-reducing. Statement II correctly explains Statement I.",
+ "solution": "Sucrose forms a glycosidic bond between the anomeric C1 of α-D-glucose and anomeric C2 of β-D-fructose.\n$$\\text{Both anomeric carbons are engaged} \\Rightarrow \\text{no free carbonyl form} \\Rightarrow \\text{sucrose is non-reducing}$$\nThus, both statements are true, and Statement II correctly explains Statement I.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Statement I: Sucrose is a non-reducing sugar. Statement II: The glycosidic linkage in sucrose is formed between the anomeric carbon atoms of alpha-D-glucose and beta-D-fructose. Choose the correct option.",
+  "options": [
+   "Both Statement I and Statement II are true, and Statement II is the correct explanation of Statement I.",
+   "Both Statement I and Statement II are true, but Statement II is not the correct explanation of Statement I.",
+   "Statement I is true, Statement II is false.",
+   "Statement I is false, Statement II is true."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Sucrose has a glycosidic bond between C1 of alpha-D-glucopyranose and C2 of beta-D-fructofuranose, both of which are anomeric carbons. This locks both reducing ends, so no free aldehyde or ketone group can open; hence sucrose is non-reducing. Therefore Statement II correctly explains Statement I.",
+  "distractor_notes": "B misses the causal link between the linkage and non-reducing nature; C assumes only one anomeric carbon is involved in the glycosidic linkage; D assumes sucrose reduces Fehling's solution."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

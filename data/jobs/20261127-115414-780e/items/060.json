@@ -1,0 +1,76 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Bohr energy for hydrogen-like ions",
+  "archetype": "single-formula numerical",
+  "brief": "Compute ionisation potential/radius/energy for hydrogen-like ion (He+, Li2+) using Bohr formula scaling with Z and n.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:34",
+   "2025s1:39",
+   "2023s2:53"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a hydrogen-like ion, the electron transition from \\(n = 2\\) to \\(n = 1\\) emits a photon of wavelength \\(30.4\\ \\text{nm}\\) as shown in the figure. Given \\(hc = 1240\\ \\text{eV\\cdot nm}\\), the ionisation energy of the ion in the ground state is:",
+ "options": [
+  "13.6 eV",
+  "54.4 eV",
+  "40.8 eV",
+  "27.2 eV"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q060_stem_v0.png",
+  "width_pct": 50,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Photon energy: 1240/30.4 ≈ 40.8 eV. The n=2→1 transition releases 3/4 of the ground-state ionisation energy, so it is (4/3)(40.8) ≈ 54.4 eV.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Photon energy \\(\\Delta E = hc/\\lambda = 1240/30.4 = 40.8\\ \\text{eV}\\). For hydrogen-like ion, \\(\\Delta E_{2\\to1} = 13.6\\,Z^2(1 - 1/4) = \\frac{3}{4}\\times 13.6\\,Z^2\\). Solving: \\(Z^2 = 40.8 \\times 4 / (13.6 \\times 3) = 4\\), so \\(Z = 2\\). Ground state ionisation energy \\(= 13.6\\,Z^2 = 54.4\\ \\text{eV}\\).\n\nIndependent check: Photon energy: 1240/30.4 ≈ 40.8 eV. The n=2→1 transition releases 3/4 of the ground-state ionisation energy, so it is (4/3)(40.8) ≈ 54.4 eV.",
+ "solution": "The photon energy is $\\Delta E=hc/\\lambda=1240/30.4=40.8\\,\\text{eV}$. For a hydrogen-like ion, the $2\\to1$ transition releases $\\tfrac34$ of its ground-state ionisation energy:\n$$E_{\\text{ion}}=\\frac{4}{3}\\Delta E=\\frac{4}{3}(40.8)=54.4\\,\\text{eV}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a hydrogen-like ion, the electron transition from \\(n = 2\\) to \\(n = 1\\) emits a photon of wavelength \\(30.4\\ \\text{nm}\\) as shown in the figure. Given \\(hc = 1240\\ \\text{eV\\cdot nm}\\), the ionisation energy of the ion in the ground state is:",
+  "options": [
+   "13.6 eV",
+   "27.2 eV",
+   "40.8 eV",
+   "54.4 eV"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": {
+   "kind": "chem",
+   "description": "A schematic diagram of a hydrogen-like ion. At the centre, a small circle labelled 'Nucleus (charge +Ze)' is shown. Around it, two concentric dashed circular orbits: the inner orbit is labelled 'n = 1', the outer labelled 'n = 2'. A small filled dot on the outer orbit represents the electron. An arrow points from the outer to the inner orbit. A wavy arrow directed outward from the transition point is labelled 'λ = 30.4 nm'.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "Photon energy \\(\\Delta E = hc/\\lambda = 1240/30.4 = 40.8\\ \\text{eV}\\). For hydrogen-like ion, \\(\\Delta E_{2\\to1} = 13.6\\,Z^2(1 - 1/4) = \\frac{3}{4}\\times 13.6\\,Z^2\\). Solving: \\(Z^2 = 40.8 \\times 4 / (13.6 \\times 3) = 4\\), so \\(Z = 2\\). Ground state ionisation energy \\(= 13.6\\,Z^2 = 54.4\\ \\text{eV}\\).",
+  "distractor_notes": "A: forgetting Z^2 scaling, using hydrogen ground state; B: taking electron energy in n=2 for Z=2; C: using the given transition energy instead of ionisation energy."
+ },
+ "author_model": "deepseek/deepseek-v4-pro"
+}

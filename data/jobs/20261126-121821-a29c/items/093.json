@@ -1,0 +1,67 @@
+{
+ "qno": 93,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 93,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Infinite GP with logs",
+  "archetype": "take logs",
+  "brief": "Given an infinite GP sum relation like a + ar + … = expression in a, take logs to find the common ratio r.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:117",
+   "2024s1:109",
+   "2025s1:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "If for $a > 0$ and $|r| < 1$, the terms of an infinite geometric progression satisfy $e^{a + ar + ar^2 + ar^3 + \\text{...}\\\\\\infty} = (e^4)^a$, then the common ratio $r$ is equal to",
+ "options": [
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{3}{4}$",
+  "$\\dfrac{4}{5}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "Sum of infinite GP = a/(1−r). Equation e^{a/(1−r)} = e^{4a} gives a/(1−r) = 4a. Since a>0, 1/(1−r)=4 ⇒ 1−r=1/4 ⇒ r=3/4, which satisfies |r|<1. Verified numerically for a=2.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "We are given the relation:\n$$e^{a + ar + ar^2 + ar^3 + \\dots\\infty} = (e^4)^a = e^{4a}$$\nTaking the natural logarithm on both sides:\n$$a + ar + ar^2 + ar^3 + \\dots\\infty = 4a$$\nSince $|r| < 1$, the sum of the infinite geometric series with first term $a$ and common ratio $r$ is:\n$$\\sum_{n=0}^{\\infty} a r^n = \\dfrac{a}{1 - r}$$\nSubstituting this into the equation:\n$$\\dfrac{a}{1 - r} = 4a$$\nSince $a > 0$, we divide both sides by $a$:\n$$\\dfrac{1}{1 - r} = 4$$\n$$1 - r = \\dfrac{1}{4}$$\n$$r = 1 - \\dfrac{1}{4} = \\dfrac{3}{4}$$\nThus, the correct option is C.\n\nIndependent check: Sum of infinite GP = a/(1−r). Equation e^{a/(1−r)} = e^{4a} gives a/(1−r) = 4a. Since a>0, 1/(1−r)=4 ⇒ 1−r=1/4 ⇒ r=3/4, which satisfies |r|<1. Verified numerically for a=2.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "If for $a > 0$ and $|r| < 1$, the terms of an infinite geometric progression satisfy $e^{a + ar + ar^2 + ar^3 + \\text{...}\\\\\\infty} = (e^4)^a$, then the common ratio $r$ is equal to",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{3}{4}$",
+   "$\\dfrac{4}{5}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "working": "We are given the relation:\n$$e^{a + ar + ar^2 + ar^3 + \\dots\\infty} = (e^4)^a = e^{4a}$$\nTaking the natural logarithm on both sides:\n$$a + ar + ar^2 + ar^3 + \\dots\\infty = 4a$$\nSince $|r| < 1$, the sum of the infinite geometric series with first term $a$ and common ratio $r$ is:\n$$\\sum_{n=0}^{\\infty} a r^n = \\dfrac{a}{1 - r}$$\nSubstituting this into the equation:\n$$\\dfrac{a}{1 - r} = 4a$$\nSince $a > 0$, we divide both sides by $a$:\n$$\\dfrac{1}{1 - r} = 4$$\n$$1 - r = \\dfrac{1}{4}$$\n$$r = 1 - \\dfrac{1}{4} = \\dfrac{3}{4}$$\nThus, the correct option is C.",
+  "distractor_notes": "A: Comes from solving $1 - r = 4$ erroneously or equating $r = 1/4$ directly from $1/(1-r) = 4$.\nB: Corresponds to using $e^{2a}$ on the RHS instead of $e^{4a}$, giving $1/(1-r) = 2 \\implies r = 1/2$.\nD: Corresponds to an arithmetic slip in inverted fraction $\\frac{1}{1-r} = 5 \\implies r = 4/5$, or misreading $(e^4)^a$ as having power 5.",
+  "figure": null,
+  "difficulty_estimate": 1
+ }
+}

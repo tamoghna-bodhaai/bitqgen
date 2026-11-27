@@ -1,0 +1,67 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution",
+  "archetype": "direct computation",
+  "brief": "Solve a simple trigonometric equation of the form sin θ = given value and write the general solution.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:92",
+   "2025s2:107",
+   "2025s1:127"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of the trigonometric equation $2\\sin\\left(2\\theta - \\dfrac{\\pi}{4}\\right) = 1$, where $n \\in \\mathbb{Z}$, is",
+ "options": [
+  "$\\dfrac{n\\pi}{2} - \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{12}$",
+  "$\\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{12}$",
+  "$\\dfrac{n\\pi}{2} + \\dfrac{\\pi}{4} + (-1)^n \\dfrac{\\pi}{12}$",
+  "$\\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{6}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "qwen/qwen4-max",
+   "working": "sin(2θ−π/4)=1/2 ⇒ 2θ−π/4 = nπ+(−1)^n π/6 ⇒ θ = nπ/2 + π/8 + (−1)^n π/12. Numerical check confirms option B satisfies the equation for all tested n; A, C, D fail.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Given equation:\n$$2\\sin\\left(2\\theta - \\dfrac{\\pi}{4}\\right) = 1$$\n$$\\implies \\sin\\left(2\\theta - \\dfrac{\\pi}{4}\\right) = \\dfrac{1}{2}$$\nSince $\\sin\\left(\\dfrac{\\pi}{6}\\right) = \\dfrac{1}{2}$, the general solution of $\\sin X = \\sin\\alpha$ is $X = n\\pi + (-1)^n \\alpha$, where $n \\in \\mathbb{Z}$.\n\nSetting $X = 2\\theta - \\dfrac{\\pi}{4}$ and $\\alpha = \\dfrac{\\pi}{6}$:\n$$2\\theta - \\dfrac{\\pi}{4} = n\\pi + (-1)^n \\dfrac{\\pi}{6}$$\n$$2\\theta = n\\pi + \\dfrac{\\pi}{4} + (-1)^n \\dfrac{\\pi}{6}$$\nDividing by $2$:\n$$\\theta = \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{12}$$\n\nIndependent check: sin(2θ−π/4)=1/2 ⇒ 2θ−π/4 = nπ+(−1)^n π/6 ⇒ θ = nπ/2 + π/8 + (−1)^n π/12. Numerical check confirms option B satisfies the equation for all tested n; A, C, D fail.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of the trigonometric equation $2\\sin\\left(2\\theta - \\dfrac{\\pi}{4}\\right) = 1$, where $n \\in \\mathbb{Z}$, is",
+  "options": [
+   "$\\dfrac{n\\pi}{2} - \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{12}$",
+   "$\\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{12}$",
+   "$\\dfrac{n\\pi}{2} + \\dfrac{\\pi}{4} + (-1)^n \\dfrac{\\pi}{12}$",
+   "$\\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{6}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "working": "Given equation:\n$$2\\sin\\left(2\\theta - \\dfrac{\\pi}{4}\\right) = 1$$\n$$\\implies \\sin\\left(2\\theta - \\dfrac{\\pi}{4}\\right) = \\dfrac{1}{2}$$\nSince $\\sin\\left(\\dfrac{\\pi}{6}\\right) = \\dfrac{1}{2}$, the general solution of $\\sin X = \\sin\\alpha$ is $X = n\\pi + (-1)^n \\alpha$, where $n \\in \\mathbb{Z}$.\n\nSetting $X = 2\\theta - \\dfrac{\\pi}{4}$ and $\\alpha = \\dfrac{\\pi}{6}$:\n$$2\\theta - \\dfrac{\\pi}{4} = n\\pi + (-1)^n \\dfrac{\\pi}{6}$$\n$$2\\theta = n\\pi + \\dfrac{\\pi}{4} + (-1)^n \\dfrac{\\pi}{6}$$\nDividing by $2$:\n$$\\theta = \\dfrac{n\\pi}{2} + \\dfrac{\\pi}{8} + (-1)^n \\dfrac{\\pi}{12}$$",
+  "distractor_notes": "Option A encodes a sign error when moving $-\\dfrac{\\pi}{4}$ to the right-hand side.\nOption C comes from forgetting to divide the phase shift $\\dfrac{\\pi}{4}$ by $2$ when solving for $\\theta$.\nOption D results from confusing the special angles of sine and cosine, using $\\sin\\left(\\dfrac{\\pi}{3}\\right) = \\dfrac{1}{2}$ to obtain $\\alpha = \\dfrac{\\pi}{3}$ and $\\dfrac{\\alpha}{2} = \\dfrac{\\pi}{6}$.",
+  "figure": null,
+  "difficulty_estimate": 2
+ }
+}
