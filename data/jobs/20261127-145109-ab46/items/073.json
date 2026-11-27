@@ -1,0 +1,70 @@
+{
+ "qno": 73,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 73,
+  "section": "Chemistry",
+  "chapter": "States of Matter",
+  "subtopic": "Density from ideal gas law",
+  "archetype": "ratio equation",
+  "brief": "Compute density of a gas at given T and P using d = PM/RT, or compare effusion/density ratio of two gases.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:48",
+   "2025s1:50",
+   "2024s2:59"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "What is the density of $\\text{NO}$ at $0.82$ atm and $300$ K? Take $R=0.082\\text{ L atm K}^{-1}\\text{mol}^{-1}$.",
+ "options": [
+  "$0.50$ g L$^{-1}$",
+  "$2.00$ g L$^{-1}$",
+  "$1.50$ g L$^{-1}$",
+  "$1.00$ g L$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using $d=PM/RT$: $d=(0.82)(30)/[(0.082)(300)]=1.00\\text{ g L}^{-1}$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$d=\\dfrac{PM}{RT}=\\dfrac{(0.82)(30)}{(0.082)(300)}=1.00\\text{ g L}^{-1}$\n\nIndependent check: Using $d=PM/RT$: $d=(0.82)(30)/[(0.082)(300)]=1.00\\text{ g L}^{-1}$.",
+ "solution": "For an ideal gas, density is $d=\\dfrac{PM}{RT}$.\n$$d=\\dfrac{(0.82)(30)}{(0.082)(300)}=1.00\\text{ g L}^{-1}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "What is the density of $\\text{NO}$ at $0.82$ atm and $300$ K? Take $R=0.082\\text{ L atm K}^{-1}\\text{mol}^{-1}$.",
+  "options": [
+   "$0.50$ g L$^{-1}$",
+   "$1.00$ g L$^{-1}$",
+   "$1.50$ g L$^{-1}$",
+   "$2.00$ g L$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$d=\\dfrac{PM}{RT}=\\dfrac{(0.82)(30)}{(0.082)(300)}=1.00\\text{ g L}^{-1}$",
+  "distractor_notes": "A: halves the calculated density. C: uses an incorrect molar mass or pressure. D: overestimates the density."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

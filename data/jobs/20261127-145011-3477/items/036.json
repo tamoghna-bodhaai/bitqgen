@@ -1,0 +1,60 @@
+{
+ "qno": 36,
+ "section": "Physics",
+ "slot": {
+  "qno": 36,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Circular motion with friction",
+  "archetype": "force resolution",
+  "brief": "Block or knot under three forces shown in a diagram (e.g. hanging weight with two ropes at angles); resolve components to find an unknown tension; diagram required.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:4",
+   "2021:24",
+   "2024s1:8"
+  ],
+  "origin": "direct",
+  "bank_ref": "g17a0d8353176"
+ },
+ "status": "ok",
+ "stem": "A car moves on a level circular road of radius $40$ m. The coefficient of friction between the tyres and road is $0.50$. As shown in the figure, what is the maximum speed without slipping? Take $g = 10$ m s$^{-2}$.",
+ "options": [
+  "$10$ m s$^{-1}$",
+  "$20$ m s$^{-1}$",
+  "$10\\sqrt{2}$ m s$^{-1}$",
+  "$20\\sqrt{2}$ m s$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q036_bank_stem.png",
+  "kind": "diagram",
+  "width_pct": 50
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g17a0d8353176 (verified in job 20261127-132429-aa8a)"
+ ],
+ "working": "At the limiting speed, $f=\\mu N$ and $N=mg$.\n$\\dfrac{mv^2}{r}=f=\\mu mg$\n$v=\\sqrt{\\mu rg}=\\sqrt{0.50(40)(10)}=10\\sqrt{2}$ m s$^{-1}$\n\nIndependent check: On a level road, friction supplies centripetal force: μmg = mv²/r. Thus v = √(μgr) = √(0.50 × 10 × 40) = 10√2 m s⁻¹.",
+ "solution": "On a level road, friction provides the centripetal force; at the limiting speed, $f=\\mu mg$.\n$$\\frac{mv^2}{r}=\\mu mg \\quad\\Rightarrow\\quad v=\\sqrt{\\mu rg}=\\sqrt{0.50\\times40\\times10}=10\\sqrt{2}\\ \\text{m s}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g17a0d8353176",
+ "author_model": "openai/gpt-6-luna-pro"
+}

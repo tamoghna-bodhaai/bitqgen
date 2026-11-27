@@ -1,0 +1,71 @@
+{
+ "qno": 89,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 89,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS)",
+  "archetype": "para jumble (fixed ends)",
+  "brief": "PQRS para jumble where first and last sentences (P and S positions) are given; test taker orders the two middle sentences; short narrative paragraph for easy level.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:95",
+   "2024s2:70",
+   "2025s2:69"
+  ],
+  "origin": "variant",
+  "bank_ref": "gcab508d38991"
+ },
+ "status": "ok",
+ "stem": "**1.** Maya went to the library to return a book and borrow another.\n**P.** She placed the book on the counter and handed it to the librarian.\n**Q.** The librarian checked it in and gave Maya her library card back.\n**R.** Maya then selected a mystery novel from a nearby shelf.\n**S.** After borrowing the novel, she thanked the librarian and left.\n**6.** She walked home with the new book in her bag.\n\nChoose the correct order of the middle sentences.",
+ "options": [
+  "Q - P - R - S",
+  "R - P - Q - S",
+  "P - R - S - Q",
+  "P - Q - R - S"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "P returns the book; Q completes the check-in; R selects a novel; S borrows it and leaves. Thus the order is P-Q-R-S.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "P must come before Q: the librarian can check in the returned book only after Maya hands it over. R follows the return and precedes S, which refers to borrowing the novel. Thus P-Q-R-S. The other options disrupt these dependencies.\n\nIndependent check: P returns the book; Q completes the check-in; R selects a novel; S borrows it and leaves. Thus the order is P-Q-R-S.",
+ "solution": "Maya must hand over the returned book before the librarian checks it in, so $P$ precedes $Q$. She then selects and borrows the novel, giving the order $P-Q-R-S$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "**1.** Maya went to the library to return a book and borrow another.\n**P.** She placed the book on the counter and handed it to the librarian.\n**Q.** The librarian checked it in and gave Maya her library card back.\n**R.** Maya then selected a mystery novel from a nearby shelf.\n**S.** After borrowing the novel, she thanked the librarian and left.\n**6.** She walked home with the new book in her bag.\n\nChoose the correct order of the middle sentences.",
+  "options": [
+   "P - Q - R - S",
+   "R - P - Q - S",
+   "P - R - S - Q",
+   "Q - P - R - S"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "P must come before Q: the librarian can check in the returned book only after Maya hands it over. R follows the return and precedes S, which refers to borrowing the novel. Thus P-Q-R-S. The other options disrupt these dependencies.",
+  "distractor_notes": "B puts selecting the novel before returning the book and getting the card back. C places the check-in after Maya has left. D has the librarian check in the book before Maya hands it over."
+ },
+ "variant_of": "gcab508d38991",
+ "author_model": "openai/gpt-6-luna"
+}

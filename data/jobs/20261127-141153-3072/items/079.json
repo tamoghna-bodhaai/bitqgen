@@ -1,0 +1,68 @@
+{
+ "qno": 79,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 79,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Variation of conductivity with concentration",
+  "archetype": "conceptual",
+  "brief": "Compare change in conductivity and molar conductivity with dilution for strong vs weak electrolyte; pick the correct trend explanation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:42",
+   "2025s2:59",
+   "2023s2:49"
+  ]
+ },
+ "status": "ok",
+ "stem": "On dilution, how do conductivity and molar conductivity change for strong and weak electrolytes?",
+ "options": [
+  "Conductivity decreases for both; molar conductivity increases slightly for a strong electrolyte and sharply for a weak one.",
+  "Conductivity increases for both; molar conductivity increases slightly for a strong electrolyte and sharply for a weak one.",
+  "Conductivity decreases for both; molar conductivity increases sharply for a strong electrolyte and slightly for a weak one.",
+  "Conductivity decreases for both; molar conductivity decreases for both."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "On dilution, conductivity decreases for both electrolytes because there are fewer ions per unit volume. Molar conductivity increases slightly for strong electrolytes and sharply for weak electrolytes due to increased ionization.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "On dilution, fewer ions occupy a unit volume, so conductivity decreases for both.\n$\\Lambda_m=\\dfrac{\\kappa}{c}$ increases on dilution.\nThe increase is modest for strong electrolytes and pronounced for weak electrolytes due to increased ionisation.\n\nIndependent check: On dilution, conductivity decreases for both electrolytes because there are fewer ions per unit volume. Molar conductivity increases slightly for strong electrolytes and sharply for weak electrolytes due to increased ionization.",
+ "solution": "On dilution, the number of ions per unit volume decreases, so conductivity decreases for both electrolytes. Since $\\Lambda_m=\\dfrac{\\kappa}{c}$, molar conductivity increases slightly for strong electrolytes and sharply for weak electrolytes due to increased ionisation.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "On dilution, how do conductivity and molar conductivity change for strong and weak electrolytes?",
+  "options": [
+   "Conductivity decreases for both; molar conductivity increases slightly for a strong electrolyte and sharply for a weak one.",
+   "Conductivity increases for both; molar conductivity increases slightly for a strong electrolyte and sharply for a weak one.",
+   "Conductivity decreases for both; molar conductivity increases sharply for a strong electrolyte and slightly for a weak one.",
+   "Conductivity decreases for both; molar conductivity decreases for both."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "On dilution, fewer ions occupy a unit volume, so conductivity decreases for both.\n$\\Lambda_m=\\dfrac{\\kappa}{c}$ increases on dilution.\nThe increase is modest for strong electrolytes and pronounced for weak electrolytes due to increased ionisation.",
+  "distractor_notes": "B: assumes conductivity rises as the solution is diluted. C: reverses the relative size of the molar-conductivity increase. D: assumes molar conductivity decreases on dilution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

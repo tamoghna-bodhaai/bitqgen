@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "The equilibrium constant for the reaction $\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)$ is $K_c = 0.2$ at a certain temperature. What is the value of $K_c$ for the reaction $4\\text{NO}_2(g) \\rightleftharpoons 2\\text{N}_2\\text{O}_4(g)$ at the same temperature?",
+ "stem": "For $\\text{PCl}_3(g)+\\text{Cl}_2(g)\\rightleftharpoons\\text{PCl}_5(g)$, $K_c=0.5$. What is $K_c$ for $2\\text{PCl}_5(g)\\rightleftharpoons2\\text{PCl}_3(g)+2\\text{Cl}_2(g)$?",
  "options": [
-  "$0.04$",
-  "$5$",
-  "$10$",
-  "$25$"
+  "$0.25$",
+  "$0.5$",
+  "$2$",
+  "$4$"
  ],
  "answer": "D",
  "figure": null,
@@ -34,34 +34,35 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Reversing the reaction gives K' = 1/Kc = 1/0.2 = 5. Doubling the coefficients squares it: K'' = 5^2 = 25.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Reversing the reaction gives K_c=1/0.5=2. Doubling it squares the constant: K_c=2^2=4.",
    "answer": "D",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "For the given initial reaction:\n$$\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g), \\quad K_c = \\dfrac{[\\text{NO}_2]^2}{[\\text{N}_2\\text{O}_4]} = 0.2$$\n\nReversing the reaction gives:\n$$2\\text{NO}_2(g) \\rightleftharpoons \\text{N}_2\\text{O}_4(g), \\quad K_c' = \\dfrac{1}{K_c} = \\dfrac{1}{0.2} = 5$$\n\nMultiplying the reversed reaction by a factor of $2$ gives:\n$$4\\text{NO}_2(g) \\rightleftharpoons 2\\text{N}_2\\text{O}_4(g), \\quad K_c'' = (K_c')^2 = 5^2 = 25$$\n\nIndependent check: Reversing the reaction gives K' = 1/Kc = 1/0.2 = 5. Doubling the coefficients squares it: K'' = 5^2 = 25.",
+ "working": "Reversing the reaction: $K_c' = \\dfrac{1}{0.5}=2$.\nMultiplying the reversed reaction by $2$: $K_c''=(K_c')^2=2^2=4$.\n\nIndependent check: Reversing the reaction gives K_c=1/0.5=2. Doubling it squares the constant: K_c=2^2=4.",
  "solution": "",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "The equilibrium constant for the reaction $\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)$ is $K_c = 0.2$ at a certain temperature. What is the value of $K_c$ for the reaction $4\\text{NO}_2(g) \\rightleftharpoons 2\\text{N}_2\\text{O}_4(g)$ at the same temperature?",
+  "stem": "For $\\text{PCl}_3(g)+\\text{Cl}_2(g)\\rightleftharpoons\\text{PCl}_5(g)$, $K_c=0.5$. What is $K_c$ for $2\\text{PCl}_5(g)\\rightleftharpoons2\\text{PCl}_3(g)+2\\text{Cl}_2(g)$?",
   "options": [
-   "$0.04$",
-   "$5$",
-   "$10$",
-   "$25$"
+   "$0.25$",
+   "$0.5$",
+   "$2$",
+   "$4$"
   ],
   "option_smiles": null,
   "answer": "D",
-  "working": "For the given initial reaction:\n$$\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g), \\quad K_c = \\dfrac{[\\text{NO}_2]^2}{[\\text{N}_2\\text{O}_4]} = 0.2$$\n\nReversing the reaction gives:\n$$2\\text{NO}_2(g) \\rightleftharpoons \\text{N}_2\\text{O}_4(g), \\quad K_c' = \\dfrac{1}{K_c} = \\dfrac{1}{0.2} = 5$$\n\nMultiplying the reversed reaction by a factor of $2$ gives:\n$$4\\text{NO}_2(g) \\rightleftharpoons 2\\text{N}_2\\text{O}_4(g), \\quad K_c'' = (K_c')^2 = 5^2 = 25$$",
-  "distractor_notes": "$0.04$ comes from squaring $K_c$ for doubling the coefficients but forgetting to invert it for reversing the reaction ($(0.2)^2 = 0.04$).\n$5$ comes from inverting $K_c$ for reversing the reaction but forgetting to square it for the factor of $2$ ($1/0.2 = 5$).\n$10$ comes from inverting $K_c$ and erroneously multiplying by $2$ instead of raising to the power of $2$ ($2 \\times 5 = 10$).",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Reversing the reaction: $K_c' = \\dfrac{1}{0.5}=2$.\nMultiplying the reversed reaction by $2$: $K_c''=(K_c')^2=2^2=4$.",
+  "distractor_notes": "A: squares the given $K_c$ without reversing. B: uses the given value unchanged. C: reverses the reaction but forgets to square $K_c$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

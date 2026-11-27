@@ -1,0 +1,68 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Trigonometric integrals",
+  "archetype": "substitution integral",
+  "brief": "Evaluate a straightforward definite integral of a standard trig/algebraic form using known antiderivatives.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:143",
+   "2026s2:130",
+   "2024s2:92"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/4}\\frac{\\sin 2x}{1+\\cos^2 x}\\,dx$.",
+ "options": [
+  "$\\dfrac{1}{2}\\ln\\!\\left(\\dfrac{4}{3}\\right)$",
+  "$\\ln\\!\\left(\\dfrac{3}{2}\\right)$",
+  "$\\ln\\!\\left(\\dfrac{4}{3}\\right)$",
+  "$\\ln\\!\\left(\\dfrac{8}{3}\\right)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let u=cos²x, so du=−sin(2x)dx. The limits become 1 and 1/2, giving ∫₁/₂¹ du/(1+u)=ln(4/3).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $u=1+\\cos^2x$, so $du=-\\sin 2x\\,dx$. The limits are $2$ and $\\dfrac{3}{2}$.\n$$I=-\\int_2^{3/2}\\frac{du}{u}=\\ln\\!\\left(\\dfrac{4}{3}\\right).$$\n\nIndependent check: Let u=cos²x, so du=−sin(2x)dx. The limits become 1 and 1/2, giving ∫₁/₂¹ du/(1+u)=ln(4/3).",
+ "solution": "Let $u=1+\\cos^2x$, so $du=-\\sin 2x\\,dx$. As $x$ goes from $0$ to $\\pi/4$, $u$ goes from $2$ to $\\frac{3}{2}$.\n$$I=-\\int_2^{3/2}\\frac{du}{u}=\\ln\\left(\\frac{4}{3}\\right).$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/4}\\frac{\\sin 2x}{1+\\cos^2 x}\\,dx$.",
+  "options": [
+   "$\\ln\\!\\left(\\dfrac{4}{3}\\right)$",
+   "$\\ln\\!\\left(\\dfrac{3}{2}\\right)$",
+   "$\\dfrac{1}{2}\\ln\\!\\left(\\dfrac{4}{3}\\right)$",
+   "$\\ln\\!\\left(\\dfrac{8}{3}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Let $u=1+\\cos^2x$, so $du=-\\sin 2x\\,dx$. The limits are $2$ and $\\dfrac{3}{2}$.\n$$I=-\\int_2^{3/2}\\frac{du}{u}=\\ln\\!\\left(\\dfrac{4}{3}\\right).$$",
+  "distractor_notes": "B: uses only the upper-end denominator, omitting the lower-end contribution. C: introduces an erroneous factor of $\\dfrac{1}{2}$. D: multiplies the endpoint values instead of taking their ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

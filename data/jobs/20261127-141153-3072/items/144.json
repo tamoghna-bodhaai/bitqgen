@@ -1,0 +1,68 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "subtopic": "Logical equivalence",
+  "archetype": "simplify and compare",
+  "brief": "Given compound statements with ∧, ∨, ~, check which option is logically equivalent (or write the negation of an implication); use De Morgan / conditional rules.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:127",
+   "2022:104",
+   "2024s1:97"
+  ]
+ },
+ "status": "ok",
+ "stem": "The proposition $\\sim(p\\Rightarrow q)\\vee r$ is logically equivalent to",
+ "options": [
+  "$\\sim(p\\wedge\\sim q)\\vee r$",
+  "$(p\\vee\\sim q)\\wedge r$",
+  "$(p\\wedge\\sim q)\\wedge r$",
+  "$(p\\wedge\\sim q)\\vee r$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "¬(p⇒q) = p∧¬q, so the proposition is (p∧¬q)∨r.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$p\\Rightarrow q\\equiv\\sim p\\vee q$\n$\\sim(p\\Rightarrow q)\\equiv\\sim(\\sim p\\vee q)\\equiv p\\wedge\\sim q$\nHence $\\sim(p\\Rightarrow q)\\vee r\\equiv(p\\wedge\\sim q)\\vee r$\n\nIndependent check: ¬(p⇒q) = p∧¬q, so the proposition is (p∧¬q)∨r.",
+ "solution": "$p\\Rightarrow q\\equiv\\sim p\\vee q$, so by De Morgan’s law, $\\sim(p\\Rightarrow q)\\equiv p\\wedge\\sim q$.\nHence, $\\sim(p\\Rightarrow q)\\vee r\\equiv(p\\wedge\\sim q)\\vee r$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The proposition $\\sim(p\\Rightarrow q)\\vee r$ is logically equivalent to",
+  "options": [
+   "$(p\\wedge\\sim q)\\vee r$",
+   "$(p\\vee\\sim q)\\wedge r$",
+   "$(p\\wedge\\sim q)\\wedge r$",
+   "$\\sim(p\\wedge\\sim q)\\vee r$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$p\\Rightarrow q\\equiv\\sim p\\vee q$\n$\\sim(p\\Rightarrow q)\\equiv\\sim(\\sim p\\vee q)\\equiv p\\wedge\\sim q$\nHence $\\sim(p\\Rightarrow q)\\vee r\\equiv(p\\wedge\\sim q)\\vee r$",
+  "distractor_notes": "B misapplies De Morgan's law; C changes the outer disjunction to conjunction; D negates the simplified implication incorrectly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

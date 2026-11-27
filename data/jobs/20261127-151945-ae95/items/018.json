@@ -1,0 +1,71 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read-off parameters",
+  "brief": "From a given wave equation y = A sin(kx − ωt + φ), read off the amplitude, frequency, wavelength and wave speed.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:16",
+   "2023s1:29",
+   "2022:4"
+  ],
+  "origin": "variant",
+  "bank_ref": "g210a8071dd7c"
+ },
+ "status": "ok",
+ "stem": "A travelling wave is described by $y=0.06\\sin(4\\pi x-20\\pi t+\\dfrac{\\pi}{3})$, where $x$ and $y$ are in m and $t$ is in s. Which set gives $(A,f,\\lambda,v)$?",
+ "options": [
+  "$(0.06\\ \\text{m},\\ 10\\ \\text{Hz},\\ 0.50\\ \\text{m},\\ 5\\ \\text{m s}^{-1})$",
+  "$(0.06\\ \\text{m},\\ 20\\ \\text{Hz},\\ 0.50\\ \\text{m},\\ 10\\ \\text{m s}^{-1})$",
+  "$(0.06\\ \\text{m},\\ 10\\ \\text{Hz},\\ 0.25\\ \\text{m},\\ 2.5\\ \\text{m s}^{-1})$",
+  "$(0.06\\ \\text{m},\\ 10\\ \\text{Hz},\\ 0.50\\ \\text{m},\\ 10\\ \\text{m s}^{-1})$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From the wave equation, A = 0.06 m, k = 4π rad/m, and ω = 20π rad/s. Thus λ = 2π/k = 0.50 m, f = ω/(2π) = 10 Hz, and v = fλ = 5 m/s.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=0.06\\ \\text{m},\\quad k=4\\pi\\ \\text{rad m}^{-1},\\quad \\omega=20\\pi\\ \\text{rad s}^{-1}$\n$f=\\dfrac{\\omega}{2\\pi}=10\\ \\text{Hz}$\n$\\lambda=\\dfrac{2\\pi}{k}=0.50\\ \\text{m}$\n$v=\\dfrac{\\omega}{k}=5\\ \\text{m s}^{-1}$\n\nIndependent check: From the wave equation, A = 0.06 m, k = 4π rad/m, and ω = 20π rad/s. Thus λ = 2π/k = 0.50 m, f = ω/(2π) = 10 Hz, and v = fλ = 5 m/s.",
+ "solution": "Comparing with $y=A\\sin(kx-\\omega t+\\phi)$ gives $A=0.06\\ \\text{m}$, $k=4\\pi\\ \\text{rad m}^{-1}$ and $\\omega=20\\pi\\ \\text{rad s}^{-1}$. Thus\n$$f=\\frac{\\omega}{2\\pi}=10\\ \\text{Hz},\\qquad \\lambda=\\frac{2\\pi}{k}=0.50\\ \\text{m},\\qquad v=\\frac{\\omega}{k}=5\\ \\text{m s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A travelling wave is described by $y=0.06\\sin(4\\pi x-20\\pi t+\\dfrac{\\pi}{3})$, where $x$ and $y$ are in m and $t$ is in s. Which set gives $(A,f,\\lambda,v)$?",
+  "options": [
+   "$(0.06\\ \\text{m},\\ 10\\ \\text{Hz},\\ 0.50\\ \\text{m},\\ 5\\ \\text{m s}^{-1})$",
+   "$(0.06\\ \\text{m},\\ 20\\ \\text{Hz},\\ 0.50\\ \\text{m},\\ 10\\ \\text{m s}^{-1})$",
+   "$(0.06\\ \\text{m},\\ 10\\ \\text{Hz},\\ 0.25\\ \\text{m},\\ 2.5\\ \\text{m s}^{-1})$",
+   "$(0.06\\ \\text{m},\\ 10\\ \\text{Hz},\\ 0.50\\ \\text{m},\\ 10\\ \\text{m s}^{-1})$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A=0.06\\ \\text{m},\\quad k=4\\pi\\ \\text{rad m}^{-1},\\quad \\omega=20\\pi\\ \\text{rad s}^{-1}$\n$f=\\dfrac{\\omega}{2\\pi}=10\\ \\text{Hz}$\n$\\lambda=\\dfrac{2\\pi}{k}=0.50\\ \\text{m}$\n$v=\\dfrac{\\omega}{k}=5\\ \\text{m s}^{-1}$",
+  "distractor_notes": "B: doubles the frequency by omitting the $2\\pi$ conversion from angular frequency.\nC: uses $\\pi/k$ instead of $2\\pi/k$ for wavelength, then calculates the corresponding speed.\nD: uses $\\omega$ instead of $\\omega/k$ for wave speed."
+ },
+ "variant_of": "g210a8071dd7c",
+ "author_model": "openai/gpt-6-luna-pro"
+}

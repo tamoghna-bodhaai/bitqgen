@@ -1,0 +1,71 @@
+{
+ "qno": 54,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 54,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Standard cell EMF",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:43",
+   "2021:79",
+   "2023s2:49"
+  ],
+  "origin": "variant",
+  "bank_ref": "g001735058b4a"
+ },
+ "status": "ok",
+ "stem": "For the standard cell $\\text{M}|\\text{M}^{2+}||\\text{Pb}^{2+}|\\text{Pb}$, $E^\\circ_{\\text{cell}}=0.46$ V and $E^\\circ_{\\text{Pb}^{2+}/\\text{Pb}}=-0.13$ V. Find $E^\\circ_{\\text{M}^{2+}/\\text{M}}$.",
+ "options": [
+  "$+0.33$ V",
+  "$+0.59$ V",
+  "$-0.33$ V",
+  "$-0.59$ V"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the cell as written, E°cell = E°(Pb²⁺/Pb) − E°(M²⁺/M). Hence 0.46 = −0.13 − E°(M²⁺/M), so E°(M²⁺/M) = −0.59 V.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E^\\circ_{\\text{cell}}=E^\\circ_{\\text{cathode}}-E^\\circ_{\\text{anode}}$ \n$0.46=-0.13-E^\\circ_{\\text{M}^{2+}/\\text{M}}$ \n$E^\\circ_{\\text{M}^{2+}/\\text{M}}=-0.59\\ \\text{V}$\n\nIndependent check: For the cell as written, E°cell = E°(Pb²⁺/Pb) − E°(M²⁺/M). Hence 0.46 = −0.13 − E°(M²⁺/M), so E°(M²⁺/M) = −0.59 V.",
+ "solution": "For the cell as written, $E^\f_{\\text{cell}}=E^\f_{\\text{cathode}}-E^\f_{\\text{anode}}$.\n$$0.46=-0.13-E^\f_{\\text{M}^{2+}/\\text{M}} \\quad\\Rightarrow\\quad E^\f_{\\text{M}^{2+}/\\text{M}}=-0.59\\ \\text{V}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the standard cell $\\text{M}|\\text{M}^{2+}||\\text{Pb}^{2+}|\\text{Pb}$, $E^\\circ_{\\text{cell}}=0.46$ V and $E^\\circ_{\\text{Pb}^{2+}/\\text{Pb}}=-0.13$ V. Find $E^\\circ_{\\text{M}^{2+}/\\text{M}}$.",
+  "options": [
+   "$-0.59$ V",
+   "$+0.59$ V",
+   "$-0.33$ V",
+   "$+0.33$ V"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$E^\\circ_{\\text{cell}}=E^\\circ_{\\text{cathode}}-E^\\circ_{\\text{anode}}$ \n$0.46=-0.13-E^\\circ_{\\text{M}^{2+}/\\text{M}}$ \n$E^\\circ_{\\text{M}^{2+}/\\text{M}}=-0.59\\ \\text{V}$",
+  "distractor_notes": "B: reports the magnitude but reverses the sign. \nC: subtracts the cell potential from the lead potential. \nD: uses the wrong sign for the lead potential in the subtraction."
+ },
+ "variant_of": "g001735058b4a",
+ "author_model": "openai/gpt-6-luna-pro"
+}

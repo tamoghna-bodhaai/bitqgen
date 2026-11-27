@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Find the next term in the following alphanumeric series:\nC5W, F11T, I19Q, L29N, ____",
+ "stem": "Find the next term in the following alphanumeric series: D7Y, H10V, L15S, P22P, ____",
  "options": [
-  "O41K",
-  "P41K",
-  "O39K",
-  "O41L"
+  "T31M",
+  "T30M",
+  "S31M",
+  "T31N"
  ],
  "answer": "A",
  "figure": null,
@@ -33,35 +33,36 @@
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "First letters C,F,I,L advance +3 → O. Numbers 5,11,19,29 have differences 6,8,10 → next difference 12 gives 41. Last letters W,T,Q,N go −3 → K. Next term: O41K.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "First letters advance by 4 (D, H, L, P, T); last letters retreat by 3 (Y, V, S, P, M). Middle numbers increase by consecutive odd numbers (+3, +5, +7, +9), giving 31.",
    "answer": "A",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The given series is composed of three components in each term: a first letter, a middle number, and a final letter.\n\n1. **First letter:**\n$\\text{C} (3) \\xrightarrow{+3} \\text{F} (6) \\xrightarrow{+3} \\text{I} (9) \\xrightarrow{+3} \\text{L} (12) \\xrightarrow{+3} \\text{O} (15)$\n\n2. **Middle number:**\n$5 \\xrightarrow{+6} 11 \\xrightarrow{+8} 19 \\xrightarrow{+10} 29 \\xrightarrow{+12} 41$\nThe differences between consecutive numbers increase by $+2$ each time ($+6, +8, +10, +12$).\n\n3. **Final letter:**\n$\\text{W} (23) \\xrightarrow{-3} \\text{T} (20) \\xrightarrow{-3} \\text{Q} (17) \\xrightarrow{-3} \\text{N} (14) \\xrightarrow{-3} \\text{K} (11)$\n\nCombining the three components gives the next term: **O41K**.\n\nIndependent check: First letters C,F,I,L advance +3 → O. Numbers 5,11,19,29 have differences 6,8,10 → next difference 12 gives 41. Last letters W,T,Q,N go −3 → K. Next term: O41K.",
+ "working": "First letters advance by 4: D, H, L, P, T. Numbers increase by 3, 5, 7, then 9: 7, 10, 15, 22, 31. Final letters move back by 3: Y, V, S, P, M. Hence T31M. The other options alter one component.\n\nIndependent check: First letters advance by 4 (D, H, L, P, T); last letters retreat by 3 (Y, V, S, P, M). Middle numbers increase by consecutive odd numbers (+3, +5, +7, +9), giving 31.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Find the next term in the following alphanumeric series:\nC5W, F11T, I19Q, L29N, ____",
+  "stem": "Find the next term in the following alphanumeric series: D7Y, H10V, L15S, P22P, ____",
   "options": [
-   "O41K",
-   "P41K",
-   "O39K",
-   "O41L"
+   "T31M",
+   "T30M",
+   "S31M",
+   "T31N"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "The given series is composed of three components in each term: a first letter, a middle number, and a final letter.\n\n1. **First letter:**\n$\\text{C} (3) \\xrightarrow{+3} \\text{F} (6) \\xrightarrow{+3} \\text{I} (9) \\xrightarrow{+3} \\text{L} (12) \\xrightarrow{+3} \\text{O} (15)$\n\n2. **Middle number:**\n$5 \\xrightarrow{+6} 11 \\xrightarrow{+8} 19 \\xrightarrow{+10} 29 \\xrightarrow{+12} 41$\nThe differences between consecutive numbers increase by $+2$ each time ($+6, +8, +10, +12$).\n\n3. **Final letter:**\n$\\text{W} (23) \\xrightarrow{-3} \\text{T} (20) \\xrightarrow{-3} \\text{Q} (17) \\xrightarrow{-3} \\text{N} (14) \\xrightarrow{-3} \\text{K} (11)$\n\nCombining the three components gives the next term: **O41K**.",
-  "distractor_notes": "Option B encodes an off-by-one error in the first letter progression (moving $+4$ instead of $+3$ to get P).\nOption C incorrectly repeats the previous difference of $+10$ ($29 + 10 = 39$) instead of adding $+12$.\nOption D subtracts $2$ instead of $3$ in the final letter step (giving L instead of K).",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "First letters advance by 4: D, H, L, P, T. Numbers increase by 3, 5, 7, then 9: 7, 10, 15, 22, 31. Final letters move back by 3: Y, V, S, P, M. Hence T31M. The other options alter one component.",
+  "distractor_notes": "B: number is one too low. C: first letter advances by only 3 from P. D: final letter moves back by 2 instead of 3."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "At what height $h$ above the Earth's surface does the acceleration due to gravity decrease by $36\\%$ of its value at the surface? ($R$ is the radius of the Earth)",
+ "stem": "Assuming the Earth has uniform density, what is the ratio of $g$ at a height $R$ above its surface to $g$ at a depth $R/2$ below its surface, where $R$ is the Earth's radius?",
  "options": [
-  "$0.18 R$",
-  "$0.20 R$",
-  "$0.25 R$",
-  "$0.36 R$"
+  "$1:4$",
+  "$2:1$",
+  "$1:2$",
+  "$1:1$"
  ],
  "answer": "C",
  "figure": null,
@@ -34,9 +34,9 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "g' = g[R/(R+h)]² = 0.64g ⇒ R/(R+h) = 0.8 ⇒ R+h = 1.25R ⇒ h = 0.25R.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At height R, g=g₀(R/2R)²=g₀/4. At depth R/2, g=g₀(1−(R/2)/R)=g₀/2. Thus the ratio is 1:2.",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The acceleration due to gravity at height $h$ above the Earth's surface is given by the exact formula:\n$$g' = g \\left(\\dfrac{R}{R+h}\\right)^2$$\n\nSince the acceleration decreases by $36\\%$, the value at height $h$ is:\n$$g' = g - 0.36g = 0.64g$$\n\nBecause the change in $g$ is large ($36\\% > 5\\%$), the binomial approximation $g' \\approx g(1 - 2h/R)$ cannot be used.\n\nEquating the exact expression to $0.64g$:\n$$g \\left(\\dfrac{R}{R+h}\\right)^2 = 0.64g$$\n$$\\left(\\dfrac{R}{R+h}\\right)^2 = 0.64$$\n\nTaking the square root on both sides:\n$$\\dfrac{R}{R+h} = 0.8 = \\dfrac{4}{5}$$\n$$5R = 4(R+h) = 4R + 4h$$\n$$4h = R \\implies h = \\dfrac{R}{4} = 0.25 R$$\n\nIndependent check: g' = g[R/(R+h)]² = 0.64g ⇒ R/(R+h) = 0.8 ⇒ R+h = 1.25R ⇒ h = 0.25R.",
- "solution": "",
+ "working": "At height $R$: $g_h=g\\left(\\dfrac{R}{R+R}\\right)^2=\\dfrac{g}{4}$.\\nAt depth $R/2$: $g_d=g\\left(1-\\dfrac{R/2}{R}\\right)=\\dfrac{g}{2}$.\\n$g_h:g_d=1:2$.\n\nIndependent check: At height R, g=g₀(R/2R)²=g₀/4. At depth R/2, g=g₀(1−(R/2)/R)=g₀/2. Thus the ratio is 1:2.",
+ "solution": "At height $R$, $g_h=g\\left(\\dfrac{R}{R+R}\\right)^2=\\dfrac{g}{4}$. For a uniform-density Earth, at depth $R/2$, $g_d=g\\left(1-\\dfrac{R/2}{R}\\right)=\\dfrac{g}{2}$.\n$$g_h:g_d=\\dfrac{g}{4}:\\dfrac{g}{2}=1:2$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "At what height $h$ above the Earth's surface does the acceleration due to gravity decrease by $36\\%$ of its value at the surface? ($R$ is the radius of the Earth)",
+  "stem": "Assuming the Earth has uniform density, what is the ratio of $g$ at a height $R$ above its surface to $g$ at a depth $R/2$ below its surface, where $R$ is the Earth's radius?",
   "options": [
-   "$0.18 R$",
-   "$0.20 R$",
-   "$0.25 R$",
-   "$0.36 R$"
+   "$1:4$",
+   "$1:2$",
+   "$2:1$",
+   "$1:1$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The acceleration due to gravity at height $h$ above the Earth's surface is given by the exact formula:\n$$g' = g \\left(\\dfrac{R}{R+h}\\right)^2$$\n\nSince the acceleration decreases by $36\\%$, the value at height $h$ is:\n$$g' = g - 0.36g = 0.64g$$\n\nBecause the change in $g$ is large ($36\\% > 5\\%$), the binomial approximation $g' \\approx g(1 - 2h/R)$ cannot be used.\n\nEquating the exact expression to $0.64g$:\n$$g \\left(\\dfrac{R}{R+h}\\right)^2 = 0.64g$$\n$$\\left(\\dfrac{R}{R+h}\\right)^2 = 0.64$$\n\nTaking the square root on both sides:\n$$\\dfrac{R}{R+h} = 0.8 = \\dfrac{4}{5}$$\n$$5R = 4(R+h) = 4R + 4h$$\n$$4h = R \\implies h = \\dfrac{R}{4} = 0.25 R$$",
-  "distractor_notes": "A: Uses the linear approximation $\\Delta g/g \\approx 2h/R$, which gives $2h/R = 0.36 \\implies h = 0.18 R$.\nB: Solves for $R/(R+h) = 0.8$ correctly, but makes the algebraic slip $h/R = 1 - 0.8 = 0.20$.\nD: Uses $\\Delta g/g \\approx h/R$, either confusing the height variation with depth variation or forgetting the factor of 2 in the binomial expansion.",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "At height $R$: $g_h=g\\left(\\dfrac{R}{R+R}\\right)^2=\\dfrac{g}{4}$.\\nAt depth $R/2$: $g_d=g\\left(1-\\dfrac{R/2}{R}\\right)=\\dfrac{g}{2}$.\\n$g_h:g_d=1:2$.",
+  "distractor_notes": "A: Uses the height result but treats the depth value as $g$.\\nC: Reverses the required ratio.\\nD: Assumes the two accelerations are equal."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

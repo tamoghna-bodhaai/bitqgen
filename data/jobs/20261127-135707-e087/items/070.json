@@ -1,0 +1,76 @@
+{
+ "qno": 70,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 70,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Ozononolysis",
+  "archetype": "reaction product (structures)",
+  "brief": "Give a diene/trisubstituted alkene in the figure; ozonolysis under reductive workup — ask which carbonyl fragments form, including how many moles of a specific product per mole.",
+  "difficulty": 5,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:54",
+   "2021:55",
+   "2022:41"
+  ]
+ },
+ "status": "ok",
+ "stem": "One mole of the diene shown undergoes reductive ozonolysis. Which carbonyl products, and in what amounts, are formed?",
+ "options": [
+  "$1$ mol acetone and $2$ mol ethanedial",
+  "$2$ mol ethanal and $1$ mol acetone",
+  "$2$ mol acetone and $1$ mol ethanedial",
+  "$1$ mol acetone and $1$ mol ethanedial"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q070_stem_v0.png",
+  "width_pct": 37,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cleavage of both C=C bonds gives one acetone from each end carbon bearing two methyl groups, and the two inner carbons form one ethanedial molecule. Thus the amounts are 2 mol acetone and 1 mol ethanedial.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Cleavage of both C=C bonds gives $(\\text{CH}_3)_2\\text{C=O}$ from each end carbon with no H.\nThe two inner carbons remain joined, giving $\\text{OHC–CHO}$.\nProducts per mole of diene: $2$ mol acetone and $1$ mol ethanedial.\n\nIndependent check: Cleavage of both C=C bonds gives one acetone from each end carbon bearing two methyl groups, and the two inner carbons form one ethanedial molecule. Thus the amounts are 2 mol acetone and 1 mol ethanedial.",
+ "solution": "Reductive ozonolysis cleaves both $C=C$ bonds to form carbonyl groups at each alkene carbon. The two terminal carbons each give acetone, while the joined inner carbons give ethanedial: $2$ mol acetone and $1$ mol ethanedial.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "One mole of the diene shown undergoes reductive ozonolysis. Which carbonyl products, and in what amounts, are formed?",
+  "options": [
+   "$1$ mol acetone and $2$ mol ethanedial",
+   "$2$ mol acetone and $1$ mol ethanedial",
+   "$2$ mol ethanal and $1$ mol acetone",
+   "$1$ mol acetone and $1$ mol ethanedial"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw the diene CH3–C(CH3)=CH–CH=C(CH3)–CH3, with the two double bonds at positions 2 and 4 in the six-carbon chain. Draw a horizontal reaction arrow labelled 1. O3; 2. Zn/H2O, ending at a blank product area. Do not draw or name any products.",
+   "smiles": "CC(C)=CC=C(C)C"
+  },
+  "difficulty_estimate": 5,
+  "working": "Cleavage of both C=C bonds gives $(\\text{CH}_3)_2\\text{C=O}$ from each end carbon with no H.\nThe two inner carbons remain joined, giving $\\text{OHC–CHO}$.\nProducts per mole of diene: $2$ mol acetone and $1$ mol ethanedial.",
+  "distractor_notes": "Reverses the counts of acetone and ethanedial.\nCorrect: two terminal acetone fragments and one ethanedial fragment.\nTreats the inner carbons as separate ethanal molecules.\nMisses one acetone fragment from cleavage of the second double bond."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

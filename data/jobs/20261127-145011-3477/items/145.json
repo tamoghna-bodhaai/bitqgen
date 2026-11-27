@@ -1,0 +1,70 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Arithmetico-geometric series",
+  "archetype": "AGP sum",
+  "brief": "Sum an arithmetico-geometric series of the form a + (a+d)r + (a+2d)r^2 + ... using the standard shift-and-subtract method",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:118",
+   "2024s2:127",
+   "2022:113"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The sum of the infinite series $2+\\dfrac{5}{3}+\\dfrac{8}{9}+\\dfrac{11}{27}+\\cdots$ is",
+ "options": [
+  "$\\dfrac{9}{4}$",
+  "$\\dfrac{21}{4}$",
+  "$\\dfrac{9}{2}$",
+  "$\\dfrac{39}{4}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let k = n−1. Then the sum is Σ(3k+2)/3^k = 3·[x/(1−x)^2] + 2·[1/(1−x)] at x = 1/3 = 21/4.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$S=\\sum_{n=0}^{\\infty}(2+3n)\\left(\\dfrac13\\right)^n=\\dfrac{2}{1-1/3}+\\dfrac{3(1/3)}{(1-1/3)^2}=3+\\dfrac94=\\dfrac{21}{4}$.\n\nIndependent check: Let k = n−1. Then the sum is Σ(3k+2)/3^k = 3·[x/(1−x)^2] + 2·[1/(1−x)] at x = 1/3 = 21/4.",
+ "solution": "Using $\\sum_{n=0}^{\\infty}x^n=\\frac{1}{1-x}$ and $\\sum_{n=0}^{\\infty}nx^n=\\frac{x}{(1-x)^2}$,\n$$S=\\sum_{n=0}^{\\infty}(2+3n)\\left(\\frac13\\right)^n=\\frac{2}{1-1/3}+\\frac{3(1/3)}{(1-1/3)^2}=\\frac{21}{4}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum of the infinite series $2+\\dfrac{5}{3}+\\dfrac{8}{9}+\\dfrac{11}{27}+\\cdots$ is",
+  "options": [
+   "$\\dfrac{9}{4}$",
+   "$\\dfrac{9}{2}$",
+   "$\\dfrac{21}{4}$",
+   "$\\dfrac{39}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$S=\\sum_{n=0}^{\\infty}(2+3n)\\left(\\dfrac13\\right)^n=\\dfrac{2}{1-1/3}+\\dfrac{3(1/3)}{(1-1/3)^2}=3+\\dfrac94=\\dfrac{21}{4}$.",
+  "distractor_notes": "A: Includes only the arithmetically increasing part; B: Uses $\\sum nr^n=\\dfrac{r}{1-r}$; D: Omits the factor $r$ in the sum of $nr^n$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

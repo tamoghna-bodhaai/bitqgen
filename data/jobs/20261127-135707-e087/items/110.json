@@ -1,0 +1,68 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Properties of determinants",
+  "archetype": "split-and-factor",
+  "brief": "Evaluate a 3×3 determinant by splitting entries into sums and using row/column operations to factor.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:99",
+   "2025s2:121",
+   "2026s1:122"
+  ]
+ },
+ "status": "ok",
+ "stem": "For distinct real numbers $x,y,z$, the value of $$\\begin{vmatrix}1+x&x^2&x^3\\\\1+y&y^2&y^3\\\\1+z&z^2&z^3\\end{vmatrix}$$ is",
+ "options": [
+  "$(y-x)(z-x)(z-y)(xy+yz+zx-xyz)$",
+  "$(y-x)(z-x)(z-y)(x+y+z+xyz)$",
+  "$(y-x)(z-x)(z-y)(xy+yz+zx+xyz)$",
+  "$(y-x)(z-x)(z-y)(x+y+z-xyz)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By linearity in the first column, the determinant is that of [1,x²,x³] plus that of [x,x²,x³]. Factoring out (y−x)(z−x)(z−y), their respective remaining factors are xy+yz+zx and xyz. Thus option (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Split the first column: $D=\\det[1,t^2,t^3]+\\det[t,t^2,t^3]$, with rows $t=x,y,z$. These determinants are $(y-x)(z-x)(z-y)(xy+yz+zx)$ and $xyz(y-x)(z-x)(z-y)$, respectively.\n\nIndependent check: By linearity in the first column, the determinant is that of [1,x²,x³] plus that of [x,x²,x³]. Factoring out (y−x)(z−x)(z−y), their respective remaining factors are xy+yz+zx and xyz. Thus option (A).",
+ "solution": "By linearity in the first column, split it as $1+t$:\n$$D=\\begin{vmatrix}1&x^2&x^3\\\\1&y^2&y^3\\\\1&z^2&z^3\\\\end{vmatrix}+\\begin{vmatrix}x&x^2&x^3\\\\y&y^2&y^3\\\\z&z^2&z^3\\end{vmatrix}.$$\nFactoring the Vandermonde product $(y-x)(z-x)(z-y)$, the two terms have remaining factors $xy+yz+zx$ and $xyz$, respectively.\nHence $D=(y-x)(z-x)(z-y)(xy+yz+zx+xyz)$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For distinct real numbers $x,y,z$, the value of $$\\begin{vmatrix}1+x&x^2&x^3\\\\1+y&y^2&y^3\\\\1+z&z^2&z^3\\end{vmatrix}$$ is",
+  "options": [
+   "$(y-x)(z-x)(z-y)(xy+yz+zx+xyz)$",
+   "$(y-x)(z-x)(z-y)(x+y+z+xyz)$",
+   "$(y-x)(z-x)(z-y)(xy+yz+zx-xyz)$",
+   "$(y-x)(z-x)(z-y)(x+y+z-xyz)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Split the first column: $D=\\det[1,t^2,t^3]+\\det[t,t^2,t^3]$, with rows $t=x,y,z$. These determinants are $(y-x)(z-x)(z-y)(xy+yz+zx)$ and $xyz(y-x)(z-x)(z-y)$, respectively.",
+  "distractor_notes": "B: Uses the wrong symmetric factor in the first determinant; C: Sign error in the $xyz$ term; D: Uses the wrong symmetric factor and sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

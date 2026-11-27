@@ -1,0 +1,68 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Shortest distance between skew lines",
+  "archetype": "determinant condition",
+  "brief": "Two lines given in vector form; check coplanarity via scalar triple product and compute shortest distance if skew.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:92",
+   "2024s2:124",
+   "2026s1:128"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the shortest distance between the lines $\\vec r=\\lambda(1,1,0)$ and $\\vec r=(2,1,3)+\\mu(1,0,1)$, where $\\lambda,\\mu\\in\\mathbb R$.",
+ "options": [
+  "$\\dfrac{1}{\\sqrt{3}}$",
+  "$\\dfrac{2}{\\sqrt{3}}$",
+  "$\\sqrt{3}$",
+  "$2\\sqrt{3}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Direction vectors are \\(\\mathbf a=(1,1,0)\\), \\(\\mathbf b=(1,0,1)\\). Their cross product is \\((1,-1,-1)\\). Thus the distance is \\(\\frac{|(2,1,3)\\cdot(1,-1,-1)|}{\\sqrt{3}}=\\frac{2}{\\sqrt{3}}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=(1,1,0)$, $v=(1,0,1)$, $b-a=(2,1,3)$; $u\\times v=(1,-1,-1)$; $(b-a)\\cdot(u\\times v)=-2\\ne0$; $d=\\dfrac{|(b-a)\\cdot(u\\times v)|}{|u\\times v|}=\\dfrac{2}{\\sqrt{3}}$.\n\nIndependent check: Direction vectors are \\(\\mathbf a=(1,1,0)\\), \\(\\mathbf b=(1,0,1)\\). Their cross product is \\((1,-1,-1)\\). Thus the distance is \\(\\frac{|(2,1,3)\\cdot(1,-1,-1)|}{\\sqrt{3}}=\\frac{2}{\\sqrt{3}}\\).",
+ "solution": "For two non-parallel lines, $d=\\dfrac{|(b-a)\\cdot(u\\times v)|}{|u\\times v|}$. Here $u=(1,1,0)$, $v=(1,0,1)$, and $b-a=(2,1,3)$, with $u\\times v=(1,-1,-1)$.\n$$d=\\frac{|(2,1,3)\\cdot(1,-1,-1)|}{\\sqrt{3}}=\\frac{2}{\\sqrt{3}}$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Find the shortest distance between the lines $\\vec r=\\lambda(1,1,0)$ and $\\vec r=(2,1,3)+\\mu(1,0,1)$, where $\\lambda,\\mu\\in\\mathbb R$.",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{3}}$",
+   "$\\dfrac{2}{\\sqrt{3}}$",
+   "$\\sqrt{3}$",
+   "$2\\sqrt{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$u=(1,1,0)$, $v=(1,0,1)$, $b-a=(2,1,3)$; $u\\times v=(1,-1,-1)$; $(b-a)\\cdot(u\\times v)=-2\\ne0$; $d=\\dfrac{|(b-a)\\cdot(u\\times v)|}{|u\\times v|}=\\dfrac{2}{\\sqrt{3}}$.",
+  "distractor_notes": "A: loses a factor of $2$ in the scalar triple product; C: uses the cross-product magnitude as the distance; D: multiplies by, rather than divides by, the cross-product magnitude."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

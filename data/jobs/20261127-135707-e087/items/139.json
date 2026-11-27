@@ -1,0 +1,68 @@
+{
+ "qno": 139,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 139,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Composite evaluation",
+  "archetype": "triangle method",
+  "brief": "Evaluate a composite inverse trig expression (like tan⁻¹ inside another inverse) using the right-triangle method and identity substitution.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:102",
+   "2024s1:103",
+   "2025s1:106"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $$\\tan^{-1}\\left(\\dfrac{\\sin\\left(\\cos^{-1}\\dfrac{5}{13}\\right)}{1+\\cos\\left(\\cos^{-1}\\dfrac{5}{13}\\right)}\\right)+\\sin^{-1}\\left(\\cos\\left(\\tan^{-1}\\dfrac{3}{4}\\right)\\right).$$",
+ "options": [
+  "$\\tan^{-1}(2)$",
+  "$\\tan^{-1}\\left(\\dfrac{8}{9}\\right)$",
+  "$\\tan^{-1}(18)$",
+  "$\\dfrac{\\pi}{2}-\\tan^{-1}(18)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The first term is \\(\\tan^{-1}(2/3)\\). Also, \\(\\sin^{-1}(\\cos(\\tan^{-1}(3/4)))=\\sin^{-1}(4/5)=\\tan^{-1}(4/3)\\). Their sum has tangent \\((2/3+4/3)/(1-8/9)=18\\), and the sum lies in the principal range, so it equals \\(\\tan^{-1}(18)\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sin(\\cos^{-1}\\dfrac{5}{13})=\\dfrac{12}{13},\\quad \\cos(\\cos^{-1}\\dfrac{5}{13})=\\dfrac{5}{13}$, so the first term is $\\tan^{-1}\\dfrac{2}{3}$. $\\cos(\\tan^{-1}\\dfrac{3}{4})=\\dfrac{4}{5}$, so the second term is $\\tan^{-1}\\dfrac{4}{3}$. $\\dfrac{2}{3}\\cdot\\dfrac{4}{3}=\\dfrac{8}{9}<1$; hence the sum is in $(0,\\dfrac{\\pi}{2})$. $\\tan(\\text{sum})=\\dfrac{\\dfrac{2}{3}+\\dfrac{4}{3}}{1-\\dfrac{8}{9}}=18$; the value is $\\tan^{-1}(18)$.\n\nIndependent check: The first term is \\(\\tan^{-1}(2/3)\\). Also, \\(\\sin^{-1}(\\cos(\\tan^{-1}(3/4)))=\\sin^{-1}(4/5)=\\tan^{-1}(4/3)\\). Their sum has tangent \\((2/3+4/3)/(1-8/9)=18\\), and the sum lies in the principal range, so it equals \\(\\tan^{-1}(18)\\).",
+ "solution": "Using the principal inverse-trigonometric ranges, the two terms are $\\tan^{-1}(2/3)$ and $\\tan^{-1}(4/3)$.\n$$\\tan\\bigl(\\tan^{-1}(2/3)+\\tan^{-1}(4/3)\\bigr)=\\frac{2/3+4/3}{1-(2/3)(4/3)}=18.$$\nSince their sum lies in $(0,\\frac{\\pi}{2})$, the expression equals $\\tan^{-1}(18)$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Evaluate $$\\tan^{-1}\\left(\\dfrac{\\sin\\left(\\cos^{-1}\\dfrac{5}{13}\\right)}{1+\\cos\\left(\\cos^{-1}\\dfrac{5}{13}\\right)}\\right)+\\sin^{-1}\\left(\\cos\\left(\\tan^{-1}\\dfrac{3}{4}\\right)\\right).$$",
+  "options": [
+   "$\\tan^{-1}(2)$",
+   "$\\tan^{-1}\\left(\\dfrac{8}{9}\\right)$",
+   "$\\tan^{-1}(18)$",
+   "$\\dfrac{\\pi}{2}-\\tan^{-1}(18)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\sin(\\cos^{-1}\\dfrac{5}{13})=\\dfrac{12}{13},\\quad \\cos(\\cos^{-1}\\dfrac{5}{13})=\\dfrac{5}{13}$, so the first term is $\\tan^{-1}\\dfrac{2}{3}$. $\\cos(\\tan^{-1}\\dfrac{3}{4})=\\dfrac{4}{5}$, so the second term is $\\tan^{-1}\\dfrac{4}{3}$. $\\dfrac{2}{3}\\cdot\\dfrac{4}{3}=\\dfrac{8}{9}<1$; hence the sum is in $(0,\\dfrac{\\pi}{2})$. $\\tan(\\text{sum})=\\dfrac{\\dfrac{2}{3}+\\dfrac{4}{3}}{1-\\dfrac{8}{9}}=18$; the value is $\\tan^{-1}(18)$.",
+  "distractor_notes": "A: omits the denominator in the tangent addition formula. B: multiplies the two tangents instead of adding the angles. D: takes the reciprocal tangent and gives the complementary angle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

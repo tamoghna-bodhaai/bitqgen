@@ -1,0 +1,70 @@
+{
+ "qno": 105,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 105,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "relation chain",
+  "brief": "Pointing-to-person chain with phrases like 'he is the son of my father's sister'; identify exact relation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2026s2:76",
+   "2024s1:83"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Pointing to a man, Meera says, “His mother is the only daughter of my maternal grandparents.” How is the man related to Meera?",
+ "options": [
+  "Uncle",
+  "Cousin",
+  "Nephew",
+  "Brother"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Meera’s mother is the only daughter of her maternal grandparents. The man’s mother is therefore Meera’s mother, so he is her brother.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The only daughter of Meera’s maternal grandparents is Meera’s mother. The man’s mother is therefore Meera’s mother, so he is Meera’s brother. Cousin, nephew and uncle do not fit this parent link.\n\nIndependent check: Meera’s mother is the only daughter of her maternal grandparents. The man’s mother is therefore Meera’s mother, so he is her brother.",
+ "solution": "The only daughter of Meera’s maternal grandparents is her mother. Since the man’s mother is Meera’s mother, he is Meera’s brother.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Pointing to a man, Meera says, “His mother is the only daughter of my maternal grandparents.” How is the man related to Meera?",
+  "options": [
+   "Brother",
+   "Cousin",
+   "Nephew",
+   "Uncle"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The only daughter of Meera’s maternal grandparents is Meera’s mother. The man’s mother is therefore Meera’s mother, so he is Meera’s brother. Cousin, nephew and uncle do not fit this parent link.",
+  "distractor_notes": "B: Mistakes the man’s mother for Meera’s aunt. C: Reverses the generation. D: Treats the man’s mother as Meera’s grandmother."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

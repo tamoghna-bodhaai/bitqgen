@@ -1,0 +1,71 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Enthalpy vs internal energy",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:60",
+   "2024s1:43",
+   "2021:51"
+  ],
+  "origin": "variant",
+  "bank_ref": "gc5f55b2e90b4"
+ },
+ "status": "ok",
+ "stem": "For $\\text{CaCO}_3(s)\\rightarrow\\text{CaO}(s)+\\text{CO}_2(g)$ at $300$ K, $\\Delta U=+175.00\\ \\text{kJ mol}^{-1}$. Find $\\Delta H$; take $R=8.314\\ \\text{J K}^{-1}\\text{mol}^{-1}$.",
+ "options": [
+  "$172.51\\ \\text{kJ mol}^{-1}$",
+  "$175.00\\ \\text{kJ mol}^{-1}$",
+  "$179.99\\ \\text{kJ mol}^{-1}$",
+  "$177.49\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\Delta H=\\Delta U+\\Delta n_gRT=175.00+(1)(8.314)(300)/1000=177.49\\ \\text{kJ mol}^{-1}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta H=\\Delta U+\\Delta n_gRT$; $\\Delta n_g=1-0=1$.\n$\\Delta H=175.00+\\dfrac{(1)(8.314)(300)}{1000}=177.4942\\approx177.49\\ \\text{kJ mol}^{-1}$.\n\nIndependent check: \\(\\Delta H=\\Delta U+\\Delta n_gRT=175.00+(1)(8.314)(300)/1000=177.49\\ \\text{kJ mol}^{-1}\\).",
+ "solution": "For gaseous species, $\\Delta H=\\Delta U+\\Delta n_gRT$, where $\\Delta n_g=1-0=1$.\n$$\\Delta H=175.00+\\frac{(1)(8.314)(300)}{1000}=177.49\\text{ kJ mol}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $\\text{CaCO}_3(s)\\rightarrow\\text{CaO}(s)+\\text{CO}_2(g)$ at $300$ K, $\\Delta U=+175.00\\ \\text{kJ mol}^{-1}$. Find $\\Delta H$; take $R=8.314\\ \\text{J K}^{-1}\\text{mol}^{-1}$.",
+  "options": [
+   "$172.51\\ \\text{kJ mol}^{-1}$",
+   "$175.00\\ \\text{kJ mol}^{-1}$",
+   "$177.49\\ \\text{kJ mol}^{-1}$",
+   "$179.99\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\Delta H=\\Delta U+\\Delta n_gRT$; $\\Delta n_g=1-0=1$.\n$\\Delta H=175.00+\\dfrac{(1)(8.314)(300)}{1000}=177.4942\\approx177.49\\ \\text{kJ mol}^{-1}$.",
+  "distractor_notes": "A: uses the correction with the wrong sign.\nB: assumes $\\Delta H=\\Delta U$.\nD: incorrectly uses $\\Delta n_g=2$. "
+ },
+ "variant_of": "gc5f55b2e90b4",
+ "author_model": "openai/gpt-6-luna-pro"
+}

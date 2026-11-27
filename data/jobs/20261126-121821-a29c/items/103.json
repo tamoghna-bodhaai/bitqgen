@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "The function $f(x) = 2x^3 - 3x^2 - 12x + 6$ is strictly decreasing on the interval",
+ "stem": "For $f(x)=x^3+3x^2$, the maximal interval on which $f$ is decreasing is",
  "options": [
-  "$(-\\infty, -1)$",
-  "$(-2, 1)$",
-  "$(-1, 2)$",
-  "$(2, \\infty)$"
+  "$(-\\infty,-2]$",
+  "$[-2,0]$",
+  "$[0,\\infty)$",
+  "$(-\\infty,0]$"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "f'(x) = 6x² − 6x − 12 = 6(x−2)(x+1). f' < 0 exactly for −1 < x < 2, so f is strictly decreasing on (−1, 2). Numerical check confirms f' negative inside and positive outside.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "f'(x)=3x(x+2), which is nonpositive on [-2,0] and positive outside. Thus the maximal decreasing interval is [-2,0].",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "To find where $f(x)$ is strictly decreasing, we determine where $f'(x) < 0$.\n\nDifferentiating $f(x)$ with respect to $x$:\n$$f'(x) = \\dfrac{d}{dx}(2x^3 - 3x^2 - 12x + 6) = 6x^2 - 6x - 12$$\n\nFactoring $f'(x)$:\n$$f'(x) = 6(x^2 - x - 2) = 6(x - 2)(x + 1)$$\n\nFor $f(x)$ to be strictly decreasing:\n$$f'(x) < 0 \\implies 6(x - 2)(x + 1) < 0$$\n$$(x - 2)(x + 1) < 0$$\n\nThis inequality holds strictly between the roots:\n$$-1 < x < 2$$\n\nHence, $f(x)$ is strictly decreasing on the interval $(-1, 2)$.\n\nIndependent check: f'(x) = 6x² − 6x − 12 = 6(x−2)(x+1). f' < 0 exactly for −1 < x < 2, so f is strictly decreasing on (−1, 2). Numerical check confirms f' negative inside and positive outside.",
- "solution": "",
+ "working": "$f'(x)=3x(x+2)$.\\n$f'(x)<0$ for $-2<x<0$; $f'(-2)=f'(0)=0$.\\nThus $f$ is decreasing on the maximal interval $[-2,0]$.\n\nIndependent check: f'(x)=3x(x+2), which is nonpositive on [-2,0] and positive outside. Thus the maximal decreasing interval is [-2,0].",
+ "solution": "$$f'(x)=3x(x+2).$$\nSince $f'(x)\\le 0$ for $-2\\le x\\le 0$ and is positive outside this interval, $f$ is decreasing on the maximal interval $[-2,0]$.",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "The function $f(x) = 2x^3 - 3x^2 - 12x + 6$ is strictly decreasing on the interval",
+  "stem": "For $f(x)=x^3+3x^2$, the maximal interval on which $f$ is decreasing is",
   "options": [
-   "$(-\\infty, -1)$",
-   "$(-2, 1)$",
-   "$(-1, 2)$",
-   "$(2, \\infty)$"
+   "$(-\\infty,-2]$",
+   "$[-2,0]$",
+   "$[0,\\infty)$",
+   "$(-\\infty,0]$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "To find where $f(x)$ is strictly decreasing, we determine where $f'(x) < 0$.\n\nDifferentiating $f(x)$ with respect to $x$:\n$$f'(x) = \\dfrac{d}{dx}(2x^3 - 3x^2 - 12x + 6) = 6x^2 - 6x - 12$$\n\nFactoring $f'(x)$:\n$$f'(x) = 6(x^2 - x - 2) = 6(x - 2)(x + 1)$$\n\nFor $f(x)$ to be strictly decreasing:\n$$f'(x) < 0 \\implies 6(x - 2)(x + 1) < 0$$\n$$(x - 2)(x + 1) < 0$$\n\nThis inequality holds strictly between the roots:\n$$-1 < x < 2$$\n\nHence, $f(x)$ is strictly decreasing on the interval $(-1, 2)$.",
-  "distractor_notes": "Option A encodes confusing decreasing with increasing and taking the left branch where f'(x) > 0.\nOption B encodes a sign error when factoring x^2 - x - 2 = 0 into (x + 2)(x - 1) = 0.\nOption D encodes solving for the region where f'(x) > 0 for x > 2 (strictly increasing).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$f'(x)=3x(x+2)$.\\n$f'(x)<0$ for $-2<x<0$; $f'(-2)=f'(0)=0$.\\nThus $f$ is decreasing on the maximal interval $[-2,0]$.",
+  "distractor_notes": "A: chooses a region where $f'(x)>0$. B: correct decreasing interval. C: chooses a region where $f'(x)>0$. D: includes $x<-2$, where $f'(x)>0$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

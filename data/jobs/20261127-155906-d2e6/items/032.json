@@ -1,0 +1,70 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "LR circuit growth",
+  "archetype": "formula application",
+  "brief": "An LR circuit connected to a battery with given L, R and emf; find the current at a stated time using the exponential growth equation, or the time at which current reaches a stated fraction of its maximum.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:21",
+   "2023s1:30",
+   "2026s2:9"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An ideal series LR circuit with $L=2\\ \\text{H}$ and $R=4\\ \\Omega$ is connected to a $12\\ \\text{V}$ battery at $t=0$. At what time does the current reach $75\\%$ of its steady value?",
+ "options": [
+  "$\\dfrac{1}{2}\\ln 2\\ \\text{s}$",
+  "$\\ln 2\\ \\text{s}$",
+  "$2\\ln 2\\ \\text{s}$",
+  "$4\\ln 2\\ \\text{s}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an RL circuit, $i/I_{ss}=1-e^{-Rt/L}$. Setting this to $0.75$ gives $e^{-2t}=0.25$, so $t=\\ln 2\\,\\text{s}$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I/I_{\\max}=1-e^{-Rt/L}=3/4$; $t=(L/R)\\ln 4=(2/4)\\ln 4=\\ln 2\\ \\text{s}$.\n\nIndependent check: For an RL circuit, $i/I_{ss}=1-e^{-Rt/L}$. Setting this to $0.75$ gives $e^{-2t}=0.25$, so $t=\\ln 2\\,\\text{s}$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An ideal series LR circuit with $L=2\\ \\text{H}$ and $R=4\\ \\Omega$ is connected to a $12\\ \\text{V}$ battery at $t=0$. At what time does the current reach $75\\%$ of its steady value?",
+  "options": [
+   "$\\dfrac{1}{2}\\ln 2\\ \\text{s}$",
+   "$\\ln 2\\ \\text{s}$",
+   "$2\\ln 2\\ \\text{s}$",
+   "$4\\ln 2\\ \\text{s}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$I/I_{\\max}=1-e^{-Rt/L}=3/4$; $t=(L/R)\\ln 4=(2/4)\\ln 4=\\ln 2\\ \\text{s}$.",
+  "distractor_notes": "A: uses a $50\\%$ rather than $75\\%$ current fraction. C: omits the factor $L/R=1/2$. D: uses $R/L$ instead of $L/R$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

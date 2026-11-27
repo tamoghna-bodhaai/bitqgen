@@ -1,0 +1,70 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Magnetic field due to finite wire / polygon loop",
+  "archetype": "superposition numerical",
+  "brief": "A regular polygon loop (e.g. hexagon) carrying current; find B at the centre by summing contributions from each side (with the n→∞ circle limit as a check), requiring careful superposition of finite-wire fields.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:1",
+   "2025s2:22",
+   "2021:21"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A regular hexagonal wire loop and a circular wire loop are concentric and coplanar, with circumradius and radius respectively both $0.12$ m. Each carries $6$ A, in opposite senses. Find the magnitude of the net magnetic field at the centre. Take $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.",
+ "options": [
+  "$(2\\sqrt{3}+\\pi)\\times10^{-5}\\ \\text{T}$",
+  "$(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$",
+  "$(2\\pi-2\\sqrt{3})\\times10^{-5}\\ \\text{T}$",
+  "$(4\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Hexagon field: \\(B_h=\\sqrt{3}\\mu_0 I/(\\pi R)=2\\sqrt{3}\\times10^{-5}\\,\\text{T}\\). Circle field: \\(B_c=\\mu_0 I/(2R)=\\pi\\times10^{-5}\\,\\text{T}\\). Opposite current senses give net magnitude \\(|B_h-B_c|=(2\\sqrt{3}-\\pi)\\times10^{-5}\\,\\text{T}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$B_n=\\dfrac{\\mu_0In}{2\\pi R}\\tan\\dfrac{\\pi}{n}$; $B_6=\\dfrac{\\mu_0I\\sqrt{3}}{\\pi R}$; $n\\tan(\\pi/n)\\to\\pi\\Rightarrow B_\\circ=\\dfrac{\\mu_0I}{2R}$; $|B_6-B_\\circ|=\\dfrac{\\mu_0I}{R}(\\dfrac{\\sqrt{3}}{\\pi}-\\dfrac12)=(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$.\n\nIndependent check: Hexagon field: \\(B_h=\\sqrt{3}\\mu_0 I/(\\pi R)=2\\sqrt{3}\\times10^{-5}\\,\\text{T}\\). Circle field: \\(B_c=\\mu_0 I/(2R)=\\pi\\times10^{-5}\\,\\text{T}\\). Opposite current senses give net magnitude \\(|B_h-B_c|=(2\\sqrt{3}-\\pi)\\times10^{-5}\\,\\text{T}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A regular hexagonal wire loop and a circular wire loop are concentric and coplanar, with circumradius and radius respectively both $0.12$ m. Each carries $6$ A, in opposite senses. Find the magnitude of the net magnetic field at the centre. Take $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.",
+  "options": [
+   "$(2\\sqrt{3}+\\pi)\\times10^{-5}\\ \\text{T}$",
+   "$(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$",
+   "$(2\\pi-2\\sqrt{3})\\times10^{-5}\\ \\text{T}$",
+   "$(4\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$B_n=\\dfrac{\\mu_0In}{2\\pi R}\\tan\\dfrac{\\pi}{n}$; $B_6=\\dfrac{\\mu_0I\\sqrt{3}}{\\pi R}$; $n\\tan(\\pi/n)\\to\\pi\\Rightarrow B_\\circ=\\dfrac{\\mu_0I}{2R}$; $|B_6-B_\\circ|=\\dfrac{\\mu_0I}{R}(\\dfrac{\\sqrt{3}}{\\pi}-\\dfrac12)=(2\\sqrt{3}-\\pi)\\times10^{-5}\\ \\text{T}$.",
+  "distractor_notes": "A: adds fields despite opposite currents; C: omits the circle’s factor of $1/2$; D: treats each hexagon side as an infinite wire."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

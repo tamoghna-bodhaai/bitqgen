@@ -1,0 +1,79 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Field of a dipole on equatorial line",
+  "archetype": "single-formula numerical",
+  "brief": "Given dipole moment, find the electric field magnitude at a point on the equatorial line at a given distance.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:8",
+   "2026s2:15",
+   "2023s2:19"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge1b2a1f2df31"
+ },
+ "status": "ok",
+ "stem": "An ideal electric dipole has moment $6.0\\times10^{-8}$ C m. The magnitude of the electric field at a point $0.30$ m from its centre on the equatorial line is, in air. Take $k=9.0\\times10^9$ N m$^2$ C$^{-2}$, as shown in the figure.",
+ "options": [
+  "$6.0\\times10^3$ N C$^{-1}$",
+  "$2.0\\times10^4$ N C$^{-1}$",
+  "$4.0\\times10^4$ N C$^{-1}$",
+  "$6.0\\times10^4$ N C$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q015_stem_v0.png",
+  "width_pct": 45,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "On the equatorial line, the dipole field magnitude is E = kp/r^3 = (9.0×10^9)(6.0×10^-8)/(0.30)^3 = 2.0×10^4 N C^-1.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E=\\dfrac{kp}{r^3}=\\dfrac{(9.0\\times10^9)(6.0\\times10^{-8})}{(0.30)^3}=2.0\\times10^4\\ \\text{N C}^{-1}$\n\nIndependent check: On the equatorial line, the dipole field magnitude is E = kp/r^3 = (9.0×10^9)(6.0×10^-8)/(0.30)^3 = 2.0×10^4 N C^-1.",
+ "solution": "On the equatorial line, the dipole field magnitude is $E=\\dfrac{kp}{r^3}$.\n$$E=\\frac{(9.0\\times10^9)(6.0\\times10^{-8})}{(0.30)^3}=2.0\\times10^4\\ \\text{N C}^{-1}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An ideal electric dipole has moment $6.0\\times10^{-8}$ C m. The magnitude of the electric field at a point $0.30$ m from its centre on the equatorial line is, in air. Take $k=9.0\\times10^9$ N m$^2$ C$^{-2}$, as shown in the figure.",
+  "options": [
+   "$6.0\\times10^3$ N C$^{-1}$",
+   "$2.0\\times10^4$ N C$^{-1}$",
+   "$4.0\\times10^4$ N C$^{-1}$",
+   "$6.0\\times10^4$ N C$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a horizontal electric dipole with charge $-q$ at the left end and charge $+q$ at the right end. Mark the midpoint as $O$. Draw a vertical line through $O$ and place point $P$ above $O$ on this line; label segment $OP$ as $r$. Draw an arrow along the dipole axis from $-q$ toward $+q$ and label it $\\vec p$.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$E=\\dfrac{kp}{r^3}=\\dfrac{(9.0\\times10^9)(6.0\\times10^{-8})}{(0.30)^3}=2.0\\times10^4\\ \\text{N C}^{-1}$",
+  "distractor_notes": "A: uses $r^2$ instead of $r^3$; C: applies the axial-field factor of $2$; D: arithmetic or distance-conversion error."
+ },
+ "variant_of": "ge1b2a1f2df31",
+ "author_model": "openai/gpt-6-luna-pro"
+}

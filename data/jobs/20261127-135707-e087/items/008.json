@@ -1,0 +1,68 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching",
+  "archetype": "volume-constant scaling",
+  "brief": "A wire is stretched to double (or n-times) its length keeping volume constant; find new resistance and ratio of old to new resistance.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:16",
+   "2026s1:21",
+   "2026s2:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "A wire has resistance $3\\ \\Omega$. It is stretched uniformly to twice its original length, with its volume and resistivity unchanged. What is its new resistance?",
+ "options": [
+  "$6\\ \\Omega$",
+  "$18\\ \\Omega$",
+  "$12\\ \\Omega$",
+  "$24\\ \\Omega$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With volume constant, doubling the length halves the cross-sectional area. Since $R=\\rho L/A$, the resistance becomes $4\\times 3=12\\ \\Omega$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Constant volume gives $A'=A/2$.\n$R'=\\dfrac{\\rho(2L)}{A/2}=4\\dfrac{\\rho L}{A}=4R=12\\ \\Omega$.\n\nIndependent check: With volume constant, doubling the length halves the cross-sectional area. Since $R=\\rho L/A$, the resistance becomes $4\\times 3=12\\ \\Omega$.",
+ "solution": "With volume constant, doubling the length halves the cross-sectional area: $A'=A/2$.\n$$R'=\\frac{\\rho(2L)}{A/2}=4R=4(3)=12\\ \\Omega$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wire has resistance $3\\ \\Omega$. It is stretched uniformly to twice its original length, with its volume and resistivity unchanged. What is its new resistance?",
+  "options": [
+   "$6\\ \\Omega$",
+   "$12\\ \\Omega$",
+   "$18\\ \\Omega$",
+   "$24\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Constant volume gives $A'=A/2$.\n$R'=\\dfrac{\\rho(2L)}{A/2}=4\\dfrac{\\rho L}{A}=4R=12\\ \\Omega$.",
+  "distractor_notes": "A: Multiplies the resistance by the length factor only; C: uses a factor of $6$; D: uses a factor of $8$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

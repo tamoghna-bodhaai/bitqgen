@@ -1,0 +1,68 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Gravitational potential energy",
+  "archetype": "energy conservation",
+  "brief": "Body dropped from a height or projected upward near Earth's surface (or between two radii); use energy conservation to find impact speed, ignoring air resistance.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:13",
+   "2021:28",
+   "2025s2:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A stone is dropped from rest from a height of $45$ m above the ground. Ignoring air resistance, what is its speed just before impact? Take $g=10$ m s$^{-2}$.",
+ "options": [
+  "$20$ m s$^{-1}$",
+  "$30$ m s$^{-1}$",
+  "$45$ m s$^{-1}$",
+  "$90$ m s$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(v^2=u^2+2gh\\) with \\(u=0\\): \\(v=\\sqrt{2(10)(45)}=30\\text{ m s}^{-1}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$mgh=\\dfrac12mv^2$; $v=\\sqrt{2gh}=\\sqrt{2(10)(45)}=30\\ \\text{m s}^{-1}$\n\nIndependent check: Using \\(v^2=u^2+2gh\\) with \\(u=0\\): \\(v=\\sqrt{2(10)(45)}=30\\text{ m s}^{-1}\\).",
+ "solution": "Using $v^2=u^2+2gh$ with $u=0$,\n$$v=\\sqrt{2(10)(45)}=30\\ \\text{m s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A stone is dropped from rest from a height of $45$ m above the ground. Ignoring air resistance, what is its speed just before impact? Take $g=10$ m s$^{-2}$.",
+  "options": [
+   "$20$ m s$^{-1}$",
+   "$30$ m s$^{-1}$",
+   "$45$ m s$^{-1}$",
+   "$90$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$mgh=\\dfrac12mv^2$; $v=\\sqrt{2gh}=\\sqrt{2(10)(45)}=30\\ \\text{m s}^{-1}$",
+  "distractor_notes": "A: uses an incorrect factor in the energy relation. C: equates speed numerically to the drop height. D: omits the square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

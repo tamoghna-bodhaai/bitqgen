@@ -1,0 +1,70 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "counting formula",
+  "brief": "Verify whether a given relation on a small set is reflexive/symmetric/transitive, or count functions from one set to another",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:103",
+   "2022:122",
+   "2026s2:91"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "How many onto functions are there from $A=\\{1,2,3\\}$ to $B=\\{a,b\\}$?",
+ "options": [
+  "$4$",
+  "$8$",
+  "$6$",
+  "$9$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "There are 2^3 = 8 functions in total. Excluding the 2 constant functions gives 8 − 2 = 6 onto functions.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Total functions $=2^3$.\\nExclude the $2$ functions that miss one element of $B$.\\nNumber of onto functions $=2^3-2=6$.\n\nIndependent check: There are 2^3 = 8 functions in total. Excluding the 2 constant functions gives 8 − 2 = 6 onto functions.",
+ "solution": "Each of the $3$ elements of $A$ has $2$ choices, so the total number of functions is $2^3$. The $2$ constant functions are not onto.\n$$2^3-2=6$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "How many onto functions are there from $A=\\{1,2,3\\}$ to $B=\\{a,b\\}$?",
+  "options": [
+   "$4$",
+   "$6$",
+   "$8$",
+   "$9$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Total functions $=2^3$.\\nExclude the $2$ functions that miss one element of $B$.\\nNumber of onto functions $=2^3-2=6$.",
+  "distractor_notes": "A: counts only functions with a particular assignment pattern.\\nC: counts all functions, including those that are not onto.\\nD: confuses the number of functions with $3^2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

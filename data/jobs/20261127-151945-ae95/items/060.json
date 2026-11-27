@@ -1,0 +1,71 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment of lanthanide ions",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:54",
+   "2021:73",
+   "2025s2:48"
+  ],
+  "origin": "variant",
+  "bank_ref": "g7b5aafdac2e1"
+ },
+ "status": "ok",
+ "stem": "A trivalent lanthanide ion has a spin-only magnetic moment of $\\sqrt{35}$ BM. How many unpaired $4f$ electrons does it have?",
+ "options": [
+  "3",
+  "4",
+  "6",
+  "5"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using μ = √[n(n + 2)] BM: n(n + 2) = 35, so n = 5.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mu=\\sqrt{n(n+2)}$\n\nIndependent check: Using μ = √[n(n + 2)] BM: n(n + 2) = 35, so n = 5.",
+ "solution": "For a spin-only magnetic moment, $\\mu=\\sqrt{n(n+2)}$ BM, where $n$ is the number of unpaired electrons.\n$$\\sqrt{n(n+2)}=\\sqrt{35}\\;\\Rightarrow\\;n(n+2)=35\\;\\Rightarrow\\;n=5$$\nThus, it has $5$ unpaired $4f$ electrons.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A trivalent lanthanide ion has a spin-only magnetic moment of $\\sqrt{35}$ BM. How many unpaired $4f$ electrons does it have?",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\mu=\\sqrt{n(n+2)}$",
+  "distractor_notes": "A: Undercounts the unpaired electrons. B: Uses an incorrect value of $n$. D: Overcounts the unpaired electrons."
+ },
+ "variant_of": "g7b5aafdac2e1",
+ "author_model": "openai/gpt-6-luna-pro"
+}

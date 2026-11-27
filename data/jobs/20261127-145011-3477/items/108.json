@@ -1,0 +1,70 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous differential equations",
+  "archetype": "separate and solve",
+  "brief": "Solve a homogeneous differential equation dy/dx = f(x,y) with degree-1 RHS using the substitution y = vx and integrate",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:128",
+   "2022:94",
+   "2024s2:95"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\dfrac{dy}{dx}=\\dfrac{x^2+y^2}{xy}$, for $xy\\ne0$, is",
+ "options": [
+  "$\\dfrac{x^2}{y^2}-2\\ln|y|=C$",
+  "$\\dfrac{y^2}{x^2}+2\\ln|x|=C$",
+  "$\\dfrac{y^2}{x^2}-2\\ln|x|=C$",
+  "$\\dfrac{y^2}{x^2}-\\ln|x|=C$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set z=y/x. Then y'=z+xz', so xz'=1/z. Integrating gives z²−2ln|x|=C, i.e. y²/x²−2ln|x|=C (B).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Put $y=vx$: $v+x\\dfrac{dv}{dx}=v+\\dfrac{1}{v}$\\n$v\\,dv=\\dfrac{dx}{x}$\\n$\\dfrac{v^2}{2}=\\ln|x|+C$\\n$\\dfrac{y^2}{x^2}-2\\ln|x|=C$\n\nIndependent check: Set z=y/x. Then y'=z+xz', so xz'=1/z. Integrating gives z²−2ln|x|=C, i.e. y²/x²−2ln|x|=C (B).",
+ "solution": "Put $y=vx$, so $v+x\\dfrac{dv}{dx}=v+\\dfrac{1}{v}$, hence $v\\,dv=\\dfrac{dx}{x}$. Integrating, $\\dfrac{v^2}{2}=\\ln|x|+C$, giving $\\dfrac{y^2}{x^2}-2\\ln|x|=C$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of $\\dfrac{dy}{dx}=\\dfrac{x^2+y^2}{xy}$, for $xy\\ne0$, is",
+  "options": [
+   "$\\dfrac{x^2}{y^2}-2\\ln|y|=C$",
+   "$\\dfrac{y^2}{x^2}-2\\ln|x|=C$",
+   "$\\dfrac{y^2}{x^2}+2\\ln|x|=C$",
+   "$\\dfrac{y^2}{x^2}-\\ln|x|=C$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Put $y=vx$: $v+x\\dfrac{dv}{dx}=v+\\dfrac{1}{v}$\\n$v\\,dv=\\dfrac{dx}{x}$\\n$\\dfrac{v^2}{2}=\\ln|x|+C$\\n$\\dfrac{y^2}{x^2}-2\\ln|x|=C$",
+  "distractor_notes": "A: uses the reciprocal ratio; C: sign error in the logarithm; D: misses the factor $2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

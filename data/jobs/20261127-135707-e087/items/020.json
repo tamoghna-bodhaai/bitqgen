@@ -1,0 +1,68 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE fringe width",
+  "archetype": "path difference geometry",
+  "brief": "YDSE with slab introduced or source partially immersed: shift of fringe pattern; compute number of fringes shifted or new position of a maximum using extra path (μ−1)t.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:23",
+   "2023s1:22",
+   "2026s2:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a YDSE, the slit separation is $0.30\\ \\text{mm}$ and the screen is $1.5\\ \\text{m}$ away. Light of wavelength $600\\ \\text{nm}$ is used. A plate of refractive index $1.5$ and thickness $2.4\\ \\mu\\text{m}$ is placed before slit A. How far from the original central maximum is the bright fringe that was fourth on A's side before insertion?",
+ "options": [
+  "$12\\ \\text{mm}$",
+  "$15\\ \\text{mm}$",
+  "$18\\ \\text{mm}$",
+  "$24\\ \\text{mm}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fringe width β = λD/d = 3 mm. The plate adds path difference (μ−1)t = 1.2 μm = 2λ, shifting the pattern 2β toward slit A. The fourth bright fringe on A's side therefore moves from 4β to 6β from the original central maximum: 18 mm.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\beta=\\lambda D/d=3\\ \\text{mm}$; $\\Delta y=(\\mu-1)tD/d=6\\ \\text{mm}$. The fringe shifts toward slit A: $y=4\\beta+\\Delta y=12+6=18\\ \\text{mm}$.\n\nIndependent check: Fringe width β = λD/d = 3 mm. The plate adds path difference (μ−1)t = 1.2 μm = 2λ, shifting the pattern 2β toward slit A. The fourth bright fringe on A's side therefore moves from 4β to 6β from the original central maximum: 18 mm.",
+ "solution": "Fringe width is $\\beta=\\lambda D/d=(600\\times10^{-9})(1.5)/(0.30\\times10^{-3})=3\\ \\text{mm}$. The plate shifts the pattern toward slit A by $4y=(\\mu-1)tD/d=6\\ \\text{mm}=2\\beta$.\nThus the fourth bright fringe on A's side is at $4\\beta+2\\beta=18\\ \\text{mm}$ from the original central maximum.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a YDSE, the slit separation is $0.30\\ \\text{mm}$ and the screen is $1.5\\ \\text{m}$ away. Light of wavelength $600\\ \\text{nm}$ is used. A plate of refractive index $1.5$ and thickness $2.4\\ \\mu\\text{m}$ is placed before slit A. How far from the original central maximum is the bright fringe that was fourth on A's side before insertion?",
+  "options": [
+   "$12\\ \\text{mm}$",
+   "$15\\ \\text{mm}$",
+   "$18\\ \\text{mm}$",
+   "$24\\ \\text{mm}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\beta=\\lambda D/d=3\\ \\text{mm}$; $\\Delta y=(\\mu-1)tD/d=6\\ \\text{mm}$. The fringe shifts toward slit A: $y=4\\beta+\\Delta y=12+6=18\\ \\text{mm}$.",
+  "distractor_notes": "A: ignores the plate-induced shift; B: uses half the correct shift; D: adds the shift twice."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

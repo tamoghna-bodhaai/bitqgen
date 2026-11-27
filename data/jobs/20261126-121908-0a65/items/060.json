@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "The correct IUPAC name of the coordination compound $[\\text{Co}(\\text{NH}_3)_4(\\text{H}_2\\text{O})\\text{Cl}]\\text{Cl}_2$ is:",
+ "stem": "What is the IUPAC name of $\\text{K}_2[\\text{Zn(OH)}_4]$?",
  "options": [
-  "Aquatetraamminechloridocobalt(III) chloride",
-  "Tetraammineaquachloridocobalt(II) chloride",
-  "Tetraammineaquachloridocobalt(III) chloride",
-  "Tetraammineaquachloridocobaltate(III) chloride"
+  "Potassium tetrahydroxidozincate(II)",
+  "Potassium tetrahydroxidozincate(IV)",
+  "Potassium tetrahydroxidozinc(II)",
+  "Potassium tetrahydroxidozincate(0)"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Complex ion charge = +2 (two outer Cl-). With NH3 and H2O neutral and coordinated Cl- = -1, Co oxidation state = +3. Ligands cited alphabetically: ammine < aqua < chlorido, giving tetraammineaquachloridocobalt(III) chloride. Cationic complex uses 'cobalt', not 'cobaltate'. Option A has wrong ligand order; B wrong oxidation state; D wrong suffix.",
-   "answer": "C",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The complex ion has charge −2. With four OH⁻ ligands, zinc is +2; the anionic complex is named tetrahydroxidozincate(II).",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Identify the ligands present in the coordination sphere and their alphabetical order:\n- $\\text{NH}_3$: ammine\n- $\\text{H}_2\\text{O}$: aqua\n- $\\text{Cl}^-$: chlorido\nAlphabetical order of ligands (ignoring numerical prefixes like tetra-): ammine precedes aqua, which precedes chlorido. Thus, the order is tetraammine, aqua, chlorido.\n\n2. Determine the oxidation state of the central cobalt ion:\nLet the oxidation state of $\\text{Co}$ be $x$.\n$x + 4(0) + 1(0) + 1(-1) + 2(-1) = 0 \\implies x - 3 = 0 \\implies x = +3$.\nSo, cobalt is in the $+3$ oxidation state, denoted as cobalt(III).\n\n3. Since the complex cation $[\\text{Co}(\\text{NH}_3)_4(\\text{H}_2\\text{O})\\text{Cl}]^{2+}$ carries a positive charge, the metal name remains 'cobalt' (not 'cobaltate').\n\n4. The ionizable anion is chloride.\n\nCombining these rules gives: Tetraammineaquachloridocobalt(III) chloride.\n\nIndependent check: Complex ion charge = +2 (two outer Cl-). With NH3 and H2O neutral and coordinated Cl- = -1, Co oxidation state = +3. Ligands cited alphabetically: ammine < aqua < chlorido, giving tetraammineaquachloridocobalt(III) chloride. Cationic complex uses 'cobalt', not 'cobaltate'. Option A has wrong ligand order; B wrong oxidation state; D wrong suffix.",
+ "working": "$[\\text{Zn(OH)}_4]^{2-}$; let the oxidation state of Zn be $x$. \n$x+4(-1)=-2 \\Rightarrow x=+2$. \nThe complex ion is anionic, so the metal name becomes zincate. \nName: potassium tetrahydroxidozincate(II).\n\nIndependent check: The complex ion has charge −2. With four OH⁻ ligands, zinc is +2; the anionic complex is named tetrahydroxidozincate(II).",
  "solution": "",
  "locked": false,
- "difficulty": 2,
+ "difficulty": 1,
  "draft": {
-  "stem": "The correct IUPAC name of the coordination compound $[\\text{Co}(\\text{NH}_3)_4(\\text{H}_2\\text{O})\\text{Cl}]\\text{Cl}_2$ is:",
+  "stem": "What is the IUPAC name of $\\text{K}_2[\\text{Zn(OH)}_4]$?",
   "options": [
-   "Aquatetraamminechloridocobalt(III) chloride",
-   "Tetraammineaquachloridocobalt(II) chloride",
-   "Tetraammineaquachloridocobalt(III) chloride",
-   "Tetraammineaquachloridocobaltate(III) chloride"
+   "Potassium tetrahydroxidozincate(II)",
+   "Potassium tetrahydroxidozincate(IV)",
+   "Potassium tetrahydroxidozinc(II)",
+   "Potassium tetrahydroxidozincate(0)"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "1. Identify the ligands present in the coordination sphere and their alphabetical order:\n- $\\text{NH}_3$: ammine\n- $\\text{H}_2\\text{O}$: aqua\n- $\\text{Cl}^-$: chlorido\nAlphabetical order of ligands (ignoring numerical prefixes like tetra-): ammine precedes aqua, which precedes chlorido. Thus, the order is tetraammine, aqua, chlorido.\n\n2. Determine the oxidation state of the central cobalt ion:\nLet the oxidation state of $\\text{Co}$ be $x$.\n$x + 4(0) + 1(0) + 1(-1) + 2(-1) = 0 \\implies x - 3 = 0 \\implies x = +3$.\nSo, cobalt is in the $+3$ oxidation state, denoted as cobalt(III).\n\n3. Since the complex cation $[\\text{Co}(\\text{NH}_3)_4(\\text{H}_2\\text{O})\\text{Cl}]^{2+}$ carries a positive charge, the metal name remains 'cobalt' (not 'cobaltate').\n\n4. The ionizable anion is chloride.\n\nCombining these rules gives: Tetraammineaquachloridocobalt(III) chloride.",
-  "distractor_notes": "Option A: Mistakenly alphabetizes using the multiplying prefix 'tetra-', incorrectly placing 'aqua' before 'tetraammine'.\nOption B: Uses an incorrect oxidation state of $+2$ for cobalt, typically caused by forgetting the coordinated chloride ion.\nOption D: Incorrectly adds the suffix '-ate' to the metal name, which applies only to anionic complexes.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$[\\text{Zn(OH)}_4]^{2-}$; let the oxidation state of Zn be $x$. \n$x+4(-1)=-2 \\Rightarrow x=+2$. \nThe complex ion is anionic, so the metal name becomes zincate. \nName: potassium tetrahydroxidozincate(II).",
+  "distractor_notes": "B: uses the wrong zinc oxidation state. C: omits the -ate ending for an anionic complex. D: assigns the wrong zinc oxidation state."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

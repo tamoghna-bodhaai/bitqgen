@@ -1,0 +1,68 @@
+{
+ "qno": 43,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 43,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order half-life",
+  "archetype": "count half-lives",
+  "brief": "Given initial amount and fraction remaining after a time, use number of half-lives to find the half-life or the time required.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:39",
+   "2024s2:43",
+   "2024s1:39"
+  ]
+ },
+ "status": "ok",
+ "stem": "A first-order reaction starts with $80$ mg of reactant; $10$ mg remains after $6$ h. What is its half-life?",
+ "options": [
+  "$1$ h",
+  "$2$ h",
+  "$3$ h",
+  "$6$ h"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The amount falls from 80 mg to 10 mg, or to 1/8 of its initial value. That is three half-lives in 6 h, so the half-life is 2 h.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{10}{80}=\\dfrac{1}{8}=\\left(\\dfrac{1}{2}\\right)^3$\n$6$ h corresponds to $3$ half-lives\n$t_{1/2}=\\dfrac{6}{3}=2$ h\n\nIndependent check: The amount falls from 80 mg to 10 mg, or to 1/8 of its initial value. That is three half-lives in 6 h, so the half-life is 2 h.",
+ "solution": "For a first-order reaction, $N/N_0=(1/2)^n$. Here, $10/80=1/8=(1/2)^3$, so 6 h corresponds to 3 half-lives.\n$$t_{1/2}=\\frac{6}{3}=2\\text{ h}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A first-order reaction starts with $80$ mg of reactant; $10$ mg remains after $6$ h. What is its half-life?",
+  "options": [
+   "$1$ h",
+   "$2$ h",
+   "$3$ h",
+   "$6$ h"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{10}{80}=\\dfrac{1}{8}=\\left(\\dfrac{1}{2}\\right)^3$\n$6$ h corresponds to $3$ half-lives\n$t_{1/2}=\\dfrac{6}{3}=2$ h",
+  "distractor_notes": "A: Divides the elapsed time by six. C: Mistakes the number of half-lives for the half-life. D: Treats the elapsed time as one half-life."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

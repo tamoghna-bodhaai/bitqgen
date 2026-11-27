@@ -1,0 +1,70 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Tangents and normals",
+  "archetype": "sign of derivative",
+  "brief": "Find the equation of the tangent to a curve (implicit or trig) at a given point by differentiating and evaluating the slope.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:129",
+   "2024s2:120",
+   "2026s1:123"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The curve $x^2+xy+y^2=7$ passes through $(1,2)$. What is the equation of its tangent at that point?",
+ "options": [
+  "$4x+5y-14=0$",
+  "$4x-5y+6=0$",
+  "$x+y-3=0$",
+  "$5x+4y-13=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At (1,2), the gradient is (2x+y, x+2y)=(4,5). Thus the tangent is 4(x−1)+5(y−2)=0, or 4x+5y−14=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Differentiating, $2x+y+x\\dfrac{dy}{dx}+2y\\dfrac{dy}{dx}=0$. At $(1,2)$, $\\dfrac{dy}{dx}=-\\dfrac45$. Hence $y-2=-\\dfrac45(x-1)$, or $4x+5y-14=0$.\n\nIndependent check: At (1,2), the gradient is (2x+y, x+2y)=(4,5). Thus the tangent is 4(x−1)+5(y−2)=0, or 4x+5y−14=0.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The curve $x^2+xy+y^2=7$ passes through $(1,2)$. What is the equation of its tangent at that point?",
+  "options": [
+   "$4x+5y-14=0$",
+   "$4x-5y+6=0$",
+   "$x+y-3=0$",
+   "$5x+4y-13=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Differentiating, $2x+y+x\\dfrac{dy}{dx}+2y\\dfrac{dy}{dx}=0$. At $(1,2)$, $\\dfrac{dy}{dx}=-\\dfrac45$. Hence $y-2=-\\dfrac45(x-1)$, or $4x+5y-14=0$.",
+  "distractor_notes": "B: uses the wrong sign for the slope; C: omits the $x\\,dy/dx$ term; D: swaps the derivative denominator terms."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

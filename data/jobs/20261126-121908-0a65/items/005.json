@@ -20,17 +20,17 @@
   ]
  },
  "status": "ok",
- "stem": "A long, solid non-conducting cylinder of radius $R$ has a non-uniform volume charge density $\\rho = \\alpha r$, where $\\alpha$ is a positive constant and $r$ is the radial distance from its central axis, as shown in the figure. The magnitude of the electric field at a distance $r$ ($r < R$) from the axis is",
+ "stem": "A solid insulating sphere of radius $R$ has volume charge density $\\rho(s)=\\rho_0(1-s/R)$, where $s$ is distance from its centre and $\\rho_0>0$. As shown in the figure, what is the electric field magnitude at $P$?",
  "options": [
-  "$\\dfrac{\\alpha r^2}{4\\varepsilon_0}$",
-  "$\\dfrac{\\alpha r^2}{3\\varepsilon_0}$",
-  "$\\dfrac{\\alpha r^2}{2\\varepsilon_0}$",
-  "$\\dfrac{2\\alpha r^2}{3\\varepsilon_0}$"
+  "$\\dfrac{\\rho_0 R}{12\\varepsilon_0}$",
+  "$\\dfrac{5\\rho_0 R}{48\\varepsilon_0}$",
+  "$\\dfrac{\\rho_0 R}{8\\varepsilon_0}$",
+  "$\\dfrac{\\rho_0 R}{6\\varepsilon_0}$"
  ],
  "answer": "B",
  "figure": {
   "path": "figs/q005_stem_v0.png",
-  "width_pct": 55,
+  "width_pct": 45,
   "kind": "diagram"
  },
  "option_figs": null,
@@ -38,8 +38,8 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Gauss's law with coaxial cylinder of radius r, length L: Q_enc = ∫0^r (αr')(2πr'L)dr' = 2παL r³/3. E(2πrL) = Q_enc/ε0 ⇒ E = αr²/(3ε0). Verified numerically.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By spherical symmetry, Gauss’s law gives E(r)=ρ₀/ε₀(r/3−r²/(4R)). From the figure, P is at r=R/2, so E=5ρ₀R/(48ε₀).",
    "answer": "B",
    "confidence": 0.99,
    "multiple_correct": false,
@@ -49,27 +49,28 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Consider a coaxial Gaussian cylinder of radius $r$ ($r < R$) and length $L$ inside the charged cylinder.\n\n1. By cylindrical symmetry, the electric field $\\vec{E}$ is directed radially outward perpendicular to the cylinder axis. The electric flux through the two flat end caps is zero. The flux through the curved surface is:\n$$\\Phi = E(r) \\cdot (2\\pi r L)$$\n\n2. The charge enclosed $q_{\\text{enc}}$ inside this Gaussian cylinder is found by integrating over thin cylindrical shells of radius $r'$, thickness $dr'$, and length $L$:\n$$dV = 2\\pi r' L\\, dr'$$\n$$dq = \\rho(r')\\, dV = (\\alpha r')(2\\pi r' L\\, dr') = 2\\pi \\alpha L r'^2\\, dr'$$\n$$q_{\\text{enc}} = \\int_0^r 2\\pi \\alpha L r'^2\\, dr' = 2\\pi \\alpha L \\left[\\dfrac{r'^3}{3}\\right]_0^r = \\dfrac{2\\pi \\alpha L r^3}{3}$$\n\n3. Applying Gauss's law:\n$$\\Phi = \\dfrac{q_{\\text{enc}}}{\\varepsilon_0}$$\n$$E(r) (2\\pi r L) = \\dfrac{2\\pi \\alpha L r^3}{3\\varepsilon_0}$$\n$$E(r) = \\dfrac{\\alpha r^2}{3\\varepsilon_0}$$\n\nIndependent check: Gauss's law with coaxial cylinder of radius r, length L: Q_enc = ∫0^r (αr')(2πr'L)dr' = 2παL r³/3. E(2πrL) = Q_enc/ε0 ⇒ E = αr²/(3ε0). Verified numerically.",
+ "working": "$q_{\\text{enc}}=4\\pi\\rho_0\\int_0^{R/2}(1-s/R)s^2\\,ds=\\dfrac{5\\pi\\rho_0R^3}{48}$; $E( R/2)=\\dfrac{q_{\\text{enc}}}{4\\pi\\varepsilon_0(R/2)^2}=\\dfrac{5\\rho_0R}{48\\varepsilon_0}$.\n\nIndependent check: By spherical symmetry, Gauss’s law gives E(r)=ρ₀/ε₀(r/3−r²/(4R)). From the figure, P is at r=R/2, so E=5ρ₀R/(48ε₀).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A long, solid non-conducting cylinder of radius $R$ has a non-uniform volume charge density $\\rho = \\alpha r$, where $\\alpha$ is a positive constant and $r$ is the radial distance from its central axis, as shown in the figure. The magnitude of the electric field at a distance $r$ ($r < R$) from the axis is",
+  "stem": "A solid insulating sphere of radius $R$ has volume charge density $\\rho(s)=\\rho_0(1-s/R)$, where $s$ is distance from its centre and $\\rho_0>0$. As shown in the figure, what is the electric field magnitude at $P$?",
   "options": [
-   "$\\dfrac{\\alpha r^2}{4\\varepsilon_0}$",
-   "$\\dfrac{\\alpha r^2}{3\\varepsilon_0}$",
-   "$\\dfrac{\\alpha r^2}{2\\varepsilon_0}$",
-   "$\\dfrac{2\\alpha r^2}{3\\varepsilon_0}$"
+   "$\\dfrac{\\rho_0 R}{12\\varepsilon_0}$",
+   "$\\dfrac{5\\rho_0 R}{48\\varepsilon_0}$",
+   "$\\dfrac{\\rho_0 R}{8\\varepsilon_0}$",
+   "$\\dfrac{\\rho_0 R}{6\\varepsilon_0}$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "Consider a coaxial Gaussian cylinder of radius $r$ ($r < R$) and length $L$ inside the charged cylinder.\n\n1. By cylindrical symmetry, the electric field $\\vec{E}$ is directed radially outward perpendicular to the cylinder axis. The electric flux through the two flat end caps is zero. The flux through the curved surface is:\n$$\\Phi = E(r) \\cdot (2\\pi r L)$$\n\n2. The charge enclosed $q_{\\text{enc}}$ inside this Gaussian cylinder is found by integrating over thin cylindrical shells of radius $r'$, thickness $dr'$, and length $L$:\n$$dV = 2\\pi r' L\\, dr'$$\n$$dq = \\rho(r')\\, dV = (\\alpha r')(2\\pi r' L\\, dr') = 2\\pi \\alpha L r'^2\\, dr'$$\n$$q_{\\text{enc}} = \\int_0^r 2\\pi \\alpha L r'^2\\, dr' = 2\\pi \\alpha L \\left[\\dfrac{r'^3}{3}\\right]_0^r = \\dfrac{2\\pi \\alpha L r^3}{3}$$\n\n3. Applying Gauss's law:\n$$\\Phi = \\dfrac{q_{\\text{enc}}}{\\varepsilon_0}$$\n$$E(r) (2\\pi r L) = \\dfrac{2\\pi \\alpha L r^3}{3\\varepsilon_0}$$\n$$E(r) = \\dfrac{\\alpha r^2}{3\\varepsilon_0}$$",
-  "distractor_notes": "Option A encodes the mistake of applying spherical integration (where the volume element contains $r'^2$, leading to an integral of $r'^3$ and a factor of $1/4$). Option C encodes omitting the Jacobian factor $r'$ in the cylindrical volume element ($dV \\propto dr'$ rather than $r' dr'$), integrating to $r^2/2$. Option D encodes forgetting the factor of 2 in the cylinder's curved surface area (writing $\\pi r L$ instead of $2\\pi r L$).",
   "figure": {
    "kind": "diagram",
-   "description": "A 3D perspective diagram showing a horizontal solid cylinder of radius $R$. The central axis of symmetry is drawn as a horizontal dashed line through the center of the cylinder. Inside the solid cylinder, a coaxial dashed cylindrical Gaussian surface of radius $r$ and length $L$ is shown. A radial dimension arrow labeled $r$ points from the central axis to the curved surface of the inner cylinder where a point $P$ is marked. A dimension arrow labeled $R$ indicates the outer cylinder's radius. The label '$\\rho = \\alpha r$' is placed adjacent to the solid cylinder.",
+   "description": "Draw a circle as a cross-section of the sphere, with centre O and boundary. Draw a horizontal radius from O to the right-hand boundary, label its full length R, and mark P halfway along it with OP=R/2. Add a callout stating that the volume charge density at radial distance s from O is ρ(s)=ρ₀(1−s/R).",
    "smiles": null
   },
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$q_{\\text{enc}}=4\\pi\\rho_0\\int_0^{R/2}(1-s/R)s^2\\,ds=\\dfrac{5\\pi\\rho_0R^3}{48}$; $E( R/2)=\\dfrac{q_{\\text{enc}}}{4\\pi\\varepsilon_0(R/2)^2}=\\dfrac{5\\rho_0R}{48\\varepsilon_0}$.",
+  "distractor_notes": "A: treats the density at P as uniform throughout the enclosed sphere. C: uses an incorrect radial weighting when averaging the density over the enclosed volume. D: treats the density as its central value throughout the enclosed sphere."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

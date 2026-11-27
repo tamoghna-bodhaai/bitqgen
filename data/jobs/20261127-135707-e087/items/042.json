@@ -1,0 +1,68 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "SN1 reactivity and carbocation stability",
+  "archetype": "compare-and-rank",
+  "brief": "Rank four alkyl/benzyl halides in order of SN1 reactivity, including one aryl halide and one tertiary halide with a rearrangement-prone neighbour.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:60",
+   "2021:42",
+   "2026s1:40"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the same solvent and at the same temperature, arrange these chlorides in increasing order of initial $\\text{S}_\\text{N}1$ reactivity: chlorobenzene, 2-chloropropane, 2-chloro-2,3-dimethylbutane and 4-methoxybenzyl chloride.",
+ "options": [
+  "Chlorobenzene < 2-chloro-2,3-dimethylbutane < 2-chloropropane < 4-methoxybenzyl chloride",
+  "Chlorobenzene < 2-chloropropane < 2-chloro-2,3-dimethylbutane < 4-methoxybenzyl chloride",
+  "2-chloropropane < chlorobenzene < 2-chloro-2,3-dimethylbutane < 4-methoxybenzyl chloride",
+  "Chlorobenzene < 2-chloropropane < 4-methoxybenzyl chloride < 2-chloro-2,3-dimethylbutane"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "SN1 rate follows carbocation stabilization: chlorobenzene does not readily ionize; secondary isopropyl < tertiary alkyl; the para-methoxybenzyl cation is strongly resonance-stabilized and is fastest. Thus the order is A.",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Chlorobenzene: aryl C–Cl bond does not undergo ordinary $\\text{S}_\\text{N}1$ ionisation.\n2-Chloropropane $\\to$ secondary carbocation.\n2-Chloro-2,3-dimethylbutane $\\to$ tertiary carbocation.\n4-Methoxybenzyl chloride $\\to$ resonance-stabilised, methoxy-substituted benzyl carbocation.\nIncreasing reactivity: chlorobenzene < secondary < tertiary < 4-methoxybenzyl chloride.\n\nIndependent check: SN1 rate follows carbocation stabilization: chlorobenzene does not readily ionize; secondary isopropyl < tertiary alkyl; the para-methoxybenzyl cation is strongly resonance-stabilized and is fastest. Thus the order is A.",
+ "solution": "In an $\\text{S}_\\text{N}1$ reaction, reactivity increases with the stability of the carbocation formed. Chlorobenzene does not readily ionize; the other substrates form secondary, tertiary, and resonance-stabilized $p$-methoxybenzyl carbocations, respectively.\n$$\\text{Chlorobenzene} < \\text{2-chloropropane} < \\text{2-chloro-2,3-dimethylbutane} < \\text{4-methoxybenzyl chloride}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the same solvent and at the same temperature, arrange these chlorides in increasing order of initial $\\text{S}_\\text{N}1$ reactivity: chlorobenzene, 2-chloropropane, 2-chloro-2,3-dimethylbutane and 4-methoxybenzyl chloride.",
+  "options": [
+   "Chlorobenzene < 2-chloropropane < 2-chloro-2,3-dimethylbutane < 4-methoxybenzyl chloride",
+   "Chlorobenzene < 2-chloro-2,3-dimethylbutane < 2-chloropropane < 4-methoxybenzyl chloride",
+   "2-chloropropane < chlorobenzene < 2-chloro-2,3-dimethylbutane < 4-methoxybenzyl chloride",
+   "Chlorobenzene < 2-chloropropane < 4-methoxybenzyl chloride < 2-chloro-2,3-dimethylbutane"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Chlorobenzene: aryl C–Cl bond does not undergo ordinary $\\text{S}_\\text{N}1$ ionisation.\n2-Chloropropane $\\to$ secondary carbocation.\n2-Chloro-2,3-dimethylbutane $\\to$ tertiary carbocation.\n4-Methoxybenzyl chloride $\\to$ resonance-stabilised, methoxy-substituted benzyl carbocation.\nIncreasing reactivity: chlorobenzene < secondary < tertiary < 4-methoxybenzyl chloride.",
+  "distractor_notes": "B reverses the relative reactivity of secondary and tertiary carbocations; C incorrectly ranks the aryl chloride above an alkyl chloride for $\\text{S}_\\text{N}1$ ionisation; D underestimates the resonance stabilisation of the methoxy-substituted benzyl carbocation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

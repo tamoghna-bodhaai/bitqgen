@@ -1,0 +1,71 @@
+{
+ "qno": 70,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 70,
+  "section": "Chemistry",
+  "chapter": "Solid State",
+  "subtopic": "Point defects",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:59",
+   "2023s2:51",
+   "2025s1:41"
+  ],
+  "origin": "variant",
+  "bank_ref": "g4b4ad6d1151f"
+ },
+ "status": "ok",
+ "stem": "A rock-salt $MX$ crystal has $1.0\\times10^{22}$ unit cells, each with $4$ formula units. Its molar mass is $100\\ \\text{g mol}^{-1}$. If it loses $0.020\\ \\text{g}$ solely through Schottky defects, what percentage of its cation sites are vacant? Take $N_A=6.0\\times10^{23}\\ \\text{mol}^{-1}$.",
+ "options": [
+  "$0.30\\%$",
+  "$0.15\\%$",
+  "$0.60\\%$",
+  "$3.0\\%$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Schottky defects remove one MX formula unit per vacancy pair. Formula units lost = (0.020/100)×6.0×10²³ = 1.2×10²⁰. Cation sites = 1.0×10²²×4 = 4.0×10²². Vacancy percentage = (1.2×10²⁰/4.0×10²²)×100 = 0.30%.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Moles of Schottky pairs formed $=\\dfrac{0.020}{100}=2.0\\times10^{-4}\\ \\text{mol}$.\\nNumber of cation vacancies $=2.0\\times10^{-4}\\times6.0\\times10^{23}=1.2\\times10^{20}$.\\nTotal cation sites $=4\\times1.0\\times10^{22}=4.0\\times10^{22}$.\\nVacant percentage $=\\dfrac{1.2\\times10^{20}}{4.0\\times10^{22}}\\times100=0.30\\%$.\n\nIndependent check: Schottky defects remove one MX formula unit per vacancy pair. Formula units lost = (0.020/100)×6.0×10²³ = 1.2×10²⁰. Cation sites = 1.0×10²²×4 = 4.0×10²². Vacancy percentage = (1.2×10²⁰/4.0×10²²)×100 = 0.30%.",
+ "solution": "Each Schottky pair removes one $MX$ formula unit, so the number of cation vacancies is\n$$\\frac{0.020}{100}\\times 6.0\\times10^{23}=1.2\\times10^{20}.$$\nTotal cation sites $=4\\times1.0\\times10^{22}=4.0\\times10^{22}$; hence vacancy percentage $=\\dfrac{1.2\\times10^{20}}{4.0\\times10^{22}}\\times100=0.30\\%$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A rock-salt $MX$ crystal has $1.0\\times10^{22}$ unit cells, each with $4$ formula units. Its molar mass is $100\\ \\text{g mol}^{-1}$. If it loses $0.020\\ \\text{g}$ solely through Schottky defects, what percentage of its cation sites are vacant? Take $N_A=6.0\\times10^{23}\\ \\text{mol}^{-1}$.",
+  "options": [
+   "$0.15\\%$",
+   "$0.30\\%$",
+   "$0.60\\%$",
+   "$3.0\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Moles of Schottky pairs formed $=\\dfrac{0.020}{100}=2.0\\times10^{-4}\\ \\text{mol}$.\\nNumber of cation vacancies $=2.0\\times10^{-4}\\times6.0\\times10^{23}=1.2\\times10^{20}$.\\nTotal cation sites $=4\\times1.0\\times10^{22}=4.0\\times10^{22}$.\\nVacant percentage $=\\dfrac{1.2\\times10^{20}}{4.0\\times10^{22}}\\times100=0.30\\%$.",
+  "distractor_notes": "A: Divides by the total number of cation and anion sites instead of cation sites alone.\nC: Counts both vacancies in each Schottky pair as cation vacancies.\nD: Converts the vacancy fraction to a percentage incorrectly."
+ },
+ "variant_of": "g4b4ad6d1151f",
+ "author_model": "openai/gpt-6-luna-pro"
+}

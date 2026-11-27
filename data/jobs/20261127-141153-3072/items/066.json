@@ -1,0 +1,68 @@
+{
+ "qno": 66,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 66,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Freundlich adsorption isotherm",
+  "archetype": "graph slope reading",
+  "brief": "Give log(x/m) vs log P data/plot; extract the slope and intercept, state what slope = 1 means, and interpret adsorption behaviour — includes a subtle point about saturation limiting the isotherm.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:60",
+   "2025s2:35",
+   "2024s1:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the Freundlich isotherm, $\\log\\dfrac{x}{m}=\\log k+\\dfrac{1}{n}\\log P$. Common-log data give $(\\log P,\\log(x/m))=(0,-1)$ and $(1,0)$. Which interpretation is correct?",
+ "options": [
+  "$n=1$, $k=0.1$, and $\\dfrac{x}{m}=0.1P$; the model predicts a finite saturation plateau at high $P$.",
+  "$n=1$, $k=10$, and $\\dfrac{x}{m}=10P$; the model has no finite saturation plateau and must fail at sufficiently high $P$.",
+  "$n=1$, $k=0.1$, and $\\dfrac{x}{m}=0.1P$; the model has no finite saturation plateau and must fail at sufficiently high $P$.",
+  "$n=1$, $k=0.1$, and $\\dfrac{x}{m}=0.1/P$; adsorption decreases as $P$ increases."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The slope is 1/n = (0 - (-1))/(1 - 0) = 1, so n = 1. The intercept is log k = -1, so k = 0.1. Thus x/m = 0.1P, which has no finite saturation plateau.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{slope}=\\dfrac{0-(-1)}{1-0}=1=\\dfrac{1}{n}\\Rightarrow n=1$\n$\\text{intercept}=\\log k=-1\\Rightarrow k=0.1$\n$\\dfrac{x}{m}=0.1P$; Freundlich does not include a saturation limit.\n\nIndependent check: The slope is 1/n = (0 - (-1))/(1 - 0) = 1, so n = 1. The intercept is log k = -1, so k = 0.1. Thus x/m = 0.1P, which has no finite saturation plateau.",
+ "solution": "The slope is $1/n$, and the intercept is $\\log k$:\n$$\\frac{1}{n}=\\frac{0-(-1)}{1-0}=1,\\qquad \\log k=-1$$\nHence $n=1$, $k=0.1$, so $\\dfrac{x}{m}=0.1P$. The Freundlich isotherm has no finite saturation plateau and must fail at sufficiently high $P$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the Freundlich isotherm, $\\log\\dfrac{x}{m}=\\log k+\\dfrac{1}{n}\\log P$. Common-log data give $(\\log P,\\log(x/m))=(0,-1)$ and $(1,0)$. Which interpretation is correct?",
+  "options": [
+   "$n=1$, $k=0.1$, and $\\dfrac{x}{m}=0.1P$; the model has no finite saturation plateau and must fail at sufficiently high $P$.",
+   "$n=1$, $k=10$, and $\\dfrac{x}{m}=10P$; the model has no finite saturation plateau and must fail at sufficiently high $P$.",
+   "$n=1$, $k=0.1$, and $\\dfrac{x}{m}=0.1P$; the model predicts a finite saturation plateau at high $P$.",
+   "$n=1$, $k=0.1$, and $\\dfrac{x}{m}=0.1/P$; adsorption decreases as $P$ increases."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\text{slope}=\\dfrac{0-(-1)}{1-0}=1=\\dfrac{1}{n}\\Rightarrow n=1$\n$\\text{intercept}=\\log k=-1\\Rightarrow k=0.1$\n$\\dfrac{x}{m}=0.1P$; Freundlich does not include a saturation limit.",
+  "distractor_notes": "B: Treats $\\log k=-1$ as $k=10$. C: Incorrectly assigns a saturation plateau to the Freundlich model. D: Inverts the pressure dependence."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,69 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Practical Chemistry",
+  "subtopic": "Brown ring test",
+  "archetype": "fact recall",
+  "brief": "Brown ring test: ask which ion is confirmed and the formula of the coloured complex responsible",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:54",
+   "2022:60"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A sample is known to contain no nitrite. In the brown ring test, which ion and coloured complex correspond to a positive result?",
+ "options": [
+  "$\\text{NO}_2^-;\\ [\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$",
+  "$\\text{NO}_3^-;\\ [\\text{Fe}(\\text{NO})(\\text{CN})_5]^{2-}$",
+  "$\\text{NO}_3^-;\\ [\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$",
+  "$\\text{NO}_3^-;\\ [\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With nitrite absent, a positive brown ring test indicates nitrate. The brown nitrosyl complex is [Fe(H₂O)₅(NO)]²⁺.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "With nitrite absent, a positive brown ring test confirms $\\text{NO}_3^-$. \\\\\nColoured complex: $[\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$.\n\nIndependent check: With nitrite absent, a positive brown ring test indicates nitrate. The brown nitrosyl complex is [Fe(H₂O)₅(NO)]²⁺.",
+ "solution": "With nitrite absent, a positive brown ring test indicates nitrate ions, $\\text{NO}_3^-$. The brown ring is due to the complex $[\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A sample is known to contain no nitrite. In the brown ring test, which ion and coloured complex correspond to a positive result?",
+  "options": [
+   "$\\text{NO}_2^-;\\ [\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$",
+   "$\\text{NO}_3^-;\\ [\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$",
+   "$\\text{NO}_3^-;\\ [\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$",
+   "$\\text{NO}_3^-;\\ [\\text{Fe}(\\text{NO})(\\text{CN})_5]^{2-}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "With nitrite absent, a positive brown ring test confirms $\\text{NO}_3^-$. \\\\\nColoured complex: $[\\text{Fe}(\\text{H}_2\\text{O})_5(\\text{NO})]^{2+}$.",
+  "distractor_notes": "A: Names nitrite, which is excluded by the sample condition.\nC: Gives the hexaaquairon(II) ion instead of the nitrosyl complex.\nD: Gives an unrelated cyanide complex."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

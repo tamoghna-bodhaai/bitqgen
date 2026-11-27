@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Pointing to a boy, a girl said, \"He is the son of my paternal grandfather's only son.\" How is the boy related to the girl?",
+ "stem": "Pointing to a boy, Leena said, “His father is the only son of my maternal grandfather.” How is the boy related to Leena?",
  "options": [
   "Brother",
   "Cousin",
-  "Uncle",
-  "Father"
+  "Nephew",
+  "Uncle"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Girl's paternal grandfather's only son must be the girl's father (she is his daughter). The son of her father is her brother.",
-   "answer": "A",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Leena’s maternal grandfather’s only son is her maternal uncle. His son is Leena’s cousin.",
+   "answer": "B",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Break down the relation chain step-by-step from the speaker (the girl):\n- \"My paternal grandfather's only son\" = the girl's father (since the paternal grandfather has only one son).\n- \"He is the son of [my father]\" = the girl's brother.\n2. Therefore, the boy is the girl's brother.\n\nIndependent check: Girl's paternal grandfather's only son must be the girl's father (she is his daughter). The son of her father is her brother.",
- "solution": "",
+ "working": "Leena’s maternal grandfather’s only son is her maternal uncle. The boy is her uncle’s son, so he is her cousin. The other options do not fit this relationship.\n\nIndependent check: Leena’s maternal grandfather’s only son is her maternal uncle. His son is Leena’s cousin.",
+ "solution": "Leena’s maternal grandfather’s only son is her maternal uncle. The boy is her maternal uncle’s son, so he is her cousin.",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Pointing to a boy, a girl said, \"He is the son of my paternal grandfather's only son.\" How is the boy related to the girl?",
+  "stem": "Pointing to a boy, Leena said, “His father is the only son of my maternal grandfather.” How is the boy related to Leena?",
   "options": [
    "Brother",
    "Cousin",
-   "Uncle",
-   "Father"
+   "Nephew",
+   "Uncle"
   ],
   "option_smiles": null,
-  "answer": "A",
-  "working": "1. Break down the relation chain step-by-step from the speaker (the girl):\n- \"My paternal grandfather's only son\" = the girl's father (since the paternal grandfather has only one son).\n- \"He is the son of [my father]\" = the girl's brother.\n2. Therefore, the boy is the girl's brother.",
-  "distractor_notes": "B: Selected if the candidate assumes the grandfather has other sons or mistakes the relation for uncle's son (cousin).\nC: Selected if the candidate confuses 'son of father' with father's brother (uncle).\nD: Selected if the candidate stops one step early at \"paternal grandfather's only son\" (father).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Leena’s maternal grandfather’s only son is her maternal uncle. The boy is her uncle’s son, so he is her cousin. The other options do not fit this relationship.",
+  "distractor_notes": "A: mistakes the maternal uncle’s son for Leena’s brother. C: reverses the generational relationship. D: mistakes the boy for her uncle."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

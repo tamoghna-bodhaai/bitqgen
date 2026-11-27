@@ -1,0 +1,68 @@
+{
+ "qno": 63,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 63,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "de Broglie wavelength of electron",
+  "archetype": "single-formula numerical",
+  "brief": "Electron accelerated through a potential difference; compute de Broglie wavelength using the KE–V relation — moderate plug-in.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:39",
+   "2024s2:60",
+   "2026s2:58"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron initially at rest is accelerated through $150\\ \\text{V}$. Find its de Broglie wavelength using $\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}$. Take $h=6.626\\times10^{-34}\\ \\text{J s}$, $m_e=9.11\\times10^{-31}\\ \\text{kg}$ and $e=1.602\\times10^{-19}\\ \\text{C}$.",
+ "options": [
+  "$70.8\\ \\text{pm}$",
+  "$141\\ \\text{pm}$",
+  "$100\\ \\text{pm}$",
+  "$200\\ \\text{pm}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\lambda=\\dfrac{6.626\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.602\\times10^{-19})(150)}}\\approx1.00\\times10^{-10}\\,\\text{m}=100\\,\\text{pm}.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{6.626\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.602\\times10^{-19})(150)}}\\ \\text{m}=1.001\\times10^{-10}\\ \\text{m}=100\\ \\text{pm}$\n\nIndependent check: \\(\\lambda=\\dfrac{6.626\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.602\\times10^{-19})(150)}}\\approx1.00\\times10^{-10}\\,\\text{m}=100\\,\\text{pm}.",
+ "solution": "Using the de Broglie relation,\n$$\\lambda=\\frac{h}{\\sqrt{2m_e eV}}=\\frac{6.626\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.602\\times10^{-19})(150)}}\\ \\text{m}\n=1.00\\times10^{-10}\\ \\text{m}=100\\ \\text{pm}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An electron initially at rest is accelerated through $150\\ \\text{V}$. Find its de Broglie wavelength using $\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}$. Take $h=6.626\\times10^{-34}\\ \\text{J s}$, $m_e=9.11\\times10^{-31}\\ \\text{kg}$ and $e=1.602\\times10^{-19}\\ \\text{C}$.",
+  "options": [
+   "$70.8\\ \\text{pm}$",
+   "$100\\ \\text{pm}$",
+   "$141\\ \\text{pm}$",
+   "$200\\ \\text{pm}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\lambda=\\dfrac{6.626\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.602\\times10^{-19})(150)}}\\ \\text{m}=1.001\\times10^{-10}\\ \\text{m}=100\\ \\text{pm}$",
+  "distractor_notes": "A: extra factor of 2 in the denominator under the square root; C: omits the factor of 2 under the square root; D: doubles the computed wavelength."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

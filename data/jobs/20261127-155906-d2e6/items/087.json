@@ -1,0 +1,72 @@
+{
+ "qno": 87,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 87,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS)",
+  "archetype": "para-jumble",
+  "brief": "4 short sentences (PQRS) on a simple, familiar topic (e.g., daily habit or a well-known fact) with an obvious chronological or pronoun link; ask for the correct PQRS order.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:64",
+   "2023s2:65",
+   "2025s2:70"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Arrange the parts P, Q, R and S to form a meaningful sequence.\n\nMaya planted a seed in a pot.\n\nP: After a few days, it began to sprout.\nQ: In time, it grew into a young plant.\nR: She placed the pot near a sunny window.\nS: She watered it every morning.\n\nWhich is the correct sequence?",
+ "options": [
+  "R - S - P - Q",
+  "S - P - R - Q",
+  "P - R - S - Q",
+  "R - P - Q - S"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Place the pot near sunlight and water it before it sprouts; afterward, it grows into a young plant: R–S–P–Q.",
+   "answer": "A",
+   "confidence": 0.91,
+   "multiple_correct": false,
+   "issues": [
+    "The timing of placing the pot in sunlight and watering it is not explicit, though A is the only option with both actions before sprouting."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The pot is first placed by the window (R), then watered regularly (S). The seed sprouts (P) and later grows into a young plant (Q).\n\nIndependent check: Place the pot near sunlight and water it before it sprouts; afterward, it grows into a young plant: R–S–P–Q.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Arrange the parts P, Q, R and S to form a meaningful sequence.\n\nMaya planted a seed in a pot.\n\nP: After a few days, it began to sprout.\nQ: In time, it grew into a young plant.\nR: She placed the pot near a sunny window.\nS: She watered it every morning.\n\nWhich is the correct sequence?",
+  "options": [
+   "R - S - P - Q",
+   "S - P - R - Q",
+   "P - R - S - Q",
+   "R - P - Q - S"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "The pot is first placed by the window (R), then watered regularly (S). The seed sprouts (P) and later grows into a young plant (Q).",
+  "distractor_notes": "B: Places the pot after the seed sprouts. C: Has sprouting before the care steps. D: Puts later growth before regular watering."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

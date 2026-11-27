@@ -1,0 +1,71 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Scalar triple product",
+  "archetype": "expand box product",
+  "brief": "Compute the box product [a b c] for given position-type vectors, or use it to find the volume of a parallelepiped/condition for coplanarity; vectors chosen so components are small integers.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:123",
+   "2026s1:120",
+   "2026s2:121"
+  ],
+  "origin": "variant",
+  "bank_ref": "g2dd6542dca47"
+ },
+ "status": "ok",
+ "stem": "The edge vectors issuing from one vertex of a parallelepiped are $\\vec a=\\hat i+2\\hat k$, $\\vec b=2\\hat i+\\hat j$ and $\\vec c=2\\hat j+\\hat k$, in coordinate units. Find its volume.",
+ "options": [
+  "$1\\ \\text{unit}^3$",
+  "$9\\ \\text{unit}^3$",
+  "$7\\ \\text{unit}^3$",
+  "$18\\ \\text{unit}^3$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Volume = |a·(b×c)|. With a=(1,0,2), b=(2,1,0), c=(0,2,1), b×c=(1,−2,4), so the volume is |1+8|=9 unit³.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec b\\times\\vec c=\\hat i-2\\hat j+4\\hat k$\\n$V=|\\vec a\\cdot(\\vec b\\times\\vec c)|=|(1,0,2)\\cdot(1,-2,4)|=9\\ \\text{unit}^3$\n\nIndependent check: Volume = |a·(b×c)|. With a=(1,0,2), b=(2,1,0), c=(0,2,1), b×c=(1,−2,4), so the volume is |1+8|=9 unit³.",
+ "solution": "The volume is the absolute value of the scalar triple product:\n$$V=|\\vec a\\cdot(\\vec b\\times\\vec c)|=|(1,0,2)\\cdot(1,-2,4)|=|1+8|=9\\ \\text{unit}^3.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The edge vectors issuing from one vertex of a parallelepiped are $\\vec a=\\hat i+2\\hat k$, $\\vec b=2\\hat i+\\hat j$ and $\\vec c=2\\hat j+\\hat k$, in coordinate units. Find its volume.",
+  "options": [
+   "$1\\ \\text{unit}^3$",
+   "$7\\ \\text{unit}^3$",
+   "$9\\ \\text{unit}^3$",
+   "$18\\ \\text{unit}^3$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\vec b\\times\\vec c=\\hat i-2\\hat j+4\\hat k$\\n$V=|\\vec a\\cdot(\\vec b\\times\\vec c)|=|(1,0,2)\\cdot(1,-2,4)|=9\\ \\text{unit}^3$",
+  "distractor_notes": "A: retains only the first cofactor contribution; B: sign error in the third cofactor; D: doubles the scalar triple product."
+ },
+ "variant_of": "g2dd6542dca47",
+ "author_model": "openai/gpt-6-luna-pro"
+}

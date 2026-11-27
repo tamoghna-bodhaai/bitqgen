@@ -1,0 +1,68 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "positivity of polynomial",
+  "brief": "Use the onto-function counting formula with inclusion–exclusion to count surjections between two small sets.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:103",
+   "2024s2:99",
+   "2024s1:122"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $f$ and $g$ be functions from the real numbers to the real numbers, defined by $f(x)=x^2+1$ and $g(x)=x^2-4x+5$. How many real solutions does $f(g(x))=g(f(x))$ have?",
+ "options": [
+  "$0$",
+  "$3$",
+  "$2$",
+  "$1$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Equating the compositions gives \u001b[?;3;?m g(x)^2=(x^2-1)^2\u001b[?;0m, so either g(x)=x^2-1 or g(x)=-(x^2-1). The first yields x=3/2; the second has no real roots.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(g(x))=g(x)^2+1$ and $g(f(x))=(x^2-1)^2+1$, so $g(x)^2=(x^2-1)^2$. Thus $g(x)=x^2-1$ or $g(x)=1-x^2$. The first gives $x=\\dfrac{3}{2}$. The second gives $2x^2-4x+4=2((x-1)^2+1)=0$, which has no real solution. Hence there is exactly one real solution.\n\nIndependent check: Equating the compositions gives \u001b[?;3;?m g(x)^2=(x^2-1)^2\u001b[?;0m, so either g(x)=x^2-1 or g(x)=-(x^2-1). The first yields x=3/2; the second has no real roots.",
+ "solution": "Using $f(g(x))=g(x)^2+1$ and $g(f(x))=(x^2-1)^2+1$, equality requires\n$$g(x)^2=(x^2-1)^2,$$\nso $g(x)=x^2-1$ or $g(x)=1-x^2$. The first gives $x=\\frac{3}{2}$; the second reduces to $(x-1)^2+1=0$, which has no real roots. Hence there is exactly $1$ real solution.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Let $f$ and $g$ be functions from the real numbers to the real numbers, defined by $f(x)=x^2+1$ and $g(x)=x^2-4x+5$. How many real solutions does $f(g(x))=g(f(x))$ have?",
+  "options": [
+   "$0$",
+   "$1$",
+   "$2$",
+   "$3$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$f(g(x))=g(x)^2+1$ and $g(f(x))=(x^2-1)^2+1$, so $g(x)^2=(x^2-1)^2$. Thus $g(x)=x^2-1$ or $g(x)=1-x^2$. The first gives $x=\\dfrac{3}{2}$. The second gives $2x^2-4x+4=2((x-1)^2+1)=0$, which has no real solution. Hence there is exactly one real solution.",
+  "distractor_notes": "A: Misses the solution from the first signed case; C: Counts the impossible second case as a real root; D: Overcounts roots when splitting the equality of squares."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

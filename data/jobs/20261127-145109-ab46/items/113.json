@@ -1,0 +1,70 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Tangents and normals",
+  "archetype": "simplify then differentiate",
+  "brief": "y = product/quotient of trig functions of 2x; simplify using identities before differentiating, then evaluate derivative at a specific angle.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:121",
+   "2026s1:123",
+   "2022:97"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The curve is $y=\\dfrac{\\sin 2x}{1+\\cos 2x}$. What is the slope of its normal at $x=\\dfrac{\\pi}{3}$?",
+ "options": [
+  "$-\\dfrac{1}{4}$",
+  "$-4$",
+  "$\\dfrac{1}{4}$",
+  "$4$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(\\frac{\\sin 2x}{1+\\cos 2x}=\\tan x\\), the tangent slope is \\(\\sec^2(\\pi/3)=4\\). The normal slope is \\(-1/4\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{\\sin 2x}{1+\\cos 2x}=\\tan x,\\quad y'=\\sec^2x,\\quad y'(\\pi/3)=4,\\quad m_{\\text{normal}}=-\\dfrac{1}{4}.$\n\nIndependent check: Using \\(\\frac{\\sin 2x}{1+\\cos 2x}=\\tan x\\), the tangent slope is \\(\\sec^2(\\pi/3)=4\\). The normal slope is \\(-1/4\\).",
+ "solution": "Using $1+\\tan^2x=\\frac{1}{\\cos^2x}$ and the identity $\\frac{\\sin 2x}{1+\\cos 2x}=\\tan x$,\n$$y'=\\sec^2x,\\qquad y'\\left(\\frac{\\pi}{3}\\right)=4.$$\nThe normal slope is the negative reciprocal of the tangent slope: $m_{\\text{normal}}=-\\frac{1}{4}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The curve is $y=\\dfrac{\\sin 2x}{1+\\cos 2x}$. What is the slope of its normal at $x=\\dfrac{\\pi}{3}$?",
+  "options": [
+   "$-4$",
+   "$-\\dfrac{1}{4}$",
+   "$\\dfrac{1}{4}$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{\\sin 2x}{1+\\cos 2x}=\\tan x,\\quad y'=\\sec^2x,\\quad y'(\\pi/3)=4,\\quad m_{\\text{normal}}=-\\dfrac{1}{4}.$",
+  "distractor_notes": "A: sign error when taking the negative reciprocal of the tangent slope.\\nC: reciprocal of the tangent slope without the negative sign.\\nD: gives the tangent slope instead of the normal slope."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 21,
+ "section": "Physics",
+ "slot": {
+  "qno": 21,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE intensity",
+  "archetype": "phase difference to intensity",
+  "brief": "Given the phase difference between two waves at a point on the screen, find the resultant intensity as a fraction of the maximum.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:6",
+   "2026s1:17",
+   "2023s2:23"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd0c3bbd6e7cc"
+ },
+ "status": "ok",
+ "stem": "In a Young's double-slit arrangement, the two waves reaching a screen point have intensities in the ratio $16:9$ and phase difference $60^\\circ$. What is the intensity at this point as a fraction of the maximum possible intensity?",
+ "options": [
+  "$\\dfrac{13}{49}$",
+  "$\\dfrac{25}{49}$",
+  "$\\dfrac{37}{49}$",
+  "$\\dfrac{37}{25}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the intensities be 16 and 9, so the amplitude ratio is 4:3. The combined intensity is 16+9+2√(16·9)cos60°=37; the maximum is (4+3)²=49. Thus the fraction is 37/49.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $I_1=16I_0$ and $I_2=9I_0$, so the amplitudes are in the ratio $4:3$.  \n$I=I_1+I_2+2\\sqrt{I_1I_2}\\cos60^\\circ=37I_0$.  \n$I_{\\max}=(\\sqrt{I_1}+\\sqrt{I_2})^2=49I_0$.  \n$\\dfrac{I}{I_{\\max}}=\\dfrac{37}{49}$.\n\nIndependent check: Let the intensities be 16 and 9, so the amplitude ratio is 4:3. The combined intensity is 16+9+2√(16·9)cos60°=37; the maximum is (4+3)²=49. Thus the fraction is 37/49.",
+ "solution": "For two waves, $I=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\phi$ and $I_{\\max}=(\\sqrt{I_1}+\\sqrt{I_2})^2$.\n$$\\frac{I}{I_{\\max}}=\\frac{16+9+2\\sqrt{16\\cdot9}\\cos60^\\circ}{(4+3)^2}=\\frac{37}{49}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a Young's double-slit arrangement, the two waves reaching a screen point have intensities in the ratio $16:9$ and phase difference $60^\\circ$. What is the intensity at this point as a fraction of the maximum possible intensity?",
+  "options": [
+   "$\\dfrac{13}{49}$",
+   "$\\dfrac{25}{49}$",
+   "$\\dfrac{37}{49}$",
+   "$\\dfrac{37}{25}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $I_1=16I_0$ and $I_2=9I_0$, so the amplitudes are in the ratio $4:3$.  \n$I=I_1+I_2+2\\sqrt{I_1I_2}\\cos60^\\circ=37I_0$.  \n$I_{\\max}=(\\sqrt{I_1}+\\sqrt{I_2})^2=49I_0$.  \n$\\dfrac{I}{I_{\\max}}=\\dfrac{37}{49}$.",
+  "distractor_notes": "A: Omits the interference term in the intensity at the point.\nB: Subtracts the interference term instead of adding it.\nD: Normalizes by $I_1+I_2$ rather than by the maximum intensity."
+ },
+ "variant_of": "gd0c3bbd6e7cc",
+ "author_model": "openai/gpt-6-luna-pro"
+}

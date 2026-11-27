@@ -1,0 +1,70 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of a circle through three given points by solving for centre (perpendicular bisectors) or general-form coefficients.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:106",
+   "2025s1:112",
+   "2023s2:111"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Find the equation of the circle passing through $(1,2)$, $(4,1)$ and $(2,5)$.",
+ "options": [
+  "$x^2+y^2-6x-6y+13=0$",
+  "$x^2+y^2+6x+6y+13=0$",
+  "$x^2+y^2-6x-6y-13=0$",
+  "$x^2+y^2-6x+6y+13=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the circle be x²+y²+Dx+Ey+F=0. Substitution gives 3D−E=−12, D+3E=−24, so D=E=−6 and F=13.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the circle be $x^2+y^2+Dx+Ey+F=0$. Substitution gives $5+D+2E+F=0$, $17+4D+E+F=0$, $29+2D+5E+F=0$. Hence $3D-E=-12$, $D+3E=-24$, so $D=E=-6$ and $F=13$.\n\nIndependent check: Let the circle be x²+y²+Dx+Ey+F=0. Substitution gives 3D−E=−12, D+3E=−24, so D=E=−6 and F=13.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the equation of the circle passing through $(1,2)$, $(4,1)$ and $(2,5)$.",
+  "options": [
+   "$x^2+y^2-6x-6y+13=0$",
+   "$x^2+y^2+6x+6y+13=0$",
+   "$x^2+y^2-6x-6y-13=0$",
+   "$x^2+y^2-6x+6y+13=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let the circle be $x^2+y^2+Dx+Ey+F=0$. Substitution gives $5+D+2E+F=0$, $17+4D+E+F=0$, $29+2D+5E+F=0$. Hence $3D-E=-12$, $D+3E=-24$, so $D=E=-6$ and $F=13$.",
+  "distractor_notes": "B: uses incorrect signs for both linear coefficients. C: gets the constant term's sign wrong. D: uses the wrong sign for the coefficient of $y$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

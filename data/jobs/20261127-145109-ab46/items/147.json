@@ -1,0 +1,70 @@
+{
+ "qno": 147,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 147,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Range of a sin + b cos",
+  "archetype": "amplitude bound",
+  "brief": "Find the range or maximum/minimum of an expression of the form a sin θ + b cos θ + c using the amplitude bound √(a² + b²).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:127",
+   "2021:111",
+   "2025s1:126"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $0\\le\\theta\\le\\pi$, the range of $3\\sin\\theta+4\\cos\\theta+2$ is",
+ "options": [
+  "$\\left[-2,7\\right]$",
+  "$\\left[-3,7\\right]$",
+  "$\\left[-2,6\\right]$",
+  "$\\left[-4,5\\right]$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The interior critical point satisfies (sinθ, cosθ)=(3/5,4/5), giving the maximum value 7. At the endpoints, the values are 6 and −2, so the range is [−2,7].",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $\\cos\\varphi=\\dfrac{3}{5}$, $\\sin\\varphi=\\dfrac{4}{5}$, $0<\\varphi<\\dfrac{\\pi}{2}$. Then $3\\sin\\theta+4\\cos\\theta=5\\sin(\\theta+\\varphi)$; $\\theta+\\varphi\\in[\\varphi,\\pi+\\varphi]$, so $\\sin(\\theta+\\varphi)\\in\\left[-\\dfrac{4}{5},1\\right]$. Hence the range is $[2-4,2+5]=[-2,7]$.\n\nIndependent check: The interior critical point satisfies (sinθ, cosθ)=(3/5,4/5), giving the maximum value 7. At the endpoints, the values are 6 and −2, so the range is [−2,7].",
+ "solution": "Write $3\\sin\\theta+4\\cos\\theta=5\\sin(\\theta+\\varphi)$, where $\\cos\\varphi=\\frac35$ and $\\sin\\varphi=\\frac45$. Since $\\theta+\\varphi\\in[\\varphi,\\pi+\\varphi]$, its sine ranges from $-\\frac45$ to $1$.\n$$2+5\\left[-\\frac45,1\\right]=[-2,7]$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For $0\\le\\theta\\le\\pi$, the range of $3\\sin\\theta+4\\cos\\theta+2$ is",
+  "options": [
+   "$\\left[-3,7\\right]$",
+   "$\\left[-2,7\\right]$",
+   "$\\left[-2,6\\right]$",
+   "$\\left[-4,5\\right]$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Let $\\cos\\varphi=\\dfrac{3}{5}$, $\\sin\\varphi=\\dfrac{4}{5}$, $0<\\varphi<\\dfrac{\\pi}{2}$. Then $3\\sin\\theta+4\\cos\\theta=5\\sin(\\theta+\\varphi)$; $\\theta+\\varphi\\in[\\varphi,\\pi+\\varphi]$, so $\\sin(\\theta+\\varphi)\\in\\left[-\\dfrac{4}{5},1\\right]$. Hence the range is $[2-4,2+5]=[-2,7]$.",
+  "distractor_notes": "A: uses the full unrestricted amplitude range; C: checks endpoints but misses the interior maximum; D: omits the constant shift."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

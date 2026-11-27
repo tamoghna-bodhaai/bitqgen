@@ -1,0 +1,71 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Bohr radius scaling",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:39",
+   "2021:58",
+   "2022:34"
+  ],
+  "origin": "variant",
+  "bank_ref": "g20676ed41481"
+ },
+ "status": "ok",
+ "stem": "A hydrogen-like ion with nuclear charge $+4e$ has an electron orbit of radius $9a_0$. What is its principal quantum number?",
+ "options": [
+  "$1.5$",
+  "$3$",
+  "$6$",
+  "$36$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a hydrogen-like ion, r_n = n²a₀/Z. With r_n = 9a₀ and Z = 4, n² = 36, so n = 6.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$r_n=a_0\\dfrac{n^2}{Z}$\n$9a_0=a_0\\dfrac{n^2}{4}\\Rightarrow n^2=36\\Rightarrow n=6$\n\nIndependent check: For a hydrogen-like ion, r_n = n²a₀/Z. With r_n = 9a₀ and Z = 4, n² = 36, so n = 6.",
+ "solution": "For a hydrogen-like ion, $r_n=a_0\\dfrac{n^2}{Z}$. Thus,\n$$9a_0=a_0\\dfrac{n^2}{4}\\Rightarrow n^2=36\\Rightarrow n=6.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A hydrogen-like ion with nuclear charge $+4e$ has an electron orbit of radius $9a_0$. What is its principal quantum number?",
+  "options": [
+   "$1.5$",
+   "$3$",
+   "$6$",
+   "$36$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$r_n=a_0\\dfrac{n^2}{Z}$\n$9a_0=a_0\\dfrac{n^2}{4}\\Rightarrow n^2=36\\Rightarrow n=6$",
+  "distractor_notes": "A: Uses the inverse dependence on nuclear charge. B: Omits the nuclear-charge factor. D: Reports $n^2$ as $n$."
+ },
+ "variant_of": "g20676ed41481",
+ "author_model": "openai/gpt-6-luna-pro"
+}

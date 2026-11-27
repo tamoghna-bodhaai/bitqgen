@@ -1,0 +1,78 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Cannizzaro reaction",
+  "archetype": "name reaction identification",
+  "brief": "Show reaction scheme in figure: aldehyde lacking α-H with concentrated NaOH giving alcohol + salt; identify the reaction and products.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:36",
+   "2025s1:36",
+   "2026s1:58"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "As shown in the figure, an aldehyde is treated with concentrated aqueous $\\text{NaOH}$. Which reaction and product pair are represented?",
+ "options": [
+  "Aldol reaction; a $\\beta$-hydroxy aldehyde",
+  "Tishchenko reaction; bis(4-methoxybenzyl) 4-methoxybenzoate",
+  "Cannizzaro reaction; 4-methoxybenzyl alcohol and sodium 4-methoxybenzoate",
+  "Cannizzaro reaction; 4-methoxybenzyl alcohol and 4-methoxybenzoic acid"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q058_stem_v0.png",
+  "width_pct": 95,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "4-Methoxybenzaldehyde has no α-hydrogen, so concentrated aqueous NaOH gives a Cannizzaro disproportionation: 4-methoxybenzyl alcohol and sodium 4-methoxybenzoate.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "4-Methoxybenzaldehyde has no $\\alpha$-hydrogen.\n$2\\,\\text{ArCHO}+\\text{NaOH}\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOONa}$.\nThis disproportionation is the Cannizzaro reaction.\n\nIndependent check: 4-Methoxybenzaldehyde has no α-hydrogen, so concentrated aqueous NaOH gives a Cannizzaro disproportionation: 4-methoxybenzyl alcohol and sodium 4-methoxybenzoate.",
+ "solution": "4-Methoxybenzaldehyde has no $\\alpha$-hydrogen, so it undergoes the Cannizzaro reaction in concentrated aqueous NaOH.\n$$2\\,\\text{ArCHO}+\\text{NaOH}\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOONa}$$\nThe products are 4-methoxybenzyl alcohol and sodium 4-methoxybenzoate.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "As shown in the figure, an aldehyde is treated with concentrated aqueous $\\text{NaOH}$. Which reaction and product pair are represented?",
+  "options": [
+   "Cannizzaro reaction; 4-methoxybenzyl alcohol and sodium 4-methoxybenzoate",
+   "Tishchenko reaction; bis(4-methoxybenzyl) 4-methoxybenzoate",
+   "Aldol reaction; a $\\beta$-hydroxy aldehyde",
+   "Cannizzaro reaction; 4-methoxybenzyl alcohol and 4-methoxybenzoic acid"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a reaction scheme with two molecules of 4-methoxybenzaldehyde on the left, followed by concentrated aqueous NaOH (label above the arrow). On the right show 4-methoxybenzyl alcohol and sodium 4-methoxybenzoate as the two products. Include a coefficient 2 before the aldehyde and show the products in a 1:1 ratio.",
+   "smiles": "COc1ccc(C=O)cc1.COc1ccc(C=O)cc1>>COc1ccc(CO)cc1.[Na+].[O-]C(=O)c1ccc(OC)cc1"
+  },
+  "difficulty_estimate": 2,
+  "working": "4-Methoxybenzaldehyde has no $\\alpha$-hydrogen.\n$2\\,\\text{ArCHO}+\\text{NaOH}\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOONa}$.\nThis disproportionation is the Cannizzaro reaction.",
+  "distractor_notes": "B: confuses disproportionation with ester formation in the Tishchenko reaction. C: assigns aldol reaction despite the absence of an $\\alpha$-hydrogen. D: gives the acid instead of its sodium salt under basic conditions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

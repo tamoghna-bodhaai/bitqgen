@@ -1,0 +1,68 @@
+{
+ "qno": 67,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 67,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment of lanthanide ions",
+  "archetype": "unpaired electron count",
+  "brief": "Given three lanthanide ions (e.g., Ln3+ series), compute spin-only vs orbital contribution and pick which has the maximum magnetic moment — requires electron-counting in f orbitals and trend reasoning.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:37",
+   "2025s2:48",
+   "2022:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $\\text{Ce}^{3+}$ ($Z=58$), $\\text{Tb}^{3+}$ ($Z=65$) and $\\text{Er}^{3+}$ ($Z=68$), what is the greatest spin-only magnetic moment? Use $\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$, where $n$ is the number of unpaired electrons.",
+ "options": [
+  "$\\sqrt{3}\\ \\text{BM}$",
+  "$4\\sqrt{3}\\ \\text{BM}$",
+  "$\\sqrt{15}\\ \\text{BM}$",
+  "$\\sqrt{80}\\ \\text{BM}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Ce³⁺: 4f¹, n = 1; Tb³⁺: 4f⁸, n = 6; Er³⁺: 4f¹¹, n = 3. Their spin-only moments are √3, 4√3, and √15 BM, respectively. The greatest is 4√3 BM.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Ln}^{3+}: 4f^{Z-57}$\n$\\text{Ce}^{3+}: 4f^1,\\ n=1,\\ \\mu=\\sqrt{3}\\ \\text{BM}$\n$\\text{Tb}^{3+}: 4f^8,\\ n=6,\\ \\mu=\\sqrt{48}=4\\sqrt{3}\\ \\text{BM}$\n$\\text{Er}^{3+}: 4f^{11},\\ n=3,\\ \\mu=\\sqrt{15}\\ \\text{BM}$\n$4\\sqrt{3}>\\sqrt{15}>\\sqrt{3}$\n\nIndependent check: Ce³⁺: 4f¹, n = 1; Tb³⁺: 4f⁸, n = 6; Er³⁺: 4f¹¹, n = 3. Their spin-only moments are √3, 4√3, and √15 BM, respectively. The greatest is 4√3 BM.",
+ "solution": "For $\\text{Ln}^{3+}$, the configuration is $4f^{Z-57}$. Thus $\\text{Ce}^{3+}:4f^1$ ($n=1$), $\\text{Tb}^{3+}:4f^8$ ($n=6$), and $\\text{Er}^{3+}:4f^{11}$ ($n=3$).\nUsing $={n(n+2)}$ BM, their moments are $3$, ${48}=43$, and ${15}$ BM, respectively; the greatest is $43$ BM.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $\\text{Ce}^{3+}$ ($Z=58$), $\\text{Tb}^{3+}$ ($Z=65$) and $\\text{Er}^{3+}$ ($Z=68$), what is the greatest spin-only magnetic moment? Use $\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$, where $n$ is the number of unpaired electrons.",
+  "options": [
+   "$\\sqrt{3}\\ \\text{BM}$",
+   "$\\sqrt{15}\\ \\text{BM}$",
+   "$4\\sqrt{3}\\ \\text{BM}$",
+   "$\\sqrt{80}\\ \\text{BM}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{Ln}^{3+}: 4f^{Z-57}$\n$\\text{Ce}^{3+}: 4f^1,\\ n=1,\\ \\mu=\\sqrt{3}\\ \\text{BM}$\n$\\text{Tb}^{3+}: 4f^8,\\ n=6,\\ \\mu=\\sqrt{48}=4\\sqrt{3}\\ \\text{BM}$\n$\\text{Er}^{3+}: 4f^{11},\\ n=3,\\ \\mu=\\sqrt{15}\\ \\text{BM}$\n$4\\sqrt{3}>\\sqrt{15}>\\sqrt{3}$",
+  "distractor_notes": "A: gives the moment for $\\text{Ce}^{3+}$ rather than the maximum.\nB: gives the moment for $\\text{Er}^{3+}$ rather than the maximum.\nD: incorrectly counts all eight $4f$ electrons in $\\text{Tb}^{3+}$ as unpaired."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Identities of inverse trig functions",
+  "archetype": "identity substitution",
+  "brief": "Evaluate an expression like tan⁻¹x + tan⁻¹y or a composite sin⁻¹(something) reduced via standard identities, with a branch/sign subtlety; small numbers.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:102",
+   "2024s2:116",
+   "2025s2:120"
+  ],
+  "origin": "variant",
+  "bank_ref": "g77f7bcef2bb3"
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\sin^{-1}\\left(\\sin\\dfrac{7\\pi}{6}\\right)$.",
+ "options": [
+  "$\\dfrac{5\\pi}{6}$",
+  "$\\dfrac{\\pi}{6}$",
+  "$-\\dfrac{\\pi}{6}$",
+  "$\\dfrac{7\\pi}{6}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "σin(7π/6) = -1/2, and the principal value of arcsin(-1/2) is -π/6.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sin\\dfrac{7\\pi}{6}=-\\dfrac12$; hence $\\sin^{-1}\\left(-\\dfrac12\\right)=-\\dfrac{\\pi}{6}$, since $\\sin^{-1}x\\in\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$.\n\nIndependent check: σin(7π/6) = -1/2, and the principal value of arcsin(-1/2) is -π/6.",
+ "solution": "Since $\\sin\\frac{7\\pi}{6}=-\\frac12$ and $\\sin^{-1}x\\in\\left[-\\frac{\\pi}{2},\\frac{\\pi}{2}\\right]$,\n$$\\sin^{-1}\\left(\\sin\\frac{7\\pi}{6}\\right)=\\sin^{-1}\\left(-\\frac12\\right)=-\\frac{\\pi}{6}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate $\\sin^{-1}\\left(\\sin\\dfrac{7\\pi}{6}\\right)$.",
+  "options": [
+   "$-\\dfrac{\\pi}{6}$",
+   "$\\dfrac{\\pi}{6}$",
+   "$\\dfrac{5\\pi}{6}$",
+   "$\\dfrac{7\\pi}{6}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\sin\\dfrac{7\\pi}{6}=-\\dfrac12$; hence $\\sin^{-1}\\left(-\\dfrac12\\right)=-\\dfrac{\\pi}{6}$, since $\\sin^{-1}x\\in\\left[-\\dfrac{\\pi}{2},\\dfrac{\\pi}{2}\\right]$.",
+  "distractor_notes": "B: loses the negative sign. C: uses the supplementary angle instead of the principal value. D: returns the angle without applying the principal-value range."
+ },
+ "variant_of": "g77f7bcef2bb3",
+ "author_model": "openai/gpt-6-luna-pro"
+}

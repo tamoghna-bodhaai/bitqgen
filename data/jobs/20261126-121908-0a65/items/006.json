@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "If the pressure of an ideal gas is doubled at constant temperature, the speed of sound in the gas will:",
+ "stem": "For a given ideal gas, its absolute temperature is raised from $T$ to $4T$. Assuming the ratio of specific heats remains constant, the speed of sound changes by a factor of:",
  "options": [
-  "be halved",
-  "remain unchanged",
-  "increase by a factor of $\\sqrt{2}$",
-  "be doubled"
+  "$1$",
+  "$\\sqrt{2}$",
+  "$2$",
+  "$4$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "v = sqrt(γP/ρ) = sqrt(γRT/M). At constant temperature, doubling P also doubles ρ, so P/ρ is unchanged; v depends only on T. Numeric check confirms v2/v1 = 1.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an ideal gas, speed of sound is proportional to √T when γ is constant. Raising T to 4T doubles the speed.",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The speed of sound $v$ in an ideal gas is given by Laplace's formula:\n$$v = \\sqrt{\\frac{\\gamma P}{\\rho}} = \\sqrt{\\frac{\\gamma R T}{M}}$$\nwhere $\\gamma$ is the ratio of specific heats, $R$ is the universal gas constant, $T$ is the absolute temperature, and $M$ is the molar mass of the gas.\n\nFrom the equation $v = \\sqrt{\\dfrac{\\gamma R T}{M}}$, the speed of sound depends only on the temperature $T$ for a given gas and is independent of pressure $P$.\n\nAlternatively, according to Boyle's law, at constant temperature $P \\propto \\rho$, which means the ratio $\\dfrac{P}{\\rho}$ remains constant when pressure is doubled. Therefore, the speed of sound remains unchanged.\n\nIndependent check: v = sqrt(γP/ρ) = sqrt(γRT/M). At constant temperature, doubling P also doubles ρ, so P/ρ is unchanged; v depends only on T. Numeric check confirms v2/v1 = 1.",
+ "working": "$v = \\sqrt{\\dfrac{\\gamma R T}{M}}$; hence $\\dfrac{v_2}{v_1} = \\sqrt{\\dfrac{4T}{T}} = 2$.\n\nIndependent check: For an ideal gas, speed of sound is proportional to √T when γ is constant. Raising T to 4T doubles the speed.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "If the pressure of an ideal gas is doubled at constant temperature, the speed of sound in the gas will:",
+  "stem": "For a given ideal gas, its absolute temperature is raised from $T$ to $4T$. Assuming the ratio of specific heats remains constant, the speed of sound changes by a factor of:",
   "options": [
-   "be halved",
-   "remain unchanged",
-   "increase by a factor of $\\sqrt{2}$",
-   "be doubled"
+   "$1$",
+   "$\\sqrt{2}$",
+   "$2$",
+   "$4$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The speed of sound $v$ in an ideal gas is given by Laplace's formula:\n$$v = \\sqrt{\\frac{\\gamma P}{\\rho}} = \\sqrt{\\frac{\\gamma R T}{M}}$$\nwhere $\\gamma$ is the ratio of specific heats, $R$ is the universal gas constant, $T$ is the absolute temperature, and $M$ is the molar mass of the gas.\n\nFrom the equation $v = \\sqrt{\\dfrac{\\gamma R T}{M}}$, the speed of sound depends only on the temperature $T$ for a given gas and is independent of pressure $P$.\n\nAlternatively, according to Boyle's law, at constant temperature $P \\propto \\rho$, which means the ratio $\\dfrac{P}{\\rho}$ remains constant when pressure is doubled. Therefore, the speed of sound remains unchanged.",
-  "distractor_notes": "Option A ('be halved') mistakenly assumes an inverse relationship between wave speed and pressure.\nOption C ('increase by a factor of $\\sqrt{2}$') uses $v = \\sqrt{\\gamma P / \\rho}$ but forgets that density $\\rho$ also doubles at constant temperature, incorrectly assuming $v \\propto \\sqrt{P}$.\nOption D ('be doubled') erroneously assumes a direct linear dependence of sound speed on pressure.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$v = \\sqrt{\\dfrac{\\gamma R T}{M}}$; hence $\\dfrac{v_2}{v_1} = \\sqrt{\\dfrac{4T}{T}} = 2$.",
+  "distractor_notes": "A: assumes speed is temperature-independent. B: uses the temperature ratio without taking its square root correctly. D: assumes speed is directly proportional to temperature."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

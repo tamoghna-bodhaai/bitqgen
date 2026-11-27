@@ -1,0 +1,70 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Radiation pressure / momentum of EM waves",
+  "archetype": "momentum change",
+  "brief": "A plane EM wave of given intensity strikes a surface that is perfectly reflecting or absorbing; find the radiation pressure (or force on the surface) — distinguishing the two reflection cases is the key step.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:25",
+   "2026s1:6",
+   "2024s2:10"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A plane electromagnetic wave of intensity $900$ W m$^{-2}$ is incident normally on a perfectly reflecting mirror of area $0.50$ m$^2$. Taking $c=3.0\\times10^8$ m s$^{-1}$, what force does the wave exert on the mirror?",
+ "options": [
+  "$1.5\\times10^{-6}\\ \\text{N}$",
+  "$3.0\\times10^{-6}\\ \\text{N}$",
+  "$6.0\\times10^{-6}\\ \\text{N}$",
+  "$12.0\\times10^{-6}\\ \\text{N}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a perfectly reflecting mirror at normal incidence, F = 2IA/c = 2(900)(0.50)/(3.0×10^8) = 3.0×10^-6 N.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$p=\\dfrac{2I}{c}$; $F=pA=\\dfrac{2(900)(0.50)}{3.0\\times10^8}=3.0\\times10^{-6}$ N.\n\nIndependent check: For a perfectly reflecting mirror at normal incidence, F = 2IA/c = 2(900)(0.50)/(3.0×10^8) = 3.0×10^-6 N.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A plane electromagnetic wave of intensity $900$ W m$^{-2}$ is incident normally on a perfectly reflecting mirror of area $0.50$ m$^2$. Taking $c=3.0\\times10^8$ m s$^{-1}$, what force does the wave exert on the mirror?",
+  "options": [
+   "$1.5\\times10^{-6}\\ \\text{N}$",
+   "$3.0\\times10^{-6}\\ \\text{N}$",
+   "$6.0\\times10^{-6}\\ \\text{N}$",
+   "$12.0\\times10^{-6}\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$p=\\dfrac{2I}{c}$; $F=pA=\\dfrac{2(900)(0.50)}{3.0\\times10^8}=3.0\\times10^{-6}$ N.",
+  "distractor_notes": "A: uses the absorbing-surface pressure; C: omits the mirror area when converting pressure to force; D: applies an extra factor of $2$ to the reflection pressure."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

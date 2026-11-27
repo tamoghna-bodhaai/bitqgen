@@ -1,0 +1,68 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Geometry of complex numbers / locus",
+  "archetype": "factorisation",
+  "brief": "Hard: given |z−z₁| = k|z−z₂| or argument condition, find the locus (circle/line) and then a parameter (radius, centre, min |z|) — multi-step with conjugate manipulation.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:134",
+   "2025s2:100",
+   "2026s2:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "For complex $z$, if $|z-(1+i)|=2|z-(5+i)|$, the least possible value of $|z|$ is",
+ "options": [
+  "$\\dfrac{\\sqrt{370}-16}{3}$",
+  "$\\dfrac{8}{3}$",
+  "$\\dfrac{\\sqrt{370}-8}{3}$",
+  "$\\dfrac{\\sqrt{370}+8}{3}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Squaring the condition gives the circle with centre \\((19/3,1)\\) and radius \\(8/3\\). Its centre is \\(\\sqrt{370}/3\\) from the origin, so the least possible \\(|z|\\) is \\((\\sqrt{370}-8)/3\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $z=x+iy$. $(x-1)^2+(y-1)^2=4[(x-5)^2+(y-1)^2]$. Hence $(x-\\dfrac{19}{3})^2+(y-1)^2=\\dfrac{64}{9}$. Centre distance from origin $=\\dfrac{\\sqrt{370}}{3}$; radius $=\\dfrac{8}{3}$. Minimum $|z|=\\dfrac{\\sqrt{370}-8}{3}$.\n\nIndependent check: Squaring the condition gives the circle with centre \\((19/3,1)\\) and radius \\(8/3\\). Its centre is \\(\\sqrt{370}/3\\) from the origin, so the least possible \\(|z|\\) is \\((\\sqrt{370}-8)/3\\).",
+ "solution": "Let $z=x+iy$. Squaring the given condition gives\n$$(x-1)^2+(y-1)^2=4[(x-5)^2+(y-1)^2],$$\nso $(x-\\frac{19}{3})^2+(y-1)^2=\\frac{64}{9}$. The circle’s centre is $\\frac{\\sqrt{370}}{3}$ from the origin and its radius is $\\frac{8}{3}$; hence the least $|z|=\\frac{\\sqrt{370}-8}{3}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For complex $z$, if $|z-(1+i)|=2|z-(5+i)|$, the least possible value of $|z|$ is",
+  "options": [
+   "$\\dfrac{\\sqrt{370}-16}{3}$",
+   "$\\dfrac{8}{3}$",
+   "$\\dfrac{\\sqrt{370}-8}{3}$",
+   "$\\dfrac{\\sqrt{370}+8}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Let $z=x+iy$. $(x-1)^2+(y-1)^2=4[(x-5)^2+(y-1)^2]$. Hence $(x-\\dfrac{19}{3})^2+(y-1)^2=\\dfrac{64}{9}$. Centre distance from origin $=\\dfrac{\\sqrt{370}}{3}$; radius $=\\dfrac{8}{3}$. Minimum $|z|=\\dfrac{\\sqrt{370}-8}{3}$.",
+  "distractor_notes": "A: subtracts the diameter instead of the radius; B: reports the locus radius; D: gives the maximum distance from the origin."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

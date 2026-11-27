@@ -1,0 +1,70 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Young's modulus and elongation",
+  "archetype": "two-condition linear",
+  "brief": "Two wires of different materials, lengths, and cross-sectional areas supporting the same load (or a composite rod with fixed ends); set up Young's modulus relations for each and solve for the elongation ratio or the required diameter.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:13",
+   "2023s2:22",
+   "2023s1:14"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two wires are separately stretched by the same tensile force. Wire A has length $1.5$ m, diameter $2.0$ mm and Young's modulus $2.0\\times10^{11}$ Pa; wire B has length $1.0$ m and Young's modulus $3.0\\times10^{11}$ Pa. If their elongations are equal, find the diameter of wire B.",
+ "options": [
+  "$0.89$ mm",
+  "$1.00$ mm",
+  "$\\dfrac{4}{3}$ mm",
+  "$3.00$ mm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For equal force and elongation, L_A/(A_A Y_A)=L_B/(A_B Y_B). Hence d_B²=d_A²(L_B/L_A)(Y_A/Y_B), so d_B=2√[(1/1.5)(2/3)]=4/3 mm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta L=\\dfrac{4FL}{\\pi Yd^2}$; equal elongations give $d_B^2=d_A^2\\dfrac{L_BY_A}{L_AY_B}=(2.0)^2\\dfrac{1.0(2.0)}{1.5(3.0)}=\\dfrac{16}{9}\\ \\text{mm}^2$. Thus $d_B=\\dfrac{4}{3}\\ \\text{mm}$.\n\nIndependent check: For equal force and elongation, L_A/(A_A Y_A)=L_B/(A_B Y_B). Hence d_B²=d_A²(L_B/L_A)(Y_A/Y_B), so d_B=2√[(1/1.5)(2/3)]=4/3 mm.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Two wires are separately stretched by the same tensile force. Wire A has length $1.5$ m, diameter $2.0$ mm and Young's modulus $2.0\\times10^{11}$ Pa; wire B has length $1.0$ m and Young's modulus $3.0\\times10^{11}$ Pa. If their elongations are equal, find the diameter of wire B.",
+  "options": [
+   "$0.89$ mm",
+   "$1.00$ mm",
+   "$\\dfrac{4}{3}$ mm",
+   "$3.00$ mm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\Delta L=\\dfrac{4FL}{\\pi Yd^2}$; equal elongations give $d_B^2=d_A^2\\dfrac{L_BY_A}{L_AY_B}=(2.0)^2\\dfrac{1.0(2.0)}{1.5(3.0)}=\\dfrac{16}{9}\\ \\text{mm}^2$. Thus $d_B=\\dfrac{4}{3}\\ \\text{mm}$.",
+  "distractor_notes": "A: uses the area ratio directly as a diameter ratio, without taking a square root.\\nB: neglects the combined length and modulus dependence.\\nD: inverts the ratio of the wires' elongation factors."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

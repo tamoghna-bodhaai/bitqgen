@@ -1,0 +1,68 @@
+{
+ "qno": 56,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 56,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "Arrhenius equation",
+  "archetype": "equation-solving numeric",
+  "brief": "Give rate constants at two temperatures and ask for activation energy plus the temperature at which the rate doubles — requires logarithmic manipulation of the two-point Arrhenius form.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:39",
+   "2026s2:48",
+   "2026s1:46"
+  ]
+ },
+ "status": "ok",
+ "stem": "A first-order reaction has $k=1.0\\times10^{-3}\\ \\text{s}^{-1}$ at $600\\ \\text{K}$ and $k=8.0\\times10^{-3}\\ \\text{s}^{-1}$ at $900\\ \\text{K}$. Find $E_a$ and the temperature at which $k$ doubles from its value at $600\\ \\text{K}$. Take $R=8.314\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+ "options": [
+  "$31.1\\ \\text{kJ mol}^{-1};\\ 540\\ \\text{K}$",
+  "$10.4\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$",
+  "$31.1\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$",
+  "$62.2\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the Arrhenius relation, ln(8) = (Ea/R)(1/600 − 1/900), giving Ea ≈ 31.1 kJ mol⁻¹. For doubling from 600 K, ln(2) = (Ea/R)(1/600 − 1/T), giving T ≈ 675 K.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\ln 8=\\dfrac{E_a}{R}\\left(\\dfrac{1}{600}-\\dfrac{1}{900}\\right)$, so $E_a=1800R\\ln 8=31.1\\ \\text{kJ mol}^{-1}$. $\\ln 2=\\dfrac{E_a}{R}\\left(\\dfrac{1}{600}-\\dfrac{1}{T}\\right)$; hence $\\dfrac{1}{T}=\\dfrac{1}{600}-\\dfrac{1}{5400}=\\dfrac{1}{675}$ and $T=675\\ \\text{K}$.\n\nIndependent check: Using the Arrhenius relation, ln(8) = (Ea/R)(1/600 − 1/900), giving Ea ≈ 31.1 kJ mol⁻¹. For doubling from 600 K, ln(2) = (Ea/R)(1/600 − 1/T), giving T ≈ 675 K.",
+ "solution": "Using the Arrhenius equation, $\\ln(k_2/k_1)=\\dfrac{E_a}{R}(1/T_1-1/T_2)$,\n$$E_a=\\dfrac{R\\ln 8}{1/600-1/900}=1800R\\ln 8=31.1\\ \\text{kJ mol}^{-1}.$$\nFor doubling from $600\\ \\text{K}$, $\\ln 2=\\dfrac{E_a}{R}(1/600-1/T)$, giving $T=675\\ \\text{K}$. (C)",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A first-order reaction has $k=1.0\\times10^{-3}\\ \\text{s}^{-1}$ at $600\\ \\text{K}$ and $k=8.0\\times10^{-3}\\ \\text{s}^{-1}$ at $900\\ \\text{K}$. Find $E_a$ and the temperature at which $k$ doubles from its value at $600\\ \\text{K}$. Take $R=8.314\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+  "options": [
+   "$31.1\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$",
+   "$10.4\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$",
+   "$31.1\\ \\text{kJ mol}^{-1};\\ 540\\ \\text{K}$",
+   "$62.2\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\ln 8=\\dfrac{E_a}{R}\\left(\\dfrac{1}{600}-\\dfrac{1}{900}\\right)$, so $E_a=1800R\\ln 8=31.1\\ \\text{kJ mol}^{-1}$. $\\ln 2=\\dfrac{E_a}{R}\\left(\\dfrac{1}{600}-\\dfrac{1}{T}\\right)$; hence $\\dfrac{1}{T}=\\dfrac{1}{600}-\\dfrac{1}{5400}=\\dfrac{1}{675}$ and $T=675\\ \\text{K}$.",
+  "distractor_notes": "B uses $\\ln 2$ instead of $\\ln 8$ to find $E_a$; C reverses the sign in the reciprocal-temperature difference; D introduces an extra factor of two in $E_a$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

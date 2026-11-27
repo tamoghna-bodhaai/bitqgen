@@ -1,0 +1,76 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Diazonium synthesis planning",
+  "archetype": "multi-step conversion",
+  "brief": "Convert aniline to a target substituted arene (figure shows starting amine and product, e.g., to m-bromophenol); choose the correct reagent sequence involving diazotisation and substitution.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:50",
+   "2025s1:57",
+   "2024s1:50"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the conversion shown in the figure, choose the correct sequence of reagents.",
+ "options": [
+  "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{CuCl}$; $\\text{H}_3\\text{O}^+$, heat",
+  "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{CuCN}$; $\\text{H}_3\\text{O}^+$, heat",
+  "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{CuCN}$; $\\text{H}_2/\\text{Ni}$",
+  "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{KI}$; $\\text{H}_3\\text{O}^+$, heat"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q058_stem_v0.png",
+  "width_pct": 83,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Diazotization of aniline followed by CuCN replaces the diazonium group with CN; acidic hydrolysis on heating converts the nitrile to benzoic acid. This is option A.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_6\\text{H}_5\\text{NH}_2\\xrightarrow[273\\text{–}278\\,\\text{K}]{\\text{NaNO}_2/\\text{HCl}}\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-\\xrightarrow{\\text{CuCN}}\\text{C}_6\\text{H}_5\\text{CN}\\xrightarrow{\\text{H}_3\\text{O}^+,\\ heat}\\text{C}_6\\text{H}_5\\text{COOH}$.\n\nIndependent check: Diazotization of aniline followed by CuCN replaces the diazonium group with CN; acidic hydrolysis on heating converts the nitrile to benzoic acid. This is option A.",
+ "solution": "Aniline undergoes diazotization, then the diazonium group is replaced by $\\text{CN}$ using $\\text{CuCN}$; acidic hydrolysis of the nitrile gives benzoic acid.\n$$\\text{C}_6\\text{H}_5\\text{NH}_2\\xrightarrow[273\\text{–}278\\,\\text{K}]{\\text{NaNO}_2/\\text{HCl}}\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-\\xrightarrow{\\text{CuCN}}\\text{C}_6\\text{H}_5\\text{CN}\\xrightarrow{\\text{H}_3\\text{O}^+,\\ heat}\\text{C}_6\\text{H}_5\\text{COOH}$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For the conversion shown in the figure, choose the correct sequence of reagents.",
+  "options": [
+   "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{CuCN}$; $\\text{H}_3\\text{O}^+$, heat",
+   "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{CuCl}$; $\\text{H}_3\\text{O}^+$, heat",
+   "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{CuCN}$; $\\text{H}_2/\\text{Ni}$",
+   "$\\text{NaNO}_2/\\text{HCl}$ at $273$–$278\\ \\text{K}$; $\\text{KI}$; $\\text{H}_3\\text{O}^+$, heat"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw aniline on the left as a benzene ring with an –NH2 group at one vertex, and benzoic acid on the right as a benzene ring with a –C(=O)OH group at one vertex. Connect them with a horizontal reaction arrow pointing left to right. Do not label reagents or conditions.",
+   "smiles": "Nc1ccccc1>>O=C(O)c1ccccc1"
+  },
+  "difficulty_estimate": 4,
+  "working": "$\\text{C}_6\\text{H}_5\\text{NH}_2\\xrightarrow[273\\text{–}278\\,\\text{K}]{\\text{NaNO}_2/\\text{HCl}}\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-\\xrightarrow{\\text{CuCN}}\\text{C}_6\\text{H}_5\\text{CN}\\xrightarrow{\\text{H}_3\\text{O}^+,\\ heat}\\text{C}_6\\text{H}_5\\text{COOH}$.",
+  "distractor_notes": "B: CuCl gives chlorobenzene instead of the nitrile. C: Hydrogenation reduces the nitrile rather than hydrolysing it. D: KI gives iodobenzene."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

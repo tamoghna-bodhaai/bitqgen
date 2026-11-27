@@ -1,0 +1,86 @@
+{
+ "qno": 68,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 68,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Elimination, addition, substitution sequence",
+  "archetype": "reaction sequence product",
+  "brief": "Show a reaction scheme in the figure: an alkyl halide dehydrohalogenated, alkene converted with HBr (Markovnikov/peroxide cases), then substitution — identify the final product.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:42",
+   "2023s2:37",
+   "2026s1:40"
+  ]
+ },
+ "status": "ok",
+ "stem": "The final product in the sequence shown in the figure is:",
+ "options": [
+  "2-methylpropan-2-ol",
+  "2-methylpropene",
+  "2-bromo-2-methylpropane",
+  "2-methylpropan-1-ol"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q068_stem_v0.png",
+  "width_pct": 90,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q068_optA_v0.png",
+  "figs/q068_optD_v0.png",
+  "figs/q068_optC_v0.png",
+  "figs/q068_optB_v0.png"
+ ],
+ "option_width": 28,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alcoholic KOH eliminates HBr to form 2-methylpropene. HBr with peroxide adds anti-Markovnikov, forming (CH₃)₂CHCH₂Br; aqueous NaOH substitutes Br with OH to give 2-methylpropan-1-ol.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(\\text{CH}_3)_3\\text{CBr}\\xrightarrow[\\Delta]{\\text{alc. KOH}}\\text{CH}_2=\\text{C(CH}_3)_2$\n$\\text{CH}_2=\\text{C(CH}_3)_2\\xrightarrow{\\text{HBr, ROOR}}(\\text{CH}_3)_2\\text{CHCH}_2\\text{Br}$\n$(\\text{CH}_3)_2\\text{CHCH}_2\\text{Br}\\xrightarrow{\\text{aq. NaOH}}(\\text{CH}_3)_2\\text{CHCH}_2\\text{OH}$\n\nIndependent check: Alcoholic KOH eliminates HBr to form 2-methylpropene. HBr with peroxide adds anti-Markovnikov, forming (CH₃)₂CHCH₂Br; aqueous NaOH substitutes Br with OH to give 2-methylpropan-1-ol.",
+ "solution": "Alcoholic KOH causes elimination; HBr in the presence of peroxide adds anti-Markovnikov, and aqueous NaOH substitutes Br with OH.\n$$ (CH_3)_3CBr \\xrightarrow{\\text{alc. KOH},\\Delta} CH_2=C(CH_3)_2 \\xrightarrow{\\text{HBr, ROOR}} (CH_3)_2CHCH_2Br \\xrightarrow{\\text{aq. NaOH}} (CH_3)_2CHCH_2OH $$\nThe final product is 2-methylpropan-1-ol.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The final product in the sequence shown in the figure is:",
+  "options": [
+   "2-methylpropan-2-ol",
+   "2-methylpropan-1-ol",
+   "2-bromo-2-methylpropane",
+   "2-methylpropene"
+  ],
+  "option_smiles": [
+   "CC(C)(C)O",
+   "CC(C)CO",
+   "CC(C)(C)Br",
+   "C=C(C)C"
+  ],
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a horizontal reaction sequence. At the left, show 2-bromo-2-methylpropane, (CH3)3C–Br. The first arrow is labelled alc. KOH, heat; its product is 2-methylpropene, CH2=C(CH3)2. The second arrow is labelled HBr, ROOR; its product is 1-bromo-2-methylpropane, (CH3)2CH–CH2Br. The third arrow is labelled aq. NaOH and ends at an empty box labelled Z. Do not draw or name the product in that box.",
+   "smiles": "CC(C)(C)Br>>C=C(C)C>>CC(C)CBr"
+  },
+  "difficulty_estimate": 4,
+  "working": "$(\\text{CH}_3)_3\\text{CBr}\\xrightarrow[\\Delta]{\\text{alc. KOH}}\\text{CH}_2=\\text{C(CH}_3)_2$\n$\\text{CH}_2=\\text{C(CH}_3)_2\\xrightarrow{\\text{HBr, ROOR}}(\\text{CH}_3)_2\\text{CHCH}_2\\text{Br}$\n$(\\text{CH}_3)_2\\text{CHCH}_2\\text{Br}\\xrightarrow{\\text{aq. NaOH}}(\\text{CH}_3)_2\\text{CHCH}_2\\text{OH}$",
+  "distractor_notes": "2-methylpropan-2-ol: applies Markovnikov addition despite peroxide.\n2-methylpropan-2-ol: uses the tertiary bromide from the starting material as the substitution substrate.\n2-methylpropene: stops after elimination instead of completing the sequence."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

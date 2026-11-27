@@ -1,0 +1,68 @@
+{
+ "qno": 104,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 104,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "multi-component series",
+  "brief": "Mixed letter-number series where each block follows separate patterns; find the missing next block.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:73",
+   "2025s1:89",
+   "2023s2:81"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the block that replaces the question mark in the following $\\alpha-numeric$ series: AB-2, DE-5, GH-8, JK-11, ?",
+ "options": [
+  "MN-13",
+  "LM-14",
+  "MN-14",
+  "NO-14"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Letter pairs advance by 3 positions: AB, DE, GH, JK, MN. Numbers increase by 3: 2, 5, 8, 11, 14.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The first letters advance by 3: A, D, G, J, M; the second letters do likewise: B, E, H, K, N. The numbers increase by 3: 2, 5, 8, 11, 14. Hence MN-14. B and D have incorrect letter pairs; C has the wrong number.\n\nIndependent check: Letter pairs advance by 3 positions: AB, DE, GH, JK, MN. Numbers increase by 3: 2, 5, 8, 11, 14.",
+ "solution": "The first and second letters each advance by $3$ positions: $AB, DE, GH, JK, MN$. The numbers also increase by $3$: $2, 5, 8, 11, 14$. Hence the missing block is $MN-14$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Select the block that replaces the question mark in the following $\\alpha-numeric$ series: AB-2, DE-5, GH-8, JK-11, ?",
+  "options": [
+   "MN-14",
+   "LM-14",
+   "MN-13",
+   "NO-14"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The first letters advance by 3: A, D, G, J, M; the second letters do likewise: B, E, H, K, N. The numbers increase by 3: 2, 5, 8, 11, 14. Hence MN-14. B and D have incorrect letter pairs; C has the wrong number.",
+  "distractor_notes": "B: incorrect letter pair. C: number should be 14. D: incorrect letter pair."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

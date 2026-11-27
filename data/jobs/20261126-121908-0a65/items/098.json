@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A family consists of a grandfather, grandmother, their two married sons, and one unmarried daughter. Each married son has two sons and one daughter. How many male members are there in the family?",
+ "stem": "A family consists of a couple, their two married daughters and one unmarried son. One daughter has two sons, and the other has one daughter. How many members are there in the family?",
  "options": [
-  "5",
-  "6",
-  "7",
-  "8"
+  "8",
+  "9",
+  "10",
+  "11"
  ],
  "answer": "C",
  "figure": null,
@@ -33,11 +33,11 @@
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Males: grandfather (1) + two sons (2) + grandsons (2 sons × 2 sons each = 4) = 7. Grandmother, daughter, granddaughters (and daughters-in-law, if counted) are female.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Couple: 2; daughters and son: 3; daughters’ spouses: 2; grandchildren: 3. Total = 10.",
    "answer": "C",
-   "confidence": 0.98,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The male members of the family are:\n1. The grandfather $= 1$\n2. The two married sons $= 2$\n3. The sons of the two married sons $= 2 \\times 2 = 4$\n\nTotal number of male members $= 1 + 2 + 4 = 7$.\n\n(Note: The female members are the grandmother (1), the wives of the two sons (2), the unmarried daughter (1), and the daughters of the two sons ($2 \\times 1 = 2$), giving 6 females and 13 total members.)\n\nIndependent check: Males: grandfather (1) + two sons (2) + grandsons (2 sons × 2 sons each = 4) = 7. Grandmother, daughter, granddaughters (and daughters-in-law, if counted) are female.",
+ "working": "Couple: $2$; children: $3$; daughters’ husbands: $2$; grandchildren: $3$. Total $=2+3+2+3=10$.\n\nIndependent check: Couple: 2; daughters and son: 3; daughters’ spouses: 2; grandchildren: 3. Total = 10.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "A family consists of a grandfather, grandmother, their two married sons, and one unmarried daughter. Each married son has two sons and one daughter. How many male members are there in the family?",
+  "stem": "A family consists of a couple, their two married daughters and one unmarried son. One daughter has two sons, and the other has one daughter. How many members are there in the family?",
   "options": [
-   "5",
-   "6",
-   "7",
-   "8"
+   "8",
+   "9",
+   "10",
+   "11"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "The male members of the family are:\n1. The grandfather $= 1$\n2. The two married sons $= 2$\n3. The sons of the two married sons $= 2 \\times 2 = 4$\n\nTotal number of male members $= 1 + 2 + 4 = 7$.\n\n(Note: The female members are the grandmother (1), the wives of the two sons (2), the unmarried daughter (1), and the daughters of the two sons ($2 \\times 1 = 2$), giving 6 females and 13 total members.)",
-  "distractor_notes": "Option A (5) ignores the two married sons or miscalculates the grandsons as only 2.\nOption B (6) is the count of female members in the family ($1 + 2 + 1 + 2 = 6$).\nOption D (8) mistakenly counts an extra male member or assumes the unmarried daughter has a partner.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Couple: $2$; children: $3$; daughters’ husbands: $2$; grandchildren: $3$. Total $=2+3+2+3=10$.",
+  "distractor_notes": "A: Omits both husbands. B: Omits one husband. D: Counts an extra family member."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

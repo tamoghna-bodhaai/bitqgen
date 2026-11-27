@@ -1,0 +1,71 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Newton's law of cooling",
+  "archetype": "multi-step numeric",
+  "brief": "A body cools from one temperature to another in a given time; use Newton's law of cooling to find the time for a further drop in temperature.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:10",
+   "2026s2:22",
+   "2023s2:5"
+  ],
+  "origin": "variant",
+  "bank_ref": "g1c90a7412a68"
+ },
+ "status": "ok",
+ "stem": "A metal object cools in a room maintained at $20^\\circ$C. Its temperature falls from $100^\\circ$C to $60^\\circ$C in $8$ min. Assuming Newton's law of cooling applies, how long will it take to cool further to $40^\\circ$C?",
+ "options": [
+  "$8$ min",
+  "$4$ min",
+  "$12$ min",
+  "$16$ min"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The excess temperature halves from 80°C to 40°C in 8 min. It halves again, from 40°C to 20°C, in another 8 min.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Newton's law: $T-T_s\\propto e^{-kt}$. From $100^\\circ$C to $60^\\circ$C, excess temperature falls from $80$ to $40$: $e^{-8k}=\\dfrac12$. From $60^\\circ$C to $40^\\circ$C, it falls from $40$ to $20$, again a factor of $\\dfrac12$. Hence $e^{-kt}=\\dfrac12$, so $t=8$ min.\n\nIndependent check: The excess temperature halves from 80°C to 40°C in 8 min. It halves again, from 40°C to 20°C, in another 8 min.",
+ "solution": "By Newton’s law, the excess temperature above room temperature decays exponentially: $T-T_s\\propto e^{-kt}$. In the first $8$ min, it falls from $80$ to $40$, a factor of $\\frac12$; the next fall from $40$ to $20$ is the same factor, so it also takes $8$ min.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A metal object cools in a room maintained at $20^\\circ$C. Its temperature falls from $100^\\circ$C to $60^\\circ$C in $8$ min. Assuming Newton's law of cooling applies, how long will it take to cool further to $40^\\circ$C?",
+  "options": [
+   "$4$ min",
+   "$8$ min",
+   "$12$ min",
+   "$16$ min"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Newton's law: $T-T_s\\propto e^{-kt}$. From $100^\\circ$C to $60^\\circ$C, excess temperature falls from $80$ to $40$: $e^{-8k}=\\dfrac12$. From $60^\\circ$C to $40^\\circ$C, it falls from $40$ to $20$, again a factor of $\\dfrac12$. Hence $e^{-kt}=\\dfrac12$, so $t=8$ min.",
+  "distractor_notes": "A: assumes the further $20^\\circ$C drop takes half the original time. C: misapplies a linear cooling rate. D: doubles the time despite the same excess-temperature ratio."
+ },
+ "variant_of": "g1c90a7412a68",
+ "author_model": "openai/gpt-6-luna-pro"
+}

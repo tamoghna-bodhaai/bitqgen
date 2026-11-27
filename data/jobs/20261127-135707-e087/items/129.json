@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Derivatives of inverse trig functions",
+  "archetype": "simplify then differentiate",
+  "brief": "Differentiate a simple inverse trig function after simplifying with a substitution.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:121",
+   "2021:144",
+   "2025s2:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $-1<x<1$, differentiate $y=\\tan^{-1}\\!\\left(\\dfrac{x}{\\sqrt{1-x^2}}\\right)$.",
+ "options": [
+  "$\\dfrac{1}{\\sqrt{1-x^2}}$",
+  "$-\\dfrac{1}{\\sqrt{1-x^2}}$",
+  "$\\dfrac{1}{1-x^2}$",
+  "$\\sqrt{1-x^2}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since −1 < x < 1, let θ = sin⁻¹x ∈ (−π/2, π/2). Then x/√(1−x²) = tan θ, so y = θ and dy/dx = 1/√(1−x²).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $\\theta=\\sin^{-1}x$, so $\\cos\\theta=\\sqrt{1-x^2}$ and $\\tan\\theta=\\dfrac{x}{\\sqrt{1-x^2}}$.<br>$y=\\theta=\\sin^{-1}x\\quad\\Rightarrow\\quad\\dfrac{dy}{dx}=\\dfrac{1}{\\sqrt{1-x^2}}$.\n\nIndependent check: Since −1 < x < 1, let θ = sin⁻¹x ∈ (−π/2, π/2). Then x/√(1−x²) = tan θ, so y = θ and dy/dx = 1/√(1−x²).",
+ "solution": "Let $\\theta=\\sin^{-1}x$. Since $-1<x<1$, $\\cos\\theta=\\sqrt{1-x^2}$ and $\\tan\\theta=\\dfrac{x}{\\sqrt{1-x^2}}$.\nThus $y=\\theta=\\sin^{-1}x$, so\n$$\\dfrac{dy}{dx}=\\dfrac{1}{\\sqrt{1-x^2}}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $-1<x<1$, differentiate $y=\\tan^{-1}\\!\\left(\\dfrac{x}{\\sqrt{1-x^2}}\\right)$.",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{1-x^2}}$",
+   "$-\\dfrac{1}{\\sqrt{1-x^2}}$",
+   "$\\dfrac{1}{1-x^2}$",
+   "$\\sqrt{1-x^2}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Let $\\theta=\\sin^{-1}x$, so $\\cos\\theta=\\sqrt{1-x^2}$ and $\\tan\\theta=\\dfrac{x}{\\sqrt{1-x^2}}$.<br>$y=\\theta=\\sin^{-1}x\\quad\\Rightarrow\\quad\\dfrac{dy}{dx}=\\dfrac{1}{\\sqrt{1-x^2}}$.",
+  "distractor_notes": "B: gives the derivative with an incorrect negative sign.<br>C: omits the square root in the derivative of $\\sin^{-1}x$.<br>D: uses the reciprocal of the correct derivative."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

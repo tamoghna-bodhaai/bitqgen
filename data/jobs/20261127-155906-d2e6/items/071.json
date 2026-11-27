@@ -1,0 +1,70 @@
+{
+ "qno": 71,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 71,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Williamson synthesis",
+  "archetype": "reagent selection",
+  "brief": "Give conversion (e.g. phenol to anisole or alcohol to alkene) and choose the correct reagent/conditions from four options; include Williamson vs alkoxide choice.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:59",
+   "2024s1:48",
+   "2025s2:60"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "To prepare 2-ethoxy-2-methylpropane from 2-methylpropan-2-ol, which reagent sequence is most suitable?",
+ "options": [
+  "$\\text{Na}$, then $\\text{C}_2\\text{H}_5\\text{Br}$",
+  "$\\text{C}_2\\text{H}_5\\text{ONa}$, then $(\\text{CH}_3)_3\\text{CBr}$",
+  "Concentrated $\\text{H}_2\\text{SO}_4$, heat",
+  "$\\text{Na}$, then $\\text{CH}_3\\text{Br}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Na converts 2-methylpropan-2-ol to tert-butoxide, which reacts with ethyl bromide by Williamson ether synthesis to form 2-ethoxy-2-methylpropane.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Na}+(\\text{CH}_3)_3\\text{COH}\\rightarrow(\\text{CH}_3)_3\\text{CONa}+\\dfrac12\\text{H}_2$; $(\\text{CH}_3)_3\\text{CONa}+\\text{C}_2\\text{H}_5\\text{Br}\\xrightarrow{\\mathrm{S_N2}}(\\text{CH}_3)_3\\text{COC}_2\\text{H}_5+\\text{NaBr}$\n\nIndependent check: Na converts 2-methylpropan-2-ol to tert-butoxide, which reacts with ethyl bromide by Williamson ether synthesis to form 2-ethoxy-2-methylpropane.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "To prepare 2-ethoxy-2-methylpropane from 2-methylpropan-2-ol, which reagent sequence is most suitable?",
+  "options": [
+   "$\\text{Na}$, then $\\text{C}_2\\text{H}_5\\text{Br}$",
+   "$\\text{C}_2\\text{H}_5\\text{ONa}$, then $(\\text{CH}_3)_3\\text{CBr}$",
+   "Concentrated $\\text{H}_2\\text{SO}_4$, heat",
+   "$\\text{Na}$, then $\\text{CH}_3\\text{Br}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{Na}+(\\text{CH}_3)_3\\text{COH}\\rightarrow(\\text{CH}_3)_3\\text{CONa}+\\dfrac12\\text{H}_2$; $(\\text{CH}_3)_3\\text{CONa}+\\text{C}_2\\text{H}_5\\text{Br}\\xrightarrow{\\mathrm{S_N2}}(\\text{CH}_3)_3\\text{COC}_2\\text{H}_5+\\text{NaBr}$",
+  "distractor_notes": "B: tertiary halide favours elimination over $\\mathrm{S_N2}$; C: dehydrates the alcohol; D: forms the methyl ether instead."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

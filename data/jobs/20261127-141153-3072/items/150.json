@@ -1,0 +1,68 @@
+{
+ "qno": 150,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 150,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous differential equations",
+  "archetype": "substitution y = vx",
+  "brief": "Solve dy/dx = f(y/x) type homogeneous equation using y = vx; end with a general solution in log form; standard moderate solve.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:94",
+   "2024s2:95",
+   "2026s2:128"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\dfrac{dy}{dx}=1+\\dfrac{y}{x}$ is",
+ "options": [
+  "$y=x(\\ln|x|+C)$",
+  "$y=x(C-\\ln|x|)$",
+  "$y=Cx+\\ln|x|$",
+  "$y=x\\ln|x|+C$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Rewrite as y' - y/x = 1. The integrating factor is 1/x, so (y/x)' = 1/x. Integrating gives y/x = ln|x| + C, hence y = x(ln|x| + C).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $y=vx$: $v+x\\dfrac{dv}{dx}=1+v$, so $\\dfrac{dv}{dx}=\\dfrac{1}{x}$. Hence $v=\\ln|x|+C$ and $y=x(\\ln|x|+C)$.\n\nIndependent check: Rewrite as y' - y/x = 1. The integrating factor is 1/x, so (y/x)' = 1/x. Integrating gives y/x = ln|x| + C, hence y = x(ln|x| + C).",
+ "solution": "Let $y=vx$. Then $v+x\\dfrac{dv}{dx}=1+v$, so $\\dfrac{dv}{dx}=\\dfrac{1}{x}$.\nIntegrating gives $v=\\ln|x|+C$, and hence $y=x(\\ln|x|+C)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of $\\dfrac{dy}{dx}=1+\\dfrac{y}{x}$ is",
+  "options": [
+   "$y=x(\\ln|x|+C)$",
+   "$y=x(C-\\ln|x|)$",
+   "$y=Cx+\\ln|x|$",
+   "$y=x\\ln|x|+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let $y=vx$: $v+x\\dfrac{dv}{dx}=1+v$, so $\\dfrac{dv}{dx}=\\dfrac{1}{x}$. Hence $v=\\ln|x|+C$ and $y=x(\\ln|x|+C)$.",
+  "distractor_notes": "B: sign error when integrating $1/x$. C: omits the factor $x$ multiplying the logarithm. D: places the arbitrary constant outside the factor $x$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

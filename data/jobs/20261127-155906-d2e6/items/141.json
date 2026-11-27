@@ -1,0 +1,70 @@
+{
+ "qno": 141,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 141,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Geometry of complex numbers",
+  "archetype": "computation",
+  "brief": "Interpret |z − z₁| = k|z − z₂| as an Apollonius circle or use conjugate/locus conditions to find a locus; 4/5 multi-step with modulus property.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:95",
+   "2026s2:95",
+   "2025s1:125"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For a complex number $z$, if $|z-(11+4i)|=2|z-(5+4i)|$, the maximum value of $|z|$ is",
+ "options": [
+  "$1$",
+  "$5$",
+  "$9$",
+  "$13$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The locus is a circle with center \\((3,4)\\) and radius \\(4\\). Thus the maximum \\(|z|\\) is \\(\\sqrt{3^2+4^2}+4=9\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$z=x+iy:\\ (x-11)^2+(y-4)^2=4[(x-5)^2+(y-4)^2]\\Rightarrow (x-3)^2+(y-4)^2=16.$ Hence $\\max|z|=\\sqrt{3^2+4^2}+4=9$.\n\nIndependent check: The locus is a circle with center \\((3,4)\\) and radius \\(4\\). Thus the maximum \\(|z|\\) is \\(\\sqrt{3^2+4^2}+4=9\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For a complex number $z$, if $|z-(11+4i)|=2|z-(5+4i)|$, the maximum value of $|z|$ is",
+  "options": [
+   "$1$",
+   "$5$",
+   "$9$",
+   "$13$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$z=x+iy:\\ (x-11)^2+(y-4)^2=4[(x-5)^2+(y-4)^2]\\Rightarrow (x-3)^2+(y-4)^2=16.$ Hence $\\max|z|=\\sqrt{3^2+4^2}+4=9$.",
+  "distractor_notes": "A: gives the minimum modulus; B: uses only the centre’s distance from the origin; D: incorrectly adds twice the radius."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

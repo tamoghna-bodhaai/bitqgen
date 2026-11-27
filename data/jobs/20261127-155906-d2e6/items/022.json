@@ -1,0 +1,70 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "Mean free path / mean free time",
+  "archetype": "statement evaluation",
+  "brief": "Multiple-statement MCQ on mean free path and mean free time: dependence on number density and molecular diameter, behaviour with temperature at constant pressure vs constant volume — pick the correct combination.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:3",
+   "2026s1:1",
+   "2023s1:18"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For a dilute ideal gas of fixed-diameter hard-sphere molecules, let $n$ be number density, $\\lambda$ mean free path and $\\tau=\\lambda/\\bar v$ mean free time. For a fixed amount of gas, which statements are correct? (i) $\\lambda\\propto\\dfrac{1}{nd^2}$. (ii) At constant pressure, $\\lambda\\propto T$. (iii) At constant volume, $\\tau\\propto T^{-1/2}$. (iv) At constant pressure, $\\tau$ is independent of $T$.",
+ "options": [
+  "(i) and (ii) only",
+  "(i), (ii) and (iii) only",
+  "(i) and (iv) only",
+  "(ii), (iii) and (iv) only"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For hard spheres, λ = 1/(√2πnd²). At constant pressure, n ∝ T, so λ ∝ T. Since v̄ ∝ √T, at constant volume τ ∝ T⁻¹ᐟ², while at constant pressure τ ∝ √T. Thus (i), (ii), and (iii) are correct.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{1}{\\sqrt{2}\\pi d^2n}$; $\\tau\\propto\\dfrac{1}{nd^2\\sqrt{T}}$; constant $P$: $n\\propto T^{-1}\\Rightarrow\\lambda\\propto T,\\ \\tau\\propto T^{1/2}$; constant $V$: $n=\\text{constant}\\Rightarrow\\tau\\propto T^{-1/2}$.\n\nIndependent check: For hard spheres, λ = 1/(√2πnd²). At constant pressure, n ∝ T, so λ ∝ T. Since v̄ ∝ √T, at constant volume τ ∝ T⁻¹ᐟ², while at constant pressure τ ∝ √T. Thus (i), (ii), and (iii) are correct.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For a dilute ideal gas of fixed-diameter hard-sphere molecules, let $n$ be number density, $\\lambda$ mean free path and $\\tau=\\lambda/\\bar v$ mean free time. For a fixed amount of gas, which statements are correct? (i) $\\lambda\\propto\\dfrac{1}{nd^2}$. (ii) At constant pressure, $\\lambda\\propto T$. (iii) At constant volume, $\\tau\\propto T^{-1/2}$. (iv) At constant pressure, $\\tau$ is independent of $T$.",
+  "options": [
+   "(i) and (ii) only",
+   "(i), (ii) and (iii) only",
+   "(i) and (iv) only",
+   "(ii), (iii) and (iv) only"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\lambda=\\dfrac{1}{\\sqrt{2}\\pi d^2n}$; $\\tau\\propto\\dfrac{1}{nd^2\\sqrt{T}}$; constant $P$: $n\\propto T^{-1}\\Rightarrow\\lambda\\propto T,\\ \\tau\\propto T^{1/2}$; constant $V$: $n=\\text{constant}\\Rightarrow\\tau\\propto T^{-1/2}$.",
+  "distractor_notes": "A: omits the constant-volume scaling; C: wrongly accepts temperature-independent $\\tau$ at fixed pressure; D: omits (i) and wrongly accepts (iv)."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

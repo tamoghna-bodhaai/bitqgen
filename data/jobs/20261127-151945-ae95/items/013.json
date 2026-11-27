@@ -1,0 +1,71 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Energy level transitions",
+  "archetype": "ratio computation",
+  "brief": "Find the energy (or wavelength) of the photon emitted when an electron in a hydrogen-like ion jumps from n=2 to n=1.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:25",
+   "2023s1:19",
+   "2024s1:21"
+  ],
+  "origin": "variant",
+  "bank_ref": "gca66fc1c3b48"
+ },
+ "status": "ok",
+ "stem": "For the transition $n=2$ to $n=1$, hydrogen emits a photon of wavelength $121.6$ nm. What is the wavelength emitted in the same transition by a hydrogen-like $\\text{He}^+$ ion?",
+ "options": [
+  "$30.4$ nm",
+  "$60.8$ nm",
+  "$121.6$ nm",
+  "$486.4$ nm"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a hydrogen-like ion, the transition energy scales as Z², so the wavelength scales as 1/Z². For He⁺, λ = 121.6/4 = 30.4 nm.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{1}{\\lambda}\\propto Z^2\\left(\\dfrac{1}{1^2}-\\dfrac{1}{2^2}\\right)$ for this transition.\n$\\lambda_{\\text{He}^+}=\\dfrac{\\lambda_{\\text{H}}}{2^2}=\\dfrac{121.6}{4}\\text{ nm}=30.4\\text{ nm}$\n\nIndependent check: For a hydrogen-like ion, the transition energy scales as Z², so the wavelength scales as 1/Z². For He⁺, λ = 121.6/4 = 30.4 nm.",
+ "solution": "For the same transition, $1/\\lambda \\propto Z^2$, so wavelength scales as $1/Z^2$. For He$^+$, $Z=2$:\n$$\\lambda_{\\text{He}^+}=\\frac{121.6}{2^2}\\text{ nm}=30.4\\text{ nm}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the transition $n=2$ to $n=1$, hydrogen emits a photon of wavelength $121.6$ nm. What is the wavelength emitted in the same transition by a hydrogen-like $\\text{He}^+$ ion?",
+  "options": [
+   "$30.4$ nm",
+   "$60.8$ nm",
+   "$121.6$ nm",
+   "$486.4$ nm"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{1}{\\lambda}\\propto Z^2\\left(\\dfrac{1}{1^2}-\\dfrac{1}{2^2}\\right)$ for this transition.\n$\\lambda_{\\text{He}^+}=\\dfrac{\\lambda_{\\text{H}}}{2^2}=\\dfrac{121.6}{4}\\text{ nm}=30.4\\text{ nm}$",
+  "distractor_notes": "B: scales by $Z$ instead of $Z^2$.\nC: ignores the nuclear charge.\nD: multiplies the wavelength by $Z^2$ instead of dividing."
+ },
+ "variant_of": "gca66fc1c3b48",
+ "author_model": "openai/gpt-6-luna-pro"
+}

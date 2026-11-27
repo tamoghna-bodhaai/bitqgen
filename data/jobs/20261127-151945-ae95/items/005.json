@@ -1,0 +1,91 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Forward-biased diode in circuit",
+  "archetype": "circuit current split",
+  "brief": "A diode in series with resistors across a battery; assuming a constant forward voltage drop, find the circuit current.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:28",
+   "2024s2:20",
+   "2024s2:22"
+  ],
+  "origin": "variant",
+  "bank_ref": "g9179239c7232"
+ },
+ "status": "ok",
+ "stem": "As shown in the figure, a forward-biased diode has a constant voltage drop of $0.7$ V. Find the total current supplied by the battery.",
+ "options": [
+  "$2.5$ mA",
+  "$5.7$ mA",
+  "$5.0$ mA",
+  "$10.0$ mA"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q005_stem_v0.png",
+  "width_pct": 70,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The battery’s long plate is at the bottom, so the bottom rail is positive. The diode’s cathode is on the right, making it reverse-biased; in the ideal-diode model, the battery current is zero, which is not listed. If the diode were forward-biased as stated, the equivalent resistance would be 500 Ω + (1 kΩ ∥ 1 kΩ) = 1 kΩ, giving 5.0 mA.",
+   "answer": "NONE",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [
+    "The battery polarity shown makes the diode reverse-biased, contradicting the statement that it is forward-biased. Under the stated forward-bias assumption, option B (5.0 mA) would result, but it does not match the polarity in the figure."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "Effective voltage after diode drop: 5.7 − 0.7 = 5.0 V. Two 1.0 kΩ resistors in parallel give 500 Ω; in series with 500 Ω gives 1000 Ω total. I = 5.0 V / 1000 Ω = 5.0 mA.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$R_{\\text{parallel}}=1.0\\ \\text{k}\\Omega\\parallel1.0\\ \\text{k}\\Omega=500\\ \\Omega$\n$R_{\\text{total}}=500\\ \\Omega+500\\ \\Omega=1.0\\ \\text{k}\\Omega$\n$I=\\dfrac{5.7-0.7}{1.0\\times10^3}=5.0\\times10^{-3}\\ \\text{A}=5.0\\ \\text{mA}$\n\nIndependent check: Effective voltage after diode drop: 5.7 − 0.7 = 5.0 V. Two 1.0 kΩ resistors in parallel give 500 Ω; in series with 500 Ω gives 1000 Ω total. I = 5.0 V / 1000 Ω = 5.0 mA.",
+ "solution": "The diode drop leaves $5.7-0.7=5.0$ V across the resistor network. The two $1.0\\ \\text{k}\\Omega$ resistors in parallel give $500\\ \\Omega$, in series with another $500\\ \\Omega$ resistor:\n$$I=\\frac{5.0}{500+500}=5.0\\times10^{-3}\\ \\text{A}=5.0\\ \\text{mA}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "As shown in the figure, a forward-biased diode has a constant voltage drop of $0.7$ V. Find the total current supplied by the battery.",
+  "options": [
+   "$2.5$ mA",
+   "$5.0$ mA",
+   "$5.7$ mA",
+   "$10.0$ mA"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a closed circuit with a $5.7$ V battery on the left, its positive terminal at the top and negative terminal at the bottom. From the positive terminal, draw a wire through a diode oriented for forward current from left to right, then through a $500\\ \\Omega$ resistor to a junction. From this junction draw two parallel branches, each containing a $1.0\\ \\text{k}\\Omega$ resistor, joining again at a lower junction. Connect the lower junction by wire to the battery's negative terminal. Label the battery voltage and all three resistors. Do not indicate any current value.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$R_{\\text{parallel}}=1.0\\ \\text{k}\\Omega\\parallel1.0\\ \\text{k}\\Omega=500\\ \\Omega$\n$R_{\\text{total}}=500\\ \\Omega+500\\ \\Omega=1.0\\ \\text{k}\\Omega$\n$I=\\dfrac{5.7-0.7}{1.0\\times10^3}=5.0\\times10^{-3}\\ \\text{A}=5.0\\ \\text{mA}$",
+  "distractor_notes": "A: gives the current in just one parallel branch. C: ignores the diode's forward voltage drop. D: uses only the series resistor and omits the parallel network's equivalent resistance."
+ },
+ "variant_of": "g9179239c7232",
+ "author_model": "openai/gpt-6-luna-pro"
+}

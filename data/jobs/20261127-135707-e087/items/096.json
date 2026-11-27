@@ -1,0 +1,68 @@
+{
+ "qno": 96,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 96,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Word formation",
+  "archetype": "word formation",
+  "brief": "Give a long word (e.g., a compound social-science term) and ask how many meaningful English words of exactly N letters can be formed using its letters without repetition; difficulty 5/5 so use a 12+ letter word and a strict letter-availability constraint.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:84",
+   "2026s2:78",
+   "2025s1:74"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using each letter no more often than it occurs in **counterintelligence**, how many of the following are meaningful four-letter English words: clue, cite, lent, tint, till, coal?",
+ "options": [
+  "Four",
+  "Three",
+  "Five",
+  "Six"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The available letters include c, l, u, e, i, t, n, and o; their counts allow clue, cite, lent, tint, and till. Coal is not allowed because a is absent. Thus five words qualify.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The available counts include c², e⁴, i², l², n³, t², and no a. Clue, cite, lent, tint, and till meet the letter limits; coal needs an unavailable a. Total: 5.\n\nIndependent check: The available letters include c, l, u, e, i, t, n, and o; their counts allow clue, cite, lent, tint, and till. Coal is not allowed because a is absent. Thus five words qualify.",
+ "solution": "The available letters include $c^2, e^4, i^2, l^2, n^3, t^2$, and no $a$. The words clue, cite, lent, tint, and till satisfy the letter limits; coal requires an unavailable $a$. Hence, the number of meaningful words is $5$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Using each letter no more often than it occurs in **counterintelligence**, how many of the following are meaningful four-letter English words: clue, cite, lent, tint, till, coal?",
+  "options": [
+   "Four",
+   "Five",
+   "Three",
+   "Six"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "The available counts include c², e⁴, i², l², n³, t², and no a. Clue, cite, lent, tint, and till meet the letter limits; coal needs an unavailable a. Total: 5.",
+  "distractor_notes": "A: Excludes one valid word. C: Excludes two valid words. D: Counts coal despite its unavailable a."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Young's modulus and elongation",
+  "archetype": "ratio of two situations",
+  "brief": "Compare elongation or breaking condition of two wires of same material but different lengths/radii under the same load; ask the ratio of elongations using Young's modulus.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:19",
+   "2024s2:24",
+   "2021:11"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Wire A has length $L$ and radius $r$. Wire B is made by drawing A to four times its length, without loss of material. Under the same tensile force, what is the ratio of their elongations, $\\frac{\\Delta\\ell_B}{\\Delta\\ell_A}$?",
+ "options": [
+  "$4$",
+  "$8$",
+  "$64$",
+  "$16$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With volume conserved, wire B has length 4L and cross-sectional area A/4. Since Δℓ = FL/(AY), its elongation is 4/(1/4) = 16 times that of A.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A_B(4L)=A_A L\\Rightarrow A_B=A_A/4$; $\\Delta\\ell=FL/(AY)\\Rightarrow \\dfrac{\\Delta\\ell_B}{\\Delta\\ell_A}=\\dfrac{4L/A_B}{L/A_A}=16$.\n\nIndependent check: With volume conserved, wire B has length 4L and cross-sectional area A/4. Since Δℓ = FL/(AY), its elongation is 4/(1/4) = 16 times that of A.",
+ "solution": "Conservation of volume gives $A_B(4L)=A_A L$, hence $A_B=A_A/4$. Using $\\Delta\\ell=FL/(AY)$ under the same force and material,\n$$\\frac{\\Delta\\ell_B}{\\Delta\\ell_A}=\\frac{4L/A_B}{L/A_A}=16.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Wire A has length $L$ and radius $r$. Wire B is made by drawing A to four times its length, without loss of material. Under the same tensile force, what is the ratio of their elongations, $\\frac{\\Delta\\ell_B}{\\Delta\\ell_A}$?",
+  "options": [
+   "$4$",
+   "$8$",
+   "$16$",
+   "$64$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$A_B(4L)=A_A L\\Rightarrow A_B=A_A/4$; $\\Delta\\ell=FL/(AY)\\Rightarrow \\dfrac{\\Delta\\ell_B}{\\Delta\\ell_A}=\\dfrac{4L/A_B}{L/A_A}=16$.",
+  "distractor_notes": "A: considers only the length change; B: treats the radius ratio as the area ratio; D: applies the length factor twice when finding the area."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

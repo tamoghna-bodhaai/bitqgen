@@ -1,0 +1,70 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "States of Matter",
+  "subtopic": "Graham's law of effusion",
+  "archetype": "ratio equation",
+  "brief": "Graham's law: compare rates or times of effusion of two gases; give ratio of molecular masses and solve for unknown gas identity or time ratio.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:59",
+   "2025s2:39",
+   "2025s1:50"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For equal volumes at the same temperature and pressure, methane effuses in $20$ s and gas X in $30$ s. Find the molar mass of X. Take $M(\\text{CH}_4)=16\\ \\text{g mol}^{-1}$.",
+ "options": [
+  "$16\\ \\text{g mol}^{-1}$",
+  "$24\\ \\text{g mol}^{-1}$",
+  "$36\\ \\text{g mol}^{-1}$",
+  "$64\\ \\text{g mol}^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For equal volumes, effusion time is proportional to √M. Thus M_X = 16(30/20)² = 36 g mol⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{t_X}{t_{\\text{CH}_4}}=\\dfrac{r_{\\text{CH}_4}}{r_X}=\\sqrt{\\dfrac{M_X}{M_{\\text{CH}_4}}}$\n$\\dfrac{30}{20}=\\sqrt{\\dfrac{M_X}{16}}\\quad\\Rightarrow\\quad M_X=36\\ \\text{g mol}^{-1}$\n\nIndependent check: For equal volumes, effusion time is proportional to √M. Thus M_X = 16(30/20)² = 36 g mol⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For equal volumes at the same temperature and pressure, methane effuses in $20$ s and gas X in $30$ s. Find the molar mass of X. Take $M(\\text{CH}_4)=16\\ \\text{g mol}^{-1}$.",
+  "options": [
+   "$16\\ \\text{g mol}^{-1}$",
+   "$24\\ \\text{g mol}^{-1}$",
+   "$36\\ \\text{g mol}^{-1}$",
+   "$64\\ \\text{g mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{t_X}{t_{\\text{CH}_4}}=\\dfrac{r_{\\text{CH}_4}}{r_X}=\\sqrt{\\dfrac{M_X}{M_{\\text{CH}_4}}}$\n$\\dfrac{30}{20}=\\sqrt{\\dfrac{M_X}{16}}\\quad\\Rightarrow\\quad M_X=36\\ \\text{g mol}^{-1}$",
+  "distractor_notes": "A: Uses the time ratio without squaring; B: Uses the time ratio linearly with the wrong reference; D: Misreads the time ratio as $2$ before squaring."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

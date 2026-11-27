@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A string fixed at both ends vibrates in its second harmonic at a frequency of $240\\text{ Hz}$. If the tension is increased by a factor of $9$ and the vibrating length is doubled (keeping the linear mass density constant), the frequency of the second harmonic becomes:",
+ "stem": "A string fixed at both ends vibrates in its third harmonic. Its tension is reduced to one-ninth of its original value, while its vibrating length is reduced to half. The ratio of its new frequency to its original frequency is",
  "options": [
-  "$160\\text{ Hz}$",
-  "$360\\text{ Hz}$",
-  "$720\\text{ Hz}$",
-  "$1080\\text{ Hz}$"
+  "$\\dfrac{1}{6}$",
+  "$\\dfrac{2}{3}$",
+  "$\\dfrac{3}{2}$",
+  "$2$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,8 +34,8 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Second harmonic: f2 = (2/(2L))√(T/μ) = (1/L)√(T/μ). T→9T gives factor √9=3; L→2L gives factor 1/2. New f2 = 240×3/2 = 360 Hz.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the same harmonic, f = n/(2L)√(T/μ). Hence f_new/f_old = 2√(1/9) = 2/3.",
    "answer": "B",
    "confidence": 0.99,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The frequency of the $n$-th harmonic of a string of length $L$ fixed at both ends under tension $T$ is given by:\n$$f_n = \\dfrac{n}{2L}\\sqrt{\\dfrac{T}{\\mu}}$$\n\nFor the second harmonic ($n = 2$):\n$$f = \\dfrac{2}{2L}\\sqrt{\\dfrac{T}{\\mu}} = 240\\text{ Hz}$$\n\nWhen the tension is increased to $T' = 9T$ and the length is changed to $L' = 2L$, the new frequency in the same harmonic mode ($n = 2$) is:\n$$f' = \\dfrac{2}{2L'}\\sqrt{\\dfrac{T'}{\\mu}} = \\dfrac{2}{2(2L)}\\sqrt{\\dfrac{9T}{\\mu}} = \\dfrac{\\sqrt{9}}{2}\\left(\\dfrac{2}{2L}\\sqrt{\\dfrac{T}{\\mu}}\\right) = \\dfrac{3}{2}f$$\n\nSubstituting $f = 240\\text{ Hz}$:\n$$f' = \\dfrac{3}{2} \\times 240\\text{ Hz} = 360\\text{ Hz}$$\n\nIndependent check: Second harmonic: f2 = (2/(2L))√(T/μ) = (1/L)√(T/μ). T→9T gives factor √9=3; L→2L gives factor 1/2. New f2 = 240×3/2 = 360 Hz.",
+ "working": "$f_n=\\dfrac{n}{2L}\\sqrt{\\dfrac{T}{\\mu}}$\n$\\dfrac{f'}{f}=\\dfrac{L}{L'}\\sqrt{\\dfrac{T'}{T}}$\n$=2\\sqrt{\\dfrac{1}{9}}=\\dfrac{2}{3}$\n\nIndependent check: For the same harmonic, f = n/(2L)√(T/μ). Hence f_new/f_old = 2√(1/9) = 2/3.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A string fixed at both ends vibrates in its second harmonic at a frequency of $240\\text{ Hz}$. If the tension is increased by a factor of $9$ and the vibrating length is doubled (keeping the linear mass density constant), the frequency of the second harmonic becomes:",
+  "stem": "A string fixed at both ends vibrates in its third harmonic. Its tension is reduced to one-ninth of its original value, while its vibrating length is reduced to half. The ratio of its new frequency to its original frequency is",
   "options": [
-   "$160\\text{ Hz}$",
-   "$360\\text{ Hz}$",
-   "$720\\text{ Hz}$",
-   "$1080\\text{ Hz}$"
+   "$\\dfrac{1}{6}$",
+   "$\\dfrac{2}{3}$",
+   "$\\dfrac{3}{2}$",
+   "$2$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "The frequency of the $n$-th harmonic of a string of length $L$ fixed at both ends under tension $T$ is given by:\n$$f_n = \\dfrac{n}{2L}\\sqrt{\\dfrac{T}{\\mu}}$$\n\nFor the second harmonic ($n = 2$):\n$$f = \\dfrac{2}{2L}\\sqrt{\\dfrac{T}{\\mu}} = 240\\text{ Hz}$$\n\nWhen the tension is increased to $T' = 9T$ and the length is changed to $L' = 2L$, the new frequency in the same harmonic mode ($n = 2$) is:\n$$f' = \\dfrac{2}{2L'}\\sqrt{\\dfrac{T'}{\\mu}} = \\dfrac{2}{2(2L)}\\sqrt{\\dfrac{9T}{\\mu}} = \\dfrac{\\sqrt{9}}{2}\\left(\\dfrac{2}{2L}\\sqrt{\\dfrac{T}{\\mu}}\\right) = \\dfrac{3}{2}f$$\n\nSubstituting $f = 240\\text{ Hz}$:\n$$f' = \\dfrac{3}{2} \\times 240\\text{ Hz} = 360\\text{ Hz}$$",
-  "distractor_notes": "$160\\text{ Hz}$: inverted the scaling ratio by taking $f' = f \\times \\dfrac{L'}{L}\\sqrt{\\dfrac{T}{T'}} = 240 \\times \\dfrac{2}{3}$.\n$720\\text{ Hz}$: accounted only for the tension increase and omitted the length change ($240 \\times \\sqrt{9}$). \n$1080\\text{ Hz}$: forgot the square root on tension, scaling linearly as $f' = 240 \\times \\dfrac{9}{2}$.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$f_n=\\dfrac{n}{2L}\\sqrt{\\dfrac{T}{\\mu}}$\n$\\dfrac{f'}{f}=\\dfrac{L}{L'}\\sqrt{\\dfrac{T'}{T}}$\n$=2\\sqrt{\\dfrac{1}{9}}=\\dfrac{2}{3}$",
+  "distractor_notes": "A: Multiplies the length ratio by the tension ratio instead of its square root. C: Uses the length factor but omits the tension change. D: Accounts for the length change but omits the tension change."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

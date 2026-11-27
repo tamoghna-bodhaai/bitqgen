@@ -1,0 +1,71 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Energy level transitions",
+  "archetype": "single-formula numerical",
+  "brief": "Electron in a hydrogen-like atom jumps between two given levels; find the emitted photon energy or wavelength using Bohr energy formula.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:19",
+   "2022:23",
+   "2021:25"
+  ],
+  "origin": "variant",
+  "bank_ref": "g201a22a7b81e"
+ },
+ "status": "ok",
+ "stem": "In a $\\text{He}^+$ ion, an electron makes a transition from $n=3$ to $n=2$. What is the wavelength of the emitted photon? Take $R = 1.097\\times10^7$ m$^{-1}$.",
+ "options": [
+  "$82$ nm",
+  "$328$ nm",
+  "$164$ nm",
+  "$656$ nm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For He⁺, 1/λ = RZ²(1/2² − 1/3²) = (5/9)R, so λ ≈ 1.64 × 10⁻⁷ m = 164 nm.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\dfrac{1}{\\lambda}=RZ^2\\left(\\dfrac{1}{2^2}-\\dfrac{1}{3^2}\\right)$, with $Z=2$. \n$\\dfrac{1}{\\lambda}=1.097\\times10^7\\times4\\times\\dfrac{5}{36}=6.094\\times10^6$ m$^{-1}$. \n$\\lambda=1.641\\times10^{-7}$ m $\\approx 164$ nm.\n\nIndependent check: For He⁺, 1/λ = RZ²(1/2² − 1/3²) = (5/9)R, so λ ≈ 1.64 × 10⁻⁷ m = 164 nm.",
+ "solution": "For a hydrogen-like ion, $\\frac{1}{\\text{λ}}=RZ^2\\big(\\frac{1}{2^2}-\\frac{1}{3^2}\\big)$, with $Z=2$.\n$$\\frac{1}{\\text{λ}}=1.097\\times10^7\\times4\\times\\frac{5}{36}=6.094\\times10^6\\text{ m}^{-1}$$\nThus, $\\text{λ}=1.641\\times10^{-7}\\text{ m}\\approx164\\text{ nm}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a $\\text{He}^+$ ion, an electron makes a transition from $n=3$ to $n=2$. What is the wavelength of the emitted photon? Take $R = 1.097\\times10^7$ m$^{-1}$.",
+  "options": [
+   "$82$ nm",
+   "$164$ nm",
+   "$328$ nm",
+   "$656$ nm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{1}{\\lambda}=RZ^2\\left(\\dfrac{1}{2^2}-\\dfrac{1}{3^2}\\right)$, with $Z=2$. \n$\\dfrac{1}{\\lambda}=1.097\\times10^7\\times4\\times\\dfrac{5}{36}=6.094\\times10^6$ m$^{-1}$. \n$\\lambda=1.641\\times10^{-7}$ m $\\approx 164$ nm.",
+  "distractor_notes": "A: introduces an extra factor of $2$ in the wavelength. C: uses $Z$ instead of $Z^2$. D: omits the $Z^2$ factor."
+ },
+ "variant_of": "g201a22a7b81e",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,76 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gate combinations",
+  "archetype": "gate-circuit reduction",
+  "brief": "Circuit diagram of two or three logic gates (e.g., NAND–NAND or mixed gates) with labelled inputs; reduce the circuit and identify the equivalent single gate or output expression.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:23",
+   "2026s1:28",
+   "2026s2:16"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the logic circuit shown in the figure, the output $Y$ is:",
+ "options": [
+  "$\\overline{AB+CD}$",
+  "$(A+B)(C+D)$",
+  "$\\overline{AB}+\\overline{CD}$",
+  "$AB+CD$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q029_stem_v1.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "G₁ = ¬(AB), G₂ = ¬(CD). The final NAND gives Y = ¬[¬(AB)·¬(CD)] = AB + CD.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$Y=\\overline{\\overline{AB}\\,\\overline{CD}}=AB+CD$\n\nIndependent check: G₁ = ¬(AB), G₂ = ¬(CD). The final NAND gives Y = ¬[¬(AB)·¬(CD)] = AB + CD.",
+ "solution": "The first two gates give $\\overline{AB}$ and $\\overline{CD}$. Applying De Morgan’s law at the final NAND gate,\n$$Y=\\overline{\\overline{AB}\\,\\overline{CD}}=AB+CD.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the logic circuit shown in the figure, the output $Y$ is:",
+  "options": [
+   "$\\overline{AB+CD}$",
+   "$(A+B)(C+D)$",
+   "$AB+CD$",
+   "$\\overline{AB}+\\overline{CD}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw three standard 2-input NAND gates, each as an AND-gate shape with a small inversion bubble at its output. Place G1 at the upper left, G2 at the lower left, and G3 to their right, vertically between them. Connect input wires labelled A and B to the two inputs of G1. Connect input wires labelled C and D to the two inputs of G2. Connect the output of G1 to one input of G3 and the output of G2 to the other input of G3. Label the output wire from G3 as Y. Draw no other gates or connections.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$Y=\\overline{\\overline{AB}\\,\\overline{CD}}=AB+CD$",
+  "distractor_notes": "A: Treats the final NAND as an AND. B: Replaces each NAND with an OR. D: Combines the two intermediate NAND outputs with OR instead of NAND."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

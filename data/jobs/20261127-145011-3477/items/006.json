@@ -1,0 +1,56 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "Mean free path / mean free time",
+  "archetype": "statement evaluation",
+  "brief": "Ask how mean free path changes when temperature is raised at constant pressure (or diameter/molecule count changed); requires careful λ ∝ T/(p·d²) reasoning.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:38",
+   "2024s2:23",
+   "2022:5"
+  ],
+  "origin": "direct",
+  "bank_ref": "gaf2d01541f02"
+ },
+ "status": "ok",
+ "stem": "Consider an ideal gas of fixed molecular diameter; for the diatomic gas mentioned below, vibrational modes are inactive. Which statements are true? I. At constant pressure, mean free path is proportional to absolute temperature. II. At constant pressure, mean free time is proportional to the square root of absolute temperature. III. The diatomic gas has molar internal energy $5RT/2$. IV. At fixed number density, pressure is proportional to rms speed.",
+ "options": [
+  "II, III and IV",
+  "I and IV only",
+  "I, II and III",
+  "I, II, III and IV"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "A",
+   "confidence": 0.99
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank gaf2d01541f02 (verified in job 20261127-132429-aa8a)"
+ ],
+ "working": "$\\lambda=\\dfrac{k_BT}{\\sqrt{2}\\pi d^2p}$, so at fixed $p,d$, $\\lambda\\propto T$. \n$\\tau=\\lambda/\\bar v$ and $\\bar v\\propto\\sqrt{T}$, hence $\\tau\\propto\\sqrt{T}$ at fixed pressure. \nFor $f=5$, $U_m=\\dfrac{fRT}{2}=\\dfrac{5RT}{2}$. \n$p=\\dfrac{1}{3}nmv_{\\mathrm{rms}}^2$, so IV is false.\n\nIndependent check: At constant pressure, number density is proportional to 1/T, so mean free path ∝ T; mean speed ∝ √T, hence mean free time ∝ √T. A diatomic gas with inactive vibrations has 5 active degrees of freedom, giving Uₘ = 5RT/2. At fixed number density, pressure ∝ vᵣₘₛ², not vᵣₘₛ. Thus I, II, and III are true.",
+ "solution": "For fixed molecular diameter, $\\lambda=\\dfrac{k_BT}{\\sqrt{2}\\pi d^2p}\\propto T$ at constant pressure; since $\\bar v\\propto\\sqrt T$, the mean free time $\\tau=\\lambda/\\bar v\\propto\\sqrt T$. A diatomic gas with inactive vibrations has $f=5$, so $U_m=\\dfrac{fRT}{2}=\\dfrac{5RT}{2}$. At fixed number density, $p=\\dfrac13nmv_{\\rm rms}^2$, so IV is false. Hence I, II and III are true.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "gaf2d01541f02",
+ "author_model": "openai/gpt-6-luna-pro"
+}

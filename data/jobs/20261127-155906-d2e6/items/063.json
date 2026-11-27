@@ -1,0 +1,70 @@
+{
+ "qno": 63,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 63,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "SN1 reactivity and carbocation stability",
+  "archetype": "stability ordering",
+  "brief": "Rank three alkyl halides by SN1 reactivity via carbocation stability (include resonance-stabilised allylic); pick correct decreasing order.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:40",
+   "2025s1:60",
+   "2024s2:55"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which is the decreasing order of SN1 reactivity?",
+ "options": [
+  "2-Chlorobutane > 3-chlorobut-1-ene > 1-chlorobutane",
+  "3-Chlorobut-1-ene > 2-chlorobutane > 1-chlorobutane",
+  "1-Chlorobutane > 2-chlorobutane > 3-chlorobut-1-ene",
+  "3-Chlorobut-1-ene > 1-chlorobutane > 2-chlorobutane"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "3-Chlorobut-1-ene forms a resonance-stabilized allylic carbocation, so it reacts fastest. 2-Chlorobutane forms a secondary carbocation, which is more stable than the primary carbocation from 1-chlorobutane. Order: 3-chlorobut-1-ene > 2-chlorobutane > 1-chlorobutane.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "SN1 reactivity follows carbocation stability: secondary allylic (resonance-stabilised) $>$ secondary alkyl $>$ primary alkyl.\n\nIndependent check: 3-Chlorobut-1-ene forms a resonance-stabilized allylic carbocation, so it reacts fastest. 2-Chlorobutane forms a secondary carbocation, which is more stable than the primary carbocation from 1-chlorobutane. Order: 3-chlorobut-1-ene > 2-chlorobutane > 1-chlorobutane.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which is the decreasing order of SN1 reactivity?",
+  "options": [
+   "2-Chlorobutane > 3-chlorobut-1-ene > 1-chlorobutane",
+   "3-Chlorobut-1-ene > 2-chlorobutane > 1-chlorobutane",
+   "1-Chlorobutane > 2-chlorobutane > 3-chlorobut-1-ene",
+   "3-Chlorobut-1-ene > 1-chlorobutane > 2-chlorobutane"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "SN1 reactivity follows carbocation stability: secondary allylic (resonance-stabilised) $>$ secondary alkyl $>$ primary alkyl.",
+  "distractor_notes": "A: Places the ordinary secondary carbocation above the resonance-stabilised allylic one. C: Reverses the stability trend. D: Places the primary carbocation above the secondary alkyl carbocation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Arithmetico-geometric series",
+  "archetype": "AGP sum",
+  "brief": "Sum an arithmetico-geometric series to n terms (or infinity) such as Σ n xⁿ; use the shift-and-subtract method; moderately demanding algebra.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:112",
+   "2024s2:106",
+   "2021:139"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\sum_{k=1}^{6}k\\left(-\\dfrac{1}{2}\\right)^{k-1}$.",
+ "options": [
+  "$\\dfrac{3}{8}$",
+  "$-\\dfrac{3}{8}$",
+  "$\\dfrac{9}{16}$",
+  "$\\dfrac{21}{32}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the finite geometric-sum derivative, \\(\\sum_{k=1}^{6}kx^{k-1}=\\frac{1-7x^6+6x^7}{(1-x)^2}\\). At \\(x=-\\tfrac12\\), this equals \\(\\tfrac38\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $S=\\sum_{k=1}^{6}kr^{k-1}$, where $r=-\\dfrac12$. Then $(1-r)S=1+r+r^2+r^3+r^4+r^5-6r^6=\\dfrac{9}{16}$. Hence $S=\\dfrac{9}{16}\\div\\dfrac32=\\dfrac38$.\n\nIndependent check: Using the finite geometric-sum derivative, \\(\\sum_{k=1}^{6}kx^{k-1}=\\frac{1-7x^6+6x^7}{(1-x)^2}\\). At \\(x=-\\tfrac12\\), this equals \\(\\tfrac38\\).",
+ "solution": "Let $S=\\sum_{k=1}^{6}kr^{k-1}$, where $r=-\\frac12$. Then\n$$\n(1-r)S=1+r+r^2+r^3+r^4+r^5-6r^6=\\frac{9}{16}.\n$$\nThus $S=\\frac{9}{16}\\div\\frac32=\\frac38$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\sum_{k=1}^{6}k\\left(-\\dfrac{1}{2}\\right)^{k-1}$.",
+  "options": [
+   "$\\dfrac{3}{8}$",
+   "$-\\dfrac{3}{8}$",
+   "$\\dfrac{9}{16}$",
+   "$\\dfrac{21}{32}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Let $S=\\sum_{k=1}^{6}kr^{k-1}$, where $r=-\\dfrac12$. Then $(1-r)S=1+r+r^2+r^3+r^4+r^5-6r^6=\\dfrac{9}{16}$. Hence $S=\\dfrac{9}{16}\\div\\dfrac32=\\dfrac38$.",
+  "distractor_notes": "B: sign error from the alternating terms; C: omits division by $1-r$; D: omits the final term correction $-6r^6$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

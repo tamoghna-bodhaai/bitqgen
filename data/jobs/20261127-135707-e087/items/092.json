@@ -1,0 +1,68 @@
+{
+ "qno": 92,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 92,
+  "section": "English Proficiency",
+  "chapter": "Active and Passive Voice",
+  "subtopic": "Active and passive voice",
+  "archetype": "voice change",
+  "brief": "Convert a simple present/past declarative sentence with one object from active to passive; all four options are passive forms differing in auxiliary or object order.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:65",
+   "2024s1:63",
+   "2024s1:70"
+  ]
+ },
+ "status": "ok",
+ "stem": "Change the following sentence into passive voice: The committee approved the proposal after a brief discussion.",
+ "options": [
+  "The proposal approved the committee after a brief discussion.",
+  "The proposal is approved by the committee after a brief discussion.",
+  "The committee was approved by the proposal after a brief discussion.",
+  "The proposal was approved by the committee after a brief discussion."
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The active sentence is simple past; passive voice uses “was approved,” with the proposal as the subject.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The active object, “the proposal,” becomes the passive subject. Simple past “approved” takes “was approved”; the agent remains “by the committee.”\n\nIndependent check: The active sentence is simple past; passive voice uses “was approved,” with the proposal as the subject.",
+ "solution": "The active object, “the proposal,” becomes the subject; simple past “approved” changes to “was approved.” The agent is introduced by “by”: The proposal was approved by the committee after a brief discussion.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Change the following sentence into passive voice: The committee approved the proposal after a brief discussion.",
+  "options": [
+   "The proposal was approved by the committee after a brief discussion.",
+   "The proposal is approved by the committee after a brief discussion.",
+   "The committee was approved by the proposal after a brief discussion.",
+   "The proposal approved the committee after a brief discussion."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The active object, “the proposal,” becomes the passive subject. Simple past “approved” takes “was approved”; the agent remains “by the committee.”",
+  "distractor_notes": "B changes the tense to simple present; C reverses the agent and object; D leaves the sentence in active voice."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 66,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 66,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order half-life",
+  "archetype": "count half-lives",
+  "brief": "Given initial amount and fraction remaining after time t, find the half-life (or time for N half-lives) using count-half-lives logic.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:48",
+   "2022:39",
+   "2024s2:32"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A first-order reaction leaves $\\dfrac{1}{8}$ of its initial amount after $6$ h. What is its half-life?",
+ "options": [
+  "$1$ h",
+  "$2$ h",
+  "$3$ h",
+  "$4$ h"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since $1/8=(1/2)^3$, 6 h corresponds to 3 half-lives; therefore $t_{1/2}=6/3=2$ h.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{N}{N_0}=\\left(\\dfrac12\\right)^n=\\dfrac18=\\left(\\dfrac12\\right)^3$\\n$n=3$; $t_{1/2}=\\dfrac{6\\ \\text{h}}{3}=2\\ \\text{h}$.\n\nIndependent check: Since $1/8=(1/2)^3$, 6 h corresponds to 3 half-lives; therefore $t_{1/2}=6/3=2$ h.",
+ "solution": "For a first-order reaction, $N/N_0=(1/2)^n$. Since $1/8=(1/2)^3$, 6 h corresponds to 3 half-lives.\n$$t_{1/2}=\\frac{6\\text{ h}}{3}=2\\text{ h}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A first-order reaction leaves $\\dfrac{1}{8}$ of its initial amount after $6$ h. What is its half-life?",
+  "options": [
+   "$1$ h",
+   "$2$ h",
+   "$3$ h",
+   "$4$ h"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{N}{N_0}=\\left(\\dfrac12\\right)^n=\\dfrac18=\\left(\\dfrac12\\right)^3$\\n$n=3$; $t_{1/2}=\\dfrac{6\\ \\text{h}}{3}=2\\ \\text{h}$.",
+  "distractor_notes": "A: counts six half-lives instead of three.\\nC: divides the time by two rather than by three.\\nD: miscounts the number of half-lives."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

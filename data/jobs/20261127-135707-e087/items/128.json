@@ -1,0 +1,68 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Rate of change",
+  "archetype": "related rates",
+  "brief": "Two related quantities changing with time (e.g., ladder sliding, water level rising); differentiate an implicit relation and evaluate at a given instant.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:129",
+   "2024s2:120",
+   "2024s1:130"
+  ]
+ },
+ "status": "ok",
+ "stem": "An upright right circular frustum-shaped tank is $6$ m high, with bottom and top radii $2$ m and $5$ m. Water enters at $6\\pi\\ \\text{m}^3\\text{ min}^{-1}$. When the water is $2$ m deep, find the rate of increase of the wetted curved area.",
+ "options": [
+  "$2\\pi\\ \\text{m}^2\\text{ min}^{-1}$",
+  "$2\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$",
+  "$4\\pi\\ \\text{m}^2\\text{ min}^{-1}$",
+  "$3\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At depth h, the water-surface radius is r=2+h/2. Since dV/dh=πr², at h=2 we have dh/dt=6π/(9π)=2/3. The wetted curved area is A=π(2+r)(h√5/2), so at h=2, dA/dh=3π√5. Thus dA/dt=2π√5 m² min⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $h$ be water depth and $r=2+\\dfrac h2$ the water-surface radius. The wetted slant height is $s=\\dfrac{\\sqrt5}{2}h$. $\\dfrac{dV}{dh}=\\pi r^2$, hence at $h=2$, $r=3$ and $\\dfrac{dh}{dt}=\\dfrac{6\\pi}{9\\pi}=\\dfrac23$. $S=\\pi(2+r)s=\\pi\\sqrt5(2h+\\dfrac{h^2}{4})$. Thus $\\dfrac{dS}{dt}=\\pi\\sqrt5(2+\\dfrac h2)\\dfrac{dh}{dt}=2\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$.\n\nIndependent check: At depth h, the water-surface radius is r=2+h/2. Since dV/dh=πr², at h=2 we have dh/dt=6π/(9π)=2/3. The wetted curved area is A=π(2+r)(h√5/2), so at h=2, dA/dh=3π√5. Thus dA/dt=2π√5 m² min⁻¹.",
+ "solution": "At depth $h$, the water-surface radius is $r=2+\\dfrac h2$, and $\\dfrac{dV}{dh}=\\pi r^2$. At $h=2$, $r=3$, so $\\dfrac{dh}{dt}=\\dfrac{6\\pi}{9\\pi}=\\dfrac23$.\nThe wetted curved area is $S=\\pi(2+r)\\dfrac{\\sqrt5}{2}h=\\pi\\sqrt5\\left(2h+\\dfrac{h^2}{4}\\right)$. Hence\n$$\\dfrac{dS}{dt}=\\pi\\sqrt5\\left(2+\\dfrac h2\\right)\\dfrac{dh}{dt}=2\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "An upright right circular frustum-shaped tank is $6$ m high, with bottom and top radii $2$ m and $5$ m. Water enters at $6\\pi\\ \\text{m}^3\\text{ min}^{-1}$. When the water is $2$ m deep, find the rate of increase of the wetted curved area.",
+  "options": [
+   "$2\\pi\\ \\text{m}^2\\text{ min}^{-1}$",
+   "$4\\pi\\ \\text{m}^2\\text{ min}^{-1}$",
+   "$2\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$",
+   "$3\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Let $h$ be water depth and $r=2+\\dfrac h2$ the water-surface radius. The wetted slant height is $s=\\dfrac{\\sqrt5}{2}h$. $\\dfrac{dV}{dh}=\\pi r^2$, hence at $h=2$, $r=3$ and $\\dfrac{dh}{dt}=\\dfrac{6\\pi}{9\\pi}=\\dfrac23$. $S=\\pi(2+r)s=\\pi\\sqrt5(2h+\\dfrac{h^2}{4})$. Thus $\\dfrac{dS}{dt}=\\pi\\sqrt5(2+\\dfrac h2)\\dfrac{dh}{dt}=2\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$.",
+  "distractor_notes": "A: uses the radius increase as the slant height; B: uses vertical depth as the slant height; D: omits the factor $\\dfrac{dh}{dt}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

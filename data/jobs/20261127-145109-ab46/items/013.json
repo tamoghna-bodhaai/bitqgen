@@ -1,0 +1,70 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Field from potential",
+  "archetype": "differentiate potential",
+  "brief": "Given V as a function of position (e.g. V = kx² or ax + bx²), find the electric field (and ask for its value or zero point) by differentiating the potential.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:14",
+   "2026s1:4",
+   "2023s1:8"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The electric potential along the $x$-axis is $V(x)=(3x^2+4x)$ V, where $x$ is in metres. The $x$-component of the electric field at $x=1$ m is",
+ "options": [
+  "$-4$ V m$^{-1}$",
+  "$-10$ V m$^{-1}$",
+  "$+4$ V m$^{-1}$",
+  "$+10$ V m$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "$E_x=-\\frac{dV}{dx}=-(6x+4)$; at $x=1\\,\\mathrm m$, $E_x=-10\\,\\mathrm{V\\,m^{-1}}$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E_x=-\\dfrac{dV}{dx}=-(6x+4)$\nAt $x=1$ m: $E_x=-(6+4)=-10$ V m$^{-1}$\n\nIndependent check: $E_x=-\\frac{dV}{dx}=-(6x+4)$; at $x=1\\,\\mathrm m$, $E_x=-10\\,\\mathrm{V\\,m^{-1}}$.",
+ "solution": "The electric field is the negative gradient of the potential:\n$$E_x=-\\frac{dV}{dx}=-(6x+4).$$\nAt $x=1\\,\\mathrm{m}$, $E_x=-(6+4)=-10\\,\\mathrm{V\\,m^{-1}}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The electric potential along the $x$-axis is $V(x)=(3x^2+4x)$ V, where $x$ is in metres. The $x$-component of the electric field at $x=1$ m is",
+  "options": [
+   "$-10$ V m$^{-1}$",
+   "$-4$ V m$^{-1}$",
+   "$+4$ V m$^{-1}$",
+   "$+10$ V m$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$E_x=-\\dfrac{dV}{dx}=-(6x+4)$\nAt $x=1$ m: $E_x=-(6+4)=-10$ V m$^{-1}$",
+  "distractor_notes": "B: Differentiates only the quadratic term. C: Omits the negative sign and the linear-term contribution. D: Omits the negative sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

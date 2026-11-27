@@ -1,0 +1,71 @@
+{
+ "qno": 104,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 104,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "series-completion",
+  "brief": "Alpha-numeric series combining letters with a numeric pattern (e.g., AB2, CD4, EF6...); find the next term.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:73",
+   "2022:73",
+   "2023s2:81"
+  ],
+  "origin": "variant",
+  "bank_ref": "g654dd39b00b6"
+ },
+ "status": "ok",
+ "stem": "A display prints the following sequence of codes. Which code should appear next?\n\nB4Y, E8V, H12S, K16P, ?",
+ "options": [
+  "N20L",
+  "N20M",
+  "M20N",
+  "N19M"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "First letters advance by 3 (B, E, H, K, N); numbers increase by 4 (4, 8, 12, 16, 20); last letters move back by 3 (Y, V, S, P, M).",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "First letters advance by 3: B, E, H, K, N. Numbers increase by 4: 4, 8, 12, 16, 20. Last letters move back by 3: Y, V, S, P, M. Hence the next code is N20M; the other options alter one of these patterns.\n\nIndependent check: First letters advance by 3 (B, E, H, K, N); numbers increase by 4 (4, 8, 12, 16, 20); last letters move back by 3 (Y, V, S, P, M).",
+ "solution": "First letters advance by 3, numbers increase by 4, and last letters move back by 3.\nThus the next code is $N, 20, M$, giving $N20M$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A display prints the following sequence of codes. Which code should appear next?\n\nB4Y, E8V, H12S, K16P, ?",
+  "options": [
+   "N20M",
+   "N20L",
+   "M20N",
+   "N19M"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "First letters advance by 3: B, E, H, K, N. Numbers increase by 4: 4, 8, 12, 16, 20. Last letters move back by 3: Y, V, S, P, M. Hence the next code is N20M; the other options alter one of these patterns.",
+  "distractor_notes": "B: last letter is incorrect. C: first and last letters are incorrect. D: number does not follow the +4 pattern."
+ },
+ "variant_of": "g654dd39b00b6",
+ "author_model": "openai/gpt-6-luna"
+}

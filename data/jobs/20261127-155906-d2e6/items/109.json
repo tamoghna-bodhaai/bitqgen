@@ -1,0 +1,70 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Range of rational functions",
+  "archetype": "discriminant method",
+  "brief": "Find the range of a rational function y = (linear)/(quadratic) using the discriminant method; difficulty 2 so keep coefficients simple.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:112",
+   "2023s2:114",
+   "2024s1:120"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The range of $f(x)=\\dfrac{x}{x^2+1}$, for $x\\in\\mathbb{R}$, is",
+ "options": [
+  "$\\left[-\\dfrac{1}{2},\\dfrac{1}{2}\\right]$",
+  "$[-1,1]$",
+  "$\\left[0,\\dfrac{1}{2}\\right]$",
+  "$\\left[-\\dfrac{1}{4},\\dfrac{1}{4}\\right]$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since x²+1 ≥ 2|x|, |f(x)| ≤ 1/2. Equality occurs at x = ±1, so the range is [−1/2, 1/2].",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y=\\dfrac{x}{x^2+1}\\Rightarrow yx^2-x+y=0$.\\n$\\Delta=1-4y^2\\ge 0\\Rightarrow -\\dfrac12\\le y\\le\\dfrac12$.\n\nIndependent check: Since x²+1 ≥ 2|x|, |f(x)| ≤ 1/2. Equality occurs at x = ±1, so the range is [−1/2, 1/2].",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The range of $f(x)=\\dfrac{x}{x^2+1}$, for $x\\in\\mathbb{R}$, is",
+  "options": [
+   "$\\left[-\\dfrac{1}{2},\\dfrac{1}{2}\\right]$",
+   "$[-1,1]$",
+   "$\\left[0,\\dfrac{1}{2}\\right]$",
+   "$\\left[-\\dfrac{1}{4},\\dfrac{1}{4}\\right]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$y=\\dfrac{x}{x^2+1}\\Rightarrow yx^2-x+y=0$.\\n$\\Delta=1-4y^2\\ge 0\\Rightarrow -\\dfrac12\\le y\\le\\dfrac12$.",
+  "distractor_notes": "B: overestimates the range by using an incorrect bound. C: omits the negative values. D: introduces an erroneous factor of $2$ in the bound."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

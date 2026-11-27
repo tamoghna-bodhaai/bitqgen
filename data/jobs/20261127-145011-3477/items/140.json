@@ -1,0 +1,71 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by substitution",
+  "archetype": "substitution integral",
+  "brief": "Simple indefinite integral of the form ∫ f(ax+b) dx or ∫ x^k e^{x^{k+1}} type solved by direct substitution",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:122",
+   "2021:118",
+   "2021:142"
+  ],
+  "origin": "variant",
+  "bank_ref": "g362660286b27"
+ },
+ "status": "ok",
+ "stem": "Evaluate the indefinite integral $\\displaystyle\\int (2x+1)^4\\,dx$.",
+ "options": [
+  "$\\dfrac{(2x+1)^5}{5}+C$",
+  "$\\dfrac{(2x+1)^5}{10}+C$",
+  "$\\dfrac{(2x+1)^4}{8}+C$",
+  "$\\dfrac{(2x+1)^5}{20}+C$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let u=2x+1, so du=2dx. Then ∫(2x+1)^4 dx = (1/2)∫u^4 du = (2x+1)^5/10 + C.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=2x+1$, so $du=2\\,dx$. Thus $\\displaystyle\\int(2x+1)^4\\,dx=\\dfrac12\\int u^4\\,du=\\dfrac{u^5}{10}+C=\\dfrac{(2x+1)^5}{10}+C$.\n\nIndependent check: Let u=2x+1, so du=2dx. Then ∫(2x+1)^4 dx = (1/2)∫u^4 du = (2x+1)^5/10 + C.",
+ "solution": "Let $u=2x+1$, so $du=2\\,dx$.\n$$\\int(2x+1)^4\\,dx=\\frac12\\int u^4\\,du=\\frac{u^5}{10}+C=\\frac{(2x+1)^5}{10}+C$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate the indefinite integral $\\displaystyle\\int (2x+1)^4\\,dx$.",
+  "options": [
+   "$\\dfrac{(2x+1)^5}{10}+C$",
+   "$\\dfrac{(2x+1)^5}{5}+C$",
+   "$\\dfrac{(2x+1)^4}{8}+C$",
+   "$\\dfrac{(2x+1)^5}{20}+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$u=2x+1$, so $du=2\\,dx$. Thus $\\displaystyle\\int(2x+1)^4\\,dx=\\dfrac12\\int u^4\\,du=\\dfrac{u^5}{10}+C=\\dfrac{(2x+1)^5}{10}+C$.",
+  "distractor_notes": "B: omits the factor of $\\dfrac12$ from the substitution. C: applies the power rule without increasing the exponent. D: includes an extra factor of $\\dfrac12$."
+ },
+ "variant_of": "g362660286b27",
+ "author_model": "openai/gpt-6-luna-pro"
+}

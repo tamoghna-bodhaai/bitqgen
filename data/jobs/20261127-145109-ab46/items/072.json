@@ -1,0 +1,70 @@
+{
+ "qno": 72,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 72,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Kp and degree of dissociation",
+  "archetype": "ICE table",
+  "brief": "For PCl5 ⇌ PCl3 + Cl2 at total equilibrium pressure P and degree of dissociation α, derive Kp; numerical with given α or given Kp to find α.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:33",
+   "2024s1:54",
+   "2021:50"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A $0.100$ molal solution of $\\text{CoCl}_3\\cdot x\\text{NH}_3$ has $\\Delta T_f=0.465$ K; take $K_f=1.86\\ \\text{K kg mol}^{-1}$. If $0.75$ of the formula units ionise, find $x$. Co(III) has coordination number 6, and only outer-sphere chloride ions ionise.",
+ "options": [
+  "$3$",
+  "$4$",
+  "$5$",
+  "$6$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Calculate the van’t Hoff factor: i = 0.465/(1.86 × 0.100) = 2.5. With x − 3 outer-sphere chlorides, ionisation yields x − 2 particles. Thus 2.5 = 1 + 0.75[(x − 2) − 1], giving x = 5.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{0.465}{1.86\\times0.100}=2.50$\nIf $n$ chloride ions are outside the coordination sphere, $i=1+n\\alpha$.\n$n=\\dfrac{2.50-1}{0.75}=2$.\nThus one chloride is coordinated; $x+1=6\\Rightarrow x=5$.\n\nIndependent check: Calculate the van’t Hoff factor: i = 0.465/(1.86 × 0.100) = 2.5. With x − 3 outer-sphere chlorides, ionisation yields x − 2 particles. Thus 2.5 = 1 + 0.75[(x − 2) − 1], giving x = 5.",
+ "solution": "$i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{0.465}{1.86\\times0.100}=2.50$.\nFor $n$ outer-sphere chloride ions, $i=1+n\\alpha$, so $n=\\dfrac{2.50-1}{0.75}=2$.\nThus one chloride is coordinated; with coordination number $6$, $x+1=6$, giving $x=5$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A $0.100$ molal solution of $\\text{CoCl}_3\\cdot x\\text{NH}_3$ has $\\Delta T_f=0.465$ K; take $K_f=1.86\\ \\text{K kg mol}^{-1}$. If $0.75$ of the formula units ionise, find $x$. Co(III) has coordination number 6, and only outer-sphere chloride ions ionise.",
+  "options": [
+   "$3$",
+   "$4$",
+   "$5$",
+   "$6$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{0.465}{1.86\\times0.100}=2.50$\nIf $n$ chloride ions are outside the coordination sphere, $i=1+n\\alpha$.\n$n=\\dfrac{2.50-1}{0.75}=2$.\nThus one chloride is coordinated; $x+1=6\\Rightarrow x=5$.",
+  "distractor_notes": "A: Counts all three chlorides as coordinated. B: Mistakes the two outer-sphere chlorides for coordinated ligands. D: Ignores the coordinated chloride when applying the coordination number."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,94 @@
+{
+ "id": "20261127-155906-d2e6",
+ "config": {
+  "title": "p7-hardest",
+  "subtitle": "",
+  "pattern_id": "bitsat_150",
+  "counts": null,
+  "profile": "balanced",
+  "difficulty": "much_harder",
+  "seed": 701517,
+  "workers": 24,
+  "batch_size": 4,
+  "max_revisions": 2,
+  "run_critic": true,
+  "check_figures": true,
+  "export": true,
+  "add_to_bank": true,
+  "source": "new",
+  "mix": null
+ },
+ "status": "running",
+ "stage": "critic",
+ "created": 1795775346.3907714,
+ "progress": {
+  "total": 150,
+  "done": 150,
+  "ok": 150,
+  "flagged": 0
+ },
+ "cost": 0.6143,
+ "started": 1795775346.3913085,
+ "cost_by_stage": {
+  "planner": {
+   "calls": 5,
+   "cost": 0.0571,
+   "prompt_tokens": 14313,
+   "completion_tokens": 10309,
+   "truncated": 0
+  },
+  "author_verbal": {
+   "calls": 8,
+   "cost": 0.00931,
+   "prompt_tokens": 16022,
+   "completion_tokens": 14644,
+   "truncated": 0,
+   "batch_questions": 20,
+   "batch_missing": 0
+  },
+  "solver_verbal": {
+   "calls": 25,
+   "cost": 0.00353,
+   "prompt_tokens": 10550,
+   "completion_tokens": 4943,
+   "truncated": 0
+  },
+  "author_pcm": {
+   "calls": 37,
+   "cost": 0.33306,
+   "prompt_tokens": 866918,
+   "completion_tokens": 529384,
+   "truncated": 0,
+   "batch_questions": 120,
+   "batch_missing": 4
+  },
+  "solver": {
+   "calls": 149,
+   "cost": 0.08516,
+   "prompt_tokens": 503889,
+   "completion_tokens": 106505,
+   "truncated": 0
+  },
+  "tiebreaker": {
+   "calls": 4,
+   "cost": 0.03493,
+   "prompt_tokens": 7614,
+   "completion_tokens": 6037,
+   "truncated": 0
+  },
+  "figure_coder": {
+   "calls": 8,
+   "cost": 0.09055,
+   "prompt_tokens": 11409,
+   "completion_tokens": 6773,
+   "truncated": 0
+  },
+  "figure_checker": {
+   "calls": 8,
+   "cost": 0.00073,
+   "prompt_tokens": 5481,
+   "completion_tokens": 714,
+   "truncated": 0
+  }
+ }
+}

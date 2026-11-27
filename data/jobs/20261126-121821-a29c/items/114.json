@@ -22,12 +22,12 @@
  "status": "ok",
  "stem": "Evaluate $\\displaystyle\\int_0^1 \\frac{3x+5}{(x+1)(x+2)}\\,dx$.",
  "options": [
-  "$\\ln\\dfrac{3}{2}$",
-  "$\\ln 3$",
   "$\\ln 6$",
+  "$\\ln 3$",
+  "$\\ln\\dfrac{3}{2}$",
   "$\\ln 12$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -46,7 +46,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$\\dfrac{3x+5}{(x+1)(x+2)}=\\dfrac{2}{x+1}+\\dfrac{1}{x+2}$.\\n$\\int_0^1\\left(\\dfrac{2}{x+1}+\\dfrac{1}{x+2}\\right)dx=2\\ln 2+\\ln\\dfrac{3}{2}=\\ln 6$.\n\nIndependent check: Partial fractions: (3x+5)/((x+1)(x+2)) = 2/(x+1) + 1/(x+2). Integrating from 0 to 1 gives [2 ln(x+1) + ln(x+2)]_0^1 = ln 6.",
- "solution": "",
+ "solution": "Resolve into partial fractions:\n$$\\frac{3x+5}{(x+1)(x+2)}=\\frac{2}{x+1}+\\frac{1}{x+2}.$$\nHence $\\displaystyle\\int_0^1\\left(\\frac{2}{x+1}+\\frac{1}{x+2}\\right)dx=\\left[2\\ln(x+1)+\\ln(x+2)\\right]_0^1=\\ln 6$.",
  "locked": false,
  "difficulty": 2,
  "draft": {

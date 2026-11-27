@@ -1,0 +1,70 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Symmetric functions of roots",
+  "archetype": "use root equation",
+  "brief": "If α, β are roots of a quadratic, find a symmetric expression (e.g., α² + β² or α³ + β³) in terms of coefficients via Vieta.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:123",
+   "2025s1:124",
+   "2023s2:97"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If $\\alpha,\\beta$ are the roots of $3x^2-5x+1=0$, find $\\dfrac{\\alpha^2}{\\beta-1}+\\dfrac{\\beta^2}{\\alpha-1}$.",
+ "options": [
+  "$-\\dfrac{23}{9}$",
+  "$-\\dfrac{23}{81}$",
+  "$\\dfrac{137}{81}$",
+  "$\\dfrac{23}{9}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using α+β=5/3 and αβ=1/3, the common denominator is (α−1)(β−1)=−1/3. The numerator is α³+β³−α²−β²=23/27, so the value is −23/9.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\alpha+\\beta=\\dfrac53,\\quad \\alpha\\beta=\\dfrac13$.\n$\\alpha^2+\\beta^2=\\left(\\dfrac53\\right)^2-2\\left(\\dfrac13\\right)=\\dfrac{19}{9}$.\n$\\alpha^3+\\beta^3=\\left(\\dfrac53\\right)^3-3\\left(\\dfrac13\\right)\\left(\\dfrac53\\right)=\\dfrac{80}{27}$.\n$\\dfrac{\\alpha^2}{\\beta-1}+\\dfrac{\\beta^2}{\\alpha-1}=\\dfrac{\\alpha^3+\\beta^3-(\\alpha^2+\\beta^2)}{\\alpha\\beta-(\\alpha+\\beta)+1}=\\dfrac{23/27}{-1/3}=-\\dfrac{23}{9}$.\n\nIndependent check: Using α+β=5/3 and αβ=1/3, the common denominator is (α−1)(β−1)=−1/3. The numerator is α³+β³−α²−β²=23/27, so the value is −23/9.",
+ "solution": "Using $\\alpha+\\beta=\\frac53$ and $\\alpha\\beta=\\frac13$,\n$$\\alpha^2+\\beta^2=\\frac{19}{9},\\qquad \\alpha^3+\\beta^3=\\frac{80}{27}.$$\nThus the numerator over the common denominator is $\\frac{80}{27}-\\frac{19}{9}=\\frac{23}{27}$, while $(\\alpha-1)(\\beta-1)=\\frac13-\\frac53+1=-\\frac13$.\nHence the value is $\\frac{23/27}{-1/3}=-\\frac{23}{9}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $\\alpha,\\beta$ are the roots of $3x^2-5x+1=0$, find $\\dfrac{\\alpha^2}{\\beta-1}+\\dfrac{\\beta^2}{\\alpha-1}$.",
+  "options": [
+   "$-\\dfrac{23}{9}$",
+   "$-\\dfrac{23}{81}$",
+   "$\\dfrac{137}{81}$",
+   "$\\dfrac{23}{9}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\alpha+\\beta=\\dfrac53,\\quad \\alpha\\beta=\\dfrac13$.\n$\\alpha^2+\\beta^2=\\left(\\dfrac53\\right)^2-2\\left(\\dfrac13\\right)=\\dfrac{19}{9}$.\n$\\alpha^3+\\beta^3=\\left(\\dfrac53\\right)^3-3\\left(\\dfrac13\\right)\\left(\\dfrac53\\right)=\\dfrac{80}{27}$.\n$\\dfrac{\\alpha^2}{\\beta-1}+\\dfrac{\\beta^2}{\\alpha-1}=\\dfrac{\\alpha^3+\\beta^3-(\\alpha^2+\\beta^2)}{\\alpha\\beta-(\\alpha+\\beta)+1}=\\dfrac{23/27}{-1/3}=-\\dfrac{23}{9}$.",
+  "distractor_notes": "B: Treats the denominator $-\\dfrac13$ as $-3$ when dividing.\nC: Uses $\\alpha+1$ and $\\beta+1$ instead of the given denominators.\nD: Drops the negative sign in the common denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

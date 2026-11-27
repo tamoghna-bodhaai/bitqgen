@@ -1,0 +1,71 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Series LCR circuit impedance",
+  "archetype": "phasor angle",
+  "brief": "Given R, X_L and X_C, compute the impedance and the phase angle between the current and the source voltage.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:37",
+   "2024s1:29",
+   "2026s2:8"
+  ],
+  "origin": "variant",
+  "bank_ref": "g5276c116264a"
+ },
+ "status": "ok",
+ "stem": "At a particular frequency, a series LCR circuit has $R = 9\\ \\Omega$, $X_L = 15\\ \\Omega$ and $X_C = 3\\ \\Omega$. Find its impedance and the phase relation between the source voltage and current.",
+ "options": [
+  "$12\\ \\Omega$; voltage leads current by $90^\\circ$",
+  "$15\\ \\Omega$; current leads voltage by $53.1^\\circ$",
+  "$20.1\\ \\Omega$; voltage leads current by $63.4^\\circ$",
+  "$15\\ \\Omega$; voltage leads current by $53.1^\\circ$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Net reactance: $X_L-X_C=12\\ \\Omega$ (inductive). Thus $Z=\\sqrt{9^2+12^2}=15\\ \\Omega$ and $\\phi=\\tan^{-1}(12/9)=53.1^\\circ$, with voltage leading current.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$X = X_L-X_C = 15-3 = 12\\ \\Omega$\n$Z = \\sqrt{R^2+X^2} = \\sqrt{9^2+12^2} = 15\\ \\Omega$\n$\\tan\\phi = \\dfrac{X}{R} = \\dfrac{12}{9} = \\dfrac{4}{3}$\n$\\phi = 53.1^\\circ$; $X>0$, so voltage leads current.\n\nIndependent check: Net reactance: $X_L-X_C=12\\ \\Omega$ (inductive). Thus $Z=\\sqrt{9^2+12^2}=15\\ \\Omega$ and $\\phi=\\tan^{-1}(12/9)=53.1^\\circ$, with voltage leading current.",
+ "solution": "Net reactance is $X=X_L-X_C=15-3=12\\ \\Omega$, so\n$$Z=\\sqrt{R^2+X^2}=\\sqrt{9^2+12^2}=15\\ \\Omega.$$\nSince $\\tan\\phi=X/R=12/9$, $\\phi=53.1^\\circ$. The net reactance is inductive, so voltage leads current.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At a particular frequency, a series LCR circuit has $R = 9\\ \\Omega$, $X_L = 15\\ \\Omega$ and $X_C = 3\\ \\Omega$. Find its impedance and the phase relation between the source voltage and current.",
+  "options": [
+   "$15\\ \\Omega$; voltage leads current by $53.1^\\circ$",
+   "$15\\ \\Omega$; current leads voltage by $53.1^\\circ$",
+   "$20.1\\ \\Omega$; voltage leads current by $63.4^\\circ$",
+   "$12\\ \\Omega$; voltage leads current by $90^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$X = X_L-X_C = 15-3 = 12\\ \\Omega$\n$Z = \\sqrt{R^2+X^2} = \\sqrt{9^2+12^2} = 15\\ \\Omega$\n$\\tan\\phi = \\dfrac{X}{R} = \\dfrac{12}{9} = \\dfrac{4}{3}$\n$\\phi = 53.1^\\circ$; $X>0$, so voltage leads current.",
+  "distractor_notes": "B: Reverses the lead–lag relation for an inductive circuit.\nC: Adds $X_L$ and $X_C$ instead of taking their difference.\nD: Uses the net reactance as the impedance and assumes a $90^\\circ$ phase angle."
+ },
+ "variant_of": "g5276c116264a",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio of approach/recede frequencies",
+  "brief": "Source moving toward then away from a stationary observer at the same speed; ask the ratio of the two observed frequencies.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:4",
+   "2025s1:26",
+   "2025s1:19"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A source emits sound of frequency $f$ and moves at $30$ m s$^{-1}$ toward and then away from a stationary observer. If the speed of sound is $330$ m s$^{-1}$, what is the ratio of the observed frequencies during approach and recession?",
+ "options": [
+  "$\\dfrac{5}{6}$",
+  "$\\dfrac{6}{5}$",
+  "$\\dfrac{11}{10}$",
+  "$\\dfrac{10}{11}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a moving source, the ratio is \\(f_{\\text{approach}}/f_{\\text{recession}}=(330+30)/(330-30)=6/5\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f_{\\text{app}}=f\\dfrac{330}{330-30}=\\dfrac{11f}{10}$\n$f_{\\text{rec}}=f\\dfrac{330}{330+30}=\\dfrac{11f}{12}$\n$\\dfrac{f_{\\text{app}}}{f_{\\text{rec}}}=\\dfrac{6}{5}$\n\nIndependent check: For a moving source, the ratio is \\(f_{\\text{approach}}/f_{\\text{recession}}=(330+30)/(330-30)=6/5\\).",
+ "solution": "For a moving source, $f_{\\text{app}}=f\\dfrac{v}{v-v_s}$ and $f_{\\text{rec}}=f\\dfrac{v}{v+v_s}$.\n$$\\dfrac{f_{\\text{app}}}{f_{\\text{rec}}}=\\dfrac{v+v_s}{v-v_s}=\\dfrac{330+30}{330-30}=\\dfrac{6}{5}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A source emits sound of frequency $f$ and moves at $30$ m s$^{-1}$ toward and then away from a stationary observer. If the speed of sound is $330$ m s$^{-1}$, what is the ratio of the observed frequencies during approach and recession?",
+  "options": [
+   "$\\dfrac{5}{6}$",
+   "$\\dfrac{6}{5}$",
+   "$\\dfrac{11}{10}$",
+   "$\\dfrac{10}{11}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$f_{\\text{app}}=f\\dfrac{330}{330-30}=\\dfrac{11f}{10}$\n$f_{\\text{rec}}=f\\dfrac{330}{330+30}=\\dfrac{11f}{12}$\n$\\dfrac{f_{\\text{app}}}{f_{\\text{rec}}}=\\dfrac{6}{5}$",
+  "distractor_notes": "A: reverses the requested ratio; C: gives the approach frequency relative to $f$; D: gives the recession frequency relative to $f$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

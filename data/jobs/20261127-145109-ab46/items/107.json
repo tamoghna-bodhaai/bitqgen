@@ -1,0 +1,70 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Condition for intersecting lines",
+  "archetype": "determinant condition",
+  "brief": "Two lines in symmetric form; decide whether they intersect, are parallel or skew by comparing direction ratios and checking coplanarity.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:123",
+   "2026s1:128",
+   "2022:92"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The lines $\\dfrac{x-1}{1}=\\dfrac{y}{1}=\\dfrac{z-2}{-1}$ and $\\dfrac{x-2}{1}=\\dfrac{y-3}{-1}=\\dfrac{z+1}{2}$ are",
+ "options": [
+  "intersecting",
+  "skew",
+  "parallel",
+  "coincident"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Direction vectors are (1,1,-1) and (1,-1,2), so the lines are not parallel. Equating coordinates gives t=2 and s=1 from x,y, but the z-coordinates are 0 and 1, so they do not intersect. Thus they are skew.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mathbf d_1=(1,1,-1),\\ \\mathbf d_2=(1,-1,2)$ are not proportional. $(B-A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=(1,3,-3)\\cdot(1,-3,-2)=-2\\ne0$; the lines are skew.\n\nIndependent check: Direction vectors are (1,1,-1) and (1,-1,2), so the lines are not parallel. Equating coordinates gives t=2 and s=1 from x,y, but the z-coordinates are 0 and 1, so they do not intersect. Thus they are skew.",
+ "solution": "The direction vectors are $=(1,1,-1)$ and $=(1,-1,2)$, which are not proportional. Equating coordinates gives $t=2$ and $s=1$ from the $x$- and $y$-coordinates, but the corresponding $z$-coordinates differ; hence the lines do not intersect and are skew.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The lines $\\dfrac{x-1}{1}=\\dfrac{y}{1}=\\dfrac{z-2}{-1}$ and $\\dfrac{x-2}{1}=\\dfrac{y-3}{-1}=\\dfrac{z+1}{2}$ are",
+  "options": [
+   "intersecting",
+   "parallel",
+   "skew",
+   "coincident"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\mathbf d_1=(1,1,-1),\\ \\mathbf d_2=(1,-1,2)$ are not proportional. $(B-A)\\cdot(\\mathbf d_1\\times\\mathbf d_2)=(1,3,-3)\\cdot(1,-3,-2)=-2\\ne0$; the lines are skew.",
+  "distractor_notes": "A: assumes nonparallel lines must intersect; B: treats nonproportional directions as parallel; D: assumes coplanarity despite the nonzero determinant."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

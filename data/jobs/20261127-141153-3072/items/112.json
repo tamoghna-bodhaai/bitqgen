@@ -1,0 +1,68 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Mean deviation (ungrouped)",
+  "archetype": "direct computation",
+  "brief": "Small data set; compute mean deviation about the mean (or median) — table-free direct computation with clean numbers.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:125",
+   "2022:124",
+   "2025s1:109"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the mean deviation about the mean of the data $1,2,4,5,7,8,15$.",
+ "options": [
+  "$\\dfrac{23}{7}$",
+  "$\\dfrac{24}{7}$",
+  "$4$",
+  "$24$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mean = (1+2+4+5+7+8+15)/7 = 6. The absolute deviations sum to 5+4+2+1+1+2+9 = 24, so the mean deviation is 24/7.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\bar{x}=\\dfrac{1+2+4+5+7+8+15}{7}=6$; $\\text{MD}=\\dfrac{|1-6|+|2-6|+|4-6|+|5-6|+|7-6|+|8-6|+|15-6|}{7}=\\dfrac{24}{7}$.\n\nIndependent check: Mean = (1+2+4+5+7+8+15)/7 = 6. The absolute deviations sum to 5+4+2+1+1+2+9 = 24, so the mean deviation is 24/7.",
+ "solution": "The mean is $[?]$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the mean deviation about the mean of the data $1,2,4,5,7,8,15$.",
+  "options": [
+   "$\\dfrac{23}{7}$",
+   "$\\dfrac{24}{7}$",
+   "$4$",
+   "$24$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\bar{x}=\\dfrac{1+2+4+5+7+8+15}{7}=6$; $\\text{MD}=\\dfrac{|1-6|+|2-6|+|4-6|+|5-6|+|7-6|+|8-6|+|15-6|}{7}=\\dfrac{24}{7}$.",
+  "distractor_notes": "A: computes deviations about the median; C: divides the sum by $n-1$; D: omits division by the number of observations."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

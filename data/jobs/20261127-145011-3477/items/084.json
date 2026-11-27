@@ -1,0 +1,72 @@
+{
+ "qno": 84,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 84,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "Sentence divided into four parts; error in subject-verb agreement (e.g., 'each of the boys were'); 'No error' included as an option to keep difficulty moderate.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:92",
+   "2025s2:66",
+   "2023s2:67"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Identify the part of the sentence that contains an error.\n\nEach of the participants <u>have received</u> a certificate\n(A) at the end of the workshop\n(B) held in the town hall\n(C) last Saturday.\n(D) No error",
+ "options": [
+  "Each of the participants have received a certificate",
+  "at the end of the workshop",
+  "held in the town hall",
+  "No error"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Each” is singular, so the verb should be “has received,” not “have received.” The error is in option A.",
+   "answer": "A",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [
+    "The question repeats the sentence and options in two different layouts, but both indicate the same error."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "“Each” takes a singular verb, so “have received” should be “has received.” The other parts are grammatically correct.\n\nIndependent check: “Each” is singular, so the verb should be “has received,” not “have received.” The error is in option A.",
+ "solution": "“Each” takes a singular verb, so “have received” should be “has received.” The error is in “Each of the participants have received a certificate.”",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Identify the part of the sentence that contains an error.\n\nEach of the participants <u>have received</u> a certificate\n(A) at the end of the workshop\n(B) held in the town hall\n(C) last Saturday.\n(D) No error",
+  "options": [
+   "Each of the participants have received a certificate",
+   "at the end of the workshop",
+   "held in the town hall",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "“Each” takes a singular verb, so “have received” should be “has received.” The other parts are grammatically correct.",
+  "distractor_notes": "B: This prepositional phrase is correct. C: This modifying phrase is correct. D: The singular subject “Each” disagrees with “have.”"
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle – tangency condition",
+  "archetype": "tangency condition",
+  "brief": "Line of the form y = mx + c touches a given circle; impose the perpendicular-distance-equals-radius (or c² = a²(1+m²)) condition and solve for the parameter.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:150",
+   "2026s2:111",
+   "2026s2:112"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The line $y=\\dfrac{4}{3}x+c$ is tangent to the circle $x^2+y^2=9$. If $c>0$, find $c$.",
+ "options": [
+  "$3$",
+  "$4$",
+  "$6$",
+  "$5$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The distance from the origin to the line is \\(c/\\sqrt{1+(4/3)^2}=3c/5\\). Set this equal to the circle’s radius, 3, giving \\(c=5\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{|c|}{\\sqrt{(4/3)^2+1}}=3$; hence $c^2=9\\left(1+\\dfrac{16}{9}\\right)=25$. Since $c>0$, $c=5$.\n\nIndependent check: The distance from the origin to the line is \\(c/\\sqrt{1+(4/3)^2}=3c/5\\). Set this equal to the circle’s radius, 3, giving \\(c=5\\).",
+ "solution": "For tangency, the distance from the origin to the line equals the circle’s radius:\n$$\\frac{|c|}{\\sqrt{(4/3)^2+1}}=3.$$\nSince $c>0$, $c=5$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The line $y=\\dfrac{4}{3}x+c$ is tangent to the circle $x^2+y^2=9$. If $c>0$, find $c$.",
+  "options": [
+   "$3$",
+   "$4$",
+   "$5$",
+   "$6$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{|c|}{\\sqrt{(4/3)^2+1}}=3$; hence $c^2=9\\left(1+\\dfrac{16}{9}\\right)=25$. Since $c>0$, $c=5$.",
+  "distractor_notes": "A: Uses the circle's radius as $c$; B: Incorrectly uses $c^2=16$; D: Incorrectly adds the slope numerator to the radius."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

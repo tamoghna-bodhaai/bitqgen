@@ -20,28 +20,33 @@
   ]
  },
  "status": "ok",
- "stem": "The alkene shown in the figure undergoes reductive ozonolysis ($\\text{O}_3$ followed by $\\text{Zn} / \\text{H}_2\\text{O}$). What are the resulting organic products?",
+ "stem": "Reductive ozonolysis with $\\text{O}_3$ followed by $\\text{Zn}/\\text{H}_2\\text{O}$ gives the products shown. Which alkene could be the reactant?",
  "options": [
-  "Propan-2-one and ethanal",
-  "Propan-2-one and methanal",
-  "Butan-2-one and methanal",
-  "Ethanal and propanal"
+  "2-methylpent-2-ene",
+  "3-methylpent-2-ene",
+  "2-methylpent-1-ene",
+  "2,3-dimethylbut-2-ene"
  ],
  "answer": "A",
  "figure": {
   "path": "figs/q073_stem_v0.png",
-  "width_pct": 32,
+  "width_pct": 25,
   "kind": "chem"
  },
- "option_figs": null,
- "option_width": null,
+ "option_figs": [
+  "figs/q073_optA_v0.png",
+  "figs/q073_optB_v0.png",
+  "figs/q073_optC_v0.png",
+  "figs/q073_optD_v0.png"
+ ],
+ "option_width": 31,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Figure shows CH3–C(CH3)=CH–CH3 (2-methylbut-2-ene). Reductive ozonolysis cleaves the C=C: the disubstituted carbon gives (CH3)2C=O (propan-2-one) and the CH–CH3 carbon gives CH3CHO (ethanal).",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Reductive ozonolysis cleaves the C=C into carbonyls. Propanal comes from an alkene carbon bearing H and ethyl; acetone comes from one bearing two methyl groups. Rejoining gives option A.",
    "answer": "A",
-   "confidence": 0.97,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -49,27 +54,33 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The alkene shown in the figure is 2-methylbut-2-ene, with structural formula $(\\text{CH}_3)_2\\text{C}=\\text{CH}-\\text{CH}_3$.\n\nReductive ozonolysis cleaves the carbon-carbon double bond and replaces it with carbonyl groups ($=\\text{O}$):\n$$(\\text{CH}_3)_2\\text{C}=\\text{CH}-\\text{CH}_3 \\xrightarrow[\\text{Zn}/\\text{H}_2\\text{O}]{\\text{O}_3} (\\text{CH}_3)_2\\text{C}=\\text{O} + \\text{O}=\\text{CH}-\\text{CH}_3$$\n\nThe products are propan-2-one (acetone) and ethanal (acetaldehyde).\n\nIndependent check: Figure shows CH3–C(CH3)=CH–CH3 (2-methylbut-2-ene). Reductive ozonolysis cleaves the C=C: the disubstituted carbon gives (CH3)2C=O (propan-2-one) and the CH–CH3 carbon gives CH3CHO (ethanal).",
+ "working": "Ozonolysis reconnects the two carbonyl carbons to reconstruct the alkene.\nPropanone contributes a carbon bearing two methyl groups; propanal contributes a carbon bearing H and ethyl.\nReconstructed alkene: $(\\text{CH}_3)_2\\text{C}=\\text{CHCH}_2\\text{CH}_3$.\nThis is 2-methylpent-2-ene.\n\nIndependent check: Reductive ozonolysis cleaves the C=C into carbonyls. Propanal comes from an alkene carbon bearing H and ethyl; acetone comes from one bearing two methyl groups. Rejoining gives option A.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The alkene shown in the figure undergoes reductive ozonolysis ($\\text{O}_3$ followed by $\\text{Zn} / \\text{H}_2\\text{O}$). What are the resulting organic products?",
+  "stem": "Reductive ozonolysis with $\\text{O}_3$ followed by $\\text{Zn}/\\text{H}_2\\text{O}$ gives the products shown. Which alkene could be the reactant?",
   "options": [
-   "Propan-2-one and ethanal",
-   "Propan-2-one and methanal",
-   "Butan-2-one and methanal",
-   "Ethanal and propanal"
+   "2-methylpent-2-ene",
+   "3-methylpent-2-ene",
+   "2-methylpent-1-ene",
+   "2,3-dimethylbut-2-ene"
   ],
-  "option_smiles": null,
+  "option_smiles": [
+   "CC(C)=CCC",
+   "CC=C(C)CC",
+   "C=C(C)CCC",
+   "CC(C)=C(C)C"
+  ],
   "answer": "A",
-  "working": "The alkene shown in the figure is 2-methylbut-2-ene, with structural formula $(\\text{CH}_3)_2\\text{C}=\\text{CH}-\\text{CH}_3$.\n\nReductive ozonolysis cleaves the carbon-carbon double bond and replaces it with carbonyl groups ($=\\text{O}$):\n$$(\\text{CH}_3)_2\\text{C}=\\text{CH}-\\text{CH}_3 \\xrightarrow[\\text{Zn}/\\text{H}_2\\text{O}]{\\text{O}_3} (\\text{CH}_3)_2\\text{C}=\\text{O} + \\text{O}=\\text{CH}-\\text{CH}_3$$\n\nThe products are propan-2-one (acetone) and ethanal (acetaldehyde).",
-  "distractor_notes": "Option B corresponds to cleavage of 2-methylprop-1-ene.\nOption C corresponds to cleavage of 2-methylbut-1-ene.\nOption D corresponds to cleavage of pent-2-ene (a straight-chain isomer with the same molecular formula $\\text{C}_5\\text{H}_{10}$).",
   "figure": {
    "kind": "chem",
-   "description": "Skeletal structure of 2-methylbut-2-ene: a 4-carbon chain (but-2-ene) with a double bond between C2 and C3, and a single methyl substituent attached to C2.",
-   "smiles": "CC(C)=CC"
+   "description": "Draw two separate product structures side by side: propanone on the left, with the carbonyl carbon bonded to two methyl groups; propanal on the right, with the carbonyl carbon bonded to one hydrogen and one ethyl group. Show no reaction arrow or other labels.",
+   "smiles": "CC(=O)C.CCC=O"
   },
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Ozonolysis reconnects the two carbonyl carbons to reconstruct the alkene.\nPropanone contributes a carbon bearing two methyl groups; propanal contributes a carbon bearing H and ethyl.\nReconstructed alkene: $(\\text{CH}_3)_2\\text{C}=\\text{CHCH}_2\\text{CH}_3$.\nThis is 2-methylpent-2-ene.",
+  "distractor_notes": "B gives ethanal and butan-2-one; C gives methanal and pentan-2-one; D gives two molecules of propanone."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

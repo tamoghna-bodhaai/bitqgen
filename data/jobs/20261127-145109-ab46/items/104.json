@@ -1,0 +1,70 @@
+{
+ "qno": 104,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 104,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-number code",
+  "brief": "A word is coded using a positional-value rule; apply same rule to a new word to get the code.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:84",
+   "2026s1:72",
+   "2026s1:78"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If each letter is replaced by its position in the alphabet, and the values are written in order, LAMP is coded as 12-1-13-16. How is FROG coded?",
+ "options": [
+  "6-18-14-7",
+  "6-17-15-7",
+  "6-18-15-7",
+  "7-18-15-6"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "F=6, R=18, O=15, G=7, so the code is 6-18-15-7.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Use alphabet positions: F = 6, R = 18, O = 15, G = 7. Thus FROG is coded as 6-18-15-7.\n\nIndependent check: F=6, R=18, O=15, G=7, so the code is 6-18-15-7.",
+ "solution": "Using each letter’s position in the alphabet: $F=6$, $R=18$, $O=15$, and $G=7$.\nTherefore, FROG is coded as $6-18-15-7$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If each letter is replaced by its position in the alphabet, and the values are written in order, LAMP is coded as 12-1-13-16. How is FROG coded?",
+  "options": [
+   "6-18-15-7",
+   "6-17-15-7",
+   "6-18-14-7",
+   "7-18-15-6"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Use alphabet positions: F = 6, R = 18, O = 15, G = 7. Thus FROG is coded as 6-18-15-7.",
+  "distractor_notes": "B: Uses the wrong alphabet position for R. C: Uses the wrong alphabet position for O. D: Uses incorrect positions for F and G."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

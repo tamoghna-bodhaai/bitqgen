@@ -1,0 +1,70 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Heat at constant volume",
+  "archetype": "single-formula numerical",
+  "brief": "An ideal gas undergoes an isothermal/isobaric/isochoric change; use the first law to find heat supplied, work done or ΔU for given state changes.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:6",
+   "2021:15",
+   "2024s1:12"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "One mole of a diatomic ideal gas, with vibrational modes inactive, is heated from $300$ K to $340$ K at constant volume. Taking $R=8.3$ J mol$^{-1}$ K$^{-1}$, the heat supplied is",
+ "options": [
+  "$415$ J",
+  "$830$ J",
+  "$664$ J",
+  "$996$ J"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a diatomic gas with vibrational modes inactive, $C_V=\\frac{5}{2}R$. Thus $Q=nC_V\\Delta T=1\\times\\frac{5}{2}\\times8.3\\times40=830\\,\\text{J}$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Q=nC_V(T_f-T_i)$, with $C_V=5R/2$ at constant volume\n$Q=1\\times(5\\times8.3/2)\\times40=830$ J\n\nIndependent check: For a diatomic gas with vibrational modes inactive, $C_V=\\frac{5}{2}R$. Thus $Q=nC_V\\Delta T=1\\times\\frac{5}{2}\\times8.3\\times40=830\\,\\text{J}$.",
+ "solution": "For a diatomic gas with vibrational modes inactive, $C_V=\\frac{5}{2}R$. At constant volume,\n$$Q=nC_V\\Delta T=1\\times\\frac{5}{2}\\times8.3\\times(340-300)=830\\,\\text{J}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "One mole of a diatomic ideal gas, with vibrational modes inactive, is heated from $300$ K to $340$ K at constant volume. Taking $R=8.3$ J mol$^{-1}$ K$^{-1}$, the heat supplied is",
+  "options": [
+   "$415$ J",
+   "$664$ J",
+   "$830$ J",
+   "$996$ J"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$Q=nC_V(T_f-T_i)$, with $C_V=5R/2$ at constant volume\n$Q=1\\times(5\\times8.3/2)\\times40=830$ J",
+  "distractor_notes": "A: uses half the correct heat capacity; B: uses $C_V=2R$; D: uses $C_V=3R$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

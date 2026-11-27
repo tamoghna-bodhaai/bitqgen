@@ -1,0 +1,70 @@
+{
+ "qno": 78,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 78,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Free radical stability",
+  "archetype": "stability ordering",
+  "brief": "Arrange given alkyl/benzyl/allyl radicals in order of stability with reasoning on hyperconjugation and resonance; pick the correct series from options.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:55",
+   "2025s2:43",
+   "2025s1:46"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Arrange the following radicals in decreasing order of stability: diphenylmethyl, cyclopent-2-en-1-yl, tert-butyl and isopropyl.",
+ "options": [
+  "Cyclopent-2-en-1-yl > diphenylmethyl > tert-butyl > isopropyl",
+  "Diphenylmethyl > cyclopent-2-en-1-yl > tert-butyl > isopropyl",
+  "Diphenylmethyl > tert-butyl > cyclopent-2-en-1-yl > isopropyl",
+  "Diphenylmethyl > cyclopent-2-en-1-yl > isopropyl > tert-butyl"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Diphenylmethyl is resonance-stabilized by two phenyl rings; cyclopent-2-en-1-yl is allylic. Among the alkyl radicals, tert-butyl is more stable than isopropyl due to greater hyperconjugation. Thus the order is (A).",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Diphenylmethyl and cyclopent-2-en-1-yl radicals are resonance-stabilised.\nTwo phenyl rings delocalise the diphenylmethyl radical more extensively than the allylic ring system.\nFor alkyl radicals, hyperconjugation gives tert-butyl > isopropyl.\nHence: diphenylmethyl > cyclopent-2-en-1-yl > tert-butyl > isopropyl.\n\nIndependent check: Diphenylmethyl is resonance-stabilized by two phenyl rings; cyclopent-2-en-1-yl is allylic. Among the alkyl radicals, tert-butyl is more stable than isopropyl due to greater hyperconjugation. Thus the order is (A).",
+ "solution": "Resonance stabilisation makes diphenylmethyl and the allylic cyclopent-2-en-1-yl radical more stable than alkyl radicals; delocalisation over two phenyl rings stabilises diphenylmethyl most. Among alkyl radicals, greater hyperconjugation stabilises tert-butyl over isopropyl.\n$$\\text{Diphenylmethyl} > \\text{cyclopent-2-en-1-yl} > \\text{tert-butyl} > \\text{isopropyl}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange the following radicals in decreasing order of stability: diphenylmethyl, cyclopent-2-en-1-yl, tert-butyl and isopropyl.",
+  "options": [
+   "Diphenylmethyl > cyclopent-2-en-1-yl > tert-butyl > isopropyl",
+   "Cyclopent-2-en-1-yl > diphenylmethyl > tert-butyl > isopropyl",
+   "Diphenylmethyl > tert-butyl > cyclopent-2-en-1-yl > isopropyl",
+   "Diphenylmethyl > cyclopent-2-en-1-yl > isopropyl > tert-butyl"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Diphenylmethyl and cyclopent-2-en-1-yl radicals are resonance-stabilised.\nTwo phenyl rings delocalise the diphenylmethyl radical more extensively than the allylic ring system.\nFor alkyl radicals, hyperconjugation gives tert-butyl > isopropyl.\nHence: diphenylmethyl > cyclopent-2-en-1-yl > tert-butyl > isopropyl.",
+  "distractor_notes": "B reverses the relative resonance stabilisation of the diphenylmethyl and allylic radicals.\nC places a tertiary alkyl radical above a resonance-stabilised allylic radical.\nD reverses the hyperconjugative stability order of tertiary and secondary alkyl radicals."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

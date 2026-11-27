@@ -1,0 +1,71 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "restricted arrangement",
+  "brief": "Arrange letters of a word or people in a row with restrictions such as vowels together and/or two particular items never adjacent; ask for the number of arrangements (complement counting optional).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:92",
+   "2024s2:103",
+   "2026s1:96"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge8bce4143854"
+ },
+ "status": "ok",
+ "stem": "Seven distinct people are seated in a row. In how many arrangements are three specified people consecutive, while two other specified people are not adjacent?",
+ "options": [
+  "$288$",
+  "$576$",
+  "$432$",
+  "$720$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Treat the three specified people as a block. Total arrangements: 5!·3! = 720. If the other two specified people are adjacent, treat them as a block too: 4!·2!·3! = 288. Thus 720 − 288 = 432.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Treat the three consecutive people as one block: $5!\\times 3!$ arrangements.\nWith the other specified pair adjacent: $4!\\times 2!\\times 3!$ arrangements.\nRequired number $=5!\\times3!-4!\\times2!\\times3!=432$.\n\nIndependent check: Treat the three specified people as a block. Total arrangements: 5!·3! = 720. If the other two specified people are adjacent, treat them as a block too: 4!·2!·3! = 288. Thus 720 − 288 = 432.",
+ "solution": "Treat the three specified consecutive people as one block. The total arrangements are $5!\\times3!$.\nWhen the other specified pair is adjacent, treat them as another block: $4!\\times2!\\times3!$.\n$$5!\\times3!-4!\\times2!\\times3!=720-288=432$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Seven distinct people are seated in a row. In how many arrangements are three specified people consecutive, while two other specified people are not adjacent?",
+  "options": [
+   "$288$",
+   "$432$",
+   "$576$",
+   "$720$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Treat the three consecutive people as one block: $5!\\times 3!$ arrangements.\nWith the other specified pair adjacent: $4!\\times 2!\\times 3!$ arrangements.\nRequired number $=5!\\times3!-4!\\times2!\\times3!=432$.",
+  "distractor_notes": "A: Counts only arrangements where the specified pair is adjacent. C: Omits the pair's two possible orders when subtracting adjacent cases. D: Ignores the non-adjacency restriction."
+ },
+ "variant_of": "ge8bce4143854",
+ "author_model": "openai/gpt-6-luna-pro"
+}

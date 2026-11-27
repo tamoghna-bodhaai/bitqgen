@@ -1,0 +1,68 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Pendulum with varying g",
+  "archetype": "proportionality-scaling",
+  "brief": "A pendulum taken to a planet with given combination of g and length change; compute percentage/ratio change in time period using T ∝ sqrt(l/g).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:3",
+   "2023s1:24",
+   "2025s1:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "A simple pendulum of length $l$ on a planet with gravitational acceleration $g$ is transferred to another planet, where its length is $\\dfrac{3l}{4}$ and gravitational acceleration is $\\dfrac{g}{3}$. What is the ratio of its new period to its original period?",
+ "options": [
+  "$\\dfrac{3}{2}$",
+  "$\\dfrac{3}{4}$",
+  "$\\dfrac{2}{3}$",
+  "$\\dfrac{9}{4}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using T = 2π√(L/g), Tnew/Told = √[((3l/4)/(g/3))/(l/g)] = 3/2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{T'}{T}=\\sqrt{\\dfrac{l'}{l}\\dfrac{g}{g'}}=\\sqrt{\\dfrac{3}{4}\\times3}=\\dfrac{3}{2}$.\n\nIndependent check: Using T = 2π√(L/g), Tnew/Told = √[((3l/4)/(g/3))/(l/g)] = 3/2.",
+ "solution": "For a simple pendulum, $T=2\\pi\\sqrt{l/g}$. Thus,\n$$\\frac{T'}{T}=\\sqrt{\\frac{l'}{l}\\frac{g}{g'}}=\\sqrt{\\frac{3}{4}\\times 3}=\\frac{3}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A simple pendulum of length $l$ on a planet with gravitational acceleration $g$ is transferred to another planet, where its length is $\\dfrac{3l}{4}$ and gravitational acceleration is $\\dfrac{g}{3}$. What is the ratio of its new period to its original period?",
+  "options": [
+   "$\\dfrac{2}{3}$",
+   "$\\dfrac{3}{4}$",
+   "$\\dfrac{3}{2}$",
+   "$\\dfrac{9}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{T'}{T}=\\sqrt{\\dfrac{l'}{l}\\dfrac{g}{g'}}=\\sqrt{\\dfrac{3}{4}\\times3}=\\dfrac{3}{2}$.",
+  "distractor_notes": "A inverts the new-to-old period ratio; B uses the length ratio alone; D omits the square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

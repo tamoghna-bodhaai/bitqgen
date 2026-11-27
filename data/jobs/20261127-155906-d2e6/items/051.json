@@ -1,0 +1,70 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Hybridisation and bond angle",
+  "archetype": "set comparison",
+  "brief": "Group species by hybridisation from bond angle/geometry clues; pick the set where all members have the same hybridisation (e.g. include lone-pair species like NH3, H2O, SF4).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:40",
+   "2021:70",
+   "2024s1:34"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which set contains species whose central atoms all have the same hybridisation?",
+ "options": [
+  "$\\text{NH}_3$, $\\text{H}_2\\text{O}$, $\\text{SF}_4$",
+  "$\\text{BF}_3$, $\\text{SO}_3$, $\\text{NO}_3^-$",
+  "$\\text{CH}_4$, $\\text{NH}_3$, $\\text{CO}_2$",
+  "$\\text{PCl}_5$, $\\text{SF}_4$, $\\text{XeF}_4$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "NH₃ and H₂O are sp³; SF₄ is sp³d. BF₃, SO₃, and NO₃⁻ each have a trigonal-planar central atom and are sp². CH₄/NH₃ are sp³ while CO₂ is sp; PCl₅/SF₄ are sp³d while XeF₄ is sp³d².",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{BF}_3$: trigonal planar, $sp^2$; $\\text{SO}_3$: trigonal planar, $sp^2$; $\\text{NO}_3^-$: trigonal planar, $sp^2$.\n\nIndependent check: NH₃ and H₂O are sp³; SF₄ is sp³d. BF₃, SO₃, and NO₃⁻ each have a trigonal-planar central atom and are sp². CH₄/NH₃ are sp³ while CO₂ is sp; PCl₅/SF₄ are sp³d while XeF₄ is sp³d².",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which set contains species whose central atoms all have the same hybridisation?",
+  "options": [
+   "$\\text{NH}_3$, $\\text{H}_2\\text{O}$, $\\text{SF}_4$",
+   "$\\text{BF}_3$, $\\text{SO}_3$, $\\text{NO}_3^-$",
+   "$\\text{CH}_4$, $\\text{NH}_3$, $\\text{CO}_2$",
+   "$\\text{PCl}_5$, $\\text{SF}_4$, $\\text{XeF}_4$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{BF}_3$: trigonal planar, $sp^2$; $\\text{SO}_3$: trigonal planar, $sp^2$; $\\text{NO}_3^-$: trigonal planar, $sp^2$.",
+  "distractor_notes": "A: treats the seesaw species $\\text{SF}_4$ as $sp^3$; C: overlooks the $sp$ hybridisation of carbon in $\\text{CO}_2$; D: assigns $sp^3d$ to square-planar $\\text{XeF}_4$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

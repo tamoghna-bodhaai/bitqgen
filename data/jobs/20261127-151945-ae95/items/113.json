@@ -1,0 +1,71 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of functions",
+  "archetype": "domain intersection",
+  "brief": "Find the natural domain of a function combining a square root and a logarithm (or rational expression), obtained by intersecting the conditions from each part.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:119",
+   "2026s2:91",
+   "2024s1:121"
+  ],
+  "origin": "variant",
+  "bank_ref": "g8f6b8d43e79f"
+ },
+ "status": "ok",
+ "stem": "The natural domain of $f(x)=\\sqrt{2x+6}+\\ln(8-x)$ is",
+ "options": [
+  "$(-3,8)$",
+  "$[-3,8)$",
+  "$[-3,\\infty)$",
+  "$(-\\infty,8)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The square root requires x ≥ -3, and the logarithm requires x < 8. Their intersection is [-3, 8).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$2x+6\\geq 0\\Rightarrow x\\geq -3$.\n$8-x>0\\Rightarrow x<8$.\nDomain $=[-3,8)$.\n\nIndependent check: The square root requires x ≥ -3, and the logarithm requires x < 8. Their intersection is [-3, 8).",
+ "solution": "For the square root, $2x+6\\geq 0$, so $x\\geq -3$. For the logarithm, $8-x>0$, so $x<8$.\nHence the domain is $[-3,8)$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The natural domain of $f(x)=\\sqrt{2x+6}+\\ln(8-x)$ is",
+  "options": [
+   "$[-3,8)$",
+   "$(-3,8)$",
+   "$[-3,\\infty)$",
+   "$(-\\infty,8)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$2x+6\\geq 0\\Rightarrow x\\geq -3$.\n$8-x>0\\Rightarrow x<8$.\nDomain $=[-3,8)$.",
+  "distractor_notes": "B: incorrectly excludes the square-root endpoint. C: uses only the square-root condition. D: uses only the logarithm condition."
+ },
+ "variant_of": "g8f6b8d43e79f",
+ "author_model": "openai/gpt-6-luna-pro"
+}

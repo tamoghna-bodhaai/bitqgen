@@ -1,0 +1,70 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Line through intersection of lines",
+  "archetype": "family of lines",
+  "brief": "Find the equation of a line through the intersection point of two given lines and satisfying an extra condition (passing through a given point or parallel to a given line).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:108",
+   "2024s2:114",
+   "2025s2:115"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Find the equation of the line through the intersection of $2x+3y-5=0$ and $4x-3y-4=0$ that also passes through $(0,2)$.",
+ "options": [
+  "$8x-9y+18=0$",
+  "$9x+8y-16=0$",
+  "$8x+9y-18=0$",
+  "$4x-3y-4=0$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The intersection is (3/2, 2/3). The line through this point and (0, 2) has slope -8/9, so its equation is 8x + 9y - 18 = 0.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$2x+3y=5,\\ 4x-3y=4\\Rightarrow (x,y)=\\left(\\dfrac{3}{2},\\dfrac{2}{3}\\right);\\quad m=\\dfrac{\\frac{2}{3}-2}{\\frac{3}{2}-0}=-\\dfrac{8}{9};\\quad y-2=-\\dfrac{8}{9}x\\Rightarrow 8x+9y-18=0.$\n\nIndependent check: The intersection is (3/2, 2/3). The line through this point and (0, 2) has slope -8/9, so its equation is 8x + 9y - 18 = 0.",
+ "solution": "Solving the two equations gives their intersection $(x,y)=\\left(\\frac{3}{2},\\frac{2}{3}\\right)$. The slope of the line through this point and $(0,2)$ is $m=-\\frac{8}{9}$, so\n$$y-2=-\\frac{8}{9}x\\quad\\Rightarrow\\quad 8x+9y-18=0.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Find the equation of the line through the intersection of $2x+3y-5=0$ and $4x-3y-4=0$ that also passes through $(0,2)$.",
+  "options": [
+   "$8x-9y+18=0$",
+   "$8x+9y-18=0$",
+   "$9x+8y-16=0$",
+   "$4x-3y-4=0$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$2x+3y=5,\\ 4x-3y=4\\Rightarrow (x,y)=\\left(\\dfrac{3}{2},\\dfrac{2}{3}\\right);\\quad m=\\dfrac{\\frac{2}{3}-2}{\\frac{3}{2}-0}=-\\dfrac{8}{9};\\quad y-2=-\\dfrac{8}{9}x\\Rightarrow 8x+9y-18=0.$",
+  "distractor_notes": "A: uses the wrong sign for the slope.\\nC: uses the reciprocal of the slope.\\nD: selects one of the given lines, which does not pass through $(0,2)$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

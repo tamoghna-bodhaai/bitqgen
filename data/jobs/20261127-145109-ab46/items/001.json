@@ -1,0 +1,78 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Magnetic flux",
+  "archetype": "find the missing parameter",
+  "brief": "Show a rectangular loop entering/exiting a uniform B-field region at constant speed; give induced emf as a function of time and ask for a specific value (or the emf at a given position) using flux change over time.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:9",
+   "2023s2:24",
+   "2023s1:30"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A rectangular loop moves to the right at $0.50\\ \\text{m s}^{-1}$ as shown in the figure. At $t=0.80\\ \\text{s}$, its clockwise induced emf is $+0.030\\ \\text{V}$. Find the magnitude of the magnetic field.",
+ "options": [
+  "$0.25\\ \\text{T}$",
+  "$0.50\\ \\text{T}$",
+  "$0.30\\ \\text{T}$",
+  "$1.00\\ \\text{T}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q001_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "As the loop leaves the into-page field, the flux decreases and the induced current is clockwise. The changing area rate is (0.12 m)(0.50 m s⁻¹), so B = 0.030/[0.12(0.50)] = 0.50 T.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$t_{\\text{exit,start}}=\\dfrac{0.30}{0.50}=0.60\\ \\text{s}$; $t_{\\text{exit,end}}=\\dfrac{0.30+0.20}{0.50}=1.00\\ \\text{s}$; hence $t=0.80\\ \\text{s}$ is during exit. $\\mathcal{E}=Bhv\\Rightarrow B=\\dfrac{0.030}{(0.12)(0.50)}=0.50\\ \\text{T}$.\n\nIndependent check: As the loop leaves the into-page field, the flux decreases and the induced current is clockwise. The changing area rate is (0.12 m)(0.50 m s⁻¹), so B = 0.030/[0.12(0.50)] = 0.50 T.",
+ "solution": "At $t=0.80\\,\\text{s}$, the loop is exiting the field, so the changing area rate is $hv$ with $h=0.12\\,\\text{m}$.\n$$\\mathcal{E}=Bhv\\quad\\Rightarrow\\quad B=\\frac{0.030}{(0.12)(0.50)}=0.50\\,\\text{T}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A rectangular loop moves to the right at $0.50\\ \\text{m s}^{-1}$ as shown in the figure. At $t=0.80\\ \\text{s}$, its clockwise induced emf is $+0.030\\ \\text{V}$. Find the magnitude of the magnetic field.",
+  "options": [
+   "$0.25\\ \\text{T}$",
+   "$0.30\\ \\text{T}$",
+   "$0.50\\ \\text{T}$",
+   "$1.00\\ \\text{T}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a rectangular conducting loop initially entirely to the left of a uniform-field strip, with its right vertical side just touching the strip's left boundary. The loop is $0.20\\ \\text{m}$ wide along its direction of motion and $0.12\\ \\text{m}$ high. Draw the strip extending $0.30\\ \\text{m}$ horizontally to the right from that boundary, with crosses indicating the magnetic field is into the page; label its magnitude $B$ (unknown). Add a rightward velocity arrow labeled $0.50\\ \\text{m s}^{-1}$. Show a clockwise arrow around the loop to indicate the positive emf direction.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$t_{\\text{exit,start}}=\\dfrac{0.30}{0.50}=0.60\\ \\text{s}$; $t_{\\text{exit,end}}=\\dfrac{0.30+0.20}{0.50}=1.00\\ \\text{s}$; hence $t=0.80\\ \\text{s}$ is during exit. $\\mathcal{E}=Bhv\\Rightarrow B=\\dfrac{0.030}{(0.12)(0.50)}=0.50\\ \\text{T}$.",
+  "distractor_notes": "A: omits the speed factor; B: uses the loop width along the motion instead of its height; D: uses half the loop height as the effective side."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

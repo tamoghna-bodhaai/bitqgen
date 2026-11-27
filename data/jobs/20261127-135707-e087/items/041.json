@@ -1,0 +1,68 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Hess's law + first law relations",
+  "archetype": "Hess's law bond-energy calc combined with ΔH = ΔU + ΔnRT",
+  "brief": "Give a multi-step reaction cycle with a gaseous combustion step; ask for ΔU of the overall process using bond enthalpies plus the ΔH–ΔU conversion — hard bookkeeping.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:51",
+   "2026s1:36",
+   "2026s2:60"
+  ]
+ },
+ "status": "ok",
+ "stem": "At $300\\ \\text{K}$, find $\\Delta U$ for $\\text{C}_2\\text{H}_4(g)+\\text{H}_2(g)\\rightarrow\\text{C}_2\\text{H}_6(g)$. All combustion products contain $\\text{H}_2\\text{O}(g)$. Use mean bond enthalpies $\\text{C}={\\text{C}}:614$, $\\text{C}—\\text{H}:413$, $\\text{O}={\\text{O}}:498$, $\\text{C}={\\text{O}}$ in $\\text{CO}_2:799$, and $\\text{O}—\\text{H}:463\\ \\text{kJ mol}^{-1}$; also, $\\text{H}_2+\\dfrac{1}{2}\\text{O}_2\\rightarrow\\text{H}_2\\text{O}(g)$ has $\\Delta H=-242\\ \\text{kJ mol}^{-1}$ and $\\text{C}_2\\text{H}_6+\\dfrac{7}{2}\\text{O}_2\\rightarrow2\\text{CO}_2+3\\text{H}_2\\text{O}(g)$ has $\\Delta H=-1410\\ \\text{kJ mol}^{-1}$. Take $R=8.0\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+ "options": [
+  "$-122.4\\ \\text{kJ mol}^{-1}$",
+  "$-120.0\\ \\text{kJ mol}^{-1}$",
+  "$-115.2\\ \\text{kJ mol}^{-1}$",
+  "$-117.6\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For C₂H₄ combustion, bond enthalpies give ΔH = (614 + 4×413 + 3×498) − (4×799 + 4×463) = −1288 kJ mol⁻¹. Hess’s law: ΔH(hydrogenation) = −1288 − 242 − (−1410) = −120 kJ mol⁻¹. With Δn_g = −1, ΔU = ΔH − Δn_gRT = −120 + 2.4 = −117.6 kJ mol⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta H_{c}(\\text{C}_2\\text{H}_4)=[614+4(413)+3(498)]-[4(799)+4(463)]=-1288\\ \\text{kJ mol}^{-1}$; $\\Delta H_{\\text{target}}=-1288-242+1410=-120\\ \\text{kJ mol}^{-1}$. $\\Delta n_g=1-2=-1$; $\\Delta U=\\Delta H-\\Delta n_gRT=-120+\\dfrac{8(300)}{1000}=-117.6\\ \\text{kJ mol}^{-1}$.\n\nIndependent check: For C₂H₄ combustion, bond enthalpies give ΔH = (614 + 4×413 + 3×498) − (4×799 + 4×463) = −1288 kJ mol⁻¹. Hess’s law: ΔH(hydrogenation) = −1288 − 242 − (−1410) = −120 kJ mol⁻¹. With Δn_g = −1, ΔU = ΔH − Δn_gRT = −120 + 2.4 = −117.6 kJ mol⁻¹.",
+ "solution": "For combustion of ethene, using bond enthalpies, $\\Delta H_c=[614+4(413)+3(498)]-[4(799)+4(463)]=-1288\\ \\text{kJ mol}^{-1}$.\nBy Hess’s law, $\\Delta H_{\\text{reaction}}=-1288-242+1410=-120\\ \\text{kJ mol}^{-1}$.\nHere $\\Delta n_g=1-2=-1$, so $\\Delta U=\\Delta H-\\Delta n_gRT=-120+\\frac{8(300)}{1000}=-117.6\\ \\text{kJ mol}^{-1}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "At $300\\ \\text{K}$, find $\\Delta U$ for $\\text{C}_2\\text{H}_4(g)+\\text{H}_2(g)\\rightarrow\\text{C}_2\\text{H}_6(g)$. All combustion products contain $\\text{H}_2\\text{O}(g)$. Use mean bond enthalpies $\\text{C}={\\text{C}}:614$, $\\text{C}—\\text{H}:413$, $\\text{O}={\\text{O}}:498$, $\\text{C}={\\text{O}}$ in $\\text{CO}_2:799$, and $\\text{O}—\\text{H}:463\\ \\text{kJ mol}^{-1}$; also, $\\text{H}_2+\\dfrac{1}{2}\\text{O}_2\\rightarrow\\text{H}_2\\text{O}(g)$ has $\\Delta H=-242\\ \\text{kJ mol}^{-1}$ and $\\text{C}_2\\text{H}_6+\\dfrac{7}{2}\\text{O}_2\\rightarrow2\\text{CO}_2+3\\text{H}_2\\text{O}(g)$ has $\\Delta H=-1410\\ \\text{kJ mol}^{-1}$. Take $R=8.0\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+  "options": [
+   "$-122.4\\ \\text{kJ mol}^{-1}$",
+   "$-120.0\\ \\text{kJ mol}^{-1}$",
+   "$-117.6\\ \\text{kJ mol}^{-1}$",
+   "$-115.2\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\Delta H_{c}(\\text{C}_2\\text{H}_4)=[614+4(413)+3(498)]-[4(799)+4(463)]=-1288\\ \\text{kJ mol}^{-1}$; $\\Delta H_{\\text{target}}=-1288-242+1410=-120\\ \\text{kJ mol}^{-1}$. $\\Delta n_g=1-2=-1$; $\\Delta U=\\Delta H-\\Delta n_gRT=-120+\\dfrac{8(300)}{1000}=-117.6\\ \\text{kJ mol}^{-1}$.",
+  "distractor_notes": "A: reverses the sign in the $\\Delta H$–$\\Delta U$ conversion; B: reports $\\Delta H$ without converting; D: uses $\\Delta n_g=-2$ instead of $-1$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

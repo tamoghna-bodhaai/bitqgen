@@ -1,0 +1,70 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Location of roots",
+  "archetype": "use root equation",
+  "brief": "Find the condition on k so that both roots of x² + px + k = 0 lie in a given interval (0,1); combine f(0)>0, f(1)>0, discriminant, vertex location.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:127",
+   "2021:146",
+   "2023s2:97"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For what values of $k$ do both roots of $x^2-\\dfrac{3}{2}x+k=0$ lie in $(0,1)$?",
+ "options": [
+  "$0<k\\le\\dfrac{9}{16}$",
+  "$\\dfrac{1}{2}\\le k\\le\\dfrac{9}{16}$",
+  "$\\dfrac{1}{2}<k\\le\\dfrac{9}{16}$",
+  "$\\dfrac{1}{2}<k\\le\\dfrac{3}{4}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Real roots require k≤9/16. Their product is positive for k>0, so both are positive. Also (1−r₁)(1−r₂)=k−1/2; since their sum is 3/2, both are below 1 exactly when k>1/2. Thus 1/2<k≤9/16.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(0)=k>0,\\quad f(1)=k-\\dfrac12>0$. The vertex is at $x=\\dfrac34\\in(0,1)$; real roots require $\\Delta=\\dfrac94-4k\\ge0$. Hence $\\dfrac12<k\\le\\dfrac{9}{16}$.\n\nIndependent check: Real roots require k≤9/16. Their product is positive for k>0, so both are positive. Also (1−r₁)(1−r₂)=k−1/2; since their sum is 3/2, both are below 1 exactly when k>1/2. Thus 1/2<k≤9/16.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For what values of $k$ do both roots of $x^2-\\dfrac{3}{2}x+k=0$ lie in $(0,1)$?",
+  "options": [
+   "$0<k\\le\\dfrac{9}{16}$",
+   "$\\dfrac{1}{2}\\le k\\le\\dfrac{9}{16}$",
+   "$\\dfrac{1}{2}<k\\le\\dfrac{9}{16}$",
+   "$\\dfrac{1}{2}<k\\le\\dfrac{3}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$f(0)=k>0,\\quad f(1)=k-\\dfrac12>0$. The vertex is at $x=\\dfrac34\\in(0,1)$; real roots require $\\Delta=\\dfrac94-4k\\ge0$. Hence $\\dfrac12<k\\le\\dfrac{9}{16}$.",
+  "distractor_notes": "A: omits the condition excluding a root at or beyond 1; B: includes the excluded root at 1; D: uses an incorrect discriminant bound."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

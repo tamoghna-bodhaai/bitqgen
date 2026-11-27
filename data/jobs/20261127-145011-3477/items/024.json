@@ -1,0 +1,71 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Faraday's law",
+  "archetype": "differentiate-and-substitute",
+  "brief": "Magnetic flux varies with time as a polynomial/sinusoid; differentiate the flux expression and evaluate the induced emf at a specified instant.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:30",
+   "2021:32",
+   "2025s2:21"
+  ],
+  "origin": "variant",
+  "bank_ref": "gbd911e9ab345"
+ },
+ "status": "ok",
+ "stem": "A closed coil of resistance $0.20\\ \\text{\\Omega}$ has flux linkage $\\lambda(t)=(0.10t^3+0.20t)\\ \\text{Wb-turn}$, where $t$ is in seconds. What is the magnitude of the induced current at $t=2.0\\ \\text{s}$?",
+ "options": [
+  "$1.4\\ \\text{A}$",
+  "$3.0\\ \\text{A}$",
+  "$7.0\\ \\text{A}$",
+  "$6.0\\ \\text{A}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Induced emf magnitude: $|d\\lambda/dt|=0.30t^2+0.20=1.4\\,\\text{V}$ at $t=2.0\\,\\text{s}$. Thus $I=1.4/0.20=7.0\\,\\text{A}$.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$|\\mathcal E|=\\left|\\dfrac{d\\lambda}{dt}\\right|=|0.30t^2+0.20|$\n\nIndependent check: Induced emf magnitude: $|d\\lambda/dt|=0.30t^2+0.20=1.4\\,\\text{V}$ at $t=2.0\\,\\text{s}$. Thus $I=1.4/0.20=7.0\\,\\text{A}$.",
+ "solution": "By Faraday’s law, $|\\mathcal E|=|d\\lambda/dt|=|0.30t^2+0.20|$.\nAt $t=2.0\\,\\text{s}$, $|\\mathcal E|=1.4\\,\\text{V}$, so\n$$I=\\frac{|\\mathcal E|}{R}=\\frac{1.4}{0.20}=7.0\\,\\text{A}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A closed coil of resistance $0.20\\ \\text{\\Omega}$ has flux linkage $\\lambda(t)=(0.10t^3+0.20t)\\ \\text{Wb-turn}$, where $t$ is in seconds. What is the magnitude of the induced current at $t=2.0\\ \\text{s}$?",
+  "options": [
+   "$1.4\\ \\text{A}$",
+   "$3.0\\ \\text{A}$",
+   "$6.0\\ \\text{A}$",
+   "$7.0\\ \\text{A}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$|\\mathcal E|=\\left|\\dfrac{d\\lambda}{dt}\\right|=|0.30t^2+0.20|$",
+  "distractor_notes": "A: Treats the induced emf as the current without dividing by resistance. B: Omits the factor of 3 when differentiating the cubic term. C: Substitutes the flux linkage itself instead of differentiating it. (The correct current is $1.40/0.20=7.0\\ \\text{A}$.)"
+ },
+ "variant_of": "gbd911e9ab345",
+ "author_model": "openai/gpt-6-luna-pro"
+}

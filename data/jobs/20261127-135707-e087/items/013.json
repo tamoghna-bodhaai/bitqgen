@@ -1,0 +1,68 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength of accelerated charges",
+  "archetype": "ratio of two situations",
+  "brief": "Compare de Broglie wavelengths of an electron accelerated through given p.d. vs a proton/alpha with same KE; multi-step ratio with sqrt(m) scaling.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:18",
+   "2021:14",
+   "2023s1:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron is accelerated from rest through a potential difference of $600$ V, while an $\\alpha$ particle is accelerated from rest through $300$ V. Given that the $\\alpha$ particle has charge $+2e$ and mass $4m_p$, what is the ratio $\\lambda_e/\\lambda_\\alpha$?",
+ "options": [
+  "$2\\sqrt{\\dfrac{m_p}{m_e}}$",
+  "$\\sqrt{\\dfrac{m_p}{m_e}}$",
+  "$\\dfrac{1}{2}\\sqrt{\\dfrac{m_p}{m_e}}$",
+  "$4\\sqrt{\\dfrac{m_p}{m_e}}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(\\lambda=h/\\sqrt{2mqV}\\), both particles gain kinetic energy \\(600e\\). Thus \\(\\lambda_e/\\lambda_\\alpha=\\sqrt{4m_p/m_e}=2\\sqrt{m_p/m_e}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$K_e=e(600\\ \\text{V})=600e\\ \\text{V}$; $K_\\alpha=2e(300\\ \\text{V})=600e\\ \\text{V}$\n$\\lambda=h/\\sqrt{2mK}$\n$\\dfrac{\\lambda_e}{\\lambda_\\alpha}=\\sqrt{\\dfrac{m_\\alpha K_\\alpha}{m_e K_e}}=\\sqrt{\\dfrac{4m_p}{m_e}}=2\\sqrt{\\dfrac{m_p}{m_e}}$\n\nIndependent check: Using \\(\\lambda=h/\\sqrt{2mqV}\\), both particles gain kinetic energy \\(600e\\). Thus \\(\\lambda_e/\\lambda_\\alpha=\\sqrt{4m_p/m_e}=2\\sqrt{m_p/m_e}\\).",
+ "solution": "The de Broglie wavelength is $[?]$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An electron is accelerated from rest through a potential difference of $600$ V, while an $\\alpha$ particle is accelerated from rest through $300$ V. Given that the $\\alpha$ particle has charge $+2e$ and mass $4m_p$, what is the ratio $\\lambda_e/\\lambda_\\alpha$?",
+  "options": [
+   "$\\dfrac{1}{2}\\sqrt{\\dfrac{m_p}{m_e}}$",
+   "$\\sqrt{\\dfrac{m_p}{m_e}}$",
+   "$2\\sqrt{\\dfrac{m_p}{m_e}}$",
+   "$4\\sqrt{\\dfrac{m_p}{m_e}}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$K_e=e(600\\ \\text{V})=600e\\ \\text{V}$; $K_\\alpha=2e(300\\ \\text{V})=600e\\ \\text{V}$\n$\\lambda=h/\\sqrt{2mK}$\n$\\dfrac{\\lambda_e}{\\lambda_\\alpha}=\\sqrt{\\dfrac{m_\\alpha K_\\alpha}{m_e K_e}}=\\sqrt{\\dfrac{4m_p}{m_e}}=2\\sqrt{\\dfrac{m_p}{m_e}}$",
+  "distractor_notes": "A: inverts the mass scaling and includes an extra factor of one half.\nB: treats the alpha particle's mass as $m_p$ instead of $4m_p$.\nD: uses the mass ratio directly rather than its square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

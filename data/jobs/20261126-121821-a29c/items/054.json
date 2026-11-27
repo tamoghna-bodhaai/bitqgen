@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "According to the IUPAC nomenclature rules, the correct name of the coordination compound $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$ is",
+ "stem": "The correct IUPAC name of the coordination compound $\\text{K}_2[\\text{PtCl}_6]$ is",
  "options": [
-  "Dichloridotetraamminechromium(III) chloride",
-  "Tetraamminedichloridochromium(III) chloride",
-  "Tetraamminedichloridochromate(III) chloride",
-  "Tetraamminedichloridochromium(II) chloride"
+  "Potassium hexachloridoplatinate(II)",
+  "Potassium hexachloridoplatinum(IV)",
+  "Potassium hexachloridoplatinate(IV)",
+  "Potassium pentachloridoplatinate(IV)"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Outer Cl⁻ gives complex charge +1; with 4 neutral NH₃ and 2 Cl⁻ inside, Cr = +3. Ligands named alphabetically: ammine before chlorido → tetraamminedichloridochromium(III) chloride. Cationic complex uses 'chromium', not 'chromate'; option A violates alphabetical order, D has wrong oxidation state.",
-   "answer": "B",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The complex ion has charge −2. With six Cl⁻ ligands, Pt is +4; an anionic platinum complex is named platinate. Thus the name is potassium hexachloridoplatinate(IV).",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "1. **Determine the oxidation state of the central metal ($\\text{Cr}$):**\nLet the oxidation state of chromium be $x$.\n- Ammine ($\\text{NH}_3$) is a neutral ligand: charge $= 0$.\n- Chlorido ($\\text{Cl}^-$) is a uninegative ligand: charge $= -1$.\n- The counter ion is chloride ($\\text{Cl}^-$): charge $= -1$.\n\nSetting up the charge neutrality equation:\n$$x + 4(0) + 2(-1) + (-1) = 0$$\n$$x - 3 = 0 \\implies x = +3$$\nSo the oxidation state of chromium is $+3$, written as $(\\text{III})$.\n\n2. **Identify the type of complex ion:**\nThe complex cation is $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]^+$. Since the coordination entity is cationic, the central metal retains its elemental name, \"chromium\" (not \"chromate\").\n\n3. **Alphabetical order of ligands:**\nThe ligands present are ammine and chlorido. Alphabetically, \"ammine\" precedes \"chlorido\" (prefixes such as 'tetra' and 'di' are ignored in alphabetical ordering).\nTherefore, the ligands are written as \"tetraamminedichlorido\".\n\n4. **Counter ion:**\nThe anion outside the coordination sphere is named \"chloride\".\n\nCombining these gives: **Tetraamminedichloridochromium(III) chloride**.\n\nIndependent check: Outer Cl⁻ gives complex charge +1; with 4 neutral NH₃ and 2 Cl⁻ inside, Cr = +3. Ligands named alphabetically: ammine before chlorido → tetraamminedichloridochromium(III) chloride. Cationic complex uses 'chromium', not 'chromate'; option A violates alphabetical order, D has wrong oxidation state.",
- "solution": "",
+ "working": "$x+6(-1)=-2 \\Rightarrow x=+4$ for Pt.\nThe complex ion is anionic, so the metal name takes the suffix “-ate”.\nSix chlorido ligands give “hexachlorido”.\nName: potassium hexachloridoplatinate(IV).\n\nIndependent check: The complex ion has charge −2. With six Cl⁻ ligands, Pt is +4; an anionic platinum complex is named platinate. Thus the name is potassium hexachloridoplatinate(IV).",
+ "solution": "Let the oxidation state of Pt be $x$. For $[\\text{PtCl}_6]^{2-}$,\n$$x+6(-1)=-2 \\Rightarrow x=+4.$$\nThe anionic complex uses the suffix “-ate”; six chlorido ligands give hexachlorido. Hence the name is potassium hexachloridoplatinate(IV).",
  "locked": false,
- "difficulty": 2,
+ "difficulty": 1,
  "draft": {
-  "stem": "According to the IUPAC nomenclature rules, the correct name of the coordination compound $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]\\text{Cl}$ is",
+  "stem": "The correct IUPAC name of the coordination compound $\\text{K}_2[\\text{PtCl}_6]$ is",
   "options": [
-   "Dichloridotetraamminechromium(III) chloride",
-   "Tetraamminedichloridochromium(III) chloride",
-   "Tetraamminedichloridochromate(III) chloride",
-   "Tetraamminedichloridochromium(II) chloride"
+   "Potassium hexachloridoplatinate(II)",
+   "Potassium hexachloridoplatinum(IV)",
+   "Potassium hexachloridoplatinate(IV)",
+   "Potassium pentachloridoplatinate(IV)"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. **Determine the oxidation state of the central metal ($\\text{Cr}$):**\nLet the oxidation state of chromium be $x$.\n- Ammine ($\\text{NH}_3$) is a neutral ligand: charge $= 0$.\n- Chlorido ($\\text{Cl}^-$) is a uninegative ligand: charge $= -1$.\n- The counter ion is chloride ($\\text{Cl}^-$): charge $= -1$.\n\nSetting up the charge neutrality equation:\n$$x + 4(0) + 2(-1) + (-1) = 0$$\n$$x - 3 = 0 \\implies x = +3$$\nSo the oxidation state of chromium is $+3$, written as $(\\text{III})$.\n\n2. **Identify the type of complex ion:**\nThe complex cation is $[\\text{Cr}(\\text{NH}_3)_4\\text{Cl}_2]^+$. Since the coordination entity is cationic, the central metal retains its elemental name, \"chromium\" (not \"chromate\").\n\n3. **Alphabetical order of ligands:**\nThe ligands present are ammine and chlorido. Alphabetically, \"ammine\" precedes \"chlorido\" (prefixes such as 'tetra' and 'di' are ignored in alphabetical ordering).\nTherefore, the ligands are written as \"tetraamminedichlorido\".\n\n4. **Counter ion:**\nThe anion outside the coordination sphere is named \"chloride\".\n\nCombining these gives: **Tetraamminedichloridochromium(III) chloride**.",
-  "distractor_notes": "Option A encodes an alphabetical ordering error, placing 'dichlorido' before 'ammine'.\nOption C encodes the mistake of applying the suffix '-ate' to the metal in a cationic complex entity.\nOption D encodes an incorrect oxidation state calculation (+2 instead of +3), typically caused by neglecting the outer-sphere chloride ion.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$x+6(-1)=-2 \\Rightarrow x=+4$ for Pt.\nThe complex ion is anionic, so the metal name takes the suffix “-ate”.\nSix chlorido ligands give “hexachlorido”.\nName: potassium hexachloridoplatinate(IV).",
+  "distractor_notes": "A: assigns Pt the wrong oxidation state. B: uses the metal name for an anionic complex. D: gives the wrong number of chlorido ligands."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

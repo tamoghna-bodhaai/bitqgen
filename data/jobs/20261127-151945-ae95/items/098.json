@@ -1,0 +1,71 @@
+{
+ "qno": 98,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 98,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-shift code",
+  "brief": "A simple word is coded by shifting each letter forward by a fixed number; give the code for one word and ask for the code of another using the same shift.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:102",
+   "2025s1:71",
+   "2026s1:78"
+  ],
+  "origin": "variant",
+  "bank_ref": "g9dd439c44987"
+ },
+ "status": "ok",
+ "stem": "If **FROG** is coded as **IURJ** by shifting each letter forward by the same number of places, how is **PLANT** coded?",
+ "options": [
+  "SODQW",
+  "SNCQW",
+  "SODRV",
+  "ROCPV"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Each letter shifts forward by 3: P→S, L→O, A→D, N→Q, T→W. Thus PLANT→SODQW.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each letter shifts forward by 3 places: F→I, R→U, O→R, G→J. Applying this to PLANT gives P→S, L→O, A→D, N→Q, T→W: SODQW. The other options contain one or more incorrect shifts.\n\nIndependent check: Each letter shifts forward by 3: P→S, L→O, A→D, N→Q, T→W. Thus PLANT→SODQW.",
+ "solution": "Each letter is shifted forward by $3$ places.\n$$\\text{PLANT} \\to \\text{SODQW}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "If **FROG** is coded as **IURJ** by shifting each letter forward by the same number of places, how is **PLANT** coded?",
+  "options": [
+   "SODQW",
+   "SNCQW",
+   "SODRV",
+   "ROCPV"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Each letter shifts forward by 3 places: F→I, R→U, O→R, G→J. Applying this to PLANT gives P→S, L→O, A→D, N→Q, T→W: SODQW. The other options contain one or more incorrect shifts.",
+  "distractor_notes": "B: L is shifted by 1 instead of 3. C: final letter is shifted by 2. D: letters are shifted backward."
+ },
+ "variant_of": "g9dd439c44987",
+ "author_model": "openai/gpt-6-luna"
+}

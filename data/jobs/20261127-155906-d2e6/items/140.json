@@ -1,0 +1,70 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Set operations and cardinality",
+  "archetype": "standard identity",
+  "brief": "Use the inclusion–exclusion principle on a survey/venn-type data set to find |A∩B∩C| or |exactly two sets|.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:119",
+   "2026s1:102",
+   "2024s2:129"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "In a survey of 72 people, everyone uses at least one of three apps. The numbers using A, B and C are 42, 38 and 35; the pairwise intersection sizes are 18, 16 and 15. How many use exactly two apps?",
+ "options": [
+  "$18$",
+  "$31$",
+  "$43$",
+  "$49$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By inclusion–exclusion, the triple intersection is 72 − 115 + 49 = 6. Exactly two = (18 + 16 + 15) − 3(6) = 31.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n(A\\cap B\\cap C)=72-(42+38+35)+(18+16+15)=6$. Exactly two $=(18+16+15)-3(6)=31$.\n\nIndependent check: By inclusion–exclusion, the triple intersection is 72 − 115 + 49 = 6. Exactly two = (18 + 16 + 15) − 3(6) = 31.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a survey of 72 people, everyone uses at least one of three apps. The numbers using A, B and C are 42, 38 and 35; the pairwise intersection sizes are 18, 16 and 15. How many use exactly two apps?",
+  "options": [
+   "$18$",
+   "$31$",
+   "$43$",
+   "$49$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$n(A\\cap B\\cap C)=72-(42+38+35)+(18+16+15)=6$. Exactly two $=(18+16+15)-3(6)=31$.",
+  "distractor_notes": "A: counts triple-intersection membership as exactly two. C: subtracts the triple intersection only once from the pairwise sum. D: uses the pairwise-intersection sum without correcting for the triple intersection."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

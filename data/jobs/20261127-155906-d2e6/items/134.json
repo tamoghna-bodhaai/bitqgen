@@ -1,0 +1,70 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Ellipse – foci geometry",
+  "archetype": "two-equation solve",
+  "brief": "Given an ellipse with centre at a non-origin point (or shifted axes), use sum-of-focal-distances = 2a and distance data to find a, b, and then eccentricity/equation; multi-step 4/5.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:96",
+   "2026s1:109",
+   "2021:150"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An ellipse is centred at $(2,-1)$, has foci $(-1,-1)$ and $(5,-1)$, and passes through $(2,3)$. Its equation is",
+ "options": [
+  "$\\dfrac{(x-2)^2}{16}+\\dfrac{(y+1)^2}{25}=1$",
+  "$\\dfrac{(x-2)^2}{25}+\\dfrac{(y+1)^2}{16}=1$",
+  "$\\dfrac{(x-2)^2}{25}+\\dfrac{(y+1)^2}{9}=1$",
+  "$\\dfrac{(x-2)^2}{100}+\\dfrac{(y+1)^2}{91}=1$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The focal distance is c=3. The point is 4 units vertically from the centre, so b=4. Thus a²=b²+c²=16+9=25, giving option B.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$PF_1=PF_2=\\sqrt{3^2+4^2}=5,\\quad 2a=10\\Rightarrow a=5;\\quad c=3,\\ b^2=a^2-c^2=16;\\quad \\dfrac{(x-2)^2}{25}+\\dfrac{(y+1)^2}{16}=1$.\n\nIndependent check: The focal distance is c=3. The point is 4 units vertically from the centre, so b=4. Thus a²=b²+c²=16+9=25, giving option B.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "An ellipse is centred at $(2,-1)$, has foci $(-1,-1)$ and $(5,-1)$, and passes through $(2,3)$. Its equation is",
+  "options": [
+   "$\\dfrac{(x-2)^2}{16}+\\dfrac{(y+1)^2}{25}=1$",
+   "$\\dfrac{(x-2)^2}{25}+\\dfrac{(y+1)^2}{16}=1$",
+   "$\\dfrac{(x-2)^2}{25}+\\dfrac{(y+1)^2}{9}=1$",
+   "$\\dfrac{(x-2)^2}{100}+\\dfrac{(y+1)^2}{91}=1$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$PF_1=PF_2=\\sqrt{3^2+4^2}=5,\\quad 2a=10\\Rightarrow a=5;\\quad c=3,\\ b^2=a^2-c^2=16;\\quad \\dfrac{(x-2)^2}{25}+\\dfrac{(y+1)^2}{16}=1$.",
+  "distractor_notes": "A: swaps the major and minor axes; C: uses $c^2$ as $b^2$; D: treats $2a$ as $a$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

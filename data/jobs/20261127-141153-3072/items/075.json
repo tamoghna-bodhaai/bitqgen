@@ -1,0 +1,68 @@
+{
+ "qno": 75,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 75,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Free radical stability",
+  "archetype": "ordering",
+  "brief": "Rank a set of given radicals (benzylic, allylic, tertiary, methyl) by stability; straightforward compare-and-rank with resonance reasoning.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:41",
+   "2025s2:40",
+   "2025s1:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the following free radicals in decreasing order of stability: benzyl, allyl, tert-butyl and methyl.",
+ "options": [
+  "$\\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > \\text{CH}_2=\\text{CHCH}_2^\\cdot > (\\text{CH}_3)_3\\text{C}^\\cdot > \\text{CH}_3^\\cdot$",
+  "$\\text{CH}_2=\\text{CHCH}_2^\\cdot > \\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > (\\text{CH}_3)_3\\text{C}^\\cdot > \\text{CH}_3^\\cdot$",
+  "$(\\text{CH}_3)_3\\text{C}^\\cdot > \\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > \\text{CH}_2=\\text{CHCH}_2^\\cdot > \\text{CH}_3^\\cdot$",
+  "$\\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > (\\text{CH}_3)_3\\text{C}^\\cdot > \\text{CH}_2=\\text{CHCH}_2^\\cdot > \\text{CH}_3^\\cdot$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Benzyl and allyl radicals are resonance-stabilized, with benzyl more stable; tert-butyl is more stable than methyl due to hyperconjugation. Thus benzyl > allyl > tert-butyl > methyl.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Benzylic and allylic radicals are resonance-stabilised; benzyl has greater delocalisation.\\nAmong alkyl radicals, stability increases with substitution: $3^\\circ > 1^\\circ > \\text{methyl}$.\\nOrder: benzyl $>$ allyl $>$ tert-butyl $>$ methyl.\n\nIndependent check: Benzyl and allyl radicals are resonance-stabilized, with benzyl more stable; tert-butyl is more stable than methyl due to hyperconjugation. Thus benzyl > allyl > tert-butyl > methyl.",
+ "solution": "Resonance stabilisation makes benzylic and allylic radicals more stable; benzyl has greater delocalisation. Among alkyl radicals, stability increases with substitution due to hyperconjugation.\n$$\\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > \\text{CH}_2=\\text{CHCH}_2^\\cdot > (\\text{CH}_3)_3\\text{C}^\\cdot > \\text{CH}_3^\\cdot$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange the following free radicals in decreasing order of stability: benzyl, allyl, tert-butyl and methyl.",
+  "options": [
+   "$\\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > \\text{CH}_2=\\text{CHCH}_2^\\cdot > (\\text{CH}_3)_3\\text{C}^\\cdot > \\text{CH}_3^\\cdot$",
+   "$\\text{CH}_2=\\text{CHCH}_2^\\cdot > \\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > (\\text{CH}_3)_3\\text{C}^\\cdot > \\text{CH}_3^\\cdot$",
+   "$(\\text{CH}_3)_3\\text{C}^\\cdot > \\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > \\text{CH}_2=\\text{CHCH}_2^\\cdot > \\text{CH}_3^\\cdot$",
+   "$\\text{C}_6\\text{H}_5\\text{CH}_2^\\cdot > (\\text{CH}_3)_3\\text{C}^\\cdot > \\text{CH}_2=\\text{CHCH}_2^\\cdot > \\text{CH}_3^\\cdot$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Benzylic and allylic radicals are resonance-stabilised; benzyl has greater delocalisation.\\nAmong alkyl radicals, stability increases with substitution: $3^\\circ > 1^\\circ > \\text{methyl}$.\\nOrder: benzyl $>$ allyl $>$ tert-butyl $>$ methyl.",
+  "distractor_notes": "B: Reverses the relative stability of benzyl and allyl; C: Puts the tertiary radical above resonance-stabilised radicals; D: Puts the tertiary radical above the allyl radical."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

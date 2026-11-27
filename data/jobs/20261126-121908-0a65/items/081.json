@@ -20,48 +20,51 @@
   ]
  },
  "status": "ok",
- "stem": "Find out the part of the sentence which contains a grammatical error:\n\nThe lead architect, as well as several senior engineers, were present at the construction site to supervise the foundation work.",
+ "stem": "Identify the part of the sentence that contains an error:\n\nThe committee have agreed to publish its findings after the final review is completed.",
  "options": [
-  "The lead architect, as well as",
-  "several senior engineers, were present",
-  "at the construction site to supervise",
-  "the foundation work."
+  "The committee have agreed",
+  "to publish its findings",
+  "after the final review",
+  "is completed."
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "With 'as well as', the verb agrees with the first subject: 'The lead architect' (singular) requires 'was present', not 'were present'. The incorrect verb appears in segment (B).",
-   "answer": "B",
-   "confidence": 0.97,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "In standard American English, “committee” is singular, so it takes “has agreed”; the error is in (A). British English may allow a plural verb with a collective noun, making the wording dialect-dependent.",
+   "answer": "A",
+   "confidence": 0.88,
    "multiple_correct": false,
-   "issues": [],
-   "difficulty": 2
+   "issues": [
+    "Dialect is unspecified; plural agreement with collective nouns such as “committee” is acceptable in some varieties of English."
+   ],
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "When two nouns are connected by prepositional or additive phrases such as 'as well as', 'together with', 'along with', or 'in addition to', the grammatical number of the subject is determined entirely by the primary (first) noun. Here, the primary subject is 'The lead architect', which is singular. Therefore, the verb must also be singular ('was present' instead of the plural 'were present'). The error lies in the second segment.\n\nIndependent check: With 'as well as', the verb agrees with the first subject: 'The lead architect' (singular) requires 'was present', not 'were present'. The incorrect verb appears in segment (B).",
+ "working": "“Committee” is a collective noun treated as a single unit here, as shown by the singular pronoun “its”; use “has agreed.” The other parts are grammatically correct.\n\nIndependent check: In standard American English, “committee” is singular, so it takes “has agreed”; the error is in (A). British English may allow a plural verb with a collective noun, making the wording dialect-dependent.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Find out the part of the sentence which contains a grammatical error:\n\nThe lead architect, as well as several senior engineers, were present at the construction site to supervise the foundation work.",
+  "stem": "Identify the part of the sentence that contains an error:\n\nThe committee have agreed to publish its findings after the final review is completed.",
   "options": [
-   "The lead architect, as well as",
-   "several senior engineers, were present",
-   "at the construction site to supervise",
-   "the foundation work."
+   "The committee have agreed",
+   "to publish its findings",
+   "after the final review",
+   "is completed."
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "When two nouns are connected by prepositional or additive phrases such as 'as well as', 'together with', 'along with', or 'in addition to', the grammatical number of the subject is determined entirely by the primary (first) noun. Here, the primary subject is 'The lead architect', which is singular. Therefore, the verb must also be singular ('was present' instead of the plural 'were present'). The error lies in the second segment.",
-  "distractor_notes": "Option A contains the singular subject and the connecting phrase, which is grammatically sound.\nOption C contains the prepositional phrase of location and an infinitive of purpose, both used correctly.\nOption D is the direct object phrase functioning correctly as the complement of the verb 'supervise'.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "“Committee” is a collective noun treated as a single unit here, as shown by the singular pronoun “its”; use “has agreed.” The other parts are grammatically correct.",
+  "distractor_notes": "B: The infinitive phrase is correctly formed. C: The prepositional phrase is correct. D: The singular verb agrees with “review.”"
+ },
+ "author_model": "openai/gpt-6-luna"
 }

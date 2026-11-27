@@ -1,0 +1,70 @@
+{
+ "qno": 77,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 77,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Oxidation states",
+  "archetype": "trend then count",
+  "brief": "Across the 3d series, which ion has maximum unpaired electrons / highest oxidation state in common compounds (e.g., Mn); simple trend + count",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:48",
+   "2026s2:43",
+   "2022:54"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which gaseous ion has the largest number of unpaired electrons, and how many does it have?",
+ "options": [
+  "$\\text{Mn}^{2+}$; $5$",
+  "$\\text{V}^{3+}$; $2$",
+  "$\\text{Ti}^{3+}$; $1$",
+  "$\\text{Fe}^{2+}$; $2$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For gaseous ions, the configurations are Ti³⁺: 3d¹ (1 unpaired), V³⁺: 3d² (2), Mn²⁺: 3d⁵ (5), and Fe²⁺: 3d⁶ (4, by Hund’s rule). Thus Mn²⁺ has the most.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Ti}^{3+}: 3d^1 \\to 1$ unpaired; $\\text{V}^{3+}: 3d^2 \\to 2$; $\\text{Mn}^{2+}: 3d^5 \\to 5$; $\\text{Fe}^{2+}: 3d^6 \\to 4$.\n\nIndependent check: For gaseous ions, the configurations are Ti³⁺: 3d¹ (1 unpaired), V³⁺: 3d² (2), Mn²⁺: 3d⁵ (5), and Fe²⁺: 3d⁶ (4, by Hund’s rule). Thus Mn²⁺ has the most.",
+ "solution": "For transition-metal ions, remove the $4s$ electrons before the $3d$ electrons. Thus, $\\text{Mn}^{2+}$ has configuration $3d^5$; by Hund’s rule, all five $d$ electrons are unpaired.\nThe other configurations are $\\text{Ti}^{3+}:3d^1$, $\\text{V}^{3+}:3d^2$, and $\\text{Fe}^{2+}:3d^6$, with $1$, $2$, and $4$ unpaired electrons, respectively.\nHence $\\text{Mn}^{2+}$ has the largest number: $5$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which gaseous ion has the largest number of unpaired electrons, and how many does it have?",
+  "options": [
+   "$\\text{Ti}^{3+}$; $1$",
+   "$\\text{V}^{3+}$; $2$",
+   "$\\text{Mn}^{2+}$; $5$",
+   "$\\text{Fe}^{2+}$; $2$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{Ti}^{3+}: 3d^1 \\to 1$ unpaired; $\\text{V}^{3+}: 3d^2 \\to 2$; $\\text{Mn}^{2+}: 3d^5 \\to 5$; $\\text{Fe}^{2+}: 3d^6 \\to 4$.",
+  "distractor_notes": "A and B give the correct ion configurations but are not the maximum; D undercounts the unpaired electrons in $3d^6$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

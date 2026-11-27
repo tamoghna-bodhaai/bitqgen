@@ -1,0 +1,68 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Symmetric functions of roots",
+  "archetype": "use root equation",
+  "brief": "Given a quadratic, evaluate an expression symmetric in roots such as α³ + β³ or 1/α² + 1/β² using Vieta's relations.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:110",
+   "2025s2:91",
+   "2025s1:124"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-4x+1=0$, find $\\alpha^3+\\beta^3$.",
+ "options": [
+  "$40$",
+  "$52$",
+  "$48$",
+  "$64$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using α+β=4 and αβ=1, α³+β³=(α+β)³-3αβ(α+β)=64-12=52.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\alpha+\\beta=4,\\quad \\alpha\\beta=1.$ Thus $\\alpha^3+\\beta^3=(\\alpha+\\beta)^3-3\\alpha\\beta(\\alpha+\\beta)=64-12=52.$\n\nIndependent check: Using α+β=4 and αβ=1, α³+β³=(α+β)³-3αβ(α+β)=64-12=52.",
+ "solution": "By Vieta’s formulas, $\\alpha+\\beta=4$ and $\\alpha\\beta=1$. Using $\\alpha^3+\\beta^3=(\\alpha+\\beta)^3-3\\alpha\\beta(\\alpha+\\beta)$,\n$$\\alpha^3+\\beta^3=4^3-3(1)(4)=52.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-4x+1=0$, find $\\alpha^3+\\beta^3$.",
+  "options": [
+   "$40$",
+   "$48$",
+   "$52$",
+   "$64$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\alpha+\\beta=4,\\quad \\alpha\\beta=1.$ Thus $\\alpha^3+\\beta^3=(\\alpha+\\beta)^3-3\\alpha\\beta(\\alpha+\\beta)=64-12=52.$",
+  "distractor_notes": "A: doubles the correction term in the cube identity; B: uses coefficient $4$ instead of $3$; D: omits the product correction term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

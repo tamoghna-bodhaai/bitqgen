@@ -1,0 +1,70 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Kohlrausch's law",
+  "archetype": "single-formula numerical",
+  "brief": "Given Λm° values of ions by Kohlrausch's law, calculate limiting molar conductivity of a weak electrolyte (e.g., an acid) by linear combination",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:51",
+   "2025s2:52",
+   "2026s1:43"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Given $\\text{Λ}_m^\\text{°}(\\text{HCl})=426$, $\\text{Λ}_m^\\text{°}(\\text{CH}_3\\text{COONa})=91$ and $\\text{Λ}_m^\\text{°}(\\text{NaCl})=126$ S cm$^2$ mol$^{-1}$, calculate $\\text{Λ}_m^\\text{°}(\\text{CH}_3\\text{COOH})$.",
+ "options": [
+  "$391$ S cm$^2$ mol$^{-1}$",
+  "$300$ S cm$^2$ mol$^{-1}$",
+  "$461$ S cm$^2$ mol$^{-1}$",
+  "$643$ S cm$^2$ mol$^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Kohlrausch’s law: Λ°m(CH₃COOH) = 426 + 91 − 126 = 391 S cm² mol⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{CH}_3\\text{COOH})=\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{HCl})+\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{CH}_3\\text{COONa})-\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{NaCl})=426+91-126=391$ S cm$^2$ mol$^{-1}$.\n\nIndependent check: By Kohlrausch’s law: Λ°m(CH₃COOH) = 426 + 91 − 126 = 391 S cm² mol⁻¹.",
+ "solution": "By Kohlrausch’s law of independent migration of ions,\n$$\\Lambda_m^\\circ(\\mathrm{CH_3COOH})=\\Lambda_m^\\circ(\\mathrm{HCl})+\\Lambda_m^\\circ(\\mathrm{CH_3COONa})-\\Lambda_m^\\circ(\\mathrm{NaCl})=426+91-126=391\\ \\text{S cm}^2\\text{ mol}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Given $\\text{Λ}_m^\\text{°}(\\text{HCl})=426$, $\\text{Λ}_m^\\text{°}(\\text{CH}_3\\text{COONa})=91$ and $\\text{Λ}_m^\\text{°}(\\text{NaCl})=126$ S cm$^2$ mol$^{-1}$, calculate $\\text{Λ}_m^\\text{°}(\\text{CH}_3\\text{COOH})$.",
+  "options": [
+   "$300$ S cm$^2$ mol$^{-1}$",
+   "$391$ S cm$^2$ mol$^{-1}$",
+   "$461$ S cm$^2$ mol$^{-1}$",
+   "$643$ S cm$^2$ mol$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{CH}_3\\text{COOH})=\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{HCl})+\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{CH}_3\\text{COONa})-\\text{Λ}_m^\u0000\u0000\\text{°}(\\text{NaCl})=426+91-126=391$ S cm$^2$ mol$^{-1}$.",
+  "distractor_notes": "A: Omits the acetate contribution; C: Adds the NaCl value instead of subtracting it; D: Adds all three given values."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

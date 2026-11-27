@@ -1,0 +1,70 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Telescoping series",
+  "archetype": "general-term telescoping",
+  "brief": "Sum to n terms of a series whose general term splits as f(k) − f(k+1) (e.g. 1/(k(k+2))); ask for the sum in closed form.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:109",
+   "2021:148",
+   "2022:113"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The sum of the first $n$ terms of $\\displaystyle\\sum_{k=1}^{n}\\dfrac{1}{k(k+2)}$ is",
+ "options": [
+  "$\\dfrac{n(3n+5)}{4(n+1)(n+2)}$",
+  "$\\dfrac{n(3n+5)}{2(n+1)(n+2)}$",
+  "$\\dfrac{n(3n+5)}{4(n+2)}$",
+  "$\\dfrac{n(3n+5)}{4(n+1)}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use \\(\\frac1{k(k+2)}=\\frac12(\\frac1k-\\frac1{k+2})\\). The sum telescopes to \\(\\frac{n(3n+5)}{4(n+1)(n+2)}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{1}{k(k+2)}=\\dfrac12\\left(\\dfrac1k-\\dfrac1{k+2}\\right)$; $S_n=\\dfrac12\\left(1+\\dfrac12-\\dfrac1{n+1}-\\dfrac1{n+2}\\right)=\\dfrac{n(3n+5)}{4(n+1)(n+2)}$.\n\nIndependent check: Use \\(\\frac1{k(k+2)}=\\frac12(\\frac1k-\\frac1{k+2})\\). The sum telescopes to \\(\\frac{n(3n+5)}{4(n+1)(n+2)}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum of the first $n$ terms of $\\displaystyle\\sum_{k=1}^{n}\\dfrac{1}{k(k+2)}$ is",
+  "options": [
+   "$\\dfrac{n(3n+5)}{4(n+1)(n+2)}$",
+   "$\\dfrac{n(3n+5)}{2(n+1)(n+2)}$",
+   "$\\dfrac{n(3n+5)}{4(n+2)}$",
+   "$\\dfrac{n(3n+5)}{4(n+1)}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{1}{k(k+2)}=\\dfrac12\\left(\\dfrac1k-\\dfrac1{k+2}\\right)$; $S_n=\\dfrac12\\left(1+\\dfrac12-\\dfrac1{n+1}-\\dfrac1{n+2}\\right)=\\dfrac{n(3n+5)}{4(n+1)(n+2)}$.",
+  "distractor_notes": "B: misses the factor $\\dfrac12$; C: omits the $(n+1)$ boundary denominator; D: omits the $(n+2)$ boundary denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

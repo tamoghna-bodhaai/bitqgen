@@ -1,0 +1,80 @@
+{
+ "qno": 78,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 78,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Elimination followed by HBr addition",
+  "archetype": "reaction sequence product",
+  "brief": "Multi-step: alkyl halide → elimination → addition of HBr (peroxide effect question) → substitution; identify the final product structure after the full sequence.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:60",
+   "2023s2:37",
+   "2026s2:32"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "1-Bromobutane is heated with alcoholic $\\text{KOH}$; the alkene formed is treated with $\\text{HBr}$ in peroxide, then with $\\text{NaI}$ in acetone. What is the final product?",
+ "options": [
+  "1-Iodobutane",
+  "2-Iodobutane",
+  "1-Bromobutane",
+  "Butan-1-ol"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q078_optA_v0.png",
+  "figs/q078_optB_v0.png",
+  "figs/q078_optC_v0.png",
+  "figs/q078_optD_v0.png"
+ ],
+ "option_width": 35,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alcoholic KOH eliminates HBr to form but-1-ene. Peroxide-assisted addition of HBr gives 1-bromobutane; NaI in acetone substitutes Br with I, forming 1-iodobutane.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{Br}\\xrightarrow[\\Delta]{\\text{alc. KOH}}\\text{CH}_2{=}\\text{CHCH}_2\\text{CH}_3$.\\n$\\text{HBr}/\\text{peroxide}$ adds anti-Markovnikov: $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{Br}$.\\n$\\text{NaI}/\\text{acetone}$ substitutes Br by I, giving 1-iodobutane.\n\nIndependent check: Alcoholic KOH eliminates HBr to form but-1-ene. Peroxide-assisted addition of HBr gives 1-bromobutane; NaI in acetone substitutes Br with I, forming 1-iodobutane.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "1-Bromobutane is heated with alcoholic $\\text{KOH}$; the alkene formed is treated with $\\text{HBr}$ in peroxide, then with $\\text{NaI}$ in acetone. What is the final product?",
+  "options": [
+   "1-Iodobutane",
+   "2-Iodobutane",
+   "1-Bromobutane",
+   "Butan-1-ol"
+  ],
+  "option_smiles": [
+   "CCCCI",
+   "CC(I)CC",
+   "CCCCBr",
+   "CCCCO"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{Br}\\xrightarrow[\\Delta]{\\text{alc. KOH}}\\text{CH}_2{=}\\text{CHCH}_2\\text{CH}_3$.\\n$\\text{HBr}/\\text{peroxide}$ adds anti-Markovnikov: $\\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{CH}_2\\text{Br}$.\\n$\\text{NaI}/\\text{acetone}$ substitutes Br by I, giving 1-iodobutane.",
+  "distractor_notes": "B: places iodine at the wrong carbon after HBr addition.\\nC: leaves the bromide unchanged in the final substitution.\\nD: substitutes hydroxide instead of iodide."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

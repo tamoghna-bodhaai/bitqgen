@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "Given below are two statements:\n\nStatement I: Sucrose is a non-reducing sugar because the glycosidic linkage involves the anomeric carbons of both $\\alpha\\text{-D-glucose}$ ($\\text{C}_1$) and $\\beta\\text{-D-fructose}$ ($\\text{C}_2$).\n\nStatement II: Maltose is a reducing sugar because the glycosidic linkage is between $\\text{C}_1$ of one glucose unit and $\\text{C}_4$ of another, leaving a free hemiacetal group at $\\text{C}_1$ of the second glucose unit.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+ "stem": "Consider the following statements about disaccharides.\n\nStatement I: Cellobiose is a reducing sugar because its $\\beta$-$(1\\rightarrow4)$ linkage leaves an anomeric carbon free.\n\nStatement II: Trehalose is a reducing sugar because its $\\alpha,\\alpha$-$(1\\rightarrow1)$ linkage leaves one anomeric carbon free.\n\nChoose the correct answer:",
  "options": [
   "Both Statement I and Statement II are correct",
   "Both Statement I and Statement II are incorrect",
   "Statement I is correct, but Statement II is incorrect",
   "Statement I is incorrect, but Statement II is correct"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Sucrose has an α(1→2) glycosidic bond joining C1 of α-D-glucose to C2 of β-D-fructose; both anomeric carbons are tied up, so no free hemiacetal/hemiketal remains → non-reducing (Statement I correct). Maltose has an α(1→4) linkage between two glucose units, leaving the anomeric C1 of the second glucose as a free hemiacetal that can open to an aldehyde → reducing (Statement II correct).",
-   "answer": "A",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cellobiose has one free anomeric carbon, so it is reducing. Trehalose’s α,α-(1→1) linkage uses both anomeric carbons, so it is nonreducing.",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,12 +45,12 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Evaluation of Statement I:\n- Sucrose is composed of an $\\alpha\\text{-D-glucopyranose}$ unit and a $\\beta\\text{-D-fructofuranose}$ unit.\n- The glycosidic bond is formed between $\\text{C}_1$ of $\\alpha\\text{-D-glucose}$ (its anomeric carbon) and $\\text{C}_2$ of $\\beta\\text{-D-fructose}$ (its anomeric carbon).\n- Because the reducing/anomeric groups of both monosaccharide units are locked in the glycosidic linkage, neither ring can open to generate a free aldehyde or ketone group. Therefore, sucrose is a non-reducing sugar.\n- Hence, Statement I is correct.\n\n2. Evaluation of Statement II:\n- Maltose is composed of two $\\alpha\\text{-D-glucopyranose}$ units joined by an $\\alpha\\text{-(1}\\rightarrow\\text{4)}$ glycosidic bond.\n- The anomeric carbon ($\\text{C}_1$) of the first glucose unit is involved in the glycosidic linkage, but $\\text{C}_1$ of the second glucose unit remains a free hemiacetal.\n- In aqueous solution, this free hemiacetal ring can open to yield a free aldehyde group capable of reducing Tollens' or Fehling's reagent. Therefore, maltose is a reducing sugar.\n- Hence, Statement II is correct.\n\nSince both statements are correct, the correct option is A.\n\nIndependent check: Sucrose has an α(1→2) glycosidic bond joining C1 of α-D-glucose to C2 of β-D-fructose; both anomeric carbons are tied up, so no free hemiacetal/hemiketal remains → non-reducing (Statement I correct). Maltose has an α(1→4) linkage between two glucose units, leaving the anomeric C1 of the second glucose as a free hemiacetal that can open to an aldehyde → reducing (Statement II correct).",
+ "working": "Cellobiose: $\\beta$-$(1\\rightarrow4)$ linkage; one anomeric carbon remains free $\\Rightarrow$ reducing.\nTrehalose: $\\alpha,\\alpha$-$(1\\rightarrow1)$ linkage uses both anomeric carbons $\\Rightarrow$ non-reducing.\nThus, Statement I is correct and Statement II is incorrect.\n\nIndependent check: Cellobiose has one free anomeric carbon, so it is reducing. Trehalose’s α,α-(1→1) linkage uses both anomeric carbons, so it is nonreducing.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Given below are two statements:\n\nStatement I: Sucrose is a non-reducing sugar because the glycosidic linkage involves the anomeric carbons of both $\\alpha\\text{-D-glucose}$ ($\\text{C}_1$) and $\\beta\\text{-D-fructose}$ ($\\text{C}_2$).\n\nStatement II: Maltose is a reducing sugar because the glycosidic linkage is between $\\text{C}_1$ of one glucose unit and $\\text{C}_4$ of another, leaving a free hemiacetal group at $\\text{C}_1$ of the second glucose unit.\n\nIn the light of the above statements, choose the correct answer from the options given below:",
+  "stem": "Consider the following statements about disaccharides.\n\nStatement I: Cellobiose is a reducing sugar because its $\\beta$-$(1\\rightarrow4)$ linkage leaves an anomeric carbon free.\n\nStatement II: Trehalose is a reducing sugar because its $\\alpha,\\alpha$-$(1\\rightarrow1)$ linkage leaves one anomeric carbon free.\n\nChoose the correct answer:",
   "options": [
    "Both Statement I and Statement II are correct",
    "Both Statement I and Statement II are incorrect",
@@ -58,10 +58,11 @@
    "Statement I is incorrect, but Statement II is correct"
   ],
   "option_smiles": null,
-  "answer": "A",
-  "working": "1. Evaluation of Statement I:\n- Sucrose is composed of an $\\alpha\\text{-D-glucopyranose}$ unit and a $\\beta\\text{-D-fructofuranose}$ unit.\n- The glycosidic bond is formed between $\\text{C}_1$ of $\\alpha\\text{-D-glucose}$ (its anomeric carbon) and $\\text{C}_2$ of $\\beta\\text{-D-fructose}$ (its anomeric carbon).\n- Because the reducing/anomeric groups of both monosaccharide units are locked in the glycosidic linkage, neither ring can open to generate a free aldehyde or ketone group. Therefore, sucrose is a non-reducing sugar.\n- Hence, Statement I is correct.\n\n2. Evaluation of Statement II:\n- Maltose is composed of two $\\alpha\\text{-D-glucopyranose}$ units joined by an $\\alpha\\text{-(1}\\rightarrow\\text{4)}$ glycosidic bond.\n- The anomeric carbon ($\\text{C}_1$) of the first glucose unit is involved in the glycosidic linkage, but $\\text{C}_1$ of the second glucose unit remains a free hemiacetal.\n- In aqueous solution, this free hemiacetal ring can open to yield a free aldehyde group capable of reducing Tollens' or Fehling's reagent. Therefore, maltose is a reducing sugar.\n- Hence, Statement II is correct.\n\nSince both statements are correct, the correct option is A.",
-  "distractor_notes": "Option B: Encodes the double misconception that sucrose can act as a reducing sugar due to its constituent monosaccharides, and that any glycosidic linkage renders a disaccharide non-reducing.\nOption C: Encodes the mistake of believing that all disaccharides with a glycosidic bond (including maltose) are non-reducing sugars because the linkage 'ties up' the sugar units.\nOption D: Encodes the misconception that sucrose is reducing because it hydrolyses into glucose and fructose, while correctly identifying maltose as a reducing sugar.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "Cellobiose: $\\beta$-$(1\\rightarrow4)$ linkage; one anomeric carbon remains free $\\Rightarrow$ reducing.\nTrehalose: $\\alpha,\\alpha$-$(1\\rightarrow1)$ linkage uses both anomeric carbons $\\Rightarrow$ non-reducing.\nThus, Statement I is correct and Statement II is incorrect.",
+  "distractor_notes": "A: Incorrectly treats trehalose as reducing. B: Incorrectly treats cellobiose as non-reducing. D: Reverses the correctness of both statements."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

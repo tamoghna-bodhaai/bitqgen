@@ -1,0 +1,71 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Tangents and normals",
+  "archetype": "line through point with slope",
+  "brief": "Find the equation of the tangent (or normal) to a curve at a given point, e.g. y² = 4ax or a hyperbola; ask for the line or its intercepts.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:123",
+   "2026s2:124",
+   "2021:137"
+  ],
+  "origin": "variant",
+  "bank_ref": "g5e2102a89837"
+ },
+ "status": "ok",
+ "stem": "The equation of the normal to the parabola $y^2=8x$ at $(2,4)$ is",
+ "options": [
+  "$x+y-6=0$",
+  "$x-y+2=0$",
+  "$x+y-2=0$",
+  "$2x+y-8=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For y²=8x, implicit differentiation gives dy/dx=4/y=1 at (2,4). The normal has slope −1, so y−4=−(x−2), or x+y−6=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$2y\\dfrac{dy}{dx}=8 \\Rightarrow \\left.\\dfrac{dy}{dx}\\right|_{(2,4)}=1$\n$m_{\\text{normal}}=-1$\n$y-4=-(x-2) \\Rightarrow x+y-6=0$\n\nIndependent check: For y²=8x, implicit differentiation gives dy/dx=4/y=1 at (2,4). The normal has slope −1, so y−4=−(x−2), or x+y−6=0.",
+ "solution": "Differentiating $y^2=8x$ gives $2y\\dfrac{dy}{dx}=8$, so the tangent slope at $(2,4)$ is $1$ and the normal slope is $-1$.\n$$y-4=-(x-2)\\Rightarrow x+y-6=0$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the normal to the parabola $y^2=8x$ at $(2,4)$ is",
+  "options": [
+   "$x+y-6=0$",
+   "$x-y+2=0$",
+   "$x+y-2=0$",
+   "$2x+y-8=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$2y\\dfrac{dy}{dx}=8 \\Rightarrow \\left.\\dfrac{dy}{dx}\\right|_{(2,4)}=1$\n$m_{\\text{normal}}=-1$\n$y-4=-(x-2) \\Rightarrow x+y-6=0$",
+  "distractor_notes": "B: gives the tangent instead of the normal. C: uses the normal slope but makes an intercept error. D: uses an incorrect normal slope of $-2$."
+ },
+ "variant_of": "g5e2102a89837",
+ "author_model": "openai/gpt-6-luna-pro"
+}

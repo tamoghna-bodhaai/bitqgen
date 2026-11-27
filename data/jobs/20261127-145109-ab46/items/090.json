@@ -1,0 +1,70 @@
+{
+ "qno": 90,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 90,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Mixed error spotting with 'no error' option",
+  "archetype": "spot the error (no error)",
+  "brief": "Long, subtle sentence involving tense shift and gerund after preposition where everything is actually correct; the trap is that students wrongly mark a correct part.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:62",
+   "2023s2:67",
+   "2025s1:63"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Choose the part containing an error; choose No error if the sentence is correct. **(A)** Although the panel had questioned the figures when they were first released, / **(B)** it now accepts the revised estimates, having found no evidence of manipulation / **(C)** after examining the underlying records.",
+ "options": [
+  "Part (A)",
+  "Part (B)",
+  "Part (C)",
+  "No error"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The sentence is grammatically correct: the opening concessive clause is complete, and “having found” appropriately explains why the panel accepts the estimates.",
+   "answer": "D",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The shift from past had questioned to present now accepts is justified by the change in time. After is a preposition and correctly takes the gerund examining; the sentence has no error.\n\nIndependent check: The sentence is grammatically correct: the opening concessive clause is complete, and “having found” appropriately explains why the panel accepts the estimates.",
+ "solution": "The shift from past “had questioned” to present “now accepts” is justified by the change in time. “Having found” correctly explains why the panel accepts the estimates, so there is no error.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Choose the part containing an error; choose No error if the sentence is correct. **(A)** Although the panel had questioned the figures when they were first released, / **(B)** it now accepts the revised estimates, having found no evidence of manipulation / **(C)** after examining the underlying records.",
+  "options": [
+   "Part (A)",
+   "Part (B)",
+   "Part (C)",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "The shift from past had questioned to present now accepts is justified by the change in time. After is a preposition and correctly takes the gerund examining; the sentence has no error.",
+  "distractor_notes": "A mistakes a justified tense shift for an error; B misidentifies a correct participial phrase; C misidentifies a correct gerund after a preposition."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

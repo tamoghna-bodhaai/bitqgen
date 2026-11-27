@@ -1,0 +1,68 @@
+{
+ "qno": 76,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 76,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Group 15 hydrides",
+  "archetype": "statement evaluation",
+  "brief": "Evaluate statements on NH3, PH3, AsH3 regarding thermal stability, reducing character and bond angle trends down the group; pick the correct combination.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:46",
+   "2021:76",
+   "2023s2:41"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the following statements about Group 15 hydrides: I. Thermal stability follows $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. II. Reducing character follows $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. III. Bond angle follows $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. Which statements are correct?",
+ "options": [
+  "I and III only",
+  "II only",
+  "I only",
+  "II and III only"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Thermal stability decreases down the group, so I is true. Reducing character increases down the group, so II is false. Bond angle decreases from NH₃ to AsH₃, so III is true.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Thermal stability decreases down the group: $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. Reducing character increases down the group, so II is false. Bond angle decreases down the group: $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. Hence I and III only.\n\nIndependent check: Thermal stability decreases down the group, so I is true. Reducing character increases down the group, so II is false. Bond angle decreases from NH₃ to AsH₃, so III is true.",
+ "solution": "Thermal stability decreases down Group 15, so $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$; I is true. Reducing character increases down the group, making II false, while bond angle decreases down the group, so III is true. Hence, I and III only.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Consider the following statements about Group 15 hydrides: I. Thermal stability follows $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. II. Reducing character follows $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. III. Bond angle follows $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. Which statements are correct?",
+  "options": [
+   "I only",
+   "II only",
+   "I and III only",
+   "II and III only"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Thermal stability decreases down the group: $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. Reducing character increases down the group, so II is false. Bond angle decreases down the group: $\\text{NH}_3>\\text{PH}_3>\\text{AsH}_3$. Hence I and III only.",
+  "distractor_notes": "A: misses the correct bond-angle trend; B: treats the reducing-character trend as correct; D: includes false statement II and omits true statement I."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,56 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus with conjugates",
+  "archetype": "algebraic simplification",
+  "brief": "Simplify |z1 z2| / |z1| type expression or find a z satisfying a modulus equation using modulus-conjugate relations",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:118",
+   "2021:134",
+   "2024s2:117"
+  ],
+  "origin": "direct",
+  "bank_ref": "g571ac13d94fe"
+ },
+ "status": "ok",
+ "stem": "If a complex number \\(z\\) satisfies \\(z + |z| = 2 + 8i\\), then \\(|z|\\) equals",
+ "options": [
+  "8",
+  "17",
+  "15",
+  "13"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "D",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g571ac13d94fe (verified in job 20261127-122012-292e)"
+ ],
+ "working": "Let \\(z = re^{i\\theta}\\) so \\(|z|=r\\). Then \\(z+|z| = r(\\cos\\theta+1 + i\\sin\\theta) = 2+8i\\).\nEquate imaginary: \\(r\\sin\\theta = 8\\).\nEquate real: \\(r(\\cos\\theta+1) = 2 \\Rightarrow r\\cos\\theta = 2-r\\).\nSquare and add: \\((r\\sin\\theta)^2 + (r\\cos\\theta)^2 = 8^2 + (2-r)^2\\).\nLeft side is \\(r^2\\). Thus \\(r^2 = 64 + 4 - 4r + r^2\\).\nSimplifying, \\(68 - 4r = 0 \\Rightarrow r = 17\\).\nHence \\(|z| = 17\\).\n\nIndependent check: Let z=x+iy and r=|z|. Comparing imaginary parts gives y=8; real parts give x=2-r. Then r²=x²+64=(2-r)²+64, so r=17.",
+ "solution": "Let $z=x+iy$ and $r=|z|$. Equating real and imaginary parts gives $x=2-r$ and $y=8$.\n$$r^2=x^2+y^2=(2-r)^2+64$$\nHence $4r=68$, so $|z|=r=17$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g571ac13d94fe",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

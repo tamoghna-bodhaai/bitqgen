@@ -1,0 +1,68 @@
+{
+ "qno": 74,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 74,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Gibbs energy and equilibrium constant from cell EMF",
+  "archetype": "single-formula numerical",
+  "brief": "Given E°cell for a specified n-electron cell at a non-standard temperature, compute ΔG° and K via ΔG° = −nFE° = −RT lnK — careful unit/log arithmetic.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:59",
+   "2026s1:43",
+   "2024s2:52"
+  ]
+ },
+ "status": "ok",
+ "stem": "At $400\\ \\text{K}$, a cell with $n=2$ has $E^\\circ_{\\text{cell}}=0.1587\\ \\text{V}$. Find $(\\Delta G^\\circ, K)$. Take $F=96500\\ \\text{C mol}^{-1}$ and $R=8.314\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+ "options": [
+  "$(-30.6\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^4)$",
+  "$(-15.3\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^2)$",
+  "$(+30.6\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^{-4})$",
+  "$(-30.6\\ \\text{kJ mol}^{-1},\\ 2.3\\times10^5)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "ΔG° = −nFE° = −(2)(96500)(0.1587) = −30.6 kJ mol⁻¹. Then ln K = −ΔG°/(RT) ≈ 9.21, so K ≈ 1.00 × 10⁴.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.1587)=-30.629\\ \\text{kJ mol}^{-1}$. $\\log_{10}K=\\dfrac{nFE^\\circ}{2.303RT}=\\dfrac{30629.1}{2.303(8.314)(400)}\\approx4.00$; $K\\approx1.00\\times10^4$.\n\nIndependent check: ΔG° = −nFE° = −(2)(96500)(0.1587) = −30.6 kJ mol⁻¹. Then ln K = −ΔG°/(RT) ≈ 9.21, so K ≈ 1.00 × 10⁴.",
+ "solution": "$\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.1587)=-30.6\\ \\text{kJ mol}^{-1}$.\n$$\\log_{10}K=\\frac{nFE^\\circ}{2.303RT}=\\frac{30629.1}{2.303(8.314)(400)}\\approx4.00$$\nHence, $K\\approx1.00\\times10^4$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "At $400\\ \\text{K}$, a cell with $n=2$ has $E^\\circ_{\\text{cell}}=0.1587\\ \\text{V}$. Find $(\\Delta G^\\circ, K)$. Take $F=96500\\ \\text{C mol}^{-1}$ and $R=8.314\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+  "options": [
+   "$(-30.6\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^4)$",
+   "$(-15.3\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^2)$",
+   "$(+30.6\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^{-4})$",
+   "$(-30.6\\ \\text{kJ mol}^{-1},\\ 2.3\\times10^5)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.1587)=-30.629\\ \\text{kJ mol}^{-1}$. $\\log_{10}K=\\dfrac{nFE^\\circ}{2.303RT}=\\dfrac{30629.1}{2.303(8.314)(400)}\\approx4.00$; $K\\approx1.00\\times10^4$.",
+  "distractor_notes": "B: omits the electron number $n$ in both calculations; C: reverses the sign of $\\Delta G^\\circ$ and the corresponding equilibrium direction; D: uses $298\\ \\text{K}$ instead of the given temperature for $K$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

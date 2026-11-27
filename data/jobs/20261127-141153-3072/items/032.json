@@ -1,0 +1,68 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Magnetic field due to finite wire / polygon loop",
+  "archetype": "superposition numerical",
+  "brief": "Regular polygonal current loop (e.g., square or hexagon) or a two-wire setup; superpose fields from the sides/wires at the centre and find the net magnetic field, possibly using a stated limiting-case check.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:8",
+   "2026s1:2",
+   "2025s2:22"
+  ]
+ },
+ "status": "ok",
+ "stem": "A square loop of side $0.40\\ \\text{m}$ carries a current of $5.0\\ \\text{A}$. Find the magnitude of the magnetic field at its centre. Take $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.",
+ "options": [
+  "$5.0\\times10^{-6}\\sqrt{2}\\ \\text{T}$",
+  "$1.0\\times10^{-5}\\ \\text{T}$",
+  "$1.0\\times10^{-5}\\sqrt{2}\\ \\text{T}$",
+  "$2.0\\times10^{-5}\\sqrt{2}\\ \\text{T}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Each side contributes \\(B_1=\\frac{\\mu_0 I\\sqrt{2}}{2\\pi a}\\) at the centre. Thus \\(B=4B_1=\\frac{2\\mu_0 I\\sqrt{2}}{\\pi a}=1.0\\times10^{-5}\\sqrt{2}\\,\\text{T}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$B=4\\left[\\dfrac{\\mu_0 I}{4\\pi(a/2)}(2\\sin45^\\circ)\\right]=\\dfrac{2\\sqrt{2}\\mu_0 I}{\\pi a}=1.0\\times10^{-5}\\sqrt{2}\\ \\text{T}$\n\nIndependent check: Each side contributes \\(B_1=\\frac{\\mu_0 I\\sqrt{2}}{2\\pi a}\\) at the centre. Thus \\(B=4B_1=\\frac{2\\mu_0 I\\sqrt{2}}{\\pi a}=1.0\\times10^{-5}\\sqrt{2}\\,\\text{T}\\).",
+ "solution": "The field due to a finite straight wire is $B_1=\\frac{\\mu_0 I}{4\\pi r}(\\sin\\theta_1+\\sin\\theta_2)$. Here $r=a/2$ and $\\theta_1=\\theta_2=45^\\circ$, so\n$$B=4B_1=\\frac{2\\sqrt{2}\\mu_0 I}{\\pi a}=1.0\\times10^{-5}\\sqrt{2}\\ \\text{T}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A square loop of side $0.40\\ \\text{m}$ carries a current of $5.0\\ \\text{A}$. Find the magnitude of the magnetic field at its centre. Take $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.",
+  "options": [
+   "$5.0\\times10^{-6}\\sqrt{2}\\ \\text{T}$",
+   "$1.0\\times10^{-5}\\ \\text{T}$",
+   "$1.0\\times10^{-5}\\sqrt{2}\\ \\text{T}$",
+   "$2.0\\times10^{-5}\\sqrt{2}\\ \\text{T}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$B=4\\left[\\dfrac{\\mu_0 I}{4\\pi(a/2)}(2\\sin45^\\circ)\\right]=\\dfrac{2\\sqrt{2}\\mu_0 I}{\\pi a}=1.0\\times10^{-5}\\sqrt{2}\\ \\text{T}$",
+  "distractor_notes": "A: counts only two of the four sides; B: uses an incorrect value for the $45^\\circ$ angle factor; D: doubles the total field."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

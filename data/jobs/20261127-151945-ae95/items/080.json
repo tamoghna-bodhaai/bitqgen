@@ -1,0 +1,79 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Molar conductivity vs √C",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:55",
+   "2023s2:49",
+   "2026s2:59"
+  ],
+  "origin": "variant",
+  "bank_ref": "g7cab2e33b424"
+ },
+ "status": "ok",
+ "stem": "For the aqueous electrolytes in the figure, which one permits reliable extrapolation of a straight-line $\\Lambda_m$ vs $\\sqrt C$ plot?",
+ "options": [
+  "HCl, because it is a strong electrolyte",
+  "CH$_3$COOH, because it is a weak electrolyte",
+  "Both, because dilution makes both fully ionised",
+  "Neither, because $\\Lambda_m$ is nonlinear for both"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q080_stem_v0.png",
+  "width_pct": 21,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Kohlrausch’s law gives an approximately straight-line Λm versus √C relation for strong electrolytes at low concentrations. HCl is strong; CH₃COOH is weak and its changing ionisation makes the plot nonlinear.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\u0003Lambda_m=\u0003Lambda_m^0-K\u0003sqrt C$ approximately for strong electrolytes at low concentration.\nHCl is a strong electrolyte; CH$_3$COOH is weak and has a nonlinear plot due to changing ionisation.\n\nIndependent check: Kohlrausch’s law gives an approximately straight-line Λm versus √C relation for strong electrolytes at low concentrations. HCl is strong; CH₃COOH is weak and its changing ionisation makes the plot nonlinear.",
+ "solution": "For strong electrolytes at low concentration, Kohlrausch’s law gives $\\Lambda_m=\\Lambda_m^0-K\\sqrt C$, an approximately linear relation.\nHCl is a strong electrolyte, whereas CH$_3$COOH has changing ionisation and a nonlinear plot.\nHence, extrapolation is reliable for HCl.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the aqueous electrolytes in the figure, which one permits reliable extrapolation of a straight-line $\\Lambda_m$ vs $\\sqrt C$ plot?",
+  "options": [
+   "HCl, because it is a strong electrolyte",
+   "CH$_3$COOH, because it is a weak electrolyte",
+   "Both, because dilution makes both fully ionised",
+   "Neither, because $\\Lambda_m$ is nonlinear for both"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw two separate chemical structures side by side. Label the left structure “HCl” and show H—Cl. Label the right structure “CH₃COOH” and show CH₃—C(=O)—OH.",
+   "smiles": "[H]Cl.CC(=O)O"
+  },
+  "difficulty_estimate": 2,
+  "working": "$\u0003Lambda_m=\u0003Lambda_m^0-K\u0003sqrt C$ approximately for strong electrolytes at low concentration.\nHCl is a strong electrolyte; CH$_3$COOH is weak and has a nonlinear plot due to changing ionisation.",
+  "distractor_notes": "B: assumes the weak electrolyte follows the strong-electrolyte linear relation. C: assumes dilution makes a weak electrolyte fully ionised at finite concentration. D: incorrectly rejects the approximate linear relation for strong electrolytes."
+ },
+ "variant_of": "g7cab2e33b424",
+ "author_model": "openai/gpt-6-luna-pro"
+}

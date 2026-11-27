@@ -1,0 +1,71 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "rms speed vs molar mass",
+  "archetype": "proportionality-scaling",
+  "brief": "Compare rms speeds of two gases at the same temperature using v ∝ 1/√M.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:28",
+   "2025s1:23",
+   "2024s2:23"
+  ],
+  "origin": "variant",
+  "bank_ref": "g4fb94c14c618"
+ },
+ "status": "ok",
+ "stem": "Ammonia and hydrogen sulfide gases are maintained at the same temperature. Their molar masses are $17\\ \\text{g mol}^{-1}$ and $34\\ \\text{g mol}^{-1}$, respectively. What is the ratio of their rms speeds, $v_{\\text{NH}_3}/v_{\\text{H}_2\\text{S}}$?",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{\\sqrt{2}}$",
+  "$2$",
+  "$\\sqrt{2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At the same temperature, rms speed is inversely proportional to the square root of molar mass. Hence the ratio is √(34/17) = √2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_{\\mathrm{rms}}\\propto\\dfrac{1}{\\sqrt{M}}$ at the same temperature.\n$\\dfrac{v_{\\text{NH}_3}}{v_{\\text{H}_2\\text{S}}}=\\sqrt{\\dfrac{M_{\\text{H}_2\\text{S}}}{M_{\\text{NH}_3}}}=\\sqrt{\\dfrac{34}{17}}=\\sqrt{2}$\n\nIndependent check: At the same temperature, rms speed is inversely proportional to the square root of molar mass. Hence the ratio is √(34/17) = √2.",
+ "solution": "At the same temperature, $v_{\\mathrm{rms}}\\propto\\dfrac{1}{\\sqrt{M}}$.\n$$\\frac{v_{\\text{NH}_3}}{v_{\\text{H}_2\\text{S}}}=\\sqrt{\\frac{M_{\\text{H}_2\\text{S}}}{M_{\\text{NH}_3}}}=\\sqrt{\\frac{34}{17}}=\\sqrt{2}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Ammonia and hydrogen sulfide gases are maintained at the same temperature. Their molar masses are $17\\ \\text{g mol}^{-1}$ and $34\\ \\text{g mol}^{-1}$, respectively. What is the ratio of their rms speeds, $v_{\\text{NH}_3}/v_{\\text{H}_2\\text{S}}$?",
+  "options": [
+   "$\\sqrt{2}$",
+   "$\\dfrac{1}{\\sqrt{2}}$",
+   "$2$",
+   "$\\dfrac{1}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$v_{\\mathrm{rms}}\\propto\\dfrac{1}{\\sqrt{M}}$ at the same temperature.\n$\\dfrac{v_{\\text{NH}_3}}{v_{\\text{H}_2\\text{S}}}=\\sqrt{\\dfrac{M_{\\text{H}_2\\text{S}}}{M_{\\text{NH}_3}}}=\\sqrt{\\dfrac{34}{17}}=\\sqrt{2}$",
+  "distractor_notes": "B: takes the molar-mass ratio in the wrong order. C: uses the molar-mass ratio directly instead of its square root. D: uses the reciprocal molar-mass ratio directly instead of its square root."
+ },
+ "variant_of": "g4fb94c14c618",
+ "author_model": "openai/gpt-6-luna-pro"
+}

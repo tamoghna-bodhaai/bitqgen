@@ -18,12 +18,12 @@
   ]
  },
  "status": "ok",
- "stem": "During the titration of a strong acid with a strong base, the burette is rinsed with the titrant after washing with water. This is done to:",
+ "stem": "Aqueous $\\text{NaOH}$ is used to titrate $\\text{HCl}$. Which choice gives a suitable indicator and correct burette-rinsing practice?",
  "options": [
-  "prevent dilution of the titrant by residual water",
-  "remove air bubbles trapped inside the burette tip",
-  "neutralize acidic or basic residues on the glass",
-  "facilitate smooth delivery of liquid from the stopcock"
+  "Use phenolphthalein in the flask; rinse the burette with $\\text{NaOH}$ to prevent dilution by residual water.",
+  "Use starch in the flask; rinse the burette with $\\text{NaOH}$ to prevent dilution by residual water.",
+  "Use phenolphthalein in the flask; rinse the burette with $\\text{HCl}$ to prevent dilution by residual water.",
+  "Use litmus in the flask; rinse the burette with distilled water to prevent dilution by residual water."
  ],
  "answer": "A",
  "figure": null,
@@ -32,10 +32,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Water left after washing dilutes the titrant, lowering its effective concentration (~1% error for 0.5 mL residual water in 50 mL of 0.1 M titrant) and causing titre errors. Rinsing with titrant replaces the water film so concentration stays exact. Air bubbles are removed by draining, not rinsing; C and D are not the purpose.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Phenolphthalein is suitable for an HCl–NaOH titration. Rinse the burette with the solution it will contain, NaOH, to avoid dilution by residual water.",
    "answer": "A",
-   "confidence": 0.98,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -43,23 +43,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "In volumetric analysis, after washing the burette with distilled water, droplets of water remain adhering to the interior glass walls. If the titrant is introduced directly, this residual water will dilute the titrant, decreasing its concentration and leading to an overestimation of the titre value. Rinsing the burette with small portions of the titrant solution coats the walls with the titrant itself, ensuring that the concentration of the solution placed in the burette remains strictly unaltered.\n\nIndependent check: Water left after washing dilutes the titrant, lowering its effective concentration (~1% error for 0.5 mL residual water in 50 mL of 0.1 M titrant) and causing titre errors. Rinsing with titrant replaces the water film so concentration stays exact. Air bubbles are removed by draining, not rinsing; C and D are not the purpose.",
+ "working": "Phenolphthalein gives a clear endpoint in a strong acid–strong base titration.\nResidual water in the burette would dilute its contents.\nRinsing with the titrant, $\\text{NaOH}$, avoids changing its concentration.\n\nIndependent check: Phenolphthalein is suitable for an HCl–NaOH titration. Rinse the burette with the solution it will contain, NaOH, to avoid dilution by residual water.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "During the titration of a strong acid with a strong base, the burette is rinsed with the titrant after washing with water. This is done to:",
+  "stem": "Aqueous $\\text{NaOH}$ is used to titrate $\\text{HCl}$. Which choice gives a suitable indicator and correct burette-rinsing practice?",
   "options": [
-   "prevent dilution of the titrant by residual water",
-   "remove air bubbles trapped inside the burette tip",
-   "neutralize acidic or basic residues on the glass",
-   "facilitate smooth delivery of liquid from the stopcock"
+   "Use phenolphthalein in the flask; rinse the burette with $\\text{NaOH}$ to prevent dilution by residual water.",
+   "Use starch in the flask; rinse the burette with $\\text{NaOH}$ to prevent dilution by residual water.",
+   "Use phenolphthalein in the flask; rinse the burette with $\\text{HCl}$ to prevent dilution by residual water.",
+   "Use litmus in the flask; rinse the burette with distilled water to prevent dilution by residual water."
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "In volumetric analysis, after washing the burette with distilled water, droplets of water remain adhering to the interior glass walls. If the titrant is introduced directly, this residual water will dilute the titrant, decreasing its concentration and leading to an overestimation of the titre value. Rinsing the burette with small portions of the titrant solution coats the walls with the titrant itself, ensuring that the concentration of the solution placed in the burette remains strictly unaltered.",
-  "distractor_notes": "Option B confuses the pre-rinse with the subsequent step of opening the stopcock fully to expel air bubbles from the jet tip.\nOption C incorrectly treats rinsing with titrant as a cleaning/neutralization step; residues must be removed beforehand by proper washing.\nOption D confuses chemical rinsing with the mechanical operation or lubrication of the stopcock.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Phenolphthalein gives a clear endpoint in a strong acid–strong base titration.\nResidual water in the burette would dilute its contents.\nRinsing with the titrant, $\\text{NaOH}$, avoids changing its concentration.",
+  "distractor_notes": "B: starch is not a suitable acid–base indicator. C: rinsing with the analyte instead of the titrant contaminates the burette contents. D: litmus gives no sharp endpoint, and a water rinse leaves dilution risk."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -1,0 +1,70 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Derivatives of inverse trig functions",
+  "archetype": "simplify then differentiate",
+  "brief": "Differentiate an inverse trig composite, e.g. tan⁻¹(something) or sin⁻¹(2x/(1+x²)); apply chain rule with the standard derivative formula.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:124",
+   "2026s2:125",
+   "2022:125"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $f(x)=\\sin^{-1}\\!\\left(\\dfrac{2x}{1+x^2}\\right)$, where $-1<x<1$, find $f'\\!\\left(\\dfrac{1}{3}\\right)$.",
+ "options": [
+  "$\\dfrac{5}{4}$",
+  "$\\dfrac{9}{4}$",
+  "$\\dfrac{9}{5}$",
+  "$\\dfrac{18}{5}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since \\(\\sin^{-1}\\!\\left(\\frac{2x}{1+x^2}\\right)=2\\tan^{-1}x\\) for \\(-1<x<1\\), \\(f'(x)=\\frac{2}{1+x^2}\\). Thus \\(f'(1/3)=\\frac95\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\sqrt{1-\\left(\\frac{2x}{1+x^2}\\right)^2}=\\frac{1-x^2}{1+x^2}\\quad(-1<x<1)$$\n$$f'(x)=\\frac{2(1-x^2)}{(1+x^2)^2}\\cdot\\frac{1+x^2}{1-x^2}=\\frac{2}{1+x^2}$$\n$$f'\\!\\left(\\frac13\\right)=\\frac{2}{1+1/9}=\\frac95$$\n\nIndependent check: Since \\(\\sin^{-1}\\!\\left(\\frac{2x}{1+x^2}\\right)=2\\tan^{-1}x\\) for \\(-1<x<1\\), \\(f'(x)=\\frac{2}{1+x^2}\\). Thus \\(f'(1/3)=\\frac95\\).",
+ "solution": "Using the chain rule and $-1<x<1$,\n$$f'(x)=\\frac{\\frac{2(1-x^2)}{(1+x^2)^2}}{\\sqrt{1-\\left(\\frac{2x}{1+x^2}\\right)^2}}=\\frac{2}{1+x^2}.$$\nHence, $f'\\!\\left(\\frac13\\right)=\\frac{2}{1+1/9}=\\frac95$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $f(x)=\\sin^{-1}\\!\\left(\\dfrac{2x}{1+x^2}\\right)$, where $-1<x<1$, find $f'\\!\\left(\\dfrac{1}{3}\\right)$.",
+  "options": [
+   "$\\dfrac{5}{4}$",
+   "$\\dfrac{9}{5}$",
+   "$\\dfrac{9}{4}$",
+   "$\\dfrac{18}{5}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$\\sqrt{1-\\left(\\frac{2x}{1+x^2}\\right)^2}=\\frac{1-x^2}{1+x^2}\\quad(-1<x<1)$$\n$$f'(x)=\\frac{2(1-x^2)}{(1+x^2)^2}\\cdot\\frac{1+x^2}{1-x^2}=\\frac{2}{1+x^2}$$\n$$f'\\!\\left(\\frac13\\right)=\\frac{2}{1+1/9}=\\frac95$$",
+  "distractor_notes": "A: Omits the derivative of the inner function. C: Uses $2/(1-x^2)$ instead of the simplified derivative. D: Introduces an extra factor of $2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

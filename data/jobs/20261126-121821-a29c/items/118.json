@@ -20,14 +20,14 @@
   ]
  },
  "status": "ok",
- "stem": "Which statement is logically equivalent to $\neg[p\\wedge(q\\vee r)]$?",
+ "stem": "For propositions $p$, $q$ and $r$, which statement is logically equivalent to $\neg[p\\wedge(q\\vee r)]$?",
  "options": [
-  "$\neg p\\vee(\neg q\\wedge\neg r)$",
   "$\neg p\\wedge(\neg q\\vee\neg r)$",
+  "$\neg p\\vee(\neg q\\wedge\neg r)$",
   "$p\\vee(\neg q\\wedge\neg r)$",
   "$\neg p\\vee(\neg q\\vee\neg r)$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -35,22 +35,24 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "By De Morgan’s laws, ¬[p ∧ (q ∨ r)] = ¬p ∨ (¬q ∧ ¬r), which is option A.",
+   "working": "By De Morgan’s law, ¬[p ∧ (q ∨ r)] = ¬p ∨ (¬q ∧ ¬r).",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
-   "issues": [],
+   "issues": [
+    "The negation symbols appear malformed in the text, but the intended notation is clear."
+   ],
    "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "$\\neg[p\\wedge(q\\vee r)]\\equiv\\neg p\\vee\\neg(q\\vee r)\\equiv\\neg p\\vee(\\neg q\\wedge\\neg r)$.\n\nIndependent check: By De Morgan’s laws, ¬[p ∧ (q ∨ r)] = ¬p ∨ (¬q ∧ ¬r), which is option A.",
- "solution": "",
+ "working": "$\\neg[p\\wedge(q\\vee r)]\\equiv\\neg p\\vee\\neg(q\\vee r)\\equiv\\neg p\\vee(\\neg q\\wedge\\neg r)$.\n\nIndependent check: By De Morgan’s law, ¬[p ∧ (q ∨ r)] = ¬p ∨ (¬q ∧ ¬r).",
+ "solution": "By De Morgan’s laws,\n$$\neg[p\\wedge(q\\vee r)]\\equiv\neg p\\vee\neg(q\\vee r)\\equiv\neg p\\vee(\neg q\\wedge\neg r).$$\nHence, the equivalent statement is (B).",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Which statement is logically equivalent to $\neg[p\\wedge(q\\vee r)]$?",
+  "stem": "For propositions $p$, $q$ and $r$, which statement is logically equivalent to $\neg[p\\wedge(q\\vee r)]$?",
   "options": [
    "$\neg p\\vee(\neg q\\wedge\neg r)$",
    "$\neg p\\wedge(\neg q\\vee\neg r)$",
@@ -62,7 +64,7 @@
   "figure": null,
   "difficulty_estimate": 2,
   "working": "$\\neg[p\\wedge(q\\vee r)]\\equiv\\neg p\\vee\\neg(q\\vee r)\\equiv\\neg p\\vee(\\neg q\\wedge\\neg r)$.",
-  "distractor_notes": "B: uses the wrong outer connective; C: omits the negation of $p$; D: uses the wrong connective after applying De Morgan's law."
+  "distractor_notes": "B: uses the wrong outer connective. C: omits the negation on $p$. D: uses the wrong connective after applying De Morgan's law to $(q\\vee r)$."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

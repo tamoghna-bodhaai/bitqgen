@@ -1,0 +1,71 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Spring combinations",
+  "archetype": "equivalent spring constant",
+  "brief": "Two springs in series (or parallel); find the equivalent spring constant and the resulting time period of an attached mass.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:3",
+   "2023s1:24",
+   "2025s1:13"
+  ],
+  "origin": "variant",
+  "bank_ref": "g3172c162a288"
+ },
+ "status": "ok",
+ "stem": "Two light springs of force constants $40$ N m$^{-1}$ and $80$ N m$^{-1}$ are connected in parallel between a cart of mass $3$ kg and a rigid support. For small oscillations, what are the equivalent spring constant and the time period?",
+ "options": [
+  "$120$ N m$^{-1}$; $\\dfrac{1}{\\sqrt{40}}$ s",
+  "$\\dfrac{80}{3}$ N m$^{-1}$; $\\dfrac{3\\pi}{2\\sqrt{5}}$ s",
+  "$80$ N m$^{-1}$; $2\\pi\\sqrt{\\dfrac{3}{80}}$ s",
+  "$120$ N m$^{-1}$; $\\dfrac{\\pi}{\\sqrt{10}}$ s"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For parallel springs, the equivalent constant is the sum: k_eq = 40 + 80 = 120 N m^-1. The period is T = 2π√(3/120) = π/√10 s.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$k_{\\rm eq}=k_1+k_2=40+80=120$ N m$^{-1}$\n$T=2\\pi\\sqrt{\\dfrac{m}{k_{\\rm eq}}}=2\\pi\\sqrt{\\dfrac{3}{120}}=\\dfrac{\\pi}{\\sqrt{10}}$ s\n\nIndependent check: For parallel springs, the equivalent constant is the sum: k_eq = 40 + 80 = 120 N m^-1. The period is T = 2π√(3/120) = π/√10 s.",
+ "solution": "For springs in parallel, $k_{\\rm eq}=k_1+k_2=40+80=120\\,\\text{N m}^{-1}$.\n$$T=2\\pi\\sqrt{\\frac{m}{k_{\\rm eq}}}=2\\pi\\sqrt{\\frac{3}{120}}=\\frac{\\pi}{\\sqrt{10}}\\,\\text{s}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Two light springs of force constants $40$ N m$^{-1}$ and $80$ N m$^{-1}$ are connected in parallel between a cart of mass $3$ kg and a rigid support. For small oscillations, what are the equivalent spring constant and the time period?",
+  "options": [
+   "$120$ N m$^{-1}$; $\\dfrac{\\pi}{\\sqrt{10}}$ s",
+   "$\\dfrac{80}{3}$ N m$^{-1}$; $\\dfrac{3\\pi}{2\\sqrt{5}}$ s",
+   "$80$ N m$^{-1}$; $2\\pi\\sqrt{\\dfrac{3}{80}}$ s",
+   "$120$ N m$^{-1}$; $\\dfrac{1}{\\sqrt{40}}$ s"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$k_{\\rm eq}=k_1+k_2=40+80=120$ N m$^{-1}$\n$T=2\\pi\\sqrt{\\dfrac{m}{k_{\\rm eq}}}=2\\pi\\sqrt{\\dfrac{3}{120}}=\\dfrac{\\pi}{\\sqrt{10}}$ s",
+  "distractor_notes": "B: uses the series formula for the equivalent constant. C: uses only the stiffer spring. D: omits the factor $2\\pi$ in the period."
+ },
+ "variant_of": "g3172c162a288",
+ "author_model": "openai/gpt-6-luna-pro"
+}

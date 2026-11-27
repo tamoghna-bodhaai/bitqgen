@@ -1,0 +1,68 @@
+{
+ "qno": 66,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 66,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor and complexes / isotonic solutions",
+  "archetype": "single-formula numerical",
+  "brief": "Compare osmotic pressure of an electrolyte/complex solution with a given dissociation/association degree against a nonelectrolyte; solve for i and then concentration — hard multi-step colligative computation.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:77",
+   "2026s1:44",
+   "2026s2:41"
+  ]
+ },
+ "status": "ok",
+ "stem": "At the same temperature, a solution of $\\text{[Co(NH}_3\\text{)}_5\\text{Cl]Cl}_2$ is isotonic with $0.50\\ \\text{M}$ glucose. The salt dissociates as $\\text{[Co(NH}_3\\text{)}_5\\text{Cl]}^{2+}+2\\text{Cl}^-$. If $75\\%$ dissociates, what is its concentration?",
+ "options": [
+  "$0.200\\ \\text{mol L}^{-1}$",
+  "$0.167\\ \\text{mol L}^{-1}$",
+  "$0.154\\ \\text{mol L}^{-1}$",
+  "$0.286\\ \\text{mol L}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the salt, the van’t Hoff factor is i = 1 + (3 − 1)(0.75) = 2.5. Isotonicity gives 2.5C = 0.50, so C = 0.200 mol L⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$i=1+\\alpha(\\nu-1)=1+0.75(3-1)=2.5$; isotonicity gives $iC=0.50$; $C=\\dfrac{0.50}{2.5}=0.200\\ \\text{mol L}^{-1}$.\n\nIndependent check: For the salt, the van’t Hoff factor is i = 1 + (3 − 1)(0.75) = 2.5. Isotonicity gives 2.5C = 0.50, so C = 0.200 mol L⁻¹.",
+ "solution": "The salt produces $3$ ions on complete dissociation, so $i=1+\\alpha(3-1)=1+0.75(2)=2.5$. For isotonic solutions, $iC=0.50$, hence $C=\\dfrac{0.50}{2.5}=0.200\\ \\text{mol L}^{-1}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "At the same temperature, a solution of $\\text{[Co(NH}_3\\text{)}_5\\text{Cl]Cl}_2$ is isotonic with $0.50\\ \\text{M}$ glucose. The salt dissociates as $\\text{[Co(NH}_3\\text{)}_5\\text{Cl]}^{2+}+2\\text{Cl}^-$. If $75\\%$ dissociates, what is its concentration?",
+  "options": [
+   "$0.154\\ \\text{mol L}^{-1}$",
+   "$0.167\\ \\text{mol L}^{-1}$",
+   "$0.200\\ \\text{mol L}^{-1}$",
+   "$0.286\\ \\text{mol L}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$i=1+\\alpha(\\nu-1)=1+0.75(3-1)=2.5$; isotonicity gives $iC=0.50$; $C=\\dfrac{0.50}{2.5}=0.200\\ \\text{mol L}^{-1}$.",
+  "distractor_notes": "A: counts four particles on dissociation; B: assumes complete dissociation; D: counts only one additional particle per dissociation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

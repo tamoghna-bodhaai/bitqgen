@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "What is the reduction potential of a copper electrode dipped in a $0.01\\ \\text{M}\\ \\text{Cu}^{2+}$ solution at $298\\ \\text{K}$? (Given: $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\ \\text{V}$ and $\\dfrac{2.303RT}{F} = 0.059\\ \\text{V}$)",
+ "stem": "At $298\\ \\text{K}$, a hydrogen electrode has pH $2$ and hydrogen pressure $1\\ \\text{bar}$. Find its reduction potential. Take $E^\\circ=0\\ \\text{V}$ and $2.303RT/F=0.059\\ \\text{V}$.",
  "options": [
-  "$-0.281\\ \\text{V}$",
-  "$+0.222\\ \\text{V}$",
-  "$+0.281\\ \\text{V}$",
-  "$+0.399\\ \\text{V}$"
+  "$-0.236\\ \\text{V}$",
+  "$-0.118\\ \\text{V}$",
+  "$+0.118\\ \\text{V}$",
+  "$+0.236\\ \\text{V}$"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Nernst: E = E° + (0.059/n) log[Cu²⁺] with n = 2. log(0.01) = −2, so E = 0.34 + (0.059/2)(−2) = 0.34 − 0.059 = +0.281 V.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For $2H^+ + 2e^- \\to H_2$, $E=-(0.059/2)\\log\\!\\left(p_{H_2}/[H^+]^2\\right)$. With $p_{H_2}=1$ bar and $[H^+]=10^{-2}$, $E=-0.118\\,\\text{V}$.",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The half-cell reduction reaction is:\n$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$\n\nHere, the number of electrons transferred is $n = 2$.\n\nApplying the Nernst equation at $298\\ \\text{K}$:\n$$E = E^\\circ - \\dfrac{0.059}{n}\\log_{10}\\left(\\dfrac{1}{[\\text{Cu}^{2+}]}\\right)$$\n\nSubstitute the given values:\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}\\left(\\dfrac{1}{0.01}\\right)$$\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}(10^2)$$\n$$E = 0.34 - \\dfrac{0.059}{2} \\times 2$$\n$$E = 0.34 - 0.059 = +0.281\\ \\text{V}$$\n\nIndependent check: Nernst: E = E° + (0.059/n) log[Cu²⁺] with n = 2. log(0.01) = −2, so E = 0.34 + (0.059/2)(−2) = 0.34 − 0.059 = +0.281 V.",
- "solution": "",
+ "working": "$2\\text{H}^+ + 2e^- \\rightarrow \\text{H}_2$; $n=2$.\n$E=E^\\circ-\\dfrac{0.059}{2}\\log\\left(\\dfrac{P_{\\text{H}_2}}{[\\text{H}^+]^2}\\right)$\n$pH=2 \\Rightarrow [\\text{H}^+]=10^{-2}$; $P_{\\text{H}_2}=1$.\n$E=-\\dfrac{0.059}{2}\\log(10^4)=-0.118\\ \\text{V}$\n\nIndependent check: For $2H^+ + 2e^- \\to H_2$, $E=-(0.059/2)\\log\\!\\left(p_{H_2}/[H^+]^2\\right)$. With $p_{H_2}=1$ bar and $[H^+]=10^{-2}$, $E=-0.118\\,\\text{V}$.",
+ "solution": "For $2\\mathrm{H}^+ + 2e^- \\rightarrow \\mathrm{H}_2$, the Nernst equation is\n$$E=E^\\circ-\\frac{0.059}{2}\\log\\left(\\frac{P_{\\mathrm{H}_2}}{[\\mathrm{H}^+]^2}\\right).$$\nUsing $P_{\\mathrm{H}_2}=1$ bar and $[\\mathrm{H}^+]=10^{-2}$, $E=-\\frac{0.059}{2}\\log(10^4)=-0.118\\ \\text{V}$.",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "What is the reduction potential of a copper electrode dipped in a $0.01\\ \\text{M}\\ \\text{Cu}^{2+}$ solution at $298\\ \\text{K}$? (Given: $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\ \\text{V}$ and $\\dfrac{2.303RT}{F} = 0.059\\ \\text{V}$)",
+  "stem": "At $298\\ \\text{K}$, a hydrogen electrode has pH $2$ and hydrogen pressure $1\\ \\text{bar}$. Find its reduction potential. Take $E^\\circ=0\\ \\text{V}$ and $2.303RT/F=0.059\\ \\text{V}$.",
   "options": [
-   "$-0.281\\ \\text{V}$",
-   "$+0.222\\ \\text{V}$",
-   "$+0.281\\ \\text{V}$",
-   "$+0.399\\ \\text{V}$"
+   "$-0.236\\ \\text{V}$",
+   "$-0.118\\ \\text{V}$",
+   "$+0.118\\ \\text{V}$",
+   "$+0.236\\ \\text{V}$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The half-cell reduction reaction is:\n$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$\n\nHere, the number of electrons transferred is $n = 2$.\n\nApplying the Nernst equation at $298\\ \\text{K}$:\n$$E = E^\\circ - \\dfrac{0.059}{n}\\log_{10}\\left(\\dfrac{1}{[\\text{Cu}^{2+}]}\\right)$$\n\nSubstitute the given values:\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}\\left(\\dfrac{1}{0.01}\\right)$$\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}(10^2)$$\n$$E = 0.34 - \\dfrac{0.059}{2} \\times 2$$\n$$E = 0.34 - 0.059 = +0.281\\ \\text{V}$$",
-  "distractor_notes": "Option A encodes calculating the oxidation potential ($E_{\\text{ox}} = -E_{\\text{red}} = -0.281\\ \\text{V}$) instead of the reduction potential.\nOption B encodes forgetting that $n = 2$ and dividing by $n = 1$, yielding $0.34 - 0.118 = +0.222\\ \\text{V}$.\nOption D encodes a sign error in the Nernst equation (adding the logarithmic term instead of subtracting: $0.34 + 0.059 = +0.399\\ \\text{V}$).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$2\\text{H}^+ + 2e^- \\rightarrow \\text{H}_2$; $n=2$.\n$E=E^\\circ-\\dfrac{0.059}{2}\\log\\left(\\dfrac{P_{\\text{H}_2}}{[\\text{H}^+]^2}\\right)$\n$pH=2 \\Rightarrow [\\text{H}^+]=10^{-2}$; $P_{\\text{H}_2}=1$.\n$E=-\\dfrac{0.059}{2}\\log(10^4)=-0.118\\ \\text{V}$",
+  "distractor_notes": "A: Omits the factor of $2$ in the electron count. C: Uses the wrong sign for the concentration effect. D: Omits the factor of $2$ and uses the wrong sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

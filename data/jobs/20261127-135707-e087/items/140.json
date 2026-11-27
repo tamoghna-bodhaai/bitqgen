@@ -1,0 +1,68 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Line through intersection of lines",
+  "archetype": "family of lines",
+  "brief": "Find the equation of a line through the intersection of two given lines satisfying an extra condition (parallel/perpendicular to a third line).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:108",
+   "2025s2:115",
+   "2022:111"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the equation of the line through the intersection of $x-y=3$ and $2x+y=3$, perpendicular to $x-2y+4=0$.",
+ "options": [
+  "$2x+y-3=0$",
+  "$x-2y-4=0$",
+  "$x+2y=0$",
+  "$2x-y-5=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Solving the first two equations gives the intersection (2,-1). The line x-2y+4=0 has slope 1/2, so a perpendicular line has slope -2. Through (2,-1): y+1=-2(x-2), or 2x+y-3=0.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x-y=3,\\ 2x+y=3\\ \\Rightarrow\\ (x,y)=(2,-1)$. The given line has slope $\\dfrac{1}{2}$, so the required slope is $-2$. $y+1=-2(x-2)\\ \\Rightarrow\\ 2x+y-3=0$.\n\nIndependent check: Solving the first two equations gives the intersection (2,-1). The line x-2y+4=0 has slope 1/2, so a perpendicular line has slope -2. Through (2,-1): y+1=-2(x-2), or 2x+y-3=0.",
+ "solution": "Solving $x-y=3$ and $2x+y=3$ gives the intersection $(2,-1)$. The given line has slope $\\frac12$, so the perpendicular line has slope $-2$.\n$$y+1=-2(x-2)\\Rightarrow 2x+y-3=0$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the equation of the line through the intersection of $x-y=3$ and $2x+y=3$, perpendicular to $x-2y+4=0$.",
+  "options": [
+   "$x+2y=0$",
+   "$x-2y-4=0$",
+   "$2x+y-3=0$",
+   "$2x-y-5=0$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$x-y=3,\\ 2x+y=3\\ \\Rightarrow\\ (x,y)=(2,-1)$. The given line has slope $\\dfrac{1}{2}$, so the required slope is $-2$. $y+1=-2(x-2)\\ \\Rightarrow\\ 2x+y-3=0$.",
+  "distractor_notes": "A: uses the wrong perpendicular slope. B: gives the parallel line through the intersection. D: uses the reciprocal slope without the required negative sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

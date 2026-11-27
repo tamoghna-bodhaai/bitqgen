@@ -1,0 +1,70 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Binary system / circular orbit",
+  "archetype": "single-formula symbolic",
+  "brief": "For a satellite in circular orbit, express its total energy / orbital speed in terms of the planet's mass and orbital radius; ask for the value or a symbolic expression.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:13",
+   "2024s1:5",
+   "2024s1:17"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A satellite of mass $m$ moves in a circular orbit of radius $r$ around a planet of mass $M$. What is the satellite's total mechanical energy?",
+ "options": [
+  "$-\\dfrac{GMm}{r}$",
+  "$\\dfrac{GMm}{r}$",
+  "$\\dfrac{GMm}{2r}$",
+  "$-\\dfrac{GMm}{2r}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a circular orbit, v² = GM/r. Hence E = K + U = ½mv² − GMm/r = −GMm/(2r).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{mv^2}{r}=\\dfrac{GMm}{r^2}\\Rightarrow v^2=\\dfrac{GM}{r}$.<br>$E=K+U=\\dfrac12mv^2-\\dfrac{GMm}{r}=-\\dfrac{GMm}{2r}$.\n\nIndependent check: For a circular orbit, v² = GM/r. Hence E = K + U = ½mv² − GMm/r = −GMm/(2r).",
+ "solution": "For a circular orbit, gravitational force provides the centripetal force: $v^2=GM/r$.\n$$E=K+U=\\frac12mv^2-\\frac{GMm}{r}=-\\frac{GMm}{2r}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A satellite of mass $m$ moves in a circular orbit of radius $r$ around a planet of mass $M$. What is the satellite's total mechanical energy?",
+  "options": [
+   "$-\\dfrac{GMm}{r}$",
+   "$-\\dfrac{GMm}{2r}$",
+   "$\\dfrac{GMm}{2r}$",
+   "$\\dfrac{GMm}{r}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{mv^2}{r}=\\dfrac{GMm}{r^2}\\Rightarrow v^2=\\dfrac{GM}{r}$.<br>$E=K+U=\\dfrac12mv^2-\\dfrac{GMm}{r}=-\\dfrac{GMm}{2r}$.",
+  "distractor_notes": "A: gives the potential energy alone; C: omits the negative sign; D: gives the magnitude of the potential energy."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

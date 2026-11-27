@@ -1,0 +1,71 @@
+{
+ "qno": 40,
+ "section": "Physics",
+ "slot": {
+  "qno": 40,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Gauss's law and symmetry",
+  "archetype": "symmetry argument",
+  "brief": "Charged conductor or symmetric distribution (sphere/cylinder); use Gauss's law to reason where the field is zero or which surface encloses the charge — conceptual symmetry selection.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:6",
+   "2021:9",
+   "2023s1:8"
+  ],
+  "origin": "variant",
+  "bank_ref": "g97c1f60b13a2"
+ },
+ "status": "ok",
+ "stem": "An infinitely long uniformly charged wire coincides with the axis of a closed cylindrical Gaussian surface. Its flat ends are perpendicular to the wire. What fraction of the total electric flux passes through the curved surface?",
+ "options": [
+  "$1$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{2}{3}$",
+  "$0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The electric field of the wire is radial. It is parallel to the curved surface’s outward normal and perpendicular to the end-cap normals, so all flux passes through the curved surface.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\vec E$ is radial, so $\\vec E\\cdot d\\vec A=0$ on each flat end.\\\nThus all the flux crosses the curved surface: $\\dfrac{\\Phi_{\\text{curved}}}{\\Phi_{\\text{total}}}=1$.\n\nIndependent check: The electric field of the wire is radial. It is parallel to the curved surface’s outward normal and perpendicular to the end-cap normals, so all flux passes through the curved surface.",
+ "solution": "The field of an infinitely long charged wire is radial. It is perpendicular to the end-cap normals, so the flux through the flat ends is zero.\n$$\\frac{\\Phi_{\\text{curved}}}{\\Phi_{\\text{total}}}=1$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An infinitely long uniformly charged wire coincides with the axis of a closed cylindrical Gaussian surface. Its flat ends are perpendicular to the wire. What fraction of the total electric flux passes through the curved surface?",
+  "options": [
+   "$0$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{2}{3}$",
+   "$1$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\vec E$ is radial, so $\\vec E\\cdot d\\vec A=0$ on each flat end.\\\nThus all the flux crosses the curved surface: $\\dfrac{\\Phi_{\\text{curved}}}{\\Phi_{\\text{total}}}=1$.",
+  "distractor_notes": "A: Assumes the radial field is parallel to the end-face normals.\\\nB: Incorrectly divides the flux equally between the curved surface and the two ends.\\\nC: Assigns a nonzero fraction of the flux to the end faces."
+ },
+ "variant_of": "g97c1f60b13a2",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read-off parameters",
+  "brief": "Given a wave equation y = A sin(kx - ωt + φ), ask which option correctly lists amplitude, wavelength, and speed of the wave.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:16",
+   "2023s2:27",
+   "2021:20"
+  ],
+  "origin": "variant",
+  "bank_ref": "g37167aff7760"
+ },
+ "status": "ok",
+ "stem": "A transverse wave on a string is described by $y=0.06\\sin(5\\pi x-20\\pi t+\\pi/3)$, where $x$ and $y$ are in m and $t$ is in s. Which option gives its amplitude, wavelength and speed?",
+ "options": [
+  "$0.06$ m, $0.40$ m, $20\\pi$ m s$^{-1}$",
+  "$0.06$ m, $0.20$ m, $4.0$ m s$^{-1}$",
+  "$0.06$ m, $0.40$ m, $0.25$ m s$^{-1}$",
+  "$0.06$ m, $0.40$ m, $4.0$ m s$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A=0.06 m, k=5π rad/m, ω=20π rad/s. Thus λ=2π/k=0.40 m and v=ω/k=4.0 m s⁻¹.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=0.06$ m; $k=5\\pi$ rad m$^{-1}$, $\\omega=20\\pi$ rad s$^{-1}$. $\\lambda=\\dfrac{2\\pi}{k}=0.40$ m; $v=\\dfrac{\\omega}{k}=4.0$ m s$^{-1}$.\n\nIndependent check: A=0.06 m, k=5π rad/m, ω=20π rad/s. Thus λ=2π/k=0.40 m and v=ω/k=4.0 m s⁻¹.",
+ "solution": "Comparing with $y=A\\sin(kx-\\omega t+\\phi)$ gives $A=0.06$ m, $k=5\\pi$ rad m$^{-1}$ and $\\omega=20\\pi$ rad s$^{-1}$. \n$$\\lambda=\\frac{2\\pi}{k}=0.40\\text{ m},\\qquad v=\\frac{\\omega}{k}=4.0\\text{ m s}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A transverse wave on a string is described by $y=0.06\\sin(5\\pi x-20\\pi t+\\pi/3)$, where $x$ and $y$ are in m and $t$ is in s. Which option gives its amplitude, wavelength and speed?",
+  "options": [
+   "$0.06$ m, $0.40$ m, $4.0$ m s$^{-1}$",
+   "$0.06$ m, $0.20$ m, $4.0$ m s$^{-1}$",
+   "$0.06$ m, $0.40$ m, $0.25$ m s$^{-1}$",
+   "$0.06$ m, $0.40$ m, $20\\pi$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A=0.06$ m; $k=5\\pi$ rad m$^{-1}$, $\\omega=20\\pi$ rad s$^{-1}$. $\\lambda=\\dfrac{2\\pi}{k}=0.40$ m; $v=\\dfrac{\\omega}{k}=4.0$ m s$^{-1}$.",
+  "distractor_notes": "B: uses $\\pi/k$ instead of $2\\pi/k$ for wavelength. C: takes the reciprocal of $\\omega/k$ for speed. D: treats angular frequency as wave speed without dividing by $k$."
+ },
+ "variant_of": "g37167aff7760",
+ "author_model": "openai/gpt-6-luna-pro"
+}

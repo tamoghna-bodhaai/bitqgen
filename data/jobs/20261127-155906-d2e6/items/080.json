@@ -1,0 +1,70 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor and complexes",
+  "archetype": "single-formula numerical",
+  "brief": "Multi-step: identify dissociation (van 't Hoff factor) of a given electrolyte/complex, then compute osmotic pressure or boiling point elevation; combine formulas for a numeric answer.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:57",
+   "2026s1:44",
+   "2024s2:31"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Assuming complete dissociation, what is the boiling-point elevation of a $0.20\\ \\text{mol kg}^{-1}$ solution of $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$ in water? Take $K_b=0.52\\ \\text{K kg mol}^{-1}$.",
+ "options": [
+  "$0.104\\ \\text{K}$",
+  "$0.208\\ \\text{K}$",
+  "$0.312\\ \\text{K}$",
+  "$0.416\\ \\text{K}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Complete dissociation gives 3 ions per formula unit, so ΔT_b = iK_bm = 3(0.52)(0.20) = 0.312 K.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2\\to[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]^{2+}+2\\text{Cl}^-$.\\n$i=3$.\\n$\\Delta T_b=iK_bm=3(0.52)(0.20)=0.312\\ \\text{K}$.\n\nIndependent check: Complete dissociation gives 3 ions per formula unit, so ΔT_b = iK_bm = 3(0.52)(0.20) = 0.312 K.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Assuming complete dissociation, what is the boiling-point elevation of a $0.20\\ \\text{mol kg}^{-1}$ solution of $[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2$ in water? Take $K_b=0.52\\ \\text{K kg mol}^{-1}$.",
+  "options": [
+   "$0.104\\ \\text{K}$",
+   "$0.208\\ \\text{K}$",
+   "$0.312\\ \\text{K}$",
+   "$0.416\\ \\text{K}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]\\text{Cl}_2\\to[\\text{Co}(\\text{NH}_3)_5\\text{Cl}]^{2+}+2\\text{Cl}^-$.\\n$i=3$.\\n$\\Delta T_b=iK_bm=3(0.52)(0.20)=0.312\\ \\text{K}$.",
+  "distractor_notes": "A: assumes no dissociation, so $i=1$.\\nB: counts only two particles, overlooking the complex ion.\\nD: counts four particles instead of three."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

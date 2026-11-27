@@ -1,0 +1,68 @@
+{
+ "qno": 100,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 100,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-shift code",
+  "brief": "A word is coded by shifting each letter a fixed but non-uniform rule (e.g., alternate +1/+2); apply the same rule to a new word.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:71",
+   "2025s1:71",
+   "2025s1:88"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a code, letters in odd positions are shifted forward by one place in the alphabet, and letters in even positions by two places. If LAMP is coded as MCNR, how is FROG coded?",
+ "options": [
+  "GTPH",
+  "GTPI",
+  "HSPH",
+  "GUPI"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Apply +1 to odd positions and +2 to even positions: FROG → G T P I.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Odd positions: +1; even positions: +2. FROG → G (F+1), T (R+2), P (O+1), I (G+2) = GTPI.\n\nIndependent check: Apply +1 to odd positions and +2 to even positions: FROG → G T P I.",
+ "solution": "Odd-position letters shift by $+1$ and even-position letters by $+2$.\n$$FROG \\rightarrow (F+1)(R+2)(O+1)(G+2)=GTPI$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a code, letters in odd positions are shifted forward by one place in the alphabet, and letters in even positions by two places. If LAMP is coded as MCNR, how is FROG coded?",
+  "options": [
+   "GTPH",
+   "GTPI",
+   "HSPH",
+   "GUPI"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Odd positions: +1; even positions: +2. FROG → G (F+1), T (R+2), P (O+1), I (G+2) = GTPI.",
+  "distractor_notes": "A: shifts the last letter by one. C: applies an incorrect shift to the first and third letters. D: shifts the second letter by three."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

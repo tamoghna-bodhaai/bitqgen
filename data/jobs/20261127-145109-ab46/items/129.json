@@ -1,0 +1,70 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Linear DE integrating factor",
+  "archetype": "integrating factor",
+  "brief": "Solve a first-order linear ODE dy/dx + P(x)y = Q(x) where P is a simple function (e.g., 1/x or a constant) via the integrating factor; possibly with an initial condition.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:97",
+   "2023s2:103",
+   "2024s1:92"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Solve $\\dfrac{dy}{dx}+\\dfrac{y}{x}=\\ln x$, $x>0$, given $y(1)=1$. Find $y(2)$.",
+ "options": [
+  "$\\ln 2+\\dfrac{1}{8}$",
+  "$\\ln 2-\\dfrac{1}{8}$",
+  "$\\ln 2+\\dfrac{3}{8}$",
+  "$2\\ln 2+\\dfrac{1}{8}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Multiplying by the integrating factor x gives (xy)' = x ln x. Integrating: xy = (x²/2) ln x − x²/4 + C. The initial condition gives C = 5/4, hence y(2) = ln 2 + 1/8.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Integrating factor $=x$: $(xy)'=x\\ln x$. Hence $xy=\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{4}+C$. From $y(1)=1$, $C=\\dfrac54$. Thus $y(2)=\\ln2-\\dfrac12+\\dfrac58=\\ln2+\\dfrac18$.\n\nIndependent check: Multiplying by the integrating factor x gives (xy)' = x ln x. Integrating: xy = (x²/2) ln x − x²/4 + C. The initial condition gives C = 5/4, hence y(2) = ln 2 + 1/8.",
+ "solution": "The integrating factor is $x$, so $(xy)'=x\\ln x$.\n$$xy=\\frac{x^2}{2}\\ln x-\\frac{x^2}{4}+C$$\nUsing $y(1)=1$ gives $C=\\frac54$. Hence $y(2)=\\ln 2-\\frac12+\\frac58=\\ln 2+\\frac18$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Solve $\\dfrac{dy}{dx}+\\dfrac{y}{x}=\\ln x$, $x>0$, given $y(1)=1$. Find $y(2)$.",
+  "options": [
+   "$\\ln 2-\\dfrac{1}{8}$",
+   "$\\ln 2+\\dfrac{1}{8}$",
+   "$\\ln 2+\\dfrac{3}{8}$",
+   "$2\\ln 2+\\dfrac{1}{8}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Integrating factor $=x$: $(xy)'=x\\ln x$. Hence $xy=\\dfrac{x^2}{2}\\ln x-\\dfrac{x^2}{4}+C$. From $y(1)=1$, $C=\\dfrac54$. Thus $y(2)=\\ln2-\\dfrac12+\\dfrac58=\\ln2+\\dfrac18$.",
+  "distractor_notes": "A: sign error in combining the constant terms at $x=2$; C: uses an incorrect integration constant; D: misses the factor $1/2$ in the logarithmic term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "Definite integral of an odd or even trig function over symmetric limits; student uses symmetry then a standard result",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:130",
+   "2021:143",
+   "2025s1:99"
+  ],
+  "origin": "variant",
+  "bank_ref": "g4740584c15a7"
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_{-\\pi/3}^{\\pi/3}\\sin^2 x\\,dx$.",
+ "options": [
+  "$\\dfrac{\\pi}{3}+\\dfrac{\\sqrt{3}}{4}$",
+  "$\\dfrac{\\pi}{3}-\\dfrac{\\sqrt{3}}{4}$",
+  "$\\dfrac{\\pi}{6}-\\dfrac{\\sqrt{3}}{8}$",
+  "$\\dfrac{\\pi}{3}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(\\sin^2x=(1-\\cos 2x)/2\\), the integral is \\([x/2-\\sin(2x)/4]_{-\\pi/3}^{\\pi/3}=\\pi/3-\\sqrt3/4\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sin^2x$ is even, so $I=2\\int_0^{\\pi/3}\\sin^2x\\,dx$.\n$I=2\\left[\\dfrac{x}{2}-\\dfrac{\\sin 2x}{4}\\right]_0^{\\pi/3}=\\dfrac{\\pi}{3}-\\dfrac{\\sqrt{3}}{4}$.\n\nIndependent check: Using \\(\\sin^2x=(1-\\cos 2x)/2\\), the integral is \\([x/2-\\sin(2x)/4]_{-\\pi/3}^{\\pi/3}=\\pi/3-\\sqrt3/4\\).",
+ "solution": "Since $\\sin^2 x$ is even,\n$$\\int_{-\\pi/3}^{\\pi/3}\\sin^2 x\\,dx=2\\left[\\frac{x}{2}-\\frac{\\sin 2x}{4}\\right]_0^{\\pi/3}=\\frac{\\pi}{3}-\\frac{\\sqrt{3}}{4}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_{-\\pi/3}^{\\pi/3}\\sin^2 x\\,dx$.",
+  "options": [
+   "$\\dfrac{\\pi}{3}-\\dfrac{\\sqrt{3}}{4}$",
+   "$\\dfrac{\\pi}{3}+\\dfrac{\\sqrt{3}}{4}$",
+   "$\\dfrac{\\pi}{6}-\\dfrac{\\sqrt{3}}{8}$",
+   "$\\dfrac{\\pi}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\sin^2x$ is even, so $I=2\\int_0^{\\pi/3}\\sin^2x\\,dx$.\n$I=2\\left[\\dfrac{x}{2}-\\dfrac{\\sin 2x}{4}\\right]_0^{\\pi/3}=\\dfrac{\\pi}{3}-\\dfrac{\\sqrt{3}}{4}$.",
+  "distractor_notes": "B: Uses the plus sign from the antiderivative of $\\cos^2x$. C: Forgets to double the integral over the positive half-interval. D: Drops the sine term in the evaluated antiderivative."
+ },
+ "variant_of": "g4740584c15a7",
+ "author_model": "openai/gpt-6-luna-pro"
+}

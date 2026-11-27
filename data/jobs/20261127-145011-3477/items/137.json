@@ -1,0 +1,56 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "single-formula numerical",
+  "brief": "Binomial distribution: given n, p and a target number of successes, compute P(X = k) or the mean/variance",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:125",
+   "2021:138",
+   "2023s2:102"
+  ],
+  "origin": "direct",
+  "bank_ref": "g2b4ce6edd283"
+ },
+ "status": "ok",
+ "stem": "A random variable $X$ follows a binomial distribution with mean $5$ and variance $2.5$. Then $P(X = 3)$ is",
+ "options": [
+  "$\\frac{45}{256}$",
+  "$\\frac{45}{128}$",
+  "$\\frac{15}{256}$",
+  "$\\frac{15}{128}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "A",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g2b4ce6edd283 (verified in job 20261127-122012-292e)"
+ ],
+ "working": "Let $n$ and $p$ be the parameters.  \nMean $= np = 5$, Variance $= npq = 2.5$.  \nDividing, $q = \\frac{2.5}{5} = 0.5$, so $p = 1 - q = 0.5$.  \nThen $n = \\frac{5}{0.5} = 10$.  \nNow $P(X=3) = \\binom{10}{3} p^3 q^{7} = 120 \\times \\left(\\frac{1}{2}\\right)^{10} = \\frac{120}{1024} = \\frac{15}{128}$.\n\nIndependent check: For a binomial variable, np = 5 and npq = 2.5, so q = 0.5, p = 0.5, and n = 10. Therefore P(X = 3) = C(10,3)(0.5)^10 = 15/128.",
+ "solution": "For a binomial distribution, mean $=np=5$ and variance $=npq=2.5$, so $q=\\frac{2.5}{5}=\\frac12$, hence $p=\\frac12$ and $n=10$.\n$$P(X=3)=\\binom{10}{3}\\left(\\frac12\\right)^{10}=\\frac{120}{1024}=\\frac{15}{128}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g2b4ce6edd283",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A dielectric slab of dielectric constant $K > 1$ is inserted to completely fill the space between the plates of a parallel plate capacitor. Which of the following statements is correct?",
+ "stem": "A dielectric of constant $K>1$ completely fills the gap of a parallel-plate capacitor. The plates remain fixed. Which set of statements is correct? I. Capacitance increases in either case. II. With the battery disconnected, charge stays constant and field decreases. III. With the battery connected, charge increases and field stays constant. IV. With the battery disconnected, voltage stays constant.",
  "options": [
-  "When the battery remains connected, the charge remains unchanged and the electric field decreases.",
-  "When the battery is disconnected, the capacitance increases and the electric field decreases.",
-  "When the battery is disconnected, the charge increases and the electric field remains unchanged.",
-  "When the battery remains connected, the capacitance increases and the electric field increases."
+  "I and II only",
+  "I, II and III only",
+  "I, III and IV only",
+  "II, III and IV only"
  ],
  "answer": "B",
  "figure": null,
@@ -34,34 +34,35 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Inserting slab: C→KC₀. Battery connected: V fixed ⇒ E=V/d unchanged, Q→KQ₀ (so A, D wrong). Battery disconnected: Q fixed, C→KC₀, V→V₀/K, E→E₀/K (so C wrong, B correct). Numerical check with K=3 confirms.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With fixed plate separation, inserting the dielectric increases capacitance. Disconnected: charge is constant, so field decreases. Connected: voltage and field are constant, while charge increases. Hence I, II, III are true; IV is false.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. When the battery is disconnected (isolated capacitor):\n- Charge is conserved on the isolated plates: $Q = Q_0$ (remains unchanged).\n- Capacitance with dielectric: $C = K C_0$. Since $K > 1$, capacitance increases.\n- Electric field between plates: $E = \\dfrac{V}{d} = \\dfrac{Q}{C d} = \\dfrac{Q_0}{K C_0 d} = \\dfrac{E_0}{K}$. Since $K > 1$, the electric field decreases.\n\n2. When the battery remains connected:\n- Potential difference is held constant by the battery: $V = V_0$.\n- Electric field: $E = \\dfrac{V}{d} = \\dfrac{V_0}{d} = E_0$ (remains unchanged).\n- Capacitance: $C = K C_0$ (increases).\n- Charge: $Q = CV = K C_0 V_0 = K Q_0$ (increases).\n\nTherefore, the statement in option B is correct.\n\nIndependent check: Inserting slab: C→KC₀. Battery connected: V fixed ⇒ E=V/d unchanged, Q→KQ₀ (so A, D wrong). Battery disconnected: Q fixed, C→KC₀, V→V₀/K, E→E₀/K (so C wrong, B correct). Numerical check with K=3 confirms.",
+ "working": "$C=KC_0$ in either case. Isolated: $Q=Q_0$, so $E=Q/(Cd)=E_0/K$ and $V=V_0/K$. Battery connected: $V=V_0$, so $E=V_0/d=E_0$ and $Q=CV_0=KQ_0$. Hence I, II and III are correct.\n\nIndependent check: With fixed plate separation, inserting the dielectric increases capacitance. Disconnected: charge is constant, so field decreases. Connected: voltage and field are constant, while charge increases. Hence I, II, III are true; IV is false.",
  "solution": "",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "A dielectric slab of dielectric constant $K > 1$ is inserted to completely fill the space between the plates of a parallel plate capacitor. Which of the following statements is correct?",
+  "stem": "A dielectric of constant $K>1$ completely fills the gap of a parallel-plate capacitor. The plates remain fixed. Which set of statements is correct? I. Capacitance increases in either case. II. With the battery disconnected, charge stays constant and field decreases. III. With the battery connected, charge increases and field stays constant. IV. With the battery disconnected, voltage stays constant.",
   "options": [
-   "When the battery remains connected, the charge remains unchanged and the electric field decreases.",
-   "When the battery is disconnected, the capacitance increases and the electric field decreases.",
-   "When the battery is disconnected, the charge increases and the electric field remains unchanged.",
-   "When the battery remains connected, the capacitance increases and the electric field increases."
+   "I and II only",
+   "I, II and III only",
+   "I, III and IV only",
+   "II, III and IV only"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "1. When the battery is disconnected (isolated capacitor):\n- Charge is conserved on the isolated plates: $Q = Q_0$ (remains unchanged).\n- Capacitance with dielectric: $C = K C_0$. Since $K > 1$, capacitance increases.\n- Electric field between plates: $E = \\dfrac{V}{d} = \\dfrac{Q}{C d} = \\dfrac{Q_0}{K C_0 d} = \\dfrac{E_0}{K}$. Since $K > 1$, the electric field decreases.\n\n2. When the battery remains connected:\n- Potential difference is held constant by the battery: $V = V_0$.\n- Electric field: $E = \\dfrac{V}{d} = \\dfrac{V_0}{d} = E_0$ (remains unchanged).\n- Capacitance: $C = K C_0$ (increases).\n- Charge: $Q = CV = K C_0 V_0 = K Q_0$ (increases).\n\nTherefore, the statement in option B is correct.",
-  "distractor_notes": "Option A encodes the error of mistakenly applying isolated-capacitor behavior (charge remaining constant, field decreasing) to the battery-connected scenario.\nOption C encodes a violation of charge conservation (thinking charge increases despite disconnection) and forgetting that induced polarization reduces the net field.\nOption D encodes the misconception that because charge increases when connected to the battery, the net electric field must also increase, neglecting that $E = V/d$ is fixed by the battery.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$C=KC_0$ in either case. Isolated: $Q=Q_0$, so $E=Q/(Cd)=E_0/K$ and $V=V_0/K$. Battery connected: $V=V_0$, so $E=V_0/d=E_0$ and $Q=CV_0=KQ_0$. Hence I, II and III are correct.",
+  "distractor_notes": "A: omits the connected-case charge and field behavior. C: wrongly treats isolated voltage as constant and omits the isolated-case behavior. D: wrongly treats isolated voltage as constant and omits the increase in capacitance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

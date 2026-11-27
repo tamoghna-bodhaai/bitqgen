@@ -1,0 +1,71 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Equilibrium of concurrent forces",
+  "archetype": "force resolution",
+  "brief": "Three coplanar forces acting at a point; use equilibrium conditions to find the magnitude of one force.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:24",
+   "2025s2:4",
+   "2022:24"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge9adce173352"
+ },
+ "status": "ok",
+ "stem": "A ring is in equilibrium under three concurrent forces. Two forces are $8$ N east and $8$ N north; the third acts southwest. What is the magnitude of the third force?",
+ "options": [
+  "$4\\sqrt{2}$ N",
+  "$8$ N",
+  "$16$ N",
+  "$8\\sqrt{2}$ N"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The first two forces have resultant magnitude \\(\\sqrt{8^2+8^2}=8\\sqrt{2}\\,\\text{N}\\) northeast. The southwest force must balance it, so its magnitude is \\(8\\sqrt{2}\\,\\text{N}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T\\cos 45^\\circ=8$\n\nIndependent check: The first two forces have resultant magnitude \\(\\sqrt{8^2+8^2}=8\\sqrt{2}\\,\\text{N}\\) northeast. The southwest force must balance it, so its magnitude is \\(8\\sqrt{2}\\,\\text{N}\\).",
+ "solution": "For equilibrium, the southwest force must balance the resultant of the eastward and northward forces.\n$$F=\\sqrt{8^2+8^2}=8\\sqrt{2}\\,\\text{N}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A ring is in equilibrium under three concurrent forces. Two forces are $8$ N east and $8$ N north; the third acts southwest. What is the magnitude of the third force?",
+  "options": [
+   "$4\\sqrt{2}$ N",
+   "$8$ N",
+   "$8\\sqrt{2}$ N",
+   "$16$ N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$T\\cos 45^\\circ=8$",
+  "distractor_notes": "A: introduces an erroneous factor of $1/2$. B: reports one component instead of the resultant. D: adds the perpendicular forces as scalars."
+ },
+ "variant_of": "ge9adce173352",
+ "author_model": "openai/gpt-6-luna-pro"
+}

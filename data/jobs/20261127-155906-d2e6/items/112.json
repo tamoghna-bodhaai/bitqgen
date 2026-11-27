@@ -1,0 +1,70 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Definite integrals – Weierstrass substitution",
+  "archetype": "integration technique",
+  "brief": "Evaluate a definite integral of a rational function of sin x (and cos x) over [0, π] or [0, π/2] using t = tan(x/2) substitution; answer a clean closed form.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:130",
+   "2024s2:96",
+   "2025s1:130"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^\\pi \\dfrac{1+\\cos x}{2+\\sin x}\\,dx$ using $t=\\tan\\dfrac{x}{2}$.",
+ "options": [
+  "$\\dfrac{\\pi}{3\\sqrt{3}}$",
+  "$\\dfrac{2\\pi}{3\\sqrt{3}}$",
+  "$\\dfrac{\\pi}{\\sqrt{3}}$",
+  "$\\dfrac{4\\pi}{3\\sqrt{3}}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With t = tan(x/2), the limits are 0 to ∞ and the integral becomes 2∫₀^∞ dt/[(t²+1)(t²+t+1)]. Using partial fractions, its antiderivative is ln[(t²+t+1)/(t²+1)] + ∫dt/(t²+t+1). The logarithmic term vanishes at both limits, and the remaining integral is 2π/(3√3).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$t=\\tan\\dfrac{x}{2}$ gives $I=2\\int_0^\\infty\\dfrac{dt}{(1+t^2)(t^2+t+1)}$; $\\dfrac{1}{(1+t^2)(t^2+t+1)}=-\\dfrac{t}{1+t^2}+\\dfrac{t+1}{t^2+t+1}$. Thus $I=\\left[\\ln\\dfrac{t^2+t+1}{1+t^2}\\right]_0^\\infty+\\int_0^\\infty\\dfrac{dt}{t^2+t+1}=\\dfrac{2\\pi}{3\\sqrt{3}}$.\n\nIndependent check: With t = tan(x/2), the limits are 0 to ∞ and the integral becomes 2∫₀^∞ dt/[(t²+1)(t²+t+1)]. Using partial fractions, its antiderivative is ln[(t²+t+1)/(t²+1)] + ∫dt/(t²+t+1). The logarithmic term vanishes at both limits, and the remaining integral is 2π/(3√3).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^\\pi \\dfrac{1+\\cos x}{2+\\sin x}\\,dx$ using $t=\\tan\\dfrac{x}{2}$.",
+  "options": [
+   "$\\dfrac{\\pi}{3\\sqrt{3}}$",
+   "$\\dfrac{2\\pi}{3\\sqrt{3}}$",
+   "$\\dfrac{\\pi}{\\sqrt{3}}$",
+   "$\\dfrac{4\\pi}{3\\sqrt{3}}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$t=\\tan\\dfrac{x}{2}$ gives $I=2\\int_0^\\infty\\dfrac{dt}{(1+t^2)(t^2+t+1)}$; $\\dfrac{1}{(1+t^2)(t^2+t+1)}=-\\dfrac{t}{1+t^2}+\\dfrac{t+1}{t^2+t+1}$. Thus $I=\\left[\\ln\\dfrac{t^2+t+1}{1+t^2}\\right]_0^\\infty+\\int_0^\\infty\\dfrac{dt}{t^2+t+1}=\\dfrac{2\\pi}{3\\sqrt{3}}$.",
+  "distractor_notes": "A: loses a factor of $2$; C: uses the familiar value for a different denominator; D: doubles the correct result."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

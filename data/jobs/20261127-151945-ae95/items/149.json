@@ -1,0 +1,71 @@
+{
+ "qno": 149,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 149,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Geometry of complex numbers",
+  "archetype": "modulus property",
+  "brief": "Interpret |z − z₁| = k|z − z₂| as a circle (Apollonius) or find the locus of z; ask for the centre/radius of the locus or the maximum modulus on a segment.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:120",
+   "2026s1:95",
+   "2025s1:125"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd67fc7bbccdf"
+ },
+ "status": "ok",
+ "stem": "The locus of $z$ satisfying $|z-(2+i)|=2|z-(-1+i)|$ is a circle. What are its centre and radius?",
+ "options": [
+  "Centre $2-i$; radius $2$",
+  "Centre $-2+i$; radius $\\dfrac{2}{3}$",
+  "Centre $-2+i$; radius $6$",
+  "Centre $-2+i$; radius $2$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let z=x+iy. Squaring gives (x−2)²+(y−1)²=4[(x+1)²+(y−1)²], which simplifies to (x+2)²+(y−1)²=4. Thus the centre is −2+i and the radius is 2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $z=x+iy$. Then $(x-2)^2+(y-1)^2=4[(x+1)^2+(y-1)^2]$.\nSimplifying: $x^2+4x+y^2-2y+1=0$.\nHence $(x+2)^2+(y-1)^2=4$.\nCentre $=-2+i$; radius $=2$.\n\nIndependent check: Let z=x+iy. Squaring gives (x−2)²+(y−1)²=4[(x+1)²+(y−1)²], which simplifies to (x+2)²+(y−1)²=4. Thus the centre is −2+i and the radius is 2.",
+ "solution": "Let $z=x+iy$. Squaring the given equation gives\n$$\n(x-2)^2+(y-1)^2=4\\big[(x+1)^2+(y-1)^2\\big].\n$$\nOn simplification, $(x+2)^2+(y-1)^2=4$, so the centre is $-2+i$ and the radius is $2$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The locus of $z$ satisfying $|z-(2+i)|=2|z-(-1+i)|$ is a circle. What are its centre and radius?",
+  "options": [
+   "Centre $2-i$; radius $2$",
+   "Centre $-2+i$; radius $2$",
+   "Centre $-2+i$; radius $6$",
+   "Centre $-2+i$; radius $\\dfrac{2}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $z=x+iy$. Then $(x-2)^2+(y-1)^2=4[(x+1)^2+(y-1)^2]$.\nSimplifying: $x^2+4x+y^2-2y+1=0$.\nHence $(x+2)^2+(y-1)^2=4$.\nCentre $=-2+i$; radius $=2$.",
+  "distractor_notes": "A: sign error in the centre coordinates. C: uses $k-1$ instead of $k^2-1$ in the radius formula. D: uses $k^2$ instead of $|1-k^2|$ in the radius denominator."
+ },
+ "variant_of": "gd67fc7bbccdf",
+ "author_model": "openai/gpt-6-luna-pro"
+}

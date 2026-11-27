@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "For a gas-phase reaction with $\\Delta n_{\\text{g}} = -1$ at temperature $T$, which of the following statements correctly compares $\\Delta H$ and $\\Delta U$?",
+ "stem": "For the gas-phase reaction $\\text{N}_2(g)+\\text{O}_2(g)\\rightarrow 2\\text{NO}(g)$, which statement is correct?",
  "options": [
-  "$\\Delta H > \\Delta U$, because $\\Delta n_{\\text{g}}RT > 0$",
-  "$\\Delta H < \\Delta U$, because $\\Delta n_{\\text{g}}RT < 0$",
-  "$\\Delta H > \\Delta U$, because $\\Delta n_{\\text{g}}RT < 0$",
-  "$\\Delta H = \\Delta U$, because the reaction occurs at constant temperature"
+  "$\\text{Δ}H=\\text{Δ}U$, since the change in moles of gas is zero.",
+  "$\\text{Δ}H>\\text{Δ}U$, since there are more gaseous product molecules.",
+  "$\\text{Δ}H<\\text{Δ}U$, since the reactants have more gaseous moles.",
+  "$\\text{Δ}H\\ne\\text{Δ}U$, since every gas-phase reaction has a nonzero gas-mole change."
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "ΔH = ΔU + Δn_g RT. With Δn_g = −1, ΔH = ΔU − RT, and since RT > 0, ΔH < ΔU. This matches option B and its stated reason Δn_g RT < 0.",
-   "answer": "B",
-   "confidence": 1.0,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For ideal gases, ΔH = ΔU + Δn_gRT. Here Δn_g = 2 − (1 + 1) = 0, so ΔH = ΔU.",
+   "answer": "A",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The relationship between enthalpy change ($\\Delta H$) and internal energy change ($\\Delta U$) for a gaseous reaction is given by:\n$$\\Delta H = \\Delta U + \\Delta n_{\\text{g}}RT$$\nGiven that $\\Delta n_{\\text{g}} = -1$ and temperature $T > 0\\ \\text{K}$, we have:\n$$\\Delta n_{\\text{g}}RT = -RT < 0$$\nSubstituting this into the equation:\n$$\\Delta H = \\Delta U - RT$$\nSince $R > 0$ and $T > 0\\ \\text{K}$, $RT$ is positive, which means:\n$$\\Delta H < \\Delta U$$\nTherefore, $\\Delta H < \\Delta U$ because $\\Delta n_{\\text{g}}RT < 0$.\n\nIndependent check: ΔH = ΔU + Δn_g RT. With Δn_g = −1, ΔH = ΔU − RT, and since RT > 0, ΔH < ΔU. This matches option B and its stated reason Δn_g RT < 0.",
+ "working": "$\\text{Δ}n_{\\text{g}}=2-(1+1)=0$\n$\\text{Δ}H=\\text{Δ}U+\\text{Δ}n_{\\text{g}}RT=\\text{Δ}U$\n\nIndependent check: For ideal gases, ΔH = ΔU + Δn_gRT. Here Δn_g = 2 − (1 + 1) = 0, so ΔH = ΔU.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "For a gas-phase reaction with $\\Delta n_{\\text{g}} = -1$ at temperature $T$, which of the following statements correctly compares $\\Delta H$ and $\\Delta U$?",
+  "stem": "For the gas-phase reaction $\\text{N}_2(g)+\\text{O}_2(g)\\rightarrow 2\\text{NO}(g)$, which statement is correct?",
   "options": [
-   "$\\Delta H > \\Delta U$, because $\\Delta n_{\\text{g}}RT > 0$",
-   "$\\Delta H < \\Delta U$, because $\\Delta n_{\\text{g}}RT < 0$",
-   "$\\Delta H > \\Delta U$, because $\\Delta n_{\\text{g}}RT < 0$",
-   "$\\Delta H = \\Delta U$, because the reaction occurs at constant temperature"
+   "$\\text{Δ}H=\\text{Δ}U$, since the change in moles of gas is zero.",
+   "$\\text{Δ}H>\\text{Δ}U$, since there are more gaseous product molecules.",
+   "$\\text{Δ}H<\\text{Δ}U$, since the reactants have more gaseous moles.",
+   "$\\text{Δ}H\\ne\\text{Δ}U$, since every gas-phase reaction has a nonzero gas-mole change."
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The relationship between enthalpy change ($\\Delta H$) and internal energy change ($\\Delta U$) for a gaseous reaction is given by:\n$$\\Delta H = \\Delta U + \\Delta n_{\\text{g}}RT$$\nGiven that $\\Delta n_{\\text{g}} = -1$ and temperature $T > 0\\ \\text{K}$, we have:\n$$\\Delta n_{\\text{g}}RT = -RT < 0$$\nSubstituting this into the equation:\n$$\\Delta H = \\Delta U - RT$$\nSince $R > 0$ and $T > 0\\ \\text{K}$, $RT$ is positive, which means:\n$$\\Delta H < \\Delta U$$\nTherefore, $\\Delta H < \\Delta U$ because $\\Delta n_{\\text{g}}RT < 0$.",
-  "distractor_notes": "A: Encodes ignoring the negative sign of $\\Delta n_{\\text{g}}$, assuming $\\Delta n_{\\text{g}}RT > 0$ and concluding $\\Delta H > \\Delta U$.\nC: Encodes an algebraic sign slip where the student correctly identifies $\\Delta n_{\\text{g}}RT < 0$ but incorrectly concludes $\\Delta H > \\Delta U$.\nD: Encodes the misconception that for any process at constant temperature, $\\Delta T = 0$ implies $\\Delta H = \\Delta U = 0$, confusing an isothermal physical expansion of an ideal gas with a chemical reaction.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\text{Δ}n_{\\text{g}}=2-(1+1)=0$\n$\\text{Δ}H=\\text{Δ}U+\\text{Δ}n_{\\text{g}}RT=\\text{Δ}U$",
+  "distractor_notes": "B: miscounts the gaseous product moles. C: incorrectly assumes the reactants have more gaseous moles. D: assumes any gas-phase reaction must have a nonzero gas-mole change."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

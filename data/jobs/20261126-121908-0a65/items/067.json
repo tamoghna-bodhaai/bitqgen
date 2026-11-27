@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Considering resonance and inductive effects, what is the correct order of decreasing stability of the following carbanions: $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), $\\text{CH}_3\\text{CH}_2^-$ (II), $(\\text{CH}_3)_2\\text{CH}^-$ (III), and $(\\text{CH}_3)_3\\text{C}^-$ (IV)?",
+ "stem": "Considering resonance and electron-withdrawing effects, arrange these carbanions in decreasing order of stability: I. $\\text{CH}_3\\text{COCH}_2^-$, II. $\\text{N}\\equiv\\text{CCH}_2^-$, III. $\\text{CH}_2=\\text{CHCH}_2^-$, IV. $\\text{CH}_3\\text{CH}_2^-$.",
  "options": [
-  "$\\text{I} > \\text{II} > \\text{III} > \\text{IV}$",
-  "$\\text{I} > \\text{IV} > \\text{III} > \\text{II}$",
-  "$\\text{IV} > \\text{III} > \\text{II} > \\text{I}$",
-  "$\\text{II} > \\text{III} > \\text{IV} > \\text{I}$"
+  "I > II > III > IV",
+  "II > I > III > IV",
+  "I > III > II > IV",
+  "I > II > IV > III"
  ],
  "answer": "A",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Benzyl carbanion (I) is resonance-stabilized by delocalization into the phenyl ring, so it is most stable. Alkyl groups exert +I effect, intensifying the negative charge and destabilizing carbanions; more alkyl groups means less stability. Thus among II (1 alkyl), III (2 alkyls), IV (3 alkyls): II > III > IV. Overall: I > II > III > IV.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The carbonyl-stabilized anion (I) is more stable than the cyano-stabilized anion (II); allylic resonance stabilizes III more than the unstabilized ethyl carbanion IV. Thus I > II > III > IV.",
    "answer": "A",
-   "confidence": 0.99,
+   "confidence": 0.97,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Resonance stabilization: In the benzyl carbanion, $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), the negative charge is delocalized over the ortho and para positions of the benzene ring through resonance (4 resonating structures). Delocalization significantly disperses the negative charge, making (I) the most stable carbanion among those given.\\n2. Inductive effect: In alkyl carbanions, alkyl groups exhibit an electron-donating inductive effect ($+I$). This $+I$ effect increases electron density on the already negatively charged carbon atom, thereby destabilizing the carbanion.\\n- Ethyl carbanion, $\\text{CH}_3\\text{CH}_2^-$ (II), has one $+I$ alkyl group ($1^\\circ$).\\n- Isopropyl carbanion, $(\\text{CH}_3)_2\\text{CH}^-$ (III), has two $+I$ alkyl groups ($2^\\circ$).\\n- $\\text{tert}$-Butyl carbanion, $(\\text{CH}_3)_3\\text{C}^-$ (IV), has three $+I$ alkyl groups ($3^\\circ$).\\nThus, among alkyl carbanions, stability decreases as the number of electron-donating alkyl groups increases: $1^\\circ > 2^\\circ > 3^\\circ$, giving $\\text{II} > \\text{III} > \\text{IV}$.\\nCombining these effects gives the overall decreasing order of stability: $\\text{I} > \\text{II} > \\text{III} > \\text{IV}$.\n\nIndependent check: Benzyl carbanion (I) is resonance-stabilized by delocalization into the phenyl ring, so it is most stable. Alkyl groups exert +I effect, intensifying the negative charge and destabilizing carbanions; more alkyl groups means less stability. Thus among II (1 alkyl), III (2 alkyls), IV (3 alkyls): II > III > IV. Overall: I > II > III > IV.",
+ "working": "$\\text{CH}_3\\text{COCH}_2^-$: charge delocalized onto O; $\\text{N}\\equiv\\text{CCH}_2^-$: delocalized onto N.\nAllyl anion: charge delocalized over two C atoms; ethyl anion: no resonance stabilization.\nConjugate-acid $pK_a$ values are approximately $19$, $25$, $43$, and $50$, respectively.\nLower conjugate-acid $pK_a$ implies a more stable conjugate base: $\\text{I} > \\text{II} > \\text{III} > \\text{IV}$.\n\nIndependent check: The carbonyl-stabilized anion (I) is more stable than the cyano-stabilized anion (II); allylic resonance stabilizes III more than the unstabilized ethyl carbanion IV. Thus I > II > III > IV.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Considering resonance and inductive effects, what is the correct order of decreasing stability of the following carbanions: $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), $\\text{CH}_3\\text{CH}_2^-$ (II), $(\\text{CH}_3)_2\\text{CH}^-$ (III), and $(\\text{CH}_3)_3\\text{C}^-$ (IV)?",
+  "stem": "Considering resonance and electron-withdrawing effects, arrange these carbanions in decreasing order of stability: I. $\\text{CH}_3\\text{COCH}_2^-$, II. $\\text{N}\\equiv\\text{CCH}_2^-$, III. $\\text{CH}_2=\\text{CHCH}_2^-$, IV. $\\text{CH}_3\\text{CH}_2^-$.",
   "options": [
-   "$\\text{I} > \\text{II} > \\text{III} > \\text{IV}$",
-   "$\\text{I} > \\text{IV} > \\text{III} > \\text{II}$",
-   "$\\text{IV} > \\text{III} > \\text{II} > \\text{I}$",
-   "$\\text{II} > \\text{III} > \\text{IV} > \\text{I}$"
+   "I > II > III > IV",
+   "II > I > III > IV",
+   "I > III > II > IV",
+   "I > II > IV > III"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "1. Resonance stabilization: In the benzyl carbanion, $\\text{C}_6\\text{H}_5\\text{CH}_2^-$ (I), the negative charge is delocalized over the ortho and para positions of the benzene ring through resonance (4 resonating structures). Delocalization significantly disperses the negative charge, making (I) the most stable carbanion among those given.\\n2. Inductive effect: In alkyl carbanions, alkyl groups exhibit an electron-donating inductive effect ($+I$). This $+I$ effect increases electron density on the already negatively charged carbon atom, thereby destabilizing the carbanion.\\n- Ethyl carbanion, $\\text{CH}_3\\text{CH}_2^-$ (II), has one $+I$ alkyl group ($1^\\circ$).\\n- Isopropyl carbanion, $(\\text{CH}_3)_2\\text{CH}^-$ (III), has two $+I$ alkyl groups ($2^\\circ$).\\n- $\\text{tert}$-Butyl carbanion, $(\\text{CH}_3)_3\\text{C}^-$ (IV), has three $+I$ alkyl groups ($3^\\circ$).\\nThus, among alkyl carbanions, stability decreases as the number of electron-donating alkyl groups increases: $1^\\circ > 2^\\circ > 3^\\circ$, giving $\\text{II} > \\text{III} > \\text{IV}$.\\nCombining these effects gives the overall decreasing order of stability: $\\text{I} > \\text{II} > \\text{III} > \\text{IV}$.",
-  "distractor_notes": "Option B comes from correctly identifying the resonance stabilization of the benzyl carbanion but mistakenly applying the carbocation stability order (3° > 2° > 1°) to the alkyl carbanions.\\nOption C comes from completely inverting the carbanion stability order by treating carbanions like carbocations or free radicals (3° > 2° > 1° > benzyl).\\nOption D comes from correctly ordering the alkyl carbanions by the +I destabilizing effect but failing to recognize that resonance strongly stabilizes the benzyl carbanion.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\text{CH}_3\\text{COCH}_2^-$: charge delocalized onto O; $\\text{N}\\equiv\\text{CCH}_2^-$: delocalized onto N.\nAllyl anion: charge delocalized over two C atoms; ethyl anion: no resonance stabilization.\nConjugate-acid $pK_a$ values are approximately $19$, $25$, $43$, and $50$, respectively.\nLower conjugate-acid $pK_a$ implies a more stable conjugate base: $\\text{I} > \\text{II} > \\text{III} > \\text{IV}$.",
+  "distractor_notes": "B: ranks the cyano-stabilized anion above the more stabilized enolate. C: ranks allyl above the cyano-stabilized anion. D: overlooks the greater stability of allyl relative to ethyl."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

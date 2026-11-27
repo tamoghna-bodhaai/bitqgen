@@ -1,0 +1,70 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Units of radioactivity",
+  "archetype": "unit comparison",
+  "brief": "Compare curie and becquerel / relate activity in curies to decays per second, or convert between radioactivity units; one-step unit conversion.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:4",
+   "2021:27",
+   "2025s1:8"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The activity of a sample is $2.5\\times10^{-6}$ Ci. What is its activity in becquerels? Use $1$ Ci $=3.7\\times10^{10}$ Bq.",
+ "options": [
+  "$3.7\\times10^4$ Bq",
+  "$9.25\\times10^{10}$ Bq",
+  "$2.5\\times10^6$ Bq",
+  "$9.25\\times10^4$ Bq"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "(2.5×10⁻⁶ Ci)(3.7×10¹⁰ Bq/Ci) = 9.25×10⁴ Bq.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=(2.5\\times10^{-6})(3.7\\times10^{10})$ Bq\\\\\n$A=9.25\\times10^4$ Bq\n\nIndependent check: (2.5×10⁻⁶ Ci)(3.7×10¹⁰ Bq/Ci) = 9.25×10⁴ Bq.",
+ "solution": "Using $1\\,\\text{Ci}=3.7\\times10^{10}\\,\\text{Bq}$,\n$$A=(2.5\\times10^{-6})(3.7\\times10^{10})=9.25\\times10^4\\,\\text{Bq}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The activity of a sample is $2.5\\times10^{-6}$ Ci. What is its activity in becquerels? Use $1$ Ci $=3.7\\times10^{10}$ Bq.",
+  "options": [
+   "$3.7\\times10^4$ Bq",
+   "$9.25\\times10^4$ Bq",
+   "$2.5\\times10^6$ Bq",
+   "$9.25\\times10^{10}$ Bq"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$A=(2.5\\times10^{-6})(3.7\\times10^{10})$ Bq\\\\\n$A=9.25\\times10^4$ Bq",
+  "distractor_notes": "A: converts $1$ microcurie but omits the factor $2.5$. C: mishandles the powers of ten. D: omits the micro- prefix."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

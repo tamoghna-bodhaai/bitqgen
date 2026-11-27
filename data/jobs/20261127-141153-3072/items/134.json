@@ -1,0 +1,70 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Term independent of x",
+  "archetype": "general term exponent matching",
+  "brief": "Find the constant (x-free) term in an expansion such as (xᵖ + 1/x^q)ⁿ or a product of two binomials; set exponent of x to zero via general term.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:115",
+   "2026s2:103",
+   "2024s1:117"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The term independent of $x$ in the expansion of $\\left(1+2x^2\\right)^5\\left(x^3+x^{-1}\\right)^4$ is",
+ "options": [
+  "$4$",
+  "$40$",
+  "$44$",
+  "$41$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A general term has power x^(2k+4j-4). The constant term requires k+2j=2, giving (k,j)=(2,0),(0,1). Their coefficients are 40 and 4, totaling 44.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $i$ count factors of $2x^2$ and $j$ count factors of $x^{-1}$. The product term has exponent $2i+12-4j$. Setting this to zero gives $(i,j)=(0,3),(2,4)$. Constant term $={}^5C_0\\cdot2^0\\cdot{}^4C_3+{}^5C_2\\cdot2^2\\cdot{}^4C_4=4+40=44$.\n\nIndependent check: A general term has power x^(2k+4j-4). The constant term requires k+2j=2, giving (k,j)=(2,0),(0,1). Their coefficients are 40 and 4, totaling 44.",
+ "solution": "Let $i$ count factors of $2x^2$ and $j$ count factors of $x^{-1}$. The general product term has power $x^{2i+12-4j}$, so the constant term requires $2i+12-4j=0$.\nThus $(i,j)=(0,3),(2,4)$, giving\n$$\\binom{5}{0}\\binom{4}{3}+\\binom{5}{2}2^2\\binom{4}{4}=4+40=44.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The term independent of $x$ in the expansion of $\\left(1+2x^2\\right)^5\\left(x^3+x^{-1}\\right)^4$ is",
+  "options": [
+   "$4$",
+   "$40$",
+   "$41$",
+   "$44$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $i$ count factors of $2x^2$ and $j$ count factors of $x^{-1}$. The product term has exponent $2i+12-4j$. Setting this to zero gives $(i,j)=(0,3),(2,4)$. Constant term $={}^5C_0\\cdot2^0\\cdot{}^4C_3+{}^5C_2\\cdot2^2\\cdot{}^4C_4=4+40=44$.",
+  "distractor_notes": "A: Omits the contribution from $(i,j)=(2,4)$. B: Omits the contribution from $(i,j)=(0,3)$. C: Uses $1$ instead of ${}^4C_3=4$ for the first contribution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

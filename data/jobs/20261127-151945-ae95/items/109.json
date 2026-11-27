@@ -1,0 +1,71 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Trigonometric equations",
+  "archetype": "general solution",
+  "brief": "Solve an equation reducible to a quadratic in sin x (e.g. via double-angle substitution) and express the general solution as a set.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:127",
+   "2026s1:92",
+   "2023s2:130"
+  ],
+  "origin": "variant",
+  "bank_ref": "g6565c9d6b69d"
+ },
+ "status": "ok",
+ "stem": "Solve $2\\cos 2\\theta+3\\sin\\theta=1$ and give the general solution, where $\\alpha=\\sin^{-1}\\left(\\dfrac14\\right)$ and $n\\in\\mathbb Z$.",
+ "options": [
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+2n\\pi,\\ \\alpha+2n\\pi,\\ \\pi-\\alpha+2n\\pi\\right\\}$",
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+2n\\pi,\\ -\\alpha+2n\\pi\\right\\}$",
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+2n\\pi,\\ -\\alpha+2n\\pi,\\ \\pi+\\alpha+2n\\pi\\right\\}$",
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+n\\pi,\\ -\\alpha+2n\\pi,\\ \\pi+\\alpha+2n\\pi\\right\\}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(\\cos 2\\theta=1-2\\sin^2\\theta\\), the equation becomes \\((4\\sin\\theta+1)(\\sin\\theta-1)=0\\). Thus \\(\\sin\\theta=1\\) or \\(\\sin\\theta=-\\tfrac14\\), giving the solutions in option C.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $s=\\sin\\theta$. Then $2(1-2s^2)+3s=1$, so $4s^2-3s-1=0=(s-1)(4s+1)$. Thus $s=1$ or $s=-\\dfrac14$. Hence $\\theta=\\dfrac{\\pi}{2}+2n\\pi$, or $\\theta=-\\alpha+2n\\pi$, or $\\theta=\\pi+\\alpha+2n\\pi$.\n\nIndependent check: Using \\(\\cos 2\\theta=1-2\\sin^2\\theta\\), the equation becomes \\((4\\sin\\theta+1)(\\sin\\theta-1)=0\\). Thus \\(\\sin\\theta=1\\) or \\(\\sin\\theta=-\\tfrac14\\), giving the solutions in option C.",
+ "solution": "Using $\\cos 2\\theta=1-2\\sin^2\\theta$ and setting $s=\\sin\\theta$,\n$$2(1-2s^2)+3s=1\\quad\\Longrightarrow\\quad (s-1)(4s+1)=0.$$\nThus $\\sin\\theta=1$ or $\\sin\\theta=-\\frac14$. With $\\alpha=\\sin^{-1}(\\frac14)$, the general solution is $\\theta=\\frac{\\pi}{2}+2n\\pi$, $-\\alpha+2n\\pi$, or $\\pi+\\alpha+2n\\pi$, where $n\\in\\mathbb Z$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Solve $2\\cos 2\\theta+3\\sin\\theta=1$ and give the general solution, where $\\alpha=\\sin^{-1}\\left(\\dfrac14\\right)$ and $n\\in\\mathbb Z$.",
+  "options": [
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+2n\\pi,\\ \\alpha+2n\\pi,\\ \\pi-\\alpha+2n\\pi\\right\\}$",
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+2n\\pi,\\ -\\alpha+2n\\pi\\right\\}$",
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+2n\\pi,\\ -\\alpha+2n\\pi,\\ \\pi+\\alpha+2n\\pi\\right\\}$",
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\dfrac{\\pi}{2}+n\\pi,\\ -\\alpha+2n\\pi,\\ \\pi+\\alpha+2n\\pi\\right\\}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $s=\\sin\\theta$. Then $2(1-2s^2)+3s=1$, so $4s^2-3s-1=0=(s-1)(4s+1)$. Thus $s=1$ or $s=-\\dfrac14$. Hence $\\theta=\\dfrac{\\pi}{2}+2n\\pi$, or $\\theta=-\\alpha+2n\\pi$, or $\\theta=\\pi+\\alpha+2n\\pi$.",
+  "distractor_notes": "A: Uses the wrong sign for the non-unit sine root.\\nB: Omits the second solution branch for $\\sin\\theta=-\\dfrac14$.\\nD: Gives the root $\\sin\\theta=1$ an incorrect period."
+ },
+ "variant_of": "g6565c9d6b69d",
+ "author_model": "openai/gpt-6-luna-pro"
+}

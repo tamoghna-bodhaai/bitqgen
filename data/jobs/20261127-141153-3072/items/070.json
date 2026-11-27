@@ -1,0 +1,68 @@
+{
+ "qno": 70,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 70,
+  "section": "Chemistry",
+  "chapter": "Solid State",
+  "subtopic": "Voids and formula of compound",
+  "archetype": "void counting",
+  "brief": "In a spinel-like or NaCl-type arrangement, determine the fraction of octahedral voids occupied or the formula of the compound given occupancy.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:51",
+   "2025s1:41",
+   "2022:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "Anions $\\text{X}^-$ form a cubic close-packed array. If $\\text{M}^{2+}$ ions occupy half the octahedral voids, what is the formula of the solid?",
+ "options": [
+  "$\\text{MX}_2$",
+  "$\\text{MX}$",
+  "$\\text{M}_2\\text{X}$",
+  "$\\text{M}_2\\text{X}_3$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For N X⁻ ions in a cubic close-packed array, there are N octahedral voids. Half are occupied, so there are N/2 M²⁺ ions. The ratio M:X is 1:2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $N$ close-packed anions, there are $N$ octahedral voids.\\nOccupied voids $=N/2$, so $n(\\text{M}):n(\\text{X})=N/2:N=1:2$.\\nFormula: $\\text{MX}_2$.\n\nIndependent check: For N X⁻ ions in a cubic close-packed array, there are N octahedral voids. Half are occupied, so there are N/2 M²⁺ ions. The ratio M:X is 1:2.",
+ "solution": "For $N$ close-packed $\\text{X}^-$ ions, the number of octahedral voids is $N$; half occupied gives $N/2$ $\\text{M}^{2+}$ ions.\nThus, $n(\\text{M}):n(\\text{X})=N/2:N=1:2$, so the formula is $\\text{MX}_2$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Anions $\\text{X}^-$ form a cubic close-packed array. If $\\text{M}^{2+}$ ions occupy half the octahedral voids, what is the formula of the solid?",
+  "options": [
+   "$\\text{MX}$",
+   "$\\text{MX}_2$",
+   "$\\text{M}_2\\text{X}$",
+   "$\\text{M}_2\\text{X}_3$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For $N$ close-packed anions, there are $N$ octahedral voids.\\nOccupied voids $=N/2$, so $n(\\text{M}):n(\\text{X})=N/2:N=1:2$.\\nFormula: $\\text{MX}_2$.",
+  "distractor_notes": "A: Assumes all octahedral voids are occupied.\nC: Reverses the cation-to-anion ratio.\nD: Uses an incorrect void-occupancy ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

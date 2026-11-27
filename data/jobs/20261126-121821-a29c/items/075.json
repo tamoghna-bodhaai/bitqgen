@@ -20,24 +20,36 @@
   ]
  },
  "status": "ok",
- "stem": "Read the given statements and conclusions carefully. Assuming that the given statements are true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll shirts are garments.\nAll garments are fabrics.\n\n**Conclusions:**\nI. All fabrics are shirts.\nII. Some fabrics are garments.\nIII. All shirts are fabrics.\nIV. No shirt is a fabric.",
+ "stem": "Read the statements and conclusions carefully. Assuming the statements are true, determine which conclusions follow.\n\n**Statements:**\nAll lanterns are instruments.\nAll instruments are portable.\n\n**Conclusions:**\nI. All lanterns are portable.\nII. Some portable things are instruments.\nIII. All portable things are lanterns.\nIV. No lantern is portable.",
  "options": [
-  "Only I and III follow",
+  "Only I and II follow",
   "Only II and III follow",
-  "Only I, II and III follow",
-  "Only II and IV follow"
+  "Only I and IV follow",
+  "Neither I nor II follows"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "I follows by transitivity: lanterns ⊆ instruments ⊆ portable things. II requires instruments to exist, which the universal statements do not guarantee. III and IV do not follow.",
+   "answer": "NONE",
+   "confidence": 0.94,
+   "multiple_correct": false,
+   "issues": [
+    "The premises do not assert that any instruments exist, so II is not guaranteed under standard modern logic. Only I follows, but no option lists I alone."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
    "model": "qwen/qwen4-max",
-   "working": "Shirts ⊆ Garments ⊆ Fabrics. III (All shirts are fabrics) follows by transitivity. II (Some fabrics are garments) follows by conversion of 'All garments are fabrics' under standard exam existential import (verified by set enumeration: with nonempty shirts, II and III hold in every model). I is an invalid converse; IV contradicts III. Hence only II and III follow.",
-   "answer": "B",
-   "confidence": 0.97,
+   "working": "Lanterns ⊆ Instruments ⊆ Portable. I follows by transitivity. II follows by conversion of 'All instruments are portable' (some portable things are instruments). III reverses the inclusion — invalid. IV contradicts I — invalid.",
+   "answer": "A",
+   "confidence": 0.98,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +57,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Let the set of shirts be $S$, garments be $G$, and fabrics be $F$.\n1. \"All shirts are garments\" implies $S \\subseteq G$.\n2. \"All garments are fabrics\" implies $G \\subseteq F$.\n\nCombining the two statements gives the nested relation $S \\subseteq G \\subseteq F$.\n\nEvaluating the conclusions:\n- Conclusion I: \"All fabrics are shirts\" means $F \\subseteq S$. From $S \\subseteq F$, we cannot deduce $F \\subseteq S$ (illicit conversion of a universal affirmative). Hence, I does not follow.\n- Conclusion II: \"Some fabrics are garments\" means $F \\cap G \\neq \\emptyset$. Since $G \\subseteq F$ and $G$ is non-empty, all garments are fabrics, which directly implies some fabrics are garments. Hence, II follows.\n- Conclusion III: \"All shirts are fabrics\" means $S \\subseteq F$. By transitivity of subsets ($S \\subseteq G$ and $G \\subseteq F$), $S \\subseteq F$ must hold. Hence, III follows.\n- Conclusion IV: \"No shirt is a fabric\" means $S \\cap F = \\emptyset$. Since $S \\subseteq F$, this directly contradicts the statements. Hence, IV does not follow.\n\nTherefore, only conclusions II and III follow.\n\nIndependent check: Shirts ⊆ Garments ⊆ Fabrics. III (All shirts are fabrics) follows by transitivity. II (Some fabrics are garments) follows by conversion of 'All garments are fabrics' under standard exam existential import (verified by set enumeration: with nonempty shirts, II and III hold in every model). I is an invalid converse; IV contradicts III. Hence only II and III follow.",
- "solution": "",
+ "working": "Lanterns ⊆ instruments ⊆ portable things, so I follows by transitivity. Since instruments exist under the standard syllogism convention, II follows. III reverses the inclusion; IV contradicts the statements. B: III fails; C: IV fails; D: I and II follow.\n\nIndependent check: Lanterns ⊆ Instruments ⊆ Portable. I follows by transitivity. II follows by conversion of 'All instruments are portable' (some portable things are instruments). III reverses the inclusion — invalid. IV contradicts I — invalid.",
+ "solution": "Lanterns ⊆ instruments ⊆ portable things, so I follows by transitivity. Since instruments exist under the standard syllogism convention, II follows. III reverses the inclusion, while IV contradicts I.",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "Read the given statements and conclusions carefully. Assuming that the given statements are true, even if they seem to be at variance with commonly known facts, decide which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll shirts are garments.\nAll garments are fabrics.\n\n**Conclusions:**\nI. All fabrics are shirts.\nII. Some fabrics are garments.\nIII. All shirts are fabrics.\nIV. No shirt is a fabric.",
+  "stem": "Read the statements and conclusions carefully. Assuming the statements are true, determine which conclusions follow.\n\n**Statements:**\nAll lanterns are instruments.\nAll instruments are portable.\n\n**Conclusions:**\nI. All lanterns are portable.\nII. Some portable things are instruments.\nIII. All portable things are lanterns.\nIV. No lantern is portable.",
   "options": [
-   "Only I and III follow",
+   "Only I and II follow",
    "Only II and III follow",
-   "Only I, II and III follow",
-   "Only II and IV follow"
+   "Only I and IV follow",
+   "Neither I nor II follows"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "Let the set of shirts be $S$, garments be $G$, and fabrics be $F$.\n1. \"All shirts are garments\" implies $S \\subseteq G$.\n2. \"All garments are fabrics\" implies $G \\subseteq F$.\n\nCombining the two statements gives the nested relation $S \\subseteq G \\subseteq F$.\n\nEvaluating the conclusions:\n- Conclusion I: \"All fabrics are shirts\" means $F \\subseteq S$. From $S \\subseteq F$, we cannot deduce $F \\subseteq S$ (illicit conversion of a universal affirmative). Hence, I does not follow.\n- Conclusion II: \"Some fabrics are garments\" means $F \\cap G \\neq \\emptyset$. Since $G \\subseteq F$ and $G$ is non-empty, all garments are fabrics, which directly implies some fabrics are garments. Hence, II follows.\n- Conclusion III: \"All shirts are fabrics\" means $S \\subseteq F$. By transitivity of subsets ($S \\subseteq G$ and $G \\subseteq F$), $S \\subseteq F$ must hold. Hence, III follows.\n- Conclusion IV: \"No shirt is a fabric\" means $S \\cap F = \\emptyset$. Since $S \\subseteq F$, this directly contradicts the statements. Hence, IV does not follow.\n\nTherefore, only conclusions II and III follow.",
-  "distractor_notes": "- Option A wrongly accepts Conclusion I, committing the fallacy of illicit conversion of an A-type proposition (assuming 'All A are B' implies 'All B are A').\n- Option C wrongly includes Conclusion I alongside II and III.\n- Option D incorrectly takes Conclusion IV to follow, which is a contradictory statement to the true deduction that all shirts are fabrics.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Lanterns ⊆ instruments ⊆ portable things, so I follows by transitivity. Since instruments exist under the standard syllogism convention, II follows. III reverses the inclusion; IV contradicts the statements. B: III fails; C: IV fails; D: I and II follow.",
+  "distractor_notes": "B: incorrectly treats the converse inclusion as valid. C: accepts a conclusion that contradicts the nested sets. D: overlooks the valid transitive conclusion and the existential implication."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

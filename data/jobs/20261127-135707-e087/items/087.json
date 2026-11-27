@@ -1,0 +1,68 @@
+{
+ "qno": 87,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 87,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Tense consistency",
+  "archetype": "spot the error (no error)",
+  "brief": "Long sentence mixing past perfect, simple past and a time clause; the trap options look wrong but the correct answer is 'no error', testing confidence in tense rules.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:63",
+   "2026s2:68",
+   "2021:90"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the part of the sentence that contains an error. If there is no error, choose “No error.”\nWhen the inquiry resumed on Tuesday, / the clerk had already indexed the files, / and the chair adjourned the session after the final witness withdrew.",
+ "options": [
+  "When the inquiry resumed on Tuesday",
+  "No error",
+  "and the chair adjourned the session after the final witness withdrew",
+  "the clerk had already indexed the files"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The past perfect (“had already indexed”) correctly marks the indexing as completed before the inquiry resumed. The simple past verbs in the final clause correctly describe the later events.",
+   "answer": "D",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The files were indexed before the inquiry resumed, so the past perfect is appropriate. “Resumed,” “adjourned” and “withdrew” form a coherent simple-past sequence; “after” clearly orders the last two events. No tense error occurs.\n\nIndependent check: The past perfect (“had already indexed”) correctly marks the indexing as completed before the inquiry resumed. The simple past verbs in the final clause correctly describe the later events.",
+ "solution": "The past perfect $had already indexed$ shows the files were indexed before the inquiry resumed. The simple past verbs $adjourned$ and $withdrew$ correctly describe the subsequent events; hence, there is no error.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Find the part of the sentence that contains an error. If there is no error, choose “No error.”\nWhen the inquiry resumed on Tuesday, / the clerk had already indexed the files, / and the chair adjourned the session after the final witness withdrew.",
+  "options": [
+   "When the inquiry resumed on Tuesday",
+   "the clerk had already indexed the files",
+   "and the chair adjourned the session after the final witness withdrew",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "The files were indexed before the inquiry resumed, so the past perfect is appropriate. “Resumed,” “adjourned” and “withdrew” form a coherent simple-past sequence; “after” clearly orders the last two events. No tense error occurs.",
+  "distractor_notes": "A: “Resumed” correctly states the past event that anchors the sequence. \nB: “Had indexed” correctly marks the earlier completed action. \nC: “After” makes the sequence of the two simple-past actions clear."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

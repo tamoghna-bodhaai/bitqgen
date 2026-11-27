@@ -1,0 +1,70 @@
+{
+ "qno": 5,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 5,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Crystal field theory – high/low spin",
+  "archetype": "electron configuration comparison",
+  "brief": "Compare two octahedral complexes with given ligands from spectrochemical series and identify which is high spin/paramagnetic with justification via t2g-eg filling.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:48",
+   "2026s1:51",
+   "2024s1:32"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the octahedral complexes $[\\text{FeF}_6]^{4-}$ and $[\\text{Fe(CN)}_6]^{4-}$, which comparison is correct?",
+ "options": [
+  "$[\\text{FeF}_6]^{4-}$ is high-spin and paramagnetic ($t_{2g}^{4}e_g^{2}$); $[\\text{Fe(CN)}_6]^{4-}$ is low-spin and diamagnetic ($t_{2g}^{6}$).",
+  "$[\\text{FeF}_6]^{4-}$ is low-spin and diamagnetic ($t_{2g}^{6}$); $[\\text{Fe(CN)}_6]^{4-}$ is high-spin and paramagnetic ($t_{2g}^{4}e_g^{2}$).",
+  "Both are high-spin and paramagnetic ($t_{2g}^{4}e_g^{2}$).",
+  "Both are low-spin and diamagnetic ($t_{2g}^{6}$)."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fe is +2 in both complexes, so it is d⁶. Weak-field F⁻ gives high-spin t₂g⁴e_g²; strong-field CN⁻ gives low-spin t₂g⁶.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Fe is in the $+2$ oxidation state in both complexes; $\\text{Fe}^{2+}$ is $d^6$.\\n$\\text{F}^-$ is weak-field: $t_{2g}^{4}e_g^{2}$, with unpaired electrons.\\n$\\text{CN}^-$ is strong-field: $t_{2g}^{6}e_g^{0}$, with no unpaired electrons.\n\nIndependent check: Fe is +2 in both complexes, so it is d⁶. Weak-field F⁻ gives high-spin t₂g⁴e_g²; strong-field CN⁻ gives low-spin t₂g⁶.",
+ "solution": "In both complexes, Fe is in the $+2$ oxidation state, so Fe$^{2+}$ is $d^6$. F$^-$ is a weak-field ligand, while CN$^-$ is a strong-field ligand.\n$$[\\text{FeF}_6]^{4-}:\\ t_{2g}^{4}e_g^{2}\\ (\\text{high-spin, paramagnetic});\\quad [\\text{Fe(CN)}_6]^{4-}:\\ t_{2g}^{6}\\ (\\text{low-spin, diamagnetic})$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the octahedral complexes $[\\text{FeF}_6]^{4-}$ and $[\\text{Fe(CN)}_6]^{4-}$, which comparison is correct?",
+  "options": [
+   "$[\\text{FeF}_6]^{4-}$ is high-spin and paramagnetic ($t_{2g}^{4}e_g^{2}$); $[\\text{Fe(CN)}_6]^{4-}$ is low-spin and diamagnetic ($t_{2g}^{6}$).",
+   "$[\\text{FeF}_6]^{4-}$ is low-spin and diamagnetic ($t_{2g}^{6}$); $[\\text{Fe(CN)}_6]^{4-}$ is high-spin and paramagnetic ($t_{2g}^{4}e_g^{2}$).",
+   "Both are high-spin and paramagnetic ($t_{2g}^{4}e_g^{2}$).",
+   "Both are low-spin and diamagnetic ($t_{2g}^{6}$)."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Fe is in the $+2$ oxidation state in both complexes; $\\text{Fe}^{2+}$ is $d^6$.\\n$\\text{F}^-$ is weak-field: $t_{2g}^{4}e_g^{2}$, with unpaired electrons.\\n$\\text{CN}^-$ is strong-field: $t_{2g}^{6}e_g^{0}$, with no unpaired electrons.",
+  "distractor_notes": "B reverses the relative ligand strengths and spin states.\\nC incorrectly treats the strong-field $\\text{CN}^-$ complex as high-spin.\\nD incorrectly treats the weak-field $\\text{F}^-$ complex as low-spin."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

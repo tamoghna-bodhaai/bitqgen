@@ -1,0 +1,70 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Magnetic moment of a coil",
+  "archetype": "single-formula numerical",
+  "brief": "A current-carrying coil of given turns, area and current: compute its magnetic moment, and possibly the torque in a given field.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:6",
+   "2023s2:1",
+   "2023s1:9"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A coil of $40$ turns has an area of $5\\ \\text{cm}^2$ and carries a current of $2$ A. Its magnetic moment is",
+ "options": [
+  "$0.004\\ \\text{A m}^2$",
+  "$0.02\\ \\text{A m}^2$",
+  "$0.04\\ \\text{A m}^2$",
+  "$0.4\\ \\text{A m}^2$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Magnetic moment: μ = NIA = 40 × 2 × (5 × 10⁻⁴ m²) = 0.04 A·m².",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mu=NIA$; $A=5\\times10^{-4}\\ \\text{m}^2$.\n$\\mu=40(2)(5\\times10^{-4})=0.04\\ \\text{A m}^2$\n\nIndependent check: Magnetic moment: μ = NIA = 40 × 2 × (5 × 10⁻⁴ m²) = 0.04 A·m².",
+ "solution": "Magnetic moment of a coil is $\\mu=NIA$; the area is $5\\times10^{-4}\\,\\text{m}^2$.\n$$\\mu=40\\times2\\times5\\times10^{-4}=0.04\\,\\text{A m}^2$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A coil of $40$ turns has an area of $5\\ \\text{cm}^2$ and carries a current of $2$ A. Its magnetic moment is",
+  "options": [
+   "$0.004\\ \\text{A m}^2$",
+   "$0.02\\ \\text{A m}^2$",
+   "$0.04\\ \\text{A m}^2$",
+   "$0.4\\ \\text{A m}^2$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\mu=NIA$; $A=5\\times10^{-4}\\ \\text{m}^2$.\n$\\mu=40(2)(5\\times10^{-4})=0.04\\ \\text{A m}^2$",
+  "distractor_notes": "A: area conversion off by a factor of $10$. B: omits a factor of $2$ in the turns-current product. D: area conversion off by a factor of $10$ in the other direction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

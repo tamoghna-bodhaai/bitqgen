@@ -1,0 +1,68 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching a wire",
+  "archetype": "volume-constant scaling",
+  "brief": "Wire is stretched so its length increases by a given percentage or factor (volume constant); find the new resistance or the ratio of new to old resistance.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:13",
+   "2025s2:12",
+   "2021:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "A wire of resistance $R$ is stretched uniformly until its length increases by $20\\%$. Assuming its volume and resistivity remain constant, its new resistance is:",
+ "options": [
+  "$1.44R$",
+  "$1.20R$",
+  "$0.83R$",
+  "$2.40R$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With volume constant, the new area is A/1.2. Hence R' = ρ(1.2L)/(A/1.2) = 1.44R.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$R=\\rho L/A$, and $AL=\\text{constant}\\Rightarrow R\\propto L^2$; $R'/R=(1.20)^2=1.44$.\n\nIndependent check: With volume constant, the new area is A/1.2. Hence R' = ρ(1.2L)/(A/1.2) = 1.44R.",
+ "solution": "With volume constant, $AL$ is constant, so $R=\\rho L/A\\propto L^2$.\n$$\\frac{R'}{R}=(1.20)^2=1.44$$\nThus, the new resistance is $1.44R$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wire of resistance $R$ is stretched uniformly until its length increases by $20\\%$. Assuming its volume and resistivity remain constant, its new resistance is:",
+  "options": [
+   "$0.83R$",
+   "$1.20R$",
+   "$1.44R$",
+   "$2.40R$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$R=\\rho L/A$, and $AL=\\text{constant}\\Rightarrow R\\propto L^2$; $R'/R=(1.20)^2=1.44$.",
+  "distractor_notes": "A: takes the reciprocal length factor; B: assumes resistance scales linearly with length; D: incorrectly doubles the percentage change in resistance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

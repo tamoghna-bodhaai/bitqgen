@@ -1,0 +1,68 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Continuity of piecewise functions",
+  "archetype": "piecewise check",
+  "brief": "Piecewise function with a, b parameters; find values making it continuous at the junction (possibly also matching one-sided limits).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:95",
+   "2023s2:121",
+   "2025s2:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "For which values of $a$ and $b$ is $f$ continuous at both $x=1$ and $x=3$? $$f(x)=\\begin{cases}x^2+ax,&x<1,\\\\2ax+b,&1\\le x<3,\\\\x^2+bx,&x\\ge3.\\end{cases}$$",
+ "options": [
+  "$(\\dfrac{11}{8},\\dfrac{3}{8})$",
+  "$(\\dfrac{3}{8},-\\dfrac{11}{8})$",
+  "$(\\dfrac{9}{8},-\\dfrac{1}{8})$",
+  "$(\\dfrac{11}{8},-\\dfrac{3}{8})$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Continuity at 1 gives 1+a=2a+b, so a+b=1. Continuity at 3 gives 6a+b=9+3b, so 3a-b=9/2. Solving yields (a,b)=(11/8,-3/8), option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At $x=1$: $1+a=2a+b$; at $x=3$: $6a+b=9+3b$. Thus $b=1-a$ and $8a=11$, giving $(a,b)=(\\dfrac{11}{8},-\\dfrac{3}{8})$.\n\nIndependent check: Continuity at 1 gives 1+a=2a+b, so a+b=1. Continuity at 3 gives 6a+b=9+3b, so 3a-b=9/2. Solving yields (a,b)=(11/8,-3/8), option A.",
+ "solution": "Continuity at $x=1$ and $x=3$ requires\n$$1+a=2a+b,\\qquad 6a+b=9+3b.$$\nThus $a+b=1$ and $3a-b=\\frac{9}{2}$, giving $a=\\frac{11}{8}$ and $b=-\\frac{3}{8}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For which values of $a$ and $b$ is $f$ continuous at both $x=1$ and $x=3$? $$f(x)=\\begin{cases}x^2+ax,&x<1,\\\\2ax+b,&1\\le x<3,\\\\x^2+bx,&x\\ge3.\\end{cases}$$",
+  "options": [
+   "$(\\dfrac{11}{8},-\\dfrac{3}{8})$",
+   "$(\\dfrac{3}{8},-\\dfrac{11}{8})$",
+   "$(\\dfrac{9}{8},-\\dfrac{1}{8})$",
+   "$(\\dfrac{11}{8},\\dfrac{3}{8})$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "At $x=1$: $1+a=2a+b$; at $x=3$: $6a+b=9+3b$. Thus $b=1-a$ and $8a=11$, giving $(a,b)=(\\dfrac{11}{8},-\\dfrac{3}{8})$.",
+  "distractor_notes": "B: interchanges the values of $a$ and $b$; C: algebra error while solving the junction conditions; D: loses the negative sign of $b$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Massive rope",
+  "archetype": "free-body equations",
+  "brief": "A chain of connected blocks on rough surfaces or a massive rope pulled over a pulley; write free-body equations for each and solve for tension at a point or acceleration (symbolic multi-equation).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:25",
+   "2024s2:14",
+   "2023s1:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "A uniform rope of mass $M$ and length $L$ connects blocks $m_1$ and $m_2$ over an ideal pulley, with $m_2>m_1$. At a point a distance $x$ from $m_1$ along its vertical side, what is the rope tension?",
+ "options": [
+  "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_1+M)}{m_1+m_2+M}$",
+  "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_2+M)}{m_1+m_2+M}$",
+  "$\\dfrac{2m_2g\\left(m_1+\\dfrac{Mx}{L}\\right)}{m_1+m_2}$",
+  "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(m_2-m_1)}{m_1+m_2+M}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The system acceleration is \\(a=\\frac{(m_2-m_1)g}{m_1+m_2+M}\\). For the block \\(m_1\\) and rope segment of mass \\(Mx/L\\), \\(T=(m_1+Mx/L)(g+a)\\), giving option B.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=\\dfrac{(m_2-m_1)g}{m_1+m_2+M}$. The block and rope segment up to the point have mass $m_1+Mx/L$ and accelerate upward. $T-(m_1+Mx/L)g=(m_1+Mx/L)a$. Hence $T=\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_2+M)}{m_1+m_2+M}$.\n\nIndependent check: The system acceleration is \\(a=\\frac{(m_2-m_1)g}{m_1+m_2+M}\\). For the block \\(m_1\\) and rope segment of mass \\(Mx/L\\), \\(T=(m_1+Mx/L)(g+a)\\), giving option B.",
+ "solution": "The system acceleration is $$a=\\frac{(m_2-m_1)g}{m_1+m_2+M}.$$ The block and rope segment up to the point, of mass $m_1+\\frac{Mx}{L}$, accelerate upward, so $T=(m_1+\\frac{Mx}{L})(g+a)=\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_2+M)}{m_1+m_2+M}$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A uniform rope of mass $M$ and length $L$ connects blocks $m_1$ and $m_2$ over an ideal pulley, with $m_2>m_1$. At a point a distance $x$ from $m_1$ along its vertical side, what is the rope tension?",
+  "options": [
+   "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_1+M)}{m_1+m_2+M}$",
+   "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_2+M)}{m_1+m_2+M}$",
+   "$\\dfrac{2m_2g\\left(m_1+\\dfrac{Mx}{L}\\right)}{m_1+m_2}$",
+   "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(m_2-m_1)}{m_1+m_2+M}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$a=\\dfrac{(m_2-m_1)g}{m_1+m_2+M}$. The block and rope segment up to the point have mass $m_1+Mx/L$ and accelerate upward. $T-(m_1+Mx/L)g=(m_1+Mx/L)a$. Hence $T=\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_2+M)}{m_1+m_2+M}$.",
+  "distractor_notes": "A: uses the lighter mass in the acceleration contribution to tension; C: ignores the rope’s mass in the system acceleration; D: uses $a$ instead of $g+a$ for the segment’s tension."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "general solution",
+  "brief": "Solve an equation of the form a cos x + b sin x = c (converted to single cosine/sine) and give the general solution in terms of n.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:93",
+   "2024s2:130",
+   "2021:125"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The general solution of $5\\cos x-12\\sin x=\\dfrac{13}{2}$ is",
+ "options": [
+  "$x=2n\\pi-\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{3},\\quad n\\in\\mathbb Z$",
+  "$x=2n\\pi+\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{3},\\quad n\\in\\mathbb Z$",
+  "$x=n\\pi-\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{3},\\quad n\\in\\mathbb Z$",
+  "$x=2n\\pi-\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{6},\\quad n\\in\\mathbb Z$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Write 5 cos x − 12 sin x = 13 cos(x + φ), where φ = arctan(12/5). Then cos(x + φ) = 1/2, so x = 2nπ − φ ± π/3.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$5\\cos x-12\\sin x=13\\cos(x+\\alpha)$, where $\\alpha=\\tan^{-1}\\left(\\dfrac{12}{5}\\right)$. Thus $\\cos(x+\\alpha)=\\dfrac12$, so $x+\\alpha=2n\\pi\\pm\\dfrac{\\pi}{3}$.\n\nIndependent check: Write 5 cos x − 12 sin x = 13 cos(x + φ), where φ = arctan(12/5). Then cos(x + φ) = 1/2, so x = 2nπ − φ ± π/3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The general solution of $5\\cos x-12\\sin x=\\dfrac{13}{2}$ is",
+  "options": [
+   "$x=2n\\pi-\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{3},\\quad n\\in\\mathbb Z$",
+   "$x=2n\\pi+\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{3},\\quad n\\in\\mathbb Z$",
+   "$x=n\\pi-\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{3},\\quad n\\in\\mathbb Z$",
+   "$x=2n\\pi-\\tan^{-1}\\left(\\dfrac{12}{5}\\right)\\pm\\dfrac{\\pi}{6},\\quad n\\in\\mathbb Z$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$5\\cos x-12\\sin x=13\\cos(x+\\alpha)$, where $\\alpha=\\tan^{-1}\\left(\\dfrac{12}{5}\\right)$. Thus $\\cos(x+\\alpha)=\\dfrac12$, so $x+\\alpha=2n\\pi\\pm\\dfrac{\\pi}{3}$.",
+  "distractor_notes": "B: uses the wrong sign for the phase shift; C: uses period $\\pi$ instead of $2\\pi$; D: uses the wrong principal angle for cosine."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

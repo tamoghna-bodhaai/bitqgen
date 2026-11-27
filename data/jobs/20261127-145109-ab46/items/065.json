@@ -1,0 +1,70 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "R/S configuration in Fischer projection",
+  "archetype": "ordering",
+  "brief": "Assign R/S to two or three Fischer projections of the same stereocentre; identify identical/enantiomeric pairs or rank by configuration.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:40",
+   "2024s1:41",
+   "2026s1:55"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Three Fischer projections have the same four groups at a stereocentre; vertical bonds point away and horizontal bonds point towards the viewer. I: top $\\text{COOH}$, bottom $\\text{CH}_3$, left $\\text{OH}$, right $\\text{H}$; II: top $\\text{COOH}$, bottom $\\text{CH}_3$, left $\\text{H}$, right $\\text{OH}$; III: top $\\text{CH}_3$, bottom $\\text{COOH}$, left $\\text{OH}$, right $\\text{H}$. Which pair represents identical configurations?",
+ "options": [
+  "I and II only",
+  "I and III only",
+  "All three",
+  "II and III only"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Priorities are OH > COOH > CH₃ > H. II differs from I by swapping OH and H; III differs from I by swapping COOH and CH₃. Each is one swap, so II and III have the same configuration.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Priority: $\\text{OH} > \\text{COOH} > \\text{CH}_3 > \\text{H}$.\\nI: lowest priority is horizontal; inversion gives $S$.\\nII: lowest priority is horizontal; inversion gives $R$.\\nIII: lowest priority is horizontal; inversion gives $R$.\\nThus II and III are identical.\n\nIndependent check: Priorities are OH > COOH > CH₃ > H. II differs from I by swapping OH and H; III differs from I by swapping COOH and CH₃. Each is one swap, so II and III have the same configuration.",
+ "solution": "Priority order is $\\text{OH} > \\text{COOH} > \\text{CH}_3 > \\text{H}$. Since the lowest-priority group is horizontal in each projection, reverse the apparent order of $1\\to2\\to3$.\nI is $S$, while II and III are both $R$; hence II and III have identical configurations.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Three Fischer projections have the same four groups at a stereocentre; vertical bonds point away and horizontal bonds point towards the viewer. I: top $\\text{COOH}$, bottom $\\text{CH}_3$, left $\\text{OH}$, right $\\text{H}$; II: top $\\text{COOH}$, bottom $\\text{CH}_3$, left $\\text{H}$, right $\\text{OH}$; III: top $\\text{CH}_3$, bottom $\\text{COOH}$, left $\\text{OH}$, right $\\text{H}$. Which pair represents identical configurations?",
+  "options": [
+   "I and II only",
+   "I and III only",
+   "II and III only",
+   "All three"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Priority: $\\text{OH} > \\text{COOH} > \\text{CH}_3 > \\text{H}$.\\nI: lowest priority is horizontal; inversion gives $S$.\\nII: lowest priority is horizontal; inversion gives $R$.\\nIII: lowest priority is horizontal; inversion gives $R$.\\nThus II and III are identical.",
+  "distractor_notes": "A: treats I and II as having the same configuration.\\nB: treats I and III as having the same configuration.\\nD: assumes all three projections have the same configuration."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

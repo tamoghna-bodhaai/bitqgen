@@ -1,0 +1,68 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "general solution",
+  "brief": "Solve an equation reducible to a single trig function (e.g. via factorising sin/cos) and state the general solution set; standard.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:92",
+   "2024s2:130",
+   "2025s2:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\sin 2x=\\sin x$ is",
+ "options": [
+  "$x=n\\pi$ or $x=\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$",
+  "$x=n\\pi$ or $x=\\pm\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$",
+  "$x=2n\\pi$ or $x=\\pm\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$",
+  "$x=n\\pi$ or $x=\\pm\\dfrac{\\pi}{6}+2n\\pi$, $n\\in\\mathbb{Z}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor: sin x(2 cos x − 1) = 0. Thus x = nπ or x = ±π/3 + 2nπ, matching (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sin 2x-\\sin x=0\\Rightarrow \\sin x(2\\cos x-1)=0$.\\n$\\sin x=0\\Rightarrow x=n\\pi$.\\n$\\cos x=\\dfrac12\\Rightarrow x=\\pm\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$.\n\nIndependent check: Factor: sin x(2 cos x − 1) = 0. Thus x = nπ or x = ±π/3 + 2nπ, matching (A).",
+ "solution": "Using $\\sin 2x=2\\sin x\\cos x$,\n$$\\sin x(2\\cos x-1)=0.$$\nThus $\\sin x=0$ gives $x=n\\pi$, while $\\cos x=\\frac12$ gives $x=\\pm\\frac{\\pi}{3}+2n\\pi$, where $n\\in\\mathbb Z$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The general solution of $\\sin 2x=\\sin x$ is",
+  "options": [
+   "$x=n\\pi$ or $x=\\pm\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$",
+   "$x=n\\pi$ or $x=\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$",
+   "$x=2n\\pi$ or $x=\\pm\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$",
+   "$x=n\\pi$ or $x=\\pm\\dfrac{\\pi}{6}+2n\\pi$, $n\\in\\mathbb{Z}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\sin 2x-\\sin x=0\\Rightarrow \\sin x(2\\cos x-1)=0$.\\n$\\sin x=0\\Rightarrow x=n\\pi$.\\n$\\cos x=\\dfrac12\\Rightarrow x=\\pm\\dfrac{\\pi}{3}+2n\\pi$, $n\\in\\mathbb{Z}$.",
+  "distractor_notes": "B: omits the negative cosine solution; C: keeps only even multiples of $\\pi$; D: uses the wrong angle for $\\cos x=\\dfrac12$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

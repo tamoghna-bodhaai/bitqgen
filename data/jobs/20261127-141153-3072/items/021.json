@@ -1,0 +1,68 @@
+{
+ "qno": 21,
+ "section": "Physics",
+ "slot": {
+  "qno": 21,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Lift problems",
+  "archetype": "free-body equations",
+  "brief": "Person standing in a lift accelerating up or down with given acceleration; draw the pseudo-force and find the apparent weight (normal reaction) as a fraction or multiple of mg.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:4",
+   "2026s1:26",
+   "2024s1:8"
+  ]
+ },
+ "status": "ok",
+ "stem": "A person stands on a scale in a lift accelerating downward at $2.5\\ \\text{m s}^{-2}$. Taking $g=10\\ \\text{m s}^{-2}$, what is the scale reading as a fraction of the person’s true weight $mg$?",
+ "options": [
+  "$\\dfrac14mg$",
+  "$\\dfrac54mg$",
+  "$\\dfrac34mg$",
+  "$mg$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For downward acceleration, the scale reads N = m(g − a) = m(10 − 2.5) = 0.75mg.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In the lift frame, the pseudo-force is upward: $N+ma-mg=0$; $N=m(g-a)=m(10-2.5)=0.75mg=\\dfrac34mg$.\n\nIndependent check: For downward acceleration, the scale reads N = m(g − a) = m(10 − 2.5) = 0.75mg.",
+ "solution": "For downward acceleration $a$, the scale reading is the normal force $N=m(g-a)$.\n$$N=m(10-2.5)=0.75mg=\\dfrac34mg$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A person stands on a scale in a lift accelerating downward at $2.5\\ \\text{m s}^{-2}$. Taking $g=10\\ \\text{m s}^{-2}$, what is the scale reading as a fraction of the person’s true weight $mg$?",
+  "options": [
+   "$\\dfrac14mg$",
+   "$\\dfrac34mg$",
+   "$\\dfrac54mg$",
+   "$mg$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "In the lift frame, the pseudo-force is upward: $N+ma-mg=0$; $N=m(g-a)=m(10-2.5)=0.75mg=\\dfrac34mg$.",
+  "distractor_notes": "A uses only the acceleration term for the scale reading; C uses the sign for an upward-accelerating lift; D ignores the lift’s acceleration."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

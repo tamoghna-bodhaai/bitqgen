@@ -1,0 +1,70 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with repetition and restrictions",
+  "archetype": "restricted arrangement",
+  "brief": "Arrange letters of a word with repeated letters under a block condition (e.g., all vowels together or two specific letters never adjacent), using total minus invalid.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:96",
+   "2026s1:96",
+   "2021:147"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "How many distinct arrangements of the letters of BALLOON have neither the two L's nor the two O's adjacent?",
+ "options": [
+  "$540$",
+  "$720$",
+  "$660$",
+  "$900$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total arrangements: 7!/(2!2!) = 1260. With the L’s adjacent: 6!/2! = 360; with the O’s adjacent: 360; with both pairs adjacent: 5! = 120. By inclusion–exclusion, 1260 − 360 − 360 + 120 = 660.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Total $=\\dfrac{7!}{2!2!}=1260$. L's adjacent: $\\dfrac{6!}{2!}=360$; O's adjacent: $360$. Both pairs adjacent: $5!=120$. Required $=1260-360-360+120=660$.\n\nIndependent check: Total arrangements: 7!/(2!2!) = 1260. With the L’s adjacent: 6!/2! = 360; with the O’s adjacent: 360; with both pairs adjacent: 5! = 120. By inclusion–exclusion, 1260 − 360 − 360 + 120 = 660.",
+ "solution": "By inclusion–exclusion, total arrangements are $\\dfrac{7!}{2!2!}=1260$. Arrangements with the L's adjacent or the O's adjacent are each $\\dfrac{6!}{2!}=360$, and with both pairs adjacent are $5!=120$.\n$$1260-360-360+120=660$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "How many distinct arrangements of the letters of BALLOON have neither the two L's nor the two O's adjacent?",
+  "options": [
+   "$540$",
+   "$660$",
+   "$720$",
+   "$900$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Total $=\\dfrac{7!}{2!2!}=1260$. L's adjacent: $\\dfrac{6!}{2!}=360$; O's adjacent: $360$. Both pairs adjacent: $5!=120$. Required $=1260-360-360+120=660$.",
+  "distractor_notes": "A: subtracts both adjacency counts without adding back their overlap; C: miscounts the overlap where both pairs are adjacent; D: subtracts only one adjacency case."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 75,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 75,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "VBT – spin and magnetism",
+  "archetype": "electron configuration comparison",
+  "brief": "Three complexes given with ligands/metal ions; determine hybridisation (d2sp3 vs sp3d2), spin state and magnetic moment — must first assign metal oxidation states, then apply VBT at higher difficulty.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:50",
+   "2024s1:42",
+   "2024s2:40"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let I = $[\\text{Co}(en)_3]^{3+}$, II = $[\\text{FeF}_6]^{3-}$ and III = $[\\text{Mn(CN)}_6]^{3-}$. Which row gives the hybridisation, spin state, number of unpaired electrons $n$ and spin-only magnetic moment for I, II and III? Use $\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$.",
+ "options": [
+  "I: $sp^3d^2$, high, $4$, $4.90\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$",
+  "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$",
+  "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $d^2sp^3$, low, $1$, $1.73\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$",
+  "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $sp^3d^2$, high, $4$, $4.90\\ \\text{BM}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I: Co³⁺ is d⁶; en gives low-spin d²sp³, n=0. II: Fe³⁺ is d⁵; F⁻ gives high-spin sp³d², n=5, μ=√35≈5.92 BM. III: Mn³⁺ is d⁴; CN⁻ gives low-spin d²sp³, n=2, μ=√8≈2.83 BM. These match option A.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I: $\\text{Co}^{3+}:d^6$; strong-field $en$ gives low spin, $d^2sp^3$, $n=0$, $\\mu=0$. \nII: $\\text{Fe}^{3+}:d^5$; weak-field $\\text{F}^-$ gives high spin, $sp^3d^2$, $n=5$, $\\mu=\\sqrt{35}=5.92\\ \\text{BM}$. \nIII: $\\text{Mn}^{3+}:d^4$; strong-field $\\text{CN}^-$ gives low spin, $d^2sp^3$, $n=2$, $\\mu=\\sqrt{8}=2.83\\ \\text{BM}$.\n\nIndependent check: I: Co³⁺ is d⁶; en gives low-spin d²sp³, n=0. II: Fe³⁺ is d⁵; F⁻ gives high-spin sp³d², n=5, μ=√35≈5.92 BM. III: Mn³⁺ is d⁴; CN⁻ gives low-spin d²sp³, n=2, μ=√8≈2.83 BM. These match option A.",
+ "solution": "For octahedral complexes, $en$ and $CN^-$ cause pairing, while $F^-$ gives high spin. Thus Co$^{3+}$ ($d^6$): $d^2sp^3$, $n=0$; Fe$^{3+}$ ($d^5$): $sp^3d^2$, $n=5$; Mn$^{3+}$ ($d^4$): $d^2sp^3$, $n=2$.\n$$\\mu=\\sqrt{n(n+2)}$$\nThe moments are $0$, $\\sqrt{35}=5.92$ BM and $\\sqrt{8}=2.83$ BM, respectively; these match (B).",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Let I = $[\\text{Co}(en)_3]^{3+}$, II = $[\\text{FeF}_6]^{3-}$ and III = $[\\text{Mn(CN)}_6]^{3-}$. Which row gives the hybridisation, spin state, number of unpaired electrons $n$ and spin-only magnetic moment for I, II and III? Use $\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$.",
+  "options": [
+   "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$",
+   "I: $sp^3d^2$, high, $4$, $4.90\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$",
+   "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $d^2sp^3$, low, $1$, $1.73\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$",
+   "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $sp^3d^2$, high, $4$, $4.90\\ \\text{BM}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "I: $\\text{Co}^{3+}:d^6$; strong-field $en$ gives low spin, $d^2sp^3$, $n=0$, $\\mu=0$. \nII: $\\text{Fe}^{3+}:d^5$; weak-field $\\text{F}^-$ gives high spin, $sp^3d^2$, $n=5$, $\\mu=\\sqrt{35}=5.92\\ \\text{BM}$. \nIII: $\\text{Mn}^{3+}:d^4$; strong-field $\\text{CN}^-$ gives low spin, $d^2sp^3$, $n=2$, $\\mu=\\sqrt{8}=2.83\\ \\text{BM}$.",
+  "distractor_notes": "B treats $[\\text{Co}(en)_3]^{3+}$ as high-spin; C treats weak-field $\\text{F}^-$ as strong-field; D treats strong-field $\\text{CN}^-$ as weak-field."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

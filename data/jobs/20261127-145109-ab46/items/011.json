@@ -1,0 +1,70 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Mirror formula",
+  "archetype": "single-formula numerical",
+  "brief": "A mirror forms an image with given object distance and magnification (or find image position); apply the mirror formula with sign conventions.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:29",
+   "2026s2:18",
+   "2025s1:22"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An object is placed $20$ cm in front of a spherical mirror. Its image is virtual and upright, with magnification $+2$. Using the Cartesian sign convention, the focal length of the mirror is",
+ "options": [
+  "$-20$ cm",
+  "$-40$ cm",
+  "$+20$ cm",
+  "$+40$ cm"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With u = -20 cm and m = -v/u = +2, v = +40 cm. Then 1/f = 1/v + 1/u = 1/40 - 1/20 = -1/40, so f = -40 cm.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=-20$ cm, $m=-\\dfrac{v}{u}=+2\\Rightarrow v=+40$ cm\n$\\dfrac{1}{f}=\\dfrac{1}{v}+\\dfrac{1}{u}=\\dfrac{1}{40}-\\dfrac{1}{20}=-\\dfrac{1}{40}$\n$f=-40$ cm\n\nIndependent check: With u = -20 cm and m = -v/u = +2, v = +40 cm. Then 1/f = 1/v + 1/u = 1/40 - 1/20 = -1/40, so f = -40 cm.",
+ "solution": "Using $m=-v/u$ and $u=-20\\text{ cm}$,\n$$+2=-\\frac{v}{-20}\\implies v=+40\\text{ cm}.$$\nThe mirror formula gives $\\frac{1}{f}=\\frac{1}{v}+\\frac{1}{u}=\\frac{1}{40}-\\frac{1}{20}=-\\frac{1}{40}$, hence $f=-40\\text{ cm}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An object is placed $20$ cm in front of a spherical mirror. Its image is virtual and upright, with magnification $+2$. Using the Cartesian sign convention, the focal length of the mirror is",
+  "options": [
+   "$-40$ cm",
+   "$-20$ cm",
+   "$+20$ cm",
+   "$+40$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$u=-20$ cm, $m=-\\dfrac{v}{u}=+2\\Rightarrow v=+40$ cm\n$\\dfrac{1}{f}=\\dfrac{1}{v}+\\dfrac{1}{u}=\\dfrac{1}{40}-\\dfrac{1}{20}=-\\dfrac{1}{40}$\n$f=-40$ cm",
+  "distractor_notes": "B: Uses the object distance as the focal length. C: Gives the wrong sign and magnitude. D: Gets the image distance but reports it as the focal length."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

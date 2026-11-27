@@ -1,0 +1,95 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Resonance and bond length",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:44",
+   "2025s1:44",
+   "2025s1:46"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge2664826b42b"
+ },
+ "status": "flagged",
+ "stem": "In the structures shown in the figure, select the correct order of the labelled C–O bond lengths.",
+ "options": [
+  "$c<a<b$",
+  "$a<b<c$",
+  "$b<c<a$",
+  "$b<a<c$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q065_stem_v2.png",
+  "width_pct": 24,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The figure contains no visible labels a, b, or c, so the bond-length order cannot be matched to the options. Chemically, the carbonyl C–O is shortest, the carboxylate C–O is intermediate, and the ester C–O single bond is longest.",
+   "answer": "NONE",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The figure does not show which C–O bonds are labelled a, b, and c, so no option can be identified."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "Bond orders: ester C=O ≈ 2 (shortest, ~1.20 Å); carboxylate C–O = 1.5 via equivalent resonance structures (~1.26 Å); ester C–O–CH3 essentially single bond (longest, ~1.34–1.43 Å). Taking a = ester C=O, b = carboxylate C–O, c = ester C–OCH3, the order is a < b < c, i.e. option B.",
+   "answer": "B",
+   "confidence": 0.6,
+   "multiple_correct": false,
+   "issues": [
+    "The figure shows no a/b/c labels on any bond, so the label-to-bond mapping must be guessed (assumed a = ester C=O, b = carboxylate C–O, c = ester C–OCH3). Labels must be added; as printed the question is ambiguous."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [
+  "unverified: solvers disagreed with the key after all revisions — review manually"
+ ],
+ "working": "Acetate resonance makes its two C–O bonds equivalent, each with bond order about $1.5$.\n$b$ is an ester C=O bond; $c$ is an ester C–O bond.\nThus $r_b<r_a<r_c$.",
+ "solution": "Acetate resonance makes the two C–O bonds equivalent, with bond order about $1.5$; hence $a$ is intermediate in length between a carbonyl and a single C–O bond.\nFor the ester, $b$ is C=O and $c$ is C–O, so $r_b<r_a<r_c$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the structures shown in the figure, select the correct order of the labelled C–O bond lengths.",
+  "options": [
+   "$b<a<c$",
+   "$a<b<c$",
+   "$b<c<a$",
+   "$c<a<b$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw two structures side by side. On the left, draw an acetate ion in one conventional Lewis form, with the carboxyl carbon double-bonded to one oxygen and single-bonded to an oxygen carrying a negative charge. Label the single C–O bond a. On the right, draw methyl acetate. Label its carbonyl C=O bond b and its acyl C–O single bond c. Show all atoms, charges, and bonds clearly; include no other labels or arrows.",
+   "smiles": "CC(=O)[O-].CC(=O)OC"
+  },
+  "difficulty_estimate": 3,
+  "working": "Acetate resonance makes its two C–O bonds equivalent, each with bond order about $1.5$.\n$b$ is an ester C=O bond; $c$ is an ester C–O bond.\nThus $r_b<r_a<r_c$.",
+  "distractor_notes": "B: treats the acetate C–O bond as shorter than the carbonyl bond. C: places the ester C–O bond below the acetate C–O bond. D: reverses the expected bond-length trend."
+ },
+ "variant_of": "ge2664826b42b",
+ "author_model": "openai/gpt-6-luna-pro"
+}

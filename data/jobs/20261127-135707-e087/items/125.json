@@ -1,0 +1,68 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Cross product and angle between vectors",
+  "archetype": "cross product then angle",
+  "brief": "Given vectors with dot product equal to cross-product magnitude, determine the angle between them.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:120",
+   "2021:109",
+   "2026s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\vec u=(\\hat i+2\\hat j+2\\hat k)\\times(2\\hat i+\\hat j-2\\hat k)$ and $\\vec v=-3\\hat i+12\\hat j+3\\hat k$, find the angle between them.",
+ "options": [
+  "$30^\\circ$",
+  "$135^\\circ$",
+  "$60^\\circ$",
+  "$45^\\circ$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\vec u=(-6,6,-3)\\). Then \\(\\vec u\\cdot\\vec v=81\\), \\(|\\vec u|=9\\), and \\(|\\vec v|=9\\sqrt2\\), so \\(\\cos\\theta=1/\\sqrt2\\) and \\(\\theta=45^\\circ\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec u=-6\\hat i+6\\hat j-3\\hat k$; $\\vec u\\cdot\\vec v=81$. $\\vec u\\times\\vec v=54\\hat i+27\\hat j-54\\hat k$, so $|\\vec u\\times\\vec v|=81$. Also $|\\vec u||\\vec v|=81\\sqrt2$. Thus $\\cos\\theta=\\sin\\theta=\\dfrac{1}{\\sqrt2}$ and $\\theta=45^\\circ$.\n\nIndependent check: \\(\\vec u=(-6,6,-3)\\). Then \\(\\vec u\\cdot\\vec v=81\\), \\(|\\vec u|=9\\), and \\(|\\vec v|=9\\sqrt2\\), so \\(\\cos\\theta=1/\\sqrt2\\) and \\(\\theta=45^\\circ\\).",
+ "solution": "Using the cross-product formula, $\\vec u=-6\\hat i+6\\hat j-3\\hat k$. Hence $\\vec u\\cdot\\vec v=81$, $|\\vec u|=9$ and $|\\vec v|=9\\sqrt2$.\n$$\\cos\\theta=\\frac{\\vec u\\cdot\\vec v}{|\\vec u||\\vec v|}=\\frac{81}{81\\sqrt2}=\\frac{1}{\\sqrt2}$$\nTherefore, $\\theta=45^\\circ$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "If $\\vec u=(\\hat i+2\\hat j+2\\hat k)\\times(2\\hat i+\\hat j-2\\hat k)$ and $\\vec v=-3\\hat i+12\\hat j+3\\hat k$, find the angle between them.",
+  "options": [
+   "$30^\\circ$",
+   "$45^\\circ$",
+   "$60^\\circ$",
+   "$135^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\vec u=-6\\hat i+6\\hat j-3\\hat k$; $\\vec u\\cdot\\vec v=81$. $\\vec u\\times\\vec v=54\\hat i+27\\hat j-54\\hat k$, so $|\\vec u\\times\\vec v|=81$. Also $|\\vec u||\\vec v|=81\\sqrt2$. Thus $\\cos\\theta=\\sin\\theta=\\dfrac{1}{\\sqrt2}$ and $\\theta=45^\\circ$.",
+  "distractor_notes": "A: obtains $\\sin\\theta=\\dfrac12$ from an incorrect cross-product magnitude; C: obtains $\\cos\\theta=\\dfrac12$ from an incorrect norm product; D: takes the supplementary angle despite the positive dot product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

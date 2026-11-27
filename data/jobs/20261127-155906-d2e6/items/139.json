@@ -1,0 +1,70 @@
+{
+ "qno": 139,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 139,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by substitution",
+  "archetype": "substitution integral",
+  "brief": "Straightforward indefinite/definite integral reducible by a single substitution (t = inner function); easy 2/5 with clean derivative present.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:102",
+   "2026s2:126",
+   "2021:143"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^1 \\dfrac{2x}{1+x^2}\\,dx$.",
+ "options": [
+  "$\\dfrac{1}{2}\\ln 2$",
+  "$\\ln 2$",
+  "$2\\ln 2$",
+  "$1$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "An antiderivative is \\(\\ln(1+x^2)\\). Evaluating from 0 to 1 gives \\(\\ln 2\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $t=1+x^2$, so $dt=2x\\,dx$. Then $\\displaystyle\\int_0^1 \\dfrac{2x}{1+x^2}\\,dx=\\int_1^2 \\dfrac{dt}{t}=\\ln 2$.\n\nIndependent check: An antiderivative is \\(\\ln(1+x^2)\\). Evaluating from 0 to 1 gives \\(\\ln 2\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^1 \\dfrac{2x}{1+x^2}\\,dx$.",
+  "options": [
+   "$\\dfrac{1}{2}\\ln 2$",
+   "$\\ln 2$",
+   "$2\\ln 2$",
+   "$1$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let $t=1+x^2$, so $dt=2x\\,dx$. Then $\\displaystyle\\int_0^1 \\dfrac{2x}{1+x^2}\\,dx=\\int_1^2 \\dfrac{dt}{t}=\\ln 2$.",
+  "distractor_notes": "A: introduces an extra factor of $\\dfrac{1}{2}$. C: introduces an extra factor of $2$. D: treats the integrand as having antiderivative $1+x^2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

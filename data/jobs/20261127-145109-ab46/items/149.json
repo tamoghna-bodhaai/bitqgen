@@ -1,0 +1,70 @@
+{
+ "qno": 149,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 149,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Inverse of a function",
+  "archetype": "property check",
+  "brief": "Given a small set and a proposed function/rule (or two subsets shown via a simple Venn description), verify properties or compute the inverse mapping / number of elements in a region.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:103",
+   "2025s2:108",
+   "2024s1:121"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Let $f:A\\to B$ be given by $f(x)=2x+1$, where $A=\\{0,1,2,3\\}$ and $B=\\{1,3,5,7\\}$. What is $f^{-1}(x)$?",
+ "options": [
+  "$\\dfrac{x+1}{2}$",
+  "$2x-1$",
+  "$\\dfrac{x-1}{2}$",
+  "$\\dfrac{x}{2}+1$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set y=2x+1 and solve for x: x=(y-1)/2. Thus f^{-1}(x)=(x-1)/2.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y=2x+1\\Rightarrow x=\\dfrac{y-1}{2}$\nTherefore, $f^{-1}(x)=\\dfrac{x-1}{2}$ for $x\\in B$.\n\nIndependent check: Set y=2x+1 and solve for x: x=(y-1)/2. Thus f^{-1}(x)=(x-1)/2.",
+ "solution": "Let $y=f(x)=2x+1$. Solving for $x$ gives\n$$x=\\frac{y-1}{2}$$\nHence, $f^{-1}(x)=\\frac{x-1}{2}$ for $x\\in B$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $f:A\\to B$ be given by $f(x)=2x+1$, where $A=\\{0,1,2,3\\}$ and $B=\\{1,3,5,7\\}$. What is $f^{-1}(x)$?",
+  "options": [
+   "$\\dfrac{x+1}{2}$",
+   "$2x-1$",
+   "$\\dfrac{x}{2}+1$",
+   "$\\dfrac{x-1}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$y=2x+1\\Rightarrow x=\\dfrac{y-1}{2}$\nTherefore, $f^{-1}(x)=\\dfrac{x-1}{2}$ for $x\\in B$.",
+  "distractor_notes": "A: uses the wrong sign when isolating the input.\nB: applies the original slope and an incorrect intercept.\nC: halves the input but adds $1$ instead of subtracting $\\dfrac12$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

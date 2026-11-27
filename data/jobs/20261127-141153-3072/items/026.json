@@ -1,0 +1,68 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio of approach/recede frequencies",
+  "brief": "Source moving towards and then away from a stationary observer at the same speed; find the ratio of the two observed frequencies or compare with the source frequency.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:26",
+   "2024s1:19",
+   "2021:20"
+  ]
+ },
+ "status": "ok",
+ "stem": "A source emitting a tone of frequency $500\\ \\text{Hz}$ moves towards and, after passing, away from a stationary observer at the same speed, $30\\ \\text{m s}^{-1}$. If the speed of sound is $330\\ \\text{m s}^{-1}$, find the ratio of the observed frequencies before and after passing.",
+ "options": [
+  "$\\dfrac{5}{6}$",
+  "$\\dfrac{6}{5}$",
+  "$\\dfrac{11}{10}$",
+  "$\\dfrac{3}{2}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Before passing: f₁ = 500·330/(330−30) = 550 Hz. After passing: f₂ = 500·330/(330+30) ≈ 458.3 Hz. Thus f₁/f₂ = 6/5.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{f_{\\text{toward}}}{f_{\\text{away}}}=\\dfrac{v/(v-u)}{v/(v+u)}=\\dfrac{v+u}{v-u}=\\dfrac{330+30}{330-30}=\\dfrac{6}{5}$\n\nIndependent check: Before passing: f₁ = 500·330/(330−30) = 550 Hz. After passing: f₂ = 500·330/(330+30) ≈ 458.3 Hz. Thus f₁/f₂ = 6/5.",
+ "solution": "For a moving source, $f_{\\text{toward}}=f\\dfrac{v}{v-u}$ and $f_{\\text{away}}=f\\dfrac{v}{v+u}$. Hence,\n$$\\dfrac{f_{\\text{toward}}}{f_{\\text{away}}}=\\dfrac{v+u}{v-u}=\\dfrac{330+30}{330-30}=\\dfrac{6}{5}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A source emitting a tone of frequency $500\\ \\text{Hz}$ moves towards and, after passing, away from a stationary observer at the same speed, $30\\ \\text{m s}^{-1}$. If the speed of sound is $330\\ \\text{m s}^{-1}$, find the ratio of the observed frequencies before and after passing.",
+  "options": [
+   "$\\dfrac{5}{6}$",
+   "$\\dfrac{6}{5}$",
+   "$\\dfrac{11}{10}$",
+   "$\\dfrac{3}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{f_{\\text{toward}}}{f_{\\text{away}}}=\\dfrac{v/(v-u)}{v/(v+u)}=\\dfrac{v+u}{v-u}=\\dfrac{330+30}{330-30}=\\dfrac{6}{5}$",
+  "distractor_notes": "A: reverses the requested ratio; C: compares the approaching frequency with the source frequency; D: uses an incorrect Doppler factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

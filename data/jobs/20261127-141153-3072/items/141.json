@@ -1,0 +1,68 @@
+{
+ "qno": 141,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 141,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Scalar triple product",
+  "archetype": "expand box product",
+  "brief": "Compute [a b c] for given vectors or show coplanarity/volume via determinant; moderate arithmetic, possibly with a parameter to find.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:119",
+   "2026s2:121",
+   "2025s1:95"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $\\vec a=\\hat i+\\hat j+\\hat k$, $\\vec b=\\hat i+2\\hat k$ and $\\vec c=2\\hat i-2\\hat j$, the scalar triple product $[\\vec a\\,\\vec b\\,\\vec c]$ is",
+ "options": [
+  "$-6$",
+  "$2$",
+  "$10$",
+  "$6$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\([\\vec a\\,\\vec b\\,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)\\), with \\(\\vec b\\times\\vec c=(4,4,-2)\\). Thus the product is \\((1,1,1)\\cdot(4,4,-2)=6\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec b\\times\\vec c=4\\hat i+4\\hat j-2\\hat k$; $[\\vec a\\,\\vec b\\,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)=4+4-2=6$.\n\nIndependent check: \\([\\vec a\\,\\vec b\\,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)\\), with \\(\\vec b\\times\\vec c=(4,4,-2)\\). Thus the product is \\((1,1,1)\\cdot(4,4,-2)=6\\).",
+ "solution": "Using $[\\vec a\\,\\vec b\\,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)$, we get\n$$\\vec b\\times\\vec c=4\\hat i+4\\hat j-2\\hat k.$$\nHence $[\\vec a\\,\\vec b\\,\\vec c]=(1,1,1)\\cdot(4,4,-2)=4+4-2=6$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $\\vec a=\\hat i+\\hat j+\\hat k$, $\\vec b=\\hat i+2\\hat k$ and $\\vec c=2\\hat i-2\\hat j$, the scalar triple product $[\\vec a\\,\\vec b\\,\\vec c]$ is",
+  "options": [
+   "$-6$",
+   "$2$",
+   "$6$",
+   "$10$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\vec b\\times\\vec c=4\\hat i+4\\hat j-2\\hat k$; $[\\vec a\\,\\vec b\\,\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)=4+4-2=6$.",
+  "distractor_notes": "A: reverses the order of two vectors; B: omits one positive dot-product term; D: changes the sign of the negative term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

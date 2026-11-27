@@ -1,0 +1,86 @@
+{
+ "qno": 72,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 72,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Ozonolysis",
+  "archetype": "reaction product (structures)",
+  "brief": "Draw an alkene (figure, e.g., a cyclic diene) and ask for the dicarbonyl product(s) after ozonolysis with Zn/H2O; requires identifying both cleavage sites.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:54",
+   "2026s1:53",
+   "2026s1:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "The compound shown in the figure is subjected to ozonolysis followed by reductive work-up with Zn/H$_2$O. Which products are formed?",
+ "options": [
+  "One molecule of hexane-1,6-dial",
+  "Two molecules of propane-1,3-dial",
+  "One molecule each of ethanedial and butane-1,4-dial",
+  "One molecule of propane-1,3-dial"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q072_stem_v0.png",
+  "width_pct": 19,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q072_optA_v0.png",
+  "figs/q072_optB_v0.png",
+  "figs/q072_optC_v0.png",
+  "figs/q072_optD_v0.png"
+ ],
+ "option_width": 55,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Reductive ozonolysis cleaves both C=C bonds. Each cleavage opens the ring into two three-carbon fragments, each OHC–CH₂–CHO (propane-1,3-dial).",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_1=\\text{C}_2-\\text{C}_3-\\text{C}_4=\\text{C}_5-\\text{C}_6-\\text{C}_1$\n$\\xrightarrow[\\text{Zn}/\\text{H}_2\\text{O}]{\\text{O}_3}2\\,\\text{OHC-CH}_2\\text{-CHO}$\n\nIndependent check: Reductive ozonolysis cleaves both C=C bonds. Each cleavage opens the ring into two three-carbon fragments, each OHC–CH₂–CHO (propane-1,3-dial).",
+ "solution": "Reductive ozonolysis cleaves both C=C bonds, converting each alkene carbon into a carbonyl group. Cleavage of the ring gives two identical three-carbon fragments:\n$$\\text{C}_1=\\text{C}_2-\\text{C}_3-\\text{C}_4=\\text{C}_5-\\text{C}_6-\\text{C}_1 \\xrightarrow[\\text{Zn}/\\text{H}_2\\text{O}]{\\text{O}_3} 2\\,\\text{OHC-CH}_2\\text{-CHO}$$\nThus, two molecules of propane-1,3-dial are formed.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The compound shown in the figure is subjected to ozonolysis followed by reductive work-up with Zn/H$_2$O. Which products are formed?",
+  "options": [
+   "One molecule of hexane-1,6-dial",
+   "Two molecules of propane-1,3-dial",
+   "One molecule each of ethanedial and butane-1,4-dial",
+   "One molecule of propane-1,3-dial"
+  ],
+  "option_smiles": [
+   "O=CCCCCC=O",
+   "O=CCC=O.O=CCC=O",
+   "O=CC=O.O=CCCC=O",
+   "O=CCC=O"
+  ],
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a six-membered carbon ring with double bonds on two opposite ring edges (1,4-cyclohexadiene). To its right draw a horizontal reaction arrow, labelled O3 above and Zn/H2O below. Leave the product side blank.",
+   "smiles": "C1=CCC=CC1"
+  },
+  "difficulty_estimate": 3,
+  "working": "$\\text{C}_1=\\text{C}_2-\\text{C}_3-\\text{C}_4=\\text{C}_5-\\text{C}_6-\\text{C}_1$\n$\\xrightarrow[\\text{Zn}/\\text{H}_2\\text{O}]{\\text{O}_3}2\\,\\text{OHC-CH}_2\\text{-CHO}$",
+  "distractor_notes": "A: Treats the diene as if only one double bond were cleaved. C: Uses the fragments expected from a 1,3-cyclohexadiene. D: Gives only one of the two identical products."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

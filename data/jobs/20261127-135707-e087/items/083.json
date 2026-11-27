@@ -1,0 +1,68 @@
+{
+ "qno": 83,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 83,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "Complex sentence where a collective/quantity noun ('the committee', 'one of the...') is separated from its verb by an intervening phrase; spot the agreement error among four parts.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:70",
+   "2022:67",
+   "2026s1:68"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the part of the sentence that contains an error. One of the field reports / despite the extensive annotations added by the surveyors during the second review / contain a discrepancy / that the editors have not yet explained.",
+ "options": [
+  "One of the field reports",
+  "despite the extensive annotations added by the surveyors during the second review",
+  "that the editors have not yet explained",
+  "contain a discrepancy"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The subject is “One,” which is singular, so the verb should be “contains,” not “contain.”",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The subject is “One,” not “reports”; the intervening phrase does not change its number. The verb must be “contains.”\n\nIndependent check: The subject is “One,” which is singular, so the verb should be “contains,” not “contain.”",
+ "solution": "The subject is “One,” which is singular; the intervening phrase does not affect subject–verb agreement. The verb should be “contains,” not “contain.”",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Find the part of the sentence that contains an error. One of the field reports / despite the extensive annotations added by the surveyors during the second review / contain a discrepancy / that the editors have not yet explained.",
+  "options": [
+   "One of the field reports",
+   "despite the extensive annotations added by the surveyors during the second review",
+   "contain a discrepancy",
+   "that the editors have not yet explained"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "The subject is “One,” not “reports”; the intervening phrase does not change its number. The verb must be “contains.”",
+  "distractor_notes": "A: The subject phrase is correctly formed. B: The intervening phrase is grammatical and does not control the verb. D: The relative clause is correctly formed."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

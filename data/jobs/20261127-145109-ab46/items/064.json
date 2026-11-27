@@ -1,0 +1,70 @@
+{
+ "qno": 64,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 64,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Cleavage of ethers with HI",
+  "archetype": "reaction outcome",
+  "brief": "Asymmetric ether reacted with excess vs one equivalent HI — give the products in each case and note SN1 vs SN2 pathway.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:40",
+   "2025s2:32",
+   "2024s2:51"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "2-Methoxy-2-methylpropane reacts with one equivalent or with excess concentrated HI. Which option gives the products and cleavage pathways?",
+ "options": [
+  "One equivalent: 2-iodo-2-methylpropane and methanol (SN1); excess: 2-iodo-2-methylpropane, iodomethane and water (SN1, then SN2 at methyl).",
+  "One equivalent: 1-iodo-2-methylpropane and methanol (SN2); excess: 1-iodo-2-methylpropane, iodomethane and water (SN2 at both carbons).",
+  "One equivalent: 2-iodo-2-methylpropane and methanol (SN2); excess: 2-iodo-2-methylpropane, iodomethane and water (SN2 at both carbons).",
+  "One equivalent: iodomethane and 2-methylpropan-2-ol (SN2); excess: iodomethane, 2-methylpropene and water (SN1)."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Protonation of the ether is followed by cleavage at the tertiary carbon via SN1, giving 2-iodo-2-methylpropane and methanol. Excess HI converts methanol to iodomethane and water.",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Cleavage occurs at the tertiary carbon: $\\text{(CH}_3)_3\\text{C–OCH}_3+\\text{HI}\\to\\text{(CH}_3)_3\\text{C–I}+\\text{CH}_3\\text{OH}$ (SN1).\\nExcess HI: $\\text{CH}_3\\text{OH}+\\text{HI}\\to\\text{CH}_3\\text{I}+\\text{H}_2\\text{O}$ (SN2 at methyl).\n\nIndependent check: Protonation of the ether is followed by cleavage at the tertiary carbon via SN1, giving 2-iodo-2-methylpropane and methanol. Excess HI converts methanol to iodomethane and water.",
+ "solution": "Protonation of the ether is followed by cleavage at the tertiary carbon via $S_N1$:\n$$\\text{(CH}_3)_3\\text{C–OCH}_3+\\text{HI}\\to\\text{(CH}_3)_3\\text{C–I}+\\text{CH}_3\\text{OH}$$\nWith excess HI, methanol undergoes $S_N2$ cleavage at methyl: $\\text{CH}_3\\text{OH}+\\text{HI}\\to\\text{CH}_3\\text{I}+\\text{H}_2\\text{O}$. Thus, the products and pathways match (A).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "2-Methoxy-2-methylpropane reacts with one equivalent or with excess concentrated HI. Which option gives the products and cleavage pathways?",
+  "options": [
+   "One equivalent: 2-iodo-2-methylpropane and methanol (SN1); excess: 2-iodo-2-methylpropane, iodomethane and water (SN1, then SN2 at methyl).",
+   "One equivalent: 1-iodo-2-methylpropane and methanol (SN2); excess: 1-iodo-2-methylpropane, iodomethane and water (SN2 at both carbons).",
+   "One equivalent: 2-iodo-2-methylpropane and methanol (SN2); excess: 2-iodo-2-methylpropane, iodomethane and water (SN2 at both carbons).",
+   "One equivalent: iodomethane and 2-methylpropan-2-ol (SN2); excess: iodomethane, 2-methylpropene and water (SN1)."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Cleavage occurs at the tertiary carbon: $\\text{(CH}_3)_3\\text{C–OCH}_3+\\text{HI}\\to\\text{(CH}_3)_3\\text{C–I}+\\text{CH}_3\\text{OH}$ (SN1).\\nExcess HI: $\\text{CH}_3\\text{OH}+\\text{HI}\\to\\text{CH}_3\\text{I}+\\text{H}_2\\text{O}$ (SN2 at methyl).",
+  "distractor_notes": "B: Gives the wrong tert-butyl connectivity and cleavage pathway; C: Assigns SN2 at a tertiary carbon; D: Cleaves the wrong side first and gives an incorrect excess-HI product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

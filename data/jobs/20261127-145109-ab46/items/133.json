@@ -1,0 +1,70 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between circles",
+  "archetype": "symmetric area",
+  "brief": "Area common to two circles (or between a circle and a parabola) using symmetry: find intersection points, set up the integral over half the region and double it.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:106",
+   "2023s2:92",
+   "2026s2:99"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The area common to the circles $x^2+y^2=4$ and $(x-2)^2+y^2=4$ is",
+ "options": [
+  "$\\dfrac{4\\pi}{3}-2\\sqrt{3}$",
+  "$\\dfrac{4\\pi}{3}-\\sqrt{3}$",
+  "$\\dfrac{8\\pi}{3}+2\\sqrt{3}$",
+  "$\\dfrac{8\\pi}{3}-2\\sqrt{3}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The circles have radius 2 and center separation 2. Their overlap area is $2(2^2)\\cos^{-1}(2/4)-\\frac{2}{2}\\sqrt{4(2^2)-2^2}=\\frac{8\\pi}{3}-2\\sqrt{3}$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Intersections: $x=1,\\ y=\\pm\\sqrt3$; by symmetry, $A=4\\int_1^2\\sqrt{4-x^2}\\,dx$; $=4\\left[\\dfrac{x}{2}\\sqrt{4-x^2}+2\\sin^{-1}\\left(\\dfrac{x}{2}\\right)\\right]_1^2=\\dfrac{8\\pi}{3}-2\\sqrt3$.\n\nIndependent check: The circles have radius 2 and center separation 2. Their overlap area is $2(2^2)\\cos^{-1}(2/4)-\\frac{2}{2}\\sqrt{4(2^2)-2^2}=\\frac{8\\pi}{3}-2\\sqrt{3}$.",
+ "solution": "The circles intersect at $x=1$, $y=\\pm\\sqrt{3}$. By symmetry, the common area is\n$$A=4\\int_1^2\\sqrt{4-x^2}\\,dx=4\\left[\\frac{x}{2}\\sqrt{4-x^2}+2\\sin^{-1}\\left(\\frac{x}{2}\\right)\\right]_1^2=\\frac{8\\pi}{3}-2\\sqrt{3}.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "The area common to the circles $x^2+y^2=4$ and $(x-2)^2+y^2=4$ is",
+  "options": [
+   "$\\dfrac{8\\pi}{3}-2\\sqrt{3}$",
+   "$\\dfrac{4\\pi}{3}-\\sqrt{3}$",
+   "$\\dfrac{8\\pi}{3}+2\\sqrt{3}$",
+   "$\\dfrac{4\\pi}{3}-2\\sqrt{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Intersections: $x=1,\\ y=\\pm\\sqrt3$; by symmetry, $A=4\\int_1^2\\sqrt{4-x^2}\\,dx$; $=4\\left[\\dfrac{x}{2}\\sqrt{4-x^2}+2\\sin^{-1}\\left(\\dfrac{x}{2}\\right)\\right]_1^2=\\dfrac{8\\pi}{3}-2\\sqrt3$.",
+  "distractor_notes": "B: gives half the lens area; C: adds rather than subtracts the radical term; D: halves the circular-angle contribution only."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

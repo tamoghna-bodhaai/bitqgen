@@ -1,0 +1,68 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Le Chatelier's principle",
+  "archetype": "conceptual",
+  "brief": "For an exothermic equilibrium like N2 + 3H2 ⇌ 2NH3, predict the effect of increasing pressure/temperature/addition of inert gas at constant volume on yield.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:41",
+   "2026s2:49",
+   "2024s2:58"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the exothermic equilibrium $\\text{N}_2(g)+3\\text{H}_2(g)\\rightleftharpoons2\\text{NH}_3(g)$, which change increases the equilibrium yield of $\\text{NH}_3$?",
+ "options": [
+  "Increasing the pressure at constant temperature",
+  "Increasing the temperature at constant pressure",
+  "Adding an inert gas at constant volume",
+  "Adding a catalyst"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Increasing pressure shifts equilibrium toward the side with fewer gas moles: 2 mol NH₃ versus 4 mol reactants. Thus NH₃ yield increases.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Reactant side: $4$ mol gaseous species; product side: $2$ mol.\\nIncreasing pressure shifts equilibrium toward fewer gas moles: $\\text{NH}_3$ yield increases.\n\nIndependent check: Increasing pressure shifts equilibrium toward the side with fewer gas moles: 2 mol NH₃ versus 4 mol reactants. Thus NH₃ yield increases.",
+ "solution": "By Le Chatelier’s principle, increasing pressure shifts the equilibrium toward the side with fewer gaseous moles.\n$$4\\text{ mol reactants} > 2\\text{ mol NH}_3$$\nHence, the equilibrium yield of NH₃ increases.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the exothermic equilibrium $\\text{N}_2(g)+3\\text{H}_2(g)\\rightleftharpoons2\\text{NH}_3(g)$, which change increases the equilibrium yield of $\\text{NH}_3$?",
+  "options": [
+   "Increasing the pressure at constant temperature",
+   "Increasing the temperature at constant pressure",
+   "Adding an inert gas at constant volume",
+   "Adding a catalyst"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Reactant side: $4$ mol gaseous species; product side: $2$ mol.\\nIncreasing pressure shifts equilibrium toward fewer gas moles: $\\text{NH}_3$ yield increases.",
+  "distractor_notes": "B: Higher temperature shifts an exothermic equilibrium toward reactants.\\nC: Adding inert gas at constant volume does not change the reacting gases' partial pressures.\\nD: A catalyst changes the rate, not the equilibrium composition."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

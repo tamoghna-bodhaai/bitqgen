@@ -1,0 +1,68 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gate combinations",
+  "archetype": "truth-table",
+  "brief": "Given combination of gates feeding an output, construct truth table for all input combinations; identify equivalent single gate (NAND/NOR logic reduction).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:23",
+   "2026s1:24",
+   "2024s1:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "For binary inputs $A$ and $B$, where NAND denotes the usual NAND operation, define $P=\\operatorname{NAND}(A,B)$, $Q=\\operatorname{NAND}(A,A)$, $R=\\operatorname{NAND}(B,B)$, $S=\\operatorname{NAND}(Q,R)$ and $Y=\\operatorname{NAND}(S,P)$. Which single gate has the same truth table as $Y$?",
+ "options": [
+  "NAND gate",
+  "XNOR gate",
+  "XOR gate",
+  "NOR gate"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Q=¬A and R=¬B, so S=A∨B. Since P=¬(A∧B), Y=¬[(A∨B)∧¬(A∧B)]=¬(A⊕B), which is XNOR.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $(A,B)=(00,01,10,11)$, $P=(1,1,1,0)$ and $S=(0,1,1,1)$; hence $Y=S\\ \\operatorname{NAND}\\ P=(1,0,0,1)$, the XNOR truth table.\n\nIndependent check: Q=¬A and R=¬B, so S=A∨B. Since P=¬(A∧B), Y=¬[(A∨B)∧¬(A∧B)]=¬(A⊕B), which is XNOR.",
+ "solution": "Using NAND as negated AND, $Q=\neg A$ and $R=\neg B$, so $S=\neg(QR)=A\\lor B$.\n$$Y=\neg(SP)=\neg\\big[(A\\lor B)\\land\neg(A\\land B)\\big]=\neg(A\\oplus B)$$\nThus $Y$ has the XNOR truth table.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For binary inputs $A$ and $B$, where NAND denotes the usual NAND operation, define $P=\\operatorname{NAND}(A,B)$, $Q=\\operatorname{NAND}(A,A)$, $R=\\operatorname{NAND}(B,B)$, $S=\\operatorname{NAND}(Q,R)$ and $Y=\\operatorname{NAND}(S,P)$. Which single gate has the same truth table as $Y$?",
+  "options": [
+   "NAND gate",
+   "NOR gate",
+   "XOR gate",
+   "XNOR gate"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "For $(A,B)=(00,01,10,11)$, $P=(1,1,1,0)$ and $S=(0,1,1,1)$; hence $Y=S\\ \\operatorname{NAND}\\ P=(1,0,0,1)$, the XNOR truth table.",
+  "distractor_notes": "A: Mistakes the intermediate $P$ for the final output. B: Confuses the complemented-OR reduction with NOR. C: Gives the complement of the required truth table."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

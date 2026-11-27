@@ -1,0 +1,68 @@
+{
+ "qno": 132,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 132,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Approximations using differentials",
+  "archetype": "differential error",
+  "brief": "Use differentials to estimate the percentage error in a computed quantity (area/volume) from an error in a measured variable.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:93",
+   "2023s2:115",
+   "2025s2:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "An annular plate has true radii $5$ cm and $3$ cm. If the outer radius is overestimated by $2\\%$ and the inner radius is underestimated by $4\\%$, estimate the percentage error in its computed area using differentials.",
+ "options": [
+  "$10.75\\%$",
+  "$6.25\\%$",
+  "$1.75\\%$",
+  "$12\\%$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For A = π(R² − r²), dA/A = (2R dR − 2r dr)/(R² − r²). With R = 5, r = 3, dR = 0.1, and dr = −0.12, the percentage error is (1 + 0.72)/16 × 100% = 10.75%.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=\\pi(R^2-r^2)$, so $\\dfrac{dA}{A}=\\dfrac{2(R\\,dR-r\\,dr)}{R^2-r^2}$. With $R=5$, $r=3$, $dR=0.02R$, $dr=-0.04r$: $\\dfrac{dA}{A}=\\dfrac{2(25(0.02)-9(-0.04))}{25-9}=0.1075$. Percentage error $=10.75\\%$.\n\nIndependent check: For A = π(R² − r²), dA/A = (2R dR − 2r dr)/(R² − r²). With R = 5, r = 3, dR = 0.1, and dr = −0.12, the percentage error is (1 + 0.72)/16 × 100% = 10.75%.",
+ "solution": "For $A=\\pi(R^2-r^2)$, the differential percentage error is\n$$\\frac{dA}{A}=\\frac{2(R\\,dR-r\\,dr)}{R^2-r^2}.$$\nUsing $R=5$, $r=3$, $dR=0.1$ and $dr=-0.12$, we get $\\dfrac{dA}{A}=\\dfrac{1+0.72}{16}=0.1075$.\nHence, the estimated percentage error is $10.75\\%$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "An annular plate has true radii $5$ cm and $3$ cm. If the outer radius is overestimated by $2\\%$ and the inner radius is underestimated by $4\\%$, estimate the percentage error in its computed area using differentials.",
+  "options": [
+   "$1.75\\%$",
+   "$6.25\\%$",
+   "$10.75\\%$",
+   "$12\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$A=\\pi(R^2-r^2)$, so $\\dfrac{dA}{A}=\\dfrac{2(R\\,dR-r\\,dr)}{R^2-r^2}$. With $R=5$, $r=3$, $dR=0.02R$, $dr=-0.04r$: $\\dfrac{dA}{A}=\\dfrac{2(25(0.02)-9(-0.04))}{25-9}=0.1075$. Percentage error $=10.75\\%$.",
+  "distractor_notes": "A subtracts the inner-radius contribution with the wrong sign; B ignores the inner-radius error; D adds the percentage errors without weighting by the radii."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

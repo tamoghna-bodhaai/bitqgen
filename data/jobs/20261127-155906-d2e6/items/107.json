@@ -1,0 +1,70 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola focus",
+  "archetype": "single-formula numerical",
+  "brief": "Given a downward/sideways parabola in standard form, ask for the coordinates of the focus or equation of directrix by reading off 4a.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:94",
+   "2026s2:111",
+   "2026s1:110"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The focus of the parabola $y^2=-16x$ is",
+ "options": [
+  "$(-4,0)$",
+  "$(4,0)$",
+  "$(-16,0)$",
+  "$(-8,0)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Compare with the standard form \\(y^2=4ax\\): \\(4a=-16\\), so \\(a=-4\\). The focus is \\((-4,0)\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y^2=4ax,\\\\ 4a=-16\\Rightarrow a=-4$.\\nFocus: $(a,0)=(-4,0)$.\n\nIndependent check: Compare with the standard form \\(y^2=4ax\\): \\(4a=-16\\), so \\(a=-4\\). The focus is \\((-4,0)\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The focus of the parabola $y^2=-16x$ is",
+  "options": [
+   "$(-4,0)$",
+   "$(4,0)$",
+   "$(-16,0)$",
+   "$(-8,0)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$y^2=4ax,\\\\ 4a=-16\\Rightarrow a=-4$.\\nFocus: $(a,0)=(-4,0)$.",
+  "distractor_notes": "B: uses the wrong sign for $a$. C: uses $4a$ as the focus coordinate. D: uses half of $4a$ with the wrong sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

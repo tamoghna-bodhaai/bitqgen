@@ -1,0 +1,68 @@
+{
+ "qno": 83,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 83,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "Sentence with a collective/indefinite subject (e.g., 'each of the players') where the verb disagrees; one part contains the error, other parts are clean.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:68",
+   "2025s2:66",
+   "2026s2:66"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the part of the sentence that contains an error. **(A)** Each of the applicants **(B)** have submitted the required documents **(C)** before the stated deadline **(D)** without any reminder.",
+ "options": [
+  "(A)",
+  "(B)",
+  "(C)",
+  "(D)"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Each” is singular, so “have submitted” should be “has submitted.” The error is in part (B).",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "“Each” takes a singular verb: “Each of the applicants has submitted.” The error is in (B).\n\nIndependent check: “Each” is singular, so “have submitted” should be “has submitted.” The error is in part (B).",
+ "solution": "“Each” takes a singular verb, so “have submitted” should be “has submitted.” The error is in part (B).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the part of the sentence that contains an error. **(A)** Each of the applicants **(B)** have submitted the required documents **(C)** before the stated deadline **(D)** without any reminder.",
+  "options": [
+   "(A)",
+   "(B)",
+   "(C)",
+   "(D)"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "“Each” takes a singular verb: “Each of the applicants has submitted.” The error is in (B).",
+  "distractor_notes": "A contains the correctly formed subject phrase. C is grammatically correct. D is grammatically correct."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

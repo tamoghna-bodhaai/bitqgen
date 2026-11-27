@@ -1,0 +1,70 @@
+{
+ "qno": 91,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 91,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Tense consistency (simple past vs present perfect)",
+  "archetype": "sentence improvement",
+  "brief": "Give a sentence where present perfect is misused with a finished-time marker ('yesterday'); ask for the corrected version among four rewrites.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:62",
+   "2021:90",
+   "2023s2:67"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Choose the best improvement for the underlined part of the sentence: The committee <u>has announced its decision yesterday</u>.",
+ "options": [
+  "The committee has announced its decision yesterday.",
+  "The committee announced its decision yesterday.",
+  "The committee had announced its decision yesterday.",
+  "The committee announces its decision yesterday."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Yesterday” specifies a completed past time, so use the simple past: “announced.”",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "“Yesterday” marks a finished time, so use the simple past: “announced.” Present perfect does not pair with this marker; past perfect needs another past reference point; simple present is inconsistent with “yesterday.”\n\nIndependent check: “Yesterday” specifies a completed past time, so use the simple past: “announced.”",
+ "solution": "“Yesterday” indicates a completed past time, so the simple past tense is required: “announced.”",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Choose the best improvement for the underlined part of the sentence: The committee <u>has announced its decision yesterday</u>.",
+  "options": [
+   "The committee announced its decision yesterday.",
+   "The committee has announced its decision yesterday.",
+   "The committee had announced its decision yesterday.",
+   "The committee announces its decision yesterday."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "“Yesterday” marks a finished time, so use the simple past: “announced.” Present perfect does not pair with this marker; past perfect needs another past reference point; simple present is inconsistent with “yesterday.”",
+  "distractor_notes": "B: present perfect with a finished-time marker. C: past perfect without a later past reference point. D: simple present conflicts with the past-time marker."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

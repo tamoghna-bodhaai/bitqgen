@@ -1,0 +1,71 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Centre of mass",
+  "archetype": "weighted average",
+  "brief": "Two masses on a rod; find where the centre of mass lies from one end.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:39",
+   "2021:36",
+   "2022:25"
+  ],
+  "origin": "variant",
+  "bank_ref": "g3f7ac6d7a97a"
+ },
+ "status": "ok",
+ "stem": "A light rod $1.4$ m long has a $2$ kg mass at one end and a $5$ kg mass at the other. How far from the $2$ kg mass is the centre of mass?",
+ "options": [
+  "$0.4$ m",
+  "$1.0$ m",
+  "$0.7$ m",
+  "$1.4$ m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Taking the 2 kg mass as the origin, the centre of mass is at x = (5 × 1.4)/(2 + 5) = 1.0 m.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x_{\\text{CM}}=\\dfrac{(2)(0)+(5)(1.4)}{2+5}=1.0\\ \\text{m}$\n\nIndependent check: Taking the 2 kg mass as the origin, the centre of mass is at x = (5 × 1.4)/(2 + 5) = 1.0 m.",
+ "solution": "Taking the $2\\,\\text{kg}$ mass as the origin, use $x_{\\text{CM}}=\\dfrac{\\sum m_i x_i}{\\sum m_i}$.\n$$x_{\\text{CM}}=\\frac{(2)(0)+(5)(1.4)}{2+5}=1.0\\,\\text{m}$$\nThus, the centre of mass is $1.0\\,\\text{m}$ from the $2\\,\\text{kg}$ mass.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A light rod $1.4$ m long has a $2$ kg mass at one end and a $5$ kg mass at the other. How far from the $2$ kg mass is the centre of mass?",
+  "options": [
+   "$0.4$ m",
+   "$0.7$ m",
+   "$1.0$ m",
+   "$1.4$ m"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$x_{\\text{CM}}=\\dfrac{(2)(0)+(5)(1.4)}{2+5}=1.0\\ \\text{m}$",
+  "distractor_notes": "A: weights the distance by the mass at the reference end. B: assumes equal masses. D: places the centre of mass at the far end of the rod."
+ },
+ "variant_of": "g3f7ac6d7a97a",
+ "author_model": "openai/gpt-6-luna-pro"
+}

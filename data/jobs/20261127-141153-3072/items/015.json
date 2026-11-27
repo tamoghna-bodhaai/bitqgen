@@ -1,0 +1,76 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE fringe width",
+  "archetype": "single-formula numerical",
+  "brief": "Diagram of Young's double-slit setup with slit separation and screen distance marked; compute fringe width for the given wavelength, or the shift when the whole setup is immersed in a liquid.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:10",
+   "2026s2:30",
+   "2023s2:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a Young’s double-slit experiment, the arrangement is as shown in the figure. For light of wavelength $600$ nm, find the fringe width when the slit separation is $0.30$ mm and the screen is $1.5$ m away.",
+ "options": [
+  "$1$ mm",
+  "$2$ mm",
+  "$6$ mm",
+  "$3$ mm"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q015_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fringe width: β = λD/d = (600×10⁻⁹ m)(1.5 m)/(0.30×10⁻³ m) = 3×10⁻³ m = 3 mm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\beta=\\dfrac{\\lambda D}{d}=\\dfrac{(600\\times10^{-9})(1.5)}{0.30\\times10^{-3}}=3.0\\times10^{-3}\\ \\text{m}=3\\ \\text{mm}$$\n\nIndependent check: Fringe width: β = λD/d = (600×10⁻⁹ m)(1.5 m)/(0.30×10⁻³ m) = 3×10⁻³ m = 3 mm.",
+ "solution": "The fringe width in Young’s double-slit experiment is $\\beta=\\dfrac{\\lambda D}{d}$.\n$$\\beta=\\dfrac{(600\\times10^{-9})(1.5)}{0.30\\times10^{-3}}=3.0\\times10^{-3}\\,\\text{m}=3\\,\\text{mm}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a Young’s double-slit experiment, the arrangement is as shown in the figure. For light of wavelength $600$ nm, find the fringe width when the slit separation is $0.30$ mm and the screen is $1.5$ m away.",
+  "options": [
+   "$1$ mm",
+   "$2$ mm",
+   "$3$ mm",
+   "$6$ mm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a schematic Young’s double-slit setup. Show two narrow horizontal slits, one above the other, labelled S₁ and S₂, with their vertical centre-to-centre separation marked d = 0.30 mm. To their right, draw a vertical screen parallel to the slit plane; mark the horizontal distance from the slit plane to the screen as D = 1.5 m. Draw the central axis horizontally from the midpoint between the slits to the screen, and label the wavelength of the incident light λ = 600 nm. Do not mark fringe locations or fringe width.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$$\\beta=\\dfrac{\\lambda D}{d}=\\dfrac{(600\\times10^{-9})(1.5)}{0.30\\times10^{-3}}=3.0\\times10^{-3}\\ \\text{m}=3\\ \\text{mm}$$",
+  "distractor_notes": "A: underestimates the result by a factor of three. B: uses an incorrect distance or unit conversion. D: overestimates the fringe width by a factor of two."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

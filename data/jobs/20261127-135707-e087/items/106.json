@@ -1,0 +1,68 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Ellipse – eccentricity",
+  "archetype": "locate centre",
+  "brief": "Given a general second-degree equation, complete the square to identify the conic's centre/eccentricity-type parameters.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:113",
+   "2023s2:96",
+   "2026s1:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the ellipse $4x^2+9y^2-16x+54y+61=0$, the pair (centre, eccentricity) is",
+ "options": [
+  "$(2,-3),\\ \\dfrac{\\sqrt{5}}{3}$",
+  "$(-2,3),\\ \\dfrac{\\sqrt{5}}{3}$",
+  "$(2,-3),\\ \\dfrac{2\\sqrt{2}}{3}$",
+  "$(2,-3),\\ \\dfrac{5}{9}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Completing the squares gives \\(4(x-2)^2+9(y+3)^2=36\\), or \\(\\frac{(x-2)^2}{9}+\\frac{(y+3)^2}{4}=1\\). Thus the centre is \\((2,-3)\\) and \\(e=\\sqrt{1-4/9}=\\sqrt5/3\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$4(x-2)^2+9(y+3)^2=36$\n\nIndependent check: Completing the squares gives \\(4(x-2)^2+9(y+3)^2=36\\), or \\(\\frac{(x-2)^2}{9}+\\frac{(y+3)^2}{4}=1\\). Thus the centre is \\((2,-3)\\) and \\(e=\\sqrt{1-4/9}=\\sqrt5/3\\).",
+ "solution": "Completing the squares gives\n$$4(x-2)^2+9(y+3)^2=36 \\implies \\frac{(x-2)^2}{9}+\\frac{(y+3)^2}{4}=1.$$\nThus the centre is $(2,-3)$, and $e=\\sqrt{1-\\frac{4}{9}}=\\frac{\\sqrt{5}}{3}$. The answer is (A).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the ellipse $4x^2+9y^2-16x+54y+61=0$, the pair (centre, eccentricity) is",
+  "options": [
+   "$(2,-3),\\ \\dfrac{\\sqrt{5}}{3}$",
+   "$(-2,3),\\ \\dfrac{\\sqrt{5}}{3}$",
+   "$(2,-3),\\ \\dfrac{2\\sqrt{2}}{3}$",
+   "$(2,-3),\\ \\dfrac{5}{9}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$4(x-2)^2+9(y+3)^2=36$",
+  "distractor_notes": "B: Reverses the signs of the centre coordinates. C: Uses the unnormalised constant as a squared semiaxis. D: Forgets to take the square root when calculating eccentricity."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

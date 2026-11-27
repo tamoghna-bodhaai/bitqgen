@@ -1,0 +1,70 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Gauss's law",
+  "archetype": "single-formula numerical",
+  "brief": "Uniformly charged sphere or long straight charged wire; find the electric field at a given outside distance by constructing a Gaussian surface and substituting into Gauss's law.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:6",
+   "2026s1:4",
+   "2025s1:25"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A long straight wire carries a uniform charge per unit length of $5.56\\times10^{-9}$ C m$^{-1}$. Find the electric field at a distance of $0.10$ m from it. Take $\\varepsilon_0=8.85\\times10^{-12}$ C$^2$ N$^{-1}$ m$^{-2}$.",
+ "options": [
+  "$500$ N C$^{-1}$",
+  "$1000$ N C$^{-1}$",
+  "$1500$ N C$^{-1}$",
+  "$2000$ N C$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a long straight wire, E = λ/(2πε₀r) = (5.56×10⁻⁹)/(2π×8.85×10⁻¹²×0.10) ≈ 1000 N C⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For a cylindrical Gaussian surface, $E(2\\pi rL)=\\lambda L/\\varepsilon_0$; hence $E=\\dfrac{\\lambda}{2\\pi\\varepsilon_0r}=\\dfrac{5.56\\times10^{-9}}{2\\pi(8.85\\times10^{-12})(0.10)}\\approx1000$ N C$^{-1}$.\n\nIndependent check: For a long straight wire, E = λ/(2πε₀r) = (5.56×10⁻⁹)/(2π×8.85×10⁻¹²×0.10) ≈ 1000 N C⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A long straight wire carries a uniform charge per unit length of $5.56\\times10^{-9}$ C m$^{-1}$. Find the electric field at a distance of $0.10$ m from it. Take $\\varepsilon_0=8.85\\times10^{-12}$ C$^2$ N$^{-1}$ m$^{-2}$.",
+  "options": [
+   "$500$ N C$^{-1}$",
+   "$1000$ N C$^{-1}$",
+   "$1500$ N C$^{-1}$",
+   "$2000$ N C$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For a cylindrical Gaussian surface, $E(2\\pi rL)=\\lambda L/\\varepsilon_0$; hence $E=\\dfrac{\\lambda}{2\\pi\\varepsilon_0r}=\\dfrac{5.56\\times10^{-9}}{2\\pi(8.85\\times10^{-12})(0.10)}\\approx1000$ N C$^{-1}$.",
+  "distractor_notes": "A: field is halved by using an extra factor of $2$ in the denominator. C: arithmetic error in evaluating the denominator. D: uses $E=\\lambda/(\\pi\\varepsilon_0r)$, omitting the factor of $2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

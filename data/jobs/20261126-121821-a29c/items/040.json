@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "For a free $\\text{Mn}^{3+}$ ion ($Z = 25$), the $d$-electron configuration, the number of unpaired electrons, and the spin-only magnetic moment are, respectively:",
+ "stem": "For an isolated gaseous $\\text{Co}^{2+}$ ion ($Z=27$), what are its $d$-electron configuration, number of unpaired electrons and spin-only magnetic moment, respectively?",
  "options": [
-  "$3d^2$, $2$, $2.83\\ \\text{BM}$",
-  "$3d^4$, $4$, $4.47\\ \\text{BM}$",
-  "$3d^4$, $4$, $4.90\\ \\text{BM}$",
-  "$3d^5$, $5$, $5.92\\ \\text{BM}$"
+  "$3d^5$; $5$; $\\sqrt{35}\\ \\text{BM}$",
+  "$3d^7$; $1$; $\\sqrt{3}\\ \\text{BM}$",
+  "$3d^8$; $2$; $\\sqrt{8}\\ \\text{BM}$",
+  "$3d^7$; $3$; $\\sqrt{15}\\ \\text{BM}$"
  ],
- "answer": "C",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Mn (Z=25): [Ar]3d^5 4s^2. Mn3+ removes 4s^2 and one 3d electron → 3d^4. Free ion follows Hund's rule: 4 unpaired electrons. Spin-only μ = √(n(n+2)) = √24 ≈ 4.90 BM. Option B's 4.47 BM (=√20) is inconsistent with n=4.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Co: [Ar] 3d⁷4s²; Co²⁺ loses the two 4s electrons, giving 3d⁷. Hund’s rule gives 3 unpaired electrons, so μ = √[3(3 + 2)] = √15 BM.",
    "answer": "C",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Electronic configuration of neutral $\\text{Mn}$ ($Z = 25$):\n$$\\text{Mn}: [\\text{Ar}]\\, 3d^5 4s^2$$\n\n2. When $\\text{Mn}^{3+}$ is formed, electrons are removed first from the outermost $4s$ orbital, and then from the $3d$ orbital:\n$$\\text{Mn}^{3+}: [\\text{Ar}]\\, 3d^4$$\nThus, the $d$-electron configuration is $3d^4$.\n\n3. According to Hund's rule, the 4 electrons occupy 4 separate $d$-orbitals singly with parallel spins:\n$$n = 4\\text{ unpaired electrons}$$\n\n4. The spin-only magnetic moment ($\\mu_{\\text{s}}$) is given by:\n$$\\mu_{\\text{s}} = \\sqrt{n(n + 2)}\\ \\text{BM} = \\sqrt{4(4 + 2)}\\ \\text{BM} = \\sqrt{24}\\ \\text{BM} \\approx 4.90\\ \\text{BM}$$\n\nIndependent check: Mn (Z=25): [Ar]3d^5 4s^2. Mn3+ removes 4s^2 and one 3d electron → 3d^4. Free ion follows Hund's rule: 4 unpaired electrons. Spin-only μ = √(n(n+2)) = √24 ≈ 4.90 BM. Option B's 4.47 BM (=√20) is inconsistent with n=4.",
- "solution": "",
+ "working": "$\\text{Co}: [\\text{Ar}]\\,3d^7 4s^2$; remove the two $4s$ electrons for $\\text{Co}^{2+}$.\n$\\text{Co}^{2+}: [\\text{Ar}]\\,3d^7$.\nHund's rule gives $n=3$ unpaired electrons.\n$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(5)}=\\sqrt{15}\\ \\text{BM}$.\n\nIndependent check: Co: [Ar] 3d⁷4s²; Co²⁺ loses the two 4s electrons, giving 3d⁷. Hund’s rule gives 3 unpaired electrons, so μ = √[3(3 + 2)] = √15 BM.",
+ "solution": "Co has configuration $[\\text{Ar}]3d^7 4s^2$; removing the two $4s$ electrons gives $\\text{Co}^{2+}: [\\text{Ar}]3d^7$. Hund’s rule gives $n=3$ unpaired electrons.\n$$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(5)}=\\sqrt{15}\\ \\text{BM}$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "For a free $\\text{Mn}^{3+}$ ion ($Z = 25$), the $d$-electron configuration, the number of unpaired electrons, and the spin-only magnetic moment are, respectively:",
+  "stem": "For an isolated gaseous $\\text{Co}^{2+}$ ion ($Z=27$), what are its $d$-electron configuration, number of unpaired electrons and spin-only magnetic moment, respectively?",
   "options": [
-   "$3d^2$, $2$, $2.83\\ \\text{BM}$",
-   "$3d^4$, $4$, $4.47\\ \\text{BM}$",
-   "$3d^4$, $4$, $4.90\\ \\text{BM}$",
-   "$3d^5$, $5$, $5.92\\ \\text{BM}$"
+   "$3d^5$; $5$; $\\sqrt{35}\\ \\text{BM}$",
+   "$3d^7$; $1$; $\\sqrt{3}\\ \\text{BM}$",
+   "$3d^7$; $3$; $\\sqrt{15}\\ \\text{BM}$",
+   "$3d^8$; $2$; $\\sqrt{8}\\ \\text{BM}$"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "1. Electronic configuration of neutral $\\text{Mn}$ ($Z = 25$):\n$$\\text{Mn}: [\\text{Ar}]\\, 3d^5 4s^2$$\n\n2. When $\\text{Mn}^{3+}$ is formed, electrons are removed first from the outermost $4s$ orbital, and then from the $3d$ orbital:\n$$\\text{Mn}^{3+}: [\\text{Ar}]\\, 3d^4$$\nThus, the $d$-electron configuration is $3d^4$.\n\n3. According to Hund's rule, the 4 electrons occupy 4 separate $d$-orbitals singly with parallel spins:\n$$n = 4\\text{ unpaired electrons}$$\n\n4. The spin-only magnetic moment ($\\mu_{\\text{s}}$) is given by:\n$$\\mu_{\\text{s}} = \\sqrt{n(n + 2)}\\ \\text{BM} = \\sqrt{4(4 + 2)}\\ \\text{BM} = \\sqrt{24}\\ \\text{BM} \\approx 4.90\\ \\text{BM}$$",
-  "distractor_notes": "Option A assumes electrons are removed from the 3d subshell before 4s, yielding 3d^2 with n = 2 and μ = 2.83 BM.\nOption B correctly identifies n = 4, but incorrectly applies the formula √(n(n+1)) instead of √(n(n+2)), yielding 4.47 BM.\nOption D mistakes Mn3+ for the more common Mn2+ ion, giving a 3d^5 configuration with n = 5 and μ = 5.92 BM.",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$\\text{Co}: [\\text{Ar}]\\,3d^7 4s^2$; remove the two $4s$ electrons for $\\text{Co}^{2+}$.\n$\\text{Co}^{2+}: [\\text{Ar}]\\,3d^7$.\nHund's rule gives $n=3$ unpaired electrons.\n$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(5)}=\\sqrt{15}\\ \\text{BM}$.",
+  "distractor_notes": "A: uses an incorrect $d^5$ electron count and moment. B: assumes only one unpaired electron for $3d^7$. D: assigns $3d^8$ and uses its corresponding unpaired-electron count."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

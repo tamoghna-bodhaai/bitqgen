@@ -1,0 +1,68 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Vector triple product",
+  "archetype": "expand box product",
+  "brief": "Simplify a vector triple product a×(b×c) using the standard identity and evaluate a resulting dot/scalar quantity.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:120",
+   "2024s2:123",
+   "2026s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "Given $\\vec a=\\hat i+2\\hat j-\\hat k$, $\\vec b=2\\hat i+\\hat k$, $\\vec c=\\hat i-\\hat j+2\\hat k$ and $\\vec d=\\hat i+\\hat j+\\hat k$, find $[\\vec a\\times(\\vec b\\times\\vec c)]\\cdot\\vec d$.",
+ "options": [
+  "$7$",
+  "$-7$",
+  "$-11$",
+  "$11$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using a×(b×c)=b(a·c)−c(a·b), we have a·c=−3, a·b=1, b·d=3, and c·d=2. Thus the expression is −3(3)−2=−11.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b)$\n$\\vec a\\cdot\\vec c=-3,\\quad \\vec a\\cdot\\vec b=1$\n$\\vec a\\times(\\vec b\\times\\vec c)=-3\\vec b-\\vec c=-7\\hat i+\\hat j-5\\hat k$\n$[\\vec a\\times(\\vec b\\times\\vec c)]\\cdot\\vec d=-7+1-5=-11$\n\nIndependent check: Using a×(b×c)=b(a·c)−c(a·b), we have a·c=−3, a·b=1, b·d=3, and c·d=2. Thus the expression is −3(3)−2=−11.",
+ "solution": "Using $\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b)$, we have $\\vec a\\cdot\\vec c=-3$, $\\vec a\\cdot\\vec b=1$, $\\vec b\\cdot\\vec d=3$, and $\\vec c\\cdot\\vec d=2$.\n$$[\\vec a\\times(\\vec b\\times\\vec c)]\\cdot\\vec d=(-3)(3)-(1)(2)=-11$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Given $\\vec a=\\hat i+2\\hat j-\\hat k$, $\\vec b=2\\hat i+\\hat k$, $\\vec c=\\hat i-\\hat j+2\\hat k$ and $\\vec d=\\hat i+\\hat j+\\hat k$, find $[\\vec a\\times(\\vec b\\times\\vec c)]\\cdot\\vec d$.",
+  "options": [
+   "$-11$",
+   "$-7$",
+   "$7$",
+   "$11$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b)$\n$\\vec a\\cdot\\vec c=-3,\\quad \\vec a\\cdot\\vec b=1$\n$\\vec a\\times(\\vec b\\times\\vec c)=-3\\vec b-\\vec c=-7\\hat i+\\hat j-5\\hat k$\n$[\\vec a\\times(\\vec b\\times\\vec c)]\\cdot\\vec d=-7+1-5=-11$",
+  "distractor_notes": "B: adds rather than subtracts the second term in the identity.\nC: uses the wrong sign for $\\vec a\\cdot\\vec c$.\nD: reverses the order of the terms in the identity."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

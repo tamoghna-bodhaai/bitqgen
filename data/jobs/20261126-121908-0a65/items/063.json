@@ -20,17 +20,17 @@
   ]
  },
  "status": "ok",
- "stem": "Which reagent distinguishes the alcohol shown in the figure from a primary alcohol by the rapid appearance of turbidity at room temperature?",
+ "stem": "The alcohols shown are tested separately at room temperature. Which reagent and observation distinguish them by the onset of turbidity?",
  "options": [
-  "$\\text{Conc. } \\text{HCl} + \\text{anhydrous } \\text{ZnCl}_2$",
-  "$\\text{Dilute } \\text{HCl} + \\text{anhydrous } \\text{ZnCl}_2$",
-  "$\\text{Conc. } \\text{HCl} + \\text{anhydrous } \\text{AlCl}_3$",
-  "$\\text{Conc. } \\text{H}_2\\text{SO}_4 + \\text{anhydrous } \\text{ZnCl}_2$"
+  "Concentrated $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$; butan-1-ol turns turbid first.",
+  "Concentrated $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$; butan-2-ol turns turbid within a few minutes, while butan-1-ol remains clear.",
+  "Dilute $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$; both turn turbid immediately.",
+  "Concentrated $\\text{H}_2\\text{SO}_4$ and anhydrous $\\text{ZnCl}_2$; neither turns turbid."
  ],
- "answer": "A",
+ "answer": "B",
  "figure": {
   "path": "figs/q063_stem_v0.png",
-  "width_pct": 32,
+  "width_pct": 35,
   "kind": "chem"
  },
  "option_figs": null,
@@ -38,38 +38,39 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Figure shows (CH3)3C–OH (tertiary alcohol). Lucas reagent = conc. HCl + anhydrous ZnCl2. Tertiary alcohols form a stable 3° carbocation (SN1) and give insoluble alkyl chloride as immediate turbidity at room temperature; primary alcohols show no turbidity. Only option A is the Lucas reagent.",
-   "answer": "A",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The upper structure is butan-2-ol (secondary); the lower is butan-1-ol (primary). With Lucas reagent (concentrated HCl and anhydrous ZnCl₂) at room temperature, the secondary alcohol turns turbid within a few minutes, while the primary alcohol remains clear.",
+   "answer": "B",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The compound shown in the figure is 2-methylpropan-2-ol ($tert$-butanol), which is a tertiary ($3^\\circ$) alcohol. Lucas reagent is an equimolar mixture of concentrated $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$. Tertiary alcohols react via an $\\text{S}_\\text{N}1$ mechanism involving a stable tertiary carbocation intermediate, reacting almost instantaneously to produce an insoluble alkyl chloride: $$\\text{(CH}_3)_3\\text{C-OH} + \\text{HCl} \\xrightarrow{\\text{anhyd. } \\text{ZnCl}_2} \\text{(CH}_3)_3\\text{C-Cl}\\downarrow + \\text{H}_2\\text{O}$$ This insoluble alkyl chloride appears immediately as turbidity or cloudiness. In contrast, primary alcohols do not produce turbidity at room temperature under these conditions.\n\nIndependent check: Figure shows (CH3)3C–OH (tertiary alcohol). Lucas reagent = conc. HCl + anhydrous ZnCl2. Tertiary alcohols form a stable 3° carbocation (SN1) and give insoluble alkyl chloride as immediate turbidity at room temperature; primary alcohols show no turbidity. Only option A is the Lucas reagent.",
+ "working": "Lucas reagent: concentrated $\\text{HCl}$ + anhydrous $\\text{ZnCl}_2$.\\nButan-2-ol is secondary: turbidity appears within a few minutes at room temperature.\\nButan-1-ol is primary: no turbidity at room temperature.\n\nIndependent check: The upper structure is butan-2-ol (secondary); the lower is butan-1-ol (primary). With Lucas reagent (concentrated HCl and anhydrous ZnCl₂) at room temperature, the secondary alcohol turns turbid within a few minutes, while the primary alcohol remains clear.",
  "solution": "",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "Which reagent distinguishes the alcohol shown in the figure from a primary alcohol by the rapid appearance of turbidity at room temperature?",
+  "stem": "The alcohols shown are tested separately at room temperature. Which reagent and observation distinguish them by the onset of turbidity?",
   "options": [
-   "$\\text{Conc. } \\text{HCl} + \\text{anhydrous } \\text{ZnCl}_2$",
-   "$\\text{Dilute } \\text{HCl} + \\text{anhydrous } \\text{ZnCl}_2$",
-   "$\\text{Conc. } \\text{HCl} + \\text{anhydrous } \\text{AlCl}_3$",
-   "$\\text{Conc. } \\text{H}_2\\text{SO}_4 + \\text{anhydrous } \\text{ZnCl}_2$"
+   "Concentrated $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$; butan-1-ol turns turbid first.",
+   "Concentrated $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$; butan-2-ol turns turbid within a few minutes, while butan-1-ol remains clear.",
+   "Dilute $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$; both turn turbid immediately.",
+   "Concentrated $\\text{H}_2\\text{SO}_4$ and anhydrous $\\text{ZnCl}_2$; neither turns turbid."
   ],
   "option_smiles": null,
-  "answer": "A",
-  "working": "The compound shown in the figure is 2-methylpropan-2-ol ($tert$-butanol), which is a tertiary ($3^\\circ$) alcohol. Lucas reagent is an equimolar mixture of concentrated $\\text{HCl}$ and anhydrous $\\text{ZnCl}_2$. Tertiary alcohols react via an $\\text{S}_\\text{N}1$ mechanism involving a stable tertiary carbocation intermediate, reacting almost instantaneously to produce an insoluble alkyl chloride: $$\\text{(CH}_3)_3\\text{C-OH} + \\text{HCl} \\xrightarrow{\\text{anhyd. } \\text{ZnCl}_2} \\text{(CH}_3)_3\\text{C-Cl}\\downarrow + \\text{H}_2\\text{O}$$ This insoluble alkyl chloride appears immediately as turbidity or cloudiness. In contrast, primary alcohols do not produce turbidity at room temperature under these conditions.",
-  "distractor_notes": "Dilute HCl + anhydrous ZnCl2 incorrectly uses dilute acid, which provides insufficient hydronium and chloride activity to drive the conversion.\nConc. HCl + anhydrous AlCl3 confuses the Lucas reagent Lewis acid (ZnCl2) with the Lewis acid typically used in Friedel–Crafts alkylation/acylation.\nConc. H2SO4 + anhydrous ZnCl2 replaces hydrochloric acid with sulfuric acid, which lacks nucleophilic chloride ions and promotes alcohol dehydration rather than alkyl chloride precipitation.",
+  "answer": "B",
   "figure": {
    "kind": "chem",
-   "description": "Skeletal structure of 2-methylpropan-2-ol (tert-butyl alcohol). A central carbon atom is bonded to three methyl groups (-CH3) and one hydroxyl group (-OH).",
-   "smiles": "CC(C)(C)O"
+   "description": "Draw two separate condensed structural formulae side by side. On the left, label butan-1-ol and draw CH3–CH2–CH2–CH2–OH. On the right, label butan-2-ol and draw CH3–CH(OH)–CH2–CH3. Show all bonds and the OH groups clearly.",
+   "smiles": "CCCCO.CCC(O)C"
   },
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Lucas reagent: concentrated $\\text{HCl}$ + anhydrous $\\text{ZnCl}_2$.\\nButan-2-ol is secondary: turbidity appears within a few minutes at room temperature.\\nButan-1-ol is primary: no turbidity at room temperature.",
+  "distractor_notes": "A: reverses the relative reaction rates.\\nC: uses dilute acid and incorrectly predicts immediate turbidity for both.\\nD: substitutes sulfuric acid for the Lucas reagent and predicts no turbidity."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

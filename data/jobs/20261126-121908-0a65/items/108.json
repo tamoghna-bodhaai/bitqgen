@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "The variance of the discrete frequency distribution with values $x = 2, 4, 6, 8$ having frequencies $f = 4, 3, 2, 1$ respectively, is",
+ "stem": "For the discrete frequency distribution with values $1, 4, 7$ and respective frequencies $1, 2, 1$, the variance is",
  "options": [
-  "$2$",
-  "$4$",
-  "$5$",
-  "$10$"
+  "$3$",
+  "$\\dfrac{9}{2}$",
+  "$6$",
+  "$18$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "N=10, mean = (2·4+4·3+6·2+8·1)/10 = 4. Variance = [4(2-4)²+3(4-4)²+2(6-4)²+1(8-4)²]/10 = (16+0+8+16)/10 = 4.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mean = (1·1 + 2·4 + 1·7)/4 = 4. Variance = [1(1−4)² + 2(4−4)² + 1(7−4)²]/4 = 18/4 = 9/2.",
    "answer": "B",
-   "confidence": 1.0,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The total frequency is $N = \\sum f_i = 4 + 3 + 2 + 1 = 10$. The mean is $\\bar{x} = \\dfrac{\\sum f_i x_i}{N} = \\dfrac{4(2) + 3(4) + 2(6) + 1(8)}{10} = \\dfrac{40}{10} = 4$. The sum of squared deviations from the mean is $\\sum f_i (x_i - \\bar{x})^2 = 4(2 - 4)^2 + 3(4 - 4)^2 + 2(6 - 4)^2 + 1(8 - 4)^2 = 4(4) + 3(0) + 2(4) + 1(16) = 16 + 0 + 8 + 16 = 40$. Therefore, the variance is $\\sigma^2 = \\dfrac{\\sum f_i (x_i - \\bar{x})^2}{N} = \\dfrac{40}{10} = 4$.\n\nIndependent check: N=10, mean = (2·4+4·3+6·2+8·1)/10 = 4. Variance = [4(2-4)²+3(4-4)²+2(6-4)²+1(8-4)²]/10 = (16+0+8+16)/10 = 4.",
+ "working": "$N=1+2+1=4$, $\\bar{x}=\\dfrac{1+8+7}{4}=4$.<br>$\\sigma^2=\\dfrac{1(1-4)^2+2(4-4)^2+1(7-4)^2}{4}=\\dfrac{18}{4}=\\dfrac{9}{2}$.\n\nIndependent check: Mean = (1·1 + 2·4 + 1·7)/4 = 4. Variance = [1(1−4)² + 2(4−4)² + 1(7−4)²]/4 = 18/4 = 9/2.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The variance of the discrete frequency distribution with values $x = 2, 4, 6, 8$ having frequencies $f = 4, 3, 2, 1$ respectively, is",
+  "stem": "For the discrete frequency distribution with values $1, 4, 7$ and respective frequencies $1, 2, 1$, the variance is",
   "options": [
-   "$2$",
-   "$4$",
-   "$5$",
-   "$10$"
+   "$3$",
+   "$\\dfrac{9}{2}$",
+   "$6$",
+   "$18$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "The total frequency is $N = \\sum f_i = 4 + 3 + 2 + 1 = 10$. The mean is $\\bar{x} = \\dfrac{\\sum f_i x_i}{N} = \\dfrac{4(2) + 3(4) + 2(6) + 1(8)}{10} = \\dfrac{40}{10} = 4$. The sum of squared deviations from the mean is $\\sum f_i (x_i - \\bar{x})^2 = 4(2 - 4)^2 + 3(4 - 4)^2 + 2(6 - 4)^2 + 1(8 - 4)^2 = 4(4) + 3(0) + 2(4) + 1(16) = 16 + 0 + 8 + 16 = 40$. Therefore, the variance is $\\sigma^2 = \\dfrac{\\sum f_i (x_i - \\bar{x})^2}{N} = \\dfrac{40}{10} = 4$.",
-  "distractor_notes": "Option A ($2$) gives the standard deviation $\\sigma = \\sqrt{4} = 2$ instead of the variance. Option C ($5$) results from ignoring frequencies and finding the variance of the distinct values $2, 4, 6, 8$. Option D ($10$) results from dividing the sum of squared deviations ($40$) by the number of values ($4$) instead of the total frequency ($10$).",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$N=1+2+1=4$, $\\bar{x}=\\dfrac{1+8+7}{4}=4$.<br>$\\sigma^2=\\dfrac{1(1-4)^2+2(4-4)^2+1(7-4)^2}{4}=\\dfrac{18}{4}=\\dfrac{9}{2}$.",
+  "distractor_notes": "A: Incorrectly omits one endpoint's squared deviation.<br>C: Uses the sample-variance denominator $N-1$ instead of $N$.<br>D: Gives the sum of squared deviations without dividing by the total frequency."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

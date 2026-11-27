@@ -1,0 +1,71 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Ellipse – eccentricity",
+  "archetype": "single-formula numerical",
+  "brief": "Given the equation of an ellipse in shifted/non-standard form, find its eccentricity (or foci) using b² = a²(1 − e²) after reading off a and b.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:111",
+   "2025s1:113",
+   "2025s2:116"
+  ],
+  "origin": "variant",
+  "bank_ref": "gfe5114e7e19d"
+ },
+ "status": "ok",
+ "stem": "The foci of the ellipse $16(x-1)^2+25(y+2)^2=400$ are",
+ "options": [
+  "$(1,1), (1,-5)$",
+  "$(10,-2), (-8,-2)$",
+  "$(4,2), (-2,2)$",
+  "$(4,-2), (-2,-2)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Divide by 400: \\(\\frac{(x-1)^2}{25}+\\frac{(y+2)^2}{16}=1\\). Thus \\(c=\\sqrt{25-16}=3\\), and the foci are \\((1\\pm3,-2)\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\frac{(x-1)^2}{25}+\\frac{(y+2)^2}{16}=1$$\n$a^2=25,\\ b^2=16,\\ c^2=a^2-b^2=9\\Rightarrow c=3$.\nCentre $(1,-2)$; major axis is horizontal.\nFoci: $(1\\pm3,-2)=(4,-2),(-2,-2)$.\n\nIndependent check: Divide by 400: \\(\\frac{(x-1)^2}{25}+\\frac{(y+2)^2}{16}=1\\). Thus \\(c=\\sqrt{25-16}=3\\), and the foci are \\((1\\pm3,-2)\\).",
+ "solution": "Dividing by $400$, the ellipse is $$\\frac{(x-1)^2}{25}+\\frac{(y+2)^2}{16}=1.$$ Thus $c=\\sqrt{25-16}=3$; its centre is $(1,-2)$ and major axis is horizontal, so the foci are $(1\\pm3,-2)=(4,-2),(-2,-2)$. (D)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The foci of the ellipse $16(x-1)^2+25(y+2)^2=400$ are",
+  "options": [
+   "$(1,1), (1,-5)$",
+   "$(4,-2), (-2,-2)$",
+   "$(4,2), (-2,2)$",
+   "$(10,-2), (-8,-2)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$\\frac{(x-1)^2}{25}+\\frac{(y+2)^2}{16}=1$$\n$a^2=25,\\ b^2=16,\\ c^2=a^2-b^2=9\\Rightarrow c=3$.\nCentre $(1,-2)$; major axis is horizontal.\nFoci: $(1\\pm3,-2)=(4,-2),(-2,-2)$.",
+  "distractor_notes": "A: treats the major axis as vertical. C: reverses the sign of the centre’s $y$-coordinate. D: uses $a^2-b^2$ as $c$ instead of taking its square root."
+ },
+ "variant_of": "gfe5114e7e19d",
+ "author_model": "openai/gpt-6-luna-pro"
+}

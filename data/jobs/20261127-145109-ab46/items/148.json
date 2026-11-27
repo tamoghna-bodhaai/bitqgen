@@ -1,0 +1,70 @@
+{
+ "qno": 148,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 148,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "One-sided limits",
+  "archetype": "match one-sided limits",
+  "brief": "A limit at a point where the expression involves |x| or a greatest-integer/greatest-modulus piece; evaluate left and right limits separately and match, or conclude the limit does not exist.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:96",
+   "2026s1:113",
+   "2025s1:103"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $f(x)=\\dfrac{|x-2|+x^2-4}{x-2}$, what is $\\left(\\lim_{x\\to2^-}f(x),\\lim_{x\\to2^+}f(x)\\right)$?",
+ "options": [
+  "$(5,3)$",
+  "$(1,3)$",
+  "$(-1,1)$",
+  "$(3,5)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For x<2, |x−2|=−(x−2), so f(x)=x+1 and the left limit is 3. For x>2, |x−2|=x−2, so f(x)=x+3 and the right limit is 5.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{x^2-4}{x-2}=x+2\\to4$; $\\dfrac{|x-2|}{x-2}\\to-1$ as $x\\to2^-$ and $\\to1$ as $x\\to2^+$. Thus the pair is $(3,5)$.\n\nIndependent check: For x<2, |x−2|=−(x−2), so f(x)=x+1 and the left limit is 3. For x>2, |x−2|=x−2, so f(x)=x+3 and the right limit is 5.",
+ "solution": "For $x<2$, $|x-2|=-(x-2)$, so $f(x)=x+1$ and $\\lim_{x\\to2^-}f(x)=3$.\nFor $x>2$, $|x-2|=x-2$, so $f(x)=x+3$ and $\\lim_{x\\to2^+}f(x)=5$.\nThus the pair is $(3,5)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $f(x)=\\dfrac{|x-2|+x^2-4}{x-2}$, what is $\\left(\\lim_{x\\to2^-}f(x),\\lim_{x\\to2^+}f(x)\\right)$?",
+  "options": [
+   "$(5,3)$",
+   "$(3,5)$",
+   "$(-1,1)$",
+   "$(1,3)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{x^2-4}{x-2}=x+2\\to4$; $\\dfrac{|x-2|}{x-2}\\to-1$ as $x\\to2^-$ and $\\to1$ as $x\\to2^+$. Thus the pair is $(3,5)$.",
+  "distractor_notes": "A: reverses the one-sided limits; C: omits the polynomial term; D: simplifies the polynomial quotient incorrectly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

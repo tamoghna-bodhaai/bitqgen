@@ -1,0 +1,68 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "counting formula",
+  "brief": "Find the number of functions (or onto functions) from one finite set onto another using surjection counting.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:122",
+   "2024s2:102",
+   "2026s2:109"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $|A|=6$ and $|B|=4$. For fixed $a\\in A$ and $b\\in B$, how many onto functions $f:A\\to B$ satisfy $f(a)=b$?",
+ "options": [
+  "$390$",
+  "$240$",
+  "$391$",
+  "$1024$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since f(a)=b is fixed, the other 5 elements must map onto the 4-element codomain, with b already covered. By inclusion–exclusion, the count is 4^5 − 3·3^5 + 3·2^5 − 1 = 390.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "With $f(a)=b$ fixed, the remaining $5$ elements must map to $B$, with each of the other $3$ elements of $B$ attained.\n$N=4^5-\\binom31 3^5+\\binom32 2^5-\\binom33 1^5$\n$=1024-729+96-1=390$.\n\nIndependent check: Since f(a)=b is fixed, the other 5 elements must map onto the 4-element codomain, with b already covered. By inclusion–exclusion, the count is 4^5 − 3·3^5 + 3·2^5 − 1 = 390.",
+ "solution": "Since $f(a)=b$ is fixed, the remaining $5$ elements must cover the other $3$ elements of $B$. By inclusion–exclusion,\n$$N=4^5-\\binom31 3^5+\\binom32 2^5-\\binom33 1^5=1024-729+96-1=390.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $|A|=6$ and $|B|=4$. For fixed $a\\in A$ and $b\\in B$, how many onto functions $f:A\\to B$ satisfy $f(a)=b$?",
+  "options": [
+   "$240$",
+   "$390$",
+   "$391$",
+   "$1024$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "With $f(a)=b$ fixed, the remaining $5$ elements must map to $B$, with each of the other $3$ elements of $B$ attained.\n$N=4^5-\\binom31 3^5+\\binom32 2^5-\\binom33 1^5$\n$=1024-729+96-1=390$.",
+  "distractor_notes": "A: Counts onto maps from the remaining elements to all four elements of $B$. C: Omits the final inclusion-exclusion term. D: Counts all extensions without requiring the other three elements of $B$ to be attained."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

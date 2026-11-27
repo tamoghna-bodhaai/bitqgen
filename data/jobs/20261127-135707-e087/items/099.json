@@ -1,0 +1,68 @@
+{
+ "qno": 99,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 99,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism",
+  "brief": "Two simple universal statements (All A are B, No B are C) with four conclusion options; 1/5 difficulty so conclusions follow directly and only one is valid.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:78",
+   "2026s2:72",
+   "2026s1:82"
+  ]
+ },
+ "status": "ok",
+ "stem": "Read the statements and conclusions carefully. Which conclusion logically follows?\n\n**Statements:**\nAll poets are writers.\nNo writers are careless.\n\n**Conclusions:**\nI. No poet is careless.\nII. All poets are careless.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Poets are a subset of writers, and no writers are careless; therefore no poet is careless. Conclusion II does not follow.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Since every poet is a writer and no writer is careless, no poet is careless (I follows). II contradicts this restriction.\n\nIndependent check: Poets are a subset of writers, and no writers are careless; therefore no poet is careless. Conclusion II does not follow.",
+ "solution": "Every poet is a writer, and no writer is careless. Therefore, no poet is careless, so conclusion I follows; conclusion II does not.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Read the statements and conclusions carefully. Which conclusion logically follows?\n\n**Statements:**\nAll poets are writers.\nNo writers are careless.\n\n**Conclusions:**\nI. No poet is careless.\nII. All poets are careless.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Since every poet is a writer and no writer is careless, no poet is careless (I follows). II contradicts this restriction.",
+  "distractor_notes": "B: reverses the exclusion between writers and careless people. C: treats contradictory conclusions as both valid. D: misses the direct implication of the statements."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

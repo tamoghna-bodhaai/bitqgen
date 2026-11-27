@@ -1,0 +1,78 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "R/S configuration in Fischer projection",
+  "archetype": "conceptual",
+  "brief": "Show a Fischer projection of a chiral molecule in the figure; assign R/S after a stated 90° rotation of the projection and identify the enantiomer/diastereomer among options.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:44",
+   "2026s1:41",
+   "2025s2:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "The Fischer projection is rotated clockwise by $90^\\circ$ in its plane and then read as a Fischer projection. What configuration and relationship to the original does it represent?",
+ "options": [
+  "$(2S,3R)$; diastereomer",
+  "$(2S,3S)$; identical",
+  "$(2R,3S)$; diastereomer",
+  "$(2R,3R)$; enantiomer"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q058_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The depicted molecule is (2S,3S). Rotating a Fischer projection by 90° and reading it again as a Fischer projection inverts both stereocenters, giving (2R,3R), the enantiomer.",
+   "answer": "A",
+   "confidence": 0.91,
+   "multiple_correct": false,
+   "issues": [
+    "The figure is a wedge-dash structure, not a Fischer projection; it does provide enough stereochemical information to determine the molecule's configuration."
+   ],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Original Fischer: at C2, priorities are OH $>$ CHO $>$ C3 $>$ H; at C3, OH $>$ C2 $>$ CH3 $>$ H.\nIn each centre, H is horizontal, so reverse the observed order: both centres are $S$.\nA $90^\\circ$ rotation swaps the horizontal and vertical substituents at each centre.\nThus both configurations invert: $(2S,3S) \\to (2R,3R)$.\nBoth stereocentres invert, so the result is the enantiomer.\n\nIndependent check: The depicted molecule is (2S,3S). Rotating a Fischer projection by 90° and reading it again as a Fischer projection inverts both stereocenters, giving (2R,3R), the enantiomer.",
+ "solution": "In the original Fischer projection, both centres are $(S)$; a $90^\\circ$ rotation swaps horizontal and vertical substituents, inverting each centre.\n$$\n(2S,3S)\\longrightarrow(2R,3R)\n$$\nBoth stereocentres invert, so the rotated structure is the enantiomer.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The Fischer projection is rotated clockwise by $90^\\circ$ in its plane and then read as a Fischer projection. What configuration and relationship to the original does it represent?",
+  "options": [
+   "$(2R,3R)$; enantiomer",
+   "$(2S,3S)$; identical",
+   "$(2R,3S)$; diastereomer",
+   "$(2S,3R)$; diastereomer"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a Fischer projection as a vertical carbon chain: CHO at the top, then stereocentre C2, then stereocentre C3, then CH3 at the bottom. At each stereocentre, draw OH on the left and H on the right. Label the two stereocentres C2 and C3. Use horizontal bonds for the left and right substituents and vertical bonds for the chain.",
+   "smiles": "O=C[C@@H](O)[C@@H](O)C"
+  },
+  "difficulty_estimate": 2,
+  "working": "Original Fischer: at C2, priorities are OH $>$ CHO $>$ C3 $>$ H; at C3, OH $>$ C2 $>$ CH3 $>$ H.\nIn each centre, H is horizontal, so reverse the observed order: both centres are $S$.\nA $90^\\circ$ rotation swaps the horizontal and vertical substituents at each centre.\nThus both configurations invert: $(2S,3S) \\to (2R,3R)$.\nBoth stereocentres invert, so the result is the enantiomer.",
+  "distractor_notes": "B: treats the rotated projection as configuration-preserving. C: inverts only C2. D: inverts only C3."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

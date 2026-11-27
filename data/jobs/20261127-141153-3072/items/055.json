@@ -1,0 +1,68 @@
+{
+ "qno": 55,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 55,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Bohr energy for hydrogen-like ions",
+  "archetype": "proportionality-scaling",
+  "brief": "Ratio of Bohr radii or energies of He+ vs H for the same n, or energy of an n-th level of a hydrogen-like ion; single scaling formula.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:60",
+   "2026s2:51",
+   "2023s2:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "The energy of the $n=2$ level of hydrogen is $-3.4$ eV. What is the energy of the $n=2$ level of $\\text{He}^+$?",
+ "options": [
+  "$-13.6$ eV",
+  "$-3.4$ eV",
+  "$-6.8$ eV",
+  "$-0.85$ eV"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a hydrogen-like ion, energy scales as Z² at fixed n. He⁺ has Z=2, so E₂=4(−3.4 eV)=−13.6 eV.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E_n\\propto -\\dfrac{Z^2}{n^2}$<br>At the same $n$: $E_n(\\text{He}^+)=4E_n(\\text{H})$<br>$=4(-3.4)=-13.6\\ \\text{eV}$\n\nIndependent check: For a hydrogen-like ion, energy scales as Z² at fixed n. He⁺ has Z=2, so E₂=4(−3.4 eV)=−13.6 eV.",
+ "solution": "For a hydrogen-like ion, $E_n\\propto -\\dfrac{Z^2}{n^2}$. At the same $n$, He$^+$ has $Z=2$, so\n$$E_2(\\text{He}^+)=2^2E_2(\\text{H})=4(-3.4)=-13.6\\ \\text{eV}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The energy of the $n=2$ level of hydrogen is $-3.4$ eV. What is the energy of the $n=2$ level of $\\text{He}^+$?",
+  "options": [
+   "$-0.85$ eV",
+   "$-3.4$ eV",
+   "$-6.8$ eV",
+   "$-13.6$ eV"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$E_n\\propto -\\dfrac{Z^2}{n^2}$<br>At the same $n$: $E_n(\\text{He}^+)=4E_n(\\text{H})$<br>$=4(-3.4)=-13.6\\ \\text{eV}$",
+  "distractor_notes": "A: Uses the reciprocal scaling factor; B: Ignores the change in nuclear charge; C: Applies a factor of two instead of four."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

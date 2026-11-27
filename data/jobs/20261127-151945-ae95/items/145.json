@@ -1,0 +1,71 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "Find the area enclosed between a parabola and a line (or two curves) that intersect at two points; requires setting up the correct definite integral with the right ordering of curves.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:96",
+   "2025s1:99",
+   "2021:106"
+  ],
+  "origin": "variant",
+  "bank_ref": "gbccb5480e475"
+ },
+ "status": "ok",
+ "stem": "The line through $(0,3)$ and $(1,8)$ and the parabola $y=2x^2$ enclose a region. Its area, in square units, is",
+ "options": [
+  "$\\dfrac{343}{48}$",
+  "$\\dfrac{27}{2}$",
+  "$\\dfrac{343}{12}$",
+  "$\\dfrac{343}{24}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The line is y=5x+3. Intersections satisfy 2x²=5x+3, giving x=−1/2 and x=3. The enclosed area is ∫₋₁/₂³(5x+3−2x²)dx = 343/24.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$m=\\dfrac{8-3}{1-0}=5$, so the line is $y=5x+3$. $2x^2=5x+3\\implies (2x+1)(x-3)=0$. The line is above the parabola for $-\\dfrac12<x<3$. $A=\\displaystyle\\int_{-1/2}^{3}(-2x^2+5x+3)\\,dx=\\left[-\\dfrac23x^3+\\dfrac52x^2+3x\\right]_{-1/2}^{3}=\\dfrac{343}{24}$\n\nIndependent check: The line is y=5x+3. Intersections satisfy 2x²=5x+3, giving x=−1/2 and x=3. The enclosed area is ∫₋₁/₂³(5x+3−2x²)dx = 343/24.",
+ "solution": "The line through $(0,3)$ and $(1,8)$ is $y=5x+3$. Intersections with $y=2x^2$ satisfy $(2x+1)(x-3)=0$, so $x=-\\frac12,3$.\n$$A=\\int_{-1/2}^{3}(5x+3-2x^2)\\,dx=\\left[-\\frac23x^3+\\frac52x^2+3x\\right]_{-1/2}^{3}=\\frac{343}{24}$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The line through $(0,3)$ and $(1,8)$ and the parabola $y=2x^2$ enclose a region. Its area, in square units, is",
+  "options": [
+   "$\\dfrac{343}{48}$",
+   "$\\dfrac{27}{2}$",
+   "$\\dfrac{343}{24}$",
+   "$\\dfrac{343}{12}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$m=\\dfrac{8-3}{1-0}=5$, so the line is $y=5x+3$. $2x^2=5x+3\\implies (2x+1)(x-3)=0$. The line is above the parabola for $-\\dfrac12<x<3$. $A=\\displaystyle\\int_{-1/2}^{3}(-2x^2+5x+3)\\,dx=\\left[-\\dfrac23x^3+\\dfrac52x^2+3x\\right]_{-1/2}^{3}=\\dfrac{343}{24}$",
+  "distractor_notes": "A: omitted the factor $2$ from the quadratic coefficient; B: used $0$ instead of the negative intersection as the lower limit; D: double-counted the enclosed area."
+ },
+ "variant_of": "gbccb5480e475",
+ "author_model": "openai/gpt-6-luna-pro"
+}

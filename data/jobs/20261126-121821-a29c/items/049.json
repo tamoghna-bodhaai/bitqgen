@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Heating an aqueous carbohydrate solution with copper(II) acetate in dilute acetic acid produces a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$. This observation corresponds to:",
+ "stem": "On heating glucose with excess phenylhydrazine, yellow needle-shaped crystals form. This observation identifies which carbohydrate test?",
  "options": [
-  "Barfoed's test",
-  "Benedict's test",
-  "Fehling's test",
-  "Seliwanoff's test"
+  "Molisch's test",
+  "Seliwanoff's test",
+  "Iodine test",
+  "Osazone test"
  ],
- "answer": "A",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Copper(II) acetate in dilute acetic acid is Barfoed's reagent (weakly acidic medium); monosaccharides reduce it to red Cu2O within ~2-3 minutes, distinguishing them from disaccharides. Benedict's uses citrate/carbonate, Fehling's uses tartrate/NaOH (both alkaline), Seliwanoff's uses resorcinol/HCl and gives a red solution, not Cu2O.",
-   "answer": "A",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Glucose reacts with excess phenylhydrazine on heating to form yellow osazone crystals.",
+   "answer": "C",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Barfoed's reagent consists of copper(II) acetate, $\\text{Cu}(\\text{CH}_3\\text{COO})_2$, in dilute acetic acid (a weakly acidic medium).\n2. In an acidic medium, only reducing monosaccharides are strong enough reducing agents to reduce $\\text{Cu}^{2+}$ to cuprous oxide within a short time ($1\\text{--}2\\ \\text{minutes}$):\n$$\\text{RCHO} + 2\\text{Cu}^{2+} + 2\\text{H}_2\\text{O} \\longrightarrow \\text{RCOOH} + \\text{Cu}_2\\text{O}\\downarrow + 4\\text{H}^+$$\nThe formation of a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$ is diagnostic of Barfoed's test (used to distinguish reducing monosaccharides from reducing disaccharides, which react much more slowly).\n3. Benedict's and Fehling's tests both use alkaline media (with citrate and tartrate, respectively), while Seliwanoff's test uses resorcinol in dilute $\\text{HCl}$ to give a cherry-red colour with ketoses.\n\nIndependent check: Copper(II) acetate in dilute acetic acid is Barfoed's reagent (weakly acidic medium); monosaccharides reduce it to red Cu2O within ~2-3 minutes, distinguishing them from disaccharides. Benedict's uses citrate/carbonate, Fehling's uses tartrate/NaOH (both alkaline), Seliwanoff's uses resorcinol/HCl and gives a red solution, not Cu2O.",
- "solution": "",
+ "working": "Glucose reacts with excess phenylhydrazine to form a yellow crystalline osazone.\nThe formation of osazone crystals identifies the osazone test.\n\nIndependent check: Glucose reacts with excess phenylhydrazine on heating to form yellow osazone crystals.",
+ "solution": "On heating, glucose reacts with excess phenylhydrazine to form yellow crystalline osazone.\nThis characteristic crystal formation identifies the osazone test.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Heating an aqueous carbohydrate solution with copper(II) acetate in dilute acetic acid produces a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$. This observation corresponds to:",
+  "stem": "On heating glucose with excess phenylhydrazine, yellow needle-shaped crystals form. This observation identifies which carbohydrate test?",
   "options": [
-   "Barfoed's test",
-   "Benedict's test",
-   "Fehling's test",
-   "Seliwanoff's test"
+   "Molisch's test",
+   "Seliwanoff's test",
+   "Osazone test",
+   "Iodine test"
   ],
   "option_smiles": null,
-  "answer": "A",
-  "working": "1. Barfoed's reagent consists of copper(II) acetate, $\\text{Cu}(\\text{CH}_3\\text{COO})_2$, in dilute acetic acid (a weakly acidic medium).\n2. In an acidic medium, only reducing monosaccharides are strong enough reducing agents to reduce $\\text{Cu}^{2+}$ to cuprous oxide within a short time ($1\\text{--}2\\ \\text{minutes}$):\n$$\\text{RCHO} + 2\\text{Cu}^{2+} + 2\\text{H}_2\\text{O} \\longrightarrow \\text{RCOOH} + \\text{Cu}_2\\text{O}\\downarrow + 4\\text{H}^+$$\nThe formation of a red precipitate of $\\text{Cu}_2\\text{O}$ within $2\\ \\text{minutes}$ is diagnostic of Barfoed's test (used to distinguish reducing monosaccharides from reducing disaccharides, which react much more slowly).\n3. Benedict's and Fehling's tests both use alkaline media (with citrate and tartrate, respectively), while Seliwanoff's test uses resorcinol in dilute $\\text{HCl}$ to give a cherry-red colour with ketoses.",
-  "distractor_notes": "Benedict's test: Confuses Barfoed's reagent with Benedict's reagent, which uses copper(II) sulfate in an alkaline solution containing sodium citrate and sodium carbonate.\nFehling's test: Confuses the weakly acidic copper(II) acetate medium with Fehling's strongly alkaline medium containing sodium potassium tartrate (Rochelle salt).\nSeliwanoff's test: Recalls the red colour observation but confuses a red precipitation of $\\text{Cu}_2\\text{O}$ with the cherry-red condensation product of resorcinol and hydroxymethylfurfural.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "Glucose reacts with excess phenylhydrazine to form a yellow crystalline osazone.\nThe formation of osazone crystals identifies the osazone test.",
+  "distractor_notes": "A: Molisch's test gives a violet ring.\nB: Seliwanoff's test gives a cherry-red colour with ketoses.\nD: Iodine gives a blue-black colour with starch."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -1,0 +1,70 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Conditional identities",
+  "archetype": "identity verification",
+  "brief": "Given a condition like a cos θ + b sin θ = c, prove/evaluate a conditional identity relating cos²θ and sin²θ or symmetric combination; hard multi-step.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:92",
+   "2024s1:108",
+   "2021:125"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If $5\\cos\\theta+12\\sin\\theta=7$, evaluate $\\dfrac{-119\\cos 2\\theta+120\\sin 2\\theta}{5\\cos\\theta+12\\sin\\theta}$.",
+ "options": [
+  "$-71$",
+  "$-\\dfrac{71}{7}$",
+  "$\\dfrac{71}{7}$",
+  "$-\\dfrac{169}{7}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let x=5cosθ+12sinθ=7 and y=-12cosθ+5sinθ. The numerator is x²−y², and x²+y²=169. Thus it is 2x²−169=−71; dividing by 7 gives −71/7.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $U=5\\cos\\theta+12\\sin\\theta$ and $V=12\\cos\\theta-5\\sin\\theta$. Then $U^2+V^2=169$ and $U^2-V^2=-119\\cos 2\\theta+120\\sin 2\\theta$. Thus the numerator is $2U^2-169=2(49)-169=-71$; the required value is $-71/7$.\n\nIndependent check: Let x=5cosθ+12sinθ=7 and y=-12cosθ+5sinθ. The numerator is x²−y², and x²+y²=169. Thus it is 2x²−169=−71; dividing by 7 gives −71/7.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "If $5\\cos\\theta+12\\sin\\theta=7$, evaluate $\\dfrac{-119\\cos 2\\theta+120\\sin 2\\theta}{5\\cos\\theta+12\\sin\\theta}$.",
+  "options": [
+   "$-71$",
+   "$-\\dfrac{71}{7}$",
+   "$\\dfrac{71}{7}$",
+   "$-\\dfrac{169}{7}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Let $U=5\\cos\\theta+12\\sin\\theta$ and $V=12\\cos\\theta-5\\sin\\theta$. Then $U^2+V^2=169$ and $U^2-V^2=-119\\cos 2\\theta+120\\sin 2\\theta$. Thus the numerator is $2U^2-169=2(49)-169=-71$; the required value is $-71/7$.",
+  "distractor_notes": "A: leaves the denominator unaccounted for; C: reverses the sign; D: omits the $2U^2$ term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

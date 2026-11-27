@@ -1,0 +1,68 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Mirror formula, magnification",
+  "archetype": "two equations two unknowns",
+  "brief": "Concave mirror where the object and image have a stated relation (e.g., image distance equals some multiple of object distance or magnification given); use mirror formula plus magnification to solve for focal length.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:1",
+   "2026s2:18",
+   "2026s1:12"
+  ]
+ },
+ "status": "ok",
+ "stem": "A concave mirror forms a real image with magnification $-\\dfrac{1}{2}$ when an object is placed $24\\ \\text{cm}$ in front of it. What is the mirror’s focal length?",
+ "options": [
+  "$18\\ \\text{cm}$",
+  "$12\\ \\text{cm}$",
+  "$8\\ \\text{cm}$",
+  "$36\\ \\text{cm}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the mirror sign convention, u = -24 cm. From m = -v/u = -1/2, v = -12 cm. Thus 1/f = 1/v + 1/u = -1/8 cm⁻¹, so the focal length magnitude is 8 cm.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=-24\\ \\text{cm},\\quad m=-\\dfrac vu=-\\dfrac12\\Rightarrow v=-12\\ \\text{cm}$; $\\dfrac1f=\\dfrac1v+\\dfrac1u=-\\dfrac1{12}-\\dfrac1{24}=-\\dfrac18\\ \\text{cm}^{-1}$; $|f|=8\\ \\text{cm}$.\n\nIndependent check: Using the mirror sign convention, u = -24 cm. From m = -v/u = -1/2, v = -12 cm. Thus 1/f = 1/v + 1/u = -1/8 cm⁻¹, so the focal length magnitude is 8 cm.",
+ "solution": "Using $m=-v/u$, with $u=-24\\ \\text{cm}$, we get $v=-12\\ \\text{cm}$.\n$$\\frac{1}{f}=\\frac{1}{v}+\\frac{1}{u}=-\\frac{1}{12}-\\frac{1}{24}=-\\frac{1}{8}\\ \\text{cm}^{-1}$$\nHence the focal length has magnitude $8\\ \\text{cm}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A concave mirror forms a real image with magnification $-\\dfrac{1}{2}$ when an object is placed $24\\ \\text{cm}$ in front of it. What is the mirror’s focal length?",
+  "options": [
+   "$8\\ \\text{cm}$",
+   "$12\\ \\text{cm}$",
+   "$18\\ \\text{cm}$",
+   "$36\\ \\text{cm}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$u=-24\\ \\text{cm},\\quad m=-\\dfrac vu=-\\dfrac12\\Rightarrow v=-12\\ \\text{cm}$; $\\dfrac1f=\\dfrac1v+\\dfrac1u=-\\dfrac1{12}-\\dfrac1{24}=-\\dfrac18\\ \\text{cm}^{-1}$; $|f|=8\\ \\text{cm}$.",
+  "distractor_notes": "B takes the image distance as the focal length; C averages the object and image distances; D adds the object and image distances."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

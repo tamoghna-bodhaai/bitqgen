@@ -1,0 +1,70 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Capacitance",
+  "subtopic": "Energy stored in capacitor",
+  "archetype": "single-formula numerical",
+  "brief": "A single parallel-plate capacitor with given C and V; direct substitution into U = ½CV² (or ask energy density given plate area and separation).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:18",
+   "2024s1:16",
+   "2023s2:29"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A capacitor of capacitance $5$ μF is connected across a $12$ V battery. How much energy is stored in it?",
+ "options": [
+  "$1.8\\times10^{-4}$ J",
+  "$3.6\\times10^{-4}$ J",
+  "$6.0\\times10^{-4}$ J",
+  "$7.2\\times10^{-4}$ J"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "U = ½CV² = ½(5×10⁻⁶)(12²) = 3.6×10⁻⁴ J.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$U=\\dfrac12CV^2=\\dfrac12(5\\times10^{-6})(12)^2=3.6\\times10^{-4}$ J.\n\nIndependent check: U = ½CV² = ½(5×10⁻⁶)(12²) = 3.6×10⁻⁴ J.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A capacitor of capacitance $5$ μF is connected across a $12$ V battery. How much energy is stored in it?",
+  "options": [
+   "$1.8\\times10^{-4}$ J",
+   "$3.6\\times10^{-4}$ J",
+   "$6.0\\times10^{-4}$ J",
+   "$7.2\\times10^{-4}$ J"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$U=\\dfrac12CV^2=\\dfrac12(5\\times10^{-6})(12)^2=3.6\\times10^{-4}$ J.",
+  "distractor_notes": "A: omits the squared voltage factor in the substitution; C: uses an incorrect numerical multiplication; D: omits the factor of $\\dfrac12$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

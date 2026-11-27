@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "In a series $LCR$ circuit, $R = 100\\ \\Omega$, $L = 0.2\\text{ H}$, and $C = 10\\ \\mu\\text{F}$ are connected to an AC source of angular frequency $\\omega = 1000\\text{ rad s}^{-1}$. The phase angle between the voltage and the current, and the nature of the circuit are:",
+ "stem": "A series $LCR$ circuit has $R = 40\\ \\Omega$, $L = 0.10$ H and $C = 100\\ \\mu\\text{F}$. It is connected to a source of angular frequency $500$ rad s$^{-1}$. The phase angle and nature of the circuit are:",
  "options": [
-  "$45^\\circ$, capacitive",
-  "$45^\\circ$, inductive",
-  "$60^\\circ$, capacitive",
-  "$60^\\circ$, inductive"
+  "$36.9^\\circ$, inductive",
+  "$36.9^\\circ$, capacitive",
+  "$53.1^\\circ$, inductive",
+  "$53.1^\\circ$, capacitive"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "X_L = ωL = 1000×0.2 = 200 Ω; X_C = 1/(ωC) = 1/(1000×10⁻⁵) = 100 Ω. Net reactance X_L − X_C = +100 Ω (inductive). tan φ = 100/R = 100/100 = 1 ⇒ φ = 45°, voltage leads current (inductive).",
-   "answer": "B",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "X_L=\\omega L=50\\,\\Omega and X_C=1/(\\omega C)=20\\,\\Omega. Hence tan(phi)=(X_L-X_C)/R=30/40=0.75, so phi≈36.9° and the circuit is inductive.",
+   "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Calculate inductive reactance:\n$$X_L = \\omega L = 1000 \\times 0.2 = 200\\ \\Omega$$\n\n2. Calculate capacitive reactance:\n$$X_C = \\dfrac{1}{\\omega C} = \\dfrac{1}{1000 \\times 10 \\times 10^{-6}} = \\dfrac{1}{10^{-2}} = 100\\ \\Omega$$\n\n3. Determine the nature of the circuit:\nSince $X_L > X_C$ ($200\\ \\Omega > 100\\ \\Omega$), inductive reactance dominates, so the circuit is inductive (voltage leads current).\n\n4. Calculate the phase angle $\\phi$:\n$$\\tan\\phi = \\dfrac{X_L - X_C}{R} = \\dfrac{200 - 100}{100} = \\dfrac{100}{100} = 1$$\n$$\\implies \\phi = 45^\\circ$$\n\nThus, the phase angle is $45^\\circ$ and the circuit is inductive.\n\nIndependent check: X_L = ωL = 1000×0.2 = 200 Ω; X_C = 1/(ωC) = 1/(1000×10⁻⁵) = 100 Ω. Net reactance X_L − X_C = +100 Ω (inductive). tan φ = 100/R = 100/100 = 1 ⇒ φ = 45°, voltage leads current (inductive).",
+ "working": "$X_L = \\omega L = 500(0.10) = 50\\ \\Omega$; $X_C = \\dfrac{1}{\\omega C} = \\dfrac{1}{500(100\\times10^{-6})} = 20\\ \\Omega$.\\n$X_L > X_C$; the circuit is inductive.\\n$\\tan\\phi = \\dfrac{X_L-X_C}{R} = \\dfrac{30}{40} = \\dfrac{3}{4}$.\\n$\\phi = 36.9^\\circ$.\n\nIndependent check: X_L=\\omega L=50\\,\\Omega and X_C=1/(\\omega C)=20\\,\\Omega. Hence tan(phi)=(X_L-X_C)/R=30/40=0.75, so phi≈36.9° and the circuit is inductive.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "In a series $LCR$ circuit, $R = 100\\ \\Omega$, $L = 0.2\\text{ H}$, and $C = 10\\ \\mu\\text{F}$ are connected to an AC source of angular frequency $\\omega = 1000\\text{ rad s}^{-1}$. The phase angle between the voltage and the current, and the nature of the circuit are:",
+  "stem": "A series $LCR$ circuit has $R = 40\\ \\Omega$, $L = 0.10$ H and $C = 100\\ \\mu\\text{F}$. It is connected to a source of angular frequency $500$ rad s$^{-1}$. The phase angle and nature of the circuit are:",
   "options": [
-   "$45^\\circ$, capacitive",
-   "$45^\\circ$, inductive",
-   "$60^\\circ$, capacitive",
-   "$60^\\circ$, inductive"
+   "$36.9^\\circ$, inductive",
+   "$36.9^\\circ$, capacitive",
+   "$53.1^\\circ$, inductive",
+   "$53.1^\\circ$, capacitive"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. Calculate inductive reactance:\n$$X_L = \\omega L = 1000 \\times 0.2 = 200\\ \\Omega$$\n\n2. Calculate capacitive reactance:\n$$X_C = \\dfrac{1}{\\omega C} = \\dfrac{1}{1000 \\times 10 \\times 10^{-6}} = \\dfrac{1}{10^{-2}} = 100\\ \\Omega$$\n\n3. Determine the nature of the circuit:\nSince $X_L > X_C$ ($200\\ \\Omega > 100\\ \\Omega$), inductive reactance dominates, so the circuit is inductive (voltage leads current).\n\n4. Calculate the phase angle $\\phi$:\n$$\\tan\\phi = \\dfrac{X_L - X_C}{R} = \\dfrac{200 - 100}{100} = \\dfrac{100}{100} = 1$$\n$$\\implies \\phi = 45^\\circ$$\n\nThus, the phase angle is $45^\\circ$ and the circuit is inductive.",
-  "distractor_notes": "Option A: Finds the correct angle ($45^\\circ$) but confuses which reactance dominates, mistakenly labeling the circuit capacitive.\nOption C: Obtains impedance by simple scalar addition $Z = R + (X_L - X_C) = 200\\ \\Omega$, finds $\\cos\\phi = R/Z = 1/2 \\implies \\phi = 60^\\circ$, and also mislabels the circuit as capacitive.\nOption D: Uses scalar addition of resistance and reactance ($Z = R + X_L - X_C = 200\\ \\Omega$) instead of phasor addition, giving $\\cos\\phi = R/Z = 1/2 \\implies \\phi = 60^\\circ$.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$X_L = \\omega L = 500(0.10) = 50\\ \\Omega$; $X_C = \\dfrac{1}{\\omega C} = \\dfrac{1}{500(100\\times10^{-6})} = 20\\ \\Omega$.\\n$X_L > X_C$; the circuit is inductive.\\n$\\tan\\phi = \\dfrac{X_L-X_C}{R} = \\dfrac{30}{40} = \\dfrac{3}{4}$.\\n$\\phi = 36.9^\\circ$.",
+  "distractor_notes": "B: Reverses the inductive/capacitive nature.\\nC: Uses the reciprocal reactance-to-resistance ratio.\\nD: Both reverses the nature and uses the reciprocal ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

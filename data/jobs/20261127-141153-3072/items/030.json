@@ -1,0 +1,68 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Photoelectric equation",
+  "archetype": "ratio of two situations",
+  "brief": "Light of two stated wavelengths falls on the same metal with given work function; using the photoelectric equation, find the ratio of the maximum kinetic energies of the electrons or the stopping potentials.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:17",
+   "2024s2:13",
+   "2022:11"
+  ]
+ },
+ "status": "ok",
+ "stem": "Light of wavelengths $310\\ \\text{nm}$ and $620\\ \\text{nm}$ falls separately on the same metal, whose work function is $1.0\\ \\text{eV}$. Given $hc=1240\\ \\text{eV nm}$, find the ratio of the maximum kinetic energies for $310\\ \\text{nm}$ and $620\\ \\text{nm}$ light.",
+ "options": [
+  "$\\dfrac{1}{3}$",
+  "$3$",
+  "$2$",
+  "$\\dfrac{1}{2}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Photon energies are 1240/310 = 4 eV and 1240/620 = 2 eV. The maximum kinetic energies are 4−1 = 3 eV and 2−1 = 1 eV, so their ratio is 3.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$K_{310}=\\dfrac{1240}{310}-1=3\\ \\text{eV}$; $K_{620}=\\dfrac{1240}{620}-1=1\\ \\text{eV}$; $\\dfrac{K_{310}}{K_{620}}=3$\n\nIndependent check: Photon energies are 1240/310 = 4 eV and 1240/620 = 2 eV. The maximum kinetic energies are 4−1 = 3 eV and 2−1 = 1 eV, so their ratio is 3.",
+ "solution": "Using the photoelectric equation, $K_{\\text{max}}=hc/\\lambda-\\phi$:\n$$K_{310}=1240/310-1=3\\ \\text{eV},\\qquad K_{620}=1240/620-1=1\\ \\text{eV}$$\nHence, $K_{310}/K_{620}=3/1=3$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Light of wavelengths $310\\ \\text{nm}$ and $620\\ \\text{nm}$ falls separately on the same metal, whose work function is $1.0\\ \\text{eV}$. Given $hc=1240\\ \\text{eV nm}$, find the ratio of the maximum kinetic energies for $310\\ \\text{nm}$ and $620\\ \\text{nm}$ light.",
+  "options": [
+   "$\\dfrac{1}{3}$",
+   "$\\dfrac{1}{2}$",
+   "$2$",
+   "$3$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$K_{310}=\\dfrac{1240}{310}-1=3\\ \\text{eV}$; $K_{620}=\\dfrac{1240}{620}-1=1\\ \\text{eV}$; $\\dfrac{K_{310}}{K_{620}}=3$",
+  "distractor_notes": "A: inverts the ratio; B: uses the wavelength ratio directly; C: ignores the work function in both cases."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

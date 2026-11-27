@@ -1,0 +1,68 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read parameter",
+  "brief": "Read amplitude, frequency, wave speed (from ω/k) from standard-form wave equation y = A sin(ωt − kx) and identify direction of propagation; simple read-off.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:19",
+   "2025s1:19",
+   "2023s1:29"
+  ]
+ },
+ "status": "ok",
+ "stem": "A travelling wave is described by $y=0.02\\sin(100\\pi t-2\\pi x)$, where $x$ and $y$ are in metres and $t$ is in seconds. Which set gives its amplitude, frequency, speed and direction of propagation?",
+ "options": [
+  "$0.02$ m, $50$ Hz, $25$ m s$^{-1}$, $-x$ direction",
+  "$0.02$ m, $100\\pi$ Hz, $50$ m s$^{-1}$, $+x$ direction",
+  "$0.02$ m, $50$ Hz, $50$ m s$^{-1}$, $+x$ direction",
+  "$0.02$ m, $50$ Hz, $50$ m s$^{-1}$, $-x$ direction"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From y=A sin(ωt−kx): A=0.02 m, f=ω/(2π)=50 Hz, v=ω/k=50 m s⁻¹. The minus sign indicates propagation in +x.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=0.02$ m, $\\omega=100\\pi$ rad s$^{-1}$, $k=2\\pi$ m$^{-1}$\n$f=\\dfrac{\\omega}{2\\pi}=50$ Hz; $v=\\dfrac{\\omega}{k}=50$ m s$^{-1}$\n$\\omega t-kx$ indicates propagation in the $+x$ direction.\n\nIndependent check: From y=A sin(ωt−kx): A=0.02 m, f=ω/(2π)=50 Hz, v=ω/k=50 m s⁻¹. The minus sign indicates propagation in +x.",
+ "solution": "Comparing with $y=A\\sin(\\omega t-kx)$ gives $A=0.02$ m, $\\omega=100\\pi$ rad s$^{-1}$ and $k=2\\pi$ m$^{-1}$.\n$$f=\\frac{\\omega}{2\\pi}=50\\text{ Hz},\\qquad v=\\frac{\\omega}{k}=50\\text{ m s}^{-1}$$\nThe phase $\\omega t-kx$ indicates propagation in the $+x$ direction.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A travelling wave is described by $y=0.02\\sin(100\\pi t-2\\pi x)$, where $x$ and $y$ are in metres and $t$ is in seconds. Which set gives its amplitude, frequency, speed and direction of propagation?",
+  "options": [
+   "$0.02$ m, $50$ Hz, $50$ m s$^{-1}$, $+x$ direction",
+   "$0.02$ m, $100\\pi$ Hz, $50$ m s$^{-1}$, $+x$ direction",
+   "$0.02$ m, $50$ Hz, $25$ m s$^{-1}$, $-x$ direction",
+   "$0.02$ m, $50$ Hz, $50$ m s$^{-1}$, $-x$ direction"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A=0.02$ m, $\\omega=100\\pi$ rad s$^{-1}$, $k=2\\pi$ m$^{-1}$\n$f=\\dfrac{\\omega}{2\\pi}=50$ Hz; $v=\\dfrac{\\omega}{k}=50$ m s$^{-1}$\n$\\omega t-kx$ indicates propagation in the $+x$ direction.",
+  "distractor_notes": "B: Treats angular frequency as frequency; C: Mishandles the wave number and propagation sign; D: Reverses the direction indicated by the phase."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -215,3 +215,51 @@ details.sol summary { font-family: var(--sans); }
   .sheet { padding: 18px; } .sheet-stats { gap: 24px; }
   .weights li { grid-template-columns: 1fr 52px; } .weights .wbar, .weights li > .dim { display: none; }
 }
+
+/* ---------- question bank browser ---------- */
+.bk { display: grid; grid-template-columns: 300px 1fr; gap: 32px; max-width: 1320px; margin: 0 auto; padding: 28px 24px 60px; }
+.bk-side { position: sticky; top: 76px; align-self: start; max-height: calc(100vh - 96px); overflow: auto; padding-right: 6px; }
+.bk-side h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-3); margin: 0 0 8px; }
+.bk-tree { list-style: none; margin: 0; padding: 0; }
+.bk-tree ul { list-style: none; margin: 2px 0 6px; padding: 0 0 0 14px; border-left: 1px solid var(--line); margin-left: 9px; }
+.bk-node { display: flex; align-items: center; gap: 6px; width: 100%; text-align: left; background: none; border: 0; padding: 5px 8px;
+  border-radius: var(--r-sm); font: inherit; font-size: 14px; color: var(--ink); cursor: pointer; line-height: 1.3; }
+.bk-node:hover { background: var(--rule-soft); }
+.bk-node.on { background: var(--ink); color: #fff; }
+.bk-node.on .bk-n { color: #fff; opacity: .8; }
+.bk-node .car { width: 12px; flex: none; color: var(--ink-3); font-size: 10px; }
+.bk-node .lbl { flex: 1; min-width: 0; }
+.bk-n { font-size: 12px; color: var(--ink-3); font-variant-numeric: tabular-nums; }
+.bk-sec { font-weight: 600; }
+.bk-dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.bk-head { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+.bk-crumb { font-size: 13px; color: var(--ink-3); margin: 0 0 4px; }
+.bk-crumb button { background: none; border: 0; padding: 0; color: var(--rule); font: inherit; cursor: pointer; }
+.bk-crumb button:hover { text-decoration: underline; }
+.bk-tools { display: flex; gap: 10px; margin: 16px 0 10px; flex-wrap: wrap; }
+.bk-tools input { flex: 1; min-width: 220px; }
+.bk-card { background: var(--sheet); border: 1px solid var(--line); border-radius: var(--r); margin-bottom: 16px; overflow: hidden; transition: box-shadow .2s, background 1.5s; }
+.bk-card.fresh { background: #F3FAF6; box-shadow: 0 0 0 2px var(--good-soft); }
+.bk-chead { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; padding: 10px 18px; border-bottom: 1px solid #EEF0F4; font-size: 13px; color: var(--ink-2); }
+.bk-chip { padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; background: var(--rule-soft); color: var(--ink-2); }
+.bk-diff { display: inline-flex; gap: 2px; vertical-align: middle; }
+.bk-diff i { width: 6px; height: 12px; border-radius: 2px; background: var(--line); }
+.bk-diff i.f { background: var(--ink-2); }
+.bk-body { padding: 16px 18px 6px; font-size: 15.5px; line-height: 1.75; }
+.bk-body .katex-display { margin: .6em 0; overflow-x: auto; overflow-y: hidden; }
+.bk-opts { list-style: none; padding: 0; margin: 14px 0 6px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 20px; }
+.bk-opts li { display: flex; gap: 10px; align-items: center; padding: 6px 10px 6px 6px; border-radius: var(--r-sm); line-height: 1.6; min-height: 38px; }
+.bk-opts li.key { background: var(--good-soft); }
+.bk-opts li.key .bub { background: var(--good); border-color: var(--good); color: #fff; }
+.bk-opts.long { grid-template-columns: 1fr; }
+.bk-foot { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; padding: 10px 18px; border-top: 1px solid #EEF0F4; background: #FAFBFC; font-size: 13px; }
+.bk-foot code { margin-left: auto; }
+.bk-sol { padding: 14px 18px; border-top: 1px solid #EEF0F4; line-height: 1.75; }
+.bk-sol h4 { margin: 0 0 6px; font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--good); }
+.bk-passage { margin: 0 0 12px; padding: 10px 14px; background: #FAFBFC; border-left: 3px solid var(--s-eng); border-radius: var(--r-sm); font-size: 14.5px; }
+.bk-live { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--ink-2); }
+.bk-live i { width: 8px; height: 8px; border-radius: 50%; background: var(--good); animation: bkpulse 1.6s infinite; }
+@keyframes bkpulse { 50% { opacity: .3; } }
+@media (max-width: 900px) { .bk { grid-template-columns: 1fr; } .bk-side { position: static; max-height: none; } .bk-opts { grid-template-columns: 1fr; } }
+.jr-time{font-size:12px;opacity:.8}
+.jr-dur{font-weight:600}

@@ -1,0 +1,70 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Energy level transitions",
+  "archetype": "excitation level counting",
+  "brief": "An atom (hydrogen-like) absorbs a photon of given energy; identify which transitions are possible from the ground state and find the level reached or the number of possible emission lines in the resulting de-excitation cascade.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:25",
+   "2026s2:26",
+   "2023s1:20"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A hydrogen-like ion has ground-state ionization energy $54.4\\ \\text{eV}$. Starting in its ground state, it absorbs a $51.0\\ \\text{eV}$ photon. Find the principal quantum number reached and the maximum number of distinct emission lines possible in its subsequent de-excitation.",
+ "options": [
+  "$(3,3)$",
+  "$(4,3)$",
+  "$(4,6)$",
+  "$(5,10)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use $54.4(1-1/n^2)=51.0$, giving $1/n^2=1/16$ and $n=4$. The maximum number of distinct lines is $4(4-1)/2=6$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$54.4\\left(1-\\dfrac{1}{n^2}\\right)=51.0\\Rightarrow n=4$; $N=\\dfrac{n(n-1)}{2}=\\dfrac{4\\cdot3}{2}=6$.\n\nIndependent check: Use $54.4(1-1/n^2)=51.0$, giving $1/n^2=1/16$ and $n=4$. The maximum number of distinct lines is $4(4-1)/2=6$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A hydrogen-like ion has ground-state ionization energy $54.4\\ \\text{eV}$. Starting in its ground state, it absorbs a $51.0\\ \\text{eV}$ photon. Find the principal quantum number reached and the maximum number of distinct emission lines possible in its subsequent de-excitation.",
+  "options": [
+   "$(3,3)$",
+   "$(4,3)$",
+   "$(4,6)$",
+   "$(5,10)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$54.4\\left(1-\\dfrac{1}{n^2}\\right)=51.0\\Rightarrow n=4$; $N=\\dfrac{n(n-1)}{2}=\\dfrac{4\\cdot3}{2}=6$.",
+  "distractor_notes": "A: misidentifies the excited level and counts lines for that level. B: counts only successive transitions in one cascade. D: overestimates the level reached and counts lines for that level."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

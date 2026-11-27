@@ -1,0 +1,71 @@
+{
+ "qno": 101,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 101,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Dictionary order",
+  "archetype": "alphabetical ordering",
+  "brief": "Ask which of five given words would appear first (or last) in dictionary order, possibly with close spellings to increase difficulty.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:84",
+   "2025s1:74",
+   "2026s2:78"
+  ],
+  "origin": "variant",
+  "bank_ref": "g74fbed3fe6db"
+ },
+ "status": "ok",
+ "stem": "Which of the following words would appear **last** in an English dictionary?\n\n1. transfer\n2. transient\n3. transact\n4. translate\n5. transcript",
+ "options": [
+  "transfer",
+  "transient",
+  "translate",
+  "transcript"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "All words share the prefix “trans”. The next letters are a (transact), c (transcript), f (transfer), i (transient), and l (translate). Since l comes last alphabetically, translate appears last.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "All begin with “trans”. The next differing letters give: transact (a), transcript (c), transfer (f), transient (i), translate (l). Thus, **translate** comes last.\n\nIndependent check: All words share the prefix “trans”. The next letters are a (transact), c (transcript), f (transfer), i (transient), and l (translate). Since l comes last alphabetically, translate appears last.",
+ "solution": "All words begin with “trans”; the next differing letters are $a$ in transact, $c$ in transcript, $f$ in transfer, $i$ in transient, and $l$ in translate. Since $l$ comes last alphabetically, <u>translate</u> appears last.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following words would appear **last** in an English dictionary?\n\n1. transfer\n2. transient\n3. transact\n4. translate\n5. transcript",
+  "options": [
+   "transfer",
+   "transient",
+   "translate",
+   "transcript"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "All begin with “trans”. The next differing letters give: transact (a), transcript (c), transfer (f), transient (i), translate (l). Thus, **translate** comes last.",
+  "distractor_notes": "A: transfer has f at the first differing letter. B: transient has i. D: transcript has c; each precedes translate."
+ },
+ "variant_of": "g74fbed3fe6db",
+ "author_model": "openai/gpt-6-luna"
+}

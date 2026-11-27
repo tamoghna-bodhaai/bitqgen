@@ -1,0 +1,68 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Cleavage of ethers with HI",
+  "archetype": "mechanism-based product",
+  "brief": "Unsymmetrical ether (aryl–alkyl type) treated with excess HI; ask the organic products and why the aryl–O bond does not cleave — SN2 vs SN1 reasoning at harder level.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:33",
+   "2025s2:60",
+   "2024s2:51"
+  ]
+ },
+ "status": "ok",
+ "stem": "Ethoxybenzene is heated with excess HI. Which choice gives the organic products and correctly explains why the aryl–O bond remains intact?",
+ "options": [
+  "Iodobenzene and ethanol; iodide displaces at the aryl carbon by $\\text{S}_\\text{N}2$.",
+  "Iodobenzene and ethanol; aryl–O cleavage occurs by formation of a phenyl cation.",
+  "Iodoethane and phenol; iodide attacks the ethyl carbon by $\\text{S}_\\text{N}2$, while the aryl C–O bond is not cleaved.",
+  "Iodoethane and iodobenzene; excess HI replaces the phenolic –OH by iodine."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "HI protonates the ether; I⁻ attacks the ethyl carbon by S_N2, giving iodoethane and phenol. The aryl C–O bond is not cleaved because the aryl carbon does not undergo S_N2 substitution.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_6\\text{H}_5\\text{OC}_2\\text{H}_5+\\text{HI}\\to\\text{C}_6\\text{H}_5\\text{OH}+\\text{C}_2\\text{H}_5\\text{I}$. Iodide attacks the primary ethyl carbon by $\\text{S}_\\text{N}2$; the aryl C(sp$^2$)–O bond resists $\\text{S}_\\text{N}2$, and a phenyl cation is highly unstable.\n\nIndependent check: HI protonates the ether; I⁻ attacks the ethyl carbon by S_N2, giving iodoethane and phenol. The aryl C–O bond is not cleaved because the aryl carbon does not undergo S_N2 substitution.",
+ "solution": "HI protonates the ether oxygen; iodide then attacks the primary ethyl carbon by $\\text{S}_\\text{N}2$.\n$$\\text{C}_6\\text{H}_5\\text{OC}_2\\text{H}_5+\\text{HI}\\rightarrow\\text{C}_6\\text{H}_5\\text{OH}+\\text{C}_2\\text{H}_5\\text{I}$$\nThe aryl C(sp$^2$)–O bond remains intact because aryl carbon does not undergo $\\text{S}_\\text{N}2$ substitution; a phenyl cation is also highly unstable.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Ethoxybenzene is heated with excess HI. Which choice gives the organic products and correctly explains why the aryl–O bond remains intact?",
+  "options": [
+   "Iodobenzene and ethanol; iodide displaces at the aryl carbon by $\\text{S}_\\text{N}2$.",
+   "Iodoethane and phenol; iodide attacks the ethyl carbon by $\\text{S}_\\text{N}2$, while the aryl C–O bond is not cleaved.",
+   "Iodobenzene and ethanol; aryl–O cleavage occurs by formation of a phenyl cation.",
+   "Iodoethane and iodobenzene; excess HI replaces the phenolic –OH by iodine."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\text{C}_6\\text{H}_5\\text{OC}_2\\text{H}_5+\\text{HI}\\to\\text{C}_6\\text{H}_5\\text{OH}+\\text{C}_2\\text{H}_5\\text{I}$. Iodide attacks the primary ethyl carbon by $\\text{S}_\\text{N}2$; the aryl C(sp$^2$)–O bond resists $\\text{S}_\\text{N}2$, and a phenyl cation is highly unstable.",
+  "distractor_notes": "A: Assumes nucleophilic substitution at an aryl sp$^2$ carbon. C: Proposes an unstable phenyl-cation pathway. D: Incorrectly assumes phenolic –OH is replaced by iodine with HI."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

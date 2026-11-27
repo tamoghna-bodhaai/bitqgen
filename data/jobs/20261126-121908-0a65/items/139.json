@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-5x+3=0$, the quadratic equation whose roots are $\\alpha^2$ and $\\beta^2$ is",
+ "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-4x+2=0$, then the quadratic equation whose roots are $\\dfrac{\\alpha}{\\beta}$ and $\\dfrac{\\beta}{\\alpha}$ is",
  "options": [
-  "$x^2-19x+9=0$",
-  "$x^2-10x+9=0$",
-  "$x^2-19x+3=0$",
-  "$x^2-7x+9=0$"
+  "$x^2-6x+1=0$",
+  "$x^2-4x+1=0$",
+  "$x^2-6x+2=0$",
+  "$x^2-3x+1=0$"
  ],
  "answer": "A",
  "figure": null,
@@ -35,7 +35,7 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "Using Vieta’s formulas, α+β=5 and αβ=3. Thus α²+β²=(α+β)²−2αβ=19 and α²β²=9, giving x²−19x+9=0.",
+   "working": "The ratio roots have product 1 and sum \\(\\frac{\\alpha^2+\\beta^2}{\\alpha\\beta}=\\frac{(4)^2-2(2)}{2}=6\\). Thus the equation is \\(x^2-6x+1=0\\).",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,24 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "$\\alpha+\\beta=5$, $\\alpha\\beta=3$; $\\alpha^2+\\beta^2=25-6=19$, $\\alpha^2\\beta^2=9$. Equation: $x^2-19x+9=0$.\n\nIndependent check: Using Vieta’s formulas, α+β=5 and αβ=3. Thus α²+β²=(α+β)²−2αβ=19 and α²β²=9, giving x²−19x+9=0.",
+ "working": "$\\alpha+\\beta=4$, $\\alpha\\beta=2$.\n$\\dfrac{\\alpha}{\\beta}+\\dfrac{\\beta}{\\alpha}=\\dfrac{(\\alpha+\\beta)^2-2\\alpha\\beta}{\\alpha\\beta}=6$.\n$\\dfrac{\\alpha}{\\beta}\\cdot\\dfrac{\\beta}{\\alpha}=1$.\nRequired equation: $x^2-6x+1=0$.\n\nIndependent check: The ratio roots have product 1 and sum \\(\\frac{\\alpha^2+\\beta^2}{\\alpha\\beta}=\\frac{(4)^2-2(2)}{2}=6\\). Thus the equation is \\(x^2-6x+1=0\\).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-5x+3=0$, the quadratic equation whose roots are $\\alpha^2$ and $\\beta^2$ is",
+  "stem": "If $\\alpha$ and $\\beta$ are the roots of $x^2-4x+2=0$, then the quadratic equation whose roots are $\\dfrac{\\alpha}{\\beta}$ and $\\dfrac{\\beta}{\\alpha}$ is",
   "options": [
-   "$x^2-19x+9=0$",
-   "$x^2-10x+9=0$",
-   "$x^2-19x+3=0$",
-   "$x^2-7x+9=0$"
+   "$x^2-6x+1=0$",
+   "$x^2-4x+1=0$",
+   "$x^2-6x+2=0$",
+   "$x^2-3x+1=0$"
   ],
   "option_smiles": null,
   "answer": "A",
   "figure": null,
   "difficulty_estimate": 2,
-  "working": "$\\alpha+\\beta=5$, $\\alpha\\beta=3$; $\\alpha^2+\\beta^2=25-6=19$, $\\alpha^2\\beta^2=9$. Equation: $x^2-19x+9=0$.",
-  "distractor_notes": "B: uses $(\\alpha+\\beta)^2$ instead of $\\alpha^2+\\beta^2$. C: leaves the product of the roots unchanged. D: incorrectly uses $\\alpha^2+\\beta^2=7$."
+  "working": "$\\alpha+\\beta=4$, $\\alpha\\beta=2$.\n$\\dfrac{\\alpha}{\\beta}+\\dfrac{\\beta}{\\alpha}=\\dfrac{(\\alpha+\\beta)^2-2\\alpha\\beta}{\\alpha\\beta}=6$.\n$\\dfrac{\\alpha}{\\beta}\\cdot\\dfrac{\\beta}{\\alpha}=1$.\nRequired equation: $x^2-6x+1=0$.",
+  "distractor_notes": "B: uses the original root sum instead of the ratio sum. C: uses the original root product instead of the ratio product. D: incorrectly halves the transformed root sum."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

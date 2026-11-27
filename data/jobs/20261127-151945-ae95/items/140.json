@@ -1,0 +1,71 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "subtopic": "Logical equivalence",
+  "archetype": "simplify and compare",
+  "brief": "Give a compound statement involving ∧, ∨ and negation and ask which of the given options is logically equivalent to it (using De Morgan's laws or truth-table reasoning).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:127",
+   "2024s1:97",
+   "2022:104"
+  ],
+  "origin": "variant",
+  "bank_ref": "gb19a71c7f267"
+ },
+ "status": "ok",
+ "stem": "Which proposition is logically equivalent to $\\sim(p\\vee q)\\wedge(r\\vee p)$?",
+ "options": [
+  "$\\sim p\\wedge\\sim q\\wedge r$",
+  "$(\\sim p\\vee\\sim q)\\wedge(r\\vee p)$",
+  "$(\\sim p\\wedge\\sim q)\\vee r$",
+  "$\\sim p\\wedge\\sim q\\wedge\\sim r$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By De Morgan’s law, the expression is (¬p ∧ ¬q) ∧ (r ∨ p). Since ¬p makes p false, this simplifies to ¬p ∧ ¬q ∧ r.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sim(p\\vee q)\\wedge(r\\vee p)=(\\sim p\\wedge\\sim q)\\wedge(r\\vee p)$\n$=\\sim p\\wedge\\sim q\\wedge r$\n\nIndependent check: By De Morgan’s law, the expression is (¬p ∧ ¬q) ∧ (r ∨ p). Since ¬p makes p false, this simplifies to ¬p ∧ ¬q ∧ r.",
+ "solution": "By De Morgan’s law and distributivity,\n$$\\sim(p\\vee q)\\wedge(r\\vee p)=(\\sim p\\wedge\\sim q)\\wedge(r\\vee p)=\\sim p\\wedge\\sim q\\wedge r.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which proposition is logically equivalent to $\\sim(p\\vee q)\\wedge(r\\vee p)$?",
+  "options": [
+   "$\\sim p\\wedge\\sim q\\wedge r$",
+   "$(\\sim p\\vee\\sim q)\\wedge(r\\vee p)$",
+   "$(\\sim p\\wedge\\sim q)\\vee r$",
+   "$\\sim p\\wedge\\sim q\\wedge\\sim r$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\sim(p\\vee q)\\wedge(r\\vee p)=(\\sim p\\wedge\\sim q)\\wedge(r\\vee p)$\n$=\\sim p\\wedge\\sim q\\wedge r$",
+  "distractor_notes": "B: Applies De Morgan’s law with the wrong connective. C: Replaces conjunction with disjunction when combining terms. D: Negates $r$ instead of retaining it."
+ },
+ "variant_of": "gb19a71c7f267",
+ "author_model": "openai/gpt-6-luna-pro"
+}

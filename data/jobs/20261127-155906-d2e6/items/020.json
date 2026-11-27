@@ -1,0 +1,70 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Moment of inertia of point masses",
+  "archetype": "sum of mr²",
+  "brief": "Point masses placed at the corners of a square/rectangle; compute the moment of inertia about a given axis (through centre, along an edge, or a diagonal), possibly comparing rotation about two axes.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:20",
+   "2025s1:3",
+   "2025s1:11"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Four point masses of $1$ kg, $2$ kg, $3$ kg and $4$ kg are placed at the four corners of a square of side $2$ m. Find their moment of inertia about an axis through the square's centre and perpendicular to its plane.",
+ "options": [
+  "$10$ kg m$^2$",
+  "$20$ kg m$^2$",
+  "$40$ kg m$^2$",
+  "$80$ kg m$^2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Each corner is at distance squared r² = (2/√2)² = 2 m² from the centre. Thus I = (1+2+3+4)×2 = 20 kg m².",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each corner is at squared distance $r^2=2^2/2=2$ m$^2$ from the axis. $I=\\sum mr^2=(1+2+3+4)(2)=20$ kg m$^2$.\n\nIndependent check: Each corner is at distance squared r² = (2/√2)² = 2 m² from the centre. Thus I = (1+2+3+4)×2 = 20 kg m².",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Four point masses of $1$ kg, $2$ kg, $3$ kg and $4$ kg are placed at the four corners of a square of side $2$ m. Find their moment of inertia about an axis through the square's centre and perpendicular to its plane.",
+  "options": [
+   "$10$ kg m$^2$",
+   "$20$ kg m$^2$",
+   "$40$ kg m$^2$",
+   "$80$ kg m$^2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Each corner is at squared distance $r^2=2^2/2=2$ m$^2$ from the axis. $I=\\sum mr^2=(1+2+3+4)(2)=20$ kg m$^2$.",
+  "distractor_notes": "A: uses $r^2=1$ m$^2$ instead of $2$ m$^2$. C: uses the square's side squared as each mass's distance squared. D: overestimates the squared distance by a factor of $4$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

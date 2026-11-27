@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Find the next term in the alphanumeric series given below:\n\nD7W, G12T, J19Q, M28N, ?",
+ "stem": "Find the next term in the following $\\alpha-numeric$ series: C4X, G9T, K16P, O25L, ?",
  "options": [
-  "O39K",
-  "P37K",
-  "P39K",
-  "P39L"
+  "R36H",
+  "S35H",
+  "S36I",
+  "S36H"
  ],
- "answer": "C",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "First letters D,G,J,M increase by 3 → P. Numbers 7,12,19,28 have gaps 5,7,9 → next gap 11 → 39. Last letters W,T,Q,N decrease by 3 → K. Next term: P39K.",
-   "answer": "C",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "First letters advance by 4: C, G, K, O → S. Numbers are 2², 3², 4², 5² → 6² = 36. Last letters retreat by 4: X, T, P, L → H.",
+   "answer": "D",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Break each term into its three components:\n\n1. **First letter:**\n$\\text{D (4)} \\xrightarrow{+3} \\text{G (7)} \\xrightarrow{+3} \\text{J (10)} \\xrightarrow{+3} \\text{M (13)} \\xrightarrow{+3} \\text{P (16)}$\n\n2. **Middle number:**\n$7 \\xrightarrow{+5} 12 \\xrightarrow{+7} 19 \\xrightarrow{+9} 28 \\xrightarrow{+11} 39$\n(The difference increases by $2$ at each step: $+5, +7, +9, +11$.)\n\n3. **Second letter:**\n$\\text{W (23)} \\xrightarrow{-3} \\text{T (20)} \\xrightarrow{-3} \\text{Q (17)} \\xrightarrow{-3} \\text{N (14)} \\xrightarrow{-3} \\text{K (11)}$\n\nCombining the three results gives **P39K**.\n\nIndependent check: First letters D,G,J,M increase by 3 → P. Numbers 7,12,19,28 have gaps 5,7,9 → next gap 11 → 39. Last letters W,T,Q,N decrease by 3 → K. Next term: P39K.",
- "solution": "",
+ "working": "The first letters advance by 4: C, G, K, O, S. The numbers are consecutive squares: $2^2, 3^2, 4^2, 5^2$, so the next is $6^2=36$. The last letters retreat by 4: X, T, P, L, H. Thus the next term is S36H.\n\nIndependent check: First letters advance by 4: C, G, K, O → S. Numbers are 2², 3², 4², 5² → 6² = 36. Last letters retreat by 4: X, T, P, L → H.",
+ "solution": "The first letters advance by 4: C, G, K, O, S. The numbers are consecutive squares, so the next is $6^2=36$.\nThe last letters retreat by 4: X, T, P, L, H. Hence, the next term is S36H.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Find the next term in the alphanumeric series given below:\n\nD7W, G12T, J19Q, M28N, ?",
+  "stem": "Find the next term in the following $\\alpha-numeric$ series: C4X, G9T, K16P, O25L, ?",
   "options": [
-   "O39K",
-   "P37K",
-   "P39K",
-   "P39L"
+   "R36H",
+   "S35H",
+   "S36I",
+   "S36H"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "Break each term into its three components:\n\n1. **First letter:**\n$\\text{D (4)} \\xrightarrow{+3} \\text{G (7)} \\xrightarrow{+3} \\text{J (10)} \\xrightarrow{+3} \\text{M (13)} \\xrightarrow{+3} \\text{P (16)}$\n\n2. **Middle number:**\n$7 \\xrightarrow{+5} 12 \\xrightarrow{+7} 19 \\xrightarrow{+9} 28 \\xrightarrow{+11} 39$\n(The difference increases by $2$ at each step: $+5, +7, +9, +11$.)\n\n3. **Second letter:**\n$\\text{W (23)} \\xrightarrow{-3} \\text{T (20)} \\xrightarrow{-3} \\text{Q (17)} \\xrightarrow{-3} \\text{N (14)} \\xrightarrow{-3} \\text{K (11)}$\n\nCombining the three results gives **P39K**.",
-  "distractor_notes": "O39K: Shifts the first letter by $+2$ from M instead of $+3$.\nP37K: Adds $9$ instead of $11$ to the number ($28 + 9 = 37$).\nP39L: Shifts the last letter by $-2$ from N instead of $-3$.",
+  "answer": "D",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "The first letters advance by 4: C, G, K, O, S. The numbers are consecutive squares: $2^2, 3^2, 4^2, 5^2$, so the next is $6^2=36$. The last letters retreat by 4: X, T, P, L, H. Thus the next term is S36H.",
+  "distractor_notes": "A: first letter advances by 3 instead of 4. B: gives the number as 35 rather than 36. C: advances the last letter instead of retreating by 4."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

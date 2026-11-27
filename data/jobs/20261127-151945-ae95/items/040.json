@@ -1,0 +1,71 @@
+{
+ "qno": 40,
+ "section": "Physics",
+ "slot": {
+  "qno": 40,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Velocity from position vector",
+  "archetype": "single-equation kinematics",
+  "brief": "Given r(t), differentiate to find the velocity vector and its magnitude at a given time.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:31",
+   "2023s2:4",
+   "2021:7"
+  ],
+  "origin": "variant",
+  "bank_ref": "g93f588ffd24e"
+ },
+ "status": "ok",
+ "stem": "A particle moves in a plane with position vector $\\vec{r}(t) = (4t^2+t)\\hat{i} + (5t^2+2t)\\hat{j}$ m, where $t$ is in seconds. Its velocity vector and speed at $t=1$ s are",
+ "options": [
+  "$(9\\hat{i}+12\\hat{j})$ m s$^{-1}$; $15$ m s$^{-1}$",
+  "$(9\\hat{i}+12\\hat{j})$ m s$^{-1}$; $21$ m s$^{-1}$",
+  "$(5\\hat{i}+7\\hat{j})$ m s$^{-1}$; $\\sqrt{74}$ m s$^{-1}$",
+  "$(9\\hat{i}-12\\hat{j})$ m s$^{-1}$; $15$ m s$^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Differentiate: \\(\\vec v=(8t+1)\\hat i+(10t+2)\\hat j\\). At \\(t=1\\), \\(\\vec v=9\\hat i+12\\hat j\\) m s\\(^{-1}\\), with speed \\(\\sqrt{9^2+12^2}=15\\) m s\\(^{-1}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec{v}=\\dfrac{d\\vec{r}}{dt}=(8t+1)\\hat{i}+(10t+2)\\hat{j}$\nAt $t=1$ s: $\\vec{v}=(9\\hat{i}+12\\hat{j})$ m s$^{-1}$\n$|\\vec{v}|=\\sqrt{9^2+12^2}=15$ m s$^{-1}$\n\nIndependent check: Differentiate: \\(\\vec v=(8t+1)\\hat i+(10t+2)\\hat j\\). At \\(t=1\\), \\(\\vec v=9\\hat i+12\\hat j\\) m s\\(^{-1}\\), with speed \\(\\sqrt{9^2+12^2}=15\\) m s\\(^{-1}\\).",
+ "solution": "Velocity is the time derivative of position:\n$$\\vec{v}=\\frac{d\\vec{r}}{dt}=(8t+1)\\hat{i}+(10t+2)\\hat{j}.$$\nAt $t=1$ s, $\\vec{v}=(9\\hat{i}+12\\hat{j})$ m s$^{-1}$ and $|\\vec{v}|=\\sqrt{9^2+12^2}=15$ m s$^{-1}$. Do not add chit-chat.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle moves in a plane with position vector $\\vec{r}(t) = (4t^2+t)\\hat{i} + (5t^2+2t)\\hat{j}$ m, where $t$ is in seconds. Its velocity vector and speed at $t=1$ s are",
+  "options": [
+   "$(9\\hat{i}+12\\hat{j})$ m s$^{-1}$; $15$ m s$^{-1}$",
+   "$(9\\hat{i}+12\\hat{j})$ m s$^{-1}$; $21$ m s$^{-1}$",
+   "$(5\\hat{i}+7\\hat{j})$ m s$^{-1}$; $\\sqrt{74}$ m s$^{-1}$",
+   "$(9\\hat{i}-12\\hat{j})$ m s$^{-1}$; $15$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\vec{v}=\\dfrac{d\\vec{r}}{dt}=(8t+1)\\hat{i}+(10t+2)\\hat{j}$\nAt $t=1$ s: $\\vec{v}=(9\\hat{i}+12\\hat{j})$ m s$^{-1}$\n$|\\vec{v}|=\\sqrt{9^2+12^2}=15$ m s$^{-1}$",
+  "distractor_notes": "B: adds the velocity components instead of finding their resultant. C: omits the factor of $2$ when differentiating the squared terms. D: makes a sign error in the $\\hat{j}$ component."
+ },
+ "variant_of": "g93f588ffd24e",
+ "author_model": "openai/gpt-6-luna-pro"
+}

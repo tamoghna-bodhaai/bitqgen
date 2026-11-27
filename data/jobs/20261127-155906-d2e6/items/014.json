@@ -1,0 +1,70 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Coulomb's law – equilibrium of charges",
+  "archetype": "vector-sum equilibrium",
+  "brief": "Three collinear charges with the middle one free to move; find where the third charge must be placed (or its sign/magnitude) for the net force on it to be zero — a multi-force balance with distractor sign issues.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:16",
+   "2026s1:4",
+   "2026s2:15"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two fixed charges $+9q$ and $+4q$ are held $20$ cm apart, where $q>0$. A charge $-q$ is free to move between them. At what distance from $+9q$ is its net force zero?",
+ "options": [
+  "$8$ cm",
+  "$10$ cm",
+  "$12$ cm",
+  "$15$ cm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set the attractive force magnitudes equal: $9/x^2=4/(20-x)^2$. Taking positive square roots gives $3/x=2/(20-x)$, so $x=12$ cm from $+9q$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{9}{x^2}=\\dfrac{4}{(20-x)^2}$; $\\dfrac{3}{x}=\\dfrac{2}{20-x}\\Rightarrow x=12$ cm.\n\nIndependent check: Set the attractive force magnitudes equal: $9/x^2=4/(20-x)^2$. Taking positive square roots gives $3/x=2/(20-x)$, so $x=12$ cm from $+9q$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Two fixed charges $+9q$ and $+4q$ are held $20$ cm apart, where $q>0$. A charge $-q$ is free to move between them. At what distance from $+9q$ is its net force zero?",
+  "options": [
+   "$8$ cm",
+   "$10$ cm",
+   "$12$ cm",
+   "$15$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\dfrac{9}{x^2}=\\dfrac{4}{(20-x)^2}$; $\\dfrac{3}{x}=\\dfrac{2}{20-x}\\Rightarrow x=12$ cm.",
+  "distractor_notes": "A: reverses the charge ratio; B: assumes the midpoint balances unequal charges; D: mishandles the inverse-square relation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

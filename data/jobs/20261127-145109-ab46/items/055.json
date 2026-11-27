@@ -1,0 +1,70 @@
+{
+ "qno": 55,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 55,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "VBT – spin and magnetism",
+  "archetype": "electron configuration comparison",
+  "brief": "Give two octahedral complexes (one with weak-field, one with strong-field ligand); compare unpaired electrons and spin-only magnetic moments.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:57",
+   "2026s2:39",
+   "2024s2:48"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For octahedral $A=[\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$ and $B=[\\text{Fe}(\\text{CN})_6]^{4-}$, choose $(n_A,\\mu_A; n_B,\\mu_B)$, where $n$ is the number of unpaired electrons and $\\mu$ is the spin-only magnetic moment.",
+ "options": [
+  "$4,\\ 4.90\\ \\text{B.M.};\\ 0,\\ 0\\ \\text{B.M.}$",
+  "$2,\\ 2.83\\ \\text{B.M.};\\ 0,\\ 0\\ \\text{B.M.}$",
+  "$4,\\ 4.90\\ \\text{B.M.};\\ 2,\\ 2.83\\ \\text{B.M.}$",
+  "$0,\\ 0\\ \\text{B.M.};\\ 4,\\ 4.90\\ \\text{B.M.}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fe²⁺ is d⁶. H₂O gives high-spin octahedral d⁶ with 4 unpaired electrons, so μ = √[4(4+2)] = 4.90 B.M. CN⁻ gives low-spin d⁶ with 0 unpaired electrons and μ = 0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Fe}^{2+}: d^6$ in both complexes.\n$\\text{H}_2\\text{O}$: weak field, high spin, $n_A=4$.\n$\\text{CN}^-$: strong field, low spin, $n_B=0$.\n$\\mu=\\sqrt{n(n+2)}\\ \\text{B.M.}$\n$\\mu_A=\\sqrt{24}=4.90\\ \\text{B.M.},\\quad \\mu_B=0$.\n\nIndependent check: Fe²⁺ is d⁶. H₂O gives high-spin octahedral d⁶ with 4 unpaired electrons, so μ = √[4(4+2)] = 4.90 B.M. CN⁻ gives low-spin d⁶ with 0 unpaired electrons and μ = 0.",
+ "solution": "Both complexes contain $\\text{Fe}^{2+}$, which is $d^6$. In an octahedral field, $\\text{H}_2\\text{O}$ gives high-spin $d^6$ ($n_A=4$), while $\\text{CN}^-$ gives low-spin $d^6$ ($n_B=0$).\n$$\\mu=\\sqrt{n(n+2)}\\ \\text{B.M.},\\qquad \\mu_A=\\sqrt{24}=4.90\\ \\text{B.M.},\\quad \\mu_B=0.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For octahedral $A=[\\text{Fe}(\\text{H}_2\\text{O})_6]^{2+}$ and $B=[\\text{Fe}(\\text{CN})_6]^{4-}$, choose $(n_A,\\mu_A; n_B,\\mu_B)$, where $n$ is the number of unpaired electrons and $\\mu$ is the spin-only magnetic moment.",
+  "options": [
+   "$4,\\ 4.90\\ \\text{B.M.};\\ 0,\\ 0\\ \\text{B.M.}$",
+   "$2,\\ 2.83\\ \\text{B.M.};\\ 0,\\ 0\\ \\text{B.M.}$",
+   "$4,\\ 4.90\\ \\text{B.M.};\\ 2,\\ 2.83\\ \\text{B.M.}$",
+   "$0,\\ 0\\ \\text{B.M.};\\ 4,\\ 4.90\\ \\text{B.M.}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{Fe}^{2+}: d^6$ in both complexes.\n$\\text{H}_2\\text{O}$: weak field, high spin, $n_A=4$.\n$\\text{CN}^-$: strong field, low spin, $n_B=0$.\n$\\mu=\\sqrt{n(n+2)}\\ \\text{B.M.}$\n$\\mu_A=\\sqrt{24}=4.90\\ \\text{B.M.},\\quad \\mu_B=0$.",
+  "distractor_notes": "B: counts only two unpaired electrons for high-spin $d^6$. C: assigns two unpaired electrons to low-spin $d^6$. D: reverses the high-spin and low-spin assignments."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

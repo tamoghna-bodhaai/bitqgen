@@ -1,0 +1,78 @@
+{
+ "qno": 77,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 77,
+  "section": "Chemistry",
+  "chapter": "s-Block Elements",
+  "subtopic": "Diagonal relationship of Li and Mg",
+  "archetype": "statement verification",
+  "brief": "Figure shows a small reaction-cycle or property chart of Li vs Mg; verify which listed similarities (nitride formation, carbonate decomposition, flame colour) are genuine — easy statement check.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:38",
+   "2021:48",
+   "2024s2:35"
+  ]
+ },
+ "status": "ok",
+ "stem": "As shown in the figure, which statements correctly describe similarities between lithium and magnesium?\nI. Both form nitrides by direct combination with nitrogen.\nII. Both carbonates decompose on heating to oxides and carbon dioxide.\nIII. Both give the same characteristic colour in a flame test.",
+ "options": [
+  "I and II only",
+  "II only",
+  "I only",
+  "I, II and III"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q077_stem_v0.png",
+  "width_pct": 80,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I and II are true: both form nitrides directly, and both carbonates decompose on heating. III is false: lithium gives a crimson flame, while magnesium has no characteristic flame colour.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [
+  "figure check: The flame-test swatch for Li is rendered dark grey, not crimson, so it does not match the brief (only the text label says 'crimson')."
+ ],
+ "working": "Figure: both metals form nitrides; both carbonates give oxide $+$ $\\text{CO}_2$ on heating.\\nLithium gives a crimson flame; magnesium has no characteristic flame-test colour.\\nThus I and II only.\n\nIndependent check: I and II are true: both form nitrides directly, and both carbonates decompose on heating. III is false: lithium gives a crimson flame, while magnesium has no characteristic flame colour.",
+ "solution": "Both lithium and magnesium combine directly with nitrogen to form nitrides. Their carbonates decompose on heating:\n$$\\mathrm{Li_2CO_3 \\rightarrow Li_2O + CO_2},\\qquad \\mathrm{MgCO_3 \\rightarrow MgO + CO_2}$$\nLithium gives a crimson flame, whereas magnesium has no characteristic flame colour; hence I and II only.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "As shown in the figure, which statements correctly describe similarities between lithium and magnesium?\nI. Both form nitrides by direct combination with nitrogen.\nII. Both carbonates decompose on heating to oxides and carbon dioxide.\nIII. Both give the same characteristic colour in a flame test.",
+  "options": [
+   "I only",
+   "II only",
+   "I and II only",
+   "I, II and III"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a compact comparison chart with two column headings, Li and Mg, and three labelled rows. In the nitride row, show the balanced equations 6Li + N2 → 2Li3N and 3Mg + N2 → Mg3N2. In the carbonate row, show Li2CO3 —Δ→ Li2O + CO2 and MgCO3 —Δ→ MgO + CO2. In the flame-test row, show a crimson swatch labelled Li and the text “no characteristic colour” labelled Mg. Use legible chemical subscripts; do not add a conclusion or check marks.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "Figure: both metals form nitrides; both carbonates give oxide $+$ $\\text{CO}_2$ on heating.\\nLithium gives a crimson flame; magnesium has no characteristic flame-test colour.\\nThus I and II only.",
+  "distractor_notes": "A omits the shared carbonate decomposition; B omits the shared nitride formation; D incorrectly treats the flame-test colours as the same."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

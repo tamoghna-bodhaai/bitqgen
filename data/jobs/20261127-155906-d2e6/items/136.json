@@ -1,0 +1,70 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Selections",
+  "archetype": "complement counting",
+  "brief": "Count the number of ways to select r objects from n distinct types with at least one of a kind excluded, or a committee with simple restrictions; easy case count.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:115",
+   "2024s2:104",
+   "2021:147"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A committee of $3$ is selected from $8$ people, including P and Q. How many committees have at least one of P and Q absent?",
+ "options": [
+  "$35$",
+  "$46$",
+  "$50$",
+  "$56$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total committees: \\(\\binom{8}{3}=56\\). Committees containing both P and Q: \\(6\\). Thus \\(56-6=50\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Total}=\\binom{8}{3}=56$; committees containing both P and Q: $\\binom{6}{1}=6$. Required $=56-6=50$.\n\nIndependent check: Total committees: \\(\\binom{8}{3}=56\\). Committees containing both P and Q: \\(6\\). Thus \\(56-6=50\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A committee of $3$ is selected from $8$ people, including P and Q. How many committees have at least one of P and Q absent?",
+  "options": [
+   "$35$",
+   "$46$",
+   "$50$",
+   "$56$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{Total}=\\binom{8}{3}=56$; committees containing both P and Q: $\\binom{6}{1}=6$. Required $=56-6=50$.",
+  "distractor_notes": "A: counts committees omitting one specified person only. B: uses an incorrect count for committees containing both. D: ignores the restriction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 40,
+ "section": "Physics",
+ "slot": {
+  "qno": 40,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Critical angle from εr, μr",
+  "archetype": "conceptual",
+  "brief": "Simple statement-selection: image formation plane mirror / total internal reflection conditions / power of lens in medium; pick correct statement among simple ray-optics assertions.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:17",
+   "2025s1:22",
+   "2023s1:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "A transparent medium has relative permittivity $4$ and relative permeability $1$. It is surrounded by air. Which of the following statements is correct?",
+ "options": [
+  "The critical angle for light travelling from the medium to air is $30^\\circ$.",
+  "Total internal reflection occurs when light travels from air into the medium at an angle greater than the critical angle.",
+  "A plane mirror forms a real image of a real object.",
+  "The power of a glass convex lens increases when it is immersed in water."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The medium’s refractive index is \\(n=\\sqrt{\\varepsilon_r\\mu_r}=2\\). Thus \\(\\sin C=1/2\\), so \\(C=30^\\circ\\). Total internal reflection requires travel from higher to lower refractive index; a plane mirror gives a virtual image of a real object, and immersing a glass lens in water reduces its power.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n=\\sqrt{\\varepsilon_r\\mu_r}=2$; $\\sin C=\\dfrac{1}{n}=\\dfrac12\\Rightarrow C=30^\\circ$.\n\nIndependent check: The medium’s refractive index is \\(n=\\sqrt{\\varepsilon_r\\mu_r}=2\\). Thus \\(\\sin C=1/2\\), so \\(C=30^\\circ\\). Total internal reflection requires travel from higher to lower refractive index; a plane mirror gives a virtual image of a real object, and immersing a glass lens in water reduces its power.",
+ "solution": "The refractive index of the medium is $n=\\sqrt{\\varepsilon_r\\mu_r}=2$. For light travelling from the medium to air, $\\sin C=\\dfrac{1}{n}=\\dfrac12$, hence $C=30^\\circ$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A transparent medium has relative permittivity $4$ and relative permeability $1$. It is surrounded by air. Which of the following statements is correct?",
+  "options": [
+   "The critical angle for light travelling from the medium to air is $30^\\circ$.",
+   "Total internal reflection occurs when light travels from air into the medium at an angle greater than the critical angle.",
+   "A plane mirror forms a real image of a real object.",
+   "The power of a glass convex lens increases when it is immersed in water."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$n=\\sqrt{\\varepsilon_r\\mu_r}=2$; $\\sin C=\\dfrac{1}{n}=\\dfrac12\\Rightarrow C=30^\\circ$.",
+  "distractor_notes": "B: reverses the required direction of travel for total internal reflection. C: confuses the virtual image formed by a plane mirror with a real image. D: overlooks that immersion in water reduces the refractive-index contrast and hence the lens power."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

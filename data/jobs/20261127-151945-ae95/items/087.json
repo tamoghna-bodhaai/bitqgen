@@ -1,0 +1,71 @@
+{
+ "qno": 87,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 87,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Tense consistency",
+  "archetype": "spot the error",
+  "brief": "Sentence with a tense inconsistency across clauses (e.g., past event described with present perfect later); identify the incorrect part.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:91",
+   "2026s2:68",
+   "2026s1:69"
+  ],
+  "origin": "variant",
+  "bank_ref": "g23953cc94a5c"
+ },
+ "status": "ok",
+ "stem": "In the sentence below, identify the part that contains an error.<br><br>**(A)** The committee announced the results **(B)** on Monday, and **(C)** the winning candidate has thanked the volunteers **(D)** that evening.",
+ "options": [
+  "the winning candidate has thanked the volunteers",
+  "on Monday, and",
+  "The committee announced the results",
+  "that evening."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Has thanked” is present perfect, which is incompatible with the definite past-time expression “that evening.” It should be “thanked,” so the error is in (C).",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "“That evening” refers to a completed time in the past, so use simple past: “thanked.” The other parts are grammatically correct.\n\nIndependent check: “Has thanked” is present perfect, which is incompatible with the definite past-time expression “that evening.” It should be “thanked,” so the error is in (C).",
+ "solution": "“That evening” refers to a definite, completed time in the past, so the simple past is required: “the winning candidate thanked the volunteers that evening.”",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the sentence below, identify the part that contains an error.<br><br>**(A)** The committee announced the results **(B)** on Monday, and **(C)** the winning candidate has thanked the volunteers **(D)** that evening.",
+  "options": [
+   "The committee announced the results",
+   "on Monday, and",
+   "the winning candidate has thanked the volunteers",
+   "that evening."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "“That evening” refers to a completed time in the past, so use simple past: “thanked.” The other parts are grammatically correct.",
+  "distractor_notes": "A: Correct simple past for the announcement. B: Correctly connects the clauses and gives a past-time reference. D: Correct past-time expression; it exposes the tense error in C."
+ },
+ "variant_of": "g23953cc94a5c",
+ "author_model": "openai/gpt-6-luna"
+}

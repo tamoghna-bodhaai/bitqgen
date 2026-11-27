@@ -1,0 +1,70 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power bookkeeping",
+  "brief": "Given A² = αA + βI (or A = column×row form), compute Aⁿ and evaluate a specific entry or trace; 4/5 with multi-step reduction.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:100",
+   "2026s1:116",
+   "2026s1:117"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$, which is such that $A^2=2A+3I$, find the $(1,2)$ entry of $A^8$.",
+ "options": [
+  "$1640$",
+  "$3280$",
+  "$3281$",
+  "$6562$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The eigenvalues of A are 3 and −1. Since A is symmetric with equal diagonal entries, the (1,2) entry of A⁸ is (3⁸−(−1)⁸)/2 = 3280.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda^2-2\\lambda-3=0\\Rightarrow\\lambda=3,-1.$ Thus $(A^8)_{12}=\\dfrac{3^8-(-1)^8}{2}=3280$.\n\nIndependent check: The eigenvalues of A are 3 and −1. Since A is symmetric with equal diagonal entries, the (1,2) entry of A⁸ is (3⁸−(−1)⁸)/2 = 3280.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For $A=\\begin{pmatrix}1&2\\\\2&1\\end{pmatrix}$, which is such that $A^2=2A+3I$, find the $(1,2)$ entry of $A^8$.",
+  "options": [
+   "$1640$",
+   "$3280$",
+   "$3281$",
+   "$6562$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\lambda^2-2\\lambda-3=0\\Rightarrow\\lambda=3,-1.$ Thus $(A^8)_{12}=\\dfrac{3^8-(-1)^8}{2}=3280$.",
+  "distractor_notes": "A: gives the coefficient of $A$ without multiplying by its $(1,2)$ entry; C: adds the two eigenvalue contributions instead of subtracting; D: gives the trace rather than the off-diagonal entry."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

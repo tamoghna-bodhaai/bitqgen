@@ -1,0 +1,70 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Kp–Kc relation",
+  "archetype": "Δn computation",
+  "brief": "Given Kc and temperature for a gaseous equilibrium, calculate Kp (or ask for which reaction Kp = Kc).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:56",
+   "2022:40",
+   "2025s1:33"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $2\\text{SO}_2(g)+\\text{O}_2(g)\\rightleftharpoons2\\text{SO}_3(g)$, $K_c=24.6\\ \\text{L mol}^{-1}$ at $300\\ \\text{K}$. Find $K_p$. Take $R=0.082\\ \\text{L atm mol}^{-1}\\text{K}^{-1}$.",
+ "options": [
+  "$1.00\\ \\text{atm}^{-1}$",
+  "$0.50\\ \\text{atm}^{-1}$",
+  "$2.00\\ \\text{atm}^{-1}$",
+  "$24.6\\ \\text{atm}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Δn = 2 − 3 = −1, so Kₚ = K꜀(RT)⁻¹ = 24.6/(0.082 × 300) = 1.00 atm⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta n_g=2-(2+1)=-1$\\n$K_p=K_c(RT)^{\\Delta n_g}=\\dfrac{24.6}{0.082\\times300}=1.00\\ \\text{atm}^{-1}$\n\nIndependent check: Δn = 2 − 3 = −1, so Kₚ = K꜀(RT)⁻¹ = 24.6/(0.082 × 300) = 1.00 atm⁻¹.",
+ "solution": "For gaseous equilibria, $K_p=K_c(RT)^{\\Delta n_g}$, where $\\Delta n_g=2-(2+1)=-1$.\n$$K_p=\\frac{24.6}{0.082\\times300}=1.00\\ \\text{atm}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $2\\text{SO}_2(g)+\\text{O}_2(g)\\rightleftharpoons2\\text{SO}_3(g)$, $K_c=24.6\\ \\text{L mol}^{-1}$ at $300\\ \\text{K}$. Find $K_p$. Take $R=0.082\\ \\text{L atm mol}^{-1}\\text{K}^{-1}$.",
+  "options": [
+   "$0.50\\ \\text{atm}^{-1}$",
+   "$1.00\\ \\text{atm}^{-1}$",
+   "$2.00\\ \\text{atm}^{-1}$",
+   "$24.6\\ \\text{atm}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\Delta n_g=2-(2+1)=-1$\\n$K_p=K_c(RT)^{\\Delta n_g}=\\dfrac{24.6}{0.082\\times300}=1.00\\ \\text{atm}^{-1}$",
+  "distractor_notes": "A: An extra factor of 2 in $RT$; C: Uses $RT$ instead of its reciprocal; D: Assumes $\\Delta n_g=0$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

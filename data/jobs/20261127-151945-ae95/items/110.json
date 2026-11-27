@@ -1,0 +1,71 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "Evaluate a definite integral over [−a, a] whose integrand splits into an odd part (drops) plus a simple even part, using symmetry and a standard result.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:143",
+   "2021:118",
+   "2025s1:130"
+  ],
+  "origin": "variant",
+  "bank_ref": "g90df6e06741b"
+ },
+ "status": "ok",
+ "stem": "Evaluate $$\\int_{-2\\sqrt{3}}^{2\\sqrt{3}}\\left(\\frac{x^3}{x^2+4}+\\frac{1}{x^2+4}\\right)\\,dx.$$",
+ "options": [
+  "$\\dfrac{\\pi}{3}$",
+  "$\\dfrac{\\pi}{6}$",
+  "$\\dfrac{\\pi}{12}$",
+  "$\\dfrac{2\\pi}{3}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The term x³/(x²+4) is odd, so its symmetric integral is 0. The remaining integral is [½ arctan(x/2)] from −2√3 to 2√3 = π/3.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{x^3}{x^2+4}$ is odd, so its integral over the symmetric interval is $0$. \n$$I=\\int_{-2\\sqrt{3}}^{2\\sqrt{3}}\\frac{dx}{x^2+4}=\\left[\\frac{1}{2}\\tan^{-1}\\left(\\frac{x}{2}\\right)\\right]_{-2\\sqrt{3}}^{2\\sqrt{3}}=\\frac{1}{2}\\left(\\frac{\\pi}{3}+\\frac{\\pi}{3}\\right)=\\frac{\\pi}{3}.$$\n\nIndependent check: The term x³/(x²+4) is odd, so its symmetric integral is 0. The remaining integral is [½ arctan(x/2)] from −2√3 to 2√3 = π/3.",
+ "solution": "Since $\\frac{x^3}{x^2+4}$ is odd, its integral over the symmetric interval is zero. Using $\\int \\frac{dx}{x^2+4}=\\frac12\\tan^{-1}(x/2)$,\n$$I=\\left[\\frac12\\tan^{-1}\\left(\\frac{x}{2}\\right)\\right]_{-2\\sqrt3}^{2\\sqrt3}=\\frac12\\left(\\frac\\pi3+\\frac\\pi3\\right)=\\frac\\pi3.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $$\\int_{-2\\sqrt{3}}^{2\\sqrt{3}}\\left(\\frac{x^3}{x^2+4}+\\frac{1}{x^2+4}\\right)\\,dx.$$",
+  "options": [
+   "$\\dfrac{\\pi}{12}$",
+   "$\\dfrac{\\pi}{6}$",
+   "$\\dfrac{\\pi}{3}$",
+   "$\\dfrac{2\\pi}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{x^3}{x^2+4}$ is odd, so its integral over the symmetric interval is $0$. \n$$I=\\int_{-2\\sqrt{3}}^{2\\sqrt{3}}\\frac{dx}{x^2+4}=\\left[\\frac{1}{2}\\tan^{-1}\\left(\\frac{x}{2}\\right)\\right]_{-2\\sqrt{3}}^{2\\sqrt{3}}=\\frac{1}{2}\\left(\\frac{\\pi}{3}+\\frac{\\pi}{3}\\right)=\\frac{\\pi}{3}.$$",
+  "distractor_notes": "A: Applies the arctangent scale factor twice. B: Evaluates only one half of the symmetric interval. D: Omits the factor $\\dfrac{1}{2}$ in the antiderivative."
+ },
+ "variant_of": "g90df6e06741b",
+ "author_model": "openai/gpt-6-luna-pro"
+}

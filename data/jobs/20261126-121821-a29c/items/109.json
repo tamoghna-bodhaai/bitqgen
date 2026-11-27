@@ -22,12 +22,12 @@
  "status": "ok",
  "stem": "The general solution of the differential equation $\\frac{dy}{dx}=1+\\frac{y^2}{x^2}$ is",
  "options": [
-  "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{\\sqrt{3}}{2}\\ln|x|=C$",
-  "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{2}{\\sqrt{3}}\\ln|x|=C$",
   "$\\tan^{-1}\\frac{2y+x}{\\sqrt{3}x}-\\frac{\\sqrt{3}}{2}\\ln|x|=C$",
+  "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{2}{\\sqrt{3}}\\ln|x|=C$",
+  "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}-\\frac{\\sqrt{3}}{2}\\ln|x|=C$",
   "$\\tan^{-1}\\frac{2y-x}{\\sqrt{3}x}+\\frac{\\sqrt{3}}{2}\\ln|x|=C$"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -46,7 +46,7 @@
  "attempts": 1,
  "notes": [],
  "working": "Set $y=vx$, so $\\frac{dy}{dx}=v+x\\frac{dv}{dx}$.\n$x\\frac{dv}{dx}=v^2-v+1$.\n$\\frac{dv}{(v-\\frac12)^2+\\frac34}=\\frac{dx}{x}$.\n$\\frac{2}{sqrt{3}}\\tan^{-1}\\frac{2v-1}{sqrt{3}}=ln|x|+C$.\nSubstitute $v=\\frac{y}{x}$ and rearrange to obtain option A.\n\nIndependent check: Set v=y/x, so y'=v+xv'. Then dv/(v²−v+1)=dx/x, yielding (2/√3) arctan((2v−1)/√3)=ln|x|+C. Rearranging gives option A.",
- "solution": "",
+ "solution": "Set $y=vx$, so $\\frac{dy}{dx}=v+x\\frac{dv}{dx}$.\n$x\\frac{dv}{dx}=v^2-v+1$.\n$\\frac{dv}{(v-\\frac12)^2+\\frac34}=\\frac{dx}{x}$.\n$\\frac{2}{sqrt{3}}\\tan^{-1}\\frac{2v-1}{sqrt{3}}=ln|x|+C$.",
  "locked": false,
  "difficulty": 2,
  "draft": {

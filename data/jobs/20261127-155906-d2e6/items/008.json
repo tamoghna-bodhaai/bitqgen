@@ -1,0 +1,78 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Forward-biased diode in circuit",
+  "archetype": "circuit analysis",
+  "brief": "Circuit diagram with a silicon diode in series with a resistor and a DC source; using a constant forward voltage drop model, find the circuit current and power dissipated in the diode or resistor.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:22",
+   "2026s1:24",
+   "2024s1:27"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "In the circuit shown, assume the silicon diode has a constant forward voltage drop of $0.70\\ \\text{V}$. What power is dissipated in the diode?",
+ "options": [
+  "$6.30\\ \\text{mW}$",
+  "$6.51\\ \\text{mW}$",
+  "$7.00\\ \\text{mW}$",
+  "$93.0\\ \\text{mW}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q008_stem_v0.png",
+  "width_pct": 50,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The diode is forward-biased. The current is $(10-0.70)/1.0\\,\\text{k}\\Omega=9.3\\,\\text{mA}$, so its power is $0.70\\times9.3\\,\\text{mA}=6.51\\,\\text{mW}$.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I=\\dfrac{10-0.70}{1.0\\times10^3}=9.3\\times10^{-3}\\ \\text{A}$. $P_D=V_DI=0.70(9.3\\times10^{-3})=6.51\\times10^{-3}\\ \\text{W}=6.51\\ \\text{mW}$.\n\nIndependent check: The diode is forward-biased. The current is $(10-0.70)/1.0\\,\\text{k}\\Omega=9.3\\,\\text{mA}$, so its power is $0.70\\times9.3\\,\\text{mA}=6.51\\,\\text{mW}$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown, assume the silicon diode has a constant forward voltage drop of $0.70\\ \\text{V}$. What power is dissipated in the diode?",
+  "options": [
+   "$6.30\\ \\text{mW}$",
+   "$6.51\\ \\text{mW}$",
+   "$7.00\\ \\text{mW}$",
+   "$93.0\\ \\text{mW}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw one closed rectangular series loop. On the left vertical branch, draw a DC source labeled 10 V, with its positive terminal at the top and negative terminal at the bottom. On the top branch, draw a resistor labeled 1.0 kΩ. On the right branch, draw a diode with its anode at the top (connected to the resistor) and its cathode bar at the bottom. Connect the diode’s lower terminal directly to the source’s negative terminal with a wire. Show a clockwise conventional-current arrow.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$I=\\dfrac{10-0.70}{1.0\\times10^3}=9.3\\times10^{-3}\\ \\text{A}$. $P_D=V_DI=0.70(9.3\\times10^{-3})=6.51\\times10^{-3}\\ \\text{W}=6.51\\ \\text{mW}$.",
+  "distractor_notes": "A: uses a $1.0\\ \\text{V}$ drop to calculate the current. C: calculates the current as $10\\ \\text{mA}$ without subtracting the diode drop. D: uses the source voltage instead of the diode drop to calculate diode power."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

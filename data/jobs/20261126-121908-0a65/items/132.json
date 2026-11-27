@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "If a square matrix $A$ satisfies $A^2=2A+I$, where $I$ is the identity matrix, then $A^3$ is equal to",
+ "stem": "If a square matrix $A$ satisfies $A^3=-A$, then $A^{2025}+A^{2026}$ is equal to",
  "options": [
-  "$2A+I$",
-  "$4A+2I$",
-  "$5A+I$",
-  "$5A+2I$"
+  "$A-A^2$",
+  "$-A+A^2$",
+  "$-A-A^2$",
+  "$A+A^2$"
  ],
  "answer": "D",
  "figure": null,
@@ -35,34 +35,34 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I.",
+   "working": "From A^n = -A^{n-2} for n ≥ 3, the powers repeat with alternating signs: A^2025 = A and A^2026 = A². Their sum is A + A².",
    "answer": "D",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "$A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I$\n\nIndependent check: A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I.",
+ "working": "$A^3=-A\\implies A^4=-A^2$ and $A^5=A$. Thus powers repeat every $4$ exponents: $A^{2025}=A$, $A^{2026}=A^2$. Hence $A^{2025}+A^{2026}=A+A^2$.\n\nIndependent check: From A^n = -A^{n-2} for n ≥ 3, the powers repeat with alternating signs: A^2025 = A and A^2026 = A². Their sum is A + A².",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "If a square matrix $A$ satisfies $A^2=2A+I$, where $I$ is the identity matrix, then $A^3$ is equal to",
+  "stem": "If a square matrix $A$ satisfies $A^3=-A$, then $A^{2025}+A^{2026}$ is equal to",
   "options": [
-   "$2A+I$",
-   "$4A+2I$",
-   "$5A+I$",
-   "$5A+2I$"
+   "$A-A^2$",
+   "$-A+A^2$",
+   "$-A-A^2$",
+   "$A+A^2$"
   ],
   "option_smiles": null,
   "answer": "D",
   "figure": null,
   "difficulty_estimate": 2,
-  "working": "$A^3=A(2A+I)=2A^2+A=2(2A+I)+A=5A+2I$",
-  "distractor_notes": "A: repeats the given expression for $A^2$. B: uses an incorrect coefficient when substituting for $A^2$. C: omits the extra $I$ term."
+  "working": "$A^3=-A\\implies A^4=-A^2$ and $A^5=A$. Thus powers repeat every $4$ exponents: $A^{2025}=A$, $A^{2026}=A^2$. Hence $A^{2025}+A^{2026}=A+A^2$.",
+  "distractor_notes": "A: Uses the wrong sign for $A^{2026}$. B: Uses the wrong sign for $A^{2025}$. C: Assigns negative signs to both powers."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

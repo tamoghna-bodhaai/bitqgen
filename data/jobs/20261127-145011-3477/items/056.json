@@ -1,0 +1,94 @@
+{
+ "qno": 56,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 56,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Basicity of amines",
+  "archetype": "distinguishing test",
+  "brief": "Given a figure of amines, identify which responds to the carbylamine test (or order basicity in aqueous vs gas phase) with structure-based reasoning",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:34",
+   "2026s1:57",
+   "2025s1:57"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "flagged",
+ "stem": "As shown in the figure, which labelled amine gives a positive carbylamine test with $\\text{CHCl}_3$ and alcoholic $\\text{KOH}$?",
+ "options": [
+  "I",
+  "II",
+  "III",
+  "IV"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q056_stem_v2.png",
+  "width_pct": 52,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Only the primary amine (the top structure, ethylamine) gives a positive carbylamine test. The figure does not show which Roman numeral labels that structure.",
+   "answer": "NONE",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [
+    "Roman numeral labels I–IV are absent from the figure, so the amine cannot be matched unambiguously to an option."
+   ],
+   "difficulty": 1
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "Carbylamine (isocyanide) test with CHCl3/alc. KOH is given only by primary amines (RNH2 -> RNC). Structures: ethylamine (primary), dimethylamine (2°), N-methylaniline (2°), trimethylamine (3°). Only ethylamine, the first structure (I), responds.",
+   "answer": "A",
+   "confidence": 0.8,
+   "multiple_correct": false,
+   "issues": [
+    "The figure contains no I/II/III/IV labels; the mapping of options to structures must be inferred from position (I assumed to be the top-left ethylamine)."
+   ],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [
+  "unverified: solvers disagreed with the key after all revisions — review manually"
+ ],
+ "working": "Carbylamine test is given only by primary amines.\nI: secondary; II: primary; III: tertiary; IV: secondary.\nOnly II gives a positive test.",
+ "solution": "The carbylamine test with $\\text{CHCl}_3$ and alcoholic $\\text{KOH}$ is given only by primary amines. Among the labelled amines, II is primary; therefore, it gives a positive test.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "As shown in the figure, which labelled amine gives a positive carbylamine test with $\\text{CHCl}_3$ and alcoholic $\\text{KOH}$?",
+  "options": [
+   "I",
+   "II",
+   "III",
+   "IV"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw four separate amine structures in a clearly spaced 2 × 2 grid, in reading order from top left to bottom right. Label each structure directly beneath it with a large, distinct Roman numeral: I, II, III, IV, respectively. I: dimethylamine, (CH3)2NH, with nitrogen bonded to two methyl groups and one hydrogen. II: ethylamine, CH3CH2NH2, with nitrogen bonded to one ethyl group and two hydrogens. III: trimethylamine, (CH3)3N, with nitrogen bonded to three methyl groups and no hydrogens. IV: N-methylaniline, C6H5NHCH3, with nitrogen bonded to a phenyl group, a methyl group, and one hydrogen. Keep all structures and labels separate and fully legible.",
+   "smiles": "CNC.CCN.CN(C)C.CNc1ccccc1"
+  },
+  "difficulty_estimate": 1,
+  "working": "Carbylamine test is given only by primary amines.\nI: secondary; II: primary; III: tertiary; IV: secondary.\nOnly II gives a positive test.",
+  "distractor_notes": "A: Mistakes a secondary amine for a primary amine. C: Mistakes a tertiary amine for a primary amine. D: Mistakes a secondary aromatic amine for a primary amine."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

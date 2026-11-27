@@ -1,0 +1,68 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Angular momentum of a particle",
+  "archetype": "vector cross product",
+  "brief": "A particle at a given position with given velocity experiences a force; compute torque r × F and angular momentum r × mv about origin and check their relation.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:39",
+   "2025s2:14",
+   "2021:36"
+  ]
+ },
+ "status": "ok",
+ "stem": "At an instant, a particle of mass $3$ kg has position $\\mathbf r=(2,-1,1)$ m and velocity $\\mathbf v=(1,2,0)$ m s$^{-1}$. The net force is $\\mathbf F=(2,1,-1)$ N. Which ordered pair gives its angular momentum and torque about the origin, respectively?",
+ "options": [
+  "$\\bigl((6,-3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,-4,4)\\ \\text{N m}\\bigr)$",
+  "$\\bigl((-6,3,-15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$",
+  "$\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,-4)\\ \\text{N m}\\bigr)$",
+  "$\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\mathbf L=\\mathbf r\\times m\\mathbf v=3(\\mathbf r\\times\\mathbf v)=(-6,3,15)\\). \\(\\boldsymbol\\tau=\\mathbf r\\times\\mathbf F=(0,4,4)\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mathbf L=\\mathbf r\\times m\\mathbf v=(2,-1,1)\\times(3,6,0)=(-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1}$\n$\\boldsymbol\\tau=\\mathbf r\\times\\mathbf F=(2,-1,1)\\times(2,1,-1)=(0,4,4)\\ \\text{N m}$\n$\\dfrac{d\\mathbf L}{dt}=\\mathbf r\\times\\mathbf F+\\mathbf v\\times m\\mathbf v=\\boldsymbol\\tau$\n\nIndependent check: \\(\\mathbf L=\\mathbf r\\times m\\mathbf v=3(\\mathbf r\\times\\mathbf v)=(-6,3,15)\\). \\(\\boldsymbol\\tau=\\mathbf r\\times\\mathbf F=(0,4,4)\\).",
+ "solution": "Angular momentum and torque about the origin are $4\\mathbf L=\\mathbf r\\times m\\mathbf v,\\qquad \\boldsymbol\\tau=\\mathbf r\\times\\mathbf F.4$\n$$\\mathbf L=(2,-1,1)\\times(3,6,0)=(-6,3,15),\\qquad \\boldsymbol\\tau=(2,-1,1)\\times(2,1,-1)=(0,4,4).$$\nThus the ordered pair is $\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "At an instant, a particle of mass $3$ kg has position $\\mathbf r=(2,-1,1)$ m and velocity $\\mathbf v=(1,2,0)$ m s$^{-1}$. The net force is $\\mathbf F=(2,1,-1)$ N. Which ordered pair gives its angular momentum and torque about the origin, respectively?",
+  "options": [
+   "$\\bigl((6,-3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,-4,4)\\ \\text{N m}\\bigr)$",
+   "$\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$",
+   "$\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,-4)\\ \\text{N m}\\bigr)$",
+   "$\\bigl((-6,3,-15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\mathbf L=\\mathbf r\\times m\\mathbf v=(2,-1,1)\\times(3,6,0)=(-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1}$\n$\\boldsymbol\\tau=\\mathbf r\\times\\mathbf F=(2,-1,1)\\times(2,1,-1)=(0,4,4)\\ \\text{N m}$\n$\\dfrac{d\\mathbf L}{dt}=\\mathbf r\\times\\mathbf F+\\mathbf v\\times m\\mathbf v=\\boldsymbol\\tau$",
+  "distractor_notes": "A: reverses the angular-momentum signs and one torque component.\nC: reverses the torque's third component.\nD: reverses the angular momentum's third component."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

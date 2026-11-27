@@ -1,0 +1,79 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Earth's magnetism – dip",
+  "archetype": "figure interpretation",
+  "brief": "Given a diagram showing a compass/inclination at a place, use the dip angle relation to find the horizontal or vertical component of Earth's field.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:17",
+   "2022:12",
+   "2025s1:28"
+  ],
+  "origin": "variant",
+  "bank_ref": "g3272975b0aa8"
+ },
+ "status": "ok",
+ "stem": "As shown in the figure, the Earth's magnetic field at a location has magnitude $10\\times10^{-5}$ T and dip angle $60^\\circ$. What is its horizontal component?",
+ "options": [
+  "$5\\sqrt{3}\\times10^{-5}$ T",
+  "$5\\times10^{-5}$ T",
+  "$10\\times10^{-5}$ T",
+  "$10\\sqrt{3}\\times10^{-5}$ T"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q026_stem_v0.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the figure, the dip angle is measured from the horizontal, so the horizontal component is B cos 60° = 5×10⁻⁵ T.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$B_H=B\\cos\\delta$\n$B_H=(10\\times10^{-5})\\cos60^\\circ=5\\times10^{-5}\\ \\text{T}$\n\nIndependent check: Using the figure, the dip angle is measured from the horizontal, so the horizontal component is B cos 60° = 5×10⁻⁵ T.",
+ "solution": "The horizontal component is $B_H=B\\cos\\delta$.\n$$B_H=(10\\times10^{-5})\\cos60^\\circ=5\\times10^{-5}\\ \\text{T}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "As shown in the figure, the Earth's magnetic field at a location has magnitude $10\\times10^{-5}$ T and dip angle $60^\\circ$. What is its horizontal component?",
+  "options": [
+   "$5\\times10^{-5}$ T",
+   "$5\\sqrt{3}\\times10^{-5}$ T",
+   "$10\\times10^{-5}$ T",
+   "$10\\sqrt{3}\\times10^{-5}$ T"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw perpendicular horizontal and vertical axes meeting at a point O. From O, draw an arrow representing the Earth's magnetic field vector B, directed upwards and to the right, making an angle of 60° with the positive horizontal axis. Label the vector B = 10 × 10⁻⁵ T and mark the 60° angle between B and the horizontal axis. Label the horizontal axis 'Horizontal plane' and the vertical axis 'Vertical'. Do not draw component arrows.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$B_H=B\\cos\\delta$\n$B_H=(10\\times10^{-5})\\cos60^\\circ=5\\times10^{-5}\\ \\text{T}$",
+  "distractor_notes": "B: uses $B\\sin60^\\circ$, giving the vertical component. C: reports the total field without resolving it. D: uses $B\\tan60^\\circ$ instead of projecting the field."
+ },
+ "variant_of": "g3272975b0aa8",
+ "author_model": "openai/gpt-6-luna-pro"
+}

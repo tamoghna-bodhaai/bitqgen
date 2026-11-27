@@ -1,0 +1,71 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Maxima and minima",
+  "archetype": "sign of derivative",
+  "brief": "Ask for the intervals where a cubic-based function with a parameter is increasing/decreasing, requiring analysis of derivative sign and a condition on the parameter for a given interval of monotonicity.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:123",
+   "2026s2:124",
+   "2023s2:110"
+  ],
+  "origin": "variant",
+  "bank_ref": "gbfd028cea21b"
+ },
+ "status": "ok",
+ "stem": "For $f_a(x)=x^3-3ax^2+3(a^2-1)x$, suppose $f_a$ is increasing on $[0,∞)$. Which option gives the restriction on $a$ and the intervals of increase and decrease on the real line?",
+ "options": [
+  "When $a≥1$: increasing on $(-∞,a-1)$ and $(a+1,∞)$; decreasing on $(a-1,a+1)$",
+  "When $a≤-1$: increasing on $(-∞,a-1)$ and $(a+1,∞)$; decreasing on $(a-1,a+1)$",
+  "When $|a|≥1$: increasing on $(-∞,a-1)$ and $(a+1,∞)$; decreasing on $(a-1,a+1)$",
+  "When $a≤-1$: increasing on $(a-1,a+1)$; decreasing on $(-∞,a-1)$ and $(a+1,∞)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "f'_a(x)=3[(x-a)^2-1]. It is negative on (a-1,a+1). For increase on [0,∞), require a+1≤0, hence a≤−1. Thus f increases outside (a−1,a+1) and decreases inside.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f'_a(x)=3[x^2-2ax+a^2-1]=3[(x-a)^2-1]$\n$f'_a(x)<0$ for $a-1<x<a+1$.\nFor $f_a$ to be increasing on $[0,∞)$, this interval must contain no positive $x$, so $a+1≤0$, i.e. $a≤-1$.\nThus $f'_a>0$ on $(-∞,a-1)$ and $(a+1,∞)$, and $f'_a<0$ on $(a-1,a+1)$.\n\nIndependent check: f'_a(x)=3[(x-a)^2-1]. It is negative on (a-1,a+1). For increase on [0,∞), require a+1≤0, hence a≤−1. Thus f increases outside (a−1,a+1) and decreases inside.",
+ "solution": "$$f'_a(x)=3[(x-a)^2-1]$$\nFor $f_a$ to be increasing on $[0,\\infty)$, its interval of decrease $(a-1,a+1)$ must lie outside the positive axis; hence $a+1\\le 0$, so $a\\le -1$.\nThus $f_a$ increases on $(-\\infty,a-1)$ and $(a+1,\\infty)$, and decreases on $(a-1,a+1)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $f_a(x)=x^3-3ax^2+3(a^2-1)x$, suppose $f_a$ is increasing on $[0,∞)$. Which option gives the restriction on $a$ and the intervals of increase and decrease on the real line?",
+  "options": [
+   "When $a≥1$: increasing on $(-∞,a-1)$ and $(a+1,∞)$; decreasing on $(a-1,a+1)$",
+   "When $a≤-1$: increasing on $(-∞,a-1)$ and $(a+1,∞)$; decreasing on $(a-1,a+1)$",
+   "When $|a|≥1$: increasing on $(-∞,a-1)$ and $(a+1,∞)$; decreasing on $(a-1,a+1)$",
+   "When $a≤-1$: increasing on $(a-1,a+1)$; decreasing on $(-∞,a-1)$ and $(a+1,∞)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$f'_a(x)=3[x^2-2ax+a^2-1]=3[(x-a)^2-1]$\n$f'_a(x)<0$ for $a-1<x<a+1$.\nFor $f_a$ to be increasing on $[0,∞)$, this interval must contain no positive $x$, so $a+1≤0$, i.e. $a≤-1$.\nThus $f'_a>0$ on $(-∞,a-1)$ and $(a+1,∞)$, and $f'_a<0$ on $(a-1,a+1)$.",
+  "distractor_notes": "A: Chooses the wrong side of the parameter bound, leaving a region of negative derivative on $[0,∞)$.\nC: Checks the derivative at $x=0$ but does not ensure it stays nonnegative for all $x≥0$.\nD: Reverses the sign intervals for the upward-opening quadratic derivative."
+ },
+ "variant_of": "gbfd028cea21b",
+ "author_model": "openai/gpt-6-luna-pro"
+}

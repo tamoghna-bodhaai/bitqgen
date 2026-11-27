@@ -1,0 +1,68 @@
+{
+ "qno": 146,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 146,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Trigonometric integrals",
+  "archetype": "substitution integral",
+  "brief": "Indefinite integral of the form ∫dx/(a sin x + b cos x) or ∫(sin/cos power mix) via t = tan(x/2) or a simple substitution; easy with the right trick.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:96",
+   "2025s1:130",
+   "2026s1:101"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int \\frac{\\sin x}{2+\\cos x}\\,dx$.",
+ "options": [
+  "$\\ln(2+\\cos x)+C$",
+  "$-\\ln(2+\\cos x)+C$",
+  "$-2\\ln(2+\\cos x)+C$",
+  "$-\\ln(2-\\cos x)+C$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since \\(\\frac{d}{dx}(2+\\cos x)=-\\sin x\\), the integral is \\(-\\ln(2+\\cos x)+C\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=2+\\cos x,\\quad du=-\\sin x\\,dx$; $\\displaystyle\\int\\frac{\\sin x}{2+\\cos x}\\,dx=-\\int\\frac{du}{u}=-\\ln(2+\\cos x)+C$.\n\nIndependent check: Since \\(\\frac{d}{dx}(2+\\cos x)=-\\sin x\\), the integral is \\(-\\ln(2+\\cos x)+C\\).",
+ "solution": "Let $u=2+\\cos x$, so $du=-\\sin x\\,dx$. Then\n$$\\int\\frac{\\sin x}{2+\\cos x}\\,dx=-\\int\\frac{du}{u}=-\\ln(2+\\cos x)+C.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int \\frac{\\sin x}{2+\\cos x}\\,dx$.",
+  "options": [
+   "$\\ln(2+\\cos x)+C$",
+   "$-\\ln(2+\\cos x)+C$",
+   "$-2\\ln(2+\\cos x)+C$",
+   "$-\\ln(2-\\cos x)+C$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$u=2+\\cos x,\\quad du=-\\sin x\\,dx$; $\\displaystyle\\int\\frac{\\sin x}{2+\\cos x}\\,dx=-\\int\\frac{du}{u}=-\\ln(2+\\cos x)+C$.",
+  "distractor_notes": "A: sign error in the substitution. C: introduces an extra factor of $2$. D: changes the sign of the cosine term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Terminal velocity / Stokes' law",
+  "archetype": "proportionality-scaling",
+  "brief": "Given the terminal velocity of a sphere of one radius, find the terminal velocity of a sphere of a different radius in the same fluid.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:11",
+   "2022:2",
+   "2025s2:15"
+  ],
+  "origin": "variant",
+  "bank_ref": "g994690fa8ef2"
+ },
+ "status": "ok",
+ "stem": "A small sphere of radius $2$ mm has a terminal speed of $5$ mm s$^{-1}$ in a liquid. What is the terminal speed of another sphere of the same material and radius $4$ mm in the same liquid, assuming Stokes' law applies?",
+ "options": [
+  "$5$ mm s$^{-1}$",
+  "$20$ mm s$^{-1}$",
+  "$10$ mm s$^{-1}$",
+  "$40$ mm s$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Stokes’ law, terminal speed is proportional to radius squared. Doubling the radius multiplies the speed by 4: 5 × 4 = 20 mm s⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Under Stokes' law, $v_t\\propto r^2$.\\n$\\dfrac{v_2}{v_1}=\\left(\\dfrac{r_2}{r_1}\\right)^2=\\left(\\dfrac{4}{2}\\right)^2=4$.\\n$v_2=4(5)=20$ mm s$^{-1}$.\n\nIndependent check: By Stokes’ law, terminal speed is proportional to radius squared. Doubling the radius multiplies the speed by 4: 5 × 4 = 20 mm s⁻¹.",
+ "solution": "By Stokes’ law, $v_t\\propto r^2$.\n$$\\frac{v_2}{v_1}=\\left(\\frac{r_2}{r_1}\\right)^2=\\left(\\frac{4}{2}\\right)^2=4$$\nThus, $v_2=4(5)=20$ mm s$^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A small sphere of radius $2$ mm has a terminal speed of $5$ mm s$^{-1}$ in a liquid. What is the terminal speed of another sphere of the same material and radius $4$ mm in the same liquid, assuming Stokes' law applies?",
+  "options": [
+   "$5$ mm s$^{-1}$",
+   "$10$ mm s$^{-1}$",
+   "$20$ mm s$^{-1}$",
+   "$40$ mm s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Under Stokes' law, $v_t\\propto r^2$.\\n$\\dfrac{v_2}{v_1}=\\left(\\dfrac{r_2}{r_1}\\right)^2=\\left(\\dfrac{4}{2}\\right)^2=4$.\\n$v_2=4(5)=20$ mm s$^{-1}$.",
+  "distractor_notes": "A: assumes terminal speed is independent of radius. B: assumes speed is directly proportional to radius. D: incorrectly uses a cubic dependence on radius."
+ },
+ "variant_of": "g994690fa8ef2",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Infinite geometric series",
+  "archetype": "algebraic simplification",
+  "brief": "Sum of an infinite GP where the first term/common ratio must be extracted from a repeating decimal or a given nth-term description; single-formula answer.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:139",
+   "2025s1:118",
+   "2021:141"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The value of the repeating decimal $0.\\overline{27}$, viewed as the sum of an infinite geometric series, is",
+ "options": [
+  "$\\dfrac{3}{11}$",
+  "$\\dfrac{27}{100}$",
+  "$\\dfrac{3}{10}$",
+  "$\\dfrac{27}{101}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Treating it as a geometric series: \\(0.27+0.0027+\\cdots=\\frac{0.27}{1-0.01}=\\frac{3}{11}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$0.\\overline{27}=\\dfrac{27}{100}+\\dfrac{27}{100^2}+\\cdots$\\n$S=\\dfrac{27/100}{1-1/100}=\\dfrac{27}{99}=\\dfrac{3}{11}$.\n\nIndependent check: Treating it as a geometric series: \\(0.27+0.0027+\\cdots=\\frac{0.27}{1-0.01}=\\frac{3}{11}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The value of the repeating decimal $0.\\overline{27}$, viewed as the sum of an infinite geometric series, is",
+  "options": [
+   "$\\dfrac{3}{11}$",
+   "$\\dfrac{27}{100}$",
+   "$\\dfrac{3}{10}$",
+   "$\\dfrac{27}{101}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$0.\\overline{27}=\\dfrac{27}{100}+\\dfrac{27}{100^2}+\\cdots$\\n$S=\\dfrac{27/100}{1-1/100}=\\dfrac{27}{99}=\\dfrac{3}{11}$.",
+  "distractor_notes": "B: takes only the first two digits. C: uses an incorrect denominator when summing. D: adds the ratio instead of subtracting it from $1$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

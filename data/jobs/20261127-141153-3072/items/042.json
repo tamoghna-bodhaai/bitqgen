@@ -1,0 +1,68 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "Depression in freezing point",
+  "archetype": "single-formula numerical",
+  "brief": "Given mass of a known nonelectrolyte dissolved in a solvent mass and Kf, compute the freezing point of the solution.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:44",
+   "2023s2:32",
+   "2021:77"
+  ]
+ },
+ "status": "ok",
+ "stem": "A solution is prepared by dissolving $9.2$ g of glycerol (molar mass $92\\ \\text{g mol}^{-1}$) in $100$ g of water. Find its freezing point if $K_f=1.86\\ ^\\circ\\text{C kg mol}^{-1}$ and pure water freezes at $0\\ ^\\circ\\text{C}$.",
+ "options": [
+  "$-0.93\\ ^\\circ\\text{C}$",
+  "$+1.86\\ ^\\circ\\text{C}$",
+  "$-3.72\\ ^\\circ\\text{C}$",
+  "$-1.86\\ ^\\circ\\text{C}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Moles of glycerol = 9.2/92 = 0.1 mol; molality = 0.1/0.1 = 1 mol kg⁻¹. Thus ΔTf = Kf m = 1.86 °C, so the solution freezes at −1.86 °C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n=\\dfrac{9.2}{92}=0.10$ mol; solvent mass $=0.100$ kg\n$m=\\dfrac{0.10}{0.100}=1.0$ mol kg$^{-1}$\n$\\Delta T_f=K_fm=1.86\\ ^\\circ\\text{C}$\n$T_f=0-1.86=-1.86\\ ^\\circ\\text{C}$\n\nIndependent check: Moles of glycerol = 9.2/92 = 0.1 mol; molality = 0.1/0.1 = 1 mol kg⁻¹. Thus ΔTf = Kf m = 1.86 °C, so the solution freezes at −1.86 °C.",
+ "solution": "Moles of glycerol $=\\frac{9.2}{92}=0.10$ mol; molality $=\\frac{0.10}{0.100}=1.0\\ \\text{mol kg}^{-1}$.\n$$\\Delta T_f=K_fm=1.86\\times1.0=1.86^\\circ\\text{C}$$\nHence, $T_f=0-1.86=-1.86^\\circ\\text{C}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A solution is prepared by dissolving $9.2$ g of glycerol (molar mass $92\\ \\text{g mol}^{-1}$) in $100$ g of water. Find its freezing point if $K_f=1.86\\ ^\\circ\\text{C kg mol}^{-1}$ and pure water freezes at $0\\ ^\\circ\\text{C}$.",
+  "options": [
+   "$-0.93\\ ^\\circ\\text{C}$",
+   "$-1.86\\ ^\\circ\\text{C}$",
+   "$-3.72\\ ^\\circ\\text{C}$",
+   "$+1.86\\ ^\\circ\\text{C}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$n=\\dfrac{9.2}{92}=0.10$ mol; solvent mass $=0.100$ kg\n$m=\\dfrac{0.10}{0.100}=1.0$ mol kg$^{-1}$\n$\\Delta T_f=K_fm=1.86\\ ^\\circ\\text{C}$\n$T_f=0-1.86=-1.86\\ ^\\circ\\text{C}$",
+  "distractor_notes": "A: Uses half the molality. C: Doubles the depression. D: Applies the depression with the wrong sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

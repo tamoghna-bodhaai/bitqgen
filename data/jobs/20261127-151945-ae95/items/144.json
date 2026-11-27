@@ -1,0 +1,71 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Properties of determinants",
+  "archetype": "split-and-factor",
+  "brief": "Evaluate (or show) a determinant whose rows/columns have entries built from sums, using row operations C1 → C1 + C2 + C3 to factor the determinant into a product.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:109",
+   "2025s1:104",
+   "2024s2:108"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd4119429772e"
+ },
+ "status": "ok",
+ "stem": "Evaluate $$\\begin{vmatrix}3u-v-w&v&w\\\\-2r&2r&0\\\\-5s&0&5s\\end{vmatrix}.$$",
+ "options": [
+  "$15urs$",
+  "$30urs$",
+  "$-30urs$",
+  "$30vrs$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor 2r and 5s from rows 2 and 3. The remaining determinant is (3u-v-w)+v+w=3u, so the original determinant is 10rs·3u=30urs.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$C_1\\to C_1+C_2+C_3$: $$\\begin{vmatrix}3u&v&w\\\\0&2r&0\\\\0&0&5s\\end{vmatrix}=3u(2r)(5s)=30urs.$$\n\nIndependent check: Factor 2r and 5s from rows 2 and 3. The remaining determinant is (3u-v-w)+v+w=3u, so the original determinant is 10rs·3u=30urs.",
+ "solution": "Apply $C_1\\to C_1+C_2+C_3$; the determinant is unchanged:\n$$\\begin{vmatrix}3u&v&w\\\\0&2r&0\\\\0&0&5s\\end{vmatrix}=3u\\cdot2r\\cdot5s=30urs.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $$\\begin{vmatrix}3u-v-w&v&w\\\\-2r&2r&0\\\\-5s&0&5s\\end{vmatrix}.$$",
+  "options": [
+   "$15urs$",
+   "$-30urs$",
+   "$30urs$",
+   "$30vrs$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$C_1\\to C_1+C_2+C_3$: $$\\begin{vmatrix}3u&v&w\\\\0&2r&0\\\\0&0&5s\\end{vmatrix}=3u(2r)(5s)=30urs.$$",
+  "distractor_notes": "A: omits the factor $2$; B: introduces a sign error; D: uses $v$ instead of the resulting first-column entry."
+ },
+ "variant_of": "gd4119429772e",
+ "author_model": "openai/gpt-6-luna-pro"
+}

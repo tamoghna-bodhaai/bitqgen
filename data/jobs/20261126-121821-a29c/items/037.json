@@ -19,50 +19,49 @@
   ]
  },
  "status": "ok",
- "stem": "In a face-centred cubic ($\\text{fcc}$) unit cell of edge length $a$, let $N_{\\text{T}}$ be the total number of tetrahedral voids, $N_{\\text{O}}$ be the number of octahedral voids lying entirely within the cell, and $d$ be the shortest distance between an octahedral void and a tetrahedral void. The values of $N_{\\text{T}}$, $N_{\\text{O}}$, and $d$ are, respectively:",
+ "stem": "Which description correctly gives the numbers, locations and surrounding atoms of the two types of voids in an fcc unit cell?",
  "options": [
-  "$8$, $1$, $\\dfrac{\\sqrt{3}}{4}a$",
-  "$8$, $4$, $\\dfrac{\\sqrt{3}}{4}a$",
-  "$4$, $1$, $\\dfrac{\\sqrt{3}}{4}a$",
-  "$8$, $1$, $\\dfrac{a}{2}$"
+  "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 4 atoms; 1 octahedral void at the body centre only, surrounded by 6 atoms.",
+  "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 6 atoms; 4 octahedral voids at the body centre and edge centres, each surrounded by 4 atoms.",
+  "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 4 atoms; 4 octahedral voids at the body centre and edge centres, each surrounded by 6 atoms.",
+  "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 4 atoms; 13 octahedral voids at the body centre and all twelve edge centres, each surrounded by 6 atoms."
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "fcc has 4 atoms/cell → 8 tetrahedral voids (all inside, at (¼,¼,¼)-type sites). Octahedral voids: 1 at body centre (fully inside) + 12 edge-centre voids lying on cell edges (not entirely within), so N_O = 1. Distance body centre (a/2,a/2,a/2) to tetrahedral site (a/4,a/4,a/4) = √3·a/4 ≈ 0.433a; edge-centre voids give the same minimum (verified numerically). Matches option A.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "An fcc unit cell has 8 tetrahedral voids at the centres of its eight smaller cubes, each with coordination number 4. Its octahedral voids comprise 1 body-centre site and 12 edge-centre sites shared among 4 cells, giving 1 + 12/4 = 4 per unit cell; each has coordination number 6.",
    "answer": "A",
-   "confidence": 0.95,
+   "confidence": 1.0,
    "multiple_correct": false,
-   "issues": [
-    "The qualifier 'lying entirely within the cell' is essential to exclude the 12 edge-centre octahedral voids; without it N_O would be 4 (effective count), so wording, while intentional, hinges on interpreting void location by its centre — mildly nonstandard phrasing but resolvable."
-   ],
+   "issues": [],
    "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. **Tetrahedral voids ($N_{\\text{T}}$):** An $\\text{fcc}$ unit cell can be divided into $8$ smaller cubes of side $\\dfrac{a}{2}$. Each smaller cube contains one tetrahedral void at its body centre. Since all of these positions are within the interior of the unit cell, none are shared by adjacent cells. Thus, $N_{\\text{T}} = 8$.\n\n2. **Octahedral voids ($N_{\\text{O}}$):** Octahedral voids are located at the $12$ edge centres and at the $1$ body centre. Each edge-centred void is shared by $4$ unit cells, so only the body-centred octahedral void lies entirely within the unit cell without sharing. Thus, $N_{\\text{O}} = 1$.\n\n3. **Shortest distance ($d$):** The body-centre octahedral void is located at coordinates $\\left(\\dfrac{a}{2}, \\dfrac{a}{2}, \\dfrac{a}{2}\\right)$, and the nearest tetrahedral void lies on the body diagonal at $\\left(\\dfrac{a}{4}, \\dfrac{a}{4}, \\dfrac{a}{4}\\right)$. The distance between them is:\n$$d = \\sqrt{\\left(\\frac{a}{2} - \\frac{a}{4}\\right)^2 + \\left(\\frac{a}{2} - \\frac{a}{4}\\right)^2 + \\left(\\frac{a}{2} - \\frac{a}{4}\\right)^2} = \\sqrt{3\\left(\\frac{a}{4}\\right)^2} = \\dfrac{\\sqrt{3}}{4}a$$\n\nTherefore, the set of values is $\\left(8,\\, 1,\\, \\dfrac{\\sqrt{3}}{4}a\\right)$.\n\nIndependent check: fcc has 4 atoms/cell → 8 tetrahedral voids (all inside, at (¼,¼,¼)-type sites). Octahedral voids: 1 at body centre (fully inside) + 12 edge-centre voids lying on cell edges (not entirely within), so N_O = 1. Distance body centre (a/2,a/2,a/2) to tetrahedral site (a/4,a/4,a/4) = √3·a/4 ≈ 0.433a; edge-centre voids give the same minimum (verified numerically). Matches option A.",
- "solution": "",
+ "working": "Tetrahedral voids: $8$ at the centres of the eight smaller cubes; each has $4$ surrounding atoms.\nOctahedral voids: $1$ body-centre site + $12$ edge-centre sites, each shared by $4$ cells, gives $1 + 12/4 = 4$ per unit cell.\nEach octahedral void is surrounded by $6$ atoms.\n\nIndependent check: An fcc unit cell has 8 tetrahedral voids at the centres of its eight smaller cubes, each with coordination number 4. Its octahedral voids comprise 1 body-centre site and 12 edge-centre sites shared among 4 cells, giving 1 + 12/4 = 4 per unit cell; each has coordination number 6.",
+ "solution": "Tetrahedral voids lie at the centres of the eight smaller cubes, each surrounded by 4 atoms. Octahedral voids: $1+\\frac{12}{4}=4$ per unit cell, at the body centre and edge centres; each is surrounded by 6 atoms.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "In a face-centred cubic ($\\text{fcc}$) unit cell of edge length $a$, let $N_{\\text{T}}$ be the total number of tetrahedral voids, $N_{\\text{O}}$ be the number of octahedral voids lying entirely within the cell, and $d$ be the shortest distance between an octahedral void and a tetrahedral void. The values of $N_{\\text{T}}$, $N_{\\text{O}}$, and $d$ are, respectively:",
+  "stem": "Which description correctly gives the numbers, locations and surrounding atoms of the two types of voids in an fcc unit cell?",
   "options": [
-   "$8$, $1$, $\\dfrac{\\sqrt{3}}{4}a$",
-   "$8$, $4$, $\\dfrac{\\sqrt{3}}{4}a$",
-   "$4$, $1$, $\\dfrac{\\sqrt{3}}{4}a$",
-   "$8$, $1$, $\\dfrac{a}{2}$"
+   "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 4 atoms; 4 octahedral voids at the body centre and edge centres, each surrounded by 6 atoms.",
+   "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 6 atoms; 4 octahedral voids at the body centre and edge centres, each surrounded by 4 atoms.",
+   "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 4 atoms; 1 octahedral void at the body centre only, surrounded by 6 atoms.",
+   "8 tetrahedral voids at the centres of the eight smaller cubes, each surrounded by 4 atoms; 13 octahedral voids at the body centre and all twelve edge centres, each surrounded by 6 atoms."
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "1. **Tetrahedral voids ($N_{\\text{T}}$):** An $\\text{fcc}$ unit cell can be divided into $8$ smaller cubes of side $\\dfrac{a}{2}$. Each smaller cube contains one tetrahedral void at its body centre. Since all of these positions are within the interior of the unit cell, none are shared by adjacent cells. Thus, $N_{\\text{T}} = 8$.\n\n2. **Octahedral voids ($N_{\\text{O}}$):** Octahedral voids are located at the $12$ edge centres and at the $1$ body centre. Each edge-centred void is shared by $4$ unit cells, so only the body-centred octahedral void lies entirely within the unit cell without sharing. Thus, $N_{\\text{O}} = 1$.\n\n3. **Shortest distance ($d$):** The body-centre octahedral void is located at coordinates $\\left(\\dfrac{a}{2}, \\dfrac{a}{2}, \\dfrac{a}{2}\\right)$, and the nearest tetrahedral void lies on the body diagonal at $\\left(\\dfrac{a}{4}, \\dfrac{a}{4}, \\dfrac{a}{4}\\right)$. The distance between them is:\n$$d = \\sqrt{\\left(\\frac{a}{2} - \\frac{a}{4}\\right)^2 + \\left(\\frac{a}{2} - \\frac{a}{4}\\right)^2 + \\left(\\frac{a}{2} - \\frac{a}{4}\\right)^2} = \\sqrt{3\\left(\\frac{a}{4}\\right)^2} = \\dfrac{\\sqrt{3}}{4}a$$\n\nTherefore, the set of values is $\\left(8,\\, 1,\\, \\dfrac{\\sqrt{3}}{4}a\\right)$.",
-  "distractor_notes": "Option B uses $N_{\\text{O}} = 4$, which is the total effective number of octahedral voids per unit cell ($1 + 12 \\times \\frac{1}{4}$), overlooking that only the body-centred void lies entirely within the cell.\nOption C uses $N_{\\text{T}} = 4$, which confuses the number of tetrahedral voids ($2Z = 8$) with the number of lattice points per unit cell ($Z = 4$).\nOption D uses $d = \\frac{a}{2}$, which is the distance between two adjacent tetrahedral voids rather than an octahedral and a tetrahedral void.",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "Tetrahedral voids: $8$ at the centres of the eight smaller cubes; each has $4$ surrounding atoms.\nOctahedral voids: $1$ body-centre site + $12$ edge-centre sites, each shared by $4$ cells, gives $1 + 12/4 = 4$ per unit cell.\nEach octahedral void is surrounded by $6$ atoms.",
+  "distractor_notes": "B: Interchanges the coordination numbers of tetrahedral and octahedral voids.\nC: Omits the octahedral voids at edge centres.\nD: Counts each shared edge-centre void as wholly within one unit cell."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

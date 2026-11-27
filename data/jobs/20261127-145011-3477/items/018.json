@@ -1,0 +1,70 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Propagation of errors",
+  "archetype": "error propagation",
+  "brief": "Quantity computed as a product/quotient of measured values (e.g. density from mass and radius); find the maximum percentage error by adding relative errors.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:1",
+   "2023s2:9",
+   "2025s2:10"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The resistivity of a wire is calculated from its measured resistance, diameter and length. If their maximum percentage errors are $1\\%$, $2\\%$ and $0.5\\%$, respectively, what is the maximum percentage error in the resistivity?",
+ "options": [
+  "$3.5\\%$",
+  "$5.5\\%$",
+  "$4.5\\%$",
+  "$7.5\\%$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For $\\rho=\\frac{\\pi R d^2}{4L}$, maximum percentage error is $1\\%+2(2\\%)+0.5\\%=5.5\\%$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\rho=\\dfrac{R\\pi d^2}{4L}$\n$\\dfrac{\\Delta\\rho}{\\rho}=\\dfrac{\\Delta R}{R}+2\\dfrac{\\Delta d}{d}+\\dfrac{\\Delta L}{L}$\nMaximum percentage error $=1\\%+2(2\\%)+0.5\\%=5.5\\%$\n\nIndependent check: For $\\rho=\\frac{\\pi R d^2}{4L}$, maximum percentage error is $1\\%+2(2\\%)+0.5\\%=5.5\\%$.",
+ "solution": "Using $ho=\\frac{R\\pi d^2}{4L}$, the maximum percentage error is\n$$\\frac{\\Delta\\rho}{\\rho}\\times100\\%=1\\%+2(2\\%)+0.5\\%=5.5\\%.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The resistivity of a wire is calculated from its measured resistance, diameter and length. If their maximum percentage errors are $1\\%$, $2\\%$ and $0.5\\%$, respectively, what is the maximum percentage error in the resistivity?",
+  "options": [
+   "$3.5\\%$",
+   "$4.5\\%$",
+   "$5.5\\%$",
+   "$7.5\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\rho=\\dfrac{R\\pi d^2}{4L}$\n$\\dfrac{\\Delta\\rho}{\\rho}=\\dfrac{\\Delta R}{R}+2\\dfrac{\\Delta d}{d}+\\dfrac{\\Delta L}{L}$\nMaximum percentage error $=1\\%+2(2\\%)+0.5\\%=5.5\\%$",
+  "distractor_notes": "A: treats diameter as a first-power factor. B: arithmetic error in combining the contributions. D: overcounts the length contribution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

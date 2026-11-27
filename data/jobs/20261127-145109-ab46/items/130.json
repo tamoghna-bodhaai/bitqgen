@@ -1,0 +1,70 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of functions",
+  "archetype": "domain intersection",
+  "brief": "Find the domain of a function involving a square root and a denominator (e.g., √(polynomial)/(rational expression)); intersect the positivity condition with the denominator-nonzero condition.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:112",
+   "2025s1:107",
+   "2023s2:119"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Find the domain of $f(x)=\\dfrac{\\sqrt{x^2-4}}{x-3}$.",
+ "options": [
+  "$(-\\infty,-2]\\cup[2,\\infty)$",
+  "$(-\\infty,-2]\\cup[2,3)\\cup(3,\\infty)$",
+  "$(-\\infty,-2)\\cup(2,3)\\cup(3,\\infty)$",
+  "$(-\\infty,-2]\\cup[2,3)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Require x²−4≥0, so x≤−2 or x≥2; also exclude x=3. This gives option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2-4\\geq 0\\Rightarrow x\\leq-2\\text{ or }x\\geq2$.\n$x-3\\neq0\\Rightarrow x\\neq3$.\n$\\text{Domain}=(-\\infty,-2]\\cup[2,3)\\cup(3,\\infty)$\n\nIndependent check: Require x²−4≥0, so x≤−2 or x≥2; also exclude x=3. This gives option A.",
+ "solution": "The square root requires $x^2-4\\geq 0$, so $x\\leq -2$ or $x\\geq 2$. The denominator requires $x\\neq 3$.\nThus the domain is $(-\\infty,-2]\\cup[2,3)\\cup(3,\\infty)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the domain of $f(x)=\\dfrac{\\sqrt{x^2-4}}{x-3}$.",
+  "options": [
+   "$(-\\infty,-2]\\cup[2,3)\\cup(3,\\infty)$",
+   "$(-\\infty,-2]\\cup[2,\\infty)$",
+   "$(-\\infty,-2)\\cup(2,3)\\cup(3,\\infty)$",
+   "$(-\\infty,-2]\\cup[2,3)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$x^2-4\\geq 0\\Rightarrow x\\leq-2\\text{ or }x\\geq2$.\n$x-3\\neq0\\Rightarrow x\\neq3$.\n$\\text{Domain}=(-\\infty,-2]\\cup[2,3)\\cup(3,\\infty)$",
+  "distractor_notes": "B: does not exclude the denominator's zero. C: incorrectly makes the square-root condition strict. D: omits valid values greater than $3$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

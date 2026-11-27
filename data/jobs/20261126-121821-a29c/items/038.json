@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Which of the following statements regarding the catalytic depletion of stratospheric ozone by chlorofluorocarbons (CFCs) and nitrogen oxides ($\\text{NO}_x$) is INCORRECT?",
+ "stem": "Which option identifies the radical released by CFC photolysis, its ozone-depletion cycle, and the role of $\\text{NO}_x$ correctly?",
  "options": [
-  "The catalytic cycle is initiated by chlorine free radicals ($\\dot{\\text{Cl}}$) generated via UV photolysis of CFCs.",
-  "The propagation step that regenerates the chlorine radical is $\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$.",
-  "Nitric oxide ($\\text{NO}$) emitted from supersonic jets depletes ozone via the propagation step $\\text{NO}(g) + \\text{O}_3(g) \\rightarrow \\text{NO}_2(g) + \\text{O}_2(g)$.",
-  "Unlike CFCs, which act catalytically, ozone breakdown by $\\text{NO}$ is stoichiometric because $\\text{NO}_2$ cannot regenerate $\\text{NO}$."
+  "CFC photolysis releases $\\dot{\\text{Cl}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}_2\\rightarrow\\dot{\\text{Cl}}+\\text{O}_3$; $\\text{NO}$ is regenerated in a separate catalytic cycle.",
+  "CFC photolysis releases $\\dot{\\text{Cl}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$; $\\text{NO}$ is regenerated in a separate catalytic cycle.",
+  "CFC photolysis releases $\\text{Cl}\\dot{\\text{O}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$; $\\text{NO}$ is regenerated in a separate catalytic cycle.",
+  "CFC photolysis releases $\\dot{\\text{Cl}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$; unlike chlorine radicals, $\\text{NO}$ is consumed stoichiometrically and is not regenerated from $\\text{NO}_2$."
  ],
- "answer": "D",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Cl cycle: CF2Cl2 --UV--> Cl•; Cl• + O3 → ClO• + O2; ClO• + O → Cl• + O2 (A, B correct). NO cycle: NO + O3 → NO2 + O2 (C correct), then NO2 + O → NO + O2 regenerates NO, so NO also acts catalytically. Hence statement D is false.",
-   "answer": "D",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "CFC photolysis releases Cl·. The sequence Cl· + O₃ → ClO· + O₂, then ClO· + O → Cl· + O₂ regenerates chlorine; NO is also regenerated in its separate catalytic cycle.",
+   "answer": "A",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "1. **CFC mechanism:** In the stratosphere, chlorofluorocarbons (such as $\\text{CF}_2\\text{Cl}_2$) undergo photolysis under UV radiation to produce chlorine radicals:$$\\text{CF}_2\\text{Cl}_2(g) \\xrightarrow{h\\nu} \\dot{\\text{Cl}}(g) + \\dot{\\text{C}}\\text{F}_2\\text{Cl}(g)$$This initiates the catalytic breakdown cycle. Hence, statement A is correct.\n\n2. **CFC propagation steps:**$$\\dot{\\text{Cl}}(g) + \\text{O}_3(g) \\rightarrow \\text{Cl}\\dot{\\text{O}}(g) + \\text{O}_2(g)$$$$\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$$The second step produces molecular oxygen and regenerates the active $\\dot{\\text{Cl}}$ radical, allowing a single radical to destroy thousands of ozone molecules. Hence, statement B is correct.\n\n3. **$\\text{NO}_x$ mechanism:** Nitric oxide ($\\text{NO}$) from supersonic jet exhausts destroys ozone via a two-step catalytic cycle:$$\\text{NO}(g) + \\text{O}_3(g) \\rightarrow \\text{NO}_2(g) + \\text{O}_2(g)$$$$\\text{NO}_2(g) + \\text{O}(g) \\rightarrow \\text{NO}(g) + \\text{O}_2(g)$$Net reaction: $\\text{O}_3(g) + \\text{O}(g) \\rightarrow 2\\text{O}_2(g)$. Statement C correctly identifies the first propagation step.\n\n4. Because $\\text{NO}_2$ reacts with atomic oxygen to regenerate $\\text{NO}$, $\\text{NO}$ also acts as a homogeneous catalyst rather than being consumed stoichiometrically. Statement D falsely claims that the reaction is stoichiometric and non-regenerative.\n\nIndependent check: Cl cycle: CF2Cl2 --UV--> Cl•; Cl• + O3 → ClO• + O2; ClO• + O → Cl• + O2 (A, B correct). NO cycle: NO + O3 → NO2 + O2 (C correct), then NO2 + O → NO + O2 regenerates NO, so NO also acts catalytically. Hence statement D is false.",
- "solution": "",
+ "working": "CFC photolysis releases $\\dot{\\text{Cl}}$.\n$\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$\n$\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$\n$\\text{NO}+\\text{O}_3\\rightarrow\\text{NO}_2+\\text{O}_2$\n$\\text{NO}_2+\\text{O}\\rightarrow\\text{NO}+\\text{O}_2$\n\nIndependent check: CFC photolysis releases Cl·. The sequence Cl· + O₃ → ClO· + O₂, then ClO· + O → Cl· + O₂ regenerates chlorine; NO is also regenerated in its separate catalytic cycle.",
+ "solution": "CFC photolysis releases $\\dot{Cl}$, which is regenerated in the catalytic cycle:\n$$\\dot{Cl}+O_3\\rightarrow Cl\\dot{O}+O_2,\\qquad Cl\\dot{O}+O\\rightarrow\\dot{Cl}+O_2$$\nSimilarly, $NO$ is regenerated in the separate cycle $NO+O_3\\rightarrow NO_2+O_2$ and $NO_2+O\\rightarrow NO+O_2$. Thus, option (B).",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Which of the following statements regarding the catalytic depletion of stratospheric ozone by chlorofluorocarbons (CFCs) and nitrogen oxides ($\\text{NO}_x$) is INCORRECT?",
+  "stem": "Which option identifies the radical released by CFC photolysis, its ozone-depletion cycle, and the role of $\\text{NO}_x$ correctly?",
   "options": [
-   "The catalytic cycle is initiated by chlorine free radicals ($\\dot{\\text{Cl}}$) generated via UV photolysis of CFCs.",
-   "The propagation step that regenerates the chlorine radical is $\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$.",
-   "Nitric oxide ($\\text{NO}$) emitted from supersonic jets depletes ozone via the propagation step $\\text{NO}(g) + \\text{O}_3(g) \\rightarrow \\text{NO}_2(g) + \\text{O}_2(g)$.",
-   "Unlike CFCs, which act catalytically, ozone breakdown by $\\text{NO}$ is stoichiometric because $\\text{NO}_2$ cannot regenerate $\\text{NO}$."
+   "CFC photolysis releases $\\dot{\\text{Cl}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$; $\\text{NO}$ is regenerated in a separate catalytic cycle.",
+   "CFC photolysis releases $\\dot{\\text{Cl}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}_2\\rightarrow\\dot{\\text{Cl}}+\\text{O}_3$; $\\text{NO}$ is regenerated in a separate catalytic cycle.",
+   "CFC photolysis releases $\\text{Cl}\\dot{\\text{O}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$; $\\text{NO}$ is regenerated in a separate catalytic cycle.",
+   "CFC photolysis releases $\\dot{\\text{Cl}}$; $\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$, then $\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$; unlike chlorine radicals, $\\text{NO}$ is consumed stoichiometrically and is not regenerated from $\\text{NO}_2$."
   ],
   "option_smiles": null,
-  "answer": "D",
-  "working": "1. **CFC mechanism:** In the stratosphere, chlorofluorocarbons (such as $\\text{CF}_2\\text{Cl}_2$) undergo photolysis under UV radiation to produce chlorine radicals:$$\\text{CF}_2\\text{Cl}_2(g) \\xrightarrow{h\\nu} \\dot{\\text{Cl}}(g) + \\dot{\\text{C}}\\text{F}_2\\text{Cl}(g)$$This initiates the catalytic breakdown cycle. Hence, statement A is correct.\n\n2. **CFC propagation steps:**$$\\dot{\\text{Cl}}(g) + \\text{O}_3(g) \\rightarrow \\text{Cl}\\dot{\\text{O}}(g) + \\text{O}_2(g)$$$$\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$$The second step produces molecular oxygen and regenerates the active $\\dot{\\text{Cl}}$ radical, allowing a single radical to destroy thousands of ozone molecules. Hence, statement B is correct.\n\n3. **$\\text{NO}_x$ mechanism:** Nitric oxide ($\\text{NO}$) from supersonic jet exhausts destroys ozone via a two-step catalytic cycle:$$\\text{NO}(g) + \\text{O}_3(g) \\rightarrow \\text{NO}_2(g) + \\text{O}_2(g)$$$$\\text{NO}_2(g) + \\text{O}(g) \\rightarrow \\text{NO}(g) + \\text{O}_2(g)$$Net reaction: $\\text{O}_3(g) + \\text{O}(g) \\rightarrow 2\\text{O}_2(g)$. Statement C correctly identifies the first propagation step.\n\n4. Because $\\text{NO}_2$ reacts with atomic oxygen to regenerate $\\text{NO}$, $\\text{NO}$ also acts as a homogeneous catalyst rather than being consumed stoichiometrically. Statement D falsely claims that the reaction is stoichiometric and non-regenerative.",
-  "distractor_notes": "Option A is a true statement: a student may mistakenly choose it by thinking fluorine radicals ($\\dot{\\text{F}}$) initiate the cycle instead of $\\dot{\\text{Cl}}$ (C–F bonds are too strong to be broken by stratospheric UV).\nOption B is a true statement: a student may mistakenly believe this is termination rather than propagation, or confuse it with ozone reaction directly ($\\text{Cl}\\dot{\\text{O}} + \\text{O}_3$).\nOption C is a true statement: a student unaware that $\\text{NO}$ acts catalytically in ozone depletion may mistake this for an incorrect reaction.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "CFC photolysis releases $\\dot{\\text{Cl}}$.\n$\\dot{\\text{Cl}}+\\text{O}_3\\rightarrow\\text{Cl}\\dot{\\text{O}}+\\text{O}_2$\n$\\text{Cl}\\dot{\\text{O}}+\\text{O}\\rightarrow\\dot{\\text{Cl}}+\\text{O}_2$\n$\\text{NO}+\\text{O}_3\\rightarrow\\text{NO}_2+\\text{O}_2$\n$\\text{NO}_2+\\text{O}\\rightarrow\\text{NO}+\\text{O}_2$",
+  "distractor_notes": "B: Uses an incorrect second chlorine-cycle reaction.\nC: Misidentifies the radical released by CFC photolysis.\nD: Incorrectly claims that $\\text{NO}$ is not regenerated in the $\\text{NO}_x$ cycle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

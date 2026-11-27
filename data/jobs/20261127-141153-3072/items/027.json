@@ -1,0 +1,68 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Resonance – quality factor",
+  "archetype": "single-formula symbolic",
+  "brief": "Series LCR circuit at resonance with given R, L, C; express the quality factor Q symbolically and/or compute it, testing the ω0L/R form.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:12",
+   "2025s1:1",
+   "2026s1:29"
+  ]
+ },
+ "status": "ok",
+ "stem": "A series LCR circuit has $R=10\\ \\text{\\Omega}$, $L=0.5\\ \\text{H}$ and $C=50\\ \\mu\\text{F}$. Its quality factor at resonance is:",
+ "options": [
+  "$5$",
+  "$20$",
+  "$10$",
+  "$100$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At resonance, Q = (1/R)√(L/C) = (1/10)√(0.5/(50×10⁻⁶)) = 10.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\omega_0=1/\\sqrt{LC}=200\\ \\text{rad s}^{-1}$; $Q=\\omega_0L/R=(200)(0.5)/10=10$.\n\nIndependent check: At resonance, Q = (1/R)√(L/C) = (1/10)√(0.5/(50×10⁻⁶)) = 10.",
+ "solution": "For a series LCR circuit, $Q=\\frac{\\omega_0L}{R}$, where $\\omega_0=\\frac{1}{\\sqrt{LC}}$.\n$$\\omega_0=\\frac{1}{\\sqrt{(0.5)(50\\times10^{-6})}}=200\\ \\text{rad s}^{-1},\\qquad Q=\\frac{(200)(0.5)}{10}=10.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A series LCR circuit has $R=10\\ \\text{\\Omega}$, $L=0.5\\ \\text{H}$ and $C=50\\ \\mu\\text{F}$. Its quality factor at resonance is:",
+  "options": [
+   "$5$",
+   "$10$",
+   "$20$",
+   "$100$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\omega_0=1/\\sqrt{LC}=200\\ \\text{rad s}^{-1}$; $Q=\\omega_0L/R=(200)(0.5)/10=10$.",
+  "distractor_notes": "A: introduces an erroneous factor of $1/2$; C: uses twice the correct angular frequency; D: omits division by the resistance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

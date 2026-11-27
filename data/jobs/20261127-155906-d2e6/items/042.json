@@ -1,0 +1,70 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Stoichiometry with gas volumes",
+  "archetype": "stoichiometric bookkeeping numerical",
+  "brief": "Combustion/limiting-reagent problem mixing gas volumes and mole counts; find leftover reactant or product moles, difficulty via impure sample or back-titration style bookkeeping.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:57",
+   "2026s1:35",
+   "2026s2:55"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A $10.0$ g impure sample containing $80.0\\%$ $\\text{CaC}_2$ reacts with excess water. The acetylene formed is ignited with $5.60$ L of $\\text{O}_2$ at STP. How many moles of $\\text{C}_2\\text{H}_2$ remain after cooling? Take $M(\\text{CaC}_2)=64$ g mol$^{-1}$ and the molar volume at STP as $22.4$ L mol$^{-1}$. Impurities are inert.",
+ "options": [
+  "$0.000$ mol",
+  "$0.0250$ mol",
+  "$0.0750$ mol",
+  "$0.125$ mol"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "CaC₂ = 8.00/64 = 0.125 mol, so 0.125 mol C₂H₂ forms. O₂ = 5.60/22.4 = 0.250 mol; at 2.5 mol O₂ per mol C₂H₂, this burns 0.100 mol C₂H₂. Remaining = 0.0250 mol.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n_{\\text{CaC}_2}=\\dfrac{10.0(0.800)}{64}=0.125$ mol; $n_{\\text{C}_2\\text{H}_2}=0.125$ mol\n$n_{\\text{O}_2}=\\dfrac{5.60}{22.4}=0.250$ mol\n$\\text{C}_2\\text{H}_2+\\dfrac{5}{2}\\text{O}_2\\to2\\text{CO}_2+\\text{H}_2\\text{O}$\n$n_{\\text{C}_2\\text{H}_2,\\,reacted}=\\dfrac{0.250}{5/2}=0.100$ mol\n$n_{\\text{left}}=0.125-0.100=0.0250$ mol\n\nIndependent check: CaC₂ = 8.00/64 = 0.125 mol, so 0.125 mol C₂H₂ forms. O₂ = 5.60/22.4 = 0.250 mol; at 2.5 mol O₂ per mol C₂H₂, this burns 0.100 mol C₂H₂. Remaining = 0.0250 mol.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A $10.0$ g impure sample containing $80.0\\%$ $\\text{CaC}_2$ reacts with excess water. The acetylene formed is ignited with $5.60$ L of $\\text{O}_2$ at STP. How many moles of $\\text{C}_2\\text{H}_2$ remain after cooling? Take $M(\\text{CaC}_2)=64$ g mol$^{-1}$ and the molar volume at STP as $22.4$ L mol$^{-1}$. Impurities are inert.",
+  "options": [
+   "$0.000$ mol",
+   "$0.0250$ mol",
+   "$0.0750$ mol",
+   "$0.125$ mol"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$n_{\\text{CaC}_2}=\\dfrac{10.0(0.800)}{64}=0.125$ mol; $n_{\\text{C}_2\\text{H}_2}=0.125$ mol\n$n_{\\text{O}_2}=\\dfrac{5.60}{22.4}=0.250$ mol\n$\\text{C}_2\\text{H}_2+\\dfrac{5}{2}\\text{O}_2\\to2\\text{CO}_2+\\text{H}_2\\text{O}$\n$n_{\\text{C}_2\\text{H}_2,\\,reacted}=\\dfrac{0.250}{5/2}=0.100$ mol\n$n_{\\text{left}}=0.125-0.100=0.0250$ mol",
+  "distractor_notes": "A: Assumes oxygen is sufficient to burn all the acetylene; C: Uses an incorrect oxygen-to-acetylene coefficient; D: Reports the initial acetylene amount without accounting for combustion."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

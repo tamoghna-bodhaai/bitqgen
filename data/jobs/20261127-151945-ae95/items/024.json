@@ -1,0 +1,71 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Rolling kinematics",
+  "archetype": "geometry of rolling",
+  "brief": "For a body rolling without slipping, relate the velocity of a point on the rim (e.g., topmost or contact point) to the centre-of-mass velocity.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:20",
+   "2025s1:3",
+   "2025s2:18"
+  ],
+  "origin": "variant",
+  "bank_ref": "geeb5e6c3e339"
+ },
+ "status": "ok",
+ "stem": "A wheel rolls to the right without slipping. At an instant, the radius from its centre to a marked point on the rim is inclined at $60^\\circ$ above the horizontal in the direction of motion. What is the direction of the point's velocity relative to the ground?",
+ "options": [
+  "$30^\\circ$ below the horizontal",
+  "$15^\\circ$ below the horizontal",
+  "$45^\\circ$ below the horizontal",
+  "$75^\\circ$ below the horizontal"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For rolling right, the point’s rotational velocity has magnitude v and points 30° below horizontal. Adding the centre’s velocity v rightward gives tan θ = (v/2)/(v + √3v/2) = 2 − √3, hence θ = 15° below horizontal.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the centre's velocity be $v\\hat{i}$ and $\\omega=v/R$ clockwise.\nFor $\\vec{r}=R(\\cos60^\\circ\\hat{i}+\\sin60^\\circ\\hat{j})$, the rotational velocity is $\\vec{\\omega}\\times\\vec{r}=v(\\sin60^\\circ\\hat{i}-\\cos60^\\circ\\hat{j})$.\nThus $\\vec{v}_P=v(1+\\sin60^\\circ)\\hat{i}-v\\cos60^\\circ\\hat{j}$.\n$\\tan\\beta=\\dfrac{\\cos60^\\circ}{1+\\sin60^\\circ}=2-\\sqrt{3}=\\tan15^\\circ$.\nSo the velocity is directed $15^\\circ$ below the horizontal.\n\nIndependent check: For rolling right, the point’s rotational velocity has magnitude v and points 30° below horizontal. Adding the centre’s velocity v rightward gives tan θ = (v/2)/(v + √3v/2) = 2 − √3, hence θ = 15° below horizontal.",
+ "solution": "For rolling without slipping, the centre’s speed is $v$ and the rim’s rotational speed is also $v$. At the marked point, the rotational velocity has components $v\\sin60^\\circ$ rightward and $v\\cos60^\\circ$ downward, so\n$$\\tan\\beta=\\frac{v\\cos60^\\circ}{v(1+\\sin60^\\circ)}=2-\\sqrt3=\\tan15^\\circ.\n$$Thus the point moves $15^\\circ$ below the horizontal.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wheel rolls to the right without slipping. At an instant, the radius from its centre to a marked point on the rim is inclined at $60^\\circ$ above the horizontal in the direction of motion. What is the direction of the point's velocity relative to the ground?",
+  "options": [
+   "$15^\\circ$ below the horizontal",
+   "$30^\\circ$ below the horizontal",
+   "$45^\\circ$ below the horizontal",
+   "$75^\\circ$ below the horizontal"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let the centre's velocity be $v\\hat{i}$ and $\\omega=v/R$ clockwise.\nFor $\\vec{r}=R(\\cos60^\\circ\\hat{i}+\\sin60^\\circ\\hat{j})$, the rotational velocity is $\\vec{\\omega}\\times\\vec{r}=v(\\sin60^\\circ\\hat{i}-\\cos60^\\circ\\hat{j})$.\nThus $\\vec{v}_P=v(1+\\sin60^\\circ)\\hat{i}-v\\cos60^\\circ\\hat{j}$.\n$\\tan\\beta=\\dfrac{\\cos60^\\circ}{1+\\sin60^\\circ}=2-\\sqrt{3}=\\tan15^\\circ$.\nSo the velocity is directed $15^\\circ$ below the horizontal.",
+  "distractor_notes": "B: Uses the rotational velocity direction alone. C: Treats the horizontal and vertical velocity components as equal. D: Subtracts the rotational horizontal component from the centre's velocity."
+ },
+ "variant_of": "geeb5e6c3e339",
+ "author_model": "openai/gpt-6-luna-pro"
+}

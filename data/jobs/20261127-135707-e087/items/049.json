@@ -1,0 +1,68 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Spectrochemical series / CFT high-low spin",
+  "archetype": "compare complexes",
+  "brief": "Give two octahedral complexes of the same metal ion but different ligands from opposite ends of the spectrochemical series; ask which is high-spin and compare unpaired electrons.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:42",
+   "2021:67",
+   "2024s2:50"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the octahedral complexes $[\\text{FeF}_6]^{4-}$ and $[\\text{Fe(CN)}_6]^{4-}$, which statement correctly compares their spin states and numbers of unpaired electrons?",
+ "options": [
+  "$[\\text{FeF}_6]^{4-}$ is low-spin with 0 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is high-spin with 4.",
+  "$[\\text{FeF}_6]^{4-}$ is high-spin with 2 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is low-spin with 0.",
+  "$[\\text{FeF}_6]^{4-}$ is high-spin with 4 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is low-spin with 0.",
+  "Both complexes are high-spin, with 4 unpaired electrons in each."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In both complexes, Fe is +2 (d⁶). F⁻ gives high-spin t₂g⁴e_g² with 4 unpaired electrons; CN⁻ gives low-spin t₂g⁶ with 0.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Fe}^{2+}$ is $d^6$ in both complexes.\n$\\text{F}^-$ is weak-field: high-spin $t_{2g}^4e_g^2$, 4 unpaired electrons.\n$\\text{CN}^-$ is strong-field: low-spin $t_{2g}^6$, 0 unpaired electrons.\n\nIndependent check: In both complexes, Fe is +2 (d⁶). F⁻ gives high-spin t₂g⁴e_g² with 4 unpaired electrons; CN⁻ gives low-spin t₂g⁶ with 0.",
+ "solution": "In both complexes, Fe is in the $+2$ oxidation state, so it has a $d^6$ configuration. $F^-$ is weak-field, giving high-spin $t_{2g}^4e_g^2$ with 4 unpaired electrons; $CN^-$ is strong-field, giving low-spin $t_{2g}^6$ with 0 unpaired electrons.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the octahedral complexes $[\\text{FeF}_6]^{4-}$ and $[\\text{Fe(CN)}_6]^{4-}$, which statement correctly compares their spin states and numbers of unpaired electrons?",
+  "options": [
+   "$[\\text{FeF}_6]^{4-}$ is low-spin with 0 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is high-spin with 4.",
+   "$[\\text{FeF}_6]^{4-}$ is high-spin with 2 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is low-spin with 0.",
+   "$[\\text{FeF}_6]^{4-}$ is high-spin with 4 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is low-spin with 0.",
+   "Both complexes are high-spin, with 4 unpaired electrons in each."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{Fe}^{2+}$ is $d^6$ in both complexes.\n$\\text{F}^-$ is weak-field: high-spin $t_{2g}^4e_g^2$, 4 unpaired electrons.\n$\\text{CN}^-$ is strong-field: low-spin $t_{2g}^6$, 0 unpaired electrons.",
+  "distractor_notes": "A: reverses the high-spin and low-spin assignments.\nB: assigns only 2 unpaired electrons to the high-spin $d^6$ ion.\nD: treats the strong-field cyanide complex as high-spin."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Which of the following reaction sequences is most suitable for the preparation of *tert*-butyl ethyl ether from 2-methylpropan-2-ol?",
+ "stem": "Which sequence converts propene into methyl propan-2-yl ether by Williamson synthesis?",
  "options": [
-  "(i) $\\text{Na}$, (ii) $\\text{CH}_3\\text{CH}_2\\text{Br}$",
-  "(i) $\\text{HBr}$, (ii) $\\text{CH}_3\\text{CH}_2\\text{ONa}$",
-  "(i) $\\text{NaOH}$, (ii) $\\text{CH}_3\\text{CH}_2\\text{Br}$",
-  "(i) $\\text{CH}_3\\text{CH}_2\\text{OH}$, (ii) $\\text{conc.}\\ \\text{H}_2\\text{SO}_4\\ (140\\ ^\\circ\\text{C})$"
+  "(i) H₂O/H⁺; (ii) Na, then CH₃I",
+  "(i) BH₃·THF, then H₂O₂/OH⁻; (ii) Na, then CH₃I",
+  "(i) H₂O/H⁺; (ii) Na, then C₂H₅Br",
+  "(i) BH₃·THF, then H₂O₂/OH⁻; (ii) Na, then C₂H₅Br"
  ],
  "answer": "A",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Williamson synthesis requires the bulky alkoxide + primary halide. (A) Na converts t-BuOH to t-BuO⁻Na⁺, which does SN2 on primary CH3CH2Br giving t-Bu-O-Et. (B) gives t-BuBr, and EtO⁻ (strong base) causes E2 with the 3° halide → isobutene. (C) NaOH cannot appreciably deprotonate t-BuOH (pKa ~18 > water 15.7). (D) conc. H2SO4/140 °C with a 3° alcohol gives dehydration and ether mixtures, not the target selectively.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Acid-catalyzed hydration of propene gives propan-2-ol. Treating it with Na forms propan-2-oxide, which reacts with CH₃I to give methyl propan-2-yl ether by Williamson synthesis.",
    "answer": "A",
-   "confidence": 0.98,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Williamson ether synthesis operates via an $\\text{S}_\\text{N}2$ mechanism where an alkoxide ion attacks an alkyl halide. To prepare an unsymmetrical ether containing a tertiary alkyl group, the tertiary group must be supplied by the alkoxide, and the primary alkyl group must come from the alkyl halide:\n\n1. Formation of alkoxide:\nAliphatic alcohols are weaker acids than water and cannot be deprotonated by $\\text{NaOH}$. An active alkali metal like $\\text{Na}$ is used:\n$$2(\\text{CH}_3)_3\\text{C-OH} + 2\\text{Na} \\rightarrow 2(\\text{CH}_3)_3\\text{C-O}^-\\text{Na}^+ + \\text{H}_2\\uparrow$$\n\n2. $\\text{S}_\\text{N}2$ ether synthesis:\n$$(\\text{CH}_3)_3\\text{C-O}^-\\text{Na}^+ + \\text{CH}_3\\text{CH}_2\\text{Br} \\rightarrow (\\text{CH}_3)_3\\text{C-O-CH}_2\\text{CH}_3 + \\text{NaBr}$$\nBecause ethyl bromide is a primary halide, nucleophilic substitution dominates over elimination, giving *tert*-butyl ethyl ether in good yield.\n\nIndependent check: Williamson synthesis requires the bulky alkoxide + primary halide. (A) Na converts t-BuOH to t-BuO⁻Na⁺, which does SN2 on primary CH3CH2Br giving t-Bu-O-Et. (B) gives t-BuBr, and EtO⁻ (strong base) causes E2 with the 3° halide → isobutene. (C) NaOH cannot appreciably deprotonate t-BuOH (pKa ~18 > water 15.7). (D) conc. H2SO4/140 °C with a 3° alcohol gives dehydration and ether mixtures, not the target selectively.",
+ "working": "$$\\text{CH}_3\\text{CH=CH}_2 \\xrightarrow{\\text{H}_2\\text{O}/\\text{H}^+} \\text{CH}_3\\text{CH(OH)CH}_3$$\n$$\\text{CH}_3\\text{CH(OH)CH}_3 + 2\\text{Na} \\rightarrow 2\\text{CH}_3\\text{CH(ONa)CH}_3 + \\text{H}_2$$\n$$\\text{CH}_3\\text{CH(ONa)CH}_3 + \\text{CH}_3\\text{I} \\rightarrow \\text{CH}_3\\text{CH(OCH}_3\\text{)CH}_3 + \\text{NaI}$$\n\nIndependent check: Acid-catalyzed hydration of propene gives propan-2-ol. Treating it with Na forms propan-2-oxide, which reacts with CH₃I to give methyl propan-2-yl ether by Williamson synthesis.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Which of the following reaction sequences is most suitable for the preparation of *tert*-butyl ethyl ether from 2-methylpropan-2-ol?",
+  "stem": "Which sequence converts propene into methyl propan-2-yl ether by Williamson synthesis?",
   "options": [
-   "(i) $\\text{Na}$, (ii) $\\text{CH}_3\\text{CH}_2\\text{Br}$",
-   "(i) $\\text{HBr}$, (ii) $\\text{CH}_3\\text{CH}_2\\text{ONa}$",
-   "(i) $\\text{NaOH}$, (ii) $\\text{CH}_3\\text{CH}_2\\text{Br}$",
-   "(i) $\\text{CH}_3\\text{CH}_2\\text{OH}$, (ii) $\\text{conc.}\\ \\text{H}_2\\text{SO}_4\\ (140\\ ^\\circ\\text{C})$"
+   "(i) H₂O/H⁺; (ii) Na, then CH₃I",
+   "(i) BH₃·THF, then H₂O₂/OH⁻; (ii) Na, then CH₃I",
+   "(i) H₂O/H⁺; (ii) Na, then C₂H₅Br",
+   "(i) BH₃·THF, then H₂O₂/OH⁻; (ii) Na, then C₂H₅Br"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "Williamson ether synthesis operates via an $\\text{S}_\\text{N}2$ mechanism where an alkoxide ion attacks an alkyl halide. To prepare an unsymmetrical ether containing a tertiary alkyl group, the tertiary group must be supplied by the alkoxide, and the primary alkyl group must come from the alkyl halide:\n\n1. Formation of alkoxide:\nAliphatic alcohols are weaker acids than water and cannot be deprotonated by $\\text{NaOH}$. An active alkali metal like $\\text{Na}$ is used:\n$$2(\\text{CH}_3)_3\\text{C-OH} + 2\\text{Na} \\rightarrow 2(\\text{CH}_3)_3\\text{C-O}^-\\text{Na}^+ + \\text{H}_2\\uparrow$$\n\n2. $\\text{S}_\\text{N}2$ ether synthesis:\n$$(\\text{CH}_3)_3\\text{C-O}^-\\text{Na}^+ + \\text{CH}_3\\text{CH}_2\\text{Br} \\rightarrow (\\text{CH}_3)_3\\text{C-O-CH}_2\\text{CH}_3 + \\text{NaBr}$$\nBecause ethyl bromide is a primary halide, nucleophilic substitution dominates over elimination, giving *tert*-butyl ethyl ether in good yield.",
-  "distractor_notes": "Option B encodes using a tertiary alkyl halide with an alkoxide base: $(\\text{CH}_3)_3\\text{C-Br} + \\text{CH}_3\\text{CH}_2\\text{ONa}$ undergoes exclusively E2 elimination to yield 2-methylpropene rather than ether.\nOption C encodes the misconception that aqueous $\\text{NaOH}$ can deprotonate aliphatic alcohols; water is more acidic than *tert*-butanol, so alkoxide formation is negligible and $\\text{OH}^-$ simply hydrolyzes the alkyl halide to ethanol.\nOption D encodes using acid-catalyzed bimolecular dehydration; tertiary alcohols rapidly undergo unimolecular dehydration to give 2-methylpropene, while any bimolecular condensation of ethanol gives diethyl ether.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$$\\text{CH}_3\\text{CH=CH}_2 \\xrightarrow{\\text{H}_2\\text{O}/\\text{H}^+} \\text{CH}_3\\text{CH(OH)CH}_3$$\n$$\\text{CH}_3\\text{CH(OH)CH}_3 + 2\\text{Na} \\rightarrow 2\\text{CH}_3\\text{CH(ONa)CH}_3 + \\text{H}_2$$\n$$\\text{CH}_3\\text{CH(ONa)CH}_3 + \\text{CH}_3\\text{I} \\rightarrow \\text{CH}_3\\text{CH(OCH}_3\\text{)CH}_3 + \\text{NaI}$$",
+  "distractor_notes": "B gives propan-1-ol by anti-Markovnikov hydration; C uses an ethyl halide, giving ethyl propan-2-yl ether; D gives propan-1-ol and then an ethyl ether."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

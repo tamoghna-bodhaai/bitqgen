@@ -1,0 +1,70 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Atwood machine",
+  "archetype": "free-body equations",
+  "brief": "Two blocks connected by a string over a pulley (or stacked with friction between them); draw free-body equations and solve the acceleration and tension.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:8",
+   "2025s2:4",
+   "2025s1:29"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two masses of $2\\ \\text{kg}$ and $6\\ \\text{kg}$ are connected by a light inextensible string over a frictionless pulley. Find the acceleration magnitude and string tension. Take $g=10\\ \\text{m s}^{-2}$.",
+ "options": [
+  "$5\\ \\text{m s}^{-2},\\ 90\\ \\text{N}$",
+  "$5\\ \\text{m s}^{-2},\\ 20\\ \\text{N}$",
+  "$10\\ \\text{m s}^{-2},\\ 30\\ \\text{N}$",
+  "$5\\ \\text{m s}^{-2},\\ 30\\ \\text{N}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an Atwood machine, a = ((6 - 2)/(6 + 2)) × 10 = 5 m s^-2. The tension is T = 2(10 + 5) = 30 N.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=\\dfrac{(6-2)g}{6+2}=5\\ \\text{m s}^{-2}$\n$T=2(g+a)=30\\ \\text{N}$\n\nIndependent check: For an Atwood machine, a = ((6 - 2)/(6 + 2)) × 10 = 5 m s^-2. The tension is T = 2(10 + 5) = 30 N.",
+ "solution": "For an Atwood machine, $a=\\dfrac{(m_2-m_1)g}{m_1+m_2}$.\n$$a=\\dfrac{(6-2)10}{6+2}=5\\ \\text{m s}^{-2}$$\nFor the $2\\ \\text{kg}$ mass, $T=m_1(g+a)=2(10+5)=30\\ \\text{N}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two masses of $2\\ \\text{kg}$ and $6\\ \\text{kg}$ are connected by a light inextensible string over a frictionless pulley. Find the acceleration magnitude and string tension. Take $g=10\\ \\text{m s}^{-2}$.",
+  "options": [
+   "$5\\ \\text{m s}^{-2},\\ 30\\ \\text{N}$",
+   "$5\\ \\text{m s}^{-2},\\ 20\\ \\text{N}$",
+   "$10\\ \\text{m s}^{-2},\\ 30\\ \\text{N}$",
+   "$5\\ \\text{m s}^{-2},\\ 90\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$a=\\dfrac{(6-2)g}{6+2}=5\\ \\text{m s}^{-2}$\n$T=2(g+a)=30\\ \\text{N}$",
+  "distractor_notes": "B: sets the tension equal to the lighter block's weight; C: divides the net force by only the lighter mass; D: uses $T=m_2(g+a)$ for the descending block."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

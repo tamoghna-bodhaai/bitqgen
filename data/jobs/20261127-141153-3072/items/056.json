@@ -1,0 +1,68 @@
+{
+ "qno": 56,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 56,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "VSEPR theory",
+  "archetype": "structure identification",
+  "brief": "Identify shapes of simple species like ClF3 / SO2 / NH3 from VSEPR lone-pair counting; pick correct shape set from options.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:40",
+   "2025s2:47",
+   "2022:56"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which option gives the shapes of $\\text{ClF}_3$, $\\text{SO}_2$ and $\\text{NH}_3$, respectively?",
+ "options": [
+  "Trigonal planar, linear, bent",
+  "See-saw, bent, tetrahedral",
+  "T-shaped, bent, trigonal pyramidal",
+  "T-shaped, linear, trigonal planar"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "VSEPR: ClF₃ is T-shaped (AX₃E₂), SO₂ is bent, and NH₃ is trigonal pyramidal.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{ClF}_3$: $AX_3E_2$, T-shaped<br>$\\text{SO}_2$: $AX_2E$, bent<br>$\\text{NH}_3$: $AX_3E$, trigonal pyramidal\n\nIndependent check: VSEPR: ClF₃ is T-shaped (AX₃E₂), SO₂ is bent, and NH₃ is trigonal pyramidal.",
+ "solution": "By VSEPR theory, $\\text{ClF}_3$ is $AX_3E_2$ and T-shaped, $\\text{SO}_2$ is $AX_2E$ and bent, while $\\text{NH}_3$ is $AX_3E$ and trigonal pyramidal.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which option gives the shapes of $\\text{ClF}_3$, $\\text{SO}_2$ and $\\text{NH}_3$, respectively?",
+  "options": [
+   "Trigonal planar, linear, bent",
+   "T-shaped, bent, trigonal pyramidal",
+   "See-saw, bent, tetrahedral",
+   "T-shaped, linear, trigonal planar"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{ClF}_3$: $AX_3E_2$, T-shaped<br>$\\text{SO}_2$: $AX_2E$, bent<br>$\\text{NH}_3$: $AX_3E$, trigonal pyramidal",
+  "distractor_notes": "A: Assigns shapes without accounting for lone pairs; C: Confuses molecular shape with electron-pair geometry; D: Omits the lone pairs on sulfur and nitrogen."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

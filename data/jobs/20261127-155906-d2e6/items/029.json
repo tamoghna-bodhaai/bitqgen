@@ -1,0 +1,70 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Neutron separation energy",
+  "archetype": "mass-defect computation",
+  "brief": "Given atomic masses of a nucleus X(A,Z) and X(A−1,Z) plus a neutron, compute the neutron separation energy from the mass defect — careful with electron masses when using atomic masses.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:18",
+   "2025s2:25",
+   "2022:29"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The atomic masses of $^{49}_{26}\\text{X}$ and $^{48}_{26}\\text{X}$ are $48.954918$ u and $47.952253$ u, respectively. Given $m_n=1.008665$ u and $1\\ \\text{u}c^2=931.5$ MeV, find the neutron separation energy. Take $m_e=0.000549$ u.",
+ "options": [
+  "$0.005589$ MeV",
+  "$5.078$ MeV",
+  "$5.589$ MeV",
+  "$11.178$ MeV"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Neutron separation energy: \\(S_n=[M(^{48}X)+m_n-M(^{49}X)]c^2=(0.006000\\,\\mathrm u)(931.5\\,\\mathrm{MeV/u})=5.589\\,\\mathrm{MeV}\\). Atomic-electron masses cancel.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$S_n=[M(^{48}_{26}\\text{X})+m_n-M(^{49}_{26}\\text{X})]c^2$; the equal electron counts in the atomic masses cancel. $S_n=[47.952253+1.008665-48.954918](931.5)=5.589\\ \\text{MeV}$.\n\nIndependent check: Neutron separation energy: \\(S_n=[M(^{48}X)+m_n-M(^{49}X)]c^2=(0.006000\\,\\mathrm u)(931.5\\,\\mathrm{MeV/u})=5.589\\,\\mathrm{MeV}\\). Atomic-electron masses cancel.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "The atomic masses of $^{49}_{26}\\text{X}$ and $^{48}_{26}\\text{X}$ are $48.954918$ u and $47.952253$ u, respectively. Given $m_n=1.008665$ u and $1\\ \\text{u}c^2=931.5$ MeV, find the neutron separation energy. Take $m_e=0.000549$ u.",
+  "options": [
+   "$0.005589$ MeV",
+   "$5.078$ MeV",
+   "$5.589$ MeV",
+   "$11.178$ MeV"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$S_n=[M(^{48}_{26}\\text{X})+m_n-M(^{49}_{26}\\text{X})]c^2$; the equal electron counts in the atomic masses cancel. $S_n=[47.952253+1.008665-48.954918](931.5)=5.589\\ \\text{MeV}$.",
+  "distractor_notes": "A: does not convert the mass defect from u to MeV.\\nB: incorrectly adjusts for one electron mass, although both atoms have the same $Z$.\\nD: doubles the mass defect."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,78 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Work in cyclic process (P–V diagram)",
+  "archetype": "area of P–V cycle",
+  "brief": "PV diagram of a closed cycle (rectangle or triangle) given; ask for net work done over the cycle by computing the enclosed area; figure shows the cycle.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:16",
+   "2025s1:5",
+   "2026s1:5"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the closed $P$–$V$ cycle shown in the figure, find the net work done by the gas in one cycle.",
+ "options": [
+  "$-600$ J",
+  "$600$ J",
+  "$300$ J",
+  "$1200$ J"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q028_stem_v0.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The cycle is clockwise, so the net work is the enclosed area: $(3\\times10^{-3})(3\\times10^5-1\\times10^5)=600\\,\\text{J}$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$W_{\\text{net}}=\\text{area enclosed}=\\Delta P\\,\\Delta V$\n$=(3-1)\\times10^5(5-2)\\times10^{-3}=600\\ \\text{J}$\n$\\text{Clockwise cycle}\\Rightarrow W_{\\text{net}}>0$\n\nIndependent check: The cycle is clockwise, so the net work is the enclosed area: $(3\\times10^{-3})(3\\times10^5-1\\times10^5)=600\\,\\text{J}$.",
+ "solution": "For a clockwise cycle, the net work done by the gas equals the positive area enclosed in the $P$–$V$ diagram.\n$$W_{\\text{net}}=(3-1)\\times10^5(5-2)\\times10^{-3}=600\\ \\text{J}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the closed $P$–$V$ cycle shown in the figure, find the net work done by the gas in one cycle.",
+  "options": [
+   "$-600$ J",
+   "$300$ J",
+   "$600$ J",
+   "$1200$ J"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a pressure–volume graph with vertical axis $P$ (Pa) and horizontal axis $V$ (m$^3$). Draw a rectangle with corners at $(2\\times10^{-3}\\ \\text{m}^3,1\\times10^5\\ \\text{Pa})$, $(5\\times10^{-3}\\ \\text{m}^3,1\\times10^5\\ \\text{Pa})$, $(5\\times10^{-3}\\ \\text{m}^3,3\\times10^5\\ \\text{Pa})$, and $(2\\times10^{-3}\\ \\text{m}^3,3\\times10^5\\ \\text{Pa})$. Add arrows along the path from the lower-left corner upward to the upper-left corner, rightward to the upper-right corner, downward to the lower-right corner, and leftward back to the lower-left corner. Label the four corners A, B, C, D in that order along the directed path.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$W_{\\text{net}}=\\text{area enclosed}=\\Delta P\\,\\Delta V$\n$=(3-1)\\times10^5(5-2)\\times10^{-3}=600\\ \\text{J}$\n$\\text{Clockwise cycle}\\Rightarrow W_{\\text{net}}>0$",
+  "distractor_notes": "A: uses the wrong sign for a clockwise cycle; B: halves the rectangular area; D: doubles the enclosed area."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

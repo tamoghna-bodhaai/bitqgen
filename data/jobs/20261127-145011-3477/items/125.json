@@ -1,0 +1,70 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Set operations and cardinality",
+  "archetype": "standard identity",
+  "brief": "Set operations: given cardinalities of A, B and their intersection/union, find cardinality of a combination using Venn-type identities",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:112",
+   "2023s2:112",
+   "2025s1:128"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If $|A|=26$, $|B|=21$ and $|A\\cup B|=35$, find $|(A\\cup B)\\setminus(A\\cap B)|$.",
+ "options": [
+  "$23$",
+  "$12$",
+  "$35$",
+  "$47$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "|A∩B| = 26 + 21 − 35 = 12. Thus |(A∪B)\\(A∩B)| = 35 − 12 = 23.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|A\\cap B|=26+21-35=12$. Thus $|(A\\cup B)\\setminus(A\\cap B)|=35-12=23$.\n\nIndependent check: |A∩B| = 26 + 21 − 35 = 12. Thus |(A∪B)\\(A∩B)| = 35 − 12 = 23.",
+ "solution": "By inclusion-exclusion, $|A\\cap B|=|A|+|B|-|A\\cup B|=26+21-35=12$. Hence\n$$|(A\\cup B)\\setminus(A\\cap B)|=35-12=23.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $|A|=26$, $|B|=21$ and $|A\\cup B|=35$, find $|(A\\cup B)\\setminus(A\\cap B)|$.",
+  "options": [
+   "$12$",
+   "$23$",
+   "$35$",
+   "$47$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$|A\\cap B|=26+21-35=12$. Thus $|(A\\cup B)\\setminus(A\\cap B)|=35-12=23$.",
+  "distractor_notes": "A: gives the intersection cardinality only. C: gives the union cardinality without removing the intersection. D: adds $|A|$ and $|B|$ without accounting for overlap."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

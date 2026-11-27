@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "A thermometer immersed in a water bath records a temperature of $45^\\circ\\text{C}$. What is the corresponding reading on the Fahrenheit scale?",
+ "stem": "A thermometer reads $303$ K. What is the corresponding temperature on the Celsius scale? Take the ice point as $273$ K.",
  "options": [
-  "$49^\\circ\\text{F}$",
-  "$57^\\circ\\text{F}$",
-  "$81^\\circ\\text{F}$",
-  "$113^\\circ\\text{F}$"
+  "$-30^\\circ\\text{C}$",
+  "$30^\\circ\\text{C}$",
+  "$303^\\circ\\text{C}$",
+  "$576^\\circ\\text{C}$"
  ],
- "answer": "D",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "F = (9/5)C + 32 = (9/5)(45) + 32 = 81 + 32 = 113°F.",
-   "answer": "D",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Temperature in °C = 303 − 273 = 30°C.",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The relationship between the Celsius scale ($T_C$) and the Fahrenheit scale ($T_F$) is given by:\n$$T_F = \\dfrac{9}{5}T_C + 32$$\n\nSubstitute $T_C = 45^\\circ\\text{C}$:\n$$T_F = \\left(\\dfrac{9}{5} \\times 45\\right) + 32 = 81 + 32 = 113^\\circ\\text{F}$$\n\nIndependent check: F = (9/5)C + 32 = (9/5)(45) + 32 = 81 + 32 = 113°F.",
+ "working": "$T_C = T_K - 273 = 303 - 273 = 30^\\circ\\text{C}$\n\nIndependent check: Temperature in °C = 303 − 273 = 30°C.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "A thermometer immersed in a water bath records a temperature of $45^\\circ\\text{C}$. What is the corresponding reading on the Fahrenheit scale?",
+  "stem": "A thermometer reads $303$ K. What is the corresponding temperature on the Celsius scale? Take the ice point as $273$ K.",
   "options": [
-   "$49^\\circ\\text{F}$",
-   "$57^\\circ\\text{F}$",
-   "$81^\\circ\\text{F}$",
-   "$113^\\circ\\text{F}$"
+   "$-30^\\circ\\text{C}$",
+   "$30^\\circ\\text{C}$",
+   "$303^\\circ\\text{C}$",
+   "$576^\\circ\\text{C}$"
   ],
   "option_smiles": null,
-  "answer": "D",
-  "working": "The relationship between the Celsius scale ($T_C$) and the Fahrenheit scale ($T_F$) is given by:\n$$T_F = \\dfrac{9}{5}T_C + 32$$\n\nSubstitute $T_C = 45^\\circ\\text{C}$:\n$$T_F = \\left(\\dfrac{9}{5} \\times 45\\right) + 32 = 81 + 32 = 113^\\circ\\text{F}$$",
-  "distractor_notes": "$49^\\circ\\text{F}$: sign error on the constant offset, calculating $\\frac{9}{5}T_C - 32 = 81 - 32$.\n$57^\\circ\\text{F}$: inverted conversion ratio, using $\\frac{5}{9}T_C + 32 = 25 + 32$.\n$81^\\circ\\text{F}$: omitted the additive offset $+32$, calculating only $\\frac{9}{5}T_C = 81$.",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$T_C = T_K - 273 = 303 - 273 = 30^\\circ\\text{C}$",
+  "distractor_notes": "A: reverses the sign of the offset. C: treats Kelvin and Celsius readings as identical. D: adds $273$ instead of subtracting it."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -1,0 +1,70 @@
+{
+ "qno": 147,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 147,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Direction cosines",
+  "archetype": "formula",
+  "brief": "A line makes angles α, β, γ with axes; given two angles/relations, find the third angle or verify l² + m² + n² = 1 application.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:117",
+   "2023s2:123",
+   "2023s2:101"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A line makes angles $\\alpha$, $\\beta$ and $\\gamma$ with the positive coordinate axes. If $\\alpha=60^\\circ$, $\\beta=45^\\circ$ and $\\gamma$ is obtuse, find $\\gamma$.",
+ "options": [
+  "$60^\\circ$",
+  "$90^\\circ$",
+  "$120^\\circ$",
+  "$150^\\circ$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For direction angles, cos²α + cos²β + cos²γ = 1. Thus cos²γ = 1 − 1/4 − 1/2 = 1/4. Since γ is obtuse, cosγ = −1/2, so γ = 120°.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\ell=\\cos 60^\\circ=\\dfrac{1}{2},\\quad m=\\cos 45^\\circ=\\dfrac{1}{\\sqrt{2}}$; $n^2=1-\\dfrac{1}{4}-\\dfrac{1}{2}=\\dfrac{1}{4}$. Since $\\gamma$ is obtuse, $n=-\\dfrac{1}{2}$, so $\\gamma=120^\\circ$.\n\nIndependent check: For direction angles, cos²α + cos²β + cos²γ = 1. Thus cos²γ = 1 − 1/4 − 1/2 = 1/4. Since γ is obtuse, cosγ = −1/2, so γ = 120°.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A line makes angles $\\alpha$, $\\beta$ and $\\gamma$ with the positive coordinate axes. If $\\alpha=60^\\circ$, $\\beta=45^\\circ$ and $\\gamma$ is obtuse, find $\\gamma$.",
+  "options": [
+   "$60^\\circ$",
+   "$90^\\circ$",
+   "$120^\\circ$",
+   "$150^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\ell=\\cos 60^\\circ=\\dfrac{1}{2},\\quad m=\\cos 45^\\circ=\\dfrac{1}{\\sqrt{2}}$; $n^2=1-\\dfrac{1}{4}-\\dfrac{1}{2}=\\dfrac{1}{4}$. Since $\\gamma$ is obtuse, $n=-\\dfrac{1}{2}$, so $\\gamma=120^\\circ$.",
+  "distractor_notes": "A: chooses the acute angle with the same cosine magnitude; B: incorrect direction-cosine sum; D: incorrect value of the remaining cosine."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

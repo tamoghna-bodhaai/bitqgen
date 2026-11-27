@@ -1,0 +1,68 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Differentiability of piecewise function",
+  "archetype": "piecewise limits",
+  "brief": "Investigate continuity and differentiability of a piecewise function at a point; find parameter(s) and check derivative existence via one-sided limits.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:112",
+   "2024s1:100",
+   "2025s1:110"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $a>0$, define $$f(x)=\\begin{cases}\\dfrac{e^{ax}-1-ax}{x^2},&x<0,\\\\2+cx,&x\\ge0.\\end{cases}$$ If $f$ is differentiable at $0$, find $(a,c)$.",
+ "options": [
+  "$(2,-\\dfrac{4}{3})$",
+  "$(4,\\dfrac{8}{3})$",
+  "$(2,\\dfrac{2}{3})$",
+  "$(2,\\dfrac{4}{3})$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the Taylor expansion, the left-hand limit is \\(a^2/2\\), so continuity requires \\(a^2/2=2\\). Since \\(a>0\\), \\(a=2\\). The left derivative is \\(a^3/6\\); matching it to the right derivative \\(c\\) gives \\(c=4/3\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $x<0$, $\\dfrac{e^{ax}-1-ax}{x^2}=\\dfrac{a^2}{2}+\\dfrac{a^3}{6}x+O(x^2)$. Continuity gives $a^2/2=2$, so $a=2$. The left derivative is $a^3/6$; matching it with the right derivative $c$ gives $c=4/3$.\n\nIndependent check: Using the Taylor expansion, the left-hand limit is \\(a^2/2\\), so continuity requires \\(a^2/2=2\\). Since \\(a>0\\), \\(a=2\\). The left derivative is \\(a^3/6\\); matching it to the right derivative \\(c\\) gives \\(c=4/3\\).",
+ "solution": "Using $e^{ax}=1+ax+\\dfrac{a^2x^2}{2}+\\dfrac{a^3x^3}{6}+O(x^4)$,\n$$f(x)=\\dfrac{a^2}{2}+\\dfrac{a^3}{6}x+O(x^2)\\quad(x<0).$$\nContinuity at $0$ gives $a^2/2=2$, hence $a=2$ since $a>0$. Matching the left derivative $a^3/6$ with the right derivative $c$ gives $c=4/3$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For $a>0$, define $$f(x)=\\begin{cases}\\dfrac{e^{ax}-1-ax}{x^2},&x<0,\\\\2+cx,&x\\ge0.\\end{cases}$$ If $f$ is differentiable at $0$, find $(a,c)$.",
+  "options": [
+   "$(2,-\\dfrac{4}{3})$",
+   "$(2,\\dfrac{4}{3})$",
+   "$(2,\\dfrac{2}{3})$",
+   "$(4,\\dfrac{8}{3})$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "For $x<0$, $\\dfrac{e^{ax}-1-ax}{x^2}=\\dfrac{a^2}{2}+\\dfrac{a^3}{6}x+O(x^2)$. Continuity gives $a^2/2=2$, so $a=2$. The left derivative is $a^3/6$; matching it with the right derivative $c$ gives $c=4/3$.",
+  "distractor_notes": "A: sign error in the left derivative; C: coefficient error in the exponential expansion; D: error solving the continuity condition."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Photoelectric effect",
+  "archetype": "conceptual (distractor-heavy)",
+  "brief": "Which of the given physical quantities are unchanged for a photon/electron if accelerating potential is doubled, or identify correct photoelectric statements (threshold, saturation current, stopping potential) as true/false.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:14",
+   "2023s1:26",
+   "2025s2:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "A metal is illuminated with monochromatic light above its threshold frequency. If the light intensity is doubled while its frequency is kept fixed, which statements are correct? I. Threshold frequency is unchanged. II. Saturation current doubles. III. Stopping potential doubles.",
+ "options": [
+  "I only",
+  "II and III only",
+  "I, II and III",
+  "I and II only"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Threshold frequency depends on the metal, so it is unchanged. Doubling intensity doubles the saturation current. Stopping potential depends on frequency, which is fixed, so it does not double.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Frequency is unchanged, so the metal's threshold frequency is unchanged.\nSaturation current is proportional to light intensity, so it doubles.\n$K_{\\max}=eV_s=h\\nu-\\phi$ is unchanged; hence stopping potential does not double.\n\nIndependent check: Threshold frequency depends on the metal, so it is unchanged. Doubling intensity doubles the saturation current. Stopping potential depends on frequency, which is fixed, so it does not double.",
+ "solution": "Threshold frequency depends on the metal, so it remains unchanged. Saturation current is proportional to intensity; hence it doubles.\n$$eV_s=h\\nu-\\phi$$\nSince the frequency is fixed, the stopping potential remains unchanged. Thus, I and II are correct.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A metal is illuminated with monochromatic light above its threshold frequency. If the light intensity is doubled while its frequency is kept fixed, which statements are correct? I. Threshold frequency is unchanged. II. Saturation current doubles. III. Stopping potential doubles.",
+  "options": [
+   "I only",
+   "II and III only",
+   "I and II only",
+   "I, II and III"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Frequency is unchanged, so the metal's threshold frequency is unchanged.\nSaturation current is proportional to light intensity, so it doubles.\n$K_{\\max}=eV_s=h\\nu-\\phi$ is unchanged; hence stopping potential does not double.",
+  "distractor_notes": "A: overlooks the proportional increase of saturation current. B: assumes stopping potential doubles with intensity. D: incorrectly assumes stopping potential doubles."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

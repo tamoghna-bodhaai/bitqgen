@@ -1,0 +1,68 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Solid State",
+  "subtopic": "Point defects",
+  "archetype": "definition recall + identify-property",
+  "brief": "Match defect types (Schottky, Frenkel, metal-excess, metal-deficiency) with examples and effects on density/conductivity at moderate level.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:42",
+   "2025s1:41",
+   "2023s2:51"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which description correctly identifies these point-defect effects in ionic solids?",
+ "options": [
+  "Schottky pair in NaCl lowers density; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is n-type; metal-deficient FeO is p-type",
+  "Schottky pair in NaCl leaves density unchanged; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is n-type; metal-deficient FeO is p-type",
+  "Schottky pair in NaCl lowers density; Frenkel defect in AgCl lowers density; metal-excess ZnO is n-type; metal-deficient FeO is p-type",
+  "Schottky pair in NaCl lowers density; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is p-type; metal-deficient FeO is n-type"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Schottky defects remove ions and lower density; Frenkel defects preserve mass and density. Metal-excess ZnO is n-type, while metal-deficient FeO is p-type.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Schottky defects remove ions from lattice sites and lower density; Frenkel defects displace ions within the crystal, leaving density unchanged. Oxygen-deficient ZnO has electrons (n-type); cation-deficient FeO has holes (p-type).\n\nIndependent check: Schottky defects remove ions and lower density; Frenkel defects preserve mass and density. Metal-excess ZnO is n-type, while metal-deficient FeO is p-type.",
+ "solution": "Schottky defects remove ions from lattice sites, lowering density; Frenkel defects displace ions within the crystal, leaving density unchanged. Metal-excess ZnO is $n$-type, while metal-deficient FeO is $p$-type.\nThus, all four descriptions in (A) are correct.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which description correctly identifies these point-defect effects in ionic solids?",
+  "options": [
+   "Schottky pair in NaCl lowers density; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is n-type; metal-deficient FeO is p-type",
+   "Schottky pair in NaCl leaves density unchanged; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is n-type; metal-deficient FeO is p-type",
+   "Schottky pair in NaCl lowers density; Frenkel defect in AgCl lowers density; metal-excess ZnO is n-type; metal-deficient FeO is p-type",
+   "Schottky pair in NaCl lowers density; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is p-type; metal-deficient FeO is n-type"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Schottky defects remove ions from lattice sites and lower density; Frenkel defects displace ions within the crystal, leaving density unchanged. Oxygen-deficient ZnO has electrons (n-type); cation-deficient FeO has holes (p-type).",
+  "distractor_notes": "B assigns unchanged density to a Schottky defect; C incorrectly says a Frenkel defect lowers density; D reverses the conductivity types of metal-excess ZnO and metal-deficient FeO."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

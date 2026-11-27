@@ -1,0 +1,70 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "brief": "Find the image of a given point in a given oblique line using the foot-of-perpendicular/reflection formula and identify the resulting point.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:114",
+   "2025s1:115",
+   "2026s2:104"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The image of the point $(3,2)$ in the line $2x+3y+1=0$ is",
+ "options": [
+  "$(-1,-4)$",
+  "$(1,-1)$",
+  "$(7,8)$",
+  "$(-1,4)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the line 2x+3y+1=0, the signed distance factor is (2·3+3·2+1)/(2²+3²)=1. Reflecting (3,2) gives (3−2·2, 2−2·3)=(-1,-4).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$D=2(3)+3(2)+1=13$, and $2^2+3^2=13$\nFoot: $(3,2)-\\dfrac{13}{13}(2,3)=(1,-1)$\nImage: $2(1,-1)-(3,2)=(-1,-4)$\n\nIndependent check: For the line 2x+3y+1=0, the signed distance factor is (2·3+3·2+1)/(2²+3²)=1. Reflecting (3,2) gives (3−2·2, 2−2·3)=(-1,-4).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The image of the point $(3,2)$ in the line $2x+3y+1=0$ is",
+  "options": [
+   "$(-1,-4)$",
+   "$(1,-1)$",
+   "$(7,8)$",
+   "$(-1,4)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$D=2(3)+3(2)+1=13$, and $2^2+3^2=13$\nFoot: $(3,2)-\\dfrac{13}{13}(2,3)=(1,-1)$\nImage: $2(1,-1)-(3,2)=(-1,-4)$",
+  "distractor_notes": "B: gives the foot of the perpendicular instead of the reflected point. C: adds the normal displacement instead of subtracting it. D: makes a sign error in the reflected $y$-coordinate."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

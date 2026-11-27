@@ -1,0 +1,68 @@
+{
+ "qno": 78,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 78,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Kohlrausch's law",
+  "archetype": "linear combination",
+  "brief": "Given limiting molar conductivities of some strong electrolytes, construct Λ° of a weak electrolyte (e.g., CH3COOH or a sparingly soluble salt) by linear combination — moderate numerical.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:47",
+   "2024s2:52",
+   "2025s2:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "At $25^\\circ\\text{C}$, $\\Lambda_m^\\circ$ values for $\\text{HCl}$, $\\text{NaCl}$ and $\\text{CH}_3\\text{COONa}$ are $426$, $126$ and $91\\ \\text{S cm}^2\\text{ mol}^{-1}$, respectively. Find $\\Lambda_m^\\circ$ for $\\text{CH}_3\\text{COOH}$.",
+ "options": [
+  "$209\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$461\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$391\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+  "$517\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Kohlrausch’s law, Λ°(CH₃COOH) = Λ°(HCl) + Λ°(CH₃COONa) − Λ°(NaCl) = 426 + 91 − 126 = 391 S cm² mol⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})=\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})-\\Lambda_m^\\circ(\\text{NaCl})$ $=426+91-126=391\\ \\text{S cm}^2\\text{ mol}^{-1}$.\n\nIndependent check: By Kohlrausch’s law, Λ°(CH₃COOH) = Λ°(HCl) + Λ°(CH₃COONa) − Λ°(NaCl) = 426 + 91 − 126 = 391 S cm² mol⁻¹.",
+ "solution": "By Kohlrausch’s law,\n$$\\Lambda_m^\\circ(\\mathrm{CH_3COOH})=\\Lambda_m^\\circ(\\mathrm{HCl})+\\Lambda_m^\\circ(\\mathrm{CH_3COONa})-\\Lambda_m^\\circ(\\mathrm{NaCl})$$\n$=426+91-126=391\\ \\mathrm{S\\ cm^2\\ mol^{-1}}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At $25^\\circ\\text{C}$, $\\Lambda_m^\\circ$ values for $\\text{HCl}$, $\\text{NaCl}$ and $\\text{CH}_3\\text{COONa}$ are $426$, $126$ and $91\\ \\text{S cm}^2\\text{ mol}^{-1}$, respectively. Find $\\Lambda_m^\\circ$ for $\\text{CH}_3\\text{COOH}$.",
+  "options": [
+   "$209\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$391\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$461\\ \\text{S cm}^2\\text{ mol}^{-1}$",
+   "$517\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\Lambda_m^\\circ(\\text{CH}_3\\text{COOH})=\\Lambda_m^\\circ(\\text{HCl})+\\Lambda_m^\\circ(\\text{CH}_3\\text{COONa})-\\Lambda_m^\\circ(\\text{NaCl})$ $=426+91-126=391\\ \\text{S cm}^2\\text{ mol}^{-1}$.",
+  "distractor_notes": "A: Subtracts both salt conductivities; C: Adds $\\Lambda_m^\\circ(\\text{NaCl})$ instead of subtracting it; D: Omits the $\\text{NaCl}$ subtraction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

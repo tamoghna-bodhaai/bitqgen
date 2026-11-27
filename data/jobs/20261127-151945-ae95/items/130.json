@@ -1,0 +1,71 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Infinite geometric series",
+  "archetype": "sum to n terms",
+  "brief": "Given a GP with |r| < 1 and a simple relation between two partial sums (e.g. S∞ = 4·S2), find the first term or the common ratio, then a requested sum.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:112",
+   "2021:148",
+   "2024s2:106"
+  ],
+  "origin": "variant",
+  "bank_ref": "g1dbdb07b21d7"
+ },
+ "status": "ok",
+ "stem": "A convergent G.P. has a positive common ratio. Its sum to infinity is $\\frac{4}{3}$ times the sum of its first two terms, which is $12$. Find the sum of its first four terms.",
+ "options": [
+  "$13$",
+  "$15$",
+  "$14$",
+  "$16$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the first term be a and ratio r. Since S∞/S₂ = 1/(1−r²) = 4/3 and r > 0, r = 1/2. From a(1+r) = 12, a = 8. Thus S₄ = 8(1−r⁴)/(1−r) = 15.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$S_\\infty=\\dfrac{a}{1-r},\\quad S_2=a(1+r)$\n$\\dfrac{1}{1-r^2}=\\dfrac{4}{3}\\Rightarrow r^2=\\dfrac{1}{4}\\Rightarrow r=\\dfrac{1}{2}$\n$a\\left(1+\\dfrac{1}{2}\\right)=12\\Rightarrow a=8$\n$S_4=8\\left(1+\\dfrac{1}{2}+\\dfrac{1}{4}+\\dfrac{1}{8}\\right)=15$\n\nIndependent check: Let the first term be a and ratio r. Since S∞/S₂ = 1/(1−r²) = 4/3 and r > 0, r = 1/2. From a(1+r) = 12, a = 8. Thus S₄ = 8(1−r⁴)/(1−r) = 15.",
+ "solution": "Using $\\dfrac{S_\\infty}{S_2}=\\dfrac{1}{1-r^2}=\\dfrac{4}{3}$ and $r>0$, we get $r=\\dfrac{1}{2}$. Then $a(1+r)=12$ gives $a=8$.\n$$S_4=8\\left(1+\\frac{1}{2}+\\frac{1}{4}+\\frac{1}{8}\\right)=15$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A convergent G.P. has a positive common ratio. Its sum to infinity is $\\frac{4}{3}$ times the sum of its first two terms, which is $12$. Find the sum of its first four terms.",
+  "options": [
+   "$13$",
+   "$14$",
+   "$15$",
+   "$16$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$S_\\infty=\\dfrac{a}{1-r},\\quad S_2=a(1+r)$\n$\\dfrac{1}{1-r^2}=\\dfrac{4}{3}\\Rightarrow r^2=\\dfrac{1}{4}\\Rightarrow r=\\dfrac{1}{2}$\n$a\\left(1+\\dfrac{1}{2}\\right)=12\\Rightarrow a=8$\n$S_4=8\\left(1+\\dfrac{1}{2}+\\dfrac{1}{4}+\\dfrac{1}{8}\\right)=15$",
+  "distractor_notes": "A: omits part of the fourth term; B: arithmetic slip in summing the first four terms; D: gives the sum to infinity instead of the first four terms."
+ },
+ "variant_of": "g1dbdb07b21d7",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 86,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 86,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Para jumble with given first sentence",
+  "archetype": "para jumble (first sentence)",
+  "brief": "Four short jumbled sentences on a simple everyday topic with the opening sentence given; student orders the rest using pronoun and connector clues.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:64",
+   "2023s2:65",
+   "2022:70"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Mira's laptop suddenly stopped connecting to the home Wi-Fi. Arrange the following sentences in the correct order.\n\nP. She restarted the router, but the connection still failed.\nQ. The technician identified a loose cable and fixed it.\nR. To check whether the fault affected more than her laptop, she tested her phone too.\nS. It failed to connect as well, so she called the internet service provider.\n\nWhich is the correct sequence?",
+ "options": [
+  "P - R - S - Q",
+  "R - P - S - Q",
+  "P - S - R - Q",
+  "Q - P - R - S"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "P establishes that restarting the router did not fix the laptop’s connection. R then tests the phone, S reports that it also fails and prompts a call, and Q gives the technician’s fix.",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "P follows the opening by describing her first attempt to fix the connection. R then checks another device; “It” in S refers to her phone. Q follows the call, as the technician identifies and fixes the fault. The other options disrupt this sequence or place the repair before the call.\n\nIndependent check: P establishes that restarting the router did not fix the laptop’s connection. R then tests the phone, S reports that it also fails and prompts a call, and Q gives the technician’s fix.",
+ "solution": "P describes the first troubleshooting attempt. R then tests her phone, and “It” in S refers to the phone; Q follows the call with the technician’s repair.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Mira's laptop suddenly stopped connecting to the home Wi-Fi. Arrange the following sentences in the correct order.\n\nP. She restarted the router, but the connection still failed.\nQ. The technician identified a loose cable and fixed it.\nR. To check whether the fault affected more than her laptop, she tested her phone too.\nS. It failed to connect as well, so she called the internet service provider.\n\nWhich is the correct sequence?",
+  "options": [
+   "P - R - S - Q",
+   "R - P - S - Q",
+   "P - S - R - Q",
+   "Q - P - R - S"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "P follows the opening by describing her first attempt to fix the connection. R then checks another device; “It” in S refers to her phone. Q follows the call, as the technician identifies and fixes the fault. The other options disrupt this sequence or place the repair before the call.",
+  "distractor_notes": "B puts the broader device check before the router restart; C places the phone’s failed test before it is tested; D puts the technician’s repair before the service provider is called."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

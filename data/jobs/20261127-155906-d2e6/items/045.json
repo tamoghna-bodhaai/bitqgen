@@ -1,0 +1,70 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Hess's law",
+  "archetype": "Hess's law bond-energy calc",
+  "brief": "Multi-step reaction with given bond enthalpies and/or ΔH of formation; combine via Hess cycles including ΔH = ΔU + Δn_gRT correction to find an enthalpy.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:38",
+   "2021:51",
+   "2023s2:57"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "At $300$ K, $\\Delta U=-282.8\\ \\text{kJ mol}^{-1}$ for $\\text{CO}(g)+\\dfrac{1}{2}\\text{O}_2(g)\\to\\text{CO}_2(g)$. Given $\\Delta H_f^\\circ[\\text{CO}_2(g)]=-394\\ \\text{kJ mol}^{-1}$ and $R=8.0\\ \\text{J K}^{-1}\\text{mol}^{-1}$, find $\\Delta H_f^\\circ[\\text{CO}(g)]$.",
+ "options": [
+  "$-112.4\\ \\text{kJ mol}^{-1}$",
+  "$-111.2\\ \\text{kJ mol}^{-1}$",
+  "$-110\\ \\text{kJ mol}^{-1}$",
+  "$+110\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the reaction, Δn_g = 1 − 1 − ½ = −½. Thus ΔH = ΔU + Δn_gRT = −282.8 − 1.2 = −284.0 kJ mol⁻¹. Also, ΔH = −394 − ΔH_f°[CO], so ΔH_f°[CO] = −110 kJ mol⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta n_g=1-\\left(1+\\dfrac{1}{2}\\right)=-\\dfrac{1}{2}$\n$\\Delta H_{\\text{ox}}=\\Delta U+\\Delta n_gRT=-282.8-\\dfrac{(0.5)(8.0)(300)}{1000}=-284.0\\ \\text{kJ mol}^{-1}$\n$\\Delta H_f^\\circ(\\text{CO})+\\Delta H_{\\text{ox}}=\\Delta H_f^\\circ(\\text{CO}_2)$\n$\\Delta H_f^\\circ(\\text{CO})=-394-(-284.0)=-110\\ \\text{kJ mol}^{-1}$\n\nIndependent check: For the reaction, Δn_g = 1 − 1 − ½ = −½. Thus ΔH = ΔU + Δn_gRT = −282.8 − 1.2 = −284.0 kJ mol⁻¹. Also, ΔH = −394 − ΔH_f°[CO], so ΔH_f°[CO] = −110 kJ mol⁻¹.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "At $300$ K, $\\Delta U=-282.8\\ \\text{kJ mol}^{-1}$ for $\\text{CO}(g)+\\dfrac{1}{2}\\text{O}_2(g)\\to\\text{CO}_2(g)$. Given $\\Delta H_f^\\circ[\\text{CO}_2(g)]=-394\\ \\text{kJ mol}^{-1}$ and $R=8.0\\ \\text{J K}^{-1}\\text{mol}^{-1}$, find $\\Delta H_f^\\circ[\\text{CO}(g)]$.",
+  "options": [
+   "$-112.4\\ \\text{kJ mol}^{-1}$",
+   "$-111.2\\ \\text{kJ mol}^{-1}$",
+   "$-110\\ \\text{kJ mol}^{-1}$",
+   "$+110\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\Delta n_g=1-\\left(1+\\dfrac{1}{2}\\right)=-\\dfrac{1}{2}$\n$\\Delta H_{\\text{ox}}=\\Delta U+\\Delta n_gRT=-282.8-\\dfrac{(0.5)(8.0)(300)}{1000}=-284.0\\ \\text{kJ mol}^{-1}$\n$\\Delta H_f^\\circ(\\text{CO})+\\Delta H_{\\text{ox}}=\\Delta H_f^\\circ(\\text{CO}_2)$\n$\\Delta H_f^\\circ(\\text{CO})=-394-(-284.0)=-110\\ \\text{kJ mol}^{-1}$",
+  "distractor_notes": "A: Applies the gas correction with the wrong sign; B: Omits the $\\Delta n_gRT$ correction; D: Reverses the Hess-law subtraction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

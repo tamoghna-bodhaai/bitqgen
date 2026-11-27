@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "A mass attached to a spring executes simple harmonic motion with amplitude $A$. At what displacement from the mean position is its kinetic energy equal to its potential energy?",
+ "stem": "A $1$ kg block attached to a spring of force constant $200$ N m$^{-1}$ oscillates with a maximum speed of $2$ m s$^{-1}$. At what distance from equilibrium are its kinetic and spring potential energies equal?",
  "options": [
-  "$\\dfrac{A}{4}$",
-  "$\\dfrac{A}{2}$",
-  "$\\dfrac{A}{\\sqrt{2}}$",
-  "$\\dfrac{\\sqrt{3}A}{2}$"
+  "$0.05$ m",
+  "$0.10$ m",
+  "$0.14$ m",
+  "$0.20$ m"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Set KE = PE: (1/2)k(A² − x²) = (1/2)kx² ⇒ A² = 2x² ⇒ x = A/√2 ≈ 0.707A. Numerical check confirms KE = PE = kA²/4 at this x.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total energy is \\(\\tfrac12 mv_{\\max}^2=2\\,\\text{J}\\). At equal kinetic and spring potential energies, each is \\(1\\,\\text{J}\\), so \\(\\tfrac12 kx^2=1\\) gives \\(x=0.10\\,\\text{m}\\).",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The total mechanical energy in simple harmonic motion is given by $$E = \\dfrac{1}{2}kA^2$$ The potential energy at displacement $x$ is $$U = \\dfrac{1}{2}kx^2$$ When the kinetic energy equals the potential energy, each must equal half of the total energy: $$U = \\dfrac{1}{2}E$$ Substituting the expressions: $$\\dfrac{1}{2}kx^2 = \\dfrac{1}{2}\\left(\\dfrac{1}{2}kA^2\\right) = \\dfrac{1}{4}kA^2$$ $$x^2 = \\dfrac{A^2}{2} \\implies x = \\dfrac{A}{\\sqrt{2}}$$\n\nIndependent check: Set KE = PE: (1/2)k(A² − x²) = (1/2)kx² ⇒ A² = 2x² ⇒ x = A/√2 ≈ 0.707A. Numerical check confirms KE = PE = kA²/4 at this x.",
+ "working": "$E = \\dfrac{1}{2}mv_{\\max}^2 = 2$ J; when the energies are equal, $U = \\dfrac{E}{2} = 1$ J.\n$\\dfrac{1}{2}kx^2 = 1 \\implies x = \\sqrt{\\dfrac{2}{200}} = 0.10$ m\n\nIndependent check: Total energy is \\(\\tfrac12 mv_{\\max}^2=2\\,\\text{J}\\). At equal kinetic and spring potential energies, each is \\(1\\,\\text{J}\\), so \\(\\tfrac12 kx^2=1\\) gives \\(x=0.10\\,\\text{m}\\).",
  "solution": "",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "A mass attached to a spring executes simple harmonic motion with amplitude $A$. At what displacement from the mean position is its kinetic energy equal to its potential energy?",
+  "stem": "A $1$ kg block attached to a spring of force constant $200$ N m$^{-1}$ oscillates with a maximum speed of $2$ m s$^{-1}$. At what distance from equilibrium are its kinetic and spring potential energies equal?",
   "options": [
-   "$\\dfrac{A}{4}$",
-   "$\\dfrac{A}{2}$",
-   "$\\dfrac{A}{\\sqrt{2}}$",
-   "$\\dfrac{\\sqrt{3}A}{2}$"
+   "$0.05$ m",
+   "$0.10$ m",
+   "$0.14$ m",
+   "$0.20$ m"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The total mechanical energy in simple harmonic motion is given by $$E = \\dfrac{1}{2}kA^2$$ The potential energy at displacement $x$ is $$U = \\dfrac{1}{2}kx^2$$ When the kinetic energy equals the potential energy, each must equal half of the total energy: $$U = \\dfrac{1}{2}E$$ Substituting the expressions: $$\\dfrac{1}{2}kx^2 = \\dfrac{1}{2}\\left(\\dfrac{1}{2}kA^2\\right) = \\dfrac{1}{4}kA^2$$ $$x^2 = \\dfrac{A^2}{2} \\implies x = \\dfrac{A}{\\sqrt{2}}$$",
-  "distractor_notes": "A: Arises from mistakenly squaring the factor of $1/2$ (giving $A/4$).\nB: Arises from assuming linear proportionality between energy and displacement (at $x = A/2$, $U = E/4$, not $E/2$).\nD: Corresponds to the position where potential energy is three times the kinetic energy ($x = \\frac{\\sqrt{3}}{2}A$).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$E = \\dfrac{1}{2}mv_{\\max}^2 = 2$ J; when the energies are equal, $U = \\dfrac{E}{2} = 1$ J.\n$\\dfrac{1}{2}kx^2 = 1 \\implies x = \\sqrt{\\dfrac{2}{200}} = 0.10$ m",
+  "distractor_notes": "A: uses an incorrect factor in the spring-energy relation.\nC: calculates the amplitude instead of the displacement for equal energies.\nD: omits the factor of $\\dfrac{1}{2}$ in spring potential energy."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

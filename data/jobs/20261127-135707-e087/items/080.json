@@ -1,0 +1,68 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "IUPAC nomenclature of complexes",
+  "archetype": "fact recall",
+  "brief": "Give the formula of a mixed-ligand coordination compound; pick the correct IUPAC name with proper ligand order, oxidation-state notation and geometric prefixes.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:49",
+   "2021:74",
+   "2024s2:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "What is the correct IUPAC name of cis-$[\\text{CoCl}_2(\\text{en})_2]\\text{Cl}$, where en is ethane-1,2-diamine?",
+ "options": [
+  "cis-dichloridobis(ethane-1,2-diamine)cobalt(II) chloride",
+  "cis-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride",
+  "cis-bis(chlorido)bis(ethane-1,2-diamine)cobalt(III) chloride",
+  "trans-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "en is neutral and the two chlorido ligands contribute −2. Since the complex ion has charge +1, cobalt is +3. The cis complex is named cis-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Complex charge $=+1$: $x+2(-1)=+1$, hence Co is $+3$.\\nLigand order: chlorido before ethane-1,2-diamine; use bis for the bidentate ligand.\\nThe formula specifies cis geometry; the counter-ion is chloride.\n\nIndependent check: en is neutral and the two chlorido ligands contribute −2. Since the complex ion has charge +1, cobalt is +3. The cis complex is named cis-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride.",
+ "solution": "The complex ion has charge $+1$; if cobalt has oxidation state $x$, then $x+2(-1)=+1$, so $x=+3$.\nThe ligands are named chlorido before ethane-1,2-diamine, using $bis$ for the bidentate ligand; the given geometry is cis.\nThus, the name is cis-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "What is the correct IUPAC name of cis-$[\\text{CoCl}_2(\\text{en})_2]\\text{Cl}$, where en is ethane-1,2-diamine?",
+  "options": [
+   "cis-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride",
+   "cis-dichloridobis(ethane-1,2-diamine)cobalt(II) chloride",
+   "cis-bis(chlorido)bis(ethane-1,2-diamine)cobalt(III) chloride",
+   "trans-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Complex charge $=+1$: $x+2(-1)=+1$, hence Co is $+3$.\\nLigand order: chlorido before ethane-1,2-diamine; use bis for the bidentate ligand.\\nThe formula specifies cis geometry; the counter-ion is chloride.",
+  "distractor_notes": "B assigns the wrong oxidation state; C uses an incorrect ligand prefix for the bidentate ligand; D changes the specified cis geometry to trans."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,56 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "Direct limit of (1 - cos x)/x^2 type or sin(ax)/sin(bx) as x tends to 0; student must pick the correct standard form",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:140",
+   "2021:107",
+   "2024s1:95"
+  ],
+  "origin": "direct",
+  "bank_ref": "g8960c0547317"
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin 5x-\\sin 2x}{2x+\\sin 3x}$.",
+ "options": [
+  "$\\dfrac35$",
+  "$1$",
+  "$\\dfrac75$",
+  "$\\dfrac53$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "A",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g8960c0547317 (verified in job 20261127-132448-d9ce)"
+ ],
+ "working": "$\\displaystyle\\lim_{x\\to0}\\dfrac{\\sin 5x-\\sin 2x}{2x+\\sin 3x}=\\dfrac{5-2}{2+3}=\\dfrac35$.\n\nIndependent check: Using sin(kx) ~ kx as x→0, the numerator is ~3x and the denominator is ~5x, so the limit is 3/5.",
+ "solution": "Using $\\sin(kx)\\sim kx$ as $x\\to0$, \n$$\\lim_{x\\to0}\\frac{\\sin5x-\\sin2x}{2x+\\sin3x}=\\frac{5-2}{2+3}=\\frac35.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g8960c0547317",
+ "author_model": "openai/gpt-6-luna-pro"
+}

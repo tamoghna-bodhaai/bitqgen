@@ -1,0 +1,68 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "ΔH = ΔU + ΔnRT",
+  "archetype": "single-formula numerical",
+  "brief": "For a combustion reaction with given ΔU, compute ΔH using Δng of gases; direct substitution with R in appropriate units.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:47",
+   "2025s2:51",
+   "2026s2:60"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the combustion reaction $2\\text{CO}(g)+\\text{O}_2(g)\\rightarrow2\\text{CO}_2(g)$ at $250$ K, $\\Delta U=-560$ kJ mol$^{-1}$ for the reaction as written. Take $R=8.0$ J mol$^{-1}$ K$^{-1}$. Find $\\Delta H$.",
+ "options": [
+  "$-564$ kJ mol$^{-1}$",
+  "$-562$ kJ mol$^{-1}$",
+  "$-560$ kJ mol$^{-1}$",
+  "$-558$ kJ mol$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the reaction as written, Δn_g = 2 − 3 = −1. Thus ΔH = ΔU + Δn_gRT = −560 kJ mol⁻¹ − (8.0 × 250 / 1000) kJ mol⁻¹ = −562 kJ mol⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta n_g=2-(2+1)=-1$\\n$\\Delta H=\\Delta U+\\Delta n_gRT$\\n$=-560+\\dfrac{(-1)(8.0)(250)}{1000}=-562$ kJ mol$^{-1}$\n\nIndependent check: For the reaction as written, Δn_g = 2 − 3 = −1. Thus ΔH = ΔU + Δn_gRT = −560 kJ mol⁻¹ − (8.0 × 250 / 1000) kJ mol⁻¹ = −562 kJ mol⁻¹.",
+ "solution": "For gaseous reactions, $[?]$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the combustion reaction $2\\text{CO}(g)+\\text{O}_2(g)\\rightarrow2\\text{CO}_2(g)$ at $250$ K, $\\Delta U=-560$ kJ mol$^{-1}$ for the reaction as written. Take $R=8.0$ J mol$^{-1}$ K$^{-1}$. Find $\\Delta H$.",
+  "options": [
+   "$-564$ kJ mol$^{-1}$",
+   "$-562$ kJ mol$^{-1}$",
+   "$-560$ kJ mol$^{-1}$",
+   "$-558$ kJ mol$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\Delta n_g=2-(2+1)=-1$\\n$\\Delta H=\\Delta U+\\Delta n_gRT$\\n$=-560+\\dfrac{(-1)(8.0)(250)}{1000}=-562$ kJ mol$^{-1}$",
+  "distractor_notes": "A: Uses $\\Delta n_g=-2$.\\nC: Omits the $\\Delta n_gRT$ correction.\\nD: Uses the wrong sign for the correction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

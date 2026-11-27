@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "The Hall coefficient of a material is defined as $R_H = \\dfrac{E}{jB}$, where $E$ is the induced electric field, $j$ is the current density, and $B$ is the magnetic field. The dimensional formula of $R_H$ is:",
+ "stem": "The dimensionless Ohnesorge number is $Oh=\\dfrac{\\eta}{\\sqrt{\\rho\\sigma d}}$, where $\\eta$ is dynamic viscosity, $\\rho$ is density, and $d$ is a length. What is the dimensional formula of $\\sigma$?",
  "options": [
-  "$[M^0 L^2 T^{-1} A^{-1}]$",
-  "$[M^0 L^3 T^{-1} A^{-1}]$",
-  "$[M^0 L^3 T A^{-1}]$",
-  "$[M^0 L^{-3} T A]$"
+  "$[M L T^{-2}]$",
+  "$[M L^{-1} T^{-2}]$",
+  "$[M L^0 T^{-2}]$",
+  "$[M L^{-2} T^{-2}]$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "[E]=MLT^-3A^-1, [j]=L^-2A, [B]=MT^-2A^-1. R_H = E/(jB) gives exponents (1-1, 1+2, -3+2, -1-1+1) = M^0 L^3 T^-1 A^-1, verified by exponent arithmetic.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since $[\\eta]=[M L^{-1}T^{-1}]$ and $[\\rho d]=[M L^{-2}]$, $[\\sigma]=[\\eta]^2/([\\rho][d])=[M T^{-2}]$.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "We find the dimensional formula of each quantity in base units:\n1. Electric field: $E = \\dfrac{F}{q} \\implies [E] = \\dfrac{[MLT^{-2}]}{[AT]} = [MLT^{-3}A^{-1}]$\n2. Current density: $j = \\dfrac{I}{\\text{Area}} \\implies [j] = \\dfrac{[A]}{[L^2]} = [L^{-2}A]$\n3. Magnetic field: From $F = I L B$, we have $B = \\dfrac{F}{IL} \\implies [B] = \\dfrac{[MLT^{-2}]}{[A][L]} = [MT^{-2}A^{-1}]$\n\nNow, substituting these into the given expression:\n$$[jB] = [L^{-2}A][MT^{-2}A^{-1}] = [ML^{-2}T^{-2}]$$\n$$[R_H] = \\dfrac{[E]}{[jB]} = \\dfrac{[MLT^{-3}A^{-1}]}{[ML^{-2}T^{-2}]} = [M^0 L^{1-(-2)} T^{-3-(-2)} A^{-1}] = [M^0 L^3 T^{-1} A^{-1}]$$\n\n(Alternatively, using $R_H = \\dfrac{1}{ne}$, where $n$ is charge carrier density $[L^{-3}]$ and $e$ is charge $[AT]$, $[R_H] = \\dfrac{1}{[L^{-3}][AT]} = [M^0 L^3 T^{-1} A^{-1}]$.)\n\nIndependent check: [E]=MLT^-3A^-1, [j]=L^-2A, [B]=MT^-2A^-1. R_H = E/(jB) gives exponents (1-1, 1+2, -3+2, -1-1+1) = M^0 L^3 T^-1 A^-1, verified by exponent arithmetic.",
- "solution": "",
+ "working": "$[Oh]=1 \\Rightarrow [\\sigma]=\\dfrac{[\\eta]^2}{[\\rho][d]}$.\n$[\\eta]=[M L^{-1}T^{-1}],\\quad [\\rho]=[M L^{-3}],\\quad [d]=[L]$.\n$[\\sigma]=\\dfrac{[M^2L^{-2}T^{-2}]}{[M L^{-2}]}=[M L^0T^{-2}]$.\nSI base units: $\\text{kg s}^{-2}$.\n\nIndependent check: Since $[\\eta]=[M L^{-1}T^{-1}]$ and $[\\rho d]=[M L^{-2}]$, $[\\sigma]=[\\eta]^2/([\\rho][d])=[M T^{-2}]$.",
+ "solution": "Since $Oh$ is dimensionless, $[\\text{σ}]=[η]^2/([ρ][d])$.\n$$[\\text{σ}]=\\frac{[M L^{-1}T^{-1}]^2}{[M L^{-3}][L]}=[M L^0T^{-2}]$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The Hall coefficient of a material is defined as $R_H = \\dfrac{E}{jB}$, where $E$ is the induced electric field, $j$ is the current density, and $B$ is the magnetic field. The dimensional formula of $R_H$ is:",
+  "stem": "The dimensionless Ohnesorge number is $Oh=\\dfrac{\\eta}{\\sqrt{\\rho\\sigma d}}$, where $\\eta$ is dynamic viscosity, $\\rho$ is density, and $d$ is a length. What is the dimensional formula of $\\sigma$?",
   "options": [
-   "$[M^0 L^2 T^{-1} A^{-1}]$",
-   "$[M^0 L^3 T^{-1} A^{-1}]$",
-   "$[M^0 L^3 T A^{-1}]$",
-   "$[M^0 L^{-3} T A]$"
+   "$[M L T^{-2}]$",
+   "$[M L^0 T^{-2}]$",
+   "$[M L^{-1} T^{-2}]$",
+   "$[M L^{-2} T^{-2}]$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "We find the dimensional formula of each quantity in base units:\n1. Electric field: $E = \\dfrac{F}{q} \\implies [E] = \\dfrac{[MLT^{-2}]}{[AT]} = [MLT^{-3}A^{-1}]$\n2. Current density: $j = \\dfrac{I}{\\text{Area}} \\implies [j] = \\dfrac{[A]}{[L^2]} = [L^{-2}A]$\n3. Magnetic field: From $F = I L B$, we have $B = \\dfrac{F}{IL} \\implies [B] = \\dfrac{[MLT^{-2}]}{[A][L]} = [MT^{-2}A^{-1}]$\n\nNow, substituting these into the given expression:\n$$[jB] = [L^{-2}A][MT^{-2}A^{-1}] = [ML^{-2}T^{-2}]$$\n$$[R_H] = \\dfrac{[E]}{[jB]} = \\dfrac{[MLT^{-3}A^{-1}]}{[ML^{-2}T^{-2}]} = [M^0 L^{1-(-2)} T^{-3-(-2)} A^{-1}] = [M^0 L^3 T^{-1} A^{-1}]$$\n\n(Alternatively, using $R_H = \\dfrac{1}{ne}$, where $n$ is charge carrier density $[L^{-3}]$ and $e$ is charge $[AT]$, $[R_H] = \\dfrac{1}{[L^{-3}][AT]} = [M^0 L^3 T^{-1} A^{-1}]$.)",
-  "distractor_notes": "A: Arises from forgetting the length factor in magnetic field, using $B = F/I = [MLT^{-2}A^{-1}]$, which yields $[M^0 L^2 T^{-1} A^{-1}]$.\nC: Arises from a sign error when evaluating the time exponent: $-3 - (-2) = -1$, mistakenly calculated as $+1$.\nD: Arises from computing the reciprocal quantity $\\dfrac{jB}{E} = ne$, which has dimensions $[M^0 L^{-3} T A]$.",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$[Oh]=1 \\Rightarrow [\\sigma]=\\dfrac{[\\eta]^2}{[\\rho][d]}$.\n$[\\eta]=[M L^{-1}T^{-1}],\\quad [\\rho]=[M L^{-3}],\\quad [d]=[L]$.\n$[\\sigma]=\\dfrac{[M^2L^{-2}T^{-2}]}{[M L^{-2}]}=[M L^0T^{-2}]$.\nSI base units: $\\text{kg s}^{-2}$.",
+  "distractor_notes": "A: Confuses surface tension with force. C: Confuses surface tension with pressure. D: Introduces an extra inverse length factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

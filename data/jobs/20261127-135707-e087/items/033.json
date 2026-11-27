@@ -1,0 +1,68 @@
+{
+ "qno": 33,
+ "section": "Physics",
+ "slot": {
+  "qno": 33,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Faraday's law",
+  "archetype": "flux change over time",
+  "brief": "A loop/rail in a region where B varies with time (B = B0 + kt) or a rotating disc/rod: find induced emf via dΦ/dt with geometry, then current and power dissipated.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:9",
+   "2021:32",
+   "2026s2:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A conducting bar slides along parallel rails separated by $0.50$ m, completing a circuit of resistance $0.50\\ \\Omega$. The loop is in a perpendicular field $B=(0.20+0.30t)$ T, and the bar position is $x=(0.40+0.20t)$ m ($t$ in seconds). What is the power dissipated at $t=1$ s?",
+ "options": [
+  "$0.0392\\ \\text{W}$",
+  "$0.0162\\ \\text{W}$",
+  "$0.0050\\ \\text{W}$",
+  "$0.1568\\ \\text{W}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Φ=BLx, so |ε|=L(B\\,dx/dt+x\\,dB/dt)=0.50[(0.50)(0.20)+(0.60)(0.30)]=0.14 V at t=1 s. Thus P=ε²/R=0.14²/0.50=0.0392 W.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At $t=1$: $B=0.50$ T, $x=0.60$ m. $|\\mathcal{E}|=\\dfrac{d}{dt}(B\\ell x)=\\ell(x\\dot B+B\\dot x)=0.50(0.60\\times0.30+0.50\\times0.20)=0.14$ V. $P=\\mathcal{E}^2/R=0.14^2/0.50=0.0392$ W.\n\nIndependent check: Φ=BLx, so |ε|=L(B\\,dx/dt+x\\,dB/dt)=0.50[(0.50)(0.20)+(0.60)(0.30)]=0.14 V at t=1 s. Thus P=ε²/R=0.14²/0.50=0.0392 W.",
+ "solution": "The induced emf is $|\\mathcal{E}|=\\ell\\,\\frac{d(Bx)}{dt}=\\ell(x\\dot B+B\\dot x)$. At $t=1\\,\\text{s}$, $B=0.50\\,\\text{T}$ and $x=0.60\\,\\text{m}$, so\n$$|\\mathcal{E}|=0.50[(0.60)(0.30)+(0.50)(0.20)]=0.14\\,\\text{V}.$$\nHence $P=\\mathcal{E}^2/R=0.14^2/0.50=0.0392\\,\\text{W}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A conducting bar slides along parallel rails separated by $0.50$ m, completing a circuit of resistance $0.50\\ \\Omega$. The loop is in a perpendicular field $B=(0.20+0.30t)$ T, and the bar position is $x=(0.40+0.20t)$ m ($t$ in seconds). What is the power dissipated at $t=1$ s?",
+  "options": [
+   "$0.0050\\ \\text{W}$",
+   "$0.0162\\ \\text{W}$",
+   "$0.0392\\ \\text{W}$",
+   "$0.1568\\ \\text{W}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "At $t=1$: $B=0.50$ T, $x=0.60$ m. $|\\mathcal{E}|=\\dfrac{d}{dt}(B\\ell x)=\\ell(x\\dot B+B\\dot x)=0.50(0.60\\times0.30+0.50\\times0.20)=0.14$ V. $P=\\mathcal{E}^2/R=0.14^2/0.50=0.0392$ W.",
+  "distractor_notes": "A: keeps only the motional emf; B: keeps only the transformer emf; D: doubles the net emf before calculating power."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

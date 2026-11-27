@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Match the antiseptic preparations in List-I with their descriptions in List-II:\n\n**List-I**\n(P) Bithionol\n(Q) Tincture of iodine\n(R) Dettol\n\n**List-II**\n(1) $2\\text{--}3\\%$ solution of $\\text{I}_2$ in an alcohol–water mixture\n(2) Mixture of chloroxylenol and terpineol\n(3) Substance added to soaps to impart antiseptic properties\n\nChoose the correct match from the options given below:",
+ "stem": "Which preparation is an antiseptic solution of $\\text{I}_2$ in an alcohol–water vehicle?",
  "options": [
-  "P-3, Q-1, R-2",
-  "P-1, Q-3, R-2",
-  "P-2, Q-1, R-3",
-  "P-3, Q-2, R-1"
+  "Tincture of iodine",
+  "Dettol",
+  "Bithionol",
+  "Phenol"
  ],
  "answer": "A",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Bithionol is added to soaps for antiseptic action (P-3); tincture of iodine is a 2–3% I2 solution in alcohol–water (Q-1); Dettol is a mixture of chloroxylenol and terpineol (R-2).",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Tincture of iodine is an antiseptic solution of I₂ in an alcohol–water vehicle.",
    "answer": "A",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "According to NCERT Class 12 Chemistry (Chemistry in Everyday Life):\n1. Bithionol is added to soaps to impart antiseptic properties and decrease bacterial growth that causes odour (P $\\rightarrow$ 3).\n2. Tincture of iodine is a $2\\text{--}3\\%$ solution of iodine ($\\text{I}_2$) in an alcohol–water mixture, used as an antiseptic on wounds (Q $\\rightarrow$ 1).\n3. Dettol is a widely used antiseptic consisting of a mixture of chloroxylenol and terpineol (R $\\rightarrow$ 2).\n\nHence, the correct matching is P-3, Q-1, R-2.\n\nIndependent check: Bithionol is added to soaps for antiseptic action (P-3); tincture of iodine is a 2–3% I2 solution in alcohol–water (Q-1); Dettol is a mixture of chloroxylenol and terpineol (R-2).",
+ "working": "Tincture of iodine is a solution of $\\text{I}_2$ in an alcohol–water mixture.\n\nIndependent check: Tincture of iodine is an antiseptic solution of I₂ in an alcohol–water vehicle.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Match the antiseptic preparations in List-I with their descriptions in List-II:\n\n**List-I**\n(P) Bithionol\n(Q) Tincture of iodine\n(R) Dettol\n\n**List-II**\n(1) $2\\text{--}3\\%$ solution of $\\text{I}_2$ in an alcohol–water mixture\n(2) Mixture of chloroxylenol and terpineol\n(3) Substance added to soaps to impart antiseptic properties\n\nChoose the correct match from the options given below:",
+  "stem": "Which preparation is an antiseptic solution of $\\text{I}_2$ in an alcohol–water vehicle?",
   "options": [
-   "P-3, Q-1, R-2",
-   "P-1, Q-3, R-2",
-   "P-2, Q-1, R-3",
-   "P-3, Q-2, R-1"
+   "Tincture of iodine",
+   "Dettol",
+   "Bithionol",
+   "Phenol"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "According to NCERT Class 12 Chemistry (Chemistry in Everyday Life):\n1. Bithionol is added to soaps to impart antiseptic properties and decrease bacterial growth that causes odour (P $\\rightarrow$ 3).\n2. Tincture of iodine is a $2\\text{--}3\\%$ solution of iodine ($\\text{I}_2$) in an alcohol–water mixture, used as an antiseptic on wounds (Q $\\rightarrow$ 1).\n3. Dettol is a widely used antiseptic consisting of a mixture of chloroxylenol and terpineol (R $\\rightarrow$ 2).\n\nHence, the correct matching is P-3, Q-1, R-2.",
-  "distractor_notes": "Option B (P-1, Q-3, R-2): Swaps the applications of bithionol and tincture of iodine.\nOption C (P-2, Q-1, R-3): Confuses bithionol with the chemical composition of Dettol and assumes Dettol is the soap additive.\nOption D (P-3, Q-2, R-1): Swaps the descriptions of tincture of iodine and Dettol.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Tincture of iodine is a solution of $\\text{I}_2$ in an alcohol–water mixture.",
+  "distractor_notes": "B: Dettol is a mixture of chloroxylenol and terpineol. C: Bithionol is added to soaps for antiseptic properties. D: Phenol is a disinfectant, not an iodine tincture."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

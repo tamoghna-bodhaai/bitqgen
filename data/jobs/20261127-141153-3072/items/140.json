@@ -1,0 +1,68 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola focus / equation",
+  "archetype": "construct-equation",
+  "brief": "Given a condition (focus, or vertex + directrix), construct the equation of the parabola; moderate — may need completing the square or axis identification.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:109",
+   "2023s2:94",
+   "2026s2:111"
+  ]
+ },
+ "status": "ok",
+ "stem": "A parabola has focus $(3,2)$ and directrix $x=-1$. Its equation is",
+ "options": [
+  "$(y-2)^2=8(x-1)$",
+  "$(y-2)^2=4(x-1)$",
+  "$(x-1)^2=8(y-2)$",
+  "$(y-2)^2=-8(x-1)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The vertex is midway between the focus and directrix: (1,2). The focal length is p=2, so (y−2)²=4p(x−1)=8(x−1).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Axis is $y=2$; vertex is $V=(1,2)$ and $p=3-1=2$. Thus $(y-2)^2=4p(x-1)=8(x-1).\n\nIndependent check: The vertex is midway between the focus and directrix: (1,2). The focal length is p=2, so (y−2)²=4p(x−1)=8(x−1).",
+ "solution": "The axis is $y=2$, and the vertex midway between the focus and directrix is $(1,2)$. The focal length is $p=3-1=2$.\n$$ (y-2)^2=4p(x-1)=8(x-1) $$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A parabola has focus $(3,2)$ and directrix $x=-1$. Its equation is",
+  "options": [
+   "$(y-2)^2=8(x-1)$",
+   "$(y-2)^2=4(x-1)$",
+   "$(x-1)^2=8(y-2)$",
+   "$(y-2)^2=-8(x-1)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Axis is $y=2$; vertex is $V=(1,2)$ and $p=3-1=2$. Thus $(y-2)^2=4p(x-1)=8(x-1).",
+  "distractor_notes": "B: uses $2p$ instead of $4p$; C: swaps the axis orientation; D: reverses the direction of opening."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

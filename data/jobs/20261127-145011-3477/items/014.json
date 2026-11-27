@@ -1,0 +1,70 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Centre of mass",
+  "archetype": "weighted average",
+  "brief": "System of point masses placed at corners of a simple square/line; find the coordinates of the centre of mass.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:25",
+   "2024s1:10",
+   "2026s1:20"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Four particles of masses $1$ kg, $1$ kg, $1$ kg and $5$ kg are placed at $(0,0)$, $(2,0)$, $(0,2)$ and $(2,2)$, respectively, in metres. Find the coordinates of their centre of mass.",
+ "options": [
+  "$(1.5,1.5)$ m",
+  "$(1.0,1.0)$ m",
+  "$(1.0,1.5)$ m",
+  "$(2.0,2.0)$ m"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total mass = 8 kg. The weighted coordinate sums are 12 kg·m for both x and y, so the centre of mass is (12/8, 12/8) = (1.5, 1.5) m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$M=1+1+1+5=8$ kg\\n$x_{\\rm CM}=\\dfrac{1(0)+1(2)+1(0)+5(2)}{8}=1.5$ m\\n$y_{\\rm CM}=\\dfrac{1(0)+1(0)+1(2)+5(2)}{8}=1.5$ m\n\nIndependent check: Total mass = 8 kg. The weighted coordinate sums are 12 kg·m for both x and y, so the centre of mass is (12/8, 12/8) = (1.5, 1.5) m.",
+ "solution": "For point masses, $x_{\\rm CM}=\\frac{\\sum m_i x_i}{\\sum m_i}$ and $y_{\\rm CM}=\\frac{\\sum m_i y_i}{\\sum m_i}$. With total mass $M=8\\,\\text{kg}$,\n$$x_{\\rm CM}=\\frac{1(0)+1(2)+1(0)+5(2)}{8}=1.5\\,\\text{m},\\qquad y_{\\rm CM}=\\frac{1(0)+1(0)+1(2)+5(2)}{8}=1.5\\,\\text{m}.$$\nHence the centre of mass is $(1.5,1.5)\\,\\text{m}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Four particles of masses $1$ kg, $1$ kg, $1$ kg and $5$ kg are placed at $(0,0)$, $(2,0)$, $(0,2)$ and $(2,2)$, respectively, in metres. Find the coordinates of their centre of mass.",
+  "options": [
+   "$(1.0,1.0)$ m",
+   "$(1.5,1.5)$ m",
+   "$(1.0,1.5)$ m",
+   "$(2.0,2.0)$ m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$M=1+1+1+5=8$ kg\\n$x_{\\rm CM}=\\dfrac{1(0)+1(2)+1(0)+5(2)}{8}=1.5$ m\\n$y_{\\rm CM}=\\dfrac{1(0)+1(0)+1(2)+5(2)}{8}=1.5$ m",
+  "distractor_notes": "A: Assumes the centre of mass is at the square’s centre. C: Omits the contribution of the mass at $(2,2)$ to the $x$ coordinate. D: Takes the coordinates of the heaviest particle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

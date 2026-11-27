@@ -1,0 +1,70 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Lift problems",
+  "archetype": "single-formula",
+  "brief": "Person in an accelerating lift; ask for the normal reaction (apparent weight) for upward or downward acceleration.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:4",
+   "2025s2:4",
+   "2025s2:16"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A person of mass $60$ kg stands on a weighing machine in a lift accelerating downward at $2$ m s$^{-2}$. Taking $g=10$ m s$^{-2}$, what does the machine read?",
+ "options": [
+  "$480$ N",
+  "$360$ N",
+  "$600$ N",
+  "$720$ N"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For downward acceleration, the reading is the normal force: $N=m(g-a)=60(10-2)=480\\text{ N}$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$N=m(g-a)=60(10-2)=480$ N\n\nIndependent check: For downward acceleration, the reading is the normal force: $N=m(g-a)=60(10-2)=480\\text{ N}$.",
+ "solution": "The weighing machine reads the normal force. For downward acceleration, $N=m(g-a)$.\n$$N=60(10-2)=480\\text{ N}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A person of mass $60$ kg stands on a weighing machine in a lift accelerating downward at $2$ m s$^{-2}$. Taking $g=10$ m s$^{-2}$, what does the machine read?",
+  "options": [
+   "$360$ N",
+   "$480$ N",
+   "$600$ N",
+   "$720$ N"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$N=m(g-a)=60(10-2)=480$ N",
+  "distractor_notes": "A: over-subtracts the acceleration; C: uses the weight at rest; D: treats the acceleration as upward."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

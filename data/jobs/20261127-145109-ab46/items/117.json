@@ -1,0 +1,70 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Standard deviation",
+  "archetype": "single-formula numerical",
+  "brief": "Ungrouped data set of 5-7 numbers; compute the mean and the variance/standard deviation directly from definitions.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:110",
+   "2026s1:107",
+   "2023s2:91"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The standard deviation of the data $1, 3, 5, 7, 9$ is",
+ "options": [
+  "$\\dfrac{12}{5}$",
+  "$2\\sqrt{2}$",
+  "$4$",
+  "$8$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mean = 5. The mean squared deviation is (16+4+0+4+16)/5 = 8, so the standard deviation is √8 = 2√2.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\bar{x}=5$; $\\sigma^2=\\dfrac{16+4+0+4+16}{5}=8$.\n$\\sigma=\\sqrt{8}=2\\sqrt{2}$\n\nIndependent check: Mean = 5. The mean squared deviation is (16+4+0+4+16)/5 = 8, so the standard deviation is √8 = 2√2.",
+ "solution": "The mean is $\\bar{x}=5$. Hence,\n$$\\sigma=\\sqrt{\\frac{(1-5)^2+(3-5)^2+(5-5)^2+(7-5)^2+(9-5)^2}{5}}=\\sqrt{8}=2\\sqrt{2}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The standard deviation of the data $1, 3, 5, 7, 9$ is",
+  "options": [
+   "$\\dfrac{12}{5}$",
+   "$2\\sqrt{2}$",
+   "$4$",
+   "$8$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\bar{x}=5$; $\\sigma^2=\\dfrac{16+4+0+4+16}{5}=8$.\n$\\sigma=\\sqrt{8}=2\\sqrt{2}$",
+  "distractor_notes": "A: Uses mean deviation about the mean instead of standard deviation.\nC: Takes an incorrect square root of the variance.\nD: Gives the variance rather than its square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

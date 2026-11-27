@@ -1,0 +1,68 @@
+{
+ "qno": 38,
+ "section": "Physics",
+ "slot": {
+  "qno": 38,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "RMS speed",
+  "archetype": "proportionality-scaling",
+  "brief": "Two gases at the same temperature (or the same gas at two temperatures); find the ratio of rms speeds using the v ∝ √(T/m) scaling, no absolute computation needed.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:3",
+   "2021:38",
+   "2023s2:14"
+  ]
+ },
+ "status": "ok",
+ "stem": "At the same temperature, compare the rms speeds of molecules of hydrogen, H$_2$, and oxygen, O$_2$. What is the ratio $v_{\\text{rms}}(\\text{H}_2)/v_{\\text{rms}}(\\text{O}_2)$? Take their molar masses as $2$ g mol$^{-1}$ and $32$ g mol$^{-1}$, respectively.",
+ "options": [
+  "$\\dfrac{1}{4}$",
+  "$2$",
+  "$4$",
+  "$16$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At the same temperature, rms speed is inversely proportional to the square root of molar mass. The ratio is \\(\\sqrt{32/2}=4\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_{\\text{rms}}\\propto\\dfrac{1}{\\sqrt{M}}$ at fixed $T$.\n$\\dfrac{v_{\\text{rms}}(\\text{H}_2)}{v_{\\text{rms}}(\\text{O}_2)}=\\sqrt{\\dfrac{32}{2}}=4$\n\nIndependent check: At the same temperature, rms speed is inversely proportional to the square root of molar mass. The ratio is \\(\\sqrt{32/2}=4\\).",
+ "solution": "At fixed temperature, $v_{\\text{rms}}\\propto 1/\\sqrt{M}$.\n$$\\frac{v_{\\text{rms}}(\\text{H}_2)}{v_{\\text{rms}}(\\text{O}_2)}=\\sqrt{\\frac{32}{2}}=4$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At the same temperature, compare the rms speeds of molecules of hydrogen, H$_2$, and oxygen, O$_2$. What is the ratio $v_{\\text{rms}}(\\text{H}_2)/v_{\\text{rms}}(\\text{O}_2)$? Take their molar masses as $2$ g mol$^{-1}$ and $32$ g mol$^{-1}$, respectively.",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$2$",
+   "$4$",
+   "$16$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$v_{\\text{rms}}\\propto\\dfrac{1}{\\sqrt{M}}$ at fixed $T$.\n$\\dfrac{v_{\\text{rms}}(\\text{H}_2)}{v_{\\text{rms}}(\\text{O}_2)}=\\sqrt{\\dfrac{32}{2}}=4$",
+  "distractor_notes": "A: Takes the reciprocal of the speed ratio. B: Uses the square root of the mass ratio incorrectly. D: Uses the mass ratio directly, without taking its square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

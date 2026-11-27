@@ -1,0 +1,68 @@
+{
+ "qno": 82,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 82,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS) – argumentative paragraph with fixed first and last sentences",
+  "archetype": "para jumble (fixed ends)",
+  "brief": "Give a fixed opening and closing sentence on an abstract topic (e.g., technology and society) with four jumbled middle sentences P–Q–R–S that must be ordered using pronoun and connector clues; hard because of subtle linkages.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:65",
+   "2023s2:64",
+   "2021:93"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the four sentences P, Q, R and S between the fixed opening and closing sentences to form a coherent paragraph.\n\n**Opening:** Digital tools can widen access to public knowledge, but access alone does not make a society better informed.\n\n**Middle sentences:**\nP. This apparent abundance, however, can obscure the difference between information that is merely available and evidence that has been carefully tested.\nQ. The latter requires institutions that explain how claims are checked, corrected and placed in context.\nR. Without such institutions, users may mistake repetition for confirmation, especially when a claim is repeated across several platforms.\nS. For this reason, expanding access must be accompanied by habits and institutions that help people judge what they encounter.\n\n**Closing:** A well-informed society therefore depends not only on the circulation of knowledge, but also on the means to assess it.\n\nWhich is the correct sequence?",
+ "options": [
+  "P – Q – S – R",
+  "Q – P – R – S",
+  "P – R – Q – S",
+  "P – Q – R – S"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "P follows the opening by referring to the abundance of information. Q explains what carefully tested evidence requires; R describes what happens without those institutions; S draws the resulting conclusion.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "P introduces the distinction between available information and tested evidence; “the latter” in Q refers to tested evidence. R’s “such institutions” refers to Q, and S’s “For this reason” draws the conclusion. Hence P–Q–R–S.\n\nIndependent check: P follows the opening by referring to the abundance of information. Q explains what carefully tested evidence requires; R describes what happens without those institutions; S draws the resulting conclusion.",
+ "solution": "P contrasts available information with carefully tested evidence. Q explains what the latter requires, and R shows the risk when those institutions are absent. S then draws the conclusion: access must be paired with ways to judge information.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Arrange the four sentences P, Q, R and S between the fixed opening and closing sentences to form a coherent paragraph.\n\n**Opening:** Digital tools can widen access to public knowledge, but access alone does not make a society better informed.\n\n**Middle sentences:**\nP. This apparent abundance, however, can obscure the difference between information that is merely available and evidence that has been carefully tested.\nQ. The latter requires institutions that explain how claims are checked, corrected and placed in context.\nR. Without such institutions, users may mistake repetition for confirmation, especially when a claim is repeated across several platforms.\nS. For this reason, expanding access must be accompanied by habits and institutions that help people judge what they encounter.\n\n**Closing:** A well-informed society therefore depends not only on the circulation of knowledge, but also on the means to assess it.\n\nWhich is the correct sequence?",
+  "options": [
+   "P – Q – R – S",
+   "Q – P – R – S",
+   "P – R – Q – S",
+   "P – Q – S – R"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "P introduces the distinction between available information and tested evidence; “the latter” in Q refers to tested evidence. R’s “such institutions” refers to Q, and S’s “For this reason” draws the conclusion. Hence P–Q–R–S.",
+  "distractor_notes": "B: “The latter” in Q has no preceding distinction. C: R refers to institutions introduced in Q. D: S draws a conclusion before R supplies the supporting consequence."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 132,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 132,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "Find the area enclosed between a parabola and a line (or a line and a circle) with clean intersection points; hard 4/5 variant with two intersection points needing splitting.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:118",
+   "2021:142",
+   "2024s2:122"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The area enclosed by the parabola $x=y^2$ and the line $x=y+2$ is",
+ "options": [
+  "$\\dfrac{4}{3}$ square units",
+  "$\\dfrac{19}{6}$ square units",
+  "$\\dfrac{9}{2}$ square units",
+  "$\\dfrac{16}{3}$ square units"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Intersections: y² = y + 2 gives y = −1, 2. The area is ∫₋₁²(y + 2 − y²)dy = 9/2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x-2=-\\sqrt{x}\\Rightarrow x=1,\\quad x_{\\max}=4;\\quad A=\\int_0^1 2\\sqrt{x}\\,dx+\\int_1^4(\\sqrt{x}-x+2)\\,dx=\\dfrac43+\\dfrac{19}{6}=\\dfrac92$.\n\nIndependent check: Intersections: y² = y + 2 gives y = −1, 2. The area is ∫₋₁²(y + 2 − y²)dy = 9/2.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The area enclosed by the parabola $x=y^2$ and the line $x=y+2$ is",
+  "options": [
+   "$\\dfrac{4}{3}$ square units",
+   "$\\dfrac{19}{6}$ square units",
+   "$\\dfrac{9}{2}$ square units",
+   "$\\dfrac{16}{3}$ square units"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$x-2=-\\sqrt{x}\\Rightarrow x=1,\\quad x_{\\max}=4;\\quad A=\\int_0^1 2\\sqrt{x}\\,dx+\\int_1^4(\\sqrt{x}-x+2)\\,dx=\\dfrac43+\\dfrac{19}{6}=\\dfrac92$.",
+  "distractor_notes": "A: calculates only the area for $0\\le x\\le1$; B: omits the area for $0\\le x\\le1$; D: uses the right-hand vertical boundary ordering across the whole interval without splitting."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

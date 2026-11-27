@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Two groups of sizes $40$ and $60$ have means $25$ and $35$, and variances $14$ and $9$, respectively. The variance of the combined group of $100$ observations is",
+ "stem": "Two sections contribute data to a pooled set. Their sizes, means and variances are $(20,12,3)$ and $(40,15,9)$, respectively. The pooled mean and standard deviation are",
  "options": [
-  "$11$",
-  "$24$",
-  "$35$",
-  "$36$"
+  "$(14,3)$",
+  "$(14,\\sqrt{7})$",
+  "$(13,3)$",
+  "$(14,4)$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Combined mean = (40·25+60·35)/100 = 31. Deviations d1=−6, d2=4. Combined variance = [40(14+36)+60(9+16)]/100 = (2000+1500)/100 = 35.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Pooled mean = (20×12 + 40×15)/60 = 14. Pooled variance = [20(3 + (12−14)²) + 40(9 + (15−14)²)]/60 = 9, so the standard deviation is 3.",
+   "answer": "A",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Let the two groups have sizes $n_1 = 40$ and $n_2 = 60$, means $\\bar{x}_1 = 25$ and $\\bar{x}_2 = 35$, and variances $\\sigma_1^2 = 14$ and $\\sigma_2^2 = 9$.\n\n1. Calculate the combined mean $\\bar{x}$:\n$$\\bar{x} = \\dfrac{n_1 \\bar{x}_1 + n_2 \\bar{x}_2}{n_1 + n_2} = \\dfrac{40(25) + 60(35)}{40 + 60} = \\dfrac{1000 + 2100}{100} = 31$$\n\n2. Compute the deviations from the combined mean:\n$$d_1 = \\bar{x}_1 - \\bar{x} = 25 - 31 = -6 \\implies d_1^2 = 36$$\n$$d_2 = \\bar{x}_2 - \\bar{x} = 35 - 31 = 4 \\implies d_2^2 = 16$$\n\n3. Calculate the combined variance $\\sigma^2$:\n$$\\sigma^2 = \\dfrac{n_1(\\sigma_1^2 + d_1^2) + n_2(\\sigma_2^2 + d_2^2)}{n_1 + n_2}$$\n$$\\sigma^2 = \\dfrac{40(14 + 36) + 60(9 + 16)}{100} = \\dfrac{40(50) + 60(25)}{100} = \\dfrac{2000 + 1500}{100} = 35$$\n\nIndependent check: Combined mean = (40·25+60·35)/100 = 31. Deviations d1=−6, d2=4. Combined variance = [40(14+36)+60(9+16)]/100 = (2000+1500)/100 = 35.",
+ "working": "$N=20+40=60$, $\\quad \\bar{x}=\\dfrac{20(12)+40(15)}{60}=14$.\n$\\sigma^2=\\dfrac{20[3+(12-14)^2]+40[9+(15-14)^2]}{60}=9$.\n$\\sigma=3$.\n\nIndependent check: Pooled mean = (20×12 + 40×15)/60 = 14. Pooled variance = [20(3 + (12−14)²) + 40(9 + (15−14)²)]/60 = 9, so the standard deviation is 3.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Two groups of sizes $40$ and $60$ have means $25$ and $35$, and variances $14$ and $9$, respectively. The variance of the combined group of $100$ observations is",
+  "stem": "Two sections contribute data to a pooled set. Their sizes, means and variances are $(20,12,3)$ and $(40,15,9)$, respectively. The pooled mean and standard deviation are",
   "options": [
-   "$11$",
-   "$24$",
-   "$35$",
-   "$36$"
+   "$(14,3)$",
+   "$(14,\\sqrt{7})$",
+   "$(13,3)$",
+   "$(14,4)$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "Let the two groups have sizes $n_1 = 40$ and $n_2 = 60$, means $\\bar{x}_1 = 25$ and $\\bar{x}_2 = 35$, and variances $\\sigma_1^2 = 14$ and $\\sigma_2^2 = 9$.\n\n1. Calculate the combined mean $\\bar{x}$:\n$$\\bar{x} = \\dfrac{n_1 \\bar{x}_1 + n_2 \\bar{x}_2}{n_1 + n_2} = \\dfrac{40(25) + 60(35)}{40 + 60} = \\dfrac{1000 + 2100}{100} = 31$$\n\n2. Compute the deviations from the combined mean:\n$$d_1 = \\bar{x}_1 - \\bar{x} = 25 - 31 = -6 \\implies d_1^2 = 36$$\n$$d_2 = \\bar{x}_2 - \\bar{x} = 35 - 31 = 4 \\implies d_2^2 = 16$$\n\n3. Calculate the combined variance $\\sigma^2$:\n$$\\sigma^2 = \\dfrac{n_1(\\sigma_1^2 + d_1^2) + n_2(\\sigma_2^2 + d_2^2)}{n_1 + n_2}$$\n$$\\sigma^2 = \\dfrac{40(14 + 36) + 60(9 + 16)}{100} = \\dfrac{40(50) + 60(25)}{100} = \\dfrac{2000 + 1500}{100} = 35$$",
-  "distractor_notes": "Option A ($11$): Neglects the variance between group means and simply calculates the weighted average of individual variances: $\\dfrac{40(14) + 60(9)}{100} = 11$.\nOption B ($24$): Considers only the variance between group means and ignores individual group variances: $\\dfrac{40(36) + 60(16)}{100} = 24$.\nOption D ($36$): Incorrectly uses the unweighted average of group means $\\bar{x} = \\dfrac{25+35}{2} = 30$, giving $d_1^2 = d_2^2 = 25$, which leads to $\\dfrac{40(14+25) + 60(9+25)}{100} = 36$.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$N=20+40=60$, $\\quad \\bar{x}=\\dfrac{20(12)+40(15)}{60}=14$.\n$\\sigma^2=\\dfrac{20[3+(12-14)^2]+40[9+(15-14)^2]}{60}=9$.\n$\\sigma=3$.",
+  "distractor_notes": "B ignores the variation between the section means. C uses an unweighted average for the pooled mean. D adds the full squared difference of the means instead of its weighted contribution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "A $0.10\\ \\text{m}$ solution of a solute in benzene shows a freezing point depression of $0.256\\ \\text{K}$. Given $K_\\text{f} = 5.12\\ \\text{K kg mol}^{-1}$ for benzene, the van 't Hoff factor ($i$) and the state of the solute in the solution are:",
+ "stem": "A $0.10\\ \\text{m}$ aqueous solution of $\\text{MCl}_2$ freezes at $-0.279^\\circ\\text{C}$. Given $K_\\text{f}=1.86\\ \\text{K kg mol}^{-1}$ for water, find $i$ and the degree of dissociation.",
  "options": [
-  "$i = 0.50$, complete dissociation into two ions",
-  "$i = 0.50$, complete dimerization",
-  "$i = 2.00$, complete dimerization",
-  "$i = 2.00$, complete dissociation into two ions"
+  "$i=1.50$; $50\\%$ dissociation",
+  "$i=2.00$; $50\\%$ dissociation",
+  "$i=1.50$; $25\\%$ dissociation",
+  "$i=1.25$; $12.5\\%$ dissociation"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "i = ΔTf/(Kf·m) = 0.256/(5.12×0.10) = 0.50. i < 1 indicates association; complete dimerization gives i = 1/2 = 0.50, consistent.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\Delta T_f=K_fmi\\), so \\(i=0.279/(1.86\\times0.10)=1.50\\). For \\(\\mathrm{MCl_2\\to M^{2+}+2Cl^-}\\), \\(i=1+2\\alpha\\), giving \\(\\alpha=0.25\\) (25%).",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Calculate the theoretical (normal) freezing point depression assuming no association or dissociation:\n$$\\Delta T_{\\text{f, theoretical}} = K_\\text{f} \\cdot m = 5.12\\ \\text{K kg mol}^{-1} \\times 0.10\\ \\text{mol kg}^{-1} = 0.512\\ \\text{K}$$\n\n2. Compute the van 't Hoff factor ($i$):\n$$i = \\dfrac{\\Delta T_{\\text{f, observed}}}{\\Delta T_{\\text{f, theoretical}}} = \\dfrac{0.256\\ \\text{K}}{0.512\\ \\text{K}} = 0.50$$\n\n3. Infer the state of the solute:\nSince $i < 1$, the solute undergoes association. For complete dimerization ($2\\text{A} \\rightarrow \\text{A}_2$):\n$$i = 1 - \\alpha\\left(1 - \\dfrac{1}{n}\\right) = 1 - 1\\left(1 - \\dfrac{1}{2}\\right) = 0.50$$\nThus, the solute undergoes complete dimerization.\n\nIndependent check: i = ΔTf/(Kf·m) = 0.256/(5.12×0.10) = 0.50. i < 1 indicates association; complete dimerization gives i = 1/2 = 0.50, consistent.",
+ "working": "$\\Delta T_\\text{f,theoretical}=1.86\\times0.10=0.186\\ \\text{K}$\n$i=\\dfrac{0.279}{0.186}=1.50$\nFor $\\text{MCl}_2\\rightleftharpoons\\text{M}^{2+}+2\\text{Cl}^-$, $i=1+2\\alpha$\n$\\alpha=\\dfrac{1.50-1}{2}=0.25=25\\%$\n\nIndependent check: \\(\\Delta T_f=K_fmi\\), so \\(i=0.279/(1.86\\times0.10)=1.50\\). For \\(\\mathrm{MCl_2\\to M^{2+}+2Cl^-}\\), \\(i=1+2\\alpha\\), giving \\(\\alpha=0.25\\) (25%).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A $0.10\\ \\text{m}$ solution of a solute in benzene shows a freezing point depression of $0.256\\ \\text{K}$. Given $K_\\text{f} = 5.12\\ \\text{K kg mol}^{-1}$ for benzene, the van 't Hoff factor ($i$) and the state of the solute in the solution are:",
+  "stem": "A $0.10\\ \\text{m}$ aqueous solution of $\\text{MCl}_2$ freezes at $-0.279^\\circ\\text{C}$. Given $K_\\text{f}=1.86\\ \\text{K kg mol}^{-1}$ for water, find $i$ and the degree of dissociation.",
   "options": [
-   "$i = 0.50$, complete dissociation into two ions",
-   "$i = 0.50$, complete dimerization",
-   "$i = 2.00$, complete dimerization",
-   "$i = 2.00$, complete dissociation into two ions"
+   "$i=1.50$; $50\\%$ dissociation",
+   "$i=2.00$; $50\\%$ dissociation",
+   "$i=1.50$; $25\\%$ dissociation",
+   "$i=1.25$; $12.5\\%$ dissociation"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. Calculate the theoretical (normal) freezing point depression assuming no association or dissociation:\n$$\\Delta T_{\\text{f, theoretical}} = K_\\text{f} \\cdot m = 5.12\\ \\text{K kg mol}^{-1} \\times 0.10\\ \\text{mol kg}^{-1} = 0.512\\ \\text{K}$$\n\n2. Compute the van 't Hoff factor ($i$):\n$$i = \\dfrac{\\Delta T_{\\text{f, observed}}}{\\Delta T_{\\text{f, theoretical}}} = \\dfrac{0.256\\ \\text{K}}{0.512\\ \\text{K}} = 0.50$$\n\n3. Infer the state of the solute:\nSince $i < 1$, the solute undergoes association. For complete dimerization ($2\\text{A} \\rightarrow \\text{A}_2$):\n$$i = 1 - \\alpha\\left(1 - \\dfrac{1}{n}\\right) = 1 - 1\\left(1 - \\dfrac{1}{2}\\right) = 0.50$$\nThus, the solute undergoes complete dimerization.",
-  "distractor_notes": "A: Computes $i = 0.50$ correctly, but confuses association with dissociation.\nC: Takes the reciprocal ratio $i = \\Delta T_\\text{theoretical} / \\Delta T_\\text{observed} = 2.00$, and mistakenly thinks a factor of 2 indicates dimerization.\nD: Takes the reciprocal ratio $i = \\Delta T_\\text{theoretical} / \\Delta T_\\text{observed} = 2.00$, and associates $i > 1$ with dissociation into two ions.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$\\Delta T_\\text{f,theoretical}=1.86\\times0.10=0.186\\ \\text{K}$\n$i=\\dfrac{0.279}{0.186}=1.50$\nFor $\\text{MCl}_2\\rightleftharpoons\\text{M}^{2+}+2\\text{Cl}^-$, $i=1+2\\alpha$\n$\\alpha=\\dfrac{1.50-1}{2}=0.25=25\\%$",
+  "distractor_notes": "A: Uses $i=1+\\alpha$ instead of $i=1+2\\alpha$. B: Overestimates the van ’t Hoff factor and pairs it with the corresponding dissociation. D: Halves $i-1$ twice."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

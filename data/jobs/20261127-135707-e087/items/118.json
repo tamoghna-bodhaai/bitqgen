@@ -1,0 +1,68 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "parameter recovery",
+  "brief": "Binomial distribution: given mean and variance (or two probability values), recover n and p, then compute a specific probability.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:91",
+   "2025s1:91",
+   "2025s1:108"
+  ]
+ },
+ "status": "ok",
+ "stem": "A binomial random variable $X$ has mean $5$ and variance $\\dfrac{5}{2}$. Find $P(X\\leq 1)$.",
+ "options": [
+  "$\\dfrac{1}{1024}$",
+  "$\\dfrac{5}{512}$",
+  "$\\dfrac{11}{1024}$",
+  "$\\dfrac{21}{1024}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a binomial variable, np=5 and np(1-p)=5/2, giving p=1/2 and n=10. Hence P(X≤1)=[C(10,0)+C(10,1)]/2^10=11/1024.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$np=5$, $np(1-p)=\\dfrac{5}{2}\\Rightarrow p=\\dfrac12$, $n=10$; $P(X\\leq1)=P(X=0)+P(X=1)=\\left(1+\\binom{10}{1}\\right)\\left(\\dfrac12\\right)^{10}=\\dfrac{11}{1024}$.\n\nIndependent check: For a binomial variable, np=5 and np(1-p)=5/2, giving p=1/2 and n=10. Hence P(X≤1)=[C(10,0)+C(10,1)]/2^10=11/1024.",
+ "solution": "For a binomial variable, $np=5$ and $np(1-p)=\\dfrac{5}{2}$, so $p=\\dfrac{1}{2}$ and $n=10$.\n$$P(X\\leq 1)=\\left[\\binom{10}{0}+\\binom{10}{1}\\right]\\left(\\dfrac{1}{2}\\right)^{10}=\\dfrac{11}{1024}$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A binomial random variable $X$ has mean $5$ and variance $\\dfrac{5}{2}$. Find $P(X\\leq 1)$.",
+  "options": [
+   "$\\dfrac{1}{1024}$",
+   "$\\dfrac{5}{512}$",
+   "$\\dfrac{11}{1024}$",
+   "$\\dfrac{21}{1024}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$np=5$, $np(1-p)=\\dfrac{5}{2}\\Rightarrow p=\\dfrac12$, $n=10$; $P(X\\leq1)=P(X=0)+P(X=1)=\\left(1+\\binom{10}{1}\\right)\\left(\\dfrac12\\right)^{10}=\\dfrac{11}{1024}$.",
+  "distractor_notes": "A: includes only $P(X=0)$; B: includes only $P(X=1)$; D: doubles the $P(X=1)$ term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

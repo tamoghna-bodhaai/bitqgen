@@ -1,0 +1,71 @@
+{
+ "qno": 132,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 132,
+  "section": "Mathematics",
+  "chapter": "Linear Inequalities",
+  "subtopic": "Rational inequality",
+  "archetype": "sign chart",
+  "brief": "Solve a rational inequality of the form (x − a)(x − b)/((x − c)(x + d)) ≤ 0 using the wavy-curve method; give the solution set.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:112",
+   "2025s1:122",
+   "2023s2:126"
+  ],
+  "origin": "variant",
+  "bank_ref": "g7b8da2ca6e85"
+ },
+ "status": "ok",
+ "stem": "Using a sign chart, solve $\\dfrac{(x-2)(x+1)}{(x-4)(x+3)} \\le 0$. Choose the solution set.",
+ "options": [
+  "$(-3,-1] \\cup [2,4)$",
+  "$(-3,-1) \\cup (2,4)$",
+  "$(-∞,-3) \\cup [-1,2] \\cup (4,∞)$",
+  "$[-3,-1] \\cup [2,4]$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Critical points are −3, −1, 2, and 4. The expression is negative on (−3,−1) and (2,4); include the numerator zeros −1 and 2, but exclude denominator zeros −3 and 4.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Critical values: $-3,-1,2,4$; $x=-3,4$ are excluded.\\\nSigns on successive intervals: $+,-,+,-,+$.\\\nHence the solution is $(-3,-1] \\cup [2,4)$.\n\nIndependent check: Critical points are −3, −1, 2, and 4. The expression is negative on (−3,−1) and (2,4); include the numerator zeros −1 and 2, but exclude denominator zeros −3 and 4.",
+ "solution": "Critical values are $-3,-1,2,4$, with $x=-3,4$ excluded. The expression is negative on $(-3,-1)$ and $(2,4)$; include the numerator zeros $-1$ and $2$.\nThus the solution set is $(-3,-1] \\cup [2,4)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using a sign chart, solve $\\dfrac{(x-2)(x+1)}{(x-4)(x+3)} \\le 0$. Choose the solution set.",
+  "options": [
+   "$(-3,-1] \\cup [2,4)$",
+   "$(-3,-1) \\cup (2,4)$",
+   "$(-∞,-3) \\cup [-1,2] \\cup (4,∞)$",
+   "$[-3,-1] \\cup [2,4]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Critical values: $-3,-1,2,4$; $x=-3,4$ are excluded.\\\nSigns on successive intervals: $+,-,+,-,+$.\\\nHence the solution is $(-3,-1] \\cup [2,4)$.",
+  "distractor_notes": "B: excludes the zeros of the numerator.\\nC: selects the intervals where the expression is nonnegative.\\nD: includes the undefined points $-3$ and $4$."
+ },
+ "variant_of": "g7b8da2ca6e85",
+ "author_model": "openai/gpt-6-luna-pro"
+}

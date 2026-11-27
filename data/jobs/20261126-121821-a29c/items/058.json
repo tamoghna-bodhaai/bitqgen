@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "What volume of $0.15\\ \\text{M}\\ \\text{NaOH}$ solution is required to completely neutralise $60\\ \\text{mL}$ of $0.10\\ \\text{M}\\ \\text{HCl}$ solution?",
+ "stem": "What volume of $0.30\\ \\text{M}$ KOH is needed to completely neutralise $30\\ \\text{mL}$ of $0.20\\ \\text{M}$ $\\text{H}_2\\text{SO}_4$?",
  "options": [
-  "$20\\ \\text{mL}$",
   "$40\\ \\text{mL}$",
+  "$20\\ \\text{mL}$",
   "$60\\ \\text{mL}$",
-  "$90\\ \\text{mL}$"
+  "$80\\ \\text{mL}$"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "HCl + NaOH → NaCl + H2O (1:1). Moles HCl = 0.060 L × 0.10 M = 0.006 mol. V(NaOH) = 0.006/0.15 = 0.040 L = 40 mL.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Moles of H₂SO₄ = 0.030 × 0.20 = 0.006 mol. Neutralisation requires 2 mol KOH per mol H₂SO₄, so V(KOH) = (0.012 mol)/(0.30 mol L⁻¹) = 0.040 L = 40 mL.",
    "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The balanced chemical equation for the neutralisation reaction is:\n$$\\text{HCl} + \\text{NaOH} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\n\nThe stoichiometric ratio of $\\text{HCl}$ to $\\text{NaOH}$ is $1 : 1$.\n\nCalculate the millimoles of $\\text{HCl}$ present:\n$$\\text{Millimoles of } \\text{HCl} = M_1 \\times V_1 = 0.10\\ \\text{M} \\times 60\\ \\text{mL} = 6.0\\ \\text{mmol}$$\n\nFor complete neutralisation, the millimoles of $\\text{NaOH}$ must equal the millimoles of $\\text{HCl}$:\n$$M_2 \\times V_2 = 6.0\\ \\text{mmol}$$\n$$0.15\\ \\text{M} \\times V_2 = 6.0\\ \\text{mmol}$$\n$$V_2 = \\dfrac{6.0}{0.15} = 40\\ \\text{mL}$$\n\nIndependent check: HCl + NaOH → NaCl + H2O (1:1). Moles HCl = 0.060 L × 0.10 M = 0.006 mol. V(NaOH) = 0.006/0.15 = 0.040 L = 40 mL.",
- "solution": "",
+ "working": "$\\text{H}_2\\text{SO}_4 + 2\\text{KOH} \\rightarrow \\text{K}_2\\text{SO}_4 + 2\\text{H}_2\\text{O}$\n$n(\\text{H}_2\\text{SO}_4)=0.20\\times30=6.0\\ \\text{mmol}$\n$n(\\text{KOH})=2\\times6.0=12.0\\ \\text{mmol}$\n$V(\\text{KOH})=12.0/0.30=40\\ \\text{mL}$\n\nIndependent check: Moles of H₂SO₄ = 0.030 × 0.20 = 0.006 mol. Neutralisation requires 2 mol KOH per mol H₂SO₄, so V(KOH) = (0.012 mol)/(0.30 mol L⁻¹) = 0.040 L = 40 mL.",
+ "solution": "The reaction is $\\text{H}_2\\text{SO}_4+2\\text{KOH}\\rightarrow\\text{K}_2\\text{SO}_4+2\\text{H}_2\\text{O}$, so $2$ mol of KOH neutralise $1$ mol of $\\text{H}_2\\text{SO}_4$.\n$$V_{\\text{KOH}}=\\frac{2(0.20)(30)}{0.30}=40\\text{ mL}$$",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "What volume of $0.15\\ \\text{M}\\ \\text{NaOH}$ solution is required to completely neutralise $60\\ \\text{mL}$ of $0.10\\ \\text{M}\\ \\text{HCl}$ solution?",
+  "stem": "What volume of $0.30\\ \\text{M}$ KOH is needed to completely neutralise $30\\ \\text{mL}$ of $0.20\\ \\text{M}$ $\\text{H}_2\\text{SO}_4$?",
   "options": [
    "$20\\ \\text{mL}$",
    "$40\\ \\text{mL}$",
    "$60\\ \\text{mL}$",
-   "$90\\ \\text{mL}$"
+   "$80\\ \\text{mL}$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "The balanced chemical equation for the neutralisation reaction is:\n$$\\text{HCl} + \\text{NaOH} \\rightarrow \\text{NaCl} + \\text{H}_2\\text{O}$$\n\nThe stoichiometric ratio of $\\text{HCl}$ to $\\text{NaOH}$ is $1 : 1$.\n\nCalculate the millimoles of $\\text{HCl}$ present:\n$$\\text{Millimoles of } \\text{HCl} = M_1 \\times V_1 = 0.10\\ \\text{M} \\times 60\\ \\text{mL} = 6.0\\ \\text{mmol}$$\n\nFor complete neutralisation, the millimoles of $\\text{NaOH}$ must equal the millimoles of $\\text{HCl}$:\n$$M_2 \\times V_2 = 6.0\\ \\text{mmol}$$\n$$0.15\\ \\text{M} \\times V_2 = 6.0\\ \\text{mmol}$$\n$$V_2 = \\dfrac{6.0}{0.15} = 40\\ \\text{mL}$$",
-  "distractor_notes": "A: Erroneously applies a factor of 2 by assuming a dibasic acid/base stoichiometry (calculating $40 / 2 = 20\\ \\text{mL}$).\nC: Neglects the molarity difference and assumes equal volumes ($60\\ \\text{mL}$).\nD: Inverts the concentration ratio, computing $\\dfrac{60 \\times 0.15}{0.10} = 90\\ \\text{mL}$.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\text{H}_2\\text{SO}_4 + 2\\text{KOH} \\rightarrow \\text{K}_2\\text{SO}_4 + 2\\text{H}_2\\text{O}$\n$n(\\text{H}_2\\text{SO}_4)=0.20\\times30=6.0\\ \\text{mmol}$\n$n(\\text{KOH})=2\\times6.0=12.0\\ \\text{mmol}$\n$V(\\text{KOH})=12.0/0.30=40\\ \\text{mL}$",
+  "distractor_notes": "A: treats sulfuric acid as monoprotic. C: assumes equal volumes are needed. D: applies the diprotic factor twice."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

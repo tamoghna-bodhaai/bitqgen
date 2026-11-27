@@ -1,0 +1,68 @@
+{
+ "qno": 54,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 54,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Basicity of amines in aqueous vs gas phase",
+  "archetype": "compare structures",
+  "brief": "Rank a set including aniline, ethylamine, guanidine-type and an amide-related nitrogen by basicity in water; must combine inductive, resonance and solvation effects.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:39",
+   "2026s1:57",
+   "2025s1:34"
+  ]
+ },
+ "status": "ok",
+ "stem": "For guanidine, ethylamine, trimethylamine, aniline and acetamide, which pair gives the basicity order (strongest to weakest) in the gas phase and in water, respectively?",
+ "options": [
+  "Gas: guanidine > trimethylamine > ethylamine > aniline > acetamide; water: guanidine > ethylamine > trimethylamine > aniline > acetamide",
+  "Gas: guanidine > ethylamine > trimethylamine > aniline > acetamide; water: guanidine > ethylamine > trimethylamine > aniline > acetamide",
+  "Gas: guanidine > trimethylamine > ethylamine > aniline > acetamide; water: guanidine > trimethylamine > ethylamine > aniline > acetamide",
+  "Gas: guanidine > trimethylamine > ethylamine > acetamide > aniline; water: guanidine > ethylamine > trimethylamine > acetamide > aniline"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Gas-phase proton affinity favors trimethylamine over ethylamine; in water, stronger solvation makes ethylamine more basic. Guanidine is strongest, while aniline is more basic than acetamide in both phases. This matches (A).",
+   "answer": "A",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In the gas phase, alkyl substitution raises proton affinity, so trimethylamine > ethylamine. In water, better solvation of ethylammonium reverses this pair. Guanidinium is resonance-stabilized; lone-pair delocalization weakens aniline and acetamide.\n\nIndependent check: Gas-phase proton affinity favors trimethylamine over ethylamine; in water, stronger solvation makes ethylamine more basic. Guanidine is strongest, while aniline is more basic than acetamide in both phases. This matches (A).",
+ "solution": "Guanidine is strongest due to resonance stabilization of guanidinium; resonance delocalization makes aniline and especially acetamide weaker bases.\nIn the gas phase, alkyl substitution increases proton affinity: $\\text{trimethylamine}>\\text{ethylamine}$.\nIn water, better solvation of ethylammonium reverses this order: $\\text{ethylamine}>\\text{trimethylamine}$.\nThus the respective orders are $\\text{guanidine}>\\text{trimethylamine}>\\text{ethylamine}>\\text{aniline}>\\text{acetamide}$ and $\\text{guanidine}>\\text{ethylamine}>\\text{trimethylamine}>\\text{aniline}>\\text{acetamide}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For guanidine, ethylamine, trimethylamine, aniline and acetamide, which pair gives the basicity order (strongest to weakest) in the gas phase and in water, respectively?",
+  "options": [
+   "Gas: guanidine > trimethylamine > ethylamine > aniline > acetamide; water: guanidine > ethylamine > trimethylamine > aniline > acetamide",
+   "Gas: guanidine > ethylamine > trimethylamine > aniline > acetamide; water: guanidine > ethylamine > trimethylamine > aniline > acetamide",
+   "Gas: guanidine > trimethylamine > ethylamine > aniline > acetamide; water: guanidine > trimethylamine > ethylamine > aniline > acetamide",
+   "Gas: guanidine > trimethylamine > ethylamine > acetamide > aniline; water: guanidine > ethylamine > trimethylamine > acetamide > aniline"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "In the gas phase, alkyl substitution raises proton affinity, so trimethylamine > ethylamine. In water, better solvation of ethylammonium reverses this pair. Guanidinium is resonance-stabilized; lone-pair delocalization weakens aniline and acetamide.",
+  "distractor_notes": "B applies the aqueous solvation order to the gas phase; C applies the gas-phase alkylamine order in water; D reverses the relative basicity of aniline and acetamide."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

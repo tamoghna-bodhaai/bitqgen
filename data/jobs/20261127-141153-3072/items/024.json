@@ -1,0 +1,68 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Equilibrium of concurrent forces",
+  "archetype": "force resolution",
+  "brief": "Three coplanar forces in equilibrium, two at stated angles; resolve along axes and find the magnitude of the third force (keep angles standard like 30°, 60°).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:29",
+   "2026s1:7",
+   "2026s2:25"
+  ]
+ },
+ "status": "ok",
+ "stem": "Three coplanar concurrent forces are in equilibrium. Two forces of $6$ N and $8$ N act at angles of $0^\\circ$ and $90^\\circ$, respectively, to the positive $x$-axis. What is the magnitude of the third force?",
+ "options": [
+  "$6\\ \\text{N}$",
+  "$8\\ \\text{N}$",
+  "$14\\ \\text{N}$",
+  "$10\\ \\text{N}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The first two forces have resultant magnitude \\(\\sqrt{6^2+8^2}=10\\,\\text{N}\\). The third force must be equal and opposite to this resultant.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$F_3=\\left|-(6\\hat{i}+8\\hat{j})\\right|=\\sqrt{6^2+8^2}=10\\ \\text{N}$\n\nIndependent check: The first two forces have resultant magnitude \\(\\sqrt{6^2+8^2}=10\\,\\text{N}\\). The third force must be equal and opposite to this resultant.",
+ "solution": "For equilibrium, the third force must be equal and opposite to the resultant of the first two forces.\n$$F_3=\\sqrt{6^2+8^2}=10\\,\\text{N}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Three coplanar concurrent forces are in equilibrium. Two forces of $6$ N and $8$ N act at angles of $0^\\circ$ and $90^\\circ$, respectively, to the positive $x$-axis. What is the magnitude of the third force?",
+  "options": [
+   "$6\\ \\text{N}$",
+   "$8\\ \\text{N}$",
+   "$10\\ \\text{N}$",
+   "$14\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$F_3=\\left|-(6\\hat{i}+8\\hat{j})\\right|=\\sqrt{6^2+8^2}=10\\ \\text{N}$",
+  "distractor_notes": "A: takes only the horizontal component; B: takes only the vertical component; D: adds the force magnitudes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

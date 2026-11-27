@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Choose the word opposite in meaning to the word given in capital letters.\n\n**FRUGAL**",
+ "stem": "Choose the word opposite in meaning to the word given in capital letters.\n\n**EPHEMERAL**",
  "options": [
-  "Thrifty",
-  "Extravagant",
-  "Parsimonious",
-  "Economical"
+  "Transient",
+  "Enduring",
+  "Momentary",
+  "Fleeting"
  ],
  "answer": "B",
  "figure": null,
@@ -33,9 +33,9 @@
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Frugal means sparing/economical with money. Thrifty, parsimonious, and economical are all synonyms; extravagant (spending wastefully) is the opposite.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Ephemeral” means short-lived; “enduring” means lasting.",
    "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -43,25 +43,26 @@
    "difficulty": 1
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "1. Understand the given word:\n   - **Frugal** means sparing or economical with regard to money, resources, or food; practicing strict economy.\n\n2. Evaluate each option:\n   - **Thrifty**: Using money and other resources carefully and not wastefully (synonym of *frugal*).\n   - **Extravagant**: Lacking restraint in spending money or resources; reckless and wasteful (direct antonym of *frugal*).\n   - **Parsimonious**: Extremely unwilling to spend money; excessively frugal or stingy (near-synonym of *frugal*).\n   - **Economical**: Avoiding waste; careful and prudent in spending (synonym of *frugal*).\n\nTherefore, **Extravagant** is the correct antonym.\n\nIndependent check: Frugal means sparing/economical with money. Thrifty, parsimonious, and economical are all synonyms; extravagant (spending wastefully) is the opposite.",
+ "working": "Ephemeral means lasting for a very short time. Enduring means lasting over a long period, so it is the antonym. Transient, momentary and fleeting are synonyms of ephemeral.\n\nIndependent check: “Ephemeral” means short-lived; “enduring” means lasting.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Choose the word opposite in meaning to the word given in capital letters.\n\n**FRUGAL**",
+  "stem": "Choose the word opposite in meaning to the word given in capital letters.\n\n**EPHEMERAL**",
   "options": [
-   "Thrifty",
-   "Extravagant",
-   "Parsimonious",
-   "Economical"
+   "Transient",
+   "Enduring",
+   "Momentary",
+   "Fleeting"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "1. Understand the given word:\n   - **Frugal** means sparing or economical with regard to money, resources, or food; practicing strict economy.\n\n2. Evaluate each option:\n   - **Thrifty**: Using money and other resources carefully and not wastefully (synonym of *frugal*).\n   - **Extravagant**: Lacking restraint in spending money or resources; reckless and wasteful (direct antonym of *frugal*).\n   - **Parsimonious**: Extremely unwilling to spend money; excessively frugal or stingy (near-synonym of *frugal*).\n   - **Economical**: Avoiding waste; careful and prudent in spending (synonym of *frugal*).\n\nTherefore, **Extravagant** is the correct antonym.",
-  "distractor_notes": "- Option A (Thrifty) is a direct synonym denoting careful financial habits.\n- Option C (Parsimonious) is a near-synonym denoting an extreme unwillingness to spend money.\n- Option D (Economical) is a synonym meaning efficient and non-wasteful with expenditure.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "Ephemeral means lasting for a very short time. Enduring means lasting over a long period, so it is the antonym. Transient, momentary and fleeting are synonyms of ephemeral.",
+  "distractor_notes": "A: synonym of ephemeral. C: synonym of ephemeral. D: synonym of ephemeral."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

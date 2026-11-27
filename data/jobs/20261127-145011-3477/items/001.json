@@ -1,0 +1,70 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Half-life and mean life",
+  "archetype": "single-formula numerical",
+  "brief": "Given the half-life, find the mean life (or vice versa) of a radionuclide; single relation τ = T½/ln2.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:27",
+   "2022:29",
+   "2025s1:8"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A radionuclide has a half-life of $6.93$ min. Taking $\\text{ln}2=0.693$, its mean life is",
+ "options": [
+  "$4.80$ min",
+  "$10.0$ min",
+  "$6.93$ min",
+  "$13.86$ min"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mean life $\\tau=t_{1/2}/\\ln 2=6.93/0.693=10.0$ min.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\tau=\\dfrac{T_{1/2}}{\\text{ln}2}=\\dfrac{6.93}{0.693}=10.0$ min\n\nIndependent check: Mean life $\\tau=t_{1/2}/\\ln 2=6.93/0.693=10.0$ min.",
+ "solution": "Mean life is related to half-life by $\\tau=\\dfrac{T_{1/2}}{\\ln 2}$. Thus,\n$$\\tau=\\dfrac{6.93}{0.693}=10.0\\text{ min}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A radionuclide has a half-life of $6.93$ min. Taking $\\text{ln}2=0.693$, its mean life is",
+  "options": [
+   "$4.80$ min",
+   "$6.93$ min",
+   "$10.0$ min",
+   "$13.86$ min"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\tau=\\dfrac{T_{1/2}}{\\text{ln}2}=\\dfrac{6.93}{0.693}=10.0$ min",
+  "distractor_notes": "A: uses $T_{1/2}\\text{ln}2$; B: equates mean life with half-life; D: uses $2T_{1/2}$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

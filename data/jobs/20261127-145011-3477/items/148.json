@@ -1,0 +1,71 @@
+{
+ "qno": 148,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 148,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix multiplication",
+  "archetype": "multiply-and-simplify",
+  "brief": "Two 2x2 (or 3x3) matrices given; compute a product like AB or (AB)^2 and read off an entry or trace",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:121",
+   "2022:99",
+   "2024s1:105"
+  ],
+  "origin": "variant",
+  "bank_ref": "g4a6a0a990aa5"
+ },
+ "status": "ok",
+ "stem": "For $A=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$ and $B=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$, find $\\operatorname{tr}((AB)^2)$.",
+ "options": [
+  "$17$",
+  "$21$",
+  "$18$",
+  "$25$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "AB=[[4,2],[1,1]], so (AB)^2=[[18,10],[5,3]] and its trace is 18+3=21.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$AB=\\begin{bmatrix}4&2\\\\1&1\\end{bmatrix}$\n$(AB)^2=\\begin{bmatrix}18&10\\\\5&3\\end{bmatrix}$\n$\\operatorname{tr}((AB)^2)=18+3=21$\n\nIndependent check: AB=[[4,2],[1,1]], so (AB)^2=[[18,10],[5,3]] and its trace is 18+3=21.",
+ "solution": "$$AB=\\begin{bmatrix}4&2\\\\1&1\\end{bmatrix},\\qquad (AB)^2=\\begin{bmatrix}18&10\\\\5&3\\end{bmatrix}$$\nHence, $\\operatorname{tr}((AB)^2)=18+3=21$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $A=\\begin{bmatrix}1&2\\\\0&1\\end{bmatrix}$ and $B=\\begin{bmatrix}2&0\\\\1&1\\end{bmatrix}$, find $\\operatorname{tr}((AB)^2)$.",
+  "options": [
+   "$17$",
+   "$18$",
+   "$21$",
+   "$25$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$AB=\\begin{bmatrix}4&2\\\\1&1\\end{bmatrix}$\n$(AB)^2=\\begin{bmatrix}18&10\\\\5&3\\end{bmatrix}$\n$\\operatorname{tr}((AB)^2)=18+3=21$",
+  "distractor_notes": "A: omits the off-diagonal contributions when squaring. B: gives only the upper-left entry of $(AB)^2$. D: squares $\\operatorname{tr}(AB)$ instead of taking the trace after squaring."
+ },
+ "variant_of": "g4a6a0a990aa5",
+ "author_model": "openai/gpt-6-luna-pro"
+}

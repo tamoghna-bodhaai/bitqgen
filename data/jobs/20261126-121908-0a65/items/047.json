@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "For a zero-order reaction $\\text{A} \\rightarrow \\text{products}$, the rate constant is $4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$. If the initial concentration of $\\text{A}$ is $0.60\\ \\text{mol L}^{-1}$, the concentration of $\\text{A}$ remaining after $50\\ \\text{s}$ is",
+ "stem": "A zero-order reaction has $[\\text{A}]_0 = 0.48\\ \\text{mol L}^{-1}$ and $k = 8.0\\times10^{-4}\\ \\text{mol L}^{-1}\\text{s}^{-1}$. How long will it take for $\\text{A}$ to be completely consumed?",
  "options": [
-  "$0.20\\ \\text{mol L}^{-1}$",
-  "$0.30\\ \\text{mol L}^{-1}$",
-  "$0.40\\ \\text{mol L}^{-1}$",
-  "$0.80\\ \\text{mol L}^{-1}$"
+  "$300\\ \\text{s}$",
+  "$480\\ \\text{s}$",
+  "$600\\ \\text{s}$",
+  "$1200\\ \\text{s}$"
  ],
  "answer": "C",
  "figure": null,
@@ -34,8 +34,8 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Zero-order integrated law: [A] = [A]0 − kt = 0.60 − (4.0×10⁻³)(50) = 0.60 − 0.20 = 0.40 mol L⁻¹.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a zero-order reaction, t = [A]0/k = 0.48/(8.0×10^-4) = 600 s.",
    "answer": "C",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "For a zero-order reaction:\n$$[\\text{A}]_t = [\\text{A}]_0 - kt$$\nGiven:\n$$[\\text{A}]_0 = 0.60\\ \\text{mol L}^{-1}$$\n$$k = 4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$$\n$$t = 50\\ \\text{s}$$\n\nSubstitute the given values:\n$$[\\text{A}]_t = 0.60 - (4.0 \\times 10^{-3} \\times 50) = 0.60 - 0.20 = 0.40\\ \\text{mol L}^{-1}$$\n\nIndependent check: Zero-order integrated law: [A] = [A]0 − kt = 0.60 − (4.0×10⁻³)(50) = 0.60 − 0.20 = 0.40 mol L⁻¹.",
+ "working": "$[\\text{A}]_t=[\\text{A}]_0-kt$; at complete consumption, $[\\text{A}]_t=0$.\\\n$t=\\dfrac{[\\text{A}]_0}{k}=\\dfrac{0.48}{8.0\\times10^{-4}}=600\\ \\text{s}$.\n\nIndependent check: For a zero-order reaction, t = [A]0/k = 0.48/(8.0×10^-4) = 600 s.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "For a zero-order reaction $\\text{A} \\rightarrow \\text{products}$, the rate constant is $4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$. If the initial concentration of $\\text{A}$ is $0.60\\ \\text{mol L}^{-1}$, the concentration of $\\text{A}$ remaining after $50\\ \\text{s}$ is",
+  "stem": "A zero-order reaction has $[\\text{A}]_0 = 0.48\\ \\text{mol L}^{-1}$ and $k = 8.0\\times10^{-4}\\ \\text{mol L}^{-1}\\text{s}^{-1}$. How long will it take for $\\text{A}$ to be completely consumed?",
   "options": [
-   "$0.20\\ \\text{mol L}^{-1}$",
-   "$0.30\\ \\text{mol L}^{-1}$",
-   "$0.40\\ \\text{mol L}^{-1}$",
-   "$0.80\\ \\text{mol L}^{-1}$"
+   "$300\\ \\text{s}$",
+   "$480\\ \\text{s}$",
+   "$600\\ \\text{s}$",
+   "$1200\\ \\text{s}$"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "For a zero-order reaction:\n$$[\\text{A}]_t = [\\text{A}]_0 - kt$$\nGiven:\n$$[\\text{A}]_0 = 0.60\\ \\text{mol L}^{-1}$$\n$$k = 4.0 \\times 10^{-3}\\ \\text{mol L}^{-1}\\text{s}^{-1}$$\n$$t = 50\\ \\text{s}$$\n\nSubstitute the given values:\n$$[\\text{A}]_t = 0.60 - (4.0 \\times 10^{-3} \\times 50) = 0.60 - 0.20 = 0.40\\ \\text{mol L}^{-1}$$",
-  "distractor_notes": "Option A calculates the amount consumed ($kt = 0.20\\ \\text{mol L}^{-1}$) instead of the concentration remaining.\nOption B assumes $50\\ \\text{s}$ corresponds to one half-life and halves the initial concentration ($[\\text{A}]_0 / 2 = 0.30\\ \\text{mol L}^{-1}$).\nOption D makes a sign error by adding the reacted amount to the initial concentration ($[\\text{A}]_0 + kt = 0.80\\ \\text{mol L}^{-1}$).",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$[\\text{A}]_t=[\\text{A}]_0-kt$; at complete consumption, $[\\text{A}]_t=0$.\\\n$t=\\dfrac{[\\text{A}]_0}{k}=\\dfrac{0.48}{8.0\\times10^{-4}}=600\\ \\text{s}$.",
+  "distractor_notes": "A: uses half the initial concentration; B: rounds $k$ to $1.0\\times10^{-3}$; D: doubles the required time."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

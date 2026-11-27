@@ -1,0 +1,71 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Forming numbers with restrictions",
+  "archetype": "case-wise counting",
+  "brief": "Count the number of n-digit numbers formed from a given digit multiset satisfying a condition such as divisibility by 5 or digits in increasing order; split into cases.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:128",
+   "2025s1:121",
+   "2025s1:120"
+  ],
+  "origin": "variant",
+  "bank_ref": "g962e260d71ea"
+ },
+ "status": "ok",
+ "stem": "How many six-digit numbers divisible by $5$ can be obtained by rearranging all the digits of $110025$?",
+ "options": [
+  "$66$",
+  "$48$",
+  "$78$",
+  "$90$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Ending in 0: 5!/2! − 4!/2! = 48. Ending in 5: 5!/(2!2!) − 4!/2! = 18. Total = 66.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Last digit $0$: $\\dfrac{5!}{2!}-\\dfrac{4!}{2!}=48$. Last digit $5$: $\\dfrac{5!}{2!2!}-\\dfrac{4!}{2!}=18$. Total $=48+18=66$.\n\nIndependent check: Ending in 0: 5!/2! − 4!/2! = 48. Ending in 5: 5!/(2!2!) − 4!/2! = 18. Total = 66.",
+ "solution": "A number divisible by $5$ must end in $0$ or $5$.\nEnding in $0$: $\\dfrac{5!}{2!}-\\dfrac{4!}{2!}=48$; ending in $5$: $\\dfrac{5!}{2!2!}-\\dfrac{4!}{2!}=18$.\nHence, total numbers $=48+18=66$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many six-digit numbers divisible by $5$ can be obtained by rearranging all the digits of $110025$?",
+  "options": [
+   "$48$",
+   "$66$",
+   "$78$",
+   "$90$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Last digit $0$: $\\dfrac{5!}{2!}-\\dfrac{4!}{2!}=48$. Last digit $5$: $\\dfrac{5!}{2!2!}-\\dfrac{4!}{2!}=18$. Total $=48+18=66$.",
+  "distractor_notes": "A: counts only numbers ending in $0$; C: fails to exclude leading zero when the last digit is $5$; D: fails to exclude leading zero in both cases."
+ },
+ "variant_of": "g962e260d71ea",
+ "author_model": "openai/gpt-6-luna-pro"
+}

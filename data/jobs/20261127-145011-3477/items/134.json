@@ -1,0 +1,70 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola equation",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of a parabola with given focus and directrix (or vertex and axis), then answer a property of it",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:94",
+   "2021:115",
+   "2022:106"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A parabola has focus $(3,1)$ and directrix $x=-1$. What is the length of its latus rectum?",
+ "options": [
+  "$8$",
+  "$4$",
+  "$2$",
+  "$16$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The focus is 4 units from the directrix, so the vertex-to-focus distance is 2. The latus rectum length is 4p = 8.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The vertex is the midpoint between the focus and directrix along the axis: $(1,1)$. Thus $p=2$ and $(y-1)^2=4p(x-1)$. Latus rectum length $=4p=8$.\n\nIndependent check: The focus is 4 units from the directrix, so the vertex-to-focus distance is 2. The latus rectum length is 4p = 8.",
+ "solution": "The vertex lies midway between the focus and directrix, so the vertex-to-focus distance is $p=2$.\nThe length of the latus rectum is $4p=4(2)=8$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A parabola has focus $(3,1)$ and directrix $x=-1$. What is the length of its latus rectum?",
+  "options": [
+   "$2$",
+   "$4$",
+   "$8$",
+   "$16$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The vertex is the midpoint between the focus and directrix along the axis: $(1,1)$. Thus $p=2$ and $(y-1)^2=4p(x-1)$. Latus rectum length $=4p=8$.",
+  "distractor_notes": "A: gives $p$. B: gives $2p$. D: uses $8p$ instead of $4p$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

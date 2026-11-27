@@ -1,0 +1,79 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Excess pressure in soap bubble",
+  "archetype": "single-formula numerical",
+  "brief": "Soap bubble of given radius and surface tension; find the excess pressure inside using 4S/r; diagram can show the bubble with inner/outer radii.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:2",
+   "2021:35",
+   "2022:2"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf8b9a1aeebf8"
+ },
+ "status": "ok",
+ "stem": "A soap bubble has radius $4.0$ cm and an excess pressure of $3.0$ Pa. As shown in the figure, determine the surface tension of the soap solution.",
+ "options": [
+  "$0.015$ N m$^{-1}$",
+  "$0.060$ N m$^{-1}$",
+  "$0.030$ N m$^{-1}$",
+  "$0.120$ N m$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q023_stem_v0.png",
+  "width_pct": 45,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a soap bubble, ΔP = 4T/R. Thus T = (3.0 Pa)(0.040 m)/4 = 0.030 N m⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P_i-P_o=\\dfrac{4S}{R}$\n$S=\\dfrac{(3.0)(0.040)}{4}=0.030$ N m$^{-1}$\n\nIndependent check: For a soap bubble, ΔP = 4T/R. Thus T = (3.0 Pa)(0.040 m)/4 = 0.030 N m⁻¹.",
+ "solution": "For a soap bubble, the excess pressure is $\\Delta P=\\dfrac{4S}{R}$.\n$$S=\\frac{\\Delta P\\,R}{4}=\\frac{(3.0)(0.040)}{4}=0.030\\ \\text{N m}^{-1}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A soap bubble has radius $4.0$ cm and an excess pressure of $3.0$ Pa. As shown in the figure, determine the surface tension of the soap solution.",
+  "options": [
+   "$0.015$ N m$^{-1}$",
+   "$0.030$ N m$^{-1}$",
+   "$0.060$ N m$^{-1}$",
+   "$0.120$ N m$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a circular cross-section of a thin spherical soap bubble as two closely spaced concentric circles. Label the region inside the inner circle $P_i$ and the region outside the outer circle $P_o$. Draw a straight radial line from the centre to the middle of the film and label it $R = 4.0$ cm. Add a note beside the bubble: $P_i - P_o = 3.0$ Pa. Do not include surface tension or any equation.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$P_i-P_o=\\dfrac{4S}{R}$\n$S=\\dfrac{(3.0)(0.040)}{4}=0.030$ N m$^{-1}$",
+  "distractor_notes": "A: Uses an extra factor of 2 in the denominator. C: Uses the liquid-drop formula $2S/R$. D: Uses $S=(P_i-P_o)R$, omitting the factor of 4."
+ },
+ "variant_of": "gf8b9a1aeebf8",
+ "author_model": "openai/gpt-6-luna-pro"
+}

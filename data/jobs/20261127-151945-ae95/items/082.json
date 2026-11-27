@@ -1,0 +1,71 @@
+{
+ "qno": 82,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 82,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Subject-verb agreement",
+  "archetype": "spot the error",
+  "brief": "Simple sentence where the verb disagrees with its subject (e.g., 'The list of items are...'); student picks the erroneous part, with 'no error' not among options.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:91",
+   "2023s2:66",
+   "2025s1:62"
+  ],
+  "origin": "variant",
+  "bank_ref": "g82df2f058f30"
+ },
+ "status": "ok",
+ "stem": "Identify the part of the sentence that contains an error.\n\n(a) The bouquet of fresh roses / (b) were placed on the reception desk / (c) before the guests arrived / (d) in the evening.",
+ "options": [
+  "The bouquet of fresh roses",
+  "were placed on the reception desk",
+  "before the guests arrived",
+  "in the evening"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Bouquet” is singular, so the verb should be “was,” not “were.”",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The head subject is singular: “bouquet.” It requires “was placed,” not “were placed.” The other parts are correct.\n\nIndependent check: “Bouquet” is singular, so the verb should be “was,” not “were.”",
+ "solution": "The head subject “bouquet” is singular, so it takes the singular verb “was,” not “were.”",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Identify the part of the sentence that contains an error.\n\n(a) The bouquet of fresh roses / (b) were placed on the reception desk / (c) before the guests arrived / (d) in the evening.",
+  "options": [
+   "The bouquet of fresh roses",
+   "were placed on the reception desk",
+   "before the guests arrived",
+   "in the evening"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "The head subject is singular: “bouquet.” It requires “was placed,” not “were placed.” The other parts are correct.",
+  "distractor_notes": "A: The subject phrase is grammatically correct. C: The time clause is correct. D: The concluding time phrase is correct."
+ },
+ "variant_of": "g82df2f058f30",
+ "author_model": "openai/gpt-6-luna"
+}

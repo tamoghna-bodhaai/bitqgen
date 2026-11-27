@@ -22,12 +22,12 @@
  "status": "ok",
  "stem": "For $\\sin\\dfrac{d}{2}\\ne0$, the sum $\\cos\\alpha+\\cos(\\alpha+d)+\\cdots+\\cos(\\alpha+(n-1)d)$ is",
  "options": [
-  "$\\dfrac{\\sin\\dfrac{nd}{2}}{\\sin\\dfrac{d}{2}}\\cos\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$",
-  "$\\dfrac{\\sin\\dfrac{(n-1)d}{2}}{\\sin\\dfrac{d}{2}}\\cos\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$",
   "$\\dfrac{\\sin\\dfrac{nd}{2}}{\\sin\\dfrac{d}{2}}\\sin\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$",
+  "$\\dfrac{\\sin\\dfrac{(n-1)d}{2}}{\\sin\\dfrac{d}{2}}\\cos\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$",
+  "$\\dfrac{\\sin\\dfrac{nd}{2}}{\\sin\\dfrac{d}{2}}\\cos\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$",
   "$\\dfrac{\\sin\\dfrac{nd}{2}}{\\cos\\dfrac{d}{2}}\\cos\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -46,7 +46,7 @@
  "attempts": 1,
  "notes": [],
  "working": "$2\\sin\\dfrac d2\\cos(\\alpha+kd)=\\sin\\left(\\alpha+(k+\\dfrac12)d\\right)-\\sin\\left(\\alpha+(k-\\dfrac12)d\\right)$.\nSumming for $k=0,\\ldots,n-1$ and using the sine-difference identity gives $\\displaystyle\\frac{\\sin\\dfrac{nd}{2}}{\\sin\\dfrac d2}\\cos\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$.\n\nIndependent check: Using the sum-to-product identity for a cosine progression, the sum is \\(\\frac{\\sin(nd/2)}{\\sin(d/2)}\\cos\\left(\\alpha+\\frac{(n-1)d}{2}\\right)\\), which matches (A).",
- "solution": "",
+ "solution": "Using $2\\sin\\dfrac d2\\cos(\\alpha+kd)=\\sin\\left(\\alpha+(k+\\tfrac12)d\\right)-\\sin\\left(\\alpha+(k-\\tfrac12)d\\right)$, sum over $k=0,1,\\ldots,n-1$; the sine terms telescope.\n$$\\sum_{k=0}^{n-1}\\cos(\\alpha+kd)=\\frac{\\sin\\dfrac{nd}{2}}{\\sin\\dfrac d2}\\cos\\left(\\alpha+\\dfrac{(n-1)d}{2}\\right)$$\nHence the expression is (C).",
  "locked": false,
  "difficulty": 2,
  "draft": {

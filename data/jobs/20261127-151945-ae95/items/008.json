@@ -1,0 +1,71 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile trajectory equation",
+  "archetype": "compare-with-standard-form",
+  "brief": "Compare a given trajectory equation y = ax – bx² with the standard form to extract the angle of projection.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:14",
+   "2025s2:17",
+   "2025s1:17"
+  ],
+  "origin": "variant",
+  "bank_ref": "g9d70d4404168"
+ },
+ "status": "ok",
+ "stem": "A projectile moves over level ground without air resistance. Its trajectory is $y = \\dfrac{x}{\\sqrt{3}} - \\dfrac{x^2}{15}$, where $x$ and $y$ are in metres. The angle of projection to the horizontal is:",
+ "options": [
+  "$15^\\circ$",
+  "$30^\\circ$",
+  "$45^\\circ$",
+  "$60^\\circ$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Comparing with y = x tan(theta) - [g/(2u^2 cos^2(theta))]x^2 gives tan(theta) = 1/sqrt(3), so theta = 30 degrees.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y=x\\tan\\theta-\\dfrac{g x^2}{2u^2\\cos^2\\theta}$\n$\\tan\\theta=\\dfrac{1}{\\sqrt{3}}$\n$\\therefore\\ \\theta=30^\\circ$\n\nIndependent check: Comparing with y = x tan(theta) - [g/(2u^2 cos^2(theta))]x^2 gives tan(theta) = 1/sqrt(3), so theta = 30 degrees.",
+ "solution": "The projectile trajectory is $y=x\\tan\\theta-\\dfrac{g x^2}{2u^2\\cos^2\\theta}$, so the coefficient of $x$ gives\n$$\\tan\\theta=\\dfrac{1}{\\sqrt{3}}\\implies\\theta=30^\\circ.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A projectile moves over level ground without air resistance. Its trajectory is $y = \\dfrac{x}{\\sqrt{3}} - \\dfrac{x^2}{15}$, where $x$ and $y$ are in metres. The angle of projection to the horizontal is:",
+  "options": [
+   "$15^\\circ$",
+   "$30^\\circ$",
+   "$45^\\circ$",
+   "$60^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$y=x\\tan\\theta-\\dfrac{g x^2}{2u^2\\cos^2\\theta}$\n$\\tan\\theta=\\dfrac{1}{\\sqrt{3}}$\n$\\therefore\\ \\theta=30^\\circ$",
+  "distractor_notes": "A: Confuses the coefficient with an angle in radians or misreads it. B: Correct. C: Assumes equal horizontal and vertical projection components. D: Uses the reciprocal of the coefficient as the tangent."
+ },
+ "variant_of": "g9d70d4404168",
+ "author_model": "openai/gpt-6-luna-pro"
+}

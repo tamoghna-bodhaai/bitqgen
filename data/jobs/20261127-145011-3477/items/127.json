@@ -1,0 +1,56 @@
+{
+ "qno": 127,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 127,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "brief": "Find the image of a point in a given line using the reflection formula; verify by checking the midpoint lies on the line",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:114",
+   "2026s1:104",
+   "2023s2:116"
+  ],
+  "origin": "direct",
+  "bank_ref": "g22240dbfe6dc"
+ },
+ "status": "ok",
+ "stem": "The image of the point $(6, 1)$ in the straight line $2x - 3y + 4 = 0$ is",
+ "options": [
+  "$(4, 4)$",
+  "$(2, 7)$",
+  "$(-2, 3)$",
+  "$(10, -5)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "qwen/qwen4-max",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g22240dbfe6dc (verified in job 20261126-121821-a29c)"
+ ],
+ "working": "Let the image of the point $P(x_1, y_1) = (6, 1)$ in the line $ax + by + c = 2x - 3y + 4 = 0$ be $Q(x, y)$.\\n\\nUsing the reflection formula:\\n$$\\dfrac{x - x_1}{a} = \\dfrac{y - y_1}{b} = -2\\dfrac{ax_1 + by_1 + c}{a^2 + b^2}$$\\n\\nHere, $a = 2$, $b = -3$, and $c = 4$. Evaluating the expression:\\n$$ax_1 + by_1 + c = 2(6) - 3(1) + 4 = 12 - 3 + 4 = 13$$\\n$$a^2 + b^2 = 2^2 + (-3)^2 = 4 + 9 = 13$$\\n\\nThus,\\n$$\\dfrac{x - 6}{2} = \\dfrac{y - 1}{-3} = -2\\left(\\dfrac{13}{13}\\right) = -2$$\\n\\nSolving for $x$ and $y$:\\n$$x - 6 = 2(-2) = -4 \\implies x = 2$$\\n$$y - 1 = -3(-2) = 6 \\implies y = 7$$\\n\\nHence, the coordinates of the image are $(2, 7)$.\n\nIndependent check: Reflection formula: d = (2·6 − 3·1 + 4)/(2² + 3²) = 13/13 = 1. Image = (6 − 2·2·1, 1 − 2·(−3)·1) = (2, 7). Verified midpoint (4,4) lies on the line.",
+ "solution": "For reflection of $(x_1,y_1)$ in $ax+by+c=0$, use $(x,y)=(x_1,y_1)-2d(a,b)$, where $d=\\dfrac{ax_1+by_1+c}{a^2+b^2}$.\n$$d=\\frac{2(6)-3(1)+4}{2^2+(-3)^2}=1,\\qquad (x,y)=(6,1)-2(1)(2,-3)=(2,7).$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g22240dbfe6dc",
+ "author_model": null
+}

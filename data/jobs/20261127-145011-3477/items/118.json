@@ -1,0 +1,56 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Coplanarity of lines",
+  "archetype": "determinant condition",
+  "brief": "Given lines in symmetric form, check whether they intersect / are coplanar via the determinant condition and find the answer option",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:123",
+   "2026s1:128",
+   "2025s2:106"
+  ],
+  "origin": "direct",
+  "bank_ref": "gb19912cfa443"
+ },
+ "status": "ok",
+ "stem": "If the line of intersection of the planes $2x - y = 1$ and $3y - 2z = 1$ is coplanar with the line $\\dfrac{x-1}{1} = \\dfrac{y}{2} = \\dfrac{z}{p}$, then the value of $p$ is",
+ "options": [
+  "$3$",
+  "$2$",
+  "$4$",
+  "$5$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank gb19912cfa443 (verified in job 20261127-122012-292e)"
+ ],
+ "working": "Normals: $\\mathbf{n_1}=(2,-1,0)$, $\\mathbf{n_2}=(0,3,-2)$. Direction of intersection line $L_1$: $\\mathbf{d_1} = \\mathbf{n_1} \\times \\mathbf{n_2} = (2,4,6) \\parallel (1,2,3)$. A point on $L_1$: put $x=0 \\Rightarrow y=-1,\\ z=-2$, so $A(0,-1,-2)$. $L_2$: passes through $B(1,0,0)$, direction $\\mathbf{d_2}=(1,2,p)$. $\\mathbf{AB} = (1,1,2)$. Coplanarity: $[\\mathbf{AB},\\mathbf{d_1},\\mathbf{d_2}]=0$: $$\\begin{vmatrix} 1 & 1 & 2 \\\r 1 & 2 & 3 \\\r 1 & 2 & p \\end{vmatrix} = 1(2p-6)-1(p-3)+2(2-2) = p-3=0 \\Rightarrow p=3.$$\n\nIndependent check: The first line passes through (1,1,1) with direction (1,2,3). The second passes through (1,0,0) with direction (1,2,p). Coplanarity requires (0,-1,-1)·[(1,2,3)×(1,2,p)] = p−3 = 0, so p=3.",
+ "solution": "The intersection line has direction $\\mathbf d_1=(2,-1,0)\\times(0,3,-2)\\parallel(1,2,3)$ and passes through $A(0,-1,-2)$. The second line passes through $B(1,0,0)$ with direction $\\mathbf d_2=(1,2,p)$.\nFor coplanarity, $\\overrightarrow{AB},\\mathbf d_1,\\mathbf d_2$ must be coplanar, so\n$$\\begin{vmatrix}1&1&2\\\\1&2&3\\\\1&2&p\\end{vmatrix}=p-3=0.$$\nHence $p=3$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "gb19912cfa443",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

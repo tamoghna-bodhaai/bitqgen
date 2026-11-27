@@ -1,0 +1,71 @@
+{
+ "qno": 33,
+ "section": "Physics",
+ "slot": {
+  "qno": 33,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Magnetic field due to finite wire / polygon loop",
+  "archetype": "superposition numerical",
+  "brief": "Find B at the centre of a regular polygon of wire carrying current, using superposition of the finite-segment formula.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:30",
+   "2024s1:13",
+   "2025s2:22"
+  ],
+  "origin": "variant",
+  "bank_ref": "g0b3f715824ae"
+ },
+ "status": "ok",
+ "stem": "A square wire loop of side $20$ cm carries a current $I$. If the magnetic field at its centre is $40\\sqrt{2}\\ \\mu$T, the value of $I$ is:",
+ "options": [
+  "$10$ A",
+  "$5$ A",
+  "$20$ A",
+  "$40$ A"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For each side, the centre is a distance 0.1 m away and the endpoint angles are 45°. Thus the total field is B = 4[μ₀I/(4π·0.1)](2 sin 45°) = 4√2 I μT. Equating to 40√2 μT gives I = 10 A.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=0.10$ m; each side subtends $45^\\circ$ at either end.\n$B=4\\left(\\dfrac{\\mu_0 I}{4\\pi a}(2\\sin45^\\circ)\\right)=\\dfrac{\\mu_0 I\\sqrt{2}}{\\pi a}=4\\sqrt{2}I\\ \\mu$T.\n$4\\sqrt{2}I=40\\sqrt{2}\\;\\Rightarrow\\; I=10$ A.\n\nIndependent check: For each side, the centre is a distance 0.1 m away and the endpoint angles are 45°. Thus the total field is B = 4[μ₀I/(4π·0.1)](2 sin 45°) = 4√2 I μT. Equating to 40√2 μT gives I = 10 A.",
+ "solution": "For one side, $B_1=\\dfrac{\\mu_0 I}{4\\pi a}(2\\sin45^\\circ)$, where $a=0.10\\,\\text{m}$. Thus, for four sides,\n$$B=4B_1=4\\sqrt{2}I\\,\\mu\\text{T}.$$\nEquating to $40\\sqrt{2}\\,\\mu\\text{T}$ gives $I=10\\,\\text{A}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A square wire loop of side $20$ cm carries a current $I$. If the magnetic field at its centre is $40\\sqrt{2}\\ \\mu$T, the value of $I$ is:",
+  "options": [
+   "$5$ A",
+   "$10$ A",
+   "$20$ A",
+   "$40$ A"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$a=0.10$ m; each side subtends $45^\\circ$ at either end.\n$B=4\\left(\\dfrac{\\mu_0 I}{4\\pi a}(2\\sin45^\\circ)\\right)=\\dfrac{\\mu_0 I\\sqrt{2}}{\\pi a}=4\\sqrt{2}I\\ \\mu$T.\n$4\\sqrt{2}I=40\\sqrt{2}\\;\\Rightarrow\\; I=10$ A.",
+  "distractor_notes": "A: uses half the required current, omitting two sides.\nC: doubles the required current, miscounting the contributions from each side.\nD: overestimates the field per side by a factor of four."
+ },
+ "variant_of": "g0b3f715824ae",
+ "author_model": "openai/gpt-6-luna-pro"
+}

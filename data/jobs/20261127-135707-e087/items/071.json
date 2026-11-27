@@ -1,0 +1,76 @@
+{
+ "qno": 71,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 71,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Freundlich adsorption isotherm",
+  "archetype": "graph slope reading",
+  "brief": "Figure shows log(x/m) vs log P straight line; extract the slope, interpret what it means about saturation, and identify valid Freundlich statements.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:39",
+   "2023s2:46",
+   "2021:60"
+  ]
+ },
+ "status": "ok",
+ "stem": "The straight-line plot is as shown in the figure. Which statement correctly interprets the Freundlich isotherm?",
+ "options": [
+  "The slope is $2$; hence $1/n=2$, and adsorption approaches a limiting value as $P$ increases.",
+  "The slope is $1/2$; hence $n=2$, and the model predicts no saturation as $P$ increases.",
+  "The slope is $1/2$; hence $n=1/2$, and the amount adsorbed is independent of $P$.",
+  "The slope is $-1/2$; hence adsorption decreases as $P$ increases."
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q071_stem_v0.png",
+  "width_pct": 50,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the Freundlich isotherm, log₁₀(x/m) = log₁₀ k + (1/n)log₁₀P. The graph’s slope is (1 − (−1))/(2 − (−2)) = 1/2, so n = 2. The power-law model predicts no saturation as P increases.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Slope $=\\dfrac{1-(-1)}{2-(-2)}=\\dfrac12=\\dfrac1n$; hence $n=2$. $x/m=kP^{1/2}$, which has no finite saturation limit as $P\\to\\infty$.\n\nIndependent check: For the Freundlich isotherm, log₁₀(x/m) = log₁₀ k + (1/n)log₁₀P. The graph’s slope is (1 − (−1))/(2 − (−2)) = 1/2, so n = 2. The power-law model predicts no saturation as P increases.",
+ "solution": "For the Freundlich isotherm, $\\log(x/m)=\\log k+\\frac{1}{n}\\log P$, so the plot’s slope equals $1/n$.\n$$\\frac{1-(-1)}{2-(-2)}=\\frac{1}{2}=\\frac{1}{n}\\quad\\Rightarrow\\quad n=2$$\nThus $x/m=kP^{1/2}$, which predicts no finite saturation limit as $P$ increases.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The straight-line plot is as shown in the figure. Which statement correctly interprets the Freundlich isotherm?",
+  "options": [
+   "The slope is $2$; hence $1/n=2$, and adsorption approaches a limiting value as $P$ increases.",
+   "The slope is $1/2$; hence $n=2$, and the model predicts no saturation as $P$ increases.",
+   "The slope is $1/2$; hence $n=1/2$, and the amount adsorbed is independent of $P$.",
+   "The slope is $-1/2$; hence adsorption decreases as $P$ increases."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a two-dimensional graph with horizontal axis labeled $\\log_{10}P$, with ticks at $-2$, $0$ and $2$, and vertical axis labeled $\\log_{10}(x/m)$, with ticks at $-1$, $0$ and $1$. Draw a straight line through the points $(-2,-1)$, $(0,0)$ and $(2,1)$. Do not label the slope.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "Slope $=\\dfrac{1-(-1)}{2-(-2)}=\\dfrac12=\\dfrac1n$; hence $n=2$. $x/m=kP^{1/2}$, which has no finite saturation limit as $P\\to\\infty$.",
+  "distractor_notes": "A: uses the reciprocal slope and assumes saturation; C: confuses $n$ with $1/n$ and claims pressure independence; D: reverses the graph’s positive slope."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

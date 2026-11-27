@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Lyophobic sols are easily coagulated by electrolytes. Which of the following substances acts as a protective colloid to prevent their coagulation?",
+ "stem": "A lyophobic sulphur sol is to be kept stable during storage. Which additive can act as a protective colloid?",
  "options": [
-  "Arsenic sulfide",
-  "Gelatin",
-  "Ferric hydroxide",
-  "Aluminium chloride"
+  "Gum arabic",
+  "Sodium chloride",
+  "Calcium nitrate",
+  "Potassium sulfate"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Protective colloids are lyophilic (solvent-loving) colloids that coat lyophobic sol particles and stabilize them against electrolytes. Gelatin is lyophilic and is the classic protective colloid (cf. gold number). As2S3 and Fe(OH)3 are themselves lyophobic sols; AlCl3 is an electrolyte that causes coagulation.",
-   "answer": "B",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Gum arabic is a lyophilic colloid that can protect a lyophobic sulphur sol from coagulation. The salts are electrolytes that may coagulate it.",
+   "answer": "A",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Lyophobic sols (such as metal sulfides and hydroxides) are inherently unstable and readily coagulate upon the addition of electrolytes. \n\nWhen a lyophilic sol is added to a lyophobic sol, the lyophilic particles form a protective sheath around the lyophobic particles, shielding them from coagulating ions. The lyophilic colloid used for this purpose is called a protective colloid.\n\nAmong the given choices:\n- Gelatin is a lyophilic colloid with high protective power (very low gold number, $\\approx 0.005\\text{--}0.01\\ \\text{mg}$).\n- Arsenic sulfide and ferric hydroxide are lyophobic sols that require protection and cannot act as protective colloids.\n- Aluminium chloride is an electrolyte that induces coagulation (acting as a flocculating agent via $\\text{Al}^{3+}$ ions by the Hardy–Schulze rule).\n\nHence, gelatin acts as a protective colloid.\n\nIndependent check: Protective colloids are lyophilic (solvent-loving) colloids that coat lyophobic sol particles and stabilize them against electrolytes. Gelatin is lyophilic and is the classic protective colloid (cf. gold number). As2S3 and Fe(OH)3 are themselves lyophobic sols; AlCl3 is an electrolyte that causes coagulation.",
+ "working": "Gum arabic is lyophilic and can protect lyophobic sol particles from coagulation.\n\nIndependent check: Gum arabic is a lyophilic colloid that can protect a lyophobic sulphur sol from coagulation. The salts are electrolytes that may coagulate it.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Lyophobic sols are easily coagulated by electrolytes. Which of the following substances acts as a protective colloid to prevent their coagulation?",
+  "stem": "A lyophobic sulphur sol is to be kept stable during storage. Which additive can act as a protective colloid?",
   "options": [
-   "Arsenic sulfide",
-   "Gelatin",
-   "Ferric hydroxide",
-   "Aluminium chloride"
+   "Gum arabic",
+   "Sodium chloride",
+   "Calcium nitrate",
+   "Potassium sulfate"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "Lyophobic sols (such as metal sulfides and hydroxides) are inherently unstable and readily coagulate upon the addition of electrolytes. \n\nWhen a lyophilic sol is added to a lyophobic sol, the lyophilic particles form a protective sheath around the lyophobic particles, shielding them from coagulating ions. The lyophilic colloid used for this purpose is called a protective colloid.\n\nAmong the given choices:\n- Gelatin is a lyophilic colloid with high protective power (very low gold number, $\\approx 0.005\\text{--}0.01\\ \\text{mg}$).\n- Arsenic sulfide and ferric hydroxide are lyophobic sols that require protection and cannot act as protective colloids.\n- Aluminium chloride is an electrolyte that induces coagulation (acting as a flocculating agent via $\\text{Al}^{3+}$ ions by the Hardy–Schulze rule).\n\nHence, gelatin acts as a protective colloid.",
-  "distractor_notes": "Option A encodes confusing the lyophobic sol that needs protection (a negative sol) with the protecting agent.\nOption C encodes confusing another lyophobic sol (a positive sol) with the protecting agent.\nOption D encodes confusing a coagulating electrolyte with a protective colloid.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Gum arabic is lyophilic and can protect lyophobic sol particles from coagulation.",
+  "distractor_notes": "B: mistakes an electrolyte for a protective colloid. C: mistakes an electrolyte for a protective colloid. D: mistakes an electrolyte for a protective colloid."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

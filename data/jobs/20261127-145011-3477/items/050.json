@@ -1,0 +1,56 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Empirical/molecular formula",
+  "archetype": "mole-concept numerical",
+  "brief": "Combustion analysis or reaction of a compound: given masses of products, find the mass of an element or moles of a reactant consumed",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:57",
+   "2026s2:55",
+   "2022:52"
+  ],
+  "origin": "direct",
+  "bank_ref": "gaa6accdf42cc"
+ },
+ "status": "ok",
+ "stem": "A compound contains 40.0% carbon, 6.7% hydrogen and 53.3% oxygen by mass. Its molar mass is $180\\ \\text{g mol}^{-1}$. The molecular formula of the compound is",
+ "options": [
+  "C$_6$H$_{12}$O$_6$",
+  "C$_5$H$_{10}$O$_5$",
+  "C$_4$H$_8$O$_4$",
+  "C$_3$H$_6$O$_3$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "A",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank gaa6accdf42cc (verified in job 20261127-115414-780e)"
+ ],
+ "working": "Assume 100 g: C = 40/12 = 3.33 mol; H = 6.7/1 = 6.7 mol; O = 53.3/16 = 3.33 mol. Ratio C:H:O ≈ 1:2:1 → empirical formula CH₂O, empirical mass = 30. n = 180/30 = 6 → C₆H₁₂O₆.\n\nIndependent check: For 100 g: C:H:O ≈ 3.33:6.7:3.33 ≈ 1:2:1, giving empirical formula CH₂O (30 g mol⁻¹). The molecular formula is (CH₂O)₆ = C₆H₁₂O₆.",
+ "solution": "For 100 g of compound, the mole ratio is $\\frac{40}{12}:\\frac{6.7}{1}:\\frac{53.3}{16} \\approx 1:2:1$, so the empirical formula is $\\mathrm{CH_2O}$ (molar mass $30\\ \\mathrm{g\\ mol^{-1}}$).\\\\\n$$n=\\frac{180}{30}=6,\\qquad (\\mathrm{CH_2O})_6=\\mathrm{C_6H_{12}O_6}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "gaa6accdf42cc",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "The escape speed from the surface of a spherical planet is $14.14\\text{ km s}^{-1}$. The orbital speed of a satellite revolving in a circular orbit close to the surface of this planet is approximately:",
+ "stem": "A satellite moves in a circular orbit just above the surface of a spherical planet at $8.0\\ \\text{km s}^{-1}$. What is the escape speed from the planet's surface?",
  "options": [
-  "$7.07\\text{ km s}^{-1}$",
-  "$10.0\\text{ km s}^{-1}$",
-  "$20.0\\text{ km s}^{-1}$",
-  "$28.28\\text{ km s}^{-1}$"
+  "$4\\sqrt{2}\\ \\text{km s}^{-1}$",
+  "$8.0\\ \\text{km s}^{-1}$",
+  "$8\\sqrt{2}\\ \\text{km s}^{-1}$",
+  "$16\\ \\text{km s}^{-1}$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "v_esc = √(2GM/R) and near-surface orbital speed v_o = √(GM/R), so v_o = v_esc/√2 = 14.14/1.414 ≈ 10.0 km/s.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a circular orbit just above the surface, the orbital speed is \\(v_c=\\sqrt{GM/R}=8.0\\ \\text{km s}^{-1}\\). Escape speed is \\(v_e=\\sqrt{2GM/R}=\\sqrt2v_c=8\\sqrt2\\ \\text{km s}^{-1}\\).",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The escape speed from the surface of a planet of mass $M$ and radius $R$ is given by:\n$$v_e = \\sqrt{\\dfrac{2GM}{R}}$$\nThe orbital speed of a satellite in a circular orbit close to the surface is:\n$$v_o = \\sqrt{\\dfrac{GM}{R}}$$\nTherefore, the two speeds are related by:\n$$v_e = \\sqrt{2}\\,v_o \\implies v_o = \\dfrac{v_e}{\\sqrt{2}}$$\nSubstituting $v_e = 14.14\\text{ km s}^{-1}$ and $\\sqrt{2} \\approx 1.414$:\n$$v_o = \\dfrac{14.14}{1.414} = 10.0\\text{ km s}^{-1}$$\n\nIndependent check: v_esc = √(2GM/R) and near-surface orbital speed v_o = √(GM/R), so v_o = v_esc/√2 = 14.14/1.414 ≈ 10.0 km/s.",
+ "working": "$v_e=\\sqrt{\\dfrac{2GM}{R}}$, $v_o=\\sqrt{\\dfrac{GM}{R}}$.\n$v_e=\\sqrt{2}\\,v_o=8\\sqrt{2}\\ \\text{km s}^{-1}$.\n\nIndependent check: For a circular orbit just above the surface, the orbital speed is \\(v_c=\\sqrt{GM/R}=8.0\\ \\text{km s}^{-1}\\). Escape speed is \\(v_e=\\sqrt{2GM/R}=\\sqrt2v_c=8\\sqrt2\\ \\text{km s}^{-1}\\).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The escape speed from the surface of a spherical planet is $14.14\\text{ km s}^{-1}$. The orbital speed of a satellite revolving in a circular orbit close to the surface of this planet is approximately:",
+  "stem": "A satellite moves in a circular orbit just above the surface of a spherical planet at $8.0\\ \\text{km s}^{-1}$. What is the escape speed from the planet's surface?",
   "options": [
-   "$7.07\\text{ km s}^{-1}$",
-   "$10.0\\text{ km s}^{-1}$",
-   "$20.0\\text{ km s}^{-1}$",
-   "$28.28\\text{ km s}^{-1}$"
+   "$4\\sqrt{2}\\ \\text{km s}^{-1}$",
+   "$8.0\\ \\text{km s}^{-1}$",
+   "$8\\sqrt{2}\\ \\text{km s}^{-1}$",
+   "$16\\ \\text{km s}^{-1}$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The escape speed from the surface of a planet of mass $M$ and radius $R$ is given by:\n$$v_e = \\sqrt{\\dfrac{2GM}{R}}$$\nThe orbital speed of a satellite in a circular orbit close to the surface is:\n$$v_o = \\sqrt{\\dfrac{GM}{R}}$$\nTherefore, the two speeds are related by:\n$$v_e = \\sqrt{2}\\,v_o \\implies v_o = \\dfrac{v_e}{\\sqrt{2}}$$\nSubstituting $v_e = 14.14\\text{ km s}^{-1}$ and $\\sqrt{2} \\approx 1.414$:\n$$v_o = \\dfrac{14.14}{1.414} = 10.0\\text{ km s}^{-1}$$",
-  "distractor_notes": "Option A corresponds to dividing by 2 instead of $\\sqrt{2}$ ($14.14 / 2 = 7.07$).\nOption C corresponds to mistakenly multiplying by $\\sqrt{2}$ instead of dividing ($14.14 \\times \\sqrt{2} \\approx 20.0$).\nOption D corresponds to multiplying by 2 ($14.14 \\times 2 = 28.28$).",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$v_e=\\sqrt{\\dfrac{2GM}{R}}$, $v_o=\\sqrt{\\dfrac{GM}{R}}$.\n$v_e=\\sqrt{2}\\,v_o=8\\sqrt{2}\\ \\text{km s}^{-1}$.",
+  "distractor_notes": "A: applies the inverse speed ratio. B: assumes escape and orbital speeds are equal. D: incorrectly doubles the orbital speed."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

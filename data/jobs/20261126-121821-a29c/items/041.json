@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A first-order reaction has a half-life of $15\\ \\text{min}$. The time required for the mass of the reactant to decrease from $64\\ \\text{g}$ to $2\\ \\text{g}$ is:",
+ "stem": "A first-order reaction has a half-life of $4\\ \\text{min}$. How long does the reactant concentration take to fall from $0.80$ to $0.10\\ \\text{mol L}^{-1}$?",
  "options": [
-  "$45\\ \\text{min}$",
-  "$60\\ \\text{min}$",
-  "$75\\ \\text{min}$",
-  "$90\\ \\text{min}$"
+  "$8\\ \\text{min}$",
+  "$16\\ \\text{min}$",
+  "$12\\ \\text{min}$",
+  "$20\\ \\text{min}$"
  ],
  "answer": "C",
  "figure": null,
@@ -34,9 +34,9 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "64 g → 2 g is a factor of 32 = 2^5, i.e. 5 half-lives. For first order, t = 5 × 15 min = 75 min.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The concentration falls by a factor of 8, or three half-lives. Time = 3 × 4 = 12 min.",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "For a first-order process, the amount of reactant remaining after $n$ half-lives is given by:\n$$\\dfrac{m_t}{m_0} = \\left(\\dfrac{1}{2}\\right)^n$$\n\nGiven $m_0 = 64\\ \\text{g}$ and $m_t = 2\\ \\text{g}$:\n$$\\dfrac{2}{64} = \\dfrac{1}{32} = \\left(\\dfrac{1}{2}\\right)^5$$\n\nTherefore, the number of half-lives is $n = 5$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 5 \\times 15\\ \\text{min} = 75\\ \\text{min}$$\n\nIndependent check: 64 g → 2 g is a factor of 32 = 2^5, i.e. 5 half-lives. For first order, t = 5 × 15 min = 75 min.",
- "solution": "",
+ "working": "$\\dfrac{0.10}{0.80}=\\dfrac18=\\left(\\dfrac12\\right)^3$\n\nIndependent check: The concentration falls by a factor of 8, or three half-lives. Time = 3 × 4 = 12 min.",
+ "solution": "For a first-order reaction, each half-life halves the concentration. Since $\\dfrac{0.10}{0.80}=\\dfrac18=\\left(\\dfrac12\\right)^3$, this takes three half-lives.\n$$t=3(4)=12\\ \\text{min}$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A first-order reaction has a half-life of $15\\ \\text{min}$. The time required for the mass of the reactant to decrease from $64\\ \\text{g}$ to $2\\ \\text{g}$ is:",
+  "stem": "A first-order reaction has a half-life of $4\\ \\text{min}$. How long does the reactant concentration take to fall from $0.80$ to $0.10\\ \\text{mol L}^{-1}$?",
   "options": [
-   "$45\\ \\text{min}$",
-   "$60\\ \\text{min}$",
-   "$75\\ \\text{min}$",
-   "$90\\ \\text{min}$"
+   "$8\\ \\text{min}$",
+   "$12\\ \\text{min}$",
+   "$16\\ \\text{min}$",
+   "$20\\ \\text{min}$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "For a first-order process, the amount of reactant remaining after $n$ half-lives is given by:\n$$\\dfrac{m_t}{m_0} = \\left(\\dfrac{1}{2}\\right)^n$$\n\nGiven $m_0 = 64\\ \\text{g}$ and $m_t = 2\\ \\text{g}$:\n$$\\dfrac{2}{64} = \\dfrac{1}{32} = \\left(\\dfrac{1}{2}\\right)^5$$\n\nTherefore, the number of half-lives is $n = 5$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 5 \\times 15\\ \\text{min} = 75\\ \\text{min}$$",
-  "distractor_notes": "Option A ($45\\ \\text{min}$) corresponds to $n = 3$ half-lives, resulting from incorrectly associating the reduction factor with $2^3$ or stopping at $8\\ \\text{g}$.\nOption B ($60\\ \\text{min}$) corresponds to $n = 4$ half-lives, an off-by-one error where the decay is stopped at $4\\ \\text{g}$.\nOption D ($90\\ \\text{min}$) corresponds to $n = 6$ half-lives, an off-by-one error where an extra half-life is counted (reducing down to $1\\ \\text{g}$).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{0.10}{0.80}=\\dfrac18=\\left(\\dfrac12\\right)^3$",
+  "distractor_notes": "A: Counts only two half-lives. C: Counts four half-lives. D: Counts five half-lives."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

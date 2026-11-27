@@ -1,0 +1,70 @@
+{
+ "qno": 140,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 140,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "parameter recovery",
+  "brief": "Binomial-type scenario (e.g., coins/dice with p given) with a stated condition such as exactly k successes being a given value or a mean; recover the unknown parameter n or p.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:93",
+   "2026s2:115",
+   "2025s2:118"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A coin with probability $p$ of heads, where $0<p<1$, is tossed independently $n$ times. If the mean number of heads is $4$ and $P(X=3)=2P(X=2)$, find $n$.",
+ "options": [
+  "$6$",
+  "$8$",
+  "$10$",
+  "$12$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For X ~ Bin(n,p), np = 4 and P(X=3)/P(X=2) = ((n-2)/3)·p/(1-p) = 2. Thus (n-2)p = 6(1-p). Using np = 4 gives 4p = 2, so p = 1/2 and n = 8.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$np=4$\n$\\dfrac{P(X=3)}{P(X=2)}=\\dfrac{n-2}{3}\\dfrac{p}{1-p}=2$\nSubstitute $p=\\dfrac{4}{n}$: $4(n-2)=6(n-4)$\n$n=8$\n\nIndependent check: For X ~ Bin(n,p), np = 4 and P(X=3)/P(X=2) = ((n-2)/3)·p/(1-p) = 2. Thus (n-2)p = 6(1-p). Using np = 4 gives 4p = 2, so p = 1/2 and n = 8.",
+ "solution": "For $X\\sim\\operatorname{Bin}(n,p)$, the mean gives $np=4$. Also,\n$$\\frac{P(X=3)}{P(X=2)}=\\frac{n-2}{3}\\frac{p}{1-p}=2.$$\nSubstituting $p=\\frac{4}{n}$ gives $4(n-2)=6(n-4)$, hence $n=8$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A coin with probability $p$ of heads, where $0<p<1$, is tossed independently $n$ times. If the mean number of heads is $4$ and $P(X=3)=2P(X=2)$, find $n$.",
+  "options": [
+   "$6$",
+   "$8$",
+   "$10$",
+   "$12$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$np=4$\n$\\dfrac{P(X=3)}{P(X=2)}=\\dfrac{n-2}{3}\\dfrac{p}{1-p}=2$\nSubstitute $p=\\dfrac{4}{n}$: $4(n-2)=6(n-4)$\n$n=8$",
+  "distractor_notes": "A: omits the ratio of the binomial coefficients; C: uses $n-1$ instead of $n-2$ in that ratio; D: omits the subtraction in $n-2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

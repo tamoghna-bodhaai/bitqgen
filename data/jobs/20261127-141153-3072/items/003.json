@@ -1,0 +1,68 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Half-life and mean life",
+  "archetype": "half-life counting",
+  "brief": "Radioactive sample with given half-life decays for a stated multiple of the half-life; find the fraction of the sample remaining (or nuclei disintegrated).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:27",
+   "2026s2:5",
+   "2024s2:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "A radioactive sample has a half-life of $6$ h. What fraction of its original nuclei remains after $24$ h?",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{1}{16}$",
+  "$\\dfrac{15}{16}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "24 h is 4 half-lives, so the remaining fraction is (1/2)^4 = 1/16.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n=\\dfrac{24}{6}=4$ half-lives. $\\dfrac{N}{N_0}=\\left(\\dfrac{1}{2}\\right)^4=\\dfrac{1}{16}$.\n\nIndependent check: 24 h is 4 half-lives, so the remaining fraction is (1/2)^4 = 1/16.",
+ "solution": "The number of half-lives elapsed is $n=\\dfrac{24}{6}=4$. Hence,\n$$\\dfrac{N}{N_0}=\\left(\\dfrac{1}{2}\\right)^4=\\dfrac{1}{16}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A radioactive sample has a half-life of $6$ h. What fraction of its original nuclei remains after $24$ h?",
+  "options": [
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{1}{8}$",
+   "$\\dfrac{1}{16}$",
+   "$\\dfrac{15}{16}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$n=\\dfrac{24}{6}=4$ half-lives. $\\dfrac{N}{N_0}=\\left(\\dfrac{1}{2}\\right)^4=\\dfrac{1}{16}$.",
+  "distractor_notes": "A: counts only one half-life. B: counts three half-lives. D: gives the fraction disintegrated rather than the fraction remaining."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

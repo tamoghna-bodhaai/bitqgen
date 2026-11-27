@@ -1,0 +1,3995 @@
+{
+ "title": "p2",
+ "pattern_id": "bitsat_150",
+ "questions": [
+  {
+   "qno": 1,
+   "section": "Physics",
+   "stem": "A $2.0\\ \\text{kg}$ block slides from rest down a rough incline through a vertical drop of $15\\ \\text{m}$. For $\\theta=37^\\circ$, $\\mu=0.30$, $\\sin37^\\circ=0.60$, $\\cos37^\\circ=0.80$ and $g=10\\ \\text{m s}^{-2}$, what percentage of its initial gravitational potential energy is dissipated by friction?",
+   "options": [
+    {
+     "text": "$22.5\\%$"
+    },
+    {
+     "text": "$30\\%$"
+    },
+    {
+     "text": "$40\\%$"
+    },
+    {
+     "text": "$60\\%$"
+    }
+   ],
+   "answer": "C",
+   "solution": "The distance travelled along the incline is $s=\\frac{h}{\\sin\\theta}=\\frac{15}{0.60}=25\\ \\text{m}$. The work done by friction is\n$$W_f=\\mu mg\\cos\\theta\\,s=0.30(2)(10)(0.80)(25)=120\\ \\text{J}.$$The initial potential energy is $mgh=300\\ \\text{J}$, so the dissipated percentage is $\\frac{120}{300}\\times100=40\\%$.",
+   "chapter": "Work, Energy and Power",
+   "subtopic": "Work done by friction on incline",
+   "archetype": "multi-step numeric",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 2,
+   "section": "Physics",
+   "stem": "A simple pendulum of length $l$ on a planet with gravitational acceleration $g$ is transferred to another planet, where its length is $\\dfrac{3l}{4}$ and gravitational acceleration is $\\dfrac{g}{3}$. What is the ratio of its new period to its original period?",
+   "options": [
+    {
+     "text": "$\\dfrac{3}{2}$"
+    },
+    {
+     "text": "$\\dfrac{3}{4}$"
+    },
+    {
+     "text": "$\\dfrac{2}{3}$"
+    },
+    {
+     "text": "$\\dfrac{9}{4}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "For a simple pendulum, $T=2\\pi\\sqrt{l/g}$. Thus,\n$$\\frac{T'}{T}=\\sqrt{\\frac{l'}{l}\\frac{g}{g'}}=\\sqrt{\\frac{3}{4}\\times 3}=\\frac{3}{2}.$$",
+   "chapter": "Oscillations",
+   "subtopic": "Pendulum with varying g",
+   "archetype": "proportionality-scaling",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 3,
+   "section": "Physics",
+   "stem": "A rod of cross-sectional area $2.0\\ \\text{cm}^2$ is stress-free at $20^\\circ\\text{C}$ and held between rigid walls. It is heated to $30^\\circ\\text{C}$. Given $Y=2.0\\times10^{11}\\ \\text{Pa}$, $\\alpha=1.2\\times10^{-5}\\ \\text{K}^{-1}$ and breaking load $24\\ \\text{kN}$, what further rise in temperature will just break it? Assume it remains elastic up to breaking.",
+   "options": [
+    {
+     "text": "$30^\\circ\\text{C}$"
+    },
+    {
+     "text": "$40^\\circ\\text{C}$"
+    },
+    {
+     "text": "$50^\\circ\\text{C}$"
+    },
+    {
+     "text": "$60^\\circ\\text{C}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For a rod held between rigid walls, thermal stress is $\\sigma=Y\\alpha\\Delta T$. The breaking stress is $\\sigma_b=\\dfrac{24\\times10^3}{2.0\\times10^{-4}}=1.2\\times10^8\\,\\text{Pa}$.\n$$\\Delta T_b=\\frac{\\sigma_b}{Y\\alpha}=50\\,\\text{K}$$\nIt has already risen by $10^\\circ\\text{C}$, so the further rise is $50-10=40^\\circ\\text{C}$.",
+   "chapter": "Thermal Properties of Matter",
+   "subtopic": "Thermal stress",
+   "archetype": "multi-step numeric",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 4,
+   "section": "Physics",
+   "stem": "In still air, a source moves toward stationary observer Q while observer P, behind the source, moves in the same direction at speed $\\dfrac{c}{5}$, where $c$ is the speed of sound. The source recedes from P and approaches Q. If the ratio of the frequencies heard at Q and P is $25:18$, find the source speed as a fraction of $c$.",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{5}$"
+    },
+    {
+     "text": "$\\dfrac{1}{2}$"
+    },
+    {
+     "text": "$\\dfrac{1}{3}$"
+    },
+    {
+     "text": "$\\dfrac{1}{4}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For a moving source and moving observer, $f_Q=f_0\\dfrac{c}{c-u}$ and $f_P=f_0\\dfrac{c+c/5}{c+u}$.\nLet $x=u/c$. Then\n$$\\frac{f_Q}{f_P}=\\frac{5(1+x)}{6(1-x)}=\\frac{25}{18},$$\nwhich gives $x=\\dfrac14$. Thus the source speed is $\\dfrac{c}{4}$.",
+   "chapter": "Waves",
+   "subtopic": "Doppler effect",
+   "archetype": "ratio comparison",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 5,
+   "section": "Physics",
+   "stem": "A stone is dropped from the top of a $100$ m tower. Two seconds later, another stone is thrown vertically downward from the same point at $30$ m s$^{-1}$. When do they meet after the second stone is thrown? Take $g=10$ m s$^{-2}$.",
+   "options": [
+    {
+     "text": "$1$ s"
+    },
+    {
+     "text": "$2$ s"
+    },
+    {
+     "text": "$3$ s"
+    },
+    {
+     "text": "$4$ s"
+    }
+   ],
+   "answer": "B",
+   "solution": "Let $t$ be the time after the second stone is thrown. Their downward displacements from the tower top are $5(t+2)^2$ and $30t+5t^2$, respectively.\n$$5(t+2)^2=30t+5t^2\\Rightarrow t=2\\text{ s}$$",
+   "chapter": "Kinematics",
+   "subtopic": "Motion under gravity",
+   "archetype": "two-equation kinematics",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 6,
+   "section": "Physics",
+   "stem": "A point charge $q$ is placed at one vertex of a cube. What is the electric flux through any one face of the cube that does not contain the charged vertex?",
+   "options": [
+    {
+     "text": "$\\dfrac{q}{12\\varepsilon_0}$"
+    },
+    {
+     "text": "$\\dfrac{q}{8\\varepsilon_0}$"
+    },
+    {
+     "text": "$\\dfrac{q}{6\\varepsilon_0}$"
+    },
+    {
+     "text": "$\\dfrac{q}{24\\varepsilon_0}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Join eight identical cubes around the charged vertex, placing the charge at the centre of the larger cube. By Gauss’s law, the flux through each small cube is $q/(8\\varepsilon_0)$.\nThe three faces containing the charge have zero flux; symmetry divides the remaining flux equally among the other three faces:\n$$\\Phi_{\\text{face}}=\\frac{q}{3}\\cdot\\frac{1}{8\\varepsilon_0}=\\frac{q}{24\\varepsilon_0}.$$",
+   "chapter": "Electrostatics",
+   "subtopic": "Gauss's law and symmetry",
+   "archetype": "symmetry argument",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 7,
+   "section": "Physics",
+   "stem": "The molar masses of helium and oxygen are $4$ g mol$^{-1}$ and $32$ g mol$^{-1}$, respectively. At what temperature will helium have the same rms speed as oxygen at $300$ K?",
+   "options": [
+    {
+     "text": "$37.5$ K"
+    },
+    {
+     "text": "$75$ K"
+    },
+    {
+     "text": "$150$ K"
+    },
+    {
+     "text": "$600$ K"
+    }
+   ],
+   "answer": "A",
+   "solution": "Since $v_{\\text{rms}}=\\sqrt{3RT/M}$, equal rms speeds require equal $T/M$.\n$$\\frac{T_{\\text{He}}}{4}=\\frac{300}{32}\\quad\\Rightarrow\\quad T_{\\text{He}}=37.5\\text{ K}$$",
+   "chapter": "Kinetic Theory of Gases",
+   "subtopic": "rms speed vs molar mass",
+   "archetype": "proportionality-scaling",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 8,
+   "section": "Physics",
+   "stem": "A wire has resistance $3\\ \\Omega$. It is stretched uniformly to twice its original length, with its volume and resistivity unchanged. What is its new resistance?",
+   "options": [
+    {
+     "text": "$6\\ \\Omega$"
+    },
+    {
+     "text": "$18\\ \\Omega$"
+    },
+    {
+     "text": "$12\\ \\Omega$"
+    },
+    {
+     "text": "$24\\ \\Omega$"
+    }
+   ],
+   "answer": "C",
+   "solution": "With volume constant, doubling the length halves the cross-sectional area: $A'=A/2$.\n$$R'=\\frac{\\rho(2L)}{A/2}=4R=4(3)=12\\ \\Omega$$",
+   "chapter": "Current Electricity",
+   "subtopic": "Resistance on stretching",
+   "archetype": "volume-constant scaling",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 9,
+   "section": "Physics",
+   "stem": "A $2\\ \\mu$F capacitor charged to $12$ V is connected in parallel, with like plates together, to an uncharged $4\\ \\mu$F capacitor. Find the charge transferred to the uncharged capacitor and the fraction of the initial energy lost.",
+   "options": [
+    {
+     "text": "$16\\ \\mu$C, $\\dfrac{2}{3}$"
+    },
+    {
+     "text": "$8\\ \\mu$C, $\\dfrac{1}{3}$"
+    },
+    {
+     "text": "$24\\ \\mu$C, $\\dfrac{2}{3}$"
+    },
+    {
+     "text": "$16\\ \\mu$C, $\\dfrac{1}{3}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Charge is conserved, so the common final voltage is $V_f=\\dfrac{(2)(12)}{2+4}=4\\text{ V}$. Hence the charge on the $4\\,\\mu\\text{F}$ capacitor is $q=(4)(4)=16\\,\\mu\\text{C}$.\nInitial and final energies are $U_i=\\dfrac12(2)(12^2)=144\\,\\mu\\text{J}$ and $U_f=\\dfrac12(6)(4^2)=48\\,\\mu\\text{J}$.\nThus the fraction of energy lost is $\\dfrac{U_i-U_f}{U_i}=\\dfrac{144-48}{144}=\\dfrac23$.",
+   "chapter": "Capacitance",
+   "subtopic": "Charge sharing energy loss",
+   "archetype": "before/after energy",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 10,
+   "section": "Physics",
+   "stem": "The radii of two planets $P$ and $Q$ are in the ratio $2:3$, and their escape speeds are in the ratio $2:3$. What is the ratio of their surface accelerations due to gravity, $g_P:g_Q$?",
+   "options": [
+    {
+     "text": "$1:3$"
+    },
+    {
+     "text": "$4:3$"
+    },
+    {
+     "text": "$2:3$"
+    },
+    {
+     "text": "$3:2$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Using $v_e^2=2gR$, we have $g\\propto \\dfrac{v_e^2}{R}$.\n$$\\frac{g_P}{g_Q}=\\left(\\frac{2}{3}\\right)^2\\frac{3}{2}=\\frac{2}{3}$$",
+   "chapter": "Gravitation",
+   "subtopic": "g in terms of density",
+   "archetype": "proportionality-scaling",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 11,
+   "section": "Physics",
+   "stem": "An insulated calorimeter of water equivalent $10$ g and $30$ g of ice are initially at $-10^\\circ$C. Steam at $100^\\circ$C is passed into it. If $10$ g of steam is added, find the final temperature. Take $c_{\\text{ice}}=0.5\\ \\text{cal}\\,\\text{g}^{-1}\\,{}^\\circ\\text{C}^{-1}$, $c_{\\text{water}}=1\\ \\text{cal}\\,\\text{g}^{-1}\\,{}^\\circ\\text{C}^{-1}$, $L_f=80\\ \\text{cal}\\,\\text{g}^{-1}$ and $L_v=540\\ \\text{cal}\\,\\text{g}^{-1}$.",
+   "options": [
+    {
+     "text": "$68.75^\\circ\\text{C}$"
+    },
+    {
+     "text": "$75^\\circ\\text{C}$"
+    },
+    {
+     "text": "$96.25^\\circ\\text{C}$"
+    },
+    {
+     "text": "$100^\\circ\\text{C}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "Heat released by steam equals heat absorbed by ice and the calorimeter. Since the final temperature is above $0^\\circ\\text{C}$, the ice first warms and melts, then the water and calorimeter warm to $T$.\n$$10[540+(100-T)]=30(0.5)(10)+30(80)+40T$$\nThus $6400-10T=2550+40T$, giving $T=77^\\circ\\text{C}$.",
+   "chapter": "Thermal Properties of Matter",
+   "subtopic": "Calorimetry with phase change",
+   "archetype": "multi-step numeric",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 12,
+   "section": "Physics",
+   "stem": "At an instant, a particle of mass $3$ kg has position $\\mathbf r=(2,-1,1)$ m and velocity $\\mathbf v=(1,2,0)$ m s$^{-1}$. The net force is $\\mathbf F=(2,1,-1)$ N. Which ordered pair gives its angular momentum and torque about the origin, respectively?",
+   "options": [
+    {
+     "text": "$\\bigl((6,-3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,-4,4)\\ \\text{N m}\\bigr)$"
+    },
+    {
+     "text": "$\\bigl((-6,3,-15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$"
+    },
+    {
+     "text": "$\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,-4)\\ \\text{N m}\\bigr)$"
+    },
+    {
+     "text": "$\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Angular momentum and torque about the origin are $4\\mathbf L=\\mathbf r\\times m\\mathbf v,\\qquad \\boldsymbol\\tau=\\mathbf r\\times\\mathbf F.4$\n$$\\mathbf L=(2,-1,1)\\times(3,6,0)=(-6,3,15),\\qquad \\boldsymbol\\tau=(2,-1,1)\\times(2,1,-1)=(0,4,4).$$\nThus the ordered pair is $\\bigl((-6,3,15)\\ \\text{kg m}^2\\text{s}^{-1},(0,4,4)\\ \\text{N m}\\bigr)$.",
+   "chapter": "Rotational Motion",
+   "subtopic": "Angular momentum of a particle",
+   "archetype": "vector cross product",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 13,
+   "section": "Physics",
+   "stem": "An electron is accelerated from rest through a potential difference of $600$ V, while an $\\alpha$ particle is accelerated from rest through $300$ V. Given that the $\\alpha$ particle has charge $+2e$ and mass $4m_p$, what is the ratio $\\lambda_e/\\lambda_\\alpha$?",
+   "options": [
+    {
+     "text": "$2\\sqrt{\\dfrac{m_p}{m_e}}$"
+    },
+    {
+     "text": "$\\sqrt{\\dfrac{m_p}{m_e}}$"
+    },
+    {
+     "text": "$\\dfrac{1}{2}\\sqrt{\\dfrac{m_p}{m_e}}$"
+    },
+    {
+     "text": "$4\\sqrt{\\dfrac{m_p}{m_e}}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "The de Broglie wavelength is $[?]$",
+   "chapter": "Dual Nature of Radiation and Matter",
+   "subtopic": "de Broglie wavelength of accelerated charges",
+   "archetype": "ratio of two situations",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 14,
+   "section": "Physics",
+   "stem": "For dilute ideal gases (with vibrations inactive where relevant), consider: I. A linear rigid diatomic molecule has mean translational-plus-rotational energy $\\frac{5}{2}kT$. II. At the same pressure and temperature, gases of the same molecular diameter have mean free path proportional to the square root of molecular mass. III. Under those same conditions, their mean free time between collisions is proportional to the square root of molecular mass. IV. At fixed number density, mean free path is proportional to absolute temperature. Which choice gives all and only the correct statements?",
+   "options": [
+    {
+     "text": "I and II only"
+    },
+    {
+     "text": "II and IV only"
+    },
+    {
+     "text": "I and III only"
+    },
+    {
+     "text": "I, III and IV"
+    }
+   ],
+   "answer": "C",
+   "solution": "For a linear rigid diatomic molecule, $f=3+2$, so $\\bar E=\\frac{f}{2}kT=\\frac{5}{2}kT$; I is true.\n$$\\lambda=\\frac{1}{\\sqrt{2}\\pi d^2 n}=\\frac{kT}{\\sqrt{2}\\pi d^2p}$$\nThus $\\lambda$ is independent of molecular mass at fixed $p,T,d$ and independent of temperature at fixed $n$, so II and IV are false. Since $\\bar v\\propto m^{-1/2}$, $\\tau=\\lambda/\\bar v\\propto\\sqrt m$ under the stated conditions; III is true.",
+   "chapter": "Kinetic Theory of Gases",
+   "subtopic": "Mean free path / mean free time",
+   "archetype": "statement evaluation",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 15,
+   "section": "Physics",
+   "stem": "A projectile follows the trajectory $y=\\sqrt{3}\\,x-\\dfrac{x^2}{20\\ \\text{m}}$, where $x$ and $y$ are coordinates in metres. Taking $g=10\\ \\text{m s}^{-2}$, what are its horizontal range and maximum height, respectively?",
+   "options": [
+    {
+     "text": "$(20\\sqrt{3}\\ \\text{m},\\ 5\\ \\text{m})$"
+    },
+    {
+     "text": "$(20\\sqrt{3}\\ \\text{m},\\ 30\\ \\text{m})$"
+    },
+    {
+     "text": "$(10\\sqrt{3}\\ \\text{m},\\ 15\\ \\text{m})$"
+    },
+    {
+     "text": "$(20\\sqrt{3}\\ \\text{m},\\ 15\\ \\text{m})$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For $y=ax-bx^2$, the range is $a/b$ and the maximum height is $a^2/(4b)$. Here, $a=\\sqrt{3}$ and $b=1/(20\\ \\text{m})$.\n$$R=20\\sqrt{3}\\ \\text{m},\\qquad H_{\\max}=\\frac{3}{4/(20\\ \\text{m})}=15\\ \\text{m}$$",
+   "chapter": "Kinematics",
+   "subtopic": "Projectile trajectory equation",
+   "archetype": "compare-with-standard-form",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 16,
+   "section": "Physics",
+   "stem": "A smooth incline at $30^\\circ$ to the horizontal is fixed inside a lift accelerating upward at $2$ m s$^{-2}$. A block is released on the incline. Taking $g=10$ m s$^{-2}$, what is its acceleration relative to the incline?",
+   "options": [
+    {
+     "text": "$4$ m s$^{-2}$ down the incline"
+    },
+    {
+     "text": "$6$ m s$^{-2}$ down the incline"
+    },
+    {
+     "text": "$5$ m s$^{-2}$ down the incline"
+    },
+    {
+     "text": "$12$ m s$^{-2}$ down the incline"
+    }
+   ],
+   "answer": "B",
+   "solution": "In the lift frame, the effective gravitational acceleration is $g_{\\text{eff}}=g+a_{\\text{lift}}=10+2=12\\,\\text{m s}^{-2}$ downward.\n$$a_{\\text{relative}}=g_{\\text{eff}}\\sin30^\\circ=12\\times\\frac12=6\\,\\text{m s}^{-2}$$\nThus, the block accelerates down the incline at $6\\,\\text{m s}^{-2}$.",
+   "chapter": "Laws of Motion",
+   "subtopic": "Lift problems",
+   "archetype": "force resolution",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 17,
+   "section": "Physics",
+   "stem": "The same charged particle enters a uniform magnetic field at $30^\\circ$ to the field with speed $v$ and field magnitude $B$. In a second case its speed is $2v$, its angle to the field is $60^\\circ$, and the field magnitude is $2B$. What are the ratios of second-case to first-case pitch and radius, respectively?",
+   "options": [
+    {
+     "text": "$(\\sqrt{3},\\ 1/\\sqrt{3})$"
+    },
+    {
+     "text": "$(1/\\sqrt{3},\\ \\sqrt{3})$"
+    },
+    {
+     "text": "$(1/2,\\ 2)$"
+    },
+    {
+     "text": "$(2,\\ 1/2)$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For helical motion, $p=\\dfrac{2\\pi m v\\cos\\theta}{|q|B}$ and $r=\\dfrac{m v\\sin\\theta}{|q|B}$.\n$$\\frac{p_2}{p_1}=\\frac{2\\cos60^\\circ}{2\\cos30^\\circ}=\\frac{1}{\\sqrt3},\\qquad \\frac{r_2}{r_1}=\\frac{2\\sin60^\\circ}{2\\sin30^\\circ}=\\sqrt3$$",
+   "chapter": "Moving Charges and Magnetism",
+   "subtopic": "Helical motion in magnetic field",
+   "archetype": "ratio comparison",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 18,
+   "section": "Physics",
+   "stem": "A square coil and a circular coil each have $N$ turns, carry the same current $I$, and have equal perimeters. What is the ratio of the magnetic field magnitude at the square coil's centre to that at the circular coil's centre?",
+   "options": [
+    {
+     "text": "$\\dfrac{\\pi^2}{8\\sqrt{2}}$"
+    },
+    {
+     "text": "$\\dfrac{4\\sqrt{2}}{\\pi^2}$"
+    },
+    {
+     "text": "$\\dfrac{8\\sqrt{2}}{\\pi}$"
+    },
+    {
+     "text": "$\\dfrac{8\\sqrt{2}}{\\pi^2}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For a square of side $a$, the field at the centre is $B_s=\\dfrac{2\\sqrt{2}\\mu_0NI}{\\pi a}$. Equal perimeters give the circular coil radius $R=\\dfrac{2a}{\\pi}$, hence $B_c=\\dfrac{\\mu_0NI}{2R}=\\dfrac{\\pi\\mu_0NI}{4a}$. Therefore,\n$$\\frac{B_s}{B_c}=\\frac{8\\sqrt{2}}{\\pi^2}$$",
+   "chapter": "Moving Charges and Magnetism",
+   "subtopic": "Magnetic field due to finite wire / polygon loop",
+   "archetype": "superposition numerical",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 19,
+   "section": "Physics",
+   "stem": "An ideal $12$ V Zener regulator has a $180\\ \\Omega$ series resistor. The input varies from $18$ V to $24$ V, and the load varies from $720\\ \\Omega$ to $1440\\ \\Omega$. The Zener operates from $5\\ \\text{mA}$ to $60\\ \\text{mA}$ and is rated at $0.75\\ \\text{W}$. Which choice gives $(I_Z,I_L,P_Z)$ at maximum Zener dissipation and correctly states whether the regulator stays within its limits over the full range?",
+   "options": [
+    {
+     "text": "$58.3\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.70\\ \\text{W}$; within limits over the full range"
+    },
+    {
+     "text": "$66.7\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.80\\ \\text{W}$; outside limits"
+    },
+    {
+     "text": "$58.3\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.70\\ \\text{W}$; outside limits"
+    },
+    {
+     "text": "$50.0\\ \\text{mA},\\ 16.7\\ \\text{mA},\\ 0.60\\ \\text{W}$; within limits"
+    }
+   ],
+   "answer": "A",
+   "solution": "The maximum Zener current occurs at maximum input voltage and maximum load resistance:\n$$I_Z=\\frac{24-12}{180}-\\frac{12}{1440}=58.3\\ \\text{mA},\\qquad I_L=8.33\\ \\text{mA}.$$\nThus $P_Z=12(0.0583)=0.70\\ \\text{W}$. At the opposite extreme, $I_{Z,\\min}=\\frac{18-12}{180}-\\frac{12}{720}=16.7\\ \\text{mA}$, so current and power remain within their limits over the full range.",
+   "chapter": "Semiconductor Electronics",
+   "subtopic": "Zener diode as voltage regulator",
+   "archetype": "circuit analysis",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 20,
+   "section": "Physics",
+   "stem": "In a YDSE, the slit separation is $0.30\\ \\text{mm}$ and the screen is $1.5\\ \\text{m}$ away. Light of wavelength $600\\ \\text{nm}$ is used. A plate of refractive index $1.5$ and thickness $2.4\\ \\mu\\text{m}$ is placed before slit A. How far from the original central maximum is the bright fringe that was fourth on A's side before insertion?",
+   "options": [
+    {
+     "text": "$12\\ \\text{mm}$"
+    },
+    {
+     "text": "$15\\ \\text{mm}$"
+    },
+    {
+     "text": "$18\\ \\text{mm}$"
+    },
+    {
+     "text": "$24\\ \\text{mm}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Fringe width is $\\beta=\\lambda D/d=(600\\times10^{-9})(1.5)/(0.30\\times10^{-3})=3\\ \\text{mm}$. The plate shifts the pattern toward slit A by $4y=(\\mu-1)tD/d=6\\ \\text{mm}=2\\beta$.\nThus the fourth bright fringe on A's side is at $4\\beta+2\\beta=18\\ \\text{mm}$ from the original central maximum.",
+   "chapter": "Wave Optics",
+   "subtopic": "YDSE fringe width",
+   "archetype": "path difference geometry",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 21,
+   "section": "Physics",
+   "stem": "In a hydrogen spectrum formed by transitions among principal levels $1$ through $N$, the ratio of the longest to the shortest emitted wavelength is $\\dfrac{135}{7}$. How many distinct spectral lines are possible?",
+   "options": [
+    {
+     "text": "$3$"
+    },
+    {
+     "text": "$6$"
+    },
+    {
+     "text": "$10$"
+    },
+    {
+     "text": "$15$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For hydrogen, $E_n\\propto -1/n^2$. Thus the longest-to-shortest wavelength ratio is\n$$\\frac{\\lambda_{\\max}}{\\lambda_{\\min}}=\\frac{E_N-E_1}{E_N-E_{N-1}}=\\frac{(N-1)^3(N+1)}{2N-1}=\\frac{135}{7},$$\nwhich gives $N=4$. Hence the number of distinct lines is $\\frac{N(N-1)}{2}=6$.",
+   "chapter": "Atoms",
+   "subtopic": "Energy level transitions",
+   "archetype": "excitation level counting",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 22,
+   "section": "Physics",
+   "stem": "A wire of length $2$ m and cross-sectional area $1.0\\times10^{-6}$ m$^2$ is suspended from a ceiling and supports a $100$ N load. If its Young's modulus is $2.0\\times10^{11}$ Pa, what is its elongation?",
+   "options": [
+    {
+     "text": "$0.5$ mm"
+    },
+    {
+     "text": "$4.0$ mm"
+    },
+    {
+     "text": "$2.0$ mm"
+    },
+    {
+     "text": "$1.0$ mm"
+    }
+   ],
+   "answer": "D",
+   "solution": "Using Young’s modulus, $Y=\\dfrac{FL}{A\\Delta L}$, so\n$$\\Delta L=\\dfrac{FL}{AY}=\\dfrac{100\\times2}{(1.0\\times10^{-6})(2.0\\times10^{11})}=1.0\\times10^{-3}\\,\\text{m}=1.0\\,\\text{mm}.$$",
+   "chapter": "Mechanical Properties of Solids",
+   "subtopic": "Young's modulus and elongation",
+   "archetype": "single-formula numerical",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 23,
+   "section": "Physics",
+   "stem": "A travelling wave is described by $y=0.02\\sin(100\\pi t-2\\pi x)$, where $x$ and $y$ are in metres and $t$ is in seconds. Which set gives its amplitude, frequency, speed and direction of propagation?",
+   "options": [
+    {
+     "text": "$0.02$ m, $50$ Hz, $25$ m s$^{-1}$, $-x$ direction"
+    },
+    {
+     "text": "$0.02$ m, $100\\pi$ Hz, $50$ m s$^{-1}$, $+x$ direction"
+    },
+    {
+     "text": "$0.02$ m, $50$ Hz, $50$ m s$^{-1}$, $+x$ direction"
+    },
+    {
+     "text": "$0.02$ m, $50$ Hz, $50$ m s$^{-1}$, $-x$ direction"
+    }
+   ],
+   "answer": "C",
+   "solution": "Comparing with $y=A\\sin(\\omega t-kx)$ gives $A=0.02$ m, $\\omega=100\\pi$ rad s$^{-1}$ and $k=2\\pi$ m$^{-1}$.\n$$f=\\frac{\\omega}{2\\pi}=50\\text{ Hz},\\qquad v=\\frac{\\omega}{k}=50\\text{ m s}^{-1}$$\nThe phase $\\omega t-kx$ indicates propagation in the $+x$ direction.",
+   "chapter": "Waves",
+   "subtopic": "Wave equation parameters",
+   "archetype": "read parameter",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 24,
+   "section": "Physics",
+   "stem": "A $3\\ \\text{cm}$ tall object is placed $30\\ \\text{cm}$ in front of a concave mirror. A sharp image on a screen is $6\\ \\text{cm}$ tall. What are the mirror's focal length and the image nature?",
+   "options": [
+    {
+     "text": "$20\\ \\text{cm}$; real, inverted, twice the object size"
+    },
+    {
+     "text": "$15\\ \\text{cm}$; real, inverted, twice the object size"
+    },
+    {
+     "text": "$20\\ \\text{cm}$; real, upright, twice the object size"
+    },
+    {
+     "text": "$40\\ \\text{cm}$; virtual, upright, twice the object size"
+    }
+   ],
+   "answer": "A",
+   "solution": "The magnification magnitude is $|m|=h_i/h_o=6/3=2$, so the image distance has magnitude $|v|=2(30)=60\\ \\text{cm}$. A sharp image on a screen is real and inverted.\n$$\\frac{1}{f}=\\frac{1}{30}+\\frac{1}{60}=\\frac{1}{20}\\quad\\Rightarrow\\quad f=20\\ \\text{cm}$$",
+   "chapter": "Ray Optics",
+   "subtopic": "Mirror formula, magnification",
+   "archetype": "single-formula numerical",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 25,
+   "section": "Physics",
+   "stem": "One mole of a monatomic ideal gas follows the cycle $A\\to B\\to C\\to A$: $A\\to B$ is isochoric, with pressure rising from $P_0$ to $2P_0$; $B\\to C$ is isothermal expansion from $V_0$ to $2V_0$; $C\\to A$ is isobaric at $P_0$. If $P_0V_0=100$ J, what is the cycle efficiency?",
+   "options": [
+    {
+     "text": "$13.4\\%$"
+    },
+    {
+     "text": "$27.9\\%$"
+    },
+    {
+     "text": "$38.6\\%$"
+    },
+    {
+     "text": "$50.0\\%$"
+    }
+   ],
+   "answer": "A",
+   "solution": "For a complete cycle, $W_{\\rm net}=W_{BC}+W_{CA}=100(2\\ln 2-1)=38.6\\,\\text{J}$. Heat is absorbed during $AB$ and $BC$:\n$$Q_{\\rm in}=\\frac{3}{2}P_0V_0+2P_0V_0\\ln 2=288.6\\,\\text{J}.$$\nThus, $\\eta=W_{\\rm net}/Q_{\\rm in}=0.134=13.4\\%$.",
+   "chapter": "Thermodynamics",
+   "subtopic": "Work in cyclic process (P–V diagram)",
+   "archetype": "area of P–V cycle",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 26,
+   "section": "Physics",
+   "stem": "A metal is illuminated with monochromatic light above its threshold frequency. If the light intensity is doubled while its frequency is kept fixed, which statements are correct? I. Threshold frequency is unchanged. II. Saturation current doubles. III. Stopping potential doubles.",
+   "options": [
+    {
+     "text": "I only"
+    },
+    {
+     "text": "II and III only"
+    },
+    {
+     "text": "I, II and III"
+    },
+    {
+     "text": "I and II only"
+    }
+   ],
+   "answer": "D",
+   "solution": "Threshold frequency depends on the metal, so it remains unchanged. Saturation current is proportional to intensity; hence it doubles.\n$$eV_s=h\\nu-\\phi$$\nSince the frequency is fixed, the stopping potential remains unchanged. Thus, I and II are correct.",
+   "chapter": "Dual Nature of Radiation and Matter",
+   "subtopic": "Photoelectric effect",
+   "archetype": "conceptual (distractor-heavy)",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 27,
+   "section": "Physics",
+   "stem": "A series LCR circuit has resistance $6\\ \\Omega$, inductive reactance $10\\ \\Omega$ and capacitive reactance $2\\ \\Omega$. Its impedance is",
+   "options": [
+    {
+     "text": "$6\\ \\Omega$"
+    },
+    {
+     "text": "$10\\ \\Omega$"
+    },
+    {
+     "text": "$8\\ \\Omega$"
+    },
+    {
+     "text": "$12\\ \\Omega$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For a series LCR circuit, $Z=\\sqrt{R^2+(X_L-X_C)^2}$. Substituting the given values,\n$$Z=\\sqrt{6^2+(10-2)^2}=10\\ \\Omega.$$",
+   "chapter": "Alternating Current",
+   "subtopic": "Series LCR circuit impedance",
+   "archetype": "formula recall",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 28,
+   "section": "Physics",
+   "stem": "A cell of emf $12\\ \\text{V}$ and internal resistance $1\\ \\Omega$ is connected to a $5\\ \\Omega$ resistor. What are the current, terminal voltage and power delivered to the resistor?",
+   "options": [
+    {
+     "text": "$2\\ \\text{A},\\ 12\\ \\text{V},\\ 24\\ \\text{W}$"
+    },
+    {
+     "text": "$2.4\\ \\text{A},\\ 12\\ \\text{V},\\ 28.8\\ \\text{W}$"
+    },
+    {
+     "text": "$2\\ \\text{A},\\ 10\\ \\text{V},\\ 20\\ \\text{W}$"
+    },
+    {
+     "text": "$2\\ \\text{A},\\ 10\\ \\text{V},\\ 24\\ \\text{W}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "The current is determined by the total resistance, including the cell’s internal resistance:\n$$I=\\frac{\\mathcal{E}}{R+r}=\\frac{12}{5+1}=2\\ \\text{A}$$\nThus, $V=IR=10\\ \\text{V}$ and $P=I^2R=20\\ \\text{W}$.",
+   "chapter": "Current Electricity",
+   "subtopic": "Internal resistance of cells",
+   "archetype": "circuit analysis",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 29,
+   "section": "Physics",
+   "stem": "The potential along the $x$-axis is $V(x)=(x^3-6x^2+9x)$ V, where $x$ is measured in metres. At which position $x>2$ m does the electric field vanish?",
+   "options": [
+    {
+     "text": "$1$ m"
+    },
+    {
+     "text": "$3$ m"
+    },
+    {
+     "text": "$2$ m"
+    },
+    {
+     "text": "$4$ m"
+    }
+   ],
+   "answer": "B",
+   "solution": "The electric field is $E_x=-\\dfrac{dV}{dx}$.\n$$E_x=-3x^2+12x-9=-3(x-1)(x-3)=0$$\nThus $x=1$ m or $x=3$ m; the condition $x>2$ selects $x=3$ m.",
+   "chapter": "Electrostatics",
+   "subtopic": "Field from potential",
+   "archetype": "differentiate potential",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 30,
+   "section": "Physics",
+   "stem": "The neutral atomic masses of a parent nucleus, its daughter nucleus and a helium atom are $226.0250$ u, $222.0174$ u and $4.0026$ u, respectively. Find the energy released in the $\\alpha$ decay. Take $1$ u $=931.5$ MeV/$c^2$.",
+   "options": [
+    {
+     "text": "$4.66$ MeV"
+    },
+    {
+     "text": "$2.33$ MeV"
+    },
+    {
+     "text": "$9.32$ MeV"
+    },
+    {
+     "text": "$0.0050$ MeV"
+    }
+   ],
+   "answer": "A",
+   "solution": "The mass defect is $.0050$ u.\n$$Q=.0050\\times 931.5=4.6575\\text{ MeV}\n$$\nHence, the energy released is approximately $4.66$ MeV.",
+   "chapter": "Nuclei",
+   "subtopic": "Binding energy",
+   "archetype": "mass-defect computation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 31,
+   "section": "Physics",
+   "stem": "Four point masses are placed at the corners of a square of side $2\\ \\text{m}$. Their coordinates and masses are $(0,0):1\\ \\text{kg}$, $(2,0):2\\ \\text{kg}$, $(0,2):3\\ \\text{kg}$ and $(2,2):4\\ \\text{kg}$. The centre of mass has coordinates",
+   "options": [
+    {
+     "text": "$(1.0\\ \\text{m},\\ 1.0\\ \\text{m})$"
+    },
+    {
+     "text": "$(1.2\\ \\text{m},\\ 1.2\\ \\text{m})$"
+    },
+    {
+     "text": "$(1.4\\ \\text{m},\\ 1.2\\ \\text{m})$"
+    },
+    {
+     "text": "$(1.2\\ \\text{m},\\ 1.4\\ \\text{m})$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For point masses, $x_{\\rm cm}=\\dfrac{\\sum m_i x_i}{\\sum m_i}$ and $y_{\\rm cm}=\\dfrac{\\sum m_i y_i}{\\sum m_i}$. With total mass $M=10\\,\\text{kg}$,\n$$x_{\\rm cm}=\\dfrac{2(2)+4(2)}{10}=1.2\\,\\text{m},\\qquad y_{\\rm cm}=\\dfrac{3(2)+4(2)}{10}=1.4\\,\\text{m}.$$\nHence, the centre of mass is $(1.2\\,\\text{m},\\ 1.4\\,\\text{m})$.",
+   "chapter": "Rotational Motion",
+   "subtopic": "Centre of mass",
+   "archetype": "weighted average",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 32,
+   "section": "Physics",
+   "stem": "Two coherent waves have maximum and minimum resultant intensities in the ratio $9:1$. At a point where their phase difference is $120^\\circ$, what is the ratio of the resultant intensity to the minimum intensity?",
+   "options": [
+    {
+     "text": "$1$"
+    },
+    {
+     "text": "$5$"
+    },
+    {
+     "text": "$3$"
+    },
+    {
+     "text": "$7$"
+    }
+   ],
+   "answer": "C",
+   "solution": "For amplitudes $a$ and $b$, $[?]$",
+   "chapter": "Wave Optics",
+   "subtopic": "YDSE intensity to position",
+   "archetype": "phase difference to intensity",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 33,
+   "section": "Physics",
+   "stem": "A conducting bar slides along parallel rails separated by $0.50$ m, completing a circuit of resistance $0.50\\ \\Omega$. The loop is in a perpendicular field $B=(0.20+0.30t)$ T, and the bar position is $x=(0.40+0.20t)$ m ($t$ in seconds). What is the power dissipated at $t=1$ s?",
+   "options": [
+    {
+     "text": "$0.0392\\ \\text{W}$"
+    },
+    {
+     "text": "$0.0162\\ \\text{W}$"
+    },
+    {
+     "text": "$0.0050\\ \\text{W}$"
+    },
+    {
+     "text": "$0.1568\\ \\text{W}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "The induced emf is $|\\mathcal{E}|=\\ell\\,\\frac{d(Bx)}{dt}=\\ell(x\\dot B+B\\dot x)$. At $t=1\\,\\text{s}$, $B=0.50\\,\\text{T}$ and $x=0.60\\,\\text{m}$, so\n$$|\\mathcal{E}|=0.50[(0.60)(0.30)+(0.50)(0.20)]=0.14\\,\\text{V}.$$\nHence $P=\\mathcal{E}^2/R=0.14^2/0.50=0.0392\\,\\text{W}$.",
+   "chapter": "Electromagnetic Induction",
+   "subtopic": "Faraday's law",
+   "archetype": "flux change over time",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 34,
+   "section": "Physics",
+   "stem": "A beam of power $9$ W strikes a stationary surface at $60^\\circ$ to its normal. One-third of the incident power is reflected specularly and the rest is absorbed. Taking $c=3.0\\times10^8$ m s$^{-1}$, find the magnitude of the force on the surface.",
+   "options": [
+    {
+     "text": "$2.00\\times10^{-8}\\ \\text{N}$"
+    },
+    {
+     "text": "$(2+\\sqrt{3})\\times10^{-8}\\ \\text{N}$"
+    },
+    {
+     "text": "$3.00\\times10^{-8}\\ \\text{N}$"
+    },
+    {
+     "text": "$\\sqrt{7}\\times10^{-8}\\ \\text{N}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For reflected fraction $r=1/3$, the normal and tangential force components are\n$$F_n=\\frac{(1+r)P\\cos60^\\circ}{c}=2.0\\times10^{-8}\\,\\text{N},\\qquad F_t=\\frac{(1-r)P\\sin60^\\circ}{c}=\\sqrt{3}\\times10^{-8}\\,\\text{N}.$$\nHence $F=\\sqrt{F_n^2+F_t^2}=\\sqrt{7}\\times10^{-8}\\,\\text{N}$.",
+   "chapter": "Electromagnetic Waves",
+   "subtopic": "Radiation pressure / momentum of EM waves",
+   "archetype": "momentum change",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 35,
+   "section": "Physics",
+   "stem": "A uniform rope of mass $M$ and length $L$ connects blocks $m_1$ and $m_2$ over an ideal pulley, with $m_2>m_1$. At a point a distance $x$ from $m_1$ along its vertical side, what is the rope tension?",
+   "options": [
+    {
+     "text": "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_1+M)}{m_1+m_2+M}$"
+    },
+    {
+     "text": "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_2+M)}{m_1+m_2+M}$"
+    },
+    {
+     "text": "$\\dfrac{2m_2g\\left(m_1+\\dfrac{Mx}{L}\\right)}{m_1+m_2}$"
+    },
+    {
+     "text": "$\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(m_2-m_1)}{m_1+m_2+M}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "The system acceleration is $$a=\\frac{(m_2-m_1)g}{m_1+m_2+M}.$$ The block and rope segment up to the point, of mass $m_1+\\frac{Mx}{L}$, accelerate upward, so $T=(m_1+\\frac{Mx}{L})(g+a)=\\dfrac{g\\left(m_1+\\dfrac{Mx}{L}\\right)(2m_2+M)}{m_1+m_2+M}$.",
+   "chapter": "Laws of Motion",
+   "subtopic": "Massive rope",
+   "archetype": "free-body equations",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 36,
+   "section": "Physics",
+   "stem": "Water of initial depth $0.50$ m in a cylindrical vessel of radius $0.40$ m is brought to steady rotation at $5$ rad s$^{-1}$. If no water spills, what is the gauge pressure at the bottom centre? Take $\\rho=1000$ kg m$^{-3}$ and $g=10$ m s$^{-2}$.",
+   "options": [
+    {
+     "text": "$3.0\\times10^3\\ \\text{Pa}$"
+    },
+    {
+     "text": "$5.0\\times10^3\\ \\text{Pa}$"
+    },
+    {
+     "text": "$4.0\\times10^3\\ \\text{Pa}$"
+    },
+    {
+     "text": "$6.0\\times10^3\\ \\text{Pa}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "For rigid rotation, the free-surface height is $h(r)=h_c+\\dfrac{\\omega^2r^2}{2g}$. Volume conservation gives\n$$h_c=h_0-\\frac{\\omega^2R^2}{4g}=0.50-\\frac{25(0.40)^2}{40}=0.40\\ \\text{m}.$$\nThus, the bottom-centre gauge pressure is $p_g=\\rho gh_c=1000(10)(0.40)=4.0\\times10^3\\ \\text{Pa}$. ⊳",
+   "chapter": "Mechanical Properties of Fluids",
+   "subtopic": "Rotating liquid – pressure variation",
+   "archetype": "integration of pressure gradient",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 37,
+   "section": "Physics",
+   "stem": "For binary inputs $A$ and $B$, where NAND denotes the usual NAND operation, define $P=\\operatorname{NAND}(A,B)$, $Q=\\operatorname{NAND}(A,A)$, $R=\\operatorname{NAND}(B,B)$, $S=\\operatorname{NAND}(Q,R)$ and $Y=\\operatorname{NAND}(S,P)$. Which single gate has the same truth table as $Y$?",
+   "options": [
+    {
+     "text": "NAND gate"
+    },
+    {
+     "text": "XNOR gate"
+    },
+    {
+     "text": "XOR gate"
+    },
+    {
+     "text": "NOR gate"
+    }
+   ],
+   "answer": "B",
+   "solution": "Using NAND as negated AND, $Q=\neg A$ and $R=\neg B$, so $S=\neg(QR)=A\\lor B$.\n$$Y=\neg(SP)=\neg\\big[(A\\lor B)\\land\neg(A\\land B)\\big]=\neg(A\\oplus B)$$\nThus $Y$ has the XNOR truth table.",
+   "chapter": "Semiconductor Electronics",
+   "subtopic": "Logic gate combinations",
+   "archetype": "truth-table",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 38,
+   "section": "Physics",
+   "stem": "An object's acceleration is calculated from $a=\\dfrac{v^2-u^2}{2s}$. The measured values of $v$, $u$ and $s$ are $5.0\\ \\text{m s}^{-1}$, $3.0\\ \\text{m s}^{-1}$ and $4.0\\ \\text{m}$, with maximum percentage errors $1\\%$, $2\\%$ and $1.5\\%$, respectively. The maximum percentage error in $a$ is",
+   "options": [
+    {
+     "text": "$2.375\\%$"
+    },
+    {
+     "text": "$5.375\\%$"
+    },
+    {
+     "text": "$7.5\\%$"
+    },
+    {
+     "text": "$6.875\\%$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For $N=v^2-u^2=16$, the maximum percentage error is\n$$\\frac{\\Delta N}{N}\\times100=\\frac{2v^2(1\\%)+2u^2(2\\%)}{16}=5.375\\%.$$\nSince $a=N/(2s)$, add the percentage error in $s$: $5.375\\%+1.5\\%=6.875\\%$.",
+   "chapter": "Units and Measurements",
+   "subtopic": "Propagation of errors",
+   "archetype": "error propagation",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 39,
+   "section": "Physics",
+   "stem": "A body is projected radially upward from the surface of a spherical planet and just reaches a maximum height $3R$ above the surface. If $v_e$ is the escape speed from the surface, its launch speed is",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{\\sqrt{2}}v_e$"
+    },
+    {
+     "text": "$\\sqrt{\\dfrac{2}{3}}v_e$"
+    },
+    {
+     "text": "$\\dfrac{\\sqrt{3}}{2}v_e$"
+    },
+    {
+     "text": "$v_e$"
+    }
+   ],
+   "answer": "C",
+   "solution": "At the maximum height, the body is at distance $4R$ from the planet’s centre. By conservation of energy,\n$$\\frac{u^2}{2}-\\frac{GM}{R}=-\\frac{GM}{4R},\\qquad u^2=\\frac{3GM}{2R}.$$\nUsing $v_e^2=\\frac{2GM}{R}$, we get $u=\\frac{\\sqrt{3}}{2}v_e$.",
+   "chapter": "Gravitation",
+   "subtopic": "Gravitational potential energy",
+   "archetype": "energy conservation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 40,
+   "section": "Physics",
+   "stem": "A transparent medium has relative permittivity $4$ and relative permeability $1$. It is surrounded by air. Which of the following statements is correct?",
+   "options": [
+    {
+     "text": "The critical angle for light travelling from the medium to air is $30^\\circ$."
+    },
+    {
+     "text": "Total internal reflection occurs when light travels from air into the medium at an angle greater than the critical angle."
+    },
+    {
+     "text": "A plane mirror forms a real image of a real object."
+    },
+    {
+     "text": "The power of a glass convex lens increases when it is immersed in water."
+    }
+   ],
+   "answer": "A",
+   "solution": "The refractive index of the medium is $n=\\sqrt{\\varepsilon_r\\mu_r}=2$. For light travelling from the medium to air, $\\sin C=\\dfrac{1}{n}=\\dfrac12$, hence $C=30^\\circ$.",
+   "chapter": "Ray Optics",
+   "subtopic": "Critical angle from εr, μr",
+   "archetype": "conceptual",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 41,
+   "section": "Chemistry",
+   "stem": "At $300\\ \\text{K}$, find $\\Delta U$ for $\\text{C}_2\\text{H}_4(g)+\\text{H}_2(g)\\rightarrow\\text{C}_2\\text{H}_6(g)$. All combustion products contain $\\text{H}_2\\text{O}(g)$. Use mean bond enthalpies $\\text{C}={\\text{C}}:614$, $\\text{C}—\\text{H}:413$, $\\text{O}={\\text{O}}:498$, $\\text{C}={\\text{O}}$ in $\\text{CO}_2:799$, and $\\text{O}—\\text{H}:463\\ \\text{kJ mol}^{-1}$; also, $\\text{H}_2+\\dfrac{1}{2}\\text{O}_2\\rightarrow\\text{H}_2\\text{O}(g)$ has $\\Delta H=-242\\ \\text{kJ mol}^{-1}$ and $\\text{C}_2\\text{H}_6+\\dfrac{7}{2}\\text{O}_2\\rightarrow2\\text{CO}_2+3\\text{H}_2\\text{O}(g)$ has $\\Delta H=-1410\\ \\text{kJ mol}^{-1}$. Take $R=8.0\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+   "options": [
+    {
+     "text": "$-122.4\\ \\text{kJ mol}^{-1}$"
+    },
+    {
+     "text": "$-120.0\\ \\text{kJ mol}^{-1}$"
+    },
+    {
+     "text": "$-115.2\\ \\text{kJ mol}^{-1}$"
+    },
+    {
+     "text": "$-117.6\\ \\text{kJ mol}^{-1}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For combustion of ethene, using bond enthalpies, $\\Delta H_c=[614+4(413)+3(498)]-[4(799)+4(463)]=-1288\\ \\text{kJ mol}^{-1}$.\nBy Hess’s law, $\\Delta H_{\\text{reaction}}=-1288-242+1410=-120\\ \\text{kJ mol}^{-1}$.\nHere $\\Delta n_g=1-2=-1$, so $\\Delta U=\\Delta H-\\Delta n_gRT=-120+\\frac{8(300)}{1000}=-117.6\\ \\text{kJ mol}^{-1}$.",
+   "chapter": "Thermodynamics (Chemistry)",
+   "subtopic": "Hess's law + first law relations",
+   "archetype": "Hess's law bond-energy calc combined with ΔH = ΔU + ΔnRT",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 42,
+   "section": "Chemistry",
+   "stem": "In the same solvent and at the same temperature, arrange these chlorides in increasing order of initial $\\text{S}_\\text{N}1$ reactivity: chlorobenzene, 2-chloropropane, 2-chloro-2,3-dimethylbutane and 4-methoxybenzyl chloride.",
+   "options": [
+    {
+     "text": "Chlorobenzene < 2-chloro-2,3-dimethylbutane < 2-chloropropane < 4-methoxybenzyl chloride"
+    },
+    {
+     "text": "Chlorobenzene < 2-chloropropane < 2-chloro-2,3-dimethylbutane < 4-methoxybenzyl chloride"
+    },
+    {
+     "text": "2-chloropropane < chlorobenzene < 2-chloro-2,3-dimethylbutane < 4-methoxybenzyl chloride"
+    },
+    {
+     "text": "Chlorobenzene < 2-chloropropane < 4-methoxybenzyl chloride < 2-chloro-2,3-dimethylbutane"
+    }
+   ],
+   "answer": "B",
+   "solution": "In an $\\text{S}_\\text{N}1$ reaction, reactivity increases with the stability of the carbocation formed. Chlorobenzene does not readily ionize; the other substrates form secondary, tertiary, and resonance-stabilized $p$-methoxybenzyl carbocations, respectively.\n$$\\text{Chlorobenzene} < \\text{2-chloropropane} < \\text{2-chloro-2,3-dimethylbutane} < \\text{4-methoxybenzyl chloride}$$",
+   "chapter": "Haloalkanes and Haloarenes",
+   "subtopic": "SN1 reactivity and carbocation stability",
+   "archetype": "compare-and-rank",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 43,
+   "section": "Chemistry",
+   "stem": "Which pair has equal wavelengths? Each transition is written $n_i\\rightarrow n_f$, first for $\\text{He}^+$ and then for H.",
+   "options": [
+    {
+     "text": "$\\text{He}^+:3\\rightarrow1;\\ \\text{H}:4\\rightarrow2$"
+    },
+    {
+     "text": "$\\text{He}^+:3\\rightarrow2;\\ \\text{H}:3\\rightarrow2$"
+    },
+    {
+     "text": "$\\text{He}^+:5\\rightarrow3;\\ \\text{H}:3\\rightarrow1$"
+    },
+    {
+     "text": "$\\text{He}^+:4\\rightarrow2;\\ \\text{H}:2\\rightarrow1$"
+    }
+   ],
+   "answer": "D",
+   "solution": "For a hydrogen-like ion, $\\frac{1}{\\lambda}$ is proportional to $Z^2\\bigl(\\frac{1}{n_f^2}-\\frac{1}{n_i^2}\\bigr)$.\nFor $\\text{He}^+:4\\rightarrow2$, the factor is $4\\bigl(\\frac14-\\frac1{16}\\bigr)=\\frac34$; for $\\text{H}:2\\rightarrow1$, it is $1-\\frac14=\\frac34$.\nThus the wavelengths are equal for the pair in (D).",
+   "chapter": "Structure of Atom",
+   "subtopic": "Hydrogen spectrum for hydrogen-like ions",
+   "archetype": "ratio of two situations",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 44,
+   "section": "Chemistry",
+   "stem": "Consider the following trends for the Group 15 hydrides: (I) boiling point: NH₃ > AsH₃ > PH₃; (II) thermal stability: PH₃ > NH₃ > AsH₃; (III) bond angle: NH₃ > PH₃ > AsH₃; (IV) basicity: AsH₃ > PH₃ > NH₃. Which statements are correct?",
+   "options": [
+    {
+     "text": "I and II only"
+    },
+    {
+     "text": "II and IV only"
+    },
+    {
+     "text": "I and III only"
+    },
+    {
+     "text": "III and IV only"
+    }
+   ],
+   "answer": "C",
+   "solution": "NH₃ has the highest boiling point due to hydrogen bonding; among PH₃ and AsH₃, boiling point increases with molar mass. Hence, (I) is true.\nThermal stability and basicity decrease down Group 15, so (II) and (IV) are false. Bond angle also decreases down the group: NH₃ > PH₃ > AsH₃, so (III) is true.\nThus, statements I and III are correct.",
+   "chapter": "p-Block Elements",
+   "subtopic": "Group 15 hydrides",
+   "archetype": "statement evaluation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 45,
+   "section": "Chemistry",
+   "stem": "An ideal gas undergoes adiabatic free expansion against vacuum. Which set of changes is correct?",
+   "options": [
+    {
+     "text": "$q=0,\\ w=0,\\ \\Delta U=0,\\ \\Delta H\\ne 0$"
+    },
+    {
+     "text": "$q=0,\\ w=0,\\ \\Delta U=0,\\ \\Delta H=0$"
+    },
+    {
+     "text": "$q=0,\\ w\\ne 0,\\ \\Delta U\\ne 0,\\ \\Delta H\\ne 0$"
+    },
+    {
+     "text": "$q\\ne 0,\\ w=0,\\ \\Delta U\\ne 0,\\ \\Delta H\\ne 0$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For adiabatic free expansion against vacuum, $q=0$ and $w=0$. Hence, by the first law, $$\\Delta U=q+w=0.$$ For an ideal gas, $U$ and $H$ depend only on temperature; therefore $\n\\Delta T=0$ and $\\Delta H=0$.",
+   "chapter": "Thermodynamics (Chemistry)",
+   "subtopic": "First law for processes (free expansion)",
+   "archetype": "conceptual",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 46,
+   "section": "Chemistry",
+   "stem": "For hydrogenation to the corresponding alkanes, arrange these alkenes by signed $\\Delta H_{\\mathrm{hyd}}$, from most negative to least negative.",
+   "options": [
+    {
+     "text": "pent-1-ene $<$ cis-pent-2-ene $<$ 2-methylbut-2-ene $<$ trans-pent-2-ene"
+    },
+    {
+     "text": "pent-1-ene $<$ trans-pent-2-ene $<$ cis-pent-2-ene $<$ 2-methylbut-2-ene"
+    },
+    {
+     "text": "2-methylbut-2-ene $<$ trans-pent-2-ene $<$ cis-pent-2-ene $<$ pent-1-ene"
+    },
+    {
+     "text": "pent-1-ene $<$ cis-pent-2-ene $<$ trans-pent-2-ene $<$ 2-methylbut-2-ene"
+    }
+   ],
+   "answer": "D",
+   "solution": "Alkene stability increases in the order $\\text{pent-1-ene} < \\text{cis-pent-2-ene} < \\text{trans-pent-2-ene} < \\text{2-methylbut-2-ene}$. More stable alkenes have less exothermic hydrogenation, so $\\Delta H_{\\mathrm{hyd}}$ follows this same order from most negative to least negative.",
+   "chapter": "Hydrocarbons",
+   "subtopic": "Stability of alkenes / heat of hydrogenation",
+   "archetype": "ordering",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 47,
+   "section": "Chemistry",
+   "stem": "For $\\text{SF}_4$, $\\text{ClF}_3$ and $\\text{XeF}_4$, which option gives, in this order, the number of lone pairs on the central atom and the molecular geometry?",
+   "options": [
+    {
+     "text": "$(1,\\text{ seesaw});\\ (2,\\text{ T-shaped});\\ (2,\\text{ square planar})$"
+    },
+    {
+     "text": "$(2,\\text{ seesaw});\\ (2,\\text{ T-shaped});\\ (2,\\text{ square planar})$"
+    },
+    {
+     "text": "$(1,\\text{ seesaw});\\ (2,\\text{ trigonal planar});\\ (2,\\text{ square planar})$"
+    },
+    {
+     "text": "$(1,\\text{ tetrahedral});\\ (2,\\text{ T-shaped});\\ (2,\\text{ octahedral})$"
+    }
+   ],
+   "answer": "A",
+   "solution": "By VSEPR, $\\text{SF}_4$ is $\\text{AX}_4\\text{E}$ (1 lone pair, seesaw), $\\text{ClF}_3$ is $\\text{AX}_3\\text{E}_2$ (2 lone pairs, T-shaped), and $\\text{XeF}_4$ is $\\text{AX}_4\\text{E}_2$ (2 lone pairs, square planar).",
+   "chapter": "Chemical Bonding",
+   "subtopic": "VSEPR theory and molecular geometry",
+   "archetype": "ordering",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 48,
+   "section": "Chemistry",
+   "stem": "Which drug–therapeutic use pairing is incorrect?",
+   "options": [
+    {
+     "text": "Aspirin — non-narcotic analgesic"
+    },
+    {
+     "text": "Paracetamol — non-narcotic analgesic"
+    },
+    {
+     "text": "Morphine — non-narcotic analgesic"
+    },
+    {
+     "text": "Equanil — tranquilizer"
+    }
+   ],
+   "answer": "C",
+   "solution": "Aspirin and paracetamol are non-narcotic analgesics, while Equanil is a tranquilizer. Morphine is a narcotic analgesic, so its pairing with “non-narcotic analgesic” is incorrect.",
+   "chapter": "Chemistry in Everyday Life",
+   "subtopic": "Drugs: analgesics and tranquilizers",
+   "archetype": "fact recall",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 49,
+   "section": "Chemistry",
+   "stem": "For the octahedral complexes $[\\text{FeF}_6]^{4-}$ and $[\\text{Fe(CN)}_6]^{4-}$, which statement correctly compares their spin states and numbers of unpaired electrons?",
+   "options": [
+    {
+     "text": "$[\\text{FeF}_6]^{4-}$ is low-spin with 0 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is high-spin with 4."
+    },
+    {
+     "text": "$[\\text{FeF}_6]^{4-}$ is high-spin with 2 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is low-spin with 0."
+    },
+    {
+     "text": "$[\\text{FeF}_6]^{4-}$ is high-spin with 4 unpaired electrons; $[\\text{Fe(CN)}_6]^{4-}$ is low-spin with 0."
+    },
+    {
+     "text": "Both complexes are high-spin, with 4 unpaired electrons in each."
+    }
+   ],
+   "answer": "C",
+   "solution": "In both complexes, Fe is in the $+2$ oxidation state, so it has a $d^6$ configuration. $F^-$ is weak-field, giving high-spin $t_{2g}^4e_g^2$ with 4 unpaired electrons; $CN^-$ is strong-field, giving low-spin $t_{2g}^6$ with 0 unpaired electrons.",
+   "chapter": "Coordination Compounds",
+   "subtopic": "Spectrochemical series / CFT high-low spin",
+   "archetype": "compare complexes",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 50,
+   "section": "Chemistry",
+   "stem": "Why is hydrogen peroxide stored in dark, waxed bottles with a stabilizer?",
+   "options": [
+    {
+     "text": "To prevent its oxidation by oxygen in air"
+    },
+    {
+     "text": "To prevent its light-induced decomposition and decomposition catalysed by trace impurities"
+    },
+    {
+     "text": "To increase its rate of decomposition in the dark"
+    },
+    {
+     "text": "To prevent it from dissolving in water"
+    }
+   ],
+   "answer": "B",
+   "solution": "Hydrogen peroxide decomposes in light and in the presence of trace metal impurities:\n$$2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}+\\text{O}_2$$\nDark, waxed bottles limit light-induced decomposition, while a stabilizer suppresses decomposition catalysed by impurities.",
+   "chapter": "Hydrogen",
+   "subtopic": "Hydrogen peroxide storage",
+   "archetype": "fact recall",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 51,
+   "section": "Chemistry",
+   "stem": "An optically active aldohexose undergoes Kiliani–Fischer chain extension in its open-chain form, with its existing stereocentres retained. Which statement about the aldoheptose products is correct?",
+   "options": [
+    {
+     "text": "Two products; C-2 epimers and diastereomers; both are optically active."
+    },
+    {
+     "text": "Two products; enantiomers; both are optically active."
+    },
+    {
+     "text": "Four products; two pairs of C-2 epimers; all are optically active."
+    },
+    {
+     "text": "Two products; C-7 epimers; both are optically inactive."
+    }
+   ],
+   "answer": "A",
+   "solution": "Kiliani–Fischer extension creates one new stereocentre at C-2, giving $2$ products while retaining the original stereocentres. They differ only at C-2, so they are epimers and hence diastereomers; both remain optically active.",
+   "chapter": "Biomolecules",
+   "subtopic": "Kiliani–Fischer and stereochemistry of sugars",
+   "archetype": "stereochemical outcome",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 52,
+   "section": "Chemistry",
+   "stem": "An acyclic alkane–oxygen mixture is completely burnt. At a common reference temperature and pressure, it forms $48$ mL of $\\text{CO}_2$ and water equivalent to $72$ mL of vapour. The cooled, dry products occupy $120$ mL; the initial mixture volume exceeds this by $60$ mL. What was the alkane mole fraction initially?",
+   "options": [
+    {
+     "text": "$\\dfrac{4}{15}$"
+    },
+    {
+     "text": "$\\dfrac{2}{15}$"
+    },
+    {
+     "text": "$\\dfrac{1}{3}$"
+    },
+    {
+     "text": "$\\dfrac{2}{5}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For $\\text{C}_n\\text{H}_{2n+2}$, $\\frac{V_{\\text{H}_2\\text{O}}}{V_{\\text{CO}_2}}=\\frac{n+1}{n}=\\frac{72}{48}=\\frac{3}{2}$, giving $n=2$ and alkane volume $48/2=24$ mL.\nThe initial mixture volume is $120+60=180$ mL, so the alkane mole fraction is\n$$x=\\frac{24}{180}=\\frac{2}{15}.$$",
+   "chapter": "Some Basic Concepts of Chemistry",
+   "subtopic": "Stoichiometry with gas volumes",
+   "archetype": "stoichiometric bookkeeping",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 53,
+   "section": "Chemistry",
+   "stem": "Ethoxybenzene is heated with excess HI. Which choice gives the organic products and correctly explains why the aryl–O bond remains intact?",
+   "options": [
+    {
+     "text": "Iodobenzene and ethanol; iodide displaces at the aryl carbon by $\\text{S}_\\text{N}2$."
+    },
+    {
+     "text": "Iodobenzene and ethanol; aryl–O cleavage occurs by formation of a phenyl cation."
+    },
+    {
+     "text": "Iodoethane and phenol; iodide attacks the ethyl carbon by $\\text{S}_\\text{N}2$, while the aryl C–O bond is not cleaved."
+    },
+    {
+     "text": "Iodoethane and iodobenzene; excess HI replaces the phenolic –OH by iodine."
+    }
+   ],
+   "answer": "C",
+   "solution": "HI protonates the ether oxygen; iodide then attacks the primary ethyl carbon by $\\text{S}_\\text{N}2$.\n$$\\text{C}_6\\text{H}_5\\text{OC}_2\\text{H}_5+\\text{HI}\\rightarrow\\text{C}_6\\text{H}_5\\text{OH}+\\text{C}_2\\text{H}_5\\text{I}$$\nThe aryl C(sp$^2$)–O bond remains intact because aryl carbon does not undergo $\\text{S}_\\text{N}2$ substitution; a phenyl cation is also highly unstable.",
+   "chapter": "Alcohols, Phenols and Ethers",
+   "subtopic": "Cleavage of ethers with HI",
+   "archetype": "mechanism-based product",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 54,
+   "section": "Chemistry",
+   "stem": "For guanidine, ethylamine, trimethylamine, aniline and acetamide, which pair gives the basicity order (strongest to weakest) in the gas phase and in water, respectively?",
+   "options": [
+    {
+     "text": "Gas: guanidine > trimethylamine > ethylamine > aniline > acetamide; water: guanidine > ethylamine > trimethylamine > aniline > acetamide"
+    },
+    {
+     "text": "Gas: guanidine > ethylamine > trimethylamine > aniline > acetamide; water: guanidine > ethylamine > trimethylamine > aniline > acetamide"
+    },
+    {
+     "text": "Gas: guanidine > trimethylamine > ethylamine > aniline > acetamide; water: guanidine > trimethylamine > ethylamine > aniline > acetamide"
+    },
+    {
+     "text": "Gas: guanidine > trimethylamine > ethylamine > acetamide > aniline; water: guanidine > ethylamine > trimethylamine > acetamide > aniline"
+    }
+   ],
+   "answer": "A",
+   "solution": "Guanidine is strongest due to resonance stabilization of guanidinium; resonance delocalization makes aniline and especially acetamide weaker bases.\nIn the gas phase, alkyl substitution increases proton affinity: $\\text{trimethylamine}>\\text{ethylamine}$.\nIn water, better solvation of ethylammonium reverses this order: $\\text{ethylamine}>\\text{trimethylamine}$.\nThus the respective orders are $\\text{guanidine}>\\text{trimethylamine}>\\text{ethylamine}>\\text{aniline}>\\text{acetamide}$ and $\\text{guanidine}>\\text{ethylamine}>\\text{trimethylamine}>\\text{aniline}>\\text{acetamide}$.",
+   "chapter": "Amines",
+   "subtopic": "Basicity of amines in aqueous vs gas phase",
+   "archetype": "compare structures",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 55,
+   "section": "Chemistry",
+   "stem": "Which option gives the correct decreasing order of stability for the following five carbon radicals?",
+   "options": [
+    {
+     "text": "$p$-methoxybenzyl $>$ allyl $>$ benzyl $>$ isopropyl $>$ tert-butyl"
+    },
+    {
+     "text": "Benzyl $>$ $p$-methoxybenzyl $>$ tert-butyl $>$ allyl $>$ isopropyl"
+    },
+    {
+     "text": "Allyl $>$ benzyl $>$ $p$-methoxybenzyl $>$ isopropyl $>$ tert-butyl"
+    },
+    {
+     "text": "$p$-methoxybenzyl $>$ benzyl $>$ allyl $>$ tert-butyl $>$ isopropyl"
+    }
+   ],
+   "answer": "D",
+   "solution": "Resonance stabilization gives $p$-methoxybenzyl $>$ benzyl $>$ allyl; the para-methoxy group further stabilizes the benzylic radical by electron donation.\nHyperconjugation stabilizes the more substituted alkyl radical: tert-butyl $>$ isopropyl.\nHence, the decreasing order is $p$-methoxybenzyl $>$ benzyl $>$ allyl $>$ tert-butyl $>$ isopropyl.",
+   "chapter": "Organic Chemistry – Basic Principles",
+   "subtopic": "Free radical stability",
+   "archetype": "stability ordering",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 56,
+   "section": "Chemistry",
+   "stem": "A first-order reaction has $k=1.0\\times10^{-3}\\ \\text{s}^{-1}$ at $600\\ \\text{K}$ and $k=8.0\\times10^{-3}\\ \\text{s}^{-1}$ at $900\\ \\text{K}$. Find $E_a$ and the temperature at which $k$ doubles from its value at $600\\ \\text{K}$. Take $R=8.314\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+   "options": [
+    {
+     "text": "$31.1\\ \\text{kJ mol}^{-1};\\ 540\\ \\text{K}$"
+    },
+    {
+     "text": "$10.4\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$"
+    },
+    {
+     "text": "$31.1\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$"
+    },
+    {
+     "text": "$62.2\\ \\text{kJ mol}^{-1};\\ 675\\ \\text{K}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Using the Arrhenius equation, $\\ln(k_2/k_1)=\\dfrac{E_a}{R}(1/T_1-1/T_2)$,\n$$E_a=\\dfrac{R\\ln 8}{1/600-1/900}=1800R\\ln 8=31.1\\ \\text{kJ mol}^{-1}.$$\nFor doubling from $600\\ \\text{K}$, $\\ln 2=\\dfrac{E_a}{R}(1/600-1/T)$, giving $T=675\\ \\text{K}$. (C)",
+   "chapter": "Chemical Kinetics",
+   "subtopic": "Arrhenius equation",
+   "archetype": "equation-solving numeric",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 57,
+   "section": "Chemistry",
+   "stem": "Which of the following aldehydes undergoes the Cannizzaro reaction?",
+   "options": [
+    {
+     "text": "2-Methylpropanal"
+    },
+    {
+     "text": "2,2-Dimethylpropanal"
+    },
+    {
+     "text": "Propanal"
+    },
+    {
+     "text": "Butanal"
+    }
+   ],
+   "answer": "B",
+   "solution": "Cannizzaro reaction is shown by aldehydes having no $\\alpha$-hydrogen. In 2,2-dimethylpropanal, $(\\mathrm{CH}_3)_3\\mathrm{CCHO}$, the carbon adjacent to $-\\mathrm{CHO}$ has no hydrogen.",
+   "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+   "subtopic": "Cannizzaro reaction",
+   "archetype": "fact recall",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 58,
+   "section": "Chemistry",
+   "stem": "The Fischer projection is rotated clockwise by $90^\\circ$ in its plane and then read as a Fischer projection. What configuration and relationship to the original does it represent?",
+   "figure": {
+    "kind": "chem",
+    "path": "figs/q058_stem_v0.png",
+    "width_pct": 32
+   },
+   "options": [
+    {
+     "text": "$(2S,3R)$; diastereomer"
+    },
+    {
+     "text": "$(2S,3S)$; identical"
+    },
+    {
+     "text": "$(2R,3S)$; diastereomer"
+    },
+    {
+     "text": "$(2R,3R)$; enantiomer"
+    }
+   ],
+   "answer": "D",
+   "solution": "In the original Fischer projection, both centres are $(S)$; a $90^\\circ$ rotation swaps horizontal and vertical substituents, inverting each centre.\n$$\n(2S,3S)\\longrightarrow(2R,3R)\n$$\nBoth stereocentres invert, so the rotated structure is the enantiomer.",
+   "chapter": "Organic Chemistry – Basic Principles",
+   "subtopic": "R/S configuration in Fischer projection",
+   "archetype": "conceptual",
+   "difficulty": 2,
+   "figure_kind": "chem",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 59,
+   "section": "Chemistry",
+   "stem": "Which description correctly identifies these point-defect effects in ionic solids?",
+   "options": [
+    {
+     "text": "Schottky pair in NaCl lowers density; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is n-type; metal-deficient FeO is p-type"
+    },
+    {
+     "text": "Schottky pair in NaCl leaves density unchanged; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is n-type; metal-deficient FeO is p-type"
+    },
+    {
+     "text": "Schottky pair in NaCl lowers density; Frenkel defect in AgCl lowers density; metal-excess ZnO is n-type; metal-deficient FeO is p-type"
+    },
+    {
+     "text": "Schottky pair in NaCl lowers density; Frenkel defect in AgCl leaves density unchanged; metal-excess ZnO is p-type; metal-deficient FeO is n-type"
+    }
+   ],
+   "answer": "A",
+   "solution": "Schottky defects remove ions from lattice sites, lowering density; Frenkel defects displace ions within the crystal, leaving density unchanged. Metal-excess ZnO is $n$-type, while metal-deficient FeO is $p$-type.\nThus, all four descriptions in (A) are correct.",
+   "chapter": "Solid State",
+   "subtopic": "Point defects",
+   "archetype": "definition recall + identify-property",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 60,
+   "section": "Chemistry",
+   "stem": "Pure $\\text{PCl}_5(g)$ reaches equilibrium in $\\text{PCl}_5(g)\\rightleftharpoons\\text{PCl}_3(g)+\\text{Cl}_2(g)$. At equilibrium, the total pressure is $4.0\\ \\text{atm}$ and $K_p=0.90\\ \\text{atm}$, with pressures expressed in atm. What is the degree of dissociation, $\\alpha$?",
+   "options": [
+    {
+     "text": "$\\dfrac{3}{7}$"
+    },
+    {
+     "text": "$\\dfrac{3}{8}$"
+    },
+    {
+     "text": "$\\dfrac{9}{49}$"
+    },
+    {
+     "text": "$\\sqrt{\\dfrac{9}{40}}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "For initial $1$ mol of $\\text{PCl}_5$, equilibrium moles are $(1-\\alpha,\\alpha,\\alpha)$, so $n_{\\text{tot}}=1+\\alpha$.\n$$K_p=P\\frac{\\alpha^2}{1-\\alpha^2},\\qquad \\frac{0.90}{4.0}=\\frac{9}{40}=\\frac{\\alpha^2}{1-\\alpha^2}$$\nThus $49\\alpha^2=9$, giving $\\alpha=\\dfrac{3}{7}$.",
+   "chapter": "Equilibrium",
+   "subtopic": "Kp and degree of dissociation",
+   "archetype": "ICE table",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 61,
+   "section": "Chemistry",
+   "stem": "For the exothermic equilibrium $\\text{N}_2(g)+3\\text{H}_2(g)\\rightleftharpoons2\\text{NH}_3(g)$, which set correctly predicts the shifts?",
+   "options": [
+    {
+     "text": "Heating shifts left; compression shifts right; a catalyst and an inert gas added at constant volume cause no shift."
+    },
+    {
+     "text": "Heating shifts right; compression shifts right; a catalyst and an inert gas added at constant volume cause no shift."
+    },
+    {
+     "text": "Heating shifts left; compression shifts left; a catalyst and an inert gas added at constant volume cause no shift."
+    },
+    {
+     "text": "Heating shifts left; compression shifts right; a catalyst and an inert gas added at constant volume both shift the equilibrium."
+    }
+   ],
+   "answer": "A",
+   "solution": "Heating favors the endothermic reverse reaction, shifting equilibrium left. Compression favors the side with fewer gas moles, so it shifts right ($2<4$).\nA catalyst does not alter the equilibrium position, and adding an inert gas at constant volume leaves the reactant partial pressures unchanged; neither causes a shift.",
+   "chapter": "Equilibrium",
+   "subtopic": "Le Chatelier's principle",
+   "archetype": "conceptual",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 62,
+   "section": "Chemistry",
+   "stem": "Which option correctly gives the molecular shapes, lone-pair counts on Xe, and hybridisations in XeOF₄ and XeO₂F₂? Treat each multiple bond as one electron domain.",
+   "options": [
+    {
+     "text": "XeOF₄: trigonal bipyramidal, 0 lone pairs, sp³d; XeO₂F₂: tetrahedral, 1 lone pair, sp³"
+    },
+    {
+     "text": "XeOF₄: square pyramidal, 1 lone pair, sp³d²; XeO₂F₂: seesaw, 1 lone pair, sp³d"
+    },
+    {
+     "text": "XeOF₄: square pyramidal, 1 lone pair, sp³d; XeO₂F₂: seesaw, 1 lone pair, sp³d²"
+    },
+    {
+     "text": "XeOF₄: octahedral, 1 lone pair, sp³d²; XeO₂F₂: seesaw, 0 lone pairs, sp³d"
+    }
+   ],
+   "answer": "B",
+   "solution": "XeOF₄ has 5 bonding domains and 1 lone pair, so it is AX₅E with square-pyramidal shape and sp³d² hybridisation.\nXeO₂F₂ has 4 bonding domains and 1 lone pair, so it is AX₄E with seesaw shape and sp³d hybridisation.\nThus, the correct choice is (B).",
+   "chapter": "p-Block Elements",
+   "subtopic": "Xenon fluorides – structure",
+   "archetype": "VSEPR counting",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 63,
+   "section": "Chemistry",
+   "stem": "An electron initially at rest is accelerated through $150\\ \\text{V}$. Find its de Broglie wavelength using $\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}$. Take $h=6.626\\times10^{-34}\\ \\text{J s}$, $m_e=9.11\\times10^{-31}\\ \\text{kg}$ and $e=1.602\\times10^{-19}\\ \\text{C}$.",
+   "options": [
+    {
+     "text": "$70.8\\ \\text{pm}$"
+    },
+    {
+     "text": "$141\\ \\text{pm}$"
+    },
+    {
+     "text": "$100\\ \\text{pm}$"
+    },
+    {
+     "text": "$200\\ \\text{pm}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Using the de Broglie relation,\n$$\\lambda=\\frac{h}{\\sqrt{2m_e eV}}=\\frac{6.626\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.602\\times10^{-19})(150)}}\\ \\text{m}\n=1.00\\times10^{-10}\\ \\text{m}=100\\ \\text{pm}.$$",
+   "chapter": "Structure of Atom",
+   "subtopic": "de Broglie wavelength of electron",
+   "archetype": "single-formula numerical",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 64,
+   "section": "Chemistry",
+   "stem": "Which option correctly matches a disaccharide with its glycosidic linkage, constituent monosaccharides and reducing character?",
+   "options": [
+    {
+     "text": "Maltose: $\\beta(1\\to4)$, glucose + glucose, reducing."
+    },
+    {
+     "text": "Sucrose: $\\alpha(1\\to2)$, glucose + fructose, reducing."
+    },
+    {
+     "text": "Lactose: $\\beta(1\\to4)$, glucose + glucose, reducing."
+    },
+    {
+     "text": "Maltose: $\\alpha(1\\to4)$, glucose + glucose, reducing."
+    }
+   ],
+   "answer": "D",
+   "solution": "Maltose consists of two glucose units joined by an $\\alpha(1\\to4)$ glycosidic linkage. One anomeric carbon remains free, so maltose is reducing.",
+   "chapter": "Biomolecules",
+   "subtopic": "Disaccharides",
+   "archetype": "fact recall / test identification",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 65,
+   "section": "Chemistry",
+   "stem": "Equal volumes of nitrogen and an unknown gas effuse through the same pinhole under identical conditions. If their effusion times are $20\\ \\text{s}$ and $30\\ \\text{s}$, respectively, find $M_{\\text{unknown}}/M_{\\text{N}_2}$.",
+   "options": [
+    {
+     "text": "$\\dfrac{4}{9}$"
+    },
+    {
+     "text": "$\\dfrac{3}{2}$"
+    },
+    {
+     "text": "$\\dfrac{9}{4}$"
+    },
+    {
+     "text": "$3$"
+    }
+   ],
+   "answer": "C",
+   "solution": "For equal volumes, effusion time is proportional to the square root of molar mass.\n$$\\frac{t_{\\text{unknown}}}{t_{\\text{N}_2}}=\\sqrt{\\frac{M_{\\text{unknown}}}{M_{\\text{N}_2}}},\\qquad \\frac{M_{\\text{unknown}}}{M_{\\text{N}_2}}=\\left(\\frac{30}{20}\\right)^2=\\frac{9}{4}.$$",
+   "chapter": "States of Matter",
+   "subtopic": "Graham's law of effusion",
+   "archetype": "ratio equation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 66,
+   "section": "Chemistry",
+   "stem": "At the same temperature, a solution of $\\text{[Co(NH}_3\\text{)}_5\\text{Cl]Cl}_2$ is isotonic with $0.50\\ \\text{M}$ glucose. The salt dissociates as $\\text{[Co(NH}_3\\text{)}_5\\text{Cl]}^{2+}+2\\text{Cl}^-$. If $75\\%$ dissociates, what is its concentration?",
+   "options": [
+    {
+     "text": "$0.200\\ \\text{mol L}^{-1}$"
+    },
+    {
+     "text": "$0.167\\ \\text{mol L}^{-1}$"
+    },
+    {
+     "text": "$0.154\\ \\text{mol L}^{-1}$"
+    },
+    {
+     "text": "$0.286\\ \\text{mol L}^{-1}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "The salt produces $3$ ions on complete dissociation, so $i=1+\\alpha(3-1)=1+0.75(2)=2.5$. For isotonic solutions, $iC=0.50$, hence $C=\\dfrac{0.50}{2.5}=0.200\\ \\text{mol L}^{-1}$.",
+   "chapter": "Solutions",
+   "subtopic": "van 't Hoff factor and complexes / isotonic solutions",
+   "archetype": "single-formula numerical",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 67,
+   "section": "Chemistry",
+   "stem": "For $\\text{Ce}^{3+}$ ($Z=58$), $\\text{Tb}^{3+}$ ($Z=65$) and $\\text{Er}^{3+}$ ($Z=68$), what is the greatest spin-only magnetic moment? Use $\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$, where $n$ is the number of unpaired electrons.",
+   "options": [
+    {
+     "text": "$\\sqrt{3}\\ \\text{BM}$"
+    },
+    {
+     "text": "$4\\sqrt{3}\\ \\text{BM}$"
+    },
+    {
+     "text": "$\\sqrt{15}\\ \\text{BM}$"
+    },
+    {
+     "text": "$\\sqrt{80}\\ \\text{BM}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For $\\text{Ln}^{3+}$, the configuration is $4f^{Z-57}$. Thus $\\text{Ce}^{3+}:4f^1$ ($n=1$), $\\text{Tb}^{3+}:4f^8$ ($n=6$), and $\\text{Er}^{3+}:4f^{11}$ ($n=3$).\nUsing $={n(n+2)}$ BM, their moments are $3$, ${48}=43$, and ${15}$ BM, respectively; the greatest is $43$ BM.",
+   "chapter": "d- and f-Block Elements",
+   "subtopic": "Magnetic moment of lanthanide ions",
+   "archetype": "unpaired electron count",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 68,
+   "section": "Chemistry",
+   "stem": "The final product in the sequence shown in the figure is:",
+   "figure": {
+    "kind": "chem",
+    "path": "figs/q068_stem_v0.png",
+    "width_pct": 90
+   },
+   "options": [
+    {
+     "text": "2-methylpropan-2-ol",
+     "figure": {
+      "kind": "chem",
+      "path": "figs/q068_optA_v0.png",
+      "width_pct": 28
+     }
+    },
+    {
+     "text": "2-methylpropene",
+     "figure": {
+      "kind": "chem",
+      "path": "figs/q068_optD_v0.png",
+      "width_pct": 28
+     }
+    },
+    {
+     "text": "2-bromo-2-methylpropane",
+     "figure": {
+      "kind": "chem",
+      "path": "figs/q068_optC_v0.png",
+      "width_pct": 28
+     }
+    },
+    {
+     "text": "2-methylpropan-1-ol",
+     "figure": {
+      "kind": "chem",
+      "path": "figs/q068_optB_v0.png",
+      "width_pct": 28
+     }
+    }
+   ],
+   "answer": "D",
+   "solution": "Alcoholic KOH causes elimination; HBr in the presence of peroxide adds anti-Markovnikov, and aqueous NaOH substitutes Br with OH.\n$$ (CH_3)_3CBr \\xrightarrow{\\text{alc. KOH},\\Delta} CH_2=C(CH_3)_2 \\xrightarrow{\\text{HBr, ROOR}} (CH_3)_2CHCH_2Br \\xrightarrow{\\text{aq. NaOH}} (CH_3)_2CHCH_2OH $$\nThe final product is 2-methylpropan-1-ol.",
+   "chapter": "Haloalkanes and Haloarenes",
+   "subtopic": "Elimination, addition, substitution sequence",
+   "archetype": "reaction sequence product",
+   "difficulty": 3,
+   "figure_kind": "chem",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 69,
+   "section": "Chemistry",
+   "stem": "At room temperature, three alcohols are treated with Lucas reagent. Which order gives turbidity from earliest to latest, with no turbidity last?",
+   "options": [
+    {
+     "text": "2-methylpropan-2-ol > cyclohexanol > butan-1-ol"
+    },
+    {
+     "text": "Cyclohexanol > 2-methylpropan-2-ol > butan-1-ol"
+    },
+    {
+     "text": "Butan-1-ol > cyclohexanol > 2-methylpropan-2-ol"
+    },
+    {
+     "text": "2-methylpropan-2-ol > butan-1-ol > cyclohexanol"
+    }
+   ],
+   "answer": "A",
+   "solution": "Lucas test proceeds mainly by the $\\text{S}_\\text{N}1$ mechanism; the rate follows carbocation stability, $3^\\circ > 2^\\circ > 1^\\circ$. Thus 2-methylpropan-2-ol gives immediate turbidity, cyclohexanol reacts after a few minutes, and butan-1-ol gives no turbidity at room temperature.",
+   "chapter": "Alcohols, Phenols and Ethers",
+   "subtopic": "Lucas test",
+   "archetype": "test identification",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 70,
+   "section": "Chemistry",
+   "stem": "One mole of the diene shown undergoes reductive ozonolysis. Which carbonyl products, and in what amounts, are formed?",
+   "figure": {
+    "kind": "chem",
+    "path": "figs/q070_stem_v0.png",
+    "width_pct": 37
+   },
+   "options": [
+    {
+     "text": "$1$ mol acetone and $2$ mol ethanedial"
+    },
+    {
+     "text": "$2$ mol ethanal and $1$ mol acetone"
+    },
+    {
+     "text": "$2$ mol acetone and $1$ mol ethanedial"
+    },
+    {
+     "text": "$1$ mol acetone and $1$ mol ethanedial"
+    }
+   ],
+   "answer": "C",
+   "solution": "Reductive ozonolysis cleaves both $C=C$ bonds to form carbonyl groups at each alkene carbon. The two terminal carbons each give acetone, while the joined inner carbons give ethanedial: $2$ mol acetone and $1$ mol ethanedial.",
+   "chapter": "Hydrocarbons",
+   "subtopic": "Ozononolysis",
+   "archetype": "reaction product (structures)",
+   "difficulty": 4,
+   "figure_kind": "chem",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 71,
+   "section": "Chemistry",
+   "stem": "The straight-line plot is as shown in the figure. Which statement correctly interprets the Freundlich isotherm?",
+   "figure": {
+    "kind": "chem",
+    "path": "figs/q071_stem_v0.png",
+    "width_pct": 50
+   },
+   "options": [
+    {
+     "text": "The slope is $2$; hence $1/n=2$, and adsorption approaches a limiting value as $P$ increases."
+    },
+    {
+     "text": "The slope is $1/2$; hence $n=2$, and the model predicts no saturation as $P$ increases."
+    },
+    {
+     "text": "The slope is $1/2$; hence $n=1/2$, and the amount adsorbed is independent of $P$."
+    },
+    {
+     "text": "The slope is $-1/2$; hence adsorption decreases as $P$ increases."
+    }
+   ],
+   "answer": "B",
+   "solution": "For the Freundlich isotherm, $\\log(x/m)=\\log k+\\frac{1}{n}\\log P$, so the plot’s slope equals $1/n$.\n$$\\frac{1-(-1)}{2-(-2)}=\\frac{1}{2}=\\frac{1}{n}\\quad\\Rightarrow\\quad n=2$$\nThus $x/m=kP^{1/2}$, which predicts no finite saturation limit as $P$ increases.",
+   "chapter": "Surface Chemistry",
+   "subtopic": "Freundlich adsorption isotherm",
+   "archetype": "graph slope reading",
+   "difficulty": 2,
+   "figure_kind": "chem",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 72,
+   "section": "Chemistry",
+   "stem": "Consider the following statements about oxidation states in the $3d$ series. (I) The highest commonly attained oxidation state rises from Sc ($+3$) to Mn ($+7$), then generally falls toward Zn. (II) Mn reaches $+7$ because all seven valence electrons in $3d^5 4s^2$ can participate in bonding. (III) In aqueous solution, Cu$^{+}$ is more stable than Cu$^{2+}$ because Cu$^{+}$ has a $d^{10}$ configuration. (IV) Aqueous Cu$^{+}$ tends to disproportionate to Cu$^{2+}$ and Cu. Which set contains all and only the correct statements?",
+   "options": [
+    {
+     "text": "II, III and IV only"
+    },
+    {
+     "text": "I, III and IV only"
+    },
+    {
+     "text": "I and II only"
+    },
+    {
+     "text": "I, II and IV only"
+    }
+   ],
+   "answer": "D",
+   "solution": "The maximum commonly attained oxidation state rises from Sc to Mn and then generally falls; Mn can use its seven valence electrons, $3d^5 4s^2$ (I, II true). In aqueous solution, Cu$^+$ disproportionates despite its $d^{10}$ configuration:\n$$2\\text{Cu}^{+}(aq)\\rightarrow\\text{Cu}^{2+}(aq)+\\text{Cu}(s)$$\nThus III is false, while IV is true; the correct set is I, II and IV.",
+   "chapter": "d- and f-Block Elements",
+   "subtopic": "Oxidation states of transition metals",
+   "archetype": "statement evaluation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 73,
+   "section": "Chemistry",
+   "stem": "Each sequence is intended to run from less negative to more negative electron gain enthalpy. Which sequence is incorrectly ordered?",
+   "options": [
+    {
+     "text": "$\\text{Ar}<\\text{F}<\\text{Cl}$"
+    },
+    {
+     "text": "$\\text{N}<\\text{C}<\\text{O}<\\text{F}$"
+    },
+    {
+     "text": "$\\text{I}<\\text{Br}<\\text{Cl}<\\text{F}$"
+    },
+    {
+     "text": "$\\text{O}<\\text{Te}<\\text{Se}<\\text{S}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "For halogens, electron gain enthalpy becomes more negative in the order $\\text{I}<\\text{Br}<\\text{F}<\\text{Cl}$; chlorine is more negative than fluorine.\nHence $\\text{I}<\\text{Br}<\\text{Cl}<\\text{F}$ is incorrectly ordered.",
+   "chapter": "Classification of Elements and Periodicity",
+   "subtopic": "Electron gain enthalpy",
+   "archetype": "find incorrect order",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 74,
+   "section": "Chemistry",
+   "stem": "At $400\\ \\text{K}$, a cell with $n=2$ has $E^\\circ_{\\text{cell}}=0.1587\\ \\text{V}$. Find $(\\Delta G^\\circ, K)$. Take $F=96500\\ \\text{C mol}^{-1}$ and $R=8.314\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+   "options": [
+    {
+     "text": "$(-30.6\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^4)$"
+    },
+    {
+     "text": "$(-15.3\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^2)$"
+    },
+    {
+     "text": "$(+30.6\\ \\text{kJ mol}^{-1},\\ 1.00\\times10^{-4})$"
+    },
+    {
+     "text": "$(-30.6\\ \\text{kJ mol}^{-1},\\ 2.3\\times10^5)$"
+    }
+   ],
+   "answer": "A",
+   "solution": "$\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.1587)=-30.6\\ \\text{kJ mol}^{-1}$.\n$$\\log_{10}K=\\frac{nFE^\\circ}{2.303RT}=\\frac{30629.1}{2.303(8.314)(400)}\\approx4.00$$\nHence, $K\\approx1.00\\times10^4$.",
+   "chapter": "Electrochemistry",
+   "subtopic": "Gibbs energy and equilibrium constant from cell EMF",
+   "archetype": "single-formula numerical",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 75,
+   "section": "Chemistry",
+   "stem": "Let I = $[\\text{Co}(en)_3]^{3+}$, II = $[\\text{FeF}_6]^{3-}$ and III = $[\\text{Mn(CN)}_6]^{3-}$. Which row gives the hybridisation, spin state, number of unpaired electrons $n$ and spin-only magnetic moment for I, II and III? Use $\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$.",
+   "options": [
+    {
+     "text": "I: $sp^3d^2$, high, $4$, $4.90\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$"
+    },
+    {
+     "text": "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$"
+    },
+    {
+     "text": "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $d^2sp^3$, low, $1$, $1.73\\ \\text{BM}$; III: $d^2sp^3$, low, $2$, $2.83\\ \\text{BM}$"
+    },
+    {
+     "text": "I: $d^2sp^3$, low, $0$, $0\\ \\text{BM}$; II: $sp^3d^2$, high, $5$, $5.92\\ \\text{BM}$; III: $sp^3d^2$, high, $4$, $4.90\\ \\text{BM}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For octahedral complexes, $en$ and $CN^-$ cause pairing, while $F^-$ gives high spin. Thus Co$^{3+}$ ($d^6$): $d^2sp^3$, $n=0$; Fe$^{3+}$ ($d^5$): $sp^3d^2$, $n=5$; Mn$^{3+}$ ($d^4$): $d^2sp^3$, $n=2$.\n$$\\mu=\\sqrt{n(n+2)}$$\nThe moments are $0$, $\\sqrt{35}=5.92$ BM and $\\sqrt{8}=2.83$ BM, respectively; these match (B).",
+   "chapter": "Coordination Compounds",
+   "subtopic": "VBT – spin and magnetism",
+   "archetype": "electron configuration comparison",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 76,
+   "section": "Chemistry",
+   "stem": "On complete hydrolysis, which option gives the balanced equations for $\\text{PCl}_3$ and $\\text{PCl}_5$, plus the anions from the $\\text{PCl}_5$ hydrolysate after the first ionisation of $\\text{H}_3\\text{PO}_4$?",
+   "options": [
+    {
+     "text": "$\\text{PCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_3+3\\text{HCl}$; $\\text{PCl}_5+4\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+3\\text{HCl}$; $\\text{Cl}^-$ and $\\text{H}_2\\text{PO}_4^-$"
+    },
+    {
+     "text": "$\\text{PCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+3\\text{HCl}$; $\\text{PCl}_5+4\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+5\\text{HCl}$; $\\text{Cl}^-$ and $\\text{H}_2\\text{PO}_4^-$"
+    },
+    {
+     "text": "$\\text{PCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_3+3\\text{HCl}$; $\\text{PCl}_5+4\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+5\\text{HCl}$; $\\text{Cl}^-$ and $\\text{PO}_4^{3-}$"
+    },
+    {
+     "text": "$\\text{PCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_3+3\\text{HCl}$; $\\text{PCl}_5+4\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+5\\text{HCl}$; $\\text{Cl}^-$ and $\\text{H}_2\\text{PO}_4^-$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Hydrolysis gives $\\text{PCl}_3+3\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_3+3\\text{HCl}$ and $\\text{PCl}_5+4\\text{H}_2\\text{O}\\rightarrow\\text{H}_3\\text{PO}_4+5\\text{HCl}$. After the first ionisation, $\\text{H}_3\\text{PO}_4\\rightleftharpoons\\text{H}^++\\text{H}_2\\text{PO}_4^-$, while HCl gives $\\text{Cl}^-$; hence the anions are $\\text{Cl}^-$ and $\\text{H}_2\\text{PO}_4^-$.",
+   "chapter": "p-Block Elements",
+   "subtopic": "Structure of oxides of phosphorus / hydrolysis of PCl3-type halides",
+   "archetype": "reaction products",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 77,
+   "section": "Chemistry",
+   "stem": "As shown in the figure, which statements correctly describe similarities between lithium and magnesium?\nI. Both form nitrides by direct combination with nitrogen.\nII. Both carbonates decompose on heating to oxides and carbon dioxide.\nIII. Both give the same characteristic colour in a flame test.",
+   "figure": {
+    "kind": "chem",
+    "path": "figs/q077_stem_v0.png",
+    "width_pct": 80
+   },
+   "options": [
+    {
+     "text": "I and II only"
+    },
+    {
+     "text": "II only"
+    },
+    {
+     "text": "I only"
+    },
+    {
+     "text": "I, II and III"
+    }
+   ],
+   "answer": "A",
+   "solution": "Both lithium and magnesium combine directly with nitrogen to form nitrides. Their carbonates decompose on heating:\n$$\\mathrm{Li_2CO_3 \\rightarrow Li_2O + CO_2},\\qquad \\mathrm{MgCO_3 \\rightarrow MgO + CO_2}$$\nLithium gives a crimson flame, whereas magnesium has no characteristic flame colour; hence I and II only.",
+   "chapter": "s-Block Elements",
+   "subtopic": "Diagonal relationship of Li and Mg",
+   "archetype": "statement verification",
+   "difficulty": 2,
+   "figure_kind": "chem",
+   "notes": "figure check: The flame-test swatch for Li is rendered dark grey, not crimson, so it does not match the brief (only the text label says 'crimson').",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 78,
+   "section": "Chemistry",
+   "stem": "At $25^\\circ\\text{C}$, $\\Lambda_m^\\circ$ values for $\\text{HCl}$, $\\text{NaCl}$ and $\\text{CH}_3\\text{COONa}$ are $426$, $126$ and $91\\ \\text{S cm}^2\\text{ mol}^{-1}$, respectively. Find $\\Lambda_m^\\circ$ for $\\text{CH}_3\\text{COOH}$.",
+   "options": [
+    {
+     "text": "$209\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+    },
+    {
+     "text": "$461\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+    },
+    {
+     "text": "$391\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+    },
+    {
+     "text": "$517\\ \\text{S cm}^2\\text{ mol}^{-1}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "By Kohlrausch’s law,\n$$\\Lambda_m^\\circ(\\mathrm{CH_3COOH})=\\Lambda_m^\\circ(\\mathrm{HCl})+\\Lambda_m^\\circ(\\mathrm{CH_3COONa})-\\Lambda_m^\\circ(\\mathrm{NaCl})$$\n$=426+91-126=391\\ \\mathrm{S\\ cm^2\\ mol^{-1}}$.",
+   "chapter": "Electrochemistry",
+   "subtopic": "Kohlrausch's law",
+   "archetype": "linear combination",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 79,
+   "section": "Chemistry",
+   "stem": "Using MO bond orders to infer relative bond lengths, choose the increasing bond-length order for the listed diatomic species and the correct resonance description of $\\text{CO}_3^{2-}$.",
+   "options": [
+    {
+     "text": "$\\text{NO}^+<\\text{O}_2<\\text{O}_2^+<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$"
+    },
+    {
+     "text": "$\\text{O}_2^{2-}<\\text{O}_2^-<\\text{O}_2<\\text{O}_2^+<\\text{NO}^+$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$"
+    },
+    {
+     "text": "$\\text{NO}^+<\\text{O}_2^+<\\text{O}_2<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has one $\\text{C}=\\text{O}$ bond and two $\\text{C}-\\text{O}$ bonds"
+    },
+    {
+     "text": "$\\text{NO}^+<\\text{O}_2^+<\\text{O}_2<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Bond length decreases as bond order increases. The bond orders are $3, 2.5, 2, 1.5, 1$ for $\\text{NO}^+$, $\\text{O}_2^+$, $\\text{O}_2$, $\\text{O}_2^-$, $\\text{O}_2^{2-}$, respectively, giving the stated increasing bond-length order.\nIn $\\text{CO}_3^{2-}$, resonance makes the three $\\text{C}-\\text{O}$ bonds equivalent, with average bond order $\n$$\\dfrac{2+1+1}{3}=\\dfrac{4}{3}$$",
+   "chapter": "Chemical Bonding",
+   "subtopic": "Bond order and bond length (resonance)",
+   "archetype": "ordering",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 80,
+   "section": "Chemistry",
+   "stem": "What is the correct IUPAC name of cis-$[\\text{CoCl}_2(\\text{en})_2]\\text{Cl}$, where en is ethane-1,2-diamine?",
+   "options": [
+    {
+     "text": "cis-dichloridobis(ethane-1,2-diamine)cobalt(II) chloride"
+    },
+    {
+     "text": "cis-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride"
+    },
+    {
+     "text": "cis-bis(chlorido)bis(ethane-1,2-diamine)cobalt(III) chloride"
+    },
+    {
+     "text": "trans-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride"
+    }
+   ],
+   "answer": "B",
+   "solution": "The complex ion has charge $+1$; if cobalt has oxidation state $x$, then $x+2(-1)=+1$, so $x=+3$.\nThe ligands are named chlorido before ethane-1,2-diamine, using $bis$ for the bidentate ligand; the given geometry is cis.\nThus, the name is cis-dichloridobis(ethane-1,2-diamine)cobalt(III) chloride.",
+   "chapter": "Coordination Compounds",
+   "subtopic": "IUPAC nomenclature of complexes",
+   "archetype": "fact recall",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 81,
+   "section": "English Proficiency",
+   "stem": "Despite the noisy surroundings, the speaker remained **composed** and answered every question calmly. Choose the synonym of “composed”.",
+   "options": [
+    {
+     "text": "Agitated"
+    },
+    {
+     "text": "Careless"
+    },
+    {
+     "text": "Collected"
+    },
+    {
+     "text": "Confused"
+    }
+   ],
+   "answer": "C",
+   "solution": "“Composed” means calm and self-controlled; “collected” has the same meaning.",
+   "chapter": "Synonyms",
+   "subtopic": "Synonyms",
+   "archetype": "synonym selection",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 82,
+   "section": "English Proficiency",
+   "stem": "Arrange P, Q, R and S to form a coherent five-sentence paragraph. The first and last sentences are fixed. In the mid-nineteenth century, irregularities in Uranus's orbit led astronomers to suspect an unseen planet. P: Initial observers dismissed the suggestion because the deviations were slight, Q: but two mathematicians used them to calculate the position of a possible planet. R: Their calculation, however, did not itself establish the body's existence. S: Observers then searched the indicated region and found a planet close to the predicted position. Neptune's discovery became a celebrated demonstration of how theory can guide observation. Which sequence is correct?",
+   "options": [
+    {
+     "text": "Q - P - R - S"
+    },
+    {
+     "text": "R - P - Q - S"
+    },
+    {
+     "text": "P - R - Q - S"
+    },
+    {
+     "text": "P - Q - R - S"
+    }
+   ],
+   "answer": "D",
+   "solution": "P–Q form a contrast: observers dismissed the suggestion, but mathematicians used the deviations to calculate the planet’s position. R qualifies their calculation, and S describes the subsequent search and discovery.",
+   "chapter": "Sentence Rearrangement (para jumbles)",
+   "subtopic": "Sentence rearrangement (PQRS)",
+   "archetype": "para jumble (fixed ends)",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 83,
+   "section": "English Proficiency",
+   "stem": "Find the part of the sentence that contains an error. One of the field reports / despite the extensive annotations added by the surveyors during the second review / contain a discrepancy / that the editors have not yet explained.",
+   "options": [
+    {
+     "text": "One of the field reports"
+    },
+    {
+     "text": "despite the extensive annotations added by the surveyors during the second review"
+    },
+    {
+     "text": "that the editors have not yet explained"
+    },
+    {
+     "text": "contain a discrepancy"
+    }
+   ],
+   "answer": "D",
+   "solution": "The subject is “One,” which is singular; the intervening phrase does not affect subject–verb agreement. The verb should be “contains,” not “contain.”",
+   "chapter": "Error Spotting / Sentence Improvement",
+   "subtopic": "Subject-verb agreement",
+   "archetype": "spot the error",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 84,
+   "section": "English Proficiency",
+   "stem": "The editor praised Mira for being ________; she checked every date and reference before approving the report.",
+   "options": [
+    {
+     "text": "negligent"
+    },
+    {
+     "text": "meticulous"
+    },
+    {
+     "text": "impulsive"
+    },
+    {
+     "text": "indifferent"
+    }
+   ],
+   "answer": "B",
+   "solution": "Checking every date and reference shows great care and attention to detail; <u>meticulous</u> means careful and thorough.",
+   "chapter": "Sentence Completion (vocabulary)",
+   "subtopic": "Sentence completion",
+   "archetype": "fill in the blank (vocab)",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 85,
+   "section": "English Proficiency",
+   "stem": "The committee insisted ______ receiving the complete report before making its decision.",
+   "options": [
+    {
+     "text": "at"
+    },
+    {
+     "text": "for"
+    },
+    {
+     "text": "on"
+    },
+    {
+     "text": "with"
+    }
+   ],
+   "answer": "C",
+   "solution": "The standard construction is $\\text{insist on} + \\text{gerund}$; hence, “insisted on receiving” is correct.",
+   "chapter": "Error Spotting / Sentence Improvement",
+   "subtopic": "Prepositions",
+   "archetype": "fill in the blank",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 86,
+   "section": "English Proficiency",
+   "stem": "Though the analyst was ___ as to whether the data had been gathered independently, she was ___ that they could not establish causation.",
+   "options": [
+    {
+     "text": "agnostic / categorical"
+    },
+    {
+     "text": "certain / equivocal"
+    },
+    {
+     "text": "credulous / tentative"
+    },
+    {
+     "text": "reticent / speculative"
+    }
+   ],
+   "answer": "A",
+   "solution": "“Agnostic as to whether” indicates suspended judgment, while “categorical that” indicates a firm assertion. These words convey the contrast in certainty required by the sentence.",
+   "chapter": "Sentence Completion (vocabulary)",
+   "subtopic": "Verbal analogy",
+   "archetype": "word analogy",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 87,
+   "section": "English Proficiency",
+   "stem": "Find the part of the sentence that contains an error. If there is no error, choose “No error.”\nWhen the inquiry resumed on Tuesday, / the clerk had already indexed the files, / and the chair adjourned the session after the final witness withdrew.",
+   "options": [
+    {
+     "text": "When the inquiry resumed on Tuesday"
+    },
+    {
+     "text": "No error"
+    },
+    {
+     "text": "and the chair adjourned the session after the final witness withdrew"
+    },
+    {
+     "text": "the clerk had already indexed the files"
+    }
+   ],
+   "answer": "B",
+   "solution": "The past perfect $had already indexed$ shows the files were indexed before the inquiry resumed. The simple past verbs $adjourned$ and $withdrew$ correctly describe the subsequent events; hence, there is no error.",
+   "chapter": "Error Spotting / Sentence Improvement",
+   "subtopic": "Tense consistency",
+   "archetype": "spot the error (no error)",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 88,
+   "section": "English Proficiency",
+   "stem": "Choose the word that is closest in meaning to **obsolete**.",
+   "options": [
+    {
+     "text": "Ancient"
+    },
+    {
+     "text": "Damaged"
+    },
+    {
+     "text": "Outdated"
+    },
+    {
+     "text": "Current"
+    }
+   ],
+   "answer": "C",
+   "solution": "“Obsolete” means no longer in use or no longer current; “outdated” is its closest synonym.",
+   "chapter": "Synonyms",
+   "subtopic": "Synonyms",
+   "archetype": "word-meaning",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 89,
+   "section": "English Proficiency",
+   "stem": "Arrange the sentences to form a coherent account of a city’s response to extreme heat. Which option gives the correct opening sentence and full order?\n\nP. After calibrating them, researchers mapped temperature variations block by block.\nQ. The resulting map helped officials choose streets for shade trees and reflective roofs.\nR. During last summer’s heatwave, several neighbourhoods recorded dangerously high night-time temperatures.\nS. To identify the patterns, researchers installed low-cost sensors across the city.\nT. By the following summer, these targeted measures had lowered exposure in the hottest districts.",
+   "options": [
+    {
+     "text": "RSPQT"
+    },
+    {
+     "text": "SRPQT"
+    },
+    {
+     "text": "RSPTQ"
+    },
+    {
+     "text": "RSQPT"
+    }
+   ],
+   "answer": "A",
+   "solution": "R introduces the heat problem, followed by S, which explains how researchers investigated it. P describes the resulting map, Q shows how officials used it, and T gives the later outcome.\nThus, the order is RSPQT.",
+   "chapter": "Sentence Rearrangement (para jumbles)",
+   "subtopic": "Sentence rearrangement",
+   "archetype": "para jumble (first sentence)",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 90,
+   "section": "English Proficiency",
+   "stem": "The board introduced a new eligibility requirement after applicants had met its published criteria. Critics said it was ______.",
+   "options": [
+    {
+     "text": "making a mountain out of a molehill"
+    },
+    {
+     "text": "letting the cat out of the bag"
+    },
+    {
+     "text": "passing the buck"
+    },
+    {
+     "text": "moving the goalposts"
+    }
+   ],
+   "answer": "D",
+   "solution": "“Moving the goalposts” means changing the rules or criteria after a process has begun. Adding a new requirement after applicants met the published criteria fits this meaning.",
+   "chapter": "Idioms and Phrases",
+   "subtopic": "Idioms",
+   "archetype": "idiom meaning",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 91,
+   "section": "English Proficiency",
+   "stem": "Choose the best improvement for the underlined part: <u>She worked at the research centre since 2021</u>, contributing to several important studies.",
+   "options": [
+    {
+     "text": "She has worked at the research centre since 2021"
+    },
+    {
+     "text": "She had worked at the research centre since 2021"
+    },
+    {
+     "text": "She is working at the research centre since 2021"
+    },
+    {
+     "text": "She works at the research centre since 2021"
+    }
+   ],
+   "answer": "A",
+   "solution": "“Since 2021” indicates an action continuing to the present, so the present perfect is used: “She has worked at the research centre since 2021.”",
+   "chapter": "Error Spotting / Sentence Improvement",
+   "subtopic": "Tenses – present perfect",
+   "archetype": "sentence improvement",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 92,
+   "section": "English Proficiency",
+   "stem": "Change the following sentence into passive voice: The committee approved the proposal after a brief discussion.",
+   "options": [
+    {
+     "text": "The proposal approved the committee after a brief discussion."
+    },
+    {
+     "text": "The proposal is approved by the committee after a brief discussion."
+    },
+    {
+     "text": "The committee was approved by the proposal after a brief discussion."
+    },
+    {
+     "text": "The proposal was approved by the committee after a brief discussion."
+    }
+   ],
+   "answer": "D",
+   "solution": "The active object, “the proposal,” becomes the subject; simple past “approved” changes to “was approved.” The agent is introduced by “by”: The proposal was approved by the committee after a brief discussion.",
+   "chapter": "Active and Passive Voice",
+   "subtopic": "Active and passive voice",
+   "archetype": "voice change",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 93,
+   "section": "English Proficiency",
+   "stem": "Choose the word most nearly opposite in meaning to the word given in capital.\n\n**TRANSIENT**",
+   "options": [
+    {
+     "text": "Brief"
+    },
+    {
+     "text": "Permanent"
+    },
+    {
+     "text": "Fleeting"
+    },
+    {
+     "text": "Temporary"
+    }
+   ],
+   "answer": "B",
+   "solution": "“Transient” means temporary or short-lived; its opposite is “permanent.”",
+   "chapter": "Antonyms",
+   "subtopic": "Antonyms",
+   "archetype": "antonym selection",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 94,
+   "section": "English Proficiency",
+   "stem": "Read the following passage carefully and answer the questions that follow.\n\nCities often respond to rising summer temperatures by planting trees. The intervention seems straightforward: more trees should mean more shade and cooler streets. Yet the number of saplings planted is a poor measure of the relief residents actually receive. Young trees may take years to cast substantial shade, and without adequate watering and maintenance many will not survive. Even mature trees can be concentrated in parks or affluent neighbourhoods, leaving crowded streets and bus stops exposed.\n\nMeasurements also shape what officials believe they have achieved. Satellite images can estimate tree cover or the temperature of surfaces, but these indicators are not identical to the heat people experience. A roof that reflects sunlight may register as cooler without making a nearby pavement comfortable for pedestrians. Conversely, a street’s temperature at one hour may fail to capture the exposure of people waiting there later in the day.\n\nNone of this makes measurement futile. It means that a single, easily counted indicator can conceal differences in survival, location and human exposure. A more useful assessment would track whether trees endure, where shade is created, and who benefits from it. Such measures may be slower and less tidy than a planting total, but they better connect municipal effort to the purpose that justifies it: reducing heat where people are most vulnerable.\n\nWhich statement best expresses the central idea of the passage?",
+   "options": [
+    {
+     "text": "Tree planting is an ineffective response to urban heat because young trees provide little immediate shade."
+    },
+    {
+     "text": "Satellite measurements are too unreliable to help officials evaluate neighbourhood environmental conditions."
+    },
+    {
+     "text": "Cities should assess tree-planting programmes through measures that reflect lasting shade and residents’ exposure."
+    },
+    {
+     "text": "Urban heat can be reduced most fairly by replacing parks with trees along busy streets."
+    }
+   ],
+   "answer": "C",
+   "solution": "Planting totals and satellite indicators may not reflect the shade that lasts or the heat residents experience. Cities should therefore assess tree survival, shade location and who benefits, linking measures to reduced exposure.",
+   "chapter": "Reading Comprehension",
+   "subtopic": "Detail",
+   "archetype": "",
+   "difficulty": 3,
+   "passage_id": "rc1",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 95,
+   "section": "English Proficiency",
+   "stem": "A city reports that it has planted many trees and that average surface temperatures have fallen. Which conclusion is most consistent with the passage?",
+   "options": [
+    {
+     "text": "The programme has probably reduced heat exposure equally, since both planting and temperature figures improved."
+    },
+    {
+     "text": "The figures alone cannot establish whether the most heat-exposed residents gained meaningful shade."
+    },
+    {
+     "text": "The lower surface temperatures show that tree survival and maintenance are no longer important concerns."
+    },
+    {
+     "text": "The city should disregard satellite data and rely exclusively on residents’ accounts of the heat."
+    }
+   ],
+   "answer": "B",
+   "solution": "Planting totals and average surface temperatures do not show whether trees survive or whether shade reaches the most heat-exposed residents. Thus, the figures alone cannot establish who benefited.",
+   "chapter": "Reading Comprehension",
+   "subtopic": "Author's view inference",
+   "archetype": "",
+   "difficulty": 5,
+   "passage_id": "rc1",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 96,
+   "section": "Logical Reasoning",
+   "stem": "Using each letter no more often than it occurs in **counterintelligence**, how many of the following are meaningful four-letter English words: clue, cite, lent, tint, till, coal?",
+   "options": [
+    {
+     "text": "Four"
+    },
+    {
+     "text": "Three"
+    },
+    {
+     "text": "Five"
+    },
+    {
+     "text": "Six"
+    }
+   ],
+   "answer": "C",
+   "solution": "The available letters include $c^2, e^4, i^2, l^2, n^3, t^2$, and no $a$. The words clue, cite, lent, tint, and till satisfy the letter limits; coal requires an unavailable $a$. Hence, the number of meaningful words is $5$.",
+   "chapter": "Word Formation / Dictionary Order",
+   "subtopic": "Word formation",
+   "archetype": "word formation",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 97,
+   "section": "Logical Reasoning",
+   "stem": "Select the figure which is different from the other three.",
+   "options": [
+    {
+     "text": "",
+     "figure": {
+      "kind": "lr",
+      "path": "figs/q097_12032_optA.png",
+      "width_pct": 18
+     }
+    },
+    {
+     "text": "",
+     "figure": {
+      "kind": "lr",
+      "path": "figs/q097_12032_optB.png",
+      "width_pct": 18
+     }
+    },
+    {
+     "text": "",
+     "figure": {
+      "kind": "lr",
+      "path": "figs/q097_12032_optC.png",
+      "width_pct": 18
+     }
+    },
+    {
+     "text": "",
+     "figure": {
+      "kind": "lr",
+      "path": "figs/q097_12032_optD.png",
+      "width_pct": 18
+     }
+    }
+   ],
+   "answer": "C",
+   "solution": "Three of the figures are rotations of the same figure; figure (C) is its mirror image, which cannot be obtained by rotation.",
+   "chapter": "Odd Figure Out",
+   "subtopic": "Odd figure out",
+   "archetype": "",
+   "difficulty": 2,
+   "figure_kind": "lr",
+   "notes": "generated by figures.lr.odd_figure (answer correct by construction)",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 98,
+   "section": "Logical Reasoning",
+   "stem": "Find the next term: C7, E12, D17, F22, E27, ____",
+   "options": [
+    {
+     "text": "G31"
+    },
+    {
+     "text": "G32"
+    },
+    {
+     "text": "F32"
+    },
+    {
+     "text": "H32"
+    }
+   ],
+   "answer": "B",
+   "solution": "The letters alternate shifts of $+2$ and $-1$: $C, E, D, F, E, G$. The numbers increase by $5$: $7, 12, 17, 22, 27, 32$. Hence, the next term is $G32$.",
+   "chapter": "Letter / Number Series",
+   "subtopic": "Alpha-numeric series",
+   "archetype": "multi-component series",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 99,
+   "section": "Logical Reasoning",
+   "stem": "Read the statements and conclusions carefully. Which conclusion logically follows?\n\n**Statements:**\nAll poets are writers.\nNo writers are careless.\n\n**Conclusions:**\nI. No poet is careless.\nII. All poets are careless.",
+   "options": [
+    {
+     "text": "Only I follows"
+    },
+    {
+     "text": "Only II follows"
+    },
+    {
+     "text": "Both I and II follow"
+    },
+    {
+     "text": "Neither I nor II follows"
+    }
+   ],
+   "answer": "A",
+   "solution": "Every poet is a writer, and no writer is careless. Therefore, no poet is careless, so conclusion I follows; conclusion II does not.",
+   "chapter": "Syllogism",
+   "subtopic": "Syllogism",
+   "archetype": "syllogism",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 100,
+   "section": "Logical Reasoning",
+   "stem": "Select the letter cluster that is different from the other three.",
+   "options": [
+    {
+     "text": "ACE"
+    },
+    {
+     "text": "BDF"
+    },
+    {
+     "text": "GIK"
+    },
+    {
+     "text": "DHJ"
+    }
+   ],
+   "answer": "D",
+   "solution": "In ACE, BDF, and GIK, consecutive letters are separated by 2 positions in the alphabet. In DHJ, the gaps are 4 and 2 positions, so it is different.",
+   "chapter": "Classification (odd one out)",
+   "subtopic": "Classification",
+   "archetype": "odd-one-out",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 101,
+   "section": "Logical Reasoning",
+   "stem": "Pointing to a photograph, Rina says, “He is the son of my maternal grandfather’s only daughter.” How is the person in the photograph related to Rina?",
+   "options": [
+    {
+     "text": "Father"
+    },
+    {
+     "text": "Uncle"
+    },
+    {
+     "text": "Brother"
+    },
+    {
+     "text": "Cousin"
+    }
+   ],
+   "answer": "C",
+   "solution": "Rina’s maternal grandfather’s only daughter is her mother. Her mother’s son is Rina’s brother.",
+   "chapter": "Blood Relations",
+   "subtopic": "Blood relations",
+   "archetype": "relation chain",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 102,
+   "section": "Logical Reasoning",
+   "stem": "The given sheet is folded to form a cube. Which symbol will be on the face opposite to the face showing 'R'?",
+   "figure": {
+    "kind": "lr",
+    "path": "figs/q102_686605_stem.png",
+    "width_pct": 40
+   },
+   "options": [
+    {
+     "text": "U"
+    },
+    {
+     "text": "Q"
+    },
+    {
+     "text": "T"
+    },
+    {
+     "text": "S"
+    }
+   ],
+   "answer": "A",
+   "solution": "In a cube net, faces that are opposite never share an edge. Folding the sheet, the face 'R' is opposite to 'U'; S, T, P, Q are all adjacent to it.",
+   "chapter": "Cube and Dice",
+   "subtopic": "Cube folding (net)",
+   "archetype": "",
+   "difficulty": 4,
+   "figure_kind": "lr",
+   "notes": "generated by figures.lr.cube_net (answer correct by construction)",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 103,
+   "section": "Logical Reasoning",
+   "stem": "Find the missing number in the given figure.",
+   "figure": {
+    "kind": "lr",
+    "path": "figs/q103_59948_stem.png",
+    "width_pct": 34
+   },
+   "options": [
+    {
+     "text": "10"
+    },
+    {
+     "text": "14"
+    },
+    {
+     "text": "42"
+    },
+    {
+     "text": "13"
+    }
+   ],
+   "answer": "D",
+   "solution": "In each row, the third number is (first)² − (second)²: 9, 2 → 77; 10, 3 → 91. So, 7, 6 → 13.",
+   "chapter": "Number Puzzle in Figures",
+   "subtopic": "Number matrix",
+   "archetype": "",
+   "difficulty": 4,
+   "figure_kind": "lr",
+   "notes": "generated by figures.lr.number_grid (answer correct by construction)",
+   "exemplar_ok": true
+  },
+  {
+   "qno": 104,
+   "section": "Logical Reasoning",
+   "stem": "Choose the pair that completes the analogy: LAMP : NCOR :: BIRD : ?",
+   "options": [
+    {
+     "text": "DJSF"
+    },
+    {
+     "text": "DKTF"
+    },
+    {
+     "text": "DKUE"
+    },
+    {
+     "text": "CJTE"
+    }
+   ],
+   "answer": "B",
+   "solution": "Each letter shifts forward by two positions in the alphabet: $B\\to D$, $I\\to K$, $R\\to T$, $D\\to F$. Hence, BIRD becomes DKTF.",
+   "chapter": "Analogy",
+   "subtopic": "Letter analogy",
+   "archetype": "positional value analogy",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 105,
+   "section": "Logical Reasoning",
+   "stem": "If **CAMP** is coded as **DCPT** by shifting each successive letter forward by one more place than the previous letter, how will **GOLD** be coded in the same way?",
+   "options": [
+    {
+     "text": "HQOH"
+    },
+    {
+     "text": "HPNG"
+    },
+    {
+     "text": "IRPI"
+    },
+    {
+     "text": "HQPG"
+    }
+   ],
+   "answer": "A",
+   "solution": "The successive shifts are $+1,+2,+3,+4$.\nApplying them to GOLD gives $G\\to H$, $O\\to Q$, $L\\to O$, $D\\to H$; hence the code is HQOH.",
+   "chapter": "Coding-Decoding",
+   "subtopic": "Coding-decoding",
+   "archetype": "letter-shift code",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 106,
+   "section": "Mathematics",
+   "stem": "For the ellipse $4x^2+9y^2-16x+54y+61=0$, the pair (centre, eccentricity) is",
+   "options": [
+    {
+     "text": "$(2,-3),\\ \\dfrac{\\sqrt{5}}{3}$"
+    },
+    {
+     "text": "$(-2,3),\\ \\dfrac{\\sqrt{5}}{3}$"
+    },
+    {
+     "text": "$(2,-3),\\ \\dfrac{2\\sqrt{2}}{3}$"
+    },
+    {
+     "text": "$(2,-3),\\ \\dfrac{5}{9}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Completing the squares gives\n$$4(x-2)^2+9(y+3)^2=36 \\implies \\frac{(x-2)^2}{9}+\\frac{(y+3)^2}{4}=1.$$\nThus the centre is $(2,-3)$, and $e=\\sqrt{1-\\frac{4}{9}}=\\frac{\\sqrt{5}}{3}$. The answer is (A).",
+   "chapter": "Conic Sections",
+   "subtopic": "Ellipse – eccentricity",
+   "archetype": "locate centre",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 107,
+   "section": "Mathematics",
+   "stem": "How many distinct arrangements of the letters of MARKET have M and A together, while E is never at an end?",
+   "options": [
+    {
+     "text": "$96$"
+    },
+    {
+     "text": "$120$"
+    },
+    {
+     "text": "$240$"
+    },
+    {
+     "text": "$144$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Treat $MA$ or $AM$ as one block, giving $5$ objects.\n$$2\\cdot5!-2\\cdot2\\cdot4!=240-96=144$$\nHence, the required number is $144$.",
+   "chapter": "Permutations and Combinations",
+   "subtopic": "Arrangements with restricted positions",
+   "archetype": "restricted arrangement",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 108,
+   "section": "Mathematics",
+   "stem": "The lines $\\dfrac{x-1}{1}=\\dfrac{y+2}{2}=\\dfrac{z}{1}$ and $\\dfrac{x-5}{2}=\\dfrac{y-1}{-1}=\\dfrac{z-5}{3}$ have direction ratios as given. Find their point of intersection, if any.",
+   "options": [
+    {
+     "text": "$(1,-2,0)$"
+    },
+    {
+     "text": "$(3,2,2)$"
+    },
+    {
+     "text": "$(5,1,5)$"
+    },
+    {
+     "text": "$(3,2,0)$"
+    }
+   ],
+   "answer": "B",
+   "solution": "Let the line parameters be $t$ and $s$. Equating the $x$- and $y$-coordinates gives\n$$1+t=5+2s,\\qquad -2+2t=1-s,$$\nso $t=2$ and $s=-1$. Substitution gives the common point $(3,2,2)$.",
+   "chapter": "Three Dimensional Geometry",
+   "subtopic": "Condition for intersecting lines",
+   "archetype": "formula application",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 109,
+   "section": "Mathematics",
+   "stem": "If $z+\\dfrac{1}{z}=\\dfrac{3+i}{2}$ and $\\operatorname{Im}z>0$, find $\\left(|z|,\\operatorname{Arg}z\\right)$, where $\\operatorname{Arg}z$ is principal.",
+   "options": [
+    {
+     "text": "$\\left(\\sqrt{2},\\dfrac{\\pi}{4}\\right)$"
+    },
+    {
+     "text": "$\\left(\\dfrac{1}{\\sqrt{2}},-\\dfrac{\\pi}{4}\\right)$"
+    },
+    {
+     "text": "$\\left(\\sqrt{2},\\dfrac{3\\pi}{4}\\right)$"
+    },
+    {
+     "text": "$(2,0)$"
+    }
+   ],
+   "answer": "A",
+   "solution": "From $z+\\dfrac1z=\\dfrac{3+i}{2}$, we get $z^2-\\dfrac{3+i}{2}z+1=0$, whose roots are $1+i$ and $\\dfrac{1-i}{2}$. Since $\\operatorname{Im}z>0$, $z=1+i$; hence $|z|=\\sqrt2$ and $\\operatorname{Arg}z=\\dfrac{\\pi}{4}$.",
+   "chapter": "Complex Numbers",
+   "subtopic": "Modulus with conjugates",
+   "archetype": "computation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 110,
+   "section": "Mathematics",
+   "stem": "For distinct real numbers $x,y,z$, the value of $$\\begin{vmatrix}1+x&x^2&x^3\\\\1+y&y^2&y^3\\\\1+z&z^2&z^3\\end{vmatrix}$$ is",
+   "options": [
+    {
+     "text": "$(y-x)(z-x)(z-y)(xy+yz+zx-xyz)$"
+    },
+    {
+     "text": "$(y-x)(z-x)(z-y)(x+y+z+xyz)$"
+    },
+    {
+     "text": "$(y-x)(z-x)(z-y)(xy+yz+zx+xyz)$"
+    },
+    {
+     "text": "$(y-x)(z-x)(z-y)(x+y+z-xyz)$"
+    }
+   ],
+   "answer": "C",
+   "solution": "By linearity in the first column, split it as $1+t$:\n$$D=\\begin{vmatrix}1&x^2&x^3\\\\1&y^2&y^3\\\\1&z^2&z^3\\\\end{vmatrix}+\\begin{vmatrix}x&x^2&x^3\\\\y&y^2&y^3\\\\z&z^2&z^3\\end{vmatrix}.$$\nFactoring the Vandermonde product $(y-x)(z-x)(z-y)$, the two terms have remaining factors $xy+yz+zx$ and $xyz$, respectively.\nHence $D=(y-x)(z-x)(z-y)(xy+yz+zx+xyz)$.",
+   "chapter": "Matrices and Determinants",
+   "subtopic": "Properties of determinants",
+   "archetype": "split-and-factor",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 111,
+   "section": "Mathematics",
+   "stem": "Evaluate the integral by parts: $\\displaystyle \\int xe^x\\,dx$.",
+   "options": [
+    {
+     "text": "$e^x(1-x)+C$"
+    },
+    {
+     "text": "$e^x(x+1)+C$"
+    },
+    {
+     "text": "$e^x(x-1)+C$"
+    },
+    {
+     "text": "$xe^x+C$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Using integration by parts, take $u=x$ and $dv=e^x\\,dx$, so $du=dx$ and $v=e^x$.\n$$\\int xe^x\\,dx=xe^x-\\int e^x\\,dx=e^x(x-1)+C$$",
+   "chapter": "Integral Calculus",
+   "subtopic": "Integration by parts",
+   "archetype": "integration technique",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 112,
+   "section": "Mathematics",
+   "stem": "For $x>0$, the general solution of $\\dfrac{dy}{dx}=\\dfrac{x+y}{x-y}$ is",
+   "options": [
+    {
+     "text": "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)-\\dfrac{1}{2}\\ln\\left(1+\\dfrac{y^2}{x^2}\\right)=C$"
+    },
+    {
+     "text": "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)+\\dfrac{1}{2}\\ln(x^2+y^2)=C$"
+    },
+    {
+     "text": "$\\tan^{-1}\\left(\\dfrac{x}{y}\\right)-\\dfrac{1}{2}\\ln(x^2+y^2)=C$"
+    },
+    {
+     "text": "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)-\\dfrac{1}{2}\\ln(x^2+y^2)=C$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Let $y=vx$. Then $v+x\\dfrac{dv}{dx}=\\dfrac{1+v}{1-v}$, so $\\dfrac{1-v}{1+v^2}\\,dv=\\dfrac{dx}{x}$.\n$$\\tan^{-1}v-\\frac12\\ln(1+v^2)=\\ln x+C$$\nUsing $v=\\dfrac yx$ and $x>0$, this simplifies to $\\tan^{-1}\\left(\\dfrac yx\\right)-\\dfrac12\\ln(x^2+y^2)=C$. (D)",
+   "chapter": "Differential Equations",
+   "subtopic": "Homogeneous DE",
+   "archetype": "y = vx substitution",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 113,
+   "section": "Mathematics",
+   "stem": "Evaluate $\\displaystyle \\int_0^1 2x\\sqrt{1+x^2}\\,dx$.",
+   "options": [
+    {
+     "text": "$\\dfrac{2\\sqrt{2}-1}{3}$"
+    },
+    {
+     "text": "$\\dfrac{4\\sqrt{2}-2}{3}$"
+    },
+    {
+     "text": "$\\dfrac{4\\sqrt{2}+2}{3}$"
+    },
+    {
+     "text": "$\\dfrac{2\\sqrt{2}+1}{3}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "Let $u=1+x^2$, so $du=2x\\,dx$; the limits change from $x=0,1$ to $u=1,2$.\n$$\\int_0^1 2x\\sqrt{1+x^2}\\,dx=\\int_1^2 u^{1/2}\\,du=\\left[\\frac{2}{3}u^{3/2}\\right]_1^2=\\frac{4\\sqrt{2}-2}{3}$$",
+   "chapter": "Integral Calculus",
+   "subtopic": "Integration by substitution",
+   "archetype": "standard area",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 114,
+   "section": "Mathematics",
+   "stem": "Let $|A|=6$ and $|B|=4$. For fixed $a\\in A$ and $b\\in B$, how many onto functions $f:A\\to B$ satisfy $f(a)=b$?",
+   "options": [
+    {
+     "text": "$390$"
+    },
+    {
+     "text": "$240$"
+    },
+    {
+     "text": "$391$"
+    },
+    {
+     "text": "$1024$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Since $f(a)=b$ is fixed, the remaining $5$ elements must cover the other $3$ elements of $B$. By inclusion–exclusion,\n$$N=4^5-\\binom31 3^5+\\binom32 2^5-\\binom33 1^5=1024-729+96-1=390.$$",
+   "chapter": "Sets, Relations and Functions",
+   "subtopic": "Number of onto functions",
+   "archetype": "counting formula",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 115,
+   "section": "Mathematics",
+   "stem": "A circle of radius $\\sqrt{5}$ passes through $(1,2)$ and $(5,2)$, and its centre lies on $y=x-2$. Its equation is",
+   "options": [
+    {
+     "text": "$x^2+y^2-6x-2y+5=0$"
+    },
+    {
+     "text": "$x^2+y^2-6x-6y+13=0$"
+    },
+    {
+     "text": "$x^2+y^2-6x-2y+9=0$"
+    },
+    {
+     "text": "$x^2+y^2-2x-6y+5=0$"
+    }
+   ],
+   "answer": "A",
+   "solution": "The perpendicular bisector of the chord joining $(1,2)$ and $(5,2)$ is $x=3$. Its intersection with $y=x-2$ gives the centre $(3,1)$.\n$$ (x-3)^2+(y-1)^2=5 \\implies x^2+y^2-6x-2y+5=0 $$",
+   "chapter": "Conic Sections",
+   "subtopic": "Circle through given points",
+   "archetype": "construct-equation",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 116,
+   "section": "Mathematics",
+   "stem": "Let $z$ satisfy $|z|^2=13$, $z+\\bar z=6$ and $\\operatorname{Im}z<0$. Find the real and imaginary parts of $z+\\dfrac{1}{z}$.",
+   "options": [
+    {
+     "text": "$\\left(\\dfrac{42}{13},\\dfrac{24}{13}\\right)$"
+    },
+    {
+     "text": "$\\left(\\dfrac{42}{13},-\\dfrac{24}{13}\\right)$"
+    },
+    {
+     "text": "$(3,-2)$"
+    },
+    {
+     "text": "$\\left(\\dfrac{42}{13},-\\dfrac{28}{13}\\right)$"
+    }
+   ],
+   "answer": "B",
+   "solution": "From $z+\\bar z=6$, $\\operatorname{Re}z=3$. Since $|z|^2=13$ and $\\operatorname{Im}z<0$, $z=3-2i$.\n$$\\frac1z=\\frac{\\bar z}{|z|^2}=\\frac{3+2i}{13},\\qquad z+\\frac1z=\\frac{42}{13}-\\frac{24}{13}i$$\nHence the real and imaginary parts are $\\left(\\frac{42}{13},-\\frac{24}{13}\\right)$.",
+   "chapter": "Complex Numbers",
+   "subtopic": "Algebra of complex numbers",
+   "archetype": "1/z = z̄/|z|²",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 117,
+   "section": "Mathematics",
+   "stem": "Two fair dice are rolled. Given that their sum is even, find the probability that their product is divisible by $3$.",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{3}$"
+    },
+    {
+     "text": "$\\dfrac{4}{9}$"
+    },
+    {
+     "text": "$\\dfrac{2}{3}$"
+    },
+    {
+     "text": "$\\dfrac{5}{9}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "An even sum means both dice have the same parity, giving $18$ equally likely outcomes. Among even-even outcomes, $5$ contain a $6$; among odd-odd outcomes, $5$ contain a $3$.\n$$P(\\text{product divisible by }3\\mid\\text{even sum})=\\frac{5+5}{18}=\\frac{5}{9}$$",
+   "chapter": "Probability",
+   "subtopic": "Conditional probability, independence",
+   "archetype": "direct computation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 118,
+   "section": "Mathematics",
+   "stem": "A binomial random variable $X$ has mean $5$ and variance $\\dfrac{5}{2}$. Find $P(X\\leq 1)$.",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{1024}$"
+    },
+    {
+     "text": "$\\dfrac{5}{512}$"
+    },
+    {
+     "text": "$\\dfrac{11}{1024}$"
+    },
+    {
+     "text": "$\\dfrac{21}{1024}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "For a binomial variable, $np=5$ and $np(1-p)=\\dfrac{5}{2}$, so $p=\\dfrac{1}{2}$ and $n=10$.\n$$P(X\\leq 1)=\\left[\\binom{10}{0}+\\binom{10}{1}\\right]\\left(\\dfrac{1}{2}\\right)^{10}=\\dfrac{11}{1024}$$",
+   "chapter": "Probability",
+   "subtopic": "Binomial distribution",
+   "archetype": "parameter recovery",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 119,
+   "section": "Mathematics",
+   "stem": "Find the shortest distance between the lines $\\vec r=\\lambda(1,1,0)$ and $\\vec r=(2,1,3)+\\mu(1,0,1)$, where $\\lambda,\\mu\\in\\mathbb R$.",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{\\sqrt{3}}$"
+    },
+    {
+     "text": "$\\dfrac{2}{\\sqrt{3}}$"
+    },
+    {
+     "text": "$\\sqrt{3}$"
+    },
+    {
+     "text": "$2\\sqrt{3}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For two non-parallel lines, $d=\\dfrac{|(b-a)\\cdot(u\\times v)|}{|u\\times v|}$. Here $u=(1,1,0)$, $v=(1,0,1)$, and $b-a=(2,1,3)$, with $u\\times v=(1,-1,-1)$.\n$$d=\\frac{|(2,1,3)\\cdot(1,-1,-1)|}{\\sqrt{3}}=\\frac{2}{\\sqrt{3}}$$",
+   "chapter": "Three Dimensional Geometry",
+   "subtopic": "Shortest distance between skew lines",
+   "archetype": "determinant condition",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 120,
+   "section": "Mathematics",
+   "stem": "A 6-member committee is chosen from 7 researchers and 5 designers. How many committees have at least one of each?",
+   "options": [
+    {
+     "text": "$917$"
+    },
+    {
+     "text": "$805$"
+    },
+    {
+     "text": "$567$"
+    },
+    {
+     "text": "$924$"
+    }
+   ],
+   "answer": "A",
+   "solution": "For at least one of each, choose $r$ researchers and $6-r$ designers, where $r=1,2,3,4,5$.\n$$\\sum_{r=1}^{5}\\binom{7}{r}\\binom{5}{6-r}=7+105+350+350+105=917$$",
+   "chapter": "Permutations and Combinations",
+   "subtopic": "Selections",
+   "archetype": "case-wise counting",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 121,
+   "section": "Mathematics",
+   "stem": "Given $\\vec a=\\hat i+2\\hat j-\\hat k$, $\\vec b=2\\hat i+\\hat k$, $\\vec c=\\hat i-\\hat j+2\\hat k$ and $\\vec d=\\hat i+\\hat j+\\hat k$, find $[\\vec a\\times(\\vec b\\times\\vec c)]\\cdot\\vec d$.",
+   "options": [
+    {
+     "text": "$7$"
+    },
+    {
+     "text": "$-7$"
+    },
+    {
+     "text": "$-11$"
+    },
+    {
+     "text": "$11$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Using $\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b)$, we have $\\vec a\\cdot\\vec c=-3$, $\\vec a\\cdot\\vec b=1$, $\\vec b\\cdot\\vec d=3$, and $\\vec c\\cdot\\vec d=2$.\n$$[\\vec a\\times(\\vec b\\times\\vec c)]\\cdot\\vec d=(-3)(3)-(1)(2)=-11$$",
+   "chapter": "Vector Algebra",
+   "subtopic": "Vector triple product",
+   "archetype": "expand box product",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 122,
+   "section": "Mathematics",
+   "stem": "The range of $f(x)=\\dfrac{x^2+4x+8}{x+2}$, where $x\\ne-2$, is",
+   "options": [
+    {
+     "text": "$(-\\infty,-4)\\cup(4,\\infty)$"
+    },
+    {
+     "text": "$[-4,4]$"
+    },
+    {
+     "text": "$(-\\infty,-2]\\cup[2,\\infty)$"
+    },
+    {
+     "text": "$(-\\infty,-4]\\cup[4,\\infty)$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Let $t=x+2\\ne0$. Then $f(x)=t+\\dfrac{4}{t}$, so $y=f(x)$ requires $t^2-yt+4=0$.\n$$\\Delta=y^2-16\\ge0\\quad\\Rightarrow\\quad y\\le-4\\ \\text{or}\\ y\\ge4.$$\nEquality is attained at $t=-2$ and $t=2$, respectively; hence the range is $(-\\infty,-4]\\cup[4,\\infty)$.",
+   "chapter": "Sets, Relations and Functions",
+   "subtopic": "Range of rational functions",
+   "archetype": "standard identity",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 123,
+   "section": "Mathematics",
+   "stem": "A system has three parallel paths, each with two components in series. The component success probabilities on the paths are $(\\dfrac12,\\dfrac23)$, $(\\dfrac34,\\dfrac45)$ and $(\\dfrac13,\\dfrac12)$, respectively. All six components work independently. Find the probability that the system works.",
+   "options": [
+    {
+     "text": "$\\dfrac29$"
+    },
+    {
+     "text": "$\\dfrac79$"
+    },
+    {
+     "text": "$\\dfrac{11}{15}$"
+    },
+    {
+     "text": "$\\dfrac9{10}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For each series path, multiply the component success probabilities: $P_1=\\frac13$, $P_2=\\frac35$, and $P_3=\\frac16$. The parallel system fails only if all three paths fail:\n$$P(\\text{works})=1-\\left(1-\\frac13\\right)\\left(1-\\frac35\\right)\\left(1-\\frac16\\right)=1-\\frac29=\\frac79.$$",
+   "chapter": "Probability",
+   "subtopic": "Addition theorem",
+   "archetype": "inclusion-exclusion counting",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 124,
+   "section": "Mathematics",
+   "stem": "The domain of $f(x)=\\sqrt{\\dfrac{x^2-1}{x-2}}$ is",
+   "options": [
+    {
+     "text": "$[-1,1]\\cup(2,\\infty)$"
+    },
+    {
+     "text": "$(-\\infty,-1]\\cup(2,\\infty)$"
+    },
+    {
+     "text": "$[-1,1]\\cup[2,\\infty)$"
+    },
+    {
+     "text": "$(-1,1)\\cup(2,\\infty)$"
+    }
+   ],
+   "answer": "A",
+   "solution": "For the square root to be defined, the radicand must satisfy $\\dfrac{(x-1)(x+1)}{x-2}\\geq 0$, with $x\\neq 2$.\nThe critical points are $-1,1,2$; the expression is nonnegative on $[-1,1]$ and $(2,\\infty)$.\nHence the domain is $[-1,1]\\cup(2,\\infty)$.",
+   "chapter": "Sets, Relations and Functions",
+   "subtopic": "Domain of functions",
+   "archetype": "property check",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 125,
+   "section": "Mathematics",
+   "stem": "If $\\vec u=(\\hat i+2\\hat j+2\\hat k)\\times(2\\hat i+\\hat j-2\\hat k)$ and $\\vec v=-3\\hat i+12\\hat j+3\\hat k$, find the angle between them.",
+   "options": [
+    {
+     "text": "$30^\\circ$"
+    },
+    {
+     "text": "$135^\\circ$"
+    },
+    {
+     "text": "$60^\\circ$"
+    },
+    {
+     "text": "$45^\\circ$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Using the cross-product formula, $\\vec u=-6\\hat i+6\\hat j-3\\hat k$. Hence $\\vec u\\cdot\\vec v=81$, $|\\vec u|=9$ and $|\\vec v|=9\\sqrt2$.\n$$\\cos\\theta=\\frac{\\vec u\\cdot\\vec v}{|\\vec u||\\vec v|}=\\frac{81}{81\\sqrt2}=\\frac{1}{\\sqrt2}$$\nTherefore, $\\theta=45^\\circ$.",
+   "chapter": "Vector Algebra",
+   "subtopic": "Cross product and angle between vectors",
+   "archetype": "cross product then angle",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 126,
+   "section": "Mathematics",
+   "stem": "For $x>0$, find the general solution of $\\dfrac{dy}{dx}+\\dfrac{2}{x}y=\\dfrac{\\sin x}{x}$.",
+   "options": [
+    {
+     "text": "$y=\\dfrac{-\\sin x-x\\cos x+C}{x^2}$"
+    },
+    {
+     "text": "$y=\\dfrac{\\sin x+x\\cos x+C}{x^2}$"
+    },
+    {
+     "text": "$y=\\dfrac{\\sin x-x\\cos x+C}{x^2}$"
+    },
+    {
+     "text": "$y=\\dfrac{\\sin x-x\\cos x+C}{x}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "The integrating factor is $e^{\\int 2/x\\,dx}=x^2$ for $x>0$. Thus,\n$$\\frac{d}{dx}(x^2y)=x\\sin x \\quad\\Rightarrow\\quad x^2y=\\sin x-x\\cos x+C.$$\nHence $y=\\dfrac{\\sin x-x\\cos x+C}{x^2}$.",
+   "chapter": "Differential Equations",
+   "subtopic": "Linear DE integrating factor",
+   "archetype": "integrating factor",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 127,
+   "section": "Mathematics",
+   "stem": "The values $x_i=1,2,5,8,15$ have respective frequencies $f_i=2,4,1,3,2$. Find the mean deviation about the median.",
+   "options": [
+    {
+     "text": "$\\dfrac{43}{24}$"
+    },
+    {
+     "text": "$\\dfrac{49}{5}$"
+    },
+    {
+     "text": "$\\dfrac{101}{24}$"
+    },
+    {
+     "text": "$\\dfrac{49}{12}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "The total frequency is $N=12$, so the median is the average of the 6th and 7th observations: $M=\\dfrac{2+5}{2}=\\dfrac72$.\n$$\\text{Mean deviation about }M=\\frac{\\sum f_i|x_i-M|}{N}=\\frac{2(\\frac52)+4(\\frac32)+1(\\frac32)+3(\\frac92)+2(\\frac{23}{2})}{12}=\\frac{49}{12}.$$",
+   "chapter": "Statistics",
+   "subtopic": "Mean deviation (discrete)",
+   "archetype": "sum manipulation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 128,
+   "section": "Mathematics",
+   "stem": "An upright right circular frustum-shaped tank is $6$ m high, with bottom and top radii $2$ m and $5$ m. Water enters at $6\\pi\\ \\text{m}^3\\text{ min}^{-1}$. When the water is $2$ m deep, find the rate of increase of the wetted curved area.",
+   "options": [
+    {
+     "text": "$2\\pi\\ \\text{m}^2\\text{ min}^{-1}$"
+    },
+    {
+     "text": "$2\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$"
+    },
+    {
+     "text": "$4\\pi\\ \\text{m}^2\\text{ min}^{-1}$"
+    },
+    {
+     "text": "$3\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}$"
+    }
+   ],
+   "answer": "B",
+   "solution": "At depth $h$, the water-surface radius is $r=2+\\dfrac h2$, and $\\dfrac{dV}{dh}=\\pi r^2$. At $h=2$, $r=3$, so $\\dfrac{dh}{dt}=\\dfrac{6\\pi}{9\\pi}=\\dfrac23$.\nThe wetted curved area is $S=\\pi(2+r)\\dfrac{\\sqrt5}{2}h=\\pi\\sqrt5\\left(2h+\\dfrac{h^2}{4}\\right)$. Hence\n$$\\dfrac{dS}{dt}=\\pi\\sqrt5\\left(2+\\dfrac h2\\right)\\dfrac{dh}{dt}=2\\pi\\sqrt5\\ \\text{m}^2\\text{ min}^{-1}.$$",
+   "chapter": "Differential Calculus",
+   "subtopic": "Rate of change",
+   "archetype": "related rates",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 129,
+   "section": "Mathematics",
+   "stem": "For $-1<x<1$, differentiate $y=\\tan^{-1}\\!\\left(\\dfrac{x}{\\sqrt{1-x^2}}\\right)$.",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{\\sqrt{1-x^2}}$"
+    },
+    {
+     "text": "$-\\dfrac{1}{\\sqrt{1-x^2}}$"
+    },
+    {
+     "text": "$\\dfrac{1}{1-x^2}$"
+    },
+    {
+     "text": "$\\sqrt{1-x^2}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Let $\\theta=\\sin^{-1}x$. Since $-1<x<1$, $\\cos\\theta=\\sqrt{1-x^2}$ and $\\tan\\theta=\\dfrac{x}{\\sqrt{1-x^2}}$.\nThus $y=\\theta=\\sin^{-1}x$, so\n$$\\dfrac{dy}{dx}=\\dfrac{1}{\\sqrt{1-x^2}}.$$",
+   "chapter": "Differential Calculus",
+   "subtopic": "Derivatives of inverse trig functions",
+   "archetype": "simplify then differentiate",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 130,
+   "section": "Mathematics",
+   "stem": "The general solution of $\\sin x+\\cos x=2\\sin 2x$ is (where $\\alpha=\\sin^{-1}\\left(\\dfrac{1+\\sqrt{17}}{4\\sqrt2}\\right)$ and $\\beta=\\sin^{-1}\\left(\\dfrac{1-\\sqrt{17}}{4\\sqrt2}\\right)$)",
+   "options": [
+    {
+     "text": "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi\\right\\}$"
+    },
+    {
+     "text": "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+n\\pi,\\dfrac{3\\pi}{4}-\\alpha+n\\pi,\\beta-\\dfrac{\\pi}{4}+n\\pi,\\dfrac{3\\pi}{4}-\\beta+n\\pi\\right\\}$"
+    },
+    {
+     "text": "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}-\\alpha+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}-\\beta+2n\\pi\\right\\}$"
+    },
+    {
+     "text": "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}+\\alpha+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}+\\beta+2n\\pi\\right\\}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Let $u=\\frac{[?]}{}$",
+   "chapter": "Trigonometry",
+   "subtopic": "General solution of trigonometric equations",
+   "archetype": "general solution",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 131,
+   "section": "Mathematics",
+   "stem": "The solution set of $\\dfrac{(x-1)(x+2)}{(x-3)(x+1)}\\ge 0$ is",
+   "options": [
+    {
+     "text": "$(-\\infty,-2]\\cup(-1,1]\\cup[3,\\infty)$"
+    },
+    {
+     "text": "$(-\\infty,-2)\\cup(-1,1)\\cup(3,\\infty)$"
+    },
+    {
+     "text": "$(-\\infty,-2]\\cup(-1,1]\\cup(3,\\infty)$"
+    },
+    {
+     "text": "$[-2,-1)\\cup(1,3)$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Critical points are $-2,-1,1,3$; the poles $x=-1,3$ are excluded. A sign check gives nonnegative values on $(-\\infty,-2]$, $(-1,1]$, and $(3,\\infty)$.\n$$(-\\infty,-2]\\cup(-1,1]\\cup(3,\\infty)$$",
+   "chapter": "Linear Inequalities",
+   "subtopic": "Rational inequality",
+   "archetype": "sign analysis",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 132,
+   "section": "Mathematics",
+   "stem": "An annular plate has true radii $5$ cm and $3$ cm. If the outer radius is overestimated by $2\\%$ and the inner radius is underestimated by $4\\%$, estimate the percentage error in its computed area using differentials.",
+   "options": [
+    {
+     "text": "$10.75\\%$"
+    },
+    {
+     "text": "$6.25\\%$"
+    },
+    {
+     "text": "$1.75\\%$"
+    },
+    {
+     "text": "$12\\%$"
+    }
+   ],
+   "answer": "A",
+   "solution": "For $A=\\pi(R^2-r^2)$, the differential percentage error is\n$$\\frac{dA}{A}=\\frac{2(R\\,dR-r\\,dr)}{R^2-r^2}.$$\nUsing $R=5$, $r=3$, $dR=0.1$ and $dr=-0.12$, we get $\\dfrac{dA}{A}=\\dfrac{1+0.72}{16}=0.1075$.\nHence, the estimated percentage error is $10.75\\%$.",
+   "chapter": "Differential Calculus",
+   "subtopic": "Approximations using differentials",
+   "archetype": "differential error",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 133,
+   "section": "Mathematics",
+   "stem": "For what value of $a$ is $f$ continuous at $x=1$, and is it differentiable there? $\\displaystyle f(x)=\\begin{cases}\\dfrac{x^2-1}{x-1}+a,&x<1,\\\\3x+1,&x\\ge1.\\end{cases}$",
+   "options": [
+    {
+     "text": "$a=2$, and $f$ is differentiable at $x=1$"
+    },
+    {
+     "text": "$a=2$, and $f$ is not differentiable at $x=1$"
+    },
+    {
+     "text": "$a=3$, and $f$ is not differentiable at $x=1$"
+    },
+    {
+     "text": "$a=4$, and $f$ is differentiable at $x=1$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For continuity, $\n\\lim_{x\\to1^-} f(x)=a+2=f(1)=4$, so $a=2$.\nFor $x<1$, $f(x)=x+1+a$, giving $f'_-(1)=1$, while $f'_+(1)=3$.\nSince the one-sided derivatives are unequal, $f$ is not differentiable at $x=1$.",
+   "chapter": "Limits and Continuity",
+   "subtopic": "Continuity of piecewise functions",
+   "archetype": "match one-sided limits",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 134,
+   "section": "Mathematics",
+   "stem": "Let $f$ and $g$ be functions from the real numbers to the real numbers, defined by $f(x)=x^2+1$ and $g(x)=x^2-4x+5$. How many real solutions does $f(g(x))=g(f(x))$ have?",
+   "options": [
+    {
+     "text": "$0$"
+    },
+    {
+     "text": "$3$"
+    },
+    {
+     "text": "$2$"
+    },
+    {
+     "text": "$1$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Using $f(g(x))=g(x)^2+1$ and $g(f(x))=(x^2-1)^2+1$, equality requires\n$$g(x)^2=(x^2-1)^2,$$\nso $g(x)=x^2-1$ or $g(x)=1-x^2$. The first gives $x=\\frac{3}{2}$; the second reduces to $(x-1)^2+1=0$, which has no real roots. Hence there is exactly $1$ real solution.",
+   "chapter": "Sets, Relations and Functions",
+   "subtopic": "Number of onto functions",
+   "archetype": "positivity of polynomial",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 135,
+   "section": "Mathematics",
+   "stem": "A monic quadratic has roots $\\alpha,\\beta$ satisfying $\\alpha^2+\\beta^2=7$, $\\alpha\\beta=3$ and $\\alpha+\\beta>0$. The quadratic is",
+   "options": [
+    {
+     "text": "$x^2-\\sqrt{13}x+3=0$"
+    },
+    {
+     "text": "$x^2+\\sqrt{13}x+3=0$"
+    },
+    {
+     "text": "$x^2-\\sqrt{7}x+3=0$"
+    },
+    {
+     "text": "$x^2-\\sqrt{13}x-3=0$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Using $(\\alpha+\\beta)^2=\\alpha^2+\\beta^2+2\\alpha\\beta$,\n$$ (\\alpha+\\beta)^2=7+2(3)=13,\\qquad \\alpha+\\beta=\\sqrt{13} $$\nThe monic quadratic is $x^2-(\\alpha+\\beta)x+\\alpha\\beta=0$, hence $x^2-\\sqrt{13}x+3=0$.",
+   "chapter": "Quadratic Equations",
+   "subtopic": "Sum and product of roots",
+   "archetype": "use root equation",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 136,
+   "section": "Mathematics",
+   "stem": "The curve $e^{x-y+1}+\\ln(x^2+y^2)+xy=3+\\ln 5$ passes through $(1,2)$. Its normal there is",
+   "options": [
+    {
+     "text": "$17x+4y-25=0$"
+    },
+    {
+     "text": "$4x-17y+30=0$"
+    },
+    {
+     "text": "$17x-4y-9=0$"
+    },
+    {
+     "text": "$4x+17y-38=0$"
+    }
+   ],
+   "answer": "B",
+   "solution": "Let $F(x,y)=e^{x-y+1}+\\ln(x^2+y^2)+xy$. At $(1,2)$, $F_x=17/5$ and $F_y=4/5$, so the normal slope is $F_y/F_x=4/17$.\n$$y-2=\\frac{4}{17}(x-1)\\quad\\Rightarrow\\quad 4x-17y+30=0.$$",
+   "chapter": "Differential Calculus",
+   "subtopic": "Implicit differentiation",
+   "archetype": "implicit derivative",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 137,
+   "section": "Mathematics",
+   "stem": "Evaluate $\\displaystyle\\int_0^{\\pi/4}\\frac{\\sin 2x}{1+\\cos^2 x}\\,dx$.",
+   "options": [
+    {
+     "text": "$\\dfrac{1}{2}\\ln\\!\\left(\\dfrac{4}{3}\\right)$"
+    },
+    {
+     "text": "$\\ln\\!\\left(\\dfrac{3}{2}\\right)$"
+    },
+    {
+     "text": "$\\ln\\!\\left(\\dfrac{4}{3}\\right)$"
+    },
+    {
+     "text": "$\\ln\\!\\left(\\dfrac{8}{3}\\right)$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Let $u=1+\\cos^2x$, so $du=-\\sin 2x\\,dx$. As $x$ goes from $0$ to $\\pi/4$, $u$ goes from $2$ to $\\frac{3}{2}$.\n$$I=-\\int_2^{3/2}\\frac{du}{u}=\\ln\\left(\\frac{4}{3}\\right).$$",
+   "chapter": "Integral Calculus",
+   "subtopic": "Trigonometric integrals",
+   "archetype": "substitution integral",
+   "difficulty": 1,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 138,
+   "section": "Mathematics",
+   "stem": "For what value of $k$ does the system $x+y+z=2$, $2x+3y+4z=5$, $3x+(k+3)y+(k+4)z=7$ have infinitely many solutions, and what is $x+4y+7z$ then?",
+   "options": [
+    {
+     "text": "$k=1,\\ x+4y+7z=-5$"
+    },
+    {
+     "text": "$k=1,\\ x+4y+7z=7$"
+    },
+    {
+     "text": "$k=-1,\\ x+4y+7z=5$"
+    },
+    {
+     "text": "$k=1,\\ x+4y+7z=5$"
+    }
+   ],
+   "answer": "D",
+   "solution": "The coefficient determinant is $1-k$, so infinitely many solutions require $k=1$. Then the third equation is the sum of the first two, giving rank $2<3$.\n$$x+4y+7z=-5(x+y+z)+3(2x+3y+4z)=-5(2)+3(5)=5$$",
+   "chapter": "Matrices and Determinants",
+   "subtopic": "Consistency of linear systems",
+   "archetype": "conceptual",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 139,
+   "section": "Mathematics",
+   "stem": "Evaluate $$\\tan^{-1}\\left(\\dfrac{\\sin\\left(\\cos^{-1}\\dfrac{5}{13}\\right)}{1+\\cos\\left(\\cos^{-1}\\dfrac{5}{13}\\right)}\\right)+\\sin^{-1}\\left(\\cos\\left(\\tan^{-1}\\dfrac{3}{4}\\right)\\right).$$",
+   "options": [
+    {
+     "text": "$\\tan^{-1}(2)$"
+    },
+    {
+     "text": "$\\tan^{-1}\\left(\\dfrac{8}{9}\\right)$"
+    },
+    {
+     "text": "$\\tan^{-1}(18)$"
+    },
+    {
+     "text": "$\\dfrac{\\pi}{2}-\\tan^{-1}(18)$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Using the principal inverse-trigonometric ranges, the two terms are $\\tan^{-1}(2/3)$ and $\\tan^{-1}(4/3)$.\n$$\\tan\\bigl(\\tan^{-1}(2/3)+\\tan^{-1}(4/3)\\bigr)=\\frac{2/3+4/3}{1-(2/3)(4/3)}=18.$$\nSince their sum lies in $(0,\\frac{\\pi}{2})$, the expression equals $\\tan^{-1}(18)$.",
+   "chapter": "Inverse Trigonometric Functions",
+   "subtopic": "Composite evaluation",
+   "archetype": "triangle method",
+   "difficulty": 4,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 140,
+   "section": "Mathematics",
+   "stem": "Find the equation of the line through the intersection of $x-y=3$ and $2x+y=3$, perpendicular to $x-2y+4=0$.",
+   "options": [
+    {
+     "text": "$2x+y-3=0$"
+    },
+    {
+     "text": "$x-2y-4=0$"
+    },
+    {
+     "text": "$x+2y=0$"
+    },
+    {
+     "text": "$2x-y-5=0$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Solving $x-y=3$ and $2x+y=3$ gives the intersection $(2,-1)$. The given line has slope $\\frac12$, so the perpendicular line has slope $-2$.\n$$y+1=-2(x-2)\\Rightarrow 2x+y-3=0$$",
+   "chapter": "Coordinate Geometry",
+   "subtopic": "Line through intersection of lines",
+   "archetype": "family of lines",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 141,
+   "section": "Mathematics",
+   "stem": "If $P=(4,1)$ is reflected in $2x-y+3=0$ to $Q$, and $M$ is the midpoint of $PQ$, find $(Q,M)$.",
+   "options": [
+    {
+     "text": "$\\bigl((-4,5),(-4,5)\\bigr)$"
+    },
+    {
+     "text": "$\\bigl((0,3),(2,2)\\bigr)$"
+    },
+    {
+     "text": "$\\bigl((-4,-7),(0,-3)\\bigr)$"
+    },
+    {
+     "text": "$\\bigl((-4,5),(0,3)\\bigr)$"
+    }
+   ],
+   "answer": "D",
+   "solution": "The foot $H$ of the perpendicular from $P$ to $2x-y+3=0$ is\n$$H=P-\\frac{2(4)-1+3}{2^2+(-1)^2}(2,-1)=(0,3).$$\nThus $Q=2H-P=(-4,5)$, and the midpoint $M=H=(0,3)$.",
+   "chapter": "Statistics",
+   "subtopic": "Image of a point in a line",
+   "archetype": "reflection formula",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 142,
+   "section": "Mathematics",
+   "stem": "The pair of lines through the origin represented by $x^2-4xy+y^2=0$ makes an angle of",
+   "options": [
+    {
+     "text": "$30^\\circ$"
+    },
+    {
+     "text": "$60^\\circ$"
+    },
+    {
+     "text": "$45^\\circ$"
+    },
+    {
+     "text": "$90^\\circ$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For $Ax^2+2Hxy+By^2=0$, the angle between the lines satisfies\n$$\\tan\\theta=\\frac{2\\sqrt{H^2-AB}}{|A+B|}=\\frac{2\\sqrt{(-2)^2-1}}{|1+1|}=\\sqrt{3}.$$\nHence, $\\theta=60^\\circ$.",
+   "chapter": "Coordinate Geometry",
+   "subtopic": "Pair of straight lines",
+   "archetype": "two-equation solve",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 143,
+   "section": "Mathematics",
+   "stem": "Let $A$ be the $2\\times2$ matrix whose first row is $(1,1)$ and second row is $(1,3)$. Find $\\operatorname{tr}(A^6)$.",
+   "options": [
+    {
+     "text": "$1536$"
+    },
+    {
+     "text": "$1584$"
+    },
+    {
+     "text": "$1856$"
+    },
+    {
+     "text": "$2128$"
+    }
+   ],
+   "answer": "B",
+   "solution": "By Cayley–Hamilton, $A^2-4A+2I=0$, so $t_n=4t_{n-1}-2t_{n-2}$ for $t_n=\\operatorname{tr}(A^n)$. With $t_0=2$ and $t_1=4$,\n$$t_2=12,\\quad t_3=40,\\quad t_4=136,\\quad t_5=464,\\quad t_6=1584.$$",
+   "chapter": "Matrices and Determinants",
+   "subtopic": "Matrix powers",
+   "archetype": "power bookkeeping",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 144,
+   "section": "Mathematics",
+   "stem": "Find the term independent of $x$ in $\\left(1+x\\right)^8\\left(2x^2-\\dfrac{1}{x^3}\\right)^6$.",
+   "options": [
+    {
+     "text": "$-8900$"
+    },
+    {
+     "text": "$-8960$"
+    },
+    {
+     "text": "$-9020$"
+    },
+    {
+     "text": "$60$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Choosing $r$ factors of $-x^{-3}$ gives exponent $12-5r$, so the first factor must contribute $x^{5r-12}$. Valid values are $r=3,4$.\n$$\\binom{6}{3}2^3(-1)^3\\binom{8}{3}+\\binom{6}{4}2^2\\binom{8}{8}=-8960+60=-8900$$",
+   "chapter": "Binomial Theorem",
+   "subtopic": "Term independent of x",
+   "archetype": "general term exponent matching",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 145,
+   "section": "Mathematics",
+   "stem": "For $a>0$, define $$f(x)=\\begin{cases}\\dfrac{e^{ax}-1-ax}{x^2},&x<0,\\\\2+cx,&x\\ge0.\\end{cases}$$ If $f$ is differentiable at $0$, find $(a,c)$.",
+   "options": [
+    {
+     "text": "$(2,-\\dfrac{4}{3})$"
+    },
+    {
+     "text": "$(4,\\dfrac{8}{3})$"
+    },
+    {
+     "text": "$(2,\\dfrac{2}{3})$"
+    },
+    {
+     "text": "$(2,\\dfrac{4}{3})$"
+    }
+   ],
+   "answer": "D",
+   "solution": "Using $e^{ax}=1+ax+\\dfrac{a^2x^2}{2}+\\dfrac{a^3x^3}{6}+O(x^4)$,\n$$f(x)=\\dfrac{a^2}{2}+\\dfrac{a^3}{6}x+O(x^2)\\quad(x<0).$$\nContinuity at $0$ gives $a^2/2=2$, hence $a=2$ since $a>0$. Matching the left derivative $a^3/6$ with the right derivative $c$ gives $c=4/3$.",
+   "chapter": "Limits and Continuity",
+   "subtopic": "Differentiability of piecewise function",
+   "archetype": "piecewise limits",
+   "difficulty": 3,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 146,
+   "section": "Mathematics",
+   "stem": "Evaluate $\\displaystyle I=\\int_0^1\\frac{x}{\\sqrt{2-(2x-1)^2}\\,[1+(2x-1)^2]}\\,dx$.",
+   "options": [
+    {
+     "text": "$\\dfrac{\\pi}{12\\sqrt{3}}$"
+    },
+    {
+     "text": "$\\dfrac{\\pi}{4\\sqrt{3}}$"
+    },
+    {
+     "text": "$\\dfrac{\\pi}{6\\sqrt{3}}$"
+    },
+    {
+     "text": "$\\dfrac{\\pi}{3\\sqrt{3}}$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Using symmetry under $x\\mapsto1-x$,\n$$I=\\frac12\\int_0^1\\frac{du}{\\sqrt{2-u^2}(1+u^2)},\\qquad u=2x-1.\n$$Set $u=\\sqrt2\\sin\\theta$, then $t=\\tan\\theta$; the limits become $0$ to $1$:\n$$I=\\frac12\\int_0^1\\frac{dt}{1+3t^2}=\\frac{\\pi}{6\\sqrt3}.$$",
+   "chapter": "Integral Calculus",
+   "subtopic": "Properties of definite integrals",
+   "archetype": "symmetry + standard integral",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 147,
+   "section": "Mathematics",
+   "stem": "The parabola with focus $(4,3)$ and directrix $3x+4y=0$ has equation",
+   "options": [
+    {
+     "text": "$16x^2+24xy+9y^2-200x-150y+625=0$"
+    },
+    {
+     "text": "$16x^2-24xy+9y^2+200x+150y+625=0$"
+    },
+    {
+     "text": "$16x^2-24xy+9y^2-200x-150y+625=0$"
+    },
+    {
+     "text": "$16x^2-24xy+9y^2-200x-150y-625=0$"
+    }
+   ],
+   "answer": "C",
+   "solution": "Equating the squared distances from $(x,y)$ to the focus and the directrix gives\n$$25[(x-4)^2+(y-3)^2]=(3x+4y)^2.$$\nExpanding and simplifying, $16x^2-24xy+9y^2-200x-150y+625=0$.",
+   "chapter": "Conic Sections",
+   "subtopic": "Parabola focus",
+   "archetype": "single-formula numerical",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 148,
+   "section": "Mathematics",
+   "stem": "The area enclosed by the parabola $y=2(x-1)^2+3$ and the line $y=11$ is",
+   "options": [
+    {
+     "text": "$\\dfrac{32}{3}$"
+    },
+    {
+     "text": "$32$"
+    },
+    {
+     "text": "$\\dfrac{80}{3}$"
+    },
+    {
+     "text": "$\\dfrac{64}{3}$"
+    }
+   ],
+   "answer": "D",
+   "solution": "The curves intersect where $2(x-1)^2+3=11$, giving $x=-1,3$. Hence,\n$$A=\\int_{-1}^{3}\\left[11-2(x-1)^2-3\\right]dx=\\int_{-2}^{2}(8-2u^2)du=\\frac{64}{3}.$$",
+   "chapter": "Integral Calculus",
+   "subtopic": "Area between curves",
+   "archetype": "symmetric area",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 149,
+   "section": "Mathematics",
+   "stem": "The sum $\\displaystyle\\sum_{k=1}^{5}\\dfrac{k+1}{2^k}$ is",
+   "options": [
+    {
+     "text": "$\\dfrac{11}{4}$"
+    },
+    {
+     "text": "$\\dfrac{57}{32}$"
+    },
+    {
+     "text": "$3$"
+    },
+    {
+     "text": "$\\dfrac{119}{32}$"
+    }
+   ],
+   "answer": "A",
+   "solution": "Let $S=\\sum_{k=1}^{5}\\dfrac{k+1}{2^k}$. Shifting the index gives $\\dfrac S2=\\sum_{k=2}^{6}\\dfrac{k}{2^k}$.\n$$S-\\dfrac S2=1+\\sum_{k=2}^{5}\\dfrac1{2^k}-\\dfrac6{2^6}=\\dfrac{11}{8},\\qquad S=\\dfrac{11}{4}.$$",
+   "chapter": "Sequences and Series",
+   "subtopic": "Arithmetico-geometric series",
+   "archetype": "AGP sum",
+   "difficulty": 2,
+   "exemplar_ok": true
+  },
+  {
+   "qno": 150,
+   "section": "Mathematics",
+   "stem": "The range, for real $\\theta$, of $5\\sin\\theta+12\\cos\\theta-2$ is",
+   "options": [
+    {
+     "text": "$[-19,15]$"
+    },
+    {
+     "text": "$[-15,11]$"
+    },
+    {
+     "text": "$[-13,13]$"
+    },
+    {
+     "text": "$[-11,15]$"
+    }
+   ],
+   "answer": "B",
+   "solution": "For $a\\sin\\theta+b\\cos\\theta$, the amplitude is $\\sqrt{a^2+b^2}$. Thus\n$$5\\sin\\theta+12\\cos\\theta\\in[-\\sqrt{5^2+12^2},\\sqrt{5^2+12^2}]=[-13,13].$$\nSubtracting $2$, the range is $[-15,11]$.",
+   "chapter": "Trigonometry",
+   "subtopic": "Range of a sin + b cos",
+   "archetype": "amplitude bound",
+   "difficulty": 2,
+   "exemplar_ok": true
+  }
+ ]
+}

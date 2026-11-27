@@ -1,0 +1,68 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "Mean free path / mean free time",
+  "archetype": "statement evaluation",
+  "brief": "Four statements on degrees of freedom, equipartition, mean free path dependence, or KE vs temperature for ideal gases; identify the correct ones (multi-true conceptual at high difficulty).",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:5",
+   "2021:38",
+   "2024s2:23"
+  ]
+ },
+ "status": "ok",
+ "stem": "For dilute ideal gases (with vibrations inactive where relevant), consider: I. A linear rigid diatomic molecule has mean translational-plus-rotational energy $\\frac{5}{2}kT$. II. At the same pressure and temperature, gases of the same molecular diameter have mean free path proportional to the square root of molecular mass. III. Under those same conditions, their mean free time between collisions is proportional to the square root of molecular mass. IV. At fixed number density, mean free path is proportional to absolute temperature. Which choice gives all and only the correct statements?",
+ "options": [
+  "I and II only",
+  "II and IV only",
+  "I and III only",
+  "I, III and IV"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I: translational plus rotational energy is \\((3/2+2/2)kT=5kT/2\\), true. Mean free path \\(\\lambda=1/(\\sqrt2 n\\pi d^2)\\): at fixed pressure and temperature it is independent of mass, so II is false; at fixed number density it is independent of temperature, so IV is false. Mean free time \\(\\lambda/\\bar v\\) scales as \\(\\sqrt m\\) at fixed pressure and temperature, so III is true.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I: $f=3+2\\Rightarrow \\overline E=\\frac{f}{2}kT=\\frac{5}{2}kT$. $\\lambda=\\frac{1}{\\sqrt{2}\\pi d^2n}=\\frac{kT}{\\sqrt{2}\\pi d^2p}$, so II and IV are false. At fixed $T,p,d$, $\\lambda$ is fixed and $\\overline v\\propto m^{-1/2}$; hence $\\tau=\\lambda/\\overline v\\propto\\sqrt m$, so III is true.\n\nIndependent check: I: translational plus rotational energy is \\((3/2+2/2)kT=5kT/2\\), true. Mean free path \\(\\lambda=1/(\\sqrt2 n\\pi d^2)\\): at fixed pressure and temperature it is independent of mass, so II is false; at fixed number density it is independent of temperature, so IV is false. Mean free time \\(\\lambda/\\bar v\\) scales as \\(\\sqrt m\\) at fixed pressure and temperature, so III is true.",
+ "solution": "For a linear rigid diatomic molecule, $f=3+2$, so $\\bar E=\\frac{f}{2}kT=\\frac{5}{2}kT$; I is true.\n$$\\lambda=\\frac{1}{\\sqrt{2}\\pi d^2 n}=\\frac{kT}{\\sqrt{2}\\pi d^2p}$$\nThus $\\lambda$ is independent of molecular mass at fixed $p,T,d$ and independent of temperature at fixed $n$, so II and IV are false. Since $\\bar v\\propto m^{-1/2}$, $\\tau=\\lambda/\\bar v\\propto\\sqrt m$ under the stated conditions; III is true.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For dilute ideal gases (with vibrations inactive where relevant), consider: I. A linear rigid diatomic molecule has mean translational-plus-rotational energy $\\frac{5}{2}kT$. II. At the same pressure and temperature, gases of the same molecular diameter have mean free path proportional to the square root of molecular mass. III. Under those same conditions, their mean free time between collisions is proportional to the square root of molecular mass. IV. At fixed number density, mean free path is proportional to absolute temperature. Which choice gives all and only the correct statements?",
+  "options": [
+   "I and II only",
+   "I and III only",
+   "II and IV only",
+   "I, III and IV"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "I: $f=3+2\\Rightarrow \\overline E=\\frac{f}{2}kT=\\frac{5}{2}kT$. $\\lambda=\\frac{1}{\\sqrt{2}\\pi d^2n}=\\frac{kT}{\\sqrt{2}\\pi d^2p}$, so II and IV are false. At fixed $T,p,d$, $\\lambda$ is fixed and $\\overline v\\propto m^{-1/2}$; hence $\\tau=\\lambda/\\overline v\\propto\\sqrt m$, so III is true.",
+  "distractor_notes": "A: accepts the mass dependence of mean free path and omits the mean-free-time dependence. C: treats both false mean-free-path claims as true. D: incorrectly treats mean free path as temperature-dependent at fixed number density."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

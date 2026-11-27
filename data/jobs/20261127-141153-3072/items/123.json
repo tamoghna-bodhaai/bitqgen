@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Bayes' theorem",
+  "archetype": "parameter recovery",
+  "brief": "Two-population problem (e.g. machines/balls from bags); given test/result probabilities, compute posterior probability the item came from a given source; multi-step Bayes.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:106",
+   "2025s1:108",
+   "2026s2:115"
+  ]
+ },
+ "status": "ok",
+ "stem": "Factories A and B supply fractions $p$ and $1-p$ of a product. Their defective rates are $\\dfrac1{10}$ and $\\dfrac15$, respectively. If the overall defective probability is $\\dfrac18$, find the probability a defective item came from A.",
+ "options": [
+  "$\\dfrac18$",
+  "$\\dfrac25$",
+  "$\\dfrac34$",
+  "$\\dfrac35$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Solve p/10 + (1-p)/5 = 1/8, giving p = 3/4. Then P(A | defective) = (p/10)/(1/8) = 3/5.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{p}{10}+\\dfrac{1-p}{5}=\\dfrac18\\Rightarrow p=\\dfrac34$\n$P(A\\mid D)=\\dfrac{P(A)P(D\\mid A)}{P(D)}=\\dfrac{(\\frac34)(\\frac1{10})}{\\frac18}=\\dfrac35$\n\nIndependent check: Solve p/10 + (1-p)/5 = 1/8, giving p = 3/4. Then P(A | defective) = (p/10)/(1/8) = 3/5.",
+ "solution": "By the law of total probability, $p/10+(1-p)/5=1/8$, giving $p=3/4$.\nUsing Bayes’ theorem,\n$$P(A\\mid D)=\\frac{pP(D\\mid A)}{P(D)}=\\frac{(3/4)(1/10)}{1/8}=\\frac35.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Factories A and B supply fractions $p$ and $1-p$ of a product. Their defective rates are $\\dfrac1{10}$ and $\\dfrac15$, respectively. If the overall defective probability is $\\dfrac18$, find the probability a defective item came from A.",
+  "options": [
+   "$\\dfrac18$",
+   "$\\dfrac25$",
+   "$\\dfrac35$",
+   "$\\dfrac34$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\dfrac{p}{10}+\\dfrac{1-p}{5}=\\dfrac18\\Rightarrow p=\\dfrac34$\n$P(A\\mid D)=\\dfrac{P(A)P(D\\mid A)}{P(D)}=\\dfrac{(\\frac34)(\\frac1{10})}{\\frac18}=\\dfrac35$",
+  "distractor_notes": "A reports the overall defective probability; B gives $P(B\\mid D)$; D reports the prior fraction $P(A)$ rather than the posterior."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

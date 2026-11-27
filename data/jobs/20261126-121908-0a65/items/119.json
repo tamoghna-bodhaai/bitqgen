@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A plane cuts the $x$, $y$, and $z$ axes at points $A$, $B$, and $C$ respectively, such that the centroid of $\\triangle ABC$ is $(1, 2, 2)$. The area of $\\triangle ABC$ is equal to",
+ "stem": "A plane cuts the positive coordinate axes in the ratio $1:2:3$ and passes through $(1,2,3)$. Its distance from the origin is",
  "options": [
-  "$\\sqrt{6}$",
-  "$3\\sqrt{6}$",
-  "$9\\sqrt{6}$",
-  "$18\\sqrt{6}$"
+  "$\\dfrac{18}{49}$",
+  "$\\dfrac{18}{11}$",
+  "$\\dfrac{18}{7}$",
+  "$3$"
  ],
  "answer": "C",
  "figure": null,
@@ -34,8 +34,8 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Centroid (1,2,2) gives intercepts A(3,0,0), B(0,6,0), C(0,0,6). AB=(-3,6,0), AC=(-3,0,6); AB×AC=(36,18,18), |AB×AC|=√1944=18√6, so area = ½·18√6 = 9√6.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the intercepts be k, 2k, 3k. The intercept form and the point (1,2,3) give 1/k + 2/(2k) + 3/(3k) = 1, so k = 3. The plane is 6x + 3y + 2z = 18, whose distance from the origin is 18/√(36 + 9 + 4) = 18/7.",
    "answer": "C",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Let the intercepts of the plane on the coordinate axes be $a$, $b$, and $c$, so that the vertices are $A(a, 0, 0)$, $B(0, b, 0)$, and $C(0, 0, c)$.\n\nThe centroid $G$ of $\\triangle ABC$ is given by:\n$$G = \\left(\\dfrac{a}{3}, \\dfrac{b}{3}, \\dfrac{c}{3}\\right) = (1, 2, 2)$$\n\nEquating coordinates:\n$$a = 3, \\quad b = 6, \\quad c = 6$$\n\nThus, $A = (3, 0, 0)$, $B = (0, 6, 0)$, and $C = (0, 0, 6)$.\n\nThe vectors representing two sides of $\\triangle ABC$ from $A$ are:\n$$\\vec{AB} = -3\\hat{i} + 6\\hat{j}$$\n$$\\vec{AC} = -3\\hat{i} + 6\\hat{k}$$\n\nTheir cross product is:\n$$\\vec{AB} \\times \\vec{AC} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ -3 & 6 & 0 \\\\ -3 & 0 & 6 \\end{vmatrix} = 36\\hat{i} + 18\\hat{j} + 18\\hat{k}$$\n\nThe magnitude of the cross product is:\n$$|\\vec{AB} \\times \\vec{AC}| = \\sqrt{36^2 + 18^2 + 18^2} = 18\\sqrt{2^2 + 1^2 + 1^2} = 18\\sqrt{6}$$\n\nTherefore, the area of $\\triangle ABC$ is:\n$$\\text{Area} = \\dfrac{1}{2}|\\vec{AB} \\times \\vec{AC}| = \\dfrac{1}{2} \\times 18\\sqrt{6} = 9\\sqrt{6}$$\n\nIndependent check: Centroid (1,2,2) gives intercepts A(3,0,0), B(0,6,0), C(0,0,6). AB=(-3,6,0), AC=(-3,0,6); AB×AC=(36,18,18), |AB×AC|=√1944=18√6, so area = ½·18√6 = 9√6.",
+ "working": "Let the intercepts be $k,2k,3k$. Then $\\dfrac{1}{k}+\\dfrac{2}{2k}+\\dfrac{3}{3k}=1$, so $k=3$.\\nPlane: $\\dfrac{x}{3}+\\dfrac{y}{6}+\\dfrac{z}{9}=1$, or $6x+3y+2z-18=0$.\\nDistance $=\\dfrac{18}{\\sqrt{6^2+3^2+2^2}}=\\dfrac{18}{7}$.\n\nIndependent check: Let the intercepts be k, 2k, 3k. The intercept form and the point (1,2,3) give 1/k + 2/(2k) + 3/(3k) = 1, so k = 3. The plane is 6x + 3y + 2z = 18, whose distance from the origin is 18/√(36 + 9 + 4) = 18/7.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A plane cuts the $x$, $y$, and $z$ axes at points $A$, $B$, and $C$ respectively, such that the centroid of $\\triangle ABC$ is $(1, 2, 2)$. The area of $\\triangle ABC$ is equal to",
+  "stem": "A plane cuts the positive coordinate axes in the ratio $1:2:3$ and passes through $(1,2,3)$. Its distance from the origin is",
   "options": [
-   "$\\sqrt{6}$",
-   "$3\\sqrt{6}$",
-   "$9\\sqrt{6}$",
-   "$18\\sqrt{6}$"
+   "$\\dfrac{18}{49}$",
+   "$\\dfrac{18}{11}$",
+   "$\\dfrac{18}{7}$",
+   "$3$"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "Let the intercepts of the plane on the coordinate axes be $a$, $b$, and $c$, so that the vertices are $A(a, 0, 0)$, $B(0, b, 0)$, and $C(0, 0, c)$.\n\nThe centroid $G$ of $\\triangle ABC$ is given by:\n$$G = \\left(\\dfrac{a}{3}, \\dfrac{b}{3}, \\dfrac{c}{3}\\right) = (1, 2, 2)$$\n\nEquating coordinates:\n$$a = 3, \\quad b = 6, \\quad c = 6$$\n\nThus, $A = (3, 0, 0)$, $B = (0, 6, 0)$, and $C = (0, 0, 6)$.\n\nThe vectors representing two sides of $\\triangle ABC$ from $A$ are:\n$$\\vec{AB} = -3\\hat{i} + 6\\hat{j}$$\n$$\\vec{AC} = -3\\hat{i} + 6\\hat{k}$$\n\nTheir cross product is:\n$$\\vec{AB} \\times \\vec{AC} = \\begin{vmatrix} \\hat{i} & \\hat{j} & \\hat{k} \\\\ -3 & 6 & 0 \\\\ -3 & 0 & 6 \\end{vmatrix} = 36\\hat{i} + 18\\hat{j} + 18\\hat{k}$$\n\nThe magnitude of the cross product is:\n$$|\\vec{AB} \\times \\vec{AC}| = \\sqrt{36^2 + 18^2 + 18^2} = 18\\sqrt{2^2 + 1^2 + 1^2} = 18\\sqrt{6}$$\n\nTherefore, the area of $\\triangle ABC$ is:\n$$\\text{Area} = \\dfrac{1}{2}|\\vec{AB} \\times \\vec{AC}| = \\dfrac{1}{2} \\times 18\\sqrt{6} = 9\\sqrt{6}$$",
-  "distractor_notes": "Option A ($\\sqrt{6}$) comes from taking the centroid coordinates directly as the intercepts ($a = 1, b = 2, c = 2$).\nOption B ($3\\sqrt{6}$) comes from computing the area for intercepts $(1, 2, 2)$ and incorrectly scaling the area linearly by 3 instead of $3^2 = 9$.\nOption D ($18\\sqrt{6}$) comes from omitting the factor of $\\dfrac{1}{2}$ in the area formula.",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "Let the intercepts be $k,2k,3k$. Then $\\dfrac{1}{k}+\\dfrac{2}{2k}+\\dfrac{3}{3k}=1$, so $k=3$.\\nPlane: $\\dfrac{x}{3}+\\dfrac{y}{6}+\\dfrac{z}{9}=1$, or $6x+3y+2z-18=0$.\\nDistance $=\\dfrac{18}{\\sqrt{6^2+3^2+2^2}}=\\dfrac{18}{7}$.",
+  "distractor_notes": "A: uses the squared norm instead of its square root. B: divides by the sum of the normal coefficients instead of their norm. D: mistakes the intercept parameter for the distance from the origin."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

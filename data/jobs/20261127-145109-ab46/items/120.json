@@ -1,0 +1,70 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola focus",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of a parabola with vertex at origin given its focus or directrix (axis along a coordinate axis); identify the equation from the focus.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:106",
+   "2024s2:113",
+   "2024s1:107"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A parabola has vertex at the origin and focus $(-3,0)$. Its equation is",
+ "options": [
+  "$y^2=12x$",
+  "$y^2=-12x$",
+  "$x^2=-12y$",
+  "$y^2=-6x$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For focus \u0000(-3,0)\u0000, \u0000a=-3\u0000 in \u0000y^2=4ax\u0000, giving \u0000y^2=-12x\u0000.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=-3;\\quad y^2=4ax=4(-3)x=-12x.$\n\nIndependent check: For focus \u0000(-3,0)\u0000, \u0000a=-3\u0000 in \u0000y^2=4ax\u0000, giving \u0000y^2=-12x\u0000.",
+ "solution": "For a parabola with vertex at the origin and focus $(a,0)$, the equation is $y^2=4ax$. Here $a=-3$, so\n$$y^2=4(-3)x=-12x.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A parabola has vertex at the origin and focus $(-3,0)$. Its equation is",
+  "options": [
+   "$y^2=12x$",
+   "$y^2=-12x$",
+   "$x^2=-12y$",
+   "$y^2=-6x$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$a=-3;\\quad y^2=4ax=4(-3)x=-12x.$",
+  "distractor_notes": "A: uses the wrong sign for the focus direction.\\nC: places the axis along the wrong coordinate axis.\\nD: uses $2a$ instead of $4a$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

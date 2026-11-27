@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "Two balls are projected from the same point on horizontal ground with the same speed at angles of $35^\\circ$ and $55^\\circ$ with the horizontal. If their horizontal ranges are $R_1$ and $R_2$, maximum heights are $H_1$ and $H_2$, and times of flight are $T_1$ and $T_2$ respectively, then:",
+ "stem": "Two projectiles are launched from level ground with equal speeds, one at $62^\\circ$ and the other at $28^\\circ$ to the horizontal. If their ranges, maximum heights and flight times are $R_A,H_A,T_A$ and $R_B,H_B,T_B$, respectively, which comparison is correct?",
  "options": [
-  "$R_1 < R_2$, $H_1 < H_2$, $T_1 < T_2$",
-  "$R_1 = R_2$, $H_1 < H_2$, $T_1 < T_2$",
-  "$R_1 = R_2$, $H_1 > H_2$, $T_1 > T_2$",
-  "$R_1 = R_2$, $H_1 < H_2$, $T_1 > T_2$"
+  "$R_A=R_B,\\ H_A>H_B,\\ T_A>T_B$",
+  "$R_A=R_B,\\ H_A<H_B,\\ T_A<T_B$",
+  "$R_A>R_B,\\ H_A>H_B,\\ T_A>T_B$",
+  "$R_A=R_B,\\ H_A>H_B,\\ T_A<T_B$"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Angles 35° and 55° are complementary (sum 90°), so R = u²sin2θ/g gives R1 = R2. H = u²sin²θ/(2g) and T = 2u sinθ/g both increase with θ in (0°,90°), so H1 < H2 and T1 < T2. Numeric check: R = 9.589 both; H = 1.68 vs 3.42; T = 1.17 vs 1.67.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For launch angle θ, R = u²sin(2θ)/g, H = u²sin²θ/(2g), and T = 2usinθ/g. Since 62° and 28° are complementary, ranges are equal; 62° gives greater height and flight time.",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The angles of projection are $\\theta_1 = 35^\\circ$ and $\\theta_2 = 55^\\circ$. Since $\\theta_1 + \\theta_2 = 90^\\circ$, these are complementary angles.\n\n1. Horizontal Range:\n$$R = \\dfrac{u^2 \\sin(2\\theta)}{g}$$\nFor $\\theta_1 = 35^\\circ$, $\\sin(2\\theta_1) = \\sin 70^\\circ$.\nFor $\\theta_2 = 55^\\circ$, $\\sin(2\\theta_2) = \\sin 110^\\circ = \\sin(180^\\circ - 70^\\circ) = \\sin 70^\\circ$.\nHence, $R_1 = R_2$.\n\n2. Maximum Height:\n$$H = \\dfrac{u^2 \\sin^2\\theta}{2g}$$\nSince $35^\\circ < 55^\\circ$, $\\sin 35^\\circ < \\sin 55^\\circ \\implies \\sin^2 35^\\circ < \\sin^2 55^\\circ$.\nHence, $H_1 < H_2$.\n\n3. Time of Flight:\n$$T = \\dfrac{2u \\sin\\theta}{g}$$\nSince $\\sin 35^\\circ < \\sin 55^\\circ$, we have $T_1 < T_2$.\n\nThus, $R_1 = R_2$, $H_1 < H_2$, and $T_1 < T_2$.\n\nIndependent check: Angles 35° and 55° are complementary (sum 90°), so R = u²sin2θ/g gives R1 = R2. H = u²sin²θ/(2g) and T = 2u sinθ/g both increase with θ in (0°,90°), so H1 < H2 and T1 < T2. Numeric check: R = 9.589 both; H = 1.68 vs 3.42; T = 1.17 vs 1.67.",
+ "working": "$R=\\dfrac{u^2\\sin 2\\theta}{g}$; $\\sin 124^\\circ=\\sin 56^\\circ\\Rightarrow R_A=R_B$.\n$H=\\dfrac{u^2\\sin^2\\theta}{2g}$; $\\sin 62^\\circ>\\sin 28^\\circ\\Rightarrow H_A>H_B$.\n$T=\\dfrac{2u\\sin\\theta}{g}$; $\\sin 62^\\circ>\\sin 28^\\circ\\Rightarrow T_A>T_B$.\n\nIndependent check: For launch angle θ, R = u²sin(2θ)/g, H = u²sin²θ/(2g), and T = 2usinθ/g. Since 62° and 28° are complementary, ranges are equal; 62° gives greater height and flight time.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Two balls are projected from the same point on horizontal ground with the same speed at angles of $35^\\circ$ and $55^\\circ$ with the horizontal. If their horizontal ranges are $R_1$ and $R_2$, maximum heights are $H_1$ and $H_2$, and times of flight are $T_1$ and $T_2$ respectively, then:",
+  "stem": "Two projectiles are launched from level ground with equal speeds, one at $62^\\circ$ and the other at $28^\\circ$ to the horizontal. If their ranges, maximum heights and flight times are $R_A,H_A,T_A$ and $R_B,H_B,T_B$, respectively, which comparison is correct?",
   "options": [
-   "$R_1 < R_2$, $H_1 < H_2$, $T_1 < T_2$",
-   "$R_1 = R_2$, $H_1 < H_2$, $T_1 < T_2$",
-   "$R_1 = R_2$, $H_1 > H_2$, $T_1 > T_2$",
-   "$R_1 = R_2$, $H_1 < H_2$, $T_1 > T_2$"
+   "$R_A=R_B,\\ H_A>H_B,\\ T_A>T_B$",
+   "$R_A=R_B,\\ H_A<H_B,\\ T_A<T_B$",
+   "$R_A>R_B,\\ H_A>H_B,\\ T_A>T_B$",
+   "$R_A=R_B,\\ H_A>H_B,\\ T_A<T_B$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The angles of projection are $\\theta_1 = 35^\\circ$ and $\\theta_2 = 55^\\circ$. Since $\\theta_1 + \\theta_2 = 90^\\circ$, these are complementary angles.\n\n1. Horizontal Range:\n$$R = \\dfrac{u^2 \\sin(2\\theta)}{g}$$\nFor $\\theta_1 = 35^\\circ$, $\\sin(2\\theta_1) = \\sin 70^\\circ$.\nFor $\\theta_2 = 55^\\circ$, $\\sin(2\\theta_2) = \\sin 110^\\circ = \\sin(180^\\circ - 70^\\circ) = \\sin 70^\\circ$.\nHence, $R_1 = R_2$.\n\n2. Maximum Height:\n$$H = \\dfrac{u^2 \\sin^2\\theta}{2g}$$\nSince $35^\\circ < 55^\\circ$, $\\sin 35^\\circ < \\sin 55^\\circ \\implies \\sin^2 35^\\circ < \\sin^2 55^\\circ$.\nHence, $H_1 < H_2$.\n\n3. Time of Flight:\n$$T = \\dfrac{2u \\sin\\theta}{g}$$\nSince $\\sin 35^\\circ < \\sin 55^\\circ$, we have $T_1 < T_2$.\n\nThus, $R_1 = R_2$, $H_1 < H_2$, and $T_1 < T_2$.",
-  "distractor_notes": "Option A assumes that the projectile with a longer time of flight must also travel a greater horizontal distance, forgetting the complementary angle property for ranges.\nOption C confuses the angle with the vertical or reverses the sine dependence, incorrectly predicting greater height and flight time for the smaller angle.\nOption D incorrectly inverts the time-of-flight dependence (e.g., confusing $\\sin\\theta$ with $\\cos\\theta$ or horizontal velocity).",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$R=\\dfrac{u^2\\sin 2\\theta}{g}$; $\\sin 124^\\circ=\\sin 56^\\circ\\Rightarrow R_A=R_B$.\n$H=\\dfrac{u^2\\sin^2\\theta}{2g}$; $\\sin 62^\\circ>\\sin 28^\\circ\\Rightarrow H_A>H_B$.\n$T=\\dfrac{2u\\sin\\theta}{g}$; $\\sin 62^\\circ>\\sin 28^\\circ\\Rightarrow T_A>T_B$.",
+  "distractor_notes": "B: reverses the height and time comparisons by interchanging the angle effects.\nC: incorrectly assumes the larger launch angle gives a larger range.\nD: reverses the time-of-flight comparison."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

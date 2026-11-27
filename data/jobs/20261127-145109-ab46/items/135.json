@@ -1,0 +1,70 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Conditional probability, independence",
+  "archetype": "conditional probability",
+  "brief": "Two events with given individual probabilities and independence/intersection; compute P(A|B) or check whether A and B are independent using the definition.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:135",
+   "2026s2:98",
+   "2025s2:127"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If $P(A)=\\dfrac{3}{8}$, $P(B)=\\dfrac{2}{3}$ and $P(A\\cap B^c)=\\dfrac{1}{8}$, find $P(A\\mid B)$ and determine whether $A$ and $B$ are independent.",
+ "options": [
+  "$\\dfrac{1}{4}$, independent",
+  "$\\dfrac{3}{8}$, independent",
+  "$\\dfrac{3}{8}$, dependent",
+  "$\\dfrac{1}{2}$, dependent"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "P(A∩B)=P(A)−P(A∩Bᶜ)=3/8−1/8=1/4. Thus P(A|B)=(1/4)/(2/3)=3/8. Since P(A)P(B)=(3/8)(2/3)=1/4=P(A∩B), they are independent.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(A\\cap B)=P(A)-P(A\\cap B^c)=\\dfrac38-\\dfrac18=\\dfrac14$; $P(A\\mid B)=\\dfrac{1/4}{2/3}=\\dfrac38$; $P(A)P(B)=\\dfrac38\\cdot\\dfrac23=\\dfrac14=P(A\\cap B)$.\n\nIndependent check: P(A∩B)=P(A)−P(A∩Bᶜ)=3/8−1/8=1/4. Thus P(A|B)=(1/4)/(2/3)=3/8. Since P(A)P(B)=(3/8)(2/3)=1/4=P(A∩B), they are independent.",
+ "solution": "$P(A\\cap B)=P(A)-P(A\\cap B^c)=\\dfrac38-\\dfrac18=\\dfrac14.$\n$$P(A\\mid B)=\\dfrac{P(A\\cap B)}{P(B)}=\\dfrac{1/4}{2/3}=\\dfrac38.$$\nSince $P(A)P(B)=\\dfrac38\\cdot\\dfrac23=\\dfrac14=P(A\\cap B)$, $A$ and $B$ are independent.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "If $P(A)=\\dfrac{3}{8}$, $P(B)=\\dfrac{2}{3}$ and $P(A\\cap B^c)=\\dfrac{1}{8}$, find $P(A\\mid B)$ and determine whether $A$ and $B$ are independent.",
+  "options": [
+   "$\\dfrac{3}{8}$, independent",
+   "$\\dfrac{1}{4}$, independent",
+   "$\\dfrac{3}{8}$, dependent",
+   "$\\dfrac{1}{2}$, dependent"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$P(A\\cap B)=P(A)-P(A\\cap B^c)=\\dfrac38-\\dfrac18=\\dfrac14$; $P(A\\mid B)=\\dfrac{1/4}{2/3}=\\dfrac38$; $P(A)P(B)=\\dfrac38\\cdot\\dfrac23=\\dfrac14=P(A\\cap B)$.",
+  "distractor_notes": "B: reports the intersection as the conditional probability; C: gets the conditional value but not the independence test; D: uses an incorrect denominator or complement."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

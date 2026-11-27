@@ -1,0 +1,71 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by substitution",
+  "archetype": "substitution integral",
+  "brief": "A straightforward indefinite integral solved by a single substitution such as u = x² + 1 or a trigonometric substitution; ask for the antiderivative.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:93",
+   "2025s1:99",
+   "2026s2:101"
+  ],
+  "origin": "variant",
+  "bank_ref": "g90867247a236"
+ },
+ "status": "ok",
+ "stem": "A differentiable function $G$ satisfies $G'(x)=\\dfrac{6x^2}{x^3+8}$ and $G(0)=0$. For $x>-2$, find $G(x)$.",
+ "options": [
+  "$\\ln\\left(\\dfrac{x^3+8}{8}\\right)$",
+  "$2\\ln\\left(\\dfrac{x^3+8}{8}\\right)$",
+  "$6\\ln\\left(\\dfrac{x^3+8}{8}\\right)$",
+  "$2\\ln(x^3+8)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since \\(\\frac{d}{dx}\\ln(x^3+8)=\\frac{3x^2}{x^3+8}\\), integration gives \\(G(x)=2\\ln(x^3+8)+C\\). Using \\(G(0)=0\\) yields \\(C=-2\\ln 8\\), so \\(G(x)=2\\ln\\left(\\frac{x^3+8}{8}\\right)\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=x^3+8,\\quad du=3x^2\\,dx$.\n$G(x)=2\\ln(x^3+8)+C$.\n$G(0)=0\\implies C=-2\\ln 8$.\n$G(x)=2\\ln\\left(\\dfrac{x^3+8}{8}\\right)$.\n\nIndependent check: Since \\(\\frac{d}{dx}\\ln(x^3+8)=\\frac{3x^2}{x^3+8}\\), integration gives \\(G(x)=2\\ln(x^3+8)+C\\). Using \\(G(0)=0\\) yields \\(C=-2\\ln 8\\), so \\(G(x)=2\\ln\\left(\\frac{x^3+8}{8}\\right)\\).",
+ "solution": "Integrating the derivative,\n$$G(x)=2\\ln(x^3+8)+C.$$\nUsing $G(0)=0$ gives $C=-2\\ln 8$, hence $G(x)=2\\ln\\left(\\dfrac{x^3+8}{8}\\right)$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A differentiable function $G$ satisfies $G'(x)=\\dfrac{6x^2}{x^3+8}$ and $G(0)=0$. For $x>-2$, find $G(x)$.",
+  "options": [
+   "$\\ln\\left(\\dfrac{x^3+8}{8}\\right)$",
+   "$2\\ln\\left(\\dfrac{x^3+8}{8}\\right)$",
+   "$6\\ln\\left(\\dfrac{x^3+8}{8}\\right)$",
+   "$2\\ln(x^3+8)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$u=x^3+8,\\quad du=3x^2\\,dx$.\n$G(x)=2\\ln(x^3+8)+C$.\n$G(0)=0\\implies C=-2\\ln 8$.\n$G(x)=2\\ln\\left(\\dfrac{x^3+8}{8}\\right)$.",
+  "distractor_notes": "A: Omits the factor of $2$ from the substitution.\nC: Uses an incorrect factor of $6$.\nD: Does not apply the condition $G(0)=0$."
+ },
+ "variant_of": "g90867247a236",
+ "author_model": "openai/gpt-6-luna-pro"
+}

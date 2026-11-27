@@ -12,6 +12,7 @@ export type JobState = {
 export type Verdict = { stage: string; model?: string; answer?: string; issues?: string[] };
 export type Item = {
   qno: number; section: string; status: string; difficulty?: number; attempts?: number; notes?: string[];
+  origin?: string; bank_id?: string; variant_of?: string;
   slot: { chapter?: string; subtopic?: string; lr_generator?: string | null };
   stem: string; options: string[]; answer?: string; solution?: string;
   stem_html: string; options_html: string[]; solution_html: string;

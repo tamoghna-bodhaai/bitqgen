@@ -1,0 +1,80 @@
+{
+ "qno": 69,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 69,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Cannizzaro reaction",
+  "archetype": "reaction product (structures)",
+  "brief": "Give a keto/aldehyde substrate (e.g. with alpha Hs and without) and ask for the product with a specified reagent: Aldol vs Cannizzaro; pick the correct structure.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:36",
+   "2023s2:33",
+   "2025s1:36"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "4-Methylbenzaldehyde is treated with concentrated aqueous $\\text{NaOH}$, followed by acidification. Which pair of organic products is formed?",
+ "options": [
+  "4-Methylbenzyl alcohol + 4-methylbenzoic acid",
+  "4-Methylbenzyl alcohol + 4-methylbenzaldehyde",
+  "4-Methylbenzyl alcohol + 4-methylbenzyl alcohol",
+  "4-Methylbenzoic acid + 4-methylbenzoic acid"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q069_optA_v0.png",
+  "figs/q069_optB_v0.png",
+  "figs/q069_optC_v0.png",
+  "figs/q069_optD_v0.png"
+ ],
+ "option_width": 47,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "4-Methylbenzaldehyde has no α-hydrogen, so it undergoes the Cannizzaro reaction in concentrated NaOH, yielding 4-methylbenzyl alcohol and, after acidification, 4-methylbenzoic acid.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "4-Methylbenzaldehyde has no $\\alpha$-hydrogen, so it undergoes Cannizzaro reaction.\n$2\\,\\text{ArCHO}+\\text{OH}^-\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOO}^-$\nAcidification gives 4-methylbenzyl alcohol and 4-methylbenzoic acid.\n\nIndependent check: 4-Methylbenzaldehyde has no α-hydrogen, so it undergoes the Cannizzaro reaction in concentrated NaOH, yielding 4-methylbenzyl alcohol and, after acidification, 4-methylbenzoic acid.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "4-Methylbenzaldehyde is treated with concentrated aqueous $\\text{NaOH}$, followed by acidification. Which pair of organic products is formed?",
+  "options": [
+   "4-Methylbenzyl alcohol + 4-methylbenzoic acid",
+   "4-Methylbenzyl alcohol + 4-methylbenzaldehyde",
+   "4-Methylbenzyl alcohol + 4-methylbenzyl alcohol",
+   "4-Methylbenzoic acid + 4-methylbenzoic acid"
+  ],
+  "option_smiles": [
+   "Cc1ccc(CO)cc1.Cc1ccc(C(=O)O)cc1",
+   "Cc1ccc(CO)cc1.Cc1ccc(C=O)cc1",
+   "Cc1ccc(CO)cc1.Cc1ccc(CO)cc1",
+   "Cc1ccc(C(=O)O)cc1.Cc1ccc(C(=O)O)cc1"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "4-Methylbenzaldehyde has no $\\alpha$-hydrogen, so it undergoes Cannizzaro reaction.\n$2\\,\\text{ArCHO}+\\text{OH}^-\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOO}^-$\nAcidification gives 4-methylbenzyl alcohol and 4-methylbenzoic acid.",
+  "distractor_notes": "B leaves one aldehyde unreacted; C and D incorrectly assign both molecules to the same redox product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

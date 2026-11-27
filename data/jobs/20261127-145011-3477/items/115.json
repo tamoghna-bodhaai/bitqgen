@@ -1,0 +1,70 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "restricted arrangement",
+  "brief": "Arrange letters of a word so that certain vowels are always together and a particular pair never together; combine cases carefully",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:104",
+   "2024s1:118",
+   "2022:115"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "How many distinct arrangements of the letters of BALLOON have all vowels together, while B and N are not adjacent?",
+ "options": [
+  "$72$",
+  "$180$",
+  "$108$",
+  "$216$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Treat AOO as one block, with 3 internal arrangements. The five objects are this block, B, N, L, L: 5!/2 × 3 = 180. With B and N adjacent, combine them as BN or NB: 2 × (4!/2) × 3 = 72. Thus 180 − 72 = 108.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Vowels together: internal arrangements $=\\dfrac{3!}{2!}=3$\\nOuter arrangements $=\\dfrac{5!}{2!}=60$\\nWith B and N adjacent: $2\\cdot\\dfrac{4!}{2!}=24$\\nRequired $=3(60-24)=108$\n\nIndependent check: Treat AOO as one block, with 3 internal arrangements. The five objects are this block, B, N, L, L: 5!/2 × 3 = 180. With B and N adjacent, combine them as BN or NB: 2 × (4!/2) × 3 = 72. Thus 180 − 72 = 108.",
+ "solution": "The vowels AOO stay together in $\\dfrac{3!}{2!}=3$ internal arrangements. Treat them as one block; the five objects have $\\dfrac{5!}{2!}=60$ arrangements.\nIf B and N are adjacent, combine them as one object: $2\\times\\dfrac{4!}{2!}=24$ arrangements of the outer objects.\n$$3(60-24)=108$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "How many distinct arrangements of the letters of BALLOON have all vowels together, while B and N are not adjacent?",
+  "options": [
+   "$72$",
+   "$108$",
+   "$180$",
+   "$216$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Vowels together: internal arrangements $=\\dfrac{3!}{2!}=3$\\nOuter arrangements $=\\dfrac{5!}{2!}=60$\\nWith B and N adjacent: $2\\cdot\\dfrac{4!}{2!}=24$\\nRequired $=3(60-24)=108$",
+  "distractor_notes": "A: counts only the excluded adjacent cases; C: ignores the B–N restriction; D: treats the two Ls as distinct."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

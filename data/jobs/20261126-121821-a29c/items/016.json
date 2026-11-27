@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Two long, straight parallel wires separated by $20\\text{ cm}$ carry currents of $4\\text{ A}$ and $6\\text{ A}$ in opposite directions. The magnitude of the net magnetic field at a point midway between the wires is",
+ "stem": "Two long parallel wires, $20$ cm apart, carry currents of $3$ A and $6$ A in the same direction. A point lies on the line joining them, $10$ cm from the $3$ A wire on the side away from the other wire. The net magnetic field there is (take $\\frac{\\text{μ}_0}{2\\text{π}}=2.0\\times10^{-7}$ T m A$^{-1}$)",
  "options": [
-  "$2\\ \\mu\\text{T}$",
-  "$4\\ \\mu\\text{T}$",
   "$10\\ \\mu\\text{T}$",
-  "$20\\ \\mu\\text{T}$"
+  "$4\\ \\mu\\text{T}$",
+  "$2\\ \\mu\\text{T}$",
+  "$18\\ \\mu\\text{T}$"
  ],
- "answer": "D",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "At the midpoint, r = 0.10 m from each wire. With opposite currents, both fields point the same way at the midpoint, so they add: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
-   "answer": "D",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The point is 0.10 m from the 3 A wire and 0.30 m from the 6 A wire. Outside the wires, their fields point the same way, so B = 2×10⁻⁷(3/0.10 + 6/0.30) = 1.0×10⁻⁵ T = 10 μT.",
+   "answer": "C",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The distance of the midpoint from each wire is $r = \\dfrac{20\\text{ cm}}{2} = 10\\text{ cm} = 0.1\\text{ m}$.\n\nSince the currents flow in opposite directions, by the right-hand thumb rule, the magnetic fields produced by both wires at the midpoint point in the same direction and add up:\n$$B_{\\text{net}} = B_1 + B_2 = \\dfrac{\\mu_0 I_1}{2\\pi r} + \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{\\mu_0}{2\\pi r}(I_1 + I_2)$$\n\nSubstitute the given values:\n$$B_{\\text{net}} = \\dfrac{2 \\times 10^{-7}}{0.1} \\times (4 + 6) = 2 \\times 10^{-6} \\times 10 = 2 \\times 10^{-5}\\text{ T} = 20\\ \\mu\\text{T}$$\n\nIndependent check: At the midpoint, r = 0.10 m from each wire. With opposite currents, both fields point the same way at the midpoint, so they add: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
- "solution": "",
+ "working": "Distances from the wires: $r_1=0.10$ m, $r_2=0.30$ m.\nThe point is outside both wires, so their fields are in the same direction.\n$B=\\dfrac{\\mu_0}{2\\pi}\\left(\\dfrac{I_1}{r_1}+\\dfrac{I_2}{r_2}\\right)$\n$=2.0\\times10^{-7}\\left(\\dfrac{3}{0.10}+\\dfrac{6}{0.30}\\right)$ T\n$=1.0\\times10^{-5}$ T $=10\\ \\mu\\text{T}$.\n\nIndependent check: The point is 0.10 m from the 3 A wire and 0.30 m from the 6 A wire. Outside the wires, their fields point the same way, so B = 2×10⁻⁷(3/0.10 + 6/0.30) = 1.0×10⁻⁵ T = 10 μT.",
+ "solution": "The point lies outside both wires, so the magnetic fields add. Using $B=\\dfrac{\\mu_0}{2\\pi}\\left(\\dfrac{I_1}{r_1}+\\dfrac{I_2}{r_2}\\right)$, with $r_1=0.10$ m and $r_2=0.30$ m,\n$$B=2.0\\times10^{-7}\\left(\\frac{3}{0.10}+\\frac{6}{0.30}\\right)=1.0\\times10^{-5}\\text{ T}=10\\,\\mu\\text{T}.$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Two long, straight parallel wires separated by $20\\text{ cm}$ carry currents of $4\\text{ A}$ and $6\\text{ A}$ in opposite directions. The magnitude of the net magnetic field at a point midway between the wires is",
+  "stem": "Two long parallel wires, $20$ cm apart, carry currents of $3$ A and $6$ A in the same direction. A point lies on the line joining them, $10$ cm from the $3$ A wire on the side away from the other wire. The net magnetic field there is (take $\\frac{\\text{μ}_0}{2\\text{π}}=2.0\\times10^{-7}$ T m A$^{-1}$)",
   "options": [
    "$2\\ \\mu\\text{T}$",
    "$4\\ \\mu\\text{T}$",
    "$10\\ \\mu\\text{T}$",
-   "$20\\ \\mu\\text{T}$"
+   "$18\\ \\mu\\text{T}$"
   ],
   "option_smiles": null,
-  "answer": "D",
-  "working": "The distance of the midpoint from each wire is $r = \\dfrac{20\\text{ cm}}{2} = 10\\text{ cm} = 0.1\\text{ m}$.\n\nSince the currents flow in opposite directions, by the right-hand thumb rule, the magnetic fields produced by both wires at the midpoint point in the same direction and add up:\n$$B_{\\text{net}} = B_1 + B_2 = \\dfrac{\\mu_0 I_1}{2\\pi r} + \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{\\mu_0}{2\\pi r}(I_1 + I_2)$$\n\nSubstitute the given values:\n$$B_{\\text{net}} = \\dfrac{2 \\times 10^{-7}}{0.1} \\times (4 + 6) = 2 \\times 10^{-6} \\times 10 = 2 \\times 10^{-5}\\text{ T} = 20\\ \\mu\\text{T}$$",
-  "distractor_notes": "Option A corresponds to subtracting the fields and mistakenly using the total separation d = 20 cm instead of r = 10 cm.\nOption B corresponds to assuming the currents are in the same direction, subtracting the fields: (6 - 4) * 2 uT = 4 uT.\nOption C corresponds to correctly adding the fields but using the total distance d = 20 cm instead of the distance to the midpoint r = 10 cm.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Distances from the wires: $r_1=0.10$ m, $r_2=0.30$ m.\nThe point is outside both wires, so their fields are in the same direction.\n$B=\\dfrac{\\mu_0}{2\\pi}\\left(\\dfrac{I_1}{r_1}+\\dfrac{I_2}{r_2}\\right)$\n$=2.0\\times10^{-7}\\left(\\dfrac{3}{0.10}+\\dfrac{6}{0.30}\\right)$ T\n$=1.0\\times10^{-5}$ T $=10\\ \\mu\\text{T}$.",
+  "distractor_notes": "A: subtracts fields despite the point being outside both wires. B: includes only the field from the $6$ A wire. D: incorrectly uses the $10$ cm distance for both wires."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

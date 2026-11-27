@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Match the element(s) detected in Lassaigne's test (List-I) with the characteristic species formed (List-II):\n\n**List-I**\n(P) Nitrogen only\n(Q) Sulphur only\n(R) Both Nitrogen and Sulphur\n(S) Chlorine\n\n**List-II**\n(1) Violet complex, $[\\text{Fe}(\\text{CN})_5\\text{NOS}]^{4-}$\n(2) Prussian blue, $\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$\n(3) Blood-red complex, $[\\text{Fe}(\\text{SCN})]^{2+}$\n(4) White precipitate, $\\text{AgCl}$",
+ "stem": "Match each element detected in Lassaigne's analysis with its characteristic positive result.\n\n**List-I**\n(P) Nitrogen\n(Q) Sulphur\n(R) Phosphorus\n(S) Bromine\n\n**List-II**\n(1) Violet colour with sodium nitroprusside\n(2) Pale-yellow $\\text{AgBr}$ precipitate, soluble in concentrated $\\text{NH}_3$\n(3) Prussian blue colour after treatment with $\\text{FeSO}_4$ and acidification\n(4) Yellow precipitate with ammonium molybdate after oxidation",
  "options": [
-  "P-(2), Q-(1), R-(3), S-(4)",
-  "P-(1), Q-(2), R-(3), S-(4)",
   "P-(3), Q-(1), R-(2), S-(4)",
-  "P-(2), Q-(3), R-(1), S-(4)"
+  "P-(1), Q-(3), R-(4), S-(2)",
+  "P-(3), Q-(1), R-(4), S-(2)",
+  "P-(3), Q-(2), R-(4), S-(1)"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Lassaigne's test: N only gives sodium ferrocyanide → Prussian blue Fe4[Fe(CN)6]3 (P-2). S only gives Na2S → violet [Fe(CN)5NOS]4- with sodium nitroprusside (Q-1). Both N and S give NaSCN → blood-red [Fe(SCN)]2+ with Fe3+ (R-3). Cl gives AgCl white ppt soluble in NH4OH (S-4). Charges verified: nitroprusside-sulfide complex -4, FeSCN +2, Prussian blue neutral. Matches option (A).",
-   "answer": "A",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Nitrogen gives Prussian blue (3); sulphur gives violet with sodium nitroprusside (1); phosphorus gives yellow ammonium molybdate precipitate (4); bromine gives pale-yellow AgBr (2).",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "In Lassaigne's test:\n1. Nitrogen alone forms sodium cyanide ($\\text{NaCN}$), which on reaction with $\\text{FeSO}_4$ and acidification with $\\text{H}_2\\text{SO}_4$ gives ferric ferrocyanide (Prussian blue), $\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$. Thus, P $\\to$ 2.\n2. Sulphur alone forms sodium sulphide ($\\text{Na}_2\\text{S}$), which gives a violet colour with sodium nitroprusside due to the formation of $[\\text{Fe}(\\text{CN})_5\\text{NOS}]^{4-}$. Thus, Q $\\to$ 1.\n3. When both Nitrogen and Sulphur are present, sodium thiocyanate ($\\text{NaSCN}$) is formed, which reacts with $\\text{Fe}^{3+}$ to give a blood-red complex, $[\\text{Fe}(\\text{SCN})]^{2+}$. Thus, R $\\to$ 3.\n4. Chlorine forms sodium chloride ($\\text{NaCl}$), which gives a white precipitate of $\\text{AgCl}$ with acidified $\\text{AgNO}_3$. Thus, S $\\to$ 4.\n\nMatching: P-(2), Q-(1), R-(3), S-(4).\n\nIndependent check: Lassaigne's test: N only gives sodium ferrocyanide → Prussian blue Fe4[Fe(CN)6]3 (P-2). S only gives Na2S → violet [Fe(CN)5NOS]4- with sodium nitroprusside (Q-1). Both N and S give NaSCN → blood-red [Fe(SCN)]2+ with Fe3+ (R-3). Cl gives AgCl white ppt soluble in NH4OH (S-4). Charges verified: nitroprusside-sulfide complex -4, FeSCN +2, Prussian blue neutral. Matches option (A).",
+ "working": "Nitrogen: $\\text{CN}^-$ gives Prussian blue with $\\text{FeSO}_4$ after acidification $\\to$ (3).\nSulphur: $\\text{S}^{2-}$ gives violet colour with sodium nitroprusside $\\to$ (1).\nPhosphorus: oxidised to phosphate; ammonium molybdate gives yellow precipitate $\\to$ (4).\nBromine: $\\text{Br}^-$ gives pale-yellow $\\text{AgBr}$, soluble in concentrated $\\text{NH}_3$ $\\to$ (2).\n\nIndependent check: Nitrogen gives Prussian blue (3); sulphur gives violet with sodium nitroprusside (1); phosphorus gives yellow ammonium molybdate precipitate (4); bromine gives pale-yellow AgBr (2).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Match the element(s) detected in Lassaigne's test (List-I) with the characteristic species formed (List-II):\n\n**List-I**\n(P) Nitrogen only\n(Q) Sulphur only\n(R) Both Nitrogen and Sulphur\n(S) Chlorine\n\n**List-II**\n(1) Violet complex, $[\\text{Fe}(\\text{CN})_5\\text{NOS}]^{4-}$\n(2) Prussian blue, $\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$\n(3) Blood-red complex, $[\\text{Fe}(\\text{SCN})]^{2+}$\n(4) White precipitate, $\\text{AgCl}$",
+  "stem": "Match each element detected in Lassaigne's analysis with its characteristic positive result.\n\n**List-I**\n(P) Nitrogen\n(Q) Sulphur\n(R) Phosphorus\n(S) Bromine\n\n**List-II**\n(1) Violet colour with sodium nitroprusside\n(2) Pale-yellow $\\text{AgBr}$ precipitate, soluble in concentrated $\\text{NH}_3$\n(3) Prussian blue colour after treatment with $\\text{FeSO}_4$ and acidification\n(4) Yellow precipitate with ammonium molybdate after oxidation",
   "options": [
-   "P-(2), Q-(1), R-(3), S-(4)",
-   "P-(1), Q-(2), R-(3), S-(4)",
    "P-(3), Q-(1), R-(2), S-(4)",
-   "P-(2), Q-(3), R-(1), S-(4)"
+   "P-(1), Q-(3), R-(4), S-(2)",
+   "P-(3), Q-(1), R-(4), S-(2)",
+   "P-(3), Q-(2), R-(4), S-(1)"
   ],
   "option_smiles": null,
-  "answer": "A",
-  "working": "In Lassaigne's test:\n1. Nitrogen alone forms sodium cyanide ($\\text{NaCN}$), which on reaction with $\\text{FeSO}_4$ and acidification with $\\text{H}_2\\text{SO}_4$ gives ferric ferrocyanide (Prussian blue), $\\text{Fe}_4[\\text{Fe}(\\text{CN})_6]_3$. Thus, P $\\to$ 2.\n2. Sulphur alone forms sodium sulphide ($\\text{Na}_2\\text{S}$), which gives a violet colour with sodium nitroprusside due to the formation of $[\\text{Fe}(\\text{CN})_5\\text{NOS}]^{4-}$. Thus, Q $\\to$ 1.\n3. When both Nitrogen and Sulphur are present, sodium thiocyanate ($\\text{NaSCN}$) is formed, which reacts with $\\text{Fe}^{3+}$ to give a blood-red complex, $[\\text{Fe}(\\text{SCN})]^{2+}$. Thus, R $\\to$ 3.\n4. Chlorine forms sodium chloride ($\\text{NaCl}$), which gives a white precipitate of $\\text{AgCl}$ with acidified $\\text{AgNO}_3$. Thus, S $\\to$ 4.\n\nMatching: P-(2), Q-(1), R-(3), S-(4).",
-  "distractor_notes": "Option B confuses the reagents/products for nitrogen (Prussian blue) and sulphur (nitroprusside test).\nOption C confuses the test for nitrogen alone with the test when both nitrogen and sulphur are present.\nOption D swaps the products formed in the nitrogen test with the sulphur and nitrogen combined test.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "Nitrogen: $\\text{CN}^-$ gives Prussian blue with $\\text{FeSO}_4$ after acidification $\\to$ (3).\nSulphur: $\\text{S}^{2-}$ gives violet colour with sodium nitroprusside $\\to$ (1).\nPhosphorus: oxidised to phosphate; ammonium molybdate gives yellow precipitate $\\to$ (4).\nBromine: $\\text{Br}^-$ gives pale-yellow $\\text{AgBr}$, soluble in concentrated $\\text{NH}_3$ $\\to$ (2).",
+  "distractor_notes": "A: Interchanges the characteristic results for phosphorus and bromine.\nB: Interchanges the nitrogen and sulphur tests.\nD: Assigns the sulphur and bromine observations incorrectly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

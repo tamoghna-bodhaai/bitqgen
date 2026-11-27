@@ -1,0 +1,76 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Zener diode as voltage regulator",
+  "archetype": "circuit analysis",
+  "brief": "Circuit diagram: Zener regulator with a series resistor, source voltage and load; compute current through the Zener diode at stated input voltage using the load voltage remaining fixed.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:28",
+   "2022:7",
+   "2024s1:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the circuit shown, an ideal Zener diode maintains the load voltage at its breakdown voltage. Find the current through the Zener diode when the input is $12$ V.",
+ "options": [
+  "$5\\ \\text{mA}$",
+  "$30\\ \\text{mA}$",
+  "$20\\ \\text{mA}$",
+  "$10\\ \\text{mA}$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q023_stem_v0.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At 6 V, the 200 Ω resistor supplies (12−6)/200 = 30 mA. The 300 Ω load draws 6/300 = 20 mA, so the Zener current is 10 mA.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$V_{\\text{out}}=6\\ \\text{V}$<br>$I_s=\\dfrac{12-6}{200}=30\\ \\text{mA}$; $I_L=\\dfrac{6}{300}=20\\ \\text{mA}$<br>$I_Z=I_s-I_L=10\\ \\text{mA}$\n\nIndependent check: At 6 V, the 200 Ω resistor supplies (12−6)/200 = 30 mA. The 300 Ω load draws 6/300 = 20 mA, so the Zener current is 10 mA.",
+ "solution": "The Zener clamps the load voltage at $6\\ \\text{V}$. The series current is $I_s=\\dfrac{12-6}{200}=30\\ \\text{mA}$, while the load current is $I_L=\\dfrac{6}{300}=20\\ \\text{mA}$.\n$$I_Z=I_s-I_L=30-20=10\\ \\text{mA}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown, an ideal Zener diode maintains the load voltage at its breakdown voltage. Find the current through the Zener diode when the input is $12$ V.",
+  "options": [
+   "$5\\ \\text{mA}$",
+   "$10\\ \\text{mA}$",
+   "$20\\ \\text{mA}$",
+   "$30\\ \\text{mA}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a 12 V DC source with its positive terminal connected through a 200 ohm series resistor to an output node; the negative terminal is the common return. Connect a 6 V Zener diode in reverse bias between the output node and return, with its cathode at the output node. Connect a 300 ohm load resistor in parallel with the Zener between the same output node and return. Label the source 12 V, the series resistor 200 ohm, the Zener 6 V, and the load 300 ohm.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$V_{\\text{out}}=6\\ \\text{V}$<br>$I_s=\\dfrac{12-6}{200}=30\\ \\text{mA}$; $I_L=\\dfrac{6}{300}=20\\ \\text{mA}$<br>$I_Z=I_s-I_L=10\\ \\text{mA}$",
+  "distractor_notes": "A: incorrect current subtraction; C: reports the load current; D: reports the series current without subtracting load current."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,51 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "A point mass $m$ is placed at an arbitrary position inside a uniform thin spherical shell of mass $M$ and radius $R$. At any other point inside the shell, the gravitational field $\\vec{E}$ and gravitational potential $V$ are such that:",
+ "stem": "A test mass $m$ is moved among different positions inside a fixed uniform thin spherical shell of mass $M$ and radius $R$. At each position, what are the gravitational field and potential due to the shell?",
  "options": [
-  "$\\vec{E}$ is zero, while $V$ depends only on $M$",
-  "$\\vec{E}$ depends only on $m$, while $V$ depends on both $M$ and $m$",
-  "both $\\vec{E}$ and $V$ depend only on $m$",
-  "both $\\vec{E}$ and $V$ depend on both $M$ and $m$"
+  "The field is zero and the potential is $-\\dfrac{GM}{R}$.",
+  "The field is zero and the potential is $-\\dfrac{GM}{r}$, where $r$ is the distance from the shell's centre.",
+  "The field has magnitude $\\dfrac{GM}{R^2}$ toward the centre and the potential is $-\\dfrac{GM}{R}$.",
+  "The field is nonzero except at the centre, and the potential varies with position."
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Shell theorem: shell gives zero field inside but constant potential -GM/R. The point mass m itself creates field Gm/d² and potential -Gm/d at any other interior point at distance d. Total E = Gm/d² (depends on m, not M); total V = -GM/R - Gm/d (depends on M and m). Matches B.",
-   "answer": "B",
-   "confidence": 0.8,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By the shell theorem, the gravitational field everywhere inside a uniform thin spherical shell is zero. Its potential is constant throughout the interior and equals the surface value, $-GM/R$.",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
-   "issues": [
-    "Wording is loose: E and V also depend on the field point's position, and V involves R; 'depends only on m' is meant among the masses.",
-    "If read as asking only for the shell's own field/potential, option A becomes tempting; the intended inclusion of the point mass's contribution is not stated explicitly."
-   ],
-   "difficulty": 3
+   "issues": [],
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "By Newton's shell theorem, the gravitational field due to a uniform spherical shell of mass $M$ and radius $R$ is zero at all points inside the shell:\n$$\\vec{E}_{\\text{shell}} = 0$$\nThe gravitational potential inside the shell is constant everywhere:\n$$V_{\\text{shell}} = -\\dfrac{GM}{R}$$\nBy the principle of superposition, when a point mass $m$ is introduced, the total field and potential at any other point inside the cavity (at a distance $r'$ from $m$) are:\n$$\\vec{E} = \\vec{E}_{\\text{shell}} + \\vec{E}_m = 0 + \\vec{E}_m = \\vec{E}_m$$\n$$V = V_{\\text{shell}} + V_m = -\\dfrac{GM}{R} - \\dfrac{Gm}{r'}$$\nTherefore, the gravitational field $\\vec{E}$ depends only on $m$, whereas the gravitational potential $V$ depends on both $M$ and $m$.\n\nIndependent check: Shell theorem: shell gives zero field inside but constant potential -GM/R. The point mass m itself creates field Gm/d² and potential -Gm/d at any other interior point at distance d. Total E = Gm/d² (depends on m, not M); total V = -GM/R - Gm/d (depends on M and m). Matches B.",
+ "working": "$\\vec{g}_{\\text{shell}}=0$ everywhere inside the shell.\n$V_{\\text{shell}}=-\\dfrac{GM}{R}$ everywhere inside.\nBoth are independent of the test mass's position.\n\nIndependent check: By the shell theorem, the gravitational field everywhere inside a uniform thin spherical shell is zero. Its potential is constant throughout the interior and equals the surface value, $-GM/R$.",
  "solution": "",
  "locked": false,
- "difficulty": 2,
+ "difficulty": 1,
  "draft": {
-  "stem": "A point mass $m$ is placed at an arbitrary position inside a uniform thin spherical shell of mass $M$ and radius $R$. At any other point inside the shell, the gravitational field $\\vec{E}$ and gravitational potential $V$ are such that:",
+  "stem": "A test mass $m$ is moved among different positions inside a fixed uniform thin spherical shell of mass $M$ and radius $R$. At each position, what are the gravitational field and potential due to the shell?",
   "options": [
-   "$\\vec{E}$ is zero, while $V$ depends only on $M$",
-   "$\\vec{E}$ depends only on $m$, while $V$ depends on both $M$ and $m$",
-   "both $\\vec{E}$ and $V$ depend only on $m$",
-   "both $\\vec{E}$ and $V$ depend on both $M$ and $m$"
+   "The field is zero and the potential is $-\\dfrac{GM}{R}$.",
+   "The field is zero and the potential is $-\\dfrac{GM}{r}$, where $r$ is the distance from the shell's centre.",
+   "The field has magnitude $\\dfrac{GM}{R^2}$ toward the centre and the potential is $-\\dfrac{GM}{R}$.",
+   "The field is nonzero except at the centre, and the potential varies with position."
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "By Newton's shell theorem, the gravitational field due to a uniform spherical shell of mass $M$ and radius $R$ is zero at all points inside the shell:\n$$\\vec{E}_{\\text{shell}} = 0$$\nThe gravitational potential inside the shell is constant everywhere:\n$$V_{\\text{shell}} = -\\dfrac{GM}{R}$$\nBy the principle of superposition, when a point mass $m$ is introduced, the total field and potential at any other point inside the cavity (at a distance $r'$ from $m$) are:\n$$\\vec{E} = \\vec{E}_{\\text{shell}} + \\vec{E}_m = 0 + \\vec{E}_m = \\vec{E}_m$$\n$$V = V_{\\text{shell}} + V_m = -\\dfrac{GM}{R} - \\dfrac{Gm}{r'}$$\nTherefore, the gravitational field $\\vec{E}$ depends only on $m$, whereas the gravitational potential $V$ depends on both $M$ and $m$.",
-  "distractor_notes": "Option A assumes that the shell shields the interior completely or misapplies the shell theorem to mean the net field inside must be zero regardless of other masses.\nOption C confuses zero field with zero potential, forgetting that the shell contributes a non-zero potential $-GM/R$ inside.\nOption D incorrectly presumes that placing $m$ at an arbitrary position breaks the symmetry such that the shell contributes a non-zero field inside.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\vec{g}_{\\text{shell}}=0$ everywhere inside the shell.\n$V_{\\text{shell}}=-\\dfrac{GM}{R}$ everywhere inside.\nBoth are independent of the test mass's position.",
+  "distractor_notes": "B: incorrectly uses the potential of a point mass at distance $r$.\nC: incorrectly applies the exterior field formula inside the shell.\nD: assumes the field and potential vary with position inside the shell."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

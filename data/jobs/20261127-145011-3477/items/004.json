@@ -1,0 +1,56 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Earth's magnetism – dip",
+  "archetype": "single-formula numerical",
+  "brief": "Given horizontal and vertical components of Earth's field, find the angle of dip using tanθ = Bv/BH.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:28",
+   "2021:3",
+   "2023s1:17"
+  ],
+  "origin": "direct",
+  "bank_ref": "g392d2f81c350"
+ },
+ "status": "ok",
+ "stem": "At a certain place, the horizontal component of Earth's magnetic field is 3.0 x 10^-5 T and the angle of dip is 60 degrees. The vertical component of the field at that place is",
+ "options": [
+  "1.7 x 10^-5 T",
+  "3.0 x 10^-5 T",
+  "6.0 x 10^-5 T",
+  "5.2 x 10^-5 T"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "C",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g392d2f81c350 (verified in job 20261127-122012-292e)"
+ ],
+ "working": "V = H tan delta = 3.0 x 10^-5 tan 60 = 3.0 x 10^-5 x 1.732 = 5.196 x 10^-5 T, approximately 5.2 x 10^-5 T.\n\nIndependent check: \\(B_V=B_H\\tan 60^\\circ=3.0\\times10^{-5}\\sqrt{3}\\approx5.2\\times10^{-5}\\,\\text{T}\\).",
+ "solution": "The vertical component is related to the horizontal component by $B_V=B_H\\tan\\delta$.\n$$B_V=3.0\\times10^{-5}\\tan60^\\circ=3.0\\sqrt{3}\\times10^{-5}\\approx5.2\\times10^{-5}\\,\\text{T}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g392d2f81c350",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

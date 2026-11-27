@@ -1,0 +1,71 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Approximations using differentials",
+  "archetype": "differential error",
+  "brief": "Use differentials to approximate a value such as √(a + small change) or (a + h)^{1/n}, asking for the approximate value or the percentage error.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:144",
+   "2021:137",
+   "2024s1:99"
+  ],
+  "origin": "variant",
+  "bank_ref": "ga3315ff12ee6"
+ },
+ "status": "ok",
+ "stem": "A cube has edge length $8$ cm, measured as $8.02$ cm. Using differentials, estimate the percentage error in its calculated volume.",
+ "options": [
+  "$0.25\\%$",
+  "$0.75\\%$",
+  "$0.50\\%$",
+  "$1.00\\%$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For V = l^3, dV/V = 3 dl/l = 3(0.02/8) = 0.0075, so the estimated percentage error is 0.75%.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$V=x^3\\Rightarrow dV=3x^2dx$; hence $\\dfrac{dV}{V}=3\\dfrac{dx}{x}=3\\cdot\\dfrac{0.02}{8}=0.0075$.\\nPercentage error $\\approx 0.75\\%$.\n\nIndependent check: For V = l^3, dV/V = 3 dl/l = 3(0.02/8) = 0.0075, so the estimated percentage error is 0.75%.",
+ "solution": "For $V=x^3$, the relative error is $\\frac{dV}{V}=3\\frac{dx}{x}$.\n$$\\frac{dV}{V}=3\\frac{0.02}{8}=0.0075$$\nThus, the estimated percentage error is $0.75\\%$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A cube has edge length $8$ cm, measured as $8.02$ cm. Using differentials, estimate the percentage error in its calculated volume.",
+  "options": [
+   "$0.25\\%$",
+   "$0.50\\%$",
+   "$0.75\\%$",
+   "$1.00\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$V=x^3\\Rightarrow dV=3x^2dx$; hence $\\dfrac{dV}{V}=3\\dfrac{dx}{x}=3\\cdot\\dfrac{0.02}{8}=0.0075$.\\nPercentage error $\\approx 0.75\\%$.",
+  "distractor_notes": "A: Uses the percentage edge error without multiplying by 3. B: Applies the square-area factor 2. D: Overestimates the differential percentage change."
+ },
+ "variant_of": "ga3315ff12ee6",
+ "author_model": "openai/gpt-6-luna-pro"
+}

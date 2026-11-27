@@ -1,0 +1,71 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Inverse of a function",
+  "archetype": "property check",
+  "brief": "Given a function f(x) (e.g., f(x) = x + 1/x style), check whether it is one-one/onto and find its inverse if it exists",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:119",
+   "2023s2:112",
+   "2026s2:109"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd2661756ece2"
+ },
+ "status": "ok",
+ "stem": "Let $f:[1,\\infty)\\to[0,\\infty)$ be defined by $f(x)=(x-1)^2$. Which statement is correct?",
+ "options": [
+  "$f$ is one-one and onto, and $f^{-1}(x)=1-\\sqrt{x}$.",
+  "$f$ is one-one and onto, and $f^{-1}(x)=1+\\sqrt{x}$.",
+  "$f$ is one-one but not onto, so it has no inverse.",
+  "$f$ is onto but not one-one, so it has no inverse."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For x≥1, f is strictly increasing and has range [0,∞). Solving y=(x−1)² gives x=1+√y, so f is bijective with the inverse in (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f'(x)=2(x-1)\\geq 0$ for $x\\geq1$, and $f$ is strictly increasing on $[1,\\infty)$.\n$f([1,\\infty))=[0,\\infty)$, so $f$ is onto its codomain.\n$y=(x-1)^2$, with $x\\geq1$, gives $x=1+\\sqrt{y}$.\nThus $f^{-1}(x)=1+\\sqrt{x}$.\n\nIndependent check: For x≥1, f is strictly increasing and has range [0,∞). Solving y=(x−1)² gives x=1+√y, so f is bijective with the inverse in (A).",
+ "solution": "For $x\\geq1$, $f$ is strictly increasing and its range is $[0,\\infty)$, so it is one-one and onto.\n$$y=(x-1)^2\\implies x=1+\\sqrt{y},\\qquad f^{-1}(x)=1+\\sqrt{x}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $f:[1,\\infty)\\to[0,\\infty)$ be defined by $f(x)=(x-1)^2$. Which statement is correct?",
+  "options": [
+   "$f$ is one-one and onto, and $f^{-1}(x)=1+\\sqrt{x}$.",
+   "$f$ is one-one and onto, and $f^{-1}(x)=1-\\sqrt{x}$.",
+   "$f$ is one-one but not onto, so it has no inverse.",
+   "$f$ is onto but not one-one, so it has no inverse."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$f'(x)=2(x-1)\\geq 0$ for $x\\geq1$, and $f$ is strictly increasing on $[1,\\infty)$.\n$f([1,\\infty))=[0,\\infty)$, so $f$ is onto its codomain.\n$y=(x-1)^2$, with $x\\geq1$, gives $x=1+\\sqrt{y}$.\nThus $f^{-1}(x)=1+\\sqrt{x}$.",
+  "distractor_notes": "B: Chooses the negative square-root branch, which gives inputs outside the domain except at zero. C: Mistakes the codomain for a set not covered by the range. D: Assumes the unrestricted quadratic's non-injectivity still applies on the restricted domain."
+ },
+ "variant_of": "gd2661756ece2",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Basicity of carbanions",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:45",
+   "2025s1:59",
+   "2024s2:56"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf21513db1fae"
+ },
+ "status": "ok",
+ "stem": "Which of the following carbanions is the strongest base?",
+ "options": [
+  "$\\text{CH}_3^-$",
+  "$\\text{CH}_3\\text{CH}_2^-$",
+  "$(\\text{CH}_3)_2\\text{CH}^-$",
+  "$(\\text{CH}_3)_3\\text{C}^-$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alkyl groups donate electron density by the +I effect, destabilizing a carbanion. Basicity therefore increases with substitution: CH₃⁻ < primary < secondary < tertiary.",
+   "answer": "D",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$+I$ effect of alkyl groups destabilises the carbanion; basicity increases with alkyl substitution: $(\\text{CH}_3)_3\\text{C}^- > (\\text{CH}_3)_2\\text{CH}^- > \\text{CH}_3\\text{CH}_2^- > \\text{CH}_3^-$.\n\nIndependent check: Alkyl groups donate electron density by the +I effect, destabilizing a carbanion. Basicity therefore increases with substitution: CH₃⁻ < primary < secondary < tertiary.",
+ "solution": "The $+I$ effect of alkyl groups destabilizes a carbanion, increasing its basicity with substitution:\n$$\\text{CH}_3^- < \\text{CH}_3\\text{CH}_2^- < (\\text{CH}_3)_2\\text{CH}^- < (\\text{CH}_3)_3\\text{C}^-$$\nThus, $(\\text{CH}_3)_3\\text{C}^-$ is the strongest base.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which of the following carbanions is the strongest base?",
+  "options": [
+   "$\\text{CH}_3^-$",
+   "$\\text{CH}_3\\text{CH}_2^-$",
+   "$(\\text{CH}_3)_2\\text{CH}^-$",
+   "$(\\text{CH}_3)_3\\text{C}^-$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$+I$ effect of alkyl groups destabilises the carbanion; basicity increases with alkyl substitution: $(\\text{CH}_3)_3\\text{C}^- > (\\text{CH}_3)_2\\text{CH}^- > \\text{CH}_3\\text{CH}_2^- > \\text{CH}_3^-$.",
+  "distractor_notes": "A: Assumes the least substituted carbanion is the strongest base. B: Underestimates the basicity increase from further alkyl substitution. C: Chooses the secondary rather than tertiary carbanion."
+ },
+ "variant_of": "gf21513db1fae",
+ "author_model": "openai/gpt-6-luna-pro"
+}

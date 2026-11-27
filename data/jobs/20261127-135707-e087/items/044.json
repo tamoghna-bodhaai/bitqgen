@@ -1,0 +1,68 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Group 15 hydrides",
+  "archetype": "statement evaluation",
+  "brief": "Four simple statements on NH3/PH3/AsH3 trends (boiling point, thermal stability, bond angle, basicity); pick the correct ones via codes.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:36",
+   "2021:46",
+   "2026s1:39"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the following trends for the Group 15 hydrides: (I) boiling point: NH₃ > AsH₃ > PH₃; (II) thermal stability: PH₃ > NH₃ > AsH₃; (III) bond angle: NH₃ > PH₃ > AsH₃; (IV) basicity: AsH₃ > PH₃ > NH₃. Which statements are correct?",
+ "options": [
+  "I and II only",
+  "II and IV only",
+  "I and III only",
+  "III and IV only"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "NH₃ has the highest boiling point due to hydrogen bonding, and AsH₃ boils above PH₃, so I is true. Thermal stability and basicity decrease down the group, making II and IV false. Bond angle decreases down the group, so III is true.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Boiling points: NH₃ > AsH₃ > PH₃ (hydrogen bonding; then increasing molar mass).\nThermal stability: NH₃ > PH₃ > AsH₃.\nBond angles: NH₃ > PH₃ > AsH₃.\nBasicity: NH₃ > PH₃ > AsH₃.\nCorrect statements: I and III.\n\nIndependent check: NH₃ has the highest boiling point due to hydrogen bonding, and AsH₃ boils above PH₃, so I is true. Thermal stability and basicity decrease down the group, making II and IV false. Bond angle decreases down the group, so III is true.",
+ "solution": "NH₃ has the highest boiling point due to hydrogen bonding; among PH₃ and AsH₃, boiling point increases with molar mass. Hence, (I) is true.\nThermal stability and basicity decrease down Group 15, so (II) and (IV) are false. Bond angle also decreases down the group: NH₃ > PH₃ > AsH₃, so (III) is true.\nThus, statements I and III are correct.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Consider the following trends for the Group 15 hydrides: (I) boiling point: NH₃ > AsH₃ > PH₃; (II) thermal stability: PH₃ > NH₃ > AsH₃; (III) bond angle: NH₃ > PH₃ > AsH₃; (IV) basicity: AsH₃ > PH₃ > NH₃. Which statements are correct?",
+  "options": [
+   "I and II only",
+   "I and III only",
+   "II and IV only",
+   "III and IV only"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Boiling points: NH₃ > AsH₃ > PH₃ (hydrogen bonding; then increasing molar mass).\nThermal stability: NH₃ > PH₃ > AsH₃.\nBond angles: NH₃ > PH₃ > AsH₃.\nBasicity: NH₃ > PH₃ > AsH₃.\nCorrect statements: I and III.",
+  "distractor_notes": "A: accepts the incorrect thermal-stability order and omits III.\nC: accepts both incorrect orders II and IV.\nD: accepts the incorrect basicity order and omits I."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

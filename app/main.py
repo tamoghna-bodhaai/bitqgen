@@ -17,6 +17,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from sse_starlette.sse import EventSourceResponse
 
+from agents import bank as qbank
 from agents.common import CORPUS, SYLLABUS
 from core.models import LETTERS, Paper
 from ingest.pipeline import ingest_paper, read_status as read_ingest, stage_pdf
@@ -382,6 +383,17 @@ def _job_summary(st: dict, j: jobs.Job | None = None) -> dict:
     return st
 
 
+@api.get("/jobs")
+def api_jobs():
+    out = []
+    for st in jobs.list_jobs():
+        try:
+            out.append(_job_summary(st, jobs.get(st["id"])))
+        except KeyError:
+            out.append(_job_summary(st))
+    return {"jobs": out}
+
+
 @api.get("/home")
 def api_home():
     profiles, active, _ = _profiles()
@@ -392,7 +404,55 @@ def api_home():
         except KeyError:
             lst.append(_job_summary(st))
     return {"patterns": _patterns(), "profiles": profiles, "active": active, "jobs": lst,
-            "corpus": _corpus_summary()}
+            "corpus": _corpus_summary(), "bank": qbank.stats()["by_section"]}
+
+
+@api.get("/bank/stats")
+def api_bank_stats():
+    return qbank.stats()
+
+
+@api.get("/bank/list")
+def api_bank_list(section: str = "", chapter: str = "", subtopic: str = "", difficulty: str = "", q: str = "",
+                  offset: int = 0, limit: int = 30):
+    rows = list(reversed(qbank.load()))   # newest first
+    used = qbank.usage()
+    if section:
+        rows = [r for r in rows if r.get("section") == section]
+    if chapter:
+        rows = [r for r in rows if (r.get("chapter") or "?") == chapter]
+    if subtopic:
+        rows = [r for r in rows if (r.get("subtopic") or "?") == subtopic]
+    if difficulty:
+        rows = [r for r in rows if str(r.get("difficulty")) == difficulty]
+    if q:
+        ql = q.lower()
+        rows = [r for r in rows if ql in (r.get("stem") or "").lower() or ql in (r.get("subtopic") or "").lower()
+                or ql == r.get("id")]
+    page = []
+    for r in rows[offset:offset + limit]:
+        page.append({k: r.get(k) for k in ("id", "source", "created", "job_id", "job_qno", "section", "chapter",
+                     "subtopic", "difficulty", "stem", "options", "answer", "solution", "passage", "figure",
+                     "option_figs", "verification", "author_model")} | {"used_in": used.get(r["id"], [])})
+    return {"total": len(rows), "items": page, "stats": qbank.stats(), "tree": _bank_tree()}
+
+
+def _bank_tree() -> dict:
+    """section -> chapter -> subtopic -> count, for the bank browser's sidebar."""
+    tree: dict = {}
+    for r in qbank.load():
+        ch = tree.setdefault(r["section"], {}).setdefault(r.get("chapter") or "?", {})
+        st = r.get("subtopic") or "?"
+        ch[st] = ch.get(st, 0) + 1
+    return tree
+
+
+@api.get("/bank/figs/{name}")
+def api_bank_fig(name: str):
+    f = (qbank.BANK / "figs" / name).resolve()
+    if f.parent != (qbank.BANK / "figs").resolve() or not f.is_file():
+        raise HTTPException(404)
+    return FileResponse(f)
 
 
 @api.post("/jobs")
@@ -404,10 +464,22 @@ def api_create_job(data: dict = Body(...)):
         except ValueError:
             raise HTTPException(400, "Section counts must look like Physics=3,Chemistry=3")
     seed = str(data.get("seed") or "").strip()
+    source = data.get("source") or "new"
+    if source not in ("new", "direct", "variant", "mixed"):
+        raise HTTPException(400, f"unknown question source {source!r}")
+    mix = None
+    if source == "mixed":
+        try:
+            mix = {k: int((data.get("mix") or {}).get(k, 0)) for k in ("direct", "variant", "new")}
+        except (TypeError, ValueError):
+            raise HTTPException(400, "mix must be whole-number percentages")
+        if sum(mix.values()) != 100 or min(mix.values()) < 0:
+            raise HTTPException(400, "Mixed percentages must add up to 100")
     cfg = jobs.JobConfig(title=data.get("title") or "BITSAT Practice Paper", subtitle=data.get("subtitle") or "",
                          pattern_id=data.get("pattern_id") or "bitsat_130", profile=data.get("profile") or None,
                          difficulty=data.get("difficulty") or "match", run_critic=bool(data.get("run_critic", True)),
                          check_figures=bool(data.get("check_figures", True)), counts=counts,
+                         add_to_bank=bool(data.get("add_to_bank", True)), source=source, mix=mix,
                          **({"seed": int(seed)} if seed.isdigit() else {}))
     return {"id": jobs.start(cfg).id}
 

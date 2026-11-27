@@ -20,11 +20,11 @@
   ]
  },
  "status": "ok",
- "stem": "Consider the following atmospheric chemical reactions:\n\n(I) $\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$\n\n(II) $\\text{SO}_2(g) + \\text{O}_3(g) \\rightarrow \\text{SO}_3(g) + \\text{O}_2(g)$\n\n(III) $\\text{NO}_2(g) \\xrightarrow{h\\nu} \\text{NO}(g) + \\text{O}(g)$\n\nThese reactions are primarily associated with which environmental phenomena, respectively?",
+ "stem": "Match each atmospheric reaction with the environmental effect it is associated with, respectively:\n\n(I) $\\text{CF}_2\\text{Cl}_2(g) \\xrightarrow{h\\nu} \\text{CF}_2\\text{Cl}\\cdot(g) + \\text{Cl}\\cdot(g)$\n\n(II) $\\text{SO}_3(g) + \\text{H}_2\\text{O}(l) \\rightarrow \\text{H}_2\\text{SO}_4(aq)$\n\n(III) $\\text{CH}_3\\text{CO}_3\\cdot(g) + \\text{NO}_2(g) \\rightarrow \\text{CH}_3\\text{CO}_3\\text{NO}_2(g)$",
  "options": [
   "Ozone depletion, acid rain, and photochemical smog",
-  "Ozone depletion, photochemical smog, and acid rain",
   "Acid rain, ozone depletion, and photochemical smog",
+  "Ozone depletion, photochemical smog, and acid rain",
   "Photochemical smog, acid rain, and ozone depletion"
  ],
  "answer": "A",
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Reaction I: ClO• + O → Cl• + O2 is the chlorine radical catalytic cycle destroying stratospheric ozone (ozone depletion). Reaction II: SO2 oxidized by O3 to SO3, which forms H2SO4 with moisture (acid rain). Reaction III: photolysis of NO2 gives NO + O, the initiating step of photochemical smog. Order matches option A.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "(I) releases Cl·, causing ozone depletion; (II) forms H₂SO₄, associated with acid rain; (III) forms PAN, associated with photochemical smog.",
    "answer": "A",
-   "confidence": 0.98,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Reaction (I): $\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$ represents the regeneration of reactive chlorine free radicals ($\\dot{\\text{Cl}}$) from chlorine monoxide radicals in the stratosphere, maintaining the catalytic cycle of ozone depletion.\n\n2. Reaction (II): $\\text{SO}_2(g) + \\text{O}_3(g) \\rightarrow \\text{SO}_3(g) + \\text{O}_2(g)$ represents the ozone-promoted oxidation of $\\text{SO}_2$ to $\\text{SO}_3$ in the troposphere. The resulting $\\text{SO}_3$ combines with rain droplets to form $\\text{H}_2\\text{SO}_4$, causing acid rain.\n\n3. Reaction (III): $\\text{NO}_2(g) \\xrightarrow{h\\nu} \\text{NO}(g) + \\text{O}(g)$ is the primary photochemical initiation step in the formation of photochemical smog, generating nascent oxygen atoms that subsequently react with $\\text{O}_2$ to produce tropospheric ozone and peroxyacetyl nitrate (PAN).\n\nHence, the correct sequence is ozone depletion, acid rain, and photochemical smog.\n\nIndependent check: Reaction I: ClO• + O → Cl• + O2 is the chlorine radical catalytic cycle destroying stratospheric ozone (ozone depletion). Reaction II: SO2 oxidized by O3 to SO3, which forms H2SO4 with moisture (acid rain). Reaction III: photolysis of NO2 gives NO + O, the initiating step of photochemical smog. Order matches option A.",
+ "working": "(I) UV photolysis of a chlorofluorocarbon releases a chlorine radical, which catalyses stratospheric ozone depletion.\n(II) $\\text{SO}_3 + \\text{H}_2\\text{O} \\rightarrow \\text{H}_2\\text{SO}_4$: sulfuric acid contributes to acid rain.\n(III) $\\text{CH}_3\\text{CO}_3\\cdot + \\text{NO}_2 \\rightarrow \\text{CH}_3\\text{CO}_3\\text{NO}_2$: formation of PAN is associated with photochemical smog.\n\nIndependent check: (I) releases Cl·, causing ozone depletion; (II) forms H₂SO₄, associated with acid rain; (III) forms PAN, associated with photochemical smog.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Consider the following atmospheric chemical reactions:\n\n(I) $\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$\n\n(II) $\\text{SO}_2(g) + \\text{O}_3(g) \\rightarrow \\text{SO}_3(g) + \\text{O}_2(g)$\n\n(III) $\\text{NO}_2(g) \\xrightarrow{h\\nu} \\text{NO}(g) + \\text{O}(g)$\n\nThese reactions are primarily associated with which environmental phenomena, respectively?",
+  "stem": "Match each atmospheric reaction with the environmental effect it is associated with, respectively:\n\n(I) $\\text{CF}_2\\text{Cl}_2(g) \\xrightarrow{h\\nu} \\text{CF}_2\\text{Cl}\\cdot(g) + \\text{Cl}\\cdot(g)$\n\n(II) $\\text{SO}_3(g) + \\text{H}_2\\text{O}(l) \\rightarrow \\text{H}_2\\text{SO}_4(aq)$\n\n(III) $\\text{CH}_3\\text{CO}_3\\cdot(g) + \\text{NO}_2(g) \\rightarrow \\text{CH}_3\\text{CO}_3\\text{NO}_2(g)$",
   "options": [
    "Ozone depletion, acid rain, and photochemical smog",
-   "Ozone depletion, photochemical smog, and acid rain",
    "Acid rain, ozone depletion, and photochemical smog",
+   "Ozone depletion, photochemical smog, and acid rain",
    "Photochemical smog, acid rain, and ozone depletion"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "1. Reaction (I): $\\text{Cl}\\dot{\\text{O}}(g) + \\text{O}(g) \\rightarrow \\dot{\\text{Cl}}(g) + \\text{O}_2(g)$ represents the regeneration of reactive chlorine free radicals ($\\dot{\\text{Cl}}$) from chlorine monoxide radicals in the stratosphere, maintaining the catalytic cycle of ozone depletion.\n\n2. Reaction (II): $\\text{SO}_2(g) + \\text{O}_3(g) \\rightarrow \\text{SO}_3(g) + \\text{O}_2(g)$ represents the ozone-promoted oxidation of $\\text{SO}_2$ to $\\text{SO}_3$ in the troposphere. The resulting $\\text{SO}_3$ combines with rain droplets to form $\\text{H}_2\\text{SO}_4$, causing acid rain.\n\n3. Reaction (III): $\\text{NO}_2(g) \\xrightarrow{h\\nu} \\text{NO}(g) + \\text{O}(g)$ is the primary photochemical initiation step in the formation of photochemical smog, generating nascent oxygen atoms that subsequently react with $\\text{O}_2$ to produce tropospheric ozone and peroxyacetyl nitrate (PAN).\n\nHence, the correct sequence is ozone depletion, acid rain, and photochemical smog.",
-  "distractor_notes": "Option B: Confuses reaction (II) with photochemical smog because ozone is present, and mistakenly assigns the photolysis of $\\text{NO}_2$ to acid rain.\nOption C: Mistakenly assumes reaction (II) causes ozone depletion because $\\text{O}_3$ is consumed, and confuses radical regeneration with acid rain.\nOption D: Inverts reactions (I) and (III), confusing stratospheric radical chemistry with tropospheric photochemical smog initiation.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "(I) UV photolysis of a chlorofluorocarbon releases a chlorine radical, which catalyses stratospheric ozone depletion.\n(II) $\\text{SO}_3 + \\text{H}_2\\text{O} \\rightarrow \\text{H}_2\\text{SO}_4$: sulfuric acid contributes to acid rain.\n(III) $\\text{CH}_3\\text{CO}_3\\cdot + \\text{NO}_2 \\rightarrow \\text{CH}_3\\text{CO}_3\\text{NO}_2$: formation of PAN is associated with photochemical smog.",
+  "distractor_notes": "B assigns the chlorofluorocarbon reaction to acid rain and sulfuric acid formation to ozone depletion; C swaps the effects of sulfuric acid and PAN formation; D incorrectly assigns the chlorofluorocarbon reaction to smog and PAN formation to ozone depletion."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -1,0 +1,68 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Addition theorem",
+  "archetype": "inclusion-exclusion counting",
+  "brief": "Probability of at least one of several independent events using complement counting; e.g., system reliability or 'at least one'.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:93",
+   "2024s2:125",
+   "2026s2:98"
+  ]
+ },
+ "status": "ok",
+ "stem": "A system has three parallel paths, each with two components in series. The component success probabilities on the paths are $(\\dfrac12,\\dfrac23)$, $(\\dfrac34,\\dfrac45)$ and $(\\dfrac13,\\dfrac12)$, respectively. All six components work independently. Find the probability that the system works.",
+ "options": [
+  "$\\dfrac29$",
+  "$\\dfrac79$",
+  "$\\dfrac{11}{15}$",
+  "$\\dfrac9{10}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Series-path success probabilities are 1/3, 3/5, and 1/6. Thus the system failure probability is (2/3)(2/5)(5/6)=2/9, so its success probability is 1−2/9=7/9.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(A_1)=\\dfrac13,\\quad P(A_2)=\\dfrac35,\\quad P(A_3)=\\dfrac16$\n$P(A_1\\cup A_2\\cup A_3)=1-\\prod_{i=1}^3(1-P(A_i))$\n$=1-\\left(\\dfrac23\\right)\\left(\\dfrac25\\right)\\left(\\dfrac56\\right)=\\dfrac79$\n\nIndependent check: Series-path success probabilities are 1/3, 3/5, and 1/6. Thus the system failure probability is (2/3)(2/5)(5/6)=2/9, so its success probability is 1−2/9=7/9.",
+ "solution": "For each series path, multiply the component success probabilities: $P_1=\\frac13$, $P_2=\\frac35$, and $P_3=\\frac16$. The parallel system fails only if all three paths fail:\n$$P(\\text{works})=1-\\left(1-\\frac13\\right)\\left(1-\\frac35\\right)\\left(1-\\frac16\\right)=1-\\frac29=\\frac79.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A system has three parallel paths, each with two components in series. The component success probabilities on the paths are $(\\dfrac12,\\dfrac23)$, $(\\dfrac34,\\dfrac45)$ and $(\\dfrac13,\\dfrac12)$, respectively. All six components work independently. Find the probability that the system works.",
+  "options": [
+   "$\\dfrac29$",
+   "$\\dfrac{11}{15}$",
+   "$\\dfrac79$",
+   "$\\dfrac9{10}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$P(A_1)=\\dfrac13,\\quad P(A_2)=\\dfrac35,\\quad P(A_3)=\\dfrac16$\n$P(A_1\\cup A_2\\cup A_3)=1-\\prod_{i=1}^3(1-P(A_i))$\n$=1-\\left(\\dfrac23\\right)\\left(\\dfrac25\\right)\\left(\\dfrac56\\right)=\\dfrac79$",
+  "distractor_notes": "A: gives the probability that all three paths fail.\nB: counts only the first two paths.\nD: adds the third path's probability without subtracting its overlap with the first two."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 147,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 147,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "restricted arrangement",
+  "brief": "Arrange letters of a word (with repetition) so that vowels come together or two letters never adjacent; standard block/complement method — easy-moderate.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:92",
+   "2024s2:104",
+   "2026s2:96"
+  ]
+ },
+ "status": "ok",
+ "stem": "The vowels in the word BALLOON are to occur consecutively. How many such arrangements of its letters are possible?",
+ "options": [
+  "$60$",
+  "$90$",
+  "$360$",
+  "$180$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Treat the consecutive vowels AOO as one block. Arrange this block with B, L, L, N in 5!/2! ways, and arrange the vowels within the block in 3!/2! ways. Total = 60 × 3 = 180.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Treat $AOO$ as one block: $\\dfrac{5!}{2!}\\cdot\\dfrac{3!}{2!}=60\\cdot3=180$.\n\nIndependent check: Treat the consecutive vowels AOO as one block. Arrange this block with B, L, L, N in 5!/2! ways, and arrange the vowels within the block in 3!/2! ways. Total = 60 × 3 = 180.",
+ "solution": "Treat the consecutive vowels $AOO$ as one block. The five objects (the block, $B$, $L$, $L$, $N$) can be arranged in $\\frac{5!}{2!}$ ways, and the vowels within the block in $\\frac{3!}{2!}$ ways.\n$$\\frac{5!}{2!}\\cdot\\frac{3!}{2!}=60\\cdot3=180$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The vowels in the word BALLOON are to occur consecutively. How many such arrangements of its letters are possible?",
+  "options": [
+   "$60$",
+   "$90$",
+   "$180$",
+   "$360$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Treat $AOO$ as one block: $\\dfrac{5!}{2!}\\cdot\\dfrac{3!}{2!}=60\\cdot3=180$.",
+  "distractor_notes": "A: forgets to arrange the vowels within their block. B: incorrectly divides the count by an extra factor of $2$. D: treats the repeated $L$s as distinct."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

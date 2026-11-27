@@ -1,0 +1,70 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Classical probability",
+  "archetype": "direct computation",
+  "brief": "Coins/dice classical probability: count favourable outcomes over total, e.g. at least one head or a sum condition on two dice",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:138",
+   "2026s1:98",
+   "2026s2:98"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two fair dice are rolled. What is the probability that the sum of the numbers obtained is prime?",
+ "options": [
+  "$\\dfrac{5}{11}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{5}{12}$",
+  "$\\dfrac{7}{12}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Prime sums are 2, 3, 5, 7, and 11, with 1+2+4+6+2 = 15 outcomes out of 36. Thus the probability is 15/36 = 5/12.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Prime sums: $2,3,5,7,11$.\\nFavourable outcomes $=1+2+4+6+2=15$.\\n$P=\\dfrac{15}{36}=\\dfrac{5}{12}$.\n\nIndependent check: Prime sums are 2, 3, 5, 7, and 11, with 1+2+4+6+2 = 15 outcomes out of 36. Thus the probability is 15/36 = 5/12.",
+ "solution": "Prime sums are $2, 3, 5, 7, 11$, occurring in $1+2+4+6+2=15$ outcomes out of $36$ equally likely outcomes.\n$$P(\\text{prime sum})=\\frac{15}{36}=\\frac{5}{12}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two fair dice are rolled. What is the probability that the sum of the numbers obtained is prime?",
+  "options": [
+   "$\\dfrac{5}{11}$",
+   "$\\dfrac{5}{12}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{7}{12}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Prime sums: $2,3,5,7,11$.\\nFavourable outcomes $=1+2+4+6+2=15$.\\n$P=\\dfrac{15}{36}=\\dfrac{5}{12}$.",
+  "distractor_notes": "A: treats the possible sums as equally likely.\\nC: counts all odd sums.\\nD: overcounts favourable dice outcomes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

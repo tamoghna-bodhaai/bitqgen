@@ -1,0 +1,68 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Field from potential",
+  "archetype": "differentiate potential",
+  "brief": "V(x) given as polynomial function (e.g. ax² − bx); find electric field as function of x, locate point where E = 0, or evaluate field at a point by differentiation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:16",
+   "2021:9",
+   "2022:14"
+  ]
+ },
+ "status": "ok",
+ "stem": "The potential along the $x$-axis is $V(x)=(x^3-6x^2+9x)$ V, where $x$ is measured in metres. At which position $x>2$ m does the electric field vanish?",
+ "options": [
+  "$1$ m",
+  "$3$ m",
+  "$2$ m",
+  "$4$ m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "E_x=-dV/dx=-3x^2+12x-9=-3(x-1)(x-3). For x>2, E_x=0 at x=3 m.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E_x=-\\dfrac{dV}{dx}=-(3x^2-12x+9)=-3(x-1)(x-3)\\ \\text{V m}^{-1}$.\n$E_x=0\\Rightarrow x=1\\ \\text{m}$ or $3\\ \\text{m}$.\nFor $x>2\\ \\text{m}$: $x=3\\ \\text{m}$.\n\nIndependent check: E_x=-dV/dx=-3x^2+12x-9=-3(x-1)(x-3). For x>2, E_x=0 at x=3 m.",
+ "solution": "The electric field is $E_x=-\\dfrac{dV}{dx}$.\n$$E_x=-3x^2+12x-9=-3(x-1)(x-3)=0$$\nThus $x=1$ m or $x=3$ m; the condition $x>2$ selects $x=3$ m.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The potential along the $x$-axis is $V(x)=(x^3-6x^2+9x)$ V, where $x$ is measured in metres. At which position $x>2$ m does the electric field vanish?",
+  "options": [
+   "$1$ m",
+   "$2$ m",
+   "$3$ m",
+   "$4$ m"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$E_x=-\\dfrac{dV}{dx}=-(3x^2-12x+9)=-3(x-1)(x-3)\\ \\text{V m}^{-1}$.\n$E_x=0\\Rightarrow x=1\\ \\text{m}$ or $3\\ \\text{m}$.\nFor $x>2\\ \\text{m}$: $x=3\\ \\text{m}$.",
+  "distractor_notes": "A: Selects the other zero of the field, outside the stated range. B: Mistakes a stationary point of the potential for the field's zero. D: Makes an error solving the quadratic."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

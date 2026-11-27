@@ -1,0 +1,70 @@
+{
+ "qno": 100,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 100,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "find wrong term",
+  "brief": "Alpha-numeric series combining letters with positional values and numbers following two interleaved rules; one term breaks the pattern — ask which term is wrong.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:83",
+   "2023s2:79",
+   "2022:73"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "One term in the following $\\alpha-numeric$ series is wrong. Identify it: D-3, I-4, H-8, M-10, L-15, Q-18, P-24, U-27.",
+ "options": [
+  "D-3",
+  "M-10",
+  "Q-18",
+  "U-27"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Letters follow +5, −1 alternately. Numbers follow +1, +4, +2, +5, +3, +6, +4, so the last number should be 28, not 27.",
+   "answer": "D",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Odd- and even-position letters each advance by 4: D-H-L-P and I-M-Q-U. Odd-position numbers rise by +5, +7, +9: 3, 8, 15, 24. Even-position numbers rise by +6, +8, +10: 4, 10, 18, 28. Thus the last term should be U-28, so U-27 is wrong.\n\nIndependent check: Letters follow +5, −1 alternately. Numbers follow +1, +4, +2, +5, +3, +6, +4, so the last number should be 28, not 27.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "One term in the following $\\alpha-numeric$ series is wrong. Identify it: D-3, I-4, H-8, M-10, L-15, Q-18, P-24, U-27.",
+  "options": [
+   "D-3",
+   "M-10",
+   "Q-18",
+   "U-27"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Odd- and even-position letters each advance by 4: D-H-L-P and I-M-Q-U. Odd-position numbers rise by +5, +7, +9: 3, 8, 15, 24. Even-position numbers rise by +6, +8, +10: 4, 10, 18, 28. Thus the last term should be U-28, so U-27 is wrong.",
+  "distractor_notes": "D-3 follows both patterns; M-10 follows both patterns; Q-18 follows both patterns."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

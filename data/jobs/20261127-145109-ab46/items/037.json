@@ -1,0 +1,70 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength of accelerated particles",
+  "archetype": "single-formula numerical",
+  "brief": "Find the de Broglie wavelength of an electron (or alpha particle) accelerated through a given potential difference using λ = h/√(2meV).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:17",
+   "2026s1:18",
+   "2025s1:12"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An electron is accelerated from rest through a potential difference of $150$ V. Find its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_e=9.11\\times10^{-31}$ kg and $e=1.60\\times10^{-19}$ C.",
+ "options": [
+  "$0.50\\times10^{-10}$ m",
+  "$1.50\\times10^{-10}$ m",
+  "$1.00\\times10^{-10}$ m",
+  "$2.00\\times10^{-10}$ m"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\lambda=\\frac{h}{\\sqrt{2m_e eV}}=\\frac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(150)}}\\approx1.00\\times10^{-10}\\,\\text{m}.\\)",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}$\\\\\n$\\lambda=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(150)}}$\\\\\n$\\lambda\\approx1.00\\times10^{-10}\\ \\text{m}$\n\nIndependent check: \\(\\lambda=\\frac{h}{\\sqrt{2m_e eV}}=\\frac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(150)}}\\approx1.00\\times10^{-10}\\,\\text{m}.\\)",
+ "solution": "The electron gains kinetic energy $eV$, so its momentum is $p=\\sqrt{2m_e eV}$ and its de Broglie wavelength is\n$$\\lambda=\\frac{h}{\\sqrt{2m_e eV}}=\\frac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(150)}}\\approx1.00\\times10^{-10}\\,\\text{m}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An electron is accelerated from rest through a potential difference of $150$ V. Find its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_e=9.11\\times10^{-31}$ kg and $e=1.60\\times10^{-19}$ C.",
+  "options": [
+   "$0.50\\times10^{-10}$ m",
+   "$1.00\\times10^{-10}$ m",
+   "$1.50\\times10^{-10}$ m",
+   "$2.00\\times10^{-10}$ m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}$\\\\\n$\\lambda=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(150)}}$\\\\\n$\\lambda\\approx1.00\\times10^{-10}\\ \\text{m}$",
+  "distractor_notes": "A: approximately halves the calculated wavelength. C: uses an overly small momentum. D: approximately doubles the calculated wavelength."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

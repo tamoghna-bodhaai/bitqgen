@@ -1,0 +1,68 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Coulomb's law – equilibrium of charges",
+  "archetype": "vector-sum equilibrium",
+  "brief": "Two fixed point charges a given distance apart; find where along the line a third charge must be placed so the net force on it is zero.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:1",
+   "2025s1:16",
+   "2021:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "Two fixed charges, $+4\\ \\mu\\text{C}$ and $+1\\ \\mu\\text{C}$, are $30$ cm apart. How far from the $+4\\ \\mu\\text{C}$ charge should a nonzero third charge be placed between them so that the net force on it is zero?",
+ "options": [
+  "$10$ cm",
+  "$15$ cm",
+  "$25$ cm",
+  "$20$ cm"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Between the charges, the electric fields oppose. Set their magnitudes equal: \\(4/x^2=1/(30-x)^2\\), giving \\(x=20\\) cm from the \\(+4\\ \\mu\\text{C}\\) charge.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Let $x$ be the distance from the $+4\\ \\mu\\text{C}$ charge.\n$$\\frac{k(4)}{x^2}=\\frac{k(1)}{(30-x)^2}$$\n$$\\frac{2}{x}=\\frac{1}{30-x}\\quad\\Rightarrow\\quad x=20\\text{ cm}$$\n\nIndependent check: Between the charges, the electric fields oppose. Set their magnitudes equal: \\(4/x^2=1/(30-x)^2\\), giving \\(x=20\\) cm from the \\(+4\\ \\mu\\text{C}\\) charge.",
+ "solution": "Between the charges, the electric fields oppose. For zero net force, their magnitudes must be equal:\n$$\\frac{k(4)}{x^2}=\\frac{k(1)}{(30-x)^2}\\quad\\Rightarrow\\quad \\frac{2}{x}=\\frac{1}{30-x}$$\nSolving gives $x=20\\text{ cm}$ from the $+4\\,\\mu\\text{C}$ charge.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two fixed charges, $+4\\ \\mu\\text{C}$ and $+1\\ \\mu\\text{C}$, are $30$ cm apart. How far from the $+4\\ \\mu\\text{C}$ charge should a nonzero third charge be placed between them so that the net force on it is zero?",
+  "options": [
+   "$10$ cm",
+   "$15$ cm",
+   "$20$ cm",
+   "$25$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Let $x$ be the distance from the $+4\\ \\mu\\text{C}$ charge.\n$$\\frac{k(4)}{x^2}=\\frac{k(1)}{(30-x)^2}$$\n$$\\frac{2}{x}=\\frac{1}{30-x}\\quad\\Rightarrow\\quad x=20\\text{ cm}$$",
+  "distractor_notes": "A: Uses the charge ratio as a distance ratio rather than its square root. B: Assumes the equilibrium point is at the midpoint. D: Reverses the distance ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

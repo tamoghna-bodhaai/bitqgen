@@ -1,0 +1,68 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Vector triple product",
+  "archetype": "standard identity",
+  "brief": "Hard: simplify/evaluate an expression like a×(b×c) + b×(c×a) or prove a Jacobi-identity style relation; requires careful identity use and possibly given magnitudes/angles.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:94",
+   "2022:93",
+   "2026s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $\\vec a,\\vec b,\\vec c$ are unit vectors and $\\vec a+\\vec b+\\vec c=\\vec 0$, then $\\left|\\vec a\\times(\\vec b\\times\\vec c)+\\vec b\\times(\\vec c\\times\\vec a)+2\\vec c\\times(\\vec a\\times\\vec b)\\right|$ equals",
+ "options": [
+  "$\\dfrac{\\sqrt{3}}{2}$",
+  "$\\dfrac{1}{2}$",
+  "$0$",
+  "$\\sqrt{3}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since |a+b|²=|c|²=1, a·b=−1/2; cyclically, all pairwise dot products are −1/2. The vector inside the norm simplifies by the triple-product identity to −(a−b)/2. As |a−b|=√3, its magnitude is √3/2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "By the cyclic identity, $\\vec a\\times(\\vec b\\times\\vec c)+\\vec b\\times(\\vec c\\times\\vec a)+\\vec c\\times(\\vec a\\times\\vec b)=\\vec 0$; the expression reduces to $\\vec c\\times(\\vec a\\times\\vec b)$. $\\vec a\\cdot\\vec b=-\\dfrac12$, so $|\\vec a\\times\\vec b|=\\dfrac{\\sqrt3}{2}$. Since $\\vec c\\perp(\\vec a\\times\\vec b)$, the required magnitude is $\\dfrac{\\sqrt3}{2}$.\n\nIndependent check: Since |a+b|²=|c|²=1, a·b=−1/2; cyclically, all pairwise dot products are −1/2. The vector inside the norm simplifies by the triple-product identity to −(a−b)/2. As |a−b|=√3, its magnitude is √3/2.",
+ "solution": "Using $\\vec x\\times(\\vec y\\times\\vec z)=\\vec y(\\vec x\\cdot\\vec z)-\\vec z(\\vec x\\cdot\\vec y)$, the cyclic sum of the three nested cross products is $\\vec 0$. Hence the given vector reduces to $\\vec c\\times(\\vec a\\times\\vec b)=-\\dfrac12(\\vec a-\\vec b)$, since all pairwise dot products are $-\\dfrac12$.\n$$\\left|\\vec c\\times(\\vec a\\times\\vec b)\\right|=\\frac12|\\vec a-\\vec b|=\\frac12\\sqrt{2-2\\vec a\\cdot\\vec b}=\\frac{\\sqrt3}{2}.$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "If $\\vec a,\\vec b,\\vec c$ are unit vectors and $\\vec a+\\vec b+\\vec c=\\vec 0$, then $\\left|\\vec a\\times(\\vec b\\times\\vec c)+\\vec b\\times(\\vec c\\times\\vec a)+2\\vec c\\times(\\vec a\\times\\vec b)\\right|$ equals",
+  "options": [
+   "$0$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{\\sqrt{3}}{2}$",
+   "$\\sqrt{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "By the cyclic identity, $\\vec a\\times(\\vec b\\times\\vec c)+\\vec b\\times(\\vec c\\times\\vec a)+\\vec c\\times(\\vec a\\times\\vec b)=\\vec 0$; the expression reduces to $\\vec c\\times(\\vec a\\times\\vec b)$. $\\vec a\\cdot\\vec b=-\\dfrac12$, so $|\\vec a\\times\\vec b|=\\dfrac{\\sqrt3}{2}$. Since $\\vec c\\perp(\\vec a\\times\\vec b)$, the required magnitude is $\\dfrac{\\sqrt3}{2}$.",
+  "distractor_notes": "A: applies the cyclic identity despite the extra copy of one term; B: uses $|\\vec a\\cdot\\vec b|$ instead of the cross-product magnitude; D: omits the factor $\\dfrac12$ in $|\\vec a\\times\\vec b|$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

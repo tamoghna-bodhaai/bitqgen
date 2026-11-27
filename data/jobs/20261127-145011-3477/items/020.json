@@ -1,0 +1,70 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Series LCR circuit impedance",
+  "archetype": "single-formula numerical",
+  "brief": "Series LCR with given R, L, C and source frequency; compute the impedance (and optionally power factor) by direct formula.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:30",
+   "2023s1:13",
+   "2024s1:29"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A series LCR circuit has resistance $12\\ \\Omega$, inductance $0.10$ H and capacitance $2.0\\times10^{-3}$ F. If its angular frequency is $100$ rad s$^{-1}$, what is its impedance?",
+ "options": [
+  "$13\\ \\Omega$",
+  "$12\\ \\Omega$",
+  "$5\\ \\Omega$",
+  "$17\\ \\Omega$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "X_L=\u001b[? no need. Compute X_L=100(0.10)=10 Ω; X_C=1/(100·0.002)=5 Ω. Hence Z=√(12²+(10−5)²)=13 Ω.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$X_L=\\omega L=10\\ \\Omega$, $X_C=\\dfrac{1}{\\omega C}=5\\ \\Omega$\\n$Z=\\sqrt{R^2+(X_L-X_C)^2}$\\n$Z=\\sqrt{12^2+5^2}=13\\ \\Omega$\n\nIndependent check: X_L=\u001b[? no need. Compute X_L=100(0.10)=10 Ω; X_C=1/(100·0.002)=5 Ω. Hence Z=√(12²+(10−5)²)=13 Ω.",
+ "solution": "For a series LCR circuit, $Z=\\sqrt{R^2+(X_L-X_C)^2}$, where $X_L=\\omega L=10\\,\\Omega$ and $X_C=\\dfrac{1}{\\omega C}=5\\,\\Omega$.\n$$Z=\\sqrt{12^2+(10-5)^2}=13\\,\\Omega$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A series LCR circuit has resistance $12\\ \\Omega$, inductance $0.10$ H and capacitance $2.0\\times10^{-3}$ F. If its angular frequency is $100$ rad s$^{-1}$, what is its impedance?",
+  "options": [
+   "$5\\ \\Omega$",
+   "$12\\ \\Omega$",
+   "$13\\ \\Omega$",
+   "$17\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$X_L=\\omega L=10\\ \\Omega$, $X_C=\\dfrac{1}{\\omega C}=5\\ \\Omega$\\n$Z=\\sqrt{R^2+(X_L-X_C)^2}$\\n$Z=\\sqrt{12^2+5^2}=13\\ \\Omega$",
+  "distractor_notes": "A: Gives the net reactance, not the impedance. B: Uses only the resistance. D: Adds the resistance and net reactance directly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

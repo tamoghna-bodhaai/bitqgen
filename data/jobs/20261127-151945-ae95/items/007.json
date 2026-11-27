@@ -1,0 +1,71 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength of accelerated particles",
+  "archetype": "ratio comparison",
+  "brief": "Compare the de Broglie wavelengths of two particles accelerated through the same potential difference.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:11",
+   "2026s1:18",
+   "2023s1:26"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd6bf7bdc4e4a"
+ },
+ "status": "ok",
+ "stem": "Two ions $X$ and $Y$, of masses $5m$ and $20m$ and charges $+e$ and $+4e$, respectively, start from rest and are accelerated through the same potential difference. What is the ratio of their de Broglie wavelengths, $\\dfrac{\\lambda_X}{\\lambda_Y}$?",
+ "options": [
+  "$\\dfrac{1}{4}$",
+  "$2$",
+  "$16$",
+  "$4$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an ion accelerated from rest through potential difference V, p=√(2mqV) and λ=h/p. Thus λX/λY=√[(20m·4e)/(5m·e)]=4.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$.\n$\\dfrac{\\lambda_X}{\\lambda_Y}=\\sqrt{\\dfrac{m_Yq_Y}{m_Xq_X}}=\\sqrt{\\dfrac{20m\\cdot4e}{5m\\cdot e}}=4$.\n\nIndependent check: For an ion accelerated from rest through potential difference V, p=√(2mqV) and λ=h/p. Thus λX/λY=√[(20m·4e)/(5m·e)]=4.",
+ "solution": "For an ion accelerated from rest through potential difference $V$, $\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$.\n$$\\dfrac{\\lambda_X}{\\lambda_Y}=\\sqrt{\\dfrac{m_Yq_Y}{m_Xq_X}}=\\sqrt{\\dfrac{20m\\cdot4e}{5m\\cdot e}}=4$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two ions $X$ and $Y$, of masses $5m$ and $20m$ and charges $+e$ and $+4e$, respectively, start from rest and are accelerated through the same potential difference. What is the ratio of their de Broglie wavelengths, $\\dfrac{\\lambda_X}{\\lambda_Y}$?",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$2$",
+   "$4$",
+   "$16$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$.\n$\\dfrac{\\lambda_X}{\\lambda_Y}=\\sqrt{\\dfrac{m_Yq_Y}{m_Xq_X}}=\\sqrt{\\dfrac{20m\\cdot4e}{5m\\cdot e}}=4$.",
+  "distractor_notes": "A: takes the reciprocal of the required ratio.\nB: ignores the difference in charge and uses only the mass ratio.\nD: omits the square root when comparing the mass-charge products."
+ },
+ "variant_of": "gd6bf7bdc4e4a",
+ "author_model": "openai/gpt-6-luna-pro"
+}

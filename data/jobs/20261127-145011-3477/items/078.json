@@ -1,0 +1,98 @@
+{
+ "qno": 78,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 78,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "R/S configuration in Fischer projection",
+  "archetype": "match the column",
+  "brief": "Figure-based Fischer projection: assign R/S configuration to each stereocentre and match with given options",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:44",
+   "2025s1:44",
+   "2024s2:53"
+  ],
+  "origin": "variant",
+  "bank_ref": "g8d0738bd1ccf"
+ },
+ "status": "flagged",
+ "stem": "For the Fischer projection shown, match stereocentres I and II with their configurations.",
+ "options": [
+  "I: R; II: R",
+  "I: S; II: S",
+  "I: S; II: R",
+  "I: R; II: S"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q078_stem_v2.png",
+  "width_pct": 31,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The figure is not a Fischer projection and shows no wedge/dash stereochemistry. Both stereocentres are unspecified, so no option is uniquely determined.",
+   "answer": "NONE",
+   "confidence": 0.99,
+   "multiple_correct": true,
+   "issues": [
+    "The figure does not show a Fischer projection or otherwise specify the stereochemistry at either centre.",
+    "The stereocentres are not labelled I and II."
+   ],
+   "difficulty": 1
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "Molecule: OHC–CHCl–CH(OH)–CH3. Take I = C2 (Cl-bearing), II = C3 (OH-bearing) per IUPAC numbering. Applying Fischer convention (near-horizontal bonds toward viewer, near-vertical away; implicit H away): C-I priorities Cl > CHO [(O,O,H)] > CH(OH)CH3 [(O,C,H)] > H; with H back, Cl(top)→CHO(lower-left)→C3(lower-right) is counterclockwise = S. C-II priorities OH > CHCl– [(Cl,C,H)] > CH3 > H; OH(bottom)→C2(upper-left)→CH3(upper-right) is clockwise = R. Hence I: S, II: R.",
+   "answer": "C",
+   "confidence": 0.6,
+   "multiple_correct": false,
+   "issues": [
+    "Figure is a bent zigzag skeletal drawing, not a standard Fischer projection (no vertical backbone/crosses); configurations are only assignable by assuming the Fischer convention (horizontal = front, vertical = back) stated in the text — as an ordinary flat skeletal structure it carries no stereochemical information.",
+    "Stereocentres are not labelled I and II in the figure; assignment relies on the natural IUPAC numbering (I = C2 bearing Cl, II = C3 bearing OH). If the labels were intended the other way, option B would result.",
+    "Hydrogens on the stereocentres are implicit, which is unusual for a Fischer projection where all four groups are normally shown."
+   ],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 3,
+ "notes": [
+  "unverified: solvers disagreed with the key after all revisions — review manually"
+ ],
+ "working": "At I: Cl $>$ CHO $>$ C(OH)(H)CH$_3$ $>$ H; $1\\to2\\to3$ is clockwise, and horizontal H requires inversion: S.\nAt II: OH $>$ C(Cl)(H)CHO $>$ CH$_3$ $>$ H; $1\\to2\\to3$ is clockwise, and horizontal H requires inversion: S.",
+ "solution": "At I, the priority order is Cl $>$ CHO $>$ C(OH)(H)CH$_3$ $>$ H. The $1\\to2\\to3$ order is clockwise, but horizontal H points forward, so inversion gives $S$.\nAt II, OH $>$ C(Cl)(H)CHO $>$ CH$_3$ $>$ H; the clockwise order is likewise inverted because H is horizontal, giving $S$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For the Fischer projection shown, match stereocentres I and II with their configurations.",
+  "options": [
+   "I: R; II: R",
+   "I: R; II: S",
+   "I: S; II: R",
+   "I: S; II: S"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a Fischer projection with a vertical four-carbon chain: CHO at the top, stereocentre I at the second position, stereocentre II at the third position, and CH3 at the bottom. At I, place Cl on the left and H on the right. At II, place OH on the left and H on the right. Use standard Fischer bonds: vertical bonds extend behind the plane and horizontal bonds project toward the viewer. Label the upper stereocentre I and the lower stereocentre II. Do not add wedges, dashes, or other substituents.",
+   "smiles": "O=CC(Cl)C(O)C"
+  },
+  "difficulty_estimate": 1,
+  "working": "At I: Cl $>$ CHO $>$ C(OH)(H)CH$_3$ $>$ H; $1\\to2\\to3$ is clockwise, and horizontal H requires inversion: S.\nAt II: OH $>$ C(Cl)(H)CHO $>$ CH$_3$ $>$ H; $1\\to2\\to3$ is clockwise, and horizontal H requires inversion: S.",
+  "distractor_notes": "A: Both centres are assigned the clockwise sense without inverting for horizontal H.\nB: Applies the horizontal-H inversion at only one centre.\nC: Applies the horizontal-H inversion at only the other centre."
+ },
+ "variant_of": "g8d0738bd1ccf",
+ "author_model": "openai/gpt-6-luna-pro"
+}

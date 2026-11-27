@@ -1,0 +1,71 @@
+{
+ "qno": 97,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 97,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism with possibility",
+  "brief": "Two statements (e.g., all A are B, some B are C) with four conclusion options including a 'possibility' conclusion; ask which conclusions follow.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:81",
+   "2024s2:85",
+   "2024s1:78"
+  ],
+  "origin": "variant",
+  "bank_ref": "g846381600b59"
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll kites are toys.\nSome toys are made of paper.\n\n**Conclusions:**\nI. Some paper items are toys.\nII. Some kites being made of paper is a possibility.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Some toys are paper, so some paper items are toys (I). A kite-paper overlap is consistent with both statements, so II is possible.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Some toys are made of paper, so some paper items are toys: I follows.\nNo statement excludes kites from the paper-made toys, so their overlap is possible: II follows.\n\nIndependent check: Some toys are paper, so some paper items are toys (I). A kite-paper overlap is consistent with both statements, so II is possible.",
+ "solution": "Some toys are made of paper; hence, some paper items are toys, so I follows.\nNo statement rules out kites being among the toys made of paper; therefore, some kites being made of paper is possible, and II follows.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statements:**\nAll kites are toys.\nSome toys are made of paper.\n\n**Conclusions:**\nI. Some paper items are toys.\nII. Some kites being made of paper is a possibility.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Some toys are made of paper, so some paper items are toys: I follows.\nNo statement excludes kites from the paper-made toys, so their overlap is possible: II follows.",
+  "distractor_notes": "A: Treats the possible overlap in II as impossible. B: Misses the definite relation in I. D: Misses both I and the permitted possibility in II."
+ },
+ "variant_of": "g846381600b59",
+ "author_model": "openai/gpt-6-luna"
+}

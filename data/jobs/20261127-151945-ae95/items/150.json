@@ -1,0 +1,71 @@
+{
+ "qno": 150,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 150,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Exponential limits",
+  "archetype": "limit evaluation",
+  "brief": "Evaluate a limit of the form (1 + a/x)^{bx} or (a^x − b^x)/x reduced to the e-limb standard form; require algebraic rewriting before applying the standard limit.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:100",
+   "2021:131",
+   "2025s1:110"
+  ],
+  "origin": "variant",
+  "bank_ref": "g241b7e1ffbe3"
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\frac{12^x-3^x}{x}$.",
+ "options": [
+  "$\\ln 4$",
+  "$\\ln 3$",
+  "$\\ln 9$",
+  "$\\ln 12$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(a^x=1+x\\ln a+o(x)\\), the limit is \\(\\ln 12-\\ln 3=\\ln 4\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{12^x-3^x}{x}=3^x\\dfrac{4^x-1}{x}$; $\\displaystyle\\lim_{x\\to0}3^x=1$ and $\\displaystyle\\lim_{x\\to0}\\dfrac{4^x-1}{x}=\\ln 4$. Hence the limit is $\\ln 4$.\n\nIndependent check: Using \\(a^x=1+x\\ln a+o(x)\\), the limit is \\(\\ln 12-\\ln 3=\\ln 4\\).",
+ "solution": "Write $12^x=3^x4^x$, so\n$$\\frac{12^x-3^x}{x}=3^x\\frac{4^x-1}{x}.\n$$\nAs $x\\to0$, $3^x\\to1$ and $\\frac{4^x-1}{x}\\to\\ln4$; hence the limit is $\\ln4$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\frac{12^x-3^x}{x}$.",
+  "options": [
+   "$\\ln 3$",
+   "$\\ln 4$",
+   "$\\ln 9$",
+   "$\\ln 12$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{12^x-3^x}{x}=3^x\\dfrac{4^x-1}{x}$; $\\displaystyle\\lim_{x\\to0}3^x=1$ and $\\displaystyle\\lim_{x\\to0}\\dfrac{4^x-1}{x}=\\ln 4$. Hence the limit is $\\ln 4$.",
+  "distractor_notes": "A: Uses the smaller base alone; C: incorrectly takes $\\ln(12-3)$; D: omits the $3^x$ term when differentiating."
+ },
+ "variant_of": "g241b7e1ffbe3",
+ "author_model": "openai/gpt-6-luna-pro"
+}

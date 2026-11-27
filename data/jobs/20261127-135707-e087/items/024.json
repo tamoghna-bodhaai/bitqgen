@@ -1,0 +1,68 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Mirror formula, magnification",
+  "archetype": "single-formula numerical",
+  "brief": "Convex/mirror problem: object at given distance, image formed on screen; use mirror formula and magnification to find focal length and image nature (two equations two unknowns).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:1",
+   "2025s2:20",
+   "2023s1:28"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $3\\ \\text{cm}$ tall object is placed $30\\ \\text{cm}$ in front of a concave mirror. A sharp image on a screen is $6\\ \\text{cm}$ tall. What are the mirror's focal length and the image nature?",
+ "options": [
+  "$20\\ \\text{cm}$; real, inverted, twice the object size",
+  "$15\\ \\text{cm}$; real, inverted, twice the object size",
+  "$20\\ \\text{cm}$; real, upright, twice the object size",
+  "$40\\ \\text{cm}$; virtual, upright, twice the object size"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Image magnification has magnitude 6/3 = 2. A sharp image on a screen is real and, for a concave mirror, inverted. With u = -30 cm, m = -v/u = -2 gives v = -60 cm. Then 1/f = 1/u + 1/v = -1/20 cm⁻¹, so the focal-length magnitude is 20 cm.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|m|=h_i/h_o=6/3=2$, so $|v|=2u=60\\ \\text{cm}$. $\\dfrac{1}{f}=\\dfrac{1}{30}+\\dfrac{1}{60}$, hence $f=20\\ \\text{cm}$. A real image is inverted.\n\nIndependent check: Image magnification has magnitude 6/3 = 2. A sharp image on a screen is real and, for a concave mirror, inverted. With u = -30 cm, m = -v/u = -2 gives v = -60 cm. Then 1/f = 1/u + 1/v = -1/20 cm⁻¹, so the focal-length magnitude is 20 cm.",
+ "solution": "The magnification magnitude is $|m|=h_i/h_o=6/3=2$, so the image distance has magnitude $|v|=2(30)=60\\ \\text{cm}$. A sharp image on a screen is real and inverted.\n$$\\frac{1}{f}=\\frac{1}{30}+\\frac{1}{60}=\\frac{1}{20}\\quad\\Rightarrow\\quad f=20\\ \\text{cm}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $3\\ \\text{cm}$ tall object is placed $30\\ \\text{cm}$ in front of a concave mirror. A sharp image on a screen is $6\\ \\text{cm}$ tall. What are the mirror's focal length and the image nature?",
+  "options": [
+   "$15\\ \\text{cm}$; real, inverted, twice the object size",
+   "$20\\ \\text{cm}$; real, inverted, twice the object size",
+   "$20\\ \\text{cm}$; real, upright, twice the object size",
+   "$40\\ \\text{cm}$; virtual, upright, twice the object size"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$|m|=h_i/h_o=6/3=2$, so $|v|=2u=60\\ \\text{cm}$. $\\dfrac{1}{f}=\\dfrac{1}{30}+\\dfrac{1}{60}$, hence $f=20\\ \\text{cm}$. A real image is inverted.",
+  "distractor_notes": "A: uses an incorrect image distance in the mirror formula; C: assigns the wrong orientation to a real image; D: uses an inconsistent mirror equation and image nature."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

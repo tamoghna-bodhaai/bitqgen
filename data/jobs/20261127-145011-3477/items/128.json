@@ -1,0 +1,70 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Formation of DE",
+  "archetype": "eliminate constants",
+  "brief": "Form the differential equation of a family y = Ae^{kx} + B (or similar) by eliminating arbitrary constants",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:98",
+   "2026s1:126",
+   "2026s2:128"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The family of curves $y=Ae^{3x}+B$, where $A$ and $B$ are arbitrary constants, has differential equation",
+ "options": [
+  "$\\dfrac{d^2y}{dx^2}-3y=0$",
+  "$\\dfrac{d^2y}{dx^2}+3\\dfrac{dy}{dx}=0$",
+  "$\\dfrac{d^2y}{dx^2}-3\\dfrac{dy}{dx}=0$",
+  "$\\dfrac{d^2y}{dx^2}-9\\dfrac{dy}{dx}=0$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Differentiate: y'=3Ae^{3x}, y''=9Ae^{3x}. Thus y''-3y'=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y'=3Ae^{3x}$; $y''=9Ae^{3x}=3y'$. Hence $y''-3y'=0$.\n\nIndependent check: Differentiate: y'=3Ae^{3x}, y''=9Ae^{3x}. Thus y''-3y'=0.",
+ "solution": "Differentiating $y=Ae^{3x}+B$ gives\n$$y'=3Ae^{3x},\\qquad y''=9Ae^{3x}=3y'.$$\nHence the required differential equation is $y''-3y'=0$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The family of curves $y=Ae^{3x}+B$, where $A$ and $B$ are arbitrary constants, has differential equation",
+  "options": [
+   "$\\dfrac{d^2y}{dx^2}-3\\dfrac{dy}{dx}=0$",
+   "$\\dfrac{d^2y}{dx^2}+3\\dfrac{dy}{dx}=0$",
+   "$\\dfrac{d^2y}{dx^2}-3y=0$",
+   "$\\dfrac{d^2y}{dx^2}-9\\dfrac{dy}{dx}=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$y'=3Ae^{3x}$; $y''=9Ae^{3x}=3y'$. Hence $y''-3y'=0$.",
+  "distractor_notes": "B: sign error when eliminating the constants. C: substitutes $y$ instead of $y'$ in the relation. D: uses $3^2$ rather than $3$ as the coefficient of $y'$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

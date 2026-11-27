@@ -1,0 +1,68 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Range of rational functions",
+  "archetype": "standard identity",
+  "brief": "Given f(x) a rational function, find its range using discriminant method for a quadratic in x.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:120",
+   "2024s1:112",
+   "2024s2:99"
+  ]
+ },
+ "status": "ok",
+ "stem": "The range of $f(x)=\\dfrac{x^2+4x+8}{x+2}$, where $x\\ne-2$, is",
+ "options": [
+  "$(-\\infty,-4)\\cup(4,\\infty)$",
+  "$[-4,4]$",
+  "$(-\\infty,-2]\\cup[2,\\infty)$",
+  "$(-\\infty,-4]\\cup[4,\\infty)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let t=x+2\\ne0. Then f=t+\\frac4t. For t>0, f\\ge4; for t<0, f\\le-4, with equality at t=2,-2 respectively. Thus the range is (-\\infty,-4]\\cup[4,\\infty).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$t=x+2\\ne0\\Rightarrow f(x)=t+\\dfrac4t$\n$y=t+\\dfrac4t\\Rightarrow t^2-yt+4=0$\n$\\Delta=y^2-16\\ge0\\Rightarrow y\\le-4\\text{ or }y\\ge4$\n$t=\\pm2$ attain the endpoints.\n\nIndependent check: Let t=x+2\\ne0. Then f=t+\\frac4t. For t>0, f\\ge4; for t<0, f\\le-4, with equality at t=2,-2 respectively. Thus the range is (-\\infty,-4]\\cup[4,\\infty).",
+ "solution": "Let $t=x+2\\ne0$. Then $f(x)=t+\\dfrac{4}{t}$, so $y=f(x)$ requires $t^2-yt+4=0$.\n$$\\Delta=y^2-16\\ge0\\quad\\Rightarrow\\quad y\\le-4\\ \\text{or}\\ y\\ge4.$$\nEquality is attained at $t=-2$ and $t=2$, respectively; hence the range is $(-\\infty,-4]\\cup[4,\\infty)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The range of $f(x)=\\dfrac{x^2+4x+8}{x+2}$, where $x\\ne-2$, is",
+  "options": [
+   "$(-\\infty,-4)\\cup(4,\\infty)$",
+   "$[-4,4]$",
+   "$(-\\infty,-4]\\cup[4,\\infty)$",
+   "$(-\\infty,-2]\\cup[2,\\infty)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$t=x+2\\ne0\\Rightarrow f(x)=t+\\dfrac4t$\n$y=t+\\dfrac4t\\Rightarrow t^2-yt+4=0$\n$\\Delta=y^2-16\\ge0\\Rightarrow y\\le-4\\text{ or }y\\ge4$\n$t=\\pm2$ attain the endpoints.",
+  "distractor_notes": "A: excludes the values attained when the quadratic has a repeated root.\nB: reverses the discriminant inequality.\nD: gives the bounds after an incorrect scaling."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

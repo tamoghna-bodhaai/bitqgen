@@ -1,0 +1,71 @@
+{
+ "qno": 43,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 43,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Selective precipitation, $K_{sp}$",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:37",
+   "2025s1:35",
+   "2021:50"
+  ],
+  "origin": "variant",
+  "bank_ref": "g426b01023270"
+ },
+ "status": "ok",
+ "stem": "A solution contains $0.010$ M $\\text{Ba}^{2+}$ and $0.020$ M $\\text{Sr}^{2+}$. As $\\text{Na}_2\\text{SO}_4$ is added slowly, what is $[\\text{Ba}^{2+}]$ when $\\text{SrSO}_4$ just begins to precipitate? $K_{sp}(\\text{BaSO}_4)=1.0\\times10^{-10}$ and $K_{sp}(\\text{SrSO}_4)=4.0\\times10^{-7}$.",
+ "options": [
+  "$5.0\\times10^{-9}$ M",
+  "$5.0\\times10^{-5}$ M",
+  "$2.0\\times10^{-5}$ M",
+  "$5.0\\times10^{-6}$ M"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "SrSO₄ just begins to precipitate at [SO₄²⁻] = (4.0×10⁻⁷)/(0.020) = 2.0×10⁻⁵ M. BaSO₄ has already precipitated, so [Ba²⁺] = (1.0×10⁻¹⁰)/(2.0×10⁻⁵) = 5.0×10⁻⁶ M.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\\text{SO}_4^{2-}]_{\\text{onset, Sr}}=\\dfrac{K_{sp}(\\text{SrSO}_4)}{[\\text{Sr}^{2+}]}=\\dfrac{4.0\\times10^{-7}}{0.020}=2.0\\times10^{-5}$ M\n$[\\text{Ba}^{2+}]=\\dfrac{K_{sp}(\\text{BaSO}_4)}{[\\text{SO}_4^{2-}]}=\\dfrac{1.0\\times10^{-10}}{2.0\\times10^{-5}}=5.0\\times10^{-6}$ M\n\nIndependent check: SrSO₄ just begins to precipitate at [SO₄²⁻] = (4.0×10⁻⁷)/(0.020) = 2.0×10⁻⁵ M. BaSO₄ has already precipitated, so [Ba²⁺] = (1.0×10⁻¹⁰)/(2.0×10⁻⁵) = 5.0×10⁻⁶ M.",
+ "solution": "At the onset of SrSO₄ precipitation, $[\\text{SO}_4^{2-}]=K_{sp}(\\text{SrSO}_4)/[\\text{Sr}^{2+}]=4.0\\times10^{-7}/0.020=2.0\\times10^{-5}\\,\\text{M}$.\nBaSO₄ has already precipitated, so $[\\text{Ba}^{2+}]=K_{sp}(\\text{BaSO}_4)/[\\text{SO}_4^{2-}]=1.0\\times10^{-10}/(2.0\\times10^{-5})=5.0\\times10^{-6}\\,\\text{M}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A solution contains $0.010$ M $\\text{Ba}^{2+}$ and $0.020$ M $\\text{Sr}^{2+}$. As $\\text{Na}_2\\text{SO}_4$ is added slowly, what is $[\\text{Ba}^{2+}]$ when $\\text{SrSO}_4$ just begins to precipitate? $K_{sp}(\\text{BaSO}_4)=1.0\\times10^{-10}$ and $K_{sp}(\\text{SrSO}_4)=4.0\\times10^{-7}$.",
+  "options": [
+   "$5.0\\times10^{-9}$ M",
+   "$5.0\\times10^{-6}$ M",
+   "$2.0\\times10^{-5}$ M",
+   "$5.0\\times10^{-5}$ M"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$[\\text{SO}_4^{2-}]_{\\text{onset, Sr}}=\\dfrac{K_{sp}(\\text{SrSO}_4)}{[\\text{Sr}^{2+}]}=\\dfrac{4.0\\times10^{-7}}{0.020}=2.0\\times10^{-5}$ M\n$[\\text{Ba}^{2+}]=\\dfrac{K_{sp}(\\text{BaSO}_4)}{[\\text{SO}_4^{2-}]}=\\dfrac{1.0\\times10^{-10}}{2.0\\times10^{-5}}=5.0\\times10^{-6}$ M",
+  "distractor_notes": "A: divides $K_{sp}(\\text{BaSO}_4)$ directly by the initial $[\\text{Sr}^{2+}]$. C: reports the sulfate concentration at the onset instead of $[\\text{Ba}^{2+}]$. D: uses $0.0020$ M instead of $0.020$ M for the strontium concentration."
+ },
+ "variant_of": "g426b01023270",
+ "author_model": "openai/gpt-6-luna-pro"
+}

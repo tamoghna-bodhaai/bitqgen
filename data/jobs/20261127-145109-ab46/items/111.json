@@ -1,0 +1,70 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "Limit of the form (sin ax)/(tan bx) or 1-cos(kx) over x² as x→0; direct standard-limit substitution.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:98",
+   "2024s1:106",
+   "2024s2:100"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos 5x}{5x^2}$.",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{25}{2}$",
+  "$5$",
+  "$\\dfrac{5}{2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using $1-\\cos u\\sim u^2/2$ as $u\\to0$, the limit is $25x^2/(2\\cdot5x^2)=5/2$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$1-\\cos 5x\\sim\\dfrac{(5x)^2}{2}$\n$\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos 5x}{5x^2}=\\dfrac{25}{10}=\\dfrac{5}{2}$\n\nIndependent check: Using $1-\\cos u\\sim u^2/2$ as $u\\to0$, the limit is $25x^2/(2\\cdot5x^2)=5/2$.",
+ "solution": "Using $1-\\cos u\\sim u^2/2$ as $u\\to0$,\n$$\\lim_{x\\to0}\\frac{1-\\cos5x}{5x^2}=\\frac{(5x)^2}{2\\cdot5x^2}=\\frac{5}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos 5x}{5x^2}$.",
+  "options": [
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{5}{2}$",
+   "$5$",
+   "$\\dfrac{25}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$1-\\cos 5x\\sim\\dfrac{(5x)^2}{2}$\n$\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos 5x}{5x^2}=\\dfrac{25}{10}=\\dfrac{5}{2}$",
+  "distractor_notes": "A: uses $5$ instead of $5^2$ in the standard limit. C: omits the factor $\\dfrac{1}{2}$. D: omits the denominator's factor $5$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 148,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 148,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Distance between parallel lines",
+  "archetype": "single-formula numerical",
+  "brief": "Two lines given in general form (or reduce them to parallel form) and find the distance between them; direct formula, careful with coefficients.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:111",
+   "2025s1:115",
+   "2026s2:105"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the distance between the parallel lines $3x+4y-7=0$ and $6x+8y+10=0$.",
+ "options": [
+  "$12$",
+  "$\\dfrac{5}{12}$",
+  "$\\dfrac{12}{5}$",
+  "$\\dfrac{17}{5}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Divide the second equation by 2 to get 3x+4y+5=0. The distance is |5-(-7)|/sqrt(3^2+4^2)=12/5.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Divide the second equation by $2$: $3x+4y+5=0$. Thus $d=\\dfrac{|5-(-7)|}{\\sqrt{3^2+4^2}}=\\dfrac{12}{5}$.\n\nIndependent check: Divide the second equation by 2 to get 3x+4y+5=0. The distance is |5-(-7)|/sqrt(3^2+4^2)=12/5.",
+ "solution": "For parallel lines $ax+by+c_1=0$ and $ax+by+c_2=0$, $d=\\dfrac{|c_2-c_1|}{\\sqrt{a^2+b^2}}$. Dividing the second equation by $2$ gives $3x+4y+5=0$.\n$$d=\\frac{|5-(-7)|}{\\sqrt{3^2+4^2}}=\\frac{12}{5}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the distance between the parallel lines $3x+4y-7=0$ and $6x+8y+10=0$.",
+  "options": [
+   "$12$",
+   "$\\dfrac{12}{5}$",
+   "$\\dfrac{5}{12}$",
+   "$\\dfrac{17}{5}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Divide the second equation by $2$: $3x+4y+5=0$. Thus $d=\\dfrac{|5-(-7)|}{\\sqrt{3^2+4^2}}=\\dfrac{12}{5}$.",
+  "distractor_notes": "A: omits division by the normal's magnitude. C: takes the reciprocal of the distance. D: uses the unscaled constant from the second line."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

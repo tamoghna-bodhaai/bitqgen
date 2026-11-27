@@ -1,0 +1,70 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Diazonium synthesis planning",
+  "archetype": "multi-step conversion",
+  "brief": "Conversion sequence from aniline/nitrobenzene to a target dye intermediate via diazotisation-coupling; identify reagents at each step from options.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:39",
+   "2025s1:34",
+   "2025s2:50"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which reagent sequence converts nitrobenzene into 4-hydroxyazobenzene through benzenediazonium chloride?",
+ "options": [
+  "(i) $\\text{Sn}/\\text{HCl}$, then $\\text{NaOH}$; (ii) $\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{NaOH}$, cold",
+  "(i) $\\text{Sn}/\\text{HCl}$, then $\\text{NaOH}$; (ii) $\\text{NaNO}_2/\\text{NaOH}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{HCl}$, cold",
+  "(i) $\\text{NaBH}_4$; (ii) $\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{NaOH}$, cold",
+  "(i) $\\text{Sn}/\\text{HCl}$, then $\\text{NaOH}$; (ii) $\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{HCl}$, cold"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Sn/HCl reduces nitrobenzene to aniline; NaOH liberates the aniline. NaNO₂/HCl at 0–5°C forms benzenediazonium chloride, which couples with phenol in cold NaOH to give 4-hydroxyazobenzene.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_6\\text{H}_5\\text{NO}_2\\xrightarrow{\\text{Sn/HCl, then NaOH}}\\text{C}_6\\text{H}_5\\text{NH}_2$.\\n$\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$ gives benzenediazonium chloride.\\nCold alkaline phenol couples at the para position to give 4-hydroxyazobenzene.\n\nIndependent check: Sn/HCl reduces nitrobenzene to aniline; NaOH liberates the aniline. NaNO₂/HCl at 0–5°C forms benzenediazonium chloride, which couples with phenol in cold NaOH to give 4-hydroxyazobenzene.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which reagent sequence converts nitrobenzene into 4-hydroxyazobenzene through benzenediazonium chloride?",
+  "options": [
+   "(i) $\\text{Sn}/\\text{HCl}$, then $\\text{NaOH}$; (ii) $\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{NaOH}$, cold",
+   "(i) $\\text{Sn}/\\text{HCl}$, then $\\text{NaOH}$; (ii) $\\text{NaNO}_2/\\text{NaOH}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{HCl}$, cold",
+   "(i) $\\text{NaBH}_4$; (ii) $\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{NaOH}$, cold",
+   "(i) $\\text{Sn}/\\text{HCl}$, then $\\text{NaOH}$; (ii) $\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$; (iii) phenol/$\\text{HCl}$, cold"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{C}_6\\text{H}_5\\text{NO}_2\\xrightarrow{\\text{Sn/HCl, then NaOH}}\\text{C}_6\\text{H}_5\\text{NH}_2$.\\n$\\text{NaNO}_2/\\text{HCl}$ at $0$–$5^\\circ\\text{C}$ gives benzenediazonium chloride.\\nCold alkaline phenol couples at the para position to give 4-hydroxyazobenzene.",
+  "distractor_notes": "B: alkaline conditions do not diazotise the amine; C: $\\text{NaBH}_4$ does not reduce nitrobenzene to aniline; D: acidic medium does not activate phenol for efficient azo coupling."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

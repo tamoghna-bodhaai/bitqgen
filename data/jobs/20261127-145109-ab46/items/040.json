@@ -1,0 +1,70 @@
+{
+ "qno": 40,
+ "section": "Physics",
+ "slot": {
+  "qno": 40,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Astronomical telescope",
+  "archetype": "single-formula numerical",
+  "brief": "For an astronomical telescope, given objective and eyepiece focal lengths (and tube length), compute the magnification; one formula, sign conventions.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:28",
+   "2023s2:13",
+   "2025s2:20"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An astronomical telescope is in normal adjustment, with objective and eyepiece focal lengths $120$ cm and $6$ cm, respectively. The tube length is $126$ cm. What is its signed angular magnification? Take an inverted image to have negative magnification.",
+ "options": [
+  "$-20$",
+  "$-0.05$",
+  "$+20$",
+  "$+21$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a telescope in normal adjustment, signed angular magnification is $-f_o/f_e=-120/6=-20$. The tube length $120+6=126$ cm is consistent.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$M=-\\dfrac{f_o}{f_e}=-\\dfrac{120}{6}=-20$$\n\nIndependent check: For a telescope in normal adjustment, signed angular magnification is $-f_o/f_e=-120/6=-20$. The tube length $120+6=126$ cm is consistent.",
+ "solution": "For a telescope in normal adjustment, the signed angular magnification is\n$$M=-\\frac{f_o}{f_e}=-\\frac{120}{6}=-20.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An astronomical telescope is in normal adjustment, with objective and eyepiece focal lengths $120$ cm and $6$ cm, respectively. The tube length is $126$ cm. What is its signed angular magnification? Take an inverted image to have negative magnification.",
+  "options": [
+   "$-20$",
+   "$-0.05$",
+   "$+20$",
+   "$+21$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$$M=-\\dfrac{f_o}{f_e}=-\\dfrac{120}{6}=-20$$",
+  "distractor_notes": "B: uses the reciprocal ratio. C: omits the negative sign for the inverted image. D: uses tube length instead of objective focal length in the ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

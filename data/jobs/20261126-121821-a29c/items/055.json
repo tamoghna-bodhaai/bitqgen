@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "The number of unpaired electrons present in the complex ion $[\\text{CoF}_6]^{3-}$ (atomic number of $\\text{Co} = 27$) is:",
+ "stem": "How many unpaired electrons are present in tetrahedral $[\\text{NiCl}_4]^{2-}$? (Atomic number of Ni = 28)",
  "options": [
-  "$0$",
-  "$2$",
-  "$3$",
-  "$4$"
+  "0",
+  "1",
+  "4",
+  "2"
  ],
  "answer": "D",
  "figure": null,
@@ -34,9 +34,9 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Co (Z=27) is [Ar]3d7 4s2; Co3+ in [CoF6]3- is 3d6. F- is a weak-field ligand, so the octahedral complex is high spin: t2g4 eg2, giving 4 unpaired electrons.",
-   "answer": "D",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Ni is +2, so it is d⁸. In a tetrahedral field, the configuration is e⁴t₂⁴, giving 2 unpaired electrons.",
+   "answer": "C",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Determine the oxidation state of cobalt in $[\\text{CoF}_6]^{3-}$:\n$$x + 6(-1) = -3 \\implies x = +3$$\n\n2. Write the electronic configuration of $\\text{Co}^{3+}$:\n$$\\text{Co} = [\\text{Ar}]\\,3d^7 4s^2 \\implies \\text{Co}^{3+} = [\\text{Ar}]\\,3d^6$$\n\n3. Determine the field strength of the ligand:\n$\\text{F}^-$ is a weak-field ligand according to the spectrochemical series, so $\\Delta_o < P$ (crystal field splitting energy is less than the pairing energy). Thus, the complex is high-spin.\n\n4. Distribute the $6$ electrons in an octahedral field:\n$$\\text{Configuration} = t_{2g}^4\\, e_g^2$$\n- In $t_{2g}$: $4$ electrons occupy three orbitals as $(\\uparrow\\downarrow, \\uparrow, \\uparrow)$, giving $2$ unpaired electrons.\n- In $e_g$: $2$ electrons occupy two orbitals as $(\\uparrow, \\uparrow)$, giving $2$ unpaired electrons.\n\nTotal number of unpaired electrons $n = 2 + 2 = 4$.\n\nIndependent check: Co (Z=27) is [Ar]3d7 4s2; Co3+ in [CoF6]3- is 3d6. F- is a weak-field ligand, so the octahedral complex is high spin: t2g4 eg2, giving 4 unpaired electrons.",
- "solution": "",
+ "working": "Oxidation state of Ni: $x-4=-2$, so $x=+2$.\\n$\u0000$Ni$^{2+}$ is $3d^8$; tetrahedral $d^8$ has configuration $e^4t_2^4$, with $2$ unpaired electrons.\n\nIndependent check: Ni is +2, so it is d⁸. In a tetrahedral field, the configuration is e⁴t₂⁴, giving 2 unpaired electrons.",
+ "solution": "For $[\\text{NiCl}_4]^{2-}$, the oxidation state of Ni is $x-4=-2$, so $x=+2$ and Ni$^{2+}$ is $3d^8$.\nIn a tetrahedral field, the configuration is $e^4t_2^4$; hence it has $2$ unpaired electrons.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The number of unpaired electrons present in the complex ion $[\\text{CoF}_6]^{3-}$ (atomic number of $\\text{Co} = 27$) is:",
+  "stem": "How many unpaired electrons are present in tetrahedral $[\\text{NiCl}_4]^{2-}$? (Atomic number of Ni = 28)",
   "options": [
-   "$0$",
-   "$2$",
-   "$3$",
-   "$4$"
+   "0",
+   "1",
+   "2",
+   "4"
   ],
   "option_smiles": null,
-  "answer": "D",
-  "working": "1. Determine the oxidation state of cobalt in $[\\text{CoF}_6]^{3-}$:\n$$x + 6(-1) = -3 \\implies x = +3$$\n\n2. Write the electronic configuration of $\\text{Co}^{3+}$:\n$$\\text{Co} = [\\text{Ar}]\\,3d^7 4s^2 \\implies \\text{Co}^{3+} = [\\text{Ar}]\\,3d^6$$\n\n3. Determine the field strength of the ligand:\n$\\text{F}^-$ is a weak-field ligand according to the spectrochemical series, so $\\Delta_o < P$ (crystal field splitting energy is less than the pairing energy). Thus, the complex is high-spin.\n\n4. Distribute the $6$ electrons in an octahedral field:\n$$\\text{Configuration} = t_{2g}^4\\, e_g^2$$\n- In $t_{2g}$: $4$ electrons occupy three orbitals as $(\\uparrow\\downarrow, \\uparrow, \\uparrow)$, giving $2$ unpaired electrons.\n- In $e_g$: $2$ electrons occupy two orbitals as $(\\uparrow, \\uparrow)$, giving $2$ unpaired electrons.\n\nTotal number of unpaired electrons $n = 2 + 2 = 4$.",
-  "distractor_notes": "$0$: Assumes $\\text{Co}^{3+}$ forms a low-spin diamagnetic complex ($t_{2g}^6 e_g^0$, pairing up all electrons like in $[\\text{Co(NH}_3)_6]^{3+}$).\n$2$: Arises from an incorrect pairing scheme such as $t_{2g}^5 e_g^1$ or misidentifying the configuration as $d^8$.\n$3$: Assumes cobalt is in the $+2$ oxidation state (giving high-spin $d^7$ with $3$ unpaired electrons).",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Oxidation state of Ni: $x-4=-2$, so $x=+2$.\\n$\u0000$Ni$^{2+}$ is $3d^8$; tetrahedral $d^8$ has configuration $e^4t_2^4$, with $2$ unpaired electrons.",
+  "distractor_notes": "A: treats Ni$^{2+}$ as $d^{10}$.\\nB: incorrectly pairs one additional electron in the $t_2$ orbitals.\\nD: counts all four $t_2$ electrons as unpaired."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

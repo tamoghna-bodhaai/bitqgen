@@ -1,0 +1,70 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Series LCR circuit impedance",
+  "archetype": "phasor angle",
+  "brief": "For a series LCR circuit at a given frequency, compute the impedance and the phase angle between voltage and current; ask whether the current leads or lags.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:3",
+   "2021:37",
+   "2025s1:1"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A series LCR circuit has $R=4\\ \\Omega$, $X_L=7\\ \\Omega$ and $X_C=3\\ \\Omega$. What are its impedance and the phase relation between voltage and current?",
+ "options": [
+  "$8\\ \\Omega$, $45^\\circ$; current lags voltage",
+  "$4\\sqrt{2}\\ \\Omega$, $45^\\circ$; current leads voltage",
+  "$4\\sqrt{2}\\ \\Omega$, $45^\\circ$; current lags voltage",
+  "$4\\sqrt{2}\\ \\Omega$, $0^\\circ$; voltage and current are in phase"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Net reactance: $X_L-X_C=4\\,\\Omega$ (inductive). Thus $Z=\\sqrt{R^2+X^2}=4\\sqrt2\\,\\Omega$ and $\\phi=\\tan^{-1}(4/4)=45^\\circ$; current lags voltage.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$X_L-X_C=4\\ \\Omega$; $Z=\\sqrt{R^2+(X_L-X_C)^2}=4\\sqrt2\\ \\Omega$; $\\tan\\phi=(X_L-X_C)/R=1\\Rightarrow\\phi=45^\\circ$; net reactance is inductive, so current lags voltage.\n\nIndependent check: Net reactance: $X_L-X_C=4\\,\\Omega$ (inductive). Thus $Z=\\sqrt{R^2+X^2}=4\\sqrt2\\,\\Omega$ and $\\phi=\\tan^{-1}(4/4)=45^\\circ$; current lags voltage.",
+ "solution": "The net reactance is $X_L-X_C=7-3=4\\ \\Omega$, so the circuit is inductive.\n$$Z=\\sqrt{R^2+(X_L-X_C)^2}=\\sqrt{4^2+4^2}=4\\sqrt{2}\\ \\Omega,\\qquad \\tan\\phi=\\frac{X_L-X_C}{R}=1\\Rightarrow\\phi=45^\\circ.$$\nHence, current lags voltage.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A series LCR circuit has $R=4\\ \\Omega$, $X_L=7\\ \\Omega$ and $X_C=3\\ \\Omega$. What are its impedance and the phase relation between voltage and current?",
+  "options": [
+   "$4\\sqrt{2}\\ \\Omega$, $45^\\circ$; current lags voltage",
+   "$4\\sqrt{2}\\ \\Omega$, $45^\\circ$; current leads voltage",
+   "$8\\ \\Omega$, $45^\\circ$; current lags voltage",
+   "$4\\sqrt{2}\\ \\Omega$, $0^\\circ$; voltage and current are in phase"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$X_L-X_C=4\\ \\Omega$; $Z=\\sqrt{R^2+(X_L-X_C)^2}=4\\sqrt2\\ \\Omega$; $\\tan\\phi=(X_L-X_C)/R=1\\Rightarrow\\phi=45^\\circ$; net reactance is inductive, so current lags voltage.",
+  "distractor_notes": "B: reverses the lead-lag relation; C: adds resistance and net reactance as scalars; D: assumes the circuit is at resonance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

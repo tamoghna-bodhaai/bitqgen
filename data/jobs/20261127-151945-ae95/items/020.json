@@ -1,0 +1,79 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Gauss's law and symmetry",
+  "archetype": "symmetry argument",
+  "brief": "Using a symmetric Gaussian surface to find the field outside a uniformly charged sphere and explain why the field inside a shell is zero.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:19",
+   "2021:9",
+   "2026s1:4"
+  ],
+  "origin": "variant",
+  "bank_ref": "g70285ceb1f10"
+ },
+ "status": "ok",
+ "stem": "A uniformly charged solid sphere of radius $0.30$ m and charge $+4.0\\times10^{-6}$ C is concentric with a thin spherical shell of radius $0.90$ m carrying charge $+2.0\\times10^{-6}$ C. As shown in the figure, find the electric field magnitude at $P$, where $OP=0.60$ m. Take $k=9.0\\times10^9$ N m$^2$ C$^{-2}$.",
+ "options": [
+  "$5.0\\times10^4$ N C$^{-1}$",
+  "$4.0\\times10^5$ N C$^{-1}$",
+  "$1.5\\times10^5$ N C$^{-1}$",
+  "$1.0\\times10^5$ N C$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q020_stem_v0.png",
+  "width_pct": 65,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At r = 0.60 m, the full solid-sphere charge is enclosed; the concentric shell contributes zero field inside it. E = kQ/r² = (9.0×10⁹)(4.0×10⁻⁶)/(0.60)² = 1.0×10⁵ N C⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At $r=0.60$ m, the sphere contributes $E=kQ/r^2$.\\nThe Gaussian surface lies inside the shell; spherical symmetry and zero enclosed shell charge give $E_{\\text{shell}}=0$.\\n$E=\\dfrac{(9.0\\times10^9)(4.0\\times10^{-6})}{(0.60)^2}=1.0\\times10^5$ N C$^{-1}$.\n\nIndependent check: At r = 0.60 m, the full solid-sphere charge is enclosed; the concentric shell contributes zero field inside it. E = kQ/r² = (9.0×10⁹)(4.0×10⁻⁶)/(0.60)² = 1.0×10⁵ N C⁻¹.",
+ "solution": "By Gauss’s law, at $r=0.60$ m the entire solid sphere’s charge is enclosed, while the spherical shell contributes zero field inside it.\n$$E=\\frac{kQ}{r^2}=\\frac{(9.0\\times10^9)(4.0\\times10^{-6})}{(0.60)^2}=1.0\\times10^5\\ \\text{N C}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A uniformly charged solid sphere of radius $0.30$ m and charge $+4.0\\times10^{-6}$ C is concentric with a thin spherical shell of radius $0.90$ m carrying charge $+2.0\\times10^{-6}$ C. As shown in the figure, find the electric field magnitude at $P$, where $OP=0.60$ m. Take $k=9.0\\times10^9$ N m$^2$ C$^{-2}$.",
+  "options": [
+   "$5.0\\times10^4$ N C$^{-1}$",
+   "$1.0\\times10^5$ N C$^{-1}$",
+   "$1.5\\times10^5$ N C$^{-1}$",
+   "$4.0\\times10^5$ N C$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "A schematic cross-section with three concentric circles centred at O. The innermost circle represents a uniformly charged solid sphere, labelled “radius 0.30 m, charge +4.0 × 10⁻⁶ C”. The middle circle is a spherical Gaussian surface, labelled “radius 0.60 m”; mark point P on its rightmost edge and label OP = 0.60 m. The outer circle represents a thin spherical shell, labelled “radius 0.90 m, charge +2.0 × 10⁻⁶ C”. No field arrows.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "At $r=0.60$ m, the sphere contributes $E=kQ/r^2$.\\nThe Gaussian surface lies inside the shell; spherical symmetry and zero enclosed shell charge give $E_{\\text{shell}}=0$.\\n$E=\\dfrac{(9.0\\times10^9)(4.0\\times10^{-6})}{(0.60)^2}=1.0\\times10^5$ N C$^{-1}$.",
+  "distractor_notes": "A: Uses $kQ/(2r)^2$, doubling the distance.\\nC: Incorrectly includes the shell’s charge as enclosed by the Gaussian surface.\\nD: Uses the sphere’s surface field instead of the field at $r=0.60$ m."
+ },
+ "variant_of": "g70285ceb1f10",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 105,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 105,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-shift code",
+  "brief": "A word coded by shifting each letter a variable but patterned number of steps (e.g., +1, +2, +3 progressively); ask the code for a new word following the same shift pattern; 2/5 so the pattern is easy to spot after one example.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:84",
+   "2025s1:71",
+   "2024s2:80"
+  ]
+ },
+ "status": "ok",
+ "stem": "If **CAMP** is coded as **DCPT** by shifting each successive letter forward by one more place than the previous letter, how will **GOLD** be coded in the same way?",
+ "options": [
+  "HQOH",
+  "HPNG",
+  "IRPI",
+  "HQPG"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Apply shifts +1, +2, +3, +4: G→H, O→Q, L→O, D→H, giving HQOH.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "The shifts in CAMP → DCPT are +1, +2, +3, +4. Apply them to GOLD: G→H, O→Q, L→O, D→H, giving HQOH. B, C and D do not follow all four shifts.\n\nIndependent check: Apply shifts +1, +2, +3, +4: G→H, O→Q, L→O, D→H, giving HQOH.",
+ "solution": "The successive shifts are $+1,+2,+3,+4$.\nApplying them to GOLD gives $G\\to H$, $O\\to Q$, $L\\to O$, $D\\to H$; hence the code is HQOH.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If **CAMP** is coded as **DCPT** by shifting each successive letter forward by one more place than the previous letter, how will **GOLD** be coded in the same way?",
+  "options": [
+   "HQOH",
+   "HPNG",
+   "IRPI",
+   "HQPG"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The shifts in CAMP → DCPT are +1, +2, +3, +4. Apply them to GOLD: G→H, O→Q, L→O, D→H, giving HQOH. B, C and D do not follow all four shifts.",
+  "distractor_notes": "B: inconsistent shifts; C: shifts the first letter by +2; D: uses an incorrect shift on the third letter."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

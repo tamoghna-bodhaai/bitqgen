@@ -1,0 +1,70 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Adjoint determinant properties",
+  "archetype": "direct computation",
+  "brief": "Find the inverse of a given 2×2 (or small 3×3) matrix using the adjoint divided by the determinant; verify by multiplying with the original.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:117",
+   "2026s1:121",
+   "2024s1:105"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $A=\\begin{bmatrix}1&1&0\\\\0&1&1\\\\1&0&1\\end{bmatrix}$, the inverse $A^{-1}$ is",
+ "options": [
+  "$\\dfrac{1}{2}\\begin{bmatrix}1&1&-1\\\\-1&1&1\\\\1&-1&1\\end{bmatrix}$",
+  "$\\dfrac{1}{2}\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$",
+  "$\\dfrac{1}{2}\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&-1\\end{bmatrix}$",
+  "$\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\det A=2\\). The adjugate is \\(\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}\\), so \\(A^{-1}=\\frac12\\operatorname{adj}(A)\\), matching (C).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\det A=2,\\quad \\operatorname{adj}A=\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$; $A^{-1}=\\dfrac{\\operatorname{adj}A}{\\det A}$; $A(\\operatorname{adj}A)=2I$\n\nIndependent check: \\(\\det A=2\\). The adjugate is \\(\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}\\), so \\(A^{-1}=\\frac12\\operatorname{adj}(A)\\), matching (C).",
+ "solution": "$$A^{-1}=\\frac{\\operatorname{adj}A}{\\det A}$$\nHere, $\\det A=2$ and $\\operatorname{adj}A=\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$.\nThus, $A^{-1}=\\dfrac12\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$, which is (B).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $A=\\begin{bmatrix}1&1&0\\\\0&1&1\\\\1&0&1\\end{bmatrix}$, the inverse $A^{-1}$ is",
+  "options": [
+   "$\\dfrac{1}{2}\\begin{bmatrix}1&1&-1\\\\-1&1&1\\\\1&-1&1\\end{bmatrix}$",
+   "$\\dfrac{1}{2}\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&-1\\end{bmatrix}$",
+   "$\\dfrac{1}{2}\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$",
+   "$\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\det A=2,\\quad \\operatorname{adj}A=\\begin{bmatrix}1&-1&1\\\\1&1&-1\\\\-1&1&1\\end{bmatrix}$; $A^{-1}=\\dfrac{\\operatorname{adj}A}{\\det A}$; $A(\\operatorname{adj}A)=2I$",
+  "distractor_notes": "A: uses the transpose of the adjugate; B: has a cofactor sign error; D: omits division by the determinant."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

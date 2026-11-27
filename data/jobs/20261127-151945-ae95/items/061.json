@@ -1,0 +1,71 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "Concentration terms",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:46",
+   "2026s1:44",
+   "2021:77"
+  ],
+  "origin": "variant",
+  "bank_ref": "ga626f5fa0e9c"
+ },
+ "status": "ok",
+ "stem": "A $0.20\\ \\text{m}$ aqueous solution of $\\text{K}_2\\text{SO}_4$ freezes at $-0.744^\\circ\\text{C}$. Find its degree of dissociation, given $K_f=1.86\\ \\text{K kg mol}^{-1}$.",
+ "options": [
+  "$33.3\\%$",
+  "$50\\%$",
+  "$66.7\\%$",
+  "$100\\%$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\Delta T_f=iK_fm\\), so \\(i=0.744/(1.86\\times0.20)=2\\). For \\(\\mathrm{K_2SO_4\\to2K^++SO_4^{2-}}\\), \\(i=1+2\\alpha\\), giving \\(\\alpha=0.50\\).",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{0.744}{1.86\\times0.20}=2$\n\n\nIndependent check: \\(\\Delta T_f=iK_fm\\), so \\(i=0.744/(1.86\\times0.20)=2\\). For \\(\\mathrm{K_2SO_4\\to2K^++SO_4^{2-}}\\), \\(i=1+2\\alpha\\), giving \\(\\alpha=0.50\\).",
+ "solution": "For $\\mathrm{K_2SO_4 \\to 2K^+ + SO_4^{2-}}$, the van’t Hoff factor is $i=1+2\\alpha$.\n$$i=\\frac{\\Delta T_f}{K_fm}=\\frac{0.744}{1.86\\times0.20}=2$$\nThus, $2=1+2\\alpha$, so $\\alpha=0.50=50\\%$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $0.20\\ \\text{m}$ aqueous solution of $\\text{K}_2\\text{SO}_4$ freezes at $-0.744^\\circ\\text{C}$. Find its degree of dissociation, given $K_f=1.86\\ \\text{K kg mol}^{-1}$.",
+  "options": [
+   "$33.3\\%$",
+   "$50\\%$",
+   "$66.7\\%$",
+   "$100\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{0.744}{1.86\\times0.20}=2$\n",
+  "distractor_notes": "A: divides $i-1$ by the total ion count instead of the increase in particle number. C: uses $i/3$ for the dissociation fraction. D: assumes complete dissociation."
+ },
+ "variant_of": "ga626f5fa0e9c",
+ "author_model": "openai/gpt-6-luna-pro"
+}

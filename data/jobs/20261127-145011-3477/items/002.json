@@ -1,0 +1,60 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Forward-biased diode in circuit",
+  "archetype": "circuit current split",
+  "brief": "Circuit with a diode in series with resistors; use the diode's forward voltage drop to find the current through the branch; requires circuit figure.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:25",
+   "2025s2:23",
+   "2022:7"
+  ],
+  "origin": "direct",
+  "bank_ref": "gdb61ed5e6402"
+ },
+ "status": "ok",
+ "stem": "In the circuit shown, the silicon diode is forward biased and has a voltage drop of $0.7$ V. Find the currents in the resistor-only branch and the diode branch, respectively, and the voltage across the resistor in the diode branch.",
+ "options": [
+  "$5.0$ mA, $5.0$ mA, $5.0$ V",
+  "$4.3$ mA, $5.0$ mA, $5.0$ V",
+  "$5.0$ mA, $4.3$ mA, $4.3$ V",
+  "$5.0$ mA, $4.3$ mA, $5.0$ V"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q002_bank_stem.png",
+  "kind": "circuit",
+  "width_pct": 60
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank gdb61ed5e6402 (verified in job 20261127-132429-aa8a)"
+ ],
+ "working": "$I_1=\\dfrac{5.0}{1.0\\times10^3}=5.0$ mA\n$V_R=5.0-0.7=4.3$ V\n$I_2=\\dfrac{4.3}{1.0\\times10^3}=4.3$ mA\n\nIndependent check: The resistor-only branch has 5 V across 1.0 kΩ, so its current is 5.0 mA. In the diode branch, the resistor has 5.0 − 0.7 = 4.3 V across it, giving 4.3 mA.",
+ "solution": "The resistor-only branch has $5.0\\,\\text{V}$ across its $1.0\\,\\text{k}\\Omega$ resistor, so $I_1=5.0/1000=5.0\\,\\text{mA}$. In the diode branch, $V_R=5.0-0.7=4.3\\,\\text{V}$, giving $I_2=4.3/1000=4.3\\,\\text{mA}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "gdb61ed5e6402",
+ "author_model": "openai/gpt-6-luna-pro"
+}

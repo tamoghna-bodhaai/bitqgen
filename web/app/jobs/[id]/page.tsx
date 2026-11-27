@@ -89,7 +89,7 @@ export default function JobPage({ params }: { params: Promise<{ id: string }> })
         <h2>Questions</h2>
         <div className="tablewrap">
           <table className="t">
-            <thead><tr><th>Q</th><th>Section</th><th>Topic</th><th>Difficulty</th><th>Status</th><th>Attempts</th><th>Notes</th></tr></thead>
+            <thead><tr><th>Q</th><th>Section</th><th>Topic</th><th>Difficulty</th><th>Status</th><th>Source</th><th>Attempts</th><th>Notes</th></tr></thead>
             <tbody>
               {items.map(i => (
                 <tr key={i.qno}>
@@ -98,6 +98,7 @@ export default function JobPage({ params }: { params: Promise<{ id: string }> })
                   <td>{i.slot.chapter}<div className="dim">{i.slot.subtopic}</div></td>
                   <td>{i.difficulty ?? ""}</td>
                   <td><Status s={i.status} /></td>
+                  <td className="dim">{i.origin === "bank" ? "Bank" : i.variant_of ? `Variant of ${i.variant_of}` : "New"}</td>
                   <td>{i.attempts ?? ""}</td>
                   <td className="dim">{(i.notes ?? []).join("; ")}</td>
                 </tr>

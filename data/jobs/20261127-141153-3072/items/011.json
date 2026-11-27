@@ -1,0 +1,76 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Work in cyclic process (P–V diagram)",
+  "archetype": "area of P–V cycle",
+  "brief": "P–V diagram of a cycle made of straight-line segments (e.g., rectangle or triangle); compute net work per cycle and state whether the cycle is clockwise or anticlockwise.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:27",
+   "2021:15",
+   "2024s2:6"
+  ]
+ },
+ "status": "ok",
+ "stem": "A gas undergoes the cycle shown in the P–V diagram. Find the net work done by the gas per cycle and state whether the cycle is clockwise or anticlockwise.",
+ "options": [
+  "$+300$ J; anticlockwise",
+  "$+300$ J; clockwise",
+  "$-600$ J; anticlockwise",
+  "$-300$ J; anticlockwise"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q011_stem_v0.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Net work is the signed area enclosed: the triangular area is ½(2 L)(3×10⁵ Pa) = 300 J, using 1 L = 10⁻³ m³. The path is anticlockwise, so work done by the gas is −300 J.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta V=2\\times10^{-3}$ m$^3$; $\\Delta P=3\\times10^5$ Pa; $|W|=\\dfrac12\\Delta P\\Delta V=300$ J; anticlockwise $\\Rightarrow W_{\\text{by gas}}=-300$ J\n\nIndependent check: Net work is the signed area enclosed: the triangular area is ½(2 L)(3×10⁵ Pa) = 300 J, using 1 L = 10⁻³ m³. The path is anticlockwise, so work done by the gas is −300 J.",
+ "solution": "The net work done by the gas is the signed area enclosed by the cycle. For the triangular loop, $|W|=\\frac12\\Delta P\\Delta V=\\frac12(3\\times10^5)(2\\times10^{-3})=300\\,\\text{J}$. The anticlockwise cycle gives $W_{\\text{by gas}}=-300\\,\\text{J}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A gas undergoes the cycle shown in the P–V diagram. Find the net work done by the gas per cycle and state whether the cycle is clockwise or anticlockwise.",
+  "options": [
+   "$-300$ J; anticlockwise",
+   "$+300$ J; clockwise",
+   "$-600$ J; anticlockwise",
+   "$+300$ J; anticlockwise"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a P–V graph with volume V (L) on the horizontal axis and pressure P (10^5 Pa) on the vertical axis. Mark A at (1, 2), B at (3, 2), and C at (3, 5), with coordinates in the displayed axis units. Join A to B, B to C, and C to A by straight segments. Add direction arrows showing A → B → C → A. Label each vertex A, B, and C.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$\\Delta V=2\\times10^{-3}$ m$^3$; $\\Delta P=3\\times10^5$ Pa; $|W|=\\dfrac12\\Delta P\\Delta V=300$ J; anticlockwise $\\Rightarrow W_{\\text{by gas}}=-300$ J",
+  "distractor_notes": "B: assigns positive work to an anticlockwise cycle and reverses its direction; C: uses the rectangle instead of the triangular area; D: gives the area magnitude with the wrong sign for an anticlockwise cycle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "A variable circle touches the $x$-axis and also touches the circle $x^2 + (y - 3)^2 = 1$ externally. The locus of the centre of the variable circle is",
+ "stem": "A circle of radius $1$ is tangent to both lines $3x+4y=0$ and $3x+4y=10$. The locus of its centre is",
  "options": [
-  "$x^2 = 4(y - 1)$",
-  "$x^2 = 8(y - 1)$",
-  "$y^2 = 4(x - 1)$",
-  "$y^2 = 8(x - 1)$"
+  "$3x+4y=10$",
+  "$3x+4y=-5$",
+  "$3x+4y=0$",
+  "$3x+4y=5$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Let centre (h,k); touching x-axis gives radius |k|. External tangency to centre (0,3), radius 1: √(h²+(k−3)²)=|k|+1. For k>0: h²+k²−6k+9=k²+2k+1 ⇒ h²=8(k−1), i.e. x²=8(y−1). For k<0: h²=4k−8<0, impossible. Numerical check confirms points on x²=8(y−1) satisfy distance = r+1; option A fails.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The distance between the parallel lines is $|10|/\\sqrt{3^2+4^2}=2$. A radius-1 circle tangent to both has its centre midway between them, so $3x+4y=5$.",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "Let the centre of the variable circle be $(h, k)$ and its radius be $r$.\nSince the circle touches the $x$-axis and lies in the upper half-plane (as the given circle lies entirely above the $x$-axis with centre $(0, 3)$ and radius $1$), its radius is $r = k$.\n\nThe given circle has centre $C_1(0, 3)$ and radius $R = 1$.\nSince the two circles touch externally, the distance between their centres is equal to the sum of their radii:\n$$\\sqrt{(h - 0)^2 + (k - 3)^2} = r + R = k + 1$$\n\nSquaring both sides:\n$$h^2 + (k - 3)^2 = (k + 1)^2$$\n$$h^2 + k^2 - 6k + 9 = k^2 + 2k + 1$$\n$$h^2 = 8k - 8 = 8(k - 1)$$\n\nReplacing $(h, k)$ with $(x, y)$, the locus of the centre is:\n$$x^2 = 8(y - 1)$$\n\nIndependent check: Let centre (h,k); touching x-axis gives radius |k|. External tangency to centre (0,3), radius 1: √(h²+(k−3)²)=|k|+1. For k>0: h²+k²−6k+9=k²+2k+1 ⇒ h²=8(k−1), i.e. x²=8(y−1). For k<0: h²=4k−8<0, impossible. Numerical check confirms points on x²=8(y−1) satisfy distance = r+1; option A fails.",
- "solution": "",
+ "working": "$d_1=\\dfrac{|3x+4y|}{5}=1,\\quad d_2=\\dfrac{|3x+4y-10|}{5}=1$.\nThus $|3x+4y|=5$ and $|3x+4y-10|=5$.\nThe only common value is $3x+4y=5$.\n\nIndependent check: The distance between the parallel lines is $|10|/\\sqrt{3^2+4^2}=2$. A radius-1 circle tangent to both has its centre midway between them, so $3x+4y=5$.",
+ "solution": "The centre is at distance $1$ from both lines, so\n$$\\frac{|3x+4y|}{5}=1,\\qquad \\frac{|3x+4y-10|}{5}=1.\n$$\nThe common solution is $3x+4y=5$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A variable circle touches the $x$-axis and also touches the circle $x^2 + (y - 3)^2 = 1$ externally. The locus of the centre of the variable circle is",
+  "stem": "A circle of radius $1$ is tangent to both lines $3x+4y=0$ and $3x+4y=10$. The locus of its centre is",
   "options": [
-   "$x^2 = 4(y - 1)$",
-   "$x^2 = 8(y - 1)$",
-   "$y^2 = 4(x - 1)$",
-   "$y^2 = 8(x - 1)$"
+   "$3x+4y=5$",
+   "$3x+4y=-5$",
+   "$3x+4y=0$",
+   "$3x+4y=10$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "Let the centre of the variable circle be $(h, k)$ and its radius be $r$.\nSince the circle touches the $x$-axis and lies in the upper half-plane (as the given circle lies entirely above the $x$-axis with centre $(0, 3)$ and radius $1$), its radius is $r = k$.\n\nThe given circle has centre $C_1(0, 3)$ and radius $R = 1$.\nSince the two circles touch externally, the distance between their centres is equal to the sum of their radii:\n$$\\sqrt{(h - 0)^2 + (k - 3)^2} = r + R = k + 1$$\n\nSquaring both sides:\n$$h^2 + (k - 3)^2 = (k + 1)^2$$\n$$h^2 + k^2 - 6k + 9 = k^2 + 2k + 1$$\n$$h^2 = 8k - 8 = 8(k - 1)$$\n\nReplacing $(h, k)$ with $(x, y)$, the locus of the centre is:\n$$x^2 = 8(y - 1)$$",
-  "distractor_notes": "A: Arises from writing $(k+1)^2 - (k-3)^2$ with a missing factor of 2 in the cross-terms, giving $4(y-1)$.\nC: Arises from both confusing the roles of $x$ and $y$ and making the algebra slip leading to a coefficient of 4.\nD: Arises from swapping the coordinate axes (treating tangency to the $y$-axis instead of the $x$-axis).",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$d_1=\\dfrac{|3x+4y|}{5}=1,\\quad d_2=\\dfrac{|3x+4y-10|}{5}=1$.\nThus $|3x+4y|=5$ and $|3x+4y-10|=5$.\nThe only common value is $3x+4y=5$.",
+  "distractor_notes": "B: uses the wrong signed distance from the first line. C: gives one of the original lines. D: gives the other original line."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

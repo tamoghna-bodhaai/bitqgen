@@ -1,0 +1,70 @@
+{
+ "qno": 43,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 43,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment",
+  "archetype": "unpaired electron count",
+  "brief": "Given a few transition metal ions, count unpaired electrons using d-orbital filling; identify the ion with a specified number of unpaired electrons.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:43",
+   "2025s2:48",
+   "2026s1:48"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which isolated ion has three unpaired electrons?",
+ "options": [
+  "$\\text{Ti}^{3+}$",
+  "$\\text{V}^{2+}$",
+  "$\\text{Fe}^{2+}$",
+  "$\\text{Ni}^{2+}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Remove 4s electrons first: Ti³⁺ is d¹ (1 unpaired), V²⁺ is d³ (3), Fe²⁺ is d⁶ (4 for an isolated ion by Hund’s rule), and Ni²⁺ is d⁸ (2).",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Ti}^{3+}: d^1$ (1 unpaired)\n$\\text{V}^{2+}: d^3$ (3 unpaired)\n$\\text{Fe}^{2+}: d^6$ (4 unpaired)\n$\\text{Ni}^{2+}: d^8$ (2 unpaired)\n\nIndependent check: Remove 4s electrons first: Ti³⁺ is d¹ (1 unpaired), V²⁺ is d³ (3), Fe²⁺ is d⁶ (4 for an isolated ion by Hund’s rule), and Ni²⁺ is d⁸ (2).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which isolated ion has three unpaired electrons?",
+  "options": [
+   "$\\text{Ti}^{3+}$",
+   "$\\text{V}^{2+}$",
+   "$\\text{Fe}^{2+}$",
+   "$\\text{Ni}^{2+}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{Ti}^{3+}: d^1$ (1 unpaired)\n$\\text{V}^{2+}: d^3$ (3 unpaired)\n$\\text{Fe}^{2+}: d^6$ (4 unpaired)\n$\\text{Ni}^{2+}: d^8$ (2 unpaired)",
+  "distractor_notes": "A: counts the $d^1$ ion as having three unpaired electrons. C: assigns the wrong unpaired count to high-spin $d^6$. D: assigns the wrong unpaired count to $d^8$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

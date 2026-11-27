@@ -1,0 +1,114 @@
+{
+ "id": "20261127-145011-3477",
+ "config": {
+  "title": "BITSAT Practice Paper",
+  "subtitle": "",
+  "pattern_id": "bitsat_150",
+  "counts": null,
+  "profile": "balanced",
+  "difficulty": "match",
+  "seed": 598157,
+  "workers": 24,
+  "batch_size": 4,
+  "max_revisions": 2,
+  "run_critic": true,
+  "check_figures": true,
+  "export": true,
+  "add_to_bank": true,
+  "source": "mixed",
+  "mix": {
+   "direct": 30,
+   "variant": 40,
+   "new": 30
+  }
+ },
+ "status": "done",
+ "stage": "done",
+ "created": 1795771211.7659473,
+ "progress": {
+  "total": 150,
+  "done": 150,
+  "ok": 148,
+  "flagged": 2
+ },
+ "cost": 0.7178,
+ "started": 1795771982.0611272,
+ "cost_by_stage": {
+  "planner": {
+   "calls": 5,
+   "cost": 0.02039,
+   "prompt_tokens": 14259,
+   "completion_tokens": 8740,
+   "truncated": 0
+  },
+  "author_pcm": {
+   "calls": 82,
+   "cost": 0.23503,
+   "prompt_tokens": 951280,
+   "completion_tokens": 363313,
+   "truncated": 0,
+   "batch_questions": 36,
+   "batch_missing": 0
+  },
+  "solver": {
+   "calls": 113,
+   "cost": 0.07736,
+   "prompt_tokens": 402027,
+   "completion_tokens": 103629,
+   "truncated": 0
+  },
+  "figure_coder": {
+   "calls": 7,
+   "cost": 0.07448,
+   "prompt_tokens": 10587,
+   "completion_tokens": 5332,
+   "truncated": 0
+  },
+  "figure_checker": {
+   "calls": 6,
+   "cost": 0.00095,
+   "prompt_tokens": 5427,
+   "completion_tokens": 1407,
+   "truncated": 0
+  },
+  "author_verbal": {
+   "calls": 15,
+   "cost": 0.00631,
+   "prompt_tokens": 24507,
+   "completion_tokens": 6485,
+   "truncated": 0,
+   "batch_questions": 6,
+   "batch_missing": 0
+  },
+  "solver_verbal": {
+   "calls": 20,
+   "cost": 0.00206,
+   "prompt_tokens": 7948,
+   "completion_tokens": 2548,
+   "truncated": 0
+  },
+  "tiebreaker": {
+   "calls": 37,
+   "cost": 0.12544,
+   "prompt_tokens": 49857,
+   "completion_tokens": 19129,
+   "truncated": 0
+  },
+  "critic": {
+   "calls": 5,
+   "cost": 0.16415,
+   "prompt_tokens": 19064,
+   "completion_tokens": 32448,
+   "truncated": 0
+  },
+  "solution_writer": {
+   "calls": 110,
+   "cost": 0.0115,
+   "prompt_tokens": 61170,
+   "completion_tokens": 10827,
+   "truncated": 0
+  }
+ },
+ "error": null,
+ "finished": 1795772434.5376353
+}

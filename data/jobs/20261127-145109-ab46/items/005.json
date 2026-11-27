@@ -1,0 +1,70 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Half-life and mean life",
+  "archetype": "half-life counting",
+  "brief": "A sample's activity drops to a given fraction after some time; ask how many half-lives elapsed, or find the time for activity to drop by a stated factor.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:4",
+   "2026s2:5",
+   "2026s1:27"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The activity of a radioactive sample falls to $\\dfrac{1}{32}$ of its initial value in $10$ h. The half-life of the sample is",
+ "options": [
+  "$1$ h",
+  "$2$ h",
+  "$5$ h",
+  "$10$ h"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(1/32=(1/2)^5\\), so 10 h is five half-lives. The half-life is \\(10/5=2\\) h.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{A}{A_0}=\\left(\\dfrac12\\right)^n=\\dfrac{1}{32}=\\left(\\dfrac12\\right)^5$\n$n=5,\\qquad t_{1/2}=\\dfrac{10\\ \\mathrm{h}}{5}=2\\ \\mathrm{h}$\n\nIndependent check: \\(1/32=(1/2)^5\\), so 10 h is five half-lives. The half-life is \\(10/5=2\\) h.",
+ "solution": "Activity after $n$ half-lives is $A/A_0=(1/2)^n$. Since $1/32=(1/2)^5$, the 10 h interval contains 5 half-lives.\n$$t_{1/2}=\\frac{10\\ \\mathrm{h}}{5}=2\\ \\mathrm{h}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The activity of a radioactive sample falls to $\\dfrac{1}{32}$ of its initial value in $10$ h. The half-life of the sample is",
+  "options": [
+   "$1$ h",
+   "$2$ h",
+   "$5$ h",
+   "$10$ h"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{A}{A_0}=\\left(\\dfrac12\\right)^n=\\dfrac{1}{32}=\\left(\\dfrac12\\right)^5$\n$n=5,\\qquad t_{1/2}=\\dfrac{10\\ \\mathrm{h}}{5}=2\\ \\mathrm{h}$",
+  "distractor_notes": "A: divides the elapsed time by the activity denominator rather than the number of half-lives.\nC: mistakes the number of half-lives for the half-life in hours.\nD: treats the elapsed time as one half-life."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

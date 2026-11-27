@@ -1,0 +1,68 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Gravitational potential energy",
+  "archetype": "energy conservation",
+  "brief": "A satellite in circular orbit or projectile from pole to surface: use conservation of mechanical energy with given orbital speed/radius to find escape velocity ratio or additional speed needed to escape.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:20",
+   "2024s2:21",
+   "2025s2:24"
+  ]
+ },
+ "status": "ok",
+ "stem": "A body is projected radially upward from the surface of a spherical planet and just reaches a maximum height $3R$ above the surface. If $v_e$ is the escape speed from the surface, its launch speed is",
+ "options": [
+  "$\\dfrac{1}{\\sqrt{2}}v_e$",
+  "$\\sqrt{\\dfrac{2}{3}}v_e$",
+  "$\\dfrac{\\sqrt{3}}{2}v_e$",
+  "$v_e$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At the maximum height, the body is at radius 4R. Conservation of energy gives v²/2 − GM/R = −GM/(4R), so v² = 3GM/(2R). Since vₑ² = 2GM/R, v = (√3/2)vₑ.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At the highest point, $r=4R$: $\\dfrac{u^2}{2}-\\dfrac{GM}{R}=-\\dfrac{GM}{4R}$, so $u^2=\\dfrac{3GM}{2R}$. Since $v_e^2=\\dfrac{2GM}{R}$, $u=\\dfrac{\\sqrt{3}}{2}v_e$.\n\nIndependent check: At the maximum height, the body is at radius 4R. Conservation of energy gives v²/2 − GM/R = −GM/(4R), so v² = 3GM/(2R). Since vₑ² = 2GM/R, v = (√3/2)vₑ.",
+ "solution": "At the maximum height, the body is at distance $4R$ from the planet’s centre. By conservation of energy,\n$$\\frac{u^2}{2}-\\frac{GM}{R}=-\\frac{GM}{4R},\\qquad u^2=\\frac{3GM}{2R}.$$\nUsing $v_e^2=\\frac{2GM}{R}$, we get $u=\\frac{\\sqrt{3}}{2}v_e$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A body is projected radially upward from the surface of a spherical planet and just reaches a maximum height $3R$ above the surface. If $v_e$ is the escape speed from the surface, its launch speed is",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{2}}v_e$",
+   "$\\sqrt{\\dfrac{2}{3}}v_e$",
+   "$\\dfrac{\\sqrt{3}}{2}v_e$",
+   "$v_e$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "At the highest point, $r=4R$: $\\dfrac{u^2}{2}-\\dfrac{GM}{R}=-\\dfrac{GM}{4R}$, so $u^2=\\dfrac{3GM}{2R}$. Since $v_e^2=\\dfrac{2GM}{R}$, $u=\\dfrac{\\sqrt{3}}{2}v_e$.",
+  "distractor_notes": "A: Uses a final distance $2R$ from the centre. B: Treats the stated height $3R$ as the final distance from the centre. D: Uses escape speed, which is needed to reach infinity rather than a finite height."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

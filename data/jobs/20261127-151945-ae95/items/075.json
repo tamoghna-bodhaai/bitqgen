@@ -1,0 +1,81 @@
+{
+ "qno": 75,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 75,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Lucas test",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:48",
+   "2026s1:60",
+   "2025s2:60"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge570a5743a44"
+ },
+ "status": "ok",
+ "stem": "Butan-2-ol is treated with Lucas reagent, concentrated HCl and anhydrous ZnCl$_2$. Which product causes the turbidity?",
+ "options": [
+  "1-chlorobutane",
+  "2-chlorobutane",
+  "but-2-ene",
+  "butan-1-ol"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": [
+  "figs/q075_optA_v0.png",
+  "figs/q075_optB_v0.png",
+  "figs/q075_optC_v0.png",
+  "figs/q075_optD_v0.png"
+ ],
+ "option_width": 35,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Butan-2-ol is a secondary alcohol; Lucas reagent converts it to 2-chlorobutane, whose separation causes turbidity.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Butan-2-ol + HCl $\\xrightarrow{\\text{ZnCl}_2}$ 2-chlorobutane + H$_2$O\nThe insoluble alkyl chloride forms droplets, causing turbidity.\n\nIndependent check: Butan-2-ol is a secondary alcohol; Lucas reagent converts it to 2-chlorobutane, whose separation causes turbidity.",
+ "solution": "Lucas reagent converts the secondary alcohol to the corresponding alkyl chloride:\n$$\\mathrm{CH_3CH(OH)CH_2CH_3 + HCl \\xrightarrow{ZnCl_2} CH_3CH(Cl)CH_2CH_3 + H_2O}$$\nInsoluble 2-chlorobutane separates as droplets, causing turbidity.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Butan-2-ol is treated with Lucas reagent, concentrated HCl and anhydrous ZnCl$_2$. Which product causes the turbidity?",
+  "options": [
+   "1-chlorobutane",
+   "2-chlorobutane",
+   "but-2-ene",
+   "butan-1-ol"
+  ],
+  "option_smiles": [
+   "CCCCCl",
+   "CC(Cl)CC",
+   "CC=CC",
+   "CCCCO"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Butan-2-ol + HCl $\\xrightarrow{\\text{ZnCl}_2}$ 2-chlorobutane + H$_2$O\nThe insoluble alkyl chloride forms droplets, causing turbidity.",
+  "distractor_notes": "A: places chlorine at the wrong carbon. C: gives an elimination product rather than the substitution product. D: retains the alcohol group instead of replacing it with chlorine."
+ },
+ "variant_of": "ge570a5743a44",
+ "author_model": "openai/gpt-6-luna-pro"
+}

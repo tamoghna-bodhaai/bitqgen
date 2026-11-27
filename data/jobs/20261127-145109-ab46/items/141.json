@@ -1,0 +1,70 @@
+{
+ "qno": 141,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 141,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Formation of DE",
+  "archetype": "eliminate constants",
+  "brief": "A two-parameter family of curves (parabolas/circles) is given; form the differential equation by differentiating and eliminating the arbitrary constants.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:97",
+   "2025s1:98",
+   "2024s1:92"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The family of circles $x^2+y^2+2ax+2by=0$, where $a$ and $b$ are arbitrary constants, has differential equation",
+ "options": [
+  "$(x^2+y^2)y''+2(1-(y')^2)(y-xy')=0$",
+  "$(x^2+y^2)y''+(1+(y')^2)(y-xy')=0$",
+  "$(x^2+y^2)y''+2(1+(y')^2)(y-xy')=0$",
+  "$(x^2-y^2)y''+2(1+(y')^2)(y-xy')=0$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let p=y'. Differentiating gives x+yp+a+bp=0 and 1+p²+(y+b)y''=0. Eliminating a,b yields y+b=(x²+y²)/[2(y−xp)], so (x²+y²)y''+2(1+p²)(y−xp)=0.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Set $p=y'$ and $q=y''$. Differentiating gives $F'=2x+2yp+2a+2bp=0$ and $F''=2+2p^2+2(y+b)q=0$. Hence $qb=-yq-(1+p^2)$ and $qa=-xq+p(1+p^2)$. Substituting in $qF=0$ gives $-q(x^2+y^2)+2(1+p^2)(xp-y)=0$, or $(x^2+y^2)y''+2(1+(y')^2)(y-xy')=0$.\n\nIndependent check: Let p=y'. Differentiating gives x+yp+a+bp=0 and 1+p²+(y+b)y''=0. Eliminating a,b yields y+b=(x²+y²)/[2(y−xp)], so (x²+y²)y''+2(1+p²)(y−xp)=0.",
+ "solution": "Differentiating twice and eliminating the arbitrary constants $a,b$ gives\n$$\n(x^2+y^2)y''+2(1+(y')^2)(y-xy')=0.\n$$\nHence the required differential equation is (C).",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The family of circles $x^2+y^2+2ax+2by=0$, where $a$ and $b$ are arbitrary constants, has differential equation",
+  "options": [
+   "$(x^2+y^2)y''+2(1+(y')^2)(y-xy')=0$",
+   "$(x^2+y^2)y''+(1+(y')^2)(y-xy')=0$",
+   "$(x^2+y^2)y''+2(1-(y')^2)(y-xy')=0$",
+   "$(x^2-y^2)y''+2(1+(y')^2)(y-xy')=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Set $p=y'$ and $q=y''$. Differentiating gives $F'=2x+2yp+2a+2bp=0$ and $F''=2+2p^2+2(y+b)q=0$. Hence $qb=-yq-(1+p^2)$ and $qa=-xq+p(1+p^2)$. Substituting in $qF=0$ gives $-q(x^2+y^2)+2(1+p^2)(xp-y)=0$, or $(x^2+y^2)y''+2(1+(y')^2)(y-xy')=0$.",
+  "distractor_notes": "B: omits the factor of 2; C: changes the sign of the squared-derivative term; D: uses a difference instead of the sum of squares."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

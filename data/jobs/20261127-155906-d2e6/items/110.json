@@ -1,0 +1,70 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Term independent of x",
+  "archetype": "general term exponent matching",
+  "brief": "In the binomial expansion of a product (x + 1/x^k)^n, find the term independent of x by equating powers via the general term.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:130",
+   "2026s2:97",
+   "2026s1:103"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For positive integers $n,k$, the term independent of $x$ in $(x+\\dfrac{1}{x^k})^n$ is the fifth term with coefficient $495$. Find $n+k$.",
+ "options": [
+  "$10$",
+  "$12$",
+  "$14$",
+  "$15$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The constant term occurs when n−(k+1)j=0. Since it is the fifth term, j=4, so n=4(k+1). Its coefficient is C(n,4)=495, giving n=12. Thus k=2 and n+k=14.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T_{r+1}=\\binom{n}{r}x^{n-(k+1)r}$\n$r=4,\\quad \\binom{n}{4}=495\\Rightarrow n=12$\n$12-4(k+1)=0\\Rightarrow k=2$\n$n+k=14$\n\nIndependent check: The constant term occurs when n−(k+1)j=0. Since it is the fifth term, j=4, so n=4(k+1). Its coefficient is C(n,4)=495, giving n=12. Thus k=2 and n+k=14.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For positive integers $n,k$, the term independent of $x$ in $(x+\\dfrac{1}{x^k})^n$ is the fifth term with coefficient $495$. Find $n+k$.",
+  "options": [
+   "$10$",
+   "$12$",
+   "$14$",
+   "$15$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$T_{r+1}=\\binom{n}{r}x^{n-(k+1)r}$\n$r=4,\\quad \\binom{n}{4}=495\\Rightarrow n=12$\n$12-4(k+1)=0\\Rightarrow k=2$\n$n+k=14$",
+  "distractor_notes": "A: Uses $n-k$ instead of $n+k$.\nB: Reports $n$ without adding $k$.\nD: Omits the contribution of the first $x$ factor when matching exponents, using $n-kr=0$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

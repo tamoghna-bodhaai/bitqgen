@@ -20,11 +20,11 @@
   ]
  },
  "status": "ok",
- "stem": "The acute angle between the pair of straight lines represented by the equation $x^2 - 4xy + y^2 = 0$ is",
+ "stem": "The acute angle between the pair of lines represented by $x^2 + xy = 0$ is",
  "options": [
   "$\\dfrac{\\pi}{6}$",
-  "$\\dfrac{\\pi}{4}$",
   "$\\dfrac{\\pi}{3}$",
+  "$\\dfrac{\\pi}{4}$",
   "$\\dfrac{\\pi}{2}$"
  ],
  "answer": "C",
@@ -34,9 +34,9 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "For ax²+2hxy+by²=0 with a=b=1, h=-2: tanθ = 2√(h²-ab)/|a+b| = 2√3/2 = √3, so θ = π/3. Verified via slopes m = 2±√3: angle = arctan√3 = π/3.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor: x(x+y)=0, giving lines x=0 and x+y=0. Their acute angle is π/4.",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,12 +45,12 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Comparing the given equation $x^2 - 4xy + y^2 = 0$ with the standard homogeneous equation $ax^2 + 2hxy + by^2 = 0$:\n$$a = 1, \\quad 2h = -4 \\implies h = -2, \\quad b = 1$$\n\nThe acute angle $\\theta$ between the pair of lines is given by:\n$$\\tan \\theta = \\left| \\dfrac{2\\sqrt{h^2 - ab}}{a + b} \\right|$$\n\nSubstitute the values:\n$$h^2 - ab = (-2)^2 - (1)(1) = 4 - 1 = 3$$\n$$a + b = 1 + 1 = 2$$\n\n$$\\tan \\theta = \\dfrac{2\\sqrt{3}}{2} = \\sqrt{3}$$\n\nSince $\\theta$ is acute:\n$$\\theta = \\dfrac{\\pi}{3}$$\n\nIndependent check: For ax²+2hxy+by²=0 with a=b=1, h=-2: tanθ = 2√(h²-ab)/|a+b| = 2√3/2 = √3, so θ = π/3. Verified via slopes m = 2±√3: angle = arctan√3 = π/3.",
- "solution": "",
+ "working": "$a=1,\\ 2h=1,\\ b=0$.\n$\\tan\\theta=\\left|\\dfrac{2\\sqrt{h^2-ab}}{a+b}\\right|=\\dfrac{2\\sqrt{1/4}}{1}=1$.\n$\\therefore\\theta=\\dfrac{\\pi}{4}$.\n\nIndependent check: Factor: x(x+y)=0, giving lines x=0 and x+y=0. Their acute angle is π/4.",
+ "solution": "The equation factors as $x(x+y)=0$, so the lines are $x=0$ and $x+y=0$. Their slopes are undefined and $-1$, respectively; hence the acute angle between them is $\\dfrac{\\pi}{4}$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The acute angle between the pair of straight lines represented by the equation $x^2 - 4xy + y^2 = 0$ is",
+  "stem": "The acute angle between the pair of lines represented by $x^2 + xy = 0$ is",
   "options": [
    "$\\dfrac{\\pi}{6}$",
    "$\\dfrac{\\pi}{4}$",
@@ -58,10 +58,11 @@
    "$\\dfrac{\\pi}{2}$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "Comparing the given equation $x^2 - 4xy + y^2 = 0$ with the standard homogeneous equation $ax^2 + 2hxy + by^2 = 0$:\n$$a = 1, \\quad 2h = -4 \\implies h = -2, \\quad b = 1$$\n\nThe acute angle $\\theta$ between the pair of lines is given by:\n$$\\tan \\theta = \\left| \\dfrac{2\\sqrt{h^2 - ab}}{a + b} \\right|$$\n\nSubstitute the values:\n$$h^2 - ab = (-2)^2 - (1)(1) = 4 - 1 = 3$$\n$$a + b = 1 + 1 = 2$$\n\n$$\\tan \\theta = \\dfrac{2\\sqrt{3}}{2} = \\sqrt{3}$$\n\nSince $\\theta$ is acute:\n$$\\theta = \\dfrac{\\pi}{3}$$",
-  "distractor_notes": "$\\dfrac{\\pi}{6}$: Inverts the formula to $\\tan\\theta = \\left|\\dfrac{a+b}{2\\sqrt{h^2-ab}}\\right| = \\dfrac{1}{\\sqrt{3}}$, giving $\\theta = \\dfrac{\\pi}{6}$.\n$\\dfrac{\\pi}{4}$: Computational slip omitting the radical in the numerator or guessing standard $45^\\circ$ symmetry.\n$\\dfrac{\\pi}{2}$: Confuses the condition for perpendicular lines ($a + b = 0$) with equal coefficients ($a = b$).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$a=1,\\ 2h=1,\\ b=0$.\n$\\tan\\theta=\\left|\\dfrac{2\\sqrt{h^2-ab}}{a+b}\\right|=\\dfrac{2\\sqrt{1/4}}{1}=1$.\n$\\therefore\\theta=\\dfrac{\\pi}{4}$.",
+  "distractor_notes": "A: Uses an incorrect angle for $\\tan\\theta=1$. C: Uses an incorrect angle for $\\tan\\theta=1$. D: Mistakes the lines for perpendicular lines."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

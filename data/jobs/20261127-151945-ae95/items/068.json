@@ -1,0 +1,71 @@
+{
+ "qno": 68,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 68,
+  "section": "Chemistry",
+  "chapter": "Environmental Chemistry",
+  "subtopic": "Ozone depletion",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:37",
+   "2025s2:36",
+   "2021:41"
+  ],
+  "origin": "variant",
+  "bank_ref": "g2d301c363352"
+ },
+ "status": "ok",
+ "stem": "In a stratospheric cycle, $\\text{NO}\\cdot + \\text{O}_3 \\rightarrow \\text{NO}_2\\cdot + \\text{O}_2$ and $\\text{NO}_2\\cdot + \\text{O} \\rightarrow \\text{NO}\\cdot + \\text{O}_2$. If $2.0\\ \\mu\\text{mol}$ of $\\text{NO}\\cdot$ completes 500 full turnovers, how much $\\text{O}_2$ is formed?",
+ "options": [
+  "$0.50\\ \\text{mmol}$",
+  "$1.0\\ \\text{mmol}$",
+  "$4.0\\ \\text{mmol}$",
+  "$2.0\\ \\text{mmol}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Each full turnover forms 2 mol O₂ per mol NO. Thus, 2.0 μmol × 500 × 2 = 2000 μmol = 2.0 mmol O₂.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Net reaction: $\\text{O}_3 + \\text{O} \\rightarrow 2\\text{O}_2$\\nTurnovers $= 2.0\\ \\mu\\text{mol} \\times 500 = 1.0\\ \\text{mmol}$\\n$n(\\text{O}_2)=2 \\times 1.0=2.0\\ \\text{mmol}$\n\nIndependent check: Each full turnover forms 2 mol O₂ per mol NO. Thus, 2.0 μmol × 500 × 2 = 2000 μmol = 2.0 mmol O₂.",
+ "solution": "Each full turnover produces $2$ mol of $\\text{O}_2$ per mol of $\\text{NO}\\cdot$. Thus,\n$$n(\\text{O}_2)=2.0\\ \\mu\\text{mol}\\times 500\\times 2=2000\\ \\mu\\text{mol}=2.0\\ \\text{mmol}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a stratospheric cycle, $\\text{NO}\\cdot + \\text{O}_3 \\rightarrow \\text{NO}_2\\cdot + \\text{O}_2$ and $\\text{NO}_2\\cdot + \\text{O} \\rightarrow \\text{NO}\\cdot + \\text{O}_2$. If $2.0\\ \\mu\\text{mol}$ of $\\text{NO}\\cdot$ completes 500 full turnovers, how much $\\text{O}_2$ is formed?",
+  "options": [
+   "$0.50\\ \\text{mmol}$",
+   "$1.0\\ \\text{mmol}$",
+   "$2.0\\ \\text{mmol}$",
+   "$4.0\\ \\text{mmol}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Net reaction: $\\text{O}_3 + \\text{O} \\rightarrow 2\\text{O}_2$\\nTurnovers $= 2.0\\ \\mu\\text{mol} \\times 500 = 1.0\\ \\text{mmol}$\\n$n(\\text{O}_2)=2 \\times 1.0=2.0\\ \\text{mmol}$",
+  "distractor_notes": "A: halves the turnover count; B: counts only one $\\text{O}_2$ per turnover; D: double-counts the $\\text{O}_2$ produced by the two steps."
+ },
+ "variant_of": "g2d301c363352",
+ "author_model": "openai/gpt-6-luna-pro"
+}

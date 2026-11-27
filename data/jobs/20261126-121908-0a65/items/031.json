@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A stationary nucleus $^{220}\\text{X}$ undergoes $\\alpha$-decay into $^{216}\\text{Y}$. The total binding energies of $^{220}\\text{X}$, $^{216}\\text{Y}$, and the $\\alpha$-particle are $1700.0\\text{ MeV}$, $1677.2\\text{ MeV}$, and $28.3\\text{ MeV}$, respectively. The kinetic energy of the emitted $\\alpha$-particle is",
+ "stem": "A stationary $^{232}_{92}\\text{U}$ nucleus undergoes $\\alpha$-decay to $^{228}_{90}\\text{Th}$. Their total binding energies are $1755.5$ MeV, $1733.0$ MeV and $28.3$ MeV for the parent, daughter and $\\alpha$-particle, respectively. Taking nuclear masses proportional to mass numbers, the kinetic energy of the $\\alpha$-particle is",
  "options": [
-  "$0.1\\text{ MeV}$",
-  "$5.3\\text{ MeV}$",
-  "$5.4\\text{ MeV}$",
-  "$5.5\\text{ MeV}$"
+  "$0.1\\ \\text{MeV}$",
+  "$2.9\\ \\text{MeV}$",
+  "$5.7\\ \\text{MeV}$",
+  "$5.8\\ \\text{MeV}$"
  ],
  "answer": "C",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Q = BE(Y) + BE(α) − BE(X) = 1677.2 + 28.3 − 1700.0 = 5.5 MeV. Momentum conservation splits Q inversely with masses: KE_α = Q·(216/220) = 5.4 MeV (recoil takes 0.1 MeV).",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The decay energy is Q = 1733.0 + 28.3 − 1755.5 = 5.8 MeV. By momentum conservation, the alpha-particle receives the fraction 228/232 of Q, so Tα = 5.8 × 228/232 = 5.7 MeV.",
    "answer": "C",
-   "confidence": 0.98,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The nuclear disintegration reaction is:\n$${}^{220}\\text{X} \\to {}^{216}\\text{Y} + {}^4_2\\text{He}$$\n\nThe total energy released ($Q$-value) in terms of binding energy (BE) is:\n$$Q = \\text{BE}({}^{216}\\text{Y}) + \\text{BE}(\\alpha) - \\text{BE}({}^{220}\\text{X})$$\n$$Q = 1677.2\\text{ MeV} + 28.3\\text{ MeV} - 1700.0\\text{ MeV} = 5.5\\text{ MeV}$$\n\nSince the parent nucleus is initially at rest, by conservation of linear momentum:\n$$p_\\alpha = p_Y = p$$\n\nThe kinetic energy of each fragment is $K = \\dfrac{p^2}{2m}$. Therefore:\n$$Q = K_\\alpha + K_Y = K_\\alpha \\left(1 + \\dfrac{m_\\alpha}{m_Y}\\right) = K_\\alpha \\left(\\dfrac{m_Y + m_\\alpha}{m_Y}\\right)$$\n\nUsing masses proportional to mass numbers ($m_Y \\approx 216\\text{ u}$, $m_\\alpha \\approx 4\\text{ u}$):\n$$K_\\alpha = \\left(\\dfrac{A - 4}{A}\\right) Q = \\left(\\dfrac{216}{220}\\right) \\times 5.5\\text{ MeV} = \\dfrac{54}{55} \\times 5.5\\text{ MeV} = 5.4\\text{ MeV}$$\n\nIndependent check: Q = BE(Y) + BE(α) − BE(X) = 1677.2 + 28.3 − 1700.0 = 5.5 MeV. Momentum conservation splits Q inversely with masses: KE_α = Q·(216/220) = 5.4 MeV (recoil takes 0.1 MeV).",
+ "working": "$$Q = 1733.0 + 28.3 - 1755.5 = 5.8\\ \\text{MeV}$$\n$$p_{\\alpha}=p_d,\\quad K_{\\alpha}=Q\\frac{m_d}{m_{\\alpha}+m_d}=5.8\\frac{228}{232}=5.7\\ \\text{MeV}$$\n\nIndependent check: The decay energy is Q = 1733.0 + 28.3 − 1755.5 = 5.8 MeV. By momentum conservation, the alpha-particle receives the fraction 228/232 of Q, so Tα = 5.8 × 228/232 = 5.7 MeV.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A stationary nucleus $^{220}\\text{X}$ undergoes $\\alpha$-decay into $^{216}\\text{Y}$. The total binding energies of $^{220}\\text{X}$, $^{216}\\text{Y}$, and the $\\alpha$-particle are $1700.0\\text{ MeV}$, $1677.2\\text{ MeV}$, and $28.3\\text{ MeV}$, respectively. The kinetic energy of the emitted $\\alpha$-particle is",
+  "stem": "A stationary $^{232}_{92}\\text{U}$ nucleus undergoes $\\alpha$-decay to $^{228}_{90}\\text{Th}$. Their total binding energies are $1755.5$ MeV, $1733.0$ MeV and $28.3$ MeV for the parent, daughter and $\\alpha$-particle, respectively. Taking nuclear masses proportional to mass numbers, the kinetic energy of the $\\alpha$-particle is",
   "options": [
-   "$0.1\\text{ MeV}$",
-   "$5.3\\text{ MeV}$",
-   "$5.4\\text{ MeV}$",
-   "$5.5\\text{ MeV}$"
+   "$0.1\\ \\text{MeV}$",
+   "$2.9\\ \\text{MeV}$",
+   "$5.7\\ \\text{MeV}$",
+   "$5.8\\ \\text{MeV}$"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "The nuclear disintegration reaction is:\n$${}^{220}\\text{X} \\to {}^{216}\\text{Y} + {}^4_2\\text{He}$$\n\nThe total energy released ($Q$-value) in terms of binding energy (BE) is:\n$$Q = \\text{BE}({}^{216}\\text{Y}) + \\text{BE}(\\alpha) - \\text{BE}({}^{220}\\text{X})$$\n$$Q = 1677.2\\text{ MeV} + 28.3\\text{ MeV} - 1700.0\\text{ MeV} = 5.5\\text{ MeV}$$\n\nSince the parent nucleus is initially at rest, by conservation of linear momentum:\n$$p_\\alpha = p_Y = p$$\n\nThe kinetic energy of each fragment is $K = \\dfrac{p^2}{2m}$. Therefore:\n$$Q = K_\\alpha + K_Y = K_\\alpha \\left(1 + \\dfrac{m_\\alpha}{m_Y}\\right) = K_\\alpha \\left(\\dfrac{m_Y + m_\\alpha}{m_Y}\\right)$$\n\nUsing masses proportional to mass numbers ($m_Y \\approx 216\\text{ u}$, $m_\\alpha \\approx 4\\text{ u}$):\n$$K_\\alpha = \\left(\\dfrac{A - 4}{A}\\right) Q = \\left(\\dfrac{216}{220}\\right) \\times 5.5\\text{ MeV} = \\dfrac{54}{55} \\times 5.5\\text{ MeV} = 5.4\\text{ MeV}$$",
-  "distractor_notes": "A: Uses $K_\\alpha = \\dfrac{m_\\alpha}{m_Y + m_\\alpha} Q = \\dfrac{4}{220} \\times 5.5 = 0.1\\text{ MeV}$, which is the kinetic energy of the recoiling daughter nucleus.\nB: Uses the elastic collision factor $\\dfrac{m_Y - m_\\alpha}{m_Y + m_\\alpha} Q = \\dfrac{212}{220} \\times 5.5 = 5.3\\text{ MeV}$.\nD: Ignores the recoil of the daughter nucleus and assumes the $\\alpha$-particle carries all the decay energy ($K_\\alpha = Q = 5.5\\text{ MeV}$).",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$$Q = 1733.0 + 28.3 - 1755.5 = 5.8\\ \\text{MeV}$$\n$$p_{\\alpha}=p_d,\\quad K_{\\alpha}=Q\\frac{m_d}{m_{\\alpha}+m_d}=5.8\\frac{228}{232}=5.7\\ \\text{MeV}$$",
+  "distractor_notes": "A: Gives the daughter’s recoil kinetic energy instead of the alpha particle’s. B: Splits the released energy equally between the two products. D: Assigns all the released energy to the alpha particle, ignoring recoil."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -1,0 +1,70 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Carbylamine test",
+  "archetype": "distinguishing test",
+  "brief": "Which amine (primary/secondary/tertiary) gives a foul smell with chloroform and KOH, and identify the product formed.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:44",
+   "2026s2:38",
+   "2023s2:39"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Methylamine is heated with chloroform and alcoholic KOH. Which pair correctly gives the amine class that reacts and the foul-smelling product formed?",
+ "options": [
+  "Primary amine; methyl isocyanide",
+  "Secondary amine; methyl isocyanide",
+  "Primary amine; acetonitrile",
+  "Tertiary amine; no reaction"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Methylamine is a primary amine. Primary amines react with chloroform and alcoholic KOH to form foul-smelling isocyanides; here the product is methyl isocyanide.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{CH}_3\\text{NH}_2+\\text{CHCl}_3+3\\text{KOH}\\rightarrow\\text{CH}_3\\text{NC}+3\\text{KCl}+3\\text{H}_2\\text{O}$. The carbylamine reaction is given by primary amines; $\\text{CH}_3\\text{NC}$ is methyl isocyanide.\n\nIndependent check: Methylamine is a primary amine. Primary amines react with chloroform and alcoholic KOH to form foul-smelling isocyanides; here the product is methyl isocyanide.",
+ "solution": "The carbylamine reaction is given by primary amines with chloroform and alcoholic KOH.\n$$\\text{CH}_3\\text{NH}_2+\\text{CHCl}_3+3\\text{KOH}\\rightarrow\\text{CH}_3\\text{NC}+3\\text{KCl}+3\\text{H}_2\\text{O}$$\nThus, methylamine forms the foul-smelling product methyl isocyanide.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Methylamine is heated with chloroform and alcoholic KOH. Which pair correctly gives the amine class that reacts and the foul-smelling product formed?",
+  "options": [
+   "Primary amine; methyl isocyanide",
+   "Secondary amine; methyl isocyanide",
+   "Primary amine; acetonitrile",
+   "Tertiary amine; no reaction"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{CH}_3\\text{NH}_2+\\text{CHCl}_3+3\\text{KOH}\\rightarrow\\text{CH}_3\\text{NC}+3\\text{KCl}+3\\text{H}_2\\text{O}$. The carbylamine reaction is given by primary amines; $\\text{CH}_3\\text{NC}$ is methyl isocyanide.",
+  "distractor_notes": "B: assigns the reaction to a secondary amine; C: confuses isocyanide with nitrile; D: incorrectly assigns the test to tertiary amines."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Dimensional analysis",
+  "archetype": "dimension matching",
+  "brief": "A physical equation is proposed with an unknown constant X; find the dimensional formula of X (or check which quantity it could be) from dimensional consistency.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:2",
+   "2024s1:1",
+   "2021:33"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For a damped oscillator, a proposed expression for its angular frequency is $\\omega=\\sqrt{\\dfrac{k}{m}-X^2}$, where $k$ is the spring constant and $m$ is the mass. The dimensions of $X$ are:",
+ "options": [
+  "$[T^{-2}]$",
+  "$[T^{-1}]$",
+  "$[MT^{-2}]$",
+  "$[M^{-1}T^{-1}]$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since both terms under the square root must have dimensions of angular frequency squared, [X²] = [T⁻²], so [X] = [T⁻¹].",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\\omega]=T^{-1},\\quad [k/m]=T^{-2}$\n$[X^2]=T^{-2}\\Rightarrow [X]=T^{-1}$\n\nIndependent check: Since both terms under the square root must have dimensions of angular frequency squared, [X²] = [T⁻²], so [X] = [T⁻¹].",
+ "solution": "$[\\omega]=T^{-1}$, so the terms under the square root must have dimensions $T^{-2}$.\n$$[X^2]=T^{-2}\\Rightarrow [X]=T^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a damped oscillator, a proposed expression for its angular frequency is $\\omega=\\sqrt{\\dfrac{k}{m}-X^2}$, where $k$ is the spring constant and $m$ is the mass. The dimensions of $X$ are:",
+  "options": [
+   "$[T^{-1}]$",
+   "$[T^{-2}]$",
+   "$[MT^{-2}]$",
+   "$[M^{-1}T^{-1}]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$[\\omega]=T^{-1},\\quad [k/m]=T^{-2}$\n$[X^2]=T^{-2}\\Rightarrow [X]=T^{-1}$",
+  "distractor_notes": "B: gives the dimensions of $X^2$; C: uses the dimensions of $k$; D: incorrectly includes inverse mass."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

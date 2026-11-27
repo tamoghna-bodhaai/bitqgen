@@ -1,0 +1,68 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Condition for intersecting lines",
+  "archetype": "formula application",
+  "brief": "Given direction ratios of two lines, test whether they intersect; if so find the point of intersection.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:124",
+   "2024s1:115",
+   "2026s1:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "The lines $\\dfrac{x-1}{1}=\\dfrac{y+2}{2}=\\dfrac{z}{1}$ and $\\dfrac{x-5}{2}=\\dfrac{y-1}{-1}=\\dfrac{z-5}{3}$ have direction ratios as given. Find their point of intersection, if any.",
+ "options": [
+  "$(1,-2,0)$",
+  "$(3,2,2)$",
+  "$(5,1,5)$",
+  "$(3,2,0)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the parameters be t and s. Equating x- and y-coordinates gives t−2s=4 and 2t+s=3, so t=2 and s=−1. Both lines then have z=2, giving intersection (3,2,2).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the common parameters be $t$ and $s$. From $x,y$: $1+t=5+2s$ and $-2+2t=1-s$, giving $t=2$, $s=-1$. Check $z$: $t=5+3s=2$. The lines intersect at $(3,2,2)$.\n\nIndependent check: Let the parameters be t and s. Equating x- and y-coordinates gives t−2s=4 and 2t+s=3, so t=2 and s=−1. Both lines then have z=2, giving intersection (3,2,2).",
+ "solution": "Let the line parameters be $t$ and $s$. Equating the $x$- and $y$-coordinates gives\n$$1+t=5+2s,\\qquad -2+2t=1-s,$$\nso $t=2$ and $s=-1$. Substitution gives the common point $(3,2,2)$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The lines $\\dfrac{x-1}{1}=\\dfrac{y+2}{2}=\\dfrac{z}{1}$ and $\\dfrac{x-5}{2}=\\dfrac{y-1}{-1}=\\dfrac{z-5}{3}$ have direction ratios as given. Find their point of intersection, if any.",
+  "options": [
+   "$(1,-2,0)$",
+   "$(3,2,0)$",
+   "$(5,1,5)$",
+   "$(3,2,2)$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Let the common parameters be $t$ and $s$. From $x,y$: $1+t=5+2s$ and $-2+2t=1-s$, giving $t=2$, $s=-1$. Check $z$: $t=5+3s=2$. The lines intersect at $(3,2,2)$.",
+  "distractor_notes": "A: gives the first line's defining point; B: checks $x,y$ but uses the wrong $z$ coordinate; C: gives the second line's defining point."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

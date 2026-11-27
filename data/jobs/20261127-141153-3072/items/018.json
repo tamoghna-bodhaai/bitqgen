@@ -1,0 +1,68 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Average induced emf",
+  "archetype": "flux change over time",
+  "brief": "Flux through a coil changes from one value to another over a stated time interval (or a loop entering/leaving a field region); find the average induced emf using Faraday's law.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:14",
+   "2023s1:30",
+   "2022:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "The magnetic flux through each turn of a $20$-turn coil decreases uniformly from $8$ mWb to $2$ mWb in $0.03$ s. What is the magnitude of the average induced emf in the coil?",
+ "options": [
+  "$0.2$ V",
+  "$4$ V",
+  "$2$ V",
+  "$8$ V"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using Faraday’s law, \\(\\mathcal{E}=N|\\Delta\\Phi|/\\Delta t=20(6\\times10^{-3})/0.03=4\\,\\text{V}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$|\\mathcal{E}_{\\rm avg}|=N\\dfrac{|\\Delta\\Phi|}{\\Delta t}=20\\dfrac{(8-2)\\times10^{-3}}{0.03}=4\\ \\text{V}$$\n\nIndependent check: Using Faraday’s law, \\(\\mathcal{E}=N|\\Delta\\Phi|/\\Delta t=20(6\\times10^{-3})/0.03=4\\,\\text{V}\\).",
+ "solution": "By Faraday’s law, the magnitude of the average induced emf is\n$$|\\mathcal{E}_{\\rm avg}|=N\\frac{|\\Delta\\Phi|}{\\Delta t}=20\\frac{(8-2)\\times10^{-3}}{0.03}=4\\,\\text{V}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The magnetic flux through each turn of a $20$-turn coil decreases uniformly from $8$ mWb to $2$ mWb in $0.03$ s. What is the magnitude of the average induced emf in the coil?",
+  "options": [
+   "$0.2$ V",
+   "$2$ V",
+   "$4$ V",
+   "$8$ V"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$|\\mathcal{E}_{\\rm avg}|=N\\dfrac{|\\Delta\\Phi|}{\\Delta t}=20\\dfrac{(8-2)\\times10^{-3}}{0.03}=4\\ \\text{V}$$",
+  "distractor_notes": "A: omits the change in flux magnitude. B: omits the number of turns and mishandles the time interval. D: doubles the flux change."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

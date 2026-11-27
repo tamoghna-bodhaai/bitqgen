@@ -1,0 +1,68 @@
+{
+ "qno": 89,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 89,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement",
+  "archetype": "para jumble (first sentence)",
+  "brief": "Four/five jumbled sentences on a current-affairs or environmental theme; identify the correct opening sentence and full order using logical connectors and chronological clues.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:70",
+   "2021:94",
+   "2021:95"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the sentences to form a coherent account of a city’s response to extreme heat. Which option gives the correct opening sentence and full order?\n\nP. After calibrating them, researchers mapped temperature variations block by block.\nQ. The resulting map helped officials choose streets for shade trees and reflective roofs.\nR. During last summer’s heatwave, several neighbourhoods recorded dangerously high night-time temperatures.\nS. To identify the patterns, researchers installed low-cost sensors across the city.\nT. By the following summer, these targeted measures had lowered exposure in the hottest districts.",
+ "options": [
+  "RSPQT",
+  "SRPQT",
+  "RSPTQ",
+  "RSQPT"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "R introduces the heatwave; S installs sensors; P maps temperatures after calibration; Q describes how officials use the map; T gives the later outcome.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "R establishes the heat problem; S introduces the sensors; P maps their readings after calibration; Q uses the map to guide action; T reports the later result.\nB starts with the response before establishing the problem. C reports the outcome before the measures are selected. D uses the map before describing how it was made.\n\nIndependent check: R introduces the heatwave; S installs sensors; P maps temperatures after calibration; Q describes how officials use the map; T gives the later outcome.",
+ "solution": "R introduces the heat problem, followed by S, which explains how researchers investigated it. P describes the resulting map, Q shows how officials used it, and T gives the later outcome.\nThus, the order is RSPQT.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange the sentences to form a coherent account of a city’s response to extreme heat. Which option gives the correct opening sentence and full order?\n\nP. After calibrating them, researchers mapped temperature variations block by block.\nQ. The resulting map helped officials choose streets for shade trees and reflective roofs.\nR. During last summer’s heatwave, several neighbourhoods recorded dangerously high night-time temperatures.\nS. To identify the patterns, researchers installed low-cost sensors across the city.\nT. By the following summer, these targeted measures had lowered exposure in the hottest districts.",
+  "options": [
+   "RSPQT",
+   "SRPQT",
+   "RSPTQ",
+   "RSQPT"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "R establishes the heat problem; S introduces the sensors; P maps their readings after calibration; Q uses the map to guide action; T reports the later result.\nB starts with the response before establishing the problem. C reports the outcome before the measures are selected. D uses the map before describing how it was made.",
+  "distractor_notes": "B: Begins with installing sensors before introducing the heat problem.\\nC: Places the later outcome before officials select measures.\\nD: Refers to the map before the mapping process is described."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

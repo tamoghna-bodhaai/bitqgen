@@ -1,0 +1,71 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gates",
+  "archetype": "circuit truth table",
+  "brief": "Show a gate combination (e.g. NAND/NOR wiring) or name a gate; ask which output column matches the circuit — no figure needed if gate symbols described in options.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:20",
+   "2023s2:6",
+   "2024s1:27"
+  ],
+  "origin": "variant",
+  "bank_ref": "g5e3d6104737d"
+ },
+ "status": "ok",
+ "stem": "In a logic circuit, $A$ and $B$ are inputs to a NAND gate. Its output and $A$ are then fed to an AND gate. Which output column results, in the input order $AB=00,01,10,11$?",
+ "options": [
+  "$(0,1,0,0)$",
+  "$(1,1,1,0)$",
+  "$(0,1,1,1)$",
+  "$(0,0,1,0)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The output is $A\\land\\neg(A\\land B)=A\\land\\neg B$, giving $(0,0,1,0)$ in the stated input order.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Y=A\\cdot\\overline{A\\cdot B}=A\\cdot\\overline{B}$\nFor $AB=00,01,10,11$: $Y=0,0,1,0$.\n\nIndependent check: The output is $A\\land\\neg(A\\land B)=A\\land\\neg B$, giving $(0,0,1,0)$ in the stated input order.",
+ "solution": "The NAND output is $\\overline{A\\cdot B}$, so the final output is\n$$Y=A\\cdot\\overline{A\\cdot B}=A\\cdot\\overline{B}.$$\nFor $AB=00,01,10,11$, this gives $(0,0,1,0)$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a logic circuit, $A$ and $B$ are inputs to a NAND gate. Its output and $A$ are then fed to an AND gate. Which output column results, in the input order $AB=00,01,10,11$?",
+  "options": [
+   "$(0,1,0,0)$",
+   "$(0,0,1,0)$",
+   "$(0,1,1,1)$",
+   "$(1,1,1,0)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$Y=A\\cdot\\overline{A\\cdot B}=A\\cdot\\overline{B}$\nFor $AB=00,01,10,11$: $Y=0,0,1,0$.",
+  "distractor_notes": "A: Interchanges the roles of $A$ and $B$.\nC: Gives the OR output.\nD: Gives the NAND output before the final AND gate."
+ },
+ "variant_of": "g5e3d6104737d",
+ "author_model": "openai/gpt-6-luna-pro"
+}

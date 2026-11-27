@@ -1,0 +1,68 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "general solution",
+  "brief": "Solve a trigonometric equation combining sin and cos (reducible via t-formulas or auxiliary angle) and write the general solution.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:111",
+   "2026s2:92",
+   "2024s2:130"
+  ]
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\sin x+\\cos x=2\\sin 2x$ is (where $\\alpha=\\sin^{-1}\\left(\\dfrac{1+\\sqrt{17}}{4\\sqrt2}\\right)$ and $\\beta=\\sin^{-1}\\left(\\dfrac{1-\\sqrt{17}}{4\\sqrt2}\\right)$)",
+ "options": [
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi\\right\\}$",
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+n\\pi,\\dfrac{3\\pi}{4}-\\alpha+n\\pi,\\beta-\\dfrac{\\pi}{4}+n\\pi,\\dfrac{3\\pi}{4}-\\beta+n\\pi\\right\\}$",
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}-\\alpha+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}-\\beta+2n\\pi\\right\\}$",
+  "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}+\\alpha+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}+\\beta+2n\\pi\\right\\}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set y=x+π/4. Then √2 sin y = -2 cos 2y, giving 2 sin²y − sin y/√2 − 1 = 0. Hence sin y = (1±√17)/(4√2). The two sine branches for each value yield option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=\\sin x+\\cos x=\\sqrt2\\sin\\left(x+\\dfrac{\\pi}{4}\\right)$; $\\sin2x=u^2-1$. $u=2(u^2-1)\\Rightarrow 2u^2-u-2=0\\Rightarrow u=\\dfrac{1\\pm\\sqrt{17}}4$. Thus $\\sin\\left(x+\\dfrac{\\pi}{4}\\right)=\\sin\\alpha$ or $\\sin\\beta$; each gives $x=\\theta-\\dfrac{\\pi}{4}+2n\\pi$ or $x=\\dfrac{3\\pi}{4}-\\theta+2n\\pi$.\n\nIndependent check: Set y=x+π/4. Then √2 sin y = -2 cos 2y, giving 2 sin²y − sin y/√2 − 1 = 0. Hence sin y = (1±√17)/(4√2). The two sine branches for each value yield option A.",
+ "solution": "Let $u=\\frac{[?]}{}$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "The general solution of $\\sin x+\\cos x=2\\sin 2x$ is (where $\\alpha=\\sin^{-1}\\left(\\dfrac{1+\\sqrt{17}}{4\\sqrt2}\\right)$ and $\\beta=\\sin^{-1}\\left(\\dfrac{1-\\sqrt{17}}{4\\sqrt2}\\right)$)",
+  "options": [
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}-\\alpha+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}-\\beta+2n\\pi\\right\\}$",
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+n\\pi,\\dfrac{3\\pi}{4}-\\alpha+n\\pi,\\beta-\\dfrac{\\pi}{4}+n\\pi,\\dfrac{3\\pi}{4}-\\beta+n\\pi\\right\\}$",
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi\\right\\}$",
+   "$\\displaystyle\\bigcup_{n\\in\\mathbb Z}\\left\\{\\alpha-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}+\\alpha+2n\\pi,\\beta-\\dfrac{\\pi}{4}+2n\\pi,\\dfrac{3\\pi}{4}+\\beta+2n\\pi\\right\\}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$u=\\sin x+\\cos x=\\sqrt2\\sin\\left(x+\\dfrac{\\pi}{4}\\right)$; $\\sin2x=u^2-1$. $u=2(u^2-1)\\Rightarrow 2u^2-u-2=0\\Rightarrow u=\\dfrac{1\\pm\\sqrt{17}}4$. Thus $\\sin\\left(x+\\dfrac{\\pi}{4}\\right)=\\sin\\alpha$ or $\\sin\\beta$; each gives $x=\\theta-\\dfrac{\\pi}{4}+2n\\pi$ or $x=\\dfrac{3\\pi}{4}-\\theta+2n\\pi$.",
+  "distractor_notes": "B uses period $\\pi$ instead of $2\\pi$; C omits the supplementary-angle branches; D uses the wrong sign in the supplementary-angle branches."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

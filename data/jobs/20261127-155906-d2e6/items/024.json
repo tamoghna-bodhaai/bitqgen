@@ -1,0 +1,70 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Temperature scales",
+  "archetype": "linear scale conversion",
+  "brief": "A temperature has a specific numerical reading that is equal (or in a given ratio) on two non-standard thermometers (e.g. X and Celsius); use the linear relation between scales to find the reading.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:18",
+   "2024s1:26",
+   "2026s1:10"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A thermometer X reads $10$ °X at $0$ °C and $160$ °X at $100$ °C. At what Celsius temperature do the two thermometers show the same numerical reading?",
+ "options": [
+  "$-20$ °C",
+  "$-10$ °C",
+  "$20$ °C",
+  "$40$ °C"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The X reading is X = 10 + 1.5C. Equating X = C gives C = -20 °C.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$X=1.5C+10$; setting $X=C$ gives $C=-20$ °C.\n\nIndependent check: The X reading is X = 10 + 1.5C. Equating X = C gives C = -20 °C.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A thermometer X reads $10$ °X at $0$ °C and $160$ °X at $100$ °C. At what Celsius temperature do the two thermometers show the same numerical reading?",
+  "options": [
+   "$-20$ °C",
+   "$-10$ °C",
+   "$20$ °C",
+   "$40$ °C"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$X=1.5C+10$; setting $X=C$ gives $C=-20$ °C.",
+  "distractor_notes": "B: arithmetic error in solving the equality; C: uses the offset with the wrong sign; D: confuses the scale interval with the reading."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

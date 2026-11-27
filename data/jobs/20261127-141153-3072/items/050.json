@@ -1,0 +1,68 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Stability of dienes / aromaticity",
+  "archetype": "stability ordering",
+  "brief": "Rank a set of cyclic/acyclic species (including an antiaromatic ion and an aromatic ion) by stability using Hückel's rule.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:53",
+   "2025s1:46",
+   "2023s2:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "Select the decreasing order of stability of the following anions, considering resonance and cyclic conjugation.",
+ "options": [
+  "Cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > allyl anion ($\\text{C}_3\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$) > cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$)",
+  "Cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$) > allyl anion ($\\text{C}_3\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$)",
+  "Allyl anion ($\\text{C}_3\\text{H}_5^-$) > cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$) > cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$)",
+  "Cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$) > cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > allyl anion ($\\text{C}_3\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$)"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cyclopentadienyl anion is aromatic with 6 π electrons; allyl anion is resonance-stabilized; propyl anion is localized. The cyclopropenyl anion has 4 π electrons in cyclic conjugation and is antiaromatic, making it least stable. Thus the order is Cp > allyl > propyl > cyclopropenyl.",
+   "answer": "A",
+   "confidence": 0.94,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Cyclopentadienyl anion: $6\\pi$ electrons, aromatic. Allyl anion: resonance-delocalized; propyl anion: localized. Cyclopropenyl anion: $4\\pi$ electrons in a cyclic conjugated system, antiaromatic. Hence the order is cyclopentadienyl $>$ allyl $>$ propyl $>$ cyclopropenyl.\n\nIndependent check: Cyclopentadienyl anion is aromatic with 6 π electrons; allyl anion is resonance-stabilized; propyl anion is localized. The cyclopropenyl anion has 4 π electrons in cyclic conjugation and is antiaromatic, making it least stable. Thus the order is Cp > allyl > propyl > cyclopropenyl.",
+ "solution": "Cyclopentadienyl anion has $6\\pi$ electrons and is aromatic; the allyl anion is resonance-stabilized, whereas the propyl anion is localized. The cyclopropenyl anion has $4\\pi$ electrons in a cyclic conjugated system and is antiaromatic, so it is least stable. Hence the decreasing order is cyclopentadienyl $>$ allyl $>$ propyl $>$ cyclopropenyl.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Select the decreasing order of stability of the following anions, considering resonance and cyclic conjugation.",
+  "options": [
+   "Cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > allyl anion ($\\text{C}_3\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$) > cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$)",
+   "Cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$) > allyl anion ($\\text{C}_3\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$)",
+   "Allyl anion ($\\text{C}_3\\text{H}_5^-$) > cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$) > cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$)",
+   "Cyclopropenyl anion ($\\text{C}_3\\text{H}_3^-$) > cyclopentadienyl anion ($\\text{C}_5\\text{H}_5^-$) > allyl anion ($\\text{C}_3\\text{H}_5^-$) > propyl anion ($\\text{C}_3\\text{H}_7^-$)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Cyclopentadienyl anion: $6\\pi$ electrons, aromatic. Allyl anion: resonance-delocalized; propyl anion: localized. Cyclopropenyl anion: $4\\pi$ electrons in a cyclic conjugated system, antiaromatic. Hence the order is cyclopentadienyl $>$ allyl $>$ propyl $>$ cyclopropenyl.",
+  "distractor_notes": "B: Treats the $4\\pi$ cyclopropenyl anion as more stable than the acyclic resonance-stabilized anion. C: Underestimates aromatic stabilization of the cyclopentadienyl anion. D: Treats the antiaromatic cyclopropenyl anion as the most stable."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

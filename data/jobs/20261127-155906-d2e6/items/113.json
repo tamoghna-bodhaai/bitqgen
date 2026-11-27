@@ -1,0 +1,70 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Adjoint determinant properties",
+  "archetype": "split-and-factor",
+  "brief": "For a 3×3 matrix A with given |A|, evaluate |adj(adj A)| or a combination like |A·adj A| using determinant identities; hard version with |adj A| = |A|^(n−1) twice.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:105",
+   "2025s2:129",
+   "2025s2:121"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If $A$ is a $3\\times3$ matrix with $|A|=-2$, find $|\\operatorname{adj}(\\operatorname{adj}A)|+|A\\operatorname{adj}A|$.",
+ "options": [
+  "$-8$",
+  "$8$",
+  "$16$",
+  "$24$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a 3×3 matrix, |adj A| = |A|² = 4. Hence |adj(adj A)| = 4² = 16, and |A adj A| = |A||adj A| = (−2)(4) = −8. Their sum is 8.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $3\\times3$ matrices, $|\\operatorname{adj}M|=|M|^2$. Hence $|\\operatorname{adj}A|=4$ and $|\\operatorname{adj}(\\operatorname{adj}A)|=4^2=16$. Also $|A\\operatorname{adj}A|=(-2)(4)=-8$. Sum $=8$.\n\nIndependent check: For a 3×3 matrix, |adj A| = |A|² = 4. Hence |adj(adj A)| = 4² = 16, and |A adj A| = |A||adj A| = (−2)(4) = −8. Their sum is 8.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "If $A$ is a $3\\times3$ matrix with $|A|=-2$, find $|\\operatorname{adj}(\\operatorname{adj}A)|+|A\\operatorname{adj}A|$.",
+  "options": [
+   "$-8$",
+   "$8$",
+   "$16$",
+   "$24$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "For $3\\times3$ matrices, $|\\operatorname{adj}M|=|M|^2$. Hence $|\\operatorname{adj}A|=4$ and $|\\operatorname{adj}(\\operatorname{adj}A)|=4^2=16$. Also $|A\\operatorname{adj}A|=(-2)(4)=-8$. Sum $=8$.",
+  "distractor_notes": "A: omits the first determinant; C: omits the second determinant; D: takes the second determinant as positive."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "rms speed vs molar mass",
+  "archetype": "proportionality-scaling",
+  "brief": "At same temperature compare rms speeds of two gases of given molar masses; extend to find temperature at which a lighter gas matches rms speed of a heavier one.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:23",
+   "2025s2:7",
+   "2023s1:18"
+  ]
+ },
+ "status": "ok",
+ "stem": "The molar masses of helium and oxygen are $4$ g mol$^{-1}$ and $32$ g mol$^{-1}$, respectively. At what temperature will helium have the same rms speed as oxygen at $300$ K?",
+ "options": [
+  "$37.5$ K",
+  "$75$ K",
+  "$150$ K",
+  "$600$ K"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set the rms-speed expressions equal: T_He/4 = 300/32, so T_He = 37.5 K.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For equal rms speeds, $\\dfrac{T_{\\text{He}}}{M_{\\text{He}}}=\\dfrac{T_{\\text{O}_2}}{M_{\\text{O}_2}}$.\n$T_{\\text{He}}=300\\times\\dfrac{4}{32}=37.5$ K.\n\nIndependent check: Set the rms-speed expressions equal: T_He/4 = 300/32, so T_He = 37.5 K.",
+ "solution": "Since $v_{\\text{rms}}=\\sqrt{3RT/M}$, equal rms speeds require equal $T/M$.\n$$\\frac{T_{\\text{He}}}{4}=\\frac{300}{32}\\quad\\Rightarrow\\quad T_{\\text{He}}=37.5\\text{ K}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The molar masses of helium and oxygen are $4$ g mol$^{-1}$ and $32$ g mol$^{-1}$, respectively. At what temperature will helium have the same rms speed as oxygen at $300$ K?",
+  "options": [
+   "$37.5$ K",
+   "$75$ K",
+   "$150$ K",
+   "$600$ K"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For equal rms speeds, $\\dfrac{T_{\\text{He}}}{M_{\\text{He}}}=\\dfrac{T_{\\text{O}_2}}{M_{\\text{O}_2}}$.\n$T_{\\text{He}}=300\\times\\dfrac{4}{32}=37.5$ K.",
+  "distractor_notes": "B: Uses a molar-mass ratio of $1:4$; C: uses the square-root mass ratio as the temperature ratio; D: inverts the molar-mass ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

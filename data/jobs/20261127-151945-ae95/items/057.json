@@ -1,0 +1,79 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Protective colloids",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:35",
+   "2023s2:46",
+   "2024s1:59"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge4c947d9adf3"
+ },
+ "status": "ok",
+ "stem": "A protein represented by the peptide fragment in the figure is added to a sulphur sol. What is its main effect?",
+ "options": [
+  "It helps prevent coagulation by forming an adsorbed layer around the particles",
+  "It promotes coagulation by neutralising the particles’ charge",
+  "It converts the sol into an emulsion",
+  "It peptises the sulphur particles"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q057_stem_v0.png",
+  "width_pct": 70,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The peptide is a lyophilic colloid; it adsorbs onto sulphur particles and forms a protective layer that inhibits coagulation.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "A protein is a lyophilic colloid.\\nLyophilic colloids can protect lyophobic sols by adsorbing onto their particles.\\nThus, the protein helps prevent coagulation.\n\nIndependent check: The peptide is a lyophilic colloid; it adsorbs onto sulphur particles and forms a protective layer that inhibits coagulation.",
+ "solution": "Proteins are lyophilic colloids and can protect lyophobic sols by adsorption onto their particles.\nThe protein forms a protective layer around sulphur particles, preventing their coagulation.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A protein represented by the peptide fragment in the figure is added to a sulphur sol. What is its main effect?",
+  "options": [
+   "It promotes coagulation by neutralising the particles’ charge",
+   "It helps prevent coagulation by forming an adsorbed layer around the particles",
+   "It converts the sol into an emulsion",
+   "It peptises the sulphur particles"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw the skeletal structure specified by the SMILES as a glycine tripeptide fragment, and label it “polypeptide fragment”.",
+   "smiles": "NCC(=O)NCC(=O)NCC(=O)O"
+  },
+  "difficulty_estimate": 1,
+  "working": "A protein is a lyophilic colloid.\\nLyophilic colloids can protect lyophobic sols by adsorbing onto their particles.\\nThus, the protein helps prevent coagulation.",
+  "distractor_notes": "A: Confuses protective action with charge neutralisation. C: Confuses a sol with an emulsion. D: Confuses protection with peptisation."
+ },
+ "variant_of": "ge4c947d9adf3",
+ "author_model": "openai/gpt-6-luna-pro"
+}

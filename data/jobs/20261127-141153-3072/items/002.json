@@ -1,0 +1,68 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile motion",
+  "archetype": "two-equation kinematics",
+  "brief": "Projectile launched from ground with given speed and angle; find a standard quantity such as time of flight or horizontal range using two suvat equations.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:15",
+   "2022:21",
+   "2026s1:9"
+  ]
+ },
+ "status": "ok",
+ "stem": "A projectile is launched from level ground at $20$ m s$^{-1}$ at an angle of $30^\\circ$ to the horizontal. Taking $g=10$ m s$^{-2}$, what is its horizontal range?",
+ "options": [
+  "$10\\sqrt{3}$ m",
+  "$40\\sqrt{3}$ m",
+  "$40$ m",
+  "$20\\sqrt{3}$ m"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use R = u² sin(2θ)/g = 400 sin 60°/10 = 20√3 m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u_x=20\\cos30^\\circ=10\\sqrt{3}$ m s$^{-1}$; $u_y=20\\sin30^\\circ=10$ m s$^{-1}$. $0=u_y t-\\dfrac{1}{2}gt^2\\Rightarrow t=2$ s. $R=u_xt=20\\sqrt{3}$ m.\n\nIndependent check: Use R = u² sin(2θ)/g = 400 sin 60°/10 = 20√3 m.",
+ "solution": "For a projectile returning to the same level, $R=\\dfrac{u^2\\sin 2\\theta}{g}$.\n$$R=\\dfrac{20^2\\sin 60^\\circ}{10}=20\\sqrt{3}\\text{ m}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A projectile is launched from level ground at $20$ m s$^{-1}$ at an angle of $30^\\circ$ to the horizontal. Taking $g=10$ m s$^{-2}$, what is its horizontal range?",
+  "options": [
+   "$10\\sqrt{3}$ m",
+   "$20\\sqrt{3}$ m",
+   "$40$ m",
+   "$40\\sqrt{3}$ m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$u_x=20\\cos30^\\circ=10\\sqrt{3}$ m s$^{-1}$; $u_y=20\\sin30^\\circ=10$ m s$^{-1}$. $0=u_y t-\\dfrac{1}{2}gt^2\\Rightarrow t=2$ s. $R=u_xt=20\\sqrt{3}$ m.",
+  "distractor_notes": "A: omits the factor of 2 in the flight time. C: uses an incorrect horizontal component or range formula. D: uses the full launch speed as the horizontal component."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

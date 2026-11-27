@@ -1,0 +1,71 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Set operations and cardinality",
+  "archetype": "property check",
+  "brief": "Given cardinalities of A, B and their union/intersection, compute |A ∪ B| or |A − B|; or verify a stated set identity with small concrete sets.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:103",
+   "2024s2:119",
+   "2024s1:122"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf734620433bf"
+ },
+ "status": "ok",
+ "stem": "For finite sets $A$ and $B$, $|A|=21$, $|B|=16$ and $|A\\cup B|=29$. Find $|A-B|$.",
+ "options": [
+  "$8$",
+  "$16$",
+  "$13$",
+  "$21$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "|A∩B|=21+16−29=8, so |A−B|=21−8=13.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|A\\cap B|=|A|+|B|-|A\\cup B|=21+16-29=8$\\n$|A-B|=|A|-|A\\cap B|=21-8=13$\n\nIndependent check: |A∩B|=21+16−29=8, so |A−B|=21−8=13.",
+ "solution": "Using $|A\\cup B|=|A|+|B|-|A\\cap B|$, we get\n$$|A\\cap B|=21+16-29=8.$$\nHence, $|A-B|=|A|-|A\\cap B|=21-8=13$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For finite sets $A$ and $B$, $|A|=21$, $|B|=16$ and $|A\\cup B|=29$. Find $|A-B|$.",
+  "options": [
+   "$8$",
+   "$13$",
+   "$16$",
+   "$21$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$|A\\cap B|=|A|+|B|-|A\\cup B|=21+16-29=8$\\n$|A-B|=|A|-|A\\cap B|=21-8=13$",
+  "distractor_notes": "A: gives $|A\\cap B|$ instead. C: uses $|B|$ without removing the intersection. D: uses $|A|$ without removing the intersection."
+ },
+ "variant_of": "gf734620433bf",
+ "author_model": "openai/gpt-6-luna-pro"
+}

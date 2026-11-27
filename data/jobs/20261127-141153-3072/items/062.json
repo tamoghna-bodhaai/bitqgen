@@ -1,0 +1,78 @@
+{
+ "qno": 62,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 62,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Grignard reagent",
+  "archetype": "reaction product",
+  "brief": "Ask which compound is obtained when a Grignard reagent reacts with a specified substrate (water/CO2/methanol) or which reagent destroys a Grignard reagent; simple product identification.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:32",
+   "2026s1:40",
+   "2026s2:42"
+  ]
+ },
+ "status": "ok",
+ "stem": "What is formed after hydrolysis of the product obtained by reacting $\\text{C}_2\\text{H}_5\\text{MgBr}$ with $\\text{CO}_2$?",
+ "options": [
+  "Ethanoic acid",
+  "Butanoic acid",
+  "Propanoic acid",
+  "2-Methylpropanoic acid"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": [
+  "figs/q062_optA_v0.png",
+  "figs/q062_optC_v0.png",
+  "figs/q062_optB_v0.png",
+  "figs/q062_optD_v0.png"
+ ],
+ "option_width": 35,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "C₂H₅MgBr reacts with CO₂ to form a carboxylate with one extra carbon; hydrolysis gives CH₃CH₂COOH, propanoic acid.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_2\\text{H}_5\\text{MgBr}+\\text{CO}_2\\rightarrow\\text{C}_2\\text{H}_5\\text{CO}_2\\text{MgBr}$\\nHydrolysis gives $\\text{C}_2\\text{H}_5\\text{COOH}$ (propanoic acid).\n\nIndependent check: C₂H₅MgBr reacts with CO₂ to form a carboxylate with one extra carbon; hydrolysis gives CH₃CH₂COOH, propanoic acid.",
+ "solution": "Grignard reagents react with $\\text{CO}_2$ to form a carboxylate with one additional carbon atom.\n$$\\text{C}_2\\text{H}_5\\text{MgBr}+\\text{CO}_2\\rightarrow\\text{C}_2\\text{H}_5\\text{CO}_2\\text{MgBr}\\xrightarrow{\\text{hydrolysis}}\\text{C}_2\\text{H}_5\\text{COOH}$$\nThe product is propanoic acid.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "What is formed after hydrolysis of the product obtained by reacting $\\text{C}_2\\text{H}_5\\text{MgBr}$ with $\\text{CO}_2$?",
+  "options": [
+   "Ethanoic acid",
+   "Propanoic acid",
+   "Butanoic acid",
+   "2-Methylpropanoic acid"
+  ],
+  "option_smiles": [
+   "CC(=O)O",
+   "CCC(=O)O",
+   "CCCC(=O)O",
+   "CC(C)C(=O)O"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{C}_2\\text{H}_5\\text{MgBr}+\\text{CO}_2\\rightarrow\\text{C}_2\\text{H}_5\\text{CO}_2\\text{MgBr}$\\nHydrolysis gives $\\text{C}_2\\text{H}_5\\text{COOH}$ (propanoic acid).",
+  "distractor_notes": "A: Does not account for the carbon added from $\\text{CO}_2$.\\nC: Adds two carbons instead of one.\\nD: Gives the wrong carbon skeleton."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 40,
+ "section": "Physics",
+ "slot": {
+  "qno": 40,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Calorimetry with phase change",
+  "archetype": "multi-step numeric",
+  "brief": "Ice at 0°C (or below 0°C) mixed with water at a given temperature in a calorimeter; do a multi-step heat balance including latent heat and check whether all ice melts before setting the final equilibrium temperature.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:7",
+   "2026s2:22",
+   "2023s2:5"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A $100$ g piece of ice at $0^\\circ$C is mixed with $300$ g of water at $40^\\circ$C in an insulated vessel of negligible heat capacity. Take $c_{\\text{water}}=1\\ \\text{cal g}^{-1}\\, ^\\circ\\text{C}^{-1}$ and $L_f=80\\ \\text{cal g}^{-1}$. Find the final temperature.",
+ "options": [
+  "$0^\\circ$C",
+  "$10^\\circ$C",
+  "$20^\\circ$C",
+  "$30^\\circ$C"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cooling 300 g of water to 0°C releases 300×1×40 = 12,000 cal. Melting the ice takes 100×80 = 8,000 cal, leaving 4,000 cal to warm 400 g of water: ΔT = 4,000/400 = 10°C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Q_{\\text{water to }0}=300(1)(40)=12000\\ \\text{cal}$.\n$Q_{\\text{melt}}=100(80)=8000\\ \\text{cal}<12000\\ \\text{cal}$; all ice melts.\n$12000=8000+(300+100)(1)T$.\n$T=10^\\circ\\text{C}$\n\nIndependent check: Cooling 300 g of water to 0°C releases 300×1×40 = 12,000 cal. Melting the ice takes 100×80 = 8,000 cal, leaving 4,000 cal to warm 400 g of water: ΔT = 4,000/400 = 10°C.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A $100$ g piece of ice at $0^\\circ$C is mixed with $300$ g of water at $40^\\circ$C in an insulated vessel of negligible heat capacity. Take $c_{\\text{water}}=1\\ \\text{cal g}^{-1}\\, ^\\circ\\text{C}^{-1}$ and $L_f=80\\ \\text{cal g}^{-1}$. Find the final temperature.",
+  "options": [
+   "$0^\\circ$C",
+   "$10^\\circ$C",
+   "$20^\\circ$C",
+   "$30^\\circ$C"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$Q_{\\text{water to }0}=300(1)(40)=12000\\ \\text{cal}$.\n$Q_{\\text{melt}}=100(80)=8000\\ \\text{cal}<12000\\ \\text{cal}$; all ice melts.\n$12000=8000+(300+100)(1)T$.\n$T=10^\\circ\\text{C}$",
+  "distractor_notes": "A: assumes the mixture remains at the melting point. C: uses half the given latent heat. D: ignores the heat required to melt the ice."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,48 +20,51 @@
   ]
  },
  "status": "ok",
- "stem": "The following five sentences (P, Q, R, S, and T) when properly sequenced form a coherent paragraph. Which sentence should come **FIRST** in the sequence?\n\n**P.** At its peak, it accommodated over ten thousand students and two thousand teachers from across Asia.\n**Q.** Nalanda was an acclaimed centre of higher learning in ancient Magadha, flourishing from the fifth to the twelfth century CE.\n**R.** This vast residential complex offered rigorous instruction in subjects ranging from Buddhist philosophy to astronomy and medicine.\n**S.** Its renowned library, known as the Dharmaganja, housed an immense collection of sacred manuscripts and scholarly treatises.\n**T.** Consequently, scholars from distant lands like China, Korea, and Tibet undertook arduous journeys just to study there.",
+ "stem": "Five sentences form a coherent paragraph. Which sentence should come **FIRST**?",
  "options": [
-  "P",
-  "Q",
-  "R",
-  "S"
+  "Long before electric lighting became common, people relied on oil lamps to illuminate their homes.",
+  "This change made evening activities easier and extended working hours.",
+  "As a result, many households gradually replaced their older lamps.",
+  "The new devices were brighter and required less frequent attention."
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Q introduces Nalanda with no anaphoric reference, so it must open. P ('it'), R ('This vast residential complex'), S ('Its'), and T ('Consequently') all require antecedents. Coherent order: Q-P-R-S-T (introduction → peak size → residential complex/curriculum → library → consequence for foreign scholars). First sentence = Q.",
-   "answer": "B",
-   "confidence": 0.98,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "(A) introduces the earlier use of oil lamps; (D), (B), and (C) then describe the change and its effects. Only four sentences are provided, despite the reference to five.",
+   "answer": "A",
+   "confidence": 0.99,
    "multiple_correct": false,
-   "issues": [],
-   "difficulty": 2
+   "issues": [
+    "The prompt says five sentences, but only four options are provided."
+   ],
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "To determine the opening sentence of the paragraph, we look for an independent sentence that introduces the primary subject without relying on preceding context:\n- Sentence **Q** introduces the noun 'Nalanda' as an ancient centre of higher learning in Magadha along with its historical timeframe, establishing the topic independently.\n- Sentence **P** uses the personal pronoun 'it' without an antecedent.\n- Sentence **R** uses the demonstrative phrase 'This vast residential complex', pointing back to a previously identified place.\n- Sentence **S** uses the possessive determiner 'Its', requiring Nalanda to be introduced first.\n- Sentence **T** begins with the transition 'Consequently', indicating a result of the features previously described.\n\nThus, **Q** must be the first sentence (the full logical sequence being Q-P-R-S-T).\n\nIndependent check: Q introduces Nalanda with no anaphoric reference, so it must open. P ('it'), R ('This vast residential complex'), S ('Its'), and T ('Consequently') all require antecedents. Coherent order: Q-P-R-S-T (introduction → peak size → residential complex/curriculum → library → consequence for foreign scholars). First sentence = Q.",
+ "working": "A introduces the topic independently. B begins with “This change,” C with “As a result,” and D refers to “The new devices”; each requires preceding context.\n\nIndependent check: (A) introduces the earlier use of oil lamps; (D), (B), and (C) then describe the change and its effects. Only four sentences are provided, despite the reference to five.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The following five sentences (P, Q, R, S, and T) when properly sequenced form a coherent paragraph. Which sentence should come **FIRST** in the sequence?\n\n**P.** At its peak, it accommodated over ten thousand students and two thousand teachers from across Asia.\n**Q.** Nalanda was an acclaimed centre of higher learning in ancient Magadha, flourishing from the fifth to the twelfth century CE.\n**R.** This vast residential complex offered rigorous instruction in subjects ranging from Buddhist philosophy to astronomy and medicine.\n**S.** Its renowned library, known as the Dharmaganja, housed an immense collection of sacred manuscripts and scholarly treatises.\n**T.** Consequently, scholars from distant lands like China, Korea, and Tibet undertook arduous journeys just to study there.",
+  "stem": "Five sentences form a coherent paragraph. Which sentence should come **FIRST**?",
   "options": [
-   "P",
-   "Q",
-   "R",
-   "S"
+   "Long before electric lighting became common, people relied on oil lamps to illuminate their homes.",
+   "This change made evening activities easier and extended working hours.",
+   "As a result, many households gradually replaced their older lamps.",
+   "The new devices were brighter and required less frequent attention."
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "To determine the opening sentence of the paragraph, we look for an independent sentence that introduces the primary subject without relying on preceding context:\n- Sentence **Q** introduces the noun 'Nalanda' as an ancient centre of higher learning in Magadha along with its historical timeframe, establishing the topic independently.\n- Sentence **P** uses the personal pronoun 'it' without an antecedent.\n- Sentence **R** uses the demonstrative phrase 'This vast residential complex', pointing back to a previously identified place.\n- Sentence **S** uses the possessive determiner 'Its', requiring Nalanda to be introduced first.\n- Sentence **T** begins with the transition 'Consequently', indicating a result of the features previously described.\n\nThus, **Q** must be the first sentence (the full logical sequence being Q-P-R-S-T).",
-  "distractor_notes": "A: Incorrect because sentence P opens with the pronoun 'it', requiring a prior mention of the noun Nalanda.\nC: Incorrect because sentence R uses the demonstrative determiner 'This' referring back to an already established setting.\nD: Incorrect because sentence S starts with the possessive 'Its', which lacks an antecedent unless Q precedes it.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "A introduces the topic independently. B begins with “This change,” C with “As a result,” and D refers to “The new devices”; each requires preceding context.",
+  "distractor_notes": "B: Treats an unexplained change as already introduced.\nC: Presents a consequence before its cause.\nD: Refers to devices not yet introduced."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

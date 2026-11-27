@@ -1,0 +1,68 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment",
+  "archetype": "unpaired electron count",
+  "brief": "Given spin-only magnetic moment of a transition metal ion, back-calculate the number of unpaired electrons and identify the metal ion.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:49",
+   "2023s2:35",
+   "2026s2:44"
+  ]
+ },
+ "status": "ok",
+ "stem": "A transition-metal ion has a spin-only magnetic moment of $\\sqrt{15}\\ \\text{BM}$. Which ion can it be?",
+ "options": [
+  "$\\text{V}^{2+}$",
+  "$\\text{Ti}^{3+}$",
+  "$\\text{Cr}^{2+}$",
+  "$\\text{Ni}^{2+}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For spin-only moment, μ = √[n(n+2)] BM. √15 BM gives n = 3 unpaired electrons. V²⁺ has configuration 3d³, with three unpaired electrons.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mu=\\sqrt{n(n+2)}$; $15=n(n+2)\\Rightarrow n=3$; $\\text{V}^{2+}:[\\text{Ar}]3d^3$.\n\nIndependent check: For spin-only moment, μ = √[n(n+2)] BM. √15 BM gives n = 3 unpaired electrons. V²⁺ has configuration 3d³, with three unpaired electrons.",
+ "solution": "The spin-only magnetic moment is $\\mu=\\sqrt{n(n+2)}\\,\\text{BM}$.\n$$15=n(n+2)\\Rightarrow n=3$$\n$\\text{V}^{2+}$ has configuration $[\\text{Ar}]3d^3$, with three unpaired electrons.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A transition-metal ion has a spin-only magnetic moment of $\\sqrt{15}\\ \\text{BM}$. Which ion can it be?",
+  "options": [
+   "$\\text{Ti}^{3+}$",
+   "$\\text{V}^{2+}$",
+   "$\\text{Cr}^{2+}$",
+   "$\\text{Ni}^{2+}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\mu=\\sqrt{n(n+2)}$; $15=n(n+2)\\Rightarrow n=3$; $\\text{V}^{2+}:[\\text{Ar}]3d^3$.",
+  "distractor_notes": "A: Ti$^{3+}$ has one unpaired electron. C: Cr$^{2+}$ has four unpaired electrons. D: Ni$^{2+}$ has two unpaired electrons."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Isothermal reversible work",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:51",
+   "2025s2:51",
+   "2022:33"
+  ],
+  "origin": "variant",
+  "bank_ref": "gdc38213ab0a6"
+ },
+ "status": "ok",
+ "stem": "One mole of an ideal gas expands reversibly and isothermally at $300$ K from $2$ L to $20$ L. Find the work done on the gas. Take $R=2$ cal K$^{-1}$ mol$^{-1}$.",
+ "options": [
+  "$-2.76$ kcal",
+  "$+1.38$ kcal",
+  "$-1.38$ kcal",
+  "$+2.76$ kcal"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For reversible isothermal expansion, work on the gas is $W=-nRT\\ln(V_f/V_i)=-600\\ln 10\\,\\text{cal}\\approx-1.38\\,\\text{kcal}$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$w_{\\mathrm{rev}}=-2.303nRT\\log\\left(\\dfrac{V_2}{V_1}\\right)$$\n$$=-2.303(1)(2)(300)\\log(10)=-1381.8\\ \\text{cal}=-1.38\\ \\text{kcal}$$\n\nIndependent check: For reversible isothermal expansion, work on the gas is $W=-nRT\\ln(V_f/V_i)=-600\\ln 10\\,\\text{cal}\\approx-1.38\\,\\text{kcal}$.",
+ "solution": "For a reversible isothermal expansion, work done on the gas is\n$$w=-nRT\\ln\\left(\\frac{V_2}{V_1}\\right)=-600\\ln(10)\\ \\text{cal}\\approx-1.38\\ \\text{kcal}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "One mole of an ideal gas expands reversibly and isothermally at $300$ K from $2$ L to $20$ L. Find the work done on the gas. Take $R=2$ cal K$^{-1}$ mol$^{-1}$.",
+  "options": [
+   "$-2.76$ kcal",
+   "$-1.38$ kcal",
+   "$+1.38$ kcal",
+   "$+2.76$ kcal"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$w_{\\mathrm{rev}}=-2.303nRT\\log\\left(\\dfrac{V_2}{V_1}\\right)$$\n$$=-2.303(1)(2)(300)\\log(10)=-1381.8\\ \\text{cal}=-1.38\\ \\text{kcal}$$",
+  "distractor_notes": "A: doubles the magnitude; C: uses the wrong sign for work on an expanding gas; D: doubles the magnitude and uses the wrong sign."
+ },
+ "variant_of": "gdc38213ab0a6",
+ "author_model": "openai/gpt-6-luna-pro"
+}

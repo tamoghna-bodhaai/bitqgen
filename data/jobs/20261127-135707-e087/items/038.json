@@ -1,0 +1,68 @@
+{
+ "qno": 38,
+ "section": "Physics",
+ "slot": {
+  "qno": 38,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Propagation of errors",
+  "archetype": "error propagation",
+  "brief": "A physical quantity computed from measured quantities (e.g. ρ = m/(4/3 πr³) or T = 2π√(l/g)); given percentage errors in measurements, find maximum percentage error in result.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:9",
+   "2023s2:21",
+   "2021:33"
+  ]
+ },
+ "status": "ok",
+ "stem": "An object's acceleration is calculated from $a=\\dfrac{v^2-u^2}{2s}$. The measured values of $v$, $u$ and $s$ are $5.0\\ \\text{m s}^{-1}$, $3.0\\ \\text{m s}^{-1}$ and $4.0\\ \\text{m}$, with maximum percentage errors $1\\%$, $2\\%$ and $1.5\\%$, respectively. The maximum percentage error in $a$ is",
+ "options": [
+  "$2.375\\%$",
+  "$5.375\\%$",
+  "$7.5\\%$",
+  "$6.875\\%$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Numerator error: 2vδv + 2uδu = 2(5)(0.05) + 2(3)(0.06) = 0.86. Since v² − u² = 16, its percentage error is 0.86/16 × 100 = 5.375%. Adding the 1.5% error in s gives 6.875%.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$N=v^2-u^2=16$; $\\dfrac{\\Delta N}{N}\\times100=\\dfrac{2(25)(1)+2(9)(2)}{16}=5.375\\%$. Thus $\\dfrac{\\Delta a}{a}\\times100=5.375\\%+1.5\\%=6.875\\%$.\n\nIndependent check: Numerator error: 2vδv + 2uδu = 2(5)(0.05) + 2(3)(0.06) = 0.86. Since v² − u² = 16, its percentage error is 0.86/16 × 100 = 5.375%. Adding the 1.5% error in s gives 6.875%.",
+ "solution": "For $N=v^2-u^2=16$, the maximum percentage error is\n$$\\frac{\\Delta N}{N}\\times100=\\frac{2v^2(1\\%)+2u^2(2\\%)}{16}=5.375\\%.$$\nSince $a=N/(2s)$, add the percentage error in $s$: $5.375\\%+1.5\\%=6.875\\%$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "An object's acceleration is calculated from $a=\\dfrac{v^2-u^2}{2s}$. The measured values of $v$, $u$ and $s$ are $5.0\\ \\text{m s}^{-1}$, $3.0\\ \\text{m s}^{-1}$ and $4.0\\ \\text{m}$, with maximum percentage errors $1\\%$, $2\\%$ and $1.5\\%$, respectively. The maximum percentage error in $a$ is",
+  "options": [
+   "$2.375\\%$",
+   "$5.375\\%$",
+   "$6.875\\%$",
+   "$7.5\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$N=v^2-u^2=16$; $\\dfrac{\\Delta N}{N}\\times100=\\dfrac{2(25)(1)+2(9)(2)}{16}=5.375\\%$. Thus $\\dfrac{\\Delta a}{a}\\times100=5.375\\%+1.5\\%=6.875\\%$.",
+  "distractor_notes": "A: Subtracts the two numerator uncertainty contributions instead of adding them. B: Omits the percentage error in $s$. D: Adds the percentage errors in $v^2$ and $u^2$ directly, without accounting for the difference in the numerator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

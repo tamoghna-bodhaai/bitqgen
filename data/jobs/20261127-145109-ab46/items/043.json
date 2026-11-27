@@ -1,0 +1,78 @@
+{
+ "qno": 43,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 43,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order kinetics graph",
+  "archetype": "graph interpretation",
+  "brief": "Show a plot of log[A] vs t (or ln[A] vs t) for a first-order reaction in a figure; ask what the slope equals (–k/2.303 or –k) or extract k from the slope.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:71",
+   "2024s2:43",
+   "2025s2:44"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For a first-order reaction, a plot of $\\log[A]$ against time is shown in the figure. Find the rate constant $k$.",
+ "options": [
+  "$0.100$ min$^{-1}$",
+  "$2.303$ min$^{-1}$",
+  "$0.2303$ min$^{-1}$",
+  "$0.02303$ min$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q043_stem_v0.png",
+  "width_pct": 50,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The slope is (0 − 1)/(10 − 0) = −0.1 min⁻¹. For a base-10 log plot of a first-order reaction, slope = −k/2.303, so k = 0.2303 min⁻¹.",
+   "answer": "B",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Slope $=\\dfrac{0-1}{10-0}=-0.100$ min$^{-1}$\nFor a plot of $\\log[A]$ against $t$, slope $=-\\dfrac{k}{2.303}$.\n$k=2.303(0.100)=0.2303$ min$^{-1}$\n\nIndependent check: The slope is (0 − 1)/(10 − 0) = −0.1 min⁻¹. For a base-10 log plot of a first-order reaction, slope = −k/2.303, so k = 0.2303 min⁻¹.",
+ "solution": "For a first-order reaction, the slope of a plot of $\\log[A]$ against time is $-k/2.303$.\n$$\\text{Slope} = \\frac{0-1}{10-0}=-0.100\\ \\text{min}^{-1},\\qquad k=2.303(0.100)=0.2303\\ \\text{min}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a first-order reaction, a plot of $\\log[A]$ against time is shown in the figure. Find the rate constant $k$.",
+  "options": [
+   "$0.100$ min$^{-1}$",
+   "$0.2303$ min$^{-1}$",
+   "$2.303$ min$^{-1}$",
+   "$0.02303$ min$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a graph with horizontal axis labeled $t$ (min), marked at 0 and 10, and vertical axis labeled $\\log[A]$, marked at 0 and 1. Draw a straight descending line from (0, 1) to (10, 0), with no other plotted points or annotations.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "Slope $=\\dfrac{0-1}{10-0}=-0.100$ min$^{-1}$\nFor a plot of $\\log[A]$ against $t$, slope $=-\\dfrac{k}{2.303}$.\n$k=2.303(0.100)=0.2303$ min$^{-1}$",
+  "distractor_notes": "A: gives the magnitude of the graph's slope as $k$ without the factor $2.303$.\nC: multiplies by $2.303$ but omits the slope magnitude.\nD: divides by $2.303$ instead of multiplying."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Acidic nature of terminal alkynes",
+  "archetype": "predict-product",
+  "brief": "Alkyne chain undergoes selective reagent (Hg2+/H2SO4 hydration or Lindlar) then electrophilic substitution; pick the major product structure from a multi-step scheme.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:45",
+   "2024s2:56",
+   "2023s2:42"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Propyne is treated successively with $\\text{NaNH}_2$, $\\text{CH}_3\\text{I}$ and $\\text{HgSO}_4/\\text{H}_2\\text{SO}_4/\\text{H}_2\\text{O}$. What is the major final product?",
+ "options": [
+  "Butan-2-one",
+  "Propanone",
+  "Pentan-2-one",
+  "Butanal"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "NaNH₂ deprotonates propyne; CH₃I adds a methyl group to form but-2-yne. HgSO₄/H₂SO₄/H₂O hydrates it to butan-2-one.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{CH}_3\\text{C}\\equiv\\text{CH}\\xrightarrow{\\text{NaNH}_2}\\text{CH}_3\\text{C}\\equiv\\text{C}^-\\xrightarrow{\\text{CH}_3\\text{I}}\\text{CH}_3\\text{C}\\equiv\\text{CCH}_3$.\\nHg$^{2+}$/acid hydration of but-2-yne gives $\\text{CH}_3\\text{COCH}_2\\text{CH}_3$.\n\nIndependent check: NaNH₂ deprotonates propyne; CH₃I adds a methyl group to form but-2-yne. HgSO₄/H₂SO₄/H₂O hydrates it to butan-2-one.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Propyne is treated successively with $\\text{NaNH}_2$, $\\text{CH}_3\\text{I}$ and $\\text{HgSO}_4/\\text{H}_2\\text{SO}_4/\\text{H}_2\\text{O}$. What is the major final product?",
+  "options": [
+   "Butan-2-one",
+   "Propanone",
+   "Pentan-2-one",
+   "Butanal"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{CH}_3\\text{C}\\equiv\\text{CH}\\xrightarrow{\\text{NaNH}_2}\\text{CH}_3\\text{C}\\equiv\\text{C}^-\\xrightarrow{\\text{CH}_3\\text{I}}\\text{CH}_3\\text{C}\\equiv\\text{CCH}_3$.\\nHg$^{2+}$/acid hydration of but-2-yne gives $\\text{CH}_3\\text{COCH}_2\\text{CH}_3$.",
+  "distractor_notes": "B: gives the hydration product before accounting for methylation; C: adds an extra carbon; D: treats hydration as anti-Markovnikov."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 146,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 146,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "brief": "Find the image of a point in a given line (or equivalently the mirror image of a point across a line): use the perpendicular-foot construction and double it.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:110",
+   "2022:111",
+   "2024s1:116"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The image of the point $(7,1)$ in the line $3x+4y=0$ is",
+ "options": [
+  "$(1,-7)$",
+  "$(4,-3)$",
+  "$(-1,7)$",
+  "$(7,-1)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For normal vector (3,4), the reflection is (7,1) − 2[(3·7 + 4·1)/25](3,4) = (1,−7).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$d=3(7)+4(1)=25;\\quad (x',y')=(7,1)-\\dfrac{2d}{3^2+4^2}(3,4)=(1,-7)$\n\nIndependent check: For normal vector (3,4), the reflection is (7,1) − 2[(3·7 + 4·1)/25](3,4) = (1,−7).",
+ "solution": "For reflection in $ax+by=0$, use $(x',y')=(x,y)-\\dfrac{2(ax+by)}{a^2+b^2}(a,b)$. Thus\n$$\n(x',y')=(7,1)-\\frac{2(3\\cdot7+4\\cdot1)}{3^2+4^2}(3,4)=(1,-7).\n$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The image of the point $(7,1)$ in the line $3x+4y=0$ is",
+  "options": [
+   "$(1,-7)$",
+   "$(4,-3)$",
+   "$(-1,7)$",
+   "$(7,-1)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$d=3(7)+4(1)=25;\\quad (x',y')=(7,1)-\\dfrac{2d}{3^2+4^2}(3,4)=(1,-7)$",
+  "distractor_notes": "B: gives the perpendicular foot, not the image; C: reverses both image coordinates; D: interchanges the coordinates."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

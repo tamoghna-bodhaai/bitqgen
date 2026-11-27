@@ -1,0 +1,70 @@
+{
+ "qno": 149,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 149,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "Evaluate a limit of the form (1 − cos kx)/x² or sin(ax)/tan(bx) as x → 0 using standard limits; moderate 3/5.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:100",
+   "2025s1:103",
+   "2021:140"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to 0}\\dfrac{1-\\cos(4x)}{\\sin(2x)\\tan(3x)}$.",
+ "options": [
+  "$\\dfrac{2}{3}$",
+  "$\\dfrac{4}{3}$",
+  "$\\dfrac{8}{3}$",
+  "$\\dfrac{3}{2}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "As x→0, 1−cos(4x)∼8x² and sin(2x)tan(3x)∼(2x)(3x)=6x², so the limit is 8/6=4/3.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$1-\\cos(4x)\\sim 8x^2,\\quad \\sin(2x)\\tan(3x)\\sim(2x)(3x)=6x^2$. Hence the limit is $\\dfrac{8}{6}=\\dfrac{4}{3}$.\n\nIndependent check: As x→0, 1−cos(4x)∼8x² and sin(2x)tan(3x)∼(2x)(3x)=6x², so the limit is 8/6=4/3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to 0}\\dfrac{1-\\cos(4x)}{\\sin(2x)\\tan(3x)}$.",
+  "options": [
+   "$\\dfrac{2}{3}$",
+   "$\\dfrac{4}{3}$",
+   "$\\dfrac{8}{3}$",
+   "$\\dfrac{3}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$1-\\cos(4x)\\sim 8x^2,\\quad \\sin(2x)\\tan(3x)\\sim(2x)(3x)=6x^2$. Hence the limit is $\\dfrac{8}{6}=\\dfrac{4}{3}$.",
+  "distractor_notes": "A: incorrect coefficient in the denominator; C: omits the factor $\\dfrac{1}{2}$ in $1-\\cos(4x)$; D: uses the wrong small-angle coefficients."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,76 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Cleavage of ethers with HI",
+  "archetype": "mechanism-based product",
+  "brief": "Show an asymmetric ether (figure) treated with excess HI; identify both products and note why the cleavage occurs at the bond giving the stable carbocation/SN1 path.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:48",
+   "2025s1:43",
+   "2024s2:51"
+  ]
+ },
+ "status": "ok",
+ "stem": "The ether shown is treated with excess HI. Which pair of organic products forms, and what accounts for the cleavage?",
+ "options": [
+  "2-Iodo-2-methylpropane and iodoethane; cleavage proceeds via the stable tertiary carbocation",
+  "1-Iodo-2-methylpropane and iodoethane; cleavage proceeds via a primary carbocation",
+  "2-Iodo-2-methylpropane and ethanol; the alcohol is not further cleaved by excess HI",
+  "1-Iodopropane and iodomethane; cleavage occurs at both sides of the oxygen"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q052_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The ether is ethyl tert-butyl ether. HI cleaves the C–O bond on the tertiary side via a stable tertiary carbocation; excess HI converts the resulting ethanol to iodoethane. The products are 2-iodo-2-methylpropane and iodoethane.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(\\text{CH}_3)_3\\text{C-O-CH}_2\\text{CH}_3 + \\text{HI}$ cleaves at the tertiary side via $\\text{S}_\\text{N}1$.\\\n$(\\text{CH}_3)_3\\text{C-I} + \\text{CH}_3\\text{CH}_2\\text{OH}$ form initially.\\\nExcess HI converts ethanol to $\\text{CH}_3\\text{CH}_2\\text{I}$; final organic products: tert-butyl iodide and iodoethane.\n\nIndependent check: The ether is ethyl tert-butyl ether. HI cleaves the C–O bond on the tertiary side via a stable tertiary carbocation; excess HI converts the resulting ethanol to iodoethane. The products are 2-iodo-2-methylpropane and iodoethane.",
+ "solution": "Protonation of the ether is followed by C–O cleavage at the tertiary side via the stable tert-butyl carbocation:\n$$ (CH_3)_3C-O-CH_2CH_3 \\xrightarrow{HI} (CH_3)_3C-I + CH_3CH_2OH $$\nExcess HI converts ethanol to iodoethane, giving 2-iodo-2-methylpropane and iodoethane.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The ether shown is treated with excess HI. Which pair of organic products forms, and what accounts for the cleavage?",
+  "options": [
+   "2-Iodo-2-methylpropane and iodoethane; cleavage proceeds via the stable tertiary carbocation",
+   "1-Iodo-2-methylpropane and iodoethane; cleavage proceeds via a primary carbocation",
+   "2-Iodo-2-methylpropane and ethanol; the alcohol is not further cleaved by excess HI",
+   "1-Iodopropane and iodomethane; cleavage occurs at both sides of the oxygen"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw the ether with oxygen between an ethyl group (CH3CH2-) and a tert-butyl group (C(CH3)3-). Show the complete structure, with no reaction arrow or products.",
+   "smiles": "CCOC(C)(C)C"
+  },
+  "difficulty_estimate": 1,
+  "working": "$(\\text{CH}_3)_3\\text{C-O-CH}_2\\text{CH}_3 + \\text{HI}$ cleaves at the tertiary side via $\\text{S}_\\text{N}1$.\\\n$(\\text{CH}_3)_3\\text{C-I} + \\text{CH}_3\\text{CH}_2\\text{OH}$ form initially.\\\nExcess HI converts ethanol to $\\text{CH}_3\\text{CH}_2\\text{I}$; final organic products: tert-butyl iodide and iodoethane.",
+  "distractor_notes": "B: puts iodine on the primary carbon of the tert-butyl group.\\nC: overlooks further conversion of ethanol by excess HI.\\nD: incorrectly cleaves the carbon skeleton into smaller alkyl groups."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

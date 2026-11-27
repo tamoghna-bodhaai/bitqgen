@@ -1,75 +1,90 @@
 {
- "id": "20261126-121908-0a65",
- "config": {
-  "title": "BITSAT Practice Paper 2",
-  "subtitle": "",
-  "pattern_id": "bitsat_150",
-  "counts": null,
-  "profile": "balanced",
-  "difficulty": "match",
-  "seed": 661071,
-  "workers": 8,
-  "max_revisions": 2,
-  "run_critic": true,
-  "check_figures": true,
-  "export": true
- },
- "status": "running",
- "stage": "critic",
- "created": 1795675748.8840904,
- "progress": {
-  "total": 150,
-  "done": 150,
-  "ok": 150,
-  "flagged": 0
- },
- "cost": 0.1351,
- "started": 1795767599.2661119,
- "error": null,
- "cost_by_stage": {
-  "author_verbal": {
-   "calls": 2,
-   "cost": 0.00153,
-   "prompt_tokens": 2756,
-   "completion_tokens": 2688,
-   "truncated": 0
+  "id": "20261126-121908-0a65",
+  "config": {
+    "title": "BITSAT Practice Paper 2",
+    "subtitle": "",
+    "pattern_id": "bitsat_150",
+    "counts": null,
+    "profile": "balanced",
+    "difficulty": "match",
+    "seed": 661071,
+    "workers": 8,
+    "max_revisions": 2,
+    "run_critic": true,
+    "check_figures": true,
+    "export": true
   },
-  "author_pcm": {
-   "calls": 12,
-   "cost": 0.09442,
-   "prompt_tokens": 246553,
-   "completion_tokens": 149748,
-   "truncated": 0,
-   "batch_questions": 35,
-   "batch_missing": 0
+  "status": "failed",
+  "stage": "failed",
+  "created": 1795675748.8840904,
+  "progress": {
+    "total": 150,
+    "done": 150,
+    "ok": 150,
+    "flagged": 0
   },
-  "solver": {
-   "calls": 45,
-   "cost": 0.02359,
-   "prompt_tokens": 144284,
-   "completion_tokens": 29575,
-   "truncated": 0
+  "cost": 0.8618,
+  "started": 1795767599.2661119,
+  "error": "OpenRouter refused the request (403): Error code: 403 - Key limit exceeded (total limit). Manage it using https://openrouter.ai/workspaces/default/keys/fc05c91eadb4b75b0b0a953b0624f41552045f57d456afdde424bdd5b87c4a62 $20.02 of $20.00 used",
+  "cost_by_stage": {
+    "author_verbal": {
+      "calls": 26,
+      "cost": 0.01231,
+      "prompt_tokens": 43072,
+      "completion_tokens": 14170,
+      "truncated": 0
+    },
+    "author_pcm": {
+      "calls": 105,
+      "cost": 0.32983,
+      "prompt_tokens": 1296842,
+      "completion_tokens": 505108,
+      "truncated": 0,
+      "batch_questions": 35,
+      "batch_missing": 0
+    },
+    "solver": {
+      "calls": 157,
+      "cost": 0.08131,
+      "prompt_tokens": 519567,
+      "completion_tokens": 98626,
+      "truncated": 0
+    },
+    "solver_verbal": {
+      "calls": 28,
+      "cost": 0.00612,
+      "prompt_tokens": 11432,
+      "completion_tokens": 9951,
+      "truncated": 0
+    },
+    "figure_coder": {
+      "calls": 11,
+      "cost": 0.15549,
+      "prompt_tokens": 17129,
+      "completion_tokens": 12124,
+      "truncated": 0
+    },
+    "figure_checker": {
+      "calls": 11,
+      "cost": 0.00139,
+      "prompt_tokens": 7097,
+      "completion_tokens": 1189,
+      "truncated": 0
+    },
+    "critic": {
+      "calls": 5,
+      "cost": 0.18281,
+      "prompt_tokens": 22363,
+      "completion_tokens": 35711,
+      "truncated": 0
+    },
+    "tiebreaker": {
+      "calls": 18,
+      "cost": 0.0925,
+      "prompt_tokens": 31779,
+      "completion_tokens": 13963,
+      "truncated": 0
+    }
   },
-  "solver_verbal": {
-   "calls": 3,
-   "cost": 0.00205,
-   "prompt_tokens": 1693,
-   "completion_tokens": 3769,
-   "truncated": 0
-  },
-  "figure_coder": {
-   "calls": 1,
-   "cost": 0.01345,
-   "prompt_tokens": 1236,
-   "completion_tokens": 1098,
-   "truncated": 0
-  },
-  "figure_checker": {
-   "calls": 1,
-   "cost": 7e-05,
-   "prompt_tokens": 444,
-   "completion_tokens": 50,
-   "truncated": 0
-  }
- }
+  "finished": 1795768595.5446157
 }

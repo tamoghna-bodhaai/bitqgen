@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Optically pure $(S)$-3-bromo-3-methylhexane is subjected to hydrolysis in aqueous acetone. The substitution product obtained is:",
+ "stem": "Which reaction is expected to give a racemic substitution product at the carbon bearing the leaving group?",
  "options": [
-  "optically active due to complete inversion",
-  "optically active due to complete retention",
-  "optically inactive due to racemisation",
-  "optically inactive due to the formation of a meso compound"
+  "2-bromobutane reacting with sodium azide in dimethyl sulfoxide",
+  "Optically pure 1-chloro-1-phenylethane undergoing solvolysis in aqueous ethanol",
+  "1-bromobutane reacting with sodium cyanide in dimethyl sulfoxide",
+  "2-bromobutane reacting with sodium iodide in acetone"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "C3 bears Br, CH3, C2H5, C3H7 — a tertiary stereocenter. Hydrolysis in aqueous acetone (weak nucleophile, ionizing solvent) proceeds by SN1 via a planar tertiary carbocation; water attacks both faces equally, giving racemic 3-methylhexan-3-ol. The product has one stereocenter with four different groups, so it cannot be meso.",
-   "answer": "C",
-   "confidence": 0.97,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "(A) undergoes benzylic SN1 solvolysis via a planar carbocation, so attack from either face gives racemization. (B) and (D) undergo SN2 inversion; (C) has no stereogenic carbon at the substitution site.",
+   "answer": "A",
+   "confidence": 0.95,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "1. Identify the substrate structure: 3-bromo-3-methylhexane has four different groups attached to carbon-3 ($-\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_2\\text{CH}_3$, and $-\\text{Br}$), making it a chiral tertiary alkyl halide.\n2. Determine the mechanism: Because the substrate is tertiary and the nucleophile/solvent is weakly nucleophilic and polar protic (water in aqueous acetone), the reaction proceeds exclusively via the $\\text{S}_\\text{N}1$ pathway.\n3. Stereochemical outcome: The rate-determining step involves the loss of $\\text{Br}^-$ to generate an achiral, planar $sp^2$-hybridised tertiary carbocation: $$\\text{CH}_3\\text{CH}_2\\text{C}^+(\\text{CH}_3)\\text{CH}_2\\text{CH}_2\\text{CH}_3$$\nNucleophilic attack of $\\text{H}_2\\text{O}$ occurs with equal probability from either the top or bottom face of this planar intermediate. Deprotonation then yields an equimolar (50:50) mixture of $(R)$- and $(S)$-3-methylhexan-3-ol.\n4. Optical activity: This 1:1 enantiomeric pair forms a racemic mixture, which is optically inactive by external compensation (racemisation).\n\nIndependent check: C3 bears Br, CH3, C2H5, C3H7 — a tertiary stereocenter. Hydrolysis in aqueous acetone (weak nucleophile, ionizing solvent) proceeds by SN1 via a planar tertiary carbocation; water attacks both faces equally, giving racemic 3-methylhexan-3-ol. The product has one stereocenter with four different groups, so it cannot be meso.",
- "solution": "",
+ "working": "$\\text{1-chloro-1-phenylethane}$ forms a resonance-stabilised benzylic carbocation during solvolysis. Its planar intermediate can be attacked from either face, giving a nearly racemic substitution product. The other listed substitutions proceed mainly by $\\text{S}_\\text{N}2$ or do not involve a chiral reacting carbon.\n\nIndependent check: (A) undergoes benzylic SN1 solvolysis via a planar carbocation, so attack from either face gives racemization. (B) and (D) undergo SN2 inversion; (C) has no stereogenic carbon at the substitution site.",
+ "solution": "Solvolysis of optically pure 1-chloro-1-phenylethane forms a resonance-stabilized, planar benzylic carbocation.\n$$\\text{Ph–CH(Cl)–CH}_3 \\rightarrow \\text{Ph–C}^+\\text{H–CH}_3 \\xrightarrow{\\text{attack from either face}} \\text{racemic substitution product}$$\nThus, substitution at the chiral carbon gives a nearly racemic product.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Optically pure $(S)$-3-bromo-3-methylhexane is subjected to hydrolysis in aqueous acetone. The substitution product obtained is:",
+  "stem": "Which reaction is expected to give a racemic substitution product at the carbon bearing the leaving group?",
   "options": [
-   "optically active due to complete inversion",
-   "optically active due to complete retention",
-   "optically inactive due to racemisation",
-   "optically inactive due to the formation of a meso compound"
+   "Optically pure 1-chloro-1-phenylethane undergoing solvolysis in aqueous ethanol",
+   "2-bromobutane reacting with sodium azide in dimethyl sulfoxide",
+   "1-bromobutane reacting with sodium cyanide in dimethyl sulfoxide",
+   "2-bromobutane reacting with sodium iodide in acetone"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "1. Identify the substrate structure: 3-bromo-3-methylhexane has four different groups attached to carbon-3 ($-\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_3$, $-\\text{CH}_2\\text{CH}_2\\text{CH}_3$, and $-\\text{Br}$), making it a chiral tertiary alkyl halide.\n2. Determine the mechanism: Because the substrate is tertiary and the nucleophile/solvent is weakly nucleophilic and polar protic (water in aqueous acetone), the reaction proceeds exclusively via the $\\text{S}_\\text{N}1$ pathway.\n3. Stereochemical outcome: The rate-determining step involves the loss of $\\text{Br}^-$ to generate an achiral, planar $sp^2$-hybridised tertiary carbocation: $$\\text{CH}_3\\text{CH}_2\\text{C}^+(\\text{CH}_3)\\text{CH}_2\\text{CH}_2\\text{CH}_3$$\nNucleophilic attack of $\\text{H}_2\\text{O}$ occurs with equal probability from either the top or bottom face of this planar intermediate. Deprotonation then yields an equimolar (50:50) mixture of $(R)$- and $(S)$-3-methylhexan-3-ol.\n4. Optical activity: This 1:1 enantiomeric pair forms a racemic mixture, which is optically inactive by external compensation (racemisation).",
-  "distractor_notes": "Option A assumes an SN2 mechanism with Walden inversion, failing to recognize that tertiary halides do not undergo SN2 substitution due to steric hindrance.\nOption B assumes retention of configuration (such as in an SNi pathway), which does not occur under standard aqueous solvolysis.\nOption D incorrectly attributes the optical inactivity to internal compensation (a meso compound), which is impossible because the product contains only one stereocenter.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$\\text{1-chloro-1-phenylethane}$ forms a resonance-stabilised benzylic carbocation during solvolysis. Its planar intermediate can be attacked from either face, giving a nearly racemic substitution product. The other listed substitutions proceed mainly by $\\text{S}_\\text{N}2$ or do not involve a chiral reacting carbon.",
+  "distractor_notes": "B: A strong nucleophile in a polar aprotic solvent favours $\\text{S}_\\text{N}2$ inversion.\nC: The reacting carbon is not chiral.\nD: Iodide in acetone favours $\\text{S}_\\text{N}2$ inversion."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

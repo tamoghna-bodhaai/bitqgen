@@ -1,0 +1,68 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Young's modulus and elongation",
+  "archetype": "single-formula numerical",
+  "brief": "Direct one-step numerical: wire of given length, area, load hung from ceiling; find elongation or Young's modulus using Y = FL/(AΔL) with unit conversion.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:19",
+   "2024s1:22",
+   "2025s2:13"
+  ]
+ },
+ "status": "ok",
+ "stem": "A wire of length $2$ m and cross-sectional area $1.0\\times10^{-6}$ m$^2$ is suspended from a ceiling and supports a $100$ N load. If its Young's modulus is $2.0\\times10^{11}$ Pa, what is its elongation?",
+ "options": [
+  "$0.5$ mm",
+  "$4.0$ mm",
+  "$2.0$ mm",
+  "$1.0$ mm"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\Delta L=\\frac{FL}{AY}=\\frac{100\\times2}{(1.0\\times10^{-6})(2.0\\times10^{11})}=0.001\\,\\text{m}=1.0\\,\\text{mm}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta L=\\dfrac{FL}{AY}$\n$\\Delta L=\\dfrac{100\\times2}{(1.0\\times10^{-6})(2.0\\times10^{11})}=1.0\\times10^{-3}$ m $=1.0$ mm\n\nIndependent check: \\(\\Delta L=\\frac{FL}{AY}=\\frac{100\\times2}{(1.0\\times10^{-6})(2.0\\times10^{11})}=0.001\\,\\text{m}=1.0\\,\\text{mm}\\).",
+ "solution": "Using Young’s modulus, $Y=\\dfrac{FL}{A\\Delta L}$, so\n$$\\Delta L=\\dfrac{FL}{AY}=\\dfrac{100\\times2}{(1.0\\times10^{-6})(2.0\\times10^{11})}=1.0\\times10^{-3}\\,\\text{m}=1.0\\,\\text{mm}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A wire of length $2$ m and cross-sectional area $1.0\\times10^{-6}$ m$^2$ is suspended from a ceiling and supports a $100$ N load. If its Young's modulus is $2.0\\times10^{11}$ Pa, what is its elongation?",
+  "options": [
+   "$0.5$ mm",
+   "$1.0$ mm",
+   "$2.0$ mm",
+   "$4.0$ mm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\Delta L=\\dfrac{FL}{AY}$\n$\\Delta L=\\dfrac{100\\times2}{(1.0\\times10^{-6})(2.0\\times10^{11})}=1.0\\times10^{-3}$ m $=1.0$ mm",
+  "distractor_notes": "A: Loses a factor of $2$; C: Doubles the calculated elongation; D: Uses an incorrect area or modulus conversion."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

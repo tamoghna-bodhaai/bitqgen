@@ -1,0 +1,71 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Binding energy",
+  "archetype": "mass-defect computation",
+  "brief": "Given the masses of a nucleus and its constituents, compute the binding energy of the nucleus.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:18",
+   "2025s2:25",
+   "2023s2:16"
+  ],
+  "origin": "variant",
+  "bank_ref": "g1abece8513b2"
+ },
+ "status": "ok",
+ "stem": "A helium nucleus contains two protons and two neutrons. If its mass is $4.0015$ u, while the proton and neutron masses are $1.0073$ u and $1.0087$ u respectively, find its binding energy. Take $1$ u $=931.5$ MeV.",
+ "options": [
+  "$0.0305$ MeV",
+  "$14.2$ MeV",
+  "$28.4$ MeV",
+  "$56.8$ MeV"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mass defect = 2(1.0073) + 2(1.0087) − 4.0015 = 0.0305 u. Binding energy = 0.0305 × 931.5 ≈ 28.4 MeV.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta m=2(1.0073)+2(1.0087)-4.0015=0.0305$ u\n$B=\\Delta m c^2=0.0305\\times931.5=28.41075$ MeV $\\approx28.4$ MeV\n\nIndependent check: Mass defect = 2(1.0073) + 2(1.0087) − 4.0015 = 0.0305 u. Binding energy = 0.0305 × 931.5 ≈ 28.4 MeV.",
+ "solution": "The mass defect is $$\\Delta m=2(1.0073)+2(1.0087)-4.0015=0.0305\\ \\text{u}.$$ Hence, $B=\\Delta m c^2=0.0305\\times931.5\\approx28.4$ MeV.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A helium nucleus contains two protons and two neutrons. If its mass is $4.0015$ u, while the proton and neutron masses are $1.0073$ u and $1.0087$ u respectively, find its binding energy. Take $1$ u $=931.5$ MeV.",
+  "options": [
+   "$0.0305$ MeV",
+   "$14.2$ MeV",
+   "$28.4$ MeV",
+   "$56.8$ MeV"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\Delta m=2(1.0073)+2(1.0087)-4.0015=0.0305$ u\n$B=\\Delta m c^2=0.0305\\times931.5=28.41075$ MeV $\\approx28.4$ MeV",
+  "distractor_notes": "A: uses the mass defect as an energy without converting u to MeV. B: halves the binding energy. D: doubles the binding energy."
+ },
+ "variant_of": "g1abece8513b2",
+ "author_model": "openai/gpt-6-luna-pro"
+}

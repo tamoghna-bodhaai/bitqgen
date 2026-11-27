@@ -1,0 +1,78 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Wheatstone bridge",
+  "archetype": "circuit analysis",
+  "brief": "Show a network of resistors (possibly with a Wheatstone-bridge-like arrangement) and ask the equivalent resistance between two terminals; simplify step by step.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:11",
+   "2024s1:9",
+   "2026s2:13"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "As shown in the figure, find the equivalent resistance between terminals $P$ and $Q$.",
+ "options": [
+  "$2$ $\\Omega$",
+  "$6$ $\\Omega$",
+  "$4$ $\\Omega$",
+  "$3$ $\\Omega$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q014_stem_v0.png",
+  "width_pct": 50,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By left–right symmetry, L and R are at equal potential, so no current flows through the 8 Ω resistor. The two remaining P–Q branches each have resistance 2+4=6 Ω, in parallel: R_eq=3 Ω.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{R_{PL}}{R_{LQ}}=\\dfrac{2}{4}=\\dfrac{R_{PR}}{R_{RQ}}$; the bridge is balanced, so no current flows through the $8\\ \\Omega$ resistor.\n$R_{PQ}=(2+4)\\parallel(2+4)=6\\parallel6=3\\ \\Omega$\n\nIndependent check: By left–right symmetry, L and R are at equal potential, so no current flows through the 8 Ω resistor. The two remaining P–Q branches each have resistance 2+4=6 Ω, in parallel: R_eq=3 Ω.",
+ "solution": "Since $\\dfrac{2}{4}=\\dfrac{2}{4}$, the bridge is balanced and no current flows through the $8\\,\\Omega$ resistor. The two $P$–$Q$ branches each have resistance $2+4=6\\,\\Omega$.\n$$R_{PQ}=6\\parallel 6=3\\,\\Omega$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "As shown in the figure, find the equivalent resistance between terminals $P$ and $Q$.",
+  "options": [
+   "$2$ $\\Omega$",
+   "$3$ $\\Omega$",
+   "$4$ $\\Omega$",
+   "$6$ $\\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a diamond-shaped bridge with terminal P at the top vertex and terminal Q at the bottom vertex. Label the left midpoint L and the right midpoint R. Place a 2 Ω resistor between P and L, a 4 Ω resistor between L and Q, a 2 Ω resistor between P and R, and a 4 Ω resistor between R and Q. Connect L to R with an 8 Ω resistor. Show no other connections.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{R_{PL}}{R_{LQ}}=\\dfrac{2}{4}=\\dfrac{R_{PR}}{R_{RQ}}$; the bridge is balanced, so no current flows through the $8\\ \\Omega$ resistor.\n$R_{PQ}=(2+4)\\parallel(2+4)=6\\parallel6=3\\ \\Omega$",
+  "distractor_notes": "A: Treats the two $6\\ \\Omega$ branches as a series combination. C: Incorrectly combines the bridge resistor with the side arms. D: Adds the resistance of just one branch."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 36,
+ "section": "Physics",
+ "slot": {
+  "qno": 36,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "Specific heat ratio",
+  "archetype": "conceptual",
+  "brief": "High-rigour conceptual MCQ on γ for gas mixtures: a mixture of monatomic and diatomic gases in given molar ratio — determine the effective Cp, Cv and γ of the mixture, or evaluate statements about degrees of freedom.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:28",
+   "2021:38",
+   "2025s1:23"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A mixture contains monatomic and rigid diatomic ideal gases in mole ratio $2:1$, with vibrational modes inactive. The mixture's molar $C_p$, molar $C_v$, and $\\gamma=C_p/C_v$, respectively, are (where $R$ is the molar gas constant):",
+ "options": [
+  "$\\left(\\dfrac{7R}{2},\\,\\dfrac{5R}{2},\\,\\dfrac{7}{5}\\right)$",
+  "$\\left(\\dfrac{17R}{6},\\,\\dfrac{11R}{6},\\,\\dfrac{17}{11}\\right)$",
+  "$\\left(3R,\\,2R,\\,\\dfrac{3}{2}\\right)$",
+  "$\\left(\\dfrac{11R}{6},\\,\\dfrac{17R}{6},\\,\\dfrac{11}{17}\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For 3 mol total, the mixture has 2 mol monatomic and 1 mol rigid diatomic gas. Thus, molar C_v=[2(3R/2)+5R/2]/3=11R/6. Then C_p=C_v+R=17R/6 and γ=17/11.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$C_{v,\\text{mix}}=\\dfrac{2(3R/2)+5R/2}{3}=\\dfrac{11R}{6}$; $C_{p,\\text{mix}}=C_{v,\\text{mix}}+R=\\dfrac{17R}{6}$; $\\gamma=\\dfrac{17}{11}$.\n\nIndependent check: For 3 mol total, the mixture has 2 mol monatomic and 1 mol rigid diatomic gas. Thus, molar C_v=[2(3R/2)+5R/2]/3=11R/6. Then C_p=C_v+R=17R/6 and γ=17/11.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A mixture contains monatomic and rigid diatomic ideal gases in mole ratio $2:1$, with vibrational modes inactive. The mixture's molar $C_p$, molar $C_v$, and $\\gamma=C_p/C_v$, respectively, are (where $R$ is the molar gas constant):",
+  "options": [
+   "$\\left(\\dfrac{7R}{2},\\,\\dfrac{5R}{2},\\,\\dfrac{7}{5}\\right)$",
+   "$\\left(\\dfrac{17R}{6},\\,\\dfrac{11R}{6},\\,\\dfrac{17}{11}\\right)$",
+   "$\\left(3R,\\,2R,\\,\\dfrac{3}{2}\\right)$",
+   "$\\left(\\dfrac{11R}{6},\\,\\dfrac{17R}{6},\\,\\dfrac{11}{17}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$C_{v,\\text{mix}}=\\dfrac{2(3R/2)+5R/2}{3}=\\dfrac{11R}{6}$; $C_{p,\\text{mix}}=C_{v,\\text{mix}}+R=\\dfrac{17R}{6}$; $\\gamma=\\dfrac{17}{11}$.",
+  "distractor_notes": "A: uses the pure-diatomic heat capacities. C: averages the two gases as if their mole amounts were equal. D: interchanges $C_p$ and $C_v$ and takes their reciprocal ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

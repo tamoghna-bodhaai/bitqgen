@@ -1,0 +1,70 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "Environmental Chemistry",
+  "subtopic": "Ozone depletion",
+  "archetype": "statement evaluation",
+  "brief": "Which statement about ozone depletion is incorrect (e.g. role of CFCs, Cl radical chain, NO catalysis)?",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:41",
+   "2025s2:36",
+   "2025s1:37"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which statement about stratospheric ozone depletion is incorrect?",
+ "options": [
+  "CFCs can reach the stratosphere because they are relatively unreactive in the lower atmosphere.",
+  "Ultraviolet radiation can photolyse CFCs and release chlorine radicals.",
+  "Nitrogen oxide radicals can participate in catalytic cycles that destroy ozone.",
+  "A chlorine radical is consumed in each ozone-destruction step and cannot be regenerated."
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Chlorine radicals react with ozone but are regenerated in catalytic cycles, so they are not consumed permanently.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Cl}+\\text{O}_3\\rightarrow\\text{ClO}+\\text{O}_2$\n$\\text{ClO}+\\text{O}\\rightarrow\\text{Cl}+\\text{O}_2$\nNet: $\\text{O}_3+\\text{O}\\rightarrow2\\text{O}_2$\nThe chlorine radical is regenerated, so it acts catalytically.\n\nIndependent check: Chlorine radicals react with ozone but are regenerated in catalytic cycles, so they are not consumed permanently.",
+ "solution": "Chlorine radicals destroy ozone through a catalytic cycle:\n$$\\text{Cl}+\\text{O}_3\\rightarrow\\text{ClO}+\\text{O}_2,\\qquad \\text{ClO}+\\text{O}\\rightarrow\\text{Cl}+\\text{O}_2$$\nSince $\\text{Cl}$ is regenerated, it is not consumed permanently; hence statement (D) is incorrect.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which statement about stratospheric ozone depletion is incorrect?",
+  "options": [
+   "CFCs can reach the stratosphere because they are relatively unreactive in the lower atmosphere.",
+   "Ultraviolet radiation can photolyse CFCs and release chlorine radicals.",
+   "A chlorine radical is consumed in each ozone-destruction step and cannot be regenerated.",
+   "Nitrogen oxide radicals can participate in catalytic cycles that destroy ozone."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{Cl}+\\text{O}_3\\rightarrow\\text{ClO}+\\text{O}_2$\n$\\text{ClO}+\\text{O}\\rightarrow\\text{Cl}+\\text{O}_2$\nNet: $\\text{O}_3+\\text{O}\\rightarrow2\\text{O}_2$\nThe chlorine radical is regenerated, so it acts catalytically.",
+  "distractor_notes": "A: correct; CFCs are sufficiently stable in the troposphere to reach the stratosphere.\nB: correct; UV photolysis releases chlorine radicals from CFCs.\nD: correct; nitrogen oxide radicals can catalyse ozone destruction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

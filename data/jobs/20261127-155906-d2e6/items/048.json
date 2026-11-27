@@ -1,0 +1,70 @@
+{
+ "qno": 48,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 48,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Disaccharides",
+  "archetype": "statement evaluation",
+  "brief": "Given a disaccharide (e.g. maltose/lactose/sucrose), test multiple statements about glycosidic linkage type, reducing nature and hydrolysis products; pick the correct combination.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:54",
+   "2021:54",
+   "2024s1:37"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For lactose, consider the statements: I. Its glycosidic linkage is $\\beta(1\\to4)$. II. It is a non-reducing disaccharide. III. On hydrolysis, it yields glucose and galactose. Which statements are correct?",
+ "options": [
+  "I only",
+  "II only",
+  "I and III only",
+  "II and III only"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Lactose has a β(1→4) linkage and hydrolyses to glucose and galactose. Its free anomeric carbon makes it reducing, so II is false.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Lactose has a $\\beta(1\\to4)$ linkage.\nIts glucose residue has a free anomeric carbon, so lactose is reducing.\nHydrolysis gives glucose and galactose.\nCorrect: I and III.\n\nIndependent check: Lactose has a β(1→4) linkage and hydrolyses to glucose and galactose. Its free anomeric carbon makes it reducing, so II is false.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For lactose, consider the statements: I. Its glycosidic linkage is $\\beta(1\\to4)$. II. It is a non-reducing disaccharide. III. On hydrolysis, it yields glucose and galactose. Which statements are correct?",
+  "options": [
+   "I only",
+   "II only",
+   "I and III only",
+   "II and III only"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Lactose has a $\\beta(1\\to4)$ linkage.\nIts glucose residue has a free anomeric carbon, so lactose is reducing.\nHydrolysis gives glucose and galactose.\nCorrect: I and III.",
+  "distractor_notes": "A: Omits the true hydrolysis statement; B: Misclassifies lactose as non-reducing; D: Includes the false non-reducing claim and omits the linkage statement."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

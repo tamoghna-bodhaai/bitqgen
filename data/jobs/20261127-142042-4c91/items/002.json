@@ -1,0 +1,70 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Volume expansion",
+  "archetype": "single-formula numerical",
+  "brief": "Direct use of αΔT for volume/length expansion of a metal rod or liquid by a given amount; straightforward plug-in.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:11",
+   "2026s2:22",
+   "2024s2:28"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A liquid of volume $1.5\\times10^{-3}$ m$^3$ is heated through $20^\\circ$C. If its coefficient of volume expansion is $4.0\\times10^{-4}\\ ^\\circ$C$^{-1}$, what is the increase in its volume?",
+ "options": [
+  "$12$ mL",
+  "$8$ mL",
+  "$6$ mL",
+  "$24$ mL"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "ΔV = βVΔT = (4.0×10⁻⁴)(1.5×10⁻³)(20) = 12×10⁻⁶ m³ = 12 mL.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta V=V\\beta\\Delta T$\\\\\n$=1.5\\times10^{-3}\\times4.0\\times10^{-4}\\times20=1.2\\times10^{-5}\\ \\text{m}^3$\\\\\n$1.2\\times10^{-5}\\ \\text{m}^3=12\\ \\text{mL}$\n\nIndependent check: ΔV = βVΔT = (4.0×10⁻⁴)(1.5×10⁻³)(20) = 12×10⁻⁶ m³ = 12 mL.",
+ "solution": "The increase in volume is $[?]$\n$$\n\\Delta V=V\\beta\\Delta T=(1.5\\times10^{-3})(4.0\\times10^{-4})(20)=1.2\\times10^{-5}\\text{ m}^3=12\\text{ mL}.\n$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A liquid of volume $1.5\\times10^{-3}$ m$^3$ is heated through $20^\\circ$C. If its coefficient of volume expansion is $4.0\\times10^{-4}\\ ^\\circ$C$^{-1}$, what is the increase in its volume?",
+  "options": [
+   "$6$ mL",
+   "$8$ mL",
+   "$12$ mL",
+   "$24$ mL"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\Delta V=V\\beta\\Delta T$\\\\\n$=1.5\\times10^{-3}\\times4.0\\times10^{-4}\\times20=1.2\\times10^{-5}\\ \\text{m}^3$\\\\\n$1.2\\times10^{-5}\\ \\text{m}^3=12\\ \\text{mL}$",
+  "distractor_notes": "A: halves the expansion; B: arithmetic or unit-conversion error; D: doubles the expansion."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

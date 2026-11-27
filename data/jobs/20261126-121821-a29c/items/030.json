@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A concave lens made of glass ($\\\\mu = 1.5$) has a focal length of $10\\\\ \\\\text{cm}$ in air. When completely immersed in a liquid of refractive index $1.8$, it will behave as a:",
+ "stem": "A thin converging lens of refractive index $1.60$ has power $+5.0\\ \\text{D}$ in air. It is immersed in a liquid of refractive index $1.20$. What are its focal length and nature?",
  "options": [
-  "diverging lens of focal length $30\\\\ \\\\text{cm}$",
-  "converging lens of focal length $30\\\\ \\\\text{cm}$",
-  "diverging lens of focal length $60\\\\ \\\\text{cm}$",
-  "converging lens of focal length $60\\\\ \\\\text{cm}$"
+  "Diverging lens, $-36\\ \\text{cm}$",
+  "Converging lens, $+36\\ \\text{cm}$",
+  "Converging lens, $+20\\ \\text{cm}$",
+  "Converging lens, $+15\\ \\text{cm}$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Lensmaker: 1/f = (μ_lens/μ_medium − 1)(1/R1 − 1/R2). In air: 1/(−10) = 0.5K → K = −0.2 cm⁻¹. In liquid: μ_rel = 1.5/1.8 = 5/6, so 1/f = (−1/6)(−0.2) = 1/30 → f = +30 cm, converging.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Lens power in a medium scales by \\(\\frac{n_\\text{lens}/n_\\text{medium}-1}{n_\\text{lens}-1}\\). Thus \\(P_\\text{liquid}=5\\times\\frac{1.6/1.2-1}{1.6-1}=25/9\\,\\text{D}\\), so \\(f=1/P=+0.36\\,\\text{m}=+36\\,\\text{cm}\\).",
+   "answer": "D",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "According to the lens-maker's formula, the focal length of a lens in air is given by:\\n$$\\\\frac{1}{f_a} = (\\\\mu_g - 1)\\\\left(\\\\frac{1}{R_1} - \\\\frac{1}{R_2}\\\\right)$$\\nFor a concave lens, $f_a = -10\\\\ \\\\text{cm}$.\\n\\nWhen the lens is immersed in a liquid medium of refractive index $\\\\mu_l$, its focal length $f_l$ is given by:\\n$$\\\\frac{1}{f_l} = \\\\left(\\\\frac{\\\\mu_g}{\\\\mu_l} - 1\\\\right)\\\\left(\\\\frac{1}{R_1} - \\\\frac{1}{R_2}\\\\right)$$\\n\\nTaking the ratio of the two equations:\\n$$\\\\frac{f_l}{f_a} = \\\\frac{\\\\mu_g - 1}{\\\\dfrac{\\\\mu_g}{\\\\mu_l} - 1} = \\\\frac{1.5 - 1}{\\\\dfrac{1.5}{1.8} - 1} = \\\\frac{0.5}{\\\\dfrac{5}{6} - 1} = \\\\frac{0.5}{-\\\\dfrac{1}{6}} = -3$$\\n\\nTherefore, the new focal length is:\\n$$f_l = -3 f_a = -3(-10\\\\ \\\\text{cm}) = +30\\\\ \\\\text{cm}$$\\n\\nSince $f_l > 0$, the lens has a positive focal length, meaning it behaves as a converging lens of focal length $30\\\\ \\\\text{cm}$.\n\nIndependent check: Lensmaker: 1/f = (μ_lens/μ_medium − 1)(1/R1 − 1/R2). In air: 1/(−10) = 0.5K → K = −0.2 cm⁻¹. In liquid: μ_rel = 1.5/1.8 = 5/6, so 1/f = (−1/6)(−0.2) = 1/30 → f = +30 cm, converging.",
- "solution": "",
+ "working": "$$P_m=P_a\\dfrac{\\dfrac{n_l}{n_m}-1}{n_l-1}=5.0\\dfrac{\\dfrac{1.60}{1.20}-1}{1.60-1}=\\dfrac{25}{9}\\ \\text{D}$$\n$$f_m=\\dfrac{1}{P_m}=\\dfrac{9}{25}\\ \\text{m}=+36\\ \\text{cm}$$\nPositive focal length: converging.\n\nIndependent check: Lens power in a medium scales by \\(\\frac{n_\\text{lens}/n_\\text{medium}-1}{n_\\text{lens}-1}\\). Thus \\(P_\\text{liquid}=5\\times\\frac{1.6/1.2-1}{1.6-1}=25/9\\,\\text{D}\\), so \\(f=1/P=+0.36\\,\\text{m}=+36\\,\\text{cm}\\).",
+ "solution": "The power of a lens in a medium is $P_m=P_a\\dfrac{(n_l/n_m)-1}{n_l-1}$.\n$$P_m=5.0\\dfrac{(1.60/1.20)-1}{1.60-1}=\\frac{25}{9}\\,\\text{D},\\qquad f_m=\\frac{1}{P_m}=+0.36\\,\\text{m}=+36\\,\\text{cm}$$\nSince the focal length is positive, the lens remains converging.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A concave lens made of glass ($\\\\mu = 1.5$) has a focal length of $10\\\\ \\\\text{cm}$ in air. When completely immersed in a liquid of refractive index $1.8$, it will behave as a:",
+  "stem": "A thin converging lens of refractive index $1.60$ has power $+5.0\\ \\text{D}$ in air. It is immersed in a liquid of refractive index $1.20$. What are its focal length and nature?",
   "options": [
-   "diverging lens of focal length $30\\\\ \\\\text{cm}$",
-   "converging lens of focal length $30\\\\ \\\\text{cm}$",
-   "diverging lens of focal length $60\\\\ \\\\text{cm}$",
-   "converging lens of focal length $60\\\\ \\\\text{cm}$"
+   "Diverging lens, $-36\\ \\text{cm}$",
+   "Converging lens, $+15\\ \\text{cm}$",
+   "Converging lens, $+20\\ \\text{cm}$",
+   "Converging lens, $+36\\ \\text{cm}$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "According to the lens-maker's formula, the focal length of a lens in air is given by:\\n$$\\\\frac{1}{f_a} = (\\\\mu_g - 1)\\\\left(\\\\frac{1}{R_1} - \\\\frac{1}{R_2}\\\\right)$$\\nFor a concave lens, $f_a = -10\\\\ \\\\text{cm}$.\\n\\nWhen the lens is immersed in a liquid medium of refractive index $\\\\mu_l$, its focal length $f_l$ is given by:\\n$$\\\\frac{1}{f_l} = \\\\left(\\\\frac{\\\\mu_g}{\\\\mu_l} - 1\\\\right)\\\\left(\\\\frac{1}{R_1} - \\\\frac{1}{R_2}\\\\right)$$\\n\\nTaking the ratio of the two equations:\\n$$\\\\frac{f_l}{f_a} = \\\\frac{\\\\mu_g - 1}{\\\\dfrac{\\\\mu_g}{\\\\mu_l} - 1} = \\\\frac{1.5 - 1}{\\\\dfrac{1.5}{1.8} - 1} = \\\\frac{0.5}{\\\\dfrac{5}{6} - 1} = \\\\frac{0.5}{-\\\\dfrac{1}{6}} = -3$$\\n\\nTherefore, the new focal length is:\\n$$f_l = -3 f_a = -3(-10\\\\ \\\\text{cm}) = +30\\\\ \\\\text{cm}$$\\n\\nSince $f_l > 0$, the lens has a positive focal length, meaning it behaves as a converging lens of focal length $30\\\\ \\\\text{cm}$.",
-  "distractor_notes": "Option A encodes the error of computing the magnitude $|f_l| = 30\\ \\text{cm}$ correctly, but failing to recognize that the negative ratio inverts the diverging lens into a converging lens.\nOption C encodes two errors: forgetting the factor of $(\\mu_g - 1) = 0.5$ in the numerator (yielding $|f_l| = 6 \\times 10 = 60\\ \\text{cm}$) and keeping the lens as diverging.\nOption D encodes forgetting the factor of $(\\mu_g - 1) = 0.5$ in the numerator, yielding $60\\ \\text{cm}$ instead of $30\\ \\text{cm}$, though the change in nature is recognized.",
+  "answer": "D",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$$P_m=P_a\\dfrac{\\dfrac{n_l}{n_m}-1}{n_l-1}=5.0\\dfrac{\\dfrac{1.60}{1.20}-1}{1.60-1}=\\dfrac{25}{9}\\ \\text{D}$$\n$$f_m=\\dfrac{1}{P_m}=\\dfrac{9}{25}\\ \\text{m}=+36\\ \\text{cm}$$\nPositive focal length: converging.",
+  "distractor_notes": "A: sign error; B: incorrectly scales air power by $n_l/n_m$; C: leaves the focal length unchanged on immersion."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

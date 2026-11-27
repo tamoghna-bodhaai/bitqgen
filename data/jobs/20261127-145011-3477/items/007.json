@@ -1,0 +1,71 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Young's modulus and elongation",
+  "archetype": "ratio of two situations",
+  "brief": "Two wires of same material but different lengths and areas support the same load; find the ratio of elongations, or find which parameter changes under combined conditions.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:22",
+   "2023s1:14",
+   "2026s1:22"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge0fd874bf8cf"
+ },
+ "status": "ok",
+ "stem": "Two wires of the same material and equal volume have lengths in the ratio $3:2$. They are stretched separately by identical loads, within their elastic limits. What is the ratio of their elongations?",
+ "options": [
+  "$\\dfrac{4}{9}$",
+  "$\\dfrac{9}{4}$",
+  "$\\dfrac{3}{2}$",
+  "$\\dfrac{2}{3}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For each wire, ΔL = FL/(AY). Since A = V/L and F, Y, V are equal, ΔL ∝ L². Thus the elongation ratio is 3²:2² = 9:4.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta L=\\dfrac{FL}{AY}$ and $AL=V\\Rightarrow A=\\dfrac{V}{L}$. Thus $\\Delta L=\\dfrac{FL^2}{YV}$. Hence $\\dfrac{\\Delta L_1}{\\Delta L_2}=\\left(\\dfrac{L_1}{L_2}\\right)^2=\\left(\\dfrac{3}{2}\\right)^2=\\dfrac{9}{4}$.\n\nIndependent check: For each wire, ΔL = FL/(AY). Since A = V/L and F, Y, V are equal, ΔL ∝ L². Thus the elongation ratio is 3²:2² = 9:4.",
+ "solution": "For a wire, $\\Delta L=\\dfrac{FL}{AY}$ and equal volume gives $A=\\dfrac{V}{L}$.\n$$\\Delta L=\\dfrac{FL^2}{YV},\\qquad \\frac{\\Delta L_1}{\\Delta L_2}=\\left(\\frac{L_1}{L_2}\\right)^2=\\left(\\frac{3}{2}\\right)^2=\\frac{9}{4}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two wires of the same material and equal volume have lengths in the ratio $3:2$. They are stretched separately by identical loads, within their elastic limits. What is the ratio of their elongations?",
+  "options": [
+   "$\\dfrac{4}{9}$",
+   "$\\dfrac{2}{3}$",
+   "$\\dfrac{3}{2}$",
+   "$\\dfrac{9}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\Delta L=\\dfrac{FL}{AY}$ and $AL=V\\Rightarrow A=\\dfrac{V}{L}$. Thus $\\Delta L=\\dfrac{FL^2}{YV}$. Hence $\\dfrac{\\Delta L_1}{\\Delta L_2}=\\left(\\dfrac{L_1}{L_2}\\right)^2=\\left(\\dfrac{3}{2}\\right)^2=\\dfrac{9}{4}$.",
+  "distractor_notes": "A: takes the reciprocal of the squared ratio; B: uses the area ratio alone; C: assumes elongation is proportional only to length."
+ },
+ "variant_of": "ge0fd874bf8cf",
+ "author_model": "openai/gpt-6-luna-pro"
+}

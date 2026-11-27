@@ -1,0 +1,70 @@
+{
+ "qno": 86,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 86,
+  "section": "English Proficiency",
+  "chapter": "Error Spotting / Sentence Improvement",
+  "subtopic": "Tense consistency",
+  "archetype": "spot the error",
+  "brief": "Spot the error in a sentence testing tense consistency across clauses (e.g., past event mixed with present tense); include 'No error' as an option.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:67",
+   "2026s2:68",
+   "2023s2:66"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "In the sentence below, identify the part that contains an error:\n\nAfter the storm had passed, the villagers returned to their homes (A) and discover that the river had flooded the fields (B) before dawn (C).",
+ "options": [
+  "After the storm had passed, the villagers returned to their homes",
+  "No error",
+  "before dawn",
+  "and discover that the river had flooded the fields"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The past-tense verb “returned” should be paired with “discovered,” not “discover.”",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "The events are narrated in the past: “had passed,” “returned” and “had flooded.” The coordinated verb should be “discovered,” not “discover.” A and C are correct; D is therefore incorrect.\n\nIndependent check: The past-tense verb “returned” should be paired with “discovered,” not “discover.”",
+ "solution": "The sentence narrates past events, so the verb coordinated with “returned” should also be in the past tense: “discovered,” not “discover.”",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the sentence below, identify the part that contains an error:\n\nAfter the storm had passed, the villagers returned to their homes (A) and discover that the river had flooded the fields (B) before dawn (C).",
+  "options": [
+   "After the storm had passed, the villagers returned to their homes",
+   "and discover that the river had flooded the fields",
+   "before dawn",
+   "No error"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "The events are narrated in the past: “had passed,” “returned” and “had flooded.” The coordinated verb should be “discovered,” not “discover.” A and C are correct; D is therefore incorrect.",
+  "distractor_notes": "A: The past-tense verb “returned” is correct. C: The time phrase “before dawn” is grammatically correct. D: Misses the present-tense error in B."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

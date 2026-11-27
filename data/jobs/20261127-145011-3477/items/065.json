@@ -1,0 +1,61 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Freundlich adsorption isotherm",
+  "archetype": "statement evaluation",
+  "brief": "Four statements on adsorption (physisorption vs chemisorption, Freundlich log-log line slope, effect of temperature) – mark true/false combination",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:35",
+   "2023s2:46",
+   "2025s1:52"
+  ],
+  "origin": "direct",
+  "bank_ref": "g4349a52fe992"
+ },
+ "status": "ok",
+ "stem": "Which of the following statements about adsorption is incorrect?",
+ "options": [
+  "Physisorption becomes more pronounced with rise in temperature.",
+  "The value of $1/n$ in the Freundlich adsorption isotherm normally lies between 0 and 1.",
+  "Chemisorption is favoured at high temperature.",
+  "Adsorption is generally exothermic because it involves a decrease in surface energy."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q065_bank_optA.png",
+  "figs/q065_bank_optB.png",
+  "figs/q065_bank_optC.png",
+  "figs/q065_bank_optD.png"
+ ],
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 0.97
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g4349a52fe992 (verified in job 20261127-122012-292e)"
+ ],
+ "working": "A: Correct; Freundlich isotherm $x/m = k p^{1/n}$ has $1/n$ in (0,1).\nB: Incorrect; Physisorption is exothermic, so it decreases with increasing temperature.\nC: Correct; Chemisorption is often activated and favoured at high temperature.\nD: Correct; Adsorption is exothermic as residual surface forces are satisfied and surface energy decreases.\n\nIndependent check: Physisorption is generally favored at lower temperatures, so it becomes less pronounced as temperature rises. The other listed statements are generally correct.",
+ "solution": "Physisorption is generally exothermic, so increasing temperature shifts the equilibrium toward desorption and reduces adsorption.\nChemisorption may be favoured at higher temperature because it often has an activation energy; the Freundlich exponent normally satisfies $0<1/n<1$.\nThus the incorrect statement is (A).",
+ "locked": false,
+ "difficulty": 1,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g4349a52fe992",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

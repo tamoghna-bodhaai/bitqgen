@@ -1,0 +1,70 @@
+{
+ "qno": 146,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 146,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Classical probability",
+  "archetype": "inclusion-exclusion counting",
+  "brief": "Probability of drawing cards/balls with at least one condition satisfied; use total minus invalid or direct counting of favourable outcomes.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:108",
+   "2021:135",
+   "2024s2:125"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two cards are drawn without replacement from a standard $52$-card deck. What is the probability that at least one is an ace or a king?",
+ "options": [
+  "$\\dfrac{33}{221}$",
+  "$\\dfrac{48}{169}$",
+  "$\\dfrac{190}{663}$",
+  "$\\dfrac{198}{663}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use the complement: neither card is an ace nor a king with probability \\(\\binom{44}{2}/\\binom{52}{2}\\). Thus the required probability is \\(1-946/1326=190/663\\), option C.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(\\text{at least one ace or king})=1-\\dfrac{\\binom{44}{2}}{\\binom{52}{2}}=1-\\dfrac{946}{1326}=\\dfrac{190}{663}$.\n\nIndependent check: Use the complement: neither card is an ace nor a king with probability \\(\\binom{44}{2}/\\binom{52}{2}\\). Thus the required probability is \\(1-946/1326=190/663\\), option C.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two cards are drawn without replacement from a standard $52$-card deck. What is the probability that at least one is an ace or a king?",
+  "options": [
+   "$\\dfrac{33}{221}$",
+   "$\\dfrac{48}{169}$",
+   "$\\dfrac{190}{663}$",
+   "$\\dfrac{198}{663}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$P(\\text{at least one ace or king})=1-\\dfrac{\\binom{44}{2}}{\\binom{52}{2}}=1-\\dfrac{946}{1326}=\\dfrac{190}{663}$.",
+  "distractor_notes": "A: counts only hands with at least one ace; B: treats the draws as with replacement; D: adds the ace and king probabilities without subtracting their overlap."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

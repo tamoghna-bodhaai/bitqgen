@@ -1,0 +1,81 @@
+{
+ "qno": 74,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 74,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Acidic nature of terminal alkynes",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:55",
+   "2022:31",
+   "2024s2:56"
+  ],
+  "origin": "variant",
+  "bank_ref": "g1171d33f1fa0"
+ },
+ "status": "ok",
+ "stem": "On reductive ozonolysis, a conjugated diene yields methanal, ethanedial and butan-2-one. Identify the diene.",
+ "options": [
+  "4-methylhexa-1,3-diene",
+  "2-methylhexa-1,3-diene",
+  "2-ethylpenta-1,3-diene",
+  "2,4-dimethylpenta-1,3-diene"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": [
+  "figs/q074_optA_v0.png",
+  "figs/q074_optB_v0.png",
+  "figs/q074_optC_v0.png",
+  "figs/q074_optD_v0.png"
+ ],
+ "option_width": 38,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Ozonolysis cleaves both C=C bonds. In (A), the terminal CH₂ gives methanal, the two internal CH groups give ethanedial, and the substituted alkene carbon bearing methyl and ethyl gives butan-2-one.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In 4-methylhexa-1,3-diene, cleavage gives methanal from the terminal CH2, ethanedial from the two inner alkene carbons, and butan-2-one from the substituted end.\n1 mol diene → 1 mol methanal + 1 mol ethanedial + 1 mol butan-2-one.\n\nIndependent check: Ozonolysis cleaves both C=C bonds. In (A), the terminal CH₂ gives methanal, the two internal CH groups give ethanedial, and the substituted alkene carbon bearing methyl and ethyl gives butan-2-one.",
+ "solution": "Reductive ozonolysis cleaves both C=C bonds, converting each alkene carbon into a carbonyl carbon.\nIn 4-methylhexa-1,3-diene, the terminal CH₂ gives methanal, the two inner CH groups give ethanedial, and the substituted end gives butan-2-one.\nThus the diene is 4-methylhexa-1,3-diene, (A).",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "On reductive ozonolysis, a conjugated diene yields methanal, ethanedial and butan-2-one. Identify the diene.",
+  "options": [
+   "4-methylhexa-1,3-diene",
+   "2-methylhexa-1,3-diene",
+   "2-ethylpenta-1,3-diene",
+   "2,4-dimethylpenta-1,3-diene"
+  ],
+  "option_smiles": [
+   "C=CC=C(C)CC",
+   "C=C(C)C=CCC",
+   "C=C(CC)C=CC",
+   "C=C(C)C=C(C)C"
+  ],
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "In 4-methylhexa-1,3-diene, cleavage gives methanal from the terminal CH2, ethanedial from the two inner alkene carbons, and butan-2-one from the substituted end.\n1 mol diene → 1 mol methanal + 1 mol ethanedial + 1 mol butan-2-one.",
+  "distractor_notes": "B: Gives methylglyoxal and propanal rather than ethanedial and butan-2-one.\nC: Gives 2-oxobutanal and ethanal instead.\nD: Gives methylglyoxal and propanone instead."
+ },
+ "variant_of": "g1171d33f1fa0",
+ "author_model": "openai/gpt-6-luna-pro"
+}

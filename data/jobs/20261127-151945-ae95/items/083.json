@@ -1,0 +1,71 @@
+{
+ "qno": 83,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 83,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement",
+  "archetype": "para jumble (first sentence)",
+  "brief": "Four short jumbled sentences with a simple narrative flow (e.g., waking up, an event, its result); ask which sentence logically comes first.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:69",
+   "2021:95",
+   "2021:93"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf5a600df10a4"
+ },
+ "status": "ok",
+ "stem": "Which sentence should come first in a coherent paragraph formed by the following four sentences?",
+ "options": [
+  "The soaked seeds began to sprout within a few days.",
+  "By morning, the beans had become noticeably softer.",
+  "Mira placed the beans in a bowl of water before going to bed.",
+  "She drained the water and spread the beans on a damp cloth."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "B introduces the beans and soaking; C follows by morning, then D, and finally A describes sprouting.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "B introduces the action and its subject. C follows with the result by morning; D describes the next step; A gives the later outcome. A, C and D depend on earlier events.\n\nIndependent check: B introduces the beans and soaking; C follows by morning, then D, and finally A describes sprouting.",
+ "solution": "Sentence (C) introduces the beans and the initial action of soaking them, which the remaining sentences follow chronologically.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which sentence should come first in a coherent paragraph formed by the following four sentences?",
+  "options": [
+   "The soaked seeds began to sprout within a few days.",
+   "Mira placed the beans in a bowl of water before going to bed.",
+   "By morning, the beans had become noticeably softer.",
+   "She drained the water and spread the beans on a damp cloth."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "B introduces the action and its subject. C follows with the result by morning; D describes the next step; A gives the later outcome. A, C and D depend on earlier events.",
+  "distractor_notes": "A: describes the later result. C: refers to the overnight soaking. D: uses “the water” and “the beans” already introduced."
+ },
+ "variant_of": "gf5a600df10a4",
+ "author_model": "openai/gpt-6-luna"
+}

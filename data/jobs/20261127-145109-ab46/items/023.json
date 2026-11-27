@@ -1,0 +1,70 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Thermal conduction",
+  "archetype": "ratio of two situations",
+  "brief": "Two rods of different materials/lengths/diameters joined or compared with same temperature difference; find the ratio of thermal conductances/heat flows.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:21",
+   "2023s2:7",
+   "2026s2:23"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two uniform rods have the same temperature difference across their ends. Their thermal conductivities, lengths and diameters are related by $\\kappa_1=2\\kappa_2$, $L_1=2L_2$ and $d_1=2d_2$. What is the ratio of their thermal conductances, $G_1/G_2$?",
+ "options": [
+  "$1$",
+  "$2$",
+  "$4$",
+  "$8$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a rod, $G=\\kappa A/L$ and $A\\propto d^2$. Thus $G_1/G_2=(2)(2^2)/2=4$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$G=\\kappa A/L$, and $A\\propto d^2$\n$G_1/G_2=(2)(2^2)/(2)=4$\n\nIndependent check: For a rod, $G=\\kappa A/L$ and $A\\propto d^2$. Thus $G_1/G_2=(2)(2^2)/2=4$.",
+ "solution": "Thermal conductance is $G=\\kappa A/L$, with cross-sectional area $A\\propto d^2$.\n$$\\frac{G_1}{G_2}=\\frac{\\kappa_1}{\\kappa_2}\\left(\\frac{d_1}{d_2}\\right)^2\\frac{L_2}{L_1}=2\\times 2^2\\times\\frac{1}{2}=4$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Two uniform rods have the same temperature difference across their ends. Their thermal conductivities, lengths and diameters are related by $\\kappa_1=2\\kappa_2$, $L_1=2L_2$ and $d_1=2d_2$. What is the ratio of their thermal conductances, $G_1/G_2$?",
+  "options": [
+   "$1$",
+   "$2$",
+   "$4$",
+   "$8$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$G=\\kappa A/L$, and $A\\propto d^2$\n$G_1/G_2=(2)(2^2)/(2)=4$",
+  "distractor_notes": "A: overlooks the conductivity and area factors; B: overlooks the diameter's squared effect; D: multiplies by the length ratio instead of dividing."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

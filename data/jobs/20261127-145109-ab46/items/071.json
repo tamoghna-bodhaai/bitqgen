@@ -1,0 +1,70 @@
+{
+ "qno": 71,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 71,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor and complexes",
+  "archetype": "colligative to structure",
+  "brief": "At hard difficulty: a sparingly soluble salt/solute association-dissociation problem combining depression in freezing point or osmotic pressure with computing i and degree of dissociation/association from data.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:77",
+   "2026s1:44",
+   "2023s2:32"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A solution is $0.40$ molal in a neutral complex, $[\\text{Co(NH}_3)_3\\text{Cl}_3]$. Its freezing-point depression is $1.20$ K; take $K_f=4.00\\ \\text{K kg mol}^{-1}$. If the complex associates only as dimers, what percentage of complex units is present in dimers?",
+ "options": [
+  "$25\\%$",
+  "$50\\%$",
+  "$75\\%$",
+  "$100\\%$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "i = ΔTf/(Kf m) = 1.20/(4.00 × 0.40) = 0.75. For dimerization, i = 1 − α/2, where α is the fraction of complex units in dimers. Thus α = 0.50, or 50%.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{1.20}{4.00\\times0.40}=0.75$\nFor $2M\\rightleftharpoons M_2$, $i=1-\\dfrac{\\alpha}{2}$.\n$\\alpha=2(1-i)=0.50=50\\%$.\n\nIndependent check: i = ΔTf/(Kf m) = 1.20/(4.00 × 0.40) = 0.75. For dimerization, i = 1 − α/2, where α is the fraction of complex units in dimers. Thus α = 0.50, or 50%.",
+ "solution": "The van’t Hoff factor is $i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{1.20}{4.00\\times0.40}=0.75$. For dimerization, $i=1-\\dfrac{\\alpha}{2}$, where $\\alpha$ is the fraction of complex units in dimers.\n$$\\alpha=2(1-i)=2(1-0.75)=0.50=50\\%$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A solution is $0.40$ molal in a neutral complex, $[\\text{Co(NH}_3)_3\\text{Cl}_3]$. Its freezing-point depression is $1.20$ K; take $K_f=4.00\\ \\text{K kg mol}^{-1}$. If the complex associates only as dimers, what percentage of complex units is present in dimers?",
+  "options": [
+   "$25\\%$",
+   "$50\\%$",
+   "$75\\%$",
+   "$100\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$i=\\dfrac{\\Delta T_f}{K_fm}=\\dfrac{1.20}{4.00\\times0.40}=0.75$\nFor $2M\\rightleftharpoons M_2$, $i=1-\\dfrac{\\alpha}{2}$.\n$\\alpha=2(1-i)=0.50=50\\%$.",
+  "distractor_notes": "A: Uses $1-i$ directly, missing the factor of 2 for dimer formation. C: Misreads $i$ as the associated fraction. D: Assumes complete association."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Rate of change",
+  "archetype": "related rates",
+  "brief": "A related-rates problem, e.g. water draining from a conical vessel or a ladder sliding, requiring differentiation of a volume/geometric relation at an instant; ask for the required rate.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:93",
+   "2023s2:115",
+   "2026s2:129"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf812e2f817c9"
+ },
+ "status": "ok",
+ "stem": "A $10$ m ladder rests against a wall. When its foot is $6$ m from the wall, it moves away at $\\dfrac{4}{5}$ m s$^{-1}$. A climber $4$ m from the foot moves up the ladder at $\\dfrac{3}{2}$ m s$^{-1}$. Find the rate at which the climber’s height above the ground changes.",
+ "options": [
+  "$\\dfrac{24}{25}\\ \\text{m s}^{-1}$",
+  "$-\\dfrac{6}{25}\\ \\text{m s}^{-1}$",
+  "$\\dfrac{6}{5}\\ \\text{m s}^{-1}$",
+  "$\\dfrac{36}{25}\\ \\text{m s}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The ladder’s top height is 8 m. From x² + y² = 100, ẏ = −(x/y)ẋ = −(6/8)(4/5) = −3/5 m s⁻¹. For a climber s = 4 m from the foot, height h = (s/10)y, so ḣ = (4/10)(−3/5) + (8/10)(3/2) = 24/25 m s⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2+y^2=100$ gives $y=8$ and $\\dfrac{dy}{dt}=-\\dfrac{x}{y}\\dfrac{dx}{dt}=-\\dfrac{3}{5}$. For climber distance $s$ along the ladder, $z=\\dfrac{sy}{10}$, so $\\dfrac{dz}{dt}=\\dfrac{y}{10}\\dfrac{ds}{dt}+\\dfrac{s}{10}\\dfrac{dy}{dt}=\\dfrac{8}{10}\\cdot\\dfrac{3}{2}+\\dfrac{4}{10}\\cdot\\left(-\\dfrac{3}{5}\\right)=\\dfrac{24}{25}\\ \\text{m s}^{-1}$.\n\nIndependent check: The ladder’s top height is 8 m. From x² + y² = 100, ẏ = −(x/y)ẋ = −(6/8)(4/5) = −3/5 m s⁻¹. For a climber s = 4 m from the foot, height h = (s/10)y, so ḣ = (4/10)(−3/5) + (8/10)(3/2) = 24/25 m s⁻¹.",
+ "solution": "Let $x$ and $y$ be the foot’s distance from the wall and the ladder’s top height. From $x^2+y^2=100$, at $x=6$, $y=8$ and $\\dfrac{dy}{dt}=-\\dfrac{x}{y}\\dfrac{dx}{dt}=-\\dfrac{3}{5}$.\nFor the climber, $h=\\dfrac{s}{10}y$, where $s=4$ m and $\\dfrac{ds}{dt}=\\dfrac{3}{2}$ m s$^{-1}$. Thus\n$$\\frac{dh}{dt}=\\frac{s}{10}\\frac{dy}{dt}+\\frac{y}{10}\\frac{ds}{dt}=\\frac{24}{25}\\ \\text{m s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A $10$ m ladder rests against a wall. When its foot is $6$ m from the wall, it moves away at $\\dfrac{4}{5}$ m s$^{-1}$. A climber $4$ m from the foot moves up the ladder at $\\dfrac{3}{2}$ m s$^{-1}$. Find the rate at which the climber’s height above the ground changes.",
+  "options": [
+   "$-\\dfrac{6}{25}\\ \\text{m s}^{-1}$",
+   "$\\dfrac{24}{25}\\ \\text{m s}^{-1}$",
+   "$\\dfrac{6}{5}\\ \\text{m s}^{-1}$",
+   "$\\dfrac{36}{25}\\ \\text{m s}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$x^2+y^2=100$ gives $y=8$ and $\\dfrac{dy}{dt}=-\\dfrac{x}{y}\\dfrac{dx}{dt}=-\\dfrac{3}{5}$. For climber distance $s$ along the ladder, $z=\\dfrac{sy}{10}$, so $\\dfrac{dz}{dt}=\\dfrac{y}{10}\\dfrac{ds}{dt}+\\dfrac{s}{10}\\dfrac{dy}{dt}=\\dfrac{8}{10}\\cdot\\dfrac{3}{2}+\\dfrac{4}{10}\\cdot\\left(-\\dfrac{3}{5}\\right)=\\dfrac{24}{25}\\ \\text{m s}^{-1}$.",
+  "distractor_notes": "A: ignores the climber’s motion up the ladder. C: ignores the ladder’s downward rotation. D: uses the wrong sign for the ladder’s downward motion."
+ },
+ "variant_of": "gf812e2f817c9",
+ "author_model": "openai/gpt-6-luna-pro"
+}

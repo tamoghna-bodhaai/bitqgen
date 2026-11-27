@@ -1,0 +1,68 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Linear DE integrating factor",
+  "archetype": "integrating factor",
+  "brief": "Solve a linear first-order ODE dy/dx + P(x)y = Q(x) using the integrating factor method.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:103",
+   "2021:113",
+   "2024s2:95"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $x>0$, find the general solution of $\\dfrac{dy}{dx}+\\dfrac{2}{x}y=\\dfrac{\\sin x}{x}$.",
+ "options": [
+  "$y=\\dfrac{-\\sin x-x\\cos x+C}{x^2}$",
+  "$y=\\dfrac{\\sin x+x\\cos x+C}{x^2}$",
+  "$y=\\dfrac{\\sin x-x\\cos x+C}{x^2}$",
+  "$y=\\dfrac{\\sin x-x\\cos x+C}{x}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The integrating factor is x², so (x²y)' = x sin x. Integrating gives x²y = sin x − x cos x + C, matching (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{I.F.}=e^{\\int 2/x\\,dx}=x^2$. $\\dfrac{d}{dx}(x^2y)=x\\sin x$. $x^2y=\\int x\\sin x\\,dx=\\sin x-x\\cos x+C$.\n\nIndependent check: The integrating factor is x², so (x²y)' = x sin x. Integrating gives x²y = sin x − x cos x + C, matching (A).",
+ "solution": "The integrating factor is $e^{\\int 2/x\\,dx}=x^2$ for $x>0$. Thus,\n$$\\frac{d}{dx}(x^2y)=x\\sin x \\quad\\Rightarrow\\quad x^2y=\\sin x-x\\cos x+C.$$\nHence $y=\\dfrac{\\sin x-x\\cos x+C}{x^2}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $x>0$, find the general solution of $\\dfrac{dy}{dx}+\\dfrac{2}{x}y=\\dfrac{\\sin x}{x}$.",
+  "options": [
+   "$y=\\dfrac{\\sin x-x\\cos x+C}{x^2}$",
+   "$y=\\dfrac{\\sin x+x\\cos x+C}{x^2}$",
+   "$y=\\dfrac{-\\sin x-x\\cos x+C}{x^2}$",
+   "$y=\\dfrac{\\sin x-x\\cos x+C}{x}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{I.F.}=e^{\\int 2/x\\,dx}=x^2$. $\\dfrac{d}{dx}(x^2y)=x\\sin x$. $x^2y=\\int x\\sin x\\,dx=\\sin x-x\\cos x+C$.",
+  "distractor_notes": "B: uses the wrong sign for the $x\\cos x$ term; C: changes the sign of the antiderivative; D: divides by $x$ instead of $x^2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

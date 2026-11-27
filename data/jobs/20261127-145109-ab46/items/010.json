@@ -1,0 +1,78 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "Huygens' principle",
+  "archetype": "conceptual",
+  "brief": "Show a wavefront diagram (spherical/plane) and ask which Huygens' principle statement correctly explains wavefront propagation / secondary wavelets.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:23",
+   "2024s2:27",
+   "2026s2:30"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The wavefronts and direction of propagation are shown. Which statement of Huygens' principle describes the propagation of the wavefront?",
+ "options": [
+  "Each point on a wavefront emits secondary wavelets, whose rear envelope forms the next wavefront.",
+  "The rays are secondary sources, and the wavelets travel along the wavefront.",
+  "Only the endpoints of a wavefront emit wavelets, and their envelope forms the new wavefront.",
+  "Each point on a wavefront emits secondary wavelets, whose forward envelope after a time interval is the new wavefront."
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q010_stem_v0.png",
+  "width_pct": 45,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Huygens’ principle says every point on a wavefront acts as a source of secondary wavelets; their forward envelope after a time interval is the new wavefront.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Every point on the existing wavefront acts as a source of secondary wavelets.\nAfter a time interval, the forward envelope of these wavelets is the new wavefront.\n\nIndependent check: Huygens’ principle says every point on a wavefront acts as a source of secondary wavelets; their forward envelope after a time interval is the new wavefront.",
+ "solution": "Each point on a wavefront acts as a source of secondary wavelets. After a time interval, their forward envelope forms the new wavefront.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The wavefronts and direction of propagation are shown. Which statement of Huygens' principle describes the propagation of the wavefront?",
+  "options": [
+   "Each point on a wavefront emits secondary wavelets, whose rear envelope forms the next wavefront.",
+   "The rays are secondary sources, and the wavelets travel along the wavefront.",
+   "Each point on a wavefront emits secondary wavelets, whose forward envelope after a time interval is the new wavefront.",
+   "Only the endpoints of a wavefront emit wavelets, and their envelope forms the new wavefront."
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw two parallel vertical line segments to represent plane wavefronts. Label the left segment AB and the right segment A'B'. Add a horizontal arrow pointing right between them, perpendicular to both segments, to indicate the direction of propagation. Do not draw secondary wavelets or label any statement as correct.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "Every point on the existing wavefront acts as a source of secondary wavelets.\nAfter a time interval, the forward envelope of these wavelets is the new wavefront.",
+  "distractor_notes": "A: uses the rear envelope rather than the forward envelope.\nB: incorrectly treats rays as the secondary sources.\nD: incorrectly restricts secondary wavelet sources to the endpoints."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

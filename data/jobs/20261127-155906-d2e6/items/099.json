@@ -1,0 +1,70 @@
+{
+ "qno": 99,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 99,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Number analogy",
+  "archetype": "analogy",
+  "brief": "Number pair where the relation involves a hidden operation (e.g., square of digit sum or product of digits); candidate must infer the rule and pick the analogous pair.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:88",
+   "2025s1:86",
+   "2026s1:71"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Select the number pair that is related to the given pair in the same way:\n\n$24 : 36 :: 15 : ?$",
+ "options": [
+  "25",
+  "30",
+  "36",
+  "49"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "For 24, the sum of the digits is 2 + 4 = 6, and 6² = 36. For 15, (1 + 5)² = 36.",
+   "answer": "C",
+   "confidence": 0.78,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For 24, $(2+4)^2=36$.\nThus $(1+5)^2=36$.\nThe other options are not the square of the digit sum.\n\nIndependent check: For 24, the sum of the digits is 2 + 4 = 6, and 6² = 36. For 15, (1 + 5)² = 36.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Select the number pair that is related to the given pair in the same way:\n\n$24 : 36 :: 15 : ?$",
+  "options": [
+   "25",
+   "30",
+   "36",
+   "49"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For 24, $(2+4)^2=36$.\nThus $(1+5)^2=36$.\nThe other options are not the square of the digit sum.",
+  "distractor_notes": "A: uses the digit sum without squaring. B: applies an inconsistent operation. D: squares the digit difference instead."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

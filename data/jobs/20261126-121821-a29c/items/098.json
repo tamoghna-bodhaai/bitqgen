@@ -20,22 +20,22 @@
   ]
  },
  "status": "ok",
- "stem": "The mean of $25$ observations is $40$. If each observation is multiplied by $3$ and then decreased by $12$, the new mean is",
+ "stem": "The mean of $12$ observations is $11$. If each observation $x$ is replaced by $6-2x$, what is the mean of the resulting observations?",
  "options": [
-  "$84$",
-  "$108$",
-  "$120$",
-  "$132$"
+  "$-22$",
+  "$16$",
+  "$-16$",
+  "$28$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Mean transforms linearly: new mean = 3×40 − 12 = 120 − 12 = 108.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The transformed mean is 6 - 2(11) = -16.",
    "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Let the original observations be $x_1, x_2, \\dots, x_{25}$ with mean $\\bar{x} = 40$.\nEach new observation $y_i$ is obtained by the linear transformation:\n$$y_i = 3x_i - 12$$\n\nThe new mean $\\bar{y}$ is given by:\n$$\\bar{y} = \\dfrac{1}{25}\\sum_{i=1}^{25} y_i = \\dfrac{1}{25}\\sum_{i=1}^{25}(3x_i - 12)$$\n$$\\bar{y} = 3\\left(\\dfrac{1}{25}\\sum_{i=1}^{25} x_i\\right) - 12 = 3\\bar{x} - 12$$\n$$\\bar{y} = 3(40) - 12 = 120 - 12 = 108$$\n\nIndependent check: Mean transforms linearly: new mean = 3×40 − 12 = 120 − 12 = 108.",
- "solution": "",
+ "working": "$\\bar y=6-2\\bar x=6-2(11)=-16$\n\nIndependent check: The transformed mean is 6 - 2(11) = -16.",
+ "solution": "For the linear transformation $y=6-2x$, the mean transforms as $\\bar y=6-2\\bar x$.\n$$\\bar y=6-2(11)=-16$$",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "The mean of $25$ observations is $40$. If each observation is multiplied by $3$ and then decreased by $12$, the new mean is",
+  "stem": "The mean of $12$ observations is $11$. If each observation $x$ is replaced by $6-2x$, what is the mean of the resulting observations?",
   "options": [
-   "$84$",
-   "$108$",
-   "$120$",
-   "$132$"
+   "$-22$",
+   "$-16$",
+   "$16$",
+   "$28$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "Let the original observations be $x_1, x_2, \\dots, x_{25}$ with mean $\\bar{x} = 40$.\nEach new observation $y_i$ is obtained by the linear transformation:\n$$y_i = 3x_i - 12$$\n\nThe new mean $\\bar{y}$ is given by:\n$$\\bar{y} = \\dfrac{1}{25}\\sum_{i=1}^{25} y_i = \\dfrac{1}{25}\\sum_{i=1}^{25}(3x_i - 12)$$\n$$\\bar{y} = 3\\left(\\dfrac{1}{25}\\sum_{i=1}^{25} x_i\\right) - 12 = 3\\bar{x} - 12$$\n$$\\bar{y} = 3(40) - 12 = 120 - 12 = 108$$",
-  "distractor_notes": "$84$: incorrectly applied the shift before scaling, calculating $3(40 - 12) = 84$.\n$120$: forgot to apply the subtraction of $12$ to the mean, giving only $3 \\times 40 = 120$.\n$132$: sign error on the shift, adding $12$ instead of subtracting, giving $3(40) + 12 = 132$.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\bar y=6-2\\bar x=6-2(11)=-16$",
+  "distractor_notes": "A: omits the additive shift; C: loses the negative sign; D: treats the transformation as $6+2x$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

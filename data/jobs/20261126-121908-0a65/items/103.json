@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Select the related letters from the given alternatives to complete the analogy:\n\n**COLD : XLOW :: MAKE : ?**",
+ "stem": "Select the pair of letters that is related to **KM** in the same way that **CE** is related to **FH**.",
  "options": [
-  "NZPV",
-  "OZPV",
-  "NZPU",
-  "MZQW"
+  "NP",
+  "OQ",
+  "NQ",
+  "MP"
  ],
  "answer": "A",
  "figure": null,
@@ -33,9 +33,9 @@
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "COLD→XLOW is the Atbash (opposite-letter) mapping A↔Z, B↔Y, ... (letter positions sum to 27). Applying to MAKE: M→N, A→Z, K→P, E→V gives NZPV.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "C→F and E→H each shift forward 3 letters; K→N and M→P do the same.",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Each letter in the first term is replaced by its opposite letter in the English alphabet (the letter whose positional value from the end equals that from the beginning, such that the sum of their positional values is 27):\n- $\\text{C } (3) \\rightarrow 27 - 3 = 24 \\text{ (X)}$\n- $\\text{O } (15) \\rightarrow 27 - 15 = 12 \\text{ (L)}$\n- $\\text{L } (12) \\rightarrow 27 - 12 = 15 \\text{ (O)}$\n- $\\text{D } (4) \\rightarrow 27 - 4 = 23 \\text{ (W)}$\n\nApplying the same rule to **MAKE**:\n- $\\text{M } (13) \\rightarrow 27 - 13 = 14 \\text{ (N)}$\n- $\\text{A } (1) \\rightarrow 27 - 1 = 26 \\text{ (Z)}$\n- $\\text{K } (11) \\rightarrow 27 - 11 = 16 \\text{ (P)}$\n- $\\text{E } (5) \\rightarrow 27 - 5 = 22 \\text{ (V)}$\n\nThus, the missing term is **NZPV**.\n\nIndependent check: COLD→XLOW is the Atbash (opposite-letter) mapping A↔Z, B↔Y, ... (letter positions sum to 27). Applying to MAKE: M→N, A→Z, K→P, E→V gives NZPV.",
+ "working": "C→F and E→H: each letter advances 3 places in the alphabet. Applying the same rule, K→N and M→P, giving NP.\n\nIndependent check: C→F and E→H each shift forward 3 letters; K→N and M→P do the same.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Select the related letters from the given alternatives to complete the analogy:\n\n**COLD : XLOW :: MAKE : ?**",
+  "stem": "Select the pair of letters that is related to **KM** in the same way that **CE** is related to **FH**.",
   "options": [
-   "NZPV",
-   "OZPV",
-   "NZPU",
-   "MZQW"
+   "NP",
+   "OQ",
+   "NQ",
+   "MP"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "Each letter in the first term is replaced by its opposite letter in the English alphabet (the letter whose positional value from the end equals that from the beginning, such that the sum of their positional values is 27):\n- $\\text{C } (3) \\rightarrow 27 - 3 = 24 \\text{ (X)}$\n- $\\text{O } (15) \\rightarrow 27 - 15 = 12 \\text{ (L)}$\n- $\\text{L } (12) \\rightarrow 27 - 12 = 15 \\text{ (O)}$\n- $\\text{D } (4) \\rightarrow 27 - 4 = 23 \\text{ (W)}$\n\nApplying the same rule to **MAKE**:\n- $\\text{M } (13) \\rightarrow 27 - 13 = 14 \\text{ (N)}$\n- $\\text{A } (1) \\rightarrow 27 - 1 = 26 \\text{ (Z)}$\n- $\\text{K } (11) \\rightarrow 27 - 11 = 16 \\text{ (P)}$\n- $\\text{E } (5) \\rightarrow 27 - 5 = 22 \\text{ (V)}$\n\nThus, the missing term is **NZPV**.",
-  "distractor_notes": "OZPV encodes a calculation mistake in the first letter ($27 - 13 = 15 \\rightarrow \\text{O}$).\nNZPU encodes a calculation mistake in the fourth letter ($27 - 5 = 21 \\rightarrow \\text{U}$ instead of $22 \\rightarrow \\text{V}$).\nMZQW encodes leaving the first letter unchanged and using incorrect opposite pairings for the remaining letters.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "C→F and E→H: each letter advances 3 places in the alphabet. Applying the same rule, K→N and M→P, giving NP.",
+  "distractor_notes": "B: advances each letter by 4 places. C: advances the first letter by 3 but the second by 4. D: advances the first letter by 3 but the second by 1."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

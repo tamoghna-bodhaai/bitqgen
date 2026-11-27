@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Select the option that correctly improves the bold part of the sentence.\n\nThe new advisory committee **comprises of six members** from different academic backgrounds.",
+ "stem": "Select the option that correctly improves the bold part of the sentence.\n\nThe report **accused the contractor for falsifying several invoices** during the final stage of the construction project.",
  "options": [
-  "comprises with six members",
-  "comprises six members",
-  "is comprising of six members",
+  "accused the contractor of falsifying several invoices",
+  "accused the contractor with falsifying several invoices",
+  "accused the contractor to falsify several invoices",
   "No improvement"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "'Comprise' means 'consist of' and takes a direct object without 'of'. So 'comprises of six members' is wrong; correct form is 'comprises six members' (B). 'Comprises with' and 'is comprising of' are both ungrammatical.",
-   "answer": "B",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The correct construction is “accuse someone of doing something.”",
+   "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The verb 'comprise' means 'to consist of' or 'to be made up of'. In the active voice, 'comprise' is a transitive verb and takes a direct object without any intervening preposition (i.e., 'The whole comprises the parts'). Therefore, using the preposition 'of' after active 'comprises' is an error. Replacing 'comprises of six members' with 'comprises six members' makes the sentence grammatically correct.\n\nIndependent check: 'Comprise' means 'consist of' and takes a direct object without 'of'. So 'comprises of six members' is wrong; correct form is 'comprises six members' (B). 'Comprises with' and 'is comprising of' are both ungrammatical.",
+ "working": "The standard construction is “accuse someone of doing something.” “For,” “with,” and “to falsify” do not correctly complete this construction.\n\nIndependent check: The correct construction is “accuse someone of doing something.”",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Select the option that correctly improves the bold part of the sentence.\n\nThe new advisory committee **comprises of six members** from different academic backgrounds.",
+  "stem": "Select the option that correctly improves the bold part of the sentence.\n\nThe report **accused the contractor for falsifying several invoices** during the final stage of the construction project.",
   "options": [
-   "comprises with six members",
-   "comprises six members",
-   "is comprising of six members",
+   "accused the contractor of falsifying several invoices",
+   "accused the contractor with falsifying several invoices",
+   "accused the contractor to falsify several invoices",
    "No improvement"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The verb 'comprise' means 'to consist of' or 'to be made up of'. In the active voice, 'comprise' is a transitive verb and takes a direct object without any intervening preposition (i.e., 'The whole comprises the parts'). Therefore, using the preposition 'of' after active 'comprises' is an error. Replacing 'comprises of six members' with 'comprises six members' makes the sentence grammatically correct.",
-  "distractor_notes": "A: Uses an incorrect preposition 'with' after the transitive verb 'comprises'.\nC: Incorrectly uses the present continuous tense for a state/composition and retains the erroneous preposition 'of'.\nD: Fails to correct the ungrammatical use of 'of' following 'comprises'.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "The standard construction is “accuse someone of doing something.” “For,” “with,” and “to falsify” do not correctly complete this construction.",
+  "distractor_notes": "B: uses the wrong preposition; C: uses an incorrect infinitive construction; D: retains the preposition error."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

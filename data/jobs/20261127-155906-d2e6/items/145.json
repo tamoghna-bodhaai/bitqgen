@@ -1,0 +1,70 @@
+{
+ "qno": 145,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 145,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "parameter recovery",
+  "brief": "Given a binomial situation with P(X = r) related to P(X = r+1) by a ratio, recover n or p, then compute another probability; 4/5.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:91",
+   "2025s1:92",
+   "2026s2:98"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A random variable $X\\sim\\operatorname{Bin}(n,p)$ has mean $4$ and satisfies $P(X=3)=2P(X=2)$. Find $P(X=4)$.",
+ "options": [
+  "$\\dfrac{1}{16}$",
+  "$\\dfrac{7}{32}$",
+  "$\\dfrac{35}{128}$",
+  "$\\dfrac{35}{64}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since \\(np=4\\), the ratio \\(P(X=3)/P(X=2)=\\frac{n-2}{3}\\frac{p}{1-p}=2\\) gives \\((n-2)p=6(1-p)\\). Substituting \\(np=4\\) yields \\(p=\\tfrac12\\), so \\(n=8\\). Thus \\(P(X=4)=\\binom84(\\tfrac12)^8=\\tfrac{35}{128}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$np=4,\\quad\\dfrac{P(X=3)}{P(X=2)}=\\dfrac{n-2}{3}\\dfrac{p}{1-p}=2.$ Substituting $p=\\dfrac{4}{n}$ gives $n=8$, $p=\\dfrac12$. $P(X=4)=\\binom84\\left(\\dfrac12\\right)^8=\\dfrac{35}{128}$.\n\nIndependent check: Since \\(np=4\\), the ratio \\(P(X=3)/P(X=2)=\\frac{n-2}{3}\\frac{p}{1-p}=2\\) gives \\((n-2)p=6(1-p)\\). Substituting \\(np=4\\) yields \\(p=\\tfrac12\\), so \\(n=8\\). Thus \\(P(X=4)=\\binom84(\\tfrac12)^8=\\tfrac{35}{128}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A random variable $X\\sim\\operatorname{Bin}(n,p)$ has mean $4$ and satisfies $P(X=3)=2P(X=2)$. Find $P(X=4)$.",
+  "options": [
+   "$\\dfrac{1}{16}$",
+   "$\\dfrac{7}{32}$",
+   "$\\dfrac{35}{128}$",
+   "$\\dfrac{35}{64}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$np=4,\\quad\\dfrac{P(X=3)}{P(X=2)}=\\dfrac{n-2}{3}\\dfrac{p}{1-p}=2.$ Substituting $p=\\dfrac{4}{n}$ gives $n=8$, $p=\\dfrac12$. $P(X=4)=\\binom84\\left(\\dfrac12\\right)^8=\\dfrac{35}{128}$.",
+  "distractor_notes": "A: omits the number of ways to choose the four successes and the failures; B: uses an incorrect binomial coefficient; D: misses a factor of $\\dfrac12$ in the probability."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

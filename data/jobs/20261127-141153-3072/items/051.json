@@ -1,0 +1,68 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "VBT – spin and magnetism",
+  "archetype": "electron configuration comparison",
+  "brief": "Compare [Fe(CN)6]4− and [Fe(H2O)6]2+ for hybridisation and magnetic nature (diamagnetic vs paramagnetic); pick the correct pairing.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:78",
+   "2024s2:45",
+   "2024s1:32"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which pairing correctly describes $[\\text{Fe(CN)}_6]^{4-}$ and $[\\text{Fe(H}_2\\text{O)}_6]^{2+}$, respectively?",
+ "options": [
+  "$sp^3d^2$, paramagnetic; $d^2sp^3$, diamagnetic",
+  "$d^2sp^3$, diamagnetic; $sp^3d^2$, paramagnetic",
+  "$d^2sp^3$, paramagnetic; $sp^3d^2$, diamagnetic",
+  "$sp^3d^2$, diamagnetic; $d^2sp^3$, paramagnetic"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fe²⁺ is d⁶. CN⁻ gives a low-spin inner-orbital complex (d²sp³), diamagnetic; H₂O gives a high-spin outer-orbital complex (sp³d²), paramagnetic.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Fe}^{2+}$ is $d^6$.\\\n$\\text{CN}^-$ is strong-field: low-spin $d^6$, $d^2sp^3$, 0 unpaired electrons.\\\n$\\text{H}_2\\text{O}$ is weak-field: high-spin $d^6$, $sp^3d^2$, 4 unpaired electrons.\n\nIndependent check: Fe²⁺ is d⁶. CN⁻ gives a low-spin inner-orbital complex (d²sp³), diamagnetic; H₂O gives a high-spin outer-orbital complex (sp³d²), paramagnetic.",
+ "solution": "Fe$^{2+}$ has configuration $3d^6$. CN$^-$ is a strong-field ligand, so the complex is low-spin and uses inner $d^2sp^3$ hybridisation; all electrons are paired.\nH$_2$O is a weak-field ligand, giving a high-spin $sp^3d^2$ complex with four unpaired electrons.\nThus, the pair is $d^2sp^3$, diamagnetic; $sp^3d^2$, paramagnetic.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which pairing correctly describes $[\\text{Fe(CN)}_6]^{4-}$ and $[\\text{Fe(H}_2\\text{O)}_6]^{2+}$, respectively?",
+  "options": [
+   "$d^2sp^3$, diamagnetic; $sp^3d^2$, paramagnetic",
+   "$sp^3d^2$, paramagnetic; $d^2sp^3$, diamagnetic",
+   "$d^2sp^3$, paramagnetic; $sp^3d^2$, diamagnetic",
+   "$sp^3d^2$, diamagnetic; $d^2sp^3$, paramagnetic"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{Fe}^{2+}$ is $d^6$.\\\n$\\text{CN}^-$ is strong-field: low-spin $d^6$, $d^2sp^3$, 0 unpaired electrons.\\\n$\\text{H}_2\\text{O}$ is weak-field: high-spin $d^6$, $sp^3d^2$, 4 unpaired electrons.",
+  "distractor_notes": "B: interchanges the ligands' field strengths and properties.\\nC: assigns paramagnetism to the low-spin complex and diamagnetism to the high-spin one.\\nD: reverses the hybridisation and magnetic behaviour of both complexes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

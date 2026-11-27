@@ -1,0 +1,78 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Earth's magnetism – dip",
+  "archetype": "single-formula numerical",
+  "brief": "Show a dip circle / place with given horizontal and vertical components (or dip angle); use tan(dip) = Bv/Bh to find a missing component or the total field.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:17",
+   "2021:3",
+   "2025s2:1"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "At a place, the Earth's magnetic field has the horizontal component shown in the figure and a dip angle of $45^\\circ$. What is the magnitude of its vertical component?",
+ "options": [
+  "$2\\times10^{-5}\\ \\text{T}$",
+  "$4\\sqrt{2}\\times10^{-5}\\ \\text{T}$",
+  "$4\\times10^{-5}\\ \\text{T}$",
+  "$8\\times10^{-5}\\ \\text{T}$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q020_stem_v0.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The dip angle satisfies \\(\\tan 45^\\circ = B_V/B_H\\). Thus \\(B_V = 4\\times10^{-5}\\,\\text{T}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\tan\\delta=\\dfrac{B_V}{B_H}$.<br>$B_V=B_H\\tan45^\\circ=4\\times10^{-5}\\ \\text{T}$.\n\nIndependent check: The dip angle satisfies \\(\\tan 45^\\circ = B_V/B_H\\). Thus \\(B_V = 4\\times10^{-5}\\,\\text{T}\\).",
+ "solution": "The dip angle relates the vertical and horizontal components by $\\tan\\delta=\\dfrac{B_V}{B_H}$.\n$$B_V=B_H\\tan45^\\circ=4\\times10^{-5}\\ \\text{T}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "At a place, the Earth's magnetic field has the horizontal component shown in the figure and a dip angle of $45^\\circ$. What is the magnitude of its vertical component?",
+  "options": [
+   "$2\\times10^{-5}\\ \\text{T}$",
+   "$4\\times10^{-5}\\ \\text{T}$",
+   "$4\\sqrt{2}\\times10^{-5}\\ \\text{T}$",
+   "$8\\times10^{-5}\\ \\text{T}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a simple dip-angle vector diagram. From a common origin, draw a horizontal arrow pointing right labelled $B_H=4\\times10^{-5}\\ \\text{T}$. Draw a vertical arrow pointing downward labelled $B_V$. Draw a diagonal arrow from the origin pointing down and right to represent the Earth's total field. Mark the angle between the diagonal arrow and the horizontal rightward arrow as $45^\\circ$. Label the diagram with the usual horizontal and vertical component directions; do not give a value for $B_V$.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$\\tan\\delta=\\dfrac{B_V}{B_H}$.<br>$B_V=B_H\\tan45^\\circ=4\\times10^{-5}\\ \\text{T}$.",
+  "distractor_notes": "A: halves the horizontal component; C: calculates the total field; D: doubles the horizontal component."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "Definite integral of an odd/even function over a symmetric interval, possibly combined with a known definite-integral property like ∫f(x)dx = ∫f(a+b-x)dx to simplify before evaluating.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:143",
+   "2026s1:101",
+   "2021:118"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $I=\\displaystyle\\int_0^{\\pi/2}\\frac{x+\\pi/4}{1+\\sin x+\\cos x}\\,dx$.",
+ "options": [
+  "$\\dfrac{\\pi\\ln 2}{2}$",
+  "$\\ln 2$",
+  "$\\dfrac{\\pi}{2}$",
+  "$\\pi\\ln 2$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let f(x)=1/(1+sin x+cos x), so f(π/2−x)=f(x). Hence ∫(x+π/4)f(x)dx=(π/2)∫f(x)dx. With t=tan(x/2), ∫₀^{π/2}f(x)dx=∫₀¹dt/(1+t)=ln 2. Thus I=(π ln 2)/2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $J=\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin x+\\cos x}$. Under $x\\mapsto\\frac{\\pi}{2}-x$, the two numerators sum to $\\pi$, so $2I=\\pi J$. With $t=\\tan\\frac{x}{2}$, $J=\\int_0^1\\dfrac{dt}{1+t}=\\ln 2$. Hence $I=\\dfrac{\\pi\\ln 2}{2}$.\n\nIndependent check: Let f(x)=1/(1+sin x+cos x), so f(π/2−x)=f(x). Hence ∫(x+π/4)f(x)dx=(π/2)∫f(x)dx. With t=tan(x/2), ∫₀^{π/2}f(x)dx=∫₀¹dt/(1+t)=ln 2. Thus I=(π ln 2)/2.",
+ "solution": "Since $f(x)=\\dfrac{1}{1+\\sin x+\\cos x}$ satisfies $f(\\frac{\\pi}{2}-x)=f(x)$, symmetry gives $I=\\dfrac{\\pi}{2}\\int_0^{\\pi/2}f(x)\\,dx$.\nUsing $t=\\tan\\dfrac{x}{2}$,\n$$\\int_0^{\\pi/2}f(x)\\,dx=\\int_0^1\\frac{dt}{1+t}=\\ln 2.$$\nTherefore, $I=\\dfrac{\\pi\\ln 2}{2}$. (A)",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Evaluate $I=\\displaystyle\\int_0^{\\pi/2}\\frac{x+\\pi/4}{1+\\sin x+\\cos x}\\,dx$.",
+  "options": [
+   "$\\ln 2$",
+   "$\\dfrac{\\pi\\ln 2}{2}$",
+   "$\\dfrac{\\pi}{2}$",
+   "$\\pi\\ln 2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Let $J=\\int_0^{\\pi/2}\\dfrac{dx}{1+\\sin x+\\cos x}$. Under $x\\mapsto\\frac{\\pi}{2}-x$, the two numerators sum to $\\pi$, so $2I=\\pi J$. With $t=\\tan\\frac{x}{2}$, $J=\\int_0^1\\dfrac{dt}{1+t}=\\ln 2$. Hence $I=\\dfrac{\\pi\\ln 2}{2}$.",
+  "distractor_notes": "A: omits the factor $\\pi/2$ from the symmetry step; C: takes the standard integral $J$ to be $1$; D: misses the factor $1/2$ when solving for $I$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

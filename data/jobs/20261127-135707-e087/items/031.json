@@ -1,0 +1,68 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Centre of mass",
+  "archetype": "weighted average",
+  "brief": "Three/four point masses placed at corners of a square or along a rod; find coordinates of centre of mass by weighted average (simple direct computation).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:25",
+   "2025s2:14",
+   "2021:40"
+  ]
+ },
+ "status": "ok",
+ "stem": "Four point masses are placed at the corners of a square of side $2\\ \\text{m}$. Their coordinates and masses are $(0,0):1\\ \\text{kg}$, $(2,0):2\\ \\text{kg}$, $(0,2):3\\ \\text{kg}$ and $(2,2):4\\ \\text{kg}$. The centre of mass has coordinates",
+ "options": [
+  "$(1.0\\ \\text{m},\\ 1.0\\ \\text{m})$",
+  "$(1.2\\ \\text{m},\\ 1.2\\ \\text{m})$",
+  "$(1.4\\ \\text{m},\\ 1.2\\ \\text{m})$",
+  "$(1.2\\ \\text{m},\\ 1.4\\ \\text{m})$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total mass = 10 kg. The weighted coordinates are x = (2×2 + 4×2)/10 = 1.2 m and y = (3×2 + 4×2)/10 = 1.4 m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$M=1+2+3+4=10\\ \\text{kg}$\n$x_{\\rm cm}=\\dfrac{1(0)+2(2)+3(0)+4(2)}{10}=1.2\\ \\text{m}$\n$y_{\\rm cm}=\\dfrac{1(0)+2(0)+3(2)+4(2)}{10}=1.4\\ \\text{m}$\n\nIndependent check: Total mass = 10 kg. The weighted coordinates are x = (2×2 + 4×2)/10 = 1.2 m and y = (3×2 + 4×2)/10 = 1.4 m.",
+ "solution": "For point masses, $x_{\\rm cm}=\\dfrac{\\sum m_i x_i}{\\sum m_i}$ and $y_{\\rm cm}=\\dfrac{\\sum m_i y_i}{\\sum m_i}$. With total mass $M=10\\,\\text{kg}$,\n$$x_{\\rm cm}=\\dfrac{2(2)+4(2)}{10}=1.2\\,\\text{m},\\qquad y_{\\rm cm}=\\dfrac{3(2)+4(2)}{10}=1.4\\,\\text{m}.$$\nHence, the centre of mass is $(1.2\\,\\text{m},\\ 1.4\\,\\text{m})$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Four point masses are placed at the corners of a square of side $2\\ \\text{m}$. Their coordinates and masses are $(0,0):1\\ \\text{kg}$, $(2,0):2\\ \\text{kg}$, $(0,2):3\\ \\text{kg}$ and $(2,2):4\\ \\text{kg}$. The centre of mass has coordinates",
+  "options": [
+   "$(1.0\\ \\text{m},\\ 1.0\\ \\text{m})$",
+   "$(1.2\\ \\text{m},\\ 1.4\\ \\text{m})$",
+   "$(1.4\\ \\text{m},\\ 1.2\\ \\text{m})$",
+   "$(1.2\\ \\text{m},\\ 1.2\\ \\text{m})$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$M=1+2+3+4=10\\ \\text{kg}$\n$x_{\\rm cm}=\\dfrac{1(0)+2(2)+3(0)+4(2)}{10}=1.2\\ \\text{m}$\n$y_{\\rm cm}=\\dfrac{1(0)+2(0)+3(2)+4(2)}{10}=1.4\\ \\text{m}$",
+  "distractor_notes": "A: treats the four corner masses as equal. C: interchanges the calculated coordinates. D: omits the contribution of the masses at the upper corners to the vertical coordinate."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

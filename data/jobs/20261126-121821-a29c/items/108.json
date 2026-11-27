@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "The value of $\\lambda$ for which the system of linear equations\n$$\\begin{aligned}\nx + y + z &= 2 \\\\\n2x + \\lambda y + z &= 3 \\\\\n3x + y + \\lambda z &= 7\n\\end{aligned}$$\nhas infinitely many solutions is:",
+ "stem": "The system $x+y+z=1$, $x+2y+2z=4$, $x+\\lambda y+4z=10$ has infinitely many solutions when $\\lambda$ is:",
  "options": [
-  "$-4$",
-  "$-1$",
-  "$1$",
-  "$4$"
+  "$2$",
+  "$4$",
+  "$3$",
+  "$5$"
  ],
- "answer": "D",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Det = λ²−5λ+4 = (λ−1)(λ−4), so singular at λ=1 or 4. At λ=1: eq2−eq1 gives x=1, eq3−eq1 gives 2x=5 → inconsistent (no solution). At λ=4: rank(M)=rank([M|b])=2, solutions x=1−3t, y=t, z=1+2t → infinitely many. Verified numerically.",
-   "answer": "D",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Subtract the first equation from the second and third to get y + z = 3 and (lambda - 1)y + 3z = 9. For infinitely many solutions, the latter must be three times the former, so lambda - 1 = 3 and lambda = 4.",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "For the system to have infinitely many solutions, the determinant of the coefficient matrix must be zero:\n$$\\Delta = \\begin{vmatrix} 1 & 1 & 1 \\\\ 2 & \\lambda & 1 \\\\ 3 & 1 & \\lambda \\end{vmatrix} = 0$$\n\nExpanding along the first row:\n$$\\begin{aligned}\n\\Delta &= 1(\\lambda^2 - 1) - 1(2\\lambda - 3) + 1(2 - 3\\lambda) \\\\\n&= \\lambda^2 - 1 - 2\\lambda + 3 + 2 - 3\\lambda \\\\\n&= \\lambda^2 - 5\\lambda + 4 = (\\lambda - 1)(\\lambda - 4)\n\\end{aligned}$$\nThus, $\\Delta = 0 \\implies \\lambda = 1$ or $\\lambda = 4$.\n\nNow, test for consistency:\n\nCase 1: $\\lambda = 1$\nThe equations are:\n(1) $x + y + z = 2$\n(2) $2x + y + z = 3$\n(3) $3x + y + z = 7$\n\nSubtracting (1) from (2) gives $x = 1$. Substituting $x = 1$ into (1) gives $y + z = 1$, whereas substituting into (3) gives $y + z = 4$, which is a contradiction. Hence, at $\\lambda = 1$, the system is inconsistent (no solution).\n\nCase 2: $\\lambda = 4$\nThe equations are:\n(1) $x + y + z = 2$\n(2) $2x + 4y + z = 3$\n(3) $3x + y + 4z = 7$\n\nAdding equation (2) and equation (3):\n$$(2x + 4y + z) + (3x + y + 4z) = 5x + 5y + 5z = 5(x + y + z)$$\nThe sum of the constants is $3 + 7 = 10 = 5(2)$.\nThus, equation (3) is $5 \\times \\text{Eq}(1) - \\text{Eq}(2)$. Since the planes are not parallel, the system represents the intersection of two distinct planes, which is a line, giving infinitely many solutions.\n\nTherefore, $\\lambda = 4$.\n\nIndependent check: Det = λ²−5λ+4 = (λ−1)(λ−4), so singular at λ=1 or 4. At λ=1: eq2−eq1 gives x=1, eq3−eq1 gives 2x=5 → inconsistent (no solution). At λ=4: rank(M)=rank([M|b])=2, solutions x=1−3t, y=t, z=1+2t → infinitely many. Verified numerically.",
- "solution": "",
+ "working": "$\\Delta=\\begin{vmatrix}1&1&1\\\\1&2&2\\\\1&\\lambda&4\\end{vmatrix}=4-\\lambda$, so $\\Delta=0$ gives $\\lambda=4$. Then Eq. (3) $=3\\,\\text{Eq. (2)}-2\\,\\text{Eq. (1)}$, including the right-hand sides: $10=3(4)-2(1)$. The first two coefficient rows are independent, so the consistent system has infinitely many solutions.\n\nIndependent check: Subtract the first equation from the second and third to get y + z = 3 and (lambda - 1)y + 3z = 9. For infinitely many solutions, the latter must be three times the former, so lambda - 1 = 3 and lambda = 4.",
+ "solution": "For infinitely many solutions, the third equation must be dependent on the first two. At $\\lambda=4$, its left-hand side is $3$ times equation (2) minus $2$ times equation (1), and $3(4)-2(1)=10$ on the right-hand side as well. Thus the system is consistent with dependent equations, giving infinitely many solutions.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The value of $\\lambda$ for which the system of linear equations\n$$\\begin{aligned}\nx + y + z &= 2 \\\\\n2x + \\lambda y + z &= 3 \\\\\n3x + y + \\lambda z &= 7\n\\end{aligned}$$\nhas infinitely many solutions is:",
+  "stem": "The system $x+y+z=1$, $x+2y+2z=4$, $x+\\lambda y+4z=10$ has infinitely many solutions when $\\lambda$ is:",
   "options": [
-   "$-4$",
-   "$-1$",
-   "$1$",
-   "$4$"
+   "$2$",
+   "$3$",
+   "$4$",
+   "$5$"
   ],
   "option_smiles": null,
-  "answer": "D",
-  "working": "For the system to have infinitely many solutions, the determinant of the coefficient matrix must be zero:\n$$\\Delta = \\begin{vmatrix} 1 & 1 & 1 \\\\ 2 & \\lambda & 1 \\\\ 3 & 1 & \\lambda \\end{vmatrix} = 0$$\n\nExpanding along the first row:\n$$\\begin{aligned}\n\\Delta &= 1(\\lambda^2 - 1) - 1(2\\lambda - 3) + 1(2 - 3\\lambda) \\\\\n&= \\lambda^2 - 1 - 2\\lambda + 3 + 2 - 3\\lambda \\\\\n&= \\lambda^2 - 5\\lambda + 4 = (\\lambda - 1)(\\lambda - 4)\n\\end{aligned}$$\nThus, $\\Delta = 0 \\implies \\lambda = 1$ or $\\lambda = 4$.\n\nNow, test for consistency:\n\nCase 1: $\\lambda = 1$\nThe equations are:\n(1) $x + y + z = 2$\n(2) $2x + y + z = 3$\n(3) $3x + y + z = 7$\n\nSubtracting (1) from (2) gives $x = 1$. Substituting $x = 1$ into (1) gives $y + z = 1$, whereas substituting into (3) gives $y + z = 4$, which is a contradiction. Hence, at $\\lambda = 1$, the system is inconsistent (no solution).\n\nCase 2: $\\lambda = 4$\nThe equations are:\n(1) $x + y + z = 2$\n(2) $2x + 4y + z = 3$\n(3) $3x + y + 4z = 7$\n\nAdding equation (2) and equation (3):\n$$(2x + 4y + z) + (3x + y + 4z) = 5x + 5y + 5z = 5(x + y + z)$$\nThe sum of the constants is $3 + 7 = 10 = 5(2)$.\nThus, equation (3) is $5 \\times \\text{Eq}(1) - \\text{Eq}(2)$. Since the planes are not parallel, the system represents the intersection of two distinct planes, which is a line, giving infinitely many solutions.\n\nTherefore, $\\lambda = 4$.",
-  "distractor_notes": "Option A ($-4$): Obtained from a sign error when factoring $\\lambda^2 - 5\\lambda + 4 = 0$ as $(\\lambda + 4)(\\lambda - 1) = 0$.\nOption B ($-1$): Obtained from a sign error when factoring $\\lambda^2 - 5\\lambda + 4 = 0$ as $(\\lambda - 4)(\\lambda + 1) = 0$.\nOption C ($1$): The other root of $\\Delta = 0$; here $\\Delta_x = 0$ holds trivially due to identical columns, but $\\Delta_y = 3 \\neq 0$, making the system inconsistent (no solution).",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$\\Delta=\\begin{vmatrix}1&1&1\\\\1&2&2\\\\1&\\lambda&4\\end{vmatrix}=4-\\lambda$, so $\\Delta=0$ gives $\\lambda=4$. Then Eq. (3) $=3\\,\\text{Eq. (2)}-2\\,\\text{Eq. (1)}$, including the right-hand sides: $10=3(4)-2(1)$. The first two coefficient rows are independent, so the consistent system has infinitely many solutions.",
+  "distractor_notes": "A: Incorrect determinant expansion. B: Sign or arithmetic error when setting the determinant to zero. D: Sign error in the determinant."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

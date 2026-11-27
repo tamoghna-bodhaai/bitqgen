@@ -1,0 +1,70 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching a wire",
+  "archetype": "volume-constant scaling",
+  "brief": "Wire stretched so its length increases by a given factor; find new resistance using R ∝ L² at constant volume.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:13",
+   "2025s2:12",
+   "2025s1:4"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A wire of resistance $5\\ \\Omega$ is stretched until its length is $1.5$ times its original length. Assuming its volume and resistivity remain unchanged, its new resistance is",
+ "options": [
+  "$11.25\\ \\Omega$",
+  "$7.5\\ \\Omega$",
+  "$5\\ \\Omega$",
+  "$15\\ \\Omega$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With volume constant, the cross-sectional area varies inversely with length, so resistance varies as length squared. Thus R' = 5(1.5)^2 = 11.25 Ω.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At constant volume, $R\\propto L^2$. Thus $R'=5(1.5)^2=11.25\\ \\Omega$.\n\nIndependent check: With volume constant, the cross-sectional area varies inversely with length, so resistance varies as length squared. Thus R' = 5(1.5)^2 = 11.25 Ω.",
+ "solution": "Since $R=\\rho L/A$ and volume $AL$ is constant, $A\\propto 1/L$, so $R\\propto L^2$.\n$$R'=5(1.5)^2=11.25\\ \\Omega$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wire of resistance $5\\ \\Omega$ is stretched until its length is $1.5$ times its original length. Assuming its volume and resistivity remain unchanged, its new resistance is",
+  "options": [
+   "$5\\ \\Omega$",
+   "$7.5\\ \\Omega$",
+   "$11.25\\ \\Omega$",
+   "$15\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "At constant volume, $R\\propto L^2$. Thus $R'=5(1.5)^2=11.25\\ \\Omega$.",
+  "distractor_notes": "A: assumes resistance is unchanged; B: scales resistance linearly with length; D: doubles the resistance instead of applying the squared length factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Radiation pressure / momentum of EM waves",
+  "archetype": "momentum change",
+  "brief": "Light/EM wave of given intensity or power falls on a surface (reflecting/absorbing, possibly at angle); compute radiation pressure and force on the surface.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:12",
+   "2021:12",
+   "2026s1:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "A beam of power $9$ W strikes a stationary surface at $60^\\circ$ to its normal. One-third of the incident power is reflected specularly and the rest is absorbed. Taking $c=3.0\\times10^8$ m s$^{-1}$, find the magnitude of the force on the surface.",
+ "options": [
+  "$2.00\\times10^{-8}\\ \\text{N}$",
+  "$(2+\\sqrt{3})\\times10^{-8}\\ \\text{N}$",
+  "$3.00\\times10^{-8}\\ \\text{N}$",
+  "$\\sqrt{7}\\times10^{-8}\\ \\text{N}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Incident momentum rate is (9/c)(sin60°, cos60°); reflected momentum rate is (3/c)(sin60°, −cos60°). Their difference gives force components (√3, 2)×10⁻⁸ N, so the magnitude is √7×10⁻⁸ N.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $r=1/3$. $F_n=(1+r)P\\cos60^\\circ/c=2.0\\times10^{-8}$ N; $F_t=(1-r)P\\sin60^\\circ/c=\\sqrt{3}\\times10^{-8}$ N. $F=\\sqrt{F_n^2+F_t^2}=\\sqrt{7}\\times10^{-8}$ N.\n\nIndependent check: Incident momentum rate is (9/c)(sin60°, cos60°); reflected momentum rate is (3/c)(sin60°, −cos60°). Their difference gives force components (√3, 2)×10⁻⁸ N, so the magnitude is √7×10⁻⁸ N.",
+ "solution": "For reflected fraction $r=1/3$, the normal and tangential force components are\n$$F_n=\\frac{(1+r)P\\cos60^\\circ}{c}=2.0\\times10^{-8}\\,\\text{N},\\qquad F_t=\\frac{(1-r)P\\sin60^\\circ}{c}=\\sqrt{3}\\times10^{-8}\\,\\text{N}.$$\nHence $F=\\sqrt{F_n^2+F_t^2}=\\sqrt{7}\\times10^{-8}\\,\\text{N}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A beam of power $9$ W strikes a stationary surface at $60^\\circ$ to its normal. One-third of the incident power is reflected specularly and the rest is absorbed. Taking $c=3.0\\times10^8$ m s$^{-1}$, find the magnitude of the force on the surface.",
+  "options": [
+   "$2.00\\times10^{-8}\\ \\text{N}$",
+   "$\\sqrt{7}\\times10^{-8}\\ \\text{N}$",
+   "$3.00\\times10^{-8}\\ \\text{N}$",
+   "$(2+\\sqrt{3})\\times10^{-8}\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Let $r=1/3$. $F_n=(1+r)P\\cos60^\\circ/c=2.0\\times10^{-8}$ N; $F_t=(1-r)P\\sin60^\\circ/c=\\sqrt{3}\\times10^{-8}$ N. $F=\\sqrt{F_n^2+F_t^2}=\\sqrt{7}\\times10^{-8}$ N.",
+  "distractor_notes": "A: gives only the normal component; C: uses the full absorbed-beam force magnitude; D: adds perpendicular components as scalars."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

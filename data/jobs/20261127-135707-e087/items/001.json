@@ -1,0 +1,68 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Work done by friction on incline",
+  "archetype": "multi-step numeric",
+  "brief": "A block released from rest slides down a long rough incline of known incline angle and friction coefficient; find fraction of initial energy lost to heat, using work-energy theorem with friction.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:4",
+   "2025s1:7",
+   "2025s2:8"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $2.0\\ \\text{kg}$ block slides from rest down a rough incline through a vertical drop of $15\\ \\text{m}$. For $\\theta=37^\\circ$, $\\mu=0.30$, $\\sin37^\\circ=0.60$, $\\cos37^\\circ=0.80$ and $g=10\\ \\text{m s}^{-2}$, what percentage of its initial gravitational potential energy is dissipated by friction?",
+ "options": [
+  "$22.5\\%$",
+  "$30\\%$",
+  "$40\\%$",
+  "$60\\%$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The distance along the incline is s = h/sinθ. The frictional-energy fraction is μmg cosθ · s/(mgh) = μ cotθ = 0.30(0.80/0.60) = 0.40.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$s=15/0.60=25\\ \\text{m}$; $W_f=\\mu mg\\cos\\theta\\,s=0.30(2)(10)(0.80)(25)=120\\ \\text{J}$; $mgh=300\\ \\text{J}$; $100W_f/(mgh)=40\\%$.\n\nIndependent check: The distance along the incline is s = h/sinθ. The frictional-energy fraction is μmg cosθ · s/(mgh) = μ cotθ = 0.30(0.80/0.60) = 0.40.",
+ "solution": "The distance travelled along the incline is $s=\\frac{h}{\\sin\\theta}=\\frac{15}{0.60}=25\\ \\text{m}$. The work done by friction is\n$$W_f=\\mu mg\\cos\\theta\\,s=0.30(2)(10)(0.80)(25)=120\\ \\text{J}.$$The initial potential energy is $mgh=300\\ \\text{J}$, so the dissipated percentage is $\\frac{120}{300}\\times100=40\\%$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A $2.0\\ \\text{kg}$ block slides from rest down a rough incline through a vertical drop of $15\\ \\text{m}$. For $\\theta=37^\\circ$, $\\mu=0.30$, $\\sin37^\\circ=0.60$, $\\cos37^\\circ=0.80$ and $g=10\\ \\text{m s}^{-2}$, what percentage of its initial gravitational potential energy is dissipated by friction?",
+  "options": [
+   "$22.5\\%$",
+   "$30\\%$",
+   "$40\\%$",
+   "$60\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$s=15/0.60=25\\ \\text{m}$; $W_f=\\mu mg\\cos\\theta\\,s=0.30(2)(10)(0.80)(25)=120\\ \\text{J}$; $mgh=300\\ \\text{J}$; $100W_f/(mgh)=40\\%$.",
+  "distractor_notes": "A uses $\\mu\\tan\\theta$ instead of $\\mu\\cot\\theta$; B takes $\\mu$ as the lost fraction; D gives the fraction remaining as kinetic energy."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

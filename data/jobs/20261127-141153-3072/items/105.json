@@ -1,0 +1,68 @@
+{
+ "qno": 105,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 105,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism with possibility",
+  "archetype": "syllogism with either-or",
+  "brief": "Two statements with overlapping categories; evaluate three conclusions including a possibility case and an either-or pair.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:82",
+   "2023s2:83",
+   "2024s1:78"
+  ]
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nSome sculptors are designers.\nAll designers are imaginative.\n\n**Conclusions:**\nI. Some sculptors being architects is a possibility.\nII. Some sculptors are architects.\nIII. No sculptor is an architect.",
+ "options": [
+  "Only conclusion I follows",
+  "Either conclusion II or III follows, but conclusion I does not follow",
+  "Conclusion I and either conclusion II or III follow",
+  "Neither conclusion I nor the either-or pair follows"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Some sculptors exist. Their relation to architects is unspecified, so overlap is possible (I). Conclusions II and III are contradictories; with sculptors known to exist, one must hold. Thus I and the either-or pair follow.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "I is possible: no statement rules out sculptors being architects.\nII and III are each uncertain, but together they cover the alternatives; some sculptors exist.\nA omits the either-or pair; B omits I; D denies both results.\n\nIndependent check: Some sculptors exist. Their relation to architects is unspecified, so overlap is possible (I). Conclusions II and III are contradictories; with sculptors known to exist, one must hold. Thus I and the either-or pair follow.",
+ "solution": "Some sculptors exist, and nothing restricts their relation to architects; hence some sculptors being architects is possible (I).\nConclusions II and III are contradictories, so one of them must hold.\nTherefore, conclusion I and the either-or pair of conclusions II and III follow.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statements:**\nSome sculptors are designers.\nAll designers are imaginative.\n\n**Conclusions:**\nI. Some sculptors being architects is a possibility.\nII. Some sculptors are architects.\nIII. No sculptor is an architect.",
+  "options": [
+   "Only conclusion I follows",
+   "Either conclusion II or III follows, but conclusion I does not follow",
+   "Conclusion I and either conclusion II or III follow",
+   "Neither conclusion I nor the either-or pair follows"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "I is possible: no statement rules out sculptors being architects.\nII and III are each uncertain, but together they cover the alternatives; some sculptors exist.\nA omits the either-or pair; B omits I; D denies both results.",
+  "distractor_notes": "A: Omits the valid either-or pair. B: Incorrectly says conclusion I does not follow. D: Incorrectly denies both the possibility and the either-or pair."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,93 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Wheatstone bridge",
+  "archetype": "circuit analysis",
+  "brief": "Balanced Wheatstone bridge circuit with four resistances and a galvanometer; find the unknown resistance for balance (or current in the bridge arm when unbalanced); circuit figure required.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:3",
+   "2023s1:16",
+   "2021:26"
+  ],
+  "origin": "variant",
+  "bank_ref": "g0d77ee629df0"
+ },
+ "status": "ok",
+ "stem": "In the circuit shown, the galvanometer has zero deflection. Find the resistance $X$.",
+ "options": [
+  "$6\\ \\Omega$",
+  "$3\\ \\Omega$",
+  "$1.5\\ \\Omega$",
+  "$8\\ \\Omega$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q027_stem_v0.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The horizontal wire directly connects the two midpoint nodes, so they are equipotential. The galvanometer is not shown as a complete branch between distinct nodes; as drawn, zero deflection does not constrain X.",
+   "answer": "NONE",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [
+    "The galvanometer connection is incomplete/unclear, and the horizontal wire shorts the two bridge midpoints. Thus the condition does not determine X. If the intended circuit was a standard Wheatstone bridge with the galvanometer between the midpoints, then X = 6 Ω (option C)."
+   ],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "Balanced Wheatstone bridge (galvanometer between left and right junctions, battery across top and bottom): 2/3 = 4/X, so X = 4×3/2 = 6 Ω.",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [
+  "figure check: The galvanometer is drawn vertically in the middle of the diamond, connecting the horizontal wire to the top-left branch, instead of being connected between the left midpoint and the right midpoint as the brief specifies. As drawn it is placed across the 2 Ω branch rather than bridging the two midpoints."
+ ],
+ "working": "At balance, $P/Q=R/X$. Thus $2/4=3/X$, giving $X=6\\ \\Omega$.\n\nIndependent check: Balanced Wheatstone bridge (galvanometer between left and right junctions, battery across top and bottom): 2/3 = 4/X, so X = 4×3/2 = 6 Ω.",
+ "solution": "At zero galvanometer deflection, the Wheatstone bridge is balanced, so $\\dfrac{P}{Q}=\\dfrac{R}{X}$.\n$$\\frac{2}{4}=\\frac{3}{X}\\quad\\Rightarrow\\quad X=6\\ \\Omega$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown, the galvanometer has zero deflection. Find the resistance $X$.",
+  "options": [
+   "$1.5\\ \\Omega$",
+   "$3\\ \\Omega$",
+   "$6\\ \\Omega$",
+   "$8\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a diamond-shaped Wheatstone bridge with a top vertex and a bottom vertex. The left branch has a 2 Ω resistor from the top vertex to the left midpoint and a 4 Ω resistor from the left midpoint to the bottom vertex. The right branch has a 3 Ω resistor from the top vertex to the right midpoint and a resistor labelled X from the right midpoint to the bottom vertex. Connect a galvanometer between the left and right midpoints. Connect a cell across the top and bottom vertices. Label each component with its stated value; show no current direction arrows.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "At balance, $P/Q=R/X$. Thus $2/4=3/X$, giving $X=6\\ \\Omega$.",
+  "distractor_notes": "A: uses the arm ratio in the wrong direction. B: copies a given arm resistance. D: multiplies the two left-arm resistances and divides by the upper-right resistance."
+ },
+ "variant_of": "g0d77ee629df0",
+ "author_model": "openai/gpt-6-luna-pro"
+}

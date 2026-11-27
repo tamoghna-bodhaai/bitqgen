@@ -1,0 +1,71 @@
+{
+ "qno": 72,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 72,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Reimer–Tiemann reaction",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:32",
+   "2026s1:60",
+   "2026s2:33"
+  ],
+  "origin": "variant",
+  "bank_ref": "g673d4586cd1f"
+ },
+ "status": "ok",
+ "stem": "4-Methylphenol is treated with $\\text{CHCl}_3$ and aqueous $\\text{NaOH}$, followed by acidification. What is the major product?",
+ "options": [
+  "2-Hydroxy-4-methylbenzaldehyde",
+  "2-Hydroxy-3-methylbenzaldehyde",
+  "2-Hydroxy-5-methylbenzaldehyde",
+  "4-Hydroxy-3-methylbenzaldehyde"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Reimer–Tiemann formylation places CHO ortho to the phenolic OH. The two ortho positions in 4-methylphenol are equivalent; naming the product as a benzaldehyde gives OH at 2 and methyl at 5.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Reimer–Tiemann reaction introduces $-\\text{CHO}$ ortho to $-\\text{OH}$.\\nIn 4-methylphenol, the two ortho positions are equivalent.\\nNumbering the product from the aldehyde carbon gives $-\\text{OH}$ at C-2 and $-\\text{CH}_3$ at C-5.\n\nIndependent check: Reimer–Tiemann formylation places CHO ortho to the phenolic OH. The two ortho positions in 4-methylphenol are equivalent; naming the product as a benzaldehyde gives OH at 2 and methyl at 5.",
+ "solution": "The Reimer–Tiemann reaction introduces $-\\text{CHO}$ ortho to the phenolic $-\\text{OH}$. The two ortho positions in 4-methylphenol are equivalent; numbering the product as a benzaldehyde gives $-\\text{OH}$ at C-2 and $-\\text{CH}_3$ at C-5, yielding 2-hydroxy-5-methylbenzaldehyde.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "4-Methylphenol is treated with $\\text{CHCl}_3$ and aqueous $\\text{NaOH}$, followed by acidification. What is the major product?",
+  "options": [
+   "2-Hydroxy-5-methylbenzaldehyde",
+   "2-Hydroxy-3-methylbenzaldehyde",
+   "2-Hydroxy-4-methylbenzaldehyde",
+   "4-Hydroxy-3-methylbenzaldehyde"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Reimer–Tiemann reaction introduces $-\\text{CHO}$ ortho to $-\\text{OH}$.\\nIn 4-methylphenol, the two ortho positions are equivalent.\\nNumbering the product from the aldehyde carbon gives $-\\text{OH}$ at C-2 and $-\\text{CH}_3$ at C-5.",
+  "distractor_notes": "B: places the methyl group one position too close to the aldehyde.\\nC: misnumbers the methyl substituent.\\nD: assigns the aldehyde to the wrong position relative to the hydroxyl group."
+ },
+ "variant_of": "g673d4586cd1f",
+ "author_model": "openai/gpt-6-luna-pro"
+}

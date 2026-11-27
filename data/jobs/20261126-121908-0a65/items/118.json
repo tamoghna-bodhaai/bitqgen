@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "The value of the integral $\\displaystyle\\int_0^{1/2} \\dfrac{dx}{(x + \\sqrt{x^2 + 2})^3}$ is equal to",
+ "stem": "The value of $\\displaystyle\\int_{\\frac14}^{1}\\dfrac{dx}{\\sqrt{x^2+3}\\,(x+\\sqrt{x^2+3}+1)(x+\\sqrt{x^2+3}+2)}$ is",
  "options": [
-  "$\\dfrac{5}{64}$",
-  "$\\dfrac{7}{64}$",
-  "$\\dfrac{7}{32}$",
-  "$\\dfrac{7}{16}$"
+  "$\\dfrac12\\ln\\left(\\dfrac{128}{135}\\right)$",
+  "$\\dfrac12\\ln\\left(\\dfrac{135}{128}\\right)$",
+  "$\\ln\\left(\\dfrac{135}{128}\\right)$",
+  "$\\dfrac12\\ln\\left(\\dfrac{15}{8}\\right)$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Substitute t = x+√(x²+2) ⇒ x=(t²−2)/(2t), dx=(t²+2)/(2t²)dt. Integral becomes ∫(t²+2)/(2t⁵)dt = −(1/4)(t⁻²+t⁻⁴). Limits: x=0→t=√2; x=1/2→t=2. Value = −(1/4)[(1/4+1/16)−(1/2+1/4)] = 7/64 ≈ 0.109375, confirmed by Simpson numerical integration.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let t=x+√(x²+3), so dx/√(x²+3)=dt/t. The bounds become t=2 and t=3. Then ∫₂³ dt/[t(t+1)(t+2)] = [½ln t−ln(t+1)+½ln(t+2)]₂³ = ½ln(135/128).",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 3
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "We use the Euler substitution of the first kind:\n$$t = x + \\sqrt{x^2 + 2}$$\nThen:\n$$t - x = \\sqrt{x^2 + 2} \\implies (t - x)^2 = x^2 + 2 \\implies t^2 - 2tx = 2 \\implies x = \\dfrac{t^2 - 2}{2t} = \\dfrac{t}{2} - \\dfrac{1}{t}$$\nDifferentiating with respect to $t$:\n$$dx = \\left(\\dfrac{1}{2} + \\dfrac{1}{t^2}\\right) dt = \\dfrac{t^2 + 2}{2t^2}\\,dt$$\nNow find the new limits of integration:\n- At $x = 0$: $t = 0 + \\sqrt{0 + 2} = \\sqrt{2}$\n- At $x = \\dfrac{1}{2}$: $t = \\dfrac{1}{2} + \\sqrt{\\dfrac{1}{4} + 2} = \\dfrac{1}{2} + \\dfrac{3}{2} = 2$\n\nSubstitute into the integral:\n$$I = \\int_{\\sqrt{2}}^2 \\dfrac{1}{t^3} \\cdot \\dfrac{t^2 + 2}{2t^2}\\,dt = \\dfrac{1}{2} \\int_{\\sqrt{2}}^2 \\left(t^{-3} + 2t^{-5}\\right) dt$$\nIntegrating term by term:\n$$I = \\dfrac{1}{2} \\left[ -\\dfrac{1}{2t^2} - \\dfrac{2}{4t^4} \\right]_{\\sqrt{2}}^2 = -\\dfrac{1}{4} \\left[ \\dfrac{1}{t^2} + \\dfrac{1}{t^4} \\right]_{\\sqrt{2}}^2$$\nEvaluating at the upper limit $t = 2$:\n$$\\dfrac{1}{2^2} + \\dfrac{1}{2^4} = \\dfrac{1}{4} + \\dfrac{1}{16} = \\dfrac{5}{16}$$\nEvaluating at the lower limit $t = \\sqrt{2}$:\n$$\\dfrac{1}{(\\sqrt{2})^2} + \\dfrac{1}{(\\sqrt{2})^4} = \\dfrac{1}{2} + \\dfrac{1}{4} = \\dfrac{3}{4} = \\dfrac{12}{16}$$\nThus:\n$$I = -\\dfrac{1}{4} \\left(\\dfrac{5}{16} - \\dfrac{12}{16}\\right) = -\\dfrac{1}{4} \\left(-\\dfrac{7}{16}\\right) = \\dfrac{7}{64}$$\n\nIndependent check: Substitute t = x+√(x²+2) ⇒ x=(t²−2)/(2t), dx=(t²+2)/(2t²)dt. Integral becomes ∫(t²+2)/(2t⁵)dt = −(1/4)(t⁻²+t⁻⁴). Limits: x=0→t=√2; x=1/2→t=2. Value = −(1/4)[(1/4+1/16)−(1/2+1/4)] = 7/64 ≈ 0.109375, confirmed by Simpson numerical integration.",
+ "working": "Let $t=x+\\sqrt{x^2+3}$. Then $x=\\dfrac{t^2-3}{2t}$ and $\\dfrac{dx}{\\sqrt{x^2+3}}=\\dfrac{dt}{t}$. The limits become $t=2,3$, so $I=\\displaystyle\\int_2^3\\dfrac{dt}{t(t+1)(t+2)}=\\displaystyle\\int_2^3\\left(\\dfrac{1}{2t}-\\dfrac{1}{t+1}+\\dfrac{1}{2(t+2)}\\right)dt=\\dfrac12\\ln\\left(\\dfrac{135}{128}\\right)$.\n\nIndependent check: Let t=x+√(x²+3), so dx/√(x²+3)=dt/t. The bounds become t=2 and t=3. Then ∫₂³ dt/[t(t+1)(t+2)] = [½ln t−ln(t+1)+½ln(t+2)]₂³ = ½ln(135/128).",
  "solution": "",
  "locked": false,
  "difficulty": 4,
  "draft": {
-  "stem": "The value of the integral $\\displaystyle\\int_0^{1/2} \\dfrac{dx}{(x + \\sqrt{x^2 + 2})^3}$ is equal to",
+  "stem": "The value of $\\displaystyle\\int_{\\frac14}^{1}\\dfrac{dx}{\\sqrt{x^2+3}\\,(x+\\sqrt{x^2+3}+1)(x+\\sqrt{x^2+3}+2)}$ is",
   "options": [
-   "$\\dfrac{5}{64}$",
-   "$\\dfrac{7}{64}$",
-   "$\\dfrac{7}{32}$",
-   "$\\dfrac{7}{16}$"
+   "$\\dfrac12\\ln\\left(\\dfrac{128}{135}\\right)$",
+   "$\\dfrac12\\ln\\left(\\dfrac{135}{128}\\right)$",
+   "$\\ln\\left(\\dfrac{135}{128}\\right)$",
+   "$\\dfrac12\\ln\\left(\\dfrac{15}{8}\\right)$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "We use the Euler substitution of the first kind:\n$$t = x + \\sqrt{x^2 + 2}$$\nThen:\n$$t - x = \\sqrt{x^2 + 2} \\implies (t - x)^2 = x^2 + 2 \\implies t^2 - 2tx = 2 \\implies x = \\dfrac{t^2 - 2}{2t} = \\dfrac{t}{2} - \\dfrac{1}{t}$$\nDifferentiating with respect to $t$:\n$$dx = \\left(\\dfrac{1}{2} + \\dfrac{1}{t^2}\\right) dt = \\dfrac{t^2 + 2}{2t^2}\\,dt$$\nNow find the new limits of integration:\n- At $x = 0$: $t = 0 + \\sqrt{0 + 2} = \\sqrt{2}$\n- At $x = \\dfrac{1}{2}$: $t = \\dfrac{1}{2} + \\sqrt{\\dfrac{1}{4} + 2} = \\dfrac{1}{2} + \\dfrac{3}{2} = 2$\n\nSubstitute into the integral:\n$$I = \\int_{\\sqrt{2}}^2 \\dfrac{1}{t^3} \\cdot \\dfrac{t^2 + 2}{2t^2}\\,dt = \\dfrac{1}{2} \\int_{\\sqrt{2}}^2 \\left(t^{-3} + 2t^{-5}\\right) dt$$\nIntegrating term by term:\n$$I = \\dfrac{1}{2} \\left[ -\\dfrac{1}{2t^2} - \\dfrac{2}{4t^4} \\right]_{\\sqrt{2}}^2 = -\\dfrac{1}{4} \\left[ \\dfrac{1}{t^2} + \\dfrac{1}{t^4} \\right]_{\\sqrt{2}}^2$$\nEvaluating at the upper limit $t = 2$:\n$$\\dfrac{1}{2^2} + \\dfrac{1}{2^4} = \\dfrac{1}{4} + \\dfrac{1}{16} = \\dfrac{5}{16}$$\nEvaluating at the lower limit $t = \\sqrt{2}$:\n$$\\dfrac{1}{(\\sqrt{2})^2} + \\dfrac{1}{(\\sqrt{2})^4} = \\dfrac{1}{2} + \\dfrac{1}{4} = \\dfrac{3}{4} = \\dfrac{12}{16}$$\nThus:\n$$I = -\\dfrac{1}{4} \\left(\\dfrac{5}{16} - \\dfrac{12}{16}\\right) = -\\dfrac{1}{4} \\left(-\\dfrac{7}{16}\\right) = \\dfrac{7}{64}$$",
-  "distractor_notes": "Option A corresponds to evaluating only at the upper limit $t = 2$ and mistakenly assuming the lower limit evaluates to zero.\nOption C corresponds to forgetting the factor of $\\dfrac{1}{2}$ in the differential $dx = \\dfrac{t^2+2}{2t^2}\\,dt$, yielding $2 \\times \\dfrac{7}{64} = \\dfrac{7}{32}$.\nOption D corresponds to forgetting the division by the exponents when integrating $t^{-3}$ and $t^{-5}$, resulting in an answer larger by a factor of $4$.",
   "figure": null,
-  "difficulty_estimate": 4
- }
+  "difficulty_estimate": 4,
+  "working": "Let $t=x+\\sqrt{x^2+3}$. Then $x=\\dfrac{t^2-3}{2t}$ and $\\dfrac{dx}{\\sqrt{x^2+3}}=\\dfrac{dt}{t}$. The limits become $t=2,3$, so $I=\\displaystyle\\int_2^3\\dfrac{dt}{t(t+1)(t+2)}=\\displaystyle\\int_2^3\\left(\\dfrac{1}{2t}-\\dfrac{1}{t+1}+\\dfrac{1}{2(t+2)}\\right)dt=\\dfrac12\\ln\\left(\\dfrac{135}{128}\\right)$.",
+  "distractor_notes": "A: Reverses the transformed limits. C: Omits the factor $\\dfrac12$ in the logarithmic result. D: Omits the $-\\dfrac{1}{t+1}$ partial-fraction term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -1,0 +1,71 @@
+{
+ "qno": 64,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 64,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order kinetics graph",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:46",
+   "2021:71",
+   "2025s2:44"
+  ],
+  "origin": "variant",
+  "bank_ref": "g52922a3c2de0"
+ },
+ "status": "ok",
+ "stem": "For a first-order reaction, a concentration–time graph gives $[A]=0.80\\ \\text{mol L}^{-1}$ at $t=0$ and $[A]=0.20\\ \\text{mol L}^{-1}$ at $t=12\\ \\text{min}$. What is the half-life?",
+ "options": [
+  "$4\\ \\text{min}$",
+  "$8\\ \\text{min}$",
+  "$6\\ \\text{min}$",
+  "$12\\ \\text{min}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The concentration decreases from 0.80 to 0.20, a factor of 4 (two half-lives) in 12 min. Thus, the half-life is 6 min.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{[A]_{12}}{[A]_0}=\\dfrac{0.20}{0.80}=\\dfrac14=\\left(\\dfrac12\\right)^2$\\n$12\\ \\text{min}=2t_{1/2}$\\n$t_{1/2}=6\\ \\text{min}$\n\nIndependent check: The concentration decreases from 0.80 to 0.20, a factor of 4 (two half-lives) in 12 min. Thus, the half-life is 6 min.",
+ "solution": "For a first-order reaction, a fourfold decrease corresponds to two half-lives.\n$$\\frac{0.20}{0.80}=\\left(\\frac12\\right)^2,\\qquad 12=2t_{1/2}$$\nTherefore, $t_{1/2}=6\\ \\text{min}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For a first-order reaction, a concentration–time graph gives $[A]=0.80\\ \\text{mol L}^{-1}$ at $t=0$ and $[A]=0.20\\ \\text{mol L}^{-1}$ at $t=12\\ \\text{min}$. What is the half-life?",
+  "options": [
+   "$4\\ \\text{min}$",
+   "$6\\ \\text{min}$",
+   "$8\\ \\text{min}$",
+   "$12\\ \\text{min}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{[A]_{12}}{[A]_0}=\\dfrac{0.20}{0.80}=\\dfrac14=\\left(\\dfrac12\\right)^2$\\n$12\\ \\text{min}=2t_{1/2}$\\n$t_{1/2}=6\\ \\text{min}$",
+  "distractor_notes": "A: treats the fourfold decrease as one half-life; C: incorrect half-life count; D: treats the full interval as one half-life."
+ },
+ "variant_of": "g52922a3c2de0",
+ "author_model": "openai/gpt-6-luna-pro"
+}

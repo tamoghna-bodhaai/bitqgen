@@ -1,0 +1,70 @@
+{
+ "qno": 38,
+ "section": "Physics",
+ "slot": {
+  "qno": 38,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Equilibrium of concurrent forces",
+  "archetype": "equation-solving symbolic",
+  "brief": "Two/three concurrent forces in equilibrium with one unknown force magnitude or angle; resolve into components and solve.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:27",
+   "2024s2:14",
+   "2021:4"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two forces of $3$ N east and $4$ N north act concurrently on a particle. A third force balances them and makes an angle $\\theta$ south of west. What is $\\theta$?",
+ "options": [
+  "$36.9^\\circ$",
+  "$53.1^\\circ$",
+  "$126.9^\\circ$",
+  "$143.1^\\circ$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The balancing force has components 3 N west and 4 N south, so \\(\\tan\\theta=4/3\\) and \\(\\theta=53.1^\\circ\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For equilibrium, the third force has components $(-3,-4)$ N.\\\\\n$\\tan\\theta=\\dfrac{4}{3}$\\\\\n$\\theta=53.1^\\circ$\n\nIndependent check: The balancing force has components 3 N west and 4 N south, so \\(\\tan\\theta=4/3\\) and \\(\\theta=53.1^\\circ\\).",
+ "solution": "For equilibrium, the third force has components $(-3,-4)$ N.\n$$\\tan\\theta=\\frac{4}{3}\\quad\\Rightarrow\\quad \\theta=53.1^\\circ$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two forces of $3$ N east and $4$ N north act concurrently on a particle. A third force balances them and makes an angle $\\theta$ south of west. What is $\\theta$?",
+  "options": [
+   "$36.9^\\circ$",
+   "$53.1^\\circ$",
+   "$126.9^\\circ$",
+   "$143.1^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For equilibrium, the third force has components $(-3,-4)$ N.\\\\\n$\\tan\\theta=\\dfrac{4}{3}$\\\\\n$\\theta=53.1^\\circ$",
+  "distractor_notes": "A: takes the complementary angle. C: reports the supplementary angle. D: uses the wrong reference direction for the angle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

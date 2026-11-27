@@ -1,0 +1,78 @@
+{
+ "qno": 77,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 77,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Hydrogen spectrum",
+  "archetype": "formula derivation",
+  "brief": "Figure showing energy level diagram (or Bohr orbit picture) for hydrogen-like species; derive the energy/radius ratio for a transition or compute the wavelength of a transition line.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:66",
+   "2023s2:55",
+   "2026s1:34"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the transition shown in the figure, find $(\\Delta E_{\\text{em}}/13.6\\ \\text{eV},\\ r_4/a_0)$ for $\\text{Li}^{2+}$. Use $E_n=-13.6Z^2/n^2$ eV and $r_n=a_0n^2/Z$.",
+ "options": [
+  "$\\left(\\dfrac{27}{16},\\dfrac{16}{3}\\right)$",
+  "$\\left(\\dfrac{27}{16},\\dfrac{4}{3}\\right)$",
+  "$\\left(\\dfrac{3}{16},\\dfrac{16}{3}\\right)$",
+  "$\\left(\\dfrac{9}{16},\\dfrac{16}{3}\\right)$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q077_stem_v0.png",
+  "width_pct": 45,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For Li²⁺, Z=3. The n=4→2 emission has ΔE_em=E₄−E₂=13.6×9(1/4−1/16)=13.6×27/16 eV, and r₄/a₀=4²/3=16/3.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $\\text{Li}^{2+}$, $Z=3$ and the transition is $n=4\\to2$.\\n$\\dfrac{\\Delta E_{\\text{em}}}{13.6\\ \\text{eV}}=Z^2\\left(\\dfrac{1}{2^2}-\\dfrac{1}{4^2}\\right)=\\dfrac{27}{16}$.\\n$\\dfrac{r_4}{a_0}=\\dfrac{4^2}{3}=\\dfrac{16}{3}$.\n\nIndependent check: For Li²⁺, Z=3. The n=4→2 emission has ΔE_em=E₄−E₂=13.6×9(1/4−1/16)=13.6×27/16 eV, and r₄/a₀=4²/3=16/3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the transition shown in the figure, find $(\\Delta E_{\\text{em}}/13.6\\ \\text{eV},\\ r_4/a_0)$ for $\\text{Li}^{2+}$. Use $E_n=-13.6Z^2/n^2$ eV and $r_n=a_0n^2/Z$.",
+  "options": [
+   "$\\left(\\dfrac{27}{16},\\dfrac{16}{3}\\right)$",
+   "$\\left(\\dfrac{27}{16},\\dfrac{4}{3}\\right)$",
+   "$\\left(\\dfrac{3}{16},\\dfrac{16}{3}\\right)$",
+   "$\\left(\\dfrac{9}{16},\\dfrac{16}{3}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a simple energy-level diagram for the hydrogen-like ion Li²⁺. Put an upward-pointing energy axis at the left. Draw two horizontal energy levels, with n = 4 above n = 2, label each level, and draw a downward arrow from n = 4 to n = 2. Label the diagram Li²⁺.",
+   "smiles": null
+  },
+  "difficulty_estimate": 4,
+  "working": "For $\\text{Li}^{2+}$, $Z=3$ and the transition is $n=4\\to2$.\\n$\\dfrac{\\Delta E_{\\text{em}}}{13.6\\ \\text{eV}}=Z^2\\left(\\dfrac{1}{2^2}-\\dfrac{1}{4^2}\\right)=\\dfrac{27}{16}$.\\n$\\dfrac{r_4}{a_0}=\\dfrac{4^2}{3}=\\dfrac{16}{3}$.",
+  "distractor_notes": "B: uses $n/Z$ instead of $n^2/Z$ for the radius.\\nC: omits the factor $Z^2$ in the energy difference.\\nD: uses $Z$ instead of $Z^2$ in the energy difference."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

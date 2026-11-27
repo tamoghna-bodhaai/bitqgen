@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Read the given statements and conclusions carefully and select which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll artists are painters.\nSome painters are sculptors.\n\n**Conclusions:**\nI. Some artists are sculptors.\nII. Some sculptors being artists is a possibility.",
+ "stem": "Read the statements and conclusions carefully. Select the correct option.\n\n**Statements:**\nAll limes are fruits.\nNo fruits are metals.\n\n**Conclusions:**\nI. No lime is a metal.\nII. Some metals being limes is a possibility.",
  "options": [
   "Only conclusion I follows",
   "Only conclusion II follows",
   "Both conclusions I and II follow",
-  "Neither conclusion I nor II follows"
+  "Neither conclusion follows"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "All artists ⊆ painters; some painters are sculptors. The sculptor-painters need not include any artist, so I ('Some artists are sculptors') is not definite. But nothing forbids overlap: a model with artists inside the painter-sculptor overlap satisfies both statements, so II (possibility) holds. Exhaustive set-model check confirms: I not necessary, II possible.",
-   "answer": "B",
-   "confidence": 0.98,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Limes are a subset of fruits, and no fruit is a metal. Therefore no lime is a metal (I follows), and some metals being limes is impossible (II does not follow).",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
   }
  ],
- "attempts": 1,
+ "attempts": 2,
  "notes": [],
- "working": "Let $A$ represent the set of artists, $P$ represent the set of painters, and $S$ represent the set of sculptors.\n1. Statement 1 gives $A \\subseteq P$.\n2. Statement 2 gives $P \\cap S \\neq \\emptyset$.\n\nThe middle term 'painters' is the predicate of a universal affirmative proposition in statement 1 (undistributed) and the subject of a particular affirmative proposition in statement 2 (undistributed). Because the middle term is undistributed, no definite relation can be established between $A$ and $S$.\n- Conclusion I states definitely that $A \\cap S \\neq \\emptyset$. However, $S$ may overlap with $P$ entirely outside of $A$, meaning $A \\cap S = \\emptyset$ is possible. Since it is not true in all valid Venn diagrams, Conclusion I does not definitely follow.\n- Conclusion II states that an overlap between $S$ and $A$ is a possibility ($A \\cap S \\neq \\emptyset$ is possible). Since neither statement contains a negative restriction forbidding an overlap between $A$ and $S$, a diagram where $A \\cap S \\neq \\emptyset$ is fully consistent with all premises. Thus, Conclusion II logically follows.\n\nHence, only conclusion II follows.\n\nIndependent check: All artists ⊆ painters; some painters are sculptors. The sculptor-painters need not include any artist, so I ('Some artists are sculptors') is not definite. But nothing forbids overlap: a model with artists inside the painter-sculptor overlap satisfies both statements, so II (possibility) holds. Exhaustive set-model check confirms: I not necessary, II possible.",
+ "working": "All limes are fruits, and no fruits are metals; hence no lime is a metal (I follows). A lime that is a metal would also be a fruit, contradicting the second statement, so II is not possible. B and C wrongly allow II; D misses I.\n\nIndependent check: Limes are a subset of fruits, and no fruit is a metal. Therefore no lime is a metal (I follows), and some metals being limes is impossible (II does not follow).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Read the given statements and conclusions carefully and select which of the conclusions logically follow(s) from the statements.\n\n**Statements:**\nAll artists are painters.\nSome painters are sculptors.\n\n**Conclusions:**\nI. Some artists are sculptors.\nII. Some sculptors being artists is a possibility.",
+  "stem": "Read the statements and conclusions carefully. Select the correct option.\n\n**Statements:**\nAll limes are fruits.\nNo fruits are metals.\n\n**Conclusions:**\nI. No lime is a metal.\nII. Some metals being limes is a possibility.",
   "options": [
    "Only conclusion I follows",
    "Only conclusion II follows",
    "Both conclusions I and II follow",
-   "Neither conclusion I nor II follows"
+   "Neither conclusion follows"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "Let $A$ represent the set of artists, $P$ represent the set of painters, and $S$ represent the set of sculptors.\n1. Statement 1 gives $A \\subseteq P$.\n2. Statement 2 gives $P \\cap S \\neq \\emptyset$.\n\nThe middle term 'painters' is the predicate of a universal affirmative proposition in statement 1 (undistributed) and the subject of a particular affirmative proposition in statement 2 (undistributed). Because the middle term is undistributed, no definite relation can be established between $A$ and $S$.\n- Conclusion I states definitely that $A \\cap S \\neq \\emptyset$. However, $S$ may overlap with $P$ entirely outside of $A$, meaning $A \\cap S = \\emptyset$ is possible. Since it is not true in all valid Venn diagrams, Conclusion I does not definitely follow.\n- Conclusion II states that an overlap between $S$ and $A$ is a possibility ($A \\cap S \\neq \\emptyset$ is possible). Since neither statement contains a negative restriction forbidding an overlap between $A$ and $S$, a diagram where $A \\cap S \\neq \\emptyset$ is fully consistent with all premises. Thus, Conclusion II logically follows.\n\nHence, only conclusion II follows.",
-  "distractor_notes": "Only conclusion I follows: Encodes the undistributed middle fallacy by assuming that an indirect overlap implies a definite overlap.\nBoth conclusions I and II follow: Encodes the mistake of treating a valid possibility as proof that the definite statement in I is also true.\nNeither conclusion I nor II follows: Encodes the error of rejecting a possibility conclusion even when the Venn diagram allows it without contradiction.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "All limes are fruits, and no fruits are metals; hence no lime is a metal (I follows). A lime that is a metal would also be a fruit, contradicting the second statement, so II is not possible. B and C wrongly allow II; D misses I.",
+  "distractor_notes": "B: treats the impossible overlap of metals and limes as possible. C: incorrectly accepts that same possibility. D: overlooks that limes are a subset of fruits, which are excluded from metals."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

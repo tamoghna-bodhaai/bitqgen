@@ -1,0 +1,70 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Specific term",
+  "archetype": "general term",
+  "brief": "Find the coefficient of a specific power of x (e.g., x³ or 1/x) in a binomial expansion by setting up the general term and solving for r.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:119",
+   "2024s2:115",
+   "2026s2:103"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The coefficient of $x^3$ in the expansion of $\\left(x+\\dfrac{2}{x}\\right)^7$ is",
+ "options": [
+  "$84$",
+  "$42$",
+  "$21$",
+  "$168$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The general term is \\(\\binom{7}{k}2^k x^{7-2k}\\). Set \\(7-2k=3\\), giving \\(k=2\\); coefficient = \\(\\binom{7}{2}2^2=84\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T_{r+1}=\\binom{7}{r}2^r x^{7-2r}$.\n$7-2r=3\\Rightarrow r=2$.\nCoefficient $=\\binom{7}{2}2^2=84$.\n\nIndependent check: The general term is \\(\\binom{7}{k}2^k x^{7-2k}\\). Set \\(7-2k=3\\), giving \\(k=2\\); coefficient = \\(\\binom{7}{2}2^2=84\\).",
+ "solution": "The general term is $T_{r+1}=\\binom{7}{r}2^r x^{7-2r}$. For the $x^3$ term, $7-2r=3$, so $r=2$.\n$$\\text{Coefficient}=\\binom{7}{2}2^2=84$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The coefficient of $x^3$ in the expansion of $\\left(x+\\dfrac{2}{x}\\right)^7$ is",
+  "options": [
+   "$21$",
+   "$42$",
+   "$84$",
+   "$168$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$T_{r+1}=\\binom{7}{r}2^r x^{7-2r}$.\n$7-2r=3\\Rightarrow r=2$.\nCoefficient $=\\binom{7}{2}2^2=84$.",
+  "distractor_notes": "A: omits the factor $2^2$. B: uses only one factor of $2$. D: doubles the correct coefficient."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

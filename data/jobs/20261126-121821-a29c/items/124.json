@@ -22,12 +22,12 @@
  "status": "ok",
  "stem": "Factories $A$ and $B$ produce all items. If $P(D\\mid A)=\\dfrac16$, $P(D\\mid B)=\\dfrac14$ and the total probability of a defect $D$ is $\\dfrac15$, find $P(B\\mid D)$.",
  "options": [
-  "$\\dfrac14$",
-  "$\\dfrac25$",
   "$\\dfrac12$",
+  "$\\dfrac25$",
+  "$\\dfrac14$",
   "$\\dfrac35$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
@@ -46,7 +46,7 @@
  "attempts": 1,
  "notes": [],
  "working": "Let $p=P(A)$. Then $\\dfrac{p}{6}+\\dfrac{1-p}{4}=\\dfrac15\\Rightarrow p=\\dfrac35$.\n$P(B\\mid D)=\\dfrac{(\\frac25)(\\frac14)}{\\frac15}=\\dfrac12$.\n\nIndependent check: Let $p=P(B)$. Then $\\frac15=\\frac{1-p}{6}+\\frac p4$, giving $p=\\frac25$. Thus $P(B\\mid D)=\\frac{(1/4)(2/5)}{1/5}=\\frac12$.",
- "solution": "",
+ "solution": "By Bayes’ theorem, first find $P(B)$. Let $P(B)=p$; then\n$$\\frac{1}{5}=\\frac{1-p}{6}+\\frac{p}{4}\\quad\\Rightarrow\\quad p=\\frac{2}{5}.$$\nHence $P(B\\mid D)=\\dfrac{P(D\\mid B)P(B)}{P(D)}=\\dfrac{(1/4)(2/5)}{1/5}=\\dfrac{1}{2}.$",
  "locked": false,
  "difficulty": 3,
  "draft": {

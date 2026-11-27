@@ -1,0 +1,71 @@
+{
+ "qno": 48,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 48,
+  "section": "Chemistry",
+  "chapter": "p-Block Elements",
+  "subtopic": "Xenon fluorides – structure",
+  "archetype": "VSEPR counting",
+  "brief": "Ask the structure/hybridisation and shape of xenon fluoride(s) (e.g., XeF4 or XeOF4) with lone-pair counting; could combine with a statement-evaluation option set",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:59",
+   "2021:80",
+   "2024s2:57"
+  ],
+  "origin": "variant",
+  "bank_ref": "g2c418cb13440"
+ },
+ "status": "ok",
+ "stem": "Which option gives the correct VSEPR assignment for the central Xe atom?",
+ "options": [
+  "$\\text{XeF}_2$: $sp^3d$, $2$ lone pairs, linear",
+  "$\\text{XeF}_4$: $sp^3d^2$, $2$ lone pairs, square planar",
+  "$\\text{XeOF}_4$: $sp^3d^2$, $2$ lone pairs, square pyramidal",
+  "$\\text{XeO}_2\\text{F}_2$: $sp^3d$, $2$ lone pairs, seesaw"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "XeF₄ has four bonding domains and two lone pairs around Xe: six electron domains, with a square-planar molecular shape. The other options give incorrect lone-pair counts.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "XeF$_4$: $4$ bonding domains $+2$ lone pairs $=6$ domains $\\Rightarrow sp^3d^2$; molecular shape: square planar.\nXeF$_2$: $2+3=5$ domains; XeOF$_4$: $5+1=6$ domains.\nXeO$_2$F$_2$: $4+1=5$ domains.\n\nIndependent check: XeF₄ has four bonding domains and two lone pairs around Xe: six electron domains, with a square-planar molecular shape. The other options give incorrect lone-pair counts.",
+ "solution": "For XeF$_4$, Xe has $4$ bonding domains and $2$ lone pairs, giving $6$ electron domains.\n$$\\text{Hybridisation}=sp^3d^2,\\qquad \\text{molecular shape} = \\text{square planar}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which option gives the correct VSEPR assignment for the central Xe atom?",
+  "options": [
+   "$\\text{XeF}_2$: $sp^3d$, $2$ lone pairs, linear",
+   "$\\text{XeF}_4$: $sp^3d^2$, $2$ lone pairs, square planar",
+   "$\\text{XeOF}_4$: $sp^3d^2$, $2$ lone pairs, square pyramidal",
+   "$\\text{XeO}_2\\text{F}_2$: $sp^3d$, $2$ lone pairs, seesaw"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "XeF$_4$: $4$ bonding domains $+2$ lone pairs $=6$ domains $\\Rightarrow sp^3d^2$; molecular shape: square planar.\nXeF$_2$: $2+3=5$ domains; XeOF$_4$: $5+1=6$ domains.\nXeO$_2$F$_2$: $4+1=5$ domains.",
+  "distractor_notes": "A: undercounts the lone pairs on XeF₂. C: overcounts the lone pairs on XeOF₄. D: overcounts the lone pairs on XeO₂F₂."
+ },
+ "variant_of": "g2c418cb13440",
+ "author_model": "openai/gpt-6-luna-pro"
+}

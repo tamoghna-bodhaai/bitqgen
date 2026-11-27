@@ -1,0 +1,71 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Binary system / circular orbit",
+  "archetype": "single-formula symbolic",
+  "brief": "Two stars orbiting their common centre of mass; relate orbital radii to masses and derive/find the orbital period or speed symbolically; multi-step gravitational reasoning.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:5",
+   "2026s2:28",
+   "2025s2:24"
+  ],
+  "origin": "variant",
+  "bank_ref": "gaaa11b173b80"
+ },
+ "status": "ok",
+ "stem": "Two stars of masses $M$ and $3M$ orbit their common centre of mass in circles. If the lighter star's orbital radius is $R$, what is their orbital period?",
+ "options": [
+  "$2\\pi\\sqrt{\\dfrac{R^3}{4GM}}$",
+  "$2\\pi\\sqrt{\\dfrac{(4R/3)^3}{3GM}}$",
+  "$2\\pi\\sqrt{\\dfrac{(4R/3)^3}{GM}}$",
+  "$\\dfrac{8\\pi}{3\\sqrt{3}}\\sqrt{\\dfrac{R^3}{GM}}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The separation is d=4R/3, since the lighter star is 3/4 of the separation from the centre of mass. Thus T=2π√[d³/(G·4M)]=(8π/(3√3))√(R³/GM), which is option B.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$MR=3M(d-R)\\Rightarrow d=\\dfrac{4R}{3}$. $T=2\\pi\\sqrt{\\dfrac{d^3}{G(4M)}}=\\dfrac{8\\pi}{3\\sqrt{3}}\\sqrt{\\dfrac{R^3}{GM}}$.\n\nIndependent check: The separation is d=4R/3, since the lighter star is 3/4 of the separation from the centre of mass. Thus T=2π√[d³/(G·4M)]=(8π/(3√3))√(R³/GM), which is option B.",
+ "solution": "The centre-of-mass condition gives $MR=3M(d-R)$, so $d=\\dfrac{4R}{3}$. For a binary system, $T=2\\pi\\sqrt{\\dfrac{d^3}{G(4M)}}$.\n$$T=2\\pi\\sqrt{\\dfrac{(4R/3)^3}{4GM}}=\\dfrac{8\\pi}{3\\sqrt{3}}\\sqrt{\\dfrac{R^3}{GM}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two stars of masses $M$ and $3M$ orbit their common centre of mass in circles. If the lighter star's orbital radius is $R$, what is their orbital period?",
+  "options": [
+   "$2\\pi\\sqrt{\\dfrac{R^3}{4GM}}$",
+   "$\\dfrac{8\\pi}{3\\sqrt{3}}\\sqrt{\\dfrac{R^3}{GM}}$",
+   "$2\\pi\\sqrt{\\dfrac{(4R/3)^3}{GM}}$",
+   "$2\\pi\\sqrt{\\dfrac{(4R/3)^3}{3GM}}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$MR=3M(d-R)\\Rightarrow d=\\dfrac{4R}{3}$. $T=2\\pi\\sqrt{\\dfrac{d^3}{G(4M)}}=\\dfrac{8\\pi}{3\\sqrt{3}}\\sqrt{\\dfrac{R^3}{GM}}$.",
+  "distractor_notes": "A: treats the lighter star’s orbital radius as the separation. C: uses the correct separation but only the lighter star’s mass. D: uses the correct separation but only the heavier star’s mass."
+ },
+ "variant_of": "gaaa11b173b80",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Lucas test",
+  "archetype": "reaction outcome",
+  "brief": "Compare cloudiness appearance time for a primary, secondary and tertiary alcohol with Lucas reagent; ask which reacts immediately and why.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:43",
+   "2025s2:60",
+   "2025s1:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "On adding Lucas reagent to primary, secondary and tertiary alcohols, which one gives immediate cloudiness, and why?",
+ "options": [
+  "Primary alcohol; it forms the most stable carbocation",
+  "Secondary alcohol; it forms the most stable carbocation",
+  "Tertiary alcohol; it reacts by an $S_{N2}$ mechanism",
+  "Tertiary alcohol; it forms the most stable carbocation"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Tertiary alcohols form the most stable carbocations, so they react fastest by the SN1 pathway and give immediate cloudiness.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Lucas reaction proceeds mainly by $\\text{S}_\\text{N}1$.\\\nCarbocation stability: tertiary $>$ secondary $>$ primary.\\\nThus a tertiary alcohol gives immediate cloudiness.\n\nIndependent check: Tertiary alcohols form the most stable carbocations, so they react fastest by the SN1 pathway and give immediate cloudiness.",
+ "solution": "Lucas reaction proceeds mainly by the $S_N1$ mechanism, whose rate depends on carbocation stability:\n$$3^\\circ > 2^\\circ > 1^\\circ$$\nTertiary alcohol forms the most stable carbocation and reacts fastest, giving immediate cloudiness.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "On adding Lucas reagent to primary, secondary and tertiary alcohols, which one gives immediate cloudiness, and why?",
+  "options": [
+   "Primary alcohol; it forms the most stable carbocation",
+   "Secondary alcohol; it forms the most stable carbocation",
+   "Tertiary alcohol; it forms the most stable carbocation",
+   "Tertiary alcohol; it reacts by an $S_{N2}$ mechanism"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Lucas reaction proceeds mainly by $\\text{S}_\\text{N}1$.\\\nCarbocation stability: tertiary $>$ secondary $>$ primary.\\\nThus a tertiary alcohol gives immediate cloudiness.",
+  "distractor_notes": "A: reverses the carbocation stability order.\\nB: assigns the fastest reaction to a secondary alcohol.\\nD: gives the right alcohol but the wrong mechanism."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

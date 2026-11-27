@@ -1,0 +1,68 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "Environmental Chemistry",
+  "subtopic": "Ozone depletion",
+  "archetype": "statement evaluation",
+  "brief": "Which statement about ozone-depleting substances / mechanism of Cl radical catalysed ozone decomposition is correct; simple fact-check statements.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:60",
+   "2025s2:36",
+   "2025s1:37"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which statement correctly describes chlorine-radical-catalysed ozone depletion?",
+ "options": [
+  "CFCs release chlorine radicals mainly by reaction with water vapour in the troposphere.",
+  "A chlorine radical is permanently consumed after reacting with an ozone molecule.",
+  "A chlorine radical is regenerated, and the net reaction is $\\text{O}_3+\\text{O}\\rightarrow2\\text{O}_2$.",
+  "CFCs initiate ozone depletion by photolysis with visible light."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cl· reacts with O₃ to form ClO· and O₂; ClO· then reacts with O to regenerate Cl· and produce another O₂. Net: O₃ + O → 2O₂.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Cl}\\boldsymbol{\\cdot}+\\text{O}_3\\rightarrow\\text{ClO}\\boldsymbol{\\cdot}+\\text{O}_2$\n$\\text{ClO}\\boldsymbol{\\cdot}+\\text{O}\\rightarrow\\text{Cl}\\boldsymbol{\\cdot}+\\text{O}_2$\nNet: $\\text{O}_3+\\text{O}\\rightarrow2\\text{O}_2$; $\\text{Cl}\\boldsymbol{\\cdot}$ is regenerated.\n\nIndependent check: Cl· reacts with O₃ to form ClO· and O₂; ClO· then reacts with O to regenerate Cl· and produce another O₂. Net: O₃ + O → 2O₂.",
+ "solution": "Chlorine radicals catalyse ozone depletion through the steps\n$$\\text{Cl}\\boldsymbol{\\cdot}+\\text{O}_3\\rightarrow\\text{ClO}\\boldsymbol{\\cdot}+\\text{O}_2,\\qquad \\text{ClO}\\boldsymbol{\\cdot}+\\text{O}\\rightarrow\\text{Cl}\\boldsymbol{\\cdot}+\\text{O}_2.$$\nThe chlorine radical is regenerated; the net reaction is $\\text{O}_3+\\text{O}\\rightarrow2\\text{O}_2$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which statement correctly describes chlorine-radical-catalysed ozone depletion?",
+  "options": [
+   "CFCs release chlorine radicals mainly by reaction with water vapour in the troposphere.",
+   "A chlorine radical is permanently consumed after reacting with an ozone molecule.",
+   "CFCs initiate ozone depletion by photolysis with visible light.",
+   "A chlorine radical is regenerated, and the net reaction is $\\text{O}_3+\\text{O}\\rightarrow2\\text{O}_2$."
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{Cl}\\boldsymbol{\\cdot}+\\text{O}_3\\rightarrow\\text{ClO}\\boldsymbol{\\cdot}+\\text{O}_2$\n$\\text{ClO}\\boldsymbol{\\cdot}+\\text{O}\\rightarrow\\text{Cl}\\boldsymbol{\\cdot}+\\text{O}_2$\nNet: $\\text{O}_3+\\text{O}\\rightarrow2\\text{O}_2$; $\\text{Cl}\\boldsymbol{\\cdot}$ is regenerated.",
+  "distractor_notes": "A: CFCs release chlorine radicals through ultraviolet photolysis, not mainly by tropospheric reaction with water. B: The chlorine radical is regenerated in the catalytic cycle. C: CFC photolysis is driven by ultraviolet, not visible, light."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

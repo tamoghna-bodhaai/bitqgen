@@ -1,0 +1,68 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Energy in SHM",
+  "archetype": "energy equation",
+  "brief": "Given a spring–mass SHM with stated amplitude and spring constant, find the kinetic energy at a specified displacement, or the ratio KE:PE there.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:13",
+   "2023s1:24",
+   "2023s2:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $0.20$ m amplitude spring–mass oscillator has spring constant $200$ N m$^{-1}$. What is its kinetic energy when its displacement from the mean position is $0.12$ m?",
+ "options": [
+  "$2.56$ J",
+  "$1.44$ J",
+  "$4.00$ J",
+  "$5.12$ J"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "$K=\\tfrac12 k(A^2-x^2)=\\tfrac12(200)(0.20^2-0.12^2)=2.56\\,\\text{J}$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$K=\\dfrac12k(A^2-x^2)=\\dfrac12(200)(0.20^2-0.12^2)=2.56$ J\n\nIndependent check: $K=\\tfrac12 k(A^2-x^2)=\\tfrac12(200)(0.20^2-0.12^2)=2.56\\,\\text{J}$.",
+ "solution": "For a spring–mass oscillator, $K=\\frac12 k(A^2-x^2)$. Substituting the given values,\n$$K=\\frac12(200)(0.20^2-0.12^2)=2.56\\ \\text{J}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $0.20$ m amplitude spring–mass oscillator has spring constant $200$ N m$^{-1}$. What is its kinetic energy when its displacement from the mean position is $0.12$ m?",
+  "options": [
+   "$1.44$ J",
+   "$2.56$ J",
+   "$4.00$ J",
+   "$5.12$ J"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$K=\\dfrac12k(A^2-x^2)=\\dfrac12(200)(0.20^2-0.12^2)=2.56$ J",
+  "distractor_notes": "A: gives the potential energy at that displacement; C: gives the total energy; D: omits the factor $\\dfrac12$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

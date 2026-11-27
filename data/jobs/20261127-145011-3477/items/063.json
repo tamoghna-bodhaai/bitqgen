@@ -1,0 +1,70 @@
+{
+ "qno": 63,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 63,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment",
+  "archetype": "unpaired electron count",
+  "brief": "Magnetic moment of a given transition-metal ion: write d configuration and count unpaired electrons / compute √n(n+2)",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:54",
+   "2026s1:49",
+   "2021:57"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The spin-only magnetic moment of $\\text{Cr}^{3+}$ is closest to which value?",
+ "options": [
+  "$3.87$ BM",
+  "$2.83$ BM",
+  "$1.73$ BM",
+  "$4.90$ BM"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cr³⁺ has a 3d³ configuration, with 3 unpaired electrons. The spin-only moment is √[3(3+2)] = √15 ≈ 3.87 BM.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Cr}^{3+}:[\\text{Ar}]3d^3$; $n=3$.\n$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(5)}=\\sqrt{15}=3.87\\ \\text{BM}$\n\nIndependent check: Cr³⁺ has a 3d³ configuration, with 3 unpaired electrons. The spin-only moment is √[3(3+2)] = √15 ≈ 3.87 BM.",
+ "solution": "For $\\text{Cr}^{3+}$, the configuration is $[\\text{Ar}]3d^3$, giving $n=3$ unpaired electrons.\n$$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(5)}=\\sqrt{15}\\approx 3.87\\ \\text{BM}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The spin-only magnetic moment of $\\text{Cr}^{3+}$ is closest to which value?",
+  "options": [
+   "$1.73$ BM",
+   "$2.83$ BM",
+   "$3.87$ BM",
+   "$4.90$ BM"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{Cr}^{3+}:[\\text{Ar}]3d^3$; $n=3$.\n$\\mu=\\sqrt{n(n+2)}=\\sqrt{3(5)}=\\sqrt{15}=3.87\\ \\text{BM}$",
+  "distractor_notes": "A: Counts one unpaired electron.\nB: Counts two unpaired electrons.\nD: Counts four unpaired electrons."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

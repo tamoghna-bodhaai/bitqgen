@@ -1,0 +1,71 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Line through intersection of lines",
+  "archetype": "two-equation solve",
+  "brief": "Line through the intersection of two given lines and a fixed point; use the family-of-lines form and solve for the parameter",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:114",
+   "2025s2:115",
+   "2026s1:105"
+  ],
+  "origin": "variant",
+  "bank_ref": "g76ae31037fab"
+ },
+ "status": "ok",
+ "stem": "A line through the intersection of $x+2y-5=0$ and $3x-y-4=0$ is written as $(x+2y-5)+\\lambda(3x-y-4)=0$. If it passes through $(2,3)$, find $\\lambda$.",
+ "options": [
+  "$-3$",
+  "$-\\dfrac{1}{3}$",
+  "$1$",
+  "$3$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Substitute (2,3): (2+2·3−5)+λ(3·2−3−4)=3−λ=0, so λ=3.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(2+2\\cdot3-5)+\\lambda(3\\cdot2-3-4)=0$\n\nIndependent check: Substitute (2,3): (2+2·3−5)+λ(3·2−3−4)=3−λ=0, so λ=3.",
+ "solution": "Substitute $(2,3)$ into the given line:\n$$ (2+2\\cdot3-5)+\\lambda(3\\cdot2-3-4)=0 $$\nThus $3-\\lambda=0$, so $\\lambda=3$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A line through the intersection of $x+2y-5=0$ and $3x-y-4=0$ is written as $(x+2y-5)+\\lambda(3x-y-4)=0$. If it passes through $(2,3)$, find $\\lambda$.",
+  "options": [
+   "$-3$",
+   "$-\\dfrac{1}{3}$",
+   "$1$",
+   "$3$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$(2+2\\cdot3-5)+\\lambda(3\\cdot2-3-4)=0$",
+  "distractor_notes": "A: Sign error when isolating $\\lambda$. B: Uses the reciprocal ratio and misses the sign. C: Incorrect evaluation of the expressions at $(2,3)$."
+ },
+ "variant_of": "g76ae31037fab",
+ "author_model": "openai/gpt-6-luna-pro"
+}

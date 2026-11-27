@@ -1,0 +1,68 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "States of Matter",
+  "subtopic": "Graham's law of effusion",
+  "archetype": "ratio equation",
+  "brief": "Two gases effuse through the same pinhole; use time or distance data to find the molar mass ratio of an unknown gas — moderate ratio computation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:59",
+   "2025s2:39",
+   "2023s2:48"
+  ]
+ },
+ "status": "ok",
+ "stem": "Equal volumes of nitrogen and an unknown gas effuse through the same pinhole under identical conditions. If their effusion times are $20\\ \\text{s}$ and $30\\ \\text{s}$, respectively, find $M_{\\text{unknown}}/M_{\\text{N}_2}$.",
+ "options": [
+  "$\\dfrac{4}{9}$",
+  "$\\dfrac{3}{2}$",
+  "$\\dfrac{9}{4}$",
+  "$3$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For equal volumes, effusion time is proportional to √M. Thus M_unknown/M_N₂ = (30/20)² = 9/4.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For equal volumes, $\\dfrac{t_X}{t_{\\text{N}_2}}=\\sqrt{\\dfrac{M_X}{M_{\\text{N}_2}}}$; $\\dfrac{M_X}{M_{\\text{N}_2}}=\\left(\\dfrac{30}{20}\\right)^2=\\dfrac{9}{4}$.\n\nIndependent check: For equal volumes, effusion time is proportional to √M. Thus M_unknown/M_N₂ = (30/20)² = 9/4.",
+ "solution": "For equal volumes, effusion time is proportional to the square root of molar mass.\n$$\\frac{t_{\\text{unknown}}}{t_{\\text{N}_2}}=\\sqrt{\\frac{M_{\\text{unknown}}}{M_{\\text{N}_2}}},\\qquad \\frac{M_{\\text{unknown}}}{M_{\\text{N}_2}}=\\left(\\frac{30}{20}\\right)^2=\\frac{9}{4}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Equal volumes of nitrogen and an unknown gas effuse through the same pinhole under identical conditions. If their effusion times are $20\\ \\text{s}$ and $30\\ \\text{s}$, respectively, find $M_{\\text{unknown}}/M_{\\text{N}_2}$.",
+  "options": [
+   "$\\dfrac{4}{9}$",
+   "$\\dfrac{3}{2}$",
+   "$\\dfrac{9}{4}$",
+   "$3$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "For equal volumes, $\\dfrac{t_X}{t_{\\text{N}_2}}=\\sqrt{\\dfrac{M_X}{M_{\\text{N}_2}}}$; $\\dfrac{M_X}{M_{\\text{N}_2}}=\\left(\\dfrac{30}{20}\\right)^2=\\dfrac{9}{4}$.",
+  "distractor_notes": "A: reciprocal of the squared time ratio; B: uses the time ratio without squaring; D: incorrectly uses the squared ratio with an extra factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "The correct decreasing order of reactivity of alkyl halides towards an $\\text{S}_\\text{N}2$ reaction for a given alkyl group $R$ is:",
+ "stem": "In acetone, methyl halides react separately with the same nucleophile by an $\\text{S}_\\text{N}2$ pathway. Which sequence gives increasing reaction rate?",
  "options": [
-  "$R\\text{F} > R\\text{Cl} > R\\text{Br} > R\\text{I}$",
-  "$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$",
-  "$R\\text{Br} > R\\text{Cl} > R\\text{I} > R\\text{F}$",
-  "$R\\text{I} > R\\text{Cl} > R\\text{Br} > R\\text{F}$"
+  "$\\text{CH}_3\\text{I} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{F}$",
+  "$\\text{CH}_3\\text{F} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{I}$",
+  "$\\text{CH}_3\\text{F} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{I}$",
+  "$\\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{F} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{I}$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "SN2 rate depends on leaving-group ability, which follows C–X bond strength: C–I (213) < C–Br (285) < C–Cl (327) < C–F (485 kJ/mol). Weakest bond / best leaving group reacts fastest, so RI > RBr > RCl > RF.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For S_N2 reactions, rate increases with leaving-group ability: I⁻ > Br⁻ > Cl⁻ > F⁻. Thus CH₃F < CH₃Cl < CH₃Br < CH₃I.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "In an $\\text{S}_\\text{N}2$ reaction, the rate depends critically on the ability of the halide ion to depart (leaving group ability) as well as the carbon–halogen ($\\text{C}-\\text{X}$) bond strength.\\n\\n1. Leaving group ability is inversely related to basicity. Since the conjugate acid strength is $\\text{HI} > \\text{HBr} > \\text{HCl} > \\text{HF}$, the halide basicity order is $\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^-$. The weaker the base, the better it serves as a leaving group. Hence, leaving group ability follows $\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$.\\n\\n2. The $\\text{C}-\\text{X}$ bond dissociation enthalpy decreases in the order: $\\text{C}-\\text{F} > \\text{C}-\\text{Cl} > \\text{C}-\\text{Br} > \\text{C}-\\text{I}$. Thus, the $\\text{C}-\\text{I}$ bond is the weakest and easiest to break.\\n\\nBoth factors make the reactivity order for a given alkyl group:\\n$$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$$\n\nIndependent check: SN2 rate depends on leaving-group ability, which follows C–X bond strength: C–I (213) < C–Br (285) < C–Cl (327) < C–F (485 kJ/mol). Weakest bond / best leaving group reacts fastest, so RI > RBr > RCl > RF.",
+ "working": "$\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$ in leaving-group ability.\\n$\\therefore\\quad \\text{CH}_3\\text{F} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{I}$ in $\\text{S}_\\text{N}2$ rate.\n\nIndependent check: For S_N2 reactions, rate increases with leaving-group ability: I⁻ > Br⁻ > Cl⁻ > F⁻. Thus CH₃F < CH₃Cl < CH₃Br < CH₃I.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "The correct decreasing order of reactivity of alkyl halides towards an $\\text{S}_\\text{N}2$ reaction for a given alkyl group $R$ is:",
+  "stem": "In acetone, methyl halides react separately with the same nucleophile by an $\\text{S}_\\text{N}2$ pathway. Which sequence gives increasing reaction rate?",
   "options": [
-   "$R\\text{F} > R\\text{Cl} > R\\text{Br} > R\\text{I}$",
-   "$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$",
-   "$R\\text{Br} > R\\text{Cl} > R\\text{I} > R\\text{F}$",
-   "$R\\text{I} > R\\text{Cl} > R\\text{Br} > R\\text{F}$"
+   "$\\text{CH}_3\\text{I} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{F}$",
+   "$\\text{CH}_3\\text{F} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{I}$",
+   "$\\text{CH}_3\\text{F} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{I}$",
+   "$\\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{F} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{I}$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "In an $\\text{S}_\\text{N}2$ reaction, the rate depends critically on the ability of the halide ion to depart (leaving group ability) as well as the carbon–halogen ($\\text{C}-\\text{X}$) bond strength.\\n\\n1. Leaving group ability is inversely related to basicity. Since the conjugate acid strength is $\\text{HI} > \\text{HBr} > \\text{HCl} > \\text{HF}$, the halide basicity order is $\\text{I}^- < \\text{Br}^- < \\text{Cl}^- < \\text{F}^-$. The weaker the base, the better it serves as a leaving group. Hence, leaving group ability follows $\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$.\\n\\n2. The $\\text{C}-\\text{X}$ bond dissociation enthalpy decreases in the order: $\\text{C}-\\text{F} > \\text{C}-\\text{Cl} > \\text{C}-\\text{Br} > \\text{C}-\\text{I}$. Thus, the $\\text{C}-\\text{I}$ bond is the weakest and easiest to break.\\n\\nBoth factors make the reactivity order for a given alkyl group:\\n$$R\\text{I} > R\\text{Br} > R\\text{Cl} > R\\text{F}$$",
-  "distractor_notes": "Option A reverses the sequence by mistakenly assuming reactivity follows electronegativity or bond polarity of the C-X bond.\nOption C incorrectly ranks bromide higher than iodide.\nOption D incorrectly transposes chloride and bromide, violating the periodic trend in leaving group ability.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\text{I}^- > \\text{Br}^- > \\text{Cl}^- > \\text{F}^-$ in leaving-group ability.\\n$\\therefore\\quad \\text{CH}_3\\text{F} < \\text{CH}_3\\text{Cl} < \\text{CH}_3\\text{Br} < \\text{CH}_3\\text{I}$ in $\\text{S}_\\text{N}2$ rate.",
+  "distractor_notes": "A: reverses the leaving-group trend.\\nC: interchanges chloride and bromide.\\nD: places fluoride above chloride."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

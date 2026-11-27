@@ -1,0 +1,76 @@
+{
+ "qno": 20,
+ "section": "Physics",
+ "slot": {
+  "qno": 20,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Astronomical telescope",
+  "archetype": "single-formula numerical",
+  "brief": "Diagram of an astronomical telescope in normal adjustment; using the marked focal lengths, find the magnifying power or the tube length.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:24",
+   "2021:29",
+   "2024s2:17"
+  ]
+ },
+ "status": "ok",
+ "stem": "An astronomical telescope is in normal adjustment, as shown in the figure. The focal lengths of its objective and eyepiece are marked. What is its magnifying power?",
+ "options": [
+  "20",
+  "16",
+  "10",
+  "25"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q020_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a telescope in normal adjustment, magnifying power = f_o/f_e = 80/4 = 20.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$M=\\dfrac{f_o}{f_e}=\\dfrac{80}{4}=20$\n\nIndependent check: For a telescope in normal adjustment, magnifying power = f_o/f_e = 80/4 = 20.",
+ "solution": "For a telescope in normal adjustment, the magnifying power is $M=\\dfrac{f_o}{f_e}$.\n$$M=\\dfrac{80}{4}=20$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An astronomical telescope is in normal adjustment, as shown in the figure. The focal lengths of its objective and eyepiece are marked. What is its magnifying power?",
+  "options": [
+   "10",
+   "16",
+   "20",
+   "25"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw an astronomical telescope horizontally, with the objective lens on the left and the eyepiece lens on the right. Label the objective focal length f_o = 80 cm and the eyepiece focal length f_e = 4 cm. Show two parallel incident rays entering from the left, converging after the objective at the common focal plane between the lenses, and emerging parallel after the eyepiece. Label the common focal plane; do not mark the separation between the lenses.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$M=\\dfrac{f_o}{f_e}=\\dfrac{80}{4}=20$",
+  "distractor_notes": "A: partial ratio; B: subtracts the focal lengths; D: arithmetic or formula error."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 69,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 69,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Lucas test",
+  "archetype": "test identification",
+  "brief": "Three alcohols (1°, 2°, 3° including a cyclic one) subjected to Lucas test; predict turbidity order with time and explain via carbocation stability.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:34",
+   "2024s1:48",
+   "2025s1:43"
+  ]
+ },
+ "status": "ok",
+ "stem": "At room temperature, three alcohols are treated with Lucas reagent. Which order gives turbidity from earliest to latest, with no turbidity last?",
+ "options": [
+  "2-methylpropan-2-ol > cyclohexanol > butan-1-ol",
+  "Cyclohexanol > 2-methylpropan-2-ol > butan-1-ol",
+  "Butan-1-ol > cyclohexanol > 2-methylpropan-2-ol",
+  "2-methylpropan-2-ol > butan-1-ol > cyclohexanol"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Lucas test rate: tertiary > secondary > primary. Thus 2-methylpropan-2-ol reacts first, cyclohexanol next, and butan-1-ol shows no turbidity at room temperature.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Lucas test proceeds mainly by $\\text{S}_\\text{N}1$; rate follows carbocation stability.\n$3^\\circ > 2^\\circ > 1^\\circ$\n2-methylpropan-2-ol: immediate turbidity; cyclohexanol: turbidity after a few minutes; butan-1-ol: no turbidity at room temperature.\n\nIndependent check: Lucas test rate: tertiary > secondary > primary. Thus 2-methylpropan-2-ol reacts first, cyclohexanol next, and butan-1-ol shows no turbidity at room temperature.",
+ "solution": "Lucas test proceeds mainly by the $\\text{S}_\\text{N}1$ mechanism; the rate follows carbocation stability, $3^\\circ > 2^\\circ > 1^\\circ$. Thus 2-methylpropan-2-ol gives immediate turbidity, cyclohexanol reacts after a few minutes, and butan-1-ol gives no turbidity at room temperature.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At room temperature, three alcohols are treated with Lucas reagent. Which order gives turbidity from earliest to latest, with no turbidity last?",
+  "options": [
+   "Cyclohexanol > 2-methylpropan-2-ol > butan-1-ol",
+   "2-methylpropan-2-ol > cyclohexanol > butan-1-ol",
+   "Butan-1-ol > cyclohexanol > 2-methylpropan-2-ol",
+   "2-methylpropan-2-ol > butan-1-ol > cyclohexanol"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Lucas test proceeds mainly by $\\text{S}_\\text{N}1$; rate follows carbocation stability.\n$3^\\circ > 2^\\circ > 1^\\circ$\n2-methylpropan-2-ol: immediate turbidity; cyclohexanol: turbidity after a few minutes; butan-1-ol: no turbidity at room temperature.",
+  "distractor_notes": "Puts the secondary cyclic alcohol ahead of the tertiary alcohol.\nCorrect order: tertiary, secondary, primary.\nReverses the reactivity order, placing the primary alcohol first.\nPlaces the primary alcohol ahead of the secondary cyclic alcohol."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

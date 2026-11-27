@@ -1,0 +1,70 @@
+{
+ "qno": 127,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 127,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "counting formula",
+  "brief": "Count the number of onto (surjective) functions from a set with m elements to a set with n elements using inclusion–exclusion formula n!·S(m,n).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:120",
+   "2024s2:99",
+   "2023s2:119"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "How many onto functions are there from a set of $7$ elements to a set of $4$ elements?",
+ "options": [
+  "$7636$",
+  "$8400$",
+  "$8404$",
+  "$16384$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By inclusion–exclusion, the number of onto functions is $4^7-\\binom41 3^7+\\binom42 2^7-\\binom43 1^7=8400$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$4^7-\\binom{4}{1}3^7+\\binom{4}{2}2^7-\\binom{4}{3}1^7=16384-8748+768-4=8400$.\n\nIndependent check: By inclusion–exclusion, the number of onto functions is $4^7-\\binom41 3^7+\\binom42 2^7-\\binom43 1^7=8400$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "How many onto functions are there from a set of $7$ elements to a set of $4$ elements?",
+  "options": [
+   "$7636$",
+   "$8400$",
+   "$8404$",
+   "$16384$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$4^7-\\binom{4}{1}3^7+\\binom{4}{2}2^7-\\binom{4}{3}1^7=16384-8748+768-4=8400$.",
+  "distractor_notes": "A: omits the inclusion-exclusion terms for two or more missing elements; C: omits the final subtraction; D: counts all functions, not only onto functions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

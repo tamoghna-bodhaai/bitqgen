@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "For a plane electromagnetic wave propagating in vacuum, let $\\langle u_E \\rangle$ and $\\langle u_B \\rangle$ denote the time-averaged energy densities of the electric and magnetic fields, respectively. If $E_0$ and $B_0$ are the peak amplitudes of the electric and magnetic fields, which of the following is correct?",
+ "stem": "A plane electromagnetic wave travels in vacuum. At an instant when the electric-field magnitude is $E_0/2$, let $u_E$ and $u_B$ be the electric and magnetic energy densities. Which statement is correct?",
  "options": [
-  "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = \\dfrac{1}{2}$ and $E_0 = c B_0$",
-  "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = 1$ and $E_0 = c B_0$",
-  "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = 1$ and $B_0 = c E_0$",
-  "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = c^2$ and $E_0 = c B_0$"
+  "$\\dfrac{u_E}{u_B}=\\dfrac{1}{4}$ and $E_0=cB_0$",
+  "$\\dfrac{u_E}{u_B}=1$ and $E_0=cB_0$",
+  "$\\dfrac{u_E}{u_B}=1$ and $B_0=cE_0$",
+  "$\\dfrac{u_E}{u_B}=4$ and $E_0=cB_0$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,34 +34,35 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "⟨u_E⟩ = ¼ε₀E₀², ⟨u_B⟩ = B₀²/(4μ₀). For a vacuum plane wave E₀ = cB₀ with c = 1/√(μ₀ε₀), so ⟨u_E⟩/⟨u_B⟩ = ε₀μ₀c² = 1. Numeric check confirms ratio ≈ 1 and E₀ = cB₀.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a vacuum plane wave, E=cB at every instant, so u_E=½ε₀E²=u_B=B²/(2μ₀). The peak fields also satisfy E₀=cB₀.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "1. In an electromagnetic wave propagating in vacuum, the relation between the amplitudes of the electric and magnetic fields is given by:\n$$E_0 = c B_0$$\nwhere $c = \\dfrac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}$ is the speed of light in vacuum.\n\n2. The time-averaged electric energy density is:\n$$\\langle u_E \\rangle = \\dfrac{1}{4}\\varepsilon_0 E_0^2$$\nand the time-averaged magnetic energy density is:\n$$\\langle u_B \\rangle = \\dfrac{B_0^2}{4\\mu_0}$$\n\n3. Taking their ratio:\n$$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = \\dfrac{\\frac{1}{4}\\varepsilon_0 E_0^2}{\\frac{1}{4\\mu_0}B_0^2} = \\varepsilon_0 \\mu_0 \\left(\\dfrac{E_0}{B_0}\\right)^2$$\nSubstituting $E_0 / B_0 = c$ and $c^2 = \\dfrac{1}{\\mu_0 \\varepsilon_0}$:\n$$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = \\varepsilon_0 \\mu_0 c^2 = \\varepsilon_0 \\mu_0 \\left(\\dfrac{1}{\\mu_0 \\varepsilon_0}\\right) = 1$$\n\nThus, $\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = 1$ and $E_0 = c B_0$.\n\nIndependent check: ⟨u_E⟩ = ¼ε₀E₀², ⟨u_B⟩ = B₀²/(4μ₀). For a vacuum plane wave E₀ = cB₀ with c = 1/√(μ₀ε₀), so ⟨u_E⟩/⟨u_B⟩ = ε₀μ₀c² = 1. Numeric check confirms ratio ≈ 1 and E₀ = cB₀.",
+ "working": "$u_E=\\dfrac{1}{2}\\varepsilon_0E^2$, $u_B=\\dfrac{B^2}{2\\mu_0}$\n$E=cB$ and $c^2=\\dfrac{1}{\\varepsilon_0\\mu_0}$\n$\\dfrac{u_E}{u_B}=\\varepsilon_0\\mu_0\\left(\\dfrac{E}{B}\\right)^2=1$\nThe peak values also obey $E_0=cB_0$.\n\nIndependent check: For a vacuum plane wave, E=cB at every instant, so u_E=½ε₀E²=u_B=B²/(2μ₀). The peak fields also satisfy E₀=cB₀.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "For a plane electromagnetic wave propagating in vacuum, let $\\langle u_E \\rangle$ and $\\langle u_B \\rangle$ denote the time-averaged energy densities of the electric and magnetic fields, respectively. If $E_0$ and $B_0$ are the peak amplitudes of the electric and magnetic fields, which of the following is correct?",
+  "stem": "A plane electromagnetic wave travels in vacuum. At an instant when the electric-field magnitude is $E_0/2$, let $u_E$ and $u_B$ be the electric and magnetic energy densities. Which statement is correct?",
   "options": [
-   "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = \\dfrac{1}{2}$ and $E_0 = c B_0$",
-   "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = 1$ and $E_0 = c B_0$",
-   "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = 1$ and $B_0 = c E_0$",
-   "$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = c^2$ and $E_0 = c B_0$"
+   "$\\dfrac{u_E}{u_B}=\\dfrac{1}{4}$ and $E_0=cB_0$",
+   "$\\dfrac{u_E}{u_B}=1$ and $E_0=cB_0$",
+   "$\\dfrac{u_E}{u_B}=1$ and $B_0=cE_0$",
+   "$\\dfrac{u_E}{u_B}=4$ and $E_0=cB_0$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "1. In an electromagnetic wave propagating in vacuum, the relation between the amplitudes of the electric and magnetic fields is given by:\n$$E_0 = c B_0$$\nwhere $c = \\dfrac{1}{\\sqrt{\\mu_0 \\varepsilon_0}}$ is the speed of light in vacuum.\n\n2. The time-averaged electric energy density is:\n$$\\langle u_E \\rangle = \\dfrac{1}{4}\\varepsilon_0 E_0^2$$\nand the time-averaged magnetic energy density is:\n$$\\langle u_B \\rangle = \\dfrac{B_0^2}{4\\mu_0}$$\n\n3. Taking their ratio:\n$$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = \\dfrac{\\frac{1}{4}\\varepsilon_0 E_0^2}{\\frac{1}{4\\mu_0}B_0^2} = \\varepsilon_0 \\mu_0 \\left(\\dfrac{E_0}{B_0}\\right)^2$$\nSubstituting $E_0 / B_0 = c$ and $c^2 = \\dfrac{1}{\\mu_0 \\varepsilon_0}$:\n$$\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = \\varepsilon_0 \\mu_0 c^2 = \\varepsilon_0 \\mu_0 \\left(\\dfrac{1}{\\mu_0 \\varepsilon_0}\\right) = 1$$\n\nThus, $\\dfrac{\\langle u_E \\rangle}{\\langle u_B \\rangle} = 1$ and $E_0 = c B_0$.",
-  "distractor_notes": "Option A confuses the ratio of electric-to-magnetic energy density with the ratio of electric-to-total energy density, which is 1/2.\nOption C correctly identifies equal energy densities but inverts the relation between peak fields ($B_0 = cE_0$ instead of $E_0 = cB_0$).\nOption D incorrectly assumes the energy density ratio depends solely on $(E_0/B_0)^2 = c^2$, ignoring the dimensional constants $\\varepsilon_0$ and $\\mu_0$.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$u_E=\\dfrac{1}{2}\\varepsilon_0E^2$, $u_B=\\dfrac{B^2}{2\\mu_0}$\n$E=cB$ and $c^2=\\dfrac{1}{\\varepsilon_0\\mu_0}$\n$\\dfrac{u_E}{u_B}=\\varepsilon_0\\mu_0\\left(\\dfrac{E}{B}\\right)^2=1$\nThe peak values also obey $E_0=cB_0$.",
+  "distractor_notes": "A: compares the instantaneous electric field with the peak magnetic field. C: reverses the field-amplitude relation. D: inverts the energy-density ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

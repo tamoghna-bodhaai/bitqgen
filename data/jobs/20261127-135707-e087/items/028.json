@@ -1,0 +1,68 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Internal resistance of cells",
+  "archetype": "circuit analysis",
+  "brief": "Battery of known emf and internal resistance connected across external resistor; find terminal voltage, current and power delivered — simple two-step circuit analysis.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:26",
+   "2026s2:13",
+   "2025s2:12"
+  ]
+ },
+ "status": "ok",
+ "stem": "A cell of emf $12\\ \\text{V}$ and internal resistance $1\\ \\Omega$ is connected to a $5\\ \\Omega$ resistor. What are the current, terminal voltage and power delivered to the resistor?",
+ "options": [
+  "$2\\ \\text{A},\\ 12\\ \\text{V},\\ 24\\ \\text{W}$",
+  "$2.4\\ \\text{A},\\ 12\\ \\text{V},\\ 28.8\\ \\text{W}$",
+  "$2\\ \\text{A},\\ 10\\ \\text{V},\\ 20\\ \\text{W}$",
+  "$2\\ \\text{A},\\ 10\\ \\text{V},\\ 24\\ \\text{W}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total resistance is 5 + 1 = 6 Ω, so I = 12/6 = 2 A. Terminal voltage = IR = 10 V; resistor power = I²R = 20 W.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I=\\dfrac{\\mathcal{E}}{R+r}=\\dfrac{12}{5+1}=2\\ \\text{A}$\n$V=IR=2(5)=10\\ \\text{V}$\n$P=I^2R=2^2(5)=20\\ \\text{W}$\n\nIndependent check: Total resistance is 5 + 1 = 6 Ω, so I = 12/6 = 2 A. Terminal voltage = IR = 10 V; resistor power = I²R = 20 W.",
+ "solution": "The current is determined by the total resistance, including the cell’s internal resistance:\n$$I=\\frac{\\mathcal{E}}{R+r}=\\frac{12}{5+1}=2\\ \\text{A}$$\nThus, $V=IR=10\\ \\text{V}$ and $P=I^2R=20\\ \\text{W}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A cell of emf $12\\ \\text{V}$ and internal resistance $1\\ \\Omega$ is connected to a $5\\ \\Omega$ resistor. What are the current, terminal voltage and power delivered to the resistor?",
+  "options": [
+   "$2\\ \\text{A},\\ 10\\ \\text{V},\\ 20\\ \\text{W}$",
+   "$2.4\\ \\text{A},\\ 12\\ \\text{V},\\ 28.8\\ \\text{W}$",
+   "$2\\ \\text{A},\\ 12\\ \\text{V},\\ 24\\ \\text{W}$",
+   "$2\\ \\text{A},\\ 10\\ \\text{V},\\ 24\\ \\text{W}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$I=\\dfrac{\\mathcal{E}}{R+r}=\\dfrac{12}{5+1}=2\\ \\text{A}$\n$V=IR=2(5)=10\\ \\text{V}$\n$P=I^2R=2^2(5)=20\\ \\text{W}$",
+  "distractor_notes": "B: neglects the cell's internal resistance. C: uses the emf as terminal voltage. D: calculates resistor power using $\\mathcal{E}I$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

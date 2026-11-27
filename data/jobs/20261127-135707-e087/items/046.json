@@ -1,0 +1,68 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Stability of alkenes / heat of hydrogenation",
+  "archetype": "ordering",
+  "brief": "Give four isomeric alkenes (with cis/trans and substitution variation) and rank by heat of hydrogenation; students must translate stability ordering into ΔH values.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:54",
+   "2024s2:56",
+   "2025s1:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "For hydrogenation to the corresponding alkanes, arrange these alkenes by signed $\\Delta H_{\\mathrm{hyd}}$, from most negative to least negative.",
+ "options": [
+  "pent-1-ene $<$ cis-pent-2-ene $<$ 2-methylbut-2-ene $<$ trans-pent-2-ene",
+  "pent-1-ene $<$ trans-pent-2-ene $<$ cis-pent-2-ene $<$ 2-methylbut-2-ene",
+  "2-methylbut-2-ene $<$ trans-pent-2-ene $<$ cis-pent-2-ene $<$ pent-1-ene",
+  "pent-1-ene $<$ cis-pent-2-ene $<$ trans-pent-2-ene $<$ 2-methylbut-2-ene"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Hydrogenation is most exothermic for the least stable alkene. Stability increases as pent-1-ene < cis-pent-2-ene < trans-pent-2-ene < 2-methylbut-2-ene, so the signed hydrogenation enthalpies follow the same order from most negative to least negative.",
+   "answer": "A",
+   "confidence": 0.97,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Alkene stability: trisubstituted $>$ trans-disubstituted $>$ cis-disubstituted $>$ monosubstituted. Greater stability gives less exothermic hydrogenation; hence $\\Delta H_{\\mathrm{hyd}}$: pent-1-ene $<$ cis-pent-2-ene $<$ trans-pent-2-ene $<$ 2-methylbut-2-ene.\n\nIndependent check: Hydrogenation is most exothermic for the least stable alkene. Stability increases as pent-1-ene < cis-pent-2-ene < trans-pent-2-ene < 2-methylbut-2-ene, so the signed hydrogenation enthalpies follow the same order from most negative to least negative.",
+ "solution": "Alkene stability increases in the order $\\text{pent-1-ene} < \\text{cis-pent-2-ene} < \\text{trans-pent-2-ene} < \\text{2-methylbut-2-ene}$. More stable alkenes have less exothermic hydrogenation, so $\\Delta H_{\\mathrm{hyd}}$ follows this same order from most negative to least negative.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For hydrogenation to the corresponding alkanes, arrange these alkenes by signed $\\Delta H_{\\mathrm{hyd}}$, from most negative to least negative.",
+  "options": [
+   "pent-1-ene $<$ cis-pent-2-ene $<$ trans-pent-2-ene $<$ 2-methylbut-2-ene",
+   "pent-1-ene $<$ trans-pent-2-ene $<$ cis-pent-2-ene $<$ 2-methylbut-2-ene",
+   "2-methylbut-2-ene $<$ trans-pent-2-ene $<$ cis-pent-2-ene $<$ pent-1-ene",
+   "pent-1-ene $<$ cis-pent-2-ene $<$ 2-methylbut-2-ene $<$ trans-pent-2-ene"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Alkene stability: trisubstituted $>$ trans-disubstituted $>$ cis-disubstituted $>$ monosubstituted. Greater stability gives less exothermic hydrogenation; hence $\\Delta H_{\\mathrm{hyd}}$: pent-1-ene $<$ cis-pent-2-ene $<$ trans-pent-2-ene $<$ 2-methylbut-2-ene.",
+  "distractor_notes": "B: reverses the cis/trans stability order; C: orders stability rather than signed hydrogenation enthalpy; D: ranks the trisubstituted alkene below trans-pent-2-ene."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

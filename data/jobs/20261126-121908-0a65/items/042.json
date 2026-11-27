@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Among the following molecules, which one has a central atom hybridisation and molecular shape different from the other three?",
+ "stem": "Which species has a central atom with a different hybridisation and molecular geometry from the other three?",
  "options": [
-  "$\\text{NF}_3$",
-  "$\\text{ClF}_3$",
-  "$\\text{PCl}_3$",
-  "$\\text{XeO}_3$"
+  "$\\text{CCl}_4$",
+  "$\\text{BF}_3$",
+  "$\\text{SiH}_4$",
+  "$\\text{CH}_4$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,34 +34,35 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "NF3, PCl3, XeO3 each have 3 bond pairs + 1 lone pair → sp3, trigonal pyramidal. ClF3 has 3 bond pairs + 2 lone pairs → sp3d, T-shaped. ClF3 differs in both hybridisation and shape.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "CCl₄, SiH₄, and CH₄ have sp³ central atoms and tetrahedral geometry. BF₃ has an sp² central atom and trigonal planar geometry.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "To determine the hybridisation and molecular shape, we find the steric number ($\\text{SN}$) for the central atom of each molecule:\n\n$$\\text{SN} = (\\text{number of } \\sigma\\text{-bonds}) + (\\text{number of lone pairs})$$\n\n1. For $\\text{NF}_3$:\n- Valence electrons on $\\text{N} = 5$\n- Forms $3$ single bonds with $\\text{F}$ ($3\\ \\sigma$-bonds)\n- Lone pairs $= \\dfrac{5 - 3}{2} = 1$\n- $\\text{SN} = 3 + 1 = 4 \\implies sp^3$ hybridisation\n- Molecular shape: Trigonal pyramidal\n\n2. For $\\text{ClF}_3$:\n- Valence electrons on $\\text{Cl} = 7$\n- Forms $3$ single bonds with $\\text{F}$ ($3\\ \\sigma$-bonds)\n- Lone pairs $= \\dfrac{7 - 3}{2} = 2$\n- $\\text{SN} = 3 + 2 = 5 \\implies sp^3d$ hybridisation\n- Molecular shape: T-shaped\n\n3. For $\\text{PCl}_3$:\n- Valence electrons on $\\text{P} = 5$\n- Forms $3$ single bonds with $\\text{Cl}$ ($3\\ \\sigma$-bonds)\n- Lone pairs $= \\dfrac{5 - 3}{2} = 1$\n- $\\text{SN} = 3 + 1 = 4 \\implies sp^3$ hybridisation\n- Molecular shape: Trigonal pyramidal\n\n4. For $\\text{XeO}_3$:\n- Valence electrons on $\\text{Xe} = 8$\n- Forms $3$ double bonds with $\\text{O}$ ($3\\ \\sigma$-bonds, $3\\ \\pi$-bonds, consuming $6$ electrons)\n- Lone pairs $= \\dfrac{8 - 6}{2} = 1$\n- $\\text{SN} = 3 + 1 = 4 \\implies sp^3$ hybridisation\n- Molecular shape: Trigonal pyramidal\n\nTherefore, $\\text{ClF}_3$ is the odd one out with $sp^3d$ hybridisation and a T-shaped geometry, whereas the others are all $sp^3$ hybridised and trigonal pyramidal.\n\nIndependent check: NF3, PCl3, XeO3 each have 3 bond pairs + 1 lone pair → sp3, trigonal pyramidal. ClF3 has 3 bond pairs + 2 lone pairs → sp3d, T-shaped. ClF3 differs in both hybridisation and shape.",
+ "working": "$\\text{CCl}_4$, $\\text{SiH}_4$ and $\\text{CH}_4$: steric number $=4$; $sp^3$, tetrahedral.\n$\\text{BF}_3$: steric number $=3$; $sp^2$, trigonal planar.\n\nIndependent check: CCl₄, SiH₄, and CH₄ have sp³ central atoms and tetrahedral geometry. BF₃ has an sp² central atom and trigonal planar geometry.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Among the following molecules, which one has a central atom hybridisation and molecular shape different from the other three?",
+  "stem": "Which species has a central atom with a different hybridisation and molecular geometry from the other three?",
   "options": [
-   "$\\text{NF}_3$",
-   "$\\text{ClF}_3$",
-   "$\\text{PCl}_3$",
-   "$\\text{XeO}_3$"
+   "$\\text{CCl}_4$",
+   "$\\text{BF}_3$",
+   "$\\text{SiH}_4$",
+   "$\\text{CH}_4$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "To determine the hybridisation and molecular shape, we find the steric number ($\\text{SN}$) for the central atom of each molecule:\n\n$$\\text{SN} = (\\text{number of } \\sigma\\text{-bonds}) + (\\text{number of lone pairs})$$\n\n1. For $\\text{NF}_3$:\n- Valence electrons on $\\text{N} = 5$\n- Forms $3$ single bonds with $\\text{F}$ ($3\\ \\sigma$-bonds)\n- Lone pairs $= \\dfrac{5 - 3}{2} = 1$\n- $\\text{SN} = 3 + 1 = 4 \\implies sp^3$ hybridisation\n- Molecular shape: Trigonal pyramidal\n\n2. For $\\text{ClF}_3$:\n- Valence electrons on $\\text{Cl} = 7$\n- Forms $3$ single bonds with $\\text{F}$ ($3\\ \\sigma$-bonds)\n- Lone pairs $= \\dfrac{7 - 3}{2} = 2$\n- $\\text{SN} = 3 + 2 = 5 \\implies sp^3d$ hybridisation\n- Molecular shape: T-shaped\n\n3. For $\\text{PCl}_3$:\n- Valence electrons on $\\text{P} = 5$\n- Forms $3$ single bonds with $\\text{Cl}$ ($3\\ \\sigma$-bonds)\n- Lone pairs $= \\dfrac{5 - 3}{2} = 1$\n- $\\text{SN} = 3 + 1 = 4 \\implies sp^3$ hybridisation\n- Molecular shape: Trigonal pyramidal\n\n4. For $\\text{XeO}_3$:\n- Valence electrons on $\\text{Xe} = 8$\n- Forms $3$ double bonds with $\\text{O}$ ($3\\ \\sigma$-bonds, $3\\ \\pi$-bonds, consuming $6$ electrons)\n- Lone pairs $= \\dfrac{8 - 6}{2} = 1$\n- $\\text{SN} = 3 + 1 = 4 \\implies sp^3$ hybridisation\n- Molecular shape: Trigonal pyramidal\n\nTherefore, $\\text{ClF}_3$ is the odd one out with $sp^3d$ hybridisation and a T-shaped geometry, whereas the others are all $sp^3$ hybridised and trigonal pyramidal.",
-  "distractor_notes": "Option A (NF3): Chosen if the student incorrectly confuses NF3 with BF3, assuming zero lone pairs and sp2 trigonal planar geometry.\nOption C (PCl3): Chosen if the student mistakenly assumes d-orbital involvement (expanded octet) in PCl3 by analogy with PCl5.\nOption D (XeO3): Chosen if the student assumes XeO3 is trigonal planar by false analogy with SO3, neglecting the lone pair on Xe.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$\\text{CCl}_4$, $\\text{SiH}_4$ and $\\text{CH}_4$: steric number $=4$; $sp^3$, tetrahedral.\n$\\text{BF}_3$: steric number $=3$; $sp^2$, trigonal planar.",
+  "distractor_notes": "A: Assigns the tetrahedral $sp^3$ pattern to the odd-one-out. C: Assigns the tetrahedral $sp^3$ pattern to the odd-one-out. D: Assigns the tetrahedral $sp^3$ pattern to the odd-one-out."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

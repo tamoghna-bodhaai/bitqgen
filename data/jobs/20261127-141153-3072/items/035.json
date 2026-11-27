@@ -1,0 +1,68 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE intensity",
+  "archetype": "phase difference to intensity",
+  "brief": "In a double-slit experiment a stated path difference (as a fraction of wavelength) exists at a point; convert to phase difference and find the intensity as a fraction of the maximum.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:23",
+   "2021:10",
+   "2024s2:27"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a double-slit experiment with equal-intensity slits, the path difference at a point is $\\dfrac{\\lambda}{3}$. What is the intensity there as a fraction of the maximum intensity?",
+ "options": [
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{3}{4}$",
+  "$1$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The phase difference is $2\\pi(\\lambda/3)/\\lambda=2\\pi/3$. For equal-intensity slits, $I/I_{\\max}=\\cos^2(\\Delta\\phi/2)=\\cos^2(\\pi/3)=1/4$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\phi=\\dfrac{2\\pi}{\\lambda}\\Delta x=\\dfrac{2\\pi}{3}$; $\\dfrac{I}{I_{\\max}}=\\cos^2\\left(\\dfrac{\\phi}{2}\\right)=\\cos^2\\left(\\dfrac{\\pi}{3}\\right)=\\dfrac{1}{4}$.\n\nIndependent check: The phase difference is $2\\pi(\\lambda/3)/\\lambda=2\\pi/3$. For equal-intensity slits, $I/I_{\\max}=\\cos^2(\\Delta\\phi/2)=\\cos^2(\\pi/3)=1/4$.",
+ "solution": "The phase difference is $\\phi=\\dfrac{2\\pi}{\\lambda}\\Delta x=\\dfrac{2\\pi}{3}$. For equal-intensity slits,\n$$\\dfrac{I}{I_{\\max}}=\\cos^2\\left(\\dfrac{\\phi}{2}\\right)=\\cos^2\\left(\\dfrac{\\pi}{3}\\right)=\\dfrac{1}{4}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a double-slit experiment with equal-intensity slits, the path difference at a point is $\\dfrac{\\lambda}{3}$. What is the intensity there as a fraction of the maximum intensity?",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{3}{4}$",
+   "$1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\phi=\\dfrac{2\\pi}{\\lambda}\\Delta x=\\dfrac{2\\pi}{3}$; $\\dfrac{I}{I_{\\max}}=\\cos^2\\left(\\dfrac{\\phi}{2}\\right)=\\cos^2\\left(\\dfrac{\\pi}{3}\\right)=\\dfrac{1}{4}$.",
+  "distractor_notes": "B: uses an incorrect phase-to-intensity relation; C: uses $\\sin^2(\\phi/2)$; D: treats the point as a maximum."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

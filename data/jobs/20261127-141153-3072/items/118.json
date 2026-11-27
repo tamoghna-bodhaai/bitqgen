@@ -1,0 +1,68 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Ellipse – eccentricity and foci geometry",
+  "archetype": "single-formula numerical",
+  "brief": "Given an ellipse (or foci + a vertex), find eccentricity or foci using b² = a²(1−e²); single-formula application.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:94",
+   "2024s1:107",
+   "2026s2:112"
+  ]
+ },
+ "status": "ok",
+ "stem": "An ellipse centered at the origin has vertices $(\\pm13,0)$ and $(0,\\pm5)$. Its eccentricity is",
+ "options": [
+  "$\\dfrac5{13}$",
+  "$\\dfrac5{12}$",
+  "$\\dfrac8{13}$",
+  "$\\dfrac{12}{13}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The semi-major and semi-minor axes are 13 and 5. Thus c = √(13² − 5²) = 12, so e = c/a = 12/13.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=13,\\quad b=5,\\quad c^2=a^2-b^2=169-25=144$\n$e=\\dfrac ca=\\dfrac{12}{13}$\n\nIndependent check: The semi-major and semi-minor axes are 13 and 5. Thus c = √(13² − 5²) = 12, so e = c/a = 12/13.",
+ "solution": "For an ellipse, $e=\\dfrac{c}{a}$, where $c^2=a^2-b^2$. Here $a=13$ and $b=5$.\n$$c=\\sqrt{13^2-5^2}=12,\\qquad e=\\frac{12}{13}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An ellipse centered at the origin has vertices $(\\pm13,0)$ and $(0,\\pm5)$. Its eccentricity is",
+  "options": [
+   "$\\dfrac5{13}$",
+   "$\\dfrac5{12}$",
+   "$\\dfrac8{13}$",
+   "$\\dfrac{12}{13}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$a=13,\\quad b=5,\\quad c^2=a^2-b^2=169-25=144$\n$e=\\dfrac ca=\\dfrac{12}{13}$",
+  "distractor_notes": "A uses $b/a$ as the eccentricity; B uses $b/c$; C finds $c$ by subtracting the semiaxes instead of their squares."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

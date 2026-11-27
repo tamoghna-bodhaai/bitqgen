@@ -1,0 +1,68 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "single-formula numerical",
+  "brief": "At-least-k or exactly-k successes problem (coins/dice/items defective); compute using binomial probabilities; clean numbers.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:91",
+   "2021:135",
+   "2025s1:91"
+  ]
+ },
+ "status": "ok",
+ "stem": "A fair coin is tossed five times. What is the probability of getting exactly three heads?",
+ "options": [
+  "$\\dfrac{5}{16}$",
+  "$\\dfrac{5}{32}$",
+  "$\\dfrac{1}{32}$",
+  "$\\dfrac{1}{2}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "There are 2^5 = 32 equally likely outcomes. Exactly three heads can occur in C(5,3) = 10 ways, so the probability is 10/32 = 5/16.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(X=3)=\\binom{5}{3}\\left(\\dfrac12\\right)^3\\left(\\dfrac12\\right)^2$\\n$=\\dfrac{10}{32}=\\dfrac{5}{16}$.\n\nIndependent check: There are 2^5 = 32 equally likely outcomes. Exactly three heads can occur in C(5,3) = 10 ways, so the probability is 10/32 = 5/16.",
+ "solution": "The number of ways to get exactly three heads is $\\binom{5}{3}$ out of $2^5$ equally likely outcomes.\n$$P(X=3)=\\frac{\\binom{5}{3}}{2^5}=\\frac{10}{32}=\\frac{5}{16}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A fair coin is tossed five times. What is the probability of getting exactly three heads?",
+  "options": [
+   "$\\dfrac{1}{32}$",
+   "$\\dfrac{5}{32}$",
+   "$\\dfrac{5}{16}$",
+   "$\\dfrac{1}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$P(X=3)=\\binom{5}{3}\\left(\\dfrac12\\right)^3\\left(\\dfrac12\\right)^2$\\n$=\\dfrac{10}{32}=\\dfrac{5}{16}$.",
+  "distractor_notes": "A: counts only one outcome; B: undercounts the arrangements; D: confuses exactly three heads with a probability of one half."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

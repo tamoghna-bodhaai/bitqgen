@@ -1,0 +1,68 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Set operations and cardinality",
+  "archetype": "counting formula",
+  "brief": "Two/three-set problem with |A∩B|, |A∪B| given; find a cardinality via inclusion–exclusion; easy plug-in.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:120",
+   "2022:119",
+   "2026s1:102"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $|A|=18$, $|B|=15$ and $|A\\cup B|=25$, find $|A\\cap B|$.",
+ "options": [
+  "$8$",
+  "$7$",
+  "$6$",
+  "$9$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By inclusion–exclusion, |A∩B| = |A| + |B| − |A∪B| = 18 + 15 − 25 = 8.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|A\\cup B|=|A|+|B|-|A\\cap B|$\\n$|A\\cap B|=18+15-25=8$.\n\nIndependent check: By inclusion–exclusion, |A∩B| = |A| + |B| − |A∪B| = 18 + 15 − 25 = 8.",
+ "solution": "By the inclusion–exclusion principle,\n$$|A\\cap B|=|A|+|B|-|A\\cup B|=18+15-25=8.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $|A|=18$, $|B|=15$ and $|A\\cup B|=25$, find $|A\\cap B|$.",
+  "options": [
+   "$6$",
+   "$7$",
+   "$8$",
+   "$9$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$|A\\cup B|=|A|+|B|-|A\\cap B|$\\n$|A\\cap B|=18+15-25=8$.",
+  "distractor_notes": "A: subtracts an extra $2$; B: arithmetic error; D: adds instead of subtracting the union size correctly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

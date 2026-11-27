@@ -1,0 +1,78 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Conservation of angular momentum",
+  "archetype": "conservation law",
+  "brief": "Show a person walking on / jumping off a freely rotating platform (or a disc dropping onto another); use angular momentum conservation about the axis to find the new angular speed.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:18",
+   "2025s1:3",
+   "2021:40"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A person jumps tangentially from the rim of a freely rotating platform, in its direction of rotation. The person and platform initially rotate together. Given the data in the figure, find the platform's angular speed just after the jump. Neglect external torque.",
+ "options": [
+  "$2.5\\ \\text{rad s}^{-1}$",
+  "$1.0\\ \\text{rad s}^{-1}$",
+  "$3.0\\ \\text{rad s}^{-1}$",
+  "$4.5\\ \\text{rad s}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q009_stem_v0.png",
+  "width_pct": 55,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Initial angular momentum: (I + mR²)ω₀ = (4 + 2×1²)×3 = 18 kg·m²/s. After the jump, the person carries  mRv = 2×1×4 = 8 kg·m²/s, so 4ω = 18 − 8 and ω = 2.5 rad/s.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$L_i=(I+mR^2)\\omega_0=(4+2\\times1^2)\\times3=18$; $L_f=I\\omega+mRv=4\\omega+2\\times1\\times4$; $18=4\\omega+8\\Rightarrow\\omega=2.5\\ \\text{rad s}^{-1}$.\n\nIndependent check: Initial angular momentum: (I + mR²)ω₀ = (4 + 2×1²)×3 = 18 kg·m²/s. After the jump, the person carries  mRv = 2×1×4 = 8 kg·m²/s, so 4ω = 18 − 8 and ω = 2.5 rad/s.",
+ "solution": "Conservation of angular momentum gives\n$$ (I+mR^2)\\omega_0=I\\omega+mRv $$\nSubstituting the given values, $18=4\\omega+8$, hence $\\omega=2.5\\ \\text{rad s}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A person jumps tangentially from the rim of a freely rotating platform, in its direction of rotation. The person and platform initially rotate together. Given the data in the figure, find the platform's angular speed just after the jump. Neglect external torque.",
+  "options": [
+   "$1.0\\ \\text{rad s}^{-1}$",
+   "$2.5\\ \\text{rad s}^{-1}$",
+   "$3.0\\ \\text{rad s}^{-1}$",
+   "$4.5\\ \\text{rad s}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a top view of a circular platform centered at O. Place a person of mass $2\\ \\text{kg}$ at the rightmost point of its rim. Draw a radius from O to the person labeled $R=1\\ \\text{m}$. Label the platform's moment of inertia as $I=4\\ \\text{kg m}^2$. Draw a clockwise curved arrow around O labeled $\\omega_0=3\\ \\text{rad s}^{-1}$. At the person's position, draw a downward tangential arrow labeled $v=4\\ \\text{m s}^{-1}$ and indicate that this is the person's velocity just after jumping, in the clockwise direction.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$L_i=(I+mR^2)\\omega_0=(4+2\\times1^2)\\times3=18$; $L_f=I\\omega+mRv=4\\omega+2\\times1\\times4$; $18=4\\omega+8\\Rightarrow\\omega=2.5\\ \\text{rad s}^{-1}$.",
+  "distractor_notes": "A: omits the platform's initial angular momentum; C: neglects the person's angular momentum after the jump; D: neglects the person's angular momentum after the jump and divides by the platform inertia."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

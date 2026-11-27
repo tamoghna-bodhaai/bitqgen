@@ -1,0 +1,71 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Conditional identities",
+  "archetype": "sum-to-product",
+  "brief": "Use sum-to-product or conditional identity to evaluate a trig expression given a relation between angles (e.g., tan A + tan B given)",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:92",
+   "2024s2:130",
+   "2025s1:126"
+  ],
+  "origin": "variant",
+  "bank_ref": "g1e5edeb0c657"
+ },
+ "status": "ok",
+ "stem": "If $A+B=60^\\circ$ and $\\cos(A-B)=\\dfrac12$, then $\\sin 2A+\\sin 2B$ is equal to",
+ "options": [
+  "$\\dfrac12$",
+  "$\\dfrac32$",
+  "$\\sqrt3$",
+  "$\\dfrac{\\sqrt3}{2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(\\sin 2A+\\sin 2B=2\\sin(A+B)\\cos(A-B)\\), the value is \\(2\\sin60^\\circ\\cdot\\frac12=\\frac{\\sqrt3}{2}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sin 2A+\\sin 2B=2\\sin(A+B)\\cos(A-B)$\n$=2\\sin 60^\\circ\\cdot\\dfrac12=\\dfrac{\\sqrt3}{2}$\n\nIndependent check: Using \\(\\sin 2A+\\sin 2B=2\\sin(A+B)\\cos(A-B)\\), the value is \\(2\\sin60^\\circ\\cdot\\frac12=\\frac{\\sqrt3}{2}\\).",
+ "solution": "Using the sum-to-product identity,\n$$\\sin 2A+\\sin 2B=2\\sin(A+B)\\cos(A-B)$$\nSubstituting $A+B=60^\\circ$ and $\\cos(A-B)=\\frac12$ gives $2\\sin60^\\circ\\cdot\\frac12=\\frac{\\sqrt3}{2}$. The answer is (D).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $A+B=60^\\circ$ and $\\cos(A-B)=\\dfrac12$, then $\\sin 2A+\\sin 2B$ is equal to",
+  "options": [
+   "$\\dfrac12$",
+   "$\\dfrac{\\sqrt3}{2}$",
+   "$\\sqrt3$",
+   "$\\dfrac32$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\sin 2A+\\sin 2B=2\\sin(A+B)\\cos(A-B)$\n$=2\\sin 60^\\circ\\cdot\\dfrac12=\\dfrac{\\sqrt3}{2}$",
+  "distractor_notes": "A: Omits the factor $2$ in the sum-to-product identity.\nC: Uses $\\sin 60^\\circ$ but forgets the factor $\\cos(A-B)=\\dfrac12$.\nD: Treats $\\sin 60^\\circ$ as $\\dfrac{\\sqrt3}{2}$ but doubles without applying the cosine factor."
+ },
+ "variant_of": "g1e5edeb0c657",
+ "author_model": "openai/gpt-6-luna-pro"
+}

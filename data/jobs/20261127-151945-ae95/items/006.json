@@ -1,0 +1,79 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Wheatstone bridge",
+  "archetype": "circuit analysis",
+  "brief": "A bridge with four resistors; identify the condition for balance and find the unknown resistance for zero galvanometer deflection.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:26",
+   "2025s2:12",
+   "2023s1:16"
+  ],
+  "origin": "variant",
+  "bank_ref": "gaf99ea01e33f"
+ },
+ "status": "ok",
+ "stem": "In the bridge shown, the galvanometer gives zero deflection. What is the value of the unknown resistance $R$?",
+ "options": [
+  "$20\\ \\Omega$",
+  "$11.25\\ \\Omega$",
+  "$7.2\\ \\Omega$",
+  "$30\\ \\Omega$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q006_stem_v0.png",
+  "width_pct": 60,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At balance, the potential drops from A to C and A to D are equal: 9/(9+15) = 12/(12+R). Solving gives R = 20 Ω.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At balance: $\\dfrac{R_{AC}}{R_{CB}}=\\dfrac{R_{AD}}{R_{DB}}$.\n$\\dfrac{9}{15}=\\dfrac{12}{R}$\n$R=\\dfrac{15\\times12}{9}=20\\ \\Omega$\n\nIndependent check: At balance, the potential drops from A to C and A to D are equal: 9/(9+15) = 12/(12+R). Solving gives R = 20 Ω.",
+ "solution": "At balance, the bridge ratio is $\\dfrac{R_{AC}}{R_{CB}}=\\dfrac{R_{AD}}{R_{DB}}$.\n$$\\dfrac{9}{15}=\\dfrac{12}{R}\\quad\\Rightarrow\\quad R=\\dfrac{15\\times12}{9}=20\\ \\Omega$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the bridge shown, the galvanometer gives zero deflection. What is the value of the unknown resistance $R$?",
+  "options": [
+   "$7.2\\ \\Omega$",
+   "$11.25\\ \\Omega$",
+   "$20\\ \\Omega$",
+   "$30\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a Wheatstone bridge as a diamond with top node A, bottom node B, left midpoint C and right midpoint D. Connect a cell between A and B. Connect a 9 Ω resistor between A and C, a 15 Ω resistor between C and B, a 12 Ω resistor between A and D, and an unknown resistor labelled R between D and B. Connect a galvanometer between C and D. Label all four nodes and all components; show no current direction arrows.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "At balance: $\\dfrac{R_{AC}}{R_{CB}}=\\dfrac{R_{AD}}{R_{DB}}$.\n$\\dfrac{9}{15}=\\dfrac{12}{R}$\n$R=\\dfrac{15\\times12}{9}=20\\ \\Omega$",
+  "distractor_notes": "A: Uses $R=9\\times12/15$, interchanging the ratio. B: Uses $R=9\\times15/12$, pairing the wrong arms. D: Incorrectly adds the two resistors on one side instead of applying the balance condition."
+ },
+ "variant_of": "gaf99ea01e33f",
+ "author_model": "openai/gpt-6-luna-pro"
+}

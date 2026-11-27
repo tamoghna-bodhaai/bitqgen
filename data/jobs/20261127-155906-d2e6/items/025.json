@@ -1,0 +1,70 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Kinetic energy and momentum relation",
+  "archetype": "ratio of two situations",
+  "brief": "Two bodies with given momentum or KE relationship (e.g. same momentum, different masses); use KE = p²/2m to compare their kinetic energies or momenta.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:4",
+   "2026s2:10",
+   "2022:3"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two bodies A and B have masses $m$ and $4m$ and equal momenta. What is the ratio of their kinetic energies, $K_A:K_B$?",
+ "options": [
+  "$1:4$",
+  "$2:1$",
+  "$4:1$",
+  "$5:1$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For equal momentum, K = p²/(2m). Thus K_A:K_B = 1/m:1/(4m) = 4:1.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$K=\\dfrac{p^2}{2m}$; at equal $p$, $K_A:K_B=(1/m):(1/4m)=4:1$.\n\nIndependent check: For equal momentum, K = p²/(2m). Thus K_A:K_B = 1/m:1/(4m) = 4:1.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two bodies A and B have masses $m$ and $4m$ and equal momenta. What is the ratio of their kinetic energies, $K_A:K_B$?",
+  "options": [
+   "$1:4$",
+   "$2:1$",
+   "$4:1$",
+   "$5:1$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$K=\\dfrac{p^2}{2m}$; at equal $p$, $K_A:K_B=(1/m):(1/4m)=4:1$.",
+  "distractor_notes": "A: reverses the inverse-mass relationship; B: takes the square root of the mass ratio; D: adds the masses instead of comparing inverse masses."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

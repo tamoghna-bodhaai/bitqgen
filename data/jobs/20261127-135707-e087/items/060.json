@@ -1,0 +1,68 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Kp and degree of dissociation",
+  "archetype": "ICE table",
+  "brief": "Gaseous equilibrium (e.g., PCl5 ⇌ PCl3 + Cl2 or AB2 type) starting from pure reactant at given total pressure; compute α from Kp with a quadratic — full ICE algebra.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:40",
+   "2024s2:58",
+   "2026s1:37"
+  ]
+ },
+ "status": "ok",
+ "stem": "Pure $\\text{PCl}_5(g)$ reaches equilibrium in $\\text{PCl}_5(g)\\rightleftharpoons\\text{PCl}_3(g)+\\text{Cl}_2(g)$. At equilibrium, the total pressure is $4.0\\ \\text{atm}$ and $K_p=0.90\\ \\text{atm}$, with pressures expressed in atm. What is the degree of dissociation, $\\alpha$?",
+ "options": [
+  "$\\dfrac{3}{7}$",
+  "$\\dfrac{3}{8}$",
+  "$\\dfrac{9}{49}$",
+  "$\\sqrt{\\dfrac{9}{40}}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For initial pure PCl₅, equilibrium mole fractions are (1−α)/(1+α) for PCl₅ and α/(1+α) for each product. Thus Kₚ = 4α²/(1−α²) = 0.90 atm, giving α² = 9/49 and α = 3/7.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For initial $1$ mol, equilibrium moles are $(1-\\alpha,\\alpha,\\alpha)$; $n_{\\text{tot}}=1+\\alpha$. $K_p=P\\dfrac{\\alpha^2}{1-\\alpha^2}$, so $\\dfrac{0.90}{4.0}=\\dfrac{9}{40}=\\dfrac{\\alpha^2}{1-\\alpha^2}$. Thus $49\\alpha^2=9$ and $\\alpha=\\dfrac{3}{7}$.\n\nIndependent check: For initial pure PCl₅, equilibrium mole fractions are (1−α)/(1+α) for PCl₅ and α/(1+α) for each product. Thus Kₚ = 4α²/(1−α²) = 0.90 atm, giving α² = 9/49 and α = 3/7.",
+ "solution": "For initial $1$ mol of $\\text{PCl}_5$, equilibrium moles are $(1-\\alpha,\\alpha,\\alpha)$, so $n_{\\text{tot}}=1+\\alpha$.\n$$K_p=P\\frac{\\alpha^2}{1-\\alpha^2},\\qquad \\frac{0.90}{4.0}=\\frac{9}{40}=\\frac{\\alpha^2}{1-\\alpha^2}$$\nThus $49\\alpha^2=9$, giving $\\alpha=\\dfrac{3}{7}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Pure $\\text{PCl}_5(g)$ reaches equilibrium in $\\text{PCl}_5(g)\\rightleftharpoons\\text{PCl}_3(g)+\\text{Cl}_2(g)$. At equilibrium, the total pressure is $4.0\\ \\text{atm}$ and $K_p=0.90\\ \\text{atm}$, with pressures expressed in atm. What is the degree of dissociation, $\\alpha$?",
+  "options": [
+   "$\\dfrac{9}{49}$",
+   "$\\dfrac{3}{8}$",
+   "$\\dfrac{3}{7}$",
+   "$\\sqrt{\\dfrac{9}{40}}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "For initial $1$ mol, equilibrium moles are $(1-\\alpha,\\alpha,\\alpha)$; $n_{\\text{tot}}=1+\\alpha$. $K_p=P\\dfrac{\\alpha^2}{1-\\alpha^2}$, so $\\dfrac{0.90}{4.0}=\\dfrac{9}{40}=\\dfrac{\\alpha^2}{1-\\alpha^2}$. Thus $49\\alpha^2=9$ and $\\alpha=\\dfrac{3}{7}$.",
+  "distractor_notes": "A uses a linear product-to-reactant ratio instead of squaring product partial pressures; B omits total-mole normalization; D omits the reactant partial-pressure factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

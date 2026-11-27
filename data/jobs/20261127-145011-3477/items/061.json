@@ -1,0 +1,70 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order integrated rate law",
+  "archetype": "equation-solving numeric",
+  "brief": "First-order kinetics: given initial amount and amount after a time (or half-life), find the rate constant or fraction remaining",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:32",
+   "2024s1:44",
+   "2021:71"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A first-order reaction reduces a reactant from $100$ mg to $25$ mg in $20$ min. Find its rate constant. Take $\\ln 2=0.693$.",
+ "options": [
+  "$0.0347$ min$^{-1}$",
+  "$0.1386$ min$^{-1}$",
+  "$0.0693$ min$^{-1}$",
+  "$0.693$ min$^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The amount decreases by a factor of 4, so 20 min is two half-lives. Thus k = ln 2 / 10 = 0.0693 min⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$k=\\dfrac{1}{t}\\ln\\dfrac{a_0}{a_t}$\n$=\\dfrac{1}{20}\\ln\\dfrac{100}{25}$\n$=\\dfrac{2\\ln 2}{20}=0.0693\\ \\text{min}^{-1}$\n\nIndependent check: The amount decreases by a factor of 4, so 20 min is two half-lives. Thus k = ln 2 / 10 = 0.0693 min⁻¹.",
+ "solution": "For a first-order reaction, $k=\\dfrac{1}{t}\\ln\\dfrac{a_0}{a_t}$.\n$$k=\\dfrac{1}{20}\\ln\\dfrac{100}{25}=\\dfrac{2\\ln 2}{20}=0.0693\\ \\text{min}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A first-order reaction reduces a reactant from $100$ mg to $25$ mg in $20$ min. Find its rate constant. Take $\\ln 2=0.693$.",
+  "options": [
+   "$0.0347$ min$^{-1}$",
+   "$0.0693$ min$^{-1}$",
+   "$0.1386$ min$^{-1}$",
+   "$0.693$ min$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$k=\\dfrac{1}{t}\\ln\\dfrac{a_0}{a_t}$\n$=\\dfrac{1}{20}\\ln\\dfrac{100}{25}$\n$=\\dfrac{2\\ln 2}{20}=0.0693\\ \\text{min}^{-1}$",
+  "distractor_notes": "A: Uses $\\ln 2$ instead of $\\ln 4$.\nC: Doubles the rate constant after correctly finding it.\nD: Omits division by the elapsed time."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

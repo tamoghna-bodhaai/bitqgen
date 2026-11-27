@@ -1,0 +1,70 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Bohr model energy levels",
+  "archetype": "ratio computation",
+  "brief": "For a hydrogen-like ion or a transition between two given levels, ask the ratio of energies/radii/velocities between two states using Bohr-model formulas.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:25",
+   "2023s1:20",
+   "2024s1:21"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Using the Bohr model, what is the ratio of the photon energy emitted in the $n=3\\to1$ transition of $\\text{He}^+$ to that emitted in the $n=2\\to1$ transition of $\\text{Li}^{2+}$?",
+ "options": [
+  "$\\dfrac{128}{243}$",
+  "$\\dfrac{243}{128}$",
+  "$\\dfrac{32}{27}$",
+  "$\\dfrac{16}{81}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a hydrogen-like ion, ΔE = 13.6 Z²(1/n_f² − 1/n_i²) eV. The ratio is [4(1 − 1/9)]/[9(1 − 1/4)] = 128/243.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta E=13.6Z^2\\left(\\dfrac{1}{n_f^2}-\\dfrac{1}{n_i^2}\\right)\\ \\text{eV}$; $\\dfrac{\\Delta E_{\\text{He}^+}}{\\Delta E_{\\text{Li}^{2+}}}=\\dfrac{4(1-1/9)}{9(1-1/4)}=\\dfrac{128}{243}$.\n\nIndependent check: For a hydrogen-like ion, ΔE = 13.6 Z²(1/n_f² − 1/n_i²) eV. The ratio is [4(1 − 1/9)]/[9(1 − 1/4)] = 128/243.",
+ "solution": "For a hydrogen-like ion, $[?]$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Using the Bohr model, what is the ratio of the photon energy emitted in the $n=3\\to1$ transition of $\\text{He}^+$ to that emitted in the $n=2\\to1$ transition of $\\text{Li}^{2+}$?",
+  "options": [
+   "$\\dfrac{128}{243}$",
+   "$\\dfrac{243}{128}$",
+   "$\\dfrac{32}{27}$",
+   "$\\dfrac{16}{81}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\Delta E=13.6Z^2\\left(\\dfrac{1}{n_f^2}-\\dfrac{1}{n_i^2}\\right)\\ \\text{eV}$; $\\dfrac{\\Delta E_{\\text{He}^+}}{\\Delta E_{\\text{Li}^{2+}}}=\\dfrac{4(1-1/9)}{9(1-1/4)}=\\dfrac{128}{243}$.",
+  "distractor_notes": "B: takes the reciprocal; C: omits the $Z^2$ factor; D: compares the upper-level energies instead of transition energies."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

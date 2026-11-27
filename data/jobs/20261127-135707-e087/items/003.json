@@ -1,0 +1,68 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Thermal stress",
+  "archetype": "multi-step numeric",
+  "brief": "A rod fixed between rigid walls is heated through a known ΔT; find compressive thermal stress using Y and α, possibly combined with a rise in temperature at which stress equals breaking stress.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:10",
+   "2024s2:28",
+   "2025s1:21"
+  ]
+ },
+ "status": "ok",
+ "stem": "A rod of cross-sectional area $2.0\\ \\text{cm}^2$ is stress-free at $20^\\circ\\text{C}$ and held between rigid walls. It is heated to $30^\\circ\\text{C}$. Given $Y=2.0\\times10^{11}\\ \\text{Pa}$, $\\alpha=1.2\\times10^{-5}\\ \\text{K}^{-1}$ and breaking load $24\\ \\text{kN}$, what further rise in temperature will just break it? Assume it remains elastic up to breaking.",
+ "options": [
+  "$30^\\circ\\text{C}$",
+  "$40^\\circ\\text{C}$",
+  "$50^\\circ\\text{C}$",
+  "$60^\\circ\\text{C}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Breaking stress = 24,000/(2.0×10⁻⁴) = 1.2×10⁸ Pa. The total rise from 20°C to breaking is σ/(Yα) = 50°C. Since it has already risen 10°C, the further rise is 40°C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=2.0\\times10^{-4}\\ \\text{m}^2$; $\\sigma_b=2.4\\times10^4/A=1.2\\times10^8\\ \\text{Pa}$; $\\Delta T_b=\\sigma_b/(Y\\alpha)=50\\ \\text{K}$; further rise $=50-10=40^\\circ\\text{C}$.\n\nIndependent check: Breaking stress = 24,000/(2.0×10⁻⁴) = 1.2×10⁸ Pa. The total rise from 20°C to breaking is σ/(Yα) = 50°C. Since it has already risen 10°C, the further rise is 40°C.",
+ "solution": "For a rod held between rigid walls, thermal stress is $\\sigma=Y\\alpha\\Delta T$. The breaking stress is $\\sigma_b=\\dfrac{24\\times10^3}{2.0\\times10^{-4}}=1.2\\times10^8\\,\\text{Pa}$.\n$$\\Delta T_b=\\frac{\\sigma_b}{Y\\alpha}=50\\,\\text{K}$$\nIt has already risen by $10^\\circ\\text{C}$, so the further rise is $50-10=40^\\circ\\text{C}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A rod of cross-sectional area $2.0\\ \\text{cm}^2$ is stress-free at $20^\\circ\\text{C}$ and held between rigid walls. It is heated to $30^\\circ\\text{C}$. Given $Y=2.0\\times10^{11}\\ \\text{Pa}$, $\\alpha=1.2\\times10^{-5}\\ \\text{K}^{-1}$ and breaking load $24\\ \\text{kN}$, what further rise in temperature will just break it? Assume it remains elastic up to breaking.",
+  "options": [
+   "$30^\\circ\\text{C}$",
+   "$40^\\circ\\text{C}$",
+   "$50^\\circ\\text{C}$",
+   "$60^\\circ\\text{C}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$A=2.0\\times10^{-4}\\ \\text{m}^2$; $\\sigma_b=2.4\\times10^4/A=1.2\\times10^8\\ \\text{Pa}$; $\\Delta T_b=\\sigma_b/(Y\\alpha)=50\\ \\text{K}$; further rise $=50-10=40^\\circ\\text{C}$.",
+  "distractor_notes": "A subtracts the existing rise twice; C reports the total rise to breaking, not the further rise; D adds the existing rise instead of subtracting it."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

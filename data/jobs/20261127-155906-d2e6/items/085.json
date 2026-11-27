@@ -1,0 +1,70 @@
+{
+ "qno": 85,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 85,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement",
+  "archetype": "para jumble (first sentence)",
+  "brief": "5-sentence paragraph on a general-interest topic (e.g., a historical event or scientific discovery) with logical pronoun/chronological chain; fix the first sentence and ask for the correct order of the rest.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:69",
+   "2021:94",
+   "2025s2:70"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Arrange P, Q, R and S to form a coherent five-sentence paragraph, with sentence 1 first.\n\n1. In 1854, physician John Snow began investigating a cholera outbreak in London's Soho district.\nP. He marked each reported death on a street map.\nQ. The resulting cluster centred on a public water pump in Broad Street.\nR. This pattern challenged the prevailing belief that cholera spread chiefly through foul air.\nS. Snow persuaded local officials to remove the pump handle, though the outbreak was already waning.",
+ "options": [
+  "PQRS",
+  "QPRS",
+  "PRQS",
+  "PSQR"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "P introduces the map, Q describes the cluster it revealed, R explains its significance, and S gives Snow’s response: PQRS.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "P introduces the map; Q describes what it revealed; R interprets that pattern; S gives Snow's subsequent action.\n\nIndependent check: P introduces the map, Q describes the cluster it revealed, R explains its significance, and S gives Snow’s response: PQRS.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Arrange P, Q, R and S to form a coherent five-sentence paragraph, with sentence 1 first.\n\n1. In 1854, physician John Snow began investigating a cholera outbreak in London's Soho district.\nP. He marked each reported death on a street map.\nQ. The resulting cluster centred on a public water pump in Broad Street.\nR. This pattern challenged the prevailing belief that cholera spread chiefly through foul air.\nS. Snow persuaded local officials to remove the pump handle, though the outbreak was already waning.",
+  "options": [
+   "PQRS",
+   "QPRS",
+   "PRQS",
+   "PSQR"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "P introduces the map; Q describes what it revealed; R interprets that pattern; S gives Snow's subsequent action.",
+  "distractor_notes": "B. Q refers to a cluster before the map that reveals it is introduced.\nC. R refers to a pattern before Q identifies it.\nD. S gives the action before the evidence and its significance."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

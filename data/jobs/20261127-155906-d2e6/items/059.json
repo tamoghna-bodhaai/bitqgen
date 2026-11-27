@@ -1,0 +1,70 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Crystal field theory – high/low spin",
+  "archetype": "electron configuration comparison",
+  "brief": "For a set of octahedral complexes with given ligands, determine high-spin vs low-spin configuration, CFSE, and unpaired electrons; compare magnetic moments and identify the most/least paramagnetic.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:48",
+   "2026s1:51",
+   "2021:78"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For octahedral complexes I, $[\\text{Fe(CN)}_6]^{4-}$; II, $[\\text{FeF}_6]^{3-}$; and III, $[\\text{CoF}_6]^{3-}$, which option gives, in order, the number of unpaired electrons, orbital CFSE (excluding pairing energy), and spin-only magnetic moment?",
+ "options": [
+  "I: $(0,-2.4\\Delta_o,0\\ \\text{BM})$; II: $(5,0,\\sqrt{35}\\ \\text{BM})$; III: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$",
+  "I: $(0,-2.4\\Delta_o,0\\ \\text{BM})$; II: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$; III: $(5,0,\\sqrt{35}\\ \\text{BM})$",
+  "I: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$; II: $(5,0,\\sqrt{35}\\ \\text{BM})$; III: $(0,-2.4\\Delta_o,0\\ \\text{BM})$",
+  "I: $(0,-2.4\\Delta_o,0\\ \\text{BM})$; II: $(1,-2.0\\Delta_o,\\sqrt{3}\\ \\text{BM})$; III: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I: Fe²⁺ is low-spin d⁶ (CN⁻), giving 0 unpaired, CFSE = −2.4Δₒ, and μ = 0. II: Fe³⁺ is high-spin d⁵ (F⁻), giving 5 unpaired, CFSE = 0, and μ = √35 BM. III: Co³⁺ is high-spin d⁶ (F⁻), giving 4 unpaired, CFSE = −0.4Δₒ, and μ = √24 BM.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I: Fe$^{2+}$ is $d^6$, CN$^-$ low spin: $t_{2g}^6$, $n=0$, CFSE $=-2.4\\Delta_o$.\\nII: Fe$^{3+}$ is $d^5$, F$^-$ high spin: $t_{2g}^3e_g^2$, $n=5$, CFSE $=0$.\\nIII: Co$^{3+}$ is $d^6$, F$^-$ high spin: $t_{2g}^4e_g^2$, $n=4$, CFSE $=-0.4\\Delta_o$.\\n$\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$.\n\nIndependent check: I: Fe²⁺ is low-spin d⁶ (CN⁻), giving 0 unpaired, CFSE = −2.4Δₒ, and μ = 0. II: Fe³⁺ is high-spin d⁵ (F⁻), giving 5 unpaired, CFSE = 0, and μ = √35 BM. III: Co³⁺ is high-spin d⁶ (F⁻), giving 4 unpaired, CFSE = −0.4Δₒ, and μ = √24 BM.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For octahedral complexes I, $[\\text{Fe(CN)}_6]^{4-}$; II, $[\\text{FeF}_6]^{3-}$; and III, $[\\text{CoF}_6]^{3-}$, which option gives, in order, the number of unpaired electrons, orbital CFSE (excluding pairing energy), and spin-only magnetic moment?",
+  "options": [
+   "I: $(0,-2.4\\Delta_o,0\\ \\text{BM})$; II: $(5,0,\\sqrt{35}\\ \\text{BM})$; III: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$",
+   "I: $(0,-2.4\\Delta_o,0\\ \\text{BM})$; II: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$; III: $(5,0,\\sqrt{35}\\ \\text{BM})$",
+   "I: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$; II: $(5,0,\\sqrt{35}\\ \\text{BM})$; III: $(0,-2.4\\Delta_o,0\\ \\text{BM})$",
+   "I: $(0,-2.4\\Delta_o,0\\ \\text{BM})$; II: $(1,-2.0\\Delta_o,\\sqrt{3}\\ \\text{BM})$; III: $(4,-0.4\\Delta_o,\\sqrt{24}\\ \\text{BM})$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "I: Fe$^{2+}$ is $d^6$, CN$^-$ low spin: $t_{2g}^6$, $n=0$, CFSE $=-2.4\\Delta_o$.\\nII: Fe$^{3+}$ is $d^5$, F$^-$ high spin: $t_{2g}^3e_g^2$, $n=5$, CFSE $=0$.\\nIII: Co$^{3+}$ is $d^6$, F$^-$ high spin: $t_{2g}^4e_g^2$, $n=4$, CFSE $=-0.4\\Delta_o$.\\n$\\mu=\\sqrt{n(n+2)}\\ \\text{BM}$.",
+  "distractor_notes": "B: interchanges the high-spin data for II and III; C: interchanges the low-spin data for I and III; D: assigns low spin to the weak-field $d^5$ complex."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 99,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 99,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "venn-deduction",
+  "brief": "Two statements with all/some quantifiers; ask which conclusions definitely follow.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:82",
+   "2026s1:81",
+   "2022:83"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll poets are readers.\nSome readers are dancers.\n\n**Conclusions:**\nI. Some dancers are readers.\nII. Some poets are dancers.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Some readers are dancers, so some dancers are readers (I). No premise establishes that any poets are dancers (II).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The readers who are dancers are also dancers who are readers; hence I follows. They need not be poets, so II does not definitely follow.\n\nIndependent check: Some readers are dancers, so some dancers are readers (I). No premise establishes that any poets are dancers (II).",
+ "solution": "Some readers are dancers; hence, some dancers are readers, so conclusion I follows. The statements do not establish that any poets are dancers, so conclusion II does not follow.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "**Statements:**\nAll poets are readers.\nSome readers are dancers.\n\n**Conclusions:**\nI. Some dancers are readers.\nII. Some poets are dancers.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "The readers who are dancers are also dancers who are readers; hence I follows. They need not be poets, so II does not definitely follow.",
+  "distractor_notes": "B: Assumes the readers who dance must be poets. C: II need not follow. D: Overlooks that I follows."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Potential inside a uniform sphere",
+  "archetype": "single-formula symbolic",
+  "brief": "Point inside or on the surface of a uniform solid sphere; compare gravitational potential/field at centre vs surface and at an interior radius, and select the correct ranking or value (harder conceptual twist).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:28",
+   "2021:28",
+   "2026s2:1"
+  ]
+ },
+ "status": "ok",
+ "stem": "For a uniform solid sphere of mass $M$ and radius $R$, let $V_c,V_m,V_s$ be the gravitational potentials at $r=0,R/2,R$, respectively, and let $g_c,g_m,g_s$ be the corresponding field magnitudes. Which combined ordering is correct?",
+ "options": [
+  "$V_c<V_m<V_s<0$ and $g_c>g_m>g_s$",
+  "$V_s<V_m<V_c<0$ and $g_c<g_m<g_s$",
+  "$V_c<V_m<V_s<0$ and $g_c<g_m<g_s$",
+  "$|V_c|<|V_m|<|V_s|$ and $g_c<g_m<g_s$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Inside a uniform solid sphere, V(r) = -GM(3R²-r²)/(2R³) and g(r) = GMr/R³. Thus Vc = -3GM/(2R), Vm = -11GM/(8R), Vs = -GM/R, while gc = 0, gm = GM/(2R²), gs = GM/R². Both orderings match (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Inside, $V(r)=-\\dfrac{GM}{2R^3}(3R^2-r^2)$ and $g(r)=\\dfrac{GMr}{R^3}$; $V_c=-\\dfrac{3GM}{2R},\\ V_m=-\\dfrac{11GM}{8R},\\ V_s=-\\dfrac{GM}{R}$; $g_c=0,\\ g_m=\\dfrac{GM}{2R^2},\\ g_s=\\dfrac{GM}{R^2}$.\n\nIndependent check: Inside a uniform solid sphere, V(r) = -GM(3R²-r²)/(2R³) and g(r) = GMr/R³. Thus Vc = -3GM/(2R), Vm = -11GM/(8R), Vs = -GM/R, while gc = 0, gm = GM/(2R²), gs = GM/R². Both orderings match (A).",
+ "solution": "Inside a uniform solid sphere, $V(r)=-\\dfrac{GM}{2R^3}(3R^2-r^2)$ and $g(r)=\\dfrac{GMr}{R^3}$.\n$$V_c=-\\frac{3GM}{2R},\\quad V_m=-\\frac{11GM}{8R},\\quad V_s=-\\frac{GM}{R};\\qquad g_c=0,\\quad g_m=\\frac{GM}{2R^2},\\quad g_s=\\frac{GM}{R^2}$$\nHence, $V_c<V_m<V_s<0$ and $g_c<g_m<g_s$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For a uniform solid sphere of mass $M$ and radius $R$, let $V_c,V_m,V_s$ be the gravitational potentials at $r=0,R/2,R$, respectively, and let $g_c,g_m,g_s$ be the corresponding field magnitudes. Which combined ordering is correct?",
+  "options": [
+   "$V_c<V_m<V_s<0$ and $g_c<g_m<g_s$",
+   "$V_s<V_m<V_c<0$ and $g_c<g_m<g_s$",
+   "$V_c<V_m<V_s<0$ and $g_c>g_m>g_s$",
+   "$|V_c|<|V_m|<|V_s|$ and $g_c<g_m<g_s$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Inside, $V(r)=-\\dfrac{GM}{2R^3}(3R^2-r^2)$ and $g(r)=\\dfrac{GMr}{R^3}$; $V_c=-\\dfrac{3GM}{2R},\\ V_m=-\\dfrac{11GM}{8R},\\ V_s=-\\dfrac{GM}{R}$; $g_c=0,\\ g_m=\\dfrac{GM}{2R^2},\\ g_s=\\dfrac{GM}{R^2}$.",
+  "distractor_notes": "B orders the negative potentials by magnitude rather than algebraically; C incorrectly reverses the field’s increase toward the surface; D reverses the ordering of potential magnitudes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

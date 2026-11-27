@@ -1,0 +1,70 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Shortest distance between skew lines",
+  "archetype": "formula application",
+  "brief": "Two lines given in Cartesian form; test skewness and find the shortest distance between them using the standard formula.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:126",
+   "2024s2:128",
+   "2023s2:122"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the lines $\\dfrac{x}{1}=\\dfrac{y}{1}=\\dfrac{z}{1}$ and $\\dfrac{x-1}{1}=\\dfrac{y}{-1}=\\dfrac{z}{1}$, which is the correct relation and shortest distance?",
+ "options": [
+  "Skew; $\\dfrac{1}{\\sqrt{2}}$",
+  "Skew; $\\sqrt{2}$",
+  "Intersecting; $0$",
+  "Skew; $1$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Direction vectors are (1,1,1) and (1,-1,1); they are nonparallel. The lines do not intersect, so they are skew. Their cross product is (2,0,-2), and the shortest distance is |(1,0,0)·(2,0,-2)|/√8 = 1/√2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Direction vectors are $\\vec u=(1,1,1)$ and $\\vec v=(1,-1,1)$; $\\vec u\\times\\vec v=(2,0,-2)$. With the displacement $(1,0,0)$, the scalar triple product is $2\\ne0$, so the lines are skew. Their distance is $\\dfrac{2}{\\sqrt{8}}=\\dfrac{1}{\\sqrt{2}}$.\n\nIndependent check: Direction vectors are (1,1,1) and (1,-1,1); they are nonparallel. The lines do not intersect, so they are skew. Their cross product is (2,0,-2), and the shortest distance is |(1,0,0)·(2,0,-2)|/√8 = 1/√2.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the lines $\\dfrac{x}{1}=\\dfrac{y}{1}=\\dfrac{z}{1}$ and $\\dfrac{x-1}{1}=\\dfrac{y}{-1}=\\dfrac{z}{1}$, which is the correct relation and shortest distance?",
+  "options": [
+   "Skew; $\\dfrac{1}{\\sqrt{2}}$",
+   "Skew; $\\sqrt{2}$",
+   "Intersecting; $0$",
+   "Skew; $1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Direction vectors are $\\vec u=(1,1,1)$ and $\\vec v=(1,-1,1)$; $\\vec u\\times\\vec v=(2,0,-2)$. With the displacement $(1,0,0)$, the scalar triple product is $2\\ne0$, so the lines are skew. Their distance is $\\dfrac{2}{\\sqrt{8}}=\\dfrac{1}{\\sqrt{2}}$.",
+  "distractor_notes": "B: takes the reciprocal of the distance; C: assumes intersection without checking coplanarity; D: uses an incorrect magnitude for the cross product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

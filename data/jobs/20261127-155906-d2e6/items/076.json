@@ -1,0 +1,70 @@
+{
+ "qno": 76,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 76,
+  "section": "Chemistry",
+  "chapter": "s-Block Elements",
+  "subtopic": "Calcium compounds",
+  "archetype": "reaction cycle",
+  "brief": "Flow/sequence: start with a calcium compound, follow thermal decomposition and water reaction steps; identify the intermediates and final product in the lime–water cycle.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:35",
+   "2025s2:46",
+   "2024s1:38"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "On heating $\\text{CaCO}_3$, it forms $X+Y$; $X$ reacts with water to give $Z$, and limited $\\text{CO}_2$ converts $Z$ to $W$. Identify $X,Y,Z,W$.",
+ "options": [
+  "$X=\\text{CaO},\\ Y=\\text{CO},\\ Z=\\text{Ca(OH)}_2,\\ W=\\text{CaCO}_3$",
+  "$X=\\text{CaO},\\ Y=\\text{CO}_2,\\ Z=\\text{Ca(OH)}_2,\\ W=\\text{CaCO}_3$",
+  "$X=\\text{CaO},\\ Y=\\text{CO}_2,\\ Z=\\text{Ca(OH)}_2,\\ W=\\text{Ca(HCO}_3)_2$",
+  "$X=\\text{Ca(OH)}_2,\\ Y=\\text{CO}_2,\\ Z=\\text{CaO},\\ W=\\text{CaCO}_3$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "CaCO₃ → CaO + CO₂; CaO + H₂O → Ca(OH)₂. Limited CO₂ converts Ca(OH)₂ to CaCO₃, so option B.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{CaCO}_3 \\xrightarrow{\\text{heat}} \\text{CaO}+\\text{CO}_2$; hence $X=\\text{CaO},\\ Y=\\text{CO}_2$.\\n$\\text{CaO}+\\text{H}_2\\text{O}\\to\\text{Ca(OH)}_2$; $\\text{Ca(OH)}_2+\\text{CO}_2\\to\\text{CaCO}_3+\\text{H}_2\\text{O}$.\n\nIndependent check: CaCO₃ → CaO + CO₂; CaO + H₂O → Ca(OH)₂. Limited CO₂ converts Ca(OH)₂ to CaCO₃, so option B.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "On heating $\\text{CaCO}_3$, it forms $X+Y$; $X$ reacts with water to give $Z$, and limited $\\text{CO}_2$ converts $Z$ to $W$. Identify $X,Y,Z,W$.",
+  "options": [
+   "$X=\\text{CaO},\\ Y=\\text{CO},\\ Z=\\text{Ca(OH)}_2,\\ W=\\text{CaCO}_3$",
+   "$X=\\text{CaO},\\ Y=\\text{CO}_2,\\ Z=\\text{Ca(OH)}_2,\\ W=\\text{CaCO}_3$",
+   "$X=\\text{CaO},\\ Y=\\text{CO}_2,\\ Z=\\text{Ca(OH)}_2,\\ W=\\text{Ca(HCO}_3)_2$",
+   "$X=\\text{Ca(OH)}_2,\\ Y=\\text{CO}_2,\\ Z=\\text{CaO},\\ W=\\text{CaCO}_3$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{CaCO}_3 \\xrightarrow{\\text{heat}} \\text{CaO}+\\text{CO}_2$; hence $X=\\text{CaO},\\ Y=\\text{CO}_2$.\\n$\\text{CaO}+\\text{H}_2\\text{O}\\to\\text{Ca(OH)}_2$; $\\text{Ca(OH)}_2+\\text{CO}_2\\to\\text{CaCO}_3+\\text{H}_2\\text{O}$.",
+  "distractor_notes": "A: gives CO instead of CO₂ on heating.\\nC: forms bicarbonate, which requires excess CO₂.\\nD: reverses the oxide and hydroxide steps."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

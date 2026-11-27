@@ -1,0 +1,68 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Magnetism and Matter",
+  "subtopic": "Magnetic susceptibility",
+  "archetype": "conceptual",
+  "brief": "Compare the sign and magnitude of susceptibility and relative permeability for diamagnetic, paramagnetic and ferromagnetic materials; select the correct statement about their field-line behaviour.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:17",
+   "2021:3",
+   "2022:12"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which statement correctly compares the magnetic susceptibilities and relative permeabilities of diamagnetic, paramagnetic and ferromagnetic materials, and their effect on magnetic field lines?",
+ "options": [
+  "Diamagnets have small negative susceptibility and relative permeability below $1$; they weakly expel field lines, while paramagnets and ferromagnets attract them, the latter more strongly.",
+  "Diamagnets have small positive susceptibility and relative permeability above $1$; they attract field lines, while paramagnets have negative susceptibility.",
+  "Paramagnets have large negative susceptibility and relative permeability below $1$; ferromagnets have small positive susceptibility and relative permeability just above $1$.",
+  "All three have positive susceptibility and relative permeability above $1$; they attract field lines to the same extent."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Diamagnets have small negative susceptibility and μᵣ<1; paramagnets have small positive susceptibility, while ferromagnets have large positive susceptibility and attract field lines more strongly.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mu_r=1+\\chi_m$. Diamagnets: $\\chi_m<0$ (small), $\\mu_r<1$; paramagnets: $\\chi_m>0$ (small), $\\mu_r>1$; ferromagnets: $\\chi_m\\gg0$, $\\mu_r\\gg1$. Field lines are weakly expelled by diamagnets and concentrated by paramagnets and more strongly by ferromagnets.\n\nIndependent check: Diamagnets have small negative susceptibility and μᵣ<1; paramagnets have small positive susceptibility, while ferromagnets have large positive susceptibility and attract field lines more strongly.",
+ "solution": "The relation is $",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which statement correctly compares the magnetic susceptibilities and relative permeabilities of diamagnetic, paramagnetic and ferromagnetic materials, and their effect on magnetic field lines?",
+  "options": [
+   "Diamagnets have small negative susceptibility and relative permeability below $1$; they weakly expel field lines, while paramagnets and ferromagnets attract them, the latter more strongly.",
+   "Diamagnets have small positive susceptibility and relative permeability above $1$; they attract field lines, while paramagnets have negative susceptibility.",
+   "Paramagnets have large negative susceptibility and relative permeability below $1$; ferromagnets have small positive susceptibility and relative permeability just above $1$.",
+   "All three have positive susceptibility and relative permeability above $1$; they attract field lines to the same extent."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\mu_r=1+\\chi_m$. Diamagnets: $\\chi_m<0$ (small), $\\mu_r<1$; paramagnets: $\\chi_m>0$ (small), $\\mu_r>1$; ferromagnets: $\\chi_m\\gg0$, $\\mu_r\\gg1$. Field lines are weakly expelled by diamagnets and concentrated by paramagnets and more strongly by ferromagnets.",
+  "distractor_notes": "B: reverses the diamagnetic signs and field response; C: assigns the wrong signs and relative magnitudes; D: ignores diamagnetism and the stronger ferromagnetic response."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

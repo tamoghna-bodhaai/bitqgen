@@ -1,0 +1,68 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Pair of straight lines",
+  "archetype": "two-equation solve",
+  "brief": "For a pair of lines through origin given by a homogeneous second-degree equation, find the angle between them.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:110",
+   "2025s2:115",
+   "2026s2:104"
+  ]
+ },
+ "status": "ok",
+ "stem": "The pair of lines through the origin represented by $x^2-4xy+y^2=0$ makes an angle of",
+ "options": [
+  "$30^\\circ$",
+  "$60^\\circ$",
+  "$45^\\circ$",
+  "$90^\\circ$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set y=mx: m²−4m+1=0, so the slopes are 2±√3. Then tan θ=|(m₁−m₂)/(1+m₁m₂)|=√3, giving θ=60°.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=1,\\ H=-2,\\ B=1$. $\\tan\\theta=\\dfrac{2\\sqrt{H^2-AB}}{|A+B|}=\\dfrac{2\\sqrt{3}}{2}=\\sqrt{3}$. Hence $\\theta=60^\\circ$.\n\nIndependent check: Set y=mx: m²−4m+1=0, so the slopes are 2±√3. Then tan θ=|(m₁−m₂)/(1+m₁m₂)|=√3, giving θ=60°.",
+ "solution": "For $Ax^2+2Hxy+By^2=0$, the angle between the lines satisfies\n$$\\tan\\theta=\\frac{2\\sqrt{H^2-AB}}{|A+B|}=\\frac{2\\sqrt{(-2)^2-1}}{|1+1|}=\\sqrt{3}.$$\nHence, $\\theta=60^\\circ$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The pair of lines through the origin represented by $x^2-4xy+y^2=0$ makes an angle of",
+  "options": [
+   "$30^\\circ$",
+   "$45^\\circ$",
+   "$60^\\circ$",
+   "$90^\\circ$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$A=1,\\ H=-2,\\ B=1$. $\\tan\\theta=\\dfrac{2\\sqrt{H^2-AB}}{|A+B|}=\\dfrac{2\\sqrt{3}}{2}=\\sqrt{3}$. Hence $\\theta=60^\\circ$.",
+  "distractor_notes": "A: takes the reciprocal of the tangent of the angle. B: misapplies the angle formula to the middle coefficient. D: mistakes the pair for perpendicular lines."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

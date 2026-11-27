@@ -1,0 +1,68 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Zener diode as voltage regulator",
+  "archetype": "circuit analysis",
+  "brief": "Zener diode regulator circuit with source, series resistance and load; find current through Zener and load, and power dissipated when input voltage varies (high difficulty numerical).",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:6",
+   "2025s2:23",
+   "2022:7"
+  ]
+ },
+ "status": "ok",
+ "stem": "An ideal $12$ V Zener regulator has a $180\\ \\Omega$ series resistor. The input varies from $18$ V to $24$ V, and the load varies from $720\\ \\Omega$ to $1440\\ \\Omega$. The Zener operates from $5\\ \\text{mA}$ to $60\\ \\text{mA}$ and is rated at $0.75\\ \\text{W}$. Which choice gives $(I_Z,I_L,P_Z)$ at maximum Zener dissipation and correctly states whether the regulator stays within its limits over the full range?",
+ "options": [
+  "$58.3\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.70\\ \\text{W}$; within limits over the full range",
+  "$66.7\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.80\\ \\text{W}$; outside limits",
+  "$58.3\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.70\\ \\text{W}$; outside limits",
+  "$50.0\\ \\text{mA},\\ 16.7\\ \\text{mA},\\ 0.60\\ \\text{W}$; within limits"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At 24 V and 1440 Ω, the series current is (24−12)/180 = 66.7 mA and the load current is 12/1440 = 8.33 mA, so IZ = 58.3 mA and PZ = 0.70 W. Across the full range, IZ is smallest at 18 V and 720 Ω: 33.3−16.7 = 16.7 mA. Thus IZ stays within 5–60 mA, and the maximum Zener power is below 0.75 W.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I_{L,\\max}=12/720=16.7\\ \\text{mA}$; $I_{Z,\\min}=(18-12)/180-16.7=16.7\\ \\text{mA}>5\\ \\text{mA}$. At maximum dissipation, $V_{in}=24\\ \\text{V}$ and $R_L=1440\\ \\Omega$: $I_L=8.33\\ \\text{mA}$, $I_Z=66.67-8.33=58.3\\ \\text{mA}$. $P_Z=12(0.0583)=0.70\\ \\text{W}<0.75\\ \\text{W}$; $I_Z<60\\ \\text{mA}$.\n\nIndependent check: At 24 V and 1440 Ω, the series current is (24−12)/180 = 66.7 mA and the load current is 12/1440 = 8.33 mA, so IZ = 58.3 mA and PZ = 0.70 W. Across the full range, IZ is smallest at 18 V and 720 Ω: 33.3−16.7 = 16.7 mA. Thus IZ stays within 5–60 mA, and the maximum Zener power is below 0.75 W.",
+ "solution": "The maximum Zener current occurs at maximum input voltage and maximum load resistance:\n$$I_Z=\\frac{24-12}{180}-\\frac{12}{1440}=58.3\\ \\text{mA},\\qquad I_L=8.33\\ \\text{mA}.$$\nThus $P_Z=12(0.0583)=0.70\\ \\text{W}$. At the opposite extreme, $I_{Z,\\min}=\\frac{18-12}{180}-\\frac{12}{720}=16.7\\ \\text{mA}$, so current and power remain within their limits over the full range.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "An ideal $12$ V Zener regulator has a $180\\ \\Omega$ series resistor. The input varies from $18$ V to $24$ V, and the load varies from $720\\ \\Omega$ to $1440\\ \\Omega$. The Zener operates from $5\\ \\text{mA}$ to $60\\ \\text{mA}$ and is rated at $0.75\\ \\text{W}$. Which choice gives $(I_Z,I_L,P_Z)$ at maximum Zener dissipation and correctly states whether the regulator stays within its limits over the full range?",
+  "options": [
+   "$66.7\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.80\\ \\text{W}$; outside limits",
+   "$58.3\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.70\\ \\text{W}$; within limits over the full range",
+   "$58.3\\ \\text{mA},\\ 8.33\\ \\text{mA},\\ 0.70\\ \\text{W}$; outside limits",
+   "$50.0\\ \\text{mA},\\ 16.7\\ \\text{mA},\\ 0.60\\ \\text{W}$; within limits"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$I_{L,\\max}=12/720=16.7\\ \\text{mA}$; $I_{Z,\\min}=(18-12)/180-16.7=16.7\\ \\text{mA}>5\\ \\text{mA}$. At maximum dissipation, $V_{in}=24\\ \\text{V}$ and $R_L=1440\\ \\Omega$: $I_L=8.33\\ \\text{mA}$, $I_Z=66.67-8.33=58.3\\ \\text{mA}$. $P_Z=12(0.0583)=0.70\\ \\text{W}<0.75\\ \\text{W}$; $I_Z<60\\ \\text{mA}$.",
+  "distractor_notes": "A: treats the full series current as Zener current; C: incorrectly declares the correct maximum-power point outside limits; D: uses the smallest load resistance instead of the largest for maximum Zener dissipation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

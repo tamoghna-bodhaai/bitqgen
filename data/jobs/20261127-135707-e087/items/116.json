@@ -1,0 +1,68 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Algebra of complex numbers",
+  "archetype": "1/z = z̄/|z|²",
+  "brief": "Compute real/imaginary parts of an expression of the form z + 1/z using conjugate and modulus relations.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:118",
+   "2026s2:95",
+   "2024s2:117"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $z$ satisfy $|z|^2=13$, $z+\\bar z=6$ and $\\operatorname{Im}z<0$. Find the real and imaginary parts of $z+\\dfrac{1}{z}$.",
+ "options": [
+  "$\\left(\\dfrac{42}{13},\\dfrac{24}{13}\\right)$",
+  "$\\left(\\dfrac{42}{13},-\\dfrac{24}{13}\\right)$",
+  "$(3,-2)$",
+  "$\\left(\\dfrac{42}{13},-\\dfrac{28}{13}\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Write z=x+iy. From z+\\bar z=6, x=3; from |z|^2=13, y^2=4, and Im z<0 gives y=-2. Thus z=3-2i and 1/z=(3+2i)/13, so z+1/z=(42/13)-(24/13)i.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\operatorname{Re}z=3$, $|z|^2=13$, $\\operatorname{Im}z<0\\Rightarrow z=3-2i$; $\\dfrac1z=\\dfrac{\\bar z}{|z|^2}=\\dfrac{3+2i}{13}$; $z+\\dfrac1z=\\dfrac{42}{13}-\\dfrac{24}{13}i$.\n\nIndependent check: Write z=x+iy. From z+\\bar z=6, x=3; from |z|^2=13, y^2=4, and Im z<0 gives y=-2. Thus z=3-2i and 1/z=(3+2i)/13, so z+1/z=(42/13)-(24/13)i.",
+ "solution": "From $z+\\bar z=6$, $\\operatorname{Re}z=3$. Since $|z|^2=13$ and $\\operatorname{Im}z<0$, $z=3-2i$.\n$$\\frac1z=\\frac{\\bar z}{|z|^2}=\\frac{3+2i}{13},\\qquad z+\\frac1z=\\frac{42}{13}-\\frac{24}{13}i$$\nHence the real and imaginary parts are $\\left(\\frac{42}{13},-\\frac{24}{13}\\right)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $z$ satisfy $|z|^2=13$, $z+\\bar z=6$ and $\\operatorname{Im}z<0$. Find the real and imaginary parts of $z+\\dfrac{1}{z}$.",
+  "options": [
+   "$\\left(\\dfrac{42}{13},\\dfrac{24}{13}\\right)$",
+   "$(3,-2)$",
+   "$\\left(\\dfrac{42}{13},-\\dfrac{24}{13}\\right)$",
+   "$\\left(\\dfrac{42}{13},-\\dfrac{28}{13}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\operatorname{Re}z=3$, $|z|^2=13$, $\\operatorname{Im}z<0\\Rightarrow z=3-2i$; $\\dfrac1z=\\dfrac{\\bar z}{|z|^2}=\\dfrac{3+2i}{13}$; $z+\\dfrac1z=\\dfrac{42}{13}-\\dfrac{24}{13}i$.",
+  "distractor_notes": "A: sign error in the imaginary part; B: omits $1/z$; D: uses $z/|z|^2$ instead of $\\bar z/|z|^2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

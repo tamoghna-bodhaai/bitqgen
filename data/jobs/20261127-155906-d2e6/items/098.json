@@ -1,0 +1,70 @@
+{
+ "qno": 98,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 98,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "syllogism",
+  "brief": "Two straightforward all/some statements with four conclusion options; only one conclusion definitely follows — basic Venn deduction.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:72",
+   "2024s1:77",
+   "2026s1:81"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll painters are artists.\nSome artists are sculptors.\n\n**Conclusions:**\nI. Some painters are sculptors.\nII. Some artists are sculptors.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "II is stated directly as a premise, so it follows. The premises do not establish that any painter is a sculptor, so I does not follow.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I does not follow: the artists who are sculptors need not be painters.\nII repeats the second statement, so it follows.\n\nIndependent check: II is stated directly as a premise, so it follows. The premises do not establish that any painter is a sculptor, so I does not follow.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "**Statements:**\nAll painters are artists.\nSome artists are sculptors.\n\n**Conclusions:**\nI. Some painters are sculptors.\nII. Some artists are sculptors.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "I does not follow: the artists who are sculptors need not be painters.\nII repeats the second statement, so it follows.",
+  "distractor_notes": "A: assumes the sculptor-artists must be painters. C: makes the same unsupported assumption as A. D: overlooks that II is explicitly stated."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,78 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "Single slit diffraction",
+  "archetype": "graph interpretation",
+  "brief": "Provide an intensity pattern diagram of single-slit diffraction with marked minima positions; ask for the slit width from the angular positions of the minima, or compare positions of secondary maxima with the central maximum.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:20",
+   "2026s2:6",
+   "2023s1:22"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Monochromatic light of wavelength $500$ nm produces the single-slit diffraction pattern shown. What is the slit width?",
+ "options": [
+  "$0.58\\ \\mu\\text{m}$",
+  "$0.87\\ \\mu\\text{m}$",
+  "$1.00\\ \\mu\\text{m}$",
+  "$2.00\\ \\mu\\text{m}$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q028_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the first minimum, a sin θ = λ. With θ = 30° and λ = 500 nm, a = 500 nm / sin 30° = 1000 nm = 1.00 μm.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For the first minimum, $a\\sin\\theta=\\lambda$; $a=\\dfrac{500\\ \\text{nm}}{\\sin30^\\circ}=1000\\ \\text{nm}=1.00\\ \\mu\\text{m}$.\n\nIndependent check: For the first minimum, a sin θ = λ. With θ = 30° and λ = 500 nm, a = 500 nm / sin 30° = 1000 nm = 1.00 μm.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Monochromatic light of wavelength $500$ nm produces the single-slit diffraction pattern shown. What is the slit width?",
+  "options": [
+   "$0.58\\ \\mu\\text{m}$",
+   "$0.87\\ \\mu\\text{m}$",
+   "$1.00\\ \\mu\\text{m}$",
+   "$2.00\\ \\mu\\text{m}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a schematic, symmetric single-slit diffraction intensity graph. The vertical axis is relative intensity $I/I_0$, with the central peak reaching $1$; the horizontal axis is diffraction angle $\\theta$, marked from $-90^\\circ$ to $+90^\\circ$ with $0^\\circ$ at the centre. Show the broad central maximum centred at $0^\\circ$, with its first minima at $-30^\\circ$ and $+30^\\circ$; label both points “first minimum.” Show smaller symmetric secondary lobes outside these minima, tapering to zero at the ends of the plotted range. Mark the horizontal and vertical axes and make the plot schematic, not to scale.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "For the first minimum, $a\\sin\\theta=\\lambda$; $a=\\dfrac{500\\ \\text{nm}}{\\sin30^\\circ}=1000\\ \\text{nm}=1.00\\ \\mu\\text{m}$.",
+  "distractor_notes": "A: uses the full central angular width, $60^\\circ$, as the angle from the axis.\\nB: uses $\\tan\\theta$ instead of $\\sin\\theta$.\\nD: introduces an extra factor of $2$ for the central width."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

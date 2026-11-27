@@ -1,0 +1,70 @@
+{
+ "qno": 68,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 68,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Williamson synthesis",
+  "archetype": "reagent selection",
+  "brief": "Which alkyl halide and alkoxide combination gives the best yield of a specified ether via Williamson synthesis (avoid 3° halides)?",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:32",
+   "2023s2:34",
+   "2026s1:59"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which reagent combination gives the best yield of tert-butyl methyl ether by Williamson synthesis?",
+ "options": [
+  "$(\\text{CH}_3)_3\\text{CONa}$ and $\\text{CH}_3\\text{I}$",
+  "$\\text{CH}_3\\text{ONa}$ and $(\\text{CH}_3)_3\\text{CBr}$",
+  "$(\\text{CH}_3)_3\\text{CONa}$ and $(\\text{CH}_3)_3\\text{CBr}$",
+  "$\\text{CH}_3\\text{ONa}$ and $\\text{CH}_3\\text{I}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Williamson ether synthesis proceeds by SN2, so use tert-butoxide with methyl iodide: attack at methyl forms tert-butyl methyl ether. Tertiary bromide in (B) or (C) favors elimination; (D) gives dimethyl ether.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Williamson synthesis proceeds by $\\mathrm{S_N2}$ attack of an alkoxide on an alkyl halide.\\nA methyl halide is least hindered: $(\\text{CH}_3)_3\\text{CO}^- + \\text{CH}_3\\text{I} \\longrightarrow (\\text{CH}_3)_3\\text{COCH}_3$.\n\nIndependent check: Williamson ether synthesis proceeds by SN2, so use tert-butoxide with methyl iodide: attack at methyl forms tert-butyl methyl ether. Tertiary bromide in (B) or (C) favors elimination; (D) gives dimethyl ether.",
+ "solution": "Williamson ether synthesis proceeds by an $\\mathrm{S_N2}$ reaction, so the alkyl halide should be least hindered.\n$$\n(\\mathrm{CH_3})_3\\mathrm{CO^-} + \\mathrm{CH_3I} \\longrightarrow (\\mathrm{CH_3})_3\\mathrm{COCH_3}\n$$\nMethyl iodide gives substitution readily, yielding tert-butyl methyl ether.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which reagent combination gives the best yield of tert-butyl methyl ether by Williamson synthesis?",
+  "options": [
+   "$(\\text{CH}_3)_3\\text{CONa}$ and $\\text{CH}_3\\text{I}$",
+   "$\\text{CH}_3\\text{ONa}$ and $(\\text{CH}_3)_3\\text{CBr}$",
+   "$(\\text{CH}_3)_3\\text{CONa}$ and $(\\text{CH}_3)_3\\text{CBr}$",
+   "$\\text{CH}_3\\text{ONa}$ and $\\text{CH}_3\\text{I}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Williamson synthesis proceeds by $\\mathrm{S_N2}$ attack of an alkoxide on an alkyl halide.\\nA methyl halide is least hindered: $(\\text{CH}_3)_3\\text{CO}^- + \\text{CH}_3\\text{I} \\longrightarrow (\\text{CH}_3)_3\\text{COCH}_3$.",
+  "distractor_notes": "B: tertiary halide favours elimination rather than $\\mathrm{S_N2}$.\\nC: both the alkoxide and halide are sterically hindered; elimination is favoured.\\nD: forms dimethyl ether, not the specified ether."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

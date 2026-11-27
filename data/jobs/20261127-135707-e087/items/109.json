@@ -1,0 +1,68 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus with conjugates",
+  "archetype": "computation",
+  "brief": "Given z satisfying a quadratic-like relation, compute |z| and argument from modulus–conjugate identity 1/z = z̄/|z|².",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:94",
+   "2025s1:125",
+   "2025s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "If $z+\\dfrac{1}{z}=\\dfrac{3+i}{2}$ and $\\operatorname{Im}z>0$, find $\\left(|z|,\\operatorname{Arg}z\\right)$, where $\\operatorname{Arg}z$ is principal.",
+ "options": [
+  "$\\left(\\sqrt{2},\\dfrac{\\pi}{4}\\right)$",
+  "$\\left(\\dfrac{1}{\\sqrt{2}},-\\dfrac{\\pi}{4}\\right)$",
+  "$\\left(\\sqrt{2},\\dfrac{3\\pi}{4}\\right)$",
+  "$(2,0)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The roots are obtained from the sum and product: they are 1+i and (1-i)/2. Since only 1+i has positive imaginary part, |z|=√2 and Arg z=π/4.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Write $z=x+iy$, $t=1/|z|^2>0$. Using $1/z=\\bar z/|z|^2$: $x(1+t)=\\dfrac32$, $y(1-t)=\\dfrac12$. Substituting $x=\\dfrac{3}{2(1+t)}$, $y=\\dfrac{1}{2(1-t)}$ into $x^2+y^2=1/t$ gives $(2t^2-5t+2)(t^2+1)=0$. Since $y>0$, $t=\\dfrac12$; hence $z=1+i$, so $|z|=\\sqrt2$ and $\\operatorname{Arg}z=\\dfrac{\\pi}{4}$.\n\nIndependent check: The roots are obtained from the sum and product: they are 1+i and (1-i)/2. Since only 1+i has positive imaginary part, |z|=√2 and Arg z=π/4.",
+ "solution": "From $z+\\dfrac1z=\\dfrac{3+i}{2}$, we get $z^2-\\dfrac{3+i}{2}z+1=0$, whose roots are $1+i$ and $\\dfrac{1-i}{2}$. Since $\\operatorname{Im}z>0$, $z=1+i$; hence $|z|=\\sqrt2$ and $\\operatorname{Arg}z=\\dfrac{\\pi}{4}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $z+\\dfrac{1}{z}=\\dfrac{3+i}{2}$ and $\\operatorname{Im}z>0$, find $\\left(|z|,\\operatorname{Arg}z\\right)$, where $\\operatorname{Arg}z$ is principal.",
+  "options": [
+   "$\\left(\\sqrt{2},\\dfrac{\\pi}{4}\\right)$",
+   "$\\left(\\dfrac{1}{\\sqrt{2}},-\\dfrac{\\pi}{4}\\right)$",
+   "$\\left(\\sqrt{2},\\dfrac{3\\pi}{4}\\right)$",
+   "$(2,0)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Write $z=x+iy$, $t=1/|z|^2>0$. Using $1/z=\\bar z/|z|^2$: $x(1+t)=\\dfrac32$, $y(1-t)=\\dfrac12$. Substituting $x=\\dfrac{3}{2(1+t)}$, $y=\\dfrac{1}{2(1-t)}$ into $x^2+y^2=1/t$ gives $(2t^2-5t+2)(t^2+1)=0$. Since $y>0$, $t=\\dfrac12$; hence $z=1+i$, so $|z|=\\sqrt2$ and $\\operatorname{Arg}z=\\dfrac{\\pi}{4}$.",
+  "distractor_notes": "B: selects the other quadratic root; C: uses the wrong quadrant for the argument; D: treats the argument as zero and takes an incorrect modulus."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

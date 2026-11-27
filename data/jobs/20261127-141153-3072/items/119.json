@@ -1,0 +1,68 @@
+{
+ "qno": 119,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 119,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "Limit of the form (1 − cos kx)/x² or sin(ax)/sin(bx) using standard trig limits; easy substitution after simplification.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:100",
+   "2025s1:103",
+   "2023s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to 0}\\dfrac{1-\\cos 5x}{x^2}$, where $x$ is in radians.",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{5}{2}$",
+  "$25$",
+  "$\\dfrac{25}{2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using $1-\\cos u\\sim u^2/2$ as $u\\to0$, the limit is $(5x)^2/(2x^2)=25/2$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$1-\\cos 5x=2\\sin^2\\dfrac{5x}{2}$. Thus $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos5x}{x^2}=\\dfrac{25}{2}$.\n\nIndependent check: Using $1-\\cos u\\sim u^2/2$ as $u\\to0$, the limit is $(5x)^2/(2x^2)=25/2$.",
+ "solution": "Using $1-\\cos u\\sim \\dfrac{u^2}{2}$ as $u\\to 0$,\n$$\\lim_{x\\to0}\\frac{1-\\cos 5x}{x^2}=\\lim_{x\\to0}\\frac{(5x)^2}{2x^2}=\\frac{25}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to 0}\\dfrac{1-\\cos 5x}{x^2}$, where $x$ is in radians.",
+  "options": [
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{5}{2}$",
+   "$\\dfrac{25}{2}$",
+   "$25$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$1-\\cos 5x=2\\sin^2\\dfrac{5x}{2}$. Thus $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos5x}{x^2}=\\dfrac{25}{2}$.",
+  "distractor_notes": "A: Omits the factor $5^2$.\\nB: Uses $1-\\cos u\\sim u$ instead of $u^2/2$.\\nD: Omits the factor $1/2$ in the cosine limit."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 146,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 146,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Sum of conjugate expansions",
+  "archetype": "binomial coefficient sum",
+  "brief": "Use (1+x)^n expansion with x = ±1 or i to find a sum of alternate binomial coefficients or C0+C2+C4+...",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:98",
+   "2026s2:97",
+   "2021:114"
+  ],
+  "origin": "variant",
+  "bank_ref": "gccdf9fac5811"
+ },
+ "status": "ok",
+ "stem": "The sum of the even-indexed binomial coefficients in the expansion of $(1+x)^{12}$ is",
+ "options": [
+  "$1024$",
+  "$2047$",
+  "$4096$",
+  "$2048$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The even- and odd-indexed coefficients have equal sums, so the even-indexed sum is half of 2^12: 2^11 = 2048.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$S=\\dfrac{(1+1)^{12}+(1-1)^{12}}{2}=\\dfrac{4096+0}{2}=2048$$\n\nIndependent check: The even- and odd-indexed coefficients have equal sums, so the even-indexed sum is half of 2^12: 2^11 = 2048.",
+ "solution": "The sum of even-indexed coefficients is $\n\\dfrac{(1+1)^{12}+(1-1)^{12}}{2}\n=\\dfrac{4096+0}{2}=2048.\n$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum of the even-indexed binomial coefficients in the expansion of $(1+x)^{12}$ is",
+  "options": [
+   "$1024$",
+   "$2047$",
+   "$2048$",
+   "$4096$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$S=\\dfrac{(1+1)^{12}+(1-1)^{12}}{2}=\\dfrac{4096+0}{2}=2048$$",
+  "distractor_notes": "A: Divides the total by $4$ instead of $2$. B: Subtracts $1$ from the correct sum. D: Uses the total sum of all coefficients without dividing by $2$."
+ },
+ "variant_of": "gccdf9fac5811",
+ "author_model": "openai/gpt-6-luna-pro"
+}

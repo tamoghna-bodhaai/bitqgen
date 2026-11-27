@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "How many four-digit integers divisible by 5 have one digit appearing twice and two other, distinct digits appearing once each?",
+ "stem": "The digits of a four-digit number are chosen from $1$ to $9$. How many such numbers are divisible by $5$ and have exactly one pair of equal digits?",
  "options": [
-  "$608$",
-  "$720$",
-  "$752$",
-  "$768$"
+  "$168$",
+  "$252$",
+  "$336$",
+  "$504$"
  ],
  "answer": "C",
  "figure": null,
@@ -35,34 +35,34 @@
   {
    "stage": "solver",
    "model": "openai/gpt-6-luna-pro",
-   "working": "Units digit 0: repeated 0 gives 2·9·8 = 144; repeated nonzero gives 9·8·3 = 216, total 360. Units digit 5: repeated 5 gives 28·6 + 8·4 = 200; repeated digit other than 5 gives 8 + 8·23 = 192. Total = 360 + 200 + 192 = 752.",
+   "working": "The last digit must be 5. If the pair is 5s: choose its other position in 3 ways, then fill the remaining positions with 8×7 choices, giving 168. If the pair is another digit: choose its positions in 3 ways, its digit in 8 ways, and the remaining digit in 7 ways, giving 168. Total = 336.",
    "answer": "C",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 3
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "Ending 0: repeated 0 gives $2·9·8=144$; repeated nonzero gives $9·8·3=216$, total 360. Ending 5: repeated 5 gives $72+2·8·8=200$; repeated 0 gives 8; repeated nonzero other than 5 gives $8(2+7·3)=184$. Total $360+200+8+184=752$.\n\nIndependent check: Units digit 0: repeated 0 gives 2·9·8 = 144; repeated nonzero gives 9·8·3 = 216, total 360. Units digit 5: repeated 5 gives 28·6 + 8·4 = 200; repeated digit other than 5 gives 8 + 8·23 = 192. Total = 360 + 200 + 192 = 752.",
+ "working": "The last digit is $5$.\\nRepeated digit is $5$: $3\\cdot 8\\cdot 7=168$.\\nRepeated digit is not $5$: $8\\cdot\\binom{3}{2}\\cdot 7=168$.\\nTotal: $168+168=336$.\n\nIndependent check: The last digit must be 5. If the pair is 5s: choose its other position in 3 ways, then fill the remaining positions with 8×7 choices, giving 168. If the pair is another digit: choose its positions in 3 ways, its digit in 8 ways, and the remaining digit in 7 ways, giving 168. Total = 336.",
  "solution": "",
  "locked": false,
- "difficulty": 4,
+ "difficulty": 3,
  "draft": {
-  "stem": "How many four-digit integers divisible by 5 have one digit appearing twice and two other, distinct digits appearing once each?",
+  "stem": "The digits of a four-digit number are chosen from $1$ to $9$. How many such numbers are divisible by $5$ and have exactly one pair of equal digits?",
   "options": [
-   "$608$",
-   "$720$",
-   "$752$",
-   "$768$"
+   "$168$",
+   "$252$",
+   "$336$",
+   "$504$"
   ],
   "option_smiles": null,
   "answer": "C",
   "figure": null,
   "difficulty_estimate": 4,
-  "working": "Ending 0: repeated 0 gives $2·9·8=144$; repeated nonzero gives $9·8·3=216$, total 360. Ending 5: repeated 5 gives $72+2·8·8=200$; repeated 0 gives 8; repeated nonzero other than 5 gives $8(2+7·3)=184$. Total $360+200+8+184=752$.",
-  "distractor_notes": "A: omits the repeated-zero case when the last digit is 0; B: excludes 0 from a non-leading position in the repeated-5 case; D: allows leading zero in the repeated-zero case ending in 5."
+  "working": "The last digit is $5$.\\nRepeated digit is $5$: $3\\cdot 8\\cdot 7=168$.\\nRepeated digit is not $5$: $8\\cdot\\binom{3}{2}\\cdot 7=168$.\\nTotal: $168+168=336$.",
+  "distractor_notes": "A: Counts only one of the two cases for the repeated digit.\\nB: Treats the two distinct remaining digits as an unordered pair in the repeated-$5$ case.\\nD: Includes the units position among the possible positions of a repeated digit other than $5$."
  },
  "author_model": "openai/gpt-6-luna-pro"
 }

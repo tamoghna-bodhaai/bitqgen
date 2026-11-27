@@ -1,0 +1,80 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Preparation of ethers",
+  "archetype": "multi-step conversion",
+  "brief": "Sequence: phenol to benzene via distillation with Zn, then Friedel–Crafts acylation or similar; identify intermediates and final product; may include Williamson or diazonium route for rigor.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:40",
+   "2025s2:60",
+   "2026s1:60"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Phenol is converted successively using (i) Zn dust and heat, (ii) $\\text{CH}_3\\text{Cl}/\\text{AlCl}_3$, (iii) NBS and $h\\nu$, and (iv) $\\text{CH}_3\\text{ONa}$ in methanol. What is the major final product?",
+ "options": [
+  "Anisole",
+  "Benzyl methyl ether",
+  "Benzyl alcohol",
+  "Ethylbenzene"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": [
+  "figs/q052_optA_v0.png",
+  "figs/q052_optB_v0.png",
+  "figs/q052_optC_v0.png",
+  "figs/q052_optD_v0.png"
+ ],
+ "option_width": 40,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Phenol is reduced to benzene by Zn/heat, methylated to toluene, and benzylic bromination gives benzyl bromide. CH₃ONa substitutes Br to form PhCH₂OCH₃.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_6\\text{H}_5\\text{OH}\\xrightarrow{\\text{Zn},\\Delta}\\text{C}_6\\text{H}_6\\xrightarrow{\\text{CH}_3\\text{Cl}/\\text{AlCl}_3}\\text{C}_6\\text{H}_5\\text{CH}_3$; $\\text{C}_6\\text{H}_5\\text{CH}_3\\xrightarrow{\\text{NBS},h\\nu}\\text{C}_6\\text{H}_5\\text{CH}_2\\text{Br}\\xrightarrow{\\text{CH}_3\\text{ONa}}\\text{C}_6\\text{H}_5\\text{CH}_2\\text{OCH}_3$.\n\nIndependent check: Phenol is reduced to benzene by Zn/heat, methylated to toluene, and benzylic bromination gives benzyl bromide. CH₃ONa substitutes Br to form PhCH₂OCH₃.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Phenol is converted successively using (i) Zn dust and heat, (ii) $\\text{CH}_3\\text{Cl}/\\text{AlCl}_3$, (iii) NBS and $h\\nu$, and (iv) $\\text{CH}_3\\text{ONa}$ in methanol. What is the major final product?",
+  "options": [
+   "Anisole",
+   "Benzyl methyl ether",
+   "Benzyl alcohol",
+   "Ethylbenzene"
+  ],
+  "option_smiles": [
+   "COc1ccccc1",
+   "COCc1ccccc1",
+   "OCc1ccccc1",
+   "CCc1ccccc1"
+  ],
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\text{C}_6\\text{H}_5\\text{OH}\\xrightarrow{\\text{Zn},\\Delta}\\text{C}_6\\text{H}_6\\xrightarrow{\\text{CH}_3\\text{Cl}/\\text{AlCl}_3}\\text{C}_6\\text{H}_5\\text{CH}_3$; $\\text{C}_6\\text{H}_5\\text{CH}_3\\xrightarrow{\\text{NBS},h\\nu}\\text{C}_6\\text{H}_5\\text{CH}_2\\text{Br}\\xrightarrow{\\text{CH}_3\\text{ONa}}\\text{C}_6\\text{H}_5\\text{CH}_2\\text{OCH}_3$.",
+  "distractor_notes": "A: assumes direct methylation of phenol; C: substitutes bromide with hydroxide; D: misidentifies the benzylic substitution product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

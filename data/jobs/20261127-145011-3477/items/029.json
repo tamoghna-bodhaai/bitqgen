@@ -1,0 +1,56 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Conservation of angular momentum",
+  "archetype": "conservation law",
+  "brief": "Rotating body (e.g. dancer or disc with dropped mass) changes its moment of inertia; use angular momentum conservation to find the new angular speed.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:39",
+   "2025s2:18",
+   "2025s1:3"
+  ],
+  "origin": "direct",
+  "bank_ref": "g093c4756c1a9"
+ },
+ "status": "ok",
+ "stem": "A girl stands at the centre of a horizontal turntable that is free to rotate about a frictionless vertical axle. With her arms spread out, the combined moment of inertia of the girl and turntable about the axle is 10 kg m^2 and the turntable turns at 4 rad s^-1. She folds her arms, reducing the combined moment of inertia to 5 kg m^2. The new angular speed of the turntable is",
+ "options": [
+  "8 rad s^-1",
+  "4 rad s^-1",
+  "2 rad s^-1",
+  "16 rad s^-1"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "C",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g093c4756c1a9 (verified in job 20261127-122012-292e)"
+ ],
+ "working": "Angular momentum is conserved: I1*w1 = I2*w2.\nw2 = (I1/I2)*w1 = (10/5)*4 = 8 rad s^-1.\n\nIndependent check: Angular momentum is conserved: 10 × 4 = 5ω, so ω = 8 rad s⁻¹.",
+ "solution": "With no external torque about the axle, angular momentum is conserved:\n$$I_1\\omega_1=I_2\\omega_2$$\nThus, $\\omega_2=\\dfrac{10\\times4}{5}=8\\ \\text{rad s}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g093c4756c1a9",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

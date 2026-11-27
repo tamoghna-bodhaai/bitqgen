@@ -1,0 +1,71 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Scalar triple product",
+  "archetype": "expand box product",
+  "brief": "Given three vectors, compute the scalar triple product [a b c] and identify a property (volume, coplanarity) from it",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:109",
+   "2025s1:95",
+   "2026s1:120"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd0fd45a24e85"
+ },
+ "status": "ok",
+ "stem": "For $\\vec{a}=\\hat{i}+2\\hat{j}$, $\\vec{b}=\\hat{j}+\\hat{k}$ and $\\vec{c}=2\\hat{i}+\\hat{k}$, evaluate $[\\vec{a}\\vec{b}\\vec{c}]$ and state whether the vectors are coplanar.",
+ "options": [
+  "$-5$; not coplanar",
+  "$0$; coplanar",
+  "$5$; not coplanar",
+  "$10$; not coplanar"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\vec b\\times\\vec c=(1,2,-2)\\), so \\([\\vec a\\vec b\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)=1+4=5\\ne0\\). Thus the vectors are not coplanar.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\u0005vec{a}\u0005vec{b}\u0005vec{c}]=\u0005vec{a}\u0005cdot(\u0005vec{b}\u0005times\u0005vec{c})$.\n$\u0005vec{b}\u0005times\u0005vec{c}=\u0005hat{i}+2\u0005hat{j}-2\u0005hat{k}$.\n$[\u0005vec{a}\u0005vec{b}\u0005vec{c}]=(1,2,0)\u0005cdot(1,2,-2)=5\u0005ne0$.\nHence, the vectors are not coplanar.\n\nIndependent check: \\(\\vec b\\times\\vec c=(1,2,-2)\\), so \\([\\vec a\\vec b\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)=1+4=5\\ne0\\). Thus the vectors are not coplanar.",
+ "solution": "The scalar triple product is $[\\vec a\\vec b\\vec c]=\\vec a\\cdot(\\vec b\\times\\vec c)$, and $\\vec b\\times\\vec c=(1,2,-2)$. \n$$[\\vec a\\vec b\\vec c]=(1,2,0)\\cdot(1,2,-2)=5\\ne0$$\nSince the scalar triple product is nonzero, the vectors are not coplanar.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $\\vec{a}=\\hat{i}+2\\hat{j}$, $\\vec{b}=\\hat{j}+\\hat{k}$ and $\\vec{c}=2\\hat{i}+\\hat{k}$, evaluate $[\\vec{a}\\vec{b}\\vec{c}]$ and state whether the vectors are coplanar.",
+  "options": [
+   "$-5$; not coplanar",
+   "$0$; coplanar",
+   "$5$; not coplanar",
+   "$10$; not coplanar"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$[\u0005vec{a}\u0005vec{b}\u0005vec{c}]=\u0005vec{a}\u0005cdot(\u0005vec{b}\u0005times\u0005vec{c})$.\n$\u0005vec{b}\u0005times\u0005vec{c}=\u0005hat{i}+2\u0005hat{j}-2\u0005hat{k}$.\n$[\u0005vec{a}\u0005vec{b}\u0005vec{c}]=(1,2,0)\u0005cdot(1,2,-2)=5\u0005ne0$.\nHence, the vectors are not coplanar.",
+  "distractor_notes": "A: reverses the sign of the scalar triple product. B: incorrectly treats the vectors as coplanar. D: introduces an extra factor of $2$."
+ },
+ "variant_of": "gd0fd45a24e85",
+ "author_model": "openai/gpt-6-luna-pro"
+}

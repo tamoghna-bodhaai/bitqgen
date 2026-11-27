@@ -1,0 +1,71 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "Average kinetic energy per molecule",
+  "archetype": "single-formula numerical",
+  "brief": "Given the temperature of a gas, compute the average translational kinetic energy per molecule using (3/2)kT.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:3",
+   "2024s2:23",
+   "2021:38"
+  ],
+  "origin": "variant",
+  "bank_ref": "ga7e1f2e9bb5d"
+ },
+ "status": "ok",
+ "stem": "An ideal gas is at a temperature of $400$ K. Taking Boltzmann’s constant as $1.38\\times10^{-23}$ J K$^{-1}$, what is the average translational kinetic energy per molecule?",
+ "options": [
+  "$5.52\\times10^{-21}$ J",
+  "$1.104\\times10^{-20}$ J",
+  "$8.28\\times10^{-21}$ J",
+  "$1.656\\times10^{-20}$ J"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Average translational kinetic energy per molecule is $\\frac{3}{2}kT = \\frac{3}{2}(1.38\\times10^{-23})(400) = 8.28\\times10^{-21}$ J.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\langle K\\rangle=\\dfrac{3}{2}kT=\\dfrac{3}{2}(1.38\\times10^{-23})(400)=8.28\\times10^{-21}\\ \\text{J}$$\n\nIndependent check: Average translational kinetic energy per molecule is $\\frac{3}{2}kT = \\frac{3}{2}(1.38\\times10^{-23})(400) = 8.28\\times10^{-21}$ J.",
+ "solution": "For an ideal gas, the average translational kinetic energy per molecule is $\\langle K\\rangle=\\frac{3}{2}kT$.\n$$\\langle K\\rangle=\\frac{3}{2}(1.38\\times10^{-23})(400)=8.28\\times10^{-21}\\ \\text{J}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An ideal gas is at a temperature of $400$ K. Taking Boltzmann’s constant as $1.38\\times10^{-23}$ J K$^{-1}$, what is the average translational kinetic energy per molecule?",
+  "options": [
+   "$5.52\\times10^{-21}$ J",
+   "$8.28\\times10^{-21}$ J",
+   "$1.104\\times10^{-20}$ J",
+   "$1.656\\times10^{-20}$ J"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$$\\langle K\\rangle=\\dfrac{3}{2}kT=\\dfrac{3}{2}(1.38\\times10^{-23})(400)=8.28\\times10^{-21}\\ \\text{J}$$",
+  "distractor_notes": "A: Uses $kT$ instead of $\\dfrac{3}{2}kT$. C: Uses $2kT$. D: Uses $3kT$."
+ },
+ "variant_of": "ga7e1f2e9bb5d",
+ "author_model": "openai/gpt-6-luna-pro"
+}

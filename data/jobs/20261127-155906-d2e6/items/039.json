@@ -1,0 +1,70 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Circular motion with friction",
+  "archetype": "force resolution",
+  "brief": "A car (or body) on a level/curved track negotiating a turn at a given speed; find the minimum coefficient of static friction required, or analyse banking with friction — resolving forces along radial and vertical directions.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:14",
+   "2026s1:7",
+   "2025s1:29"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A car moves at $10\\sqrt{2}$ m s$^{-1}$ on a banked circular track of radius $20$ m. The banking angle is $30^\\circ$. Find the minimum coefficient of static friction needed to prevent slipping. Take $g=10$ m s$^{-2}$.",
+ "options": [
+  "$2-\\sqrt{3}$",
+  "$\\dfrac{1}{\\sqrt{3}}$",
+  "$\\sqrt{3}-1$",
+  "$2+\\sqrt{3}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Here, v²/(rg)=1. Since this exceeds tan 30°, friction acts down the bank. Resolving forces gives μ=(cos 30°−sin 30°)/(cos 30°+sin 30°)=2−√3.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a_c=v^2/r=10\\ \\text{m s}^{-2}>g\\tan30^\\circ$; friction acts down the bank.\n$N\\sin30^\\circ+f\\cos30^\\circ=ma_c$.\n$N\\cos30^\\circ-f\\sin30^\\circ=mg$.\n$\\mu_s=\\dfrac{f}{N}=\\dfrac{a_c\\cos30^\\circ-g\\sin30^\\circ}{g\\cos30^\\circ+a_c\\sin30^\\circ}=2-\\sqrt{3}$\n\nIndependent check: Here, v²/(rg)=1. Since this exceeds tan 30°, friction acts down the bank. Resolving forces gives μ=(cos 30°−sin 30°)/(cos 30°+sin 30°)=2−√3.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A car moves at $10\\sqrt{2}$ m s$^{-1}$ on a banked circular track of radius $20$ m. The banking angle is $30^\\circ$. Find the minimum coefficient of static friction needed to prevent slipping. Take $g=10$ m s$^{-2}$.",
+  "options": [
+   "$2-\\sqrt{3}$",
+   "$\\dfrac{1}{\\sqrt{3}}$",
+   "$\\sqrt{3}-1$",
+   "$2+\\sqrt{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$a_c=v^2/r=10\\ \\text{m s}^{-2}>g\\tan30^\\circ$; friction acts down the bank.\n$N\\sin30^\\circ+f\\cos30^\\circ=ma_c$.\n$N\\cos30^\\circ-f\\sin30^\\circ=mg$.\n$\\mu_s=\\dfrac{f}{N}=\\dfrac{a_c\\cos30^\\circ-g\\sin30^\\circ}{g\\cos30^\\circ+a_c\\sin30^\\circ}=2-\\sqrt{3}$",
+  "distractor_notes": "B: uses the frictionless design-speed condition. C: omits the force-balance denominator. D: takes the reciprocal of the friction ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

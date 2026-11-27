@@ -1,0 +1,68 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Rolling kinematics",
+  "archetype": "geometry of rolling",
+  "brief": "A wheel rolls without slipping at a given speed; find the speed or direction of a point on the rim at a specified position (top, side, or at a stated angle).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:29",
+   "2025s2:18",
+   "2025s1:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "A wheel rolls without slipping to the right with its centre moving at $4$ m s$^{-1}$. What is the speed of a point at the rightmost edge of the rim?",
+ "options": [
+  "$2\\sqrt{2}\\ \\text{m s}^{-1}$",
+  "$4\\sqrt{2}\\ \\text{m s}^{-1}$",
+  "$4\\ \\text{m s}^{-1}$",
+  "$8\\ \\text{m s}^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For rolling without slipping, the rim’s rotational speed is 4 m s⁻¹. At the rightmost point it is perpendicular to the centre’s 4 m s⁻¹ velocity, so the resultant speed is √(4² + 4²) = 4√2 m s⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At the rightmost point, $v_{\\text{rot}}=v_{\\text{cm}}=4\\ \\text{m s}^{-1}$, perpendicular to $v_{\\text{cm}}$.<br>$v=\\sqrt{4^2+4^2}=4\\sqrt{2}\\ \\text{m s}^{-1}$\n\nIndependent check: For rolling without slipping, the rim’s rotational speed is 4 m s⁻¹. At the rightmost point it is perpendicular to the centre’s 4 m s⁻¹ velocity, so the resultant speed is √(4² + 4²) = 4√2 m s⁻¹.",
+ "solution": "For rolling without slipping, the rotational speed of the rim is $v_{\\text{cm}}=4\\ \\text{m s}^{-1}$. At the rightmost point, this velocity is perpendicular to the centre’s velocity, so\n$$v=\\sqrt{4^2+4^2}=4\\sqrt{2}\\ \\text{m s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wheel rolls without slipping to the right with its centre moving at $4$ m s$^{-1}$. What is the speed of a point at the rightmost edge of the rim?",
+  "options": [
+   "$2\\sqrt{2}\\ \\text{m s}^{-1}$",
+   "$4\\ \\text{m s}^{-1}$",
+   "$4\\sqrt{2}\\ \\text{m s}^{-1}$",
+   "$8\\ \\text{m s}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "At the rightmost point, $v_{\\text{rot}}=v_{\\text{cm}}=4\\ \\text{m s}^{-1}$, perpendicular to $v_{\\text{cm}}$.<br>$v=\\sqrt{4^2+4^2}=4\\sqrt{2}\\ \\text{m s}^{-1}$",
+  "distractor_notes": "A: uses an incorrect fraction of the component speeds; B: ignores rotation; D: applies the top-point speed to the rightmost point."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

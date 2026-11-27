@@ -1,0 +1,70 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile trajectory equation",
+  "archetype": "two-equation kinematics",
+  "brief": "Two bodies thrown/projected (e.g. one from a cliff, another upward) meet after a given time; set up two equations and solve for the unknown speed or time.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:3",
+   "2024s2:11",
+   "2025s2:17"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A body is projected vertically upward from the ground at $20$ m s$^{-1}$. At the same instant, another body is projected vertically downward from a point $100$ m above the ground. They meet after $2$ s. Find the initial speed of the second body. Take $g=10$ m s$^{-2}$.",
+ "options": [
+  "$30$ m s$^{-1}$",
+  "$25$ m s$^{-1}$",
+  "$20$ m s$^{-1}$",
+  "$35$ m s$^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "After 2 s, the first body is at height 20(2) − ½(10)(2²) = 20 m. For the second body to be there, 100 − 2u − 20 = 20, giving u = 30 m s⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At $t=2$ s, first body's height: $y_1=20(2)-\\dfrac{1}{2}(10)(2)^2=20$ m.\nSecond body's height: $y_2=100-u(2)-\\dfrac{1}{2}(10)(2)^2$.\n$y_1=y_2\\Rightarrow20=80-2u\\Rightarrow u=30$ m s$^{-1}$\n\nIndependent check: After 2 s, the first body is at height 20(2) − ½(10)(2²) = 20 m. For the second body to be there, 100 − 2u − 20 = 20, giving u = 30 m s⁻¹.",
+ "solution": "Taking upward as positive, after $2$ s the first body is at height\n$$y_1=20(2)-\\frac12(10)(2)^2=20\\text{ m}.$$\nFor the second body, $y_2=100-2u-\\frac12(10)(2)^2$. Equating heights gives $20=80-2u$, hence $u=30\\text{ m s}^{-1}$. (A)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A body is projected vertically upward from the ground at $20$ m s$^{-1}$. At the same instant, another body is projected vertically downward from a point $100$ m above the ground. They meet after $2$ s. Find the initial speed of the second body. Take $g=10$ m s$^{-2}$.",
+  "options": [
+   "$20$ m s$^{-1}$",
+   "$25$ m s$^{-1}$",
+   "$30$ m s$^{-1}$",
+   "$35$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "At $t=2$ s, first body's height: $y_1=20(2)-\\dfrac{1}{2}(10)(2)^2=20$ m.\nSecond body's height: $y_2=100-u(2)-\\dfrac{1}{2}(10)(2)^2$.\n$y_1=y_2\\Rightarrow20=80-2u\\Rightarrow u=30$ m s$^{-1}$",
+  "distractor_notes": "A: neglects the second body's displacement under gravity. B: makes an error in the first body's height. D: uses an incorrect sign for the gravitational displacement."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

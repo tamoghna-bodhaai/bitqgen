@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "In a certain code language, 'ti po re' means 'read good books', 're ma sil' means 'books are great', and 'ti sil lu' means 'read great stories'. What is the code for 'good'?",
+ "stem": "In a certain code language, “ra ki mo” means “birds build nests”, “zu ki fe” means “children build kites”, and “ra do pa” means “birds fly high”. What is the code for “birds”?",
  "options": [
-  "ti",
-  "re",
-  "po",
-  "sil"
+  "ki",
+  "zu",
+  "mo",
+  "ra"
  ],
- "answer": "C",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Comparing sentences 1 & 2: common code 're' = 'books'. Sentences 1 & 3: common 'ti' = 'read'. Sentences 2 & 3: 'sil' = 'great'. In 'ti po re' = 'read good books', remaining 'po' must mean 'good'.",
-   "answer": "C",
-   "confidence": 0.99,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“ra” is the only code shared by the first and third phrases, whose only shared word is “birds”.",
+   "answer": "B",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Comparing 'ti po re' ('read good books') and 're ma sil' ('books are great'):\n   - The word 'books' is common to both sentences.\n   - The code word 're' is common to both code strings.\n   - Therefore, 're' = 'books'.\n\n2. Comparing 'ti po re' ('read good books') and 'ti sil lu' ('read great stories'):\n   - The word 'read' is common to both sentences.\n   - The code word 'ti' is common to both code strings.\n   - Therefore, 'ti' = 'read'.\n\n3. In the first statement ('ti po re' = 'read good books'), since 'ti' = 'read' and 're' = 'books', the remaining code word 'po' must correspond to 'good'.\n\nHence, the correct code for 'good' is 'po'.\n\nIndependent check: Comparing sentences 1 & 2: common code 're' = 'books'. Sentences 1 & 3: common 'ti' = 'read'. Sentences 2 & 3: 'sil' = 'great'. In 'ti po re' = 'read good books', remaining 'po' must mean 'good'.",
- "solution": "",
+ "working": "“Birds” is the only word common to the first and third phrases; “ra” is the only code common to their strings. Thus birds = ra. The other options do not occur in both strings.\n\nIndependent check: “ra” is the only code shared by the first and third phrases, whose only shared word is “birds”.",
+ "solution": "The first and third phrases share only the word “birds”; their only common code is “ra”. Hence, birds = ra.",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "In a certain code language, 'ti po re' means 'read good books', 're ma sil' means 'books are great', and 'ti sil lu' means 'read great stories'. What is the code for 'good'?",
+  "stem": "In a certain code language, “ra ki mo” means “birds build nests”, “zu ki fe” means “children build kites”, and “ra do pa” means “birds fly high”. What is the code for “birds”?",
   "options": [
-   "ti",
-   "re",
-   "po",
-   "sil"
+   "ki",
+   "ra",
+   "mo",
+   "zu"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "1. Comparing 'ti po re' ('read good books') and 're ma sil' ('books are great'):\n   - The word 'books' is common to both sentences.\n   - The code word 're' is common to both code strings.\n   - Therefore, 're' = 'books'.\n\n2. Comparing 'ti po re' ('read good books') and 'ti sil lu' ('read great stories'):\n   - The word 'read' is common to both sentences.\n   - The code word 'ti' is common to both code strings.\n   - Therefore, 'ti' = 'read'.\n\n3. In the first statement ('ti po re' = 'read good books'), since 'ti' = 'read' and 're' = 'books', the remaining code word 'po' must correspond to 'good'.\n\nHence, the correct code for 'good' is 'po'.",
-  "distractor_notes": "Option A ('ti') is the code for 'read'.\nOption B ('re') is the code for 'books'.\nOption D ('sil') is the code for 'great' (common to the second and third statements).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "“Birds” is the only word common to the first and third phrases; “ra” is the only code common to their strings. Thus birds = ra. The other options do not occur in both strings.",
+  "distractor_notes": "A: shared with the second string, not the third. C: occurs only in the first string. D: occurs only in the second string."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

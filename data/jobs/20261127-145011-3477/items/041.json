@@ -1,0 +1,70 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Solid State",
+  "subtopic": "Voids and formula of compound",
+  "archetype": "void counting",
+  "brief": "Give radius ratio scenario or an ionic compound in an hcp/fcc lattice; ask how many octahedral and tetrahedral voids per unit cell / per atom, or which voids are occupied to give the formula",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:75",
+   "2025s2:42",
+   "2025s1:41"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An fcc unit cell contains anions at its lattice points. How many octahedral and tetrahedral voids are present per unit cell, respectively?",
+ "options": [
+  "$(4,4)$",
+  "$(4,8)$",
+  "$(8,4)$",
+  "$(8,8)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "An fcc unit cell has 4 lattice points. It contains 4 octahedral voids and 2×4 = 8 tetrahedral voids.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "fcc contains $4$ particles per unit cell. Octahedral voids $=4$; tetrahedral voids $=2(4)=8$.\n\nIndependent check: An fcc unit cell has 4 lattice points. It contains 4 octahedral voids and 2×4 = 8 tetrahedral voids.",
+ "solution": "An fcc unit cell contains $4$ lattice points. The number of octahedral voids equals the number of lattice points, while tetrahedral voids are twice that number:\n$$N_{\\text{octahedral}}=4,\\qquad N_{\\text{tetrahedral}}=2(4)=8$$\nThus, the numbers are $(4,8)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An fcc unit cell contains anions at its lattice points. How many octahedral and tetrahedral voids are present per unit cell, respectively?",
+  "options": [
+   "$(4,4)$",
+   "$(4,8)$",
+   "$(8,4)$",
+   "$(8,8)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "fcc contains $4$ particles per unit cell. Octahedral voids $=4$; tetrahedral voids $=2(4)=8$.",
+  "distractor_notes": "A: Uses the octahedral count for tetrahedral voids; C: Interchanges the counts; D: Uses the tetrahedral count for octahedral voids."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

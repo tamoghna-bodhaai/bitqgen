@@ -1,0 +1,70 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Distance from axis",
+  "archetype": "formula application",
+  "brief": "Point given in 3D; find its perpendicular distance from a coordinate axis (say the y-axis) using the formula √(x² + z²).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:115",
+   "2021:145",
+   "2021:128"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The perpendicular distance of the point $(3,-4,12)$ from the $y$-axis is",
+ "options": [
+  "$5$",
+  "$13$",
+  "$4\\sqrt{10}$",
+  "$3\\sqrt{17}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The distance from the y-axis is \\(\\sqrt{x^2+z^2}=\\sqrt{3^2+12^2}=3\\sqrt{17}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$d=\\sqrt{x^2+z^2}=\\sqrt{3^2+12^2}=\\sqrt{153}=3\\sqrt{17}$\n\nIndependent check: The distance from the y-axis is \\(\\sqrt{x^2+z^2}=\\sqrt{3^2+12^2}=3\\sqrt{17}\\).",
+ "solution": "The perpendicular distance of $(x,y,z)$ from the $y$-axis is $d=\\sqrt{x^2+z^2}$.\n$$d=\\sqrt{3^2+12^2}=\\sqrt{153}=3\\sqrt{17}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The perpendicular distance of the point $(3,-4,12)$ from the $y$-axis is",
+  "options": [
+   "$5$",
+   "$3\\sqrt{17}$",
+   "$4\\sqrt{10}$",
+   "$13$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$d=\\sqrt{x^2+z^2}=\\sqrt{3^2+12^2}=\\sqrt{153}=3\\sqrt{17}$",
+  "distractor_notes": "A: Uses $x$ and $y$ coordinates instead of $x$ and $z$.\nC: Uses the coordinates perpendicular to the $x$-axis.\nD: Finds the distance from the origin."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

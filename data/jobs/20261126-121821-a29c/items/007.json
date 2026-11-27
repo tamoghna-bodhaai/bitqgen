@@ -20,22 +20,22 @@
   ]
  },
  "status": "ok",
- "stem": "A sample of $2\\text{ mol}$ of an ideal monatomic gas is kept inside a rigid container. If $498\\text{ J}$ of heat is supplied to the gas, the rise in its temperature is: (Take $R = 8.3\\text{ J mol}^{-1}\\text{ K}^{-1}$)",
+ "stem": "A rigid vessel contains $4$ mol of an ideal monatomic gas. When $1992$ J of heat is supplied, the temperature of the gas rises by: (Take $R = 8.3$ J mol$^{-1}$ K$^{-1}$.)",
  "options": [
-  "$10\\text{ K}$",
-  "$12\\text{ K}$",
-  "$20\\text{ K}$",
-  "$40\\text{ K}$"
+  "$40$ K",
+  "$30$ K",
+  "$20$ K",
+  "$60$ K"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Rigid container ⇒ constant volume, W=0, Q = nCvΔT with Cv = 3R/2 = 12.45 J/mol·K. ΔT = 498/(2×12.45) = 20 K.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At constant volume, $Q=nC_V\\Delta T$, with $C_V=\\frac32R$. Thus $\\Delta T=1992/[4(\\frac32)(8.3)]=40\\,\\mathrm K$.",
    "answer": "C",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "For a rigid container, the volume remains constant, so the work done by the gas is zero ($W = 0$).\\n\\nBy the First Law of Thermodynamics:\\n$$Q = \\Delta U + W = \\Delta U$$\\n\\nFor an ideal monatomic gas, the molar heat capacity at constant volume is:\\n$$C_v = \\dfrac{3}{2}R$$\\n\\nThe change in internal energy is given by:\\n$$\\Delta U = n C_v \\Delta T$$\\n\\nTherefore:\\n$$Q = n \\left(\\dfrac{3}{2}R\\right) \\Delta T$$\\n\\nSubstituting the given values:\\n$$498 = 2 \\times \\left(\\dfrac{3}{2} \\times 8.3\\right) \\times \\Delta T$$\\n$$498 = 3 \\times 8.3 \\times \\Delta T = 24.9 \\, \\Delta T$$\\n$$\\Delta T = \\dfrac{498}{24.9} = 20\\text{ K}$$\n\nIndependent check: Rigid container ⇒ constant volume, W=0, Q = nCvΔT with Cv = 3R/2 = 12.45 J/mol·K. ΔT = 498/(2×12.45) = 20 K.",
- "solution": "",
+ "working": "$W=0$ at constant volume, so $Q=\\Delta U=nC_V\\Delta T$. \n$C_V=\\dfrac{3}{2}R$ for a monatomic ideal gas.\n$\\Delta T=\\dfrac{1992}{4\\times\\dfrac{3}{2}\\times 8.3}=40$ K.\n\nIndependent check: At constant volume, $Q=nC_V\\Delta T$, with $C_V=\\frac32R$. Thus $\\Delta T=1992/[4(\\frac32)(8.3)]=40\\,\\mathrm K$.",
+ "solution": "At constant volume, $W=0$, so $Q=nC_V\\triangle T$, with $C_V=\\frac{3}{2}R$ for a monatomic gas.\n$$\\triangle T=\\frac{1992}{4\\times\\frac{3}{2}\\times 8.3}=40\\text{ K}$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A sample of $2\\text{ mol}$ of an ideal monatomic gas is kept inside a rigid container. If $498\\text{ J}$ of heat is supplied to the gas, the rise in its temperature is: (Take $R = 8.3\\text{ J mol}^{-1}\\text{ K}^{-1}$)",
+  "stem": "A rigid vessel contains $4$ mol of an ideal monatomic gas. When $1992$ J of heat is supplied, the temperature of the gas rises by: (Take $R = 8.3$ J mol$^{-1}$ K$^{-1}$.)",
   "options": [
-   "$10\\text{ K}$",
-   "$12\\text{ K}$",
-   "$20\\text{ K}$",
-   "$40\\text{ K}$"
+   "$20$ K",
+   "$30$ K",
+   "$40$ K",
+   "$60$ K"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "For a rigid container, the volume remains constant, so the work done by the gas is zero ($W = 0$).\\n\\nBy the First Law of Thermodynamics:\\n$$Q = \\Delta U + W = \\Delta U$$\\n\\nFor an ideal monatomic gas, the molar heat capacity at constant volume is:\\n$$C_v = \\dfrac{3}{2}R$$\\n\\nThe change in internal energy is given by:\\n$$\\Delta U = n C_v \\Delta T$$\\n\\nTherefore:\\n$$Q = n \\left(\\dfrac{3}{2}R\\right) \\Delta T$$\\n\\nSubstituting the given values:\\n$$498 = 2 \\times \\left(\\dfrac{3}{2} \\times 8.3\\right) \\times \\Delta T$$\\n$$498 = 3 \\times 8.3 \\times \\Delta T = 24.9 \\, \\Delta T$$\\n$$\\Delta T = \\dfrac{498}{24.9} = 20\\text{ K}$$",
-  "distractor_notes": "Option A ($10\\text{ K}$) comes from omitting the factor of $1/2$ in the formula for $C_v$ (using $C_v = 3R$) or inadvertently doubling the number of moles.\nOption B ($12\\text{ K}$) comes from mistakenly using the molar heat capacity at constant pressure $C_p = \\dfrac{5}{2}R$ instead of $C_v = \\dfrac{3}{2}R$.\nOption D ($40\\text{ K}$) comes from neglecting the number of moles ($n = 2$) and calculating with $n = 1$.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$W=0$ at constant volume, so $Q=\\Delta U=nC_V\\Delta T$. \n$C_V=\\dfrac{3}{2}R$ for a monatomic ideal gas.\n$\\Delta T=\\dfrac{1992}{4\\times\\dfrac{3}{2}\\times 8.3}=40$ K.",
+  "distractor_notes": "A: uses $C_V=3R$ instead of $\\dfrac{3}{2}R$. B: underestimates the heat capacity per mole. D: uses $C_V=R$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

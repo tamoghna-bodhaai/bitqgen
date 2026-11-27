@@ -20,17 +20,17 @@
   ]
  },
  "status": "ok",
- "stem": "Two identical capacitors, each of capacitance $C$ when empty, are connected in series across a battery of voltage $V$ as shown in the figure. A dielectric slab of dielectric constant $K = 3$ is inserted to completely fill capacitor $C_2$ while the battery remains connected. The ratio of the electrostatic energy stored in capacitor $C_1$ after the insertion of the slab to that before the insertion is",
+ "stem": "A battery of emf $V$ remains connected to two series capacitors as shown in the figure. A dielectric completely fills $C_1$. What is the ratio of the voltage across $C_2$ to $V$?",
  "options": [
-  "$4 : 9$",
-  "$3 : 4$",
-  "$3 : 2$",
-  "$9 : 4$"
+  "$\\dfrac{1}{3}$",
+  "$\\dfrac{3}{5}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{2}{5}$"
  ],
- "answer": "D",
+ "answer": "B",
  "figure": {
   "path": "figs/q020_stem_v0.png",
-  "width_pct": 55,
+  "width_pct": 50,
   "kind": "circuit"
  },
  "option_figs": null,
@@ -38,38 +38,43 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Before: equal capacitors in series, V1 = V/2, U1 = CV²/8. After: C2 = 3C, so V1' = V·3C/(C+3C) = 3V/4, U1' = (1/2)C(3V/4)² = 9CV²/32. Ratio U1'/U1 = (9/32)/(1/8) = 9/4.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In series, both capacitors carry charge Q. With the dielectric, C₁ = 3C and C₂ = 2C, so V₂/V = (Q/2C) / [Q/(3C) + Q/(2C)] = 3/5.",
    "answer": "D",
-   "confidence": 0.98,
+   "confidence": 0.96,
    "multiple_correct": false,
-   "issues": [],
+   "issues": [
+    "The figure's labels appear misplaced: K = 3 is shown beside the upper capacitor, while C₁ = C appears beside the lower one. The text specifying that the dielectric fills C₁ supports the intended calculation."
+   ],
    "difficulty": 2
   }
  ],
  "attempts": 1,
- "notes": [],
- "working": "Initially, both capacitors have capacitance $C_1 = C_2 = C$. In series, the initial equivalent capacitance is $C_{\\text{eq}} = \\dfrac{C}{2}$. The voltage across $C_1$ is $V_1 = \\dfrac{V}{2}$, so the initial energy stored in $C_1$ is $U_{1, i} = \\dfrac{1}{2} C V_1^2 = \\dfrac{1}{8} C V^2$. After the dielectric slab of constant $K = 3$ is inserted into $C_2$, the new capacitances are $C_1' = C$ and $C_2' = 3C$. The new equivalent capacitance is $C_{\\text{eq}}' = \\dfrac{C \\times 3C}{C + 3C} = \\dfrac{3}{4} C$. The total charge supplied by the battery (and therefore on $C_1$) becomes $Q' = C_{\\text{eq}}' V = \\dfrac{3}{4} C V$. The new energy stored in $C_1$ is $U_{1, f} = \\dfrac{(Q')^2}{2 C_1'} = \\dfrac{(3CV/4)^2}{2C} = \\dfrac{9}{32} C V^2$. Therefore, the ratio of the final to initial energy in $C_1$ is $\\dfrac{U_{1, f}}{U_{1, i}} = \\dfrac{9/32}{1/8} = \\dfrac{9}{4} = 9 : 4$.\n\nIndependent check: Before: equal capacitors in series, V1 = V/2, U1 = CV²/8. After: C2 = 3C, so V1' = V·3C/(C+3C) = 3V/4, U1' = (1/2)C(3V/4)² = 9CV²/32. Ratio U1'/U1 = (9/32)/(1/8) = 9/4.",
- "solution": "",
+ "notes": [
+  "figure check: Label mismatch: the lower capacitor is labelled C1 = C, while the 'C2 = 2C' label floats near the bottom wire with no capacitor next to it. The brief requires the upper capacitor to be C1 = C (with the dielectric slab, K = 3) and the lower capacitor to be C2 = 2C.; The dielectric slab is drawn floating to the left of the wires, not inside the gap of capacitor C1."
+ ],
+ "working": "$C_1'=3C,\\quad C_2=2C$.\n$C_{\\rm eq}=\\dfrac{(3C)(2C)}{3C+2C}=\\dfrac{6C}{5}$.\n$Q=C_{\\rm eq}V=\\dfrac{6CV}{5}$.\n$V_2=\\dfrac{Q}{C_2}=\\dfrac{3V}{5}\\quad\\Rightarrow\\quad \\dfrac{V_2}{V}=\\dfrac35$.\n\nIndependent check: In series, both capacitors carry charge Q. With the dielectric, C₁ = 3C and C₂ = 2C, so V₂/V = (Q/2C) / [Q/(3C) + Q/(2C)] = 3/5.",
+ "solution": "With the dielectric, $C_1=3C$ and $C_2=2C$. The series equivalent capacitance and charge are\n$$C_{\\rm eq}=\\frac{(3C)(2C)}{3C+2C}=\\frac{6C}{5},\\qquad Q=C_{\\rm eq}V=\\frac{6CV}{5}.$$\nThus $V_2=Q/C_2=3V/5$, so $\\dfrac{V_2}{V}=\\boxed{\\dfrac35}$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Two identical capacitors, each of capacitance $C$ when empty, are connected in series across a battery of voltage $V$ as shown in the figure. A dielectric slab of dielectric constant $K = 3$ is inserted to completely fill capacitor $C_2$ while the battery remains connected. The ratio of the electrostatic energy stored in capacitor $C_1$ after the insertion of the slab to that before the insertion is",
+  "stem": "A battery of emf $V$ remains connected to two series capacitors as shown in the figure. A dielectric completely fills $C_1$. What is the ratio of the voltage across $C_2$ to $V$?",
   "options": [
-   "$4 : 9$",
-   "$3 : 4$",
-   "$3 : 2$",
-   "$9 : 4$"
+   "$\\dfrac{1}{3}$",
+   "$\\dfrac{2}{5}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{3}{5}$"
   ],
   "option_smiles": null,
   "answer": "D",
-  "working": "Initially, both capacitors have capacitance $C_1 = C_2 = C$. In series, the initial equivalent capacitance is $C_{\\text{eq}} = \\dfrac{C}{2}$. The voltage across $C_1$ is $V_1 = \\dfrac{V}{2}$, so the initial energy stored in $C_1$ is $U_{1, i} = \\dfrac{1}{2} C V_1^2 = \\dfrac{1}{8} C V^2$. After the dielectric slab of constant $K = 3$ is inserted into $C_2$, the new capacitances are $C_1' = C$ and $C_2' = 3C$. The new equivalent capacitance is $C_{\\text{eq}}' = \\dfrac{C \\times 3C}{C + 3C} = \\dfrac{3}{4} C$. The total charge supplied by the battery (and therefore on $C_1$) becomes $Q' = C_{\\text{eq}}' V = \\dfrac{3}{4} C V$. The new energy stored in $C_1$ is $U_{1, f} = \\dfrac{(Q')^2}{2 C_1'} = \\dfrac{(3CV/4)^2}{2C} = \\dfrac{9}{32} C V^2$. Therefore, the ratio of the final to initial energy in $C_1$ is $\\dfrac{U_{1, f}}{U_{1, i}} = \\dfrac{9/32}{1/8} = \\dfrac{9}{4} = 9 : 4$.",
-  "distractor_notes": "Option A (4 : 9) comes from inverting the ratio, calculating initial to final energy instead of final to initial. Option B (3 : 4) comes from finding the ratio of final to initial energy in capacitor C_2 instead of C_1. Option C (3 : 2) comes from finding the ratio of charges Q' : Q (or total combination energy), forgetting that energy in a single capacitor scales quadratically with charge.",
   "figure": {
    "kind": "circuit",
-   "description": "A single-loop rectangular circuit diagram. The bottom horizontal branch contains a DC battery labeled 'V', with the longer positive plate on the left and the shorter negative plate on the right. The top horizontal branch contains two capacitors in series: on the left is an air-gap capacitor labeled 'C_1', and on the right is an identical capacitor labeled 'C_2' whose inter-plate space is completely filled by a shaded dielectric slab labeled 'K = 3'. Straight connecting wires complete the rectangular loop.",
+   "description": "Draw a closed rectangular circuit with an ideal battery labelled emf V on the left branch and two capacitor symbols in series on the right branch. Label the upper capacitor C1 = C and show a dielectric slab completely filling the gap, labelled K = 3. Label the lower capacitor C2 = 2C. Connect all components with wires; show no other components.",
    "smiles": null
   },
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$C_1'=3C,\\quad C_2=2C$.\n$C_{\\rm eq}=\\dfrac{(3C)(2C)}{3C+2C}=\\dfrac{6C}{5}$.\n$Q=C_{\\rm eq}V=\\dfrac{6CV}{5}$.\n$V_2=\\dfrac{Q}{C_2}=\\dfrac{3V}{5}\\quad\\Rightarrow\\quad \\dfrac{V_2}{V}=\\dfrac35$.",
+  "distractor_notes": "A: forgets the dielectric, using the original capacitances. B: divides voltage in proportion to capacitance rather than inversely. C: treats the post-insertion capacitances as equal."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

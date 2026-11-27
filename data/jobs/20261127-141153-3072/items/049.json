@@ -1,0 +1,68 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "States of Matter",
+  "subtopic": "Ideal gas mixture",
+  "archetype": "multi-step numeric",
+  "brief": "Mixture of two non-reacting gases in a vessel: given masses and molar masses, find total pressure at a given temperature using partial pressures and PV = nRT.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:52",
+   "2023s2:48",
+   "2025s2:39"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $12.3\\ \\text{L}$ vessel at $300\\ \\text{K}$ contains $4.0\\ \\text{g}$ of helium and $14.0\\ \\text{g}$ of nitrogen. Find the total pressure. Take $R=0.082\\ \\text{L atm mol}^{-1}\\text{K}^{-1}$, $M(\\text{He})=4.0\\ \\text{g mol}^{-1}$ and $M(\\text{N}_2)=28.0\\ \\text{g mol}^{-1}$.",
+ "options": [
+  "$1.0\\ \\text{atm}$",
+  "$2.0\\ \\text{atm}$",
+  "$3.0\\ \\text{atm}$",
+  "$4.0\\ \\text{atm}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total moles = 4/4 + 14/28 = 1.5 mol. Thus P = nRT/V = (1.5)(0.082)(300)/12.3 = 3.0 atm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$n_{\\text{He}}=4.0/4.0=1.0\\ \\text{mol}$; $n_{\\text{N}_2}=14.0/28.0=0.50\\ \\text{mol}$. $P=\\dfrac{nRT}{V}=\\dfrac{(1.50)(0.082)(300)}{12.3}=3.0\\ \\text{atm}$.\n\nIndependent check: Total moles = 4/4 + 14/28 = 1.5 mol. Thus P = nRT/V = (1.5)(0.082)(300)/12.3 = 3.0 atm.",
+ "solution": "The total number of moles is $n=\\frac{4.0}{4.0}+\\frac{14.0}{28.0}=1.50\\ \\text{mol}$. Using the ideal gas equation,\n$$P=\\frac{nRT}{V}=\\frac{(1.50)(0.082)(300)}{12.3}=3.0\\ \\text{atm}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $12.3\\ \\text{L}$ vessel at $300\\ \\text{K}$ contains $4.0\\ \\text{g}$ of helium and $14.0\\ \\text{g}$ of nitrogen. Find the total pressure. Take $R=0.082\\ \\text{L atm mol}^{-1}\\text{K}^{-1}$, $M(\\text{He})=4.0\\ \\text{g mol}^{-1}$ and $M(\\text{N}_2)=28.0\\ \\text{g mol}^{-1}$.",
+  "options": [
+   "$1.0\\ \\text{atm}$",
+   "$2.0\\ \\text{atm}$",
+   "$3.0\\ \\text{atm}$",
+   "$4.0\\ \\text{atm}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$n_{\\text{He}}=4.0/4.0=1.0\\ \\text{mol}$; $n_{\\text{N}_2}=14.0/28.0=0.50\\ \\text{mol}$. $P=\\dfrac{nRT}{V}=\\dfrac{(1.50)(0.082)(300)}{12.3}=3.0\\ \\text{atm}$.",
+  "distractor_notes": "A: Uses only the nitrogen partial pressure. B: Uses only the helium partial pressure. D: Does not convert both gas masses to moles correctly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

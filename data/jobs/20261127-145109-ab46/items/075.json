@@ -1,0 +1,70 @@
+{
+ "qno": 75,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 75,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Molecular geometry",
+  "archetype": "structure identification",
+  "brief": "Give formulae of 3–4 molecules (e.g. SF4, ClF3, NH3, XeF4); identify shapes/hybridisation and match to given geometry list.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:33",
+   "2025s1:38",
+   "2023s2:50"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which molecule–shape–hybridisation combination is correct?",
+ "options": [
+  "$\\text{SF}_4$ — tetrahedral — $sp^3$",
+  "$\\text{ClF}_3$ — T-shaped — $sp^3d$",
+  "$\\text{NH}_3$ — trigonal planar — $sp^2$",
+  "$\\text{XeF}_4$ — tetrahedral — $sp^3d^2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "ClF₃ has five electron domains (three bonds and two lone pairs), giving a T-shaped molecular geometry and the conventional hybridisation sp³d. The other combinations are incorrect.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{ClF}_3$: 3 bond pairs + 2 lone pairs; $sp^3d$ electron-pair arrangement, T-shaped molecular geometry.\n\nIndependent check: ClF₃ has five electron domains (three bonds and two lone pairs), giving a T-shaped molecular geometry and the conventional hybridisation sp³d. The other combinations are incorrect.",
+ "solution": "In $\\text{ClF}_3$, the central Cl has three bond pairs and two lone pairs, giving five electron domains and $sp^3d$ hybridisation.\nThe lone pairs occupy equatorial positions, so the molecular shape is T-shaped.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which molecule–shape–hybridisation combination is correct?",
+  "options": [
+   "$\\text{SF}_4$ — tetrahedral — $sp^3$",
+   "$\\text{ClF}_3$ — T-shaped — $sp^3d$",
+   "$\\text{NH}_3$ — trigonal planar — $sp^2$",
+   "$\\text{XeF}_4$ — tetrahedral — $sp^3d^2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{ClF}_3$: 3 bond pairs + 2 lone pairs; $sp^3d$ electron-pair arrangement, T-shaped molecular geometry.",
+  "distractor_notes": "A: confuses the electron-pair arrangement with the molecular shape. C: ignores the lone pair on nitrogen. D: confuses the electron-pair arrangement with the molecular shape."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

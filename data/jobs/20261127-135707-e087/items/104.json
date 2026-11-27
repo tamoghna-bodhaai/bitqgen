@@ -1,0 +1,68 @@
+{
+ "qno": 104,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 104,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter analogy",
+  "archetype": "positional value analogy",
+  "brief": "Word pair where the analogy uses letter positional values (e.g., a word mapped by adding a fixed number to each letter's alphabet position); 3/5 so the underlying rule needs one inference step, and options include plausible distractor pairs.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:88",
+   "2022:82",
+   "2025s2:81"
+  ]
+ },
+ "status": "ok",
+ "stem": "Choose the pair that completes the analogy: LAMP : NCOR :: BIRD : ?",
+ "options": [
+  "DJSF",
+  "DKTF",
+  "DKUE",
+  "CJTE"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Each letter shifts forward by 2: BIRD → DKTF.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each letter in LAMP advances two alphabet positions: L→N, A→C, M→O, P→R. Apply the same shift: BIRD→DKTF.\n\nIndependent check: Each letter shifts forward by 2: BIRD → DKTF.",
+ "solution": "Each letter shifts forward by two positions in the alphabet: $B\\to D$, $I\\to K$, $R\\to T$, $D\\to F$. Hence, BIRD becomes DKTF.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Choose the pair that completes the analogy: LAMP : NCOR :: BIRD : ?",
+  "options": [
+   "DKTF",
+   "DJSF",
+   "DKUE",
+   "CJTE"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Each letter in LAMP advances two alphabet positions: L→N, A→C, M→O, P→R. Apply the same shift: BIRD→DKTF.",
+  "distractor_notes": "B: The shifts are inconsistent. C: The final letter shifts by one extra position. D: The letters do not each advance by two."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

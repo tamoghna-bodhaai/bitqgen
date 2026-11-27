@@ -1,0 +1,70 @@
+{
+ "qno": 98,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 98,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter-number analogy",
+  "archetype": "letter shift analogy",
+  "brief": "Pair like ABC : DEF, then ask analogous pair for another letter group with a positional shift pattern.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:78",
+   "2022:82",
+   "2022:78"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If each letter in the group ABC is shifted three places forward in the alphabet to give DEF, what is the corresponding group for WXY?",
+ "options": [
+  "ABC",
+  "YZA",
+  "ZAC",
+  "ZAB"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Shift each letter forward 3 places, wrapping after Z: W→Z, X→A, Y→B, giving ZAB.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Shift each letter forward by 3 places, wrapping from Z to A: W → Z, X → A, Y → B. The resulting group is ZAB.\n\nIndependent check: Shift each letter forward 3 places, wrapping after Z: W→Z, X→A, Y→B, giving ZAB.",
+ "solution": "Shift each letter forward by 3 places, wrapping from Z to A: $W\\to Z$, $X\\to A$, and $Y\\to B$. The resulting group is ZAB.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If each letter in the group ABC is shifted three places forward in the alphabet to give DEF, what is the corresponding group for WXY?",
+  "options": [
+   "ZAB",
+   "YZA",
+   "ZAC",
+   "ABC"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Shift each letter forward by 3 places, wrapping from Z to A: W → Z, X → A, Y → B. The resulting group is ZAB.",
+  "distractor_notes": "B: Uses a two-place shift. C: The last letter does not follow the three-place shift. D: Does not apply the stated shift."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Freundlich adsorption isotherm",
+  "archetype": "statement evaluation",
+  "brief": "Four statements on adsorption (physical vs chemical, effect of surface area and temperature, Freundlich x/m = kp^1/n with 1/n between 0 and 1); pick the incorrect one.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:46",
+   "2025s1:52",
+   "2021:60"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which statement about adsorption is incorrect?",
+ "options": [
+  "Physical adsorption is generally reversible.",
+  "Physical adsorption is generally favoured by increasing temperature.",
+  "For a fixed mass of adsorbent, greater surface area generally increases adsorption.",
+  "The Freundlich isotherm is $x/m=kp^{1/n}$, with $0<1/n<1$. "
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Physical adsorption is generally exothermic, so increasing temperature disfavors it. Thus (B) is incorrect.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Physical adsorption is generally exothermic.\nIncreasing temperature generally decreases equilibrium physical adsorption.\nHence statement B is incorrect.\n\nIndependent check: Physical adsorption is generally exothermic, so increasing temperature disfavors it. Thus (B) is incorrect.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which statement about adsorption is incorrect?",
+  "options": [
+   "Physical adsorption is generally reversible.",
+   "Physical adsorption is generally favoured by increasing temperature.",
+   "For a fixed mass of adsorbent, greater surface area generally increases adsorption.",
+   "The Freundlich isotherm is $x/m=kp^{1/n}$, with $0<1/n<1$. "
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Physical adsorption is generally exothermic.\nIncreasing temperature generally decreases equilibrium physical adsorption.\nHence statement B is incorrect.",
+  "distractor_notes": "A: treats physical adsorption as irreversible. C: overlooks the effect of available surface area. D: misstates the Freundlich relation or its exponent range."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

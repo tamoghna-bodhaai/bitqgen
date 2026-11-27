@@ -1,0 +1,70 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gates",
+  "archetype": "circuit truth table",
+  "brief": "Give a truth table of outputs for a two/three-input combination; ask which gate arrangement (NAND/NOR wiring) reproduces it.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:20",
+   "2022:7",
+   "2026s2:16"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the inputs $A$ and $B$, the output $Y$ has the truth table below. Which gate arrangement produces $Y$?\n\n| $A$ | $B$ | $Y$ |\n|---|---|---|\n| 0 | 0 | 1 |\n| 0 | 1 | 0 |\n| 1 | 0 | 0 |\n| 1 | 1 | 0 |",
+ "options": [
+  "$\\operatorname{NOR}(A,B)$",
+  "$\\operatorname{NAND}(A,B)$",
+  "$\\operatorname{NAND}(\\overline{A},\\overline{B})$",
+  "$\\operatorname{NOR}(\\overline{A},\\overline{B})$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The table gives Y=1 only when A=B=0, so Y=¬(A∨B)=NOR(A,B).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Y=1$ only when $A=B=0$.<br>$Y=\\overline{A+B}=\\operatorname{NOR}(A,B)$\n\nIndependent check: The table gives Y=1 only when A=B=0, so Y=¬(A∨B)=NOR(A,B).",
+ "solution": "$Y=1$ only when $A=B=0$.\n$$Y=\\overline{A+B}=\\operatorname{NOR}(A,B)$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the inputs $A$ and $B$, the output $Y$ has the truth table below. Which gate arrangement produces $Y$?\n\n| $A$ | $B$ | $Y$ |\n|---|---|---|\n| 0 | 0 | 1 |\n| 0 | 1 | 0 |\n| 1 | 0 | 0 |\n| 1 | 1 | 0 |",
+  "options": [
+   "$\\operatorname{NOR}(A,B)$",
+   "$\\operatorname{NAND}(A,B)$",
+   "$\\operatorname{NAND}(\\overline{A},\\overline{B})$",
+   "$\\operatorname{NOR}(\\overline{A},\\overline{B})$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$Y=1$ only when $A=B=0$.<br>$Y=\\overline{A+B}=\\operatorname{NOR}(A,B)$",
+  "distractor_notes": "B: Chooses NAND, which is 1 for three input pairs. C: Uses complemented inputs, giving OR. D: Uses complemented inputs, giving AND."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

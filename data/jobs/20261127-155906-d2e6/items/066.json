@@ -1,0 +1,88 @@
+{
+ "qno": 66,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 66,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Nitrosation of phenols",
+  "archetype": "mechanism-based product",
+  "brief": "Figure showing reaction scheme: substituted phenol/ether with positions marked undergoing nitrosation or HI cleavage; identify the major regio-product or cleavage site with explanation.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:59",
+   "2025s1:40",
+   "2024s2:51"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For nitrosation of the phenol shown in the figure, which is the major mononitroso product?",
+ "options": [
+  "3-nitroso-2-methylphenol",
+  "4-nitroso-2-methylphenol",
+  "5-nitroso-2-methylphenol",
+  "6-nitroso-2-methylphenol"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q066_stem_v0.png",
+  "width_pct": 28,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q066_optA_v0.png",
+  "figs/q066_optB_v0.png",
+  "figs/q066_optC_v0.png",
+  "figs/q066_optD_v0.png"
+ ],
+ "option_width": 45,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "OH directs nitrosation to ortho/para positions. The para position is less hindered than the available ortho position, giving 4-nitroso-2-methylphenol.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "OH directs electrophilic substitution to ortho and para positions.\nThe para position (C4) is less hindered than the available ortho position (C6).\nMajor product: 4-nitroso-2-methylphenol.\n\nIndependent check: OH directs nitrosation to ortho/para positions. The para position is less hindered than the available ortho position, giving 4-nitroso-2-methylphenol.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For nitrosation of the phenol shown in the figure, which is the major mononitroso product?",
+  "options": [
+   "3-nitroso-2-methylphenol",
+   "4-nitroso-2-methylphenol",
+   "5-nitroso-2-methylphenol",
+   "6-nitroso-2-methylphenol"
+  ],
+  "option_smiles": [
+   "Oc1c(C)c(N=O)ccc1",
+   "Oc1c(C)cc(N=O)cc1",
+   "Oc1c(C)ccc(N=O)c1",
+   "Oc1c(C)cccc1N=O"
+  ],
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a benzene ring with an OH group at carbon 1 and a methyl group at adjacent carbon 2; label ring positions 1–6, numbering from the OH-bearing carbon. Draw an arrow to a blank product area, labelled above with NaNO2/HCl. Do not draw a product.",
+   "smiles": "Oc1c(C)cccc1"
+  },
+  "difficulty_estimate": 3,
+  "working": "OH directs electrophilic substitution to ortho and para positions.\nThe para position (C4) is less hindered than the available ortho position (C6).\nMajor product: 4-nitroso-2-methylphenol.",
+  "distractor_notes": "A and C place nitroso at meta positions; D selects the more hindered ortho position."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

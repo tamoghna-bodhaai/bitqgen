@@ -1,0 +1,68 @@
+{
+ "qno": 1,
+ "section": "Physics",
+ "slot": {
+  "qno": 1,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Newton's law of cooling",
+  "archetype": "ratio of two situations",
+  "brief": "Body cools from one temperature range to another in a given time; using Newton's law of cooling, find the time for a second (stated) temperature drop in the same surroundings.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:21",
+   "2026s1:10",
+   "2023s2:7"
+  ]
+ },
+ "status": "ok",
+ "stem": "A body in surroundings at $20^\\circ\\text{C}$ cools from $84^\\circ\\text{C}$ to $52^\\circ\\text{C}$ in $6$ min. Assuming Newton’s law of cooling holds, how long will it take to cool further to $28^\\circ\\text{C}$?",
+ "options": [
+  "$4.5$ min",
+  "$12$ min",
+  "$6$ min",
+  "$18$ min"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Excess temperature falls from 84−20=64°C to 52−20=32°C in 6 min, halving. To reach 28°C, the excess must fall from 32°C to 8°C, two halvings, taking 12 min.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$e^{-6k}=\\dfrac{52-20}{84-20}=\\dfrac12$; $e^{-kt}=\\dfrac{28-20}{52-20}=\\dfrac14$; $t=6\\dfrac{\\ln4}{\\ln2}=12$ min\n\nIndependent check: Excess temperature falls from 84−20=64°C to 52−20=32°C in 6 min, halving. To reach 28°C, the excess must fall from 32°C to 8°C, two halvings, taking 12 min.",
+ "solution": "By Newton’s law of cooling, the excess temperature halves every $6$ min: $\n\\frac{52-20}{84-20}=\\frac12$.\nFrom $52^\\circ\\text{C}$ to $28^\\circ\\text{C}$, the excess temperature falls from $32^\\circ\\text{C}$ to $8^\\circ\\text{C}$, i.e. two halvings; hence $t=2(6)=12$ min.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A body in surroundings at $20^\\circ\\text{C}$ cools from $84^\\circ\\text{C}$ to $52^\\circ\\text{C}$ in $6$ min. Assuming Newton’s law of cooling holds, how long will it take to cool further to $28^\\circ\\text{C}$?",
+  "options": [
+   "$4.5$ min",
+   "$6$ min",
+   "$12$ min",
+   "$18$ min"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$e^{-6k}=\\dfrac{52-20}{84-20}=\\dfrac12$; $e^{-kt}=\\dfrac{28-20}{52-20}=\\dfrac14$; $t=6\\dfrac{\\ln4}{\\ln2}=12$ min",
+  "distractor_notes": "A: assumes a constant cooling rate; B: assumes the second interval takes the same time as the first; D: evaluates $\\ln4/\\ln2$ incorrectly as $3$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

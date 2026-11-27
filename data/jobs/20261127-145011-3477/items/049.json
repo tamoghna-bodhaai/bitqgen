@@ -1,0 +1,79 @@
+{
+ "qno": 49,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 49,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Williamson synthesis",
+  "archetype": "reagent selection",
+  "brief": "Show a figure of a substrate with a bulky/unsymmetrical alkyl group; choose the correct halide + alkoxide combination for Williamson synthesis",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:51",
+   "2024s2:41",
+   "2026s2:33"
+  ],
+  "origin": "variant",
+  "bank_ref": "g110bce508745"
+ },
+ "status": "ok",
+ "stem": "Which reactant pair is most suitable for preparing the ether shown in the figure by Williamson synthesis?",
+ "options": [
+  "2-bromo-2-methylpropane and sodium ethoxide",
+  "1-bromo-2-methylpropane and sodium methoxide",
+  "Bromoethane and sodium tert-butoxide",
+  "Bromoethane and sodium ethoxide"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q049_stem_v0.png",
+  "width_pct": 32,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The ether is ethyl tert-butyl ether. Williamson synthesis works best with the less hindered halide: bromoethane with sodium tert-butoxide gives the target by SN2.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The ether is $(\\text{CH}_3)_3\\text{COCH}_2\\text{CH}_3$.\nUse a primary halide for the $S_\\text{N}2$ step: $\\text{CH}_3\\text{CH}_2\\text{Br} + (\\text{CH}_3)_3\\text{CONa} \\rightarrow (\\text{CH}_3)_3\\text{COCH}_2\\text{CH}_3 + \\text{NaBr}$.\nA tertiary halide favours elimination rather than Williamson substitution.\n\nIndependent check: The ether is ethyl tert-butyl ether. Williamson synthesis works best with the less hindered halide: bromoethane with sodium tert-butoxide gives the target by SN2.",
+ "solution": "Williamson synthesis proceeds by an $S_N2$ reaction, so the alkyl halide should be primary and least hindered.\n$$\\text{CH}_3\\text{CH}_2\\text{Br} + (\\text{CH}_3)_3\\text{CONa} \\rightarrow (\\text{CH}_3)_3\\text{COCH}_2\\text{CH}_3 + \\text{NaBr}$$\nThus, bromoethane and sodium tert-butoxide form the ether shown.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which reactant pair is most suitable for preparing the ether shown in the figure by Williamson synthesis?",
+  "options": [
+   "2-bromo-2-methylpropane and sodium ethoxide",
+   "Bromoethane and sodium tert-butoxide",
+   "1-bromo-2-methylpropane and sodium methoxide",
+   "Bromoethane and sodium ethoxide"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw the ether with a central carbon bonded to three methyl groups and to an oxygen atom; the oxygen is bonded to a CH2 group, which is bonded to a terminal CH3 group. Show no reaction arrows or reagents.",
+   "smiles": "CCOC(C)(C)C"
+  },
+  "difficulty_estimate": 1,
+  "working": "The ether is $(\\text{CH}_3)_3\\text{COCH}_2\\text{CH}_3$.\nUse a primary halide for the $S_\\text{N}2$ step: $\\text{CH}_3\\text{CH}_2\\text{Br} + (\\text{CH}_3)_3\\text{CONa} \\rightarrow (\\text{CH}_3)_3\\text{COCH}_2\\text{CH}_3 + \\text{NaBr}$.\nA tertiary halide favours elimination rather than Williamson substitution.",
+  "distractor_notes": "A: A tertiary halide favours elimination. C: Produces a different ether. D: Produces diethyl ether, not the target."
+ },
+ "variant_of": "g110bce508745",
+ "author_model": "openai/gpt-6-luna-pro"
+}

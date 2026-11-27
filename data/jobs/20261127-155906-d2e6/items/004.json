@@ -1,0 +1,70 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read-off parameters",
+  "brief": "Give a sinusoidal wave equation y(x,t); ask the student to read off amplitude, wavelength, frequency and wave speed, selecting the correct combination.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:26",
+   "2023s1:29",
+   "2026s1:16"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A sinusoidal wave is described by $y=0.02\\sin\\left(2\\pi t-\\dfrac{\\pi x}{2}\\right)$, where $x$ and $y$ are in metres and $t$ is in seconds. Which set gives its amplitude, wavelength, frequency and speed?",
+ "options": [
+  "$0.02$ m, $4$ m, $1$ Hz, $4$ m s$^{-1}$",
+  "$0.02$ m, $2$ m, $1$ Hz, $2$ m s$^{-1}$",
+  "$0.02$ m, $4$ m, $2$ Hz, $8$ m s$^{-1}$",
+  "$0.02$ m, $4$ m, $1$ Hz, $1$ m s$^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From the wave equation, amplitude = 0.02 m, angular frequency ω = 2π rad/s, and wave number k = π/2 rad/m. Thus f = ω/(2π) = 1 Hz, λ = 2π/k = 4 m, and v = fλ = 4 m/s.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=0.02$ m, $\\omega=2\\pi$ rad s$^{-1}$, $k=\\dfrac{\\pi}{2}$ rad m$^{-1}$. $f=\\dfrac{\\omega}{2\\pi}=1$ Hz; $\\lambda=\\dfrac{2\\pi}{k}=4$ m; $v=\\dfrac{\\omega}{k}=4$ m s$^{-1}$.\n\nIndependent check: From the wave equation, amplitude = 0.02 m, angular frequency ω = 2π rad/s, and wave number k = π/2 rad/m. Thus f = ω/(2π) = 1 Hz, λ = 2π/k = 4 m, and v = fλ = 4 m/s.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A sinusoidal wave is described by $y=0.02\\sin\\left(2\\pi t-\\dfrac{\\pi x}{2}\\right)$, where $x$ and $y$ are in metres and $t$ is in seconds. Which set gives its amplitude, wavelength, frequency and speed?",
+  "options": [
+   "$0.02$ m, $4$ m, $1$ Hz, $4$ m s$^{-1}$",
+   "$0.02$ m, $2$ m, $1$ Hz, $2$ m s$^{-1}$",
+   "$0.02$ m, $4$ m, $2$ Hz, $8$ m s$^{-1}$",
+   "$0.02$ m, $4$ m, $1$ Hz, $1$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A=0.02$ m, $\\omega=2\\pi$ rad s$^{-1}$, $k=\\dfrac{\\pi}{2}$ rad m$^{-1}$. $f=\\dfrac{\\omega}{2\\pi}=1$ Hz; $\\lambda=\\dfrac{2\\pi}{k}=4$ m; $v=\\dfrac{\\omega}{k}=4$ m s$^{-1}$.",
+  "distractor_notes": "B: doubles the wave number; C: doubles the frequency and speed; D: uses the reciprocal of the correct wave speed."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

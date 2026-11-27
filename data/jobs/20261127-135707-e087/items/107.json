@@ -1,0 +1,68 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "restricted arrangement",
+  "brief": "Words from letters of a given word where two specific letters must always be together and one letter never occupies an end position.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:104",
+   "2026s1:97",
+   "2024s1:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "How many distinct arrangements of the letters of MARKET have M and A together, while E is never at an end?",
+ "options": [
+  "$96$",
+  "$120$",
+  "$240$",
+  "$144$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Treat MA/AM as one block, giving 5 objects. There are 2·5! arrangements; subtract those with E at either end, 2·2·4!. Thus 240−96=144.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Treat $MA$ as one block: total $=2\\cdot5!=240$. With $E$ at either end: $2\\cdot2\\cdot4!=96$. Required number $=240-96=144$.\n\nIndependent check: Treat MA/AM as one block, giving 5 objects. There are 2·5! arrangements; subtract those with E at either end, 2·2·4!. Thus 240−96=144.",
+ "solution": "Treat $MA$ or $AM$ as one block, giving $5$ objects.\n$$2\\cdot5!-2\\cdot2\\cdot4!=240-96=144$$\nHence, the required number is $144$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many distinct arrangements of the letters of MARKET have M and A together, while E is never at an end?",
+  "options": [
+   "$96$",
+   "$120$",
+   "$144$",
+   "$240$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Treat $MA$ as one block: total $=2\\cdot5!=240$. With $E$ at either end: $2\\cdot2\\cdot4!=96$. Required number $=240-96=144$.",
+  "distractor_notes": "A: counts only arrangements with $E$ at an end; B: subtracts an incorrect end-position count; D: ignores the restriction on $E$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

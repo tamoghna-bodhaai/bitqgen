@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "In a Wheatstone bridge network, the four arms $AB$, $BC$, $CD$, and $DA$ have resistances $P$, $Q$, $S$, and $R$, respectively. A galvanometer is connected between $B$ and $D$, and a battery across $A$ and $C$. When an unknown resistor of resistance $X$ is connected in parallel with arm $CD$, the bridge balances. If $X$ is instead disconnected from $CD$ and connected in series with arm $DA$, the bridge is again balanced. The value of $X$ must be",
+ "stem": "In a Wheatstone bridge, a battery is connected across $A,C$ and a galvanometer across $B,D$. The arm resistances $AB,BC,CD,DA$ are respectively $a\\parallel b$, $c+d$, $X+g$, and $e\\parallel f$. All symbols denote resistances. If the bridge is balanced, what is $X$?",
  "options": [
-  "$\\sqrt{RS}$",
-  "$\\dfrac{RS}{R+S}$",
-  "$\\dfrac{R+S}{2}$",
-  "$\\dfrac{S^2}{R}$"
+  "$\\dfrac{ef(c+d)(a+b)}{ab(e+f)}+g$",
+  "$\\dfrac{ef(c+d)(a+b)}{ab(e+f)}-g$",
+  "$\\dfrac{ef(c+d)}{(e+f)(a+b)}-g$",
+  "$\\dfrac{abef}{(a+b)(e+f)(c+d)}-g$"
  ],
- "answer": "A",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Balance requires P/Q = R_arm/S_arm. With X parallel to CD (S): P/Q = R(S+X)/(SX). With X in series with DA (R): P/Q = (R+X)/S. Equating: R(S+X)/X = R+X ⇒ RS = X² ⇒ X = √(RS). Numeric check (R=3, S=12, X=6) gives both ratios 0.75.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At balance, \\(R_{AB}R_{CD}=R_{AD}R_{BC}\\). Thus \\(X+g=\\dfrac{ef}{e+f}\\dfrac{c+d}{ab/(a+b)}\\), so \\(X=\\dfrac{ef(c+d)(a+b)}{ab(e+f)}-g\\).",
    "answer": "A",
-   "confidence": 0.98,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The Wheatstone bridge has arms $AB = P$, $BC = Q$, $DA = R$, and $CD = S$.\n\nIn the first case, when resistor $X$ is connected in parallel with arm $CD$, the effective resistance of arm $CD$ becomes:\n$$S' = \\dfrac{S X}{S + X}$$\nThe balance condition gives:\n$$\\dfrac{P}{Q} = \\dfrac{R}{S'} = \\dfrac{R(S + X)}{S X} \\quad \\text{--- (1)}$$\n\nIn the second case, when $X$ is connected in series with arm $DA$, the effective resistance of arm $DA$ becomes:\n$$R' = R + X$$\nwhile arm $CD$ has its original resistance $S$. The bridge is again balanced, so:\n$$\\dfrac{P}{Q} = \\dfrac{R'}{S} = \\dfrac{R + X}{S} \\quad \\text{--- (2)}$$\n\nEquating (1) and (2):\n$$\\dfrac{R(S + X)}{S X} = \\dfrac{R + X}{S}$$\n\nMultiplying both sides by $S$:\n$$\\dfrac{R(S + X)}{X} = R + X$$\n$$\\dfrac{RS}{X} + R = R + X$$\n$$\\dfrac{RS}{X} = X \\implies X^2 = RS \\implies X = \\sqrt{RS}$$\n\nIndependent check: Balance requires P/Q = R_arm/S_arm. With X parallel to CD (S): P/Q = R(S+X)/(SX). With X in series with DA (R): P/Q = (R+X)/S. Equating: R(S+X)/X = R+X ⇒ RS = X² ⇒ X = √(RS). Numeric check (R=3, S=12, X=6) gives both ratios 0.75.",
- "solution": "",
+ "working": "$P=\\dfrac{ab}{a+b},\\ Q=c+d,\\ R=\\dfrac{ef}{e+f},\\ S=X+g$; balance: $\\dfrac{P}{Q}=\\dfrac{R}{S}$. Thus $X+g=\\dfrac{RQ}{P}=\\dfrac{ef(c+d)(a+b)}{ab(e+f)}$, so $X=\\dfrac{ef(c+d)(a+b)}{ab(e+f)}-g$.\n\nIndependent check: At balance, \\(R_{AB}R_{CD}=R_{AD}R_{BC}\\). Thus \\(X+g=\\dfrac{ef}{e+f}\\dfrac{c+d}{ab/(a+b)}\\), so \\(X=\\dfrac{ef(c+d)(a+b)}{ab(e+f)}-g\\).",
+ "solution": "At balance, $R_{AB}R_{CD}=R_{AD}R_{BC}$. Using $R_{AB}=\\frac{ab}{a+b}$ and $R_{AD}=\\frac{ef}{e+f}$,\n$$X+g=\\frac{\\frac{ef}{e+f}(c+d)}{\\frac{ab}{a+b}}=\\frac{ef(c+d)(a+b)}{ab(e+f)}.$$\nHence, $X=\\frac{ef(c+d)(a+b)}{ab(e+f)}-g$.",
  "locked": false,
  "difficulty": 3,
  "draft": {
-  "stem": "In a Wheatstone bridge network, the four arms $AB$, $BC$, $CD$, and $DA$ have resistances $P$, $Q$, $S$, and $R$, respectively. A galvanometer is connected between $B$ and $D$, and a battery across $A$ and $C$. When an unknown resistor of resistance $X$ is connected in parallel with arm $CD$, the bridge balances. If $X$ is instead disconnected from $CD$ and connected in series with arm $DA$, the bridge is again balanced. The value of $X$ must be",
+  "stem": "In a Wheatstone bridge, a battery is connected across $A,C$ and a galvanometer across $B,D$. The arm resistances $AB,BC,CD,DA$ are respectively $a\\parallel b$, $c+d$, $X+g$, and $e\\parallel f$. All symbols denote resistances. If the bridge is balanced, what is $X$?",
   "options": [
-   "$\\sqrt{RS}$",
-   "$\\dfrac{RS}{R+S}$",
-   "$\\dfrac{R+S}{2}$",
-   "$\\dfrac{S^2}{R}$"
+   "$\\dfrac{ef(c+d)(a+b)}{ab(e+f)}-g$",
+   "$\\dfrac{ef(c+d)(a+b)}{ab(e+f)}+g$",
+   "$\\dfrac{ef(c+d)}{(e+f)(a+b)}-g$",
+   "$\\dfrac{abef}{(a+b)(e+f)(c+d)}-g$"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "The Wheatstone bridge has arms $AB = P$, $BC = Q$, $DA = R$, and $CD = S$.\n\nIn the first case, when resistor $X$ is connected in parallel with arm $CD$, the effective resistance of arm $CD$ becomes:\n$$S' = \\dfrac{S X}{S + X}$$\nThe balance condition gives:\n$$\\dfrac{P}{Q} = \\dfrac{R}{S'} = \\dfrac{R(S + X)}{S X} \\quad \\text{--- (1)}$$\n\nIn the second case, when $X$ is connected in series with arm $DA$, the effective resistance of arm $DA$ becomes:\n$$R' = R + X$$\nwhile arm $CD$ has its original resistance $S$. The bridge is again balanced, so:\n$$\\dfrac{P}{Q} = \\dfrac{R'}{S} = \\dfrac{R + X}{S} \\quad \\text{--- (2)}$$\n\nEquating (1) and (2):\n$$\\dfrac{R(S + X)}{S X} = \\dfrac{R + X}{S}$$\n\nMultiplying both sides by $S$:\n$$\\dfrac{R(S + X)}{X} = R + X$$\n$$\\dfrac{RS}{X} + R = R + X$$\n$$\\dfrac{RS}{X} = X \\implies X^2 = RS \\implies X = \\sqrt{RS}$$",
-  "distractor_notes": "B encodes confusing the geometric mean with the parallel combination formula (harmonic-type form).\nC encodes assuming the arithmetic mean of the two arm resistances.\nD encodes an algebraic error when equating the balance conditions (cancelling terms improperly to get $X = S^2/R$).",
   "figure": null,
-  "difficulty_estimate": 4
- }
+  "difficulty_estimate": 4,
+  "working": "$P=\\dfrac{ab}{a+b},\\ Q=c+d,\\ R=\\dfrac{ef}{e+f},\\ S=X+g$; balance: $\\dfrac{P}{Q}=\\dfrac{R}{S}$. Thus $X+g=\\dfrac{RQ}{P}=\\dfrac{ef(c+d)(a+b)}{ab(e+f)}$, so $X=\\dfrac{ef(c+d)(a+b)}{ab(e+f)}-g$.",
+  "distractor_notes": "B: adds rather than subtracts the series resistance $g$. C: treats the parallel arm $AB$ as a series combination. D: inverts the Wheatstone balance ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

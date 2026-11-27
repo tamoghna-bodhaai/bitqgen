@@ -1,0 +1,56 @@
+{
+ "qno": 73,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 73,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Nernst equation",
+  "archetype": "Nernst computation",
+  "brief": "Given standard electrode potentials of a few metals, rank their reducing strength or pick which reaction is feasible (compare E° pairs)",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:56",
+   "2026s2:40",
+   "2025s2:52"
+  ],
+  "origin": "direct",
+  "bank_ref": "g4c63ac1b7d86"
+ },
+ "status": "ok",
+ "stem": "What is the reduction potential of a copper electrode dipped in a $0.01\\ \\text{M}\\ \\text{Cu}^{2+}$ solution at $298\\ \\text{K}$? (Given: $E^\\circ_{\\text{Cu}^{2+}/\\text{Cu}} = +0.34\\ \\text{V}$ and $\\dfrac{2.303RT}{F} = 0.059\\ \\text{V}$)",
+ "options": [
+  "$-0.281\\ \\text{V}$",
+  "$+0.222\\ \\text{V}$",
+  "$+0.399\\ \\text{V}$",
+  "$+0.281\\ \\text{V}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "qwen/qwen4-max",
+   "answer": "C",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g4c63ac1b7d86 (verified in job 20261126-121821-a29c)"
+ ],
+ "working": "The half-cell reduction reaction is:\n$$\\text{Cu}^{2+}(aq) + 2e^- \\rightarrow \\text{Cu}(s)$$\n\nHere, the number of electrons transferred is $n = 2$.\n\nApplying the Nernst equation at $298\\ \\text{K}$:\n$$E = E^\\circ - \\dfrac{0.059}{n}\\log_{10}\\left(\\dfrac{1}{[\\text{Cu}^{2+}]}\\right)$$\n\nSubstitute the given values:\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}\\left(\\dfrac{1}{0.01}\\right)$$\n$$E = 0.34 - \\dfrac{0.059}{2}\\log_{10}(10^2)$$\n$$E = 0.34 - \\dfrac{0.059}{2} \\times 2$$\n$$E = 0.34 - 0.059 = +0.281\\ \\text{V}$$\n\nIndependent check: Nernst: E = E° + (0.059/n) log[Cu²⁺] with n = 2. log(0.01) = −2, so E = 0.34 + (0.059/2)(−2) = 0.34 − 0.059 = +0.281 V.",
+ "solution": "For $\\text{Cu}^{2+}+2e^-\\rightarrow\\text{Cu}$, $n=2$. Using the Nernst equation,\n$$E=E^\\circ+\\frac{0.059}{2}\\log[\\text{Cu}^{2+}]=0.34+\\frac{0.059}{2}\\log(0.01)=+0.281\\ \\text{V}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g4c63ac1b7d86",
+ "author_model": null
+}

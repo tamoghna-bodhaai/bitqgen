@@ -1,0 +1,70 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Triangle classification",
+  "archetype": "vector computation",
+  "brief": "Given position vectors of triangle vertices, classify the triangle (right-angled/isosceles/scalene) by computing side lengths via dot/cross products.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:123",
+   "2025s1:95",
+   "2026s1:119"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The position vectors of $A,B,C$ are respectively $\\hat i+2\\hat j$, $4\\hat i+2\\hat j$ and $\\hat i+6\\hat j$. The triangle is",
+ "options": [
+  "Right-angled at $C$",
+  "Right-angled at $B$",
+  "Right-angled at $A$",
+  "Scalene and not right-angled"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A(1,2), B(4,2), C(1,6). AB is horizontal and AC is vertical, so AB ⟂ AC; the angle at A is 90°.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|AB|^2=9,\\quad |AC|^2=16,\\quad |BC|^2=25;\\quad |AB|^2+|AC|^2=|BC|^2$\n\nIndependent check: A(1,2), B(4,2), C(1,6). AB is horizontal and AC is vertical, so AB ⟂ AC; the angle at A is 90°.",
+ "solution": "The position vectors give $A(1,2)$, $B(4,2)$ and $C(1,6)$. Since $AB$ is horizontal and $AC$ is vertical, $AB\\perp AC$; hence the triangle is right-angled at $A$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The position vectors of $A,B,C$ are respectively $\\hat i+2\\hat j$, $4\\hat i+2\\hat j$ and $\\hat i+6\\hat j$. The triangle is",
+  "options": [
+   "Right-angled at $A$",
+   "Right-angled at $B$",
+   "Right-angled at $C$",
+   "Scalene and not right-angled"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$|AB|^2=9,\\quad |AC|^2=16,\\quad |BC|^2=25;\\quad |AB|^2+|AC|^2=|BC|^2$",
+  "distractor_notes": "B: identifies the wrong vertex as the right angle; C: identifies the wrong vertex as the right angle; D: misses the Pythagorean relation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

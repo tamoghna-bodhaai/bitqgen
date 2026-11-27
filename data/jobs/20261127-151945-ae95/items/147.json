@@ -1,0 +1,71 @@
+{
+ "qno": 147,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 147,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle – tangency condition",
+  "archetype": "tangency condition",
+  "brief": "Find the condition on k for a line y = mx + c to be tangent to a circle (or for two circles to touch), using distance from centre = radius; then a numerical value.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:111",
+   "2024s1:107",
+   "2023s2:96"
+  ],
+  "origin": "variant",
+  "bank_ref": "ged8c13bfba7f"
+ },
+ "status": "ok",
+ "stem": "The line $y=\\dfrac{3}{4}x+k$ is tangent to the circle $(x-1)^2+(y+2)^2=16$. If $k>0$, find $k$.",
+ "options": [
+  "$-\\dfrac{31}{4}$",
+  "$\\dfrac{5}{4}$",
+  "$\\dfrac{9}{4}$",
+  "$\\dfrac{11}{4}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The distance from the center (1,−2) to 3x−4y+4k=0 must equal the radius 4: |11+4k|/5=4. Thus k=9/4 or −31/4; k>0 selects 9/4.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$3x-4y+4k=0$, with centre $(1,-2)$ and radius $4$.<br>\\dfrac{|3+8+4k|}{5}=4 \\Rightarrow |11+4k|=20$.<br>$k=\\dfrac{9}{4}$ or $k=-\\dfrac{31}{4}$; since $k>0$, $k=\\dfrac{9}{4}$.\n\nIndependent check: The distance from the center (1,−2) to 3x−4y+4k=0 must equal the radius 4: |11+4k|/5=4. Thus k=9/4 or −31/4; k>0 selects 9/4.",
+ "solution": "The perpendicular distance from the centre $(1,-2)$ to the tangent must equal the radius $4$.\n$$\\frac{|3+8+4k|}{\\sqrt{3^2+(-4)^2}}=4 \\implies |11+4k|=20$$\nThus $k=\\frac{9}{4}$ or $k=-\\frac{31}{4}$; since $k>0$, $k=\\frac{9}{4}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The line $y=\\dfrac{3}{4}x+k$ is tangent to the circle $(x-1)^2+(y+2)^2=16$. If $k>0$, find $k$.",
+  "options": [
+   "$-\\dfrac{31}{4}$",
+   "$\\dfrac{5}{4}$",
+   "$\\dfrac{9}{4}$",
+   "$\\dfrac{11}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$3x-4y+4k=0$, with centre $(1,-2)$ and radius $4$.<br>\\dfrac{|3+8+4k|}{5}=4 \\Rightarrow |11+4k|=20$.<br>$k=\\dfrac{9}{4}$ or $k=-\\dfrac{31}{4}$; since $k>0$, $k=\\dfrac{9}{4}$.",
+  "distractor_notes": "A: chooses the negative tangent value. B: arithmetic error when solving the distance condition. D: arithmetic error when solving the distance condition."
+ },
+ "variant_of": "ged8c13bfba7f",
+ "author_model": "openai/gpt-6-luna-pro"
+}

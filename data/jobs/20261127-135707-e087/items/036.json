@@ -1,0 +1,68 @@
+{
+ "qno": 36,
+ "section": "Physics",
+ "slot": {
+  "qno": 36,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Rotating liquid – pressure variation",
+  "archetype": "integration of pressure gradient",
+  "brief": "Cylindrical vessel full of liquid rotated at angular speed ω; find height difference between edge and centre or pressure at a point using parabolic free-surface relation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:2",
+   "2025s2:15",
+   "2023s2:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "Water of initial depth $0.50$ m in a cylindrical vessel of radius $0.40$ m is brought to steady rotation at $5$ rad s$^{-1}$. If no water spills, what is the gauge pressure at the bottom centre? Take $\\rho=1000$ kg m$^{-3}$ and $g=10$ m s$^{-2}$.",
+ "options": [
+  "$3.0\\times10^3\\ \\text{Pa}$",
+  "$5.0\\times10^3\\ \\text{Pa}$",
+  "$4.0\\times10^3\\ \\text{Pa}$",
+  "$6.0\\times10^3\\ \\text{Pa}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For rigid rotation, the free surface is z(r)=z_c+ω²r²/(2g). Volume conservation gives z_c=h₀−ω²R²/(4g)=0.50−0.10=0.40 m. Bottom-centre gauge pressure is ρgz_c=1000×10×0.40=4.0×10³ Pa.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$h(r)=h_c+\\dfrac{\\omega^2r^2}{2g}$. Volume conservation gives $h_0=h_c+\\dfrac{\\omega^2R^2}{4g}$, so $h_c=0.50-\\dfrac{25(0.40)^2}{40}=0.40$ m. $p_g=\\rho gh_c=1000(10)(0.40)=4.0\\times10^3$ Pa.\n\nIndependent check: For rigid rotation, the free surface is z(r)=z_c+ω²r²/(2g). Volume conservation gives z_c=h₀−ω²R²/(4g)=0.50−0.10=0.40 m. Bottom-centre gauge pressure is ρgz_c=1000×10×0.40=4.0×10³ Pa.",
+ "solution": "For rigid rotation, the free-surface height is $h(r)=h_c+\\dfrac{\\omega^2r^2}{2g}$. Volume conservation gives\n$$h_c=h_0-\\frac{\\omega^2R^2}{4g}=0.50-\\frac{25(0.40)^2}{40}=0.40\\ \\text{m}.$$\nThus, the bottom-centre gauge pressure is $p_g=\\rho gh_c=1000(10)(0.40)=4.0\\times10^3\\ \\text{Pa}$. ⊳",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Water of initial depth $0.50$ m in a cylindrical vessel of radius $0.40$ m is brought to steady rotation at $5$ rad s$^{-1}$. If no water spills, what is the gauge pressure at the bottom centre? Take $\\rho=1000$ kg m$^{-3}$ and $g=10$ m s$^{-2}$.",
+  "options": [
+   "$3.0\\times10^3\\ \\text{Pa}$",
+   "$4.0\\times10^3\\ \\text{Pa}$",
+   "$5.0\\times10^3\\ \\text{Pa}$",
+   "$6.0\\times10^3\\ \\text{Pa}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$h(r)=h_c+\\dfrac{\\omega^2r^2}{2g}$. Volume conservation gives $h_0=h_c+\\dfrac{\\omega^2R^2}{4g}$, so $h_c=0.50-\\dfrac{25(0.40)^2}{40}=0.40$ m. $p_g=\\rho gh_c=1000(10)(0.40)=4.0\\times10^3$ Pa.",
+  "distractor_notes": "A: uses $2g$ instead of $4g$ in the volume-averaged height correction; C: ignores the rotation-induced change in central depth; D: calculates pressure using the edge depth instead of the centre depth."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

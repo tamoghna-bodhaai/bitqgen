@@ -1,0 +1,56 @@
+{
+ "qno": 113,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 113,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Rate of change",
+  "archetype": "related rates",
+  "brief": "Classic rate of change: water draining from a conical tank or balloon inflating; relate dV/dt to dr/dt via chain rule",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:129",
+   "2024s2:120",
+   "2024s2:97"
+  ],
+  "origin": "direct",
+  "bank_ref": "g8a809b4b2d56"
+ },
+ "status": "ok",
+ "stem": "A conical vessel has liquid depth $h$ and surface radius $r=\\dfrac{h}{3}$. If $h$ is increasing at $2$ cm s$^{-1}$, find the rate at which its volume increases when $h=6$ cm.",
+ "options": [
+  "$8\\pi\\ \\text{cm}^3\\,\\text{s}^{-1}$",
+  "$4\\pi\\ \\text{cm}^3\\,\\text{s}^{-1}$",
+  "$12\\pi\\ \\text{cm}^3\\,\\text{s}^{-1}$",
+  "$24\\pi\\ \\text{cm}^3\\,\\text{s}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g8a809b4b2d56 (verified in job 20261127-132429-aa8a)"
+ ],
+ "working": "$V=\\dfrac{1}{3}\\pi r^2h=\\dfrac{\\pi h^3}{27}$\n$\\dfrac{dV}{dt}=\\dfrac{\\pi h^2}{9}\\dfrac{dh}{dt}=\\dfrac{\\pi(6)^2}{9}(2)=8\\pi\\ \\text{cm}^3\\,\\text{s}^{-1}$\n\nIndependent check: V=(1/3)πr²h=πh³/27, so dV/dt=(πh²/9)(dh/dt). At h=6 and dh/dt=2, dV/dt=8π cm³ s⁻¹.",
+ "solution": "Using $V=\\frac{1}{3}\\pi r^2h$ and $r=\\frac{h}{3}$, we get $V=\\frac{\\pi h^3}{27}$.\n$$\\frac{dV}{dt}=\\frac{\\pi h^2}{9}\\frac{dh}{dt}=\\frac{\\pi(6)^2}{9}(2)=8\\pi\\ \\text{cm}^3\\,\\text{s}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g8a809b4b2d56",
+ "author_model": "openai/gpt-6-luna-pro"
+}

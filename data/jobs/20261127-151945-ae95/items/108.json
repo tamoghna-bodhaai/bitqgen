@@ -1,0 +1,71 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Vector triple product",
+  "archetype": "standard identity",
+  "brief": "Use the identity a×(b×c) = (a·c)b − (a·b)c to compute a vector expression for given simple vectors; ask for the resulting vector or its magnitude.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:119",
+   "2026s2:121",
+   "2025s1:95"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd0fd45a24e85"
+ },
+ "status": "ok",
+ "stem": "The position vectors of $P,Q,R,S$ are $(1,1,0),(3,2,-1),(2,4,2),(3,0,1)$, respectively. Find $|\\vec{PQ}\\times(\\vec{PR}\\times\\vec{PS})|$.",
+ "options": [
+  "$5\\sqrt{2}$",
+  "$\\sqrt{62}$",
+  "$\\sqrt{122}$",
+  "$7\\sqrt{2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let a=PQ=(2,1,-1), b=PR=(1,3,2), c=PS=(2,-1,1). Using a×(b×c)=b(a·c)-c(a·b), with a·c=2 and a·b=3, gives (-4,9,1). Its magnitude is √98=7√2.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\vec{PQ}=(2,1,-1),\\quad \\vec{PR}=(1,3,2),\\quad \\vec{PS}=(2,-1,1)$\n$\\vec{PQ}\\cdot\\vec{PS}=2,\\quad \\vec{PQ}\\cdot\\vec{PR}=3$\n$\\vec{PQ}\\times(\\vec{PR}\\times\\vec{PS})=2\\vec{PR}-3\\vec{PS}=(-4,9,1)$\n$|(-4,9,1)|=\\sqrt{16+81+1}=7\\sqrt{2}$\n\nIndependent check: Let a=PQ=(2,1,-1), b=PR=(1,3,2), c=PS=(2,-1,1). Using a×(b×c)=b(a·c)-c(a·b), with a·c=2 and a·b=3, gives (-4,9,1). Its magnitude is √98=7√2.",
+ "solution": "Using $\\vec a\\times(\\vec b\\times\\vec c)=\\vec b(\\vec a\\cdot\\vec c)-\\vec c(\\vec a\\cdot\\vec b)$, with $\\vec a=\\vec{PQ}=(2,1,-1)$, $\\vec b=\\vec{PR}=(1,3,2)$ and $\\vec c=\\vec{PS}=(2,-1,1)$:\n$$\\vec{PQ}\\times(\\vec{PR}\\times\\vec{PS})=2\\vec{PR}-3\\vec{PS}=(-4,9,1).$$\nHence, $|(-4,9,1)|=\\sqrt{16+81+1}=7\\sqrt{2}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The position vectors of $P,Q,R,S$ are $(1,1,0),(3,2,-1),(2,4,2),(3,0,1)$, respectively. Find $|\\vec{PQ}\\times(\\vec{PR}\\times\\vec{PS})|$.",
+  "options": [
+   "$5\\sqrt{2}$",
+   "$\\sqrt{62}$",
+   "$7\\sqrt{2}$",
+   "$\\sqrt{122}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\vec{PQ}=(2,1,-1),\\quad \\vec{PR}=(1,3,2),\\quad \\vec{PS}=(2,-1,1)$\n$\\vec{PQ}\\cdot\\vec{PS}=2,\\quad \\vec{PQ}\\cdot\\vec{PR}=3$\n$\\vec{PQ}\\times(\\vec{PR}\\times\\vec{PS})=2\\vec{PR}-3\\vec{PS}=(-4,9,1)$\n$|(-4,9,1)|=\\sqrt{16+81+1}=7\\sqrt{2}$",
+  "distractor_notes": "A: Treats the nested product as $(\\vec{PQ}\\times\\vec{PR})\\times\\vec{PS}$.\nB: Miscalculates $\\vec{PQ}\\cdot\\vec{PS}$ as $1$.\nD: Uses addition instead of subtraction in the identity."
+ },
+ "variant_of": "gd0fd45a24e85",
+ "author_model": "openai/gpt-6-luna-pro"
+}

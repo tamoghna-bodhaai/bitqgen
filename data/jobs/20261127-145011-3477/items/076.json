@@ -1,0 +1,62 @@
+{
+ "qno": 76,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 76,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "SN1 reactivity and carbocation stability",
+  "archetype": "compare-and-rank",
+  "brief": "Order alkyl halides by SN1 or SN2 reactivity (e.g., methyl/1°/2°/3°/allylic) with justification via carbocation stability",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:42",
+   "2026s2:35",
+   "2026s1:40"
+  ],
+  "origin": "direct",
+  "bank_ref": "gddcb63a8e3be"
+ },
+ "status": "ok",
+ "stem": "Arrange these compounds in decreasing order of their solvolysis rates via the $\\text{S}_\\text{N}1$ mechanism: tert-butyl bromide, allyl bromide, ethyl bromide and bromobenzene.",
+ "options": [
+  "tert-Butyl bromide $>$ allyl bromide $>$ ethyl bromide $>$ bromobenzene",
+  "allyl bromide $>$ tert-butyl bromide $>$ ethyl bromide $>$ bromobenzene",
+  "tert-Butyl bromide $>$ ethyl bromide $>$ allyl bromide $>$ bromobenzene",
+  "bromobenzene $>$ tert-butyl bromide $>$ allyl bromide $>$ ethyl bromide"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 0.92
+  },
+  {
+   "stage": "tiebreaker (bank)",
+   "model": "qwen/qwen4-max",
+   "answer": "A",
+   "confidence": 0.9
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank gddcb63a8e3be (verified in job 20261127-132429-aa8a)"
+ ],
+ "working": "Rate follows carbocation stability: tertiary $>$ resonance-stabilised allylic $>$ primary. Bromobenzene does not undergo ordinary $\\text{S}_\\text{N}1$ solvolysis because forming a phenyl cation is highly unfavourable.\n\nIndependent check: SN1 rate tracks carbocation stability: t-Bu+ (3°, hyperconjugation) > allyl+ (resonance-stabilized but primary; hydride affinity ~256 vs ~231 kcal/mol for t-Bu+) > Et+ (1°) >> Ph+ (aryl cation extremely unstable; C–Br has partial double-bond character, so bromobenzene is essentially inert to solvolysis). Hence tert-butyl > allyl > ethyl > bromobenzene.",
+ "solution": "In an $\\text{S}_\\text{N}1$ reaction, the rate depends on carbocation stability: tertiary and resonance-stabilised carbocations form more readily than primary ones.\n$$\\text{tert-butyl}^+ > \\text{allyl}^+ > \\text{ethyl}^+ \\gg \\text{phenyl}^+$$\nBromobenzene is essentially inert because formation of a phenyl cation is highly unfavourable; hence the order is tert-butyl bromide $>$ allyl bromide $>$ ethyl bromide $>$ bromobenzene.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "gddcb63a8e3be",
+ "author_model": "openai/gpt-6-luna-pro"
+}

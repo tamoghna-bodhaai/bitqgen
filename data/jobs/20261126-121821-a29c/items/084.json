@@ -20,22 +20,22 @@
   ]
  },
  "status": "ok",
- "stem": "In a certain code language, if **BRAIN** is coded as **CTDMS**, how will **LIGHT** be coded in that language?",
+ "stem": "In a certain code, each letter is shifted forward by 1, 2, 3, 4, and 5 places successively. If **MANGO** is coded as **NCQKT**, how will **TABLE** be coded?",
  "options": [
-  "MKJLY",
-  "MKILY",
-  "MLJLY",
-  "NKJLZ"
+  "UCEP K",
+  "UCDPJ",
+  "VCEPJ",
+  "UCEPJ"
  ],
- "answer": "A",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "BRAIN→CTDMS uses shifts +1,+2,+3,+4,+5 by position. Applying to LIGHT: L+1=M, I+2=K, G+3=J, H+4=L, T+5=Y → MKJLY, which is option (A). Verified by code.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Apply shifts +1, +2, +3, +4, +5 to TABLE: T→U, A→C, B→E, L→P, E→J, giving UCEPJ.",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Analyze the letter shift between BRAIN and CTDMS:\n- B (position 2) + 1 = C (position 3)\n- R (position 18) + 2 = T (position 20)\n- A (position 1) + 3 = D (position 4)\n- I (position 9) + 4 = M (position 13)\n- N (position 14) + 5 = S (position 19)\n\nThe pattern is a successive position shift of +1, +2, +3, +4, +5.\n\nApplying the same rule to LIGHT:\n- L (12) + 1 = 13 -> M\n- I (9) + 2 = 11 -> K\n- G (7) + 3 = 10 -> J\n- H (8) + 4 = 12 -> L\n- T (20) + 5 = 25 -> Y\n\nThus, LIGHT is coded as MKJLY.\n\nIndependent check: BRAIN→CTDMS uses shifts +1,+2,+3,+4,+5 by position. Applying to LIGHT: L+1=M, I+2=K, G+3=J, H+4=L, T+5=Y → MKJLY, which is option (A). Verified by code.",
- "solution": "",
+ "working": "The shifts in MANGO are +1, +2, +3, +4, +5. Applying them to TABLE gives T→U, A→C, B→E, L→P, E→J, so the code is UCEPJ. B misses the +3 shift; C shifts the first letter by 2; D has an extra space and is not the resulting code.\n\nIndependent check: Apply shifts +1, +2, +3, +4, +5 to TABLE: T→U, A→C, B→E, L→P, E→J, giving UCEPJ.",
+ "solution": "The letters are shifted forward successively by $1, 2, 3, 4, 5$ places.\n$T\\to U,\\ A\\to C,\\ B\\to E,\\ L\\to P,\\ E\\to J$\nHence, TABLE is coded as UCEPJ.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "In a certain code language, if **BRAIN** is coded as **CTDMS**, how will **LIGHT** be coded in that language?",
+  "stem": "In a certain code, each letter is shifted forward by 1, 2, 3, 4, and 5 places successively. If **MANGO** is coded as **NCQKT**, how will **TABLE** be coded?",
   "options": [
-   "MKJLY",
-   "MKILY",
-   "MLJLY",
-   "NKJLZ"
+   "UCEPJ",
+   "UCDPJ",
+   "VCEPJ",
+   "UCEP K"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "Analyze the letter shift between BRAIN and CTDMS:\n- B (position 2) + 1 = C (position 3)\n- R (position 18) + 2 = T (position 20)\n- A (position 1) + 3 = D (position 4)\n- I (position 9) + 4 = M (position 13)\n- N (position 14) + 5 = S (position 19)\n\nThe pattern is a successive position shift of +1, +2, +3, +4, +5.\n\nApplying the same rule to LIGHT:\n- L (12) + 1 = 13 -> M\n- I (9) + 2 = 11 -> K\n- G (7) + 3 = 10 -> J\n- H (8) + 4 = 12 -> L\n- T (20) + 5 = 25 -> Y\n\nThus, LIGHT is coded as MKJLY.",
-  "distractor_notes": "MKILY mistakenly applies a +2 shift to G instead of +3 (giving I instead of J).\nMLJLY mistakenly applies a +3 shift to I instead of +2 (giving L instead of K).\nNKJLZ mistakenly applies a shift starting from +2 (L+2 = N) rather than +1.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "The shifts in MANGO are +1, +2, +3, +4, +5. Applying them to TABLE gives T→U, A→C, B→E, L→P, E→J, so the code is UCEPJ. B misses the +3 shift; C shifts the first letter by 2; D has an extra space and is not the resulting code.",
+  "distractor_notes": "B: applies the third shift incorrectly. C: shifts the first letter by 2 instead of 1. D: includes an extraneous space."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

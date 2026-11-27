@@ -1,0 +1,90 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "R/S configuration in Fischer projection",
+  "archetype": "ordering",
+  "brief": "Give a Fischer projection of a two-chiral-centre molecule in the figure; ask students to rank/identify the correct R/S assignment and enantiomer/diastereomer relation among drawn structures.",
+  "difficulty": 5,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:45",
+   "2025s2:40",
+   "2024s2:53"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the three Fischer projections of 2,3-dibromopentane shown, which option correctly gives their configurations and the relationships of I–II and I–III?",
+ "options": [
+  "I: $(2R,3S)$; II: $(2S,3S)$; III: $(2S,3R)$; I–II are enantiomers and I–III are diastereomers.",
+  "I: $(2R,3S)$; II: $(2S,3S)$; III: $(2S,3R)$; I–II are diastereomers and I–III are enantiomers.",
+  "I: $(2S,3R)$; II: $(2R,3R)$; III: $(2R,3S)$; I–II are diastereomers and I–III are identical.",
+  "I: $(2R,3R)$; II: $(2S,3R)$; III: $(2S,3S)$; I–II are identical and I–III are enantiomers."
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q047_stem_v0.png",
+  "width_pct": 30,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The figure shows only one line-angle structure, with no wedge/dash stereochemistry and no three labeled Fischer projections. The configurations and relationships cannot be determined.",
+   "answer": "NONE",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [
+    "The stated three Fischer projections are missing; the provided figure shows a single structure without stereochemical bonds, so the configurations cannot be assigned."
+   ],
+   "difficulty": 3
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "2,3-Dibromopentane has two distinct stereocenters (CH3 vs C2H5 ends), so no meso form: inverting both centers gives enantiomers, inverting one gives diastereomers. Checking each option's stated relationships against its own configurations: (A) (2R,3S)/(2S,3S) differ at one center → diastereomers ✓; (2R,3S)/(2S,3R) differ at both → enantiomers ✓. B, C, D all misstate these relationships (B swaps them; C calls enantiomers identical; D calls diastereomers identical). Only A is internally consistent, so it must be the intended answer even though the figure fails to show projections I–III.",
+   "answer": "A",
+   "confidence": 0.85,
+   "multiple_correct": false,
+   "issues": [
+    "Figure defect: the question refers to three Fischer projections labeled I, II, III, but the image shows only a single bond-line (zig-zag) structure of 2,3-dibromopentane with no labels or Fischer projections; the stated configurations cannot be verified from the figure. The answer is recoverable only because option A is the sole internally consistent choice."
+   ],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At C2: $\\text{Br}>\\text{C3 chain}>\\text{CH}_3>\\text{H}$; at C3: $\\text{Br}>\\text{C2 chain}>\\text{CH}_2\\text{CH}_3>\\text{H}$. Horizontal $\\text{H}$ is toward the viewer: I is $(2R,3S)$, II is $(2S,3S)$, III is $(2S,3R)$. I–II differ at one centre; I–III invert both.\n\nIndependent check: 2,3-Dibromopentane has two distinct stereocenters (CH3 vs C2H5 ends), so no meso form: inverting both centers gives enantiomers, inverting one gives diastereomers. Checking each option's stated relationships against its own configurations: (A) (2R,3S)/(2S,3S) differ at one center → diastereomers ✓; (2R,3S)/(2S,3R) differ at both → enantiomers ✓. B, C, D all misstate these relationships (B swaps them; C calls enantiomers identical; D calls diastereomers identical). Only A is internally consistent, so it must be the intended answer even though the figure fails to show projections I–III.",
+ "solution": "At C2, priorities are $\\text{Br}>\\text{C3 chain}>\\text{CH}_3>\\text{H}$; at C3, they are $\\text{Br}>\\text{C2 chain}>\\text{C}_2\\text{H}_5>\\text{H}$. Accounting for horizontal groups pointing toward the viewer gives I $(2R,3S)$, II $(2S,3S)$, and III $(2S,3R)$. I and II differ at one stereocentre, so they are diastereomers; I and III differ at both, so they are enantiomers. (B)",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For the three Fischer projections of 2,3-dibromopentane shown, which option correctly gives their configurations and the relationships of I–II and I–III?",
+  "options": [
+   "I: $(2R,3S)$; II: $(2S,3S)$; III: $(2S,3R)$; I–II are diastereomers and I–III are enantiomers.",
+   "I: $(2R,3S)$; II: $(2S,3S)$; III: $(2S,3R)$; I–II are enantiomers and I–III are diastereomers.",
+   "I: $(2S,3R)$; II: $(2R,3R)$; III: $(2R,3S)$; I–II are diastereomers and I–III are identical.",
+   "I: $(2R,3R)$; II: $(2S,3R)$; III: $(2S,3S)$; I–II are identical and I–III are enantiomers."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw three Fischer projections side by side, labelled I, II and III, each for 2,3-dibromopentane. In each, the vertical chain has CH3 at the top, the C2 intersection above the C3 intersection, and CH2CH3 at the bottom; vertical bonds point away from the viewer and horizontal bonds point toward the viewer. Projection I: at both C2 and C3, Br is on the left and H on the right. Projection II: at C2, H is on the left and Br on the right; at C3, Br is on the left and H on the right. Projection III: at both C2 and C3, H is on the left and Br on the right.",
+   "smiles": "CCC(Br)C(Br)C"
+  },
+  "difficulty_estimate": 5,
+  "working": "At C2: $\\text{Br}>\\text{C3 chain}>\\text{CH}_3>\\text{H}$; at C3: $\\text{Br}>\\text{C2 chain}>\\text{CH}_2\\text{CH}_3>\\text{H}$. Horizontal $\\text{H}$ is toward the viewer: I is $(2R,3S)$, II is $(2S,3S)$, III is $(2S,3R)$. I–II differ at one centre; I–III invert both.",
+  "distractor_notes": "B: Reverses the enantiomer/diastereomer relationships. C: Assigns the configurations incorrectly and treats an enantiomeric pair as identical. D: Misassigns all three projections and their relationships."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

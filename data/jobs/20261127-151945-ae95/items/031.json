@@ -1,0 +1,71 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Solids",
+  "subtopic": "Young's modulus and elongation",
+  "archetype": "ratio of two situations",
+  "brief": "Two wires of the same material but different lengths and radii under the same load; compare their elongations using Y = (F/A)(L/ΔL).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:13",
+   "2023s1:14",
+   "2026s1:22"
+  ],
+  "origin": "variant",
+  "bank_ref": "g38c8bd6a4262"
+ },
+ "status": "ok",
+ "stem": "Two wires P and Q are made of the same material and carry the same tensile load. Their lengths are $0.6$ m and $0.9$ m, and their radii are $0.4$ mm and $0.6$ mm, respectively. Find $\\dfrac{\\Delta l_P}{\\Delta l_Q}$.",
+ "options": [
+  "$\\dfrac{2}{3}$",
+  "$1$",
+  "$\\dfrac{3}{2}$",
+  "$\\dfrac{9}{4}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the same load and material, \\(\\Delta l\\propto L/r^2\\). Thus \\(\\Delta l_P/\\Delta l_Q=(0.6/0.4^2)/(0.9/0.6^2)=3/2\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta l=\\dfrac{FL}{\\pi r^2Y}$\n$\\dfrac{\\Delta l_P}{\\Delta l_Q}=\\dfrac{0.6}{0.9}\\left(\\dfrac{0.6}{0.4}\\right)^2=\\dfrac{3}{2}$\n\nIndependent check: For the same load and material, \\(\\Delta l\\propto L/r^2\\). Thus \\(\\Delta l_P/\\Delta l_Q=(0.6/0.4^2)/(0.9/0.6^2)=3/2\\).",
+ "solution": "For wires under the same load and made of the same material, $\n$$\\Delta l=\\dfrac{FL}{\\pi r^2Y},\\qquad \\dfrac{\\Delta l_P}{\\Delta l_Q}=\\dfrac{0.6}{0.9}\\left(\\dfrac{0.6}{0.4}\\right)^2=\\dfrac{3}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two wires P and Q are made of the same material and carry the same tensile load. Their lengths are $0.6$ m and $0.9$ m, and their radii are $0.4$ mm and $0.6$ mm, respectively. Find $\\dfrac{\\Delta l_P}{\\Delta l_Q}$.",
+  "options": [
+   "$\\dfrac{2}{3}$",
+   "$1$",
+   "$\\dfrac{3}{2}$",
+   "$\\dfrac{9}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\Delta l=\\dfrac{FL}{\\pi r^2Y}$\n$\\dfrac{\\Delta l_P}{\\Delta l_Q}=\\dfrac{0.6}{0.9}\\left(\\dfrac{0.6}{0.4}\\right)^2=\\dfrac{3}{2}$",
+  "distractor_notes": "A: takes the reciprocal of the correct ratio.\nB: uses radius rather than radius squared when comparing areas.\nD: compares the radii alone and ignores the lengths."
+ },
+ "variant_of": "g38c8bd6a4262",
+ "author_model": "openai/gpt-6-luna-pro"
+}

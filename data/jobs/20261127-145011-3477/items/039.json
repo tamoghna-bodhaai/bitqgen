@@ -1,0 +1,60 @@
+{
+ "qno": 39,
+ "section": "Physics",
+ "slot": {
+  "qno": 39,
+  "section": "Physics",
+  "chapter": "Oscillations",
+  "subtopic": "Spring combinations",
+  "archetype": "equivalent spring constant",
+  "brief": "Springs in series/parallel (or a spring cut into pieces) attached to a mass; find the equivalent spring constant and the new time period of oscillation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:6",
+   "2025s2:29",
+   "2025s1:13"
+  ],
+  "origin": "direct",
+  "bank_ref": "g3172c162a288"
+ },
+ "status": "ok",
+ "stem": "A block of mass m rests on a smooth horizontal surface. Two identical massless springs, each of force constant k, are connected in series between the block and a fixed wall, as shown in the figure. If the block is displaced slightly along the length of the springs and released, the time period of oscillation is",
+ "options": [
+  "2 pi sqrt(m/(2k))",
+  "2 pi sqrt(4m/k)",
+  "2 pi sqrt(m/k)",
+  "2 pi sqrt(2m/k)"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q039_bank_stem.png",
+  "kind": "diagram",
+  "width_pct": 60
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g3172c162a288 (verified in job 20261127-122012-292e)"
+ ],
+ "working": "For two identical springs in series: 1/k_eq = 1/k + 1/k = 2/k, so k_eq = k/2. T = 2 pi sqrt(m/k_eq) = 2 pi sqrt(2m/k).\n\nIndependent check: For two identical springs in series, 1/k_eff = 1/k + 1/k, so k_eff = k/2. Thus T = 2π√(m/k_eff) = 2π√(2m/k).",
+ "solution": "For two identical springs in series, $\u001b[0m\\dfrac{1}{k_{\\text{eq}}}=\\dfrac{1}{k}+\\dfrac{1}{k}$, so $k_{\\text{eq}}=\\dfrac{k}{2}$.\n$$T=2\\pi\\sqrt{\\frac{m}{k_{\\text{eq}}}}=2\\pi\\sqrt{\\frac{2m}{k}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g3172c162a288",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

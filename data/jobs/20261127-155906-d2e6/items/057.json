@@ -1,0 +1,70 @@
+{
+ "qno": 57,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 57,
+  "section": "Chemistry",
+  "chapter": "Solid State",
+  "subtopic": "Voids and formula of compound",
+  "archetype": "void counting",
+  "brief": "Mixed mole-concept + solid-state: solid with two ion types occupying different voids in a lattice with defects; derive the formula or % occupation; combine with density-edge-length to be challenging.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:51",
+   "2022:59",
+   "2025s1:41"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "In a crystalline solid, X ions form an FCC lattice with some X sites vacant; A and B occupy, respectively, one-quarter of the tetrahedral and octahedral voids. Given $a=5.00\\ \\text{Å}$, $\\rho=1.56\\ \\text{g cm}^{-3}$, $N_{\\mathrm{A}}=6.00\\times10^{23}\\ \\text{mol}^{-1}$, and $M_A=23$, $M_B=39$, $M_X=16\\ \\text{g mol}^{-1}$, find the empirical formula.",
+ "options": [
+  "$\\text{A}_2\\text{B}\\text{X}_2$",
+  "$\\text{A}\\text{B}\\text{X}_2$",
+  "$\\text{A}_2\\text{B}\\text{X}_4$",
+  "$\\text{A}\\text{B}\\text{X}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "An FCC cell has 8 tetrahedral and 4 octahedral voids, so the stated occupancies give 2 A and 1 B per cell. The cell mass corresponds to \\(\\rho a^3N_A=117\\) g mol⁻¹; after subtracting \\(2(23)+39=85\\), the remaining 32 g mol⁻¹ gives 2 X. Thus the formula is A₂BX₂.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$n_A=8(1/4)=2,\\ n_B=4(1/4)=1$; $M_{\\text{cell}}=\\rho a^3N_{\\mathrm{A}}=1.56(5.00\\times10^{-8})^3(6.00\\times10^{23})=117\\ \\text{g mol}^{-1}$; $n_X=(117-2(23)-39)/16=2$; $A:B:X=2:1:2$.\n\nIndependent check: An FCC cell has 8 tetrahedral and 4 octahedral voids, so the stated occupancies give 2 A and 1 B per cell. The cell mass corresponds to \\(\\rho a^3N_A=117\\) g mol⁻¹; after subtracting \\(2(23)+39=85\\), the remaining 32 g mol⁻¹ gives 2 X. Thus the formula is A₂BX₂.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "In a crystalline solid, X ions form an FCC lattice with some X sites vacant; A and B occupy, respectively, one-quarter of the tetrahedral and octahedral voids. Given $a=5.00\\ \\text{Å}$, $\\rho=1.56\\ \\text{g cm}^{-3}$, $N_{\\mathrm{A}}=6.00\\times10^{23}\\ \\text{mol}^{-1}$, and $M_A=23$, $M_B=39$, $M_X=16\\ \\text{g mol}^{-1}$, find the empirical formula.",
+  "options": [
+   "$\\text{A}_2\\text{B}\\text{X}_2$",
+   "$\\text{A}\\text{B}\\text{X}_2$",
+   "$\\text{A}_2\\text{B}\\text{X}_4$",
+   "$\\text{A}\\text{B}\\text{X}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$n_A=8(1/4)=2,\\ n_B=4(1/4)=1$; $M_{\\text{cell}}=\\rho a^3N_{\\mathrm{A}}=1.56(5.00\\times10^{-8})^3(6.00\\times10^{23})=117\\ \\text{g mol}^{-1}$; $n_X=(117-2(23)-39)/16=2$; $A:B:X=2:1:2$.",
+  "distractor_notes": "B: Counts only four tetrahedral voids per FCC cell. C: Assumes all four X lattice sites are occupied. D: Assumes half the octahedral voids are occupied, giving two B per cell, then reduces the ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

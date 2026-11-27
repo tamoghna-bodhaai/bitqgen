@@ -1,0 +1,79 @@
+{
+ "qno": 6,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 6,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Cleavage of ethers with HI",
+  "archetype": "mechanism-based product",
+  "brief": "Cleavage of an unsymmetrical ether with excess HI; ask which bond breaks and what alcohol + iodide products form (SN1 vs SN2 pathway shown in figure).",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:60",
+   "2024s2:41",
+   "2024s2:51"
+  ],
+  "origin": "variant",
+  "bank_ref": "g4dc8906758aa"
+ },
+ "status": "ok",
+ "stem": "The ether shown is heated with excess $\\text{HI}$. Which products and cleavage pathway are expected?",
+ "options": [
+  "Iodobenzene and 1-methylcyclohexanol; cleavage at the aryl–O bond by $\\text{S}_\\text{N}1$.",
+  "Phenol and 1-iodo-1-methylcyclohexane; cleavage at the tertiary alkyl–O bond by $\\text{S}_\\text{N}2$.",
+  "Phenol and 1-iodo-1-methylcyclohexane; cleavage at the tertiary alkyl–O bond by $\\text{S}_\\text{N}1$.",
+  "Phenol and 1-methylcyclohexanol; cleavage at the tertiary alkyl–O bond without iodide substitution."
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q006_stem_v0.png",
+  "width_pct": 43,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "HI protonates the ether; cleavage occurs at the tertiary alkyl–O bond via SN1. Iodide captures the tertiary carbocation, giving 1-iodo-1-methylcyclohexane and phenol. The aryl–O bond remains intact.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{1-phenoxy-1-methylcyclohexane} + \\text{HI} \\rightarrow \\text{phenol} + \\text{1-iodo-1-methylcyclohexane}$; protonation followed by C–O cleavage forms a tertiary carbocation; $\\text{I}^- $ captures it by $\\text{S}_\\text{N}1$.\n\nIndependent check: HI protonates the ether; cleavage occurs at the tertiary alkyl–O bond via SN1. Iodide captures the tertiary carbocation, giving 1-iodo-1-methylcyclohexane and phenol. The aryl–O bond remains intact.",
+ "solution": "HI protonates the ether, then the tertiary alkyl–O bond cleaves to form a stable tertiary carbocation; the aryl–O bond remains intact.\n$$\\text{1-phenoxy-1-methylcyclohexane} + \\text{HI} \\rightarrow \\text{phenol} + \\text{1-iodo-1-methylcyclohexane}$$\nIodide captures the carbocation by an $\\text{S}_\\text{N}1$ pathway.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The ether shown is heated with excess $\\text{HI}$. Which products and cleavage pathway are expected?",
+  "options": [
+   "Phenol and 1-iodo-1-methylcyclohexane; cleavage at the tertiary alkyl–O bond by $\\text{S}_\\text{N}1$.",
+   "Phenol and 1-iodo-1-methylcyclohexane; cleavage at the tertiary alkyl–O bond by $\\text{S}_\\text{N}2$.",
+   "Iodobenzene and 1-methylcyclohexanol; cleavage at the aryl–O bond by $\\text{S}_\\text{N}1$.",
+   "Phenol and 1-methylcyclohexanol; cleavage at the tertiary alkyl–O bond without iodide substitution."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw the skeletal structure of an ether: a benzene ring bonded through an oxygen atom to carbon 1 of a cyclohexane ring. Carbon 1 also bears a methyl group. Show the oxygen as O; do not include reaction arrows or any products.",
+   "smiles": "c1ccccc1OC1(C)CCCCC1"
+  },
+  "difficulty_estimate": 2,
+  "working": "$\\text{1-phenoxy-1-methylcyclohexane} + \\text{HI} \\rightarrow \\text{phenol} + \\text{1-iodo-1-methylcyclohexane}$; protonation followed by C–O cleavage forms a tertiary carbocation; $\\text{I}^- $ captures it by $\\text{S}_\\text{N}1$.",
+  "distractor_notes": "B: assigns $\\text{S}_\\text{N}2$ at a sterically hindered tertiary carbon; C: incorrectly cleaves the aryl–O bond; D: omits iodide substitution by excess $\\text{HI}$."
+ },
+ "variant_of": "g4dc8906758aa",
+ "author_model": "openai/gpt-6-luna-pro"
+}

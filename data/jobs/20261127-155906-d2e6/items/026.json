@@ -1,0 +1,70 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio of approach/recede frequencies",
+  "brief": "A source moving at constant speed towards then away from a stationary observer; ask for the ratio of the apparent frequencies in the two cases, or include wind/medium effects at high rigour.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:14",
+   "2026s1:16",
+   "2025s1:26"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A source emitting frequency $f_0$ moves at $120$ m s$^{-1}$ along a straight track past a stationary observer. A uniform wind blows along the track in the source’s direction at $60$ m s$^{-1}$; sound speed relative to air is $300$ m s$^{-1}$. What is the ratio of the observed frequency while approaching to that while receding?",
+ "options": [
+  "$\\dfrac73$",
+  "$\\dfrac94$",
+  "$\\dfrac32$",
+  "$\\dfrac49$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In the source’s direction, sound travels at 360 m/s relative to the ground; against the wind, it travels at 240 m/s. Thus f_approach = 360/(360−120) f₀ = 3f₀/2, and f_recede = 240/(240+120) f₀ = 2f₀/3. Their ratio is 9/4.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f_{\\rm app}=f_0\\dfrac{c+w}{c+w-v}=f_0\\dfrac{360}{240}=\\dfrac32f_0$; $f_{\\rm rec}=f_0\\dfrac{c-w}{c-w+v}=f_0\\dfrac{240}{360}=\\dfrac23f_0$; $\\dfrac{f_{\\rm app}}{f_{\\rm rec}}=\\dfrac94$.\n\nIndependent check: In the source’s direction, sound travels at 360 m/s relative to the ground; against the wind, it travels at 240 m/s. Thus f_approach = 360/(360−120) f₀ = 3f₀/2, and f_recede = 240/(240+120) f₀ = 2f₀/3. Their ratio is 9/4.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A source emitting frequency $f_0$ moves at $120$ m s$^{-1}$ along a straight track past a stationary observer. A uniform wind blows along the track in the source’s direction at $60$ m s$^{-1}$; sound speed relative to air is $300$ m s$^{-1}$. What is the ratio of the observed frequency while approaching to that while receding?",
+  "options": [
+   "$\\dfrac73$",
+   "$\\dfrac94$",
+   "$\\dfrac32$",
+   "$\\dfrac49$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$f_{\\rm app}=f_0\\dfrac{c+w}{c+w-v}=f_0\\dfrac{360}{240}=\\dfrac32f_0$; $f_{\\rm rec}=f_0\\dfrac{c-w}{c-w+v}=f_0\\dfrac{240}{360}=\\dfrac23f_0$; $\\dfrac{f_{\\rm app}}{f_{\\rm rec}}=\\dfrac94$.",
+  "distractor_notes": "A: ignores the wind; C: gives the approach frequency relative to $f_0$; D: reverses the requested ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

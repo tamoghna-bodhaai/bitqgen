@@ -1,0 +1,70 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Coulomb's law",
+  "archetype": "vector-sum equilibrium",
+  "brief": "Two or three fixed point charges exert forces on a test charge; find where the net force is zero, or compute the resultant force magnitude by vector addition.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:16",
+   "2021:1",
+   "2025s1:25"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A test charge of $+1\\ \\mu\\text{C}$ is at the origin. Fixed charges of $+4\\ \\mu\\text{C}$ and $+3\\ \\mu\\text{C}$ are at $(0.30,0)$ m and $(0,0.30)$ m, respectively. Find the resultant force magnitude on the test charge. Take $\\dfrac{1}{4\\pi\\varepsilon_0}=9\\times10^9\\ \\text{N m}^2\\text{C}^{-2}$.",
+ "options": [
+  "$0.10$ N",
+  "$0.50$ N",
+  "$0.35$ N",
+  "$0.70$ N"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The forces are perpendicular: \\(F_x=k(1\\,\\mu\\text{C})(4\\,\\mu\\text{C})/(0.30\\,\\text{m})^2=0.40\\,\\text{N}\\), \\(F_y=k(1\\,\\mu\\text{C})(3\\,\\mu\\text{C})/(0.30\\,\\text{m})^2=0.30\\,\\text{N}\\). Resultant: \\(\\sqrt{0.40^2+0.30^2}=0.50\\,\\text{N}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$F_x=\\dfrac{k(4\\times10^{-6})(1\\times10^{-6})}{(0.30)^2}=0.40\\ \\text{N}$\n$F_y=\\dfrac{k(3\\times10^{-6})(1\\times10^{-6})}{(0.30)^2}=0.30\\ \\text{N}$\n$F=\\sqrt{F_x^2+F_y^2}=\\sqrt{0.40^2+0.30^2}=0.50\\ \\text{N}$\n\nIndependent check: The forces are perpendicular: \\(F_x=k(1\\,\\mu\\text{C})(4\\,\\mu\\text{C})/(0.30\\,\\text{m})^2=0.40\\,\\text{N}\\), \\(F_y=k(1\\,\\mu\\text{C})(3\\,\\mu\\text{C})/(0.30\\,\\text{m})^2=0.30\\,\\text{N}\\). Resultant: \\(\\sqrt{0.40^2+0.30^2}=0.50\\,\\text{N}\\).",
+ "solution": "By Coulomb’s law, the perpendicular force components are\n$$F_x=\\frac{k(4\\times10^{-6})(1\\times10^{-6})}{(0.30)^2}=0.40\\text{ N},\\qquad F_y=\\frac{k(3\\times10^{-6})(1\\times10^{-6})}{(0.30)^2}=0.30\\text{ N}.$$\nHence, $F=\\sqrt{F_x^2+F_y^2}=\\sqrt{0.40^2+0.30^2}=0.50\\text{ N}$. (A)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A test charge of $+1\\ \\mu\\text{C}$ is at the origin. Fixed charges of $+4\\ \\mu\\text{C}$ and $+3\\ \\mu\\text{C}$ are at $(0.30,0)$ m and $(0,0.30)$ m, respectively. Find the resultant force magnitude on the test charge. Take $\\dfrac{1}{4\\pi\\varepsilon_0}=9\\times10^9\\ \\text{N m}^2\\text{C}^{-2}$.",
+  "options": [
+   "$0.10$ N",
+   "$0.35$ N",
+   "$0.50$ N",
+   "$0.70$ N"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$F_x=\\dfrac{k(4\\times10^{-6})(1\\times10^{-6})}{(0.30)^2}=0.40\\ \\text{N}$\n$F_y=\\dfrac{k(3\\times10^{-6})(1\\times10^{-6})}{(0.30)^2}=0.30\\ \\text{N}$\n$F=\\sqrt{F_x^2+F_y^2}=\\sqrt{0.40^2+0.30^2}=0.50\\ \\text{N}$",
+  "distractor_notes": "A: takes the difference of the perpendicular force magnitudes; B: incorrectly averages the magnitudes; D: adds the magnitudes as scalars."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

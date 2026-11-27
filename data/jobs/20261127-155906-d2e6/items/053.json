@@ -1,0 +1,70 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Stability of alkenes / heat of hydrogenation",
+  "archetype": "compare-and-rank",
+  "brief": "Rank three unsymmetrical alkenes by heat of hydrogenation or Markovnikov addition; ask which alkene gives a specified single product on hydrogenation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:45",
+   "2025s1:54",
+   "2026s1:53"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The three alkenes below hydrogenate completely to the same alkane. Which sequence gives decreasing magnitude of heat released?",
+ "options": [
+  "3-methylbut-1-ene > 2-methylbut-1-ene > 2-methylbut-2-ene",
+  "2-methylbut-2-ene > 2-methylbut-1-ene > 3-methylbut-1-ene",
+  "2-methylbut-1-ene > 3-methylbut-1-ene > 2-methylbut-2-ene",
+  "3-methylbut-1-ene > 2-methylbut-2-ene > 2-methylbut-1-ene"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Heat of hydrogenation magnitude decreases as alkene stability increases. Stability rises with substitution: 3-methylbut-1-ene < 2-methylbut-1-ene < 2-methylbut-2-ene. Thus the heat released decreases in the order given in (A).",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Alkene stability: $\\text{2-methylbut-2-ene} > \\text{2-methylbut-1-ene} > \\text{3-methylbut-1-ene}$; heat released on hydrogenation varies inversely with alkene stability.\n\nIndependent check: Heat of hydrogenation magnitude decreases as alkene stability increases. Stability rises with substitution: 3-methylbut-1-ene < 2-methylbut-1-ene < 2-methylbut-2-ene. Thus the heat released decreases in the order given in (A).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The three alkenes below hydrogenate completely to the same alkane. Which sequence gives decreasing magnitude of heat released?",
+  "options": [
+   "3-methylbut-1-ene > 2-methylbut-1-ene > 2-methylbut-2-ene",
+   "2-methylbut-2-ene > 2-methylbut-1-ene > 3-methylbut-1-ene",
+   "2-methylbut-1-ene > 3-methylbut-1-ene > 2-methylbut-2-ene",
+   "3-methylbut-1-ene > 2-methylbut-2-ene > 2-methylbut-1-ene"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Alkene stability: $\\text{2-methylbut-2-ene} > \\text{2-methylbut-1-ene} > \\text{3-methylbut-1-ene}$; heat released on hydrogenation varies inversely with alkene stability.",
+  "distractor_notes": "B: gives the stability order rather than its reverse; C: misranks the terminal alkenes; D: reverses the relative order of the di- and trisubstituted alkenes."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

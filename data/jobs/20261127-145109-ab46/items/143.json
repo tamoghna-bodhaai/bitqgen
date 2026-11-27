@@ -1,0 +1,70 @@
+{
+ "qno": 143,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 143,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "counting formula",
+  "brief": "Count functions between two small finite sets with a given property (e.g., number of onto functions from a k-element set to an m-element set) via inclusion-exclusion.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:112",
+   "2023s2:119",
+   "2024s2:101"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "How many onto functions are there from a $5$-element set to a $3$-element set?",
+ "options": [
+  "$96$",
+  "$147$",
+  "$243$",
+  "$150$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By inclusion–exclusion, the number of onto functions is $3^5-3\\cdot2^5+3\\cdot1=150$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$3^5-\\binom{3}{1}2^5+\\binom{3}{2}1^5=243-96+3=150$\n\nIndependent check: By inclusion–exclusion, the number of onto functions is $3^5-3\\cdot2^5+3\\cdot1=150$.",
+ "solution": "By inclusion–exclusion, subtract functions that omit at least one element of the codomain:\n$$3^5-\\binom31 2^5+\\binom32 1^5=243-96+3=150.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many onto functions are there from a $5$-element set to a $3$-element set?",
+  "options": [
+   "$96$",
+   "$147$",
+   "$150$",
+   "$243$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$3^5-\\binom{3}{1}2^5+\\binom{3}{2}1^5=243-96+3=150$",
+  "distractor_notes": "A: gives only the first exclusion term; B: omits the pairwise-overlap correction; D: counts all functions, not just onto functions."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

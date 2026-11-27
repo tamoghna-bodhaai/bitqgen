@@ -1,0 +1,71 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Gravitational potential energy",
+  "archetype": "energy conservation",
+  "brief": "Body projected from a planet's surface; use energy conservation with the escape-energy expression to find maximum height or impact speed; multi-step reasoning.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:5",
+   "2023s1:23",
+   "2026s2:1"
+  ],
+  "origin": "variant",
+  "bank_ref": "gfbbcdcf0a07a"
+ },
+ "status": "ok",
+ "stem": "A particle is projected vertically upward from a planet's surface at a speed equal to $\\dfrac{\\sqrt{3}}{2}$ times the escape speed. If the planet's radius is $2400$ km, how high above the surface does it rise?",
+ "options": [
+  "$7200$ km",
+  "$4800$ km",
+  "$2400$ km",
+  "$9600$ km"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By energy conservation, the initial specific energy is \\(\\frac12v^2-\\frac{GM}{R}=-\\frac{GM}{4R}\\). At maximum height, \\(-GM/(R+h)=-GM/(4R)\\), so \\(h=3R=7200\\) km.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_e^2=2GM/R$; $E_i=\\dfrac12m\\left(\\dfrac34v_e^2\\right)-GMm/R=-GMm/(4R)$. At the highest point, $E_f=-GMm/(R+h)$. Thus $R+h=4R$, so $h=3R=7200$ km.\n\nIndependent check: By energy conservation, the initial specific energy is \\(\\frac12v^2-\\frac{GM}{R}=-\\frac{GM}{4R}\\). At maximum height, \\(-GM/(R+h)=-GM/(4R)\\), so \\(h=3R=7200\\) km.",
+ "solution": "Using conservation of energy and $v_e^2=2GM/R$, the initial energy is\n$$E_i=\\frac12m\\left(\\frac34v_e^2\\right)-\\frac{GMm}{R}=-\\frac{GMm}{4R}.$$At maximum height, $E_f=-GMm/(R+h)$. Equating energies gives $R+h=4R$, hence $h=3R=7200\\text{ km}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A particle is projected vertically upward from a planet's surface at a speed equal to $\\dfrac{\\sqrt{3}}{2}$ times the escape speed. If the planet's radius is $2400$ km, how high above the surface does it rise?",
+  "options": [
+   "$2400$ km",
+   "$4800$ km",
+   "$7200$ km",
+   "$9600$ km"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$v_e^2=2GM/R$; $E_i=\\dfrac12m\\left(\\dfrac34v_e^2\\right)-GMm/R=-GMm/(4R)$. At the highest point, $E_f=-GMm/(R+h)$. Thus $R+h=4R$, so $h=3R=7200$ km.",
+  "distractor_notes": "A: confuses the planet's radius with the height gained. B: underestimates the initial kinetic energy and obtains $h=2R$. D: gives the maximum distance from the centre without subtracting the planet's radius."
+ },
+ "variant_of": "gfbbcdcf0a07a",
+ "author_model": "openai/gpt-6-luna-pro"
+}

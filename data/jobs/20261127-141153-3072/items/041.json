@@ -1,0 +1,68 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Elimination followed by HBr addition",
+  "archetype": "reaction sequence product",
+  "brief": "Alkyl halide undergoes dehydrohalogenation with alcoholic KOH, then the alkene is treated with HBr in absence of peroxide; ask for the major final product considering Markovnikov addition.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:58",
+   "2026s2:42",
+   "2025s1:60"
+  ]
+ },
+ "status": "ok",
+ "stem": "On heating 1-bromo-2-methylpropane with alcoholic $\\text{KOH}$, then treating the alkene with $\\text{HBr}$ in the absence of peroxide, the major product is:",
+ "options": [
+  "1-bromobutane",
+  "2-bromobutane",
+  "2-bromo-2-methylpropane",
+  "1-bromo-2-methylpropane"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alcoholic KOH eliminates HBr from 1-bromo-2-methylpropane to form 2-methylpropene. HBr adds without peroxide by Markovnikov addition, giving 2-bromo-2-methylpropane.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{(CH}_3)_2\\text{CHCH}_2\\text{Br} \\rightarrow \\text{CH}_2=\\text{C}(\\text{CH}_3)_2$; Markovnikov addition of $\\text{HBr}$ gives $(\\text{CH}_3)_3\\text{CBr}$, 2-bromo-2-methylpropane.\n\nIndependent check: Alcoholic KOH eliminates HBr from 1-bromo-2-methylpropane to form 2-methylpropene. HBr adds without peroxide by Markovnikov addition, giving 2-bromo-2-methylpropane.",
+ "solution": "Alcoholic KOH causes β-elimination to form 2-methylpropene:\n$$\\text{(CH}_3)_2\\text{CHCH}_2\\text{Br} \\xrightarrow{\\text{alc. KOH}} \\text{CH}_2=\\text{C(CH}_3)_2$$\nIn the absence of peroxide, HBr adds by Markovnikov’s rule, placing Br on the more substituted carbon to give $(\\text{CH}_3)_3\\text{CBr}$, 2-bromo-2-methylpropane.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "On heating 1-bromo-2-methylpropane with alcoholic $\\text{KOH}$, then treating the alkene with $\\text{HBr}$ in the absence of peroxide, the major product is:",
+  "options": [
+   "1-bromobutane",
+   "2-bromobutane",
+   "1-bromo-2-methylpropane",
+   "2-bromo-2-methylpropane"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{(CH}_3)_2\\text{CHCH}_2\\text{Br} \\rightarrow \\text{CH}_2=\\text{C}(\\text{CH}_3)_2$; Markovnikov addition of $\\text{HBr}$ gives $(\\text{CH}_3)_3\\text{CBr}$, 2-bromo-2-methylpropane.",
+  "distractor_notes": "A: Changes the carbon skeleton to a straight chain. B: Places bromine on the less substituted alkene carbon. C: Gives the starting halide rather than the addition product."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

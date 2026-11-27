@@ -1,0 +1,70 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength of accelerated charges",
+  "archetype": "single-formula numerical",
+  "brief": "Electron (or alpha particle) accelerated through a given potential difference; compute its de Broglie wavelength directly via λ = h/√(2mqV).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:11",
+   "2023s1:26",
+   "2021:14"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An electron is accelerated from rest through a potential difference of $100$ V. Find its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_e=9.11\\times10^{-31}$ kg and $e=1.60\\times10^{-19}$ C.",
+ "options": [
+  "$8.7\\times10^{-11}$ m",
+  "$1.23\\times10^{-10}$ m",
+  "$2.46\\times10^{-10}$ m",
+  "$1.23\\times10^{-9}$ m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The electron gains kinetic energy eV, so λ = h/√(2mₑeV) = 6.63×10⁻³⁴/√(2×9.11×10⁻³¹×1.60×10⁻¹⁷) ≈ 1.23×10⁻¹⁰ m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(100)}}\\approx1.23\\times10^{-10}$ m.\n\nIndependent check: The electron gains kinetic energy eV, so λ = h/√(2mₑeV) = 6.63×10⁻³⁴/√(2×9.11×10⁻³¹×1.60×10⁻¹⁷) ≈ 1.23×10⁻¹⁰ m.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An electron is accelerated from rest through a potential difference of $100$ V. Find its de Broglie wavelength. Take $h=6.63\\times10^{-34}$ J s, $m_e=9.11\\times10^{-31}$ kg and $e=1.60\\times10^{-19}$ C.",
+  "options": [
+   "$8.7\\times10^{-11}$ m",
+   "$1.23\\times10^{-10}$ m",
+   "$2.46\\times10^{-10}$ m",
+   "$1.23\\times10^{-9}$ m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2m_e eV}}=\\dfrac{6.63\\times10^{-34}}{\\sqrt{2(9.11\\times10^{-31})(1.60\\times10^{-19})(100)}}\\approx1.23\\times10^{-10}$ m.",
+  "distractor_notes": "A: incorrectly includes an extra factor of $2$ in the momentum. C: doubles the wavelength. D: shifts the decimal by one place during unit conversion."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

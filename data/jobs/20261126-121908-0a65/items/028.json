@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "A wire of length $2\\ \\text{m}$ stretches by $1\\ \\text{mm}$ when a mass of $5\\ \\text{kg}$ is suspended from it. The Young's modulus and breaking stress of the wire are $2 \\times 10^{11}\\ \\text{N m}^{-2}$ and $4 \\times 10^8\\ \\text{N m}^{-2}$, respectively. The maximum mass that can be suspended from the wire without breaking it is (take $g = 10\\ \\text{m s}^{-2}$)",
+ "stem": "A wire of length $1.5$ m and cross-sectional area $0.8$ mm$^2$ elongates by $0.3$ mm under a hanging mass of $4$ kg. If its breaking stress is $1.5 \\times 10^8$ Pa, find its elongation at the breaking point. Take $g = 10$ m s$^{-2}$.",
  "options": [
-  "$10\\ \\text{kg}$",
-  "$15\\ \\text{kg}$",
-  "$20\\ \\text{kg}$",
-  "$25\\ \\text{kg}$"
+  "$0.3$ mm",
+  "$0.6$ mm",
+  "$0.9$ mm",
+  "$1.2$ mm"
  ],
  "answer": "C",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Area from stretch data: A = FL/(YΔL) = (50×2)/(2×10¹¹×10⁻³) = 5×10⁻⁷ m². Breaking force = σA = 4×10⁸×5×10⁻⁷ = 200 N ⇒ M = 200/10 = 20 kg.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At 4 kg, the stress is $40/(0.8\\times10^{-6})=5\\times10^7$ Pa. In the elastic range, elongation is proportional to stress, so at $1.5\\times10^8$ Pa it is $0.3\\times3=0.9$ mm.",
    "answer": "C",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "Step 1: Calculate the longitudinal strain under the initial load:\n$$\\varepsilon = \\dfrac{\\Delta L}{L} = \\dfrac{1 \\times 10^{-3}\\ \\text{m}}{2\\ \\text{m}} = 5 \\times 10^{-4}$$\n\nStep 2: Calculate the tensile stress $\\sigma_1$ produced by the mass $m_1 = 5\\ \\text{kg}$:\n$$\\sigma_1 = Y \\varepsilon = (2 \\times 10^{11}\\ \\text{N m}^{-2}) \\times (5 \\times 10^{-4}) = 1.0 \\times 10^8\\ \\text{N m}^{-2}$$\n\nStep 3: Relate stress to the suspended mass. Since stress is directly proportional to the applied load ($\\sigma = \\dfrac{m g}{A}$):\n$$\\dfrac{M_{\\max}}{m_1} = \\dfrac{\\sigma_{\\text{break}}}{\\sigma_1}$$\n$$M_{\\max} = 5\\ \\text{kg} \\times \\dfrac{4 \\times 10^8\\ \\text{N m}^{-2}}{1.0 \\times 10^8\\ \\text{N m}^{-2}} = 5 \\times 4 = 20\\ \\text{kg}$$\n\nIndependent check: Area from stretch data: A = FL/(YΔL) = (50×2)/(2×10¹¹×10⁻³) = 5×10⁻⁷ m². Breaking force = σA = 4×10⁸×5×10⁻⁷ = 200 N ⇒ M = 200/10 = 20 kg.",
+ "working": "$A=0.8\\times10^{-6}\\ \\text{m}^2$, $F=4\\times10=40\\ \\text{N}$\n$$Y=\\frac{FL}{A\\Delta L}=\\frac{40\\times1.5}{(0.8\\times10^{-6})(0.3\\times10^{-3})}=2.5\\times10^{11}\\ \\text{Pa}$$\n$$\\Delta L_{\\mathrm{break}}=L\\frac{\\sigma_{\\mathrm{break}}}{Y}=1.5\\times\\frac{1.5\\times10^8}{2.5\\times10^{11}}=0.9\\times10^{-3}\\ \\text{m}=0.9\\ \\text{mm}$$\n\nIndependent check: At 4 kg, the stress is $40/(0.8\\times10^{-6})=5\\times10^7$ Pa. In the elastic range, elongation is proportional to stress, so at $1.5\\times10^8$ Pa it is $0.3\\times3=0.9$ mm.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A wire of length $2\\ \\text{m}$ stretches by $1\\ \\text{mm}$ when a mass of $5\\ \\text{kg}$ is suspended from it. The Young's modulus and breaking stress of the wire are $2 \\times 10^{11}\\ \\text{N m}^{-2}$ and $4 \\times 10^8\\ \\text{N m}^{-2}$, respectively. The maximum mass that can be suspended from the wire without breaking it is (take $g = 10\\ \\text{m s}^{-2}$)",
+  "stem": "A wire of length $1.5$ m and cross-sectional area $0.8$ mm$^2$ elongates by $0.3$ mm under a hanging mass of $4$ kg. If its breaking stress is $1.5 \\times 10^8$ Pa, find its elongation at the breaking point. Take $g = 10$ m s$^{-2}$.",
   "options": [
-   "$10\\ \\text{kg}$",
-   "$15\\ \\text{kg}$",
-   "$20\\ \\text{kg}$",
-   "$25\\ \\text{kg}$"
+   "$0.3$ mm",
+   "$0.6$ mm",
+   "$0.9$ mm",
+   "$1.2$ mm"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "Step 1: Calculate the longitudinal strain under the initial load:\n$$\\varepsilon = \\dfrac{\\Delta L}{L} = \\dfrac{1 \\times 10^{-3}\\ \\text{m}}{2\\ \\text{m}} = 5 \\times 10^{-4}$$\n\nStep 2: Calculate the tensile stress $\\sigma_1$ produced by the mass $m_1 = 5\\ \\text{kg}$:\n$$\\sigma_1 = Y \\varepsilon = (2 \\times 10^{11}\\ \\text{N m}^{-2}) \\times (5 \\times 10^{-4}) = 1.0 \\times 10^8\\ \\text{N m}^{-2}$$\n\nStep 3: Relate stress to the suspended mass. Since stress is directly proportional to the applied load ($\\sigma = \\dfrac{m g}{A}$):\n$$\\dfrac{M_{\\max}}{m_1} = \\dfrac{\\sigma_{\\text{break}}}{\\sigma_1}$$\n$$M_{\\max} = 5\\ \\text{kg} \\times \\dfrac{4 \\times 10^8\\ \\text{N m}^{-2}}{1.0 \\times 10^8\\ \\text{N m}^{-2}} = 5 \\times 4 = 20\\ \\text{kg}$$",
-  "distractor_notes": "Option A encodes forgetting the original length $L = 2\\ \\text{m}$ when computing strain (taking strain as $\\Delta L = 10^{-3}$), which doubles $\\sigma_1$ to $2 \\times 10^8\\ \\text{N m}^{-2}$ and yields $M = 10\\ \\text{kg}$. Option B encodes computing the additional mass that can be added ($20 - 5 = 15\\ \\text{kg}$) instead of the total maximum mass. Option D encodes misinterpreting the calculated $20\\ \\text{kg}$ as the additional mass and adding it to the initial $5\\ \\text{kg}$ to get $25\\ \\text{kg}$.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$A=0.8\\times10^{-6}\\ \\text{m}^2$, $F=4\\times10=40\\ \\text{N}$\n$$Y=\\frac{FL}{A\\Delta L}=\\frac{40\\times1.5}{(0.8\\times10^{-6})(0.3\\times10^{-3})}=2.5\\times10^{11}\\ \\text{Pa}$$\n$$\\Delta L_{\\mathrm{break}}=L\\frac{\\sigma_{\\mathrm{break}}}{Y}=1.5\\times\\frac{1.5\\times10^8}{2.5\\times10^{11}}=0.9\\times10^{-3}\\ \\text{m}=0.9\\ \\text{mm}$$",
+  "distractor_notes": "A: Uses the measured elongation as the breaking elongation. B: Underestimates the breaking stress-to-working stress ratio. D: Overestimates that ratio through an arithmetic error."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

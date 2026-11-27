@@ -1,0 +1,71 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching / reshaping",
+  "archetype": "proportionality-scaling",
+  "brief": "A wire is stretched to double its length at constant volume; find the factor by which resistance changes.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:21",
+   "2023s1:16",
+   "2024s1:9"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge9e7356aee89"
+ },
+ "status": "ok",
+ "stem": "A uniform metal wire is drawn through rollers until its length becomes twice its original length. Assuming its volume and resistivity remain unchanged, by what factor does its resistance change?",
+ "options": [
+  "$1$",
+  "$2$",
+  "$\\dfrac{1}{4}$",
+  "$4$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With constant volume, doubling the length halves the cross-sectional area. Since $R=\\rho L/A$ and resistivity is unchanged, the resistance becomes $2/(1/2)=4$ times its original value.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$V=AL=\\text{constant}\\Rightarrow A'=A/2$\n$R'=\\dfrac{\\rho(2L)}{A/2}=4\\dfrac{\\rho L}{A}=4R$\n\nIndependent check: With constant volume, doubling the length halves the cross-sectional area. Since $R=\\rho L/A$ and resistivity is unchanged, the resistance becomes $2/(1/2)=4$ times its original value.",
+ "solution": "With constant volume, $AL=A'L'$, so doubling the length halves the cross-sectional area: $A'=A/2$.\n$$\\frac{R'}{R}=\\frac{\\rho(2L)/(A/2)}{\\rho L/A}=4$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A uniform metal wire is drawn through rollers until its length becomes twice its original length. Assuming its volume and resistivity remain unchanged, by what factor does its resistance change?",
+  "options": [
+   "$1$",
+   "$2$",
+   "$4$",
+   "$\\dfrac{1}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$V=AL=\\text{constant}\\Rightarrow A'=A/2$\n$R'=\\dfrac{\\rho(2L)}{A/2}=4\\dfrac{\\rho L}{A}=4R$",
+  "distractor_notes": "A: assumes resistance is unchanged. B: accounts for doubled length but not the reduced area. D: uses the area change in the wrong direction."
+ },
+ "variant_of": "ge9e7356aee89",
+ "author_model": "openai/gpt-6-luna-pro"
+}

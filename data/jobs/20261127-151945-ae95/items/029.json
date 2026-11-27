@@ -1,0 +1,71 @@
+{
+ "qno": 29,
+ "section": "Physics",
+ "slot": {
+  "qno": 29,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio of approach/recede frequencies",
+  "brief": "A source moving toward then away from a stationary observer; compare the observed frequencies in the two cases.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:22",
+   "2025s1:19",
+   "2021:16"
+  ],
+  "origin": "variant",
+  "bank_ref": "g8ebdb50b2897"
+ },
+ "status": "ok",
+ "stem": "A fixed microphone records a tone from a source moving first toward it and then away. If the ratio of the frequencies heard in these two cases is $3:2$ and the speed of sound is $350$ m s$^{-1}$, what is the source speed?",
+ "options": [
+  "$70$ m s$^{-1}$",
+  "$50$ m s$^{-1}$",
+  "$140$ m s$^{-1}$",
+  "$105$ m s$^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a moving source, the approaching-to-receding frequency ratio is (v+u)/(v-u)=3/2. Thus 2(v+u)=3(v-u), so u=v/5=70 m s⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{f_{\\text{toward}}}{f_{\\text{away}}}=\\dfrac{v+u_s}{v-u_s}=\\dfrac{3}{2}$\n$2(v+u_s)=3(v-u_s)$\n$5u_s=v$\n$u_s=\\dfrac{350}{5}=70\\ \\text{m s}^{-1}$\n\nIndependent check: For a moving source, the approaching-to-receding frequency ratio is (v+u)/(v-u)=3/2. Thus 2(v+u)=3(v-u), so u=v/5=70 m s⁻¹.",
+ "solution": "For a moving source, $\\dfrac{f_{\\text{toward}}}{f_{\\text{away}}}=\\dfrac{v+u_s}{v-u_s}=\\dfrac{3}{2}$. Thus $2(v+u_s)=3(v-u_s)$, giving $u_s=\\dfrac{v}{5}=\\dfrac{350}{5}=70\\ \\text{m s}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A fixed microphone records a tone from a source moving first toward it and then away. If the ratio of the frequencies heard in these two cases is $3:2$ and the speed of sound is $350$ m s$^{-1}$, what is the source speed?",
+  "options": [
+   "$50$ m s$^{-1}$",
+   "$70$ m s$^{-1}$",
+   "$140$ m s$^{-1}$",
+   "$105$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{f_{\\text{toward}}}{f_{\\text{away}}}=\\dfrac{v+u_s}{v-u_s}=\\dfrac{3}{2}$\n$2(v+u_s)=3(v-u_s)$\n$5u_s=v$\n$u_s=\\dfrac{350}{5}=70\\ \\text{m s}^{-1}$",
+  "distractor_notes": "A: Uses an incorrect rearrangement of the frequency ratio. C: Omits the sum of the ratio terms when solving for speed. D: Uses half the speed of sound divided by the ratio difference."
+ },
+ "variant_of": "g8ebdb50b2897",
+ "author_model": "openai/gpt-6-luna-pro"
+}

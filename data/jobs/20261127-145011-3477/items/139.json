@@ -1,0 +1,56 @@
+{
+ "qno": 139,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 139,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Adjoint determinant properties",
+  "archetype": "conceptual",
+  "brief": "For a square matrix A, use adj/transpose properties (e.g., det(adj A), (AB)^T = B^T A^T) to evaluate an expression; include a trick like A being singular",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:109",
+   "2023s2:109",
+   "2025s1:104"
+  ],
+  "origin": "direct",
+  "bank_ref": "g6e8d49a51f09"
+ },
+ "status": "ok",
+ "stem": "If $A$ is a nonsingular $3\\times3$ matrix and $\\operatorname{adj}A=2A$, then $|A|$ is:",
+ "options": [
+  "$4$",
+  "$-8$",
+  "$16$",
+  "$8$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g6e8d49a51f09 (verified in job 20261127-132429-aa8a)"
+ ],
+ "working": "Let $|A|=d\\ne0$. Then $|\\operatorname{adj}A|=d^2=|2A|=8d$.\\nHence $d=8$.\n\nIndependent check: Let d=|A|. For a nonsingular 3×3 matrix, |adj A|=d². Taking determinants of adj A=2A gives d²=8d; since d≠0, d=8.",
+ "solution": "For a nonsingular $3\\times3$ matrix, $|\\operatorname{adj}A|=|A|^2$. Let $|A|=d\\ne0$; taking determinants of $\\operatorname{adj}A=2A$ gives\n$$d^2=|2A|=2^3d=8d.$$\nHence $d=8$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g6e8d49a51f09",
+ "author_model": "openai/gpt-6-luna-pro"
+}

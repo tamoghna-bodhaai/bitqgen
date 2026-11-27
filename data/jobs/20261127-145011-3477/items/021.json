@@ -1,0 +1,79 @@
+{
+ "qno": 21,
+ "section": "Physics",
+ "slot": {
+  "qno": 21,
+  "section": "Physics",
+  "chapter": "Capacitance",
+  "subtopic": "Equivalent capacitance of network",
+  "archetype": "circuit redraw",
+  "brief": "Capacitor network with some series and parallel elements; redraw the circuit and find the equivalent capacitance between two terminals; circuit figure required.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:10",
+   "2023s2:29",
+   "2025s1:18"
+  ],
+  "origin": "variant",
+  "bank_ref": "g8690c9fc703e"
+ },
+ "status": "ok",
+ "stem": "For the capacitor network shown, the equivalent capacitance between terminals $A$ and $B$ is:",
+ "options": [
+  "$1.2\\ \\mu\\text{F}$",
+  "$2\\ \\mu\\text{F}$",
+  "$11\\ \\mu\\text{F}$",
+  "$5\\ \\mu\\text{F}$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q021_stem_v0.png",
+  "width_pct": 70,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The two 4 μF capacitors are in series, giving 2 μF. This branch is in parallel with the 3 μF capacitor, so C_eq = 2 + 3 = 5 μF.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$C_s=\\dfrac{4\\times4}{4+4}=2\\ \\mu\\text{F}$\n$C_{AB}=C_s+3=5\\ \\mu\\text{F}$\n\nIndependent check: The two 4 μF capacitors are in series, giving 2 μF. This branch is in parallel with the 3 μF capacitor, so C_eq = 2 + 3 = 5 μF.",
+ "solution": "The two $4\\,\\mu\\text{F}$ capacitors are in series, so\n$$C_s=\\frac{4\\times4}{4+4}=2\\,\\mu\\text{F}.$$\nThis branch is in parallel with the $3\\,\\mu\\text{F}$ capacitor; hence $C_{AB}=2+3=5\\,\\mu\\text{F}$. The answer is (D).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the capacitor network shown, the equivalent capacitance between terminals $A$ and $B$ is:",
+  "options": [
+   "$1.2\\ \\mu\\text{F}$",
+   "$2\\ \\mu\\text{F}$",
+   "$5\\ \\mu\\text{F}$",
+   "$11\\ \\mu\\text{F}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw two terminals labelled A and B, one at the left and one at the right. Connect A to B with two parallel paths. In the upper path, place two capacitor symbols in series, each labelled 4 μF, with a junction between them. In the lower path, place one capacitor symbol labelled 3 μF. Show wires connecting both ends of each path to the respective A and B terminals. No battery or other components.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$C_s=\\dfrac{4\\times4}{4+4}=2\\ \\mu\\text{F}$\n$C_{AB}=C_s+3=5\\ \\mu\\text{F}$",
+  "distractor_notes": "A: Treats all three capacitors as being in series. B: Omits the parallel branch. D: Adds all three capacitances as if they were in parallel."
+ },
+ "variant_of": "g8690c9fc703e",
+ "author_model": "openai/gpt-6-luna-pro"
+}

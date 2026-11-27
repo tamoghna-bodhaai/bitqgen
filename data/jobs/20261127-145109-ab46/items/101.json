@@ -1,0 +1,70 @@
+{
+ "qno": 101,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 101,
+  "section": "Logical Reasoning",
+  "chapter": "Seating / Ranking Puzzle",
+  "subtopic": "Ranking and ordering",
+  "archetype": "ordering",
+  "brief": "Persons in a row with position clues from both ends; ask who is in the middle / how many are between two people.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:81",
+   "2024s2:83",
+   "2024s2:82"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Nine students stand in a row. Tara is third from the left, while Ravi is fourth from the right. How many students stand between them?",
+ "options": [
+  "One",
+  "Two",
+  "Three",
+  "Four"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Ravi is 6th from the left. Positions 4 and 5 stand between Ravi and Tara: 2 students.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Ravi is sixth from the left (9 − 4 + 1 = 6). Tara is third from the left, so 6 − 3 − 1 = 2 students stand between them.\n\nIndependent check: Ravi is 6th from the left. Positions 4 and 5 stand between Ravi and Tara: 2 students.",
+ "solution": "Ravi is $9-4+1=6$th from the left. Tara is 3rd, so the number between them is $6-3-1=2$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Nine students stand in a row. Tara is third from the left, while Ravi is fourth from the right. How many students stand between them?",
+  "options": [
+   "One",
+   "Two",
+   "Three",
+   "Four"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Ravi is sixth from the left (9 − 4 + 1 = 6). Tara is third from the left, so 6 − 3 − 1 = 2 students stand between them.",
+  "distractor_notes": "A: Counts one position too few. C: Counts one position too many. D: Confuses the distance between positions with the number of students between them."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

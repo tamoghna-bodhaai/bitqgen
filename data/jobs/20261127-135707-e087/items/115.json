@@ -1,0 +1,68 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of a circle passing through two given points with a specified radius or centre on a given line.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:130",
+   "2021:149",
+   "2026s1:109"
+  ]
+ },
+ "status": "ok",
+ "stem": "A circle of radius $\\sqrt{5}$ passes through $(1,2)$ and $(5,2)$, and its centre lies on $y=x-2$. Its equation is",
+ "options": [
+  "$x^2+y^2-6x-2y+5=0$",
+  "$x^2+y^2-6x-6y+13=0$",
+  "$x^2+y^2-6x-2y+9=0$",
+  "$x^2+y^2-2x-6y+5=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The chord’s perpendicular bisector is x=3. Intersecting with y=x−2 gives centre (3,1). Its circle is (x−3)²+(y−1)²=5, which expands to option B.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The chord midpoint is $(3,2)$ and its perpendicular bisector is $x=3$. The centre candidates are $(3,2\\pm1)$; $y=x-2$ selects $(3,1)$. Hence $(x-3)^2+(y-1)^2=5$, giving $x^2+y^2-6x-2y+5=0$.\n\nIndependent check: The chord’s perpendicular bisector is x=3. Intersecting with y=x−2 gives centre (3,1). Its circle is (x−3)²+(y−1)²=5, which expands to option B.",
+ "solution": "The perpendicular bisector of the chord joining $(1,2)$ and $(5,2)$ is $x=3$. Its intersection with $y=x-2$ gives the centre $(3,1)$.\n$$ (x-3)^2+(y-1)^2=5 \\implies x^2+y^2-6x-2y+5=0 $$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A circle of radius $\\sqrt{5}$ passes through $(1,2)$ and $(5,2)$, and its centre lies on $y=x-2$. Its equation is",
+  "options": [
+   "$x^2+y^2-6x-6y+13=0$",
+   "$x^2+y^2-6x-2y+5=0$",
+   "$x^2+y^2-6x-2y+9=0$",
+   "$x^2+y^2-2x-6y+5=0$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "The chord midpoint is $(3,2)$ and its perpendicular bisector is $x=3$. The centre candidates are $(3,2\\pm1)$; $y=x-2$ selects $(3,1)$. Hence $(x-3)^2+(y-1)^2=5$, giving $x^2+y^2-6x-2y+5=0$.",
+  "distractor_notes": "A: Selects the other centre; C: Uses the correct centre but the wrong radius; D: Places the centre at the wrong coordinates."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

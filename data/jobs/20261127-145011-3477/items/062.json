@@ -1,0 +1,79 @@
+{
+ "qno": 62,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 62,
+  "section": "Chemistry",
+  "chapter": "Alcohols, Phenols and Ethers",
+  "subtopic": "Cleavage of ethers with HI",
+  "archetype": "mechanism-based product",
+  "brief": "Cleavage of an unsymmetrical/mixed ether with excess HI; show structure figure and ask which alkyl iodide and alcohol form",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:59",
+   "2024s2:41",
+   "2025s2:32"
+  ],
+  "origin": "variant",
+  "bank_ref": "g5c2ea44455d2"
+ },
+ "status": "ok",
+ "stem": "The ether shown is heated with excess HI. Which pair of products is formed?",
+ "options": [
+  "p-Cresol and 1-propanol",
+  "4-Iodotoluene and 1-propanol",
+  "p-Cresol and 2-iodopropane",
+  "p-Cresol and 1-iodopropane"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q062_stem_v0.png",
+  "width_pct": 54,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "HI cleaves the ether at the propyl–O bond; the aryl–O bond remains intact, forming p-cresol and 1-iodopropane.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Ar–O–CH}_2\\text{CH}_2\\text{CH}_3 + \\text{HI} \\rightarrow \\text{ArOH} + \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{I}$\nCleavage occurs at the primary alkyl–O bond by $\\text{S}_\\text{N}2$; the aryl–O bond remains intact.\n\nIndependent check: HI cleaves the ether at the propyl–O bond; the aryl–O bond remains intact, forming p-cresol and 1-iodopropane.",
+ "solution": "HI cleaves the ether at the primary alkyl–O bond by $S_N2$; the aryl–O bond remains intact.\n$$\\text{Ar–O–CH}_2\\text{CH}_2\\text{CH}_3 + \\text{HI} \\rightarrow \\text{ArOH} + \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{I}$$\nThus, the products are p-cresol and 1-iodopropane.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The ether shown is heated with excess HI. Which pair of products is formed?",
+  "options": [
+   "p-Cresol and 1-iodopropane",
+   "4-Iodotoluene and 1-propanol",
+   "p-Cresol and 2-iodopropane",
+   "p-Cresol and 1-propanol"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a benzene ring with an –O–CH2CH2CH3 group at carbon 1 and a –CH3 group at carbon 4. Show no reaction arrows or other labels.",
+   "smiles": "CCCOc1ccc(C)cc1"
+  },
+  "difficulty_estimate": 1,
+  "working": "$\\text{Ar–O–CH}_2\\text{CH}_2\\text{CH}_3 + \\text{HI} \\rightarrow \\text{ArOH} + \\text{CH}_3\\text{CH}_2\\text{CH}_2\\text{I}$\nCleavage occurs at the primary alkyl–O bond by $\\text{S}_\\text{N}2$; the aryl–O bond remains intact.",
+  "distractor_notes": "B: incorrectly cleaves the aryl–O bond. C: places iodine on the wrong carbon. D: omits substitution of the propyl group by iodide."
+ },
+ "variant_of": "g5c2ea44455d2",
+ "author_model": "openai/gpt-6-luna-pro"
+}

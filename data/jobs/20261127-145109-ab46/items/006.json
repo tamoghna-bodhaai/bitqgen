@@ -1,0 +1,78 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "Interference – mirror images as coherent sources",
+  "archetype": "path difference geometry",
+  "brief": "Show a Lloyd's-mirror / two-source setup (or reflected ray acting as a virtual coherent source); ask the path difference and whether the central/reflecting-surface point is bright or dark.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:23",
+   "2021:10",
+   "2026s2:30"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "In the Lloyd’s-mirror setup shown, monochromatic light reflects with a phase change of $\\pi$. At $O$, what is the geometric path difference, excluding this phase change, and the resulting interference?",
+ "options": [
+  "Zero; bright",
+  "$\\dfrac{\\lambda}{2}$; dark",
+  "Zero; dark",
+  "$\\dfrac{\\lambda}{2}$; bright"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q006_stem_v1.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At O, the direct path SO and the reflected path (equivalent to S′O) are equal, so the geometric path difference is zero. The reflection adds a phase change of π, giving destructive interference.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$SO=S'O=\\sqrt{L^2+h^2}$\n$\\Delta_{\\mathrm{geom}}=|SO-S'O|=0$\nReflection adds phase difference $\\pi$.\n$\\therefore$ the waves interfere destructively at $O$; it is dark.\n\nIndependent check: At O, the direct path SO and the reflected path (equivalent to S′O) are equal, so the geometric path difference is zero. The reflection adds a phase change of π, giving destructive interference.",
+ "solution": "The reflected ray is equivalent to one from the image source $S'$, so $SO=S'O$.\n$$\\Delta_{\\mathrm{geom}}=|SO-S'O|=0$$\nReflection adds a phase difference of $\\pi$, so the waves interfere destructively at $O$; it is dark.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the Lloyd’s-mirror setup shown, monochromatic light reflects with a phase change of $\\pi$. At $O$, what is the geometric path difference, excluding this phase change, and the resulting interference?",
+  "options": [
+   "Zero; bright",
+   "Zero; dark",
+   "$\\dfrac{\\lambda}{2}$; dark",
+   "$\\dfrac{\\lambda}{2}$; bright"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a horizontal mirror along the line y=0 from x=0 to x=L. Place a point source S at (0,h) above the mirror and a vertical screen at x=L. Mark point O on the screen at y=0, level with the mirror. Show the virtual image S' at (0,-h) below the mirror using a dashed outline. Draw the straight paths S–O and S'–O as thin lines; use a dashed style for the path from S' to O. Label the mirror, screen, S, S', O, h and L. Do not label any path difference or fringe type.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$SO=S'O=\\sqrt{L^2+h^2}$\n$\\Delta_{\\mathrm{geom}}=|SO-S'O|=0$\nReflection adds phase difference $\\pi$.\n$\\therefore$ the waves interfere destructively at $O$; it is dark.",
+  "distractor_notes": "A: Ignores the phase reversal on reflection. C: Treats the reflection phase shift as geometric path difference. D: Treats the phase shift as a path difference and also incorrectly predicts constructive interference."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

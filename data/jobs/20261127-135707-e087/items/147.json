@@ -1,0 +1,68 @@
+{
+ "qno": 147,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 147,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Parabola focus",
+  "archetype": "single-formula numerical",
+  "brief": "Find the equation of a parabola from its focus and directrix (or vice versa).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:94",
+   "2023s2:96",
+   "2022:108"
+  ]
+ },
+ "status": "ok",
+ "stem": "The parabola with focus $(4,3)$ and directrix $3x+4y=0$ has equation",
+ "options": [
+  "$16x^2+24xy+9y^2-200x-150y+625=0$",
+  "$16x^2-24xy+9y^2+200x+150y+625=0$",
+  "$16x^2-24xy+9y^2-200x-150y+625=0$",
+  "$16x^2-24xy+9y^2-200x-150y-625=0$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set the squared distance to the focus equal to the squared distance to the directrix: 25[(x-4)^2+(y-3)^2]=(3x+4y)^2. Expanding gives 16x^2-24xy+9y^2-200x-150y+625=0.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$25[(x-4)^2+(y-3)^2]=(3x+4y)^2\\Rightarrow 16x^2-24xy+9y^2-200x-150y+625=0$.\n\nIndependent check: Set the squared distance to the focus equal to the squared distance to the directrix: 25[(x-4)^2+(y-3)^2]=(3x+4y)^2. Expanding gives 16x^2-24xy+9y^2-200x-150y+625=0.",
+ "solution": "Equating the squared distances from $(x,y)$ to the focus and the directrix gives\n$$25[(x-4)^2+(y-3)^2]=(3x+4y)^2.$$\nExpanding and simplifying, $16x^2-24xy+9y^2-200x-150y+625=0$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The parabola with focus $(4,3)$ and directrix $3x+4y=0$ has equation",
+  "options": [
+   "$16x^2+24xy+9y^2-200x-150y+625=0$",
+   "$16x^2-24xy+9y^2-200x-150y+625=0$",
+   "$16x^2-24xy+9y^2+200x+150y+625=0$",
+   "$16x^2-24xy+9y^2-200x-150y-625=0$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$25[(x-4)^2+(y-3)^2]=(3x+4y)^2\\Rightarrow 16x^2-24xy+9y^2-200x-150y+625=0$.",
+  "distractor_notes": "A: sign error in the cross term. C: reversed signs of the linear terms. D: sign error in the constant term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

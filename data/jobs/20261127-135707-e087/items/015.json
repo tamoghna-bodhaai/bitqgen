@@ -1,0 +1,68 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Projectile trajectory equation",
+  "archetype": "compare-with-standard-form",
+  "brief": "Given x(t) or y(x) trajectory form, extract parameters (u, angle, time of flight) and compute range or maximum height; moderately involved standard-form comparison.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:7",
+   "2026s1:9",
+   "2025s1:14"
+  ]
+ },
+ "status": "ok",
+ "stem": "A projectile follows the trajectory $y=\\sqrt{3}\\,x-\\dfrac{x^2}{20\\ \\text{m}}$, where $x$ and $y$ are coordinates in metres. Taking $g=10\\ \\text{m s}^{-2}$, what are its horizontal range and maximum height, respectively?",
+ "options": [
+  "$(20\\sqrt{3}\\ \\text{m},\\ 5\\ \\text{m})$",
+  "$(20\\sqrt{3}\\ \\text{m},\\ 30\\ \\text{m})$",
+  "$(10\\sqrt{3}\\ \\text{m},\\ 15\\ \\text{m})$",
+  "$(20\\sqrt{3}\\ \\text{m},\\ 15\\ \\text{m})$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set y=0 to find the nonzero root: R=20√3 m. The parabola’s vertex is at x=10√3 m, giving y_max=15 m.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Compare with $y=x\\tan\\theta-\\dfrac{g x^2}{2u^2\\cos^2\\theta}$: $\\tan\\theta=\\sqrt3$, $\\dfrac{g}{2u^2\\cos^2\\theta}=\\dfrac{1}{20\\ \\text{m}}$. Thus $\\theta=60^\\circ$, $u=20\\ \\text{m s}^{-1}$. $R=\\dfrac{\\tan\\theta}{1/(20\\ \\text{m})}=20\\sqrt3\\ \\text{m}$; $H=\\dfrac{\\tan^2\\theta}{4/(20\\ \\text{m})}=15\\ \\text{m}$.\n\nIndependent check: Set y=0 to find the nonzero root: R=20√3 m. The parabola’s vertex is at x=10√3 m, giving y_max=15 m.",
+ "solution": "For $y=ax-bx^2$, the range is $a/b$ and the maximum height is $a^2/(4b)$. Here, $a=\\sqrt{3}$ and $b=1/(20\\ \\text{m})$.\n$$R=20\\sqrt{3}\\ \\text{m},\\qquad H_{\\max}=\\frac{3}{4/(20\\ \\text{m})}=15\\ \\text{m}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A projectile follows the trajectory $y=\\sqrt{3}\\,x-\\dfrac{x^2}{20\\ \\text{m}}$, where $x$ and $y$ are coordinates in metres. Taking $g=10\\ \\text{m s}^{-2}$, what are its horizontal range and maximum height, respectively?",
+  "options": [
+   "$(20\\sqrt{3}\\ \\text{m},\\ 15\\ \\text{m})$",
+   "$(20\\sqrt{3}\\ \\text{m},\\ 30\\ \\text{m})$",
+   "$(10\\sqrt{3}\\ \\text{m},\\ 15\\ \\text{m})$",
+   "$(20\\sqrt{3}\\ \\text{m},\\ 5\\ \\text{m})$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Compare with $y=x\\tan\\theta-\\dfrac{g x^2}{2u^2\\cos^2\\theta}$: $\\tan\\theta=\\sqrt3$, $\\dfrac{g}{2u^2\\cos^2\\theta}=\\dfrac{1}{20\\ \\text{m}}$. Thus $\\theta=60^\\circ$, $u=20\\ \\text{m s}^{-1}$. $R=\\dfrac{\\tan\\theta}{1/(20\\ \\text{m})}=20\\sqrt3\\ \\text{m}$; $H=\\dfrac{\\tan^2\\theta}{4/(20\\ \\text{m})}=15\\ \\text{m}$.",
+  "distractor_notes": "B: doubles the maximum height. C: halves the range. D: uses an incorrect vertex-height calculation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

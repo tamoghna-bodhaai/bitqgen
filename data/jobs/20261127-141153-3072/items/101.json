@@ -1,0 +1,68 @@
+{
+ "qno": 101,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 101,
+  "section": "Logical Reasoning",
+  "chapter": "Analogy",
+  "subtopic": "Letter analogy",
+  "archetype": "letter shift analogy",
+  "brief": "Pair like CDF : HIK where a consistent shift maps one to the other; find the analogous fourth term.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:86",
+   "2026s1:71",
+   "2026s2:73"
+  ]
+ },
+ "status": "ok",
+ "stem": "In the following letter analogy, each letter in the first group is shifted by the same number of places to form the second group. Apply the same rule to find the missing group.<br><br>**CDF : HIK :: LNP : ?**",
+ "options": [
+  "QSV",
+  "QTV",
+  "RTV",
+  "QSU"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Each letter shifts forward 5 places: CDF → HIK. Applying the same shift, LNP → QSU.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Each letter shifts forward 5 places: C→H, D→I, F→K.<br>So LNP→QSU (L→Q, N→S, P→U).<br>B, C and D do not apply the same +5 shift.\n\nIndependent check: Each letter shifts forward 5 places: CDF → HIK. Applying the same shift, LNP → QSU.",
+ "solution": "Each letter shifts forward 5 places in the alphabet: $C\\to H$, $D\\to I$, $F\\to K$.\nApplying the same rule, $LNP\\to QSU$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the following letter analogy, each letter in the first group is shifted by the same number of places to form the second group. Apply the same rule to find the missing group.<br><br>**CDF : HIK :: LNP : ?**",
+  "options": [
+   "QSU",
+   "QTV",
+   "RTV",
+   "QSV"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Each letter shifts forward 5 places: C→H, D→I, F→K.<br>So LNP→QSU (L→Q, N→S, P→U).<br>B, C and D do not apply the same +5 shift.",
+  "distractor_notes": "B: N and P are shifted by 6 places. C: L is shifted by 6 places. D: P is shifted by 3 places."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 18,
+ "section": "Physics",
+ "slot": {
+  "qno": 18,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Magnetic field due to finite wire / polygon loop",
+  "archetype": "superposition numerical",
+  "brief": "Magnetic field at centre of a regular polygonal coil (square/hexagon) of N turns with current I; direct superposition formula or comparison of square vs circular loop of same perimeter.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:21",
+   "2025s1:30",
+   "2026s1:2"
+  ]
+ },
+ "status": "ok",
+ "stem": "A square coil and a circular coil each have $N$ turns, carry the same current $I$, and have equal perimeters. What is the ratio of the magnetic field magnitude at the square coil's centre to that at the circular coil's centre?",
+ "options": [
+  "$\\dfrac{\\pi^2}{8\\sqrt{2}}$",
+  "$\\dfrac{4\\sqrt{2}}{\\pi^2}$",
+  "$\\dfrac{8\\sqrt{2}}{\\pi}$",
+  "$\\dfrac{8\\sqrt{2}}{\\pi^2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For square side a, B_s = 2√2 μ₀NI/(πa). Equal perimeters give circular radius R = 2a/π, so B_c = μ₀NI/(2R) = πμ₀NI/(4a). Therefore B_s/B_c = 8√2/π².",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For square side $a$, $B_{\\square}=4N\\dfrac{\\mu_0 I}{4\\pi(a/2)}(2\\sin45^\\circ)=\\dfrac{2\\sqrt2\\mu_0NI}{\\pi a}$. Equal perimeter gives $R_{\\circ}=2a/\\pi$, so $B_{\\circ}=\\dfrac{\\mu_0NI}{2R_{\\circ}}=\\dfrac{\\pi\\mu_0NI}{4a}$. Thus $\\dfrac{B_{\\square}}{B_{\\circ}}=\\dfrac{8\\sqrt2}{\\pi^2}$.\n\nIndependent check: For square side a, B_s = 2√2 μ₀NI/(πa). Equal perimeters give circular radius R = 2a/π, so B_c = μ₀NI/(2R) = πμ₀NI/(4a). Therefore B_s/B_c = 8√2/π².",
+ "solution": "For a square of side $a$, the field at the centre is $B_s=\\dfrac{2\\sqrt{2}\\mu_0NI}{\\pi a}$. Equal perimeters give the circular coil radius $R=\\dfrac{2a}{\\pi}$, hence $B_c=\\dfrac{\\mu_0NI}{2R}=\\dfrac{\\pi\\mu_0NI}{4a}$. Therefore,\n$$\\frac{B_s}{B_c}=\\frac{8\\sqrt{2}}{\\pi^2}$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A square coil and a circular coil each have $N$ turns, carry the same current $I$, and have equal perimeters. What is the ratio of the magnetic field magnitude at the square coil's centre to that at the circular coil's centre?",
+  "options": [
+   "$\\dfrac{8\\sqrt{2}}{\\pi^2}$",
+   "$\\dfrac{4\\sqrt{2}}{\\pi^2}$",
+   "$\\dfrac{8\\sqrt{2}}{\\pi}$",
+   "$\\dfrac{\\pi^2}{8\\sqrt{2}}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "For square side $a$, $B_{\\square}=4N\\dfrac{\\mu_0 I}{4\\pi(a/2)}(2\\sin45^\\circ)=\\dfrac{2\\sqrt2\\mu_0NI}{\\pi a}$. Equal perimeter gives $R_{\\circ}=2a/\\pi$, so $B_{\\circ}=\\dfrac{\\mu_0NI}{2R_{\\circ}}=\\dfrac{\\pi\\mu_0NI}{4a}$. Thus $\\dfrac{B_{\\square}}{B_{\\circ}}=\\dfrac{8\\sqrt2}{\\pi^2}$.",
+  "distractor_notes": "B: misses a factor of two in the square-coil field. C: uses an incorrect perimeter-to-radius relation. D: gives the reciprocal field ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

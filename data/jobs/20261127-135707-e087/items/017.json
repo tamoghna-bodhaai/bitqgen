@@ -1,0 +1,68 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Helical motion in magnetic field",
+  "archetype": "ratio comparison",
+  "brief": "A charged particle enters at angle to a uniform B field; find pitch and radius of helical path, and how pitch changes if speed/angle/B is altered.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:6",
+   "2021:21",
+   "2025s1:30"
+  ]
+ },
+ "status": "ok",
+ "stem": "The same charged particle enters a uniform magnetic field at $30^\\circ$ to the field with speed $v$ and field magnitude $B$. In a second case its speed is $2v$, its angle to the field is $60^\\circ$, and the field magnitude is $2B$. What are the ratios of second-case to first-case pitch and radius, respectively?",
+ "options": [
+  "$(\\sqrt{3},\\ 1/\\sqrt{3})$",
+  "$(1/\\sqrt{3},\\ \\sqrt{3})$",
+  "$(1/2,\\ 2)$",
+  "$(2,\\ 1/2)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Pitch is proportional to v cosθ/B, so the ratio is (2 cos60°/2)/(cos30°) = 1/√3. Radius is proportional to v sinθ/B, so the ratio is (2 sin60°/2)/(sin30°) = √3.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$p=\\dfrac{2\\pi m v\\cos\\theta}{|q|B}$, $r=\\dfrac{m v\\sin\\theta}{|q|B}$. $\\dfrac{p_2}{p_1}=\\dfrac{2\\cos60^\\circ}{2\\cos30^\\circ}=\\dfrac{1}{\\sqrt3}$; $\\dfrac{r_2}{r_1}=\\dfrac{2\\sin60^\\circ}{2\\sin30^\\circ}=\\sqrt3$.\n\nIndependent check: Pitch is proportional to v cosθ/B, so the ratio is (2 cos60°/2)/(cos30°) = 1/√3. Radius is proportional to v sinθ/B, so the ratio is (2 sin60°/2)/(sin30°) = √3.",
+ "solution": "For helical motion, $p=\\dfrac{2\\pi m v\\cos\\theta}{|q|B}$ and $r=\\dfrac{m v\\sin\\theta}{|q|B}$.\n$$\\frac{p_2}{p_1}=\\frac{2\\cos60^\\circ}{2\\cos30^\\circ}=\\frac{1}{\\sqrt3},\\qquad \\frac{r_2}{r_1}=\\frac{2\\sin60^\\circ}{2\\sin30^\\circ}=\\sqrt3$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "The same charged particle enters a uniform magnetic field at $30^\\circ$ to the field with speed $v$ and field magnitude $B$. In a second case its speed is $2v$, its angle to the field is $60^\\circ$, and the field magnitude is $2B$. What are the ratios of second-case to first-case pitch and radius, respectively?",
+  "options": [
+   "$(1/\\sqrt{3},\\ \\sqrt{3})$",
+   "$(\\sqrt{3},\\ 1/\\sqrt{3})$",
+   "$(1/2,\\ 2)$",
+   "$(2,\\ 1/2)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$p=\\dfrac{2\\pi m v\\cos\\theta}{|q|B}$, $r=\\dfrac{m v\\sin\\theta}{|q|B}$. $\\dfrac{p_2}{p_1}=\\dfrac{2\\cos60^\\circ}{2\\cos30^\\circ}=\\dfrac{1}{\\sqrt3}$; $\\dfrac{r_2}{r_1}=\\dfrac{2\\sin60^\\circ}{2\\sin30^\\circ}=\\sqrt3$.",
+  "distractor_notes": "B: interchanges the parallel and perpendicular velocity effects. C: uses speed scaling but neglects the angle and field changes. D: reverses the field-scaling effect and misses the angle factors."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

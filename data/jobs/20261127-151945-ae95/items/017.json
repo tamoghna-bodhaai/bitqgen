@@ -1,0 +1,71 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Dimensional analysis",
+  "archetype": "dimension computation",
+  "brief": "Find the dimensional formula of a given physical quantity (e.g., torque, Planck's constant, coefficient of viscosity) from its defining equation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:10",
+   "2023s2:21",
+   "2023s2:9"
+  ],
+  "origin": "variant",
+  "bank_ref": "geed3ab09375a"
+ },
+ "status": "ok",
+ "stem": "For a body moving through a fluid, the magnitude of the resistive force is modeled as $F = C u^2$, where $u$ is its speed. What is the dimensional formula of $C$?",
+ "options": [
+  "$[M L T^{-2}]$",
+  "$[M L^{-1} T^0]$",
+  "$[M T^{-1}]$",
+  "$[M L^{-1} T^{-2}]$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "[C] = [F]/[u^2] = [MLT^{-2}]/[L^2T^{-2}] = [ML^{-1}].",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[C] = [F]/[u]^2 = [M L T^{-2}]/[L^2 T^{-2}] = [M L^{-1} T^0]$\n\nIndependent check: [C] = [F]/[u^2] = [MLT^{-2}]/[L^2T^{-2}] = [ML^{-1}].",
+ "solution": "From $F=Cu^2$, the dimensions of $C$ are\n$$[C]=\\frac{[F]}{[u]^2}=\\frac{[MLT^{-2}]}{[L^2T^{-2}]}=[ML^{-1}T^0].$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For a body moving through a fluid, the magnitude of the resistive force is modeled as $F = C u^2$, where $u$ is its speed. What is the dimensional formula of $C$?",
+  "options": [
+   "$[M L^{-1} T^0]$",
+   "$[M L T^{-2}]$",
+   "$[M T^{-1}]$",
+   "$[M L^{-1} T^{-2}]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$[C] = [F]/[u]^2 = [M L T^{-2}]/[L^2 T^{-2}] = [M L^{-1} T^0]$",
+  "distractor_notes": "B: uses the dimensions of force without dividing by speed squared. C: divides force by speed rather than speed squared. D: incorrectly retains the force's time exponent."
+ },
+ "variant_of": "geed3ab09375a",
+ "author_model": "openai/gpt-6-luna-pro"
+}

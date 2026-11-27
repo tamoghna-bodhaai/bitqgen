@@ -20,17 +20,17 @@
   ]
  },
  "status": "ok",
- "stem": "In the circuit shown in the figure, assuming the diodes $D_1$ and $D_2$ to be ideal, the current flowing through diode $D_1$ is",
+ "stem": "In the circuit shown in the figure, both diodes are ideal. What is the current through diode $D_1$?",
  "options": [
-  "$1.0\\ \\text{A}$",
-  "$1.8\\ \\text{A}$",
-  "$2.0\\ \\text{A}$",
-  "$3.0\\ \\text{A}$"
+  "$0.75$ A",
+  "$1.0$ A",
+  "$1.5$ A",
+  "$3.0$ A"
  ],
  "answer": "C",
  "figure": {
   "path": "figs/q040_stem_v0.png",
-  "width_pct": 65,
+  "width_pct": 60,
   "kind": "circuit"
  },
  "option_figs": null,
@@ -38,10 +38,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Battery drives current from J1 to J2. D1 (pointing J1→J2) is forward biased; D2 (pointing J2→J1) is reverse biased and blocks its 12 Ω branch. Active parallel combination: 6 Ω || 12 Ω = 4 Ω, in series with 2 Ω gives 6 Ω. Total current = 18/6 = 3 A; voltage across J1–J2 = 3×4 = 12 V; current through D1 = 12/6 = 2.0 A.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The two 4 Ω branches are in parallel, giving 2 Ω. Total resistance is 2 Ω + 2 Ω = 4 Ω, so the source current is 12/4 = 3 A. Equal branches carry 1.5 A each; therefore the current through D₁ is 1.5 A.",
    "answer": "C",
-   "confidence": 0.97,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -49,27 +49,28 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Determine the biasing of each diode:\nThe positive terminal of the $18\\ \\text{V}$ battery is connected to the left junction $J_1$, and the negative terminal connects via the $2\\ \\Omega$ resistor to the right junction $J_2$. Thus, $V_{J_1} > V_{J_2}$.\n- Diode $D_1$ has its anode connected toward $J_1$ and cathode toward $J_2$, so it is forward-biased and acts as a closed switch.\n- Diode $D_2$ has its cathode connected toward $J_1$ and anode toward $J_2$, so it is reverse-biased and acts as an open circuit ($I_{D_2} = 0$).\n\n2. Find the equivalent resistance of the parallel combination:\nOnly the top branch ($6\\ \\Omega$) and the bottom branch ($12\\ \\Omega$) conduct.\n$$R_p = \\dfrac{6 \\times 12}{6 + 12} = 4\\ \\Omega$$\n\n3. Calculate the total circuit resistance and total current:\n$$R_{\\text{total}} = R_p + 2\\ \\Omega = 4 + 2 = 6\\ \\Omega$$\n$$I_{\\text{total}} = \\dfrac{18\\ \\text{V}}{6\\ \\Omega} = 3\\ \\text{A}$$\n\n4. Calculate the current through diode $D_1$:\nThe voltage drop across the parallel section is:\n$$V_p = I_{\\text{total}} \\times R_p = 3\\ \\text{A} \\times 4\\ \\Omega = 12\\ \\text{V}$$\nTherefore, the current through $D_1$ is:\n$$I_{D_1} = \\dfrac{V_p}{6\\ \\Omega} = \\dfrac{12\\ \\text{V}}{6\\ \\Omega} = 2.0\\ \\text{A}$$\n\nIndependent check: Battery drives current from J1 to J2. D1 (pointing J1→J2) is forward biased; D2 (pointing J2→J1) is reverse biased and blocks its 12 Ω branch. Active parallel combination: 6 Ω || 12 Ω = 4 Ω, in series with 2 Ω gives 6 Ω. Total current = 18/6 = 3 A; voltage across J1–J2 = 3×4 = 12 V; current through D1 = 12/6 = 2.0 A.",
+ "working": "$R_{\\text{parallel}} = 4\\parallel 4 = 2\\ \\Omega$\n$R_{\\text{total}} = 2 + 2 = 4\\ \\Omega$\n$I_{\\text{total}} = \\dfrac{12}{4} = 3\\ \\text{A}$\n$D_1,D_2$ both conduct; equal branch resistances give $I_{D_1} = \\dfrac{3}{2} = 1.5\\ \\text{A}$\n\nIndependent check: The two 4 Ω branches are in parallel, giving 2 Ω. Total resistance is 2 Ω + 2 Ω = 4 Ω, so the source current is 12/4 = 3 A. Equal branches carry 1.5 A each; therefore the current through D₁ is 1.5 A.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "In the circuit shown in the figure, assuming the diodes $D_1$ and $D_2$ to be ideal, the current flowing through diode $D_1$ is",
+  "stem": "In the circuit shown in the figure, both diodes are ideal. What is the current through diode $D_1$?",
   "options": [
-   "$1.0\\ \\text{A}$",
-   "$1.8\\ \\text{A}$",
-   "$2.0\\ \\text{A}$",
-   "$3.0\\ \\text{A}$"
+   "$0.75$ A",
+   "$1.0$ A",
+   "$1.5$ A",
+   "$3.0$ A"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "1. Determine the biasing of each diode:\nThe positive terminal of the $18\\ \\text{V}$ battery is connected to the left junction $J_1$, and the negative terminal connects via the $2\\ \\Omega$ resistor to the right junction $J_2$. Thus, $V_{J_1} > V_{J_2}$.\n- Diode $D_1$ has its anode connected toward $J_1$ and cathode toward $J_2$, so it is forward-biased and acts as a closed switch.\n- Diode $D_2$ has its cathode connected toward $J_1$ and anode toward $J_2$, so it is reverse-biased and acts as an open circuit ($I_{D_2} = 0$).\n\n2. Find the equivalent resistance of the parallel combination:\nOnly the top branch ($6\\ \\Omega$) and the bottom branch ($12\\ \\Omega$) conduct.\n$$R_p = \\dfrac{6 \\times 12}{6 + 12} = 4\\ \\Omega$$\n\n3. Calculate the total circuit resistance and total current:\n$$R_{\\text{total}} = R_p + 2\\ \\Omega = 4 + 2 = 6\\ \\Omega$$\n$$I_{\\text{total}} = \\dfrac{18\\ \\text{V}}{6\\ \\Omega} = 3\\ \\text{A}$$\n\n4. Calculate the current through diode $D_1$:\nThe voltage drop across the parallel section is:\n$$V_p = I_{\\text{total}} \\times R_p = 3\\ \\text{A} \\times 4\\ \\Omega = 12\\ \\text{V}$$\nTherefore, the current through $D_1$ is:\n$$I_{D_1} = \\dfrac{V_p}{6\\ \\Omega} = \\dfrac{12\\ \\text{V}}{6\\ \\Omega} = 2.0\\ \\text{A}$$",
-  "distractor_notes": "Option A ($1.0\\ \\text{A}$) results from calculating the current through the parallel $12\\ \\Omega$ resistor instead of the $D_1$ branch.\nOption B ($1.8\\ \\text{A}$) results from assuming both diodes conduct, giving $R_p = 3\\ \\Omega$, $I_{\\text{total}} = 3.6\\ \\text{A}$, and $I_{D_1} = 1.8\\ \\text{A}$.\nOption D ($3.0\\ \\text{A}$) is the total current supplied by the battery, forgetting the parallel branch division.",
   "figure": {
    "kind": "circuit",
-   "description": "A rectangular schematic circuit. On the left vertical branch is a DC voltage source labeled '18 V' with its positive terminal (longer line) at the top and negative terminal (shorter line) at the bottom. From the positive terminal, the wire runs horizontally right to a node J1. Between node J1 and a second node J2, three horizontal branches are connected in parallel: (1) Top branch: an ideal diode D1 pointing to the right (anode to J1, cathode to J2) in series with a 6 Ω resistor. (2) Middle branch: an ideal diode D2 pointing to the left (cathode to J1, anode to J2) in series with a 12 Ω resistor. (3) Bottom branch: a simple 12 Ω resistor with no diode. From node J2, the circuit wire continues to the right, turns downward, and returns horizontally to the negative terminal of the battery through a resistor labeled '2 Ω'.",
+   "description": "Draw a 12 V ideal battery on the left, with its positive terminal above its negative terminal. Connect the positive terminal through a 2 Ω resistor to an upper junction. From this junction draw two parallel vertical branches to a common lower junction. In the left branch, place a 4 Ω resistor above an ideal diode labelled D1; in the right branch, place a 4 Ω resistor above an ideal diode labelled D2. Orient both diodes to conduct downward (anode above cathode). Connect the lower junction to the battery's negative terminal. Label all component values and the battery polarity.",
    "smiles": null
   },
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$R_{\\text{parallel}} = 4\\parallel 4 = 2\\ \\Omega$\n$R_{\\text{total}} = 2 + 2 = 4\\ \\Omega$\n$I_{\\text{total}} = \\dfrac{12}{4} = 3\\ \\text{A}$\n$D_1,D_2$ both conduct; equal branch resistances give $I_{D_1} = \\dfrac{3}{2} = 1.5\\ \\text{A}$",
+  "distractor_notes": "A: halves the branch current again. B: incorrect current division. D: gives the total current rather than the current in one branch."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

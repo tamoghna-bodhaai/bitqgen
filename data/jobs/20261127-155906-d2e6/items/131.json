@@ -1,0 +1,70 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Mathematical Reasoning",
+  "subtopic": "Logical equivalence",
+  "archetype": "simplify and compare",
+  "brief": "Show/verify which of the statement forms (~(p∧q)) → r, (p→r)∨(q→r) etc. are logically equivalent by truth table or algebraic manipulation; pick the equivalent pair.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:104",
+   "2023s2:129",
+   "2024s1:128"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which pair of propositions is logically equivalent for all truth values of $p,q,r$?",
+ "options": [
+  "$[\neg(p\\land q)]\\to r$ ; $(p\\land q)\\lor r$",
+  "$[\neg(p\\land q)]\\to r$ ; $(p\\to r)\\lor(q\\to r)$",
+  "$p\\to(q\\land r)$ ; $(p\\to q)\\lor(p\\to r)$",
+  "$(p\\lor q)\\to r$ ; $(p\\to r)\\lor(q\\to r)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In (A), ¬(p∧q)→r ≡ ¬¬(p∧q)∨r ≡ (p∧q)∨r, matching the second proposition. The other pairs are not equivalent.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$[\\neg(p\\land q)]\\to r\\equiv\\neg\\neg(p\\land q)\\lor r\\equiv(p\\land q)\\lor r$.\n\nIndependent check: In (A), ¬(p∧q)→r ≡ ¬¬(p∧q)∨r ≡ (p∧q)∨r, matching the second proposition. The other pairs are not equivalent.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Which pair of propositions is logically equivalent for all truth values of $p,q,r$?",
+  "options": [
+   "$[\neg(p\\land q)]\\to r$ ; $(p\\land q)\\lor r$",
+   "$[\neg(p\\land q)]\\to r$ ; $(p\\to r)\\lor(q\\to r)$",
+   "$p\\to(q\\land r)$ ; $(p\\to q)\\lor(p\\to r)$",
+   "$(p\\lor q)\\to r$ ; $(p\\to r)\\lor(q\\to r)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$[\\neg(p\\land q)]\\to r\\equiv\\neg\\neg(p\\land q)\\lor r\\equiv(p\\land q)\\lor r$.",
+  "distractor_notes": "B: distributes the implication over a disjunction incorrectly; C: replaces the required conjunction of implications by a disjunction; D: confuses $(p\\lor q)\\to r$ with separate implications."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of functions",
+  "archetype": "domain intersection",
+  "brief": "Find the domain of a rational + square-root composite function; intersect conditions from numerator and denominator",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:112",
+   "2025s1:107",
+   "2026s1:108"
+  ],
+  "origin": "variant",
+  "bank_ref": "g0747235304ed"
+ },
+ "status": "ok",
+ "stem": "The domain of the real-valued function $f(x)=\\sqrt{\\dfrac{x^2-4}{x-1}}+\\dfrac{1}{x}$ is",
+ "options": [
+  "$[-2,1)\\cup[2,\\infty)$",
+  "$(-2,0)\\cup(0,1)\\cup(2,\\infty)$",
+  "$[-2,0)\\cup(0,1)\\cup[2,\\infty)$",
+  "$[-2,0)\\cup(0,1]\\cup[2,\\infty)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Require \\(x\\ne0,1\\) and \\((x^2-4)/(x-1)\\ge0\\). A sign chart gives \\([-2,1)\\cup[2,\\infty)\\); excluding \\(0\\) yields option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{x^2-4}{x-1}\\ge 0$, with $x\\ne 1$.<br>Sign analysis gives $x\\in[-2,1)\\cup[2,\\infty)$.<br>Also, $\\dfrac{1}{x}$ requires $x\\ne 0$.<br>Domain: $[-2,0)\\cup(0,1)\\cup[2,\\infty)$.\n\nIndependent check: Require \\(x\\ne0,1\\) and \\((x^2-4)/(x-1)\\ge0\\). A sign chart gives \\([-2,1)\\cup[2,\\infty)\\); excluding \\(0\\) yields option A.",
+ "solution": "For the square root, require $\\dfrac{x^2-4}{x-1}\\ge 0$ and $x\\ne 1$. A sign analysis gives $x\\in[-2,1)\\cup[2,\\infty)$.\nSince $\\dfrac{1}{x}$ also requires $x\\ne 0$, the domain is $[-2,0)\\cup(0,1)\\cup[2,\\infty)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The domain of the real-valued function $f(x)=\\sqrt{\\dfrac{x^2-4}{x-1}}+\\dfrac{1}{x}$ is",
+  "options": [
+   "$[-2,0)\\cup(0,1)\\cup[2,\\infty)$",
+   "$(-2,0)\\cup(0,1)\\cup(2,\\infty)$",
+   "$[-2,1)\\cup[2,\\infty)$",
+   "$[-2,0)\\cup(0,1]\\cup[2,\\infty)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{x^2-4}{x-1}\\ge 0$, with $x\\ne 1$.<br>Sign analysis gives $x\\in[-2,1)\\cup[2,\\infty)$.<br>Also, $\\dfrac{1}{x}$ requires $x\\ne 0$.<br>Domain: $[-2,0)\\cup(0,1)\\cup[2,\\infty)$.",
+  "distractor_notes": "B: incorrectly excludes the zeros of the radicand at $x=-2$ and $x=2$.<br>C: overlooks the restriction $x\\ne 0$ from the separate rational term.<br>D: incorrectly includes $x=1$, where the radicand is undefined."
+ },
+ "variant_of": "g0747235304ed",
+ "author_model": "openai/gpt-6-luna-pro"
+}

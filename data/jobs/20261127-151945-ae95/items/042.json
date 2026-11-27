@@ -1,0 +1,71 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Amines",
+  "subtopic": "Nitrile reduction, diazotisation",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:38",
+   "2024s1:50",
+   "2025s2:50"
+  ],
+  "origin": "variant",
+  "bank_ref": "g309fd4500e57"
+ },
+ "status": "ok",
+ "stem": "Which of the following amines has the smallest $pK_b$ in water?",
+ "options": [
+  "4-Methoxyaniline",
+  "2-Phenylethan-1-amine",
+  "$N,N$-Dimethylaniline",
+  "2-Nitroaniline"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "2-Phenylethan-1-amine is an aliphatic amine, whose nitrogen lone pair is more available for protonation than in the aniline derivatives. It is therefore the strongest base and has the smallest pKb.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "In 2-phenylethan-1-amine, the nitrogen lone pair is not conjugated with the phenyl ring.\nIn the aromatic amines, the lone pair is delocalised into the ring; the nitro group further reduces its availability.\nGreater availability of the lone pair gives a stronger base and a smaller $pK_b$.\nThus, 2-phenylethan-1-amine has the smallest $pK_b$.\n\nIndependent check: 2-Phenylethan-1-amine is an aliphatic amine, whose nitrogen lone pair is more available for protonation than in the aniline derivatives. It is therefore the strongest base and has the smallest pKb.",
+ "solution": "The nitrogen lone pair in 2-phenylethan-1-amine is not conjugated with the phenyl ring, so it is more available for protonation than in the aromatic amines.\nGreater basicity corresponds to smaller $pK_b$; hence 2-phenylethan-1-amine has the smallest $pK_b$. (B)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which of the following amines has the smallest $pK_b$ in water?",
+  "options": [
+   "2-Phenylethan-1-amine",
+   "4-Methoxyaniline",
+   "$N,N$-Dimethylaniline",
+   "2-Nitroaniline"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "In 2-phenylethan-1-amine, the nitrogen lone pair is not conjugated with the phenyl ring.\nIn the aromatic amines, the lone pair is delocalised into the ring; the nitro group further reduces its availability.\nGreater availability of the lone pair gives a stronger base and a smaller $pK_b$.\nThus, 2-phenylethan-1-amine has the smallest $pK_b$.",
+  "distractor_notes": "B: overlooks lone-pair delocalisation in an aromatic amine. C: assumes methyl groups outweigh lone-pair delocalisation. D: overlooks the strong electron-withdrawing effect of the nitro group."
+ },
+ "variant_of": "g309fd4500e57",
+ "author_model": "openai/gpt-6-luna-pro"
+}

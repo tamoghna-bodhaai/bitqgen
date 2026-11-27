@@ -20,14 +20,14 @@
   ]
  },
  "status": "ok",
- "stem": "A square loop of side $20\\ \\text{cm}$ enters a region of uniform magnetic field $B = 0.5\\ \\text{T}$ directed perpendicular to its plane at a constant speed of $2\\ \\text{m s}^{-1}$, as shown in the figure. The magnitude of the induced emf in the loop while it is entering the field is:",
+ "stem": "A circular conducting loop lies in a uniform magnetic field of $0.2\\ \\text{T}$ perpendicular to its plane. Its radius is increasing at $5\\ \\text{cm s}^{-1}$; at the instant its radius is $10\\ \\text{cm}$, as shown in the figure. The induced emf is",
  "options": [
-  "$0.04\\ \\text{V}$",
-  "$0.1\\ \\text{V}$",
-  "$0.2\\ \\text{V}$",
-  "$0.4\\ \\text{V}$"
+  "$2\\pi\\ \\text{mV}$",
+  "$1\\pi\\ \\text{mV}$",
+  "$4\\pi\\ \\text{mV}$",
+  "$5\\pi\\ \\text{mV}$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": {
   "path": "figs/q024_stem_v0.png",
   "width_pct": 55,
@@ -38,10 +38,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "While entering, flux changes at rate dΦ/dt = B·L·v with L the side cutting the boundary. emf = B L v = 0.5 × 0.20 × 2 = 0.2 V.",
-   "answer": "C",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\mathcal{E}=B\\,d(\\pi r^2)/dt=2\\pi Br\\,dr/dt=2\\pi(0.2)(0.10)(0.05)=0.002\\pi\\,\\text{V}=2\\pi\\,\\text{mV}\\).",
+   "answer": "B",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -49,27 +49,28 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The magnetic flux linked with the loop at any time $t$ while entering the magnetic field is given by:\n$$\\Phi = B A(t) = B (l x)$$\nwhere $l = 20\\ \\text{cm} = 0.2\\ \\text{m}$ is the side length of the loop and $x$ is the length of the loop that has entered the field.\n\nAccording to Faraday's law of electromagnetic induction, the magnitude of the induced emf is:\n$$|\\mathcal{E}| = \\left|\\dfrac{d\\Phi}{dt}\\right| = B l \\dfrac{dx}{dt} = B l v$$\n\nSubstituting the given values:\n$$|\\mathcal{E}| = 0.5\\ \\text{T} \\times 0.2\\ \\text{m} \\times 2\\ \\text{m s}^{-1} = 0.2\\ \\text{V}$$\n\nIndependent check: While entering, flux changes at rate dΦ/dt = B·L·v with L the side cutting the boundary. emf = B L v = 0.5 × 0.20 × 2 = 0.2 V.",
- "solution": "",
+ "working": "$\\mathcal{E}=\\left|\\dfrac{d\\Phi}{dt}\\right|=B\\dfrac{d(\\pi r^2)}{dt}=2\\pi Br\\dfrac{dr}{dt}$\n$=2\\pi(0.2)(0.10)(0.05)=0.002\\pi\\ \\text{V}=2\\pi\\ \\text{mV}$\n\nIndependent check: \\(\\mathcal{E}=B\\,d(\\pi r^2)/dt=2\\pi Br\\,dr/dt=2\\pi(0.2)(0.10)(0.05)=0.002\\pi\\,\\text{V}=2\\pi\\,\\text{mV}\\).",
+ "solution": "By Faraday’s law, $\\mathcal{E}=|d\\triangle\\text{Phi}/dt|=B\\,d(\\pi r^2)/dt=2\\pi Br\\,dr/dt$.\n$$\\mathcal{E}=2\\pi(0.2)(0.10)(0.05)=0.002\\pi\\ \\text{V}=2\\pi\\ \\text{mV}$$",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "A square loop of side $20\\ \\text{cm}$ enters a region of uniform magnetic field $B = 0.5\\ \\text{T}$ directed perpendicular to its plane at a constant speed of $2\\ \\text{m s}^{-1}$, as shown in the figure. The magnitude of the induced emf in the loop while it is entering the field is:",
+  "stem": "A circular conducting loop lies in a uniform magnetic field of $0.2\\ \\text{T}$ perpendicular to its plane. Its radius is increasing at $5\\ \\text{cm s}^{-1}$; at the instant its radius is $10\\ \\text{cm}$, as shown in the figure. The induced emf is",
   "options": [
-   "$0.04\\ \\text{V}$",
-   "$0.1\\ \\text{V}$",
-   "$0.2\\ \\text{V}$",
-   "$0.4\\ \\text{V}$"
+   "$1\\pi\\ \\text{mV}$",
+   "$2\\pi\\ \\text{mV}$",
+   "$4\\pi\\ \\text{mV}$",
+   "$5\\pi\\ \\text{mV}$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The magnetic flux linked with the loop at any time $t$ while entering the magnetic field is given by:\n$$\\Phi = B A(t) = B (l x)$$\nwhere $l = 20\\ \\text{cm} = 0.2\\ \\text{m}$ is the side length of the loop and $x$ is the length of the loop that has entered the field.\n\nAccording to Faraday's law of electromagnetic induction, the magnitude of the induced emf is:\n$$|\\mathcal{E}| = \\left|\\dfrac{d\\Phi}{dt}\\right| = B l \\dfrac{dx}{dt} = B l v$$\n\nSubstituting the given values:\n$$|\\mathcal{E}| = 0.5\\ \\text{T} \\times 0.2\\ \\text{m} \\times 2\\ \\text{m s}^{-1} = 0.2\\ \\text{V}$$",
-  "distractor_notes": "Option A ($0.04\\ \\text{V}$) comes from mistakenly computing $B A v = B l^2 v$, confusing side length $l$ with area $A$.\nOption B ($0.1\\ \\text{V}$) comes from including an incorrect factor of $1/2$ (e.g., confusing with the formula for a rotating rod, $\\frac{1}{2} B \\omega l^2$).\nOption D ($0.4\\ \\text{V}$) comes from doubling the result ($2 B l v$), wrongly assuming both vertical arms contribute constructively.",
+  "answer": "B",
   "figure": {
    "kind": "diagram",
-   "description": "A vertical dashed line divides the plane into two regions: a field-free region on the left and a magnetic field region on the right. In the right region, a uniform magnetic field directed perpendicularly into the page is represented by a grid of '×' symbols and labeled '$B = 0.5\\ \\text{T}$'. A square conducting loop with side length labeled '$20\\ \\text{cm}$' lies in the plane of the page and is partially across the dashed boundary, entering the field region. A horizontal arrow pointing to the right is attached to the loop and labeled '$v = 2\\ \\text{m s}^{-1}$'.",
+   "description": "Draw a circular conducting loop in the plane of the page. Mark its centre O and a radius from O to the circumference, labelled r = 10 cm. At the circumference end of this radius, draw an outward radial arrow labelled dr/dt = 5 cm s^{-1}. Show a uniform magnetic field perpendicular into the page using several evenly spaced crosses inside and around the loop, labelled B = 0.2 T. No other labels or values.",
    "smiles": null
   },
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\mathcal{E}=\\left|\\dfrac{d\\Phi}{dt}\\right|=B\\dfrac{d(\\pi r^2)}{dt}=2\\pi Br\\dfrac{dr}{dt}$\n$=2\\pi(0.2)(0.10)(0.05)=0.002\\pi\\ \\text{V}=2\\pi\\ \\text{mV}$",
+  "distractor_notes": "A: omits the factor of 2 when differentiating $r^2$. C: doubles the radius growth rate. D: uses an incorrect area-change rate."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

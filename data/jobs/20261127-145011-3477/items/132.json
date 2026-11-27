@@ -1,0 +1,70 @@
+{
+ "qno": 132,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 132,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Composite evaluation",
+  "archetype": "triangle method",
+  "brief": "Evaluate a composite like sin^{-1}(sin x) outside the principal range or tan^{-1}a + tan^{-1}b using the right-triangle method and quadrant care",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:103",
+   "2026s1:115",
+   "2024s2:98"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\cos\\left(\\tan^{-1}2+\\tan^{-1}3\\right)$.",
+ "options": [
+  "$\\dfrac{1}{\\sqrt{2}}$",
+  "$-\\dfrac{\\sqrt{3}}{2}$",
+  "$-\\dfrac{1}{\\sqrt{2}}$",
+  "$\\dfrac{\\sqrt{3}}{2}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Both angles are in quadrant I, and their sum is in quadrant II. Its tangent is $(2+3)/(1-2\\cdot3)=-1$, so the sum is $3\\pi/4$ and its cosine is $-1/\\sqrt{2}$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $\\theta=\\tan^{-1}2+\\tan^{-1}3$. Then $\\tan\\theta=\\dfrac{2+3}{1-6}=-1$\\nBoth angles are in quadrant I and their sum is in quadrant II.\\nHence $\\cos\\theta=-\\dfrac{1}{\\sqrt{1+\\tan^2\\theta}}=-\\dfrac{1}{\\sqrt{2}}$.\n\nIndependent check: Both angles are in quadrant I, and their sum is in quadrant II. Its tangent is $(2+3)/(1-2\\cdot3)=-1$, so the sum is $3\\pi/4$ and its cosine is $-1/\\sqrt{2}$.",
+ "solution": "Let $\\theta=\\tan^{-1}2+\\tan^{-1}3$. Then\n$$\\tan\\theta=\\frac{2+3}{1-(2)(3)}=-1.$$\nSince both angles are in quadrant I, $\\theta$ lies in quadrant II; hence $\\cos\\theta=-\\dfrac{1}{\\sqrt{1+\\tan^2\\theta}}=-\\dfrac{1}{\\sqrt2}$.}",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\cos\\left(\\tan^{-1}2+\\tan^{-1}3\\right)$.",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{2}}$",
+   "$-\\dfrac{1}{\\sqrt{2}}$",
+   "$-\\dfrac{\\sqrt{3}}{2}$",
+   "$\\dfrac{\\sqrt{3}}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $\\theta=\\tan^{-1}2+\\tan^{-1}3$. Then $\\tan\\theta=\\dfrac{2+3}{1-6}=-1$\\nBoth angles are in quadrant I and their sum is in quadrant II.\\nHence $\\cos\\theta=-\\dfrac{1}{\\sqrt{1+\\tan^2\\theta}}=-\\dfrac{1}{\\sqrt{2}}$.",
+  "distractor_notes": "A: takes the positive cosine; C: uses the wrong reference angle; D: uses the wrong reference angle and sign."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

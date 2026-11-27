@@ -1,0 +1,68 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Le Chatelier's principle",
+  "archetype": "conceptual",
+  "brief": "For a specified exothermic gas-phase equilibrium, predict direction of shift on temperature/pressure/catalyst/inert-gas addition at constant volume — pure concept, easy statements.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:40",
+   "2024s2:58",
+   "2024s1:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the exothermic equilibrium $\\text{N}_2(g)+3\\text{H}_2(g)\\rightleftharpoons2\\text{NH}_3(g)$, which set correctly predicts the shifts?",
+ "options": [
+  "Heating shifts left; compression shifts right; a catalyst and an inert gas added at constant volume cause no shift.",
+  "Heating shifts right; compression shifts right; a catalyst and an inert gas added at constant volume cause no shift.",
+  "Heating shifts left; compression shifts left; a catalyst and an inert gas added at constant volume cause no shift.",
+  "Heating shifts left; compression shifts right; a catalyst and an inert gas added at constant volume both shift the equilibrium."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Heating favors the endothermic reverse reaction, shifting left. Compression favors the side with fewer gas moles (2 vs. 4), shifting right. A catalyst and an inert gas added at constant volume do not shift equilibrium.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Forward reaction is exothermic: heating favours the reverse reaction (left).\\nCompression favours the side with fewer gas moles: $2<4$, so right.\\nA catalyst does not change equilibrium; inert gas at constant volume does not change reactant partial pressures.\n\nIndependent check: Heating favors the endothermic reverse reaction, shifting left. Compression favors the side with fewer gas moles (2 vs. 4), shifting right. A catalyst and an inert gas added at constant volume do not shift equilibrium.",
+ "solution": "Heating favors the endothermic reverse reaction, shifting equilibrium left. Compression favors the side with fewer gas moles, so it shifts right ($2<4$).\nA catalyst does not alter the equilibrium position, and adding an inert gas at constant volume leaves the reactant partial pressures unchanged; neither causes a shift.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the exothermic equilibrium $\\text{N}_2(g)+3\\text{H}_2(g)\\rightleftharpoons2\\text{NH}_3(g)$, which set correctly predicts the shifts?",
+  "options": [
+   "Heating shifts left; compression shifts right; a catalyst and an inert gas added at constant volume cause no shift.",
+   "Heating shifts right; compression shifts right; a catalyst and an inert gas added at constant volume cause no shift.",
+   "Heating shifts left; compression shifts left; a catalyst and an inert gas added at constant volume cause no shift.",
+   "Heating shifts left; compression shifts right; a catalyst and an inert gas added at constant volume both shift the equilibrium."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Forward reaction is exothermic: heating favours the reverse reaction (left).\\nCompression favours the side with fewer gas moles: $2<4$, so right.\\nA catalyst does not change equilibrium; inert gas at constant volume does not change reactant partial pressures.",
+  "distractor_notes": "B treats heat as a reactant in the forward direction; C favours the side with more gas moles on compression; D assumes a catalyst or constant-volume inert-gas addition shifts equilibrium."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

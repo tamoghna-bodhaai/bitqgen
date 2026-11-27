@@ -1,0 +1,68 @@
+{
+ "qno": 138,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 138,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Consistency of linear systems",
+  "archetype": "conceptual",
+  "brief": "For a system of linear equations, find the condition on a parameter for infinitely many solutions and then a solution property.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:129",
+   "2022:101",
+   "2024s1:105"
+  ]
+ },
+ "status": "ok",
+ "stem": "For what value of $k$ does the system $x+y+z=2$, $2x+3y+4z=5$, $3x+(k+3)y+(k+4)z=7$ have infinitely many solutions, and what is $x+4y+7z$ then?",
+ "options": [
+  "$k=1,\\ x+4y+7z=-5$",
+  "$k=1,\\ x+4y+7z=7$",
+  "$k=-1,\\ x+4y+7z=5$",
+  "$k=1,\\ x+4y+7z=5$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For k=1, the third equation is the sum of the first two, so the system has infinitely many solutions. The first two equations give (x+4y+7z) = -5(2)+3(5)=5. For k≠1, the coefficient rows are independent, so there is a unique solution.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The coefficient determinant is $1-k$, so it vanishes only at $k=1$.\nAt $k=1$, the third equation is the sum of the first two, including their right-hand sides; the rank is $2<3$, so there are infinitely many solutions.\n$-5(x+y+z)+3(2x+3y+4z)=x+4y+7z=-10+15=5$.\n\nIndependent check: For k=1, the third equation is the sum of the first two, so the system has infinitely many solutions. The first two equations give (x+4y+7z) = -5(2)+3(5)=5. For k≠1, the coefficient rows are independent, so there is a unique solution.",
+ "solution": "The coefficient determinant is $1-k$, so infinitely many solutions require $k=1$. Then the third equation is the sum of the first two, giving rank $2<3$.\n$$x+4y+7z=-5(x+y+z)+3(2x+3y+4z)=-5(2)+3(5)=5$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For what value of $k$ does the system $x+y+z=2$, $2x+3y+4z=5$, $3x+(k+3)y+(k+4)z=7$ have infinitely many solutions, and what is $x+4y+7z$ then?",
+  "options": [
+   "$k=1,\\ x+4y+7z=5$",
+   "$k=1,\\ x+4y+7z=7$",
+   "$k=-1,\\ x+4y+7z=5$",
+   "$k=1,\\ x+4y+7z=-5$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "The coefficient determinant is $1-k$, so it vanishes only at $k=1$.\nAt $k=1$, the third equation is the sum of the first two, including their right-hand sides; the rank is $2<3$, so there are infinitely many solutions.\n$-5(x+y+z)+3(2x+3y+4z)=x+4y+7z=-10+15=5$.",
+  "distractor_notes": "B: Confuses the requested expression with the third equation's right-hand side.\nC: Uses the wrong sign when setting the determinant to zero.\nD: Reverses the sign of the right-hand side in the linear combination."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Properties of determinants",
+  "archetype": "split-and-factor",
+  "brief": "3×3 determinant with expressions in x and trigonometric values in rows/columns; use row/column operations to factor the determinant and show it equals zero for specific values.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:100",
+   "2024s1:105",
+   "2024s2:109"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $0\\le x<2\\pi$, the determinant $\\begin{vmatrix}1&1&1\\\\ \\cos x&\\cos 0&\\cos\\frac{\\pi}{2}\\\\ \\sin x&\\sin 0&\\sin\\frac{\\pi}{2}\\end{vmatrix}$ is zero for which set of values of $x$?",
+ "options": [
+  "$\\{0,\\frac{3\\pi}{2}\\}$",
+  "$\\{\\frac{\\pi}{2},\\pi\\}$",
+  "$\\{0,\\frac{\\pi}{2}\\}$",
+  "$\\{\\pi,\\frac{3\\pi}{2}\\}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Expanding the determinant gives 1 − cos x − sin x. Thus cos x + sin x = 1, with solutions in 0 ≤ x < 2π at x = 0 and x = π/2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$D=1-\\cos x-\\sin x=2\\sin\\frac{x}{2}\\left(\\sin\\frac{x}{2}-\\cos\\frac{x}{2}\\right)$. Thus $D=0$ gives $x=0$ or $x=\\frac{\\pi}{2}$ in $[0,2\\pi)$.\n\nIndependent check: Expanding the determinant gives 1 − cos x − sin x. Thus cos x + sin x = 1, with solutions in 0 ≤ x < 2π at x = 0 and x = π/2.",
+ "solution": "Expanding along the first row gives $D=1-\\frac{}{}$; explicitly, $D=1-\\cos x-\\sin x$. Thus $D=0$ requires $\\cos x+\\sin x=1$.\nIn $0\\le x<2\\pi$, this holds for $x=0$ and $x=\\frac{\\pi}{2}$, giving $\\{0,\\frac{\\pi}{2}\\}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $0\\le x<2\\pi$, the determinant $\\begin{vmatrix}1&1&1\\\\ \\cos x&\\cos 0&\\cos\\frac{\\pi}{2}\\\\ \\sin x&\\sin 0&\\sin\\frac{\\pi}{2}\\end{vmatrix}$ is zero for which set of values of $x$?",
+  "options": [
+   "$\\{0,\\frac{3\\pi}{2}\\}$",
+   "$\\{0,\\frac{\\pi}{2}\\}$",
+   "$\\{\\frac{\\pi}{2},\\pi\\}$",
+   "$\\{\\pi,\\frac{3\\pi}{2}\\}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$D=1-\\cos x-\\sin x=2\\sin\\frac{x}{2}\\left(\\sin\\frac{x}{2}-\\cos\\frac{x}{2}\\right)$. Thus $D=0$ gives $x=0$ or $x=\\frac{\\pi}{2}$ in $[0,2\\pi)$.",
+  "distractor_notes": "A: uses the wrong sign for the sine root; C: includes $\\pi$ instead of the root $0$; D: mistakes both roots by a half-turn."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "A parallel-plate capacitor of plate separation $d$ has capacitance $C_0$ in air. A dielectric slab of thickness $d/2$ and dielectric constant $K = 4$ is inserted between the plates, parallel to them. If the capacitor is connected across a battery of voltage $V$, the electrostatic energy stored in the dielectric slab is",
+ "stem": "A parallel-plate capacitor of separation $d$ and air capacitance $C_0$ is charged to $Q$ and disconnected from the source. Two full-area dielectric sheets, each of thickness $d/2$ and dielectric constants $2$ and $6$, fill the gap in series. The stored energy is",
  "options": [
-  "$\\dfrac{2}{25} C_0 V^2$",
-  "$\\dfrac{4}{25} C_0 V^2$",
-  "$\\dfrac{8}{25} C_0 V^2$",
-  "$\\dfrac{16}{25} C_0 V^2$"
+  "$\\dfrac{Q^2}{12C_0}$",
+  "$\\dfrac{Q^2}{8C_0}$",
+  "$\\dfrac{Q^2}{6C_0}$",
+  "$\\dfrac{Q^2}{3C_0}$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Series combination: air part C1 = ε0A/(d/2) = 2C0, dielectric part C2 = Kε0A/(d/2) = 8C0. Equivalent C = 8C0/5, so Q = 8C0V/5. Voltage across slab V2 = Q/C2 = V/5. Energy in slab = ½C2V2² = ½·8C0·(V/5)² = (4/25)C0V². Cross-checked via energy density ½Kε0E² with E_slab = 2V/(5d): same result.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the two layers, their capacitances are 4C₀ and 12C₀. In series, C_eff = 3C₀. The capacitor is disconnected, so Q is fixed; U = Q²/(2C_eff) = Q²/(6C₀).",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 3
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The capacitor can be treated as two capacitors connected in series:\n1. Dielectric slab of thickness $d_1 = d/2$ with $K_1 = 4$:\n$$C_1 = \\dfrac{K_1 \\varepsilon_0 A}{d_1} = \\dfrac{4 \\varepsilon_0 A}{d/2} = 8\\dfrac{\\varepsilon_0 A}{d} = 8C_0$$\n\n2. Air gap of thickness $d_2 = d/2$ with $K_2 = 1$:\n$$C_2 = \\dfrac{\\varepsilon_0 A}{d_2} = \\dfrac{\\varepsilon_0 A}{d/2} = 2\\dfrac{\\varepsilon_0 A}{d} = 2C_0$$\n\nIn a series combination, the potential difference across $C_1$ is given by the voltage divider relation:\n$$V_1 = V \\left(\\dfrac{C_2}{C_1 + C_2}\\right) = V \\left(\\dfrac{2C_0}{8C_0 + 2C_0}\\right) = \\dfrac{1}{5}V$$\n\nThe electrostatic energy stored in the dielectric slab is:\n$$U_1 = \\dfrac{1}{2} C_1 V_1^2 = \\dfrac{1}{2} (8C_0) \\left(\\dfrac{V}{5}\\right)^2 = \\dfrac{4}{25} C_0 V^2$$\n\nIndependent check: Series combination: air part C1 = ε0A/(d/2) = 2C0, dielectric part C2 = Kε0A/(d/2) = 8C0. Equivalent C = 8C0/5, so Q = 8C0V/5. Voltage across slab V2 = Q/C2 = V/5. Energy in slab = ½C2V2² = ½·8C0·(V/5)² = (4/25)C0V². Cross-checked via energy density ½Kε0E² with E_slab = 2V/(5d): same result.",
+ "working": "$C_1=2(2C_0)=4C_0$, $C_2=2(6C_0)=12C_0$\n$\\dfrac{1}{C_{\\mathrm{eq}}}=\\dfrac{1}{4C_0}+\\dfrac{1}{12C_0}\\Rightarrow C_{\\mathrm{eq}}=3C_0$\n$U=\\dfrac{Q^2}{2C_{\\mathrm{eq}}}=\\dfrac{Q^2}{6C_0}$\n\nIndependent check: For the two layers, their capacitances are 4C₀ and 12C₀. In series, C_eff = 3C₀. The capacitor is disconnected, so Q is fixed; U = Q²/(2C_eff) = Q²/(6C₀).",
  "solution": "",
  "locked": false,
- "difficulty": 3,
+ "difficulty": 2,
  "draft": {
-  "stem": "A parallel-plate capacitor of plate separation $d$ has capacitance $C_0$ in air. A dielectric slab of thickness $d/2$ and dielectric constant $K = 4$ is inserted between the plates, parallel to them. If the capacitor is connected across a battery of voltage $V$, the electrostatic energy stored in the dielectric slab is",
+  "stem": "A parallel-plate capacitor of separation $d$ and air capacitance $C_0$ is charged to $Q$ and disconnected from the source. Two full-area dielectric sheets, each of thickness $d/2$ and dielectric constants $2$ and $6$, fill the gap in series. The stored energy is",
   "options": [
-   "$\\dfrac{2}{25} C_0 V^2$",
-   "$\\dfrac{4}{25} C_0 V^2$",
-   "$\\dfrac{8}{25} C_0 V^2$",
-   "$\\dfrac{16}{25} C_0 V^2$"
+   "$\\dfrac{Q^2}{12C_0}$",
+   "$\\dfrac{Q^2}{8C_0}$",
+   "$\\dfrac{Q^2}{6C_0}$",
+   "$\\dfrac{Q^2}{3C_0}$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The capacitor can be treated as two capacitors connected in series:\n1. Dielectric slab of thickness $d_1 = d/2$ with $K_1 = 4$:\n$$C_1 = \\dfrac{K_1 \\varepsilon_0 A}{d_1} = \\dfrac{4 \\varepsilon_0 A}{d/2} = 8\\dfrac{\\varepsilon_0 A}{d} = 8C_0$$\n\n2. Air gap of thickness $d_2 = d/2$ with $K_2 = 1$:\n$$C_2 = \\dfrac{\\varepsilon_0 A}{d_2} = \\dfrac{\\varepsilon_0 A}{d/2} = 2\\dfrac{\\varepsilon_0 A}{d} = 2C_0$$\n\nIn a series combination, the potential difference across $C_1$ is given by the voltage divider relation:\n$$V_1 = V \\left(\\dfrac{C_2}{C_1 + C_2}\\right) = V \\left(\\dfrac{2C_0}{8C_0 + 2C_0}\\right) = \\dfrac{1}{5}V$$\n\nThe electrostatic energy stored in the dielectric slab is:\n$$U_1 = \\dfrac{1}{2} C_1 V_1^2 = \\dfrac{1}{2} (8C_0) \\left(\\dfrac{V}{5}\\right)^2 = \\dfrac{4}{25} C_0 V^2$$",
-  "distractor_notes": "Option A encodes the mistake of neglecting the thickness factor of 2, taking $C_1 = K C_0 = 4C_0$ and $C_2 = C_0$, which gives $U_1 = \\frac{1}{2}(4C_0)(V/5)^2 = \\frac{2}{25}C_0 V^2$.\nOption C encodes forgetting the factor of $1/2$ in the formula for stored energy, calculating $U = C_1 V_1^2 = 8C_0(V/5)^2 = \\frac{8}{25}C_0 V^2$.\nOption D encodes calculating the energy stored in the air gap ($U_2 = \\frac{1}{2} C_2 V_2^2 = \\frac{1}{2}(2C_0)(4V/5)^2 = \\frac{16}{25}C_0 V^2$) instead of the dielectric slab.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$C_1=2(2C_0)=4C_0$, $C_2=2(6C_0)=12C_0$\n$\\dfrac{1}{C_{\\mathrm{eq}}}=\\dfrac{1}{4C_0}+\\dfrac{1}{12C_0}\\Rightarrow C_{\\mathrm{eq}}=3C_0$\n$U=\\dfrac{Q^2}{2C_{\\mathrm{eq}}}=\\dfrac{Q^2}{6C_0}$",
+  "distractor_notes": "A: Treats the entire gap as filled with the higher-permittivity dielectric. B: Uses the arithmetic mean dielectric constant for the series layers. D: Omits the factor $1/2$ in the energy formula."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

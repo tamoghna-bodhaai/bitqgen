@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Which of the following represents the correct increasing order of boiling points for the hydrides $\\text{NH}_3$, $\\text{PH}_3$, $\\text{AsH}_3$, and $\\text{SbH}_3$?",
+ "stem": "Which is the correct decreasing order of thermal stability of the Group 15 hydrides?",
  "options": [
-  "$\\text{PH}_3 < \\text{AsH}_3 < \\text{SbH}_3 < \\text{NH}_3$",
-  "$\\text{NH}_3 < \\text{PH}_3 < \\text{AsH}_3 < \\text{SbH}_3$",
-  "$\\text{PH}_3 < \\text{AsH}_3 < \\text{NH}_3 < \\text{SbH}_3$",
-  "$\\text{PH}_3 < \\text{NH}_3 < \\text{AsH}_3 < \\text{SbH}_3$"
+  "$\\text{NH}_3 > \\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3$",
+  "$\\text{SbH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{NH}_3$",
+  "$\\text{NH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{SbH}_3$",
+  "$\\text{PH}_3 > \\text{NH}_3 > \\text{AsH}_3 > \\text{SbH}_3$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Actual boiling points: PH3 185.4 K (−87.7 °C) < AsH3 210.6 K (−62.5 °C) < NH3 239.7 K (−33.4 °C) < SbH3 254.6 K (−18.5 °C). NH3 is elevated by H-bonding above PH3 and AsH3, but SbH3's large van der Waals forces push it above NH3. Order matches option C.",
-   "answer": "C",
-   "confidence": 0.9,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Thermal stability decreases down Group 15 as the E–H bond weakens: NH₃ > PH₃ > AsH₃ > SbH₃.",
+   "answer": "A",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The boiling point of covalent hydrides generally increases down a group due to increasing molecular mass and surface area, which enhances London dispersion (van der Waals) forces: $\\text{PH}_3 < \\text{AsH}_3 < \\text{SbH}_3$. However, $\\text{NH}_3$ exhibits intermolecular hydrogen bonding due to the high electronegativity and small size of nitrogen, giving it an anomalously high boiling point compared to $\\text{PH}_3$ and $\\text{AsH}_3$. In $\\text{SbH}_3$, the molecular mass is large enough that the strong van der Waals attractions outweigh the hydrogen bonding present in $\\text{NH}_3$. Experimental boiling points (from NCERT): $\\text{PH}_3\\ (185.5\\ \\text{K}) < \\text{AsH}_3\\ (210.6\\ \\text{K}) < \\text{NH}_3\\ (238.5\\ \\text{K}) < \\text{SbH}_3\\ (254.6\\ \\text{K})$. Therefore, the correct order is $\\text{PH}_3 < \\text{AsH}_3 < \\text{NH}_3 < \\text{SbH}_3$.\n\nIndependent check: Actual boiling points: PH3 185.4 K (−87.7 °C) < AsH3 210.6 K (−62.5 °C) < NH3 239.7 K (−33.4 °C) < SbH3 254.6 K (−18.5 °C). NH3 is elevated by H-bonding above PH3 and AsH3, but SbH3's large van der Waals forces push it above NH3. Order matches option C.",
+ "working": "$\\text{M-H}$ bond strength decreases down Group 15 as the central atom gets larger.\nThermal stability follows the $\\text{M-H}$ bond strength.\nHence, $\\text{NH}_3 > \\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3$.\n\nIndependent check: Thermal stability decreases down Group 15 as the E–H bond weakens: NH₃ > PH₃ > AsH₃ > SbH₃.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Which of the following represents the correct increasing order of boiling points for the hydrides $\\text{NH}_3$, $\\text{PH}_3$, $\\text{AsH}_3$, and $\\text{SbH}_3$?",
+  "stem": "Which is the correct decreasing order of thermal stability of the Group 15 hydrides?",
   "options": [
-   "$\\text{PH}_3 < \\text{AsH}_3 < \\text{SbH}_3 < \\text{NH}_3$",
-   "$\\text{NH}_3 < \\text{PH}_3 < \\text{AsH}_3 < \\text{SbH}_3$",
-   "$\\text{PH}_3 < \\text{AsH}_3 < \\text{NH}_3 < \\text{SbH}_3$",
-   "$\\text{PH}_3 < \\text{NH}_3 < \\text{AsH}_3 < \\text{SbH}_3$"
+   "$\\text{NH}_3 > \\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3$",
+   "$\\text{SbH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{NH}_3$",
+   "$\\text{NH}_3 > \\text{AsH}_3 > \\text{PH}_3 > \\text{SbH}_3$",
+   "$\\text{PH}_3 > \\text{NH}_3 > \\text{AsH}_3 > \\text{SbH}_3$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The boiling point of covalent hydrides generally increases down a group due to increasing molecular mass and surface area, which enhances London dispersion (van der Waals) forces: $\\text{PH}_3 < \\text{AsH}_3 < \\text{SbH}_3$. However, $\\text{NH}_3$ exhibits intermolecular hydrogen bonding due to the high electronegativity and small size of nitrogen, giving it an anomalously high boiling point compared to $\\text{PH}_3$ and $\\text{AsH}_3$. In $\\text{SbH}_3$, the molecular mass is large enough that the strong van der Waals attractions outweigh the hydrogen bonding present in $\\text{NH}_3$. Experimental boiling points (from NCERT): $\\text{PH}_3\\ (185.5\\ \\text{K}) < \\text{AsH}_3\\ (210.6\\ \\text{K}) < \\text{NH}_3\\ (238.5\\ \\text{K}) < \\text{SbH}_3\\ (254.6\\ \\text{K})$. Therefore, the correct order is $\\text{PH}_3 < \\text{AsH}_3 < \\text{NH}_3 < \\text{SbH}_3$.",
-  "distractor_notes": "Option A assumes that hydrogen bonding places $\\text{NH}_3$ at the very highest position, falsely extrapolating the trend of $\\text{H}_2\\text{O}$ and $\\text{HF}$. Option B ignores hydrogen bonding altogether and follows purely increasing molar mass. Option D recognizes that hydrogen bonding increases the boiling point of $\\text{NH}_3$ above $\\text{PH}_3$, but underestimates its strength relative to $\\text{AsH}_3$.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$\\text{M-H}$ bond strength decreases down Group 15 as the central atom gets larger.\nThermal stability follows the $\\text{M-H}$ bond strength.\nHence, $\\text{NH}_3 > \\text{PH}_3 > \\text{AsH}_3 > \\text{SbH}_3$.",
+  "distractor_notes": "B reverses the trend; C incorrectly places the weaker $\\text{As-H}$ bonds above $\\text{P-H}$ bonds; D incorrectly places $\\text{PH}_3$ above $\\text{NH}_3$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

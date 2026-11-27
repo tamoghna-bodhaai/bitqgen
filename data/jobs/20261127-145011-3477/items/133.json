@@ -1,0 +1,56 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Argument of a complex number",
+  "archetype": "computation",
+  "brief": "Simplify a product of complex numbers given in polar/rectangular form; find the modulus and argument of the result",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:118",
+   "2025s1:125",
+   "2023s2:95"
+  ],
+  "origin": "direct",
+  "bank_ref": "g01f8c5589b4f"
+ },
+ "status": "ok",
+ "stem": "The principal argument of the complex number $\\dfrac{(1+i)^2}{1-i\\sqrt{3}}$ is",
+ "options": [
+  "$\\dfrac{\\pi}{6}$",
+  "$\\dfrac{5\\pi}{6}$",
+  "$\\dfrac{2\\pi}{3}$",
+  "$\\dfrac{\\pi}{3}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "D",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g01f8c5589b4f (verified in job 20261127-122012-292e)"
+ ],
+ "working": "$(1+i)^2 = 2i$ so argument $\\pi/2$. $1-i\\sqrt{3}=2e^{-i\\pi/3}$, argument $-\\pi/3$. Division subtracts arguments: $\\frac{\\pi}{2} - \\left(-\\frac{\\pi}{3}\\right) = \\frac{5\\pi}{6}$.\n\nIndependent check: \\((1+i)^2=2i\\), with argument \\(\\pi/2\\). The denominator has argument \\(-\\pi/3\\), so the quotient's principal argument is \\(\\pi/2-(-\\pi/3)=5\\pi/6\\).",
+ "solution": "Using $\\text{Arg}(z_1/z_2)=\\text{Arg}(z_1)-\\text{Arg}(z_2)$, we have $(1+i)^2=2i$ with argument $\\frac{\\pi}{2}$, and $1-i\\sqrt{3}$ with argument $-\\frac{\\pi}{3}$.\n$$\\text{Arg}\u001b[0m\\left(\\frac{(1+i)^2}{1-i\\sqrt{3}}\\right)=\\frac{\\pi}{2}-\\left(-\\frac{\\pi}{3}\\right)=\\frac{5\\pi}{6}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g01f8c5589b4f",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

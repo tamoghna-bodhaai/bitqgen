@@ -1,0 +1,70 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus of a complex number",
+  "archetype": "modulus property",
+  "brief": "Evaluate |z| for z given as a product/quotient of complex numbers, using |z₁z₂| = |z₁||z₂| and 1/z = z̄/|z|²; simple numbers.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:94",
+   "2023s2:95",
+   "2024s1:119"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If $z=\\dfrac{(1+i\\sqrt{3})(2-i)}{1+i}$, then $|z|$ is",
+ "options": [
+  "$\\sqrt{\\dfrac{5}{2}}$",
+  "$\\sqrt{5}$",
+  "$\\sqrt{10}$",
+  "$2\\sqrt{10}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using multiplicativity of modulus, $|z|=\\dfrac{2\\sqrt{5}}{\\sqrt{2}}=\\sqrt{10}$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$|z|=\\dfrac{|1+i\\sqrt{3}|\\,|2-i|}{|1+i|}=\\dfrac{2\\sqrt{5}}{\\sqrt{2}}=\\sqrt{10}$\n\nIndependent check: Using multiplicativity of modulus, $|z|=\\dfrac{2\\sqrt{5}}{\\sqrt{2}}=\\sqrt{10}$.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $z=\\dfrac{(1+i\\sqrt{3})(2-i)}{1+i}$, then $|z|$ is",
+  "options": [
+   "$\\sqrt{\\dfrac{5}{2}}$",
+   "$\\sqrt{5}$",
+   "$\\sqrt{10}$",
+   "$2\\sqrt{10}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$|z|=\\dfrac{|1+i\\sqrt{3}|\\,|2-i|}{|1+i|}=\\dfrac{2\\sqrt{5}}{\\sqrt{2}}=\\sqrt{10}$",
+  "distractor_notes": "A: divides by $2$ instead of $\\sqrt{2}$. B: omits the denominator modulus. D: multiplies by rather than divides by the denominator modulus."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

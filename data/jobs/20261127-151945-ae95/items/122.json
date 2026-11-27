@@ -1,0 +1,71 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Argument of a complex number",
+  "archetype": "computation",
+  "brief": "Given z in a form requiring algebraic manipulation (e.g. (1+i)/(1−i) raised to a power), find the modulus and principal argument of the result.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:94",
+   "2025s1:125",
+   "2024s2:117"
+  ],
+  "origin": "variant",
+  "bank_ref": "g9d0c93bb4038"
+ },
+ "status": "ok",
+ "stem": "For $w=\\left(\\dfrac{1+i}{\\sqrt{3}-i}\\right)^4$, write $w$ in polar form using its principal argument.",
+ "options": [
+  "$\\dfrac{1}{4}\\operatorname{cis}\\left(\\dfrac{\\pi}{3}\\right)$",
+  "$\\dfrac{1}{4}\\operatorname{cis}\\left(-\\dfrac{\\pi}{3}\\right)$",
+  "$4\\operatorname{cis}\\left(-\\dfrac{\\pi}{3}\\right)$",
+  "$\\dfrac{1}{4}\\operatorname{cis}\\left(\\dfrac{5\\pi}{3}\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The quotient has modulus 1/√2 and argument 5π/12. Raising to the fourth power gives modulus 1/4 and argument 5π/3, whose principal value is −π/3.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\left|\\dfrac{1+i}{\\sqrt{3}-i}\\right|=\\dfrac{\\sqrt{2}}{2}$\n$\\arg\\left(\\dfrac{1+i}{\\sqrt{3}-i}\\right)=\\dfrac{\\pi}{4}-\\left(-\\dfrac{\\pi}{6}\\right)=\\dfrac{5\\pi}{12}$\n$|w|=\\left(\\dfrac{1}{\\sqrt{2}}\\right)^4=\\dfrac{1}{4}$\n$\\arg(w)=4\\cdot\\dfrac{5\\pi}{12}=\\dfrac{5\\pi}{3}\\equiv-\\dfrac{\\pi}{3}\\pmod{2\\pi}$\n\nIndependent check: The quotient has modulus 1/√2 and argument 5π/12. Raising to the fourth power gives modulus 1/4 and argument 5π/3, whose principal value is −π/3.",
+ "solution": "Using $|z_1/z_2|=|z_1|/|z_2|$ and $arg(z_1/z_2)=arg z_1-arg z_2$,\n$$\\left|\\frac{1+i}{\\sqrt3-i}\\right|=\\frac1{\\sqrt2},\\qquad \\arg\\left(\\frac{1+i}{\\sqrt3-i}\\right)=\\frac{5\\pi}{12}.$$\nThus $|w|=(1/\\sqrt2)^4=1/4$ and $\\arg w=4(5\\pi/12)=5\\pi/3$, whose principal value is $-\\pi/3$.\nHence $w=\\dfrac14\\operatorname{cis}(-\\pi/3)$.‏",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $w=\\left(\\dfrac{1+i}{\\sqrt{3}-i}\\right)^4$, write $w$ in polar form using its principal argument.",
+  "options": [
+   "$\\dfrac{1}{4}\\operatorname{cis}\\left(-\\dfrac{\\pi}{3}\\right)$",
+   "$\\dfrac{1}{4}\\operatorname{cis}\\left(\\dfrac{\\pi}{3}\\right)$",
+   "$4\\operatorname{cis}\\left(-\\dfrac{\\pi}{3}\\right)$",
+   "$\\dfrac{1}{4}\\operatorname{cis}\\left(\\dfrac{5\\pi}{3}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\left|\\dfrac{1+i}{\\sqrt{3}-i}\\right|=\\dfrac{\\sqrt{2}}{2}$\n$\\arg\\left(\\dfrac{1+i}{\\sqrt{3}-i}\\right)=\\dfrac{\\pi}{4}-\\left(-\\dfrac{\\pi}{6}\\right)=\\dfrac{5\\pi}{12}$\n$|w|=\\left(\\dfrac{1}{\\sqrt{2}}\\right)^4=\\dfrac{1}{4}$\n$\\arg(w)=4\\cdot\\dfrac{5\\pi}{12}=\\dfrac{5\\pi}{3}\\equiv-\\dfrac{\\pi}{3}\\pmod{2\\pi}$",
+  "distractor_notes": "B: reverses the sign of the principal argument.\nC: uses the reciprocal of the modulus.\nD: gives an equivalent but non-principal argument."
+ },
+ "variant_of": "g9d0c93bb4038",
+ "author_model": "openai/gpt-6-luna-pro"
+}

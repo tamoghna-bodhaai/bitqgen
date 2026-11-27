@@ -1,0 +1,88 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Electrophilic substitution / directive influence",
+  "archetype": "predict-product",
+  "brief": "Given a substituted benzene (two groups with conflicting directives) in a figure, predict the major monosubstitution product.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:45",
+   "2024s2:56",
+   "2025s2:54"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "On nitration of the compound shown in the figure, which is the major product of monosubstitution?",
+ "options": [
+  "1-bromo-2,3-dinitrobenzene",
+  "1-bromo-2,5-dinitrobenzene",
+  "1-bromo-3,4-dinitrobenzene",
+  "1-bromo-3,5-dinitrobenzene"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q061_stem_v0.png",
+  "width_pct": 40,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q061_optA_v0.png",
+  "figs/q061_optB_v0.png",
+  "figs/q061_optC_v0.png",
+  "figs/q061_optD_v0.png"
+ ],
+ "option_width": 49,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The starting compound is 1-bromo-3-nitrobenzene. The existing nitro group directs substitution meta; its only available meta position is C5, giving 1-bromo-3,5-dinitrobenzene.",
+   "answer": "D",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Br at C1 directs to C2, C4 and C6; $\\text{NO}_2$ at C3 directs meta, to C1 and C5.\\nC1 is occupied; the nitro group strongly disfavors substitution at its ortho/para sites C2, C4 and C6.\\nSubstitution at C5 gives 1-bromo-3,5-dinitrobenzene.\n\nIndependent check: The starting compound is 1-bromo-3-nitrobenzene. The existing nitro group directs substitution meta; its only available meta position is C5, giving 1-bromo-3,5-dinitrobenzene.",
+ "solution": "In 1-bromo-3-nitrobenzene, the existing $\\text{NO}_2$ group directs nitration to the meta position; the available meta site is C5. Thus the product is 1-bromo-3,5-dinitrobenzene, (D).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "On nitration of the compound shown in the figure, which is the major product of monosubstitution?",
+  "options": [
+   "1-bromo-2,3-dinitrobenzene",
+   "1-bromo-2,5-dinitrobenzene",
+   "1-bromo-3,4-dinitrobenzene",
+   "1-bromo-3,5-dinitrobenzene"
+  ],
+  "option_smiles": [
+   "Brc1c([N+](=O)[O-])c([N+](=O)[O-])ccc1",
+   "Brc1cc([N+](=O)[O-])ccc([N+](=O)[O-])1",
+   "Brc1cc([N+](=O)[O-])c([N+](=O)[O-])cc1",
+   "Brc1cc([N+](=O)[O-])cc([N+](=O)[O-])c1"
+  ],
+  "answer": "D",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a benzene ring as a hexagon with vertices numbered clockwise: C1 at the top, C2 upper right, C3 lower right, C4 bottom, C5 lower left, C6 upper left. Attach Br to C1 and an NO2 group to C3. Show no reaction arrow, reagents, or products.",
+   "smiles": "Brc1cc([N+](=O)[O-])ccc1"
+  },
+  "difficulty_estimate": 3,
+  "working": "Br at C1 directs to C2, C4 and C6; $\\text{NO}_2$ at C3 directs meta, to C1 and C5.\\nC1 is occupied; the nitro group strongly disfavors substitution at its ortho/para sites C2, C4 and C6.\\nSubstitution at C5 gives 1-bromo-3,5-dinitrobenzene.",
+  "distractor_notes": "A selects C2, between the two substituents.\\nB follows Br’s ortho direction to C6 despite its para relationship to $\\text{NO}_2$.\\nC follows Br’s para direction to C4 despite its ortho relationship to $\\text{NO}_2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Hydrogen",
+  "subtopic": "Hydrogen peroxide storage",
+  "archetype": "fact recall",
+  "brief": "Ask why H2O2 is stored in dark/waxed bottles with a stabilizer — simple conceptual recall of its decomposition and catalysis.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:47",
+   "2024s1:33",
+   "2022:45"
+  ]
+ },
+ "status": "ok",
+ "stem": "Why is hydrogen peroxide stored in dark, waxed bottles with a stabilizer?",
+ "options": [
+  "To prevent its oxidation by oxygen in air",
+  "To prevent its light-induced decomposition and decomposition catalysed by trace impurities",
+  "To increase its rate of decomposition in the dark",
+  "To prevent it from dissolving in water"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "H₂O₂ decomposes under light, and trace impurities can catalyse its decomposition. Dark bottles and a stabilizer help prevent this.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}+\\text{O}_2$ \nLight and traces of metal impurities catalyse decomposition.\nDark bottles limit photochemical decomposition; stabilizers suppress impurity-catalysed decomposition.\n\nIndependent check: H₂O₂ decomposes under light, and trace impurities can catalyse its decomposition. Dark bottles and a stabilizer help prevent this.",
+ "solution": "Hydrogen peroxide decomposes in light and in the presence of trace metal impurities:\n$$2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}+\\text{O}_2$$\nDark, waxed bottles limit light-induced decomposition, while a stabilizer suppresses decomposition catalysed by impurities.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Why is hydrogen peroxide stored in dark, waxed bottles with a stabilizer?",
+  "options": [
+   "To prevent its light-induced decomposition and decomposition catalysed by trace impurities",
+   "To prevent its oxidation by oxygen in air",
+   "To increase its rate of decomposition in the dark",
+   "To prevent it from dissolving in water"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$2\\text{H}_2\\text{O}_2 \\rightarrow 2\\text{H}_2\\text{O}+\\text{O}_2$ \nLight and traces of metal impurities catalyse decomposition.\nDark bottles limit photochemical decomposition; stabilizers suppress impurity-catalysed decomposition.",
+  "distractor_notes": "B: assumes oxygen in air is the cause; C: reverses the purpose of a stabilizer; D: confuses storage stability with solubility."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

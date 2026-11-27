@@ -72,6 +72,7 @@ def job(tmp_path, monkeypatch):
     from agents import bank
     monkeypatch.setattr(bank, "BANK", tmp_path / "bank")
     monkeypatch.setattr(bank, "FILE", tmp_path / "bank" / "questions.jsonl")
+    monkeypatch.setattr(bank, "USAGE", tmp_path / "bank" / "usage.json")
     cfg = jobmod.JobConfig(counts={"Physics": 3, "English Proficiency": 6, "Logical Reasoning": 8}, seed=3,
                            export=False, workers=4)
     j = jobmod.Job.create(cfg)
@@ -103,6 +104,45 @@ def test_offline_job(job):
     assert len(set(phys)) > 1
 
 
+def test_build_from_bank(job):
+    from agents import bank
+    from pipeline import job as jobmod
+    job.run()
+    before = len(bank.load())
+    assert before
+    cfg = jobmod.JobConfig(counts={"Physics": 3}, seed=3, export=False, workers=2, source="direct")
+    j2 = jobmod.Job.create(cfg)
+    j2._llm = FakeLLM()
+    j2.run()
+    assert j2.state()["status"] == "done"
+    items = j2.load_items()
+    direct = [i for i in items if i.get("origin") == "bank"]
+    assert direct, "expected at least one question taken from the bank"
+    ids = {r["id"] for r in bank.load()}
+    for i in direct:
+        assert i["bank_id"] in ids and i["status"] == "ok" and i["solution"]
+        assert j2.id in bank.usage()[i["bank_id"]]
+    assert len({i["bank_id"] for i in direct}) == len(direct)       # no repeats within a paper
+    assert not any(r["job_id"] == j2.id and r["stem"] in {i["stem"] for i in direct} for r in bank.load())
+
+
+def test_bank_match_prefers_least_used(tmp_path, monkeypatch):
+    from agents import bank
+    from core.models import Slot
+    monkeypatch.setattr(bank, "BANK", tmp_path)
+    monkeypatch.setattr(bank, "FILE", tmp_path / "questions.jsonl")
+    monkeypatch.setattr(bank, "USAGE", tmp_path / "usage.json")
+    rows = [{"id": f"g{k}", "section": "Physics", "chapter": "Optics", "difficulty": 2, "stem": "s", "options": []}
+            for k in range(3)] + [{"id": "gx", "section": "Physics", "chapter": "Heat", "difficulty": 2, "stem": "s"}]
+    (tmp_path / "questions.jsonl").write_text("\n".join(json.dumps(r) for r in rows))
+    bank.mark_used(["g0", "g1"], "j1")
+    bank.mark_used(["g0"], "j2")
+    slot = Slot(qno=1, section="Physics", chapter="Optics", difficulty=2)
+    assert [r["id"] for r in bank.match(slot)] == ["g2", "g1", "g0"]
+    assert [r["id"] for r in bank.match(slot, exclude={"g2"})][0] == "g1"
+    assert bank.match(Slot(qno=1, section="Physics", chapter="Waves", difficulty=2)) == []
+
+
 def test_balance_answers():
     rng = random.Random(1)
     items = [{"qno": i, "section": "S", "answer": "A", "options": [f"o{i}{k}" for k in range(4)],
@@ -117,3 +157,21 @@ def test_balance_answers():
     assert items[5]["answer"] == "A"  # positional option -> not moved
     seq = [i["answer"] for i in items]
     assert not any(seq[k] == seq[k + 1] == seq[k + 2] for k in range(len(seq) - 2))
+
+
+def test_cost_survives_resume(job, monkeypatch):
+    from pipeline import job as jobmod
+
+    class L:
+        profile_name = "x"
+        def __init__(self, *a):
+            self.total_cost, self.stats = 0.0, {}
+    monkeypatch.setattr(jobmod, "LLM", L)
+    st = job.state()
+    st.update(cost=1.25, cost_by_stage={"author_pcm": {"calls": 3, "cost": 1.25}})
+    job.write_state(st)
+    j2 = jobmod.Job(job.id)               # what resume() does
+    j2.llm.total_cost += 0.5               # spend in the resumed run
+    j2.update(stage="generating")
+    st = j2.state()
+    assert st["cost"] == 1.75 and st["cost_by_stage"]["author_pcm"]["calls"] == 3

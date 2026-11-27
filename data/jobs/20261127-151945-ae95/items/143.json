@@ -1,0 +1,71 @@
+{
+ "qno": 143,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 143,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Trigonometric limits",
+  "archetype": "standard limit",
+  "brief": "Evaluate a limit of the form sin(kx)/tan(mx) or (1 − cos kx)/x² using standard trigonometric limits; small coefficient manipulation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:107",
+   "2021:140",
+   "2026s2:114"
+  ],
+  "origin": "variant",
+  "bank_ref": "g993afa9f167e"
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos 6x}{4x^2}$.",
+ "options": [
+  "$\\dfrac{9}{4}$",
+  "$9$",
+  "$\\dfrac{9}{2}$",
+  "$18$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using $1-\\cos u\\sim u^2/2$ as $u\\to0$, the limit is $36/8=9/2$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$1-\\cos 6x=2\\sin^2 3x$\n\nIndependent check: Using $1-\\cos u\\sim u^2/2$ as $u\\to0$, the limit is $36/8=9/2$.",
+ "solution": "Using $1-\\cos u\\sim \\dfrac{u^2}{2}$ as $u\\to0$,\n$$\\lim_{x\\to0}\\frac{1-\\cos 6x}{4x^2}=\\frac{(6x)^2}{2\\cdot4x^2}=\\frac{9}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\lim_{x\\to0}\\dfrac{1-\\cos 6x}{4x^2}$.",
+  "options": [
+   "$\\dfrac{9}{4}$",
+   "$\\dfrac{9}{2}$",
+   "$9$",
+   "$18$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$1-\\cos 6x=2\\sin^2 3x$",
+  "distractor_notes": "A: loses a factor of $2$; C: loses the denominator factor of $2$ from the cosine limit; D: uses $6^2$ without the cosine-limit factor of $\\dfrac12$."
+ },
+ "variant_of": "g993afa9f167e",
+ "author_model": "openai/gpt-6-luna-pro"
+}

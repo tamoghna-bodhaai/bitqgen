@@ -1,0 +1,70 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "General term",
+  "archetype": "general term",
+  "brief": "Find the term independent of x (or coefficient of x^k) in the expansion of (x^a + b/x^c)^n using the general term",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:98",
+   "2026s2:97",
+   "2024s2:115"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The coefficient of $x^4$ in the expansion of $\\left(x^4+\\dfrac{2}{x^3}\\right)^8$ is",
+ "options": [
+  "$1120$",
+  "$560$",
+  "$70$",
+  "$1792$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The general term is \\(\\binom{8}{k}2^k x^{32-7k}\\). Setting \\(32-7k=4\\) gives \\(k=4\\), so the coefficient is \\(\\binom{8}{4}2^4=1120\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T_{j+1}=\\binom{8}{j}(x^4)^{8-j}(2x^{-3})^j=\\binom{8}{j}2^j x^{32-7j};\\quad 32-7j=4\\Rightarrow j=4;\\quad [x^4]=\\binom84 2^4=1120$.\n\nIndependent check: The general term is \\(\\binom{8}{k}2^k x^{32-7k}\\). Setting \\(32-7k=4\\) gives \\(k=4\\), so the coefficient is \\(\\binom{8}{4}2^4=1120\\).",
+ "solution": "The general term is $T_{j+1}=\\binom{8}{j}2^j x^{32-7j}$. For the coefficient of $x^4$, set $32-7j=4$, giving $j=4$.\n$$[x^4]=\\binom{8}{4}2^4=1120$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The coefficient of $x^4$ in the expansion of $\\left(x^4+\\dfrac{2}{x^3}\\right)^8$ is",
+  "options": [
+   "$70$",
+   "$560$",
+   "$1120$",
+   "$1792$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$T_{j+1}=\\binom{8}{j}(x^4)^{8-j}(2x^{-3})^j=\\binom{8}{j}2^j x^{32-7j};\\quad 32-7j=4\\Rightarrow j=4;\\quad [x^4]=\\binom84 2^4=1120$.",
+  "distractor_notes": "A: Omits the factor $2^j$; B: Omits one factor of $2$; D: Uses the term number instead of the binomial index."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

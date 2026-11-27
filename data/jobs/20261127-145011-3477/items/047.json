@@ -1,0 +1,56 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Manipulating K",
+  "archetype": "reverse and scale",
+  "brief": "Give Kc for a gaseous equilibrium; ask for Kp using Δn and the relation Kp = Kc(RT)^Δn with a stated temperature",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:58",
+   "2022:40",
+   "2021:50"
+  ],
+  "origin": "direct",
+  "bank_ref": "g3b4452729a59"
+ },
+ "status": "ok",
+ "stem": "The equilibrium constant for the reaction $\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g)$ is $K_c = 0.2$ at a certain temperature. What is the value of $K_c$ for the reaction $4\\text{NO}_2(g) \\rightleftharpoons 2\\text{N}_2\\text{O}_4(g)$ at the same temperature?",
+ "options": [
+  "$0.04$",
+  "$5$",
+  "$10$",
+  "$25$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "qwen/qwen4-max",
+   "answer": "D",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g3b4452729a59 (verified in job 20261126-121908-0a65)"
+ ],
+ "working": "For the given initial reaction:\n$$\\text{N}_2\\text{O}_4(g) \\rightleftharpoons 2\\text{NO}_2(g), \\quad K_c = \\dfrac{[\\text{NO}_2]^2}{[\\text{N}_2\\text{O}_4]} = 0.2$$\n\nReversing the reaction gives:\n$$2\\text{NO}_2(g) \\rightleftharpoons \\text{N}_2\\text{O}_4(g), \\quad K_c' = \\dfrac{1}{K_c} = \\dfrac{1}{0.2} = 5$$\n\nMultiplying the reversed reaction by a factor of $2$ gives:\n$$4\\text{NO}_2(g) \\rightleftharpoons 2\\text{N}_2\\text{O}_4(g), \\quad K_c'' = (K_c')^2 = 5^2 = 25$$\n\nIndependent check: Reversing the reaction gives K' = 1/Kc = 1/0.2 = 5. Doubling the coefficients squares it: K'' = 5^2 = 25.",
+ "solution": "Reversing a reaction inverts its equilibrium constant; doubling the coefficients squares it.\n$$K_c' = \\frac{1}{0.2}=5, \\qquad K_c''=(K_c')^2=5^2=25$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g3b4452729a59",
+ "author_model": null
+}

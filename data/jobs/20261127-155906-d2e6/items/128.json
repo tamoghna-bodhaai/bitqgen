@@ -1,0 +1,70 @@
+{
+ "qno": 128,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 128,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Collinear vectors",
+  "archetype": "vector computation",
+  "brief": "Given three position vectors or points, check collinearity by cross product / section formula and find the missing scalar ratio; easy single-step.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:123",
+   "2026s2:121",
+   "2026s1:120"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For what value of $\\lambda$ are the points with position vectors $\\vec a=\\hat i+2\\hat j$, $\\vec b=3\\hat i+\\hat j+2\\hat k$ and $\\vec c=5\\hat i+\\lambda\\hat j+4\\hat k$ collinear?",
+ "options": [
+  "$0$",
+  "$2$",
+  "$4$",
+  "$-2$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "β-α=(2,-1,2) and γ-α=(4,λ-2,4). The latter is twice the former, so λ-2=-2 and λ=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\vec b-\\vec a=2\\hat i-\\hat j+2\\hat k$.\\n$\\vec c-\\vec a=4\\hat i+(\\lambda-2)\\hat j+4\\hat k$.\\nFor collinearity, $\\vec c-\\vec a=2(\\vec b-\\vec a)$, so $\\lambda-2=-2\\Rightarrow\\lambda=0$.\n\nIndependent check: β-α=(2,-1,2) and γ-α=(4,λ-2,4). The latter is twice the former, so λ-2=-2 and λ=0.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For what value of $\\lambda$ are the points with position vectors $\\vec a=\\hat i+2\\hat j$, $\\vec b=3\\hat i+\\hat j+2\\hat k$ and $\\vec c=5\\hat i+\\lambda\\hat j+4\\hat k$ collinear?",
+  "options": [
+   "$0$",
+   "$2$",
+   "$4$",
+   "$-2$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\vec b-\\vec a=2\\hat i-\\hat j+2\\hat k$.\\n$\\vec c-\\vec a=4\\hat i+(\\lambda-2)\\hat j+4\\hat k$.\\nFor collinearity, $\\vec c-\\vec a=2(\\vec b-\\vec a)$, so $\\lambda-2=-2\\Rightarrow\\lambda=0$.",
+  "distractor_notes": "B: compares the $\\hat j$ coefficients without accounting for the factor of $2$. C: equates the $\\hat j$ coefficient of $\\vec c-\\vec a$ to $2$. D: gets the sign wrong when solving for $\\lambda$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

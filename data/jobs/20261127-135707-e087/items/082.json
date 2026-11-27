@@ -1,0 +1,68 @@
+{
+ "qno": 82,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 82,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS)",
+  "archetype": "para jumble (fixed ends)",
+  "brief": "Five-sentence paragraph on science/history with first and last sentences fixed; order middle PQRS parts that hinge on a pronoun link and a contrast marker.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:64",
+   "2023s2:65",
+   "2025s2:70"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange P, Q, R and S to form a coherent five-sentence paragraph. The first and last sentences are fixed. In the mid-nineteenth century, irregularities in Uranus's orbit led astronomers to suspect an unseen planet. P: Initial observers dismissed the suggestion because the deviations were slight, Q: but two mathematicians used them to calculate the position of a possible planet. R: Their calculation, however, did not itself establish the body's existence. S: Observers then searched the indicated region and found a planet close to the predicted position. Neptune's discovery became a celebrated demonstration of how theory can guide observation. Which sequence is correct?",
+ "options": [
+  "Q - P - R - S",
+  "R - P - Q - S",
+  "P - R - Q - S",
+  "P - Q - R - S"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "P–Q form a contrast: observers dismissed the suggestion, but mathematicians used the deviations to calculate a position. R qualifies the calculation; S gives the search and discovery.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "P must precede Q: P ends with a comma and Q completes its contrastive sentence. R's “Their calculation” refers to the mathematicians' calculation in Q; S follows the search prompted by R.\n\nIndependent check: P–Q form a contrast: observers dismissed the suggestion, but mathematicians used the deviations to calculate a position. R qualifies the calculation; S gives the search and discovery.",
+ "solution": "P–Q form a contrast: observers dismissed the suggestion, but mathematicians used the deviations to calculate the planet’s position. R qualifies their calculation, and S describes the subsequent search and discovery.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Arrange P, Q, R and S to form a coherent five-sentence paragraph. The first and last sentences are fixed. In the mid-nineteenth century, irregularities in Uranus's orbit led astronomers to suspect an unseen planet. P: Initial observers dismissed the suggestion because the deviations were slight, Q: but two mathematicians used them to calculate the position of a possible planet. R: Their calculation, however, did not itself establish the body's existence. S: Observers then searched the indicated region and found a planet close to the predicted position. Neptune's discovery became a celebrated demonstration of how theory can guide observation. Which sequence is correct?",
+  "options": [
+   "Q - P - R - S",
+   "P - Q - R - S",
+   "P - R - Q - S",
+   "R - P - Q - S"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "P must precede Q: P ends with a comma and Q completes its contrastive sentence. R's “Their calculation” refers to the mathematicians' calculation in Q; S follows the search prompted by R.",
+  "distractor_notes": "A: Reverses the comma-linked parts, leaving Q without a grammatical lead-in. C: Places the calculation before the mathematicians make it. D: Refers to a calculation before its antecedent appears."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

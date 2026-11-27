@@ -1,0 +1,68 @@
+{
+ "qno": 45,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 45,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "First law for processes (free expansion)",
+  "archetype": "conceptual",
+  "brief": "For ideal-gas free expansion against vacuum, ask q, w, ΔU and ΔH — pure first-law sign/concept check, no numbers.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:47",
+   "2025s2:51",
+   "2026s1:36"
+  ]
+ },
+ "status": "ok",
+ "stem": "An ideal gas undergoes adiabatic free expansion against vacuum. Which set of changes is correct?",
+ "options": [
+  "$q=0,\\ w=0,\\ \\Delta U=0,\\ \\Delta H\\ne 0$",
+  "$q=0,\\ w=0,\\ \\Delta U=0,\\ \\Delta H=0$",
+  "$q=0,\\ w\\ne 0,\\ \\Delta U\\ne 0,\\ \\Delta H\\ne 0$",
+  "$q\\ne 0,\\ w=0,\\ \\Delta U\\ne 0,\\ \\Delta H\\ne 0$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Adiabatic free expansion has q=0 and w=0, so ΔU=0. For an ideal gas, U and H depend only on temperature; thus ΔH=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$q=0$ (adiabatic), $w=0$ (expansion against vacuum).\nFirst law: $\\Delta U=q+w=0$.\nFor an ideal gas, $U$ and $H$ depend only on $T$.\nThus $\\Delta T=0$ and $\\Delta H=0$.\n\nIndependent check: Adiabatic free expansion has q=0 and w=0, so ΔU=0. For an ideal gas, U and H depend only on temperature; thus ΔH=0.",
+ "solution": "For adiabatic free expansion against vacuum, $q=0$ and $w=0$. Hence, by the first law, $$\\Delta U=q+w=0.$$ For an ideal gas, $U$ and $H$ depend only on temperature; therefore $\n\\Delta T=0$ and $\\Delta H=0$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "An ideal gas undergoes adiabatic free expansion against vacuum. Which set of changes is correct?",
+  "options": [
+   "$q=0,\\ w=0,\\ \\Delta U=0,\\ \\Delta H=0$",
+   "$q=0,\\ w=0,\\ \\Delta U=0,\\ \\Delta H\\ne 0$",
+   "$q=0,\\ w\\ne 0,\\ \\Delta U\\ne 0,\\ \\Delta H\\ne 0$",
+   "$q\\ne 0,\\ w=0,\\ \\Delta U\\ne 0,\\ \\Delta H\\ne 0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$q=0$ (adiabatic), $w=0$ (expansion against vacuum).\nFirst law: $\\Delta U=q+w=0$.\nFor an ideal gas, $U$ and $H$ depend only on $T$.\nThus $\\Delta T=0$ and $\\Delta H=0$.",
+  "distractor_notes": "B: assumes enthalpy can change while the ideal gas has no temperature change.\nC: assigns work and energy changes to expansion against vacuum.\nD: contradicts the adiabatic condition and assigns a nonzero energy change."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read-off parameters",
+  "brief": "Give y(x,t) = A sin(kx − ωt + φ) and ask for amplitude, wavelength, frequency and wave speed by matching with the standard form.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:26",
+   "2026s1:16",
+   "2022:22"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A travelling wave is described by $y(x,t)=0.04\\sin(4\\pi x-20\\pi t+\\pi/3)$, where $x$ and $y$ are in metres and $t$ is in seconds. What are its amplitude, wavelength, frequency and speed, respectively?",
+ "options": [
+  "$(0.04\\ \\text{m},\\ 2\\ \\text{m},\\ 10\\ \\text{Hz},\\ 5\\ \\text{m s}^{-1})$",
+  "$(0.04\\ \\text{m},\\ 0.5\\ \\text{m},\\ 10\\ \\text{Hz},\\ 5\\ \\text{m s}^{-1})$",
+  "$(0.04\\ \\text{m},\\ 0.5\\ \\text{m},\\ 20\\ \\text{Hz},\\ 10\\ \\text{m s}^{-1})$",
+  "$(0.04\\ \\text{m},\\ 0.5\\ \\text{m},\\ 10\\ \\text{Hz},\\ 10\\ \\text{m s}^{-1})$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From y=A sin(kx−ωt+φ): A=0.04 m, λ=2π/(4π)=0.5 m, f=20π/(2π)=10 Hz, and v=ω/k=5 m s⁻¹.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=0.04\\ \\text{m},\\quad k=4\\pi\\ \\text{m}^{-1},\\quad \\omega=20\\pi\\ \\text{s}^{-1}$.<br>$\\lambda=\\dfrac{2\\pi}{k}=0.5\\ \\text{m},\\quad f=\\dfrac{\\omega}{2\\pi}=10\\ \\text{Hz},\\quad v=\\dfrac{\\omega}{k}=5\\ \\text{m s}^{-1}$.\n\nIndependent check: From y=A sin(kx−ωt+φ): A=0.04 m, λ=2π/(4π)=0.5 m, f=20π/(2π)=10 Hz, and v=ω/k=5 m s⁻¹.",
+ "solution": "Comparing with $y=A\\sin(kx-\\omega t+\\phi)$ gives $A=0.04\\,\\text{m}$, $k=4\\pi\\,\\text{m}^{-1}$ and $\\omega=20\\pi\\,\\text{s}^{-1}$.\n$$\\lambda=\\frac{2\\pi}{k}=0.5\\,\\text{m},\\qquad f=\\frac{\\omega}{2\\pi}=10\\,\\text{Hz},\\qquad v=\\frac{\\omega}{k}=5\\,\\text{m s}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A travelling wave is described by $y(x,t)=0.04\\sin(4\\pi x-20\\pi t+\\pi/3)$, where $x$ and $y$ are in metres and $t$ is in seconds. What are its amplitude, wavelength, frequency and speed, respectively?",
+  "options": [
+   "$(0.04\\ \\text{m},\\ 2\\ \\text{m},\\ 10\\ \\text{Hz},\\ 5\\ \\text{m s}^{-1})$",
+   "$(0.04\\ \\text{m},\\ 0.5\\ \\text{m},\\ 20\\ \\text{Hz},\\ 10\\ \\text{m s}^{-1})$",
+   "$(0.04\\ \\text{m},\\ 0.5\\ \\text{m},\\ 10\\ \\text{Hz},\\ 5\\ \\text{m s}^{-1})$",
+   "$(0.04\\ \\text{m},\\ 0.5\\ \\text{m},\\ 10\\ \\text{Hz},\\ 10\\ \\text{m s}^{-1})$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A=0.04\\ \\text{m},\\quad k=4\\pi\\ \\text{m}^{-1},\\quad \\omega=20\\pi\\ \\text{s}^{-1}$.<br>$\\lambda=\\dfrac{2\\pi}{k}=0.5\\ \\text{m},\\quad f=\\dfrac{\\omega}{2\\pi}=10\\ \\text{Hz},\\quad v=\\dfrac{\\omega}{k}=5\\ \\text{m s}^{-1}$.",
+  "distractor_notes": "A: uses the wave number as if it gave a wavelength of $2$ m; B: treats angular frequency as frequency; D: makes an error evaluating $\\omega/k$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

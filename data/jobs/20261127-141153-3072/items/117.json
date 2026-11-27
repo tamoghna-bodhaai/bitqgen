@@ -1,0 +1,68 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Identities of inverse trig functions",
+  "archetype": "standard identity",
+  "brief": "Evaluate an expression like tan⁻¹x + tan⁻¹y or a sin/tan⁻¹ combination reduced via the addition identity; straightforward.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:100",
+   "2024s1:103",
+   "2025s2:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "The value of $\\tan^{-1}\\dfrac{1}{2}+\\tan^{-1}\\dfrac{1}{3}$ is",
+ "options": [
+  "$\\dfrac{\\pi}{6}$",
+  "$\\dfrac{\\pi}{4}$",
+  "$\\dfrac{\\pi}{3}$",
+  "$\\dfrac{3\\pi}{4}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the tangent addition formula, the sum has tangent \\(\\frac{1/2+1/3}{1-(1/2)(1/3)}=1\\). Both angles are positive and their sum is less than \\(\\pi/2\\), so the sum is \\(\\pi/4\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\tan(A+B)=\\dfrac{\\frac12+\\frac13}{1-\\frac16}=1$. Since $A,B>0$ and $A+B<\\dfrac{\\pi}{2}$, $A+B=\\dfrac{\\pi}{4}$.\n\nIndependent check: Using the tangent addition formula, the sum has tangent \\(\\frac{1/2+1/3}{1-(1/2)(1/3)}=1\\). Both angles are positive and their sum is less than \\(\\pi/2\\), so the sum is \\(\\pi/4\\).",
+ "solution": "Let $A=\\tan^{-1}\\dfrac12$ and $B=\\tan^{-1}\\dfrac13$. Then\n$$\\tan(A+B)=\\dfrac{\\frac12+\\frac13}{1-\\frac16}=1.$$\nSince $A,B>0$ and $A+B<\\dfrac{\\pi}{2}$, we get $A+B=\\dfrac{\\pi}{4}$. (B)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The value of $\\tan^{-1}\\dfrac{1}{2}+\\tan^{-1}\\dfrac{1}{3}$ is",
+  "options": [
+   "$\\dfrac{\\pi}{6}$",
+   "$\\dfrac{\\pi}{4}$",
+   "$\\dfrac{\\pi}{3}$",
+   "$\\dfrac{3\\pi}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\tan(A+B)=\\dfrac{\\frac12+\\frac13}{1-\\frac16}=1$. Since $A,B>0$ and $A+B<\\dfrac{\\pi}{2}$, $A+B=\\dfrac{\\pi}{4}$.",
+  "distractor_notes": "A: Adds the arguments without using the addition identity.\\nC: Uses an incorrect denominator in the tangent addition formula.\\nD: Selects the supplementary angle despite both terms being positive and their sum being acute."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -22,6 +22,7 @@ from agents.common import _shingles, similarity
 ROOT = Path(__file__).resolve().parent.parent
 BANK = ROOT / "data" / "bank"
 FILE = BANK / "questions.jsonl"
+USAGE = BANK / "usage.json"   # {bank_id: [job_id, ...]}: papers each banked question was used in
 DUP_THRESHOLD = 0.8   # stem similarity at which a question is treated as already in the bank
 _lock = threading.Lock()
 
@@ -37,13 +38,15 @@ def _shingle_index(mtime: float) -> list[tuple[str, set[str]]]:
     return [(r["id"], _shingles(r["stem"])) for r in load() if len(r.get("stem", "")) > 60]
 
 
-def nearest(stem: str) -> tuple[str, float]:
-    """Most similar banked stem (id, Jaccard 0..1)."""
+def nearest(stem: str, exclude: Optional[set[str]] = None) -> tuple[str, float]:
+    """Most similar banked stem (id, Jaccard 0..1), ignoring ids in `exclude`."""
     if len(stem) <= 60 or not FILE.exists():
         return "", 0.0
     s = _shingles(stem)
     best, score = "", 0.0
     for bid, bs in _shingle_index(FILE.stat().st_mtime):
+        if exclude and bid in exclude:
+            continue
         j = len(s & bs) / max(1, len(s | bs))
         if j > score:
             best, score = bid, j
@@ -100,6 +103,7 @@ def record(item: dict, *, job_id: str, job_dir: Path, pattern_id: str, profile: 
         },
         "critic_notes": critic_notes,
         "notes": item.get("notes") or [],
+        "variant_of": item.get("variant_of"),
         "times_used": 0,
     }
 
@@ -113,7 +117,7 @@ def add_job(items: list[dict], *, job_id: str, job_dir: Path, pattern_id: str, p
         existing = {(r["job_id"], r["job_qno"]) for r in load()}
         new: list[dict] = []
         for it in items:
-            if it.get("status") != "ok" or not it.get("stem") or (job_id, it["qno"]) in existing:
+            if it.get("status") != "ok" or not it.get("stem") or it.get("origin") == "bank" or (job_id, it["qno"]) in existing:
                 continue
             _, score = nearest(it["stem"])
             if score >= DUP_THRESHOLD or any(similarity(it["stem"], r["stem"]) >= DUP_THRESHOLD for r in new):
@@ -132,10 +136,75 @@ def add_job(items: list[dict], *, job_id: str, job_dir: Path, pattern_id: str, p
 
 def stats() -> dict:
     rows = load()
-    out: dict = {"total": len(rows), "by_section": {}}
+    out: dict = {"total": len(rows), "by_section": {}, "by_chapter": {}}
     for r in rows:
         out["by_section"][r["section"]] = out["by_section"].get(r["section"], 0) + 1
+        ch = out["by_chapter"].setdefault(r["section"], {})
+        ch[r.get("chapter") or "?"] = ch.get(r.get("chapter") or "?", 0) + 1
     return out
+
+
+# ---------------------------------------------------------------- building papers from the bank
+def usage() -> dict[str, list[str]]:
+    return json.loads(USAGE.read_text()) if USAGE.exists() else {}
+
+
+def mark_used(ids: list[str], job_id: str) -> None:
+    with _lock:
+        u = usage()
+        for i in ids:
+            if job_id not in u.setdefault(i, []):
+                u[i].append(job_id)
+        BANK.mkdir(parents=True, exist_ok=True)
+        tmp = USAGE.with_suffix(".tmp")
+        tmp.write_text(json.dumps(u, indent=1))
+        tmp.replace(USAGE)
+
+
+def get(qid: str) -> Optional[dict]:
+    return next((r for r in load() if r["id"] == qid), None)
+
+
+def _norm(x) -> str:
+    return (x or "").strip().lower()
+
+
+def match(slot, *, exclude: Optional[set[str]] = None, need_figure_ok: bool = True) -> list[dict]:
+    """Banked questions that fit a blueprint slot, best first.
+
+    Same section required; chapter strongly preferred, then subtopic/archetype; difficulty within 1 of
+    the target; least-used first as the tiebreak. RC passage items are never matched (they need their set)."""
+    exclude = exclude or set()
+    used = usage()
+    out = []
+    for r in load():
+        if r["id"] in exclude or r.get("section") != slot.section or r.get("passage_id") or r.get("passage"):
+            continue
+        if r.get("source") == "lr_generator":
+            continue
+        d = r.get("difficulty") or 2
+        if abs(d - slot.difficulty) > 1:
+            continue
+        if slot.needs_figure and not r.get("figure") and not need_figure_ok:
+            continue
+        score = 0.0
+        if _norm(r.get("chapter")) == _norm(slot.chapter):
+            score += 10
+        if slot.subtopic and _norm(r.get("subtopic")) == _norm(slot.subtopic):
+            score += 3
+        if slot.archetype and _norm(r.get("archetype")) == _norm(slot.archetype):
+            score += 2
+        score -= abs(d - slot.difficulty)
+        if slot.needs_figure and r.get("figure"):
+            score += 1
+        out.append((score, -len(used.get(r["id"], [])), r))
+    out.sort(key=lambda t: (t[0], t[1]), reverse=True)
+    # chapter match is required when any chapter match exists
+    if out and out[0][0] >= 10:
+        out = [t for t in out if t[0] >= 10]
+    else:
+        out = []
+    return [t[2] for t in out]
 
 
 if __name__ == "__main__":  # uv run python -m agents.bank <job_id> ...   (backfill finished jobs)

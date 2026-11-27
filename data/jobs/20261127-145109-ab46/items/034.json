@@ -1,0 +1,78 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Floating in two liquids",
+  "archetype": "buoyancy balance",
+  "brief": "Show a solid floating at an interface between two immiscible liquids (or partly immersed); use density balance to find the fraction immersed in each liquid.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:11",
+   "2023s1:10",
+   "2022:2"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A solid block floats at the interface of two immiscible liquids, as shown in the figure. What fraction of its volume is immersed in the upper liquid?",
+ "options": [
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{4}$",
+  "$\\dfrac{3}{4}$",
+  "$\\dfrac{2}{3}$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q034_stem_v0.png",
+  "width_pct": 70,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let x be the fraction of the block in the upper liquid. Buoyancy balance gives 800x + 1200(1-x) = 1000, so x = 1/2.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $f$ be the fraction in the upper liquid.<br>$800f+1200(1-f)=1000$<br>$f=\\dfrac{1}{2}$\n\nIndependent check: Let x be the fraction of the block in the upper liquid. Buoyancy balance gives 800x + 1200(1-x) = 1000, so x = 1/2.",
+ "solution": "By buoyancy balance, the block’s density equals the volume-weighted density of the two liquids. If $f$ is the fraction immersed in the upper liquid,\n$$800f+1200(1-f)=1000 \\quad\\Rightarrow\\quad f=\\dfrac{1}{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A solid block floats at the interface of two immiscible liquids, as shown in the figure. What fraction of its volume is immersed in the upper liquid?",
+  "options": [
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{3}{4}$",
+   "$\\dfrac{2}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw two immiscible liquid layers in a transparent vertical container, with the upper layer labeled “Upper liquid, density $800\\ \\text{kg m}^{-3}$” and the lower layer labeled “Lower liquid, density $1200\\ \\text{kg m}^{-3}$”. Draw a uniform rectangular solid block floating upright across the horizontal interface, with part of the block in each liquid. Label the block “Solid, density $1000\\ \\text{kg m}^{-3}$”. Mark the horizontal liquid interface. Do not show dimensions or fractions.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "Let $f$ be the fraction in the upper liquid.<br>$800f+1200(1-f)=1000$<br>$f=\\dfrac{1}{2}$",
+  "distractor_notes": "A: Underestimates the upper-liquid displacement. C: Overestimates the upper-liquid displacement. D: Uses an incorrect density balance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

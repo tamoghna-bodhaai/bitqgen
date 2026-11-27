@@ -1,0 +1,78 @@
+{
+ "qno": 50,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 50,
+  "section": "Chemistry",
+  "chapter": "Chemical Kinetics",
+  "subtopic": "First order integrated rate law",
+  "archetype": "graph interpretation",
+  "brief": "Figure with concentration-vs-time or ln[A] vs time plots for first-order reactions; extract rate constant from slope or compare two reactants' half-lives.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:39",
+   "2026s2:48",
+   "2025s2:44"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two first-order reactions, $X$ and $Y$, have the $\\ln([C]/[C]_0)$ versus time plots shown in the figure. When $[Y]=[Y]_0/4$, what fraction of its initial concentration remains for $X$?",
+ "options": [
+  "$\\dfrac{1}{64}$",
+  "$\\dfrac{1}{16}$",
+  "$\\dfrac{1}{8}$",
+  "$\\dfrac{1}{4}$"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q050_stem_v0.png",
+  "width_pct": 55,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From the graph at 10 min, ln([Y]/[Y]₀) = −1 and ln([X]/[X]₀) = −2, so X’s decay rate is twice Y’s. Thus when Y/Y₀ = 1/4, X/X₀ = (1/4)² = 1/16.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$k_X=2/10=0.20\\ \\text{min}^{-1}$; $k_Y=1/10=0.10\\ \\text{min}^{-1}$; $[Y]/[Y]_0=1/4\\Rightarrow t=\\ln 4/0.10$; $[X]/[X]_0=e^{-0.20t}=e^{-2\\ln4}=1/16$.\n\nIndependent check: From the graph at 10 min, ln([Y]/[Y]₀) = −1 and ln([X]/[X]₀) = −2, so X’s decay rate is twice Y’s. Thus when Y/Y₀ = 1/4, X/X₀ = (1/4)² = 1/16.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two first-order reactions, $X$ and $Y$, have the $\\ln([C]/[C]_0)$ versus time plots shown in the figure. When $[Y]=[Y]_0/4$, what fraction of its initial concentration remains for $X$?",
+  "options": [
+   "$\\dfrac{1}{64}$",
+   "$\\dfrac{1}{16}$",
+   "$\\dfrac{1}{8}$",
+   "$\\dfrac{1}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a Cartesian graph with horizontal axis $t$ (min), ticks at 0, 5 and 10, and vertical axis $\\ln([C]/[C]_0)$, ticks at 0, $-1$ and $-2$. Plot two straight lines beginning at $(0,0)$. The line labelled X passes through $(10,-2)$; the line labelled Y passes through $(10,-1)$. Label both lines clearly.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$k_X=2/10=0.20\\ \\text{min}^{-1}$; $k_Y=1/10=0.10\\ \\text{min}^{-1}$; $[Y]/[Y]_0=1/4\\Rightarrow t=\\ln 4/0.10$; $[X]/[X]_0=e^{-0.20t}=e^{-2\\ln4}=1/16$.",
+  "distractor_notes": "A: doubles the exponent; C: uses only one factor of the rate-constant ratio; D: reports the fraction for Y."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

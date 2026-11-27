@@ -1,0 +1,56 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE intensity",
+  "archetype": "phase difference to intensity",
+  "brief": "Path difference at a point on the screen given in terms of wavelength; decide whether the point is a maximum/minimum or find the intensity ratio using I = 4I₀cos²(φ/2).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:23",
+   "2023s1:5",
+   "2023s2:23"
+  ],
+  "origin": "direct",
+  "bank_ref": "gdd6eb633b001"
+ },
+ "status": "ok",
+ "stem": "Two coherent light waves of intensities 9I and 4I meet at a point with a phase difference of 120 degrees. The resultant intensity at that point is:",
+ "options": [
+  "1I",
+  "13I",
+  "7I",
+  "19I"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank gdd6eb633b001 (verified in job 20261127-122012-292e)"
+ ],
+ "working": "I_res = I1 + I2 + 2 sqrt(I1 I2) cos phi\nI_res = 9I + 4I + 2 sqrt(9I * 4I) cos 120\nI_res = 13I + 12I * (-0.5)\nI_res = 13I - 6I = 7I\n\nIndependent check: Resultant intensity = 9I + 4I + 2√(9I·4I) cos 120° = 13I − 6I = 7I.",
+ "solution": "For two coherent waves, $I_{\\text{res}}=I_1+I_2+2\\sqrt{I_1I_2}\\cos\\phi$.  \n$$I_{\\text{res}}=9I+4I+2\\sqrt{(9I)(4I)}\\cos120^\\circ=13I-6I=7I.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "gdd6eb633b001",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

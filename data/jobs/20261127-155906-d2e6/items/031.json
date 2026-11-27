@@ -1,0 +1,70 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Propagation of errors",
+  "archetype": "error propagation",
+  "brief": "A physical quantity (e.g. density, or resistance from V and I measurements) computed from measured quantities with given least-count errors; propagate relative errors to find the percentage error in the result.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:9",
+   "2023s1:2",
+   "2021:33"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A solid cylinder has measured mass $(200.0\\pm2.0)$ g, diameter $(4.00\\pm0.08)$ cm and height $(10.0\\pm0.15)$ cm. Using maximum-error propagation, what is the percentage error in its density?",
+ "options": [
+  "$4.4\\%$",
+  "$4.5\\%$",
+  "$5.0\\%$",
+  "$6.5\\%$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For ρ = 4m/(πd²h), maximum percentage error is 1% + 2(2%) + 1.5% = 6.5%.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\rho=\\dfrac{4m}{\\pi d^2h}$; $\\dfrac{\\Delta\\rho}{\\rho}=\\dfrac{\\Delta m}{m}+2\\dfrac{\\Delta d}{d}+\\dfrac{\\Delta h}{h}=1\\%+4\\%+1.5\\%=6.5\\%$.\n\nIndependent check: For ρ = 4m/(πd²h), maximum percentage error is 1% + 2(2%) + 1.5% = 6.5%.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A solid cylinder has measured mass $(200.0\\pm2.0)$ g, diameter $(4.00\\pm0.08)$ cm and height $(10.0\\pm0.15)$ cm. Using maximum-error propagation, what is the percentage error in its density?",
+  "options": [
+   "$4.4\\%$",
+   "$4.5\\%$",
+   "$5.0\\%$",
+   "$6.5\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\rho=\\dfrac{4m}{\\pi d^2h}$; $\\dfrac{\\Delta\\rho}{\\rho}=\\dfrac{\\Delta m}{m}+2\\dfrac{\\Delta d}{d}+\\dfrac{\\Delta h}{h}=1\\%+4\\%+1.5\\%=6.5\\%$.",
+  "distractor_notes": "A: combines the contributions in quadrature instead of adding maximum errors.\\nB: forgets the power of $2$ on the diameter.\\nC: omits the height uncertainty."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

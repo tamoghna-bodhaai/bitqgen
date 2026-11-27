@@ -19,48 +19,49 @@
   ]
  },
  "status": "ok",
- "stem": "The density of an ideal gas is $2.0\\ \\text{g L}^{-1}$ at $300\\ \\text{K}$ and $1.64\\ \\text{atm}$. What is the volume occupied by $15\\ \\text{g}$ of this gas at $400\\ \\text{K}$ and $0.82\\ \\text{atm}$? (Given: $R = 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1}$)",
+ "stem": "An ideal gas has a density of $2.0\\ \\text{g L}^{-1}$ at $1.23\\ \\text{atm}$ and $300\\ \\text{K}$. Its molar mass is (take $R = 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1}$):",
  "options": [
-  "$5\\ \\text{L}$",
-  "$10\\ \\text{L}$",
-  "$20\\ \\text{L}$",
-  "$40\\ \\text{L}$"
+  "$20\\ \\text{g mol}^{-1}$",
+  "$40\\ \\text{g mol}^{-1}$",
+  "$60\\ \\text{g mol}^{-1}$",
+  "$80\\ \\text{g mol}^{-1}$"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "M = ρRT/P = 2.0×0.082×300/1.64 = 30 g/mol. n = 15/30 = 0.5 mol. V = nRT/P = 0.5×0.082×400/0.82 = 20 L.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(M=\\frac{dRT}{P}=\\frac{(2.0)(0.082)(300)}{1.23}=40\\ \\text{g mol}^{-1}\\).",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "Step 1: Determine the molar mass ($M$) of the gas using the density form of the ideal gas equation:\n$$d = \\dfrac{PM}{RT} \\implies M = \\dfrac{dRT}{P}$$\n$$M = \\dfrac{2.0\\ \\text{g L}^{-1} \\times 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1} \\times 300\\ \\text{K}}{1.64\\ \\text{atm}} = \\dfrac{49.2}{1.64} = 30\\ \\text{g mol}^{-1}$$\n\nStep 2: Calculate the number of moles ($n$) in $15\\ \\text{g}$ of the gas:\n$$n = \\dfrac{m}{M} = \\dfrac{15\\ \\text{g}}{30\\ \\text{g mol}^{-1}} = 0.5\\ \\text{mol}$$\n\nStep 3: Calculate the volume occupied by this amount of gas at $T = 400\\ \\text{K}$ and $P = 0.82\\ \\text{atm}$:\n$$V = \\dfrac{nRT}{P} = \\dfrac{0.5\\ \\text{mol} \\times 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1} \\times 400\\ \\text{K}}{0.82\\ \\text{atm}} = \\dfrac{16.4}{0.82} = 20\\ \\text{L}$$\n\nAlternatively, find the initial volume $V_1 = \\dfrac{m}{d_1} = \\dfrac{15\\ \\text{g}}{2.0\\ \\text{g L}^{-1}} = 7.5\\ \\text{L}$, then apply the combined gas law:\n$$V_2 = V_1 \\left(\\dfrac{P_1}{P_2}\\right)\\left(\\dfrac{T_2}{T_1}\\right) = 7.5 \\times \\left(\\dfrac{1.64}{0.82}\\right) \\times \\left(\\dfrac{400}{300}\\right) = 7.5 \\times 2 \\times \\dfrac{4}{3} = 20\\ \\text{L}.$$\n\nIndependent check: M = ρRT/P = 2.0×0.082×300/1.64 = 30 g/mol. n = 15/30 = 0.5 mol. V = nRT/P = 0.5×0.082×400/0.82 = 20 L.",
+ "working": "$\\rho = \\dfrac{PM}{RT} \\Rightarrow M = \\dfrac{\\rho RT}{P}$\n$M = \\dfrac{(2.0)(0.082)(300)}{1.23} = 40\\ \\text{g mol}^{-1}$\n\nIndependent check: Using \\(M=\\frac{dRT}{P}=\\frac{(2.0)(0.082)(300)}{1.23}=40\\ \\text{g mol}^{-1}\\).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The density of an ideal gas is $2.0\\ \\text{g L}^{-1}$ at $300\\ \\text{K}$ and $1.64\\ \\text{atm}$. What is the volume occupied by $15\\ \\text{g}$ of this gas at $400\\ \\text{K}$ and $0.82\\ \\text{atm}$? (Given: $R = 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1}$)",
+  "stem": "An ideal gas has a density of $2.0\\ \\text{g L}^{-1}$ at $1.23\\ \\text{atm}$ and $300\\ \\text{K}$. Its molar mass is (take $R = 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1}$):",
   "options": [
-   "$5\\ \\text{L}$",
-   "$10\\ \\text{L}$",
-   "$20\\ \\text{L}$",
-   "$40\\ \\text{L}$"
+   "$20\\ \\text{g mol}^{-1}$",
+   "$40\\ \\text{g mol}^{-1}$",
+   "$60\\ \\text{g mol}^{-1}$",
+   "$80\\ \\text{g mol}^{-1}$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "Step 1: Determine the molar mass ($M$) of the gas using the density form of the ideal gas equation:\n$$d = \\dfrac{PM}{RT} \\implies M = \\dfrac{dRT}{P}$$\n$$M = \\dfrac{2.0\\ \\text{g L}^{-1} \\times 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1} \\times 300\\ \\text{K}}{1.64\\ \\text{atm}} = \\dfrac{49.2}{1.64} = 30\\ \\text{g mol}^{-1}$$\n\nStep 2: Calculate the number of moles ($n$) in $15\\ \\text{g}$ of the gas:\n$$n = \\dfrac{m}{M} = \\dfrac{15\\ \\text{g}}{30\\ \\text{g mol}^{-1}} = 0.5\\ \\text{mol}$$\n\nStep 3: Calculate the volume occupied by this amount of gas at $T = 400\\ \\text{K}$ and $P = 0.82\\ \\text{atm}$:\n$$V = \\dfrac{nRT}{P} = \\dfrac{0.5\\ \\text{mol} \\times 0.082\\ \\text{L atm K}^{-1}\\text{mol}^{-1} \\times 400\\ \\text{K}}{0.82\\ \\text{atm}} = \\dfrac{16.4}{0.82} = 20\\ \\text{L}$$\n\nAlternatively, find the initial volume $V_1 = \\dfrac{m}{d_1} = \\dfrac{15\\ \\text{g}}{2.0\\ \\text{g L}^{-1}} = 7.5\\ \\text{L}$, then apply the combined gas law:\n$$V_2 = V_1 \\left(\\dfrac{P_1}{P_2}\\right)\\left(\\dfrac{T_2}{T_1}\\right) = 7.5 \\times \\left(\\dfrac{1.64}{0.82}\\right) \\times \\left(\\dfrac{400}{300}\\right) = 7.5 \\times 2 \\times \\dfrac{4}{3} = 20\\ \\text{L}.$$",
-  "distractor_notes": "$5\\ \\text{L}$: Inverting the pressure ratio ($P_2/P_1$ instead of $P_1/P_2$) in the combined gas law, giving $7.5 \\times (0.82/1.64) \\times (400/300) = 5\\ \\text{L}$.\n$10\\ \\text{L}$: Forgetting the pressure change and using the initial pressure $1.64\\ \\text{atm}$ instead of $0.82\\ \\text{atm}$, yielding $V = 10\\ \\text{L}$.\n$40\\ \\text{L}$: Calculating the molar volume for $1\\ \\text{mol}$ of gas ($V_m = RT/P = 40\\ \\text{L}$) without multiplying by $n = 0.5\\ \\text{mol}$.",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$\\rho = \\dfrac{PM}{RT} \\Rightarrow M = \\dfrac{\\rho RT}{P}$\n$M = \\dfrac{(2.0)(0.082)(300)}{1.23} = 40\\ \\text{g mol}^{-1}$",
+  "distractor_notes": "A: doubles the pressure in the denominator; C: uses $0.82\\ \\text{atm}$ instead of the given pressure; D: halves the pressure in the denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

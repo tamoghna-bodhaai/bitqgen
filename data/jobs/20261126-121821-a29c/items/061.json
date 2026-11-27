@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "Although the diplomat's address was ostensibly \\_\\_\\_\\_, his government's subsequent actions proved completely \\_\\_\\_\\_.",
+ "stem": "Although the scholarship scheme was initially praised as ___, later audits revealed its ___ effects on applicants from rural areas.",
  "options": [
-  "conciliatory, intransigent",
-  "belligerent, hostile",
-  "magnanimous, benevolent",
-  "ambiguous, equivocal"
+  "generous, favourable",
+  "equitable, beneficial",
+  "inclusive, exclusionary",
+  "restrictive, exclusionary"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "'Although' and 'ostensibly' signal that the actions contradicted the speech's appearance. Only (A) gives an opposing pair: conciliatory (peace-making) vs intransigent (uncompromising). B, C, D are synonym pairs with no contrast.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The contrast is between being praised as inclusive and later found to have exclusionary effects.",
    "answer": "A",
-   "confidence": 0.98,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The sentence contains the concessive conjunction 'Although' paired with 'ostensibly' (meaning seemingly or on the surface, but not necessarily in reality). This structure demands an opposing relationship between the demeanor projected during the opening address and the actual nature of the subsequent actions.\n\n- 'Conciliatory' means intended to placate, pacify, or resolve differences through compromise.\n- 'Intransigent' means completely uncompromising and stubborn, refusing to agree or moderate a position.\n\nPlacing these words in the sentence creates the required contrast: although the speech outwardly appeared willing to seek peace and compromise, the government's subsequent actions were utterly uncompromising.\n\nThe other options provide pairs of near-synonyms that fail to create the necessary logical contrast dictated by 'Although':\n- 'belligerent' and 'hostile' both denote aggressive conflict.\n- 'magnanimous' and 'benevolent' both denote noble generosity and goodwill.\n- 'ambiguous' and 'equivocal' both denote uncertainty and vagueness.\n\nIndependent check: 'Although' and 'ostensibly' signal that the actions contradicted the speech's appearance. Only (A) gives an opposing pair: conciliatory (peace-making) vs intransigent (uncompromising). B, C, D are synonym pairs with no contrast.",
- "solution": "",
+ "working": "The contrast is between the scheme’s initial reputation and the audits’ findings. “Inclusive” contrasts with “exclusionary,” so A fits. B and C are positive in both blanks; D’s words reinforce rather than reverse one another.\n\nIndependent check: The contrast is between being praised as inclusive and later found to have exclusionary effects.",
+ "solution": "The contrast is between the scheme’s initial reputation and the later audit findings. It was praised as <u>inclusive</u>, but its effects were <u>exclusionary</u> for rural applicants.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Although the diplomat's address was ostensibly \\_\\_\\_\\_, his government's subsequent actions proved completely \\_\\_\\_\\_.",
+  "stem": "Although the scholarship scheme was initially praised as ___, later audits revealed its ___ effects on applicants from rural areas.",
   "options": [
-   "conciliatory, intransigent",
-   "belligerent, hostile",
-   "magnanimous, benevolent",
-   "ambiguous, equivocal"
+   "inclusive, exclusionary",
+   "equitable, beneficial",
+   "generous, favourable",
+   "restrictive, exclusionary"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "The sentence contains the concessive conjunction 'Although' paired with 'ostensibly' (meaning seemingly or on the surface, but not necessarily in reality). This structure demands an opposing relationship between the demeanor projected during the opening address and the actual nature of the subsequent actions.\n\n- 'Conciliatory' means intended to placate, pacify, or resolve differences through compromise.\n- 'Intransigent' means completely uncompromising and stubborn, refusing to agree or moderate a position.\n\nPlacing these words in the sentence creates the required contrast: although the speech outwardly appeared willing to seek peace and compromise, the government's subsequent actions were utterly uncompromising.\n\nThe other options provide pairs of near-synonyms that fail to create the necessary logical contrast dictated by 'Although':\n- 'belligerent' and 'hostile' both denote aggressive conflict.\n- 'magnanimous' and 'benevolent' both denote noble generosity and goodwill.\n- 'ambiguous' and 'equivocal' both denote uncertainty and vagueness.",
-  "distractor_notes": "Option B (belligerent, hostile) uses two synonymous words denoting aggression, violating the contrast required by 'Although'.\nOption C (magnanimous, benevolent) uses two synonymous words denoting generosity, creating no contrast.\nOption D (ambiguous, equivocal) uses two synonymous words denoting vagueness, failing to provide the required opposing relationship.",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "The contrast is between the scheme’s initial reputation and the audits’ findings. “Inclusive” contrasts with “exclusionary,” so A fits. B and C are positive in both blanks; D’s words reinforce rather than reverse one another.",
+  "distractor_notes": "B: Both words describe a positive, consistent outcome rather than a contrast.\nC: Both words describe a positive, consistent outcome rather than a contrast.\nD: Both words suggest restriction or exclusion, so they do not create the required contrast."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

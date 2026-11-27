@@ -1,0 +1,68 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Perfectly inelastic collision",
+  "archetype": "momentum conservation",
+  "brief": "Two bodies collide and stick together (e.g., a moving body hits a resting one); apply momentum conservation to find the common velocity and then the kinetic energy lost in the collision.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:7",
+   "2026s2:29",
+   "2023s2:20"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $2\\ \\text{kg}$ block moving at $8\\ \\text{m s}^{-1}$ collides with a stationary $6\\ \\text{kg}$ block on a smooth surface, and they stick together. How much kinetic energy is lost in the collision?",
+ "options": [
+  "$48\\ \\text{J}$",
+  "$16\\ \\text{J}$",
+  "$64\\ \\text{J}$",
+  "$96\\ \\text{J}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By momentum conservation, the combined speed is \\(v=(2\\times8)/8=2\\,\\text{m s}^{-1}\\). Initial KE = 64 J; final KE = 16 J, so the loss is 48 J.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v=\\dfrac{2(8)}{2+6}=2\\ \\text{m s}^{-1}$; $K_i=\\dfrac{1}{2}(2)(8^2)=64\\ \\text{J}$; $K_f=\\dfrac{1}{2}(8)(2^2)=16\\ \\text{J}$; $\\Delta K=48\\ \\text{J}$\n\nIndependent check: By momentum conservation, the combined speed is \\(v=(2\\times8)/8=2\\,\\text{m s}^{-1}\\). Initial KE = 64 J; final KE = 16 J, so the loss is 48 J.",
+ "solution": "By conservation of momentum, the common speed after collision is\n$$v=\\frac{(2)(8)}{2+6}=2\\ \\text{m s}^{-1}.$$\nThe kinetic energy lost is $K_i-K_f=\\frac12(2)(8^2)-\\frac12(8)(2^2)=64-16=48\\ \\text{J}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $2\\ \\text{kg}$ block moving at $8\\ \\text{m s}^{-1}$ collides with a stationary $6\\ \\text{kg}$ block on a smooth surface, and they stick together. How much kinetic energy is lost in the collision?",
+  "options": [
+   "$16\\ \\text{J}$",
+   "$48\\ \\text{J}$",
+   "$64\\ \\text{J}$",
+   "$96\\ \\text{J}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$v=\\dfrac{2(8)}{2+6}=2\\ \\text{m s}^{-1}$; $K_i=\\dfrac{1}{2}(2)(8^2)=64\\ \\text{J}$; $K_f=\\dfrac{1}{2}(8)(2^2)=16\\ \\text{J}$; $\\Delta K=48\\ \\text{J}$",
+  "distractor_notes": "A: gives the final kinetic energy, not the loss; C: gives the initial kinetic energy; D: omits the factor $\\dfrac{1}{2}$ in the kinetic-energy difference."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 130,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 130,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Identities of inverse trig functions",
+  "archetype": "identity simplification",
+  "brief": "Simplify a compound expression like sin⁻¹x + sin⁻¹y (with a condition on x, y) into a single inverse trig function using standard identities.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:116",
+   "2025s2:120",
+   "2023s2:100"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $x,y\\ge0$ and $x+y\\le1$, simplify $\\sin^{-1}x+\\sin^{-1}y$ to a single inverse sine.",
+ "options": [
+  "$\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}+y\\sqrt{1-x^2}\\right)$",
+  "$\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}-y\\sqrt{1-x^2}\\right)$",
+  "$\\sin^{-1}(x+y)$",
+  "$\\sin^{-1}\\!\\left(xy+\\sqrt{1-x^2}\\sqrt{1-y^2}\\right)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let α = sin⁻¹x and β = sin⁻¹y. Since x + y ≤ 1, x² + y² ≤ 1, so α + β ≤ π/2. Thus sin⁻¹x + sin⁻¹y = sin⁻¹(sin(α + β)) = sin⁻¹(x√(1 − y²) + y√(1 − x²)).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=\\sin^{-1}x,\\ B=\\sin^{-1}y;\\ \\cos(A+B)=\\sqrt{1-x^2}\\sqrt{1-y^2}-xy\\ge0;\\ \\sin(A+B)=x\\sqrt{1-y^2}+y\\sqrt{1-x^2};\\ A+B=\\sin^{-1}(\\sin(A+B))$.\n\nIndependent check: Let α = sin⁻¹x and β = sin⁻¹y. Since x + y ≤ 1, x² + y² ≤ 1, so α + β ≤ π/2. Thus sin⁻¹x + sin⁻¹y = sin⁻¹(sin(α + β)) = sin⁻¹(x√(1 − y²) + y√(1 − x²)).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $x,y\\ge0$ and $x+y\\le1$, simplify $\\sin^{-1}x+\\sin^{-1}y$ to a single inverse sine.",
+  "options": [
+   "$\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}+y\\sqrt{1-x^2}\\right)$",
+   "$\\sin^{-1}\\!\\left(x\\sqrt{1-y^2}-y\\sqrt{1-x^2}\\right)$",
+   "$\\sin^{-1}(x+y)$",
+   "$\\sin^{-1}\\!\\left(xy+\\sqrt{1-x^2}\\sqrt{1-y^2}\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$A=\\sin^{-1}x,\\ B=\\sin^{-1}y;\\ \\cos(A+B)=\\sqrt{1-x^2}\\sqrt{1-y^2}-xy\\ge0;\\ \\sin(A+B)=x\\sqrt{1-y^2}+y\\sqrt{1-x^2};\\ A+B=\\sin^{-1}(\\sin(A+B))$.",
+  "distractor_notes": "B: uses the sine-difference sign; C: omits the cosine factors in the sine-addition formula; D: uses the cosine-difference identity."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

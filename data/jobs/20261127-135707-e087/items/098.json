@@ -1,0 +1,68 @@
+{
+ "qno": 98,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 98,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "multi-component series",
+  "brief": "Two interleaved alpha-numeric components (letters following a positional-value rule and numbers following separate arithmetic), ask for the next term combining both; add a twist like letters shifting by +2, -1 alternately to justify 4/5.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:86",
+   "2026s1:76",
+   "2023s2:79"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the next term: C7, E12, D17, F22, E27, ____",
+ "options": [
+  "G31",
+  "G32",
+  "F32",
+  "H32"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Letters follow +2, −1 alternately: C, E, D, F, E, G. Numbers increase by 5: 7, 12, 17, 22, 27, 32.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Letters alternate shifts of +2, −1: C→E→D→F→E→G. Numbers increase by 5: 27→32. Hence G32.\n\nIndependent check: Letters follow +2, −1 alternately: C, E, D, F, E, G. Numbers increase by 5: 7, 12, 17, 22, 27, 32.",
+ "solution": "The letters alternate shifts of $+2$ and $-1$: $C, E, D, F, E, G$. The numbers increase by $5$: $7, 12, 17, 22, 27, 32$. Hence, the next term is $G32$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Find the next term: C7, E12, D17, F22, E27, ____",
+  "options": [
+   "G32",
+   "G31",
+   "F32",
+   "H32"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Letters alternate shifts of +2, −1: C→E→D→F→E→G. Numbers increase by 5: 27→32. Hence G32.",
+  "distractor_notes": "B: Number is not increased by 5. C: Letter shift is incorrect. D: Letter shift is incorrect."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

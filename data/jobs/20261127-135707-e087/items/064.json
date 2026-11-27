@@ -1,0 +1,68 @@
+{
+ "qno": 64,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 64,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Disaccharides",
+  "archetype": "fact recall / test identification",
+  "brief": "Identify the glycosidic linkage and monosaccharide units of sucrose/maltose/lactose and which are reducing — mixed recall with a small reasoning element.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:52",
+   "2024s2:54",
+   "2022:35"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which option correctly matches a disaccharide with its glycosidic linkage, constituent monosaccharides and reducing character?",
+ "options": [
+  "Maltose: $\\beta(1\\to4)$, glucose + glucose, reducing.",
+  "Sucrose: $\\alpha(1\\to2)$, glucose + fructose, reducing.",
+  "Lactose: $\\beta(1\\to4)$, glucose + glucose, reducing.",
+  "Maltose: $\\alpha(1\\to4)$, glucose + glucose, reducing."
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Maltose consists of glucose + glucose linked α(1→4) and is reducing, so B is correct. Lactose contains galactose + glucose; sucrose is nonreducing.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Maltose has an $\\alpha(1\\to4)$ linkage between two glucose units; one anomeric carbon remains free $\\Rightarrow$ reducing.\n\nIndependent check: Maltose consists of glucose + glucose linked α(1→4) and is reducing, so B is correct. Lactose contains galactose + glucose; sucrose is nonreducing.",
+ "solution": "Maltose consists of two glucose units joined by an $\\alpha(1\\to4)$ glycosidic linkage. One anomeric carbon remains free, so maltose is reducing.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which option correctly matches a disaccharide with its glycosidic linkage, constituent monosaccharides and reducing character?",
+  "options": [
+   "Maltose: $\\beta(1\\to4)$, glucose + glucose, reducing.",
+   "Maltose: $\\alpha(1\\to4)$, glucose + glucose, reducing.",
+   "Lactose: $\\beta(1\\to4)$, glucose + glucose, reducing.",
+   "Sucrose: $\\alpha(1\\to2)$, glucose + fructose, reducing."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Maltose has an $\\alpha(1\\to4)$ linkage between two glucose units; one anomeric carbon remains free $\\Rightarrow$ reducing.",
+  "distractor_notes": "A: wrong anomeric linkage for maltose; C: lactose contains galactose, not two glucose units; D: sucrose is nonreducing."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

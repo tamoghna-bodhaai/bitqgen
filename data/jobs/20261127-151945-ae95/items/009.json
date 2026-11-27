@@ -1,0 +1,79 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Work in cyclic process (P–V diagram)",
+  "archetype": "area of P–V cycle",
+  "brief": "A rectangular cycle on a P–V diagram; find the net work done from the enclosed area.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:5",
+   "2021:15",
+   "2024s1:12"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf5c30fcb2888"
+ },
+ "status": "ok",
+ "stem": "A gas follows the rectangular cycle shown on the $P$–$V$ diagram. What is the net work done on the gas in one cycle?",
+ "options": [
+  "$450$ J",
+  "$-450$ J",
+  "$900$ J",
+  "$-900$ J"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q009_stem_v0.png",
+  "width_pct": 50,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The cycle is counterclockwise, so net work done by the gas is negative. The enclosed area is $(250-100)\\,\\text{kPa}\\times(5-2)\\,\\text{L}=450\\,\\text{J}$, using $1\\,\\text{kPa·L}=1\\,\\text{J}$. Thus work done on the gas is $+450\\,\\text{J}$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$W_{\\text{on}}=\\Delta P\\,\\Delta V$\n$=(250-100)(5-2)=450\\ \\text{kPa L}$\n$1\\ \\text{kPa L}=1\\ \\text{J}$\n$W_{\\text{on}}=450\\ \\text{J}$\n\nIndependent check: The cycle is counterclockwise, so net work done by the gas is negative. The enclosed area is $(250-100)\\,\\text{kPa}\\times(5-2)\\,\\text{L}=450\\,\\text{J}$, using $1\\,\\text{kPa·L}=1\\,\\text{J}$. Thus work done on the gas is $+450\\,\\text{J}$.",
+ "solution": "For a counterclockwise cycle, the net work done on the gas equals the area enclosed in the $P$–$V$ diagram.\n$$W_{\\text{on}}=(250-100)(5-2)=450\\ \\text{kPa·L}=450\\ \\text{J}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A gas follows the rectangular cycle shown on the $P$–$V$ diagram. What is the net work done on the gas in one cycle?",
+  "options": [
+   "$450$ J",
+   "$-450$ J",
+   "$900$ J",
+   "$-900$ J"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a $P$–$V$ graph with $V$ on the horizontal axis (in L) and $P$ on the vertical axis (in kPa). Mark vertical-axis levels $100$ and $250$, and horizontal-axis positions $2$ and $5$. Draw a rectangle with corners at $(2\\text{ L},100\\text{ kPa})$, $(2\\text{ L},250\\text{ kPa})$, $(5\\text{ L},250\\text{ kPa})$, and $(5\\text{ L},100\\text{ kPa})$. Add arrows around the rectangle in the order lower-left to lower-right to upper-right to upper-left and back to lower-left. Label the axes and their units.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$W_{\\text{on}}=\\Delta P\\,\\Delta V$\n$=(250-100)(5-2)=450\\ \\text{kPa L}$\n$1\\ \\text{kPa L}=1\\ \\text{J}$\n$W_{\\text{on}}=450\\ \\text{J}$",
+  "distractor_notes": "B: uses the sign for work done by the gas. C: doubles the enclosed area. D: doubles the area and uses the wrong sign."
+ },
+ "variant_of": "gf5c30fcb2888",
+ "author_model": "openai/gpt-6-luna-pro"
+}

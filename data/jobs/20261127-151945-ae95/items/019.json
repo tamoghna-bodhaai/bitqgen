@@ -1,0 +1,71 @@
+{
+ "qno": 19,
+ "section": "Physics",
+ "slot": {
+  "qno": 19,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Kepler's third law",
+  "archetype": "proportionality-scaling",
+  "brief": "Use T² ∝ a³ to find the orbital period (or semi-major axis) of a planet compared to that of Earth.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:5",
+   "2023s2:28",
+   "2025s2:24"
+  ],
+  "origin": "variant",
+  "bank_ref": "g63e371197592"
+ },
+ "status": "ok",
+ "stem": "A planet orbiting the Sun has a semi-major axis of $4$ AU. What is its orbital period in Earth years?",
+ "options": [
+  "$2$ years",
+  "$4$ years",
+  "$8$ years",
+  "$16$ years"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Kepler’s third law, P² = a³ in Earth years and AU. Thus P = √(4³) = 8 years.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{T^2}{T_E^2}=\\left(\\dfrac{a}{a_E}\\right)^3$; $T_E=1$ year, $a_E=1$ AU.\n$T^2=4^3=64\\ \\text{years}^2 \\Rightarrow T=8$ years.\n\nIndependent check: By Kepler’s third law, P² = a³ in Earth years and AU. Thus P = √(4³) = 8 years.",
+ "solution": "By Kepler’s third law, $T^2/T_E^2=(a/a_E)^3$. With $T_E=1$ year, $a_E=1$ AU, and $a=4$ AU,\n$$T^2=4^3=64 \\quad\\Rightarrow\\quad T=8\\text{ years}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A planet orbiting the Sun has a semi-major axis of $4$ AU. What is its orbital period in Earth years?",
+  "options": [
+   "$2$ years",
+   "$4$ years",
+   "$8$ years",
+   "$16$ years"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{T^2}{T_E^2}=\\left(\\dfrac{a}{a_E}\\right)^3$; $T_E=1$ year, $a_E=1$ AU.\n$T^2=4^3=64\\ \\text{years}^2 \\Rightarrow T=8$ years.",
+  "distractor_notes": "A: uses $T\\propto\\sqrt{a}$ instead of $T\\propto a^{3/2}$. B: assumes $T$ is directly proportional to $a$. D: assumes $T\\propto a^2$."
+ },
+ "variant_of": "g63e371197592",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,56 @@
+{
+ "qno": 33,
+ "section": "Physics",
+ "slot": {
+  "qno": 33,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Lorentz force direction",
+  "archetype": "conceptual",
+  "brief": "Charged particle enters a magnetic field with given velocity direction and field direction; ask the direction of the magnetic force (zero/along which axis) using the cross-product rule.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:6",
+   "2021:5",
+   "2023s2:1"
+  ],
+  "origin": "direct",
+  "bank_ref": "gfd18b89e33d0"
+ },
+ "status": "ok",
+ "stem": "A proton enters a uniform magnetic field directed vertically downwards with a horizontal velocity directed towards the east. The magnetic force acting on the proton is directed towards the:",
+ "options": [
+  "north, and its speed increases",
+  "north, and its speed remains constant",
+  "south, and its speed remains constant",
+  "south, and its speed decreases"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "qwen/qwen4-max",
+   "answer": "A",
+   "confidence": 0.99
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank gfd18b89e33d0 (verified in job 20261126-121908-0a65)"
+ ],
+ "working": "Let the horizontal east direction be along $+\\hat{i}$, north along $+\\hat{j}$, and vertically upward along $+\\hat{k}$.\n\nThe velocity of the proton is:\n$$\\vec{v} = v\\,\\hat{i}$$\n\nThe magnetic field is directed vertically downwards:\n$$\\vec{B} = -B\\,\\hat{k}$$\n\nThe magnetic Lorentz force on a charge $q = +e$ is:\n$$\\vec{F} = q(\\vec{v} \\times \\vec{B}) = e\\left(v\\,\\hat{i} \\times (-B\\,\\hat{k})\\right) = -e v B (-\\hat{j}) = e v B\\,\\hat{j}$$\n\n$+\\hat{j}$ corresponds to the north direction.\n\nSince the magnetic force is always perpendicular to the velocity ($\\vec{F} \\perp \\vec{v}$), the power delivered by the magnetic force is:\n$$P = \\vec{F} \\cdot \\vec{v} = 0$$\n\nBecause the work done is zero, the kinetic energy does not change, meaning the speed of the proton remains constant.\n\nIndependent check: Take east = x̂, north = ŷ, up = ẑ. F = qv×B = q(v x̂)×(−B ẑ) = qvB ŷ → north (verified numerically). Magnetic force is perpendicular to velocity, does no work, so speed stays constant.",
+ "solution": "For a positive charge, $[?]$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "gfd18b89e33d0",
+ "author_model": null
+}

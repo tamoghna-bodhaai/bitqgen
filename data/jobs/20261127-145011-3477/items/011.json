@@ -1,0 +1,71 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read-off parameters",
+  "brief": "Give a standard y(x,t) sinusoidal equation; ask for amplitude, wavelength, frequency or wave speed by comparing with the standard form.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:30",
+   "2025s1:19",
+   "2022:4"
+  ],
+  "origin": "variant",
+  "bank_ref": "gfc9f49c0f161"
+ },
+ "status": "ok",
+ "stem": "A transverse wave on a rope is described by $y(x,t)=0.04\\sin(2\\pi x-18\\pi t)$, where $x$ and $y$ are in m and $t$ is in s. What is its frequency?",
+ "options": [
+  "$3$ Hz",
+  "$6$ Hz",
+  "$18$ Hz",
+  "$9$ Hz"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Comparing with y=A sin(kx−ωt), ω=18π rad/s. Thus f=ω/(2π)=9 Hz.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\omega=18\\pi\\ \\text{rad s}^{-1}$\n$f=\\dfrac{\\omega}{2\\pi}=\\dfrac{18\\pi}{2\\pi}=9\\ \\text{Hz}$\n\nIndependent check: Comparing with y=A sin(kx−ωt), ω=18π rad/s. Thus f=ω/(2π)=9 Hz.",
+ "solution": "Comparing $y=0.04\\sin(2\\pi x-18\\pi t)$ with $y=A\\sin(kx-\\omega t)$, we get $\\omega=18\\pi\\,\\text{rad s}^{-1}$.\n$$f=\\frac{\\omega}{2\\pi}=\\frac{18\\pi}{2\\pi}=9\\,\\text{Hz}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A transverse wave on a rope is described by $y(x,t)=0.04\\sin(2\\pi x-18\\pi t)$, where $x$ and $y$ are in m and $t$ is in s. What is its frequency?",
+  "options": [
+   "$3$ Hz",
+   "$6$ Hz",
+   "$9$ Hz",
+   "$18$ Hz"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\omega=18\\pi\\ \\text{rad s}^{-1}$\n$f=\\dfrac{\\omega}{2\\pi}=\\dfrac{18\\pi}{2\\pi}=9\\ \\text{Hz}$",
+  "distractor_notes": "A: divides the angular frequency by $6\\pi$; B: divides by $3\\pi$; D: mistakes angular frequency in rad s$^{-1}$ for frequency in Hz."
+ },
+ "variant_of": "gfc9f49c0f161",
+ "author_model": "openai/gpt-6-luna-pro"
+}

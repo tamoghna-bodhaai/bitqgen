@@ -1,0 +1,68 @@
+{
+ "qno": 116,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 116,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Tangents and normals",
+  "archetype": "simplify then differentiate",
+  "brief": "Find the equation of the tangent (or normal) to a curve given implicitly or with an inverse trig form at a given point; moderate slope computation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:129",
+   "2024s2:120",
+   "2022:97"
+  ]
+ },
+ "status": "ok",
+ "stem": "The tangent to $y=\\tan^{-1}\\left(\\dfrac{2x}{1-x^2}\\right)$ at $x=\\dfrac12$ is",
+ "options": [
+  "$y-\\tan^{-1}\\left(\\dfrac43\\right)=-\\dfrac85\\left(x-\\dfrac12\\right)$",
+  "$y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac58\\left(x-\\dfrac12\\right)$",
+  "$y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac85\\left(x-\\dfrac12\\right)$",
+  "$y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac45\\left(x-\\dfrac12\\right)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At x=1/2, y=tan⁻¹(4/3). Differentiating gives y′ = [2(1+x²)/(1−x²)²]/[1+(2x/(1−x²))²], so y′(1/2)=8/5. The tangent is option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=\\dfrac{2x}{1-x^2},\\quad 1+u^2=\\dfrac{(1+x^2)^2}{(1-x^2)^2}$\n$\\dfrac{dy}{dx}=\\dfrac{u'}{1+u^2}=\\dfrac{2}{1+x^2}$; at $x=\\dfrac12$, $m=\\dfrac85$.\n$y=\\tan^{-1}\\left(\\dfrac43\\right)$, so $y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac85\\left(x-\\dfrac12\\right)$\n\nIndependent check: At x=1/2, y=tan⁻¹(4/3). Differentiating gives y′ = [2(1+x²)/(1−x²)²]/[1+(2x/(1−x²))²], so y′(1/2)=8/5. The tangent is option A.",
+ "solution": "Using $u=\\dfrac{2x}{1-x^2}$, we get $\\dfrac{dy}{dx}=\\dfrac{u'}{1+u^2}=\\dfrac{2}{1+x^2}$, so at $x=\\dfrac12$, the slope is $\\dfrac85$. Also, $y=\\tan^{-1}\\left(\\dfrac43\\right)$ there; hence the tangent is\n$$y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac85\\left(x-\\dfrac12\\right).$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The tangent to $y=\\tan^{-1}\\left(\\dfrac{2x}{1-x^2}\\right)$ at $x=\\dfrac12$ is",
+  "options": [
+   "$y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac85\\left(x-\\dfrac12\\right)$",
+   "$y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac58\\left(x-\\dfrac12\\right)$",
+   "$y-\\tan^{-1}\\left(\\dfrac43\\right)=-\\dfrac85\\left(x-\\dfrac12\\right)$",
+   "$y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac45\\left(x-\\dfrac12\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$u=\\dfrac{2x}{1-x^2},\\quad 1+u^2=\\dfrac{(1+x^2)^2}{(1-x^2)^2}$\n$\\dfrac{dy}{dx}=\\dfrac{u'}{1+u^2}=\\dfrac{2}{1+x^2}$; at $x=\\dfrac12$, $m=\\dfrac85$.\n$y=\\tan^{-1}\\left(\\dfrac43\\right)$, so $y-\\tan^{-1}\\left(\\dfrac43\\right)=\\dfrac85\\left(x-\\dfrac12\\right)$",
+  "distractor_notes": "B uses the reciprocal slope; C gives the slope the wrong sign; D misses a factor of $2$ in the slope."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

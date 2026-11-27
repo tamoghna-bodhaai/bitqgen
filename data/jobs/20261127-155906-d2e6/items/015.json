@@ -1,0 +1,70 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Mirror formula, magnification",
+  "archetype": "equation-solving numeric",
+  "brief": "Concave/convex mirror with an object and image condition linked by magnification (e.g. image is real, inverted and of given size ratio); solve mirror formula plus magnification equation for focal length and image distance.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:1",
+   "2023s2:13",
+   "2024s1:18"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A concave mirror forms real, inverted images. When an object is moved $8$ cm towards it, the image size changes from $3$ times to $5$ times the object size. What is the image distance in the second position?",
+ "options": [
+  "$240$ cm",
+  "$300$ cm",
+  "$360$ cm",
+  "$420$ cm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For magnification magnitudes 3 and 5, the object distances are respectively 4f/3 and 6f/5. Moving 8 cm toward the mirror gives 4f/3 − 6f/5 = 8, so f = 60 cm. In the second position, the image distance is 5(6f/5) = 360 cm.",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$m_1=3\\Rightarrow u_1=\\dfrac{4f}{3}$; $m_2=5\\Rightarrow u_2=\\dfrac{6f}{5}$. $u_1-u_2=8\\Rightarrow f=60$ cm; $v_2=5u_2=6f=360$ cm.\n\nIndependent check: For magnification magnitudes 3 and 5, the object distances are respectively 4f/3 and 6f/5. Moving 8 cm toward the mirror gives 4f/3 − 6f/5 = 8, so f = 60 cm. In the second position, the image distance is 5(6f/5) = 360 cm.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A concave mirror forms real, inverted images. When an object is moved $8$ cm towards it, the image size changes from $3$ times to $5$ times the object size. What is the image distance in the second position?",
+  "options": [
+   "$240$ cm",
+   "$300$ cm",
+   "$360$ cm",
+   "$420$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$m_1=3\\Rightarrow u_1=\\dfrac{4f}{3}$; $m_2=5\\Rightarrow u_2=\\dfrac{6f}{5}$. $u_1-u_2=8\\Rightarrow f=60$ cm; $v_2=5u_2=6f=360$ cm.",
+  "distractor_notes": "A: gives the first-position image distance; B: uses an incorrect relation between object distances and magnifications; D: overestimates the second image distance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

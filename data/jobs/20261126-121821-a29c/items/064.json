@@ -20,22 +20,22 @@
   ]
  },
  "status": "ok",
- "stem": "The manager praised the employee for her ______ attention to detail, which prevented several costly errors.",
+ "stem": "The librarian asked visitors to remain ______ so that other readers could study without disturbance.",
  "options": [
-  "meticulous",
-  "negligent",
-  "superficial",
-  "casual"
+  "narrow",
+  "generous",
+  "distant",
+  "silent"
  ],
- "answer": "A",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Context is praise for preventing costly errors, so the blank needs a word meaning careful and precise. 'Meticulous' fits; negligent, superficial, and casual all imply carelessness, contradicting the positive outcome.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Silent” means making no noise, which allows other readers to study without disturbance.",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The sentence indicates that the employee's quality earned praise and successfully prevented costly mistakes. Therefore, a positive word meaning very careful, precise, and thorough is required. 'Meticulous' means showing great attention to detail; very careful and precise, which perfectly completes the sentence. The other three words ('negligent', 'superficial', and 'casual') mean careless or lacking thoroughness, which directly contradicts the context.\n\nIndependent check: Context is praise for preventing costly errors, so the blank needs a word meaning careful and precise. 'Meticulous' fits; negligent, superficial, and casual all imply carelessness, contradicting the positive outcome.",
- "solution": "",
+ "working": "The request is to avoid disturbing readers, so visitors should remain silent. The other options do not describe the required behaviour.\n\nIndependent check: “Silent” means making no noise, which allows other readers to study without disturbance.",
+ "solution": "“Silent” means making no noise, allowing other readers to study without disturbance.",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "The manager praised the employee for her ______ attention to detail, which prevented several costly errors.",
+  "stem": "The librarian asked visitors to remain ______ so that other readers could study without disturbance.",
   "options": [
-   "meticulous",
-   "negligent",
-   "superficial",
-   "casual"
+   "silent",
+   "generous",
+   "distant",
+   "narrow"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "The sentence indicates that the employee's quality earned praise and successfully prevented costly mistakes. Therefore, a positive word meaning very careful, precise, and thorough is required. 'Meticulous' means showing great attention to detail; very careful and precise, which perfectly completes the sentence. The other three words ('negligent', 'superficial', and 'casual') mean careless or lacking thoroughness, which directly contradicts the context.",
-  "distractor_notes": "Option B ('negligent') means failing to take proper care; opposite of the required meaning.\nOption C ('superficial') means shallow or lacking depth and thoroughness.\nOption D ('casual') means unconcerned or lacking care, which does not fit receiving praise for preventing errors.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "The request is to avoid disturbing readers, so visitors should remain silent. The other options do not describe the required behaviour.",
+  "distractor_notes": "B: Describes willingness to give, not noise level. C: Describes physical separation. D: Describes limited width."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

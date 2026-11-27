@@ -1,0 +1,70 @@
+{
+ "qno": 77,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 77,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Gibbs energy and equilibrium constant",
+  "archetype": "equation-solving numeric",
+  "brief": "Given E°cell, compute ΔG° and Kc for the cell reaction using ΔG° = –nFE° = –RT ln K; two-step numeric.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:43",
+   "2025s1:55",
+   "2026s2:59"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A cell reaction transfers $2$ mol of electrons and has $E^\\circ_{\\text{cell}}=0.2955$ V at $298$ K. Take $F=96500$ C mol$^{-1}$ and $2.303RT/F=0.0591$ V. What are $\\Delta G^\\circ$ and $K$?",
+ "options": [
+  "$-28.5\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^5$",
+  "$+57.0\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^{-10}$",
+  "$-57.0\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^{10}$",
+  "$-57.0\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^{-10}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.2955)=-57.0\\,\\text{kJ mol}^{-1}\\). Also, \\(\\log_{10}K=nE^\\circ/0.0591=10\\), so \\(K=1.0\\times10^{10}\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta G^\\circ=-nFE^\\circ=-(2)(96500)(0.2955)=-57031.5\\ \\text{J mol}^{-1}=-57.0\\ \\text{kJ mol}^{-1}$\n$\\log_{10}K=\\dfrac{nE^\\circ}{0.0591}=\\dfrac{2(0.2955)}{0.0591}=10\\Rightarrow K=1.0\\times10^{10}$\n\nIndependent check: \\(\\Delta G^\\circ=-nFE^\\circ=-2(96500)(0.2955)=-57.0\\,\\text{kJ mol}^{-1}\\). Also, \\(\\log_{10}K=nE^\\circ/0.0591=10\\), so \\(K=1.0\\times10^{10}\\).",
+ "solution": "Using $\\Delta G^ circ=-nFE^ circ$,\n$$\\Delta G^\\circ=-(2)(96500)(0.2955)=-57.0\\ \\text{kJ mol}^{-1}$$\nAlso, $\\log_{10}K=nE^\\circ/0.0591=10$, hence $K=1.0\\times10^{10}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A cell reaction transfers $2$ mol of electrons and has $E^\\circ_{\\text{cell}}=0.2955$ V at $298$ K. Take $F=96500$ C mol$^{-1}$ and $2.303RT/F=0.0591$ V. What are $\\Delta G^\\circ$ and $K$?",
+  "options": [
+   "$-57.0\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^{10}$",
+   "$+57.0\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^{-10}$",
+   "$-28.5\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^5$",
+   "$-57.0\\ \\text{kJ mol}^{-1};\\ 1.0\\times10^{-10}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\Delta G^\\circ=-nFE^\\circ=-(2)(96500)(0.2955)=-57031.5\\ \\text{J mol}^{-1}=-57.0\\ \\text{kJ mol}^{-1}$\n$\\log_{10}K=\\dfrac{nE^\\circ}{0.0591}=\\dfrac{2(0.2955)}{0.0591}=10\\Rightarrow K=1.0\\times10^{10}$",
+  "distractor_notes": "B: reverses the signs in both relations; C: omits the electron-transfer factor $n$; D: takes the reciprocal of $K$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

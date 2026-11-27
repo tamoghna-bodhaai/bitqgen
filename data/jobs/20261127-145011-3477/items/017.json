@@ -1,0 +1,71 @@
+{
+ "qno": 17,
+ "section": "Physics",
+ "slot": {
+  "qno": 17,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Mirror formula, magnification",
+  "archetype": "two equations two unknowns",
+  "brief": "Concave mirror forms an image with given magnification (sign tells real/virtual); solve mirror formula plus magnification relation for object distance and focal length.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:7",
+   "2024s2:17",
+   "2022:1"
+  ],
+  "origin": "variant",
+  "bank_ref": "g2e4e2d9dd0f6"
+ },
+ "status": "ok",
+ "stem": "A concave mirror forms a virtual, upright image with magnification $+2$. The object and image positions are $18$ cm apart along the principal axis. What is the object’s distance from the mirror?",
+ "options": [
+  "$12$ cm",
+  "$9$ cm",
+  "$6$ cm",
+  "$18$ cm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a virtual upright image, the image distance is twice the object distance. Since they lie on opposite sides of the mirror, their separation is the sum: d + 2d = 18 cm, so d = 6 cm.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$m=-\\dfrac{v}{u}=+2$; let $u=-x$, so $v=2x$.\\n$x+2x=18\\ \\text{cm}\\Rightarrow x=6\\ \\text{cm}$.\\n$\\dfrac{1}{f}=\\dfrac{1}{u}+\\dfrac{1}{v}=-\\dfrac{1}{6}+\\dfrac{1}{12}=-\\dfrac{1}{12}\\ \\text{cm}^{-1}$\n\nIndependent check: For a virtual upright image, the image distance is twice the object distance. Since they lie on opposite sides of the mirror, their separation is the sum: d + 2d = 18 cm, so d = 6 cm.",
+ "solution": "For a virtual, upright image, $m=-\\dfrac{v}{u}=+2$. Let $u=-x$, so $v=2x$; the object and image are on opposite sides of the mirror.\n$$x+2x=18\\ \\text{cm}\\quad\\Rightarrow\\quad x=6\\ \\text{cm}$$\nThus, the object’s distance from the mirror is $6\\ \\text{cm}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A concave mirror forms a virtual, upright image with magnification $+2$. The object and image positions are $18$ cm apart along the principal axis. What is the object’s distance from the mirror?",
+  "options": [
+   "$6$ cm",
+   "$9$ cm",
+   "$12$ cm",
+   "$18$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$m=-\\dfrac{v}{u}=+2$; let $u=-x$, so $v=2x$.\\n$x+2x=18\\ \\text{cm}\\Rightarrow x=6\\ \\text{cm}$.\\n$\\dfrac{1}{f}=\\dfrac{1}{u}+\\dfrac{1}{v}=-\\dfrac{1}{6}+\\dfrac{1}{12}=-\\dfrac{1}{12}\\ \\text{cm}^{-1}$",
+  "distractor_notes": "B: assumes the object and image are equally distant from the mirror. C: gives the image distance instead of the object distance. D: reports the full object–image separation as the object distance."
+ },
+ "variant_of": "g2e4e2d9dd0f6",
+ "author_model": "openai/gpt-6-luna-pro"
+}

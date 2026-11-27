@@ -1,0 +1,71 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Line through intersection of lines",
+  "archetype": "family of lines",
+  "brief": "Find the equation of the line through the intersection point of two given lines and passing through an external point, using the family L1 + λL2 = 0.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:116",
+   "2022:111",
+   "2026s2:105"
+  ],
+  "origin": "variant",
+  "bank_ref": "gdb1c11c17744"
+ },
+ "status": "ok",
+ "stem": "The equation of the line through the intersection of $x+2y-8=0$ and $2x-y-1=0$, and the point $(5,1)$, is",
+ "options": [
+  "$2x+3y-13=0$",
+  "$2x-3y-7=0$",
+  "$3x+2y-17=0$",
+  "$x+2y-7=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Solving the two equations gives intersection (2,3). The line through (2,3) and (5,1) is 2x+3y-13=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The two lines intersect at $P=(2,3)$. The family is $(x+2y-8)+\\lambda(2x-y-1)=0$. Substituting $(5,1)$ gives $-1+8\\lambda=0$, so $\\lambda=\\dfrac{1}{8}$. Thus $8(x+2y-8)+(2x-y-1)=0$, or $2x+3y-13=0$.\n\nIndependent check: Solving the two equations gives intersection (2,3). The line through (2,3) and (5,1) is 2x+3y-13=0.",
+ "solution": "Solving the two equations gives their intersection $P=(2,3)$. The line through $P$ and $(5,1)$ is\n$$\\frac{x-2}{5-2}=\\frac{y-3}{1-3}\\quad\\Longrightarrow\\quad 2x+3y-13=0.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the line through the intersection of $x+2y-8=0$ and $2x-y-1=0$, and the point $(5,1)$, is",
+  "options": [
+   "$2x+3y-13=0$",
+   "$2x-3y-7=0$",
+   "$3x+2y-17=0$",
+   "$x+2y-7=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "The two lines intersect at $P=(2,3)$. The family is $(x+2y-8)+\\lambda(2x-y-1)=0$. Substituting $(5,1)$ gives $-1+8\\lambda=0$, so $\\lambda=\\dfrac{1}{8}$. Thus $8(x+2y-8)+(2x-y-1)=0$, or $2x+3y-13=0$.",
+  "distractor_notes": "B: slope sign error; C: uses the reciprocal slope; D: swaps the intersection coordinates."
+ },
+ "variant_of": "gdb1c11c17744",
+ "author_model": "openai/gpt-6-luna-pro"
+}

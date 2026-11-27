@@ -20,17 +20,17 @@
   ]
  },
  "status": "ok",
- "stem": "A Zener diode with a breakdown voltage of $6\\text{ V}$ is connected in series with a $300\\ \\Omega$ resistor across a $15\\text{ V}$ DC source, as shown in the figure. The current flowing through the Zener diode is:",
+ "stem": "An ideal Zener diode of breakdown voltage $8$ V is connected with an $800\\ \\Omega$ load and a $400\\ \\Omega$ series resistor across an $18$ V supply, as shown in the figure. Its power dissipation is",
  "options": [
-  "$20\\text{ mA}$",
-  "$30\\text{ mA}$",
-  "$50\\text{ mA}$",
-  "$70\\text{ mA}$"
+  "$80\\ \\text{mW}$",
+  "$280\\ \\text{mW}$",
+  "$200\\ \\text{mW}$",
+  "$120\\ \\text{mW}$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": {
   "path": "figs/q001_stem_v0.png",
-  "width_pct": 55,
+  "width_pct": 60,
   "kind": "circuit"
  },
  "option_figs": null,
@@ -38,38 +38,41 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Zener is reverse-biased and in breakdown, so it holds 6 V. Voltage across R = 15 − 6 = 9 V. Series current I = 9/300 = 0.03 A = 30 mA, which is also the Zener current since there is no load branch.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With the Zener in breakdown, the output is 8 V. The series current is (18−8)/400 = 25 mA; the load current is 8/800 = 10 mA. Thus the Zener current is 15 mA and its power is 8 × 15 mA = 120 mW.",
    "answer": "B",
-   "confidence": 0.97,
+   "confidence": 0.94,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
   }
  ],
  "attempts": 1,
- "notes": [],
- "working": "Since the applied DC supply voltage ($V = 15\\text{ V}$) is greater than the breakdown voltage ($V_Z = 6\\text{ V}$), the Zener diode operates in the reverse breakdown region.\\n\\nThe potential difference across the series resistor $R$ is:\\n$$V_R = V - V_Z = 15\\text{ V} - 6\\text{ V} = 9\\text{ V}$$\\n\\nSince the circuit is a single series loop, the current through the Zener diode equals the current through the resistor:\\n$$I_Z = \\dfrac{V_R}{R} = \\dfrac{9\\text{ V}}{300\\ \\Omega} = 0.03\\text{ A} = 30\\text{ mA}$$\n\nIndependent check: Zener is reverse-biased and in breakdown, so it holds 6 V. Voltage across R = 15 − 6 = 9 V. Series current I = 9/300 = 0.03 A = 30 mA, which is also the Zener current since there is no load branch.",
- "solution": "",
+ "notes": [
+  "figure check: The Zener diode is reversed: its cathode (the bar/hook end of the symbol) is drawn at the bottom toward the common return instead of at the output node, contradicting the brief (cathode at output node, anode at bottom).; The Zener diode label is missing the breakdown voltage: it is labeled only 'Zener' with no '8 V' value.; The output node label V_out is present but the bottom common-return 'Zener/common' labels overlap the wire/nodes slightly; 'Zener' text sits on the bottom wire."
+ ],
+ "working": "$V_o=V_Z=8\\text{ V}$\n$I_s=\\dfrac{18-8}{400}=25\\text{ mA}$\n$I_L=\\dfrac{8}{800}=10\\text{ mA}$\n$I_Z=I_s-I_L=15\\text{ mA}$\n$P_Z=V_ZI_Z=8(15\\text{ mA})=120\\text{ mW}$\n\nIndependent check: With the Zener in breakdown, the output is 8 V. The series current is (18−8)/400 = 25 mA; the load current is 8/800 = 10 mA. Thus the Zener current is 15 mA and its power is 8 × 15 mA = 120 mW.",
+ "solution": "In breakdown, $V_o=V_Z=8\\text{ V}$. The series and load currents are\n$$I_s=\\frac{18-8}{400}=25\\text{ mA},\\qquad I_L=\\frac{8}{800}=10\\text{ mA}.$$\nHence $I_Z=I_s-I_L=15\\text{ mA}$, so $P_Z=V_ZI_Z=8(15\\text{ mA})=120\\text{ mW}$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A Zener diode with a breakdown voltage of $6\\text{ V}$ is connected in series with a $300\\ \\Omega$ resistor across a $15\\text{ V}$ DC source, as shown in the figure. The current flowing through the Zener diode is:",
+  "stem": "An ideal Zener diode of breakdown voltage $8$ V is connected with an $800\\ \\Omega$ load and a $400\\ \\Omega$ series resistor across an $18$ V supply, as shown in the figure. Its power dissipation is",
   "options": [
-   "$20\\text{ mA}$",
-   "$30\\text{ mA}$",
-   "$50\\text{ mA}$",
-   "$70\\text{ mA}$"
+   "$80\\ \\text{mW}$",
+   "$120\\ \\text{mW}$",
+   "$200\\ \\text{mW}$",
+   "$280\\ \\text{mW}$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "Since the applied DC supply voltage ($V = 15\\text{ V}$) is greater than the breakdown voltage ($V_Z = 6\\text{ V}$), the Zener diode operates in the reverse breakdown region.\\n\\nThe potential difference across the series resistor $R$ is:\\n$$V_R = V - V_Z = 15\\text{ V} - 6\\text{ V} = 9\\text{ V}$$\\n\\nSince the circuit is a single series loop, the current through the Zener diode equals the current through the resistor:\\n$$I_Z = \\dfrac{V_R}{R} = \\dfrac{9\\text{ V}}{300\\ \\Omega} = 0.03\\text{ A} = 30\\text{ mA}$$",
-  "distractor_notes": "$20\\text{ mA}$ comes from mistakenly taking the voltage across the resistor to be $V_Z$ ($6/300 = 20\\text{ mA}$).\\n$50\\text{ mA}$ comes from neglecting the Zener voltage drop altogether ($15/300 = 50\\text{ mA}$).\\n$70\\text{ mA}$ comes from a sign error, adding $V_Z$ to the supply voltage ($(15 + 6)/300 = 70\\text{ mA}$).",
   "figure": {
    "kind": "circuit",
-   "description": "A single rectangular loop circuit. On the left vertical branch is a DC voltage source labeled '$15\\text{ V}$' with the positive terminal (long line) on top and negative terminal (short line) at the bottom. On the top horizontal branch is a resistor labeled '$R = 300\\ \\Omega$'. On the right vertical branch is a Zener diode connected in reverse bias: the cathode (horizontal line with bent ends forming a Z shape) is at the top connected to the top branch, and the triangular anode points downward, connected to the bottom branch. The diode is labeled '$V_Z = 6\\text{ V}$'. The bottom branch is a continuous straight wire completing the loop.",
+   "description": "Draw an $18$ V DC source on the left, with its positive terminal at the top and negative terminal connected to a bottom common return wire. From the positive terminal, draw a $400\\ \\Omega$ resistor in series to an output node. From the output node to the bottom return wire, draw two parallel branches: one branch contains an $800\\ \\Omega$ load resistor; the other contains an ideal Zener diode with breakdown voltage $8$ V, with its cathode connected to the output node and its anode connected to the bottom return. Label the source, series resistor, load resistor, Zener diode, output node, and common return.",
    "smiles": null
   },
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$V_o=V_Z=8\\text{ V}$\n$I_s=\\dfrac{18-8}{400}=25\\text{ mA}$\n$I_L=\\dfrac{8}{800}=10\\text{ mA}$\n$I_Z=I_s-I_L=15\\text{ mA}$\n$P_Z=V_ZI_Z=8(15\\text{ mA})=120\\text{ mW}$",
+  "distractor_notes": "A: Reports the load's power instead of the Zener's. C: Uses the total series current as the Zener current. D: Adds the load current instead of subtracting it from the series current."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

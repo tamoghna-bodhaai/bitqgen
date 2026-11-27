@@ -1,0 +1,68 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Term independent of x",
+  "archetype": "general term exponent matching",
+  "brief": "Find a specific term (or term independent of x) in a binomial expansion by equating exponents in the general term.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:130",
+   "2024s1:117",
+   "2026s1:103"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the term independent of $x$ in $\\left(1+x\\right)^8\\left(2x^2-\\dfrac{1}{x^3}\\right)^6$.",
+ "options": [
+  "$-8900$",
+  "$-8960$",
+  "$-9020$",
+  "$60$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The powers match zero when k + 12 − 5j = 0, giving (j,k) = (3,3) and (4,8). The constant term is −C(6,3)·2³·C(8,3) + C(6,4)·2²·C(8,8) = −8960 + 60 = −8900.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Choose $r$ factors of $-x^{-3}$ in the second binomial; its exponent is $12-5r$. The first factor must contribute $x^j$ with $j=5r-12$, where $0\\le j\\le8$; hence $r=3,4$. Contributions: $r=3$: $\\binom{6}{3}2^3(-1)^3\\binom{8}{3}=-8960$; $r=4$: $\\binom{6}{4}2^2\\binom{8}{8}=60$. Sum $=-8900$.\n\nIndependent check: The powers match zero when k + 12 − 5j = 0, giving (j,k) = (3,3) and (4,8). The constant term is −C(6,3)·2³·C(8,3) + C(6,4)·2²·C(8,8) = −8960 + 60 = −8900.",
+ "solution": "Choosing $r$ factors of $-x^{-3}$ gives exponent $12-5r$, so the first factor must contribute $x^{5r-12}$. Valid values are $r=3,4$.\n$$\\binom{6}{3}2^3(-1)^3\\binom{8}{3}+\\binom{6}{4}2^2\\binom{8}{8}=-8960+60=-8900$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Find the term independent of $x$ in $\\left(1+x\\right)^8\\left(2x^2-\\dfrac{1}{x^3}\\right)^6$.",
+  "options": [
+   "$-9020$",
+   "$-8960$",
+   "$-8900$",
+   "$60$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Choose $r$ factors of $-x^{-3}$ in the second binomial; its exponent is $12-5r$. The first factor must contribute $x^j$ with $j=5r-12$, where $0\\le j\\le8$; hence $r=3,4$. Contributions: $r=3$: $\\binom{6}{3}2^3(-1)^3\\binom{8}{3}=-8960$; $r=4$: $\\binom{6}{4}2^2\\binom{8}{8}=60$. Sum $=-8900$.",
+  "distractor_notes": "A: reverse the sign of the $r=4$ contribution; B: omit the $r=4$ contribution; D: omit the $r=3$ contribution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

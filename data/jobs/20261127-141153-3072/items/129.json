@@ -1,0 +1,68 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by substitution",
+  "archetype": "substitution integral",
+  "brief": "Definite integral where a substitution like x = a sinθ or t = √x collapses it; easy once the right substitution is spotted.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:125",
+   "2024s2:122",
+   "2021:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^1\\frac{dx}{1+\\sqrt{x}}$.",
+ "options": [
+  "$2\\ln 2$",
+  "$2-\\ln 2$",
+  "$\\ln 2$",
+  "$2-2\\ln 2$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let t=√x, so dx=2t dt. Then ∫₀¹ 2t/(1+t) dt = 2−2 ln 2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$t=\\sqrt{x},\\quad dx=2t\\,dt$$\n$$\\int_0^1\\frac{dx}{1+\\sqrt{x}}=2\\int_0^1\\frac{t}{1+t}\\,dt=2[t-\\ln(1+t)]_0^1=2-2\\ln 2$$\n\nIndependent check: Let t=√x, so dx=2t dt. Then ∫₀¹ 2t/(1+t) dt = 2−2 ln 2.",
+ "solution": "Let $t=\\sqrt{x}$, so $x=t^2$ and $dx=2t\\,dt$.\n$$\\int_0^1\\frac{dx}{1+\\sqrt{x}}=2\\int_0^1\\frac{t}{1+t}\\,dt=2[t-\\ln(1+t)]_0^1=2-2\\ln 2$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^1\\frac{dx}{1+\\sqrt{x}}$.",
+  "options": [
+   "$2-2\\ln 2$",
+   "$2-\\ln 2$",
+   "$\\ln 2$",
+   "$2\\ln 2$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$t=\\sqrt{x},\\quad dx=2t\\,dt$$\n$$\\int_0^1\\frac{dx}{1+\\sqrt{x}}=2\\int_0^1\\frac{t}{1+t}\\,dt=2[t-\\ln(1+t)]_0^1=2-2\\ln 2$$",
+  "distractor_notes": "B: loses a factor of $2$ on substitution; C: omits the non-logarithmic term; D: integrates $1/(1+t)$ instead of $t/(1+t)$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

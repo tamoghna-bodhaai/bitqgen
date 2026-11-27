@@ -1,0 +1,70 @@
+{
+ "qno": 56,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 56,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Bond order and bond length (resonance)",
+  "archetype": "ordering",
+  "brief": "Arrange given species by bond length or bond order using resonance/MOT logic (e.g. CO, CO2, carbonate, or NO series); choose the correct order with reasoning on bond order.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:56",
+   "2024s1:35",
+   "2026s2:50"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which sequence gives increasing C–O bond length in the indicated species?",
+ "options": [
+  "$\\text{CO} < \\text{CO}_2 < \\text{CO}_3^{2-}$",
+  "$\\text{CO}_3^{2-} < \\text{CO}_2 < \\text{CO}$",
+  "$\\text{CO}_2 < \\text{CO} < \\text{CO}_3^{2-}$",
+  "$\\text{CO} < \\text{CO}_3^{2-} < \\text{CO}_2$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Higher C–O bond order gives a shorter bond: CO (about 3) < CO₂ (2) < CO₃²⁻ (average 1⅓). Thus bond lengths increase in the order CO < CO₂ < CO₃²⁻.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "C–O bond orders: $\\text{CO}=3$, $\\text{CO}_2=2$, and each carbonate C–O bond has average order $\\dfrac{4}{3}$; bond length increases as bond order decreases.\n\nIndependent check: Higher C–O bond order gives a shorter bond: CO (about 3) < CO₂ (2) < CO₃²⁻ (average 1⅓). Thus bond lengths increase in the order CO < CO₂ < CO₃²⁻.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which sequence gives increasing C–O bond length in the indicated species?",
+  "options": [
+   "$\\text{CO} < \\text{CO}_2 < \\text{CO}_3^{2-}$",
+   "$\\text{CO}_3^{2-} < \\text{CO}_2 < \\text{CO}$",
+   "$\\text{CO}_2 < \\text{CO} < \\text{CO}_3^{2-}$",
+   "$\\text{CO} < \\text{CO}_3^{2-} < \\text{CO}_2$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "C–O bond orders: $\\text{CO}=3$, $\\text{CO}_2=2$, and each carbonate C–O bond has average order $\\dfrac{4}{3}$; bond length increases as bond order decreases.",
+  "distractor_notes": "B: ranks bond length in the same direction as bond order; C: reverses the CO/CO₂ comparison; D: treats carbonate bonds as shorter than C=O bonds."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

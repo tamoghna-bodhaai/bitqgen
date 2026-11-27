@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "The coordinates of the focus of the parabola represented by the equation $5(x^2 + y^2 - 2x + 4y + 5) = (2x - y + 3)^2$ are",
+ "stem": "The focus of the parabola $(3x+4y)^2=100(4x-3y)$ is",
  "options": [
-  "$(-1, 2)$",
-  "$(1, -2)$",
-  "$(1, 2)$",
-  "$(2, -1)$"
+  "$(4,-3)$",
+  "$(-4,3)$",
+  "$(3,4)$",
+  "$(4,3)$"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Rewrite x²+y²−2x+4y+5 = (x−1)²+(y+2)². Then (x−1)²+(y+2)² = (2x−y+3)²/5, i.e. distance from (1,−2) equals |2x−y+3|/√5 = distance to line 2x−y+3=0. Since √(2²+1²)=√5 and (1,−2) is not on the line (2·1+2+3=7≠0), this is a parabola with focus (1,−2). Numeric check: at x=0, point (0,−0.6883) has equal distances 1.6494 to focus and line; conic discriminant B²−4AC=0 confirms parabola.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set u=(4x−3y)/5 and v=(3x+4y)/5. Then v²=20u, whose focus is (u,v)=(5,0). Transforming back gives (x,y)=(4,−3).",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The given equation is\n$$5(x^2 + y^2 - 2x + 4y + 5) = (2x - y + 3)^2$$\nDividing both sides by $5$:\n$$(x^2 - 2x + 1) + (y^2 + 4y + 4) = \\dfrac{(2x - y + 3)^2}{5}$$\n$$(x - 1)^2 + (y + 2)^2 = \\left(\\dfrac{2x - y + 3}{\\sqrt{2^2 + (-1)^2}}\\right)^2$$\nTaking the square root of both sides:\n$$\\sqrt{(x - 1)^2 + (y + 2)^2} = \\dfrac{|2x - y + 3|}{\\sqrt{2^2 + (-1)^2}}$$\nThis is of the form $SP = PM$, which is the focus-directrix definition of a parabola (eccentricity $e = 1$). Here, $S(1, -2)$ is the focus and the line $2x - y + 3 = 0$ is the directrix.\nHence, the coordinates of the focus are $(1, -2)$.\n\nIndependent check: Rewrite x²+y²−2x+4y+5 = (x−1)²+(y+2)². Then (x−1)²+(y+2)² = (2x−y+3)²/5, i.e. distance from (1,−2) equals |2x−y+3|/√5 = distance to line 2x−y+3=0. Since √(2²+1²)=√5 and (1,−2) is not on the line (2·1+2+3=7≠0), this is a parabola with focus (1,−2). Numeric check: at x=0, point (0,−0.6883) has equal distances 1.6494 to focus and line; conic discriminant B²−4AC=0 confirms parabola.",
+ "working": "Set $X=\\dfrac{3x+4y}{5}$ and $Y=\\dfrac{4x-3y}{5}$; these are orthogonal coordinates.\nThe equation becomes $X^2=20Y$, so $4p=20$ and $p=5$.\nThe focus in $(X,Y)$ coordinates is $(0,5)$.\nUsing $x=\\dfrac{3X+4Y}{5}$ and $y=\\dfrac{4X-3Y}{5}$ gives the focus $(4,-3)$.\n\nIndependent check: Set u=(4x−3y)/5 and v=(3x+4y)/5. Then v²=20u, whose focus is (u,v)=(5,0). Transforming back gives (x,y)=(4,−3).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The coordinates of the focus of the parabola represented by the equation $5(x^2 + y^2 - 2x + 4y + 5) = (2x - y + 3)^2$ are",
+  "stem": "The focus of the parabola $(3x+4y)^2=100(4x-3y)$ is",
   "options": [
-   "$(-1, 2)$",
-   "$(1, -2)$",
-   "$(1, 2)$",
-   "$(2, -1)$"
+   "$(4,-3)$",
+   "$(-4,3)$",
+   "$(3,4)$",
+   "$(4,3)$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The given equation is\n$$5(x^2 + y^2 - 2x + 4y + 5) = (2x - y + 3)^2$$\nDividing both sides by $5$:\n$$(x^2 - 2x + 1) + (y^2 + 4y + 4) = \\dfrac{(2x - y + 3)^2}{5}$$\n$$(x - 1)^2 + (y + 2)^2 = \\left(\\dfrac{2x - y + 3}{\\sqrt{2^2 + (-1)^2}}\\right)^2$$\nTaking the square root of both sides:\n$$\\sqrt{(x - 1)^2 + (y + 2)^2} = \\dfrac{|2x - y + 3|}{\\sqrt{2^2 + (-1)^2}}$$\nThis is of the form $SP = PM$, which is the focus-directrix definition of a parabola (eccentricity $e = 1$). Here, $S(1, -2)$ is the focus and the line $2x - y + 3 = 0$ is the directrix.\nHence, the coordinates of the focus are $(1, -2)$.",
-  "distractor_notes": "Option A encodes taking $(g, f)$ instead of $(-g, -f)$ when completing the square from $-2x + 4y$.\nOption C encodes a sign error on the $y$-coordinate when writing $(y + 2)^2 = (y - (-2))^2$.\nOption D encodes mistaking the coefficients of $x$ and $y$ from the directrix equation $2x - y + 3 = 0$ for the focus coordinates.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "Set $X=\\dfrac{3x+4y}{5}$ and $Y=\\dfrac{4x-3y}{5}$; these are orthogonal coordinates.\nThe equation becomes $X^2=20Y$, so $4p=20$ and $p=5$.\nThe focus in $(X,Y)$ coordinates is $(0,5)$.\nUsing $x=\\dfrac{3X+4Y}{5}$ and $y=\\dfrac{4X-3Y}{5}$ gives the focus $(4,-3)$.",
+  "distractor_notes": "B: reverses the direction from the vertex to the focus; C: confuses the axis direction with the focus coordinates; D: sign error in the $y$-coordinate when transforming back."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

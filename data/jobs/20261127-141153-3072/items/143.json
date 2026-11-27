@@ -1,0 +1,68 @@
+{
+ "qno": 143,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 143,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Increasing and decreasing functions",
+  "archetype": "sign of derivative",
+  "brief": "Find the interval on which a simple polynomial or basic function is increasing; compute f′(x) and check sign — very easy.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:104",
+   "2024s1:130",
+   "2026s1:123"
+  ]
+ },
+ "status": "ok",
+ "stem": "The largest interval on which $f(x)=x^2+2x$ is increasing is",
+ "options": [
+  "$(-\\infty,-1]$",
+  "$(-1,\\infty)$",
+  "$[-1,\\infty)$",
+  "$\\mathbb{R}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "f'(x)=2x+2, which is nonnegative for x≥−1; hence f is increasing on the largest interval [−1,∞).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f'(x)=2x+2$\n$f'(x)\\geq 0$ for $x\\geq -1$\nThus $f$ is increasing on $[-1,\\infty)$\n\nIndependent check: f'(x)=2x+2, which is nonnegative for x≥−1; hence f is increasing on the largest interval [−1,∞).",
+ "solution": "For an increasing interval, require $f'(x)\\geq 0$. Since\n$$f'(x)=2x+2\\geq 0 \\iff x\\geq -1,$$\n$f$ is increasing on the largest interval $[-1,\\infty)$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The largest interval on which $f(x)=x^2+2x$ is increasing is",
+  "options": [
+   "$(-\\infty,-1]$",
+   "$[-1,\\infty)$",
+   "$(-1,\\infty)$",
+   "$\\mathbb{R}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$f'(x)=2x+2$\n$f'(x)\\geq 0$ for $x\\geq -1$\nThus $f$ is increasing on $[-1,\\infty)$",
+  "distractor_notes": "A selects the decreasing interval; C omits the valid endpoint; D assumes the function increases on both sides of its minimum."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

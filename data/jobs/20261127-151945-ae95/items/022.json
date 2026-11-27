@@ -1,0 +1,71 @@
+{
+ "qno": 22,
+ "section": "Physics",
+ "slot": {
+  "qno": 22,
+  "section": "Physics",
+  "chapter": "Electromagnetic Induction",
+  "subtopic": "Magnetic flux",
+  "archetype": "differentiate-and-substitute",
+  "brief": "Given magnetic flux through a coil varying with time as a polynomial, use Faraday's law to find the induced emf at a given instant.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:9",
+   "2023s1:30",
+   "2022:30"
+  ],
+  "origin": "variant",
+  "bank_ref": "gb95326de0c6a"
+ },
+ "status": "ok",
+ "stem": "The magnetic flux through each turn of a $4$-turn coil varies as $\\bigl(2t^2-3t+5\\bigr)$ mWb, where $t$ is in seconds. The magnitude of the induced emf at $t=2$ s is",
+ "options": [
+  "$20$ mV",
+  "$10$ mV",
+  "$5$ mV",
+  "$40$ mV"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Faraday’s law, |ε| = N|dΦ/dt|. At t = 2 s, dΦ/dt = (4t − 3) = 5 mWb/s, so |ε| = 4 × 5 = 20 mV.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$e=-N\\dfrac{d\\Phi}{dt}$\n$\\left|e\\right|=4\\left|(4t-3)\\right|_{t=2}\\text{ mWb s}^{-1}$\n$=4(5)\\text{ mV}=20\\text{ mV}$\n\nIndependent check: By Faraday’s law, |ε| = N|dΦ/dt|. At t = 2 s, dΦ/dt = (4t − 3) = 5 mWb/s, so |ε| = 4 × 5 = 20 mV.",
+ "solution": "By Faraday’s law, $|e|=N\\left|\\dfrac{d\\Phi}{dt}\\right|$. Since $\\dfrac{d\\Phi}{dt}=4t-3$, at $t=2\\,\\text{s}$:\n$$|e|=4|4(2)-3|\\,\\text{mWb s}^{-1}=20\\,\\text{mV}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The magnetic flux through each turn of a $4$-turn coil varies as $\\bigl(2t^2-3t+5\\bigr)$ mWb, where $t$ is in seconds. The magnitude of the induced emf at $t=2$ s is",
+  "options": [
+   "$5$ mV",
+   "$10$ mV",
+   "$20$ mV",
+   "$40$ mV"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$e=-N\\dfrac{d\\Phi}{dt}$\n$\\left|e\\right|=4\\left|(4t-3)\\right|_{t=2}\\text{ mWb s}^{-1}$\n$=4(5)\\text{ mV}=20\\text{ mV}$",
+  "distractor_notes": "A: Omits the number of turns. B: Uses an incorrect derivative or applies the turn factor incorrectly. D: Doubles the derivative, losing a factor in differentiating $t^2$."
+ },
+ "variant_of": "gb95326de0c6a",
+ "author_model": "openai/gpt-6-luna-pro"
+}

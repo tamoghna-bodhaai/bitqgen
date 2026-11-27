@@ -1,0 +1,68 @@
+{
+ "qno": 71,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 71,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Bond order and bond length (resonance)",
+  "archetype": "ordering",
+  "brief": "Rank C–O bond lengths / bond orders in species like CO, CO2, CO3^2−, HCOOH using resonance structures and formal bond order counting.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:50",
+   "2025s1:38",
+   "2024s2:33"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the indicated C–O bonds in increasing order of bond length: in $\\text{CO}$, $\\text{CO}_2$, $\\text{HCOO}^-$ and $\\text{CO}_3^{2-}$.",
+ "options": [
+  "$\\text{CO}_2 < \\text{CO} < \\text{HCOO}^- < \\text{CO}_3^{2-}$",
+  "$\\text{CO} < \\text{CO}_2 < \\text{HCOO}^- < \\text{CO}_3^{2-}$",
+  "$\\text{CO} < \\text{CO}_2 < \\text{CO}_3^{2-} < \\text{HCOO}^-$",
+  "$\\text{HCOO}^- < \\text{CO}_3^{2-} < \\text{CO}_2 < \\text{CO}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Bond orders decrease in the sequence CO (3), CO₂ (2), HCOO⁻ (1.5 average), CO₃²⁻ (4/3 average); lower bond order corresponds to greater bond length.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Average C–O bond orders: $\\text{CO}=3$, $\\text{CO}_2=2$, $\\text{HCOO}^-=1.5$, $\\text{CO}_3^{2-}=4/3$.\\nBond length increases as bond order decreases.\\nThus: $\\text{CO} < \\text{CO}_2 < \\text{HCOO}^- < \\text{CO}_3^{2-}$.\n\nIndependent check: Bond orders decrease in the sequence CO (3), CO₂ (2), HCOO⁻ (1.5 average), CO₃²⁻ (4/3 average); lower bond order corresponds to greater bond length.",
+ "solution": "Bond length decreases as bond order increases. The average C–O bond orders are $3$ in CO, $2$ in CO₂, $1.5$ in HCOO⁻ and $4/3$ in CO₃²⁻.\nHence, in increasing order of bond length: $\\text{CO} < \\text{CO}_2 < \\text{HCOO}^- < \\text{CO}_3^{2-}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange the indicated C–O bonds in increasing order of bond length: in $\\text{CO}$, $\\text{CO}_2$, $\\text{HCOO}^-$ and $\\text{CO}_3^{2-}$.",
+  "options": [
+   "$\\text{CO} < \\text{CO}_2 < \\text{HCOO}^- < \\text{CO}_3^{2-}$",
+   "$\\text{CO}_2 < \\text{CO} < \\text{HCOO}^- < \\text{CO}_3^{2-}$",
+   "$\\text{CO} < \\text{CO}_2 < \\text{CO}_3^{2-} < \\text{HCOO}^-$",
+   "$\\text{HCOO}^- < \\text{CO}_3^{2-} < \\text{CO}_2 < \\text{CO}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Average C–O bond orders: $\\text{CO}=3$, $\\text{CO}_2=2$, $\\text{HCOO}^-=1.5$, $\\text{CO}_3^{2-}=4/3$.\\nBond length increases as bond order decreases.\\nThus: $\\text{CO} < \\text{CO}_2 < \\text{HCOO}^- < \\text{CO}_3^{2-}$.",
+  "distractor_notes": "B: Reverses the relative bond lengths of CO and CO₂.\nC: Reverses the relative bond lengths of formate and carbonate.\nD: Orders the species largely by bond length in the opposite direction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

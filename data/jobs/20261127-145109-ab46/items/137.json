@@ -1,0 +1,70 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Perpendicular distance from point to line",
+  "archetype": "foot of perpendicular",
+  "brief": "3D line in vector/cartesian form and an external point; find the coordinates of the foot of the perpendicular and the shortest distance from the point to the line.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:126",
+   "2026s1:118",
+   "2025s1:93"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The line $(x,y,z)=(1,0,1)+t(1,2,2)$ and the point $P(5,3,5)$ are given. Find the foot of the perpendicular from $P$ to the line and the shortest distance, respectively.",
+ "options": [
+  "$(5,3,5),\\ 0$",
+  "$(3,4,5),\\ 5$",
+  "$(1,0,1),\\ \\sqrt{41}$",
+  "$(3,4,5),\\ \\sqrt5$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For direction vector v=(1,2,2) and P−a=(4,3,4), t=((P−a)·v)/(v·v)=18/9=2. Thus the foot is (3,4,5), and the distance is √((2)^2+(-1)^2)=√5.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mathbf v=(1,2,2),\\quad P-A=(4,3,4)$; $t=\\dfrac{(P-A)\\cdot\\mathbf v}{|\\mathbf v|^2}=\\dfrac{18}{9}=2$; $N=A+2\\mathbf v=(3,4,5)$; $|P-N|=|(2,-1,0)|=\\sqrt5$.\n\nIndependent check: For direction vector v=(1,2,2) and P−a=(4,3,4), t=((P−a)·v)/(v·v)=18/9=2. Thus the foot is (3,4,5), and the distance is √((2)^2+(-1)^2)=√5.",
+ "solution": "For line point $A=(1,0,1)$ and direction $v=(1,2,2)$, the perpendicular foot is $N=A+tv$, where $t=\\dfrac{(P-A)\\cdotv}{|v|^2}=\\dfrac{18}{9}=2$.\nThus $N=(1,0,1)+2(1,2,2)=(3,4,5)$, and $PN=\\sqrt{(5-3)^2+(3-4)^2+(5-5)^2}=\\sqrt5$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The line $(x,y,z)=(1,0,1)+t(1,2,2)$ and the point $P(5,3,5)$ are given. Find the foot of the perpendicular from $P$ to the line and the shortest distance, respectively.",
+  "options": [
+   "$(3,4,5),\\ \\sqrt5$",
+   "$(3,4,5),\\ 5$",
+   "$(1,0,1),\\ \\sqrt{41}$",
+   "$(5,3,5),\\ 0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\mathbf v=(1,2,2),\\quad P-A=(4,3,4)$; $t=\\dfrac{(P-A)\\cdot\\mathbf v}{|\\mathbf v|^2}=\\dfrac{18}{9}=2$; $N=A+2\\mathbf v=(3,4,5)$; $|P-N|=|(2,-1,0)|=\\sqrt5$.",
+  "distractor_notes": "B: reports the squared distance; C: takes the line's given point as the foot; D: treats the external point as lying on the line."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

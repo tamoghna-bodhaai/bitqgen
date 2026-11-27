@@ -1,0 +1,70 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power bookkeeping",
+  "brief": "Given a small square matrix A, compute a higher power like A⁵ or Aⁿ using a pattern or a relation like A² = kA, then read off a requested entry.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:100",
+   "2026s1:117",
+   "2026s2:123"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $A=\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$, the $(1,2)$ entry of $A^5$ is",
+ "options": [
+  "$250$",
+  "$625$",
+  "$3125$",
+  "$1250$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since A^2 = 5A, repeated multiplication gives A^5 = 5^4A. Thus (A^5)_{12} = 625 × 2 = 1250.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A^2=\\begin{bmatrix}5&10\\\\10&20\\end{bmatrix}=5A$.<br>Thus $A^5=5^4A=625A$.<br>$(A^5)_{12}=625\\cdot2=1250$.\n\nIndependent check: Since A^2 = 5A, repeated multiplication gives A^5 = 5^4A. Thus (A^5)_{12} = 625 × 2 = 1250.",
+ "solution": "$A^2=5A$, so repeated multiplication gives $A^5=5^4A$.\n$$ (A^5)_{12}=5^4\\times 2=1250 $$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $A=\\begin{bmatrix}1&2\\\\2&4\\end{bmatrix}$, the $(1,2)$ entry of $A^5$ is",
+  "options": [
+   "$250$",
+   "$625$",
+   "$1250$",
+   "$3125$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A^2=\\begin{bmatrix}5&10\\\\10&20\\end{bmatrix}=5A$.<br>Thus $A^5=5^4A=625A$.<br>$(A^5)_{12}=625\\cdot2=1250$.",
+  "distractor_notes": "A: uses $5A$ rather than $5^4A$. B: omits the factor $2$ in the requested entry. D: uses $5^5A$ instead of $5^4A$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 92,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 92,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "PQRS jumbled parts of a coherent paragraph",
+  "archetype": "jumbled parts ordering",
+  "brief": "Four labeled parts (P, Q, R, S) of a medium paragraph on an academic topic, with clear pronoun-reference and logical sequence clues; ask for the correct PQRS order.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:69",
+   "2022:70",
+   "2025s2:70"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Arrange P, Q, R and S to form a coherent paragraph between sentences 1 and 6. 1. A scientific model is useful not because it reproduces every detail of reality, but because it isolates relationships that can be tested. **P.** Researchers then compare its predictions with observations collected under controlled conditions. **Q.** If the two diverge consistently, the discrepancy signals that some assumption may be inadequate. **R.** This process does not make the model useless; rather, it identifies where refinement is needed. **S.** Before such testing begins, however, the model's assumptions must be stated explicitly. 6. Repeated cycles of testing and revision therefore allow a model to become more informative without ever becoming a perfect copy of nature.",
+ "options": [
+  "SPQR",
+  "PSQR",
+  "SQPR",
+  "SRPQ"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "S introduces the assumptions needed before testing; P describes the comparison, Q explains consistent divergence, and R explains its role in refinement. The order is SPQR.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "S introduces the assumptions needed before testing; P describes the test. Q follows P through the comparison of predictions and observations, and R explains the significance of the discrepancy.\n\nIndependent check: S introduces the assumptions needed before testing; P describes the comparison, Q explains consistent divergence, and R explains its role in refinement. The order is SPQR.",
+ "solution": "S introduces the need to state assumptions before testing. P describes the comparison of predictions with observations; Q explains what consistent divergence signals, and R clarifies that it guides refinement.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange P, Q, R and S to form a coherent paragraph between sentences 1 and 6. 1. A scientific model is useful not because it reproduces every detail of reality, but because it isolates relationships that can be tested. **P.** Researchers then compare its predictions with observations collected under controlled conditions. **Q.** If the two diverge consistently, the discrepancy signals that some assumption may be inadequate. **R.** This process does not make the model useless; rather, it identifies where refinement is needed. **S.** Before such testing begins, however, the model's assumptions must be stated explicitly. 6. Repeated cycles of testing and revision therefore allow a model to become more informative without ever becoming a perfect copy of nature.",
+  "options": [
+   "SPQR",
+   "PSQR",
+   "SQPR",
+   "SRPQ"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "S introduces the assumptions needed before testing; P describes the test. Q follows P through the comparison of predictions and observations, and R explains the significance of the discrepancy.",
+  "distractor_notes": "B puts testing before the assumptions required for it; C places the conditional result before the comparison; D puts the explanation before the testing and its result."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

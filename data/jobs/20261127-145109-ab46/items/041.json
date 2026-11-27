@@ -1,0 +1,70 @@
+{
+ "qno": 41,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 41,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Photon energy",
+  "archetype": "single-formula numerical",
+  "brief": "Give wavelength of electromagnetic radiation; ask energy of one photon and of one mole of photons in kJ.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:51",
+   "2025s1:39",
+   "2022:34"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Radiation of wavelength $600$ nm is used. Find the energy of one photon and of one mole of photons. Take $h=6.626\\times10^{-34}$ J s, $c=3.00\\times10^8$ m s$^{-1}$ and $N_A=6.022\\times10^{23}$ mol$^{-1}$.",
+ "options": [
+  "$1.99\\times10^{-19}$ J; $120.0$ kJ mol$^{-1}$",
+  "$3.31\\times10^{-19}$ J; $0.1996$ kJ mol$^{-1}$",
+  "$6.62\\times10^{-19}$ J; $399.2$ kJ mol$^{-1}$",
+  "$3.31\\times10^{-19}$ J; $199.6$ kJ mol$^{-1}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "E = hc/λ = (6.626×10⁻³⁴)(3.00×10⁸)/(600×10⁻⁹) = 3.31×10⁻¹⁹ J per photon. Per mole: E N_A = 199.5 kJ mol⁻¹.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E=\\dfrac{hc}{\\lambda}=\\dfrac{(6.626\\times10^{-34})(3.00\\times10^8)}{600\\times10^{-9}}=3.31\\times10^{-19}$ J\n$E_{\\mathrm{mol}}=EN_A=1.996\\times10^5$ J mol$^{-1}=199.6$ kJ mol$^{-1}$\n\nIndependent check: E = hc/λ = (6.626×10⁻³⁴)(3.00×10⁸)/(600×10⁻⁹) = 3.31×10⁻¹⁹ J per photon. Per mole: E N_A = 199.5 kJ mol⁻¹.",
+ "solution": "The energy of one photon is $E=\\dfrac{hc}{\\lambda}$.\n$$E=\\dfrac{(6.626\\times10^{-34})(3.00\\times10^8)}{600\\times10^{-9}}=3.31\\times10^{-19}\\text{ J}$$\nFor one mole of photons, $E_{\\mathrm{mol}}=EN_A=(3.31\\times10^{-19})(6.022\\times10^{23})=199.6\\text{ kJ mol}^{-1}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Radiation of wavelength $600$ nm is used. Find the energy of one photon and of one mole of photons. Take $h=6.626\\times10^{-34}$ J s, $c=3.00\\times10^8$ m s$^{-1}$ and $N_A=6.022\\times10^{23}$ mol$^{-1}$.",
+  "options": [
+   "$3.31\\times10^{-19}$ J; $199.6$ kJ mol$^{-1}$",
+   "$3.31\\times10^{-19}$ J; $0.1996$ kJ mol$^{-1}$",
+   "$6.62\\times10^{-19}$ J; $399.2$ kJ mol$^{-1}$",
+   "$1.99\\times10^{-19}$ J; $120.0$ kJ mol$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$E=\\dfrac{hc}{\\lambda}=\\dfrac{(6.626\\times10^{-34})(3.00\\times10^8)}{600\\times10^{-9}}=3.31\\times10^{-19}$ J\n$E_{\\mathrm{mol}}=EN_A=1.996\\times10^5$ J mol$^{-1}=199.6$ kJ mol$^{-1}$",
+  "distractor_notes": "B: converts the molar energy from J to kJ incorrectly by an extra factor of $10^3$.\nC: doubles the photon energy and hence the molar energy.\nD: underestimates the photon energy and molar energy."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

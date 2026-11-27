@@ -1,0 +1,71 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Astronomical telescope",
+  "archetype": "two-step formula",
+  "brief": "Given the focal lengths of objective and eyepiece, find the magnifying power and tube length of an astronomical telescope in normal adjustment.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:17",
+   "2025s1:22",
+   "2024s1:18"
+  ],
+  "origin": "variant",
+  "bank_ref": "gb52391208549"
+ },
+ "status": "ok",
+ "stem": "An astronomical telescope has an objective of focal length $90$ cm and an eyepiece of focal length $6$ cm. In normal adjustment, what are its angular magnification (magnitude) and tube length?",
+ "options": [
+  "$15$; $84$ cm",
+  "$15$; $90$ cm",
+  "$15$; $540$ cm",
+  "$15$; $96$ cm"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "In normal adjustment, angular magnification = 90/6 = 15 and tube length = 90 + 6 = 96 cm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$M = \\dfrac{f_o}{f_e} = \\dfrac{90}{6} = 15$\n\nIndependent check: In normal adjustment, angular magnification = 90/6 = 15 and tube length = 90 + 6 = 96 cm.",
+ "solution": "In normal adjustment, angular magnification is $M=\\dfrac{f_o}{f_e}=\\dfrac{90}{6}=15$.\nThe tube length is $L=f_o+f_e=90+6=96\\text{ cm}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An astronomical telescope has an objective of focal length $90$ cm and an eyepiece of focal length $6$ cm. In normal adjustment, what are its angular magnification (magnitude) and tube length?",
+  "options": [
+   "$15$; $84$ cm",
+   "$15$; $90$ cm",
+   "$15$; $96$ cm",
+   "$15$; $540$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$M = \\dfrac{f_o}{f_e} = \\dfrac{90}{6} = 15$",
+  "distractor_notes": "A: subtracts focal lengths for the tube length. B: omits the eyepiece focal length from the tube length. D: multiplies the focal lengths instead of adding them."
+ },
+ "variant_of": "gb52391208549",
+ "author_model": "openai/gpt-6-luna-pro"
+}

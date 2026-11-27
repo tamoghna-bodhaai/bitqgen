@@ -1,0 +1,70 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Atwood machine",
+  "archetype": "free-body equations",
+  "brief": "Classic Atwood machine with two unequal masses over a frictionless pulley; ask for the acceleration and tension symbolically or with simple numbers.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:4",
+   "2025s2:11",
+   "2024s1:8"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Masses of $2$ kg and $3$ kg are connected by a light string passing over a frictionless pulley. Taking $g=10$ m s$^{-2}$, what are the acceleration magnitude and string tension?",
+ "options": [
+  "$2$ m s$^{-2}$, $20$ N",
+  "$2$ m s$^{-2}$, $24$ N",
+  "$5$ m s$^{-2}$, $30$ N",
+  "$1$ m s$^{-2}$, $22$ N"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an Atwood machine, a = ((3 - 2)/(3 + 2)) × 10 = 2 m s^-2. Then T = 2(10 + 2) = 24 N.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$a=\\dfrac{(3-2)g}{3+2}=2$ m s$^{-2}$. For the $2$ kg mass, $T-2g=2a$, so $T=24$ N.\n\nIndependent check: For an Atwood machine, a = ((3 - 2)/(3 + 2)) × 10 = 2 m s^-2. Then T = 2(10 + 2) = 24 N.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Masses of $2$ kg and $3$ kg are connected by a light string passing over a frictionless pulley. Taking $g=10$ m s$^{-2}$, what are the acceleration magnitude and string tension?",
+  "options": [
+   "$2$ m s$^{-2}$, $20$ N",
+   "$2$ m s$^{-2}$, $24$ N",
+   "$5$ m s$^{-2}$, $30$ N",
+   "$1$ m s$^{-2}$, $22$ N"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$a=\\dfrac{(3-2)g}{3+2}=2$ m s$^{-2}$. For the $2$ kg mass, $T-2g=2a$, so $T=24$ N.",
+  "distractor_notes": "A: takes tension as the lighter mass's weight; C: omits the total mass in the acceleration denominator; D: uses an incorrect acceleration and tension."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

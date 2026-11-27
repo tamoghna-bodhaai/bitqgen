@@ -1,0 +1,68 @@
+{
+ "qno": 96,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 96,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations (counting)",
+  "archetype": "counting members",
+  "brief": "Short family description; ask how many members are male or how many cousins a named person has.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2023s2:89",
+   "2026s2:90"
+  ]
+ },
+ "status": "ok",
+ "stem": "A family consists of a father, a mother, two married sons and an unmarried daughter. Each son has two children: one has two daughters, and the other has a son and a daughter. How many male members are there?",
+ "options": [
+  "4",
+  "3",
+  "5",
+  "6"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Male members: father (1) + two sons (2) + one grandson (1) = 4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Male members: father + two sons + one grandson = 4.\n\nIndependent check: Male members: father (1) + two sons (2) + one grandson (1) = 4.",
+ "solution": "The male members are the father, the two sons, and the one grandson.\nThus, the total number of male members is $1+2+1=4$. $(A)$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A family consists of a father, a mother, two married sons and an unmarried daughter. Each son has two children: one has two daughters, and the other has a son and a daughter. How many male members are there?",
+  "options": [
+   "3",
+   "4",
+   "5",
+   "6"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Male members: father + two sons + one grandson = 4.",
+  "distractor_notes": "A: omits one son or the father. C: counts a female child as male. D: counts both daughters as male."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

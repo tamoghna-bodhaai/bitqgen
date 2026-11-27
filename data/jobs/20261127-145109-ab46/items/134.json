@@ -1,0 +1,70 @@
+{
+ "qno": 134,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 134,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Forming numbers with restrictions",
+  "archetype": "case-wise counting",
+  "brief": "Form 3-digit (or 4-digit) numbers from a given multiset of digits satisfying a divisibility or digit-position restriction; count case by case (e.g., by last digit).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:103",
+   "2026s1:97",
+   "2025s1:121"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "How many three-digit even numbers can be formed using the digits $0,1,2,3,4,5$ without repetition?",
+ "options": [
+  "$48$",
+  "$56$",
+  "$52$",
+  "$60$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "If the units digit is 0: 5×4=20. If it is 2 or 4: 2×4×4=32. Total = 52.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Last digit $0$: $5\\cdot4=20$.\nLast digit $2$ or $4$: $4\\cdot4=16$ for each.\nTotal $=20+16+16=52$.\n\nIndependent check: If the units digit is 0: 5×4=20. If it is 2 or 4: 2×4×4=32. Total = 52.",
+ "solution": "If the units digit is $0$, the hundreds and tens digits can be chosen in $5\\cdot4=20$ ways. If the units digit is $2$ or $4$, there are $4\\cdot4=16$ choices for each.\n$$20+2(16)=52$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "How many three-digit even numbers can be formed using the digits $0,1,2,3,4,5$ without repetition?",
+  "options": [
+   "$48$",
+   "$52$",
+   "$56$",
+   "$60$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Last digit $0$: $5\\cdot4=20$.\nLast digit $2$ or $4$: $4\\cdot4=16$ for each.\nTotal $=20+16+16=52$.",
+  "distractor_notes": "A: undercounts one of the nonzero-even-ending cases. C: overcounts the choices after fixing a nonzero last digit. D: allows the leading digit to be zero in those cases."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

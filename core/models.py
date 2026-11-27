@@ -107,6 +107,8 @@ class Slot(BaseModel):
     lr_generator: Optional[str] = None  # deterministic non-verbal LR generator name
     passage_id: Optional[str] = None    # English RC groups share a passage
     exemplar_ids: list[str] = Field(default_factory=list)  # "<paper>:<qno>"
+    origin: str = "new"                 # new | direct (copied from bank) | variant (new question from a bank one)
+    bank_ref: Optional[str] = None      # bank id used for direct / variant
 
 
 class Blueprint(BaseModel):

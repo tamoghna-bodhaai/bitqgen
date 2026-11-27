@@ -1,0 +1,70 @@
+{
+ "qno": 76,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 76,
+  "section": "Chemistry",
+  "chapter": "d- and f-Block Elements",
+  "subtopic": "Magnetic moment of lanthanide ions",
+  "archetype": "unpaired electron count",
+  "brief": "For a lanthanide ion (e.g. Eu3+/Gd3+), write the 4f configuration and calculate the magnetic moment using √n(n+2) BM or discuss orbital contribution.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:35",
+   "2025s2:48",
+   "2026s2:44"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "In the spin-only approximation, use $\\mu=\\sqrt{n(n+2)}$ BM. Which ordered pair of $4f$ configurations and magnetic moments is correct for $\\text{Tb}^{3+}$ ($Z=65$) and $\\text{Dy}^{3+}$ ($Z=66$)?",
+ "options": [
+  "$\\text{Tb}^{3+}: [\\text{Xe}]4f^7,\\ 7.94\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^8,\\ 6.93\\ \\text{BM}$",
+  "$\\text{Tb}^{3+}: [\\text{Xe}]4f^8,\\ 4.90\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^9,\\ 6.93\\ \\text{BM}$",
+  "$\\text{Tb}^{3+}: [\\text{Xe}]4f^8,\\ 6.93\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^9,\\ 5.92\\ \\text{BM}$",
+  "$\\text{Tb}^{3+}: [\\text{Xe}]4f^9,\\ 5.92\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^{10},\\ 4.90\\ \\text{BM}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Tb³⁺ is [Xe]4f⁸ (6 unpaired electrons), giving μ = √48 ≈ 6.93 BM. Dy³⁺ is [Xe]4f⁹ (5 unpaired electrons), giving μ = √35 ≈ 5.92 BM.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{Tb}^{3+}: 65-3=62\\Rightarrow [\\text{Xe}]4f^8,\\ n=6;\\ \\mu=\\sqrt{6(8)}=6.93\\ \\text{BM}$\n$\\text{Dy}^{3+}: 66-3=63\\Rightarrow [\\text{Xe}]4f^9,\\ n=5;\\ \\mu=\\sqrt{5(7)}=5.92\\ \\text{BM}$\n\nIndependent check: Tb³⁺ is [Xe]4f⁸ (6 unpaired electrons), giving μ = √48 ≈ 6.93 BM. Dy³⁺ is [Xe]4f⁹ (5 unpaired electrons), giving μ = √35 ≈ 5.92 BM.",
+ "solution": "Removing three electrons gives Tb³⁺: [Xe]4f⁸ with $n=6$ unpaired electrons, and Dy³⁺: [Xe]4f⁹ with $n=5$ unpaired electrons.\n$$\\mu_{\\text{Tb}^{3+}}=\\sqrt{6(6+2)}=6.93\\ \\text{BM},\\qquad \\mu_{\\text{Dy}^{3+}}=\\sqrt{5(5+2)}=5.92\\ \\text{BM}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the spin-only approximation, use $\\mu=\\sqrt{n(n+2)}$ BM. Which ordered pair of $4f$ configurations and magnetic moments is correct for $\\text{Tb}^{3+}$ ($Z=65$) and $\\text{Dy}^{3+}$ ($Z=66$)?",
+  "options": [
+   "$\\text{Tb}^{3+}: [\\text{Xe}]4f^8,\\ 6.93\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^9,\\ 5.92\\ \\text{BM}$",
+   "$\\text{Tb}^{3+}: [\\text{Xe}]4f^8,\\ 4.90\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^9,\\ 6.93\\ \\text{BM}$",
+   "$\\text{Tb}^{3+}: [\\text{Xe}]4f^7,\\ 7.94\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^8,\\ 6.93\\ \\text{BM}$",
+   "$\\text{Tb}^{3+}: [\\text{Xe}]4f^9,\\ 5.92\\ \\text{BM};\\quad \\text{Dy}^{3+}: [\\text{Xe}]4f^{10},\\ 4.90\\ \\text{BM}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\text{Tb}^{3+}: 65-3=62\\Rightarrow [\\text{Xe}]4f^8,\\ n=6;\\ \\mu=\\sqrt{6(8)}=6.93\\ \\text{BM}$\n$\\text{Dy}^{3+}: 66-3=63\\Rightarrow [\\text{Xe}]4f^9,\\ n=5;\\ \\mu=\\sqrt{5(7)}=5.92\\ \\text{BM}$",
+  "distractor_notes": "B: Miscounts the unpaired electrons in the more-than-half-filled $4f$ subshells.\nC: Assigns each ion one fewer $4f$ electron than its trivalent configuration.\nD: Uses the neutral-atom $4f$ configurations without accounting for ion formation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

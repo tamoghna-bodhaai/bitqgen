@@ -1,0 +1,70 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Inverse Trigonometric Functions",
+  "subtopic": "Composite evaluation",
+  "archetype": "identity substitution",
+  "brief": "Evaluate a composite like sin⁻¹(something) or tan⁻¹x + tan⁻¹y using the standard identity for the sum/difference of inverse tangents, checking the principal-value branch.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:120",
+   "2025s1:106",
+   "2023s2:100"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\tan^{-1}2+\\tan^{-1}3$.",
+ "options": [
+  "$\\dfrac{3\\pi}{4}$",
+  "$\\dfrac{\\pi}{2}$",
+  "$\\dfrac{\\pi}{4}$",
+  "$\\dfrac{5\\pi}{4}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Both arctangents are in (0, π/2), and their sum is in (π/2, π). Its tangent is (2+3)/(1−2·3)=−1, so the sum is 3π/4.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\tan(\\tan^{-1}2+\\tan^{-1}3)=\\dfrac{2+3}{1-6}=-1$. Both angles are positive and their sum lies in $(\\dfrac{\\pi}{2},\\pi)$; hence the sum is $\\dfrac{3\\pi}{4}$.\n\nIndependent check: Both arctangents are in (0, π/2), and their sum is in (π/2, π). Its tangent is (2+3)/(1−2·3)=−1, so the sum is 3π/4.",
+ "solution": "Using $\\tan(A+B)=\\dfrac{\\tan A+\\tan B}{1-\\tan A\\tan B}$,\n$$\\tan(\\tan^{-1}2+\\tan^{-1}3)=\\frac{2+3}{1-6}=-1.$$\nThe sum lies in $(\\pi/2,\\pi)$, so it equals $\\dfrac{3\\pi}{4}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\tan^{-1}2+\\tan^{-1}3$.",
+  "options": [
+   "$\\dfrac{\\pi}{4}$",
+   "$\\dfrac{\\pi}{2}$",
+   "$\\dfrac{3\\pi}{4}$",
+   "$\\dfrac{5\\pi}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\tan(\\tan^{-1}2+\\tan^{-1}3)=\\dfrac{2+3}{1-6}=-1$. Both angles are positive and their sum lies in $(\\dfrac{\\pi}{2},\\pi)$; hence the sum is $\\dfrac{3\\pi}{4}$.",
+  "distractor_notes": "A: Uses the principal arctangent of $-1$ without adjusting the quadrant; B: Assumes the denominator-zero case; D: Adds an unnecessary $\\pi$ to the correct quadrant."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

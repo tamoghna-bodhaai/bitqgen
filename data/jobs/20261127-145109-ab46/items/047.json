@@ -1,0 +1,70 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Empirical/molecular formula",
+  "archetype": "mole-concept numerical",
+  "brief": "Give percentage composition of a compound; ask for empirical formula, then molecular formula given molar mass.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:35",
+   "2026s2:55",
+   "2026s2:57"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A compound contains $63.16\\%$ carbon, $12.28\\%$ hydrogen and the remainder nitrogen. Its molar mass is $114\\ \\text{g mol}^{-1}$. Find its molecular formula. Use atomic masses C = 12, H = 1 and N = 14.",
+ "options": [
+  "$\\text{C}_3\\text{H}_7\\text{N}$",
+  "$\\text{C}_6\\text{H}_{14}\\text{N}_2$",
+  "$\\text{C}_9\\text{H}_{21}\\text{N}_3$",
+  "$\\text{C}_6\\text{H}_7\\text{N}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For 100 g, mole ratio C:H:N = 63.16/12 : 12.28/1 : 24.56/14 ≈ 3:7:1, giving empirical formula C₃H₇N (mass 57 g mol⁻¹). The molecular mass is 114, so the factor is 2 and the molecular formula is C₆H₁₄N₂.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $100$ g: $n_{\\text{C}}=63.16/12$, $n_{\\text{H}}=12.28/1$, $n_{\\text{N}}=24.56/14$.\nRatio $=3:7:1$; empirical formula $=\\text{C}_3\\text{H}_7\\text{N}$, empirical mass $=57$.\nMultiplier $=114/57=2$; molecular formula $=\\text{C}_6\\text{H}_{14}\\text{N}_2$.\n\nIndependent check: For 100 g, mole ratio C:H:N = 63.16/12 : 12.28/1 : 24.56/14 ≈ 3:7:1, giving empirical formula C₃H₇N (mass 57 g mol⁻¹). The molecular mass is 114, so the factor is 2 and the molecular formula is C₆H₁₄N₂.",
+ "solution": "For $100$ g, the mole ratio is $\\frac{63.16}{12}:\\frac{12.28}{1}:\\frac{24.56}{14}=3:7:1$, so the empirical formula is $\\text{C}_3\\text{H}_7\\text{N}$ (empirical mass $=57$).\n$$\\frac{114}{57}=2 \\quad\\Rightarrow\\quad \\text{molecular formula}=\\text{C}_6\\text{H}_{14}\\text{N}_2$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A compound contains $63.16\\%$ carbon, $12.28\\%$ hydrogen and the remainder nitrogen. Its molar mass is $114\\ \\text{g mol}^{-1}$. Find its molecular formula. Use atomic masses C = 12, H = 1 and N = 14.",
+  "options": [
+   "$\\text{C}_3\\text{H}_7\\text{N}$",
+   "$\\text{C}_6\\text{H}_7\\text{N}$",
+   "$\\text{C}_9\\text{H}_{21}\\text{N}_3$",
+   "$\\text{C}_6\\text{H}_{14}\\text{N}_2$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For $100$ g: $n_{\\text{C}}=63.16/12$, $n_{\\text{H}}=12.28/1$, $n_{\\text{N}}=24.56/14$.\nRatio $=3:7:1$; empirical formula $=\\text{C}_3\\text{H}_7\\text{N}$, empirical mass $=57$.\nMultiplier $=114/57=2$; molecular formula $=\\text{C}_6\\text{H}_{14}\\text{N}_2$.",
+  "distractor_notes": "A: gives the empirical formula instead of multiplying by 2.\nB: uses an incorrect hydrogen subscript when scaling the formula.\nC: multiplies the empirical formula by 3 instead of 2."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

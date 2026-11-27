@@ -1,0 +1,70 @@
+{
+ "qno": 110,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 110,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "General solution of trigonometric equations",
+  "archetype": "general solution",
+  "brief": "Simple trigonometric equation reducible to sin = 0 or cos = 0 form; ask for the general solution set.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:92",
+   "2024s2:130",
+   "2025s2:107"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The general solution of $\\sin 2x=0$, for $x\\in\\mathbb{R}$, is",
+ "options": [
+  "$x=n\\pi,\\ n\\in\\mathbb{Z}$",
+  "$x=\\dfrac{n\\pi}{2},\\ n\\in\\mathbb{Z}$",
+  "$x=\\dfrac{\\pi}{2}+n\\pi,\\ n\\in\\mathbb{Z}$",
+  "$x=\\dfrac{\\pi}{4}+\\dfrac{n\\pi}{2},\\ n\\in\\mathbb{Z}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\sin 2x=0\\) implies \\(2x=n\\pi\\), so \\(x=\\frac{n\\pi}{2}\\) for \\(n\\in\\mathbb Z\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\sin 2x=0\\Rightarrow 2x=n\\pi,\\ n\\in\\mathbb{Z}$.<br>Hence $x=\\dfrac{n\\pi}{2}$.\n\nIndependent check: \\(\\sin 2x=0\\) implies \\(2x=n\\pi\\), so \\(x=\\frac{n\\pi}{2}\\) for \\(n\\in\\mathbb Z\\).",
+ "solution": "Since $\\sin\\theta=0$ when $\\theta=n\\pi$, we have\n$$2x=n\\pi,\\quad n\\in\\mathbb{Z}.\n$$\nHence $x=\\dfrac{n\\pi}{2}$, $n\\in\\mathbb{Z}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The general solution of $\\sin 2x=0$, for $x\\in\\mathbb{R}$, is",
+  "options": [
+   "$x=\\dfrac{n\\pi}{2},\\ n\\in\\mathbb{Z}$",
+   "$x=n\\pi,\\ n\\in\\mathbb{Z}$",
+   "$x=\\dfrac{\\pi}{2}+n\\pi,\\ n\\in\\mathbb{Z}$",
+   "$x=\\dfrac{\\pi}{4}+\\dfrac{n\\pi}{2},\\ n\\in\\mathbb{Z}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\sin 2x=0\\Rightarrow 2x=n\\pi,\\ n\\in\\mathbb{Z}$.<br>Hence $x=\\dfrac{n\\pi}{2}$.",
+  "distractor_notes": "B: omits every other solution. C: gives only the odd-indexed solutions. D: uses the zeros of cosine instead."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

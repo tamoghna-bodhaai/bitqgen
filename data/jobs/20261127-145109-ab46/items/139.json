@@ -1,0 +1,70 @@
+{
+ "qno": 139,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 139,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Telescoping series",
+  "archetype": "general-term telescoping",
+  "brief": "Sum of a series whose general term splits by telescoping (e.g., 1/(n(n+1)) or similar partial-fraction pattern); find the sum to n terms or infinite sum.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:118",
+   "2024s2:106",
+   "2021:139"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Find the sum of the first $n$ terms: $\\displaystyle \\sum_{r=1}^{n}\\dfrac{2r+1}{r^2(r+1)^2}$.",
+ "options": [
+  "$1-\\dfrac{1}{(n+1)^2}$",
+  "$1-\\dfrac{1}{n^2}$",
+  "$\\dfrac{1}{(n+1)^2}$",
+  "$1-\\dfrac{1}{n+1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\frac{2r+1}{r^2(r+1)^2}=\\frac1{r^2}-\\frac1{(r+1)^2}\\), so the sum telescopes to \\(1-\\frac1{(n+1)^2}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{2r+1}{r^2(r+1)^2}=\\dfrac{1}{r^2}-\\dfrac{1}{(r+1)^2}$\n$S_n=1-\\dfrac{1}{(n+1)^2}$\n\nIndependent check: \\(\\frac{2r+1}{r^2(r+1)^2}=\\frac1{r^2}-\\frac1{(r+1)^2}\\), so the sum telescopes to \\(1-\\frac1{(n+1)^2}\\).",
+ "solution": "$$\\frac{2r+1}{r^2(r+1)^2}=\\frac{1}{r^2}-\\frac{1}{(r+1)^2}$$\nThe sum telescopes, giving $S_n=1-\\dfrac{1}{(n+1)^2}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Find the sum of the first $n$ terms: $\\displaystyle \\sum_{r=1}^{n}\\dfrac{2r+1}{r^2(r+1)^2}$.",
+  "options": [
+   "$1-\\dfrac{1}{n^2}$",
+   "$1-\\dfrac{1}{(n+1)^2}$",
+   "$\\dfrac{1}{(n+1)^2}$",
+   "$1-\\dfrac{1}{n+1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{2r+1}{r^2(r+1)^2}=\\dfrac{1}{r^2}-\\dfrac{1}{(r+1)^2}$\n$S_n=1-\\dfrac{1}{(n+1)^2}$",
+  "distractor_notes": "A: shifts the final index; C: gives only the last uncancelled term; D: omits the square on the denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

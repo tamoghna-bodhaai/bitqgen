@@ -1,0 +1,71 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Implicit differentiation",
+  "archetype": "implicit derivative",
+  "brief": "For an implicit curve like x^3 + y^3 = 3axy, find dy/dx at a given point or where the tangent is horizontal",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:129",
+   "2024s2:120",
+   "2024s1:104"
+  ],
+  "origin": "variant",
+  "bank_ref": "gcdf10df9de29"
+ },
+ "status": "ok",
+ "stem": "For the curve $x^3+y^3=3axy$, where $a=\\dfrac{3}{2}$, the slope of the tangent at $(2,1)$ is",
+ "options": [
+  "$-\\dfrac{5}{4}$",
+  "$-\\dfrac{4}{5}$",
+  "$\\dfrac{4}{5}$",
+  "$\\dfrac{5}{4}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Differentiate implicitly: \\((y^2-ax)y'=ay-x^2\\). At \\((2,1)\\), with \\(a=3/2\\), \\(y'=(-5/2)/(-2)=5/4\\).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$3x^2+3y^2\\dfrac{dy}{dx}=3a\\left(y+x\\dfrac{dy}{dx}\\right)$\n$\\dfrac{dy}{dx}=\\dfrac{ay-x^2}{y^2-ax}$\nAt $(x,y)= (2,1)$ and $a=\\dfrac{3}{2}$:\n$\\dfrac{dy}{dx}=\\dfrac{\\frac{3}{2}-4}{1-3}=\\dfrac{5}{4}$\n\nIndependent check: Differentiate implicitly: \\((y^2-ax)y'=ay-x^2\\). At \\((2,1)\\), with \\(a=3/2\\), \\(y'=(-5/2)/(-2)=5/4\\).",
+ "solution": "Implicitly differentiating $x^3+y^3=3axy$ gives\n$$\\frac{dy}{dx}=\\frac{ay-x^2}{y^2-ax}.$$\nAt $(x,y)=(2,1)$ and $a=\\frac{3}{2}$, $\\frac{dy}{dx}=\\frac{\\frac{3}{2}-4}{1-3}=\\frac{5}{4}$. Thus the slope is $\\frac{5}{4}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the curve $x^3+y^3=3axy$, where $a=\\dfrac{3}{2}$, the slope of the tangent at $(2,1)$ is",
+  "options": [
+   "$-\\dfrac{5}{4}$",
+   "$-\\dfrac{4}{5}$",
+   "$\\dfrac{4}{5}$",
+   "$\\dfrac{5}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$3x^2+3y^2\\dfrac{dy}{dx}=3a\\left(y+x\\dfrac{dy}{dx}\\right)$\n$\\dfrac{dy}{dx}=\\dfrac{ay-x^2}{y^2-ax}$\nAt $(x,y)= (2,1)$ and $a=\\dfrac{3}{2}$:\n$\\dfrac{dy}{dx}=\\dfrac{\\frac{3}{2}-4}{1-3}=\\dfrac{5}{4}$",
+  "distractor_notes": "A: Sign error in the numerator. B: Reciprocal of the correct slope with a sign error. C: Reciprocal of the correct slope."
+ },
+ "variant_of": "gcdf10df9de29",
+ "author_model": "openai/gpt-6-luna-pro"
+}

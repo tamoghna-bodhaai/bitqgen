@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Which of the following represents the correct sequence of reagents required to convert aniline into benzene?",
+ "stem": "Which sequence of reagents converts aniline into fluorobenzene?",
  "options": [
-  "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$",
-  "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{Cu}_2\\text{Cl}_2 / \\text{HCl}$",
-  "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_2\\text{O},\\ \\text{warm}$",
-  "(i) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$; (ii) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$"
+  "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) $\\text{HBF}_4$, then heat",
+  "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) $\\text{CuCl}/\\text{HCl}$",
+  "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) $\\text{KI}$",
+  "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) warm $\\text{H}_2\\text{O}$"
  ],
  "answer": "A",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Aniline + NaNO2/HCl at 273–278 K gives benzenediazonium chloride (diazotization). H3PO2/H2O reduces the diazonium group, replacing N2+ by H to give benzene. Option B (Cu2Cl2/HCl, Sandmeyer) gives chlorobenzene; C (warm H2O) gives phenol; D has the reagents in the wrong order.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Diazotize aniline, then treat the diazonium salt with HBF₄ and heat (Balz–Schiemann reaction) to form fluorobenzene.",
    "answer": "A",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The conversion of aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$) to benzene ($\\text{C}_6\\text{H}_6$) occurs in two steps:\n\n1. **Diazotisation:**\n$$\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{NaNO}_2 + 2\\text{HCl} \\xrightarrow{273\\text{--}278\\text{ K}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{NaCl} + 2\\text{H}_2\\text{O}$$\n\n2. **Deamination (Reduction):**\nHypophosphorous acid (phosphinic acid, $\\text{H}_3\\text{PO}_2$) acts as a mild reducing agent that replaces the diazonium group with hydrogen:\n$$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{H}_3\\text{PO}_2 + \\text{H}_2\\text{O} \\xrightarrow{} \\text{C}_6\\text{H}_6 + \\text{N}_2 + \\text{H}_3\\text{PO}_3 + \\text{HCl}$$\n\nTherefore, the correct sequence is (i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$, followed by (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$.\n\nIndependent check: Aniline + NaNO2/HCl at 273–278 K gives benzenediazonium chloride (diazotization). H3PO2/H2O reduces the diazonium group, replacing N2+ by H to give benzene. Option B (Cu2Cl2/HCl, Sandmeyer) gives chlorobenzene; C (warm H2O) gives phenol; D has the reagents in the wrong order.",
+ "working": "$\\text{C}_6\\text{H}_5\\text{NH}_2 \\xrightarrow[273\\text{–}278\\ \\text{K}]{\\text{NaNO}_2/\\text{HCl}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-$\n$\\text{HBF}_4$ gives the diazonium tetrafluoroborate.\nHeating it replaces $-\\text{N}_2^+$ with $-\\text{F}$, yielding fluorobenzene.\n\nIndependent check: Diazotize aniline, then treat the diazonium salt with HBF₄ and heat (Balz–Schiemann reaction) to form fluorobenzene.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Which of the following represents the correct sequence of reagents required to convert aniline into benzene?",
+  "stem": "Which sequence of reagents converts aniline into fluorobenzene?",
   "options": [
-   "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$",
-   "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{Cu}_2\\text{Cl}_2 / \\text{HCl}$",
-   "(i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$; (ii) $\\text{H}_2\\text{O},\\ \\text{warm}$",
-   "(i) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$; (ii) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$"
+   "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) $\\text{HBF}_4$, then heat",
+   "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) $\\text{CuCl}/\\text{HCl}$",
+   "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) $\\text{KI}$",
+   "(i) $\\text{NaNO}_2/\\text{HCl}$, $273$–$278\\ \\text{K}$; (ii) warm $\\text{H}_2\\text{O}$"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "The conversion of aniline ($\\text{C}_6\\text{H}_5\\text{NH}_2$) to benzene ($\\text{C}_6\\text{H}_6$) occurs in two steps:\n\n1. **Diazotisation:**\n$$\\text{C}_6\\text{H}_5\\text{NH}_2 + \\text{NaNO}_2 + 2\\text{HCl} \\xrightarrow{273\\text{--}278\\text{ K}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{NaCl} + 2\\text{H}_2\\text{O}$$\n\n2. **Deamination (Reduction):**\nHypophosphorous acid (phosphinic acid, $\\text{H}_3\\text{PO}_2$) acts as a mild reducing agent that replaces the diazonium group with hydrogen:\n$$\\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^- + \\text{H}_3\\text{PO}_2 + \\text{H}_2\\text{O} \\xrightarrow{} \\text{C}_6\\text{H}_6 + \\text{N}_2 + \\text{H}_3\\text{PO}_3 + \\text{HCl}$$\n\nTherefore, the correct sequence is (i) $\\text{NaNO}_2 / \\text{HCl},\\ 273\\text{--}278\\text{ K}$, followed by (ii) $\\text{H}_3\\text{PO}_2,\\ \\text{H}_2\\text{O}$.",
-  "distractor_notes": "Option B: Yields chlorobenzene via the Sandmeyer reaction instead of benzene.\nOption C: Yields phenol by hydrolysis of the diazonium salt upon warming with water.\nOption D: Reverses the sequence; $\\text{H}_3\\text{PO}_2$ cannot reduce aniline directly to benzene without forming the diazonium intermediate first.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\text{C}_6\\text{H}_5\\text{NH}_2 \\xrightarrow[273\\text{–}278\\ \\text{K}]{\\text{NaNO}_2/\\text{HCl}} \\text{C}_6\\text{H}_5\\text{N}_2^+\\text{Cl}^-$\n$\\text{HBF}_4$ gives the diazonium tetrafluoroborate.\nHeating it replaces $-\\text{N}_2^+$ with $-\\text{F}$, yielding fluorobenzene.",
+  "distractor_notes": "B: Uses the Sandmeyer reagent for chlorobenzene instead of the fluorination route.\nC: Uses iodide, which gives iodobenzene.\nD: Hydrolyses the diazonium salt to phenol."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

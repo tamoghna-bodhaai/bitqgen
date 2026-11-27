@@ -1,0 +1,70 @@
+{
+ "qno": 62,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 62,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Hess's law",
+  "archetype": "Hess's law bond-energy calc",
+  "brief": "Use given reaction enthalpies (or mean bond enthalpies) to compute ΔH of a target reaction via Hess's law cycle.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:33",
+   "2021:51",
+   "2025s2:51"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Given $\\text{S}(s)+\\text{O}_2(g)\\to\\text{SO}_2(g)$, $\\Delta H=-297\\ \\text{kJ mol}^{-1}$, and $\\text{S}(s)+\\dfrac{3}{2}\\text{O}_2(g)\\to\\text{SO}_3(g)$, $\\Delta H=-396\\ \\text{kJ mol}^{-1}$, find $\\Delta H$ for $\\text{SO}_2(g)+\\dfrac{1}{2}\\text{O}_2(g)\\to\\text{SO}_3(g)$.",
+ "options": [
+  "$-198\\ \\text{kJ mol}^{-1}$",
+  "$+99\\ \\text{kJ mol}^{-1}$",
+  "$-99\\ \\text{kJ mol}^{-1}$",
+  "$+693\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Subtract the first reaction from the second: ΔH = −396 − (−297) = −99 kJ mol⁻¹.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta H_{\\text{target}}=\\Delta H_f(\\text{SO}_3)-\\Delta H_f(\\text{SO}_2)$\\n$=-396-(-297)=-99\\ \\text{kJ mol}^{-1}$\n\nIndependent check: Subtract the first reaction from the second: ΔH = −396 − (−297) = −99 kJ mol⁻¹.",
+ "solution": "By Hess’s law, subtract the formation of $\\text{SO}_2$ from that of $\\text{SO}_3$:\n$$\\Delta H=-396-(-297)=-99\\ \\text{kJ mol}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Given $\\text{S}(s)+\\text{O}_2(g)\\to\\text{SO}_2(g)$, $\\Delta H=-297\\ \\text{kJ mol}^{-1}$, and $\\text{S}(s)+\\dfrac{3}{2}\\text{O}_2(g)\\to\\text{SO}_3(g)$, $\\Delta H=-396\\ \\text{kJ mol}^{-1}$, find $\\Delta H$ for $\\text{SO}_2(g)+\\dfrac{1}{2}\\text{O}_2(g)\\to\\text{SO}_3(g)$.",
+  "options": [
+   "$-198\\ \\text{kJ mol}^{-1}$",
+   "$-99\\ \\text{kJ mol}^{-1}$",
+   "$+99\\ \\text{kJ mol}^{-1}$",
+   "$+693\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\Delta H_{\\text{target}}=\\Delta H_f(\\text{SO}_3)-\\Delta H_f(\\text{SO}_2)$\\n$=-396-(-297)=-99\\ \\text{kJ mol}^{-1}$",
+  "distractor_notes": "A: Doubles the enthalpy difference; C: Reverses the sign; D: Adds the two formation enthalpies."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

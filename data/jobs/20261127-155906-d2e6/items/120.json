@@ -1,0 +1,70 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Formation of DE",
+  "archetype": "eliminate constants",
+  "brief": "Given a family of curves with two arbitrary constants, form the differential equation by differentiating twice and eliminating the constants.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:92",
+   "2026s1:126",
+   "2026s2:128"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The differential equation corresponding to the family $y=a(x-b)^3$, where $a$ and $b$ are arbitrary constants, is",
+ "options": [
+  "$3y\\dfrac{d^2y}{dx^2}=\\left(\\dfrac{dy}{dx}\\right)^2$",
+  "$3y\\dfrac{d^2y}{dx^2}=2\\left(\\dfrac{dy}{dx}\\right)^2$",
+  "$y\\dfrac{d^2y}{dx^2}=2\\left(\\dfrac{dy}{dx}\\right)^2$",
+  "$2y\\dfrac{d^2y}{dx^2}=3\\left(\\dfrac{dy}{dx}\\right)^2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Differentiate: y'=3a(x-b)^2 and y''=6a(x-b). Thus 3yy''=18a²(x-b)^4=2(y')².",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y'=3a(x-b)^2,\\quad y''=6a(x-b)$; $3yy''=18a^2(x-b)^4=2(y')^2$.\n\nIndependent check: Differentiate: y'=3a(x-b)^2 and y''=6a(x-b). Thus 3yy''=18a²(x-b)^4=2(y')².",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The differential equation corresponding to the family $y=a(x-b)^3$, where $a$ and $b$ are arbitrary constants, is",
+  "options": [
+   "$3y\\dfrac{d^2y}{dx^2}=\\left(\\dfrac{dy}{dx}\\right)^2$",
+   "$3y\\dfrac{d^2y}{dx^2}=2\\left(\\dfrac{dy}{dx}\\right)^2$",
+   "$y\\dfrac{d^2y}{dx^2}=2\\left(\\dfrac{dy}{dx}\\right)^2$",
+   "$2y\\dfrac{d^2y}{dx^2}=3\\left(\\dfrac{dy}{dx}\\right)^2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$y'=3a(x-b)^2,\\quad y''=6a(x-b)$; $3yy''=18a^2(x-b)^4=2(y')^2$.",
+  "distractor_notes": "A: misses a factor of 2; C: misses the factor of 3 on the left; D: interchanges the coefficients."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

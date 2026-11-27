@@ -1,0 +1,68 @@
+{
+ "qno": 73,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 73,
+  "section": "Chemistry",
+  "chapter": "Classification of Elements and Periodicity",
+  "subtopic": "Electron gain enthalpy",
+  "archetype": "find incorrect order",
+  "brief": "Four orderings of electron gain enthalpy across groups/periods (with Cl vs F anomaly, noble gases); identify which order is wrong — higher-order trend analysis.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:55",
+   "2026s2:52",
+   "2023s2:54"
+  ]
+ },
+ "status": "ok",
+ "stem": "Each sequence is intended to run from less negative to more negative electron gain enthalpy. Which sequence is incorrectly ordered?",
+ "options": [
+  "$\\text{Ar}<\\text{F}<\\text{Cl}$",
+  "$\\text{N}<\\text{C}<\\text{O}<\\text{F}$",
+  "$\\text{I}<\\text{Br}<\\text{Cl}<\\text{F}$",
+  "$\\text{O}<\\text{Te}<\\text{Se}<\\text{S}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Electron gain enthalpies (kJ mol⁻¹) are approximately I −295, Br −325, F −328, and Cl −349. Thus the order from less negative to more negative is I < Br < F < Cl, not the order in (D).",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Halogens, from less negative to more negative electron gain enthalpy: $\\text{I}<\\text{Br}<\\text{F}<\\text{Cl}$. Since Cl has a more negative value than F, option D is misordered. Ar has positive electron gain enthalpy; the other sequences follow the known trends.\n\nIndependent check: Electron gain enthalpies (kJ mol⁻¹) are approximately I −295, Br −325, F −328, and Cl −349. Thus the order from less negative to more negative is I < Br < F < Cl, not the order in (D).",
+ "solution": "For halogens, electron gain enthalpy becomes more negative in the order $\\text{I}<\\text{Br}<\\text{F}<\\text{Cl}$; chlorine is more negative than fluorine.\nHence $\\text{I}<\\text{Br}<\\text{Cl}<\\text{F}$ is incorrectly ordered.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Each sequence is intended to run from less negative to more negative electron gain enthalpy. Which sequence is incorrectly ordered?",
+  "options": [
+   "$\\text{Ar}<\\text{F}<\\text{Cl}$",
+   "$\\text{N}<\\text{C}<\\text{O}<\\text{F}$",
+   "$\\text{O}<\\text{Te}<\\text{Se}<\\text{S}$",
+   "$\\text{I}<\\text{Br}<\\text{Cl}<\\text{F}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Halogens, from less negative to more negative electron gain enthalpy: $\\text{I}<\\text{Br}<\\text{F}<\\text{Cl}$. Since Cl has a more negative value than F, option D is misordered. Ar has positive electron gain enthalpy; the other sequences follow the known trends.",
+  "distractor_notes": "A: correctly places a noble gas before the halogens; B: correctly accounts for the relatively unfavourable gain of an electron by N; C: correctly orders the group 16 values."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

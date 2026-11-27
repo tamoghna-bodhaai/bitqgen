@@ -1,0 +1,71 @@
+{
+ "qno": 105,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 105,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations (counting)",
+  "archetype": "counting members",
+  "brief": "Describe a small family (e.g., a couple with children and their spouses) and ask how many members of a specific type exist, such as number of males or females, given one ambiguous member described by role.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2022:86",
+   "2023s2:89"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd18d89e3ca29"
+ },
+ "status": "ok",
+ "stem": "A couple has one son and two daughters, and all three children are married. The son has one daughter, the elder daughter has two sons, and the younger daughter has no children. How many male members are there in the family?",
+ "options": [
+  "5",
+  "8",
+  "7",
+  "6"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Male members: father (1), son (1), the two daughters’ husbands (2), and the elder daughter’s two sons (2). Total = 6.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Male members: father + son + two sons-in-law + two grandsons = $1+1+2+2=6$.\n5 omits one male; 7 and 8 overcount the family members.\n\nIndependent check: Male members: father (1), son (1), the two daughters’ husbands (2), and the elder daughter’s two sons (2). Total = 6.",
+ "solution": "Male members are the father, the son, the two sons-in-law and the two grandsons.\n$$1+1+2+2=6$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A couple has one son and two daughters, and all three children are married. The son has one daughter, the elder daughter has two sons, and the younger daughter has no children. How many male members are there in the family?",
+  "options": [
+   "5",
+   "6",
+   "7",
+   "8"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Male members: father + son + two sons-in-law + two grandsons = $1+1+2+2=6$.\n5 omits one male; 7 and 8 overcount the family members.",
+  "distractor_notes": "A: Omits one male member. C: Counts one extra male. D: Counts two extra males."
+ },
+ "variant_of": "gd18d89e3ca29",
+ "author_model": "openai/gpt-6-luna"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Calorimetry with phase change",
+  "archetype": "multi-step numeric",
+  "brief": "Ice at 0°C mixed with water at a higher temperature; use latent heat plus specific heat to find the final temperature (or remaining ice).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:11",
+   "2023s2:7",
+   "2026s2:22"
+  ],
+  "origin": "variant",
+  "bank_ref": "g2473552598cf"
+ },
+ "status": "ok",
+ "stem": "A $50$ g piece of ice at $0^\\circ$C is added to $200$ g of water at $40^\\circ$C. Find the final temperature. Take the specific heat capacity of water as $1\\ \\text{cal g}^{-1}\\, ^\\circ\\text{C}^{-1}$ and the latent heat of fusion of ice as $80\\ \\text{cal g}^{-1}$.",
+ "options": [
+  "$8^\\circ$C",
+  "$20^\\circ$C",
+  "$16^\\circ$C",
+  "$32^\\circ$C"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Water releases 200×40 = 8000 cal cooling to 0°C. Melting the ice takes 50×80 = 4000 cal; the remaining 4000 cal warms 250 g of water, giving T = 4000/(250×1) = 16°C.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$200(40-T)=50(80)+50T$\n\nIndependent check: Water releases 200×40 = 8000 cal cooling to 0°C. Melting the ice takes 50×80 = 4000 cal; the remaining 4000 cal warms 250 g of water, giving T = 4000/(250×1) = 16°C.",
+ "solution": "Heat lost by the water equals the heat needed to melt the ice and warm the melted ice to $T$.\n$$200(40-T)=50(80)+50T$$\nSolving gives $T=16^\\circ$C.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $50$ g piece of ice at $0^\\circ$C is added to $200$ g of water at $40^\\circ$C. Find the final temperature. Take the specific heat capacity of water as $1\\ \\text{cal g}^{-1}\\, ^\\circ\\text{C}^{-1}$ and the latent heat of fusion of ice as $80\\ \\text{cal g}^{-1}$.",
+  "options": [
+   "$8^\\circ$C",
+   "$16^\\circ$C",
+   "$20^\\circ$C",
+   "$32^\\circ$C"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$200(40-T)=50(80)+50T$",
+  "distractor_notes": "A: Double-counts the melted ice in the mass warmed. C: Omits the melted ice from the final warming term. D: Ignores the latent heat required to melt the ice."
+ },
+ "variant_of": "g2473552598cf",
+ "author_model": "openai/gpt-6-luna-pro"
+}

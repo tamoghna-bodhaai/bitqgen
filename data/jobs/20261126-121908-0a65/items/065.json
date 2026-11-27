@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "Which of the following sets of quantum numbers $(n, l, m, s)$ is not permissible for an electron in an atom?",
+ "stem": "Which set of quantum numbers $(n,l,m,s)$ is not permissible for an electron?",
  "options": [
-  "$3, 2, -2, +\\dfrac{1}{2}$",
-  "$4, 0, 0, -\\dfrac{1}{2}$",
-  "$3, 1, -2, +\\dfrac{1}{2}$",
-  "$2, 1, +1, -\\dfrac{1}{2}$"
+  "$(2,2,0,+\\dfrac{1}{2})$",
+  "$(3,0,0,-\\dfrac{1}{2})$",
+  "$(4,3,-3,+\\dfrac{1}{2})$",
+  "$(2,1,0,+\\dfrac{1}{2})$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Rules: l = 0..n-1, m = -l..+l, s = ±1/2. (C) has l=1 but m=-2, which lies outside [-1, +1], so it is not permissible. A, B, D all satisfy the rules (verified numerically).",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an electron, l must be an integer from 0 to n−1. Option (A) has n=2 and l=2, so it is not permissible; the others satisfy the rules.",
+   "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The rules governing the allowed values of quantum numbers are:\n1. Principal quantum number: $n = 1, 2, 3, \\dots$\n2. Azimuthal quantum number: $l = 0, 1, 2, \\dots, (n - 1)$\n3. Magnetic quantum number: $m = -l, \\dots, 0, \\dots, +l$ (i.e., $|m| \\le l$)\n4. Spin quantum number: $s = \\pm \\dfrac{1}{2}$\n\nEvaluating the options:\n- For $3, 2, -2, +\\dfrac{1}{2}$: $n = 3 \\implies l \\in \\{0, 1, 2\\}$. For $l = 2$, $m \\in \\{-2, -1, 0, +1, +2\\}$, and $s = +\\dfrac{1}{2}$. This is permissible ($3d$ orbital).\n- For $4, 0, 0, -\\dfrac{1}{2}$: $n = 4 \\implies l = 0$ is valid, which gives $m = 0$, and $s = -\\dfrac{1}{2}$. This is permissible ($4s$ orbital).\n- For $3, 1, -2, +\\dfrac{1}{2}$: Here $l = 1$. The allowed values of $m$ are $-1, 0, +1$. The given value $m = -2$ violates $|m| \\le l$. Thus, this set is not permissible.\n- For $2, 1, +1, -\\dfrac{1}{2}$: $n = 2 \\implies l = 1$ is valid, giving $m \\in \\{-1, 0, +1\\}$, and $s = -\\dfrac{1}{2}$. This is permissible ($2p$ orbital).\n\nTherefore, the set in option C is not permissible.\n\nIndependent check: Rules: l = 0..n-1, m = -l..+l, s = ±1/2. (C) has l=1 but m=-2, which lies outside [-1, +1], so it is not permissible. A, B, D all satisfy the rules (verified numerically).",
+ "working": "$l$ must be an integer from $0$ to $n-1$; $m=-l,\\ldots,+l$; $s=\\pm\\dfrac{1}{2}$. For A, $n=2$ allows only $l=0,1$, so $l=2$ is not permissible. The other sets satisfy all constraints.\n\nIndependent check: For an electron, l must be an integer from 0 to n−1. Option (A) has n=2 and l=2, so it is not permissible; the others satisfy the rules.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Which of the following sets of quantum numbers $(n, l, m, s)$ is not permissible for an electron in an atom?",
+  "stem": "Which set of quantum numbers $(n,l,m,s)$ is not permissible for an electron?",
   "options": [
-   "$3, 2, -2, +\\dfrac{1}{2}$",
-   "$4, 0, 0, -\\dfrac{1}{2}$",
-   "$3, 1, -2, +\\dfrac{1}{2}$",
-   "$2, 1, +1, -\\dfrac{1}{2}$"
+   "$(2,2,0,+\\dfrac{1}{2})$",
+   "$(3,0,0,-\\dfrac{1}{2})$",
+   "$(4,3,-3,+\\dfrac{1}{2})$",
+   "$(2,1,0,+\\dfrac{1}{2})$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The rules governing the allowed values of quantum numbers are:\n1. Principal quantum number: $n = 1, 2, 3, \\dots$\n2. Azimuthal quantum number: $l = 0, 1, 2, \\dots, (n - 1)$\n3. Magnetic quantum number: $m = -l, \\dots, 0, \\dots, +l$ (i.e., $|m| \\le l$)\n4. Spin quantum number: $s = \\pm \\dfrac{1}{2}$\n\nEvaluating the options:\n- For $3, 2, -2, +\\dfrac{1}{2}$: $n = 3 \\implies l \\in \\{0, 1, 2\\}$. For $l = 2$, $m \\in \\{-2, -1, 0, +1, +2\\}$, and $s = +\\dfrac{1}{2}$. This is permissible ($3d$ orbital).\n- For $4, 0, 0, -\\dfrac{1}{2}$: $n = 4 \\implies l = 0$ is valid, which gives $m = 0$, and $s = -\\dfrac{1}{2}$. This is permissible ($4s$ orbital).\n- For $3, 1, -2, +\\dfrac{1}{2}$: Here $l = 1$. The allowed values of $m$ are $-1, 0, +1$. The given value $m = -2$ violates $|m| \\le l$. Thus, this set is not permissible.\n- For $2, 1, +1, -\\dfrac{1}{2}$: $n = 2 \\implies l = 1$ is valid, giving $m \\in \\{-1, 0, +1\\}$, and $s = -\\dfrac{1}{2}$. This is permissible ($2p$ orbital).\n\nTherefore, the set in option C is not permissible.",
-  "distractor_notes": "Option A: A student mistakenly considers $m = -2$ invalid because of the negative sign, forgetting that $m$ ranges from $-l$ to $+l$.\nOption B: A student wrongly assumes $l = 0$ and $m = 0$ represents an unallowed or empty state, forgetting that $l = 0$ defines an $s$-orbital.\nOption D: A student misremembers that $m = +1$ requires $l > 1$, falsely eliminating a standard $2p$ electron.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$l$ must be an integer from $0$ to $n-1$; $m=-l,\\ldots,+l$; $s=\\pm\\dfrac{1}{2}$. For A, $n=2$ allows only $l=0,1$, so $l=2$ is not permissible. The other sets satisfy all constraints.",
+  "distractor_notes": "B: Valid $s$ orbital set; C: Valid $4f$ set with $m=-3$; D: Valid $2p$ set."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

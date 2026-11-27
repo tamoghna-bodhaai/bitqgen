@@ -1,0 +1,68 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Nuclei",
+  "subtopic": "Binding energy",
+  "archetype": "mass-defect computation",
+  "brief": "Given atomic masses of parent, daughter and alpha particle, compute Q-value/energy released in alpha decay using mass defect; medium-difficulty numerical.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:25",
+   "2022:29",
+   "2026s2:5"
+  ]
+ },
+ "status": "ok",
+ "stem": "The neutral atomic masses of a parent nucleus, its daughter nucleus and a helium atom are $226.0250$ u, $222.0174$ u and $4.0026$ u, respectively. Find the energy released in the $\\alpha$ decay. Take $1$ u $=931.5$ MeV/$c^2$.",
+ "options": [
+  "$4.66$ MeV",
+  "$2.33$ MeV",
+  "$9.32$ MeV",
+  "$0.0050$ MeV"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mass defect = 226.0250 − 222.0174 − 4.0026 = 0.0050 u. Energy released = 0.0050 × 931.5 = 4.6575 MeV ≈ 4.66 MeV.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta m=226.0250-(222.0174+4.0026)=0.0050\\ \\text{u}$.\n$Q=\\Delta m c^2=0.0050\\times931.5=4.6575\\ \\text{MeV}\\approx4.66\\ \\text{MeV}$.\n\nIndependent check: Mass defect = 226.0250 − 222.0174 − 4.0026 = 0.0050 u. Energy released = 0.0050 × 931.5 = 4.6575 MeV ≈ 4.66 MeV.",
+ "solution": "The mass defect is $.0050$ u.\n$$Q=.0050\\times 931.5=4.6575\\text{ MeV}\n$$\nHence, the energy released is approximately $4.66$ MeV.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The neutral atomic masses of a parent nucleus, its daughter nucleus and a helium atom are $226.0250$ u, $222.0174$ u and $4.0026$ u, respectively. Find the energy released in the $\\alpha$ decay. Take $1$ u $=931.5$ MeV/$c^2$.",
+  "options": [
+   "$2.33$ MeV",
+   "$4.66$ MeV",
+   "$9.32$ MeV",
+   "$0.0050$ MeV"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\Delta m=226.0250-(222.0174+4.0026)=0.0050\\ \\text{u}$.\n$Q=\\Delta m c^2=0.0050\\times931.5=4.6575\\ \\text{MeV}\\approx4.66\\ \\text{MeV}$.",
+  "distractor_notes": "A: Halves the mass-defect energy. C: Doubles the mass-defect energy. D: Uses the mass defect in u directly as energy in MeV."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus of a complex number",
+  "archetype": "modulus property",
+  "brief": "Evaluate |(1+i)/(something)|-type expression using |z₁/z₂| = |z₁|/|z₂|; quick computation, no heavy algebra.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:120",
+   "2024s2:117",
+   "2024s2:118"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\left|\\dfrac{1+i}{1-2i}\\right|$.",
+ "options": [
+  "$\\dfrac{\\sqrt{10}}{5}$",
+  "$\\dfrac{\\sqrt{5}}{5}$",
+  "$\\sqrt{2}$",
+  "$\\sqrt{5}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\left|\\frac{1+i}{1-2i}\\right|=\\frac{|1+i|}{|1-2i|}=\\frac{\\sqrt2}{\\sqrt5}=\\frac{\\sqrt{10}}5\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\left|\\dfrac{1+i}{1-2i}\\right|=\\dfrac{|1+i|}{|1-2i|}=\\dfrac{\\sqrt{2}}{\\sqrt{5}}=\\dfrac{\\sqrt{10}}{5}$\n\nIndependent check: \\(\\left|\\frac{1+i}{1-2i}\\right|=\\frac{|1+i|}{|1-2i|}=\\frac{\\sqrt2}{\\sqrt5}=\\frac{\\sqrt{10}}5\\).",
+ "solution": "Using $|z_1/z_2|=|z_1|/|z_2|$,\n$$\\left|\\frac{1+i}{1-2i}\\right|=\\frac{\\sqrt{1^2+1^2}}{\\sqrt{1^2+(-2)^2}}=\\frac{\\sqrt{2}}{\\sqrt{5}}=\\frac{\\sqrt{10}}{5}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\left|\\dfrac{1+i}{1-2i}\\right|$.",
+  "options": [
+   "$\\dfrac{\\sqrt{5}}{5}$",
+   "$\\dfrac{\\sqrt{10}}{5}$",
+   "$\\sqrt{2}$",
+   "$\\sqrt{5}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\left|\\dfrac{1+i}{1-2i}\\right|=\\dfrac{|1+i|}{|1-2i|}=\\dfrac{\\sqrt{2}}{\\sqrt{5}}=\\dfrac{\\sqrt{10}}{5}$",
+  "distractor_notes": "A: Uses an incorrect numerator modulus.\\nC: Omits the denominator modulus.\\nD: Uses the denominator modulus as the quotient."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

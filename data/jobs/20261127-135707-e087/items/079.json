@@ -1,0 +1,68 @@
+{
+ "qno": 79,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 79,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Bond order and bond length (resonance)",
+  "archetype": "ordering",
+  "brief": "Order a set of species like O2, O2+, O2−, O22− and NO+ by bond length/bond order using MO reasoning, combined with a resonance-bond-length comparison (e.g., carbonate C–O bonds) — tough multi-species ranking.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:40",
+   "2025s2:47",
+   "2021:69"
+  ]
+ },
+ "status": "ok",
+ "stem": "Using MO bond orders to infer relative bond lengths, choose the increasing bond-length order for the listed diatomic species and the correct resonance description of $\\text{CO}_3^{2-}$.",
+ "options": [
+  "$\\text{NO}^+<\\text{O}_2<\\text{O}_2^+<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$",
+  "$\\text{O}_2^{2-}<\\text{O}_2^-<\\text{O}_2<\\text{O}_2^+<\\text{NO}^+$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$",
+  "$\\text{NO}^+<\\text{O}_2^+<\\text{O}_2<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has one $\\text{C}=\\text{O}$ bond and two $\\text{C}-\\text{O}$ bonds",
+  "$\\text{NO}^+<\\text{O}_2^+<\\text{O}_2<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Bond orders are NO⁺ = 3, O₂⁺ = 2.5, O₂ = 2, O₂⁻ = 1.5, and O₂²⁻ = 1, so bond length increases in the reverse order. Carbonate has three equivalent C–O bonds with average bond order 4/3 due to resonance.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Bond orders: $\\text{NO}^+=3$, $\\text{O}_2^+=2.5$, $\\text{O}_2=2$, $\\text{O}_2^-=1.5$, $\\text{O}_2^{2-}=1$; bond length increases as bond order decreases. In $\\text{CO}_3^{2-}$, average $\\text{C}-\\text{O}$ bond order $=\\dfrac{2+1+1}{3}=\\dfrac{4}{3}$; resonance makes the three bonds equal.\n\nIndependent check: Bond orders are NO⁺ = 3, O₂⁺ = 2.5, O₂ = 2, O₂⁻ = 1.5, and O₂²⁻ = 1, so bond length increases in the reverse order. Carbonate has three equivalent C–O bonds with average bond order 4/3 due to resonance.",
+ "solution": "Bond length decreases as bond order increases. The bond orders are $3, 2.5, 2, 1.5, 1$ for $\\text{NO}^+$, $\\text{O}_2^+$, $\\text{O}_2$, $\\text{O}_2^-$, $\\text{O}_2^{2-}$, respectively, giving the stated increasing bond-length order.\nIn $\\text{CO}_3^{2-}$, resonance makes the three $\\text{C}-\\text{O}$ bonds equivalent, with average bond order $\n$$\\dfrac{2+1+1}{3}=\\dfrac{4}{3}$$",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Using MO bond orders to infer relative bond lengths, choose the increasing bond-length order for the listed diatomic species and the correct resonance description of $\\text{CO}_3^{2-}$.",
+  "options": [
+   "$\\text{NO}^+<\\text{O}_2^+<\\text{O}_2<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$",
+   "$\\text{O}_2^{2-}<\\text{O}_2^-<\\text{O}_2<\\text{O}_2^+<\\text{NO}^+$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$",
+   "$\\text{NO}^+<\\text{O}_2^+<\\text{O}_2<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has one $\\text{C}=\\text{O}$ bond and two $\\text{C}-\\text{O}$ bonds",
+   "$\\text{NO}^+<\\text{O}_2<\\text{O}_2^+<\\text{O}_2^-<\\text{O}_2^{2-}$; carbonate has three equal $\\text{C}-\\text{O}$ bonds of average bond order $\\dfrac{4}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Bond orders: $\\text{NO}^+=3$, $\\text{O}_2^+=2.5$, $\\text{O}_2=2$, $\\text{O}_2^-=1.5$, $\\text{O}_2^{2-}=1$; bond length increases as bond order decreases. In $\\text{CO}_3^{2-}$, average $\\text{C}-\\text{O}$ bond order $=\\dfrac{2+1+1}{3}=\\dfrac{4}{3}$; resonance makes the three bonds equal.",
+  "distractor_notes": "B: Orders by increasing bond order rather than bond length; C: Treats one resonance form as a fixed structure; D: Reverses the relative bond lengths of $\\text{O}_2^+$ and $\\text{O}_2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

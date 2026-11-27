@@ -22,20 +22,20 @@
  "status": "ok",
  "stem": "Which of the following sentences should be the opening sentence of a coherent paragraph formed by them?",
  "options": [
-  "Consequently, any significant disruption to marine currents can lead to catastrophic shifts in global weather patterns.",
-  "Oceans play a fundamental role in regulating the Earth's climate by absorbing vast amounts of solar radiation.",
-  "They distribute this stored heat across the globe through deep-water and surface ocean currents.",
-  "This continuous circulation prevents extreme temperature variations between equatorial and polar regions."
+  "As a result, the practice can help reduce the amount of waste sent to landfills.",
+  "This material can then be added to gardens to improve the soil.",
+  "Composting turns organic waste, such as food scraps and dry leaves, into a nutrient-rich material.",
+  "The process also gives households a practical way to manage biodegradable refuse."
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "B introduces the topic (oceans absorb solar radiation) with no backward references. C's 'They' and 'this stored heat' refer to B; D's 'This continuous circulation' refers to C's currents; A's 'Consequently' concludes from D. Order: B-C-D-A, so opening sentence is B.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "(B) introduces composting and the material it produces; (C) and (D) then refer back to that process or material, and (A) gives a resulting benefit.",
    "answer": "B",
    "confidence": 0.99,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "An opening sentence must introduce the primary subject and central theme independently, without relying on backward-referencing pronouns, demonstratives, or transition markers. The sentence in option B introduces the subject 'Oceans' and their primary function of absorbing solar radiation without any prerequisite context. Following this opening, option C elaborates using the pronoun 'They' and the reference 'this stored heat'. Next, option D refers to the currents with 'This continuous circulation'. Finally, option A concludes with the transitional cause-and-effect marker 'Consequently'. Thus, the coherent logical sequence is B -> C -> D -> A, making B the only correct opening sentence.\n\nIndependent check: B introduces the topic (oceans absorb solar radiation) with no backward references. C's 'They' and 'this stored heat' refer to B; D's 'This continuous circulation' refers to C's currents; A's 'Consequently' concludes from D. Order: B-C-D-A, so opening sentence is B.",
- "solution": "",
+ "working": "B introduces composting and defines its product without needing prior context. C’s “This material” refers to the product in B; D’s “The process” refers to composting; A’s “As a result” signals a consequence, so neither can open the paragraph.\n\nIndependent check: (B) introduces composting and the material it produces; (C) and (D) then refer back to that process or material, and (A) gives a resulting benefit.",
+ "solution": "(C) introduces composting and explains what it produces, so it provides the context needed for the later references to “this material” and “the process.”",
  "locked": false,
  "difficulty": 2,
  "draft": {
   "stem": "Which of the following sentences should be the opening sentence of a coherent paragraph formed by them?",
   "options": [
-   "Consequently, any significant disruption to marine currents can lead to catastrophic shifts in global weather patterns.",
-   "Oceans play a fundamental role in regulating the Earth's climate by absorbing vast amounts of solar radiation.",
-   "They distribute this stored heat across the globe through deep-water and surface ocean currents.",
-   "This continuous circulation prevents extreme temperature variations between equatorial and polar regions."
+   "As a result, the practice can help reduce the amount of waste sent to landfills.",
+   "Composting turns organic waste, such as food scraps and dry leaves, into a nutrient-rich material.",
+   "This material can then be added to gardens to improve the soil.",
+   "The process also gives households a practical way to manage biodegradable refuse."
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "An opening sentence must introduce the primary subject and central theme independently, without relying on backward-referencing pronouns, demonstratives, or transition markers. The sentence in option B introduces the subject 'Oceans' and their primary function of absorbing solar radiation without any prerequisite context. Following this opening, option C elaborates using the pronoun 'They' and the reference 'this stored heat'. Next, option D refers to the currents with 'This continuous circulation'. Finally, option A concludes with the transitional cause-and-effect marker 'Consequently'. Thus, the coherent logical sequence is B -> C -> D -> A, making B the only correct opening sentence.",
-  "distractor_notes": "Option A is incorrect because it opens with the conjunctive adverb 'Consequently', which denotes a conclusion or consequence of an earlier statement.\nOption C is incorrect because it uses the personal pronoun 'They' and the demonstrative phrase 'this stored heat', requiring a preceding noun phrase to establish reference.\nOption D is incorrect because 'This continuous circulation' is a demonstrative reference that depends on the prior mention of ocean currents.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "B introduces composting and defines its product without needing prior context. C’s “This material” refers to the product in B; D’s “The process” refers to composting; A’s “As a result” signals a consequence, so neither can open the paragraph.",
+  "distractor_notes": "A: consequence marker requires prior explanation. C: “This material” has no antecedent. D: “The process” refers to a previously introduced process."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

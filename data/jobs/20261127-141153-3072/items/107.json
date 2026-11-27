@@ -1,0 +1,68 @@
+{
+ "qno": 107,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 107,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Arithmetic progression",
+  "archetype": "sum to n terms",
+  "brief": "Given sum of first n terms and a condition on nth term, find first term and common difference; moderate algebra.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:109",
+   "2022:113",
+   "2021:148"
+  ]
+ },
+ "status": "ok",
+ "stem": "The sum of the first $10$ terms of an AP is $180$. If its $10$th term is three times its first, find $(a,d)$.",
+ "options": [
+  "$(18,0)$",
+  "$(2,9)$",
+  "$(\\dfrac{9}{2},1)$",
+  "$(9,2)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using S₁₀=5(2a+9d)=180 gives 2a+9d=36. The condition a+9d=3a gives 9d=2a. Solving yields a=9 and d=2.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$S_{10}=5(2a+9d)=180\\Rightarrow 2a+9d=36;\\quad a+9d=3a\\Rightarrow 9d=2a;\\quad 4a=36\\Rightarrow (a,d)=(9,2).$\n\nIndependent check: Using S₁₀=5(2a+9d)=180 gives 2a+9d=36. The condition a+9d=3a gives 9d=2a. Solving yields a=9 and d=2.",
+ "solution": "For an AP, $S_{10}=5(2a+9d)=180$, so $2a+9d=36$. The condition $a+9d=3a$ gives $9d=2a$.\n$$4a=36\\implies a=9,\\tag*{}$$\nso $d=2$ and $(a,d)=(9,2)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum of the first $10$ terms of an AP is $180$. If its $10$th term is three times its first, find $(a,d)$.",
+  "options": [
+   "$(9,2)$",
+   "$(2,9)$",
+   "$(\\dfrac{9}{2},1)$",
+   "$(18,0)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$S_{10}=5(2a+9d)=180\\Rightarrow 2a+9d=36;\\quad a+9d=3a\\Rightarrow 9d=2a;\\quad 4a=36\\Rightarrow (a,d)=(9,2).$",
+  "distractor_notes": "B: swaps the first term and common difference; C: omits the factor $\\dfrac{1}{2}$ in the sum formula; D: assumes a constant AP and ignores the term condition."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

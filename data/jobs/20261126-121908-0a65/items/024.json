@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Monochromatic light of frequency $\\nu$ $(\\nu > \\nu_0)$ is incident on a metal having threshold frequency $\\nu_0$. If the intensity of the light is doubled at constant frequency, which of the following quantities is doubled?",
+ "stem": "Two beams of frequencies $\\nu_1<\\nu_2$, both above threshold, have equal photon flux and equal photoelectric yield at the same metal surface. Which comparison is correct?",
  "options": [
-  "Threshold frequency",
-  "Stopping potential",
-  "Saturation photocurrent",
-  "Maximum kinetic energy of photoelectrons"
+  "$I_{s2}>I_{s1},\\ V_{02}=V_{01},\\ \\nu_0$ is unchanged",
+  "$I_{s2}=I_{s1},\\ V_{02}>V_{01},\\ \\nu_0$ is unchanged",
+  "$I_{s2}=I_{s1},\\ V_{02}=V_{01},\\ \\nu_0$ increases",
+  "$I_{s2}<I_{s1},\\ V_{02}>V_{01},\\ \\nu_0$ is unchanged"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "At fixed frequency, doubling intensity doubles the photon flux, hence doubles the number of emitted photoelectrons per second and the saturation photocurrent. Threshold frequency is a material constant; Kmax = h(ν − ν0) and stopping potential V0 = h(ν − ν0)/e depend only on frequency, so they are unchanged.",
-   "answer": "C",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Equal photon flux and yield give equal saturation currents. Since eV₀ = h(ν − ν₀), the higher frequency gives a greater stopping potential; the metal’s threshold frequency is unchanged.",
+   "answer": "B",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "According to Einstein's photoelectric equation:\n$$K_{\\max} = h\\nu - h\\nu_0 = eV_0$$\nSince the frequency $\\nu$ is unchanged:\n1. The threshold frequency $\\nu_0$ is a characteristic property of the metal surface and does not depend on the incident light.\n2. The maximum kinetic energy $K_{\\max}$ and the stopping potential $V_0$ depend only on the incident frequency $\\nu$ and the work function $\\Phi_0 = h\\nu_0$, so both remain unchanged.\n3. The intensity of light is given by $I = n h\\nu$, where $n$ is the number of incident photons per unit area per unit time. Doubling the intensity at constant frequency doubles the photon flux $n$. Consequently, the number of photoelectrons emitted per second doubles, so the saturation photocurrent is doubled.\n\nIndependent check: At fixed frequency, doubling intensity doubles the photon flux, hence doubles the number of emitted photoelectrons per second and the saturation photocurrent. Threshold frequency is a material constant; Kmax = h(ν − ν0) and stopping potential V0 = h(ν − ν0)/e depend only on frequency, so they are unchanged.",
+ "working": "Equal photon flux and yield give equal rates of photoelectron emission: $I_{s2}=I_{s1}$.<br>$eV_0=h(\\nu-\\nu_0)$, so $\\nu_2>\\nu_1$ gives $V_{02}>V_{01}$.<br>$\\nu_0$ is a property of the metal surface and is unchanged.\n\nIndependent check: Equal photon flux and yield give equal saturation currents. Since eV₀ = h(ν − ν₀), the higher frequency gives a greater stopping potential; the metal’s threshold frequency is unchanged.",
  "solution": "",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "Monochromatic light of frequency $\\nu$ $(\\nu > \\nu_0)$ is incident on a metal having threshold frequency $\\nu_0$. If the intensity of the light is doubled at constant frequency, which of the following quantities is doubled?",
+  "stem": "Two beams of frequencies $\\nu_1<\\nu_2$, both above threshold, have equal photon flux and equal photoelectric yield at the same metal surface. Which comparison is correct?",
   "options": [
-   "Threshold frequency",
-   "Stopping potential",
-   "Saturation photocurrent",
-   "Maximum kinetic energy of photoelectrons"
+   "$I_{s2}>I_{s1},\\ V_{02}=V_{01},\\ \\nu_0$ is unchanged",
+   "$I_{s2}=I_{s1},\\ V_{02}>V_{01},\\ \\nu_0$ is unchanged",
+   "$I_{s2}=I_{s1},\\ V_{02}=V_{01},\\ \\nu_0$ increases",
+   "$I_{s2}<I_{s1},\\ V_{02}>V_{01},\\ \\nu_0$ is unchanged"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "According to Einstein's photoelectric equation:\n$$K_{\\max} = h\\nu - h\\nu_0 = eV_0$$\nSince the frequency $\\nu$ is unchanged:\n1. The threshold frequency $\\nu_0$ is a characteristic property of the metal surface and does not depend on the incident light.\n2. The maximum kinetic energy $K_{\\max}$ and the stopping potential $V_0$ depend only on the incident frequency $\\nu$ and the work function $\\Phi_0 = h\\nu_0$, so both remain unchanged.\n3. The intensity of light is given by $I = n h\\nu$, where $n$ is the number of incident photons per unit area per unit time. Doubling the intensity at constant frequency doubles the photon flux $n$. Consequently, the number of photoelectrons emitted per second doubles, so the saturation photocurrent is doubled.",
-  "distractor_notes": "Option A: Confuses an intrinsic material property (work function / threshold frequency) with radiation parameters.\nOption B: Based on the classical wave theory misconception that higher intensity provides more energy to each electron, requiring a higher stopping potential.\nOption D: Classical wave theory error; maximum kinetic energy depends strictly on the photon frequency $\\nu$, not on the intensity.",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Equal photon flux and yield give equal rates of photoelectron emission: $I_{s2}=I_{s1}$.<br>$eV_0=h(\\nu-\\nu_0)$, so $\\nu_2>\\nu_1$ gives $V_{02}>V_{01}$.<br>$\\nu_0$ is a property of the metal surface and is unchanged.",
+  "distractor_notes": "A: wrongly assigns a stopping-potential change to intensity rather than frequency.<br>C: wrongly assumes the threshold frequency depends on incident frequency.<br>D: wrongly predicts lower saturation current despite equal photon flux and yield."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

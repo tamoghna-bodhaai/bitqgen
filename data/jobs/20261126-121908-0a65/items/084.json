@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Choose the word which is nearest in meaning to the given word.\n\n**DILIGENT**",
+ "stem": "Choose the word which is nearest in meaning to the given word.\n\n**RELUCTANT**",
  "options": [
-  "Hardworking",
+  "Unwilling",
+  "Cheerful",
   "Careless",
-  "Hesitant",
-  "Intelligent"
+  "Confident"
  ],
  "answer": "A",
  "figure": null,
@@ -33,9 +33,9 @@
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Diligent means showing persistent, careful effort in work; nearest synonym is 'hardworking'. Careless is opposite, hesitant and intelligent are unrelated.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Reluctant” means unwilling or hesitant.",
    "answer": "A",
    "confidence": 1.0,
    "multiple_correct": false,
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The adjective 'diligent' means showing steady, earnest, and energetic effort in completing tasks or duties. A direct and exact synonym is 'hardworking'.\n\nIndependent check: Diligent means showing persistent, careful effort in work; nearest synonym is 'hardworking'. Careless is opposite, hesitant and intelligent are unrelated.",
+ "working": "Reluctant means unwilling or hesitant to do something. Cheerful describes mood; careless means inattentive; confident means self-assured.\n\nIndependent check: “Reluctant” means unwilling or hesitant.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Choose the word which is nearest in meaning to the given word.\n\n**DILIGENT**",
+  "stem": "Choose the word which is nearest in meaning to the given word.\n\n**RELUCTANT**",
   "options": [
-   "Hardworking",
+   "Unwilling",
+   "Cheerful",
    "Careless",
-   "Hesitant",
-   "Intelligent"
+   "Confident"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "The adjective 'diligent' means showing steady, earnest, and energetic effort in completing tasks or duties. A direct and exact synonym is 'hardworking'.",
-  "distractor_notes": "Option B is an antonym (careless/negligent).\nOption C describes someone showing uncertainty or reluctance, not steady industrious effort.\nOption D refers to mental capacity or sharpness, which is a desirable trait but distinct in meaning from diligent.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Reluctant means unwilling or hesitant to do something. Cheerful describes mood; careless means inattentive; confident means self-assured.",
+  "distractor_notes": "B: confuses willingness with a positive mood; C: describes lack of care; D: describes self-assurance."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

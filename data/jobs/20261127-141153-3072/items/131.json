@@ -1,0 +1,68 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Trigonometric identities",
+  "archetype": "sum-to-product",
+  "brief": "Simplify or evaluate an expression using sum-to-product and double-angle identities, e.g. prove/evaluate a compound angle expression; moderate.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:127",
+   "2024s1:108",
+   "2025s1:126"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\dfrac{\\sin 5x+\\sin x}{\\cos 5x+\\cos x}\\cdot\\dfrac{1+\\cos 2x}{\\sin 2x}$ at $x=15^\\circ$.",
+ "options": [
+  "$\\sqrt{3}$",
+  "$1$",
+  "$2-\\sqrt{3}$",
+  "$2+\\sqrt{3}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using sum-to-product, the first fraction is tan 3x. The second is cot x, so at x=15° the expression is tan 45°·cot 15° = 2+√3.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{\\sin 5x+\\sin x}{\\cos 5x+\\cos x}=\\tan 3x,\\quad \\dfrac{1+\\cos 2x}{\\sin 2x}=\\cot x;\\quad \\tan 45^\\circ\\cot 15^\\circ=2+\\sqrt{3}$.\n\nIndependent check: Using sum-to-product, the first fraction is tan 3x. The second is cot x, so at x=15° the expression is tan 45°·cot 15° = 2+√3.",
+ "solution": "Using sum-to-product identities, $\\frac{\\text{ }}{\\text{ }}$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\dfrac{\\sin 5x+\\sin x}{\\cos 5x+\\cos x}\\cdot\\dfrac{1+\\cos 2x}{\\sin 2x}$ at $x=15^\\circ$.",
+  "options": [
+   "$\\sqrt{3}$",
+   "$2+\\sqrt{3}$",
+   "$2-\\sqrt{3}$",
+   "$1$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\dfrac{\\sin 5x+\\sin x}{\\cos 5x+\\cos x}=\\tan 3x,\\quad \\dfrac{1+\\cos 2x}{\\sin 2x}=\\cot x;\\quad \\tan 45^\\circ\\cot 15^\\circ=2+\\sqrt{3}$.",
+  "distractor_notes": "A: Confuses $\\cot 15^\\circ$ with $\\tan 60^\\circ$; C: Uses the reciprocal value; D: Omits the second factor."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

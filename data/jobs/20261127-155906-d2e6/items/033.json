@@ -1,0 +1,78 @@
+{
+ "qno": 33,
+ "section": "Physics",
+ "slot": {
+  "qno": 33,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Area under v-t graph",
+  "archetype": "graph interpretation",
+  "brief": "Show a velocity–time graph (multi-segment, including a negative-velocity portion) of a particle; ask for the displacement or distance travelled in the full time interval, or average speed, requiring careful signed areas.",
+  "difficulty": 5,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:20",
+   "2023s2:4",
+   "2023s2:25"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the velocity–time graph shown, find the particle's displacement and distance travelled, respectively, during the interval shown.",
+ "options": [
+  "$(23\\ \\text{m},\\,23\\ \\text{m})$",
+  "$(28.5\\ \\text{m},\\,34\\ \\text{m})$",
+  "$(23\\ \\text{m},\\,34\\ \\text{m})$",
+  "$(34\\ \\text{m},\\,34\\ \\text{m})$"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q033_stem_v0.png",
+  "width_pct": 75,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Signed area: 6 + 18 + 4 − 4 − 1 = 23 m. Total absolute area: 6 + 18 + 4.5 + 0.5 + 4 + 1 = 34 m.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A_+=\\frac12(2)(6)+(3)(6)+\\frac12(1.5)(6)=28.5\\ \\text{m}$; $A_-=\\frac12(0.5)(2)+(2)(2)+\\frac12(1)(2)=5.5\\ \\text{m}$. $(\\Delta x,s)=(A_+-A_-,A_++A_-)=(23,34)\\ \\text{m}$.\n\nIndependent check: Signed area: 6 + 18 + 4 − 4 − 1 = 23 m. Total absolute area: 6 + 18 + 4.5 + 0.5 + 4 + 1 = 34 m.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For the velocity–time graph shown, find the particle's displacement and distance travelled, respectively, during the interval shown.",
+  "options": [
+   "$(23\\ \\text{m},\\,23\\ \\text{m})$",
+   "$(28.5\\ \\text{m},\\,34\\ \\text{m})$",
+   "$(23\\ \\text{m},\\,34\\ \\text{m})$",
+   "$(34\\ \\text{m},\\,34\\ \\text{m})$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw perpendicular axes with horizontal axis labeled $t$ (s) and vertical axis labeled $v$ (m s$^{-1}$); mark $v=0$ as the horizontal axis. Mark time ticks at $0,2,5,7,9,10$ and velocity ticks at $-2,0,6$. Join these points in order by straight segments: $(0,0)$, $(2,6)$, $(5,6)$, $(7,-2)$, $(9,-2)$, $(10,0)$. Label each vertex with its coordinate $(t,v)$.",
+   "smiles": null
+  },
+  "difficulty_estimate": 5,
+  "working": "$A_+=\\frac12(2)(6)+(3)(6)+\\frac12(1.5)(6)=28.5\\ \\text{m}$; $A_-=\\frac12(0.5)(2)+(2)(2)+\\frac12(1)(2)=5.5\\ \\text{m}$. $(\\Delta x,s)=(A_+-A_-,A_++A_-)=(23,34)\\ \\text{m}$.",
+  "distractor_notes": "A: uses signed area for distance as well as displacement. B: ignores the below-axis area when calculating displacement. D: adds unsigned areas to obtain displacement."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

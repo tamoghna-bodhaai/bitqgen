@@ -1,0 +1,90 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "SN1 reactivity and carbocation stability",
+  "archetype": "compare-and-rank",
+  "brief": "Provide structures of three alkyl/benzyl halides in a figure; rank their rates of solvolysis (SN1) and justify via carbocation stability.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:58",
+   "2023s2:37",
+   "2026s2:35"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "flagged",
+ "stem": "The compounds shown in the figure undergo solvolysis under identical conditions. What is their rate order by the $\\text{S}_\\text{N}1$ mechanism?",
+ "options": [
+  "(ii) > (i) > (iii)",
+  "(i) > (ii) > (iii)",
+  "(iii) > (ii) > (i)",
+  "(ii) > (iii) > (i)"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q042_stem_v2.png",
+  "width_pct": 49,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "SN1 rate follows benzylic carbocation stability. The para-methoxy group stabilizes it by resonance, while para-nitro destabilizes it; therefore (iii) > (ii) > (i).",
+   "answer": "C",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "SN1 rate depends on stability of the benzylic carbocation. (iii) p-methoxybenzyl chloride: OMe donates by resonance (+M), strongly stabilizing the cation → fastest. (ii) benzyl chloride: unsubstituted reference. (i) p-nitrobenzyl chloride: NO2 withdraws by -M/-I, destabilizing the cation → slowest. Order: (iii) > (ii) > (i).",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [
+  "unverified: solvers disagreed with the key after all revisions — review manually"
+ ],
+ "working": "Ionization gives benzylic carbocations; the rate-determining step is C–Cl bond cleavage.\nThe $p$-methoxy group stabilizes the benzylic cation by resonance donation.\nThe unsubstituted benzyl cation is intermediate in stability.\nThe $p$-nitro group withdraws electron density and destabilizes the cation.\nRate order: (i) > (ii) > (iii).",
+ "solution": "In an $\\text{S}_\\text{N}1$ reaction, the rate-determining C–Cl bond cleavage forms a benzylic carbocation. The $p$-methoxy group stabilizes it by resonance, while the $p$-nitro group destabilizes it; hence the rate order is $(i)>(ii)>(iii)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The compounds shown in the figure undergo solvolysis under identical conditions. What is their rate order by the $\\text{S}_\\text{N}1$ mechanism?",
+  "options": [
+   "(i) > (ii) > (iii)",
+   "(ii) > (i) > (iii)",
+   "(iii) > (ii) > (i)",
+   "(ii) > (iii) > (i)"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw three separate benzene-ring structures in one horizontal row, labeled explicitly (i), (ii), and (iii) from left to right. For (i), draw a benzene ring with a –CH2Cl group and a –OCH3 group at para positions. For (ii), draw a benzene ring with only a –CH2Cl group. For (iii), draw a benzene ring with a –CH2Cl group and a –NO2 group at para positions. Show the substituent bonds and labels clearly; include no arrows or other text.",
+   "smiles": "COc1ccc(CCl)cc1.ClCc1ccccc1.[O-][N+](=O)c1ccc(CCl)cc1"
+  },
+  "difficulty_estimate": 2,
+  "working": "Ionization gives benzylic carbocations; the rate-determining step is C–Cl bond cleavage.\nThe $p$-methoxy group stabilizes the benzylic cation by resonance donation.\nThe unsubstituted benzyl cation is intermediate in stability.\nThe $p$-nitro group withdraws electron density and destabilizes the cation.\nRate order: (i) > (ii) > (iii).",
+  "distractor_notes": "B: places the unsubstituted benzyl cation above the resonance-stabilized $p$-methoxy cation. C: reverses the stability effect of the electron-donating and electron-withdrawing substituents. D: ranks the $p$-nitro compound above the unsubstituted compound."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

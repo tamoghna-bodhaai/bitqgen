@@ -1,0 +1,71 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "IUPAC nomenclature",
+  "archetype": "fact recall",
+  "brief": "Ask to identify the functional group or general rule from nomenclature for a simple branched compound (e.g., naming with lowest locants)",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:45",
+   "2022:32",
+   "2022:44"
+  ],
+  "origin": "variant",
+  "bank_ref": "g440144bb9e74"
+ },
+ "status": "ok",
+ "stem": "The correct IUPAC name of the compound $\\text{CH}_3\\text{CH}(\\text{CH}_3)\\text{CH}_2\\text{C}\\equiv\\text{CH}$ is:",
+ "options": [
+  "2-methylpent-4-yne",
+  "3-methylpent-1-yne",
+  "4-methylpent-1-yne",
+  "4-methylpent-2-yne"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Choose the five-carbon chain containing the triple bond and number from the alkyne end: pent-1-yne, with a methyl group at C4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "Longest chain containing the triple bond has 5 carbon atoms: pent-yne.\nNumber from the end nearer the triple bond: triple-bond locant $1$; methyl locant $4$.\nName: 4-methylpent-1-yne.\n\nIndependent check: Choose the five-carbon chain containing the triple bond and number from the alkyne end: pent-1-yne, with a methyl group at C4.",
+ "solution": "The longest chain containing the triple bond has five carbons. Number from the end nearer the triple bond to give it the lowest locant:\n$$\\text{CH}\\equiv\\text{C}-\\text{CH}_2-\\text{CH}(\\text{CH}_3)-\\text{CH}_3$$\nThe triple bond is at C1 and the methyl group at C4, so the name is 4-methylpent-1-yne.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The correct IUPAC name of the compound $\\text{CH}_3\\text{CH}(\\text{CH}_3)\\text{CH}_2\\text{C}\\equiv\\text{CH}$ is:",
+  "options": [
+   "2-methylpent-4-yne",
+   "4-methylpent-1-yne",
+   "3-methylpent-1-yne",
+   "4-methylpent-2-yne"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Longest chain containing the triple bond has 5 carbon atoms: pent-yne.\nNumber from the end nearer the triple bond: triple-bond locant $1$; methyl locant $4$.\nName: 4-methylpent-1-yne.",
+  "distractor_notes": "A: numbers from the wrong end, giving the triple bond a higher locant.\nC: assigns the methyl substituent an incorrect locant.\nD: assigns the triple bond an incorrect locant."
+ },
+ "variant_of": "g440144bb9e74",
+ "author_model": "openai/gpt-6-luna-pro"
+}

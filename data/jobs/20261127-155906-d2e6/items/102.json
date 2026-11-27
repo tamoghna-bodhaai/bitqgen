@@ -1,0 +1,70 @@
+{
+ "qno": 102,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 102,
+  "section": "Logical Reasoning",
+  "chapter": "Coding-Decoding",
+  "subtopic": "Coding-decoding",
+  "archetype": "letter-shift code",
+  "brief": "Simple consistent letter-shift coding shown via one sample word; ask the code for a new word using the same shift.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:88",
+   "2026s1:72",
+   "2023s2:86"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "In a certain code, **LAMP** is written as **NCOR**. How will **FROG** be written in the same code?",
+ "options": [
+  "HTQI",
+  "GSPH",
+  "HTQJ",
+  "FSPH"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Each letter shifts forward by 2: F→H, R→T, O→Q, G→I. Thus FROG→HTQI.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Each letter shifts forward by 2 places: L→N, A→C, M→O, P→R.\nFROG → H T Q I.\n\nIndependent check: Each letter shifts forward by 2: F→H, R→T, O→Q, G→I. Thus FROG→HTQI.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In a certain code, **LAMP** is written as **NCOR**. How will **FROG** be written in the same code?",
+  "options": [
+   "HTQI",
+   "GSPH",
+   "HTQJ",
+   "FSPH"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Each letter shifts forward by 2 places: L→N, A→C, M→O, P→R.\nFROG → H T Q I.",
+  "distractor_notes": "B: shifts each letter forward by 1. C: shifts the final letter by 3. D: does not apply the same shift consistently."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

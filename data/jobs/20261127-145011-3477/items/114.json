@@ -1,0 +1,56 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "Area bounded by a parabola and a straight line (or y = f(x) with y = g(x)); set up and evaluate the difference integral",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:96",
+   "2022:95",
+   "2021:106"
+  ],
+  "origin": "direct",
+  "bank_ref": "g87392b71acc8"
+ },
+ "status": "ok",
+ "stem": "Find the total area of the two bounded regions enclosed by $y=x^2$ and $y=2|x|$.",
+ "options": [
+  "$\\dfrac{4}{3}\\ \\text{square units}$",
+  "$\\dfrac{8}{3}\\ \\text{square units}$",
+  "$4\\ \\text{square units}$",
+  "$\\dfrac{16}{3}\\ \\text{square units}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g87392b71acc8 (verified in job 20261127-141153-3072)"
+ ],
+ "working": "$x^2=2|x|\\Rightarrow x=-2,0,2;\\quad A=\\int_{-2}^{0}(-2x-x^2)\\,dx+\\int_{0}^{2}(2x-x^2)\\,dx=\\dfrac{8}{3}\\ \\text{square units}$.\n\nIndependent check: The curves intersect at x = -2, 0, 2. By symmetry, total area = 2∫₀²(2x − x²) dx = 2(4/3) = 8/3.",
+ "solution": "The curves intersect where $x^2=2|x|$, giving $x=-2,0,2$. By symmetry, the total area is\n$$A=2\\int_0^2(2x-x^2)\\,dx=2\\left(4-\\frac{8}{3}\\right)=\\frac{8}{3}\\text{ square units}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g87392b71acc8",
+ "author_model": "openai/gpt-6-luna-pro"
+}

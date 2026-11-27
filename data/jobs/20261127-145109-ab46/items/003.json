@@ -1,0 +1,78 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Work, Energy and Power",
+  "subtopic": "Spring energy",
+  "archetype": "energy conservation",
+  "brief": "Show a block released from rest on top of a frictionless incline that compresses a spring at the bottom; ask the maximum compression using conservation of mechanical energy.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:16",
+   "2023s1:1",
+   "2023s2:20"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A $5\\ \\text{kg}$ block is released from rest on a frictionless $37^\\circ$ incline, $0.50\\ \\text{m}$ up the slope from an uncompressed spring fixed along it. Find its maximum compression, as shown in the figure. Take $g=10\\ \\text{m s}^{-2}$, $\\sin37^\\circ=0.6$, and $k=90\\ \\text{N m}^{-1}$.",
+ "options": [
+  "$1.00\\ \\text{m}$",
+  "$0.61\\ \\text{m}$",
+  "$0.58\\ \\text{m}$",
+  "$1.49\\ \\text{m}$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q003_stem_v2.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At maximum compression, the gravitational energy lost over distance 0.50 + x equals the spring energy: 5(10)(0.6)(0.50+x) = (1/2)(90)x². Thus 3x² − 2x − 1 = 0, giving the positive root x = 1.00 m.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 3,
+ "notes": [],
+ "working": "$mg\\sin37^\\circ(0.50+x)=\\dfrac12kx^2$ \n$30(0.50+x)=45x^2\\Rightarrow 3x^2-2x-1=0$ \n$x=\\dfrac{2+\\sqrt{16}}{6}=1.00\\ \\text{m}$\n\nIndependent check: At maximum compression, the gravitational energy lost over distance 0.50 + x equals the spring energy: 5(10)(0.6)(0.50+x) = (1/2)(90)x². Thus 3x² − 2x − 1 = 0, giving the positive root x = 1.00 m.",
+ "solution": "At maximum compression, the loss in gravitational potential energy equals the spring energy stored:\n$$mg\\sin37^\\circ(0.50+x)=\\frac12kx^2$$\n$30(0.50+x)=45x^2$, so $3x^2-2x-1=0$. The positive root is $x=1.00\\ \\text{m}$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "A $5\\ \\text{kg}$ block is released from rest on a frictionless $37^\\circ$ incline, $0.50\\ \\text{m}$ up the slope from an uncompressed spring fixed along it. Find its maximum compression, as shown in the figure. Take $g=10\\ \\text{m s}^{-2}$, $\\sin37^\\circ=0.6$, and $k=90\\ \\text{N m}^{-1}$.",
+  "options": [
+   "$0.58\\ \\text{m}$",
+   "$0.61\\ \\text{m}$",
+   "$1.00\\ \\text{m}$",
+   "$1.49\\ \\text{m}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a straight incline descending from upper left to lower right, with a horizontal reference line extending rightward from its lower end. Mark the angle between them as $37^\\circ$. Place a rectangular block on the incline above a coil spring. At the lower end, draw a rigid stop perpendicular to the incline; attach the spring to the stop, parallel to the incline and extending uphill, with its free end separated from the block by a visible gap. Add a double-headed dimension arrow parallel to the incline between the downhill face of the block and the spring's free end, labeled $0.50\\ \\text{m}$. Label the spring $k=90\\ \\text{N m}^{-1}$ and the incline 'frictionless'.",
+   "smiles": null
+  },
+  "difficulty_estimate": 4,
+  "working": "$mg\\sin37^\\circ(0.50+x)=\\dfrac12kx^2$ \n$30(0.50+x)=45x^2\\Rightarrow 3x^2-2x-1=0$ \n$x=\\dfrac{2+\\sqrt{16}}{6}=1.00\\ \\text{m}$",
+  "distractor_notes": "A: Omits the gravitational drop during spring compression. B: Uses spring energy $kx^2$ instead of $\\dfrac12kx^2$. D: Uses $mg$ rather than the component $mg\\sin37^\\circ$ along the incline."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

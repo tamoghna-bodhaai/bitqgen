@@ -1,0 +1,68 @@
+{
+ "qno": 55,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 55,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Free radical stability",
+  "archetype": "stability ordering",
+  "brief": "Rank five radicals (alkyl, allylic, benzylic with substituent variation) by stability; simple concept with substitution-pattern twist.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:31",
+   "2024s1:41",
+   "2025s2:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which option gives the correct decreasing order of stability for the following five carbon radicals?",
+ "options": [
+  "$p$-methoxybenzyl $>$ allyl $>$ benzyl $>$ isopropyl $>$ tert-butyl",
+  "Benzyl $>$ $p$-methoxybenzyl $>$ tert-butyl $>$ allyl $>$ isopropyl",
+  "Allyl $>$ benzyl $>$ $p$-methoxybenzyl $>$ isopropyl $>$ tert-butyl",
+  "$p$-methoxybenzyl $>$ benzyl $>$ allyl $>$ tert-butyl $>$ isopropyl"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Resonance stabilizes benzylic and allylic radicals; the para-methoxy group further stabilizes the benzyl radical by donation. Benzyl is more stable than allyl, and greater hyperconjugation stabilizes tert-butyl over isopropyl.",
+   "answer": "A",
+   "confidence": 0.93,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Resonance stabilisation: $p$-methoxybenzyl $>$ benzyl $>$ allyl.\nHyperconjugation stabilisation: tert-butyl $>$ isopropyl.\nOverall: $p$-methoxybenzyl $>$ benzyl $>$ allyl $>$ tert-butyl $>$ isopropyl.\n\nIndependent check: Resonance stabilizes benzylic and allylic radicals; the para-methoxy group further stabilizes the benzyl radical by donation. Benzyl is more stable than allyl, and greater hyperconjugation stabilizes tert-butyl over isopropyl.",
+ "solution": "Resonance stabilization gives $p$-methoxybenzyl $>$ benzyl $>$ allyl; the para-methoxy group further stabilizes the benzylic radical by electron donation.\nHyperconjugation stabilizes the more substituted alkyl radical: tert-butyl $>$ isopropyl.\nHence, the decreasing order is $p$-methoxybenzyl $>$ benzyl $>$ allyl $>$ tert-butyl $>$ isopropyl.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which option gives the correct decreasing order of stability for the following five carbon radicals?",
+  "options": [
+   "$p$-methoxybenzyl $>$ benzyl $>$ allyl $>$ tert-butyl $>$ isopropyl",
+   "Benzyl $>$ $p$-methoxybenzyl $>$ tert-butyl $>$ allyl $>$ isopropyl",
+   "Allyl $>$ benzyl $>$ $p$-methoxybenzyl $>$ isopropyl $>$ tert-butyl",
+   "$p$-methoxybenzyl $>$ allyl $>$ benzyl $>$ isopropyl $>$ tert-butyl"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Resonance stabilisation: $p$-methoxybenzyl $>$ benzyl $>$ allyl.\nHyperconjugation stabilisation: tert-butyl $>$ isopropyl.\nOverall: $p$-methoxybenzyl $>$ benzyl $>$ allyl $>$ tert-butyl $>$ isopropyl.",
+  "distractor_notes": "B: places the electron-donating methoxy substituent below benzyl and allyl below tert-butyl; C: overestimates allyl and reverses alkyl radical stability; D: places allyl above benzyl and reverses alkyl radical stability."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

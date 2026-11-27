@@ -1,0 +1,68 @@
+{
+ "qno": 67,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 67,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "de Broglie wavelength",
+  "archetype": "ratio of two situations",
+  "brief": "Compare de Broglie wavelength of an electron vs an alpha particle accelerated through the same potential difference (or same kinetic energy); derive the ratio from mass and charge.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:34",
+   "2025s1:39",
+   "2023s2:55"
+  ]
+ },
+ "status": "ok",
+ "stem": "An electron and an α-particle are accelerated from rest through the same potential difference. Take $m_\\alpha=4m_p$, $m_p=1836m_e$, and their charges as $e$ and $2e$, respectively. Neglect relativistic effects. What is $\\lambda_e: \\lambda_\\alpha$?",
+ "options": [
+  "$1:(12\\sqrt{102})$",
+  "$12\\sqrt{102}:1$",
+  "$\\sqrt{7344}:1$",
+  "$\\sqrt{29376}:1$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the same potential difference, \\(\\lambda=h/\\sqrt{2mqV}\\). Thus \\(\\lambda_e/\\lambda_\\alpha=\\sqrt{m_\\alpha(2e)/(m_e e)}=\\sqrt{14688}=12\\sqrt{102}.\\)",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$\n$\\dfrac{\\lambda_e}{\\lambda_\\alpha}=\\sqrt{\\dfrac{m_\\alpha(2e)}{m_e e}}=\\sqrt{8\\times1836}$\n$\\sqrt{14688}=12\\sqrt{102}$\n\nIndependent check: For the same potential difference, \\(\\lambda=h/\\sqrt{2mqV}\\). Thus \\(\\lambda_e/\\lambda_\\alpha=\\sqrt{m_\\alpha(2e)/(m_e e)}=\\sqrt{14688}=12\\sqrt{102}.\\)",
+ "solution": "For a particle accelerated through potential difference $V$, $\\lambda=h/\\sqrt{2mqV}$.\n$$\\frac{\\lambda_e}{\\lambda_\\alpha}=\\sqrt{\\frac{m_\\alpha(2e)}{m_e e}}=\\sqrt{8\\times1836}=12\\sqrt{102}$$\nHence, $\\lambda_e: \\lambda_\\alpha=12\\sqrt{102}:1$. (B)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An electron and an α-particle are accelerated from rest through the same potential difference. Take $m_\\alpha=4m_p$, $m_p=1836m_e$, and their charges as $e$ and $2e$, respectively. Neglect relativistic effects. What is $\\lambda_e: \\lambda_\\alpha$?",
+  "options": [
+   "$1:(12\\sqrt{102})$",
+   "$\\sqrt{7344}:1$",
+   "$12\\sqrt{102}:1$",
+   "$\\sqrt{29376}:1$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$\n$\\dfrac{\\lambda_e}{\\lambda_\\alpha}=\\sqrt{\\dfrac{m_\\alpha(2e)}{m_e e}}=\\sqrt{8\\times1836}$\n$\\sqrt{14688}=12\\sqrt{102}$",
+  "distractor_notes": "A: Takes the reciprocal ratio. B: Omits the factor of $2$ in the α-particle charge. D: Uses $4e$ instead of $2e$ for the α-particle charge."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

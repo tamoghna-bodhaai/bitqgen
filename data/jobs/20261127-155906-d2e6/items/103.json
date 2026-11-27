@@ -1,0 +1,70 @@
+{
+ "qno": 103,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 103,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "relation chain",
+  "brief": "A pointing puzzle ('he is the son of my grandfather's only son' style) with three-step chain; ask the exact relation of the speaker to the person pointed at.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2025s2:84",
+   "2025s1:72"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Mira, a woman, points to a man and says, “He is the son of the only daughter of my maternal grandmother.” How is Mira related to him?",
+ "options": [
+  "Sister",
+  "Mother",
+  "Daughter",
+  "Aunt"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Mira’s maternal grandmother’s only daughter is Mira’s mother. The man is her mother’s son, so Mira is his sister.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "The only daughter of Mira’s maternal grandmother is Mira’s mother. The man is her mother’s son; since Mira is a woman, he is her brother. Mira is his sister.\n\nIndependent check: Mira’s maternal grandmother’s only daughter is Mira’s mother. The man is her mother’s son, so Mira is his sister.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Mira, a woman, points to a man and says, “He is the son of the only daughter of my maternal grandmother.” How is Mira related to him?",
+  "options": [
+   "Sister",
+   "Mother",
+   "Daughter",
+   "Aunt"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "The only daughter of Mira’s maternal grandmother is Mira’s mother. The man is her mother’s son; since Mira is a woman, he is her brother. Mira is his sister.",
+  "distractor_notes": "B, C and D do not match the man being Mira’s brother."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

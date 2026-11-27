@@ -1,0 +1,68 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "Area enclosed between a parabola and a line (or two curves) needing intersection points and a signed-integral split; moderately hard with clean limits.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:95",
+   "2026s1:100",
+   "2021:119"
+  ]
+ },
+ "status": "ok",
+ "stem": "Find the total area of the two bounded regions enclosed by $y=x^2$ and $y=2|x|$.",
+ "options": [
+  "$\\dfrac{4}{3}\\ \\text{square units}$",
+  "$\\dfrac{8}{3}\\ \\text{square units}$",
+  "$4\\ \\text{square units}$",
+  "$\\dfrac{16}{3}\\ \\text{square units}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The curves intersect at x = -2, 0, 2. By symmetry, total area = 2∫₀²(2x − x²) dx = 2(4/3) = 8/3.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x^2=2|x|\\Rightarrow x=-2,0,2;\\quad A=\\int_{-2}^{0}(-2x-x^2)\\,dx+\\int_{0}^{2}(2x-x^2)\\,dx=\\dfrac{8}{3}\\ \\text{square units}$.\n\nIndependent check: The curves intersect at x = -2, 0, 2. By symmetry, total area = 2∫₀²(2x − x²) dx = 2(4/3) = 8/3.",
+ "solution": "The curves intersect where $x^2=2|x|$, giving $x=-2,0,2$. By symmetry, the total area is\n$$A=2\\int_0^2(2x-x^2)\\,dx=2\\left(4-\\frac{8}{3}\\right)=\\frac{8}{3}\\text{ square units}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Find the total area of the two bounded regions enclosed by $y=x^2$ and $y=2|x|$.",
+  "options": [
+   "$\\dfrac{4}{3}\\ \\text{square units}$",
+   "$\\dfrac{8}{3}\\ \\text{square units}$",
+   "$4\\ \\text{square units}$",
+   "$\\dfrac{16}{3}\\ \\text{square units}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$x^2=2|x|\\Rightarrow x=-2,0,2;\\quad A=\\int_{-2}^{0}(-2x-x^2)\\,dx+\\int_{0}^{2}(2x-x^2)\\,dx=\\dfrac{8}{3}\\ \\text{square units}$.",
+  "distractor_notes": "A: Counts only one bounded region; C: Uses an incorrect signed area; D: Overestimates both regions by a factor of two."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

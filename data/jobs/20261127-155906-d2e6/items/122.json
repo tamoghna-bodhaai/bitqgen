@@ -1,0 +1,70 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Monotonicity",
+  "archetype": "sign of derivative",
+  "brief": "Determine the intervals where a function involving e^x times a polynomial (or log-composite) is strictly increasing, solving a derivative-sign inequality; hardest variant with parameter.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:137",
+   "2021:144",
+   "2024s2:91"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For which values of $a$ is $f(x)=e^x(x^2+ax+2)$ strictly increasing on $[-2,2]$?",
+ "options": [
+  "$[-2,2]$",
+  "$(-2,2)$",
+  "$[-\\dfrac{10}{3},2]$",
+  "$[0,2]$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let b=a+2. Then f'(x)=e^x(x^2+bx+b). Nonnegativity on [-2,2] requires b≥0 and b≤4; for 0≤b≤4 the quadratic is nonnegative throughout. Its zeros, if any, are isolated, so f is strictly increasing.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f'(x)=e^xq(x),\\quad q(x)=x^2+(a+2)x+(a+2)$. $q(-2)=2-a\\ge0,\\quad q(2)=3a+10\\ge0$ imply $-\\dfrac{10}{3}\\le a\\le2$, where the vertex lies in $[-2,2]$. $q_{\\min}=a+2-\\dfrac{(a+2)^2}{4}\\ge0\\iff -2\\le a\\le2$. Thus $f'\\ge0$, with at most isolated zeros, so $f$ is strictly increasing.\n\nIndependent check: Let b=a+2. Then f'(x)=e^x(x^2+bx+b). Nonnegativity on [-2,2] requires b≥0 and b≤4; for 0≤b≤4 the quadratic is nonnegative throughout. Its zeros, if any, are isolated, so f is strictly increasing.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For which values of $a$ is $f(x)=e^x(x^2+ax+2)$ strictly increasing on $[-2,2]$?",
+  "options": [
+   "$[-2,2]$",
+   "$(-2,2)$",
+   "$[-\\dfrac{10}{3},2]$",
+   "$[0,2]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$f'(x)=e^xq(x),\\quad q(x)=x^2+(a+2)x+(a+2)$. $q(-2)=2-a\\ge0,\\quad q(2)=3a+10\\ge0$ imply $-\\dfrac{10}{3}\\le a\\le2$, where the vertex lies in $[-2,2]$. $q_{\\min}=a+2-\\dfrac{(a+2)^2}{4}\\ge0\\iff -2\\le a\\le2$. Thus $f'\\ge0$, with at most isolated zeros, so $f$ is strictly increasing.",
+  "distractor_notes": "B: incorrectly excludes parameter endpoints; C: uses endpoint conditions but omits the vertex test; D: discards valid negative parameter values."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

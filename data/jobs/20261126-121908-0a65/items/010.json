@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "A person stands on a weighing scale inside an elevator that is accelerating downwards with an acceleration of $0.2g$. The ratio of the apparent weight to the true weight of the person is:",
+ "stem": "A passenger stands on a weighing scale in a lift accelerating vertically upward at $3\\ \\text{m s}^{-2}$. Taking $g=10\\ \\text{m s}^{-2}$, the apparent weight is what multiple of the passenger’s true weight?",
  "options": [
-  "$0.2$",
-  "$0.8$",
+  "$0.7$",
   "$1.0$",
-  "$1.2$"
+  "$1.3$",
+  "$1.7$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Apparent weight N = m(g − a) = m(g − 0.2g) = 0.8mg. Ratio N/(mg) = 0.8.",
-   "answer": "B",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For upward acceleration, apparent weight is N = m(g + a) = 13m; true weight is mg = 10m. Their ratio is 1.3.",
+   "answer": "C",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The true weight of the person is $W = mg$.\nWhen the elevator accelerates downwards with an acceleration $a$, the normal reaction force (apparent weight $W'$) exerted on the person by the weighing scale is given by:\n$$mg - N = ma \\implies N = m(g - a)$$\nGiven $a = 0.2g$:\n$$W' = N = m(g - 0.2g) = 0.8mg$$\nThe ratio of the apparent weight to the true weight is:\n$$\\dfrac{W'}{W} = \\dfrac{0.8mg}{mg} = 0.8$$\n\nIndependent check: Apparent weight N = m(g − a) = m(g − 0.2g) = 0.8mg. Ratio N/(mg) = 0.8.",
+ "working": "$N-mg=ma \\Rightarrow N=m(g+a)$\n$\\dfrac{N}{mg}=\\dfrac{g+a}{g}=\\dfrac{10+3}{10}=1.3$\n\nIndependent check: For upward acceleration, apparent weight is N = m(g + a) = 13m; true weight is mg = 10m. Their ratio is 1.3.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "A person stands on a weighing scale inside an elevator that is accelerating downwards with an acceleration of $0.2g$. The ratio of the apparent weight to the true weight of the person is:",
+  "stem": "A passenger stands on a weighing scale in a lift accelerating vertically upward at $3\\ \\text{m s}^{-2}$. Taking $g=10\\ \\text{m s}^{-2}$, the apparent weight is what multiple of the passenger’s true weight?",
   "options": [
-   "$0.2$",
-   "$0.8$",
+   "$0.7$",
    "$1.0$",
-   "$1.2$"
+   "$1.3$",
+   "$1.7$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The true weight of the person is $W = mg$.\nWhen the elevator accelerates downwards with an acceleration $a$, the normal reaction force (apparent weight $W'$) exerted on the person by the weighing scale is given by:\n$$mg - N = ma \\implies N = m(g - a)$$\nGiven $a = 0.2g$:\n$$W' = N = m(g - 0.2g) = 0.8mg$$\nThe ratio of the apparent weight to the true weight is:\n$$\\dfrac{W'}{W} = \\dfrac{0.8mg}{mg} = 0.8$$",
-  "distractor_notes": "- $0.2$: Assumes apparent weight is given directly by the inertial force term $N = ma$.\n- $1.0$: Neglects the acceleration of the elevator, assuming apparent weight equals true weight.\n- $1.2$: Sign error; computes $N = m(g + a)$ as if the elevator were accelerating upwards.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$N-mg=ma \\Rightarrow N=m(g+a)$\n$\\dfrac{N}{mg}=\\dfrac{g+a}{g}=\\dfrac{10+3}{10}=1.3$",
+  "distractor_notes": "A: uses the downward-acceleration sign; B: assumes no acceleration; D: adds the acceleration incorrectly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

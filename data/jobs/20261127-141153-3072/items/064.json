@@ -1,0 +1,68 @@
+{
+ "qno": 64,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 64,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Cannizzaro reaction",
+  "archetype": "identify-property",
+  "brief": "Identify which aldehyde undergoes Cannizzaro reaction and why (no α-hydrogen); could include a mild computation of the mole ratio of alcohol to acid formed.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:33",
+   "2022:38",
+   "2026s2:34"
+  ]
+ },
+ "status": "ok",
+ "stem": "Among propanal, butanal, 2-methylpropanal and benzaldehyde, which undergoes the Cannizzaro reaction because it has no α-hydrogen? On complete reaction of $0.40$ mol in concentrated aqueous NaOH, followed by acidification, what amounts of alcohol and acid are formed?",
+ "options": [
+  "Propanal; $0.20$ mol propan-1-ol and $0.20$ mol propanoic acid",
+  "Benzaldehyde; $0.40$ mol benzyl alcohol and $0.40$ mol benzoic acid",
+  "2-methylpropanal; $0.20$ mol 2-methylpropan-1-ol and $0.20$ mol 2-methylpropanoic acid",
+  "Benzaldehyde; $0.20$ mol benzyl alcohol and $0.20$ mol benzoic acid"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Only benzaldehyde has no α-hydrogen. Cannizzaro stoichiometry is 2 mol aldehyde → 1 mol alcohol + 1 mol carboxylate; acidification gives 0.20 mol each from 0.40 mol benzaldehyde.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$2\\,\\text{C}_6\\text{H}_5\\text{CHO}+\\text{OH}^-\\rightarrow\\text{C}_6\\text{H}_5\\text{CH}_2\\text{OH}+\\text{C}_6\\text{H}_5\\text{COO}^-$\n$0.40/2=0.20$ mol each of alcohol and acid after acidification.\nBenzaldehyde has no α-hydrogen.\n\nIndependent check: Only benzaldehyde has no α-hydrogen. Cannizzaro stoichiometry is 2 mol aldehyde → 1 mol alcohol + 1 mol carboxylate; acidification gives 0.20 mol each from 0.40 mol benzaldehyde.",
+ "solution": "Benzaldehyde has no α-hydrogen, so it undergoes the Cannizzaro reaction.\n$$2\\,\\mathrm{C_6H_5CHO}+\\mathrm{OH^-}\\rightarrow\\mathrm{C_6H_5CH_2OH}+\\mathrm{C_6H_5COO^-}$$\nThus, $0.40$ mol benzaldehyde forms $0.20$ mol benzyl alcohol and, after acidification, $0.20$ mol benzoic acid.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Among propanal, butanal, 2-methylpropanal and benzaldehyde, which undergoes the Cannizzaro reaction because it has no α-hydrogen? On complete reaction of $0.40$ mol in concentrated aqueous NaOH, followed by acidification, what amounts of alcohol and acid are formed?",
+  "options": [
+   "Propanal; $0.20$ mol propan-1-ol and $0.20$ mol propanoic acid",
+   "Benzaldehyde; $0.20$ mol benzyl alcohol and $0.20$ mol benzoic acid",
+   "2-methylpropanal; $0.20$ mol 2-methylpropan-1-ol and $0.20$ mol 2-methylpropanoic acid",
+   "Benzaldehyde; $0.40$ mol benzyl alcohol and $0.40$ mol benzoic acid"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$2\\,\\text{C}_6\\text{H}_5\\text{CHO}+\\text{OH}^-\\rightarrow\\text{C}_6\\text{H}_5\\text{CH}_2\\text{OH}+\\text{C}_6\\text{H}_5\\text{COO}^-$\n$0.40/2=0.20$ mol each of alcohol and acid after acidification.\nBenzaldehyde has no α-hydrogen.",
+  "distractor_notes": "A: Propanal has an α-hydrogen, so it does not undergo Cannizzaro reaction. C: 2-methylpropanal has an α-hydrogen. D: Uses the aldehyde-to-product ratio as 1:1 instead of 2:1."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

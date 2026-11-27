@@ -1,0 +1,70 @@
+{
+ "qno": 24,
+ "section": "Physics",
+ "slot": {
+  "qno": 24,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Gauss's law and symmetry",
+  "archetype": "symmetry argument",
+  "brief": "Use Gauss's law with a symmetric surface (sphere/cylinder) to find the field at a given distance; test whether students can set up the correct Gaussian surface.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:1",
+   "2025s2:19",
+   "2023s2:19"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A thin spherical shell of radius $10$ cm carries a charge of $8$ nC. Taking the Coulomb constant as $9.0\\times10^9$ N m$^2$ C$^{-2}$, the electric field at a point $20$ cm from its centre is",
+ "options": [
+  "$1800$ N C$^{-1}$",
+  "$900$ N C$^{-1}$",
+  "$3600$ N C$^{-1}$",
+  "$7200$ N C$^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Outside the shell, E = kQ/r^2 = (9.0×10^9)(8×10^-9)/(0.20)^2 = 1800 N C^-1.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For an exterior spherical Gaussian surface, $E=kQ/r^2$\n$E=(9.0\\times10^9)(8\\times10^{-9})/(0.20)^2=1800$ N C$^{-1}$\n\nIndependent check: Outside the shell, E = kQ/r^2 = (9.0×10^9)(8×10^-9)/(0.20)^2 = 1800 N C^-1.",
+ "solution": "Outside a uniformly charged spherical shell, the field is $E=\\dfrac{kQ}{r^2}$.\n$$E=\\dfrac{(9.0\\times10^9)(8\\times10^{-9})}{(0.20)^2}=1800\\ \\text{N C}^{-1}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A thin spherical shell of radius $10$ cm carries a charge of $8$ nC. Taking the Coulomb constant as $9.0\\times10^9$ N m$^2$ C$^{-2}$, the electric field at a point $20$ cm from its centre is",
+  "options": [
+   "$900$ N C$^{-1}$",
+   "$1800$ N C$^{-1}$",
+   "$3600$ N C$^{-1}$",
+   "$7200$ N C$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For an exterior spherical Gaussian surface, $E=kQ/r^2$\n$E=(9.0\\times10^9)(8\\times10^{-9})/(0.20)^2=1800$ N C$^{-1}$",
+  "distractor_notes": "A: introduces an erroneous factor of $1/2$; C: uses the shell radius instead of the point's distance from the centre; D: uses the field at the shell surface."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

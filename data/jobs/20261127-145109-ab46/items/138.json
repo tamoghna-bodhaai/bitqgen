@@ -1,0 +1,78 @@
+{
+ "qno": 138,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 138,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Cartesian product",
+  "archetype": "property check",
+  "brief": "Give two relations on a small set (shown via a diagram of ordered pairs/arrows); decide which standard properties (reflexive, symmetric, transitive) each relation satisfies.",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:114",
+   "2025s2:108",
+   "2024s2:129"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Let $A=\\{1,2,3\\}$. The relations $R$ and $S$ on $A$ are represented by arrows in the figure. Which statement is correct?",
+ "options": [
+  "$R$ is reflexive, symmetric and transitive; $S$ is reflexive but neither symmetric nor transitive.",
+  "$R$ is reflexive and symmetric but not transitive; $S$ is reflexive but neither symmetric nor transitive.",
+  "$R$ is reflexive and transitive but not symmetric; $S$ is reflexive and transitive but not symmetric.",
+  "$R$ is symmetric and transitive but not reflexive; $S$ is symmetric but neither reflexive nor transitive."
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q138_stem_v0.png",
+  "width_pct": 75,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "R has all loops plus 1↔2, so it is reflexive, symmetric, and transitive. S has all loops and arrows 1→2, 2→3; it is reflexive but not symmetric, and not transitive since 1→3 is absent.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$R=\\{(1,1),(2,2),(3,3),(1,2),(2,1)\\}$: all loops; each pair has its reverse; all required compositions are present. Hence $R$ is reflexive, symmetric and transitive. $S=\\{(1,1),(2,2),(3,3),(1,2),(2,3)\\}$: all loops, but $(1,2)$ has no reverse and $(1,2),(2,3)$ lack $(1,3)$. Hence $S$ is reflexive, neither symmetric nor transitive.\n\nIndependent check: R has all loops plus 1↔2, so it is reflexive, symmetric, and transitive. S has all loops and arrows 1→2, 2→3; it is reflexive but not symmetric, and not transitive since 1→3 is absent.",
+ "solution": "A relation is reflexive if it contains every loop, symmetric if each arrow has its reverse, and transitive if $a\\to b$ and $b\\to c$ imply $a\\to c$.\n$R$ has all loops and the arrows $1\\leftrightarrow2$; all required compositions are present, so it is reflexive, symmetric and transitive.\n$S$ has all loops, but $1\\to2$ has no reverse, and $1\\to2$, $2\\to3$ occur without $1\\to3$; hence it is neither symmetric nor transitive.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A=\\{1,2,3\\}$. The relations $R$ and $S$ on $A$ are represented by arrows in the figure. Which statement is correct?",
+  "options": [
+   "$R$ is reflexive, symmetric and transitive; $S$ is reflexive but neither symmetric nor transitive.",
+   "$R$ is reflexive and symmetric but not transitive; $S$ is reflexive but neither symmetric nor transitive.",
+   "$R$ is reflexive and transitive but not symmetric; $S$ is reflexive and transitive but not symmetric.",
+   "$R$ is symmetric and transitive but not reflexive; $S$ is symmetric but neither reflexive nor transitive."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw two separate directed graphs side by side, labelled R and S. In each graph place vertices 1, 2 and 3 in a horizontal row from left to right. For R, draw a loop at each vertex, and draw arrows 1→2 and 2→1; draw no other arrows. For S, draw a loop at each vertex, and draw arrows 1→2 and 2→3; draw no other arrows. Make all arrowheads and loops clear.",
+   "smiles": null
+  },
+  "difficulty_estimate": 2,
+  "working": "$R=\\{(1,1),(2,2),(3,3),(1,2),(2,1)\\}$: all loops; each pair has its reverse; all required compositions are present. Hence $R$ is reflexive, symmetric and transitive. $S=\\{(1,1),(2,2),(3,3),(1,2),(2,3)\\}$: all loops, but $(1,2)$ has no reverse and $(1,2),(2,3)$ lack $(1,3)$. Hence $S$ is reflexive, neither symmetric nor transitive.",
+  "distractor_notes": "B incorrectly treats the two-way pair in $R$ as failing transitivity; C mistakes $R$ for asymmetric and overlooks the missing composition in $S$; D incorrectly denies the loops and misclassifies the arrows in $S$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

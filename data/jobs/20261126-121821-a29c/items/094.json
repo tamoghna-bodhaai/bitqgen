@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "If $z$ satisfies $\\arg\\left(\\dfrac{z - 4 - 3i}{z + 2 + 5i}\\right) = \\dfrac{\\pi}{2}$, then $z$ satisfies",
+ "stem": "If $z$ satisfies $\\arg\\left(\\dfrac{z+3-2i}{z-5-6i}\\right)=\\dfrac{\\pi}{2}$, then its locus is",
  "options": [
-  "$|z - 1 + i| = 5$",
-  "$|z - 1 - i| = 5$",
-  "$|z - 3 - 4i| = 5$",
-  "$|z - 1 + i| = 10$"
+  "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=4\\sqrt5,\\ \\operatorname{Re}z-2\\operatorname{Im}z+7>0\\right\\}$",
+  "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=2\\sqrt5,\\ \\operatorname{Re}z-2\\operatorname{Im}z+7<0\\right\\}$",
+  "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=2\\sqrt5,\\ \\operatorname{Re}z-2\\operatorname{Im}z+7>0\\right\\}$",
+  "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=2\\sqrt5\\right\\}$"
  ],
- "answer": "A",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "arg((z-A)/(z-B)) = π/2 with A = 4+3i, B = -2-5i means z lies on the circle with AB as diameter (the arc giving +π/2). Center = midpoint (A+B)/2 = 1 - i; radius = |A-B|/2 = |6+8i|/2 = 5. So |z - (1 - i)| = |z - 1 + i| = 5, verified numerically (phase = +π/2 on the appropriate arc). Option A.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let u=z+3-2i and v=z-5-6i. The condition arg(u/v)=π/2 requires u·v=0 and Im(u\\overline v)>0. The dot-product equation gives |z-(1+4i)|=2√5, and Im(u\\overline v)=4(Re z−2 Im z+7), so the inequality is positive.",
    "answer": "A",
-   "confidence": 0.97,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "The given equation is $\\arg\\left(\\dfrac{z - \\alpha}{z - \\beta}\\right) = \\dfrac{\\pi}{2}$, where $\\alpha = 4 + 3i$ and $\\beta = -2 - 5i$.\n\nGeometrically, this represents a semicircle having the line segment joining $\\alpha$ and $\\beta$ as its diameter.\n\nThe center $z_0$ of the circle is the midpoint of $\\alpha$ and $\\beta$:\n$$z_0 = \\dfrac{\\alpha + \\beta}{2} = \\dfrac{(4 + 3i) + (-2 - 5i)}{2} = \\dfrac{2 - 2i}{2} = 1 - i$$\n\nThe radius $R$ of the circle is half the distance between $\\alpha$ and $\\beta$:\n$$R = \\dfrac{|\\alpha - \\beta|}{2} = \\dfrac{|(4 + 3i) - (-2 - 5i)|}{2} = \\dfrac{|6 + 8i|}{2} = \\dfrac{\\sqrt{6^2 + 8^2}}{2} = \\dfrac{10}{2} = 5$$\n\nThus, any point $z$ on this locus lies on the circle:\n$$|z - z_0| = R \\implies |z - (1 - i)| = 5 \\implies |z - 1 + i| = 5$$\n\nIndependent check: arg((z-A)/(z-B)) = π/2 with A = 4+3i, B = -2-5i means z lies on the circle with AB as diameter (the arc giving +π/2). Center = midpoint (A+B)/2 = 1 - i; radius = |A-B|/2 = |6+8i|/2 = 5. So |z - (1 - i)| = |z - 1 + i| = 5, verified numerically (phase = +π/2 on the appropriate arc). Option A.",
- "solution": "",
+ "working": "Let $z=x+iy$. The real part of $(z+3-2i)\\overline{(z-5-6i)}$ is $(x+3)(x-5)+(y-2)(y-6)$; setting it to zero gives $(x-1)^2+(y-4)^2=20$. Its imaginary part is $4(x-2y+7)$, which must be positive. Hence the locus is the stated open semicircle.\n\nIndependent check: Let u=z+3-2i and v=z-5-6i. The condition arg(u/v)=π/2 requires u·v=0 and Im(u\\overline v)>0. The dot-product equation gives |z-(1+4i)|=2√5, and Im(u\\overline v)=4(Re z−2 Im z+7), so the inequality is positive.",
+ "solution": "Let $z=x+iy$. Since the quotient has argument $\\pi/2$, $(z+3-2i)\\overline{(z-5-6i)}$ has zero real part and positive imaginary part:\n$$ (x+3)(x-5)+(y-2)(y-6)=0 \\implies (x-1)^2+(y-4)^2=20. $$\nIts imaginary part is $4(x-2y+7)>0$, so the locus is $|z-(1+4i)|=2\\sqrt5$ with $\\operatorname{Re}z-2\\operatorname{Im}z+7>0$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "If $z$ satisfies $\\arg\\left(\\dfrac{z - 4 - 3i}{z + 2 + 5i}\\right) = \\dfrac{\\pi}{2}$, then $z$ satisfies",
+  "stem": "If $z$ satisfies $\\arg\\left(\\dfrac{z+3-2i}{z-5-6i}\\right)=\\dfrac{\\pi}{2}$, then its locus is",
   "options": [
-   "$|z - 1 + i| = 5$",
-   "$|z - 1 - i| = 5$",
-   "$|z - 3 - 4i| = 5$",
-   "$|z - 1 + i| = 10$"
+   "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=2\\sqrt5,\\ \\operatorname{Re}z-2\\operatorname{Im}z+7>0\\right\\}$",
+   "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=2\\sqrt5,\\ \\operatorname{Re}z-2\\operatorname{Im}z+7<0\\right\\}$",
+   "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=4\\sqrt5,\\ \\operatorname{Re}z-2\\operatorname{Im}z+7>0\\right\\}$",
+   "$\\left\\{z\\in\\mathbb C: |z-(1+4i)|=2\\sqrt5\\right\\}$"
   ],
   "option_smiles": null,
   "answer": "A",
-  "working": "The given equation is $\\arg\\left(\\dfrac{z - \\alpha}{z - \\beta}\\right) = \\dfrac{\\pi}{2}$, where $\\alpha = 4 + 3i$ and $\\beta = -2 - 5i$.\n\nGeometrically, this represents a semicircle having the line segment joining $\\alpha$ and $\\beta$ as its diameter.\n\nThe center $z_0$ of the circle is the midpoint of $\\alpha$ and $\\beta$:\n$$z_0 = \\dfrac{\\alpha + \\beta}{2} = \\dfrac{(4 + 3i) + (-2 - 5i)}{2} = \\dfrac{2 - 2i}{2} = 1 - i$$\n\nThe radius $R$ of the circle is half the distance between $\\alpha$ and $\\beta$:\n$$R = \\dfrac{|\\alpha - \\beta|}{2} = \\dfrac{|(4 + 3i) - (-2 - 5i)|}{2} = \\dfrac{|6 + 8i|}{2} = \\dfrac{\\sqrt{6^2 + 8^2}}{2} = \\dfrac{10}{2} = 5$$\n\nThus, any point $z$ on this locus lies on the circle:\n$$|z - z_0| = R \\implies |z - (1 - i)| = 5 \\implies |z - 1 + i| = 5$$",
-  "distractor_notes": "Option B encodes a sign error when expanding $|z - z_0|$, writing $|z - 1 - i| = 5$ instead of $|z - (1 - i)| = 5$.\nOption C encodes confusing the midpoint with the half-difference, calculating the center as $\\frac{\\alpha - \\beta}{2} = 3 + 4i$.\nOption D encodes forgetting to divide the diameter $|\\alpha - \\beta| = 10$ by $2$, thus using the diameter in place of the radius.",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "Let $z=x+iy$. The real part of $(z+3-2i)\\overline{(z-5-6i)}$ is $(x+3)(x-5)+(y-2)(y-6)$; setting it to zero gives $(x-1)^2+(y-4)^2=20$. Its imaginary part is $4(x-2y+7)$, which must be positive. Hence the locus is the stated open semicircle.",
+  "distractor_notes": "B reverses the orientation of the angle; C uses the diameter as the radius; D gives the full circle and ignores the orientation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

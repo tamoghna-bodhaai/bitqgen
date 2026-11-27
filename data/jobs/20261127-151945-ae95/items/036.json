@@ -1,0 +1,71 @@
+{
+ "qno": 36,
+ "section": "Physics",
+ "slot": {
+  "qno": 36,
+  "section": "Physics",
+  "chapter": "Laws of Motion",
+  "subtopic": "Newton's second law (vector)",
+  "archetype": "free-body equations",
+  "brief": "Two blocks connected by a rope on a frictionless table (or an incline); write free-body equations and find the common acceleration and rope tension.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:4",
+   "2025s1:29",
+   "2026s1:26"
+  ],
+  "origin": "variant",
+  "bank_ref": "ga37fff8b28ca"
+ },
+ "status": "ok",
+ "stem": "Two blocks of masses $2\\ \\text{kg}$ and $4\\ \\text{kg}$ are connected by a light string on a smooth horizontal table. A horizontal force of $24\\ \\text{N}$ pulls the $4\\ \\text{kg}$ block. Their common acceleration is",
+ "options": [
+  "$2\\ \\text{m s}^{-2}$",
+  "$12\\ \\text{m s}^{-2}$",
+  "$6\\ \\text{m s}^{-2}$",
+  "$4\\ \\text{m s}^{-2}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Treat both blocks as one system: a = F/(m1 + m2) = 24/(2 + 4) = 4 m s^-2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For the two-block system: $F=(m_1+m_2)a$.\\n$a=\\dfrac{24}{2+4}=4\\ \\text{m s}^{-2}$.\n\nIndependent check: Treat both blocks as one system: a = F/(m1 + m2) = 24/(2 + 4) = 4 m s^-2.",
+ "solution": "Treating both blocks as one system, the total mass is $2+4=6\\ \\text{kg}$.\n$$a=\\frac{F}{m_1+m_2}=\\frac{24}{6}=4\\ \\text{m s}^{-2}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two blocks of masses $2\\ \\text{kg}$ and $4\\ \\text{kg}$ are connected by a light string on a smooth horizontal table. A horizontal force of $24\\ \\text{N}$ pulls the $4\\ \\text{kg}$ block. Their common acceleration is",
+  "options": [
+   "$2\\ \\text{m s}^{-2}$",
+   "$4\\ \\text{m s}^{-2}$",
+   "$6\\ \\text{m s}^{-2}$",
+   "$12\\ \\text{m s}^{-2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "For the two-block system: $F=(m_1+m_2)a$.\\n$a=\\dfrac{24}{2+4}=4\\ \\text{m s}^{-2}$.",
+  "distractor_notes": "A: incorrectly uses a total mass of $12\\ \\text{kg}$. C: divides the force by the pulled block's mass alone. D: divides the force by the other block's mass alone."
+ },
+ "variant_of": "ga37fff8b28ca",
+ "author_model": "openai/gpt-6-luna-pro"
+}

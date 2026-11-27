@@ -1,0 +1,70 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Maxima and minima",
+  "archetype": "sign of derivative",
+  "brief": "Find absolute/local extrema of a cubic or rational function on an interval using first/second derivative tests; ask for max value.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:123",
+   "2026s2:124",
+   "2026s1:129"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The absolute maximum value of $f(x)=x^3-3x^2-9x+4$ on $[-2,2]$ is",
+ "options": [
+  "$-18$",
+  "$2$",
+  "$9$",
+  "$18$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "f'(x)=3(x-3)(x+1), so the only critical point in [-2,2] is x=-1. Evaluating at -2, -1, and 2 gives 2, 9, and -18; the maximum is 9.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f'(x)=3(x-3)(x+1)$; the only critical point in $[-2,2]$ is $x=-1$. $f(-2)=2,\\quad f(-1)=9,\\quad f(2)=-18$.\n\nIndependent check: f'(x)=3(x-3)(x+1), so the only critical point in [-2,2] is x=-1. Evaluating at -2, -1, and 2 gives 2, 9, and -18; the maximum is 9.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The absolute maximum value of $f(x)=x^3-3x^2-9x+4$ on $[-2,2]$ is",
+  "options": [
+   "$-18$",
+   "$2$",
+   "$9$",
+   "$18$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$f'(x)=3(x-3)(x+1)$; the only critical point in $[-2,2]$ is $x=-1$. $f(-2)=2,\\quad f(-1)=9,\\quad f(2)=-18$.",
+  "distractor_notes": "A: selects the minimum endpoint value; B: selects the other endpoint value; D: takes the magnitude of the minimum."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

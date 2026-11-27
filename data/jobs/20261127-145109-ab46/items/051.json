@@ -1,0 +1,70 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Grignard reagent",
+  "archetype": "reaction product",
+  "brief": "Alkyl halide + Mg in dry ether followed by reaction with a carbonyl and hydrolysis — identify the final alcohol product.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:42",
+   "2024s2:55",
+   "2023s2:37"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Ethyl bromide reacts with magnesium in dry ether, followed by propanone and hydrolysis. What is the final alcohol?",
+ "options": [
+  "Pentan-3-ol",
+  "2-methylbutan-1-ol",
+  "2-methylbutan-2-ol",
+  "2-methylpropan-2-ol"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Ethyl bromide forms ethylmagnesium bromide, which adds an ethyl group to propanone. Hydrolysis gives (CH₃)₂C(OH)CH₂CH₃, 2-methylbutan-2-ol.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_2\\text{H}_5\\text{Br}+\\text{Mg}\\rightarrow\\text{C}_2\\text{H}_5\\text{MgBr}$; $\\text{C}_2\\text{H}_5\\text{MgBr}+(\\text{CH}_3)_2\\text{CO}\\rightarrow(\\text{CH}_3)_2\\text{C}(\\text{OMgBr})\\text{C}_2\\text{H}_5$; hydrolysis gives $(\\text{CH}_3)_2\\text{C}(\\text{OH})\\text{C}_2\\text{H}_5$ = 2-methylbutan-2-ol.\n\nIndependent check: Ethyl bromide forms ethylmagnesium bromide, which adds an ethyl group to propanone. Hydrolysis gives (CH₃)₂C(OH)CH₂CH₃, 2-methylbutan-2-ol.",
+ "solution": "Ethyl bromide forms the Grignard reagent, which adds to propanone; hydrolysis gives a tertiary alcohol.\n$$\\mathrm{C_2H_5MgBr+(CH_3)_2CO\\xrightarrow{H_3O^+}(CH_3)_2C(OH)C_2H_5}$$\nThe product is 2-methylbutan-2-ol.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Ethyl bromide reacts with magnesium in dry ether, followed by propanone and hydrolysis. What is the final alcohol?",
+  "options": [
+   "2-methylbutan-2-ol",
+   "2-methylbutan-1-ol",
+   "Pentan-3-ol",
+   "2-methylpropan-2-ol"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\text{C}_2\\text{H}_5\\text{Br}+\\text{Mg}\\rightarrow\\text{C}_2\\text{H}_5\\text{MgBr}$; $\\text{C}_2\\text{H}_5\\text{MgBr}+(\\text{CH}_3)_2\\text{CO}\\rightarrow(\\text{CH}_3)_2\\text{C}(\\text{OMgBr})\\text{C}_2\\text{H}_5$; hydrolysis gives $(\\text{CH}_3)_2\\text{C}(\\text{OH})\\text{C}_2\\text{H}_5$ = 2-methylbutan-2-ol.",
+  "distractor_notes": "B: predicts a primary alcohol despite addition to a ketone; C: treats propanone like an aldehyde; D: omits incorporation of the ethyl group."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

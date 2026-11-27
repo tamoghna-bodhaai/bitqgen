@@ -1,0 +1,68 @@
+{
+ "qno": 136,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 136,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Implicit differentiation",
+  "archetype": "implicit derivative",
+  "brief": "For an implicit curve, find the equation of tangent/normal or dy/dx at a given point without solving for y.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:104",
+   "2023s2:110",
+   "2024s2:97"
+  ]
+ },
+ "status": "ok",
+ "stem": "The curve $e^{x-y+1}+\\ln(x^2+y^2)+xy=3+\\ln 5$ passes through $(1,2)$. Its normal there is",
+ "options": [
+  "$17x+4y-25=0$",
+  "$4x-17y+30=0$",
+  "$17x-4y-9=0$",
+  "$4x+17y-38=0$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At (1,2), F_x=1+2/5+2=17/5 and F_y=-1+4/5+1=4/5. The normal has slope F_y/F_x=4/17, so its equation is 4x-17y+30=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$p=\\dfrac{dy}{dx}:\\ e^{x-y+1}(1-p)+\\dfrac{2(x+yp)}{x^2+y^2}+y+xp=0$. At $(1,2)$: $(1-p)+\\dfrac{2(1+2p)}{5}+2+p=0\\Rightarrow p=-\\dfrac{17}{4}$. $m_{\\text{normal}}=-\\dfrac{1}{p}=\\dfrac{4}{17}$. $y-2=\\dfrac{4}{17}(x-1)\\Rightarrow 4x-17y+30=0$.\n\nIndependent check: At (1,2), F_x=1+2/5+2=17/5 and F_y=-1+4/5+1=4/5. The normal has slope F_y/F_x=4/17, so its equation is 4x-17y+30=0.",
+ "solution": "Let $F(x,y)=e^{x-y+1}+\\ln(x^2+y^2)+xy$. At $(1,2)$, $F_x=17/5$ and $F_y=4/5$, so the normal slope is $F_y/F_x=4/17$.\n$$y-2=\\frac{4}{17}(x-1)\\quad\\Rightarrow\\quad 4x-17y+30=0.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The curve $e^{x-y+1}+\\ln(x^2+y^2)+xy=3+\\ln 5$ passes through $(1,2)$. Its normal there is",
+  "options": [
+   "$4x-17y+30=0$",
+   "$17x+4y-25=0$",
+   "$17x-4y-9=0$",
+   "$4x+17y-38=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$p=\\dfrac{dy}{dx}:\\ e^{x-y+1}(1-p)+\\dfrac{2(x+yp)}{x^2+y^2}+y+xp=0$. At $(1,2)$: $(1-p)+\\dfrac{2(1+2p)}{5}+2+p=0\\Rightarrow p=-\\dfrac{17}{4}$. $m_{\\text{normal}}=-\\dfrac{1}{p}=\\dfrac{4}{17}$. $y-2=\\dfrac{4}{17}(x-1)\\Rightarrow 4x-17y+30=0$.",
+  "distractor_notes": "B: gives the tangent instead of the normal. C: uses the reciprocal slope without changing its sign. D: uses the negative of the correct normal slope."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

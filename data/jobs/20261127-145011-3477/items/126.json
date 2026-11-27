@@ -1,0 +1,71 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Vector Algebra",
+  "subtopic": "Vector triple product",
+  "archetype": "cross product then angle",
+  "brief": "Multi-step vector identity problem: use cross product, then compute a vector triple product or find a vector satisfying given dot/cross conditions",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:123",
+   "2026s2:120",
+   "2025s1:95"
+  ],
+  "origin": "variant",
+  "bank_ref": "g872db0831c92"
+ },
+ "status": "ok",
+ "stem": "Let vectors $a,b,c$ satisfy $|a|=2$, $|b|=|c|=1$, $a·b=a·c=1$ and $b·c=0.5$. Find the angle between $a×(b×c)+(a×b)×c$ and $a×(b×c)$.",
+ "options": [
+  "$90°$",
+  "$45°$",
+  "$60°$",
+  "$30°$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using vector triple-product identities, a×(b×c)=b−c and (a×b)×c=b−a/2. Their sum S=2b−c−a/2. From the given dot products, |b−c|²=1, |S|²=3, and S·(b−c)=3/2. Thus cosθ=√3/2 and θ=30°.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $P=a×(b×c)=b-c$ and $Q=(a×b)×c=b-0.5a$.\n$|P|^2=2-2(0.5)=1$; $|Q|^2=1+0.25(4)-1=1$.\n$P·Q=1-0.5-0.5+0.5=0.5$.\nFor $R=P+Q$, $R·P=1.5$ and $|R|=\\sqrt{3}$.\n$\\cos\\theta=\\dfrac{R·P}{|R||P|}=\\dfrac{\\sqrt{3}}{2}$, so $\\theta=30°$.\n\nIndependent check: Using vector triple-product identities, a×(b×c)=b−c and (a×b)×c=b−a/2. Their sum S=2b−c−a/2. From the given dot products, |b−c|²=1, |S|²=3, and S·(b−c)=3/2. Thus cosθ=√3/2 and θ=30°.",
+ "solution": "Using the vector triple-product identities, $a×(b×c)=b-c$ and $(a×b)×c=b-\\frac12a$. Let $P=b-c$ and $R=P+(b-\\frac12a)$.\nFrom the given dot products, $|P|=1$, $|R|=\\sqrt3$, and $R·P=\\frac32$.\n$$\\cos\\theta=\\frac{R·P}{|R||P|}=\\frac{\\sqrt3}{2}$$\nHence, $\\theta=30°$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Let vectors $a,b,c$ satisfy $|a|=2$, $|b|=|c|=1$, $a·b=a·c=1$ and $b·c=0.5$. Find the angle between $a×(b×c)+(a×b)×c$ and $a×(b×c)$.",
+  "options": [
+   "$30°$",
+   "$45°$",
+   "$60°$",
+   "$90°$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Let $P=a×(b×c)=b-c$ and $Q=(a×b)×c=b-0.5a$.\n$|P|^2=2-2(0.5)=1$; $|Q|^2=1+0.25(4)-1=1$.\n$P·Q=1-0.5-0.5+0.5=0.5$.\nFor $R=P+Q$, $R·P=1.5$ and $|R|=\\sqrt{3}$.\n$\\cos\\theta=\\dfrac{R·P}{|R||P|}=\\dfrac{\\sqrt{3}}{2}$, so $\\theta=30°$.",
+  "distractor_notes": "B: miscomputes the norm of the sum; C: gives the angle between the two triple products; D: incorrectly assumes the vectors are perpendicular."
+ },
+ "variant_of": "g872db0831c92",
+ "author_model": "openai/gpt-6-luna-pro"
+}

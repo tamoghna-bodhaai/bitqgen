@@ -1,0 +1,70 @@
+{
+ "qno": 32,
+ "section": "Physics",
+ "slot": {
+  "qno": 32,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "rms speed vs molar mass",
+  "archetype": "proportionality-scaling",
+  "brief": "Compare rms speeds of two gases at the same/specified temperatures using v_rms ∝ √(T/M); find the ratio or the unknown temperature.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:3",
+   "2025s1:23",
+   "2026s1:1"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Gas $X$ has molar mass $4$ g mol$^{-1}$ at $300$ K, and gas $Y$ has molar mass $16$ g mol$^{-1}$ at $600$ K. What is the ratio of their rms speeds, $v_X/v_Y$?",
+ "options": [
+  "$\\dfrac{1}{\\sqrt{2}}$",
+  "$\\sqrt{2}$",
+  "$2$",
+  "$2\\sqrt{2}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using v_rms = sqrt(3RT/M), v_X/v_Y = sqrt[(300/4)/(600/16)] = sqrt(2).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_{\\rm rms}\\propto\\sqrt{T/M}$<br>$\\dfrac{v_X}{v_Y}=\\sqrt{\\dfrac{300/4}{600/16}}=\\sqrt{2}$\n\nIndependent check: Using v_rms = sqrt(3RT/M), v_X/v_Y = sqrt[(300/4)/(600/16)] = sqrt(2).",
+ "solution": "Since $v_{\\rm rms}=\\sqrt{3RT/M}$, the ratio is\n$$\\frac{v_X}{v_Y}=\\sqrt{\\frac{T_X/M_X}{T_Y/M_Y}}=\\sqrt{\\frac{300/4}{600/16}}=\\sqrt{2}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Gas $X$ has molar mass $4$ g mol$^{-1}$ at $300$ K, and gas $Y$ has molar mass $16$ g mol$^{-1}$ at $600$ K. What is the ratio of their rms speeds, $v_X/v_Y$?",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{2}}$",
+   "$\\sqrt{2}$",
+   "$2$",
+   "$2\\sqrt{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$v_{\\rm rms}\\propto\\sqrt{T/M}$<br>$\\dfrac{v_X}{v_Y}=\\sqrt{\\dfrac{300/4}{600/16}}=\\sqrt{2}$",
+  "distractor_notes": "A: Takes the reciprocal of the ratio. C: Uses the mass ratio without the temperature factor. D: Multiplies by the mass ratio rather than its square root."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

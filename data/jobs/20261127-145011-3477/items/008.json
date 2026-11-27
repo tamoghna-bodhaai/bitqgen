@@ -1,0 +1,56 @@
+{
+ "qno": 8,
+ "section": "Physics",
+ "slot": {
+  "qno": 8,
+  "section": "Physics",
+  "chapter": "Thermal Properties of Matter",
+  "subtopic": "Temperature scales",
+  "archetype": "linear scale conversion",
+  "brief": "Convert a temperature reading between two scales using the linear-interpolation formula; simple two-point mapping.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:28",
+   "2026s2:23",
+   "2025s1:21"
+  ],
+  "origin": "direct",
+  "bank_ref": "g690203e23874"
+ },
+ "status": "ok",
+ "stem": "A temperature of $50^\\circ$F is equivalent to what temperature on the Celsius scale?",
+ "options": [
+  "$10^\\circ$C",
+  "$18^\\circ$C",
+  "$50^\\circ$C",
+  "$122^\\circ$C"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "A",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g690203e23874 (verified in job 20261127-141153-3072)"
+ ],
+ "working": "$T_C=\\dfrac{5}{9}(T_F-32)$\n$T_C=\\dfrac{5}{9}(50-32)=10^\\circ$C\n\nIndependent check: Use C = (F − 32) × 5/9 = (50 − 32) × 5/9 = 10°C.",
+ "solution": "Use the conversion formula $T_C=\\frac{5}{9}(T_F-32)$. Substituting $T_F=50$ gives\n$$T_C=\\frac{5}{9}(50-32)=10^\\circ\\text{C}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g690203e23874",
+ "author_model": "openai/gpt-6-luna-pro"
+}

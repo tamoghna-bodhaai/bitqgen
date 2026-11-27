@@ -1,0 +1,79 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Zener diode as voltage regulator",
+  "archetype": "circuit analysis",
+  "brief": "A Zener regulator with a series resistance and varying input voltage; find the current through the Zener when the load draws a given current.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:7",
+   "2025s2:23",
+   "2021:23"
+  ],
+  "origin": "variant",
+  "bank_ref": "g8f25fce0e2b3"
+ },
+ "status": "ok",
+ "stem": "In the circuit shown, the input voltage rises from $10$ V to $15$ V. If the load draws a constant current of $8$ mA, find the Zener current at the new input voltage. The Zener voltage is $5$ V.",
+ "options": [
+  "$12$ mA",
+  "$32$ mA",
+  "$40$ mA",
+  "$48$ mA"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q010_stem_v0.png",
+  "width_pct": 65,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At 15 V, the series-resistor current is (15−5)/250 = 40 mA. Subtract the 8 mA load current: I_Z = 32 mA.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I_s = \\dfrac{15-5}{250} = 40\\ \\text{mA}$\n$I_Z = I_s-I_L = 40-8 = 32\\ \\text{mA}$\n\nIndependent check: At 15 V, the series-resistor current is (15−5)/250 = 40 mA. Subtract the 8 mA load current: I_Z = 32 mA.",
+ "solution": "The series current at $V_{in}=15$ V is\n$$I_s=\\frac{15-5}{250}=40\\text{ mA}.$$\nHence, $I_Z=I_s-I_L=40-8=32\\text{ mA}$.⁨",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "In the circuit shown, the input voltage rises from $10$ V to $15$ V. If the load draws a constant current of $8$ mA, find the Zener current at the new input voltage. The Zener voltage is $5$ V.",
+  "options": [
+   "$12$ mA",
+   "$32$ mA",
+   "$40$ mA",
+   "$48$ mA"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a DC source on the left, with its positive terminal connected through a series resistor labeled R_s = 250 Ω to an output node. Connect a load branch from the output node to the source's negative return; show a downward current arrow in this branch labeled I_L = 8 mA. Connect a Zener diode in parallel with the load, with its cathode at the output node and its anode at the negative return; label it V_Z = 5 V. Label the source V_in. Show the negative return wire connecting both branches to the source's negative terminal. Do not label any branch current through the Zener.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$I_s = \\dfrac{15-5}{250} = 40\\ \\text{mA}$\n$I_Z = I_s-I_L = 40-8 = 32\\ \\text{mA}$",
+  "distractor_notes": "A: Uses the initial input voltage instead of the new input voltage. C: Ignores the load current. D: Adds the load current to the series current instead of subtracting it."
+ },
+ "variant_of": "g8f25fce0e2b3",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 30,
+ "section": "Physics",
+ "slot": {
+  "qno": 30,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Optical instruments",
+  "archetype": "two-step formula",
+  "brief": "Astronomical telescope with given objective and eyepiece focal lengths; find magnifying power and tube length (or find focal lengths given both quantities).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:17",
+   "2026s2:7",
+   "2023s2:13"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An astronomical telescope is in normal adjustment. Its objective and eyepiece have focal lengths $100$ cm and $5$ cm, respectively. What are its magnifying power and tube length?",
+ "options": [
+  "$M=\\dfrac{1}{20},\\ L=105$ cm",
+  "$M=20,\\ L=95$ cm",
+  "$M=20,\\ L=105$ cm",
+  "$M=21,\\ L=100$ cm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For normal adjustment, magnifying power = 100/5 = 20 and tube length = 100 + 5 = 105 cm.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$M=\\dfrac{f_o}{f_e}=\\dfrac{100}{5}=20$\n$L=f_o+f_e=100+5=105\\ \\text{cm}$\n\nIndependent check: For normal adjustment, magnifying power = 100/5 = 20 and tube length = 100 + 5 = 105 cm.",
+ "solution": "For a telescope in normal adjustment, $M=\\dfrac{f_o}{f_e}$ and $L=f_o+f_e$.\n$$M=\\dfrac{100}{5}=20,\\qquad L=100+5=105\\ \\text{cm}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An astronomical telescope is in normal adjustment. Its objective and eyepiece have focal lengths $100$ cm and $5$ cm, respectively. What are its magnifying power and tube length?",
+  "options": [
+   "$M=20,\\ L=105$ cm",
+   "$M=20,\\ L=95$ cm",
+   "$M=\\dfrac{1}{20},\\ L=105$ cm",
+   "$M=21,\\ L=100$ cm"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$M=\\dfrac{f_o}{f_e}=\\dfrac{100}{5}=20$\n$L=f_o+f_e=100+5=105\\ \\text{cm}$",
+  "distractor_notes": "B: subtracts the focal lengths for the tube length; C: takes the reciprocal magnifying power; D: adds one to the magnifying power and omits the eyepiece focal length from the length."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

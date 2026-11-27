@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "An organic compound contains $53.3\\%$ carbon, $11.1\\%$ hydrogen, and $35.6\\%$ oxygen by mass. If its molar mass is $90\\ \\text{g mol}^{-1}$, its molecular formula is:",
+ "stem": "A compound contains $40\\%$ carbon, $6\\dfrac{2}{3}\\%$ hydrogen and $53\\dfrac{1}{3}\\%$ oxygen by mass. If its molar mass is $120\\ \\text{g mol}^{-1}$, what is its molecular formula? Use atomic masses C = 12, H = 1 and O = 16.",
  "options": [
-  "$\\text{C}_2\\text{H}_5\\text{O}$",
-  "$\\text{C}_4\\text{H}_{10}\\text{O}_2$",
+  "$\\text{CH}_2\\text{O}$",
+  "$\\text{C}_2\\text{H}_4\\text{O}_2$",
   "$\\text{C}_3\\text{H}_6\\text{O}_3$",
-  "$\\text{C}_2\\text{H}_2\\text{O}_4$"
+  "$\\text{C}_4\\text{H}_8\\text{O}_4$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Mole ratio C:H:O = 53.3/12 : 11.1/1 : 35.6/16 = 4.44 : 11.1 : 2.225 ≈ 2:5:1, so empirical formula C2H5O (mass 45). n = 90/45 = 2 → molecular formula C4H10O2. Check: C 48/90=53.3%, H 10/90=11.1%, O 32/90=35.6% — matches.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For 100 g: C:H:O mole ratio = 40/12 : 6.667/1 : 53.333/16 = 1:2:1, giving empirical formula CH₂O (30 g mol⁻¹). The molecular mass is 120 g mol⁻¹, so multiply the empirical formula by 4: C₄H₈O₄.",
+   "answer": "D",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Find relative moles of each element in a $100\\ \\text{g}$ sample: $n_{\\text{C}} = \\dfrac{53.3}{12} = 4.44$, $n_{\\text{H}} = \\dfrac{11.1}{1} = 11.1$, $n_{\\text{O}} = \\dfrac{35.6}{16} = 2.225$. 2. Divide each by the smallest number of moles ($2.225$): $\\text{C} = \\dfrac{4.44}{2.225} = 2$, $\\text{H} = \\dfrac{11.1}{2.225} = 5$, $\\text{O} = \\dfrac{2.225}{2.225} = 1$. The empirical formula is $\\text{C}_2\\text{H}_5\\text{O}$. 3. Empirical formula mass $= 2(12) + 5(1) + 16 = 45\\ \\text{g mol}^{-1}$. 4. Multiplying factor $n = \\dfrac{\\text{Molar mass}}{\\text{Empirical mass}} = \\dfrac{90}{45} = 2$. 5. Molecular formula $= (\\text{C}_2\\text{H}_5\\text{O})_2 = \\text{C}_4\\text{H}_{10}\\text{O}_2$.\n\nIndependent check: Mole ratio C:H:O = 53.3/12 : 11.1/1 : 35.6/16 = 4.44 : 11.1 : 2.225 ≈ 2:5:1, so empirical formula C2H5O (mass 45). n = 90/45 = 2 → molecular formula C4H10O2. Check: C 48/90=53.3%, H 10/90=11.1%, O 32/90=35.6% — matches.",
+ "working": "For $100\\ \\text{g}$: $n_{\\text{C}}:n_{\\text{H}}:n_{\\text{O}}=\\dfrac{40}{12}:\\dfrac{20}{3}:\\dfrac{160/3}{16}=1:2:1$. Empirical formula $=\\text{CH}_2\\text{O}$; empirical formula mass $=30\\ \\text{g mol}^{-1}$. Multiplying factor $=\\dfrac{120}{30}=4$. Molecular formula $=\\text{C}_4\\text{H}_8\\text{O}_4$.\n\nIndependent check: For 100 g: C:H:O mole ratio = 40/12 : 6.667/1 : 53.333/16 = 1:2:1, giving empirical formula CH₂O (30 g mol⁻¹). The molecular mass is 120 g mol⁻¹, so multiply the empirical formula by 4: C₄H₈O₄.",
  "solution": "",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "An organic compound contains $53.3\\%$ carbon, $11.1\\%$ hydrogen, and $35.6\\%$ oxygen by mass. If its molar mass is $90\\ \\text{g mol}^{-1}$, its molecular formula is:",
+  "stem": "A compound contains $40\\%$ carbon, $6\\dfrac{2}{3}\\%$ hydrogen and $53\\dfrac{1}{3}\\%$ oxygen by mass. If its molar mass is $120\\ \\text{g mol}^{-1}$, what is its molecular formula? Use atomic masses C = 12, H = 1 and O = 16.",
   "options": [
-   "$\\text{C}_2\\text{H}_5\\text{O}$",
-   "$\\text{C}_4\\text{H}_{10}\\text{O}_2$",
+   "$\\text{CH}_2\\text{O}$",
+   "$\\text{C}_2\\text{H}_4\\text{O}_2$",
    "$\\text{C}_3\\text{H}_6\\text{O}_3$",
-   "$\\text{C}_2\\text{H}_2\\text{O}_4$"
+   "$\\text{C}_4\\text{H}_8\\text{O}_4$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. Find relative moles of each element in a $100\\ \\text{g}$ sample: $n_{\\text{C}} = \\dfrac{53.3}{12} = 4.44$, $n_{\\text{H}} = \\dfrac{11.1}{1} = 11.1$, $n_{\\text{O}} = \\dfrac{35.6}{16} = 2.225$. 2. Divide each by the smallest number of moles ($2.225$): $\\text{C} = \\dfrac{4.44}{2.225} = 2$, $\\text{H} = \\dfrac{11.1}{2.225} = 5$, $\\text{O} = \\dfrac{2.225}{2.225} = 1$. The empirical formula is $\\text{C}_2\\text{H}_5\\text{O}$. 3. Empirical formula mass $= 2(12) + 5(1) + 16 = 45\\ \\text{g mol}^{-1}$. 4. Multiplying factor $n = \\dfrac{\\text{Molar mass}}{\\text{Empirical mass}} = \\dfrac{90}{45} = 2$. 5. Molecular formula $= (\\text{C}_2\\text{H}_5\\text{O})_2 = \\text{C}_4\\text{H}_{10}\\text{O}_2$.",
-  "distractor_notes": "Option A: Mistakenly reports the empirical formula instead of the molecular formula ($n=1$ error). Option C: Has the correct molar mass of $90\\ \\text{g mol}^{-1}$ but assumes a 1:2:1 ratio (lactic acid) instead of calculating from percentages. Option D: Has the correct molar mass of $90\\ \\text{g mol}^{-1}$ (oxalic acid) but completely neglects the elemental composition.",
+  "answer": "D",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "For $100\\ \\text{g}$: $n_{\\text{C}}:n_{\\text{H}}:n_{\\text{O}}=\\dfrac{40}{12}:\\dfrac{20}{3}:\\dfrac{160/3}{16}=1:2:1$. Empirical formula $=\\text{CH}_2\\text{O}$; empirical formula mass $=30\\ \\text{g mol}^{-1}$. Multiplying factor $=\\dfrac{120}{30}=4$. Molecular formula $=\\text{C}_4\\text{H}_8\\text{O}_4$.",
+  "distractor_notes": "A: gives only the empirical formula. B: uses a multiplying factor of 2. C: uses a multiplying factor of 3."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

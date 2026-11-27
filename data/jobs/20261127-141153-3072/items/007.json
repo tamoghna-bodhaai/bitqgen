@@ -1,0 +1,68 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Rotational Motion",
+  "subtopic": "Conservation of angular momentum",
+  "archetype": "conservation law",
+  "brief": "Rotating system (e.g., a person walking on a turntable or arms folded while spinning); radius/angular speed changes, use angular momentum conservation to find new angular speed or kinetic energy ratio.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:11",
+   "2025s2:2",
+   "2026s2:19"
+  ]
+ },
+ "status": "ok",
+ "stem": "A person on a rotating stool pulls in their arms. The combined moment of inertia of the person and stool changes from $4.0$ kg m$^2$ to $2.5$ kg m$^2$. If the initial angular speed is $3.0$ rad s$^{-1}$ and external torque is negligible, what is the final angular speed?",
+ "options": [
+  "$1.9$ rad s$^{-1}$",
+  "$4.8$ rad s$^{-1}$",
+  "$3.8$ rad s$^{-1}$",
+  "$3.0$ rad s$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Conserve angular momentum: \\(I_i\\omega_i=I_f\\omega_f\\), so \\(\\omega_f=(4.0/2.5)(3.0)=4.8\\ \\text{rad s}^{-1}\\).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I_i\\omega_i=I_f\\omega_f$; $\\omega_f=\\dfrac{4.0}{2.5}(3.0)=4.8$ rad s$^{-1}$\n\nIndependent check: Conserve angular momentum: \\(I_i\\omega_i=I_f\\omega_f\\), so \\(\\omega_f=(4.0/2.5)(3.0)=4.8\\ \\text{rad s}^{-1}\\).",
+ "solution": "With negligible external torque, angular momentum is conserved:\n$$I_i\\omega_i=I_f\\omega_f$$\nThus, $\\omega_f=\\dfrac{4.0}{2.5}(3.0)=4.8\\ \\text{rad s}^{-1}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A person on a rotating stool pulls in their arms. The combined moment of inertia of the person and stool changes from $4.0$ kg m$^2$ to $2.5$ kg m$^2$. If the initial angular speed is $3.0$ rad s$^{-1}$ and external torque is negligible, what is the final angular speed?",
+  "options": [
+   "$1.9$ rad s$^{-1}$",
+   "$3.0$ rad s$^{-1}$",
+   "$3.8$ rad s$^{-1}$",
+   "$4.8$ rad s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$I_i\\omega_i=I_f\\omega_f$; $\\omega_f=\\dfrac{4.0}{2.5}(3.0)=4.8$ rad s$^{-1}$",
+  "distractor_notes": "A: reverses the ratio of moments of inertia; B: assumes angular speed is unchanged; C: assumes rotational kinetic energy is conserved."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

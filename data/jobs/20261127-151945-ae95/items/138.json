@@ -1,0 +1,71 @@
+{
+ "qno": 138,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 138,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Bayes' theorem",
+  "archetype": "conditional probability",
+  "brief": "A standard Bayes setup: e.g. three machines/factories with known defect rates and output fractions; find the (posterior) probability that a defective item came from a given source.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:93",
+   "2025s2:118",
+   "2026s2:115"
+  ],
+  "origin": "variant",
+  "bank_ref": "g04c0570737d0"
+ },
+ "status": "ok",
+ "stem": "Lines $L_1,L_2,L_3$ produce $25\\%,35\\%,40\\%$ of a factory's units, with defect rates $1\\%,2\\%,4\\%$, respectively. Given a defective unit, find the probability it came from $L_3$.",
+ "options": [
+  "$\\dfrac{2}{125}$",
+  "$\\dfrac{2}{5}$",
+  "$\\dfrac{4}{7}$",
+  "$\\dfrac{32}{51}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Bayes’ theorem, P(L3|D) = (0.40×0.04)/(0.25×0.01 + 0.35×0.02 + 0.40×0.04) = 0.016/0.0255 = 32/51.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(L_3\\mid D)=\\dfrac{0.40(0.04)}{0.25(0.01)+0.35(0.02)+0.40(0.04)}$<br>$=\\dfrac{0.016}{0.0255}=\\dfrac{32}{51}$\n\nIndependent check: By Bayes’ theorem, P(L3|D) = (0.40×0.04)/(0.25×0.01 + 0.35×0.02 + 0.40×0.04) = 0.016/0.0255 = 32/51.",
+ "solution": "By Bayes’ theorem,\n$$P(L_3\\mid D)=\\frac{P(L_3)P(D\\mid L_3)}{\\sum_i P(L_i)P(D\\mid L_i)}=\\frac{0.40(0.04)}{0.25(0.01)+0.35(0.02)+0.40(0.04)}=\\frac{0.016}{0.0255}=\\frac{32}{51}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Lines $L_1,L_2,L_3$ produce $25\\%,35\\%,40\\%$ of a factory's units, with defect rates $1\\%,2\\%,4\\%$, respectively. Given a defective unit, find the probability it came from $L_3$.",
+  "options": [
+   "$\\dfrac{2}{125}$",
+   "$\\dfrac{2}{5}$",
+   "$\\dfrac{4}{7}$",
+   "$\\dfrac{32}{51}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$P(L_3\\mid D)=\\dfrac{0.40(0.04)}{0.25(0.01)+0.35(0.02)+0.40(0.04)}$<br>$=\\dfrac{0.016}{0.0255}=\\dfrac{32}{51}$",
+  "distractor_notes": "A: Gives the joint probability $P(L_3\\cap D)$ instead of conditioning on a defect.\nB: Uses the prior production fraction for $L_3$.\nC: Normalizes the defect rates without weighting by production fractions."
+ },
+ "variant_of": "g04c0570737d0",
+ "author_model": "openai/gpt-6-luna-pro"
+}

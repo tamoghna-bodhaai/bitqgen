@@ -1,0 +1,68 @@
+{
+ "qno": 6,
+ "section": "Physics",
+ "slot": {
+  "qno": 6,
+  "section": "Physics",
+  "chapter": "Electrostatics",
+  "subtopic": "Gauss's law and symmetry",
+  "archetype": "symmetry argument",
+  "brief": "Find flux through one face of a cube/cubical arrangement with a charge placed at centre or corner or on a face; use symmetry division plus Gauss's law reasoning.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:16",
+   "2021:1",
+   "2026s1:4"
+  ]
+ },
+ "status": "ok",
+ "stem": "A point charge $q$ is placed at one vertex of a cube. What is the electric flux through any one face of the cube that does not contain the charged vertex?",
+ "options": [
+  "$\\dfrac{q}{12\\varepsilon_0}$",
+  "$\\dfrac{q}{8\\varepsilon_0}$",
+  "$\\dfrac{q}{6\\varepsilon_0}$",
+  "$\\dfrac{q}{24\\varepsilon_0}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The cube subtends one-eighth of the full solid angle at the vertex charge, so its total flux is q/(8ε₀). The three faces not containing the charge are symmetric, and the other three have zero flux; hence each of the three receives q/(24ε₀).",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Join eight identical cubes around the charged vertex; the charge is at the centre of the resulting cube.\n$\\Phi_{\\text{large}}=q/\\varepsilon_0$; hence the total flux through each small cube is $q/(8\\varepsilon_0)$.\nThe three faces containing the charge have zero flux; the other three faces are equivalent.\n$\\Phi_{\\text{face}}=q/(24\\varepsilon_0)$\n\nIndependent check: The cube subtends one-eighth of the full solid angle at the vertex charge, so its total flux is q/(8ε₀). The three faces not containing the charge are symmetric, and the other three have zero flux; hence each of the three receives q/(24ε₀).",
+ "solution": "Join eight identical cubes around the charged vertex, placing the charge at the centre of the larger cube. By Gauss’s law, the flux through each small cube is $q/(8\\varepsilon_0)$.\nThe three faces containing the charge have zero flux; symmetry divides the remaining flux equally among the other three faces:\n$$\\Phi_{\\text{face}}=\\frac{q}{3}\\cdot\\frac{1}{8\\varepsilon_0}=\\frac{q}{24\\varepsilon_0}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A point charge $q$ is placed at one vertex of a cube. What is the electric flux through any one face of the cube that does not contain the charged vertex?",
+  "options": [
+   "$\\dfrac{q}{24\\varepsilon_0}$",
+   "$\\dfrac{q}{8\\varepsilon_0}$",
+   "$\\dfrac{q}{6\\varepsilon_0}$",
+   "$\\dfrac{q}{12\\varepsilon_0}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Join eight identical cubes around the charged vertex; the charge is at the centre of the resulting cube.\n$\\Phi_{\\text{large}}=q/\\varepsilon_0$; hence the total flux through each small cube is $q/(8\\varepsilon_0)$.\nThe three faces containing the charge have zero flux; the other three faces are equivalent.\n$\\Phi_{\\text{face}}=q/(24\\varepsilon_0)$",
+  "distractor_notes": "B: assigns the whole small-cube flux to one face.\nC: divides the total charge flux by six, as if the charge were at the cube centre.\nD: divides the small-cube flux equally among six faces."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

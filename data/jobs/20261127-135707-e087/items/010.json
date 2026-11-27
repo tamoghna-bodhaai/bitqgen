@@ -1,0 +1,68 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "g in terms of density",
+  "archetype": "proportionality-scaling",
+  "brief": "Given ratio of radii of two planets and escape-orbit data, compare g at surfaces using g ∝ ρR or GM/R² with density given; ratio comparison question.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:19",
+   "2024s1:17",
+   "2024s1:5"
+  ]
+ },
+ "status": "ok",
+ "stem": "The radii of two planets $P$ and $Q$ are in the ratio $2:3$, and their escape speeds are in the ratio $2:3$. What is the ratio of their surface accelerations due to gravity, $g_P:g_Q$?",
+ "options": [
+  "$1:3$",
+  "$4:3$",
+  "$2:3$",
+  "$3:2$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using $v_e^2=2gR$, $g_P:g_Q=(2^2/2):(3^2/3)=2:3$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$v_e^2=2gR\\Rightarrow g\\propto\\dfrac{v_e^2}{R}$\n$\\dfrac{g_P}{g_Q}=\\left(\\dfrac{2}{3}\\right)^2\\dfrac{3}{2}=\\dfrac{2}{3}$\n\nIndependent check: Using $v_e^2=2gR$, $g_P:g_Q=(2^2/2):(3^2/3)=2:3$.",
+ "solution": "Using $v_e^2=2gR$, we have $g\\propto \\dfrac{v_e^2}{R}$.\n$$\\frac{g_P}{g_Q}=\\left(\\frac{2}{3}\\right)^2\\frac{3}{2}=\\frac{2}{3}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The radii of two planets $P$ and $Q$ are in the ratio $2:3$, and their escape speeds are in the ratio $2:3$. What is the ratio of their surface accelerations due to gravity, $g_P:g_Q$?",
+  "options": [
+   "$1:3$",
+   "$2:3$",
+   "$4:3$",
+   "$3:2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$v_e^2=2gR\\Rightarrow g\\propto\\dfrac{v_e^2}{R}$\n$\\dfrac{g_P}{g_Q}=\\left(\\dfrac{2}{3}\\right)^2\\dfrac{3}{2}=\\dfrac{2}{3}$",
+  "distractor_notes": "A: Incorrectly combines the radius and escape-speed ratios; C: Uses the inverse-radius factor incorrectly; D: Uses the radius ratio instead of its reciprocal."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

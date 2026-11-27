@@ -1,0 +1,78 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Work in cyclic process (P–V diagram)",
+  "archetype": "area of P–V cycle",
+  "brief": "Provide a P–V diagram of a cycle composed of an isobaric expansion, an isothermal, and a constant-volume leg; ask for the net work done over the full cycle and heat exchanged in one leg using the first law with monatomic Cv.",
+  "difficulty": 5,
+  "needs_figure": true,
+  "figure_kind": "diagram",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:15",
+   "2026s2:27",
+   "2026s1:5"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the cycle shown, the gas is monatomic and ideal. What are the net work done by the gas over the full cycle and the heat absorbed during $A\\to B$?",
+ "options": [
+  "$\\left(100-200\\ln 2,\\ 250\\right)\\ \\text{J}$",
+  "$\\left(100-200\\ln 2,\\ 150\\right)\\ \\text{J}$",
+  "$\\left(100+200\\ln 2,\\ 250\\right)\\ \\text{J}$",
+  "$\\left(100-100\\ln 2,\\ 250\\right)\\ \\text{J}$"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q002_stem_v0.png",
+  "width_pct": 60,
+  "kind": "diagram"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "On A→B, W = PΔV = 100 J and ΔU = (3/2)Δ(PV) = 150 J, so Q_AB = 250 J. On B→C, W = (PV)ln(V_C/V_B) = −200 ln 2 J; C→A has zero work. Thus W_cycle = 100 − 200 ln 2 J.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$W_{AB}=100(2-1)=100\\ \\text{J}$; $W_{BC}=P_BV_B\\ln(V_C/V_B)=200\\ln(1/2)=-200\\ln2\\ \\text{J}$; $W_{CA}=0$, so $W_{\\rm cycle}=100-200\\ln2\\ \\text{J}$. $\\Delta U_{AB}=\\frac32\\Delta(PV)=\\frac32(200-100)=150\\ \\text{J}$; $Q_{AB}=\\Delta U_{AB}+W_{AB}=250\\ \\text{J}$.\n\nIndependent check: On A→B, W = PΔV = 100 J and ΔU = (3/2)Δ(PV) = 150 J, so Q_AB = 250 J. On B→C, W = (PV)ln(V_C/V_B) = −200 ln 2 J; C→A has zero work. Thus W_cycle = 100 − 200 ln 2 J.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For the cycle shown, the gas is monatomic and ideal. What are the net work done by the gas over the full cycle and the heat absorbed during $A\\to B$?",
+  "options": [
+   "$\\left(100-200\\ln 2,\\ 250\\right)\\ \\text{J}$",
+   "$\\left(100-200\\ln 2,\\ 150\\right)\\ \\text{J}$",
+   "$\\left(100+200\\ln 2,\\ 250\\right)\\ \\text{J}$",
+   "$\\left(100-100\\ln 2,\\ 250\\right)\\ \\text{J}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "diagram",
+   "description": "Draw a P–V graph with volume V (L) on the horizontal axis and pressure P (kPa) on the vertical axis. Mark A at (1, 100), B at (2, 100), and C at (1, 200). Join A to B with a horizontal line and an arrow A→B; join B to C with a downward-curving isotherm and an arrow B→C; join C to A with a vertical line and an arrow C→A. Label AB “isobaric”, BC “isothermal”, and CA “constant volume”.",
+   "smiles": null
+  },
+  "difficulty_estimate": 5,
+  "working": "$W_{AB}=100(2-1)=100\\ \\text{J}$; $W_{BC}=P_BV_B\\ln(V_C/V_B)=200\\ln(1/2)=-200\\ln2\\ \\text{J}$; $W_{CA}=0$, so $W_{\\rm cycle}=100-200\\ln2\\ \\text{J}$. $\\Delta U_{AB}=\\frac32\\Delta(PV)=\\frac32(200-100)=150\\ \\text{J}$; $Q_{AB}=\\Delta U_{AB}+W_{AB}=250\\ \\text{J}$.",
+  "distractor_notes": "B: reports the internal-energy change alone as heat. C: uses the wrong sign for work during isothermal compression. D: uses the initial-cycle value of $PV$ instead of $P_BV_B$ for the isothermal leg."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

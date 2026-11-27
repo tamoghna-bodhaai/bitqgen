@@ -1,0 +1,70 @@
+{
+ "qno": 137,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 137,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Bayes' theorem",
+  "archetype": "conditional probability",
+  "brief": "Classic Bayes setup: three machines/bags produce items with different defect rates; given a drawn item is defective, find the probability it came from a specific source.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:125",
+   "2024s1:91",
+   "2022:91"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Machines A, B and C supply $\\frac{1}{2}$, $\\frac{1}{3}$ and $\\frac{1}{6}$ of a factory's components; their defect rates are $2\\%$, $4\\%$ and $9\\%$. Given a component is defective, find the probability it came from B.",
+ "options": [
+  "$\\dfrac{1}{3}$",
+  "$\\dfrac{8}{23}$",
+  "$\\dfrac{8}{21}$",
+  "$\\dfrac{8}{15}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By Bayes’ theorem, P(B|defective) = [(1/3)(0.04)] / [(1/2)(0.02) + (1/3)(0.04) + (1/6)(0.09)] = 8/23.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(B\\mid D)=\\dfrac{P(B)P(D\\mid B)}{P(D)}=\\dfrac{1/75}{1/100+1/75+3/200}=\\dfrac{8/600}{23/600}=\\dfrac{8}{23}$.\n\nIndependent check: By Bayes’ theorem, P(B|defective) = [(1/3)(0.04)] / [(1/2)(0.02) + (1/3)(0.04) + (1/6)(0.09)] = 8/23.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Machines A, B and C supply $\\frac{1}{2}$, $\\frac{1}{3}$ and $\\frac{1}{6}$ of a factory's components; their defect rates are $2\\%$, $4\\%$ and $9\\%$. Given a component is defective, find the probability it came from B.",
+  "options": [
+   "$\\dfrac{1}{3}$",
+   "$\\dfrac{8}{23}$",
+   "$\\dfrac{8}{21}$",
+   "$\\dfrac{8}{15}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$P(B\\mid D)=\\dfrac{P(B)P(D\\mid B)}{P(D)}=\\dfrac{1/75}{1/100+1/75+3/200}=\\dfrac{8/600}{23/600}=\\dfrac{8}{23}$.",
+  "distractor_notes": "A: uses B's production share without conditioning on defectiveness. C: makes an error when adding the weighted defect rates. D: uses an incorrect total probability in the denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Named reactions",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:42",
+   "2023s2:37",
+   "2026s2:35"
+  ],
+  "origin": "variant",
+  "bank_ref": "ge62cdb951ebe"
+ },
+ "status": "ok",
+ "stem": "Which Grignard reagent gives 2,2-dimethylpropanoic acid after treatment with $\\text{CO}_2$ followed by acidic hydrolysis?",
+ "options": [
+  "Isobutylmagnesium bromide",
+  "tert-Butylmagnesium bromide",
+  "sec-Butylmagnesium bromide",
+  "n-Butylmagnesium bromide"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "CO₂ adds one carboxyl carbon to the Grignard group: (CH₃)₃C–MgBr → (CH₃)₃C–COOH.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{R–MgBr} + \\text{CO}_2 \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{R–COOH}$\nFor 2,2-dimethylpropanoic acid, $\\text{R}=(\\text{CH}_3)_3\\text{C}$. The required reagent is $(\\text{CH}_3)_3\\text{C–MgBr}$.\n\nIndependent check: CO₂ adds one carboxyl carbon to the Grignard group: (CH₃)₃C–MgBr → (CH₃)₃C–COOH.",
+ "solution": "Grignard carboxylation gives $\\text{R–MgBr} \\xrightarrow{\\text{CO}_2,\\,\\text{H}_3\\text{O}^+} \\text{R–COOH}$, adding one carbon as the carboxyl group.\nFor 2,2-dimethylpropanoic acid, $\\text{R}=(\\text{CH}_3)_3\\text{C}$; hence the reagent is $(\\text{CH}_3)_3\\text{C–MgBr}$, tert-butylmagnesium bromide.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which Grignard reagent gives 2,2-dimethylpropanoic acid after treatment with $\\text{CO}_2$ followed by acidic hydrolysis?",
+  "options": [
+   "tert-Butylmagnesium bromide",
+   "Isobutylmagnesium bromide",
+   "sec-Butylmagnesium bromide",
+   "n-Butylmagnesium bromide"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{R–MgBr} + \\text{CO}_2 \\xrightarrow{\\text{H}_3\\text{O}^+} \\text{R–COOH}$\nFor 2,2-dimethylpropanoic acid, $\\text{R}=(\\text{CH}_3)_3\\text{C}$. The required reagent is $(\\text{CH}_3)_3\\text{C–MgBr}$.",
+  "distractor_notes": "B, C and D are constitutional isomers of the correct Grignard reagent; each gives a different carboxylic acid after carbonation."
+ },
+ "variant_of": "ge62cdb951ebe",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Motion under gravity",
+  "archetype": "two-equation kinematics",
+  "brief": "Two bodies dropped/thrown from top of a tower at different times; use two simultaneous equations to find time when they meet or height of tower.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:4",
+   "2021:7",
+   "2022:15"
+  ]
+ },
+ "status": "ok",
+ "stem": "A stone is dropped from the top of a $100$ m tower. Two seconds later, another stone is thrown vertically downward from the same point at $30$ m s$^{-1}$. When do they meet after the second stone is thrown? Take $g=10$ m s$^{-2}$.",
+ "options": [
+  "$1$ s",
+  "$2$ s",
+  "$3$ s",
+  "$4$ s"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "After 2 s, the first stone is 20 m below the top and moves downward at 20 m s⁻¹. The second stone moves downward at 30 m s⁻¹, so their relative speed is 10 m s⁻¹. They meet after 20/10 = 2 s.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $t$ be the time after the second stone is thrown.\nFirst stone's displacement: $5(t+2)^2$.\nSecond stone's displacement: $30t+5t^2$.\n$5(t+2)^2=30t+5t^2\\Rightarrow t=2$ s.\n\nIndependent check: After 2 s, the first stone is 20 m below the top and moves downward at 20 m s⁻¹. The second stone moves downward at 30 m s⁻¹, so their relative speed is 10 m s⁻¹. They meet after 20/10 = 2 s.",
+ "solution": "Let $t$ be the time after the second stone is thrown. Their downward displacements from the tower top are $5(t+2)^2$ and $30t+5t^2$, respectively.\n$$5(t+2)^2=30t+5t^2\\Rightarrow t=2\\text{ s}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A stone is dropped from the top of a $100$ m tower. Two seconds later, another stone is thrown vertically downward from the same point at $30$ m s$^{-1}$. When do they meet after the second stone is thrown? Take $g=10$ m s$^{-2}$.",
+  "options": [
+   "$1$ s",
+   "$2$ s",
+   "$3$ s",
+   "$4$ s"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let $t$ be the time after the second stone is thrown.\nFirst stone's displacement: $5(t+2)^2$.\nSecond stone's displacement: $30t+5t^2$.\n$5(t+2)^2=30t+5t^2\\Rightarrow t=2$ s.",
+  "distractor_notes": "A: Subtracts only half the initial separation; C: uses an incorrect relative acceleration; D: reports time from the first release."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

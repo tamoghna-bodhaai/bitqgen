@@ -1,0 +1,70 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "standard area",
+  "brief": "Area bounded between a parabola and a line; set up intersection points and integrate with respect to y for cleaner limits.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:93",
+   "2026s2:100",
+   "2024s2:122"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The area enclosed by the curves $x=2y^2+1$ and $x=2y+5$ is",
+ "options": [
+  "$-9$",
+  "$\\dfrac{9}{2}$",
+  "$9$",
+  "$12$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Intersections satisfy 2y² + 1 = 2y + 5, giving y = -1, 2. Between them, the line is to the right, so area = ∫₋₁² [(2y + 5) − (2y² + 1)] dy = 9.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$2y^2+1=2y+5\\Rightarrow y=-1,2$. $A=\\displaystyle\\int_{-1}^{2}\\big[(2y+5)-(2y^2+1)\\big]dy=\\left[-\\dfrac{2y^3}{3}+y^2+4y\\right]_{-1}^{2}=9$.\n\nIndependent check: Intersections satisfy 2y² + 1 = 2y + 5, giving y = -1, 2. Between them, the line is to the right, so area = ∫₋₁² [(2y + 5) − (2y² + 1)] dy = 9.",
+ "solution": "The curves intersect at $2y^2+1=2y+5$, giving $y=-1,2$. Between these limits, the line lies to the right of the parabola.\n$$A=\\int_{-1}^{2}\\big[(2y+5)-(2y^2+1)\\big]dy=\\left[-\\frac{2y^3}{3}+y^2+4y\\right]_{-1}^{2}=9.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The area enclosed by the curves $x=2y^2+1$ and $x=2y+5$ is",
+  "options": [
+   "$-9$",
+   "$\\dfrac{9}{2}$",
+   "$9$",
+   "$12$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$2y^2+1=2y+5\\Rightarrow y=-1,2$. $A=\\displaystyle\\int_{-1}^{2}\\big[(2y+5)-(2y^2+1)\\big]dy=\\left[-\\dfrac{2y^3}{3}+y^2+4y\\right]_{-1}^{2}=9$.",
+  "distractor_notes": "A: Reverses the order of the curves.\\nB: Introduces an erroneous factor of $\\dfrac12$ in the area.\\nD: Integrates $2y$ as $2y$, omitting the factor from the power rule."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

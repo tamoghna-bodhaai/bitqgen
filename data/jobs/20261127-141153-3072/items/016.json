@@ -1,0 +1,76 @@
+{
+ "qno": 16,
+ "section": "Physics",
+ "slot": {
+  "qno": 16,
+  "section": "Physics",
+  "chapter": "Capacitance",
+  "subtopic": "Capacitor networks with batteries",
+  "archetype": "circuit analysis",
+  "brief": "Circuit diagram of series–parallel capacitors connected to a battery; reduce the network, find equivalent capacitance and the charge on a specific capacitor.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:34",
+   "2022:10",
+   "2024s1:16"
+  ]
+ },
+ "status": "ok",
+ "stem": "A $12\\ \\text{V}$ battery is connected to the capacitor network as shown in the figure. What are its equivalent capacitance and the charge on the $6\\ \\mu\\text{F}$ capacitor?",
+ "options": [
+  "$9\\ \\mu\\text{F},\\ 108\\ \\mu\\text{C}$",
+  "$2.25\\ \\mu\\text{F},\\ 27\\ \\mu\\text{C}$",
+  "$3\\ \\mu\\text{F},\\ 18\\ \\mu\\text{C}$",
+  "$2.25\\ \\mu\\text{F},\\ 18\\ \\mu\\text{C}$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q016_stem_v0.png",
+  "width_pct": 65,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The 3 μF and 6 μF capacitors are in parallel, giving 9 μF. This is in series with the other 3 μF, so C_eq = (3×9)/(3+9) = 2.25 μF. The parallel pair has 3 V across it, so the 6 μF capacitor has charge 6×3 = 18 μC.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$C_{23}=3+6=9\\ \\mu\\text{F}$; $C_{\\mathrm{eq}}=\\dfrac{3\\times9}{3+9}=2.25\\ \\mu\\text{F}$; $Q_{\\mathrm{total}}=2.25\\times12=27\\ \\mu\\text{C}$; $V_{23}=27/9=3\\ \\text{V}$; $Q_6=6\\times3=18\\ \\mu\\text{C}$.\n\nIndependent check: The 3 μF and 6 μF capacitors are in parallel, giving 9 μF. This is in series with the other 3 μF, so C_eq = (3×9)/(3+9) = 2.25 μF. The parallel pair has 3 V across it, so the 6 μF capacitor has charge 6×3 = 18 μC.",
+ "solution": "The $3\\,\\mu\\text{F}$ and $6\\,\\mu\\text{F}$ capacitors are in parallel, and their combination is in series with the other $3\\,\\mu\\text{F}$ capacitor.\n$$C_{\\mathrm{eq}}=\\frac{3\\times(3+6)}{3+(3+6)}=2.25\\,\\mu\\text{F}$$\nThe parallel combination has voltage $V=27/9=3\\,\\text{V}$, so $Q_6=6\\times3=18\\,\\mu\\text{C}$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A $12\\ \\text{V}$ battery is connected to the capacitor network as shown in the figure. What are its equivalent capacitance and the charge on the $6\\ \\mu\\text{F}$ capacitor?",
+  "options": [
+   "$2.25\\ \\mu\\text{F},\\ 18\\ \\mu\\text{C}$",
+   "$2.25\\ \\mu\\text{F},\\ 27\\ \\mu\\text{C}$",
+   "$3\\ \\mu\\text{F},\\ 18\\ \\mu\\text{C}$",
+   "$9\\ \\mu\\text{F},\\ 108\\ \\mu\\text{C}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw a 12 V battery in a left vertical branch between upper node A and lower node B, with its positive terminal connected to A. From A, draw a top horizontal wire passing through a 3 μF capacitor to a junction X. Connect two separate vertical branches from X to B, one containing a 3 μF capacitor and the other a 6 μF capacitor. Join the lower ends of both branches to B with wires. Label each capacitor with its capacitance and label the battery 12 V.",
+   "smiles": null
+  },
+  "difficulty_estimate": 3,
+  "working": "$C_{23}=3+6=9\\ \\mu\\text{F}$; $C_{\\mathrm{eq}}=\\dfrac{3\\times9}{3+9}=2.25\\ \\mu\\text{F}$; $Q_{\\mathrm{total}}=2.25\\times12=27\\ \\mu\\text{C}$; $V_{23}=27/9=3\\ \\text{V}$; $Q_6=6\\times3=18\\ \\mu\\text{C}$.",
+  "distractor_notes": "B assigns the total series charge to the 6 μF capacitor; C uses an incorrect reduction for the series combination; D treats the parallel branch as directly across the full battery."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

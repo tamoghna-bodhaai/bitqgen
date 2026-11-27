@@ -1,0 +1,70 @@
+{
+ "qno": 65,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 65,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Amino acids",
+  "archetype": "statement evaluation",
+  "brief": "Amino acid statements: zwitterion form, pH dependence of charge, essential vs non-essential, peptide bond formation; pick the correct set via code options.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:54",
+   "2021:56",
+   "2023s2:60"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate the statements about amino acids:\nI. Near its isoelectric pH, an amino acid is predominantly a zwitterion.\nII. For an amino acid with a non-ionisable side chain, its net charge is positive below its isoelectric pH and negative above it.\nIII. Every amino acid used in protein synthesis must be obtained from the diet.\nIV. A peptide bond can form between the carboxyl group of one amino acid and the amino group of another, with elimination of water.\nWhich set is correct?",
+ "options": [
+  "I, II and IV only",
+  "I and III only",
+  "II, III and IV only",
+  "I, II, III and IV"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "I, II, and IV are true. III is false because the body can synthesize nonessential amino acids.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "I: at the isoelectric pH, the zwitterion predominates.\nII: below the isoelectric pH the net charge is positive; above it, negative.\nIII: false; some amino acids are non-essential.\nIV: true; peptide-bond formation is a condensation.\n\nIndependent check: I, II, and IV are true. III is false because the body can synthesize nonessential amino acids.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate the statements about amino acids:\nI. Near its isoelectric pH, an amino acid is predominantly a zwitterion.\nII. For an amino acid with a non-ionisable side chain, its net charge is positive below its isoelectric pH and negative above it.\nIII. Every amino acid used in protein synthesis must be obtained from the diet.\nIV. A peptide bond can form between the carboxyl group of one amino acid and the amino group of another, with elimination of water.\nWhich set is correct?",
+  "options": [
+   "I, II and IV only",
+   "I and III only",
+   "II, III and IV only",
+   "I, II, III and IV"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "I: at the isoelectric pH, the zwitterion predominates.\nII: below the isoelectric pH the net charge is positive; above it, negative.\nIII: false; some amino acids are non-essential.\nIV: true; peptide-bond formation is a condensation.",
+  "distractor_notes": "B and C include III and omit true statements; D incorrectly includes III."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

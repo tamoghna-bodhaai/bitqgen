@@ -1,0 +1,70 @@
+{
+ "qno": 68,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 68,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Kp and degree of dissociation",
+  "archetype": "ICE table",
+  "brief": "Equilibrium with reversible gas-phase reaction; build ICE table from initial moles and degree of dissociation α to find Kp or equilibrium composition.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:50",
+   "2025s1:33",
+   "2025s2:56"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Pure $\\text{N}_2\\text{O}_4(g)$ dissociates as $\\text{N}_2\\text{O}_4(g)\\rightleftharpoons 2\\text{NO}_2(g)$. At equilibrium, its degree of dissociation is $0.50$ and the total pressure is $3.0$ atm. Using pressures in atm, find $K_p$.",
+ "options": [
+  "$1.0$ atm",
+  "$2.0$ atm",
+  "$4.0$ atm",
+  "$8.0$ atm"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For 1 mol initially, equilibrium amounts are 0.5 mol N₂O₄ and 1 mol NO₂. Their partial pressures at 3.0 atm total are 1 atm and 2 atm, respectively. Thus Kₚ = (2 atm)²/(1 atm) = 4 atm.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Take initial $n(\\text{N}_2\\text{O}_4)=1$.\nAt equilibrium: $n(\\text{N}_2\\text{O}_4)=0.50$, $n(\\text{NO}_2)=1.00$, $n_{\\text{total}}=1.50$.\n$p_{\\text{N}_2\\text{O}_4}=1.0$ atm; $p_{\\text{NO}_2}=2.0$ atm.\n$K_p=\\dfrac{p_{\\text{NO}_2}^2}{p_{\\text{N}_2\\text{O}_4}}=4.0$ atm.\n\nIndependent check: For 1 mol initially, equilibrium amounts are 0.5 mol N₂O₄ and 1 mol NO₂. Their partial pressures at 3.0 atm total are 1 atm and 2 atm, respectively. Thus Kₚ = (2 atm)²/(1 atm) = 4 atm.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Pure $\\text{N}_2\\text{O}_4(g)$ dissociates as $\\text{N}_2\\text{O}_4(g)\\rightleftharpoons 2\\text{NO}_2(g)$. At equilibrium, its degree of dissociation is $0.50$ and the total pressure is $3.0$ atm. Using pressures in atm, find $K_p$.",
+  "options": [
+   "$1.0$ atm",
+   "$2.0$ atm",
+   "$4.0$ atm",
+   "$8.0$ atm"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Take initial $n(\\text{N}_2\\text{O}_4)=1$.\nAt equilibrium: $n(\\text{N}_2\\text{O}_4)=0.50$, $n(\\text{NO}_2)=1.00$, $n_{\\text{total}}=1.50$.\n$p_{\\text{N}_2\\text{O}_4}=1.0$ atm; $p_{\\text{NO}_2}=2.0$ atm.\n$K_p=\\dfrac{p_{\\text{NO}_2}^2}{p_{\\text{N}_2\\text{O}_4}}=4.0$ atm.",
+  "distractor_notes": "A and B result from incorrect mole fractions or omitting the squared partial pressure; D overcounts the product partial pressure."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

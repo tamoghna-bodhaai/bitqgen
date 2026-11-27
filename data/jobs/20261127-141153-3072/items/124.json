@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Range of rational functions",
+  "archetype": "discriminant method",
+  "brief": "Find the range of a rational function like (x²+ax+b)/(quadratic) by setting y = f(x) and imposing discriminant ≥ 0; hard — include a subtle domain exclusion.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:121",
+   "2024s2:99",
+   "2024s1:120"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $f(x)=\\dfrac{6x^2-7x-5}{15x^2-46x+35}$ on its natural domain, the range of $f$ is",
+ "options": [
+  "$\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5},\\dfrac{13}{4}\\right\\}$",
+  "$\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5}\\right\\}$",
+  "$\\mathbb{R}\\setminus\\left\\{\\dfrac{13}{4}\\right\\}$",
+  "$\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5},-\\dfrac{13}{4}\\right\\}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor and cancel: f(x)=(2x+1)/(5x-7), with x=5/3 and 7/5 excluded. The value 2/5 is never attained; the excluded hole at x=5/3 also removes the value 13/4.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Set $N-yD=0$: $(3x-5)\\big[(2-5y)x+(1+7y)\\big]=0$. The discriminant is $\\Delta=(13-4y)^2\\geq0$. For $y=\\dfrac{2}{5}$, only $x=\\dfrac{5}{3}$ solves it; for $y=\\dfrac{13}{4}$, the repeated root is $x=\\dfrac{5}{3}$. Both are excluded from the domain. Also, $x=\\dfrac{7}{5}$ never solves $N-yD=0$; every other $y$ has an allowed solution. Hence the range is $\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5},\\dfrac{13}{4}\\right\\}$.\n\nIndependent check: Factor and cancel: f(x)=(2x+1)/(5x-7), with x=5/3 and 7/5 excluded. The value 2/5 is never attained; the excluded hole at x=5/3 also removes the value 13/4.",
+ "solution": "Factor and cancel: $f(x)=\\dfrac{(3x-5)(2x+1)}{(3x-5)(5x-7)}=\\dfrac{2x+1}{5x-7}$, with $x\\ne\\dfrac{5}{3},\\dfrac{7}{5}$.\nThe value $\\dfrac{2}{5}$ is never attained, while excluding $x=\\dfrac{5}{3}$ also removes $f\\!\\left(\\dfrac{5}{3}\\right)=\\dfrac{13}{4}$.\nHence the range is $\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5},\\dfrac{13}{4}\\right\\}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For $f(x)=\\dfrac{6x^2-7x-5}{15x^2-46x+35}$ on its natural domain, the range of $f$ is",
+  "options": [
+   "$\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5},\\dfrac{13}{4}\\right\\}$",
+   "$\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5}\\right\\}$",
+   "$\\mathbb{R}\\setminus\\left\\{\\dfrac{13}{4}\\right\\}$",
+   "$\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5},-\\dfrac{13}{4}\\right\\}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Set $N-yD=0$: $(3x-5)\\big[(2-5y)x+(1+7y)\\big]=0$. The discriminant is $\\Delta=(13-4y)^2\\geq0$. For $y=\\dfrac{2}{5}$, only $x=\\dfrac{5}{3}$ solves it; for $y=\\dfrac{13}{4}$, the repeated root is $x=\\dfrac{5}{3}$. Both are excluded from the domain. Also, $x=\\dfrac{7}{5}$ never solves $N-yD=0$; every other $y$ has an allowed solution. Hence the range is $\\mathbb{R}\\setminus\\left\\{\\dfrac{2}{5},\\dfrac{13}{4}\\right\\}$.",
+  "distractor_notes": "B: Forgets the range value lost at the removable hole. C: Misses the unattained horizontal asymptote. D: Makes a sign error when evaluating the function at the excluded point."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

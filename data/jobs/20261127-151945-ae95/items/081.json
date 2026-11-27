@@ -1,0 +1,71 @@
+{
+ "qno": 81,
+ "section": "English Proficiency",
+ "slot": {
+  "qno": 81,
+  "section": "English Proficiency",
+  "chapter": "Sentence Rearrangement (para jumbles)",
+  "subtopic": "Sentence rearrangement (PQRS)",
+  "archetype": "jumbled parts ordering",
+  "brief": "Four PQRS parts of a short factual paragraph (e.g., about a daily habit or simple scientific fact) to be ordered; one part clearly opens with a general statement and another closes with a conclusion.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:64",
+   "2023s2:65",
+   "2025s2:70"
+  ],
+  "origin": "variant",
+  "bank_ref": "g913fca04fb99"
+ },
+ "status": "ok",
+ "stem": "Arrange P, Q, R and S to form a coherent paragraph.\n\nMany indoor plants need regular watering to stay healthy.\n\nP. When the soil becomes dry,\nQ. their roots cannot take up enough moisture.\nR. Watering the soil restores the supply available to them.\nS. Thus, checking the soil regularly helps prevent wilting.\n\nWhich one of the following is the correct sequence?",
+ "options": [
+  "P - Q - R - S",
+  "P - R - Q - S",
+  "Q - P - R - S",
+  "R - P - Q - S"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "P introduces the condition; Q completes it. R gives the remedy, and S concludes with its benefit. The sequence is P–Q–R–S.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "P must precede Q: “When the soil becomes dry, their roots cannot take up enough moisture.”\nR then gives the remedy, and S concludes with the practical lesson.\nA and D place the remedy before the problem; C begins with “their roots” without a clear antecedent.\n\nIndependent check: P introduces the condition; Q completes it. R gives the remedy, and S concludes with its benefit. The sequence is P–Q–R–S.",
+ "solution": "P introduces the condition, and Q explains its effect: dry soil prevents roots from taking up enough moisture. R gives the remedy, while S concludes with the practical lesson.\nThus, the sequence is $P-Q-R-S$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Arrange P, Q, R and S to form a coherent paragraph.\n\nMany indoor plants need regular watering to stay healthy.\n\nP. When the soil becomes dry,\nQ. their roots cannot take up enough moisture.\nR. Watering the soil restores the supply available to them.\nS. Thus, checking the soil regularly helps prevent wilting.\n\nWhich one of the following is the correct sequence?",
+  "options": [
+   "P - R - Q - S",
+   "P - Q - R - S",
+   "Q - P - R - S",
+   "R - P - Q - S"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "P must precede Q: “When the soil becomes dry, their roots cannot take up enough moisture.”\nR then gives the remedy, and S concludes with the practical lesson.\nA and D place the remedy before the problem; C begins with “their roots” without a clear antecedent.",
+  "distractor_notes": "A: puts the remedy before the problem. C: gives “their roots” no clear antecedent. D: puts the remedy before the problem."
+ },
+ "variant_of": "g913fca04fb99",
+ "author_model": "openai/gpt-6-luna"
+}

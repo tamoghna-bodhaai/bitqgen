@@ -1,0 +1,56 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Selections",
+  "archetype": "case-wise counting",
+  "brief": "Selection problem: choose a committee of fixed size with at least/axactly some constraint; count with combination sums",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:115",
+   "2026s2:96",
+   "2024s1:118"
+  ],
+  "origin": "direct",
+  "bank_ref": "g3b2e310d874d"
+ },
+ "status": "ok",
+ "stem": "A 6-member committee is chosen from 7 researchers and 5 designers. How many committees have at least one of each?",
+ "options": [
+  "$917$",
+  "$805$",
+  "$567$",
+  "$924$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "C",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g3b2e310d874d (verified in job 20261127-135707-e087)"
+ ],
+ "working": "$({}^{7}C_1)({}^{5}C_5)+({}^{7}C_2)({}^{5}C_4)+({}^{7}C_3)({}^{5}C_3)+({}^{7}C_4)({}^{5}C_2)+({}^{7}C_5)({}^{5}C_1)=7+105+350+350+105=917$\n\nIndependent check: Valid committees = \\(\\binom{12}{6}-\\binom{7}{6}=924-7=917\\); choosing six designers is impossible since there are only five.",
+ "solution": "For at least one of each, choose $r$ researchers and $6-r$ designers, where $r=1,2,3,4,5$.\n$$\\sum_{r=1}^{5}\\binom{7}{r}\\binom{5}{6-r}=7+105+350+350+105=917$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g3b2e310d874d",
+ "author_model": "openai/gpt-6-luna-pro"
+}

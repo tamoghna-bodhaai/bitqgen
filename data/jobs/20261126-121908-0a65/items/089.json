@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "Find the part of the sentence that contains an error. If there is no error, choose 'No error'.\n\nThe manager reviewed the quarterly report, identified several financial discrepancies, and brings them to the director's notice.",
+ "stem": "Find the part of the sentence that contains an error. If there is no error, choose 'No error'.\n\nWhen the alarm sounded, the guards secured the main entrance, while the supervisor checks every room for occupants.",
  "options": [
-  "The manager reviewed the quarterly report,",
-  "identified several financial discrepancies,",
-  "and brings them to the director's notice.",
+  "When the alarm sounded, the guards secured the main entrance,",
+  "while the supervisor checks every room",
+  "for occupants.",
   "No error"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "The sentence lists three parallel actions in past tense: 'reviewed', 'identified', and should be 'brought', but part (C) uses present tense 'brings', breaking parallelism/tense consistency. Error is in part C.",
-   "answer": "C",
-   "confidence": 0.98,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The sentence describes a past event (“sounded,” “secured”), so “checks” should be “checked.” The error is in part (B).",
+   "answer": "B",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The sentence establishes a past narrative through the parallel past-tense verbs 'reviewed' and 'identified'. In a compound predicate where actions occur in the same past timeframe, tense consistency must be maintained. Therefore, the third coordinated verb 'brings' (present tense) is incorrect and should be in the simple past tense, 'brought'. Hence, part (C) contains the grammatical error.\n\nIndependent check: The sentence lists three parallel actions in past tense: 'reviewed', 'identified', and should be 'brought', but part (C) uses present tense 'brings', breaking parallelism/tense consistency. Error is in part C.",
+ "working": "The narrative is in the past: “sounded” and “secured.” The later action should also be past: “checked,” not “checks.” Thus B contains the error; A and C are correct, so D is not valid.\n\nIndependent check: The sentence describes a past event (“sounded,” “secured”), so “checks” should be “checked.” The error is in part (B).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Find the part of the sentence that contains an error. If there is no error, choose 'No error'.\n\nThe manager reviewed the quarterly report, identified several financial discrepancies, and brings them to the director's notice.",
+  "stem": "Find the part of the sentence that contains an error. If there is no error, choose 'No error'.\n\nWhen the alarm sounded, the guards secured the main entrance, while the supervisor checks every room for occupants.",
   "options": [
-   "The manager reviewed the quarterly report,",
-   "identified several financial discrepancies,",
-   "and brings them to the director's notice.",
+   "When the alarm sounded, the guards secured the main entrance,",
+   "while the supervisor checks every room",
+   "for occupants.",
    "No error"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The sentence establishes a past narrative through the parallel past-tense verbs 'reviewed' and 'identified'. In a compound predicate where actions occur in the same past timeframe, tense consistency must be maintained. Therefore, the third coordinated verb 'brings' (present tense) is incorrect and should be in the simple past tense, 'brought'. Hence, part (C) contains the grammatical error.",
-  "distractor_notes": "Option A is correct in grammar and establishes the past-tense framework of the narrative.\nOption B maintains tense consistency with 'identified' and correctly uses the adverb 'several'.\nOption D is incorrect because the sentence violates parallel tense consistency across coordinated verbs.",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "The narrative is in the past: “sounded” and “secured.” The later action should also be past: “checked,” not “checks.” Thus B contains the error; A and C are correct, so D is not valid.",
+  "distractor_notes": "A: Correct past-tense clause. C: Correct phrase completing the sentence. D: Incorrect because “checks” shifts the tense."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

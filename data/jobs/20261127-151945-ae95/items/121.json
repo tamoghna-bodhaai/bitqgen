@@ -1,0 +1,71 @@
+{
+ "qno": 121,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 121,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "General term",
+  "archetype": "general term exponent matching",
+  "brief": "Find the coefficient of a specific power of x in the expansion of (a + bxⁿ)^k by writing the general term and matching exponents.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:98",
+   "2024s1:117",
+   "2026s2:103"
+  ],
+  "origin": "variant",
+  "bank_ref": "g681e0c6d7775"
+ },
+ "status": "ok",
+ "stem": "The coefficient of $x^6$ in the expansion of $(3+2x^2)^6$ is",
+ "options": [
+  "$540$",
+  "$2160$",
+  "$8640$",
+  "$4320$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The x^6 term uses (2x^2)^3, giving coefficient C(6,3)·3^3·2^3 = 4320.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T_{r+1}=\\binom{6}{r}3^{6-r}(2x^2)^r$; match $2r=6$, so $r=3$.\\\\\nCoefficient $=\\binom{6}{3}3^3 2^3=4320$.\n\nIndependent check: The x^6 term uses (2x^2)^3, giving coefficient C(6,3)·3^3·2^3 = 4320.",
+ "solution": "By the binomial theorem, the general term is $T_{r+1}=\\binom{6}{r}3^{6-r}(2x^2)^r$. For the $x^6$ term, $2r=6$, so $r=3$.\n$$\\text{Coefficient} = \\binom{6}{3}3^3 2^3 = 4320.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The coefficient of $x^6$ in the expansion of $(3+2x^2)^6$ is",
+  "options": [
+   "$540$",
+   "$2160$",
+   "$4320$",
+   "$8640$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$T_{r+1}=\\binom{6}{r}3^{6-r}(2x^2)^r$; match $2r=6$, so $r=3$.\\\\\nCoefficient $=\\binom{6}{3}3^3 2^3=4320$.",
+  "distractor_notes": "A: omits the factor $2^3$. B: uses $2^2$ instead of $2^3$. D: doubles the correct coefficient."
+ },
+ "variant_of": "g681e0c6d7775",
+ "author_model": "openai/gpt-6-luna-pro"
+}

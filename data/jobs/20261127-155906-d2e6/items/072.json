@@ -1,0 +1,70 @@
+{
+ "qno": 72,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 72,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Manipulating K",
+  "archetype": "reverse and scale",
+  "brief": "Given a multi-step reaction sequence (combination of steps), find the overall K by combining, reversing, and scaling individual equilibrium constants; determine K for the net reaction.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:41",
+   "2025s1:33",
+   "2026s1:37"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the equilibria $\\text{H}_2(g)+\\text{Cl}_2(g)\\rightleftharpoons2\\text{HCl}(g)$, $K_1=2$; $2\\text{HCl}(g)+\\dfrac12\\text{O}_2(g)\\rightleftharpoons\\text{H}_2\\text{O}(g)+\\text{Cl}_2(g)$, $K_2=4$; and $2\\text{O}(g)\\rightleftharpoons\\text{O}_2(g)$, $K_3=64$, find $K$ for $2\\text{H}_2\\text{O}(g)+2\\text{O}(g)\\rightleftharpoons2\\text{H}_2(g)+2\\text{O}_2(g)$. All equilibrium constants are dimensionless.",
+ "options": [
+  "$\\dfrac{1}{4096}$",
+  "$1$",
+  "$2$",
+  "$4$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Adding the first two equilibria gives H₂ + ½O₂ ⇌ H₂O, with K = 2 × 4 = 8. Reverse and double it to obtain 2H₂O ⇌ 2H₂ + O₂, with K = 1/64. Adding 2O ⇌ O₂ (K = 64) gives the target reaction, so K = (1/64) × 64 = 1.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Reverse and double reactions 1 and 2; use reaction 3 as written. $K=K_1^{-2}K_2^{-2}K_3=\\dfrac{64}{2^2\\times4^2}=1$\n\nIndependent check: Adding the first two equilibria gives H₂ + ½O₂ ⇌ H₂O, with K = 2 × 4 = 8. Reverse and double it to obtain 2H₂O ⇌ 2H₂ + O₂, with K = 1/64. Adding 2O ⇌ O₂ (K = 64) gives the target reaction, so K = (1/64) × 64 = 1.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "For the equilibria $\\text{H}_2(g)+\\text{Cl}_2(g)\\rightleftharpoons2\\text{HCl}(g)$, $K_1=2$; $2\\text{HCl}(g)+\\dfrac12\\text{O}_2(g)\\rightleftharpoons\\text{H}_2\\text{O}(g)+\\text{Cl}_2(g)$, $K_2=4$; and $2\\text{O}(g)\\rightleftharpoons\\text{O}_2(g)$, $K_3=64$, find $K$ for $2\\text{H}_2\\text{O}(g)+2\\text{O}(g)\\rightleftharpoons2\\text{H}_2(g)+2\\text{O}_2(g)$. All equilibrium constants are dimensionless.",
+  "options": [
+   "$\\dfrac{1}{4096}$",
+   "$1$",
+   "$2$",
+   "$4$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Reverse and double reactions 1 and 2; use reaction 3 as written. $K=K_1^{-2}K_2^{-2}K_3=\\dfrac{64}{2^2\\times4^2}=1$",
+  "distractor_notes": "A: reverses reaction 3 as well; C: uses reaction 1 only once; D: uses reaction 2 only once."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

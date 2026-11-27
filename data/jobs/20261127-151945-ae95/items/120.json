@@ -1,0 +1,71 @@
+{
+ "qno": 120,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 120,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Binomial distribution",
+  "archetype": "single-formula numerical",
+  "brief": "A binomial experiment (e.g. coins/dice/defective items) with small n; ask for the probability of exactly k successes or at least one success using the binomial formula.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:106",
+   "2026s1:114",
+   "2021:138"
+  ],
+  "origin": "variant",
+  "bank_ref": "g424f1b465160"
+ },
+ "status": "ok",
+ "stem": "A sensor detects a signal with probability $\\frac{1}{3}$ on each of six independent trials. What is the probability of exactly two detections?",
+ "options": [
+  "$\\frac{80}{243}$",
+  "$\\frac{32}{243}$",
+  "$\\frac{16}{729}$",
+  "$\\frac{20}{27}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using the binomial formula: $\\binom{6}{2}(1/3)^2(2/3)^4=80/243$.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P(X=2)=\\binom{6}{2}\\bigl(\\frac{1}{3}\\bigr)^2\\bigl(\\frac{2}{3}\\bigr)^4$<br>$=15\\frac{1}{9}\\frac{16}{81}=\\frac{80}{243}$\n\nIndependent check: Using the binomial formula: $\\binom{6}{2}(1/3)^2(2/3)^4=80/243$.",
+ "solution": "Using the binomial probability formula,\n$$P(X=2)=\\binom{6}{2}\\left(\\frac{1}{3}\\right)^2\\left(\\frac{2}{3}\\right)^4=15\\cdot\\frac{1}{9}\\cdot\\frac{16}{81}=\\frac{80}{243}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A sensor detects a signal with probability $\\frac{1}{3}$ on each of six independent trials. What is the probability of exactly two detections?",
+  "options": [
+   "$\\frac{16}{729}$",
+   "$\\frac{32}{243}$",
+   "$\\frac{80}{243}$",
+   "$\\frac{20}{27}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$P(X=2)=\\binom{6}{2}\\bigl(\\frac{1}{3}\\bigr)^2\\bigl(\\frac{2}{3}\\bigr)^4$<br>$=15\\frac{1}{9}\\frac{16}{81}=\\frac{80}{243}$",
+  "distractor_notes": "A: omits the binomial coefficient. B: uses $6$ instead of $\\binom{6}{2}$. D: uses the wrong power for the failure probability."
+ },
+ "variant_of": "g424f1b465160",
+ "author_model": "openai/gpt-6-luna-pro"
+}

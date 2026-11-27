@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "Two long, straight parallel wires separated by a distance of $20\\ \\text{cm}$ carry currents of $4\\ \\text{A}$ and $6\\ \\text{A}$ in opposite directions. The magnitude of the net magnetic field at the midpoint between the two wires is:",
+ "stem": "Two long parallel wires lie in the plane of the page at $x=0$ and $x=0.30$ m. They carry currents of $5$ A and $8$ A upward, respectively. Find the magnetic field at $x=-0.10$ m.",
  "options": [
-  "$4\\ \\mu\\text{T}$",
-  "$10\\ \\mu\\text{T}$",
-  "$20\\ \\mu\\text{T}$",
-  "$40\\ \\mu\\text{T}$"
+  "$6\\ \\mu\\text{T}$, out of the page",
+  "$14\\ \\mu\\text{T}$, out of the page",
+  "$14\\ \\mu\\text{T}$, into the page",
+  "$18\\ \\mu\\text{T}$, out of the page"
  ],
- "answer": "C",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "At midpoint r = 0.1 m from each wire. Opposite currents make the two fields add at the midpoint: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
-   "answer": "C",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For upward currents, the field to the left of each wire is out of the page. Magnitudes: wire at x=0 gives 2×10⁻⁷(5/0.10)=10 μT; wire at x=0.30 m gives 2×10⁻⁷(8/0.40)=4 μT. The fields add to 14 μT out of the page.",
+   "answer": "B",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The magnetic field at a distance $r$ from a long straight wire carrying current $I$ is given by:\n$$B = \\dfrac{\\mu_0 I}{2\\pi r}$$\n\nThe midpoint lies at a distance:\n$$r = \\dfrac{d}{2} = \\dfrac{20\\ \\text{cm}}{2} = 10\\ \\text{cm} = 0.1\\ \\text{m}$$\n\nCalculating the magnitude of the field from each wire:\n$$B_1 = \\dfrac{\\mu_0 I_1}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(4\\ \\text{A})}{0.1\\ \\text{m}} = 8\\times 10^{-6}\\ \\text{T} = 8\\ \\mu\\text{T}$$\n$$B_2 = \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(6\\ \\text{A})}{0.1\\ \\text{m}} = 12\\times 10^{-6}\\ \\text{T} = 12\\ \\mu\\text{T}$$\n\nBy the right-hand grip rule, because the currents flow in opposite directions, their magnetic field vectors at any point between the wires point in the same direction (perpendicular to the plane of the wires).\n\nTherefore, the net field magnitude is the sum of the two fields:\n$$B_{\\text{net}} = B_1 + B_2 = 8\\ \\mu\\text{T} + 12\\ \\mu\\text{T} = 20\\ \\mu\\text{T}$$\n\nIndependent check: At midpoint r = 0.1 m from each wire. Opposite currents make the two fields add at the midpoint: B = (μ0/2π)(I1+I2)/r = 2×10⁻⁷ × 10 / 0.1 = 2×10⁻⁵ T = 20 μT.",
+ "working": "$r_1=0.10\\ \\text{m},\\quad r_2=0.40\\ \\text{m}$\n$B_1=2\\times10^{-7}\\dfrac{5}{0.10}=10\\ \\mu\\text{T},\\quad B_2=2\\times10^{-7}\\dfrac{8}{0.40}=4\\ \\mu\\text{T}$\n$B_{\\text{net}}=B_1+B_2=14\\ \\mu\\text{T}$\nRight-hand rule: both fields point out of the page.\n\nIndependent check: For upward currents, the field to the left of each wire is out of the page. Magnitudes: wire at x=0 gives 2×10⁻⁷(5/0.10)=10 μT; wire at x=0.30 m gives 2×10⁻⁷(8/0.40)=4 μT. The fields add to 14 μT out of the page.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Two long, straight parallel wires separated by a distance of $20\\ \\text{cm}$ carry currents of $4\\ \\text{A}$ and $6\\ \\text{A}$ in opposite directions. The magnitude of the net magnetic field at the midpoint between the two wires is:",
+  "stem": "Two long parallel wires lie in the plane of the page at $x=0$ and $x=0.30$ m. They carry currents of $5$ A and $8$ A upward, respectively. Find the magnetic field at $x=-0.10$ m.",
   "options": [
-   "$4\\ \\mu\\text{T}$",
-   "$10\\ \\mu\\text{T}$",
-   "$20\\ \\mu\\text{T}$",
-   "$40\\ \\mu\\text{T}$"
+   "$6\\ \\mu\\text{T}$, out of the page",
+   "$14\\ \\mu\\text{T}$, out of the page",
+   "$14\\ \\mu\\text{T}$, into the page",
+   "$18\\ \\mu\\text{T}$, out of the page"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The magnetic field at a distance $r$ from a long straight wire carrying current $I$ is given by:\n$$B = \\dfrac{\\mu_0 I}{2\\pi r}$$\n\nThe midpoint lies at a distance:\n$$r = \\dfrac{d}{2} = \\dfrac{20\\ \\text{cm}}{2} = 10\\ \\text{cm} = 0.1\\ \\text{m}$$\n\nCalculating the magnitude of the field from each wire:\n$$B_1 = \\dfrac{\\mu_0 I_1}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(4\\ \\text{A})}{0.1\\ \\text{m}} = 8\\times 10^{-6}\\ \\text{T} = 8\\ \\mu\\text{T}$$\n$$B_2 = \\dfrac{\\mu_0 I_2}{2\\pi r} = \\dfrac{(2\\times 10^{-7}\\ \\text{T}\\cdot\\text{m A}^{-1})(6\\ \\text{A})}{0.1\\ \\text{m}} = 12\\times 10^{-6}\\ \\text{T} = 12\\ \\mu\\text{T}$$\n\nBy the right-hand grip rule, because the currents flow in opposite directions, their magnetic field vectors at any point between the wires point in the same direction (perpendicular to the plane of the wires).\n\nTherefore, the net field magnitude is the sum of the two fields:\n$$B_{\\text{net}} = B_1 + B_2 = 8\\ \\mu\\text{T} + 12\\ \\mu\\text{T} = 20\\ \\mu\\text{T}$$",
-  "distractor_notes": "Option A ($4\\ \\mu\\text{T}$): Subtraction mistake ($12 - 8$), assuming opposite currents produce canceling fields at the center.\nOption B ($10\\ \\mu\\text{T}$): Used the total separation $d = 20\\ \\text{cm}$ instead of the midpoint distance $r = 10\\ \\text{cm}$.\nOption D ($40\\ \\mu\\text{T}$): Missed the factor of 2 in the denominator of the straight-wire field formula ($B = \\mu_0 I / (\\pi r)$).",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$r_1=0.10\\ \\text{m},\\quad r_2=0.40\\ \\text{m}$\n$B_1=2\\times10^{-7}\\dfrac{5}{0.10}=10\\ \\mu\\text{T},\\quad B_2=2\\times10^{-7}\\dfrac{8}{0.40}=4\\ \\mu\\text{T}$\n$B_{\\text{net}}=B_1+B_2=14\\ \\mu\\text{T}$\nRight-hand rule: both fields point out of the page.",
+  "distractor_notes": "A: Subtracts the two field magnitudes instead of adding them. C: Reverses the direction given by the right-hand rule. D: Uses an incorrect distance to the second wire."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

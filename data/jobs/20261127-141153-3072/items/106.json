@@ -1,0 +1,68 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Classical probability",
+  "archetype": "direct computation",
+  "brief": "Draw balls/cards without replacement; ask for probability of a described composition (e.g. all same colour or exactly one of a kind); simple fraction counting.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:107",
+   "2022:128",
+   "2025s1:91"
+  ]
+ },
+ "status": "ok",
+ "stem": "A bag contains $4$ red and $3$ blue balls. If $3$ balls are drawn without replacement, what is the probability of getting exactly $2$ red balls?",
+ "options": [
+  "$\\dfrac{4}{35}$",
+  "$\\dfrac{12}{35}$",
+  "$\\dfrac{18}{35}$",
+  "$\\dfrac{24}{35}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Favourable draws: \\(\\binom{4}{2}\\binom{3}{1}=18\\); total draws: \\(\\binom{7}{3}=35\\). Thus \\(P=18/35\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$P=\\dfrac{\\binom{4}{2}\\binom{3}{1}}{\\binom{7}{3}}=\\dfrac{6\\cdot3}{35}=\\dfrac{18}{35}$\n\nIndependent check: Favourable draws: \\(\\binom{4}{2}\\binom{3}{1}=18\\); total draws: \\(\\binom{7}{3}=35\\). Thus \\(P=18/35\\).",
+ "solution": "The probability is the number of favourable draws divided by the total number of draws:\n$$P=\\frac{\\binom{4}{2}\\binom{3}{1}}{\\binom{7}{3}}=\\frac{6\\cdot3}{35}=\\frac{18}{35}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A bag contains $4$ red and $3$ blue balls. If $3$ balls are drawn without replacement, what is the probability of getting exactly $2$ red balls?",
+  "options": [
+   "$\\dfrac{4}{35}$",
+   "$\\dfrac{12}{35}$",
+   "$\\dfrac{18}{35}$",
+   "$\\dfrac{24}{35}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$P=\\dfrac{\\binom{4}{2}\\binom{3}{1}}{\\binom{7}{3}}=\\dfrac{6\\cdot3}{35}=\\dfrac{18}{35}$",
+  "distractor_notes": "A: Counts the all-red selections instead.\\nB: Counts the reversed composition, two blue and one red.\\nD: Overcounts the favourable selections."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

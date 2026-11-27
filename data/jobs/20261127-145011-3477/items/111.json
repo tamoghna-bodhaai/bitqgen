@@ -1,0 +1,71 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Probability",
+  "subtopic": "Conditional probability, independence",
+  "archetype": "conditional probability",
+  "brief": "Two-draw or card-die scenario; ask P(A|B) or check independence of two events from a joint table",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:135",
+   "2025s1:92",
+   "2024s2:93"
+  ],
+  "origin": "variant",
+  "bank_ref": "g9b5b9d4980b3"
+ },
+ "status": "ok",
+ "stem": "Two cards are drawn without replacement from a standard $52$-card deck. Given that at least one is a queen, the probability that both are face cards (J, Q or K) is",
+ "options": [
+  "$\\dfrac{1}{33}$",
+  "$\\dfrac{19}{99}$",
+  "$\\dfrac{16}{99}$",
+  "$\\dfrac{19}{96}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Favorable pairs: \\(\\binom{12}{2}-\\binom{8}{2}=38\\) (both face cards, with at least one queen). Pairs with at least one queen: \\(\\binom{52}{2}-\\binom{48}{2}=198\\). Thus the probability is \\(38/198=19/99\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Pairs with at least one queen: $\\binom{52}{2}-\\binom{48}{2}=198$. Favorable pairs: $\\binom{12}{2}-\\binom{8}{2}=38$. Hence $P=\\dfrac{38}{198}=\\dfrac{19}{99}$.\n\nIndependent check: Favorable pairs: \\(\\binom{12}{2}-\\binom{8}{2}=38\\) (both face cards, with at least one queen). Pairs with at least one queen: \\(\\binom{52}{2}-\\binom{48}{2}=198\\). Thus the probability is \\(38/198=19/99\\).",
+ "solution": "Pairs with at least one queen: $\\binom{52}{2}-\\binom{48}{2}=198$. Favorable pairs (both face cards and at least one queen): $\\binom{12}{2}-\\binom{8}{2}=38$.\n$$P=\\frac{38}{198}=\\frac{19}{99}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two cards are drawn without replacement from a standard $52$-card deck. Given that at least one is a queen, the probability that both are face cards (J, Q or K) is",
+  "options": [
+   "$\\dfrac{1}{33}$",
+   "$\\dfrac{16}{99}$",
+   "$\\dfrac{19}{99}$",
+   "$\\dfrac{19}{96}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Pairs with at least one queen: $\\binom{52}{2}-\\binom{48}{2}=198$. Favorable pairs: $\\binom{12}{2}-\\binom{8}{2}=38$. Hence $P=\\dfrac{38}{198}=\\dfrac{19}{99}$.",
+  "distractor_notes": "A: Counts only pairs of queens as favorable; B: Counts pairs with exactly one queen among the face cards; D: Uses the count for exactly one queen in the conditioning event."
+ },
+ "variant_of": "g9b5b9d4980b3",
+ "author_model": "openai/gpt-6-luna-pro"
+}

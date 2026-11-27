@@ -1,0 +1,70 @@
+{
+ "qno": 36,
+ "section": "Physics",
+ "slot": {
+  "qno": 36,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Wave equation parameters",
+  "archetype": "read-off parameters",
+  "brief": "Given the equation of a travelling wave y(x,t), read off amplitude, wavelength, frequency and wave speed, and state the direction of propagation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:29",
+   "2021:16",
+   "2022:22"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A travelling wave is described by $y=0.02\\cos(8\\pi t+4\\pi x)$ m, where $x$ is in metres and $t$ is in seconds. What are its amplitude, wavelength, frequency, speed and direction of propagation, respectively?",
+ "options": [
+  "$0.02$ m, $1$ m, $4$ Hz, $4$ m s$^{-1}$, $-x$ direction",
+  "$0.02$ m, $0.5$ m, $4$ Hz, $2$ m s$^{-1}$, $+x$ direction",
+  "$0.02$ m, $0.5$ m, $8$ Hz, $4$ m s$^{-1}$, $-x$ direction",
+  "$0.02$ m, $0.5$ m, $4$ Hz, $2$ m s$^{-1}$, $-x$ direction"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "From y=A cos(ωt+kx), A=0.02 m, ω=8π rad/s, k=4π rad/m. Hence f=ω/(2π)=4 Hz, λ=2π/k=0.5 m, and v=ω/k=2 m/s. The +ωt+kx phase propagates in the −x direction.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A=0.02$ m, $\\omega=8\\pi$ rad s$^{-1}$, $k=4\\pi$ rad m$^{-1}$.\\n$f=\\dfrac{\\omega}{2\\pi}=4$ Hz; $\\lambda=\\dfrac{2\\pi}{k}=0.5$ m.\\n$v=\\dfrac{\\omega}{k}=2$ m s$^{-1}$.\\nThe phase $kx+\\omega t$ propagates in the $-x$ direction.\n\nIndependent check: From y=A cos(ωt+kx), A=0.02 m, ω=8π rad/s, k=4π rad/m. Hence f=ω/(2π)=4 Hz, λ=2π/k=0.5 m, and v=ω/k=2 m/s. The +ωt+kx phase propagates in the −x direction.",
+ "solution": "$A=0.02\\,\\text{m}$, $\\omega=8\\pi\\,\\text{rad s}^{-1}$ and $k=4\\pi\\,\\text{rad m}^{-1}$. Thus $f=\\omega/(2\\pi)=4\\,\\text{Hz}$ and $\\lambda=2\\pi/k=0.5\\,\\text{m}$.\n$$v=\\frac{\\omega}{k}=2\\,\\text{m s}^{-1}$$The phase $kx+\\omega t$ travels in the $-x$ direction.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A travelling wave is described by $y=0.02\\cos(8\\pi t+4\\pi x)$ m, where $x$ is in metres and $t$ is in seconds. What are its amplitude, wavelength, frequency, speed and direction of propagation, respectively?",
+  "options": [
+   "$0.02$ m, $1$ m, $4$ Hz, $4$ m s$^{-1}$, $-x$ direction",
+   "$0.02$ m, $0.5$ m, $4$ Hz, $2$ m s$^{-1}$, $-x$ direction",
+   "$0.02$ m, $0.5$ m, $8$ Hz, $4$ m s$^{-1}$, $-x$ direction",
+   "$0.02$ m, $0.5$ m, $4$ Hz, $2$ m s$^{-1}$, $+x$ direction"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$A=0.02$ m, $\\omega=8\\pi$ rad s$^{-1}$, $k=4\\pi$ rad m$^{-1}$.\\n$f=\\dfrac{\\omega}{2\\pi}=4$ Hz; $\\lambda=\\dfrac{2\\pi}{k}=0.5$ m.\\n$v=\\dfrac{\\omega}{k}=2$ m s$^{-1}$.\\nThe phase $kx+\\omega t$ propagates in the $-x$ direction.",
+  "distractor_notes": "A: Uses an incorrect wavelength and correspondingly incorrect speed.\\nC: Confuses angular frequency with frequency, then calculates speed from that value.\\nD: Reverses the propagation direction for a phase of the form $kx+\\omega t$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

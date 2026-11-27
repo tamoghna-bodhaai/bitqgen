@@ -1,0 +1,70 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Permutations and Combinations",
+  "subtopic": "Arrangements with restricted positions",
+  "archetype": "restricted arrangement",
+  "brief": "Count arrangements of letters/digits of a word or 5-digit numbers where two particular objects must always (or never) sit together; case-wise on adjacent pairs.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:113",
+   "2022:127",
+   "2026s1:96"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "How many five-digit numbers formed from $0,1,2,3,4,5$ without repetition have $2$ and $3$ adjacent?",
+ "options": [
+  "$48$",
+  "$78$",
+  "$156$",
+  "$192$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Treat 2 and 3 as an oriented block. Choose the other 3 digits from {0,1,4,5}. If they include 0 (3 choices), there are 2·(4!−3!)=36 valid arrangements per choice; if not (1 choice), there are 2·4!=48. Total = 3·36+48=156.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "If $0$ is used: $\\binom{3}{2}(2\\cdot4!-2\\cdot3!)=108$. If $0$ is omitted: $2\\cdot4!=48$. Total $108+48=156$.\n\nIndependent check: Treat 2 and 3 as an oriented block. Choose the other 3 digits from {0,1,4,5}. If they include 0 (3 choices), there are 2·(4!−3!)=36 valid arrangements per choice; if not (1 choice), there are 2·4!=48. Total = 3·36+48=156.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "How many five-digit numbers formed from $0,1,2,3,4,5$ without repetition have $2$ and $3$ adjacent?",
+  "options": [
+   "$48$",
+   "$78$",
+   "$156$",
+   "$192$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "If $0$ is used: $\\binom{3}{2}(2\\cdot4!-2\\cdot3!)=108$. If $0$ is omitted: $2\\cdot4!=48$. Total $108+48=156$.",
+  "distractor_notes": "A: counts only the case where zero is omitted; B: counts only one order of the adjacent pair; D: allows numbers to begin with zero."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

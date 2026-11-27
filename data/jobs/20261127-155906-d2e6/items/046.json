@@ -1,0 +1,70 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "Electrochemistry",
+  "subtopic": "Standard cell EMF",
+  "archetype": "single-formula numerical",
+  "brief": "Standard cell EMF: add two given half-cell reduction potentials with appropriate reversal, compute E°cell; straightforward single-formula number.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:42",
+   "2026s2:40",
+   "2022:43"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Given $E^\\circ_{\\text{Ag}^+/\\text{Ag}}=0.80\\ \\text{V}$ and $E^\\circ_{\\text{Zn}^{2+}/\\text{Zn}}=-0.76\\ \\text{V}$, find $E^\\circ_{\\text{cell}}$ for $\\text{Zn}|\\text{Zn}^{2+}||\\text{Ag}^+|\\text{Ag}$.",
+ "options": [
+  "$-1.56\\ \\text{V}$",
+  "$0.04\\ \\text{V}$",
+  "$0.76\\ \\text{V}$",
+  "$1.56\\ \\text{V}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For Zn|Zn²⁺||Ag⁺|Ag, Ag is the cathode and Zn is the anode. E°cell = 0.80 − (−0.76) = 1.56 V.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E^\\circ_{\\text{cell}}=E^\\circ_{\\text{cathode}}-E^\\circ_{\\text{anode}}$\n$=0.80-(-0.76)=1.56\\ \\text{V}$\n\nIndependent check: For Zn|Zn²⁺||Ag⁺|Ag, Ag is the cathode and Zn is the anode. E°cell = 0.80 − (−0.76) = 1.56 V.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Given $E^\\circ_{\\text{Ag}^+/\\text{Ag}}=0.80\\ \\text{V}$ and $E^\\circ_{\\text{Zn}^{2+}/\\text{Zn}}=-0.76\\ \\text{V}$, find $E^\\circ_{\\text{cell}}$ for $\\text{Zn}|\\text{Zn}^{2+}||\\text{Ag}^+|\\text{Ag}$.",
+  "options": [
+   "$-1.56\\ \\text{V}$",
+   "$0.04\\ \\text{V}$",
+   "$0.76\\ \\text{V}$",
+   "$1.56\\ \\text{V}$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$E^\\circ_{\\text{cell}}=E^\\circ_{\\text{cathode}}-E^\\circ_{\\text{anode}}$\n$=0.80-(-0.76)=1.56\\ \\text{V}$",
+  "distractor_notes": "A: reverses the cell reaction. B: adds the reduction potentials without reversing the anode reaction. C: reports only the magnitude of the zinc potential."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

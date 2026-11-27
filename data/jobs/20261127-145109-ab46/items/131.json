@@ -1,0 +1,70 @@
+{
+ "qno": 131,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 131,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by parts",
+  "archetype": "integration technique",
+  "brief": "Definite integral requiring integration by parts (e.g., ∫x·eˣ or ∫x·sin x over limits); apply the parts formula and evaluate boundary terms.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:96",
+   "2026s1:99",
+   "2021:118"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The value of $\\displaystyle\\int_0^1 x^3 e^x\\,dx$ is",
+ "options": [
+  "$6-e$",
+  "$2e-6$",
+  "$6-2e$",
+  "$6-3e$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "An antiderivative is $e^x(x^3-3x^2+6x-6)$. Evaluating from 0 to 1 gives $-2e-(-6)=6-2e$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\int x^3e^x\\,dx=e^x(x^3-3x^2+6x-6)$; $[e^x(x^3-3x^2+6x-6)]_0^1=-2e-(-6)=6-2e$.\n\nIndependent check: An antiderivative is $e^x(x^3-3x^2+6x-6)$. Evaluating from 0 to 1 gives $-2e-(-6)=6-2e$.",
+ "solution": "Using integration by parts repeatedly, an antiderivative is $e^x(x^3-3x^2+6x-6)$. Thus,\n$$\\int_0^1 x^3e^x\\,dx=[e^x(x^3-3x^2+6x-6)]_0^1=6-2e.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "The value of $\\displaystyle\\int_0^1 x^3 e^x\\,dx$ is",
+  "options": [
+   "$6-2e$",
+   "$2e-6$",
+   "$6-e$",
+   "$6-3e$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\int x^3e^x\\,dx=e^x(x^3-3x^2+6x-6)$; $[e^x(x^3-3x^2+6x-6)]_0^1=-2e-(-6)=6-2e$.",
+  "distractor_notes": "B: reverses the boundary subtraction; C: misses the coefficient 2; D: uses an incorrect coefficient after repeated integration by parts."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

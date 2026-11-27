@@ -1,0 +1,68 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Image of a point in a line",
+  "archetype": "reflection formula",
+  "brief": "Find the image of a given point in a given line; use foot-of-perpendicular then reflection; moderate two-step computation.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:115",
+   "2024s2:114",
+   "2025s1:116"
+  ]
+ },
+ "status": "ok",
+ "stem": "The image of $(4,2)$ in the line $x+2y-3=0$ is",
+ "options": [
+  "$(3,0)$",
+  "$(4,-2)$",
+  "$(2,-2)$",
+  "$(6,6)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The reflection is (4,2) − 2[(4+2·2−3)/(1²+2²)](1,2) = (2,−2).",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$S=4+2(2)-3=5,\\quad \\|(1,2)\\|^2=5$. The foot is $H=(4,2)-\\dfrac{5}{5}(1,2)=(3,0)$. The image is $2H-(4,2)=(2,-2)$.\n\nIndependent check: The reflection is (4,2) − 2[(4+2·2−3)/(1²+2²)](1,2) = (2,−2).",
+ "solution": "For reflection across $ax+by+c=0$, use $(x',y')=(x,y)-\\dfrac{2(ax+by+c)}{a^2+b^2}(a,b)$.\n$$ (x',y')=(4,2)-\\frac{2(4+2\\cdot2-3)}{1^2+2^2}(1,2)=(2,-2). $$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The image of $(4,2)$ in the line $x+2y-3=0$ is",
+  "options": [
+   "$(3,0)$",
+   "$(4,-2)$",
+   "$(6,6)$",
+   "$(2,-2)$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$S=4+2(2)-3=5,\\quad \\|(1,2)\\|^2=5$. The foot is $H=(4,2)-\\dfrac{5}{5}(1,2)=(3,0)$. The image is $2H-(4,2)=(2,-2)$.",
+  "distractor_notes": "A: Gives the foot of the perpendicular instead of the image. B: Omits the horizontal component of the reflection displacement. C: Uses the reflection displacement in the opposite direction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

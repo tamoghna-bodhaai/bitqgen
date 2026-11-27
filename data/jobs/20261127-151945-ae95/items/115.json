@@ -1,0 +1,71 @@
+{
+ "qno": 115,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 115,
+  "section": "Mathematics",
+  "chapter": "Trigonometry",
+  "subtopic": "Range of a sin + b cos",
+  "archetype": "amplitude bound",
+  "brief": "Find the range (or max/min value) of an expression of the form a sin θ + b cos θ + c, possibly with a constraint on θ, using the amplitude bound.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:107",
+   "2021:125",
+   "2025s1:126"
+  ],
+  "origin": "variant",
+  "bank_ref": "gd0c5bef7ade8"
+ },
+ "status": "ok",
+ "stem": "For real $\\theta$, the maximum value of $5\\sin\\theta+12\\cos\\theta-3$ is",
+ "options": [
+  "$-16$",
+  "$13$",
+  "$10$",
+  "$16$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The maximum of 5 sin θ + 12 cos θ is √(5² + 12²) = 13; subtracting 3 gives 10.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$5\\sin\\theta+12\\cos\\theta\\in[-\\sqrt{5^2+12^2},\\sqrt{5^2+12^2}]=[-13,13]$.\\\\\nHence the maximum is $13-3=10$.\n\nIndependent check: The maximum of 5 sin θ + 12 cos θ is √(5² + 12²) = 13; subtracting 3 gives 10.",
+ "solution": "Using $a\\sin\\theta+b\\cos\\theta\\leq\\sqrt{a^2+b^2}$,\n$$5\\sin\\theta+12\\cos\\theta\\leq\\sqrt{5^2+12^2}=13.$$\nHence the maximum of $5\\sin\\theta+12\\cos\\theta-3$ is $13-3=10$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For real $\\theta$, the maximum value of $5\\sin\\theta+12\\cos\\theta-3$ is",
+  "options": [
+   "$-16$",
+   "$10$",
+   "$13$",
+   "$16$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$5\\sin\\theta+12\\cos\\theta\\in[-\\sqrt{5^2+12^2},\\sqrt{5^2+12^2}]=[-13,13]$.\\\\\nHence the maximum is $13-3=10$.",
+  "distractor_notes": "A: Gives the minimum instead of the maximum. C: Omits the constant term. D: Adds the constant term instead of subtracting it."
+ },
+ "variant_of": "gd0c5bef7ade8",
+ "author_model": "openai/gpt-6-luna-pro"
+}

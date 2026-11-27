@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "For a first-order reaction with a half-life of $25\\ \\text{min}$, the time required for the reactant concentration to decrease from $0.64\\ \\text{mol L}^{-1}$ to $0.08\\ \\text{mol L}^{-1}$ is",
+ "stem": "The half-life of a first-order reaction is $12\\ \\text{min}$. How long does the concentration take to decrease from $0.48\\ \\text{mol L}^{-1}$ to $0.03\\ \\text{mol L}^{-1}$?",
  "options": [
-  "$50\\ \\text{min}$",
-  "$75\\ \\text{min}$",
-  "$100\\ \\text{min}$",
-  "$200\\ \\text{min}$"
+  "$12\\ \\text{min}$",
+  "$24\\ \\text{min}$",
+  "$48\\ \\text{min}$",
+  "$96\\ \\text{min}$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "0.64 → 0.08 is a factor of 8 = 2^3, i.e., 3 half-lives. t = 3 × 25 = 75 min (verified via t = (t½/ln2)·ln(8) = 75).",
-   "answer": "B",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The concentration decreases by a factor of 0.48/0.03 = 16 = 2^4, so 4 half-lives elapse: 4 × 12 = 48 min.",
+   "answer": "C",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "For a first-order reaction, the remaining concentration $[A]_t$ after $n$ half-lives is given by:\n$$[A]_t = [A]_0 \\left(\\dfrac{1}{2}\\right)^n$$\n\nSubstitute the given values:\n$$\\dfrac{[A]_t}{[A]_0} = \\dfrac{0.08\\ \\text{mol L}^{-1}}{0.64\\ \\text{mol L}^{-1}} = \\dfrac{1}{8} = \\left(\\dfrac{1}{2}\\right)^3$$\n\nTherefore, the number of half-lives elapsed is $n = 3$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 3 \\times 25\\ \\text{min} = 75\\ \\text{min}$$\n\nIndependent check: 0.64 → 0.08 is a factor of 8 = 2^3, i.e., 3 half-lives. t = 3 × 25 = 75 min (verified via t = (t½/ln2)·ln(8) = 75).",
+ "working": "$\\dfrac{0.03}{0.48}=\\dfrac{1}{16}=\\left(\\dfrac{1}{2}\\right)^4$; hence $n=4$ half-lives.\n$t=4\\times12\\ \\text{min}=48\\ \\text{min}$\n\nIndependent check: The concentration decreases by a factor of 0.48/0.03 = 16 = 2^4, so 4 half-lives elapse: 4 × 12 = 48 min.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "For a first-order reaction with a half-life of $25\\ \\text{min}$, the time required for the reactant concentration to decrease from $0.64\\ \\text{mol L}^{-1}$ to $0.08\\ \\text{mol L}^{-1}$ is",
+  "stem": "The half-life of a first-order reaction is $12\\ \\text{min}$. How long does the concentration take to decrease from $0.48\\ \\text{mol L}^{-1}$ to $0.03\\ \\text{mol L}^{-1}$?",
   "options": [
-   "$50\\ \\text{min}$",
-   "$75\\ \\text{min}$",
-   "$100\\ \\text{min}$",
-   "$200\\ \\text{min}$"
+   "$12\\ \\text{min}$",
+   "$24\\ \\text{min}$",
+   "$48\\ \\text{min}$",
+   "$96\\ \\text{min}$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "For a first-order reaction, the remaining concentration $[A]_t$ after $n$ half-lives is given by:\n$$[A]_t = [A]_0 \\left(\\dfrac{1}{2}\\right)^n$$\n\nSubstitute the given values:\n$$\\dfrac{[A]_t}{[A]_0} = \\dfrac{0.08\\ \\text{mol L}^{-1}}{0.64\\ \\text{mol L}^{-1}} = \\dfrac{1}{8} = \\left(\\dfrac{1}{2}\\right)^3$$\n\nTherefore, the number of half-lives elapsed is $n = 3$.\n\nThe total time required is:\n$$t = n \\times t_{1/2} = 3 \\times 25\\ \\text{min} = 75\\ \\text{min}$$",
-  "distractor_notes": "A: Corresponds to under-counting the number of half-lives as $n = 2$ ($2 \\times 25 = 50\\ \\text{min}$).\nC: Corresponds to over-counting the number of half-lives as $n = 4$ ($4 \\times 25 = 100\\ \\text{min}$).\nD: Corresponds to taking the ratio of initial to final concentration ($0.64/0.08 = 8$) directly as the number of half-lives ($8 \\times 25 = 200\\ \\text{min}$).",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{0.03}{0.48}=\\dfrac{1}{16}=\\left(\\dfrac{1}{2}\\right)^4$; hence $n=4$ half-lives.\n$t=4\\times12\\ \\text{min}=48\\ \\text{min}$",
+  "distractor_notes": "A: counts one half-life; B: counts two half-lives; D: mistakenly doubles the correct time."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

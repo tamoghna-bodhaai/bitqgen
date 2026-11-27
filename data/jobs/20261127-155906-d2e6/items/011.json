@@ -1,0 +1,70 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Photoelectric equation",
+  "archetype": "ratio of two situations",
+  "brief": "Light of two different wavelengths incident on the same metal; use Einstein's photoelectric equation to relate stopping potentials and find the work function or the maximum KE ratio for the two wavelengths.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:2",
+   "2025s2:27",
+   "2023s1:26"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For a metal, light of wavelengths $400\\ \\text{nm}$ and $800\\ \\text{nm}$ gives stopping potentials in the ratio $3:1$. Taking $hc=1240\\ \\text{eV}\\cdot\\text{nm}$, find the work function of the metal.",
+ "options": [
+  "$0.775\\ \\text{eV}$",
+  "$1.55\\ \\text{eV}$",
+  "$2.325\\ \\text{eV}$",
+  "$3.10\\ \\text{eV}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Photon energies are 1240/400 = 3.10 eV and 1240/800 = 1.55 eV. Thus (3.10 − φ)/(1.55 − φ) = 3, giving φ = 0.775 eV.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$K_1/K_2=3$; $E_1=1240/400=3.10\\ \\text{eV}$, $E_2=1240/800=1.55\\ \\text{eV}$. $(3.10-\\phi)/(1.55-\\phi)=3\\Rightarrow\\phi=0.775\\ \\text{eV}$.\n\nIndependent check: Photon energies are 1240/400 = 3.10 eV and 1240/800 = 1.55 eV. Thus (3.10 − φ)/(1.55 − φ) = 3, giving φ = 0.775 eV.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For a metal, light of wavelengths $400\\ \\text{nm}$ and $800\\ \\text{nm}$ gives stopping potentials in the ratio $3:1$. Taking $hc=1240\\ \\text{eV}\\cdot\\text{nm}$, find the work function of the metal.",
+  "options": [
+   "$0.775\\ \\text{eV}$",
+   "$1.55\\ \\text{eV}$",
+   "$2.325\\ \\text{eV}$",
+   "$3.10\\ \\text{eV}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$K_1/K_2=3$; $E_1=1240/400=3.10\\ \\text{eV}$, $E_2=1240/800=1.55\\ \\text{eV}$. $(3.10-\\phi)/(1.55-\\phi)=3\\Rightarrow\\phi=0.775\\ \\text{eV}$.",
+  "distractor_notes": "B: equates the work function to the lower photon energy; C: mistakes the higher maximum kinetic energy for the work function; D: takes the higher photon energy as the work function."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

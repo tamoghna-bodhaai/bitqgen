@@ -1,0 +1,79 @@
+{
+ "qno": 42,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 42,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Molecular geometry",
+  "archetype": "structure identification",
+  "brief": "Provide a Lewis/structure figure of two simple species (e.g., one hypervalent molecule); ask students to pick the correct geometry or hybridisation from drawn options",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:33",
+   "2026s2:50",
+   "2025s1:38"
+  ],
+  "origin": "variant",
+  "bank_ref": "g3a06379e1d12"
+ },
+ "status": "ok",
+ "stem": "For the two species shown in the figure, the hybridisations of the central atoms, respectively, are",
+ "options": [
+  "$sp^3d$; $sp^3d^2$",
+  "$sp^2$; $sp^3d$",
+  "$sp^3$; $sp^3d^2$",
+  "$sp^3$; $sp^3d$"
+ ],
+ "answer": "D",
+ "figure": {
+  "path": "figs/q042_stem_v1.png",
+  "width_pct": 70,
+  "kind": "chem"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "PCl₃ has 3 bonds and 1 lone pair on P (steric number 4), so it is sp³. BrF₃ has 3 bonds and 2 lone pairs on Br (steric number 5), so it is sp³d.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\text{PCl}_3$: $3$ bond pairs $+1$ lone pair $\\Rightarrow 4$ electron domains $\\Rightarrow sp^3$. \n$\\text{BrF}_3$: $3$ bond pairs $+2$ lone pairs $\\Rightarrow 5$ electron domains $\\Rightarrow sp^3d$.\n\nIndependent check: PCl₃ has 3 bonds and 1 lone pair on P (steric number 4), so it is sp³. BrF₃ has 3 bonds and 2 lone pairs on Br (steric number 5), so it is sp³d.",
+ "solution": "Hybridisation depends on the number of electron domains around the central atom.\nFor PCl₃: $3$ bond pairs $+1$ lone pair $=4$ domains, so hybridisation is $sp^3$.\nFor BrF₃: $3$ bond pairs $+2$ lone pairs $=5$ domains, so hybridisation is $sp^3d$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the two species shown in the figure, the hybridisations of the central atoms, respectively, are",
+  "options": [
+   "$sp^3$; $sp^3d$",
+   "$sp^2$; $sp^3d$",
+   "$sp^3$; $sp^3d^2$",
+   "$sp^3d$; $sp^3d^2$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw two separate Lewis structures side by side, labelled PCl3 on the left and BrF3 on the right. In the left structure, place P centrally with three single P–Cl bonds, one lone pair on P, and three lone pairs on each Cl. In the right structure, place Br centrally with three single Br–F bonds, two lone pairs on Br, and three lone pairs on each F. Show all lone pairs as pairs of dots. Use clear atom labels and no geometry names.",
+   "smiles": "P(Cl)(Cl)Cl.Br(F)(F)F"
+  },
+  "difficulty_estimate": 2,
+  "working": "$\\text{PCl}_3$: $3$ bond pairs $+1$ lone pair $\\Rightarrow 4$ electron domains $\\Rightarrow sp^3$. \n$\\text{BrF}_3$: $3$ bond pairs $+2$ lone pairs $\\Rightarrow 5$ electron domains $\\Rightarrow sp^3d$.",
+  "distractor_notes": "B: omits the lone pair when assigning hybridisation to P. C: assigns six electron domains to Br instead of five. D: overcounts the electron domains around P and Br."
+ },
+ "variant_of": "g3a06379e1d12",
+ "author_model": "openai/gpt-6-luna-pro"
+}

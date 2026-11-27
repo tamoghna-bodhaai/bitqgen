@@ -1,0 +1,70 @@
+{
+ "qno": 46,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 46,
+  "section": "Chemistry",
+  "chapter": "Surface Chemistry",
+  "subtopic": "Freundlich adsorption isotherm",
+  "archetype": "graph slope reading",
+  "brief": "Conceptual: in the Freundlich isotherm x/m = k·P^(1/n), what happens to adsorption as pressure increases (and significance of n > 1) — statement-based recall.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:60",
+   "2025s1:52",
+   "2024s2:39"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A gas follows the Freundlich isotherm, $\\dfrac{x}{m}=kP^{1/n}$. For $n>1$, which statement is correct?",
+ "options": [
+  "Adsorption is directly proportional to pressure, and the log–log plot has a slope of $1$.",
+  "Adsorption decreases with pressure, and the log–log plot has a negative slope.",
+  "Adsorption increases with pressure, and the log–log plot has a slope between $0$ and $1$.",
+  "Adsorption is independent of pressure, and the log–log plot has zero slope."
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Taking logs gives log(x/m) = log k + (1/n) log P. Since n > 1, the slope 1/n is between 0 and 1, so adsorption increases with pressure.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\log\\dfrac{x}{m}=\\log k+\\dfrac{1}{n}\\log P$; slope $=\\dfrac{1}{n}$. For $n>1$, $0<\\dfrac{1}{n}<1$, so adsorption increases with pressure with a sublinear dependence.\n\nIndependent check: Taking logs gives log(x/m) = log k + (1/n) log P. Since n > 1, the slope 1/n is between 0 and 1, so adsorption increases with pressure.",
+ "solution": "Taking logarithms of the Freundlich isotherm,\n$$\\log\\frac{x}{m}=\\log k+\\frac{1}{n}\\log P.$$\nThe log–log plot has slope $1/n$, and for $n>1$, $0<1/n<1$; hence adsorption increases with pressure sublinearly.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A gas follows the Freundlich isotherm, $\\dfrac{x}{m}=kP^{1/n}$. For $n>1$, which statement is correct?",
+  "options": [
+   "Adsorption increases with pressure, and the log–log plot has a slope between $0$ and $1$.",
+   "Adsorption decreases with pressure, and the log–log plot has a negative slope.",
+   "Adsorption is directly proportional to pressure, and the log–log plot has a slope of $1$.",
+   "Adsorption is independent of pressure, and the log–log plot has zero slope."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\log\\dfrac{x}{m}=\\log k+\\dfrac{1}{n}\\log P$; slope $=\\dfrac{1}{n}$. For $n>1$, $0<\\dfrac{1}{n}<1$, so adsorption increases with pressure with a sublinear dependence.",
+  "distractor_notes": "B: Reverses the sign of the pressure dependence. C: Treats the exponent as $1$. D: Treats the exponent as $0$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 68,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 68,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "Hess's law",
+  "archetype": "statement verification",
+  "brief": "Which statements about Hess's law / state functions / enthalpy being path independent are correct; simple true-false style multi-statement option.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:43",
+   "2022:33",
+   "2021:51"
+  ]
+ },
+ "status": "ok",
+ "stem": "Consider the statements: (I) Enthalpy is a state function. (II) The enthalpy change is independent of the path. (III) Hess's law follows from this. (IV) Heat is a state function. Which are correct?",
+ "options": [
+  "I and II only",
+  "I, II, III and IV",
+  "II and IV only",
+  "I, II and III only"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Enthalpy is a state function, so its change depends only on initial and final states; Hess’s law follows. Heat is path-dependent, not a state function.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Enthalpy is a state function, so $\\Delta H$ depends only on the initial and final states.\\nHess's law follows; heat $q$ is path-dependent.\\nCorrect: I, II and III.\n\nIndependent check: Enthalpy is a state function, so its change depends only on initial and final states; Hess’s law follows. Heat is path-dependent, not a state function.",
+ "solution": "Enthalpy is a state function, so $[?]$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Consider the statements: (I) Enthalpy is a state function. (II) The enthalpy change is independent of the path. (III) Hess's law follows from this. (IV) Heat is a state function. Which are correct?",
+  "options": [
+   "I and II only",
+   "I, II and III only",
+   "II and IV only",
+   "I, II, III and IV"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Enthalpy is a state function, so $\\Delta H$ depends only on the initial and final states.\\nHess's law follows; heat $q$ is path-dependent.\\nCorrect: I, II and III.",
+  "distractor_notes": "A: Omits the consequence of path independence, Hess's law.\nC: Incorrectly treats heat as a state function and omits I and III.\nD: Incorrectly treats heat as a state function."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "A vertical wire of Young's modulus $Y$ is fixed to a rigid ceiling at its upper end. It consists of two segments of equal length $L$: an upper segment of radius $2r$ and a lower segment of radius $r$. A load of mass $2M$ is attached at the junction between the two segments, and a load of mass $M$ is attached at the lower end. Neglecting the mass of the wire, the total elongation of the wire is",
+ "stem": "A wire of length $L$ and radius $r$ extends by $x$ under load $F$. A wire of the same material, length $2L$ and radius $2r$, is subjected to load $6F$. Its extension is",
  "options": [
-  "$\\dfrac{3MgL}{2\\pi r^2 Y}$",
-  "$\\dfrac{7MgL}{4\\pi r^2 Y}$",
-  "$\\dfrac{2MgL}{\\pi r^2 Y}$",
-  "$\\dfrac{5MgL}{2\\pi r^2 Y}$"
+  "$1.5x$",
+  "$12x$",
+  "$6x$",
+  "$3x$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Upper segment carries tension (2M+M)g = 3Mg over area π(2r)² = 4πr²: ΔL₁ = 3MgL/(4πr²Y). Lower segment carries Mg over area πr²: ΔL₂ = MgL/(πr²Y). Total = (3/4 + 1)MgL/(πr²Y) = 7MgL/(4πr²Y).",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using ΔL = FL/(AY), the second extension is (6F)(2L)/(π(2r)²Y) = 3x.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
- "attempts": 3,
+ "attempts": 1,
  "notes": [],
- "working": "1. Upper segment:\n- Cross-sectional area: $A_1 = \\pi (2r)^2 = 4\\pi r^2$.\n- The upper segment supports both the load at the junction ($2M$) and the load at the lower end ($M$), so the tension is:\n  $$T_1 = (2M + M)g = 3Mg$$\n- Elongation of the upper segment:\n  $$\\Delta L_1 = \\dfrac{T_1 L}{A_1 Y} = \\dfrac{3MgL}{4\\pi r^2 Y}$$\n\n2. Lower segment:\n- Cross-sectional area: $A_2 = \\pi r^2$.\n- The lower segment supports only the lower load ($M$), so the tension is:\n  $$T_2 = Mg$$\n- Elongation of the lower segment:\n  $$\\Delta L_2 = \\dfrac{T_2 L}{A_2 Y} = \\dfrac{MgL}{\\pi r^2 Y}$$\n\n3. Total elongation:\n  $$\\Delta L = \\Delta L_1 + \\Delta L_2 = \\dfrac{3MgL}{4\\pi r^2 Y} + \\dfrac{4MgL}{4\\pi r^2 Y} = \\dfrac{7MgL}{4\\pi r^2 Y}$$\n\nIndependent check: Upper segment carries tension (2M+M)g = 3Mg over area π(2r)² = 4πr²: ΔL₁ = 3MgL/(4πr²Y). Lower segment carries Mg over area πr²: ΔL₂ = MgL/(πr²Y). Total = (3/4 + 1)MgL/(πr²Y) = 7MgL/(4πr²Y).",
- "solution": "",
+ "working": "$x=\\dfrac{FL}{\\pi r^2Y}$; $x_2=\\dfrac{6F(2L)}{\\pi(2r)^2Y}=3x$.\n\nIndependent check: Using ΔL = FL/(AY), the second extension is (6F)(2L)/(π(2r)²Y) = 3x.",
+ "solution": "For the same material, extension is $\\Delta L=\\dfrac{FL}{AY}$. Thus,\n$$x_2=\\frac{(6F)(2L)}{\\pi(2r)^2Y}=3\\frac{FL}{\\pi r^2Y}=3x$$",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A vertical wire of Young's modulus $Y$ is fixed to a rigid ceiling at its upper end. It consists of two segments of equal length $L$: an upper segment of radius $2r$ and a lower segment of radius $r$. A load of mass $2M$ is attached at the junction between the two segments, and a load of mass $M$ is attached at the lower end. Neglecting the mass of the wire, the total elongation of the wire is",
+  "stem": "A wire of length $L$ and radius $r$ extends by $x$ under load $F$. A wire of the same material, length $2L$ and radius $2r$, is subjected to load $6F$. Its extension is",
   "options": [
-   "$\\dfrac{3MgL}{2\\pi r^2 Y}$",
-   "$\\dfrac{7MgL}{4\\pi r^2 Y}$",
-   "$\\dfrac{2MgL}{\\pi r^2 Y}$",
-   "$\\dfrac{5MgL}{2\\pi r^2 Y}$"
+   "$1.5x$",
+   "$3x$",
+   "$6x$",
+   "$12x$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "1. Upper segment:\n- Cross-sectional area: $A_1 = \\pi (2r)^2 = 4\\pi r^2$.\n- The upper segment supports both the load at the junction ($2M$) and the load at the lower end ($M$), so the tension is:\n  $$T_1 = (2M + M)g = 3Mg$$\n- Elongation of the upper segment:\n  $$\\Delta L_1 = \\dfrac{T_1 L}{A_1 Y} = \\dfrac{3MgL}{4\\pi r^2 Y}$$\n\n2. Lower segment:\n- Cross-sectional area: $A_2 = \\pi r^2$.\n- The lower segment supports only the lower load ($M$), so the tension is:\n  $$T_2 = Mg$$\n- Elongation of the lower segment:\n  $$\\Delta L_2 = \\dfrac{T_2 L}{A_2 Y} = \\dfrac{MgL}{\\pi r^2 Y}$$\n\n3. Total elongation:\n  $$\\Delta L = \\Delta L_1 + \\Delta L_2 = \\dfrac{3MgL}{4\\pi r^2 Y} + \\dfrac{4MgL}{4\\pi r^2 Y} = \\dfrac{7MgL}{4\\pi r^2 Y}$$",
-  "distractor_notes": "Option A assumes the upper segment supports only the mass at the junction ($T_1 = 2Mg$), giving $\\Delta L = (1/2 + 1)MgL/(\\pi r^2 Y) = 3MgL/(2\\pi r^2 Y)$.\\nOption C makes two errors: assumes $T_1 = 2Mg$ and forgets to square the radius factor ($A_1 = 2\\pi r^2$), giving $\\Delta L = (1 + 1)MgL/(\\pi r^2 Y) = 2MgL/(\\pi r^2 Y)$.\\nOption D forgets to square the radius of the upper segment ($A_1 = 2\\pi r^2$ instead of $4\\pi r^2$), giving $\\Delta L = (3/2 + 1)MgL/(\\pi r^2 Y) = 5MgL/(2\\pi r^2 Y)$.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$x=\\dfrac{FL}{\\pi r^2Y}$; $x_2=\\dfrac{6F(2L)}{\\pi(2r)^2Y}=3x$.",
+  "distractor_notes": "A: omits the doubled length factor. C: treats area as proportional to radius. D: ignores the increased cross-sectional area."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

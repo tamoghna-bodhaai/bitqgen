@@ -1,0 +1,68 @@
+{
+ "qno": 73,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 73,
+  "section": "Chemistry",
+  "chapter": "Equilibrium",
+  "subtopic": "Kp and degree of dissociation",
+  "archetype": "ICE table",
+  "brief": "For PCl5 ⇌ PCl3 + Cl2 at given total pressure and α, set up ICE table and compute Kp; single-equation numerical.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:40",
+   "2024s2:58",
+   "2023s2:59"
+  ]
+ },
+ "status": "ok",
+ "stem": "For the equilibrium $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g)+\\text{Cl}_2(g)$, the degree of dissociation is $0.5$ at a total pressure of $2$ atm. Find $K_p$.",
+ "options": [
+  "$\\dfrac{1}{3}$ atm",
+  "$\\dfrac{4}{3}$ atm",
+  "$1$ atm",
+  "$\\dfrac{2}{3}$ atm"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Starting with 1 mol PCl₅, α = 0.5 gives equilibrium amounts 0.5 mol PCl₅, 0.5 mol PCl₃, and 0.5 mol Cl₂. Each has partial pressure 2/3 atm, so Kₚ = (2/3)(2/3)/(2/3) = 2/3 atm.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Initially $1$ mol: equilibrium moles are $1-\\alpha,\\alpha,\\alpha$; total $1+\\alpha$.\\n$p_{\\text{PCl}_5}=\\dfrac{1-\\alpha}{1+\\alpha}P$, $p_{\\text{PCl}_3}=p_{\\text{Cl}_2}=\\dfrac{\\alpha}{1+\\alpha}P$.\\n$K_p=\\dfrac{p_{\\text{PCl}_3}p_{\\text{Cl}_2}}{p_{\\text{PCl}_5}}=\\dfrac{\\alpha^2P}{1-\\alpha^2}=\\dfrac{(0.5)^2(2)}{1-(0.5)^2}=\\dfrac{2}{3}$ atm.\n\nIndependent check: Starting with 1 mol PCl₅, α = 0.5 gives equilibrium amounts 0.5 mol PCl₅, 0.5 mol PCl₃, and 0.5 mol Cl₂. Each has partial pressure 2/3 atm, so Kₚ = (2/3)(2/3)/(2/3) = 2/3 atm.",
+ "solution": "For initial $1$ mol, equilibrium moles are $1-\\alpha,\\alpha,\\alpha$, with total $1+\\alpha$.\n$$K_p=\\frac{p_{\\text{PCl}_3}p_{\\text{Cl}_2}}{p_{\\text{PCl}_5}}=\\frac{\\alpha^2P}{1-\\alpha^2}=\\frac{(0.5)^2(2)}{1-(0.5)^2}=\\frac{2}{3}\\text{ atm}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For the equilibrium $\\text{PCl}_5(g) \\rightleftharpoons \\text{PCl}_3(g)+\\text{Cl}_2(g)$, the degree of dissociation is $0.5$ at a total pressure of $2$ atm. Find $K_p$.",
+  "options": [
+   "$\\dfrac{1}{3}$ atm",
+   "$\\dfrac{2}{3}$ atm",
+   "$1$ atm",
+   "$\\dfrac{4}{3}$ atm"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Initially $1$ mol: equilibrium moles are $1-\\alpha,\\alpha,\\alpha$; total $1+\\alpha$.\\n$p_{\\text{PCl}_5}=\\dfrac{1-\\alpha}{1+\\alpha}P$, $p_{\\text{PCl}_3}=p_{\\text{Cl}_2}=\\dfrac{\\alpha}{1+\\alpha}P$.\\n$K_p=\\dfrac{p_{\\text{PCl}_3}p_{\\text{Cl}_2}}{p_{\\text{PCl}_5}}=\\dfrac{\\alpha^2P}{1-\\alpha^2}=\\dfrac{(0.5)^2(2)}{1-(0.5)^2}=\\dfrac{2}{3}$ atm.",
+  "distractor_notes": "A: Omits a factor of 2 in the pressure expression; C: Uses $K_p=\\alpha^2P/(1-\\alpha)$; D: Uses $K_p=\\alpha P/(1-\\alpha^2)$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

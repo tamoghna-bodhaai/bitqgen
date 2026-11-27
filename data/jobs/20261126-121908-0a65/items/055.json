@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "The absolute configuration of the chiral centers in the following Fischer projection is:\n$$\n\\begin{array}{c}\n\\text{COOH} \\\\\n| \\\\\n\\text{H}-\\text{C}_2-\\text{OH} \\\\\n| \\\\\n\\text{HO}-\\text{C}_3-\\text{H} \\\\\n| \\\\\n\\text{CH}_3\n\\end{array}\n$$",
+ "stem": "What is the absolute configuration of the stereogenic centres in this Fischer projection?\n$$\n\\begin{array}{c}\n\\text{CH}_2\\text{OH}\\\\\n|\\\\\n\\text{H}-\\text{C}_2-\\text{Br}\\\\\n|\\\\\n\\text{Cl}-\\text{C}_3-\\text{H}\\\\\n|\\\\\n\\text{CH}_3\n\\end{array}\n$$",
  "options": [
-  "$(2R, 3R)$",
-  "$(2R, 3S)$",
-  "$(2S, 3R)$",
-  "$(2S, 3S)$"
+  "$(2R,3R)$",
+  "$(2R,3S)$",
+  "$(2S,3R)$",
+  "$(2S,3S)$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Compound is 2,3-dihydroxybutanoic acid. C2 priorities: OH > COOH [C(O,O,O)] > C3 [C(O,C,H)] > H. In Fischer, horizontal bonds point toward viewer; H is horizontal at C2, so reverse apparent rotation: OH(right)→COOH(up)→C3(down) appears CCW (S) → actual R. C3 priorities: OH > C2 [C(O,C,H)] > CH3 > H; H horizontal again: OH(left)→C2(up)→CH3(down) appears CW (R) → actual S. Verified by signed-volume (determinant) calculation with Fischer 3D geometry: C2 = R, C3 = S.",
-   "answer": "B",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At C2, priorities are Br > C3 > CH2OH > H; the 1→2→3 order is clockwise, but H is on a horizontal bond, so invert: S. At C3, priorities are Cl > C2 > CH3 > H; the 1→2→3 order is clockwise, and horizontal H again requires inversion: S.",
+   "answer": "D",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Configuration at $\\text{C}_2$:\n- Assign CIP priorities to the four groups attached to $\\text{C}_2$:\n  1: $-\\text{OH}$ ($Z = 8$)\n  2: $-\\text{COOH}$ (carbon bonded to $(\\text{O}, \\text{O}, \\text{O})$)\n  3: $-\\text{CH(OH)CH}_3$ ($\\text{C}_3$, carbon bonded to $(\\text{O}, \\text{C}, \\text{H})$)\n  4: $-\\text{H}$ ($Z = 1$)\n  Since $(\\text{O}, \\text{O}, \\text{O}) > (\\text{O}, \\text{C}, \\text{H})$, priority order is: $-\\text{OH} > -\\text{COOH} > \\text{C}_3 > -\\text{H}$.\n- On the Fischer projection, $-\\text{OH}$ is on the right, $-\\text{COOH}$ is at the top, and $\\text{C}_3$ is at the bottom.\n- Tracing $1 \\to 2 \\to 3$ gives a counter-clockwise path.\n- Since the lowest priority group ($-\\text{H}$) is on a horizontal bond, the apparent configuration is reversed: counter-clockwise corresponds to $R$.\n- Thus, the configuration at $\\text{C}_2$ is $2R$.\n\n2. Configuration at $\\text{C}_3$:\n- Assign CIP priorities to the four groups attached to $\\text{C}_3$:\n  1: $-\\text{OH}$ ($Z = 8$)\n  2: $-\\text{CH(OH)COOH}$ ($\\text{C}_2$, carbon bonded to $(\\text{O}, \\text{C}, \\text{H})$)\n  3: $-\\text{CH}_3$ (carbon bonded to $(\\text{H}, \\text{H}, \\text{H})$)\n  4: $-\\text{H}$ ($Z = 1$)\n  Priority order is: $-\\text{OH} > \\text{C}_2 > -\\text{CH}_3 > -\\text{H}$.\n- On the Fischer projection, $-\\text{OH}$ is on the left, $\\text{C}_2$ is at the top, and $-\\text{CH}_3$ is at the bottom.\n- Tracing $1 \\to 2 \\to 3$ gives a clockwise path.\n- Since the lowest priority group ($-\\text{H}$) is on a horizontal bond, the apparent configuration is reversed: clockwise corresponds to $S$.\n- Thus, the configuration at $\\text{C}_3$ is $3S$.\n\nCombining both centers gives $(2R, 3S)$.\n\nIndependent check: Compound is 2,3-dihydroxybutanoic acid. C2 priorities: OH > COOH [C(O,O,O)] > C3 [C(O,C,H)] > H. In Fischer, horizontal bonds point toward viewer; H is horizontal at C2, so reverse apparent rotation: OH(right)→COOH(up)→C3(down) appears CCW (S) → actual R. C3 priorities: OH > C2 [C(O,C,H)] > CH3 > H; H horizontal again: OH(left)→C2(up)→CH3(down) appears CW (R) → actual S. Verified by signed-volume (determinant) calculation with Fischer 3D geometry: C2 = R, C3 = S.",
+ "working": "At C2: priorities are Br $>\\text{C}_3>\\text{CH}_2\\text{OH}>\\text{H}$. The $1\\to2\\to3$ order is clockwise; H is horizontal, so C2 is S.\nAt C3: priorities are Cl $>\\text{C}_2>\\text{CH}_3>\\text{H}$. The $1\\to2\\to3$ order is clockwise; H is horizontal, so C3 is S.\nConfiguration: $(2S,3S)$.\n\nIndependent check: At C2, priorities are Br > C3 > CH2OH > H; the 1→2→3 order is clockwise, but H is on a horizontal bond, so invert: S. At C3, priorities are Cl > C2 > CH3 > H; the 1→2→3 order is clockwise, and horizontal H again requires inversion: S.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The absolute configuration of the chiral centers in the following Fischer projection is:\n$$\n\\begin{array}{c}\n\\text{COOH} \\\\\n| \\\\\n\\text{H}-\\text{C}_2-\\text{OH} \\\\\n| \\\\\n\\text{HO}-\\text{C}_3-\\text{H} \\\\\n| \\\\\n\\text{CH}_3\n\\end{array}\n$$",
+  "stem": "What is the absolute configuration of the stereogenic centres in this Fischer projection?\n$$\n\\begin{array}{c}\n\\text{CH}_2\\text{OH}\\\\\n|\\\\\n\\text{H}-\\text{C}_2-\\text{Br}\\\\\n|\\\\\n\\text{Cl}-\\text{C}_3-\\text{H}\\\\\n|\\\\\n\\text{CH}_3\n\\end{array}\n$$",
   "options": [
-   "$(2R, 3R)$",
-   "$(2R, 3S)$",
-   "$(2S, 3R)$",
-   "$(2S, 3S)$"
+   "$(2R,3R)$",
+   "$(2R,3S)$",
+   "$(2S,3R)$",
+   "$(2S,3S)$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. Configuration at $\\text{C}_2$:\n- Assign CIP priorities to the four groups attached to $\\text{C}_2$:\n  1: $-\\text{OH}$ ($Z = 8$)\n  2: $-\\text{COOH}$ (carbon bonded to $(\\text{O}, \\text{O}, \\text{O})$)\n  3: $-\\text{CH(OH)CH}_3$ ($\\text{C}_3$, carbon bonded to $(\\text{O}, \\text{C}, \\text{H})$)\n  4: $-\\text{H}$ ($Z = 1$)\n  Since $(\\text{O}, \\text{O}, \\text{O}) > (\\text{O}, \\text{C}, \\text{H})$, priority order is: $-\\text{OH} > -\\text{COOH} > \\text{C}_3 > -\\text{H}$.\n- On the Fischer projection, $-\\text{OH}$ is on the right, $-\\text{COOH}$ is at the top, and $\\text{C}_3$ is at the bottom.\n- Tracing $1 \\to 2 \\to 3$ gives a counter-clockwise path.\n- Since the lowest priority group ($-\\text{H}$) is on a horizontal bond, the apparent configuration is reversed: counter-clockwise corresponds to $R$.\n- Thus, the configuration at $\\text{C}_2$ is $2R$.\n\n2. Configuration at $\\text{C}_3$:\n- Assign CIP priorities to the four groups attached to $\\text{C}_3$:\n  1: $-\\text{OH}$ ($Z = 8$)\n  2: $-\\text{CH(OH)COOH}$ ($\\text{C}_2$, carbon bonded to $(\\text{O}, \\text{C}, \\text{H})$)\n  3: $-\\text{CH}_3$ (carbon bonded to $(\\text{H}, \\text{H}, \\text{H})$)\n  4: $-\\text{H}$ ($Z = 1$)\n  Priority order is: $-\\text{OH} > \\text{C}_2 > -\\text{CH}_3 > -\\text{H}$.\n- On the Fischer projection, $-\\text{OH}$ is on the left, $\\text{C}_2$ is at the top, and $-\\text{CH}_3$ is at the bottom.\n- Tracing $1 \\to 2 \\to 3$ gives a clockwise path.\n- Since the lowest priority group ($-\\text{H}$) is on a horizontal bond, the apparent configuration is reversed: clockwise corresponds to $S$.\n- Thus, the configuration at $\\text{C}_3$ is $3S$.\n\nCombining both centers gives $(2R, 3S)$.",
-  "distractor_notes": "$(2R, 3R)$ arises from failing to invert the apparent clockwise direction at $\\text{C}_3$ where $-\\text{H}$ is horizontal.\n$(2S, 3R)$ arises from neglecting the horizontal inversion rule at both centers (reading apparent counter-clockwise as $S$ and apparent clockwise as $R$).\n$(2S, 3S)$ arises from failing to invert the apparent counter-clockwise direction at $\\text{C}_2$, while correctly inverting at $\\text{C}_3$.",
+  "answer": "D",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 2,
+  "working": "At C2: priorities are Br $>\\text{C}_3>\\text{CH}_2\\text{OH}>\\text{H}$. The $1\\to2\\to3$ order is clockwise; H is horizontal, so C2 is S.\nAt C3: priorities are Cl $>\\text{C}_2>\\text{CH}_3>\\text{H}$. The $1\\to2\\to3$ order is clockwise; H is horizontal, so C3 is S.\nConfiguration: $(2S,3S)$.",
+  "distractor_notes": "A: Reverses both configurations. B: Reverses the configuration at C2 only. C: Reverses the configuration at C3 only."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

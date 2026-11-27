@@ -1,0 +1,89 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Ozonolysis",
+  "archetype": "predict-product",
+  "brief": "Show a figure of an ozonolysis: given ozonolysis products (carbonyls), reconstruct the alkene structure",
+  "difficulty": 2,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:41",
+   "2025s1:54",
+   "2026s1:53"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf21513db1fae"
+ },
+ "status": "ok",
+ "stem": "The carbonyl products shown are obtained by reductive ozonolysis of an alkene. Which alkene was used?",
+ "options": [
+  "Methylenecyclobutane",
+  "Methylenecyclopentane",
+  "1-Methylcyclopentene",
+  "1-Methylcyclobutene"
+ ],
+ "answer": "B",
+ "figure": {
+  "path": "figs/q058_stem_v0.png",
+  "width_pct": 25,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q058_optB_v0.png",
+  "figs/q058_optA_v0.png",
+  "figs/q058_optC_v0.png",
+  "figs/q058_optD_v0.png"
+ ],
+ "option_width": 23,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Reductive ozonolysis of methylenecyclopentane cleaves the exocyclic double bond to give cyclopentanone and formaldehyde, matching the products shown.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{R}_2\\text{C} = \\text{CR}_2 \\xrightarrow{\\text{O}_3,\\ \\text{reductive workup}}$ cleavage at the double bond. The terminal $\\text{CH}_2$ gives methanal; the ring carbon gives cyclopentanone. Hence the alkene is methylenecyclopentane.\n\nIndependent check: Reductive ozonolysis of methylenecyclopentane cleaves the exocyclic double bond to give cyclopentanone and formaldehyde, matching the products shown.",
+ "solution": "Reductive ozonolysis cleaves the double bond, converting each alkene carbon into a carbonyl carbon. An exocyclic $\\text{CH}_2$ gives methanal, while the ring carbon gives cyclopentanone; this corresponds to methylenecyclopentane.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The carbonyl products shown are obtained by reductive ozonolysis of an alkene. Which alkene was used?",
+  "options": [
+   "Methylenecyclopentane",
+   "Methylenecyclobutane",
+   "1-Methylcyclopentene",
+   "1-Methylcyclobutene"
+  ],
+  "option_smiles": [
+   "C=C1CCCC1",
+   "C=C1CCC1",
+   "CC1=CCCC1",
+   "CC1=CCC1"
+  ],
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw two separate carbonyl structures side by side: cyclopentanone on the left, shown as a five-membered ring with a carbonyl carbon at one vertex, and methanal (H₂C=O) on the right. Place a plus sign between them. Add the caption “products of reductive ozonolysis” below the structures.",
+   "smiles": "O=C1CCCC1.C=O"
+  },
+  "difficulty_estimate": 2,
+  "working": "$\\text{R}_2\\text{C} = \\text{CR}_2 \\xrightarrow{\\text{O}_3,\\ \\text{reductive workup}}$ cleavage at the double bond. The terminal $\\text{CH}_2$ gives methanal; the ring carbon gives cyclopentanone. Hence the alkene is methylenecyclopentane.",
+  "distractor_notes": "B: gives cyclobutanone instead of cyclopentanone. C: cleavage of the ring double bond gives a methyl-substituted carbonyl product, not methanal. D: has the wrong ring size and an endocyclic double bond."
+ },
+ "variant_of": "gf21513db1fae",
+ "author_model": "openai/gpt-6-luna-pro"
+}

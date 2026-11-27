@@ -1,0 +1,70 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Magnetic field due to finite wire / polygon loop",
+  "archetype": "superposition numerical",
+  "brief": "Superposition of magnetic fields at the centre of a regular polygon (or a combination of two finite wires/loops); no figure, ask the net B and its direction.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:30",
+   "2023s2:1",
+   "2021:21"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two concentric coplanar loops are a regular triangle and a regular hexagon. Their apothems are $0.30\\ \\text{m}$ and $0.20\\ \\text{m}$, respectively, and each carries $4\\ \\text{A}$. Viewed from above, their currents are clockwise and anticlockwise, respectively. Find the net field at the centre. Take $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.",
+ "options": [
+  "$12\\ \\mu\\text{T}$, out of the plane",
+  "$(12-4\\sqrt{3})\\ \\mu\\text{T}$, into the plane",
+  "$(12+4\\sqrt{3})\\ \\mu\\text{T}$, out of the plane",
+  "$(12-4\\sqrt{3})\\ \\mu\\text{T}$, out of the plane"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a regular n-sided loop with apothem a, the centre field is B = μ₀In sin(π/n)/(2πa). The triangle gives 4√3 μT into the plane; the hexagon gives 12 μT out of the plane. The net field is (12 − 4√3) μT out of the plane.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$B_n=\\dfrac{\\mu_0 nI}{2\\pi a}\\sin\\dfrac{\\pi}{n}$; $B_3=4\\sqrt{3}\\ \\mu\\text{T}$ into the plane; $B_6=12\\ \\mu\\text{T}$ out of the plane; $B_{\\text{net}}=(12-4\\sqrt{3})\\ \\mu\\text{T}$ out of the plane.\n\nIndependent check: For a regular n-sided loop with apothem a, the centre field is B = μ₀In sin(π/n)/(2πa). The triangle gives 4√3 μT into the plane; the hexagon gives 12 μT out of the plane. The net field is (12 − 4√3) μT out of the plane.",
+ "solution": "For a regular $n$-sided loop of apothem $a$, $B_n=\\dfrac{\\mu_0 nI}{2\\pi a}\\sin\\dfrac{\\pi}{n}$.\nThe triangle produces $4\\sqrt{3}\\,\\mu\\text{T}$ into the plane, while the hexagon produces $12\\,\\mu\\text{T}$ out of the plane.\nThus, $B_{\\text{net}}=(12-4\\sqrt{3})\\,\\mu\\text{T}$, out of the plane.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Two concentric coplanar loops are a regular triangle and a regular hexagon. Their apothems are $0.30\\ \\text{m}$ and $0.20\\ \\text{m}$, respectively, and each carries $4\\ \\text{A}$. Viewed from above, their currents are clockwise and anticlockwise, respectively. Find the net field at the centre. Take $\\mu_0=4\\pi\\times10^{-7}\\ \\text{T m A}^{-1}$.",
+  "options": [
+   "$(12-4\\sqrt{3})\\ \\mu\\text{T}$, out of the plane",
+   "$(12-4\\sqrt{3})\\ \\mu\\text{T}$, into the plane",
+   "$(12+4\\sqrt{3})\\ \\mu\\text{T}$, out of the plane",
+   "$12\\ \\mu\\text{T}$, out of the plane"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$B_n=\\dfrac{\\mu_0 nI}{2\\pi a}\\sin\\dfrac{\\pi}{n}$; $B_3=4\\sqrt{3}\\ \\mu\\text{T}$ into the plane; $B_6=12\\ \\mu\\text{T}$ out of the plane; $B_{\\text{net}}=(12-4\\sqrt{3})\\ \\mu\\text{T}$ out of the plane.",
+  "distractor_notes": "B: reverses the net-field direction; C: adds fields that oppose; D: omits the triangle's contribution."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

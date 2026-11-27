@@ -1,0 +1,68 @@
+{
+ "qno": 114,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 114,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Properties of determinants",
+  "archetype": "split-and-factor",
+  "brief": "Determinant whose entries are row sums/column expressions; show it equals a product of linear factors using row/column operations.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:100",
+   "2024s1:101",
+   "2024s2:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate the determinant $$\\begin{vmatrix}a+b&b+c&c+d\\\\a+b&b+c+e&c+d+f\\\\a+b&b+c+e&c+d+f+g\\end{vmatrix}.$$",
+ "options": [
+  "$(a+b)ef$",
+  "$(a+b)fg$",
+  "$(a+b)eg$",
+  "$(a+b+e)eg$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Subtract row 1 from row 2 and row 2 from row 3. The resulting matrix is upper triangular with diagonal entries \\(a+b,e,g\\), so its determinant is \\((a+b)eg\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Apply $R_3\\leftarrow R_3-R_2$, then $R_2\\leftarrow R_2-R_1$: $\\begin{vmatrix}a+b&b+c&c+d\\\\0&e&f\\\\0&0&g\\end{vmatrix}=(a+b)eg$.\n\nIndependent check: Subtract row 1 from row 2 and row 2 from row 3. The resulting matrix is upper triangular with diagonal entries \\(a+b,e,g\\), so its determinant is \\((a+b)eg\\).",
+ "solution": "Apply $R_3\\leftarrow R_3-R_2$, then $R_2\\leftarrow R_2-R_1$; these row operations preserve the determinant.\n$$\\begin{vmatrix}a+b&b+c&c+d\\\\0&e&f\\\\0&0&g\\end{vmatrix}=(a+b)eg$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate the determinant $$\\begin{vmatrix}a+b&b+c&c+d\\\\a+b&b+c+e&c+d+f\\\\a+b&b+c+e&c+d+f+g\\end{vmatrix}.$$",
+  "options": [
+   "$(a+b)eg$",
+   "$(a+b)fg$",
+   "$(a+b)ef$",
+   "$(a+b+e)eg$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Apply $R_3\\leftarrow R_3-R_2$, then $R_2\\leftarrow R_2-R_1$: $\\begin{vmatrix}a+b&b+c&c+d\\\\0&e&f\\\\0&0&g\\end{vmatrix}=(a+b)eg$.",
+  "distractor_notes": "B: uses the wrong entry in the second pivot; C: uses the wrong entry in the third pivot; D: incorrectly changes the first diagonal entry."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 150,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 150,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Area between curves",
+  "archetype": "symmetric area",
+  "brief": "Area between two curves where symmetry about an axis halves the work (e.g., y^2 = 4ax cut by a line); evaluate via splitting at the axis",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:126",
+   "2025s2:102",
+   "2026s2:101"
+  ],
+  "origin": "variant",
+  "bank_ref": "g8371ee7e9e93"
+ },
+ "status": "ok",
+ "stem": "For $k>0$, the region enclosed by $y=k-x^2$ and $y=x^2$ has area $\\frac{8}{3}$. Find $k$.",
+ "options": [
+  "$2^{4/3}$",
+  "$2^{5/3}$",
+  "$2$",
+  "$8$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The curves intersect at x=±√(k/2). The enclosed area is ∫₋√(k/2)^√(k/2)(k−2x²) dx = 4k√(k/2)/3. Setting this equal to 8/3 gives k=2.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$x=\\pm\\sqrt{\\dfrac{k}{2}}$; by symmetry, $$A=2\\int_0^{\\sqrt{k/2}}(k-2x^2)\\,dx=\\dfrac{4k}{3}\\sqrt{\\dfrac{k}{2}}.$$ Setting this equal to $\\dfrac{8}{3}$ gives $k^3=8$, hence $k=2$.\n\nIndependent check: The curves intersect at x=±√(k/2). The enclosed area is ∫₋√(k/2)^√(k/2)(k−2x²) dx = 4k√(k/2)/3. Setting this equal to 8/3 gives k=2.",
+ "solution": "The curves intersect at $x=\\pm\\sqrt{k/2}$. Thus the enclosed area is\n$$A=2\\int_0^{\\sqrt{k/2}}(k-2x^2)\\,dx=\\frac{4k}{3}\\sqrt{\\frac{k}{2}}.$$\nSetting $A=\\frac{8}{3}$ gives $k^3=8$, hence $k=2$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $k>0$, the region enclosed by $y=k-x^2$ and $y=x^2$ has area $\\frac{8}{3}$. Find $k$.",
+  "options": [
+   "$2^{4/3}$",
+   "$2$",
+   "$2^{5/3}$",
+   "$8$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$x=\\pm\\sqrt{\\dfrac{k}{2}}$; by symmetry, $$A=2\\int_0^{\\sqrt{k/2}}(k-2x^2)\\,dx=\\dfrac{4k}{3}\\sqrt{\\dfrac{k}{2}}.$$ Setting this equal to $\\dfrac{8}{3}$ gives $k^3=8$, hence $k=2$.",
+  "distractor_notes": "A: uses $\\sqrt{k}$ instead of $\\sqrt{k/2}$ for the intersection; C: omits the factor of $2$ from symmetry; D: reports $k^3$ rather than taking its cube root."
+ },
+ "variant_of": "g8371ee7e9e93",
+ "author_model": "openai/gpt-6-luna-pro"
+}

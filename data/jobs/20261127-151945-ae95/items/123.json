@@ -1,0 +1,71 @@
+{
+ "qno": 123,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 123,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Number of onto functions",
+  "archetype": "counting formula",
+  "brief": "Count the number of onto (surjective) functions from a set of m elements to a set of n elements using the inclusion–exclusion formula; small numbers.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:102",
+   "2024s1:112",
+   "2024s2:119"
+  ],
+  "origin": "variant",
+  "bank_ref": "gdc4382b8aa67"
+ },
+ "status": "ok",
+ "stem": "A controller assigns each of six distinct data streams to one of three distinct servers. How many assignments use every server?",
+ "options": [
+  "$537$",
+  "$540$",
+  "$601$",
+  "$729$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "By inclusion–exclusion, assignments using every server = 3^6 − 3·2^6 + 3 = 540.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$3^6-\\binom{3}{1}2^6+\\binom{3}{2}1^6=729-192+3=540$\n\nIndependent check: By inclusion–exclusion, assignments using every server = 3^6 − 3·2^6 + 3 = 540.",
+ "solution": "By inclusion–exclusion, subtract assignments that omit at least one server:\n$$3^6-\\binom{3}{1}2^6+\\binom{3}{2}1^6=729-192+3=540$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A controller assigns each of six distinct data streams to one of three distinct servers. How many assignments use every server?",
+  "options": [
+   "$537$",
+   "$540$",
+   "$601$",
+   "$729$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$3^6-\\binom{3}{1}2^6+\\binom{3}{2}1^6=729-192+3=540$",
+  "distractor_notes": "A: omits the final inclusion–exclusion term. C: uses an incorrect coefficient for the first subtraction. D: counts all assignments without requiring every server to be used."
+ },
+ "variant_of": "gdc4382b8aa67",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Consistency of linear systems",
+  "archetype": "Δ = 0 and Δx = 0",
+  "brief": "Find the value of a parameter for which a 3×3 non-homogeneous system has infinitely many solutions by setting Δ = 0 and checking Δx = Δy = Δz = 0.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:105",
+   "2024s1:102",
+   "2025s2:121"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For what value of $\\lambda$ does the system $x+y+z=1,\\quad 2x-y+z=2,\\quad 3x+\\bigl(2+\\lambda(\\lambda-1)\\bigr)z=3+\\lambda$ have infinitely many solutions?",
+ "options": [
+  "$-1$",
+  "$0$",
+  "$1$",
+  "$2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Adding the first two equations gives 3x+2z=3. For infinitely many solutions, the third equation must match this dependent equation, requiring λ(λ−1)=0 and λ=0. Thus λ=0.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta=-3\\lambda(\\lambda-1)$, so $\\lambda=0$ or $1$. At $\\lambda=0$, the third equation is the sum of the first two; hence $\\Delta_x=\\Delta_y=\\Delta_z=0$ and $\\operatorname{rank}(A)=2$. At $\\lambda=1$, $\\Delta_x=2\\ne0$. Thus only $\\lambda=0$ gives infinitely many solutions.\n\nIndependent check: Adding the first two equations gives 3x+2z=3. For infinitely many solutions, the third equation must match this dependent equation, requiring λ(λ−1)=0 and λ=0. Thus λ=0.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For what value of $\\lambda$ does the system $x+y+z=1,\\quad 2x-y+z=2,\\quad 3x+\\bigl(2+\\lambda(\\lambda-1)\\bigr)z=3+\\lambda$ have infinitely many solutions?",
+  "options": [
+   "$-1$",
+   "$0$",
+   "$1$",
+   "$2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\Delta=-3\\lambda(\\lambda-1)$, so $\\lambda=0$ or $1$. At $\\lambda=0$, the third equation is the sum of the first two; hence $\\Delta_x=\\Delta_y=\\Delta_z=0$ and $\\operatorname{rank}(A)=2$. At $\\lambda=1$, $\\Delta_x=2\\ne0$. Thus only $\\lambda=0$ gives infinitely many solutions.",
+  "distractor_notes": "A: sign error when solving for the determinant's roots; C: accepts the other determinant root without checking consistency; D: selects a value for which the determinant is nonzero."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

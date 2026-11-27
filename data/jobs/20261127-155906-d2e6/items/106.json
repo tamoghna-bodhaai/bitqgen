@@ -1,0 +1,70 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "Definite integral of an odd/function with f(a+x)=f(a−x) symmetry over a symmetric or shifted interval; use property to reduce to a standard integral.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:112",
+   "2026s2:126",
+   "2026s1:125"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^\\pi \\dfrac{x\\sin x}{1+\\cos^2 x}\\,dx$.",
+ "options": [
+  "$\\dfrac{\\pi^2}{8}$",
+  "$\\dfrac{\\pi^2}{4}$",
+  "$\\dfrac{\\pi^2}{2}$",
+  "$\\pi^2$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let g(x)=sin x/(1+cos²x), which is symmetric about π/2. Thus ∫₀^π xg(x)dx=(π/2)∫₀^πg(x)dx. With u=cos x, the latter integral is ∫₋₁¹du/(1+u²)=π/2. Hence the value is π²/4.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $f(x)=\\dfrac{\\sin x}{1+\\cos^2x}$; then $f(\\pi-x)=f(x)$, so $\\int_0^\\pi xf(x)\\,dx=\\dfrac{\\pi}{2}\\int_0^\\pi f(x)\\,dx$. Also, $\\int_0^\\pi f(x)\\,dx=2\\int_0^{\\pi/2}\\dfrac{\\sin x}{1+\\cos^2x}\\,dx=2\\int_0^1\\dfrac{du}{1+u^2}=\\dfrac{\\pi}{2}$. Hence the required value is $\\dfrac{\\pi^2}{4}$.\n\nIndependent check: Let g(x)=sin x/(1+cos²x), which is symmetric about π/2. Thus ∫₀^π xg(x)dx=(π/2)∫₀^πg(x)dx. With u=cos x, the latter integral is ∫₋₁¹du/(1+u²)=π/2. Hence the value is π²/4.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^\\pi \\dfrac{x\\sin x}{1+\\cos^2 x}\\,dx$.",
+  "options": [
+   "$\\dfrac{\\pi^2}{8}$",
+   "$\\dfrac{\\pi^2}{4}$",
+   "$\\dfrac{\\pi^2}{2}$",
+   "$\\pi^2$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Let $f(x)=\\dfrac{\\sin x}{1+\\cos^2x}$; then $f(\\pi-x)=f(x)$, so $\\int_0^\\pi xf(x)\\,dx=\\dfrac{\\pi}{2}\\int_0^\\pi f(x)\\,dx$. Also, $\\int_0^\\pi f(x)\\,dx=2\\int_0^{\\pi/2}\\dfrac{\\sin x}{1+\\cos^2x}\\,dx=2\\int_0^1\\dfrac{du}{1+u^2}=\\dfrac{\\pi}{2}$. Hence the required value is $\\dfrac{\\pi^2}{4}$.",
+  "distractor_notes": "A: Omits the factor of $2$ when using symmetry to evaluate $\\int_0^\\pi f(x)\\,dx$. C: Uses an incorrect multiplier for the symmetry property. D: Omits the factor of $\\dfrac{1}{2}$ in the weighted symmetry property."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

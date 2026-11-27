@@ -1,0 +1,71 @@
+{
+ "qno": 69,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 69,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Hydrogen bonding",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:62",
+   "2025s2:47",
+   "2021:72"
+  ],
+  "origin": "variant",
+  "bank_ref": "g13901c366477"
+ },
+ "status": "ok",
+ "stem": "Which compound can form hydrogen bonds between its molecules in the pure liquid?",
+ "options": [
+  "$\\text{CH}_3\\text{Cl}$",
+  "$\\text{CH}_3\\text{OCH}_3$",
+  "$\\text{C}_2\\text{H}_5\\text{OH}$",
+  "$\\text{H}_2\\text{S}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Ethanol has an O–H bond and oxygen lone pairs, so its molecules can hydrogen-bond to each other. The other options lack an appropriate hydrogen-bond donor.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{C}_2\\text{H}_5\\text{OH}$ has an O–H bond, so its molecules can form intermolecular hydrogen bonds.\n\nIndependent check: Ethanol has an O–H bond and oxygen lone pairs, so its molecules can hydrogen-bond to each other. The other options lack an appropriate hydrogen-bond donor.",
+ "solution": "Intermolecular hydrogen bonding requires hydrogen bonded to a highly electronegative atom such as O, N, or F. Ethanol contains an O–H bond, so its molecules form hydrogen bonds in the pure liquid.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which compound can form hydrogen bonds between its molecules in the pure liquid?",
+  "options": [
+   "$\\text{C}_2\\text{H}_5\\text{OH}$",
+   "$\\text{CH}_3\\text{OCH}_3$",
+   "$\\text{CH}_3\\text{Cl}$",
+   "$\\text{H}_2\\text{S}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{C}_2\\text{H}_5\\text{OH}$ has an O–H bond, so its molecules can form intermolecular hydrogen bonds.",
+  "distractor_notes": "B: treats an oxygen lone pair as sufficient without an O–H donor bond. C: assumes a polar bond alone enables hydrogen bonding. D: assumes any hydrogen bonded to a non-metal enables significant hydrogen bonding."
+ },
+ "variant_of": "g13901c366477",
+ "author_model": "openai/gpt-6-luna-pro"
+}

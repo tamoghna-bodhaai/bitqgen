@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "In a series $LCR$ circuit, the resistance is $40\\ \\Omega$, the inductive reactance is $25\\ \\Omega$, and the capacitive reactance is $65\\ \\Omega$. The alternating current:",
+ "stem": "In a series $LCR$ circuit, the applied voltage leads the current by $60^\\circ$. If the resistance is $10\\ \\Omega$, what is the impedance of the circuit?",
  "options": [
-  "lags the applied voltage by $45^\\circ$",
-  "leads the applied voltage by $45^\\circ$",
-  "leads the applied voltage by $90^\\circ$",
-  "is in phase with the applied voltage"
+  "$10\\ \\Omega$",
+  "$20\\ \\Omega$",
+  "$10\\sqrt{3}\\ \\Omega$",
+  "$20\\sqrt{3}\\ \\Omega$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "tan φ = (X_L − X_C)/R = (25 − 65)/40 = −1, so φ = −45°. Circuit is net capacitive, hence the current leads the applied voltage by 45°.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a series LCR circuit, \\(\\cos\\phi=R/Z\\). Thus \\(Z=10/\\cos60^\\circ=20\\,\\Omega\\).",
+   "answer": "C",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "For a series $LCR$ circuit, the phase angle $\\phi$ of the voltage relative to the current is given by:\n$$\\tan \\phi = \\dfrac{X_L - X_C}{R}$$\n\nGiven:\n- $R = 40\\ \\Omega$\n- $X_L = 25\\ \\Omega$\n- $X_C = 65\\ \\Omega$\n\nSubstituting the values:\n$$\\tan \\phi = \\dfrac{25 - 65}{40} = \\dfrac{-40}{40} = -1$$\n$$\\implies \\phi = -45^\\circ$$\n\nThe negative phase angle indicates that the applied voltage lags the current by $45^\\circ$, or equivalently, the alternating current leads the applied voltage by $45^\\circ$.\n\nIndependent check: tan φ = (X_L − X_C)/R = (25 − 65)/40 = −1, so φ = −45°. Circuit is net capacitive, hence the current leads the applied voltage by 45°.",
- "solution": "",
+ "working": "$Z\\cos\\phi=R$\n\nIndependent check: For a series LCR circuit, \\(\\cos\\phi=R/Z\\). Thus \\(Z=10/\\cos60^\\circ=20\\,\\Omega\\).",
+ "solution": "For a series $LCR$ circuit, $\\cos\\phi=R/Z$.\n$$Z=\\frac{R}{\\cos60^\\circ}=\\frac{10}{1/2}=20\\,\\Omega$$",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "In a series $LCR$ circuit, the resistance is $40\\ \\Omega$, the inductive reactance is $25\\ \\Omega$, and the capacitive reactance is $65\\ \\Omega$. The alternating current:",
+  "stem": "In a series $LCR$ circuit, the applied voltage leads the current by $60^\\circ$. If the resistance is $10\\ \\Omega$, what is the impedance of the circuit?",
   "options": [
-   "lags the applied voltage by $45^\\circ$",
-   "leads the applied voltage by $45^\\circ$",
-   "leads the applied voltage by $90^\\circ$",
-   "is in phase with the applied voltage"
+   "$10\\ \\Omega$",
+   "$10\\sqrt{3}\\ \\Omega$",
+   "$20\\ \\Omega$",
+   "$20\\sqrt{3}\\ \\Omega$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "For a series $LCR$ circuit, the phase angle $\\phi$ of the voltage relative to the current is given by:\n$$\\tan \\phi = \\dfrac{X_L - X_C}{R}$$\n\nGiven:\n- $R = 40\\ \\Omega$\n- $X_L = 25\\ \\Omega$\n- $X_C = 65\\ \\Omega$\n\nSubstituting the values:\n$$\\tan \\phi = \\dfrac{25 - 65}{40} = \\dfrac{-40}{40} = -1$$\n$$\\implies \\phi = -45^\\circ$$\n\nThe negative phase angle indicates that the applied voltage lags the current by $45^\\circ$, or equivalently, the alternating current leads the applied voltage by $45^\\circ$.",
-  "distractor_notes": "Option A encodes a sign error (confusing leading and lagging phase relationships).\nOption C neglects the resistance $R$ entirely, assuming a purely capacitive circuit where current leads by $90^\\circ$.\nOption D mistakenly assumes resonance ($X_L = X_C$), where current and voltage would be in phase.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$Z\\cos\\phi=R$",
+  "distractor_notes": "A: Treats resistance as impedance. B: Uses $R\\tan\\phi$ (the magnitude of net reactance) as impedance. D: Applies the wrong trigonometric factor to $R$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "The curve $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$ has a point of inflexion at $x = 1$, where its concavity changes from upwards to downwards. The value of $a$ is:",
+ "stem": "A cubic curve has stationary points at $(1,9)$ and $(3,5)$. Its point of inflexion is:",
  "options": [
-  "$-2$",
-  "$-1$",
-  "$1$",
-  "$2$"
+  "$(2,7)$",
+  "$(2,9)$",
+  "$(2,5)$",
+  "$(1,7)$"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "y'' = 6(a²−2)x − 6a. Inflection at x=1: a²−a−2=0 ⇒ a=2 or a=−1. Up→down concavity requires y'' decreasing in x, i.e. 6(a²−2)<0 ⇒ a²<2, which holds only for a=−1 (y''=6(1−x)). a=2 gives down→up, rejected.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The inflection point’s x-coordinate is the midpoint of the stationary points: x=2. For a cubic, values at points equally spaced around its inflection point average to the value there, so y=(9+5)/2=7.",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "Given $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$.\n\nDifferentiating with respect to $x$:\n$$y' = 3(a^2 - 2)x^2 - 6ax + 4$$\n$$y'' = 6(a^2 - 2)x - 6a$$\n\nAt the point of inflexion $x = 1$, $y'' = 0$:\n$$6(a^2 - 2)(1) - 6a = 0 \\implies a^2 - a - 2 = 0$$\n$$(a - 2)(a + 1) = 0 \\implies a = 2 \\text{ or } a = -1$$\n\nNow we check the sign change of $y''$ around $x = 1$:\n$$y'' = 6(a^2 - 2)x - 6a = 6(a^2 - 2)(x - 1) \\quad \\text{(since } a^2 - 2 = a\\text{)}$$\n\nFor the concavity to change from upwards to downwards as $x$ increases through $1$:\n- For $x < 1$, we must have $y'' > 0$ (concave upwards).\n- For $x > 1$, we must have $y'' < 0$ (concave downwards).\n\nSince $(x - 1) < 0$ when $x < 1$, we require:\n$$6(a^2 - 2) < 0 \\implies a^2 - 2 < 0$$\n\nTesting the two candidate values:\n- For $a = 2$: $a^2 - 2 = 4 - 2 = 2 > 0$ (concavity changes from downwards to upwards, incorrect).\n- For $a = -1$: $a^2 - 2 = 1 - 2 = -1 < 0$ (concavity changes from upwards to downwards, correct).\n\nThus, $a = -1$.\n\nIndependent check: y'' = 6(a²−2)x − 6a. Inflection at x=1: a²−a−2=0 ⇒ a=2 or a=−1. Up→down concavity requires y'' decreasing in x, i.e. 6(a²−2)<0 ⇒ a²<2, which holds only for a=−1 (y''=6(1−x)). a=2 gives down→up, rejected.",
+ "working": "$f'(x)=k(x-1)(x-3)$.\n$f(3)-f(1)=k\\displaystyle\\int_1^3(x-1)(x-3)\\,dx=-\\dfrac{4k}{3}=-4\\Rightarrow k=3$.\n$f''(x)=6(x-2)$, which changes sign at $x=2$.\n$f(2)=f(1)+\\displaystyle\\int_1^2 3(x-1)(x-3)\\,dx=9-2=7$.\nPoint of inflexion: $(2,7)$.\n\nIndependent check: The inflection point’s x-coordinate is the midpoint of the stationary points: x=2. For a cubic, values at points equally spaced around its inflection point average to the value there, so y=(9+5)/2=7.",
  "solution": "",
  "locked": false,
- "difficulty": 3,
+ "difficulty": 2,
  "draft": {
-  "stem": "The curve $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$ has a point of inflexion at $x = 1$, where its concavity changes from upwards to downwards. The value of $a$ is:",
+  "stem": "A cubic curve has stationary points at $(1,9)$ and $(3,5)$. Its point of inflexion is:",
   "options": [
-   "$-2$",
-   "$-1$",
-   "$1$",
-   "$2$"
+   "$(2,7)$",
+   "$(2,9)$",
+   "$(2,5)$",
+   "$(1,7)$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "Given $y = (a^2 - 2)x^3 - 3ax^2 + 4x - 1$.\n\nDifferentiating with respect to $x$:\n$$y' = 3(a^2 - 2)x^2 - 6ax + 4$$\n$$y'' = 6(a^2 - 2)x - 6a$$\n\nAt the point of inflexion $x = 1$, $y'' = 0$:\n$$6(a^2 - 2)(1) - 6a = 0 \\implies a^2 - a - 2 = 0$$\n$$(a - 2)(a + 1) = 0 \\implies a = 2 \\text{ or } a = -1$$\n\nNow we check the sign change of $y''$ around $x = 1$:\n$$y'' = 6(a^2 - 2)x - 6a = 6(a^2 - 2)(x - 1) \\quad \\text{(since } a^2 - 2 = a\\text{)}$$\n\nFor the concavity to change from upwards to downwards as $x$ increases through $1$:\n- For $x < 1$, we must have $y'' > 0$ (concave upwards).\n- For $x > 1$, we must have $y'' < 0$ (concave downwards).\n\nSince $(x - 1) < 0$ when $x < 1$, we require:\n$$6(a^2 - 2) < 0 \\implies a^2 - 2 < 0$$\n\nTesting the two candidate values:\n- For $a = 2$: $a^2 - 2 = 4 - 2 = 2 > 0$ (concavity changes from downwards to upwards, incorrect).\n- For $a = -1$: $a^2 - 2 = 1 - 2 = -1 < 0$ (concavity changes from upwards to downwards, correct).\n\nThus, $a = -1$.",
-  "distractor_notes": "- Option A ($-2$): Obtained from a sign error when computing $y''$, leading to $a^2 + a - 2 = 0$, and selecting the root $a = -2$.\n- Option B ($-1$): Correct answer.\n- Option C ($1$): Obtained from the same sign error ($a^2 + a - 2 = 0$) and then applying the condition $a^2 - 2 < 0$.\n- Option D ($2$): The other root of $y''(1) = 0$, which corresponds to concavity changing from downwards to upwards rather than upwards to downwards.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 4
- }
+  "difficulty_estimate": 3,
+  "working": "$f'(x)=k(x-1)(x-3)$.\n$f(3)-f(1)=k\\displaystyle\\int_1^3(x-1)(x-3)\\,dx=-\\dfrac{4k}{3}=-4\\Rightarrow k=3$.\n$f''(x)=6(x-2)$, which changes sign at $x=2$.\n$f(2)=f(1)+\\displaystyle\\int_1^2 3(x-1)(x-3)\\,dx=9-2=7$.\nPoint of inflexion: $(2,7)$.",
+  "distractor_notes": "B: uses the ordinate of the left stationary point; C: uses the ordinate of the right stationary point; D: takes a stationary abscissa instead of the inflexion abscissa."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

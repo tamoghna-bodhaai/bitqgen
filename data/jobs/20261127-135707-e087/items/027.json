@@ -1,0 +1,68 @@
+{
+ "qno": 27,
+ "section": "Physics",
+ "slot": {
+  "qno": 27,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Series LCR circuit impedance",
+  "archetype": "formula recall",
+  "brief": "Simple series LCR at resonance or given XL, XC, R: compute impedance or power factor directly by substitution; one-step plugging.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:29",
+   "2021:37",
+   "2025s2:3"
+  ]
+ },
+ "status": "ok",
+ "stem": "A series LCR circuit has resistance $6\\ \\Omega$, inductive reactance $10\\ \\Omega$ and capacitive reactance $2\\ \\Omega$. Its impedance is",
+ "options": [
+  "$6\\ \\Omega$",
+  "$10\\ \\Omega$",
+  "$8\\ \\Omega$",
+  "$12\\ \\Omega$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a series LCR circuit, |Z| = √[R² + (X_L − X_C)²] = √[6² + (10 − 2)²] = 10 Ω.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Z=\\sqrt{R^2+(X_L-X_C)^2}$\n$Z=\\sqrt{6^2+(10-2)^2}=10\\ \\Omega$\n\nIndependent check: For a series LCR circuit, |Z| = √[R² + (X_L − X_C)²] = √[6² + (10 − 2)²] = 10 Ω.",
+ "solution": "For a series LCR circuit, $Z=\\sqrt{R^2+(X_L-X_C)^2}$. Substituting the given values,\n$$Z=\\sqrt{6^2+(10-2)^2}=10\\ \\Omega.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A series LCR circuit has resistance $6\\ \\Omega$, inductive reactance $10\\ \\Omega$ and capacitive reactance $2\\ \\Omega$. Its impedance is",
+  "options": [
+   "$6\\ \\Omega$",
+   "$8\\ \\Omega$",
+   "$10\\ \\Omega$",
+   "$12\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$Z=\\sqrt{R^2+(X_L-X_C)^2}$\n$Z=\\sqrt{6^2+(10-2)^2}=10\\ \\Omega$",
+  "distractor_notes": "A: uses resistance alone. B: uses net reactance alone. D: adds the resistance and net reactance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 43,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 43,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Hydrogen spectrum for hydrogen-like ions",
+  "archetype": "ratio of two situations",
+  "brief": "Compare transition energies/wavelengths of He+ vs H for analogous transitions; require combining Bohr-energy scaling with Rydberg formula to find which pair gives the same wavelength.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:36",
+   "2026s1:34",
+   "2022:34"
+  ]
+ },
+ "status": "ok",
+ "stem": "Which pair has equal wavelengths? Each transition is written $n_i\\rightarrow n_f$, first for $\\text{He}^+$ and then for H.",
+ "options": [
+  "$\\text{He}^+:3\\rightarrow1;\\ \\text{H}:4\\rightarrow2$",
+  "$\\text{He}^+:3\\rightarrow2;\\ \\text{H}:3\\rightarrow2$",
+  "$\\text{He}^+:5\\rightarrow3;\\ \\text{H}:3\\rightarrow1$",
+  "$\\text{He}^+:4\\rightarrow2;\\ \\text{H}:2\\rightarrow1$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using \\(1/\\lambda \\propto Z^2(1/n_f^2-1/n_i^2)\\): for (A), He\\(^+\\) gives \\(4(1/4-1/16)=3/4\\), and H gives \\(1-1/4=3/4\\). The other options do not match.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda^{-1}\\propto Z^2\\left(\\dfrac{1}{n_f^2}-\\dfrac{1}{n_i^2}\\right)$. For $\\text{He}^+$, $4\\rightarrow2$: $4\\left(\\dfrac14-\\dfrac1{16}\\right)=\\dfrac34$; for H, $2\\rightarrow1$: $1-\\dfrac14=\\dfrac34$.\n\nIndependent check: Using \\(1/\\lambda \\propto Z^2(1/n_f^2-1/n_i^2)\\): for (A), He\\(^+\\) gives \\(4(1/4-1/16)=3/4\\), and H gives \\(1-1/4=3/4\\). The other options do not match.",
+ "solution": "For a hydrogen-like ion, $\\frac{1}{\\lambda}$ is proportional to $Z^2\\bigl(\\frac{1}{n_f^2}-\\frac{1}{n_i^2}\\bigr)$.\nFor $\\text{He}^+:4\\rightarrow2$, the factor is $4\\bigl(\\frac14-\\frac1{16}\\bigr)=\\frac34$; for $\\text{H}:2\\rightarrow1$, it is $1-\\frac14=\\frac34$.\nThus the wavelengths are equal for the pair in (D).",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Which pair has equal wavelengths? Each transition is written $n_i\\rightarrow n_f$, first for $\\text{He}^+$ and then for H.",
+  "options": [
+   "$\\text{He}^+:4\\rightarrow2;\\ \\text{H}:2\\rightarrow1$",
+   "$\\text{He}^+:3\\rightarrow2;\\ \\text{H}:3\\rightarrow2$",
+   "$\\text{He}^+:5\\rightarrow3;\\ \\text{H}:3\\rightarrow1$",
+   "$\\text{He}^+:3\\rightarrow1;\\ \\text{H}:4\\rightarrow2$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$\\lambda^{-1}\\propto Z^2\\left(\\dfrac{1}{n_f^2}-\\dfrac{1}{n_i^2}\\right)$. For $\\text{He}^+$, $4\\rightarrow2$: $4\\left(\\dfrac14-\\dfrac1{16}\\right)=\\dfrac34$; for H, $2\\rightarrow1$: $1-\\dfrac14=\\dfrac34$.",
+  "distractor_notes": "B: treats equal transitions as equal despite the $Z^2$ factor; C: compares unequal transition factors; D: overestimates the He$^+$ transition factor relative to H."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

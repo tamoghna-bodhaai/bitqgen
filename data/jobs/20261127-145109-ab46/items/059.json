@@ -1,0 +1,70 @@
+{
+ "qno": 59,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 59,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "ΔH = ΔU + ΔnRT",
+  "archetype": "stoichiometric counting",
+  "brief": "For a balanced gas-phase reaction (e.g. combustion), compute Δn_g and convert between ΔH and ΔU at temperature T.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:51",
+   "2025s2:51",
+   "2026s2:60"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For $\\text{N}_2(g)+3\\text{H}_2(g)\\rightarrow2\\text{NH}_3(g)$, $\\Delta U=-100.0\\ \\text{kJ mol}^{-1}$ at $300\\ \\text{K}$. Find $\\Delta H$. Take $R=8.0\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+ "options": [
+  "$-102.4\\ \\text{kJ mol}^{-1}$",
+  "$-104.8\\ \\text{kJ mol}^{-1}$",
+  "$-100.0\\ \\text{kJ mol}^{-1}$",
+  "$-95.2\\ \\text{kJ mol}^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the reaction as written, Δn_g = 2 − 4 = −2. Thus ΔH = ΔU + Δn_gRT = −100.0 − 2(8.0)(300)/1000 = −104.8 kJ mol⁻¹.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta n_g=2-(1+3)=-2$.\n$\\Delta H=\\Delta U+\\Delta n_gRT$.\n$\\Delta n_gRT=(-2)(8.0)(300)=-4800\\ \\text{J mol}^{-1}=-4.8\\ \\text{kJ mol}^{-1}$.\n$\\Delta H=-100.0-4.8=-104.8\\ \\text{kJ mol}^{-1}$.\n\nIndependent check: For the reaction as written, Δn_g = 2 − 4 = −2. Thus ΔH = ΔU + Δn_gRT = −100.0 − 2(8.0)(300)/1000 = −104.8 kJ mol⁻¹.",
+ "solution": "For gaseous reactions, $\\Delta H=\\Delta U+\\Delta n_gRT$, where $\\Delta n_g=2-(1+3)=-2$.\n$$\\Delta H=-100.0+\\frac{(-2)(8.0)(300)}{1000}=-104.8\\ \\text{kJ mol}^{-1}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For $\\text{N}_2(g)+3\\text{H}_2(g)\\rightarrow2\\text{NH}_3(g)$, $\\Delta U=-100.0\\ \\text{kJ mol}^{-1}$ at $300\\ \\text{K}$. Find $\\Delta H$. Take $R=8.0\\ \\text{J mol}^{-1}\\text{K}^{-1}$.",
+  "options": [
+   "$-104.8\\ \\text{kJ mol}^{-1}$",
+   "$-102.4\\ \\text{kJ mol}^{-1}$",
+   "$-100.0\\ \\text{kJ mol}^{-1}$",
+   "$-95.2\\ \\text{kJ mol}^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\Delta n_g=2-(1+3)=-2$.\n$\\Delta H=\\Delta U+\\Delta n_gRT$.\n$\\Delta n_gRT=(-2)(8.0)(300)=-4800\\ \\text{J mol}^{-1}=-4.8\\ \\text{kJ mol}^{-1}$.\n$\\Delta H=-100.0-4.8=-104.8\\ \\text{kJ mol}^{-1}$.",
+  "distractor_notes": "B: uses a factor of $1$ instead of $2$ for $\\Delta n_g$. C: neglects the $\\Delta n_gRT$ correction. D: uses the wrong sign for the correction."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 144,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 144,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Effect of scaling on variance",
+  "archetype": "property",
+  "brief": "Given mean and variance of a data set, find the mean and variance/SD after the transformation yᵢ = axᵢ + b; property-based, easy.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:125",
+   "2026s1:107",
+   "2022:124"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A data set has mean $4$ and variance $9$. If each observation $x_i$ is replaced by $y_i=2x_i+3$, the new mean and variance are",
+ "options": [
+  "$(8,36)$",
+  "$(11,18)$",
+  "$(11,36)$",
+  "$(11,21)$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Mean transforms as 2(4)+3=11; variance transforms as 2²(9)=36.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\bar y=2\\bar x+3=2(4)+3=11$; $\\operatorname{Var}(y)=2^2\\operatorname{Var}(x)=4(9)=36$.\n\nIndependent check: Mean transforms as 2(4)+3=11; variance transforms as 2²(9)=36.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A data set has mean $4$ and variance $9$. If each observation $x_i$ is replaced by $y_i=2x_i+3$, the new mean and variance are",
+  "options": [
+   "$(8,36)$",
+   "$(11,18)$",
+   "$(11,36)$",
+   "$(11,21)$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\bar y=2\\bar x+3=2(4)+3=11$; $\\operatorname{Var}(y)=2^2\\operatorname{Var}(x)=4(9)=36$.",
+  "distractor_notes": "A: omits the additive shift when calculating the mean. B: scales variance by $2$ instead of $2^2$. D: incorrectly adds the shift to the variance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

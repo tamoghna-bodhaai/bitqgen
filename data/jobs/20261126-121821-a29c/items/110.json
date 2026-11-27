@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "If the distance between the focus and the directrix of a parabola is $6$, then the length of the focal chord perpendicular to its axis is",
+ "stem": "A parabola has focus $(3,2)$ and directrix $x=-1$. What is its semi-latus rectum?",
  "options": [
-  "$3$",
+  "$4$",
+  "$2$",
   "$6$",
-  "$12$",
-  "$24$"
+  "$8$"
  ],
- "answer": "C",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "For y²=4ax, focus–directrix distance = 2a = 6, so a = 3. The focal chord perpendicular to the axis is the latus rectum, length 4a = 12.",
-   "answer": "C",
-   "confidence": 1.0,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The vertex is midway between the focus and directrix, so it is (1,2). The vertex–focus distance is 2, giving latus rectum length 4(2)=8 and semi-latus rectum 4.",
+   "answer": "B",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The focal chord perpendicular to the axis of a parabola is its latus rectum.\n\nLet the standard equation of the parabola be $y^2 = 4ax$.\n- The focus is at $S(a, 0)$ and the directrix is the line $x = -a$.\n- The distance between the focus and the directrix is $d = a - (-a) = 2a$.\n\nGiven $d = 6$, we have $2a = 6$, which implies $a = 3$.\n\nThe length of the latus rectum is given by:\n$$\\text{Length} = 4a = 2(2a) = 2 \\times 6 = 12$$\n\nGeometrically, for any point $P$ on the parabola, the distance to the focus equals the distance to the directrix. For an endpoint $L$ of the latus rectum, its distance to the directrix is equal to the focus–directrix distance $d = 6$. Therefore, the semi-latus rectum is $SL = 6$, and the total length of the latus rectum is $2 \\times 6 = 12$.\n\nIndependent check: For y²=4ax, focus–directrix distance = 2a = 6, so a = 3. The focal chord perpendicular to the axis is the latus rectum, length 4a = 12.",
- "solution": "",
+ "working": "$d(\\text{focus},\\text{directrix})=|3-(-1)|=4$. For a parabola, the semi-latus rectum equals this distance. Thus, the semi-latus rectum is $4$.\n\nIndependent check: The vertex is midway between the focus and directrix, so it is (1,2). The vertex–focus distance is 2, giving latus rectum length 4(2)=8 and semi-latus rectum 4.",
+ "solution": "The vertex lies midway between the focus and directrix, so the focal distance is $a=\\frac{4}{2}=2$. The semi-latus rectum of a parabola is $2a=2(2)=4$.",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "If the distance between the focus and the directrix of a parabola is $6$, then the length of the focal chord perpendicular to its axis is",
+  "stem": "A parabola has focus $(3,2)$ and directrix $x=-1$. What is its semi-latus rectum?",
   "options": [
-   "$3$",
+   "$2$",
+   "$4$",
    "$6$",
-   "$12$",
-   "$24$"
+   "$8$"
   ],
   "option_smiles": null,
-  "answer": "C",
-  "working": "The focal chord perpendicular to the axis of a parabola is its latus rectum.\n\nLet the standard equation of the parabola be $y^2 = 4ax$.\n- The focus is at $S(a, 0)$ and the directrix is the line $x = -a$.\n- The distance between the focus and the directrix is $d = a - (-a) = 2a$.\n\nGiven $d = 6$, we have $2a = 6$, which implies $a = 3$.\n\nThe length of the latus rectum is given by:\n$$\\text{Length} = 4a = 2(2a) = 2 \\times 6 = 12$$\n\nGeometrically, for any point $P$ on the parabola, the distance to the focus equals the distance to the directrix. For an endpoint $L$ of the latus rectum, its distance to the directrix is equal to the focus–directrix distance $d = 6$. Therefore, the semi-latus rectum is $SL = 6$, and the total length of the latus rectum is $2 \\times 6 = 12$.",
-  "distractor_notes": "Option A ($3$) comes from halving the focus–directrix distance to get the focal distance $a = 3$ and confusing it with the chord length.\nOption B ($6$) comes from calculating the semi-latus rectum instead of the full latus rectum (forgetting the factor of $2$).\nOption D ($24$) comes from mistaking the given focus–directrix distance for $a$ (i.e. setting $a = 6$) and computing $4a = 24$.",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$d(\\text{focus},\\text{directrix})=|3-(-1)|=4$. For a parabola, the semi-latus rectum equals this distance. Thus, the semi-latus rectum is $4$.",
+  "distractor_notes": "A: halves the focus–directrix distance; C: uses an incorrect coordinate difference; D: doubles the focus–directrix distance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

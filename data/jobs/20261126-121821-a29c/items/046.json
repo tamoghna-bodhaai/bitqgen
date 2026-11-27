@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "The correct decreasing order of stability of the following carbanions is: (I) $\\text{CH}_3^-$, (II) $\\text{HC}\\equiv\\text{C}^-$, (III) $(\\text{CH}_3)_3\\text{C}^-$, (IV) $\\text{CH}_2=\\text{CH}^-$",
+ "stem": "The increasing order of stability of the following carbanions is: (I) benzyl, (II) allyl, (III) methyl, (IV) tert-butyl.",
  "options": [
-  "$\\text{II} > \\text{I} > \\text{IV} > \\text{III}$",
-  "$\\text{II} > \\text{IV} > \\text{I} > \\text{III}$",
-  "$\\text{III} > \\text{I} > \\text{IV} > \\text{II}$",
-  "$\\text{II} > \\text{IV} > \\text{III} > \\text{I}$"
+  "$\\text{IV} < \\text{III} < \\text{I} < \\text{II}$",
+  "$\\text{IV} < \\text{II} < \\text{III} < \\text{I}$",
+  "$\\text{III} < \\text{IV} < \\text{II} < \\text{I}$",
+  "$\\text{IV} < \\text{III} < \\text{II} < \\text{I}$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Carbanion stability rises with s-character: sp (HC≡C⁻, II) > sp² (CH2=CH⁻, IV) > sp³. Among sp³, the +I effect of three methyl groups destabilizes (CH3)3C⁻ (III) relative to CH3⁻ (I). Order: II > IV > I > III, matching option B.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alkyl substitution destabilizes carbanions, so tert-butyl is less stable than methyl. Resonance stabilizes allyl and benzyl carbanions; benzyl is more stabilized than allyl. Thus IV < III < II < I.",
    "answer": "B",
-   "confidence": 0.98,
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 1
+   "difficulty": 2
   }
  ],
  "attempts": 1,
  "notes": [],
- "working": "The stability of carbanions is governed by two main factors: 1. Hybridization of the carbanionic carbon: As the percentage of $s$-character increases, the electronegativity of the carbon increases, allowing it to accommodate negative charge more effectively ($sp > sp^2 > sp^3$). In $\\text{HC}\\equiv\\text{C}^-$ (II), the carbon is $sp$-hybridized ($50\\%\\ s$-character). In $\\text{CH}_2=\\text{CH}^-$ (IV), the carbon is $sp^2$-hybridized ($33.3\\%\\ s$-character). In $\\text{CH}_3^-$ (I) and $(\\text{CH}_3)_3\\text{C}^-$ (III), the carbanionic carbons are $sp^3$-hybridized ($25\\%\\ s$-character). Thus: $\\text{II} > \\text{IV} > (\\text{I}, \\text{III})$. 2. Inductive effect ($+I$): Alkyl groups are electron-donating by $+I$ effect, which intensifies the negative charge on the carbanion and destabilizes it. The methyl carbanion $\\text{CH}_3^-$ (I) has no alkyl groups, whereas the tert-butyl carbanion $(\\text{CH}_3)_3\\text{C}^-$ (III) has three methyl groups exerting a destabilizing $+I$ effect. Thus: $\\text{I} > \\text{III}$. Combining both factors gives the overall decreasing order of stability: $\\text{II} > \\text{IV} > \\text{I} > \\text{III}$.\n\nIndependent check: Carbanion stability rises with s-character: sp (HC≡C⁻, II) > sp² (CH2=CH⁻, IV) > sp³. Among sp³, the +I effect of three methyl groups destabilizes (CH3)3C⁻ (III) relative to CH3⁻ (I). Order: II > IV > I > III, matching option B.",
- "solution": "",
+ "working": "Resonance stabilization: benzyl $> $ allyl.\nAlkyl carbanions: methyl $> $ tert-butyl (alkyl groups destabilize negative charge).\nThus, increasing stability: IV $< $ III $< $ II $< $ I.\n\nIndependent check: Alkyl substitution destabilizes carbanions, so tert-butyl is less stable than methyl. Resonance stabilizes allyl and benzyl carbanions; benzyl is more stabilized than allyl. Thus IV < III < II < I.",
+ "solution": "Alkyl groups destabilize carbanions, so methyl is more stable than tert-butyl. Resonance stabilizes allyl and benzyl carbanions, with greater stabilization for benzyl.\nThus, the increasing order of stability is $\\text{IV} < \\text{III} < \\text{II} < \\text{I}$.",
  "locked": false,
- "difficulty": 1,
+ "difficulty": 2,
  "draft": {
-  "stem": "The correct decreasing order of stability of the following carbanions is: (I) $\\text{CH}_3^-$, (II) $\\text{HC}\\equiv\\text{C}^-$, (III) $(\\text{CH}_3)_3\\text{C}^-$, (IV) $\\text{CH}_2=\\text{CH}^-$",
+  "stem": "The increasing order of stability of the following carbanions is: (I) benzyl, (II) allyl, (III) methyl, (IV) tert-butyl.",
   "options": [
-   "$\\text{II} > \\text{I} > \\text{IV} > \\text{III}$",
-   "$\\text{II} > \\text{IV} > \\text{I} > \\text{III}$",
-   "$\\text{III} > \\text{I} > \\text{IV} > \\text{II}$",
-   "$\\text{II} > \\text{IV} > \\text{III} > \\text{I}$"
+   "$\\text{IV} < \\text{III} < \\text{I} < \\text{II}$",
+   "$\\text{IV} < \\text{III} < \\text{II} < \\text{I}$",
+   "$\\text{III} < \\text{IV} < \\text{II} < \\text{I}$",
+   "$\\text{IV} < \\text{II} < \\text{III} < \\text{I}$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "The stability of carbanions is governed by two main factors: 1. Hybridization of the carbanionic carbon: As the percentage of $s$-character increases, the electronegativity of the carbon increases, allowing it to accommodate negative charge more effectively ($sp > sp^2 > sp^3$). In $\\text{HC}\\equiv\\text{C}^-$ (II), the carbon is $sp$-hybridized ($50\\%\\ s$-character). In $\\text{CH}_2=\\text{CH}^-$ (IV), the carbon is $sp^2$-hybridized ($33.3\\%\\ s$-character). In $\\text{CH}_3^-$ (I) and $(\\text{CH}_3)_3\\text{C}^-$ (III), the carbanionic carbons are $sp^3$-hybridized ($25\\%\\ s$-character). Thus: $\\text{II} > \\text{IV} > (\\text{I}, \\text{III})$. 2. Inductive effect ($+I$): Alkyl groups are electron-donating by $+I$ effect, which intensifies the negative charge on the carbanion and destabilizes it. The methyl carbanion $\\text{CH}_3^-$ (I) has no alkyl groups, whereas the tert-butyl carbanion $(\\text{CH}_3)_3\\text{C}^-$ (III) has three methyl groups exerting a destabilizing $+I$ effect. Thus: $\\text{I} > \\text{III}$. Combining both factors gives the overall decreasing order of stability: $\\text{II} > \\text{IV} > \\text{I} > \\text{III}$.",
-  "distractor_notes": "Option A assumes the methyl carbanion ($sp^3$) is more stable than the vinyl carbanion ($sp^2$), neglecting the major stabilizing influence of $s$-character.\nOption C reverses the order by mistakenly applying the stability order of carbocations ($3^\\circ > 1^\\circ > sp^2 > sp$) to carbanions.\nOption D correctly applies hybridization but ranks the alkyl carbanions according to carbocation stability ($3^\\circ > \\text{methyl}$) rather than carbanion stability.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "Resonance stabilization: benzyl $> $ allyl.\nAlkyl carbanions: methyl $> $ tert-butyl (alkyl groups destabilize negative charge).\nThus, increasing stability: IV $< $ III $< $ II $< $ I.",
+  "distractor_notes": "A reverses benzyl and allyl; C reverses methyl and tert-butyl; D places allyl below methyl."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

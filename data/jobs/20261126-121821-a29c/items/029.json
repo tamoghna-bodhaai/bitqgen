@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "A mass $m$ of ice at $-T^\\circ\\text{C}$ ($T > 0$) is mixed with an equal mass of water at $T^\\circ\\text{C}$ in an insulated vessel of negligible heat capacity. The latent heat of fusion of ice is $L$, the specific heat capacity of water is $s$, and that of ice is $s/2$. If $sT < 2L$, the fraction of the initial mass of ice that melts is",
+ "stem": "Water of mass $M$ at $T^\\circ\\text{C}$ is added to $m$ ice at $0^\\circ\\text{C}$ in an insulated calorimeter of heat capacity $C$, initially at $0^\\circ\\text{C}$. If all the ice melts and the final temperature is above zero, find it. The specific heat of water is $s$ and the latent heat of fusion is $L$.",
  "options": [
-  "$\\dfrac{sT}{4L}$",
-  "$\\dfrac{sT}{2L}$",
-  "$\\dfrac{sT}{L}$",
-  "$\\dfrac{2sT}{L}$"
+  "$\\dfrac{MsT+mL}{(M+m)s+C}$",
+  "$\\dfrac{MsT-mL}{Ms+C}$",
+  "$\\dfrac{MsT-mL}{(M+m)s}$",
+  "$\\dfrac{MsT-mL}{(M+m)s+C}$"
  ],
- "answer": "B",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Water cooling T→0 releases msT; ice warming -T→0 absorbs m(s/2)T. Surplus heat = msT/2 melts ice mass (msT/2)/L. Since sT<2L, final temp is 0°C and fraction melted = sT/(2L).",
-   "answer": "B",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Energy balance: $Ms(T-t)=mL+mst+Ct$. Hence $t=\\dfrac{MsT-mL}{(M+m)s+C}$, which is option A.",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Heat required to raise the temperature of ice from $-T^\\circ\\text{C}$ to $0^\\circ\\text{C}$:\n$$Q_1 = m \\cdot s_{\\text{ice}} \\cdot \\Delta T = m \\left(\\frac{s}{2}\\right) T = \\frac{1}{2}msT$$\n\n2. Heat released by water in cooling from $T^\\circ\\text{C}$ to $0^\\circ\\text{C}$:\n$$Q_2 = m \\cdot s \\cdot \\Delta T = msT$$\n\n3. Since $Q_2 > Q_1$, the entire system reaches $0^\\circ\\text{C}$ with a net excess heat available for melting ice:\n$$\\Delta Q = Q_2 - Q_1 = msT - \\frac{1}{2}msT = \\frac{1}{2}msT$$\n\n4. The heat required to melt all the ice is $Q_{\\text{melt}} = mL$. Since $sT < 2L$, we have $\\Delta Q = \\frac{1}{2}msT < mL$, so only a portion of the ice melts and the final equilibrium temperature remains $0^\\circ\\text{C}$.\n\n5. If a mass $m'$ of ice melts, then:\n$$m' L = \\Delta Q = \\frac{1}{2}msT \\implies m' = \\frac{msT}{2L}$$\n\n6. The fraction of the initial mass of ice that melts is:\n$$f = \\frac{m'}{m} = \\frac{sT}{2L}$$\n\nIndependent check: Water cooling T→0 releases msT; ice warming -T→0 absorbs m(s/2)T. Surplus heat = msT/2 melts ice mass (msT/2)/L. Since sT<2L, final temp is 0°C and fraction melted = sT/(2L).",
- "solution": "",
+ "working": "$Ms(T-T_f)=mL+(ms+C)T_f$; hence $T_f=\\dfrac{MsT-mL}{(M+m)s+C}$.\n\nIndependent check: Energy balance: $Ms(T-t)=mL+mst+Ct$. Hence $t=\\dfrac{MsT-mL}{(M+m)s+C}$, which is option A.",
+ "solution": "By conservation of heat, heat lost by water equals heat used to melt the ice and warm the melted ice and calorimeter:\n$$Ms(T-T_f)=mL+(ms+C)T_f$$\nRearranging gives $T_f=\\dfrac{MsT-mL}{(M+m)s+C}$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "A mass $m$ of ice at $-T^\\circ\\text{C}$ ($T > 0$) is mixed with an equal mass of water at $T^\\circ\\text{C}$ in an insulated vessel of negligible heat capacity. The latent heat of fusion of ice is $L$, the specific heat capacity of water is $s$, and that of ice is $s/2$. If $sT < 2L$, the fraction of the initial mass of ice that melts is",
+  "stem": "Water of mass $M$ at $T^\\circ\\text{C}$ is added to $m$ ice at $0^\\circ\\text{C}$ in an insulated calorimeter of heat capacity $C$, initially at $0^\\circ\\text{C}$. If all the ice melts and the final temperature is above zero, find it. The specific heat of water is $s$ and the latent heat of fusion is $L$.",
   "options": [
-   "$\\dfrac{sT}{4L}$",
-   "$\\dfrac{sT}{2L}$",
-   "$\\dfrac{sT}{L}$",
-   "$\\dfrac{2sT}{L}$"
+   "$\\dfrac{MsT-mL}{(M+m)s+C}$",
+   "$\\dfrac{MsT-mL}{Ms+C}$",
+   "$\\dfrac{MsT-mL}{(M+m)s}$",
+   "$\\dfrac{MsT+mL}{(M+m)s+C}$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. Heat required to raise the temperature of ice from $-T^\\circ\\text{C}$ to $0^\\circ\\text{C}$:\n$$Q_1 = m \\cdot s_{\\text{ice}} \\cdot \\Delta T = m \\left(\\frac{s}{2}\\right) T = \\frac{1}{2}msT$$\n\n2. Heat released by water in cooling from $T^\\circ\\text{C}$ to $0^\\circ\\text{C}$:\n$$Q_2 = m \\cdot s \\cdot \\Delta T = msT$$\n\n3. Since $Q_2 > Q_1$, the entire system reaches $0^\\circ\\text{C}$ with a net excess heat available for melting ice:\n$$\\Delta Q = Q_2 - Q_1 = msT - \\frac{1}{2}msT = \\frac{1}{2}msT$$\n\n4. The heat required to melt all the ice is $Q_{\\text{melt}} = mL$. Since $sT < 2L$, we have $\\Delta Q = \\frac{1}{2}msT < mL$, so only a portion of the ice melts and the final equilibrium temperature remains $0^\\circ\\text{C}$.\n\n5. If a mass $m'$ of ice melts, then:\n$$m' L = \\Delta Q = \\frac{1}{2}msT \\implies m' = \\frac{msT}{2L}$$\n\n6. The fraction of the initial mass of ice that melts is:\n$$f = \\frac{m'}{m} = \\frac{sT}{2L}$$",
-  "distractor_notes": "Option A encodes dividing the melted mass by the total mass of the mixture (2m) instead of the initial mass of ice (m).\nOption C encodes forgetting that the ice must first be warmed from -T °C to 0 °C, assuming all heat from the water goes into melting ice.\nOption D encodes inverting the factor of 2 (taking the specific heat of ice as 2s) or doubling the heat available.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "$Ms(T-T_f)=mL+(ms+C)T_f$; hence $T_f=\\dfrac{MsT-mL}{(M+m)s+C}$.",
+  "distractor_notes": "B: Omits the sensible heat needed to warm the melted ice.\\nC: Omits the calorimeter's heat capacity.\\nD: Uses the wrong sign for the latent heat term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

@@ -1,0 +1,68 @@
+{
+ "qno": 14,
+ "section": "Physics",
+ "slot": {
+  "qno": 14,
+  "section": "Physics",
+  "chapter": "Mechanical Properties of Fluids",
+  "subtopic": "Excess pressure in soap bubble",
+  "archetype": "single-formula numerical",
+  "brief": "Soap bubble of given radius and surface tension; find the excess pressure inside, or the work done to blow it up from zero radius to the stated radius.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:26",
+   "2021:35",
+   "2021:2"
+  ]
+ },
+ "status": "ok",
+ "stem": "A soap bubble of radius $5.0$ mm is formed in air. If the surface tension of the soap solution is $0.025$ N m$^{-1}$, what is the excess pressure inside the bubble?",
+ "options": [
+  "$20$ Pa",
+  "$10$ Pa",
+  "$40$ Pa",
+  "$80$ Pa"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For a soap bubble, excess pressure is \\(\\Delta P=4T/r=4(0.025)/(0.005)=20\\,\\text{Pa}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$\\Delta P=\\dfrac{4T}{R}=\\dfrac{4(0.025)}{5.0\\times10^{-3}}=20\\ \\text{Pa}$$\n\nIndependent check: For a soap bubble, excess pressure is \\(\\Delta P=4T/r=4(0.025)/(0.005)=20\\,\\text{Pa}\\).",
+ "solution": "For a soap bubble, the excess pressure is $[?]$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A soap bubble of radius $5.0$ mm is formed in air. If the surface tension of the soap solution is $0.025$ N m$^{-1}$, what is the excess pressure inside the bubble?",
+  "options": [
+   "$10$ Pa",
+   "$20$ Pa",
+   "$40$ Pa",
+   "$80$ Pa"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$$\\Delta P=\\dfrac{4T}{R}=\\dfrac{4(0.025)}{5.0\\times10^{-3}}=20\\ \\text{Pa}$$",
+  "distractor_notes": "A: uses the pressure formula for a liquid drop, $2T/R$. C: halves the radius in the calculation. D: uses an incorrect extra factor of two."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

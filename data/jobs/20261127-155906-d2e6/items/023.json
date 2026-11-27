@@ -1,0 +1,70 @@
+{
+ "qno": 23,
+ "section": "Physics",
+ "slot": {
+  "qno": 23,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Resistance on stretching a wire",
+  "archetype": "volume-constant scaling",
+  "brief": "A wire of given resistance is stretched so that its length increases by a factor n (volume constant); find the new resistance using R ∝ L², with the cross-section change handled implicitly.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:26",
+   "2026s1:11",
+   "2021:19"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A wire has resistance $4\\ \\Omega$. It is stretched until its length is three times its original length, with its volume unchanged. What is its new resistance?",
+ "options": [
+  "$12\\ \\Omega$",
+  "$24\\ \\Omega$",
+  "$36\\ \\Omega$",
+  "$48\\ \\Omega$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At constant volume, tripling the length reduces the area to one-third. Since R = ρL/A, the new resistance is 4 × 3 × 3 = 36 Ω.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "With volume constant, $A'L'=AL$; thus $R'=\\rho\\dfrac{L'}{A'}=\\rho\\dfrac{(3L)(3A)}{A}=9R=36\\ \\Omega$.\n\nIndependent check: At constant volume, tripling the length reduces the area to one-third. Since R = ρL/A, the new resistance is 4 × 3 × 3 = 36 Ω.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A wire has resistance $4\\ \\Omega$. It is stretched until its length is three times its original length, with its volume unchanged. What is its new resistance?",
+  "options": [
+   "$12\\ \\Omega$",
+   "$24\\ \\Omega$",
+   "$36\\ \\Omega$",
+   "$48\\ \\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "With volume constant, $A'L'=AL$; thus $R'=\\rho\\dfrac{L'}{A'}=\\rho\\dfrac{(3L)(3A)}{A}=9R=36\\ \\Omega$.",
+  "distractor_notes": "A: assumes resistance is directly proportional to length with unchanged area. B: includes only one of the two length factors. D: uses a factor of $12$ instead of the required factor of $9$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

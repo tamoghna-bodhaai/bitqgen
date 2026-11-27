@@ -1,0 +1,70 @@
+{
+ "qno": 99,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 99,
+  "section": "Logical Reasoning",
+  "chapter": "Syllogism",
+  "subtopic": "Syllogism",
+  "archetype": "venn-deduction",
+  "brief": "Two straightforward universal statements with clear overlap; ask which conclusions definitely follow (no 'possibility' cases).",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:86",
+   "2026s1:81",
+   "2023s2:83"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "**Statements:**\nAll violins are instruments.\nAll instruments are objects.\n\n**Conclusions:**\nI. All violins are objects.\nII. All objects are instruments.",
+ "options": [
+  "Only I follows",
+  "Only II follows",
+  "Both I and II follow",
+  "Neither I nor II follows"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Violins ⊆ instruments ⊆ objects, so I follows. The statements do not imply that all objects are instruments, so II does not follow.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "All violins are within instruments, and all instruments are within objects; hence all violins are objects. The reverse inclusion in II is not stated.\n\nIndependent check: Violins ⊆ instruments ⊆ objects, so I follows. The statements do not imply that all objects are instruments, so II does not follow.",
+ "solution": "Since all violins are instruments and all instruments are objects, $$\\text{Violins} \\subseteq \\text{Instruments} \\subseteq \\text{Objects}.$$ Hence, conclusion I follows. The statements do not imply that all objects are instruments, so conclusion II does not follow.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "**Statements:**\nAll violins are instruments.\nAll instruments are objects.\n\n**Conclusions:**\nI. All violins are objects.\nII. All objects are instruments.",
+  "options": [
+   "Only I follows",
+   "Only II follows",
+   "Both I and II follow",
+   "Neither I nor II follows"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "All violins are within instruments, and all instruments are within objects; hence all violins are objects. The reverse inclusion in II is not stated.",
+  "distractor_notes": "B: overlooks the transitive inclusion proving I. C: assumes the reverse inclusion in II. D: overlooks that I follows."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

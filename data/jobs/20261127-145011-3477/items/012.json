@@ -1,0 +1,70 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Photoelectric equation",
+  "archetype": "single-formula numerical",
+  "brief": "Given work function and incident photon wavelength, find the maximum kinetic energy of emitted electrons; direct Einstein equation plug-in.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:12",
+   "2026s2:2",
+   "2025s2:27"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A metal has a work function of $2.0$ eV and is illuminated by monochromatic light of wavelength $400$ nm. Taking $hc = 1240$ eV nm, find the maximum kinetic energy of the emitted electrons.",
+ "options": [
+  "$5.10$ eV",
+  "$2.00$ eV",
+  "$3.10$ eV",
+  "$1.10$ eV"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Photon energy = 1240/400 = 3.10 eV. Thus, K_max = 3.10 − 2.00 = 1.10 eV.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$K_{\\max}=\\dfrac{hc}{\\lambda}-\\phi$\\n$=\\dfrac{1240}{400}-2.0=1.10$ eV\n\nIndependent check: Photon energy = 1240/400 = 3.10 eV. Thus, K_max = 3.10 − 2.00 = 1.10 eV.",
+ "solution": "Using Einstein’s photoelectric equation, $K_{\\max}=\\dfrac{hc}{\\lambda}-\\phi$.\n$$K_{\\max}=\\frac{1240}{400}-2.0=1.10\\text{ eV}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A metal has a work function of $2.0$ eV and is illuminated by monochromatic light of wavelength $400$ nm. Taking $hc = 1240$ eV nm, find the maximum kinetic energy of the emitted electrons.",
+  "options": [
+   "$1.10$ eV",
+   "$2.00$ eV",
+   "$3.10$ eV",
+   "$5.10$ eV"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$K_{\\max}=\\dfrac{hc}{\\lambda}-\\phi$\\n$=\\dfrac{1240}{400}-2.0=1.10$ eV",
+  "distractor_notes": "B: Uses the work function as the kinetic energy. C: Does not subtract the work function. D: Adds the work function instead of subtracting it."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

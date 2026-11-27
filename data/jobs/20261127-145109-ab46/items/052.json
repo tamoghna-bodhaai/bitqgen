@@ -1,0 +1,70 @@
+{
+ "qno": 52,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 52,
+  "section": "Chemistry",
+  "chapter": "Solid State",
+  "subtopic": "Voids and formula of compound",
+  "archetype": "void counting",
+  "brief": "In a spinel or ionic solid of fcc oxide ions with ions in tetrahedral/octahedral voids, determine the fraction of voids occupied and hence the formula.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:75",
+   "2023s2:51",
+   "2025s1:41"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "An fcc array of oxide ions contains one $\\text{A}^{2+}$ ion in tetrahedral voids per unit cell. $\\text{B}^{3+}$ ions occupy half the octahedral voids. What fraction of octahedral voids is occupied, and what is the formula of the solid?",
+ "options": [
+  "$\\dfrac{1}{4}$; $\\text{AB}_2\\text{O}_4$",
+  "$\\dfrac{1}{2}$; $\\text{AB}_2\\text{O}_4$",
+  "$\\dfrac{1}{2}$; $\\text{ABO}_2$",
+  "$\\dfrac{3}{4}$; $\\text{A}_2\\text{B}\\text{O}_4$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "An fcc unit cell has 4 oxide ions and 4 octahedral voids. Half occupied means 2 B ions; with 1 A ion, the ratio A:B:O is 1:2:4, giving AB₂O₄.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "fcc unit cell: $4\\ \\text{O}^{2-}$ ions, $8$ tetrahedral voids, $4$ octahedral voids.\n$N_A=1$; $N_B=\\dfrac{1}{2}(4)=2$.\nFraction of octahedral voids occupied $=\\dfrac{2}{4}=\\dfrac{1}{2}$.\n$A:B:O=1:2:4$; formula $=\\text{AB}_2\\text{O}_4$.\n\nIndependent check: An fcc unit cell has 4 oxide ions and 4 octahedral voids. Half occupied means 2 B ions; with 1 A ion, the ratio A:B:O is 1:2:4, giving AB₂O₄.",
+ "solution": "An fcc unit cell contains $4$ oxide ions and $4$ octahedral voids. Half of the octahedral voids are occupied, so $N_B=\\frac{1}{2}(4)=2$.\nThe ion ratio is $A:B:O=1:2:4$, giving the formula $\\text{AB}_2\\text{O}_4$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An fcc array of oxide ions contains one $\\text{A}^{2+}$ ion in tetrahedral voids per unit cell. $\\text{B}^{3+}$ ions occupy half the octahedral voids. What fraction of octahedral voids is occupied, and what is the formula of the solid?",
+  "options": [
+   "$\\dfrac{1}{4}$; $\\text{AB}_2\\text{O}_4$",
+   "$\\dfrac{1}{2}$; $\\text{AB}_2\\text{O}_4$",
+   "$\\dfrac{1}{2}$; $\\text{ABO}_2$",
+   "$\\dfrac{3}{4}$; $\\text{A}_2\\text{B}\\text{O}_4$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "fcc unit cell: $4\\ \\text{O}^{2-}$ ions, $8$ tetrahedral voids, $4$ octahedral voids.\n$N_A=1$; $N_B=\\dfrac{1}{2}(4)=2$.\nFraction of octahedral voids occupied $=\\dfrac{2}{4}=\\dfrac{1}{2}$.\n$A:B:O=1:2:4$; formula $=\\text{AB}_2\\text{O}_4$.",
+  "distractor_notes": "A: Uses the tetrahedral-void count instead of the octahedral-void count. C: Omits one of the two B ions per unit cell when forming the ratio. D: Miscounts the number of B ions and reverses the A:B ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

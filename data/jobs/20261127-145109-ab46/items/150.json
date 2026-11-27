@@ -1,0 +1,70 @@
+{
+ "qno": 150,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 150,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by substitution",
+  "archetype": "substitution integral",
+  "brief": "Indefinite integral of the form ∫f(ax + b)dx or ∫x·√(quadratic)dx solvable by a simple substitution; carry out the substitution and back-substitute.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:92",
+   "2024s1:124",
+   "2026s2:130"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int x\\sqrt{x^2+4}\\,dx$.",
+ "options": [
+  "$\\dfrac{1}{2}(x^2+4)^{3/2}+C$",
+  "$\\dfrac{1}{3}(x^2+4)^{3/2}+C$",
+  "$\\dfrac{2}{3}(x^2+4)^{3/2}+C$",
+  "$\\dfrac{1}{3}(x^2+4)^{1/2}+C$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let u=x^2+4, so du=2x\\,dx. Then \\int x\\sqrt{x^2+4}\\,dx=\\frac12\\int u^{1/2}du=\\frac13(x^2+4)^{3/2}+C.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let $u=x^2+4$, so $du=2x\\,dx$.\n$I=\\dfrac12\\int u^{1/2}\\,du=\\dfrac13u^{3/2}+C=\\dfrac13(x^2+4)^{3/2}+C$.\n\nIndependent check: Let u=x^2+4, so du=2x\\,dx. Then \\int x\\sqrt{x^2+4}\\,dx=\\frac12\\int u^{1/2}du=\\frac13(x^2+4)^{3/2}+C.",
+ "solution": "Let $u=x^2+4$, so $du=2x\\,dx$.\n$$\\int x\\sqrt{x^2+4}\\,dx=\\frac12\\int u^{1/2}\\,du=\\frac13u^{3/2}+C=\\frac13(x^2+4)^{3/2}+C.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int x\\sqrt{x^2+4}\\,dx$.",
+  "options": [
+   "$\\dfrac{1}{3}(x^2+4)^{3/2}+C$",
+   "$\\dfrac{1}{2}(x^2+4)^{3/2}+C$",
+   "$\\dfrac{2}{3}(x^2+4)^{3/2}+C$",
+   "$\\dfrac{1}{3}(x^2+4)^{1/2}+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Let $u=x^2+4$, so $du=2x\\,dx$.\n$I=\\dfrac12\\int u^{1/2}\\,du=\\dfrac13u^{3/2}+C=\\dfrac13(x^2+4)^{3/2}+C$.",
+  "distractor_notes": "B: uses the wrong coefficient when integrating $u^{1/2}$.\nC: omits the factor $\\dfrac12$ from $x\\,dx=\\dfrac12du$.\nD: integrates the power incorrectly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

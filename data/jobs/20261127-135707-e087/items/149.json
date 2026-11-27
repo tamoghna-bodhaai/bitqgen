@@ -1,0 +1,68 @@
+{
+ "qno": 149,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 149,
+  "section": "Mathematics",
+  "chapter": "Sequences and Series",
+  "subtopic": "Arithmetico-geometric series",
+  "archetype": "AGP sum",
+  "brief": "Sum an arithmetico-geometric series to n terms or infinity using the shift-and-subtract method.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:109",
+   "2021:148",
+   "2023s2:113"
+  ]
+ },
+ "status": "ok",
+ "stem": "The sum $\\displaystyle\\sum_{k=1}^{5}\\dfrac{k+1}{2^k}$ is",
+ "options": [
+  "$\\dfrac{11}{4}$",
+  "$\\dfrac{57}{32}$",
+  "$3$",
+  "$\\dfrac{119}{32}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(1+\\frac34+\\frac12+\\frac5{16}+\\frac3{16}=\\frac{44}{16}=\\frac{11}{4}\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$S=\\sum_{k=1}^{5}\\dfrac{k+1}{2^k},\\quad \\dfrac S2=\\sum_{k=2}^{6}\\dfrac{k}{2^k}$. $S-\\dfrac S2=1+\\sum_{k=2}^{5}\\dfrac1{2^k}-\\dfrac6{2^6}=\\dfrac{11}{8}\\Rightarrow S=\\dfrac{11}{4}$.\n\nIndependent check: \\(1+\\frac34+\\frac12+\\frac5{16}+\\frac3{16}=\\frac{44}{16}=\\frac{11}{4}\\).",
+ "solution": "Let $S=\\sum_{k=1}^{5}\\dfrac{k+1}{2^k}$. Shifting the index gives $\\dfrac S2=\\sum_{k=2}^{6}\\dfrac{k}{2^k}$.\n$$S-\\dfrac S2=1+\\sum_{k=2}^{5}\\dfrac1{2^k}-\\dfrac6{2^6}=\\dfrac{11}{8},\\qquad S=\\dfrac{11}{4}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The sum $\\displaystyle\\sum_{k=1}^{5}\\dfrac{k+1}{2^k}$ is",
+  "options": [
+   "$\\dfrac{57}{32}$",
+   "$\\dfrac{11}{4}$",
+   "$3$",
+   "$\\dfrac{119}{32}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$S=\\sum_{k=1}^{5}\\dfrac{k+1}{2^k},\\quad \\dfrac S2=\\sum_{k=2}^{6}\\dfrac{k}{2^k}$. $S-\\dfrac S2=1+\\sum_{k=2}^{5}\\dfrac1{2^k}-\\dfrac6{2^6}=\\dfrac{11}{8}\\Rightarrow S=\\dfrac{11}{4}$.",
+  "distractor_notes": "A: omits the geometric sum from the $+1$ in each numerator. C: extends the finite sum to infinity. D: uses $k+2$ instead of $k+1$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

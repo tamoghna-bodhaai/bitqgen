@@ -1,0 +1,70 @@
+{
+ "qno": 61,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 61,
+  "section": "Chemistry",
+  "chapter": "Thermodynamics (Chemistry)",
+  "subtopic": "First and second law relations",
+  "archetype": "conceptual",
+  "brief": "Evaluate simple thermodynamic statements (e.g. why entropy increases for gas mixing, spontaneous endothermic processes, or significance of Gibbs free energy sign) — spot the correct statement.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:60",
+   "2025s2:51",
+   "2026s1:36"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which statement is correct for a process at constant temperature and pressure?",
+ "options": [
+  "A process with $\\Delta G>0$ is spontaneous in the forward direction.",
+  "A process with $\\Delta G<0$ is spontaneous in the forward direction.",
+  "At equilibrium, $\\Delta G<0$.",
+  "A process with $\\Delta H>0$ can never be spontaneous."
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At constant temperature and pressure, a forward process is spontaneous when ΔG < 0. At equilibrium ΔG = 0; positive ΔH does not rule out spontaneity.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "At constant $T$ and $P$: $\\Delta G<0$ for a spontaneous forward process; $\\Delta G=0$ at equilibrium.\n\nIndependent check: At constant temperature and pressure, a forward process is spontaneous when ΔG < 0. At equilibrium ΔG = 0; positive ΔH does not rule out spontaneity.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which statement is correct for a process at constant temperature and pressure?",
+  "options": [
+   "A process with $\\Delta G>0$ is spontaneous in the forward direction.",
+   "A process with $\\Delta G<0$ is spontaneous in the forward direction.",
+   "At equilibrium, $\\Delta G<0$.",
+   "A process with $\\Delta H>0$ can never be spontaneous."
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "At constant $T$ and $P$: $\\Delta G<0$ for a spontaneous forward process; $\\Delta G=0$ at equilibrium.",
+  "distractor_notes": "A: Reverses the Gibbs energy criterion. C: At equilibrium, Gibbs energy change is zero. D: Ignores the possible favourable contribution of entropy."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

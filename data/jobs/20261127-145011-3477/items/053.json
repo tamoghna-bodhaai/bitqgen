@@ -1,0 +1,71 @@
+{
+ "qno": 53,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 53,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": ": ",
+  "archetype": "configuration to quantum numbers",
+  "brief": "Give an orbital designation (e.g., 3d or 4f); ask the possible/values of n, l, m and number of orbitals, or which quantum numbers are invalid",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:34",
+   "2023s2:55",
+   "2025s1:39"
+  ],
+  "origin": "variant",
+  "bank_ref": "g361bbda77827"
+ },
+ "status": "ok",
+ "stem": "For an electron in a $5f$ subshell, which option gives the allowed values of $l$ and $m_l$, and the number of orbitals?",
+ "options": [
+  "$l=2$, $m_l=-2,-1,0,+1,+2$; $5$ orbitals",
+  "$l=3$, $m_l=-3,-2,-1,0,+1,+2,+3$; $6$ orbitals",
+  "$l=3$, $m_l=-3,-2,-1,0,+1,+2,+3$; $7$ orbitals",
+  "$l=4$, $m_l=-4,-3,-2,-1,0,+1,+2,+3,+4$; $9$ orbitals"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an f subshell, l=3. Thus m_l=-3,-2,-1,0,+1,+2,+3, giving 2l+1=7 orbitals.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $5f$: $n=5$, $l=3$.\\n$m_l=-3,-2,-1,0,+1,+2,+3$; number of orbitals $=2l+1=7$.\n\nIndependent check: For an f subshell, l=3. Thus m_l=-3,-2,-1,0,+1,+2,+3, giving 2l+1=7 orbitals.",
+ "solution": "For an $f$ subshell, $l=3$, so $m_l=-3,-2,-1,0,+1,+2,+3$.\nThe number of orbitals is $2l+1=2(3)+1=7$.\nThus, the allowed values and number of orbitals are given in (C).",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For an electron in a $5f$ subshell, which option gives the allowed values of $l$ and $m_l$, and the number of orbitals?",
+  "options": [
+   "$l=2$, $m_l=-2,-1,0,+1,+2$; $5$ orbitals",
+   "$l=3$, $m_l=-3,-2,-1,0,+1,+2,+3$; $6$ orbitals",
+   "$l=3$, $m_l=-3,-2,-1,0,+1,+2,+3$; $7$ orbitals",
+   "$l=4$, $m_l=-4,-3,-2,-1,0,+1,+2,+3,+4$; $9$ orbitals"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For $5f$: $n=5$, $l=3$.\\n$m_l=-3,-2,-1,0,+1,+2,+3$; number of orbitals $=2l+1=7$.",
+  "distractor_notes": "A: treats the subshell as $d$. B: counts one fewer orbital than allowed. D: uses $n-1$ as $l$."
+ },
+ "variant_of": "g361bbda77827",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 47,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 47,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "VSEPR theory and molecular geometry",
+  "archetype": "ordering",
+  "brief": "Rank three species (e.g., SF4, XeF4, ClF3-type set) by number of lone pairs on central atom and match to geometry; test VSEPR counting.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:53",
+   "2025s2:47",
+   "2021:70"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $\\text{SF}_4$, $\\text{ClF}_3$ and $\\text{XeF}_4$, which option gives, in this order, the number of lone pairs on the central atom and the molecular geometry?",
+ "options": [
+  "$(1,\\text{ seesaw});\\ (2,\\text{ T-shaped});\\ (2,\\text{ square planar})$",
+  "$(2,\\text{ seesaw});\\ (2,\\text{ T-shaped});\\ (2,\\text{ square planar})$",
+  "$(1,\\text{ seesaw});\\ (2,\\text{ trigonal planar});\\ (2,\\text{ square planar})$",
+  "$(1,\\text{ tetrahedral});\\ (2,\\text{ T-shaped});\\ (2,\\text{ octahedral})$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "VSEPR: SF₄ is AX₄E (1 lone pair, seesaw); ClF₃ is AX₃E₂ (2 lone pairs, T-shaped); XeF₄ is AX₄E₂ (2 lone pairs, square planar).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Central-atom lone pairs: $\\text{SF}_4$: $1$; $\\text{ClF}_3$: $2$; $\\text{XeF}_4$: $2$. Their molecular geometries are seesaw (5 domains), T-shaped (5 domains), and square planar (6 domains), respectively.\n\nIndependent check: VSEPR: SF₄ is AX₄E (1 lone pair, seesaw); ClF₃ is AX₃E₂ (2 lone pairs, T-shaped); XeF₄ is AX₄E₂ (2 lone pairs, square planar).",
+ "solution": "By VSEPR, $\\text{SF}_4$ is $\\text{AX}_4\\text{E}$ (1 lone pair, seesaw), $\\text{ClF}_3$ is $\\text{AX}_3\\text{E}_2$ (2 lone pairs, T-shaped), and $\\text{XeF}_4$ is $\\text{AX}_4\\text{E}_2$ (2 lone pairs, square planar).",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $\\text{SF}_4$, $\\text{ClF}_3$ and $\\text{XeF}_4$, which option gives, in this order, the number of lone pairs on the central atom and the molecular geometry?",
+  "options": [
+   "$(1,\\text{ seesaw});\\ (2,\\text{ T-shaped});\\ (2,\\text{ square planar})$",
+   "$(2,\\text{ seesaw});\\ (2,\\text{ T-shaped});\\ (2,\\text{ square planar})$",
+   "$(1,\\text{ seesaw});\\ (2,\\text{ trigonal planar});\\ (2,\\text{ square planar})$",
+   "$(1,\\text{ tetrahedral});\\ (2,\\text{ T-shaped});\\ (2,\\text{ octahedral})$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Central-atom lone pairs: $\\text{SF}_4$: $1$; $\\text{ClF}_3$: $2$; $\\text{XeF}_4$: $2$. Their molecular geometries are seesaw (5 domains), T-shaped (5 domains), and square planar (6 domains), respectively.",
+  "distractor_notes": "B: overcounts the lone pair on S; C: confuses the molecular geometry of $\\text{ClF}_3$; D: gives electron-domain geometries instead of molecular geometries."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,56 @@
+{
+ "qno": 3,
+ "section": "Physics",
+ "slot": {
+  "qno": 3,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "RMS speed",
+  "archetype": "proportionality-scaling",
+  "brief": "Compute rms speed of gas molecules from vrms = √(3RT/M) for a given gas at a given temperature.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:18",
+   "2026s2:3",
+   "2021:38"
+  ],
+  "origin": "direct",
+  "bank_ref": "g0bf2b738500e"
+ },
+ "status": "ok",
+ "stem": "The root mean square (rms) speeds of oxygen gas (molar mass 32 g mol^-1) and hydrogen gas (molar mass 2 g mol^-1) at the same temperature are v_O2 and v_H2 respectively. What is the ratio v_O2 : v_H2?",
+ "options": [
+  "1 : 16",
+  "1 : 4",
+  "1 : 2",
+  "1 : 1"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "B",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g0bf2b738500e (verified in job 20261127-122012-292e)"
+ ],
+ "working": "v_rms = sqrt(3RT/M), so v_O2/v_H2 = sqrt(M_H2/M_O2) = sqrt(2/32) = sqrt(1/16) = 1/4.\n\nIndependent check: At the same temperature, rms speed is proportional to 1/√M. Thus v_O2/v_H2 = √(2/32) = 1/4.",
+ "solution": "At the same temperature, $v_{\\rm rms}=\\sqrt{3RT/M}$, so $v_{O_2}/v_{H_2}=\\sqrt{M_{H_2}/M_{O_2}}$. $$\\frac{v_{O_2}}{v_{H_2}}=\\sqrt{\\frac{2}{32}}=\\frac14$$ Hence, $v_{O_2}:v_{H_2}=1:4$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g0bf2b738500e",
+ "author_model": "deepseek/deepseek-v4-pro"
+}

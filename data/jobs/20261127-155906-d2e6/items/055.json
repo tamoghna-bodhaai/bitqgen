@@ -1,0 +1,70 @@
+{
+ "qno": 55,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 55,
+  "section": "Chemistry",
+  "chapter": "Organic Chemistry – Basic Principles",
+  "subtopic": "Free radical stability",
+  "archetype": "stability ordering",
+  "brief": "Order given radicals or carbocations by stability, possibly including benzylic/allylic vs alkyl, and pick the correct decreasing-stability sequence.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:46",
+   "2023s2:45",
+   "2024s2:53"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Arrange the following free radicals in decreasing order of stability: benzyl, allyl, tert-butyl and ethyl.",
+ "options": [
+  "Benzyl $>$ allyl $>$ tert-butyl $>$ ethyl",
+  "Allyl $>$ benzyl $>$ tert-butyl $>$ ethyl",
+  "Benzyl $>$ tert-butyl $>$ allyl $>$ ethyl",
+  "Benzyl $>$ allyl $>$ ethyl $>$ tert-butyl"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Benzyl and allyl radicals are resonance-stabilized, with benzyl more stable; among the alkyl radicals, tert-butyl is more stable than ethyl due to greater hyperconjugation. Thus benzyl > allyl > tert-butyl > ethyl.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Resonance stabilisation: benzyl $>$ allyl. Hyperconjugation stabilises alkyl radicals as $3^\\circ>1^\\circ$; hence tert-butyl $>$ ethyl. Overall: benzyl $>$ allyl $>$ tert-butyl $>$ ethyl.\n\nIndependent check: Benzyl and allyl radicals are resonance-stabilized, with benzyl more stable; among the alkyl radicals, tert-butyl is more stable than ethyl due to greater hyperconjugation. Thus benzyl > allyl > tert-butyl > ethyl.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Arrange the following free radicals in decreasing order of stability: benzyl, allyl, tert-butyl and ethyl.",
+  "options": [
+   "Benzyl $>$ allyl $>$ tert-butyl $>$ ethyl",
+   "Allyl $>$ benzyl $>$ tert-butyl $>$ ethyl",
+   "Benzyl $>$ tert-butyl $>$ allyl $>$ ethyl",
+   "Benzyl $>$ allyl $>$ ethyl $>$ tert-butyl"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Resonance stabilisation: benzyl $>$ allyl. Hyperconjugation stabilises alkyl radicals as $3^\\circ>1^\\circ$; hence tert-butyl $>$ ethyl. Overall: benzyl $>$ allyl $>$ tert-butyl $>$ ethyl.",
+  "distractor_notes": "B: reverses the relative stability of benzyl and allyl radicals; C: places the tertiary radical above the resonance-stabilised allyl radical; D: places the primary ethyl radical above the tertiary radical."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

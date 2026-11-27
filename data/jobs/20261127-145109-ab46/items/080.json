@@ -1,0 +1,70 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Vitamins",
+  "archetype": "fact recall",
+  "brief": "Match vitamins (A, B, C, D, K) with their deficiency diseases or classify as fat/water soluble.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:56",
+   "2025s2:49",
+   "2024s1:52"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which vitamin and its deficiency disease are correctly matched?",
+ "options": [
+  "Vitamin B$_1$ — beriberi",
+  "Vitamin C — beriberi",
+  "Vitamin K — night blindness",
+  "Vitamin D — scurvy"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Vitamin B₁ deficiency causes beriberi; the other listed pairings are incorrect.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Vitamin B$_1$ deficiency causes beriberi.\n\nIndependent check: Vitamin B₁ deficiency causes beriberi; the other listed pairings are incorrect.",
+ "solution": "Vitamin B$_1$ deficiency causes beriberi.\nThus, Vitamin B$_1$ — beriberi is the correctly matched pair.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Which vitamin and its deficiency disease are correctly matched?",
+  "options": [
+   "Vitamin D — scurvy",
+   "Vitamin C — beriberi",
+   "Vitamin K — night blindness",
+   "Vitamin B$_1$ — beriberi"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Vitamin B$_1$ deficiency causes beriberi.",
+  "distractor_notes": "A: Confuses vitamin D deficiency (rickets) with vitamin C deficiency (scurvy).\nB: Confuses vitamin C deficiency (scurvy) with vitamin B$_1$ deficiency (beriberi).\nC: Confuses vitamin K deficiency (impaired blood clotting) with vitamin A deficiency (night blindness)."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

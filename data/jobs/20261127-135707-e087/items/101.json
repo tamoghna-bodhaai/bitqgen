@@ -1,0 +1,68 @@
+{
+ "qno": 101,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 101,
+  "section": "Logical Reasoning",
+  "chapter": "Blood Relations",
+  "subtopic": "Blood relations",
+  "archetype": "relation chain",
+  "brief": "Pointing-photo style statement chain (\"he is the son of my grandfather's only child\") asking the exact relation; 1/5 so keep it to 2-3 clear steps with a definite answer like \"father\" or \"nephew\".",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:82",
+   "2026s2:90",
+   "2026s2:76"
+  ]
+ },
+ "status": "ok",
+ "stem": "Pointing to a photograph, Rina says, “He is the son of my maternal grandfather’s only daughter.” How is the person in the photograph related to Rina?",
+ "options": [
+  "Father",
+  "Uncle",
+  "Brother",
+  "Cousin"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Rina’s maternal grandfather’s only daughter is her mother. Her mother’s son is Rina’s brother.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "Rina’s maternal grandfather’s only daughter is Rina’s mother. Her son is Rina’s brother. The other options do not match this relation.\n\nIndependent check: Rina’s maternal grandfather’s only daughter is her mother. Her mother’s son is Rina’s brother.",
+ "solution": "Rina’s maternal grandfather’s only daughter is her mother. Her mother’s son is Rina’s brother.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Pointing to a photograph, Rina says, “He is the son of my maternal grandfather’s only daughter.” How is the person in the photograph related to Rina?",
+  "options": [
+   "Father",
+   "Brother",
+   "Uncle",
+   "Cousin"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Rina’s maternal grandfather’s only daughter is Rina’s mother. Her son is Rina’s brother. The other options do not match this relation.",
+  "distractor_notes": "A: mistakes the mother’s son for Rina’s father. C: confuses the mother’s son with her brother. D: treats the mother’s son as a cousin."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

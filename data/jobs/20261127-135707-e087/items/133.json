@@ -1,0 +1,68 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Continuity of piecewise functions",
+  "archetype": "match one-sided limits",
+  "brief": "Piecewise-defined function: find the unknown parameter so the function is continuous (and comment on differentiability) at the joining point.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:107",
+   "2024s2:112",
+   "2024s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "For what value of $a$ is $f$ continuous at $x=1$, and is it differentiable there? $\\displaystyle f(x)=\\begin{cases}\\dfrac{x^2-1}{x-1}+a,&x<1,\\\\3x+1,&x\\ge1.\\end{cases}$",
+ "options": [
+  "$a=2$, and $f$ is differentiable at $x=1$",
+  "$a=2$, and $f$ is not differentiable at $x=1$",
+  "$a=3$, and $f$ is not differentiable at $x=1$",
+  "$a=4$, and $f$ is differentiable at $x=1$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For x<1, f(x)=x+1+a, so the left limit at 1 is a+2. Since f(1)=4, continuity requires a=2. The left and right derivatives are 1 and 3, so f is not differentiable at 1.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lim_{x\\to1^-}f(x)=2+a=f(1)=4\\Rightarrow a=2$. For $x<1$, $f(x)=x+1+a$, so $f'_-(1)=1$; $f'_+(1)=3$. Since $f'_-(1)\\ne f'_+(1)$, $f$ is not differentiable at $1$.\n\nIndependent check: For x<1, f(x)=x+1+a, so the left limit at 1 is a+2. Since f(1)=4, continuity requires a=2. The left and right derivatives are 1 and 3, so f is not differentiable at 1.",
+ "solution": "For continuity, $\n\\lim_{x\\to1^-} f(x)=a+2=f(1)=4$, so $a=2$.\nFor $x<1$, $f(x)=x+1+a$, giving $f'_-(1)=1$, while $f'_+(1)=3$.\nSince the one-sided derivatives are unequal, $f$ is not differentiable at $x=1$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For what value of $a$ is $f$ continuous at $x=1$, and is it differentiable there? $\\displaystyle f(x)=\\begin{cases}\\dfrac{x^2-1}{x-1}+a,&x<1,\\\\3x+1,&x\\ge1.\\end{cases}$",
+  "options": [
+   "$a=2$, and $f$ is not differentiable at $x=1$",
+   "$a=2$, and $f$ is differentiable at $x=1$",
+   "$a=3$, and $f$ is not differentiable at $x=1$",
+   "$a=4$, and $f$ is differentiable at $x=1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$\\lim_{x\\to1^-}f(x)=2+a=f(1)=4\\Rightarrow a=2$. For $x<1$, $f(x)=x+1+a$, so $f'_-(1)=1$; $f'_+(1)=3$. Since $f'_-(1)\\ne f'_+(1)$, $f$ is not differentiable at $1$.",
+  "distractor_notes": "B assumes continuity guarantees differentiability; C gives an incorrect continuity match; D confuses the function value at the join with the parameter."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

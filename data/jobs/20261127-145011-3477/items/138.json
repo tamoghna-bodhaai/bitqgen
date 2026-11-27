@@ -1,0 +1,71 @@
+{
+ "qno": 138,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 138,
+  "section": "Mathematics",
+  "chapter": "Differential Calculus",
+  "subtopic": "Maxima and minima",
+  "archetype": "simplify then differentiate",
+  "brief": "Find local maxima/minima of a cubic or a trig-rational function: differentiate, solve f'(x)=0, classify with sign of f''",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:116",
+   "2022:125",
+   "2026s1:124"
+  ],
+  "origin": "variant",
+  "bank_ref": "g8d283d0db846"
+ },
+ "status": "ok",
+ "stem": "For $x\\ne 0$, the function $f(x)=\\dfrac{2x^4+3x^3-120x^2+7x}{x}$ has a local maximum at which value of $x$?",
+ "options": [
+  "$5$",
+  "$-4$",
+  "$4$",
+  "$-5$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For x≠0, f(x)=2x³+3x²−120x+7. Then f′(x)=6(x+5)(x−4), so the critical points are −5 and 4. Since f″(−5)=−54<0, x=−5 is a local maximum.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f(x)=2x^3+3x^2-120x+7$, so $f'(x)=6(x+5)(x-4)=0$ gives $x=-5,4$. Since $f''(x)=12x+6$, $f''(-5)=-54<0$ and $f''(4)=54>0$; hence the local maximum occurs at $x=-5$.\n\nIndependent check: For x≠0, f(x)=2x³+3x²−120x+7. Then f′(x)=6(x+5)(x−4), so the critical points are −5 and 4. Since f″(−5)=−54<0, x=−5 is a local maximum.",
+ "solution": "For $x\\ne 0$, $f(x)=2x^3+3x^2-120x+7$, so $f'(x)=6(x+5)(x-4)$. At $x=-5$, $f''(x)=12x+6=-54<0$, hence $f$ has a local maximum there.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $x\\ne 0$, the function $f(x)=\\dfrac{2x^4+3x^3-120x^2+7x}{x}$ has a local maximum at which value of $x$?",
+  "options": [
+   "$-5$",
+   "$-4$",
+   "$4$",
+   "$5$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$f(x)=2x^3+3x^2-120x+7$, so $f'(x)=6(x+5)(x-4)=0$ gives $x=-5,4$. Since $f''(x)=12x+6$, $f''(-5)=-54<0$ and $f''(4)=54>0$; hence the local maximum occurs at $x=-5$.",
+  "distractor_notes": "B: Arithmetic error in solving the derivative equation. C: Identifies the local minimum instead. D: Loses the negative sign when solving $x+5=0$."
+ },
+ "variant_of": "g8d283d0db846",
+ "author_model": "openai/gpt-6-luna-pro"
+}

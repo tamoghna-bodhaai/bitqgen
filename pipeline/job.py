@@ -16,6 +16,7 @@ from __future__ import annotations
 import argparse
 import json
 import random
+import shutil
 import threading
 import time
 import traceback
@@ -55,6 +56,8 @@ class JobConfig(BaseModel):
     check_figures: bool = True
     export: bool = True
     add_to_bank: bool = True                  # append verified questions to data/bank (annotated)
+    source: str = "new"                       # new | direct | variant | mixed  (where questions come from)
+    mix: Optional[dict[str, int]] = None      # mixed: {"direct": %, "variant": %, "new": %} per section
 
 
 class Job:
@@ -133,7 +136,13 @@ class Job:
     @property
     def llm(self) -> LLM:
         if self._llm is None:
-            self._llm = LLM(self.cfg.profile)
+            llm = LLM(self.cfg.profile)
+            # carry over spend from earlier runs of this job (resume / regenerate in a new process or Job
+            # object), otherwise the first update() overwrites the saved total with this run's cost only
+            st = self.state()
+            llm.total_cost = float(st.get("cost") or 0.0)
+            llm.stats = json.loads(json.dumps(st.get("cost_by_stage") or {}))
+            self._llm = llm
         return self._llm
 
     # ------------------------------------------------------------------ pattern
@@ -175,6 +184,8 @@ class Job:
         else:
             bp = planner.plan(pat, seed=cfg.seed, difficulty=cfg.difficulty, llm=self.llm,
                               log=lambda m: self.log(m, stage="plan"))
+            if cfg.source != "new":
+                self._assign_sources(bp)
             bp_file.write_text(bp.model_dump_json(indent=1))
             todo = bp.slots
         self.update(progress={"total": len(bp.slots)}, stage="generating")
@@ -188,7 +199,7 @@ class Job:
         for s in todo:
             if s.passage_id:
                 rc.setdefault(s.passage_id, []).append(s)
-            elif s.lr_generator or cfg.batch_size <= 1:
+            elif s.lr_generator or cfg.batch_size <= 1 or s.origin != "new":
                 groups.append([s])
             else:  # same section + difficulty band -> one author call writes several (shared style guide)
                 batchable.setdefault((s.section, s.difficulty <= 2), []).append(s)
@@ -202,6 +213,9 @@ class Job:
                 f.result()
         if self.cancelled.is_set():
             return self._cancel()
+        refs = [s.bank_ref for s in bp.slots if s.bank_ref and s.origin in ("direct", "variant")]
+        if refs:
+            bank.mark_used(refs, self.id)
 
         # ---- critic + duplicate check -> one regeneration round
         items = self.load_items()
@@ -209,7 +223,8 @@ class Job:
         flags = finish.duplicate_flags([{"qno": i["qno"], "stem": i["stem"]} for i in items if i.get("stem")])
         redo.update(flags)
         for i in items:  # also keep away from questions already used in earlier generated papers
-            if i.get("stem") and not i["slot"].get("lr_generator") and i["qno"] not in redo:
+            if i.get("stem") and not i["slot"].get("lr_generator") and i["qno"] not in redo \
+                    and i.get("origin") != "bank":
                 bid, sc = bank.nearest(i["stem"])
                 if sc >= 0.6:
                     redo[i["qno"]] = f"too close to an earlier generated question ({bid}, similarity {sc:.2f})"
@@ -237,7 +252,7 @@ class Job:
                             redo[it.qno] = (redo.get(it.qno, "") + " " + it.problem).strip()
         by_q = {i["qno"]: i for i in items}
         redo = {q: r for q, r in redo.items() if q in by_q and not by_q[q]["slot"].get("lr_generator")
-                and not by_q[q]["slot"].get("passage_id")}
+                and not by_q[q]["slot"].get("passage_id") and by_q[q].get("origin") != "bank"}
         if redo:
             self.update(stage="revising")
             self.log(f"regenerating {len(redo)} question(s) flagged by critic/duplicate check", stage="revise")
@@ -297,7 +312,9 @@ class Job:
         if self.cancelled.is_set():
             return
         try:
-            if group[0].passage_id:
+            if group[0].origin == "direct":
+                self._run_direct(group[0])
+            elif group[0].passage_id:
                 self._run_rc(group)
             elif len(group) > 1:
                 self._run_batch(group)
@@ -341,6 +358,80 @@ class Job:
         items = self.load_items()
         self.update(progress={"done": len(items), "ok": sum(i["status"] == "ok" for i in items),
                               "flagged": sum(i["status"] != "ok" for i in items)})
+
+    # ------------------------------------------------------------------ question bank as a source
+    def _assign_sources(self, bp: Blueprint) -> None:
+        """Tag each slot direct / variant / new from cfg.source (or the per-section cfg.mix) and pick
+        the bank question it uses. Slots with no fitting bank question stay new."""
+        cfg = self.cfg
+        rng = random.Random(f"{cfg.seed}-source")
+        if cfg.source == "mixed":
+            mix = {k: max(0, int((cfg.mix or {}).get(k, 0))) for k in ("direct", "variant", "new")}
+        else:
+            mix = {"direct": 0, "variant": 0, "new": 0, cfg.source: 100}
+        tot = sum(mix.values()) or 1
+        taken: set[str] = set()
+        counts = {"direct": 0, "variant": 0, "new": 0, "fallback": 0}
+        by_sec: dict[str, list[Slot]] = {}
+        for s in bp.slots:
+            if not s.passage_id and not s.lr_generator:
+                by_sec.setdefault(s.section, []).append(s)
+        for sec, slots in by_sec.items():
+            n = len(slots)
+            nd = round(n * mix["direct"] / tot)
+            nv = min(n - nd, round(n * mix["variant"] / tot))
+            tags = ["direct"] * nd + ["variant"] * nv + ["new"] * (n - nd - nv)
+            rng.shuffle(tags)
+            for s, tag in zip(slots, tags):
+                if tag == "new":
+                    counts["new"] += 1
+                    continue
+                cands = bank.match(s, exclude=taken, need_figure_ok=(tag == "variant"))
+                if not cands:
+                    counts["fallback"] += 1
+                    continue
+                pick = cands[0] if tag == "direct" else rng.choice(cands[:5])
+                s.origin, s.bank_ref = tag, pick["id"]
+                taken.add(pick["id"])
+                counts[tag] += 1
+        self.log(f"question source {cfg.source}: {counts['direct']} from bank, {counts['variant']} bank variants, "
+                 f"{counts['new']} new" + (f", {counts['fallback']} new because the bank had no match"
+                                           if counts["fallback"] else ""), stage="plan")
+
+    def _run_direct(self, s: Slot) -> dict:
+        r = bank.get(s.bank_ref or "")
+        if r is None:
+            self.log(f"bank question {s.bank_ref} missing; writing a new one", stage="bank", qno=s.qno, level="warn")
+            s.origin, s.bank_ref = "new", None
+            return self._run_slot(s)
+
+        def fig(rel: Optional[str], tag: str) -> Optional[str]:
+            if not rel:
+                return None
+            src = bank.BANK / rel
+            dst = self.dir / "figs" / f"q{s.qno:03d}_bank_{tag}{src.suffix}"
+            if src.exists():
+                shutil.copy2(src, dst)
+            return str(dst.relative_to(self.dir))
+
+        it = self._base_item(s)
+        f = r.get("figure")
+        it.update(stem=r["stem"], options=list(r["options"]), answer=r["answer"], solution=r.get("solution", ""),
+                  working=r.get("working", ""), difficulty=r.get("difficulty") or s.difficulty, status="ok",
+                  attempts=0, origin="bank", bank_id=r["id"], author_model=r.get("author_model"),
+                  verdicts=[dict(v, stage=(v.get("stage") or "") + " (bank)")
+                            for v in (r.get("verification") or {}).get("solvers", [])],
+                  figure=({"path": fig(f.get("path"), "stem"), "kind": f.get("kind"), "width_pct": f.get("width_pct")}
+                          if f else None),
+                  option_figs=([fig(p, f"opt{'ABCD'[k]}") for k, p in enumerate(r["option_figs"])]
+                               if r.get("option_figs") else None))
+        for k in ("chapter", "subtopic", "archetype"):
+            if r.get(k):
+                it["slot"][k] = r[k]
+        it["notes"].append(f"from question bank {r['id']} (verified in job {r.get('job_id')})")
+        self.log(f"from bank {r['id']} ({r.get('chapter')})", stage="bank", qno=s.qno)
+        self.save_item(it)
+        return it
 
     def _base_item(self, s: Slot) -> dict:
         return {"qno": s.qno, "section": s.section, "slot": s.model_dump(), "status": "pending", "stem": "",
@@ -403,6 +494,9 @@ class Job:
         it = self._base_item(s)
         previous = DraftQuestion(**prev_item["draft"]) if prev_item and prev_item.get("draft") else None
         feedback = f"- Chief examiner: {critic_feedback}" if critic_feedback else None
+        seed_q = bank.get(s.bank_ref) if s.origin == "variant" and s.bank_ref else None
+        if seed_q:
+            it["variant_of"] = seed_q["id"]
         best = None
         for attempt in range(cfg.max_revisions + 1):
             if self.cancelled.is_set():
@@ -413,7 +507,8 @@ class Job:
                 it["author_model"] = prefetched_model
                 self.log("draft 1 from batch", stage="author", qno=s.qno)
             else:
-                res = author.write(self.llm, s, feedback=feedback, previous=previous, extra=extra)
+                res = author.write(self.llm, s, feedback=feedback, previous=previous, extra=extra,
+                                   seed_question=seed_q)
                 if res.data is None:
                     self.log(f"author returned no valid JSON (finish={res.finish_reason or '?'}; "
                              f"{(res.error or '')[:160]})", stage="author", qno=s.qno, level="warn")
@@ -424,6 +519,11 @@ class Job:
                 note = f"; {res.error[:60]}" if res.error else ""
                 self.log(f"draft {attempt + 1} by {res.model} (${res.cost:.3f}{note})", stage="author", qno=s.qno)
             errs = author.lint(d)
+            if seed_q:
+                bid, sc = bank.nearest(d.stem)
+                if sc >= 0.6:
+                    errs.append(f"too close to bank question {bid} (similarity {sc:.2f}) — change the setup, "
+                                "wording and numbers")
             if errs:
                 feedback, previous = "- " + "\n- ".join(errs), d
                 self.log("lint: " + "; ".join(errs), stage="author", qno=s.qno, level="warn")

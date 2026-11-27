@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Facing severe financial losses, the company decided to **bite the bullet** and downsize its operations.",
+ "stem": "During her first week at the firm, Meera **learned the ropes** by observing her experienced colleagues. What does the idiom mean?",
  "options": [
-  "Postpone an uncomfortable choice indefinitely",
-  "Accept a difficult and unavoidable situation",
-  "Take an unnecessary and reckless risk",
-  "Deny responsibility for impending failure"
+  "Took charge of the entire department",
+  "Understood how to perform the necessary tasks",
+  "Avoided doing any assigned work",
+  "Changed the rules of the workplace"
  ],
  "answer": "B",
  "figure": null,
@@ -33,11 +33,11 @@
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "'Bite the bullet' means to face and endure a painful, difficult situation that cannot be avoided. Context (severe losses forcing downsizing) matches accepting an unavoidable hardship, i.e., option B. A is opposite (postponing), C misreads it as recklessness, D is unrelated.",
-   "answer": "B",
-   "confidence": 0.99,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Learned the ropes” means learned how to do the job or perform its necessary tasks.",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The idiom 'to bite the bullet' means to face a grim, unpleasant, or painful situation with courage and fortitude because it cannot be avoided. In the given context, downsizing operations is a difficult but inevitable measure taken to handle severe financial losses, making option B the correct meaning.\n\nIndependent check: 'Bite the bullet' means to face and endure a painful, difficult situation that cannot be avoided. Context (severe losses forcing downsizing) matches accepting an unavoidable hardship, i.e., option B. A is opposite (postponing), C misreads it as recklessness, D is unrelated.",
- "solution": "",
+ "working": "“Learn the ropes” means to become familiar with how a job or activity is done. Observing experienced colleagues helps Meera understand her tasks; the other options describe taking charge, avoiding work, or changing rules.\n\nIndependent check: “Learned the ropes” means learned how to do the job or perform its necessary tasks.",
+ "solution": "“Learn the ropes” means becoming familiar with how a job or activity is done. By observing her colleagues, Meera understood how to perform the necessary tasks.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Facing severe financial losses, the company decided to **bite the bullet** and downsize its operations.",
+  "stem": "During her first week at the firm, Meera **learned the ropes** by observing her experienced colleagues. What does the idiom mean?",
   "options": [
-   "Postpone an uncomfortable choice indefinitely",
-   "Accept a difficult and unavoidable situation",
-   "Take an unnecessary and reckless risk",
-   "Deny responsibility for impending failure"
+   "Understood how to perform the necessary tasks",
+   "Took charge of the entire department",
+   "Avoided doing any assigned work",
+   "Changed the rules of the workplace"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The idiom 'to bite the bullet' means to face a grim, unpleasant, or painful situation with courage and fortitude because it cannot be avoided. In the given context, downsizing operations is a difficult but inevitable measure taken to handle severe financial losses, making option B the correct meaning.",
-  "distractor_notes": "Option A confuses the idiom with procrastination or 'kicking the can down the road'.\nOption C mistakes endurance of necessity for taking a gamble or reckless chance.\nOption D incorrectly interprets the phrase as dodging accountability or passing the buck.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "“Learn the ropes” means to become familiar with how a job or activity is done. Observing experienced colleagues helps Meera understand her tasks; the other options describe taking charge, avoiding work, or changing rules.",
+  "distractor_notes": "B: Confuses learning a role with leading a department. C: Suggests shirking rather than learning. D: Confuses learning procedures with altering them."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

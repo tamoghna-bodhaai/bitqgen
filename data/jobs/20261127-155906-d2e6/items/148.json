@@ -1,0 +1,70 @@
+{
+ "qno": 148,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 148,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Condition for intersecting lines",
+  "archetype": "determinant condition",
+  "brief": "Given two 3D lines with a parameter, find the value of the parameter for which they intersect (or check coplanarity via determinant = 0).",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:92",
+   "2026s1:118",
+   "2023s2:123"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For what value of $k$ do the lines $\\dfrac{x-1}{1}=\\dfrac{y+1}{2}=\\dfrac{z-2}{-1}$ and $\\dfrac{x-k}{2}=\\dfrac{y-1}{-1}=\\dfrac{z+1}{1}$ intersect?",
+ "options": [
+  "$-8$",
+  "$-6$",
+  "$6$",
+  "$8$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Parametrize the lines as (1+t, -1+2t, 2-t) and (k+2s, 1-s, -1+s). Matching y and z gives t=-1, s=4. Matching x then gives 0=k+8, so k=-8.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=(1,2,-1),\\ v=(2,-1,1),\\ B-A=(k-1,2,-3)$; $u\\times v=(1,-3,-5)$. $(B-A)\\cdot(u\\times v)=0\\Rightarrow(k-1)-6+15=0\\Rightarrow k=-8$. The direction vectors are not parallel, so the coplanar lines intersect.\n\nIndependent check: Parametrize the lines as (1+t, -1+2t, 2-t) and (k+2s, 1-s, -1+s). Matching y and z gives t=-1, s=4. Matching x then gives 0=k+8, so k=-8.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For what value of $k$ do the lines $\\dfrac{x-1}{1}=\\dfrac{y+1}{2}=\\dfrac{z-2}{-1}$ and $\\dfrac{x-k}{2}=\\dfrac{y-1}{-1}=\\dfrac{z+1}{1}$ intersect?",
+  "options": [
+   "$-8$",
+   "$-6$",
+   "$6$",
+   "$8$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$u=(1,2,-1),\\ v=(2,-1,1),\\ B-A=(k-1,2,-3)$; $u\\times v=(1,-3,-5)$. $(B-A)\\cdot(u\\times v)=0\\Rightarrow(k-1)-6+15=0\\Rightarrow k=-8$. The direction vectors are not parallel, so the coplanar lines intersect.",
+  "distractor_notes": "B: coordinate-subtraction error in $B-A$; C: sign error in the determinant condition; D: wrong sign of the parameter."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,70 @@
+{
+ "qno": 7,
+ "section": "Physics",
+ "slot": {
+  "qno": 7,
+  "section": "Physics",
+  "chapter": "Ray Optics",
+  "subtopic": "Prism combination (dispersion without deviation)",
+  "archetype": "two equations two unknowns",
+  "brief": "Two thin prisms of different materials and angles combined for no net deviation; set up deviation and dispersion conditions simultaneously to solve for the required prism angles and/or refractive indices.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:29",
+   "2022:1",
+   "2023s2:13"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two thin prisms are oppositely oriented. Their yellow-light refractive indices are $\\mu_A=1.5$ and $\\mu_B=1.6$, and their dispersive powers are $\\omega_A=0.04$ and $\\omega_B=0.02$, where $\\omega=(\\mu_v-\\mu_r)/(\\mu_y-1)$. If the mean deviation is zero and the net violet–red angular separation is $0.04^\\circ$, what are their apex angles $A_A$ and $A_B$?",
+ "options": [
+  "$\\left(3^\\circ,\\ 2.5^\\circ\\right)$",
+  "$\\left(4^\\circ,\\ \\dfrac{10}{3}^\\circ\\right)$",
+  "$\\left(4^\\circ,\\ 4^\\circ\\right)$",
+  "$\\left(8^\\circ,\\ \\dfrac{20}{3}^\\circ\\right)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Zero mean deviation gives 0.5A_A=0.6A_B, so A_B=5A_A/6. The net color separation is |0.04(0.5A_A)-0.02(0.6A_B)|=0.01A_A=0.04°, hence A_A=4° and A_B=10/3°.",
+   "answer": "B",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$0.5A_A=0.6A_B\\Rightarrow A_B=\\frac56A_A$. Net angular separation $=\\left[0.04(0.5)A_A-0.02(0.6)A_B\\right]=0.01A_A=0.04^\\circ$. Thus $A_A=4^\\circ$ and $A_B=\\frac{10}{3}^\\circ$.\n\nIndependent check: Zero mean deviation gives 0.5A_A=0.6A_B, so A_B=5A_A/6. The net color separation is |0.04(0.5A_A)-0.02(0.6A_B)|=0.01A_A=0.04°, hence A_A=4° and A_B=10/3°.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "Two thin prisms are oppositely oriented. Their yellow-light refractive indices are $\\mu_A=1.5$ and $\\mu_B=1.6$, and their dispersive powers are $\\omega_A=0.04$ and $\\omega_B=0.02$, where $\\omega=(\\mu_v-\\mu_r)/(\\mu_y-1)$. If the mean deviation is zero and the net violet–red angular separation is $0.04^\\circ$, what are their apex angles $A_A$ and $A_B$?",
+  "options": [
+   "$\\left(3^\\circ,\\ 2.5^\\circ\\right)$",
+   "$\\left(4^\\circ,\\ \\dfrac{10}{3}^\\circ\\right)$",
+   "$\\left(4^\\circ,\\ 4^\\circ\\right)$",
+   "$\\left(8^\\circ,\\ \\dfrac{20}{3}^\\circ\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$0.5A_A=0.6A_B\\Rightarrow A_B=\\frac56A_A$. Net angular separation $=\\left[0.04(0.5)A_A-0.02(0.6)A_B\\right]=0.01A_A=0.04^\\circ$. Thus $A_A=4^\\circ$ and $A_B=\\frac{10}{3}^\\circ$.",
+  "distractor_notes": "A: satisfies zero mean deviation but gives only $0.03^\\circ$ separation. C: does not cancel the mean deviations. D: doubles the specified angular separation while maintaining zero mean deviation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

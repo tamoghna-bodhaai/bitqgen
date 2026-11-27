@@ -1,0 +1,70 @@
+{
+ "qno": 60,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 60,
+  "section": "Chemistry",
+  "chapter": "Solutions",
+  "subtopic": "van 't Hoff factor",
+  "archetype": "colligative to structure",
+  "brief": "Given i for an electrolyte or compare i values across dissociation/association cases; ask which solution shows maximum boiling point elevation at same molality",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:53",
+   "2021:77",
+   "2022:57"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "At equal molality in the same solvent, which electrolyte solution has the greatest boiling-point elevation? The degree of dissociation, $\\alpha$, is given.",
+ "options": [
+  "$\\text{K}_2\\text{SO}_4$ ($\\alpha=0.50$)",
+  "$\\text{Na}_2\\text{SO}_4$ ($\\alpha=0.80$)",
+  "$\\text{CaCl}_2$ ($\\alpha=0.60$)",
+  "$\\text{AlCl}_3$ ($\\alpha=0.50$)"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For dissociation into n ions, i = 1 + α(n − 1). The van’t Hoff factors are A: 2.0, B: 2.6, C: 2.2, D: 2.5. Since ΔTb = iKb m, B has the greatest elevation.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta T_b=iK_bm$; at equal $K_b,m$, compare $i$. \n$\\text{K}_2\\text{SO}_4,\\text{Na}_2\\text{SO}_4,\\text{CaCl}_2$: $i=1+2\\alpha=2.00,2.60,2.20$. \n$\\text{AlCl}_3$: $i=1+3\\alpha=2.50$. \nMaximum: $i=2.60$.\n\nIndependent check: For dissociation into n ions, i = 1 + α(n − 1). The van’t Hoff factors are A: 2.0, B: 2.6, C: 2.2, D: 2.5. Since ΔTb = iKb m, B has the greatest elevation.",
+ "solution": "Boiling-point elevation is $4T_b=iK_bm4$, so at equal molality and in the same solvent, compare $i=1+\\alpha(n-1)$.\nFor (A), (B), (C), and (D), $i=2.00, 2.60, 2.20,$ and $2.50$, respectively.\nThe greatest value is $i=2.60$ for (B), $4\\text{Na}_2\\text{SO}_44$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "At equal molality in the same solvent, which electrolyte solution has the greatest boiling-point elevation? The degree of dissociation, $\\alpha$, is given.",
+  "options": [
+   "$\\text{K}_2\\text{SO}_4$ ($\\alpha=0.50$)",
+   "$\\text{Na}_2\\text{SO}_4$ ($\\alpha=0.80$)",
+   "$\\text{CaCl}_2$ ($\\alpha=0.60$)",
+   "$\\text{AlCl}_3$ ($\\alpha=0.50$)"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\Delta T_b=iK_bm$; at equal $K_b,m$, compare $i$. \n$\\text{K}_2\\text{SO}_4,\\text{Na}_2\\text{SO}_4,\\text{CaCl}_2$: $i=1+2\\alpha=2.00,2.60,2.20$. \n$\\text{AlCl}_3$: $i=1+3\\alpha=2.50$. \nMaximum: $i=2.60$.",
+  "distractor_notes": "A: Treats the dissociation as complete or overlooks the larger dissociation degree of B.\nC: Uses the wrong particle count or compares dissociation degrees alone.\nD: Applies the three-ion factor but overlooks that its $i$ is less than B's."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

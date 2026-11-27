@@ -1,0 +1,71 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Gravitational potential energy",
+  "archetype": "energy conservation",
+  "brief": "Find the minimum launch speed (or energy needed) for a body to escape from a planet's surface using energy conservation.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:24",
+   "2024s1:17",
+   "2021:28"
+  ],
+  "origin": "variant",
+  "bank_ref": "gfb045437f3b8"
+ },
+ "status": "ok",
+ "stem": "A probe is launched from the surface of a spherical planet. What is the minimum speed required for it to escape to infinity? The planet's surface gravity is $8$ m s$^{-2}$ and its radius is $1.0\\times10^6$ m.",
+ "options": [
+  "$2.0\\times10^3$ m s$^{-1}$",
+  "$4.0\\times10^3$ m s$^{-1}$",
+  "$2.8\\times10^3$ m s$^{-1}$",
+  "$8.0\\times10^3$ m s$^{-1}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using escape speed, \\(v_e=\\sqrt{2gR}=\\sqrt{2(8)(1.0\\times10^6)}=4.0\\times10^3\\ \\text{m s}^{-1}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac12mv_e^2=\\dfrac{GMm}{R}$\n$g=\\dfrac{GM}{R^2}\\Rightarrow v_e=\\sqrt{2gR}$\n$v_e=\\sqrt{2(8)(1.0\\times10^6)}=4.0\\times10^3$ m s$^{-1}$\n\nIndependent check: Using escape speed, \\(v_e=\\sqrt{2gR}=\\sqrt{2(8)(1.0\\times10^6)}=4.0\\times10^3\\ \\text{m s}^{-1}\\).",
+ "solution": "Using $g=GM/R^2$, the escape speed is\n$$v_e=\\sqrt{\\frac{2GM}{R}}=\\sqrt{2gR}=\\sqrt{2(8)(1.0\\times10^6)}=4.0\\times10^3\\ \\text{m s}^{-1}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A probe is launched from the surface of a spherical planet. What is the minimum speed required for it to escape to infinity? The planet's surface gravity is $8$ m s$^{-2}$ and its radius is $1.0\\times10^6$ m.",
+  "options": [
+   "$2.0\\times10^3$ m s$^{-1}$",
+   "$2.8\\times10^3$ m s$^{-1}$",
+   "$4.0\\times10^3$ m s$^{-1}$",
+   "$8.0\\times10^3$ m s$^{-1}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac12mv_e^2=\\dfrac{GMm}{R}$\n$g=\\dfrac{GM}{R^2}\\Rightarrow v_e=\\sqrt{2gR}$\n$v_e=\\sqrt{2(8)(1.0\\times10^6)}=4.0\\times10^3$ m s$^{-1}$",
+  "distractor_notes": "A: Uses an incorrect factor in the escape-speed relation. B: Omits the factor of $2$ under the square root. D: Doubles the correct escape speed."
+ },
+ "variant_of": "gfb045437f3b8",
+ "author_model": "openai/gpt-6-luna-pro"
+}

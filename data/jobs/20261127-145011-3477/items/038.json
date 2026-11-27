@@ -1,0 +1,71 @@
+{
+ "qno": 38,
+ "section": "Physics",
+ "slot": {
+  "qno": 38,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "de Broglie wavelength vs KE",
+  "archetype": "ratio comparison",
+  "brief": "Two particles (e.g. electron and proton) accelerated through the same potential difference; compare their de Broglie wavelengths using λ ∝ 1/√(mK).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:18",
+   "2021:17",
+   "2025s2:6"
+  ],
+  "origin": "variant",
+  "bank_ref": "gbdd33653c6f7"
+ },
+ "status": "ok",
+ "stem": "An $\\alpha$ particle and a proton, both initially at rest, are accelerated through the same potential difference. Taking their charges as $+2e$ and $+e$ and their masses as $4m_p$ and $m_p$, respectively, find the ratio of their de Broglie wavelengths, $\\dfrac{\\lambda_\\alpha}{\\lambda_p}$.",
+ "options": [
+  "$\\dfrac{1}{\\sqrt{2}}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{\\sqrt{8}}$",
+  "$\\sqrt{8}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For particles accelerated from rest, \\(\\lambda=h/\\sqrt{2mqV}\\). Thus \\(\\lambda_\\alpha/\\lambda_p=\\sqrt{(m_p e)/(4m_p\\cdot2e)}=1/\\sqrt8\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$ \n$\\dfrac{\\lambda_\\alpha}{\\lambda_p}=\\sqrt{\\dfrac{m_p e}{(4m_p)(2e)}}=\\dfrac{1}{\\sqrt{8}}$\n\nIndependent check: For particles accelerated from rest, \\(\\lambda=h/\\sqrt{2mqV}\\). Thus \\(\\lambda_\\alpha/\\lambda_p=\\sqrt{(m_p e)/(4m_p\\cdot2e)}=1/\\sqrt8\\).",
+ "solution": "For a particle accelerated from rest through potential difference $V$, $\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$.\n$$\\frac{\\lambda_\\alpha}{\\lambda_p}=\\sqrt{\\frac{m_p e}{(4m_p)(2e)}}=\\frac{1}{\\sqrt{8}}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An $\\alpha$ particle and a proton, both initially at rest, are accelerated through the same potential difference. Taking their charges as $+2e$ and $+e$ and their masses as $4m_p$ and $m_p$, respectively, find the ratio of their de Broglie wavelengths, $\\dfrac{\\lambda_\\alpha}{\\lambda_p}$.",
+  "options": [
+   "$\\dfrac{1}{\\sqrt{8}}$",
+   "$\\dfrac{1}{2}$",
+   "$\\dfrac{1}{\\sqrt{2}}$",
+   "$\\sqrt{8}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\lambda=\\dfrac{h}{\\sqrt{2mqV}}$ \n$\\dfrac{\\lambda_\\alpha}{\\lambda_p}=\\sqrt{\\dfrac{m_p e}{(4m_p)(2e)}}=\\dfrac{1}{\\sqrt{8}}$",
+  "distractor_notes": "B: ignores the alpha particle's double charge. C: uses the charge factor but misses the mass factor. D: takes the reciprocal of the correct ratio."
+ },
+ "variant_of": "gbdd33653c6f7",
+ "author_model": "openai/gpt-6-luna-pro"
+}

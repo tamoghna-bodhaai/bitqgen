@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary.\n\n1. Resolute\n2. Resonance\n3. Resilient\n4. Resonant\n5. Residual",
+ "stem": "Which of the following words appears first in an English dictionary?",
  "options": [
-  "5, 3, 1, 2, 4",
-  "3, 5, 1, 2, 4",
-  "5, 3, 1, 4, 2",
-  "3, 5, 1, 4, 2"
+  "Stare",
+  "Stark",
+  "Start",
+  "Starch"
  ],
- "answer": "A",
+ "answer": "D",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Alphabetical sort: Residual (resid) < Resilient (resil) < Resolute (resol) < Resonance (resonanc) < Resonant (resonant), giving 5, 3, 1, 2, 4.",
-   "answer": "A",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "All options begin with “Sta.” Comparing the next letter: Starch has “c,” which comes before “e,” “k,” and “t.”",
+   "answer": "D",
    "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
   }
  ],
- "attempts": 1,
+ "attempts": 2,
  "notes": [],
- "working": "All five words begin with the prefix 'Res-'. We compare their letters sequentially from left to right:\n\n1. At the 4th letter:\n   - Words 3 (Resilient) and 5 (Residual) have 'i'.\n   - Words 1 (Resolute), 2 (Resonance), and 4 (Resonant) have 'o'.\n   Since 'i' precedes 'o' in the alphabet, {3, 5} come before {1, 2, 4}.\n\n2. Comparing 3 and 5 at the 5th letter:\n   - In 'Residual', the 5th letter is 'd'.\n   - In 'Resilient', the 5th letter is 'l'.\n   Since 'd' comes before 'l', word 5 precedes word 3.\n   So, the first two words are 5, 3.\n\n3. Comparing 1, 2, and 4:\n   - At the 5th letter, 'Resolute' has 'l', while 'Resonance' and 'Resonant' have 'n'.\n   Since 'l' comes before 'n', word 1 comes next.\n   So the sequence begins: 5, 3, 1.\n\n4. Comparing 2 (Resonance) and 4 (Resonant):\n   - Both share 'Resonan-'.\n   - At the 8th letter, 'Resonance' has 'c', whereas 'Resonant' has 't'.\n   Since 'c' comes before 't', word 2 precedes word 4.\n\nHence, the correct dictionary order is: 5, 3, 1, 2, 4.\n\nIndependent check: Alphabetical sort: Residual (resid) < Resilient (resil) < Resolute (resol) < Resonance (resonanc) < Resonant (resonant), giving 5, 3, 1, 2, 4.",
+ "working": "All four begin with “star”. The fifth letters are e, k, t and c, respectively; c comes first alphabetically, so “Starch” appears first. The other options have later fifth letters.\n\nIndependent check: All options begin with “Sta.” Comparing the next letter: Starch has “c,” which comes before “e,” “k,” and “t.”",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Select the correct option that indicates the arrangement of the given words in the order in which they appear in an English dictionary.\n\n1. Resolute\n2. Resonance\n3. Resilient\n4. Resonant\n5. Residual",
+  "stem": "Which of the following words appears first in an English dictionary?",
   "options": [
-   "5, 3, 1, 2, 4",
-   "3, 5, 1, 2, 4",
-   "5, 3, 1, 4, 2",
-   "3, 5, 1, 4, 2"
+   "Stare",
+   "Stark",
+   "Start",
+   "Starch"
   ],
   "option_smiles": null,
-  "answer": "A",
-  "working": "All five words begin with the prefix 'Res-'. We compare their letters sequentially from left to right:\n\n1. At the 4th letter:\n   - Words 3 (Resilient) and 5 (Residual) have 'i'.\n   - Words 1 (Resolute), 2 (Resonance), and 4 (Resonant) have 'o'.\n   Since 'i' precedes 'o' in the alphabet, {3, 5} come before {1, 2, 4}.\n\n2. Comparing 3 and 5 at the 5th letter:\n   - In 'Residual', the 5th letter is 'd'.\n   - In 'Resilient', the 5th letter is 'l'.\n   Since 'd' comes before 'l', word 5 precedes word 3.\n   So, the first two words are 5, 3.\n\n3. Comparing 1, 2, and 4:\n   - At the 5th letter, 'Resolute' has 'l', while 'Resonance' and 'Resonant' have 'n'.\n   Since 'l' comes before 'n', word 1 comes next.\n   So the sequence begins: 5, 3, 1.\n\n4. Comparing 2 (Resonance) and 4 (Resonant):\n   - Both share 'Resonan-'.\n   - At the 8th letter, 'Resonance' has 'c', whereas 'Resonant' has 't'.\n   Since 'c' comes before 't', word 2 precedes word 4.\n\nHence, the correct dictionary order is: 5, 3, 1, 2, 4.",
-  "distractor_notes": "Option B mistakenly places 'Resilient' before 'Residual' by miscomparing 'l' and 'd'.\nOption C correctly places 5 and 3 first, but reverses the order of 'Resonance' and 'Resonant'.\nOption D combines both errors: swaps 3 and 5, and swaps 2 and 4.",
+  "answer": "D",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "All four begin with “star”. The fifth letters are e, k, t and c, respectively; c comes first alphabetically, so “Starch” appears first. The other options have later fifth letters.",
+  "distractor_notes": "A: e follows c. B: k follows c. C: t follows c."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

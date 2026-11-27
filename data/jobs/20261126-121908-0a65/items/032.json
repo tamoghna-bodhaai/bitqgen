@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "An electron is accelerated from rest through a potential difference $V$, having a de Broglie wavelength $\\lambda$. If the accelerating potential is increased to $4V$, its new de Broglie wavelength is",
+ "stem": "An electron starts from rest and is accelerated through a potential difference $V$, giving it a de Broglie wavelength $\\lambda$. A further potential difference $8V$ is applied in the same direction. Its wavelength after both accelerations is",
  "options": [
-  "$\\dfrac{\\lambda}{4}$",
-  "$\\dfrac{\\lambda}{2}$",
-  "$2\\lambda$",
-  "$4\\lambda$"
+  "$\\dfrac{\\lambda}{9}$",
+  "$\\dfrac{\\lambda}{3}$",
+  "$3\\lambda$",
+  "$9\\lambda$"
  ],
  "answer": "B",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "λ = h/√(2meV), so λ ∝ 1/√V. Increasing V to 4V gives λ' = λ/√4 = λ/2 (numeric check: ratio = 0.5). Non-relativistic assumption is standard for such problems.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "After the first acceleration, kinetic energy is eV. The additional 8V raises it to 9eV. Since de Broglie wavelength is inversely proportional to the square root of kinetic energy, the final wavelength is λ/3.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The de Broglie wavelength $\\lambda$ of a charged particle accelerated from rest through a potential difference $V$ is given by:\n$$\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2m q V}}$$\nFor an electron, $h$, $m$, and $q$ are constant, which gives the proportionality:\n$$\\lambda \\propto \\dfrac{1}{\\sqrt{V}}$$\nWhen the potential difference is increased from $V$ to $4V$, the new wavelength $\\lambda'$ is:\n$$\\lambda' = \\lambda \\sqrt{\\dfrac{V}{4V}} = \\dfrac{\\lambda}{2}$$\n\nIndependent check: λ = h/√(2meV), so λ ∝ 1/√V. Increasing V to 4V gives λ' = λ/√4 = λ/2 (numeric check: ratio = 0.5). Non-relativistic assumption is standard for such problems.",
+ "working": "$\\lambda \\propto \\dfrac{1}{\\sqrt{V}}$ for an electron accelerated from rest.\n$V_{\\mathrm{total}}=V+8V=9V$\n$\\lambda'=\\lambda\\sqrt{\\dfrac{V}{9V}}=\\dfrac{\\lambda}{3}$\n\nIndependent check: After the first acceleration, kinetic energy is eV. The additional 8V raises it to 9eV. Since de Broglie wavelength is inversely proportional to the square root of kinetic energy, the final wavelength is λ/3.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "An electron is accelerated from rest through a potential difference $V$, having a de Broglie wavelength $\\lambda$. If the accelerating potential is increased to $4V$, its new de Broglie wavelength is",
+  "stem": "An electron starts from rest and is accelerated through a potential difference $V$, giving it a de Broglie wavelength $\\lambda$. A further potential difference $8V$ is applied in the same direction. Its wavelength after both accelerations is",
   "options": [
-   "$\\dfrac{\\lambda}{4}$",
-   "$\\dfrac{\\lambda}{2}$",
-   "$2\\lambda$",
-   "$4\\lambda$"
+   "$\\dfrac{\\lambda}{9}$",
+   "$\\dfrac{\\lambda}{3}$",
+   "$3\\lambda$",
+   "$9\\lambda$"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "The de Broglie wavelength $\\lambda$ of a charged particle accelerated from rest through a potential difference $V$ is given by:\n$$\\lambda = \\dfrac{h}{p} = \\dfrac{h}{\\sqrt{2m q V}}$$\nFor an electron, $h$, $m$, and $q$ are constant, which gives the proportionality:\n$$\\lambda \\propto \\dfrac{1}{\\sqrt{V}}$$\nWhen the potential difference is increased from $V$ to $4V$, the new wavelength $\\lambda'$ is:\n$$\\lambda' = \\lambda \\sqrt{\\dfrac{V}{4V}} = \\dfrac{\\lambda}{2}$$",
-  "distractor_notes": "$\\dfrac{\\lambda}{4}$: Forgot the square root in the kinetic energy-momentum relation, assuming $\\lambda \\propto \\dfrac{1}{V}$.\n$2\\lambda$: Inverted the proportionality, assuming $\\lambda \\propto \\sqrt{V}$.\n$4\\lambda$: Inverted the proportionality and missed the square root, assuming $\\lambda \\propto V$.",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$\\lambda \\propto \\dfrac{1}{\\sqrt{V}}$ for an electron accelerated from rest.\n$V_{\\mathrm{total}}=V+8V=9V$\n$\\lambda'=\\lambda\\sqrt{\\dfrac{V}{9V}}=\\dfrac{\\lambda}{3}$",
+  "distractor_notes": "A: Uses an inverse-voltage rather than inverse-square-root dependence. C: Reverses the wavelength scaling. D: Uses direct proportionality to voltage."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

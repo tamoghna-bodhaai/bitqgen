@@ -1,0 +1,68 @@
+{
+ "qno": 124,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 124,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Domain of functions",
+  "archetype": "property check",
+  "brief": "Find the domain of a composite/square-root rational function as an intersection of conditions.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:91",
+   "2024s1:122",
+   "2024s2:119"
+  ]
+ },
+ "status": "ok",
+ "stem": "The domain of $f(x)=\\sqrt{\\dfrac{x^2-1}{x-2}}$ is",
+ "options": [
+  "$[-1,1]\\cup(2,\\infty)$",
+  "$(-\\infty,-1]\\cup(2,\\infty)$",
+  "$[-1,1]\\cup[2,\\infty)$",
+  "$(-1,1)\\cup(2,\\infty)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Factor the radicand as \\((x-1)(x+1)/(x-2)\\). It is nonnegative on \\([-1,1]\\) and \\((2,\\infty)\\); exclude \\(x=2\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\displaystyle \\frac{x^2-1}{x-2}=\\frac{(x-1)(x+1)}{x-2}\\geq0,\\quad x\\neq2$<br>Critical points: $-1,1,2$.<br>Sign is nonnegative on $[-1,1]$ and $(2,\\infty)$.\n\nIndependent check: Factor the radicand as \\((x-1)(x+1)/(x-2)\\). It is nonnegative on \\([-1,1]\\) and \\((2,\\infty)\\); exclude \\(x=2\\).",
+ "solution": "For the square root to be defined, the radicand must satisfy $\\dfrac{(x-1)(x+1)}{x-2}\\geq 0$, with $x\\neq 2$.\nThe critical points are $-1,1,2$; the expression is nonnegative on $[-1,1]$ and $(2,\\infty)$.\nHence the domain is $[-1,1]\\cup(2,\\infty)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The domain of $f(x)=\\sqrt{\\dfrac{x^2-1}{x-2}}$ is",
+  "options": [
+   "$[-1,1]\\cup(2,\\infty)$",
+   "$(-\\infty,-1]\\cup(2,\\infty)$",
+   "$[-1,1]\\cup[2,\\infty)$",
+   "$(-1,1)\\cup(2,\\infty)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\displaystyle \\frac{x^2-1}{x-2}=\\frac{(x-1)(x+1)}{x-2}\\geq0,\\quad x\\neq2$<br>Critical points: $-1,1,2$.<br>Sign is nonnegative on $[-1,1]$ and $(2,\\infty)$.",
+  "distractor_notes": "B: selects the wrong sign interval to the left of $-1$.<br>C: includes $x=2$, where the denominator is zero.<br>D: incorrectly excludes the zeros $x=-1$ and $x=1$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

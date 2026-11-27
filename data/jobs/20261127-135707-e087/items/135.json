@@ -1,0 +1,68 @@
+{
+ "qno": 135,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 135,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Sum and product of roots",
+  "archetype": "use root equation",
+  "brief": "Given a symmetric relation between roots of a quadratic, form the equation using sum and product of roots.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:91",
+   "2025s2:111",
+   "2023s2:127"
+  ]
+ },
+ "status": "ok",
+ "stem": "A monic quadratic has roots $\\alpha,\\beta$ satisfying $\\alpha^2+\\beta^2=7$, $\\alpha\\beta=3$ and $\\alpha+\\beta>0$. The quadratic is",
+ "options": [
+  "$x^2-\\sqrt{13}x+3=0$",
+  "$x^2+\\sqrt{13}x+3=0$",
+  "$x^2-\\sqrt{7}x+3=0$",
+  "$x^2-\\sqrt{13}x-3=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let s=α+β and p=αβ=3. Then s²=α²+β²+2p=7+6=13, so s=√13 since s>0. The monic quadratic is x²−sx+p.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$(\\alpha+\\beta)^2=\\alpha^2+\\beta^2+2\\alpha\\beta=7+6=13$$\n$\\alpha+\\beta=\\sqrt{13}$.\nThe monic quadratic is $x^2-(\\alpha+\\beta)x+\\alpha\\beta=0$, hence $x^2-\\sqrt{13}x+3=0$.\n\nIndependent check: Let s=α+β and p=αβ=3. Then s²=α²+β²+2p=7+6=13, so s=√13 since s>0. The monic quadratic is x²−sx+p.",
+ "solution": "Using $(\\alpha+\\beta)^2=\\alpha^2+\\beta^2+2\\alpha\\beta$,\n$$ (\\alpha+\\beta)^2=7+2(3)=13,\\qquad \\alpha+\\beta=\\sqrt{13} $$\nThe monic quadratic is $x^2-(\\alpha+\\beta)x+\\alpha\\beta=0$, hence $x^2-\\sqrt{13}x+3=0$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A monic quadratic has roots $\\alpha,\\beta$ satisfying $\\alpha^2+\\beta^2=7$, $\\alpha\\beta=3$ and $\\alpha+\\beta>0$. The quadratic is",
+  "options": [
+   "$x^2-\\sqrt{13}x+3=0$",
+   "$x^2+\\sqrt{13}x+3=0$",
+   "$x^2-\\sqrt{7}x+3=0$",
+   "$x^2-\\sqrt{13}x-3=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$$(\\alpha+\\beta)^2=\\alpha^2+\\beta^2+2\\alpha\\beta=7+6=13$$\n$\\alpha+\\beta=\\sqrt{13}$.\nThe monic quadratic is $x^2-(\\alpha+\\beta)x+\\alpha\\beta=0$, hence $x^2-\\sqrt{13}x+3=0$.",
+  "distractor_notes": "B: Uses the negative value for the sum of the roots.\nC: Mistakes $\\alpha^2+\\beta^2$ for $(\\alpha+\\beta)^2$.\nD: Uses the wrong sign for the product of the roots."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

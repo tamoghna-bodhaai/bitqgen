@@ -1,0 +1,70 @@
+{
+ "qno": 117,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 117,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "complete-the-square",
+  "brief": "Given a general second-degree equation in x, y, complete the square to find the centre and radius of the circle it represents",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:150",
+   "2026s2:111",
+   "2026s1:111"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The equation $x^2+y^2-6x+4y-12=0$ represents a circle. Its centre and radius are",
+ "options": [
+  "$((-3,-2),5)$",
+  "$((-3,2),5)$",
+  "$((3,-2),4)$",
+  "$((3,-2),5)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Completing the squares gives (x-3)^2+(y+2)^2=25, so the centre is (3,-2) and the radius is 5.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(x-3)^2-9+(y+2)^2-4-12=0$; $(x-3)^2+(y+2)^2=25$. Centre $(3,-2)$; radius $5$.\n\nIndependent check: Completing the squares gives (x-3)^2+(y+2)^2=25, so the centre is (3,-2) and the radius is 5.",
+ "solution": "Completing the squares,\n$$x^2+y^2-6x+4y-12=0\\implies (x-3)^2+(y+2)^2=25.$$\nComparing with $(x-h)^2+(y-k)^2=r^2$, the centre is $(3,-2)$ and the radius is $5$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation $x^2+y^2-6x+4y-12=0$ represents a circle. Its centre and radius are",
+  "options": [
+   "$((3,-2),5)$",
+   "$((-3,2),5)$",
+   "$((3,-2),4)$",
+   "$((-3,-2),5)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$(x-3)^2-9+(y+2)^2-4-12=0$; $(x-3)^2+(y+2)^2=25$. Centre $(3,-2)$; radius $5$.",
+  "distractor_notes": "B: incorrect signs for the centre coordinates. C: incorrect radius. D: incorrect sign for the $x$-coordinate of the centre."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

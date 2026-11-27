@@ -1,0 +1,71 @@
+{
+ "qno": 126,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 126,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Direction cosines",
+  "archetype": "sum of squares identity",
+  "brief": "Given two direction cosines (or a ratio condition), find the third using l² + m² + n² = 1, with attention to sign.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:128",
+   "2023s2:123",
+   "2025s2:117"
+  ],
+  "origin": "variant",
+  "bank_ref": "gaf8bf386ad4c"
+ },
+ "status": "ok",
+ "stem": "A line has direction cosines $l=\\dfrac{1}{3}$ and $m=\\dfrac{2}{3}$, and makes an obtuse angle with the positive $z$-axis. Find $n$.",
+ "options": [
+  "$\\dfrac{\\sqrt{5}}{3}$",
+  "$\\dfrac{2}{3}$",
+  "$-\\dfrac{\\sqrt{5}}{3}$",
+  "$-\\dfrac{2}{3}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since l² + m² + n² = 1, n² = 1 − 1/9 − 4/9 = 4/9. The angle with the positive z-axis is obtuse, so n < 0; hence n = −2/3.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$l^2+m^2+n^2=1$\n\nIndependent check: Since l² + m² + n² = 1, n² = 1 − 1/9 − 4/9 = 4/9. The angle with the positive z-axis is obtuse, so n < 0; hence n = −2/3.",
+ "solution": "Direction cosines satisfy $l^2+m^2+n^2=1$. Thus $$n^2=1-\\left(\\frac{1}{3}\\right)^2-\\left(\\frac{2}{3}\\right)^2=\\frac{4}{9}.$$ Since the angle with the positive $z$-axis is obtuse, $n<0$, so $n=-\\frac{2}{3}$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A line has direction cosines $l=\\dfrac{1}{3}$ and $m=\\dfrac{2}{3}$, and makes an obtuse angle with the positive $z$-axis. Find $n$.",
+  "options": [
+   "$-\\dfrac{2}{3}$",
+   "$\\dfrac{2}{3}$",
+   "$-\\dfrac{\\sqrt{5}}{3}$",
+   "$\\dfrac{\\sqrt{5}}{3}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$l^2+m^2+n^2=1$",
+  "distractor_notes": "B: correct magnitude but wrong sign; C: takes the square root of $l^2+m^2$ instead of $1-l^2-m^2$; D: same magnitude error and wrong sign."
+ },
+ "variant_of": "gaf8bf386ad4c",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "Four number pairs are given below, out of which three are alike in a certain way and one is different. Select the odd pair.",
+ "stem": "In three of the following number pairs, the second number is related to the first in the same way. Identify the odd pair.",
  "options": [
-  "7 : 56",
-  "11 : 132",
-  "13 : 156",
-  "17 : 306"
+  "14 : 19",
+  "26 : 34",
+  "37 : 48",
+  "48 : 60"
  ],
  "answer": "C",
  "figure": null,
@@ -33,35 +33,36 @@
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Pattern: second = n(n+1). 7×8=56 ✓, 11×12=132 ✓, 17×18=306 ✓; but 13×14=182≠156 (156=13×12=n(n−1)), so (C) breaks the rule.",
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "The differences are 5, 8, 11, and 12. In A, B, and D, the difference equals the sum of the digits of the first number; for C, 3+7=10, not 11.",
    "answer": "C",
-   "confidence": 0.97,
+   "confidence": 0.98,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "Let the pair of numbers be represented as $x : y$.\n\nExamine the relation between $x$ and $y$ in each option:\n- Option A ($7 : 56$): $y = 7^2 + 7 = 49 + 7 = 56$, or $y = 7 \\times (7 + 1) = 7 \\times 8 = 56$.\n- Option B ($11 : 132$): $y = 11^2 + 11 = 121 + 11 = 132$, or $y = 11 \\times (11 + 1) = 11 \\times 12 = 132$.\n- Option D ($17 : 306$): $y = 17^2 + 17 = 289 + 17 = 306$, or $y = 17 \\times (17 + 1) = 17 \\times 18 = 306$.\n\nIn options A, B, and D, the second number is given by $y = x^2 + x = x(x + 1)$, which also means that $y - x = x^2$.\n\nIn Option C ($13 : 156$):\n$13^2 + 13 = 169 + 13 = 182 \\neq 156$.\nInstead, $156 = 13^2 - 13 = 13 \\times (13 - 1) = 13 \\times 12$.\n\nThus, the pair $13 : 156$ violates the common rule followed by the other three pairs.\n\nIndependent check: Pattern: second = n(n+1). 7×8=56 ✓, 11×12=132 ✓, 17×18=306 ✓; but 13×14=182≠156 (156=13×12=n(n−1)), so (C) breaks the rule.",
+ "working": "For each pair, add the digits of the first number to that number: $14+1+4=19$, $26+2+6=34$, and $48+4+8=60$. For $37$, the result should be $47$, not $48$.\n\nIndependent check: The differences are 5, 8, 11, and 12. In A, B, and D, the difference equals the sum of the digits of the first number; for C, 3+7=10, not 11.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Four number pairs are given below, out of which three are alike in a certain way and one is different. Select the odd pair.",
+  "stem": "In three of the following number pairs, the second number is related to the first in the same way. Identify the odd pair.",
   "options": [
-   "7 : 56",
-   "11 : 132",
-   "13 : 156",
-   "17 : 306"
+   "14 : 19",
+   "26 : 34",
+   "37 : 48",
+   "48 : 60"
   ],
   "option_smiles": null,
   "answer": "C",
-  "working": "Let the pair of numbers be represented as $x : y$.\n\nExamine the relation between $x$ and $y$ in each option:\n- Option A ($7 : 56$): $y = 7^2 + 7 = 49 + 7 = 56$, or $y = 7 \\times (7 + 1) = 7 \\times 8 = 56$.\n- Option B ($11 : 132$): $y = 11^2 + 11 = 121 + 11 = 132$, or $y = 11 \\times (11 + 1) = 11 \\times 12 = 132$.\n- Option D ($17 : 306$): $y = 17^2 + 17 = 289 + 17 = 306$, or $y = 17 \\times (17 + 1) = 17 \\times 18 = 306$.\n\nIn options A, B, and D, the second number is given by $y = x^2 + x = x(x + 1)$, which also means that $y - x = x^2$.\n\nIn Option C ($13 : 156$):\n$13^2 + 13 = 169 + 13 = 182 \\neq 156$.\nInstead, $156 = 13^2 - 13 = 13 \\times (13 - 1) = 13 \\times 12$.\n\nThus, the pair $13 : 156$ violates the common rule followed by the other three pairs.",
-  "distractor_notes": "Option A follows the pattern $x : x(x + 1)$ since $7 \\times 8 = 56$.\nOption B follows the pattern $x : x(x + 1)$ since $11 \\times 12 = 132$.\nOption D follows the pattern $x : x(x + 1)$ since $17 \\times 18 = 306$.",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "For each pair, add the digits of the first number to that number: $14+1+4=19$, $26+2+6=34$, and $48+4+8=60$. For $37$, the result should be $47$, not $48$.",
+  "distractor_notes": "A: Follows the rule; B: Follows the rule; D: Follows the rule."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

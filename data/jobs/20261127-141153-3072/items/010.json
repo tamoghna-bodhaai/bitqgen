@@ -1,0 +1,68 @@
+{
+ "qno": 10,
+ "section": "Physics",
+ "slot": {
+  "qno": 10,
+  "section": "Physics",
+  "chapter": "Units and Measurements",
+  "subtopic": "Propagation of errors",
+  "archetype": "error propagation",
+  "brief": "A quantity computed from measured variables (e.g., density from mass and radius); given percentage errors, find the maximum percentage error in the result.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:10",
+   "2023s2:21",
+   "2023s1:2"
+  ]
+ },
+ "status": "ok",
+ "stem": "The density of a sphere is calculated from its measured mass $m$ and radius $r$ using $\\rho=\\dfrac{3m}{4\\pi r^3}$. If the percentage errors in $m$ and $r$ are $2\\%$ and $1\\%$, respectively, what is the maximum percentage error in $\\rho$?",
+ "options": [
+  "$3\\%$",
+  "$5\\%$",
+  "$4\\%$",
+  "$6\\%$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For \\(\\rho\\propto m r^{-3}\\), the maximum percentage error is \\(2\\%+3(1\\%)=5\\%\\).",
+   "answer": "C",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\dfrac{\\Delta\\rho}{\\rho}\\times100\\%=\\dfrac{\\Delta m}{m}\\times100\\%+3\\dfrac{\\Delta r}{r}\\times100\\%=2\\%+3(1\\%)=5\\%$\n\nIndependent check: For \\(\\rho\\propto m r^{-3}\\), the maximum percentage error is \\(2\\%+3(1\\%)=5\\%\\).",
+ "solution": "For $\\rho\\propto mr^{-3}$, the maximum fractional error is $\\dfrac{\\Delta\\rho}{\\rho}=\\dfrac{\\Delta m}{m}+3\\dfrac{\\Delta r}{r}$.\nThus, maximum percentage error $=2\\%+3(1\\%)=5\\%$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The density of a sphere is calculated from its measured mass $m$ and radius $r$ using $\\rho=\\dfrac{3m}{4\\pi r^3}$. If the percentage errors in $m$ and $r$ are $2\\%$ and $1\\%$, respectively, what is the maximum percentage error in $\\rho$?",
+  "options": [
+   "$3\\%$",
+   "$4\\%$",
+   "$5\\%$",
+   "$6\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\dfrac{\\Delta\\rho}{\\rho}\\times100\\%=\\dfrac{\\Delta m}{m}\\times100\\%+3\\dfrac{\\Delta r}{r}\\times100\\%=2\\%+3(1\\%)=5\\%$",
+  "distractor_notes": "A: subtracts the radius contribution. B: counts the radius error only twice. D: adds the errors without the correct exponent."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

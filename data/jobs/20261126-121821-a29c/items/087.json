@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Select the related number from the given alternatives:\n\n**FACE** : **21262422** :: **CALM** : **?**",
+ "stem": "Given **ACE : 1-6-15**, select the number group related to **BDF** by the same rule.",
  "options": [
-  "23251413",
-  "24261514",
-  "14152624",
-  "311213"
+  "2-8-18",
+  "2-4-6",
+  "3-8-18",
+  "2-12-30"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Code each letter by its reverse-alphabet position (27 − position): F=21, A=26, C=24, E=22 → 21262422. For CALM: C=24, A=26, L=15, M=14 → 24261514.",
-   "answer": "B",
-   "confidence": 1.0,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Letter positions: A,C,E = 1,3,5; multiplying by 1,2,3 gives 1,6,15. B,D,F = 2,4,6 gives 2,8,18.",
+   "answer": "A",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
-   "difficulty": 2
+   "difficulty": 1
   }
  ],
- "attempts": 2,
+ "attempts": 1,
  "notes": [],
- "working": "1. Analyze the relation in the first pair, **FACE : 21262422**:\n- Alphabetical positions from the beginning ($A=1, B=2, \\dots, Z=26$):\n  - $\\text{F} = 6$\n  - $\\text{A} = 1$\n  - $\\text{C} = 3$\n  - $\\text{E} = 5$\n- Twist in the mapping rule: Each letter is mapped to its reverse alphabetical position ($27 - \\text{position}$):\n  - $\\text{F} \\to 27 - 6 = 21$\n  - $\\text{A} \\to 27 - 1 = 26$\n  - $\\text{C} \\to 27 - 3 = 24$\n  - $\\text{E} \\to 27 - 5 = 22$\n- Concatenating these values yields $21262422$.\n\n2. Apply the identical rule to **CALM**:\n- Alphabetical positions:\n  - $\\text{C} = 3 \\implies 27 - 3 = 24$\n  - $\\text{A} = 1 \\implies 27 - 1 = 26$\n  - $\\text{L} = 12 \\implies 27 - 12 = 15$\n  - $\\text{M} = 13 \\implies 27 - 13 = 14$\n- Concatenating the numbers gives $24261514$.\n\nTherefore, the correct option is B.\n\nIndependent check: Code each letter by its reverse-alphabet position (27 − position): F=21, A=26, C=24, E=22 → 21262422. For CALM: C=24, A=26, L=15, M=14 → 24261514.",
- "solution": "",
+ "working": "For ACE, multiply each letter’s alphabet position by its place in the group: $1×1=1$, $3×2=6$, $5×3=15$. For BDF: $2×1=2$, $4×2=8$, $6×3=18$, giving 2-8-18. B uses unmultiplied positions; C and D apply an incorrect factor to one or more positions.\n\nIndependent check: Letter positions: A,C,E = 1,3,5; multiplying by 1,2,3 gives 1,6,15. B,D,F = 2,4,6 gives 2,8,18.",
+ "solution": "Multiply each letter’s alphabet position by its place in the group: $A,C,E \\to 1×1, 3×2, 5×3 = 1-6-15$.\nThus, $B,D,F \\to 2×1, 4×2, 6×3 = 2-8-18$.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Select the related number from the given alternatives:\n\n**FACE** : **21262422** :: **CALM** : **?**",
+  "stem": "Given **ACE : 1-6-15**, select the number group related to **BDF** by the same rule.",
   "options": [
-   "23251413",
-   "24261514",
-   "14152624",
-   "311213"
+   "2-8-18",
+   "2-4-6",
+   "3-8-18",
+   "2-12-30"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. Analyze the relation in the first pair, **FACE : 21262422**:\n- Alphabetical positions from the beginning ($A=1, B=2, \\dots, Z=26$):\n  - $\\text{F} = 6$\n  - $\\text{A} = 1$\n  - $\\text{C} = 3$\n  - $\\text{E} = 5$\n- Twist in the mapping rule: Each letter is mapped to its reverse alphabetical position ($27 - \\text{position}$):\n  - $\\text{F} \\to 27 - 6 = 21$\n  - $\\text{A} \\to 27 - 1 = 26$\n  - $\\text{C} \\to 27 - 3 = 24$\n  - $\\text{E} \\to 27 - 5 = 22$\n- Concatenating these values yields $21262422$.\n\n2. Apply the identical rule to **CALM**:\n- Alphabetical positions:\n  - $\\text{C} = 3 \\implies 27 - 3 = 24$\n  - $\\text{A} = 1 \\implies 27 - 1 = 26$\n  - $\\text{L} = 12 \\implies 27 - 12 = 15$\n  - $\\text{M} = 13 \\implies 27 - 13 = 14$\n- Concatenating the numbers gives $24261514$.\n\nTherefore, the correct option is B.",
-  "distractor_notes": "A: Subtracts letter positions from 26 instead of 27 (a common error when confusing total letters with the reverse-rank formula $27 - n$).\nC: Correctly uses reverse positions but writes them in reversed letter order (from right to left: M, L, A, C).\nD: Uses direct forward positional values ($C=3, A=1, L=12, M=13$), ignoring the reverse-rank transformation.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 3
- }
+  "difficulty_estimate": 3,
+  "working": "For ACE, multiply each letter’s alphabet position by its place in the group: $1×1=1$, $3×2=6$, $5×3=15$. For BDF: $2×1=2$, $4×2=8$, $6×3=18$, giving 2-8-18. B uses unmultiplied positions; C and D apply an incorrect factor to one or more positions.",
+  "distractor_notes": "B: Uses the letters’ alphabet positions without multiplying by their place in the group.\nC: Incorrectly changes the first value.\nD: Uses an incorrect multiplier for the second and third values."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

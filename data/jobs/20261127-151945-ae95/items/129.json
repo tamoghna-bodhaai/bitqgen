@@ -1,0 +1,71 @@
+{
+ "qno": 129,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 129,
+  "section": "Mathematics",
+  "chapter": "Sets, Relations and Functions",
+  "subtopic": "Range of rational functions",
+  "archetype": "discriminant method",
+  "brief": "Find the range of a rational function f(x) = (linear)/(quadratic) by setting y = f(x) and demanding real x (discriminant ≥ 0).",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:119",
+   "2026s1:91",
+   "2025s2:108"
+  ],
+  "origin": "variant",
+  "bank_ref": "gb2b24817d536"
+ },
+ "status": "ok",
+ "stem": "The range of the function $f(x)=\\dfrac{3x}{x^2+4}$, for $x\\in\\mathbb R$, is",
+ "options": [
+  "$\\left[-\\dfrac{3}{8},\\dfrac{3}{8}\\right]$",
+  "$(-\\infty,-\\dfrac{3}{4}]\\cup[\\dfrac{3}{4},\\infty)$",
+  "$[-3,3]$",
+  "$\\left[-\\dfrac{3}{4},\\dfrac{3}{4}\\right]$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since x²+4 ≥ 4|x|, |f(x)| ≤ 3/4. Equality occurs at x=±2, so the range is [−3/4, 3/4].",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y=\\dfrac{3x}{x^2+4}\\Rightarrow yx^2-3x+4y=0$\nFor real $x$: $\\Delta=9-16y^2\\ge 0$\n$\\Rightarrow -\\dfrac{3}{4}\\le y\\le\\dfrac{3}{4}$\n\nIndependent check: Since x²+4 ≥ 4|x|, |f(x)| ≤ 3/4. Equality occurs at x=±2, so the range is [−3/4, 3/4].",
+ "solution": "Let $y=\\dfrac{3x}{x^2+4}$. For real $x$, the quadratic $yx^2-3x+4y=0$ must have discriminant non-negative:\n$$9-16y^2\\ge 0\\quad\\Rightarrow\\quad -\\dfrac{3}{4}\\le y\\le\\dfrac{3}{4}.$$\nEquality is attained at $x=\\pm2$, so the range is $\\left[-\\dfrac{3}{4},\\dfrac{3}{4}\\right]$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The range of the function $f(x)=\\dfrac{3x}{x^2+4}$, for $x\\in\\mathbb R$, is",
+  "options": [
+   "$\\left[-\\dfrac{3}{4},\\dfrac{3}{4}\\right]$",
+   "$(-\\infty,-\\dfrac{3}{4}]\\cup[\\dfrac{3}{4},\\infty)$",
+   "$[-3,3]$",
+   "$\\left[-\\dfrac{3}{8},\\dfrac{3}{8}\\right]$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$y=\\dfrac{3x}{x^2+4}\\Rightarrow yx^2-3x+4y=0$\nFor real $x$: $\\Delta=9-16y^2\\ge 0$\n$\\Rightarrow -\\dfrac{3}{4}\\le y\\le\\dfrac{3}{4}$",
+  "distractor_notes": "B: reverses the discriminant inequality; C: omits the factor $4$ in the discriminant term; D: introduces an extra factor of $2$ in the bound."
+ },
+ "variant_of": "gb2b24817d536",
+ "author_model": "openai/gpt-6-luna-pro"
+}

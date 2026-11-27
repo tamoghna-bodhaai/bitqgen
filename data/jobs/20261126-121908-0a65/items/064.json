@@ -20,48 +20,49 @@
   ]
  },
  "status": "ok",
- "stem": "Transition metal ions in aqueous solution are coloured primarily due to \\_\\_\\_\\_\\_\\_, and the characteristic colour of $\\text{Cu}^{2+}(\\text{aq})$ is \\_\\_\\_\\_\\_\\_.",
+ "stem": "The colour of the hexaaquacobalt(II) ion, $[\\text{Co}(\\text{H}_2\\text{O})_6]^{2+}$, is due to which process?",
  "options": [
-  "$d\\text{--}d$ transition; green",
-  "$d\\text{--}d$ transition; blue",
-  "charge transfer; blue",
-  "charge transfer; green"
+  "Pink; $d$–$d$ transition",
+  "Blue; $d$–$d$ transition",
+  "Green; $d$–$d$ transition",
+  "Pink; charge-transfer transition"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Aqueous transition metal ions with partially filled d orbitals absorb visible light via d–d transitions (crystal field splitting). [Cu(H2O)6]2+ absorbs red/orange light and appears blue. Hence d–d transition; blue.",
-   "answer": "B",
-   "confidence": 0.98,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "[Co(H₂O)₆]²⁺ is pink because of d–d transitions.",
+   "answer": "A",
+   "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
   }
  ],
- "attempts": 1,
+ "attempts": 2,
  "notes": [],
- "working": "The colour of transition metal ions in aqueous solution arises from the absorption of visible light that promotes an electron from a lower-energy $d$-orbital to a higher-energy $d$-orbital within the ligand-field split $d$-subshell; this phenomenon is termed a $d\\text{--}d$ transition. The $\\text{Cu}^{2+}$ ion has a $3d^9$ electronic configuration (one unpaired electron). In aqueous solution, it forms the hydrated complex $[\\text{Cu}(\\text{H}_2\\text{O})_6]^{2+}$, which absorbs light in the red-orange region and transmits the complementary colour, appearing distinctly blue.\n\nIndependent check: Aqueous transition metal ions with partially filled d orbitals absorb visible light via d–d transitions (crystal field splitting). [Cu(H2O)6]2+ absorbs red/orange light and appears blue. Hence d–d transition; blue.",
+ "working": "$[\\text{Co}(\\text{H}_2\\text{O})_6]^{2+}$ is pink.\nIts partially filled $d$ subshell permits visible-light $d$–$d$ transitions.\n\nIndependent check: [Co(H₂O)₆]²⁺ is pink because of d–d transitions.",
  "solution": "",
  "locked": false,
  "difficulty": 1,
  "draft": {
-  "stem": "Transition metal ions in aqueous solution are coloured primarily due to \\_\\_\\_\\_\\_\\_, and the characteristic colour of $\\text{Cu}^{2+}(\\text{aq})$ is \\_\\_\\_\\_\\_\\_.",
+  "stem": "The colour of the hexaaquacobalt(II) ion, $[\\text{Co}(\\text{H}_2\\text{O})_6]^{2+}$, is due to which process?",
   "options": [
-   "$d\\text{--}d$ transition; green",
-   "$d\\text{--}d$ transition; blue",
-   "charge transfer; blue",
-   "charge transfer; green"
+   "Pink; $d$–$d$ transition",
+   "Blue; $d$–$d$ transition",
+   "Green; $d$–$d$ transition",
+   "Pink; charge-transfer transition"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "The colour of transition metal ions in aqueous solution arises from the absorption of visible light that promotes an electron from a lower-energy $d$-orbital to a higher-energy $d$-orbital within the ligand-field split $d$-subshell; this phenomenon is termed a $d\\text{--}d$ transition. The $\\text{Cu}^{2+}$ ion has a $3d^9$ electronic configuration (one unpaired electron). In aqueous solution, it forms the hydrated complex $[\\text{Cu}(\\text{H}_2\\text{O})_6]^{2+}$, which absorbs light in the red-orange region and transmits the complementary colour, appearing distinctly blue.",
-  "distractor_notes": "Option A: Correctly identifies the $d\\text{--}d$ transition mechanism but mistakes the colour of $\\text{Cu}^{2+}$ for green (which is typical of $\\text{Fe}^{2+}$ or $\\text{Ni}^{2+}$). Option C: Correctly identifies the blue colour of $\\text{Cu}^{2+}$, but confuses the cause of colour with charge transfer (which is responsible for colour in $d^0$ oxoanions like $\\text{MnO}_4^-$). Option D: Both the mechanism (charge transfer) and colour (green) are incorrect.",
+  "answer": "A",
   "figure": null,
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$[\\text{Co}(\\text{H}_2\\text{O})_6]^{2+}$ is pink.\nIts partially filled $d$ subshell permits visible-light $d$–$d$ transitions.",
+  "distractor_notes": "B: Confuses the pink hexaaqua ion with blue tetrahedral cobalt(II) complexes.\nC: Assigns the green colour typical of aqueous nickel(II).\nD: Gives the right colour but the wrong electronic process."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

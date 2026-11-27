@@ -1,0 +1,70 @@
+{
+ "qno": 143,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 143,
+  "section": "Mathematics",
+  "chapter": "Limits and Continuity",
+  "subtopic": "Differentiability of piecewise function",
+  "archetype": "piecewise check",
+  "brief": "Piecewise function with parameters k and m: enforce continuity and differentiability at the joint to solve for the constants",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:103",
+   "2024s1:100",
+   "2024s1:106"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Let $$f(x)=\\begin{cases}\\dfrac{e^{kx}-1}{x}+mx, & x<0,\\\\ x^2+5x+2, & x\\ge 0.\\end{cases}$$ If $f$ is continuous and differentiable at $x=0$, then $(k,m)$ is",
+ "options": [
+  "$(2,3)$",
+  "$(2,5)$",
+  "$(2,1)$",
+  "$(-2,3)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Continuity gives k=2. The right derivative at 0 is 5; the left derivative is k²/2+m=2+m, so m=3.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Continuity: $\\lim_{x\\to0^-}\\dfrac{e^{kx}-1}{x}=k=f(0)=2$. Left derivative: $\\dfrac{k^2}{2}+m$; right derivative: $5$. Hence $2+m=5\\Rightarrow m=3$.\n\nIndependent check: Continuity gives k=2. The right derivative at 0 is 5; the left derivative is k²/2+m=2+m, so m=3.",
+ "solution": "Continuity at $x=0$ gives $\\lim_{x\\to0^-}\\frac{e^{kx}-1}{x}=k=f(0)=2$, so $k=2$.\nThe left derivative is $\\frac{k^2}{2}+m$, while the right derivative is $5$.\n$$\\frac{2^2}{2}+m=5\\implies m=3$$\nThus $(k,m)=(2,3)$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Let $$f(x)=\\begin{cases}\\dfrac{e^{kx}-1}{x}+mx, & x<0,\\\\ x^2+5x+2, & x\\ge 0.\\end{cases}$$ If $f$ is continuous and differentiable at $x=0$, then $(k,m)$ is",
+  "options": [
+   "$(2,5)$",
+   "$(2,3)$",
+   "$(2,1)$",
+   "$(-2,3)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "Continuity: $\\lim_{x\\to0^-}\\dfrac{e^{kx}-1}{x}=k=f(0)=2$. Left derivative: $\\dfrac{k^2}{2}+m$; right derivative: $5$. Hence $2+m=5\\Rightarrow m=3$.",
+  "distractor_notes": "A: Omits the quotient’s contribution to the left derivative; C: Uses $k^2$ instead of $k^2/2$; D: Takes the continuity limit as $-k$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

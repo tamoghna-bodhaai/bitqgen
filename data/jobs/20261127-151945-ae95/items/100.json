@@ -1,0 +1,71 @@
+{
+ "qno": 100,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 100,
+  "section": "Logical Reasoning",
+  "chapter": "Letter / Number Series",
+  "subtopic": "Alpha-numeric series",
+  "archetype": "multi-component series",
+  "brief": "A series mixing letters and digits following a simple pattern (e.g., letter shifts +1, digit increases by 2); find the next term.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:86",
+   "2026s1:76",
+   "2026s2:87"
+  ],
+  "origin": "variant",
+  "bank_ref": "g1ed2c578d049"
+ },
+ "status": "ok",
+ "stem": "Find the missing term in the sequence: B4, D7, F10, __, J16.",
+ "options": [
+  "G13",
+  "H14",
+  "I13",
+  "H13"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "Letters advance by 2: B, D, F, H, J. Numbers advance by 3: 4, 7, 10, 13, 16. The missing term is H13.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Letters advance by 2 places: B, D, F, H, J. Digits increase by 3: 4, 7, 10, 13, 16. The missing term is H13. B changes the digit step; C changes the letter step; D uses the wrong letter.\n\nIndependent check: Letters advance by 2: B, D, F, H, J. Numbers advance by 3: 4, 7, 10, 13, 16. The missing term is H13.",
+ "solution": "The letters advance by 2 places and the numbers increase by 3: $B, D, F, H, J$ and $4, 7, 10, 13, 16$. Hence, the missing term is $H13$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Find the missing term in the sequence: B4, D7, F10, __, J16.",
+  "options": [
+   "H13",
+   "H14",
+   "I13",
+   "G13"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Letters advance by 2 places: B, D, F, H, J. Digits increase by 3: 4, 7, 10, 13, 16. The missing term is H13. B changes the digit step; C changes the letter step; D uses the wrong letter.",
+  "distractor_notes": "B: incorrect digit progression; C: incorrect letter progression; D: incorrect letter progression."
+ },
+ "variant_of": "g1ed2c578d049",
+ "author_model": "openai/gpt-6-luna"
+}

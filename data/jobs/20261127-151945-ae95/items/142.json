@@ -1,0 +1,71 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Quadratic Equations",
+  "subtopic": "Sum and product of roots",
+  "archetype": "use root equation",
+  "brief": "Given a quadratic with roots α, β and one root satisfying an extra condition (or given α + β and αβ), find the value of a requested symmetric expression or an unknown coefficient.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:110",
+   "2025s2:91",
+   "2025s1:124"
+  ],
+  "origin": "variant",
+  "bank_ref": "gf7c7edf81186"
+ },
+ "status": "ok",
+ "stem": "The roots of $x^2-9x+k=0$ are positive, and one is twice the other. Find $k$.",
+ "options": [
+  "$9$",
+  "$27$",
+  "$18$",
+  "$36$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the roots be $r$ and $2r$. Their sum is $9$, so $3r=9$ and the roots are $3,6$. Thus $k$ is their product, $18$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Let the roots be $t$ and $2t$.<br>$t+2t=9\\Rightarrow t=3$.<br>$k=t(2t)=18$.\n\nIndependent check: Let the roots be $r$ and $2r$. Their sum is $9$, so $3r=9$ and the roots are $3,6$. Thus $k$ is their product, $18$.",
+ "solution": "Let the positive roots be $t$ and $2t$. By the sum of roots, $t+2t=9$, so $t=3$.\n$$k=t(2t)=3\\cdot6=18$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The roots of $x^2-9x+k=0$ are positive, and one is twice the other. Find $k$.",
+  "options": [
+   "$9$",
+   "$18$",
+   "$27$",
+   "$36$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Let the roots be $t$ and $2t$.<br>$t+2t=9\\Rightarrow t=3$.<br>$k=t(2t)=18$.",
+  "distractor_notes": "A: Uses the sum of the roots as the product. C: Multiplies the larger root by the sum. D: Squares the larger root."
+ },
+ "variant_of": "gf7c7edf81186",
+ "author_model": "openai/gpt-6-luna-pro"
+}

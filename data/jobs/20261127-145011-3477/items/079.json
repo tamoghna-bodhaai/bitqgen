@@ -1,0 +1,70 @@
+{
+ "qno": 79,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 79,
+  "section": "Chemistry",
+  "chapter": "Haloalkanes and Haloarenes",
+  "subtopic": "Elimination followed by HBr addition",
+  "archetype": "reaction sequence product",
+  "brief": "Elimination followed by HBr addition (Markovnikov/anti-Markovnikov with peroxide): trace the final product through a two-step sequence",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:35",
+   "2021:42",
+   "2025s1:60"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The major alkene formed by heating 2-bromo-2-methylbutane with alcoholic KOH is treated with HBr in the presence of peroxide. What is the final major product?",
+ "options": [
+  "2-bromo-2-methylbutane",
+  "2-methylbutan-2-ol",
+  "1-bromo-2-methylbutane",
+  "2-bromo-3-methylbutane"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Alcoholic KOH gives the more substituted alkene, 2-methylbut-2-ene. With HBr/peroxide, anti-Markovnikov addition places Br on the less substituted alkene carbon, giving 2-bromo-3-methylbutane.",
+   "answer": "B",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Elimination gives the major alkene, 2-methylbut-2-ene. With HBr/peroxide, Br adds to the less substituted alkene carbon: product = 2-bromo-3-methylbutane.\n\nIndependent check: Alcoholic KOH gives the more substituted alkene, 2-methylbut-2-ene. With HBr/peroxide, anti-Markovnikov addition places Br on the less substituted alkene carbon, giving 2-bromo-3-methylbutane.",
+ "solution": "Alcoholic KOH gives the more substituted alkene, 2-methylbut-2-ene. With HBr in the presence of peroxide, anti-Markovnikov addition places Br on the less substituted carbon:\n$$\\mathrm{CH_3C(CH_3)=CHCH_3 \\xrightarrow{HBr,\\,peroxide} CH_3CH(CH_3)CH(Br)CH_3}$$\nThe product is 2-bromo-3-methylbutane.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The major alkene formed by heating 2-bromo-2-methylbutane with alcoholic KOH is treated with HBr in the presence of peroxide. What is the final major product?",
+  "options": [
+   "2-bromo-2-methylbutane",
+   "2-bromo-3-methylbutane",
+   "1-bromo-2-methylbutane",
+   "2-methylbutan-2-ol"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Elimination gives the major alkene, 2-methylbut-2-ene. With HBr/peroxide, Br adds to the less substituted alkene carbon: product = 2-bromo-3-methylbutane.",
+  "distractor_notes": "A applies Markovnikov addition; C gives the wrong carbon skeleton; D substitutes an alcohol for the expected bromide."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

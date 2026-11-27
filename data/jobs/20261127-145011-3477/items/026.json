@@ -1,0 +1,71 @@
+{
+ "qno": 26,
+ "section": "Physics",
+ "slot": {
+  "qno": 26,
+  "section": "Physics",
+  "chapter": "Wave Optics",
+  "subtopic": "YDSE fringe width",
+  "archetype": "single-formula numerical",
+  "brief": "Standard YDSE with given slit separation and screen distance; compute fringe width, or number of fringes in a given screen length.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:6",
+   "2023s1:5",
+   "2024s1:20"
+  ],
+  "origin": "variant",
+  "bank_ref": "gc78251cc98bf"
+ },
+ "status": "ok",
+ "stem": "In a Young’s double-slit experiment, light of wavelength $500$ nm is used with slit separation $0.20$ mm and a screen distance of $1.2$ m. How many fringe spacings fit in a screen segment of length $18$ mm?",
+ "options": [
+  "$2$",
+  "$4$",
+  "$8$",
+  "$6$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Fringe spacing: β = λD/d = (500×10⁻⁹)(1.2)/(0.20×10⁻³) = 3 mm. Thus 18 mm contains 18/3 = 6 spacings.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\beta=\\dfrac{\\lambda D}{d}=\\dfrac{(500\\times10^{-9})(1.2)}{0.20\\times10^{-3}}=3$ mm\n$N=\\dfrac{18}{3}=6$\n\nIndependent check: Fringe spacing: β = λD/d = (500×10⁻⁹)(1.2)/(0.20×10⁻³) = 3 mm. Thus 18 mm contains 18/3 = 6 spacings.",
+ "solution": "Fringe spacing is $\\beta=\\dfrac{\\lambda D}{d}=\\dfrac{(500\\times10^{-9})(1.2)}{0.20\\times10^{-3}}=3\\text{ mm}.$\nNumber of spacings in $18$ mm: $N=\\dfrac{18}{3}=6$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a Young’s double-slit experiment, light of wavelength $500$ nm is used with slit separation $0.20$ mm and a screen distance of $1.2$ m. How many fringe spacings fit in a screen segment of length $18$ mm?",
+  "options": [
+   "$2$",
+   "$4$",
+   "$6$",
+   "$8$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\beta=\\dfrac{\\lambda D}{d}=\\dfrac{(500\\times10^{-9})(1.2)}{0.20\\times10^{-3}}=3$ mm\n$N=\\dfrac{18}{3}=6$",
+  "distractor_notes": "A: overestimates fringe width by a factor of three. B: uses an incorrect fringe width of $4.5$ mm. D: uses an incorrect fringe width of $2.25$ mm."
+ },
+ "variant_of": "gc78251cc98bf",
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,68 @@
+{
+ "qno": 51,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 51,
+  "section": "Chemistry",
+  "chapter": "Biomolecules",
+  "subtopic": "Kiliani–Fischer and stereochemistry of sugars",
+  "archetype": "stereochemical outcome",
+  "brief": "Aldohexose undergoes Kiliani–Fischer chain extension; ask how many stereoisomeric products form, which pairs are epimers/diastereomers, and which are optically active — demanding stereo-reasoning.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:49",
+   "2024s1:37",
+   "2026s2:37"
+  ]
+ },
+ "status": "ok",
+ "stem": "An optically active aldohexose undergoes Kiliani–Fischer chain extension in its open-chain form, with its existing stereocentres retained. Which statement about the aldoheptose products is correct?",
+ "options": [
+  "Two products; C-2 epimers and diastereomers; both are optically active.",
+  "Two products; enantiomers; both are optically active.",
+  "Four products; two pairs of C-2 epimers; all are optically active.",
+  "Two products; C-7 epimers; both are optically inactive."
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Kiliani–Fischer extension creates a new stereocentre at C-2. Its two configurations give C-2 epimers; the retained stereocentres make them diastereomers, and both products are chiral.",
+   "answer": "A",
+   "confidence": 0.98,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "One new stereocentre at C-2 gives $2$ products; the existing centres are unchanged. Inversion only at C-2 gives epimers (hence diastereomers). Both retain chiral centres and are optically active.\n\nIndependent check: Kiliani–Fischer extension creates a new stereocentre at C-2. Its two configurations give C-2 epimers; the retained stereocentres make them diastereomers, and both products are chiral.",
+ "solution": "Kiliani–Fischer extension creates one new stereocentre at C-2, giving $2$ products while retaining the original stereocentres. They differ only at C-2, so they are epimers and hence diastereomers; both remain optically active.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "An optically active aldohexose undergoes Kiliani–Fischer chain extension in its open-chain form, with its existing stereocentres retained. Which statement about the aldoheptose products is correct?",
+  "options": [
+   "Two products; C-2 epimers and diastereomers; both are optically active.",
+   "Two products; enantiomers; both are optically active.",
+   "Four products; two pairs of C-2 epimers; all are optically active.",
+   "Two products; C-7 epimers; both are optically inactive."
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "One new stereocentre at C-2 gives $2$ products; the existing centres are unchanged. Inversion only at C-2 gives epimers (hence diastereomers). Both retain chiral centres and are optically active.",
+  "distractor_notes": "B: Confuses epimers with enantiomers. C: Counts extra products despite only one new stereocentre. D: Places the new stereocentre incorrectly and ignores chirality."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

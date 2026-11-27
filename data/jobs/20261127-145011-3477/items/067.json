@@ -1,0 +1,71 @@
+{
+ "qno": 67,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 67,
+  "section": "Chemistry",
+  "chapter": "Environmental Chemistry",
+  "subtopic": "Photochemical smog",
+  "archetype": "fact recall",
+  "brief": "Photochemical smog or ozone-depletion: which pollutants (NOx, CFCs, PAN) contribute and the reactions involved",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2021:41",
+   "2025s1:37",
+   "2023s2:47"
+  ],
+  "origin": "variant",
+  "bank_ref": "g39645b9ac465"
+ },
+ "status": "ok",
+ "stem": "In sunlight-driven urban air, which reaction sequence accounts for ozone formation in photochemical smog?",
+ "options": [
+  "$\\text{CF}_2\\text{Cl}_2 \\xrightarrow{h\\nu} \\text{CF}_2\\text{Cl} + \\text{Cl}$; $\\text{Cl} + \\text{O}_3 \\rightarrow \\text{ClO} + \\text{O}_2$",
+  "$\\text{O}_3 \\xrightarrow{h\\nu} \\text{O}_2 + \\text{O}$; $\\text{O} + \\text{O}_2 + \\text{M} \\rightarrow \\text{O}_3 + \\text{M}$",
+  "$\\text{NO} + \\text{O}_3 \\rightarrow \\text{NO}_2 + \\text{O}_2$; $\\text{NO}_2 \\xrightarrow{h\\nu} \\text{NO} + \\text{O}$",
+  "$\\text{NO}_2 \\xrightarrow{h\\nu} \\text{NO} + \\text{O}$; $\\text{O} + \\text{O}_2 + \\text{M} \\rightarrow \\text{O}_3 + \\text{M}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "NO₂ photolysis produces atomic O, which combines with O₂ in the presence of a third body M to form O₃. This is sequence (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{NO}_2 \\xrightarrow{h\\nu} \\text{NO} + \\text{O}$\n$\\text{O} + \\text{O}_2 + \\text{M} \\rightarrow \\text{O}_3 + \\text{M}$\n\nIndependent check: NO₂ photolysis produces atomic O, which combines with O₂ in the presence of a third body M to form O₃. This is sequence (A).",
+ "solution": "Photolysis of nitrogen dioxide produces atomic oxygen, which combines with molecular oxygen in the presence of a third body to form ozone:\n$$\\text{NO}_2 \\xrightarrow{h\\nu} \\text{NO} + \\text{O}, \\qquad \\text{O} + \\text{O}_2 + \\text{M} \\rightarrow \\text{O}_3 + \\text{M}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In sunlight-driven urban air, which reaction sequence accounts for ozone formation in photochemical smog?",
+  "options": [
+   "$\\text{NO}_2 \\xrightarrow{h\\nu} \\text{NO} + \\text{O}$; $\\text{O} + \\text{O}_2 + \\text{M} \\rightarrow \\text{O}_3 + \\text{M}$",
+   "$\\text{O}_3 \\xrightarrow{h\\nu} \\text{O}_2 + \\text{O}$; $\\text{O} + \\text{O}_2 + \\text{M} \\rightarrow \\text{O}_3 + \\text{M}$",
+   "$\\text{NO} + \\text{O}_3 \\rightarrow \\text{NO}_2 + \\text{O}_2$; $\\text{NO}_2 \\xrightarrow{h\\nu} \\text{NO} + \\text{O}$",
+   "$\\text{CF}_2\\text{Cl}_2 \\xrightarrow{h\\nu} \\text{CF}_2\\text{Cl} + \\text{Cl}$; $\\text{Cl} + \\text{O}_3 \\rightarrow \\text{ClO} + \\text{O}_2$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\text{NO}_2 \\xrightarrow{h\\nu} \\text{NO} + \\text{O}$\n$\\text{O} + \\text{O}_2 + \\text{M} \\rightarrow \\text{O}_3 + \\text{M}$",
+  "distractor_notes": "B: ozone photolysis followed by ozone re-formation, not the smog-forming sequence. C: ozone is consumed by NO. D: CFC-derived chlorine initiates ozone depletion."
+ },
+ "variant_of": "g39645b9ac465",
+ "author_model": "openai/gpt-6-luna-pro"
+}

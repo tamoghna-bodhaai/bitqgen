@@ -1,0 +1,70 @@
+{
+ "qno": 72,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 72,
+  "section": "Chemistry",
+  "chapter": "Chemical Bonding",
+  "subtopic": "Hybridisation and bond angle",
+  "archetype": "set comparison",
+  "brief": "Order given species by bond angle or bond length (e.g., NO2+/NO2/NO2– or NH3/PH3 series) using hybridisation/lone-pair logic",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:56",
+   "2023s2:50",
+   "2021:53"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Arrange $\\text{H}_2\\text{O}$, $\\text{NH}_3$ and $\\text{CH}_4$ in increasing order of bond angle.",
+ "options": [
+  "$\\text{H}_2\\text{O} < \\text{NH}_3 < \\text{CH}_4$",
+  "$\\text{NH}_3 < \\text{H}_2\\text{O} < \\text{CH}_4$",
+  "$\\text{CH}_4 < \\text{NH}_3 < \\text{H}_2\\text{O}$",
+  "$\\text{H}_2\\text{O} < \\text{CH}_4 < \\text{NH}_3$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Bond angles: H₂O ≈ 104.5°, NH₃ ≈ 107°, CH₄ = 109.5°. Thus H₂O < NH₃ < CH₄.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Lone-pair repulsion reduces bond angles: $\\text{H}_2\\text{O}$ ($2$ lone pairs) $< \\text{NH}_3$ ($1$ lone pair) $< \\text{CH}_4$ (no lone pairs).\n\nIndependent check: Bond angles: H₂O ≈ 104.5°, NH₃ ≈ 107°, CH₄ = 109.5°. Thus H₂O < NH₃ < CH₄.",
+ "solution": "Lone-pair repulsion reduces bond angles; more lone pairs cause greater compression.\n$\\text{H}_2\\text{O}$ has two lone pairs, $\\text{NH}_3$ has one, and $\\text{CH}_4$ has none.\nThus, increasing bond angle: $\\text{H}_2\\text{O} < \\text{NH}_3 < \\text{CH}_4$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Arrange $\\text{H}_2\\text{O}$, $\\text{NH}_3$ and $\\text{CH}_4$ in increasing order of bond angle.",
+  "options": [
+   "$\\text{H}_2\\text{O} < \\text{NH}_3 < \\text{CH}_4$",
+   "$\\text{NH}_3 < \\text{H}_2\\text{O} < \\text{CH}_4$",
+   "$\\text{CH}_4 < \\text{NH}_3 < \\text{H}_2\\text{O}$",
+   "$\\text{H}_2\\text{O} < \\text{CH}_4 < \\text{NH}_3$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Lone-pair repulsion reduces bond angles: $\\text{H}_2\\text{O}$ ($2$ lone pairs) $< \\text{NH}_3$ ($1$ lone pair) $< \\text{CH}_4$ (no lone pairs).",
+  "distractor_notes": "B reverses the relative angles of water and ammonia; C reverses the order; D places methane below ammonia."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

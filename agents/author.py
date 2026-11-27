@@ -84,14 +84,27 @@ def _slot_brief(slot: Slot) -> str:
     return "\n".join(lines)
 
 
+VARIANT_RULE = ("Write a NEW question that tests the same concept/skill at the target difficulty, but with a "
+                "different physical setup or context, different numbers, and a different unknown asked. Do not "
+                "reuse its sentences, its numbers or its option values.")
+
+
+def seed_block(rec: dict) -> str:
+    return ("Source question from our question bank (concept reference — the new question must be clearly "
+            "different):\n" + q_text(rec["stem"], rec["options"]) + f"\nKey: {rec.get('answer')}\n\n" + VARIANT_RULE)
+
+
 def write(llm: LLM, slot: Slot, *, feedback: Optional[str] = None,
-          previous: Optional[DraftQuestion] = None, extra: str = "") -> CallResult:
+          previous: Optional[DraftQuestion] = None, extra: str = "",
+          seed_question: Optional[dict] = None) -> CallResult:
     stage = stage_for(slot)
     system = prompt("author_pcm" if stage == "author_pcm" else "author_verbal").replace("{section}", slot.section)
     user = [_slot_brief(slot)]
     ex = exemplar_block(slot.exemplar_ids)
     if ex:
         user.append("Past BITSAT questions on this topic (style/level reference only — do NOT copy):\n\n" + ex)
+    if seed_question:
+        user.append(seed_block(seed_question))
     if previous is not None and feedback:
         user.append("Your previous draft:\n" + q_text(previous.stem, previous.options) +
                     f"\nIntended key: {previous.answer}\nYour working: {previous.working}")

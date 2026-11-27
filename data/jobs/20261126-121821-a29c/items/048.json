@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "The drug Equanil is widely prescribed for controlling depression and hypertension. It belongs to which of the following therapeutic classes?",
+ "stem": "Cimetidine is used mainly for which therapeutic purpose?",
  "options": [
-  "Analgesic",
-  "Antacid",
-  "Antihistamine",
-  "Tranquilizer"
+  "Relief of allergic symptoms",
+  "Reduction of gastric acid secretion",
+  "Relief of anxiety and stress",
+  "Relief of mild to moderate pain"
  ],
- "answer": "D",
+ "answer": "B",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Equanil is meprobamate, listed in NCERT 'Chemistry in Everyday Life' as a tranquilizer used for stress and mental tension (depression/hypertension relief). Not an analgesic, antacid, or antihistamine.",
-   "answer": "D",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cimetidine blocks H₂ receptors, reducing gastric acid secretion.",
+   "answer": "B",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "According to NCERT (Chemistry in Everyday Life), tranquilizers are neurologically active drugs used for the treatment of stress, anxiety, and mild to severe mental disorders. Specifically, Equanil is classified as a tranquilizer used for controlling depression and hypertension.\n- Analgesics (e.g., aspirin, paracetamol, morphine) reduce or abolish pain without causing loss of consciousness.\n- Antacids (e.g., cimetidine, ranitidine) neutralize or reduce the secretion of excess gastric acid.\n- Antihistamines (e.g., terfenadine, brompheniramine) block the action of histamine to suppress allergic reactions.\nTherefore, Equanil belongs to the class of tranquilizers.\n\nIndependent check: Equanil is meprobamate, listed in NCERT 'Chemistry in Everyday Life' as a tranquilizer used for stress and mental tension (depression/hypertension relief). Not an analgesic, antacid, or antihistamine.",
- "solution": "",
+ "working": "Cimetidine blocks histamine H$_2$ receptors in the stomach wall.\nThis reduces gastric acid secretion and is used in treating peptic ulcers.\n\nIndependent check: Cimetidine blocks H₂ receptors, reducing gastric acid secretion.",
+ "solution": "Cimetidine blocks histamine H$_2$ receptors in the stomach wall, reducing gastric acid secretion. It is used to treat peptic ulcers.",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "The drug Equanil is widely prescribed for controlling depression and hypertension. It belongs to which of the following therapeutic classes?",
+  "stem": "Cimetidine is used mainly for which therapeutic purpose?",
   "options": [
-   "Analgesic",
-   "Antacid",
-   "Antihistamine",
-   "Tranquilizer"
+   "Relief of allergic symptoms",
+   "Reduction of gastric acid secretion",
+   "Relief of anxiety and stress",
+   "Relief of mild to moderate pain"
   ],
   "option_smiles": null,
-  "answer": "D",
-  "working": "According to NCERT (Chemistry in Everyday Life), tranquilizers are neurologically active drugs used for the treatment of stress, anxiety, and mild to severe mental disorders. Specifically, Equanil is classified as a tranquilizer used for controlling depression and hypertension.\n- Analgesics (e.g., aspirin, paracetamol, morphine) reduce or abolish pain without causing loss of consciousness.\n- Antacids (e.g., cimetidine, ranitidine) neutralize or reduce the secretion of excess gastric acid.\n- Antihistamines (e.g., terfenadine, brompheniramine) block the action of histamine to suppress allergic reactions.\nTherefore, Equanil belongs to the class of tranquilizers.",
-  "distractor_notes": "Analgesic: Confuses Equanil with the other primary subclass of neurologically active drugs in NCERT, which are used to relieve pain.\nAntacid: Confuses Equanil with acid-suppressing agents like cimetidine or ranitidine.\nAntihistamine: Confuses the action of Equanil with anti-allergic receptor antagonists such as terfenadine or brompheniramine.",
+  "answer": "B",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "Cimetidine blocks histamine H$_2$ receptors in the stomach wall.\nThis reduces gastric acid secretion and is used in treating peptic ulcers.",
+  "distractor_notes": "A: confuses H$_2$ receptor blockade with antihistamine treatment of allergies. C: confuses it with a tranquilizer. D: confuses it with an analgesic."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

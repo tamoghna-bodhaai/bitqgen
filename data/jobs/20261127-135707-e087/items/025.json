@@ -1,0 +1,68 @@
+{
+ "qno": 25,
+ "section": "Physics",
+ "slot": {
+  "qno": 25,
+  "section": "Physics",
+  "chapter": "Thermodynamics",
+  "subtopic": "Work in cyclic process (P–V diagram)",
+  "archetype": "area of P–V cycle",
+  "brief": "A cycle composed of known segments (isobaric + isothermal/adiabatic) on a P–V diagram with numeric states; compute total work in cycle, heat in a branch, or efficiency using first law per branch.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:16",
+   "2025s1:5",
+   "2023s1:6"
+  ]
+ },
+ "status": "ok",
+ "stem": "One mole of a monatomic ideal gas follows the cycle $A\\to B\\to C\\to A$: $A\\to B$ is isochoric, with pressure rising from $P_0$ to $2P_0$; $B\\to C$ is isothermal expansion from $V_0$ to $2V_0$; $C\\to A$ is isobaric at $P_0$. If $P_0V_0=100$ J, what is the cycle efficiency?",
+ "options": [
+  "$13.4\\%$",
+  "$27.9\\%$",
+  "$38.6\\%$",
+  "$50.0\\%$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "States are A=(P0,V0), B=(2P0,V0), C=(P0,2V0). Net work is W=2P0V0 ln 2 − P0V0 = 38.6 J. Heat input is Qin=(3/2)P0V0 + 2P0V0 ln 2 = 288.6 J. Efficiency W/Qin = 13.4%.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 3
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$W_{BC}=2P_0V_0\\ln 2,\\quad W_{CA}=-P_0V_0$.\n$W_{\\rm net}=100(2\\ln 2-1)=38.6\\ \\text{J}$.\n$Q_{AB}=\\Delta U_{AB}=\\dfrac{3}{2}P_0V_0=150\\ \\text{J}$.\n$Q_{BC}=W_{BC}=2P_0V_0\\ln2=138.6\\ \\text{J}$.\n$\\eta=\\dfrac{W_{\\rm net}}{Q_{AB}+Q_{BC}}=0.134=13.4\\%$.\n\nIndependent check: States are A=(P0,V0), B=(2P0,V0), C=(P0,2V0). Net work is W=2P0V0 ln 2 − P0V0 = 38.6 J. Heat input is Qin=(3/2)P0V0 + 2P0V0 ln 2 = 288.6 J. Efficiency W/Qin = 13.4%.",
+ "solution": "For a complete cycle, $W_{\\rm net}=W_{BC}+W_{CA}=100(2\\ln 2-1)=38.6\\,\\text{J}$. Heat is absorbed during $AB$ and $BC$:\n$$Q_{\\rm in}=\\frac{3}{2}P_0V_0+2P_0V_0\\ln 2=288.6\\,\\text{J}.$$\nThus, $\\eta=W_{\\rm net}/Q_{\\rm in}=0.134=13.4\\%$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "One mole of a monatomic ideal gas follows the cycle $A\\to B\\to C\\to A$: $A\\to B$ is isochoric, with pressure rising from $P_0$ to $2P_0$; $B\\to C$ is isothermal expansion from $V_0$ to $2V_0$; $C\\to A$ is isobaric at $P_0$. If $P_0V_0=100$ J, what is the cycle efficiency?",
+  "options": [
+   "$13.4\\%$",
+   "$27.9\\%$",
+   "$38.6\\%$",
+   "$50.0\\%$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$W_{BC}=2P_0V_0\\ln 2,\\quad W_{CA}=-P_0V_0$.\n$W_{\\rm net}=100(2\\ln 2-1)=38.6\\ \\text{J}$.\n$Q_{AB}=\\Delta U_{AB}=\\dfrac{3}{2}P_0V_0=150\\ \\text{J}$.\n$Q_{BC}=W_{BC}=2P_0V_0\\ln2=138.6\\ \\text{J}$.\n$\\eta=\\dfrac{W_{\\rm net}}{Q_{AB}+Q_{BC}}=0.134=13.4\\%$.",
+  "distractor_notes": "B: Uses only the isothermal heat input as $Q_{\\rm in}$. C: Reports net work as a percentage of $P_0V_0$. D: Uses an incorrect heat input in the efficiency denominator."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

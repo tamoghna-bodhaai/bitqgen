@@ -1,0 +1,65 @@
+{
+ "qno": 54,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 54,
+  "section": "Chemistry",
+  "chapter": "Aldehydes, Ketones and Carboxylic Acids",
+  "subtopic": "Cannizzaro reaction",
+  "archetype": "reaction product (structures)",
+  "brief": "Cannizzaro reaction of a given aldehyde: identify which moiety becomes the alcohol and which the acid (no numbers)",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:36",
+   "2026s2:34",
+   "2022:36"
+  ],
+  "origin": "direct",
+  "bank_ref": "g5054b2795fcf"
+ },
+ "status": "ok",
+ "stem": "The aromatic aldehyde shown undergoes Cannizzaro reaction with concentrated alkali. After acidic work-up, which product pair is formed?",
+ "options": [
+  "4-fluorobenzyl alcohol + 4-fluorobenzyl alcohol",
+  "4-fluorobenzoic acid + 4-fluorobenzaldehyde",
+  "4-fluorobenzyl alcohol + 4-fluorobenzoic acid",
+  "3-fluorobenzyl alcohol + 3-fluorobenzoic acid"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q054_bank_stem.png",
+  "kind": "chem",
+  "width_pct": 32
+ },
+ "option_figs": [
+  "figs/q054_bank_optA.png",
+  "figs/q054_bank_optB.png",
+  "figs/q054_bank_optC.png",
+  "figs/q054_bank_optD.png"
+ ],
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "openai/gpt-6-luna-pro",
+   "answer": "C",
+   "confidence": 0.99
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g5054b2795fcf (verified in job 20261127-132448-d9ce)"
+ ],
+ "working": "Cannizzaro disproportionation: $2\\,\\text{ArCHO}+\\text{OH}^-\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOO}^-$.\\nAcidic work-up converts $\\text{ArCOO}^-$ to $\\text{ArCOOH}$; the para-F substituent is retained.\n\nIndependent check: The substrate is 4-fluorobenzaldehyde, which undergoes Cannizzaro disproportionation. Acidic work-up gives 4-fluorobenzyl alcohol and 4-fluorobenzoic acid.",
+ "solution": "Cannizzaro reaction disproportionates the aldehyde: $$2\\,\\text{ArCHO}+\\text{OH}^-\\rightarrow\\text{ArCH}_2\\text{OH}+\\text{ArCOO}^-.$$ Acidic work-up converts the carboxylate to the acid; the para-fluoro substituent is retained. Thus the products are 4-fluorobenzyl alcohol and 4-fluorobenzoic acid.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g5054b2795fcf",
+ "author_model": "openai/gpt-6-luna-pro"
+}

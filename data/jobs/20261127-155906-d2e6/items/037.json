@@ -1,0 +1,72 @@
+{
+ "qno": 37,
+ "section": "Physics",
+ "slot": {
+  "qno": 37,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Helical motion in magnetic field",
+  "archetype": "conceptual",
+  "brief": "A charged particle enters a uniform magnetic field at an oblique angle; high-rigour MCQ combining pitch (v∥T), radius (v⊥) and time period — e.g. find the pitch-to-radius ratio or the condition for the particle to re-enter at a specific point.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:30",
+   "2026s2:17",
+   "2021:21"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A charged particle moves helically in a uniform magnetic field, with its initial velocity making an angle $\\theta$ with the field. After two complete revolutions, its axial displacement equals the circumference of its circular projection. Find $\\theta$.",
+ "options": [
+  "$\\tan^{-1}\\left(\\dfrac{1}{2}\\right)$",
+  "$45^\\circ$",
+  "$60^\\circ$",
+  "$\\tan^{-1}(2)$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Cyclotron period is T=2π/ω. In two revolutions, axial displacement is 2v cosθ·T; the projected circle’s circumference is 2πv sinθ/ω. Equating gives tanθ=2, hence θ=tan⁻¹(2).",
+   "answer": "D",
+   "confidence": 0.96,
+   "multiple_correct": false,
+   "issues": [
+    "The angle range is unspecified; if axial displacement is interpreted as a distance, the supplementary angle also satisfies the condition, though it is not among the options."
+   ],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$p=v_{\\parallel}T,\\quad r=\\dfrac{v_{\\perp}T}{2\\pi}\\Rightarrow\\dfrac{p}{r}=2\\pi\\cot\\theta$.\n$2p=2\\pi r\\Rightarrow p=\\pi r\\Rightarrow2\\pi\\cot\\theta=\\pi$.\n$\\therefore\\ \\theta=\\tan^{-1}(2)$\n\nIndependent check: Cyclotron period is T=2π/ω. In two revolutions, axial displacement is 2v cosθ·T; the projected circle’s circumference is 2πv sinθ/ω. Equating gives tanθ=2, hence θ=tan⁻¹(2).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "A charged particle moves helically in a uniform magnetic field, with its initial velocity making an angle $\\theta$ with the field. After two complete revolutions, its axial displacement equals the circumference of its circular projection. Find $\\theta$.",
+  "options": [
+   "$\\tan^{-1}\\left(\\dfrac{1}{2}\\right)$",
+   "$45^\\circ$",
+   "$60^\\circ$",
+   "$\\tan^{-1}(2)$"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$p=v_{\\parallel}T,\\quad r=\\dfrac{v_{\\perp}T}{2\\pi}\\Rightarrow\\dfrac{p}{r}=2\\pi\\cot\\theta$.\n$2p=2\\pi r\\Rightarrow p=\\pi r\\Rightarrow2\\pi\\cot\\theta=\\pi$.\n$\\therefore\\ \\theta=\\tan^{-1}(2)$",
+  "distractor_notes": "A: interchanges tangent and cotangent. B: uses the circumference condition for one turn incorrectly. C: confuses the angle with its complementary angle."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

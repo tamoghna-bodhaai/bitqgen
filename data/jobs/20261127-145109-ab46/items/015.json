@@ -1,0 +1,78 @@
+{
+ "qno": 15,
+ "section": "Physics",
+ "slot": {
+  "qno": 15,
+  "section": "Physics",
+  "chapter": "Semiconductor Electronics",
+  "subtopic": "Logic gate combinations",
+  "archetype": "gate-circuit reduction",
+  "brief": "Show a circuit of two or three logic gates fed by given inputs; ask the final Boolean output or to identify the equivalent single gate.",
+  "difficulty": 4,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:6",
+   "2023s1:12",
+   "2026s1:24"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "For the circuit shown in the figure, which single logic gate has the same input-output relation?",
+ "options": [
+  "XNOR gate",
+  "OR gate",
+  "XOR gate",
+  "AND gate"
+ ],
+ "answer": "A",
+ "figure": {
+  "path": "figs/q015_stem_v0.png",
+  "width_pct": 70,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The upper gate gives ¬(A·B), and the lower gate gives A+B. The final NAND outputs ¬[¬(A·B)·(A+B)] = ¬(A⊕B), which is XNOR.",
+   "answer": "D",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Y=\\overline{\\overline{AB}(A+B)}$; $\\overline{AB}(A+B)=(A'+B')(A+B)=A'B+AB'$; hence $Y=AB+A'B'$, an XNOR.\n\nIndependent check: The upper gate gives ¬(A·B), and the lower gate gives A+B. The final NAND outputs ¬[¬(A·B)·(A+B)] = ¬(A⊕B), which is XNOR.",
+ "solution": "The upper gate gives $\\overline{AB}$ and the lower gate gives $A+B$. Hence,\n$$Y=\\overline{\\overline{AB}(A+B)}=\\overline{A'B+AB'}=AB+A'B',$$\nwhich is the XNOR relation.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For the circuit shown in the figure, which single logic gate has the same input-output relation?",
+  "options": [
+   "AND gate",
+   "OR gate",
+   "XOR gate",
+   "XNOR gate"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw two inputs labeled $A$ and $B$, each branching to both an upper NAND gate and a lower OR gate. Connect the outputs of these two gates to the inputs of a final NAND gate. Label its output $Y$. Use standard gate symbols, with an inversion bubble at each NAND output and no other bubbles.",
+   "smiles": null
+  },
+  "difficulty_estimate": 4,
+  "working": "$Y=\\overline{\\overline{AB}(A+B)}$; $\\overline{AB}(A+B)=(A'+B')(A+B)=A'B+AB'$; hence $Y=AB+A'B'$, an XNOR.",
+  "distractor_notes": "A: treats the final NAND as an AND; B: treats the parallel branches as a direct OR; C: identifies the expression before the final inversion as the output."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

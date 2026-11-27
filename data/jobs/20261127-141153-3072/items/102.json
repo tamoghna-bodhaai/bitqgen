@@ -1,0 +1,78 @@
+{
+ "qno": 102,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 102,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Dictionary order",
+  "archetype": "alphabetical ordering",
+  "brief": "Arrange four similar-spelled words as in a dictionary and identify which comes second or last.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:77",
+   "2025s2:87",
+   "2025s1:84"
+  ]
+ },
+ "status": "ok",
+ "stem": "Arrange the words <b>trace, trader, tract, track</b> in dictionary order. Which word comes second?",
+ "options": [
+  "track",
+  "trader",
+  "tract",
+  "trace"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "All begin with “tra.” “Trader” has d as its fourth letter, so it comes first. The remaining words sort by their fifth letters: e, k, t; hence “trace” comes second.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  },
+  {
+   "stage": "tiebreaker",
+   "model": "qwen/qwen4-max",
+   "working": "Common prefix 'tra'. 'trader' has 'd' at 4th letter vs 'c' for others, so it sorts last. Among trace/track/tract, 5th letters are e, k, t → order: trace, track, tract. Full order: trace, track, tract, trader. Second word = track.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Compare letters from left to right: trace < track < tract < trader. The second word is track.\n\nIndependent check: Common prefix 'tra'. 'trader' has 'd' at 4th letter vs 'c' for others, so it sorts last. Among trace/track/tract, 5th letters are e, k, t → order: trace, track, tract. Full order: trace, track, tract, trader. Second word = track.",
+ "solution": "Comparing letters from left to right gives the order: trace, track, tract, trader. Hence, the second word is track.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Arrange the words <b>trace, trader, tract, track</b> in dictionary order. Which word comes second?",
+  "options": [
+   "trace",
+   "trader",
+   "tract",
+   "track"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "Compare letters from left to right: trace < track < tract < trader. The second word is track.",
+  "distractor_notes": "A: comes first. B: comes last. C: comes third."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

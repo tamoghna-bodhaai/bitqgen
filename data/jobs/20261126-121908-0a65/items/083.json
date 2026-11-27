@@ -20,24 +20,24 @@
   ]
  },
  "status": "ok",
- "stem": "Find the part of the sentence which contains an error.\n\nThe security guard prevented / the stranger from enter / the research laboratory without / an official permit.",
+ "stem": "Find the part of the sentence which contains an error.\n\nThe committee considered / postponing the launch / rather than approve / the incomplete proposal.",
  "options": [
-  "The security guard prevented",
-  "the stranger from enter",
-  "the research laboratory without",
-  "an official permit."
+  "The committee considered",
+  "postponing the launch",
+  "rather than approve",
+  "the incomplete proposal."
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
-   "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "The verb 'prevent' takes the pattern 'prevent someone from + gerund'. Part B says 'from enter', which must be 'from entering'. Parts A, C, D are grammatically correct.",
-   "answer": "B",
-   "confidence": 0.99,
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Postponing” is a gerund, so the parallel form is “rather than approving.” The error is in part (C).",
+   "answer": "C",
+   "confidence": 0.98,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 1
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "In English grammar, a preposition must be followed by a noun, pronoun, or gerund (the '-ing' form of a verb). In the second part, the preposition 'from' is incorrectly followed by the base form of the verb 'enter'. The correct construction requires the gerund 'entering' ('prevented the stranger from entering'). Hence, the error lies in part B.\n\nIndependent check: The verb 'prevent' takes the pattern 'prevent someone from + gerund'. Part B says 'from enter', which must be 'from entering'. Parts A, C, D are grammatically correct.",
+ "working": "After the preposition “than” in “rather than,” the parallel verb should be a gerund: “rather than approving.” A: correct subject and verb. B: correct gerund after “considered.” D: correct noun phrase.\n\nIndependent check: “Postponing” is a gerund, so the parallel form is “rather than approving.” The error is in part (C).",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "Find the part of the sentence which contains an error.\n\nThe security guard prevented / the stranger from enter / the research laboratory without / an official permit.",
+  "stem": "Find the part of the sentence which contains an error.\n\nThe committee considered / postponing the launch / rather than approve / the incomplete proposal.",
   "options": [
-   "The security guard prevented",
-   "the stranger from enter",
-   "the research laboratory without",
-   "an official permit."
+   "The committee considered",
+   "postponing the launch",
+   "rather than approve",
+   "the incomplete proposal."
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "In English grammar, a preposition must be followed by a noun, pronoun, or gerund (the '-ing' form of a verb). In the second part, the preposition 'from' is incorrectly followed by the base form of the verb 'enter'. The correct construction requires the gerund 'entering' ('prevented the stranger from entering'). Hence, the error lies in part B.",
-  "distractor_notes": "A: Incorrect; 'The security guard prevented' is a grammatically correct subject and finite past tense verb clause.\nC: Incorrect; 'the research laboratory without' correctly provides the direct object of entering and introduces the subsequent condition with the preposition 'without'.\nD: Incorrect; 'an official permit.' is a well-formed noun phrase acting as the object of the preposition 'without'.",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "After the preposition “than” in “rather than,” the parallel verb should be a gerund: “rather than approving.” A: correct subject and verb. B: correct gerund after “considered.” D: correct noun phrase.",
+  "distractor_notes": "A: No error; the committee is the subject. B: “Considered postponing” is grammatical. D: The phrase is grammatically correct; C contains the error."
+ },
+ "author_model": "openai/gpt-6-luna"
 }

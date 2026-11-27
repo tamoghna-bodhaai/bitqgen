@@ -1,0 +1,71 @@
+{
+ "qno": 141,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 141,
+  "section": "Mathematics",
+  "chapter": "Coordinate Geometry",
+  "subtopic": "Distance between parallel lines",
+  "archetype": "single-formula numerical",
+  "brief": "Find the distance between two parallel lines (or between a point and a line) in a form requiring rewriting into ax + by + c = 0; direct formula application.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:114",
+   "2022:110",
+   "2022:111"
+  ],
+  "origin": "variant",
+  "bank_ref": "ga368fa250448"
+ },
+ "status": "ok",
+ "stem": "On a coordinate map, find the distance of the location $P(2,1)$ from the line $\\dfrac{x}{4}+\\dfrac{y}{3}=1$.",
+ "options": [
+  "$\\dfrac{1}{5}$ units",
+  "$\\dfrac{5}{2}$ units",
+  "$2$ units",
+  "$\\dfrac{2}{5}$ units"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Rewrite the line as $3x+4y-12=0$. The distance from $(2,1)$ is $|3(2)+4(1)-12|/\\sqrt{3^2+4^2}=2/5$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 2,
+ "notes": [],
+ "working": "$\\dfrac{x}{4}+\\dfrac{y}{3}=1\\Rightarrow 3x+4y-12=0$. \n$d=\\dfrac{|3(2)+4(1)-12|}{\\sqrt{3^2+4^2}}=\\dfrac{2}{5}\\text{ units}$.\n\nIndependent check: Rewrite the line as $3x+4y-12=0$. The distance from $(2,1)$ is $|3(2)+4(1)-12|/\\sqrt{3^2+4^2}=2/5$.",
+ "solution": "The distance of $(x_1,y_1)$ from $ax+by+c=0$ is $\\dfrac{|ax_1+by_1+c|}{\\sqrt{a^2+b^2}}$. Rewriting the line gives $3x+4y-12=0$.\n$$d=\\frac{|3(2)+4(1)-12|}{\\sqrt{3^2+4^2}}=\\frac{2}{5}\\text{ units}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "On a coordinate map, find the distance of the location $P(2,1)$ from the line $\\dfrac{x}{4}+\\dfrac{y}{3}=1$.",
+  "options": [
+   "$\\dfrac{1}{5}$ units",
+   "$\\dfrac{2}{5}$ units",
+   "$2$ units",
+   "$\\dfrac{5}{2}$ units"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\dfrac{x}{4}+\\dfrac{y}{3}=1\\Rightarrow 3x+4y-12=0$. \n$d=\\dfrac{|3(2)+4(1)-12|}{\\sqrt{3^2+4^2}}=\\dfrac{2}{5}\\text{ units}$.",
+  "distractor_notes": "A: halves the numerator; C: omits the denominator; D: takes the reciprocal of the correct distance."
+ },
+ "variant_of": "ga368fa250448",
+ "author_model": "openai/gpt-6-luna-pro"
+}

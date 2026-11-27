@@ -1,0 +1,70 @@
+{
+ "qno": 109,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 109,
+  "section": "Mathematics",
+  "chapter": "Complex Numbers",
+  "subtopic": "Modulus and conjugate",
+  "archetype": "modulus property",
+  "brief": "Given a complex equation of the form |z - a| = k|z - b| or similar, solve using |z|² = z·z̄ to land on a real linear equation in x and y.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:95",
+   "2026s1:95",
+   "2026s1:94"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "If $z=x+iy$ satisfies $|z-(1+2i)|=|z-(-3+4i)|$, which equation relates $x$ and $y$?",
+ "options": [
+  "$2x+y+5=0$",
+  "$2x-y-5=0$",
+  "$x-2y+5=0$",
+  "$2x-y+5=0$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Equating squared distances gives −8x+4y−20=0, or 2x−y+5=0.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(x-1)^2+(y-2)^2=(x+3)^2+(y-4)^2\\Rightarrow -8x+4y-20=0\\Rightarrow 2x-y+5=0$.\n\nIndependent check: Equating squared distances gives −8x+4y−20=0, or 2x−y+5=0.",
+ "solution": "Equating the squared distances,\n$$ (x-1)^2+(y-2)^2=(x+3)^2+(y-4)^2 $$\nSimplifying gives $-8x+4y-20=0$, hence $2x-y+5=0$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "If $z=x+iy$ satisfies $|z-(1+2i)|=|z-(-3+4i)|$, which equation relates $x$ and $y$?",
+  "options": [
+   "$2x+y+5=0$",
+   "$2x-y+5=0$",
+   "$x-2y+5=0$",
+   "$2x-y-5=0$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$(x-1)^2+(y-2)^2=(x+3)^2+(y-4)^2\\Rightarrow -8x+4y-20=0\\Rightarrow 2x-y+5=0$.",
+  "distractor_notes": "A: sign error in the imaginary-coordinate terms; C: interchanges the coefficients of $x$ and $y$; D: sign error in the constant term."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

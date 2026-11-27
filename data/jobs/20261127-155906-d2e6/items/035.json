@@ -1,0 +1,70 @@
+{
+ "qno": 35,
+ "section": "Physics",
+ "slot": {
+  "qno": 35,
+  "section": "Physics",
+  "chapter": "Gravitation",
+  "subtopic": "Kepler's third law",
+  "archetype": "proportionality-scaling",
+  "brief": "Two satellites orbiting the same (or related) central bodies; use T² ∝ r³ to compare orbital periods or radii, with simple numeric scaling.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s1:5",
+   "2023s1:23",
+   "2025s2:24"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Two satellites orbit the same planet in circular orbits of radii $r$ and $4r$. If the satellite at radius $r$ has an orbital period of $6$ h, what is the period of the other satellite?",
+ "options": [
+  "$12$ h",
+  "$24$ h",
+  "$36$ h",
+  "$48$ h"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For circular orbits around the same planet, T is proportional to r^(3/2). Thus T2 = 6 × 4^(3/2) = 48 h.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$T^2\\propto r^3$; $\\dfrac{T_2}{T_1}=\\left(\\dfrac{4r}{r}\\right)^{3/2}=8$; $T_2=8(6)=48$ h.\n\nIndependent check: For circular orbits around the same planet, T is proportional to r^(3/2). Thus T2 = 6 × 4^(3/2) = 48 h.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Two satellites orbit the same planet in circular orbits of radii $r$ and $4r$. If the satellite at radius $r$ has an orbital period of $6$ h, what is the period of the other satellite?",
+  "options": [
+   "$12$ h",
+   "$24$ h",
+   "$36$ h",
+   "$48$ h"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$T^2\\propto r^3$; $\\dfrac{T_2}{T_1}=\\left(\\dfrac{4r}{r}\\right)^{3/2}=8$; $T_2=8(6)=48$ h.",
+  "distractor_notes": "A: uses the radius ratio directly; B: uses the square of the radius ratio; C: uses the radius ratio to the power $3/2$ incorrectly."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

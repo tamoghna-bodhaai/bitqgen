@@ -1,0 +1,76 @@
+{
+ "qno": 5,
+ "section": "Physics",
+ "slot": {
+  "qno": 5,
+  "section": "Physics",
+  "chapter": "Current Electricity",
+  "subtopic": "Internal resistance of cells",
+  "archetype": "circuit analysis",
+  "brief": "Simple circuit diagram with one cell, its internal resistance and an external resistor; find terminal voltage or current, then power dissipated inside the cell.",
+  "difficulty": 1,
+  "needs_figure": true,
+  "figure_kind": "circuit",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:11",
+   "2022:13",
+   "2025s1:4"
+  ]
+ },
+ "status": "ok",
+ "stem": "A cell of emf $12$ V and internal resistance $1\\ \\Omega$ is connected to a $5\\ \\Omega$ resistor as shown in the figure. What is the power dissipated in the cell's internal resistance?",
+ "options": [
+  "$2$ W",
+  "$20$ W",
+  "$4$ W",
+  "$24$ W"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q005_stem_v0.png",
+  "width_pct": 50,
+  "kind": "circuit"
+ },
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The total resistance is 5 + 1 = 6 Ω, so I = 12/6 = 2 A. Internal power = I²r = 2² × 1 = 4 W.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$R_{\\text{total}}=5+1=6\\ \\Omega$; $I=\\dfrac{12}{6}=2$ A. $P_r=I^2r=(2)^2(1)=4$ W.\n\nIndependent check: The total resistance is 5 + 1 = 6 Ω, so I = 12/6 = 2 A. Internal power = I²r = 2² × 1 = 4 W.",
+ "solution": "The total resistance is $R=5+1=6\\ \\Omega$, so the current is $I=\\dfrac{12}{6}=2\\ \\text{A}$. The power dissipated in the internal resistance is\n$$P=I^2r=(2)^2(1)=4\\ \\text{W}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A cell of emf $12$ V and internal resistance $1\\ \\Omega$ is connected to a $5\\ \\Omega$ resistor as shown in the figure. What is the power dissipated in the cell's internal resistance?",
+  "options": [
+   "$2$ W",
+   "$4$ W",
+   "$20$ W",
+   "$24$ W"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": {
+   "kind": "circuit",
+   "description": "Draw one closed rectangular series loop. On the left branch, draw a cell with its positive terminal above its negative terminal, labelled emf 12 V. Show a series resistor labelled internal resistance r = 1 Ω. On the right branch, draw the external resistor labelled R = 5 Ω. Connect all elements in a single loop; no other components or wires.",
+   "smiles": null
+  },
+  "difficulty_estimate": 1,
+  "working": "$R_{\\text{total}}=5+1=6\\ \\Omega$; $I=\\dfrac{12}{6}=2$ A. $P_r=I^2r=(2)^2(1)=4$ W.",
+  "distractor_notes": "A: uses $Ir$ instead of $I^2r$. C: calculates power in the external resistor. D: calculates total power supplied by the cell."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

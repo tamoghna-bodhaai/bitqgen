@@ -1,0 +1,68 @@
+{
+ "qno": 138,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 138,
+  "section": "Mathematics",
+  "chapter": "Three Dimensional Geometry",
+  "subtopic": "Direction cosines",
+  "archetype": "formula",
+  "brief": "Given a line by two points, find its direction cosines; direct formula with normalization — very easy.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:92",
+   "2024s1:126",
+   "2025s2:106"
+  ]
+ },
+ "status": "ok",
+ "stem": "The direction cosines of the line directed from $A(1,2,3)$ to $B(4,6,3)$ are",
+ "options": [
+  "$\\left(\\dfrac{3}{5},\\dfrac{4}{5},0\\right)$",
+  "$\\left(-\\dfrac{3}{5},-\\dfrac{4}{5},0\\right)$",
+  "$\\left(\\dfrac{4}{5},\\dfrac{3}{5},0\\right)$",
+  "$\\left(\\dfrac{3}{7},\\dfrac{4}{7},0\\right)$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "\\(\\overrightarrow{AB}=(3,4,0)\\), with length \\(5\\). Thus the direction cosines are \\((3/5,4/5,0)\\).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\overrightarrow{AB}=(3,4,0)$, $|\\overrightarrow{AB}|=5$\nDirection cosines $=\\left(\\dfrac{3}{5},\\dfrac{4}{5},0\\right)$\n\nIndependent check: \\(\\overrightarrow{AB}=(3,4,0)\\), with length \\(5\\). Thus the direction cosines are \\((3/5,4/5,0)\\).",
+ "solution": "$$\\overrightarrow{AB}=(4-1,6-2,3-3)=(3,4,0),\\qquad |\\overrightarrow{AB}|=\\sqrt{3^2+4^2}=5.$$\nHence, the direction cosines are $\\left(\\dfrac{3}{5},\\dfrac{4}{5},0\\right)$.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "The direction cosines of the line directed from $A(1,2,3)$ to $B(4,6,3)$ are",
+  "options": [
+   "$\\left(\\dfrac{3}{5},\\dfrac{4}{5},0\\right)$",
+   "$\\left(-\\dfrac{3}{5},-\\dfrac{4}{5},0\\right)$",
+   "$\\left(\\dfrac{4}{5},\\dfrac{3}{5},0\\right)$",
+   "$\\left(\\dfrac{3}{7},\\dfrac{4}{7},0\\right)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$\\overrightarrow{AB}=(3,4,0)$, $|\\overrightarrow{AB}|=5$\nDirection cosines $=\\left(\\dfrac{3}{5},\\dfrac{4}{5},0\\right)$",
+  "distractor_notes": "B reverses the direction; C interchanges the first two components; D divides by the sum of components instead of the magnitude."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

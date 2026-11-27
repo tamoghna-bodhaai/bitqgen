@@ -1,0 +1,68 @@
+{
+ "qno": 28,
+ "section": "Physics",
+ "slot": {
+  "qno": 28,
+  "section": "Physics",
+  "chapter": "Atoms",
+  "subtopic": "Energy level transitions",
+  "archetype": "single-formula numerical",
+  "brief": "Hydrogen atom electron jumps from a stated higher level to a lower one; find the emitted photon's energy or wavelength using the Bohr energy-level formula.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:25",
+   "2024s2:15",
+   "2026s2:26"
+  ]
+ },
+ "status": "ok",
+ "stem": "In a hydrogen atom, an electron makes a transition from the $n=4$ level to the $n=2$ level. The energy of the emitted photon is:",
+ "options": [
+  "$0.85\\ \\text{eV}$",
+  "$1.89\\ \\text{eV}$",
+  "$2.55\\ \\text{eV}$",
+  "$3.40\\ \\text{eV}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Photon energy = 13.6(1/2² − 1/4²) eV = 2.55 eV.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E_\\gamma=13.6\\left(\\dfrac{1}{2^2}-\\dfrac{1}{4^2}\\right)\\text{eV}=13.6\\times\\dfrac{3}{16}\\text{eV}=2.55\\ \\text{eV}$.\n\nIndependent check: Photon energy = 13.6(1/2² − 1/4²) eV = 2.55 eV.",
+ "solution": "For a transition from $n_i=4$ to $n_f=2$, the emitted photon energy is\n$$E_\\gamma=13.6\\left(\\frac{1}{n_f^2}-\\frac{1}{n_i^2}\\right)=13.6\\left(\\frac{1}{4}-\\frac{1}{16}\\right)=2.55\\ \\text{eV}.$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In a hydrogen atom, an electron makes a transition from the $n=4$ level to the $n=2$ level. The energy of the emitted photon is:",
+  "options": [
+   "$0.85\\ \\text{eV}$",
+   "$1.89\\ \\text{eV}$",
+   "$2.55\\ \\text{eV}$",
+   "$3.40\\ \\text{eV}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$E_\\gamma=13.6\\left(\\dfrac{1}{2^2}-\\dfrac{1}{4^2}\\right)\\text{eV}=13.6\\times\\dfrac{3}{16}\\text{eV}=2.55\\ \\text{eV}$.",
+  "distractor_notes": "A: uses the binding energy at $n=4$; B: uses the $n=3$ to $n=2$ transition; D: uses the binding energy at $n=2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

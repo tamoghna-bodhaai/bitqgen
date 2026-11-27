@@ -1,0 +1,71 @@
+{
+ "qno": 13,
+ "section": "Physics",
+ "slot": {
+  "qno": 13,
+  "section": "Physics",
+  "chapter": "Kinematics",
+  "subtopic": "Distance in nth second",
+  "archetype": "single-equation kinematics",
+  "brief": "Body starting from rest with uniform acceleration; find distance covered in a specific (nth) second using the nth-second formula.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:4",
+   "2021:7",
+   "2025s1:17"
+  ],
+  "origin": "variant",
+  "bank_ref": "g1b99cb73fee3"
+ },
+ "status": "ok",
+ "stem": "A cart starts from rest and moves along a straight track with constant acceleration of $4\\ \\text{m s}^{-2}$. How far does it travel during the fifth second?",
+ "options": [
+  "$10$ m",
+  "$18$ m",
+  "$20$ m",
+  "$50$ m"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Distance in the fifth second = ½(4)(5² − 4²) = 18 m.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$s_n=u+\\dfrac{a}{2}(2n-1)$\n$u=0,\\ a=4\\ \\text{m s}^{-2},\\ n=5$\n$s_5=\\dfrac{4}{2}(9)=18\\ \\text{m}$\n\nIndependent check: Distance in the fifth second = ½(4)(5² − 4²) = 18 m.",
+ "solution": "Distance travelled in the $n$th second is $s_n=u+\\dfrac{a}{2}(2n-1)$.\n$$s_5=0+\\dfrac{4}{2}(2\\cdot5-1)=18\\ \\text{m}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "A cart starts from rest and moves along a straight track with constant acceleration of $4\\ \\text{m s}^{-2}$. How far does it travel during the fifth second?",
+  "options": [
+   "$10$ m",
+   "$18$ m",
+   "$20$ m",
+   "$50$ m"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$s_n=u+\\dfrac{a}{2}(2n-1)$\n$u=0,\\ a=4\\ \\text{m s}^{-2},\\ n=5$\n$s_5=\\dfrac{4}{2}(9)=18\\ \\text{m}$",
+  "distractor_notes": "A: uses $an/2$ instead of the nth-second formula. C: uses $an$ rather than $a(2n-1)/2$. D: calculates total distance in the first five seconds."
+ },
+ "variant_of": "g1b99cb73fee3",
+ "author_model": "openai/gpt-6-luna-pro"
+}

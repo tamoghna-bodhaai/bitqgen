@@ -1,0 +1,70 @@
+{
+ "qno": 97,
+ "section": "Logical Reasoning",
+ "slot": {
+  "qno": 97,
+  "section": "Logical Reasoning",
+  "chapter": "Word Formation / Dictionary Order",
+  "subtopic": "Word formation",
+  "archetype": "letter availability",
+  "brief": "Give a long word and four short options; three cannot be fully formed from the word's letters (one letter missing or repeated insufficiently) — ask which cannot be formed.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:78",
+   "2022:84",
+   "2025s1:74"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Which word cannot be formed using the letters of “counterrevolutionaries”, without using any letter more often than it occurs in that word?",
+ "options": [
+  "Revolution",
+  "Counter",
+  "Relation",
+  "Uncertainty"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver_verbal",
+   "model": "openai/gpt-6-luna",
+   "working": "“Counterrevolutionaries” contains no y, but “uncertainty” requires one. The other three options can be formed.",
+   "answer": "D",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Revolution, counter and relation can each be formed from the available letters. Uncertainty needs a y and two c's; the source word has no y and only one c.\n\nIndependent check: “Counterrevolutionaries” contains no y, but “uncertainty” requires one. The other three options can be formed.",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Which word cannot be formed using the letters of “counterrevolutionaries”, without using any letter more often than it occurs in that word?",
+  "options": [
+   "Revolution",
+   "Counter",
+   "Relation",
+   "Uncertainty"
+  ],
+  "option_smiles": null,
+  "answer": "D",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "Revolution, counter and relation can each be formed from the available letters. Uncertainty needs a y and two c's; the source word has no y and only one c.",
+  "distractor_notes": "A, B and C can be formed with available letter counts; D requires unavailable letters."
+ },
+ "author_model": "openai/gpt-6-luna"
+}

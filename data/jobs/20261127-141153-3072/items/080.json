@@ -1,0 +1,68 @@
+{
+ "qno": 80,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 80,
+  "section": "Chemistry",
+  "chapter": "Some Basic Concepts of Chemistry",
+  "subtopic": "Empirical and molecular formula",
+  "archetype": "percentage composition",
+  "brief": "Given percentage composition of an organic compound and molar mass, find the molecular formula; simple ratio simplification to empirical formula.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:55",
+   "2022:52",
+   "2026s2:57"
+  ]
+ },
+ "status": "ok",
+ "stem": "An organic compound contains $41.4\\%$ carbon, $3.4\\%$ hydrogen and $55.2\\%$ oxygen. If its molar mass is $58\\ \\text{g mol}^{-1}$, find its molecular formula. Use atomic masses C = 12, H = 1 and O = 16.",
+ "options": [
+  "$\\text{CHO}$",
+  "$\\text{C}_2\\text{H}_2\\text{O}_2$",
+  "$\\text{C}_2\\text{H}_4\\text{O}_2$",
+  "$\\text{C}_4\\text{H}_4\\text{O}_4$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For 100 g: C:H:O = 41.4/12 : 3.4/1 : 55.2/16 ≈ 1:1:1, so the empirical formula is CHO (29 g mol⁻¹). The multiplier is 58/29 = 2, giving C₂H₂O₂.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "For $100$ g: $n_C=\\dfrac{41.4}{12}=3.45$, $n_H=3.4$, $n_O=\\dfrac{55.2}{16}=3.45$.\nRatio $C:H:O=1:1:1$; empirical formula $=\\text{CHO}$.\nEmpirical formula mass $=29$; multiplier $=\\dfrac{58}{29}=2$.\nMolecular formula $=\\text{C}_2\\text{H}_2\\text{O}_2$.\n\nIndependent check: For 100 g: C:H:O = 41.4/12 : 3.4/1 : 55.2/16 ≈ 1:1:1, so the empirical formula is CHO (29 g mol⁻¹). The multiplier is 58/29 = 2, giving C₂H₂O₂.",
+ "solution": "For $100\\,\\text{g}$, the mole ratio is $\\frac{41.4}{12}:\\frac{3.4}{1}:\\frac{55.2}{16}=1:1:1$, so the empirical formula is $\\text{CHO}$ (molar mass $29\\,\\text{g mol}^{-1}$).\n$$n=\\frac{58}{29}=2,\\qquad \\text{Molecular formula}=(\\text{CHO})_2=\\text{C}_2\\text{H}_2\\text{O}_2.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "An organic compound contains $41.4\\%$ carbon, $3.4\\%$ hydrogen and $55.2\\%$ oxygen. If its molar mass is $58\\ \\text{g mol}^{-1}$, find its molecular formula. Use atomic masses C = 12, H = 1 and O = 16.",
+  "options": [
+   "$\\text{CHO}$",
+   "$\\text{C}_2\\text{H}_2\\text{O}_2$",
+   "$\\text{C}_2\\text{H}_4\\text{O}_2$",
+   "$\\text{C}_4\\text{H}_4\\text{O}_4$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "For $100$ g: $n_C=\\dfrac{41.4}{12}=3.45$, $n_H=3.4$, $n_O=\\dfrac{55.2}{16}=3.45$.\nRatio $C:H:O=1:1:1$; empirical formula $=\\text{CHO}$.\nEmpirical formula mass $=29$; multiplier $=\\dfrac{58}{29}=2$.\nMolecular formula $=\\text{C}_2\\text{H}_2\\text{O}_2$.",
+  "distractor_notes": "A: gives the empirical formula instead of the molecular formula. C: assigns too many hydrogen atoms. D: uses a multiplier of four instead of two."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

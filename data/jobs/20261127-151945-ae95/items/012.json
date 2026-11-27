@@ -1,0 +1,71 @@
+{
+ "qno": 12,
+ "section": "Physics",
+ "slot": {
+  "qno": 12,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Energy density",
+  "archetype": "single-formula numerical",
+  "brief": "Given the rms electric field of an EM wave, compute the average energy density using u = ε₀E².",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:6",
+   "2023s1:25",
+   "2026s1:30"
+  ],
+  "origin": "variant",
+  "bank_ref": "g3da10677e8eb"
+ },
+ "status": "ok",
+ "stem": "In vacuum, an electromagnetic wave has an rms electric field of $200$ V m$^{-1}$. Taking $\\text{ε}_0 = 8.85\\times10^{-12}$ F m$^{-1}$, its average energy density is:",
+ "options": [
+  "$8.85\\times10^{-8}$ J m$^{-3}$",
+  "$1.77\\times10^{-7}$ J m$^{-3}$",
+  "$7.08\\times10^{-7}$ J m$^{-3}$",
+  "$3.54\\times10^{-7}$ J m$^{-3}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For an electromagnetic wave, the average total energy density is \\(u=\\varepsilon_0 E_{\\rm rms}^2\\). Thus \\(u=(8.85\\times10^{-12})(200)^2=3.54\\times10^{-7}\\,\\text{J m}^{-3}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=\\text{ε}_0 E_{\\rm rms}^2$\\n$u=(8.85\\times10^{-12})(200)^2=3.54\\times10^{-7}$ J m$^{-3}$\n\nIndependent check: For an electromagnetic wave, the average total energy density is \\(u=\\varepsilon_0 E_{\\rm rms}^2\\). Thus \\(u=(8.85\\times10^{-12})(200)^2=3.54\\times10^{-7}\\,\\text{J m}^{-3}\\).",
+ "solution": "For an electromagnetic wave, the average total energy density is $u=\\varepsilon_0 E_{\\rm rms}^2$.\n$$u=(8.85\\times10^{-12})(200)^2=3.54\\times10^{-7}\\ \\text{J m}^{-3}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "In vacuum, an electromagnetic wave has an rms electric field of $200$ V m$^{-1}$. Taking $\\text{ε}_0 = 8.85\\times10^{-12}$ F m$^{-1}$, its average energy density is:",
+  "options": [
+   "$8.85\\times10^{-8}$ J m$^{-3}$",
+   "$1.77\\times10^{-7}$ J m$^{-3}$",
+   "$3.54\\times10^{-7}$ J m$^{-3}$",
+   "$7.08\\times10^{-7}$ J m$^{-3}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$u=\\text{ε}_0 E_{\\rm rms}^2$\\n$u=(8.85\\times10^{-12})(200)^2=3.54\\times10^{-7}$ J m$^{-3}$",
+  "distractor_notes": "A: Uses a factor of $1/4$ instead of $1$.\\nB: Uses a factor of $1/2$ instead of $1$.\\nD: Doubles the total energy density."
+ },
+ "variant_of": "g3da10677e8eb",
+ "author_model": "openai/gpt-6-luna-pro"
+}

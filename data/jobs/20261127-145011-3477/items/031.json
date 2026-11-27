@@ -1,0 +1,56 @@
+{
+ "qno": 31,
+ "section": "Physics",
+ "slot": {
+  "qno": 31,
+  "section": "Physics",
+  "chapter": "Kinetic Theory of Gases",
+  "subtopic": "rms speed vs molar mass",
+  "archetype": "proportionality-scaling",
+  "brief": "Given the temperature of a gas, find the average translational kinetic energy per molecule (or total for given moles) using (3/2)kT.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:14",
+   "2026s2:3",
+   "2025s2:7"
+  ],
+  "origin": "direct",
+  "bank_ref": "g5308764b24c5"
+ },
+ "status": "ok",
+ "stem": "The root-mean-square (rms) speed of oxygen ($\\text{O}_2$) molecules at a certain temperature is $400\\ \\text{m s}^{-1}$. The rms speed of hydrogen ($\\text{H}_2$) molecules at the same temperature is:",
+ "options": [
+  "$1600\\ \\text{m s}^{-1}$",
+  "$400\\ \\text{m s}^{-1}$",
+  "$100\\ \\text{m s}^{-1}$",
+  "$6400\\ \\text{m s}^{-1}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver (bank)",
+   "model": "qwen/qwen4-max",
+   "answer": "C",
+   "confidence": 1.0
+  }
+ ],
+ "attempts": 0,
+ "notes": [
+  "from question bank g5308764b24c5 (verified in job 20261126-121821-a29c)"
+ ],
+ "working": "The root-mean-square speed of an ideal gas is given by:\n$$v_{\\text{rms}} = \\sqrt{\\dfrac{3RT}{M}}$$\n\nAt a constant temperature $T$, the rms speed is inversely proportional to the square root of the molar mass:\n$$v_{\\text{rms}} \\propto \\dfrac{1}{\\sqrt{M}}$$\n\nTaking the ratio for hydrogen ($\\text{H}_2$, $M = 2\\ \\text{g mol}^{-1}$) and oxygen ($\\text{O}_2$, $M = 32\\ \\text{g mol}^{-1}$):\n$$\\dfrac{v_{\\text{rms}}(\\text{H}_2)}{v_{\\text{rms}}(\\text{O}_2)} = \\sqrt{\\dfrac{M_{\\text{O}_2}}{M_{\\text{H}_2}}} = \\sqrt{\\dfrac{32}{2}} = \\sqrt{16} = 4$$\n\n$$v_{\\text{rms}}(\\text{H}_2) = 4 \\times v_{\\text{rms}}(\\text{O}_2) = 4 \\times 400\\ \\text{m s}^{-1} = 1600\\ \\text{m s}^{-1}$$\n\nIndependent check: v_rms = sqrt(3RT/M), so at the same T, v_H2/v_O2 = sqrt(M_O2/M_H2) = sqrt(32/2) = 4. Hence v_H2 = 4 × 400 = 1600 m/s.",
+ "solution": "At the same temperature, $v_{\\text{rms}}\\propto 1/\\sqrt{M}$.\n$$v_{\\text{H}_2}=v_{\\text{O}_2}\\sqrt{\\frac{M_{\\text{O}_2}}{M_{\\text{H}_2}}}=400\\sqrt{\\frac{32}{2}}=1600\\ \\text{m s}^{-1}$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": null,
+ "origin": "bank",
+ "bank_id": "g5308764b24c5",
+ "author_model": null
+}

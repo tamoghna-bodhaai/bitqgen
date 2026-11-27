@@ -1,0 +1,68 @@
+{
+ "qno": 9,
+ "section": "Physics",
+ "slot": {
+  "qno": 9,
+  "section": "Physics",
+  "chapter": "Alternating Current",
+  "subtopic": "Power factor",
+  "archetype": "single-formula numerical",
+  "brief": "Series LCR circuit with given R, XL and XC (or L, C, f); compute impedance and then the power factor, or average power for a stated rms voltage.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:2",
+   "2025s1:1",
+   "2021:37"
+  ]
+ },
+ "status": "ok",
+ "stem": "A series LCR circuit has resistance $6\\ \\Omega$, inductive reactance $13\\ \\Omega$ and capacitive reactance $5\\ \\Omega$. What is its power factor?",
+ "options": [
+  "$0.3$",
+  "$0.8$",
+  "$0.6$",
+  "$1.0$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Net reactance: $X=13-5=8\\,\\Omega$. Impedance: $Z=\\sqrt{6^2+8^2}=10\\,\\Omega$. Power factor $=R/Z=6/10=0.6$.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$Z=\\sqrt{R^2+(X_L-X_C)^2}=\\sqrt{6^2+8^2}=10\\ \\Omega$; $\\cos\\phi=\\dfrac{R}{Z}=0.6$\n\nIndependent check: Net reactance: $X=13-5=8\\,\\Omega$. Impedance: $Z=\\sqrt{6^2+8^2}=10\\,\\Omega$. Power factor $=R/Z=6/10=0.6$.",
+ "solution": "Net reactance is $X_L-X_C=13-5=8\\ \\Omega$, so the impedance is\n$$Z=\\sqrt{R^2+(X_L-X_C)^2}=\\sqrt{6^2+8^2}=10\\ \\Omega.$$\nHence, the power factor is $\\cos\\phi=R/Z=6/10=0.6$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A series LCR circuit has resistance $6\\ \\Omega$, inductive reactance $13\\ \\Omega$ and capacitive reactance $5\\ \\Omega$. What is its power factor?",
+  "options": [
+   "$0.3$",
+   "$0.6$",
+   "$0.8$",
+   "$1.0$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$Z=\\sqrt{R^2+(X_L-X_C)^2}=\\sqrt{6^2+8^2}=10\\ \\Omega$; $\\cos\\phi=\\dfrac{R}{Z}=0.6$",
+  "distractor_notes": "A: uses $R/(R+|X_L-X_C|)$. C: uses net reactance divided by impedance. D: assumes resonance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

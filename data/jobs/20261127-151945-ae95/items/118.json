@@ -1,0 +1,71 @@
+{
+ "qno": 118,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 118,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "construct-equation",
+  "brief": "Find the equation of the circle passing through three given points (or through two points with a stated condition) by solving for centre and radius.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:130",
+   "2026s1:109",
+   "2026s1:111"
+  ],
+  "origin": "variant",
+  "bank_ref": "gdb0c3f6ee422"
+ },
+ "status": "ok",
+ "stem": "The equation of the circle passing through $(2,3)$, $(8,3)$ and $(2,9)$ is",
+ "options": [
+  "$x^2+y^2-10x-12y+43=0$",
+  "$x^2+y^2+10x-12y+43=0$",
+  "$x^2+y^2-10x-12y+41=0$",
+  "$x^2+y^2-10x+12y+43=0$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The right triangle has its right angle at (2,3), so the circumcenter is the midpoint of the hypotenuse, (5,6). The radius squared is 18, giving x²+y²−10x−12y+43=0.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$$(2,3),(8,3),(2,9)\\text{ form a right triangle; centre}=(5,6).$$\n$$r^2=(5-2)^2+(6-3)^2=18.$$\n$$(x-5)^2+(y-6)^2=18$$\n$$x^2+y^2-10x-12y+43=0$$\n\nIndependent check: The right triangle has its right angle at (2,3), so the circumcenter is the midpoint of the hypotenuse, (5,6). The radius squared is 18, giving x²+y²−10x−12y+43=0.",
+ "solution": "The three points form a right triangle, so its circumcentre is the midpoint of the hypotenuse joining $(8,3)$ and $(2,9)$: $(5,6)$. The radius squared is $18$.\n$$\n(x-5)^2+(y-6)^2=18\n$$\nExpanding gives $x^2+y^2-10x-12y+43=0$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of the circle passing through $(2,3)$, $(8,3)$ and $(2,9)$ is",
+  "options": [
+   "$x^2+y^2-10x-12y+43=0$",
+   "$x^2+y^2+10x-12y+43=0$",
+   "$x^2+y^2-10x-12y+41=0$",
+   "$x^2+y^2-10x+12y+43=0$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$$(2,3),(8,3),(2,9)\\text{ form a right triangle; centre}=(5,6).$$\n$$r^2=(5-2)^2+(6-3)^2=18.$$\n$$(x-5)^2+(y-6)^2=18$$\n$$x^2+y^2-10x-12y+43=0$$",
+  "distractor_notes": "B: sign error in the $x$-coefficient. C: incorrect constant term. D: sign error in the $y$-coefficient."
+ },
+ "variant_of": "gdb0c3f6ee422",
+ "author_model": "openai/gpt-6-luna-pro"
+}

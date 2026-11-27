@@ -1,0 +1,71 @@
+{
+ "qno": 44,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 44,
+  "section": "Chemistry",
+  "chapter": "Coordination Compounds",
+  "subtopic": "Crystal field theory – high/low spin",
+  "archetype": "electron configuration comparison",
+  "brief": "Give a complex (3d metal with ligands of mixed field strength); ask for the d-orbital configuration, spin state and unpaired electron count",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:58",
+   "2024s2:48",
+   "2026s2:56"
+  ],
+  "origin": "variant",
+  "bank_ref": "g641ffc92f928"
+ },
+ "status": "ok",
+ "stem": "For octahedral $[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+$, identify its $d$-orbital configuration, spin state and number of unpaired electrons.",
+ "options": [
+  "$t_{2g}^{4}e_g^{2}$; high-spin; 4",
+  "$t_{2g}^{6}e_g^{0}$; low-spin; 0",
+  "$t_{2g}^{5}e_g^{1}$; intermediate-spin; 2",
+  "$t_{2g}^{5}e_g^{2}$; high-spin; 3"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Co has oxidation state +3: x−2=+1, so it is d⁶. Octahedral Co(III) here is low-spin, with t₂g⁶e_g⁰ and 0 unpaired electrons.",
+   "answer": "C",
+   "confidence": 0.94,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Co oxidation state: $x-2=+1$, so $x=+3$; $\\text{Co}^{3+}$ is $d^6$.\nOctahedral Co(III) with this ligand set: low-spin $t_{2g}^{6}e_g^{0}$.\nAll six electrons are paired; unpaired electrons $=0$.\n\nIndependent check: Co has oxidation state +3: x−2=+1, so it is d⁶. Octahedral Co(III) here is low-spin, with t₂g⁶e_g⁰ and 0 unpaired electrons.",
+ "solution": "For $[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+$, let the oxidation state of Co be $x$: $x-2=+1$, so $x=+3$ and Co$^{3+}$ is $d^6$. In the octahedral low-spin configuration, $$t_{2g}^{6}e_g^{0},$$ all six electrons are paired, giving $0$ unpaired electrons.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For octahedral $[\\text{Co}(\\text{NH}_3)_4\\text{Cl}_2]^+$, identify its $d$-orbital configuration, spin state and number of unpaired electrons.",
+  "options": [
+   "$t_{2g}^{4}e_g^{2}$; high-spin; 4",
+   "$t_{2g}^{5}e_g^{1}$; intermediate-spin; 2",
+   "$t_{2g}^{6}e_g^{0}$; low-spin; 0",
+   "$t_{2g}^{5}e_g^{2}$; high-spin; 3"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "Co oxidation state: $x-2=+1$, so $x=+3$; $\\text{Co}^{3+}$ is $d^6$.\nOctahedral Co(III) with this ligand set: low-spin $t_{2g}^{6}e_g^{0}$.\nAll six electrons are paired; unpaired electrons $=0$.",
+  "distractor_notes": "A: assumes high-spin $d^6$; B: selects an intermediate-spin arrangement; D: counts Co as $d^7$."
+ },
+ "variant_of": "g641ffc92f928",
+ "author_model": "openai/gpt-6-luna-pro"
+}

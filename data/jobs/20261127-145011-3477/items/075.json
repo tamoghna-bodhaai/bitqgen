@@ -1,0 +1,71 @@
+{
+ "qno": 75,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 75,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Stability of alkenes / heat of hydrogenation",
+  "archetype": "ordering",
+  "brief": "Rank alkenes by heat of hydrogenation / stability (cis-trans-substituted comparison); pick correct increasing or decreasing order",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:31",
+   "2026s2:45",
+   "2021:55"
+  ],
+  "origin": "variant",
+  "bank_ref": "g9ec46f2ab686"
+ },
+ "status": "ok",
+ "stem": "Which sequence gives the alkenes in increasing order of heat of hydrogenation?",
+ "options": [
+  "ethene < propene < cis-2-butene < trans-2-butene",
+  "cis-2-butene < trans-2-butene < propene < ethene",
+  "trans-2-butene < cis-2-butene < propene < ethene",
+  "trans-2-butene < propene < cis-2-butene < ethene"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "More substituted and less strained alkenes are more stable, so they release less heat on hydrogenation. Stability order: trans-2-butene > cis-2-butene > propene > ethene; therefore heat of hydrogenation increases in the reverse order.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Alkene stability: trans-2-butene > cis-2-butene > propene > ethene.\nHeat of hydrogenation is inversely related to alkene stability.\nTherefore: trans-2-butene < cis-2-butene < propene < ethene.\n\nIndependent check: More substituted and less strained alkenes are more stable, so they release less heat on hydrogenation. Stability order: trans-2-butene > cis-2-butene > propene > ethene; therefore heat of hydrogenation increases in the reverse order.",
+ "solution": "Heat of hydrogenation is inversely proportional to alkene stability. The stability order is trans-2-butene > cis-2-butene > propene > ethene; hence the increasing order of heat of hydrogenation is\n$$\\text{trans-2-butene} < \\text{cis-2-butene} < \\text{propene} < \\text{ethene}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Which sequence gives the alkenes in increasing order of heat of hydrogenation?",
+  "options": [
+   "trans-2-butene < cis-2-butene < propene < ethene",
+   "cis-2-butene < trans-2-butene < propene < ethene",
+   "ethene < propene < cis-2-butene < trans-2-butene",
+   "trans-2-butene < propene < cis-2-butene < ethene"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Alkene stability: trans-2-butene > cis-2-butene > propene > ethene.\nHeat of hydrogenation is inversely related to alkene stability.\nTherefore: trans-2-butene < cis-2-butene < propene < ethene.",
+  "distractor_notes": "B reverses the cis/trans stability order. C gives the stability order rather than the heat-of-hydrogenation order. D incorrectly places propene as more stable than cis-2-butene."
+ },
+ "variant_of": "g9ec46f2ab686",
+ "author_model": "openai/gpt-6-luna-pro"
+}

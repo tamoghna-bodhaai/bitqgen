@@ -1,0 +1,71 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Consistency of linear systems",
+  "archetype": "Δ = 0 and Δx = 0",
+  "brief": "Give a 3×3 system with a parameter λ; find the value(s) of λ for which the system has infinitely many solutions and check Δx = Δy = Δz = 0 for those values.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:99",
+   "2025s1:105",
+   "2024s1:102"
+  ],
+  "origin": "variant",
+  "bank_ref": "g9864ecc57077"
+ },
+ "status": "ok",
+ "stem": "For the system $7x+7y+7z=6,\\quad 7x+\\lambda y+11z=8,\\quad 7x+11y+\\lambda z=4$, the value of $\\lambda$ for which it has infinitely many solutions is",
+ "options": [
+  "$11$",
+  "$7$",
+  "$3$",
+  "$15$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Subtracting the first equation from the other two gives a 2×2 system with determinant (λ−7)²−16. Singularity requires λ=3 or 11. At λ=3, the equations are consistent and dependent, so the original system has infinitely many solutions; at λ=11 they are inconsistent.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\Delta=7[(\\lambda-7)^2-16]=7(\\lambda-3)(\\lambda-11)$. At $\\lambda=3$, $R_2+R_3=2R_1$ and $8+4=2(6)$; the coefficient matrix has rank $2$, so there are infinitely many solutions. At $\\lambda=11$, $R_2=R_3$ but their right-hand sides differ, so the system is inconsistent. At $\\lambda=3$: $\\Delta_x=-672+140+532=0$, $\\Delta_y=-140+336-196=0$, $\\Delta_z=-532+196+336=0$.\n\nIndependent check: Subtracting the first equation from the other two gives a 2×2 system with determinant (λ−7)²−16. Singularity requires λ=3 or 11. At λ=3, the equations are consistent and dependent, so the original system has infinitely many solutions; at λ=11 they are inconsistent.",
+ "solution": "Subtracting the first equation from the other two gives a $2\\times2$ system whose determinant is $(\\lambda-7)^2-16$. Thus singularity requires $\\lambda=3$ or $11$.\nAt $\\lambda=3$, the second and third equations add to twice the first, including their right-hand sides: $8+4=2(6)$. Hence the system is consistent with rank $2<3$, so it has infinitely many solutions.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "For the system $7x+7y+7z=6,\\quad 7x+\\lambda y+11z=8,\\quad 7x+11y+\\lambda z=4$, the value of $\\lambda$ for which it has infinitely many solutions is",
+  "options": [
+   "$3$",
+   "$7$",
+   "$11$",
+   "$15$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\Delta=7[(\\lambda-7)^2-16]=7(\\lambda-3)(\\lambda-11)$. At $\\lambda=3$, $R_2+R_3=2R_1$ and $8+4=2(6)$; the coefficient matrix has rank $2$, so there are infinitely many solutions. At $\\lambda=11$, $R_2=R_3$ but their right-hand sides differ, so the system is inconsistent. At $\\lambda=3$: $\\Delta_x=-672+140+532=0$, $\\Delta_y=-140+336-196=0$, $\\Delta_z=-532+196+336=0$.",
+  "distractor_notes": "B: Takes the center of the quadratic factor as a root. C: Chooses a singular value without checking consistency. D: Miscalculates $\\sqrt{16}$ as $8$."
+ },
+ "variant_of": "g9864ecc57077",
+ "author_model": "openai/gpt-6-luna-pro"
+}

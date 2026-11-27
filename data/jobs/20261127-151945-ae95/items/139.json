@@ -1,0 +1,71 @@
+{
+ "qno": 139,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 139,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power bookkeeping",
+  "brief": "Given a matrix equation A² = A or A² = I (or a specific 2×2 matrix), compute a higher power like Aⁿ or an expression like A⁵ from the pattern; small n with pattern recognition.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:121",
+   "2025s2:121",
+   "2022:99"
+  ],
+  "origin": "variant",
+  "bank_ref": "gef0ec8a9f8dd"
+ },
+ "status": "ok",
+ "stem": "For $A=\\begin{bmatrix}1&1\\\\1&-1\\end{bmatrix}$, evaluate $A^9-2A^7+A^5+A^4$.",
+ "options": [
+  "$\\begin{bmatrix}4&0\\\\0&4\\end{bmatrix}$",
+  "$\\begin{bmatrix}8&4\\\\4&0\\end{bmatrix}$",
+  "$\\begin{bmatrix}6&2\\\\2&2\\end{bmatrix}$",
+  "$\\begin{bmatrix}16&12\\\\12&-8\\end{bmatrix}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Since A²=2I, A⁹=16A, A⁷=8A, A⁵=4A, and A⁴=4I. Thus the expression is 16A−16A+4A+4I=4A+4I=[[8,4],[4,0]].",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A^2=2I$; hence $A^9=16A$, $A^7=8A$, $A^5=4A$, and $A^4=4I$. Thus $A^9-2A^7+A^5+A^4=4A+4I=\\begin{bmatrix}8&4\\\\4&0\\end{bmatrix}$.\n\nIndependent check: Since A²=2I, A⁹=16A, A⁷=8A, A⁵=4A, and A⁴=4I. Thus the expression is 16A−16A+4A+4I=4A+4I=[[8,4],[4,0]].",
+ "solution": "$A^2=2I$, so $A^9=16A$, $A^7=8A$, $A^5=4A$ and $A^4=4I$.\n$$A^9-2A^7+A^5+A^4=16A-16A+4A+4I=4A+4I=\\begin{bmatrix}8&4\\\\4&0\\end{bmatrix}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $A=\\begin{bmatrix}1&1\\\\1&-1\\end{bmatrix}$, evaluate $A^9-2A^7+A^5+A^4$.",
+  "options": [
+   "$\\begin{bmatrix}8&4\\\\4&0\\end{bmatrix}$",
+   "$\\begin{bmatrix}4&0\\\\0&4\\end{bmatrix}$",
+   "$\\begin{bmatrix}6&2\\\\2&2\\end{bmatrix}$",
+   "$\\begin{bmatrix}16&12\\\\12&-8\\end{bmatrix}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$A^2=2I$; hence $A^9=16A$, $A^7=8A$, $A^5=4A$, and $A^4=4I$. Thus $A^9-2A^7+A^5+A^4=4A+4I=\\begin{bmatrix}8&4\\\\4&0\\end{bmatrix}$.",
+  "distractor_notes": "B: Treats each odd power as $A$, so the odd-power terms cancel. C: Underestimates the scaling factors of the odd powers by a factor of $2$. D: Uses $-A^7$ instead of $-2A^7$."
+ },
+ "variant_of": "gef0ec8a9f8dd",
+ "author_model": "openai/gpt-6-luna-pro"
+}

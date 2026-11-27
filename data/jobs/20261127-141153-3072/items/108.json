@@ -1,0 +1,68 @@
+{
+ "qno": 108,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 108,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Properties of definite integrals",
+  "archetype": "symmetry + standard integral",
+  "brief": "Definite integral of a function symmetric about midpoint (f(a+b−x) relation) combined with a standard result like ∫dx/(1+x²) or log form; use symmetry to simplify.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:126",
+   "2025s2:102",
+   "2024s2:121"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle \\int_0^1 x\\left(\\dfrac{1}{1+x^2}+\\dfrac{1}{1+(1-x)^2}\\right)\\,dx$.",
+ "options": [
+  "$\\dfrac{\\pi}{4}$",
+  "$\\ln 2$",
+  "$\\dfrac{\\pi}{8}$",
+  "$\\dfrac{\\pi}{2}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Split the integral. The first term is \\(\\tfrac12\\ln 2\\). With \\(u=1-x\\), the second is \\(\\int_0^1 \\frac{1-u}{1+u^2}\\,du=\\frac{\\pi}{4}-\\tfrac12\\ln 2\\). Their sum is \\(\\frac{\\pi}{4}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$g(x)=\\dfrac{1}{1+x^2}+\\dfrac{1}{1+(1-x)^2},\\quad g(1-x)=g(x).$ Hence $\\int_0^1 xg(x)\\,dx=\\dfrac{1}{2}\\int_0^1g(x)\\,dx=\\int_0^1\\dfrac{dx}{1+x^2}=\\dfrac{\\pi}{4}.$\n\nIndependent check: Split the integral. The first term is \\(\\tfrac12\\ln 2\\). With \\(u=1-x\\), the second is \\(\\int_0^1 \\frac{1-u}{1+u^2}\\,du=\\frac{\\pi}{4}-\\tfrac12\\ln 2\\). Their sum is \\(\\frac{\\pi}{4}\\).",
+ "solution": "Let $g(x)=\\dfrac{1}{1+x^2}+\\dfrac{1}{1+(1-x)^2}$, so $g(1-x)=g(x)$. Hence\n$$\\int_0^1 xg(x)\\,dx=\\frac12\\int_0^1g(x)\\,dx=\\int_0^1\\frac{dx}{1+x^2}=\\frac{\\pi}{4}.$$",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle \\int_0^1 x\\left(\\dfrac{1}{1+x^2}+\\dfrac{1}{1+(1-x)^2}\\right)\\,dx$.",
+  "options": [
+   "$\\dfrac{\\pi}{8}$",
+   "$\\ln 2$",
+   "$\\dfrac{\\pi}{4}$",
+   "$\\dfrac{\\pi}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$g(x)=\\dfrac{1}{1+x^2}+\\dfrac{1}{1+(1-x)^2},\\quad g(1-x)=g(x).$ Hence $\\int_0^1 xg(x)\\,dx=\\dfrac{1}{2}\\int_0^1g(x)\\,dx=\\int_0^1\\dfrac{dx}{1+x^2}=\\dfrac{\\pi}{4}.$",
+  "distractor_notes": "A: applies the symmetry factor $\\dfrac{1}{2}$ twice; B: uses the logarithmic antiderivative for $\\int \\dfrac{x}{1+x^2}\\,dx$; D: omits the factor $\\dfrac{1}{2}$ from the symmetry argument."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

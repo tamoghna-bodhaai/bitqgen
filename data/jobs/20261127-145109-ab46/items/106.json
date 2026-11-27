@@ -1,0 +1,70 @@
+{
+ "qno": 106,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 106,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle through given points",
+  "archetype": "locate centre",
+  "brief": "Give the general equation of a circle with messy coefficients; ask for its centre and radius via completing the square.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:109",
+   "2026s2:110",
+   "2025s1:113"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The equation of a circle is $7x^2+7y^2-28x+42y-21=0$. Its centre and radius are",
+ "options": [
+  "$(2,-3),\\ 16$",
+  "$(-2,3),\\ 4$",
+  "$(2,-3),\\ 4$",
+  "$(-2,3),\\ 16$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Divide by 7 and complete squares: $(x-2)^2+(y+3)^2=16$. Thus the centre is $(2,-3)$ and the radius is $4$.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Divide by $7$: $x^2+y^2-4x+6y-3=0$.<br>$(x-2)^2+(y+3)^2=16$.<br>Centre $(2,-3)$; radius $4$.\n\nIndependent check: Divide by 7 and complete squares: $(x-2)^2+(y+3)^2=16$. Thus the centre is $(2,-3)$ and the radius is $4$.",
+ "solution": "Dividing by $7$ and completing squares,\n$$x^2+y^2-4x+6y-3=0\\implies (x-2)^2+(y+3)^2=16.$$\nComparing with $(x-h)^2+(y-k)^2=r^2$, the centre is $(2,-3)$ and the radius is $4$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The equation of a circle is $7x^2+7y^2-28x+42y-21=0$. Its centre and radius are",
+  "options": [
+   "$(2,-3),\\ 4$",
+   "$(-2,3),\\ 4$",
+   "$(2,-3),\\ 16$",
+   "$(-2,3),\\ 16$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Divide by $7$: $x^2+y^2-4x+6y-3=0$.<br>$(x-2)^2+(y+3)^2=16$.<br>Centre $(2,-3)$; radius $4$.",
+  "distractor_notes": "B: reverses the signs of the centre coordinates. C: gives the radius squared instead of the radius. D: combines both errors."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

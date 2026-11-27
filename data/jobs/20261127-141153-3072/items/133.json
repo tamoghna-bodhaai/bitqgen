@@ -1,0 +1,68 @@
+{
+ "qno": 133,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 133,
+  "section": "Mathematics",
+  "chapter": "Matrices and Determinants",
+  "subtopic": "Matrix powers",
+  "archetype": "power bookkeeping",
+  "brief": "For a small matrix A, compute Aⁿ or an expression like A³ − 3A² + I; exploit a pattern or Cayley–Hamilton relation; moderate.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:129",
+   "2024s1:101",
+   "2024s1:105"
+  ]
+ },
+ "status": "ok",
+ "stem": "Let $A$ be the $2\\times2$ matrix whose entries $(a_{11},a_{12},a_{21},a_{22})$ are $(1,2,2,1)$. Find $A^3-3A^2+I$, giving its entries in row-major order.",
+ "options": [
+  "$(1,2,2,1)$",
+  "$(-1,2,2,-1)$",
+  "$(-2,2,2,-2)$",
+  "$(5,2,2,5)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "A² = [[5,4],[4,5]] and A³ = [[13,14],[14,13]]. Thus A³ − 3A² + I = [[−1,2],[2,−1]].",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$A^2-2A-3I=0;\\quad A^3=7A+6I;\\quad A^3-3A^2+I=A-2I=(-1,2,2,-1)$.\n\nIndependent check: A² = [[5,4],[4,5]] and A³ = [[13,14],[14,13]]. Thus A³ − 3A² + I = [[−1,2],[2,−1]].",
+ "solution": "By direct multiplication, $A^2=\\begin{pmatrix}5&4\\\\4&5\\end{pmatrix}$ and $A^3=\\begin{pmatrix}13&14\\\\14&13\\end{pmatrix}$. Hence\n$$A^3-3A^2+I=\\begin{pmatrix}-1&2\\\\2&-1\\end{pmatrix},$$\nwhose row-major entries are $(-1,2,2,-1)$.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Let $A$ be the $2\\times2$ matrix whose entries $(a_{11},a_{12},a_{21},a_{22})$ are $(1,2,2,1)$. Find $A^3-3A^2+I$, giving its entries in row-major order.",
+  "options": [
+   "$(1,2,2,1)$",
+   "$(-1,2,2,-1)$",
+   "$(-2,2,2,-2)$",
+   "$(5,2,2,5)$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$A^2-2A-3I=0;\\quad A^3=7A+6I;\\quad A^3-3A^2+I=A-2I=(-1,2,2,-1)$.",
+  "distractor_notes": "A: Returns $A$ without evaluating the polynomial; C: Subtracts one extra $I$; D: Adds instead of subtracting the scalar multiple of $I$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

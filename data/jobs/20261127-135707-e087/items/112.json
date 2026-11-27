@@ -1,0 +1,68 @@
+{
+ "qno": 112,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 112,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Homogeneous DE",
+  "archetype": "y = vx substitution",
+  "brief": "Solve a homogeneous first-order DE using y = vx substitution and obtain the general solution.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:103",
+   "2021:113",
+   "2026s1:126"
+  ]
+ },
+ "status": "ok",
+ "stem": "For $x>0$, the general solution of $\\dfrac{dy}{dx}=\\dfrac{x+y}{x-y}$ is",
+ "options": [
+  "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)-\\dfrac{1}{2}\\ln\\left(1+\\dfrac{y^2}{x^2}\\right)=C$",
+  "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)+\\dfrac{1}{2}\\ln(x^2+y^2)=C$",
+  "$\\tan^{-1}\\left(\\dfrac{x}{y}\\right)-\\dfrac{1}{2}\\ln(x^2+y^2)=C$",
+  "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)-\\dfrac{1}{2}\\ln(x^2+y^2)=C$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Set v=y/x. Then x dv/dx=(1+v²)/(1-v), so integrating gives arctan(v)−½ln(1+v²)=ln(x)+C. Since x>0, this is equivalent to option A.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$y=vx$ gives $v+x\\dfrac{dv}{dx}=\\dfrac{1+v}{1-v}$, so $\\dfrac{1-v}{1+v^2}\\,dv=\\dfrac{dx}{x}$. Thus $\\tan^{-1}v-\\dfrac12\\ln(1+v^2)=\\ln x+C$, or $\\tan^{-1}(y/x)-\\dfrac12\\ln(x^2+y^2)=C$.\n\nIndependent check: Set v=y/x. Then x dv/dx=(1+v²)/(1-v), so integrating gives arctan(v)−½ln(1+v²)=ln(x)+C. Since x>0, this is equivalent to option A.",
+ "solution": "Let $y=vx$. Then $v+x\\dfrac{dv}{dx}=\\dfrac{1+v}{1-v}$, so $\\dfrac{1-v}{1+v^2}\\,dv=\\dfrac{dx}{x}$.\n$$\\tan^{-1}v-\\frac12\\ln(1+v^2)=\\ln x+C$$\nUsing $v=\\dfrac yx$ and $x>0$, this simplifies to $\\tan^{-1}\\left(\\dfrac yx\\right)-\\dfrac12\\ln(x^2+y^2)=C$. (D)",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "For $x>0$, the general solution of $\\dfrac{dy}{dx}=\\dfrac{x+y}{x-y}$ is",
+  "options": [
+   "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)-\\dfrac{1}{2}\\ln(x^2+y^2)=C$",
+   "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)+\\dfrac{1}{2}\\ln(x^2+y^2)=C$",
+   "$\\tan^{-1}\\left(\\dfrac{x}{y}\\right)-\\dfrac{1}{2}\\ln(x^2+y^2)=C$",
+   "$\\tan^{-1}\\left(\\dfrac{y}{x}\\right)-\\dfrac{1}{2}\\ln\\left(1+\\dfrac{y^2}{x^2}\\right)=C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$y=vx$ gives $v+x\\dfrac{dv}{dx}=\\dfrac{1+v}{1-v}$, so $\\dfrac{1-v}{1+v^2}\\,dv=\\dfrac{dx}{x}$. Thus $\\tan^{-1}v-\\dfrac12\\ln(1+v^2)=\\ln x+C$, or $\\tan^{-1}(y/x)-\\dfrac12\\ln(x^2+y^2)=C$.",
+  "distractor_notes": "B: Reverses the logarithm sign; C: Uses the reciprocal slope in the inverse tangent; D: Omits the contribution from $\\ln x$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

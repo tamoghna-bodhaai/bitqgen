@@ -1,0 +1,71 @@
+{
+ "qno": 2,
+ "section": "Physics",
+ "slot": {
+  "qno": 2,
+  "section": "Physics",
+  "chapter": "Moving Charges and Magnetism",
+  "subtopic": "Conversion of galvanometer to voltmeter",
+  "archetype": "single-formula numerical",
+  "brief": "Given galvanometer resistance and full-scale deflection current, find the multiplier resistance to convert it to a voltmeter of a given range.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s1:9",
+   "2021:21",
+   "2023s2:15"
+  ],
+  "origin": "variant",
+  "bank_ref": "g636cb81eae7f"
+ },
+ "status": "ok",
+ "stem": "A galvanometer of resistance $25\\,\\Omega$ has a full-scale deflection current of $4$ mA. What series multiplier resistance is required to convert it into a voltmeter of range $5$ V?",
+ "options": [
+  "$25\\,\\Omega$",
+  "$1250\\,\\Omega$",
+  "$1225\\,\\Omega$",
+  "$1275\\,\\Omega$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Required total resistance = 5 V / 0.004 A = 1250 Ω. Series multiplier = 1250 − 25 = 1225 Ω.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$R=\\dfrac{V}{I_g}-G$ \n$R=\\dfrac{5}{4\\times10^{-3}}-25=1225\\,\\Omega$\n\nIndependent check: Required total resistance = 5 V / 0.004 A = 1250 Ω. Series multiplier = 1250 − 25 = 1225 Ω.",
+ "solution": "For a voltmeter of range $V$, the series multiplier is $R=\\dfrac{V}{I_g}-G$.\n$$R=\\frac{5}{4\\times10^{-3}}-25=1225\\,\\Omega$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A galvanometer of resistance $25\\,\\Omega$ has a full-scale deflection current of $4$ mA. What series multiplier resistance is required to convert it into a voltmeter of range $5$ V?",
+  "options": [
+   "$25\\,\\Omega$",
+   "$1225\\,\\Omega$",
+   "$1250\\,\\Omega$",
+   "$1275\\,\\Omega$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$R=\\dfrac{V}{I_g}-G$ \n$R=\\dfrac{5}{4\\times10^{-3}}-25=1225\\,\\Omega$",
+  "distractor_notes": "A: reports the galvanometer resistance instead of the multiplier. C: gives total voltmeter resistance without subtracting the galvanometer resistance. D: adds the galvanometer resistance instead of subtracting it."
+ },
+ "variant_of": "g636cb81eae7f",
+ "author_model": "openai/gpt-6-luna-pro"
+}

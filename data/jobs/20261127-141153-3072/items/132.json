@@ -1,0 +1,68 @@
+{
+ "qno": 132,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 132,
+  "section": "Mathematics",
+  "chapter": "Conic Sections",
+  "subtopic": "Circle – tangency condition",
+  "archetype": "tangency condition",
+  "brief": "Line touches a circle (or circle touches axes/another circle); use distance from centre = radius to find an unknown parameter; easy.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2023s2:94",
+   "2025s2:116",
+   "2021:149"
+  ]
+ },
+ "status": "ok",
+ "stem": "The line $y=mx$ touches the circle $(x-2)^2+(y+1)^2=4$. Find $m$.",
+ "options": [
+  "$\\dfrac{3}{4}$",
+  "$-\\dfrac{3}{4}$",
+  "$\\dfrac{4}{3}$",
+  "$\\dfrac{1}{4}$"
+ ],
+ "answer": "A",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The distance from the center \u001b(2,-1)\u001b to the line \u001b y=mx\u001b is \u001b|2m+1|/\\sqrt{m^2+1}\u001b. Equating this to the radius 2 gives \u001b(2m+1)^2=4(m^2+1)\u001b, so \u001bm=3/4\u001b.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "Centre $(2,-1)$, radius $2$.\n$$\\frac{|2m+1|}{\\sqrt{m^2+1}}=2\\quad\\Longrightarrow\\quad(2m+1)^2=4(m^2+1)\\quad\\Longrightarrow\\quad m=\\frac{3}{4}$$\n\nIndependent check: The distance from the center \u001b(2,-1)\u001b to the line \u001b y=mx\u001b is \u001b|2m+1|/\\sqrt{m^2+1}\u001b. Equating this to the radius 2 gives \u001b(2m+1)^2=4(m^2+1)\u001b, so \u001bm=3/4\u001b.",
+ "solution": "The centre is $(2,-1)$ and the radius is $2$. For tangency, the distance from the centre to $y=mx$ must equal the radius:\n$$\\frac{|2m+1|}{\\sqrt{m^2+1}}=2 \\implies (2m+1)^2=4(m^2+1) \\implies m=\\frac{3}{4}.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The line $y=mx$ touches the circle $(x-2)^2+(y+1)^2=4$. Find $m$.",
+  "options": [
+   "$\\dfrac{3}{4}$",
+   "$-\\dfrac{3}{4}$",
+   "$\\dfrac{4}{3}$",
+   "$\\dfrac{1}{4}$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "Centre $(2,-1)$, radius $2$.\n$$\\frac{|2m+1|}{\\sqrt{m^2+1}}=2\\quad\\Longrightarrow\\quad(2m+1)^2=4(m^2+1)\\quad\\Longrightarrow\\quad m=\\frac{3}{4}$$",
+  "distractor_notes": "B: sign error in the centre-to-line distance; C: takes the reciprocal slope; D: algebraic error when solving the squared equation."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

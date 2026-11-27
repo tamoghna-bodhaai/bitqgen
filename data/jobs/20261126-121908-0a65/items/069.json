@@ -20,23 +20,23 @@
   ]
  },
  "status": "ok",
- "stem": "For the electrochemical cell at $298\\text{ K}$:\n$$\\text{Ni}(s) \\mid \\text{Ni}^{2+}(aq,\\, 0.01\\text{ M}) \\mid\\mid \\text{Ag}^+(aq,\\, 0.01\\text{ M}) \\mid \\text{Ag}(s)$$\nthe cell potential is:\n(Given: $E^\\circ_{\\text{Ag}^+/\\text{Ag}} = +0.80\\text{ V}$, $E^\\circ_{\\text{Ni}^{2+}/\\text{Ni}} = -0.25\\text{ V}$, and $\\dfrac{2.303 RT}{F} = 0.059\\text{ V}$)",
+ "stem": "At $298\\text{ K}$, the cell potential of $\\text{Cu}(s)\\mid\\text{Cu}^{2+}(0.001\\text{ M})\\mid\\mid\\text{Cu}^{2+}(0.1\\text{ M})\\mid\\text{Cu}(s)$ is (take $2.303RT/F=0.059\\text{ V}$):",
  "options": [
-  "$0.932\\text{ V}$",
-  "$0.991\\text{ V}$",
-  "$1.050\\text{ V}$",
-  "$1.109\\text{ V}$"
+  "$-0.059\\text{ V}$",
+  "$0.0295\\text{ V}$",
+  "$0.059\\text{ V}$",
+  "$0.118\\text{ V}$"
  ],
- "answer": "B",
+ "answer": "C",
  "figure": null,
  "option_figs": null,
  "option_width": null,
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "Cell reaction: Ni + 2Ag+ → Ni2+ + 2Ag, n=2. E°cell = 0.80 − (−0.25) = 1.05 V. Q = [Ni2+]/[Ag+]² = 0.01/(0.01)² = 100. Nernst: E = 1.05 − (0.059/2)·log100 = 1.05 − 0.059 = 0.991 V.",
-   "answer": "B",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For the concentration cell, E_cell = (0.059/2) log10(0.1/0.001) = 0.059 V.",
+   "answer": "C",
    "confidence": 0.99,
    "multiple_correct": false,
    "issues": [],
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. Write the half-reactions and the balanced overall cell reaction:\nAnode (oxidation): $\\text{Ni}(s) \\rightarrow \\text{Ni}^{2+}(aq) + 2e^-$\nCathode (reduction): $2\\text{Ag}^+(aq) + 2e^- \\rightarrow 2\\text{Ag}(s)$\nOverall reaction: $\\text{Ni}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Ni}^{2+}(aq) + 2\\text{Ag}(s)$\nNumber of electrons transferred, $n = 2$.\n\n2. Compute the standard cell potential, $E^\\circ_{\\text{cell}}$:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = +0.80\\text{ V} - (-0.25\\text{ V}) = +1.05\\text{ V}$$\n\n3. Determine the reaction quotient, $Q$:\n$$Q = \\dfrac{[\\text{Ni}^{2+}]}{[\\text{Ag}^+]^2} = \\dfrac{0.01}{(0.01)^2} = \\dfrac{10^{-2}}{10^{-4}} = 10^2$$\n$$\\log_{10} Q = \\log_{10}(10^2) = 2$$\n\n4. Apply the Nernst equation at $298\\text{ K}$:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\dfrac{0.059}{n} \\log_{10} Q$$\n$$E_{\\text{cell}} = 1.05 - \\dfrac{0.059}{2} \\times 2 = 1.05 - 0.059 = 0.991\\text{ V}$$\n\nIndependent check: Cell reaction: Ni + 2Ag+ → Ni2+ + 2Ag, n=2. E°cell = 0.80 − (−0.25) = 1.05 V. Q = [Ni2+]/[Ag+]² = 0.01/(0.01)² = 100. Nernst: E = 1.05 − (0.059/2)·log100 = 1.05 − 0.059 = 0.991 V.",
+ "working": "$E_{\\text{cell}}=\\dfrac{0.059}{2}\\log_{10}\\left(\\dfrac{0.1}{0.001}\\right)$\n$=\\dfrac{0.059}{2}\\log_{10}(100)=0.059\\text{ V}$\n\nIndependent check: For the concentration cell, E_cell = (0.059/2) log10(0.1/0.001) = 0.059 V.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "For the electrochemical cell at $298\\text{ K}$:\n$$\\text{Ni}(s) \\mid \\text{Ni}^{2+}(aq,\\, 0.01\\text{ M}) \\mid\\mid \\text{Ag}^+(aq,\\, 0.01\\text{ M}) \\mid \\text{Ag}(s)$$\nthe cell potential is:\n(Given: $E^\\circ_{\\text{Ag}^+/\\text{Ag}} = +0.80\\text{ V}$, $E^\\circ_{\\text{Ni}^{2+}/\\text{Ni}} = -0.25\\text{ V}$, and $\\dfrac{2.303 RT}{F} = 0.059\\text{ V}$)",
+  "stem": "At $298\\text{ K}$, the cell potential of $\\text{Cu}(s)\\mid\\text{Cu}^{2+}(0.001\\text{ M})\\mid\\mid\\text{Cu}^{2+}(0.1\\text{ M})\\mid\\text{Cu}(s)$ is (take $2.303RT/F=0.059\\text{ V}$):",
   "options": [
-   "$0.932\\text{ V}$",
-   "$0.991\\text{ V}$",
-   "$1.050\\text{ V}$",
-   "$1.109\\text{ V}$"
+   "$-0.059\\text{ V}$",
+   "$0.0295\\text{ V}$",
+   "$0.059\\text{ V}$",
+   "$0.118\\text{ V}$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. Write the half-reactions and the balanced overall cell reaction:\nAnode (oxidation): $\\text{Ni}(s) \\rightarrow \\text{Ni}^{2+}(aq) + 2e^-$\nCathode (reduction): $2\\text{Ag}^+(aq) + 2e^- \\rightarrow 2\\text{Ag}(s)$\nOverall reaction: $\\text{Ni}(s) + 2\\text{Ag}^+(aq) \\rightarrow \\text{Ni}^{2+}(aq) + 2\\text{Ag}(s)$\nNumber of electrons transferred, $n = 2$.\n\n2. Compute the standard cell potential, $E^\\circ_{\\text{cell}}$:\n$$E^\\circ_{\\text{cell}} = E^\\circ_{\\text{cathode}} - E^\\circ_{\\text{anode}} = +0.80\\text{ V} - (-0.25\\text{ V}) = +1.05\\text{ V}$$\n\n3. Determine the reaction quotient, $Q$:\n$$Q = \\dfrac{[\\text{Ni}^{2+}]}{[\\text{Ag}^+]^2} = \\dfrac{0.01}{(0.01)^2} = \\dfrac{10^{-2}}{10^{-4}} = 10^2$$\n$$\\log_{10} Q = \\log_{10}(10^2) = 2$$\n\n4. Apply the Nernst equation at $298\\text{ K}$:\n$$E_{\\text{cell}} = E^\\circ_{\\text{cell}} - \\dfrac{0.059}{n} \\log_{10} Q$$\n$$E_{\\text{cell}} = 1.05 - \\dfrac{0.059}{2} \\times 2 = 1.05 - 0.059 = 0.991\\text{ V}$$",
-  "distractor_notes": "Option A ($0.932\\text{ V}$): Uses $n = 1$ instead of $n = 2$ in the Nernst equation ($1.05 - 0.059 \\times 2 = 0.932\\text{ V}$).\nOption C ($1.050\\text{ V}$): Forgets to square $[\\text{Ag}^+]$ in the reaction quotient, giving $Q = 0.01/0.01 = 1$, $\\log Q = 0$, and thus $E_{\\text{cell}} = E^\\circ_{\\text{cell}}$.\nOption D ($1.109\\text{ V}$): Commits a sign error in the Nernst equation by adding the logarithmic term instead of subtracting it ($1.05 + 0.059 = 1.109\\text{ V}$).",
+  "answer": "C",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$E_{\\text{cell}}=\\dfrac{0.059}{2}\\log_{10}\\left(\\dfrac{0.1}{0.001}\\right)$\n$=\\dfrac{0.059}{2}\\log_{10}(100)=0.059\\text{ V}$",
+  "distractor_notes": "A: reverses the concentration ratio; B: uses a ratio of $10$ instead of $100$; D: omits division by $n=2$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

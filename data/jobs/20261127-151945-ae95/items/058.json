@@ -1,0 +1,70 @@
+{
+ "qno": 58,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 58,
+  "section": "Chemistry",
+  "chapter": "Structure of Atom",
+  "subtopic": "Photon energy",
+  "archetype": "",
+  "brief": "",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:34",
+   "2024s2:60",
+   "2026s1:34"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A source of power $3.0\\ \\text{mW}$ operates for $4.0\\ \\text{ms}$; $50\\%$ of its energy becomes $600\\ \\text{nm}$ light. How many photons are produced? Take $h=6.0\\times10^{-34}\\ \\text{J s}$ and $c=3.0\\times10^8\\ \\text{m s}^{-1}$.",
+ "options": [
+  "$1.0\\times10^{13}$ photons",
+  "$4.0\\times10^{13}$ photons",
+  "$2.0\\times10^{13}$ photons",
+  "$2.0\\times10^{16}$ photons"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Total energy = (3.0×10⁻³)(4.0×10⁻³) = 1.2×10⁻⁵ J; light energy = 6.0×10⁻⁶ J. Each photon has energy hc/λ = 3.0×10⁻¹⁹ J, giving 2.0×10¹³ photons.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$E_{\\text{light}}=0.50(3.0\\times10^{-3})(4.0\\times10^{-3})=6.0\\times10^{-6}\\ \\text{J}$\n$E_{\\gamma}=\\dfrac{hc}{\\lambda}=\\dfrac{(6.0\\times10^{-34})(3.0\\times10^8)}{600\\times10^{-9}}=3.0\\times10^{-19}\\ \\text{J}$\n$N=\\dfrac{E_{\\text{light}}}{E_{\\gamma}}=2.0\\times10^{13}$\n\nIndependent check: Total energy = (3.0×10⁻³)(4.0×10⁻³) = 1.2×10⁻⁵ J; light energy = 6.0×10⁻⁶ J. Each photon has energy hc/λ = 3.0×10⁻¹⁹ J, giving 2.0×10¹³ photons.",
+ "solution": "The light energy is $E=0.50Pt=0.50(3.0\\times10^{-3})(4.0\\times10^{-3})=6.0\\times10^{-6}\\ \\text{J}$.\nEach photon has energy\n$$E_\\gamma=\\frac{hc}{\\lambda}=\\frac{(6.0\\times10^{-34})(3.0\\times10^8)}{600\\times10^{-9}}=3.0\\times10^{-19}\\ \\text{J}.$$\nThus, $N=E/E_\\gamma=2.0\\times10^{13}$ photons.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A source of power $3.0\\ \\text{mW}$ operates for $4.0\\ \\text{ms}$; $50\\%$ of its energy becomes $600\\ \\text{nm}$ light. How many photons are produced? Take $h=6.0\\times10^{-34}\\ \\text{J s}$ and $c=3.0\\times10^8\\ \\text{m s}^{-1}$.",
+  "options": [
+   "$1.0\\times10^{13}$ photons",
+   "$2.0\\times10^{13}$ photons",
+   "$4.0\\times10^{13}$ photons",
+   "$2.0\\times10^{16}$ photons"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$E_{\\text{light}}=0.50(3.0\\times10^{-3})(4.0\\times10^{-3})=6.0\\times10^{-6}\\ \\text{J}$\n$E_{\\gamma}=\\dfrac{hc}{\\lambda}=\\dfrac{(6.0\\times10^{-34})(3.0\\times10^8)}{600\\times10^{-9}}=3.0\\times10^{-19}\\ \\text{J}$\n$N=\\dfrac{E_{\\text{light}}}{E_{\\gamma}}=2.0\\times10^{13}$",
+  "distractor_notes": "A: Doubles the energy per photon, giving half the correct count.\nC: Ignores the 50% conversion efficiency.\nD: Treats milliseconds as seconds."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

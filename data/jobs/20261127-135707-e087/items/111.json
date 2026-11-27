@@ -1,0 +1,68 @@
+{
+ "qno": 111,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 111,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by parts",
+  "archetype": "integration technique",
+  "brief": "Direct integration by parts of a simple product (polynomial × exponential/trig); one application suffices.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:102",
+   "2026s2:126",
+   "2026s2:100"
+  ]
+ },
+ "status": "ok",
+ "stem": "Evaluate the integral by parts: $\\displaystyle \\int xe^x\\,dx$.",
+ "options": [
+  "$e^x(1-x)+C$",
+  "$e^x(x+1)+C$",
+  "$e^x(x-1)+C$",
+  "$xe^x+C$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Using integration by parts, ∫ xe^x dx = xe^x - ∫ e^x dx = e^x(x-1)+C.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$u=x,\\quad dv=e^x\\,dx$<br>$\\displaystyle \\int xe^x\\,dx=xe^x-\\int e^x\\,dx=e^x(x-1)+C$\n\nIndependent check: Using integration by parts, ∫ xe^x dx = xe^x - ∫ e^x dx = e^x(x-1)+C.",
+ "solution": "Using integration by parts, take $u=x$ and $dv=e^x\\,dx$, so $du=dx$ and $v=e^x$.\n$$\\int xe^x\\,dx=xe^x-\\int e^x\\,dx=e^x(x-1)+C$$",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "Evaluate the integral by parts: $\\displaystyle \\int xe^x\\,dx$.",
+  "options": [
+   "$e^x(x-1)+C$",
+   "$e^x(x+1)+C$",
+   "$e^x(1-x)+C$",
+   "$xe^x+C$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$u=x,\\quad dv=e^x\\,dx$<br>$\\displaystyle \\int xe^x\\,dx=xe^x-\\int e^x\\,dx=e^x(x-1)+C$",
+  "distractor_notes": "B: uses the wrong sign in the integration-by-parts subtraction.<br>C: reverses the sign of the correct antiderivative.<br>D: omits the term arising from differentiating $x$."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

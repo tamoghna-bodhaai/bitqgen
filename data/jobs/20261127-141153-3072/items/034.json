@@ -1,0 +1,70 @@
+{
+ "qno": 34,
+ "section": "Physics",
+ "slot": {
+  "qno": 34,
+  "section": "Physics",
+  "chapter": "Electromagnetic Waves",
+  "subtopic": "Radiation pressure / momentum of EM waves",
+  "archetype": "momentum change",
+  "brief": "Plane electromagnetic wave of given intensity strikes a surface that is perfectly reflecting or perfectly absorbing; find the radiation pressure or force on the surface, comparing the two cases.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2024s2:10",
+   "2022:18",
+   "2021:12"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "A plane electromagnetic wave of intensity $1.2\\times10^3\\ \\text{W m}^{-2}$ is incident normally on a surface of area $0.50\\ \\text{m}^2$. Find the difference between the forces when the surface is perfectly reflecting and perfectly absorbing. Take $c=3.0\\times10^8\\ \\text{m s}^{-1}$.",
+ "options": [
+  "$1.0\\times10^{-6}\\ \\text{N}$",
+  "$2.0\\times10^{-6}\\ \\text{N}$",
+  "$4.0\\times10^{-6}\\ \\text{N}$",
+  "$6.0\\times10^{-6}\\ \\text{N}$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "For absorption, F = IA/c; for perfect reflection, F = 2IA/c. Their difference is IA/c = (1.2×10³)(0.50)/(3.0×10⁸) = 2.0×10⁻⁶ N.",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$F_{\\text{abs}}=\\dfrac{IA}{c}$; $F_{\\text{refl}}=\\dfrac{2IA}{c}$.\n$F_{\\text{refl}}-F_{\\text{abs}}=\\dfrac{IA}{c}$.\n$=\\dfrac{(1.2\\times10^3)(0.50)}{3.0\\times10^8}=2.0\\times10^{-6}\\ \\text{N}$\n\nIndependent check: For absorption, F = IA/c; for perfect reflection, F = 2IA/c. Their difference is IA/c = (1.2×10³)(0.50)/(3.0×10⁸) = 2.0×10⁻⁶ N.",
+ "solution": "For absorption, $F_{\\text{abs}}=IA/c$; for perfect reflection, $F_{\\text{refl}}=2IA/c$. Thus,\n$$F_{\\text{refl}}-F_{\\text{abs}}=\\frac{IA}{c}=\\frac{(1.2\\times10^3)(0.50)}{3.0\\times10^8}=2.0\\times10^{-6}\\ \\text{N}$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A plane electromagnetic wave of intensity $1.2\\times10^3\\ \\text{W m}^{-2}$ is incident normally on a surface of area $0.50\\ \\text{m}^2$. Find the difference between the forces when the surface is perfectly reflecting and perfectly absorbing. Take $c=3.0\\times10^8\\ \\text{m s}^{-1}$.",
+  "options": [
+   "$1.0\\times10^{-6}\\ \\text{N}$",
+   "$2.0\\times10^{-6}\\ \\text{N}$",
+   "$4.0\\times10^{-6}\\ \\text{N}$",
+   "$6.0\\times10^{-6}\\ \\text{N}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$F_{\\text{abs}}=\\dfrac{IA}{c}$; $F_{\\text{refl}}=\\dfrac{2IA}{c}$.\n$F_{\\text{refl}}-F_{\\text{abs}}=\\dfrac{IA}{c}$.\n$=\\dfrac{(1.2\\times10^3)(0.50)}{3.0\\times10^8}=2.0\\times10^{-6}\\ \\text{N}$",
+  "distractor_notes": "A: Uses half the correct force difference.\nC: Gives the reflecting force instead of the difference.\nD: Adds the two force magnitudes instead of subtracting them."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

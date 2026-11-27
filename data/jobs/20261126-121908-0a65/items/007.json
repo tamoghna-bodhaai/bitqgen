@@ -20,12 +20,12 @@
   ]
  },
  "status": "ok",
- "stem": "An ideal gas undergoes a cyclic process $A \\to B \\to C \\to A$. Path $A \\to B$ is an isobaric expansion at $300\\text{ kPa}$ from $2\\text{ m}^3$ to $5\\text{ m}^3$. Path $B \\to C$ is a straight line on the $P$–$V$ diagram to the state $(100\\text{ kPa},\\ 2\\text{ m}^3)$, and path $C \\to A$ is an isochoric pressure increase back to the initial state. The net work done by the gas in one complete cycle is:",
+ "stem": "An ideal gas expands isobarically at $250$ kPa from $1.0$ m$^3$ to $3.0$ m$^3$, then returns to its initial volume by isobaric compression at $100$ kPa. The connecting strokes are isochoric. The net work done by the gas per cycle is",
  "options": [
-  "$150\\text{ kJ}$",
-  "$300\\text{ kJ}$",
-  "$600\\text{ kJ}$",
-  "$900\\text{ kJ}$"
+  "$200$ kJ",
+  "$300$ kJ",
+  "$500$ kJ",
+  "$700$ kJ"
  ],
  "answer": "B",
  "figure": null,
@@ -34,10 +34,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "A=(300 kPa, 2 m³), B=(300, 5), C=(100, 2). W_AB = 300×3 = 900 kJ; W_BC = ½(300+100)×(2−5) = −600 kJ; W_CA = 0. Net = 300 kJ, equal to clockwise triangle area ½×3 m³×200 kPa.",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Expansion work = 250 kPa × 2 m³ = 500 kJ; compression work = 100 kPa × (−2 m³) = −200 kJ. Net work = 300 kJ.",
    "answer": "B",
-   "confidence": 0.99,
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -45,23 +45,24 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "The net work done during one cycle is given by the algebraic sum of the work done during each stroke:\n$$W_{\\text{net}} = W_{A \\to B} + W_{B \\to C} + W_{C \\to A}$$\n\n1. Expansion stroke ($A \\to B$):\n$$W_{A \\to B} = P \\Delta V = 300\\text{ kPa} \\times (5 - 2)\\text{ m}^3 = 900\\text{ kJ}$$\n\n2. Compression stroke ($B \\to C$):\nThe area under the line from $(5\\text{ m}^3, 300\\text{ kPa})$ to $(2\\text{ m}^3, 100\\text{ kPa})$ is a trapezium:\n$$W_{B \\to C} = -\\left[\\dfrac{300 + 100}{2}\\text{ kPa}\\right] \\times (5 - 2)\\text{ m}^3 = -(200\\text{ kPa}) \\times (3\\text{ m}^3) = -600\\text{ kJ}$$\n\n3. Isochoric stroke ($C \\to A$):\n$$W_{C \\to A} = 0$$\n\nThus, the net work done is:\n$$W_{\\text{net}} = 900\\text{ kJ} - 600\\text{ kJ} = 300\\text{ kJ}$$\n\nAlternatively, for a clockwise triangular cycle on a $P$–$V$ diagram, the net work equals the area enclosed:\n$$W_{\\text{net}} = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} = \\dfrac{1}{2} \\times (5 - 2)\\text{ m}^3 \\times (300 - 100)\\text{ kPa} = \\dfrac{1}{2} \\times 3 \\times 200 = 300\\text{ kJ}$$\n\nIndependent check: A=(300 kPa, 2 m³), B=(300, 5), C=(100, 2). W_AB = 300×3 = 900 kJ; W_BC = ½(300+100)×(2−5) = −600 kJ; W_CA = 0. Net = 300 kJ, equal to clockwise triangle area ½×3 m³×200 kPa.",
+ "working": "$W_{\\text{net}}=W_{\\text{exp}}+W_{\\text{comp}}$; isochoric strokes do zero work.\n$W_{\\text{net}}=(250-100)(3.0-1.0)\\text{ kPa m}^3=300$ kJ\n\nIndependent check: Expansion work = 250 kPa × 2 m³ = 500 kJ; compression work = 100 kPa × (−2 m³) = −200 kJ. Net work = 300 kJ.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "An ideal gas undergoes a cyclic process $A \\to B \\to C \\to A$. Path $A \\to B$ is an isobaric expansion at $300\\text{ kPa}$ from $2\\text{ m}^3$ to $5\\text{ m}^3$. Path $B \\to C$ is a straight line on the $P$–$V$ diagram to the state $(100\\text{ kPa},\\ 2\\text{ m}^3)$, and path $C \\to A$ is an isochoric pressure increase back to the initial state. The net work done by the gas in one complete cycle is:",
+  "stem": "An ideal gas expands isobarically at $250$ kPa from $1.0$ m$^3$ to $3.0$ m$^3$, then returns to its initial volume by isobaric compression at $100$ kPa. The connecting strokes are isochoric. The net work done by the gas per cycle is",
   "options": [
-   "$150\\text{ kJ}$",
-   "$300\\text{ kJ}$",
-   "$600\\text{ kJ}$",
-   "$900\\text{ kJ}$"
+   "$200$ kJ",
+   "$300$ kJ",
+   "$500$ kJ",
+   "$700$ kJ"
   ],
   "option_smiles": null,
   "answer": "B",
-  "working": "The net work done during one cycle is given by the algebraic sum of the work done during each stroke:\n$$W_{\\text{net}} = W_{A \\to B} + W_{B \\to C} + W_{C \\to A}$$\n\n1. Expansion stroke ($A \\to B$):\n$$W_{A \\to B} = P \\Delta V = 300\\text{ kPa} \\times (5 - 2)\\text{ m}^3 = 900\\text{ kJ}$$\n\n2. Compression stroke ($B \\to C$):\nThe area under the line from $(5\\text{ m}^3, 300\\text{ kPa})$ to $(2\\text{ m}^3, 100\\text{ kPa})$ is a trapezium:\n$$W_{B \\to C} = -\\left[\\dfrac{300 + 100}{2}\\text{ kPa}\\right] \\times (5 - 2)\\text{ m}^3 = -(200\\text{ kPa}) \\times (3\\text{ m}^3) = -600\\text{ kJ}$$\n\n3. Isochoric stroke ($C \\to A$):\n$$W_{C \\to A} = 0$$\n\nThus, the net work done is:\n$$W_{\\text{net}} = 900\\text{ kJ} - 600\\text{ kJ} = 300\\text{ kJ}$$\n\nAlternatively, for a clockwise triangular cycle on a $P$–$V$ diagram, the net work equals the area enclosed:\n$$W_{\\text{net}} = \\dfrac{1}{2} \\times \\text{base} \\times \\text{height} = \\dfrac{1}{2} \\times (5 - 2)\\text{ m}^3 \\times (300 - 100)\\text{ kPa} = \\dfrac{1}{2} \\times 3 \\times 200 = 300\\text{ kJ}$$",
-  "distractor_notes": "$150\\text{ kJ}$: corresponds to an erroneous extra factor of $1/2$ applied to the enclosed area.\n$600\\text{ kJ}$: forgets the factor of $1/2$ for the triangular cycle (treating it as a rectangle $\\Delta P \\times \\Delta V$).\n$900\\text{ kJ}$: takes only the work done during the expansion stroke and ignores the work done on the gas during compression.",
   "figure": null,
-  "difficulty_estimate": 2
- }
+  "difficulty_estimate": 2,
+  "working": "$W_{\\text{net}}=W_{\\text{exp}}+W_{\\text{comp}}$; isochoric strokes do zero work.\n$W_{\\text{net}}=(250-100)(3.0-1.0)\\text{ kPa m}^3=300$ kJ",
+  "distractor_notes": "A: Uses only the compression work. B: Correct net work from expansion minus compression. C: Uses only the expansion work. D: Adds the magnitudes of expansion and compression work."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

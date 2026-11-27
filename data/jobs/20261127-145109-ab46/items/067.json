@@ -1,0 +1,88 @@
+{
+ "qno": 67,
+ "section": "Chemistry",
+ "slot": {
+  "qno": 67,
+  "section": "Chemistry",
+  "chapter": "Hydrocarbons",
+  "subtopic": "Ozonolysis",
+  "archetype": "reaction product (structures)",
+  "brief": "Structure of an alkene (di-substituted, in figure) undergoes ozonolysis with Zn/H2O; identify the carbonyl fragments formed.",
+  "difficulty": 3,
+  "needs_figure": true,
+  "figure_kind": "chem",
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:59",
+   "2024s2:56",
+   "2026s2:45"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "The alkene shown in the figure is treated with $\\text{O}_3$, followed by $\\text{Zn}/\\text{H}_2\\text{O}$. Which carbonyl products are formed?",
+ "options": [
+  "Butanal and pentanal",
+  "2-Methylpropanal and pentan-2-one",
+  "2-Methylpropanal and 2-methylbutanal",
+  "Propanal and hexanal"
+ ],
+ "answer": "C",
+ "figure": {
+  "path": "figs/q067_stem_v0.png",
+  "width_pct": 40,
+  "kind": "chem"
+ },
+ "option_figs": [
+  "figs/q067_optC_v0.png",
+  "figs/q067_optB_v0.png",
+  "figs/q067_optA_v0.png",
+  "figs/q067_optD_v0.png"
+ ],
+ "option_width": 46,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Reductive ozonolysis cleaves the C=C into two aldehydes. The left side gives 2-methylpropanal; the right side gives 2-methylbutanal.",
+   "answer": "A",
+   "confidence": 0.99,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$(CH_3)_2CHCH=CHCH(CH_3)CH_2CH_3 \\xrightarrow{\\text{O}_3,\\ \\text{Zn}/\\text{H}_2\\text{O}} (CH_3)_2CHCHO + CH_3CH_2CH(CH_3)CHO$\n\nIndependent check: Reductive ozonolysis cleaves the C=C into two aldehydes. The left side gives 2-methylpropanal; the right side gives 2-methylbutanal.",
+ "solution": "Reductive ozonolysis cleaves the C=C bond, converting each alkene carbon bearing a hydrogen into an aldehyde carbonyl.\n$$ (CH_3)_2CHCH=CHCH(CH_3)CH_2CH_3 \\\\xrightarrow{O_3,\\ Zn/H_2O} (CH_3)_2CHCHO + CH_3CH_2CH(CH_3)CHO $$\nThe products are 2-methylpropanal and 2-methylbutanal.",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "The alkene shown in the figure is treated with $\\text{O}_3$, followed by $\\text{Zn}/\\text{H}_2\\text{O}$. Which carbonyl products are formed?",
+  "options": [
+   "2-Methylpropanal and 2-methylbutanal",
+   "2-Methylpropanal and pentan-2-one",
+   "Butanal and pentanal",
+   "Propanal and hexanal"
+  ],
+  "option_smiles": [
+   "CC(C)C=O.CC(CC)C=O",
+   "CC(C)C=O.CC(=O)CCC",
+   "CCCC=O.CCCCC=O",
+   "CCC=O.CCCCCC=O"
+  ],
+  "answer": "A",
+  "figure": {
+   "kind": "chem",
+   "description": "Draw a horizontal C=C. The left alkene carbon is bonded to H and CH(CH3)2; the right alkene carbon is bonded to H and CH(CH3)CH2CH3. Show the branches explicitly. Do not indicate E/Z stereochemistry.",
+   "smiles": "CC(C)C=CC(C)CC"
+  },
+  "difficulty_estimate": 3,
+  "working": "$(CH_3)_2CHCH=CHCH(CH_3)CH_2CH_3 \\xrightarrow{\\text{O}_3,\\ \\text{Zn}/\\text{H}_2\\text{O}} (CH_3)_2CHCHO + CH_3CH_2CH(CH_3)CHO$",
+  "distractor_notes": "B assigns a ketone to a double-bond carbon that bears hydrogen.\nC ignores the methyl branches when identifying the fragments.\nD misallocates the carbon atoms between the two fragments."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

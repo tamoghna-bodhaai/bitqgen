@@ -20,17 +20,17 @@
   ]
  },
  "status": "ok",
- "stem": "In the circuit shown in the figure, a voltmeter of resistance $60\\ \\Omega$ is connected across a $15\\ \\Omega$ resistor. The cell has an emf of $30\\ \\text{V}$ and an internal resistance of $3\\ \\Omega$. The reading of the voltmeter and the absolute error caused by its finite resistance are, respectively:",
+ "stem": "An ideal $24$ V cell is connected to a $4\\ \\Omega$ resistor in series with an $8\\ \\Omega$ resistor. A $24\\ \\Omega$ voltmeter is connected across the $8\\ \\Omega$ resistor, as shown in the figure. What are its reading and the absolute error relative to the voltage without the voltmeter?",
  "options": [
-  "$20\\ \\text{V}$ and $5\\ \\text{V}$",
-  "$24\\ \\text{V}$ and $1\\ \\text{V}$",
-  "$24\\ \\text{V}$ and $6\\ \\text{V}$",
-  "$25\\ \\text{V}$ and $0\\ \\text{V}$"
+  "$14.4\\ \\text{V}$ and $1.6\\ \\text{V}$",
+  "$16\\ \\text{V}$ and $0\\ \\text{V}$",
+  "$12\\ \\text{V}$ and $4\\ \\text{V}$",
+  "$14.4\\ \\text{V}$ and $9.6\\ \\text{V}$"
  ],
- "answer": "B",
+ "answer": "A",
  "figure": {
   "path": "figs/q037_stem_v0.png",
-  "width_pct": 75,
+  "width_pct": 65,
   "kind": "circuit"
  },
  "option_figs": null,
@@ -38,10 +38,10 @@
  "verdicts": [
   {
    "stage": "solver",
-   "model": "qwen/qwen4-max",
-   "working": "With voltmeter: 15||60 = 12 Ω; total = 12+3 = 15 Ω; reading = 30×12/15 = 24 V. Ideal (no voltmeter): V = 30×15/18 = 25 V. Absolute error = 25−24 = 1 V.",
-   "answer": "B",
-   "confidence": 0.99,
+   "model": "openai/gpt-6-luna-pro",
+   "working": "With the voltmeter, the parallel resistance is 8||24 = 6 Ω, so the voltage across it is 24×6/(4+6) = 14.4 V. Without the voltmeter, the 8 Ω resistor has 24×8/(4+8) = 16 V across it; absolute error = 1.6 V.",
+   "answer": "A",
+   "confidence": 1.0,
    "multiple_correct": false,
    "issues": [],
    "difficulty": 2
@@ -49,27 +49,28 @@
  ],
  "attempts": 1,
  "notes": [],
- "working": "1. True potential difference across $R = 15\\ \\Omega$ without the voltmeter:\nThe current in the unloaded circuit is:\n$$I_0 = \\dfrac{E}{R + r} = \\dfrac{30}{15 + 3} = \\dfrac{5}{3}\\ \\text{A}$$\nThe true potential difference is:\n$$V_0 = I_0 R = \\left(\\dfrac{5}{3}\\right) \\times 15 = 25\\ \\text{V}$$\n\n2. Potential difference with the voltmeter connected:\nThe parallel equivalent resistance of the resistor and the voltmeter is:\n$$R_p = \\dfrac{R \\cdot R_V}{R + R_V} = \\dfrac{15 \\times 60}{15 + 60} = \\dfrac{900}{75} = 12\\ \\Omega$$\nThe total equivalent resistance of the circuit becomes:\n$$R_{\\text{eq}} = R_p + r = 12 + 3 = 15\\ \\Omega$$\nThe current drawn from the cell is:\n$$I = \\dfrac{E}{R_{\\text{eq}}} = \\dfrac{30}{15} = 2\\ \\text{A}$$\nThe voltmeter reading is the potential difference across $R_p$:\n$$V = I R_p = 2 \\times 12 = 24\\ \\text{V}$$\n\n3. Absolute error in measurement:\n$$\\Delta V = |V_0 - V| = |25 - 24| = 1\\ \\text{V}$$\n\nThus, the reading is $24\\ \\text{V}$ and the error is $1\\ \\text{V}$.\n\nIndependent check: With voltmeter: 15||60 = 12 Ω; total = 12+3 = 15 Ω; reading = 30×12/15 = 24 V. Ideal (no voltmeter): V = 30×15/18 = 25 V. Absolute error = 25−24 = 1 V.",
+ "working": "$R_{\\parallel}=\\dfrac{8\\times24}{8+24}=6\\ \\Omega$; $V_{\\mathrm{meter}}=24\\dfrac{6}{4+6}=14.4\\ \\text{V}$\n$V_0=24\\dfrac{8}{4+8}=16\\ \\text{V}$\n$\\text{absolute error}=|16-14.4|=1.6\\ \\text{V}$\n\nIndependent check: With the voltmeter, the parallel resistance is 8||24 = 6 Ω, so the voltage across it is 24×6/(4+6) = 14.4 V. Without the voltmeter, the 8 Ω resistor has 24×8/(4+8) = 16 V across it; absolute error = 1.6 V.",
  "solution": "",
  "locked": false,
  "difficulty": 2,
  "draft": {
-  "stem": "In the circuit shown in the figure, a voltmeter of resistance $60\\ \\Omega$ is connected across a $15\\ \\Omega$ resistor. The cell has an emf of $30\\ \\text{V}$ and an internal resistance of $3\\ \\Omega$. The reading of the voltmeter and the absolute error caused by its finite resistance are, respectively:",
+  "stem": "An ideal $24$ V cell is connected to a $4\\ \\Omega$ resistor in series with an $8\\ \\Omega$ resistor. A $24\\ \\Omega$ voltmeter is connected across the $8\\ \\Omega$ resistor, as shown in the figure. What are its reading and the absolute error relative to the voltage without the voltmeter?",
   "options": [
-   "$20\\ \\text{V}$ and $5\\ \\text{V}$",
-   "$24\\ \\text{V}$ and $1\\ \\text{V}$",
-   "$24\\ \\text{V}$ and $6\\ \\text{V}$",
-   "$25\\ \\text{V}$ and $0\\ \\text{V}$"
+   "$14.4\\ \\text{V}$ and $1.6\\ \\text{V}$",
+   "$16\\ \\text{V}$ and $0\\ \\text{V}$",
+   "$12\\ \\text{V}$ and $4\\ \\text{V}$",
+   "$14.4\\ \\text{V}$ and $9.6\\ \\text{V}$"
   ],
   "option_smiles": null,
-  "answer": "B",
-  "working": "1. True potential difference across $R = 15\\ \\Omega$ without the voltmeter:\nThe current in the unloaded circuit is:\n$$I_0 = \\dfrac{E}{R + r} = \\dfrac{30}{15 + 3} = \\dfrac{5}{3}\\ \\text{A}$$\nThe true potential difference is:\n$$V_0 = I_0 R = \\left(\\dfrac{5}{3}\\right) \\times 15 = 25\\ \\text{V}$$\n\n2. Potential difference with the voltmeter connected:\nThe parallel equivalent resistance of the resistor and the voltmeter is:\n$$R_p = \\dfrac{R \\cdot R_V}{R + R_V} = \\dfrac{15 \\times 60}{15 + 60} = \\dfrac{900}{75} = 12\\ \\Omega$$\nThe total equivalent resistance of the circuit becomes:\n$$R_{\\text{eq}} = R_p + r = 12 + 3 = 15\\ \\Omega$$\nThe current drawn from the cell is:\n$$I = \\dfrac{E}{R_{\\text{eq}}} = \\dfrac{30}{15} = 2\\ \\text{A}$$\nThe voltmeter reading is the potential difference across $R_p$:\n$$V = I R_p = 2 \\times 12 = 24\\ \\text{V}$$\n\n3. Absolute error in measurement:\n$$\\Delta V = |V_0 - V| = |25 - 24| = 1\\ \\text{V}$$\n\nThus, the reading is $24\\ \\text{V}$ and the error is $1\\ \\text{V}$.",
-  "distractor_notes": "Option A assumes that the total circuit current remains unchanged at $5/3\\ \\text{A}$ after connecting the voltmeter, yielding $V = (5/3) \\times 12 = 20\\ \\text{V}$ and an error of $25 - 20 = 5\\ \\text{V}$.\nOption C correctly finds the voltmeter reading of $24\\ \\text{V}$ but computes the error relative to the cell's EMF ($30 - 24 = 6\\ \\text{V}$) rather than the true resistor potential difference.\nOption D assumes an ideal voltmeter ($R_V \\to \\infty$), resulting in the unloaded reading of $25\\ \\text{V}$ and zero error.",
+  "answer": "A",
   "figure": {
    "kind": "circuit",
-   "description": "A rectangular single-loop circuit diagram with one parallel branch. The top horizontal segment contains a DC cell labeled '30 V' (positive terminal on the left indicated by a longer vertical line, negative on the right) in series with a resistor labeled 'r = 3 \\Omega'. The right vertical branch contains a resistor labeled 'R = 15 \\Omega'. Connected across this 15 \\Omega resistor between two junction nodes above and below it is an outer parallel branch containing a voltmeter represented as a circle with the letter 'V' inside, labeled 'R_V = 60 \\Omega'. The bottom horizontal wire connects the lower junction back to the cell's negative terminal.",
+   "description": "Draw a rectangular circuit loop. On the left vertical branch, draw an ideal cell labeled 24 V, with its positive terminal toward the top. On the top horizontal branch, place a resistor labeled 4 Ω, followed by a resistor labeled 8 Ω. Connect a voltmeter labeled 24 Ω in a separate branch directly across the 8 Ω resistor. Use standard circuit symbols and show no other components.",
    "smiles": null
   },
-  "difficulty_estimate": 1
- }
+  "difficulty_estimate": 1,
+  "working": "$R_{\\parallel}=\\dfrac{8\\times24}{8+24}=6\\ \\Omega$; $V_{\\mathrm{meter}}=24\\dfrac{6}{4+6}=14.4\\ \\text{V}$\n$V_0=24\\dfrac{8}{4+8}=16\\ \\text{V}$\n$\\text{absolute error}=|16-14.4|=1.6\\ \\text{V}$",
+  "distractor_notes": "B: ignores the voltmeter’s loading. C: incorrectly treats the voltmeter as short-circuiting the resistor. D: reports the voltage across the series resistor as the error."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
 }

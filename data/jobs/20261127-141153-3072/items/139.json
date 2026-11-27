@@ -1,0 +1,68 @@
+{
+ "qno": 139,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 139,
+  "section": "Mathematics",
+  "chapter": "Statistics",
+  "subtopic": "Effect of scaling on variance",
+  "archetype": "property",
+  "brief": "Data transformed as y = ax + b; state/compute the new variance and mean using transformation properties; conceptual with one small computation.",
+  "difficulty": 2,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s2:106",
+   "2024s1:113",
+   "2026s2:107"
+  ]
+ },
+ "status": "ok",
+ "stem": "A data set has mean $4$ and variance $3$. If each value $x$ is transformed to $y=-2x+3$, what are the new mean and variance?",
+ "options": [
+  "$(-5,6)$",
+  "$(-5,12)$",
+  "$(11,12)$",
+  "$(-5,21)$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "New mean = -2(4) + 3 = -5; new variance = (-2)^2(3) = 12.",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\mu_y=-2(4)+3=-5$\n$\\operatorname{Var}(y)=(-2)^2(3)=12$\n\nIndependent check: New mean = -2(4) + 3 = -5; new variance = (-2)^2(3) = 12.",
+ "solution": "For a linear transformation $y=ax+b$, the mean becomes $a\\mu+b$ and the variance becomes $a^2\\sigma^2$.\n$$\\mu_y=-2(4)+3=-5,\\qquad \\operatorname{Var}(y)=(-2)^2(3)=12$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "A data set has mean $4$ and variance $3$. If each value $x$ is transformed to $y=-2x+3$, what are the new mean and variance?",
+  "options": [
+   "$(-5,12)$",
+   "$(-5,6)$",
+   "$(11,12)$",
+   "$(-5,21)$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 2,
+  "working": "$\\mu_y=-2(4)+3=-5$\n$\\operatorname{Var}(y)=(-2)^2(3)=12$",
+  "distractor_notes": "B multiplies variance by $|-2|$ instead of $(-2)^2$; C misses the negative sign in the mean; D incorrectly adds $3^2$ to the variance."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

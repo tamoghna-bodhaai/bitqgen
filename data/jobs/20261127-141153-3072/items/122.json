@@ -1,0 +1,68 @@
+{
+ "qno": 122,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 122,
+  "section": "Mathematics",
+  "chapter": "Differential Equations",
+  "subtopic": "Linear differential equations",
+  "archetype": "integrating factor",
+  "brief": "Solve dy/dx + P(x)y = Q(x) with a non-obvious P(x) (e.g. involving 1/x or trig) using integrating factor; find particular solution given y(0).",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:98",
+   "2024s2:95",
+   "2022:94"
+  ]
+ },
+ "status": "ok",
+ "stem": "Solve $\\dfrac{dy}{dx}+y\\tan x=\\sin x$, given that $y(0)=1$.",
+ "options": [
+  "$y=\\cos x\\left(1+\\ln(\\cos x)\\right)$",
+  "$y=\\cos x\\left(1-\\ln(\\cos x)\\right)$",
+  "$y=\\dfrac{1-\\ln(\\cos x)}{\\cos x}$",
+  "$y=\\cos x\\left(1-\\ln(\\cos x)\\right)+1$"
+ ],
+ "answer": "B",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "The integrating factor is \\(\\sec x\\), so \\((y\\sec x)'=\\tan x\\). Integrating gives \\(y=\\cos x(C-\\ln(\\cos x))\\). From \\(y(0)=1\\), \\(C=1\\), matching (A).",
+   "answer": "A",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$\\text{I.F.}=e^{\\int\\tan x\\,dx}=\\sec x$\n$\\dfrac{d}{dx}(y\\sec x)=\\tan x$\n$y\\sec x=-\\ln(\\cos x)+C$\n$y(0)=1\\Rightarrow C=1$\n$y=\\cos x\\left(1-\\ln(\\cos x)\\right)$\n\nIndependent check: The integrating factor is \\(\\sec x\\), so \\((y\\sec x)'=\\tan x\\). Integrating gives \\(y=\\cos x(C-\\ln(\\cos x))\\). From \\(y(0)=1\\), \\(C=1\\), matching (A).",
+ "solution": "The integrating factor is $e^{\\int \\tan x\\,dx}=\\sec x$, so $\\frac{d}{dx}(y\\sec x)=\\tan x$.\n$$y\\sec x=-\\ln(\\cos x)+C$$\nUsing $y(0)=1$ gives $C=1$, hence $y=\\cos x\\left(1-\\ln(\\cos x)\\right)$.",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Solve $\\dfrac{dy}{dx}+y\\tan x=\\sin x$, given that $y(0)=1$.",
+  "options": [
+   "$y=\\cos x\\left(1-\\ln(\\cos x)\\right)$",
+   "$y=\\cos x\\left(1+\\ln(\\cos x)\\right)$",
+   "$y=\\dfrac{1-\\ln(\\cos x)}{\\cos x}$",
+   "$y=\\cos x\\left(1-\\ln(\\cos x)\\right)+1$"
+  ],
+  "option_smiles": null,
+  "answer": "A",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$\\text{I.F.}=e^{\\int\\tan x\\,dx}=\\sec x$\n$\\dfrac{d}{dx}(y\\sec x)=\\tan x$\n$y\\sec x=-\\ln(\\cos x)+C$\n$y(0)=1\\Rightarrow C=1$\n$y=\\cos x\\left(1-\\ln(\\cos x)\\right)$",
+  "distractor_notes": "B has the wrong sign after integrating $\\tan x$; C multiplies by the integrating factor instead of dividing; D fails to apply the initial condition to the constant."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

@@ -1,0 +1,71 @@
+{
+ "qno": 11,
+ "section": "Physics",
+ "slot": {
+  "qno": 11,
+  "section": "Physics",
+  "chapter": "Dual Nature of Radiation and Matter",
+  "subtopic": "Photoelectric effect",
+  "archetype": "conceptual",
+  "brief": "Conceptual question on how stopping potential and photocurrent change when intensity/frequency of incident light is varied.",
+  "difficulty": 1,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2026s1:18",
+   "2021:14",
+   "2021:17"
+  ],
+  "origin": "variant",
+  "bank_ref": "g347f3f25e9d5"
+ },
+ "status": "ok",
+ "stem": "For light above the threshold frequency, the intensity is increased while its frequency is kept fixed. In a separate comparison, the frequency is increased while the intensity is kept fixed. What happens, respectively, to the photocurrent in the first comparison and the stopping potential in the second?",
+ "options": [
+  "Increases; unchanged",
+  "Unchanged; increases",
+  "Increases; increases",
+  "Unchanged; unchanged"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "At fixed frequency above threshold, higher intensity emits more photoelectrons per second, increasing photocurrent. At fixed intensity, higher frequency increases the maximum kinetic energy and thus the stopping potential.",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 1
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I_{\\text{photo}}\\propto$ intensity at fixed frequency; hence the photocurrent increases.\n$eV_s=h\\nu-W_0$; hence increasing frequency increases the stopping potential.\n\nIndependent check: At fixed frequency above threshold, higher intensity emits more photoelectrons per second, increasing photocurrent. At fixed intensity, higher frequency increases the maximum kinetic energy and thus the stopping potential.",
+ "solution": "At fixed frequency, photocurrent is proportional to light intensity, so it increases.\nThe stopping potential satisfies $eV_s=h\\nu-W_0$; increasing frequency increases $V_s$.\nHence, both quantities increase.",
+ "locked": false,
+ "difficulty": 1,
+ "draft": {
+  "stem": "For light above the threshold frequency, the intensity is increased while its frequency is kept fixed. In a separate comparison, the frequency is increased while the intensity is kept fixed. What happens, respectively, to the photocurrent in the first comparison and the stopping potential in the second?",
+  "options": [
+   "Increases; unchanged",
+   "Unchanged; increases",
+   "Increases; increases",
+   "Unchanged; unchanged"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 1,
+  "working": "$I_{\\text{photo}}\\propto$ intensity at fixed frequency; hence the photocurrent increases.\n$eV_s=h\\nu-W_0$; hence increasing frequency increases the stopping potential.",
+  "distractor_notes": "A: assumes stopping potential is unaffected by frequency. B: assumes photocurrent is independent of intensity. D: assumes neither quantity changes."
+ },
+ "variant_of": "g347f3f25e9d5",
+ "author_model": "openai/gpt-6-luna-pro"
+}

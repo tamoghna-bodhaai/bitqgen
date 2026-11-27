@@ -1,0 +1,70 @@
+{
+ "qno": 142,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 142,
+  "section": "Mathematics",
+  "chapter": "Binomial Theorem",
+  "subtopic": "Consecutive coefficients",
+  "archetype": "binomial coefficient sum",
+  "brief": "Sum of coefficients or a weighted binomial coefficient sum (e.g., r·nCr terms) obtained by differentiating (1+x)ⁿ or substituting x = 1, x = -1.",
+  "difficulty": 3,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s2:130",
+   "2026s2:103",
+   "2025s1:119"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\sum_{r=0}^{8}r^2\\binom{8}{r}$.",
+ "options": [
+  "$3584$",
+  "$4096$",
+  "$5632$",
+  "$4608$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Use \\(r^2=r(r-1)+r\\): the sum is \\(8\\cdot7\\cdot2^6+8\\cdot2^7=4608\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$r^2=r(r-1)+r$\n$\\sum r(r-1)\\binom{8}{r}=8\\cdot7\\cdot2^6=3584$\n$\\sum r\\binom{8}{r}=8\\cdot2^7=1024$\n$\\sum r^2\\binom{8}{r}=3584+1024=4608$\n\nIndependent check: Use \\(r^2=r(r-1)+r\\): the sum is \\(8\\cdot7\\cdot2^6+8\\cdot2^7=4608\\).",
+ "solution": "Using $r^2=r(r-1)+r$ and the binomial identities,\n$$\\sum_{r=0}^{8}r^2\\binom{8}{r}=8\\cdot7\\cdot2^6+8\\cdot2^7=3584+1024=4608.$$",
+ "locked": false,
+ "difficulty": 2,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\sum_{r=0}^{8}r^2\\binom{8}{r}$.",
+  "options": [
+   "$3584$",
+   "$4096$",
+   "$4608$",
+   "$5632$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 3,
+  "working": "$r^2=r(r-1)+r$\n$\\sum r(r-1)\\binom{8}{r}=8\\cdot7\\cdot2^6=3584$\n$\\sum r\\binom{8}{r}=8\\cdot2^7=1024$\n$\\sum r^2\\binom{8}{r}=3584+1024=4608$",
+  "distractor_notes": "A: omits the $\\sum r\\binom{8}{r}$ term; B: uses an incorrect formula for the second factorial moment; D: counts the first-moment contribution twice."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

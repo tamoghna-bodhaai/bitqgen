@@ -1,0 +1,70 @@
+{
+ "qno": 125,
+ "section": "Mathematics",
+ "slot": {
+  "qno": 125,
+  "section": "Mathematics",
+  "chapter": "Integral Calculus",
+  "subtopic": "Integration by parts",
+  "archetype": "integration technique",
+  "brief": "Evaluate a definite integral like ∫ x·(inverse trig or log) dx over a simple interval using ILATE order by parts.",
+  "difficulty": 4,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2022:96",
+   "2021:118",
+   "2025s1:130"
+  ],
+  "origin": "new",
+  "bank_ref": null
+ },
+ "status": "ok",
+ "stem": "Evaluate $\\displaystyle\\int_0^{\\sqrt{3}} x\\arctan x\\,dx$.",
+ "options": [
+  "$\\dfrac{\\pi}{6}-\\dfrac{\\sqrt{3}}{2}$",
+  "$\\dfrac{5\\pi}{6}-\\sqrt{3}$",
+  "$\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}$",
+  "$\\dfrac{\\pi}{3}+\\dfrac{\\sqrt{3}}{2}$"
+ ],
+ "answer": "C",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Integration by parts gives \\(\\frac{x^2}{2}\\arctan x-\\frac12(x-\\arctan x)\\), evaluated from 0 to \\(\\sqrt3\\): \\(\\frac{2\\pi}{3}-\\frac{\\sqrt3}{2}\\).",
+   "answer": "C",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$I=\\left[\\dfrac{x^2}{2}\\arctan x\\right]_0^{\\sqrt{3}}-\\dfrac12\\int_0^{\\sqrt{3}}\\dfrac{x^2}{1+x^2}\\,dx$; $I=\\dfrac{\\pi}{2}-\\dfrac12\\left(\\sqrt{3}-\\dfrac{\\pi}{3}\\right)=\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}$.\n\nIndependent check: Integration by parts gives \\(\\frac{x^2}{2}\\arctan x-\\frac12(x-\\arctan x)\\), evaluated from 0 to \\(\\sqrt3\\): \\(\\frac{2\\pi}{3}-\\frac{\\sqrt3}{2}\\).",
+ "solution": "",
+ "locked": false,
+ "difficulty": 3,
+ "draft": {
+  "stem": "Evaluate $\\displaystyle\\int_0^{\\sqrt{3}} x\\arctan x\\,dx$.",
+  "options": [
+   "$\\dfrac{\\pi}{6}-\\dfrac{\\sqrt{3}}{2}$",
+   "$\\dfrac{5\\pi}{6}-\\sqrt{3}$",
+   "$\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}$",
+   "$\\dfrac{\\pi}{3}+\\dfrac{\\sqrt{3}}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "C",
+  "figure": null,
+  "difficulty_estimate": 4,
+  "working": "$I=\\left[\\dfrac{x^2}{2}\\arctan x\\right]_0^{\\sqrt{3}}-\\dfrac12\\int_0^{\\sqrt{3}}\\dfrac{x^2}{1+x^2}\\,dx$; $I=\\dfrac{\\pi}{2}-\\dfrac12\\left(\\sqrt{3}-\\dfrac{\\pi}{3}\\right)=\\dfrac{2\\pi}{3}-\\dfrac{\\sqrt{3}}{2}$.",
+  "distractor_notes": "A: omits the boundary contribution from integration by parts; B: forgets the factor $\\dfrac12$ on the remaining integral; D: makes a sign error in the remaining integral."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}

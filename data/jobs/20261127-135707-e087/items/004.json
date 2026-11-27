@@ -1,0 +1,68 @@
+{
+ "qno": 4,
+ "section": "Physics",
+ "slot": {
+  "qno": 4,
+  "section": "Physics",
+  "chapter": "Waves",
+  "subtopic": "Doppler effect",
+  "archetype": "ratio comparison",
+  "brief": "A source moving between two observers (approach and recede) or observer moving both ways; set up Doppler ratios and find source speed from ratio of the two apparent frequencies.",
+  "difficulty": 5,
+  "needs_figure": false,
+  "figure_kind": null,
+  "lr_generator": null,
+  "passage_id": null,
+  "exemplar_ids": [
+   "2025s1:26",
+   "2024s2:30",
+   "2022:22"
+  ]
+ },
+ "status": "ok",
+ "stem": "In still air, a source moves toward stationary observer Q while observer P, behind the source, moves in the same direction at speed $\\dfrac{c}{5}$, where $c$ is the speed of sound. The source recedes from P and approaches Q. If the ratio of the frequencies heard at Q and P is $25:18$, find the source speed as a fraction of $c$.",
+ "options": [
+  "$\\dfrac{1}{5}$",
+  "$\\dfrac{1}{2}$",
+  "$\\dfrac{1}{3}$",
+  "$\\dfrac{1}{4}$"
+ ],
+ "answer": "D",
+ "figure": null,
+ "option_figs": null,
+ "option_width": null,
+ "verdicts": [
+  {
+   "stage": "solver",
+   "model": "openai/gpt-6-luna-pro",
+   "working": "Let the source speed be \\(uc\\). Then \\(f_Q=f\\,c/(c-uc)\\) and \\(f_P=f(c+c/5)/(c+uc)\\). Hence \\(\\frac{f_Q}{f_P}=\\frac{5(1+u)}{6(1-u)}=\\frac{25}{18}\\), which gives \\(u=1/4\\).",
+   "answer": "B",
+   "confidence": 1.0,
+   "multiple_correct": false,
+   "issues": [],
+   "difficulty": 2
+  }
+ ],
+ "attempts": 1,
+ "notes": [],
+ "working": "$f_Q=f_0\\dfrac{c}{c-u}$; $f_P=f_0\\dfrac{c+c/5}{c+u}$; $\\dfrac{f_Q}{f_P}=\\dfrac{1+u/c}{(1-u/c)(6/5)}=\\dfrac{25}{18}$; hence $u/c=\\dfrac{1}{4}$.\n\nIndependent check: Let the source speed be \\(uc\\). Then \\(f_Q=f\\,c/(c-uc)\\) and \\(f_P=f(c+c/5)/(c+uc)\\). Hence \\(\\frac{f_Q}{f_P}=\\frac{5(1+u)}{6(1-u)}=\\frac{25}{18}\\), which gives \\(u=1/4\\).",
+ "solution": "For a moving source and moving observer, $f_Q=f_0\\dfrac{c}{c-u}$ and $f_P=f_0\\dfrac{c+c/5}{c+u}$.\nLet $x=u/c$. Then\n$$\\frac{f_Q}{f_P}=\\frac{5(1+x)}{6(1-x)}=\\frac{25}{18},$$\nwhich gives $x=\\dfrac14$. Thus the source speed is $\\dfrac{c}{4}$.",
+ "locked": false,
+ "difficulty": 4,
+ "draft": {
+  "stem": "In still air, a source moves toward stationary observer Q while observer P, behind the source, moves in the same direction at speed $\\dfrac{c}{5}$, where $c$ is the speed of sound. The source recedes from P and approaches Q. If the ratio of the frequencies heard at Q and P is $25:18$, find the source speed as a fraction of $c$.",
+  "options": [
+   "$\\dfrac{1}{5}$",
+   "$\\dfrac{1}{4}$",
+   "$\\dfrac{1}{3}$",
+   "$\\dfrac{1}{2}$"
+  ],
+  "option_smiles": null,
+  "answer": "B",
+  "figure": null,
+  "difficulty_estimate": 5,
+  "working": "$f_Q=f_0\\dfrac{c}{c-u}$; $f_P=f_0\\dfrac{c+c/5}{c+u}$; $\\dfrac{f_Q}{f_P}=\\dfrac{1+u/c}{(1-u/c)(6/5)}=\\dfrac{25}{18}$; hence $u/c=\\dfrac{1}{4}$.",
+  "distractor_notes": "A neglects P's motion in the receding-frequency formula; C uses the frequency-ratio excess directly as $u/c$; D applies only one Doppler factor instead of taking the ratio."
+ },
+ "author_model": "openai/gpt-6-luna-pro"
+}
